@@ -28,3 +28,7 @@ Special thanks to the team:
 1. Go to the Tags section of the Github, and choose the selected version. Please note that Betas before indev-beta 1.2.3 are inaccessible as that was when the git was made.
 2. Select your release, and download.
 3. Put file contents into `Steam/steamapps/workshop/content/236850`, or wherever you're keeping your mod files.
+
+## Support Development
+
+Like the work we do? Support us at https://ko-fi.com/famanauniversalis
