@@ -25,3 +25,27 @@ gomic_religious_unity = {
 	unjustified_demands = 0.1
 	warscore_cost_vs_other_religion = -0.10
 }
+
+aresian_decree_active = {
+    potential = {
+        religion = aresian
+    }
+
+    trigger = {
+        OR = {
+            current_icon = increase_army_training
+            current_icon = tax_exemptions_for_traders
+            current_icon = improve_fortifications
+            current_icon = lower_production_quotas
+            current_icon = revisit_the_integration_system
+            current_icon = placate_civil_populace
+            current_icon = appoint_skilled_commanders
+            current_icon = nominate_new_advisors
+            current_icon = sponsor_talented_philosophers
+            current_icon = ensure_subject_loyalty
+        }
+    }
+
+    yearly_patriarch_authority = -0.01
+    global_tax_modifier = -0.10
+}

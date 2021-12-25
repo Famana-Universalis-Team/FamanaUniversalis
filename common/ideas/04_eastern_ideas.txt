@@ -1,0 +1,81 @@
+
+GEP_ideas = {
+    start = {
+        global_missionary_strength = 0.02
+        global_tax_modifier = 0.10
+    }
+
+    bonus = {
+        trade_goods_size_modifier = 0.10
+    }
+
+    trigger = {
+        tag = GEP
+    }
+    free = yes
+
+    gep_mount_washoom = {
+        prestige_decay = -0.01
+    }
+    gep_build_the_fashran_shield = {
+        defensiveness = 0.10
+        garrison_size = 0.25
+    }
+    gep_the_collapse_of_the_holy_cave = {
+        stability_cost_modifier = -0.1
+        war_exhaustion = -0.05
+    }
+    gep_mountain_tactics = {
+        infantry_power = 0.20
+        hostile_attrition = 1
+    }
+    gep_the_teachings_of_haromiam_gastoor = {
+        adm_tech_cost_modifier = -0.1
+    }
+    gep_modernized_army = {
+        discipline = 0.05
+    }
+    gep_in_the_mountains = {
+        global_manpower_modifier = 0.20
+    }
+}
+
+FAS_ideas = {
+    start = {
+        cavalry_power = 0.20
+        core_creation = -0.25
+    }
+    
+    bonus = {
+        land_maintenance_modifier = -0.05
+    }    
+
+    trigger = {
+        tag = FAS
+    }
+    free = yes
+    
+    fas_the_sixteen_tribes = {
+        global_manpower_modifier = 0.20
+    }
+    fas_spread_the_word = {
+        missionaries = 1
+    }
+    fas_servants_of_the_clouds = {
+        legitimacy = 1
+        devotion = 1
+        horde_unity = 1
+    }
+    fas_steppe_road_monopoly = {
+        global_prov_trade_power_modifier = 0.1
+    }
+    fas_fashran_recruitment = {
+        manpower_recovery_speed = 0.20
+    }
+    fas_jasuan_architecture = {
+        development_cost = -0.1
+    }
+    fas_vanoman_artillery = {
+        siege_ability = 0.20
+    }
+}

@@ -1,42 +1,39 @@
 
-ORC_ideas = {
+Emastalian_ideas = {
 	start = {
-		infantry_power = 0.20
-		diplomatic_reputation = 1
+		trade_efficiency = 0.10
+		light_ship_cost = -0.2
 	}
 	
 	bonus = {
-		global_manpower_modifier = 0.20
+		navy_tradition_decay = -0.01
 	}
 
 	trigger = {
-		tag = ORC
+		culture_group = Emastalian
 	}
 	free = yes
 	
-	orc_war = {
-		global_tax_modifier = 0.10
+	Emastalian_war = {
+		leader_naval_manuever = 1
 	}
-	orc_academy = {
-		leader_land_shock = 1
+	Emastalian_merchants = {
+		trade_steering = 0.1
 	}
-	orc_kuda = {
-		war_exhaustion_cost = -0.10
-		state_maintenance_modifier = -0.10
+	Emastalian_rule = {
+		local_autonomy = -0.05
 	}
-	orc_maldiks = {
-		reduced_liberty_desire = 20
-		diplomatic_annexation_cost = -0.10
+	Emastalian_navies = {
+		light_ship_power = 0.10
 	}
-	orc_great = {
-		idea_cost = -0.1
+	Emastalian_insults = {
+		power_projection_from_insults = 1.0
 	}
-	orc_enforce = {
-		global_own_trade_power = 0.25
+	Emastalian_summer = {
+		stability_cost_modifier = -0.1
 	}
-	orc_train = {
-		land_morale = 0.10
-		fire_damage_received = -0.10
+	Emastalian_early = {
+		global_trade_power = 0.1
 	}
 }
 
@@ -158,49 +155,6 @@ Jasuan_ideas = {
     }
 }
 
-PEX_ideas = {
-	start = {
-		yearly_corruption = -0.1
-		missionaries = 1
-	}
-	
-	bonus = {
-		infantry_power = 0.10
-	}
-
-	trigger = {
-		OR = {
-			tag = PEX
-			culture_group = Pextoglazian
-		}
-	}
-	free = yes
-	
-	pex_tax = {
-		global_tax_modifier = 0.10
-	}
-	pex_army = {
-		discipline = 0.05
-	}
-	pex_conquest = {
-		core_creation = -0.10
-	}
-	pex_clergy = {
-		tolerance_own = 1
-		global_autonomy = -0.05
-	}
-	pex_crusade = {
-		global_missionary_strength = 0.02
-		prestige = 1
-	}
-	pex_die = {
-		land_morale = 0.10
-	}
-	pex_legacy = {
-		stability_cost_modifier = -0.20
-	}
-}
-
 EO_ideas = {
 	start = {
 		idea_cost = -0.05
@@ -212,7 +166,7 @@ EO_ideas = {
 	}
 
 	trigger = {
-		culture_group = Eastern_Oppian
+		culture_group = Hoxoi
 	}
 	free = yes
 	
