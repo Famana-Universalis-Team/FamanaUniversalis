@@ -17,3 +17,9 @@ Special thanks to the team:
 - **Meme** (Lore)
 - **KCM** (Lore)
 - **NaZa** (Lore)
+
+## Installation guide
+
+1. Clone the file, rename the folder to `FamanaUniversalis` and place it in your Paradox Interactive/Europa Universalis 4/mod folder.
+2. Clone the descriptor file in the "descriptor" branch, and put it in the same directory as the folder.
+3. Launch the mod from the launcher. It will be shown with a hard disk image.
