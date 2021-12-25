@@ -8,10 +8,10 @@ Special thanks to the team:
 
 - **Sunset** (Original Series Creator)
 - **Adartho** (Developer)
-- **Bacon** (Developer)
 - **SKM** (Developer)
 - **Ocros** (Developer)
 - **u1145** (Developer)
+- **Bacon** (Developer)
 - **Rag** (Playtester)
 - **WESTZ** (Lore)
 - **Meme** (Lore)
