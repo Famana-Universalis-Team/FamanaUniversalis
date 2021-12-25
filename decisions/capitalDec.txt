@@ -1,0 +1,59 @@
+country_decisions = {
+	syadona_capital = {
+		major = yes
+		potential = {
+			AND = {
+				tag = NAF
+				NOT = {
+					has_country_flag = syadona_city
+				}
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 5583
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				is_city = no
+			}
+		}
+		allow = {
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			owns = 5583
+			capital_scope = {
+				is_core = ROOT
+			}
+		}
+		effect = {
+			set_country_flag = syadona_city
+			vava_area = {
+				limit = {
+					is_empty = yes
+				}
+				cede_province = NAF
+				change_culture = Kachik
+				change_religion = lathvy
+				add_base_tax = 1
+				add_base_production = 1
+			}
+			5583 = {
+				change_province_name = "Syadona"
+				rename_capital = "Syadona"
+				change_culture = Kachik
+				change_religion = lathvy
+				add_base_manpower = 3
+				add_base_tax = 3
+				add_base_production = 3
+			}
+			NAF = {
+				set_capital = 5583
+			}
+			stability = 1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

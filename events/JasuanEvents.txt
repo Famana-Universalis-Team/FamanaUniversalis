@@ -1,0 +1,287 @@
+namespace = jasuaE
+
+country_event = {
+	id = jasuaE.1
+	title = jasuaE.1.t
+	picture = FARMING_eventPicture
+	desc = jasuaE.1.d
+	
+	fire_only_once = yes
+	hidden = yes
+	
+	trigger = { 
+		NOT = { exists = BLK }
+	}
+	
+	mean_time_to_happen = {
+		months = 2
+	}
+	immediate = {
+	
+	    if = { 
+			limit = { 
+				5727 = {
+					is_empty = yes
+				}
+			}
+			5727 = {
+				create_colony = 1000
+				cede_province = BLK
+				add_core = BLK
+				change_culture = Bilik_C
+				change_religion = bilik
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+				
+			}
+		}
+		if = {
+			limit = {
+				5729 = {
+					is_empty = yes
+				}
+			}
+			5729 = {
+				create_colony = 1000
+				cede_province = BLK
+				add_core = BLK
+				change_culture = Bilik_C
+				change_religion = bilik
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+			}
+		}
+		BLK = { override_country_name = Borlebin 
+			    change_religion = bilik
+				}
+		
+	}
+	option = {
+		name = jasuaE.1.a
+		ai_chance = { factor = 100 }
+	}
+}
+
+country_event = {
+	id = jasuaE.2
+	title = jasuaE.2.t
+	desc = jasuaE.2.d
+	picture = REFORM_eventPicture
+	fire_only_once = yes
+
+	trigger = {
+		AND = {
+			tag = KIN
+			religion = egr
+			is_year = 220
+		}
+	}
+	mean_time_to_happen = {
+		months = 200
+	}
+	immediate = {
+	}
+	option = {
+		name = jasuaE.2.a
+		ai_chance = { factor = 8 }
+		add_prestige = 20
+		add_stability = -1
+		add_country_modifier = {
+			name = "conversion_zeal"
+			duration = 3650
+		}
+		change_religion = lathvy
+	}
+	option = {
+		name = jasuaE.2.b
+		add_prestige = 20
+		add_country_modifier = {
+			name = "outdated_heretic"
+			duration = 1825
+		}
+		ai_chance = { factor = 2 }
+	}
+}
+
+country_event = {
+	id = jasuaE.3
+	title = jasuaE.3.t
+	desc = jasuaE.3.d
+	picture = BORDER_TENSION_eventPicture
+	fire_only_once = yes
+
+	trigger = {
+		tag = YAB
+	}
+	mean_time_to_happen = {
+		months = 50
+	}
+	immediate = {
+	}
+	option = {
+		name = jasuaE.3.a
+		ai_chance = { factor = 8 }
+		add_prestige = -20
+		add_stability = -1
+		add_country_modifier = {
+			name = "desert_empire"
+			duration = 9125
+		}
+	}
+}
+
+#stroktur becomes a republic
+country_event = {
+	id = jasuaE.4
+	title = jasuaE.4.t
+	desc = jasuaE.4.d
+	picture = REFORM_eventPicture
+	fire_only_once = yes
+
+	trigger = {
+		AND = {
+			tag = SKT
+			is_year = 285
+		}
+	}
+	mean_time_to_happen = {
+		months = 5
+	}
+	option = {
+		name = jasuaE.4.a
+		ai_chance = { factor = 1 }
+		add_prestige = 20
+		change_government = republic
+		set_country_flag = stroktur_republic
+	}
+	option = {
+		name = jasuaE.4.b
+		ai_chance = { factor = 0 }
+		add_prestige = -10
+		add_stability = -1
+	}
+}
+
+#eclipse controller
+country_event = {
+	id = jasuaE.5
+	hidden = yes
+	fire_only_once = yes
+
+	trigger = {
+		is_year = 291
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	immediate = {
+		every_country = {
+			limit = {
+				NOT = {
+					tag = SKT
+				}
+			}
+			country_event = {
+				id = jasuaE.6
+			}
+		}
+		SKT = {
+			country_event = {
+				id = jasuaE.7
+			}
+		}
+	}
+	option = {
+	}
+}
+
+#eclipse
+country_event = {
+	id = jasuaE.6
+	title = jasuaE.6.t
+	desc = jasuaE.6.d
+	picture = ECLIPSE_eventPicture
+	is_triggered_only = yes
+
+	option = {
+		trigger = {
+			NOT = { religion = mak }
+		}
+		name = jasuaE.6.a
+		ai_chance = { factor = 1 }
+		add_stability = 1
+	}
+	option = {
+		trigger = {
+			religion = mak
+		}
+		name = jasuaE.6.b
+		ai_chance = { factor = 1 }
+		add_stability = -1
+	}
+}
+
+#nafa (republic of bohora)
+country_event = {
+	id = jasuaE.7
+	title = jasuaE.7.t
+	desc = jasuaE.7.d
+	picture = ECLIPSE_eventPicture
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = jasuaE.7.a
+		ai_chance = { factor = 1 }
+		change_tag = NAF
+		if = {
+			limit = {
+				AND = {
+					has_custom_ideas = no
+					NOT = {
+						has_idea_group = ARL_ideas
+					}
+				}
+			}
+			country_event = { id = ideagroups.1 } #Swap Ideas
+		}
+		stability = 1
+		change_government = monarchy
+		add_government_reform = tsardom
+		restore_country_name = yes
+		if = {
+			limit = {
+				NOT = { government_rank = 3 }
+			}
+			set_government_rank = 3
+		}
+		add_prestige = 25
+		kill_ruler = yes
+		define_ruler = {
+			name = "Syadon I"
+			dynasty = "Noy"
+			birth_date = 255.12.3
+			adm = 6
+			dip = 6
+			mil = 6
+		}
+		change_primary_culture = Kachik
+		set_religious_school = {
+			group = lathvy_group
+			school = nafan_school
+		}
+		set_global_flag = NafaHappened
+		add_permanent_claim = 5483
+		add_permanent_claim = 5482
+		add_permanent_claim = 5583
+		add_core = 5584
+	}
+	option = {
+		name = jasuaE.7.b
+		ai_chance = { factor = 0 }
+		add_stability = -2
+	}
+}

@@ -1,0 +1,19 @@
+government = anarchy
+add_government_reform = apocalyptic_helvania_reform
+government_rank = 1
+mercantilism = 10
+technology_group = western
+religion = vaximorian
+primary_culture = Vaximor
+capital = 5138	# change to real capital
+historical_friend = DYR
+
+200.1.1 = { #change to 200 or smth
+	monarch = {
+		name = "Regency"
+		adm = 3
+		dip = 3
+		mil = 3
+		regent = yes
+	}
+}

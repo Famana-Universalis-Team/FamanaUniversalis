@@ -1,0 +1,32 @@
+lathvy_fire_pits = {
+	global_unrest = -2
+}
+lathvy_let_yoms_go = {
+	diplomatic_reputation = 1
+}
+lathvy_safe_pilgrims = {
+	tolerance_own = 1
+	caravan_power = 0.2
+}
+lathvy_unsafe_pilgrims = {
+	tolerance_own = -1
+	stability_cost_modifier = 0.1
+}
+lathvy_no_piety_events = { }
+
+feniki_zeal = {
+	global_missionary_strength = 0.10
+	missionary_maintenance_cost = -0.33
+}
+friday_prayers_latvhy = {
+	tolerance_own = 1
+	monthly_piety = 0.001
+	diplomatic_reputation = -1
+}
+loss_of_legal_competence = {
+	diplomatic_reputation = -1
+}
+recent_lathvy_province = {
+	global_missionary_strength = 0.005
+}
+converted = {}

@@ -1,0 +1,19 @@
+government = monarchy
+add_government_reform = autocracy_reform
+government_rank = 3
+mercantilism = 10
+technology_group = chinese
+religion = washoom
+primary_culture = Jaglonkan
+capital = 1	# change to real capital
+historical_rival = FAS
+
+200.1.1 = { #change to 200 or smth
+	monarch = {
+		name = "Regency"
+		adm = 3
+		dip = 3
+		mil = 3
+		regent = yes
+	}
+}

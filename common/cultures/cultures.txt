@@ -1,0 +1,1162 @@
+#Credit to: 
+#NaZa's RP
+#Continuation Lore
+#WWii RP
+#ODRP
+#KCM's RP
+#GLR's RP
+#My own RP (Fall of Nafa)
+#Sunset (ofc)
+#  - Adartho (programmer)
+#############################
+Placeholder_Cultures = {
+	Placeholder_culture = {
+		male_names = {
+            Placeholder
+        }
+        female_names = {
+            Placeholder
+        }
+        dynasty_names = {
+        	Placeholder
+        }
+	}
+}
+#############################
+Maxan = {
+    Lerushian = {
+		primary = AGX
+        male_names = {
+        	Dymio Agixadar Ratonasha Tormi Dorren Giun Tamar Paro Bamal Dorron Nokhes Amilian Camiclar Relambi Melze Yenat Zandar Ratelar Lunpikisa Sonon Tamander Lokis Lemi Romal Opyu Ifrel Asifsya Malav
+        }
+        female_names = {
+        	Zemei Loqa Talova Pinar Opyu Edla Bruri Nabu Meira
+        }
+        dynasty_names = {
+        	Ratonasha Loviaz Lekaux Jantada Jakar Deli Dijon Nedu Wamadera Manu Kanaz Sunek Uchlir Dramra Mibsko Bohika
+        }
+    }
+    Xofkan = {
+		primary = XOF
+        male_names = {
+            Dymio Agixadar Ratonasha Tormi Dorren Giun Tamar Paro Bamal Dorron Nokhes Amilian Camiclar Relambi Melze Yenat Zandar Ratelar Lunpikisa Sonon Tamander Lokis Lemi Romal Ifrel Asifsya Malav
+        }
+        female_names = {
+            Zemei Loqa Talova Pinar Edla Bruri Nabu Meira
+        }
+        dynasty_names = {
+            Ratonasha Loviaz Lekaux Jantada Jakar Deli Dijon Nedu Wamadera Manu Kanaz Sunek Uchlir Dramra Mibsko Bohika
+        }
+    }
+    Bohoran = {
+		primary = SKT
+        male_names = {
+            Dymio Agixadar Ratonasha Tormi Dorren Giun Tamar Paro Bamal Dorron Nokhes Amilian Camiclar Relambi Melze Yenat Zandar Ratelar Lunpikisa Sonon Tamander Lokis Lemi Romal Sydon Amri Ifrel Asifsya Malav
+        }
+        female_names = {
+            Zemei Loqa Talova Pinar Edla Bruri Nabu Meira
+        }
+        dynasty_names = {
+            Ratonasha Loviaz Lekaux Jantada Jakar Deli Dijon Nedu Wamadera Manu Kanaz Sunek Noy Uchlir Dramra Mibsko Bohika
+        }
+    }
+}
+
+#############################
+Emastalian = {
+	East_Emastalian = {
+		primary = EST
+        male_names = {
+            Dymio Agixada Ratonasha Tormi Dorren Giun Tama Paro Bamal Dorron Nokhes Amilian Camicla Relambi Melze Yenat Zandar Ratelar Lunpixa Sonon Tamande Lokis Lemi Romal Sido Ifrel 
+        }
+        female_names = {
+            Zemei Loqa Talova Pina Si Edla Bruri Nadu Meira
+        }
+        dynasty_names = {
+            Ratonasha Loviaz Lekaux Jantada Jaka Deli Dion Nedu Wamadra Manu Kanaz Shunex Sunek Uchlir Dramra Mibsko Bohika Nahetle Ermefi Horfiv
+        }
+    }
+
+	West_Emastalian = {
+		primary = EST
+        male_names = {
+            Dymio Agixada Ratonasha Tormi Dorren Giun Tama Paro Bamal Dorron Nokhes Amilian Camicla Relambi Melze Yenat Zandar Ratelar Lunpixa Sonon Tamande Lokis Lemi Romal Sido Ifrel 
+        }
+        female_names = {
+            Zemei Loqa Talova Pina Si Edla Bruri Nadu Meira
+        }
+        dynasty_names = {
+            Ratonasha Loviaz Lekaux Jantada Jaka Deli Dion Nedu Wamadra Manu Kanaz Shunex Sunek Uchlir Dramra Mibsko Bohika Nahetle Ermefi Horfiv
+        }
+    }
+}
+
+#############################
+Makyna = {
+	Makyan_C = {
+		primary = MKK
+		male_names = {
+			Lesnara Mares Bamal Alkan Fyse Eriof Salmo Makona Makia Ti Yulven Oddu Zalos Muja Doran Atlas Lonlan
+		}
+		female_names = {
+			Chalesh Ceona Talova Essa Namevy Tarina Tashy Algada Naza Ista
+		}
+		dynasty_names = {
+			Kutsh Mokay Ezim Lacin Cipon Filol Eziai
+		}
+	}
+	Okus = {
+		primary = OKU
+		male_names = {
+			Lesnara Mares Bamal Alkan Fyse Eriof Salmo Makona Makia Ti Yulven Oddu Zalos Muja Doran Atlas Lonlan
+		}
+		female_names = {
+			Chalesh Ceona Talova Essa Namevy Tarina Tashy Algada Naza Ista
+		}
+		dynasty_names = {
+			Kutsh Mokay Ezim Lacin Cipon Filol Eziai
+		}
+	}
+	Vaximor = {
+		primary = VAX
+		male_names = {
+			Lesna Mare Bama Alka Fyse Erio Salmo Makona Stara Ti Yulve Oddu Zalo Lizna Dora Atla Lonla
+		}
+		female_names = {
+			Chale Ceona Talova Dlaz Name Tarina Ta Mwaz Naza Ista
+		}
+		dynasty_names = {
+			Kutsh Dwoyu Ezim Lacin Cipon Filol Eziai
+		}
+	}
+	Dyrian = {
+		primary = DYR
+		male_names = {
+			Lesna Mare Fyse Fyzo Makona Stara Ti Yulve Oddu Zalo Lizna Dora Atla Lonla Trihan Erhis Bracob
+		}
+		female_names = {
+			Chale Ceona Talova Dlaz Name Tarina Ta Mza Ista
+		}
+		dynasty_names = {
+			Kutsh Ezim Lacin Fyse Carvell Obamid
+		}
+	}
+	Opmaki = {
+		primary = ZAK
+		male_names = {
+			Galim Aubais Rumbaliv Di-Bodalf Rumbalim Bodaos Ayubaia Neubaia Arlivicus Kaliv Kalivicus Lodarla Gialcut Ayusa Maniamugea Tusshi Diman Saomese
+		}
+		female_names = {
+			Chale Ceona Talova Dlaz Name Tarina Ta Mza Ista
+		}
+		dynasty_names = {
+			Kamai-Brv Braroma Livai-Bos Racus Zenesharh Yubak Arlcimendi Bonen Sai-Boss
+		}
+	}
+}
+
+#############################
+North_West_Antebari = {
+	Nozuman = {
+		male_names = {      
+			Twan Tola'ir Are Acren Ettin Menelkir Kisum Muzira Qizwenok Tamolu Trador Korax Meva
+		}
+		female_names = {
+			Jalolo Washu Ziri Vida Acren
+		}
+		dynasty_names = {
+			Gastur Niwa Jura Kiva Rod Legori Ansh Natigu Viderin Zimin Zimion Aspak
+		}
+	}
+	Bilik_C = {
+		primary = BLK
+		male_names = {      
+			Twando Ibiku Mini Takesi Wili Pomi Yomi Timi Fatedi Lamedon
+		}
+		female_names = {
+			Latesh Luka Yimi
+		}
+		dynasty_names = {
+			Halin Milomoti Uanadi Siba
+		}
+	}
+	Bamali_C = {
+		primary = BMF
+		male_names = {      
+			Ti Pe'ener Jak Kinvir Ref 
+		}
+		female_names = {
+			Latesh Luka Yimi
+		}
+		dynasty_names = {
+			Halin Milomoti Uanadi Siba Burtaku Yamata Mariar
+		}
+	}
+	Fisbiklan = {
+		primary = FSB
+		male_names = {      
+			Twando Ibiku Mini Takesi Wili Pomi Yomi Timi Fatedi Lamedon Vidhasta 
+		}
+		female_names = {
+			Latesh Luka Yimi
+		}
+		dynasty_names = {
+			Halin Milomoti Uanadi Siba Galchhar
+		}
+	}
+}
+
+#############################
+Pextoglazian = {
+	Pextan = {
+		primary = POM
+		male_names = {
+			Ranyaf Romal Eyath Goloro Erio Norek Kaylan Ashdad Poro Pisto Mokok Rokon Asio Kayyaf Thirel Kamir
+		}
+		female_names = {
+			Adaro Loviaz
+		}
+		dynasty_names = {
+			Anohar Loviaz Mayetas Kakin Kel Carvell
+		}
+	}
+
+	Walaran = {
+		primary = WLR
+		male_names = {
+			Ranyaf Romal Eyath Goloro Erio Norek Kaylan Ashdad Poro Pisto Mokok Rokon Asio Kayyaf Thirel Kamir
+		}
+		female_names = {
+			Adaro Loviaz
+		}
+		dynasty_names = {
+			Anohar Loviaz Mayetas Kakin Kel Carvell
+		}
+	}
+
+	Nevian = {
+		male_names = {
+			Ranyaf Romal Eyath Goloro Erio Norek Kaylan Ashdad Poro Pisto Mokok Rokon Asio Kayyaf Thirel Kamir
+		}
+		female_names = {
+			Adaro Loviaz
+		}
+		dynasty_names = {
+			Anohar Loviaz Mayetas Kakin Kel Carvell
+		}
+	}
+
+	New_Pexamolite = {
+		primary = NPX
+		male_names = {
+			Eyath Mayestaz Majestaz Ranyaf
+		}
+		female_names = {
+			Adaro
+		}
+		dynasty_names = {
+			Majestaz Eyath
+		}
+	}
+
+	Glazian = {
+		primary = LOM
+        male_names = {
+			Kalin Jams Remel Niro Gadel Tanus Niro Jijiro Poni Kerta Kert Fani Siak Kanadat Jalio Sicki Siliri Pioro
+		}
+		female_names = {
+			Junes
+		}
+		dynasty_names = {
+			Era Rubli Anhar Tilaf Galali Polank Katanas Kalana Thvat Jadrtank Sikero Kamumba Ruricki Talik Erenatok "Pol Eio"
+		}
+    }
+}
+
+#############################
+Jasuan = {
+    Kisholian = {
+		primary = KSL
+		male_names = {
+			Ogro Yegum Fella Kanuni Yamoz Unahar Jada'ash Vande Yehum Eyath Ayon Beroge Anel Sdaz Horfi B'enn Po Hog Paro Jekelek Verakol
+		}
+		female_names = {
+			Womo Kanuni Maro Yuni Ezeldi
+		}
+		dynasty_names = {
+			Kan H'rd Tino Kipi Monkus Noy Tzaz Anekol Bla Stas Horthy Borwell Sha'pir'o Ranazha Stas
+		}
+    }
+
+	Kapolian = {
+		primary = KAP
+		male_names = {
+			Maro Ma'je Ma'bo Fella Engum Ma'ju Obama Sihari Astrazna
+		}
+		female_names = {
+			Maro Yuni Ezeldi
+		}
+		dynasty_names = {
+			Las Ama Stas Tino Kipi Estaz Yutus Eramel Stas Verakol-Erzas
+		}
+    }
+	West_Jasuan = {
+		primary = KIN
+		male_names = {
+			Orro Heum Fellares Kanunin Yamoszy Unahtare Eyath Ayorn Beroge Anel Horfi Paro Jekelekim Fovers Makei Astrazna
+		}
+		female_names = {
+			Maro Yuni Delan Ezeldi
+		}
+		dynasty_names = {
+			Las Amar Stas Tinu Kipir Estat Yotus Ermel Tushlos Restema Stas
+		}
+    }
+	Oppio_Jasuan = {
+		primary = YAB
+		male_names = {
+			Orro Heum Fellares Kanunin Yamoszy Unahtare Eyath Ayorn Beroge Anel Horfi Paro Jekelekim Fovers
+		}
+		female_names = {
+			Maro Yuni Delan
+		}
+		dynasty_names = {
+			Las Amar Stas Tinu Kipir Estat Yotus Ermel Tushlos Restema 
+		}
+    }
+}
+
+#############################
+Oppian = {
+	Quanexite = {
+		primary = QUA
+		male_names = {
+			Arlentan Div Galivicus Randos Vanaia Yomas Bodalf Gameltan Ayubais Gamevan Ranaia Aubaia Galiv Tusus Alcuge Sazat
+		}
+		female_names = {
+			Soofi Maxia
+		}
+		dynasty_names = {
+			Arli Alcus Vantan Sar Zene Ehetle "di Nari" Ossor Dardor Netroq Mistrani-Umzat Arliv Alzat Neubais Sarlus Netro Ossan Di-Bodaos Ayus Gamel
+		}
+	}
+	Umzatian = {
+		primary = UMZ
+		male_names = {
+			Arlentan Div Galivicus Randos Vanaia Yomas Bodalf Gameltan Ayubais Gamevan Ranaia Aubaia Galiv Tusus Alcuge Sazat
+		}
+		female_names = {
+			Soofi Maxia
+		}
+		dynasty_names = {
+			Arli Alcus Vantan Sar Zene Ehetle "di Nari" Ossor Dardor Netroq Mistrani-Umzat Arliv Alzat Neubais Sarlus Netro Ossan Di-Bodaos Ayus Gamel
+		}
+	}
+	Roplean = {
+		primary = ROP
+		male_names = {
+			Arlentan Div Galivicus Randos Vanaia Yomas Bodalf Gameltan Ayubais Gamevan Ranaia Aubaia Galiv Tusus Alcuge Sazat
+		}
+		female_names = {
+			Soofi Maxia
+		}
+		dynasty_names = {
+			Arli Alcus Vantan Sar Zene Ehetle "di Nari" Ossor Dardor Netroq Mistrani-Umzat Arliv Alzat Neubais Sarlus Netro Ossan Di-Bodaos Ayus Gamel
+		}
+	}
+	Lower_Oppian = {
+		primary = SOP
+		male_names = {
+			Arlentan Div Galivicus Randos Vanaia Yomas Bodalf Gameltan Ayubais Gamevan Ranaia Aubaia Galiv Tusus Alcuge Sazat
+		}
+		female_names = {
+			Soofi Maxia Zoi Messai
+		}
+		dynasty_names = {
+			Arli Alcus Vantan Sar Zene Ehetle "di Nari" Ossor Dardor Netroq Mistrani-Umzat Arliv Alzat Neubais Sarlus Netro Ossan Di-Bodaos Ayus Gamel
+		}
+	}
+	Ossori = {
+		primary = OSS
+		male_names = {
+			Arlentan Div Galivicus Randos Vanaia Yomas Bodalf Gameltan Ayubais Gamevan Ranaia Aubaia Galiv Tusus Alcuge Sazat
+		}
+		female_names = {
+			Soofi Maxia Zoi Messai
+		}
+		dynasty_names = {
+			Arli Alcus Vantan Sar Zene Ehetle "di Nari" Ossor Dardor Netroq Mistrani-Umzat Arliv Alzat Neubais Sarlus Netro Ossan Di-Bodaos Ayus Gamel
+		}
+	}
+	Laglan = {
+		primary = LAG
+		male_names = {
+			Arlentan Devan Galivunu Randsan Vanai Yas Bidoalev Gomoltan Aius Kanevan Ranaia Aubaia Galif Tusus Alcuge
+		}
+		female_names = {
+			Soofi Masia Zoi Messai
+		}
+		dynasty_names = {
+			Ali Sarl Vantan Zenel Elhetlen Arliv Alzat Radalf Sarlus Netro Ossan Alcus Ays Gamel
+		} 
+	}
+	Arlentan = {
+		primary = ARL
+		male_names = {
+			Arlentan Div Galivicus Randos Vanaia Yomas Bodalf Gameltan Ayubais Gamvan Ranaia Aubaia Galiv Tusus Alcuge Sazat
+		}
+		female_names = {
+			Soofi Maxia Zoi Messai
+		}
+		dynasty_names = {
+			Arli Alcus Vantan Sar Zene Ehetle "di Nari" Ossor Dardor Netroq Mistrani-Umzat Arliv Alzat Neubais Sarlus Netro Ossan Di-Bodaos Gert Gamel
+		}
+	}
+	Deshmozi = {
+		primary = DES
+		male_names = {
+			Arlentan Div Galivicus Randos Vanaia Yomas Bodalf Gameltan Ayubais Gamevan Ranaia Aubaia Galiv Tusus Alcuge
+		}
+		female_names = {
+			Soofi Maxia Zoi Messai
+		}
+		dynasty_names = {
+			Arli Alcus Vantan Sar Zene Ehetle "di Nari" Ossor Dardor Netroq Mistrani-Umzat Arliv Alzat Neubais Sarlus Netro Ossan Di-Bodaos Gert Ayus Gamel
+		}
+	}
+	Thalmorian = {
+		primary = THA
+		male_names = {
+			Mantera Galys Dransy Vanay Yomes Bodflar Gametlan Ajubinas Ganefan Ramaya Aubaima Gatvy Tuans Alcuhan
+		}
+		female_names = {
+			Soofy Mayxa Zoy Messay
+		}
+		dynasty_names = {
+			Thelar Monthle Zryas Lyrvan Suyel Lurcay
+		}
+	}
+}
+
+#############################
+Hoxoi = {
+	Hoxan = {
+		male_names = {
+			Alletan Dif Galvis Rannos Vanii Yoms Gamletan Aytrus Gamefan Galif Sus Alcuge
+		}
+		female_names = {
+			Soufi Mazia Zoi Messia
+		}
+		dynasty_names = {
+			Arli Sare Zene Eta Arliv Alzat Radalf Netro Ossan Alcus Vantan Gamel
+		}
+	}
+	Zoblotran = {
+		primary = ZBL
+		male_names = {
+			Alletan Dif Galvis Rannos Vanii Yoms Gamletan Aytrus Gamefan Galif Sus Alcuge
+		}
+		female_names = {
+			Soufi Mazia Zoi Messia
+		}
+		dynasty_names = {
+			Arli Sare Zene Eta Arliv Alzat Radalf Netro Ossan Alcus Vantan Gamel
+		}
+	}
+	Blastan = {
+		primary = YTB
+		male_names = {
+			Alletan Dif Galvis Rannos Vanii Yoms Gamletan Aytrus Gamefan Galif Sus Alcuge
+		}
+		female_names = {
+			Soufi Mazia Zoi Messia
+		}
+		dynasty_names = {
+			Arli Sare Zene Eta Arliv Alzat Radalf Netro Ossan Alcus Vantan Gamel
+		}
+	}
+}
+#############################
+Geopyiopian = {
+	Igizi_Edishan = {
+		male_names = {
+			Haromiam Diajalo Loozamiar Akil Harmiar Toman Tolatar Yako
+		}
+		female_names = {
+			Jalolo Washu Ziri Vida Acren
+		}
+		dynasty_names = {
+			Gastoor Nutia Jora Qyva Red Ligori Onsh Natigua Zimn Viden Apak
+		}
+	}
+	Zeli = {
+		male_names = {
+			Haromiam Diajalo Loozamiar Akil Harmiar Toman Tolatar
+		}
+		female_names = {
+			Jalolo Washu Ziri
+		}
+		dynasty_names = {
+			Gastoor Nutia Jora Qyva Red Ligori Onsh Natigua Zidi Viden Apak Lypeus
+		}
+	}
+	Jaglonkan = {
+		male_names = {
+			Haromiam Diajalo Loozamiar Akil Harmiar Toman Tolatar
+		}
+		female_names = {
+			Jalolo Washu Ziri Vida Acren
+		}
+		dynasty_names = {
+			Gastoor Nutia Jora Qyva Red Ligori Onsh Natigua Zing
+		}
+	}
+	Zorfian = {
+		male_names = {
+			Haromiam Diajalo Loozamiar Akil Harmiar Toman Tolatar Viden Apak
+		}
+		female_names = {
+			Jalolo Washu Ziri Vida Acren
+		}
+		dynasty_names = {
+			Gastoor Nutia Jora Qyva Red Ligori Onsh Natigua Zimn Viden Apak Lypeus
+	}
+	Fyartin = {
+		male_names = {
+			Haromiam Diajalo Loozamiar Akil Harmiar Toman Tolatar
+		}
+		female_names = {
+			Jalolo Washu Ziri
+		}
+		dynasty_names = {
+			Gastoor Nutia Jora Qyva Red Ligori Onsh Natigua Zimin Viden Apak
+		}
+	}
+	Roniglan = {
+		male_names = {
+			Haromiam Diajalo Loozamiar Akil Harmiar Toman Tolatar
+		}
+		female_names = {
+			Jalolo Washu Ziri Vida Acren
+		}
+		dynasty_names = {
+			Gastoor Nutia Jora Qyva Red Ligori Onsh Natigua Zimn Viden Apak
+		}
+	}
+	Forlimo_Poguri = {
+		male_names = {
+			Harumim Djalo Luzmiar Ahil Umiar Toman Tolatar Aro Acren Ettin Menelkir
+		}
+		female_names = {
+			Jalolo Washu Ziri Vida Acren
+		}
+		dynasty_names = {
+			Gastur Niwa Jura Kiva Rod Legori Ansh Natigu Viderin Zimn Viden Apak
+		}
+	}
+}
+#############################
+Ravsho = { #unfinished
+	Fashran = {
+		primary = FAS
+		male_names = {
+			Ravshara Lanreisseir Unia Gaara Yharinel Axilea Ogro Astrazna Axiaraniro Raravshara Unrara
+		}
+		female_names = {
+			Dari
+		}
+		dynasty_names = {
+			Wynrois Kan Addesh Verakol Erzas Assha Laznaristro
+		}
+	}
+	Lashran = {
+		male_names = {
+			Ravshara Lanreisseir Unia Gaara Yharinel Axilea Ogro Astrazna Axiaraniro Raravshara Unrara
+		}
+		female_names = {
+			Dari
+		}
+		dynasty_names = {
+			Wynrois Kan Addesh Verakol Erzas Assha Laznaristro
+		}
+	}
+}
+#############################
+Xalian = {
+	Neo_Xalnish = {
+		primary = GAX
+		male_names = {
+			Kalim Jamus Nidro Gick Gadal Tanas Nirio Jikiro Polani Certa Keriat Thvanke Siank Kanadat Jalio Sicki Siliri Pioro
+		}
+		female_names = {
+			Jaines Rurolat Tavas
+		}
+		dynasty_names = {
+			Eurea Rumbali Tilav Galali Polank Katanas Kalana Thvat Jadrtank Sikero Kamumba Ruricki Talik Erenatok Restok
+		}
+	}
+
+    Glasian = {
+        male_names = {
+			Kalin Jams Remel Niro Gadel Tanus Niro Jijiro Poni Kerta Kert Fani Siak Kanadat Jalio Sicki Siliri Pioro
+		}
+		female_names = {
+			Junes
+		}
+		dynasty_names = {
+			Era Rubli Anhar Tilaf Galali Polank Katanas Kalana Thvat Jadrtank Sikero Kamumba Ruricki Talik Erenatok "Pol Eio"
+		}
+    }
+	
+	Delkian_C = {
+		primary = DEL
+		male_names = {
+			Kalim Jamus Nidro Gick Gadal Tanas Nirio Jikiro Polani Certa Keriat Thvanke Siank Kanadat Jalio Sicki Siliri Pioro
+		}
+		female_names = {
+			Jaines Rurolat Tavas
+		}
+		dynasty_names = {
+			Eurea Rumbali Tilav Galali Polank Katanas Kalana Thvat Jadrtank Sikero Kamumba Ruricki Talik Erenatok Restok
+		}
+	}
+
+	Sixany = {
+		primary = SIX
+		male_names = {
+			Kalim Jamus Nidro Gick Gadal Tanas Nirio Jikiro Polani Certa Keriat Thvanke Siank Kanadat Jalio Sicki Siliri Pioro
+		}
+		female_names = {
+			Jaines Rurolat Tavas
+		}
+		dynasty_names = {
+			Eurea Rumbali Tilav Galali Polank Katanas Kalana Thvat Jadrtank Sikero Kamumba Ruricki Talik Erenatok Restok
+		}
+	}
+
+	Morian_C = {
+		primary = MRS
+		male_names = {
+			Kalin Jams Remel Niro Gadel Tanus Niro Jijiro Poni Kerta Kert Fani Siak Kanadat Jalio Sicki Siliri Pioro
+		}
+		female_names = {
+			Junes
+		}
+		dynasty_names = {
+			Era Rubli Anhar Tilaf Galali Polank Katanas Kalana Thvat Jadrtank Sikero Kamumba Ruricki Talik Erenatok "Pol Eio"
+		}
+	}
+
+	Pawani_C = {
+		primary = NKM
+		male_names = { 
+			Renif Ronal Eiat Goluo Erio Norek Kaylan Ashdad Dorren Nokes Poro Pisto 
+		}
+		female_names = {
+			Adao Lovias Yuna
+		}
+		dynasty_names = {
+			Anwar Lovias Mayetas Kakin Agixad
+		}
+	}
+}
+
+#############################
+Vanoman = {
+	Vanoman = {
+		primary = VAN
+		male_names = {
+			Gaszron Urszus Forara Rzegarder Kaszasis Wenel Sotinotin Somin
+		}
+		female_names = {
+			Jaines Mayel Ghones Aina
+		}
+		dynasty_names = {
+			Escilliptus Vanom Uma
+		}
+	}
+
+	Emtik = {
+		male_names = {
+			Gaszron Urszus Forara Rzegarder Kaszasis Wenel Sotinotin Somin
+		}
+		female_names = {
+			Jaines Mayel Ghones Aina
+		}
+		dynasty_names = {
+			Escilliptus Vanom Uma
+		}
+	}
+}
+
+#############################
+Aresian_C = {
+	Nakoan = {
+		primary = NAK
+		male_names = {
+			Kalim Anoe Niya Solot Lasan Arol Marsel Jamus Jas Twat Hamin Sotin Pomu
+		}
+		female_names = {
+			Jaines Anin Resh Arot Kimin
+		}
+		dynasty_names = {
+			Marco Lubentas Ladotali Wiromo Yomuku Kakukases Mibibanes Yan Lush Ibars Mimin Maku Arine Pef Tatinvi Luban Aninesi Janoedo
+		}
+	}
+	Verkan = {
+		primary = VRK
+		male_names = {
+			Kalim Anoe Niya Solot Lasan Arol Marsel Jamus Jas Twat Hamin Sotin Pomu
+		}
+		female_names = {
+			Jaines Anin Resh Arot Kimin
+		}
+		dynasty_names = {
+			Marco Lubentas Ladotali Wiromo Yomuku Kakukases Mibibanes Yan Lush Ibars Mimin Maku Arine Pef Tatinvi Luban Aninesi Janoedo
+		}
+	}
+
+	Yatian = {
+		primary = YTI
+		male_names = {
+			Kalim Anoe Niya Solot Lasan Arol Marsel Jamus Jas Twat Hamin Sotin Pomu
+		}
+		female_names = {
+			Jaines Anin Resh Arot Kimin
+		}
+		dynasty_names = {
+			Marco Lubentas Ladotali Wiromo Yomuku Kakukases Mibibanes Yan Lush Ibars Mimin Maku Arine Pef Tatinvi Luban Aninesi Janoedo
+		}
+	}
+}
+
+#############################
+Gotzlic = {
+	Zubaran = {
+		male_names = {
+			Gaszron Urszus Forara Jrus Hozen Palel Simot Czszyn Rzuszraimus Umarminol Arsegayu
+		}
+		female_names = {
+			Jain Mayul Ghenes Ana
+		}
+		dynasty_names = {
+			Aukkus Varm Erme Holipt Masciyen Maszes Erminelilin Umelenot Poliyus Vura Valin
+		}
+	}
+	Hozyan = {
+		male_names = {
+			Gaszron Urszus Forara Jrus Hozen Palel Simot Czszyn Rzuszraimus Umarminol Arsegayu
+		}
+		female_names = {
+			Jain Mayul Ghenes Ana
+		}
+		dynasty_names = {
+			Aukkus Varm Erme Holipt Masciyen Maszes Erminelilin Umelenot Poliyus Vura Valin
+		}
+	}
+	Leronyan = {
+		male_names = {
+			Gaszron Urszus Forara Jrus Hozen Palel Simot Czszyn Rzuszraimus Umarminol Arsegayu
+		}
+		female_names = {
+			Jain Mayul Ghenes Ana
+		}
+		dynasty_names = {
+			Aukkus Varm Erme Holipt Masciyen Maszes Erminelilin Umelenot Poliyus Vura Valin
+		}
+	}
+}
+
+#############################
+Nafan = { #unifinished
+	Kachik = {
+		primary = RCK
+		male_names = {
+			Noy Elret Abus Ordit Altruis
+		}
+		female_names = {
+			Sini Yiana
+		}
+		dynasty_names = {
+			Syadon
+		}
+	}
+    Rini_C = {
+		male_names = {
+			Noy Elret Abus Ordit Altruis
+		}
+		female_names = {
+			Sini Yiana
+		}
+		dynasty_names = {
+			Syadon
+		}
+    }
+}
+
+#############################
+Western_Estali = { #unfinished
+	Feniki = {
+		primary = RES
+		male_names = {
+			Satrit Mayal Wohjevr? Jaizw?r Eizni Rarjuzer Reidid? Ngoilur?t Arlalan Gamal 
+		}
+		female_names = {
+			Tolsveygi Ini Duv
+		}
+		dynasty_names = {
+			Zulrvapi Zeizhre Jurafi Niabiame
+		}
+	}
+	Satryan = {
+		male_names = {
+			Satrit "Mayal" "Wohjevr?" "Jaizw?r" "Eizni" "Rarjuzer" "Reidid?" "Ngoilur?t" 
+		}
+		female_names = {
+			Tolsveygi
+		}
+		dynasty_names = {
+			Zulrvapi
+		}
+	}
+	Mirrisan = {
+		primary = MRR
+		male_names = {
+			"Torive Oij" "Wk?hwa Gob" "Foitu?d Lug" "Zeizhre Stun" "Raiwshair We" "?oir Kos" "Jurafi Us" "Hj?r? L?m" "Ubk? Of" "Feiko Jiz" "R?reg Moir" "L?khjeir No" "Ato Gung"
+		}
+		female_names = {
+			"J?ufeg ?" "Garka Zhi" "Kojer Zhoi" "R?reg Moir" "Eit?b A" "Rairt? Vd?r"
+		}
+		dynasty_names = {
+			Durisgaad Alb?k Rimar Gi?j Vaigratbag J?geial Iojur Ojimi Voigwoi Bew?m Aigtai Gur?ngim Rairt? Ngaizr?
+	}
+	Mukanic = {
+		male_names = {
+			Muk
+		}
+		female_names = {
+			Youlez
+		}
+		dynasty_names = {
+			Falwakfan
+		}
+	}
+}
+#############################
+Ordic = {
+	Ordican = {
+		primary = ORC
+		male_names = {
+            Ordic Berber Odalco Ozgici Niabiame Nuolme Natuydai Tordou Munai Gyagyi Oydoytu Gyedaitau Aiypaito Cenudai Noboai Aimiate Aulnauzmu
+        }
+        female_names = {
+            Beroro Nai Mida Uge Imia Gilnia Uaizbia Kaiamau
+        }
+        dynasty_names = {
+			Mar Moai Cemaui Cazgi Malgya Comugia Tilco Cauitau Gyage Miaufno Tomu Kaiamau Ufpau
+        }
+	}
+	
+	Vordori = {
+		male_names = {
+            Ordic Berber Odalco Ozgici Niabiame Nuolme Natuydai Tordou Munai Gyagyi Oydoytu Gyedaitau Aiypaito Cenudai Noboai Aimiate Aulnauzmu
+        }
+        female_names = {
+            Beroro Nai Mida Uge Imia Gilnia Uaizbia Kaiamau
+        }
+        dynasty_names = {
+			Mar Moai Cemaui Cazgi Malgya Comugia Tilco Cauitau Gyage Miaufno Tomu Kaiamau Ufpau
+        }
+	}
+	
+	Yuvlan = {
+		male_names = {
+            Ordic Berber Odalco Ozgici Niabiame Nuolme Natuydai Tordou Munai Gyagyi Oydoytu Gyedaitau Aiypaito Cenudai Noboai Aimiate Aulnauzmu
+        }
+        female_names = {
+            Beroro Nai Mida Uge Imia Gilnia Uaizbia Kaiamau
+        }
+        dynasty_names = {
+			Mar Moai Cemaui Cazgi Malgya Comugia Tilco Cauitau Gyage Miaufno Tomu Kaiamau Ufpau
+        }
+	}
+	
+	Vamanyan = {
+		male_names = {
+            Ordic Berber Odalco Ozgici Niabiame Nuolme Natuydai Tordou Munai Gyagyi Oydoytu Gyedaitau Aiypaito Cenudai Noboai Aimiate Aulnauzmu
+        }
+        female_names = {
+            Beroro Nai Mida Uge Imia Gilnia Uaizbia Kaiamau
+        }
+        dynasty_names = {
+			Mar Moai Cemaui Cazgi Malgya Comugia Tilco Cauitau Gyage Miaufno Tomu Kaiamau Ufpau
+        }
+	}
+
+	Nahallaian = {
+		primary = NHL
+		male_names = {
+            Oddic Bebbe Oduro Oggic Nabama Num Natur Dord Man Gyag Oddutu Geditur Apart Gyenda Lobonai Amart Almazumm
+        }
+        female_names = {
+            Barat Nai Mida Ukke Imia Galann Utaizbilin Kalanamau
+        }
+        dynasty_names = {
+			Mar Mora Kyemat Gyez Maya Mogur Bortu Kayar Kag Mayar Tor Ufipar
+        }
+	}
+}
+#############################
+Maldik = {
+	Maldikian = { #malding
+		male_names = {
+            Odrig Brebar Odlac Ozgik Nabam Nolmo Natarda Tarda Muno Gahi Oyud Gedat Aport Kanda Nobo Amart Anuzum
+        }
+        female_names = {
+            Beroro Nai Mida Uge Imia Gilnia Uaizbia Kaiamau
+        }
+        dynasty_names = {
+			Mar Moyai Kemay Kasi Magya Komur Dilo Kayti Gag Mafnor Tomu Kamar Ufpau
+        }
+	}
+}
+#############################
+Komelwaiti = {
+	Elwaiti = {
+		primary = ELW
+		male_names = {
+            Allusz
+        }
+        female_names = {
+            Shatarj
+        }
+        dynasty_names = {
+			Jhar
+        }
+	}
+	Kom = {
+		primary = KOM
+		male_names = {
+			Jomba
+		}
+		female_names = {
+			Yarm
+		}
+		dynasty_names = {
+			Leop
+		}
+	}
+}
+#############################
+Naravami_C = {
+	Rduma = {
+		male_names = {
+            Marda Gezbonam Bidum Nomeg Galne Dazdo Dulkop Mogibi Bimemi Gitifpa Pagagi Bitop Gakut Dumego Nezdog Muguni Bulman Tipmum Mokdab Domsmun Negun Nomog Doyni Belde
+        }
+        female_names = {
+            Kuvar Dibu Tuki Begugpo Mepap Omi Nufku Noahna Naymoda Dotik
+        }
+        dynasty_names = {
+			Bhari Tiprdad Pikldomti Gumanmip Namimspe Miniybug Mughdudmu Geznata Defnibe Pikyguma Mithnimmet Paklmanu Bifmekti Gasmipnu Degpitnud
+        }
+	}
+	Nirkifi = {
+		male_names = {
+            Marda Gezbonam Bidum Nomeg Galne Dazdo Dulkop Mogibi Bimemi Gitifpa Pagagi Bitop Gakut Dumego Nezdog Muguni Bulman Tipmum Mokdab Domsmun Negun Nomog Doyni Belde
+        }
+        female_names = {
+            Kuvar Dibu Tuki Begugpo Mepap Omi Nufku Noahna Naymoda Dotik
+        }
+        dynasty_names = {
+			Bhari Tiprdad Pikldomti Gumanmip Namimspe Miniybug Mughdudmu Geznata Defnibe Pikyguma Mithnimmet Paklmanu Bifmekti Gasmipnu Degpitnud
+        }
+	}
+	Burgavian = {
+		male_names = {
+            Marda Gezbonam Bidum Nomeg Galne Dazdo Dulkop Mogibi Bimemi Gitifpa Pagagi Bitop Gakut Dumego Nezdog Muguni Bulman Tipmum Mokdab Domsmun Negun Nomog Doyni Belde
+        }
+        female_names = {
+            Kuvar Dibu Tuki Begugpo Mepap Omi Nufku Noahna Naymoda Dotik
+        }
+        dynasty_names = {
+			Bhari Tiprdad Pikldomti Gumanmip Namimspe Miniybug Mughdudmu Geznata Defnibe Pikyguma Mithnimmet Paklmanu Bifmekti Gasmipnu Degpitnud
+        }
+	}
+}
+#############################
+Yomtanian = { # unfinished
+	Hasian = {
+		primary = HAS
+		male_names = {
+			Nihaluchan Oboloianifpeni Gweanhrefn Ugujaj Kowa Twon Olid
+		}
+		female_names = {
+			Ayen Tesey Ifs Moak
+		}
+		dynasty_names = {
+			Gusan Isk Ga'a Gosi Kaoad Has
+		}
+	}
+}
+#############################
+Toman_C = { #Localise
+    #country = { has_banners = 1}
+	#province = { local_has_banners = 1}
+	Costoman = {
+		male_names = {
+            Garos Costian Terk Zeon Genrosh Wiron Shir Wesor Dosair Ollos Soldon Rellow Nasarius Saunsum Alkan Wellron
+        }	
+        female_names = {
+            Sirva Kira Melia Finia Menea Elena Emeria Mila Shera Nellia Sarah Lea Pina Raenys Mara Zulla Saera Vilia Costia
+        }
+        dynasty_names = {
+            "of Lykat" "of Torair" "of Jeskon" "of Ilgs" Wystron Eggel Gastiman Selwys Orgato Wombas Istrox Wetiske Velganon "of Pind" "of Cert" "of Kastras" Eswick Handil
+        }
+	}
+    Krastoman = {
+		male_names = {
+        	Garos Terk Zeon Genrosh Wiron Shir Wesor Dosair Ollos Soldon Rellow Nasarius Saunsum Alkan Wellron
+        }
+        female_names = {
+         	Sirva Kira Melia Finia Menea Elena Emeria Mila Shera Nellia Sarah Lea Pina Raenys Mara Zulla Saera Vilia
+        }
+        dynasty_names = {
+        	"of Lykat" "of Torair" "of Jeskon" "of Ilgs" Wystron Eggel Gastiman Selwys Orgato Wombas Istrox Wetiske Velganon "of Pind" "of Cert" "of Kastras" Eswick Handil
+        }
+	}
+    Hantoman = {
+		male_names = {
+        	Garos Terk Zeon Genrosh Wiron Shir Wesor Dosair Ollos Soldon Rellow Nasarius Saunsum Alkan Wellron
+        }
+        female_names = {
+         	"Sirva Kira Melia Finia Menea Elena Emeria Mila Shera Nellia Sarah Lea Pina Raenys Mara Zulla Saera Vilia
+        }
+        dynasty_names = {
+         	"of Lykat" "of Torair" "of Jeskon" "of Ilgs" Wystron Eggel Gastiman Selwys Orgato Wombas Istrox Wetiske Velganon "of Pind" "of Cert" "of Kastras" Eswick Handil
+        }
+	}
+    Gabotoman = {
+		male_names = {
+        	Garos Terk Zeon Genrosh Wiron Shir Wesor Dosair Ollos Soldon Rellow Nasarius Saunsum Alkan Wellron
+        }
+        female_names = {
+        	Sirva Kira Melia Finia Menea Elena Emeria Mila Shera Nellia Sarah Lea Pina Raenys Mara Zulla Saera Vilia
+        }
+        dynasty_names = {
+        	"of Lykat" "of Torair" "of Jeskon" "of Ilgs" Wystron Eggel Gastiman Selwys Orgato Wombas Istrox Wetiske Velganon "of Pind" "of Cert" "of Kastras" Eswick Handil
+        }
+	}
+    Liblatoman = {
+		male_names = {
+            Garos Terk Zeon Genrosh Wiron Shir Wesor Dosair Ollos Soldon Rellow Nasarius Saunsum Alkan Wellron
+        }
+        female_names = {
+        	Sirva Kira Melia Finia Menea Elena Emeria Mila Shera Nellia Sarah Lea Pina Raenys Mara Zulla Saera Vilia
+        }
+        dynasty_names = {
+        	"of Lykat" "of Torair" "of Jeskon" "of Ilgs" Wystron Eggel Gastiman Selwys Orgato Wombas Istrox Wetiske Velganon "of Pind" "of Cert" "of Kastras" Eswick Handil
+        }
+	}
+}
+#############################
+Qamoni = {
+    #country = { has_banners = 1}
+	#province = { local_has_banners = 1} (what the fuck is this)
+
+	Dorroman_C = {
+		primary = DOR
+		male_names = {
+           	Ramald Narby Agul Givurt Coblan Robak Wiltor Larso Okobar Eruk Phutger Vitermi Alori Kyro Zuigr Chirkol Kizura Kila Losk Aqara Genej
+        }
+        female_names = {
+           	Mekoli Nasha Macaulay Sabril Madsenia Prassil
+		}
+        dynasty_names = {
+            Latar Qashauil Okolobarmi Lahacaca Merana Menacul Raltenol
+        }
+	}
+	Qanoyan = {
+		primary = QAN
+		male_names = {
+           	Ramalj Nary Ail Gvurt Coban Robaj Wilso Laso Okbar Euk Futger Vitehi Aoi Kiri Zuigr Shirol Kizur Apfadra Ethorki Qanoyan Avahan Eirosh
+        }
+        female_names = {
+		   	Mekol Nash Macula Sabr Madena Prassil
+        }
+        dynasty_names = {
+            Latar Qashauil Okolobarmi Lahacaca Merana Menacul Raltenol
+        }
+	}
+	Tikulsan = {
+		male_names = {
+            Ramalj Nary Ail Gvurt Coban Robaj Wilso Laso Okbar Euk Futger Vitehi Aoi Kiri Zuigr Shirol Kizur Akma Rymilla Aragyon Dondra Arejenak Aganta
+        }
+        female_names = {
+            Mekol Nash Macula Sabr Madena Prassil
+    	}
+        dynasty_names = {
+			Latar Qashauil Okolobarmi Lahacaca Merana Menacul Raltenol
+        }
+	}
+}
+#############################
+Ekelan = {
+	Oblokelan = {
+		male_names = {
+        	Akanara Karyna Agaran Kolor Dlina Kakorian Ofarok Kenitki Edgodra Boptol Oblogga Prykya Bogdan Zgaly Eyzdova Agaritah Angara
+        }
+    	female_names = {
+          	Qantahya Lahaani Mosion Bahrana Rigz
+    	}
+    	dynasty_names = {
+			Covut Aptgasen Kejerol Shol Wilonama Kenej Lasolil Bobaba Ryni Qadol Okiga Kerayaky Praur Zgask Aguk
+    	}
+	}
+	Arakelan = {
+		male_names = {
+           	Akanara Karyna Agaran Kolor Dlina Kakorian Ofarok Kenitki Edgodra Boptol Oblogga Prykya Bogdan Zgaly Eyzdova Agaritah Angara
+       	}
+        	female_names = {
+         	Qantahya Lahaani Mosion Bahrana Rigz
+      	}
+      	dynasty_names = {
+			Covut Aptgasen Kejerol Shol Wilonama Kenej Lasolil Bobaba Ryni Qadol Okiga Kerayaky Praur Zgask Aguk
+    	}
+	}
+	Alavyan = {
+		male_names = {
+          	Akanara Karyna Agaran Kolor Dlina Kakorian Ofarok Kenitki Edgodra Boptol Oblogga Prykya Bogdan Zgaly Eyzdova Agaritah Angara
+       	}
+       	female_names = {
+        	Qantahya Lahaani Mosion Bahrana Rigz
+     	}
+ 		dynasty_names = {
+				Covut Aptgasen Kejerol Shol Wilonama Kenej Lasolil Bobaba Ryni Qadol Okiga Kerayaky Praur Zgask Aguk
+    	}
+	}
+	Kakori = {
+		male_names = {
+           	Akanara Karyna Agaran Kolor Dlina Kakorian Ofarok Kenitki Edgodra Boptol Oblogga Prykya Bogdan Zgaly Eyzdova Agaritah Angara
+    	}
+     	female_names = {
+         	Qantahya Lahaani Mosion Bahrana Rigz
+     	}
+      	dynasty_names = {
+			Covut Aptgasen Kejerol Shol Wilonama Kenej Lasolil Bobaba Ryni Qadol Okiga Kerayaky Praur Zgask Aguk
+    	}
+	}
+}
+#############################
+Antiash = {
+	Kurkari = {
+		male_names = {
+            Ashadir Kabir Abul Qayam Umea Hovakar
+        }
+        female_names = {
+            Kandar Oala Palana
+        }
+        dynasty_names = {
+			Mensh Selloni Haas Taqar Olar
+        }
+	}
+}

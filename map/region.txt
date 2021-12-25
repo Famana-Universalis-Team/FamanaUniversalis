@@ -1,0 +1,285 @@
+# A province can only belong to one region!
+
+# random_new_world_region is used for RNW. Must be first in this list.
+random_new_world_region = {
+}
+
+########################################
+# EUROPE                               #
+########################################
+
+outer_region = {
+	areas = {
+		seflara_area
+		kruli_area
+		lisin_area
+	}
+}
+
+upper_oppia_region = {
+	areas = {
+		quanex_area
+		western_realm
+		unnamed_area_1
+		unnamed_area_2
+		unnamed_area_3
+		east_umzatia
+		umzat_bay
+		fazalep_area
+		upper_oppian_area
+		umzat_islands_area
+		lower_oppia_area
+		arma_area
+		roplea_area
+		eastern_core_area
+		western_core_area
+		asetli_area
+		unnamed_area_19
+	}
+}
+
+lower_oppia_region = {
+	areas = {
+		effasha_area
+		ponaa_area
+		nutia_area
+		lyposh_area
+		unnamed_area_4
+		unnamed_area_5
+		nuti_area
+		atamsu_area
+		mesdool_area
+	}
+}
+
+arlenta_region = {
+	areas = {
+		elorak_area
+		gromash_area
+		arlen_area
+		unnamed_area_6
+		unnamed_area_7
+		unnamed_area_8
+		zne_area
+	}
+}
+
+maky_region = {
+	areas = {
+		vaximor_area
+		makykay_area
+		okus_area
+		unnamed_area_9
+		bava_area
+		kars_area
+	}
+}
+
+south_xalia_region = {
+	areas = {
+		zeaf_area
+		tsaj_area
+		marn_area
+		houras_area
+		unnamed_area_10
+	}
+}
+
+eastern_desert_region = {
+	areas = {
+		hoxoi_area
+		mahansha_area
+		unnamed_area_11
+	}
+}
+
+jasua_region = {
+	areas = {
+		unnamed_area_12
+		unnamed_area_13
+		kinvirel_area
+		unnamed_area_31
+		unnamed_area_49
+		yabonia_area
+		unnamed_area_51
+		unnamed_area_50
+		unnamed_area_47
+		unnamed_area_48
+		unnamed_area_34
+		unnamed_area_46
+	}
+}
+
+laglon_region = {
+	areas = {
+		unnamed_area_23
+		unnamed_area_14
+		unnamed_area_15
+		unnamed_area_16
+		unnamed_area_17
+		unnamed_area_18
+	}
+}
+
+west_estal_region = {
+	areas = {
+		unnamed_area_22
+		northern_umzat
+		west_feniki
+		hasia_area
+	}
+}
+
+walara_region = {
+	areas = {
+		unnamed_pexto_14
+		unnamed_pexto_13
+		unnamed_pexto_11
+		unnamed_pexto_12
+		unnamed_pexto_4
+		unnamed_pexto_10
+	}
+}
+
+pextoglazia_region = {
+	areas = {
+		pomlen_area
+		unnamed_pexto_2
+		unnamed_pexto_1
+		mofemi_morsum_area
+		unnamed_pexto_5
+		unnamed_pexto_3
+	}
+}
+
+lomea_region = {
+	areas = {
+		unnamed_pexto_6
+		unnamed_pexto_7
+		unnamed_pexto_8
+		unnamed_pexto_9
+		maglazios_area
+	}
+}
+
+ordica_region = {
+	areas = {
+		unnamed_area_24
+		unnamed_area_26
+		unnamed_area_27
+		unnamed_area_25
+		unnamed_area_28
+	}
+}
+
+vordor_region = {
+	areas = {
+		nabrosia_area
+		holy_bridge_area
+		vordor_area
+	}
+}
+
+emastalia_region = {
+	areas = {
+		riximi_area
+		durra_area
+		morla_area
+		poxa_area
+		vava_area
+	}
+}
+
+kapolia_region = {
+	areas = {
+		kachik_area
+		bohora_area
+		unnamed_area_29
+		unnamed_area_30
+		unnamed_area_33
+		unnamed_area_32
+	}
+}
+
+east_xalia_region = {
+	areas = {
+		marnet_area
+		sostus_area
+		sixan_area
+		calla_area
+		oxaled_area
+		vinsa_area
+		xon_area
+		vinsa_area
+		walamo_area
+		unnamed_area_21
+	}
+}
+
+moria_region = {
+	areas = {
+		jexus_area
+		karmanon_area
+		morsum_area
+		vesuxa_area
+		glazia_area
+	}
+}
+
+north_xalia_region = {
+	areas = {
+		pawan_area
+		vox_larm_area
+		pexamol_area
+		elwait_area
+		unnamed_area_20
+		pyarxu_area
+	}
+}
+
+moxon_region = {
+	areas = {
+		agixion_area
+		lesser_moxon_area
+		central_lerush_area
+		outer_moxon_area
+	}
+}
+
+aresia_region = {
+	areas = {
+		unnamed_area_40
+		yatia_area
+		oearan_area
+		nakoa_area
+		nikat_area
+		north_nakoa_area
+		borlebim_area
+	}
+}
+
+vanoma_region = {
+	areas = {
+		unnamed_area_43
+		unnamed_area_42
+		unnamed_area_41
+	}
+}
+
+nozumol_region = {
+	areas = {
+		unnamed_area_38
+	}
+}
+
+bamal_gulf_region = {
+	areas = {
+		unnamed_area_37
+		unnamed_area_36
+		unnamed_area_35
+		unnamed_area_39
+		unnamed_area_48
+		unnamed_area_45
+		unnamed_area_44
+	}
+}

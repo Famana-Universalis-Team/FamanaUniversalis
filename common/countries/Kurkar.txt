@@ -1,0 +1,69 @@
+#Country Name: Please see filename.
+
+graphical_culture = westerngfx
+
+color = { 77  127  69 }
+
+historical_idea_groups = {
+	economic_ideas
+	defensive_ideas
+	diplomatic_ideas
+	offensive_ideas
+	innovativeness_ideas
+	quantity_ideas
+	administrative_ideas
+	religious_ideas
+}
+
+historical_units = {
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+	swiss_landsknechten
+	dutch_maurician
+	austrian_tercio
+	austrian_grenzer
+	austrian_hussar
+	austrian_white_coat
+	austrian_jaeger
+	mixed_order_infantry
+	open_order_cavalry
+	napoleonic_square
+	napoleonic_lancers
+}
+
+monarch_names = {
+	"Ashadir #0" = 1
+	"Kabir #0" = 1
+	"Abul #0" = 1
+	"Qayam #0" = 1
+	"Umea #0" = 1
+	"Hovakar #0" = 1
+	"Kandar #0" = -1
+	"Oala #0" = -1
+	"Palana #0" = -1
+}
+
+leader_names = {
+	Ashadir
+	Kabir
+	Abul
+	Qayam
+	Umea
+	Hovakar
+}
+
+ship_names = {
+	Qair
+	Uhan
+	Imaq
+	Lahan
+}
+
+army_names = {
+	"$PROVINCE$ militia" 
+}
+
+fleet_names = {
+	"Grand Navy"
+}

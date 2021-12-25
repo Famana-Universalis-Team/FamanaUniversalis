@@ -1,0 +1,19 @@
+government = monarchy
+add_government_reform = despotic_monarchy
+government_rank = 1
+mercantilism = 15
+technology_group = western
+religion = lathvy
+primary_culture = East_Emastalian
+capital = 5581	# change to real capital
+religious_school = maxan_school
+
+200.1.1 = { #change to 200 or smth
+	monarch = {
+		name = "Melze"
+		dynasty = "Majora"
+		adm = 1
+		dip = 2
+		mil = 4
+	}
+}

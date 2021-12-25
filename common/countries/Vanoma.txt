@@ -1,0 +1,73 @@
+#Country Name: Please see filename.
+
+graphical_culture = westerngfx
+
+color = { 238  231  101 }
+
+historical_idea_groups = {
+	economic_ideas
+	defensive_ideas
+	diplomatic_ideas
+	offensive_ideas
+	innovativeness_ideas
+	quantity_ideas
+	administrative_ideas
+	religious_ideas
+}
+
+historical_units = {
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+	swiss_landsknechten
+	dutch_maurician
+	austrian_tercio
+	austrian_grenzer
+	austrian_hussar
+	austrian_white_coat
+	austrian_jaeger
+	mixed_order_infantry
+	open_order_cavalry
+	napoleonic_square
+	napoleonic_lancers
+}
+
+monarch_names = {
+	"Gaszron #0" = 1
+	"Urszus #0" = 1
+	"Forara #0" = 1
+	"Rzegarder #0" = 1
+	"Kaszasis #0" = 1
+	"Wenel #0" = 1
+	"Sotinotin #0" = 1
+	"Somin #0" = 1
+	"Jaines #0" = -1
+	"Mayel #0" = -1
+	"Ghones #0" = -1
+	"Aina #0" = -1
+}
+
+leader_names = {
+	Gaszron
+	Urszus
+	Forara
+	Rzegarder
+	Kaszasis
+	Wenel
+	Sotinotin
+	Somin
+}
+
+ship_names = {
+	Hamami
+	Vatomali
+	Henaoti
+}
+
+army_names = {
+	"Anomat $PROVINCE$ is" 
+}
+
+fleet_names = {
+	"Outfaring fleet"
+}

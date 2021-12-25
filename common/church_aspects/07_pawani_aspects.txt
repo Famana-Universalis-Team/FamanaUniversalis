@@ -1,0 +1,81 @@
+myth_of_asura_aspect = {
+	cost = 100
+	modifier = {
+		trade_efficiency = 0.05
+		production_efficiency = 0.05
+	}
+}
+
+myth_of_ojasi_aspect = {
+	cost = 100
+	modifier = {
+		global_tax_modifier = 0.05
+		yearly_corruption = -0.05
+	}
+}
+
+myth_of_thulelu_aspect = {
+	cost = 100
+	modifier = {
+		development_cost = -0.05
+	}
+}
+
+myth_of_iton_aspect = {
+	cost = 100
+	modifier = {
+		legitimacy = 0.25
+		devotion = 0.25
+		horde_unity = 0.25
+		republican_tradition = 0.1
+		prestige_per_development_from_conversion = 0.25
+	}
+}
+
+myth_of_skugel_aspect = {
+	cost = 100
+	modifier = {
+		warscore_cost_vs_other_religion = -0.1
+		core_creation = -0.05
+	}
+}
+
+myth_of_yucabru_aspect = {
+	cost = 100
+	modifier = {
+		garrison_size = 0.10
+		defensiveness = 0.10
+	}
+}
+
+myth_of_gilo_aspect = {
+	cost = 100
+	modifier = {
+		global_prosperity_growth = 0.1
+		technology_cost = -0.05
+	}
+}
+
+myth_of_stronix_aspect = {
+	cost = 100
+	modifier = {
+		land_morale = 0.05
+		naval_morale = 0.05
+	}
+}
+
+myth_of_alechai_aspect = {
+	cost = 100
+	modifier = {
+		global_trade_power = 0.05
+		global_trade_goods_size_modifier = 0.05
+	}
+}
+
+myth_of_stox_aspect = {
+	cost = 200
+	modifier = {
+		manpower_in_true_faith_provinces= 0.10
+		tolerance_own = 1
+	}
+}

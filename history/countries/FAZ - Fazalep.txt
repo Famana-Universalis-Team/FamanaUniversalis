@@ -1,0 +1,20 @@
+government = monarchy
+add_government_reform = oppian_state_reform
+government_rank = 1
+mercantilism = 10
+technology_group = western
+religion = western_oppian
+primary_culture = Lower_Oppian
+capital = 5059	# change to real capital
+
+197.6.11 = {
+	monarch = {
+		name = "Bodalf"
+		dynasty = "Neubais"
+		adm = 3
+		dip = 4
+		mil = 3
+		birth_date = 178.23.9
+	}
+}
+

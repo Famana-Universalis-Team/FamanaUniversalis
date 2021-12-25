@@ -1,0 +1,61 @@
+RES = {
+	always = yes
+}
+
+LAG = {
+	NOT = {
+		exists = RES
+	}
+}
+
+ORC = {
+	NOT = {
+		is_year = 400
+	}
+}
+
+GEP = {
+	always = yes
+}
+
+FAS = {
+	NOT = {
+		is_year = 300
+	}
+}
+
+NAF = {
+	always = yes
+}
+
+BOH = {
+	NOT = {
+		exists = NAF
+	}
+}
+
+EST = {
+	always = yes
+}
+
+HOX = {
+	NOT = {
+		exists = RKL
+	}
+}
+
+RKL = {
+	NOT = {
+		exists = HOX
+	}
+}
+
+MSH = {
+	NOT = {
+		is_year = 300
+	}
+}
+
+QAN = {
+	always = yes
+}

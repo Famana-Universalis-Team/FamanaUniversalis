@@ -1,0 +1,132 @@
+#Country Name: Please see filename.
+
+graphical_culture = westerngfx
+
+color = { 228  105  27 }
+
+historical_idea_groups = {
+	economic_ideas
+	defensive_ideas
+	diplomatic_ideas
+	offensive_ideas
+	innovativeness_ideas
+	quantity_ideas
+	administrative_ideas
+	religious_ideas
+}
+
+historical_units = {
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+	swiss_landsknechten
+	dutch_maurician
+	austrian_tercio
+	austrian_grenzer
+	austrian_hussar
+	austrian_white_coat
+	austrian_jaeger
+	mixed_order_infantry
+	open_order_cavalry
+	napoleonic_square
+	napoleonic_lancers
+}
+
+monarch_names = {
+	"Marda #0" = 1
+	"Gezbonam #0" = 1
+	"Bidum #0" = 1
+	"Nomeg #0" = 1
+	"Galne #0" = 1
+	"Dazdo #0" = 1
+	"Dulkop #0" = 1
+	"Mogibi #0" = 1
+	"Bimemi #0" = 1
+	"Gitifpa #0" = 1
+	"Pagagi #0" = 1
+	"Bitop #0" = 1
+	"Gakut #0" = 1
+	"Dumego #0" = 1
+	"Nezdog #0" = 1
+	"Muguni #0" = 1
+	"Bulman #0" = 1
+	"Tipmum #0" = 1
+	"Mokdab #0" = 1
+	"Domsmun #0" = 1
+	"Negun #0" = 1
+	"Nomog #0" = 1
+	"Doyni #0" = 1
+	"Belde #0" = 1
+	"Kuvar #0" = -1
+	"Dibu #0" = -1
+	"Tuki #0" = -1
+	"Begugpo #0" = -1
+	"Mepap #0" = -1
+	"Omi #0" = -1
+	"Nufku #0" = -1
+	"Noahna #0" = -1
+	"Naymoda #0" = -1
+	"Dotik #0" = -1
+}
+
+leader_names = {
+	Marda
+	Gezbonam
+	Bidum
+	Nomeg
+	Galne
+	Dazdo
+	Dulkop
+	Mogibi
+	Bimemi
+	Gitifpa
+	Pagagi
+	Bitop
+	Gakut
+	Dumego
+	Nezdog
+	Muguni
+	Bulman
+	Tipmum
+	Mokdab
+	Domsmun
+	Negun
+	Nomog
+	Doyni
+	Belde
+}
+
+ship_names = {
+	Marda
+	Gezbonam
+	Bidum
+	Nomeg
+	Galne
+	Dazdo
+	Dulkop
+	Mogibi
+	Bimemi
+	Gitifpa
+	Pagagi
+	Bitop
+	Gakut
+	Dumego
+	Nezdog
+	Muguni
+	Bulman
+	Tipmum
+	Mokdab
+	Domsmun
+	Negun
+	Nomog
+	Doyni
+	Belde
+}
+
+army_names = {
+	"$PROVINCE$ army" 
+}
+
+fleet_names = {
+	"Great Navy"
+}

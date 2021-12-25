@@ -1,0 +1,117 @@
+
+
+oppian_state_reform = {
+	icon = "oppian"
+	allow_normal_conversion = yes
+	legacy_equivalent = despotic_monarchy
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	modifiers = {
+		land_morale = 0.10
+		fabricate_claims_cost = 0.5
+	}
+	potential = {
+		culture_group = Oppian
+	}
+	custom_attributes = {
+		locked_government_type = yes
+	}
+}
+
+crown_kingdom_reform = {
+	icon = "crowncity"
+	allow_normal_conversion = no
+	legacy_equivalent = despotic_monarchy
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	modifiers = {
+		land_morale = 0.10
+		fabricate_claims_cost = 0.5
+		diplomatic_reputation = 2
+		legitimacy = 1
+		governing_capacity_modifier = -0.5
+	}
+	potential = {
+		tag = TCK
+	}
+	custom_attributes = {
+		locked_government_type = yes
+	}
+	fixed_rank = 2
+}
+
+holy_monarchy_reform = {
+	icon = "pextoglazia"
+	allow_normal_conversion = no
+	legacy_equivalent = theocratic_government
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	modifiers = {
+		global_missionary_strength = 0.01
+		governing_capacity_modifier = -0.1
+		church_influence_modifier = 0.2
+		church_loyalty_modifier = 0.05
+		nobles_loyalty_modifier = 0.05
+	}
+	queen = yes
+	royal_marriage = yes
+	potential = {
+		tag = PEX
+		NOT = { has_country_flag = pextocivilwar }
+	}
+	custom_attributes = {
+		locked_government_type = yes
+	}
+	fixed_rank = 2
+}
+
+corrupt_monarchy_reform = {
+	icon = "shatteredpextoglazia"
+	allow_normal_conversion = no
+	legacy_equivalent = theocratic_government
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	modifiers = {
+		governing_capacity_modifier = -0.2
+		church_loyalty_modifier = -0.20
+		nobles_loyalty_modifier = -0.20
+		global_manpower_modifier = -0.33
+		land_morale = -0.15
+		tolerance_own = -1
+	}
+	queen = yes
+	royal_marriage = yes
+	potential = {
+		tag = PEX
+		has_country_flag = pextocivilwar
+	}
+	custom_attributes = {
+		locked_government_type = yes
+	}
+	fixed_rank = 2
+}
+
+tomban_reform = {
+	icon = "houseoftomba"
+	allow_normal_conversion = no
+	legacy_equivalent = despotic_monarchy
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	modifiers = {
+		infantry_power = 0.10
+		land_morale = 0.10
+		fabricate_claims_cost = 0.50
+	}
+	queen = yes
+	royal_marriage = yes
+	potential = {
+		culture_group = Toman
+		NOT = {
+			tag = TLB
+		}
+	}
+	custom_attributes = {
+		locked_government_type = yes
+	}
+	fixed_rank = 1
+}

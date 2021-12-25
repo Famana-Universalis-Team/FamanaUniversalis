@@ -1,0 +1,102 @@
+#Country Name: Please see filename.
+
+graphical_culture = westerngfx
+
+color = { 251  109  15 }
+
+historical_idea_groups = {
+	economic_ideas
+	defensive_ideas
+	diplomatic_ideas
+	offensive_ideas
+	innovativeness_ideas
+	quantity_ideas
+	administrative_ideas
+	religious_ideas
+}
+
+historical_units = {
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+	swiss_landsknechten
+	dutch_maurician
+	austrian_tercio
+	austrian_grenzer
+	austrian_hussar
+	austrian_white_coat
+	austrian_jaeger
+	mixed_order_infantry
+	open_order_cavalry
+	napoleonic_square
+	napoleonic_lancers
+}
+
+monarch_names = {
+	"Ramaldoz #0" = 1
+	"Narbyoz #2" = 2
+	"Aguloz #0" = 1
+	"Givurtoz #0" = 1
+	"Coblanoz #0" = 1
+	"Robakoz #0" = 1
+	"Wiltoroz #0" = 1
+	"Larsoz #0" = 1
+	"Okobaroz #0" = 1
+	"Erukoz #0" = 1
+	"Phutgeroz #0" = 1
+	"Vitermioz #0" = 1
+	"Alorioz #0" = 1
+	"Kyroz #0" = 1
+	"Zuigroz #0" = 1
+	"Chirkoloz #0" = 1
+	"Kizuroz #0" = 1
+	"Kiloz #0" = 1
+	"Loskoz #0" = 1
+	"Aqaroz #0" = 1
+	"Genejoz #0" = 1
+	"Mekolioz #0" = -1
+	"Nashaoz #0" = -1
+	"Macaulayoz #0" = -1
+	"Sabriloz #0" = -1
+	"Madseniaoz #0" = -1
+	"Prassiloz #0" = -1
+
+}
+
+leader_names = {
+	Ramald
+	Narby
+	Agul
+	Givurt
+	Coblan
+	Robak
+	Wiltor
+	Larso
+	Okobar
+	Eruk
+	Phutger
+	Vitermi
+	Alori
+	Kyro
+	Zuigr
+	Chirkol
+	Kizura
+	Kila
+	Losk
+	Aqara
+	Genej
+}
+
+ship_names = {
+	Hamami
+	Vatomali
+	Henaoti
+}
+
+army_names = {
+	"Gadiaz le $PROVINCE$"
+}
+
+fleet_names = {
+	"Grand navy"
+}

@@ -1,0 +1,61 @@
+# In-game the entries are (stable) sorted by isolation_value (ascending) and mapped to 0-[number of entries - 1] levels. Negative values are not considered valid.
+
+endless_crusade_isolation = {
+	isolation_value = 0
+
+	modifier = {
+		diplomatic_reputation = -3
+		production_efficiency = -0.15
+		development_cost = 0.15
+		cb_on_religious_enemies = yes
+		global_heathen_missionary_strength = 0.02
+		core_creation = -0.1
+	}
+}
+
+religious_zeal_isolation = {
+	isolation_value = 1
+
+	modifier = {
+		production_efficiency = -0.05
+		development_cost = 0.05
+		missionaries = 1
+	}
+}
+
+foreign_missions_isolation = {
+	isolation_value = 2
+
+	modifier = {
+		improve_relation_modifier = 0.2
+		global_trade_power = 0.1
+	}
+}
+
+shun_outside_influence_isolation = {
+	isolation_value = 3
+
+	modifier = {
+		diplomatic_upkeep = -2
+		governing_capacity_modifier = -0.10
+		global_prosperity_growth = 0.25
+		stability_cost_modifier = -0.10
+		development_cost = -0.05
+		production_efficiency = 0.05
+	}
+}
+
+inward_perfection_isolation = {
+	isolation_value = 4
+
+	modifier = {
+		stability_cost_to_declare_war = 1
+		diplomatic_upkeep = -3
+		governing_capacity_modifier = -0.25
+		global_prosperity_growth = 0.50
+		stability_cost_modifier = -0.15
+		production_efficiency = 0.10
+		development_cost = -0.10
+		all_power_cost = -0.05
+	}
+}

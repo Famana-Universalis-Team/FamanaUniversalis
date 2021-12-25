@@ -1,0 +1,41 @@
+
+TDN_ideas = {
+	start = {
+		heir_chance = 1
+		discipline = 0.1
+	}
+	
+	bonus = {
+		prestige = 3
+		legitimacy = 2
+	}	
+
+	trigger = {
+		tag = TDN
+	}
+	free = yes
+	
+	tdn_great_genes = {
+		monarch_military_power = 2
+		monarch_diplomatic_power = 2
+		monarch_admin_power = 2
+	}
+	tdn_popularity = {
+		diplomatic_reputation = 2
+	}
+	tdn_lurer_of_females = {
+		female_advisor_chance = 1
+	}
+	tdn_experienced_tax_evader = {
+		global_tax_modifier = 0.2
+	}
+	tdn_the_innovator = {
+		technology_cost = -0.1
+	}
+	tdn_diplomatic_talent = {
+		improve_relation_modifier = 0.5
+	}
+	tdn_assimilation = {
+		culture_conversion_cost = -0.33
+	}
+}

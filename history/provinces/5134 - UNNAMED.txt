@@ -1,0 +1,20 @@
+#Written with Eu4 Easy Province Creator by emiroercn
+#UNNAMED
+ 
+culture = Arlentan
+religion = western_oppian
+hre = no
+discovered_by = western
+base_tax = 2
+base_production = 3
+trade_goods = grain
+base_manpower = 1
+capital = "Sestu"
+is_city = yes
+extra_cost = 1
+fort_15th = yes
+
+owner = OSS
+controller = OSS
+add_core = OSS
+add_core = ZNE

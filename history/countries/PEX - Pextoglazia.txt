@@ -1,0 +1,25 @@
+government = theocracy
+add_government_reform = holy_monarchy_reform
+government_rank = 2
+mercantilism = 10
+technology_group = western
+religion = lathvy
+primary_culture = Pextan
+add_accepted_culture = Glazian
+add_accepted_culture = Nevian
+capital = 5337	# change to real capital
+historical_rival = ORC
+historical_rival = TCK
+historical_rival = LAG
+religious_school = pextoglazian_school
+
+205.1.1 = { #change to 205
+	monarch = {
+		name = "Thirel"
+		adm = 3
+		dip = 4
+		mil = 4
+		dynasty = "Kel"
+		birth_date = 174.5.7
+	}
+}

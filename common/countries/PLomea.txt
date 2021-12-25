@@ -1,0 +1,93 @@
+#Country Name: Please see filename.
+
+graphical_culture = westerngfx
+
+color = { 220  25  105 }
+
+historical_idea_groups = {
+	economic_ideas
+	defensive_ideas
+	diplomatic_ideas
+	offensive_ideas
+	innovativeness_ideas
+	quantity_ideas
+	administrative_ideas
+	religious_ideas
+}
+
+historical_units = {
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+	swiss_landsknechten
+	dutch_maurician
+	austrian_tercio
+	austrian_grenzer
+	austrian_hussar
+	austrian_white_coat
+	austrian_jaeger
+	mixed_order_infantry
+	open_order_cavalry
+	napoleonic_square
+	napoleonic_lancers
+}
+
+monarch_names = {
+	"Ranyaf #0" = 1
+	"Romal #0" = 1
+	"Eyath #0" = 1
+	"Goloro #0" = 1
+	"Erio #0" = 1
+	"Norek #0" = 1
+	"Kaylan #0" = 1
+	"Ashdad #0" = 1
+	"Poro #0" = 1
+	"Pisto #0" = 1
+	"Mokok #0" = 1
+	"Rokon #0" = 1
+	"Asio #0" = 1
+	"Kayyaf #0" = 1
+	"Thirel #0" = 1
+	"Kamir #0" = 1
+	"Adaro #0" = -1
+	"Loviaz #0" = -1
+}
+
+leader_names = {
+	Ranyaf
+	Romal
+	Eyath
+	Goloro
+	Erio
+	Norek
+	Kaylan
+	Ashdad
+	Poro
+	Pisto
+	Mokok
+	Rokon
+	Asio
+	Kayyaf
+	Thirel
+	Kamir
+	Adaro
+	Loviaz
+}
+
+ship_names = {
+	Romal
+	Light
+	Justice
+	Aria
+	Tjeno
+	Estalo
+	Rrono
+}
+
+army_names = {
+	"$PROVINCE$ army" 
+}
+
+fleet_names = {
+	"Ara's Armada"
+}

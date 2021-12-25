@@ -1,0 +1,22 @@
+government = monarchy
+add_government_reform = autocracy_reform
+government_rank = 2
+mercantilism = 10
+technology_group = western
+religion = shirian
+primary_culture = Neo_Xalnish
+capital = 5467	# change to real capital
+add_accepted_culture = Delkian_C
+add_accepted_culture = Glasian
+historical_friend = XOF
+historical_rival = ALM
+
+200.1.1 = { #change to 200 or smth
+	monarch = {
+		name = "Regency"
+		adm = 3
+		dip = 3
+		mil = 3
+		regent = yes
+	}
+}

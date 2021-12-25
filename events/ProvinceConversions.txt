@@ -1,0 +1,108 @@
+namespace = provincec
+
+country_event = { #Alikami gets cores on Lathvy Upper Oppian provinces, change of separatism
+    id = provincec.1
+	hidden = yes
+
+    trigger = {
+        any_owned_province = {
+			AND = {
+				religion = lathvy
+				OR = {
+					culture = Quanexite
+					culture = Roplean
+				}
+				NOT = { is_core = ALK }
+			}
+		}
+    }
+	immediate = {
+		every_owned_province = {
+			limit = {
+				AND = {
+					religion = lathvy
+					OR = {
+						culture = Quanexite
+						culture = Roplean
+					}
+				}
+			}
+			add_core = ALK
+			add_nationalism = 10
+			add_unrest = 2
+		}
+	}
+           
+    mean_time_to_happen = {
+        days = 1
+    }
+    option = {
+        name = provincec.1.a
+	}
+}
+
+province_event = { #Random coastal xalian provinces / provinces adjacent to lathvy provinces will convert as long as pexto exists, ga lathve exists or agixiana is lathvy (doesnt affect tonmo provinces)
+    id = provincec.2
+	title = provincec.2.t
+	desc = provincec.2.d
+	picture = RELIGIOUS_TURMOIL_eventPicture
+	goto = root
+
+    trigger = {
+		owner = {
+			NOT = {
+				has_country_modifier = recent_lathvy_province
+			}
+			OR = {
+				exists = PEX
+				AND = {
+					exists = GLT
+					GLT = {
+						religion = lathvy
+					}
+				}
+				5361 = {
+					religion = lathvy
+				}
+			}
+		}
+		superregion = ga_xal_superregion
+		NOT = { religion = lathvy }
+		NOT = { religion = tonmo }
+		any_neighbor_province = {
+			AND = {
+				NOT = {
+					has_province_modifier = converted
+				}
+				OR = {
+					is_sea = yes
+					religion = lathvy
+				}
+			}
+		}
+		NOT = {
+			development = 15
+		}
+	}
+    mean_time_to_happen = {
+        years = 30
+    }
+    option = {
+        name = provincec.2.a
+		ai_chance = { factor = 1 }
+		change_religion = lathvy
+		add_unrest = 4
+		hidden_modifier = {
+			add_province_modifier = {
+				name = "converted"
+				duration = 10000
+			}
+		}
+		owner = {
+			add_country_modifier = {
+				name = "recent_lathvy_province"
+				duration = 3650
+			}
+		}
+	}
+}

@@ -1,0 +1,173 @@
+# Do not change tags in here without changing every other reference to them.
+# If adding new dieties, make sure they are uniquely named.
+
+chigim =
+{
+	global_tax_modifier = 0.05
+	development_cost = -0.1
+	
+	allow = {
+		OR = {
+			religion = western_oppian
+		    religion = eastern_oppian
+		    religion = reformed_oppian
+		}
+	}
+	sprite = 13
+	
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 3
+			personality = ai_capitalist
+		}	
+		modifier = {
+			factor = 1.5
+			personality = ai_colonialist
+		}	
+		modifier = {
+			factor = 0.5
+			personality = ai_militarist
+		}		
+	}
+}
+
+hovaki = 
+{
+	diplomatic_reputation = 1
+	improve_relation_modifier = 0.20
+	
+	allow = {
+		OR = {
+			religion = western_oppian
+		    religion = eastern_oppian
+		    religion = reformed_oppian
+		}
+	}
+	sprite = 14
+	
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 3
+			personality = ai_diplomat
+		}
+		modifier = {
+			factor = 0.5
+			personality = ai_militarist
+		}			
+	}	
+}
+
+jayla =
+{
+	discipline = 0.05
+	ae_impact = -0.10
+	
+	allow = {
+		OR = {
+			religion = western_oppian
+		    religion = eastern_oppian
+		    religion = reformed_oppian
+		}
+	}
+	sprite = 15
+	
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 3
+			personality = ai_militarist
+		}		
+		modifier = {
+			factor = 0.5
+			personality = ai_diplomat
+		}			
+	}	
+}
+
+nima = 
+{
+	technology_cost = -0.05
+	idea_cost = -0.05
+	
+	allow = {
+		OR = {
+			religion = western_oppian
+		    religion = eastern_oppian
+		    religion = reformed_oppian
+		}
+	}
+	sprite = 16
+	
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			personality = ai_capitalist
+		}	
+		modifier = {
+			factor = 2
+			personality = ai_colonialist
+		}
+		modifier = {
+			factor = 2
+			personality = ai_balanced
+		}
+	}	
+}
+
+roh = 
+{ 
+	missionaries = 1
+	global_missionary_strength = 0.01
+	
+	allow = {
+		OR = {
+			religion = western_oppian
+		    religion = eastern_oppian
+		    religion = reformed_oppian
+		}
+	}
+	sprite = 17
+	
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			personality = ai_colonialist
+		}
+	}
+}
+
+yorlox =
+{
+	prestige_decay = -0.01
+	siege_ability = 0.10
+	
+	allow = {
+		OR = {
+			religion = western_oppian
+		    religion = eastern_oppian
+		    religion = reformed_oppian
+		}
+	}
+	sprite = 18
+	
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			personality = ai_balanced
+		}
+		modifier = {
+			factor = 2
+			personality = ai_militarist
+		}
+		modifier = {
+			factor = 0.5
+			personality = ai_capitalist
+		}		
+	}	
+}
+

@@ -1,0 +1,133 @@
+canonise_the_igealbidon_aspect = {
+	cost = 100
+	modifier = {
+		stability_cost_modifier = -0.10
+	}
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 2
+			NOT = { religious_unity = 0.8 }
+		}
+		modifier = {
+			factor = 2
+			unrest = 4
+			NOT = { stability = 0 }
+		}
+	}
+}
+
+holy_draft_aspect = {
+	cost = 100
+	modifier = {
+		manpower_recovery_speed = 0.10
+	}
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 2
+			is_at_war = yes
+			NOT = { manpower_percentage = 0.9 }
+		}
+		modifier = {
+			factor = 2
+			NOT = { manpower_percentage = 0.5 }
+		}
+	}
+}
+
+crush_the_yomtanians_aspect = {
+	cost = 100
+	modifier = {
+		global_colonial_growth = 15
+	}
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 2
+			num_of_colonies = 1
+		}
+		modifier = {
+			factor = 2
+			num_of_colonists = 2
+		}
+	}
+}
+
+purge_heretics_aspect = {
+	cost = 100
+	modifier = { 
+		global_missionary_strength = 0.01
+	}
+	ai_will_do = {
+		factor = 12
+		modifier = {
+			factor = 2
+			NOT = { religious_unity = 0.8 }
+		}
+		modifier = {
+			factor = 0
+			NOT = {
+				any_owned_province = {
+					has_owner_religion = no
+				}
+			}
+		}
+	}
+}
+
+bishop_soldiers_aspect = {
+	cost = 100
+	modifier = { 
+		discipline = 0.025
+	}
+	ai_will_do = {
+		factor = 12
+		modifier = {
+			factor = 2
+			is_at_war = yes
+		}
+	}
+}
+
+united_amatanians_aspect = {
+	cost = 100
+	modifier = { 
+		improve_relation_modifier = 0.10
+	}
+	ai_will_do = {
+		factor = 15
+	}
+}
+
+successor_of_the_eclipse_aspect = {
+	cost = 100
+	modifier = { 
+		ae_impact = -0.05
+	}
+	ai_will_do = {
+		factor = 12
+		modifier = {
+			factor = 0
+			is_at_war = no
+		}
+	}
+}
+
+reinvent_churches_aspect = {
+	cost = 100
+	modifier = { 
+		global_tax_modifier = 0.05
+	}
+	ai_will_do = {
+		factor = 17
+		modifier = {
+			factor = 0.5
+			treasury = 500
+		}
+		modifier = {
+			factor = 0
+			treasury = 2500
+		}
+	}
+}

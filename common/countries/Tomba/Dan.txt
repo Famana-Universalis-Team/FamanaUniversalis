@@ -1,0 +1,94 @@
+#Country Name: Please see filename.
+
+graphical_culture = westerngfx
+
+color = { 255  130  236 }
+
+historical_idea_groups = {
+	economic_ideas
+	quantity_ideas
+	trade_ideas
+	offensive_ideas
+	humanist_ideas
+	diplomatic_ideas
+	administrative_ideas
+	quantity_ideas
+}
+
+historical_units = {
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+	swiss_landsknechten
+	dutch_maurician
+	austrian_tercio
+	austrian_grenzer
+	austrian_hussar
+	austrian_white_coat
+	austrian_jaeger
+	mixed_order_infantry
+	open_order_cavalry
+	napoleonic_square
+	napoleonic_lancers
+}
+
+monarch_names = {
+	"Dan #0" = 1
+	"Daniel  #0" = 1
+	"Dano #0" = 1
+	"Danton #0" = 1
+	"Dani #0" = 1
+	"Daan #0" = 1
+	"Danar #0" = 1
+	"Dane #0" = 1
+	"Danube #0" = 1
+	"Dantay #0" = 1
+	"Danny #0" = 1
+	"Danilo #0" = 1
+	"Dandy #0" = 1
+	"Dana #0" = -1
+	"Danielle #0" = -1
+	"Danara #0" = -1
+	"Danataya #0" = -1
+	"Danby #0" = -1
+	"Daniyah #0" = -1
+	"Danisa #0" = -1
+	"Danita #0" = -1
+	"Danteja #0" = -1
+	"Danalyn #0" = -1
+}
+
+leader_names = {
+	Garos
+	Costian
+	Terk
+	Zeon
+	Genrosh
+	Wiron
+	Shir
+	Wesor
+	Dosair
+	Ollos
+	Soldon
+	Rellow
+	Nasarius
+	Saunsum
+	Alkan
+	Wellron
+}
+
+ship_names = {
+	Cosse
+	Scit
+	Hamoon
+	Labork
+	Uhaj
+}
+
+army_names = {
+	"Anol $PROVINCE$" 
+}
+
+fleet_names = {
+	"Grand Navy"
+}

@@ -1,0 +1,120 @@
+#Country Name: Please see filename.
+
+graphical_culture = westerngfx
+
+color = { 66  71  23 }
+
+historical_idea_groups = {
+	economic_ideas
+	defensive_ideas
+	diplomatic_ideas
+	offensive_ideas
+	innovativeness_ideas
+	quantity_ideas
+	administrative_ideas
+	religious_ideas
+}
+
+historical_units = {
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+	swiss_landsknechten
+	dutch_maurician
+	austrian_tercio
+	austrian_grenzer
+	austrian_hussar
+	austrian_white_coat
+	austrian_jaeger
+	mixed_order_infantry
+	open_order_cavalry
+	napoleonic_square
+	napoleonic_lancers
+}
+
+monarch_names = {
+	"Dymio #0" = 1
+	"Agixada #0" = 1
+	"Ratonasha #0" = 1
+	"Tormi #0" = 1
+	"Dorren #0" = 1
+	"Giun #0" = 1
+	"Tama #0" = 1
+	"Paro #0" = 1 #0
+	"Bamal #0" = 1
+	"Dorron #0" = 1
+	"Nokhes #0" = 1
+	"Amilian  #0" = 1
+	"Camicla #0" = 1
+	"Relambi #0" = 1
+	"Melze #0" = 1
+	"Yenat #0" = 1
+	"Zandar #0" = 1
+	"Ratelar #0" = 1
+	"Lunpixa #0" = 1
+	"Sonon #0" = 1
+	"Tamande #0" = 1
+	"Lokis #0" = 1
+	"Lemi #0" = 1
+	"Romal  #0" = 1
+	"Sido #0" = 1
+	"Ifrelr #0" = 1
+	"Zemei #0" = -1
+	"Loqa #0" = -1
+	"Talova #0" = -1
+	"Pina #0" = -1
+	"Si #0" = -1
+	"Edla #0" = -1
+	"Bruri #0" = -1
+	"Nadu #0" = -1
+	"Meira #0" = -1
+}
+
+leader_names = {
+	Dymio
+	Agixada
+	Ratonasha
+	Tormi
+	Dorren
+	Giun
+	Tama
+	Paro
+	Bamal
+	Dorron
+	Nokhes
+	Amilian 
+	Camicla
+	Relambi
+	Melze
+	Yenat
+	Zandar
+	Ratelar
+	Lunpixa
+	Sonon
+	Tamande
+	Lokis
+	Lemi
+	Romal 
+	Sido
+	Ifrelr
+}
+
+ship_names = {
+	Lypona
+	Yadosha
+	Amelaka
+	Dirice
+	Manole
+	Tomba
+}
+
+army_names = {
+	"Skecya i $PROVINCE$" 
+}
+
+fleet_names = {
+	"Everlasting Armada"
+	"Vin's Legacy"
+	"Grand Navy"
+	"Victorious Fleet"
+}

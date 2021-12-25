@@ -1,0 +1,62 @@
+vassal = {
+	first = VAX
+	second = DYR
+	start_date = 211.1.1
+	end_date = 1700.1.1
+}
+
+dependency = {
+	subject_type = "diocese"
+	first = PEX
+	second = PLM
+	start_date = 200.11.11
+	end_date = 1573.7.3
+}
+
+dependency = {
+	subject_type = "diocese"
+	first = PEX
+	second = PPX
+	start_date = 200.11.11
+	end_date = 1573.7.3
+}
+
+dependency = {
+	subject_type = "diocese"
+	first = PEX
+	second = PTG
+	start_date = 200.11.11
+	end_date = 1573.7.3
+}
+
+dependency = {
+	subject_type = "diocese"
+	first = PEX
+	second = PCG
+	start_date = 200.11.11
+	end_date = 1573.7.3
+}
+
+dependency = {
+	subject_type = "diocese"
+	first = PEX
+	second = PHL
+	start_date = 200.11.11
+	end_date = 1573.7.3
+}
+
+dependency = {
+	subject_type = "diocese"
+	first = PEX
+	second = PLY
+	start_date = 200.11.11
+	end_date = 1573.7.3
+}
+
+dependency = {
+	subject_type = "diocese"
+	first = PEX
+	second = PJS
+	start_date = 200.11.11
+	end_date = 1573.7.3
+}

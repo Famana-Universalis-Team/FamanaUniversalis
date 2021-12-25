@@ -1,0 +1,19 @@
+government = monarchy
+add_government_reform = autocracy_reform
+government_rank = 2
+mercantilism = 10
+technology_group = western
+religion = bilik
+primary_culture = Bilik_C
+capital = 5683	# change to real capital
+
+200.3.3 = { #change to 200 or smth
+	monarch = {
+		name = "Arishi"
+		dynasty = "Lama"
+		adm = 4
+		dip = 3
+		mil = 3
+		birth_date = 188.4.6
+	}
+}

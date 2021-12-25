@@ -1,0 +1,17 @@
+government = monarchy
+add_government_reform = despotic_monarchy
+government_rank = 3
+mercantilism = 20
+technology_group = western
+religion = lathvy
+primary_culture = Nahallaian
+capital = 1	# change to real capital
+
+200.1.1 = { #change to 200 or smth
+	monarch = {
+		name = "Placeholder"
+		adm = 0
+		dip = 2
+		mil = 2
+	}
+}

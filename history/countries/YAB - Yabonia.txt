@@ -1,0 +1,21 @@
+government = monarchy
+add_government_reform = autocracy_reform
+government_rank = 2
+mercantilism = 10
+technology_group = western
+religion = egr
+primary_culture = Oppio_Jasuan
+add_accepted_culture = West_Jasuan
+add_accepted_culture = Bamali_C
+capital = 5644	# change to real capital
+secondary_religion = bamali
+
+200.1.1 = { #change to 200 or smth
+	monarch = {
+		name = "Regency"
+		adm = 3
+		dip = 3
+		mil = 3
+		regent = yes
+	}
+}

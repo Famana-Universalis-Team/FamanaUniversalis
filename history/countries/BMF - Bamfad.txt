@@ -1,0 +1,18 @@
+government = monarchy
+add_government_reform = autocracy_reform
+government_rank = 1
+mercantilism = 15
+technology_group = western
+religion = bamali
+primary_culture = Bamali_C
+capital = 5515	# change to real capital
+
+200.1.1 = { #change to 200 or smth
+	monarch = {
+		name = "Te'e"
+		dynasty = "Penner"
+		adm = 1
+		dip = 0
+		mil = 6
+	}
+}

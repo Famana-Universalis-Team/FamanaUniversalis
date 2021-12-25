@@ -1,0 +1,19 @@
+#Written with Eu4 Easy Province Creator by emiroercn
+#UNNAMED
+ 
+culture = Arlentan
+religion = western_oppian
+hre = no
+discovered_by = western
+base_tax = 3
+base_production = 2
+trade_goods = grain
+base_manpower = 3
+capital = "Til"
+is_city = yes
+extra_cost = 1
+
+owner = GRO
+controller = GRO
+add_core = GRO
+fort_15th = yes

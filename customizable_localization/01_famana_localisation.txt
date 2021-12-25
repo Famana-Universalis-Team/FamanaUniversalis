@@ -1,0 +1,14 @@
+defined_text = {
+    name = GetEastOppia
+	random = no
+
+	text = {
+        localisation_key = hovakiCulture
+        trigger = {
+			has_global_flag = hoxoi_formed
+        }
+    }
+    text = {
+        localisation_key = eastOppianCulture
+    }
+}

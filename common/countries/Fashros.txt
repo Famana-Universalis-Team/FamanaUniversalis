@@ -1,0 +1,77 @@
+#Country Name: Please see filename.
+
+graphical_culture = westerngfx
+
+color = { 182  23  8 }
+
+historical_idea_groups = {
+	economic_ideas
+	defensive_ideas
+	diplomatic_ideas
+	offensive_ideas
+	innovativeness_ideas
+	quantity_ideas
+	administrative_ideas
+	religious_ideas
+}
+
+historical_units = {
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+	swiss_landsknechten
+	dutch_maurician
+	austrian_tercio
+	austrian_grenzer
+	austrian_hussar
+	austrian_white_coat
+	austrian_jaeger
+	mixed_order_infantry
+	open_order_cavalry
+	napoleonic_square
+	napoleonic_lancers
+}
+
+monarch_names = {
+	"Ravshara #0" = 1
+	"Lanreisseir #0" = 1
+	"Unia #0" = 1
+	"Gaara #0" = 1
+	"Yharinel #0" = 1
+	"Axilea #0" = 1
+	"Ogro #0" = 1
+	"Astrazna #0" = 1
+	"Axiaraniro #0" = 1
+	"Raravshara #0" = 1
+	"Unrara #0" = 1
+	"Dari #0" = -1
+}
+
+leader_names = {
+	Ravshara
+	Lanreisseir
+	Unia
+	Gaara
+	Yharinel
+	Axilea
+	Ogro
+	Astrazna
+	Axiaraniro
+	Raravshara
+	Unrara
+}
+
+ship_names = {
+	Karre
+	Kial
+	Okaja
+	Iyah
+}
+
+army_names = {
+	"Afar $PROVINCE$" 
+}
+
+fleet_names = {
+	"Grand Armada"
+}

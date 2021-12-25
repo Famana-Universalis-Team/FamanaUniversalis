@@ -1,0 +1,19 @@
+government = monarchy
+add_government_reform = despotic_monarchy
+government_rank = 2
+mercantilism = 15
+technology_group = western
+religion = va
+primary_culture = Vanoman
+add_accepted_culture = Emtik
+capital = 5741	# change to real capital
+
+200.1.1 = { #change to 200 or smth
+	monarch = {
+		name = "Ayu"
+		dynasty = "Autu"
+		adm = 3
+		dip = 3
+		mil = 4
+	}
+}

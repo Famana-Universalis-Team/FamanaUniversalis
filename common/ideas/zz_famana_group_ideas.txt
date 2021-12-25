@@ -1,0 +1,356 @@
+
+ORC_ideas = {
+	start = {
+		infantry_power = 0.20
+		diplomatic_reputation = 1
+	}
+	
+	bonus = {
+		global_manpower_modifier = 0.20
+	}
+
+	trigger = {
+		tag = ORC
+	}
+	free = yes
+	
+	orc_war = {
+		global_tax_modifier = 0.10
+	}
+	orc_academy = {
+		leader_land_shock = 1
+	}
+	orc_kuda = {
+		war_exhaustion_cost = -0.10
+		state_maintenance_modifier = -0.10
+	}
+	orc_maldiks = {
+		reduced_liberty_desire = 20
+		diplomatic_annexation_cost = -0.10
+	}
+	orc_great = {
+		idea_cost = -0.1
+	}
+	orc_enforce = {
+		global_own_trade_power = 0.25
+	}
+	orc_train = {
+		land_morale = 0.10
+		fire_damage_received = -0.10
+	}
+}
+
+Aresian_ideas = {
+	start = {
+		diplomatic_upkeep = 1
+		mercenary_discipline = 0.05
+	}
+	
+	bonus = {
+		global_manpower_modifier = 0.10
+	}
+
+	trigger = {
+		culture_group = Aresian_C
+	}
+	free = yes
+	
+	Aresian_phil = {
+		idea_cost = -0.05
+	}
+	Aresian_courts = {
+		same_culture_advisor_cost = -0.15
+	}
+	Aresian_guilds = {
+		global_own_trade_power = 0.1
+	}
+	Aresian_recruit = {
+		infantry_cost = -0.10
+	}
+	Aresian_noble = {
+		nobles_loyalty_modifier = 0.05
+	}
+	Aresian_siege = {
+		siege_ability = 0.10
+	}
+	Aresian_diplo = {
+		diplomats = 1
+	}
+}
+
+Makyna_ideas = {
+    start = {
+        defensiveness = 0.10
+		global_trade_power = 0.1
+    }
+    
+    bonus = {
+        recover_army_morale_speed = 0.15
+    }
+
+    trigger = {
+        culture_group = Makyna
+    }
+    free = yes
+    
+    Makyna_survivors = {
+        prestige_decay = -0.01
+		global_monthly_devastation = -0.1
+    }
+    Makyna_land = {
+        army_tradition_decay = -0.01
+    }
+    Makyna_sailors = {
+        sailors_recovery_speed = 0.1
+    }
+    Makyna_hard = {
+        war_exhaustion_cost = -0.15
+    }
+    Makyna_guerilla = {
+        hostile_attrition = 1
+    }
+    Makyna_diplo = {
+        diplomatic_reputation = 1
+    }
+    Makyna_pondering = {
+        idea_cost = -0.1
+    }
+}
+
+Jasuan_ideas = {
+    start = {
+        trade_efficiency = 0.10
+		mercenary_cost = -0.15
+    }
+    
+    bonus = {
+        global_regiment_cost = -0.10
+    }
+
+    trigger = {
+        culture_group = Jasuan
+    }
+    free = yes
+    
+    Jasuan_tomer = {
+        fort_maintenance_modifier = -0.10
+    }
+    Jasuan_crossroad = {
+        global_institution_spread = 0.1
+		idea_cost = -0.05
+    }
+    Jasuan_one = {
+        tolerance_heretic = 1
+		tolerance_heathen = 1
+    }
+    Jasuan_trade = {
+        vassal_forcelimit_bonus = 0.2
+		vassal_income = 0.1
+    }
+    Jasuan_wubar = {
+        global_tax_modifier = 0.10
+    }
+    Jasuan_desert = {
+        leader_cost = -0.15
+    }
+    Jasuan_multi = {
+        num_accepted_cultures = 1
+    }
+}
+
+PEX_ideas = {
+	start = {
+		yearly_corruption = -0.1
+		missionaries = 1
+	}
+	
+	bonus = {
+		infantry_power = 0.10
+	}
+
+	trigger = {
+		OR = {
+			tag = PEX
+			culture_group = Pextoglazian
+		}
+	}
+	free = yes
+	
+	pex_tax = {
+		global_tax_modifier = 0.10
+	}
+	pex_army = {
+		discipline = 0.05
+	}
+	pex_conquest = {
+		core_creation = -0.10
+	}
+	pex_clergy = {
+		tolerance_own = 1
+		global_autonomy = -0.05
+	}
+	pex_crusade = {
+		global_missionary_strength = 0.02
+		prestige = 1
+	}
+	pex_die = {
+		land_morale = 0.10
+	}
+	pex_legacy = {
+		stability_cost_modifier = -0.20
+	}
+}
+
+EO_ideas = {
+	start = {
+		idea_cost = -0.05
+		navy_tradition = 1
+	}
+	
+	bonus = {
+		global_tax_modifier = 0.10
+	}
+
+	trigger = {
+		culture_group = Eastern_Oppian
+	}
+	free = yes
+	
+	EO_gods = {
+		warscore_cost_vs_other_religion = -0.10
+	}
+	EO_trade = {
+		global_ship_trade_power = 0.15
+	}
+	EO_lawless = {
+		unjustified_demands = -0.1
+	}
+	EO_memories = {
+		discipline = 0.05
+	}
+	EO_bands = {
+		merc_maintenance_modifier = -0.15
+	}
+	EO_borders = {
+		core_creation = -0.1
+	}
+	EO_white = {
+		sailor_maintenance_modifer = -0.2
+	}
+}
+
+Xalnish_ideas = {
+	start = {
+		advisor_cost = -0.10
+		merc_maintenance_modifier = -0.15
+	}
+	
+	bonus = {
+		trade_efficiency = 0.1
+	}
+
+	trigger = {
+		culture_group = Xalian
+	}
+	free = yes
+	
+	Xalnish_wars = {
+		army_tradition = 1
+	}
+	Xalnish_turmoil = {
+		global_missionary_strength = 0.01
+	}
+	Xalnish_diplo = {
+		diplomatic_reputation = 1
+	}
+	Xalnish_freemen = {
+		global_unrest = -1
+	}
+	Xalnish_heritage = {
+		prestige = 1
+	}
+	Xalnish_centre = {
+		global_institution_spread = 0.2
+	}
+	Xalnish_local = {
+		manpower_recovery_speed = 0.10
+	}
+}
+
+OPA_ideas = {
+	start = {
+		global_tax_modifier = 0.10
+		legitimacy = 1
+	}
+	
+	bonus = {
+		build_cost = -0.10
+	}	
+
+	trigger = {
+		culture_group = Oppian
+	}
+	free = yes
+	
+	opa_companies = {
+		merc_maintenance_modifier = -0.15
+	}
+	opa_power = {
+		idea_cost = -0.05
+	}
+	opa_kings = {
+		discipline = 0.05
+	}
+	opa_web = {
+		diplomatic_upkeep = 1
+	}
+	opa_castles = {
+		defensiveness = 0.05
+		garrison_size = 0.10
+	}
+	opa_trust = {
+		spy_offence = 0.10
+	}
+	opa_religious = {
+		tolerance_heretic = 2
+	}
+}
+
+generic_tomban_ideas = {
+	start = {
+		technology_cost = -0.05
+		warscore_cost_vs_other_religion = -0.25
+	}
+	
+	bonus = {
+		ae_impact = -0.1
+	}	
+
+	trigger = {
+		culture_group = Toman
+	}
+	free = yes
+	
+	generic_tomban_forts = {
+		defensiveness = 0.15
+	}
+	generic_tomban_institution = {
+		global_institution_spread = 0.2
+	}
+	generic_tomban_force = {
+		land_forcelimit_modifier = 0.15
+	}
+	generic_tomban_cores = {
+		core_creation = -0.10
+	}
+	generic_tomban_relations = {
+		improve_relation_modifier = 0.10
+	}
+	generic_tomban_unity = {
+		religious_unity = 0.05
+	}
+	generic_tomban_armies = {
+		land_morale = 0.10
+	}
+}
+

@@ -1,0 +1,96 @@
+
+
+tomban_state = {
+	copy_from = default
+	count = vassal
+
+	diplomacy_overlord_sprite = GFX_diplomacy_leadclients
+	diplomacy_subject_sprite = GFX_diplomacy_areclients
+
+	overlord_protects_external = yes
+	overlord_enforce_peace_attacking = yes
+	counts_for_borders = yes
+	separatists_become_subjects = yes
+	takes_diplo_slot = no
+	can_have_subjects_of_other_types = yes
+	can_release_in_peace = no
+	allows_taking_land_without_independence = yes
+	forcelimit_bonus = 0.05
+	can_send_missionary_to_subject = no
+	joins_overlords_wars = no
+	joins_colonial_wars = no
+	base_liberty_desire = -25
+	relative_power_class = 1
+	uses_military_focus = no
+	can_use_claims = yes
+
+	can_fight = {
+		same_overlord = tomban_state
+		overlord = yes
+	}
+	can_rival = {
+		same_overlord = tomban_state
+		overlord = yes
+	}
+	can_ally = {
+		same_overlord = tomban_state
+		overlord = yes
+	}
+	can_marry = {
+		same_overlord = tomban_state
+		overlord = yes
+	}
+
+	embargo_rivals = yes
+	placate_rulers = yes
+	place_relative_on_throne = no
+	enforce_religion = no
+	enforce_religion = no
+	siphon_income = yes
+	takeondebt = yes
+}
+
+diocese = {
+	copy_from = default
+
+	diplomacy_overlord_sprite = GFX_diplomacy_leadclients
+	diplomacy_subject_sprite = GFX_diplomacy_areclients
+
+	is_potential_overlord = { always = no }
+	can_be_established = { always = no }
+
+	can_fight_independence_war = yes
+	is_voluntary = no
+	joins_overlords_wars = yes
+	can_be_integrated = no
+	overlord_can_attack = no
+	overlord_can_be_subject = no
+	can_have_subjects_of_other_types = no
+	takes_diplo_slot = no
+	can_release_in_peace = yes
+	overlord_protects_external = no
+	counts_for_borders = no
+	share_rebel_popup = yes
+	allows_taking_land_without_independence = no
+	can_transfer_in_peace = no
+
+	base_liberty_desire = 0.0
+	liberty_desire_development_ratio = pextoDisloyal
+
+	can_fight = {
+	}
+	can_rival = {
+	}
+	can_ally = {
+	}
+	can_marry = {
+	}
+
+	embargo_rivals = yes
+	placate_rulers = yes
+	place_relative_on_throne = no
+	siphon_income = yes
+	takeondebt = yes
+	bestow_gifts = yes
+	conscript_general = yes
+}

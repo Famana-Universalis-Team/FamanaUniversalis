@@ -1,0 +1,79 @@
+#Country Name: Please see filename.
+
+graphical_culture = westerngfx
+
+color = { 33  105  166 }
+
+historical_idea_groups = {
+	economic_ideas
+	defensive_ideas
+	diplomatic_ideas
+	offensive_ideas
+	innovativeness_ideas
+	quantity_ideas
+	administrative_ideas
+	religious_ideas
+}
+
+historical_units = {
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+	swiss_landsknechten
+	dutch_maurician
+	austrian_tercio
+	austrian_grenzer
+	austrian_hussar
+	austrian_white_coat
+	austrian_jaeger
+	mixed_order_infantry
+	open_order_cavalry
+	napoleonic_square
+	napoleonic_lancers
+}
+
+monarch_names = {
+	"Maro #0" = 1
+	"Ma'je #0" = 1
+	"Ma'bo #0" = 1
+	"Fella #0" = 1
+	"Engum #0" = 1
+	"Ma'ju #0" = 1
+	"Obama #0" = 1
+	"Sihari #0" = 1
+	"Astrazna #0" = 1
+	"Maro #0" = 1
+	"Yuni #0" = 1
+	"Ezeldi #0" = 1
+}
+
+leader_names = {
+	"Maro"
+	"Ma'je"
+	"Ma'bo"
+	"Fella"
+	"Engum"
+	"Ma'ju"
+	"Obama"
+	"Sihari"
+	"Astrazna"
+	"Vande Bla"
+}
+
+ship_names = {
+	Omadid
+	Chaungs
+	Hartitis
+	Bavatis
+}
+
+army_names = {
+	"Rananzha $PROVINCE$" 
+}
+
+fleet_names = {
+	"Blue Navy"
+	"Red Navy"
+	"Black Navy"
+	"White Navy"
+}

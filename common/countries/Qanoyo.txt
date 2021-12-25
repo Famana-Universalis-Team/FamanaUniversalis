@@ -1,0 +1,104 @@
+#Country Name: Please see filename.
+
+graphical_culture = westerngfx
+
+color = { 216  237  31 }
+
+historical_idea_groups = {
+	economic_ideas
+	defensive_ideas
+	diplomatic_ideas
+	offensive_ideas
+	innovativeness_ideas
+	quantity_ideas
+	administrative_ideas
+	religious_ideas
+}
+
+historical_units = {
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+	swiss_landsknechten
+	dutch_maurician
+	austrian_tercio
+	austrian_grenzer
+	austrian_hussar
+	austrian_white_coat
+	austrian_jaeger
+	mixed_order_infantry
+	open_order_cavalry
+	napoleonic_square
+	napoleonic_lancers
+}
+
+monarch_names = {
+	"Ramaljan #0" = 1
+	"Naryan #0" = 1
+	"Ailan #0" = 1
+	"Gvurtan #0" = 1
+	"Cobanan #0" = 1
+	"Robajan #0" = 1
+	"Wilsoan #0" = 1
+	"Lasoan #0" = 1
+	"Okbaran #0" = 1
+	"Eukan #0" = 1
+	"Futgeran #0" = 1
+	"Vitehian #0" = 1
+	"Aoian #0" = 1
+	"Kirian #0" = 1
+	"Zuigran #0" = 1
+	"Shirolan #0" = 1
+	"Kizuran #0" = 1
+	"Apfadran #0" = 1
+	"Ethorkian #0" = 1
+	"Qanoyanan #0" = 1
+	"Avahanan #0" = 1
+	"Eiroshan #0" = 1
+	"Mekol #0" = -1
+	"Nash #0" = -1
+	"Macula #0" = -1
+	"Sabr #0" = -1
+	"Madena #0" = -1
+	"Prassil #0" = -1
+}
+
+leader_names = {
+	Ramalj
+	Nary
+	Ail
+	Gvurt
+	Coban
+	Robaj
+	Wilso
+	Laso
+	Okbar
+	Euk
+	Futger
+	Vitehi
+	Aoi
+	Kiri
+	Zuigr
+	Shirol
+	Kizur
+	Apfadra
+	Ethorki
+	Qanoyan
+	Avahan
+	Eirosh
+}
+
+ship_names = {
+	Okakey
+	Godaedy
+	Jamalki
+}
+
+army_names = {
+	"Great Legion" 
+	"Forward Division" 
+}
+
+fleet_names = {
+	"Grand navy"
+}

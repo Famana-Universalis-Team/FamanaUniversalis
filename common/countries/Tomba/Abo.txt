@@ -1,0 +1,106 @@
+#Country Name: Please see filename.
+
+graphical_culture = westerngfx
+
+color = { 99  102  70 }
+
+historical_idea_groups = {
+	economic_ideas
+	defensive_ideas
+	diplomatic_ideas
+	offensive_ideas
+	innovativeness_ideas
+	quantity_ideas
+	administrative_ideas
+	religious_ideas
+}
+
+historical_units = {
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+	swiss_landsknechten
+	dutch_maurician
+	austrian_tercio
+	austrian_grenzer
+	austrian_hussar
+	austrian_white_coat
+	austrian_jaeger
+	mixed_order_infantry
+	open_order_cavalry
+	napoleonic_square
+	napoleonic_lancers
+}
+
+monarch_names = {
+	"Garos #0" = 1
+	"Costian  #0" = 1
+	"Terk #0" = 1
+	"Zeon #0" = 1
+	"Genrosh #0" = 1
+	"Wiron #0" = 1
+	"Shir #0" = 1
+	"Wesor #0" = 1
+	"Dosair #0" = 1
+	"Ollos #0" = 1
+	"Soldon #0" = 1
+	"Rellow #0" = 1
+	"Nasarius #0" = 1
+	"Saunsum #0" = 1
+	"Alkan #0" = 1
+	"Wellron #0" = 1
+	"Sirva #0" = -1
+	"Kira #0" = -1
+	"Melia #0" = -1
+	"Finia #0" = -1
+	"Menea #0" = -1
+	"Elena #0" = -1
+	"Emeria #0" = -1
+	"Mil #0" = -1
+	"Shera #0" = -1
+	"Nellia #0" = -1
+	"Sarah #0" = -1
+	"Lea #0" = -1
+	"Pina #0" = -1
+	"Raenys #0" = -1
+	"Mara #0" = -1
+	"Zulla #0" = -1
+	"Saera #0" = -1
+	"Vilia #0" = -1
+	"Costia #0" = -1
+}
+
+leader_names = {
+	Garos
+	Costian
+	Terk
+	Zeon
+	Genrosh
+	Wiron
+	Shir
+	Wesor
+	Dosair
+	Ollos
+	Soldon
+	Rellow
+	Nasarius
+	Saunsum
+	Alkan
+	Wellron
+}
+
+ship_names = {
+	Cosse
+	Scit
+	Hamoon
+	Labork
+	Uhaj
+}
+
+army_names = {
+	"Anol $PROVINCE$" 
+}
+
+fleet_names = {
+	"Grand Navy"
+}

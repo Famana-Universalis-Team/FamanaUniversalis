@@ -1,0 +1,99 @@
+#Country Name: Please see filename.
+
+graphical_culture = westerngfx
+
+color = { 143  18  165 }
+
+historical_idea_groups = {
+	economic_ideas
+	defensive_ideas
+	diplomatic_ideas
+	offensive_ideas
+	innovativeness_ideas
+	quantity_ideas
+	administrative_ideas
+	religious_ideas
+}
+
+historical_units = {
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+	swiss_landsknechten
+	dutch_maurician
+	austrian_tercio
+	austrian_grenzer
+	austrian_hussar
+	austrian_white_coat
+	austrian_jaeger
+	mixed_order_infantry
+	open_order_cavalry
+	napoleonic_square
+	napoleonic_lancers
+}
+
+monarch_names = {
+	"Odrig #0" = 1
+	"Brebar #0" = 1
+	"Odlac #0" = 1
+	"Ozgik #0" = 1
+	"Nabam #0" = 1
+	"Nolmo #0" = 1
+	"Natarda #0" = 1
+	"Tarda #0" = 1
+	"Muno #0" = 1
+	"Gahi #0" = 1
+	"Oyud #0" = 1
+	"Gedat #0" = 1
+	"Aport #0" = 1
+	"Kanda #0" = 1
+	"Nobo #0" = 1
+	"Amart #0" = 1
+	"Anuzum #0" = 1
+	"Beroro #3" = -1
+	"Nai #0" = -1
+	"Mida #0" = -1
+	"Uge #0" = -1
+	"Imia #0" = -1
+	"Gilnia #0" = -1
+	"Uaizbia #0" = -1
+	"Kaiamau #0" = -1
+}
+
+leader_names = {
+	Odrig
+	Brebar
+	Odlac
+	Ozgik
+	Nabam
+	Nolmo
+	Natarda
+	Tarda
+	Muno
+	Gahi
+	Oyud
+	Gedat
+	Aport
+	Kanda
+	Nobo
+	Amart
+	Anuzum
+}
+
+ship_names = {
+	Pavtis
+	Naglon
+	Talak
+	Aramesh
+}
+
+army_names = {
+	"Legion of $PROVINCE$" 
+}
+
+fleet_names = {
+	"Blue Navy"
+	"Red Navy"
+	"Black Navy"
+	"White Navy"
+}

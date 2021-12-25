@@ -1,0 +1,18 @@
+government = monarchy
+add_government_reform = despotic_monarchy
+government_rank = 1
+mercantilism = 10
+technology_group = western
+religion = placeholder_religion
+primary_culture = Hasian
+capital = 1	# change to real capital
+
+200.1.1 = { #change to 200 or smth
+	monarch = {
+		name = "Yomtanian Horde"
+		adm = 1
+		dip = 1
+		mil = 6
+		regent = yes
+	}
+}

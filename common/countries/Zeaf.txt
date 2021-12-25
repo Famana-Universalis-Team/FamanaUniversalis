@@ -1,0 +1,124 @@
+#Country Name: Please see filename.
+
+graphical_culture = westerngfx
+
+color = { 97  77  62 }
+
+historical_idea_groups = {
+	economic_ideas
+	defensive_ideas
+	diplomatic_ideas
+	offensive_ideas
+	innovativeness_ideas
+	quantity_ideas
+	administrative_ideas
+	religious_ideas
+}
+
+historical_units = {
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+	swiss_landsknechten
+	dutch_maurician
+	austrian_tercio
+	austrian_grenzer
+	austrian_hussar
+	austrian_white_coat
+	austrian_jaeger
+	mixed_order_infantry
+	open_order_cavalry
+	napoleonic_square
+	napoleonic_lancers
+}
+
+
+monarch_names = {
+	"Galim #0 = 1
+	"Aubais #0 = 1
+	"Rumbaliv #0 = 1
+	"Di-Bodalf #0 = 1
+	"Rumbalim #0 = 1
+	"Bodaos #0 = 1
+	"Ayubaia #0 = 1
+	"Neubaia #0 = 1
+	"Arlivicus #0 = 1
+	"Kaliv #0 = 1
+	"Kalivicus # #0 = 1
+	"Lodarla #0 = 1
+	"Gialcut #0 = 1
+	"Ayusa #0 = 1
+	"Maniamugea #0 = 1
+	"Tusshi #0 = 1
+	"Diman #0 = 1
+	"Saomese #0 = 1
+	"Chale #0 = -1
+	"Ceona #0 = -1
+	"Talova #0 = -1
+	"Dlaz #0 = -1
+	"Name #0 = -1
+	"Tarina #0 = -1
+	"Ta #0 = -1
+	"Mza #0 = -1
+	"Ista #0 = -1
+}
+
+leader_names = {
+	Kalim
+	Jamus
+	Nidro
+	Gick
+	Gadal
+	Tanas
+	Nirio
+	Jikiro
+	Polani
+	Certa
+	Keriat
+	Thvanke
+	Siank
+	Kanadat
+	Jalio
+	Sicki
+	Siliri
+	Pioro
+	Galim
+	Aubais
+	Rumbaliv
+	Di-Bodalf
+	Rumbalim
+	Bodaos
+	Ayubaia
+	Neubaia
+	Arlivicus
+	Kaliv
+	Kalivicus
+	Lodarla
+	Gialcut
+	Ayusa
+	Maniamugea
+	Tusshi
+	Diman
+	Saomese
+}
+
+ship_names = {
+	Lypona
+	Yadosha
+	Meria
+	Dirice
+	Manole
+	Han
+	Ara
+}
+
+army_names = {
+	"Morcan y $PROVINCE$" 
+}
+
+fleet_names = {
+	"Everlasting Armada"
+	"Vin's Legacy"
+	"Grand Navy"
+	"Victorious Fleet"
+}

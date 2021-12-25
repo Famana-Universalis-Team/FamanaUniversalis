@@ -1,0 +1,579 @@
+country_decisions = {
+
+	colonize_borlebin = {
+		potential = {
+			borlebim_area = {
+				is_empty = yes
+			}
+			dip_tech = 6
+			OR = {
+				owns_core_province = 5530
+				owns_core_province = 5538
+				owns_core_province = 5539
+				owns_core_province = 5730
+			}
+			NOT = {
+				AND = {
+					tag = NAK
+					NOT = {
+						is_year = 305
+					}
+				}
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = borlebim_area
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				is_city = no
+			}
+		}
+		allow = {
+			dip_tech = 9
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			treasury = 450
+		}
+		effect = {
+			borlebim_area = {
+				limit = {
+					is_empty = yes
+				}
+				create_colony_mission_reward_province = { country = ROOT }
+				ROOT = {
+					add_treasury = -150
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	colonize_riximi = {
+		potential = {
+			riximi_area = {
+				is_empty = yes
+			}
+			dip_tech = 2
+			OR = {
+				owns_core_province = 5561
+				owns_core_province = 5354
+			}
+			NOT = {
+				AND = {
+					tag = PEX
+					NOT = {
+						is_year = 270
+					}
+				}
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = riximi_area
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				is_city = no
+			}
+		}
+		allow = {
+			dip_tech = 5
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			treasury = 450
+		}
+		effect = {
+			riximi_area = {
+				limit = {
+					is_empty = yes
+				}
+				create_colony_mission_reward_province = { country = ROOT }
+				ROOT = {
+					add_treasury = -150
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	conquer_unnamed_area_23 = {
+		potential = {
+			unnamed_area_23 = {
+				is_empty = yes
+			}
+			dip_tech = 8
+			OR = {
+				owns_core_province = 5027
+				owns_core_province = 5030
+				owns_core_province = 5274
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = unnamed_area_23
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				is_city = no
+			}
+		}
+		allow = {
+			dip_tech = 11
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			mil_power = 250
+		}
+		effect = {
+			unnamed_area_23 = {
+				limit = {
+					is_empty = yes
+				}
+				cede_province = ROOT
+				ROOT = {
+					add_mil_power = -50
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	conquer_borbor = {
+		potential = {
+			vordor_area = {
+				is_empty = yes
+			}
+			dip_tech = 2
+			OR = {
+				owns_core_province = 5708
+				owns_core_province = 5709
+				owns_core_province = 5715
+				owns_core_province = 5714
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = vordor_area
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				is_city = no
+			}
+		}
+		allow = {
+			dip_tech = 5
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			mil_power = 150
+		}
+		effect = {
+			vordor_area = {
+				limit = {
+					is_empty = yes
+				}
+				cede_province = ROOT
+				ROOT = {
+					add_mil_power = -50
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	conquer_east_yuvla = {
+		potential = {
+			unnamed_area_24 = {
+				is_empty = yes
+			}
+			dip_tech = 1
+			OR = {
+				owns_core_province = 5698
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = unnamed_area_24
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				is_city = no
+			}
+		}
+		allow = {
+			dip_tech = 4
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			mil_power = 50
+		}
+		effect = {
+			unnamed_area_24 = {
+				limit = {
+					is_empty = yes
+				}
+				cede_province = ROOT
+				ROOT = {
+					add_mil_power = -50
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	colonize_kotzbal = {
+		potential = {
+			has_discovered = 5016
+			5016 = {
+				is_empty = yes
+			}
+			dip_tech = 7
+			OR = {
+				owns_core_province = 5013
+				owns_core_province = 5014
+				owns_core_province = 5015
+				owns_core_province = 5044
+				owns_core_province = 5066
+				owns_core_province = 5017
+				owns_core_province = 5253
+				owns_core_province = 5694
+				owns_core_province = 5263
+			}
+		}
+		provinces_to_highlight = {
+			province_id = 5016
+		}
+		allow = {
+			dip_tech = 10
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			treasury = 150
+		}
+		effect = {
+			5016 = {
+				create_colony_mission_reward_province = { country = ROOT }
+			}
+			add_treasury = -150
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	colonize_jol_cema = {
+		potential = {
+			has_discovered = 5015
+			5015 = {
+				is_empty = yes
+			}
+			dip_tech = 11
+			OR = {
+				owns_core_province = 5013
+				owns_core_province = 5014
+				owns_core_province = 5016
+				owns_core_province = 5044
+				owns_core_province = 5066
+				owns_core_province = 5017
+				owns_core_province = 5253
+				owns_core_province = 5694
+				owns_core_province = 5549
+				owns_core_province = 5547
+				owns_core_province = 5263
+			}
+		}
+		provinces_to_highlight = {
+			province_id = 5015
+		}
+		allow = {
+			dip_tech = 14
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			treasury = 150
+		}
+		effect = {
+			5015 = {
+				create_colony_mission_reward_province = { country = ROOT }
+			}
+			add_treasury = -150
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	colonize_5014 = {
+		potential = {
+			has_discovered = 5014
+			5014 = {
+				is_empty = yes
+			}
+			dip_tech = 11
+			OR = {
+				owns_core_province = 5013
+				owns_core_province = 5016
+				owns_core_province = 5044
+				owns_core_province = 5066
+				owns_core_province = 5017
+				owns_core_province = 5253
+				owns_core_province = 5694
+				owns_core_province = 5549
+				owns_core_province = 5547
+				owns_core_province = 5263
+			}
+		}
+		provinces_to_highlight = {
+			province_id = 5014
+		}
+		allow = {
+			dip_tech = 14
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			treasury = 150
+		}
+		effect = {
+			5014 = {
+				create_colony_mission_reward_province = { country = ROOT }
+			}
+			add_treasury = -150
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	colonize_5013 = {
+		potential = {
+			has_discovered = 5013
+			5013 = {
+				is_empty = yes
+			}
+			dip_tech = 11
+			OR = {
+				owns_core_province = 5014
+				owns_core_province = 5016
+				owns_core_province = 5044
+				owns_core_province = 5066
+				owns_core_province = 5017
+				owns_core_province = 5253
+				owns_core_province = 5694
+				owns_core_province = 5549
+				owns_core_province = 5547
+				owns_core_province = 5263
+			}
+		}
+		provinces_to_highlight = {
+			province_id = 5013
+		}
+		allow = {
+			dip_tech = 14
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			treasury = 150
+		}
+		effect = {
+			5013 = {
+				create_colony_mission_reward_province = { country = ROOT }
+			}
+			add_treasury = -150
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	conquer_holy_bridge = {
+		potential = {
+			holy_bridge_area = {
+				is_empty = yes
+			}
+			dip_tech = 1
+			OR = {
+				owns_core_province = 5713
+				owns_core_province = 5714
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = holy_bridge_area
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				is_city = no
+			}
+		}
+		allow = {
+			dip_tech = 4
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			mil_power = 50
+		}
+		effect = {
+			holy_bridge_area = {
+				limit = {
+					is_empty = yes
+				}
+				cede_province = ROOT
+				ROOT = {
+					add_mil_power = -50
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	conquer_5184 = {
+		potential = {
+			5184 = {
+				is_empty = yes
+			}
+			dip_tech = 8
+			OR = {
+				owns_core_province = 5181
+				owns_core_province = 5183
+				owns_core_province = 5187
+			}
+		}
+		provinces_to_highlight = {
+			province_id = 5184
+		}
+		allow = {
+			dip_tech = 11
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			mil_power = 50
+		}
+		effect = {
+			5184 = {
+				cede_province = ROOT
+			}
+			add_mil_power = -50
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	colonize_vaximor = {
+		potential = {
+			vaximor_area = {
+				is_empty = yes
+			}
+			dip_tech = 15
+			OR = {
+				owns_core_province = 5137
+				owns_core_province = 5556
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = vaximor_area
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				is_city = no
+			}
+		}
+		allow = {
+			dip_tech = 18
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			treasury = 150
+		}
+		effect = {
+			vaximor_area = {
+				limit = {
+					is_empty = yes
+				}
+				create_colony_mission_reward_province = { country = ROOT }
+				ROOT = {
+					add_treasury = -150
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	colonize_okus = {
+		potential = {
+			okus_area = {
+				is_empty = yes
+			}
+			dip_tech = 15
+			OR = {
+				owns_core_province = 5142
+				owns_core_province = 5557
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = okus_area
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				is_city = no
+			}
+		}
+		allow = {
+			dip_tech = 18
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			treasury = 150
+		}
+		effect = {
+			okus_area = {
+				limit = {
+					is_empty = yes
+				}
+				create_colony_mission_reward_province = { country = ROOT }
+				ROOT = {
+					add_treasury = -150
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	conquer_vava = {
+		potential = {
+			vava_area = {
+				is_empty = yes
+			}
+			dip_tech = 9
+			OR = {
+				owns_core_province = 5583
+				owns_core_province = 5492
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = vava_area
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				is_city = no
+			}
+		}
+		allow = {
+			dip_tech = 12
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			mil_power = 50
+		}
+		effect = {
+			vava_area = {
+				limit = {
+					is_empty = yes
+				}
+				cede_province = ROOT
+				ROOT = {
+					add_mil_power = -50
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

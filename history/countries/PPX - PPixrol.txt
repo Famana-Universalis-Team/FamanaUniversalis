@@ -1,0 +1,20 @@
+government = monarchy
+add_government_reform = autocracy_reform
+government_rank = 1
+mercantilism = 10
+technology_group = western
+religion = lathvy
+religious_school = pextoglazian_school
+primary_culture = Walaran
+add_accepted_culture = Nevian
+capital = 5527	# change to real capital
+
+200.1.1 = { #change to 200 or smth
+	monarch = {
+		name = "Regency"
+		adm = 3
+		dip = 3
+		mil = 3
+		regent = yes
+	}
+}

@@ -1,0 +1,53 @@
+########################################
+# Maky events                          #
+########################################
+
+namespace = maky
+
+# Nation stabilized
+country_event = {
+	id = maky.3
+	title = maky.3.t
+	desc = maky.3.d
+	picture = FARMING_eventPicture
+
+	trigger = {
+		AND = {
+			NOT = { has_country_flag = had_maky.3 }
+			AND = {
+				OR = {
+					tag = FNC
+					tag = VAX
+					tag = DYR
+					tag = OKU	
+					tag = KRS
+					tag = RSH
+					tag = ELK
+					tag = MKK
+					tag = JKK
+					tag = ASR
+					tag = ZAK
+				}
+				OR = {
+					government = monarchy
+					government = republic
+					government = theocracy
+				}
+			}
+		}
+	}
+	immediate = {
+		set_country_flag = had_maky.3
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	option = {
+		name = "maky.3.a"
+		ai_chance = { factor = 100 }
+		add_legitimacy = 25
+		add_devotion = 25
+		add_republican_tradition = 25
+		add_stability = 1
+	}
+}

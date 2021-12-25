@@ -1,0 +1,99 @@
+#Country Name: Please see filename.
+
+graphical_culture = westerngfx
+
+color = { 147  29  29 }
+
+historical_idea_groups = {
+	economic_ideas
+	defensive_ideas
+	diplomatic_ideas
+	offensive_ideas
+	innovativeness_ideas
+	quantity_ideas
+	administrative_ideas
+	religious_ideas
+}
+
+historical_units = {
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+	swiss_landsknechten
+	dutch_maurician
+	austrian_tercio
+	austrian_grenzer
+	austrian_hussar
+	austrian_white_coat
+	austrian_jaeger
+	mixed_order_infantry
+	open_order_cavalry
+	napoleonic_square
+	napoleonic_lancers
+}
+
+monarch_names = {
+	"Lesnara #0" = 1
+	"Mares #0" = 1
+	"Bamal #0" = 1
+	"Alkan #0" = 1
+	"Fyse #0" = 1
+	"Eriof #0" = 1
+	"Salmo #0" = 1
+	"Makona #0" = 1
+	"Makia #0" = 1
+	"Ti #0" = 1
+	"Yulven #0" = 1
+	"Oddu #0" = 1
+	"Zalos #0" = 1
+	"Muja #0" = 1
+	"Doran #0" = 1
+	"Atlas #0" = 1
+	"Lonlan #0" = 1
+	"Chalesh #0" = -1
+	"Ceona #0" = -1
+	"Talova #0" = -1
+	"Essa #0" = -1
+	"Namevy #0" = -1
+	"Tarina #0" = -1
+	"Tashy #0" = -1
+	"Algada  #0" = -1
+	"Naza #0" = -1
+	"Ista #0" = -1
+}
+
+leader_names = {
+	Lesnara
+	Mares
+	Bamal
+	Alkan
+	Fyse
+	Eriof
+	Salmo
+	Makona
+	Makia
+	Ti
+	Yulven
+	Oddu
+	Zalos
+	Muja
+	Doran
+	Atlas
+	Lonlan
+}
+
+ship_names = {
+	Mak
+	Dyr
+	Jol
+	Oh
+	Loks
+}
+
+army_names = {
+	"Dadane $PROVINCE$" 
+}
+
+fleet_names = {
+	"Grand Navy"
+}

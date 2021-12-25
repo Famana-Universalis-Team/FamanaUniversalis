@@ -1,0 +1,28 @@
+namespace = aresian_dec
+
+# Decadence Setup Event
+country_event = {
+    id = aresian_dec.1
+    title = aresian_dec.1.t
+    desc = aresian_dec.1.d
+    picture = COUNTRY_COLLAPSE_eventPicture
+
+    trigger = {
+        religion = aresian
+        NOT = { has_country_flag = had_aresian_decadence_event }
+		NOT = { is_year = 250 }
+    }
+    mean_time_to_happen = {
+        months = 1
+    }
+    immediate = {
+        hidden_effect = {
+            set_country_flag = had_aresian_decadence_event
+        }
+    }
+    option = {
+        name = aresian_dec.1.a
+        ai_chance = { factor = 1 }
+        add_patriarch_authority = 0.25
+    }
+}

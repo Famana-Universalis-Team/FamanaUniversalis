@@ -1,0 +1,81 @@
+#Country Name: Please see filename.
+
+graphical_culture = westerngfx
+
+color = { 22  253  179 }
+
+historical_idea_groups = {
+	economic_ideas
+	defensive_ideas
+	diplomatic_ideas
+	offensive_ideas
+	innovativeness_ideas
+	quantity_ideas
+	administrative_ideas
+	religious_ideas
+}
+
+historical_units = {
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+	swiss_landsknechten
+	dutch_maurician
+	austrian_tercio
+	austrian_grenzer
+	austrian_hussar
+	austrian_white_coat
+	austrian_jaeger
+	mixed_order_infantry
+	open_order_cavalry
+	napoleonic_square
+	napoleonic_lancers
+}
+
+monarch_names = {
+	"Kalim #0" = 1
+	"Anoe #0" = 1
+	"Niya #0" = 1
+	"Solot #0" = 1
+	"Lasan #0" = 1
+	"Arol #0" = 1
+	"Marsel #0" = 1
+	"Jamus #0" = 1
+	"Jas #0" = 1
+	"Twat  #0" = 1
+	"Hamin #0" = 1
+	"Sotin #0" = 1
+	"Pomu #0" = 1
+}
+
+leader_names = {
+	Kalim
+	Anoe
+	Niya
+	Solot
+	Lasan
+	Arol
+	Marsel
+	Jamus
+	Jas
+	Twat
+	Hamin
+	Sotin
+	Pomu
+}
+
+ship_names = {
+	Yaroga
+	Chunus
+	Kitabatoga
+	Rapanu
+	Oba
+}
+
+army_names = {
+	"Ledara $PROVINCE$"
+}
+
+fleet_names = {
+	"Grand Navy"
+}

@@ -1,0 +1,20 @@
+#Written with Eu4 Easy Province Creator by emiroercn
+#UNNAMED
+ 
+culture = Ossori
+religion = reformed_oppian
+hre = no
+discovered_by = western
+base_tax = 2
+base_production = 2
+trade_goods = livestock
+base_manpower = 1
+capital = "Atasmu"
+is_city = no
+extra_cost = 1
+  
+
+owner = OSS
+controller = OSS
+add_core = OSS
+add_core = VLM

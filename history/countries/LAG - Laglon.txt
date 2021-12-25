@@ -1,0 +1,20 @@
+government = monarchy
+add_government_reform = oppian_state_reform
+government_rank = 2
+mercantilism = 20
+technology_group = western
+religion = western_oppian
+primary_culture = Laglan
+capital = 5039	# change to real capital
+historical_rival = TCK
+historical_friend = KEP
+
+1420.1.1 = { #change to 194
+	monarch = {
+		name = "Sarian"
+		adm = 3
+		dip = 3
+		mil = 3
+		dynasty = "Kilia"
+	}
+}

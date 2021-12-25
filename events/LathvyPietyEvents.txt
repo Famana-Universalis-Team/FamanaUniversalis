@@ -1,0 +1,782 @@
+namespace = lathvy_piety
+#Vitrages
+country_event = {
+	id = lathvy_piety.1
+	title = lathvy_piety.1.t
+	desc = lathvy_piety.1.d
+	picture = ORTHODOX_eventPicture
+	
+	is_triggered_only = yes
+
+	trigger = {
+		 uses_piety = yes  
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		hidden_effect = {
+			log = "[GetDate] Lathvy Event"
+		}
+	}
+	
+	option = {
+		ai_chance = { factor = 60 }
+		name = lathvy_piety.1.a #leavefire
+		add_piety = 0.10
+		add_country_modifier = { name = lathvy_fire_pits duration = 540 }
+		}
+	option = {
+		ai_chance = { factor = 40 }
+		name = lathvy_piety.1.b #allowvitrages
+		add_piety = -0.10
+		add_prestige = 15
+	}
+}
+
+#LostYomtanians
+country_event = {
+	id = lathvy_piety.2
+	title = lathvy_piety.2.t
+	desc = lathvy_piety.2.d
+	picture = ANGRY_MOB_eventPicture
+	
+	is_triggered_only = yes
+
+	trigger = {
+		 uses_piety = yes  
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		hidden_effect = {
+			log = "[GetDate] Lathvy Event"
+		}
+	}
+	
+	option = {
+		ai_chance = { factor = 60 }
+		name = lathvy_piety.2.a #killthem
+		add_piety = 0.15
+		add_estate_loyalty = {
+		estate = estate_church
+		loyalty = 10
+		}
+		
+	}
+	option = {
+		ai_chance = { factor = 40 }
+		name = lathvy_piety.2.b #allowyomtanians
+		add_piety = -0.15
+		add_country_modifier = { name = lathvy_let_yoms_go duration = 540 }
+	}
+}
+
+#pilgrims
+country_event = {
+	id = lathvy_piety.3
+	title = lathvy_piety.3.t
+	desc = lathvy_piety.3.d
+	picture = EUROPEAN_REFUGEES_eventPicture
+	
+	is_triggered_only = yes
+
+	trigger = {
+		 uses_piety = yes  	
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		hidden_effect = {
+			log = "[GetDate] Lathvy Event"
+		}
+	}
+	
+	option = {
+		ai_chance = { factor = 50 }
+		name = lathvy_piety.3.a #helppilgrims
+		add_adm_power = -30
+		add_mil_power = -30
+		add_piety = 0.10
+		add_country_modifier = { name = lathvy_safe_pilgrims duration = 360 }
+	}
+	option = {
+		ai_chance = { factor = 50 }
+		name = lathvy_piety.3.b #nah
+		add_piety = -0.10
+		add_country_modifier = { name = lathvy_unsafe_pilgrims duration = 360 }
+	}
+}
+
+#reliquiary
+country_event = {
+	id = lathvy_piety.4
+	title = lathvy_piety.4.t
+	desc = lathvy_piety.4.d
+	picture = IMPORTANT_STATUE_eventPicture
+	
+	is_triggered_only = yes
+
+	trigger = {
+		 uses_piety = yes  	
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	immediate = {
+		hidden_effect = {
+			log = "[GetDate] Lathvy Event"
+		}
+	}
+	
+	option = {
+		ai_chance = { factor = 20 }
+		name = lathvy_piety.4.a #rich
+		add_years_of_income = -0.5
+		add_prestige = 15
+		add_piety = 0.15
+	}
+	option = {
+		ai_chance = { factor = 40 }
+		name = lathvy_piety.4.b #normal
+		add_years_of_income = -0.2
+		add_piety = 0.05
+	}
+	option = {
+		ai_chance = { factor = 40 }
+		name = lathvy_piety.4.c #nah
+		add_piety = -0.10
+		add_estate_loyalty = {
+			estate = estate_church
+			loyalty = -10
+		}
+	}
+}
+
+#heir
+country_event = {
+	id = lathvy_piety.5
+	title = lathvy_piety.5.t
+	desc = lathvy_piety.5.d
+	picture = SPY_eventPicture
+	
+	is_triggered_only = yes
+
+	trigger = {
+		AND = {
+			uses_piety = yes
+			has_heir = yes
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			log = "[GetDate] Lathvy Event"
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		ai_chance = { factor = 10 }
+		name = lathvy_piety.5.a #execute
+			kill_heir = {}
+			add_piety = 0.15
+			add_legitimacy = 15
+			add_devotion = 15
+		}
+	option = {
+		ai_chance = { factor = 45 }
+		name = lathvy_piety.5.b #punish
+		add_piety = 0.05
+		add_estate_influence_modifier = {
+    		estate = estate_church
+			desc = lathvy_piety_heir
+    		influence = 10
+    		duration = 360
+	    }
+}
+	option = {
+		ai_chance = { factor = 45 }
+		name = lathvy_piety.5.c #nah
+		add_piety = -0.15
+		add_legitimacy = -10
+		add_devotion = -10
+	}
+}
+# Returning Scholars
+country_event = {
+	id = lathvy_piety.6
+	title = lathvy_piety.6.t
+	desc = lathvy_piety.6.d
+	picture = BIG_BOOK_eventPicture
+	
+	is_triggered_only = yes
+
+	trigger = {
+		uses_piety = yes
+		NOT = { owns = 5361 } #Agixion
+		NOT = { owns = 5337 } #Pomlen
+	}
+
+	immediate = {
+		hidden_effect = {
+			log = "[GetDate] Lathvy Event"
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = lathvy_piety.6.a
+		ai_chance = {
+			factor = 60
+			
+		}
+		add_piety = 0.10
+		add_adm_power = 10
+	}
+	option = {
+		name = lathvy_piety.6.b
+		ai_chance = {
+			factor = 40
+			
+		}
+		add_piety = -0.10
+		add_legitimacy = 10
+	}
+}
+# Latvhy Branches Rally Support
+country_event = {
+	id = lathvy_piety.7
+	title = lathvy_piety.7.t
+	desc = lathvy_piety.7.d
+	picture = STREET_SPEECH_eventPicture
+	
+	is_triggered_only = yes
+
+	trigger = {
+		uses_piety = yes
+		NOT = { manpower_percentage = 0.6 }
+		NOT = { piety = 0 }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		hidden_effect = {
+			log = "[GetDate] Lathvy Event"
+		}
+	}
+	
+	option = {
+		name = lathvy_piety.7.a
+		ai_chance = {
+			factor = 60
+		}
+		add_piety = 0.15
+		add_legitimacy = 10
+	}
+	option = {
+		name = lathvy_piety.7.b
+		ai_chance = {
+			factor = 40
+		}
+		add_piety = -0.10
+		add_yearly_manpower = 0.5
+	}
+}
+# Enjoining Right and Forbidding Wrong
+country_event = {
+	id = lathvy_piety.8
+	title = lathvy_piety.8.t
+	desc = lathvy_piety.8.d
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	is_triggered_only = yes
+	
+	trigger = {
+		uses_piety = yes
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		hidden_effect = {
+			log = "[GetDate] Lathvy Event"
+		}
+	}
+	
+	option = {
+		name = lathvy_piety.8.a
+		ai_chance = {
+			factor = 60
+		}
+		add_piety = 0.1
+		add_adm_power = 40
+	}
+	option = {
+		name = lathvy_piety.8.b
+		ai_chance = {
+			factor = 40
+		}
+		add_piety = -0.1
+		add_army_tradition = 10
+	}
+}
+# Debate over branch Practices
+country_event = {
+	id = lathvy_piety.9
+	title = lathvy_piety.9.t
+	desc = lathvy_piety.9.d
+	picture = REFORM_eventPicture
+	
+	is_triggered_only = yes
+
+	trigger = {
+		uses_piety = yes
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		hidden_effect = {
+			log = "[GetDate] Lathvy Event"
+		}
+	}
+	
+	option = {
+		name = lathvy_piety.9.a
+		ai_chance = {
+			factor = 60
+		}
+		add_piety = 0.1
+	}
+	option = {
+		name = lathvy_piety.9.b
+		ai_chance = {
+			factor = 40
+		}
+		add_piety = -0.1
+	}
+}
+# Purification of Tax Laws
+country_event = {
+	id = lathvy_piety.10
+	title = lathvy_piety.10.t
+	desc = lathvy_piety.10.d
+	picture = COURT_eventPicture
+	
+	is_triggered_only = yes
+
+	trigger = {
+		uses_piety = yes
+		piety = 0.3
+		NOT = { has_country_modifier = purification_of_tax_laws }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		hidden_effect = {
+			log = "[GetDate] Lathvy Event"
+		}
+	}
+	
+	option = {
+		name = lathvy_piety.10.a
+		ai_chance = {
+			factor = 60
+		}
+		add_piety = 0.1
+		add_country_modifier = {
+			name = "purification_of_tax_laws"
+			duration = 3650
+		}
+	}
+	option = {
+		name = lathvy_piety.10.b
+		ai_chance = {
+			factor = 40
+		}
+		add_piety = -0.15
+	}
+}
+# Mystics and Storytellers
+country_event = {
+	id = lathvy_piety.11
+	title = lathvy_piety.11.t
+	desc = lathvy_piety.11.d
+	picture = REFORM_eventPicture
+	
+	is_triggered_only = yes
+
+	trigger = {
+		uses_piety = yes
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		hidden_effect = {
+			log = "[GetDate] Lathvy Event"
+		}
+	}
+
+	option = {
+		name = lathvy_piety.11.a
+		ai_chance = {
+			factor = 60
+		}
+		add_piety = 0.1
+	}
+	option = {
+		name = lathvy_piety.11.b
+		ai_chance = {
+			factor = 40
+		}
+		add_piety = -0.1
+	}
+}
+# Trade Guilds and Fraternities
+country_event = {
+	id = lathvy_piety.12
+	title = lathvy_piety.12.t
+	desc = lathvy_piety.12.d
+	picture = COURT_eventPicture
+	
+	is_triggered_only = yes
+
+	trigger = {
+		uses_piety = yes
+		num_of_cities = 2
+		any_owned_province = {
+			is_capital = no
+			NOT = { has_province_modifier = fraternities_strengthened }
+		}
+	}
+	
+	immediate = {
+		hidden_effect = {
+			log = "[GetDate] Lathvy Event"
+		}
+		hidden_effect = {
+			random_owned_province = {
+				limit = { is_capital = no }
+				save_event_target_as = fraternity_province
+			}
+			random_owned_province = {
+				limit = {
+					is_capital = no
+					development = 5
+				}
+				save_event_target_as = fraternity_province
+			}
+			random_owned_province = {
+				limit = {
+					is_capital = no
+					development = 10
+				}
+				save_event_target_as = fraternity_province
+			}
+			random_owned_province = {
+				limit = {
+					is_capital = no
+					development = 15
+				}
+				save_event_target_as = fraternity_province
+			}
+			random_owned_province = {
+				limit = {
+					is_capital = no
+					development = 20
+				}
+				save_event_target_as = fraternity_province
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = lathvy_piety.12.a
+		ai_chance = {
+			factor = 60
+			
+		}
+		add_piety = 0.1
+		add_prestige = 10
+	}
+	option = {
+		name = lathvy_piety.12.b
+		ai_chance = {
+			factor = 40
+		}
+		add_piety = -0.1
+		event_target:fraternity_province = {
+			add_local_autonomy = 25
+			add_province_modifier = {
+				name = "fraternities_strengthened"
+				duration = 3650
+			}
+		}
+	}
+}
+# Orders growing in popularity in [new_province.GetName]
+country_event = {
+	id = lathvy_piety.13
+	title = lathvy_piety.13.t
+	desc = lathvy_piety.13.d
+	picture = REFORM_eventPicture
+	goto = new_province
+	
+	is_triggered_only = yes
+
+	trigger = {
+		uses_piety = yes
+		any_owned_province = {
+			NOT = { is_core = ROOT }
+			NOT = { has_province_modifier = sufi_orders_in_check }
+			NOT = { has_province_modifier = sufi_order_integration }
+		}
+	}
+	
+	immediate = {
+		hidden_effect = {
+			log = "[GetDate] Lathvy Event"
+		}
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { has_province_modifier = sufi_orders_in_check }
+					NOT = { has_province_modifier = sufi_order_integration }
+				}
+				save_event_target_as = new_province
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = lathvy_piety.13.a
+		ai_chance = {
+			factor = 60
+			
+		}
+		add_piety = 0.1
+		event_target:new_province = {
+			add_province_modifier = {
+				name = "sufi_orders_in_check"
+				duration = 3650
+			}
+		}
+	}
+	option = {
+		name = lathvy_piety.13.b
+		ai_chance = {
+			factor = 40
+			
+		}
+		add_piety = -0.1
+		event_target:new_province = {
+			add_province_modifier = {
+				name = "sufi_order_integration"
+				duration = 3650
+			}
+		}
+	}
+}
+# "Disregard of the Lathvy law?"
+country_event = {
+	id = lathvy_piety.14
+	title = lathvy_piety.14.t
+	desc = lathvy_piety.14.d
+	picture = COURT_eventPicture
+	
+	is_triggered_only = yes
+
+	trigger = {
+		uses_piety = yes
+		NOT = { piety = -0.75 }
+		NOT = {
+			has_country_modifier = loss_of_legal_competence
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			log = "[GetDate] Lathvy Event"
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = lathvy_piety.14.a
+		ai_chance = { factor = 70 }
+		add_piety = 0.25
+		add_estate_church_loyalty_effect = yes
+	}
+	option = {
+		name = lathvy_piety.14.b
+		ai_chance = { factor = 30 }
+		reduce_estate_church_loyalty_effect = yes
+		add_piety = -0.1
+		add_country_modifier = {
+			name = "loss_of_legal_competence"
+			duration = 3650
+		}
+	}
+}
+# Friday Prayer
+country_event = {
+	id = lathvy_piety.15
+	title = lathvy_piety.15.t
+	desc = lathvy_piety.15.d
+	picture = PRAYING_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		num_of_cities = 20
+		NOT = { has_country_flag = shiite_friday_prayer }
+	}
+	
+	immediate = {
+		hidden_effect = {
+			set_country_flag = shiite_friday_prayer
+		}
+		hidden_effect = {
+			log = "[GetDate] Lathvy Event"
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = lathvy_piety.15.a
+		ai_chance = { 
+			factor = 100
+		}
+		add_piety = 0.10
+		add_legitimacy = 10
+		add_country_modifier = {
+			name = "friday_prayers_latvhy"
+			duration = 3650
+		}
+	}
+	option = {
+		name = lathvy_piety.15.b
+		ai_chance = { 
+			factor = 0
+		}
+		add_piety = -0.25
+		add_prestige = 10
+	}
+}
+
+#choose school
+country_event = {
+	id = lathvy_piety.16
+	title = lathvy_piety.16.t
+	desc = lathvy_piety.16.d
+	picture = PRAYING_eventPicture
+	
+	mean_time_to_happen = {
+		days = 30
+	}
+	
+	trigger = {
+		religion = lathvy
+		NOT = {
+			OR = {
+				religious_school = {
+					group = lathvy_group
+					school = nafan_school
+				}
+				religious_school = {
+					group = lathvy_group
+					school = pextoglazian_school
+				}
+				religious_school = {
+					group = lathvy_group
+					school = maxan_school
+				}
+			}
+		}
+	}
+	
+	immediate = {
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = lathvy_piety.16.a
+		trigger = {
+			has_global_flag = NafaHappened
+		}
+		ai_chance = { 
+			factor = 3
+		}
+		set_religious_school = {
+			group = lathvy_group
+			school = nafan_school
+		}
+	}
+	option = {
+		name = lathvy_piety.16.b
+		ai_chance = { 
+			factor = 1
+		}
+		set_religious_school = {
+			group = lathvy_group
+			school = pextoglazian_school
+		}
+	}
+	option = {
+		name = lathvy_piety.16.c
+		ai_chance = { 
+			factor = 1
+		}
+		set_religious_school = {
+			group = lathvy_group
+			school = maxan_school
+		}
+	}
+}

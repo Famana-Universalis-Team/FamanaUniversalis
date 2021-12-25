@@ -1,0 +1,519 @@
+namespace = oppia
+
+#Yomtanian Damage
+country_event = {
+	id = oppia.1
+    title = oppia.1.t
+    desc = oppia.1.d
+
+	picture = BORDER_TENSION_eventPicture
+
+	trigger = {
+		OR = {
+			tag = TCK
+			tag = OSS
+		}
+		NOT = { 
+			has_country_flag = ravaged
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 2
+	}
+
+	option = {
+		name = oppia.1.a
+		set_country_flag = ravaged
+		add_country_modifier = {
+			name = "yom_invasion"
+			duration = 3650
+		}
+	}
+}
+
+# The Discovery of Kotzbal
+country_event = {
+    id = oppia.2
+    title = oppia.2.t
+    desc = oppia.2.d
+    picture = COLONIZATION_eventPicture
+    fire_only_once = yes
+
+    trigger = {
+        is_year = 225
+        tag = UMZ
+        owns_core_province = 5044
+        is_subject = no
+        5016 = {
+            is_empty = yes
+        }
+    }
+    mean_time_to_happen = {
+        months = 50
+    }
+    immediate = {
+        hidden_effect = {
+            gomic_exit = {
+            discover_country = UMZ
+            }
+            umzat_islands_area = {
+            discover_country = UMZ
+            }
+        }
+    }
+    option = {
+        name = oppia.2.a
+        goto = 5016
+        ai_chance = { factor = 100 }
+        create_colony_mission_reward = { province = 5016 }
+        hidden_effect = {
+            5016 = {
+                change_culture = ROOT
+                change_religion = ROOT
+            }
+        }
+    }
+    option = {
+        name = oppia.2.b
+        ai_chance = { factor = 0 }
+        add_prestige = -10
+    }
+}
+
+#COR 1: Fasalep
+country_event = {
+	id = oppia.3
+	title = oppia.3.t
+	desc = oppia.3.d
+	picture = REFORM_eventPicture
+	fire_only_once = yes
+	major = yes
+
+	trigger = {
+		is_year = 213
+		owns_core_province = 5059
+	}
+	mean_time_to_happen = {
+		months = 20
+	}
+	immediate = {
+		5059 = {
+			change_religion = reformed_oppian
+			add_reform_center = reformed_oppian
+		}
+	}
+	option = {
+		trigger = {
+			OR = {
+				religion = eastern_oppian
+				religion = western_oppian
+			}
+		}
+		name = oppia.3.a
+		ai_chance = { factor = 50 }
+		add_prestige = -80
+		add_stability = -1
+		add_country_modifier = {
+			name = "conversion_zeal"
+			duration = 3650
+		}
+		change_religion = reformed_oppian
+	}
+	option = {
+		trigger = {
+			NOT = {
+				religion = reformed_oppian
+			}
+		}
+		name = oppia.3.b
+		ai_chance = { factor = 50 }
+		5059 = {
+			create_revolt = 2
+		}
+		add_local_autonomy = 25
+	}
+	option = {
+		trigger = {
+			religion = reformed_oppian
+		}
+		name = oppia.3.c
+		ai_chance = { factor = 100 }
+		add_prestige = 5
+	}
+}
+
+#COR 2: Nuti
+country_event = {
+	id = oppia.4
+	title = oppia.4.t
+	desc = oppia.4.d
+	picture = REFORM_eventPicture
+	fire_only_once = yes
+
+	trigger = {
+		is_year = 230
+		owns_core_province = 5103
+	}
+	mean_time_to_happen = {
+		months = 20
+	}
+	immediate = {
+		5103 = {
+			change_religion = reformed_oppian
+			add_reform_center = reformed_oppian
+		}
+	}
+	option = {
+		trigger = {
+			OR = {
+				religion = eastern_oppian
+				religion = western_oppian
+			}
+		}
+		name = oppia.4.a
+		ai_chance = { factor = 50 }
+		add_prestige = -80
+		add_stability = -1
+		add_country_modifier = {
+			name = "conversion_zeal"
+			duration = 3650
+		}
+		change_religion = reformed_oppian
+	}
+	option = {
+		trigger = {
+			NOT = {
+				religion = reformed_oppian
+			}
+		}
+		name = oppia.4.b
+		ai_chance = { factor = 50 }
+		5103 = {
+			create_revolt = 2
+		}
+		add_local_autonomy = 25
+	}
+	option = {
+		trigger = {
+			religion = reformed_oppian
+		}
+		name = oppia.4.c
+		ai_chance = { factor = 100 }
+		add_prestige = 5
+	}
+}
+
+#COR 3: Diam
+country_event = {
+	id = oppia.5
+	title = oppia.5.t
+	desc = oppia.5.d
+	picture = REFORM_eventPicture
+	fire_only_once = yes
+
+	trigger = {
+		is_year = 260
+		owns_core_province = 5182
+	}
+	mean_time_to_happen = {
+		months = 20
+	}
+	immediate = {
+		5182 = {
+			change_religion = reformed_oppian
+			add_reform_center = reformed_oppian
+		}
+		hidden_effect = {
+			5059 = {
+				remove_reform_center = reformed_oppian
+			}
+			5103 = {
+				remove_reform_center = reformed_oppian
+			}
+		}
+	}
+	option = {
+		trigger = {
+			OR = {
+				religion = eastern_oppian
+				religion = western_oppian
+			}
+		}
+		name = oppia.5.a
+		ai_chance = { factor = 50 }
+		add_prestige = -80
+		add_stability = -1
+		add_country_modifier = {
+			name = "conversion_zeal"
+			duration = 3650
+		}
+		change_religion = reformed_oppian
+	}
+	option = {
+		trigger = {
+			NOT = {
+				religion = reformed_oppian
+			}
+		}
+		name = oppia.5.b
+		ai_chance = { factor = 50 }
+		5182 = {
+			create_revolt = 2
+		}
+		add_local_autonomy = 25
+	}
+	option = {
+		trigger = {
+			religion = reformed_oppian
+		}
+		name = oppia.5.c
+		ai_chance = { factor = 100 }
+		add_prestige = 5
+	}
+}
+
+#delete diam
+country_event = {
+	id = oppia.6
+	fire_only_once = yes
+	hidden = yes
+
+	trigger = {
+		is_year = 300
+		owns_core_province = 5182
+	}
+	mean_time_to_happen = {
+		months = 20
+	}
+	immediate = {
+		5182 = {
+			remove_reform_center = reformed_oppian
+		}
+	}
+
+	option = {
+
+	}
+}
+
+#oppia expands
+country_event = {
+	id = oppia.7
+	title = oppia.7.t
+	desc = oppia.7.d
+	picture = COLONIZATION_eventPicture
+	fire_only_once = yes
+
+	trigger = {
+		is_year = 236
+		owns_core_province = 5017
+	}
+	mean_time_to_happen = {
+		months = 20
+	}
+
+	option = {
+		name = oppia.7.a
+		ai_chance = { factor = 1 }
+		5253 = {
+			change_religion = western_oppian
+			cede_province = LAG
+			change_culture = Laglan
+		}
+	}
+	option = {
+		name = oppia.7.b
+		ai_chance = { factor = 0 }
+		prestige = -5
+	}
+}
+
+#fenikia
+country_event = {
+	id = oppia.8
+	title = oppia.8.t
+	desc = oppia.8.d
+	picture = REFORM_eventPicture
+	fire_only_once = yes
+
+	trigger = {
+		is_year = 271
+		tag = LAG
+	}
+
+	mean_time_to_happen = {
+		months = 5
+	}
+	immediate = {
+		hidden_effect = {
+			5028 = {
+				change_religion = lathvy
+			}
+		}
+	}
+
+	option = {
+		name = oppia.8.a
+		ai_chance = { factor = 1 }
+		change_religion = lathvy
+		change_primary_culture = Feniki
+		custom_tooltip = FENIKI_CONVERSION
+		set_global_flag = fenikiconvert
+		add_country_modifier = {
+			name = "feniki_zeal"
+			duration = 3650
+		}
+		add_core = 5274
+		add_permanent_claim = 5281
+		add_permanent_claim = 5277
+		add_permanent_claim = 5275
+		add_permanent_claim = 5276
+	}
+	option = {
+		name = oppia.8.b
+		ai_chance = { factor = 0 }
+		prestige = -25
+		option = {
+			name = jasuaE.2.b
+			add_prestige = 20
+			add_country_modifier = {
+				name = "outdated_heretic"
+				duration = 1825
+			}
+			ai_chance = { factor = 2 }
+		}
+	}
+}
+
+#fenikia
+country_event = {
+	id = oppia.9
+	hidden = yes
+
+	trigger = {
+		AND = {
+			has_global_flag = fenikiconvert
+			any_owned_province = {
+				AND = {
+					culture = Laglan
+					religion = lathvy
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+	immediate = {
+		every_owned_province = {
+			limit = {
+				AND = {
+					culture = Laglan
+					religion = lathvy
+				}
+			}
+			change_culture = Feniki
+		}
+	}
+
+	option = {
+		name = oppia.9.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = {
+	id = oppia.10
+	hidden = yes
+	is_triggered_only = yes
+
+	mean_time_to_happen = {
+		months = 5
+	}
+	immediate = {
+		add_country_modifier = {
+			name = "debug_kill"
+			duration = -1
+		}
+	}
+
+	option = {
+		name = oppia.10.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+#restema formed
+country_event = {
+	id = oppia.11
+	title = oppia.11.t
+	desc = oppia.11.d
+	picture = REFORM_eventPicture
+	fire_only_once = yes
+	is_triggered_only = yes
+	major = yes
+
+	trigger = {
+
+	}
+
+	option = {
+		name = oppia.11.a
+		ai_chance = { factor = 1 }
+		add_country_modifier = {
+			name = "restema_culture"
+			duration = -1
+		}
+	}
+}
+
+#huparan shipyard
+country_event = {
+	id = oppia.12
+	title = oppia.12.t
+	desc = oppia.12.d
+	picture = HARBOUR_eventPicture
+	fire_only_once = yes
+
+	trigger = {
+		tag = LAG
+	}
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	immediate = {
+		hidden_effect = {
+			add_treasury = 50
+		}
+	}
+
+	option = {
+		name = oppia.12.a
+		ai_chance = {
+			factor = 1000
+			modifier = {
+				factor = 0
+				NOT = {
+					treasury = 100
+				}
+			}
+		}
+		add_country_modifier = {
+			name = "huparan_shipyard"
+			duration = -1
+		}
+	}
+
+	option = {
+		name = oppia.12.b
+		ai_chance = {
+			factor = 0
+			modifier = {
+			}
+		}
+		prestige = -5
+	}
+}

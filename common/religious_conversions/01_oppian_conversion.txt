@@ -1,0 +1,55 @@
+oppian_center_of_reformation = {
+	
+	religion = reformed_oppian
+
+	map_icon = GFX_religious_conversion_center_protestant
+
+	max_distance = 150.0 # From Center of Reformation center province (default is NDefines::NReligion::MAX_RELIGIOUS_CENTER_SPREAD_DISTANCE).
+	base_conversion_speed = 3
+
+	target_province_weights = {
+		factor = 2
+		
+		modifier = {
+			factor = 0.01
+			is_empty = yes
+		}
+		modifier = {
+			factor = 0
+			has_missionary = yes
+		}
+		modifier = {
+			factor = 0
+			has_province_modifier = religious_center
+		}
+		modifier = {
+			factor = 0
+			has_province_modifier = religious_zeal_at_conv
+		}
+		modifier = {
+			factor = 0
+			province_religion = lathvy
+		}
+		modifier = {
+			factor = 0
+			province_religion = tonmo
+		}
+		modifier = {
+			factor = 0
+			province_religion = animism
+		}
+		modifier = {
+			factor = 2
+			province_religion = bamali
+		}
+		modifier = {
+			factor = 2
+			province_religion = egr
+		}
+		modifier = {
+			factor = 2
+			culture_group = FROM
+			development = 10
+		}	
+	}
+}

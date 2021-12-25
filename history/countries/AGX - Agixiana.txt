@@ -1,0 +1,21 @@
+government = monarchy
+add_government_reform = autocracy_reform
+government_rank = 2
+mercantilism = 10
+technology_group = western
+religion = lathvy
+primary_culture = Lerushian
+capital = 5361	# change to real capital
+religious_school = maxan_school
+
+212.4.5 = {
+	monarch = {
+		name = "Oforog 'the Terrible'"
+		adm = 0
+		dip = 0
+		mil = 0
+		dynasty = "Amasha"
+		birth_date = 190.12.7
+	    add_ruler_personality = infertile_personality
+	}
+}

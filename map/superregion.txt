@@ -1,0 +1,47 @@
+# A region can only belong to one super region.
+
+outer_superregion = {
+	outer_region
+}
+
+oppia_superregion = {
+	upper_oppia_region
+	lower_oppia_region
+	arlenta_region
+}
+
+ga_xal_superregion = {
+	maky_region
+	south_xalia_region
+	moria_region
+	east_xalia_region
+	moxon_region
+	north_xalia_region
+}
+
+jasua_superregion = {
+	eastern_desert_region
+	jasua_region
+	kapolia_region
+	aresia_region
+	bamal_gulf_region
+}
+
+west_estal_superregion = {
+	laglon_region
+	walara_region
+	lomea_region
+	pextoglazia_region
+	ordica_region
+	west_estal_region
+	vordor_region
+}
+
+tonmo_supperregion = {
+	nozumol_region
+}
+
+central_estal_supperregion = {
+	emastalia_region
+	vanoma_region
+}

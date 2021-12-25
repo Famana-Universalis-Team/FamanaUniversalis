@@ -1,0 +1,27 @@
+
+gomic_religious_unity = {
+	potential = {
+		always = True
+	}
+
+	trigger = {
+		OR = {
+			religion = western_oppian
+			religion = eastern_oppian
+			religion = reformed_oppian
+			religion = shirian
+			religion = delkian
+			religion = vinian
+			religion = egr
+			religion = bamali
+			religion = aresian
+			religion = bilik
+			religion = gadan
+		}
+	}
+
+	ae_impact = 0.25
+	province_warscore_cost = 0.25
+	unjustified_demands = 0.1
+	warscore_cost_vs_other_religion = -0.10
+}

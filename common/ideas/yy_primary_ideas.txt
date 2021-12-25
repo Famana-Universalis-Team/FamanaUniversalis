@@ -1,0 +1,324 @@
+
+DES_ideas = {
+	start = {
+		sunk_ship_morale_hit_recieved = -0.2
+		global_unrest = -1
+	}
+	
+	bonus = {
+		trade_goods_size_modifier = 0.10
+	}	
+
+	trigger = {
+		OR = {
+			tag = DES
+			primary_culture = Deshmozi
+		}
+	}
+	free = yes
+	
+	des_unification = {
+		prestige_decay = -0.01
+	}
+	des_migrants = {
+		advisor_pool = 1
+	}
+	des_dibata = {
+		trade_steering = 0.2
+	}
+	des_reformed = {
+		tolerance_heretic = 2
+	}
+	des_pirate = {
+		capture_ship_chance = 0.2
+		blockade_efficiency = 0.25
+	}
+	des_supply = {
+		reinforce_cost_modifier = 0.15
+		land_attrition = -0.1
+	}
+	des_worlds = {
+		idea_cost = -0.05
+	}
+}
+
+Morian_ideas = {
+	start = {
+		infantry_power = 0.10
+		tolerance_own = 2
+	}
+	
+	bonus = {
+		leader_land_fire = 1
+	}	
+
+	trigger = {
+		OR = {
+			tag = MOR
+			primary_culture = Morian_C
+		}
+	}
+	free = yes
+	
+	Morian_reunion = {
+		core_creation = -0.1
+	}
+	Morian_holy = {
+		land_morale = 0.20
+	}
+	Morian_fires = {
+		prestige = 1
+	}
+	Morian_warriors = {
+		discipline = 0.05
+	}
+	Morian_justified = {
+		ae_impact = -0.10
+	}
+	Morian_one = {
+		global_missionary_strength = 0.02
+	}
+	Morian_jeruix = {
+		global_tax_modifier = 0.10
+	}
+}
+
+DEL_ideas = {
+	start = {
+		global_manpower_modifier = 0.20
+		global_regiment_cost = -0.10
+	}
+	
+	bonus = {
+		prestige_decay = -0.01
+	}	
+
+	trigger = {
+		OR = {
+			tag = DEL
+			primary_culture = Delkian_C
+		}
+	}
+	free = yes
+	
+	del_the_immovable_earth = {
+		defensiveness = 0.25
+	}
+	del_incorruptible_delkians = {
+		yearly_corruption = -0.1
+	}
+	del_farming_mastery = {
+		trade_goods_size_modifier = 0.15
+	}
+	del_natural_harmony = {
+		stability_cost_modifier = -0.1
+	}
+	del_mending_of_the_dynasties = {
+		autonomy_change_time = -0.05
+		legitimacy = 0.5
+	}
+	del_gateway_to_jasua = {
+		global_prov_trade_power_modifier = 0.2
+	}
+	del_terrain_is_your_weapon = {
+		army_tradition_from_battle = 0.5
+		leader_land_manuever = 1
+	}
+}
+
+ARL_ideas = {
+    start = {
+        legitimacy = 1
+        land_forcelimit_modifier = 0.15
+    }
+    
+    bonus = {
+        cavalry_power = 0.33
+    }
+
+    trigger = {
+		primary_culture = Arlentan
+    }
+    free = yes
+    
+    arl_cape_arlen = {
+        global_trade_power = 0.1
+    }
+    arl_conspiracy_of_the_crown = {
+        spy_offence = 0.25
+    }
+    arl_mercenary_hub = {
+        mercenary_discipline = 0.05
+        mercenary_cost = -0.10
+    }
+    arl_the_gromash_shrine = {
+        prestige = 1
+    }
+    arl_reformed_oppian_alphabet = {
+        technology_cost = -0.05
+    }
+    arl_arlentan_economics = {
+        inflation_reduction = 0.15
+    }
+    arl_the_great_generals = {
+        free_leader_pool = 1
+    }
+}
+
+BMF_ideas = {
+	start = {
+		trade_efficiency = 0.10
+		infantry_power = 0.10
+	}
+	
+	bonus = {
+		global_ship_cost = -0.1
+	}	
+
+	trigger = {
+		primary_culture = Bamali_C
+	}
+	free = yes
+	
+	bmf_holk = {
+		stability_cost_modifier = -0.10
+	}
+	bmf_peener = {
+		global_manpower_modifier = 0.50
+	}
+	bmf_oppian = {
+		improve_relation_modifier = 0.20
+		years_of_nationalism = -5
+	}
+	bmf_guerilla = {
+		enemy_core_creation = 0.5
+	}
+	bmf_adoption = {
+		artillery_power = 0.10
+	}
+	bmf_worship = {
+		tolerance_own = 2
+	}
+	bmf_gulf = {
+		production_efficiency = 0.10
+	}
+}
+
+Opmaki_ideas = {
+	start = {
+		leader_land_shock = 1
+		global_unrest = -2
+	}
+	
+	bonus = {
+		diplomatic_reputation = 1
+	}
+
+	trigger = {
+		primary_culture = Opmaki
+	}
+	free = yes
+	
+	Opmaki_orchards = {
+		production_efficiency = 0.15
+	}
+	Opmaki_legacy = {
+		tolerance_heathen = 2
+	}
+	Opmaki_oppian = {
+		global_manpower_modifier = 0.10
+		army_tradition_decay = -0.01
+	}
+	Opmaki_junction = {
+		improve_relation_modifier = 0.1
+	}
+	Opmaki_refuge = {
+		advisor_pool = 1
+	}
+	Opmaki_tsaf = {
+		global_tax_modifier = 0.10
+	}
+	Opmaki_clergy = {
+		global_missionary_strength = 0.01
+	}
+}
+
+Emastalian_ideas = {
+	start = {
+		trade_efficiency = 0.10
+		light_ship_cost = -0.2
+	}
+	
+	bonus = {
+		navy_tradition_decay = -0.01
+	}
+
+	trigger = {
+		primary_culture = Emastalian
+	}
+	free = yes
+	
+	Emastalian_war = {
+		leader_naval_manuever = 1
+	}
+	Emastalian_merchants = {
+		trade_steering = 0.1
+	}
+	Emastalian_rule = {
+		local_autonomy = -0.05
+	}
+	Emastalian_navies = {
+		light_ship_power = 0.10
+	}
+	Emastalian_insults = {
+		power_projection_from_insults = 1.0
+	}
+	Emastalian_summer = {
+		stability_cost_modifier = -0.1
+	}
+	Emastalian_early = {
+		global_trade_power = 0.1
+	}
+}
+
+Maxan_ideas = {
+	start = {
+		naval_maintenance_modifier = -0.2
+		naval_tradition_from_battle = 0.5
+	}
+	
+	bonus = {
+		improve_relation_modifier = 0.2
+	}
+
+	trigger = {
+		OR = {
+			primary_culture = Lerushian
+			primary_culture = Xofkan
+		}
+	}
+	free = yes
+	
+	Maxan_isles = {
+		production_efficiency = 0.10
+	}
+	Maxan_lang = {
+		idea_cost = -0.05
+	}
+	Maxan_sons = {
+		trade_steering = 0.1
+	}
+	Maxan_heart = {
+		global_own_trade_power = 0.1
+	}
+	Maxan_vo = {
+		tolerance_heathen = 2
+	}
+	Maxan_legacy = {
+		light_ship_power = 0.2
+		privateer_efficiency = 0.15
+	}
+	Maxan_rule = {
+		naval_forcelimit_modifier = 0.2
+	}
+}

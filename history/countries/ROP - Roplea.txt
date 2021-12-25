@@ -1,0 +1,19 @@
+government = monarchy
+add_government_reform = oppian_state_reform
+government_rank = 1
+mercantilism = 10
+technology_group = western
+religion = western_oppian
+primary_culture = Roplean
+capital = 5072	# change to real capital
+
+1436.1.1 = { #change to 204
+	monarch = {
+		name = "Roman"
+		dynasty = "Rateran"
+		adm = 3
+		dip = 2
+		mil = 2
+	}
+}
+

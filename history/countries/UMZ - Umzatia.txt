@@ -1,0 +1,29 @@
+government = monarchy
+add_government_reform = oppian_state_reform
+government_rank = 2
+mercantilism = 15
+technology_group = western
+religion = western_oppian
+primary_culture = Umzatian
+add_accepted_culture = Lower_Oppian
+capital = 5044
+historical_friend = TCK
+
+197.6.11 = { #change to 200 or smth
+	monarch = {
+		name = "Div"
+		dynasty = "Nivoloris"
+		adm = 0
+		dip = 3
+		mil = 6
+		birth_date = 174.9.10
+	}
+	heir = {
+		name = "Mastas"
+		dynasty = "Nivoloris"
+		adm = 0
+		dip = 0
+		mil = 0
+		birth_date = 194.2.1
+	}
+}

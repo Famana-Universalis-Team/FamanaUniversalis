@@ -1,0 +1,71 @@
+fervor_trade = {
+	cost = 5
+	effect = {
+		global_trade_power = 0.15
+		spy_offence = 0.2
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 1.25
+			government = republic
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { trade_income_percentage = 0.1 }
+		}		
+		modifier = {
+			factor = 1.25
+			trade_income_percentage = 0.25
+		}
+		modifier = {
+			factor = 1.25
+			trade_income_percentage = 0.5
+		}			
+		modifier = {
+			factor = 0
+			NOT = { fervor = 75 }
+			has_active_fervor = no
+		}		
+	}
+}
+
+fervor_war = {
+	cost = 4
+	effect = {	
+	core_creation = -0.1
+	global_missionary_strength = 0.01
+}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 1.25
+			always = yes
+		}
+		modifier = {
+			factor = 2
+			num_of_rebel_controlled_provinces = 1
+		}		
+		
+	}		
+}
+
+fervor_stability = {
+	cost = 5
+	effect = {
+		land_maintenance_modifier = -0.10
+		movement_speed = 0.10
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			is_at_war = no
+		}
+		modifier = {
+			factor = 10
+			is_at_war = yes
+		}		
+	}
+	
+}

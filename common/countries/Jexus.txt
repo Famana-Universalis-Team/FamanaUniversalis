@@ -1,0 +1,99 @@
+#Country Name: Please see filename.
+
+graphical_culture = westerngfx
+
+color = { 171  135  130 }
+
+historical_idea_groups = {
+	economic_ideas
+	defensive_ideas
+	diplomatic_ideas
+	offensive_ideas
+	innovativeness_ideas
+	quantity_ideas
+	administrative_ideas
+	religious_ideas
+}
+
+historical_units = {
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+	swiss_landsknechten
+	dutch_maurician
+	austrian_tercio
+	austrian_grenzer
+	austrian_hussar
+	austrian_white_coat
+	austrian_jaeger
+	mixed_order_infantry
+	open_order_cavalry
+	napoleonic_square
+	napoleonic_lancers
+}
+
+monarch_names = {
+	"Kalim #0" = 1
+	"Jamus #0" = 1
+	"Nidro #0" = 1
+	"Gick #0" = 1
+	"Gadal #0" = 1
+	"Tanas #0" = 1
+	"Nirio #0" = 1
+	"Jikiro #0" = 1
+	"Polani #0" = 1
+	"Certa #0" = 1
+	"Keriat #0" = 1
+	"Thvanke #0" = 1
+	"Siank #0" = 1
+	"Kanadat #0" = 1
+	"Jalio #0" = 1
+	"Sicki #0" = 1
+	"Siliri #0" = 1
+	"Pioro #0" = 1
+	"Jaines #0" = -1
+	"Rurolat #0" = -1
+	"Tavas #0" = -1
+}
+
+leader_names = {
+	Kalim
+	Jamus
+	Nidro
+	Gick
+	Gadal
+	Tanas
+	Nirio
+	Jikiro
+	Polani
+	Certa
+	Keriat
+	Thvanke
+	Siank
+	Kanadat
+	Jalio
+	Sicki
+	Siliri
+	Pioro
+}
+
+ship_names = {
+	Lypona
+	Yadosha
+	Meria
+	Dirice
+	Manole
+	Han
+	Ara
+}
+
+army_names = {
+	"Morcan y $PROVINCE$" 
+}
+
+fleet_names = {
+	"Everlasting Armada"
+	"Vin's Legacy"
+	"Grand Navy"
+	"Victorious Fleet"
+}

@@ -1,0 +1,19 @@
+#Written with Eu4 Easy Province Creator by emiroercn
+#UNNAMED
+ 
+culture = Ossori
+religion = western_oppian
+hre = no
+discovered_by = western
+base_tax = 4
+base_production = 6
+trade_goods = fish
+base_manpower = 5
+capital = "Mesdool"
+is_city = yes
+extra_cost = 1
+
+owner = OSS
+controller = OSS
+add_core = OSS
+add_core = VLM

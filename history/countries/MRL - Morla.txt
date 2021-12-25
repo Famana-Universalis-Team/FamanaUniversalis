@@ -1,0 +1,19 @@
+government = monarchy
+add_government_reform = despotic_monarchy
+government_rank = 1
+mercantilism = 15
+technology_group = western
+religion = lathvy
+primary_culture = West_Emastalian
+capital = 5568	# change to real capital
+religious_school = pextoglazian_school
+
+200.1.1 = { #change to 200 or smth
+	monarch = {
+		name = "Yenat"
+		dynasty = "Deli"
+		adm = 4
+		dip = 3
+		mil = 3
+	}
+}

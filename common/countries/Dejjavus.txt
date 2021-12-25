@@ -1,0 +1,93 @@
+#Country Name: Please see filename.
+
+graphical_culture = westerngfx
+
+color = { 48  109  54 }
+
+historical_idea_groups = {
+	economic_ideas
+	defensive_ideas
+	diplomatic_ideas
+	offensive_ideas
+	innovativeness_ideas
+	quantity_ideas
+	administrative_ideas
+	religious_ideas
+}
+
+historical_units = {
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+	swiss_landsknechten
+	dutch_maurician
+	austrian_tercio
+	austrian_grenzer
+	austrian_hussar
+	austrian_white_coat
+	austrian_jaeger
+	mixed_order_infantry
+	open_order_cavalry
+	napoleonic_square
+	napoleonic_lancers
+}
+
+monarch_names = {
+	"Akanara #0" = 1
+	"Karyna #0" = 1
+	"Agaran #0" = 1
+	"Kolor #0" = 1
+	"Dlina #0" = 1
+	"Kakorian #0" = 1
+	"Ofarok #0" = 1
+	"Kenitki #0" = 1
+	"Edgodra #0" = 1
+	"Boptol #0" = 1
+	"Oblogga  #0" = 1
+	"Prykya #0" = 1
+	"Bogdan #0" = 1
+	"Zgaly #0" = 1
+	"Eyzdova #0" = 1
+	"Agaritah #0" = 1
+	"Angara #0" = 1
+	"Qantahya #0" = -1
+	"Lahaani #0" = -1
+	"Mosion #0" = -1
+	"Bahrana #0" = -1
+	"Rigz #0" = -1
+}
+
+leader_names = {
+	Akanara
+	Karyna
+	Agaran
+	Kolor
+	Dlina
+	Kakorian
+	Ofarok
+	Kenitki
+	Edgodra
+	Boptol
+	Oblogga
+	Prykya
+	Bogdan
+	Zgaly
+	Eyzdova
+	Agaritah
+	Angara
+}
+
+ship_names = {
+	Hamami
+	Vatomali
+	Henaoti
+}
+
+army_names = {
+	"Great Legion" 
+	"Forward Division" 
+}
+
+fleet_names = {
+	"Grand navy"
+}

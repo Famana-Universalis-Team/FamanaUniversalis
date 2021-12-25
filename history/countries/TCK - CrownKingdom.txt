@@ -1,0 +1,29 @@
+government = monarchy
+add_government_reform = crown_kingdom_reform
+government_rank = 2
+mercantilism = 10
+technology_group = western
+religion = western_oppian
+primary_culture = Quanexite
+add_accepted_culture = Roplean
+capital = 5066	# change to real capital
+historical_friend = UMZ
+
+200.6.9 = {
+	monarch = {
+		name = "Mensel"
+		dynasty = "Sar"
+		adm = 6
+		dip = 6
+		mil = 5
+		birth_date = 153.5.8
+	}
+	define_heir = {
+		name = "Juke"
+		dynasty = "Sar"
+		adm = 3
+		dip = 2
+		mil = 5
+		birth_date = 195.4.1
+	}
+}

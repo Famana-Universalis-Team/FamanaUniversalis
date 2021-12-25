@@ -1,0 +1,18 @@
+government = monarchy
+add_government_reform = despotic_monarchy
+government_rank = 1
+mercantilism = 10
+technology_group = western
+religion = placeholder_religion
+primary_culture = Placeholder_culture
+capital = 1	# change to real capital
+
+200.1.1 = { #change to 200 or smth
+	monarch = {
+		name = "Placeholder"
+		dynasty = "Placeholder"
+		adm = 0
+		dip = 3
+		mil = 5
+	}
+}

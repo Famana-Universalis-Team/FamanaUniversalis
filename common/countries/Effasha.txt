@@ -1,0 +1,77 @@
+#Country Name: Please see filename.
+
+graphical_culture = westerngfx
+
+color = { 202  182  130 }
+
+historical_idea_groups = {
+	economic_ideas
+	defensive_ideas
+	diplomatic_ideas
+	offensive_ideas
+	innovativeness_ideas
+	quantity_ideas
+	administrative_ideas
+	religious_ideas
+}
+
+historical_units = {
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+	swiss_landsknechten
+	dutch_maurician
+	austrian_tercio
+	austrian_grenzer
+	austrian_hussar
+	austrian_white_coat
+	austrian_jaeger
+	mixed_order_infantry
+	open_order_cavalry
+	napoleonic_square
+	napoleonic_lancers
+}
+
+monarch_names = {
+	"Arlentan #0" = 1
+	"Div #0" = 1
+	"Galivicus #0" = 1
+	"Randos #0" = 1
+	"Vanaia #0" = 1
+	"Yomas #0" = 1
+	"Bodalf #0" = 1
+	"Gameltan #0" = 1
+	"Ayubais #0" = 1
+	"Soofi #0" = -1
+	"Maxia #0" = -1
+}
+
+leader_names = {
+	Arlentan
+	Div
+	Galivicus
+	Randos
+	Vanaia
+	Yomas
+	Bodalf
+	Gameltan
+	Ayubais
+}
+
+ship_names = {
+	Pavtis
+	Naglon
+	Talak
+	Aramesh
+}
+
+army_names = {
+	"Divaca ane $PROVINCE$" 
+}
+
+fleet_names = {
+	"Blue Navy"
+	"Red Navy"
+	"Black Navy"
+	"White Navy"
+}

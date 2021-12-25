@@ -1,0 +1,30 @@
+government = monarchy
+add_government_reform = autocracy_reform
+government_rank = 2
+mercantilism = 10
+technology_group = western
+religion = aresian
+primary_culture = Aresian_C
+capital = 5536	# change to real capital
+historical_friend = BLK
+
+201.3.4 = { #change to 200 or smth
+	monarch = {
+		name = "Kamalka"
+		dynasty = "Vorko-Narus"
+		adm = 5
+		dip = 6
+		mil = 5
+		birth_date = 177.5.4
+		female = yes
+	}
+	heir = {
+		name = "Vonura"
+		dynasty = "Vorko-Narus"
+		adm = 4
+		dip = 4
+		mil = 6
+		birth_date = 191.5.4
+		claim = 80
+	}
+}

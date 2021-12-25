@@ -1,0 +1,93 @@
+#Country Name: Please see filename.
+
+graphical_culture = westerngfx
+
+color = { 81  104  64 }
+
+historical_idea_groups = {
+	economic_ideas
+	defensive_ideas
+	diplomatic_ideas
+	offensive_ideas
+	innovativeness_ideas
+	quantity_ideas
+	administrative_ideas
+	religious_ideas
+}
+
+historical_units = {
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+	swiss_landsknechten
+	dutch_maurician
+	austrian_tercio
+	austrian_grenzer
+	austrian_hussar
+	austrian_white_coat
+	austrian_jaeger
+	mixed_order_infantry
+	open_order_cavalry
+	napoleonic_square
+	napoleonic_lancers
+}
+
+monarch_names = {
+	"Orro #0" = 1
+	"Heum #0" = 1
+	"Fellares #0" = 1
+	"Kanunin #0" = 1
+	"Yamoszy #0" = 1
+	"Unahtare #0" = 1
+	"Eyath #0" = 1
+	"Ayorn #0" = 1
+	"Beroge #0" = 1
+	"Anel #0" = 1
+	"Horfi #0" = 1
+	"Paro #0" = 1
+	"Jekelekim #0" = 1
+	"Fovers #0" = 1
+	"Makei #0" = 1
+	"Astrazna #0" = 1
+	"Maro #0" = -1
+	"Yuni #0" = -1
+	"Delan #0" = -1
+	"Ezeldi #0" = -1
+}
+
+leader_names = {
+	Orro
+	Heum
+	Fellares
+	Kanunin
+	Yamoszy
+	Unahtare
+	Eyath
+	Ayorn
+	Beroge
+	Anel
+	Horfi
+	Paro
+	Jekelekim
+	Fovers
+	Makei
+	Astrazna
+}
+
+ship_names = {
+	Omadid
+	Chaungs
+	Hartitis
+	Bavatis
+}
+
+army_names = {
+	"Rananzha $PROVINCE$" 
+}
+
+fleet_names = {
+	"Blue Navy"
+	"Red Navy"
+	"Black Navy"
+	"White Navy"
+}
