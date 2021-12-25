@@ -1,13 +1,11 @@
 government = anarchy
-add_government_reform = city_state_union_reform
+add_government_reform = survivor_reform
 government_rank = 1
 mercantilism = 10
 technology_group = western
-religion = mak
-primary_culture = Okus
-capital = 5142	# change to real capital
-historical_friend = VDY
-historical_friend = VAX
+religion = gadan
+primary_culture = Makyan_C
+capital = 5154	# change to real capital
 
 200.1.1 = { #change to 200 or smth
 	monarch = {
