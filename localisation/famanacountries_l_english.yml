@@ -189,6 +189,14 @@
  RDU_ADJ: "Rdumktavar"
  RDU_ADJ2: "Rdumktavar"
 
+ FYL: "Feyel"
+ FYL_ADJ: "Feyeli"
+ FYL_ADJ2: "Feyeli"
+
+ WCH: "Woch"
+ WCH_ADJ: "Woch"
+ WCH_ADJ2: "Woch"
+
  #pextovassals
 
  LOM: "Lomea"
@@ -264,7 +272,14 @@
  PJS_ADJ: "Jinasan"
  PJS_ADJ2: "Jinasan"
 
+ holy_monarchy_reform:0 "Holy Monarchy"
+ holy_monarchy_reform_desc:0 "A holy monarchy is a theocratic government ruled jointly by a Secular King and a Religious Leader. This system can frequently lead to clashes of power, especially as the Religious Leaders are the ones who usually have the power to choose the next king."
+ HOLY_MONARCHY:0 "Holy Kingdom"
+ HOLY_KING:0 "Holy King"
+ HOLY_QUEEN:0 "Holy Queen"
 
+
+ #------------Miris------------
 
  ZTT: "Zata"
  ZTT_ADJ: "Zatan"
@@ -293,12 +308,6 @@
  OLF: "Olfemek"
  OLF_ADJ: "Olfemeki"
  OLF_ADJ2: "Olfemeki"
-
- holy_monarchy_reform:0 "Holy Monarchy"
- holy_monarchy_reform_desc:0 "A holy monarchy is a theocratic government ruled jointly by a Secular King and a Religious Leader. This system can frequently lead to clashes of power, especially as the Religious Leaders are the ones who usually have the power to choose the next king."
- HOLY_MONARCHY:0 "Holy Kingdom"
- HOLY_KING:0 "Holy King"
- HOLY_QUEEN:0 "Holy Queen"
 
  diocese: "Diocese"
  diocese_long_desc: "A state ruled by a Bishop within Pextoglazia"
@@ -356,9 +365,9 @@
  GDA_ADJ: "Gadean"
  GDA_ADJ2: "Gadean"
 
- RTK: "Rutikay"
- RTK_ADJ: "Rutikayan"
- RTK_ADJ2: "Rutikayan"
+ RTK: "Garkay"
+ RTK_ADJ: "Garkayan"
+ RTK_ADJ2: "Garkayan"
 
  HZR: "Hzarii"
  HZR_ADJ: "Hzari"
@@ -371,6 +380,14 @@
  MKY: "Maky"
  MKY_ADJ: "Makyan"
  MKY_ADJ2: "Makyan"
+
+ TKM: "Tokum"
+ TKM_ADJ: "Tokumi"
+ TKM_ADJ2: "Tokumi"
+
+ LVY: "Lavy"
+ LVY_ADJ: "Lavy"
+ LVY_ADJ2: "Lavy"
 
  vaxidyria_nation_title:0 "Form Vaxidarian Nation"
  vaxidyria_nation_desc:0 "The cultural union between Dyri and Vaximor has grown to the point where we can finally merge our two identities into one."
@@ -1507,5 +1524,5 @@ GEP_ADJ2: "Geopyopian"
  syadona_capital_title:0 "Move capital to Syadona"
  syadona_capital_desc:0 "Tyarda is a good location for our new capital. It has all the natural advantages, and by conquest, we shall make it our citadel!"
 
- restema_nation:0 "Form Restema"
+ restema_nation_title:0 "Form Restema"
  restema_nation_desc:0 "Restema is the final form of our Feniki people. We shall no longer be slaves to Quanex!"
