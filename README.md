@@ -25,6 +25,6 @@ Special thanks to the team:
 2. Link your file with GitHub to recieve Developer updates, and to contribute to the mod.
 
 ### For Non-Developers who want to recieve beta test builds
-1. Go to the Tags section of the Github, and choose the selected version. Please note that Betas before indev-1.2.3 are inaccessible as that was when the git was made.
+1. Go to the Tags section of the Github, and choose the selected version. Please note that Betas before indev-beta 1.2.3 are inaccessible as that was when the git was made.
 2. Select your release, and download.
 3. Put file contents into `Steam/steamapps/workshop/content/236850`, or wherever you're keeping your mod files.
