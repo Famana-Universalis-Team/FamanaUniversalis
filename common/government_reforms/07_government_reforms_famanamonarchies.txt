@@ -115,3 +115,30 @@ tomban_reform = {
 	}
 	fixed_rank = 1
 }
+
+nafan_gov = {
+	icon = "king"
+	allow_normal_conversion = yes
+	potential = {
+		TAG = NAF
+	}
+	fixed_rank = 3
+	legacy_equivalent = tsardom_legacy
+	valid_for_nation_designer = yes
+	nation_designer_cost = 40
+
+	nation_designer_trigger = {
+		religion = lathvy
+	}
+
+	modifiers = {
+		monarch_admin_power = 2
+		governing_capacity = 250
+		church_loyalty_modifier = 0.1
+	}
+
+	conditional = {
+		allow = { has_dlc = "Third Rome" }
+		claim_states = yes
+	}
+}

@@ -726,7 +726,7 @@ gomic_pagan_group = {
 		
 		heretic = { HALOGENITE XALNISH OPPIAN }	
 	}
-	bosisi = { #unlocalised
+	bosisi = {
 		color = { 93 90 23 }
 		icon = 24
 		country = {
@@ -1221,7 +1221,7 @@ north_estali = {
 		icon = 27
 		country = {
 			galley_power = 0.1
-			fabricate_claims_cost = -0.25
+			naval_forcelimit_modifier = 0.1
 		}
 		country_as_secondary = {
 			ae_impact = -0.2
@@ -1237,11 +1237,11 @@ north_estali = {
 		color = { 139 144 110 }
 		icon = 26
 		country = {
-			spy_offence = 0.1
-			tolerance_heathen = 1
+			shock_damage_received = -0.10
+			loot_amount = 0.25
 		}
 		country_as_secondary = {
-			naval_morale = 0.1
+			land_morale = 0.5
 			leader_cost = -0.10
 		}
 		province = {

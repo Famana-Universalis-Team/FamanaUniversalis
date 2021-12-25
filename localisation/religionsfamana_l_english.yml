@@ -37,7 +37,7 @@
  desc_bishop_soldiers_aspect:0 "In traditional lathvy, the bishops were all pacifists who preferred to wage a spiritual war. We will change this and make our bishops into generals."
  desc_united_amatanians_aspect:0 "A shattered amatanian world cannot fight the yomtanians - we must lead the unification."
  desc_successor_of_the_eclipse_aspect:0 "Nafa is truly the greatest state to ever exist - it is only reasonable that we are its reincarnation."
- desc_reinvent_churches_aspect:0 "~The design of traditional churches is unfit for our purpose. We must redesign them so that we can broadcast our power."
+ desc_reinvent_churches_aspect:0 "The design of traditional churches is unfit for our purpose. We must redesign them so that we can broadcast our power."
 
  oppian_group:0 "Oppian"
  western_oppian:0 "Western Oppian"
@@ -48,7 +48,7 @@
  lathvy:0 "Lathvy"
 
  western_oppian_religion_desc:0 "The traditional religion of the Oppian empire. Held together by the crown of Emintas and the power of the emperor, it has fallen into disarray since the collapse of the empire, and violent wars in Oppia, with people now seeking for an alternative."
- reformed_oppian_religion_desc:0 "A new religion, seeing the reformation of core principles of the Oppian religion, including the abolishing of Sifa. It is regarded as dangerous, playing with fire that is introducing new Gods, as well as assimilating religions."
+ reformed_oppian_religion_desc:0 "A new religion, seeing the reformation of core principles of the Oppian religion, including the abolishing of Sifa. It is regarded as dangerous, playing with the fire that is introducing new gods, as well as assimilating other religions."
  eastern_oppian_religion_desc:0 "A branch deriving from Oppian, influenced by the religions of the Eastern Gomic and Ga Xal, created by forced settlers in the East."
 
  western_oppian_rebels_demand:0 "Convert $COUNTRYNAME$"
@@ -178,8 +178,7 @@
  lathvy_rebels_army:0 "$RELIGION$ Army"
 
  gadan:0 "Gadan"
- gadan_religion_desc:0 "Gadan is a religion formed from a mixture of traditional Xalian, Makyan and Oppian beliefs."
- mak:0 "Mak"
+ gadan_religion_desc:0 "Gadan is a religion that emerged in southern Ga Xal, based on the worship of select important historical figures. A series of important kings are seen as holy and depicted as demi-gods."
  gadan_rebels_demand:0 "Convert $COUNTRYNAME$"
  gadan_rebels_demand_desc:0 "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
  gadan_rebels_title:0 "Religious"
@@ -414,3 +413,13 @@
  christian_group:0 "Error group"
  catholic:0 "Horologian"
  protestant:0 "Slovakian"
+
+ ordic:0 "Ordic"
+ ordic_religion_desc:0 "The Ordic faith is a collection of ancient barbarian traditions and beliefs. With the conversion of the major Ordic kingdoms to the Lathvy faith, it is a dying religion."
+
+ naravami:0 "Torviya"
+ naravami_religion_desc:0 "The Torviya religion represents the various tribal beliefs of the Naravami people. Adherents of Torviya have varying regional differences, but generally, they believe in the ice gods beyond the great Naravami Mountains. Animal sacrifice plays a major part."
+ north_estali_group:0 "North Estali group"
+
+ bosisi:0 "Bosisi"
+ bosisi_religion_desc:0 "Bosisi is the tribal religion of the Antiash people. They believe in a diverse pantheon of gods, with the sun god being most important. It is believed that the sun god will grow stronger and dry up the great sanctuary lake if it is not regularily given sacrifices. In the most dire of times, slaves captured in raids may be sacrificed."

@@ -53,10 +53,11 @@ country_event = {
 				add_base_manpower = 1
 			}
 		}
-		BLK = { override_country_name = Borlebin 
-			    change_religion = bilik
-				}
-		
+		hidden_effect = {
+			BLK = { override_country_name = Borlebin 
+				    change_religion = bilik
+			}
+		}
 	}
 	option = {
 		name = jasuaE.1.a
@@ -249,8 +250,13 @@ country_event = {
 			country_event = { id = ideagroups.1 } #Swap Ideas
 		}
 		stability = 1
-		change_government = monarchy
-		add_government_reform = tsardom
+		if = {
+				limit = {
+					NOT = { government = monarchy }
+				}
+				change_government_to_monarchy = yes
+		}
+		add_government_reform = nafan_gov
 		restore_country_name = yes
 		if = {
 			limit = {
