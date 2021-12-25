@@ -21,4 +21,4 @@ Special thanks to the team:
 ## Installation guide
 
 1. Clone the file, place its contents into wherever you're keeping your mod files. For most people, that will be found in `Steam/steamapps/workshop/content/236850`. You may need to search around to find the exact ID of the mod.
-2. Link your file with GitHub to recieve Developer updated, and to contribute to the mod.
+2. Link your file with GitHub to recieve Developer updates, and to contribute to the mod.
