@@ -20,6 +20,5 @@ Special thanks to the team:
 
 ## Installation guide
 
-1. Clone the file, rename the folder to `FamanaUniversalis` and place it in your Paradox Interactive/Europa Universalis 4/mod folder.
-2. Clone the descriptor file in the "descriptor" branch, and put it in the same directory as the folder.
-3. Launch the mod from the launcher. It will be shown with a hard disk image.
+1. Clone the file, place its contents into wherever you're keeping your mod files. For most people, that will be found in `Steam/steamapps/workshop/content/236850`. You may need to search around to find the exact ID of the mod.
+2. Link your file with GitHub to recieve Developer updated, and to contribute to the mod.
