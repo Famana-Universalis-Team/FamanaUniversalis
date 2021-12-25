@@ -120,7 +120,7 @@ nafan_gov = {
 	icon = "king"
 	allow_normal_conversion = yes
 	potential = {
-		TAG = NAF
+		tag = NAF
 	}
 	fixed_rank = 3
 	legacy_equivalent = tsardom_legacy
