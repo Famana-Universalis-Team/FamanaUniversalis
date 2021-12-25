@@ -1,11 +1,11 @@
-government = anarchy
-add_government_reform = survivor_reform
+government = monarchy
+add_government_reform = autocracy_reform
 government_rank = 1
 mercantilism = 10
 technology_group = western
-religion = gadan
-primary_culture = Makyan
-capital = 5153	# change to real capital
+religion = aresian
+primary_culture = Aresian_C
+capital = 5527	# change to real capital
 
 200.1.1 = { #change to 200 or smth
 	monarch = {

@@ -1,14 +1,11 @@
 government = monarchy
 add_government_reform = autocracy_reform
-government_rank = 2
+government_rank = 1
 mercantilism = 10
 technology_group = western
-religion = lathvy
-primary_culture = Kapolian
-add_accepted_culture = West_Jasuan
-historical_friend = KIN
-capital = 5481	# change to real capital
-religious_school = pextoglazian_school
+religion = aresian
+primary_culture = Aresian_C
+capital = 5519	# change to real capital
 
 200.1.1 = { #change to 200 or smth
 	monarch = {
