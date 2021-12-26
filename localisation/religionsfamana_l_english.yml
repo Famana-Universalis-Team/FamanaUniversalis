@@ -72,6 +72,10 @@
  eastern_oppian_rebels_desc:0 "Religious fanatics tend to rise up in provinces controlled by nations of a different faith. They seek to spread their faith and smite all unbelievers."
  eastern_oppian_rebels_army:0 "$RELIGION$ Army"
 
+ RV_NO_DEITY_TITLE:0 "No deity selected"
+ RV_NO_DEITY_DESC:0 "You have not selected a deity!"
+ RV_PICK_DEITY:0 "Select deity"
+
  chigim:0 "Chigim"
  chigim_desc:0 "The God of weather and good harvests."
 
@@ -177,6 +181,7 @@
  lathvy_rebels_desc:0 "Religious fanatics tend to rise up in provinces controlled by nations of a different faith. They seek to spread their faith and smite all unbelievers."
  lathvy_rebels_army:0 "$RELIGION$ Army"
 
+ gadan_group:0 "Gadan"
  gadan:0 "Gadan"
  gadan_religion_desc:0 "Gadan is a religion that emerged in southern Ga Xal, based on the worship of select important historical figures. A series of important kings are seen as holy and depicted as demi-gods."
  gadan_rebels_demand:0 "Convert $COUNTRYNAME$"
@@ -190,7 +195,7 @@
  delk:0 "Delk"
  vin:0 "Vin"
  shir:0 "Shir"
- xalian_group:0 "Xalian group"
+ xalian_group:0 "Xalian"
 
  delkian:0 "Delkian"
  delkian_religion_desc:0 "One of the four Xalian religions, Delkian believes in the supremacy of Delk, the Earth God, and his eternal creations."
@@ -245,7 +250,7 @@
 
  pawani:0 "Pawani"
  pexomania:0 "Pexomania"
- pawani_religion_desc:0 "One of the four Xalian religions, Shirian believes in the supremacy of Shir, the Air God, and his eternal creations."
+ pawani_religion_desc:0 "Pawani represents the religious beliefs of the pawani people."
  pawani_rebels_demand:0 "Convert $COUNTRYNAME$"
  pawani_rebels_demand_desc:0 "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
  pawani_rebels_title:0 "Religious"
@@ -274,7 +279,7 @@
  myth_of_stox_aspect:0 "Myth of Stox"
  desc_myth_of_stox_aspect:0 "Stox is the dragon of love and faith, and the guardian of the pious. Those who worship all of the dragons equally will receive the greatest of rewards, it is said."
 
- far_eastern_gomic_group:0 "Aresian Gulf group"
+ far_eastern_gomic:0 "Aresian Gulf"
 
  bamali:0 "Bamali"
  bamali_religion_desc:0 "The ancestral religion of the Bamali people, their religion promotes ascetic living while giving offerings to the Gods."
@@ -295,7 +300,7 @@
  bilik_rebels_army:0 "$RELIGION$ Army"
 
  aresian:0 "Aresian"
- aresian_religion_desc:0 "The Aresian religion believes in Phasma, a cosmic deity which found Famana, and has since taken care of it, protecting it from monsterous cosmic Gachra, and becoming its God."
+ aresian_religion_desc:0 "The Aresian religion believes in Phamsa, a cosmic deity which found Famana, and has since taken care of it, protecting it from monsterous cosmic Gachra, and becoming its God."
  aresian_rebels_demand:0 "Convert $COUNTRYNAME$"
  aresian_rebels_demand_desc:0 "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
  aresian_rebels_title:0 "Religious"
@@ -312,7 +317,7 @@
  va_rebels_desc:0 "Religious fanatics tend to rise up in provinces controlled by nations of a different faith. They seek to spread their faith and smite all unbelievers."
  va_rebels_army:0 "$RELIGION$ Army"
 
- Agmagozi_group:0 "Agmagozi group"
+ Agmagozi_group:0 "Agmagozi"
 
  dorroman:0 "Dorroman"
  dorroman_religion_desc:0 "Dorroman is the state religion of the Dorroman people, believing in a strict caste system, and a philosophy following one's destiny as serving one of four Gods representing the seasons."
@@ -342,7 +347,7 @@
  qamon_rebels_army:0 "$RELIGION$ Army"
  barqokyrot:0 "Barqo-Kyrot"
 
- tonmo_group:0 "Tonmo group"
+ tonmo_group:0 "Tonmo"
  tonmo:0 "Tonmo"
  tonmo_religion_desc:0 "Tonmo is a religion focusing on one's relationship with the Gods and heavens, which are transcendant entities often represented by the clouds."
  tonmo_rebels_demand:0 "Convert $COUNTRYNAME$"
@@ -374,7 +379,7 @@
  ensure_subject_loyalty:0 "Ensure Subject Loyalty"
  desc_ensure_subject_loyalty:0 "10"
 
- washoom_group:0 "Washoom group"
+ washoom_group:0 "Washoom"
  washoom:0 "Washoom"
  washoom_religion_desc:0 "Washoom is a religion that believes that objects all around us have their own spiritual energy, in addition to humans. The holiest site in the faith is the Washoom mountain, which is believed to have the greatest collection of this energy anywhere on the planet."
  washoom_rebels_demand:0 "Convert $COUNTRYNAME$"
@@ -407,10 +412,13 @@
  PIETY_BAD_WAR_EFF:3 "Declaring war on a fellow $REL$ will move us towards Loys by §Y$VAL$§!."
  PIETY_GOOD_WAR_EFF:2 "Declaring war on the $REL$ will move us towards Ara by §Y$VAL$§!."
  maxan_school:0 "Maxan Thought"
+ maxan_school_desc:0 "The Maxan school of thought holds that all lathvites should unite in an effort to destroy the non-believers and bring Ara as many followers as possible, to aid his battle against Loys."
  pextoglazian_school:0 "Pextoglazian Thought"
+ pextoglazian_school_desc:0 "The Pextoglazian school of thought holds that conversion to lathvy should always be voluntary. A forceful conversion does not give any power to Ara, they say."
  nafan_school:0 "Nafan Thought"
+ nafan_school_desc:0 "The Nafan school of thought holds that all true lathvites must fight against Loys personally, and that the battle can take the form of prayer, or fighting against the Yomtanians, who are seen as minions of Loys."
 
- christian_group:0 "Error group"
+ christian:0 "Error group"
  catholic:0 "Horologian"
  protestant:0 "Slovakian"
 
@@ -419,7 +427,7 @@
 
  naravami:0 "Torviya"
  naravami_religion_desc:0 "The Torviya religion represents the various tribal beliefs of the Naravami people. Adherents of Torviya have varying regional differences, but generally, they believe in the ice gods beyond the great Naravami Mountains. Animal sacrifice plays a major part."
- north_estali_group:0 "North Estali group"
+ north_estali:0 "North Estali"
 
  bosisi:0 "Bosisi"
  bosisi_religion_desc:0 "Bosisi is the tribal religion of the Antiash people. They believe in a diverse pantheon of gods, with the sun god being most important. It is believed that the sun god will grow stronger and dry up the great sanctuary lake if it is not regularily given sacrifices. In the most dire of times, slaves captured in raids may be sacrificed."

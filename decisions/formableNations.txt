@@ -612,7 +612,7 @@ country_decisions = {
 			OR = {
 				province_id = 5399
 				province_id = 5388
-				province_id = 5386
+				province_id = 5404
 			}
 			OR = {
 				NOT = { owned_by = ROOT }
@@ -624,7 +624,7 @@ country_decisions = {
 			is_at_war = no
 			owns = 5399
 			owns = 5388
-			owns = 5386
+			owns = 5404
 			capital_scope = {
 				is_core = ROOT
 			}
