@@ -13,7 +13,7 @@ country_event = {
 		FAS = {
 			controls = 5683
 		}
-		AND = {
+		OR = {
 			5729 = {
 					is_empty = yes
 				}
@@ -23,12 +23,10 @@ country_event = {
 			5627 = {
 					is_empty = yes
 				}
-			5617 = {
-					is_empty = yes
-				}
+			
 		}
 		NOT = {
-			BLK = { grown_by_development = 100 }
+			BLK = { total_development = 180 }
 		}
 	}
 	
