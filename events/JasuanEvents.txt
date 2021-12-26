@@ -13,6 +13,9 @@ country_event = {
 		FAS = {
 			controls = 5683
 		}
+		BLK = {
+			owns = 5683 
+		}
 		OR = {
 			5729 = {
 					is_empty = yes
@@ -39,10 +42,12 @@ country_event = {
 		ai_chance = { factor = 100 }
 		FAS = {
 			unnamed_area_36 = {
+				limit = { owned_by = BLK }
 				cede_province = FAS
 				add_core = FAS
 			}
 			unnamed_area_37 = {
+				limit = { owned_by = BLK }
 				cede_province = FAS
 				add_core = FAS
 			}
