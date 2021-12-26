@@ -4,6 +4,16 @@
 random_new_world_region = {
 }
 
+# Sea Regions
+
+gomic_region = {
+	areas = {
+		east_gomic
+		gomic
+		gomic_exit
+	}
+}
+
 ########################################
 # EUROPE                               #
 ########################################
@@ -137,8 +147,8 @@ walara_region = {
 		unnamed_pexto_13
 		unnamed_pexto_11
 		unnamed_pexto_12
-		unnamed_pexto_4
 		unnamed_pexto_10
+		unnamed_pexto_5
 	}
 }
 
@@ -148,8 +158,8 @@ pextoglazia_region = {
 		unnamed_pexto_2
 		unnamed_pexto_1
 		mofemi_morsum_area
-		unnamed_pexto_5
 		unnamed_pexto_3
+		unnamed_pexto_4
 	}
 }
 
