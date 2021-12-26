@@ -34,15 +34,18 @@ historical_units = {
 
 monarch_names = {
 	"Allusz #0" = 1
+	"Tlatlu #0" = 1
+	"Suz'Y #0" = 1
 	"PLACEHOLDER #0" = -1
 }
 
 leader_names = {
-	Allusz 
+	Allusz Tlatlu Suz'Y
 }
 
 ship_names = {
-	PLACEHOLDER
+	"Sea Dragon"
+	"A'moga"
 }
 
 army_names = {
