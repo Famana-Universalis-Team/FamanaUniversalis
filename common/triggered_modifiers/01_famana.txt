@@ -46,6 +46,26 @@ aresian_decree_active = {
         }
     }
 
-    yearly_patriarch_authority = -0.01
+    yearly_patriarch_authority = -0.005
     global_tax_modifier = -0.10
+}
+
+yomtanian_nation = {
+    potential = {
+        tag = HAS
+    }
+    
+    trigger = {
+        culture_group = Yomtanian
+    }
+    
+    technology_cost = 0.50
+    development_cost = 0.10
+    land_forcelimit_modifier = -0.35
+    land_morale = 0.33
+    shock_damage = 0.25
+    shock_damage_received = -0.50
+    fire_damage_received = 0.50
+    cavalry_power = -1.00
+    reinforce_speed = -0.50
 }
