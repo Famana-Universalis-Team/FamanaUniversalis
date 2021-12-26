@@ -27,16 +27,28 @@ country_event = {
 					is_empty = yes
 				}
 		}
+		NOT = {
+			BLK = { grown_by_development = 100 }
+		}
 	}
 	
 	mean_time_to_happen = {
-		months = 3
+		months = 1
 	}
 
 	option = {
 		name = jasuaE.1.a
 		ai_chance = { factor = 100 }
-		FAS = { inherit = BLK }
+		FAS = {
+			unnamed_area_36 = {
+				cede_province = FAS
+				add_core = FAS
+			}
+			unnamed_area_37 = {
+				cede_province = FAS
+				add_core = FAS
+			}
+		}
 		borlebim_area = {
 			limit = { 
 				is_empty = yes
