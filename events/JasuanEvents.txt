@@ -5,10 +5,11 @@ country_event = {
 	title = jasuaE.1.t
 	picture = FARMING_eventPicture
 	desc = jasuaE.1.d
-	
+
 	fire_only_once = yes
 	
 	trigger = { 
+		tag = FAS
 		FAS = {
 			controls = 5683
 		}
@@ -32,26 +33,27 @@ country_event = {
 		months = 3
 	}
 
-	immediate = {
-			borlebim_area = {
-				limit = { 
-					is_empty = yes
-				}
-				create_colony = 1000
-				cede_province = BLK
-				add_core = BLK
-				change_culture = Bilik_C
-				change_religion = bilik
-				add_base_tax = 1
-				add_base_production = 1
-				add_base_manpower = 1
-			}
-		
-		BLK = { override_country_name = Borlebin }
-	}
 	option = {
 		name = jasuaE.1.a
 		ai_chance = { factor = 100 }
+		FAS = { inherit = BLK }
+		borlebim_area = {
+			limit = { 
+				is_empty = yes
+			}
+			create_colony = 1000
+			cede_province = BLK
+			add_core = BLK
+			change_culture = Bilik_C
+			change_religion = bilik
+			add_base_tax = 1
+			add_base_production = 1
+			add_base_manpower = 1
+		}
+		BLK = {
+			override_country_name = Borlebin
+			change_religion = bilik
+		}
 	}
 }
 
