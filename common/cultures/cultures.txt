@@ -931,6 +931,17 @@ Maldik = {
 			Mar Moyai Kemay Kasi Magya Komur Dilo Kayti Gag Mafnor Tomu Kamar Ufpau
         }
 	}
+	Paldik = {
+		male_names = {
+            Odrig Brebar Odlac Ozgik Nabam Nolmo Natarda Tarda Muno Gahi Oyud Gedat Aport Kanda Nobo Amart Anuzum
+        }
+        female_names = {
+            Beroro Nai Mida Uge Imia Gilnia Uaizbia Kaiamau
+        }
+        dynasty_names = {
+			Mar Moyai Kemay Kasi Magya Komur Dilo Kayti Gag Mafnor Tomu Kamar Ufpau
+        }
+	}
 }
 #############################
 Komelwaiti = {
@@ -1169,6 +1180,20 @@ Antiash = {
         }
         dynasty_names = {
 			Mensh Selloni Haas Taqar Olar
+        }
+	}
+}
+
+Voychon = {
+	Mabwe = {
+		male_names = {
+            Halalah 
+        }
+        female_names = {
+            Malla
+        }
+        dynasty_names = {
+			In-Salah
         }
 	}
 }
