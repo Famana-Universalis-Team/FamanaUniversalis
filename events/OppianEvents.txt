@@ -350,39 +350,6 @@ country_event = {
 			5028 = {
 				change_religion = lathvy
 			}
-			5255 = {
-				change_religion = lathvy
-				change_culture = Feniki
-				cede_province = FYL
-				add_core = FYL
-				hidden_effect = {
-					add_base_tax = 1
-					add_base_manpower = 1
-					add_base_production = 1
-				}
-			}
-			5265 = {
-				change_religion = lathvy
-				change_culture = Feniki
-				cede_province = FYL
-				add_core = FYL
-				hidden_effect = {
-					add_base_tax = 1
-					add_base_manpower = 1
-					add_base_production = 1
-				}
-			}
-			5279 = {
-				change_religion = lathvy
-				change_culture = Feniki
-				cede_province = WCH
-				add_core = WCH
-				hidden_effect = {
-					add_base_tax = 1
-					add_base_manpower = 1
-					add_base_production = 1
-				}
-			}
 		}
 	}
 

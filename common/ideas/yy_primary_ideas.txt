@@ -1,43 +1,4 @@
 
-OSS_ideas = {
-	start = {
-		discipline = 0.05
-		war_exhaustion = -0.1
-	}
-	
-	bonus = {
-		global_autonomy = -0.05
-	}	
-
-	trigger = {
-		primary_culture = Ossori
-	}
-	free = yes
-	
-	oss_ambition = {
-		core_creation = -0.15
-	}
-	oss_conscription = {
-		global_manpower_modifier = 0.15
-	}
-	oss_economics = {
-		inflation_reduction = 0.1
-	}
-	oss_tax = {
-		global_tax_modifier = 0.1
-	}
-	oss_trade = {
-		global_own_trade_power = 0.15
-		global_institution_spread = 0.25
-	}
-	oss_standardisation = {
-		infantry_cost = -0.10
-	}
-	oss_influence = {
-		tolerance_heretic = 3
-	}
-}
-
 DES_ideas = {
 	start = {
 		sunk_ship_morale_hit_recieved = -0.2
@@ -73,7 +34,7 @@ DES_ideas = {
 		blockade_efficiency = 0.25
 	}
 	des_supply = {
-		reinforce_cost_modifier = -0.15
+		reinforce_cost_modifier = 0.15
 		land_attrition = -0.1
 	}
 	des_worlds = {
@@ -279,6 +240,44 @@ Opmaki_ideas = {
 	}
 	Opmaki_clergy = {
 		global_missionary_strength = 0.01
+	}
+}
+
+Emastalian_ideas = {
+	start = {
+		trade_efficiency = 0.10
+		light_ship_cost = -0.2
+	}
+	
+	bonus = {
+		navy_tradition_decay = -0.01
+	}
+
+	trigger = {
+		primary_culture = Emastalian
+	}
+	free = yes
+	
+	Emastalian_war = {
+		leader_naval_manuever = 1
+	}
+	Emastalian_merchants = {
+		trade_steering = 0.1
+	}
+	Emastalian_rule = {
+		local_autonomy = -0.05
+	}
+	Emastalian_navies = {
+		light_ship_power = 0.10
+	}
+	Emastalian_insults = {
+		power_projection_from_insults = 1.0
+	}
+	Emastalian_summer = {
+		stability_cost_modifier = -0.1
+	}
+	Emastalian_early = {
+		global_trade_power = 0.1
 	}
 }
 

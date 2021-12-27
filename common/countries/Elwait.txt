@@ -33,36 +33,16 @@ historical_units = {
 }
 
 monarch_names = {
-	"Allusz #0" = 1
-	"Tlatlu #0" = 1
-	"Suz'Y #0" = 1
-	"Bawacind #0" = 1
-	"Kep Kep #0" = 1
-	"Hum #0" = 1
-	"Belfegat #0" = 1
-	"Sono Quoce #0" = 1
-	"Kinsmer #0" = -1
-	"Valetat #0" = -1
-	"Chizoo #0" = -1
-	"Praktala #0" = -1
-	"Doke #0" = -1
-	"Dirama #0" = -1
-	"Shatarj #0" = -1
+	"PLCEHOLDER #0" = 1
+	"PLACEHOLDER #0" = -1
 }
 
 leader_names = {
-	Allusz Tlatlu Suz'Y Bawacind "Kep Kep" Kinsmer Valetat Chizoo Praktala Doke Belfegat "Sono Quoce"
+	PLACEHOLDER
 }
 
 ship_names = {
-	"Sea Dragon"
-	"A'moga"
-	Drolla
-	Tinkim
-	Lupvo
-	Sbey
-	Kanna
-	Kizun
+	PLACEHOLDER
 }
 
 army_names = {

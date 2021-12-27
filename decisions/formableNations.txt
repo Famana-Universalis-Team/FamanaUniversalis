@@ -12,7 +12,7 @@ country_decisions = {
 		provinces_to_highlight = {
 			OR = {
 				province_id = 5124
-				province_id = 5550
+				province_id = 5109
 				province_id = 5123
 				province_id = 5121
 				province_id = 5129
@@ -27,7 +27,7 @@ country_decisions = {
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
 			owns = 5124
-			owns = 5550
+			owns = 5109
 			owns = 5123
 			owns = 5121
 			owns = 5129
@@ -41,8 +41,8 @@ country_decisions = {
 				OR = {
 					area = gromash_area
 					area = arlen_area
+					area = elorak_area
 					area = zne_area
-					area = mesdool_area
 				}
 			}
 		}
@@ -78,7 +78,7 @@ country_decisions = {
 				}
 				add_permanent_claim = ARL
 			}
-			mesdool_area = {
+			elorak_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
@@ -188,7 +188,7 @@ country_decisions = {
 		potential = {
 			AND = {
 				OR = {
-					culture = Makyan_C
+					culture = Makyan
 					culture = Okus
 				}
 				NOT = {
@@ -311,7 +311,7 @@ country_decisions = {
 				is_core = ROOT
 			}
 			num_of_owned_provinces_with = {
-				value = 10
+				value = 5
 				is_city = yes
 				region = lower_oppia_region
 			}
@@ -325,7 +325,19 @@ country_decisions = {
 				set_government_rank = 2
 			}
 			change_tag = SOP
-			lower_oppia_region = {
+			effasha_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = SOP
+			}
+			lyposh_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = SOP
+			}
+			ponaa_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
@@ -360,6 +372,7 @@ country_decisions = {
 		}
 		provinces_to_highlight = {
 			OR = {
+				province_id = 
 				province_id = 5066
 				province_id = 5044
 				province_id = 5103
@@ -548,7 +561,7 @@ country_decisions = {
 		}
 		provinces_to_highlight = {
 			OR = {
-				province_id = 5450
+				province_id = 5420
 				province_id = 5442
 				province_id = 5411
 				province_id = 5441
@@ -562,7 +575,7 @@ country_decisions = {
 			adm_tech = 5
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
-			owns = 5450
+			owns = 5420
 			owns = 5411
 			owns = 5441
 			owns = 5442
@@ -612,7 +625,7 @@ country_decisions = {
 			OR = {
 				province_id = 5399
 				province_id = 5388
-				province_id = 5404
+				province_id = 5386
 			}
 			OR = {
 				NOT = { owned_by = ROOT }
@@ -624,7 +637,7 @@ country_decisions = {
 			is_at_war = no
 			owns = 5399
 			owns = 5388
-			owns = 5404
+			owns = 5386
 			capital_scope = {
 				is_core = ROOT
 			}
@@ -686,7 +699,7 @@ country_decisions = {
 				province_id = 5458
 				province_id = 5418
 				province_id = 5445
-				province_id = 5450
+				province_id = 5420
 			}
 			OR = {
 				NOT = { owned_by = ROOT }
@@ -698,7 +711,7 @@ country_decisions = {
 			is_at_war = no
 			owns = 5418
 			owns = 5458
-			owns = 5450
+			owns = 5420
 			owns = 5445
 			capital_scope = {
 				is_core = ROOT
@@ -985,7 +998,7 @@ country_decisions = {
 				province_id = 5163
 				province_id = 5458
 				province_id = 5388
-				province_id = 5450
+				province_id = 5420
 				province_id = 5399
 			}
 			OR = {
@@ -1001,7 +1014,7 @@ country_decisions = {
 			owns = 5163 #ximal
 			owns = 5458 #sixan
 			owns = 5388 #xon
-			owns = 5450 #jexus
+			owns = 5420 #jexus
 			owns = 5399 #oxaled
 			capital_scope = {
 				is_core = ROOT
@@ -1049,7 +1062,7 @@ country_decisions = {
 		potential = {
 			AND = {
 				NOT = { exists = ARS }
-				culture_group = Aresian_C
+				culture = Aresian
 				was_never_end_game_tag_trigger = yes
 			}
 		}
@@ -1186,7 +1199,7 @@ country_decisions = {
 		potential = {
 			AND = {
 				NOT = { exists = EST }
-				culture_group = Emastalian
+				culture = Emastalian
 				was_never_end_game_tag_trigger = yes
 			}
 		}
@@ -1198,7 +1211,7 @@ country_decisions = {
 				province_id = 5567
 				province_id = 5568
 				province_id = 5570
-				province_id = 5572
+				province_id = 5571
 				province_id = 5575
 				province_id = 5581
 				province_id = 5583
@@ -1219,7 +1232,7 @@ country_decisions = {
 			owns = 5568
 			owns = 5568
 			owns = 5570
-			owns = 5572
+			owns = 5571
 			owns = 5575
 			owns = 5581
 			owns = 5583
@@ -1262,7 +1275,7 @@ country_decisions = {
 		potential = {
 			AND = {
 				NOT = { exists = HOX }
-				culture_group = Hoxoi
+				culture = East_Oppian
 				was_never_end_game_tag_trigger = yes
 			}
 		}
@@ -1271,7 +1284,8 @@ country_decisions = {
 				province_id = 5177
 				province_id = 5182
 				province_id = 5185
-				province_id = 5174
+				province_id = 5180
+				province_id = 5189
 			}
 			OR = {
 				NOT = { owned_by = ROOT }
@@ -1285,7 +1299,8 @@ country_decisions = {
 			owns = 5177
 			owns = 5182
 			owns = 5185
-			owns = 5174
+			owns = 5180
+			owns = 5189
 			capital_scope = {
 				is_core = ROOT
 			}
@@ -1314,7 +1329,7 @@ country_decisions = {
 				}
 				add_permanent_claim = HOX
 			}
-			5184 = {
+			unnamed_area_11 = {
 				limit = {
 					is_empty = yes
 				}
@@ -1484,54 +1499,5 @@ country_decisions = {
 			factor = 1
 		}
 		ai_importance = 400
-	}
-
-
-	bamal_nation = {
-		major = yes
-		potential = {
-			tag = BMF
-			primary_culture = Bamali_C
-			NOT = { has_country_flag = bamal_formed }
-			was_never_end_game_tag_trigger = yes
-		}
-		provinces_to_highlight = {
-			OR = {
-				province_id = 5515
-				province_id = 5679
-				province_id = 5652
-				province_id = 5513
-			}
-			OR = {
-				NOT = { owned_by = ROOT }
-				is_city = no
-			}
-		}
-		allow = {
-			is_free_or_tributary_trigger = yes
-			is_at_war = no
-			owns = 5515
-			owns = 5679
-			owns = 5652
-			owns = 5513
-			capital_scope = {
-				is_core = ROOT
-			}
-		}
-		effect = {
-			restore_country_name = yes
-			override_country_name = BAMAL_NAME
-			set_country_flag = bamal_formed
-			if = {
-				limit = {
-					government_rank = 1
-				}
-				set_government_rank = 2
-			}
-			add_prestige = 10
-		}
-		ai_will_do = {
-			factor = 1
-		}
 	}
 }

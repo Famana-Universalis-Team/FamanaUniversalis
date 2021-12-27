@@ -5,70 +5,62 @@ country_event = {
 	title = jasuaE.1.t
 	picture = FARMING_eventPicture
 	desc = jasuaE.1.d
-
+	
 	fire_only_once = yes
+	hidden = yes
 	
 	trigger = { 
-		tag = FAS
-		FAS = {
-			controls = 5683
-		}
-		BLK = {
-			owns = 5683 
-		}
-		OR = {
-			5729 = {
-					is_empty = yes
-				}
-			5727 = {
-					is_empty = yes
-				}
-			5627 = {
-					is_empty = yes
-				}
-			
-		}
-		NOT = {
-			BLK = { total_development = 180 }
-		}
+		NOT = { exists = BLK }
 	}
 	
 	mean_time_to_happen = {
-		months = 1
+		months = 2
 	}
-
+	immediate = {
+	
+	    if = { 
+			limit = { 
+				5727 = {
+					is_empty = yes
+				}
+			}
+			5727 = {
+				create_colony = 1000
+				cede_province = BLK
+				add_core = BLK
+				change_culture = Bilik_C
+				change_religion = bilik
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+				
+			}
+		}
+		if = {
+			limit = {
+				5729 = {
+					is_empty = yes
+				}
+			}
+			5729 = {
+				create_colony = 1000
+				cede_province = BLK
+				add_core = BLK
+				change_culture = Bilik_C
+				change_religion = bilik
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+			}
+		}
+		BLK = { override_country_name = Borlebin 
+			    change_religion = bilik
+				}
+		
+	}
 	option = {
 		name = jasuaE.1.a
 		ai_chance = { factor = 100 }
-		FAS = {
-			unnamed_area_36 = {
-				limit = { owned_by = BLK }
-				cede_province = FAS
-				add_core = FAS
-			}
-			unnamed_area_37 = {
-				limit = { owned_by = BLK }
-				cede_province = FAS
-				add_core = FAS
-			}
-		}
-		borlebim_area = {
-			limit = { 
-				is_empty = yes
-			}
-			create_colony = 1000
-			cede_province = BLK
-			add_core = BLK
-			change_culture = Bilik_C
-			change_religion = bilik
-			add_base_tax = 1
-			add_base_production = 1
-			add_base_manpower = 1
-		}
-		BLK = {
-			override_country_name = Borlebin
-			change_religion = bilik
-		}
 	}
 }
 
