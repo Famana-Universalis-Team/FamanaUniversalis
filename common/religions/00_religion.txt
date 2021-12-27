@@ -704,40 +704,7 @@ lathvy_group = {
 gomic_pagan_group = {
 	flag_emblem_index_range = { 83 96 }
 	flags_with_emblem_percentage = 33
-	naravami = { #unlocalised
-		color = { 91 52 31 }
-		icon = 27
-		country = {
-			galley_power = 0.1
-			fabricate_claims_cost = -0.25
-		}
-		country_as_secondary = {
-			ae_impact = -0.2
-			leader_naval_manuever = 1
-		}
-		province = {
-			local_missionary_strength = 0.01
-		}
-		
-		heretic = { ROCHONI }
-	}
-	ordic = { #unlocalised
-		color = { 139 144 110 }
-		icon = 26
-		country = {
-			spy_offence = 0.1
-			tolerance_heathen = 1
-		}
-		country_as_secondary = {
-			naval_morale = 0.1
-			leader_cost = -0.10
-		}
-		province = {
-			local_missionary_strength = 0.02
-		}
-		
-		heretic = { LATHVY }
-	}
+	
 	mak = {
 		center_of_religion = 5140
 		icon = 5
@@ -759,7 +726,7 @@ gomic_pagan_group = {
 		
 		heretic = { HALOGENITE XALNISH OPPIAN }	
 	}
-	bosisi = { #unlocalised
+	bosisi = {
 		color = { 93 90 23 }
 		icon = 24
 		country = {
@@ -776,6 +743,7 @@ gomic_pagan_group = {
 		
 		heretic = { ANTIASH }
 	}
+	
 	egr = {
 		center_of_religion = 5196
 		icon = 6
@@ -790,25 +758,7 @@ gomic_pagan_group = {
 		heretic = { NIKTAV KINCAR }
 		can_have_secondary_religion = yes
 	}
-	gadan = {
-		center_of_religion = 5140
-		icon = 9
-		color = { 80 58 43 }
-		province = {
-			local_missionary_strength = 0.01
-		}
-		country = {
-			leader_cost = -0.10
-			improve_relation_modifier = 0.15
-		}
-		
-		country_as_secondary = {
-			free_leader_pool = 1
-			prestige_from_land = 0.25
-		}
-		
-		heretic = { MAK MOR DELK }	
-	}
+	
 	vaximorian = {
 		icon = 1
 		color = { 108 184 180 }
@@ -1259,4 +1209,74 @@ placeholder_group = {
 	
 	crusade_name = HOLY_WAR
 	
+}
+
+north_estali = {
+	flag_emblem_index_range = { 83 96 }
+	flags_with_emblem_percentage = 33
+	
+	
+	naravami = { #unlocalised
+		color = { 91 52 31 }
+		icon = 27
+		country = {
+			galley_power = 0.1
+			naval_forcelimit_modifier = 0.1
+		}
+		country_as_secondary = {
+			ae_impact = -0.2
+			leader_naval_manuever = 1
+		}
+		province = {
+			local_missionary_strength = 0.01
+		}
+		
+		heretic = { ROCHONI }
+	}
+	ordic = { #unlocalised
+		color = { 139 144 110 }
+		icon = 26
+		country = {
+			shock_damage_received = -0.10
+			loot_amount = 0.25
+		}
+		country_as_secondary = {
+			land_morale = 0.5
+			leader_cost = -0.10
+		}
+		province = {
+			local_missionary_strength = 0.02
+		}
+		
+		heretic = { OGRACABA }
+	}
+	harmonized_modifier = harmonized_pagan
+	
+	crusade_name = HOLY_WAR
+}
+gadan_group = {
+	flag_emblem_index_range = { 83 96 }
+	flags_with_emblem_percentage = 33
+	defender_of_faith = yes
+	gadan = {
+		center_of_religion = 5140
+		icon = 9
+		color = { 80 58 43 }
+		
+		country = {
+			leader_cost = -0.10
+			improve_relation_modifier = 0.15
+		}
+		
+		country_as_secondary = {
+			free_leader_pool = 1
+			prestige_from_land = 0.25
+		}
+		
+		heretic = { MAK MOR DELK }	
+	}
+	
+	harmonized_modifier = harmonized_pagan
+	
+	crusade_name = HOLY_WAR
 }

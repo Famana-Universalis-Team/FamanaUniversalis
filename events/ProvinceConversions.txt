@@ -8,7 +8,10 @@ country_event = { #Alikami gets cores on Lathvy Upper Oppian provinces, change o
         any_owned_province = {
 			AND = {
 				religion = lathvy
-				culture = Upper_Oppian
+				OR = {
+					culture = Quanexite
+					culture = Roplean
+				}
 				NOT = { is_core = ALK }
 			}
 		}
@@ -18,7 +21,10 @@ country_event = { #Alikami gets cores on Lathvy Upper Oppian provinces, change o
 			limit = {
 				AND = {
 					religion = lathvy
-					culture = Upper_Oppian
+					OR = {
+						culture = Quanexite
+						culture = Roplean
+					}
 				}
 			}
 			add_core = ALK

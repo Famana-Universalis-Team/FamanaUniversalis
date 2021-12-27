@@ -4,8 +4,10 @@ if __name__ == "__main__":
         while True:
             provinceID = input("\nProvince ID:\t")
             provinceName = input("Province Name:\t")
-        
-            f.write(f" PROV{provinceID}:0 {provinceName}\n") #prov_names_l_english
+            
+            #prov_names_l_english
+            f.write(f" PROV{provinceID}:0 {provinceName}\n")
+            f.write(f" PROV{provinceID}_desc:0 {provinceName}\n")
             try:
                 with open(f"history\provinces\{provinceID} - UNNAMED.txt", "r+") as historyF:
                    strID = historyF.read()

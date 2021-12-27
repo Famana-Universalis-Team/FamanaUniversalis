@@ -192,6 +192,18 @@ North_West_Antebari = {
 			Halin Milomoti Uanadi Siba Burtaku Yamata Mariar
 		}
 	}
+	Holk = {
+		primary = BMF
+		male_names = {      
+			Gri Bo Popo Bmolo Drup
+		}
+		female_names = {
+			Shama Bolim Dilim Vimi
+		}
+		dynasty_names = {
+			Halin Milomoti Uanadi Siba Burtaku Yamata Mariar
+		}
+	}
 	Fisbiklan = {
 		primary = FSB
 		male_names = {      
@@ -778,7 +790,7 @@ Nafan = { #unifinished
 			Sini Yiana
 		}
 		dynasty_names = {
-			Syadon
+			Syadon Nolladon Ayim 
 		}
 	}
     Rini_C = {
@@ -919,19 +931,30 @@ Maldik = {
 			Mar Moyai Kemay Kasi Magya Komur Dilo Kayti Gag Mafnor Tomu Kamar Ufpau
         }
 	}
+	Paldik = {
+		male_names = {
+            Odrig Brebar Odlac Ozgik Nabam Nolmo Natarda Tarda Muno Gahi Oyud Gedat Aport Kanda Nobo Amart Anuzum
+        }
+        female_names = {
+            Beroro Nai Mida Uge Imia Gilnia Uaizbia Kaiamau
+        }
+        dynasty_names = {
+			Mar Moyai Kemay Kasi Magya Komur Dilo Kayti Gag Mafnor Tomu Kamar Ufpau
+        }
+	}
 }
 #############################
 Komelwaiti = {
 	Elwaiti = {
 		primary = ELW
 		male_names = {
-            Allusz
+            Allusz 
         }
         female_names = {
             Shatarj
         }
         dynasty_names = {
-			Jhar
+			Jhar Rupe Konoknid Cioulon
         }
 	}
 	Kom = {
@@ -943,7 +966,7 @@ Komelwaiti = {
 			Yarm
 		}
 		dynasty_names = {
-			Leop
+			Leop Mokep Tiji Popi Op Moni Persi Veyu U
 		}
 	}
 }
@@ -988,10 +1011,10 @@ Yomtanian = { # unfinished
 	Hasian = {
 		primary = HAS
 		male_names = {
-			Nihaluchan Oboloianifpeni Gweanhrefn Ugujaj Kowa Twon Olid
+			Nihaluchan Oboloianifpeni Gweanhrefn Ugujaj Kowa Twon Olid Sxaskxa
 		}
 		female_names = {
-			Ayen Tesey Ifs Moak
+			Ayen Tesey Ifs Moak Mnaxyik
 		}
 		dynasty_names = {
 			Gusan Isk Ga'a Gosi Kaoad Has
@@ -1157,6 +1180,20 @@ Antiash = {
         }
         dynasty_names = {
 			Mensh Selloni Haas Taqar Olar
+        }
+	}
+}
+
+Voychon = {
+	Mabwe = {
+		male_names = {
+            Halalah 
+        }
+        female_names = {
+            Malla
+        }
+        dynasty_names = {
+			In-Salah
         }
 	}
 }

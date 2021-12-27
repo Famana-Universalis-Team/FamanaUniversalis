@@ -161,9 +161,9 @@
  ENT_ADJ: "Ennam"
  ENT_ADJ2: "Ennam"
 
- NHL: "Nahallia"
- NHL_ADJ: "Nahallian"
- NHL_ADJ2: "Nahallian"
+ NHL: "Nahallaia"
+ NHL_ADJ: "Nahallaian"
+ NHL_ADJ2: "Nahallaian"
 
  ALT: "Alo Tramo"
  ALT_ADJ: "Alo Traman"
@@ -188,6 +188,14 @@
  RDU: "Rdumktavar"
  RDU_ADJ: "Rdumktavar"
  RDU_ADJ2: "Rdumktavar"
+
+ FYL: "Feyel"
+ FYL_ADJ: "Feyeli"
+ FYL_ADJ2: "Feyeli"
+
+ WCH: "Woch"
+ WCH_ADJ: "Woch"
+ WCH_ADJ2: "Woch"
 
  #pextovassals
 
@@ -264,7 +272,14 @@
  PJS_ADJ: "Jinasan"
  PJS_ADJ2: "Jinasan"
 
+ holy_monarchy_reform:0 "Holy Monarchy"
+ holy_monarchy_reform_desc:0 "A holy monarchy is a theocratic government ruled jointly by a Secular King and a Religious Leader. This system can frequently lead to clashes of power, especially as the Religious Leaders are the ones who usually have the power to choose the next king."
+ HOLY_MONARCHY:0 "Holy Kingdom"
+ HOLY_KING:0 "Holy King"
+ HOLY_QUEEN:0 "Holy Queen"
 
+
+ #------------Miris------------
 
  ZTT: "Zata"
  ZTT_ADJ: "Zatan"
@@ -293,12 +308,6 @@
  OLF: "Olfemek"
  OLF_ADJ: "Olfemeki"
  OLF_ADJ2: "Olfemeki"
-
- holy_monarchy_reform:0 "Holy Monarchy"
- holy_monarchy_reform_desc:0 "A holy monarchy is a theocratic government ruled jointly by a Secular King and a Religious Leader. This system can frequently lead to clashes of power, especially as the Religious Leaders are the ones who usually have the power to choose the next king."
- HOLY_MONARCHY:0 "Holy Kingdom"
- HOLY_KING:0 "Holy King"
- HOLY_QUEEN:0 "Holy Queen"
 
  diocese: "Diocese"
  diocese_long_desc: "A state ruled by a Bishop within Pextoglazia"
@@ -356,9 +365,9 @@
  GDA_ADJ: "Gadean"
  GDA_ADJ2: "Gadean"
 
- RTK: "Rutikay"
- RTK_ADJ: "Rutikayan"
- RTK_ADJ2: "Rutikayan"
+ RTK: "Garkay"
+ RTK_ADJ: "Garkayan"
+ RTK_ADJ2: "Garkayan"
 
  HZR: "Hzarii"
  HZR_ADJ: "Hzari"
@@ -371,6 +380,14 @@
  MKY: "Maky"
  MKY_ADJ: "Makyan"
  MKY_ADJ2: "Makyan"
+
+ TKM: "Tokum"
+ TKM_ADJ: "Tokumi"
+ TKM_ADJ2: "Tokumi"
+
+ LVY: "Lavy"
+ LVY_ADJ: "Lavy"
+ LVY_ADJ2: "Lavy"
 
  vaxidyria_nation_title:0 "Form Vaxidarian Nation"
  vaxidyria_nation_desc:0 "The cultural union between Dyri and Vaximor has grown to the point where we can finally merge our two identities into one."
@@ -654,6 +671,10 @@
  BMF: "Bamfad"
  BMF_ADJ: "Bamfad"
  BMF_ADJ2: "Bamfad"
+
+ BAMAL_NAME: "Bamal"
+ BAMAL_NAME_ADJ: "Bamali"
+ BAMAL_NAME_ADJ2: "Bamali"
 
  EMS: "Emsiloa"
  EMS_ADJ: "Emsiloan"
@@ -1419,11 +1440,11 @@ GEP_ADJ2: "Geopyopian"
  GOLDEN_MEA_ADJ2: "Golden Mea"
 
  SHIRIA: "Shiria"
- SHIRIA_ADJA: "Shirian"
+ SHIRIA_ADJ: "Shirian"
  SHIRIA_ADJ2: "Shirian"
 
  Borlebin: "Borlebin"
- Borlebin_ADJA: "Borlebin"
+ Borlebin_ADJ: "Borlebin"
  Borlebin_ADJ2: "Borlebin"
 
  Trilsekin: "Trilsekin"
@@ -1470,6 +1491,10 @@ GEP_ADJ2: "Geopyopian"
  SYN_ADJ: "Angolan"
  SYN_ADJ2: "Angolan"
 
+ BAMAL_NAME: "Bamal"
+ BAMAL_NAME_ADJ: "Bamali"
+ BAMAL_NAME_ADJ2: "Bamali"
+
  golden_mea_nation_title:0 "Form Golden Mea"
  golden_mea_nation_desc:0 "Having destroyed our enemies and secured our holdings, we can now officially proclaim our Golden Era."
 
@@ -1507,5 +1532,11 @@ GEP_ADJ2: "Geopyopian"
  syadona_capital_title:0 "Move capital to Syadona"
  syadona_capital_desc:0 "Tyarda is a good location for our new capital. It has all the natural advantages, and by conquest, we shall make it our citadel!"
 
- restema_nation:0 "Form Restema"
+ restema_nation_title:0 "Form Restema"
  restema_nation_desc:0 "Restema is the final form of our Feniki people. We shall no longer be slaves to Quanex!"
+ 
+ bamal_nation_title:0 "Restore Bamal"
+ bamal_nation_desc:0 "Bamal was humiliated by foreign powers and reduced to a shadow of its former self, the rump state of Bamfad. Now, with Bamal's old territory once again in our hands, we are in a position to restore the great nation of Bamal."
+
+ reform_pexto_decision_title:0 "Establish [Root.GetAdjective] Kingdom"
+ reform_pexto_decision_desc:0 "[Root.GetName] has lived under the heel of Pextoglazia for long enough. It is time to establish our own independent kingdom, so we may decide our own destiny."

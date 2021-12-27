@@ -74,6 +74,10 @@
  oppia.5.b:0 "Heretics! Crush them!" 
  oppia.5.c:0 "This will benefit our cause." 
 
+ jasuaE.1.t:0 "The Fate of Biliku"
+ jasuaE.1.d:0 "The homeland of Biliku has been conquered, but some of its people have decided to carry on the legacy of their nation elsewhere. Thousands of biliks have migrated north of Aresia to establish the new nation of Borlebin."
+ jasuaE.1.a:0 "An interesting development."
+
  outdated_heretic:0 "Outdated Heretic"
  jasuaE.2.t:0 "The Lathvy Question"
  jasuaE.2.d:0 "Although many still cling onto our old Pagan beliefs, recent increases in the number of Lathvites in our country has lead to a complicated situation. With our allies following the new religion, it is questionable whether we should continue our old ways."
@@ -82,8 +86,13 @@
 
  desert_empire:0 "Desert Empire"
  jasuaE.3.t:0 "To Rule the Desert"
- jasuaE.3.d:0 "Yabonia was founded as a nation of the settlers who occupied the Jasuan Steppe. Despite this, most of these settlers were free-roamers. The adoption of the Bamali faith by us was also not taken very rightfully. Apart from the recent construction of the Oasis city of Jimkalin, we have struggled to put much of our steppe land to good use, and have a hard time controlling our people. Combine this with famine coming in from the east, and our current position seems tenous."
+ jasuaE.3.d:0 "Yabonia was founded as a nation of the settlers who occupied the Jasuan Steppe. However, most of these settlers were free-roamers. Many of them have adopted the Bamali faith, presenting even more problems for us. Apart from the recent construction of the city of Jimkalin, we have struggled to put much of our steppe land to good use, and have a hard time controlling our people. Combine this with famine in the east, and our current position seems tenous."
  jasuaE.3.a:0 "They will learn to fear our name... eventually."
+
+ jasuaE.4.t:0 "The Helvania of Stroktur"
+ jasuaE.4.d:0 "The people of Stroktur are starting to question what 'the free rule' actually means. We claim to be a free nation, yet we are ruled by a [SKT.Monarch.GetTitle]. Many now push for a republican system of government, inspired by the Vaximorian ideals of helvania."
+ jasuaE.4.a:0 "Let the people decide."
+ jasuaE.4.b:0 "The [SKT.Monarch.GetTitle] knows best."
 
  oppia.7.t:0 "Expand into the Wilderness"
  oppia.7.d:0 "We have discovered more land to the West. We must exploit this discovery before others do."
@@ -125,14 +134,18 @@
  oppia.12.a:0 "Make it so."
  oppia.12.b:0 "It's not worth it."
 
+ jasuaE.5.t:0 "The Eclipse"
+ jasuaE.5.d:0 ""
+ jasuaE.5.a:0 "Intriguing."
+
  jasuaE.6.t:0 "The Eclipse"
- jasuaE.6.d:0 "In 291, an eclipse was visible from most areas of Famana. Not only this, but in some regions, an extremely rare double eclipse of both moons could have been seen. This inspired a lot of people, and paved the way for social change."
- jasuaE.6.a:0 "Its..... beautiful..."
+ jasuaE.6.d:0 "In 291, an eclipse was visible from most of Famana. Not only this, but in some regions, an extremely rare double eclipse of both moons could be seen. This inspired a lot of people, and paved the way for social change."
+ jasuaE.6.a:0 "It's... beautiful."
  jasuaE.6.b:0 "Where did Um go? Did his servants devour him?"
 
  jasuaE.7.t:0 "The Eclipse"
- jasuaE.7.d:0 "In 291, Syadon Noy, a Kachik peasant, got elected as King of Bohora. This however resulted in him abolishing the system, and enforcing his new autocratic rule under the Nafan Empire."
- jasuaE.7.a:0 "The world shall know the truth of the eclipse very soon."
+ jasuaE.7.d:0 "In 291, Syadon Noy, a Kachik peasant, was elected as king of Bohora. This however resulted in him abolishing the system, and enforcing his new autocratic rule under the Nafan Empire."
+ jasuaE.7.a:0 "The world shall know the truth of the eclipse, very soon."
  jasuaE.7.b:0 "We can't give up our heritage!"
 
  gaxal.7:0 "The Sale of Northern Lerush"
@@ -147,9 +160,10 @@
  gaxal.8.a:0 "Finally!"
  gaxal.8.b:0 "We cannot afford this."
 
- nafa.j.1.t:0 "The Jzoet tribe offers help"
- nafa.j.1.d:0 "While our people remember the frightening stories of the Hasian Horde and Maky's destruction, they also know about the friendly Yomtanian tribe that saved our glorious leader Syadon from death - the Jzoetese. Now this tribe is offering to help us build our great empire. We don't know why, except that they "see a great future for us." The few of us who understand the Jzoetian language have overheard them talking about "the evil superpower beyond the western ocean"
- nafa.j.1.a:0 "We'll accept their help"
+ nafa.j.1.t:0 "The Jzoet Tribe Offers Help"
+ nafa.j.1.d:0 "While our people remember the frightening stories of the Hasian Horde and Maky's destruction, they also know about the friendly Yomtanian tribe that saved our glorious leader Syadon from death - the Jzoetese. Now this tribe is offering to help us build our great empire. We don't know why, except that they "see a great future for us." The few of us who understand the Jzoetian language have overheard them talking about 'the evil superpower beyond the western ocean'."
+ nafa.j.1.a:0 "We'll gladly accept their support!"'
+ jzoet_help:0 "Help From Jzoet"
 
  pexto.1.t:0 "Pextoglazian Civil War"
  pexto.1.d:0 "Pextoglazia has always been an unstable nation. It was a nation of two balances - Church and State, King and Bishop, Pextan and Glazian. Although it has tried its best to keep itself stable and balance everything, the system has now come crashing down. Over the past few weeks, tensions between the Nobility and the Clergy have escalated, and now this matter we cannot ignore. War is on the horizon."
@@ -186,9 +200,9 @@
  pexto.6.d:0 "The ongoing civil war has resulted in war weariness among our population. People are deserting the army and our state is becoming less legitimate."
  pexto.6.a:0 "A shame."
 
- gaxal.9.t:0 "A new name"
- gaxal.9.d:0 "The founders of our country were Lathvites, and named it after their faith. Now, that state our religion has changed, a new name is needed. Advisiors propose to simply name it after our capital, Trilsekin"
- gaxal.9.a:0 "Fine"
+ gaxal.9.t:0 "A New Name"
+ gaxal.9.d:0 "The founders of our country were lathvites, and named it after their faith. Now that our state our religion has changed, a new name is needed. Advisiors propose to simply name it after our capital, Trilsekin"
+ gaxal.9.a:0 "Fine."
 
  lathvy_piety.4.t:0 "A reliquary"
  lathvy_piety.4.d:0 "The clergy asked us to fund a reliquary that will hold a part of a saint."
@@ -241,10 +255,10 @@
  lathvy_piety.15.a:0 "[Root.Monarch.GetName] will lead the friday prayers and our country will pray."
  lathvy_piety.15.b:0 "We should leave these practices in the past"
 
- lathvy_piety.16.t:0 "Our position on the Lathvy Schism"
+ lathvy_piety.16.t:0 "Our Position on the Lathvy Schism"
  lathvy_piety.16.d:0 "With our conversion, we must now choose a new path for the Lathvy faith."
  lathvy_piety.16.a:0 "We side with Syadon!"
- lathvy_piety.16.b:0 "The traditioanlists in Pomlen are right."
+ lathvy_piety.16.b:0 "The traditionalists in Pomlen are right."
  lathvy_piety.16.c:0 "Ara calls to us; we must liberate the world!"
 
  pexto.10.t:0 "The Question of New Pexamol"
@@ -306,3 +320,7 @@
  aresian_dec.1.t:0 "A Spectre Looms Over Aresia"
  aresian_dec.1.d:0 "Aresia is not what it once was. The realm lays in ruins and the people do not seem to care much for worshipping Phamsa. Corruption, heresy and general depravity run rampant. There is no doubt that our lord is dissapointed, and that Aresian civilization is in decline. Our golden age is over."
  aresian_dec.1.a:0 "These are dark times."
+
+ maky.4.t:0 "The rise of Tokum"
+ maky.4.d:0 "Following the fall of the Makyan Empire, many people fled the populated North into the South, particularly cities such as Kars, Fokay and Okus. However, many fled into the depths of the desert, where remote tribes have banded together to form a nation."
+ maky.4.a:0 "Deeper, and deeper, into these miserable sands..."
