@@ -7,7 +7,8 @@
 #GLR's RP
 #My own RP (Fall of Nafa)
 #Sunset (ofc)
-#  - Adartho (programmer)
+#Programmers - Adartho, Ocros, u1145, SKM
+
 #############################
 Placeholder_Cultures = {
 	Placeholder_culture = {
@@ -22,6 +23,7 @@ Placeholder_Cultures = {
         }
 	}
 }
+
 #############################
 Maxan = {
     Lerushian = {
@@ -76,7 +78,6 @@ Emastalian = {
             Ratonasha Loviaz Lekaux Jantada Jaka Deli Dion Nedu Wamadra Manu Kanaz Shunex Sunek Uchlir Dramra Mibsko Bohika Nahetle Ermefi Horfiv
         }
     }
-
 	West_Emastalian = {
 		primary = EST
         male_names = {
@@ -194,7 +195,6 @@ North_West_Antebari = {
 		}
 	}
 	Mabusoth = {
-	
 		male_names = {      
 			Suuotho Nobim Ankalo Vankarim Derptek
 		}
@@ -205,7 +205,6 @@ North_West_Antebari = {
 			Mabukather Peliedd Uewa Unkoolusa
 		}
 	}
-	
 }
 
 #############################
@@ -222,7 +221,6 @@ Pextoglazian = {
 			Anohar Loviaz Mayetas Kakin Kel Carvell
 		}
 	}
-
 	Walaran = {
 		primary = WLR
 		male_names = {
@@ -235,7 +233,6 @@ Pextoglazian = {
 			Anohar Loviaz Mayetas Kakin Kel Carvell
 		}
 	}
-
 	Nevian = {
 		male_names = {
 			Ranyaf Romal Eyath Goloro Erio Norek Kaylan Ashdad Poro Pisto Mokok Rokon Asio Kayyaf Thirel Kamir
@@ -247,7 +244,6 @@ Pextoglazian = {
 			Anohar Loviaz Mayetas Kakin Kel Carvell
 		}
 	}
-
 	New_Pexamolite = {
 		primary = NPX
 		male_names = {
@@ -260,7 +256,6 @@ Pextoglazian = {
 			Majestaz Eyath
 		}
 	}
-
 	Glazian = {
 		primary = LOM
         male_names = {
@@ -289,7 +284,6 @@ Jasuan = {
 			Kan H'rd Tino Kipi Monkus Noy Tzaz Anekol Bla Stas Horthy Borwell Sha'pir'o Ranazha Stas
 		}
     }
-
 	Kapolian = {
 		primary = KAP
 		male_names = {
@@ -429,7 +423,7 @@ Oppian = {
 	Thalmorian = {
 		primary = THA
 		male_names = {
-			Mantera Galys Dransy Vanay Yomes Bodflar Gametlan Ajubinas Ganefan Ramaya Aubaima Gatvy Tuans Alcuhan
+			Mantera Galys Dransy Vanay Yomes Bodflar Gametlan Ajubas Ganefan Ramaya Aubayma Gatvy Tuans Alcuhan
 		}
 		female_names = {
 			Soofy Mayxa Zoy Messay
@@ -478,8 +472,9 @@ Hoxoi = {
 		}
 	}
 }
+
 #############################
-Geopyiopian = {
+Geopyopian = {
 	Igizi_Edishan = {
 		male_names = {
 			Haromiam Diajalo Loozamiar Akil Harmiar Toman Tolatar Yako
@@ -568,6 +563,7 @@ Geopyiopian = {
 		}
 	}
 }
+
 #############################
 Ravsho = { #unfinished
 	Fashran = {
@@ -606,6 +602,7 @@ Ravsho = { #unfinished
 		}
 	}
 }
+
 #############################
 Xalian = {
 	Neo_Xalnish = {
@@ -620,7 +617,6 @@ Xalian = {
 			Eurea Rumbali Tilav Galali Polank Katanas Kalana Thvat Jadrtank Sikero Kamumba Ruricki Talik Erenatok Restok
 		}
 	}
-
     Glasian = {
         male_names = {
 			Kalin Jams Remel Niro Gadel Tanus Niro Jijiro Poni Kerta Kert Fani Siak Kanadat Jalio Sicki Siliri Pioro
@@ -632,7 +628,6 @@ Xalian = {
 			Era Rubli Anhar Tilaf Galali Polank Katanas Kalana Thvat Jadrtank Sikero Kamumba Ruricki Talik Erenatok "Pol Eio"
 		}
     }
-	
 	Delkian_C = {
 		primary = DEL
 		male_names = {
@@ -645,7 +640,6 @@ Xalian = {
 			Eurea Rumbali Tilav Galali Polank Katanas Kalana Thvat Jadrtank Sikero Kamumba Ruricki Talik Erenatok Restok
 		}
 	}
-
 	Sixany = {
 		primary = SIX
 		male_names = {
@@ -658,7 +652,6 @@ Xalian = {
 			Eurea Rumbali Tilav Galali Polank Katanas Kalana Thvat Jadrtank Sikero Kamumba Ruricki Talik Erenatok Restok
 		}
 	}
-
 	Morian_C = {
 		primary = MRS
 		male_names = {
@@ -671,7 +664,6 @@ Xalian = {
 			Era Rubli Anhar Tilaf Galali Polank Katanas Kalana Thvat Jadrtank Sikero Kamumba Ruricki Talik Erenatok "Pol Eio"
 		}
 	}
-
 	Pawani_C = {
 		primary = NKM
 		male_names = { 
@@ -700,7 +692,6 @@ Vanoman = {
 			Escilliptus Vanom Uma
 		}
 	}
-
 	Emtik = {
 		male_names = {
 			Gaszron Urszus Forara Rzegarder Kaszasis Wenel Sotinotin Somin
@@ -740,7 +731,6 @@ Aresian_C = {
 			Marco Lubentas Ladotali Wiromo Yomuku Kakukases Mibibanes Yan Lush Ibars Mimin Maku Arine Pef Tatinvi Luban Aninesi Janoedo
 		}
 	}
-
 	Yatian = {
 		primary = YTI
 		male_names = {
@@ -881,7 +871,6 @@ Ordic = {
 			Mar Moai Cemaui Cazgi Malgya Comugia Tilco Cauitau Gyage Miaufno Tomu Kaiamau Ufpau
         }
 	}
-	
 	Vordori = {
 		male_names = {
             Ordic Berber Odalco Ozgici Niabiame Nuolme Natuydai Tordou Munai Gyagyi Oydoytu Gyedaitau Aiypaito Cenudai Noboai Aimiate Aulnauzmu
@@ -893,7 +882,6 @@ Ordic = {
 			Mar Moai Cemaui Cazgi Malgya Comugia Tilco Cauitau Gyage Miaufno Tomu Kaiamau Ufpau
         }
 	}
-	
 	Yuvlan = {
 		male_names = {
             Ordic Berber Odalco Ozgici Niabiame Nuolme Natuydai Tordou Munai Gyagyi Oydoytu Gyedaitau Aiypaito Cenudai Noboai Aimiate Aulnauzmu
@@ -905,7 +893,6 @@ Ordic = {
 			Mar Moai Cemaui Cazgi Malgya Comugia Tilco Cauitau Gyage Miaufno Tomu Kaiamau Ufpau
         }
 	}
-	
 	Vamanyan = {
 		male_names = {
             Ordic Berber Odalco Ozgici Niabiame Nuolme Natuydai Tordou Munai Gyagyi Oydoytu Gyedaitau Aiypaito Cenudai Noboai Aimiate Aulnauzmu
@@ -917,7 +904,6 @@ Ordic = {
 			Mar Moai Cemaui Cazgi Malgya Comugia Tilco Cauitau Gyage Miaufno Tomu Kaiamau Ufpau
         }
 	}
-
 	Nahallaian = {
 		primary = NHL
 		male_names = {
@@ -956,6 +942,7 @@ Maldik = {
         }
 	}
 }
+
 #############################
 Komelwaiti = {
 	Elwaiti = {
@@ -983,6 +970,7 @@ Komelwaiti = {
 		}
 	}
 }
+
 #############################
 Naravami_C = {
 	Rduma = {
@@ -1019,6 +1007,7 @@ Naravami_C = {
         }
 	}
 }
+
 #############################
 Yomtanian = { # unfinished
 	Hasian = {
@@ -1034,6 +1023,8 @@ Yomtanian = { # unfinished
 		}
 	}
 }
+
+#############################
 Qamoni = {
     #country = { has_banners = 1}
 	#province = { local_has_banners = 1} (what the fuck is this)
@@ -1050,7 +1041,7 @@ Qamoni = {
             Latar Qashauil Okolobarmi Lahacaca Merana Menacul Raltenol
         }
 	}
-	Qanoyan = {
+	Qanoyan_C = {
 		primary = QAN
 		male_names = {
            	Ramalj Nary Ail Gvurt Coban Robaj Wilso Laso Okbar Euk Futger Vitehi Aoi Kiri Zuigr Shirol Kizur Apfadra Ethorki Qanoyan Avahan Eirosh
@@ -1074,6 +1065,7 @@ Qamoni = {
         }
 	}
 }
+
 #############################
 Ekelan = {
 	Oblokelan = {
@@ -1121,6 +1113,7 @@ Ekelan = {
     	}
 	}
 }
+
 #############################
 Antiash = {
 	Kurkari = {
@@ -1136,6 +1129,7 @@ Antiash = {
 	}
 }
 
+#############################
 Voychon = {
 	Mabwe = {
 		male_names = {
@@ -1149,6 +1143,7 @@ Voychon = {
         }
 	}
 }
+
 #############################
 Toman_C = { #Localise
     #country = { has_banners = 1}
