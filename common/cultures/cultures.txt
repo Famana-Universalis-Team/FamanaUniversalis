@@ -845,17 +845,6 @@ Western_Estali = { #unfinished
 		dynasty_names = {
 			Durisgaad Alb?k Rimar Gi?j Vaigratbag J?geial Iojur Ojimi Voigwoi Bew?m Aigtai Gur?ngim Rairt? Ngaizr?
 	}
-	Mukanic = {
-		male_names = {
-			Muk
-		}
-		female_names = {
-			Youlez
-		}
-		dynasty_names = {
-			Falwakfan
-		}
-	}
 }
 #############################
 Ordic = {
@@ -1025,7 +1014,7 @@ Yomtanian = { # unfinished
 }
 
 #############################
-Qamoni = {
+Qamon = {
     #country = { has_banners = 1}
 	#province = { local_has_banners = 1} (what the fuck is this)
 
@@ -1064,10 +1053,6 @@ Qamoni = {
 			Latar Qashauil Okolobarmi Lahacaca Merana Menacul Raltenol
         }
 	}
-}
-
-#############################
-Ekelan = {
 	Oblokelan = {
 		male_names = {
         	Akanara Karyna Agaran Kolor Dlina Kakorian Ofarok Kenitki Edgodra Boptol Oblogga Prykya Bogdan Zgaly Eyzdova Agaritah Angara
