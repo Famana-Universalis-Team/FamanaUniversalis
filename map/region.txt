@@ -83,7 +83,6 @@ maky_region = {
 		okus_area
 		unnamed_area_9
 		bava_area
-		kars_area
 	}
 }
 
@@ -97,11 +96,19 @@ south_xalia_region = {
 	}
 }
 
+upper_makyna_region = {
+	areas = {
+		kars_area
+	}
+}
+
 eastern_desert_region = {
 	areas = {
 		hoxoi_area
 		mahansha_area
 		unnamed_area_11
+		ropinver_area
+		diam_area
 	}
 }
 
@@ -119,6 +126,7 @@ jasua_region = {
 		unnamed_area_48
 		unnamed_area_34
 		unnamed_area_46
+		geter_area
 	}
 }
 
@@ -211,6 +219,7 @@ kapolia_region = {
 		unnamed_area_30
 		unnamed_area_33
 		unnamed_area_32
+		unnamed_area_52
 	}
 }
 
@@ -268,6 +277,8 @@ aresia_region = {
 		nikat_area
 		north_nakoa_area
 		borlebim_area
+		jiat_area
+		govrrol_area
 	}
 }
 
