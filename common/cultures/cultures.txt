@@ -157,17 +157,6 @@ Makyna = {
 
 #############################
 North_West_Antebari = {
-	Nozuman = {
-		male_names = {      
-			Twan Tola'ir Are Acren Ettin Menelkir Kisum Muzira Qizwenok Tamolu Trador Korax Meva
-		}
-		female_names = {
-			Jalolo Washu Ziri Vida Acren
-		}
-		dynasty_names = {
-			Gastur Niwa Jura Kiva Rod Legori Ansh Natigu Viderin Zimin Zimion Aspak
-		}
-	}
 	Bilik_C = {
 		primary = BLK
 		male_names = {      
@@ -204,18 +193,19 @@ North_West_Antebari = {
 			Halin Milomoti Uanadi Siba Burtaku Yamata Mariar
 		}
 	}
-	Fisbiklan = {
-		primary = FSB
+	Mabusoth = {
+	
 		male_names = {      
-			Twando Ibiku Mini Takesi Wili Pomi Yomi Timi Fatedi Lamedon Vidhasta 
+			Suuotho Nobim Ankalo Vankarim Derptek
 		}
 		female_names = {
-			Latesh Luka Yimi
+			Sollofa Udima Obeva Febfu Jue Kellez
 		}
 		dynasty_names = {
-			Halin Milomoti Uanadi Siba Galchhar
+			Mabukather Peliedd Uewa Unkoolusa
 		}
 	}
+	
 }
 
 #############################
@@ -566,6 +556,17 @@ Geopyiopian = {
 			Gastur Niwa Jura Kiva Rod Legori Ansh Natigu Viderin Zimn Viden Apak
 		}
 	}
+	Nozuman = {
+		male_names = {      
+			Twan Tola'ir Are Acren Ettin Menelkir Kisum Muzira Qizwenok Tamolu Trador Korax Meva
+		}
+		female_names = {
+			Jalolo Washu Ziri Vida Acren
+		}
+		dynasty_names = {
+			Gastur Niwa Jura Kiva Rod Legori Ansh Natigu Viderin Zimin Zimion Aspak
+		}
+	}
 }
 #############################
 Ravsho = { #unfinished
@@ -590,6 +591,18 @@ Ravsho = { #unfinished
 		}
 		dynasty_names = {
 			Wynrois Kan Addesh Verakol Erzas Assha Laznaristro
+		}
+	}
+	Fisbiklan = {
+		primary = FSB
+		male_names = {      
+			Twando Ibiku Mini Takesi Wili Pomi Yomi Timi Fatedi Lamedon Vidhasta 
+		}
+		female_names = {
+			Latesh Luka Yimi
+		}
+		dynasty_names = {
+			Halin Milomoti Uanadi Siba Galchhar
 		}
 	}
 }
@@ -1021,67 +1034,6 @@ Yomtanian = { # unfinished
 		}
 	}
 }
-#############################
-Toman_C = { #Localise
-    #country = { has_banners = 1}
-	#province = { local_has_banners = 1}
-	Costoman = {
-		male_names = {
-            Garos Costian Terk Zeon Genrosh Wiron Shir Wesor Dosair Ollos Soldon Rellow Nasarius Saunsum Alkan Wellron
-        }	
-        female_names = {
-            Sirva Kira Melia Finia Menea Elena Emeria Mila Shera Nellia Sarah Lea Pina Raenys Mara Zulla Saera Vilia Costia
-        }
-        dynasty_names = {
-            "of Lykat" "of Torair" "of Jeskon" "of Ilgs" Wystron Eggel Gastiman Selwys Orgato Wombas Istrox Wetiske Velganon "of Pind" "of Cert" "of Kastras" Eswick Handil
-        }
-	}
-    Krastoman = {
-		male_names = {
-        	Garos Terk Zeon Genrosh Wiron Shir Wesor Dosair Ollos Soldon Rellow Nasarius Saunsum Alkan Wellron
-        }
-        female_names = {
-         	Sirva Kira Melia Finia Menea Elena Emeria Mila Shera Nellia Sarah Lea Pina Raenys Mara Zulla Saera Vilia
-        }
-        dynasty_names = {
-        	"of Lykat" "of Torair" "of Jeskon" "of Ilgs" Wystron Eggel Gastiman Selwys Orgato Wombas Istrox Wetiske Velganon "of Pind" "of Cert" "of Kastras" Eswick Handil
-        }
-	}
-    Hantoman = {
-		male_names = {
-        	Garos Terk Zeon Genrosh Wiron Shir Wesor Dosair Ollos Soldon Rellow Nasarius Saunsum Alkan Wellron
-        }
-        female_names = {
-         	"Sirva Kira Melia Finia Menea Elena Emeria Mila Shera Nellia Sarah Lea Pina Raenys Mara Zulla Saera Vilia
-        }
-        dynasty_names = {
-         	"of Lykat" "of Torair" "of Jeskon" "of Ilgs" Wystron Eggel Gastiman Selwys Orgato Wombas Istrox Wetiske Velganon "of Pind" "of Cert" "of Kastras" Eswick Handil
-        }
-	}
-    Gabotoman = {
-		male_names = {
-        	Garos Terk Zeon Genrosh Wiron Shir Wesor Dosair Ollos Soldon Rellow Nasarius Saunsum Alkan Wellron
-        }
-        female_names = {
-        	Sirva Kira Melia Finia Menea Elena Emeria Mila Shera Nellia Sarah Lea Pina Raenys Mara Zulla Saera Vilia
-        }
-        dynasty_names = {
-        	"of Lykat" "of Torair" "of Jeskon" "of Ilgs" Wystron Eggel Gastiman Selwys Orgato Wombas Istrox Wetiske Velganon "of Pind" "of Cert" "of Kastras" Eswick Handil
-        }
-	}
-    Liblatoman = {
-		male_names = {
-            Garos Terk Zeon Genrosh Wiron Shir Wesor Dosair Ollos Soldon Rellow Nasarius Saunsum Alkan Wellron
-        }
-        female_names = {
-        	Sirva Kira Melia Finia Menea Elena Emeria Mila Shera Nellia Sarah Lea Pina Raenys Mara Zulla Saera Vilia
-        }
-        dynasty_names = {
-        	"of Lykat" "of Torair" "of Jeskon" "of Ilgs" Wystron Eggel Gastiman Selwys Orgato Wombas Istrox Wetiske Velganon "of Pind" "of Cert" "of Kastras" Eswick Handil
-        }
-	}
-}
-#############################
 Qamoni = {
     #country = { has_banners = 1}
 	#province = { local_has_banners = 1} (what the fuck is this)
@@ -1197,3 +1149,64 @@ Voychon = {
         }
 	}
 }
+#############################
+Toman_C = { #Localise
+    #country = { has_banners = 1}
+	#province = { local_has_banners = 1}
+	Costoman = {
+		male_names = {
+            Garos Costian Terk Zeon Genrosh Wiron Shir Wesor Dosair Ollos Soldon Rellow Nasarius Saunsum Alkan Wellron
+        }	
+        female_names = {
+            Sirva Kira Melia Finia Menea Elena Emeria Mila Shera Nellia Sarah Lea Pina Raenys Mara Zulla Saera Vilia Costia
+        }
+        dynasty_names = {
+            "of Lykat" "of Torair" "of Jeskon" "of Ilgs" Wystron Eggel Gastiman Selwys Orgato Wombas Istrox Wetiske Velganon "of Pind" "of Cert" "of Kastras" Eswick Handil
+        }
+	}
+    Krastoman = {
+		male_names = {
+        	Garos Terk Zeon Genrosh Wiron Shir Wesor Dosair Ollos Soldon Rellow Nasarius Saunsum Alkan Wellron
+        }
+        female_names = {
+         	Sirva Kira Melia Finia Menea Elena Emeria Mila Shera Nellia Sarah Lea Pina Raenys Mara Zulla Saera Vilia
+        }
+        dynasty_names = {
+        	"of Lykat" "of Torair" "of Jeskon" "of Ilgs" Wystron Eggel Gastiman Selwys Orgato Wombas Istrox Wetiske Velganon "of Pind" "of Cert" "of Kastras" Eswick Handil
+        }
+	}
+    Hantoman = {
+		male_names = {
+        	Garos Terk Zeon Genrosh Wiron Shir Wesor Dosair Ollos Soldon Rellow Nasarius Saunsum Alkan Wellron
+        }
+        female_names = {
+         	"Sirva Kira Melia Finia Menea Elena Emeria Mila Shera Nellia Sarah Lea Pina Raenys Mara Zulla Saera Vilia
+        }
+        dynasty_names = {
+         	"of Lykat" "of Torair" "of Jeskon" "of Ilgs" Wystron Eggel Gastiman Selwys Orgato Wombas Istrox Wetiske Velganon "of Pind" "of Cert" "of Kastras" Eswick Handil
+        }
+	}
+    Gabotoman = {
+		male_names = {
+        	Garos Terk Zeon Genrosh Wiron Shir Wesor Dosair Ollos Soldon Rellow Nasarius Saunsum Alkan Wellron
+        }
+        female_names = {
+        	Sirva Kira Melia Finia Menea Elena Emeria Mila Shera Nellia Sarah Lea Pina Raenys Mara Zulla Saera Vilia
+        }
+        dynasty_names = {
+        	"of Lykat" "of Torair" "of Jeskon" "of Ilgs" Wystron Eggel Gastiman Selwys Orgato Wombas Istrox Wetiske Velganon "of Pind" "of Cert" "of Kastras" Eswick Handil
+        }
+	}
+    Liblatoman = {
+		male_names = {
+            Garos Terk Zeon Genrosh Wiron Shir Wesor Dosair Ollos Soldon Rellow Nasarius Saunsum Alkan Wellron
+        }
+        female_names = {
+        	Sirva Kira Melia Finia Menea Elena Emeria Mila Shera Nellia Sarah Lea Pina Raenys Mara Zulla Saera Vilia
+        }
+        dynasty_names = {
+        	"of Lykat" "of Torair" "of Jeskon" "of Ilgs" Wystron Eggel Gastiman Selwys Orgato Wombas Istrox Wetiske Velganon "of Pind" "of Cert" "of Kastras" Eswick Handil
+        }
+	}
+}
+#############################
