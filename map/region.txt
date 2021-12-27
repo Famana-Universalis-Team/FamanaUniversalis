@@ -14,9 +14,15 @@ gomic_region = {
 	}
 }
 
-########################################
-# EUROPE                               #
-########################################
+north_great_sea_region = {
+	areas = {
+		ordic_sea
+		vamanyan_sea
+		olivinar_sea
+	}
+}
+
+# Land Regions
 
 outer_region = {
 	areas = {
@@ -109,12 +115,12 @@ eastern_desert_region = {
 		unnamed_area_11
 		ropinver_area
 		diam_area
+		unnamed_area_12
 	}
 }
 
 jasua_region = {
 	areas = {
-		unnamed_area_12
 		unnamed_area_13
 		kinvirel_area
 		unnamed_area_31
@@ -125,7 +131,6 @@ jasua_region = {
 		unnamed_area_47
 		unnamed_area_48
 		unnamed_area_34
-		unnamed_area_46
 		geter_area
 	}
 }
@@ -225,6 +230,7 @@ kapolia_region = {
 		unnamed_area_33
 		unnamed_area_32
 		unnamed_area_52
+		unnamed_area_56
 	}
 }
 
@@ -284,6 +290,7 @@ aresia_region = {
 		borlebim_area
 		jiat_area
 		govrrol_area
+		verko_area
 	}
 }
 
