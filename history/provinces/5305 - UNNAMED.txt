@@ -1,18 +1,8 @@
-culture = Walaran
-religion = lathvy
-owner = PPX
-controller = PPX
-add_core = PPX
-
-###
-
 hre = no
-discovered_by = western
-base_tax = 2
-base_production = 3
-trade_goods = wool
-base_manpower = 2
+base_tax = 1
+base_production = 1
+trade_goods = grain
+base_manpower = 1
 capital = "UNNAMED"
 is_city = no
 extra_cost = 1
-

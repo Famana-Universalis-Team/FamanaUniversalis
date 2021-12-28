@@ -14,9 +14,15 @@ gomic_region = {
 	}
 }
 
-########################################
-# EUROPE                               #
-########################################
+north_great_sea_region = {
+	areas = {
+		ordic_sea
+		vamanyan_sea
+		olivinar_sea
+	}
+}
+
+# Land Regions
 
 outer_region = {
 	areas = {
@@ -60,6 +66,7 @@ lower_oppia_region = {
 		mesdool_area
 		elorak_area
 		fazalep_area
+		mesdool_area
 	}
 }
 
@@ -71,7 +78,7 @@ arlenta_region = {
 		unnamed_area_7
 		unnamed_area_8
 		zne_area
-		mesdool_area
+		sosne_area
 	}
 }
 
@@ -82,7 +89,6 @@ maky_region = {
 		okus_area
 		unnamed_area_9
 		bava_area
-		kars_area
 	}
 }
 
@@ -96,17 +102,25 @@ south_xalia_region = {
 	}
 }
 
+upper_makyna_region = {
+	areas = {
+		kars_area
+	}
+}
+
 eastern_desert_region = {
 	areas = {
 		hoxoi_area
 		mahansha_area
 		unnamed_area_11
+		ropinver_area
+		diam_area
+		unnamed_area_12
 	}
 }
 
 jasua_region = {
 	areas = {
-		unnamed_area_12
 		unnamed_area_13
 		kinvirel_area
 		unnamed_area_31
@@ -117,7 +131,7 @@ jasua_region = {
 		unnamed_area_47
 		unnamed_area_48
 		unnamed_area_34
-		unnamed_area_46
+		geter_area
 	}
 }
 
@@ -138,6 +152,7 @@ west_estal_region = {
 		northern_umzat
 		west_feniki
 		hasia_area
+		revdirom_area
 	}
 }
 
@@ -198,6 +213,11 @@ emastalia_region = {
 		morla_area
 		poxa_area
 		vava_area
+		nopatle_area
+		unsets_area
+		unnamed_area_53
+		unnamed_area_54
+		unnamed_area_55
 	}
 }
 
@@ -209,6 +229,8 @@ kapolia_region = {
 		unnamed_area_30
 		unnamed_area_33
 		unnamed_area_32
+		unnamed_area_52
+		unnamed_area_56
 	}
 }
 
@@ -266,6 +288,9 @@ aresia_region = {
 		nikat_area
 		north_nakoa_area
 		borlebim_area
+		jiat_area
+		govrrol_area
+		verko_area
 	}
 }
 

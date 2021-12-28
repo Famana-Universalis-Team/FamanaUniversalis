@@ -948,12 +948,6 @@ country_decisions = {
 				}
 				add_permanent_claim = MOX
 			}
-			unnamed_area_29 = {
-				limit = {
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = MOX
-			}
 			add_prestige = 25
 		}
 		ai_will_do = {
