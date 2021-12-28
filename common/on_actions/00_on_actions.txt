@@ -2573,12 +2573,12 @@ on_thri_yearly_pulse = {
 
 on_thri_yearly_pulse_2 = {
 	random_events = {
-		# Random to increase or decrease patriarch authority.
-		25 = orthodox_flavor.1
-		20 = orthodox_flavor.2
-		25 = orthodox_flavor.3
-		25 = orthodox_flavor.4
-		25 = orthodox_flavor.5
+		# Random to increase or decrease decadence.
+		25 = aresian_dec.1
+		20 = aresian_dec.2
+		25 = aresian_dec.3
+		25 = aresian_dec.4
+		25 = aresian_dec.5
 
 		
 		
