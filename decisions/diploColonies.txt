@@ -7,6 +7,7 @@ country_decisions = {
 			}
 			dip_tech = 6
 			OR = {
+				owns_core_province = 5728
 				owns_core_province = 5530
 				owns_core_province = 5538
 				owns_core_province = 5539
@@ -22,13 +23,7 @@ country_decisions = {
 			}
 		}
 		provinces_to_highlight = {
-			OR = {
-				area = borlebim_area
-			}
-			OR = {
-				NOT = { owned_by = ROOT }
-				is_city = no
-			}
+			area = borlebim_area
 		}
 		allow = {
 			dip_tech = 9
