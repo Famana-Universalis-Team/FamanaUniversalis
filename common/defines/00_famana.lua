@@ -3,7 +3,7 @@
 -- NDefines.NDiplomacy.MAX_CLIENT_STATES = 20
 
 NDefines.NGame.START_DATE = "212.6.6"
-NDefines.NGame.END_DATE = "2639.11.25" --please fix, this is just for timelapses
+NDefines.NGame.END_DATE = "639.11.25"
 NDefines.NGame.MAX_RANDOM_NEW_WORLD = "1.1.1"
 
 NDefines.NReligion.MAX_OPPIAN_RELIGIOUS_CENTERS = 3
