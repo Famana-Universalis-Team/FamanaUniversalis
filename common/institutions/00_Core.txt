@@ -17,26 +17,37 @@
 feudalism = {
 
 	bonus = {
-		free_leader_pool = 1
+		production_efficiency = 0.1
 	}
 
 	trade_company_efficiency = 0.2
 
 
 	history = {
-		is_year = 100
-		OR = {
-			culture_group = Oppian
-			culture_group = Makyna
-			culture_group = Eastern_Oppian
-			culture_group = Jasuan
-			culture_group = Pextoglazian
-			culture_group = Xalian
+		is_year = 13
+		AND = {
+			NOT = {
+				government = tribal
+			}
+			OR = {
 			culture_group = Maxan
-			culture_group = Nafan
-			culture_group = Eastern_Estali
+			culture_group = Emastalian
+			culture_group = Makyna
 			culture_group = North_West_Antebari
-			culture_group = PLACEHOLDER_C
+			culture_group = Pextoglazian
+			culture_group = Jasuan
+			culture_group = Oppian
+			culture_group = Hoxoi
+			culture_group = Geopyopian
+			culture_group = Xalian
+			culture_group = Vanoman
+			culture_group = Aresian_C
+			culture_group = Nafan
+			culture_group = Ordic
+			culture_group = Komelwaiti
+			culture_group = Qamon
+			culture_group = Toman_C
+			}
 		}
 	}
 	
