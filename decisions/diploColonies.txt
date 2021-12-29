@@ -12,6 +12,10 @@ country_decisions = {
 				owns_core_province = 5538
 				owns_core_province = 5539
 				owns_core_province = 5730
+				owns_core_province = 5729
+				owns_core_province = 5727
+				owns_core_province = 5627
+				owns_core_province = 5617
 			}
 			NOT = {
 				AND = {
@@ -29,7 +33,7 @@ country_decisions = {
 			dip_tech = 9
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
-			treasury = 450
+			mil_power = 100
 		}
 		effect = {
 			borlebim_area = {
@@ -38,7 +42,7 @@ country_decisions = {
 				}
 				create_colony_mission_reward_province = { country = ROOT }
 				ROOT = {
-					add_treasury = -150
+					add_mil_power = -25
 				}
 			}
 		}
@@ -46,7 +50,7 @@ country_decisions = {
 			factor = 1
 		}
 	}
-	colonize_riximi = {
+	conquer_riximi = {
 		potential = {
 			riximi_area = {
 				is_empty = yes
@@ -55,6 +59,11 @@ country_decisions = {
 			OR = {
 				owns_core_province = 5561
 				owns_core_province = 5354
+				owns_core_province = 5562
+				owns_core_province = 5810
+				owns_core_province = 5559
+				owns_core_province = 5793
+				owns_core_province = 5560
 			}
 			NOT = {
 				AND = {
@@ -78,7 +87,7 @@ country_decisions = {
 			dip_tech = 5
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
-			treasury = 450
+			mil_power = 150
 		}
 		effect = {
 			riximi_area = {
@@ -87,7 +96,7 @@ country_decisions = {
 				}
 				create_colony_mission_reward_province = { country = ROOT }
 				ROOT = {
-					add_treasury = -150
+					add_mil_power = -50
 				}
 			}
 		}
@@ -286,13 +295,13 @@ country_decisions = {
 			dip_tech = 14
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
-			treasury = 150
+			treasury = 100
 		}
 		effect = {
 			5015 = {
 				create_colony_mission_reward_province = { country = ROOT }
 			}
-			add_treasury = -150
+			add_treasury = -100
 		}
 		ai_will_do = {
 			factor = 1
@@ -325,13 +334,13 @@ country_decisions = {
 			dip_tech = 14
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
-			treasury = 150
+			treasury = 100
 		}
 		effect = {
 			5014 = {
 				create_colony_mission_reward_province = { country = ROOT }
 			}
-			add_treasury = -150
+			add_treasury = -100
 		}
 		ai_will_do = {
 			factor = 1
@@ -364,13 +373,13 @@ country_decisions = {
 			dip_tech = 14
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
-			treasury = 150
+			treasury = 100
 		}
 		effect = {
 			5013 = {
 				create_colony_mission_reward_province = { country = ROOT }
 			}
-			add_treasury = -150
+			add_treasury = -100
 		}
 		ai_will_do = {
 			factor = 1
@@ -472,7 +481,7 @@ country_decisions = {
 			dip_tech = 18
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
-			treasury = 150
+			treasury = 100
 		}
 		effect = {
 			vaximor_area = {
@@ -481,7 +490,7 @@ country_decisions = {
 				}
 				create_colony_mission_reward_province = { country = ROOT }
 				ROOT = {
-					add_treasury = -150
+					add_treasury = -100
 				}
 			}
 		}
@@ -513,7 +522,7 @@ country_decisions = {
 			dip_tech = 18
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
-			treasury = 150
+			treasury = 100
 		}
 		effect = {
 			okus_area = {
@@ -522,7 +531,7 @@ country_decisions = {
 				}
 				create_colony_mission_reward_province = { country = ROOT }
 				ROOT = {
-					add_treasury = -150
+					add_treasury = -100
 				}
 			}
 		}
