@@ -930,12 +930,6 @@ country_decisions = {
 				}
 				add_permanent_claim = MOX
 			}
-			emastalia_region = {
-				limit = {
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = MOX
-			}
 			kachik_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
