@@ -442,7 +442,8 @@ country_decisions = {
 			dip_tech = 8
 			OR = {
 				owns_core_province = 5181
-				owns_core_province = 5183
+				owns_core_province = 5184
+				owns_core_province = 5186
 				owns_core_province = 5187
 			}
 		}
@@ -473,7 +474,10 @@ country_decisions = {
 			dip_tech = 15
 			OR = {
 				owns_core_province = 5137
+				owns_core_province = 5138
+				owns_core_province = 5142
 				owns_core_province = 5556
+				owns_core_province = 5557
 			}
 		}
 		provinces_to_highlight = {
@@ -489,16 +493,16 @@ country_decisions = {
 			dip_tech = 18
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
-			treasury = 100
+			mil_power = 100
 		}
 		effect = {
 			vaximor_area = {
 				limit = {
 					is_empty = yes
 				}
-				create_colony_mission_reward_province = { country = ROOT }
+				cede_province = ROOT
 				ROOT = {
-					add_treasury = -100
+					add_mil_power = -50
 				}
 			}
 		}
@@ -513,8 +517,10 @@ country_decisions = {
 			}
 			dip_tech = 15
 			OR = {
-				owns_core_province = 5142
-				owns_core_province = 5557
+				owns_core_province = 5149
+				owns_core_province = 5150
+				owns_core_province = 5813
+				owns_core_province = 5814
 			}
 		}
 		provinces_to_highlight = {
@@ -537,7 +543,7 @@ country_decisions = {
 				limit = {
 					is_empty = yes
 				}
-				create_colony_mission_reward_province = { country = ROOT }
+				cede_province = ROOT
 				ROOT = {
 					add_treasury = -100
 				}
@@ -556,6 +562,9 @@ country_decisions = {
 			OR = {
 				owns_core_province = 5583
 				owns_core_province = 5492
+				owns_core_province = 5582
+				owns_core_province = 5794
+				owns_core_province = 5584
 			}
 		}
 		provinces_to_highlight = {
@@ -571,16 +580,16 @@ country_decisions = {
 			dip_tech = 12
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
-			mil_power = 50
+			mil_power = 25
 		}
 		effect = {
 			vava_area = {
 				limit = {
 					is_empty = yes
 				}
-				cede_province = ROOT
+				create_colony_mission_reward_province = { country = ROOT }
 				ROOT = {
-					add_mil_power = -50
+					add_mil_power = -25
 				}
 			}
 		}
