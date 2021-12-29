@@ -94,7 +94,7 @@ country_decisions = {
 				limit = {
 					is_empty = yes
 				}
-				create_colony_mission_reward_province = { country = ROOT }
+				cede_province = ROOT
 				ROOT = {
 					add_mil_power = -50
 				}
@@ -111,9 +111,17 @@ country_decisions = {
 			}
 			dip_tech = 8
 			OR = {
+				owns_core_province = 5024
+				owns_core_province = 5025
 				owns_core_province = 5027
 				owns_core_province = 5030
+				owns_core_province = 5031
 				owns_core_province = 5274
+				owns_core_province = 5269
+				owns_core_province = 5270
+				owns_core_province = 5272
+				owns_core_province = 5271
+				owns_core_province = 5273
 			}
 		}
 		provinces_to_highlight = {
@@ -129,7 +137,7 @@ country_decisions = {
 			dip_tech = 11
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
-			mil_power = 250
+			mil_power = 125
 		}
 		effect = {
 			unnamed_area_23 = {
@@ -138,7 +146,7 @@ country_decisions = {
 				}
 				cede_province = ROOT
 				ROOT = {
-					add_mil_power = -50
+					add_mil_power = -25
 				}
 			}
 		}
