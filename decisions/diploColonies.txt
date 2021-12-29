@@ -564,7 +564,7 @@ country_decisions = {
 			vava_area = {
 				is_empty = yes
 			}
-			dip_tech = 9
+			dip_tech = 6
 			OR = {
 				owns_core_province = 5583
 				owns_core_province = 5492
@@ -583,7 +583,7 @@ country_decisions = {
 			}
 		}
 		allow = {
-			dip_tech = 12
+			dip_tech = 9
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
 			mil_power = 25
@@ -594,6 +594,103 @@ country_decisions = {
 					is_empty = yes
 				}
 				create_colony_mission_reward_province = { country = ROOT }
+				ROOT = {
+					add_mil_power = -25
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	conquer_unnamed_area_54 = {
+		potential = {
+			vava_area = {
+				is_empty = yes
+			}
+			dip_tech = 1
+			OR = {
+				owns_core_province = 5799
+				owns_core_province = 5571
+				owns_core_province = 5572
+				owns_core_province = 5574
+				owns_core_province = 5576
+				owns_core_province = 5696
+				owns_core_province = 5795
+				owns_core_province = 5796
+				owns_core_province = 5797
+				owns_core_province = 5798
+				owns_core_province = 5707
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = unnamed_area_54
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				is_city = no
+			}
+		}
+		allow = {
+			dip_tech = 4
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			mil_power = 100
+		}
+		effect = {
+			unnamed_area_54 = {
+				limit = {
+					is_empty = yes
+				}
+				create_colony_mission_reward_province = { country = ROOT }
+				ROOT = {
+					add_mil_power = -25
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	conquer_durra = {
+		potential = {
+			durra_area = {
+				is_empty = yes
+			}
+			dip_tech = 1
+			OR = {
+				owns_core_province = 5565
+				owns_core_province = 5566
+				owns_core_province = 5567
+				owns_core_province = 5804
+				owns_core_province = 5806
+				owns_core_province = 5809
+				owns_core_province = 5808
+				owns_core_province = 5807
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = vava_area
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				is_city = no
+			}
+		}
+		allow = {
+			dip_tech = 4
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			mil_power = 75
+		}
+		effect = {
+			durra_area = {
+				limit = {
+					is_empty = yes
+				}
+				cede_province = ROOT
 				ROOT = {
 					add_mil_power = -25
 				}
