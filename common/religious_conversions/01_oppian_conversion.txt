@@ -28,23 +28,12 @@ oppian_center_of_reformation = {
 		}
 		modifier = {
 			factor = 0
-			province_religion = lathvy
-		}
-		modifier = {
-			factor = 0
-			province_religion = tonmo
-		}
-		modifier = {
-			factor = 0
-			province_religion = animism
-		}
-		modifier = {
-			factor = 2
-			province_religion = bamali
-		}
-		modifier = {
-			factor = 2
-			province_religion = egr
+			NOT = {
+				OR = {
+					province_religion = western_oppian
+					province_religion = eastern_oppian
+				}
+			}
 		}
 		modifier = {
 			factor = 2

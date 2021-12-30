@@ -64,6 +64,7 @@
  reformed_oppian_rebels_name:0 "$RELIGION$ Zealots"
  reformed_oppian_rebels_desc:0 "Religious fanatics tend to rise up in provinces controlled by nations of a different faith. They seek to spread their faith and smite all unbelievers."
  reformed_oppian_rebels_army:0 "$RELIGION$ Army"
+ oppian_center_of_reformation:0 "Oppian Center of Reformation"
 
  eastern_oppian_rebels_demand:0 "Convert $COUNTRYNAME$"
  eastern_oppian_rebels_demand_desc:0 "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
@@ -257,6 +258,8 @@
  pawani_rebels_name:0 "$RELIGION$ Zealots"
  pawani_rebels_desc:0 "Religious fanatics tend to rise up in provinces controlled by nations of a different faith. They seek to spread their faith and smite all unbelievers."
  pawani_rebels_army:0 "$RELIGION$ Army"
+ _LONG:0 "Aspect of Faith"
+ _SHORT:0 "Aspect"
 
  myth_of_asura_aspect:0 "Myth of Asura"
  desc_myth_of_asura_aspect:0 "Asura is the dragon of merchants and the guardian of traders and travelers. It is said that Asura is the one who blows the strongest winds to help worthy ones on their journeys."
@@ -391,9 +394,9 @@
  polokist:0 "Polokist"
  gastorist:0 "Gastorist"
 
- fervor_trade:0 "Nivolo is one of the lesser Makyan Gods, the only one powerful enough to recieve one of the two moon as his celestial object. Makyan Priests refer to him for his sly personality in matters of trade and espionage."
+ fervor_trade:0 "Nivolo is one of the lesser Makyan Gods, the only one powerful enough to recieve one of the two moon as his celestial object. Makyan Priests refer to him for his sly personality in matters of trade and espionage"
  fervor_trade_short:0 "Nivolo"
- fervor_war:0 "Um is the main God of the Makyan religion, thought to be the Sun. He oversees the Makyan people, and will guide them through history."
+ fervor_war:0 "Um is the main God of the Makyan religion, thought to be the Sun. He oversees the Makyan people, and will guide them through history"
  fervor_war_short:0 "Um"
  fervor_stability:0 "Halogan is the main servant of Um, represented by a moon. It is to him that Makyans call to help with military matters"
  fervor_stability_short:0 "Halogan"

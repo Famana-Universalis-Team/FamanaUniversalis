@@ -63,9 +63,10 @@ yomtanian_nation = {
     development_cost = 0.10
     land_forcelimit_modifier = -0.35
     land_morale = 0.33
-    shock_damage = 0.25
+    shock_damage = 0.50
     shock_damage_received = -0.50
-    fire_damage_received = 0.50
+    fire_damage_received = 0.25
     cavalry_power = -1.00
+    artillery_power = -0.50
     reinforce_speed = -0.50
 }

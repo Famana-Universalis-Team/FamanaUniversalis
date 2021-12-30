@@ -543,7 +543,9 @@ country_event = { #DIE ALREADY
 					add_unrest = 10
 				}
 			}
-			release_all_subjects = yes
+			ROOT = {
+				release_all_subjects = yes
+			}
 			log = "trolloglazia"
 		}
 	}

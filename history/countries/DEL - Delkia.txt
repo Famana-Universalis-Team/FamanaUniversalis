@@ -3,6 +3,7 @@ add_government_reform = autocracy_reform
 government_rank = 2
 mercantilism = 15
 technology_group = western
+historical_friend = MSH
 religion = delkian
 primary_culture = Delkian_C
 capital = 5167	# change to real capital
@@ -10,9 +11,10 @@ capital = 5167	# change to real capital
 200.1.1 = { #change to 200 or smth
 	monarch = {
 		name = "Regency"
+		dynasty = "Regency"
+		birth_date = 199.12.12
 		adm = 3
 		dip = 3
 		mil = 3
-		regent = yes
 	}
 }
