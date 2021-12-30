@@ -11,9 +11,10 @@ religious_school = maxan_school
 200.1.1 = { #change to 200 or smth
 	monarch = {
 		name = "Bamal"
-		dynasty = "Dramra"
 		adm = 1
 		dip = 2
 		mil = 3
+		dynasty = "Dramra"
+		birth_date = 193.4.23
 	}
 }

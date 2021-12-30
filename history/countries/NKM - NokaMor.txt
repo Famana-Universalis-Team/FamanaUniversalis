@@ -4,17 +4,16 @@ government_rank = 2
 mercantilism = 10
 technology_group = western
 religion = shirian
-primary_culture = Glasian
+primary_culture = Pawani_C
 capital = 5552	# change to real capital
-add_accepted_culture = Pawani_C
 
 200.1.1 = { #change to 200 or smth
 	monarch = {
-		name = "Regency"
-		dynasty = "Regency"
-		birth_date = 199.12.12
-		adm = 3
-		dip = 3
-		mil = 3
+		name = "Goluo"
+		dynasty = "Agixad"
+		birth_date = 180.7.18
+		adm = 1
+		dip = 2
+		mil = 2
 	}
 }

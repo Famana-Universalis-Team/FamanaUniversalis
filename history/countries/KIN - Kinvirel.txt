@@ -11,13 +11,13 @@ historical_rival = AGX
 capital = 5196	# change to real capital
 secondary_religion = lathvy
 
-200.1.1 = { #change to 200 or smth
+210.1.1 = { #change to 200 or smth
 	monarch = {
-		name = "Regency"
-		dynasty = "Regency"
-		birth_date = 199.12.12
-		adm = 3
-		dip = 3
-		mil = 3
+		name = "Fellares"
+		dynasty = "Tinu"
+		birth_date = 162.9.6
+		adm = 0
+		dip = 4
+		mil = 5
 	}
 }

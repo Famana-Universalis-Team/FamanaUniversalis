@@ -9,12 +9,13 @@ capital = 5039	# change to real capital
 historical_rival = TCK
 historical_friend = KEP
 
-1420.1.1 = { #change to 194
+194.7.6 = { #change to 194
 	monarch = {
 		name = "Sarian"
 		adm = 3
-		dip = 3
-		mil = 3
+		dip = 2
+		mil = 4
 		dynasty = "Kilia"
+		birth_date = 180.5.14
 	}
 }
