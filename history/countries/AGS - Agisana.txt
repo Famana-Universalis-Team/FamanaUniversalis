@@ -3,16 +3,16 @@ add_government_reform = autocracy_reform
 government_rank = 1
 mercantilism = 10
 technology_group = western
-religion = delkian
-primary_culture = Delkian_C
+religion = vinian
+primary_culture = Sixany
 capital = 5455	# change to real capital
 
 200.1.1 = { #change to 200 or smth
 	monarch = {
-		name = "Regency"
+		name = "Nidro"
+		dynasty = "Placeholder"
 		adm = 3
 		dip = 3
 		mil = 3
-		regent = yes
 	}
 }

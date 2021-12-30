@@ -5,14 +5,15 @@ mercantilism = 10
 technology_group = western
 religion = gadan
 primary_culture = Makyan_C
-capital = 5154	# change to real capital
+capital = 5153	# change to real capital
 
 200.1.1 = { #change to 200 or smth
 	monarch = {
 		name = "Regency"
+		dynasty = "Regency"
+		birth_date = 199.12.12
 		adm = 3
 		dip = 3
 		mil = 3
-		regent = yes
 	}
 }
