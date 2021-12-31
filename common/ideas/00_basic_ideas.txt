@@ -320,9 +320,12 @@ religious_ideas = {
 		}
 		modifier = {
 			factor = 10
-			OR = {
-				tag = LAG
-				tag = RES
+			AND = {
+				is_year = 250
+				OR = {
+					tag = LAG
+					tag = RES
+				}
 			}
 		}
 	}

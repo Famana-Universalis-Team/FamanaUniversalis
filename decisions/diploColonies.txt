@@ -296,8 +296,6 @@ country_decisions = {
 				owns_core_province = 5017
 				owns_core_province = 5253
 				owns_core_province = 5694
-				owns_core_province = 5549
-				owns_core_province = 5547
 				owns_core_province = 5263
 			}
 		}
@@ -335,8 +333,6 @@ country_decisions = {
 				owns_core_province = 5017
 				owns_core_province = 5253
 				owns_core_province = 5694
-				owns_core_province = 5549
-				owns_core_province = 5547
 				owns_core_province = 5263
 			}
 		}
@@ -374,8 +370,6 @@ country_decisions = {
 				owns_core_province = 5017
 				owns_core_province = 5253
 				owns_core_province = 5694
-				owns_core_province = 5549
-				owns_core_province = 5547
 				owns_core_province = 5263
 			}
 		}
@@ -653,6 +647,57 @@ country_decisions = {
 			factor = 1
 		}
 	}
+	conquer_unnamed_area_55 = {
+		potential = {
+			vava_area = {
+				is_empty = yes
+			}
+			dip_tech = 4
+			OR = {
+				owns_core_province = 5797
+				owns_core_province = 5796
+				owns_core_province = 5576
+				owns_core_province = 5578
+				owns_core_province = 5580
+				owns_core_province = 5582
+				owns_core_province = 5584
+				owns_core_province = 5794
+				owns_core_province = 5293
+				owns_core_province = 5696
+				owns_core_province = 5291
+				owns_core_province = 5795
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = unnamed_area_55
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				is_city = no
+			}
+		}
+		allow = {
+			dip_tech = 7
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			mil_power = 125
+		}
+		effect = {
+			unnamed_area_55 = {
+				limit = {
+					is_empty = yes
+				}
+				create_colony_mission_reward_province = { country = ROOT }
+				ROOT = {
+					add_mil_power = -25
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
 	conquer_durra = {
 		potential = {
 			durra_area = {
@@ -672,7 +717,7 @@ country_decisions = {
 		}
 		provinces_to_highlight = {
 			OR = {
-				area = vava_area
+				area = durra_area
 			}
 			OR = {
 				NOT = { owned_by = ROOT }
@@ -687,6 +732,102 @@ country_decisions = {
 		}
 		effect = {
 			durra_area = {
+				limit = {
+					is_empty = yes
+				}
+				cede_province = ROOT
+				ROOT = {
+					add_mil_power = -25
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	conquer_unnamed_area_53 = {
+		potential = {
+			unnamed_area_53 = {
+				is_empty = yes
+			}
+			dip_tech = 1
+			OR = {
+				owns_core_province = 5807
+				owns_core_province = 5568
+				owns_core_province = 5569
+				owns_core_province = 5570
+				owns_core_province = 5571
+				owns_core_province = 5707
+				owns_core_province = 5799
+				owns_core_province = 5800
+				owns_core_province = 5802
+				owns_core_province = 5804
+				owns_core_province = 5803
+				owns_core_province = 5806
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = unnamed_area_53
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				is_city = no
+			}
+		}
+		allow = {
+			dip_tech = 4
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			mil_power = 150
+		}
+		effect = {
+			unnamed_area_53 = {
+				limit = {
+					is_empty = yes
+				}
+				cede_province = ROOT
+				ROOT = {
+					add_mil_power = -25
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	conquer_nopatle_area = {
+		potential = {
+			nopatle_area = {
+				is_empty = yes
+			}
+			dip_tech = 2
+			OR = {
+				owns_core_province = 5559
+				owns_core_province = 5562
+				owns_core_province = 5563
+				owns_core_province = 5564
+				owns_core_province = 5821
+				owns_core_province = 5810
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = nopatle_area
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				is_city = no
+			}
+		}
+		allow = {
+			dip_tech = 5
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			mil_power = 75
+		}
+		effect = {
+			nopatle_area = {
 				limit = {
 					is_empty = yes
 				}
