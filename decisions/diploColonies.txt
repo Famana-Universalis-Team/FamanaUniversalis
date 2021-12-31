@@ -95,6 +95,7 @@ country_decisions = {
 					is_empty = yes
 				}
 				cede_province = ROOT
+				change_religion	= ROOT
 				ROOT = {
 					add_mil_power = -50
 				}
@@ -145,6 +146,7 @@ country_decisions = {
 					is_empty = yes
 				}
 				cede_province = ROOT
+				change_religion	= ROOT
 				ROOT = {
 					add_mil_power = -25
 				}
@@ -192,6 +194,7 @@ country_decisions = {
 					is_empty = yes
 				}
 				cede_province = ROOT
+				change_religion	= ROOT
 				ROOT = {
 					add_mil_power = -25
 				}
@@ -232,6 +235,7 @@ country_decisions = {
 					is_empty = yes
 				}
 				cede_province = ROOT
+				change_religion	= ROOT
 				ROOT = {
 					add_mil_power = -50
 				}
@@ -425,6 +429,7 @@ country_decisions = {
 					is_empty = yes
 				}
 				cede_province = ROOT
+				change_religion	= ROOT
 				ROOT = {
 					add_mil_power = -50
 				}
@@ -459,6 +464,7 @@ country_decisions = {
 		effect = {
 			5184 = {
 				cede_province = ROOT
+				change_religion	= ROOT
 			}
 			add_mil_power = -50
 		}
@@ -501,6 +507,7 @@ country_decisions = {
 					is_empty = yes
 				}
 				cede_province = ROOT
+				change_religion	= ROOT
 				ROOT = {
 					add_mil_power = -50
 				}
@@ -536,7 +543,7 @@ country_decisions = {
 			dip_tech = 18
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
-			treasury = 100
+			mil_power = 50
 		}
 		effect = {
 			okus_area = {
@@ -544,8 +551,9 @@ country_decisions = {
 					is_empty = yes
 				}
 				cede_province = ROOT
+				change_religion	= ROOT
 				ROOT = {
-					add_treasury = -100
+					add_mil_power = -50
 				}
 			}
 		}
@@ -560,9 +568,9 @@ country_decisions = {
 			}
 			dip_tech = 6
 			OR = {
+				owns_core_province = 5582
 				owns_core_province = 5583
 				owns_core_province = 5492
-				owns_core_province = 5582
 				owns_core_province = 5794
 				owns_core_province = 5584
 			}
@@ -599,7 +607,7 @@ country_decisions = {
 	}
 	conquer_unnamed_area_54 = {
 		potential = {
-			vava_area = {
+			unnamed_area_54 = {
 				is_empty = yes
 			}
 			dip_tech = 1
@@ -630,7 +638,7 @@ country_decisions = {
 			dip_tech = 4
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
-			mil_power = 100
+			mil_power = 125
 		}
 		effect = {
 			unnamed_area_54 = {
@@ -649,7 +657,7 @@ country_decisions = {
 	}
 	conquer_unnamed_area_55 = {
 		potential = {
-			vava_area = {
+			unnamed_area_55 = {
 				is_empty = yes
 			}
 			dip_tech = 4
@@ -681,7 +689,7 @@ country_decisions = {
 			dip_tech = 7
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
-			mil_power = 125
+			mil_power = 100
 		}
 		effect = {
 			unnamed_area_55 = {
@@ -736,6 +744,7 @@ country_decisions = {
 					is_empty = yes
 				}
 				cede_province = ROOT
+				change_religion	= ROOT
 				ROOT = {
 					add_mil_power = -25
 				}
@@ -787,6 +796,7 @@ country_decisions = {
 					is_empty = yes
 				}
 				cede_province = ROOT
+				change_religion	= ROOT
 				ROOT = {
 					add_mil_power = -25
 				}
@@ -824,7 +834,7 @@ country_decisions = {
 			dip_tech = 5
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
-			mil_power = 75
+			mil_power = 50
 		}
 		effect = {
 			nopatle_area = {
@@ -832,6 +842,7 @@ country_decisions = {
 					is_empty = yes
 				}
 				cede_province = ROOT
+				change_religion	= ROOT
 				ROOT = {
 					add_mil_power = -25
 				}

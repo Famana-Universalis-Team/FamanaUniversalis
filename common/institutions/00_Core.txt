@@ -207,73 +207,28 @@ feudalism = {
 renaissance = {
 
 	bonus = {
-		development_cost = -0.05
-		build_cost = -0.05
+		tolerance_own = 1
 	}
 
 	trade_company_efficiency = 0.4
 
 
-	historical_start_date = 1450.1.1
-	historical_start_province = 116 # Florence
+	historical_start_date = 250.1.1
+	historical_start_province = 5337 # Pomlen
 
 	history = {
 		OR = {
 			AND = {
-				is_year = 1450
-				region = italy_region
+				is_year = 250
+				religion = lathvy
 			}
-			
-			AND = {
-				is_year = 1450
-				continent = europe
-			}
-			AND = {
-				is_year = 1500
-				owner = {
-					NOT = { technology_group = north_american }
-					NOT = { technology_group = mesoamerican }
-					NOT = { technology_group = south_american }
-					NOT = { technology_group = andean }
-				}
-				superregion = south_america_superregion
-			}
-			AND = {
-				is_year = 1500
-				owner = {
-					NOT = { technology_group = north_american }
-					NOT = { technology_group = mesoamerican }
-					NOT = { technology_group = south_american }
-					NOT = { technology_group = andean }
-				}
-				superregion = north_america_superregion
-			}
-			AND = {
-				is_year = 1500
-				owner = {
-					NOT = { technology_group = north_american }
-					NOT = { technology_group = mesoamerican }
-					NOT = { technology_group = south_american }
-					NOT = { technology_group = andean }
-				}
-				superregion = central_america_superregion
-			}
-			AND = {
-				is_year = 1600
-				continent = asia
-				owner = {
-					NOT = { government = tribal }
-				}
-			}
-			is_year = 1780
 		}
 	}
 	
 	can_start = {
-		is_year = 1450
-		region = italy_region
+		is_year = 250
+		religion = lathvy
 		is_state = yes
-		NOT = { province_id = 126 }
 		is_island = no
 		OR = {
 			development = 20
@@ -282,9 +237,6 @@ renaissance = {
 		}
 	}
 	start_chance = 5		#in 100 for when a province can_start
-	
-	
-	on_start = institution_events.2
 	
 	
 	
@@ -299,16 +251,6 @@ renaissance = {
 	
 	embracement_speed = {
 		modifier = {
-			scale = yes
-			factor = 0.6
-			custom_trigger_tooltip = {
-				tooltip = tooltip_any_friendly_coast_border_province_has_embraced_renaissance
-				any_friendly_coast_border_province = {
-					renaissance = 100
-				}
-			}
-		}
-		modifier = {
 			factor = 0.3
 			scale = yes
 			potential = {
@@ -318,102 +260,25 @@ renaissance = {
 					}
 				}
 			}
-			custom_trigger_tooltip = {
-				tooltip = tooltip_any_neighbor_has_embraced_renaissance
-				any_neighbor_province = {
-					NOT = { owned_by = ROOT }
-					renaissance = 100
-				}
-			}
 		}
 		modifier = {
 			factor = 1
 			potential = {
-				region = italy_region
-			}
-			custom_trigger_tooltip = {
-				tooltip = tooltip_italian_capital
-				is_capital = yes
-				region = italy_region
-				culture_group = latin
-			}
-			
-			
-		}
-		modifier = {
-			factor = 0.05
-			scale = yes
-			potential = {
-				continent = europe
-			}
-			custom_trigger_tooltip = {
-				tooltip = tooltip_development_10
-				continent = europe
-				development = 10
+				religion = lathvy
 			}
 		}
 		modifier = {
 			factor = 0.05
 			scale = yes
 			potential = {
-				continent = europe
-			}
-			custom_trigger_tooltip = {
-				tooltip = tooltip_development_20
-				development = 20
-				continent = europe
+				continent = estal
 			}
 		}
 		modifier = {
-			factor = 0.1
+			factor = 0.05
 			scale = yes
 			potential = {
-				continent = europe
-			}
-			custom_trigger_tooltip = {
-				tooltip = tooltip_development_5_post_1500
-				continent = europe
-				is_year = 1500
-				development = 5
-			}
-		}
-		modifier = {
-			factor = 0.5
-			scale = yes
-			potential = {
-				OR = {
-					area = flanders_area
-					area = tuscany_area
-					area = venetia_area
-				}
-			}
-			custom_trigger_tooltip = {
-				tooltip = tooltip_flanders_tuscany_venetia
-				OR = {
-					area = flanders_area
-					area = tuscany_area
-					area = venetia_area
-				}
-			}
-		}
-		modifier = {
-			factor = 5
-			scale = yes
-			potential = {
-				owner = {
-					is_colonial_nation = yes
-				}
-			}
-			custom_trigger_tooltip = {
-				tooltip = tooltip_colonial_overlord_renaissance
-				OR = {
-					has_port = yes
-					is_capital = yes
-				}
-				owner = {
-					is_colonial_nation = yes
-					overlord = { has_institution = renaissance }
-				}
+				continent = estal
 			}
 		}
 		modifier = {
@@ -424,17 +289,9 @@ renaissance = {
 					has_institution = renaissance
 				}
 			}
-			
-			custom_trigger_tooltip = {
-				tooltip = tooltip_renaissance_embraced
-				is_owned_by_trade_company = no
-				owner = {
-					has_institution = renaissance
-				}
-			}
 		}
 	}
-	
+
 	ai_will_do = { #Cost of embracing institution must be lower than this factor * last month's regular income, and higher if loans are needed. (Or it has a more than long term goal...)
 		factor = 24
 		

@@ -1185,7 +1185,97 @@ country_decisions = {
 				name = "centralization_modifier"
 				duration = 7300
 			}
-			jasua_superregion = {
+			jasua_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = JAS
+			}
+			mahansha_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = JAS
+			}
+			unnamed_area_12 = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = JAS
+			}
+			unnamed_area_11 = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = JAS
+			}
+			unnamed_area_44 = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = JAS
+			}
+			unnamed_area_45 = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = JAS
+			}
+			unnamed_area_48 = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = JAS
+			}
+			unnamed_area_35 = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = JAS
+			}
+			unnamed_area_40 = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = JAS
+			}
+			unnamed_area_56 = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = JAS
+			}
+			unnamed_area_33 = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = JAS
+			}
+			unnamed_area_32 = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = JAS
+			}
+			unnamed_area_52 = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = JAS
+			}
+			unnamed_area_30 = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = JAS
+			}
+			unnamed_area_29 = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = JAS
+			}
+			unnamed_area_39 = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
