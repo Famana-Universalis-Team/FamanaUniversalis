@@ -1,18 +1,19 @@
-culture = Hoxan
+culture = Zoblotran
 religion = eastern_oppian
 owner = DIM
 controller = DIM
 add_core = DIM
+add_core = MHN
 
 ###
 
 hre = no
 discovered_by = western
-base_tax = 4
-base_production = 3
+base_tax = 2
+base_production = 1
 trade_goods = coffee
-base_manpower = 3
+base_manpower = 2
 capital = "Eniogh"
-is_city = yes
+is_city = no
 extra_cost = 1
 
