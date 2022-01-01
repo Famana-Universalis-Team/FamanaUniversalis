@@ -16,7 +16,7 @@ gomic_region = {
 
 north_great_sea_region = {
 	areas = {
-		ordic_sea
+		naravami_sea
 		vamanyan_sea
 		olivinar_sea
 	}
@@ -305,6 +305,7 @@ vanoma_region = {
 nozumol_region = {
 	areas = {
 		unnamed_area_38
+		nozumol_area
 	}
 }
 
