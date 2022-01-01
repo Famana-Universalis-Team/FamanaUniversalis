@@ -237,12 +237,10 @@ renaissance = {
 		}
 	}
 	start_chance = 5		#in 100 for when a province can_start
-	
+	on_start = institution_events.2
 	
 	
 
-	
-	
 	can_embrace = {
 		owner = { has_institution = feudalism }
 	}
