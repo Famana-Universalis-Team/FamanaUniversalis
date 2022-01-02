@@ -52,7 +52,7 @@ feudalism = {
 	}
 	
 	# no need for events, as its there from the start.
-	#can_start = {	is_year = 13	}
+	#can_start = {	is_year = 1000	}
 	#start_chance = 100
 	#on_start = institution_events.1
 
@@ -231,20 +231,22 @@ renaissance = {
 		is_state = yes
 		is_island = no
 		OR = {
+			development = 20
 			is_capital = yes
 			normal_or_historical_nations = no
-			development = 20
-			}
 		}
 	}
-
 	start_chance = 5		#in 100 for when a province can_start
 	on_start = institution_events.2
+	
+	
 
 	can_embrace = {
 		owner = { has_institution = feudalism }
 	}
 
+
+	
 	embracement_speed = {
 		modifier = {
 			factor = 0.3
@@ -264,23 +266,25 @@ renaissance = {
 			}
 		}
 		modifier = {
+			factor = 0.05
+			scale = yes
+			potential = {
+				continent = estal
+			}
+		}
+		modifier = {
+			factor = 0.05
+			scale = yes
+			potential = {
+				continent = estal
+			}
+		}
+		modifier = {
 			factor = 2
 			scale = yes
 			potential = {
 				owner = {
 					has_institution = renaissance
-				}
-			}
-		}
-		modifier = {
-			factor = 0
-			potential = {
-				owner = {
-					religion = {
-						NOT = {
-							lathvy
-						}
-					}
 				}
 			}
 		}
