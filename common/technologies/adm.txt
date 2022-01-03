@@ -54,7 +54,7 @@ technology = { #Feudal Monarchy
 
 technology = { #Medieval Administration
 	# Tech 3
-	year = 211
+	year = 210
 	expects_institution = {
 		feudalism = 0.5
 	}
@@ -80,7 +80,6 @@ technology = { #National Ideas
 	year = 236
 	expects_institution = {
 		feudalism = 0.5
-		renaissance = 0.15
 	}
 
 	allowed_idea_groups = 1
@@ -92,7 +91,6 @@ technology = { #Workshop
 	year = 249
 	expects_institution = {
 		feudalism = 0.5
-		renaissance = 0.3
 	}
 
 	#Workshop
@@ -106,7 +104,7 @@ technology = { #Renaissance Thought
 	year = 262
 	expects_institution = {
 		feudalism = 0.5
-		renaissance = 0.5
+		renaissance = 0.1
 	}
 	
 	#Noble Republic
@@ -118,7 +116,7 @@ technology = { #Courthouse
 	year = 275
 	expects_institution = {
 		feudalism = 0.5
-		renaissance = 0.5
+		renaissance = 0.25
 	}
 
 	courthouse = yes
@@ -131,8 +129,7 @@ technology = { #The Scythe
 	year = 288
 	expects_institution = {
 		feudalism = 0.5
-		renaissance = 0.5
-		new_world_i = 0.15
+		renaissance = 0.4
 	}
 	
 	#The Scythe
@@ -147,7 +144,6 @@ technology = { #Modern Theocracy
 	expects_institution = {
 		feudalism = 0.5
 		renaissance = 0.5
-		new_world_i = 0.3
 	}
 	
 	allowed_idea_groups = 3
@@ -160,7 +156,7 @@ technology = { #Textile Manufactory
 	expects_institution = {
 		feudalism = 0.5
 		renaissance = 0.5
-		new_world_i = 0.5
+		new_world_i = 0.15
 	}
 	
 	#Textile Manufactory
@@ -174,7 +170,7 @@ technology = { #Early Modern Administration
 	expects_institution = {
 		feudalism = 0.5
 		renaissance = 0.5
-		new_world_i = 0.5
+		new_world_i = 0.25
 	}
 	
 	administrative_monarchy	= yes 
@@ -189,8 +185,7 @@ technology = { #Improved Drainage
 	expects_institution = {
 		feudalism = 0.5
 		renaissance = 0.5
-		new_world_i = 0.5
-		printing_press = 0.15
+		new_world_i = 0.4
 	}
 	
 	#Improved Drainage
@@ -204,7 +199,6 @@ technology = { #Scientific Experimentation
 		feudalism = 0.5
 		renaissance = 0.5
 		new_world_i = 0.5
-		printing_press = 0.3
 	}
 	
 	plantations = yes
@@ -218,7 +212,7 @@ technology = { #Military Administration
 		feudalism = 0.5
 		renaissance = 0.5
 		new_world_i = 0.5
-		printing_press = 0.5
+		printing_press = 0.15
 	}
 	
 	may_force_march = yes
@@ -232,7 +226,7 @@ technology = { #Metallurgy
 		feudalism = 0.5
 		renaissance = 0.5
 		new_world_i = 0.5
-		printing_press = 0.5
+		printing_press = 0.3
 	}
 	
 	mills = yes
@@ -248,8 +242,7 @@ technology = { #University
 		feudalism = 0.5
 		renaissance = 0.5
 		new_world_i = 0.5
-		printing_press = 0.5
-		global_trade = 0.15
+		printing_press = 0.4
 	}
 	
 	university = yes	
@@ -267,7 +260,6 @@ technology = { #National Sovereignty
 		renaissance = 0.5
 		new_world_i = 0.5
 		printing_press = 0.5
-		global_trade = 0.3
 	}
 	
 	allowed_idea_groups	= 5
@@ -281,7 +273,7 @@ technology = { #Cathedral
 		renaissance = 0.5
 		new_world_i = 0.5
 		printing_press = 0.5
-		global_trade = 0.5
+		global_trade = 0.15
 	}
 	
 	#Cathedral
@@ -296,7 +288,7 @@ technology = { #Absolute Rulership
 		renaissance = 0.5
 		new_world_i = 0.5
 		printing_press = 0.5
-		global_trade = 0.5
+		global_trade = 0.3
 	}
 	
 	republican_dictatorship = yes
@@ -305,14 +297,13 @@ technology = { #Absolute Rulership
 
 technology = { #Land Clearance
 	# Tech 21
-	year = 443
+	year = 444
 	expects_institution = {
 		feudalism = 0.5
 		renaissance = 0.5
 		new_world_i = 0.5
 		printing_press = 0.5
-		global_trade = 0.5
-		manufactories = 0.15
+		global_trade = 0.4
 	}
 	
 	#Land Clearance
@@ -322,14 +313,13 @@ technology = { #Land Clearance
 
 technology = { #The Constitution
 	# Tech 22
-	year = 456
+	year = 457
 	expects_institution = {
 		feudalism = 0.5
 		renaissance = 0.5
 		new_world_i = 0.5
 		printing_press = 0.5
 		global_trade = 0.5
-		manufactories = 0.3
 	}
 	
 	allowed_idea_groups = 6
@@ -341,7 +331,39 @@ technology = { #The Constitution
 
 technology = { #Measuring the World
 	# Tech 23
-	year = 469
+	year = 470
+	expects_institution = {
+		feudalism = 0.5
+		renaissance = 0.5
+		new_world_i = 0.5
+		printing_press = 0.5
+		global_trade = 0.5
+		manufactories = 0.2
+	}
+	
+	administrative_efficiency = 0.1
+	development_efficiency = 0.1
+}
+
+technology = { #Bonds and Tontines
+	# Tech 24
+	year = 485
+	expects_institution = {
+		feudalism = 0.5
+		renaissance = 0.5
+		new_world_i = 0.5
+		printing_press = 0.5
+		global_trade = 0.5
+		manufactories = 0.35
+	}
+	
+	counting_house = yes  
+	governing_capacity = 250
+}
+
+technology = { #Improved Production
+	# Tech 25
+	year = 500
 	expects_institution = {
 		feudalism = 0.5
 		renaissance = 0.5
@@ -351,13 +373,13 @@ technology = { #Measuring the World
 		manufactories = 0.5
 	}
 	
-	administrative_efficiency = 0.1
-	development_efficiency = 0.1
+	#Improved Farm Animals
+	production_efficiency 	=	0.02
 }
 
-technology = { #Bonds and Tontines
-	# Tech 24
-	year = 482
+technology = { #Separation of Powers
+	# Tech 26
+	year = 515
 	expects_institution = {
 		feudalism = 0.5
 		renaissance = 0.5
@@ -368,13 +390,12 @@ technology = { #Bonds and Tontines
 		enlightenment = 0.15
 	}
 	
-	counting_house = yes  
-	governing_capacity = 250
+	allowed_idea_groups 	= 	7
 }
 
-technology = { #Improved Production
-	# Tech 25
-	year = 495
+technology = { #Modern Bureaucracy
+	# Tech 27
+	year = 530
 	expects_institution = {
 		feudalism = 0.5
 		renaissance = 0.5
@@ -384,39 +405,6 @@ technology = { #Improved Production
 		manufactories = 0.5
 		enlightenment = 0.3
 	}
-	
-	#Improved Farm Animals
-	production_efficiency 	=	0.02
-}
-
-technology = { #Separation of Powers
-	# Tech 26
-	year = 508
-	expects_institution = {
-		feudalism = 0.5
-		renaissance = 0.5
-		new_world_i = 0.5
-		printing_press = 0.5
-		global_trade = 0.5
-		manufactories = 0.5
-		enlightenment = 0.5
-	}
-	
-	allowed_idea_groups 	= 	7
-}
-
-technology = { #Modern Bureaucracy
-	# Tech 27
-	year = 521
-	expects_institution = {
-		feudalism = 0.5
-		renaissance = 0.5
-		new_world_i = 0.5
-		printing_press = 0.5
-		global_trade = 0.5
-		manufactories = 0.5
-		enlightenment = 0.5
-	}
 
 	administrative_efficiency = 0.1
 	development_efficiency = 0.1	
@@ -425,7 +413,42 @@ technology = { #Modern Bureaucracy
 
 technology = { #Rotherham Plough
 	# Tech 28
-	year = 534
+	year = 545
+	expects_institution = {
+		feudalism = 0.5
+		renaissance = 0.5
+		new_world_i = 0.5
+		printing_press = 0.5
+		global_trade = 0.5
+		manufactories = 0.5
+		enlightenment = 0.4
+	}
+	
+	#Rotherham Plough
+	production_efficiency 	=	0.02
+}
+
+technology = { #Rights of Man
+	# Tech 29
+	year = 560
+	expects_institution = {
+		feudalism = 0.5
+		renaissance = 0.5
+		new_world_i = 0.5
+		printing_press = 0.5
+		global_trade = 0.5
+		manufactories = 0.5
+		enlightenment = 1
+	}
+
+	allowed_idea_groups = 8
+	enlightened_despotism = yes
+	bureaucratic_despotism = yes
+}
+
+technology = { #Advanced Production
+	# Tech 30
+	year = 575
 	expects_institution = {
 		feudalism = 0.5
 		renaissance = 0.5
@@ -437,50 +460,13 @@ technology = { #Rotherham Plough
 		industrialization = 0.25
 	}
 	
-	#Rotherham Plough
-	production_efficiency 	=	0.02
-}
-
-technology = { #Rights of Man
-	# Tech 29
-	year = 547
-	expects_institution = {
-		feudalism = 0.5
-		renaissance = 0.5
-		new_world_i = 0.5
-		printing_press = 0.5
-		global_trade = 0.5
-		manufactories = 0.5
-		enlightenment = 1
-		industrialization = 0.5
-	}
-
-	allowed_idea_groups = 8
-	enlightened_despotism = yes
-	bureaucratic_despotism = yes
-}
-
-technology = { #Advanced Production
-	# Tech 30
-	year = 560
-	expects_institution = {
-		feudalism = 0.5
-		renaissance = 0.5
-		new_world_i = 0.5
-		printing_press = 0.5
-		global_trade = 0.5
-		manufactories = 0.5
-		enlightenment = 0.5
-		industrialization = 1
-	}
-	
 	#Improved Draft Animals
 	production_efficiency 	=	0.02
 }
 
 technology = { #Revolutionary Ideals
 	# Tech 31
-	year = 580
+	year = 590
 	expects_institution = {
 		feudalism = 0.5
 		renaissance = 0.5
@@ -489,7 +475,7 @@ technology = { #Revolutionary Ideals
 		global_trade = 0.5
 		manufactories = 0.5
 		enlightenment = 1
-		industrialization = 1
+		industrialization = 0.4
 	}
 	
 	revolutionary_republic = yes
@@ -499,7 +485,7 @@ technology = { #Revolutionary Ideals
 
 technology = { #Four Field Rotation
 	# Tech 32
-	year = 600
+	year = 605
 	expects_institution = {
 		feudalism = 0.5
 		renaissance = 0.5
@@ -508,7 +494,7 @@ technology = { #Four Field Rotation
 		global_trade = 0.5
 		manufactories = 0.5
 		enlightenment = 1
-		industrialization = 1
+		industrialization = 0.5
 	}
 	
 	#Four field rotation
