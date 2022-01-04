@@ -127,6 +127,10 @@ nafan_gov = {
 	valid_for_nation_designer = yes
 	nation_designer_cost = 40
 
+	custom_attributes = {
+		locked_government_type = yes
+	}
+
 	nation_designer_trigger = {
 		religion = lathvy
 	}
