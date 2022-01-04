@@ -1213,7 +1213,7 @@ north_estali = {
 	flags_with_emblem_percentage = 33
 	
 	
-	naravami = { #unlocalised
+	naravami = { 
 		color = { 91 52 31 }
 		icon = 27
 		country = {
@@ -1230,7 +1230,7 @@ north_estali = {
 		
 		heretic = { ROCHONI }
 	}
-	ordic = { #unlocalised
+	ordic = { 
 		color = { 139 144 110 }
 		icon = 26
 		country = {
