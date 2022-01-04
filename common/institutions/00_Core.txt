@@ -199,9 +199,9 @@ feudalism = {
 }
 
 #######################################
-# Renaissance
+# Liturgy
 # 
-# Flows from italy
+# Absolutely trolled
 #######################################
 
 renaissance = {
@@ -250,25 +250,60 @@ renaissance = {
 	embracement_speed = {
 
 		modifier = {
-			factor = 0.20
-			scale = no
+			factor = 0.12
+			scale = yes
 			potential = {
 				any_friendly_coast_border_province = {
 					renaissance = 100
+					NOT = { religion = {lathvy} }
 				}
 			}
 		}
 
 		modifier = {
-			factor = 2.4
+			factor = 0.24
 			scale = yes
 			potential = {
+				any_friendly_coast_border_province = {
+					AND = {
+						renaissance = 100
+						religion = lathvy
+					}
+				}
+			}
+		}
+
+		modifier = {
+			factor = 0.3
+			scale = yes
+			potential = {
+				development = 10
+				NOT = { development = 15 }
 				religion = lathvy
 			}
 		}
 
 		modifier = {
-			factor = 2
+			factor = 0.36
+			scale = yes
+			potential = {
+				development = 15
+				NOT = { development = 20 }
+				religion = lathvy
+			}
+		}
+
+		modifier = {
+			factor = 0.42
+			scale = yes
+			potential = {
+				development = 20
+				religion = lathvy
+			}
+		}
+
+		modifier = {
+			factor = 3
 			scale = yes
 			potential = {
 				owner = {
@@ -278,16 +313,75 @@ renaissance = {
 		}
 
 		modifier = {
-			factor = 3
+			factor = 0.18
 			scale = yes
 			potential = {
-				owner = {
-					any_neighbor_province = {
-						renaissance = 100
-					}
+				any_neighbor_province = {
+					NOT = { religion = {lathvy} }
+					renaissance = 100
 				}
 			}
 		}
+
+		modifier = {
+			factor = 0.36
+			scale = yes
+			potential = {
+				any_neighbor_province = {
+					religion = lathvy
+					renaissance = 100
+				}
+			}
+		}
+
+		modifier = {
+			factor = 0.24
+			scale = yes
+			potential = {
+				is_year = 270
+				religion = lathvy
+			}
+		}
+
+		modifier = {
+			factor = 0.36
+			scale = yes
+			potential = {
+				is_year = 270
+				development = 20
+				religion = reformed_oppian
+			}
+		}
+
+		modifier = {
+			factor = 0.6
+			scale = yes
+			potential = {
+				is_year = 270
+				development = 10
+				religion = bamali
+			}
+		}
+
+		modifier = {
+			factor = 0.6
+			scale = yes
+			potential = {
+				is_year = 260
+				development = 15
+				religion = va
+			}
+		}
+
+		modifier = {
+			factor = -0.12
+			scale = yes
+			potential = {
+				NOT = { is_year = 270 }
+				religion = egr
+			}
+		}
+
 	}
 
 	ai_will_do = { #Cost of embracing institution must be lower than this factor * last month's regular income, and higher if loans are needed. (Or it has a more than long term goal...)

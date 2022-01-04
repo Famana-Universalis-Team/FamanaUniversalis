@@ -54,7 +54,7 @@ technology = { #The Barque
 
 technology = { #The Early Carrack
 	# Tech 3
-	year = 211
+	year = 210
 	expects_institution = {
 		feudalism = 0.5
 	}
@@ -89,7 +89,6 @@ technology = { #Basic Financial Instruments
 	year = 236
 	expects_institution = {
 		feudalism = 0.5
-		renaissance = 0.15
 	}
 	
 	naval_maintenance		=	0.1	
@@ -104,7 +103,6 @@ technology = { #Shipyards
 	year = 249
 	expects_institution = {
 		feudalism = 0.5
-		renaissance = 0.3
 	}
 	
 	dock = yes	
@@ -117,7 +115,7 @@ technology = { #Naval Ambitions
 	year = 262
 	expects_institution = {
 		feudalism = 0.5
-		renaissance = 0.5
+		renaissance = 0.1
 	}
 	
 	naval_morale			= 0.3
@@ -131,7 +129,7 @@ technology  = { #Docks
 	year = 275
 	expects_institution = {
 		feudalism = 0.5
-		renaissance = 0.5
+		renaissance = 0.25
 	}
 
 	
@@ -148,8 +146,7 @@ technology = { #Carracks & Caravel
 	year = 288
 	expects_institution = {
 		feudalism = 0.5
-		renaissance = 0.5
-		new_world_i = 0.15
+		renaissance = 0.4
 	}
 	
 	naval_maintenance		= 	0.1
@@ -167,7 +164,6 @@ technology = { #The Flute
 	expects_institution = {
 		feudalism = 0.5
 		renaissance = 0.5
-		new_world_i = 0.3
 	}
 	
 	trade_efficiency		= 	0.02
@@ -183,7 +179,7 @@ technology = { #Wharf
 	expects_institution = {
 		feudalism = 0.5
 		renaissance = 0.5
-		new_world_i = 0.5
+		new_world_i = 0.15
 	}
 	
 	range					= 	100
@@ -198,7 +194,7 @@ technology = { #Man of War
 	expects_institution = {
 		feudalism = 0.5
 		renaissance = 0.5
-		new_world_i = 0.5
+		new_world_i = 0.25
 	}
 
 	naval_morale			=	0.4
@@ -215,8 +211,7 @@ technology = { #Chartered Companies
 	expects_institution = {
 		feudalism = 0.5
 		renaissance = 0.5
-		new_world_i = 0.5
-		printing_press = 0.15
+		new_world_i = 0.4
 	}
 	
 	trade_efficiency 		= 	0.02
@@ -231,7 +226,6 @@ technology = { #The Galleass
 		feudalism = 0.5
 		renaissance = 0.5
 		new_world_i = 0.5
-		printing_press = 0.3
 	}
 	
 	tradecompany = yes
@@ -248,7 +242,7 @@ technology = { #The Galleon
 		feudalism = 0.5
 		renaissance = 0.5
 		new_world_i = 0.5
-		printing_press = 0.5
+		printing_press = 0.15
 	}
 	
 	naval_maintenance		= 	0.1
@@ -268,7 +262,7 @@ technology = { #Development of Maritime Law
 		feudalism = 0.5
 		renaissance = 0.5
 		new_world_i = 0.5
-		printing_press = 0.5
+		printing_press = 0.3
 	}
 	
 	trade_efficiency 		= 	0.02
@@ -283,8 +277,7 @@ technology = { #Merchantman
 		feudalism = 0.5
 		renaissance = 0.5
 		new_world_i = 0.5
-		printing_press = 0.5
-		global_trade = 0.15
+		printing_press = 0.4
 	}
 	
 	trade_range				=	20
@@ -305,7 +298,6 @@ technology = { #Line of Battle
 		renaissance = 0.5
 		new_world_i = 0.5
 		printing_press = 0.5
-		global_trade = 0.3
 	}
 	
 	enable = galiot
@@ -325,7 +317,7 @@ technology = { #The War Galleon
 		renaissance = 0.5
 		new_world_i = 0.5
 		printing_press = 0.5
-		global_trade = 0.5
+		global_trade = 0.15
 	}
 	
 	naval_maintenance		= 	0.1	
@@ -346,7 +338,7 @@ technology = { #Naval Professionalization
 		renaissance = 0.5
 		new_world_i = 0.5
 		printing_press = 0.5
-		global_trade = 0.5
+		global_trade = 0.3
 	}
 
 	trade_efficiency 		= 	0.02
@@ -357,14 +349,13 @@ technology = { #Naval Professionalization
 
 technology = { #The Chebeck
 	# Tech 21
-	year = 443
+	year = 444
 	expects_institution = {
 		feudalism = 0.5
 		renaissance = 0.5
 		new_world_i = 0.5
 		printing_press = 0.5
-		global_trade = 0.5
-		manufactories = 0.15
+		global_trade = 0.4
 	}
 
 	enable = chebeck
@@ -374,14 +365,13 @@ technology = { #The Chebeck
 
 technology = { #Limes
 	# Tech 22
-	year = 456
+	year = 457
 	expects_institution = {
 		feudalism = 0.5
 		renaissance = 0.5
 		new_world_i = 0.5
 		printing_press = 0.5
 		global_trade = 0.5
-		manufactories = 0.3
 	}
 	
 	naval_morale			=	0.5
@@ -398,14 +388,14 @@ technology = { #Limes
 
 technology = { #Heavy Frigates
 	# Tech 23
-	year = 469
+	year = 470
 	expects_institution = {
 		feudalism = 0.5
 		renaissance = 0.5
 		new_world_i = 0.5
 		printing_press = 0.5
 		global_trade = 0.5
-		manufactories = 0.5
+		manufactories = 0.2
 	}
 	
 	global_colonial_growth  = 	25	
@@ -418,15 +408,14 @@ technology = { #Heavy Frigates
 
 technology = { #The Archipelago Frigate
 	# Tech 24
-	year = 482
+	year = 485
 	expects_institution = {
 		feudalism = 0.5
 		renaissance = 0.5
 		new_world_i = 0.5
 		printing_press = 0.5
 		global_trade = 0.5
-		manufactories = 0.5
-		enlightenment = 0.15
+		manufactories = 0.35
 	}
 	
 	grand_shipyard = yes 
@@ -442,7 +431,7 @@ technology = { #The Archipelago Frigate
 
 technology = { #The Threedeckers
 	# Tech 25
-	year = 495
+	year = 500
 	expects_institution = {
 		feudalism = 0.5
 		renaissance = 0.5
@@ -450,7 +439,6 @@ technology = { #The Threedeckers
 		printing_press = 0.5
 		global_trade = 0.5
 		manufactories = 0.5
-		enlightenment = 0.3
 	}
 	
 	naval_morale			=	0.5
@@ -461,7 +449,7 @@ technology = { #The Threedeckers
 
 technology = { #The Eastindiaman
 	# Tech 26
-	year = 508
+	year = 515
 	expects_institution = {
 		feudalism = 0.5
 		renaissance = 0.5
@@ -469,7 +457,7 @@ technology = { #The Eastindiaman
 		printing_press = 0.5
 		global_trade = 0.5
 		manufactories = 0.5
-		enlightenment = 0.5
+		enlightenment = 0.15
 	}
 	
 	range					=	200
@@ -482,7 +470,43 @@ technology = { #The Eastindiaman
 
 technology = { #Public Punishments
 	# Tech 27
-	year = 521
+	year = 530
+	expects_institution = {
+		feudalism = 0.5
+		renaissance = 0.5
+		new_world_i = 0.5
+		printing_press = 0.5
+		global_trade = 0.5
+		manufactories = 0.5
+		enlightenment = 0.3
+	}
+	
+	naval_morale			=	0.5
+	naval_maintenance		= 	0.1
+	may_agitate_for_liberty = yes
+
+}
+
+technology = { #Joint Stock Companies
+	# Tech 28
+	year = 545
+	expects_institution = {
+		feudalism = 0.5
+		renaissance = 0.5
+		new_world_i = 0.5
+		printing_press = 0.5
+		global_trade = 0.5
+		manufactories = 0.5
+		enlightenment = 0.4
+	}
+	
+	trade_efficiency 		= 	0.02
+	trade_range				=	20
+}
+
+technology = { #Midshipmen Cadets
+	# Tech 29
+	year = 560
 	expects_institution = {
 		feudalism = 0.5
 		renaissance = 0.5
@@ -495,13 +519,11 @@ technology = { #Public Punishments
 	
 	naval_morale			=	0.5
 	naval_maintenance		= 	0.1
-	may_agitate_for_liberty = yes
-
 }
 
-technology = { #Joint Stock Companies
-	# Tech 28
-	year = 534
+technology = { #Insurance Companies
+	# Tech 30
+	year = 575
 	expects_institution = {
 		feudalism = 0.5
 		renaissance = 0.5
@@ -515,48 +537,12 @@ technology = { #Joint Stock Companies
 	
 	trade_efficiency 		= 	0.02
 	trade_range				=	20
-}
-
-technology = { #Midshipmen Cadets
-	# Tech 29
-	year = 547
-	expects_institution = {
-		feudalism = 0.5
-		renaissance = 0.5
-		new_world_i = 0.5
-		printing_press = 0.5
-		global_trade = 0.5
-		manufactories = 0.5
-		enlightenment = 0.5
-		industrialization = 0.5
-	}
-	
-	naval_morale			=	0.5
-	naval_maintenance		= 	0.1
-}
-
-technology = { #Insurance Companies
-	# Tech 30
-	year = 560
-	expects_institution = {
-		feudalism = 0.5
-		renaissance = 0.5
-		new_world_i = 0.5
-		printing_press = 0.5
-		global_trade = 0.5
-		manufactories = 0.5
-		enlightenment = 0.5
-		industrialization = 1
-	}
-	
-	trade_efficiency 		= 	0.02
-	trade_range				=	20
 	may_infiltrate_administration = yes
 }
 
 technology = { #Superior Ship Design
 	# Tech 31
-	year = 580
+	year = 590
 	expects_institution = {
 		feudalism = 0.5
 		renaissance = 0.5
@@ -565,7 +551,7 @@ technology = { #Superior Ship Design
 		global_trade = 0.5
 		manufactories = 1
 		enlightenment = 0.5
-		industrialization = 1
+		industrialization = 0.4
 	}
 	
 	naval_morale			=	0.5
@@ -575,7 +561,7 @@ technology = { #Superior Ship Design
 
 technology = { #The Gold Standard
 	# Tech 32
-	year = 600
+	year = 605
 	expects_institution = {
 		feudalism = 0.5
 		renaissance = 0.5
@@ -584,7 +570,7 @@ technology = { #The Gold Standard
 		global_trade = 1
 		manufactories = 0.5
 		enlightenment = 1
-		industrialization = 1
+		industrialization = 0.5
 	}
 	
 	trade_efficiency 		= 	0.02
