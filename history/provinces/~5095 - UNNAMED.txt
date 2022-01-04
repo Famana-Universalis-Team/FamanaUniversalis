@@ -1,0 +1,20 @@
+#Written with Eu4 Easy Province Creator by emiroercn
+#UNNAMED
+ 
+culture = Lower_Oppian
+religion = western_oppian
+hre = no
+discovered_by = western
+base_tax = 3
+base_production = 4
+trade_goods = fur
+base_manpower = 3
+capital = "Lemog"
+is_city = yes
+extra_cost = 1
+  
+
+owner = NUT
+controller = NUT
+add_core = NUT
+add_core = OAN
