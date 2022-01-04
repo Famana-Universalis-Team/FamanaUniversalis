@@ -906,6 +906,17 @@ Ordic = {
 			Mar Mora Kyemat Gyez Maya Mogur Bortu Kayar Kag Mayar Tor Ufipar
         }
 	}
+	East_Ordican = { #better name
+		male_names = {
+            Oddic Bebbe Oduro Oggic Nabama Num Natur Dord Man Gyag Oddutu Geditur Apart Gyenda Lobonai Amart Almazumm
+        }
+        female_names = {
+            Barat Nai Mida Ukke Imia Galann Utaizbilin Kalanamau
+        }
+        dynasty_names = {
+			Mar Mora Kyemat Gyez Maya Mogur Bortu Kayar Kag Mayar Tor Ufipar
+        }
+	}
 }
 #############################
 Maldik = {
@@ -1126,6 +1137,34 @@ Voychon = {
         }
         dynasty_names = {
 			In-Salah
+        }
+	}
+}
+############################
+Onobyan = {
+	Onobyan = {
+		male_names = {
+            Tonko 
+        }
+        female_names = {
+            Fuet
+        }
+        dynasty_names = {
+			Onobi
+        }
+	}
+}
+############################
+Lukschan = {
+	Lukschan = {
+		male_names = {
+            Cerkieni
+        }
+        female_names = {
+            Ovvrona
+        }
+        dynasty_names = {
+			Lukul
         }
 	}
 }
