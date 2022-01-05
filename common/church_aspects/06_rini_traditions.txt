@@ -79,7 +79,7 @@ purge_heretics_aspect = {
 bishop_soldiers_aspect = {
 	cost = 100
 	modifier = { 
-		discipline = 0.025
+		land_morale = 0.05
 	}
 	ai_will_do = {
 		factor = 12

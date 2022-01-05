@@ -32,7 +32,7 @@
 
  desc_canonise_the_igealbidon_aspect:0 "The Igealbidon tells us of the rise of Nafa and our relation with Yomtanians. If we made it a holy book, more people will understand our viewpoint."
  desc_holy_draft_aspect:0 "The struggle between Ara and Loys is not just in one's mind, but must also be shown on the battlefield."
- desc_crush_the_yomtanians_aspect:0 "We must break the delicate balance of continents and interfere with Makan if we want to truley win the eternal war."
+ desc_crush_the_yomtanians_aspect:0 "We must break the delicate balance of continents and interfere with Makan if we want to truly win the eternal war."
  desc_purge_heretics_aspect:0 "Demonise all yomtanians and purge those who believe otherwise."
  desc_bishop_soldiers_aspect:0 "In traditional lathvy, the bishops were all pacifists who preferred to wage a spiritual war. We will change this and make our bishops into generals."
  desc_united_amatanians_aspect:0 "A shattered amatanian world cannot fight the yomtanians - we must lead the unification."
@@ -109,7 +109,7 @@
  mak_rebels_army:0 "$RELIGION$ Army"
 
  vaximorian:0 "Vaximorian"
- vaximorian_desc:0 "A religion present solely in Vaximor, the people following this religion believe in 7 gods who constantly battle each other for power."
+ vaximorian_religion_desc:0 "A religion present solely in Vaximor. The people following this religion believe in 7 celestial gods who constantly battle each other for power."
  dyrian:0 "Dyrian"
  mak:0 "Mak"
  vaximorian_rebels_demand:0 "Convert $COUNTRYNAME$"
@@ -198,6 +198,11 @@
  shir:0 "Shir"
  xalian_group:0 "Xalian"
 
+ HOLY_SITE_5388_DESC:0 "Xon was the capital of Ga Xal and Ga Shir, and is considered the most holy city of them all. Especially Shirians revere this city."
+ HOLY_SITE_5458_DESC:0 "Sixan was the capital of the water kingdom of Ga Vin, and is considered holy by all Vinians."
+ HOLY_SITE_5411_DESC:0 "Morsum was the capital of the fire kingdom of Ga Mor, and later Moria, and is considered to be holier than all of the other cities by Morians."
+ HOLY_SITE_5163_DESC:0 "Ximal is the most holy city for Delkians, as it served as the capital of the earth kingdom of Ga Delk."
+
  delkian:0 "Delkian"
  delkian_religion_desc:0 "One of the four Xalian religions, Delkian believes in the supremacy of Delk, the Earth God, and his eternal creations."
  delkian_rebels_demand:0 "Convert $COUNTRYNAME$"
@@ -285,7 +290,7 @@
  far_eastern_gomic:0 "Aresian Gulf"
 
  bamali:0 "Bamali"
- bamali_religion_desc:0 "The ancestral religion of the Bamali people, their religion promotes ascetic living while giving offerings to the Gods."
+ bamali_religion_desc:0 "The ancestral religion of the Bamali people, their religion promotes ascetic living while giving offerings to the gods."
  bamali_rebels_demand:0 "Convert $COUNTRYNAME$"
  bamali_rebels_demand_desc:0 "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
  bamali_rebels_title:0 "Religious"
