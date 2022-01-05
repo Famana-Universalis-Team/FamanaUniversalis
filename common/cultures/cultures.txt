@@ -257,7 +257,7 @@ Pextoglazian = {
 		}
 	}
 	Glazian = {
-		primary = LOM
+		primary = GLD
         male_names = {
 			Kalin Jams Remel Niro Gadel Tanus Niro Jijiro Poni Kerta Kert Fani Siak Kanadat Jalio Sicki Siliri Pioro
 		}
@@ -975,6 +975,7 @@ Komelwaiti = {
 #############################
 Naravami_C = {
 	Rduma = {
+		primary = RDU
 		male_names = {
             Marda Gezbonam Bidum Nomeg Galne Dazdo Dulkop Mogibi Bimemi Gitifpa Pagagi Bitop Gakut Dumego Nezdog Muguni Bulman Tipmum Mokdab Domsmun Negun Nomog Doyni Belde
         }
@@ -1114,6 +1115,7 @@ Qamon = {
 #############################
 Antiash = {
 	Kurkari = {
+		primary = KKR
 		male_names = {
             Ashadir Kabir Abul Qayam Umea Hovakar
         }

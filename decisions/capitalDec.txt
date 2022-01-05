@@ -4,6 +4,7 @@ country_decisions = {
 		potential = {
 			AND = {
 				tag = NAF
+				owns = 5583
 				NOT = {
 					has_country_flag = syadona_city
 				}
@@ -39,6 +40,7 @@ country_decisions = {
 				add_base_production = 1
 			}
 			5583 = {
+				add_core = NAF
 				change_province_name = "Syadona"
 				rename_capital = "Syadona"
 				change_culture = Kachik

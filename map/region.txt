@@ -32,6 +32,18 @@ outer_region = {
 	}
 }
 
+vishma_region = {
+	areas = {
+		joshumuke_area
+	}
+}
+
+western_naravam_region = {
+	areas = {
+		idios_area
+	}
+}
+
 upper_oppia_region = {
 	areas = {
 		quanex_area
@@ -305,7 +317,32 @@ vanoma_region = {
 nozumol_region = {
 	areas = {
 		unnamed_area_38
-		nozumol_area
+		nuzoto_area
+		west_jimbalak_area
+		east_jimbalak_area
+		nhoma_area_1
+		baqku_area
+		nhoma_area_2
+		bizugu_area
+		fuka_area
+		north_khim_area
+		nhoma_area_3 
+		vamkad_area
+		nhoma_area_4
+		nhoma_area_5
+		vaks_area
+		ufulk_area
+		nhoma_area_6
+		
+	}
+}
+northern_desert_region = {
+	areas = {
+		vadorvador_area
+		the_edge_area
+		khazatraal_area
+		yakven_area
+		
 	}
 }
 

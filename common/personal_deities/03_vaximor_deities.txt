@@ -94,7 +94,7 @@ fiskoo =
 yastkoo = 
 { 
 	technology_cost = -0.10
-	institution_spread_from_true_faith = 0.20
+	global_institution_spread = 0.20
 	
 	allow = { religion = vaximorian }
 	sprite = 16

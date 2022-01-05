@@ -1,0 +1,19 @@
+#Written with Eu4 Easy Province Creator by emiroercn
+#UNNAMED
+ 
+culture = Ossori
+religion = western_oppian
+hre = no
+discovered_by = western
+base_tax = 4
+base_production = 2
+trade_goods = livestock
+base_manpower = 2
+capital = "Ronna"
+is_city = yes
+extra_cost = 1
+  
+
+owner = OSS
+controller = OSS
+add_core = OSS

@@ -26,12 +26,12 @@ country_decisions = {
 		allow = {
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
-			owns = 5124
-			owns = 5550
-			owns = 5123
-			owns = 5121
-			owns = 5129
-			owns = 5119
+			owns_core_province = 5124
+			owns_core_province = 5550
+			owns_core_province = 5123
+			owns_core_province = 5121
+			owns_core_province = 5129
+			owns_core_province = 5119
 			capital_scope = {
 				is_core = ROOT
 			}
@@ -127,15 +127,15 @@ country_decisions = {
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
 			OR = {
-				owns = 5138
+				owns_core_province = 5138
 				any_subject_country = {
-					owns = 5138
+					owns_core_province = 5138
 				}
 			}
 			OR = {
-				owns = 5139
+				owns_core_province = 5139
 				any_subject_country = {
-					owns = 5139
+					owns_core_province = 5139
 				}
 			}
 			capital_scope = {
@@ -218,10 +218,10 @@ country_decisions = {
 			}
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
-			owns = 5148
-			owns = 5140
-			owns = 5143
-			owns = 5137
+			owns_core_province = 5148
+			owns_core_province = 5140
+			owns_core_province = 5143
+			owns_core_province = 5137
 			capital_scope = {
 				is_core = ROOT
 			}
@@ -302,10 +302,10 @@ country_decisions = {
 			adm_tech = 5
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
-			owns = 5049
-			owns = 5056
-			owns = 5091
-			owns = 5230
+			owns_core_province = 5049
+			owns_core_province = 5056
+			owns_core_province = 5091
+			owns_core_province = 5230
 			capital_scope = {
 				is_core = ROOT
 			}
@@ -379,17 +379,17 @@ country_decisions = {
 		allow = {
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
-			owns = 5066
-			owns = 5044
-			owns = 5103
-			owns = 5091
-			owns = 5106
-			owns = 5123
-			owns = 5121
-			owns = 5059
-			owns = 5062
-			owns = 5113
-			owns = 5081
+			owns_core_province = 5066
+			owns_core_province = 5044
+			owns_core_province = 5103
+			owns_core_province = 5091
+			owns_core_province = 5106
+			owns_core_province = 5123
+			owns_core_province = 5121
+			owns_core_province = 5059
+			owns_core_province = 5062
+			owns_core_province = 5113
+			owns_core_province = 5081
 			capital_scope = {
 				is_core = ROOT
 			}
@@ -473,9 +473,9 @@ country_decisions = {
 		allow = {
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
-			owns = 5118
-			owns = 5113
-			owns = 5133
+			owns_core_province = 5118
+			owns_core_province = 5113
+			owns_core_province = 5133
 			capital_scope = {
 				is_core = ROOT
 			}
@@ -555,10 +555,10 @@ country_decisions = {
 			adm_tech = 5
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
-			owns = 5450
-			owns = 5411
-			owns = 5441
-			owns = 5442
+			owns_core_province = 5450
+			owns_core_province = 5411
+			owns_core_province = 5441
+			owns_core_province = 5442
 			capital_scope = {
 				is_core = ROOT
 			}
@@ -615,9 +615,9 @@ country_decisions = {
 		allow = {
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
-			owns = 5399
-			owns = 5388
-			owns = 5404
+			owns_core_province = 5399
+			owns_core_province = 5388
+			owns_core_province = 5404
 			capital_scope = {
 				is_core = ROOT
 			}
@@ -689,10 +689,10 @@ country_decisions = {
 		allow = {
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
-			owns = 5418
-			owns = 5458
-			owns = 5450
-			owns = 5445
+			owns_core_province = 5418
+			owns_core_province = 5458
+			owns_core_province = 5450
+			owns_core_province = 5445
 			capital_scope = {
 				is_core = ROOT
 			}
@@ -749,8 +749,8 @@ country_decisions = {
 		allow = {
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
-			owns = 5167
-			owns = 5163
+			owns_core_province = 5167
+			owns_core_province = 5163
 			capital_scope = {
 				is_core = ROOT
 			}
@@ -834,10 +834,10 @@ country_decisions = {
 		allow = {
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
-			owns = 5409
-			owns = 5411
-			owns = 5442
-			owns = 5431
+			owns_core_province = 5409
+			owns_core_province = 5411
+			owns_core_province = 5442
+			owns_core_province = 5431
 			capital_scope = {
 				is_core = ROOT
 			}
@@ -903,10 +903,10 @@ country_decisions = {
 		allow = {
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
-			owns = 5361
-			owns = 5374
-			owns = 5372
-			owns = 5373
+			owns_core_province = 5361
+			owns_core_province = 5374
+			owns_core_province = 5372
+			owns_core_province = 5373
 			capital_scope = {
 				is_core = ROOT
 			}
@@ -995,13 +995,13 @@ country_decisions = {
 		allow = {
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
-			owns = 5431 #glazia
-			owns = 5411 #morsum
-			owns = 5163 #ximal
-			owns = 5458 #sixan
-			owns = 5388 #xon
-			owns = 5450 #jexus
-			owns = 5399 #oxaled
+			owns_core_province = 5431 #glazia
+			owns_core_province = 5411 #morsum
+			owns_core_province = 5163 #ximal
+			owns_core_province = 5458 #sixan
+			owns_core_province = 5388 #xon
+			owns_core_province = 5450 #jexus
+			owns_core_province = 5399 #oxaled
 			capital_scope = {
 				is_core = ROOT
 			}
@@ -1084,9 +1084,9 @@ country_decisions = {
 		allow = {
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
-			owns = 5536
-			owns = 5527
-			owns = 5519
+			owns_core_province = 5536
+			owns_core_province = 5527
+			owns_core_province = 5519
 			capital_scope = {
 				is_core = ROOT
 			}
@@ -1153,10 +1153,10 @@ country_decisions = {
 		allow = {
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
-			owns = 5196 #kinvirel
-			owns = 5481 #degladon
-			owns = 5644 #jimkalin
-			owns = 5501 #ghaloya
+			owns_core_province = 5196 #kinvirel
+			owns_core_province = 5481 #degladon
+			owns_core_province = 5644 #jimkalin
+			owns_core_province = 5501 #ghaloya
 			capital_scope = {
 				is_core = ROOT
 			}
@@ -1319,17 +1319,17 @@ country_decisions = {
 			adm_tech = 10
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
-			owns = 5561
-			owns = 5563
-			owns = 5566
-			owns = 5567
-			owns = 5568
-			owns = 5568
-			owns = 5570
-			owns = 5572
-			owns = 5575
-			owns = 5581
-			owns = 5583
+			owns_core_province = 5561
+			owns_core_province = 5563
+			owns_core_province = 5566
+			owns_core_province = 5567
+			owns_core_province = 5568
+			owns_core_province = 5568
+			owns_core_province = 5570
+			owns_core_province = 5572
+			owns_core_province = 5575
+			owns_core_province = 5581
+			owns_core_province = 5583
 			capital_scope = {
 				is_core = ROOT
 			}
@@ -1389,10 +1389,10 @@ country_decisions = {
 			adm_tech = 10
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
-			owns = 5177
-			owns = 5182
-			owns = 5185
-			owns = 5174
+			owns_core_province = 5177
+			owns_core_province = 5182
+			owns_core_province = 5185
+			owns_core_province = 5174
 			capital_scope = {
 				is_core = ROOT
 			}
@@ -1459,10 +1459,10 @@ country_decisions = {
 		allow = {
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
-			owns = 5274
-			owns = 5277
-			owns = 5028
-			owns = 5039
+			owns_core_province = 5274
+			owns_core_province = 5277
+			owns_core_province = 5028
+			owns_core_province = 5039
 			capital_scope = {
 				is_core = ROOT
 			}
@@ -1617,10 +1617,10 @@ country_decisions = {
 		allow = {
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
-			owns = 5515
-			owns = 5679
-			owns = 5652
-			owns = 5513
+			owns_core_province = 5515
+			owns_core_province = 5679
+			owns_core_province = 5652
+			owns_core_province = 5513
 			capital_scope = {
 				is_core = ROOT
 			}
@@ -1636,6 +1636,179 @@ country_decisions = {
 				set_government_rank = 2
 			}
 			add_prestige = 10
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+
+	walara_nation = {
+		major = yes
+		potential = {
+			AND = {
+				NOT = {
+					tag = PLM
+					tag = PTG
+					tag = PCG
+					tag = PJS
+					tag = PHL
+					tag = PPX
+					tag = PLY
+				}
+				culture = Walaran
+				NOT = { exists = WLR }
+				was_never_end_game_tag_trigger = yes
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 5288
+				province_id = 5283
+				province_id = 5298
+				province_id = 5285
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				is_city = no
+			}
+		}
+		allow = {
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			owns_core_province = 5288
+			owns_core_province = 5283
+			owns_core_province = 5298
+			owns_core_province = 5285
+			capital_scope = {
+				is_core = ROOT
+			}
+			num_of_owned_provinces_with = {
+				value = 10
+				is_city = yes
+				OR = {
+					region = walara_region
+				}
+			}
+		}
+		effect = {
+			restore_country_name = yes
+			change_tag = WLR
+			if = {
+				limit = {
+					AND = {
+						has_custom_ideas = no
+						NOT = {
+							has_idea_group = WLR_ideas
+						}
+					}
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
+			walara_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = WLR
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+
+	glaziod_nation = {
+		major = yes
+		potential = {
+			AND = {
+				NOT = {
+					tag = PLM
+					tag = PTG
+					tag = PCG
+					tag = PJS
+					tag = PHL
+					tag = PPX
+					tag = PLY
+				}
+				culture = Glazian
+				NOT = { exists = GLD }
+				was_never_end_game_tag_trigger = yes
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 5321
+				province_id = 5327
+				province_id = 5331
+				province_id = 5317
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				is_city = no
+			}
+		}
+		allow = {
+			adm_tech = 10
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			owns_core_province = 5321
+			owns_core_province = 5327
+			owns_core_province = 5331
+			owns_core_province = 5317
+			capital_scope = {
+				is_core = ROOT
+			}
+			num_of_owned_provinces_with = {
+				value = 15
+				is_city = yes
+				OR = {
+					region = lomea_region
+				}
+			}
+		}
+		effect = {
+			restore_country_name = yes
+			change_tag = GLD
+			if = {
+				limit = {
+					AND = {
+						has_custom_ideas = no
+						NOT = {
+							has_idea_group = GLD_ideas
+						}
+					}
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
+			lomea_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = GLD
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
 		}
 		ai_will_do = {
 			factor = 1
