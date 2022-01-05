@@ -241,6 +241,7 @@ renaissance = {
 	}
 
 	start_chance = 5		#in 100 for when a province can_start
+
 	on_start = institution_events.2
 
 	can_embrace = {
@@ -253,9 +254,16 @@ renaissance = {
 			factor = 0.12
 			scale = yes
 			potential = {
+				NOT = { religion = lathvy }
 				any_friendly_coast_border_province = {
 					renaissance = 100
-					NOT = { religion = {lathvy} }
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = borders_not_lathvy_province_coast
+				NOT = { religion = lathvy }
+				any_friendly_coast_border_province = {
+					renaissance = 100
 				}
 			}
 		}
@@ -265,11 +273,16 @@ renaissance = {
 			scale = yes
 			potential = {
 				any_friendly_coast_border_province = {
-					AND = {
-						renaissance = 100
-						religion = lathvy
-					}
+					renaissance = 100
 				}
+				religion = lathvy
+			}
+			custom_trigger_tooltip = {
+				tooltip = borders_lathvy_province_coast
+				any_friendly_coast_border_province = {
+					renaissance = 100
+				}
+				religion = lathvy
 			}
 		}
 
@@ -277,6 +290,12 @@ renaissance = {
 			factor = 0.3
 			scale = yes
 			potential = {
+				development = 10
+				NOT = { development = 15 }
+				religion = lathvy
+			}
+			custom_trigger_tooltip = {
+				tooltip = 10_15_dev_lathvy
 				development = 10
 				NOT = { development = 15 }
 				religion = lathvy
@@ -291,12 +310,23 @@ renaissance = {
 				NOT = { development = 20 }
 				religion = lathvy
 			}
+			custom_trigger_tooltip = {
+				tooltip = 15_20_dev_lathvy
+				development = 15
+				NOT = { development = 20 }
+				religion = lathvy
+			}
 		}
 
 		modifier = {
 			factor = 0.42
 			scale = yes
 			potential = {
+				development = 20
+				religion = lathvy
+			}
+			custom_trigger_tooltip = {
+				tooltip = 20_dev_lathvy
 				development = 20
 				religion = lathvy
 			}
@@ -310,23 +340,43 @@ renaissance = {
 					has_institution = renaissance
 				}
 			}
+			custom_trigger_tooltip = {
+				tooltip = has_renaissance
+				owner = {
+					has_institution = renaissance
+				}
+			}
 		}
 
 		modifier = {
-			factor = 0.18
+			factor = 0.24
 			scale = yes
 			potential = {
 				any_neighbor_province = {
-					NOT = { religion = {lathvy} }
+					NOT = { religion = lathvy }
+					renaissance = 100
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = has_renaissance_non_lathvy
+				any_neighbor_province = {
+					NOT = { religion = lathvy }
 					renaissance = 100
 				}
 			}
 		}
 
 		modifier = {
-			factor = 0.36
+			factor = 0.48
 			scale = yes
 			potential = {
+				any_neighbor_province = {
+					religion = lathvy
+					renaissance = 100
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = has_renaissance_lathvy
 				any_neighbor_province = {
 					religion = lathvy
 					renaissance = 100
@@ -341,12 +391,23 @@ renaissance = {
 				is_year = 270
 				religion = lathvy
 			}
+			custom_trigger_tooltip = {
+				tooltip = 270_lathvy_bonus
+				is_year = 270
+				religion = lathvy
+			}
 		}
 
 		modifier = {
 			factor = 0.36
 			scale = yes
 			potential = {
+				is_year = 270
+				development = 20
+				religion = reformed_oppian
+			}
+			custom_trigger_tooltip = {
+				tooltip = reformed_oppian_bonus
 				is_year = 270
 				development = 20
 				religion = reformed_oppian
@@ -358,15 +419,25 @@ renaissance = {
 			scale = yes
 			potential = {
 				is_year = 270
-				development = 10
+				religion = bamali
+			}
+			custom_trigger_tooltip = {
+				tooltip = bamali_bonus
+				is_year = 270
 				religion = bamali
 			}
 		}
 
 		modifier = {
-			factor = 0.6
+			factor = 0.48
 			scale = yes
 			potential = {
+				is_year = 260
+				development = 15
+				religion = va
+			}
+			custom_trigger_tooltip = {
+				tooltip = va_bonus
 				is_year = 260
 				development = 15
 				religion = va
@@ -374,9 +445,14 @@ renaissance = {
 		}
 
 		modifier = {
-			factor = -0.12
+			factor = -0.24
 			scale = yes
 			potential = {
+				NOT = { is_year = 270 }
+				religion = egr
+			}
+			custom_trigger_tooltip = {
+				tooltip = egr_debuff
 				NOT = { is_year = 270 }
 				religion = egr
 			}
@@ -410,165 +486,65 @@ renaissance = {
 	}
 }
 
-
 #######################################
-# New World
+# The Edolyssa
 # 
-# Colonising is good.. mkay.-.
+# <insert a joke about british dental health here>
 #######################################
+
 new_world_i = {
 
 	bonus = {
-		global_prov_trade_power_modifier = 0.10
+		monarch_lifespan = 0.1
+		development_cost = -0.05
 	}
 
 	trade_company_efficiency = 0.6
 
 
-	historical_start_date = 1500.1.1
-	historical_start_province = 224 #Sevilla
+	historical_start_date = 300.1.1
+	historical_start_province = 5493 #Bohora
 
 	history = {
 		OR = {
 			AND = {
-				is_year = 1500
-				continent = europe
-				OR = {
-					owner = { has_idea = quest_for_the_new_world }
-					owner = { colony = 1 }
-				}
+				is_year = 300
+				tag = NAF
 			}
-			AND = {
-				is_year = 1550
-				owner = {
-					NOT = { technology_group = north_american }
-					NOT = { technology_group = mesoamerican }
-					NOT = { technology_group = south_american }
-					NOT = { technology_group = andean }
-				}
-				superregion = south_america_superregion
-			}
-			AND = {
-				is_year = 1550
-				owner = {
-					NOT = { technology_group = north_american }
-					NOT = { technology_group = mesoamerican }
-					NOT = { technology_group = south_american }
-					NOT = { technology_group = andean }
-				}
-				superregion = north_america_superregion
-			}
-			AND = {
-				is_year = 1550
-				owner = {
-					NOT = { technology_group = north_american }
-					NOT = { technology_group = mesoamerican }
-					NOT = { technology_group = south_american }
-					NOT = { technology_group = andean }
-				}
-				superregion = central_america_superregion
-			}
-			AND = {
-				is_year = 1600
-				superregion = near_east_superregion
-			}
-			AND = {
-				is_year = 1600
-				continent = europe
-			}
-			AND = {
-				is_year = 1625
-				superregion = persia_superregion
-			}
-			AND = {
-				is_year = 1650
-				superregion = india_superregion
-			}
-			
-			
-			AND = {
-				is_year = 1650
-				superregion = china_superregion
-			}
-			
-			AND = {
-				is_year = 1650
-				superregion = east_indies_superregion
-			}
-			AND = {
-				is_year = 1700
-				superregion = africa_superregion
-			}
-			is_year = 1800
 		}
 	}
 	
 	can_start = {
-		is_year = 1500
 		OR = {
-			continent = europe
-			continent = asia
-			continent = africa
-		}
-		has_port = yes
-		is_island = no
-		is_state = yes
-		OR = {
-			province_has_center_of_trade_of_level = 1
-			development = 12
-			is_capital = yes
-		}
-		is_in_capital_area = yes
-		owner = { 
-			has_idea = quest_for_the_new_world 
-			#at least one province colonised or colonising, or have a subject colony
-			OR = {
-				any_owned_province = {
-					OR = {
-						continent = north_america
-						continent = south_america
-						continent = new_world
-					}
-				}
-				any_subject_country = {
-					OR = {
-						is_subject_of_type = colony
-						is_subject_of_type = crown_colony
-						is_subject_of_type = private_enterprise
-						is_subject_of_type = self_governing_colony
-					}
-					capital_scope = {
-						OR = {
-							continent = north_america
-							continent = south_america
-							continent = new_world
-						}
-					}
-				}
+			AND = {
+				is_year = 300
+				is_state = yes
+				is_island = no
+				owner = { tag = NAF }
+				development = 20
 			}
-			OR = {
-				north_america = { has_discovered = PREV }
-				south_america = { has_discovered = PREV }
-				new_world = { has_discovered = PREV }
+			AND = {
+				is_year = 310
+				NOT = { exists = NAF }
+				culture = Kachik
+				any_province = {
+					AND = {
+						culture = Kachik
+						owner = { NOT = { tag = NAF } }
+					}
+				}
 			}
 		}
 	}
+	
 	start_chance = 5		#in 100 for when a province can_start
 	
-	
 	on_start = institution_events.3
-	
-	
-	
-
-	
 	
 	can_embrace = {
 		always = yes
 	}
 
-
-	
 	embracement_speed = {
 	
 		modifier = {
@@ -580,7 +556,6 @@ new_world_i = {
 					new_world_i = 100
 				}
 			}
-			
 		}
 		
 		modifier = {
@@ -659,6 +634,7 @@ new_world_i = {
 				}
 			}
 		}
+
 		modifier = {
 			factor = 2
 			scale = yes
@@ -704,11 +680,10 @@ new_world_i = {
 	}
 }
 
-
-
 #######################################
-# Printing Press
+# Egalitarianism
 #######################################
+
 printing_press = {
 
 	bonus = {
@@ -1053,13 +1028,10 @@ printing_press = {
 	}
 }
 
-
-
-
-
 #######################################
 # Global Trade
 #######################################
+
 global_trade = {
 
 	bonus = {
