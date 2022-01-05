@@ -173,9 +173,9 @@
  ORC_ADJ: "Ordican"
  ORC_ADJ2: "Ordican"
 
- HAS: "Hasia"
- HAS_ADJ: "Hasian"
- HAS_ADJ2: "Hasian"
+ HSH: "Hasia"
+ HSH_ADJ: "Hasian"
+ HSH_ADJ2: "Hasian"
 
  NPX: "New Pexamol"
  NPX_ADJ: "New Pexamolite"
@@ -657,8 +657,8 @@
  YTI_ADJ2: "Yatian"
 
  YTB: "Yatia-Blasta"
- YTB_ADJ: "Yatian-Blastan"
- YTB_ADJ2: "Yatian-Blastan"
+ YTB_ADJ: "Yatia-Blastan"
+ YTB_ADJ2: "Yatia-Blastan"
 
  SZI: "Szizk"
  SZI_ADJ: "Szizkan"
@@ -1540,3 +1540,9 @@ GEP_ADJ2: "Geopyopian"
 
  reform_pexto_decision_title:0 "Establish [Root.GetAdjective] Kingdom"
  reform_pexto_decision_desc:0 "[Root.GetName] has lived under the heel of Pextoglazia for long enough. It is time to establish our own independent kingdom, so we may decide our own destiny."
+
+ walara_nation_title:0 "Form Walara"
+ walara_nation_desc:0 "The Walarans, long oppressed by their Pextoglazian overlords, are now free. We are in a position to establish an independent Walaran Kingdom, and it would be unwise not to."
+ 
+ glaziod_nation_title:0 "Form Glaziod"
+ glaziod_nation_desc:0 "Glaziod is free at last. With a unique, growing Glazian identity in our nation, perhaps the time is right to establish a kingdom for all Glazians."
