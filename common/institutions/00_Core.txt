@@ -548,110 +548,75 @@ new_world_i = {
 	embracement_speed = {
 	
 		modifier = {
-			factor = 1.2
-			scale = yes
-			custom_trigger_tooltip = {
-				tooltip = tooltip_any_friendly_coast_border_province_has_embraced_colonialism
-				any_friendly_coast_border_province = {
-					new_world_i = 100
-				}
-			}
-		}
-		
-		modifier = {
-			factor = 0.5
-			scale = yes
-			potential = {
-				has_port = yes
-				NOT = {
-					any_friendly_coast_border_province = {
-						new_world_i = 100
-					}
-				}
-			}
-			custom_trigger_tooltip = {
-				tooltip = tooltip_neighbor_port_province_new_world
-				has_port = yes
-				any_neighbor_province = {
-					new_world_i = 100
-				}
-			}
-		}
-		
-		#Port provinces in countries with colonial subjects
-		modifier = {
-			factor = 10
-			potential = {
-				OR = {
-					has_port = yes
-					is_capital = yes
-				}
-				owner = {
-					capital_scope = {
-						NOT = { continent = north_america }
-						NOT = { continent = south_america }
-						NOT = { continent = new_world }
-					}
-				}
-			}
-			custom_trigger_tooltip = {
-				tooltip = tooltip_has_colonial_subject_in_new_world
-				OR = {
-					has_port = yes
-					is_capital = yes
-				}
-				owner = {
-					colony = 1
-					any_subject_country = {
-						is_colonial_nation = yes
-						OR = {
-							capital_scope = { continent = north_america }
-							capital_scope = { continent = south_america }
-							capital_scope = { continent = new_world }
-						}
-					}
-				}
-			}
-		}
-		
-		modifier = {
-			factor = 5
+			factor = 0.6
 			scale = yes
 			potential = {
 				owner = {
-					is_colonial_nation = yes
+					tag = NAF
 				}
 			}
 			custom_trigger_tooltip = {
-				tooltip = tooltip_colonial_overlord_new_world_i
-				OR = {
-					has_port = yes
-					is_capital = yes
-				}
+				tooltip = is_nafa
 				owner = {
-					is_colonial_nation = yes
-					overlord = { has_institution = new_world_i }
+					tag = NAF
 				}
 			}
 		}
 
 		modifier = {
-			factor = 2
+			factor = 0.24
+			scale = yes
+			potential = {
+				owner = {
+					religious_school = {
+						group = lathvy_group
+						school = nafan_school
+					}
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = has_nafa_school
+				owner = {
+					religious_school = {
+						group = lathvy_group
+						school = nafan_school
+					}
+				}
+			}
+		}
+
+		modifier = {
+			factor = 0.24
+			scale = yes
+			potential = {
+				any_neighbor_province = {
+					new_world_i = 100
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = has_new_world_i_lathvy
+				any_neighbor_province = {
+					new_world_i = 100
+				}
+			}
+		}
+
+		modifier = {
+			factor = 3
 			scale = yes
 			potential = {
 				owner = {
 					has_institution = new_world_i
 				}
 			}
-			
 			custom_trigger_tooltip = {
-				tooltip = tooltip_new_world_i_embraced
-				is_owned_by_trade_company = no
+				tooltip = has_edolyssa
 				owner = {
 					has_institution = new_world_i
 				}
 			}
 		}
+
 	}
 	
 	ai_will_do = { #Cost of embracing institution must be lower than this factor * last month's regular income, and higher if loans are needed. (Or it has a more than long term goal...)
@@ -692,82 +657,14 @@ printing_press = {
 
 	trade_company_efficiency = 0.8
 
-	historical_start_date = 1550.1.1
+	historical_start_date = 350.1.1
 	historical_start_province = 1876 #Frankfurt
 
 	history = {
 		OR = {
 			AND = {
-				province_id = 1876
-				is_year = 1550
-			}
-			AND = {
-				is_year = 1560
-				OR = {
-					religion = protestant
-					religion = reformed
-					region = italy_region
-					region = france_region
-				}
-			}
-			AND = {
-				is_year = 1575
-				continent = europe
-				development = 12
-			}
-			AND = {
-				is_year = 1600
-				continent = europe
-			}
-			AND = {
-				is_year = 1600
-				owner = {
-					NOT = { technology_group = north_american }
-					NOT = { technology_group = mesoamerican }
-					NOT = { technology_group = south_american }
-					NOT = { technology_group = andean }
-				}
-				superregion = south_america_superregion
-			}
-			AND = {
-				is_year = 1600
-				owner = {
-					NOT = { technology_group = north_american }
-					NOT = { technology_group = mesoamerican }
-					NOT = { technology_group = south_american }
-					NOT = { technology_group = andean }
-				}
-				superregion = north_america_superregion
-			}
-			AND = {
-				is_year = 1600
-				owner = {
-					NOT = { technology_group = north_american }
-					NOT = { technology_group = mesoamerican }
-					NOT = { technology_group = south_american }
-					NOT = { technology_group = andean }
-				}
-				superregion = central_america_superregion
-			}
-			AND = {
-				is_year = 1625
-				superregion = near_east_superregion
-			}
-			AND = {
-				is_year = 1650
-				superregion = persia_superregion
-			}
-			AND = {
-				is_year = 1725
-				superregion = china_superregion
-			}
-			AND = {
-				is_year = 1725
-				superregion = india_superregion
-			}
-			AND = {
-				is_year = 1725
-				superregion = east_indies_superregion
+				is_year = 350
+				religion = qamon
 			}
 		}
 	}
