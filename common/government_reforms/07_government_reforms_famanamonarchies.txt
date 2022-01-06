@@ -2,7 +2,7 @@
 
 oppian_state_reform = {
 	icon = "oppian"
-	allow_normal_conversion = yes
+	allow_normal_conversion = no
 	legacy_equivalent = despotic_monarchy
 	valid_for_nation_designer = yes
 	nation_designer_cost = 0
@@ -118,7 +118,7 @@ tomban_reform = {
 
 nafan_gov = {
 	icon = "nafanempire"
-	allow_normal_conversion = yes
+	allow_normal_conversion = no
 	potential = {
 		tag = NAF
 	}
