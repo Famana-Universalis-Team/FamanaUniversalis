@@ -1,17 +1,21 @@
 #Written with Eu4 Easy Province Creator by emiroercn
 #UNNAMED
-culture = 
-religion = animism
+add_core = GEP
+owner = GEP
+controller = GEP
+culture = Zeli
+religion = washoom
 hre = no
 base_tax = 1
 base_production = 1
+trade_goods = grain
 base_manpower = 1
-trade_goods = 
-native_size = 2
-native_ferocity = 1
-native_hostileness = 1
 capital = "UNNAMED"
-is_city = no
+is_city = yes
+
+
+
+
 
 
 
