@@ -30,7 +30,7 @@ oppian_group = {
 		}
 
 		heretic = {
-			REFORMED LATHVY 
+			THALMORIAN CHIGIMI 
 		}
 		allowed_conversion = {
 			reformed_oppian
@@ -68,7 +68,7 @@ oppian_group = {
 		}
 
 		heretic = {
-			REFORMED LATHVY 
+			TEPANK JAYLAN 
 		}
 		allowed_conversion = {
 			reformed_oppian
@@ -120,7 +120,7 @@ oppian_group = {
 		}
 
 		heretic = {
-			TRADITIONALIST LATHVY 
+			TRADITIONALIST NHOUKAR 
 		}
 
 		defender_of_faith = yes
@@ -649,7 +649,7 @@ lathvy_group = {
 		}
 
 		heretic = {
-			YOMTANIAN LIBERAL YOSIST ROCHONI
+			YOMTANIAN LIBERAL YOSIST ASSUL
 		}
 
 		uses_church_power = yes
@@ -691,7 +691,7 @@ lathvy_group = {
 		}
 
 		heretic = {
-			ROCHONI YOSIST HARMONIC REFORMED
+			ORDIC YOSIST HARMONIC REFORMED
 		}
 
 		crusade_name = CRUSADE
@@ -724,7 +724,7 @@ gomic_pagan_group = {
 		
 		fervor = yes
 		
-		heretic = { HALOGENITE XALNISH OPPIAN }	
+		heretic = { HALOGENITE OPMAKI NASTAN }	
 	}
 	bosisi = {
 		color = { 93 90 23 }
@@ -776,7 +776,7 @@ gomic_pagan_group = {
 			idea_cost = -0.05
 		}
 		
-		heretic = { MAK DYRIAN }	
+		heretic = { UMIC DYRIAN }	
 
 	}
 	pawani = {
@@ -843,7 +843,7 @@ xalian_group = {
 			followers_of_delk
 		}
 		
-		heretic = { MOR VIN SHIR }
+		heretic = { MUDITE OREIST UNIFIER }
 	}
 	vinian = {
 		center_of_religion = 5458
@@ -868,7 +868,7 @@ xalian_group = {
 			followers_of_vin
 		}
 		
-		heretic = { MOR DELK SHIR }	
+		heretic = { DROWNED CHINANI UNIFIER }	
 	}
 	morian = {
 		center_of_religion = 5411
@@ -893,7 +893,7 @@ xalian_group = {
 			followers_of_mor
 		}
 		
-		heretic = { DELK VIN SHIR }	
+		heretic = { ARIST DELLOP RINGKIAN }	
 	}
 	shirian = {
 		center_of_religion = 5388
@@ -917,7 +917,7 @@ xalian_group = {
 			followers_of_shir
 		}
 		
-		heretic = { MOR VIN DELK }	
+		heretic = { RASTRAYVARIST DELLOP UNIFIER }	
 	}
 
 	harmonized_modifier = harmonized_pagan
@@ -946,7 +946,7 @@ far_eastern_gomic = {
 			eastern_oppian
 		}
 		
-		heretic = { YEV THEIST }	
+		heretic = { YEV HARMONIST }	
 	}
 	bilik = {
 		center_of_religion = 5690
@@ -965,7 +965,7 @@ far_eastern_gomic = {
 		}
 		
 		heretic = {
-			DOUBTER THEIST
+			DOUBTER MONSTER_WORSHIPPER
 		}
 	}
 	aresian = {
@@ -983,7 +983,7 @@ far_eastern_gomic = {
 		province = {
 			local_missionary_strength = 0.02
 		}
-		heretic = { THEIST }
+		heretic = { DUALIST }
 		has_patriarchs = yes
 
 		orthodox_icons = {
@@ -1057,7 +1057,7 @@ far_eastern_gomic = {
 			local_missionary_strength = 0.01
 		}
 		
-		heretic = { THEIST }	
+		heretic = { AMENUAN }	
 	}
 
 	harmonized_modifier = harmonized_pagan
@@ -1228,7 +1228,7 @@ north_estali = {
 			local_missionary_strength = 0.01
 		}
 		
-		heretic = { ROCHONI }
+		heretic = { NULLIC }
 	}
 	ordic = { 
 		color = { 139 144 110 }
@@ -1270,7 +1270,7 @@ gadan_group = {
 			prestige_from_land = 0.25
 		}
 		
-		heretic = { MAK MOR DELK }	
+		heretic = { REDUCED_PANTHEON EXPANDED_PANTHEON MALKAPLATAN }	
 	}
 	
 	harmonized_modifier = harmonized_pagan
