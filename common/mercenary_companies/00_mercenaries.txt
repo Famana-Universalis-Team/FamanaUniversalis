@@ -1,0 +1,195 @@
+# Pexamolite Paladins
+merc_pexamolite_paladins = {
+    regiments_per_development = 0.05
+    home_province = 5203 # new paxamol
+	cavalry_weight = 0.2
+	cavalry_cap = 4
+	sprites = { dlc056_mlo_sprite_pack sav_base_sprite_pack westerngfx_sprite_pack }
+    trigger = {
+		
+		OR = {
+		any_owned_province = {
+			region = pextoglazia_region
+		}
+		any_owned_province = {
+			region = lomea_region
+		}
+		any_owned_province = {
+			region = emastalia_region
+		}
+		any_owned_province = {
+			region = north_xalia_region
+		}
+		any_owned_province = {
+			region = moria_region
+		}
+	}
+		
+		
+	}
+	
+}
+
+# Haoli Free Company
+merc_haoli_free_company = {
+    regiments_per_development = 0.05
+    home_province = 5023 # Haoli
+	cavalry_weight = 0.2
+	cavalry_cap = 4
+	sprites = { dlc056_lan_sprite_pack sav_base_sprite_pack westerngfx_sprite_pack }
+   trigger = {
+		OR = {
+		any_owned_province = {
+			region = laglon_region
+		}
+		any_owned_province = {
+			area = unnamed_pexto_10
+		}
+		any_owned_province = {
+			region = west_estal_region
+		}
+		any_owned_province = {
+			region = upper_oppia_region
+		}
+		any_owned_province = {
+			region = lower_oppia_region
+		}
+		any_owned_province = {
+			area = sosne_area
+		}
+		any_owned_province = {
+			area = gromash_area
+		}
+	}
+	}
+	
+	
+}
+#jzoets
+merc_jzoets = {
+    regiments_per_development = 0.01
+    home_province = 5491 # yallwaka
+	cavalry_weight = 0.1
+	cavalry_cap = 4
+	sprites = { dlc056_lan_sprite_pack sav_base_sprite_pack westerngfx_sprite_pack }
+   trigger = {
+		has_country_modifier = jzoet_help
+	}
+	modifier = { 
+		infantry_power = 0.05
+		shock_damage = 0.05
+	}
+}
+# Jabuskay Band
+merc_jabuskay_band = {
+    regiments_per_development = 0.05
+    home_province = 5141 # Jabuskay
+	sprites = { dlc056_lan_sprite_pack sav_base_sprite_pack westerngfx_sprite_pack }
+   trigger = {
+		OR = {
+		any_owned_province = {
+			region = maky_region
+		}
+		any_owned_province = {
+			region = arlenta_region
+		}
+		any_owned_province = {
+			region = upper_makyna_region
+		}
+		any_owned_province = {
+			region = south_xalia_region
+		}
+		any_owned_province = {
+			region = moria_region
+		}
+	}	
+	}
+	modifier = { 
+		land_attrition = -0.10
+	}
+}
+# Free Vanomans
+merc_free_vanomans = {
+    regiments_per_development = 0.05
+	cavalry_weight = 1.4
+    home_province = 5825 # somewhere in emtik
+	sprites = { dlc056_lan_sprite_pack sav_base_sprite_pack westerngfx_sprite_pack }
+   trigger = {
+		OR = {
+		any_owned_province = {
+			region = nozumol_region
+		}
+		any_owned_province = {
+			region = bamal_gulf_region
+		}
+		any_owned_province = {
+			region = vanoma_region
+		}
+		any_owned_province = {
+			region = aresia_region
+		}
+		
+		
+	}	
+	5825 = { is_empty = yes }
+	}
+	modifier = { 
+		land_morale = 0.15
+		merc_maintenance_modifier = -0.10
+	}
+}
+# Knights of the straits
+merc_knights_straits = {
+    regiments_per_development = 0.05
+	cavalry_weight = 0.4
+    home_province = 5294 # Ezoo
+	sprites = { dlc056_lan_sprite_pack sav_base_sprite_pack westerngfx_sprite_pack }
+   trigger = {
+		OR = {
+		any_owned_province = {
+			region = walara_region
+		}
+		any_owned_province = {
+			region = ordica_region
+		}
+		any_owned_province = {
+			area = unnamed_pexto_4
+		}
+		
+		
+		
+	}	
+
+	}
+	
+}
+#Ordic Company
+merc_ordic_company = {
+    regiments_per_development = 0.05
+    home_province = 6220 # somewhere in central ordica
+	sprites = { dlc056_lan_sprite_pack sav_base_sprite_pack westerngfx_sprite_pack }
+   trigger = {
+		OR = {
+		any_owned_province = {
+			region = pextoglazia_region
+		}
+		any_owned_province = {
+			region = ordica_region
+		}
+		any_owned_province = {
+			region = vordor_region
+		}
+		any_owned_province = {
+			area = unnamed_pexto_14
+		}
+		any_owned_province = {
+			area = unnamed_pexto_12
+		}
+		
+		
+		
+	}	
+
+	}
+	
+}
