@@ -1,0 +1,274 @@
+# Pexamolite Paladins
+merc_pexamolite_paladins = {
+    regiments_per_development = 0.05
+    home_province = 5203 # new paxamol
+	cavalry_weight = 0.2
+	cavalry_cap = 4
+	sprites = { westerngfx_sprite_pack }
+    trigger = {
+		OR = {
+			any_owned_province = {
+				region = pextoglazia_region
+			}
+			any_owned_province = {
+				region = lomea_region
+			}
+			any_owned_province = {
+				region = emastalia_region
+			}
+			any_owned_province = {
+				region = north_xalia_region
+			}
+			any_owned_province = {
+				region = moria_region
+			}
+		}
+	}
+}
+
+# Haoli Free Company
+merc_haoli_free_company = {
+    regiments_per_development = 0.05
+    home_province = 5023 # Haoli
+	cavalry_weight = 0.2
+	cavalry_cap = 4
+	sprites = { westerngfx_sprite_pack }
+	trigger = {
+		OR = {
+			any_owned_province = {
+				region = laglon_region
+			}
+			any_owned_province = {
+				area = unnamed_pexto_10
+			}
+			any_owned_province = {
+				region = west_estal_region
+			}
+			any_owned_province = {
+				region = upper_oppia_region
+			}
+			any_owned_province = {
+				region = lower_oppia_region
+			}
+			any_owned_province = {
+				area = sosne_area
+			}
+			any_owned_province = {
+				area = gromash_area
+			}
+		}
+	}
+	modifier = { }
+}
+
+# Jzoets
+merc_jzoets = {
+    regiments_per_development = 0.01
+    home_province = 5491 # yallwaka
+	cavalry_weight = 0.1
+	cavalry_cap = 4
+	sprites = { westerngfx_sprite_pack }
+	trigger = {
+		has_country_modifier = jzoet_help
+	}
+	modifier = {
+		infantry_power = 0.05
+		shock_damage = 0.05
+	}
+}
+
+# Jabuskay Band
+merc_jabuskay_band = {
+    regiments_per_development = 0.05
+    home_province = 5141 # Jabuskay
+	sprites = { westerngfx_sprite_pack }
+	trigger = {
+		OR = {
+			any_owned_province = {
+				region = maky_region
+			}
+			any_owned_province = {
+				region = arlenta_region
+			}
+			any_owned_province = {
+				region = upper_makyna_region
+			}
+			any_owned_province = {
+				region = south_xalia_region
+			}
+			any_owned_province = {
+				region = moria_region
+			}
+		}	
+	}
+	modifier = { 
+		land_attrition = -0.10
+	}
+}
+
+# Free Vanomans
+merc_free_vanomans = {
+    regiments_per_development = 0.05
+	cavalry_weight = 0.4
+    home_province = 5825 # somewhere in emtik
+	sprites = { westerngfx_sprite_pack }
+	trigger = {
+		AND = {
+			5825 = { is_empty = yes }
+			OR = {
+				any_owned_province = {
+					region = nozumol_region
+				}
+				any_owned_province = {
+					region = bamal_gulf_region
+				}
+				any_owned_province = {
+					region = vanoma_region
+				}
+				any_owned_province = {
+					region = aresia_region
+				}
+			}
+		}
+	}
+	modifier = {
+		land_morale = 0.15
+		merc_maintenance_modifier = -0.10
+	}
+}
+
+# Knights of the Straits
+merc_knights_straits = {
+    regiments_per_development = 0.05
+	cavalry_weight = 0.4
+    home_province = 5294 # Ezoo
+	sprites = { westerngfx_sprite_pack }
+	trigger = {
+		OR = {
+			any_owned_province = {
+				region = walara_region
+			}
+			any_owned_province = {
+				region = ordica_region
+			}
+			any_owned_province = {
+				area = unnamed_pexto_4
+			}
+		}
+	}
+	modifier = { }
+}
+
+#Ordic Bebers
+merc_ordic_company = {
+    regiments_per_development = 0.05
+    home_province = 6220 # somewhere in central ordica
+	sprites = { westerngfx_sprite_pack }
+	trigger = {
+		OR = {
+			any_owned_province = {
+				region = pextoglazia_region
+			}
+			any_owned_province = {
+				region = ordica_region
+			}
+			any_owned_province = {
+				region = vordor_region
+			}
+			any_owned_province = {
+				area = unnamed_pexto_14
+			}
+			any_owned_province = {
+				area = unnamed_pexto_12
+			}
+		}	
+	}
+	modifier = {
+		land_attrition = -0.25
+	}
+}
+
+# Sorlasti (Yatia-Blasta)
+merc_sorlasti = {
+    regiments_per_development = 0.03
+	cavalry_weight = 0.1
+	artillery_weight = 0.3
+	cavalry_cap = 4
+    home_province = 5509
+	sprites = { westerngfx_sprite_pack }
+    trigger = {
+		any_owned_province = {
+			OR = {
+				area = unnamed_area_40
+				area = yatia_area
+			} 
+		}
+	}
+	modifier = {
+		movement_speed = 0.10
+		reinforce_speed = 0.10
+	}
+}
+
+# Karsi Raiders (Kars)
+merc_karsi = {
+    regiments_per_development = 0.05
+	cavalry_weight = 0.35
+	cavalry_cap = 8
+    home_province = 5149
+    cost_modifier = 0.75
+	sprites = { muslimgfx_sprite_pack }
+    trigger = {
+		capital_scope = {
+			OR = {
+				region = maky_region
+				region = upper_makyna_region
+			}
+		}
+	}
+	modifier = {
+		cavalry_power = 0.15
+		shock_damage = 0.10
+	}
+}
+
+# Hasian Warband (Hasia)
+merc_hasian = {
+    regiments_per_development = 0.1
+	cavalry_weight = 0
+	artillery_weight = 0
+    home_province = 5695
+    cost_modifier = 1.5
+	sprites = { westerngfx_sprite_pack }
+    trigger = {
+		AND = {
+			5695 = {
+				culture = Hasian
+			}
+			NOT = {
+				OR = {
+					has_country_modifier = yomtanian_nation
+					war_with = HSH
+				}
+			}
+			OR = {
+				tag = MOX
+				AND = {
+					capital_scope = {
+						superregion = west_estal_superregion
+					}
+					NOT = {
+						religion_group = lathvy_group
+					}
+				}
+			}
+		}
+	}
+	modifier = {
+		land_morale = 0.33
+		shock_damage = 0.50
+		shock_damage_received = -0.50
+		fire_damage_received = 0.25
+		reinforce_speed = -0.50
+	}
+}
