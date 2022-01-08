@@ -65,6 +65,7 @@ merc_haoli_free_company = {
 merc_jzoets = {
     regiments_per_development = 0.01
     home_province = 5491 # yallwaka
+	cost_modifier = 0.1
 	cavalry_weight = 0.1
 	cavalry_cap = 4
 	sprites = { westerngfx_sprite_pack }
@@ -111,6 +112,7 @@ merc_free_vanomans = {
     regiments_per_development = 0.05
 	cavalry_weight = 0.4
     home_province = 5825 # somewhere in emtik
+	cost_modifier = 0.75
 	sprites = { westerngfx_sprite_pack }
 	trigger = {
 		AND = {
@@ -156,7 +158,9 @@ merc_knights_straits = {
 			}
 		}
 	}
-	modifier = { }
+	modifier = {
+		discipline = 0.05
+	}
 }
 
 #Ordic Bebers
@@ -270,5 +274,193 @@ merc_hasian = {
 		shock_damage_received = -0.50
 		fire_damage_received = 0.25
 		reinforce_speed = -0.50
+	}
+}
+
+# Darlaqids
+merc_darlaqids = {
+    regiments_per_development = 0.03
+	cavalry_weight = 0.1
+	artillery_weight = 0.3
+	cavalry_cap = 6
+    home_province = 5128
+	sprites = { westerngfx_sprite_pack }
+    trigger = {
+		any_owned_province = {
+			region = arlenta_region
+		}
+	}
+	modifier = {
+		shock_damage = 0.15
+	}
+}
+
+# Komi Company
+merc_komi_company = {
+    regiments_per_development = 0.025
+	cavalry_weight = 0.1
+	artillery_weight = 0.3
+	cavalry_cap = 4
+    home_province = 5387
+	cost_modifier = 1.25
+	sprites = { westerngfx_sprite_pack }
+    trigger = {
+		capital_scope = {
+			OR = {
+				region = east_xalia_region
+				region = north_xalia_region
+				region = moxon_region
+			}
+		}
+	}
+	modifier = {
+	}
+}
+
+# Nevian Company
+merc_nevian_company = {
+    regiments_per_development = 0.025
+	cavalry_weight = 0.1
+	artillery_weight = 0.3
+	cavalry_cap = 4
+    home_province = 5339
+	sprites = { westerngfx_sprite_pack }
+    trigger = {
+		any_owned_province = {
+			OR = {
+				region = pextoglazia_region
+				region = lomea_region
+				region = walara_region
+			}
+		}
+	}
+	modifier = {
+		movement_speed = -0.10
+		reinforce_speed = 0.15
+	}
+}
+
+# Quanex Guard
+merc_quanex_guard = {
+    regiments_per_development = 0.03
+	cavalry_weight = 0.1
+	artillery_weight = 0.3
+	cavalry_cap = 4
+    home_province = 5066
+	cost_modifier = 0.5
+	sprites = { westerngfx_sprite_pack }
+    trigger = {
+		AND = {
+			5066 = {
+				culture = Quanexite
+			}
+			capital_scope = {
+				province_id = 5066
+			}
+		}
+	}
+	modifier = {
+		recover_army_morale_speed = 0.15
+		shock_damage_received = -0.10
+		reinforce_speed = -0.10
+	}
+}
+
+# New Dorloc Company
+merc_ndc = {
+    regiments_per_development = 0.03
+	cavalry_weight = 0.1
+	artillery_weight = 0.3
+	cavalry_cap = 4
+    home_province = 6857
+	cost_modifier = 1.5
+	sprites = { westerngfx_sprite_pack }
+    trigger = {
+		capital_scope = {
+			region = vishma_region
+		}
+	}
+	modifier = {
+		discipline = 0.05
+	}
+}
+
+# Gau Marauders
+merc_gau_marauders = {
+    regiments_per_development = 0.025
+	cavalry_weight = 0.45
+    home_province = 5639
+	cost_modifier = 0.75
+	sprites = { westerngfx_sprite_pack }
+    trigger = {
+		any_owned_province = {
+			superregion = jasua_superregion
+		}
+	}
+	modifier = {
+		movement_speed = 0.33
+		reinforce_speed = 0.50
+	}
+}
+
+# Morsum Corps
+merc_morsum = {
+    regiments_per_development = 0.04
+	cavalry_weight = 0.1
+	artillery_weight = 0.3
+	cavalry_cap = 2
+    home_province = 5411
+	sprites = { westerngfx_sprite_pack }
+    trigger = {
+		any_owned_province = {
+			superregion = ga_xal_superregion
+		}
+	}
+	modifier = {
+		discipline = 0.05
+		fire_damage = 0.10
+	}
+}
+
+# Callan Marines
+merc_callan = {
+    regiments_per_development = 0.025
+	cavalry_weight = 0.1
+	artillery_weight = 0.3
+	cavalry_cap = 4
+    home_province = 5459
+	cost_modifier = 0.5
+	sprites = { westerngfx_sprite_pack }
+    trigger = {
+		AND = {
+			OR = {
+				ROOT = {
+					religion = vinian
+				}
+			}
+			any_owned_province = {
+				superregion = ga_xal_superregion
+			}
+		}
+	}
+	modifier = {
+		shock_damage_received = 0.10
+	}
+}
+
+# Diam Company
+merc_diam = {
+    regiments_per_development = 0.025
+	cavalry_weight = 0.1
+	artillery_weight = 0.3
+	cavalry_cap = 2
+    home_province = 5188
+	sprites = { westerngfx_sprite_pack }
+    trigger = {
+		any_owned_province = {
+			region = eastern_desert_region
+		}
+	}
+	modifier = {
 	}
 }
