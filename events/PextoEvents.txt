@@ -81,10 +81,10 @@ country_event = {
 
 	immediate = {
 		hidden_effect = {
-			#clr_country_flag = pextocivilwar
-			#remove_government_reform = corrupt_monarchy_reform
-			#add_government_reform = holy_monarchy_reform
-			#add_country_flag = survived_fall
+			clr_country_flag = pextocivilwar
+			remove_government_reform = corrupt_monarchy_reform
+			add_government_reform = holy_monarchy_reform
+			add_country_flag = survived_fall
 		}
 	}
     option = {
@@ -555,3 +555,4 @@ country_event = { #DIE ALREADY
         ai_chance = { factor = 1 }
     }
 }
+

@@ -42,13 +42,15 @@ impassable = {
 }
 
 mild_monsoon = {
+	6861 6862 6866 6868 6869 6870 6856
 }
 
 normal_monsoon = {
-	5237 5238
+	5237 5238 6865 6864 6859 6860
 }
 
 severe_monsoon = {
+	6857 6858
 }
 
 equator_y_on_province_image = 656
