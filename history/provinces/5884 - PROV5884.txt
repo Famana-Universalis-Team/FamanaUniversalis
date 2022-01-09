@@ -8,9 +8,9 @@ add_core = NHL
 
 hre = no
 discovered_by = western
-base_tax = 1
-base_production = 1
-trade_goods = grain
-base_manpower = 1
+base_tax = 5
+base_production = 4
+trade_goods = naval_supplies
+base_manpower = 4
 is_city = no
 extra_cost = 1
