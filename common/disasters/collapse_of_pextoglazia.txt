@@ -34,21 +34,26 @@ collapse_of_pextoglazia = {
 	can_end = {
         AND = {
             NOT = {
-                development_in_provinces = {
-                    value = 100
-                    superregion = west_estal_superregion
-                }
+                development = 100
             }
             NOT = {
                 any_country = {
                     is_subject_of_type_with_overlord = { who = PEX type = diocese }
                 }
             }
+            NOT = { num_of_rebel_controlled_provinces = 1 }
         }
     }
 
 	on_start = pexto.1
     on_end = pexto.2
+
+    on_monthly = {
+        events = {
+        }
+        random_events = {
+        }
+    }
 
 	modifier = {
         global_unrest = 5
