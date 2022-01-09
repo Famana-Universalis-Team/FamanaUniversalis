@@ -11,7 +11,7 @@
  INSTITUTION_CAN_APPEAR:1 "Among your provinces it is most likely to appear in $PROVINCE|Y$ due to:\n"
  feudalism:0 "Metallurgy"
  renaissance:0 "Liturgy"
- new_world_i:0 "The Edolyssa"
+ new_world_i:0 "Edolyssa"
  printing_press:0 "Egalitarianism"
  global_trade:0 "Global Trade"
  manufactories:0 "Manufactories"
@@ -129,3 +129,8 @@
  bamali_bonus:0 "Bamali province"
  va_bonus:0 "Va 15+ development province"
  egr_debuff:0 "Eastern Gomic province"
+
+ is_nafa:0 "Is Nafa"
+ has_nafa_school:0 "Has Nafan School of Thought"
+ has_new_world_i_lathvy:0 "This province borders a province with §YEdolyssa§!"
+ has_edolyssa:0 "Has embraced §YEdolyssa§!"

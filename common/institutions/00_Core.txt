@@ -520,8 +520,8 @@ new_world_i = {
 				is_year = 300
 				is_state = yes
 				is_island = no
+				is_capital = yes
 				owner = { tag = NAF }
-				development = 20
 			}
 			AND = {
 				is_year = 310
@@ -926,7 +926,7 @@ printing_press = {
 }
 
 #######################################
-# Global Trade
+# Chain of Command
 #######################################
 
 global_trade = {
