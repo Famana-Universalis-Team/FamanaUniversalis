@@ -3,17 +3,17 @@ add_government_reform = autocracy_reform
 government_rank = 1
 mercantilism = 10
 technology_group = western
-religion = placeholder_religion
-primary_culture = Placeholder_culture
-capital = 1	# change to real capital
+religion = lathvy
+primary_culture = Nahallaian
+capital = 6183	# change to real capital
 
 200.1.1 = { #change to 200 or smth
 	monarch = {
-		name = "Regency"
-		dynasty = "Regency"
-		birth_date = 199.12.12
-		adm = 3
-		dip = 3
-		mil = 3
+		name = "Natur"
+		dynasty = "Ufipar"
+		birth_date = 175.1.24
+		adm = 2
+		dip = 4
+		mil = 4
 	}
 }
