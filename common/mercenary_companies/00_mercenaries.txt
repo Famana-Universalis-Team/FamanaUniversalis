@@ -111,12 +111,12 @@ merc_jabuskay_band = {
 merc_free_vanomans = {
     regiments_per_development = 0.05
 	cavalry_weight = 0.4
-    home_province = 5825 # somewhere in emtik
+    home_province = 5691 # somewhere in emtik
 	cost_modifier = 0.75
 	sprites = { westerngfx_sprite_pack }
 	trigger = {
 		AND = {
-			5825 = { is_empty = yes }
+			5691 = { culture = Emtik  }
 			OR = {
 				any_owned_province = {
 					region = nozumol_region
@@ -229,6 +229,8 @@ merc_karsi = {
 				region = upper_makyna_region
 			}
 		}
+		has_country_modifier = mercenaries_to_the_standard
+		has_country_modifier = glut_of_mercs
 	}
 	modifier = {
 		cavalry_power = 0.15
@@ -463,4 +465,337 @@ merc_diam = {
 	}
 	modifier = {
 	}
+}
+# Ked highlanders
+merc_ked_highlanders = {
+    regiments_per_development = 0.03
+	cavalry_weight = 0.1
+	artillery_weight = 0.3
+    home_province = 5529
+	sprites = { westerngfx_sprite_pack }
+    trigger = {
+		any_owned_province = {
+			region = aresia_region
+		}
+		any_owned_province = {
+			vanoma_region
+		}
+	}
+	modifier = {
+	}
+}
+# Nik Legion
+merc_nik_legion = {
+    regiments_per_development = 0.03
+	cavalry_weight = 0.1
+	artillery_weight = 0.3
+    home_province = 5661
+	sprites = { westerngfx_sprite_pack }
+    trigger = {
+		any_owned_province = {
+			region = aresia_region
+		}
+		any_owned_province = {
+			vanoma_region
+		}
+		
+	}
+	modifier = {
+	discipline = 0.05
+	}
+	
+	
+}
+# Ghaloyan Company
+merc_ghaloyan_company = {
+    regiments_per_development = 0.03
+	cavalry_weight = 0.1
+	artillery_weight = 0.3
+    home_province = 5600
+	sprites = { westerngfx_sprite_pack }
+    trigger = {
+		any_owned_province = {
+			superregion = jasua_superregion
+		}
+		
+	}
+	modifier = {
+	
+	}
+	
+	
+}
+# Maru soldiers
+merc_maru_soldiers = {
+    regiments_per_development = 0.03
+	cavalry_weight = 0.1
+	artillery_weight = 0.3
+    home_province = 5484 
+	sprites = { westerngfx_sprite_pack }
+    trigger = {
+		any_owned_province = {
+			superregion = jasua_superregion
+		}
+		any_owned_province = {
+			region = emastalia_region
+		}
+		
+	}
+	modifier = {
+	loot_amount = 0.10
+	}
+	
+	
+}
+# Durran Company
+merc_durran_company = {
+    regiments_per_development = 0.03
+	cavalry_weight = 0.1
+	artillery_weight = 0.3
+    home_province = 5566
+	sprites = { westerngfx_sprite_pack }
+    trigger = {
+		any_owned_province = {
+			region = pextoglazia_region
+		}
+		any_owned_province = {
+			region = kapolia_region
+		}
+		any_owned_province = {
+			region = emastalia_region
+		}
+		
+	}
+	modifier = {
+	
+	}
+	
+	
+}
+# Unsets Volunteers
+merc_unsets_volunteers = {
+    regiments_per_development = 0.03
+	cavalry_weight = 0.1
+	artillery_weight = 0.3
+    home_province = 5570
+	sprites = { westerngfx_sprite_pack }
+    trigger = {
+		any_owned_province = {
+			region = pextoglazia_region
+		}
+		any_owned_province = {
+			region = kapolia_region
+		}
+		any_owned_province = {
+			region = emastalia_region
+		}
+		
+		
+	}
+	modifier = {
+	
+	}
+	
+	
+}
+# Teserran Order
+merc_teserran_order = {
+    regiments_per_development = 0.03
+	cavalry_weight = 0.3
+	artillery_weight = 0.3
+    home_province = 5515
+	sprites = { westerngfx_sprite_pack }
+    trigger = {
+		any_owned_province = {
+			superregion = jasua_superregion
+		}
+		
+		
+	}
+	modifier = {
+	shock_damage_received = -0.10
+	}
+	
+	
+}
+# Nimos Warriors
+merc_nimos_warriors = {
+    regiments_per_development = 0.03
+	cavalry_weight = 0.1
+	artillery_weight = 0.3
+    home_province = 5391
+	sprites = { westerngfx_sprite_pack }
+    trigger = {
+		any_owned_province = {
+				superregion = ga_xal_superregion
+			}
+		
+		
+		
+	}
+	modifier = {
+	
+	}
+	
+	
+}
+# Shining Spears
+merc_shining_spears = {
+    regiments_per_development = 0.03
+	cavalry_weight = 0.1
+	artillery_weight = 0.3
+    home_province = 5170
+	sprites = { westerngfx_sprite_pack }
+    trigger = {
+		any_owned_province = {
+				superregion = ga_xal_superregion
+			}
+			any_owned_province = {
+				region = eastern_desert_region
+			}
+		
+		
+	}
+	modifier = {
+		infantry_power = 0.1
+		prestige_from_land = 0.10
+	}
+	
+	
+}
+# Soldiers of Iimksan Dool
+merc_iimksan_dool = {
+    regiments_per_development = 0.03
+	cavalry_weight = 0.1
+	artillery_weight = 0.3
+    home_province = 5307
+	sprites = { westerngfx_sprite_pack }
+    trigger = {
+		any_owned_province = {
+				superregion = ga_xal_superregion
+			}
+			any_owned_province = {
+				region = kapolia_region
+			}
+		
+		
+		
+	}
+	modifier = {
+		fire_damage_received = -0.10
+	}
+	
+	
+}
+# Mea Dizz free Company
+merc_mea_dizz = {
+    regiments_per_development = 0.03
+	cavalry_weight = 0.1
+	artillery_weight = 0.3
+    home_province = 5034
+	sprites = { westerngfx_sprite_pack }
+    trigger = {
+		any_owned_province = {
+				region = laglon_region
+			}
+		any_owned_province = {
+				region = lomea_region
+			}
+		any_owned_province = {
+				region = walara_region
+			}
+		
+		
+	}
+	modifier = {
+		
+	}
+	
+	
+}
+# Nagolai Army
+merc_negolai_army = {
+    regiments_per_development = 0.03
+	cavalry_weight = 0.1
+	artillery_weight = 0.3
+    home_province = 5716
+	sprites = { westerngfx_sprite_pack }
+    trigger = {
+		any_owned_province = {
+				region = ordica_region
+			}
+		any_owned_province = {
+				region = vordor_region
+			}
+		
+		
+	}
+	modifier = {
+		
+	}
+	
+	
+}
+# Vesberir Company
+merc_vesberir_company = {
+    regiments_per_development = 0.03
+	cavalry_weight = 0.1
+	artillery_weight = 0.3
+    home_province = 5086
+	sprites = { westerngfx_sprite_pack }
+    trigger = {
+		any_owned_province = {
+				superregion = oppia_superregion
+			}
+		
+		
+		
+	}
+	modifier = {
+		
+	}
+	
+	
+}
+# Umzat Company
+merc_umzat_company = {
+    regiments_per_development = 0.03
+	cavalry_weight = 0.1
+	artillery_weight = 0.3
+    home_province = 5044
+	sprites = { westerngfx_sprite_pack }
+    trigger = {
+		any_owned_province = {
+				superregion = oppia_superregion
+			}
+		
+		
+		
+	}
+	modifier = {
+		
+	}
+	
+	
+}
+# Effashan Riders
+merc_effashan_riders = {
+    regiments_per_development = 0.03
+	cavalry_weight = 0.6
+	artillery_weight = 0.3
+    home_province = 5057
+	sprites = { westerngfx_sprite_pack }
+    trigger = {
+		any_owned_province = {
+				superregion = oppia_superregion
+			}
+		
+		
+		
+	}
+	modifier = {
+		cavalry_power = 0.10
+	}
+	
+	
 }
