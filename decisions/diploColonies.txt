@@ -612,7 +612,6 @@ country_decisions = {
 			}
 			dip_tech = 1
 			OR = {
-				owns_core_province = 5799
 				owns_core_province = 5571
 				owns_core_province = 5572
 				owns_core_province = 5574
@@ -766,7 +765,6 @@ country_decisions = {
 				owns_core_province = 5569
 				owns_core_province = 5570
 				owns_core_province = 5571
-				owns_core_province = 5707
 				owns_core_province = 5799
 				owns_core_province = 5800
 				owns_core_province = 5802

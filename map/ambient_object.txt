@@ -233,3 +233,2670 @@ type={
 		}
 	}
 }
+type={
+	type="eagle"
+	use_animation=yes
+	scale=0.300000
+	time_duration=300.000000
+	object={
+		name="Eagle_Alps"
+		hidden_on_start=no
+		position={
+			2860.000 15.350 1261.000 
+		}
+		rotation={
+			0.000 45.000 0.000 
+		}
+	}
+	object={
+		name="Eagle_Alps"
+		hidden_on_start=no
+		position={
+			2927.000 12.400 1749.000 
+		}
+		rotation={
+			0.000 45.000 0.000 
+		}
+	}
+}
+type={
+	type="windmill"
+	use_animation=yes
+	scale=0.300000
+	time_duration=300.000000
+	object={
+		name="French_windmill"
+		hidden_on_start=no
+		position={
+			1339.000 0.100 1435.000 
+		}
+		rotation={
+			0.000 -15.000 0.000 
+		}
+	}
+	object={
+		name="French_windmill"
+		hidden_on_start=no
+		position={
+			1376.000 0.100 1458.000 
+		}
+		rotation={
+			0.000 -15.000 0.000 
+		}
+	}
+	object={
+		name="French_windmill"
+		hidden_on_start=no
+		position={
+			1286.000 0.100 1405.000 
+		}
+		rotation={
+			0.000 -15.000 0.000 
+		}
+	}
+	object={
+		name="French_windmill"
+		hidden_on_start=no
+		position={
+			1081.000 0.100 1358.000 
+		}
+		rotation={
+			0.000 -15.000 0.000 
+		}
+	}
+	object={
+		name="French_windmill"
+		hidden_on_start=no
+		position={
+			1328.000 0.100 1494.000 
+		}
+		rotation={
+			0.000 -15.000 0.000 
+		}
+	}
+	object={
+		name="French_windmill"
+		hidden_on_start=no
+		position={
+			1217.000 0.100 1358.000 
+		}
+		rotation={
+			0.000 -15.000 0.000 
+		}
+	}
+	object={
+		name="French_windmill"
+		hidden_on_start=no
+		position={
+			1237.000 0.100 1296.000 
+		}
+		rotation={
+			0.000 -15.000 0.000 
+		}
+	}
+	object={
+		name="French_windmill"
+		hidden_on_start=no
+		position={
+			1220.000 0.100 1379.000 
+		}
+		rotation={
+			0.000 -15.000 0.000 
+		}
+	}
+	object={
+		name="French_windmill"
+		hidden_on_start=no
+		position={
+			1247.000 0.100 1379.000 
+		}
+		rotation={
+			0.000 -15.000 0.000 
+		}
+	}
+	object={
+		name="French_windmill"
+		hidden_on_start=no
+		position={
+			1493.000 0.100 1472.000 
+		}
+		rotation={
+			0.000 -15.000 0.000 
+		}
+	}
+}
+type={
+	type="seagulls"
+	use_animation=yes
+	scale=0.300000
+	time_duration=300.000000
+	object={
+		name="Seagulls_zansibar"
+		hidden_on_start=no
+		position={
+			365.000 11.000 503.000 
+		}
+		rotation={
+			0.000 45.000 0.000 
+		}
+	}
+	object={
+		name="INFANTRY"
+		hidden_on_start=no
+		position={
+			293.000 11.000 292.000 
+		}
+		rotation={
+			0.000 45.000 0.000 
+		}
+	}
+	object={
+		name="INFANTRY"
+		hidden_on_start=no
+		position={
+			694.000 11.000 161.000 
+		}
+		rotation={
+			0.000 45.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_zambia"
+		hidden_on_start=no
+		position={
+			2802.990 11.000 331.530 
+		}
+		rotation={
+			0.000 45.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_Cyperus"
+		hidden_on_start=no
+		position={
+			1170.000 11.000 829.000 
+		}
+		rotation={
+			0.000 45.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_Japan"
+		hidden_on_start=no
+		position={
+			477.000 11.000 923.000 
+		}
+		rotation={
+			0.000 45.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_sierra_leon"
+		hidden_on_start=no
+		position={
+			2782.000 11.000 853.000 
+		}
+		rotation={
+			0.000 45.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_kongo"
+		hidden_on_start=no
+		position={
+			2681.080 11.000 674.380 
+		}
+		rotation={
+			0.000 45.000 0.000 
+		}
+	}
+	object={
+		name="INFANTRY"
+		hidden_on_start=no
+		position={
+			1858.000 11.000 639.000 
+		}
+		rotation={
+			0.000 45.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_West_africa"
+		hidden_on_start=no
+		position={
+			2860.000 11.000 731.000 
+		}
+		rotation={
+			0.000 45.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_zansibar"
+		hidden_on_start=no
+		position={
+			2974.000 11.000 998.000 
+		}
+		rotation={
+			0.000 45.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_taiwan"
+		hidden_on_start=no
+		position={
+			2347.000 11.000 180.000 
+		}
+		rotation={
+			0.000 45.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_zansibar"
+		hidden_on_start=no
+		position={
+			1190.000 11.000 1434.000 
+		}
+		rotation={
+			0.000 45.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_ganges_delta"
+		hidden_on_start=no
+		position={
+			626.800 11.000 1435.780 
+		}
+		rotation={
+			0.000 45.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_zansibar"
+		hidden_on_start=no
+		position={
+			659.000 11.000 1287.000 
+		}
+		rotation={
+			0.000 45.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_vietnam_delta"
+		hidden_on_start=no
+		position={
+			996.000 11.000 1225.000 
+		}
+		rotation={
+			0.000 45.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			972.000 11.000 1525.000 
+		}
+		rotation={
+			0.000 45.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_zansibar"
+		hidden_on_start=no
+		position={
+			1056.000 11.000 1108.000 
+		}
+		rotation={
+			0.000 45.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_baltic"
+		hidden_on_start=no
+		position={
+			1365.000 11.000 1418.000 
+		}
+		rotation={
+			0.000 45.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_zansibar"
+		hidden_on_start=no
+		position={
+			646.000 11.000 693.000 
+		}
+		rotation={
+			0.000 45.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_srilanka"
+		hidden_on_start=no
+		position={
+			825.000 11.000 1887.000 
+		}
+		rotation={
+			0.000 45.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_west_india"
+		hidden_on_start=no
+		position={
+			1639.000 11.000 1113.000 
+		}
+		rotation={
+			0.000 45.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_north_vietnam"
+		hidden_on_start=no
+		position={
+			1563.000 11.000 1370.000 
+		}
+		rotation={
+			0.000 45.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			2284.000 11.000 1452.000 
+		}
+		rotation={
+			0.000 45.000 0.000 
+		}
+	}
+	object={
+		name="INFANTRY"
+		hidden_on_start=no
+		position={
+			2157.000 11.000 1429.000 
+		}
+		rotation={
+			0.000 45.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_Canarian_islands"
+		hidden_on_start=no
+		position={
+			1427.000 11.000 648.000 
+		}
+		rotation={
+			0.000 45.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_Venice"
+		hidden_on_start=no
+		position={
+			1917.000 11.000 1338.000 
+		}
+		rotation={
+			0.000 45.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_Ethiopia"
+		hidden_on_start=no
+		position={
+			2988.000 11.000 1286.000 
+		}
+		rotation={
+			0.000 45.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_South_korea"
+		hidden_on_start=no
+		position={
+			6277.390 11.000 1263.940 
+		}
+		rotation={
+			0.000 45.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_zansibar"
+		hidden_on_start=no
+		position={
+			990.000 11.000 1661.000 
+		}
+		rotation={
+			0.000 45.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_Aland"
+		hidden_on_start=no
+		position={
+			1197.000 10.800 1642.000 
+		}
+		rotation={
+			0.000 45.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_Neatherlands"
+		hidden_on_start=no
+		position={
+			1850.000 11.000 1891.000 
+		}
+		rotation={
+			0.000 45.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_Gibraltar"
+		hidden_on_start=no
+		position={
+			2804.000 11.000 1638.000 
+		}
+		rotation={
+			0.000 45.000 0.000 
+		}
+	}
+	object={
+		name="INFANTRY"
+		hidden_on_start=no
+		position={
+			2552.000 11.000 1677.000 
+		}
+		rotation={
+			0.000 45.000 0.000 
+		}
+	}
+	object={
+		name="INFANTRY"
+		hidden_on_start=no
+		position={
+			2516.000 10.900 1782.000 
+		}
+		rotation={
+			0.000 45.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_Neatherlands"
+		hidden_on_start=no
+		position={
+			2000.000 11.000 1638.000 
+		}
+		rotation={
+			0.000 45.000 0.000 
+		}
+	}
+}
+type={
+	type="black_bear"
+	use_animation=yes
+	scale=0.200000
+	time_duration=300.000000
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			749.000 0.100 1897.000 
+		}
+		rotation={
+			0.000 45.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			590.000 0.150 1931.000 
+		}
+		rotation={
+			0.000 -60.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			334.000 0.100 2031.000 
+		}
+		rotation={
+			0.000 -60.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			181.000 0.400 1947.000 
+		}
+		rotation={
+			0.000 -60.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			1113.000 0.100 1860.000 
+		}
+		rotation={
+			0.000 -60.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			1171.000 0.100 1798.000 
+		}
+		rotation={
+			0.000 45.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			1615.000 0.150 1954.000 
+		}
+		rotation={
+			0.000 -60.000 0.000 
+		}
+	}
+}
+type={
+	type="polar_bear"
+	use_animation=yes
+	scale=0.300000
+	time_duration=300.000000
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			1735.000 0.100 1983.000 
+		}
+		rotation={
+			0.000 -60.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			2291.000 0.100 2031.000 
+		}
+		rotation={
+			0.000 30.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			2000.000 0.100 1957.000 
+		}
+		rotation={
+			0.000 -60.000 0.000 
+		}
+	}
+}
+type={
+	type="brown_bear"
+	use_animation=yes
+	scale=0.200000
+	time_duration=300.000000
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			1333.000 0.250 1534.000 
+		}
+		rotation={
+			0.000 -60.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			1982.000 0.250 1452.000 
+		}
+		rotation={
+			0.000 -60.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			1955.000 0.250 1507.000 
+		}
+		rotation={
+			0.000 -60.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			1917.000 0.100 1497.000 
+		}
+		rotation={
+			0.000 60.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			1263.000 0.250 1615.000 
+		}
+		rotation={
+			0.000 -60.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			1070.000 0.100 1667.000 
+		}
+		rotation={
+			0.000 -60.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			2049.000 0.250 1709.000 
+		}
+		rotation={
+			0.000 -60.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			3234.000 0.100 1915.000 
+		}
+		rotation={
+			0.000 60.000 0.000 
+		}
+	}
+}
+type={
+	type="panda_bear"
+	use_animation=yes
+	scale=0.200000
+	time_duration=300.000000
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			2790.000 0.100 939.000 
+		}
+		rotation={
+			0.000 -60.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			2842.000 0.100 1046.000 
+		}
+		rotation={
+			0.000 -60.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			2936.000 0.200 1040.000 
+		}
+		rotation={
+			0.000 -60.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			3011.000 0.100 1105.000 
+		}
+		rotation={
+			0.000 -40.000 0.000 
+		}
+	}
+}
+type={
+	type="kangaroo"
+	use_animation=yes
+	scale=0.200000
+	time_duration=300.000000
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			757.000 0.100 238.000 
+		}
+		rotation={
+			0.000 -60.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			591.000 0.100 149.000 
+		}
+		rotation={
+			0.000 -40.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			748.000 0.100 237.000 
+		}
+		rotation={
+			0.000 60.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			5046.000 0.200 220.000 
+		}
+		rotation={
+			0.000 60.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			4689.000 0.100 278.000 
+		}
+		rotation={
+			0.000 80.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			5094.000 0.100 302.000 
+		}
+		rotation={
+			0.000 -40.000 0.000 
+		}
+	}
+}
+type={
+	type="crocodile"
+	use_animation=yes
+	scale=0.250000
+	time_duration=300.000000
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			1043.000 0.100 429.000 
+		}
+		rotation={
+			0.000 245.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			640.000 0.100 186.000 
+		}
+		rotation={
+			0.000 50.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			734.000 0.100 296.000 
+		}
+		rotation={
+			0.000 -60.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			737.000 0.100 481.000 
+		}
+		rotation={
+			0.000 50.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			579.000 0.100 99.000 
+		}
+		rotation={
+			0.000 -45.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			669.000 0.100 312.000 
+		}
+		rotation={
+			0.000 40.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			1766.000 0.200 972.000 
+		}
+		rotation={
+			0.000 -75.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			1802.000 0.100 766.000 
+		}
+		rotation={
+			0.000 40.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			2807.000 0.100 777.000 
+		}
+		rotation={
+			0.000 50.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			1758.000 0.100 964.000 
+		}
+		rotation={
+			0.000 47.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			1481.000 0.100 1024.000 
+		}
+		rotation={
+			0.000 30.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			2935.000 0.100 732.000 
+		}
+		rotation={
+			0.000 50.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			1475.000 0.300 1054.000 
+		}
+		rotation={
+			0.000 50.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			1490.000 0.100 1056.000 
+		}
+		rotation={
+			0.000 30.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			1529.000 0.250 1312.000 
+		}
+		rotation={
+			0.000 -60.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			1459.000 0.100 1050.000 
+		}
+		rotation={
+			0.000 45.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			3279.000 0.100 1131.000 
+		}
+		rotation={
+			0.000 -60.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			3293.000 0.100 1149.000 
+		}
+		rotation={
+			0.000 -60.000 0.000 
+		}
+	}
+}
+type={
+	type="zebra"
+	use_animation=yes
+	scale=0.200000
+	time_duration=300.000000
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			686.000 0.150 767.000 
+		}
+		rotation={
+			0.000 -60.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			681.000 0.150 771.000 
+		}
+		rotation={
+			0.000 25.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			943.000 0.200 658.000 
+		}
+		rotation={
+			0.000 60.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			1111.000 0.400 658.000 
+		}
+		rotation={
+			0.000 60.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			1117.000 0.100 660.000 
+		}
+		rotation={
+			0.000 -40.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			1117.000 0.150 655.000 
+		}
+		rotation={
+			0.000 -60.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			852.000 0.100 777.000 
+		}
+		rotation={
+			0.000 -60.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			961.000 0.100 762.000 
+		}
+		rotation={
+			0.000 -60.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			781.000 0.150 742.000 
+		}
+		rotation={
+			0.000 -60.000 0.000 
+		}
+	}
+}
+type={
+	type="seal"
+	use_animation=yes
+	scale=0.250000
+	time_duration=300.000000
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			1345.000 0.100 1804.000 
+		}
+		rotation={
+			0.000 -60.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			815.000 0.100 1864.000 
+		}
+		rotation={
+			0.000 -30.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			696.000 0.100 1908.000 
+		}
+		rotation={
+			0.000 40.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			480.000 0.100 1992.000 
+		}
+		rotation={
+			0.000 40.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			222.000 0.100 1954.000 
+		}
+		rotation={
+			0.000 -60.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			799.000 0.100 1875.000 
+		}
+		rotation={
+			0.000 50.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			1713.000 0.100 2027.000 
+		}
+		rotation={
+			0.000 -60.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			1979.000 0.100 1925.000 
+		}
+		rotation={
+			0.000 -60.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			1575.000 0.100 2022.000 
+		}
+		rotation={
+			0.000 40.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			2132.000 0.100 1978.000 
+		}
+		rotation={
+			0.000 -60.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			2445.000 0.100 1789.000 
+		}
+		rotation={
+			0.000 40.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			2580.000 0.100 2002.000 
+		}
+		rotation={
+			0.000 -40.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			556.000 0.100 1919.000 
+		}
+		rotation={
+			0.000 50.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			2710.000 0.100 1696.000 
+		}
+		rotation={
+			0.000 50.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			2843.000 0.100 1893.000 
+		}
+		rotation={
+			0.000 -60.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			2897.000 0.100 1792.000 
+		}
+		rotation={
+			0.000 -60.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			1013.000 0.100 1829.000 
+		}
+		rotation={
+			0.000 -130.000 0.000 
+		}
+	}
+}
+type={
+	type="whale"
+	use_animation=yes
+	scale=0.800000
+	time_duration=300.000000
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			533.000 0.100 1862.000 
+		}
+		rotation={
+			0.000 0.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			706.000 0.100 1664.000 
+		}
+		rotation={
+			0.000 0.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			699.000 0.100 1658.000 
+		}
+		rotation={
+			0.000 0.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			2383.000 0.100 1812.000 
+		}
+		rotation={
+			0.000 0.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			2703.000 0.100 1930.000 
+		}
+		rotation={
+			0.000 0.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			2271.000 0.100 1877.000 
+		}
+		rotation={
+			0.000 0.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			2091.000 0.100 1734.000 
+		}
+		rotation={
+			0.000 0.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			3002.000 0.100 1786.000 
+		}
+		rotation={
+			0.000 0.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			2906.000 0.100 1961.000 
+		}
+		rotation={
+			0.000 45.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			5121.000 0.100 1610.000 
+		}
+		rotation={
+			0.000 0.000 0.000 
+		}
+	}
+}
+type={
+	type="vulture"
+	use_animation=yes
+	scale=0.300000
+	time_duration=300.000000
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			1017.000 5.150 834.000 
+		}
+		rotation={
+			0.000 45.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			2516.000 9.300 690.000 
+		}
+		rotation={
+			0.000 45.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			2467.000 8.800 999.000 
+		}
+		rotation={
+			0.000 45.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			2247.000 8.100 728.000 
+		}
+		rotation={
+			0.000 45.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			3629.000 10.400 983.000 
+		}
+		rotation={
+			0.000 45.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			3201.000 5.400 900.000 
+		}
+		rotation={
+			0.000 45.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			717.000 4.050 1037.000 
+		}
+		rotation={
+			0.000 45.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			774.000 8.750 1091.000 
+		}
+		rotation={
+			0.000 45.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			2688.000 5.000 1528.000 
+		}
+		rotation={
+			0.000 135.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			2403.000 5.000 1374.000 
+		}
+		rotation={
+			0.000 45.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			1539.000 9.600 1076.000 
+		}
+		rotation={
+			0.000 45.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			2188.000 9.550 1248.000 
+		}
+		rotation={
+			0.000 45.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			2706.000 4.300 1269.000 
+		}
+		rotation={
+			0.000 45.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			1969.000 9.700 1387.000 
+		}
+		rotation={
+			0.000 45.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			2090.000 8.850 1336.000 
+		}
+		rotation={
+			0.000 45.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			2125.000 2.350 1532.000 
+		}
+		rotation={
+			0.000 45.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			3734.000 9.000 1095.000 
+		}
+		rotation={
+			0.000 45.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			3804.000 6.550 1170.000 
+		}
+		rotation={
+			0.000 45.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			3148.000 10.400 1163.000 
+		}
+		rotation={
+			0.000 45.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			2944.000 9.850 1188.000 
+		}
+		rotation={
+			0.000 45.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			3693.000 10.100 1344.000 
+		}
+		rotation={
+			0.000 45.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			4095.000 5.050 1291.000 
+		}
+		rotation={
+			0.000 45.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			4248.000 3.650 1468.000 
+		}
+		rotation={
+			0.000 45.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			4503.000 5.600 1404.000 
+		}
+		rotation={
+			0.000 45.000 0.000 
+		}
+	}
+}
+type={
+	type="guanaco"
+	use_animation=yes
+	scale=0.200000
+	time_duration=300.000000
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			1929.000 0.100 658.000 
+		}
+		rotation={
+			0.000 0.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			2190.000 0.200 472.000 
+		}
+		rotation={
+			0.000 0.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			1769.000 0.300 384.000 
+		}
+		rotation={
+			0.000 0.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			1783.000 0.400 463.000 
+		}
+		rotation={
+			0.000 0.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			1745.000 0.100 539.000 
+		}
+		rotation={
+			0.000 0.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			1656.000 0.550 626.000 
+		}
+		rotation={
+			0.000 0.000 0.000 
+		}
+	}
+}
+type={
+	type="elephant_AO"
+	use_animation=yes
+	scale=0.200000
+	time_duration=300.000000
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			655.000 0.200 781.000 
+		}
+		rotation={
+			0.000 60.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			1070.000 0.200 720.000 
+		}
+		rotation={
+			0.000 60.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			814.000 0.200 781.000 
+		}
+		rotation={
+			0.000 -60.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			766.000 0.100 682.000 
+		}
+		rotation={
+			0.000 -60.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			1176.000 0.200 758.000 
+		}
+		rotation={
+			0.000 -60.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			1054.000 0.200 584.000 
+		}
+		rotation={
+			0.000 60.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			4066.000 0.200 1116.000 
+		}
+		rotation={
+			0.000 60.000 0.000 
+		}
+	}
+}
+type={
+	type="panama_canal"
+	use_animation=no
+	scale=1.500000
+	time_duration=300.000000
+	always_visible=yes
+	visible_in_all_map_modes=yes
+	object={
+		name="panama_canal"
+		hidden_on_start=yes
+		position={
+			1565.800 0.000 1016.500 
+		}
+		rotation={
+			0.000 25.000 0.000 
+		}
+	}
+}
+type={
+	type="pyramids"
+	use_animation=no
+	scale=0.600000
+	time_duration=300.000000
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			1113.000 0.100 837.000 
+		}
+		rotation={
+			0.000 0.000 0.000 
+		}
+	}
+}
+type={
+	type="camel"
+	use_animation=yes
+	scale=0.250000
+	time_duration=300.000000
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			1498.000 0.100 875.000 
+		}
+		rotation={
+			0.000 -15.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			3587.000 0.100 1043.000 
+		}
+		rotation={
+			0.000 45.000 0.000 
+		}
+	}
+}
+type={
+	type="bison"
+	use_animation=yes
+	scale=0.200000
+	time_duration=300.000000
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			1454.000 0.550 1498.000 
+		}
+		rotation={
+			0.000 45.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			1497.000 0.100 1740.000 
+		}
+		rotation={
+			0.000 45.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			1503.000 0.100 1743.000 
+		}
+		rotation={
+			0.000 -30.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			1503.000 0.150 1735.000 
+		}
+		rotation={
+			0.000 -60.000 0.000 
+		}
+	}
+}
+type={
+	type="moose"
+	use_animation=yes
+	scale=0.280000
+	time_duration=300.000000
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			2638.000 0.100 1769.000 
+		}
+		rotation={
+			0.000 -35.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			2669.000 0.100 1853.000 
+		}
+		rotation={
+			0.000 45.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			2758.000 0.100 1734.000 
+		}
+		rotation={
+			0.000 64.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			2970.000 0.100 1540.000 
+		}
+		rotation={
+			0.000 45.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			2939.000 0.100 1708.000 
+		}
+		rotation={
+			0.000 45.000 0.000 
+		}
+	}
+}
+type={
+	type="giraffe"
+	use_animation=yes
+	scale=0.300000
+	time_duration=300.000000
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			1027.000 0.100 802.000 
+		}
+		rotation={
+			0.000 -60.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			1044.000 0.100 738.000 
+		}
+		rotation={
+			0.000 80.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			650.000 0.100 750.000 
+		}
+		rotation={
+			0.000 -60.000 0.000 
+		}
+	}
+}
+type={
+	type="desert_skeleton_mesh"
+	use_animation=no
+	scale=0.400000
+	time_duration=300.000000
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			2481.000 0.100 689.000 
+		}
+		rotation={
+			0.000 50.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			2110.900 0.100 937.600 
+		}
+		rotation={
+			0.000 50.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			1504.000 0.100 758.000 
+		}
+		rotation={
+			0.000 50.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			3654.000 0.100 981.000 
+		}
+		rotation={
+			0.000 50.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			3584.000 0.100 934.000 
+		}
+		rotation={
+			0.000 50.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			1198.000 0.100 1391.000 
+		}
+		rotation={
+			0.000 50.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			706.000 0.100 1050.000 
+		}
+		rotation={
+			0.000 50.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			1510.000 0.100 1026.000 
+		}
+		rotation={
+			0.000 50.000 0.000 
+		}
+	}
+}
+type={
+	type="frame_top_left_entity"
+	use_animation=no
+	always_visible=yes
+	object={
+		name="frame_top_left_entity01"
+		hidden_on_start=no
+		position={
+			412.000 18.000 2046.000 
+		}
+		rotation={
+			0.000 0.000 0.000 
+		}
+	}
+	object={
+		name="frame_top_left_entity01"
+		hidden_on_start=no
+		position={
+			-100.000 18.000 2046.000 
+		}
+		rotation={
+			0.000 0.000 0.000 
+		}
+	}
+	object={
+		name="frame_top_left_entity03"
+		hidden_on_start=no
+		position={
+			1436.000 18.000 2046.000 
+		}
+		rotation={
+			0.000 0.000 0.000 
+		}
+	}
+	object={
+		name="frame_top_left_entity05"
+		hidden_on_start=no
+		position={
+			3484.000 18.000 2046.000 
+		}
+		rotation={
+			0.000 0.000 0.000 
+		}
+	}
+	object={
+		name="frame_top_left_entity99"
+		hidden_on_start=no
+		position={
+			5532.000 18.000 2046.000 
+		}
+		rotation={
+			0.000 0.000 0.000 
+		}
+	}
+	object={
+		name="frame_top_left_entity07"
+		hidden_on_start=no
+		position={
+			4508.000 18.000 2046.000 
+		}
+		rotation={
+			0.000 0.000 0.000 
+		}
+	}
+}
+type={
+	type="frame_top_right_entity"
+	use_animation=no
+	always_visible=yes
+	object={
+		name="frame_top_left_entity02"
+		hidden_on_start=no
+		position={
+			924.000 18.000 2046.000 
+		}
+		rotation={
+			0.000 0.000 0.000 
+		}
+	}
+	object={
+		name="frame_top_left_entity06"
+		hidden_on_start=no
+		position={
+			3996.000 18.000 2046.000 
+		}
+		rotation={
+			0.000 0.000 0.000 
+		}
+	}
+	object={
+		name="frame_top_left_entity"
+		hidden_on_start=no
+		position={
+			5020.000 18.000 2046.000 
+		}
+		rotation={
+			0.000 0.000 0.000 
+		}
+	}
+}
+type={
+	type="frame_bottom_left_entity"
+	use_animation=no
+	always_visible=yes
+	object={
+		name="frame_top_left_entity"
+		hidden_on_start=no
+		position={
+			0.000 18.000 1.000 
+		}
+		rotation={
+			0.000 0.000 0.000 
+		}
+	}
+	object={
+		name="frame_top_left_entity"
+		hidden_on_start=no
+		position={
+			1024.000 18.000 1.000 
+		}
+		rotation={
+			0.000 0.000 0.000 
+		}
+	}
+	object={
+		name="frame_top_left_entity"
+		hidden_on_start=no
+		position={
+			512.000 18.000 1.000 
+		}
+		rotation={
+			0.000 0.000 0.000 
+		}
+	}
+	object={
+		name="frame_top_left_entity"
+		hidden_on_start=no
+		position={
+			4096.000 18.000 1.000 
+		}
+		rotation={
+			0.000 0.000 0.000 
+		}
+	}
+	object={
+		name="frame_top_left_entity"
+		hidden_on_start=no
+		position={
+			3584.000 18.000 1.000 
+		}
+		rotation={
+			0.000 0.000 0.000 
+		}
+	}
+	object={
+		name="frame_top_left_entity"
+		hidden_on_start=no
+		position={
+			4608.000 18.000 1.000 
+		}
+		rotation={
+			0.000 0.000 0.000 
+		}
+	}
+}
+type={
+	type="frame_bottom_right_entity"
+	use_animation=no
+	always_visible=yes
+	object={
+		name="frame_top_left_entity"
+		hidden_on_start=no
+		position={
+			2560.000 18.000 1.000 
+		}
+		rotation={
+			0.000 0.000 0.000 
+		}
+	}
+	object={
+		name="frame_top_left_entity"
+		hidden_on_start=no
+		position={
+			1536.000 18.000 1.000 
+		}
+		rotation={
+			0.000 0.000 0.000 
+		}
+	}
+	object={
+		name="frame_top_left_entity"
+		hidden_on_start=no
+		position={
+			2048.000 18.000 1.000 
+		}
+		rotation={
+			0.000 0.000 0.000 
+		}
+	}
+	object={
+		name="frame_top_left_entity"
+		hidden_on_start=no
+		position={
+			3072.000 18.000 1.000 
+		}
+		rotation={
+			0.000 0.000 0.000 
+		}
+	}
+	object={
+		name="frame_top_left_entity"
+		hidden_on_start=no
+		position={
+			5120.000 18.000 1.000 
+		}
+		rotation={
+			0.000 0.000 0.000 
+		}
+	}
+}
+type={
+	type="frame_top_center_entity"
+	use_animation=no
+	always_visible=yes
+}
+type={
+	type="nammi_angkor_wat_entity"
+	use_animation=no
+	scale=0.570000
+	time_duration=300.000000
+	object={
+		name="angkor_wat"
+		hidden_on_start=no
+		position={
+			2152.000 0.150 539.000 
+		}
+		rotation={
+			0.000 -103.000 0.000 
+		}
+	}
+}
+type={
+	type="nammi_cologne_cathedral_entity"
+	use_animation=no
+	scale=0.730000
+	time_duration=300.000000
+	object={
+		name="cologne"
+		hidden_on_start=no
+		position={
+			2282.000 0.350 1402.000 
+		}
+		rotation={
+			0.000 -90.000 0.000 
+		}
+	}
+}
+type={
+	type="nammi_kremlin_entity"
+	use_animation=no
+	scale=0.520000
+	time_duration=300.000000
+	object={
+		name="kremlin"
+		hidden_on_start=no
+		position={
+			4718.000 -0.150 1553.000 
+		}
+		rotation={
+			0.000 5.000 0.000 
+		}
+	}
+}
+type={
+	type="nammi_mount_fuji_entity"
+	use_animation=no
+	scale=0.900000
+	time_duration=300.000000
+	object={
+		name="mount_fuji"
+		hidden_on_start=no
+		position={
+			787.000 -0.500 550.000 
+		}
+		rotation={
+			0.000 -110.000 0.000 
+		}
+	}
+	object={
+		name="mount_fuji"
+		hidden_on_start=no
+		position={
+			2974.000 -0.500 799.000 
+		}
+		rotation={
+			0.000 -110.000 0.000 
+		}
+	}
+}
+type={
+	type="nammi_notre_dame_cathedral_entity"
+	use_animation=no
+	scale=0.580000
+	time_duration=300.000000
+	object={
+		name="notre_dame"
+		hidden_on_start=no
+		position={
+			1300.000 0.200 1398.000 
+		}
+		rotation={
+			0.000 20.000 0.000 
+		}
+	}
+}
+type={
+	type="nammi_old_faithful_geyser_entity"
+	use_animation=no
+	scale=0.150000
+	time_duration=300.000000
+	object={
+		name="old_faithful"
+		hidden_on_start=no
+		position={
+			1082.500 0.010 1630.000 
+		}
+		rotation={
+			0.000 -60.000 0.000 
+		}
+	}
+}
+type={
+	type="nammi_stpeters_cathedral_entity"
+	use_animation=no
+	scale=0.500000
+	time_duration=300.000000
+	object={
+		name="stpeters"
+		hidden_on_start=no
+		position={
+			3000.000 0.260 1364.300 
+		}
+		rotation={
+			0.000 70.000 0.000 
+		}
+	}
+}
+type={
+	type="nammi_tower_of_london_entity"
+	use_animation=no
+	scale=0.300000
+	time_duration=300.000000
+	object={
+		name="tower_of_london"
+		hidden_on_start=no
+		position={
+			1812.000 0.200 1415.000 
+		}
+		rotation={
+			0.000 13.000 0.000 
+		}
+	}
+}
+type={
+	type="nammi2_chichen_itza_entity"
+	use_animation=no
+	scale=0.340000
+	time_duration=300.000000
+	object={
+		name="chichen_itza"
+		hidden_on_start=no
+		position={
+			1500.000 -0.050 1111.000 
+		}
+		rotation={
+			0.000 -103.000 0.000 
+		}
+	}
+}
+type={
+	type="nammi2_hagia_sophia_entity"
+	use_animation=no
+	scale=0.260000
+	time_duration=300.000000
+	object={
+		name="hagia_sophia"
+		hidden_on_start=no
+		position={
+			1644.000 0.150 1239.000 
+		}
+		rotation={
+			0.000 -30.000 0.000 
+		}
+	}
+}
+type={
+	type="nammi2_hagia_sophia_minarets_entity"
+	use_animation=no
+	scale=0.260000
+	time_duration=300.000000
+	object={
+		name="hagia_sophia_minarets"
+		hidden_on_start=yes
+		position={
+			3241.000 0.150 1344.000 
+		}
+		rotation={
+			0.000 -30.000 0.000 
+		}
+	}
+}
+type={
+	type="nammi2_machu_picchu_entity"
+	use_animation=no
+	scale=0.180000
+	time_duration=300.000000
+	object={
+		name="machu_picchu"
+		hidden_on_start=no
+		position={
+			1176.000 -0.200 773.000 
+		}
+		rotation={
+			0.000 85.000 0.000 
+		}
+	}
+}
+type={
+	type="nammi2_parthenon_entity"
+	use_animation=no
+	scale=0.290000
+	time_duration=300.000000
+	object={
+		name="parthenon"
+		hidden_on_start=no
+		position={
+			1490.000 0.000 1153.000 
+		}
+		rotation={
+			0.000 55.000 0.000 
+		}
+	}
+}
+type={
+	type="nammi2_parthenon_minaret_entity"
+	use_animation=no
+	scale=0.290000
+	time_duration=300.000000
+	object={
+		name="parthenon_minaret"
+		hidden_on_start=yes
+		position={
+			3173.300 0.000 1289.400 
+		}
+		rotation={
+			0.000 55.000 0.000 
+		}
+	}
+}
+type={
+	type="nammi2_petra_entity"
+	use_animation=no
+	scale=0.150000
+	time_duration=300.000000
+	object={
+		name="petra"
+		hidden_on_start=no
+		position={
+			1555.000 0.000 1112.000 
+		}
+		rotation={
+			0.000 -45.000 0.000 
+		}
+	}
+}
+type={
+	type="nammi2_tenochtitlan_entity"
+	use_animation=no
+	scale=0.100000
+	time_duration=300.000000
+	object={
+		name="tenochtitlan"
+		hidden_on_start=no
+		position={
+			1485.000 0.300 1067.000 
+		}
+		rotation={
+			0.000 0.000 0.000 
+		}
+	}
+}
+type={
+	type="nammi2_buddha_statues_big_entity"
+	use_animation=no
+	scale=0.190000
+	time_duration=300.000000
+	object={
+		name="buddha_big"
+		hidden_on_start=no
+		position={
+			1456.000 -1.000 712.000 
+		}
+		rotation={
+			0.000 25.000 0.000 
+		}
+	}
+}
+type={
+	type="nammi2_buddha_statues_small_entity"
+	use_animation=no
+	scale=0.120000
+	time_duration=300.000000
+	object={
+		name="buddha_small"
+		hidden_on_start=no
+		position={
+			1461.000 -0.200 710.000 
+		}
+		rotation={
+			0.000 -85.000 0.000 
+		}
+	}
+}
+type={
+	type="nammi2_stonehenge_entity"
+	use_animation=no
+	scale=0.180000
+	time_duration=300.000000
+	object={
+		name="stonehenge"
+		hidden_on_start=no
+		position={
+			2784.000 0.150 1541.000 
+		}
+		rotation={
+			0.000 -0.800 0.000 
+		}
+	}
+}
+type={
+	type="nammi2_moai_entity"
+	use_animation=no
+	scale=0.300000
+	time_duration=300.000000
+	object={
+		name="moai"
+		hidden_on_start=no
+		position={
+			1357.000 -0.900 1357.000 
+		}
+		rotation={
+			0.000 -12.000 0.000 
+		}
+	}
+}
+type={
+	type="nammi2_forbidden_city_entity"
+	use_animation=no
+	scale=0.350000
+	time_duration=300.000000
+	object={
+		name="forbidden_city"
+		hidden_on_start=no
+		position={
+			2796.000 -0.020 1057.000 
+		}
+		rotation={
+			0.000 -30.000 0.000 
+		}
+	}
+}
+type={
+	type="nammi2_himeji_castle_entity"
+	use_animation=no
+	scale=0.290000
+	time_duration=300.000000
+	object={
+		name="himeji_castle"
+		hidden_on_start=no
+		position={
+			1812.000 -0.300 781.000 
+		}
+		rotation={
+			0.000 25.000 0.000 
+		}
+	}
+}
+type={
+	type="kiel_canal"
+	use_animation=no
+	scale=1.200000
+	time_duration=300.000000
+	always_visible=yes
+	visible_in_all_map_modes=yes
+	object={
+		name="kiel_canal"
+		hidden_on_start=yes
+		position={
+			2956.200 -0.100 1601.800 
+		}
+		rotation={
+			0.000 -42.000 0.000 
+		}
+	}
+}
+type={
+	type="suez_canal"
+	use_animation=no
+	scale=0.800000
+	time_duration=300.000000
+	always_visible=yes
+	visible_in_all_map_modes=yes
+	object={
+		name="suez_canal"
+		hidden_on_start=yes
+		position={
+			3315.000 0.100 1149.000 
+		}
+		rotation={
+			0.000 2.000 0.000 
+		}
+	}
+}
