@@ -498,8 +498,7 @@ merc_nik_legion = {
 		any_owned_province = {
 			vanoma_region
 		}
-		has_country_modifier = mercenaries_to_the_standard
-		has_country_modifier = glut_of_mercs
+		
 	}
 	modifier = {
 	discipline = 0.05
@@ -518,8 +517,7 @@ merc_ghaloyan_company = {
 		any_owned_province = {
 			superregion = jasua_superregion
 		}
-		has_country_modifier = mercenaries_to_the_standard
-		has_country_modifier = glut_of_mercs
+		
 	}
 	modifier = {
 	
@@ -541,8 +539,7 @@ merc_maru_soldiers = {
 		any_owned_province = {
 			region = emastalia_region
 		}
-		has_country_modifier = mercenaries_to_the_standard
-		has_country_modifier = glut_of_mercs
+		
 	}
 	modifier = {
 	loot_amount = 0.10
@@ -592,8 +589,7 @@ merc_unsets_volunteers = {
 		any_owned_province = {
 			region = emastalia_region
 		}
-		has_country_modifier = mercenaries_to_the_standard
-		has_country_modifier = glut_of_mercs
+		
 		
 	}
 	modifier = {
@@ -613,12 +609,10 @@ merc_teserran_order = {
 		any_owned_province = {
 			superregion = jasua_superregion
 		}
-		has_country_modifier = mercenaries_to_the_standard
-		has_country_modifier = glut_of_mercs
+		
 		
 	}
 	modifier = {
-	prestige_from_land = 0.10
 	shock_damage_received = -0.10
 	}
 	
@@ -636,8 +630,7 @@ merc_nimos_warriors = {
 				superregion = ga_xal_superregion
 			}
 		
-		has_country_modifier = mercenaries_to_the_standard
-		has_country_modifier = glut_of_mercs
+		
 		
 	}
 	modifier = {
@@ -661,12 +654,11 @@ merc_shining_spears = {
 				region = eastern_desert_region
 			}
 		
-		has_country_modifier = mercenaries_to_the_standard
-		has_country_modifier = glut_of_mercs
 		
 	}
 	modifier = {
-		
+		infantry_power = 0.1
+		prestige_from_land = 0.10
 	}
 	
 	
@@ -686,12 +678,11 @@ merc_iimksan_dool = {
 				region = kapolia_region
 			}
 		
-		has_country_modifier = mercenaries_to_the_standard
-		has_country_modifier = glut_of_mercs
+		
 		
 	}
 	modifier = {
-		
+		fire_damage_received = -0.10
 	}
 	
 	
@@ -713,8 +704,7 @@ merc_mea_dizz = {
 		any_owned_province = {
 				region = walara_region
 			}
-		has_country_modifier = mercenaries_to_the_standard
-		has_country_modifier = glut_of_mercs
+		
 		
 	}
 	modifier = {
@@ -737,8 +727,7 @@ merc_negolai_army = {
 		any_owned_province = {
 				region = vordor_region
 			}
-		has_country_modifier = mercenaries_to_the_standard
-		has_country_modifier = glut_of_mercs
+		
 		
 	}
 	modifier = {
@@ -801,8 +790,7 @@ merc_effashan_riders = {
 				superregion = oppia_superregion
 			}
 		
-		has_country_modifier = mercenaries_to_the_standard
-		has_country_modifier = glut_of_mercs
+		
 		
 	}
 	modifier = {
