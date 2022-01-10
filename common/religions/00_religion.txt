@@ -1071,7 +1071,6 @@ Agmagozi = {
 	defender_of_faith = yes
 	can_form_personal_unions = yes
 
-
 	dorroman = {
 		icon = 18
 		color = { 193 117 123}
@@ -1095,6 +1094,7 @@ Agmagozi = {
 
 		crusade_name = HOLY_WAR
 	}
+
 	qamon = {
 		icon = 19
 		color = { 57 127 152}
@@ -1118,6 +1118,31 @@ Agmagozi = {
 
 		crusade_name = HOLY_WAR
 	}
+
+	qanoyan = { # Fix icons and colors
+		icon = 19
+		color = { 57 127 152}
+
+		country = {
+			heir_chance = 1
+			technology_cost = -0.05
+		}
+		country_as_secondary = {
+			tolerance_heretic = 1
+			governing_capacity_modifier = 0.1
+		}
+
+		province = {
+			local_missionary_strength = -0.01
+		}
+
+		heretic = {
+			REFORMED
+		}
+
+		crusade_name = HOLY_WAR
+	}
+
 	tombasa = {
 		icon = 23
 		color = { 142 193 21 }
@@ -1132,6 +1157,30 @@ Agmagozi = {
 		}
 
 		heretic = { GISHIAN JINISH }
+
+		crusade_name = HOLY_WAR
+	}
+
+	urbaxan = { # Fix icons and colors
+		icon = 19
+		color = { 57 127 152}
+
+		country = {
+			heir_chance = 1
+			technology_cost = -0.05
+		}
+		country_as_secondary = {
+			tolerance_heretic = 1
+			governing_capacity_modifier = 0.1
+		}
+
+		province = {
+			local_missionary_strength = -0.01
+		}
+
+		heretic = {
+			REFORMED
+		}
 
 		crusade_name = HOLY_WAR
 	}

@@ -345,6 +345,15 @@
  tombasa_rebels_desc:0 "Religious fanatics tend to rise up in provinces controlled by nations of a different faith. They seek to spread their faith and smite all unbelievers."
  tombasa_rebels_army:0 "$RELIGION$ Army"
 
+ qanoyan:0 "Qanoyan"
+ qanoyan_religion_desc:0 "when the localisation is not present!"
+ qanoyan_rebels_demand:0 "Convert $COUNTRYNAME$"
+ qanoyan_rebels_demand_desc:0 "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
+ qanoyan_rebels_title:0 "Religious"
+ qanoyan_rebels_name:0 "$RELIGION$ Zealots"
+ qanoyan_rebels_desc:0 "Religious fanatics tend to rise up in provinces controlled by nations of a different faith. They seek to spread their faith and smite all unbelievers."
+ qanoyan_rebels_army:0 "$RELIGION$ Army"
+
  qamon:0 "Qamon"
  qamon_religion_desc:0 "Qamon was once the dominant religion in the House of Avusqamon, but with the Dorroman invasions, it has since fallen apart, and it is a dying religion."
  qamon_rebels_demand:0 "Convert $COUNTRYNAME$"
@@ -354,6 +363,15 @@
  qamon_rebels_desc:0 "Religious fanatics tend to rise up in provinces controlled by nations of a different faith. They seek to spread their faith and smite all unbelievers."
  qamon_rebels_army:0 "$RELIGION$ Army"
  barqokyrot:0 "Barqo-Kyrot"
+
+ urbaxan:0 "Urbaxan"
+ urbaxan_religion_desc:0 "when the localisation is not present!"
+ urbaxan_rebels_demand:0 "Convert $COUNTRYNAME$"
+ urbaxan_rebels_demand_desc:0 "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
+ urbaxan_rebels_title:0 "Religious"
+ urbaxan_rebels_name:0 "$RELIGION$ Zealots"
+ urbaxan_rebels_desc:0 "Religious fanatics tend to rise up in provinces controlled by nations of a different faith. They seek to spread their faith and smite all unbelievers."
+ urbaxan_rebels_army:0 "$RELIGION$ Army"
 
  tonmo_group:0 "Tonmo"
  tonmo:0 "Tonmo"
