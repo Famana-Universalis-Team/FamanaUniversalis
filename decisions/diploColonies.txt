@@ -55,7 +55,7 @@ country_decisions = {
 			riximi_area = {
 				is_empty = yes
 			}
-			dip_tech = 2
+			dip_tech = 4
 			OR = {
 				owns_core_province = 5561
 				owns_core_province = 5354
@@ -84,7 +84,7 @@ country_decisions = {
 			}
 		}
 		allow = {
-			dip_tech = 5
+			dip_tech = 7
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
 			mil_power = 150
@@ -610,7 +610,7 @@ country_decisions = {
 			unnamed_area_54 = {
 				is_empty = yes
 			}
-			dip_tech = 1
+			dip_tech = 3
 			OR = {
 				owns_core_province = 5571
 				owns_core_province = 5572
@@ -634,7 +634,7 @@ country_decisions = {
 			}
 		}
 		allow = {
-			dip_tech = 4
+			dip_tech = 6
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
 			mil_power = 125
@@ -710,7 +710,7 @@ country_decisions = {
 			durra_area = {
 				is_empty = yes
 			}
-			dip_tech = 1
+			dip_tech = 3
 			OR = {
 				owns_core_province = 5565
 				owns_core_province = 5566
@@ -732,7 +732,7 @@ country_decisions = {
 			}
 		}
 		allow = {
-			dip_tech = 4
+			dip_tech = 6
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
 			mil_power = 75
@@ -758,7 +758,7 @@ country_decisions = {
 			unnamed_area_53 = {
 				is_empty = yes
 			}
-			dip_tech = 1
+			dip_tech = 3
 			OR = {
 				owns_core_province = 5807
 				owns_core_province = 5568
@@ -783,7 +783,7 @@ country_decisions = {
 			}
 		}
 		allow = {
-			dip_tech = 4
+			dip_tech = 6
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
 			mil_power = 150
@@ -809,7 +809,7 @@ country_decisions = {
 			nopatle_area = {
 				is_empty = yes
 			}
-			dip_tech = 2
+			dip_tech = 4
 			OR = {
 				owns_core_province = 5559
 				owns_core_province = 5562
@@ -829,7 +829,7 @@ country_decisions = {
 			}
 		}
 		allow = {
-			dip_tech = 5
+			dip_tech = 7
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
 			mil_power = 50

@@ -1,5 +1,5 @@
 culture = Pawani_C
-religion = shirian
+religion = lathvy
 owner = NKM
 controller = NKM
 add_core = NKM
@@ -9,10 +9,10 @@ add_core = NKM
 hre = no
 discovered_by = western
 base_tax = 3
-base_production = 2
-trade_goods = livestock
-base_manpower = 2
+base_production = 3
+trade_goods = fish
+base_manpower = 3
 capital = "UNNAMED"
-is_city = no
+is_city = yes
 extra_cost = 1
 
