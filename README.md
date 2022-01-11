@@ -1,7 +1,7 @@
 # Famana Universalis Github
 
 The official repository for the Famana Universalis mod.
-Game is currently on **in-Development build 1.3**
+Game is currently on **in-Development build 1.3**.
 Find the mod at https://steamcommunity.com/sharedfiles/filedetails/?id=2686279554
 
 Special thanks to the team:
