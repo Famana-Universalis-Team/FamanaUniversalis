@@ -1,0 +1,108 @@
+country_decisions = {
+
+	achievement_from_the_ashes = {
+		major = yes
+		potential = {
+			OR = {
+				tag = MRS
+				tag = MOR
+			}
+		}
+		provinces_to_highlight = {
+			region = south_xalia_region
+			region = east_xalia_region
+			region = north_xalia_region
+			region = moria_region
+		}
+		allow = {
+			ironman = yes
+			was_tag = MRS
+			OR = {
+				tag = MOR
+				tag = GAX
+			}
+			num_of_owned_provinces_with = {
+				value = 122
+				religion = morian
+				OR = {
+					region = south_xalia_region
+					region = east_xalia_region
+					region = north_xalia_region
+					region = moria_region
+				}
+		    }
+		}
+		effect = {
+			add_country_modifier = {
+				name = achievement_from_the_ashes_modifier
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	achievement_servant_of_delk = {
+		major = yes
+		potential = {
+			OR = {
+				tag = DEL
+				was_tag = DEL
+			}
+		}
+		allow = {
+			ironman = yes
+			NOT = {
+				num_of_loans = 1
+			}
+			num_of_owned_provinces_with = {
+				value = 50
+				OR = {
+					has_building = fort_15th
+					has_building = fort_16th
+					has_building = fort_17th
+					has_building = fort_18th
+				}
+		    }
+		}
+		effect = {
+			add_country_modifier = {
+				name = achievement_servant_of_delk_modifier
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	achievement_diaspora = {
+		major = yes
+		potential = {
+			OR = {
+				tag = YTB
+				was_tag = YTB
+			}
+		}
+		allow = {
+			ironman = yes
+			num_of_owned_provinces_with = {
+				value = 20
+				culture	= Blastan
+		    }
+			NOT = {
+				is_year = 350
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = achievement_diaspora_modifier
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
