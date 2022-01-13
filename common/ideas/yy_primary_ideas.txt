@@ -1,4 +1,82 @@
 
+GLD_ideas = {
+	start = {
+		global_tax_modifier = 0.10
+		legitimacy = 1
+	}
+	
+	bonus = {
+		trade_efficiency = 0.10
+	}	
+
+	trigger = {
+		primary_culture = Glazian
+	}
+	free = yes
+	
+	gld_great = {
+		global_ship_cost = -0.10
+	}
+	gld_roots = {
+		discipline = 0.05
+	}
+	gld_grand = {
+		prestige = 0.5
+		liberty_desire_from_subject_development = -0.10
+	}
+	gld_new = {
+		development_cost = -0.10
+	}
+	gld_gomic = {
+		merchants = 1
+	}
+	gld_naval = {
+		galley_power = 0.10
+	}
+	gld_culture = {
+		culture_conversion_cost = -0.20
+	}
+}
+
+WLR_ideas = {
+	start = {
+		tolerance_own = 1
+		core_creation = -0.10
+	}
+	
+	bonus = {
+		production_efficiency = 0.10
+	}	
+
+	trigger = {
+		primary_culture = Walaran
+	}
+	free = yes
+	
+	wlr_legacy = {
+		missionaries = 1
+	}
+	wlr_lords = {
+		diplomatic_upkeep = 1
+	}
+	wlr_spirit = {
+		cavalry_power = 0.10
+	}
+	wlr_balance = {
+		diplomats = 1
+	}
+	wlr_control = {
+		global_own_trade_power = 0.10
+	}
+	wlr_unite = {
+		land_morale = 0.10
+	}
+	wlr_defense = {
+		global_manpower_modifier = 0.10
+		garrison_size = 0.10
+	}
+}
+
 OSS_ideas = {
 	start = {
 		discipline = 0.05

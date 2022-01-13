@@ -1949,3 +1949,121 @@ ALM_ideas = {
         global_autonomy = -0.05
     }
 }
+
+KOM_ideas = {
+    start = {
+        build_cost = -0.10
+		power_projection_from_insults = 1.00
+    }
+    
+    bonus = {
+        trade_efficiency = 0.10
+    }    
+
+    trigger = {
+        tag = KOM
+    }
+    free = yes
+    
+    kom_feed = {
+		production_efficiency = 0.10
+		diplomatic_reputation = 1
+    }
+    kom_brother = {
+        same_culture_advisor_cost = -0.15
+    }
+    kom_tribe = {
+        state_maintenance_modifier = -0.20
+    }
+    kom_xal = {
+        mercenary_discipline = 0.05
+		num_accepted_cultures = 2
+    }
+    kom_urban = {
+		development_cost = -0.10
+    }
+    kom_prot = {
+        naval_forcelimit_modifier = 0.20
+    }
+    kom_tax = {
+        global_tax_modifier = 0.10
+    }
+}
+
+GAX_ideas = {
+    start = {
+        prestige = 1
+		religious_unity = 0.25
+    }
+    
+    bonus = {
+        merchants = 1
+    }    
+
+    trigger = {
+        tag = GAX
+    }
+    free = yes
+    
+    gax_ash = {
+		land_morale = 0.10
+    }
+    gax_four = {
+        idea_cost = -0.05
+		advisor_pool = 1
+    }
+    gax_spring = {
+        core_creation = -0.10
+    }
+    gax_test = {
+        defensiveness = 0.20
+    }
+    gax_new = {
+		naval_morale = 0.10
+    }
+    gax_gomic = {
+		trade_efficiency = 0.10
+    }
+    gax_ren = {
+        production_efficiency = 0.10
+    }
+}
+
+POM_ideas = {
+    start = {
+        prestige = 1
+		religious_unity = 0.25
+    }
+    
+    bonus = {
+        merchants = 1
+    }    
+
+    trigger = {
+        tag = POM
+    }
+    free = yes
+    
+    pom_ = {
+		land_morale = 0.10
+    }
+    pom_ = {
+        idea_cost = -0.05
+		advisor_pool = 1
+    }
+    pom_ = {
+        core_creation = -0.10
+    }
+    pom_ = {
+        defensiveness = 0.20
+    }
+    pom_ = {
+		naval_morale = 0.10
+    }
+    pom_ = {
+		trade_efficiency = 0.10
+    }
+    pom_ = {
+        production_efficiency = 0.10
+    }
+}
