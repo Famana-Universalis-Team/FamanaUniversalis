@@ -79,3 +79,43 @@ FAS_ideas = {
         siege_ability = 0.20
     }
 }
+
+NOZ_ideas = {
+    start = {
+        reinforce_cost_modifier = -0.15
+        cavalry_power = 0.10
+    }
+
+    bonus = {
+        tolerance_own = 2
+    }
+
+    trigger = {
+        tag = NOZ
+    }
+    free = yes
+
+    noz_phil = {
+        idea_cost = -0.05
+        embracement_cost = -0.2
+    }
+    noz_steppe = {
+        movement_speed = 0.20
+    }
+    noz_land = {
+        global_missionary_strength = 0.01
+        missionary_maintenance_cost = -0.33
+    }
+    noz_wooden = {
+        defensiveness = 0.15
+    }
+    noz_for = {
+        prestige_from_land = 0.50
+    }
+    noz_horse = {
+        cav_to_inf_ratio = 0.25
+    }
+    noz_du = {
+        land_attrition = -0.10
+    }
+}

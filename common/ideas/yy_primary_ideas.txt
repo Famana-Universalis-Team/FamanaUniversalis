@@ -1,4 +1,82 @@
 
+LER_ideas = {
+	start = {
+		siege_ability = 0.15
+		production_efficiency = 0.10
+	}
+	
+	bonus = {
+		free_mil_policy = 1
+	}	
+
+	trigger = {
+		primary_culture = Leronyan
+	}
+	free = yes
+	
+	ler_unbreak = {
+		legitimacy = 0.5
+		shock_damage_received = -0.10
+	}
+	ler_hozy = {
+		diplomatic_reputation = 2
+	}
+	ler_biomi = {
+		land_forcelimit_modifier = 0.10
+	}
+	ler_end = {
+		reform_progress_growth = 0.10
+	}
+	ler_garig = {
+		diplomats = 1
+	}
+	ler_great = {
+		global_prov_trade_power_modifier = 0.10
+	}
+	ler_barbaric = {
+		loot_amount = 0.50
+	}
+}
+
+Hozyan_ideas = {
+	start = {
+		war_exhaustion = -0.05
+		manpower_recovery_speed = 0.10
+	}
+	
+	bonus = {
+		shock_damage = 0.10
+	}	
+
+	trigger = {
+		primary_culture = Hozyan
+	}
+	free = yes
+	
+	Hozyan_reun = {
+		core_creation = -0.10
+	}
+	Hozyan_adopt = {
+		mil_tech_cost_modifier = -0.10
+	}
+	Hozyan_rest = {
+		cavalry_power = 0.20
+		cav_to_inf_ratio = 0.25
+	}
+	Hozyan_zmats = {
+		free_leader_pool = 1
+	}
+	Hozyan_mobile = {
+		leader_land_manuever = 1
+	}
+	Hozyan_old = {
+		stability_cost_modifier = -0.10
+	}
+	Hozyan_route = {
+		global_trade_power = 0.10
+	}
+}
+
 GLD_ideas = {
 	start = {
 		global_tax_modifier = 0.10
