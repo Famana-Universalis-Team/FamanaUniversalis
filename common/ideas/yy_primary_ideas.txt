@@ -1,4 +1,42 @@
 
+Mirrisan_ideas = {
+	start = {
+		hostile_attrition = 1
+		naval_forcelimit_modifier = 0.20
+	}
+	
+	bonus = {
+		discipline = 0.05
+	}	
+
+	trigger = {
+		primary_culture = Mirrisan
+	}
+	free = yes
+	
+	Mirrisan_tribal = {
+		monarch_military_power = 1
+	}
+	Mirrisan_resist = {
+		defensiveness = 0.10
+	}
+	Mirrisan_march = {
+		reinforce_cost_modifier = -0.10
+	}
+	Mirrisan_adopt = {
+		tolerance_own = 2
+	}
+	Mirrisan_gruj = {
+		global_tax_modifier = 0.10
+	}
+	Mirrisan_syronrif = {
+		backrow_artillery_damage = 0.10
+	}
+	Mirrisan_docks = {
+		sea_repair = yes
+	}
+}
+
 LER_ideas = {
 	start = {
 		siege_ability = 0.15
