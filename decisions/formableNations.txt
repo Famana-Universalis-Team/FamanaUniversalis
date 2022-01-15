@@ -341,7 +341,6 @@ country_decisions = {
 		}
 	}
 
-	
 	oppia_nation = {
 		major = yes
 		potential = {
@@ -349,7 +348,6 @@ country_decisions = {
 				culture_group = Oppian
 				OR = {
 					religion = western_oppian
-					religion = eastern_oppian
 					religion = reformed_oppian
 					religion = lathvy
 				}
@@ -450,6 +448,132 @@ country_decisions = {
 		}
 	}
 	
+	oppia_nation_by_east = {
+		major = yes
+		potential = {
+			AND = {
+				culture_group = Hoxoi
+				OR = {
+					religion = eastern_oppian
+					religion = reformed_oppian
+					religion = lathvy
+				}
+				NOT = { exists = OPP }
+				was_never_end_game_tag_trigger = yes
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 5066
+				province_id = 5044
+				province_id = 5103
+				province_id = 5091
+				province_id = 5106
+				province_id = 5123
+				province_id = 5121
+				province_id = 5059
+				province_id = 5062
+				province_id = 5113
+				province_id = 5081
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				is_city = no
+			}
+		}
+		allow = {
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			owns_core_province = 5066
+			owns_core_province = 5044
+			owns_core_province = 5103
+			owns_core_province = 5091
+			owns_core_province = 5106
+			owns_core_province = 5123
+			owns_core_province = 5121
+			owns_core_province = 5059
+			owns_core_province = 5062
+			owns_core_province = 5113
+			owns_core_province = 5081
+			capital_scope = {
+				is_core = ROOT
+			}
+			num_of_owned_provinces_with = {
+				value = 20
+				is_city = yes
+				superregion = oppia_superregion
+			}
+			development_in_provinces = {
+				value = 750
+				superregion = oppia_superregion
+			}
+		}
+		effect = {
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			restore_country_name = yes
+			change_tag = OPP
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						OR = {
+							culture = Hoxan
+							culture = Blastan
+							culture = Zoblotran
+						}
+					}
+					change_culture = Neo_Oppian
+				}
+			}
+			change_primary_culture = Neo_Oppian
+			5066 = {
+				move_capital_effect = yes
+			}
+			if = {
+				limit = {
+					NOT = { government_rank = 3 }
+				}
+				set_government_rank = 3
+			}
+			oppia_superregion = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					is_empty = no
+				}
+				add_core = OPP
+			}
+			oppia_superregion = {
+				limit = {
+					is_empty = yes
+				}
+				add_claim = OPP
+			}
+			laglon_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = OPP
+			}
+			eastern_desert_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_core = OPP
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 50 #special, its oppia after all
+			set_capital = 5066
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
 	deshmoz_nation = {
 		major = yes
 		potential = {
@@ -1376,9 +1500,10 @@ country_decisions = {
 		provinces_to_highlight = {
 			OR = {
 				province_id = 5177
-				province_id = 5182
+				province_id = 5188
 				province_id = 5185
 				province_id = 5174
+				province_id = 5792
 			}
 			OR = {
 				NOT = { owned_by = ROOT }
