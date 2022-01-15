@@ -79,6 +79,7 @@ lower_oppia_region = {
 		elorak_area
 		fazalep_area
 		mesdool_area
+		astom_area
 	}
 }
 
@@ -91,6 +92,7 @@ arlenta_region = {
 		unnamed_area_8
 		zne_area
 		sosne_area
+		heoki_area
 	}
 }
 
@@ -165,6 +167,8 @@ west_estal_region = {
 		west_feniki
 		hasia_area
 		revdirom_area
+		emzelom_area
+		griglom_area
 	}
 }
 
@@ -187,6 +191,8 @@ pextoglazia_region = {
 		mofemi_morsum_area
 		unnamed_pexto_3
 		unnamed_pexto_4
+		kimina_area
+		porlam_area
 	}
 }
 
@@ -208,6 +214,17 @@ ordica_region = {
 		unnamed_area_25
 		unnamed_area_28
 		nabrosia_area
+		nonter_area
+	}
+}
+
+west_ordica_region = {
+	areas = {
+		bortur_area
+		ennam_area
+		dotz_area
+		poto_haroo_area
+		dreklos_area
 	}
 }
 
@@ -215,6 +232,7 @@ vordor_region = {
 	areas = {
 		holy_bridge_area
 		vordor_area
+		nagolai_area
 	}
 }
 
