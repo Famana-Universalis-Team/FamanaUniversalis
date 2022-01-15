@@ -264,6 +264,18 @@ country_decisions = {
 				}
 				add_permanent_claim = MKY
 			}
+			5136 = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = MKY
+			}
+			5135 = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = MKY
+			}
 			add_country_modifier = {
 				name = "centralization_modifier"
 				duration = 7300
@@ -639,6 +651,12 @@ country_decisions = {
 				}
 				add_permanent_claim = DES
 			}
+			heoki_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = DES
+			}
 			unnamed_area_7 = {
 				limit = {
 					NOT = { owned_by = ROOT }
@@ -773,6 +791,72 @@ country_decisions = {
 				}
 				country_event = { id = ideagroups.1 } #Swap Ideas
 			}
+			oxaled_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = MSH
+			}
+			relxon_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = MSH
+			}
+			xon_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = MSH
+			}
+			vinon_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = MSH
+			}
+			walamo_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = MSH
+			}
+			vau_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = MSH
+			}
+			karmanon_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = MSH
+			}
+			unnamed_area_21 = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = MSH
+			}
+			pyarxu_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = MSH
+			}
+			unnamed_area_20 = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = MSH
+			}
+			vox_larm_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = MSH
+			}
 			custom_tooltip = FORM_SHIRIA
 			set_country_flag = shiria_formed
 			if = {
@@ -838,6 +922,54 @@ country_decisions = {
 			if = {
 				limit = { has_custom_ideas = no }
 				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			sixan_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = VNA
+			}
+			marnet_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = VNA
+			}
+			jexus_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = VNA
+			}
+			sixan_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = VNA
+			}
+			abvori_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = VNA
+			}
+			sostus_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = VNA
+			}
+			vinsa_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = VNA
+			}
+			calla_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = VNA
 			}
 			add_country_modifier = {
 				name = "centralization_modifier"
@@ -990,6 +1122,12 @@ country_decisions = {
 				}
 				set_government_rank = 2
 			}
+			moria_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = MOR
+			}
 			change_tag = MOR
 			add_country_modifier = {
 				name = "centralization_modifier"
@@ -1008,7 +1146,6 @@ country_decisions = {
 			AND = {
 				NOT = { exists = MOX }
 				culture_group = Maxan
-				NOT = { culture = Emastalian }
 				was_never_end_game_tag_trigger = yes
 			}
 		}
@@ -1405,6 +1542,18 @@ country_decisions = {
 				}
 				add_permanent_claim = JAS
 			}
+			geccis_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = JAS
+			}
+			shol_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = JAS
+			}
 			add_prestige = 25
 		}
 		ai_will_do = {
@@ -1481,6 +1630,12 @@ country_decisions = {
 				}
 				add_permanent_claim = EST
 			}
+			west_emastalia_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = EST
+			}
 			add_prestige = 25
 		}
 		ai_will_do = {
@@ -1488,11 +1643,11 @@ country_decisions = {
 		}
 	}
 
-	hoxoi_nation = {
+	hovakidran_nation = {
 		major = yes
 		potential = {
 			AND = {
-				NOT = { exists = HOX }
+				NOT = { exists = HVK }
 				culture_group = Hoxoi
 				was_never_end_game_tag_trigger = yes
 			}
@@ -1535,7 +1690,7 @@ country_decisions = {
 				}
 				set_government_rank = 2
 			}
-			change_tag = HOX
+			change_tag = HVK
 			add_country_modifier = {
 				name = "centralization_modifier"
 				duration = 7300
@@ -1544,14 +1699,14 @@ country_decisions = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
-				add_permanent_claim = HOX
+				add_permanent_claim = HVK
 			}
 			5184 = {
 				limit = {
 					is_empty = yes
 				}
-				cede_province = HOX
-				add_core = HOX
+				cede_province = HVK
+				add_core = HVK
 			}
 			add_prestige = 25
 		}
@@ -1759,6 +1914,30 @@ country_decisions = {
 					government_rank = 1
 				}
 				set_government_rank = 2
+			}
+			unnamed_area_39 = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = BMF
+			}
+			unnamed_area_35 = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = BMF
+			}
+			unnamed_area_45 = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = BMF
+			}
+			unnamed_area_44 = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = BMF
 			}
 			add_prestige = 10
 		}

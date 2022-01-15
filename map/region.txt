@@ -41,27 +41,44 @@ vishma_region = {
 western_naravam_region = {
 	areas = {
 		idios_area
+		kasmel_area
+	}
+}
+
+eastern_naravam_region = {
+	areas = {
+		nere_area
+		kletvar_area
+		area_57
+		feemk_area
+	}
+}
+
+gotzlic_region = {
+	areas = {
+		garirol_area
+		bojj_area
+		sovi_area
+		hozy_area
+		dethoni_area
+		nizoora_area
+		rosta_area
+		nenki_area
 	}
 }
 
 upper_oppia_region = {
 	areas = {
-		quanex_area
-		western_realm
-		unnamed_area_1
-		unnamed_area_2
-		unnamed_area_3
-		east_umzatia
-		umzat_bay
-		upper_oppian_area
+		asetli_area
 		umzat_islands_area
+		east_umzatia
+		western_core_area
+		roplea_area
 		lower_oppia_area
 		arma_area
-		roplea_area
 		eastern_core_area
-		western_core_area
-		asetli_area
-		unnamed_area_19
+		quanex_area
+		umzat_bay
 	}
 }
 
@@ -103,6 +120,7 @@ maky_region = {
 		okus_area
 		unnamed_area_9
 		bava_area
+		rishtokay_area
 	}
 }
 
@@ -130,6 +148,8 @@ eastern_desert_region = {
 		ropinver_area
 		diam_area
 		unnamed_area_12
+		hoxona_area
+		shol_area
 	}
 }
 
@@ -157,6 +177,7 @@ laglon_region = {
 		unnamed_area_16
 		unnamed_area_17
 		unnamed_area_18
+		feyel_area
 	}
 }
 
@@ -215,6 +236,21 @@ ordica_region = {
 		unnamed_area_28
 		nabrosia_area
 		nonter_area
+		abikuyra_area
+		jaylir_area
+	}
+}
+
+east_ordica_region = {
+	areas = {
+		mrug_area
+		usul_area
+		celzion_area
+		loqass_area
+		veclla_area
+		garex_area
+		roltam_area
+		darz_area
 	}
 }
 
@@ -225,6 +261,7 @@ west_ordica_region = {
 		dotz_area
 		poto_haroo_area
 		dreklos_area
+		alo_tramo_area
 	}
 }
 
@@ -238,16 +275,24 @@ vordor_region = {
 
 emastalia_region = {
 	areas = {
-		riximi_area
-		durra_area
-		morla_area
 		poxa_area
 		vava_area
-		nopatle_area
-		unsets_area
-		unnamed_area_53
 		unnamed_area_54
 		unnamed_area_55
+		real_vava_area
+		morla_area
+	}
+}
+
+west_emastalia_region = {
+	areas = {
+		riximi_area
+		nopatle_area
+		real_durra_area
+		durra_area
+		unsets_area
+		unnamed_area_53
+		area_56
 	}
 }
 
@@ -261,6 +306,7 @@ kapolia_region = {
 		unnamed_area_32
 		unnamed_area_52
 		unnamed_area_56
+		geccis_area
 	}
 }
 
@@ -276,6 +322,9 @@ east_xalia_region = {
 		vinsa_area
 		walamo_area
 		unnamed_area_21
+		vau_area
+		vinon_area
+		relxon_area
 	}
 }
 
@@ -286,6 +335,7 @@ moria_region = {
 		morsum_area
 		vesuxa_area
 		glazia_area
+		abvori_area
 	}
 }
 
@@ -297,6 +347,8 @@ north_xalia_region = {
 		elwait_area
 		unnamed_area_20
 		pyarxu_area
+		megloa_area
+		south_pextum_area
 	}
 }
 
@@ -306,6 +358,8 @@ moxon_region = {
 		lesser_moxon_area
 		central_lerush_area
 		outer_moxon_area
+		rozvos_area
+		meaprin_area
 	}
 }
 
@@ -320,6 +374,8 @@ aresia_region = {
 		jiat_area
 		govrrol_area
 		verko_area
+		pasba_area
+		jassine_area
 	}
 }
 
@@ -329,38 +385,65 @@ vanoma_region = {
 		unnamed_area_42
 		unnamed_area_41
 		borlebim_area
+		lefim_area
+		mori_area
+		area_74
+		area_75
+		area_60
+	}
+}
+
+gorfrek_region = {
+	areas = {
+		area_61
+		area_62
+		area_63
+		area_64
+		area_65
+		area_66
+		area_67
+		area_68
+		area_69
+		area_70
+		area_71
+		area_72
+		area_73
 	}
 }
 
 nozumol_region = {
 	areas = {
-		unnamed_area_38
 		nuzoto_area
 		west_jimbalak_area
 		east_jimbalak_area
 		nhoma_area_1
-		baqku_area
-		nhoma_area_2
-		bizugu_area
-		fuka_area
-		north_khim_area
-		nhoma_area_3 
-		vamkad_area
+		baqku_area 
 		nhoma_area_4
-		nhoma_area_5
 		vaks_area
-		ufulk_area
-		nhoma_area_6
-		
+		toza_area
+		nhoma_area_5
 	}
 }
+
+nhoma_region = {
+	areas = {
+		fuka_area
+		north_khim_area
+		vamkad_area
+		nhoma_area_3
+		unnamed_area_38
+		nhoma_area_2
+		nhoma_area_6
+	}
+}
+
 northern_desert_region = {
 	areas = {
 		vadorvador_area
 		the_edge_area
 		khazatraal_area
 		yakven_area
-		
+		ufulk_area
 	}
 }
 
@@ -373,5 +456,6 @@ bamal_gulf_region = {
 		unnamed_area_48
 		unnamed_area_45
 		unnamed_area_44
+		yenis_area
 	}
 }
