@@ -1077,15 +1077,11 @@ Agmagozi = {
 
 		country = {
 			heir_chance = 1
-			stability_cost_modifier = -0.25
+			stability_cost_modifier = -0.10
 		}
 		country_as_secondary = {
 			tolerance_own = 1
 			legitimacy = 0.5
-		}
-
-		province = {
-			local_missionary_strength = -0.01
 		}
 
 		heretic = {
@@ -1109,35 +1105,31 @@ Agmagozi = {
 		}
 
 		province = {
-			local_missionary_strength = -0.01
+			local_missionary_strength = 0.01
 		}
 
 		heretic = {
-			REFORMED
+			AGMAGOZI
 		}
 
 		crusade_name = HOLY_WAR
 	}
 
 	qanoyan = { # Fix icons and colors
-		icon = 
-		color = { 59 127 152}
+		icon = 19
+		color = { 208 210 24 }
 
 		country = {
 			heir_chance = 1
-			technology_cost = -0.05
+			land_forcelimit_modifier = 0.10
 		}
 		country_as_secondary = {
-			tolerance_heretic = 1
-			governing_capacity_modifier = 0.1
-		}
-
-		province = {
-			local_missionary_strength = -0.01
+			ae_impact = -0.1
+			vassal_income = 0.05
 		}
 
 		heretic = {
-			REFORMED
+			TIKULSAN
 		}
 
 		crusade_name = HOLY_WAR
@@ -1163,23 +1155,23 @@ Agmagozi = {
 
 	urbaxan = { # Fix icons and colors
 		icon = 19
-		color = { 58 127 152}
+		color = { 39 128 29 }
 
 		country = {
 			heir_chance = 1
-			technology_cost = -0.05
+			idea_cost = -0.1
 		}
 		country_as_secondary = {
-			tolerance_heretic = 1
 			governing_capacity_modifier = 0.1
+			trade_efficiency = 0.05
 		}
 
 		province = {
-			local_missionary_strength = -0.01
+			local_missionary_strength = -0.02
 		}
 
 		heretic = {
-			REFORMED
+			BALOLI
 		}
 
 		crusade_name = HOLY_WAR
