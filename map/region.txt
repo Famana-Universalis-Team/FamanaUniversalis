@@ -42,6 +42,15 @@ western_naravam_region = {
 	areas = {
 		idios_area
 		kasmel_area
+		area_84
+		area_85
+		area_86
+		area_88
+		area_89
+		area_91
+		area_92
+		area_93
+		area_87
 	}
 }
 
@@ -51,6 +60,22 @@ eastern_naravam_region = {
 		kletvar_area
 		area_57
 		feemk_area
+		area_90
+		area_94
+		area_95
+		area_96
+		area_97
+	}
+}
+
+apilanya_region = {
+	areas = {
+		pechiadh_area
+		area_59
+		saurof_area
+		denire_area
+		kolya_area
+		area_58
 	}
 }
 
@@ -458,5 +483,12 @@ bamal_gulf_region = {
 		unnamed_area_45
 		unnamed_area_44
 		yenis_area
+	}
+}
+
+gacil_region = {
+	areas = {
+		gabero_area
+		tirix_area
 	}
 }
