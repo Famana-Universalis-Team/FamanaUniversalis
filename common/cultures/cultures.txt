@@ -432,6 +432,18 @@ Oppian = {
 			Thelar Monthle Zryas Lyrvan Suyel Lurcay
 		}
 	}
+	Neo_Oppian = {
+		primary = HOX
+		male_names = {
+			Alletan Dif Galvis Rannos Vanii Yoms Gamletan Aytrus Gamefan Galif Sus Alcuge
+		}
+		female_names = {
+			Soufi Mazia Zoi Messia
+		}
+		dynasty_names = {
+			Arli Sare Zene Eta Arliv Alzat Radalf Netro Ossan Alcus Vantan Gamel Litrosa Enstaf
+		}
+	}
 }
 
 #############################
@@ -579,6 +591,7 @@ Ravsho = { #unfinished
 		}
 	}
 	Lashran = {
+		primary = ANM
 		male_names = {
 			Ravshara Lanreisseir Unia Gaara Yharinel Axilea Ogro Astrazna Axiaraniro Raravshara Unrara
 		}
@@ -602,6 +615,7 @@ Ravsho = { #unfinished
 		}
 	}
 	Bastranian = {
+		primary = BAS
 		male_names = {
 			Ravshara Lanreisseir Unia Gaara Yharinel Axilea Ogro Astrazna Axiaraniro Raravshara Unrara
 		}
@@ -613,6 +627,7 @@ Ravsho = { #unfinished
 		}
 	}
 	Khiman = {
+		primary = KMI
 		male_names = {
 			Ravshara Lanreisseir Unia Gaara Yharinel Axilea Ogro Astrazna Axiaraniro Raravshara Unrara
 		}
@@ -624,6 +639,7 @@ Ravsho = { #unfinished
 		}
 	}
 	Central_Nhoman = {
+		primary = LAM
 		male_names = {
 			Ravshara Lanreisseir Unia Gaara Yharinel Axilea Ogro Astrazna Axiaraniro Raravshara Unrara
 		}
@@ -635,6 +651,7 @@ Ravsho = { #unfinished
 		}
 	}
 	Tyman = {
+		primary = TYM
 		male_names = {
 			Ravshara Lanreisseir Unia Gaara Yharinel Axilea Ogro Astrazna Axiaraniro Raravshara Unrara
 		}
@@ -646,6 +663,7 @@ Ravsho = { #unfinished
 		}
 	}
 	Selkan = {
+		primary = SLK
 		male_names = {
 			Ravshara Lanreisseir Unia Gaara Yharinel Axilea Ogro Astrazna Axiaraniro Raravshara Unrara
 		}
@@ -657,6 +675,7 @@ Ravsho = { #unfinished
 		}
 	}
 	South_Nhoman = {
+		primary = ATR
 		male_names = {
 			Ravshara Lanreisseir Unia Gaara Yharinel Axilea Ogro Astrazna Axiaraniro Raravshara Unrara
 		}
@@ -668,6 +687,7 @@ Ravsho = { #unfinished
 		}
 	}
 	Jimbalan = {
+		primary = JIB
 		male_names = {
 			Ravshara Lanreisseir Unia Gaara Yharinel Axilea Ogro Astrazna Axiaraniro Raravshara Unrara
 		}
@@ -679,6 +699,7 @@ Ravsho = { #unfinished
 		}
 	}
 	Forlimlan = {
+		primary = MIW
 		male_names = {
 			Harumim Djalo Luzmiar Ahil Umiar Toman Tolatar Aro Acren Ettin Menelkir Yhaniel Unrou Gaeri Lanresi
 		}
@@ -859,6 +880,28 @@ Gotzlic = {
 		}
 	}
 	Leronyan = {
+		male_names = {
+			Gaszron Urszus Forara Jrus Hozen Palel Simot Czszyn Rzuszraimus Umarminol Arsegayu
+		}
+		female_names = {
+			Jain Mayul Ghenes Ana
+		}
+		dynasty_names = {
+			Aukkus Varm Erme Holipt Masciyen Maszes Erminelilin Umelenot Poliyus Vura Valin
+		}
+	}
+	Rostan = {
+		male_names = {
+			Gaszron Urszus Forara Jrus Hozen Palel Simot Czszyn Rzuszraimus Umarminol Arsegayu
+		}
+		female_names = {
+			Jain Mayul Ghenes Ana
+		}
+		dynasty_names = {
+			Aukkus Varm Erme Holipt Masciyen Maszes Erminelilin Umelenot Poliyus Vura Valin
+		}
+	}
+	Nenki = {
 		male_names = {
 			Gaszron Urszus Forara Jrus Hozen Palel Simot Czszyn Rzuszraimus Umarminol Arsegayu
 		}

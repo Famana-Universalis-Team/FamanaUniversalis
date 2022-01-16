@@ -1949,3 +1949,278 @@ ALM_ideas = {
         global_autonomy = -0.05
     }
 }
+
+KOM_ideas = {
+    start = {
+        build_cost = -0.10
+		power_projection_from_insults = 1.00
+    }
+    
+    bonus = {
+        trade_efficiency = 0.10
+    }    
+
+    trigger = {
+        tag = KOM
+    }
+    free = yes
+    
+    kom_feed = {
+		production_efficiency = 0.10
+		diplomatic_reputation = 1
+    }
+    kom_brother = {
+        same_culture_advisor_cost = -0.15
+    }
+    kom_tribe = {
+        state_maintenance_modifier = -0.20
+    }
+    kom_xal = {
+        mercenary_discipline = 0.05
+		num_accepted_cultures = 2
+    }
+    kom_urban = {
+		development_cost = -0.10
+    }
+    kom_prot = {
+        naval_forcelimit_modifier = 0.20
+    }
+    kom_tax = {
+        global_tax_modifier = 0.10
+    }
+}
+
+GAX_ideas = {
+    start = {
+        prestige = 1
+		religious_unity = 0.25
+    }
+    
+    bonus = {
+        merchants = 1
+    }    
+
+    trigger = {
+        tag = GAX
+    }
+    free = yes
+    
+    gax_ash = {
+		land_morale = 0.10
+    }
+    gax_four = {
+        idea_cost = -0.05
+		advisor_pool = 1
+    }
+    gax_spring = {
+        core_creation = -0.10
+    }
+    gax_test = {
+        defensiveness = 0.20
+    }
+    gax_new = {
+		naval_morale = 0.10
+    }
+    gax_gomic = {
+		trade_efficiency = 0.10
+    }
+    gax_ren = {
+        production_efficiency = 0.10
+    }
+}
+
+Pomlen_ideas = {
+    start = {
+        development_cost = -0.10
+		church_loyalty_modifier = 0.10
+    }
+    
+    bonus = {
+        missionaries = 1
+    }    
+
+    trigger = {
+        tag = POM
+    }
+    free = yes
+    
+    pom_romal = {
+		prestige = 0.5
+    }
+    pom_blessed = {
+		global_missionary_strength = 0.02
+    }
+    pom_lathvy = {
+        drill_gain_modifier = 0.33
+    }
+    pom_lib = {
+        years_of_nationalism = -5
+    }
+    pom_walls = {
+		defensiveness = 0.15
+    }
+    pom_weapon = {
+		fire_damage	= 0.10
+    }
+    pom_ara = {
+        max_absolutism = 10
+    }
+}
+
+NHL_ideas = {
+    start = {
+        land_morale = 0.10
+		trade_efficiency = 0.10
+    }
+    
+    bonus = {
+        leader_land_fire = 1
+    }    
+
+    trigger = {
+        tag = NHL
+    }
+    free = yes
+    
+    nhl_has = {
+		army_tradition = 0.5
+    }
+    nhl_land = {
+		development_cost = -0.10
+    }
+    nhl_ordic = {
+        ship_durability = 0.10
+    }
+    nhl_dark = {
+        hostile_attrition = 1
+    }
+    nhl_shaar = {
+		prestige = 1
+    }
+    nhl_three = {
+		defensiveness = 0.15
+		fort_maintenance_modifier = -0.20
+    }
+    nhl_kin = {
+		core_creation = -0.10
+    }
+}
+
+ALT_ideas = {
+    start = {
+        shock_damage = 0.10
+		infantry_power = 0.10
+    }
+    
+    bonus = {
+        free_leader_pool = 1
+    }    
+
+    trigger = {
+        tag = ALT
+    }
+    free = yes
+    
+    alt_twin = {
+		prestige = 0.5
+		garrison_size = 0.20
+    }
+    alt_deluge = {
+		diplomats = 1
+    }
+    alt_forest = {
+        defensiveness = 0.15
+    }
+    alt_ordic = {
+        trade_steering = 0.20
+    }
+    alt_ozamah = {
+		movement_speed = 0.10
+    }
+    alt_warrior = {
+		reinforce_speed = 0.25
+    }
+    alt_national = {
+		interest = -0.5
+    }
+}
+
+ZUB_ideas = {
+    start = {
+        land_morale = 0.10
+		global_manpower_modifier = 0.15
+    }
+    
+    bonus = {
+        land_forcelimit_modifier = 0.15
+    }    
+
+    trigger = {
+        tag = ZUB
+    }
+    free = yes
+    
+    zub_old = {
+		legitimacy = 1
+    }
+    zub_gateway = {
+		global_prov_trade_power_modifier = 0.20
+    }
+    zub_neaki = {
+        infantry_power = 0.10
+    }
+    zub_van = {
+        artillery_power = 0.10
+    }
+    zub_prot = {
+		garrison_size = 0.10
+		defensiveness = 0.15
+    }
+    zub_agus = {
+		spy_offence = 0.15
+    }
+    zub_tol = {
+		tolerance_heretic = 2
+    }
+}
+
+RDU_ideas = {
+    start = {
+        years_of_nationalism = -5
+		cavalry_cost = -0.10
+    }
+    
+    bonus = {
+        war_exhaustion = -0.05
+    }    
+
+    trigger = {
+        tag = RDU
+    }
+    free = yes
+    
+    rdu_forest = {
+		hostile_attrition = 1
+    }
+    rdu_naravam = {
+		land_morale = 0.10
+		movement_speed = 0.05
+    }
+    rdu_aplun = {
+        trade_range_modifier = 0.15
+    }
+    rdu_ysnoma = {
+        mercenary_manpower = 0.25
+		merc_maintenance_modifier = -0.10
+    }
+    rdu_prime = {
+		production_efficiency = 0.10
+    }
+    rdu_warrior = {
+		prestige_from_land = 1.0
+    }
+    rdu_uma = {
+		reinforce_speed = 0.05
+		army_tradition = 0.5
+    }
+}

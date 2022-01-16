@@ -308,3 +308,40 @@ generic_tomban_ideas = {
 	}
 }
 
+Gotzlic_ideas = {
+	start = {
+		manpower_recovery_speed = 0.10
+		reinforce_cost_modifier = -0.10
+	}
+	
+	bonus = {
+		legitimacy = 1
+	}	
+
+	trigger = {
+		culture_group = Gotzlic
+	}
+	free = yes
+	
+	Gotzlic_flux = {
+		unjustified_demands = -0.10
+	}
+	Gotzlic_forest = {
+		defensiveness = 0.15
+	}
+	Gotzlic_humikan = {
+		loot_amount = 0.33
+	}
+	Gotzlic_covered = {
+		spy_offence = 0.20
+	}
+	Gotzlic_heart = {
+		caravan_power = 0.15
+	}
+	Gotzlic_oskalven = {
+		tolerance_own = 1
+	}
+	Gotzlic_gather = {
+		global_manpower_modifier = 0.20
+	}
+}

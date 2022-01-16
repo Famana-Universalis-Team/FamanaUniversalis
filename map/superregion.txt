@@ -35,19 +35,26 @@ west_estal_superregion = {
 	ordica_region
 	west_estal_region
 	vordor_region
+	west_ordica_region
+	east_ordica_region
 }
 
 tonmo_supperregion = {
 	nozumol_region
+	nhoma_region
 }
 
 central_estal_supperregion = {
 	emastalia_region
 	vanoma_region
+	west_emastalia_region
+	gorfrek_region
 }
 
-naravam_superregion = {
+north_estal_superregion = {
 	western_naravam_region
+	eastern_naravam_region
+	gotzlic_region
 }
 
 hasmal_superregion = {

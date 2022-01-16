@@ -520,8 +520,6 @@ was_never_end_game_tag_trigger = {	#Country Scope
 			NOT = { tag = NAF }
 			NOT = { was_tag = RES }
 			NOT = { tag = RES }
-			NOT = { was_tag = HOX }
-			NOT = { tag = HOX }
 		}
 	}
 }

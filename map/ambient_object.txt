@@ -411,6 +411,16 @@ type={
 		}
 	}
 	object={
+		name="Seagulls_taiwan"
+		hidden_on_start=no
+		position={
+			2347.000 11.000 180.000 
+		}
+		rotation={
+			0.000 45.000 0.000 
+		}
+	}
+	object={
 		name="Seagulls_Cyperus"
 		hidden_on_start=no
 		position={
@@ -425,6 +435,16 @@ type={
 		hidden_on_start=no
 		position={
 			477.000 11.000 923.000 
+		}
+		rotation={
+			0.000 45.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_zansibar"
+		hidden_on_start=no
+		position={
+			646.000 11.000 693.000 
 		}
 		rotation={
 			0.000 45.000 0.000 
@@ -461,6 +481,16 @@ type={
 		}
 	}
 	object={
+		name="Seagulls_Canarian_islands"
+		hidden_on_start=no
+		position={
+			1427.000 11.000 648.000 
+		}
+		rotation={
+			0.000 45.000 0.000 
+		}
+	}
+	object={
 		name="Seagulls_West_africa"
 		hidden_on_start=no
 		position={
@@ -475,16 +505,6 @@ type={
 		hidden_on_start=no
 		position={
 			2974.000 11.000 998.000 
-		}
-		rotation={
-			0.000 45.000 0.000 
-		}
-	}
-	object={
-		name="Seagulls_taiwan"
-		hidden_on_start=no
-		position={
-			2347.000 11.000 180.000 
 		}
 		rotation={
 			0.000 45.000 0.000 
@@ -561,26 +581,6 @@ type={
 		}
 	}
 	object={
-		name="Seagulls_zansibar"
-		hidden_on_start=no
-		position={
-			646.000 11.000 693.000 
-		}
-		rotation={
-			0.000 45.000 0.000 
-		}
-	}
-	object={
-		name="Seagulls_srilanka"
-		hidden_on_start=no
-		position={
-			825.000 11.000 1887.000 
-		}
-		rotation={
-			0.000 45.000 0.000 
-		}
-	}
-	object={
 		name="Seagulls_west_india"
 		hidden_on_start=no
 		position={
@@ -621,16 +621,6 @@ type={
 		}
 	}
 	object={
-		name="Seagulls_Canarian_islands"
-		hidden_on_start=no
-		position={
-			1427.000 11.000 648.000 
-		}
-		rotation={
-			0.000 45.000 0.000 
-		}
-	}
-	object={
 		name="Seagulls_Venice"
 		hidden_on_start=no
 		position={
@@ -655,6 +645,16 @@ type={
 		hidden_on_start=no
 		position={
 			6277.390 11.000 1263.940 
+		}
+		rotation={
+			0.000 45.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_srilanka"
+		hidden_on_start=no
+		position={
+			825.000 11.000 1887.000 
 		}
 		rotation={
 			0.000 45.000 0.000 
@@ -1190,7 +1190,7 @@ type={
 		name="Seagulls_english_channel"
 		hidden_on_start=no
 		position={
-			1529.000 0.250 1312.000 
+			1802.000 0.250 950.000 
 		}
 		rotation={
 			0.000 -60.000 0.000 
@@ -1392,6 +1392,26 @@ type={
 		name="Seagulls_english_channel"
 		hidden_on_start=no
 		position={
+			556.000 0.100 1919.000 
+		}
+		rotation={
+			0.000 50.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			1013.000 0.100 1829.000 
+		}
+		rotation={
+			0.000 -130.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
 			1713.000 0.100 2027.000 
 		}
 		rotation={
@@ -1452,16 +1472,6 @@ type={
 		name="Seagulls_english_channel"
 		hidden_on_start=no
 		position={
-			556.000 0.100 1919.000 
-		}
-		rotation={
-			0.000 50.000 0.000 
-		}
-	}
-	object={
-		name="Seagulls_english_channel"
-		hidden_on_start=no
-		position={
 			2710.000 0.100 1696.000 
 		}
 		rotation={
@@ -1486,16 +1496,6 @@ type={
 		}
 		rotation={
 			0.000 -60.000 0.000 
-		}
-	}
-	object={
-		name="Seagulls_english_channel"
-		hidden_on_start=no
-		position={
-			1013.000 0.100 1829.000 
-		}
-		rotation={
-			0.000 -130.000 0.000 
 		}
 	}
 }
@@ -1860,16 +1860,6 @@ type={
 		name="Seagulls_english_channel"
 		hidden_on_start=no
 		position={
-			1929.000 0.100 658.000 
-		}
-		rotation={
-			0.000 0.000 0.000 
-		}
-	}
-	object={
-		name="Seagulls_english_channel"
-		hidden_on_start=no
-		position={
 			2190.000 0.200 472.000 
 		}
 		rotation={
@@ -1891,6 +1881,16 @@ type={
 		hidden_on_start=no
 		position={
 			1783.000 0.400 463.000 
+		}
+		rotation={
+			0.000 0.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			1929.000 0.100 658.000 
 		}
 		rotation={
 			0.000 0.000 0.000 

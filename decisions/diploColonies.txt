@@ -55,7 +55,7 @@ country_decisions = {
 			riximi_area = {
 				is_empty = yes
 			}
-			dip_tech = 2
+			dip_tech = 4
 			OR = {
 				owns_core_province = 5561
 				owns_core_province = 5354
@@ -84,7 +84,7 @@ country_decisions = {
 			}
 		}
 		allow = {
-			dip_tech = 5
+			dip_tech = 7
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
 			mil_power = 150
@@ -610,7 +610,7 @@ country_decisions = {
 			unnamed_area_54 = {
 				is_empty = yes
 			}
-			dip_tech = 1
+			dip_tech = 3
 			OR = {
 				owns_core_province = 5571
 				owns_core_province = 5572
@@ -634,7 +634,7 @@ country_decisions = {
 			}
 		}
 		allow = {
-			dip_tech = 4
+			dip_tech = 6
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
 			mil_power = 125
@@ -710,7 +710,7 @@ country_decisions = {
 			durra_area = {
 				is_empty = yes
 			}
-			dip_tech = 1
+			dip_tech = 3
 			OR = {
 				owns_core_province = 5565
 				owns_core_province = 5566
@@ -732,7 +732,7 @@ country_decisions = {
 			}
 		}
 		allow = {
-			dip_tech = 4
+			dip_tech = 6
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
 			mil_power = 75
@@ -758,19 +758,21 @@ country_decisions = {
 			unnamed_area_53 = {
 				is_empty = yes
 			}
-			dip_tech = 1
+			dip_tech = 3
 			OR = {
-				owns_core_province = 5807
-				owns_core_province = 5568
-				owns_core_province = 5569
-				owns_core_province = 5570
-				owns_core_province = 5571
-				owns_core_province = 5799
-				owns_core_province = 5800
-				owns_core_province = 5802
+				owns_core_province = 5806
 				owns_core_province = 5804
 				owns_core_province = 5803
-				owns_core_province = 5806
+				owns_core_province = 5809
+				owns_core_province = 5808
+				owns_core_province = 5807
+				owns_core_province = 5567
+				owns_core_province = 5568
+				owns_core_province = 5802
+				owns_core_province = 6722
+				owns_core_province = 6721
+				owns_core_province = 6720
+				owns_core_province = 6713
 			}
 		}
 		provinces_to_highlight = {
@@ -783,13 +785,65 @@ country_decisions = {
 			}
 		}
 		allow = {
-			dip_tech = 4
+			dip_tech = 6
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
-			mil_power = 150
+			mil_power = 75
 		}
 		effect = {
 			unnamed_area_53 = {
+				limit = {
+					is_empty = yes
+				}
+				cede_province = ROOT
+				change_religion	= ROOT
+				ROOT = {
+					add_mil_power = -25
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	conquer_area_56 = {
+		potential = {
+			area_56 = {
+				is_empty = yes
+			}
+			dip_tech = 3
+			OR = {
+				owns_core_province = 5799
+				owns_core_province = 5800
+				owns_core_province = 5802
+				owns_core_province = 5803
+				owns_core_province = 5804
+				owns_core_province = 5568
+				owns_core_province = 5569
+				owns_core_province = 5570
+				owns_core_province = 5571
+				owns_core_province = 6722
+				owns_core_province = 6727
+				owns_core_province = 6729
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = area_56
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				is_city = no
+			}
+		}
+		allow = {
+			dip_tech = 6
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			mil_power = 75
+		}
+		effect = {
+			area_56 = {
 				limit = {
 					is_empty = yes
 				}
@@ -809,7 +863,7 @@ country_decisions = {
 			nopatle_area = {
 				is_empty = yes
 			}
-			dip_tech = 2
+			dip_tech = 4
 			OR = {
 				owns_core_province = 5559
 				owns_core_province = 5562
@@ -829,7 +883,7 @@ country_decisions = {
 			}
 		}
 		allow = {
-			dip_tech = 5
+			dip_tech = 7
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
 			mil_power = 50

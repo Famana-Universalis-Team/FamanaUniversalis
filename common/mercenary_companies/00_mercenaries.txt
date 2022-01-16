@@ -109,7 +109,7 @@ merc_jabuskay_band = {
 
 # Free Vanomans
 merc_free_vanomans = {
-    regiments_per_development = 0.05
+    regiments_per_development = 0.03
 	cavalry_weight = 0.4
     home_province = 5691 # somewhere in emtik
 	cost_modifier = 0.75
@@ -134,7 +134,7 @@ merc_free_vanomans = {
 		}
 	}
 	modifier = {
-		land_morale = 0.15
+		land_morale = 0.10
 		merc_maintenance_modifier = -0.10
 	}
 }
@@ -229,8 +229,7 @@ merc_karsi = {
 				region = upper_makyna_region
 			}
 		}
-		has_country_modifier = mercenaries_to_the_standard
-		has_country_modifier = glut_of_mercs
+		
 	}
 	modifier = {
 		cavalry_power = 0.15
@@ -401,7 +400,7 @@ merc_gau_marauders = {
 	}
 	modifier = {
 		movement_speed = 0.33
-		reinforce_speed = 0.50
+		reinforce_speed = -0.50
 	}
 }
 
@@ -474,12 +473,14 @@ merc_ked_highlanders = {
     home_province = 5529
 	sprites = { westerngfx_sprite_pack }
     trigger = {
-		any_owned_province = {
+		OR = { 
+			any_owned_province = {
 			region = aresia_region
 		}
 		any_owned_province = {
-			vanoma_region
+			region = vanoma_region
 		}
+	}
 	}
 	modifier = {
 	}
@@ -492,13 +493,14 @@ merc_nik_legion = {
     home_province = 5661
 	sprites = { westerngfx_sprite_pack }
     trigger = {
+		OR = { 
 		any_owned_province = {
 			region = aresia_region
 		}
 		any_owned_province = {
-			vanoma_region
+			region = vanoma_region
 		}
-		
+	}	
 	}
 	modifier = {
 	discipline = 0.05
@@ -533,13 +535,14 @@ merc_maru_soldiers = {
     home_province = 5484 
 	sprites = { westerngfx_sprite_pack }
     trigger = {
+	OR = { 
 		any_owned_province = {
 			superregion = jasua_superregion
 		}
 		any_owned_province = {
 			region = emastalia_region
 		}
-		
+	}	
 	}
 	modifier = {
 	loot_amount = 0.10
@@ -555,7 +558,8 @@ merc_durran_company = {
     home_province = 5566
 	sprites = { westerngfx_sprite_pack }
     trigger = {
-		any_owned_province = {
+	OR = { 
+	any_owned_province = {
 			region = pextoglazia_region
 		}
 		any_owned_province = {
@@ -564,7 +568,7 @@ merc_durran_company = {
 		any_owned_province = {
 			region = emastalia_region
 		}
-		
+	}	
 	}
 	modifier = {
 	
@@ -578,9 +582,11 @@ merc_unsets_volunteers = {
 	cavalry_weight = 0.1
 	artillery_weight = 0.3
     home_province = 5570
+	cost_modifier = 0.75
 	sprites = { westerngfx_sprite_pack }
     trigger = {
-		any_owned_province = {
+	OR = { 
+	any_owned_province = {
 			region = pextoglazia_region
 		}
 		any_owned_province = {
@@ -590,7 +596,7 @@ merc_unsets_volunteers = {
 			region = emastalia_region
 		}
 		
-		
+	}	
 	}
 	modifier = {
 	
@@ -647,6 +653,7 @@ merc_shining_spears = {
     home_province = 5170
 	sprites = { westerngfx_sprite_pack }
     trigger = {
+		OR = { 
 		any_owned_province = {
 				superregion = ga_xal_superregion
 			}
@@ -654,7 +661,7 @@ merc_shining_spears = {
 				region = eastern_desert_region
 			}
 		
-		
+	}	
 	}
 	modifier = {
 		infantry_power = 0.1
@@ -671,7 +678,8 @@ merc_iimksan_dool = {
     home_province = 5307
 	sprites = { westerngfx_sprite_pack }
     trigger = {
-		any_owned_province = {
+	OR = { 
+	any_owned_province = {
 				superregion = ga_xal_superregion
 			}
 			any_owned_province = {
@@ -679,7 +687,7 @@ merc_iimksan_dool = {
 			}
 		
 		
-		
+	}	
 	}
 	modifier = {
 		fire_damage_received = -0.10
@@ -695,6 +703,7 @@ merc_mea_dizz = {
     home_province = 5034
 	sprites = { westerngfx_sprite_pack }
     trigger = {
+		OR = { 
 		any_owned_province = {
 				region = laglon_region
 			}
@@ -705,7 +714,7 @@ merc_mea_dizz = {
 				region = walara_region
 			}
 		
-		
+	}	
 	}
 	modifier = {
 		
@@ -721,6 +730,7 @@ merc_negolai_army = {
     home_province = 5716
 	sprites = { westerngfx_sprite_pack }
     trigger = {
+		OR = { 
 		any_owned_province = {
 				region = ordica_region
 			}
@@ -728,7 +738,7 @@ merc_negolai_army = {
 				region = vordor_region
 			}
 		
-		
+	}	
 	}
 	modifier = {
 		
@@ -741,6 +751,7 @@ merc_vesberir_company = {
     regiments_per_development = 0.03
 	cavalry_weight = 0.1
 	artillery_weight = 0.3
+	cost_modifier = 1.2
     home_province = 5086
 	sprites = { westerngfx_sprite_pack }
     trigger = {
@@ -762,6 +773,7 @@ merc_umzat_company = {
     regiments_per_development = 0.03
 	cavalry_weight = 0.1
 	artillery_weight = 0.3
+	cost_modifier = 1.2
     home_province = 5044
 	sprites = { westerngfx_sprite_pack }
     trigger = {
@@ -783,6 +795,7 @@ merc_effashan_riders = {
     regiments_per_development = 0.03
 	cavalry_weight = 0.6
 	artillery_weight = 0.3
+	cost_modifier = 1.2
     home_province = 5057
 	sprites = { westerngfx_sprite_pack }
     trigger = {

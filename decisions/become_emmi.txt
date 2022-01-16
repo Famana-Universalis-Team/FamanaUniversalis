@@ -1,0 +1,53 @@
+country_decisions = {
+
+	become_emmi = {
+		potential = {
+			AND = {
+				culture_group = Ravsho
+				NOT = { has_reform = emmi 
+					TAG = ANM }
+					
+					
+				
+			}
+		}
+		
+		allow = {
+			is_free_or_tributary_trigger = yes
+			prestige = 90
+			stability = 2
+		}
+		effect = {
+			add_government_reform = emmi
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	become_emmi_an = {
+		potential = {
+			AND = {
+				culture_group = Ravsho
+				TAG = ANM
+				NOT = { has_reform = emmi }
+					
+					
+				
+			}
+		}
+		
+		allow = {
+			is_free_or_tributary_trigger = yes
+			prestige = 90
+			stability = 2
+		}
+		effect = {
+			add_government_reform = emmi
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+}

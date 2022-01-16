@@ -1,0 +1,101 @@
+#Country Name: Please see filename.
+
+graphical_culture = westerngfx
+
+color = { 34  28  65 }
+
+historical_idea_groups = {
+	offensive_ideas
+	trade_ideas
+	diplomatic_ideas
+	administrative_ideas
+	quality_ideas
+	quantity_ideas
+	innovativeness_ideas
+	defensive_ideas
+}
+
+historical_units = {
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+	swiss_landsknechten
+	dutch_maurician
+	austrian_tercio
+	austrian_grenzer
+	austrian_hussar
+	austrian_white_coat
+	austrian_jaeger
+	mixed_order_infantry
+	open_order_cavalry
+	napoleonic_square
+	napoleonic_lancers
+}
+
+monarch_names = {
+	"Twando #0" = 1
+	"Ibiku #0" = 1
+	"Mini #0" = 1
+	"Takesi #0" = 1
+	"Wili #0" = 1
+	"Pomi #0" = 1
+	"Yomi #0" = 1
+	"Timi #0" = 1
+	"Fatedi #0" = 1
+	"Lamedon #0" = 1
+	"Latesh #0" = 1
+	"Luka #0" = 1
+	"Yimi #0" = 1
+	"Ravshara #0" = 1
+	"Lanreisseir #0" = 1
+	"Unia #0" = 1
+	"Gaara #0" = 1
+	"Yharinel #0" = 1
+	"Axilea #0" = 1
+	"Ogro #0" = 1
+	"Astrazna #0" = 1
+	"Axiaraniro #0" = 1
+	"Raravshara #0" = 1
+	"Unrara #0" = 1
+	"Dari #0" = -1
+}
+
+leader_names = {
+	Twando
+	Ibiku
+	Mini
+	Takesi
+	Wili
+	Pomi
+	Yomi
+	Timi
+	Fatedi
+	Lamedon
+	Ravshara
+	Lanreisseir
+	Unia
+	Gaara
+	Yharinel
+	Axilea
+	Ogro
+	Astrazna
+	Axiaraniro
+	Raravshara
+	Unrara
+}
+
+ship_names = {
+	Yaroga
+	Chunus
+	Kitabatoga
+	Rapanu
+	Oba
+	Karre
+	Kial
+	Okaja
+	Iyah
+}
+
+army_names = {
+	"Ledarog $PROVINCE$ si"
+}

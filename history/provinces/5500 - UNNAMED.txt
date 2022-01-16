@@ -7,10 +7,10 @@ add_core = ORC
 
 hre = no
 discovered_by = western
-base_tax = 1
+base_tax = 2
 base_production = 1
-trade_goods = grain
-base_manpower = 1
+trade_goods = naval_supplies
+base_manpower = 2
 capital = "Nonter"
 is_city = no
 extra_cost = 1

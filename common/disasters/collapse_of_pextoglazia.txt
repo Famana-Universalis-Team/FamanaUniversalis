@@ -34,7 +34,9 @@ collapse_of_pextoglazia = {
 	can_end = {
         AND = {
             NOT = {
-                development = 100
+                PEX = {
+                    total_development = 100
+                }
             }
             NOT = {
                 any_country = {
