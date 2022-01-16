@@ -1,0 +1,56 @@
+country_decisions = {
+
+	maky_rebuild = {
+		major = yes
+		potential = {
+			AND = {
+				OR = {
+					tag = VDY
+					tag = MKY
+				}
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				region = maky_region
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				is_city = no
+			}
+		}
+		allow = {
+			NOT = {
+				OR = {
+					has_reform = apocalyptic_helvania_reform
+					has_reform = city_state_union_reform
+					has_reform = survivor_reform
+				}
+			}
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			owns_core_province = 5148
+			owns_core_province = 5140
+			owns_core_province = 5143
+			owns_core_province = 5137
+			capital_scope = {
+				is_core = ROOT
+			}
+			num_of_owned_provinces_with = {
+				value = 10
+				religion = mak
+				region = maky_region
+			}
+            OR = {
+                tag = VDY
+				tag = MKY
+            }
+		}
+		effect = {
+            
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

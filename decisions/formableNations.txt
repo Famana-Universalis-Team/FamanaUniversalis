@@ -251,7 +251,14 @@ country_decisions = {
 				cede_province = MKY
 				add_core = MKY
 			}
-			vaximor_area = {
+			marii_area = {
+				limit = {
+					is_empty = yes
+				}
+				cede_province = MKY
+				add_core = MKY
+			}
+			rishtokay_area = {
 				limit = {
 					is_empty = yes
 				}
