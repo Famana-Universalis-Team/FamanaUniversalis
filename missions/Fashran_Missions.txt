@@ -1,0 +1,26 @@
+fashros_missions = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		tag = FAS
+	}
+	has_country_shield = yes
+
+	for_the_clouds = {
+		icon = fashros_wheels
+		required_missions = { }
+		position = 1
+		trigger = {
+			temple = 3
+		}
+		
+		effect = {
+			5949 = {
+			add_building = cathedral
+				}
+			}
+		}
+	}
+}
