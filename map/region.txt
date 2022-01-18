@@ -437,6 +437,40 @@ gorfrek_region = {
 	}
 }
 
+selka_region = {
+	areas = {
+		area_118
+		area_122
+		area_123
+		area_127
+		area_128
+		area_129
+		area_130
+		area_133
+		area_132
+		area_131
+		area_126
+		area_124
+		area_125
+	}
+}
+
+nhoma_region = {
+	areas = {
+		area_121
+		area_120
+		area_112
+		area_111
+		bizugu_area
+		area_114
+		area_113
+		area_119
+		area_117
+		area_115
+		area_116
+	}
+}
+
 nozumol_region = {
 	areas = {
 		nuzoto_area
@@ -451,7 +485,7 @@ nozumol_region = {
 	}
 }
 
-nhoma_region = {
+nheomyr_region = {
 	areas = {
 		fuka_area
 		north_khim_area

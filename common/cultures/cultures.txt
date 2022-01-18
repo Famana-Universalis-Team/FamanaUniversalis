@@ -1166,7 +1166,19 @@ Qamon = {
 	Dorroman_C = {
 		primary = DOR
 		male_names = {
-           	Ramald Narby Agul Givurt Coblan Robak Wiltor Larso Okobar Eruk Phutger Vitermi Alori Kyro Zuigr Chirkol Kizura Kila Losk Aqara Genej
+           	Ramald Narby Agul Givurt Coblan Robak Wiltor Larso Okobar Eruk Phutger Vitermi Alori Kyro Zuigr Chirkol Kizura Kila Losk Aqara Genej Marblad
+        }
+        female_names = {
+           	Mekoli Nasha Macaulay Sabril Madsenia Prassil
+		}
+        dynasty_names = {
+            Latar Qashauil Okolobarmi Lahacaca Merana Menacul Raltenol
+        }
+	}
+	Yovimi = {
+		primary = DOR
+		male_names = {
+           	Ramald Narby Agul Givurt Coblan Robak Wiltor Larso Okobar Eruk Phutger Vitermi Alori Kyro Zuigr Chirkol Kizura Kila Losk Aqara Genej Marblad
         }
         female_names = {
            	Mekoli Nasha Macaulay Sabril Madsenia Prassil
@@ -1178,7 +1190,7 @@ Qamon = {
 	Qanoyan_C = {
 		primary = QAN
 		male_names = {
-           	Ramalj Nary Ail Gvurt Coban Robaj Wilso Laso Okbar Euk Futger Vitehi Aoi Kiri Zuigr Shirol Kizur Apfadra Ethorki Qanoyan Avahan Eirosh
+           	Ramalj Nary Ail Gvurt Coban Robaj Wilso Laso Okbar Euk Futger Vitehi Aoi Kiri Zuigr Shirol Kizur Apfadra Ethorki Qanoyan Avahan Eirosh Marblad
         }
         female_names = {
 		   	Mekol Nash Macula Sabr Madena Prassil
@@ -1189,7 +1201,18 @@ Qamon = {
 	}
 	Tikulsan = {
 		male_names = {
-            Ramalj Nary Ail Gvurt Coban Robaj Wilso Laso Okbar Euk Futger Vitehi Aoi Kiri Zuigr Shirol Kizur Akma Rymilla Aragyon Dondra Arejenak Aganta
+            Ramalj Nary Ail Gvurt Coban Robaj Wilso Laso Okbar Euk Futger Vitehi Aoi Kiri Zuigr Shirol Kizur Akma Rymilla Aragyon Dondra Arejenak Aganta Marblad
+        }
+        female_names = {
+            Mekol Nash Macula Sabr Madena Prassil
+    	}
+        dynasty_names = {
+			Latar Qashauil Okolobarmi Lahacaca Merana Menacul Raltenol
+        }
+	}
+	Odrabai = {
+		male_names = {
+            Ramalj Nary Ail Gvurt Coban Robaj Wilso Laso Okbar Euk Futger Vitehi Aoi Kiri Zuigr Shirol Kizur Akma Rymilla Aragyon Dondra Arejenak Aganta Marblad
         }
         female_names = {
             Mekol Nash Macula Sabr Madena Prassil
@@ -1220,7 +1243,7 @@ Qamon = {
 			Covut Aptgasen Kejerol Shol Wilonama Kenej Lasolil Bobaba Ryni Qadol Okiga Kerayaky Praur Zgask Aguk
     	}
 	}
-	Alavyan = {
+	Alavyas = {
 		male_names = {
           	Akanara Karyna Agaran Kolor Dlina Kakorian Ofarok Kenitki Edgodra Boptol Oblogga Prykya Bogdan Zgaly Eyzdova Agaritah Angara
        	}
