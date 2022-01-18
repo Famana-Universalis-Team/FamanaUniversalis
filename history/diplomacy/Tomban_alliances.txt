@@ -533,6 +533,20 @@ dependency = {
 dependency = {
 	subject_type = "tomban_state"
 	first = TLB
+	second = TVO
+	start_date = 200.11.11
+	end_date = 1573.7.3
+}
+dependency = {
+	subject_type = "tomban_state"
+	first = TLB
+	second = TAJ
+	start_date = 200.11.11
+	end_date = 1573.7.3
+}
+dependency = {
+	subject_type = "tomban_state"
+	first = TLB
 	second = THI
 	start_date = 200.11.11
 	end_date = 1573.7.3
