@@ -47,9 +47,12 @@ monarch_names = {
 	"Paro #0" = 1
 	"Jekelekim #0" = 1
 	"Fovers #0" = 1
+	"Makei #0" = 1
+	"Astrazna #0" = 1
 	"Maro #0" = -1
 	"Yuni #0" = -1
 	"Delan #0" = -1
+	"Ezeldi #0" = -1
 }
 
 leader_names = {
@@ -67,17 +70,19 @@ leader_names = {
 	Paro
 	Jekelekim
 	Fovers
+	Makei
+	Astrazna
 }
 
 ship_names = {
-	Pavtis
-	Naglon
-	Talak
-	Aramesh
+	Omadid
+	Chaungs
+	Hartitis
+	Bavatis
 }
 
 army_names = {
-	"Divaci ane $PROVINCE$" 
+	"Rananzha $PROVINCE$" 
 }
 
 fleet_names = {
