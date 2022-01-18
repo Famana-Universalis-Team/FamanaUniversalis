@@ -1,4 +1,4 @@
-fashros_missions = {
+fashros_religion_missions = {
 	slot = 1
 	generic = no
 	ai = yes
@@ -20,6 +20,32 @@ fashros_missions = {
 			5949 = {
 			add_building = cathedral
 				}
+			}
+		}
+	}
+
+
+
+fashros_military = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		tag = FAS
+		}
+	has_country_shield = yes
+	
+	defence_of_fashros = {
+		icon = fashros_wheels	
+		required_missions = { }
+		position = 1
+		trigger = {
+			army_size_percentage = 1
+			}
+		
+		effect = {
+			add_treasury = 50
 			}
 		}
 	}
