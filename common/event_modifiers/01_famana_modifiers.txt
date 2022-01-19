@@ -97,25 +97,28 @@ cegon_isolation = {
 call_of_the_frontier = {
     colonists = 1
 }
+
 arist_modifier = {
-tolerance_heathen = 2
-church_influence_modifier = -0.1
-church_loyalty_modifier = -0.1
+    tolerance_heathen = 2
+    church_influence_modifier = -0.1
+    church_loyalty_modifier = -0.1
 }
-antiarist_modifier = {
-tolerance_own = 2
-church_influence_modifier = 0.1
-church_loyalty_modifier = 0.1	
+
+    antiarist_modifier = {
+    tolerance_own = 2
+    church_influence_modifier = 0.1
+    church_loyalty_modifier = 0.1	
 }
+
 rastrayvarists_supported = {
-land_morale = 0.15
-defensiveness = -0.15
-global_unrest = 2
-global_autonomy = 0.01
-army_tradition = 0.5
-movement_speed = 0.15
-diplomatic_reputation = -1
-#troll
+    land_morale = 0.15
+    defensiveness = -0.15
+    global_unrest = 2
+    global_autonomy = 0.01
+    army_tradition = 0.5
+    movement_speed = 0.15
+    diplomatic_reputation = -1
+    #troll
 }
 
 achievement_from_the_ashes_modifier = {
