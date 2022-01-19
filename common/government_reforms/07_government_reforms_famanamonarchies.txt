@@ -144,5 +144,8 @@ nafan_gov = {
 	conditional = {
 		allow = { has_dlc = "Third Rome" }
 		claim_states = yes
+		government_abilities = {
+			russian_mechanic
+		}
 	}
 }
