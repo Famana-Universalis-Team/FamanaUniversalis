@@ -1,0 +1,20 @@
+government = tribal
+add_government_reform = tribal_kingdom
+government_rank = 1
+mercantilism = 10
+technology_group = western
+religion = lathvy
+primary_culture = Placeholder_culture
+capital = 6270	# change to real capital
+religious_school = pextoglazian_school
+
+200.1.1 = { #change to 200 or smth
+	monarch = {
+		name = "Placeholder"
+		dynasty = "de Placeholder"
+		adm = 3
+		dip = 3
+		mil = 3
+		birth_date = 180.1.1
+	}
+}
