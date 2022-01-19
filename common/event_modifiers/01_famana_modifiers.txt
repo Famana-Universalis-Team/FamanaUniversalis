@@ -110,15 +110,9 @@ church_loyalty_modifier = 0.1
 rastrayvarists_supported = {
 land_morale = 0.15
 defensiveness = -0.15
-global_manpower_modifier = 0.10
 global_unrest = 2
-stability_cost_modifier = 0.10
 global_autonomy = 0.01
-global_tax_modifier = -0.10
-army_tradition = 0.1
-loot_amount = 0.20
-infantry_cost = -0.10
-cavalry_cost = -0.10
+army_tradition = 0.5
 movement_speed = 0.15
 diplomatic_reputation = -1
 #troll
