@@ -104,21 +104,17 @@ arist_modifier = {
     church_loyalty_modifier = -0.1
 }
 
-    antiarist_modifier = {
+antiarist_modifier = {
     tolerance_own = 2
     church_influence_modifier = 0.1
-    church_loyalty_modifier = 0.1	
+    church_loyalty_modifier = 0.1
 }
 
 rastrayvarists_supported = {
     land_morale = 0.15
+    movement_speed = 0.20
     defensiveness = -0.15
-    global_unrest = 2
-    global_autonomy = 0.01
-    army_tradition = 0.5
-    movement_speed = 0.15
-    diplomatic_reputation = -1
-    #troll
+    tolerance_own = -4
 }
 
 achievement_from_the_ashes_modifier = {
