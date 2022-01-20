@@ -93,3 +93,362 @@ country_event = {
 		}
 	}
 }
+
+#maky delta
+country_event = {
+	id = maky.5
+	title = maky.5.t
+	desc = maky.5.d
+	picture = CITY_DEVELOPMENT_eventPicture
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = VDY
+			tag = MKY
+		}			
+		owns_all_provinces = {
+			area = makykay_area
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = maky.5.a.a
+		ai_chance = { factor = 1 }
+		5140 = {
+			add_base_tax = 3
+			add_base_production = 3
+			add_base_manpower = 3
+			random_list = {
+				75 = {
+					add_base_tax = 1
+				}
+				25 = { }
+			}
+			random_list = {
+				50 = {
+					add_base_tax = 1
+				}
+				50 = { }
+			}
+			random_list = {
+				20 = {
+					add_base_tax = 1
+				}
+				80 = { }
+			}
+		}
+		5141 = {
+			add_base_tax = 1
+			add_base_production = 1
+			add_base_manpower = 1
+			random_list = {
+				75 = {
+					add_base_tax = 1
+				}
+				25 = { }
+			}
+			random_list = {
+				50 = {
+					add_base_tax = 1
+				}
+				50 = { }
+			}
+			random_list = {
+				20 = {
+					add_base_tax = 1
+				}
+				80 = { }
+			}
+		}
+		5542 = {
+			add_base_tax = 1
+			add_base_production = 1
+			add_base_manpower = 1
+			random_list = {
+				75 = {
+					add_base_tax = 1
+				}
+				25 = { }
+			}
+			random_list = {
+				50 = {
+					add_base_tax = 1
+				}
+				50 = { }
+			}
+			random_list = {
+				20 = {
+					add_base_tax = 1
+				}
+				80 = { }
+			}
+		}
+		5144 = {
+			add_base_tax = 1
+			add_base_production = 1
+			add_base_manpower = 1
+			random_list = {
+				75 = {
+					add_base_tax = 1
+				}
+				25 = { }
+			}
+			random_list = {
+				50 = {
+					add_base_tax = 1
+				}
+				50 = { }
+			}
+			random_list = {
+				20 = {
+					add_base_tax = 1
+				}
+				80 = { }
+			}
+		}
+		5241 = {
+			add_base_tax = 1
+			add_base_production = 1
+			add_base_manpower = 1
+			random_list = {
+				75 = {
+					add_base_tax = 1
+				}
+				25 = { }
+			}
+			random_list = {
+				50 = {
+					add_base_tax = 1
+				}
+				50 = { }
+			}
+			random_list = {
+				20 = {
+					add_base_tax = 1
+				}
+				80 = { }
+			}
+		}
+	}
+	option = {
+		name = maky.5.a.b
+		ai_chance = { factor = 1 }
+		5140 = {
+			add_base_tax = 1
+			add_base_production = 1
+			add_base_manpower = 1
+		}
+		5813 = {
+			cede_province = TKM
+			add_core = LVY
+			add_core = TKM
+			hidden_effect = {
+				add_base_manpower = 1
+			}
+		}
+		5812 = {
+			cede_province = TKM
+			add_core = TKM
+			hidden_effect = {
+				add_base_manpower = 1
+			}
+		}
+	}
+	option = {
+		name = maky.5.a.c
+		ai_chance = { factor = 1 }
+		5140 = {
+			add_base_tax = 1
+			add_base_production = 1
+			add_base_manpower = 1
+		}
+		5813 = {
+			cede_province = TKM
+			add_core = LVY
+			add_core = TKM
+			hidden_effect = {
+				add_base_manpower = 1
+			}
+		}
+		5812 = {
+			cede_province = TKM
+			add_core = TKM
+			hidden_effect = {
+				add_base_manpower = 1
+			}
+		}
+	}
+}
+
+#vaximor
+country_event = {
+	id = maky.6
+	title = maky.6t
+	desc = maky.6.d
+	picture = CITY_DEVELOPMENT_eventPicture
+	fire_only_once = yes
+
+	trigger = {
+		is_year = 270
+		owns = 5149
+	}
+
+	mean_time_to_happen = {
+		months = 3
+	}
+
+	option = {
+		name = maky.4.a
+		ai_chance = { factor = 1 }
+		5150 = {
+			cede_province = ROOT
+			add_core = ROOT
+		}
+		5813 = {
+			cede_province = TKM
+			add_core = LVY
+			add_core = TKM
+			hidden_effect = {
+				add_base_manpower = 1
+			}
+		}
+		5812 = {
+			cede_province = TKM
+			add_core = TKM
+			hidden_effect = {
+				add_base_manpower = 1
+			}
+		}
+	}
+}
+
+#jagama
+country_event = {
+	id = maky.7
+	title = maky.7.t
+	desc = maky.7.d
+	picture = CITY_DEVELOPMENT_eventPicture
+	fire_only_once = yes
+
+	trigger = {
+		is_year = 270
+		owns = 5149
+	}
+
+	mean_time_to_happen = {
+		months = 3
+	}
+
+	option = {
+		name = maky.4.a
+		ai_chance = { factor = 1 }
+		5150 = {
+			cede_province = ROOT
+			add_core = ROOT
+		}
+		5813 = {
+			cede_province = TKM
+			add_core = LVY
+			add_core = TKM
+			hidden_effect = {
+				add_base_manpower = 1
+			}
+		}
+		5812 = {
+			cede_province = TKM
+			add_core = TKM
+			hidden_effect = {
+				add_base_manpower = 1
+			}
+		}
+	}
+}
+
+#rishtokay
+country_event = {
+	id = maky.8
+	title = maky.8.t
+	desc = maky.8.d
+	picture = CITY_DEVELOPMENT_eventPicture
+	fire_only_once = yes
+
+	trigger = {
+		is_year = 270
+		owns = 5149
+	}
+
+	mean_time_to_happen = {
+		months = 3
+	}
+
+	option = {
+		name = maky.4.a
+		ai_chance = { factor = 1 }
+		5150 = {
+			cede_province = ROOT
+			add_core = ROOT
+		}
+		5813 = {
+			cede_province = TKM
+			add_core = LVY
+			add_core = TKM
+			hidden_effect = {
+				add_base_manpower = 1
+			}
+		}
+		5812 = {
+			cede_province = TKM
+			add_core = TKM
+			hidden_effect = {
+				add_base_manpower = 1
+			}
+		}
+	}
+}
+
+#okus
+country_event = {
+	id = maky.9
+	title = maky.9.t
+	desc = maky.9.d
+	picture = CITY_DEVELOPMENT_eventPicture
+	fire_only_once = yes
+
+	trigger = {
+		is_year = 270
+		owns = 5149
+	}
+
+	mean_time_to_happen = {
+		months = 3
+	}
+
+	option = {
+		name = maky.4.a
+		ai_chance = { factor = 1 }
+		5150 = {
+			cede_province = ROOT
+			add_core = ROOT
+		}
+		5813 = {
+			cede_province = TKM
+			add_core = LVY
+			add_core = TKM
+			hidden_effect = {
+				add_base_manpower = 1
+			}
+		}
+		5812 = {
+			cede_province = TKM
+			add_core = TKM
+			hidden_effect = {
+				add_base_manpower = 1
+			}
+		}
+	}
+}
