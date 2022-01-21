@@ -6,10 +6,10 @@ controller = DOR
 culture = Dorroman_C
 religion = dorroman
 hre = no
-base_tax = 1
-base_production = 1
+base_tax = 11
+base_production = 10
 trade_goods = grain
-base_manpower = 1
+base_manpower = 7
 capital = "UNNAMED"
 is_city = yes
 
