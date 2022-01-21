@@ -1,137 +1,157 @@
 namespace = gaxalf
-#Arist
+#Arism
 country_event = {
-    id = gaxalf.1
-    title = gaxalf.1.t
-    desc = gaxalf.1.d
-    picture = RELIGION_eventPicture
+	id = gaxalf.1
+	title = gaxalf.1.t
+	desc = gaxalf.1.d
+	picture = RELIGION_eventPicture
 
-    fire_only_once = yes
+	trigger = {
+		AND = {
+			is_year = 225
+			NOT = {
+				is_year = 280
+			}
+			religion = morian
+			NOT = {
+				has_country_flag = has_had_arism
+			}
+		}
+	}
+	mean_time_to_happen = {
+		years = 2
+	}
 
-    trigger = { 
-         AND = { 
-	   religion = morian
-	   NOT = { ai = yes } 
+	immediate = {
+		hidden_effect = {
+			set_country_flag = has_had_arism
 		}
-    }
-    mean_time_to_happen = {
-        years = 2
-    }
+	}
 
-    option = {
-        name = gaxalf.1.a
-        ai_chance = { factor = 70 }
-	every_known_country = { 
-	limit = { religion = lathvy
-			 capital_scope = {
-			superregion = ga_xal_superregion
-							}
-								
-								
-								
-							}
-			add_opinion = {
-		who = ROOT
-    modifier = antiarist_opinion
-			}	
-		}
-	add_country_modifier = { 
-    name = antiarist_modifier
-    duration = 3 650  
-   
-		}
-		
-    }
 	option = {
-        name = gaxalf.1.b
-        ai_chance = { factor = 30 }
-	every_known_country = { 
-	limit = { religion = lathvy
-			 capital_scope = {
-			superregion = ga_xal_superregion
-							}
-								
-								
-								
-							}
-	add_opinion = {
-   	who = ROOT
-    modifier = arist_opinion
-	}	
-    }
-	add_country_modifier = { 
-    name = arist_modifier
-    duration = 3 650  
-   
+		name = gaxalf.1.a
+		ai_chance = { factor = 70 }
+		every_known_country = {
+			limit = {
+				religion = lathvy
+				capital_scope = {
+					superregion = ga_xal_superregion
+  		  		}
+   		   	}
+   		 	add_opinion = {
+				who = ROOT
+	  			modifier = antiarist_opinion
+			}
 		}
-}
+		add_country_modifier = {
+			name = antiarist_modifier
+			duration = 3650
+  		}
+	}
+
+	option = {
+		name = gaxalf.1.b
+		ai_chance = { factor = 30 }
+		every_known_country = {
+			limit = { religion = lathvy
+				capital_scope = {
+					superregion = ga_xal_superregion
+				}
+			}
+			add_opinion = {
+   				who = ROOT
+				modifier = arist_opinion
+			}
+		}
+		add_country_modifier = {
+			name = arist_modifier
+			duration = 3650
+		}
+	}
 }
 #Beaunty of Delk
 country_event = {
-    id = gaxalf.2
-    title = gaxalf.2.t
-    desc = gaxalf.2.d
-    picture = MERCHANTS_TALKING_eventPicture
+	id = gaxalf.2
+	title = gaxalf.2.t
+	desc = gaxalf.2.d
+	picture = MERCHANTS_TALKING_eventPicture
 
-    fire_only_once = yes
+	fire_only_once = yes
 
-    trigger = { 
-       AND = { 
-	   religion = delkian
-	   NOT = { ai = yes } 
-		}
-    }
-    mean_time_to_happen = {
-        years = 8
-    }
+	trigger = {
+		religion = delkian
+	}
+	mean_time_to_happen = {
+		years = 8
+	}
 
-    option = {
-        name = gaxalf.2.a
-        ai_chance = { factor = 50 }
-	add_estate_loyalty = {
-    estate = estate_church
-    loyalty = 15
-}
-		
-    }
 	option = {
-        name = gaxalf.2.b
-        ai_chance = { factor = 50 }
-	add_years_of_income = 1
+		name = gaxalf.2.a
+		ai_chance = { factor = 50 }
+		add_estate_loyalty = {
+			estate = estate_church
+			loyalty = 5
+		}
+		random_owned_province = {
+			limit = {
+				NOT = {
+					has_building = temple
+				}
+				NOT = { has_building = cathedral }
+				num_free_building_slots = 1
+			}
+			add_building = temple
+		}
+	}
+	option = {
+		name = gaxalf.2.b
+		ai_chance = { factor = 50 }
+		add_years_of_income = 1.25
 	}
 }
-#Rastrayvarist movement
+
+#Rastrayvarism
 country_event = {
-    id = gaxalf.3
-    title = gaxalf.3.t
-    desc = gaxalf.3.d
-    picture = RELIGIOUS_TURMOIL_eventPicture
+	id = gaxalf.3
+	title = gaxalf.3.t
+	desc = gaxalf.3.d
+	picture = RELIGIOUS_TURMOIL_eventPicture
 
-    fire_only_once = yes
-
-    trigger = { 
-       AND = { 
-	   religion = shirian
-	   NOT = { ai = yes } 
+	trigger = {
+		AND = {
+			is_year = 230
+			NOT = {
+				is_year = 245
+			}
+			religion = shirian
+			NOT = {
+				has_country_flag = has_had_rastrayvarism
+			}
 		}
-    }
-    mean_time_to_happen = {
-        years = 6
-    }
+	}
+	mean_time_to_happen = {
+		years = 6
+	}
 
-    option = {
-        name = gaxalf.3.a
-        ai_chance = { factor = 50 }
-		add_stability = 1
-		
-	 }
+	immediate = {
+		hidden_effect = {
+			set_country_flag = has_had_rastrayvarism
+		}
+	}
+
 	option = {
-        name = gaxalf.3.b
-        ai_chance = { factor = 50 }
-		add_country_modifier = { 
-		name = rastrayvarists_supported
-		duration = 1825  
-   
+		name = gaxalf.3.a
+		ai_chance = { factor = 70 }
+		add_stability = 1
+		add_years_of_income = -0.5
+	}
+
+	option = {
+		name = gaxalf.3.b
+		ai_chance = { factor = 30 }
+		add_country_modifier = {
+			name = rastrayvarists_supported
+			duration = 1825
 		}
 	}
 }

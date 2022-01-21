@@ -329,3 +329,24 @@
  fce.1.d:0 "$CAPITAL_CITY$ was founded decades ago as an outpost of Moxon. Fundamentally, we are a nation of pioneers. Now that we are free from Maxan rule, perhaps we should continue our legacy and venture further inland."
  fce.1.a:0 "Estal will be ours!"
  call_of_the_frontier:0 "Call of the Frontier"
+ 
+ #Gaxal Flavor
+ gaxalf.2.t: "The Beauty of Delk"
+ gaxalf.2.d: "Miners in one of our provinces have found a cave filled to the brim with crystals. The priests insist on making it into a temple displaying the creations of our earth god, while the financial advisors propose moving the contents of the cave into the treasury."
+ gaxalf.2.a: "Let us not desecrate Delk's creations."
+ gaxalf.2.b: "Money!"
+ 
+ gaxalf.1.t: "Arist Heretics"
+ gaxalf.1.d: "In these difficult times, the Morian religion has become disorganised, and many more or less sensible factions arose. Unique among these is Arism, which, inspired by certain similarities in symbolism, proclaims that the Lathvy god Ara is actually Mor."
+ gaxalf.1.a: "Silly."
+ gaxalf.1.b: "Let them be."
+ antiarist_modifier:0 "Arism Persecuted"
+ arist_modifier:0 "Arism Tolerated"
+ antiarist_opinion:0 "Persecuted Arists"
+ arist_opinion:0 "Tolerated Arists"
+
+ gaxalf.3.t: "The Rastrayvarist Heresy"
+ gaxalf.3.d: "In recent times, Rastrayvarism, a heresy that worships the powerful Rastrayvar storms as a manifestation of Shir, has been slowly spreading. They believe that we should imitate Moria's Rain in life, being unpredictable and destructive."
+ gaxalf.3.a: "Eradicate them."
+ gaxalf.3.b: "Perhaps this is what we needed."
+ rastrayvarists_supported:0 "Rastrayvarists Supported"
