@@ -9,6 +9,7 @@ country_decisions = {
 					tag = MKY
 				}
 			}
+			NOT = { has_country_flag = rebuild_decision }
 		}
 		provinces_to_highlight = {
 			OR = {
@@ -40,8 +41,10 @@ country_decisions = {
 			manpower_percentage = 0.80
 		}
 		effect = {
+			set_country_flag = rebuild_decision
             set_country_flag = maky_rebuilding
-			
+			add_years_of_income = -5
+			add_yearly_manpower = -5
 		}
 		ai_will_do = {
 			factor = 1
