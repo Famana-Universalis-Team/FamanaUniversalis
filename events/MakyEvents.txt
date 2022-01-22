@@ -122,23 +122,17 @@ country_event = {
 			add_base_tax = 3
 			add_base_production = 4
 			add_base_manpower = 3
-			random_list = {
-				75 = {
-					add_base_tax = 1
-				}
-				25 = { }
+			random = {
+				chance = 75
+				add_base_tax = 1
 			}
-			random_list = {
-				50 = {
-					add_base_tax = 1
-				}
-				50 = { }
+			random = {
+				chance = 50
+				add_base_tax = 1
 			}
-			random_list = {
-				20 = {
-					add_base_tax = 1
-				}
-				80 = { }
+			random = {
+				chance = 20
+				add_base_tax = 1
 			}
 			set_province_flag = province_rebuilt
 		}
@@ -150,23 +144,17 @@ country_event = {
 			add_base_tax = 3
 			add_base_production = 4
 			add_base_manpower = 3
-			random_list = {
-				75 = {
-					add_base_production = 1
-				}
-				25 = { }
+			random = {
+				chance = 75
+				add_base_production = 1
 			}
-			random_list = {
-				50 = {
-					add_base_production = 1
-				}
-				50 = { }
+			random = {
+				chance = 50
+				add_base_production = 1
 			}
-			random_list = {
-				20 = {
-					add_base_production = 1
-				}
-				80 = { }
+			random = {
+				chance = 20
+				add_base_production = 1
 			}
 			set_province_flag = province_rebuilt
 		}
@@ -178,23 +166,17 @@ country_event = {
 			add_base_tax = 3
 			add_base_production = 4
 			add_base_manpower = 3
-			random_list = {
-				75 = {
-					add_base_manpower = 1
-				}
-				25 = { }
+			random = {
+				chance = 75
+				add_base_manpower = 1
 			}
-			random_list = {
-				50 = {
-					add_base_manpower = 1
-				}
-				50 = { }
+			random = {
+				chance = 50
+				add_base_manpower = 1
 			}
-			random_list = {
-				20 = {
-					add_base_manpower = 1
-				}
-				80 = { }
+			random = {
+				chance = 20
+				add_base_manpower = 1
 			}
 			set_province_flag = province_rebuilt
 		}
@@ -228,25 +210,19 @@ country_event = {
 		ai_chance = { factor = 1 }
 		5138 = {
 			add_base_tax = 2
-			add_base_production = 1
+			add_base_production = 2
 			add_base_manpower = 2
-			random_list = {
-				75 = {
-					add_base_tax = 1
-				}
-				25 = { }
+			random = {
+				chance = 75
+				add_base_tax = 1
 			}
-			random_list = {
-				50 = {
-					add_base_tax = 1
-				}
-				50 = { }
+			random = {
+				chance = 50
+				add_base_tax = 1
 			}
-			random_list = {
-				20 = {
-					add_base_tax = 1
-				}
-				80 = { }
+			random = {
+				chance = 20
+				add_base_tax = 1
 			}
 			set_province_flag = province_rebuilt
 		}
@@ -256,25 +232,19 @@ country_event = {
 		ai_chance = { factor = 1 }
 		5138 = {
 			add_base_tax = 2
-			add_base_production = 1
+			add_base_production = 2
 			add_base_manpower = 2
-			random_list = {
-				75 = {
-					add_base_production = 1
-				}
-				25 = { }
+			random = {
+				chance = 75
+				add_base_production = 1
 			}
-			random_list = {
-				50 = {
-					add_base_production = 1
-				}
-				50 = { }
+			random = {
+				chance = 50
+				add_base_production = 1
 			}
-			random_list = {
-				20 = {
-					add_base_production = 1
-				}
-				80 = { }
+			random = {
+				chance = 20
+				add_base_production = 1
 			}
 			set_province_flag = province_rebuilt
 		}
@@ -284,25 +254,19 @@ country_event = {
 		ai_chance = { factor = 1 }
 		5138 = {
 			add_base_tax = 2
-			add_base_production = 1
+			add_base_production = 2
 			add_base_manpower = 2
-			random_list = {
-				75 = {
-					add_base_manpower = 1
-				}
-				25 = { }
+			random = {
+				chance = 75
+				add_base_manpower = 1
 			}
-			random_list = {
-				50 = {
-					add_base_manpower = 1
-				}
-				50 = { }
+			random = {
+				chance = 50
+				add_base_manpower = 1
 			}
-			random_list = {
-				20 = {
-					add_base_manpower = 1
-				}
-				80 = { }
+			random = {
+				chance = 20
+				add_base_manpower = 1
 			}
 			set_province_flag = province_rebuilt
 		}
@@ -328,7 +292,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 24
+		months = 27
 	}
 
 	option = {
@@ -338,23 +302,17 @@ country_event = {
 			add_base_tax = 2
 			add_base_production = 2
 			add_base_manpower = 2
-			random_list = {
-				75 = {
-					add_base_tax = 1
-				}
-				25 = { }
+			random = {
+				chance = 75
+				add_base_tax = 1
 			}
-			random_list = {
-				50 = {
-					add_base_tax = 1
-				}
-				50 = { }
+			random = {
+				chance = 50
+				add_base_tax = 1
 			}
-			random_list = {
-				20 = {
-					add_base_tax = 1
-				}
-				80 = { }
+			random = {
+				chance = 20
+				add_base_tax = 1
 			}
 			set_province_flag = province_rebuilt
 		}
@@ -366,23 +324,17 @@ country_event = {
 			add_base_tax = 2
 			add_base_production = 2
 			add_base_manpower = 2
-			random_list = {
-				75 = {
-					add_base_production = 1
-				}
-				25 = { }
+			random = {
+				chance = 75
+				add_base_production = 1
 			}
-			random_list = {
-				50 = {
-					add_base_production = 1
-				}
-				50 = { }
+			random = {
+				chance = 50
+				add_base_production = 1
 			}
-			random_list = {
-				20 = {
-					add_base_production = 1
-				}
-				80 = { }
+			random = {
+				chance = 20
+				add_base_production = 1
 			}
 			set_province_flag = province_rebuilt
 		}
@@ -394,23 +346,17 @@ country_event = {
 			add_base_tax = 2
 			add_base_production = 2
 			add_base_manpower = 2
-			random_list = {
-				75 = {
-					add_base_manpower = 1
-				}
-				25 = { }
+			random = {
+				chance = 75
+				add_base_manpower = 1
 			}
-			random_list = {
-				50 = {
-					add_base_manpower = 1
-				}
-				50 = { }
+			random = {
+				chance = 50
+				add_base_manpower = 1
 			}
-			random_list = {
-				20 = {
-					add_base_manpower = 1
-				}
-				80 = { }
+			random = {
+				chance = 20
+				add_base_manpower = 1
 			}
 			set_province_flag = province_rebuilt
 		}
@@ -436,7 +382,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 30
+		months = 27
 	}
 
 	option = {
@@ -446,23 +392,17 @@ country_event = {
 			add_base_tax = 2
 			add_base_production = 2
 			add_base_manpower = 3
-			random_list = {
-				75 = {
-					add_base_tax = 1
-				}
-				25 = { }
+			random = {
+				chance = 75
+				add_base_tax = 1
 			}
-			random_list = {
-				50 = {
-					add_base_tax = 1
-				}
-				50 = { }
+			random = {
+				chance = 50
+				add_base_tax = 1
 			}
-			random_list = {
-				20 = {
-					add_base_tax = 1
-				}
-				80 = { }
+			random = {
+				chance = 20
+				add_base_tax = 1
 			}
 			set_province_flag = province_rebuilt
 		}
@@ -474,23 +414,17 @@ country_event = {
 			add_base_tax = 2
 			add_base_production = 2
 			add_base_manpower = 3
-			random_list = {
-				75 = {
-					add_base_production = 1
-				}
-				25 = { }
+			random = {
+				chance = 75
+				add_base_production = 1
 			}
-			random_list = {
-				50 = {
-					add_base_production = 1
-				}
-				50 = { }
+			random = {
+				chance = 50
+				add_base_production = 1
 			}
-			random_list = {
-				20 = {
-					add_base_production = 1
-				}
-				80 = { }
+			random = {
+				chance = 20
+				add_base_production = 1
 			}
 			set_province_flag = province_rebuilt
 		}
@@ -502,23 +436,17 @@ country_event = {
 			add_base_tax = 2
 			add_base_production = 2
 			add_base_manpower = 3
-			random_list = {
-				75 = {
-					add_base_manpower = 1
-				}
-				25 = { }
+			random = {
+				chance = 75
+				add_base_manpower = 1
 			}
-			random_list = {
-				50 = {
-					add_base_manpower = 1
-				}
-				50 = { }
+			random = {
+				chance = 50
+				add_base_manpower = 1
 			}
-			random_list = {
-				20 = {
-					add_base_manpower = 1
-				}
-				80 = { }
+			random = {
+				chance = 20
+				add_base_manpower = 1
 			}
 			set_province_flag = province_rebuilt
 		}
@@ -544,7 +472,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 20
+		months = 24
 	}
 
 	option = {
@@ -554,23 +482,17 @@ country_event = {
 			add_base_tax = 2
 			add_base_production = 2
 			add_base_manpower = 2
-			random_list = {
-				75 = {
-					add_base_tax = 1
-				}
-				25 = { }
+			random = {
+				chance = 75
+				add_base_tax = 1
 			}
-			random_list = {
-				50 = {
-					add_base_tax = 1
-				}
-				50 = { }
+			random = {
+				chance = 50
+				add_base_tax = 1
 			}
-			random_list = {
-				20 = {
-					add_base_tax = 1
-				}
-				80 = { }
+			random = {
+				chance = 20
+				add_base_tax = 1
 			}
 			set_province_flag = province_rebuilt
 		}
@@ -582,23 +504,17 @@ country_event = {
 			add_base_tax = 2
 			add_base_production = 2
 			add_base_manpower = 2
-			random_list = {
-				75 = {
-					add_base_production = 1
-				}
-				25 = { }
+			random = {
+				chance = 75
+				add_base_production = 1
 			}
-			random_list = {
-				50 = {
-					add_base_production = 1
-				}
-				50 = { }
+			random = {
+				chance = 50
+				add_base_production = 1
 			}
-			random_list = {
-				20 = {
-					add_base_production = 1
-				}
-				80 = { }
+			random = {
+				chance = 20
+				add_base_production = 1
 			}
 			set_province_flag = province_rebuilt
 		}
@@ -610,23 +526,17 @@ country_event = {
 			add_base_tax = 2
 			add_base_production = 2
 			add_base_manpower = 2
-			random_list = {
-				75 = {
-					add_base_manpower = 1
-				}
-				25 = { }
+			random = {
+				chance = 75
+				add_base_manpower = 1
 			}
-			random_list = {
-				50 = {
-					add_base_manpower = 1
-				}
-				50 = { }
+			random = {
+				chance = 50
+				add_base_manpower = 1
 			}
-			random_list = {
-				20 = {
-					add_base_manpower = 1
-				}
-				80 = { }
+			random = {
+				chance = 20
+				add_base_manpower = 1
 			}
 			set_province_flag = province_rebuilt
 		}
@@ -650,7 +560,7 @@ country_event = {
 		5143 = { development = 10 }
 		5153 = { development = 8 }
 		5140 = { development = 15 }
-		5138 = { development = 11 }
+		5138 = { development = 10 }
 		5142 = { development = 7 }
 		any_owned_province = {
 			AND = {
@@ -671,92 +581,128 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 12
+		months = 9
 	}
 
 	option = {
 		name = maky.10.a.a
 		ai_chance = { factor = 1 }
 		random_owned_province = {
-			NOT = { has_province_flag = province_rebuilt }
-			add_base_tax = 1
-			add_base_production = 1
-			add_base_manpower = 1
-			random_list = {
-				50 = {
-					add_base_tax = 1
-				}
-				50 = { }
+            limit = {
+                NOT = { has_province_flag = province_rebuilt }
+                OR = {
+                    area = vaximor_area
+                    area = makykay_area
+                    area = bava_area
+                    area = rishtokay_area
+                }
+                OR = {
+                    has_terrain = farmlands
+                    has_terrain = steppe
+                    has_terrain = drylands
+                }
+            }
+			random = {
+				chance = 80
+				add_base_tax = 1
 			}
-			random_list = {
-				25 = {
-					add_base_tax = 1
-				}
-				75 = { }
+			random = {
+				chance = 80
+				add_base_production = 1
 			}
-			random_list = {
-				10 = {
-					add_base_tax = 1
-				}
-				90 = { }
+			random = {
+				chance = 80
+				add_base_manpower = 1
 			}
-			set_province_flag = province_rebuilt
-		}
-	}
-	option = {
-		name = maky.10.a.a
-		ai_chance = { factor = 1 }
-		random_owned_province = {
-			NOT = { has_province_flag = province_rebuilt }
-			add_base_tax = 1
-			add_base_production = 1
-			add_base_manpower = 1
-			random_list = {
-				50 = {
-					add_base_production = 1
-				}
-				50 = { }
+			random = {
+				chance = 60
+				add_base_tax = 1
 			}
-			random_list = {
-				25 = {
-					add_base_production = 1
-				}
-				75 = { }
-			}
-			random_list = {
-				10 = {
-					add_base_production = 1
-				}
-				90 = { }
+			random = {
+				chance = 25
+				add_base_tax = 1
 			}
 			set_province_flag = province_rebuilt
 		}
 	}
 	option = {
-		name = maky.10.a.a
+		name = maky.10.a.b
 		ai_chance = { factor = 1 }
 		random_owned_province = {
-			NOT = { has_province_flag = province_rebuilt }
-			add_base_tax = 1
-			add_base_production = 1
-			add_base_manpower = 1
-			random_list = {
-				50 = {
-					add_base_manpower = 1
-				}
-				50 = { }
+            limit = {
+                NOT = { has_province_flag = province_rebuilt }
+                OR = {
+                    area = vaximor_area
+                    area = makykay_area
+                    area = bava_area
+                    area = rishtokay_area
+                }
+                OR = {
+                    has_terrain = farmlands
+                    has_terrain = steppe
+                    has_terrain = drylands
+                }
+            }
+			random = {
+				chance = 80
+				add_base_tax = 1
 			}
-			random_list = {
-				25 = {
-					add_base_manpower = 1
-				}
-				75 = { }
+			random = {
+				chance = 80
+				add_base_production = 1
 			}
-			random_list = {
-				10 = {
-					add_base_manpower = 1
-				}
-				90 = { }
+			random = {
+				chance = 80
+				add_base_manpower = 1
+			}
+			random = {
+				chance = 60
+				add_base_production = 1
+			}
+			random = {
+				chance = 25
+				add_base_production = 1
+			}
+			set_province_flag = province_rebuilt
+		}
+	}
+	option = {
+		name = maky.10.a.c
+		ai_chance = { factor = 1 }
+		random_owned_province = {
+            limit = {
+                NOT = { has_province_flag = province_rebuilt }
+                OR = {
+                    area = vaximor_area
+                    area = makykay_area
+                    area = bava_area
+                    area = rishtokay_area
+                }
+                OR = {
+                    has_terrain = farmlands
+                    has_terrain = steppe
+                    has_terrain = drylands
+                }
+            }
+			random = {
+				chance = 80
+				add_base_tax = 1
+			}
+			random = {
+				chance = 80
+				add_base_production = 1
+			}
+			random = {
+				chance = 80
+				add_base_manpower = 1
+			}
+			random = {
+				chance = 60
+				add_base_manpower = 1
+			}
+			random = {
+				chance = 25
+				add_base_manpower = 1
 			}
 			set_province_flag = province_rebuilt
 		}
@@ -781,7 +727,7 @@ country_event = {
 		5143 = { development = 10 }
 		5153 = { development = 8 }
 		5140 = { development = 15 }
-		5138 = { development = 11 }
+		5138 = { development = 10 }
 		5142 = { development = 7 }
 		any_owned_province = {
 			AND = {
@@ -792,75 +738,122 @@ country_event = {
 					area = rishtokay_area
 				}
 				NOT = { has_province_flag = province_rebuilt }
-				NOT = {
-					has_terrain = farmlands
-					has_terrain = steppe
-					has_terrain = drylands
+				OR = {
+					has_terrain = marsh
+					has_terrain = desert
 				}
 			}
 		}
 	}
 
 	mean_time_to_happen = {
-		months = 24
+		months = 12
 	}
 
 	option = {
 		name = maky.11.a.a
 		ai_chance = { factor = 1 }
 		random_owned_province = {
-			NOT = { has_province_flag = province_rebuilt }
-			random_list = {
-				60 = {
-					add_base_tax = 1
-				}
-				40 = { }
+            limit = {
+                NOT = { has_province_flag = province_rebuilt }
+                OR = {
+                    area = vaximor_area
+                    area = makykay_area
+                    area = bava_area
+                    area = rishtokay_area
+                }
+                OR = {
+                    has_terrain = marsh
+					has_terrain = desert
+                }
+            }
+			random = {
+				chance = 33
+				add_base_tax = 1
 			}
-			random_list = {
-				33 = {
-					add_base_tax = 1
-				}
-				67 = { }
+			random = {
+				chance = 33
+				add_base_production = 1
 			}
-			set_province_flag = province_rebuilt
-		}
-	}
-	option = {
-		name = maky.11.a.a
-		ai_chance = { factor = 1 }
-		random_owned_province = {
-			NOT = { has_province_flag = province_rebuilt }
-			random_list = {
-				60 = {
-					add_base_production = 1
-				}
-				40 = { }
+			random = {
+				chance = 33
+				add_base_manpower = 1
 			}
-			random_list = {
-				33 = {
-					add_base_production = 1
-				}
-				67 = { }
+			random = {
+				chance = 25
+				add_base_tax = 1
 			}
 			set_province_flag = province_rebuilt
 		}
 	}
 	option = {
-		name = maky.11.a.a
+		name = maky.11.a.b
 		ai_chance = { factor = 1 }
 		random_owned_province = {
-			NOT = { has_province_flag = province_rebuilt }
-			random_list = {
-				60 = {
-					add_base_manpower = 1
-				}
-				40 = { }
+            limit = {
+                NOT = { has_province_flag = province_rebuilt }
+                OR = {
+                    area = vaximor_area
+                    area = makykay_area
+                    area = bava_area
+                    area = rishtokay_area
+                }
+                OR = {
+                    has_terrain = marsh
+					has_terrain = desert
+                }
+            }
+			random = {
+				chance = 33
+				add_base_tax = 1
 			}
-			random_list = {
-				33 = {
-					add_base_manpower = 1
-				}
-				67 = { }
+			random = {
+				chance = 33
+				add_base_production = 1
+			}
+			random = {
+				chance = 33
+				add_base_manpower = 1
+			}
+			random = {
+				chance = 25
+				add_base_production = 1
+			}
+			set_province_flag = province_rebuilt
+		}
+	}
+	option = {
+		name = maky.11.a.c
+		ai_chance = { factor = 1 }
+		random_owned_province = {
+            limit = {
+                NOT = { has_province_flag = province_rebuilt }
+                OR = {
+                    area = vaximor_area
+                    area = makykay_area
+                    area = bava_area
+                    area = rishtokay_area
+                }
+                OR = {
+                    has_terrain = marsh
+					has_terrain = desert
+                }
+            }
+			random = {
+				chance = 33
+				add_base_tax = 1
+			}
+			random = {
+				chance = 33
+				add_base_production = 1
+			}
+			random = {
+				chance = 33
+				add_base_manpower = 1
+			}
+			random = {
+				chance = 25
+				add_base_manpower = 1
 			}
 			set_province_flag = province_rebuilt
 		}
@@ -886,7 +879,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 36
+		months = 30
 	}
 
 	option = {
@@ -894,7 +887,7 @@ country_event = {
 		ai_chance = { factor = 1 }
 		5142 = {
 			add_base_tax = 1
-			add_base_production = 1
+			add_base_production = 2
 			add_base_manpower = 1
 			random_list = {
 				75 = {
@@ -922,7 +915,7 @@ country_event = {
 		ai_chance = { factor = 1 }
 		5142 = {
 			add_base_tax = 1
-			add_base_production = 1
+			add_base_production = 2
 			add_base_manpower = 1
 			random_list = {
 				75 = {
@@ -950,7 +943,7 @@ country_event = {
 		ai_chance = { factor = 1 }
 		5142 = {
 			add_base_tax = 1
-			add_base_production = 1
+			add_base_production = 2
 			add_base_manpower = 1
 			random_list = {
 				75 = {
@@ -971,6 +964,71 @@ country_event = {
 				80 = { }
 			}
 			set_province_flag = province_rebuilt
+		}
+	}
+}
+
+###################
+Final event
+###################
+country_event = {
+	id = maky.13
+	title = maky.13.t
+	desc = maky.13.d
+	picture = CITY_DEVELOPMENT_eventPicture
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = VDY
+			tag = MKY
+		}
+		has_country_flag = maky_rebuilding
+		5139 = { development = 9 }
+		5143 = { development = 10 }
+		5153 = { development = 8 }
+		5140 = { development = 15 }
+		5138 = { development = 10 }
+		5142 = { development = 7 }
+		NOT = {
+			any_owned_province = {
+				AND = {
+					OR = {
+						area = vaximor_area
+						area = makykay_area
+						area = bava_area
+						area = rishtokay_area
+					}
+					OR = {
+						has_terrain	= farmlands
+						has_terrain = steppe
+						has_terrain = drylands
+						has_terrain = marsh
+						has_terrain = desert
+					}
+					NOT = { has_province_flag = province_rebuilt }
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = maky.13.a.a
+		ai_chance = { factor = 1 }
+		add_prestige = 25
+		change_government_reform_progress = 50
+		add_stability = 1
+		add_country_modifier = {
+			name = "maky_rebuilt"
+			duration = -1
+		}
+		remove_country_modifier = maky_rebuilding
+		every_owned_province = {
+			remove_province_modifier = province_rebuilt
 		}
 	}
 }
