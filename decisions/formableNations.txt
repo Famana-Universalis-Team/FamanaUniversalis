@@ -283,6 +283,12 @@ country_decisions = {
 				}
 				add_permanent_claim = MKY
 			}
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
 			add_country_modifier = {
 				name = "centralization_modifier"
 				duration = 7300
