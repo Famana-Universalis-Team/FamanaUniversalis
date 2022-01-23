@@ -143,7 +143,6 @@ country_decisions = {
 			}
 		}
 		effect = {
-			change_religion = mak
 			restore_country_name = yes
 			change_tag = VDY
 			if = {
