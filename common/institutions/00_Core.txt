@@ -677,6 +677,10 @@ new_world_i = {
 							}
     					}
 					}
+					region_for_scope_province = {
+        				new_world_i = 100
+        				province_has_center_of_trade_of_level = 1
+    				}
 				}
 			}
 			custom_trigger_tooltip = {
@@ -696,6 +700,10 @@ new_world_i = {
 							}
     					}
 					}
+					region_for_scope_province = {
+        				new_world_i = 100
+        				province_has_center_of_trade_of_level = 1
+    				}
 				}
 			}
 		}
@@ -719,6 +727,10 @@ new_world_i = {
 							}
     					}
 					}
+					region_for_scope_province = {
+        				new_world_i = 100
+        				province_has_center_of_trade_of_level = 1
+    				}
 				}
 			}
 			custom_trigger_tooltip = {
@@ -738,6 +750,10 @@ new_world_i = {
 							}
     					}
 					}
+					region_for_scope_province = {
+        				new_world_i = 100
+        				province_has_center_of_trade_of_level = 1
+    				}
 				}
 			}
 		}
@@ -760,6 +776,10 @@ new_world_i = {
 							}
     					}
 					}
+					region_for_scope_province = {
+        				new_world_i = 100
+        				province_has_center_of_trade_of_level = 1
+    				}
 				}
 			}
 			custom_trigger_tooltip = {
@@ -778,6 +798,10 @@ new_world_i = {
 							}
     					}
 					}
+					region_for_scope_province = {
+        				new_world_i = 100
+        				province_has_center_of_trade_of_level = 1
+    				}
 				}
 			}
 		}
