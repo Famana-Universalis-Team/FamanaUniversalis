@@ -3,6 +3,233 @@
 
 #Heir and consort titles are generally kept simple for clarity unless there is something special in particular that can be used.
 
+helvania = {
+	rank = {
+		1 = HELVANIA
+		2 = GRAND_HELVANIA
+		3 = GREAT_HELVANIA
+	}
+
+	ruler_male = {
+		1 = CONSUL
+		2 = GRAND_CONSUL
+		3 = GREAT_CONSUL
+	}
+
+	ruler_female = {
+		1 = CONSUL
+		2 = GRAND_CONSUL
+		3 = GREAT_CONSUL
+	}
+
+	trigger = {
+		AND = {
+			OR = {
+				tag = VAX
+				tag = VDY
+				tag = DYR
+			}
+			OR = {
+				has_reform = apocalyptic_helvania_reform
+				government = republic
+			}
+		}
+	}
+
+}
+
+tck_gov_name = {
+	rank = {
+		1 = TCK_REALM
+		2 = TCK_REALM
+		3 = TCK_REALM
+	}
+
+	ruler_male = {
+		1 = KING
+		2 = KING
+		3 = KING
+	}
+
+	ruler_female = {
+		1 = QUEEN
+		2 = QUEEN
+		3 = QUEEN
+	}
+
+	trigger = {
+		has_reform = crown_kingdom_reform
+	}
+}
+
+diocese_gov_name = {
+	rank = {
+		1 = DIOCESE
+		2 = DIOCESE
+		3 = DIOCESE
+	}
+
+	ruler_male = {
+		1 = DIOCESE_BISHOP
+		2 = DIOCESE_BISHOP
+		3 = DIOCESE_BISHOP
+	}
+
+	ruler_female = {
+		1 = DIOCESE_BISHOP
+		2 = DIOCESE_BISHOP
+		3 = DIOCESE_BISHOP
+	}
+
+	trigger = {
+		is_subject_of_type = diocese
+	}
+}
+
+qanoyo_diarchy_name = {
+	rank = {
+		1 = DIARCHY
+		2 = DIARCHY
+		3 = EMPIRE
+	}
+
+	ruler_male = {
+		1 = DIARCH
+		2 = DIARCH
+		3 = EMPEROR
+	}
+
+	ruler_female = {
+		1 = DIARCH
+		2 = DIARCH
+		3 = EMPRESS
+	}
+
+	trigger = {
+		AND = {
+			tag = QAN
+			government = monarchy
+		}
+	}
+}
+
+oppia_gov_name = {
+	rank = {
+		1 = DARLATE
+		2 = KINGDOM
+		3 = EMPIRE
+	}
+
+	ruler_male = {
+		1 = DARLUS
+		2 = KING
+		3 = EMPEROR
+	}
+
+	ruler_female = {
+		1 = DARLAT
+		2 = QUEEN
+		3 = EMPRESS
+	}
+
+	trigger = {
+		has_reform = oppian_state_reform
+	}
+}
+
+tombasor_name = {
+	rank = {
+		1 = TOMBASOR
+		2 = TOMBASOR
+		3 = TOMBASOR
+	}
+
+	ruler_male = {
+		1 = TOMBASOR
+		2 = TOMBASOR
+		3 = TOMBASOR
+	}
+
+	ruler_female = {
+		1 = TOMBASOR
+		2 = TOMBASOR
+		3 = TOMBASOR
+	}
+
+	trigger = {
+		has_subject_of_type	= tomban_state
+	}
+}
+
+tomban_state_gov_name = {
+	rank = {
+		1 = TOMBAN_STATE
+		2 = TOMBAN_STATE
+		3 = TOMBAN_STATE
+	}
+
+	ruler_male = {
+		1 = TOMBAN_LORD
+		2 = TOMBAN_LORD
+		3 = TOMBAN_LORD
+	}
+
+	ruler_female = {
+		1 = TOMBAN_LADY
+		2 = TOMBAN_LADY
+		3 = TOMBAN_LADY
+	}
+
+	trigger = {
+		is_subject_of_type = tomban_state
+	}
+}
+
+gov_tonxara = {
+	rank = {
+		3 = TONXARA
+	}
+
+	ruler_male = {
+		3 = CROTA_TAM
+	}
+
+	ruler_female = {
+		3 = ALDO_TAM
+	}
+
+	trigger = {
+		OR = {
+			tag = FAS
+			AND = {
+				religion = tonmo
+				government_rank = 3
+			}
+		}
+	}
+}
+
+gov_emmi = {
+	rank = {
+		1 = EMMI
+		2 = EMMI
+	}
+
+	ruler_male = {
+		1 = EM_MALA
+		2 = EM_MALA
+	}
+
+	ruler_female = {
+		1 = EM_MALO
+		2 = EM_MALO
+	}
+
+	trigger = {
+		has_reform = emmi
+	}
+}
+
 anarchy = {
 	rank = {
 		1 = ANARCHY
@@ -23,9 +250,8 @@ anarchy = {
 	}
 
 	trigger = {
-		or = {
+		OR = {
 			has_reform = survivor_reform
-		    has_reform = apocalyptic_helvania_reform
 		    has_reform = city_state_union_reform
 		}
 	}
