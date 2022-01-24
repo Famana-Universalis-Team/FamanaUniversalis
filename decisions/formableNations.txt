@@ -2130,4 +2130,70 @@ country_decisions = {
 			factor = 1
 		}
 	}
+	tolo_nation = {
+		major = yes
+		potential = {
+			AND = {
+				tag = ALT
+				NOT = { exists = TOL }
+				was_never_end_game_tag_trigger = yes
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 6183
+				province_id = 6182
+				province_id = 6194
+				province_id = 6181
+				province_id = 6179
+				province_id = 6180
+				province_id = 6178
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+		
+			}
+		}
+		allow = {
+			
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+				owns_core_province = 6183
+				owns_core_province = 6182
+				owns_core_province = 6194
+				owns_core_province = 6181
+				owns_core_province = 6179
+				owns_core_province = 6180
+				owns_core_province = 6178
+			
+		}
+		effect = {
+			restore_country_name = yes
+			change_tag = TOL
+			
+			6177 = {
+			add_claim = ROOT
+			}
+			dotz_area = {
+			add_claim = ROOT
+			}
+			poto_haroo_area = {
+			add_claim = ROOT
+			}
+			ennam_area = {
+			add_claim = ROOT
+			}
+			
+			
+			
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 10
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
 }
