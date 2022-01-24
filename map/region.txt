@@ -76,6 +76,7 @@ apilanya_region = {
 		denire_area
 		kolya_area
 		area_58
+		area_104
 	}
 }
 
@@ -89,6 +90,32 @@ gotzlic_region = {
 		nizoora_area
 		rosta_area
 		nenki_area
+		area_158
+		area_159
+		area_160
+	}
+}
+
+lukscha_region = {
+	areas = {
+		area_80
+		area_79
+		area_76
+		area_77
+		area_78
+		area_83
+		area_81
+		area_82
+		area_155
+	}
+}
+
+brula_region = {
+	areas = {
+		area_156
+		area_157
+		area_134
+		area_107
 	}
 }
 
@@ -212,10 +239,37 @@ west_estal_region = {
 		unnamed_area_22
 		northern_umzat
 		west_feniki
-		hasia_area
 		revdirom_area
 		emzelom_area
 		griglom_area
+		fes_viom_area
+		area_101
+		area_103
+		area_102
+	}
+}
+
+napora_region = {
+	areas = {
+		area_150
+		area_137
+		hasia_area
+		area_138
+		area_152
+		area_139
+		area_164
+	}
+}
+
+porlodya_region = {
+	areas = {
+		area_149
+		area_136
+		area_105
+		area_135
+		area_148
+		area_106
+		area_100
 	}
 }
 
@@ -288,6 +342,11 @@ west_ordica_region = {
 		poto_haroo_area
 		dreklos_area
 		alo_tramo_area
+		area_99
+		area_147
+		area_146
+		area_151
+		area_142
 	}
 }
 
@@ -296,6 +355,11 @@ vordor_region = {
 		holy_bridge_area
 		vordor_area
 		nagolai_area
+		area_98
+		area_140
+		area_141
+		area_153
+		area_154
 	}
 }
 
