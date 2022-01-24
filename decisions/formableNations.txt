@@ -2159,12 +2159,12 @@ country_decisions = {
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
 				owns_core_province = 6183
-				owns_core_province = 6182
-				owns_core_province = 6194
-				owns_core_province = 6181
-				owns_core_province = 6179
-				owns_core_province = 6180
-				owns_core_province = 6178
+				owns = 6182
+				owns = 6194
+				owns = 6181
+				owns = 6179
+				owns = 6180
+				owns = 6178
 			
 		}
 		effect = {
@@ -2182,6 +2182,24 @@ country_decisions = {
 			}
 			ennam_area = {
 			add_claim = ROOT
+			}
+			bortur_area = {
+			limit = { owned_by = ROOT  }
+			add_core = ROOT
+			}
+			alo_tramo_area = {
+			limit = {  owned_by = ROOT }
+			add_core = ROOT
+			}
+			dotz_area = {
+			limit = {  owned_by = ROOT }
+			add_core = ROOT
+			}
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
 			}
 			
 			
