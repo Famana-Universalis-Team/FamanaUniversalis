@@ -1015,7 +1015,7 @@ printing_press = {
 global_trade = {
 
 	bonus = {
-		missionary_maintenance_cost = -0.25
+		merchants = 1
 	}
 
 	trade_company_efficiency = 1.0
@@ -1145,7 +1145,7 @@ global_trade = {
 manufactories = {
 
 	bonus = {
-		artillery_power = 0.10
+		global_trade_goods_size_modifier = 0.10
 	}
 
 	trade_company_efficiency = 1.25
@@ -1447,7 +1447,7 @@ manufactories = {
 enlightenment = {
 
 	bonus = {
-		global_trade_goods_size_modifier = 0.1
+		shock_damage_received = -0.10
 	}
 
 	trade_company_efficiency = 1.5
@@ -1953,7 +1953,7 @@ enlightenment = {
 industrialization = {
 
 	bonus = {
-		culture_conversion_cost = -0.25
+		naval_attrition = -0.20
 	}
 
 	trade_company_efficiency = 2.0
@@ -2337,8 +2337,8 @@ feudalism_two = {
 	trade_company_efficiency = 2.0
 
 	bonus = {
-		global_manpower_modifier = 0.25
-		global_tax_modifier = 0.15
+		vassal_forcelimit_bonus = 0.25
+		vassal_income = 0.2
 	}
 
 	historical_start_date = 600.1.1
