@@ -3926,6 +3926,14 @@ on_province_religion_converted = {
 			desc = son_fetishism_as_secondary_religion_province_desc
 		}
 	}
+	if = {
+		limit = {
+			owner = {
+				religion = tonmo
+			}
+		}
+		set_province_flag = tonmo_converted
+	}
 	else_if = {
 		limit = {
 			OR = {
