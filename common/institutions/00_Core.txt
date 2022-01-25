@@ -1158,262 +1158,51 @@ manufactories = {
 	history = {
 		OR = {
 			AND = {
-				is_year = 1620
-				continent = europe
-				owner = { technology_group = western }
-			}
-			
-			AND = {
-				is_year = 1660
-				continent = europe
-			}	
-			AND = {
-				is_year = 1660
-				owner = {
-					NOT = { technology_group = north_american }
-					NOT = { technology_group = mesoamerican }
-					NOT = { technology_group = south_american }
-					NOT = { technology_group = andean }
-				}
-				superregion = south_america_superregion
+				is_year = 450
+				religion = lathvy
 			}
 			AND = {
-				is_year = 1660
-				owner = {
-					NOT = { technology_group = north_american }
-					NOT = { technology_group = mesoamerican }
-					NOT = { technology_group = south_american }
-					NOT = { technology_group = andean }
-				}
-				superregion = north_america_superregion
-			}
-			AND = {
-				is_year = 1660
-				owner = {
-					NOT = { technology_group = north_american }
-					NOT = { technology_group = mesoamerican }
-					NOT = { technology_group = south_american }
-					NOT = { technology_group = andean }
-				}
-				superregion = central_america_superregion
-			}
-			AND = {
-				is_year = 1700
-				OR = {
-					region = maghreb_region
-					region = egypt_region
-					superregion = near_east_superregion
-				}
-			}
-			
-			AND = {
-				is_year = 1720
-				has_port = yes
-				OR = {
-					superregion = india_superregion
-					superregion = persia_superregion
-					superregion = east_indies_superregion
-				}
-			}
-			AND = {
-				is_year = 1750
-				has_port = yes
-				superregion = africa_superregion
+				is_year = 500
+				NOT = { religion = lathvy }
 			}
 		}
 	}
 	
 	can_start = {
-		is_year = 1600
+		is_year = 450
 		is_island = no
-		highest_value_trade_node = yes
+		is_state = yes
+		development = 25
+		owner = { religion = lathvy }
 		OR = {
-			province_has_center_of_trade_of_level = 3
-			province_has_center_of_trade_of_level = 2
-			is_capital = yes
-			AND = {
-				is_year = 1630 #fallback
-				province_has_center_of_trade_of_level = 1
-			}
+			superregion = jasua_superregion
+			superregion = west_estal_superregion
+			superregion = central_estal_supperregion
 		}
-		owner = {
-			any_active_trade_node = {
-				is_strongest_trade_power = PREV
-				highest_value_trade_node = yes
-			}
-		}
-
 	}
+
 	start_chance = 25		#in 100 for when a province can_start
 	
-	
-	on_start = institution_events.6
-	
+	on_start = institution_events.6	
 	
 	can_embrace = {
 		always = yes
 	}
-
 	
 	embracement_speed = {
 	
 		modifier = {
-			factor = 0.4 #Not scaled
-			province_trade_power = 15
-		}
-		modifier = {
-			factor = 0.8 #Not Scaled
-			province_trade_power = 25
-		}
-		modifier = {
-			factor = 1.2 #Not Scaled
-			province_trade_power = 35
-		}
-		modifier = {
-			factor = 1.6 #Not Scaled
-			province_trade_power = 45
-		}
-		modifier = {
-			factor = 0.4
+			factor = 0.36
 			scale = yes
 			potential = {
-				province_has_center_of_trade_of_level = 1
+				development = 25
 			}
 			custom_trigger_tooltip = {
-				tooltip = tooltip_center_of_trade_3_spread
-				province_has_center_of_trade_of_level = 3
-			}
-		}
-		modifier = {
-			factor = 0.1
-			scale = yes
-			potential = {
-				province_has_center_of_trade_of_level = 1
-			}
-			custom_trigger_tooltip = {
-				tooltip = tooltip_center_of_trade_spread
-				province_has_center_of_trade_of_level = 2
-			}
-		}
-		modifier = {
-			factor = 0.1
-			scale = yes
-			force_potential = yes	# Hide the this modifier when potential is false
-			potential = {
-				owner = { has_estate = estate_burghers }
-			}
-			custom_trigger_tooltip = {
-				tooltip = tooltip_global_trade_burghers
-				any_neighbor_province = {
-					global_trade = 100
-				}
-				owner = {
-					has_estate = estate_burghers
-					estate_loyalty = {
-						estate = estate_burghers
-						loyalty = 40
-					}
-					estate_territory = {
-						estate = estate_burghers
-						territory = 30
-					}
-				}
+				tooltip = tooltip_any_neighbor_has_embraced_manufactories
+				development = 25
 			}
 		}
 
-		modifier = {
-			factor = 0.25
-			scale = yes
-			potential = {
-				has_port = no
-			}
-			custom_trigger_tooltip = {
-				tooltip = tooltip_neighbor_non_port_province_global_trade
-				has_port = no
-				any_neighbor_province = {
-					global_trade = 100
-					
-				}
-			}
-		}
-		
-		modifier = {
-			factor = 0.5
-			scale = yes
-			potential = {
-				has_port = yes
-			}
-			custom_trigger_tooltip = {
-				tooltip = tooltip_neighbor_port_province_global_trade
-				has_port = yes
-				any_neighbor_province = {
-					global_trade = 100
-					
-				}
-			}
-		}
-		
-		modifier = {
-			factor = 5
-			scale = yes
-			potential = {
-				owner = {
-					is_colonial_nation = yes
-				}
-			}
-			custom_trigger_tooltip = {
-				tooltip = tooltip_colonial_overlord_global_trade
-				OR = {
-					has_port = yes
-					is_capital = yes
-				}
-				owner = {
-					is_colonial_nation = yes
-					overlord = { has_institution = global_trade }
-				}
-			}
-		}
-		
-		modifier = {
-			factor = 0.5
-			printing_press = 100
-		}
-		modifier = {
-			factor = 2
-			scale = yes
-			potential = {
-				owner = {
-					has_institution = global_trade
-				}
-				continent = owner
-			}
-			
-			custom_trigger_tooltip = {
-				tooltip = tooltip_global_trade_embraced
-				is_owned_by_trade_company = no
-				owner = {
-					has_institution = global_trade
-				}
-			}
-		}
-		modifier = {
-			factor = 1
-			scale = yes
-			potential = {
-				owner = {
-					has_institution = global_trade
-				}
-				NOT = { continent = owner }
-			}
-			
-			custom_trigger_tooltip = {
-				tooltip = tooltip_global_trade_embraced_other_continent
-				is_owned_by_trade_company = no
-				owner = {
-					has_institution = global_trade
-				}
-			}
-		}
 	}
 	
 	ai_will_do = { #Cost of embracing institution must be lower than this factor * last month's regular income, and higher if loans are needed. (Or it has a more than long term goal...)
@@ -1460,76 +1249,13 @@ enlightenment = {
 	history = {
 		OR = {
 			AND = {
-				is_year = 1680
-				continent = europe
-				owner = { technology_group = western }
+				is_year = 500
 			}
-			
-			AND = {
-				is_year = 1720
-				continent = europe
-			}	
-			AND = {
-				is_year = 1750
-				superregion = china_superregion
-			}
-			AND = {
-				is_year = 1750
-				superregion = india_superregion
-			}
-			AND = {
-				is_year = 1750
-				superregion = near_east_superregion
-			}
-			AND = {
-				is_year = 1750
-				region = maghreb_region
-			}
-			AND = {
-				is_year = 1750
-				region = egypt_region
-			}
-			AND = {
-				is_year = 1760
-				owner = {
-					NOT = { technology_group = north_american }
-					NOT = { technology_group = mesoamerican }
-					NOT = { technology_group = south_american }
-					NOT = { technology_group = andean }
-				}
-				superregion = south_america_superregion
-			}
-			AND = {
-				is_year = 1760
-				owner = {
-					NOT = { technology_group = north_american }
-					NOT = { technology_group = mesoamerican }
-					NOT = { technology_group = south_american }
-					NOT = { technology_group = andean }
-				}
-				superregion = north_america_superregion
-			}
-			AND = {
-				is_year = 1760
-				owner = {
-					NOT = { technology_group = north_american }
-					NOT = { technology_group = mesoamerican }
-					NOT = { technology_group = south_american }
-					NOT = { technology_group = andean }
-				}
-				superregion = central_america_superregion
-			}
-			
-			AND = {
-				is_year = 1780
-				superregion = persia_superregion
-			}
-			
 		}
 	}
 	
 	can_start = {
-		is_year = 1650
+		is_year = 500
 		is_in_capital_area = yes
 		is_island = no
 		is_state = yes
@@ -1554,18 +1280,34 @@ enlightenment = {
 			has_building = mills
 		}
 	}
+
 	start_chance = 10		#in 100 for when a province can_start
 	
-	
 	on_start = institution_events.7
-	
 	
 	can_embrace = {
 		always = yes
 	}
 
-	
 	embracement_speed = {
+
+		modifier = {
+			factor = 0.4 #Not scaled
+			province_trade_power = 15
+		}
+		modifier = {
+			factor = 0.8 #Not Scaled
+			province_trade_power = 25
+		}
+		modifier = {
+			factor = 1.2 #Not Scaled
+			province_trade_power = 35
+		}
+		modifier = {
+			factor = 1.6 #Not Scaled
+			province_trade_power = 45
+		}
+
 		modifier = {
 			factor = 0.5
 			scale = yes
