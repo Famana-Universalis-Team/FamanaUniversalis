@@ -43,7 +43,6 @@ collapse_of_pextoglazia = {
                     is_subject_of_type_with_overlord = { who = PEX type = diocese }
                 }
             }
-            NOT = { num_of_rebel_controlled_provinces = 1 }
         }
     }
 
