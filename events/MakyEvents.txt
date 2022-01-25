@@ -1026,9 +1026,9 @@ country_event = {
 			name = "maky_rebuilt"
 			duration = -1
 		}
-		remove_country_modifier = maky_rebuilding
+		clr_country_flag = maky_rebuilding
 		every_owned_province = {
-			remove_province_modifier = province_rebuilt
+			clr_province_flag = province_rebuilt
 		}
 	}
 }

@@ -1,0 +1,117 @@
+namespace = fashcon
+#Arism
+country_event = {
+	id = fashcon.1
+	title = fashcon.1.t
+	desc = fashcon.1.d
+	picture = RELIGION_eventPicture
+    hidden = yes
+
+	trigger = {
+		AND = {
+            tag = FAS
+            any_owned_province = {
+                has_province_flag = tonmo_converted
+            }
+        }
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = fashcon.1.a.a
+		ai_chance = { factor = 1 }
+        trigger = {
+            any_owned_province = {
+                has_province_flag = tonmo_converted
+                development = 3
+                NOT = { development = 8 }
+            }
+        }
+		add_horde_unity = 1
+        every_owned_province = {
+            clr_province_flag = tonmo_converted
+        }
+	}
+
+	option = {
+		name = fashcon.1.a.b
+		ai_chance = { factor = 1 }
+        trigger = {
+            any_owned_province = {
+                has_province_flag = tonmo_converted
+                development = 8
+                NOT = { development = 13 }
+            }
+        }
+		add_horde_unity = 1.5
+        every_owned_province = {
+            clr_province_flag = tonmo_converted
+        }
+	}
+
+    option = {
+		name = fashcon.1.a.c
+		ai_chance = { factor = 1 }
+        trigger = {
+            any_owned_province = {
+                has_province_flag = tonmo_converted
+                development = 13
+                NOT = { development = 18 }
+            }
+        }
+		add_horde_unity = 2
+        every_owned_province = {
+            clr_province_flag = tonmo_converted
+        }
+	}
+
+    option = {
+		name = fashcon.1.a.d
+		ai_chance = { factor = 1 }
+        trigger = {
+            any_owned_province = {
+                has_province_flag = tonmo_converted
+                development = 18
+                NOT = { development = 23 }
+            }
+        }
+		add_horde_unity = 2.5
+        every_owned_province = {
+            clr_province_flag = tonmo_converted
+        }
+	}
+
+    option = {
+		name = fashcon.1.a.e
+		ai_chance = { factor = 1 }
+        trigger = {
+            any_owned_province = {
+                has_province_flag = tonmo_converted
+                development = 23
+                NOT = { development = 30 }
+            }
+        }
+		add_horde_unity = 3
+        every_owned_province = {
+            clr_province_flag = tonmo_converted
+        }
+	}
+
+    option = {
+		name = fashcon.1.a.f
+		ai_chance = { factor = 1 }
+        trigger = {
+            any_owned_province = {
+                has_province_flag = tonmo_converted
+                development = 30
+            }
+        }
+		add_horde_unity = 3.5
+        every_owned_province = {
+            clr_province_flag = tonmo_converted
+        }
+	}
+}
