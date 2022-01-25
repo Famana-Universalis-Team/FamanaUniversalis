@@ -919,24 +919,24 @@ Nafan = { #unifinished
 	Kachik = {
 		primary = RCK
 		male_names = {
-			Noy Elret Abus Ordit Altruis
+			Noy Elret Abus Ordit Altruis Mego Arpidon Enkuess Oe'it Auead Ranki Mangaan Eyus Hgevi
 		}
 		female_names = {
-			Sini Yiana
+			Sini Yiana Hyega Ortessa Jkebla Fuvhetha Eyugb  Bhefa Yilis
 		}
 		dynasty_names = {
-			Syadon Nolladon Ayim 
+			Syadon Nolladon Ayim Kalar Eltru Deev
 		}
 	}
     Rini_C = {
 		male_names = {
-			Noy Elret Abus Ordit Altruis
+			Noy Elret Abus Ordit Altruis Mego Arpidon Enkuess Oe'it Auead Ranki Mangaan Eyus Hgevi
 		}
 		female_names = {
-			Sini Yiana
+			Sini Yiana Hyega Ortessa Jkebla Fuvhetha Eyugb  Bhefa Yilis
 		}
 		dynasty_names = {
-			Syadon
+			Syadon Nolladon Ayim Kalar Eltru Deev
 		}
     }
 }
@@ -963,7 +963,7 @@ Western_Estali = { #unfinished
 			Tolsveygi
 		}
 		dynasty_names = {
-			Zulrvapi
+			Zulrvapi Efgea Jehemna Erroigaza Nakaphfatuial Hevron Geggma 
 		}
 	}
 	Mirrisan = {
@@ -1081,13 +1081,13 @@ Komelwaiti = {
 	Elwaiti = {
 		primary = ELW
 		male_names = {
-            Allusz Srisyl Stemakl Estefar Waitisma
+            Allusz Srisyl Stemakl Estefar Waitisma Serram Kalla'Kogag Manekyl Navvirrin 
         }
         female_names = {
-            Shatarj Traus
+            Shatarj Traus Gheipus Heyykma 
         }
         dynasty_names = {
-			Jhar Rupe Konoknid Cioulon
+			Jhar Rupe Konoknid Cioulon "Lim Dod"
         }
 	}
 	Kom = {
@@ -1096,7 +1096,7 @@ Komelwaiti = {
 			Jomba Esta Smiran Veistaj
 		}
 		female_names = {
-			Yarm Stared
+			Yarm Stared Vistana
 		}
 		dynasty_names = {
 			Leop Mokep Tiji Popi Op Moni Persi "Veyu U"
@@ -1146,6 +1146,19 @@ Naravami_C = {
 Yomtanian = { # unfinished
 	Hasian = {
 		primary = HAS
+		male_names = {
+			Nihaluchan Oboloianifpeni Gweanhrefn Ugujaj Kowa Twon Olid Sxaskxa
+		}
+		female_names = {
+			Ayen Tesey Ifs Moak Mnaxyik
+		}
+		dynasty_names = {
+			Gusan Isk Ga'a Gosi Kaoad Has
+		}
+	}
+	
+	Hofrrejjdkman = {
+		
 		male_names = {
 			Nihaluchan Oboloianifpeni Gweanhrefn Ugujaj Kowa Twon Olid Sxaskxa
 		}
@@ -1272,13 +1285,13 @@ Antiash = {
 	Kurkari = {
 		primary = KKR
 		male_names = {
-            Ashadir Kabir Abul Qayam Umea Hovakar
+            Ashadir Kabir Abul Qayam Umea Hovakar Baoulis Uvushad Selamket Harjidwe
         }
         female_names = {
             Kandar Oala Palana
         }
         dynasty_names = {
-			Mensh Selloni Haas Taqar Olar
+			Mensh Selloni Haas Taqar Olar Ciukir "Ja'nny" 
         }
 	}
 }
@@ -1315,13 +1328,13 @@ Onobyan = {
 Lukschan = {
 	Lukschan = {
 		male_names = {
-            Cerkieni
+            Cerkieni Thouus Gasroon Ursoo Foranrt Irusuas Hozendwhi Palelpanetl Chyshyus'h Rusraimel Umalminothus Arseyagien
         }
         female_names = {
-            Ovvrona
+            Ovvrona Agmita Joo Maul Ghenepes Anma 
         }
         dynasty_names = {
-			Lukul
+			Lukul "Ve Oiko" "Ve Thaon" Byuv Anekssys Eyhra 
         }
 	}
 }
