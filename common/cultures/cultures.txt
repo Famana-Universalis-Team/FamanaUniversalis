@@ -1278,6 +1278,17 @@ Qamon_C = {
 			Covut Aptgasen Kejerol Shol Wilonama Kenej Lasolil Bobaba Ryni Qadol Okiga Kerayaky Praur Zgask Aguk
     	}
 	}
+	Qarturan = {
+		male_names = {
+           	Akanara Karyna Agaran Kolor Dlina Kakorian Ofarok Kenitki Edgodra Boptol Oblogga Prykya Bogdan Zgaly Eyzdova Agaritah Angara
+    	}
+     	female_names = {
+         	Qantahya Lahaani Mosion Bahrana Rigz
+     	}
+      	dynasty_names = {
+			Covut Aptgasen Kejerol Shol Wilonama Kenej Lasolil Bobaba Ryni Qadol Okiga Kerayaky Praur Zgask Aguk
+    	}
+	}
 }
 
 #############################
@@ -1328,13 +1339,50 @@ Onobyan = {
 Lukschan = {
 	Lukschan = {
 		male_names = {
-            Cerkieni Thouus Gasroon Ursoo Foranrt Irusuas Hozendwhi Palelpanetl Chyshyus'h Rusraimel Umalminothus Arseyagien
+            Cerkieni Thouus Gasroon Ursoo Foranrt Irusuas Hozendwhi Palelpanetl Chyshyus Rusraimel Umalminothus Arseyagien
         }
         female_names = {
             Ovvrona Agmita Joo Maul Ghenepes Anma 
         }
         dynasty_names = {
 			Lukul "Ve Oiko" "Ve Thaon" Byuv Anekssys Eyhra 
+        }
+	}
+}
+
+############################ 
+Oroman = {  #awesome name. if you don't like it could also be east qamon 
+	Zektan = {  #In Arp Zektan would propably be in the Tomban group but here it makes more sense to put it here
+		male_names = {
+            Tarutian Qaoonot Dondor Fubrut Tuzmur Araharag Reran Orfogogror Stupamandi Poneladhvi Aelro  Raan Okkottos Dunnoman Yonmar Qublait Summakatbi Ehheb 
+        }
+        female_names = {
+             Kafsila Alne Sexa Taritia Arkakaee Shiontatt Urrvuz Saee
+        }
+        dynasty_names = {
+			 Ourolome Karasannit Argiebreyvi Sambleka Boyandi Novvoz Quoalum Aebehb Rjugigam 
+        }
+	}
+	Catvilan = {
+		male_names = {
+            Tarutian Qaoonot Dondor Fubrut Tuzmur Araharag Reran Orfogogror Stupamandi Poneladhvi Aelro  Raan Okkottos Dunnoman Yonmar Qublait Summakatbi Ehheb
+        }
+        female_names = {
+             Kafsila Alne Sexa Taritia Arkakaee Shiontatt Urrvuz Saee
+        }
+        dynasty_names = {
+			 Ourolome Karasannit Argiebreyvi Sambleka Boyandi Novvoz Quoalum Aebehb Rjugigam 
+        }
+	}
+	Klondori = {
+		male_names = {
+            Tarutian Qaoonot Dondor Fubrut Tuzmur Araharag Reran Orfogogror Stupamandi Poneladhvi Aelro  Raan Okkottos Dunnoman Yonmar Qublait Summakatbi Ehheb
+        }
+        female_names = {
+             Kafsila Alne Sexa Taritia Arkakaee Shiontatt Urrvuz Saee
+        }
+        dynasty_names = {
+			 Ourolome Karasannit Argiebreyvi Sambleka Boyandi Novvoz Quoalum Aebehb Rjugigam 
         }
 	}
 }
@@ -1420,5 +1468,6 @@ Toman_C = { #Localise
         	"of Lykat" "of Torair" "of Jeskon" "of Ilgs" Wystron Eggel Gastiman Selwys Orgato Wombas Istrox Wetiske Velganon "of Pind" "of Cert" "of Kastras" Eswick Handil
         }
 	}
+	
 }
 #############################
