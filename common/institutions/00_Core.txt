@@ -504,7 +504,7 @@ new_world_i = {
 
 
 	historical_start_date = 300.1.1
-	historical_start_province = 5493 #change to somewhere idfk
+	historical_start_province = 5692 #Emtik
 
 	history = {
 		OR = {
@@ -677,10 +677,7 @@ new_world_i = {
 							}
     					}
 					}
-					region_for_scope_province = {
-        				new_world_i = 100
-        				province_has_center_of_trade_of_level = 1
-    				}
+					is_capital = yes
 				}
 			}
 			custom_trigger_tooltip = {
@@ -700,10 +697,7 @@ new_world_i = {
 							}
     					}
 					}
-					region_for_scope_province = {
-        				new_world_i = 100
-        				province_has_center_of_trade_of_level = 1
-    				}
+					is_capital = yes
 				}
 			}
 		}
@@ -727,10 +721,6 @@ new_world_i = {
 							}
     					}
 					}
-					region_for_scope_province = {
-        				new_world_i = 100
-        				province_has_center_of_trade_of_level = 1
-    				}
 				}
 			}
 			custom_trigger_tooltip = {
@@ -750,10 +740,6 @@ new_world_i = {
 							}
     					}
 					}
-					region_for_scope_province = {
-        				new_world_i = 100
-        				province_has_center_of_trade_of_level = 1
-    				}
 				}
 			}
 		}
@@ -776,10 +762,6 @@ new_world_i = {
 							}
     					}
 					}
-					region_for_scope_province = {
-        				new_world_i = 100
-        				province_has_center_of_trade_of_level = 1
-    				}
 				}
 			}
 			custom_trigger_tooltip = {
@@ -798,10 +780,6 @@ new_world_i = {
 							}
     					}
 					}
-					region_for_scope_province = {
-        				new_world_i = 100
-        				province_has_center_of_trade_of_level = 1
-    				}
 				}
 			}
 		}
@@ -933,6 +911,30 @@ printing_press = {
 		}
 
 		modifier = {
+			factor = 0.3
+			scale = yes
+			potential = {
+				owner = {
+					reverse_has_opinion = {
+						who = NAF
+						value = 100
+					}
+				}
+				is_capital = yes
+			}
+			custom_trigger_tooltip = {
+				tooltip = friendly_nafa
+				owner = {
+					reverse_has_opinion = {
+						who = NAF
+						value = 100
+					}
+				}
+				is_capital = yes
+			}
+		}
+
+		modifier = {
 			factor = 0.24
 			scale = yes
 			potential = {
@@ -1021,7 +1023,7 @@ global_trade = {
 	trade_company_efficiency = 1.0
 
 	historical_start_date = 400.1.1
-	historical_start_province = 1876 #Frankfurt (yes)
+	historical_start_province = 7290 #Diagya / change later
 
 	history = {
 		OR = {
@@ -1151,7 +1153,7 @@ manufactories = {
 	trade_company_efficiency = 1.25
 
 	historical_start_date = 450.1.1
-	historical_start_province = 97 #Holland
+	historical_start_province = 5605 #Ayli
 
 	history = {
 		OR = {
@@ -1453,7 +1455,7 @@ enlightenment = {
 	trade_company_efficiency = 1.5
 
 	historical_start_date = 500.1.1
-	historical_start_province = 183 #Paris
+	historical_start_province = 6270 #Kolya ig
 
 	history = {
 		OR = {
@@ -1959,7 +1961,7 @@ industrialization = {
 	trade_company_efficiency = 2.0
 
 	historical_start_date = 550.1.1
-	historical_start_province = 236 #London
+	historical_start_province = 7058 #Olopoka (obv change later)
 
 	history = {
 		OR = {
@@ -2342,7 +2344,7 @@ feudalism_two = {
 	}
 
 	historical_start_date = 600.1.1
-	historical_start_province = 244 #Lancashire
+	historical_start_province = 5725 #Nabrosia
 
 	history = {
 		OR = {
