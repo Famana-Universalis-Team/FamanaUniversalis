@@ -1,0 +1,142 @@
+# Do not change tags in here without changing every other reference to them.
+# If adding new technology, make sure they are uniquely named.
+# If adding new technology, make sure they are AFTER THE LAST TECHNOLOGY
+
+# Groups must be defined BEFORE tables.
+
+#Nation Designer Cost is set to match triggers for starting institutions.
+
+groups = {
+	western = {
+		start_level = 3
+		start_cost_modifier = 0
+		nation_designer_cost = {
+			trigger = {
+				capital_scope = {
+					OR = {
+						continent = new_world
+						continent = north_america
+						continent = south_america
+						continent = oceania
+					}
+				}
+			}
+			value = 75
+		}
+	}
+	
+	indian = {
+		start_level = 3
+		start_cost_modifier = 0.5
+		nation_designer_cost = {
+			trigger = {
+				capital_scope = {
+					OR = {
+						continent = new_world
+						continent = north_america
+						continent = south_america
+						continent = oceania
+					}
+				}
+			}
+			value = 75
+		}
+	}
+	
+	
+	chinese = {
+		start_level = 3
+		start_cost_modifier = 0.6
+		nation_designer_cost = {
+			trigger = {
+				capital_scope = {
+					OR = {
+						continent = new_world
+						continent = north_america
+						continent = south_america
+						continent = oceania
+					}
+				}
+			}
+			value = 75
+		}
+	}
+
+	qamoni_tech_gr = {
+		start_level = 3
+		start_cost_modifier = 0
+		
+	}
+	
+	tomban_tech_gr = {
+		start_level = 3
+		start_cost_modifier = 0
+		
+	}
+	
+	north_antebari_tech_gr = {
+		start_level = 2
+		start_cost_modifier = 0.6
+		
+	}
+	
+	geopyopian_tech_gr = {
+		start_level = 3
+		start_cost_modifier = 0.25
+		
+	}
+	
+	sakan_tech_gr = {
+		start_level = 1
+		start_cost_modifier = 2.5
+		
+	}
+	
+	estal_tribal_tech_gr = {
+		start_level = 1
+		start_cost_modifier = 1.5
+		
+	}
+	
+	gotzlic_tech_gr = {
+		start_level = 2
+		start_cost_modifier = 0.4
+		
+	}
+	
+	sakan_tech_gr = {
+		start_level = 1
+		start_cost_modifier = 2.5
+		
+	}
+	
+	hasmali_tech_gr = {
+		start_level = 2
+		start_cost_modifier = 0.5
+		
+	}
+	
+	west_gomic_tech_gr = {
+		start_level = 3
+		start_cost_modifier = 0
+		
+	}
+	
+	east_gomic_tech_gr = {
+		start_level = 3
+		start_cost_modifier = 0
+		
+	}
+	
+	north_gomic_tech_gr = {
+		start_level = 3
+		start_cost_modifier = 0
+		
+	}
+}
+
+tables = {
+	adm_tech = "technologies/adm.txt"
+	dip_tech = "technologies/dip.txt"
+	mil_tech = "technologies/mil.txt"
+}
