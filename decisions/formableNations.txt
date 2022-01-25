@@ -1157,6 +1157,7 @@ country_decisions = {
 		potential = {
 			AND = {
 				NOT = { exists = MOX }
+				NOT = { tag = SKT }
 				culture_group = Maxan
 				was_never_end_game_tag_trigger = yes
 			}
