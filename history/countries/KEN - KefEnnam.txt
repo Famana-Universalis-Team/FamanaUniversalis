@@ -1,0 +1,19 @@
+government = monarchy
+add_government_reform = autocracy_reform
+government_rank = 1
+mercantilism = 10
+technology_group = west_gomic_tech_gr
+religion = lathvy
+primary_culture = Nahallaian
+capital = 6183	# fake
+
+200.1.1 = { #change to 200 or smth
+	monarch = {
+		name = "Usee"
+		dynasty = "Rospat"
+		birth_date = 195.7.19
+		adm = 1
+		dip = 2
+		mil = 2
+	}
+}

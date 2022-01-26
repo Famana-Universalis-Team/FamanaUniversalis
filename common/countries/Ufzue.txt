@@ -1,0 +1,78 @@
+#Country Name: Please see filename.
+
+graphical_culture = inuitgfx
+
+color = { 208  235  9 }
+
+historical_idea_groups = {
+	economic_ideas
+	defensive_ideas
+	diplomatic_ideas
+	offensive_ideas
+	innovativeness_ideas
+	quantity_ideas
+	administrative_ideas
+	religious_ideas
+}
+
+historical_units = {
+	native_indian_archer
+	native_indian_tribal_warfare
+	native_indian_horsemen
+	native_indian_mountain_warfare
+	iroquois_rifle_scout
+	sioux_dragoon
+	american_western_franchise_warfare
+}
+
+monarch_names = {
+	"Torive Oij #0" = 1
+	"Wkóhwa Gob #0" = 1
+	"Foituód Lug #0" = 1
+	"Zeizhre Stun #0" = 1
+	"Raiwshair We #0" = 1
+	"Éoir Kos #0" = 1
+	"Jurafi Us #0" = 1
+	"Hjérè Lóm #0" = 1
+	"Ubkó Of #0" = 1
+	"Feiko Jiz #0" = 1
+	"Róreg Moir #0" = 1
+	"Lèkhjeir No #0" = 1
+	"Ato Gung #0" = 1
+	"Jéufeg É #0" = -1
+	"Garka Zhi #0" = -1
+	"Kojer Zhoi #0" = -1
+	"Róreg Moir #0" = -1
+	"Eitéb A #0" = -1
+	"Rairtó Vdèr #0" = -1
+}
+
+leader_names = {
+	"Torive Oij"
+	"Wkóhwa Gob"
+	"Foituód Lug"
+	"Zeizhre Stun"
+	"Raiwshair We"
+	"Éoir Kos"
+	"Jurafi Us"
+	"Hjérè Lóm"
+	"Ubkó Of"
+	"Feiko Jiz"
+	"Róreg Moir"
+	"Lèkhjeir No"
+	"Ato Gung"
+}
+
+ship_names = {
+	Hdgsgf
+	Ugdfsgidh
+	Hfeghjefg
+}
+
+army_names = {
+	"Magay $PROVINCE$ Yuru" 
+}
+
+fleet_names = {
+	"Grand Navy"
+}

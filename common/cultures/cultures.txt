@@ -978,6 +978,66 @@ Western_Estali = { #unfinished
 			"Durisgaad" "Albek" "Rimar" "Gioj" Vaigratbag "Jygeial" "Iojur" "Ojimi" "Voigwoi" "Bewam" "Aigtai" "Guringim" "Rairtv" "Ngaizrt"
 		}
 	}
+	Halosan = {
+		primary = EQI
+		male_names = {
+			"Torive Oij" "Wkahwa Gob" "Foituyd Lug" "Zeizhre Stun" "Raiwshair We" "Soir Kos" "Jurafi Us" "Hjird Lom" "Ubki Of" "Feiko Jiz" "Roreg Moir" "Likhjeir No" "Ato Gung"
+		}
+		female_names = {
+			"Jfufeg R" "Garka Zhi" "Kojer Zhoi" "Rureg Moir" "Eitob A" "Rairto Vdpr"
+		}
+		dynasty_names = {
+			"Durisgaad" "Albek" "Rimar" "Gioj" Vaigratbag "Jygeial" "Iojur" "Ojimi" "Voigwoi" "Bewam" "Aigtai" "Guringim" "Rairtv" "Ngaizrt"
+		}
+	}
+	Merteli = {
+		primary = MER
+		male_names = {
+			"Torive Oij" "Wkahwa Gob" "Foituyd Lug" "Zeizhre Stun" "Raiwshair We" "Soir Kos" "Jurafi Us" "Hjird Lom" "Ubki Of" "Feiko Jiz" "Roreg Moir" "Likhjeir No" "Ato Gung"
+		}
+		female_names = {
+			"Jfufeg R" "Garka Zhi" "Kojer Zhoi" "Rureg Moir" "Eitob A" "Rairto Vdpr"
+		}
+		dynasty_names = {
+			"Durisgaad" "Albek" "Rimar" "Gioj" Vaigratbag "Jygeial" "Iojur" "Ojimi" "Voigwoi" "Bewam" "Aigtai" "Guringim" "Rairtv" "Ngaizrt"
+		}
+	}
+	Midazkan = {
+		primary = MID
+		male_names = {
+			Satrit "Mayal" "Wohjevrg" "Jaizwer" "Eizni" "Rarjuzer" "Reididq" "Ngoilurat" 
+		}
+		female_names = {
+			Tolsveygi
+		}
+		dynasty_names = {
+			Zulrvapi Efgea Jehemna Erroigaza Nakaphfatuial Hevron Geggma 
+		}
+	}
+	Oekbian = {
+		primary = MOI
+		male_names = {
+			Satrit "Mayal" "Wohjevrg" "Jaizwer" "Eizni" "Rarjuzer" "Reididq" "Ngoilurat" 
+		}
+		female_names = {
+			Tolsveygi
+		}
+		dynasty_names = {
+			Zulrvapi Efgea Jehemna Erroigaza Nakaphfatuial Hevron Geggma 
+		}
+	}
+	Luzuk = {
+		male_names = {
+			Satrit "Mayal" "Wohjevrg" "Jaizwer" "Eizni" "Rarjuzer" "Reididq" "Ngoilurat" 
+		}
+		female_names = {
+			Tolsveygi
+		}
+		dynasty_names = {
+			Zulrvapi Efgea Jehemna Erroigaza Nakaphfatuial Hevron Geggma 
+		}
+	}
+
 }
 #############################
 Ordic_C = {
