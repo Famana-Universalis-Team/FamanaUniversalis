@@ -1,41 +1,17 @@
 #Written with Eu4 Easy Province Creator by emiroercn
 #UNNAMED
-add_core = YEN
-owner = YEN
-controller = YEN
-culture = Nahallaian
-religion = ordic
+culture = 
+religion = animism
 hre = no
 base_tax = 1
 base_production = 1
-trade_goods = grain
 base_manpower = 1
+trade_goods = 
+native_size = 2
+native_ferocity = 1
+native_hostileness = 1
 capital = "UNNAMED"
-is_city = yes
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+is_city = no
 
 
 

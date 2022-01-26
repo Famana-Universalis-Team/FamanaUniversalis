@@ -12,6 +12,12 @@ oppian_state_reform = {
 	}
 	potential = {
 		culture_group = Oppian
+		NOT = {
+			OR = {
+				tag = OPP
+				tag = TCK
+			}
+		}
 	}
 	custom_attributes = {
 		locked_government_type = yes
