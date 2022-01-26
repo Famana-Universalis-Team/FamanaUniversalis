@@ -30,7 +30,7 @@ oppian_group = {
 		}
 
 		heretic = {
-			THALMORIAN CHIGIMI 
+			THALMORIAN_H CHIGIMI 
 		}
 		allowed_conversion = {
 			reformed_oppian
@@ -649,7 +649,7 @@ lathvy_group = {
 		}
 
 		heretic = {
-			YOMTANIAN LIBERAL YOSIST ASSUL
+			 LIBERAL YOSIST ASSUL
 		}
 
 		uses_church_power = yes
@@ -691,7 +691,7 @@ lathvy_group = {
 		}
 
 		heretic = {
-			ORDIC YOSIST HARMONIC REFORMED
+			ORDIC_H YOSIST HARMONIC REFORMED_LH
 		}
 
 		crusade_name = CRUSADE
@@ -724,7 +724,7 @@ gomic_pagan_group = {
 		
 		fervor = yes
 		
-		heretic = { HALOGENITE OPMAKI NASTAN }	
+		heretic = { HALOGENITE OPMAKI_H NASTAN }	
 	}
 	bosisi = {
 		color = { 93 90 23 }
@@ -741,7 +741,7 @@ gomic_pagan_group = {
 			local_missionary_strength = 0.02
 		}
 		
-		heretic = { ANTIASH }
+		heretic = { ANTIASH_H }
 	}
 	
 	egr = {
@@ -776,7 +776,7 @@ gomic_pagan_group = {
 			idea_cost = -0.05
 		}
 		
-		heretic = { UMIC DYRIAN }	
+		heretic = { UMIC DYRIAN_H }	
 
 	}
 	pawani = {
@@ -1109,7 +1109,7 @@ Agmagozi = {
 		}
 
 		heretic = {
-			AGMAGOZI
+			OLD_AGMAGOZI
 		}
 
 		crusade_name = HOLY_WAR
@@ -1129,7 +1129,7 @@ Agmagozi = {
 		}
 
 		heretic = {
-			TIKULSAN
+			TIKULSAN_H
 		}
 
 		crusade_name = HOLY_WAR
@@ -1171,7 +1171,7 @@ Agmagozi = {
 		}
 
 		heretic = {
-			BALOLI
+			BALOLI #should be it's own thing imo
 		}
 
 		crusade_name = HOLY_WAR
@@ -1303,7 +1303,7 @@ north_estali = {
 			local_missionary_strength = 0.02
 		}
 		
-		heretic = { OGRACABA }
+		heretic = { UGRONIS }
 	}
 	harmonized_modifier = harmonized_pagan
 	
