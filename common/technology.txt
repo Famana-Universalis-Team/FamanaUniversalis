@@ -7,6 +7,36 @@
 #Nation Designer Cost is set to match triggers for starting institutions.
 
 groups = {
+	north_gomic_tech_gr = {
+		start_level = 3
+		start_cost_modifier = 0
+	}
+
+	gotzlic_tech_gr = {
+		start_level = 3
+		start_cost_modifier = 0.4
+	}
+
+	east_gomic_tech_gr = {
+		start_level = 3
+		start_cost_modifier = 0
+	}
+
+	west_gomic_tech_gr = {
+		start_level = 3
+		start_cost_modifier = 0
+	}
+
+	qamoni_tech_gr = {
+		start_level = 3
+		start_cost_modifier = 0
+	}
+	
+	tomban_tech_gr = {
+		start_level = 3
+		start_cost_modifier = 0
+	}
+	
 	western = {
 		start_level = 3
 		start_cost_modifier = 0
@@ -24,7 +54,40 @@ groups = {
 			value = 75
 		}
 	}
+
+	hasmali_tech_gr = {
+		start_level = 2
+		start_cost_modifier = 0.5
+	}
+
+	geopyopian_tech_gr = {
+		start_level = 3
+		start_cost_modifier = 0.25
+	}
+
+	north_antebari_tech_gr = {
+		start_level = 2
+		start_cost_modifier = 0.6
+	}
+
+	sakan_tech_gr = {
+		start_level = 1
+		start_cost_modifier = 2.5
+		is_primitive = yes
+	}
 	
+	estal_tribal_tech_gr = {
+		start_level = 1
+		start_cost_modifier = 1.5
+		is_primitive = yes
+	}
+
+	antestal_yom_tech_gr = {
+		start_level = 1
+		start_cost_modifier = 1.5
+		is_primitive = yes
+	}
+
 	indian = {
 		start_level = 3
 		start_cost_modifier = 0.5
@@ -43,7 +106,6 @@ groups = {
 		}
 	}
 	
-	
 	chinese = {
 		start_level = 3
 		start_cost_modifier = 0.6
@@ -60,74 +122,6 @@ groups = {
 			}
 			value = 75
 		}
-	}
-
-	qamoni_tech_gr = {
-		start_level = 3
-		start_cost_modifier = 0
-		
-	}
-	
-	tomban_tech_gr = {
-		start_level = 3
-		start_cost_modifier = 0
-		
-	}
-	
-	north_antebari_tech_gr = {
-		start_level = 2
-		start_cost_modifier = 0.6
-		
-	}
-	
-	geopyopian_tech_gr = {
-		start_level = 3
-		start_cost_modifier = 0.25
-		
-	}
-	
-	sakan_tech_gr = {
-		start_level = 1
-		start_cost_modifier = 2.5
-		is_primitive = yes
-		
-	}
-	
-	estal_tribal_tech_gr = {
-		start_level = 1
-		start_cost_modifier = 1.5
-		is_primitive = yes
-		
-	}
-	
-	gotzlic_tech_gr = {
-		start_level = 2
-		start_cost_modifier = 0.4
-		
-	}
-	
-	hasmali_tech_gr = {
-		start_level = 2
-		start_cost_modifier = 0.5
-		
-	}
-	
-	west_gomic_tech_gr = {
-		start_level = 3
-		start_cost_modifier = 0
-		
-	}
-	
-	east_gomic_tech_gr = {
-		start_level = 3
-		start_cost_modifier = 0
-		
-	}
-	
-	north_gomic_tech_gr = {
-		start_level = 3
-		start_cost_modifier = 0
-		
 	}
 }
 

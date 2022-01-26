@@ -1774,6 +1774,7 @@ country_decisions = {
 				set_government_rank = 2
 			}
 			change_tag = RES
+			change_technology_group	= north_gomic_tech_gr
 			add_country_modifier = {
 				name = "centralization_modifier"
 				duration = 7300
