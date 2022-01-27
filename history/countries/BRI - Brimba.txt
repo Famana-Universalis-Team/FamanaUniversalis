@@ -3,14 +3,14 @@ add_government_reform = native_clan_council_reform
 government_rank = 1
 mercantilism = 15
 technology_group = estal_tribal_tech_gr
-religion = animism
+religion = ordic
 primary_culture = Vamanyan
-capital = 5267	# change to real capital
+capital = 6356	#  real 
 
 200.1.1 = {
 	monarch = {
 		name = "Ordic"
-		dynasty = "Ordunek"
+		dynasty = "Vamus"
 		birth_date = 183.8.19
 		adm = 4
 		dip = 3
