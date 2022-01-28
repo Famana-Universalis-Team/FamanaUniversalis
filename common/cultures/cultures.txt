@@ -1337,17 +1337,6 @@ Qamon_C = {
 			Covut Aptgasen Kejerol Shol Wilonama Kenej Lasolil Bobaba Ryni Qadol Okiga Kerayaky Praur Zgask Aguk
     	}
 	}
-	Qarturan = {
-		male_names = {
-           	Akanara Karyna Agaran Kolor Dlina Kakorian Ofarok Kenitki Edgodra Boptol Oblogga Prykya Bogdan Zgaly Eyzdova Agaritah Angara
-    	}
-     	female_names = {
-         	Qantahya Lahaani Mosion Bahrana Rigz
-     	}
-      	dynasty_names = {
-			Covut Aptgasen Kejerol Shol Wilonama Kenej Lasolil Bobaba Ryni Qadol Okiga Kerayaky Praur Zgask Aguk
-    	}
-	}
 }
 
 #############################
@@ -1410,7 +1399,7 @@ Lukschan = {
 }
 
 ############################ 
-Oroman = {  #awesome name. if you don't like it could also be east qamon 
+Old_Agmagozi = {  #I changed it, sounds too much like irl Oromo, cope
 	Zektan = {  #In Arp Zektan would propably be in the Tomban group but here it makes more sense to put it here
 		male_names = {
             Tarutian Qaoonot Dondor Fubrut Tuzmur Araharag Reran Orfogogror Stupamandi Poneladhvi Aelro  Raan Okkottos Dunnoman Yonmar Qublait Summakatbi Ehheb 
@@ -1422,15 +1411,26 @@ Oroman = {  #awesome name. if you don't like it could also be east qamon
 			 Ourolome Karasannit Argiebreyvi Sambleka Boyandi Novvoz Quoalum Aebehb Rjugigam 
         }
 	}
+	Tairu = {
+		male_names = {
+            Tarutian Qaoonot Dondor Fubrut Tuzmur Araharag Reran Orfogogror Stupamandi Poneladhvi Aelro  Raan Okkottos Dunnoman Yonmar Qublait Summakatbi Ehheb
+        }
+        female_names = {
+            Kafsila Alne Sexa Taritia Arkakaee Shiontatt Urrvuz Saee
+        }
+        dynasty_names = {
+			Ourolome Karasannit Argiebreyvi Sambleka Boyandi Novvoz Quoalum Aebehb Rjugigam 
+        }
+	}
 	Catvilan = {
 		male_names = {
             Tarutian Qaoonot Dondor Fubrut Tuzmur Araharag Reran Orfogogror Stupamandi Poneladhvi Aelro  Raan Okkottos Dunnoman Yonmar Qublait Summakatbi Ehheb
         }
         female_names = {
-             Kafsila Alne Sexa Taritia Arkakaee Shiontatt Urrvuz Saee
+            Kafsila Alne Sexa Taritia Arkakaee Shiontatt Urrvuz Saee
         }
         dynasty_names = {
-			 Ourolome Karasannit Argiebreyvi Sambleka Boyandi Novvoz Quoalum Aebehb Rjugigam 
+			Ourolome Karasannit Argiebreyvi Sambleka Boyandi Novvoz Quoalum Aebehb Rjugigam 
         }
 	}
 	Klondori = {
@@ -1438,10 +1438,21 @@ Oroman = {  #awesome name. if you don't like it could also be east qamon
             Tarutian Qaoonot Dondor Fubrut Tuzmur Araharag Reran Orfogogror Stupamandi Poneladhvi Aelro  Raan Okkottos Dunnoman Yonmar Qublait Summakatbi Ehheb
         }
         female_names = {
-             Kafsila Alne Sexa Taritia Arkakaee Shiontatt Urrvuz Saee
+            Kafsila Alne Sexa Taritia Arkakaee Shiontatt Urrvuz Saee
         }
         dynasty_names = {
-			 Ourolome Karasannit Argiebreyvi Sambleka Boyandi Novvoz Quoalum Aebehb Rjugigam 
+			Ourolome Karasannit Argiebreyvi Sambleka Boyandi Novvoz Quoalum Aebehb Rjugigam 
+        }
+	}
+	Qarturan = { #Comical ARP reference
+		male_names = {
+            Tarutian Qaoonot Dondor Fubrut Tuzmur Araharag Reran Orfogogror Stupamandi Poneladhvi Aelro  Raan Okkottos Dunnoman Yonmar Qublait Summakatbi Ehheb
+        }
+        female_names = {
+            Kafsila Alne Sexa Taritia Arkakaee Shiontatt Urrvuz Saee
+        }
+        dynasty_names = {
+			Ourolome Karasannit Argiebreyvi Sambleka Boyandi Novvoz Quoalum Aebehb Rjugigam 
         }
 	}
 }
