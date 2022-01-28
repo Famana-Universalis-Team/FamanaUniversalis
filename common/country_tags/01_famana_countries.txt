@@ -50,9 +50,7 @@ NES = "countries/Nesrin.txt"
 CEL = "countries/Celzion.txt"
 YEN = "countries/YpEnnam.txt"
 KEN = "countries/KefEnnam.txt"
-ENN = "countries/Ennam.txt"
-
-#Natives
+#natives
 MID = "countries/Midazka.txt"
 YUS = "countries/Yuvas.txt"
 EQI = "countries/Equiso.txt"
@@ -68,8 +66,14 @@ MER = "countries/Mertel.txt"
 UFZ = "countries/Ufzue.txt"
 ANK = "countries/Ankoradia.txt"
 LEE = "countries/Leeto.txt"
-BRI = "countries/Brimba.txt"
+BRM = "countries/Brimba.txt"
 YON = "countries/Yondualk.txt"
+BOR = "countries/Borborea.txt"
+IKW = "countries/Ikuwik.txt"
+VRI = "countries/Vrimelkon.txt"
+BRO = "countries/Borrodaz.txt"
+BRY = "countries/Bryzema.txt"
+
 
 #pextovassals
 LOM = "countries/Lomea.txt"
@@ -459,3 +463,5 @@ GLD = "countries/Glaziod.txt"
 ORA = "countries/OraMalda.txt"
 NRV = "countries/Naravam.txt"
 MRR = "countries/Mirris.txt"
+VAM = "countries/Vamanya.txt"
+ENN = "countries/Ennam.txt"
