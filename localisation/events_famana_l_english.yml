@@ -358,7 +358,20 @@
  fce.1.d:0 "$CAPITAL_CITY$ was founded decades ago as an outpost of Moxon. Fundamentally, we are a nation of pioneers. Now that we are free from Maxan rule, perhaps we should continue our legacy and venture further inland."
  fce.1.a:0 "Estal will be ours!"
  call_of_the_frontier:0 "Call of the Frontier"
- 
+
+ #Vanoman Events
+ vanoma.1.t:0 "Pirates of Emtit Leave"
+ vanoma.1.desc:0 "Upset with the increased government presence on their isle of Emtit, the pirates who call the island home have jointly decided to abandon it. These marauding buccaneers have long plagued the waters of the Aresian Gulf, hijacking the region's trade and causing mayhem as far south as the shores of Bamal. Now, at long last, they appear to be leaving. Where to is not certain, but rumors say they are sailing for Irfa, an uninhabited island to the east of Emtik. We can do nothing but hope that they never return."
+ vanoma.1.a:0 "Let them take their business elsewhere."
+ vanoma_undisturbed_trade:0 "Undisturbed Trade"
+ emtit_exit:0 "Exit of the Emtiti Pirates"
+
+ #Naravami Events
+ naravam.2.t:0 "Threat of Annexation"
+ naravam.2.desc:0 "As Ordica grows ever stronger, the future of our nation seems increasingly bleak. If we do not act soon, we may be directly integrated into the Ordican Empire. Time is running out, and unless we do something Rdumkatvar is surely lost."
+ naravam.2.a:0 "Live to fight another day."
+ naravam.2.b:0 "We will not abandon our home."
+
  #Gaxal Flavor
  gaxalf.2.t:0 "The Beauty of Delk"
  gaxalf.2.d:0 "Miners in one of our provinces have found a cave filled to the brim with crystals. The priests insist on making it into a temple displaying the creations of our earth god, while the financial advisors propose moving the contents of the cave into the treasury."

@@ -176,6 +176,29 @@ maky_rebuilt = {
     republican_tradition = 0.20
 }
 
+emtit_exit = {
+    local_unrest = -5
+}
+
+vanoma_undisturbed_trade = {
+    trade_efficiency = 0.10
+}
+
+rdumkatvar_lib = {
+    liberty_desire = 50
+}
+
+rdum_fight = {
+    liberty_desire = 250
+    land_morale = 0.33
+    siege_ability = 0.25
+    global_manpower_modifier = 0.50
+}
+
+rdum_dev = {
+    development_cost = -0.33
+}
+
 achievement_from_the_ashes_modifier = {
 }
 
