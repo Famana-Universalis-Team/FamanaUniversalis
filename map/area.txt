@@ -90,11 +90,15 @@ arma_area = {
 }
 
 east_umzatia = {
-	5047 5046 5045 5053 5048
+	5046 5045 5043
+}
+
+goll_area = {
+	5047 5053 5048
 }
 
 umzat_bay = {
-	5044 5042 5040 5041 5043
+	5044 5042 5040 5041
 }
 
 effasha_area = {
@@ -110,11 +114,15 @@ lower_oppia_area = {
 }
 
 ponaa_area = {
-	5085 5084 5086 5230
+	5085 5084 5086
 }
 
 nuti_area = {
-	5097 5096 5100 5103
+	5100 5103 5094 5099 5102
+}
+
+arlentan_area = {
+	5122 5121 5120
 }
 
 lyposh_area = {
@@ -122,7 +130,7 @@ lyposh_area = {
 }
 
 atamsu_area = {
-	5094 5099 5102 5548 5095
+	5548 5095 5096 5097 5230
 }
 
 mesdool_area = {
@@ -134,7 +142,7 @@ elorak_area = {
 }
 
 gromash_area = {
-	5124 5128 5123 5125 5131
+	5124 5128 5123 5125
 }
 
 sosne_area = {
@@ -142,7 +150,7 @@ sosne_area = {
 }
 
 arlen_area = {
-	5122 5121 5120 5126 5119
+	5126 5119 5131
 }
 
 zne_area = {
@@ -150,11 +158,11 @@ zne_area = {
 }
 
 unnamed_area_7 = {
-	5118 5117 5113
+	5117 5113 5114
 }
 
 unnamed_area_8 = {
-	5114 5116 5115 5135
+	5116 5115 5135
 }
 
 vaximor_area = {
@@ -802,7 +810,7 @@ astom_area = {
 }
 
 heoki_area = {
-	5132 5127 5133
+	5132 5127 5133 5118
 }
 
 rishtokay_area = {
