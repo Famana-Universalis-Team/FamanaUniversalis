@@ -2045,6 +2045,148 @@ country_decisions = {
 			factor = 1
 		}
 	}
+	
+	ennam_nation = {
+		major = yes
+		potential = {
+			  
+			OR = {
+					TAG = YEN
+					TAG = KEN
+				}
+				NOT = { exists = ENN } 
+			
+					
+					
+					
+					
+		}
+		
+		provinces_to_highlight = {
+			OR = {
+				 	owned_by = YEN
+					owned_by = KEN
+			}
+			NOT = { owned_by = ROOT }
+			
+		}
+		allow = {
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			OR = {  
+					NOT = { exists = YEN }
+					NOT = { exists = KEN }
+				}
+			}
+		effect = {
+			restore_country_name = yes
+			change_tag = ENN
+			if = {
+				limit = {
+					AND = {
+						has_custom_ideas = no
+						NOT = {
+							has_idea_group = ENN_ideas
+						}
+					}
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
+			ennam_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 15
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	vamanya_nation = {
+		major = yes
+		potential = {
+			  NOT = { exists = VAM }
+			  primary_culture = Vamanyan
+					
+					
+					
+					
+		}
+		
+		provinces_to_highlight = {
+			culture = Vamanyan
+			NOT = { owned_by = ROOT }
+			
+		}
+		allow = {
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			owns_all_provinces = {
+			superregion = west_estal_superregion
+			culture = Vamanyan
+			}
+		}
+		effect = {
+			restore_country_name = yes
+			change_tag = VAM
+			if = {
+				limit = {
+					AND = {
+						has_custom_ideas = no
+						NOT = {
+							has_idea_group = VAM_ideas
+						}
+					}
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
+			vordor_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			napora_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			west_ordica_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 50
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
 
 
 	glaziod_nation = {
