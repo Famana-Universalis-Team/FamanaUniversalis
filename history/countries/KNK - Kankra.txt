@@ -1,0 +1,19 @@
+government = monarchy
+add_government_reform = autocracy_reform
+government_rank = 1
+mercantilism = 15
+technology_group = qamoni_tech_gr
+religion = dorroman
+primary_culture = Oblokelan
+capital = 1	# change to real capital
+
+200.1.1 = { #change to 200 or smth
+	monarch = {
+		name = "Regency"
+		dynasty = "Regency"
+		birth_date = 199.12.12
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
