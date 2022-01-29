@@ -315,9 +315,9 @@
  BER_ADJ: "Berasan"
  BER_ADJ2: "Berasan"
  
- BRI: "Brima"
- BRI_ADJ: "Briman"
- BRI_ADJ2: "Briman"
+ BRM: "Brima"
+ BRM_ADJ: "Briman"
+ BRM_ADJ2: "Briman"
  
  CEL: "Celzion"
  CEL_ADJ: "Celzioni"
@@ -394,6 +394,24 @@
  YUS: "Yuvas"
  YUS_ADJ: "Yuvasi"
  YUS_ADJ2: "Yuvasi"
+ 
+ BRY: "Ryzema"
+ BRY_ADJ: "Ryzeman"
+ BRY_ADJ2: "Ryzeman"
+ 
+ BRO: "Borrodaz"
+ BRO_ADJ: "Borrodazi"
+ BRO_ADJ2: "Borrodazi"
+ 
+ VRI: "Vrimelkon"
+ VRI_ADJ: "Vrimelkan"
+ VRI_ADJ2: "Vrimelkan"
+ 
+ BOR: "Borborea"
+ BOR_ADJ: "Borborean"
+ BOR_ADJ2: "Borborean"
+ 
+ 
  #------------Miris------------
 
  ZTT: "Zata"
@@ -1718,6 +1736,10 @@
  SYN: "Angolan Hyperprocessor"
  SYN_ADJ: "Angolan"
  SYN_ADJ2: "Angolan"
+ 
+ VAM: "Vamanya"
+ VAM_ADJ: "Vamanyan"
+ VAM_ADJ2: "Vamanyan"
 
  BAMAL_NAME: "Bamal"
  BAMAL_NAME_ADJ: "Bamali"

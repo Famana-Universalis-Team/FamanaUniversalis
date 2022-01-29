@@ -26,53 +26,72 @@ historical_units = {
 }
 
 monarch_names = {
-	"Torive Oij #0" = 1
-	"Wkóhwa Gob #0" = 1
-	"Foituód Lug #0" = 1
-	"Zeizhre Stun #0" = 1
-	"Raiwshair We #0" = 1
-	"Éoir Kos #0" = 1
-	"Jurafi Us #0" = 1
-	"Hjérè Lóm #0" = 1
-	"Ubkó Of #0" = 1
-	"Feiko Jiz #0" = 1
-	"Róreg Moir #0" = 1
-	"Lèkhjeir No #0" = 1
-	"Ato Gung #0" = 1
-	"Jéufeg É #0" = -1
-	"Garka Zhi #0" = -1
-	"Kojer Zhoi #0" = -1
-	"Róreg Moir #0" = -1
-	"Eitéb A #0" = -1
-	"Rairtó Vdèr #0" = -1
+	"Beroro #3" = -1
+	"Nai #0" = -1
+	"Mida #0" = -1
+	"Uge #0" = -1
+	"Imia #0" = -1
+	"Gilnia #0" = -1
+	"Uaizbia #0" = -1
+	"Kaiamau #0" = -1
+	"Ordic #0" = 1
+	"Berber #0" = 1
+	"Odalco #0" = 1
+	"Ozgici #0" = 1
+	"Niabiame #0" = 1
+	"Nuolme #1" = 1
+	"Natuydai #0" = 1
+	"Tordou #2" = 1
+	"Munai #2" = 1
+	"Gyagyi #0" = 1
+	"Oydoytu #0" = 1
+	"Gyedaitau #0" = 1
+	"Aiypaito #0" = 1
+	"Cenudai #3" = 1
+	"Noboai #0" = 1
+	"Aimiate #0" = 1
+	"Aulnauzmu #0" = 1
 }
 
 leader_names = {
-	"Torive Oij"
-	"Wkóhwa Gob"
-	"Foituód Lug"
-	"Zeizhre Stun"
-	"Raiwshair We"
-	"Éoir Kos"
-	"Jurafi Us"
-	"Hjérè Lóm"
-	"Ubkó Of"
-	"Feiko Jiz"
-	"Róreg Moir"
-	"Lèkhjeir No"
-	"Ato Gung"
+	Ordic
+	Berber
+	Odalco
+	Ozgici
+	Niabiame
+	Nuolme
+	Natuydai
+	Tordou
+	Munai
+	Gyagyi
+	Oydoytu
+	Gyedaitau
+	Aiypaito
+	Cenudai
+	Noboai
+	Aimiate
+	Aulnauzmu
 }
 
 ship_names = {
-	Hdgsgf
-	Ugdfsgidh
-	Hfeghjefg
+	Malgya
+	Munai
+	Imia
+	Gyagyi
+	Iau
+	Taio
+	Aygyu
+	Kuguno
+	Comugia
+	Nici
+	Urgyae
+	Nutunu
 }
 
 army_names = {
-	"Magay $PROVINCE$ Yuru" 
+	"Legion of $PROVINCE$" 
 }
 
 fleet_names = {
-	"Grand Navy"
+	"Great Navy"
 }
