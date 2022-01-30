@@ -19,7 +19,7 @@ country_event = {
     option = {
         name = geop.1.a
         ai_chance = { factor = 1 }
-        RDU = {
+        GEP = {
             add_country_modifier = { 
                 name = geop_kneecapping
                 duration = -1
