@@ -1155,6 +1155,7 @@ Ordic_C = {
         }
 	}
 }
+
 #############################
 Maldik = {
 	Maldikian = { #malding
@@ -1598,4 +1599,19 @@ Toman_C = { #Localise
 	}
 	
 }
+
 #############################
+Epilany = {
+	Kolyan = {
+		primary = KLY
+		male_names = {
+            Jean Louis Pierre Joseph Henr Marcel Georges André Paul René Charles Francois Emile Maurice
+        }
+        female_names = {
+            Marie Jeanne Marguerite Germaine Louise Yvonne Madeleine Suzanne
+        }
+        dynasty_names = {
+			Bourbon Capet Valois
+        }
+	}
+}
