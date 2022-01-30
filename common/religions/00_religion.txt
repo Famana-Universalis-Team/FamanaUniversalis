@@ -1129,7 +1129,27 @@ Agmagozi = {
 		}
 
 		heretic = {
-			TIKULSAN_H
+			OLD_AGMAGOZI
+		}
+
+		crusade_name = HOLY_WAR
+	}
+
+	agmagoz = { # Fix icons and colors
+		icon = 19
+		color = { 137 221 193 }
+
+		country = {
+			heir_chance = 1
+			num_accepted_cultures = 1
+		}
+		country_as_secondary = {
+			ae_impact = -0.1
+			years_of_nationalism = -5
+		}
+
+		heretic = {
+			QANOYAN DORROMAN TOMBASA
 		}
 
 		crusade_name = HOLY_WAR
