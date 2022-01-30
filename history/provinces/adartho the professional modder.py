@@ -1,10 +1,10 @@
-
-import os
+import glob, os
 
 def main():
-  for filename in os.listdir(os.getcwd()):
-    with open(os.path.join(os.getcwd(), filename), 'r') as f:
-      data = f.read
+  os.chdir(os.getcwd())
+  for filename in glob.glob("*.txt"):
+    with open(filename, 'r', encoding="iso8859-1") as f:
+      data = f.read()
       data = data.replace("discovered_by = eastern","")
       data = data.replace("discovered_by = ottoman","")
       data = data.replace("discovered_by = muslim","")
@@ -19,8 +19,8 @@ def main():
       data = data.replace("discovered_by = south_american","")
       data = data.replace("discovered_by = north_american","")
       data = data.replace("discovered_by = mesoamerican","")
-    with open(os.path.join(os.getcwd(), filename), 'w') as f:
+    with open(filename, 'w', encoding="iso8859-1") as f:
       f.write(data)
 
-if __name__ == __main__:
+if __name__ == "__main__":
   main()
