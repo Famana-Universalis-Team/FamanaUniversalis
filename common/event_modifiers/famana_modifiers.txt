@@ -199,6 +199,10 @@ rdum_dev = {
     development_cost = -0.33
 }
 
+geop_kneecapping = {
+    stability_cost_to_declare_war = 3
+}
+
 achievement_from_the_ashes_modifier = {
 }
 
