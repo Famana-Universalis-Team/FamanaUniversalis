@@ -296,6 +296,18 @@ Jasuan = {
 			Las Ama Stas Tino Kipi Estaz Yutus Eramel Stas Verakol-Erzas
 		}
     }
+	Ghaloyan = {
+		primary = GHA
+		male_names = {
+			Maro Ma'je Ma'bo Fella Engum Ma'ju Oama Sihari Astrazna
+		}
+		female_names = {
+			Maro Yuni Ezeldi
+		}
+		dynasty_names = {
+			Las Ama Stas Tino Kipi Estaz Yutus Eramel Stas Verakol-Erzas
+		}
+    }
 	West_Jasuan = {
 		primary = KIN
 		male_names = {
@@ -308,8 +320,31 @@ Jasuan = {
 			Las Amar Stas Tinu Kipir Estat Yotus Ermel Tushlos Restema Stas
 		}
     }
-	Oppio_Jasuan = {
+	Mikledonian = {
+		male_names = {
+			Orro Heum Fellares Kanunin Yamoszy Unahtare Eyath Ayorn Beroge Anel Horfi Paro Jekelekim Fovers Makei Astrazna
+		}
+		female_names = {
+			Maro Yuni Delan Ezeldi
+		}
+		dynasty_names = {
+			Las Amar Stas Tinu Kipir Estat Yotus Ermel Tushlos Restema Stas
+		}
+    }
+	Yabonian = {
 		primary = YAB
+		male_names = {
+			Orro Heum Fellares Kanunin Yamoszy Unahtare Eyath Ayorn Beroge Anel Horfi Paro Jekelekim Fovers
+		}
+		female_names = {
+			Maro Yuni Delan
+		}
+		dynasty_names = {
+			Las Amar Stas Tinu Kipir Estat Yotus Ermel Tushlos Restema 
+		}
+    }
+	Geteri = {
+		primary = GET
 		male_names = {
 			Orro Heum Fellares Kanunin Yamoszy Unahtare Eyath Ayorn Beroge Anel Horfi Paro Jekelekim Fovers
 		}
@@ -483,6 +518,17 @@ Hoxoi = {
 			Arli Sare Zene Eta Arliv Alzat Radalf Netro Ossan Alcus Vantan Gamel Litrosa Enstaf
 		}
 	}
+	Oppio_Jasuan = {
+		male_names = {
+			Orro Heum Fellares Kanunin Yamoszy Unahtare Eyath Ayorn Beroge Anel Horfi Paro Jekelekim Fovers
+		}
+		female_names = {
+			Maro Yuni Delan
+		}
+		dynasty_names = {
+			Las Amar Stas Tinu Kipir Estat Yotus Ermel Tushlos Restema 
+		}
+    }
 }
 
 #############################
@@ -1159,6 +1205,18 @@ Komelwaiti = {
 		}
 		dynasty_names = {
 			Leop Mokep Tiji Popi Op Moni Persi "Veyu U"
+		}
+	}
+	Callan = {
+		primary = CLL
+		male_names = {
+			Zomb Iste Smire Vaizay Srezal Veitizme Menegyl Neffirrin Elluz
+		}
+		female_names = {
+			Yerm Steret Fystene
+		}
+		dynasty_names = {
+			Stiko Kuijz Okmli Aeste Meliyel
 		}
 	}
 }
