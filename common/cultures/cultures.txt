@@ -1110,6 +1110,7 @@ Ordic_C = {
         }
 	}
 	Yuvlan = {
+		primary = KAM
 		male_names = {
             Ordic Berber Odalco Ozgici Niabiame Nuolme Natuydai Tordou Munai Gyagyi Oydoytu Gyedaitau Aiypaito Cenudai Noboai Aimiate Aulnauzmu
         }
@@ -1121,6 +1122,7 @@ Ordic_C = {
         }
 	}
 	Vamanyan = {
+		primary = VAM
 		male_names = {
             Ordic Berber Odalco Ozgici Niabiame Nuolme Natuydai Tordou Munai Gyagyi Oydoytu Gyedaitau Aiypaito Cenudai Noboai Aimiate Aulnauzmu
         }
@@ -1144,6 +1146,7 @@ Ordic_C = {
         }
 	}
 	East_Ordican = {
+		primary = CEL
 		male_names = {
             Oddic Bebbe Oduro Oggic Nabama Num Natur Dord Man Gyag Oddutu Geditur Apart Gyenda Lobonai Amart Almazumm
         }
@@ -1165,7 +1168,8 @@ Ordic_C = {
 			Mar Mora Kyemat Gyez Maya Mogur Bortu Kayar Kag Mayar Tor Ufipar
         }
 	}
-	Tolan = { #better name
+	Tolan = {
+		primary = TOL
 		male_names = {
             Oddic Bebbe Oduro Oggic Nabama Num Natur Dord Man Gyag Oddutu Geditur Apart Gyenda Lobonai Amart Almazumm
         }

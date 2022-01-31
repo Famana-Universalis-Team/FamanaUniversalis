@@ -2276,8 +2276,15 @@ country_decisions = {
 		major = yes
 		potential = {
 			AND = {
-				tag = ALT
+				culture = Tolan
 				NOT = { exists = TOL }
+				NOT = {
+					OR = {
+						tag = YEN
+						tag = KEN
+						tag = ENN
+					}
+				}
 				was_never_end_game_tag_trigger = yes
 			}
 		}
