@@ -16,22 +16,3 @@ capital = "Estephex"
 is_city = yes
 extra_cost = 1
 center_of_trade = 1
-
-culture = Opmaki
-religion = gadan
-owner = ESP
-controller = ESP
-add_core = ESP
-
-###
-
-hre = no
-
-base_tax = 2
-base_production = 4
-trade_goods = fish
-base_manpower = 3
-capital = "UNNAMED"
-is_city = yes
-extra_cost = 1
-

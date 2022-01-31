@@ -2120,23 +2120,21 @@ country_decisions = {
 		potential = {
 			  NOT = { exists = VAM }
 			  primary_culture = Vamanyan
-					
-					
-					
-					
 		}
 		
 		provinces_to_highlight = {
 			culture = Vamanyan
 			NOT = { owned_by = ROOT }
-			
 		}
 		allow = {
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
 			owns_all_provinces = {
-			superregion = west_estal_superregion
-			culture = Vamanyan
+				superregion = west_estal_superregion
+				culture = Vamanyan
+			}
+			NOT = {
+				government = native
 			}
 		}
 		effect = {
@@ -2295,11 +2293,9 @@ country_decisions = {
 			}
 			OR = {
 				NOT = { owned_by = ROOT }
-		
 			}
 		}
 		allow = {
-			
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
 				owns_core_province = 6183
@@ -2309,35 +2305,34 @@ country_decisions = {
 				owns = 6179
 				owns = 6180
 				owns = 6178
-			
 		}
 		effect = {
 			restore_country_name = yes
 			change_tag = TOL
 			
 			6177 = {
-			add_claim = ROOT
+				add_claim = ROOT
 			}
 			dotz_area = {
-			add_claim = ROOT
+				add_claim = ROOT
 			}
 			poto_haroo_area = {
-			add_claim = ROOT
+				add_claim = ROOT
 			}
 			ennam_area = {
-			add_claim = ROOT
+				add_claim = ROOT
 			}
 			bortur_area = {
-			limit = { owned_by = ROOT  }
-			add_core = ROOT
+				limit = { owned_by = ROOT  }
+				add_core = ROOT
 			}
 			alo_tramo_area = {
-			limit = {  owned_by = ROOT }
-			add_core = ROOT
+				limit = {  owned_by = ROOT }
+				add_core = ROOT
 			}
 			dotz_area = {
-			limit = {  owned_by = ROOT }
-			add_core = ROOT
+				limit = {  owned_by = ROOT }
+				add_core = ROOT
 			}
 			if = {
 				limit = {
@@ -2345,9 +2340,6 @@ country_decisions = {
 				}
 				set_government_rank = 2
 			}
-			
-			
-			
 			add_country_modifier = {
 				name = "centralization_modifier"
 				duration = 7300

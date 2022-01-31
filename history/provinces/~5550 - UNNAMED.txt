@@ -1,0 +1,19 @@
+#Written with Eu4 Easy Province Creator by emiroercn
+#UNNAMED
+ 
+culture = Arlentan
+religion = western_oppian
+hre = no
+
+base_tax = 2
+base_production = 3
+trade_goods = naval_supplies
+base_manpower = 3
+capital = "Sosne"
+is_city = yes
+extra_cost = 1
+  
+
+owner = OSS
+controller = OSS
+add_core = OSS
