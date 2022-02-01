@@ -1,3 +1,4 @@
+discovered_by = west_gomic_tech_gr
 culture = Glasian
 religion = vinian
 owner = JXS
@@ -8,10 +9,10 @@ add_core = JXS
 
 hre = no
 
-base_tax = 2
+base_tax = 3
 base_production = 3
 trade_goods = glass
-base_manpower = 2
+base_manpower = 3
 capital = "Meclikoon"
 is_city = no
 extra_cost = 1
