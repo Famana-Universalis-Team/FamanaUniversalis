@@ -961,7 +961,7 @@ Gotzlic = {
 }
 
 #############################
-Nafan = { #unifinished
+Pustian = { #get a better name (nafan no longer fits)
 	Kachik = {
 		primary = RCK
 		male_names = {
@@ -985,10 +985,7 @@ Nafan = { #unifinished
 			Syadon Nolladon Ayim Kalar Eltru Deev
 		}
     }
-}
-#############################
-	Pustian	= { #Gorfrek was Aresian #You could merge this with Kachik 
-	Relvi = {
+	Relvi = { #decided to merge this with nafan beacuse Kachik would look weird otherwise
 		male_names = {
 			Alexandru Radu Vlad Constantin Mihail Mircea George Grigore Mihnea Nicolae Besarab Vladislav Mattia 
 			Radu Ilias Scarlat Stefan Dan Alexandru Ilias Gabriel Ioan George Leon Moise Neagoie Besarab 
@@ -1090,8 +1087,10 @@ Nafan = { #unifinished
 			Kogalniceanu Movilesti Syadonesti Noyiscu
 		}
 	}
+
 }
 
+	
 #############################
 Western_Estali = { #unfinished
 	Feniki = {
