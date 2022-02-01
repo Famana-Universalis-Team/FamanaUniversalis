@@ -1,0 +1,19 @@
+culture = Geteri
+religion = egr
+owner = YAB
+controller = YAB
+add_core = YAB
+add_core = GET
+add_core = HLM
+###
+
+hre = no
+
+base_tax = 2
+base_production = 1
+trade_goods = livestock
+base_manpower = 2
+capital = "Holom"
+is_city = no
+extra_cost = 1
+
