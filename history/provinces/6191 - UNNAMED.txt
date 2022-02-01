@@ -1,3 +1,4 @@
+discovered_by = west_gomic_tech_gr
 #Written with Eu4 Easy Province Creator by emiroercn
 #UNNAMED
 culture = Nahallaian
@@ -8,7 +9,10 @@ base_production = 1
 trade_goods = grain
 base_manpower = 1
 capital = "UNNAMED"
-is_city = yes
+is_city = no
+native_size = 30
+native_ferocity = 4
+native_hostileness = 1
 
 discovered_by = estal_tribal_tech_gr
 

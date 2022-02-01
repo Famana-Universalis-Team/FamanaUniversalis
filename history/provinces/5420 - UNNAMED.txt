@@ -1,3 +1,4 @@
+discovered_by = west_gomic_tech_gr
 culture = Glasian
 religion = vinian
 owner = JXS
@@ -7,12 +8,12 @@ add_core = JXS
 ###
 
 hre = no
-discovered_by = western
+
 base_tax = 4
-base_production = 5
+base_production = 4
 trade_goods = livestock
-base_manpower = 5
-capital = "UNNAMED"
+base_manpower = 4
+capital = "Jexskomel"
 is_city = yes
 extra_cost = 1
 

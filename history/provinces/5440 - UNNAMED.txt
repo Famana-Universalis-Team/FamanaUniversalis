@@ -1,3 +1,4 @@
+discovered_by = west_gomic_tech_gr
 culture = Glasian
 religion = vinian
 owner = ALM
@@ -7,12 +8,12 @@ add_core = ALM
 ###
 
 hre = no
-discovered_by = western
+
 base_tax = 4
 base_production = 5
 trade_goods = grain
 base_manpower = 2
-capital = "UNNAMED"
+capital = "Yabu"
 is_city = yes
 extra_cost = 1
 

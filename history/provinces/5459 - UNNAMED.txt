@@ -1,4 +1,5 @@
-culture = Sixany
+discovered_by = west_gomic_tech_gr
+culture = Callan
 religion = vinian
 owner = CLL
 controller = CLL
@@ -7,11 +8,11 @@ add_core = CLL
 ###
 
 hre = no
-discovered_by = western
+
 base_tax = 4
 base_production = 3
 trade_goods = fish
 base_manpower = 3
-capital = "UNNAMED"
+capital = "Atikos"
 is_city = no
 extra_cost = 1

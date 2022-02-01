@@ -296,6 +296,18 @@ Jasuan = {
 			Las Ama Stas Tino Kipi Estaz Yutus Eramel Stas Verakol-Erzas
 		}
     }
+	Ghaloyan = {
+		primary = GHA
+		male_names = {
+			Maro Ma'je Ma'bo Fella Engum Ma'ju Oama Sihari Astrazna
+		}
+		female_names = {
+			Maro Yuni Ezeldi
+		}
+		dynasty_names = {
+			Las Ama Stas Tino Kipi Estaz Yutus Eramel Stas Verakol-Erzas
+		}
+    }
 	West_Jasuan = {
 		primary = KIN
 		male_names = {
@@ -308,8 +320,31 @@ Jasuan = {
 			Las Amar Stas Tinu Kipir Estat Yotus Ermel Tushlos Restema Stas
 		}
     }
-	Oppio_Jasuan = {
+	Mikledonian = {
+		male_names = {
+			Orro Heum Fellares Kanunin Yamoszy Unahtare Eyath Ayorn Beroge Anel Horfi Paro Jekelekim Fovers Makei Astrazna
+		}
+		female_names = {
+			Maro Yuni Delan Ezeldi
+		}
+		dynasty_names = {
+			Las Amar Stas Tinu Kipir Estat Yotus Ermel Tushlos Restema Stas
+		}
+    }
+	Yabonian = {
 		primary = YAB
+		male_names = {
+			Orro Heum Fellares Kanunin Yamoszy Unahtare Eyath Ayorn Beroge Anel Horfi Paro Jekelekim Fovers
+		}
+		female_names = {
+			Maro Yuni Delan
+		}
+		dynasty_names = {
+			Las Amar Stas Tinu Kipir Estat Yotus Ermel Tushlos Restema 
+		}
+    }
+	Geteri = {
+		primary = GET
 		male_names = {
 			Orro Heum Fellares Kanunin Yamoszy Unahtare Eyath Ayorn Beroge Anel Horfi Paro Jekelekim Fovers
 		}
@@ -483,6 +518,17 @@ Hoxoi = {
 			Arli Sare Zene Eta Arliv Alzat Radalf Netro Ossan Alcus Vantan Gamel Litrosa Enstaf
 		}
 	}
+	Oppio_Jasuan = {
+		male_names = {
+			Orro Heum Fellares Kanunin Yamoszy Unahtare Eyath Ayorn Beroge Anel Horfi Paro Jekelekim Fovers
+		}
+		female_names = {
+			Maro Yuni Delan
+		}
+		dynasty_names = {
+			Las Amar Stas Tinu Kipir Estat Yotus Ermel Tushlos Restema 
+		}
+    }
 }
 
 #############################
@@ -1064,6 +1110,7 @@ Ordic_C = {
         }
 	}
 	Yuvlan = {
+		primary = KAM
 		male_names = {
             Ordic Berber Odalco Ozgici Niabiame Nuolme Natuydai Tordou Munai Gyagyi Oydoytu Gyedaitau Aiypaito Cenudai Noboai Aimiate Aulnauzmu
         }
@@ -1075,6 +1122,7 @@ Ordic_C = {
         }
 	}
 	Vamanyan = {
+		primary = VAM
 		male_names = {
             Ordic Berber Odalco Ozgici Niabiame Nuolme Natuydai Tordou Munai Gyagyi Oydoytu Gyedaitau Aiypaito Cenudai Noboai Aimiate Aulnauzmu
         }
@@ -1097,7 +1145,31 @@ Ordic_C = {
 			Mar Mora Kyemat Gyez Maya Mogur Bortu Kayar Kag Mayar Tor Ufipar
         }
 	}
-	East_Ordican = { #better name
+	East_Ordican = {
+		primary = CEL
+		male_names = {
+            Oddic Bebbe Oduro Oggic Nabama Num Natur Dord Man Gyag Oddutu Geditur Apart Gyenda Lobonai Amart Almazumm
+        }
+        female_names = {
+            Barat Nai Mida Ukke Imia Galann Utaizbilin Kalanamau
+        }
+        dynasty_names = {
+			Mar Mora Kyemat Gyez Maya Mogur Bortu Kayar Kag Mayar Tor Ufipar
+        }
+	}
+	Dlosnim = {
+		male_names = {
+            Oddic Bebbe Oduro Oggic Nabama Num Natur Dord Man Gyag Oddutu Geditur Apart Gyenda Lobonai Amart Almazumm
+        }
+        female_names = {
+            Barat Nai Mida Ukke Imia Galann Utaizbilin Kalanamau
+        }
+        dynasty_names = {
+			Mar Mora Kyemat Gyez Maya Mogur Bortu Kayar Kag Mayar Tor Ufipar
+        }
+	}
+	Tolan = {
+		primary = TOL
 		male_names = {
             Oddic Bebbe Oduro Oggic Nabama Num Natur Dord Man Gyag Oddutu Geditur Apart Gyenda Lobonai Amart Almazumm
         }
@@ -1109,6 +1181,7 @@ Ordic_C = {
         }
 	}
 }
+
 #############################
 Maldik = {
 	Maldikian = { #malding
@@ -1159,6 +1232,18 @@ Komelwaiti = {
 		}
 		dynasty_names = {
 			Leop Mokep Tiji Popi Op Moni Persi "Veyu U"
+		}
+	}
+	Callan = {
+		primary = CLL
+		male_names = {
+			Zomb Iste Smire Vaizay Srezal Veitizme Menegyl Neffirrin Elluz
+		}
+		female_names = {
+			Yerm Steret Fystene
+		}
+		dynasty_names = {
+			Stiko Kuijz Okmli Aeste Meliyel
 		}
 	}
 }
@@ -1540,4 +1625,19 @@ Toman_C = { #Localise
 	}
 	
 }
+
 #############################
+Epilany = {
+	Kolyan = {
+		primary = KLY
+		male_names = {
+            Jean Louis Pierre Joseph Henr Marcel Georges André Paul René Charles Francois Emile Maurice
+        }
+        female_names = {
+            Marie Jeanne Marguerite Germaine Louise Yvonne Madeleine Suzanne
+        }
+        dynasty_names = {
+			Bourbon Capet Valois
+        }
+	}
+}

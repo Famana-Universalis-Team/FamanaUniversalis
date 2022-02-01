@@ -1,3 +1,4 @@
+discovered_by = west_gomic_tech_gr
 culture = Xofkan
 religion = lathvy
 owner = VNS
@@ -7,12 +8,12 @@ add_core = VNS
 ###
 
 hre = no
-discovered_by = western
+
 base_tax = 2
 base_production = 3
 trade_goods = fish
 base_manpower = 2
-capital = "UNNAMED"
+capital = "Vensa"
 is_city = yes
 extra_cost = 1
 

@@ -1,3 +1,4 @@
+discovered_by = west_gomic_tech_gr
 culture = Glasian
 religion = vinian
 owner = VSX
@@ -7,12 +8,12 @@ add_core = VSX
 ###
 
 hre = no
-discovered_by = western
+
 base_tax = 2
 base_production = 3
 trade_goods = grain
 base_manpower = 3
-capital = "UNNAMED"
+capital = "Vesuxa"
 is_city = no
 extra_cost = 1
 center_of_trade = 2

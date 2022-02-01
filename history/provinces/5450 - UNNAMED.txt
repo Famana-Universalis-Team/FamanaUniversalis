@@ -1,3 +1,5 @@
+
+discovered_by = west_gomic_tech_gr
 culture = Glasian
 religion = vinian
 owner = JXS
@@ -7,12 +9,12 @@ add_core = JXS
 ###
 
 hre = no
-discovered_by = western
+
 base_tax = 6
 base_production = 5
 trade_goods = cloth
 base_manpower = 4
-capital = "UNNAMED"
+capital = "Jexus"
 is_city = yes
 extra_cost = 1
 center_of_trade = 1
