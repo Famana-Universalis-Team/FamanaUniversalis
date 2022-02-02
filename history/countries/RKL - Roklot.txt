@@ -5,9 +5,9 @@ mercantilism = 10
 technology_group = east_gomic_tech_gr
 religion = eastern_oppian
 primary_culture = Hoxan
-capital = 5174	# change to real capital
+capital = 5174
 
-200.1.1 = { #change to 200 or smth
+205.2.1 = {
 	monarch = {
 		name = "Gamefan"
 		dynasty = "Enstaf"
@@ -15,5 +15,7 @@ capital = 5174	# change to real capital
 		adm = 3
 		dip = 5
 		mil = 5
+		leader = {	name = "Gamefan Enstaf"            	type = general	fire = 5	shock = 6	manuever = 5	siege = 4}
 	}
+	add_ruler_personality = inspiring_leader_personality
 }

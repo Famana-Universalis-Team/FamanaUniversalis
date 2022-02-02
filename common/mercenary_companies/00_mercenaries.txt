@@ -270,10 +270,7 @@ merc_hasian = {
 		}
 	}
 	modifier = {
-		land_morale = 0.33
 		shock_damage = 0.50
-		shock_damage_received = -0.50
-		fire_damage_received = 0.25
 		reinforce_speed = -0.50
 	}
 }

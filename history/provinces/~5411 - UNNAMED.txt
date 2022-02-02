@@ -1,0 +1,24 @@
+discovered_by = west_gomic_tech_gr
+culture = Morian_C
+religion = morian
+owner = ALM
+controller = ALM
+add_core = ALM
+add_core = MRS
+
+###
+
+hre = no
+
+base_tax = 6
+base_production = 8
+trade_goods = iron
+base_manpower = 8
+capital = "Morsum"
+is_city = yes
+extra_cost = 1
+fort_15th = yes
+add_province_triggered_modifier = religious_center
+
+culture = Morian_C
+religion = morian

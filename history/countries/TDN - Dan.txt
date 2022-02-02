@@ -16,5 +16,6 @@ capital = 1    # change to real capital
         dynasty = "Slovak"
 		set_ruler_flag = cursed
         birth_date = 165.6.2
+        leader = {	name = "Dan the Great"            	type = general	fire = 10	shock = 10	manuever = 10	siege = 10 }
     }
 }

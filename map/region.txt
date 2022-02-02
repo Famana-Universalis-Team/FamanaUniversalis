@@ -19,6 +19,73 @@ north_great_sea_region = {
 		naravami_sea
 		vamanyan_sea
 		olivinar_sea
+		gacin_sea
+	}
+}
+
+south_great_ocean_region = {
+	areas = {
+		sunset_sea
+		sakan_bight
+		sea_of_lisin
+	}
+}
+
+hasmal_seas_region = {
+	areas = {
+		avzazi_sea
+		sea_of_vishma
+		dovi_sea
+	}
+}
+
+southern_ocean_region = {
+	areas = {
+		golden_sea
+		yashmaku_sea
+		bong_sea
+	}
+}
+
+qamoni_seas_region = {
+	areas = {
+		ekelan_sea
+		chonusan_sea
+	}
+}
+
+greater_toman_sea_region = {
+	areas = {
+		toman_sea
+		sea_of_seflara
+	}
+}
+
+stormseye_ocean_region = {
+	areas = {
+		sea_of_gosi
+		southern_stormeseye_ocean
+		northern_stormseye_ocean
+	}
+}
+
+akrori_ocean_region = {
+	areas = {
+		northwest_eastern_ocean
+		sea_of_bhilis
+	}
+}
+
+vanoman_sea = {
+	areas = {
+		aresian_gulf
+		sea_of_fashrana
+	}
+}
+
+lukscha_sea_region = {
+	areas = {
+		lukscha_sea
 	}
 }
 
@@ -26,9 +93,7 @@ north_great_sea_region = {
 
 outer_region = {
 	areas = {
-		seflara_area
 		kruli_area
-		lisin_area
 	}
 }
 
