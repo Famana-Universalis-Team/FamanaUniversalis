@@ -141,6 +141,7 @@ stabilise_republic_reform = {
 	effect = {
 		lose_reforms = 4
 		change_government = republic
+		set_country_flag = maky_stabilization
 	}
 	ai = {
 		factor = 1
@@ -166,13 +167,14 @@ stabilise_monarchy_reform = {
 	effect = {
 		lose_reforms = 4
 		change_government = monarchy
+		set_country_flag = maky_stabilization
+	}
+	ai = {
+		factor = 1
 		modifier = {
 			tag = VAX
 			factor = 0.5
 		}
-	}
-	ai = {
-		factor = 1
 	}
 }
 
@@ -190,6 +192,7 @@ stabilise_theocracy_reform = {
 	effect = {
 		lose_reforms = 4
 		change_government = theocracy
+		set_country_flag = maky_stabilization
 	}
 	ai = {
 		factor = 1

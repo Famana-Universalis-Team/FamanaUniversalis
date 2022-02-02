@@ -12,6 +12,7 @@ country_event = {
 	picture = FARMING_eventPicture
 
 	trigger = {
+		has_country_flag = maky_stabilization
 		AND = {
 			NOT = { has_country_flag = had_maky.3 }
 			AND = {
@@ -38,6 +39,7 @@ country_event = {
 	}
 	immediate = {
 		set_country_flag = had_maky.3
+		clr_country_flag = maky_stabilization
 	}
 	mean_time_to_happen = {
 		months = 1
