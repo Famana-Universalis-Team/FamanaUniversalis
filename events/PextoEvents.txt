@@ -143,6 +143,7 @@ country_event = {
     picture = RELIGIOUS_TURMOIL_eventPicture
 	trigger = {
 		has_country_flag = pextocivilwar
+		NOT = { has_country_flag = had_particularists }
 	}
 
 	mean_time_to_happen = {
@@ -158,6 +159,7 @@ country_event = {
 				}
 			}
 		}
+		set_country_flag = had_particularists
 	}
 
     option = {
@@ -174,6 +176,7 @@ country_event = {
     picture = RELIGIOUS_TURMOIL_eventPicture
 	trigger = {
 		has_country_flag = pextocivilwar
+		NOT = { has_country_flag = second_wave_unrest }
 	}
 	major = yes
 	fire_only_once = yes
@@ -199,6 +202,7 @@ country_event = {
 				id = pexto.9
 			}
 			log = "fired civil war"
+			set_country_flag = second_wave_unrest
 		}
 	}
 
@@ -477,6 +481,39 @@ country_event = { #ordican claims
 }
 
 country_event = { #bye bye pexto
+    id = pexto.16
+    title = pexto.16.t
+    desc = pexto.16.d
+    picture = LAND_MILITARY_eventPicture
+	mean_time_to_happen = {
+		months = 1
+	}
+	trigger = {
+		AND = {
+			exists = POM
+			has_country_flag = pextocivilwar
+			NOT = {
+				tag = PEX
+				controls = 5337
+			}
+			all_owned_province = {
+				limit = {
+					NOT = {
+						controlled_by = PEX
+					}
+				}
+			}
+		}
+	}
+    option = {
+		name = pexto.16.a
+        ai_chance = { factor = 1 }
+		5337 = { cede_province = POM }
+		POM = { set_capital = 5337 }
+    }
+}
+
+country_event = { #bye bye pexto
     id = pexto.14
     title = pexto.14.t
     desc = pexto.14.d
@@ -490,7 +527,6 @@ country_event = { #bye bye pexto
 			has_country_flag = pextocivilwar
 		}
 	}
-
     option = {
 		name = pexto.14.a
         ai_chance = { factor = 1 }
