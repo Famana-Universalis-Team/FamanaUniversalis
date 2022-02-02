@@ -4,6 +4,7 @@ religion = lathvy
 owner = PLM
 controller = PLM
 add_core = PLM
+add_core = XRL
 
 ###
 
@@ -13,7 +14,7 @@ base_tax = 2
 base_production = 3
 trade_goods = fur
 base_manpower = 2
-capital = "Gohir"
+capital = "Xarelda"
 is_city = no
 extra_cost = 1
 

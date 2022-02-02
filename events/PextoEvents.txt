@@ -21,7 +21,7 @@ country_event = {
 
     option = {
 		add_war_exhaustion = 4
-        name = pexto.1.a
+        name = pexto.1.b
         ai_chance = { factor = 1 }
 		stability = -3
 		add_estate_loyalty = {
@@ -46,7 +46,7 @@ country_event = {
     }
     option = {
 		add_war_exhaustion = 4
-        name = pexto.1.b
+        name = pexto.1.a
         ai_chance = { factor = 1 }
 		stability = -3
 		add_estate_loyalty = {
@@ -458,9 +458,16 @@ country_event = { #ordican claims
 		months = 10
 	}
 	trigger = {
+		NOT = { ORC = { has_country_flag = ordica_claims }}
 		AND = {
 			tag = PEX
 			has_country_flag = pextocivilwar
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			ORC = { set_country_flag = ordica_claims }
 		}
 	}
 
@@ -480,7 +487,7 @@ country_event = { #ordican claims
     }
 }
 
-country_event = { #bye bye pexto
+country_event = {
     id = pexto.16
     title = pexto.16.t
     desc = pexto.16.d
