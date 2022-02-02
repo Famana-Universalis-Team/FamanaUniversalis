@@ -1,4 +1,124 @@
 
+Ekelan_ideas = {
+	start = {
+		land_morale = 0.10
+		capture_ship_chance = 0.25
+	}
+	
+	bonus = {
+		merchants = 1
+	}
+
+	trigger = {
+		OR = {
+			primary_culture = Oblokelan
+			primary_culture = Arakelan
+		}
+	}
+	free = yes
+	
+	Ekelan_resist = {
+		defensiveness = 0.15
+	}
+	Ekelan_jungle = {
+		hostile_attrition = 1
+	}
+	Ekelan_trad = {
+		global_unrest = -1
+		religious_unity = 0.15
+	}
+	Ekelan_sea = {
+		navy_tradition = 1
+		global_ship_cost = -0.10
+	}
+	Ekelan_diplo = {
+		diplomatic_upkeep = 1
+	}
+	Ekelan_gods = {
+		legitimacy = 1
+	}
+	Ekelan_royal = {
+		advisor_pool = 1
+	}
+}
+
+Kakori_ideas = {
+	start = {
+		global_trade_power = 0.10
+		light_ship_cost = -0.20
+	}
+	
+	bonus = {
+		trade_efficiency = 0.10
+	}
+
+	trigger = {
+		primary_culture = Kakori
+	}
+	free = yes
+	
+	Kakori_piracy = {
+		may_perform_slave_raid_on_same_religion = yes
+	}
+	Kakori_unity = {
+		religious_unity = 0.20
+	}
+	Kakori_menace = {
+		privateer_efficiency = 0.33
+	}
+	Kakori_pirate = {
+		stability_cost_modifier = -0.10
+	}
+	Kakori_nav = {
+		naval_attrition = -0.50
+		burghers_loyalty_modifier = 0.05
+	}
+	Kakori_oath = {
+		diplomatic_annexation_cost = -0.20
+	}
+	Kakori_rule = {
+		embargo_efficiency = 0.25
+	}
+}
+
+Alavyas_ideas = {
+	start = {
+		merchants = 1
+		mil_tech_cost_modifier = -0.10
+	}
+	
+	bonus = {
+		cavalry_power = 0.10
+	}	
+
+	trigger = {
+		primary_culture = Alavyas
+	}
+	free = yes
+	
+	Alavyas_what = {
+		idea_cost = -0.05
+	}
+	Alavyas_delta = {
+		trade_goods_size_modifier = 0.10
+	}
+	Alavyas_nilifo = {
+		global_ship_cost = -0.33
+	}
+	Alavyas_boroz = {
+		legitimacy = 1
+	}
+	Alavyas_qamoni = {
+		advisor_cost = -0.10
+	}
+	Alavyas_umuvara = {
+		trade_efficiency = 0.10
+	}
+	Alavyas_guarding = {
+		light_ship_power = 0.15
+	}
+}
+
 Mirrisan_ideas = {
 	start = {
 		hostile_attrition = 1

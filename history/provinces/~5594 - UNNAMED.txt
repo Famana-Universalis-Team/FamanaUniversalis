@@ -1,0 +1,19 @@
+culture = Yabonian
+religion = egr
+owner = YAB
+controller = YAB
+add_core = YAB
+add_core = NOG
+
+###
+
+hre = no
+
+base_tax = 4
+base_production = 2
+trade_goods = grain
+base_manpower = 2
+capital = "Aen Tran"
+is_city = no
+extra_cost = 1
+

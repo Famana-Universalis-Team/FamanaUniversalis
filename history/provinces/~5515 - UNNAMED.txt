@@ -1,0 +1,19 @@
+culture = Bamali_C
+religion = bamali
+owner = BMF
+controller = BMF
+add_core = BMF
+
+###
+
+hre = no
+
+base_tax = 4
+base_production = 3
+trade_goods = fish
+base_manpower = 4
+capital = "Ventul"
+is_city = yes
+center_of_trade = 1
+extra_cost = 1
+
