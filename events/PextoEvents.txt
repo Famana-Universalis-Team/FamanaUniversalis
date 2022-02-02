@@ -487,46 +487,13 @@ country_event = { #ordican claims
     }
 }
 
-country_event = {
-    id = pexto.16
-    title = pexto.16.t
-    desc = pexto.16.d
-    picture = LAND_MILITARY_eventPicture
-	mean_time_to_happen = {
-		months = 1
-	}
-	trigger = {
-		AND = {
-			exists = POM
-			has_country_flag = pextocivilwar
-			NOT = {
-				tag = PEX
-				controls = 5337
-			}
-			all_owned_province = {
-				limit = {
-					NOT = {
-						controlled_by = PEX
-					}
-				}
-			}
-		}
-	}
-    option = {
-		name = pexto.16.a
-        ai_chance = { factor = 1 }
-		5337 = { cede_province = POM }
-		POM = { set_capital = 5337 }
-    }
-}
-
 country_event = { #bye bye pexto
     id = pexto.14
     title = pexto.14.t
     desc = pexto.14.d
     picture = LAND_MILITARY_eventPicture
 	mean_time_to_happen = {
-		years = 3
+		years = 7
 	}
 	trigger = {
 		AND = {
@@ -537,7 +504,22 @@ country_event = { #bye bye pexto
     option = {
 		name = pexto.14.a
         ai_chance = { factor = 1 }
-		collapse_nation = yes
+		ROOT = {
+			release_all_subjects = yes
+			release	= RNP
+			release = FST
+			release = REN
+			release = KRH
+			release = PLM
+			release = LOM
+			release = GNZ
+			release = PLK
+			release = NPX
+			release = POM
+		}
+		west_estal_superregion = {
+			remove_core	= PEX
+		}
     }
 }
 
@@ -552,13 +534,13 @@ country_event = { #DIE ALREADY
 	fire_only_once = yes
 
 	mean_time_to_happen = {
-		years = 5
+		years = 4
 	}
 
 	immediate = {
 		hidden_effect = {
-			collapse_nation = yes
-			add_war_exhaustion = 5
+			add_war_exhaustion = 10
+			add_stability = -5
 			#spawn rebels. only works through events like this for some reason
 			country_event = { 
 				id = pexto.7
@@ -596,6 +578,6 @@ country_event = { #DIE ALREADY
     option = {
         name = pexto.5.a
         ai_chance = { factor = 1 }
+		add_prestige = -100
     }
 }
-
