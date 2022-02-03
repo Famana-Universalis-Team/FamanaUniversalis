@@ -2357,4 +2357,223 @@ country_decisions = {
 			factor = 1
 		}
 	}
+
+	miris_nation = {
+		major = yes
+		potential = {
+			AND = {
+				culture = Mirrisan
+				was_never_end_game_tag_trigger = yes
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 5264
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+			}
+		}
+		allow = {
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			owns_core_province = 5264
+			num_of_owned_provinces_with = {
+				value = 20
+				culture = Mirrisan
+			}
+		}
+		effect = {
+			restore_country_name = yes
+			change_tag = MRR
+			set_capital = 5264
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
+			all_province = {
+				limit = {
+					culture = Mirrisan
+				}
+				add_permanent_claim = MRR
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	nevia_nation = {
+		major = yes
+		potential = {
+			AND = {
+				culture = Nevian
+				was_never_end_game_tag_trigger = yes
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 5312
+				province_id = 5345
+				province_id = 5308
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+			}
+		}
+		allow = {
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			owns_core_province = 5312
+			owns_core_province = 5345
+			owns_core_province = 5308
+		}
+		effect = {
+			restore_country_name = yes
+			change_tag = NVI
+			set_capital = 5312
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
+			unnamed_pexto_4 = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = NVI
+			}
+			porlam_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = NVI
+			}
+			unnamed_pexto_2 = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = NVI
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	hozy_nation = {
+		major = yes
+		potential = {
+			AND = {
+				culture = Hozyan
+				was_never_end_game_tag_trigger = yes
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 6546
+				province_id = 6547
+				province_id = 6548
+				province_id = 6549
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+			}
+		}
+		allow = {
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			owns_core_province = 6546
+			owns_core_province = 6547
+			owns_core_province = 6548
+			owns_core_province = 6549
+		}
+		effect = {
+			restore_country_name = yes
+			change_tag = HZY
+			set_capital = 6546
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	gotzlic_nation = {
+		major = yes
+		potential = {
+			AND = {
+				culture_group = Gotzlic
+				was_never_end_game_tag_trigger = yes
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 6546
+				province_id = 6584
+				province_id = 6587
+				province_id = 6536
+				province_id = 6597
+				culture_group = Gotzlic
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+			}
+		}
+		allow = {
+			adm_tech = 20
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			owns_core_province = 6546
+			owns_core_province = 6584
+			owns_core_province = 6587
+			owns_core_province = 6536
+			owns_core_province = 6597
+			num_of_owned_provinces_with = {
+				value = 50
+				culture_group = Gotzlic
+			}
+		}
+		effect = {
+			restore_country_name = yes
+			change_tag = GTZ
+			if = {
+				limit = {
+					NOT = { government_rank = 3 }
+				}
+				set_government_rank = 3
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 50
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
 }
