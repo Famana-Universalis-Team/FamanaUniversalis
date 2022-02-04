@@ -350,6 +350,12 @@ country_event = {
 	}
 	immediate = {
 		hidden_effect = {
+			feyel_area = {
+				discover_country = LAG
+			}
+			unnamed_area_23 = {
+				discover_country = LAG
+			}
 			5028 = {
 				change_religion = lathvy
 			}
