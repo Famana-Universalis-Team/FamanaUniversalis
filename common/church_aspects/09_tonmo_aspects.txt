@@ -44,15 +44,14 @@ recruit_warlord_aspect = {
 hold_war_ceremonies_aspect = {
 	sprite = "GFX_dissolve_monasteries_icon"
 	cost = 200
+	trigger = {
+		NOT = { mil_power = 900}
+	}
 	effect = {
 		add_mil_power = 100
 	}
 	ai_will_do = {
 		factor = 2
-		modifier = {
-			factor = 0
-			mil_power = 900
-		}
 	}
 }
 
@@ -71,5 +70,28 @@ raise_horde_aspect = {
 			factor = 0.5
 			manpower_percentage	= 0.75
 		}
+	}
+}
+
+spread_tonmo_aspect = {
+	sprite = "GFX_dissolve_monasteries_icon"
+	cost = 100
+	trigger = {
+		any_rival_country = {
+			NOT = {
+				religion = tonmo
+			}
+		}
+	}
+	effect = {
+		hidden_effect = {
+			random_rival_country = {
+				add_stability = -1
+			}
+		}
+		custom_tooltip = spread_tonmo_aspect_tooltip
+	}
+	ai_will_do = {
+		factor = 1
 	}
 }
