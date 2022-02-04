@@ -2362,6 +2362,7 @@ country_decisions = {
 		major = yes
 		potential = {
 			AND = {
+				NOT = { exists = MRR }
 				culture = Mirrisan
 				was_never_end_game_tag_trigger = yes
 			}
@@ -2369,17 +2370,19 @@ country_decisions = {
 		provinces_to_highlight = {
 			OR = {
 				province_id = 5264
+				culture = Mirrisan
 			}
 			OR = {
 				NOT = { owned_by = ROOT }
 			}
 		}
 		allow = {
+			adm_tech = 10
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
 			owns_core_province = 5264
 			num_of_owned_provinces_with = {
-				value = 20
+				value = 10
 				culture = Mirrisan
 			}
 		}
@@ -2393,9 +2396,9 @@ country_decisions = {
 				}
 				set_government_rank = 2
 			}
-			all_province = {
+			west_estal_region = {
 				limit = {
-					culture = Mirrisan
+					NOT = { owned_by = ROOT }
 				}
 				add_permanent_claim = MRR
 			}
@@ -2414,6 +2417,7 @@ country_decisions = {
 		major = yes
 		potential = {
 			AND = {
+				NOT = { exists = NVI}
 				culture = Nevian
 				was_never_end_game_tag_trigger = yes
 			}
@@ -2478,6 +2482,7 @@ country_decisions = {
 		major = yes
 		potential = {
 			AND = {
+				NOT = { exists = HZY }
 				culture = Hozyan
 				was_never_end_game_tag_trigger = yes
 			}
@@ -2526,6 +2531,7 @@ country_decisions = {
 		major = yes
 		potential = {
 			AND = {
+				NOT = { exists = MRR }
 				culture_group = Gotzlic
 				was_never_end_game_tag_trigger = yes
 			}
@@ -2537,7 +2543,6 @@ country_decisions = {
 				province_id = 6587
 				province_id = 6536
 				province_id = 6597
-				culture_group = Gotzlic
 			}
 			OR = {
 				NOT = { owned_by = ROOT }
@@ -2565,6 +2570,12 @@ country_decisions = {
 					NOT = { government_rank = 3 }
 				}
 				set_government_rank = 3
+			}
+			gotzlic_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = GTZ
 			}
 			add_country_modifier = {
 				name = "centralization_modifier"
