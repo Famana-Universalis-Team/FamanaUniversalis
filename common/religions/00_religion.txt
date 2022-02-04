@@ -1214,6 +1214,13 @@ tonmo_group = {
             movement_speed = 0.05
             cav_to_inf_ratio = 0.10
         }
+
+		uses_anglican_power = yes
+		aspects = {
+			call_chiefs_aspect
+		}
+
+		aspects_name = TONMO_ASPECTS
         
         heretic = { QYDIAN }
         crusade_name = HOLY_WAR

@@ -1,0 +1,75 @@
+call_chiefs_aspect = {
+	sprite = "GFX_dissolve_monasteries_icon"
+	cost = 200
+	trigger = {
+		is_at_war = yes
+	}
+	effect = {
+		country_event = {
+			id = tonmo.1
+		}
+	}
+	ai_will_do = {
+		factor = 3
+		modifier = {
+			factor = 10
+			at_war_with_religious_enemy = yes
+		}
+	}
+}
+
+recruit_warlord_aspect = {
+	sprite = "GFX_dissolve_monasteries_icon"
+	cost = 100
+	effect = {
+		create_general = { tradition = 40 }
+	}
+	ai_will_do = {
+		factor = 2
+		modifier = {
+			factor = 0.75
+			num_of_generals	= 3
+		}
+		modifier = {
+			factor = 0.25
+			num_of_generals = 4
+		}
+		modifier = {
+			factor = 0
+			num_of_generals	= 5
+		}
+	}
+}
+
+hold_war_ceremonies_aspect = {
+	sprite = "GFX_dissolve_monasteries_icon"
+	cost = 200
+	effect = {
+		add_mil_power = 100
+	}
+	ai_will_do = {
+		factor = 2
+		modifier = {
+			factor = 0
+			mil_power = 900
+		}
+	}
+}
+
+raise_horde_aspect = {
+	sprite = "GFX_dissolve_monasteries_icon"
+	cost = 100
+	trigger = {
+		NOT = { manpower_percentage	= 0.90 }
+	}
+	effect = {
+		add_yearly_manpower = 0.50
+	}
+	ai_will_do = {
+		factor = 3
+		modifier = {
+			factor = 0.5
+			manpower_percentage	= 0.75
+		}
+	}
+}
