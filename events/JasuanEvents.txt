@@ -241,6 +241,11 @@ country_event = {
 	is_triggered_only = yes
 	major = yes
 	
+	trigger = {
+	any_owned_province = {
+	culture = Kachik
+	}
+	
 	option = {
 		name = jasuaE.7.a
 		ai_chance = { factor = 1 }

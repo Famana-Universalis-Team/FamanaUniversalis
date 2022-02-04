@@ -22,8 +22,14 @@ collapse_of_pextoglazia = {
 			war_exhaustion = 5
 	    }
         modifier = {
-            factor = 10
-            defensive_war_with = ORC
+            factor = 1
+            AND = {
+                has_disaster_progress = {
+	                disaster = collapse_of_pextoglazia
+	                value = 75
+                }
+                defensive_war_with = ORC
+            }
         }
     }
 
@@ -42,7 +48,6 @@ collapse_of_pextoglazia = {
                 }
             }
             is_at_war = no
-            AND = { crown_land_share = estate_church crown_land_share = estate_nobles }
         }
     }
 
