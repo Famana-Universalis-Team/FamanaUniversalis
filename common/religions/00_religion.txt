@@ -1218,6 +1218,9 @@ tonmo_group = {
 		uses_anglican_power = yes
 		aspects = {
 			call_chiefs_aspect
+			recruit_warlord_aspect
+			hold_war_ceremonies_aspect
+			raise_horde_aspect
 		}
 
 		aspects_name = TONMO_ASPECTS

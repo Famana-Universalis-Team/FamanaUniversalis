@@ -268,7 +268,7 @@ country_event = { #minorities event
         }
     }
 
-	option = { 
+	option = {
 		name = pextodis.7.b
         ai_chance = { factor = 1 }
         add_disaster_progress = {

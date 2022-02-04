@@ -63,7 +63,7 @@ raise_horde_aspect = {
 		NOT = { manpower_percentage	= 0.90 }
 	}
 	effect = {
-		add_yearly_manpower = 0.50
+		add_yearly_manpower = 2.0
 	}
 	ai_will_do = {
 		factor = 3
