@@ -100,7 +100,10 @@ country_event = {
     desc = pexto.3.d
     picture = BATTLE_eventPicture
 	trigger = {
-		has_country_flag = pextocivilwar
+        has_disaster_progress = {
+	        disaster = collapse_of_pextoglazia
+	        value = 95
+        }
 	}
 
 	mean_time_to_happen = {
@@ -448,45 +451,6 @@ country_event = {
     }
 }
 
-
-country_event = { #ordican claims
-    id = pexto.13
-    title = pexto.13.t
-    desc = pexto.13.d
-    picture = LIBERUM_VETO_eventPicture
-	mean_time_to_happen = {
-		months = 10
-	}
-	trigger = {
-		NOT = { ORC = { has_country_flag = ordica_claims }}
-		AND = {
-			tag = PEX
-			has_country_flag = pextocivilwar
-		}
-	}
-
-	immediate = {
-		hidden_effect = {
-			ORC = { set_country_flag = ordica_claims }
-		}
-	}
-
-    option = {
-		name = pexto.13.a
-        ai_chance = { factor = 1 }
-		every_province = {
-			limit = {
-				OR = {
-					province_id = 5347
-					area = mofemi_morsum_area
-					area = unnamed_pexto_1
-				}
-			}
-			add_permanent_claim = ORC
-		}
-    }
-}
-
 country_event = { #bye bye pexto
     id = pexto.14
     title = pexto.14.t
@@ -579,5 +543,100 @@ country_event = { #DIE ALREADY
         name = pexto.5.a
         ai_chance = { factor = 1 }
 		add_prestige = -100
+    }
+}
+
+country_event = { #20%
+    id = pexto.16
+    title = pexto.16.t
+    desc = pexto.16.d
+    picture = LIBERUM_VETO_eventPicture
+    fire_only_once = yes
+    major = yes
+	mean_time_to_happen = {
+		months = 1
+	}
+	trigger = {
+        has_disaster_progress = {
+	        disaster = collapse_of_pextoglazia
+	        value = 20
+        }
+	}
+
+    option = {
+		name = pexto.16.a
+        ai_chance = { factor = 1 }
+		add_country_modifier = { 
+    		name = inner_turmoil_20
+    		duration = -1  
+		}
+    }
+}
+
+country_event = { #60%
+    id = pexto.17
+    title = pexto.17.t
+    desc = pexto.17.d
+    picture = LIBERUM_VETO_eventPicture
+    fire_only_once = yes
+    major = yes
+	mean_time_to_happen = {
+		months = 1
+	}
+	trigger = {
+        has_disaster_progress = {
+	        disaster = collapse_of_pextoglazia
+	        value = 60
+        }
+	}
+
+    option = {
+		name = pexto.17.a
+        ai_chance = { factor = 1 }
+		add_country_modifier = { 
+    		name = inner_turmoil_50
+    		duration = -1  
+		}
+    }
+}
+
+country_event = { #85% (generals defect)
+    id = pexto.18
+    title = pexto.18.t
+    desc = pexto.18.d
+    picture = LIBERUM_VETO_eventPicture
+    fire_only_once = yes
+    major = yes
+	mean_time_to_happen = {
+		months = 1
+	}
+	trigger = {
+        has_disaster_progress = {
+	        disaster = collapse_of_pextoglazia
+	        value = 85
+        }
+	}
+
+    option = {
+		name = pexto.18.a
+        ai_chance = { factor = 1 }
+		kill_leader = {
+		    type = general
+		}
+    }
+
+	option = {
+		name = pexto.18.b
+        ai_chance = { factor = 1 }
+		change_estate_land_share = {
+   			estate = estate_nobles
+    		share = 10
+		}
+		add_estate_influence_modifier = {
+    		estate = estate_nobles
+    		desc = GENERAL_PRIVILIGES
+    		influence = 15
+    		duration = -1
+		}
     }
 }

@@ -203,6 +203,22 @@ geop_kneecapping = {
     stability_cost_to_declare_war = 3
 }
 
+inner_turmoil_20 = {
+    church_influence_modifier = 0.1
+    stability_cost_modifier = 0.5
+    nobles_influence_modifier = 0.1
+    global_manpower_modifier = -0.25
+    global_autonomy = 0.05
+}
+
+inner_turmoil_60 = {
+    church_influence_modifier = 0.2
+    stability_cost_modifier = 1
+    nobles_influence_modifier = 0.2
+    global_manpower_modifier = -0.5
+    global_autonomy = 0.1
+}
+
 achievement_from_the_ashes_modifier = {
 }
 
