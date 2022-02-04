@@ -1,0 +1,36 @@
+
+van_1 = {
+    slot = 1
+    generic = no
+    ai = yes
+    potential = {
+        NOT = { map_setup = map_setup_random }
+		tag = VAN
+    }
+    has_country_shield = yes
+
+    van_develop_montava = {
+        icon = secure_the_republic
+        required_missions = { }
+        trigger = {
+            5669 = {
+                development = 25
+            }
+        }
+        effect = {
+            add_splendor = 250
+            add_stability = 1
+        }
+    }
+
+    van_technological_advantage = {
+        icon = mission_early_modern_university
+        required_missions = { van_develop_montava }
+        trigger = {
+            innovativeness = 30
+        }
+        effect = {
+            add_adm_tech = 1
+        }
+    }
+}
