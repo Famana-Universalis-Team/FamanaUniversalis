@@ -2157,6 +2157,12 @@ country_decisions = {
 				}
 				set_government_rank = 2
 			}
+			if = {
+				limit = {
+					religion = lathvy
+				}
+				change_technology_group	= north_gomic_tech_gr
+			}
 			vordor_region = {
 				limit = {
 					NOT = { owned_by = ROOT }
@@ -2392,11 +2398,23 @@ country_decisions = {
 			set_capital = 5264
 			if = {
 				limit = {
+					religion = lathvy
+				}
+				change_technology_group	= north_gomic_tech_gr
+			}
+			if = {
+				limit = {
 					NOT = { government_rank = 2 }
 				}
 				set_government_rank = 2
 			}
 			west_estal_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = MRR
+			}
+			umzat_islands_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
