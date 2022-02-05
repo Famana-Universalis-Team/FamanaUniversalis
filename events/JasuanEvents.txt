@@ -18,15 +18,14 @@ country_event = {
 		}
 		OR = {
 			5729 = {
-					is_empty = yes
-				}
+				is_empty = yes
+			}
 			5727 = {
-					is_empty = yes
-				}
+				is_empty = yes
+			}
 			5627 = {
-					is_empty = yes
-				}
-			
+				is_empty = yes
+			}
 		}
 		NOT = {
 			BLK = { total_development = 180 }
@@ -47,6 +46,11 @@ country_event = {
 				add_core = FAS
 			}
 			unnamed_area_37 = {
+				limit = { owned_by = BLK }
+				cede_province = FAS
+				add_core = FAS
+			}
+			yenis_area = {
 				limit = { owned_by = BLK }
 				cede_province = FAS
 				add_core = FAS
@@ -89,8 +93,7 @@ country_event = {
 	mean_time_to_happen = {
 		months = 200
 	}
-	immediate = {
-	}
+
 	option = {
 		name = jasuaE.2.a
 		ai_chance = { factor = 8 }
@@ -101,14 +104,21 @@ country_event = {
 			duration = 3650
 		}
 		change_religion = lathvy
+		hidden_effect = {
+			set_country_flag = lathvy_question_flag
+		}
 	}
 	option = {
 		name = jasuaE.2.b
+		hidden_effect = {
+			set_country_flag = lathvy_question_flag
+		}
 		add_prestige = 20
 		add_country_modifier = {
 			name = "outdated_heretic"
 			duration = 1825
 		}
+		
 		ai_chance = { factor = 2 }
 	}
 }
