@@ -1,0 +1,162 @@
+namespace = pextolaunch
+
+country_event = {
+    id = pextolaunch.1
+    title = pextolaunch.1.t
+    desc = pextolaunch.1.d
+    picture = LIBERUM_VETO_eventPicture
+    hidden = yes
+	trigger = {
+        tag = PEX
+        if = {
+            limit = {
+                check_variable = { which = pex_collapse_progress value = 80 }
+            }
+            always = no #no more events
+        }
+        else_if = {
+            limit = {
+                is_variable_equal = { which = pex_collapse_progress value = 70 }
+            }
+            has_disaster_progress = {
+                disaster = collapse_of_pextoglazia
+                value = 80
+            }
+        }
+        else_if = {
+            limit = {
+                is_variable_equal = { which = pex_collapse_progress value = 60 }
+            }
+            has_disaster_progress = {
+                disaster = collapse_of_pextoglazia
+                value = 70
+            }
+        }
+        else_if = {
+            limit = {
+                is_variable_equal = { which = pex_collapse_progress value = 50 }
+            }
+            has_disaster_progress = {
+                disaster = collapse_of_pextoglazia
+                value = 60
+            }
+        }
+        else_if = {
+            limit = {
+                is_variable_equal = { which = pex_collapse_progress value = 40 }
+            }
+            has_disaster_progress = {
+                disaster = collapse_of_pextoglazia
+                value = 50
+            }
+        }
+        else_if = {
+            limit = {
+                is_variable_equal = { which = pex_collapse_progress value = 30 }
+            }
+            has_disaster_progress = {
+                disaster = collapse_of_pextoglazia
+                value = 40
+            }
+        }
+        else_if = {
+            limit = {
+                is_variable_equal = { which = pex_collapse_progress value = 20 }
+            }
+            has_disaster_progress = {
+                disaster = collapse_of_pextoglazia
+                value = 30
+            }
+        }
+        else_if = {
+            limit = {
+                is_variable_equal = { which = pex_collapse_progress value = 10 }
+            }
+            has_disaster_progress = {
+                disaster = collapse_of_pextoglazia
+                value = 20
+            }
+        }
+        else = {
+            has_disaster_progress = {
+                disaster = collapse_of_pextoglazia
+                value = 10
+            }
+        }
+    }
+
+    immediate = {
+        change_variable = { which = pex_collapse_progress value = 10 }
+        random_list  = {
+            12 = {
+                trigger = { NOT = { has_country_flag = had_pextodis_4 } }
+                country_event = {
+                    id = pextodis.4
+                    days = 30
+                    random = 30
+                }
+            }
+            12 = {
+                trigger = { NOT = { has_country_flag = had_pextodis_5 } }
+                country_event = {
+                    id = pextodis.5
+                    days = 30
+                    random = 30
+                }
+            }
+            12 = {
+                trigger = { NOT = { has_country_flag = had_pextodis_6 } }
+                country_event = {
+                    id = pextodis.6
+                    days = 30
+                    random = 30
+                }
+            }
+            12 = {
+                trigger = { NOT = { has_country_flag = had_pextodis_7 } }
+                country_event = {
+                    id = pextodis.7
+                    days = 30
+                    random = 30
+                }
+            }
+            12 = {
+                trigger = { NOT = { has_country_flag = had_pextodis_8 } }
+                country_event = {
+                    id = pextodis.8
+                    days = 30
+                    random = 30
+                }
+            }
+            12 = {
+                trigger = { NOT = { has_country_flag = had_pextodis_9 } }
+                country_event = {
+                    id = pextodis.9
+                    days = 30
+                    random = 30
+                }
+            }
+            12 = {
+                trigger = { NOT = { has_country_flag = had_pextodis_10 } }
+                country_event = {
+                    id = pextodis.10
+                    days = 30
+                    random = 30
+                }
+            }
+            12 = {
+                trigger = { NOT = { has_country_flag = had_pextodis_11 } }
+                country_event = {
+                    id = pextodis.11
+                    days = 30
+                    random = 30
+                }
+            }
+        }
+    }
+
+    option = {
+		name = pextolaunch.1.a 
+        ai_chance = { factor = 1 }
+    }
+}
