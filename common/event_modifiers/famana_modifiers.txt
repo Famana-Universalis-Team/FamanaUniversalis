@@ -237,6 +237,13 @@ pexto_purge_advisors = {
     advisor_pool = -1
 }
 
+pexto_purge_no_advisors = {
+    technology_cost = 0.1
+    idea_cost = 0.15
+    advisor_cost = 0.5
+    advisor_pool = -1
+}
+
 pexto_cultural_autonomy = {
     local_autonomy = 0.1
     local_governing_cost = 1

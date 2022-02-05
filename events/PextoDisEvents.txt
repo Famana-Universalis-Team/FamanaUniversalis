@@ -11,6 +11,7 @@ country_event = { #20%
 		months = 1
 	}
 	trigger = {
+        tag = PEX
         has_disaster_progress = {
 	        disaster = collapse_of_pextoglazia
 	        value = 20
@@ -38,6 +39,7 @@ country_event = { #60%
 		months = 1
 	}
 	trigger = {
+        tag = PEX
         has_disaster_progress = {
 	        disaster = collapse_of_pextoglazia
 	        value = 60
@@ -66,6 +68,7 @@ country_event = { #85% (generals defect)
 		months = 1
 	}
 	trigger = {
+        tag = PEX
         has_disaster_progress = {
 	        disaster = collapse_of_pextoglazia
 	        value = 85
@@ -315,6 +318,11 @@ country_event = { #corrupt court
     option = {
 		name = pextodis.8.a
         ai_chance = { factor = 0 }
+        trigger = { has_advisor = yes }
+        add_disaster_progress = {
+            disaster = collapse_of_pextoglazia
+            value = -5
+        }
         remove_advisor_by_category = ADM
         remove_advisor_by_category = DIP
         remove_advisor_by_category = MIL
@@ -322,14 +330,24 @@ country_event = { #corrupt court
             name = pexto_purge_advisors
             duration = -1
         }
+    }
+
+    option = {
+		name = pextodis.8.b
+        ai_chance = { factor = 0 }
+        trigger = { NOT = { has_advisor = yes} }
         add_disaster_progress = {
             disaster = collapse_of_pextoglazia
             value = -5
         }
+        add_country_modifier = {
+            name = pexto_purge_no_advisors
+            duration = -1
+        }
     }
 
 	option = { 
-		name = pextodis.8.b
+		name = pextodis.8.c
         ai_chance = { factor = 1 }
         add_corruption = 2
     }

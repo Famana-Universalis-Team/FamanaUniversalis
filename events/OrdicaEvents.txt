@@ -11,6 +11,7 @@ country_event = { #ordican claims 90%
 		months = 10
 	}
 	trigger = {
+		tag = ORC
         PEX = {
             has_disaster_progress = {
 	            disaster = collapse_of_pextoglazia
@@ -29,7 +30,7 @@ country_event = { #ordican claims 90%
 					province_id = 5347
 					area = mofemi_morsum_area
 					area = unnamed_pexto_1
-					area = unnamed_area_24
+					area = unnamed_pexto_14
 				}
 			}
 			add_permanent_claim = ORC
