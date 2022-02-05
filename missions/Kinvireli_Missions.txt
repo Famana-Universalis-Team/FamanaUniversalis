@@ -1,0 +1,114 @@
+
+kin_1 = {
+    slot = 1
+    generic = no
+    ai = yes
+    potential = {
+        NOT = { map_setup = map_setup_random }
+		tag = KIN
+    }
+    has_country_shield = yes
+
+    kin_theory_of_helvania = {
+        icon = expand_the_confederacy
+        required_missions = { }
+        trigger = {
+        }
+        effect = {
+        }
+    }
+
+    kin_stabilize_the_realm = {
+        icon = reform_the_state
+        required_missions = { kin_theory_of_helvania }
+        trigger = {
+        }
+        effect = {
+        }
+    }
+    
+    kin_the_grand_helvania = {
+        icon = promote_urbanization
+        required_missions = { kin_stabilize_the_realm }
+        trigger = {
+        }
+        effect = {
+        }
+    }
+}
+
+kin_2 = {
+    slot = 2
+    generic = no
+    ai = yes
+    potential = {
+        NOT = { map_setup = map_setup_random }
+		tag = KIN
+    }
+    has_country_shield = yes
+
+    kin_the_lathvy_question = {
+        icon = subiaco_press
+        required_missions = { }
+        trigger = {
+        }
+        effect = {
+        }
+    }
+
+    kin_the_one_true_faith = {
+        icon = mission_hands_praying
+        required_missions = { kin_the_lathvy_question }
+        trigger = {
+        }
+        effect = {
+        }
+    }
+    
+    kin_jasuan_religious_unity = {
+        icon = mission_dominate_trade_in_bengal
+        required_missions = { kin_the_one_true_faith }
+        trigger = {
+        }
+        effect = {
+        }
+    }
+}
+
+kin_3 = {
+    slot = 3
+    generic = no
+    ai = yes
+    potential = {
+        NOT = { map_setup = map_setup_random }
+		tag = KIN
+    }
+    has_country_shield = yes
+
+    kin_expel_mahansha = {
+        icon = imperial_navy
+        required_missions = { }
+        trigger = {
+        }
+        effect = {
+        }
+    }
+
+    kin_defeat_zoblotra = {
+        icon = prosper_in_piedmont
+        required_missions = { kin_expel_mahansha }
+        trigger = {
+        }
+        effect = {
+        }
+    }
+    
+    kin_establish_coffee_monopoly = {
+        icon = mission_portuguese_malabar
+        required_missions = { kin_defeat_zoblotra }
+        trigger = {
+        }
+        effect = {
+        }
+    }
+}
