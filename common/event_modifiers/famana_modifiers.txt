@@ -271,3 +271,36 @@ kin_jasua_reforged = {
 kin_coffee_boom = {
     trade_goods_size = 1.0
 }
+
+kin_jasuan_resilience = {
+    land_morale = 0.10
+}
+
+kin_kinvirel_bonus = {
+    province_trade_power_value = 25
+    trade_goods_size = 0.50
+}
+
+kin_sponsored_merchants = {
+    global_ship_trade_power = 0.25
+    trade_efficiency = 0.15
+}
+
+kin_trade_mission = {
+    trade_steering = 0.20
+    global_trade_power = 0.1
+}
+
+kin_helvania_theory = {
+    republican_tradition = 0.25
+    reform_progress_growth = 0.1
+}
+
+kin_grand_helvania = {
+    max_absolutism = 25
+}
+
+kin_jasuan_piety = {
+	local_tax_modifier = 0.1
+    local_development_cost = -0.1
+}
