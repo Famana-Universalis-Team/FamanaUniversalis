@@ -6,12 +6,12 @@ collapse_of_pextoglazia = {
 	}
 	can_start = {
         has_any_disaster = no
-        is_year = 215
+        is_year = 212
     }
 	progress = {
         modifier = {
-            factor = 0.12
-            is_year = 215
+            factor = 1.2
+            is_year = 212
         }
         modifier = {
             factor = 0.25
@@ -33,7 +33,7 @@ collapse_of_pextoglazia = {
         }
     }
 
-	can_stop = { }
+	can_stop = { has_any_disaster = yes }
 
 	can_end = {
         AND = {
