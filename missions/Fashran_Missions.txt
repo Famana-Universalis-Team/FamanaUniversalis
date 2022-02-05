@@ -37,7 +37,7 @@ fashros_military = {
 	has_country_shield = yes
 	
 	defence_of_fashros = {
-		icon = fashros_wheels	
+		icon = fashros_assemble_an_army
 		required_missions = { }
 		position = 1
 		trigger = {
