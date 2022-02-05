@@ -219,6 +219,42 @@ inner_turmoil_60 = {
     global_autonomy = 0.1
 }
 
+pexto_granted_city_rights = {
+    min_autonomy = 15
+}
+
+pexto_cowardice = {
+    global_manpower_modifier = -0.33
+}
+
+pexto_vassal_priviliges = {
+    vassal_forcelimit_bonus = -0.33
+    vassal_income = -0.33
+}
+
+pexto_purge_advisors = {
+    advisor_cost = 0.5
+    advisor_pool = -1
+}
+
+pexto_purge_no_advisors = {
+    technology_cost = 0.1
+    idea_cost = 0.15
+    advisor_cost = 0.5
+    advisor_pool = -1
+}
+
+pexto_cultural_autonomy = {
+    local_autonomy = 0.1
+    local_governing_cost = 1
+    local_manpower_modifier = -0.5
+}
+
+glazian_cities = {
+    local_tax_modifier = -0.1
+    trade_goods_size_modifier = -0.1
+}
+
 achievement_from_the_ashes_modifier = {
 }
 
@@ -226,4 +262,12 @@ achievement_servant_of_delk_modifier = {
 }
 
 achievement_diaspora_modifier = {
+}
+
+kin_jasua_reforged = {
+    administrative_efficiency = 0.05
+}
+
+kin_coffee_boom = {
+    trade_goods_size = 1.0
 }

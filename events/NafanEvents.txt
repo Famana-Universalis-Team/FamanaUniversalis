@@ -1,4 +1,4 @@
-namespace = nafa 
+namespace = nafa.j
 
 country_event = {
     id = nafa.j.1
@@ -18,7 +18,6 @@ country_event = {
     option = {
         name = nafa.j.1.a
 		add_country_modifier = { name = "jzoet_help" duration = -1 }
-
         }
-    
+    }
 }

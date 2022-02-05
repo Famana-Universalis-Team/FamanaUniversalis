@@ -11,6 +11,7 @@ country_event = { #20%
 		months = 1
 	}
 	trigger = {
+        tag = PEX
         has_disaster_progress = {
 	        disaster = collapse_of_pextoglazia
 	        value = 20
@@ -38,6 +39,7 @@ country_event = { #60%
 		months = 1
 	}
 	trigger = {
+        tag = PEX
         has_disaster_progress = {
 	        disaster = collapse_of_pextoglazia
 	        value = 60
@@ -66,6 +68,7 @@ country_event = { #85% (generals defect)
 		months = 1
 	}
 	trigger = {
+        tag = PEX
         has_disaster_progress = {
 	        disaster = collapse_of_pextoglazia
 	        value = 85
@@ -97,46 +100,356 @@ country_event = { #85% (generals defect)
     }
 }
 
-country_event = { #Vassals go disloyal 95%
+country_event = { #cities demand more autonomy
     id = pextodis.4
     title = pextodis.4.t
     desc = pextodis.4.d
-    picture = BATTLE_eventPicture
-	trigger = {
-        has_disaster_progress = {
-	        disaster = collapse_of_pextoglazia
-	        value = 95
-        }
-	}
-
-	mean_time_to_happen = {
-		months = 2
-	}
-
+    picture = LIBERUM_VETO_eventPicture
     fire_only_once = yes
+	is_triggered_only = yes
 
-	immediate = {
-		set_variable = {
-			which = pextoDisloyal
-			value = 7.0
-		}
-	}
+    immediate = {
+        set_country_flag = had_pextodis_4
+    }
 
     option = {
-        name = pextodis.4.a
-        ai_chance = { factor = 10 }
-		every_subject_country = {
-			add_liberty_desire = 75
+		name = pextodis.4.a
+        ai_chance = { factor = 0 }
+        add_country_modifier = { 
+    		name = pexto_granted_city_rights
+    		duration = -1  
+		}
+        add_disaster_progress = {
+            disaster = collapse_of_pextoglazia
+            value = -5
+        }
+    }
+
+	option = {
+		name = pextodis.4.b
+        ai_chance = { factor = 1 }
+    }
+}
+
+country_event = { #nobles vs clergy
+    id = pextodis.5
+    title = pextodis.5.t
+    desc = pextodis.5.d
+    picture = LIBERUM_VETO_eventPicture
+    fire_only_once = yes
+	is_triggered_only = yes
+
+    immediate = {
+        set_country_flag = had_pextodis_5
+    }
+
+    option = {
+		name = pextodis.5.a
+        ai_chance = { factor = 1 }
+        add_estate_loyalty_modifier = {
+            estate = estate_nobles
+            desc = NOBLES_PLEASED
+            loyalty = 10
+            duration = -1
+        }
+        add_estate_influence_modifier = {
+            estate = estate_nobles
+            desc = NOBLES_PLEASED_INFLUENCE
+            influence = 10
+            duration = -1
+        }
+        change_estate_land_share = {
+            estate = estate_nobles
+            share = 5
+        }
+        add_estate_loyalty_modifier = {
+            estate = estate_church
+            desc = CHURCH_UNSUPPORTED
+            loyalty = -10
+            duration = -1
+        }
+        add_estate_influence_modifier = {
+            estate = estate_church
+            desc = CHURCH_UNSUPPORTED_INFLUENCE
+            influence = -10
+            duration = -1
+        }
+        change_estate_land_share = {
+            estate = estate_church
+            share = -5
+        }
+        set_country_flag = supported_nobles
+    }
+
+	option = {
+		name = pextodis.5.b
+        ai_chance = { factor = 1 }
+		add_estate_loyalty_modifier = {
+            estate = estate_church
+            desc = CHURCH_PLEASED
+            loyalty = 10
+            duration = -1
+        }
+        add_estate_influence_modifier = {
+            estate = estate_church
+            desc = CHURCH_PLEASED_INFLUENCE
+            influence = 10
+            duration = -1
+        }
+        change_estate_land_share = {
+            estate = estate_church
+            share = 5
+        }
+        add_estate_loyalty_modifier = {
+            estate = estate_nobles
+            desc = NOBLES_UNSUPPORTED
+            loyalty = -10
+            duration = -1
+        }
+        add_estate_influence_modifier = {
+            estate = estate_nobles
+            desc = NOBLES_UNSUPPORTED_INFLUENCE
+            influence = -10
+            duration = -1
+        }
+        change_estate_land_share = {
+            estate = estate_nobles
+            share = -5
+        }
+        set_country_flag = supported_church
+    }
+}
+
+country_event = { #glazian vs pextan incident
+    id = pextodis.6
+    title = pextodis.6.t
+    desc = pextodis.6.d
+    picture = LIBERUM_VETO_eventPicture
+    fire_only_once = yes
+	is_triggered_only = yes
+
+    immediate = {
+        set_country_flag = had_pextodis_6
+    }
+
+    option = {
+		name = pextodis.6.a
+        ai_chance = { factor = 0 }
+        same_culture_advisor_cost = 0.5
+        every_owned_province = {
+            limit = {
+                culture = Glazian
+            }
+            add_province_modifier = { 
+                name = glazian_cities
+                duration = -1
+            }
+        }
+        add_disaster_progress = {
+            disaster = collapse_of_pextoglazia
+            value = -5
+        }
+    }
+
+	option = { 
+		name = pextodis.6.b
+        ai_chance = { factor = 1 }
+        add_stability = -1
+        every_owned_province = {
+            limit = {
+                culture = Glazian
+            }
+            add_unrest = 5
+        }
+    }
+}
+
+country_event = { #minorities event
+    id = pextodis.7
+    title = pextodis.7.t
+    desc = pextodis.7.d
+    picture = LIBERUM_VETO_eventPicture
+    fire_only_once = yes
+	is_triggered_only = yes
+
+    immediate = {
+        set_country_flag = had_pextodis_7
+    }
+
+    option = {
+		name = pextodis.7.a
+        ai_chance = { factor = 0 }
+        every_owned_province = {
+            limit = {
+                NOT = {
+                    culture = Glazian
+                    culture = Pextan
+                }
+            }
+            add_province_modifier = { 
+                name = pexto_cultural_autonomy
+                duration = -1
+            }
+        }
+    }
+
+	option = {
+		name = pextodis.7.b
+        ai_chance = { factor = 1 }
+        add_disaster_progress = {
+            disaster = collapse_of_pextoglazia
+            value = 5
+        }
+    }
+}
+
+country_event = { #corrupt court
+    id = pextodis.8
+    title = pextodis.8.t
+    desc = pextodis.8.d
+    picture = LIBERUM_VETO_eventPicture
+    fire_only_once = yes
+	is_triggered_only = yes
+
+    immediate = {
+        set_country_flag = had_pextodis_8
+    }
+
+    option = {
+		name = pextodis.8.a
+        ai_chance = { factor = 0 }
+        trigger = { has_advisor = yes }
+        add_disaster_progress = {
+            disaster = collapse_of_pextoglazia
+            value = -5
+        }
+        remove_advisor_by_category = ADM
+        remove_advisor_by_category = DIP
+        remove_advisor_by_category = MIL
+        add_country_modifier = { 
+            name = pexto_purge_advisors
+            duration = -1
+        }
+    }
+
+    option = {
+		name = pextodis.8.b
+        ai_chance = { factor = 0 }
+        trigger = { NOT = { has_advisor = yes} }
+        add_disaster_progress = {
+            disaster = collapse_of_pextoglazia
+            value = -5
+        }
+        add_country_modifier = {
+            name = pexto_purge_no_advisors
+            duration = -1
+        }
+    }
+
+	option = { 
+		name = pextodis.8.c
+        ai_chance = { factor = 1 }
+        add_corruption = 2
+    }
+}
+
+country_event = { #problems with banditry , #set up bounties and hunt them down
+    id = pextodis.9
+    title = pextodis.9.t
+    desc = pextodis.9.d
+    picture = LIBERUM_VETO_eventPicture
+    fire_only_once = yes
+	is_triggered_only = yes
+
+    immediate = {
+        set_country_flag = had_pextodis_9
+    }
+
+    option = {
+		name = pextodis.9.a
+        ai_chance = { factor = 0 }
+        add_years_of_income = -0.5
+        add_yearly_manpower = -2
+    }
+
+	option = { 
+		name = pextodis.9.b
+        ai_chance = { factor = 1 }
+        add_disaster_progress = {
+            disaster = collapse_of_pextoglazia
+            value = 5
+        }
+    }
+}
+
+country_event = { #diocese demands
+    id = pextodis.10
+    title = pextodis.10.t
+    desc = pextodis.10.d
+    picture = LIBERUM_VETO_eventPicture
+    fire_only_once = yes
+	is_triggered_only = yes
+
+    immediate = {
+        set_country_flag = had_pextodis_10
+    }
+
+    option = {
+		name = pextodis.10.a
+        ai_chance = { factor = 0 }
+        add_country_modifier = { 
+            name = pexto_vassal_priviliges
+            duration = -1
+        }
+        add_disaster_progress = {
+            disaster = collapse_of_pextoglazia
+            value = -5
+        }
+    }
+
+	option = { 
+		name = pextodis.10.b
+        ai_chance = { factor = 1 }
+        every_subject_country = {
+			add_liberty_desire = 15
 			add_trust = {
 				who = PEX
-				value = -60
+				value = -10
 				mutual = yes
 			}
 		}
     }
-    option = {
-        name = pextodis.4.b
+}
+
+country_event = { #cowardice
+    id = pextodis.11
+    title = pextodis.11.t
+    desc = pextodis.11.d
+    picture = LIBERUM_VETO_eventPicture
+    fire_only_once = yes
+	is_triggered_only = yes
+
+    immediate = {
+        set_country_flag = had_pextodis_11
+    }
+
+    option = { #conscription
+		name = pextodis.11.a 
+        ai_chance = { factor = 0 }
+        add_years_of_income = -0.5
+        add_army_professionalism = -0.05
+        add_disaster_progress = {
+            disaster = collapse_of_pextoglazia
+            value = 5
+        }
+    }
+
+	option = { 
+		name = pextodis.11.b
         ai_chance = { factor = 1 }
-		release_all_subjects = yes
-	}
+        add_country_modifier = { 
+            name = pexto_cowardice
+            duration = -1
+        }
+    }
 }
