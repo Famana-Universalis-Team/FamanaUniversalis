@@ -5,7 +5,10 @@ kin_1 = {
     ai = yes
     potential = {
         NOT = { map_setup = map_setup_random }
-		tag = KIN
+		OR = {
+            tag = KIN
+            has_country_flag = kin_jasua_flag
+        }
     }
     has_country_shield = yes
 
@@ -43,7 +46,10 @@ kin_2 = {
     ai = yes
     potential = {
         NOT = { map_setup = map_setup_random }
-		tag = KIN
+		OR = {
+            tag = KIN
+            has_country_flag = kin_jasua_flag
+        }
     }
     has_country_shield = yes
 
@@ -73,6 +79,14 @@ kin_2 = {
         effect = {
         }
     }
+    kin_end_the_dark_age = {
+        icon = league_of_the_public_weal
+        required_missions = { kin_jasuan_religious_unity kin_the_grand_helvania kin_establish_coffee_monopoly }
+        trigger = {
+        }
+        effect = {
+        }
+    }
 }
 
 kin_3 = {
@@ -81,12 +95,165 @@ kin_3 = {
     ai = yes
     potential = {
         NOT = { map_setup = map_setup_random }
-		tag = KIN
+		OR = {
+            tag = KIN
+            has_country_flag = kin_jasua_flag
+        }
     }
     has_country_shield = yes
 
     kin_expel_mahansha = {
         icon = imperial_navy
+        required_missions = { }
+
+        provinces_to_highlight = {
+			area = shol_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+        
+        trigger = {
+            shol_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+        }
+        effect = {
+            mahansha_area = {
+                add_permanent_claim = ROOT
+            }
+            unnamed_area_11 = {
+                add_permanent_claim = ROOT
+            }
+            unnamed_area_12 = {
+                add_permanent_claim = ROOT
+            }
+        }
+    }
+
+    kin_defeat_zoblotra = {
+        icon = prosper_in_piedmont
+        required_missions = { kin_expel_mahansha }
+
+        provinces_to_highlight = {
+			OR = {
+                area = unnamed_area_11
+                area = unnamed_area_12
+            }
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+        
+        trigger = {
+            num_of_owned_provinces_with	= {
+                value = 5
+                OR = {
+                    area = unnamed_area_11
+                    area = unnamed_area_12
+                }
+            }
+        }
+        effect = {
+            eastern_desert_region = {
+                add_permanent_claim = ROOT
+            }
+        }
+    }
+    
+    kin_establish_coffee_monopoly = {
+        icon = mission_portuguese_malabar
+        required_missions = { kin_defeat_zoblotra }
+
+        provinces_to_highlight = {
+			OR = {
+                province_id	= 5590
+                province_id	= 5199
+                province_id	= 5186
+                province_id	= 5182
+            }
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+        
+        trigger = {
+            production_leader = {
+                trade_goods = coffee
+            }
+            owns_core_province = 5590
+            owns_core_province = 5199
+            owns_core_province = 5186
+            owns_core_province = 5182
+        }
+        effect = {
+            5590 = {
+                add_province_modifier = {
+                    name = kin_coffee_boom
+                    duration = 9125
+                }
+            }
+            5199 = {
+                add_province_modifier = {
+                    name = kin_coffee_boom
+                    duration = 9125
+                }
+            }
+            5186 = {
+                add_province_modifier = {
+                    name = kin_coffee_boom
+                    duration = 9125
+                }
+            }
+            5182 = {
+                add_province_modifier = {
+                    name = kin_coffee_boom
+                    duration = 9125
+                }
+            }
+        }
+    }
+    kin_pacify_bamal = {
+        icon = mission_pf_map_table
+        required_missions = { kin_destruction_of_yabonia }
+        trigger = {
+        }
+        effect = {
+        }
+    }
+    kin_reforging_the_jasuan_empire = {
+        icon = the_latin_empire
+        required_missions = { kin_pacify_bamal kin_unification_with_kapolia kin_end_the_dark_age }
+        trigger = {
+            num_of_owned_provinces_with	= {
+                value = 75
+                superregion = jasua_superregion
+            }
+            government_rank = 3
+        }
+        effect = {
+            add_country_modifier = {
+                name = kin_jasua_reforged
+                duration = -1
+            }
+            hidden_effect = {
+                set_country_flag = kin_jasua_flag
+                swap_non_generic_missions = yes	
+            }
+        }
+    }
+}
+
+kin_4 = {
+    slot = 4
+    generic = no
+    ai = yes
+    potential = {
+        NOT = { map_setup = map_setup_random }
+		OR = {
+            tag = KIN
+            has_country_flag = kin_jasua_flag
+        }
+    }
+    has_country_shield = yes
+
+    kin_hinder_yabonia = {
+        icon = mission_italian_condottiere
         required_missions = { }
         trigger = {
         }
@@ -94,21 +261,102 @@ kin_3 = {
         }
     }
 
-    kin_defeat_zoblotra = {
-        icon = prosper_in_piedmont
-        required_missions = { kin_expel_mahansha }
+    kin_onward_to_Jimkalin = {
+        icon = unite_the_realm
+        required_missions = { kin_hinder_yabonia }
         trigger = {
         }
         effect = {
         }
     }
     
-    kin_establish_coffee_monopoly = {
-        icon = mission_portuguese_malabar
-        required_missions = { kin_defeat_zoblotra }
+    kin_destruction_of_yabonia = {
+        icon = mission_unite_the_deccan
+        required_missions = { kin_onward_to_Jimkalin }
         trigger = {
         }
         effect = {
+        }
+    }
+    kin_unification_with_kapolia = {
+        icon = mission_conquer_maharashtra
+        required_missions = { kin_destruction_of_yabonia }
+        trigger = {
+        }
+        effect = {
+        }
+    }
+}
+
+kin_5 = {
+    slot = 5
+    generic = no
+    ai = yes
+    potential = {
+        NOT = { map_setup = map_setum_random }
+        OR = {
+            tag = KIN
+            has_country_flag = kin_jasua_flag
+        }
+    }
+    has_country_shield = yes
+
+    kin_pearl_of_jasua = {
+        icon = reform_the_monte
+        required_missions = { }
+        trigger = {
+        }
+        effect = {
+        }
+    }
+
+    kin_sponsor_the_merchants = {
+        icon = personal_diplomacy
+        required_missions = { kin_pearl_of_jasua }
+        trigger = {
+        }
+        effect = {
+        }
+    }
+
+    kin_eastern_gomic_trade = {
+        icon = support_the_bulk_trades
+        required_missions = { kin_sponsor_the_merchants }
+        trigger = {
+        }
+        effect = {
+        }
+    }
+}
+
+kin_6 = {
+    slot = 3
+    generic = no
+    ai = yes
+    potential = {
+        NOT = { map_setup = map_setum_random }
+        has_country_flag = kin_jasua_flag
+    }
+    has_country_shield = yes
+
+    kin_assert_control_of_hartimatul = {
+        icon = swiss_mercenaries
+        required_missions = { kin_reforging_the_jasuan_empire }
+        position = 4
+        trigger = {
+            ROOT = { owns_core_province	= 5496 }
+            5496 = {
+                culture = West_Jasuan
+                has_owner_religion = yes
+            }
+        }
+        effect = {
+            5496 = {
+                add_center_of_trade_level = 1
+            }
+            moxon_region = {
+                add_permanent_claim = ROOT
+            }
         }
     }
 }
