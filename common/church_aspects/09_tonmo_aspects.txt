@@ -82,6 +82,9 @@ spread_tonmo_aspect = {
 				religion = tonmo
 			}
 		}
+		NOT = {
+			is_at_war = yes
+		}
 	}
 	effect = {
 		hidden_effect = {
