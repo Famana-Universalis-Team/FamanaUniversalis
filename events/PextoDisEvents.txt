@@ -1,6 +1,6 @@
 namespace = pextodis
 
-country_event = { #20%
+country_event = { #25%
     id = pextodis.1
     title = pextodis.16.t
     desc = pextodis.16.d
@@ -8,13 +8,13 @@ country_event = { #20%
     fire_only_once = yes
     major = yes
 	mean_time_to_happen = {
-		months = 1
+		months = 3
 	}
 	trigger = {
         tag = PEX
         has_disaster_progress = {
 	        disaster = collapse_of_pextoglazia
-	        value = 20
+	        value = 25
         }
 	}
 
@@ -22,13 +22,13 @@ country_event = { #20%
 		name = pextodis.1.a
         ai_chance = { factor = 1 }
 		add_country_modifier = { 
-    		name = inner_turmoil_20
+    		name = inner_turmoil_25
     		duration = -1  
 		}
     }
 }
 
-country_event = { #60%
+country_event = { #75%
     id = pextodis.2
     title = pextodis.2.t
     desc = pextodis.2.d
@@ -36,13 +36,13 @@ country_event = { #60%
     fire_only_once = yes
     major = yes
 	mean_time_to_happen = {
-		months = 1
+		months = 3
 	}
 	trigger = {
         tag = PEX
         has_disaster_progress = {
 	        disaster = collapse_of_pextoglazia
-	        value = 60
+	        value = 75
         }
 	}
 
@@ -50,53 +50,10 @@ country_event = { #60%
 		name = pextodis.2.a
         ai_chance = { factor = 1 }
 		add_country_modifier = { 
-    		name = inner_turmoil_60
+    		name = inner_turmoil_75
     		duration = -1  
 		}
-        remove_country_modifier = inner_turmoil_20
-    }
-}
-
-country_event = { #85% (generals defect)
-    id = pextodis.3
-    title = pextodis.3.t
-    desc = pextodis.3.d
-    picture = LIBERUM_VETO_eventPicture
-    fire_only_once = yes
-    major = yes
-	mean_time_to_happen = {
-		months = 1
-	}
-	trigger = {
-        tag = PEX
-        has_disaster_progress = {
-	        disaster = collapse_of_pextoglazia
-	        value = 85
-        }
-	}
-
-    option = {
-		name = pextodis.3.a
-        ai_chance = { factor = 1 }
-		kill_leader = {
-		    type = general
-            type = admiral
-		}
-    }
-
-	option = {
-		name = pextodis.3.b
-        ai_chance = { factor = 1 }
-		change_estate_land_share = {
-   			estate = estate_nobles
-    		share = 5
-		}
-		add_estate_influence_modifier = {
-    		estate = estate_nobles
-    		desc = GENERAL_PRIVILIGES
-    		influence = 10
-    		duration = -1
-		}
+        remove_country_modifier = inner_turmoil_25
     }
 }
 

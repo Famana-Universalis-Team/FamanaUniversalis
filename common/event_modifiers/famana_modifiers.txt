@@ -203,20 +203,22 @@ geop_kneecapping = {
     stability_cost_to_declare_war = 3
 }
 
-inner_turmoil_20 = {
-    church_influence_modifier = 0.1
+inner_turmoil_25 = {
+    global_monthly_devastation = 0.05
     stability_cost_modifier = 0.5
-    nobles_influence_modifier = 0.1
-    global_manpower_modifier = -0.25
+    global_manpower_modifier = -0.15
     global_autonomy = 0.05
+    development_cost = 0.1
+    administrative_efficiency = -0.05
 }
 
-inner_turmoil_60 = {
-    church_influence_modifier = 0.2
+inner_turmoil_75 = {
+    global_monthly_devastation = 0.1
     stability_cost_modifier = 1
-    nobles_influence_modifier = 0.2
-    global_manpower_modifier = -0.5
+    global_manpower_modifier = -0.3
     global_autonomy = 0.1
+    development_cost = 0.2
+    administrative_efficiency = -0.1
 }
 
 pexto_granted_city_rights = {
@@ -224,7 +226,7 @@ pexto_granted_city_rights = {
 }
 
 pexto_cowardice = {
-    global_manpower_modifier = -0.33
+    global_manpower_modifier = -0.25
 }
 
 pexto_vassal_priviliges = {
@@ -242,6 +244,11 @@ pexto_purge_no_advisors = {
     idea_cost = 0.15
     advisor_cost = 0.5
     advisor_pool = -1
+}
+
+pexto_insufficient_generals = {
+    free_leader_pool = -1
+    general_cost = 0.5
 }
 
 pexto_cultural_autonomy = {
