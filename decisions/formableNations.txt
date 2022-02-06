@@ -1775,6 +1775,7 @@ country_decisions = {
 			}
 			change_tag = RES
 			change_technology_group	= north_gomic_tech_gr
+			change_unit_type = north_gomic_tech_gr
 			add_country_modifier = {
 				name = "centralization_modifier"
 				duration = 7300
@@ -2162,6 +2163,7 @@ country_decisions = {
 					religion = lathvy
 				}
 				change_technology_group	= north_gomic_tech_gr
+				change_unit_type = north_gomic_tech_gr
 			}
 			vordor_region = {
 				limit = {
@@ -2401,6 +2403,7 @@ country_decisions = {
 					religion = lathvy
 				}
 				change_technology_group	= north_gomic_tech_gr
+				change_unit_type = north_gomic_tech_gr
 			}
 			if = {
 				limit = {
