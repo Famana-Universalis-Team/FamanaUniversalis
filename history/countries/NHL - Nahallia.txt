@@ -5,9 +5,11 @@ mercantilism = 20
 technology_group = north_gomic_tech_gr
 religion = lathvy
 primary_culture = Nahallaian
+historical_rival = ALT
+historical_rival = TOL
 capital = 6184	# change to real capital
 
-200.1.1 = { #change to 200 or smth
+210.1.1 = { #change to 200 or smth
 	monarch = {
 		name = "Foshtnan II"
 		dynasty = "Mayar"
@@ -19,7 +21,9 @@ capital = 6184	# change to real capital
 
 	heir = {
 		name = "Foshtnan III"
+		monarch_name = "Foshtnan III"
 		dynasty = "Mayar"
+		claim = 60
 		birth_date = 205.6.23
 		adm = 3
 		dip = 2
