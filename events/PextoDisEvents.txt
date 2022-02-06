@@ -2,8 +2,8 @@ namespace = pextodis
 
 country_event = { #25%
     id = pextodis.1
-    title = pextodis.16.t
-    desc = pextodis.16.d
+    title = pextodis.1.t
+    desc = pextodis.1.d
     picture = LIBERUM_VETO_eventPicture
     fire_only_once = yes
     major = yes
