@@ -17,8 +17,10 @@ capital = 6184	# change to real capital
 		mil = 2
 	}
 
+200.1.1 = {
 	heir = {
-		name = "Foshtnan III"
+		name = "Foshtnan"
+		monarch_name = "Foshtnan III"
 		dynasty = "Mayar"
 		birth_date = 205.6.23
 		adm = 3
