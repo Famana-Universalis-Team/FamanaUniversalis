@@ -1,4 +1,42 @@
 
+Emastalian_ideas = {
+	start = {
+		trade_efficiency = 0.10
+		light_ship_cost = -0.2
+	}
+	
+	bonus = {
+		navy_tradition_decay = -0.01
+	}
+
+	trigger = {
+		culture_group = Emastalian
+	}
+	free = yes
+	
+	Emastalian_war = {
+		leader_naval_manuever = 1
+	}
+	Emastalian_merchants = {
+		trade_steering = 0.1
+	}
+	Emastalian_rule = {
+		local_autonomy = -0.05
+	}
+	Emastalian_navies = {
+		light_ship_power = 0.10
+	}
+	Emastalian_insults = {
+		power_projection_from_insults = 1.0
+	}
+	Emastalian_summer = {
+		stability_cost_modifier = -0.1
+	}
+	Emastalian_early = {
+		global_trade_power = 0.1
+	}
+}
+
 Ordic_ideas = {
 	start = {
 		ae_impact = -0.10
