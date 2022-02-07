@@ -311,10 +311,3 @@ kin_jasuan_piety = {
 	local_tax_modifier = 0.1
     local_development_cost = -0.1
 }
-
-conquest_of_western_lands = {
-	colonists = 1
-	global_colonial_growth = 30
-	native_uprising_chance = -0.50
-	range = 0.5 
-}
