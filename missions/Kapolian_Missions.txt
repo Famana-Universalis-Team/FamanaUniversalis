@@ -4,11 +4,8 @@ kap_1 = {
 	generic = no
     ai = yes
     potential = {
-	 NOT = { map_setup = map_setup_random }
-		OR = {
-            tag = KAP
-            has_country_flag = kin_jasua_flag
-        }
+		NOT = { map_setup = map_setup_random }
+		tag = KAP
     }
     has_country_shield = yes
 	
