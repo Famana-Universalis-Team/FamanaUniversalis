@@ -1,4 +1,7 @@
-culture = Oppio_Jasuan
+discovered_by = east_gomic_tech_gr
+discovered_by = north_gomic_tech_gr
+discovered_by = west_gomic_tech_gr
+culture = Geteri
 religion = bamali
 owner = YAB
 controller = YAB
@@ -8,12 +11,12 @@ add_core = GET
 ###
 
 hre = no
-discovered_by = western
+
 base_tax = 1
 base_production = 1
 trade_goods = salt
 base_manpower = 1
-capital = "Bafa"
+capital = "Rasimol"
 is_city = no
 extra_cost = 1
 

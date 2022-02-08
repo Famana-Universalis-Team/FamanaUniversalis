@@ -6,16 +6,12 @@ collapse_of_pextoglazia = {
 	}
 	can_start = {
         has_any_disaster = no
-        is_year = 210
+        is_year = 215
     }
 	progress = {
         modifier = {
-            factor = 0.20
-            is_year = 220
-        }
-        modifier = {
-            factor = 0.25
-            is_year = 250
+            factor = 0.15
+            is_year = 215
         }
         modifier = {
             factor = 0.25
@@ -23,13 +19,18 @@ collapse_of_pextoglazia = {
         }
 		modifier = {
 			factor = 1
-			war_exhaustion = 4
+			war_exhaustion = 5
 	    }
+        modifier = {
+            factor = 0.5
+            AND = {
+                is_year = 270
+                defensive_war_with = ORC
+            }
+        }
     }
 
-	can_stop = {
-        has_any_disaster = yes
-	}
+	can_stop = { has_any_disaster = yes }
 
 	can_end = {
         AND = {
@@ -43,7 +44,7 @@ collapse_of_pextoglazia = {
                     is_subject_of_type_with_overlord = { who = PEX type = diocese }
                 }
             }
-            NOT = { num_of_rebel_controlled_provinces = 1 }
+            is_at_war = no
         }
     }
 

@@ -1,0 +1,767 @@
+
+kin_1 = {
+    slot = 1
+    generic = no
+    ai = yes
+    potential = {
+        NOT = { map_setup = map_setup_random }
+		OR = {
+            tag = KIN
+            has_country_flag = kin_jasua_flag
+        }
+    }
+    has_country_shield = yes
+
+    kin_theory_of_helvania = {
+        icon = expand_the_confederacy
+        required_missions = { }
+        trigger = {
+            government = republic
+            republican_tradition = 90
+            OR = {
+                AND = {
+                    adm = 6
+                    dip = 3
+                    mil = 3
+                }
+                AND = {
+                    adm = 3
+                    dip = 6
+                    mil = 3
+                }
+                AND = {
+                    adm = 3
+                    dip = 3
+                    mil = 6
+                }
+            }
+        }
+        effect = {
+            add_country_modifier = {
+                name = kin_helvania_theory
+                duration = 5475
+            }
+        }
+    }
+
+    kin_stabilize_the_realm = {
+        icon = reform_the_state
+        required_missions = { kin_theory_of_helvania }
+        trigger = {
+            stability = 3
+            NOT = {
+                is_at_war = yes
+            }
+        }
+        effect = {
+            add_adm_power = 100
+            change_government_reform_progress = 25
+        }
+    }
+    
+    kin_the_grand_helvania = {
+        icon = promote_urbanization
+        required_missions = { kin_stabilize_the_realm }
+        trigger = {
+            prestige = 50
+            NOT = {
+                OR = {
+                    estate_influence = {
+                        estate = estate_church
+                        influence = 65
+                    }
+                    estate_influence = {
+                        estate = estate_nobles
+                        influence = 65
+                    }
+                    estate_influence = {
+                        estate = estate_burghers
+                        influence = 65
+                    }
+                }
+            }
+        }
+        effect = {
+            add_estate_loyalty = {
+                estate = estate_church
+                loyalty = 5
+            }
+            add_estate_loyalty = {
+                estate = estate_nobles
+                loyalty = 5
+            }
+            add_estate_loyalty = {
+                estate = estate_burghers
+                loyalty = 5
+            }
+            add_country_modifier = {
+                name = kin_grand_helvania
+                duration = -1
+            }
+        }
+    }
+}
+
+kin_2 = {
+    slot = 2
+    generic = no
+    ai = yes
+    potential = {
+        NOT = { map_setup = map_setup_random }
+		OR = {
+            tag = KIN
+            has_country_flag = kin_jasua_flag
+        }
+    }
+    has_country_shield = yes
+
+    kin_the_lathvy_question = {
+        icon = subiaco_press
+        required_missions = { }
+        trigger = {
+            custom_trigger_tooltip = {
+                tooltip = LATHVY_QEUSTION_FIRED
+                has_country_flag = lathvy_question_flag
+            }
+            religious_unity	= 0.80
+        }
+        effect = {
+            add_estate_loyalty = {
+                estate = estate_church
+                loyalty = 15
+            }
+            add_stability = 1
+        }
+    }
+
+    kin_the_one_true_faith = {
+        icon = mission_hands_praying
+        required_missions = { kin_the_lathvy_question }
+        trigger = {
+            OR = {
+                AND = {
+                    religion = lathvy
+                    piety = 0.50
+                }
+                AND = {
+                    NOT = { religion = lathvy }
+                    custom_trigger_tooltip = {
+                        tooltip = ONE_TRUE_FAITH_TOOLTIP
+                        unnamed_area_31 = {
+                            type = all
+                            NOT = { religion = lathvy }
+                        }
+                    }
+                }
+            }
+        }
+        effect = {
+            hidden_effect = {
+                every_owned_province = {
+                    limit = {
+                        has_owner_religion = yes
+                    }
+                    add_province_modifier = {
+                        name = kin_jasuan_piety
+                        duration = 3650
+                    }
+                }
+            }
+            custom_tooltip = kin_true_faith_tooltip
+        }
+    }
+    
+    kin_jasuan_religious_unity = {
+        icon = mission_dominate_trade_in_bengal
+        required_missions = { kin_the_one_true_faith }
+        trigger = {
+            jasua_region = {
+                type = all
+                has_owner_religion = yes
+            }
+        }
+        effect = {
+            hidden_effect = {
+                set_country_flag = kin_zealot_chance
+            }
+            custom_tooltip = kin_zealot_personality
+        }
+    }
+    kin_end_the_dark_age = {
+        icon = league_of_the_public_weal
+        required_missions = { kin_jasuan_religious_unity kin_the_grand_helvania kin_establish_coffee_monopoly }
+        trigger = {
+            all_neighbor_country = {
+                NOT = { army_size = ROOT }
+            }
+            power_projection = 75
+        }
+        effect = {
+            add_yearly_manpower = 5.0
+            change_adm = 1
+            change_dip = 1
+            change_mil = 1
+        }
+    }
+}
+
+kin_3 = {
+    slot = 3
+    generic = no
+    ai = yes
+    potential = {
+        NOT = { map_setup = map_setup_random }
+		OR = {
+            tag = KIN
+            has_country_flag = kin_jasua_flag
+        }
+    }
+    has_country_shield = yes
+
+    kin_expel_mahansha = {
+        icon = imperial_navy
+        required_missions = { }
+
+        provinces_to_highlight = {
+			area = shol_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+        
+        trigger = {
+            shol_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+        }
+        effect = {
+            mahansha_area = {
+                add_permanent_claim = ROOT
+            }
+            unnamed_area_11 = {
+                add_permanent_claim = ROOT
+            }
+            unnamed_area_12 = {
+                add_permanent_claim = ROOT
+            }
+        }
+    }
+
+    kin_defeat_zoblotra = {
+        icon = prosper_in_piedmont
+        required_missions = { kin_expel_mahansha }
+
+        provinces_to_highlight = {
+			OR = {
+                area = unnamed_area_11
+                area = unnamed_area_12
+            }
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+        
+        trigger = {
+            num_of_owned_provinces_with	= {
+                value = 5
+                OR = {
+                    area = unnamed_area_11
+                    area = unnamed_area_12
+                }
+            }
+        }
+        effect = {
+            eastern_desert_region = {
+                add_permanent_claim = ROOT
+            }
+        }
+    }
+    
+    kin_establish_coffee_monopoly = {
+        icon = mission_portuguese_malabar
+        required_missions = { kin_defeat_zoblotra }
+
+        provinces_to_highlight = {
+			OR = {
+                province_id	= 5590
+                province_id	= 5199
+                province_id	= 5186
+                province_id	= 5182
+            }
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+        
+        trigger = {
+            production_leader = {
+                trade_goods = coffee
+            }
+            owns_core_province = 5590
+            owns_core_province = 5199
+            owns_core_province = 5186
+            owns_core_province = 5182
+        }
+        effect = {
+            5590 = {
+                add_province_modifier = {
+                    name = kin_coffee_boom
+                    duration = 9125
+                }
+            }
+            5199 = {
+                add_province_modifier = {
+                    name = kin_coffee_boom
+                    duration = 9125
+                }
+            }
+            5186 = {
+                add_province_modifier = {
+                    name = kin_coffee_boom
+                    duration = 9125
+                }
+            }
+            5182 = {
+                add_province_modifier = {
+                    name = kin_coffee_boom
+                    duration = 9125
+                }
+            }
+        }
+    }
+    kin_pacify_bamal = {
+        icon = mission_pf_map_table
+        required_missions = { kin_destruction_of_yabonia }
+        provinces_to_highlight = {
+			OR = {
+                area = unnamed_area_44
+                area = unnamed_area_45
+                area = unnamed_area_48
+                area = unnamed_area_35
+                area = unnamed_area_39
+            }
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+        trigger = {
+            unnamed_area_44 = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+            unnamed_area_45 = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+            unnamed_area_35 = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+            unnamed_area_48 = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+            unnamed_area_39 = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+                NOT = { unrest = 0 }
+			}
+        }
+        effect = {
+            add_casus_belli	= {
+                target = BLK
+                type = cb_vassalize_mission
+                months = 120
+            }
+        }
+    }
+    kin_reforging_the_jasuan_empire = {
+        icon = the_latin_empire
+        required_missions = { kin_pacify_bamal kin_unification_with_kapolia kin_end_the_dark_age }
+        trigger = {
+            num_of_owned_provinces_with	= {
+                value = 75
+                superregion = jasua_superregion
+            }
+            government_rank = 3
+        }
+        effect = {
+            add_country_modifier = {
+                name = kin_jasua_reforged
+                duration = -1
+            }
+            hidden_effect = {
+                set_country_flag = kin_jasua_flag
+                swap_non_generic_missions = yes	
+            }
+        }
+    }
+}
+
+kin_4 = {
+    slot = 4
+    generic = no
+    ai = yes
+    potential = {
+        NOT = { map_setup = map_setup_random }
+		OR = {
+            tag = KIN
+            has_country_flag = kin_jasua_flag
+        }
+    }
+    has_country_shield = yes
+
+    kin_hinder_yabonia = {
+        icon = mission_italian_condottiere
+        required_missions = { }
+        
+        trigger = {
+            num_of_allies = 4
+            army_size_percentage = 1.0
+        }
+        effect = {
+            unnamed_area_50 = {
+                add_permanent_claim = ROOT
+            }
+            unnamed_area_47 = {
+                add_permanent_claim = ROOT
+            }
+            unnamed_area_49 = {
+                add_permanent_claim = ROOT
+            }
+            add_country_modifier = {
+                name = kin_jasuan_resilience
+                duration = 3650
+            }
+        }
+    }
+
+    kin_onward_to_Jimkalin = {
+        icon = unite_the_realm
+        required_missions = { kin_hinder_yabonia }
+
+        provinces_to_highlight = {
+			OR = {
+                area = unnamed_area_50
+                area = unnamed_area_47
+                area = unnamed_area_49
+            }
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+        
+        trigger = {
+            unnamed_area_50 = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+            unnamed_area_47 = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+            unnamed_area_49 = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+        }
+        effect = {
+            jasua_region = {
+                add_permanent_claim = ROOT
+            }
+        }
+    }
+    
+    kin_destruction_of_yabonia = {
+        icon = mission_unite_the_deccan
+        required_missions = { kin_onward_to_Jimkalin }
+        provinces_to_highlight = {
+			region = jasua_region
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+        
+        trigger = {
+            jasua_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+        }
+        effect = {
+            unnamed_area_44 = {
+                add_permanent_claim = ROOT
+            }
+            unnamed_area_48 = {
+                add_permanent_claim = ROOT
+            }
+            unnamed_area_45 = {
+                add_permanent_claim = ROOT
+            }
+            unnamed_area_35 = {
+                add_permanent_claim = ROOT
+            }
+            unnamed_area_39 = {
+                add_permanent_claim = ROOT
+            }
+            unnamed_area_33 = {
+                add_permanent_claim = ROOT
+            }
+            unnamed_area_56 = {
+                add_permanent_claim = ROOT
+            }
+            unnamed_area_32 = {
+                add_permanent_claim = ROOT
+            }
+            unnamed_area_52 = {
+                add_permanent_claim = ROOT
+            }
+            geccis_area = {
+                add_permanent_claim = ROOT
+            }
+            unnamed_area_30 = {
+                add_permanent_claim = ROOT
+            }
+            unnamed_area_29 = {
+                add_permanent_claim = ROOT
+            }
+        }
+    }
+    kin_unification_with_kapolia = {
+        icon = mission_conquer_maharashtra
+        required_missions = { kin_destruction_of_yabonia }
+        provinces_to_highlight = {
+			OR = {
+                area = unnamed_area_33
+                area = unnamed_area_56
+                area = unnamed_area_32
+                area = unnamed_area_30
+                area = geccis_area
+                area = unnamed_area_29
+                area = unnamed_area_52
+            }
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+        trigger = {
+            OR = {
+                AND = {
+                    unnamed_area_33 = {
+				        type = all
+				        country_or_non_sovereign_subject_holds = ROOT
+			        }
+                    unnamed_area_56 = {
+				        type = all
+				        country_or_non_sovereign_subject_holds = ROOT
+			        }
+                    unnamed_area_32 = {
+				        type = all
+				        country_or_non_sovereign_subject_holds = ROOT
+			        }
+                    unnamed_area_30 = {
+				        type = all
+				        country_or_non_sovereign_subject_holds = ROOT
+			        }
+                    geccis_area = {
+				        type = all
+				        country_or_non_sovereign_subject_holds = ROOT
+			        }
+                    unnamed_area_29 = {
+				        type = all
+				        country_or_non_sovereign_subject_holds = ROOT
+			        }
+                    unnamed_area_52 = {
+				        type = all
+				        country_or_non_sovereign_subject_holds = ROOT
+			        }
+                }
+                AND = {
+                    army_strength = {
+                        who = KAP
+                        value = 2.0
+                    }
+                    alliance_with = KAP
+                    KAP = {
+                        has_opinion	= {
+                            who = ROOT
+                            value = 200
+                        }
+                    }
+                    ROOT = {
+                        religion = lathvy
+                    }
+                    KAP = {
+                        religion = lathvy
+                    }
+                }
+            }
+        }
+        effect = {
+            hidden_effect = {
+                if = {
+                    limit = {
+                        AND = {
+                            army_strength = {
+                                who = KAP
+                                value = 2.0
+                            }
+                            alliance_with = KAP
+                            KAP = {
+                                has_opinion	= {
+                                    who = ROOT
+                                    value = 200
+                                }
+                            }
+                            ROOT = {
+                                religion = lathvy
+                            }
+                            KAP = {
+                                religion = lathvy
+                            }
+                        }
+                    }
+                    inherit	= KAP
+                }
+                if = {
+                    limit = {
+                        AND = {
+                            unnamed_area_33 = {
+				                type = all
+				                country_or_non_sovereign_subject_holds = ROOT
+			                }
+                            unnamed_area_56 = {
+	    			            type = all
+		    		            country_or_non_sovereign_subject_holds = ROOT
+			                }
+                            unnamed_area_32 = {
+				                type = all
+				                country_or_non_sovereign_subject_holds = ROOT
+    			            }
+                            unnamed_area_30 = {
+		    		            type = all
+			    	            country_or_non_sovereign_subject_holds = ROOT
+			                }
+                            geccis_area = {
+				                type = all
+				                country_or_non_sovereign_subject_holds = ROOT
+    			            }
+                            unnamed_area_29 = {
+		    		            type = all
+			    	            country_or_non_sovereign_subject_holds = ROOT
+			                }
+                            unnamed_area_52 = {
+				                type = all
+				                country_or_non_sovereign_subject_holds = ROOT
+    			            }
+                        }
+                    }
+                    emastalia_region = {
+                        add_permanent_claim = ROOT
+                    }
+                }
+            }
+            custom_tooltip = kin_kapolia_tooltip
+        }
+    }
+}
+
+kin_5 = {
+    slot = 5
+    generic = no
+    ai = yes
+    potential = {
+        NOT = { map_setup = map_setum_random }
+        OR = {
+            tag = KIN
+            has_country_flag = kin_jasua_flag
+        }
+    }
+    has_country_shield = yes
+
+    kin_pearl_of_jasua = {
+        icon = reform_the_monte
+        required_missions = { }
+        provinces_to_highlight = {
+            province_id = 5196
+        }
+        trigger = {
+            5196 = {
+                development = 32
+            }
+        }
+        effect = {
+            5196 = {
+                add_province_modifier = {
+                    name = kin_kinvirel_bonus
+                    duration = -1
+                }
+            }
+        }
+    }
+
+    kin_sponsor_the_merchants = {
+        icon = personal_diplomacy
+        required_missions = { kin_pearl_of_jasua }
+        trigger = {
+            adm_power = 100
+            estate_loyalty = {
+                estate = estate_burghers
+                loyalty = 60
+            }
+        }
+        effect = {
+            add_adm_power = -100
+            add_country_modifier = {
+                name = kin_sponsored_merchants
+                duration = 9125
+            }
+        }
+    }
+
+    kin_eastern_gomic_trade = {
+        icon = support_the_bulk_trades
+        required_missions = { kin_sponsor_the_merchants }
+        provinces_to_highlight = {
+            province_id = 5009
+        }
+        trigger = {
+            5196 = {
+                trade_share = {
+                    country = ROOT
+                    share = 90
+                }
+            }
+            num_of_light_ship = 30
+        }
+        effect = {
+            add_country_modifier = {
+                name = kin_trade_mission
+                duration = -1
+            }
+            add_mercantilism = 5
+        }
+    }
+}
+
+kin_6 = {
+    slot = 3
+    generic = no
+    ai = yes
+    potential = {
+        NOT = { map_setup = map_setum_random }
+        has_country_flag = kin_jasua_flag
+    }
+    has_country_shield = yes
+
+    kin_assert_control_of_hartimatul = {
+        icon = swiss_mercenaries
+        required_missions = { kin_reforging_the_jasuan_empire }
+        position = 4
+        provinces_to_highlight = {
+            province_id	= 5496
+        }
+        trigger = {
+            ROOT = { owns_core_province	= 5496 }
+            5496 = {
+                has_owner_culture = yes
+                has_owner_religion = yes
+            }
+        }
+        effect = {
+            5496 = {
+                add_center_of_trade_level = 1
+            }
+            moxon_region = {
+                add_permanent_claim = ROOT
+            }
+        }
+    }
+}

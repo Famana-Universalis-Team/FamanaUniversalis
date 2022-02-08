@@ -1,4 +1,7 @@
-culture = West_Jasuan
+discovered_by = east_gomic_tech_gr
+discovered_by = north_gomic_tech_gr
+discovered_by = west_gomic_tech_gr
+culture = Mikledonian
 religion = lathvy
 owner = KAP
 controller = KAP
@@ -7,7 +10,7 @@ add_core = KAP
 ###
 
 hre = no
-discovered_by = western
+
 base_tax = 2
 base_production = 3
 trade_goods = grain

@@ -1,13 +1,16 @@
+discovered_by = east_gomic_tech_gr
+discovered_by = north_gomic_tech_gr
+discovered_by = west_gomic_tech_gr
 #Written with Eu4 Easy Province Creator by emiroercn
 #Makykay
  
 culture = Okus
 religion = mak
 hre = no
-discovered_by = western
+
 base_tax = 1
 base_production = 1
-trade_goods = grain
+trade_goods = livestock
 base_manpower = 2
 capital = "Kars"
 is_city = yes

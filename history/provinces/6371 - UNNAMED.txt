@@ -1,12 +1,15 @@
 #Written with Eu4 Easy Province Creator by emiroercn
 #UNNAMED
-culture = 
-religion = 
+culture = Vamanyan
+religion = ordic
+owner = BRO
+add_core = BRO
+
 hre = no
 base_tax = 1
 base_production = 1
 base_manpower = 1
-trade_goods = 
+discovered_by = estal_tribal_tech_gr
 native_size = 2
 native_ferocity = 1
 native_hostileness = 1

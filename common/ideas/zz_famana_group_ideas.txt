@@ -37,6 +37,44 @@ Emastalian_ideas = {
 	}
 }
 
+Ordic_ideas = {
+	start = {
+		ae_impact = -0.10
+		land_forcelimit_modifier = 0.10
+	}
+	
+	bonus = {
+		production_efficiency = 0.10
+	}
+
+	trigger = {
+		culture_group = Ordic_C
+	}
+	free = yes
+	
+	Ordic_rule = {
+		galley_power = 0.10
+	}
+	Ordic_heirs = {
+		shock_damage = 0.10
+	}
+	Ordic_roaming = {
+		mercenary_manpower = 0.50
+	}
+	Ordic_fujja = {
+		development_cost = -0.10
+	}
+	Ordic_volatile = {
+		core_creation = -0.10
+	}
+	Ordic_land = {
+		embracement_cost = -0.25
+	}
+	Ordic_yonzal = {
+		capture_ship_chance = 0.20
+	}
+}
+
 Aresian_ideas = {
 	start = {
 		diplomatic_upkeep = 1

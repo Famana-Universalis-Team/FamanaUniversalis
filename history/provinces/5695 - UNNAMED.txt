@@ -1,8 +1,8 @@
-culture = Hasian
 owner = HSH
 controller = HSH
 add_core = HSH
 religion = animism
+culture = Hasian
 
 ###
 
@@ -15,3 +15,6 @@ capital = "UNNAMED"
 is_city = no
 extra_cost = 1
 fort_15th = yes
+capital = "Has"
+discovered_by = antestal_yom_tech_gr
+discovered_by = estal_tribal_tech_gr

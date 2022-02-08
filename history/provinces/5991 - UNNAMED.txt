@@ -3,7 +3,7 @@
 add_core = FAS
 owner = FAS
 controller = FAS
-culture = Fashran
+culture = Selkan
 religion = tonmo
 hre = no
 base_tax = 1
@@ -13,6 +13,8 @@ base_manpower = 1
 capital = "UNNAMED"
 is_city = yes
 
+discovered_by = geopyopian_tech_gr
+discovered_by = north_antebari_tech_gr
 
 
 

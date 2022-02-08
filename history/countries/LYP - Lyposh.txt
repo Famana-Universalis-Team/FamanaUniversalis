@@ -2,7 +2,7 @@ government = monarchy
 add_government_reform = oppian_state_reform
 government_rank = 1
 mercantilism = 10
-technology_group = western
+technology_group = west_gomic_tech_gr
 religion = reformed_oppian
 primary_culture = Lower_Oppian
 capital = 5091	# change to real capital
@@ -17,5 +17,18 @@ historical_friend = ROP
 		dip = 1
 		mil = 2
 		birth_date = 206.8.12
+	}
+}
+
+197.9.20 = {
+	leader = {
+		name = "Sazat Dardor"
+		type = general
+
+		fire = 5
+		shock = 4
+		manuever = 1
+		siege = 1
+		death_date = 231.4.27
 	}
 }

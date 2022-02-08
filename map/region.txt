@@ -19,6 +19,73 @@ north_great_sea_region = {
 		naravami_sea
 		vamanyan_sea
 		olivinar_sea
+		gacin_sea
+	}
+}
+
+south_great_ocean_region = {
+	areas = {
+		sunset_sea
+		sakan_bight
+		sea_of_lisin
+	}
+}
+
+hasmal_seas_region = {
+	areas = {
+		avzazi_sea
+		sea_of_vishma
+		dovi_sea
+	}
+}
+
+southern_ocean_region = {
+	areas = {
+		golden_sea
+		yashmaku_sea
+		bong_sea
+	}
+}
+
+qamoni_seas_region = {
+	areas = {
+		ekelan_sea
+		chonusan_sea
+	}
+}
+
+greater_toman_sea_region = {
+	areas = {
+		toman_sea
+		sea_of_seflara
+	}
+}
+
+stormseye_ocean_region = {
+	areas = {
+		sea_of_gosi
+		southern_stormeseye_ocean
+		northern_stormseye_ocean
+	}
+}
+
+akrori_ocean_region = {
+	areas = {
+		northwest_eastern_ocean
+		sea_of_bhilis
+	}
+}
+
+vanoman_sea = {
+	areas = {
+		aresian_gulf
+		sea_of_fashrana
+	}
+}
+
+lukscha_sea_region = {
+	areas = {
+		lukscha_sea
 	}
 }
 
@@ -26,9 +93,7 @@ north_great_sea_region = {
 
 outer_region = {
 	areas = {
-		seflara_area
 		kruli_area
-		lisin_area
 	}
 }
 
@@ -42,6 +107,15 @@ western_naravam_region = {
 	areas = {
 		idios_area
 		kasmel_area
+		area_84
+		area_85
+		area_86
+		area_88
+		area_89
+		area_91
+		area_92
+		area_93
+		area_87
 	}
 }
 
@@ -51,6 +125,23 @@ eastern_naravam_region = {
 		kletvar_area
 		area_57
 		feemk_area
+		area_90
+		area_94
+		area_95
+		area_96
+		area_97
+	}
+}
+
+apilanya_region = {
+	areas = {
+		pechiadh_area
+		area_59
+		saurof_area
+		denire_area
+		kolya_area
+		area_58
+		area_104
 	}
 }
 
@@ -64,6 +155,32 @@ gotzlic_region = {
 		nizoora_area
 		rosta_area
 		nenki_area
+		area_158
+		area_159
+		area_160
+	}
+}
+
+lukscha_region = {
+	areas = {
+		area_80
+		area_79
+		area_76
+		area_77
+		area_78
+		area_83
+		area_81
+		area_82
+		area_155
+	}
+}
+
+brula_region = {
+	areas = {
+		area_156
+		area_157
+		area_134
+		area_107
 	}
 }
 
@@ -79,6 +196,7 @@ upper_oppia_region = {
 		eastern_core_area
 		quanex_area
 		umzat_bay
+		goll_area
 	}
 }
 
@@ -110,6 +228,7 @@ arlenta_region = {
 		zne_area
 		sosne_area
 		heoki_area
+		arlentan_area
 	}
 }
 
@@ -187,10 +306,37 @@ west_estal_region = {
 		unnamed_area_22
 		northern_umzat
 		west_feniki
-		hasia_area
 		revdirom_area
 		emzelom_area
 		griglom_area
+		fes_viom_area
+		area_101
+		area_103
+		area_102
+	}
+}
+
+napora_region = {
+	areas = {
+		area_150
+		area_137
+		hasia_area
+		area_138
+		area_152
+		area_139
+		area_164
+	}
+}
+
+porlodya_region = {
+	areas = {
+		area_149
+		area_136
+		area_105
+		area_135
+		area_148
+		area_106
+		area_100
 	}
 }
 
@@ -263,6 +409,11 @@ west_ordica_region = {
 		poto_haroo_area
 		dreklos_area
 		alo_tramo_area
+		area_99
+		area_147
+		area_146
+		area_151
+		area_142
 	}
 }
 
@@ -271,6 +422,11 @@ vordor_region = {
 		holy_bridge_area
 		vordor_area
 		nagolai_area
+		area_98
+		area_140
+		area_141
+		area_153
+		area_154
 	}
 }
 
@@ -412,6 +568,40 @@ gorfrek_region = {
 	}
 }
 
+selka_region = {
+	areas = {
+		area_118
+		area_122
+		area_123
+		area_127
+		area_128
+		area_129
+		area_130
+		area_133
+		area_132
+		area_131
+		area_126
+		area_124
+		area_125
+	}
+}
+
+nhoma_region = {
+	areas = {
+		area_121
+		area_120
+		area_112
+		area_111
+		bizugu_area
+		area_114
+		area_113
+		area_119
+		area_117
+		area_115
+		area_116
+	}
+}
+
 nozumol_region = {
 	areas = {
 		nuzoto_area
@@ -426,7 +616,7 @@ nozumol_region = {
 	}
 }
 
-nhoma_region = {
+nheomyr_region = {
 	areas = {
 		fuka_area
 		north_khim_area
@@ -458,5 +648,12 @@ bamal_gulf_region = {
 		unnamed_area_45
 		unnamed_area_44
 		yenis_area
+	}
+}
+
+gacil_region = {
+	areas = {
+		gabero_area
+		tirix_area
 	}
 }

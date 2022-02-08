@@ -878,7 +878,7 @@ OPP_ideas = {
 
 MOX_ideas = {
 	start = {
-		global_ship_cost = -0.1
+		trade_efficiency = 0.10
 		global_trade_power = 0.2
 	}
 	
@@ -896,13 +896,14 @@ MOX_ideas = {
 	}
 	mox_trading = {
 		merchants = 1
+		fort_maintenance_modifier = -0.15
 	}
 	mox_gomic = {
 		development_cost = -0.1
 		build_cost = -0.1
 	}
 	mox_crown = {
-		global_unrest = -2
+		land_morale = 0.10
 	}
 	mox_charismatic = {
 		diplomatic_upkeep = 1
@@ -2222,5 +2223,47 @@ RDU_ideas = {
     rdu_uma = {
 		reinforce_speed = 0.05
 		army_tradition = 0.5
+    }
+}
+
+VNA_ideas = {
+    start = {
+        siege_blockade_progress = 1
+		global_regiment_cost = -0.10
+    }
+    
+    bonus = {
+        global_trade_power = 0.10
+    }    
+
+    trigger = {
+        tag = VNA
+    }
+    free = yes
+    
+    vna_ancient = {
+		navy_tradition_decay = -0.01
+		naval_tradition_from_battle = 0.5
+    }
+    vna_superior = {
+		ship_durability = 0.15
+    }
+    vna_naval = {
+        galley_power = 0.20
+		leader_naval_fire = 1
+    }
+    vna_holy = {
+        sailors_recovery_speed = 0.25
+    }
+    vna_glory = {
+		naval_morale = 0.15
+		sunk_ship_morale_hit_recieved = -0.20
+    }
+    vna_new = {
+		trade_goods_size_modifier = 0.10
+    }
+    vna_marines = {
+		land_forcelimit_modifier = 0.10
+		infantry_power = 0.05
     }
 }

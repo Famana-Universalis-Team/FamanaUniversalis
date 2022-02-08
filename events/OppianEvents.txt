@@ -55,11 +55,14 @@ country_event = {
     immediate = {
         hidden_effect = {
             gomic_exit = {
-            discover_country = UMZ
+            	discover_country = UMZ
             }
             umzat_islands_area = {
-            discover_country = UMZ
+            	discover_country = UMZ
             }
+			northern_umzat = {
+				discover_country = UMZ
+			}
         }
     }
     option = {
@@ -347,6 +350,12 @@ country_event = {
 	}
 	immediate = {
 		hidden_effect = {
+			feyel_area = {
+				discover_country = LAG
+			}
+			unnamed_area_23 = {
+				discover_country = LAG
+			}
 			5028 = {
 				change_religion = lathvy
 			}

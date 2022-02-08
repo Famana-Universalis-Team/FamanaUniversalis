@@ -37,11 +37,15 @@ west_estal_superregion = {
 	vordor_region
 	west_ordica_region
 	east_ordica_region
+	porlodya_region
+	napora_region
 }
 
 tonmo_supperregion = {
 	nozumol_region
 	nhoma_region
+	selka_region
+	nheomyr_region
 }
 
 central_estal_supperregion = {
@@ -55,6 +59,8 @@ north_estal_superregion = {
 	western_naravam_region
 	eastern_naravam_region
 	gotzlic_region
+	lukscha_region
+	brula_region
 }
 
 hasmal_superregion = {
@@ -64,4 +70,8 @@ hasmal_superregion = {
 great_desert_superregion = {
 	upper_makyna_region
 	northern_desert_region
+}
+
+gacil_superregion = {
+	gacil_region
 }

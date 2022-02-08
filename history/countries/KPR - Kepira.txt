@@ -1,0 +1,19 @@
+government = native
+add_government_reform = native_clan_council_reform
+government_rank = 1
+mercantilism = 15
+technology_group = estal_tribal_tech_gr
+religion = animism
+primary_culture = Mirrisan
+capital = 6421	# real
+
+200.1.1 = {
+	monarch = {
+		name = "Ofyf"
+		dynasty = "Ehrfg"
+		birth_date = 183.8.19
+		adm = 4
+		dip = 3
+		mil = 6
+	}
+}

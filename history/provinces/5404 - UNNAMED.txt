@@ -1,3 +1,6 @@
+discovered_by = east_gomic_tech_gr
+discovered_by = north_gomic_tech_gr
+discovered_by = west_gomic_tech_gr
 culture = Neo_Xalnish
 religion = lathvy
 owner = PYA
@@ -7,12 +10,12 @@ add_core = PYA
 ###
 
 hre = no
-discovered_by = western
+
 base_tax = 4
 base_production = 4
 trade_goods = incense
 base_manpower = 5
-capital = "UNNAMED"
+capital = "Pyarxu"
 is_city = yes
 extra_cost = 1
 fort_15th = yes

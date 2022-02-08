@@ -171,22 +171,38 @@
  ALT: "Alo Tramo"
  ALT_ADJ: "Alo Traman"
  ALT_ADJ2: "Alo Traman"
+ 
+ TOL: "Tolo"
+ TOL_ADJ: "Tolan"
+ TOL_ADJ2: "Tolan"
 
  ORC: "Ordica"
  ORC_ADJ: "Ordican"
  ORC_ADJ2: "Ordican"
 
+ MLD: "Maldikia"
+ MLD_ADJ: "Maldikian"
+ MLD_ADJ2: "Maldikian"
+
+ KLY: "Kolya"
+ KLY_ADJ: "Kolyan"
+ KLY_ADJ2: "Kolyan"
+
  HSH: "Hasia"
  HSH_ADJ: "Hasian"
  HSH_ADJ2: "Hasian"
+ 
+ HOF: "Hofrrejjdkma"
+ HOF_ADJ: "Hofrrejjdkman"
+ HOF_ADJ2: "Hofrrejjdkman"
 
  NPX: "New Pexamol"
  NPX_ADJ: "New Pexamolite"
  NPX_ADJ2: "New Pexamolite"
 
  RON: "Roana"
- RON_ADJ: "Roana"
- RON_ADJ2: "Roana"
+ RON_ADJ: "Roanan"
+ RON_ADJ2: "Roanan"
 
  RDU: "Rdumkatvar"
  RDU_ADJ: "Rduma"
@@ -199,6 +215,35 @@
  WCH: "Woch"
  WCH_ADJ: "Woch"
  WCH_ADJ2: "Woch"
+ 
+ FST: "Urcol"
+ FST_ADJ: "Urcoli"
+ FST_ADJ2: "Urcoli"
+
+ REN: "Rolen"
+ REN_ADJ: "Roleni"
+ REN_ADJ2: "Roleni"
+
+ KRH: "Korha"
+ KRH_ADJ: "Korhan"
+ KRH_ADJ2: "Korhan"
+
+ NVI: "Nevia"
+ NVI_ADJ: "Nevian"
+ NVI_ADJ2: "Nevian"
+
+ PLK: "Pealka"
+ PLK_ADJ: "Pealkan"
+ PLK_ADJ2: "Pealkan"
+
+ XRL: "Xarelda"
+ XRL_ADJ: "Xareldan"
+ XRL_ADJ2: "Xareldan"
+ 
+ KAM: "Kamposs"
+ KAM_ADJ: "Kampossian"
+ KAM_ADJ: "Kampossian"
+ 
 
  #pextovassals
 
@@ -259,9 +304,9 @@
  PTG_ADJ: "Tegarian"
  PTG_ADJ2: "Tegarian"
 
- PCG: "Cegon"
- PCG_ADJ: "Cegonese"
- PCG_ADJ2: "Cegonese"
+ PCG: "Gegon"
+ PCG_ADJ: "Gegonese"
+ PCG_ADJ2: "Gegonese"
 
  PHL: "Hilemo"
  PHL_ADJ: "Hileman"
@@ -280,8 +325,113 @@
  HOLY_MONARCHY:0 "Holy Kingdom"
  HOLY_KING:0 "Holy King"
  HOLY_QUEEN:0 "Holy Queen"
+ 
+ #natives
+ ANK: "Ankoisa"
+ ANK_ADJ: "Ankoisan"
+ ANK_ADJ2: "Ankoisan"
+ 
+ BER: "Beras"
+ BER_ADJ: "Berasan"
+ BER_ADJ2: "Berasan"
+ 
+ BRM: "Brima"
+ BRM_ADJ: "Briman"
+ BRM_ADJ2: "Briman"
+ 
+ CEL: "Celzion"
+ CEL_ADJ: "Celzioni"
+ CEL_ADJ2: "Celzioni"
+ 
+ ENN: "Ennam"
+ ENN_ADJ: "Ennami"
+ ENN_ADJ2: "Ennami"
+ 
+ EQI: "Equiso"
+ EQI_ADJ: "Equisan"
+ EQI_ADJ2: "Equisan"
+ 
+ ILO: "Iloosi"
+ ILO_ADJ: "Iloosan"
+ ILO_ADJ2: "Iloosan"
+ 
+ JAL: "Jalofen"
+ JAL_ADJ: "Jalofen"
+ JAL_ADJ2: "Jalofen"
+ 
+ KEN: "Kef Ennam"
+ KEN_ADJ: "Kef Ennami"
+ KEN_ADJ2: "Kef Ennami"
+ 
+ KPR: "Kepronisa"
+ KPR_ADJ: "Kepronisan"
+ KPR_ADJ2: "Kepronisan"
+ 
+ KEZ: "Kezoja"
+ KEZ_ADJ: "Kezojan"
+ KEZ_ADJ2: "Kezojan"
+ 
+ LEE: "Leeto"
+ LEE_ADJ: "Leetan"
+ LEE_ADJ2: "Leetan"
+ 
+ MER: "Mertel"
+ MER_ADJ: "Mertel"
+ MER_ADJ2: "Mertel"
+ 
+ MID: "Midazka"
+ MID_ADJ: "Midazka"
+ MID_ADJ2: "Midazka"
 
-
+ MOI: "Moa"
+ MOI_ADJ: "Moai"
+ MOI_ADJ2: "Moai"
+ 
+ NES: "Nesrin"
+ NES_ADJ: "Nesrini"
+ NES_ADJ2: "Nesrini"
+ 
+ PEL: "Pelfro"
+ PEL_ADJ: "Pelfran"
+ PEL_ADJ2: "Pelfran"
+ 
+ RME: "Rolema"
+ RME_ADJ: "Roleman"
+ RME_ADJ2: "Roleman"
+ 
+ UFZ: "Ufzue"
+ UFZ_ADJ: "Ufzuean"
+ UFZ_ADJ2: "Ufzuean"
+ 
+ YON: "Yondualk"
+ YON_ADJ: "Yondualk"
+ YON_ADJ2: "Yondualk"
+ 
+ YEN: "Yp Ennam"
+ YEN_ADJ: "Yp Ennami"
+ YEN_ADJ2: "Yp Ennami"
+ 
+ YUS: "Yuvas"
+ YUS_ADJ: "Yuvasi"
+ YUS_ADJ2: "Yuvasi"
+ 
+ BRY: "Ryzema"
+ BRY_ADJ: "Ryzeman"
+ BRY_ADJ2: "Ryzeman"
+ 
+ BRO: "Borrodaz"
+ BRO_ADJ: "Borrodazi"
+ BRO_ADJ2: "Borrodazi"
+ 
+ VRI: "Vrimelkon"
+ VRI_ADJ: "Vrimelkan"
+ VRI_ADJ2: "Vrimelkan"
+ 
+ BOR: "Borborea"
+ BOR_ADJ: "Borborean"
+ BOR_ADJ2: "Borborean"
+ 
+ 
  #------------Miris------------
 
  ZTT: "Zata"
@@ -645,6 +795,29 @@
  RCK_ADJ: "Rachik"
  RCK_ADJ2: "Rachik"
 
+ JII: "Jasiiko"
+ JII_ADJ: "Jasiikian"
+ JII_ADJ2: "Jasiikian"
+  
+ NOG: "Noglebim"
+ NOG_ADJ: "Noglebi"
+ NOG_ADJ2: "Noglebi"
+ 
+ YLL: "Yallwaka"
+ YLL_ADJ: "Yallwakian"
+ YLL_ADJ2: "Yallwakian"
+ 
+ HLM: "Holom"
+ HLM_ADJ: "Holomian"
+ HLM_ADJ2: "Holomian"
+ 
+ PAU: "Passuat"
+ PAU_ADJ: "Passuati"
+ PAU_ADJ2: "Passuati"
+ 
+ BAL: "Balunsel"
+ BAL_ADJ: "Balunselan"
+ BAL_ADJ2: "Balunselan"
  #Aresian Gulf
 
  DWL: "Diwelly"
@@ -745,6 +918,22 @@
  RST_ADJ: "Rostan"
  RST_ADJ2: "Rostan"
 
+ HZY: "Hozy"
+ HZY_ADJ: "Hozyan"
+ HZY_ADJ2: "Hozyan"
+
+ MIZ: "Mizoora"
+ MIZ_ADJ: "Mizooran"
+ MIZ_ADJ2: "Mizooran"
+
+ BIO: "Biom"
+ BIO_ADJ: "Bioman"
+ BIO_ADJ2: "Bioman"
+
+ GTZ: "Gotzlica"
+ GTZ_ADJ: "Gotzlican"
+ GTZ_ADJ2: "Gotzlican"
+
  #Qamon
 
  DOR: "Dorromas"
@@ -766,6 +955,18 @@
  NRQ: "Narq"
  NRQ_ADJ: "Narqian"
  NRQ_ADJ2: "Narqian"
+
+ NLF: "Nilifo"
+ NLF_ADJ: "Nilifan"
+ NLF_ADJ2: "Nilifan"
+
+ YSP: "Yaspalifo"
+ YSP_ADJ: "Yaspalifan"
+ YSP_ADJ2: "Yaspalifan"
+
+ KNK: "Kankra"
+ KNK_ADJ: "Kankran"
+ KNK_ADJ2: "Kankran"
 
  RGZ: "Rigz"
  RGZ_ADJ: "Rigzan"
@@ -802,7 +1003,46 @@
  ALV: "Alava"
  ALV_ADJ: "Alavan"
  ALV_ADJ2: "Alavan"
-
+ 
+ LAH: "Lahana"
+ LAH_ADJ: "Lahani"
+ LAH_ADJ2: "Lahani"
+ 
+ DAR: "Darabo"
+ DAR_ADJ: "Daraban"
+ DAR_ADJ2: "Daraban"
+ 
+ KTI: "Karasti"
+ KTI_ADJ: "Karastan"
+ KTI_ADJ2: "Karastan"
+ 
+ KKN: "Kakorna"
+ KKN_ADJ: "Kakorni"
+ KKN_ADJ2: "Kakorni"
+ 
+ KYO: "Kloyo"
+ KYO_ADJ: "Kloyan"
+ KYO_ADJ2: "Kloyan"
+ 
+ TRJ: "Tarj"
+ TRJ_ADJ: "Tarjan"
+ TRJ_ADJ2: "Tarjan"
+ 
+ UPS: "Ureppus"
+ UPS_ADJ: "Ureppusan"
+ UPS_ADJ2: "Ureppusan"
+ 
+ YEK: "Yekelia"
+ YEK_ADJ: "Yekelian"
+ YEK_ADJ2: "Yekelian"
+ 
+ EKA: "Ekela"
+ EKA_ADJ: "Ekeli"
+ EKA_ADJ2: "Ekeli"
+ 
+ DRN: "Drannas"
+ DRN_ADJ: "Drannan"
+ DRN_ADJ2: "Drannan"
 
  MSW: "Mushwe"
  MSW_ADJ: "Mushwean"
@@ -810,89 +1050,97 @@
 
 #Fashros
 
-FAS: "Fashros"
-FAS_ADJ: "Fashran"
-FAS_ADJ2: "Fashran"
+ FAS: "Fashros"
+ FAS_ADJ: "Fashran"
+ FAS_ADJ2: "Fashran"
 
-FSB: "Fisbiklu"
-FSB_ADJ: "Fisbiklan"
-FSB_ADJ2: "Fisbiklan"
+ FSB: "Fisbiklu"
+ FSB_ADJ: "Fisbiklan"
+ FSB_ADJ2: "Fisbiklan"
 
-KMI: "Khim"
-KMI_ADJ: "Khiman"
-KMI_ADJ2: "Khiman"
+ KMI: "Khim"
+ KMI_ADJ: "Khiman"
+ KMI_ADJ2: "Khiman"
 
-BAS: "Bastrania"
-BAS_ADJ: "Bastranian"
-BAS_ADJ2: "Bastranian"
+ BAS: "Bastrania"
+ BAS_ADJ: "Bastranian"
+ BAS_ADJ2: "Bastranian"
 
-JIB: "Jimbalak"
-JIB_ADJ: "Jimbalan"
-JIB_ADJ2: "Jimbalan"
+ JIB: "Jimbalak"
+ JIB_ADJ: "Jimbalan"
+ JIB_ADJ2: "Jimbalan"
 
-FBS: "Fuka Bastrania"
-FBS_ADJ: "Fuka Bastranian"
-FBS_ADJ2: "Fuka Bastranian"
+ FBS: "Fuka Bastrania"
+ FBS_ADJ: "Fuka Bastranian"
+ FBS_ADJ2: "Fuka Bastranian"
 
-TYM: "Tyma"
-TYM_ADJ: "Tyman"
-TYM_ADJ2: "Tyman"
+ TYM: "Tyma"
+ TYM_ADJ: "Tyman"
+ TYM_ADJ2: "Tyman"
 
-SLK: "Selko"
-SLK_ADJ: "Selkan"
-SLK_ADJ2: "Selkan"
+ SLK: "Selko"
+ SLK_ADJ: "Selkan"
+ SLK_ADJ2: "Selkan"
 
-ATR: "Atrampefa"
-ATR_ADJ: "Atrampefan"
-ATR_ADJ2: "Atrampefan"
+ ATR: "Atrampefa"
+ ATR_ADJ: "Atrampefan"
+ ATR_ADJ2: "Atrampefan"
 
-ANM: "Anmoea"
-ANM_ADJ: "Anmoean"
-ANM_ADJ2: "Anmoean"
+ ANM: "Anmoea"
+ ANM_ADJ: "Anmoean"
+ ANM_ADJ2: "Anmoean"
 
-ZOR: "Zormia"
-ZOR_ADJ: "Zormian"
-ZOR_ADJ2: "Zormian"
+ ZOR: "Zormia"
+ ZOR_ADJ: "Zormian"
+ ZOR_ADJ2: "Zormian"
 
-IGM: "Igam"
-IGM_ADJ: "Igami"
-IGM_ADJ2: "Igami"
+ IGM: "Igam"
+ IGM_ADJ: "Igami"
+ IGM_ADJ2: "Igami"
 
-VET: "Va Emtik"
-VET_ADJ: "Emtikian"
-VET_ADJ2: "Emtikian"
+ VET: "Va Emtik"
+ VET_ADJ: "Emtikian"
+ VET_ADJ2: "Emtikian"
 
-LAM: "Lamyr"
-LAM_ADJ: "Lamyrian"
-LAM_ADJ2: "Lamyrian"
+ LAM: "Ymkel"
+ LAM_ADJ: "Ymkelian"
+ LAM_ADJ2: "Ymkelian"
 
-OVM: "Ovmaz"
-OVM_ADJ: "Ovmazi"
-OVM_ADJ2: "Ovmazi"
+ OVM: "Ovmaz"
+ OVM_ADJ: "Ovmazi"
+ OVM_ADJ2: "Ovmazi"
 
-KFF: "Koff"
-KFF_ADJ: "Koffi"
-KFF_ADJ2: "Koffi"
+ KFF: "Koff"
+ KFF_ADJ: "Koffi"
+ KFF_ADJ2: "Koffi"
 
-MIW: "Miwle"
-MIW_ADJ: "Miwli"
-MIW_ADJ2: "Miwli"
-
-NOZ: "Nozumol"
-NOZ_ADJ: "Nozuman"
-NOZ_ADJ2: "Nozuman"
+ MIW: "Miwle"
+ MIW_ADJ: "Miwli"
+ MIW_ADJ2: "Miwli"
+ 
+ THU: "Thum"
+ THU_ADJ: "Thumi"
+ THU_ADJ2: "Thumi"
+ 
+ BES: "Beshtek Adrygpam"
+ BES_ADJ: "Beshtekian"
+ BES_ADJ2: "Beshtekian"
+ 
+ NOZ: "Nozumol"
+ NOZ_ADJ: "Nozuman"
+ NOZ_ADJ2: "Nozuman"
 
 #Onobya
 
-IRF: "Irfa"
-IRF_ADJ: "Irfan"
-IRF_ADJ2: "Irfan"
+ IRF: "Irfa"
+ IRF_ADJ: "Irfan"
+ IRF_ADJ2: "Irfan"
 
 #Geopyopia
 
-GEP: "Geopyopia"
-GEP_ADJ:  "Geopyopian"
-GEP_ADJ2: "Geopyopian"
+ GEP: "Geopyopia"
+ GEP_ADJ:  "Geopyopian"
+ GEP_ADJ2: "Geopyopian"
 
  #------------TOMBA------------
 
@@ -1557,12 +1805,16 @@ GEP_ADJ2: "Geopyopian"
  NRV_ADJ2: "Naravami"
 
  MRR: "Miris"
- MRR_ADJ: "Mirisi"
- MRR_ADJ2: "Mirisi"
+ MRR_ADJ: "Mirisan"
+ MRR_ADJ2: "Mirisan"
 
  SYN: "Angolan Hyperprocessor"
  SYN_ADJ: "Angolan"
  SYN_ADJ2: "Angolan"
+ 
+ VAM: "Vamanya"
+ VAM_ADJ: "Vamanyan"
+ VAM_ADJ2: "Vamanyan"
 
  BAMAL_NAME: "Bamal"
  BAMAL_NAME_ADJ: "Bamali"
@@ -1594,7 +1846,7 @@ GEP_ADJ2: "Geopyopian"
  aresia_nation_desc:0 "A united Aresia has always been our destiny, yet we have been split apart by our neighbours. Now that the chaos has died down, we can reclaim our old name."
 
  jasuan_nation_title:0 "Form Jasua"
- jasuan_nation_desc:0 "Although a united Jasuan nation had been shattered by the Oppians, and then split apart by religious and cultural lines, by controlling once again all the old territory, we can safely say that we have restored this old Empire."
+ jasuan_nation_desc:0 "Although a united Jasuan nation had been shattered by the Oppians, and then split apart by religious and cultural lines, by retaking all the old territory of the empire, we can safely say that we are its glorious successors!"
 
  emastalian_nation_title:0 "Form Emastaly"
  emastalian_nation_desc:0 "Although we are a Maxan Colony in birth, we have developed our own identity, separate from the dreaded isles our ancestors came from. Now that the entire colonial possesions are under our control, we may give birth to a new nation and show that we are separate."

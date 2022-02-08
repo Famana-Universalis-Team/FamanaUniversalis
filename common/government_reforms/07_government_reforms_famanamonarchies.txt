@@ -12,6 +12,12 @@ oppian_state_reform = {
 	}
 	potential = {
 		culture_group = Oppian
+		NOT = {
+			OR = {
+				tag = OPP
+				tag = TCK
+			}
+		}
 	}
 	custom_attributes = {
 		locked_government_type = yes
@@ -144,5 +150,73 @@ nafan_gov = {
 	conditional = {
 		allow = { has_dlc = "Third Rome" }
 		claim_states = yes
+		government_abilities = {
+			russian_mechanic
+		}
+	}
+}
+
+emmi = {
+	icon = "horse_riding"
+	allow_normal_conversion = no
+	potential = {
+			
+	has_reform = emmi
+			
+	}
+	
+	legacy_equivalent = steppe_horde_legacy
+	nomad = yes
+	raze_province = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	start_territory_to_estates = 0.5
+
+	modifiers = {
+		global_manpower_modifier = 0.2
+		land_forcelimit_modifier = 0.2
+		loot_amount = 0.20
+		global_institution_spread = -0.05
+		governing_capacity_modifier = 0.1
+		cav_to_inf_ratio = 0.25
+		movement_speed = 0.2
+		horde_unity = 0.10
+		global_autonomy = -0.03
+		land_attrition = -0.10
+	}
+	ai = {
+		factor = 1000
+	}
+}
+anmoean_council = {
+	icon = "trading_city"
+	allow_normal_conversion = no
+	potential = {
+		OR = {
+		TAG = ANM
+		has_reform = anmoean_council
+			}
+		
+	}
+	legacy_equivalent = steppe_horde_legacy
+	nomad = yes
+	raze_province = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	start_territory_to_estates = 0.5
+	custom_attributes = {
+		enables_plutocratic_idea_group = yes
+	}
+
+	modifiers = {
+		loot_amount = 0.20
+		years_of_nationalism = -5
+		naval_forcelimit_modifier = 0.2
+		global_sailors_modifier = 0.2
+		mercenary_cost = -0.15
+		global_trade_power = 0.1
+	}
+	ai = {
+		factor = 1000
 	}
 }

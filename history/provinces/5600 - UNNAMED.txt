@@ -1,4 +1,7 @@
-culture = West_Jasuan
+discovered_by = east_gomic_tech_gr
+discovered_by = north_gomic_tech_gr
+discovered_by = west_gomic_tech_gr
+culture = Ghaloyan
 religion = bamali
 owner = GHA
 controller = GHA
@@ -7,12 +10,12 @@ add_core = GHA
 ###
 
 hre = no
-discovered_by = western
+
 base_tax = 3
 base_production = 2
 trade_goods = livestock
 base_manpower = 2
-capital = "Ghaloya"
+capital = "Ghaloya Ruz"
 is_city = no
 extra_cost = 1
 

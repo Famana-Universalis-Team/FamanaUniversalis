@@ -9,73 +9,140 @@ country_event = {
     
     is_triggered_only = yes
 
-    trigger = {
-        religion = tonmo
-        is_at_war = yes
-        NOT = {
-            has_country_modifier = tonmo_recent_assembly
-        }
-    }
-    
-    immediate = {
-        hidden_effect = {
-            add_country_modifier = { 
-                    name = tonmo_recent_assembly
-                    duration = 1825
-            }
-        }
-    }
     option = {
         name = tonmo.1.a
-        ai_chance = { factor = 0 }
-        remove_country_modifier = tonmo_recent_assembly
+        ai_chance = {
+            factor = 1
+            modifier = {
+                factor = 0
+                is_at_war = yes
+            }
+            modifier = {
+                factor = 1000
+                NOT = {
+                    is_at_war = yes
+                }
+            }
+        }
+        add_church_power = 200
     }
     option = {
         name = tonmo.1.b
-        ai_chance = { factor = 17 }
+        ai_chance = {
+            factor = 1
+            modifier = {
+                factor = 0
+                NOT = { cavalry_fraction = 0.15 }
+            }
+            modifier = {
+                factor = 2
+                cavalry_fraction = 0.4
+            }
+            modifier = {
+                factor = 1.5
+                ruler_has_personality = conqueror_personality
+            }
+        }
         add_country_modifier = { 
-                name = tonmo_rallied_horsemen
-                duration = 365
+            name = tonmo_rallied_horsemen
+            duration = 365
         }
     }
     option = {
         name = tonmo.1.c
-        ai_chance = { factor = 17 }
+        ai_chance = {
+            factor = 1
+            modifier = {
+                factor = 3
+                ruler_has_personality = tactical_genius_personality
+            }
+            modifier = {
+                factor = 0.1
+                ruler_has_personality = careful_personality
+            }
+        }
         add_country_modifier = { 
-                name = tonmo_ceaseless_march
-                duration = 365
+            name = tonmo_ceaseless_march
+            duration = 365
         }
     }
     option = {
         name = tonmo.1.d
-        ai_chance = { factor = 17 }
+        ai_chance = {
+            factor = 1
+            modifier = {
+                factor = 2.5
+                OR = {
+                    ruler_has_personality = bold_fighter_personality
+                    ruler_has_personality = inspiring_leader_personality
+                }
+            }
+            modifier = {
+                factor = 0
+                cavalry_fraction = 0.5
+            }
+        }
         add_country_modifier = { 
-                name = tonmo_dismount_fight
-                duration = 365
+            name = tonmo_dismount_fight
+            duration = 365
         }
     }
     option = {
         name = tonmo.1.e
-        ai_chance = { factor = 17 }
-        add_country_modifier = { 
-                name = tonmo_protect_homeland
-                duration = 365
+        ai_chance = {
+            factor = 1
+            modifier = {
+                factor = 2
+                NOT = { war_score = -20 }
+            }
+            modifier = {
+            factor = 2
+            NOT = { war_score = -50 }
+            }
+            modifier = {
+                factor = 2
+                NOT = { war_score = -75}
+            }
+        }
+        add_country_modifier = {
+            name = tonmo_protect_homeland
+            duration = 365
         }
     }
     option = {
         name = tonmo.1.f
-        ai_chance = { factor = 16 }
+        ai_chance = {
+            factor = 1
+            modifier = {
+                factor = 0
+                years_of_income	= 5.0
+            }
+            modifier = {
+                factor = 4
+                ruler_has_personality = greedy_personality
+            }
+            modifier = {
+                factor = 10
+                is_bankrupt	= yes
+            }
+        }
         add_country_modifier = { 
-                name = tonmo_loot_pillage
-                duration = 365
+            name = tonmo_loot_pillage
+            duration = 365
         }
     }
     option = {
         name = tonmo.1.g
-        ai_chance = { factor = 16 }
+        ai_chance = {
+            factor = 1
+            modifier = {
+			    factor = 2.5
+			    NOT = { manpower_percentage	= 0.05 }
+		    }
+        }
         add_country_modifier = { 
-                name = tonmo_scraping_barrel
-                duration = 365
+            name = tonmo_scraping_barrel
+            duration = 365
         }
     }
 }

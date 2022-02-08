@@ -1,26 +1,21 @@
-#Written with Eu4 Easy Province Creator by emiroercn
-#UNNAMED
-culture = 
-religion = animism
+discovered_by = gotzlic_tech_gr
+discovered_by = north_gomic_tech_gr
+add_core = MLD
+owner = MLD
+controller = MLD
+culture = Maldikian
+religion = lathvy
 hre = no
-base_tax = 1
+base_tax = 2
 base_production = 1
+trade_goods = fish
 base_manpower = 1
-trade_goods = 
-native_size = 2
-native_ferocity = 1
-native_hostileness = 1
 capital = "UNNAMED"
-is_city = no
+is_city = yes
 
 
 
-
-
-
-
-
-
+discovered_by = naravami_tech_gr
 
 
 

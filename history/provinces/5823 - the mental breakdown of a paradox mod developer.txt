@@ -1,3 +1,6 @@
+discovered_by = east_gomic_tech_gr
+discovered_by = north_gomic_tech_gr
+discovered_by = west_gomic_tech_gr
 #Written with Eu4 Easy Province Creator by emiroercn
 #the mental breakdown of a paradox mod developer
 add_core = MSH
@@ -6,12 +9,12 @@ controller = MSH
 culture = Neo_Xalnish
 religion = shirian
 hre = no
-discovered_by = western
+
 base_tax = 2
 base_production = 3
 trade_goods = wool
 base_manpower = 2
-capital = "trolled"
+capital = "Bavdivos"
 is_city = yes
 extra_cost = 2
 

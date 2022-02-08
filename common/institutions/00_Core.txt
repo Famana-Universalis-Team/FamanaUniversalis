@@ -30,31 +30,31 @@ feudalism = {
 				government = tribal
 			}
 			OR = {
-			culture_group = Maxan
-			culture_group = Emastalian
-			culture_group = Makyna
-			culture_group = North_West_Antebari
-			culture_group = Pextoglazian
-			culture_group = Jasuan
-			culture_group = Oppian
-			culture_group = Hoxoi
-			culture_group = Geopyopian
-			culture_group = Xalian
-			culture_group = Vanoman
-			culture_group = Aresian_C
-			culture_group = Nafan
-			culture_group = Ordic
-			culture_group = Komelwaiti
-			culture_group = Qamon
-			culture_group = Toman_C
-			culture_group = Ravsho
-			culture_group = Gotzlic
+				culture_group = Maxan
+				culture_group = Emastalian
+				culture_group = Makyna
+				culture_group = North_West_Antebari
+				culture_group = Pextoglazian
+				culture_group = Jasuan
+				culture_group = Oppian
+				culture_group = Hoxoi
+				culture_group = Geopyopian
+				culture_group = Xalian
+				culture_group = Vanoman
+				culture_group = Aresian_C
+				culture_group = Nafan
+				culture_group = Ordic_C
+				culture_group = Komelwaiti
+				culture_group = Qamon_C
+				culture_group = Toman_C
+				culture_group = Ravsho
+				culture_group = Gotzlic
 			}
 		}
 	}
 	
 	# no need for events, as its there from the start.
-	#can_start = {	is_year = 13	}
+	#can_start = { is_year = 13 }
 	#start_chance = 100
 	#on_start = institution_events.1
 
@@ -489,7 +489,7 @@ renaissance = {
 }
 
 #######################################
-# The Edolyssa
+# Tonmo Numerals
 # 
 # <insert a joke about british dental health here>
 #######################################
@@ -497,20 +497,343 @@ renaissance = {
 new_world_i = {
 
 	bonus = {
-		monarch_lifespan = 0.1
-		development_cost = -0.05
+		trade_efficiency = 0.05
 	}
 
 	trade_company_efficiency = 0.6
 
 
 	historical_start_date = 300.1.1
-	historical_start_province = 5493 #Bohora
+	historical_start_province = 5692 #Emtik
 
 	history = {
 		OR = {
 			AND = {
 				is_year = 300
+				religion = tonmo
+			}
+		}
+	}
+	
+	can_start = {
+		AND = {
+			is_year = 300
+			is_state = yes
+			is_island = no
+			religion = tonmo
+			province_has_center_of_trade_of_level = 1
+			development = 10
+		}
+	}
+	
+	start_chance = 5		#in 100 for when a province can_start
+	
+	on_start = institution_events.3
+	
+	can_embrace = {
+		always = yes
+	}
+
+	embracement_speed = {
+	
+		modifier = {
+			factor = 0.3
+			scale = yes
+			potential = {
+				owner = {
+					religion = tonmo
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = is_tonmo
+				owner = {
+					religion = tonmo
+				}
+			}
+		}
+
+		modifier = {
+			factor = 0.6
+			scale = yes
+			potential = {
+				owner = {
+					religion = tonmo
+				}
+				province_has_center_of_trade_of_level = 1
+				NOT = { province_has_center_of_trade_of_level = 2 }
+			}
+			custom_trigger_tooltip = {
+				tooltip = tonmo_tradecenter_1
+				owner = {
+					religion = tonmo
+				}
+				province_has_center_of_trade_of_level = 1
+				NOT = { province_has_center_of_trade_of_level = 2 }
+			}
+		}
+
+		modifier = {
+			factor = 0.9
+			scale = yes
+			potential = {
+				owner = {
+					religion = tonmo
+				}
+				province_has_center_of_trade_of_level = 2
+				NOT = { province_has_center_of_trade_of_level = 3 }
+			}
+			custom_trigger_tooltip = {
+				tooltip = tonmo_tradecenter_2
+				owner = {
+					religion = tonmo
+				}
+				province_has_center_of_trade_of_level = 2
+				NOT = { province_has_center_of_trade_of_level = 3 }
+			}
+		}
+
+		modifier = {
+			factor = 1.2
+			scale = yes
+			potential = {
+				owner = {
+					religion = tonmo
+				}
+				province_has_center_of_trade_of_level = 3
+			}
+			custom_trigger_tooltip = {
+				tooltip = tonmo_tradecenter_3
+				owner = {
+					religion = tonmo
+				}
+				province_has_center_of_trade_of_level = 3
+			}
+		}
+
+		modifier = {
+			factor = 0.24
+			scale = yes
+			potential = {
+				any_neighbor_province = {
+					new_world_i = 100
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = has_neighbor_tonmo_numerals
+				any_neighbor_province = {
+					new_world_i = 100
+				}
+			}
+		}
+
+		modifier = {
+			factor = 5
+			scale = yes
+			potential = {
+				owner = {
+					has_institution = new_world_i
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = has_tonmo_numerals
+				owner = {
+					has_institution = new_world_i
+				}
+			}
+		}
+
+		modifier = {
+			factor = 0.36
+			scale = yes
+			potential = {
+				any_friendly_coast_border_province = {
+					new_world_i = 100
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = borders_friendly_tonmo_numerals
+				any_friendly_coast_border_province = {
+					new_world_i = 100
+				}
+			}
+		}
+
+		modifier = {
+			factor = 0.48
+			scale = yes
+			potential = {
+    			province_has_center_of_trade_of_level = 1
+    			NOT = { province_has_center_of_trade_of_level = 2 }
+				OR = {
+					any_trade_node_member_province = {
+        				new_world_i = 100
+        				province_has_center_of_trade_of_level = 1
+    				}
+					owner = {
+						any_neighbor_country = {
+							any_owned_province = {
+								new_world_i = 100
+        						province_has_center_of_trade_of_level = 1
+							}
+    					}
+					}
+					is_capital = yes
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = friendly_tonmo_numerals_tradecenter_1
+				province_has_center_of_trade_of_level = 1
+    			NOT = { province_has_center_of_trade_of_level = 2 }
+    			OR = {
+					any_trade_node_member_province = {
+        				new_world_i = 100
+        				province_has_center_of_trade_of_level = 1
+    				}
+					owner = {
+						any_neighbor_country = {
+							any_owned_province = {
+								new_world_i = 100
+        						province_has_center_of_trade_of_level = 1
+							}
+    					}
+					}
+					is_capital = yes
+				}
+			}
+		}
+
+		modifier = {
+			factor = 0.66
+			scale = yes
+			potential = {
+				province_has_center_of_trade_of_level = 2
+    			NOT = { province_has_center_of_trade_of_level = 3 }
+    			OR = {
+					any_trade_node_member_province = {
+        				new_world_i = 100
+        				province_has_center_of_trade_of_level = 1
+    				}
+					owner = {
+						any_neighbor_country = {
+							any_owned_province = {
+								new_world_i = 100
+        						province_has_center_of_trade_of_level = 1
+							}
+    					}
+					}
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = friendly_tonmo_numerals_tradecenter_2
+				province_has_center_of_trade_of_level = 2
+    			NOT = { province_has_center_of_trade_of_level = 3 }
+    			OR = {
+					any_trade_node_member_province = {
+        				new_world_i = 100
+        				province_has_center_of_trade_of_level = 1
+    				}
+					owner = {
+						any_neighbor_country = {
+							any_owned_province = {
+								new_world_i = 100
+        						province_has_center_of_trade_of_level = 1
+							}
+    					}
+					}
+				}
+			}
+		}
+
+		modifier = {
+			factor = 0.9
+			scale = yes
+			potential = {
+				province_has_center_of_trade_of_level = 3
+    			OR = {
+					any_trade_node_member_province = {
+        				new_world_i = 100
+        				province_has_center_of_trade_of_level = 1
+    				}
+					owner = {
+						any_neighbor_country = {
+							any_owned_province = {
+								new_world_i = 100
+        						province_has_center_of_trade_of_level = 1
+							}
+    					}
+					}
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = friendly_tonmo_numerals_tradecenter_3
+				province_has_center_of_trade_of_level = 3
+    			OR = {
+					any_trade_node_member_province = {
+        				new_world_i = 100
+        				province_has_center_of_trade_of_level = 1
+    				}
+					owner = {
+						any_neighbor_country = {
+							any_owned_province = {
+								new_world_i = 100
+        						province_has_center_of_trade_of_level = 1
+							}
+    					}
+					}
+				}
+			}
+		}
+	}
+	
+	ai_will_do = { #Cost of embracing institution must be lower than this factor * last month's regular income, and higher if loans are needed. (Or it has a more than long term goal...)
+		factor = 24
+		
+		modifier = {
+			factor = 0.25
+			is_at_war = yes
+		}
+		modifier = {
+			factor = 2
+			neighbors_tech_discount = 0.1
+		}
+		modifier = {
+			factor = 2
+			neighbors_tech_discount = 0.2
+		}
+		modifier = {
+			factor = 2
+			neighbors_tech_discount = 0.3
+		}
+		modifier = {
+			factor = 2
+			neighbors_tech_discount = 0.4
+		}
+	}
+}
+
+#######################################
+# The Edolyssa
+# 
+# <insert a joke about british dental health here>
+#######################################
+
+printing_press = {
+
+	bonus = {
+		monarch_lifespan = 0.1
+		development_cost = -0.05
+	}
+
+	trade_company_efficiency = 0.8
+
+
+	historical_start_date = 350.1.1
+	historical_start_province = 5493 #Bohora
+
+	history = {
+		OR = {
+			AND = {
+				is_year = 350
 				tag = NAF
 			}
 		}
@@ -519,14 +842,14 @@ new_world_i = {
 	can_start = {
 		OR = {
 			AND = {
-				is_year = 300
+				is_year = 350
 				is_state = yes
 				is_island = no
 				is_capital = yes
 				owner = { tag = NAF }
 			}
 			AND = {
-				is_year = 310
+				is_year = 360
 				NOT = { exists = NAF }
 				culture = Kachik
 				any_province = {
@@ -541,7 +864,7 @@ new_world_i = {
 	
 	start_chance = 5		#in 100 for when a province can_start
 	
-	on_start = institution_events.3
+	on_start = institution_events.4
 	
 	can_embrace = {
 		always = yes
@@ -588,17 +911,41 @@ new_world_i = {
 		}
 
 		modifier = {
+			factor = 0.3
+			scale = yes
+			potential = {
+				owner = {
+					reverse_has_opinion = {
+						who = NAF
+						value = 100
+					}
+				}
+				is_capital = yes
+			}
+			custom_trigger_tooltip = {
+				tooltip = friendly_nafa
+				owner = {
+					reverse_has_opinion = {
+						who = NAF
+						value = 100
+					}
+				}
+				is_capital = yes
+			}
+		}
+
+		modifier = {
 			factor = 0.24
 			scale = yes
 			potential = {
 				any_neighbor_province = {
-					new_world_i = 100
+					printing_press = 100
 				}
 			}
 			custom_trigger_tooltip = {
-				tooltip = has_new_world_i_lathvy
+				tooltip = has_neighbor_edolyssa
 				any_neighbor_province = {
-					new_world_i = 100
+					printing_press = 100
 				}
 			}
 		}
@@ -608,13 +955,13 @@ new_world_i = {
 			scale = yes
 			potential = {
 				owner = {
-					has_institution = new_world_i
+					has_institution = printing_press
 				}
 			}
 			custom_trigger_tooltip = {
 				tooltip = has_edolyssa
 				owner = {
-					has_institution = new_world_i
+					has_institution = printing_press
 				}
 			}
 		}
@@ -624,13 +971,13 @@ new_world_i = {
 			scale = yes
 			potential = {
 				any_friendly_coast_border_province = {
-					new_world_i = 100
+					printing_press = 100
 				}
 			}
 			custom_trigger_tooltip = {
 				tooltip = borders_friendly_edolyssa
 				any_friendly_coast_border_province = {
-					new_world_i = 100
+					printing_press = 100
 				}
 			}
 		}
@@ -664,31 +1011,31 @@ new_world_i = {
 }
 
 #######################################
-# Egalitarianism
+# Caravans
 #######################################
 
-printing_press = {
+global_trade = {
 
 	bonus = {
-		missionary_maintenance_cost = -0.25
+		merchants = 1
 	}
 
-	trade_company_efficiency = 0.8
+	trade_company_efficiency = 1.0
 
-	historical_start_date = 350.1.1
-	historical_start_province = 1876 #Frankfurt (yes)
+	historical_start_date = 400.1.1
+	historical_start_province = 7290 #Diagya / change later
 
 	history = {
 		OR = {
 			AND = {
-				is_year = 350
+				is_year = 400
 				religion = urbaxan
 			}
 		}
 	}
 	
 	can_start = {
-		is_year = 350
+		is_year = 400
 		is_capital = yes
 		is_island = no
 		is_state = yes
@@ -698,7 +1045,7 @@ printing_press = {
 
 	start_chance = 5		#in 100 for when a province can_start
 	
-	on_start = institution_events.4
+	on_start = institution_events.5
 	
 	can_embrace = {
 		always = yes
@@ -723,13 +1070,13 @@ printing_press = {
 			scale = yes
 			potential = {
 				any_neighbor_province = {
-					printing_press = 100
+					global_trade = 100
 				}
 			}
 			custom_trigger_tooltip = {
-				tooltip = has_new_world_i_lathvy
+				tooltip = has_neighbor_caravans
 				any_neighbor_province = {
-					printing_press = 100
+					global_trade = 100
 				}
 			}
 		}
@@ -739,13 +1086,13 @@ printing_press = {
 			scale = yes
 			potential = {
 				owner = {
-					has_institution = printing_press
+					has_institution = global_trade
 				}
 			}
 			custom_trigger_tooltip = {
-				tooltip = has_edolyssa
+				tooltip = has_embraced_caravans
 				owner = {
-					has_institution = printing_press
+					has_institution = global_trade
 				}
 			}
 		}
@@ -755,28 +1102,14 @@ printing_press = {
 			scale = yes
 			potential = {
 				any_friendly_coast_border_province = {
-					printing_press = 100
+					global_trade = 100
 				}
 			}
 			custom_trigger_tooltip = {
-				tooltip = borders_friendly_printing_press
+				tooltip = borders_friendly_caravans
 				any_friendly_coast_border_province = {
-					printing_press = 100
+					global_trade = 100
 				}
-			}
-		}
-
-		modifier = {
-			factor = -0.6
-			scale = yes
-			potential = {
-				religion_group = Agmagozi
-				NOT = { religion = urbaxan }
-			}
-			custom_trigger_tooltip = {
-				tooltip = has_printing_press
-				religion_group = Agmagozi
-				NOT = { religion = urbaxan }
 			}
 		}
 	}
@@ -808,395 +1141,121 @@ printing_press = {
 }
 
 #######################################
-# Siege warfare
+# Serfdom
 #######################################
 
-global_trade = {
-
-	bonus = {
-		artillery_power = 0.10
-	}
-
-	trade_company_efficiency = 1.0
-
-	historical_start_date = 400.1.1
-	historical_start_province = 97 #Holland
-
-	history = {
-		OR = {
-			AND = {
-				is_year = 1620
-				continent = europe
-				owner = { technology_group = western }
-			}
-			
-			AND = {
-				is_year = 1660
-				continent = europe
-			}	
-			AND = {
-				is_year = 1660
-				owner = {
-					NOT = { technology_group = north_american }
-					NOT = { technology_group = mesoamerican }
-					NOT = { technology_group = south_american }
-					NOT = { technology_group = andean }
-				}
-				superregion = south_america_superregion
-			}
-			AND = {
-				is_year = 1660
-				owner = {
-					NOT = { technology_group = north_american }
-					NOT = { technology_group = mesoamerican }
-					NOT = { technology_group = south_american }
-					NOT = { technology_group = andean }
-				}
-				superregion = north_america_superregion
-			}
-			AND = {
-				is_year = 1660
-				owner = {
-					NOT = { technology_group = north_american }
-					NOT = { technology_group = mesoamerican }
-					NOT = { technology_group = south_american }
-					NOT = { technology_group = andean }
-				}
-				superregion = central_america_superregion
-			}
-			AND = {
-				is_year = 1700
-				OR = {
-					region = maghreb_region
-					region = egypt_region
-					superregion = near_east_superregion
-				}
-			}
-			
-			AND = {
-				is_year = 1720
-				has_port = yes
-				OR = {
-					superregion = india_superregion
-					superregion = persia_superregion
-					superregion = east_indies_superregion
-				}
-			}
-			AND = {
-				is_year = 1750
-				has_port = yes
-				superregion = africa_superregion
-			}
-		}
-	}
-	
-	can_start = {
-		is_year = 1600
-		is_island = no
-		highest_value_trade_node = yes
-		OR = {
-			province_has_center_of_trade_of_level = 3
-			province_has_center_of_trade_of_level = 2
-			is_capital = yes
-			AND = {
-				is_year = 1630 #fallback
-				province_has_center_of_trade_of_level = 1
-			}
-		}
-		owner = {
-			any_active_trade_node = {
-				is_strongest_trade_power = PREV
-				highest_value_trade_node = yes
-			}
-		}
-
-	}
-	start_chance = 25		#in 100 for when a province can_start
-	
-	
-	on_start = institution_events.5
-	
-	
-	can_embrace = {
-		always = yes
-	}
-
-	
-	embracement_speed = {
-	
-		modifier = {
-			factor = 0.4 #Not scaled
-			province_trade_power = 15
-		}
-		modifier = {
-			factor = 0.8 #Not Scaled
-			province_trade_power = 25
-		}
-		modifier = {
-			factor = 1.2 #Not Scaled
-			province_trade_power = 35
-		}
-		modifier = {
-			factor = 1.6 #Not Scaled
-			province_trade_power = 45
-		}
-		modifier = {
-			factor = 0.4
-			scale = yes
-			potential = {
-				province_has_center_of_trade_of_level = 1
-			}
-			custom_trigger_tooltip = {
-				tooltip = tooltip_center_of_trade_3_spread
-				province_has_center_of_trade_of_level = 3
-			}
-		}
-		modifier = {
-			factor = 0.1
-			scale = yes
-			potential = {
-				province_has_center_of_trade_of_level = 1
-			}
-			custom_trigger_tooltip = {
-				tooltip = tooltip_center_of_trade_spread
-				province_has_center_of_trade_of_level = 2
-			}
-		}
-		modifier = {
-			factor = 0.1
-			scale = yes
-			force_potential = yes	# Hide the this modifier when potential is false
-			potential = {
-				owner = { has_estate = estate_burghers }
-			}
-			custom_trigger_tooltip = {
-				tooltip = tooltip_global_trade_burghers
-				any_neighbor_province = {
-					global_trade = 100
-				}
-				owner = {
-					has_estate = estate_burghers
-					estate_loyalty = {
-						estate = estate_burghers
-						loyalty = 40
-					}
-					estate_territory = {
-						estate = estate_burghers
-						territory = 30
-					}
-				}
-			}
-		}
-
-		modifier = {
-			factor = 0.25
-			scale = yes
-			potential = {
-				has_port = no
-			}
-			custom_trigger_tooltip = {
-				tooltip = tooltip_neighbor_non_port_province_global_trade
-				has_port = no
-				any_neighbor_province = {
-					global_trade = 100
-					
-				}
-			}
-		}
-		
-		modifier = {
-			factor = 0.5
-			scale = yes
-			potential = {
-				has_port = yes
-			}
-			custom_trigger_tooltip = {
-				tooltip = tooltip_neighbor_port_province_global_trade
-				has_port = yes
-				any_neighbor_province = {
-					global_trade = 100
-					
-				}
-			}
-		}
-		
-		modifier = {
-			factor = 5
-			scale = yes
-			potential = {
-				owner = {
-					is_colonial_nation = yes
-				}
-			}
-			custom_trigger_tooltip = {
-				tooltip = tooltip_colonial_overlord_global_trade
-				OR = {
-					has_port = yes
-					is_capital = yes
-				}
-				owner = {
-					is_colonial_nation = yes
-					overlord = { has_institution = global_trade }
-				}
-			}
-		}
-		
-		modifier = {
-			factor = 0.5
-			printing_press = 100
-		}
-		modifier = {
-			factor = 2
-			scale = yes
-			potential = {
-				owner = {
-					has_institution = global_trade
-				}
-				continent = owner
-			}
-			
-			custom_trigger_tooltip = {
-				tooltip = tooltip_global_trade_embraced
-				is_owned_by_trade_company = no
-				owner = {
-					has_institution = global_trade
-				}
-			}
-		}
-		modifier = {
-			factor = 1
-			scale = yes
-			potential = {
-				owner = {
-					has_institution = global_trade
-				}
-				NOT = { continent = owner }
-			}
-			
-			custom_trigger_tooltip = {
-				tooltip = tooltip_global_trade_embraced_other_continent
-				is_owned_by_trade_company = no
-				owner = {
-					has_institution = global_trade
-				}
-			}
-		}
-	}
-	
-	ai_will_do = { #Cost of embracing institution must be lower than this factor * last month's regular income, and higher if loans are needed. (Or it has a more than long term goal...)
-		factor = 24
-		
-		modifier = {
-			factor = 0.25
-			is_at_war = yes
-		}
-		modifier = {
-			factor = 2
-			neighbors_tech_discount = 0.1
-		}
-		modifier = {
-			factor = 2
-			neighbors_tech_discount = 0.2
-		}
-		modifier = {
-			factor = 2
-			neighbors_tech_discount = 0.3
-		}
-		modifier = {
-			factor = 2
-			neighbors_tech_discount = 0.4
-		}
-	}
-}
-
-
-#######################################
-# Manufactories
-#######################################
 manufactories = {
 
 	bonus = {
-		global_trade_goods_size_modifier = 0.1
+		global_trade_goods_size_modifier = 0.10
 	}
 
 	trade_company_efficiency = 1.25
 
 	historical_start_date = 450.1.1
-	historical_start_province = 183 #Paris
+	historical_start_province = 5605 #Ayli
 
 	history = {
 		OR = {
 			AND = {
-				is_year = 1680
-				continent = europe
-				owner = { technology_group = western }
-			}
-			
-			AND = {
-				is_year = 1720
-				continent = europe
-			}	
-			AND = {
-				is_year = 1750
-				superregion = china_superregion
+				is_year = 450
+				religion = lathvy
 			}
 			AND = {
-				is_year = 1750
-				superregion = india_superregion
+				is_year = 500
+				NOT = { religion = lathvy }
 			}
-			AND = {
-				is_year = 1750
-				superregion = near_east_superregion
-			}
-			AND = {
-				is_year = 1750
-				region = maghreb_region
-			}
-			AND = {
-				is_year = 1750
-				region = egypt_region
-			}
-			AND = {
-				is_year = 1760
-				owner = {
-					NOT = { technology_group = north_american }
-					NOT = { technology_group = mesoamerican }
-					NOT = { technology_group = south_american }
-					NOT = { technology_group = andean }
-				}
-				superregion = south_america_superregion
-			}
-			AND = {
-				is_year = 1760
-				owner = {
-					NOT = { technology_group = north_american }
-					NOT = { technology_group = mesoamerican }
-					NOT = { technology_group = south_american }
-					NOT = { technology_group = andean }
-				}
-				superregion = north_america_superregion
-			}
-			AND = {
-				is_year = 1760
-				owner = {
-					NOT = { technology_group = north_american }
-					NOT = { technology_group = mesoamerican }
-					NOT = { technology_group = south_american }
-					NOT = { technology_group = andean }
-				}
-				superregion = central_america_superregion
-			}
-			
-			AND = {
-				is_year = 1780
-				superregion = persia_superregion
-			}
-			
 		}
 	}
 	
 	can_start = {
-		is_year = 1650
+		is_year = 450
+		is_island = no
+		is_state = yes
+		development = 25
+		owner = { religion = lathvy }
+		OR = {
+			superregion = jasua_superregion
+			superregion = west_estal_superregion
+			superregion = central_estal_supperregion
+		}
+	}
+
+	start_chance = 25		#in 100 for when a province can_start
+	
+	on_start = institution_events.6	
+	
+	can_embrace = {
+		always = yes
+	}
+	
+	embracement_speed = {
+	
+		modifier = {
+			factor = 0.36
+			scale = yes
+			potential = {
+				development = 25
+			}
+			custom_trigger_tooltip = {
+				tooltip = tooltip_any_neighbor_has_embraced_manufactories
+				development = 25
+			}
+		}
+
+	}
+	
+	ai_will_do = { #Cost of embracing institution must be lower than this factor * last month's regular income, and higher if loans are needed. (Or it has a more than long term goal...)
+		factor = 24
+		
+		modifier = {
+			factor = 0.25
+			is_at_war = yes
+		}
+		modifier = {
+			factor = 2
+			neighbors_tech_discount = 0.1
+		}
+		modifier = {
+			factor = 2
+			neighbors_tech_discount = 0.2
+		}
+		modifier = {
+			factor = 2
+			neighbors_tech_discount = 0.3
+		}
+		modifier = {
+			factor = 2
+			neighbors_tech_discount = 0.4
+		}
+	}
+}
+
+
+#######################################
+# Standing army
+#######################################
+enlightenment = {
+
+	bonus = {
+		shock_damage_received = -0.10
+	}
+
+	trade_company_efficiency = 1.5
+
+	historical_start_date = 500.1.1
+	historical_start_province = 6270 #Kolya ig
+
+	history = {
+		OR = {
+			AND = {
+				is_year = 500
+			}
+		}
+	}
+	
+	can_start = {
+		is_year = 500
 		is_in_capital_area = yes
 		is_island = no
 		is_state = yes
@@ -1221,18 +1280,34 @@ manufactories = {
 			has_building = mills
 		}
 	}
+
 	start_chance = 10		#in 100 for when a province can_start
 	
-	
-	on_start = institution_events.6
-	
+	on_start = institution_events.7
 	
 	can_embrace = {
 		always = yes
 	}
 
-	
 	embracement_speed = {
+
+		modifier = {
+			factor = 0.4 #Not scaled
+			province_trade_power = 15
+		}
+		modifier = {
+			factor = 0.8 #Not Scaled
+			province_trade_power = 25
+		}
+		modifier = {
+			factor = 1.2 #Not Scaled
+			province_trade_power = 35
+		}
+		modifier = {
+			factor = 1.6 #Not Scaled
+			province_trade_power = 45
+		}
+
 		modifier = {
 			factor = 0.5
 			scale = yes
@@ -1617,18 +1692,18 @@ manufactories = {
 
 
 #######################################
-# Enlightenment
+# Maritime Expeditions
 #######################################
-enlightenment = {
+industrialization = {
 
 	bonus = {
-		culture_conversion_cost = -0.25
+		naval_attrition = -0.20
 	}
 
-	trade_company_efficiency = 1.5
+	trade_company_efficiency = 2.0
 
-	historical_start_date = 500.1.1
-	historical_start_province = 236 #London
+	historical_start_date = 550.1.1
+	historical_start_province = 7058 #Olopoka (obv change later)
 
 	history = {
 		OR = {
@@ -1708,7 +1783,7 @@ enlightenment = {
 	start_chance = 10		#in 100 for when a province can_start
 	
 	
-	on_start = institution_events.7
+	on_start = institution_events.8
 	
 	
 	can_embrace = {
@@ -1999,19 +2074,19 @@ enlightenment = {
 
 
 #######################################
-# Industrialisation
+# Feudalism
 #######################################
-industrialization = {
+feudalism_two = {
 	
 	trade_company_efficiency = 2.0
 
 	bonus = {
-		global_manpower_modifier = 0.25
-		global_tax_modifier = 0.15
+		vassal_forcelimit_bonus = 0.25
+		vassal_income = 0.2
 	}
 
-	historical_start_date = 550.1.1
-	historical_start_province = 244 #Lancashire
+	historical_start_date = 600.1.1
+	historical_start_province = 5725 #Nabrosia
 
 	history = {
 		OR = {

@@ -30,7 +30,7 @@ oppian_group = {
 		}
 
 		heretic = {
-			THALMORIAN CHIGIMI 
+			THALMORIAN_H CHIGIMI 
 		}
 		allowed_conversion = {
 			reformed_oppian
@@ -649,7 +649,7 @@ lathvy_group = {
 		}
 
 		heretic = {
-			YOMTANIAN LIBERAL YOSIST ASSUL
+			 LIBERAL YOSIST ASSUL
 		}
 
 		uses_church_power = yes
@@ -691,7 +691,7 @@ lathvy_group = {
 		}
 
 		heretic = {
-			ORDIC YOSIST HARMONIC REFORMED
+			ORDIC_H YOSIST HARMONIC REFORMED_LH
 		}
 
 		crusade_name = CRUSADE
@@ -724,7 +724,7 @@ gomic_pagan_group = {
 		
 		fervor = yes
 		
-		heretic = { HALOGENITE OPMAKI NASTAN }	
+		heretic = { HALOGENITE OPMAKI_H NASTAN }	
 	}
 	bosisi = {
 		color = { 93 90 23 }
@@ -741,7 +741,7 @@ gomic_pagan_group = {
 			local_missionary_strength = 0.02
 		}
 		
-		heretic = { ANTIASH }
+		heretic = { ANTIASH_H }
 	}
 	
 	egr = {
@@ -776,7 +776,7 @@ gomic_pagan_group = {
 			idea_cost = -0.05
 		}
 		
-		heretic = { UMIC DYRIAN }	
+		heretic = { UMIC DYRIAN_H }	
 
 	}
 	pawani = {
@@ -1077,15 +1077,11 @@ Agmagozi = {
 
 		country = {
 			heir_chance = 1
-			stability_cost_modifier = -0.25
+			stability_cost_modifier = -0.10
 		}
 		country_as_secondary = {
 			tolerance_own = 1
 			legitimacy = 0.5
-		}
-
-		province = {
-			local_missionary_strength = -0.01
 		}
 
 		heretic = {
@@ -1109,35 +1105,51 @@ Agmagozi = {
 		}
 
 		province = {
-			local_missionary_strength = -0.01
+			local_missionary_strength = 0.01
 		}
 
 		heretic = {
-			REFORMED
+			OLD_AGMAGOZI
 		}
 
 		crusade_name = HOLY_WAR
 	}
 
 	qanoyan = { # Fix icons and colors
-		icon = 
-		color = { 59 127 152}
+		icon = 19
+		color = { 208 210 24 }
 
 		country = {
 			heir_chance = 1
-			technology_cost = -0.05
+			land_forcelimit_modifier = 0.10
 		}
 		country_as_secondary = {
-			tolerance_heretic = 1
-			governing_capacity_modifier = 0.1
-		}
-
-		province = {
-			local_missionary_strength = -0.01
+			ae_impact = -0.1
+			vassal_income = 0.05
 		}
 
 		heretic = {
-			REFORMED
+			OLD_AGMAGOZI
+		}
+
+		crusade_name = HOLY_WAR
+	}
+
+	agmagoz = { # Fix icons and colors
+		icon = 19
+		color = { 137 221 193 }
+
+		country = {
+			heir_chance = 1
+			num_accepted_cultures = 1
+		}
+		country_as_secondary = {
+			ae_impact = -0.1
+			years_of_nationalism = -5
+		}
+
+		heretic = {
+			QANOYAN DORROMAN TOMBASA
 		}
 
 		crusade_name = HOLY_WAR
@@ -1163,23 +1175,23 @@ Agmagozi = {
 
 	urbaxan = { # Fix icons and colors
 		icon = 19
-		color = { 58 127 152}
+		color = { 39 128 29 }
 
 		country = {
 			heir_chance = 1
-			technology_cost = -0.05
+			idea_cost = -0.1
 		}
 		country_as_secondary = {
-			tolerance_heretic = 1
 			governing_capacity_modifier = 0.1
+			trade_efficiency = 0.05
 		}
 
 		province = {
-			local_missionary_strength = -0.01
+			local_missionary_strength = -0.02
 		}
 
 		heretic = {
-			REFORMED
+			BALOLI #should be it's own thing imo
 		}
 
 		crusade_name = HOLY_WAR
@@ -1202,6 +1214,17 @@ tonmo_group = {
             movement_speed = 0.05
             cav_to_inf_ratio = 0.10
         }
+
+		uses_anglican_power = yes
+		aspects = {
+			call_chiefs_aspect
+			recruit_warlord_aspect
+			hold_war_ceremonies_aspect
+			raise_horde_aspect
+			spread_tonmo_aspect
+		}
+
+		aspects_name = TONMO_ASPECTS
         
         heretic = { QYDIAN }
         crusade_name = HOLY_WAR
@@ -1295,6 +1318,23 @@ north_estali = {
 		}
 		
 		heretic = { OGRACABA }
+	}
+	gotzli = {
+		color = { 85 81 86 }
+		icon = 26
+		country = {
+			defensiveness = 0.10
+			stability_cost_modifier = -0.1
+		}
+		country_as_secondary = {
+			global_tax_modifier = 0.1
+			global_unrest = -1
+		}
+		province = {
+			local_missionary_strength = 0.02
+		}
+		
+		heretic = { UGRONIS }
 	}
 	harmonized_modifier = harmonized_pagan
 	

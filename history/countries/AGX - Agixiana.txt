@@ -2,7 +2,7 @@ government = monarchy
 add_government_reform = autocracy_reform
 government_rank = 2
 mercantilism = 10
-technology_group = western
+technology_group = west_gomic_tech_gr
 religion = lathvy
 primary_culture = Lerushian
 capital = 5361	# change to real capital
@@ -16,6 +16,6 @@ religious_school = maxan_school
 		mil = 0
 		dynasty = "Amasha"
 		birth_date = 190.12.7
-	    add_ruler_personality = infertile_personality
 	}
+	add_ruler_personality = infertile_personality
 }

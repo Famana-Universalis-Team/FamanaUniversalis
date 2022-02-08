@@ -1,18 +1,21 @@
+discovered_by = gotzlic_tech_gr
+discovered_by = naravami_tech_gr
 culture = Leronyan
-religion = animism
+religion = gotzli
 owner = LER
 controller = LER
 add_core = LER
+add_core = MIZ
 
 ###
 
 hre = no
-discovered_by = western
-base_tax = 1
-base_production = 1
-trade_goods = grain
-base_manpower = 1
-capital = "UNNAMED"
+
+base_tax = 3
+base_production = 4
+trade_goods = copper
+base_manpower = 4
+capital = "Nizoora"
 is_city = no
 extra_cost = 1
 

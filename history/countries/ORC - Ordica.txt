@@ -2,10 +2,12 @@ government = monarchy
 add_government_reform = autocracy_reform
 government_rank = 2
 mercantilism = 10
-technology_group = western
+technology_group = north_gomic_tech_gr
 religion = lathvy
 primary_culture = Ordican
 add_accepted_culture = East_Ordican
+add_accepted_culture = Yuvlan
+add_accepted_culture = Dlosnim
 capital = 5725	# change to real capital
 historical_rival = PEX
 historical_friend = HIT
@@ -19,5 +21,18 @@ religious_school = pextoglazian_school
 		dip = 3
 		mil = 4
 		birth_date = 179.2.16
+	}
+}
+
+208.5.3 = {
+	leader = {
+		name = "Aiypaito Comugia"
+		type = general
+
+		fire = 4
+		shock = 5
+		manuever = 3
+		siege = 2
+		death_date = 256.2.9
 	}
 }

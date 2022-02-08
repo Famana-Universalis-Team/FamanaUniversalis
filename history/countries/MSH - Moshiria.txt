@@ -2,7 +2,7 @@ government = monarchy
 add_government_reform = autocracy_reform
 government_rank = 2
 mercantilism = 10
-technology_group = western
+technology_group = west_gomic_tech_gr
 religion = shirian
 primary_culture = Neo_Xalnish
 capital = 5467	# change to real capital
@@ -21,3 +21,6 @@ historical_rival = ALM
 		dip = 6
 		mil = 4
 	}
+	add_ruler_personality = silver_tongue_personality
+	add_ruler_personality = careful_personality
+}

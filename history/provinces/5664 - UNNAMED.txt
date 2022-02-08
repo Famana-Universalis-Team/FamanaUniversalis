@@ -1,3 +1,5 @@
+discovered_by = north_gomic_tech_gr
+discovered_by = west_gomic_tech_gr
 culture = Nahallaian
 religion = lathvy
 owner = NHL
@@ -7,10 +9,11 @@ add_core = NHL
 ###
 
 hre = no
-discovered_by = western
+
 base_tax = 2
 base_production = 3
 trade_goods = fish
 base_manpower = 2
 is_city = no
 extra_cost = 1
+discovered_by = estal_tribal_tech_gr

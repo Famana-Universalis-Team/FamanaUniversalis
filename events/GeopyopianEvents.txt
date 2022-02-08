@@ -1,0 +1,30 @@
+namespace = geop
+
+# Geo temporary kneecapping
+country_event = {
+    id = geop.1
+    title = geop.1.t
+    desc = geop.1.desc
+    picture = BATTLE_eventPicture
+	fire_only_once = yes
+    hidden = yes
+
+    trigger = {
+        tag = GEP
+    }
+	mean_time_to_happen = {
+		days = 1
+	}
+
+    option = {
+        name = geop.1.a
+        ai_chance = { factor = 1 }
+        GEP = {
+            add_country_modifier = { 
+                name = geop_kneecapping
+                duration = -1
+                hidden = yes
+            }
+        }
+    }
+}

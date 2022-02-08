@@ -1,5 +1,7 @@
+discovered_by = gotzlic_tech_gr
+discovered_by = naravami_tech_gr
 culture = Zubaran
-religion = animism
+religion = gotzli
 owner = ZUB
 controller = ZUB
 add_core = ZUB
@@ -7,10 +9,10 @@ add_core = ZUB
 ###
 
 hre = no
-discovered_by = western
-base_tax = 1
-base_production = 1
-trade_goods = grain
+
+base_tax = 2
+base_production = 2
+trade_goods = fur
 base_manpower = 1
 capital = "UNNAMED"
 is_city = no

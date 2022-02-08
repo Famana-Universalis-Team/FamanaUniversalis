@@ -1,3 +1,7 @@
+discovered_by = gotzlic_tech_gr
+discovered_by = east_gomic_tech_gr
+discovered_by = north_gomic_tech_gr
+discovered_by = west_gomic_tech_gr
 culture = Bohoran
 religion = lathvy
 owner = SKT
@@ -7,7 +11,7 @@ add_core = SKT
 ###
 
 hre = no
-discovered_by = western
+
 base_tax = 7
 base_production = 5
 trade_goods = glass

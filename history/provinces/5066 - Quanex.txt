@@ -1,3 +1,6 @@
+discovered_by = east_gomic_tech_gr
+discovered_by = north_gomic_tech_gr
+discovered_by = west_gomic_tech_gr
 #Written with Eu4 Easy Province Creator by emiroercn
 #UNNAMED
 add_core = TCK
@@ -6,14 +9,14 @@ controller = TCK
 culture = Quanexite
 religion = western_oppian
 hre = no
-discovered_by = western
+
 base_tax = 9
 base_production = 8
 trade_goods = paper
 base_manpower = 8
 capital = "Quanex"
 is_city = no
-extra_cost = 14
+extra_cost = 15
 
 center_of_trade = 2
 fort_15th = yes

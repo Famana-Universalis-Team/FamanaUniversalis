@@ -2,7 +2,7 @@ government = theocracy
 add_government_reform = holy_monarchy_reform
 government_rank = 2
 mercantilism = 10
-technology_group = western
+technology_group = north_gomic_tech_gr
 religion = lathvy
 primary_culture = Pextan
 add_accepted_culture = Glazian
@@ -22,4 +22,6 @@ religious_school = pextoglazian_school
 		dynasty = "Kel"
 		birth_date = 174.5.7
 	}
+	add_ruler_personality = zealot_personality
+	add_ruler_personality = malevolent_personality
 }

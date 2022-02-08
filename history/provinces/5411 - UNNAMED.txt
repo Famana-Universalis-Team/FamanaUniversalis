@@ -1,3 +1,6 @@
+discovered_by = east_gomic_tech_gr
+discovered_by = north_gomic_tech_gr
+discovered_by = west_gomic_tech_gr
 culture = Morian_C
 religion = morian
 owner = ALM
@@ -8,14 +11,14 @@ add_core = MRS
 ###
 
 hre = no
-discovered_by = western
+
 base_tax = 6
 base_production = 8
 trade_goods = iron
 base_manpower = 8
 capital = "Morsum"
 is_city = yes
-extra_cost = 1
+extra_cost = 10
 fort_15th = yes
 add_province_triggered_modifier = religious_center
 

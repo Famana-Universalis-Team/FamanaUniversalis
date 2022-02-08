@@ -1,0 +1,182 @@
+namespace = nhl
+
+country_event = {
+    id = nhl.1
+    title = nhl.1.t
+    desc = nhl.1.d
+    picture = LIBERUM_VETO_eventPicture
+    fire_only_once = yes
+	mean_time_to_happen = {
+		months = 12
+	}
+	trigger = {
+        is_year = 238
+		tag = NHL
+	}
+
+    immediate = {
+        random_owned_province = {
+            limit = {
+                area = poto_haroo_area
+            }
+            spawn_rebels = {
+                type = pretender_rebels
+                size = 2
+                culture = Tolan
+                religion = lathvy
+                friend = ALT
+            }
+        }
+        random_owned_province = {
+            limit = {
+                area = dreklos_area
+            }
+            spawn_rebels = {
+                type = pretender_rebels
+                size = 1
+                culture = Tolan
+                religion = lathvy
+                friend = ALT
+            }
+        }
+        ALT = { set_country_flag = nahallaian_coup }
+    }
+
+    option = {
+		name = nhl.1.a
+        ai_chance = { factor = 1 }
+    }
+}
+
+country_event = {
+    id = nhl.2
+    title = nhl.2.t
+    desc = nhl.2.d
+    picture = LIBERUM_VETO_eventPicture
+    fire_only_once = yes
+	mean_time_to_happen = {
+		days = 1
+	}
+	trigger = {
+        tag = ALT
+		has_country_flag = nahallaian_coup
+	}
+
+    option = {
+		name = nhl.2.a
+        ai_chance = { factor = 1 }
+		bortur_area = { add_claim = ALT }
+        6194 = { add_claim = ALT }
+        6182 = {
+			limit = { 
+				is_empty = yes
+			}
+			create_colony = 1000
+			cede_province = ALT
+			add_core = ALT
+			change_culture = Tolan
+			change_religion = lathvy
+		}
+        6409 = {
+			limit = { 
+				is_empty = yes
+			}
+			create_colony = 1000
+			cede_province = ALT
+			add_core = ALT
+			change_culture = Tolan
+			change_religion = lathvy
+		}
+        add_casus_belli = {
+            target = NHL
+            type = cb_conquest
+            months = 12
+        }
+        6183 = {
+            infantry = ALT
+            infantry = ALT
+            infantry = ALT
+            infantry = ALT
+            infantry = ALT
+            infantry = ALT
+            cavalry = ALT
+            cavalry = ALT
+        }
+        ALT = { declare_war = NHL }
+        alo_tramo_area = { add_claim = NHL }
+    }
+}
+
+country_event = {
+    id = nhl.3
+    title = nhl.3.t
+    desc = nhl.3.d
+    picture = LIBERUM_VETO_eventPicture
+    fire_only_once = yes
+	mean_time_to_happen = {
+		days = 1
+	}
+	trigger = {
+        is_year = 238
+        tag = ALT
+        ALT = { has_country_flag = nahallaian_coup }
+        OR = {
+            6184 = {
+                OR = {
+                    has_rebel_faction = pretender_rebels
+                    controlled_by = ALT
+                }
+            }
+            NHL = {
+                num_of_owned_provinces_with = {
+	                value = 14
+	                has_rebel_faction = pretender_rebels
+                }
+            }
+        }
+	}
+
+    option = {
+		name = nhl.3.a
+        ai_chance = { factor = 1 }
+        NHL = {
+            every_owned_province = {
+                limit = {
+                    culture = Tolan
+                }
+                cede_province = ALT
+			    add_core = ALT
+            }
+            white_peace = ALT
+        }
+        clr_country_flag = nahallaian_coup
+    }
+}
+
+country_event = {
+    id = nhl.4
+    title = nhl.4.t
+    desc = nhl.4.d
+    picture = LIBERUM_VETO_eventPicture
+    fire_only_once = yes
+	mean_time_to_happen = {
+		days = 1
+	}
+	trigger = {
+        is_year = 238
+        tag = NHL
+        OR = {
+            exists = TOL
+            ALT = {
+                owns_core_province = 6179
+            }
+        }
+	}
+
+    option = {
+		name = nhl.4.a
+        ai_chance = { factor = 1 }
+        add_prestige = -25
+        add_stability = -1
+    }
+}

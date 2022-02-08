@@ -21,7 +21,7 @@ country_event = {
 
     option = {
 		add_war_exhaustion = 4
-        name = pexto.1.a
+        name = pexto.1.b
         ai_chance = { factor = 1 }
 		stability = -3
 		add_estate_loyalty = {
@@ -46,7 +46,7 @@ country_event = {
     }
     option = {
 		add_war_exhaustion = 4
-        name = pexto.1.b
+        name = pexto.1.a
         ai_chance = { factor = 1 }
 		stability = -3
 		add_estate_loyalty = {
@@ -84,55 +84,13 @@ country_event = {
 			clr_country_flag = pextocivilwar
 			remove_government_reform = corrupt_monarchy_reform
 			add_government_reform = holy_monarchy_reform
-			add_country_flag = survived_fall
+			set_country_flag = survived_fall
 		}
 	}
     option = {
         name = pexto.2.a
         ai_chance = { factor = 1 }
     }
-}
-
-#Vassals go disloyal
-country_event = {
-    id = pexto.3
-    title = pexto.3.t
-    desc = pexto.3.d
-    picture = BATTLE_eventPicture
-	trigger = {
-		has_country_flag = pextocivilwar
-	}
-
-	mean_time_to_happen = {
-		months = 6
-	}
-
-    fire_only_once = yes
-
-	immediate = {
-		set_variable = {
-			which = pextoDisloyal
-			value = 7.0
-		}
-	}
-
-    option = {
-        name = pexto.3.a
-        ai_chance = { factor = 10 }
-		every_subject_country = {
-			add_liberty_desire = 75
-			add_trust = {
-				who = PEX
-				value = -60
-				mutual = yes
-			}
-		}
-    }
-    option = {
-        name = pexto.3.b
-        ai_chance = { factor = 1 }
-		release_all_subjects = yes
-	}
 }
 
 #particularists
@@ -143,6 +101,7 @@ country_event = {
     picture = RELIGIOUS_TURMOIL_eventPicture
 	trigger = {
 		has_country_flag = pextocivilwar
+		NOT = { has_country_flag = had_particularists }
 	}
 
 	mean_time_to_happen = {
@@ -158,6 +117,7 @@ country_event = {
 				}
 			}
 		}
+		set_country_flag = had_particularists
 	}
 
     option = {
@@ -174,6 +134,7 @@ country_event = {
     picture = RELIGIOUS_TURMOIL_eventPicture
 	trigger = {
 		has_country_flag = pextocivilwar
+		NOT = { has_country_flag = second_wave_unrest }
 	}
 	major = yes
 	fire_only_once = yes
@@ -199,6 +160,7 @@ country_event = {
 				id = pexto.9
 			}
 			log = "fired civil war"
+			set_country_flag = second_wave_unrest
 		}
 	}
 
@@ -444,15 +406,11 @@ country_event = {
     }
 }
 
-
-country_event = { #ordican claims
+country_event = { #Vassals go disloyal 95%
     id = pexto.13
     title = pexto.13.t
     desc = pexto.13.d
-    picture = LIBERUM_VETO_eventPicture
-	mean_time_to_happen = {
-		months = 10
-	}
+    picture = BATTLE_eventPicture
 	trigger = {
 		AND = {
 			tag = PEX
@@ -460,20 +418,36 @@ country_event = { #ordican claims
 		}
 	}
 
+	mean_time_to_happen = {
+		months = 2
+	}
+
+    fire_only_once = yes
+
+	immediate = {
+		set_variable = {
+			which = pextoDisloyal
+			value = 7.0
+		}
+	}
+
     option = {
-		name = pexto.13.a
-        ai_chance = { factor = 1 }
-		every_province = {
-			limit = {
-				OR = {
-					area = unnamed_pexto_2
-					area = mofemi_morsum_area
-					area = unnamed_pexto_1
-				}
+        name = pexto.13.a
+        ai_chance = { factor = 10 }
+		every_subject_country = {
+			add_liberty_desire = 75
+			add_trust = {
+				who = PEX
+				value = -60
+				mutual = yes
 			}
-			add_permanent_claim = ORC
 		}
     }
+    option = {
+        name = pexto.13.b
+        ai_chance = { factor = 1 }
+		release_all_subjects = yes
+	}
 }
 
 country_event = { #bye bye pexto
@@ -482,7 +456,7 @@ country_event = { #bye bye pexto
     desc = pexto.14.d
     picture = LAND_MILITARY_eventPicture
 	mean_time_to_happen = {
-		years = 3
+		years = 7
 	}
 	trigger = {
 		AND = {
@@ -490,11 +464,25 @@ country_event = { #bye bye pexto
 			has_country_flag = pextocivilwar
 		}
 	}
-
     option = {
 		name = pexto.14.a
         ai_chance = { factor = 1 }
-		collapse_nation = yes
+		ROOT = {
+			release_all_subjects = yes
+			release	= RNP
+			release = FST
+			release = REN
+			release = KRH
+			release = PLM
+			release = LOM
+			release = GNZ
+			release = PLK
+			release = NPX
+			release = POM
+		}
+		west_estal_superregion = {
+			remove_core	= PEX
+		}
     }
 }
 
@@ -509,13 +497,13 @@ country_event = { #DIE ALREADY
 	fire_only_once = yes
 
 	mean_time_to_happen = {
-		years = 5
+		years = 4
 	}
 
 	immediate = {
 		hidden_effect = {
-			collapse_nation = yes
-			add_war_exhaustion = 5
+			add_war_exhaustion = 10
+			add_stability = -5
 			#spawn rebels. only works through events like this for some reason
 			country_event = { 
 				id = pexto.7
@@ -553,6 +541,6 @@ country_event = { #DIE ALREADY
     option = {
         name = pexto.5.a
         ai_chance = { factor = 1 }
+		add_prestige = -100
     }
 }
-

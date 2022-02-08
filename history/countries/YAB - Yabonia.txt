@@ -2,11 +2,11 @@ government = monarchy
 add_government_reform = autocracy_reform
 government_rank = 2
 mercantilism = 10
-technology_group = western
+technology_group = east_gomic_tech_gr
 religion = egr
-primary_culture = Oppio_Jasuan
-add_accepted_culture = West_Jasuan
-add_accepted_culture = Bamali_C
+primary_culture = Yabonian
+add_accepted_culture = Oppio_Jasuan
+add_accepted_culture = Geteri
 capital = 5644	# change to real capital
 secondary_religion = bamali
 

@@ -33,6 +33,8 @@ monarchy = {
 				tomban_reform
 				crown_kingdom_reform
 				nafan_gov
+				anmoean_council
+				emmi
 			}
 		}
 		hereditary_vs_nobility = {
@@ -411,8 +413,7 @@ tribal = {
 				siberian_tribe
 				gond_kingdom
 				great_mongol_state_reform
-				anmoean_council
-				emmi
+				
 			}
 		}
 		tribal_cultural_values = {
@@ -453,6 +454,51 @@ native = {
 		native_council_legacy
 	}
 	color = { 194 127 209 }
+
+	reform_levels = {
+		tribe_organization = {
+			reforms = {
+				native_chiefdom_reform
+				native_federation_reform
+				native_clan_council_reform
+				native_hereditary_reform
+			}
+		}
+
+		story_tradition = {
+			reforms = {
+				native_martial_tradition_reform
+				native_oral_tradition_reform
+				native_land_tradition_reform
+			}
+		}
+
+		agricultural_revolution = {
+			reforms = {
+				native_war_band_reform
+				native_settle_down_reform
+				native_seasonal_travel_reform
+			}
+		}
+
+		legal_basis = {
+			reforms = {
+				native_codified_power_reform
+				native_diplomatic_cermonies_reform
+				native_trading_with_foreigners_reform
+			}
+		}
+
+		national_identity = {
+			reforms = {
+				native_becomes_horde_reform
+				native_becomes_monarchy_reform
+				native_becomes_republic_reform
+				native_becomes_theocracy_reform
+				native_remain_being_native_reform
+			}
+		}
+	}
 }
 
 

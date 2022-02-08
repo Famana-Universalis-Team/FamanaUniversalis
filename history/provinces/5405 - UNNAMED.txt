@@ -1,3 +1,6 @@
+discovered_by = east_gomic_tech_gr
+discovered_by = north_gomic_tech_gr
+discovered_by = west_gomic_tech_gr
 culture = Neo_Xalnish
 religion = shirian
 owner = VOX
@@ -7,11 +10,11 @@ add_core = VOX
 ###
 
 hre = no
-discovered_by = western
+
 base_tax = 5
 base_production = 4
 trade_goods = wine
 base_manpower = 5
-capital = "UNNAMED"
+capital = "Larm"
 is_city = yes
 extra_cost = 1
