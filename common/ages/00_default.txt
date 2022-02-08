@@ -1,5 +1,5 @@
 age_of_discovery = {
-	start = 1400
+	start = 200
 	
 	can_start = {
 		always = yes
@@ -240,7 +240,7 @@ age_of_discovery = {
 }
 
 age_of_reformation = {
-	start = 1530
+	start = 300
 	
 	can_start = {
 		is_religion_enabled = protestant
@@ -449,7 +449,7 @@ age_of_reformation = {
 
 
 age_of_absolutism = {
-	start = 1620
+	start = 400
 	
 	can_start = {
 		is_institution_enabled = global_trade
@@ -635,7 +635,7 @@ age_of_absolutism = {
 }
 
 age_of_revolutions = {
-	start = 1710
+	start = 500
 	
 	can_start = {
 		is_institution_enabled = enlightenment
