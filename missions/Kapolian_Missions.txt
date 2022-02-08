@@ -1,0 +1,76 @@
+
+kap_1 = {
+	slot = 1
+	generic = no
+    ai = yes
+    potential = {
+	 NOT = { map_setup = map_setup_random }
+		OR = {
+            tag = KAP
+            has_country_flag = kin_jasua_flag
+        }
+    }
+    has_country_shield = yes
+	
+
+	kap_conquest_of_iaperko = {
+		icon = subiaco_press
+		required_missions = { }
+		
+		 provinces_to_highlight = {
+			area = unnamed_area_40
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			owns_core_province = 5503
+		}
+		effect = {
+			unnamed_area_40  = {
+				add_permanent_claim = ROOT
+			}
+			
+			yatia_area  = {
+				add_permanent_claim = ROOT
+			}
+			unnamed_area_33  = {
+				add_permanent_claim = ROOT
+			}
+		}
+    }
+	kap_yatian_conquest = {
+		icon = subiaco_press
+		required_missions = { kap_conquest_of_iaperko }
+		
+		provinces_to_highlight = {
+			OR = {
+				area = unnamed_area_40
+				area = yatia_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+            unnamed_area_40 = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+		    }
+			yatia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+        }
+		
+		effect = {
+			verko_area = {
+				add_permanent_claim = ROOT
+			}
+			nikat_area = {
+				add_permanent_claim = ROOT
+			}
+			oearan_area  = {
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
