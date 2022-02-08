@@ -71,3 +71,38 @@ kap_1 = {
 		}
 	}
 	
+	
+	kap_verkan_nikat_conquest = {
+		icon = subiaco_press
+		required_missions = { kap_yatian_conquest }
+		
+		provinces_to_highlight = {
+			OR = {
+				area = verko_area
+				area = nikat_area
+				area = oearan_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+            oearan_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+		    }
+			nikat_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			oearan__area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+        }
+		
+		effect = {
+			arrol_area = {
+				add_permanent_claim = ROOT
+			}
+		}
+	}
