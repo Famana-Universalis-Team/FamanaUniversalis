@@ -1,10 +1,26 @@
 
-yom_invasion = {
-	global_manpower_modifier = -0.25
+yom_invasion_3 = {
+	global_manpower_modifier = -0.20
 	infantry_power = -0.10
-	core_creation = 0.50
+	core_creation = 0.40
 	global_unrest = 2
 	development_cost = 0.20
+}
+
+yom_invasion_2 = {
+	global_manpower_modifier = -0.10
+	infantry_power = -0.05
+	core_creation = 0.20
+	global_unrest = 1
+	development_cost = 0.10
+}
+
+yom_invasion_1 = {
+	global_manpower_modifier = -0.05
+    infantry_power = -0.025
+	core_creation = 0.10
+    global_unrest = 0.5
+	development_cost = 0.05
 }
 
 midgame_crisis = {

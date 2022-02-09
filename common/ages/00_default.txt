@@ -3,13 +3,12 @@ age_of_discovery = {
 	
 	can_start = {
 		always = yes
-	}
-	
-	religious_conflicts = yes
+	}	
+
 	papacy = 1.0
-	
 
 	objectives = {
+
 		obj_discover_america = {
 			allow = {
 				capital_scope = {
@@ -29,6 +28,7 @@ age_of_discovery = {
 					}
 				}
 		}
+
 		obj_100_development = {
 			allow = {
 				capital_scope = {
@@ -42,10 +42,7 @@ age_of_discovery = {
 			total_development = 100
 
 		}
-		
-		
-		
-	
+
 		obj_5_centers_of_trade = {
 			calc_true_if = {
 				all_owned_province = {
@@ -59,6 +56,7 @@ age_of_discovery = {
 				amount = 5
 			}
 		}
+
 		obj_30_development_city = {
 			custom_trigger_tooltip = {
 				tooltip = obj_30_development_city_tooltip
@@ -71,6 +69,7 @@ age_of_discovery = {
 				}
 			}
 		}
+
 		obj_renaissance = {
 	 		has_institution = renaissance
 	 		all_state_province = {
@@ -105,10 +104,8 @@ age_of_discovery = {
 	}		
 	
 
-	
-	
-	
 	abilities = {
+
 		ab_allow_feudal_de_jure_law = {
 			effect = {
 				custom_tooltip = feudal_de_jure_law
@@ -129,8 +126,7 @@ age_of_discovery = {
 		}
 		
 
-		ab_transfer_vassal_wargoal = 
-		{
+		ab_transfer_vassal_wargoal = {
 			rule = {
 				can_transfer_vassal_wargoal = yes
 				can_chain_claim = yes
@@ -148,7 +144,6 @@ age_of_discovery = {
 				factor = 10
 			}	
 		}
-		
 
 		ab_cavalry_armies = {
 			modifier = {
@@ -158,6 +153,7 @@ age_of_discovery = {
 				factor = 10
 			}
 		}
+
 		ab_colony_boost_development = {
 			rule = {
 				can_colony_boost_development = yes
@@ -204,6 +200,7 @@ age_of_discovery = {
 				factor = 100
 			}
 		}
+
 		ab_denmark_reduced_lib_desire = {
 		
 			allow = {
@@ -224,6 +221,7 @@ age_of_discovery = {
 				}
 			}
 		}
+
 		ab_venice_ship_trade = {
 		
 			allow = {
@@ -239,8 +237,10 @@ age_of_discovery = {
 	}
 }
 
+
+
 age_of_reformation = {
-	start = 300
+	start = 290
 	
 	can_start = {
 		is_institution_enabled = new_world_i
@@ -449,7 +449,7 @@ age_of_reformation = {
 
 
 age_of_absolutism = {
-	start = 400
+	start = 380
 	
 	can_start = {
 		any_country = {
@@ -637,7 +637,7 @@ age_of_absolutism = {
 }
 
 age_of_revolutions = {
-	start = 500
+	start = 470
 	
 	can_start = {
 		any_country = {
