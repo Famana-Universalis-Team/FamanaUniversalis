@@ -12,11 +12,11 @@ add_core = PLM
 
 hre = no
 
-base_tax = 3
+base_tax = 2
 base_production = 2
-trade_goods = naval_supplies
-base_manpower = 2
-capital = "Beshzies"
+trade_goods = grain
+base_manpower = 3
+capital = "Ganshtayz"
 is_city = no
 extra_cost = 1
-add_local_autonomy = 15
+

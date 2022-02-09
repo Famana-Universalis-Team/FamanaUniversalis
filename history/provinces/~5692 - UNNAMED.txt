@@ -11,11 +11,13 @@ add_core = VAN
 
 hre = no
 
-base_tax = 2
-base_production = 3
-trade_goods = fish
-base_manpower = 2
-capital = "Emtit"
-is_city = no
+base_tax = 3
+base_production = 4
+trade_goods = paper
+base_manpower = 3
+capital = "Emtik"
+is_city = yes
+fort_15th = yes
+center_of_trade = 1
 extra_cost = 1
-add_local_autonomy = 25
+

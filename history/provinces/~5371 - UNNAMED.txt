@@ -1,22 +1,23 @@
 discovered_by = east_gomic_tech_gr
 discovered_by = north_gomic_tech_gr
 discovered_by = west_gomic_tech_gr
-culture = Glazian
+culture = Xofkan
 religion = lathvy
-owner = PEX
-controller = PEX
-add_core = PEX
-add_core = PLM
+owner = AGX
+controller = AGX
+add_core = AGX
+add_core = AME
+add_core = VNS
 
 ###
 
 hre = no
 
-base_tax = 3
-base_production = 2
-trade_goods = naval_supplies
+base_tax = 2
+base_production = 3
+trade_goods = slaves
 base_manpower = 2
-capital = "Beshzies"
+capital = "Melka"
 is_city = no
 extra_cost = 1
-add_local_autonomy = 15
+

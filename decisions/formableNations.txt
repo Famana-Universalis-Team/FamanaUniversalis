@@ -2539,12 +2539,14 @@ country_decisions = {
 		effect = {
 			restore_country_name = yes
 			change_tag = HZY
-			set_capital = 6546
 			if = {
 				limit = {
 					NOT = { government_rank = 2 }
 				}
 				set_government_rank = 2
+			}
+			hozy_area = {
+				add_core = HZY
 			}
 			add_country_modifier = {
 				name = "centralization_modifier"
