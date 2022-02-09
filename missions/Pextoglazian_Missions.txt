@@ -1,0 +1,181 @@
+
+pex_1 = {
+    slot = 1
+    generic = no
+    ai = yes
+    potential = {
+        NOT = { map_setup = map_setup_random }
+		tag = PEX
+    }
+    has_country_shield = yes
+}
+
+pex_2 = {
+    slot = 2
+    generic = no
+    ai = yes
+    potential = {
+        NOT = { map_setup = map_setup_random }
+		tag = PEX
+    }
+    has_country_shield = yes
+
+    pex_obtain_aras_approval = {
+        icon = protect_against_the_turks
+        required_missions = { }
+        trigger = {
+            piety = 0.25
+            inquisitor = 1
+        }
+        effect = {
+        }
+    }
+    pex_stabilize_the_realm = {
+        icon = protect_against_the_turks
+        required_missions = { pex_obtain_aras_approval }
+        trigger = {
+            stability = 3
+            adm_power = 100
+            num_of_rebel_controlled_provinces = 0
+        }
+        effect = {
+            add_adm_power = -100
+        }
+    }
+}
+
+pex_3 = {
+    slot = 3
+    generic = no
+    ai = yes
+    potential = {
+        NOT = { map_setup = map_setup_random }
+		tag = PEX
+    }
+    has_country_shield = yes
+
+    pex_defend_pextoglazia = {
+        icon = protect_against_the_turks
+        required_missions = { }
+        trigger = {
+            num_of_owned_provinces_with = {
+                value = 4
+                is_core = PEX
+                has_building = fort_15th
+            }
+            army_size_percentage = 1.0
+        }
+        effect = {
+        }
+    }
+
+    pex_reorganize_the_army = {
+        icon = protect_against_the_turks
+        required_missions = { pex_defend_pextoglazia }
+        trigger = {
+            army_tradition = 25
+            mil_power = 100
+        }
+        effect = {
+            add_mil_power = -100
+        }
+    }
+}
+
+pex_4 = {
+    slot = 4
+    generic = no
+    ai = yes
+    potential = {
+        NOT = { map_setup = map_setup_random }
+		tag = PEX
+    }
+    has_country_shield = yes
+
+    pex_subdue_the_clergy = {
+        icon = protect_against_the_turks
+        required_missions = { }
+        trigger = {
+            NOT = {
+                estate_influence = {
+                    estate = estate_church
+                    influence = 50
+                }
+            }
+        }
+        effect = {
+        }
+    }
+
+    pex_ensure_diocese_loyalty = {
+        icon = protect_against_the_turks
+        required_missions = { pex_subdue_the_clergy }
+        trigger = {
+            NOT = {
+                any_subject_country	= {
+                    is_subject_of_type = diocese
+                    liberty_desire = 5
+                }
+            }
+            dip_power = 100
+        }
+        effect = {
+            add_dip_power = -100
+        }
+    }
+}
+
+pex_5 = {
+    slot = 5
+    generic = no
+    ai = yes
+    potential = {
+        NOT = { map_setup = map_setup_random }
+		tag = PEX
+    }
+    has_country_shield = yes
+}
+
+pex_6 = { #Post-disaster missions
+    slot = 3
+    generic = no
+    ai = yes
+    potential = {
+        NOT = { map_setup = map_setup_random }
+		tag = PEX
+    }
+    has_country_shield = yes
+
+    pex_prevent_collapse = {
+        icon = protect_against_the_turks
+        required_missions = { pex_stabilize_the_realm pex_reorganize_the_army pex_ensure_diocese_loyalty }
+        position = 3
+        trigger = {
+            NOT = {
+                has_disaster = collapse_of_pextoglazia
+            }
+        }
+        effect = {
+            hidden_effect = {
+                remove_country_modifier	= pexto_purge_no_advisors
+                remove_country_modifier	= pexto_cowardice
+                remove_country_modifier	= pexto_granted_city_rights
+                remove_country_modifier	= inner_turmoil_25
+                remove_country_modifier	= pexto_vassal_priviliges
+                remove_country_modifier = inner_turmoil_75
+                every_province = {
+                    limit = {
+                        OR = {
+                            has_province_modifier = pexto_cultural_autonomy
+                            has_province_modifier = glazian_cities
+                        }
+                    }
+                    remove_province_modifier = pexto_cultural_autonomy
+                    remove_province_modifier = glazian_cities
+                }
+                set_country_flag = pex_collapse_prevented
+            }
+            custom_tooltip = pex_prevent_collapse_tooltip
+        }
+    }
+}

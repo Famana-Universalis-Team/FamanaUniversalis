@@ -3,6 +3,7 @@ collapse_of_pextoglazia = {
         tag = PEX
 		NOT = { has_country_flag = pextocivilwar }
         NOT = { has_country_flag = survived_fall }
+        NOT = { has_country_flag = pex_collapse_prevented }
 	}
 	can_start = {
         has_any_disaster = no
