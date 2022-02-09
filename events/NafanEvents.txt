@@ -1,9 +1,9 @@
-namespace = nafa.j
+namespace = nafa
 
 country_event = {
-    id = nafa.j.1
-    title = nafa.j.1.t
-    desc = nafa.j.1.d
+    id = nafa.1
+    title = nafa.1.t
+    desc = nafa.1.d
     picture = MILITARY_CAMP_eventPicture
 
     fire_only_once = yes
@@ -16,7 +16,7 @@ country_event = {
         months = 32
     }
     option = {
-        name = nafa.j.1.a
+        name = nafa.1.a
 		add_country_modifier = { name = "jzoet_help" duration = -1 }
         }
     }
