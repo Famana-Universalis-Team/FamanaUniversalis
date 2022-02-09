@@ -26,8 +26,8 @@ feudalism = {
 	history = {
 		is_year = 13
 		OR = {
-			primary_culture = Maldikian
-			primary_culture = Kolyan
+			culture_group = Maldik
+			culture_group = Epilany
 			culture_group = Maxan
 			culture_group = Emastalian
 			culture_group = Makyna
@@ -41,12 +41,7 @@ feudalism = {
 			culture_group = Vanoman
 			culture_group = Aresian_C
 			culture_group = Nafan
-			AND = {
-				culture_group = Ordic_C
-				NOT = {
-					government = native
-				}
-			}
+			culture_group = Ordic_C
 			culture_group = Komelwaiti
 			culture_group = Qamon_C
 			culture_group = Toman_C
