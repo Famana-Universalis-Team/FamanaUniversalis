@@ -2504,8 +2504,11 @@ country_decisions = {
 		potential = {
 			AND = {
 				NOT = { exists = HZY }
-				culture = Hozyan
 				was_never_end_game_tag_trigger = yes
+				OR = {
+					tag = WHZ
+					tag = EHZ
+				}
 			}
 		}
 		provinces_to_highlight = {
@@ -2522,10 +2525,16 @@ country_decisions = {
 		allow = {
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
-			owns_core_province = 6546
-			owns_core_province = 6547
-			owns_core_province = 6548
-			owns_core_province = 6549
+			OR = {
+				owns_core_province = 6546
+				owns_core_province = 6547
+				owns_core_province = 6548
+				owns_core_province = 6549
+			}
+			OR = {
+				NOT = { exists = WHZ }
+				NOT = { exists = EHZ }
+			}
 		}
 		effect = {
 			restore_country_name = yes
