@@ -12,12 +12,11 @@ add_core = PLM
 
 hre = no
 
-base_tax = 2
-base_production = 4
-trade_goods = gems
+base_tax = 3
+base_production = 3
+trade_goods = livestock
 base_manpower = 2
-capital = "UNNAMED"
+capital = "Hartu"
 is_city = no
 extra_cost = 1
 
-add_local_autonomy = 35
