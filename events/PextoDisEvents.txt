@@ -410,3 +410,25 @@ country_event = { #cowardice
         }
     }
 }
+
+country_event = { #start
+    id = pextodis.12
+    title = pextodis.12.t
+    desc = pextodis.12.d
+    picture = REVOLUTION_eventPicture
+    fire_only_once = yes
+    major = yes
+	mean_time_to_happen = {
+		days = 1
+	}
+	trigger = {
+        tag = PEX
+        has_disaster = collapse_of_pextoglazia
+	}
+
+    option = {
+		name = pextodis.12.a
+        ai_chance = { factor = 1 }
+		custom_tooltip = pexto_start_tooltip
+    }
+}
