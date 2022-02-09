@@ -5,7 +5,12 @@ gomic_religious_unity = {
 	}
 
 	trigger = {
-		OR = {
+		AND = {
+            OR = {
+                current_age = age_of_discovery
+                current_age = age_of_reformation
+            }
+            OR = {
 			religion = western_oppian
 			religion = eastern_oppian
 			religion = reformed_oppian
@@ -18,6 +23,7 @@ gomic_religious_unity = {
 			religion = bilik
 			religion = gadan
 		}
+        }
 	}
 
 	ae_impact = 0.25
