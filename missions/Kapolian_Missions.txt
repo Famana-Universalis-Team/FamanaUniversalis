@@ -114,11 +114,12 @@ kap_1 = {
 		required_missions = { kap_verkan_nikat_conquest}
 		
 		provinces_to_highlight = {
-		OR = {
-			area = nakoa_area
-			area = north_nakoa_area
-		}	
-		NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			OR = {
+				area = nakoa_area
+				area = north_nakoa_area
+			}	
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
 	
 		
 		trigger = {
