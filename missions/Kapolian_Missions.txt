@@ -70,8 +70,7 @@ kap_1 = {
 			}
 		}
 	}
-	
-	
+
 	kap_verkan_nikat_conquest = {
 		icon = subiaco_press
 		required_missions = { kap_yatian_conquest }
@@ -94,7 +93,7 @@ kap_1 = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			oearan__area = {
+			verko_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -104,29 +103,38 @@ kap_1 = {
 			nakoa_area = {
 				add_permanent_claim = ROOT
 			}
+			north_nakoa_area = {
+				add_permanent_claim = ROOT
+			}
 		}
 	}
-	
-	kap_sack_arrol = {
-		icon = latin_empire
+
+	kap_sack_of_arrol = {
+		icon = subiaco_press
 		required_missions = { kap_verkan_nikat_conquest}
 		
 		provinces_to_highlight = {
-			OR = {
-				area = nakoa_area
-			}
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
-		}
+		OR = {
+			area = nakoa_area
+			area = north_nakoa_area
+		}	
+		NOT = { country_or_non_sovereign_subject_holds = ROOT }
+	
 		
 		trigger = {
             nakoa_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
+			north_nakoa_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
         }
 		
 		effect = {
-			event = flavor_kap.1
+			country_event = {
+				id = FlavorKAP.1
 			}
 		}
 	}
