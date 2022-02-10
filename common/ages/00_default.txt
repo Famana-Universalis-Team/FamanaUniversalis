@@ -16,15 +16,38 @@ age_of_discovery = {
 	 		}
 		}
 
-		obj_ahead_of_tech = { ######change if its an island nation
+		obj_ahead_of_tech = {
 			allow = {
-				any_neighbor_country = {
-					is_neighbor_of = PREV
+					any_neighbor_country = {
+					exists = yes
 				}
 			}
 			NOT = {
-				any_neighbor_country = {
-					tech_difference = 0
+				OR = {
+					any_neighbor_country = {
+						tech_difference = 0
+					}
+				}
+			}
+		}
+
+		obj_island_ahead_of_tech = { #consider -1
+			allow = {
+				NOT = {
+					any_neighbor_country = {
+						exists = yes
+					}
+				}
+			}
+			ROOT = {
+				capital_scope = {
+					region_for_scope_province = {
+						owner = {
+							NOT = {
+								tech_difference = 0
+							}
+						}
+					}
 				}
 			}
 		}
