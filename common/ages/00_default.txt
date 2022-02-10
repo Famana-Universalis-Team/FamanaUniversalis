@@ -31,7 +31,7 @@ age_of_discovery = {
 			}
 		}
 
-		obj_island_ahead_of_tech = { #consider -1
+		obj_island_ahead_of_tech = {
 			allow = {
 				NOT = {
 					any_neighbor_country = {
@@ -39,17 +39,18 @@ age_of_discovery = {
 					}
 				}
 			}
-			ROOT = {
-				capital_scope = {
-					region_for_scope_province = {
-						owner = {
-							NOT = {
-								tech_difference = 0
+			NOT = {
+				ROOT = {
+					capital_scope = {
+						region_for_scope_province = {
+							owner = {
+								tech_difference = 1
 							}
 						}
 					}
 				}
 			}
+
 		}
 
 		obj_dev_provinces = {
