@@ -101,8 +101,32 @@ kap_1 = {
         }
 		
 		effect = {
-			arrol_area = {
+			nakoa_area = {
 				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	kap_sack_arrol = {
+		icon = latin_empire
+		required_missions = { kap_verkan_nikat_conquest}
+		
+		provinces_to_highlight = {
+			OR = {
+				area = nakoa_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+            nakoa_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+        }
+		
+		effect = {
+			event = flavor_kap.1
 			}
 		}
 	}
