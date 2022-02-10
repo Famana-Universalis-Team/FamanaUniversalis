@@ -9,90 +9,68 @@ age_of_discovery = {
 
 	objectives = {
 
-		obj_discover_america = {
-			allow = {
-				capital_scope = {
-					OR = {
-						continent = europe
-						continent = asia
-						continent = africa
-					}
-				}
-			}
-			custom_trigger_tooltip = {
-				tooltip = obj_discover_america_tooltip
-					OR = {
-						north_america = { has_discovered = ROOT }
-						south_america = { has_discovered = ROOT }
-						new_world = { has_discovered = ROOT }
-					}
-				}
-		}
-
-		obj_100_development = {
-			allow = {
-				capital_scope = {
-					NOT = {
-						continent = europe
-						continent = asia
-						continent = africa
-					}
-				}
-			}
-			total_development = 100
-
-		}
-
-		obj_5_centers_of_trade = {
-			calc_true_if = {
-				all_owned_province = {
-					OR = {
-						province_has_center_of_trade_of_level = 2
-						province_has_center_of_trade_of_level = 3
-					}
-					controlled_by = owner
-					is_core = ROOT
-				}
-				amount = 5
-			}
-		}
-
-		obj_30_development_city = {
-			custom_trigger_tooltip = {
-				tooltip = obj_30_development_city_tooltip
-				any_owned_province = {
-					exclude_from_progress = {
-						is_core = ROOT
-						controlled_by = owner
-					}
-					development_discounting_tribal = 30
-				}
-			}
-		}
-
-		obj_renaissance = {
-	 		has_institution = renaissance
+		obj_liturgy = {
+			has_institution = renaissance
 	 		all_state_province = {
 	 			renaissance = 100
 	 		}
 		}
-		
-		obj_two_unions = {
+
+		obj_ahead_of_tech = { ######change if its an island nation
 			allow = {
-				religion_group = christian
+				any_neighbor_country = {
+					is_neighbor_of = PREV
+				}
 			}
-			personal_union  = 2
+			NOT = {
+				any_neighbor_country = {
+					tech_difference = 0
+				}
+			}
+		}
+
+		obj_dev_provinces = {
+			num_of_owned_provinces_with = {
+				value = 10
+				num_of_times_improved_by_owner = 3
+			}
+		}
+
+		obj_25_development_city = {
+			any_owned_province = {
+				development_discounting_tribal = 25
+			}
+			custom_trigger_tooltip = {
+				tooltip = obj_25_development_city_tooltip
+				any_owned_province = {
+					development_discounting_tribal = 25
+				}
+			}
 		}
 		
-		obj_many_vassals = {
+		obj_helvahorde = {
 			allow = {
-				NOT = { religion_group = christian }
+				NOT = {
+					OR = {
+						religion = aresian
+						religion = dorroman
+					}
+				}
 			}
-			vassal = 5
-		}		
-	
-		obj_two_continents = {
-			num_of_continents = 2
+			OR = {
+				government = republic
+				have_had_reform = steppe_horde
+			}
+		}
+		
+		obj_decadence = {
+			allow = {
+				OR = {
+					religion = aresian
+					religion = dorroman
+				}
+			}
+			NOT = { patriarch_authority = 0.05 }
 		}
 	
 		obj_humiliate_rival = {
@@ -101,7 +79,20 @@ age_of_discovery = {
 				has_country_flag = humiliated_rival
 			}
 		}
-	}		
+
+		obj_prosperity = {
+			all_states = {
+				is_prosperous = yes
+			}
+			custom_trigger_tooltip = {
+				tooltip = prosperous_nation
+				all_states = {
+					is_prosperous = yes
+				}
+			}
+		}
+
+	}
 	
 
 	abilities = {
