@@ -22,10 +22,13 @@ age_of_discovery = {
 					exists = yes
 				}
 			}
-			NOT = {
-				OR = {
-					any_neighbor_country = {
-						tech_difference = 0
+			custom_trigger_tooltip = {
+				tooltip = obj_ahead_of_tech_tooltip
+				NOT = {
+					OR = {
+						any_neighbor_country = {
+							tech_difference = 0
+						}
 					}
 				}
 			}
@@ -39,18 +42,20 @@ age_of_discovery = {
 					}
 				}
 			}
-			NOT = {
-				ROOT = {
-					capital_scope = {
-						region_for_scope_province = {
-							owner = {
-								tech_difference = 1
+			custom_trigger_tooltip = {
+				tooltip = obj_island_ahead_of_tech_tooltip
+				NOT = {
+					ROOT = {
+						capital_scope = {
+							region_for_scope_province = {
+								owner = {
+									tech_difference = 1
+								}
 							}
 						}
 					}
 				}
 			}
-
 		}
 
 		obj_dev_provinces = {
@@ -62,12 +67,9 @@ age_of_discovery = {
 
 		obj_25_development_city = {
 			any_owned_province = {
-				development_discounting_tribal = 25
-			}
-			custom_trigger_tooltip = {
-				tooltip = obj_25_development_city_tooltip
-				any_owned_province = {
+				AND = {
 					development_discounting_tribal = 25
+					controlled_by = ROOT
 				}
 			}
 		}
@@ -105,17 +107,13 @@ age_of_discovery = {
 		}
 
 		obj_prosperity = {
-			all_states = {
-				is_prosperous = yes
-			}
 			custom_trigger_tooltip = {
-				tooltip = prosperous_nation
+				tooltip = obj_prosperous_nation
 				all_states = {
 					is_prosperous = yes
 				}
 			}
 		}
-
 	}
 	
 
