@@ -119,64 +119,57 @@ age_of_discovery = {
 
 	abilities = {
 
-		ab_allow_feudal_de_jure_law = {
-			effect = {
-				custom_tooltip = feudal_de_jure_law
-				set_country_flag = feudal_de_jure_law
+		ab_cheaper_mercenaries = {
+			modifier = {
+				merc_maintenance_modifier = -0.25
 			}
 			ai_will_do = {
 				factor = 10
 			}
 		}
 		
-		ab_justified_wars = {
+		ab_culture_troll = {
 			modifier = {
-				ae_impact = -0.1
+				culture_conversion_cost = -0.33
 			}
 			ai_will_do = {
 				factor = 10
 			}			
 		}
 		
-
-		ab_transfer_vassal_wargoal = {
-			rule = {
-				can_transfer_vassal_wargoal = yes
-				can_chain_claim = yes
+		ab_warscore_vs_religion = {
+			modifier = {
+				warscore_cost_vs_other_religion = -0.20
 			}
 			ai_will_do = {
 				factor = 10
 			}
 		}
 		
-		ab_free_war_taxes = {
+		ab_cheaper_reinforcements = {
 			modifier = {
-				war_taxes_cost_modifier = -1.0
+				reinforce_cost_modifier = -0.20
 			}
 			ai_will_do = {
 				factor = 10
 			}	
 		}
 
-		ab_cavalry_armies = {
+		ab_developer = {
 			modifier = {
-				cav_to_inf_ratio = 0.2
+				development_cost = -0.1
 			}
 			ai_will_do = {
 				factor = 10
 			}
 		}
 
-		ab_colony_boost_development = {
-			rule = {
-				can_colony_boost_development = yes
+		ab_epic_speed = {
+			modifier = {
+				movement_speed = 0.20
 			}
 			ai_will_do = {
 				factor = 10
-				modifier = {
-					factor = 0
-					NOT = { num_of_colonists = 1 }
-				}
 			}
 		}
 		
@@ -189,59 +182,48 @@ age_of_discovery = {
 			}
 		}
 		
-		ab_ottoman_siege_ability = {
+		ab_fashros_raze = {
 			allow = {
-				tag = TUR
+				tag = FAS
 			}
 			modifier = {
-				siege_ability = 0.33
+				raze_power_gain = 0.33
 			}
 			ai_will_do = {
 				factor = 100
 			}
 		}
 		
-		ab_portugal_colonial_growth = {
-		
+		ab_roklot_warriors = {
 			allow = {
-				tag = POR
+				tag = RKL
 			}
 			modifier = {
-				global_colonial_growth = 50
+				infantry_power = 0.2
 			}
 			ai_will_do = {
 				factor = 100
 			}
 		}
 
-		ab_denmark_reduced_lib_desire = {
-		
+		ab_moshirian_diplomacy = {
 			allow = {
-				tag = DAN
+				tag = MSH
 			}
 			modifier = {
-				reduced_liberty_desire = 30
+				diplomatic_reputation = 5
 			}
 			ai_will_do = {
 				factor = 100
-				modifier = {
-					factor = 0
-					NOT = {
-						any_subject_country = {
-							liberty_desire = 20
-						}
-					}
-				}
 			}
 		}
 
-		ab_venice_ship_trade = {
-		
+		ab_ordican_conquest = {
 			allow = {
-				tag = VEN
+				tag = ORC
 			}
 			modifier = {
-				global_ship_trade_power = 0.5
+				core_creation = -0.2
 			}
 			ai_will_do = {
 				factor = 100
@@ -256,7 +238,7 @@ age_of_reformation = {
 	start = 290
 	
 	can_start = {
-		is_institution_enabled = new_world_i
+		exists = NAF
 	}
 	
 	
