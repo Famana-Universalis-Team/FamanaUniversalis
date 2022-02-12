@@ -174,36 +174,38 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_topbar_portrait_value_bg_golden"
 		texturefile = "gfx/interface/ages/topbar_portrait_value_bg_golden.dds"
-	}	
+	}
 	
+
+
 	# Age of Discovery Objectives
 	spriteType = {
-		name = "GFX_obj_discover_america"
+		name = "GFX_obj_ahead_of_tech"
 		texturefile = "gfx/interface/ages/obj_discover_america.dds"
 	}
 	
 	spriteType = {
-		name = "GFX_obj_5_centers_of_trade"
+		name = "GFX_obj_island_ahead_of_tech"
 		texturefile = "gfx/interface/ages/obj_5_centers_of_trade.dds"
 	}
 	
 	spriteType = {
-		name = "GFX_obj_30_development_city"
-		texturefile = "gfx/interface/ages/obj_30_development_city.dds"
+		name = "GFX_obj_25_development_city"
+		texturefile = "gfx/interface/ages/obj_huge_capital.dds"
 	}
 	
 	spriteType = {
-		name = "GFX_obj_renaissance"
+		name = "GFX_obj_liturgy"
 		texturefile = "gfx/interface/ages/obj_renaissance.dds"
 	}
 	
 	spriteType = {
-		name = "GFX_obj_two_unions"
-		texturefile = "gfx/interface/ages/obj_two_unions.dds"
+		name = "GFX_obj_dev_provinces"
+		texturefile = "gfx/interface/ages/obj_100_development.dds"
 	}
 	
 	spriteType = {
-		name = "GFX_obj_two_continents"
+		name = "GFX_obj_helvahorde"
 		texturefile = "gfx/interface/ages/obj_two_continents.dds"
 	}
 	
@@ -213,12 +215,12 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = "GFX_obj_100_development"	
+		name = "GFX_obj_decadence"	
 		texturefile = "gfx/interface/ages/obj_100_development.dds"
 	}
 
 	spriteType = {
-		name = "GFX_obj_many_vassals"		
+		name = "GFX_obj_prosperity"		
 		texturefile = "gfx/interface/ages/obj_many_vassals.dds"
 	}
 
