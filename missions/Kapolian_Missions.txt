@@ -139,3 +139,22 @@ kap_1 = {
 			}
 		}
 	}
+
+	kap_convert_aresia = {
+		icon = mission_hands_praying
+		required_missions = { kap_sack_of_arrol }
+		
+		trigger = {
+			aresia_region
+				type = all
+				has_owner_religion = yes
+			}
+        }
+		effect = {
+			add_country_modifier = 
+			name = kap_aresian_faith
+			duration = -1
+			}
+        	}
+	}
+}
