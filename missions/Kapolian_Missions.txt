@@ -151,7 +151,7 @@ kap_1 = {
 			}
         }
 		effect = {
-			add_country_modifier = 
+			add_country_modifier = {
 				name = kap_aresian_faith
 				duration = -1
 			}
