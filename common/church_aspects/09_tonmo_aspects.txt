@@ -77,9 +77,14 @@ spread_tonmo_aspect = {
 	sprite = "GFX_dissolve_monasteries_icon"
 	cost = 100
 	trigger = {
-		any_rival_country = {
-			NOT = {
-				religion = tonmo
+		custom_trigger_tooltip = {
+			tooltip = tonmo_rival_tooltip
+			AND = {
+				any_rival_country = {
+					NOT = {
+						religion = tonmo
+					}
+				}
 			}
 		}
 		NOT = {

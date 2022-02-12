@@ -1,0 +1,255 @@
+namespace = fashros
+
+country_event = { #Westward Expansion
+    id = fashros.1
+    title = fashros.1.t
+    desc = fashros.1.d
+    picture = MONGOL_BANNERS_eventPicture
+
+    is_triggered_only = yes
+
+    immediate = {
+        hidden_effect = {
+            nheomyr_region = {
+                discover_country = ROOT
+            }
+            nozumol_region = {
+                discover_country = ROOT
+            }
+            7208 = {
+                discover_country = ROOT
+            }
+            5777 = {
+                discover_country = ROOT
+            }
+        }
+    }
+
+    option = {
+        name = fashros.1.a
+        custom_tooltip = westward_expansion_tooltip
+        hidden_effect = {
+            5862 = {
+                limit = {
+                    is_empty = yes
+                }
+                add_core = ROOT
+                cede_province = ROOT
+                change_religion = tonmo
+                change_culture = Central_Nhoman
+                add_core = LAM
+            }
+            5876 = {
+                limit = {
+                    is_empty = yes
+                }
+                add_core = ROOT
+                cede_province = ROOT
+                change_religion = tonmo
+                change_culture = Central_Nhoman
+                add_core = LAM
+            }
+            5860 = {
+                limit = {
+                    is_empty = yes
+                }
+                add_core = ROOT
+                cede_province = ROOT
+                change_religion = tonmo
+                change_culture = Central_Nhoman
+                add_core = LAM
+            }
+            5872 = {
+                limit = {
+                    is_empty = yes
+                }
+                add_core = ROOT
+                cede_province = ROOT
+                change_religion = tonmo
+                change_culture = Central_Nhoman
+                add_core = LAM
+            }
+            5881 = {
+                limit = {
+                    is_empty = yes
+                }
+                add_core = ROOT
+                cede_province = ROOT
+                change_religion = tonmo
+                change_culture = Central_Nhoman
+                add_core = LAM
+            }
+            5839 = {
+                limit = {
+                    is_empty = yes
+                }
+                add_core = ROOT
+                cede_province = ROOT
+                change_religion = tonmo
+                change_culture = Central_Nhoman
+                add_core = LAM
+            }
+            5858 = {
+                limit = {
+                    is_empty = yes
+                }
+                add_core = ROOT
+                cede_province = ROOT
+                change_religion = tonmo
+                change_culture = Bastranian
+                add_core = BAS
+            }
+            5869 = {
+                limit = {
+                    is_empty = yes
+                }
+                add_core = ROOT
+                cede_province = ROOT
+                change_religion = tonmo
+                change_culture = Bastranian
+                add_core = BAS
+            }
+            5878 = {
+                limit = {
+                    is_empty = yes
+                }
+                add_core = ROOT
+                cede_province = ROOT
+                change_religion = tonmo
+                change_culture = Bastranian
+                add_core = BAS
+            }
+            5877 = {
+                limit = {
+                    is_empty = yes
+                }
+                add_core = ROOT
+                cede_province = ROOT
+                change_religion = tonmo
+                change_culture = Bastranian
+                add_core = BAS
+            }
+            5859 = {
+                limit = {
+                    is_empty = yes
+                }
+                add_core = ROOT
+                cede_province = ROOT
+                change_religion = tonmo
+                change_culture = Central_Nhoman
+                add_core = LAM
+            }
+            5856 = {
+                limit = {
+                    is_empty = yes
+                }
+                add_core = ROOT
+                cede_province = ROOT
+                change_religion = tonmo
+                change_culture = Jimbalan
+                add_core = JIB
+            }
+            5996 = {
+                limit = {
+                    is_empty = yes
+                }
+                add_core = ROOT
+                cede_province = ROOT
+                change_religion = tonmo
+                change_culture = Central_Nhoman
+                add_core = LAM
+            }
+            5851 = {
+                limit = {
+                    is_empty = yes
+                }
+                add_core = ROOT
+                cede_province = ROOT
+                change_religion = tonmo
+                change_culture = Jimbalan
+                add_core = JIB
+            }
+            5882 = {
+                limit = {
+                    is_empty = yes
+                }
+                add_core = ROOT
+                cede_province = ROOT
+                change_religion = tonmo
+                change_culture = Jimbalan
+                add_core = JIB
+            }
+        }
+    }
+}
+
+country_event = { #Nozumol
+    id = fashros.2
+    title = fashros.2.t
+    desc = fashros.2.d
+    picture = MONGOL_BANNERS_eventPicture
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+		months = 30
+	}
+
+    trigger = {
+        AND = {
+            nuzoto_area = {
+                type = all
+                AND = {
+                    owned_by = ROOT
+                    religion = tonmo
+                }
+            }
+            toza_area = {
+                type = all
+                owned_by = ROOT
+                religion = tonmo
+            }
+        }
+    }
+
+    option = { #Change cultures
+        name = fashros.2.a
+        ai_chance = {
+            factor = 10
+        }
+        custom_tooltip = nozumol_culture_tooltip
+        hidden_effect = {
+            5840 = {
+                change_culture = Fisbiklan
+                add_core = FSB
+            }
+            5841 = {
+                change_culture = Fisbiklan
+                add_core = FSB
+            }
+            5842 = {
+                change_culture = Fisbiklan
+                add_core = FSB
+            }
+            5846 = {
+                change_culture = Jimbalan
+                add_core = JIB
+            }
+            5844 = {
+                change_culture = Central_Nhoman
+                add_core = LAM
+            }
+            5845 = {
+                change_culture = Central_Nhoman
+                add_core = LAM
+            }
+        }
+    }
+
+    option = { #Accept culture, gain bonus
+        name = fashros.2.b
+        ai_chance = {
+            factor = 1
+        }
+    }
+}
