@@ -10,8 +10,60 @@ country_event = {
 
 	trigger = {
 		OR = {
-			tag = TCK
+			tag = VAN
+			tag = SIX
+			tag = GLT
+			tag = KOM
+			tag = ELW
+			tag = OKU
+			tag = RSH
+			tag = PEX
 			tag = OSS
+			tag = NUT
+			tag = ROP
+			tag = UMZ
+			tag = PXA
+			tag = VAV
+			tag = TYD
+			tag = INI
+			tag = GHA
+			tag = YAB
+			tag = XOF
+			tag = AME
+			tag = VNS
+			tag = ELP
+			tag = XON
+			tag = VOX
+			tag = PYA
+			tag = REL
+			tag = CLL
+			tag = GTS
+			tag = ZEA
+			tag = ASR
+			tag = VAX
+			tag = DYR
+			tag = FNC
+			tag = TCK
+			tag = KIN
+			tag = KAP
+			tag = SKT
+			tag = AGX
+			tag = NKM
+			tag = DEL
+			tag = GDA
+			tag = ZAK
+			tag = JKK
+			tag = HZR
+			tag = RTK
+			tag = ELK
+			tag = MKK
+			tag = ELQ
+			tag = UNS
+			tag = MRL
+			tag = HIT
+			tag = DRA
+			tag = NPT
+			tag = RMX
 		}
 		NOT = { 
 			has_country_flag = ravaged
@@ -19,15 +71,95 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 2
+		months = 1
 	}
 
 	option = {
 		name = oppia.1.a
 		set_country_flag = ravaged
-		add_country_modifier = {
-			name = "yom_invasion"
-			duration = 3650
+		if = {
+			limit = {
+				OR = {
+					tag = VAN
+					tag = SIX
+					tag = GLT
+					tag = KOM
+					tag = ELW
+					tag = OKU
+					tag = RSH
+					tag = PEX
+				}
+			}
+			add_country_modifier = {
+				name = yom_invasion_1
+				duration = 3650
+			}
+		}
+		if = {
+			limit = {
+				OR = {
+					tag = OSS
+					tag = NUT
+					tag = ROP
+					tag = UMZ
+					tag = PXA
+					tag = VAV
+					tag = TYD
+					tag = INI
+					tag = GHA
+					tag = YAB
+					tag = XOF
+					tag = AME
+					tag = VNS
+					tag = ELP
+					tag = XON
+					tag = VOX
+					tag = PYA
+					tag = REL
+					tag = CLL
+					tag = GTS
+					tag = ZEA
+					tag = ASR
+					tag = VAX
+					tag = DYR
+					tag = FNC
+				}
+			}
+			add_country_modifier = {
+				name = yom_invasion_2
+				duration = 3650
+			}
+		}
+		if = {
+			limit = {
+				OR = {
+					tag = TCK
+					tag = KIN
+					tag = KAP
+					tag = SKT
+					tag = AGX
+					tag = NKM
+					tag = DEL
+					tag = GDA
+					tag = ZAK
+					tag = JKK
+					tag = HZR
+					tag = RTK
+					tag = ELK
+					tag = MKK
+					tag = ELQ
+					tag = UNS
+					tag = MRL
+					tag = HIT
+					tag = DRA
+					tag = NPT
+					tag = RMX
+				}
+			}
+			add_country_modifier = {
+				name = yom_invasion_3
+				duration = 3650
+			}
 		}
 	}
 }
