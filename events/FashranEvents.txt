@@ -251,5 +251,39 @@ country_event = { #Nozumol
         ai_chance = {
             factor = 1
         }
+        add_accepted_culture = Nozuman
+        every_province = {
+            limit = {
+                OR = {
+                    area = nuzoto_area
+                    area = toza_area
+                }
+            }
+            add_province_modifier = {
+                name = nozumol_culture_bonus
+                duration = -1
+            }
+        }
+    }
+}
+
+country_event = { #Westward Expansion 2
+    id = fashros.3
+    title = fashros.3.t
+    desc = fashros.3.d
+    picture = MONGOL_BANNERS_eventPicture
+
+    is_triggered_only = yes
+
+    immediate = {
+        hidden_effect = {
+        }
+    }
+
+    option = {
+        name = fashros.3.a
+        custom_tooltip = westward_expansion_tooltip
+        hidden_effect = {
+        }
     }
 }

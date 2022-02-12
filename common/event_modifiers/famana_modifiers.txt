@@ -328,3 +328,8 @@ kin_jasuan_piety = {
 	local_tax_modifier = 0.1
     local_development_cost = -0.1
 }
+
+nozumol_culture_bonus = {
+    local_production_efficiency = 0.1
+    local_unrest = -3
+}
