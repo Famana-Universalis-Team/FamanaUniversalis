@@ -17,6 +17,7 @@ tags={
 	"Military"
 }
 name="Famana Universalis"
+replace_path="common/country_tags"
 replace_path="history/provinces"
 replace_path="common/countries"
 replace_path="history/countries"

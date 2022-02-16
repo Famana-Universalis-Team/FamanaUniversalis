@@ -137,7 +137,7 @@ morian_fervor = {
 
 kachik_religious_autonomy = {
     local_missionary_strength = -0.05
-    local_production_modifier = 0.10
+    local_production_efficiency = 0.10
     local_manpower_modifier = 0.10
 }
 
@@ -328,8 +328,7 @@ kin_jasuan_piety = {
 	local_tax_modifier = 0.1
     local_development_cost = -0.1
 }
-	
-=======
+
 nozumol_culture_bonus = {
     local_production_efficiency = 0.1
     local_unrest = -3

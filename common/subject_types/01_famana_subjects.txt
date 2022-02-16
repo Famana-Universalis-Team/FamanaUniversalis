@@ -23,22 +23,20 @@ tomban_state = {
 	relative_power_class = 1
 	uses_military_focus = no
 	can_use_claims = yes
+	can_concentrate_development = no
+	gets_help_with_rebels = no
 
 	can_fight = {
 		same_overlord = tomban_state
-		overlord = yes
 	}
 	can_rival = {
 		same_overlord = tomban_state
-		overlord = yes
 	}
 	can_ally = {
 		same_overlord = tomban_state
-		overlord = yes
 	}
 	can_marry = {
 		same_overlord = tomban_state
-		overlord = yes
 	}
 
 	embargo_rivals = yes
@@ -57,7 +55,6 @@ diocese = {
 	diplomacy_subject_sprite = GFX_diplomacy_areclients
 
 	is_potential_overlord = { always = no }
-	can_be_established = { always = no }
 
 	can_fight_independence_war = yes
 	is_voluntary = no
@@ -75,7 +72,7 @@ diocese = {
 	can_transfer_in_peace = no
 
 	base_liberty_desire = 0.0
-	liberty_desire_development_ratio = pextoDisloyal
+	liberty_desire_development_ratio = 0.1
 
 	can_fight = {
 	}

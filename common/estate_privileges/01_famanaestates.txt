@@ -45,13 +45,12 @@ estate_church_kachik_religious_rights = {
 			limit = {
 				culture = Kachik
 			}
-			remove_province_modifier = name = kachik_religious_autonomy
+			remove_province_modifier = kachik_religious_autonomy
 		}
 	}
 	penalties = {
 	}
 	benefits = {
-		set_country_flag = kachikreligiousrights
 	}
     cooldown_years = 15
     ai_will_do = {

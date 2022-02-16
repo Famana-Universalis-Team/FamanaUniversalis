@@ -181,7 +181,7 @@ spriteTypes = {
 	# Age of Discovery Objectives
 	spriteType = {
 		name = "GFX_obj_ahead_of_tech"
-		texturefile = "gfx/interface/ages/obj_discover_america.dds"
+		texturefile = "gfx/interface/ages/obj_universities.dds"
 	}
 	
 	spriteType = {
@@ -201,12 +201,12 @@ spriteTypes = {
 	
 	spriteType = {
 		name = "GFX_obj_dev_provinces"
-		texturefile = "gfx/interface/ages/obj_100_development.dds"
+		texturefile = "gfx/interface/ages/obj_10_3_development.dds"
 	}
 	
 	spriteType = {
 		name = "GFX_obj_helvahorde"
-		texturefile = "gfx/interface/ages/obj_two_continents.dds"
+		texturefile = "gfx/interface/ages/obj_parliament.dds"
 	}
 	
 	spriteType = {
@@ -216,12 +216,12 @@ spriteTypes = {
 	
 	spriteType = {
 		name = "GFX_obj_decadence"	
-		texturefile = "gfx/interface/ages/obj_100_development.dds"
+		texturefile = "gfx/interface/ages/obj_decadence.dds"
 	}
 
 	spriteType = {
 		name = "GFX_obj_prosperity"		
-		texturefile = "gfx/interface/ages/obj_many_vassals.dds"
+		texturefile = "gfx/interface/ages/obj_prosperity.dds"
 	}
 
 
@@ -371,6 +371,42 @@ spriteTypes = {
 	
 	
 	# Age of Discovery Abilities
+	spriteType = {
+		name = "GFX_ab_roklot_warriors"
+		texturefile = "gfx/interface/ages/ab_roklot_warriors.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_fashros_raze"
+		texturefile = "gfx/interface/ages/ab_fashros_raze.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_ordican_conquest"
+		texturefile = "gfx/interface/ages/ab_ordican_conquest.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_moshirian_diplomacy"
+		texturefile = "gfx/interface/ages/ab_moshirian_diplomacy.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_epic_speed"
+		texturefile = "gfx/interface/ages/ab_epic_speed.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_developer"
+		texturefile = "gfx/interface/ages/ab_developer.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_culture_troll"
+		texturefile = "gfx/interface/ages/ab_culture_cost.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_cheaper_reinforcements"
+		texturefile = "gfx/interface/ages/ab_cheaper_reinforcements.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_cheaper_mercenaries"
+		texturefile = "gfx/interface/ages/ab_cheaper_mercenaries.dds"
+	}
 	spriteType = {
 		name = "GFX_ab_allow_feudal_de_jure_law"
 		texturefile = "gfx/interface/ages/ab_allow_feudal_de_jure_law.dds"
