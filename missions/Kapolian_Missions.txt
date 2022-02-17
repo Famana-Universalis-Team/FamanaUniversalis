@@ -145,7 +145,7 @@ kap_1 = {
 		required_missions = { kap_sack_of_arrol }
 		
 		trigger = {
-			aresia_region
+			aresia_region = {
 				type = all
 				has_owner_religion = yes
 			}
@@ -155,6 +155,6 @@ kap_1 = {
 				name = kap_aresian_faith
 				duration = -1
 			}
-        	}
+        	 }
 	}
 }
