@@ -19,7 +19,7 @@ Placeholder_Cultures = {
             Placeholdette
         }
         dynasty_names = {
-        	de Placeholder
+        	"de Placeholder"
         }
 	}
 }
@@ -904,6 +904,7 @@ Aresian_C = {
 #############################
 Gotzlic = {
 	Zubaran = {
+		primary = ZUB
 		male_names = {
 			Gaszron Urszus Forara Jrus Hozen Palel Simot Czszyn Rzuszraimus Umarminol Arsegayu
 		}
@@ -915,6 +916,7 @@ Gotzlic = {
 		}
 	}
 	Hozyan = {
+		primary = HZY
 		male_names = {
 			Gaszron Urszus Forara Jrus Hozen Palel Simot Czszyn Rzuszraimus Umarminol Arsegayu
 		}
@@ -926,6 +928,7 @@ Gotzlic = {
 		}
 	}
 	Leronyan = {
+		primary = LER
 		male_names = {
 			Gaszron Urszus Forara Jrus Hozen Palel Simot Czszyn Rzuszraimus Umarminol Arsegayu
 		}
@@ -937,6 +940,7 @@ Gotzlic = {
 		}
 	}
 	Rostan = {
+		primary = RST
 		male_names = {
 			Gaszron Urszus Forara Jrus Hozen Palel Simot Czszyn Rzuszraimus Umarminol Arsegayu
 		}
@@ -948,11 +952,48 @@ Gotzlic = {
 		}
 	}
 	Nenki = {
+		primary = NEN
 		male_names = {
 			Gaszron Urszus Forara Jrus Hozen Palel Simot Czszyn Rzuszraimus Umarminol Arsegayu
 		}
 		female_names = {
 			Jain Mayul Ghenes Ana
+		}
+		dynasty_names = {
+			Aukkus Varm Erme Holipt Masciyen Maszes Erminelilin Umelenot Poliyus Vura Valin
+		}
+	}
+}
+#############################
+South_Gotzlic = {
+	Lhumre = {
+		male_names = {
+			Gason Ursus Forari Jrus Hosen Palel Simo Syn Rusaimus Umarmino Arsegai
+		}
+		female_names = {
+			Jain Mayul Ghene Ani
+		}
+		dynasty_names = {
+			Aukkus Varm Erme Holipt Masciyen Maszes Erminelilin Umelenot Poliyus Vura Valin
+		}
+	}
+	Horivan = {
+		male_names = {
+			Gason Ursus Forari Jrus Hosen Palel Simo Syn Rusaimus Umarmino Arsegai
+		}
+		female_names = {
+			Jain Mayul Ghene Ani
+		}
+		dynasty_names = {
+			Aukkus Varm Erme Holipt Masciyen Maszes Erminelilin Umelenot Poliyus Vura Valin
+		}
+	}
+	Bomian = {
+		male_names = {
+			Gason Ursus Forari Jrus Hosen Palel Simo Syn Rusaimus Umarmino Arsegai
+		}
+		female_names = {
+			Jain Mayul Ghene Ani
 		}
 		dynasty_names = {
 			Aukkus Varm Erme Holipt Masciyen Maszes Erminelilin Umelenot Poliyus Vura Valin
@@ -987,105 +1028,36 @@ Pustian = { #get a better name (nafan no longer fits)
     }
 	Relvi = { #decided to merge this with nafan beacuse Kachik would look weird otherwise
 		male_names = {
-			Alexandru Radu Vlad Constantin Mihail Mircea George Grigore Mihnea Nicolae Besarab Vladislav Mattia 
-			Radu Ilias Scarlat Stefan Dan Alexandru Ilias Gabriel Ioan George Leon Moise Neagoie Besarab 
-			Leon Radu Mihnea Serban Simeon Teodosiu Vintila Vladut Milos Corneliu Flaviu Iuliu Octavian Sergiu 
-			Valeriu Petru Petrascu Radu 
-			Adrian Alexandru Alexander Anghel Angel Aron Bajan Balc Barbat Basarab Bogdan Bogdan Carol 
-			Ciprian Ciubar Claudiu
-			Corneliu Cornelius Costin Damjan Dan Dragos Dumitru Emerik Florin Franjo Francis Gavril 
-			Gheorghe George Grigore Gregory Iacob Gabriel
-			Iancu Ieremia Ilie Ioan John Iorghu Iosif Iuga Janos John Ladislau Latcu Laurentiu Laurence 
-			Litovoi Lucian Lucius Marin Marius
-			Mihai Milos Milosz Mircea Moise Nicolaie Petre Pirvu Radovan Radu Roman Sas Seneslav 
-			Sergiu Simion Simon
-			Stefan Stephen Stelian Teodor Theodore Tepes Tibor Tihomir Timotei Tudor Thierry Valentin 
-			Valentin Valeriu Vasile Basil Veaceslav
-			Victor Vilhelm William Vintila Vlad #romaniapilled
-		}
-		female_names = {
-			Adelina Adriana Afina Alexandra Alexia Ana Anna Anastasia Anastasia Angela Arina Christina 
-			Christina Clara Clara Dana Ecatarina Catherine
-			Elena Helen Elisabeta Elisabeth Emilia Emily Eufroysina Euphrosyne Felicia Floarea Flora 
-			Ioana Ionela Irina Iulia Juliana Maria Maria Monica Iacoba
-			Natalia Olimpia Paraschiva Petra Roxana Ruxandra Smaranda Sophia Sophia Stana Stefana 
-			Stefania Stephania Teodora Rahela Flavia Cosmina
-			Tereza Teresa Vasilica Violeta Yolanda Voica Zina
-		}
-		dynasty_names = {
-			"Basarab" "Danesti" "Draculesti"
-			Callimachi Ghica Cantacuzino Cantemiresti Racovita Caradja Sturdza 
-			Conachi Soutzos Golescu Vacarescu Mavrocordatos Craiovesti H�jdau
-			Kogalniceanu Movilesti
-		}
+            Placeholder
+        }
+        female_names = {
+            Placeholdette
+        }
+        dynasty_names = {
+        	"de Placeholder"
+        }
 	}
     Old_Venrolean = {
 		male_names = {
-			Alexandru Radu Vlad Constantin Mihail Mircea George Grigore Mihnea Nicolae Besarab Vladislav Mattia 
-			Radu Ilias Scarlat Stefan Dan Alexandru Ilias Gabriel Ioan George Leon Moise Neagoie Besarab 
-			Leon Radu Mihnea Serban Simeon Teodosiu Vintila Vladut Milos Corneliu Flaviu Iuliu Octavian Sergiu 
-			Valeriu Petru Petrascu Radu 
-			Adrian Alexandru Alexander Anghel Angel Aron Bajan Balc Barbat Basarab Bogdan Bogdan Carol 
-			Ciprian Ciubar Claudiu
-			Corneliu Cornelius Costin Damjan Dan Dragos Dumitru Emerik Florin Franjo Francis Gavril 
-			Gheorghe George Grigore Gregory Iacob Gabriel
-			Iancu Ieremia Ilie Ioan John Iorghu Iosif Iuga Janos John Ladislau Latcu Laurentiu Laurence 
-			Litovoi Lucian Lucius Marin Marius
-			Mihai Milos Milosz Mircea Moise Nicolaie Petre Pirvu Radovan Radu Roman Sas Seneslav 
-			Sergiu Simion Simon
-			Stefan Stephen Stelian Teodor Theodore Tepes Tibor Tihomir Timotei Tudor Thierry Valentin 
-			Valentin Valeriu Vasile Basil Veaceslav
-			Victor Vilhelm William Vintila Vlad
-		}
-		female_names = {
-			Adelina Adriana Afina Alexandra Alexia Ana Anna Anastasia Anastasia Angela Arina Christina 
-			Christina Clara Clara Dana Ecatarina Catherine
-			Elena Helen Elisabeta Elisabeth Emilia Emily Eufroysina Euphrosyne Felicia Floarea Flora 
-			Ioana Ionela Irina Iulia Juliana Maria Maria Monica Iacoba
-			Natalia Olimpia Paraschiva Petra Roxana Ruxandra Smaranda Sophia Sophia Stana Stefana 
-			Stefania Stephania Teodora Rahela Flavia Cosmina
-			Tereza Teresa Vasilica Violeta Yolanda Voica Zina
-		}
-		dynasty_names = {
-			"Basarab" "Danesti" "Draculesti"
-			Callimachi Ghica Cantacuzino Cantemiresti Racovita Caradja Sturdza 
-			Conachi Soutzos Golescu Vacarescu Mavrocordatos Craiovesti H�jdau
-			Kogalniceanu Movilesti 
-		}
+            Placeholder
+        }
+        female_names = {
+            Placeholdette
+        }
+        dynasty_names = {
+        	"de Placeholder"
+        }
     }
 	Oemsudi = {
 		male_names = {
-			Alexandru Radu Vlad Constantin Mihail Mircea George Grigore Mihnea Nicolae Besarab Vladislav Mattia 
-			Radu Ilias Scarlat Stefan Dan Alexandru Ilias Gabriel Ioan George Leon Moise Neagoie Besarab 
-			Leon Radu Mihnea Serban Simeon Teodosiu Vintila Vladut Milos Corneliu Flaviu Iuliu Octavian Sergiu 
-			Valeriu Petru Petrascu Radu 
-			Adrian Alexandru Alexander Anghel Angel Aron Bajan Balc Barbat Basarab Bogdan Bogdan Carol 
-			Ciprian Ciubar Claudiu
-			Corneliu Cornelius Costin Damjan Dan Dragos Dumitru Emerik Florin Franjo Francis Gavril 
-			Gheorghe George Grigore Gregory Iacob Gabriel
-			Iancu Ieremia Ilie Ioan John Iorghu Iosif Iuga Janos John Ladislau Latcu Laurentiu Laurence 
-			Litovoi Lucian Lucius Marin Marius
-			Mihai Milos Milosz Mircea Moise Nicolaie Petre Pirvu Radovan Radu Roman Sas Seneslav 
-			Sergiu Simion Simon
-			Stefan Stephen Stelian Teodor Theodore Tepes Tibor Tihomir Timotei Tudor Thierry Valentin 
-			Valentin Valeriu Vasile Basil Veaceslav
-			Victor Vilhelm William Vintila Vlad Syadorgheu Noyau
-		}
-		female_names = {
-			Adelina Adriana Afina Alexandra Alexia Ana Anna Anastasia Anastasia Angela Arina Christina 
-			Christina Clara Clara Dana Ecatarina Catherine
-			Elena Helen Elisabeta Elisabeth Emilia Emily Eufroysina Euphrosyne Felicia Floarea Flora 
-			Ioana Ionela Irina Iulia Juliana Maria Maria Monica Iacoba
-			Natalia Olimpia Paraschiva Petra Roxana Ruxandra Smaranda Sophia Sophia Stana Stefana 
-			Stefania Stephania Teodora Rahela Flavia Cosmina
-			Tereza Teresa Vasilica Violeta Yolanda Voica Zina
-		}
-		dynasty_names = {
-			"Basarab" "Danesti" "Draculesti"
-			Callimachi Ghica Cantacuzino Cantemiresti Racovita Caradja Sturdza 
-			Conachi Soutzos Golescu Vacarescu Mavrocordatos Craiovesti H�jdau
-			Kogalniceanu Movilesti Syadonesti Noyiscu
-		}
+            Placeholder
+        }
+        female_names = {
+            Placeholdette
+        }
+        dynasty_names = {
+        	"de Placeholder"
+        }
 	}
 
 }
@@ -1584,7 +1556,7 @@ Onobyan = {
 	}
 }
 ############################
-Lukschan = {
+Lukscho_Brulic = {
 	Lukschan = {
 		male_names = {
             Cerkieni Thouus Gasroon Ursoo Foranrt Irusuas Hozendwhi Palelpanetl Chyshyus Rusraimel Umalminothus Arseyagien
@@ -1596,6 +1568,17 @@ Lukschan = {
 			Lukul "Ve Oiko" "Ve Thaon" Byuv Anekssys Eyhra 
         }
 	}
+	Brulan = {
+		male_names = {
+			Yars Foro Mingta Pork "Be'ylos" "Sor'lur" Krym
+		}
+		female_names = {
+			Toko Borlun Rim "Fur'qor" "Loo'tor"
+		}
+		dynasty_names = {
+			"kre Tomos" "kre Ylsar" "kre Poror" "kre Derl" "kre Yara"
+		}
+	}
 }
 
 ############################ 
@@ -1605,10 +1588,10 @@ Old_Agmagozi = {  #I changed it, sounds too much like irl Oromo, cope
             Tarutian Qaoonot Dondor Fubrut Tuzmur Araharag Reran Orfogogror Stupamandi Poneladhvi Aelro  Raan Okkottos Dunnoman Yonmar Qublait Summakatbi Ehheb 
         }
         female_names = {
-             Kafsila Alne Sexa Taritia Arkakaee Shiontatt Urrvuz Saee
+            Kafsila Alne Sexa Taritia Arkakaee Shiontatt Urrvuz Saee
         }
         dynasty_names = {
-			 Ourolome Karasannit Argiebreyvi Sambleka Boyandi Novvoz Quoalum Aebehb Rjugigam 
+			Ourolome Karasannit Argiebreyvi Sambleka Boyandi Novvoz Quoalum Aebehb Rjugigam 
         }
 	}
 	Tairu = {
@@ -1746,13 +1729,13 @@ Epilany = {
 	Kolyan = {
 		primary = KLY
 		male_names = {
-            Jean Louis Pierre Joseph Henr Marcel Georges André Paul René Charles Francois Emile Maurice
+            Placeholder
         }
         female_names = {
-            Marie Jeanne Marguerite Germaine Louise Yvonne Madeleine Suzanne
+            Placeholdette
         }
         dynasty_names = {
-			Bourbon Capet Valois
+        	"de Placeholder"
         }
 	}
 }
