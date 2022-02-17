@@ -15,9 +15,10 @@ base_manpower = 3
 capital = "Gadea"
 is_city = no
 extra_cost = 1
+center_of_trade = 1
 add_province_triggered_modifier = religious_center
 
-center_of_trade = 1
+
 fort_15th = yes
 owner = GDA
 controller = GDA

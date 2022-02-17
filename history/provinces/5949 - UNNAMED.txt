@@ -6,13 +6,15 @@ controller = FAS
 culture = Fashran
 religion = tonmo
 hre = no
-center_of_trade = 1
+
 base_tax = 5
 base_production = 4
 trade_goods = grain
 base_manpower = 3
 capital = "Anmoea"
 is_city = yes
+
+center_of_trade = 2
 
 discovered_by = geopyopian_tech_gr
 discovered_by = north_antebari_tech_gr

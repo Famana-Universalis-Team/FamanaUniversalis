@@ -19,6 +19,7 @@ def main():
       data = data.replace("discovered_by = south_american","")
       data = data.replace("discovered_by = north_american","")
       data = data.replace("discovered_by = mesoamerican","")
+      data = data.replace("center_of_trade = 1","")
     with open(filename, 'w', encoding="iso8859-1") as f:
       f.write(data)
 
