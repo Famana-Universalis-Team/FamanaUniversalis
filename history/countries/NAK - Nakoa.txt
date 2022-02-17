@@ -18,13 +18,17 @@ historical_friend = BLK
 		birth_date = 177.5.4
 		female = yes
 	}
+}
+
+205.4.4 = {
 	heir = {
 		name = "Vonura"
+		birth_date = 191.5.4
+		claim = 80
+		death_date = 246.3.6
 		dynasty = "Vorko-Narus"
 		adm = 4
 		dip = 4
 		mil = 6
-		birth_date = 191.5.4
-		claim = 80
 	}
 }

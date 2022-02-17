@@ -809,3 +809,22 @@ merc_effashan_riders = {
 	
 	
 }
+
+# Drollo Drollers
+merc_drollo_drollers = {
+    regiments_per_development = 0.05
+    home_province = 7322 # Drollo
+	cavalry_weight = 0.2
+	cavalry_cap = 4
+	sprites = { indiangfx_sprite_pack }
+    trigger = {
+		owns_core_province = 7322
+		NOT = {
+			tag = DOR
+		}
+	}
+	modifier = {
+		discipline = 0.15
+		reinforce_speed = -0.20
+	}
+}
