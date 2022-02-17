@@ -19,7 +19,12 @@ def main():
       data = data.replace("discovered_by = south_american","")
       data = data.replace("discovered_by = north_american","")
       data = data.replace("discovered_by = mesoamerican","")
-      data = data.replace("center_of_trade = 1","")
+      data = data.replace("trade_goods = \n","")
+      data = data.replace("culture = \n","culture = Placeholder_culture\n")
+      data = data.replace("religion = \n","religion = animism\n")
+      data = data.replace("add_core = \n","")
+      data = data.replace("owner = \n","")
+      data = data.replace("controller = \n","")
     with open(filename, 'w', encoding="iso8859-1") as f:
       f.write(data)
 
