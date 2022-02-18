@@ -6,7 +6,6 @@ oppian_group = {
 	flags_with_emblem_percentage = 33
 	flag_emblem_index_range = { 28 28 }
 	center_of_religion = 5066
-	crusade_name = CRUSADE
 	
 	#western
 	western_oppian = {
@@ -137,6 +136,8 @@ oppian_group = {
 		}
 
 	}
+
+	crusade_name = CRUSADE
 
 }
 
@@ -664,7 +665,6 @@ lathvy_group = {
 			reinvent_churches_aspect
 		}
 
-		crusade_name = PURGE
 		center_of_religion = 5066 #change to Hasia in the actual famana mod
 		misguided_heretic = yes
 		declare_war_in_regency = yes
@@ -694,9 +694,11 @@ lathvy_group = {
 			ORDIC_H YOSIST HARMONIC REFORMED_LH
 		}
 
-		crusade_name = CRUSADE
 		center_of_religion = 5337 #Pomlen
 	}
+
+	crusade_name = CRUSADE
+
 }
 
 # If you add religions, and use those tags, do not change them without changing everywhere they are used.
@@ -1087,8 +1089,6 @@ Agmagozi = {
 		heretic = {
 			BARQOKYROT
 		}
-
-		crusade_name = HOLY_WAR
 	}
 
 	qamon = {
@@ -1111,8 +1111,6 @@ Agmagozi = {
 		heretic = {
 			OLD_AGMAGOZI
 		}
-
-		crusade_name = HOLY_WAR
 	}
 
 	qanoyan = { # Fix icons and colors
@@ -1131,8 +1129,6 @@ Agmagozi = {
 		heretic = {
 			OLD_AGMAGOZI
 		}
-
-		crusade_name = HOLY_WAR
 	}
 
 	agmagoz = { # Fix icons and colors
@@ -1151,8 +1147,6 @@ Agmagozi = {
 		heretic = {
 			QANOYAN DORROMAN TOMBASA
 		}
-
-		crusade_name = HOLY_WAR
 	}
 
 	tombasa = {
@@ -1169,8 +1163,6 @@ Agmagozi = {
 		}
 
 		heretic = { GISHIAN JINISH }
-
-		crusade_name = HOLY_WAR
 	}
 
 	urbaxan = { # Fix icons and colors
@@ -1193,9 +1185,10 @@ Agmagozi = {
 		heretic = {
 			BALOLI #should be it's own thing imo
 		}
-
-		crusade_name = HOLY_WAR
 	}
+
+	crusade_name = HOLY_WAR
+	
 }
 
 
@@ -1227,8 +1220,10 @@ tonmo_group = {
 		aspects_name = TONMO_ASPECTS
         
         heretic = { QYDIAN }
-        crusade_name = HOLY_WAR
     }
+
+	crusade_name = JIHAD
+
 }
 
 washoom_group = {
@@ -1249,10 +1244,12 @@ washoom_group = {
 		center_of_religion = 5066
 		
 		heretic = { POLOKIST GASTORIST } #im losing my sanity
-		crusade_name = HOLY_WAR
 		
 		uses_isolationism = yes
 	}
+
+	crusade_name = HOLY_WAR
+	
 }
 
 placeholder_group = {

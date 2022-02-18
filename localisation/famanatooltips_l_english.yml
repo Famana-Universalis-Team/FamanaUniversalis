@@ -38,7 +38,7 @@
  kin_kapolia_tooltip: "If we complete this mission while having the Ghaloya, Aelbitrago, Mikledonia, Degladon, Geccis, Maru and Herrim areas owned by us or our non-tributary subjects:\n\n§Y[Root.GetName] §Wgains a permanent claim on §YEast Emastalia §WRegion.\n\nIf we complete this mission while being §YLathvy§W, being allied to §YKapolia §Wwith them having §G+200 §Wopinion of us, and having an army at least §G2.0 §Wtimes as strong as theirs:\n\nInherit §YKapolia§W."
  LATHVY_QEUSTION_FIRED: "The event '§YThe Lathvy Question§W' has happened."
  kin_zealot_personality: "Our rulers will be §G2.0 §Wtimes as likely to receive the §YZealot §Wruler personality."
- kin_true_faith_tooltip: "Every §Y[Root.Religion.GetName] §Wprovince gets '§YJasuan Piety§W' for\n§Y10 years§W, giving the following effects:\nLocal Development Cost: §G-10%\n§WLocal Tax Modifier §G+10%"
+ kin_true_faith_tooltip: "Every owned §Y[Root.Religion.GetName] §Wprovince gets '§YJasuan Piety§W' for\n§Y10 years§W, giving the following effects:\nLocal Development Cost: §G-10%\n§WLocal Tax Modifier: §G+10%"
  ONE_TRUE_FAITH_TOOLTIP: "No provinces in the Ebinor area:\n        Religion is §YLathvy"
  pexto_start_tooltip: "§YPextoglazia §Wwill receive events related to the §YCollapse of Pextoglazia §Wdisaster. To prevent the disaster from firing, the §YPrevent Collapse §Wmission must be completed."
  NOBLES_PLEASED: "Nobles Supported"

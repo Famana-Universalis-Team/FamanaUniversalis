@@ -5,6 +5,7 @@ country_event = { #Westward Expansion
     title = fashros.1.t
     desc = fashros.1.d
     picture = MONGOL_BANNERS_eventPicture
+    major = yes
 
     is_triggered_only = yes
 
@@ -274,6 +275,8 @@ country_event = { #Westward Expansion 2
     picture = MONGOL_BANNERS_eventPicture
 
     is_triggered_only = yes
+    
+    major = yes
 
     immediate = {
         hidden_effect = {

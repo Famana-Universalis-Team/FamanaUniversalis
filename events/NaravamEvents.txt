@@ -38,6 +38,7 @@ country_event = {
     desc = naravam.2.desc
     picture = HORDE_ON_HORSEBACK_eventPicture
 	fire_only_once = yes
+    major = yes
 
     trigger = {
         AND = {
