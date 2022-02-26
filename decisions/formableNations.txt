@@ -271,15 +271,9 @@ country_decisions = {
 				add_permanent_claim = MKY
 			}
 			5136 = {
-				limit = {
-					NOT = { owned_by = ROOT }
-				}
 				add_permanent_claim = MKY
 			}
 			5135 = {
-				limit = {
-					NOT = { owned_by = ROOT }
-				}
 				add_permanent_claim = MKY
 			}
 			if = {
@@ -1714,12 +1708,14 @@ country_decisions = {
 				}
 				add_permanent_claim = HVK
 			}
-			5184 = {
+			if = {
 				limit = {
 					is_empty = yes
 				}
-				cede_province = HVK
-				add_core = HVK
+				5184 = {
+					cede_province = HVK
+					add_core = HVK
+				}
 			}
 			add_prestige = 25
 		}
@@ -1828,7 +1824,7 @@ country_decisions = {
 					tag=PLM
 				}
 				change_tag = LOM
-				all_province = {
+				every_province = {
 					limit = {
 						is_core = PLM
 					}

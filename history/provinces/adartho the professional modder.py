@@ -25,6 +25,9 @@ def main():
       data = data.replace("add_core = \n","")
       data = data.replace("owner = \n","")
       data = data.replace("controller = \n","")
+      data = data.replace("native_size = \n","")
+      data = data.replace("native_ferocity = \n","")
+      data = data.replace("native_hostileness = \n","")
     with open(filename, 'w', encoding="iso8859-1") as f:
       f.write(data)
 
