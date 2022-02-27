@@ -3,6 +3,7 @@ monarchy = {
 	reform_levels = {
 		feudalism_vs_autocracy = {
 			reforms = {
+				feudalism_reform
 				autocracy_reform
 				plutocratic_reform
 				indian_sultanate_reform
@@ -413,7 +414,7 @@ tribal = {
 				siberian_tribe
 				gond_kingdom
 				great_mongol_state_reform
-				
+				nomadic_tonxara_gov
 			}
 		}
 		tribal_cultural_values = {
