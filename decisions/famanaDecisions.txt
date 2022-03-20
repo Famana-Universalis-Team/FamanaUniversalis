@@ -1,0 +1,28 @@
+country_decisions = {
+    abolish_sifa = {
+            potential = {
+                religion = reformed_oppian
+                NOT = {
+                    has_country_flag = abolished_sifa_flag
+                }
+            }
+        allow = {
+            religious_unity = 0.50
+            adm	= 3
+        }
+        effect = {
+            hidden_effect = {
+                set_country_flag = abolished_sifa_flag
+            }
+            add_estate_loyalty = {
+                estate = estate_nobles
+                loyalty = -10
+            }
+            add_legitimacy = -20
+            change_government_reform_progress = 75
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+}

@@ -1260,6 +1260,10 @@ vassal_subject = {
 	land_forcelimit = 1
 }
 
+tomban_state_subject = {
+	land_forcelimit = 0.1
+}
+
 daimyo_subject = {
 }
 

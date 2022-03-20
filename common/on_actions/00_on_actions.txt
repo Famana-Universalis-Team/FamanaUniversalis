@@ -390,22 +390,6 @@ on_war_won = {
 			}
 		}
 	}
-
-	if = {
-		limit = {
-			tag = MLO
-			NOT = { has_country_flag = emp_mlo_won_war_with_swiss_mercs }
-			any_hired_mercenary_company = {
-				home_province = {
-					OR = {
-						area = switzerland_area
-						area = romandie_area
-					}
-				}
-			}
-		}
-		set_country_flag = emp_mlo_won_war_with_swiss_mercs
-	}
 	
 	if = {
 		limit = {

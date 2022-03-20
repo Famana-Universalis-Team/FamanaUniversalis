@@ -337,4 +337,9 @@ nozumol_culture_bonus = {
 kap_aresian_faith = {
 	global_missionary_strength = 0.02
 	tolerance_own = 2
-}	
+}
+
+united_the_xalian_faith = {
+    global_heretic_missionary_strength = 0.03
+    enforce_religion_cost = -0.5
+}
