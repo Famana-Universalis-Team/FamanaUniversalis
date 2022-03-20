@@ -2,23 +2,6 @@
 
 # country
 on_startup = {
-	if = {
-		limit = {
-			current_age = age_of_discovery
-		}
-		LXA = {
-			if = {
-				limit = {
-					NOT = { has_country_flag = lxa_loyalty_flag }
-				}
-				add_estate_loyalty = {
-					estate = estate_church
-					loyalty = -10
-				}
-				set_country_flag = lxa_loyalty_flag
-			}
-		}
-	}
 	emperor = {
 		save_global_event_target_as = Emperor
 	}
@@ -40,42 +23,6 @@ on_startup = {
 		remove_country_modifier = tur_janissary
 	}
 	initialize_schools_effect = yes #This is only used here but is used for readability of on_action file.
-
-	if = {
-		limit = {
-			NOT = { has_country_flag = new_flavour_bav_13_has_been_triggered }
-			OR = {
-				tag = UBV
-				tag = LBV
-				tag = ING
-			}
-		}
-		set_country_flag = new_flavour_bav_13_has_been_triggered
-		country_event = { id = new_flavour_bav.13 days = 90 } #better not to allow almost instant DOWs
-	}
-	if = {
-		limit = {
-			tag = FRA
-			started_in = 1789.7.14
-			NOT = { is_year = 1790 }
-			NOT = { has_disaster = french_revolution }
-		}
-		add_disaster_progress = {
-			value = 100
-			disaster = french_revolution
-		}
-	}
-	if = {
-		limit = {
-			exists = SUK
-		}
-		SUK = {
-			set_ruler_flag = suk_monarch_flag
-		}
-		AYU = {
-			set_country_flag = ayu_monarch_flag
-		}
-	}
 }
 
 # country
@@ -472,18 +419,6 @@ on_battle_won_country = {
 	if = {
 		limit = {
 			ROOT = {
-				tag = ALB
-				NOT = { has_country_flag = albanian_victory }
-			}
-			FROM = {
-				tag = TUR
-			}
-		}
-		ROOT = { set_country_flag = albanian_victory }
-	}
-	if = {
-		limit = {
-			ROOT = {
 				religion = jewish
 				has_church_aspect = judaism_purim_teachings_aspect
 			}
@@ -507,18 +442,6 @@ on_battle_lost_country = {
 # province
 # root = location, from = loser country
 on_battle_won_province = {
-	if = {
-		limit = {
-			from = { tag = REB }
-			owner = {
-				tag = ENG
-				has_disaster = war_of_the_roses
-				has_country_modifier = wotr_one_year_timer
-				NOT = { has_country_flag = war_of_the_roses_pretender_fled }
-			}
-		}
-		owner = { country_event = { id = war_of_the_roses.200 days = 2 } }
-	}
 	if = {
 		limit = {
 			from = {
@@ -606,23 +529,6 @@ on_battle_won_unit = {
 
 # #Unit Scope OnAction for Battle Lost
 on_battle_lost_unit = {
-    if = {
-        limit = {
-            unit_owner = {
-                tag = MNG
-                has_ruler_flag = mng_militry_incompetence
-            }
-            is_ruler_commanding_unit = yes
-			enemy_unit = {
-				unit_owner = {
-					tag = OIR
-				}
-			}
-        }
-        OIR = {
-            country_event = { id = flavor_oir.2 }
-        }
-    }
 }
 
 # province
@@ -661,57 +567,6 @@ on_battle_lost_province = {
 # country
 # root = winning country, from = location
 on_siege_won_country = {
-	if = {
-		limit = {
-			from = { owned_by = SAX }
-			OR = {
-				is_in_war = {
-					defenders = root
-					defenders = THU
-					defenders = emperor
-					attackers = SAX
-				}
-				is_in_war = {
-					attackers = root
-					attackers = THU
-					attackers = emperor
-					defenders = SAX
-				}
-			}
-			THU = {
-				dynasty = "von Wettin"
-				is_elector = no
-				is_emperor = no
-				alliance_with = emperor
-			}
-			SAX = {
-				is_elector = yes
-				all_owned_province = {
-					NOT = { controlled_by = SAX }
-					OR = {
-						controlled_by = THU
-						controller = {
-							OR = {
-								is_in_war = {
-									defenders = this
-									defenders = THU
-									defenders = emperor
-									attackers = SAX
-								}
-								is_in_war = {
-									attackers = this
-									attackers = THU
-									attackers = emperor
-									defenders = SAX
-								}
-							}
-						}
-					}
-				}
-			}
-		}
-		THU = { country_event = { id = flavor_sax.10 } } # Ask Emperor for Saxon Electorate
-	}
 	if = {
 		limit = {
 			ROOT = {
@@ -780,12 +635,6 @@ on_siege_won_province = {
 # province
 # root = location, from = winning country
 on_siege_lost_province =  {
-	events = {
-		war_of_the_roses.10		# Lancaster Stronghold
-		war_of_the_roses.11		# York Stronghold
-		french_wars_of_religion.7 #Ravening Religious Fanatics
-		french_wars_of_religion.9 #french_wars_of_religion.9
-	}
 }
 
 # province
@@ -921,44 +770,8 @@ on_new_consort = {
 # country
 on_monarch_death = {
 	if = {
-		limit = {
-			tag = ANS
-			BRA = {
-				has_country_flag = albrecht_achilles_flag
-			}
-		}
-		BRA = {
-			clr_country_flag = albrecht_achilles_flag #Just to be sure
-			kill_heir = {} #If Albrecht Achilles dies in Ansbach he will also be dead in Brandenburg, will appear as normal death of heir to BRA.
-		}
-	}
-	if = {
 		limit = { has_country_modifier = sought_after_bachelor }
 		remove_country_modifier = sought_after_bachelor
-	}
-	if = {
-		limit = {
-			tag = SAX
-			has_country_flag = sax_thuringen_split_to_happen
-			OR = {
-				NOT = { dynasty = "von Wettin" }
-				NOT = { senior_union_with = THU }
-				has_regency = yes
-			}
-		}
-		clr_country_flag = sax_thuringen_split_to_happen
-	}
-	if = {
-		limit = { tag = SAM }
-		country_event = { id = polynesian.35 }
-	}
-	if = {
-		limit = { tag = TOG }
-		country_event = { id = polynesian.36 }
-	}
-	if = {	# Ascension of Trailokanat	
-		limit = { tag = AYU }
-		country_event = { id = flavor_suk.1 }		 			
 	}
 	burgundian_inheritance_start_effect = yes
 	ladislaus_postumus_king_died_effect = yes
@@ -999,34 +812,6 @@ on_monarch_death = {
 
 # country
 on_regent = {
-	if = {
-		limit = {
-			NOT = { has_global_flag = death_of_haji_giray } #Also set in history.
-			tag = CRI
-			exists = TUR
-			is_subject = no
-			TUR = {
-				num_of_cities = ROOT
-				is_subject = no
-				num_of_ports = 1
-			}
-		}
-		country_event = { id = flavor_cri.1 } #Death of Haji Giray
-	}
-	if = {
-		limit = {
-			NOT = { has_global_flag = death_of_haji_giray } #Also set in history.
-			tag = CRI
-			OR = {
-				NOT = { exists = TUR }
-				is_subject = yes
-				TUR = { NOT = { num_of_cities = ROOT } }
-				TUR = { is_subject = yes }
-				TUR = { NOT = { num_of_ports = 1 } }
-			}
-		}
-		set_global_flag = death_of_haji_giray
-	}
 	events = {
 		tribal_succession.1	# harsh anti-tribals.
 		flavor_tim.1			#Death of Shah Rukh
@@ -1071,9 +856,6 @@ on_death_election = {
 
 # country
 on_death_foreign_slave_ruler = {
-	events = {
-		mamluk_events.0 # Choose new ruler
-	}
 }
 
 # country
@@ -1447,23 +1229,6 @@ on_government_change = {
 		random_owned_province = {
 			limit = { has_province_modifier = home_of_consort }
 			remove_province_modifier = home_of_consort
-		}
-	}
-	if = {
-		limit = {
-			OR = {
-				tag = ENG
-				tag = GBR
-			}
-			any_owned_province = {
-				has_province_modifier = rotten_borough
-			}
-		}
-		every_owned_province = {
-			limit = {
-				has_province_modifier = rotten_borough
-			}
-			remove_province_modifier = rotten_borough
 		}
 	}
 	if = {
