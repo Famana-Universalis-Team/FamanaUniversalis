@@ -13,40 +13,32 @@ fashros_religion_missions = {
 		required_missions = { }
 		position = 1
 		trigger = {
-			temple = 3
 		}
-		
 		effect = {
-			5949 = {
-			add_building = cathedral
-				}
-			}
 		}
 	}
-
-
-
-fashros_military = {
-	slot = 2
+}
+fashros_expansion_missions = {
+	slot = 3
 	generic = no
 	ai = yes
 	potential = {
 		NOT = { map_setup = map_setup_random }
 		tag = FAS
-		}
+	}
 	has_country_shield = yes
 	
-	defence_of_fashros = {
-		icon = fashros_assemble_an_army
+	fas_venture_westward = {
+		icon = mission_bedouins
 		required_missions = { }
-		position = 1
 		trigger = {
-			army_size_percentage = 1
-			}
-		
+			is_year	= 215
+			NOT = { is_at_war = yes }
+		}
 		effect = {
-			add_treasury = 50
-			}
+			country_event = { id = fashros.1 }
+			nuzoto_area = { add_claim = ROOT }
+			toza_area = { add_claim = ROOT }
 		}
 	}
 }

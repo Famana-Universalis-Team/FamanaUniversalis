@@ -7,13 +7,13 @@ add_core = LAG
 owner = LAG
 controller = LAG
 culture = Laglan
-religion = western_oppian
+religion = lathvy
 hre = no
 
 base_tax = 2
-base_production = 4
-trade_goods = fur
+base_production = 2
+trade_goods = grain
 base_manpower = 2
-capital = "Krimaj"
+capital = "UNNAMED"
 is_city = yes
 extra_cost = 1
