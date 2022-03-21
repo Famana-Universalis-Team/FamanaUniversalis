@@ -171,7 +171,7 @@ kap_2 = {
 	
 	kap_conquest_of_ghayola = {
 		icon = mission_unite_the_deccan
-		required_missions = { kap_conquest_of_iaperko }
+		required_missions = { }
 		provinces_to_highlight = {
 			area = unnamed_area_33
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
