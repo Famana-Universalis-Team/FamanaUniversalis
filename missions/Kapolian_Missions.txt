@@ -158,3 +158,41 @@ kap_1 = {
         	 }
 	}
 }
+
+kap_2 = {
+	slot = 2
+	generic = no
+    ai = yes
+    potential = {
+		NOT = { map_setup = map_setup_random }
+		tag = KAP
+    }
+    has_country_shield = yes
+	
+	kap_conquest_of_ghayola = {
+		icon = mission_unite_the_deccan
+		required_missions = { }
+		provinces_to_highlight = {
+			area = unnamed_area_33
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			unnamed_area_33 = {
+			type = all 
+			country_or_non_sovereign_subject_holds = ROOT
+	    }
+	}
+	effect = {
+		unnamed_area_44 = {
+			add_permanent_claim = ROOT 
+		}
+		unnamed_area_34 = {
+			add_permanent_claim = ROOT
+		}
+		add_country_modifier = {
+			name = kap_push_the_frontier
+			duration = 3650
+		}
+    }
+}
