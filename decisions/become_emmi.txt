@@ -4,11 +4,8 @@ country_decisions = {
 		potential = {
 			AND = {
 				culture_group = Ravsho
-				NOT = { has_reform = emmi 
-					TAG = ANM }
-					
-					
-				
+				NOT = { has_reform = emmi }
+				NOT = { tag = FAS }
 			}
 		}
 		
