@@ -1,4 +1,4 @@
-fashros_religion_missions = {
+fas_1 = {
 	slot = 1
 	generic = no
 	ai = yes
@@ -10,15 +10,168 @@ fashros_religion_missions = {
 
 	for_the_clouds = {
 		icon = fashros_wheels
-		required_missions = { }
-		position = 1
+		required_missions = {}
 		trigger = {
+			at_war_with_religious_enemy = yes
+			army_size_percentage = 1.0
+			custom_trigger_tooltip = {
+				tooltip = RAISED_TONMO_HORDE_TOOLTIP
+				has_country_flag = tonmo_raised_horde_flag
+			}
 		}
 		effect = {
+			add_country_modifier = {
+				name = fas_tonmo_zeal
+				duration = 9125
+			}
 		}
 	}
+
+	fas_ensure_tonmo_unity = {
+		icon = mission_collect_yasak
+		required_missions = {for_the_clouds}
+		trigger = {}
+		effect = {}
+	}
+
+	fas_reform_the_faith = {
+		icon = mission_land_of_churches
+		required_missions = {fas_ensure_tonmo_unity}
+		trigger = {}
+		effect = {}
+	}
+
+	fas_conquer_bamal = {
+		icon = mission_chinese_general_riding
+		required_missions = {fas_destroy_biliku}
+		position = 6
+		trigger = {}
+		effect = {}
+	}
+
+	fas_into_aresia = {
+		icon = mission_cossack_cavalry
+		required_missions = {fas_conquer_bamal}
+		trigger = {}
+		effect = {}
+	}
+
+	fas_subjugate_nakoa = {
+		icon = mission_conquer_novgorod
+		required_missions = {fas_into_aresia}
+		trigger = {}
+		effect = {}
+	}
+
+	fas_montavas_treasure = {
+		icon = mission_cannons_firing
+		required_missions = {fas_subjugate_nakoa}
+		trigger = {}
+		effect = {}
+	}
+
+	fas_the_vanoman_heartland = {
+		icon = secure_the_sava
+		required_missions = {fas_montavas_treasure}
+		trigger = {}
+		effect = {}
+	}
+
+	fas_develop_the_steppe = {
+		icon = mission_market_place_with_asian_traders
+		required_missions = {}
+		position = 11
+		trigger = {}
+		effect = {}
+	}
+
+	fas_great_cities_of_the_east = {
+		icon = mission_japanese_fort
+		required_missions = {fas_develop_the_steppe}
+		trigger = {}
+		effect = {}
+	}
+
+	fas_the_nhoma_tonxara = {
+		icon = mission_manchu_warrior
+		required_missions = {fas_great_cities_of_the_east}
+		trigger = {}
+		effect = {}
+	}
 }
-fashros_expansion_missions = {
+
+fas_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		tag = FAS
+	}
+	has_country_shield = yes
+
+	fas_a_final_push = {
+		icon = mission_non-western_cavalry_raid
+		required_missions = {fas_rumors_of_the_west}
+		position = 4
+		trigger = {}
+		effect = {}
+	}
+
+	fas_destroy_biliku = {
+		icon = mission_steppe_warriors
+		required_missions = {fas_a_final_push}
+		trigger = {}
+		effect = {}
+	}
+
+	fas_raid_jimkalin = {
+		icon = mission_unite_home_region
+		required_missions = {fas_destroy_biliku}
+		trigger = {}
+		effect = {}
+	}
+
+	fas_defeat_yabonia = {
+		icon = take_the_littoral
+		required_missions = {fas_raid_jimkalin fas_conquer_bamal}
+		trigger = {}
+		effect = {}
+	}
+
+	fas_invade_the_hoxoi_coast = {
+		icon = crusader_fleet
+		required_missions = {fas_defeat_yabonia fas_pillage_kinvirel}
+		position = 9
+		trigger = {}
+		effect = {}
+	}
+
+	fas_plunder_xolnomarka = {
+		icon = a_question_of_spain
+		required_missions = {fas_invade_the_hoxoi_coast}
+		trigger = {}
+		effect = {}
+	}
+
+	fas_ga_tonmo = {
+		icon = mission_golden_century
+		required_missions = {fas_plunder_xolnomarka}
+		position = 12
+		trigger = {}
+		effect = {}
+	}
+
+	fas_birth_of_the_tonmo_world = {
+		icon = mission_restore_kiev
+		required_missions = {fas_supremacy_of_the_clouds}
+		position = 17
+		trigger = {}
+		effect = {}
+	}
+}
+
+fas_3 = {
 	slot = 3
 	generic = no
 	ai = yes
@@ -30,7 +183,8 @@ fashros_expansion_missions = {
 	
 	fas_venture_westward = {
 		icon = mission_bedouins
-		required_missions = { }
+		required_missions = {}
+		position = 1
 		trigger = {
 			is_year	= 215
 			NOT = { is_at_war = yes }
@@ -40,5 +194,235 @@ fashros_expansion_missions = {
 			nuzoto_area = { add_claim = ROOT }
 			toza_area = { add_claim = ROOT }
 		}
+	}
+
+	fas_conquer_nozumol = {
+		icon = mission_levantine_restoration
+		required_missions = {fas_venture_westward}
+		trigger = {}
+		effect = {}
+	}
+
+	fas_rumors_of_the_west = {
+		icon = mission_sw_against_the_desert
+		required_missions = {fas_conquer_nozumol}
+		trigger = {}
+		effect = {}
+	}
+
+	fas_a_new_capital = {
+		icon = appease_the_estates
+		required_missions = {fas_rumors_of_the_west}
+		position = 5
+		trigger = {}
+		effect = {}
+	}
+
+	fas_dimdivu_docks = {
+		icon = mission_rb_scottish_north_sea_trade
+		required_missions = {fas_destroy_biliku fas_build_a_navy}
+		trigger = {}
+		effect = {}
+	}
+
+	fas_pillage_kinvirel = {
+		icon = fortify_malta
+		required_missions = {fas_defeat_yabonia}
+		position = 8
+		trigger = {}
+		effect = {}
+	}
+
+	fas_fashran_renaissance = {
+		icon = reaffirm_civil_values
+		required_missions = {fas_pillage_kinvirel}
+		trigger = {}
+		effect = {}
+	}
+
+	fas_tonmo_science = {
+		icon = fortify_the_passes
+		required_missions = {fas_fashran_renaissance}
+		trigger = {}
+		effect = {}
+	}
+
+	fas_the_jafxoi_tonxara = {
+		icon = mission_religious
+		required_missions = {fas_ga_tonmo}
+		position = 13
+		trigger = {}
+		effect = {}
+	}
+
+	fas_the_three_crowns = {
+		icon = mission_empire
+		required_missions = {fas_the_jafxoi_tonxara fas_the_nhoma_tonxara fas_the_kisholi_tonxara}
+		position = 14
+		trigger = {}
+		effect = {}
+	}
+
+	fas_secure_the_empire = {
+		icon = mission_great_wall
+		required_missions = {fas_the_three_crowns}
+		trigger = {}
+		effect = {}
+	}
+
+	fas_supremacy_of_the_clouds = {
+		icon = mission_conquer_5_states
+		required_missions = {fas_secure_the_empire}
+		trigger = {}
+		effect = {}
+	}
+}
+
+fas_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		tag = FAS
+	}
+	has_country_shield = yes
+
+	fas_the_vanoman_question = {
+		icon = mission_hanseatic_city
+		required_missions = {fas_rumors_of_the_west}
+		position = 4
+		trigger = {}
+		effect = {}
+	}
+
+	fas_build_a_navy = {
+		icon = mission_hanseatic_city
+		required_missions = {fas_the_vanoman_question}
+		trigger = {}
+		effect = {}
+	}
+	
+	fas_open_the_holy_cave = {
+		icon = mission_asian_city
+		required_missions = {fas_conquer_the_heartland}
+		position = 6
+		trigger = {
+			always = no
+		}
+	}
+	
+	fas_the_fate_of_washoomism = {
+		icon = mission_asian_city
+		required_missions = {fas_open_the_holy_cave fas_a_new_tonxara}
+		position = 8
+		trigger = {
+			always = no
+		}
+	}
+
+	fas_crush_kapolia = {
+		icon = mission_non-western_soldiers
+		required_missions = {fas_pillage_kinvirel}
+		trigger = {}
+		effect = {}
+	}
+
+	fas_seize_the_northern_shores = {
+		icon = mission_arabian_fort
+		required_missions = {fas_crush_kapolia}
+		trigger = {}
+		effect = {}
+	}
+
+	fas_leaving_the_steppe = {
+		icon = mission_advance_to_the_dnieper
+		required_missions = {fas_supremacy_of_the_clouds}
+		position = 17
+		trigger = {}
+		effect = {}
+	}
+}
+
+fas_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		tag = FAS
+	}
+	has_country_shield = yes
+
+	fas_protect_the_frontier = {
+		icon = mission_asian_city
+		required_missions = {}
+		trigger = {
+			always = no
+		}
+	}
+	
+	fas_humiliate_geopyopia = {
+		icon = mission_asian_city
+		required_missions = {fas_protect_the_frontier}
+		trigger = {
+			always = no
+		}
+	}
+
+	fas_seize_the_borderlands = {
+		icon = mission_asian_city
+		required_missions = {fas_humiliate_geopyopia}
+		trigger = {
+			always = no
+		}
+	}
+
+	fas_encroach_on_olopoka = {
+		icon = mission_asian_city
+		required_missions = {fas_seize_the_borderlands}
+		trigger = {
+			always = no
+		}
+	}
+
+	fas_conquer_the_heartland = {
+		icon = mission_asian_city
+		required_missions = {fas_encroach_on_olopoka}
+		trigger = {
+			always = no
+		}
+	}
+
+	fas_invade_the_south = {
+		icon = mission_asian_city
+		required_missions = {fas_conquer_the_heartland}
+		trigger = {
+			always = no
+		}
+	}
+
+	fas_a_new_tonxara = {
+		icon = mission_asian_city
+		required_missions = {fas_invade_the_south}
+		trigger = {
+			always = no
+		}
+	}
+
+	fas_conversion_of_the_jasuans = {
+		icon = mission_hands_praying
+		required_missions = {fas_crush_kapolia}
+		position = 10
+		trigger = {}
+		effect = {}
+	}
+
+	fas_the_kisholi_tonxara = {
+		icon = mission_persian_soldiers
+		required_missions = {fas_conversion_of_the_jasuans}
+		position = 13
+		trigger = {}
+		effect = {}
 	}
 }

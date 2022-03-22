@@ -38,7 +38,6 @@ country_event = { #Westward Expansion
                 cede_province = ROOT
                 change_religion = tonmo
                 change_culture = Central_Nhoman
-                add_core = LAM
             }
             5876 = {
                 limit = {
@@ -48,7 +47,6 @@ country_event = { #Westward Expansion
                 cede_province = ROOT
                 change_religion = tonmo
                 change_culture = Central_Nhoman
-                add_core = LAM
             }
             5860 = {
                 limit = {
@@ -58,7 +56,6 @@ country_event = { #Westward Expansion
                 cede_province = ROOT
                 change_religion = tonmo
                 change_culture = Central_Nhoman
-                add_core = LAM
             }
             5872 = {
                 limit = {
@@ -68,7 +65,6 @@ country_event = { #Westward Expansion
                 cede_province = ROOT
                 change_religion = tonmo
                 change_culture = Central_Nhoman
-                add_core = LAM
             }
             5881 = {
                 limit = {
@@ -78,7 +74,6 @@ country_event = { #Westward Expansion
                 cede_province = ROOT
                 change_religion = tonmo
                 change_culture = Central_Nhoman
-                add_core = LAM
             }
             5839 = {
                 limit = {
@@ -88,7 +83,6 @@ country_event = { #Westward Expansion
                 cede_province = ROOT
                 change_religion = tonmo
                 change_culture = Central_Nhoman
-                add_core = LAM
             }
             5858 = {
                 limit = {
@@ -98,7 +92,6 @@ country_event = { #Westward Expansion
                 cede_province = ROOT
                 change_religion = tonmo
                 change_culture = Bastranian
-                add_core = BAS
             }
             5869 = {
                 limit = {
@@ -108,7 +101,6 @@ country_event = { #Westward Expansion
                 cede_province = ROOT
                 change_religion = tonmo
                 change_culture = Bastranian
-                add_core = BAS
             }
             5878 = {
                 limit = {
@@ -118,7 +110,6 @@ country_event = { #Westward Expansion
                 cede_province = ROOT
                 change_religion = tonmo
                 change_culture = Bastranian
-                add_core = BAS
             }
             5877 = {
                 limit = {
@@ -128,7 +119,6 @@ country_event = { #Westward Expansion
                 cede_province = ROOT
                 change_religion = tonmo
                 change_culture = Bastranian
-                add_core = BAS
             }
             5859 = {
                 limit = {
@@ -138,7 +128,6 @@ country_event = { #Westward Expansion
                 cede_province = ROOT
                 change_religion = tonmo
                 change_culture = Central_Nhoman
-                add_core = LAM
             }
             5856 = {
                 limit = {
@@ -148,7 +137,6 @@ country_event = { #Westward Expansion
                 cede_province = ROOT
                 change_religion = tonmo
                 change_culture = Jimbalan
-                add_core = JIB
             }
             5996 = {
                 limit = {
@@ -158,7 +146,6 @@ country_event = { #Westward Expansion
                 cede_province = ROOT
                 change_religion = tonmo
                 change_culture = Central_Nhoman
-                add_core = LAM
             }
             5851 = {
                 limit = {
@@ -168,7 +155,6 @@ country_event = { #Westward Expansion
                 cede_province = ROOT
                 change_religion = tonmo
                 change_culture = Jimbalan
-                add_core = JIB
             }
             5882 = {
                 limit = {
@@ -178,7 +164,6 @@ country_event = { #Westward Expansion
                 cede_province = ROOT
                 change_religion = tonmo
                 change_culture = Jimbalan
-                add_core = JIB
             }
         }
     }
@@ -222,27 +207,21 @@ country_event = { #Nozumol
         hidden_effect = {
             5840 = {
                 change_culture = Fisbiklan
-                add_core = FSB
             }
             5841 = {
                 change_culture = Fisbiklan
-                add_core = FSB
             }
             5842 = {
                 change_culture = Fisbiklan
-                add_core = FSB
             }
             5846 = {
                 change_culture = Jimbalan
-                add_core = JIB
             }
             5844 = {
                 change_culture = Central_Nhoman
-                add_core = LAM
             }
             5845 = {
                 change_culture = Central_Nhoman
-                add_core = LAM
             }
         }
     }

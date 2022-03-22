@@ -63,6 +63,9 @@ raise_horde_aspect = {
 	}
 	effect = {
 		add_yearly_manpower = 2.0
+		hidden_effect = {
+			set_country_flag = tonmo_raised_horde_flag
+		}
 	}
 	ai_will_do = {
 		factor = 3

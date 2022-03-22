@@ -172,3 +172,30 @@ country_event = {
         add_stability = 1
     }
 }
+
+country_event = { #clear raised horde flag
+    id = tonmo.3
+    title = tonmo.3.t
+    desc = tonmo.3.desc
+    picture = STREET_SPEECH_eventPicture
+
+    hidden = yes
+
+    trigger = {
+        had_country_flag = {
+	        flag = tonmo_raised_horde_flag
+	        days = 365
+        }
+    }
+
+    immediate = {
+        hidden_effect = {
+            clr_country_flag = tonmo_raised_horde_flag
+        }
+    }
+
+    option = {
+        name = tonmo.3.a
+        ai_chance = { factor = 1 }
+    }
+}
