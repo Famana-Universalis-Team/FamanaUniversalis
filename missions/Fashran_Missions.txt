@@ -71,7 +71,7 @@ fas_1 = {
 				add_meritocracy = 20
 			}
 			else = {
-				add_mil_power = 100
+				add_adm_power = 100
 			}
 		}
 		provinces_to_highlight = {
@@ -183,15 +183,42 @@ fas_2 = {
 		icon = mission_non-western_cavalry_raid
 		required_missions = {fas_rumors_of_the_west}
 		position = 4
-		trigger = {}
-		effect = {}
+		trigger = {
+			mil_power = 100
+		}
+		effect = {
+			add_mil_power = -100
+			country_event = { id = fashros.4 }
+			unnamed_area_37 = { add_permanent_claim = ROOT }
+			yenis_area = { add_permanent_claim = ROOT }
+			unnamed_area_36 = { add_permanent_claim = ROOT }
+		}
 	}
 
 	fas_destroy_biliku = {
 		icon = mission_steppe_warriors
 		required_missions = {fas_a_final_push}
-		trigger = {}
-		effect = {}
+		trigger = {
+			unnamed_area_37 = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			yenis_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			unnamed_area_36 = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			bamal_gulf_region = { add_permanent_claim = ROOT }
+			add_ruler_modifier = {
+				name = fas_horde_arrives
+				duration = -1
+			}
+		}
 	}
 
 	fas_raid_jimkalin = {
@@ -260,8 +287,8 @@ fas_3 = {
 		}
 		effect = {
 			country_event = { id = fashros.1 }
-			nuzoto_area = { add_claim = ROOT }
-			toza_area = { add_claim = ROOT }
+			nuzoto_area = { add_permanent_claim = ROOT }
+			toza_area = { add_permanent_claim = ROOT }
 		}
 	}
 
@@ -292,7 +319,19 @@ fas_3 = {
 			is_year = 225
 		}
 		effect = {
-			jasua_superregion = {
+			jasua_region = {
+				discover_country = FAS
+			}
+			bamal_gulf_region = {
+				discover_country = FAS
+			}
+			aresia_region = {
+				discover_country = FAS
+			}
+			kapolia_region = {
+				discover_country = FAS
+			}
+			eastern_desert_region = {
 				discover_country = FAS
 			}
 			nozumol_region = {
@@ -301,13 +340,19 @@ fas_3 = {
 			aresian_gulf = {
 				discover_country = FAS
 			}
+			ufulk_area = {
+				discover_country = FAS
+			}
+			vadorvador_area = {
+				discover_country = FAS
+			}
 		}
 	}
 
 	fas_a_new_capital = {
 		icon = appease_the_estates
 		required_missions = {fas_rumors_of_the_west}
-		position = 5
+		position = 4
 		trigger = {}
 		effect = {}
 	}
@@ -315,6 +360,7 @@ fas_3 = {
 	fas_dimdivu_docks = {
 		icon = mission_rb_scottish_north_sea_trade
 		required_missions = {fas_destroy_biliku fas_build_a_navy}
+		position = 6
 		trigger = {}
 		effect = {}
 	}

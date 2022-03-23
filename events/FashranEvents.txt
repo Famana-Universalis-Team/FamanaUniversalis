@@ -317,11 +317,6 @@ country_event = { #Westward Expansion 2
     
     major = yes
 
-    immediate = {
-        hidden_effect = {
-        }
-    }
-
     option = {
         name = fashros.3.a
         custom_tooltip = westward_expansion_tooltip
@@ -409,6 +404,85 @@ country_event = { #Westward Expansion 2
                 cede_province = ROOT
                 change_religion = tonmo
                 change_culture = Khiman
+            }
+        }
+    }
+}
+
+country_event = { #Westward Expansion 3
+    id = fashros.4
+    title = fashros.4.t
+    desc = fashros.4.d
+    picture = MONGOL_BANNERS_eventPicture
+
+    is_triggered_only = yes
+    
+    major = yes
+
+    option = {
+        name = fashros.4.a
+        custom_tooltip = westward_expansion_tooltip
+        hidden_effect = {
+            if = {
+                limit = {
+                    5843 = {
+                        is_empty = yes
+                    }
+                }
+                5843 = {
+                    add_core = ROOT
+                    cede_province = ROOT
+                    change_religion = tonmo
+                    change_culture = Fisbiklan
+                }
+            }
+            if = {
+                limit = {
+                    5848 = {
+                        is_empty = yes
+                    }
+                }
+                5848 = {
+                    add_core = ROOT
+                    cede_province = ROOT
+                    change_religion = tonmo
+                    change_culture = Fisbiklan
+                }
+            }
+            if = {
+                limit = {
+                    5831 = {
+                        is_empty = yes
+                    }
+                }
+                5831 = {
+                    add_core = ROOT
+                    cede_province = ROOT
+                    change_religion = tonmo
+                    change_culture = Fisbiklan
+                }
+            }
+            if = {
+                limit = {
+                    5829 = {
+                        is_empty = yes
+                    }
+                }
+                5829 = {
+                    add_core = ROOT
+                    cede_province = ROOT
+                    change_religion = tonmo
+                    change_culture = Fisbiklan
+                }
+            }
+            vamkad_area = {
+                limit = {
+                    is_empty = yes
+                }
+                add_core = ROOT
+                cede_province = ROOT
+                change_religion = tonmo
+                change_culture = Fisbiklan
             }
         }
     }
