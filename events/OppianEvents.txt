@@ -460,7 +460,7 @@ country_event = {
 	option = {
 		name = oppia.7.b
 		ai_chance = { factor = 0 }
-		prestige = -5
+		add_prestige = -5
 	}
 }
 
@@ -547,15 +547,10 @@ country_event = {
 	option = {
 		name = oppia.8.b
 		ai_chance = { factor = 0 }
-		prestige = -25
-		option = {
-			name = jasuaE.2.b
-			add_prestige = 20
-			add_country_modifier = {
-				name = "outdated_heretic"
-				duration = 1825
-			}
-			ai_chance = { factor = 2 }
+		add_prestige = -25
+		add_country_modifier = {
+			name = "outdated_heretic"
+			duration = 1825
 		}
 	}
 }
@@ -688,6 +683,6 @@ country_event = {
 			modifier = {
 			}
 		}
-		prestige = -5
+		add_prestige = -5
 	}
 }

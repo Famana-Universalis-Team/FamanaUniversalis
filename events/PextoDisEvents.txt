@@ -192,7 +192,10 @@ country_event = { #glazian vs pextan incident
     option = {
 		name = pextodis.6.a
         ai_chance = { factor = 0 }
-        same_culture_advisor_cost = 0.5
+        add_country_modifier = { 
+            name = pexto_purge_advisors
+            duration = -1
+        }
         every_owned_province = {
             limit = {
                 culture = Glazian

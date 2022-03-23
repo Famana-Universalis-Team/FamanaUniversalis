@@ -67,26 +67,34 @@ country_event = {
         ai_chance = { factor = 1 }
 		bortur_area = { add_claim = ALT }
         6194 = { add_claim = ALT }
-        6182 = {
-			limit = { 
-				is_empty = yes
-			}
-			create_colony = 1000
-			cede_province = ALT
-			add_core = ALT
-			change_culture = Tolan
-			change_religion = lathvy
-		}
-        6409 = {
-			limit = { 
-				is_empty = yes
-			}
-			create_colony = 1000
-			cede_province = ALT
-			add_core = ALT
-			change_culture = Tolan
-			change_religion = lathvy
-		}
+        if = {
+            limit = {
+                6182 = {
+                    is_empty = yes
+                }
+            }
+            6182 = {
+			    create_colony = 1000
+			    cede_province = ALT
+			    add_core = ALT
+			    change_culture = Tolan
+			    change_religion = lathvy
+		    }
+        }
+        if = {
+            limit = {
+                6409 = {
+                    is_empty = yes
+                }
+            }
+            6409 = {
+			    create_colony = 1000
+			    cede_province = ALT
+			    add_core = ALT
+			    change_culture = Tolan
+			    change_religion = lathvy
+		    }
+        }
         add_casus_belli = {
             target = NHL
             type = cb_conquest

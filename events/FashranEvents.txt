@@ -30,140 +30,200 @@ country_event = { #Westward Expansion
         name = fashros.1.a
         custom_tooltip = westward_expansion_tooltip
         hidden_effect = {
-            5862 = {
+            if = {
                 limit = {
-                    is_empty = yes
+                    5862 = {
+                        is_empty = yes
+                    }
                 }
-                add_core = ROOT
-                cede_province = ROOT
-                change_religion = tonmo
-                change_culture = Central_Nhoman
+                5862 = {
+                    add_core = ROOT
+                    cede_province = ROOT
+                    change_religion = tonmo
+                    change_culture = Central_Nhoman
+                }
             }
-            5876 = {
+            if = {
                 limit = {
-                    is_empty = yes
+                    5876 = {
+                        is_empty = yes
+                    }
                 }
-                add_core = ROOT
-                cede_province = ROOT
-                change_religion = tonmo
-                change_culture = Central_Nhoman
+                5876 = {
+                    add_core = ROOT
+                    cede_province = ROOT
+                    change_religion = tonmo
+                    change_culture = Central_Nhoman
+                }
             }
-            5860 = {
+            if = {
                 limit = {
-                    is_empty = yes
+                    5860 = {
+                        is_empty = yes
+                    }
                 }
-                add_core = ROOT
-                cede_province = ROOT
-                change_religion = tonmo
-                change_culture = Central_Nhoman
+                5860 = {
+                    add_core = ROOT
+                    cede_province = ROOT
+                    change_religion = tonmo
+                    change_culture = Central_Nhoman
+                }
             }
-            5872 = {
+            if = {
                 limit = {
-                    is_empty = yes
+                    5872 = {
+                        is_empty = yes
+                    }
                 }
-                add_core = ROOT
-                cede_province = ROOT
-                change_religion = tonmo
-                change_culture = Central_Nhoman
+                5872 = {
+                    add_core = ROOT
+                    cede_province = ROOT
+                    change_religion = tonmo
+                    change_culture = Central_Nhoman
+                }
             }
-            5881 = {
+            if = {
                 limit = {
-                    is_empty = yes
+                    5881 = {
+                        is_empty = yes
+                    }
                 }
-                add_core = ROOT
-                cede_province = ROOT
-                change_religion = tonmo
-                change_culture = Central_Nhoman
+                5881 = {
+                    add_core = ROOT
+                    cede_province = ROOT
+                    change_religion = tonmo
+                    change_culture = Central_Nhoman
+                }
             }
-            5839 = {
+            if = {
                 limit = {
-                    is_empty = yes
+                    5839 = {
+                        is_empty = yes
+                    }
                 }
-                add_core = ROOT
-                cede_province = ROOT
-                change_religion = tonmo
-                change_culture = Central_Nhoman
+                5839 = {
+                    add_core = ROOT
+                    cede_province = ROOT
+                    change_religion = tonmo
+                    change_culture = Central_Nhoman
+                }
             }
-            5858 = {
+            if = {
                 limit = {
-                    is_empty = yes
+                    5858 = {
+                        is_empty = yes
+                    }
                 }
-                add_core = ROOT
-                cede_province = ROOT
-                change_religion = tonmo
-                change_culture = Bastranian
+                5858 = {
+                    add_core = ROOT
+                    cede_province = ROOT
+                    change_religion = tonmo
+                    change_culture = Bastranian
+                }
             }
-            5869 = {
+            if = {
                 limit = {
-                    is_empty = yes
+                    5869 = {
+                        is_empty = yes
+                    }
                 }
-                add_core = ROOT
-                cede_province = ROOT
-                change_religion = tonmo
-                change_culture = Bastranian
+                5869 = {
+                    add_core = ROOT
+                    cede_province = ROOT
+                    change_religion = tonmo
+                    change_culture = Bastranian
+                }
             }
-            5878 = {
+            if = {
                 limit = {
-                    is_empty = yes
+                    5878 = {
+                        is_empty = yes
+                    }
                 }
-                add_core = ROOT
-                cede_province = ROOT
-                change_religion = tonmo
-                change_culture = Bastranian
+                5878 = {
+                    add_core = ROOT
+                    cede_province = ROOT
+                    change_religion = tonmo
+                    change_culture = Bastranian
+                }
             }
-            5877 = {
+            if = {
                 limit = {
-                    is_empty = yes
+                    5877 = {
+                        is_empty = yes
+                    }
                 }
-                add_core = ROOT
-                cede_province = ROOT
-                change_religion = tonmo
-                change_culture = Bastranian
+                5877 = {
+                    add_core = ROOT
+                    cede_province = ROOT
+                    change_religion = tonmo
+                    change_culture = Bastranian
+                }
             }
-            5859 = {
+            if = {
                 limit = {
-                    is_empty = yes
+                    5859 = {
+                        is_empty = yes
+                    }
                 }
-                add_core = ROOT
-                cede_province = ROOT
-                change_religion = tonmo
-                change_culture = Central_Nhoman
+                5859 = {
+                    add_core = ROOT
+                    cede_province = ROOT
+                    change_religion = tonmo
+                    change_culture = Central_Nhoman
+                }
             }
-            5856 = {
+            if = {
                 limit = {
-                    is_empty = yes
+                    5856 = {
+                        is_empty = yes
+                    }
                 }
-                add_core = ROOT
-                cede_province = ROOT
-                change_religion = tonmo
-                change_culture = Jimbalan
+                5856 = {
+                    add_core = ROOT
+                    cede_province = ROOT
+                    change_religion = tonmo
+                    change_culture = Jimbalan
+                }
             }
-            5996 = {
+            if = {
                 limit = {
-                    is_empty = yes
+                    5996 = {
+                        is_empty = yes
+                    }
                 }
-                add_core = ROOT
-                cede_province = ROOT
-                change_religion = tonmo
-                change_culture = Central_Nhoman
+                5996 = {
+                    add_core = ROOT
+                    cede_province = ROOT
+                    change_religion = tonmo
+                    change_culture = Central_Nhoman
+                }
             }
-            5851 = {
+            if = {
                 limit = {
-                    is_empty = yes
+                    5851 = {
+                        is_empty = yes
+                    }
                 }
-                add_core = ROOT
-                cede_province = ROOT
-                change_religion = tonmo
-                change_culture = Jimbalan
+                5851 = {
+                    add_core = ROOT
+                    cede_province = ROOT
+                    change_religion = tonmo
+                    change_culture = Jimbalan
+                }
             }
-            5882 = {
+            if = {
                 limit = {
-                    is_empty = yes
+                    5882 = {
+                        is_empty = yes
+                    }
                 }
-                add_core = ROOT
-                cede_province = ROOT
-                change_religion = tonmo
-                change_culture = Jimbalan
+                5882 = {
+                    add_core = ROOT
+                    cede_province = ROOT
+                    change_religion = tonmo
+                    change_culture = Jimbalan
+                }
             }
         }
     }
@@ -266,6 +326,90 @@ country_event = { #Westward Expansion 2
         name = fashros.3.a
         custom_tooltip = westward_expansion_tooltip
         hidden_effect = {
+            if = {
+                limit = {
+                    5880 = {
+                        is_empty = yes
+                    }
+                }
+                5880 = {
+                    add_core = ROOT
+                    cede_province = ROOT
+                    change_religion = tonmo
+                    change_culture = Bastranian
+                }
+            }
+            if = {
+                limit = {
+                    5874 = {
+                        is_empty = yes
+                    }
+                }
+                5874 = {
+                    add_core = ROOT
+                    cede_province = ROOT
+                    change_religion = tonmo
+                    change_culture = Bastranian
+                }
+            }
+            nhoma_area_2 = {
+                limit = {
+                    is_empty = yes
+                }
+                add_core = ROOT
+                cede_province = ROOT
+                change_religion = tonmo
+                change_culture = Khiman
+            }
+            if = {
+                limit = {
+                    5886 = {
+                        is_empty = yes
+                    }
+                }
+                5886 = {
+                    add_core = ROOT
+                    cede_province = ROOT
+                    change_religion = tonmo
+                    change_culture = Fisbiklan
+                }
+            }
+            nhoma_area_6 = {
+                limit = {
+                    is_empty = yes
+                }
+                add_core = ROOT
+                cede_province = ROOT
+                change_religion = tonmo
+                change_culture = Khiman
+            }
+            nhoma_area_3 = {
+                limit = {
+                    is_empty = yes
+                }
+                add_core = ROOT
+                cede_province = ROOT
+                change_religion = tonmo
+                change_culture = Khiman
+            }
+            north_khim_area = {
+                limit = {
+                    is_empty = yes
+                }
+                add_core = ROOT
+                cede_province = ROOT
+                change_religion = tonmo
+                change_culture = Khiman
+            }
+            unnamed_area_38 = {
+                limit = {
+                    is_empty = yes
+                }
+                add_core = ROOT
+                cede_province = ROOT
+                change_religion = tonmo
+                change_culture = Khiman
+            }
         }
     }
 }

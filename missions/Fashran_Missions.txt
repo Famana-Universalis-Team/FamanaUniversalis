@@ -30,15 +30,84 @@ fas_1 = {
 	fas_ensure_tonmo_unity = {
 		icon = mission_collect_yasak
 		required_missions = {for_the_clouds}
-		trigger = {}
-		effect = {}
+		trigger = {
+			religious_unity = 1.0
+			OR = {
+				full_idea_group	= humanist_ideas
+				full_idea_group	= religious_ideas
+			}
+			custom_trigger_tooltip = {
+				tooltip = FAS_ENSURE_TONMO_UNITY_TOOLTIP
+				NOT = {
+					ROOT = {
+						any_owned_province = {
+							AND = {
+								superregion = tonmo_supperregion
+								religion = tonmo
+								unrest = 0
+							}
+						}
+					}
+				}
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					NOT = {
+						OR = {
+							legitimacy = 90
+							republican_tradition = 90
+							devotion = 90
+							horde_unity	= 90
+							meritocracy = 90
+						}
+					}
+				}
+				add_legitimacy = 20
+				add_republican_tradition = 20
+				add_devotion = 20
+				add_horde_unity = 20
+				add_meritocracy = 20
+			}
+			else = {
+				add_mil_power = 100
+			}
+		}
+		provinces_to_highlight = {
+			any_owned_province = {
+				AND = {
+					superregion = tonmo_supperregion
+					religion = tonmo
+				}
+			}
+		}
 	}
 
 	fas_reform_the_faith = {
 		icon = mission_land_of_churches
 		required_missions = {fas_ensure_tonmo_unity}
-		trigger = {}
-		effect = {}
+		trigger = {
+			advisor = theologian
+			num_of_owned_provinces_with = {
+				value = 200
+				religion = tonmo
+			}
+			years_of_income	= 1.0
+		}
+		effect = {
+			add_years_of_income = -1.0
+			capital_scope = {
+				add_province_modifier = {
+					name = fas_home_of_reformation
+					duration = -1
+				}
+			}
+			custom_tooltip = fas_reformation_tooltip
+			hidden_effect = {
+				set_global_flag	= tonmo_religion_reformed_flag
+			}
+		}
 	}
 
 	fas_conquer_bamal = {
@@ -199,15 +268,40 @@ fas_3 = {
 	fas_conquer_nozumol = {
 		icon = mission_levantine_restoration
 		required_missions = {fas_venture_westward}
-		trigger = {}
-		effect = {}
+		trigger = {
+			nuzoto_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			toza_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			country_event = {
+				id = fashros.3
+			}
+		}
 	}
 
 	fas_rumors_of_the_west = {
 		icon = mission_sw_against_the_desert
 		required_missions = {fas_conquer_nozumol}
-		trigger = {}
-		effect = {}
+		trigger = {
+			is_year = 225
+		}
+		effect = {
+			jasua_superregion = {
+				discover_country = FAS
+			}
+			nozumol_region = {
+				discover_country = FAS
+			}
+			aresian_gulf = {
+				discover_country = FAS
+			}
+		}
 	}
 
 	fas_a_new_capital = {
@@ -289,9 +383,9 @@ fas_4 = {
 	has_country_shield = yes
 
 	fas_the_vanoman_question = {
-		icon = mission_hanseatic_city
-		required_missions = {fas_rumors_of_the_west}
-		position = 4
+		icon = mission_early_modern_university
+		required_missions = {fas_conquer_nozumol}
+		position = 3
 		trigger = {}
 		effect = {}
 	}
@@ -299,6 +393,7 @@ fas_4 = {
 	fas_build_a_navy = {
 		icon = mission_hanseatic_city
 		required_missions = {fas_the_vanoman_question}
+		position = 5
 		trigger = {}
 		effect = {}
 	}

@@ -92,11 +92,10 @@ province_event = { #Random coastal xalian provinces / provinces adjacent to lath
 		ai_chance = { factor = 1 }
 		change_religion = lathvy
 		add_unrest = 4
-		hidden_modifier = {
-			add_province_modifier = {
-				name = "converted"
-				duration = 10000
-			}
+		add_province_modifier = {
+			name = "converted"
+			duration = 10000
+			hidden = yes
 		}
 		owner = {
 			add_country_modifier = {

@@ -30,7 +30,7 @@ country_event = {
 				add_center_of_trade_level = -1
 			}
 			else = {
-				devastation = 100
+				add_devastation = 100
 				add_base_production = -3
 				add_base_manpower = -3
 				add_base_tax = -3 

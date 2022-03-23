@@ -21,6 +21,9 @@ van_1 = {
             add_splendor = 250
             add_stability = 1
         }
+        provinces_to_highlight = {
+            province_id = 5669
+        }
     }
 
     van_technological_advantage = {

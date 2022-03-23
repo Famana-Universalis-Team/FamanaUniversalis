@@ -76,3 +76,16 @@ yomtanian_nation = {
     artillery_power = -0.50
     reinforce_speed = -0.50
 }
+
+tonmo_reformed_modifier = {
+    potential = {
+        religion = tonmo
+    }
+
+    trigger = {
+        has_global_flag = tonmo_religion_reformed_flag
+    }
+
+    global_tax_modifier	= 0.10
+    tolerance_own = 2
+}
