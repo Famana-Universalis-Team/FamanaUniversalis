@@ -185,6 +185,7 @@ fas_2 = {
 		position = 4
 		trigger = {
 			mil_power = 100
+			NOT = { is_at_war = yes }
 		}
 		effect = {
 			add_mil_power = -100
@@ -304,6 +305,7 @@ fas_3 = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
+			NOT = { is_at_war = yes }
 		}
 		effect = {
 			country_event = {

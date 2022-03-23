@@ -224,8 +224,7 @@ nomadic_tonxara_gov = {
 	icon = "horde_riding"
 	allow_normal_conversion = no
 	potential = {
-		religion = tonmo
-		government_rank = 3
+		tag = FAS
 	}
 	fixed_rank = 3
 	legacy_equivalent = steppe_horde_legacy
@@ -251,6 +250,7 @@ nomadic_tonxara_gov = {
 		movement_speed = 0.2
 		years_of_nationalism = -5
 		global_missionary_strength = 0.02
+		governing_capacity = 1000
 	}
 	ai = {
 		factor = 1000
