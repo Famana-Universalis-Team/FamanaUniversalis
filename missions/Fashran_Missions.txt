@@ -75,12 +75,8 @@ fas_1 = {
 			}
 		}
 		provinces_to_highlight = {
-			any_owned_province = {
-				AND = {
-					superregion = tonmo_supperregion
-					religion = tonmo
-				}
-			}
+			superregion = tonmo_supperregion
+			religion = tonmo
 		}
 	}
 
@@ -220,6 +216,14 @@ fas_2 = {
 				duration = -1
 			}
 		}
+		provinces_to_highlight = {
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			OR = {
+				area = unnamed_area_37
+				area = unnamed_area_36
+				area = yenis_area
+			}
+		}
 	}
 
 	fas_raid_jimkalin = {
@@ -310,6 +314,13 @@ fas_3 = {
 		effect = {
 			country_event = {
 				id = fashros.3
+			}
+		}
+		provinces_to_highlight = {
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			OR = {
+				area = nuzoto_area
+				area = toza_area
 			}
 		}
 	}

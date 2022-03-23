@@ -363,3 +363,8 @@ fas_horde_arrives = {
     core_creation = -0.20
     discipline = 0.10
 }
+
+famana_conversion_zeal = {
+    global_missionary_strength = 0.10
+    missionary_maintenance_cost = -0.33
+}

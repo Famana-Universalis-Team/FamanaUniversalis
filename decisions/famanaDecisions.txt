@@ -25,4 +25,35 @@ country_decisions = {
             factor = 1
         }
     }
+
+    convert_to_lathvy = {
+        potential = {
+            OR = {
+                religion = animism
+                religion_group = north_estali
+            }
+            any_owned_province = {
+                religion = lathvy
+            }
+        }
+        allow = {
+            is_free_or_tributary_trigger = yes
+            NOT = { is_tribal = yes }
+        }
+        effect = {
+            change_religion	= lathvy
+            add_country_modifier = {
+			    name = "famana_conversion_zeal"
+			    duration = 3650
+		    }
+            add_prestige = 10
+        }
+        ai_will_do = {
+            factor = 1
+            modifier = {
+                factor = 0
+                is_great_power = yes
+            }
+        }
+    }
 }

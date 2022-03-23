@@ -100,7 +100,7 @@ country_event = {
 		add_prestige = 20
 		add_stability = -1
 		add_country_modifier = {
-			name = "conversion_zeal"
+			name = "famana_conversion_zeal"
 			duration = 3650
 		}
 		change_religion = lathvy
