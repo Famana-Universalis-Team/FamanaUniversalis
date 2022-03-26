@@ -233,7 +233,7 @@ country_event = { #Nozumol
     id = fashros.2
     title = fashros.2.t
     desc = fashros.2.d
-    picture = MONGOL_BANNERS_eventPicture
+    picture = ENCOMIENDA_eventPicture
 
     fire_only_once = yes
 
@@ -484,6 +484,112 @@ country_event = { #Westward Expansion 3
                 change_religion = tonmo
                 change_culture = Fisbiklan
             }
+        }
+    }
+}
+
+country_event = { #Vanoman Question
+    id = fashros.5
+    title = fashros.5.t
+    desc = fashros.5.d
+    picture = CITY_VIEW_eventPicture
+
+    is_triggered_only = yes
+    
+    major = yes
+
+    option = { #Steal the land
+        name = fashros.5.a
+        ai_chance = {
+            factor = 4
+        }
+        5691 = {
+            cede_province = ROOT
+        }
+        5692 = {
+            cede_province =  ROOT
+        }
+        reverse_add_opinion	= {
+            who = VAN
+            modifier = fashros_stole_land
+        }
+    }
+    option = { #Offer a deal
+        name = fashros.5.b
+        ai_chance = {
+            factor = 1
+            modifier = {
+                factor = 0
+                is_rival = VAN
+            }
+            modifier = {
+                factor = 1000
+                has_opinion	= {
+                    who = VAN
+                    value = 100
+                }
+            }
+        }
+        VAN = {
+            country_event = {
+                id = vanoma.2
+                days = 30
+            }
+        }
+    }
+}
+
+country_event = { #Choosing a Capital
+    id = fashros.6
+    title = fashros.6.t
+    desc = fashros.6.d
+    picture = CITY_VIEW_eventPicture
+
+    is_triggered_only = yes
+
+    option = { #Anmoea
+        name = fashros.6.a
+        ai_chance = { factor = 2 }
+        goto = 5949
+        trigger = {
+            owns_core_province = 5949
+        }
+        5949 = {
+            add_province_modifier = {
+                name = fas_anmoea_capital
+                duration = 3650
+            }
+        }
+    }
+    option = { #Tyma
+        name = fashros.6.b
+        ai_chance = { factor = 5 }
+        goto = 5963
+        trigger = {
+            owns_core_province = 5963
+        }
+        set_capital	= 5963
+        5963 = {
+            add_base_tax = 1
+            add_base_production = 1
+            add_base_manpower = 1
+        }
+    }
+    option = { #Kinvirel
+        name = fashros.6.c
+        ai_chance = { factor = 1 }
+        goto = 5196
+        trigger = {
+            owns_core_province = 5196
+            5196 = {
+                religion = tonmo
+            }
+        }
+        set_capital	= 5196
+        5196 = {
+            add_base_tax = 1
+            add_base_production = 1
+            add_base_manpower = 1
         }
     }
 }

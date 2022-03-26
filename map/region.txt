@@ -91,9 +91,11 @@ lukscha_sea_region = {
 
 # Land Regions
 
-outer_region = {
+debug_region = {
 	areas = {
-		kruli_area
+		debug_area_1
+		debug_area_2
+		debug_area_3
 	}
 }
 
@@ -142,6 +144,7 @@ apilanya_region = {
 		kolya_area
 		area_58
 		area_104
+		area_177
 	}
 }
 
@@ -253,6 +256,11 @@ south_xalia_region = {
 upper_makyna_region = {
 	areas = {
 		kars_area
+		umber_area
+		area_207
+		area_208
+		area_209
+		area_210
 	}
 }
 

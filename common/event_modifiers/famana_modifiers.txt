@@ -368,3 +368,43 @@ famana_conversion_zeal = {
     global_missionary_strength = 0.10
     missionary_maintenance_cost = -0.33
 }
+
+fas_naval_endeavor = {
+    naval_morale = 0.2
+}
+
+fas_anmoea_capital = {
+    local_development_cost = -0.20
+}
+
+fas_ravsho_migrations = {
+    culture_conversion_cost = -0.50
+}
+
+fas_gulf_pacified = {
+    ae_impact = -0.10
+}
+
+fas_montavas_treasure_modifier = {
+    artillery_power = 0.20
+}
+
+fas_economic_exploitation = {
+    local_unrest = 3
+    local_tax_modifier = 1.0
+}
+
+rebuilding_delkia = {
+    development_cost = -0.15
+    global_prosperity_growth = 0.2
+}
+
+del_ximal = {
+    local_development_cost = -0.15
+    local_build_cost = -0.15
+}
+
+famana_debug_convert = {
+    global_missionary_strength = 10.0
+    missionaries = 100
+}

@@ -17,3 +17,21 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = famana_debug.2
+	title = famana_debug.2.t
+	picture = BATTLE_eventPicture
+	desc = famana_debug.2.d
+	
+	is_triggered_only = yes
+
+	option = {
+		name = famana_debug.2.a
+		ai_chance = { factor = 1 }
+		add_country_modifier = {
+			name = famana_debug_convert
+			duration = -1
+		}
+	}
+}

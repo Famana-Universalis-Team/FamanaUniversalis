@@ -8,14 +8,28 @@ primary_culture = Fashran
 add_accepted_culture = Lashran
 capital = 5949 # change to real capital
 historical_rival = GEP
+historical_rival = YAB
+historical_rival = BLK
+historical_rival = BMF
+historical_rival = KIN
 
-200.1.1 = { #change to 200 or smth
+208.2.11 = { #change to 200 or smth
 	monarch = {
-		name = "Regency"
-		dynasty = "Regency"
-		birth_date = 199.12.12
-		adm = 3
-		dip = 3
-		mil = 3
+		name = "Astrazna"
+		dynasty = "Kan"
+		birth_date = 188.3.9
+		adm = 5
+		dip = 4
+		mil = 6
 	}
+	leader = {
+		name = "Astrazna Kan"
+		type = general
+		fire = 3
+		shock = 4
+		manuever = 4
+		siege = 2
+	}
+	add_ruler_personality = conqueror_personality
+	add_ruler_personality = inspiring_leader_personality
 }

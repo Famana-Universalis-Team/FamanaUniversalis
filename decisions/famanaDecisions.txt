@@ -57,4 +57,73 @@ country_decisions = {
             }
         }
     }
+    ximal_capital = {
+		potential = {
+			AND = {
+				tag = DEL
+				NOT = {
+					has_country_flag = ximal_capital
+				}
+			}
+		}
+		provinces_to_highlight = {
+			province_id = 5163
+		}
+		allow = {
+			is_at_war = no
+			owns = 5163
+		}
+		effect = {
+			set_country_flag = ximal_capital
+			5163 = {
+				add_base_manpower = 2
+				add_base_tax = 2
+				add_base_production = 2
+			}	
+			DEL = {
+				set_capital = 5163
+			}
+			add_stability = 1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+    nafa_rini = {
+		potential = {
+			AND = {
+				tag = NAF
+                religion = lathvy
+                has_idea_group = religious_ideas
+				NOT = {
+					has_country_flag = nafa_rini_flag
+				}
+			}
+		}
+		allow = {
+			is_at_war = no
+			piety = 1.0
+            religious_school = {
+                group = lathvy_group
+                school = nafan_school
+            }
+            num_of_owned_provinces_with	= {
+                value = 10
+                religion = lathvy
+                superregion = west_estal_superregion
+            }
+		}
+		effect = {
+			set_country_flag = nafa_rini_flag
+            change_religion = rini
+            add_country_modifier = {
+			    name = "religious_zeal"
+			    duration = 3650
+		    }
+			add_stability = -2
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
 }

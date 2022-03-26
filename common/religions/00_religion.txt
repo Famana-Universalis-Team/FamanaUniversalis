@@ -1196,6 +1196,7 @@ tonmo_group = {
     tonmo = {
         icon = 22
         color = { 217 54 15 }
+		defender_of_faith = yes
         province = {
             local_missionary_strength = -0.02
         }

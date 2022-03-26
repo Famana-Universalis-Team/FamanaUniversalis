@@ -57,3 +57,74 @@ country_event = {
         }
     }
 }
+
+country_event = { #Westward Expansion 3
+    id = vanoma.2
+    title = vanoma.2.t
+    desc = vanoma.2.d
+    picture = NAVAL_MILITARY_eventPicture
+
+    is_triggered_only = yes
+    
+    major = yes
+
+    immediate = {
+        hidden_effect = {
+            change_dip = 1
+        }
+    }
+
+    option = { #Accept the deal
+        name = vanoma.2.a
+        ai_chance = {
+            factor = 3
+            modifier = {
+                factor = 0
+                is_rival = FAS
+            }
+            modifier = {
+                factor = 1000
+                has_opinion	= {
+                    who = FAS
+                    value = 100
+                }
+            }
+        }
+        add_prestige = -25
+        add_dip_power = -100
+        create_alliance	= FAS
+        reverse_add_opinion	= {
+            who = FAS
+            modifier = vanoma_tech_help
+        }
+        FAS = {
+            add_adm_tech = 1
+            add_dip_tech = 1
+            add_mil_tech = 1
+            hidden_effect = {
+                set_country_flag = fas_tech_support_flag
+            }
+            custom_tooltip = fas_tech_support_tooltip
+        }
+    }
+    option = { #Refuse, go to war
+        name = vanoma.2.b
+        ai_chance = {
+            factor = 1
+        }
+        add_prestige = 10
+        FAS = {
+            5691 = {
+                add_claim = FAS
+            }
+            5692 = {
+                add_claim =  FAS
+            }
+            declare_war_with_cb	= {
+                who = VAN
+                casus_belli = cb_conquest
+                war_goal_province = 5692
+            }
+        }
+    }
+}
