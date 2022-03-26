@@ -2052,13 +2052,14 @@ country_decisions = {
 					TAG = KEN
 				}
 				NOT = { exists = ENN } 
+				
 			
 					
 					
 					
 					
 		}
-		
+		was_never_end_game_tag_trigger = yes
 		provinces_to_highlight = {
 			OR = {
 				 	owned_by = YEN
@@ -2117,6 +2118,7 @@ country_decisions = {
 		potential = {
 			  NOT = { exists = VAM }
 			  primary_culture = Vamanyan
+			  was_never_end_game_tag_trigger = yes
 		}
 		
 		provinces_to_highlight = {
@@ -2615,4 +2617,282 @@ country_decisions = {
 			factor = 1
 		}
 	}
+	
+	nirkif_nation = {
+		major = yes
+		potential = {
+			AND = {
+				NOT = { exists = NIR }
+				culture = Nirkifi
+				was_never_end_game_tag_trigger = yes
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				culture = Nirkifi
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+			}
+		}
+		allow = {
+			adm_tech = 10
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			owns_all_provinces = {
+			culture = Nirkifi
+			}
+		}
+		effect = {
+			restore_country_name = yes
+			change_tag = NIR
+			
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	burgavy_nation = {
+		major = yes
+		potential = {
+			AND = {
+				NOT = { exists = BUV }
+				culture = Burgavian
+				was_never_end_game_tag_trigger = yes
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				culture = Burgavian
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+			}
+		}
+		allow = {
+			adm_tech = 10
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			owns_all_provinces = {
+			culture = Burgavian
+			}
+		}
+		effect = {
+			restore_country_name = yes
+			change_tag = BUV
+			
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	shoowta_nation = {
+		major = yes
+		potential = {
+			AND = {
+				NOT = { exists = SHW }
+				culture = Shoowtan
+				was_never_end_game_tag_trigger = yes
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				culture = Shoowtan
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+			}
+		}
+		allow = {
+			adm_tech = 10
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			owns_all_provinces = {
+			culture = Shoowtan
+			}
+		}
+		effect = {
+			restore_country_name = yes
+			change_tag = SHW
+			
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	veberdama_nation = {
+		major = yes
+		potential = {
+			AND = {
+				NOT = { exists = VEB }
+				culture = Buklatian
+				was_never_end_game_tag_trigger = yes
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 6331
+				province_id = 6332
+				province_id = 6333
+				province_id = 6335
+				province_id = 6334
+				province_id = 6328
+				province_id = 6323
+				province_id = 6322
+				province_id = 6321
+				province_id = 6320
+				province_id = 6318
+				province_id = 6338
+				province_id = 6336
+				province_id = 6337
+				province_id = 6339
+				province_id = 6340
+				province_id = 6341
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+			}
+		}
+		allow = {
+			adm_tech = 10
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+				owns_core_province = 6331
+				owns_core_province = 6332
+				owns_core_province = 6333
+				owns_core_province = 6335
+				owns_core_province = 6334
+				owns_core_province = 6328
+				owns_core_province = 6323
+				owns_core_province = 6322
+				owns_core_province = 6321
+				owns_core_province = 6320
+				owns_core_province = 6318
+				owns_core_province = 6338
+				owns_core_province = 6336
+				owns_core_province = 6337
+				owns_core_province = 6339
+				owns_core_province = 6340
+				owns_core_province = 6341
+			
+		}
+		effect = {
+			restore_country_name = yes
+			change_tag = VEB
+			
+			
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	buklatia_nation = {
+		major = yes
+		potential = {
+			AND = {
+				NOT = { exists = BUI }
+				NOT = { TAG = VEB }
+				culture = Buklatian
+				was_never_end_game_tag_trigger = yes
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 6331
+				province_id = 6332
+				province_id = 6333
+				province_id = 6335
+				province_id = 6334
+				province_id = 6328
+				province_id = 6323
+				
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+			}
+		}
+		allow = {
+			adm_tech = 15
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+				owns_core_province = 6331
+				owns_core_province = 6332
+				owns_core_province = 6333
+				owns_core_province = 6335
+				owns_core_province = 6334
+				owns_core_province = 6328
+				owns_core_province = 6323
+			
+		}
+		effect = {
+			restore_country_name = yes
+			change_tag = BUI
+			
+			
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	
 }

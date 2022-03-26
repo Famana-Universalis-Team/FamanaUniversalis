@@ -1373,6 +1373,7 @@ Naravami_C = {
         }
 	}
 	Nirkifi = {
+		primary = NIR
 		male_names = {
             Marda Gezbonam Bidum Nomeg Galne Dazdo Dulkop Mogibi Bimemi Gitifpa Pagagi Bitop Gakut Dumego Nezdog Muguni Bulman Tipmum Mokdab Domsmun Negun Nomog Doyni Belde
         }
@@ -1384,6 +1385,19 @@ Naravami_C = {
         }
 	}
 	Burgavian = {
+		primary = BUV
+		male_names = {
+            Marda Gezbonam Bidum Nomeg Galne Dazdo Dulkop Mogibi Bimemi Gitifpa Pagagi Bitop Gakut Dumego Nezdog Muguni Bulman Tipmum Mokdab Domsmun Negun Nomog Doyni Belde
+        }
+        female_names = {
+            Kuvar Dibu Tuki Begugpo Mepap Omi Nufku Noahna Naymoda Dotik
+        }
+        dynasty_names = {
+			Bhari Tiprdad Pikldomti Gumanmip Namimspe Miniybug Mughdudmu Geznata Defnibe Pikyguma Mithnimmet Paklmanu Bifmekti Gasmipnu Degpitnud
+        }
+	}
+	Shoowtan = {
+		primary = SHW
 		male_names = {
             Marda Gezbonam Bidum Nomeg Galne Dazdo Dulkop Mogibi Bimemi Gitifpa Pagagi Bitop Gakut Dumego Nezdog Muguni Bulman Tipmum Mokdab Domsmun Negun Nomog Doyni Belde
         }
@@ -1395,6 +1409,7 @@ Naravami_C = {
         }
 	}
 	Rouragi = {
+		primary = BUI
 		male_names = {
             Marda Gezbonam Bidum Nomeg Galne Dazdo Dulkop Mogibi Bimemi Gitifpa Pagagi Bitop Gakut Dumego Nezdog Muguni Bulman Tipmum Mokdab Domsmun Negun Nomog Doyni Belde
         }
