@@ -1,7 +1,7 @@
 # A region can only belong to one super region.
 
-outer_superregion = {
-	outer_region
+gacil_superregion = {
+	gacil_region
 }
 
 oppia_superregion = {
@@ -71,8 +71,4 @@ hasmal_superregion = {
 great_desert_superregion = {
 	upper_makyna_region
 	northern_desert_region
-}
-
-gacil_superregion = {
-	gacil_region
 }

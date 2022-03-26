@@ -406,15 +406,76 @@ fas_2 = {
 	fas_raid_jimkalin = {
 		icon = mission_unite_home_region
 		required_missions = {fas_destroy_biliku}
-		trigger = {}
-		effect = {}
+		trigger = {
+			5644 = {
+				controlled_by = FAS
+			}
+		}
+		effect = {
+			5644 = {
+				add_devastation	= 100
+				add_base_tax = -2
+				add_base_production = -2
+				add_base_manpower = -2
+			}
+			add_years_of_income	= 0.5
+			yabonia_area = { add_permanent_claim = ROOT }
+			unnamed_area_47 = { add_permanent_claim = ROOT }
+			unnamed_area_34 = { add_permanent_claim = ROOT }
+		}
+		provinces_to_highlight = {
+			province_id = 5644
+		}
 	}
 
 	fas_defeat_yabonia = {
 		icon = take_the_littoral
 		required_missions = {fas_raid_jimkalin fas_conquer_bamal}
-		trigger = {}
-		effect = {}
+		trigger = {
+			yabonia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			unnamed_area_47 = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			unnamed_area_34 = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			NOT = {
+				exists = YAB
+			}
+		}
+		effect = {
+			jasua_region = {
+				add_permanent_claim = FAS
+			}
+			add_horde_unity = 10
+            hidden_effect = {
+				every_owned_province = {
+					limit = {
+            	        OR = {
+							superregion = jasua_superregion
+						}
+            	    }
+            	    add_province_modifier = {
+            	        name = fas_economic_exploitation
+            	        duration = 9125
+            	    }
+            	}
+			}
+			custom_tooltip = FAS_ECO_TOOLTIP
+		}
+		provinces_to_highlight = {
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			OR = {
+				area = yabonia_area
+				area = unnamed_area_47
+				area = unnamed_area_34
+			}
+		}
 	}
 
 	fas_invade_the_hoxoi_coast = {
