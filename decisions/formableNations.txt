@@ -2646,7 +2646,7 @@ country_decisions = {
 		effect = {
 			restore_country_name = yes
 			change_tag = NIR
-			
+			change_government_reform_progress = 150
 			if = {
 				limit = {
 					NOT = { government_rank = 2 }
@@ -2692,7 +2692,7 @@ country_decisions = {
 		effect = {
 			restore_country_name = yes
 			change_tag = BUV
-			
+			change_government_reform_progress = 150
 			if = {
 				limit = {
 					NOT = { government_rank = 2 }
@@ -2738,7 +2738,7 @@ country_decisions = {
 		effect = {
 			restore_country_name = yes
 			change_tag = SHW
-			
+			change_government_reform_progress = 150
 			if = {
 				limit = {
 					NOT = { government_rank = 2 }
@@ -2761,7 +2761,7 @@ country_decisions = {
 		potential = {
 			AND = {
 				NOT = { exists = VEB }
-				culture = Buklatian
+				culture = Rouragi
 				was_never_end_game_tag_trigger = yes
 			}
 		}
@@ -2815,7 +2815,7 @@ country_decisions = {
 		effect = {
 			restore_country_name = yes
 			change_tag = VEB
-			
+			change_government_reform_progress = 150
 			
 			if = {
 				limit = {
@@ -2840,7 +2840,7 @@ country_decisions = {
 			AND = {
 				NOT = { exists = BUI }
 				NOT = { TAG = VEB }
-				culture = Buklatian
+				culture = Rouragi
 				was_never_end_game_tag_trigger = yes
 			}
 		}
@@ -2875,8 +2875,7 @@ country_decisions = {
 		effect = {
 			restore_country_name = yes
 			change_tag = BUI
-			
-			
+			change_government_reform_progress = 150
 			if = {
 				limit = {
 					NOT = { government_rank = 2 }
