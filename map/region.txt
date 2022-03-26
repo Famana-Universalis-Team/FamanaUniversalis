@@ -142,6 +142,7 @@ apilanya_region = {
 		kolya_area
 		area_58
 		area_104
+		area_177
 	}
 }
 
@@ -649,5 +650,13 @@ gacil_region = {
 	areas = {
 		gabero_area
 		tirix_area
+	}
+}
+
+debug_region = {
+	areas = {
+		debug_area_1
+		debug_area_2
+		debug_area_3
 	}
 }
