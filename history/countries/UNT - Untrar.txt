@@ -1,0 +1,18 @@
+government = native
+add_government_reform = native_clan_council_reform
+government_rank = 1
+mercantilism = 15
+technology_group = naravami_tech_gr
+religion = naravami
+primary_culture = Nirkifi
+capital = 6301	# real?
+200.1.1 = {
+	monarch = {
+		name = "Kkot"
+		dynasty = "Playrthir"
+		birth_date = 183.8.19
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+}

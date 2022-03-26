@@ -326,7 +326,7 @@
  HOLY_KING:0 "Holy King"
  HOLY_QUEEN:0 "Holy Queen"
  
- #natives
+ #fenika natives
  ANK: "Ankoisa"
  ANK_ADJ: "Ankoisan"
  ANK_ADJ2: "Ankoisan"
@@ -412,16 +412,16 @@
  YEN_ADJ2: "Yp Ennami"
  
  YUS: "Yuvas"
- YUS_ADJ: "Yuvasi"
- YUS_ADJ2: "Yuvasi"
+ YUS_ADJ: "Yuvasian"
+ YUS_ADJ2: "Yuvasian"
  
  BRY: "Ryzema"
  BRY_ADJ: "Ryzeman"
  BRY_ADJ2: "Ryzeman"
  
  BRO: "Borrodaz"
- BRO_ADJ: "Borrodazi"
- BRO_ADJ2: "Borrodazi"
+ BRO_ADJ: "Borrodazian"
+ BRO_ADJ2: "Borrodazian"
  
  VRI: "Vrimelkon"
  VRI_ADJ: "Vrimelkan"
@@ -430,6 +430,52 @@
  BOR: "Borborea"
  BOR_ADJ: "Borborean"
  BOR_ADJ2: "Borborean"
+ 
+ #naravam natives
+ 
+ UNT: "Untrar"
+ UNT_ADJ: "Untrarian"
+ UNT_ADJ2: "Untrarian"
+ 
+ DAS: "Dastvar"
+ DAS_ADJ: "Dastvarer"
+ DAS_ADJ2: "Dastvarer"
+ 
+ HRY: "Hrytram"
+ HRY_ADJ: "Hrytramian"
+ HRY_ADJ2: "Hrytramian"
+ 
+ VIS: "Vistevog"
+ VIS_ADJ: "Vistevogian"
+ VIS_ADJ2: "Vistevogian"
+ 
+ FYA: "Fyanakod"
+ FYA_ADJ: "Fyanakodian"
+ FYA_ADJ2: "Fyanakodian"
+ 
+ HUT: "Huttir"
+ HUT_ADJ: "Huttirean"
+ HUT_ADJ2: "Huttirean"
+ 
+ ISM: "Isebtum"
+ ISM_ADJ: "Isebtumian"
+ ISM_ADJ2: "Isebtunian"
+ 
+ HRI: "Hrivayda"
+ HRI_ADJ: "Hrivaydan"
+ HRI_ADJ2: "Hrivaydan"
+ 
+ LGM: "Ligmagam" 
+ LGM_ADJ: "Ligmagami"
+ LGM_ADJ: "Ligmagami"
+ 
+ APE: "Apetylwavd"
+ APE_ADJ: "Apetylwavdian"
+ APE_ADJ: "Apetylwavdian"
+ 
+ VOK: "Vokwart"
+ VOK_ADJ: "Vokwartian"
+ VOK_ADJ2: "Vokwartian"
  
  
  #------------Miris------------
@@ -885,8 +931,8 @@
  VRK_ADJ2: "Verkan"
  
  RET: "Reten"
- RET_ADJ: "Reteni"
- RET_ADJ2: "Reteni"
+ RET_ADJ: "Retenian"
+ RET_ADJ2: "Retenian"
  
  JIT: "Jiat"
  JIT_ADJ: "Jiatan"
