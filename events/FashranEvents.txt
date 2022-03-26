@@ -538,3 +538,58 @@ country_event = { #Vanoman Question
         }
     }
 }
+
+country_event = { #Choosing a Capital
+    id = fashros.6
+    title = fashros.6.t
+    desc = fashros.6.d
+    picture = CITY_VIEW_eventPicture
+
+    is_triggered_only = yes
+
+    option = { #Anmoea
+        name = fashros.6.a
+        ai_chance = { factor = 2 }
+        goto = 5949
+        trigger = {
+            owns_core_province = 5949
+        }
+        5949 = {
+            add_province_modifier = {
+                name = fas_anmoea_capital
+                duration = 3650
+            }
+        }
+    }
+    option = { #Tyma
+        name = fashros.6.b
+        ai_chance = { factor = 5 }
+        goto = 5963
+        trigger = {
+            owns_core_province = 5963
+        }
+        set_capital	= 5963
+        5963 = {
+            add_base_tax = 1
+            add_base_production = 1
+            add_base_manpower = 1
+        }
+    }
+    option = { #Kinvirel
+        name = fashros.6.c
+        ai_chance = { factor = 1 }
+        goto = 5196
+        trigger = {
+            owns_core_province = 5196
+            5196 = {
+                religion = tonmo
+            }
+        }
+        set_capital	= 5196
+        5196 = {
+            add_base_tax = 1
+            add_base_production = 1
+            add_base_manpower = 1
+        }
+    }
+}

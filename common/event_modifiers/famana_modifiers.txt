@@ -372,3 +372,19 @@ famana_conversion_zeal = {
 fas_naval_endeavor = {
     naval_morale = 0.2
 }
+
+fas_anmoea_capital = {
+    local_development_cost = -0.20
+}
+
+fas_ravsho_migrations = {
+    culture_conversion_cost = -0.50
+}
+
+fas_gulf_pacified = {
+    ae_impact = -0.10
+}
+
+fas_montavas_treasure_modifier = {
+    artillery_power = 0.20
+}
