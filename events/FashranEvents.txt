@@ -233,7 +233,7 @@ country_event = { #Nozumol
     id = fashros.2
     title = fashros.2.t
     desc = fashros.2.d
-    picture = MONGOL_BANNERS_eventPicture
+    picture = ENCOMIENDA_eventPicture
 
     fire_only_once = yes
 
@@ -483,6 +483,57 @@ country_event = { #Westward Expansion 3
                 cede_province = ROOT
                 change_religion = tonmo
                 change_culture = Fisbiklan
+            }
+        }
+    }
+}
+
+country_event = { #Vanoman Question
+    id = fashros.5
+    title = fashros.5.t
+    desc = fashros.5.d
+    picture = CITY_VIEW_eventPicture
+
+    is_triggered_only = yes
+    
+    major = yes
+
+    option = { #Steal the land
+        name = fashros.5.a
+        ai_chance = {
+            factor = 4
+        }
+        5691 = {
+            cede_province = ROOT
+        }
+        5692 = {
+            cede_province =  ROOT
+        }
+        reverse_add_opinion	= {
+            who = VAN
+            modifier = fashros_stole_land
+        }
+    }
+    option = { #Offer a deal
+        name = fashros.5.b
+        ai_chance = {
+            factor = 1
+            modifier = {
+                factor = 0
+                is_rival = VAN
+            }
+            modifier = {
+                factor = 1000
+                has_opinion	= {
+                    who = VAN
+                    value = 100
+                }
+            }
+        }
+        VAN = {
+            country_event = {
+                id = vanoma.2
+                days = 30
             }
         }
     }
