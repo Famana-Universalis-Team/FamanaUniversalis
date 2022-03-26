@@ -1,1 +1,62 @@
 
+
+#Econmic Branch
+delkia_1 = {
+	slot = 1
+	generic = no 
+	ai = yes
+	potential = {
+        NOT = { map_setup = map_setum_random }
+        OR = {
+            tag = DEL
+        }
+    }
+    has_country_shield = yes
+	
+	del_expand_the_cites = {
+		icon = promote_urbanization
+		required_missions = { }
+		provinces_to_highlight = {
+			OR = {
+				province_id	= 5167
+				province_id = 5166
+			}
+		}	NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		
+		trigger = {
+			5167 = {
+				development = 25
+			}
+			5166 = {
+				development = 18
+			}
+		}
+		effect = {
+            add_country_modifier = {
+				name = rebuilding_delkia
+				duration = 9125
+			}
+        }
+	}
+	
+	del_pearl_of_delkia = {
+		icon = mission_central_asian_city
+		required_missions = { del_expand_the_cites }
+		provinces_to_highlight = {
+			province_id = 5163
+		}
+		
+		trigger = {
+			owns_core_province = 5163
+			5163 = {
+				development = 28
+			}
+        }
+		effect = {
+			5163 = {
+				add_province_modifier = {
+				    name = del_ximal
+				}	duration = -1
+			}   
+    }
+	}
