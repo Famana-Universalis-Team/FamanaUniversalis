@@ -388,3 +388,13 @@ fas_gulf_pacified = {
 fas_montavas_treasure_modifier = {
     artillery_power = 0.20
 }
+
+rebuilding_delkia = {
+	development_cost = -0.15
+	global_prosperity_growth = 0.2
+}
+
+del_ximal = {
+	local_development_cost = -0.15
+	local_build_cost = -0.15
+}
