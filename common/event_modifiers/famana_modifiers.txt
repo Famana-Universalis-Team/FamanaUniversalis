@@ -403,3 +403,8 @@ del_ximal = {
     local_development_cost = -0.15
     local_build_cost = -0.15
 }
+
+famana_debug_convert = {
+    global_missionary_strength = 10.0
+    missionaries = 100
+}

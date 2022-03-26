@@ -3683,6 +3683,85 @@ on_province_religion_converted = {
 		}
 		set_province_flag = tonmo_converted
 	}
+	if = {
+		limit = {
+			OR = {
+				culture = Yabonian
+				culture = Geteri
+				culture = Bamali_C
+				culture = Holk
+			}
+			owner = {
+				religion = tonmo
+			}
+		}
+		change_culture = Kisholian
+		add_core = KSL
+		remove_core = BMF
+	}
+	if = {
+		limit = {
+			OR = {
+				culture = Kapolian
+				culture = Ghaloyan
+				culture = West_Jasuan
+				culture = Mikledonian
+			}
+			owner = {
+				religion = tonmo
+			}
+		}
+		change_culture = West_Kisholian
+		add_core = KSL
+	}
+	if = {
+		limit = {
+			OR = {
+				culture = Yatian
+				culture = Verkan
+				culture = Nakoan
+				culture = Blastan
+			}
+			owner = {
+				religion = tonmo
+			}
+		}
+		change_culture = North_Kisholian
+		add_core = KSL
+	}
+	if = {
+		limit = {
+			OR = {
+				culture = Oppio_Jasuan
+				culture = Zoblotran
+			}
+			owner = {
+				religion = tonmo
+			}
+		}
+		change_culture = South_Kisholian
+		add_core = KSL
+	}
+	if = {
+		limit = {
+			culture = Bilik_C
+			owner = {
+				religion = tonmo
+			}
+		}
+		change_culture = Fisbiklan
+		add_core = FSB
+		remove_core = BLK
+	}
+	if = {
+		limit = {
+			culture = Emtik
+			owner = {
+				religion = tonmo
+			}
+		}
+		change_culture = Khiman
+	}
 	else_if = {
 		limit = {
 			OR = {
