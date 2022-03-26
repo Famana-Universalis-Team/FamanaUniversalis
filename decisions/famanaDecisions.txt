@@ -58,3 +58,49 @@ country_decisions = {
         }
     }
 }
+
+  ximal_capital = {
+		major = yes
+		potential = {
+			AND = {
+				tag = DEL
+				owns = 5163
+				NOT = {
+					has_country_flag = ximal_capital
+				}
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 5163
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				is_city = no
+			}
+		}
+		allow = {
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			owns = 5163
+			capital_scope = {
+				is_core = ROOT
+			}
+		}
+		effect = {
+			set_country_flag = ximal_capital
+			5163 = {
+				add_base_manpower = 2
+				add_base_tax = 2
+				add_base_production = 2
+			}	
+			DEL = {
+				set_capital = 5163
+			}
+			add_stability = 1
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}
