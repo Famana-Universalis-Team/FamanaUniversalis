@@ -3,6 +3,7 @@
 oppian_state_reform = {
 	icon = "oppian"
 	allow_normal_conversion = no
+	lock_level_when_selected = yes
 	legacy_equivalent = despotic_monarchy
 	valid_for_nation_designer = yes
 	nation_designer_cost = 0
@@ -27,6 +28,7 @@ oppian_state_reform = {
 crown_kingdom_reform = {
 	icon = "crowncity"
 	allow_normal_conversion = no
+	lock_level_when_selected = yes
 	legacy_equivalent = despotic_monarchy
 	valid_for_nation_designer = yes
 	nation_designer_cost = 0
@@ -49,6 +51,7 @@ crown_kingdom_reform = {
 holy_monarchy_reform = {
 	icon = "pextoglazia"
 	allow_normal_conversion = no
+	lock_level_when_selected = yes
 	legacy_equivalent = theocratic_government
 	valid_for_nation_designer = yes
 	nation_designer_cost = 0
@@ -74,6 +77,7 @@ holy_monarchy_reform = {
 corrupt_monarchy_reform = {
 	icon = "shatteredpextoglazia"
 	allow_normal_conversion = no
+	lock_level_when_selected = yes
 	legacy_equivalent = theocratic_government
 	valid_for_nation_designer = yes
 	nation_designer_cost = 0
@@ -100,6 +104,7 @@ corrupt_monarchy_reform = {
 tomban_reform = {
 	icon = "houseoftomba"
 	allow_normal_conversion = no
+	lock_level_when_selected = yes
 	legacy_equivalent = despotic_monarchy
 	valid_for_nation_designer = yes
 	nation_designer_cost = 0
@@ -125,6 +130,7 @@ tomban_reform = {
 nafan_gov = {
 	icon = "nafanempire"
 	allow_normal_conversion = no
+	lock_level_when_selected = yes
 	potential = {
 		tag = NAF
 	}
@@ -223,6 +229,7 @@ anmoean_council = {
 nomadic_tonxara_gov = {
 	icon = "horde_riding"
 	allow_normal_conversion = no
+	lock_level_when_selected = yes
 	potential = {
 		tag = FAS
 	}
@@ -234,6 +241,10 @@ nomadic_tonxara_gov = {
 	nation_designer_cost = 0
 	nation_designer_trigger = {
 		technology_group = north_antebari_tech_gr
+	}
+
+	custom_attributes = {
+		locked_government_type = yes
 	}
 
 	lock_level_when_selected = yes

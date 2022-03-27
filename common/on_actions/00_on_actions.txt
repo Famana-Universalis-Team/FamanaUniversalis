@@ -373,6 +373,12 @@ on_war_won = {
 		}
 		add_church_power = 10
 	}
+	if = {
+		limit = {
+			religion = naravami
+		}
+		add_church_power = 50
+	}
 }
 
 # country
@@ -406,6 +412,12 @@ on_war_lost = {
 		}
 		set_country_flag = reined_in_for_shadow_kingdom
 	}
+	if = {
+		limit = {
+			religion = naravami
+		}
+		add_church_power = -50
+	}
 	add_country_modifier = {
 		name = just_lost_war_timer
 		duration = 10
@@ -426,6 +438,12 @@ on_battle_won_country = {
 		ROOT = {
 			add_war_exhaustion = -0.05
 		}
+	}
+	if = {
+		limit = {
+			religion = naravami
+		}
+		add_church_power = 5
 	}
 }
 
@@ -4263,6 +4281,12 @@ on_raid_coast = {
 			faction = pr_buccaneers
 			influence = 1
 		}
+	}
+	if = {
+		limit = {
+			religion = naravami
+		}
+		add_church_power = 25
 	}
 }
 

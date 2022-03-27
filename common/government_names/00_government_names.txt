@@ -137,6 +137,30 @@ oppia_gov_name = {
 	}
 }
 
+naravami_clan_name = {
+	rank = {
+		1 = NARAVAMI_CLAN
+		2 = KINGDOM
+		3 = EMPIRE
+	}
+
+	ruler_male = {
+		1 = CHIEF
+		2 = KING
+		3 = EMPEROR
+	}
+
+	ruler_female = {
+		1 = CHIEFTESS
+		2 = QUEEN
+		3 = EMPRESS
+	}
+
+	trigger = {
+		has_reform = naravami_tribe_reform
+	}
+}
+
 tombasor_name = {
 	rank = {
 		1 = TOMBASOR
