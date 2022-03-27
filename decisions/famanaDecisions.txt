@@ -117,7 +117,7 @@ country_decisions = {
 			set_country_flag = nafa_rini_flag
             change_religion = rini
             add_country_modifier = {
-			    name = "religious_zeal"
+			    name = "conversion_zeal"
 			    duration = 3650
 		    }
 			add_stability = -2
