@@ -196,3 +196,73 @@ kap_2 = {
 		}
     }
 }
+
+	kap_the_frontier = {
+		icon = league_of_the_public_weal
+		required_missions = { kap_conquest_of_ghayola }
+		provinces_to_highlight = {
+			OR = {
+				area = unnamed_area_44
+				area = unnamed_area_34
+			}	
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			unnamed_area_44 = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+		    }
+			unnamed_area_34 = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+        }
+		
+		effect = {
+			unnamed_area_45 = {
+				add_permanent_claim = ROOT
+			}
+			unnamed_area_39 = {
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	kap_bamal_heartland = {
+		icon = league_of_the_public_weal
+		required_missions = { kap_the_frontier }
+		provinces_to_highlight = {
+			OR = {
+				area = unnamed_area_39
+				area = unnamed_area_45
+			}	
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			unnamed_area_45 = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+		    }
+			unnamed_area_39 = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+        }
+		
+		effect = {
+			unnamed_area_47 = {
+				add_permanent_claim = ROOT
+			}
+			unnamed_area_48 = {
+				add_permanent_claim = ROOT
+			}
+			yabonia_area = {
+				add_permanent_claim = ROOT
+			}
+			add_country_modifier = {
+				name = rule_of_the_bamals
+			}	duration = -1
+		}
+	}
