@@ -6,7 +6,7 @@ naravami_tribe_reform = {
 	nation_designer_cost = 20
 
 	modifiers = {
-		may_perform_slave_raid = yes
+		may_perform_slave_raid_on_same_religion = yes 	
 		church_power_modifier = -1
 	}
 }
