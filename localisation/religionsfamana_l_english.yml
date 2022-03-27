@@ -472,8 +472,15 @@
  gotzli_religion_desc:0 "A collection of ancient traditions and beliefs popular among the Gotzlic people." #not creative enough
 
  naravami:0 "Torviya"
- naravami_religion_desc: "§YTorviya §Wcountries can §Ggain §YChurch Power §Wby raiding coasts, winning wars and winning battles. Losing wars will cause you to §Rlose §Wchurch power.\n\nThe Torviya religion represents the various tribal beliefs of the Naravami people. Adherents of Torviya have varying regional differences, but generally, they believe in the ice gods beyond the great Naravami Mountains. Animal sacrifice plays a major part."
+ naravami_religion_desc: "§YTorviya §Wcountries can §Ggain §YChurch Power §Wby raiding coasts, winning wars and winning battles. Losing wars will cause you to §Rlose §YChurch power§W.\n\nThe Torviya religion represents the various tribal beliefs of the Naravami people. Adherents of Torviya have varying regional differences, but generally, they believe in the ice gods beyond the great Naravami Mountains. Animal sacrifice plays a major part."
  north_estali:0 "North Estali"
+
+  look_for_heir_aspect:0 "Search For an Heir"
+	launch_hunting_parties_aspect:0 "Launch Hunting Parties"
+	increase_raiding_aspect:0 "Increase Raiding"
+	venerate_the_gods_aspect:0 "Venerate the Gods"
+	abandon_old_ideas_aspect:0 "Abandon Old Ideas"
+  build_naval_defenses_aspect:0 "Build Naval Defenses"
 
  bosisi:0 "Bosisi"
  bosisi_religion_desc:0 "Bosisi is the tribal religion of the Antiash people. They believe in a diverse pantheon of gods, with the sun god being most important. It is believed that the sun god will grow stronger and dry up the great sanctuary lake if it is not regularily given sacrifices. In the most dire of times, slaves captured in raids may be sacrificed."

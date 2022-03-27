@@ -139,3 +139,40 @@ country_event = {
         add_prestige = 25
     }
 }
+
+country_event = {
+	id = naravam.3
+	title = naravam.3.t
+	picture = TRADE_GOODS_FURS_FISH_AND_SALT_eventPicture
+	desc = naravam.3.d
+	
+	trigger = { 
+		AND = {
+			NOT = {
+                government = native
+            }
+            is_year = 300
+			NOT = {
+				is_year = 400
+			}
+			culture_group = Naravami_C
+			NOT = {
+				has_country_flag = has_had_naravam3
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = naravam.3.a
+		ai_chance = { factor = 1 }
+		set_country_flag = has_had_naravam3
+		add_country_modifier = {
+			name = call_of_the_frontier
+			duration = 18250
+		}
+	}
+}
