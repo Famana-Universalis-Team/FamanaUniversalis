@@ -408,3 +408,8 @@ famana_debug_convert = {
     global_missionary_strength = 10.0
     missionaries = 100
 }
+
+rule_of_the_bamals = {
+	build_time = -0.15
+	num_accepted_cultures = 2
+}
