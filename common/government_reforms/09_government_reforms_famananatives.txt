@@ -1,12 +1,17 @@
 naravami_tribe_reform = {
 	icon = "chieftain"
 	allow_normal_conversion = no
+	lock_level_when_selected = yes
 
 	valid_for_nation_designer = yes
 	nation_designer_cost = 20
 
+	custom_attributes = {
+		locked_government_type = yes
+	}
+
 	modifiers = {
 		may_perform_slave_raid_on_same_religion = yes 	
-		church_power_modifier = -1
+		church_power_modifier = -1.0
 	}
 }

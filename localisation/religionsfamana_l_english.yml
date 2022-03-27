@@ -389,6 +389,7 @@
  TONMO_ASPECTS_LONG: "Tonmo Command"
  TONMO_ASPECTS_SHORT: "Command"
  TONMO_ASPECTS_POWER_NAME: "Church Power"
+ _POWER_NAME: "Church Power"
  call_chiefs_aspect:0 "Assemble the Chiefs"
  desc_call_chiefs_aspect:0 ""
  recruit_warlord_aspect:0 "Recruit a Warlord"
@@ -471,7 +472,7 @@
  gotzli_religion_desc:0 "A collection of ancient traditions and beliefs popular among the Gotzlic people." #not creative enough
 
  naravami:0 "Torviya"
- naravami_religion_desc:0 "The Torviya religion represents the various tribal beliefs of the Naravami people. Adherents of Torviya have varying regional differences, but generally, they believe in the ice gods beyond the great Naravami Mountains. Animal sacrifice plays a major part."
+ naravami_religion_desc: "§YTorviya §Wcountries can §Ggain §YChurch Power §Wby raiding coasts, winning wars and winning battles. Losing wars will cause you to §Rlose §Wchurch power.\n\nThe Torviya religion represents the various tribal beliefs of the Naravami people. Adherents of Torviya have varying regional differences, but generally, they believe in the ice gods beyond the great Naravami Mountains. Animal sacrifice plays a major part."
  north_estali:0 "North Estali"
 
  bosisi:0 "Bosisi"

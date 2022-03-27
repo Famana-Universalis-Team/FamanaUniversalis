@@ -303,9 +303,6 @@ country_event = {
 		months = 12
 	}
 
-	immediate = {
-	}
-
     option = {
 		name = pexto.10.a
         ai_chance = { factor = 1 }
@@ -330,7 +327,7 @@ country_event = {
 				AND = {
 					has_global_flag = newpexamoldeal
 					5561 = {
-						owner = PEX
+						owned_by = PEX
 					}
 				}
 			}
