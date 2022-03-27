@@ -444,9 +444,6 @@ fas_2 = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			NOT = {
-				exists = YAB
-			}
 		}
 		effect = {
 			jasua_region = {
