@@ -2710,52 +2710,6 @@ country_decisions = {
 		}
 	}
 	
-	shoowta_nation = {
-		major = yes
-		potential = {
-			AND = {
-				NOT = { exists = SHW }
-				culture = Shoowtan
-				was_never_end_game_tag_trigger = yes
-			}
-		}
-		provinces_to_highlight = {
-			OR = {
-				culture = Shoowtan
-			}
-			OR = {
-				NOT = { owned_by = ROOT }
-			}
-		}
-		allow = {
-			adm_tech = 10
-			is_free_or_tributary_trigger = yes
-			is_at_war = no
-			owns_all_provinces = {
-			culture = Shoowtan
-			}
-		}
-		effect = {
-			restore_country_name = yes
-			change_tag = SHW
-			change_government_reform_progress = 150
-			if = {
-				limit = {
-					NOT = { government_rank = 2 }
-				}
-				set_government_rank = 2
-			}
-			add_country_modifier = {
-				name = "centralization_modifier"
-				duration = 7300
-			}
-			add_prestige = 25
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	
 	veberdama_nation = {
 		major = yes
 		potential = {
@@ -2839,7 +2793,8 @@ country_decisions = {
 		potential = {
 			AND = {
 				NOT = { exists = BUI }
-				NOT = { TAG = VEB }
+				OR = { TAG = VOK 
+					   TAG = APE }
 				culture = Rouragi
 				was_never_end_game_tag_trigger = yes
 			}
@@ -2860,7 +2815,7 @@ country_decisions = {
 			}
 		}
 		allow = {
-			adm_tech = 15
+			adm_tech = 10
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
 				owns_core_province = 6331

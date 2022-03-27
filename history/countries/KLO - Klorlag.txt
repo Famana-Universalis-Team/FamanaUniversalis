@@ -4,15 +4,15 @@ government_rank = 1
 mercantilism = 15
 technology_group = naravami_tech_gr
 religion = naravami
-primary_culture = Burgavian
-capital = 6312	# real?
+primary_culture = Rouragi
+capital = 6340	# real?
 200.1.1 = {
 	monarch = {
-		name = "Tippan"
-		dynasty = "Eryabanaz"
+		name = "Usles"
+		dynasty = "Frinkhvam"
 		birth_date = 183.8.19
-		adm = 4
-		dip = 6
-		mil = 4
+		adm = 3
+		dip = 4
+		mil = 1
 	}
 }

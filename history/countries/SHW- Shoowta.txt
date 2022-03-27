@@ -7,3 +7,14 @@ religion = naravami
 primary_culture = Shoowtan
 capital = 6305	# change to real capital
 
+200.1.1 = {
+	monarch = {
+		name = "Rikken"
+		dynasty = "Wasvatv"
+		birth_date = 199.12.12
+		adm = 2
+		dip = 5
+		mil = 5
+	}
+}
+
