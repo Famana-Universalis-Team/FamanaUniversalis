@@ -119,6 +119,7 @@ country_event = {
             set_capital	= 6485
         }
         custom_tooltip = rdum_migrate_tooltip
+        grant_independence = yes
         add_prestige = -10s
         add_country_modifier = {
             name = rdum_dev
@@ -149,6 +150,9 @@ country_event = {
 	trigger = { 
 		AND = {
 			NOT = {
+                tag = RDU
+            }
+            NOT = {
                 government = native
             }
             is_year = 300
