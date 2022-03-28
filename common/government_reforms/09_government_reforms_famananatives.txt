@@ -15,3 +15,45 @@ naravami_tribe_reform = {
 		church_power_modifier = -1.0
 	}
 }
+naravami_native_becomes_republic_reform = {
+	icon = "parliament_highlighted"
+	allow_normal_conversion = yes
+	effect = {
+		every_tribal_land_province = {
+			limit = { NOT = { owner = { exists = yes } } }
+			settle_province = ROOT
+		}
+		set_country_flag = populists_in_government
+		change_government = republic
+		change_government_reform_progress = -250 # Doing it like this to avoid that migration code triggers
+	}
+	
+}
+naravami_native_becomes_monarchy_reform = {
+	icon = "king_highlighted"
+	allow_normal_conversion = yes
+	effect = {
+		every_tribal_land_province = {
+			limit = { NOT = { owner = { exists = yes } } }
+			settle_province = ROOT
+		}
+		set_country_flag = populists_in_government
+		change_government = monarchy
+		change_government_reform_progress = -450 # Doing it like this to avoid that migration code triggers
+	}
+	
+}
+naravami_native_becomes_theocracy_reform = {
+	icon = "pope_highlighted"
+	allow_normal_conversion = yes
+	effect = {
+		every_tribal_land_province = {
+			limit = { NOT = { owner = { exists = yes } } }
+			settle_province = ROOT
+		}
+		set_country_flag = populists_in_government
+		change_government = theocracy
+		change_government_reform_progress = -250 # Doing it like this to avoid that migration code triggers
+	}
+	
+}
