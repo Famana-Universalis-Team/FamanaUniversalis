@@ -171,7 +171,7 @@ country_event = {
 		ai_chance = { factor = 1 }
 		set_country_flag = has_had_naravam3
 		add_country_modifier = {
-			name = call_of_the_frontier
+			name = call_of_the_frontier_naravam
 			duration = 18250
 		}
 	}

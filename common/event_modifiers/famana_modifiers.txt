@@ -166,6 +166,11 @@ call_of_the_frontier = {
     colonists = 1
 }
 
+call_of_the_frontier_naravam = {
+    colonists = 1
+    global_tax_income = 2
+}
+
 arist_modifier = {
     tolerance_heathen = 2
     church_influence_modifier = -0.1
