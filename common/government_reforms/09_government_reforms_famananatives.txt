@@ -1,5 +1,6 @@
 naravami_tribe_reform = {
 	icon = "chieftain"
+	potential = { culture_group = Naravami_C }
 	allow_normal_conversion = no
 	lock_level_when_selected = yes
 
