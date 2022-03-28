@@ -372,6 +372,14 @@ native_trading_with_foreigners_reform = {
 native_becomes_monarchy_reform = {
 	icon = "king_highlighted"
 	allow_normal_conversion = yes
+	potential = {
+		NOT = { 
+			OR = { 
+				   culture_group = Naravami_C 
+				   culture_group = Western_Estali 
+				 }
+		}
+	}
 	trigger = {
 		has_institution = feudalism
 	}
@@ -392,6 +400,14 @@ native_becomes_monarchy_reform = {
 native_becomes_republic_reform = {
 	icon = "parliament_highlighted"
 	allow_normal_conversion = yes
+	potential = {
+		NOT = { 
+			OR = { 
+				   culture_group = Naravami_C 
+				   culture_group = Western_Estali 
+				 }
+		}
+	}
 	trigger = {
 		has_institution = feudalism
 	}
@@ -423,6 +439,14 @@ native_becomes_republic_reform = {
 native_becomes_theocracy_reform = {
 	icon = "pope_highlighted"
 	allow_normal_conversion = yes
+	potential = {
+		NOT = { 
+			OR = { 
+				   culture_group = Naravami_C 
+				   culture_group = Western_Estali 
+				 }
+		}
+	}
 	trigger = {
 		has_institution = feudalism
 	}
@@ -443,9 +467,18 @@ native_becomes_theocracy_reform = {
 native_becomes_horde_reform = {
 	icon = "horde_riding_highlighted"
 	allow_normal_conversion = yes
+	potential = {
+		NOT = { 
+			OR = { 
+				   culture_group = Naravami_C 
+				   culture_group = Western_Estali 
+				 }
+		}
+	}
 	trigger = {
 		is_migratory_tribe = yes
 		mil_tech = 6
+		
 	}
 	effect = {
 		every_tribal_land_province = {
@@ -467,6 +500,9 @@ native_becomes_horde_reform = {
 native_remain_being_native_reform = {
 	icon = "tribal_civil_society"
 	allow_normal_conversion = yes
+	potential = {
+	NOT = { culture_group = Naravami }
+	}
 	modifiers = {
 		land_morale = 0.10
 		movement_speed = 0.05

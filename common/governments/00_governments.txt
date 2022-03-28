@@ -415,6 +415,7 @@ tribal = {
 				gond_kingdom
 				great_mongol_state_reform
 				nomadic_tonxara_gov
+				naravami_tribe_rdu_reform
 			}
 		}
 		tribal_cultural_values = {
@@ -498,6 +499,9 @@ native = {
 				native_becomes_republic_reform
 				native_becomes_theocracy_reform
 				native_remain_being_native_reform
+				naravami_native_becomes_republic_reform
+				naravami_native_becomes_monarchy_reform
+				naravami_native_becomes_theocracy_reform
 			}
 		}
 	}

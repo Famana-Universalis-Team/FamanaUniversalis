@@ -2636,11 +2636,11 @@ country_decisions = {
 			}
 		}
 		allow = {
-			adm_tech = 10
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
-			owns_all_provinces = {
-			culture = Nirkifi
+			num_of_owned_provinces_with = {
+				value = 10
+				culture = Nirkifi
 			}
 		}
 		effect = {
@@ -2682,11 +2682,11 @@ country_decisions = {
 			}
 		}
 		allow = {
-			adm_tech = 10
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
-			owns_all_provinces = {
-			culture = Burgavian
+			num_of_owned_provinces_with = {
+				value = 10
+				culture = Burgavian
 			}
 		}
 		effect = {
