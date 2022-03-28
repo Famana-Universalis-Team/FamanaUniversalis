@@ -18,6 +18,7 @@ naravami_tribe_reform = {
 }
 naravami_native_becomes_republic_reform = {
 	icon = "parliament_highlighted"
+	potential = { culture_group = Naravami_C }
 	allow_normal_conversion = yes
 	effect = {
 		every_tribal_land_province = {
@@ -32,6 +33,7 @@ naravami_native_becomes_republic_reform = {
 }
 naravami_native_becomes_monarchy_reform = {
 	icon = "king_highlighted"
+	potential = { culture_group = Naravami_C }
 	allow_normal_conversion = yes
 	effect = {
 		every_tribal_land_province = {
@@ -46,6 +48,7 @@ naravami_native_becomes_monarchy_reform = {
 }
 naravami_native_becomes_theocracy_reform = {
 	icon = "pope_highlighted"
+	potential = { culture_group = Naravami_C }
 	allow_normal_conversion = yes
 	effect = {
 		every_tribal_land_province = {
