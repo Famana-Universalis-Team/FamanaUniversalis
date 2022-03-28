@@ -1299,8 +1299,16 @@ north_estali = {
 		}
 
 		uses_church_power = yes
+		
 		aspects = {
+			look_for_heir_aspect
+			build_naval_defenses_aspect
+			launch_hunting_parties_aspect
+			venerate_the_gods_aspect
+			increase_raiding_aspect
+			abandon_old_ideas_aspect
 		}
+		aspects_name = PROTESTANT_ASPECTS
 		
 		heretic = { NULLIC }
 	}

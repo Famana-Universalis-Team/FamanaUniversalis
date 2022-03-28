@@ -1,0 +1,74 @@
+look_for_heir_aspect = {
+	cost = 100
+	modifier = {
+		heir_chance = 0.5
+        advisor_cost = -0.10
+	}
+	ai_will_do = {
+		factor = 5
+        modifier = {
+            factor = 0
+            has_heir = yes
+        }
+	}
+}
+
+launch_hunting_parties_aspect = {
+    cost = 100
+    modifier = {
+        production_efficiency = 0.10
+        army_tradition = 0.5
+    }
+    ai_will_do = {
+        factor = 4
+    }
+}
+
+increase_raiding_aspect = {
+    cost = 100
+    modifier = {
+        capture_ship_chance = 0.50
+    }
+    ai_will_do = {
+        factor = 6
+    }
+}
+
+venerate_the_gods_aspect = {
+    cost = 100
+    modifier = {
+        prestige = 1.0
+        stability_cost_modifier = -0.05
+    }
+    ai_will_do = {
+        factor = 8
+    }
+}
+
+abandon_old_ideas_aspect = {
+    cost = 200
+    modifier = {
+        reform_progress_growth = 0.15
+    }
+    ai_will_do = {
+        factor = 2
+    }
+}
+
+build_naval_defenses_aspect = {
+    cost = 200
+    modifier = {
+        own_coast_naval_combat_bonus = 2.0
+    }
+    ai_will_do = {
+        factor = 5
+        modifier = {
+            factor = 0
+            NOT = {
+                any_owned_province = {
+                    has_port = yes
+                }
+            }
+        }
+    }
+}
