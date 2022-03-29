@@ -14,7 +14,7 @@ naravami_tribe_reform = {
 	modifiers = {
 		may_perform_slave_raid_on_same_religion = yes 	
 		church_power_modifier = -1.0
-		reform_progress_growth = -0.1
+		reform_progress_growth = 0.1
 	}
 }
 naravami_native_becomes_republic_reform = {

@@ -501,7 +501,7 @@ native_remain_being_native_reform = {
 	icon = "tribal_civil_society"
 	allow_normal_conversion = yes
 	potential = {
-	NOT = { culture_group = Naravami }
+	NOT = { culture_group = Naravami_C }
 	}
 	modifiers = {
 		land_morale = 0.10

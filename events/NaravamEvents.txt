@@ -94,10 +94,19 @@ country_event = {
                 cede_province = ---
                 remove_core = RDU
             }
-            kletvar_area = {
+	    6282 = {
                 cede_province = ---
                 remove_core = RDU
             }
+	    6281 = {
+                cede_province = ---
+                remove_core = RDU
+            }
+           
+	    6283 = { 
+		     cede_province = KLV
+		     remove_core = RDU 
+	    }
             area_156 = {
                 limit = {
 				    is_empty = yes
