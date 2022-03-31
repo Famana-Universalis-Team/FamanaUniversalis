@@ -207,7 +207,7 @@ fas_1 = {
 		}
 		effect = {
 			borlebim_area = {
-				add_claim = FAS
+				add_claim = ROOT
 			}
 			add_country_modifier = {
 				name = fas_gulf_pacified
@@ -323,15 +323,56 @@ fas_1 = {
 		icon = mission_market_place_with_asian_traders
 		required_missions = {}
 		position = 11
-		trigger = {}
-		effect = {}
+		trigger = {
+			num_of_owned_provinces_with	= {
+				value = 20
+				superregion	= tonmo_supperregion
+				development	= 10
+			}
+		}
+		effect = {
+			add_stability_or_adm_power = yes
+			add_country_modifier = {
+				name = fas_booming_economy
+				duration = 3650
+			}
+		}
 	}
 
 	fas_great_cities_of_the_east = {
 		icon = mission_japanese_fort
 		required_missions = {fas_develop_the_steppe}
-		trigger = {}
-		effect = {}
+		trigger = {
+			5949 = {
+				development = 25
+			}
+			5963 = {
+				development = 25
+			}
+			5968 = {
+				development = 25
+			}
+		}
+		effect = {
+			5949 = {
+				add_province_modifier = {
+					name = fas_great_city
+					duration = 7300
+				}
+			}
+			5963 = {
+				add_province_modifier = {
+					name = fas_great_city
+					duration = 7300
+				}
+			}
+			5968 = {
+				add_province_modifier = {
+					name = fas_great_city
+					duration = 7300
+				}
+			}
+		}
 	}
 
 	fas_the_nhoma_tonxara = {
@@ -447,7 +488,7 @@ fas_2 = {
 		}
 		effect = {
 			jasua_region = {
-				add_permanent_claim = FAS
+				add_permanent_claim = ROOT
 			}
 			add_horde_unity = 10
             hidden_effect = {
@@ -568,31 +609,31 @@ fas_3 = {
 		}
 		effect = {
 			jasua_region = {
-				discover_country = FAS
+				discover_country = ROOT
 			}
 			bamal_gulf_region = {
-				discover_country = FAS
+				discover_country = ROOT
 			}
 			aresia_region = {
-				discover_country = FAS
+				discover_country = ROOT
 			}
 			kapolia_region = {
-				discover_country = FAS
+				discover_country = ROOT
 			}
 			eastern_desert_region = {
-				discover_country = FAS
+				discover_country = ROOT
 			}
 			nozumol_region = {
-				discover_country = FAS
+				discover_country = ROOT
 			}
 			aresian_gulf = {
-				discover_country = FAS
+				discover_country = ROOT
 			}
 			ufulk_area = {
-				discover_country = FAS
+				discover_country = ROOT
 			}
 			vadorvador_area = {
-				discover_country = FAS
+				discover_country = ROOT
 			}
 		}
 	}
@@ -647,8 +688,39 @@ fas_3 = {
 		icon = fortify_malta
 		required_missions = {fas_defeat_yabonia}
 		position = 8
-		trigger = {}
-		effect = {}
+		trigger = {
+			kinvirel_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			unnamed_area_31 = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			unnamed_area_13 = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_prestige = 25
+			eastern_desert_region = {
+				add_permanent_claim = ROOT
+			}
+			add_country_modifier = {
+				name = fas_adopt_jasuan_manufacturing
+				duration = 3650
+			}
+			every_province = {
+				limit = {
+					area = area_117
+				}
+				add_province_modifier = {
+					name = fas_kinvireli_artifacts
+					duration = 3650
+				}
+			}
+		}
 	}
 
 	fas_fashran_renaissance = {

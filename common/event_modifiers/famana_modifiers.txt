@@ -418,3 +418,21 @@ rule_of_the_bamals = {
 	build_time = -0.15
 	num_accepted_cultures = 2
 }
+
+fas_booming_economy = {
+    production_efficiency = 0.15
+    build_cost = -0.1
+}
+
+fas_great_city = {
+    trade_goods_size_modifier = 0.25
+    prestige = 0.5
+}
+
+fas_adopt_jasuan_manufacturing = {
+    production_efficiency = 0.10
+}
+
+fas_kinvireli_artifacts = {
+    development_cost = -0.20
+}
