@@ -721,6 +721,14 @@ fas_3 = {
 				}
 			}
 		}
+		provinces_to_highlight = {
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			OR = {
+				area = kinvirel_area
+				area = unnamed_area_31
+				area = unnamed_area_13
+			}
+		}
 	}
 
 	fas_fashran_renaissance = {
