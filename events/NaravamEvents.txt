@@ -105,6 +105,7 @@ country_event = {
            
 	    6283 = { 
 		     cede_province = KLV
+		     add_core = KLV
 		     remove_core = RDU 
 	    }
             area_156 = {
@@ -126,6 +127,10 @@ country_event = {
                 change_religion = naravami
             }
             set_capital	= 6485
+	    RDU = { change_religion = Naravami
+		    change_primary_culture = Rduma }
+	    KLV = { change_religion = Naravami
+		    change_primary_culture = Rduma }
         }
         custom_tooltip = rdum_migrate_tooltip
         grant_independence = yes

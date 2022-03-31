@@ -45,6 +45,9 @@ naravami_native_becomes_monarchy_reform = {
 		change_government = monarchy
 		change_government_reform_progress = -450 # Doing it like this to avoid that migration code triggers
 	}
+	ai = {
+		factor = 1.25
+	}
 	
 }
 naravami_native_becomes_theocracy_reform = {
