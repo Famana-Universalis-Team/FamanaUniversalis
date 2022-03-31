@@ -2646,7 +2646,7 @@ country_decisions = {
 		effect = {
 			restore_country_name = yes
 			change_tag = NIR
-			change_government_reform_progress = 150
+			
 			if = {
 				limit = {
 					NOT = { government_rank = 2 }
@@ -2693,7 +2693,7 @@ country_decisions = {
 		effect = {
 			restore_country_name = yes
 			change_tag = BUV
-			change_government_reform_progress = 150
+			
 			if = {
 				limit = {
 					NOT = { government_rank = 2 }
@@ -2770,7 +2770,7 @@ country_decisions = {
 		effect = {
 			restore_country_name = yes
 			change_tag = VEB
-			change_government_reform_progress = 150
+			
 			
 			if = {
 				limit = {
@@ -2831,7 +2831,7 @@ country_decisions = {
 		effect = {
 			restore_country_name = yes
 			change_tag = BUI
-			change_government_reform_progress = 150
+			
 			if = {
 				limit = {
 					NOT = { government_rank = 2 }
@@ -2853,14 +2853,21 @@ country_decisions = {
     naravam_nation = {
 		major = yes
 		potential = {
-				culture_group = Naravam_C
+			AND = { 
+				culture_group = Naravami_C
 				was_never_end_game_tag_trigger = yes
+			 }
 			
 		}
 		provinces_to_highlight = {
 			OR = {
-				region = 
-				
+				region =  western_naravam_region
+				area = area_90
+				area = area_94
+				area = area_95
+				area = area_96
+				area = area_97
+				area = nere_area
 			}
 			OR = {
 				NOT = { owned_by = ROOT }
