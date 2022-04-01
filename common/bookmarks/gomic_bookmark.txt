@@ -6,16 +6,20 @@ bookmark = {
     center = 5431
 
 	country = ORC
+	country = KAP
+	country = LAG
 	country = OSS
 	country = TCK
 	country = OKU
 	country = MSH
-	country = LAG
 	country = DEL
-	country = KAP
 	country = SKT
 	country = NAK
 	country = PEX
+
+	easy_country = ORC
+	easy_country = KAP
+	easy_country = LAG
 
 	default = yes
 }

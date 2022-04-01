@@ -721,13 +721,16 @@ fas_3 = {
 				name = fas_adopt_jasuan_manufacturing
 				duration = 3650
 			}
-			every_province = {
-				limit = {
-					area = area_117
-				}
-				add_province_modifier = {
-					name = fas_kinvireli_artifacts
-					duration = 3650
+			custom_tooltip = fas_artifacts_tooltip
+			hidden_effect = {
+				every_province = {
+					limit = {
+						area = area_117
+					}
+					add_province_modifier = {
+						name = fas_kinvireli_artifacts
+						duration = 3650
+					}
 				}
 			}
 		}
@@ -982,8 +985,38 @@ fas_4 = {
 	fas_seize_the_northern_shores = {
 		icon = mission_arabian_fort
 		required_missions = {fas_crush_kapolia}
-		trigger = {}
-		effect = {}
+		trigger = {
+			owns_all_provinces = {
+				region = emastalia_region
+				NOT = {
+					is_empty = yes
+				}
+			}
+			owns_all_provinces = {
+				region = west_emastalia_region
+				NOT = {
+					is_empty = yes
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = fas_colonial_spirit
+				duration = 10950
+			}
+		}
+		provinces_to_highlight = {
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			AND = {
+				OR = {
+					region = emastalia_region
+					region = west_emastalia_region
+				}
+				NOT = {
+					is_empty = yes
+				}
+			}
+		}
 	}
 
 	fas_leaving_the_steppe = {
@@ -1065,8 +1098,33 @@ fas_5 = {
 		icon = mission_hands_praying
 		required_missions = {fas_crush_kapolia}
 		position = 10
-		trigger = {}
-		effect = {}
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 75
+				superregion = jasua_superregion
+				religion = tonmo
+			}
+		}
+		effect = {
+			custom_tooltip = fas_conversion_tooltip
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						NOT = {
+							religion = tonmo
+						}
+					}
+					add_province_modifier = {
+						name = fas_religious_malleability
+						duration = 9125
+					}
+				}
+			}
+		}
+		provinces_to_highlight = {
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			superregion = jasua_superregion
+		}
 	}
 
 	fas_the_kisholi_tonxara = {

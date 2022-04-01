@@ -1,19 +1,31 @@
-discovered_by = gotzlic_tech_gr
 discovered_by = east_gomic_tech_gr
 discovered_by = north_gomic_tech_gr
-discovered_by = west_gomic_tech_gr
 #Written with Eu4 Easy Province Creator by emiroercn
-#Almuz
-culture = Old_Venrolean
+#UNNAMED
+culture = Mabusoth
 religion = animism
 hre = no
-
 base_tax = 1
 base_production = 1
-base_manpower = 2
+base_manpower = 1
+# grain
 native_size = 10
-native_ferocity = 1
-native_hostileness = 1
-capital = "Vadanca"
+native_ferocity = 5
+native_hostileness = 5
+capital = "UNNAMED"
 is_city = no
-extra_cost = 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

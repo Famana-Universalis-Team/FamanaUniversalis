@@ -1,4 +1,42 @@
 
+BVA_ideas = {
+	start = {
+		naval_forcelimit_modifier = 0.25
+		galley_power = 0.33
+	}
+	
+	bonus = {
+		naval_attrition = -0.25
+	}
+
+	trigger = {
+		tag = BVA
+	}
+	free = yes
+	
+	bva_spirit = {
+		may_explore = yes
+	}
+	bva_land = {
+		idea_cost = -0.10
+	}
+	bva_trade = {
+		global_trade_power = 0.15
+	}
+	bva_bavatis = {
+		global_ship_cost = -0.20
+	}
+	bva_go = {
+		enemy_core_creation	= 1.0
+	}
+	bva_grasoon = {
+		cavalry_power = 0.15
+	}
+	bva_burn = {
+		siege_ability = 0.10
+	}
+}
+
 KKR_ideas = {
 	start = {
 		caravan_power = 0.20

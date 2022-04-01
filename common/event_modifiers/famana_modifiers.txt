@@ -445,7 +445,17 @@ fas_widespread_conversion = {
     global_heathen_missionary_strength = 0.05
     missionaries = 1
 }
+
 makyna_estuary_modifier = {
 	province_trade_power_value = 5
 	picture = "estuary_icon"
+}
+
+fas_colonial_spirit = {
+    colonists = 1
+}
+
+fas_religious_malleability = {
+    local_missionary_strength = 0.075
+    local_unrest = 2
 }
