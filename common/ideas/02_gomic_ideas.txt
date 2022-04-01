@@ -75,7 +75,6 @@ ORC_ideas = {
 		global_own_trade_power = 0.25
 	}
 	orc_train = {
-		land_morale = 0.10
 		fire_damage_received = -0.10
 	}
 }
@@ -2070,7 +2069,7 @@ Pomlen_ideas = {
 
 NHL_ideas = {
     start = {
-        land_morale = 0.10
+        naval_forcelimit_modifier = 0.1
 		trade_efficiency = 0.10
     }
     
