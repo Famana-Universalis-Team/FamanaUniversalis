@@ -373,6 +373,13 @@ fas_1 = {
 				}
 			}
 		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 5949
+				province_id = 5963
+				province_id = 5968
+			}
+		}
 	}
 
 	fas_the_nhoma_tonxara = {
@@ -707,6 +714,9 @@ fas_3 = {
 			eastern_desert_region = {
 				add_permanent_claim = ROOT
 			}
+			kapolia_region = {
+				add_permanent_claim = ROOT
+			}
 			add_country_modifier = {
 				name = fas_adopt_jasuan_manufacturing
 				duration = 3650
@@ -734,15 +744,35 @@ fas_3 = {
 	fas_fashran_renaissance = {
 		icon = reaffirm_civil_values
 		required_missions = {fas_pillage_kinvirel}
-		trigger = {}
-		effect = {}
+		trigger = {
+			total_development = 1000
+			in_golden_age = yes
+		}
+		effect = {
+			define_advisor = {
+				type = philosopher
+				skill = 2
+				discount = yes
+				culture = Tyman
+				religion = Tonmo
+				location = 5963
+			}
+		}
 	}
 
 	fas_tonmo_science = {
 		icon = fortify_the_passes
 		required_missions = {fas_fashran_renaissance}
-		trigger = {}
-		effect = {}
+		trigger = {
+			innovativeness = 50
+			natural_scientist = 3
+		}
+		effect = {
+			add_ruler_modifier = {
+				name = fas_patron_of_tonmo_science
+				duration = -1
+			}
+		}
 	}
 
 	fas_the_jafxoi_tonxara = {
@@ -921,8 +951,28 @@ fas_4 = {
 	fas_crush_kapolia = {
 		icon = mission_non-western_soldiers
 		required_missions = {fas_pillage_kinvirel}
-		trigger = {}
-		effect = {}
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 15
+				region = kapolia_region
+			}
+			owns_core_province = 5481
+			NOT = {
+				exists = KAP
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = fas_widespread_conversion
+				duration = 18250
+			}
+			emastalia_region = {
+				add_claim = ROOT
+			}
+			west_emastalia_region = {
+				add_claim = ROOT
+			}
+		}
 	}
 
 	fas_seize_the_northern_shores = {

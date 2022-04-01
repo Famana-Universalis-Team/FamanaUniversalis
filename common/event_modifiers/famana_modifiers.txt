@@ -436,3 +436,12 @@ fas_adopt_jasuan_manufacturing = {
 fas_kinvireli_artifacts = {
     development_cost = -0.20
 }
+
+fas_patron_of_tonmo_science = {
+    idea_cost = -0.15
+}
+
+fas_widespread_conversion = {
+    global_heathen_missionary_strength = 0.05
+    missionaries = 1
+}

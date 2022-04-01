@@ -155,7 +155,7 @@ kap_1 = {
 				name = kap_aresian_faith
 				duration = -1
 			}
-        	 }
+        }
 	}
 }
 
@@ -263,6 +263,8 @@ kap_2 = {
 			}
 			add_country_modifier = {
 				name = rule_of_the_bamals
-			}	duration = -1
+				duration = -1
+			}
 		}
 	}
+}

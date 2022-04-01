@@ -2046,36 +2046,28 @@ country_decisions = {
 	ennam_nation = {
 		major = yes
 		potential = {
-			  
 			OR = {
-					TAG = YEN
-					TAG = KEN
-				}
-				NOT = { exists = ENN } 
-				
-			
-					
-					
-					
-					
+				TAG = YEN
+				TAG = KEN
+			}
+			NOT = { exists = ENN }
+			was_never_end_game_tag_trigger = yes
 		}
-		was_never_end_game_tag_trigger = yes
 		provinces_to_highlight = {
 			OR = {
-				 	owned_by = YEN
-					owned_by = KEN
+			 	owned_by = YEN
+				owned_by = KEN
 			}
 			NOT = { owned_by = ROOT }
-			
 		}
 		allow = {
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
 			OR = {  
-					NOT = { exists = YEN }
-					NOT = { exists = KEN }
-				}
+				NOT = { exists = YEN }
+				NOT = { exists = KEN }
 			}
+		}
 		effect = {
 			restore_country_name = yes
 			change_tag = ENN

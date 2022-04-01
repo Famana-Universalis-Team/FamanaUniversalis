@@ -38,3 +38,42 @@ naravami_ideas = {
     }
 }
 #feel free to change stuff idk
+
+KLY_ideas = {
+	start = {
+		diplomatic_reputation = 1
+        production_efficiency = 0.10
+	}
+	
+	bonus = {
+		land_maintenance_modifier = -0.10
+	}
+
+	trigger = {
+		tag = KLY
+	}
+	free = yes
+	
+	kly_courage = {
+		land_morale = 0.10
+	}
+	kly_city = {
+		manpower_recovery_speed = 0.10
+        reinforce_speed = 0.20
+	}
+	kly_tactics = {
+		mil_tech_cost_modifier = -0.10
+	}
+	kly_north = {
+		development_cost = -0.10
+	}
+	kly_forum = {
+		same_culture_advisor_cost = -0.15
+	}
+	kly_siege = {
+		artillery_cost = -0.10
+	}
+	kly_destroyer = {
+		land_forcelimit_modifier = 0.25
+	}
+}

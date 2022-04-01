@@ -1,4 +1,43 @@
 
+KKR_ideas = {
+	start = {
+		caravan_power = 0.20
+		hostile_attrition = 1
+	}
+	
+	bonus = {
+		ae_impact = -0.10
+	}
+
+	trigger = {
+		tag = KKR
+	}
+	free = yes
+	
+	kkr_ashdamir = {
+		core_creation = -0.10
+	}
+	kkr_raiding = {
+		raze_power_gain	= 0.10
+		loot_amount = 0.20
+	}
+	kkr_ganush = {
+		land_morale = 0.15
+	}
+	kkr_desert = {
+		leader_land_manuever = 2
+	}
+	kkr_great = {
+		stability_cost_modifier = -0.10
+	}
+	kkr_manthwar = {
+		production_efficiency = 0.10
+	}
+	kkr_salt = {
+		global_trade_power = 0.10
+	}
+}
+
 PEX_ideas = {
 	start = {
 		yearly_corruption = -0.1
@@ -2069,7 +2108,7 @@ Pomlen_ideas = {
 
 NHL_ideas = {
     start = {
-        naval_forcelimit_modifier = 0.1
+        naval_forcelimit_modifier = 0.15
 		trade_efficiency = 0.10
     }
     

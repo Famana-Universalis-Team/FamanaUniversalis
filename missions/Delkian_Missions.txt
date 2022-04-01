@@ -17,11 +17,12 @@ delkia_1 = {
 		icon = promote_urbanization
 		required_missions = { }
 		provinces_to_highlight = {
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 			OR = {
 				province_id	= 5167
 				province_id = 5166
 			}
-		}	NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
 		
 		trigger = {
 			5167 = {
@@ -56,7 +57,9 @@ delkia_1 = {
 			5163 = {
 				add_province_modifier = {
 				    name = del_ximal
-				}	duration = -1
+					duration = -1
+				}
 			}   
-    }
+    	}
 	}
+}

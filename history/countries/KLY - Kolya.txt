@@ -6,16 +6,16 @@ technology_group = north_gomic_tech_gr
 religion = lathvy
 primary_culture = Kolyan
 add_accepted_culture = Maldikian
-capital = 6270	# change to real capital
+capital = 6270
 religious_school = pextoglazian_school
 
-200.1.1 = { #change to 200 or smth
+177.2.24 = {
 	monarch = {
-		name = "Placeholder"
-		dynasty = "de Placeholder"
-		adm = 3
-		dip = 3
-		mil = 3
-		birth_date = 180.1.1
+		name = "Sewa"
+		dynasty = "sa'Kolya"
+		adm = 0
+		dip = 2
+		mil = 5
+		birth_date = 154.12.16
 	}
 }
