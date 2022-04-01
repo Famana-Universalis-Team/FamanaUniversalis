@@ -514,12 +514,22 @@ was_never_end_game_tag_trigger = {	#Country Scope
 			NOT = { tag = FAS }
 			NOT = { was_tag = GAX }
 			NOT = { tag = GAX }
-			NOT = { was_tag = MOX }
-			NOT = { tag = MOX }
 			NOT = { was_tag = NAF }
 			NOT = { tag = NAF }
 			NOT = { was_tag = RES }
 			NOT = { tag = RES }
+			NOT = { was_tag = NRV }
+			NOT = { tag = NRV }
+			NOT = { was_tag = VAN }
+			NOT = { tag = VAN }
+			NOT = { was_tag = HSH } #Yom
+			NOT = { tag = HSH} #Yom
+			NOT = { was_tag = HOF } #Yom
+			NOT = { tag = HOF } #Yom
+			NOT = { was_tag = JAS }
+			NOT = { tag = JAS }
+			NOT = { was_tag = GTZ }
+			NOT = { tag = GTZ }
 		}
 	}
 }

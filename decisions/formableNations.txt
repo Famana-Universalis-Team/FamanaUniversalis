@@ -2853,68 +2853,81 @@ country_decisions = {
     naravam_nation = {
 		major = yes
 		potential = {
-			AND = { 
-				culture_group = Naravami_C
-				was_never_end_game_tag_trigger = yes
-			 }
-			
+			NOT = { exists = NRV }
+			NOT = {
+				OR = {
+					government = tribal
+					government = native
+				}
+			}
+			culture_group = Naravami_C
+			was_never_end_game_tag_trigger = yes
 		}
 		provinces_to_highlight = {
 			OR = {
-				region =  western_naravam_region
-				area = area_90
-				area = area_94
-				area = area_95
-				area = area_96
-				area = area_97
-				area = nere_area
+				province_id = 6285
+				province_id = 6286
+				province_id = 6300
+				province_id = 6305
+				province_id = 6319
+				province_id = 6338
+				province_id = 6334
+				province_id = 6326
+				province_id = 6283
 			}
 			OR = {
 				NOT = { owned_by = ROOT }
 			}
 		}
 		allow = {
-			adm_tech = 10
+			adm_tech = 20
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
-			owns_all_provinces = {
-				  OR = {
-				  region = western_naravam_region
-				  area = area_90
-				  area = area_94
-				  area = area_95
-				  area = area_96
-				  area = area_97
-				  area = nere_area
-				 } 
+			AND = {
+				owns_core_province = 6285
+				owns_core_province = 6286
+				owns_core_province = 6300
+				owns_core_province = 6305
+				owns_core_province = 6319
+				owns_core_province = 6338
+				owns_core_province = 6334
 			}
-			NOT = {
-				government = native
+			OR = {
+				owns_core_province = 6326
+				owns_core_province = 6283
 			}
-			
+			num_of_owned_provinces_with	= {
+				value = 50
+				OR = {
+					region = western_naravam_region
+					region = eastern_naravam_region
+				} 
+			}
 		}
 		effect = {
 			restore_country_name = yes
 			change_tag = NRV
-			change_government_reform_progress = 50
 			if = {
 				limit = {
 					NOT = { government_rank = 3 }
 				}
 				set_government_rank = 3
 			}
+			set_capital	= 6300
+			western_naravam_region = {
+				add_permanent_claim	= NRV
+			}
+			eastern_naravam_region = {
+				add_permanent_claim	= NRV
+			}
 			add_country_modifier = {
 				name = "centralization_modifier"
 				duration = 7300
 			}
-			add_prestige = 50
+			add_prestige = 25
 		}
 		ai_will_do = {
 			factor = 1
 		}
-		
 	}
-
-
-	
 }
