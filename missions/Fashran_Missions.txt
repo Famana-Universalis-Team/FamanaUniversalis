@@ -973,6 +973,10 @@ fas_4 = {
 				add_claim = ROOT
 			}
 		}
+		provinces_to_highlight = {
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			region = kapolia_region
+		}
 	}
 
 	fas_seize_the_northern_shores = {
