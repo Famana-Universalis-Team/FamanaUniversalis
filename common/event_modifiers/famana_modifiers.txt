@@ -445,3 +445,7 @@ fas_widespread_conversion = {
     global_heathen_missionary_strength = 0.05
     missionaries = 1
 }
+makyna_estuary_modifier = {
+	province_trade_power_value = 5
+	picture = "estuary_icon"
+}

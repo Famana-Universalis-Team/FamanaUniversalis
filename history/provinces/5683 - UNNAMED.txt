@@ -19,6 +19,11 @@ trade_goods = fish
 base_manpower = 6
 capital = "Dimdivu"
 is_city = yes
+add_permanent_province_modifier = {
+	name = river_estuary_modifier
+	duration = -1
+}
+
 
 extra_cost = 1
 fort_15th = yes

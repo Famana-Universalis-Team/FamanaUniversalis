@@ -12,8 +12,12 @@ trade_goods = silk
 base_manpower = 2
 capital = "Kolya"
 is_city = yes
-center_of_trade = 1
 discovered_by = naravami_tech_gr
+add_permanent_province_modifier = {
+	name = river_estuary_modifier
+	duration = -1
+}
+
 
 
 
