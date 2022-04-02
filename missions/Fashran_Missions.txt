@@ -527,30 +527,101 @@ fas_2 = {
 		icon = crusader_fleet
 		required_missions = {fas_defeat_yabonia fas_pillage_kinvirel}
 		position = 9
-		trigger = {}
-		effect = {}
+		trigger = {
+			owns_all_provinces = {
+				region = eastern_desert_region
+				NOT = {
+					is_empty = yes
+				}
+			}
+		}
+		effect = {
+			change_mil = 1
+			hidden_effect = {
+                set_country_flag = fas_bold_fighter_chance
+            }
+            custom_tooltip = fas_bold_fighter_personality
+			south_xalia_region = { add_permanent_claim = ROOT }
+			moria_region = { add_permanent_claim = ROOT }
+			east_xalia_region = { add_permanent_claim = ROOT }
+			north_xalia_region = { add_permanent_claim = ROOT }
+			moxon_region = { add_permanent_claim = ROOT }
+		}
+		provinces_to_highlight = {
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			region = eastern_desert_region
+			NOT = {
+				is_empty = yes
+			}
+		}
 	}
 
 	fas_plunder_xolnomarka = {
 		icon = a_question_of_spain
 		required_missions = {fas_invade_the_hoxoi_coast}
-		trigger = {}
-		effect = {}
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 50
+				superregion = ga_xal_superregion
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = fas_xalian_bureaucracy
+				duration = -1
+			}
+		}
+		provinces_to_highlight = {
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			superregion = ga_xal_superregion
+		}
 	}
 
 	fas_ga_tonmo = {
 		icon = mission_golden_century
 		required_missions = {fas_plunder_xolnomarka}
 		position = 12
-		trigger = {}
-		effect = {}
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 25
+				superregion = ga_xal_superregion
+				religion = tonmo
+			}
+		}
+		effect = {
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						superregion = ga_xal_superregion
+					}
+					add_devastation = -100
+				}
+				every_owned_province = {
+					limit = {
+						superregion = ga_xal_superregion
+						religion = tonmo
+						OR = {
+							has_building = temple
+							has_building = cathedral
+						}
+					}
+					add_base_tax = 1
+				}
+			}
+			custom_tooltip = fas_ga_tonmo_tooltip
+		}
+		provinces_to_highlight = {
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			superregion = ga_xal_superregion
+		}
 	}
 
 	fas_birth_of_the_tonmo_world = {
 		icon = mission_restore_kiev
 		required_missions = {fas_supremacy_of_the_clouds}
 		position = 17
-		trigger = {}
+		trigger = {
+		}
 		effect = {}
 	}
 }
