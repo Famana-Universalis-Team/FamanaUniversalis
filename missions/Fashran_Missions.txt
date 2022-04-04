@@ -385,8 +385,50 @@ fas_1 = {
 	fas_the_nhoma_tonxara = {
 		icon = mission_manchu_warrior
 		required_missions = {fas_great_cities_of_the_east}
-		trigger = {}
-		effect = {}
+		trigger = {
+			owns_all_provinces = {
+				superregion = tonmo_supperregion
+				NOT = {
+					is_empty = yes
+				}
+				NOT = {
+					province_id = 5693
+				}
+			}
+			num_of_owned_provinces_with = {
+    			value = 125
+    			superregion = tonmo_supperregion
+    			religion = tonmo
+			}
+			adm_power = 100
+		}
+		effect = {
+			add_adm_power = -100
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						superregion = tonmo_supperregion
+					}
+					add_core = NHM
+					add_province_modifier = {
+						name = fas_local_rule
+						duration = 3650
+					}
+				}
+			}
+			custom_tooltip = fas_nhoma_tooltip_1
+			custom_tooltip = fas_nhoma_tooltip_2
+		}
+		provinces_to_highlight = {
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+				superregion = tonmo_supperregion
+			NOT = {
+				is_empty = yes
+			}
+			NOT = {
+				province_id = 5693
+			}
+		}
 	}
 }
 
@@ -853,8 +895,50 @@ fas_3 = {
 		icon = mission_religious
 		required_missions = {fas_ga_tonmo}
 		position = 13
-		trigger = {}
-		effect = {}
+		trigger = {
+			owns_all_provinces = {
+				superregion = ga_xal_superregion
+				NOT = {
+					is_empty = yes
+				}
+				NOT = {
+					region = maky_region
+				}
+			}
+			num_of_owned_provinces_with = {
+    			value = 50
+    			superregion = ga_xal_superregion
+    			religion = tonmo
+			}
+			dip_power = 100
+		}
+		effect = {
+			add_dip_power = -100
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						superregion = ga_xal_supperregion
+					}
+					add_core = JFX
+					add_province_modifier = {
+						name = fas_local_rule
+						duration = 3650
+					}
+				}
+			}
+			custom_tooltip = fas_jafxoi_tooltip_1
+			custom_tooltip = fas_jafxoi_tooltip_2
+		}
+		provinces_to_highlight = {
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+				superregion = ga_xal_superregion
+			NOT = {
+				is_empty = yes
+			}
+			NOT = {
+				region = maky_region
+			}
+		}
 	}
 
 	fas_the_three_crowns = {
@@ -1011,6 +1095,9 @@ fas_4 = {
 		trigger = {
 			always = no
 		}
+		effect = {
+			custom_tooltip = fas_geo_unfinished_tooltip
+		}
 	}
 	
 	fas_the_fate_of_washoomism = {
@@ -1019,6 +1106,9 @@ fas_4 = {
 		position = 8
 		trigger = {
 			always = no
+		}
+		effect = {
+			custom_tooltip = fas_geo_unfinished_tooltip
 		}
 	}
 
@@ -1115,6 +1205,9 @@ fas_5 = {
 		trigger = {
 			always = no
 		}
+		effect = {
+			custom_tooltip = fas_geo_unfinished_tooltip
+		}
 	}
 	
 	fas_humiliate_geopyopia = {
@@ -1122,6 +1215,9 @@ fas_5 = {
 		required_missions = {fas_protect_the_frontier}
 		trigger = {
 			always = no
+		}
+		effect = {
+			custom_tooltip = fas_geo_unfinished_tooltip
 		}
 	}
 
@@ -1131,6 +1227,9 @@ fas_5 = {
 		trigger = {
 			always = no
 		}
+		effect = {
+			custom_tooltip = fas_geo_unfinished_tooltip
+		}
 	}
 
 	fas_encroach_on_olopoka = {
@@ -1138,6 +1237,9 @@ fas_5 = {
 		required_missions = {fas_seize_the_borderlands}
 		trigger = {
 			always = no
+		}
+		effect = {
+			custom_tooltip = fas_geo_unfinished_tooltip
 		}
 	}
 
@@ -1147,6 +1249,9 @@ fas_5 = {
 		trigger = {
 			always = no
 		}
+		effect = {
+			custom_tooltip = fas_geo_unfinished_tooltip
+		}
 	}
 
 	fas_invade_the_south = {
@@ -1154,6 +1259,9 @@ fas_5 = {
 		required_missions = {fas_conquer_the_heartland}
 		trigger = {
 			always = no
+		}
+		effect = {
+			custom_tooltip = fas_geo_unfinished_tooltip
 		}
 	}
 
@@ -1163,6 +1271,9 @@ fas_5 = {
 		trigger = {
 			always = no
 		}
+		effect = {
+			custom_tooltip = fas_geo_unfinished_tooltip
+		}
 	}
 
 	fas_conversion_of_the_jasuans = {
@@ -1171,7 +1282,7 @@ fas_5 = {
 		position = 10
 		trigger = {
 			num_of_owned_provinces_with = {
-				value = 75
+				value = 50
 				superregion = jasua_superregion
 				religion = tonmo
 			}
@@ -1202,7 +1313,75 @@ fas_5 = {
 		icon = mission_persian_soldiers
 		required_missions = {fas_conversion_of_the_jasuans}
 		position = 13
-		trigger = {}
-		effect = {}
+		trigger = {
+			owns_all_provinces = {
+				OR = {
+					region = bamal_gulf_region
+					region = jasua_region
+					region = eastern_desert_region
+					area = pasba_area
+					area = yatia_area
+					area = unnamed_area_40
+					AND = {
+						region = kapolia_region
+						NOT = {
+							OR = {
+								area = bohora_area
+								area = kachik_area
+							}
+						}
+					}
+				}
+				NOT = {
+					is_empty = yes
+				}
+			}
+			num_of_owned_provinces_with = {
+    			value = 75
+    			superregion = jasua_superregion
+    			religion = tonmo
+			}
+			mil_power = 100
+		}
+		effect = {
+			add_mil_power = -100
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						superregion = jasua_superregion
+					}
+					add_core = KSL
+					add_province_modifier = {
+						name = fas_local_rule
+						duration = 3650
+					}
+				}
+			}
+			custom_tooltip = fas_kisholi_tooltip_1
+			custom_tooltip = fas_kisholi_tooltip_2
+		}
+		provinces_to_highlight = {
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			OR = {
+				region = bamal_gulf_region
+				region = jasua_region
+				region = eastern_desert_region
+				area = pasba_area
+				area = yatia_area
+				area = unnamed_area_40
+				AND = {
+					region = kapolia_region
+					NOT = {
+						OR = {
+							area = bohora_area
+							area = kachik_area
+						}
+					}
+				}
+			}
+			NOT = {
+				is_empty = yes
+			}
+		}
 	}
 }
