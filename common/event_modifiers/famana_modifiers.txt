@@ -474,6 +474,16 @@ global_tax_modifier = 0.05
 production_efficiency = 0.05
 }
 
+umz_umzatian_control = {
+local_development_cost = -0.15
+local_build_time = -0.1
+}
+
+umz_desert_cavalry = {
+cavalry_cost = -0.10
+cavalry_power = 0.15
+}
+
 fas_xalian_bureaucracy = {
     administrative_efficiency = 0.05
 }

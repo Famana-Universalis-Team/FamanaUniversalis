@@ -7,6 +7,54 @@ umz_1 = {
 		tag = UMZ
     }
     has_country_shield = yes
+	UMZ_effasha = {
+        icon = mission_sw_against_the_desert
+        generic = no  
+		position = 3
+             
+      
+        
+       
+        required_missions = {
+            UMZ_strenghten
+        }
+        
+		 provinces_to_highlight = {
+            area = effasha_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+        }
+        
+    
+       
+        trigger = {
+		effasha_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+        }
+        
+       
+        effect = {
+           every_owned_province = {
+					limit = {
+						area = effasha_area
+					}
+					
+					add_province_modifier = {
+						name = umz_umzatian_control
+						duration = 3650
+					}
+				}
+			lyposh_area  = {
+				add_permanent_claim = ROOT
+			}
+			add_country_modifier = { 
+			name = umz_desert_cavalry
+			duration = 3650 
+			}
+			
+		}
+    }
 }
 
 umz_2 = {
@@ -81,8 +129,83 @@ umz_2 = {
 			
         }
     }
-   
-}
+	UMZ_strenghten = {
+        icon = mission_egyptian_mamluk_soldier
+        generic = no    
+             
+      
+        
+       
+        required_missions = {
+            UMZ_sway_rial
+        }
+        
+
+        
+    
+       
+        trigger = {
+		army_size_percentage = 0.75
+		num_of_generals = 1
+        }
+        
+       
+        effect = {
+            fazalep_area  = {
+				add_permanent_claim = ROOT
+			}
+			effasha_area  = {
+				add_permanent_claim = ROOT
+			}
+		}
+    }
+	UMZ_fazalep = {
+        icon = mission_have_two_subjects
+        generic = no    
+             
+      
+        
+       
+        required_missions = {
+            UMZ_strenghten
+        }
+        
+		 provinces_to_highlight = {
+            area = fazalep_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+        }
+        
+    
+       
+        trigger = {
+		fazalep_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+        }
+        
+       
+        effect = {
+           every_owned_province = {
+					limit = {
+						area = fazalep_area
+					}
+					
+					add_province_modifier = {
+						name = umz_umzatian_control
+						duration = 3650
+					}
+				}
+			ponaa_area  = {
+				add_permanent_claim = ROOT
+			}
+			roplea_area  = {
+				add_permanent_claim = ROOT
+			}
+		}
+    }
+
+}   
 
 umz_3 = {
     slot = 3
@@ -109,7 +232,7 @@ umz_3 = {
     
        
         trigger = {
-		 navy_size = 20
+		 navy_size_percentage = 1
 		
         }
         
@@ -124,12 +247,25 @@ umz_3 = {
        
     }
 	
-	}
+	
   
 }
 
 umz_4 = {
     slot = 4
+    generic = no
+    ai = yes
+    potential = {
+        NOT = { map_setup = map_setup_random }
+		tag = UMZ
+    }
+    has_country_shield = yes
+	
+   
+}
+
+umz_5 = {
+    slot = 5
     generic = no
     ai = yes
     potential = {
@@ -180,18 +316,6 @@ umz_4 = {
         }
 		
     }
-   
-}
-
-umz_5 = {
-    slot = 5
-    generic = no
-    ai = yes
-    potential = {
-        NOT = { map_setup = map_setup_random }
-		tag = UMZ
-    }
-    has_country_shield = yes
 	
 }
 
