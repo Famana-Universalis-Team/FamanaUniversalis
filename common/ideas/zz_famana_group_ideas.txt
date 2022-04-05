@@ -242,7 +242,10 @@ Xalnish_ideas = {
 	}
 
 	trigger = {
-		culture_group = Xalian
+		OR = {
+			culture_group = Xalian
+			culture_group = Komelwaiti
+		}
 	}
 	free = yes
 	

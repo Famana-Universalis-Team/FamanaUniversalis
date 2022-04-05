@@ -1,0 +1,72 @@
+#Country Name: Please see filename.
+
+graphical_culture = muslimgfx
+
+color = { 142 118 95 }
+
+historical_idea_groups = {
+	economic_ideas
+	defensive_ideas
+	diplomatic_ideas
+	offensive_ideas
+	innovativeness_ideas
+	quantity_ideas
+	administrative_ideas
+	religious_ideas
+}
+
+historical_units = {
+	ottoman_yaya
+	ottoman_musellem
+	ottoman_azab
+	ottoman_timariot
+	ottoman_janissary
+	ottoman_spahi
+	ottoman_sekban
+	ottoman_reformed_spahi
+	ottoman_reformed_janissary
+	ottoman_toprakli_hit_and_run
+	ottoman_nizami_cedid
+	ottoman_toprakli_dragoon
+	eastern_skirmisher
+	eastern_uhlan
+	eastern_carabinier
+	ottoman_new_model
+	ottoman_lancer
+}
+
+monarch_names = {
+	"Gri #0" = 1
+	"Bo #0" = 1
+	"Popo #0" = 1
+	"Bmolo #0" = 1
+	"Drup #0" = 1
+	"Shama #0" = -1
+	"Bolim #0" = -1
+	"Dilim #0" = -1
+	"Vimi #0" = -1
+}
+
+leader_names = {
+	Gri
+	Bo
+	Popo
+	Bmolo
+	Drup 
+}
+
+ship_names = {
+	Yarogr
+	Chungus
+	Kitabog
+	Rapan
+	Oban
+}
+
+army_names = {
+	"Ledarin $PROVINCE$ si"
+}
+
+fleet_names = {
+	"Grand Navy"
+}
