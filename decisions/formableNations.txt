@@ -2922,4 +2922,57 @@ country_decisions = {
 			factor = 1
 		}
 	}
+
+	menvid_nation = {
+	major = yes
+	potential = {
+			NOT = { exists = MEV }
+			OR = {
+				tag = RMX
+			was_never_end_game_tag_trigger = yes
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 5563
+				province_id = 5564
+				province_id = 5560
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+			}
+		}
+		allow = {
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			OR = {
+				owns_core_province = 5563
+				owns_core_province = 5564
+				owns_core_province = 5560
+			}
+			OR = {
+				NOT = { exists = NPT }
+			}
+		}
+		effect = {
+			restore_country_name = yes
+			change_tag = MEV
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
+			west_emastalia_region = {
+				add_permanent_claim = MEV
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 20
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
 }
