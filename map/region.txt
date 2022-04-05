@@ -702,3 +702,37 @@ south_gotzlic_region = {
 		area_110
 	}
 }
+
+pelig_region = {
+	areas = {
+		area_167
+		area_222
+		area_218
+		area_217
+		area_215
+		area_145
+		area_144
+		area_216
+		area_143
+		maldikom_area
+	}
+}
+
+voychonia_region = {
+	areas = {
+		area_219
+		area_223
+		area_221
+		area_225
+		area_231
+		area_230
+		area_228
+		area_166
+		area_165
+		area_227
+		area_229
+		area_220
+		area_224
+		area_226
+	}
+}

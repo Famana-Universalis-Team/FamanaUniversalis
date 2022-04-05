@@ -2905,6 +2905,13 @@ country_decisions = {
 				}
 				set_government_rank = 3
 			}
+			if = {
+				limit = {
+					religion = lathvy
+				}
+				change_technology_group	= gotzlic_tech_gr
+				change_unit_type = gotzlic_tech_gr
+			}
 			set_capital	= 6300
 			western_naravam_region = {
 				add_permanent_claim	= NRV

@@ -801,6 +801,16 @@ spriteTypes = {
 		name = "GFX_province_view_terrain_marsh"
 		texturefile = "gfx/interface/colony_terrain_marsh.dds"
 	}
+
+	spriteType = {
+		name = "GFX_province_view_terrain_yomtanian_nest"
+		texturefile = "gfx/interface/colony_terrain_yomtanian_nest.dds"
+	}
+
+	spriteType = {
+		name = "GFX_province_view_terrain_vishman_forest"
+		texturefile = "gfx/interface/colony_terrain_vishman_forest.dds"
+	}
 	
 	########################################
 	

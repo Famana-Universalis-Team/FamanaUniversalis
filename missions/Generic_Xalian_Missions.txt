@@ -26,5 +26,14 @@ xalian_religious_missions = {
                 duration = -1
 			}
 		}
+		provinces_to_highlight = {
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			OR = {
+				province_id = 5458
+				province_id = 5163
+				province_id = 5411
+				province_id = 5388
+			}
+		}
 	}
 }

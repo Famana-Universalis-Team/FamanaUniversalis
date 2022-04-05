@@ -828,3 +828,24 @@ merc_drollo_drollers = {
 		reinforce_speed = -0.20
 	}
 }
+
+# Kolya Duras
+merc_kolya_duras = {
+    regiments_per_development = 0.05
+    home_province = 6270 # Kolya
+	cavalry_weight = 0.2
+	cavalry_cap = 4
+	sprites = { westerngfx_sprite_pack }
+    trigger = {
+		any_owned_province = {
+			OR = {
+				region = apilanya_region
+				region = east_ordica_region
+				region = eastern_naravam_region
+			}
+		}
+	}
+	modifier = {
+		fire_damage = 0.10
+	}
+}

@@ -26,8 +26,10 @@ pex_2 = {
         trigger = {
             piety = 0.50
             inquisitor = 1
+            years_of_income	= 0.25
         }
         effect = {
+            add_years_of_income	= -0.25
         }
     }
     pex_stabilize_the_realm = {
@@ -35,8 +37,8 @@ pex_2 = {
         required_missions = { pex_obtain_aras_approval }
         trigger = {
             stability = 3
-            adm_power = 100
             num_of_rebel_controlled_provinces = 0
+            adm_power = 100
         }
         effect = {
             add_adm_power = -100
@@ -64,8 +66,10 @@ pex_3 = {
                 has_building = fort_15th
             }
             army_size_percentage = 1.0
+            years_of_income	= 0.25
         }
         effect = {
+            add_years_of_income	= -0.25
         }
     }
 
@@ -106,8 +110,10 @@ pex_4 = {
                     influence = 50
                 }
             }
+            years_of_income	= 0.25
         }
         effect = {
+            add_years_of_income	= -0.25
         }
     }
 
@@ -183,6 +189,62 @@ pex_6 = { #Post-disaster missions
                 set_country_flag = pex_collapse_prevented
             }
             custom_tooltip = pex_prevent_collapse_tooltip
+        }
+    }
+
+    pex_sway_the_inner_circle = {
+        icon = claim_the_borderlands
+        required_missions = { pex_prevent_collapse }
+        position = 4
+        trigger = {
+            5203 = {
+                NOT = {
+                    unrest = 0
+                }
+            }
+            PLM = {
+                has_opinion = {
+	                who = ROOT
+	                value = 200
+                }
+                NOT = {
+                    liberty_desire = 1
+                }
+            }
+            PHL = {
+                has_opinion = {
+	                who = ROOT
+	                value = 200
+                }
+                NOT = {
+                    liberty_desire = 1
+                }
+            }
+            PTG = {
+                has_opinion = {
+	                who = ROOT
+	                value = 200
+                }
+                NOT = {
+                    liberty_desire = 1
+                }
+            }
+        }
+        effect = {
+            vassalize = PLM
+            vassalize = PHL
+            vassalize = PTG
+            5203 = {
+                remove_core = NPX
+            }
+        }
+        provinces_to_highlight = {
+            OR = {
+                owned_by = PLM
+                owned_by = PHL
+                owned_by = PTG
+                province_id = 5203
+            }
         }
     }
 }
