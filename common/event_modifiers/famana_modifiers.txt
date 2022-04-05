@@ -462,4 +462,12 @@ fas_religious_malleability = {
 
 umz_trade_domination = {
     global_own_trade_power = 0.5
+
+fas_xalian_bureaucracy = {
+    administrative_efficiency = 0.05
+}
+
+fas_local_rule = {
+    local_autonomy = 0.10
+
 }

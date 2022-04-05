@@ -709,7 +709,7 @@ country_event = {
 }
 
 #choose school
-country_event = {
+country_event = { #TRADITIONAL & RINI
 	id = lathvy_piety.16
 	title = lathvy_piety.16.t
 	desc = lathvy_piety.16.d
@@ -720,7 +720,15 @@ country_event = {
 	}
 	
 	trigger = {
-		religion = lathvy
+		OR = {
+			religion = lathvy
+			AND = {
+				religion = rini
+				NOT = {
+					tag = NAF
+				}
+			}
+		}
 		NOT = {
 			OR = {
 				religious_school = {

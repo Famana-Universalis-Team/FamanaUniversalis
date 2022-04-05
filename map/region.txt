@@ -145,6 +145,14 @@ apilanya_region = {
 		area_58
 		area_104
 		area_177
+		area_178
+		area_179
+		area_168
+		area_169
+		area_162
+		area_161
+		area_183
+		area_163
 	}
 }
 
@@ -154,13 +162,16 @@ gotzlic_region = {
 		bojj_area
 		sovi_area
 		hozy_area
-		dethoni_area
-		nizoora_area
-		rosta_area
-		nenki_area
-		area_158
-		area_159
-		area_160
+		area_185
+		area_189
+		area_192
+		area_191
+		area_188
+		area_187
+		area_181
+		area_180
+		area_190
+		area_184
 	}
 }
 
@@ -184,6 +195,7 @@ brula_region = {
 		area_157
 		area_134
 		area_107
+		area_170
 	}
 }
 
@@ -657,5 +669,36 @@ gacil_region = {
 	areas = {
 		gabero_area
 		tirix_area
+	}
+}
+
+east_gotzlic_region = {
+	areas = {
+		area_158
+		nenki_area
+		area_159
+		area_160
+		dethoni_area
+		nizoora_area
+		rosta_area
+		area_171
+		area_173
+		area_172
+		area_174
+	}
+}
+
+south_gotzlic_region = {
+	areas = {
+		area_195
+		area_193
+		area_194
+		area_186
+		area_182
+		area_176
+		area_175
+		area_109
+		area_108
+		area_110
 	}
 }
