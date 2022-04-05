@@ -459,3 +459,7 @@ fas_religious_malleability = {
     local_missionary_strength = 0.075
     local_unrest = 2
 }
+
+umz_trade_domination = {
+    global_own_trade_power = 0.5
+}

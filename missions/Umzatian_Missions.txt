@@ -1,0 +1,176 @@
+umz_1 = {
+    slot = 1
+    generic = no
+    ai = yes
+    potential = {
+        NOT = { map_setup = map_setup_random }
+		tag = UMZ
+    }
+    has_country_shield = yes
+}
+
+umz_2 = {
+    slot = 2
+    generic = no
+    ai = yes
+    potential = {
+        NOT = { map_setup = map_setup_random }
+		tag = UMZ
+    }
+    has_country_shield = yes
+	UMZ_sway_rial = {
+        icon = mission_hanseatic_city          
+        generic = no    
+             
+      
+        
+       
+        required_missions = {
+            
+        }
+        
+
+        provinces_to_highlight = {
+            province_id = 5041
+        }
+    
+       
+        trigger = {
+		if = {
+				limit = { exists = RIA  }
+				AND = {
+					alliance_with = RIA
+					
+					RIA = {
+						has_opinion = {
+							who = UMZ
+							value = 200
+						}
+					}
+				}
+			}
+	    else = {
+				owns_core_province = 5041
+			}
+				
+			
+        }
+        
+       
+        effect = {
+           if = {
+				limit = { exists = RIA  }
+				vassalize = RIA
+			}
+	    else = {
+				5041 = {     
+				add_unit_construction = {
+				type = light_ship
+				amount = 5
+				speed = 0.25
+				cost = 0
+					}
+				
+				
+				}
+			}
+			add_country_modifier = { #yeah uhhh I'm not making this a trade modifier
+			name = umz_trade_domination
+			duration = 9125 
+			}
+			
+        }
+    }
+   
+}
+
+umz_3 = {
+    slot = 3
+    generic = no
+    ai = yes
+    potential = {
+        NOT = { map_setup = map_setup_random }
+		tag = UMZ
+    }
+    has_country_shield = yes
+	UMZ_fleet = {
+        icon =        
+        generic = no    
+             
+      
+        
+       
+        required_missions = {
+            
+        }
+        
+
+        provinces_to_highlight = {
+           
+        }
+    
+       
+        trigger = {
+		
+        }
+        
+       
+        effect = {
+       
+    }
+	
+	}
+  
+}
+
+umz_4 = {
+    slot = 4
+    generic = no
+    ai = yes
+    potential = {
+        NOT = { map_setup = map_setup_random }
+		tag = UMZ
+    }
+    has_country_shield = yes
+	UMZ_wealth = {
+        icon =     
+        generic = no    
+             
+      
+        
+       
+        required_missions = {
+            
+        }
+        
+
+        provinces_to_highlight = {
+            
+        }
+    
+       
+        trigger = {
+		
+        }
+        
+       
+        effect = {
+           
+	    
+        }
+    }
+   
+}
+
+umz_5 = {
+    slot = 5
+    generic = no
+    ai = yes
+    potential = {
+        NOT = { map_setup = map_setup_random }
+		tag = UMZ
+    }
+    has_country_shield = yes
+	
+}
+
