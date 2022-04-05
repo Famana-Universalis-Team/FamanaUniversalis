@@ -2924,8 +2924,8 @@ country_decisions = {
 	}
 
 	menvid_nation = {
-	major = yes
-	potential = {
+		major = yes
+		potential = {
 			NOT = { exists = MEV }
 			OR = {
 				tag = RMX
