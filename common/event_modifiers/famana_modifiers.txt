@@ -462,6 +462,17 @@ fas_religious_malleability = {
 
 umz_trade_domination = {
     global_own_trade_power = 0.5
+}
+
+umz_ready_navy = {
+    global_sailors_modifier = 0.1
+    naval_morale = 0.1
+}
+
+umz_high_development = {
+global_tax_modifier = 0.05
+production_efficiency = 0.05
+}
 
 fas_xalian_bureaucracy = {
     administrative_efficiency = 0.05

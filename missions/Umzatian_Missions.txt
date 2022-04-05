@@ -94,7 +94,7 @@ umz_3 = {
     }
     has_country_shield = yes
 	UMZ_fleet = {
-        icon =        
+        icon =  mission_sea_battles      
         generic = no    
              
       
@@ -105,17 +105,22 @@ umz_3 = {
         }
         
 
-        provinces_to_highlight = {
-           
-        }
+       
     
        
         trigger = {
+		 navy_size = 20
 		
         }
         
        
         effect = {
+		create_admiral = { tradition = 75 }
+		add_country_modifier = { 
+			name = umz_ready_navy
+			duration = 1825 
+			}
+		}
        
     }
 	
@@ -133,7 +138,7 @@ umz_4 = {
     }
     has_country_shield = yes
 	UMZ_wealth = {
-        icon =     
+        icon =  mission_war_chest   
         generic = no    
              
       
@@ -145,19 +150,35 @@ umz_4 = {
         
 
         provinces_to_highlight = {
-            
+          OR = {  area = east_umzatia
+				  area = umzat_bay 
+				}
         }
     
        
         trigger = {
-		
+			AND = { 
+			development_in_provinces = {
+			value = 21
+			area = east_umzatia
+			}
+			development_in_provinces = {
+			value = 26
+			area = umzat_bay
+			}
+			}
         }
         
        
         effect = {
-           
+           change_adm = 1
+		   add_country_modifier = { 
+			name = umz_high_development
+			duration = 3650 
+			}
 	    
         }
+		
     }
    
 }
