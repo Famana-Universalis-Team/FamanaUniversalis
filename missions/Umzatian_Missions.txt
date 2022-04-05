@@ -295,11 +295,11 @@ umz_5 = {
         trigger = {
 			AND = { 
 			development_in_provinces = {
-			value = 21
+			value = 30
 			area = east_umzatia
 			}
 			development_in_provinces = {
-			value = 26
+			value = 35
 			area = umzat_bay
 			}
 			}
