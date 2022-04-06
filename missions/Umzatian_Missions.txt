@@ -35,16 +35,16 @@ umz_1 = {
         
        
         effect = {
-           every_owned_province = {
-					limit = {
-						area = effasha_area
-					}
+           
+				effasha_area = {
 					
 					add_province_modifier = {
 						name = umz_umzatian_control
 						duration = 3650
 					}
-				}
+					
+				}	
+				
 			lyposh_area  = {
 				add_permanent_claim = ROOT
 			}
@@ -186,10 +186,8 @@ umz_2 = {
         
        
         effect = {
-           every_owned_province = {
-					limit = {
-						area = fazalep_area
-					}
+          
+				fazalep_area = {
 					
 					add_province_modifier = {
 						name = umz_umzatian_control
@@ -246,10 +244,212 @@ umz_3 = {
 		}
        
     }
+	UMZ_kotzbal = {
+        icon = mission_invade_island   
+        generic = no    
+             
+      
+        
+       
+        required_missions = {
+            UMZ_fleet
+		
+        }
+        
+		provinces_to_highlight = {
+          OR = {  province_id = 5016
+				  
+				  
+				}
+        }
+       
+    
+       
+        trigger = {
+		 owns_core_province = 5016
+		
+        }
+        
+       
+        effect = {
+		northern_umzat = {
+				add_permanent_claim = ROOT
+			}
+       
+       }
 	
 	
   
-}
+    }
+	UMZ_outer = {
+        icon = mission_colonial
+        generic = no    
+             
+      
+        
+       
+        required_missions = {
+            UMZ_fleet
+		
+        }
+        
+		provinces_to_highlight = {
+          OR = {  province_id = 5014
+				  province_id = 5013
+				  
+				}
+        }
+       
+    
+       
+        trigger = {
+		 owns_core_province = 5014
+		 owns_core_province = 5013
+		
+        }
+        
+       
+        effect = {
+		every_known_country = {
+		limit = { primary_culture = Mirrisan }
+		add_country_modifier = { 
+			name = umz_cut_off
+			duration = 3650 
+			}
+		}	
+       
+       }
+	
+	
+  
+    }
+	UMZ_colony = {
+        icon = mission_iberian_conquistador
+        generic = no    
+             
+      
+        
+       
+        required_missions = {
+            UMZ_kotzbal
+		
+        }
+        
+		provinces_to_highlight = {
+          OR = {  area =  northern_umzat_area
+				  
+				}
+        }
+       
+    
+       
+        trigger = {
+		    northern_umzat_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		
+        }
+        
+       
+        effect = {
+			unnamed_area_22 = {
+			add_permanent_claim = ROOT
+			}
+			emzelom_area = {
+			add_permanent_claim = ROOT
+			}
+			5257 = {
+			add_permanent_claim = ROOT
+			}
+       
+       }
+	
+	
+  
+    }
+	UMZ_new = {
+        icon = mission_crusade_for_varna
+        generic = no    
+             
+      
+        
+       
+        required_missions = {
+            UMZ_colony
+		
+        }
+        
+		provinces_to_highlight = {
+          OR = {  area = unnamed_area_22
+				  area =  emzelom_area
+				  province_id = 5257
+				}
+        }
+       
+    
+       
+        trigger = {
+		    unnamed_area_22 = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			 emzelom_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			owns_core_province = 5257
+			
+		
+        }
+        
+       
+        effect = {
+			griglom_area = {
+			add_permanent_claim = ROOT
+			}
+			west_feniki = {
+			add_permanent_claim = ROOT
+			}
+			if = {   
+			     limit = { accepted_culture = Mirrisan }
+				 add_dip_power = 100
+			}
+			else = {
+			add_accepted_culture = Mirrisan
+			}
+			
+			5264 = { change_trade_goods = paper 
+					add_base_tax = 2
+					add_base_production = 2
+					add_base_manpower = 2
+					}
+			5267 = { change_trade_goods = gems
+					add_base_tax = 1
+					add_base_manpower = 1
+					}
+			5259 = { change_trade_goods = cloth 
+					add_base_tax = 1
+					add_base_production = 1
+					}
+			every_owned_province = { 
+			limit = { region = west_estal_region  }
+			add_province_modifier = { 
+			name = umz_colonization
+			duration =  3650
+			
+				}
+			}
+			
+			
+       
+       }
+	
+	
+  
+    }
+   
+ }
 
 umz_4 = {
     slot = 4

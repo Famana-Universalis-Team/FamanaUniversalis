@@ -484,6 +484,18 @@ cavalry_cost = -0.10
 cavalry_power = 0.15
 }
 
+umz_cut_off = {
+global_trade_power = -0.25
+global_institution_spread = -0.25
+global_unrest = 2
+}
+
+umz_colonization = {
+local_institution_spread = 0.25
+local_missionary_strength = 0.03
+trade_goods_size = 0.3
+}
+
 fas_xalian_bureaucracy = {
     administrative_efficiency = 0.05
 }
