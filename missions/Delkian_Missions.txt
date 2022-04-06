@@ -63,3 +63,214 @@ delkia_1 = {
     	}
 	}
 }
+
+	
+	del_propestiy_for_all = {
+		icon = prosperity_for_all
+		position = 3
+		required_missions = { del_pearl_of_delkia }
+		
+		trigger = {
+			if = {
+				limit = {
+					has_dlc = "Mandate of Heaven"
+				}
+				custom_trigger_tooltip = {
+					tooltip = del_delk_propestiy_tooltip
+					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+						is_prosperous = yes
+						value = 10
+					}
+				}
+			}
+			else = {
+				all_owned_province = {
+					NOT = { devastation = 1 }
+				}
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = del_delk_propestiy
+				duration = 9125
+			}
+		}
+	}
+}	
+
+# Eastward Expansion Branch
+delkia_2 = {
+	slot = 2
+	generic = no 
+	ai = no
+	potential = {
+        NOT = { map_setup = map_setum_random }
+        OR = {
+            tag = DEL
+        }
+    }
+    has_country_shield = yes
+	
+	del_modernize_army = {
+		icon = mission_gunpowder_warfare
+		required_missions = { }
+		position = 1
+		
+		trigger = {
+			mil_tech = 4
+			army_size_percentage = 1
+			num_of_generals = 1
+		}	
+		
+		effect = {
+			hoxona_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}	
+			tsaj_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	del_turn_the_tables = {
+		icon = mission_onward_to_lahore
+		required_missions = { del_modernize_army }
+		position = 2
+		
+		provinces_to_highlight = {
+			area = hoxona_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			hoxona_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT	
+			}
+		}	
+		
+		effect = {
+			ropinver_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}	
+			hoxoi_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+}	
+	
+# Westward Expansion Branch/Defense Branch
+delkia_3 = {
+	slot = 3
+	generic = no 
+	ai = no
+	potential = {
+        NOT = { map_setup = map_setum_random }
+        OR = {
+            tag = DEL
+        }
+    }
+    has_country_shield = yes
+	
+	del_makyan_frontier = {
+		icon = mission_sw_against_the_desert
+		required_missions = { del_modernize_army }
+		position = 2
+		
+		provinces_to_highlight = {
+			area = tsaj_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			tsaj_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT	
+			}
+		}	
+		
+		effect = {
+		    if = {
+				limit = { exists = ZEA }
+				vassalize = ZEA
+			}
+			unnamed_area_9 = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}	
+			zeaf_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	del_deal_with_gadea = {
+		icon = mission_sw_against_the_desert
+		required_missions = { del_makyan_frontier }
+		position = 3
+		
+		provinces_to_highlight = {
+		 OR = {
+			area = unnamed_area_9
+			area = zeaf_area
+		}
+		NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			zeaf_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT	
+			}	
+			unnamed_area_9 = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT	
+			}
+		}
+		
+		effect = {
+			bava_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}			
+			morsum_area = {
+				limit = {
+					NOT = { is_core = ROOT	}
+				}
+				add_claim = ROOT
+			}
+		}	
+		add_country_modifier = {
+			name = del_punish_gadeans
+			duration = 8650
+		}
+    }
+}
