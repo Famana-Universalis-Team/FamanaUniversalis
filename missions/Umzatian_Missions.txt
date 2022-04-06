@@ -281,48 +281,7 @@ umz_3 = {
 	
   
     }
-	UMZ_outer = {
-        icon = mission_colonial
-        generic = no    
-             
-      
-        
-       
-        required_missions = {
-            UMZ_fleet
-		
-        }
-        
-		provinces_to_highlight = {
-          OR = {  province_id = 5014
-				  province_id = 5013
-				  
-				}
-        }
-       
-    
-       
-        trigger = {
-		 owns_core_province = 5014
-		 owns_core_province = 5013
-		
-        }
-        
-       
-        effect = {
-		every_known_country = {
-		limit = { primary_culture = Mirrisan }
-		add_country_modifier = { 
-			name = umz_cut_off
-			duration = 3650 
-			}
-		}	
-       
-       }
 	
-	
-  
-    }
 	UMZ_colony = {
         icon = mission_iberian_conquistador
         generic = no    
@@ -336,15 +295,15 @@ umz_3 = {
         }
         
 		provinces_to_highlight = {
-          OR = {  area =  northern_umzat_area
+          area =  northern_umzat
 				  
-				}
+			
         }
        
     
        
         trigger = {
-		    northern_umzat_area = {
+		    northern_umzat = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -460,7 +419,49 @@ umz_4 = {
 		tag = UMZ
     }
     has_country_shield = yes
+	UMZ_outer = {
+        icon = mission_colonial
+        generic = no   
+	    position = 3
+             
+      
+        
+       
+        required_missions = {
+            UMZ_fleet
+		
+        }
+        
+		provinces_to_highlight = {
+          OR = {  province_id = 5014
+				  province_id = 5013
+				  
+				}
+        }
+       
+    
+       
+        trigger = {
+		 owns_core_province = 5014
+		 owns_core_province = 5013
+		
+        }
+        
+       
+        effect = {
+		every_known_country = {
+		limit = { primary_culture = Mirrisan }
+		add_country_modifier = { 
+			name = umz_cut_off
+			duration = 3650 
+			}
+		}	
+       
+       }
 	
+	
+  
+    }
    
 }
 
