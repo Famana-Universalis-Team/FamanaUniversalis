@@ -65,3 +65,45 @@ country_event = { #partition of TCK, not actually given to Umzatia (unless they 
         
     }
 }
+country_event = { #TCK: what the hell just happened
+    id = umzatia.4
+    title = umzatia.4.t
+    desc = umzatia.4.d
+    picture = REVOLT_HUNGARIAN_eventPicture
+
+    is_triggered_only = yes
+	
+    
+   
+    option = { #I'll think of something to go here
+        
+    }
+}
+country_event = { #Warning to the TCK that if they lose this war they will get screwed over
+    id = umzatia.5
+    title = umzatia.5.t
+    desc = umzatia.5.d
+    picture = BAD_WITH_MONARCH_eventPicture
+
+    is_triggered_only = yes
+	
+    
+   
+    option = { #I'll think of something to go here
+        
+    }
+}
+country_event = { #TCK: bad ending
+    id = umzatia.6
+    title = umzatia.6.t
+    desc = umzatia.6.d
+    picture = DEBATE_REPUBLICAN_eventPicture
+
+    is_triggered_only = yes
+	
+    
+   
+    option = { #I'll think of something to go here
+        
+    }
+}

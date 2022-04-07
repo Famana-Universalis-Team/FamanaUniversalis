@@ -422,7 +422,7 @@ umz_3 = {
     }
    
  }
-
+	
 umz_4 = {
     slot = 4
     generic = no
@@ -432,48 +432,6 @@ umz_4 = {
 		tag = UMZ
     }
     has_country_shield = yes
-	UMZ_outer = {
-        icon = mission_colonial
-        generic = no   
-	    position = 3
-             
-      
-        
-       
-        required_missions = {
-            UMZ_kotzbal
-		
-        }
-        
-		provinces_to_highlight = {
-          OR = {  province_id = 5014
-				  province_id = 5013
-				  
-				}
-        }
-       
-    
-       
-        trigger = {
-		 owns_core_province = 5014
-		 owns_core_province = 5013
-		
-        }
-        
-       
-        effect = {
-		every_known_country = {
-		limit = { primary_culture = Mirrisan }
-		add_country_modifier = { 
-			name = umz_cut_off
-			duration = 3650 
-			}
-		}	
-       
-       }
-	
-	}
-	
 	UMZ_asetli = {
         icon = mission_early_game_buildings
         generic = no   
@@ -521,6 +479,49 @@ umz_4 = {
        }
 	
 	}
+	UMZ_outer = {
+        icon = mission_colonial
+        generic = no   
+	    
+             
+      
+        
+       
+        required_missions = {
+            UMZ_kotzbal
+		
+        }
+        
+		provinces_to_highlight = {
+          OR = {  province_id = 5014
+				  province_id = 5013
+				  
+				}
+        }
+       
+    
+       
+        trigger = {
+		 owns_core_province = 5014
+		 owns_core_province = 5013
+		
+        }
+        
+       
+        effect = {
+		every_known_country = {
+		limit = { primary_culture = Mirrisan }
+		add_country_modifier = { 
+			name = umz_cut_off
+			duration = 3650 
+			}
+		}	
+       
+       }
+	
+	}
+	
+	
    
 }
 
@@ -609,8 +610,17 @@ umz_5 = {
 				name = umz_chaos
 				duration = 1825
 				}
+				country_event = { 
+					id = umzatia.4
+						 days = 1
+    
+					}
 			}
 		   create_march = IMG
+		   add_spy_network_in = {
+			who = TCK
+			value = -35
+			}
 		   
 		   
 	    
@@ -645,11 +655,18 @@ umz_5 = {
         effect = {
            declare_war_with_cb = {
 			who = TCK
-			casus_belli = cb_conquest
+			casus_belli = cb_insult
 			}
 			add_country_modifier = { 
 				name = umz_war_enthusiasm
 				duration = 3650
+			}
+			TCK = {
+				country_event = { 
+							id = umzatia.5
+							days = 1
+    
+						}
 			}
 	    }
 		
@@ -682,6 +699,11 @@ umz_5 = {
            white_peace = TCK
 		   TCK = {
 		   release = QUA
+		   country_event = { 
+				      id = umzatia.6
+			          days = 1
+                      }
+						
 		   }
 		  create_march = QUA
 		  5072 = { 
