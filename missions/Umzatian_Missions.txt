@@ -435,13 +435,13 @@ umz_4 = {
 	UMZ_outer = {
         icon = mission_colonial
         generic = no   
-	    position = 2
+	    position = 3
              
       
         
        
         required_missions = {
-            UMZ_fleet
+            UMZ_kotzbal
 		
         }
         
@@ -477,7 +477,7 @@ umz_4 = {
 	UMZ_asetli = {
         icon = mission_early_game_buildings
         generic = no   
-	    position = 3
+	    position = 2
              
       
         
@@ -536,7 +536,7 @@ umz_5 = {
 	UMZ_wealth = {
         icon =  mission_war_chest   
         generic = no  
-		position = 2 
+	
              
       
         
