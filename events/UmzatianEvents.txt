@@ -1,0 +1,67 @@
+namespace = umzatia
+
+country_event = { #partition of TCK, not actually given to Umzatia (unless they own the required province). KISTU and EMASAN
+    id = umzatia.1
+    title = umzatia.1.t
+    desc = umzatia.1.d
+    picture = GENERALS_DISCUSSING_eventPicture
+
+    is_triggered_only = yes
+	trigger = {
+	  NOT = { TAG = TCK }
+	}
+    
+    option = { #sure
+       5068 = {
+	   cede_province = ROOT
+	   }
+	   5060 = {
+	   cede_province = ROOT
+	   }
+    }
+    option = { #no
+        
+    }
+}
+country_event = { #partition of TCK, not actually given to Umzatia (unless they own the required province). ZOSTIN
+    id = umzatia.2
+    title = umzatia.2.t
+    desc = umzatia.2.d
+    picture = GENERALS_DISCUSSING_eventPicture
+
+    is_triggered_only = yes
+	trigger = {
+	  NOT = { TAG = TCK }
+	}
+    
+    option = { #sure
+       5067 = {
+	   cede_province = ROOT
+	   }
+	   
+    }
+    option = { #no
+        
+    }
+}
+country_event = { #partition of TCK, not actually given to Umzatia (unless they own the required province). ENTRU
+    id = umzatia.3
+    title = umzatia.3.t
+    desc = umzatia.3.d
+    picture = GENERALS_DISCUSSING_eventPicture
+
+    is_triggered_only = yes
+	trigger = {
+	  NOT = { TAG = TCK }
+	}
+    
+    option = { #sure
+       5207 = {
+	   cede_province = ROOT
+	   }
+	   
+    }
+    option = { #no
+        
+    }
+}

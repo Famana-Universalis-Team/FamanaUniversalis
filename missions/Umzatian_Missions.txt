@@ -145,7 +145,7 @@ umz_2 = {
     
        
         trigger = {
-		army_size_percentage = 0.75
+		army_size_percentage = 1
 		num_of_generals = 1
         }
         
@@ -353,11 +353,20 @@ umz_3 = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			 emzelom_area = {
+			emzelom_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 			owns_core_province = 5257
+			5264 = { 
+			has_owner_religion = yes 
+			}
+			5267 = { 
+			has_owner_religion = yes 
+			}
+			5259 = { 
+			has_owner_religion = yes 
+			}
 			
 		
         }
@@ -391,8 +400,8 @@ umz_3 = {
 					add_base_tax = 1
 					add_base_production = 1
 					}
-			every_owned_province = { 
-			limit = { region = west_estal_region  }
+			west_estal_region = { 
+			limit = { owned_by = UMZ }
 			add_province_modifier = { 
 			name = umz_colonization
 			duration =  3650
@@ -422,7 +431,7 @@ umz_4 = {
 	UMZ_outer = {
         icon = mission_colonial
         generic = no   
-	    position = 3
+	    position = 2
              
       
         
@@ -459,9 +468,55 @@ umz_4 = {
        
        }
 	
+	}
 	
-  
-    }
+	UMZ_asetli = {
+        icon = mission_early_game_buildings
+        generic = no   
+	    position = 3
+             
+      
+        
+       
+        required_missions = {
+            UMZ_wealth
+		
+        }
+        
+		provinces_to_highlight = {
+          area = asetli_area
+        }
+       
+    
+       
+        trigger = {
+		 asetli_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			development_in_provinces = {
+			value = 35
+			area = asetli_area
+			}
+		
+        }
+        
+       
+        effect = {
+			5545 = {
+			 change_trade_goods = spices
+			 add_center_of_trade_level = 2
+			}
+			5543 = {
+			 change_trade_goods = spices 
+			}
+			5551 = { 
+			 change_trade_goods = dyes
+			}
+			change_adm = 1
+       }
+	
+	}
    
 }
 
@@ -494,7 +549,7 @@ umz_5 = {
     
        
         trigger = {
-			AND = { 
+			
 			development_in_provinces = {
 			value = 30
 			area = east_umzatia
@@ -503,7 +558,7 @@ umz_5 = {
 			value = 35
 			area = umzat_bay
 			}
-			}
+			
         }
         
        
@@ -517,6 +572,148 @@ umz_5 = {
         }
 		
     }
-	
-}
+	UMZ_sabotage = {
+        icon =  mission_alliances  
+        generic = no    
+        position = 3     
+      
+        
+       
+        required_missions = {
+            UMZ_wealth
+        }
+        
+
+       
+    
+       
+        trigger = {
+		has_spy_network_in = {
+		who = TCK
+		value = 35
+		}
+		spymaster = 1
+        }
+        
+       
+        effect = {
+           TCK = { 
+				release = IMG
+				kill_ruler = yes
+				add_country_modifier = { 
+				name = umz_chaos
+				duration = 1825
+				}
+			}
+		   create_march = IMG
+		   
+		   
+	    
+        }
+		
+    }
+	UMZ_war = {
+        icon = mission_cannons_firing
+        generic = no    
+           
+      
+        
+       
+        required_missions = {
+            UMZ_sabotage
+        }
+        
+
+        
+    
+       
+        trigger = {
+		army_size_percentage = 1
+		navy_size_percentage = 1
+		prestige = TCK
+	    legitimacy = TCK
+		NOT = { alliance_with = TCK }
+		}
+		
+        
+       
+        effect = {
+           declare_war_with_cb = {
+			who = TCK
+			casus_belli = cb_conquest
+			}
+			add_country_modifier = { 
+				name = umz_war_enthusiasm
+				duration = 3650
+			}
+	    }
+		
+    }
+	UMZ_peace = {
+        icon = mission_luther_theses
+        generic = no    
+           
+      
+        
+       
+        required_missions = {
+            UMZ_war
+        }
+        
+
+        
+    
+       
+        trigger = {
+			war_score_against = {
+			who = TCK
+			value = 51
+			}
+		}
+		
+        
+       
+        effect = {
+           white_peace = TCK
+		   TCK = {
+		   release = QUA
+		   }
+		  create_march = QUA
+		  5072 = { 
+					owner = { 
+							country_event = { 
+							id = umzatia.1
+							days = 1
+    
+						}  
+					} 
+		    }
+		  5070 = { 
+					owner = { 
+							country_event = { 
+							id = umzatia.2
+							days = 1
+    
+						}  
+					} 
+		    }
+		  5078 = { 
+					owner = { 
+							country_event = { 
+							id = umzatia.3
+							days = 1
+    
+						}  
+					} 
+		    }
+			
+			add_country_modifier = { 
+				name = umz_vassals
+				duration = -1
+			}
+		  
+	    }
+		
+      }
+	}
 
