@@ -357,6 +357,10 @@ umz_3 = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
+			northern_umzat = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
 			owns_core_province = 5257
 			5264 = { 
 			has_owner_religion = yes 
@@ -531,7 +535,8 @@ umz_5 = {
     has_country_shield = yes
 	UMZ_wealth = {
         icon =  mission_war_chest   
-        generic = no    
+        generic = no  
+		position = 2 
              
       
         
