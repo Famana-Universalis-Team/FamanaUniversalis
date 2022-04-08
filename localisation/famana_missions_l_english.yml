@@ -203,7 +203,9 @@
  kap_convert_aresia_title:0 "Convert Aresia"
  kap_convert_aresia_desc:0 ""
  kap_the_frontier_title:0 "Yabonian Frontier"
+ kap_the_frontier_desc:0 ""
  kap_bamal_heartland_title:0 "Conquest of Bamal"
+ kap_bamal_heartland_desc:0 ""
  #Kapolian Mission Rewards
  kap_aresian_faith:0 "Aresian Light"
  kap_push_the_frontier:0 "Push The Frontier"
@@ -233,14 +235,25 @@
 
 
 
+
+
  #Delkian Missions
  del_expand_the_cites_title:0 "Rebuild Cites"
  del_expand_the_cites_desc:0 "The cities of Delkia were utterly trashed by the Yomtanian armies during the Maxan War. Tragically, even our own capital is in ruins. It is time to begin the rebuilding process, so that our cites will again be the greatest of Ga Xal."
  del_pearl_of_delkia_title:0 "The Holy Capital"
- del_pearl_of_delkia_desc:0 "Ximal was once a mighty city. In the old days, it was a city larger then any other in Ga Xal, besides Xon. Now, however, it is but a shadow of its former self, with most of the city having been destroyed. For the glory of Delk, we must rebuild Ximal and let it shine once more!"
+ del_pearl_of_delkia_desc:0 "Ximal was once a mighty city. In the old days, it was a city larger than any other in Ga Xal besides Xon. Now, however, it is but a shadow of its former self, with most of the city having been destroyed. For the glory of Delk, we must rebuild Ximal and let it shine once more!"
  del_propestiy_for_all_title:0 "Prosperity for All"
- del_propestiy_for_all_desc:0 "Much of our people live in slums or shanty towns near the major cites. lacking the Prosperity that our cites enjoy. All of Delk's subjects must enjoy our Prosperity."
+ del_propestiy_for_all_desc:0 "Many of our people live in miserable shacks near the major cites, missing out on the prosperity enjoyed in the urban centers. All of Delk's subjects must be protected, as they are all children of the earth."
  #Delkian Mission Rewards
  rebuilding_delkia:0 "Rebuilding Delkia"
  del_ximal:0 "Expansion of Ximal"
  del_delk_propestiy:0 "Delk's Prosperity"
+
+
+
+
+
+ #Umzatian Missions
+ #Umzatian Mission Rewards
+ umz_cut_off:0 "Isolated From Maritime Trade"
+ umz_cut_off_desc:0 "With the Oppians seizing control of the outer Gomic isles, this leaves little room for our merchants to operate."

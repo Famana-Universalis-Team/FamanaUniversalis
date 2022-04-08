@@ -8,17 +8,15 @@ culture = Arlentan
 religion = western_oppian
 hre = no
 
-base_tax = 7
-base_production = 8
-trade_goods = salt
-base_manpower = 6
-capital = "Neches"
+base_tax = 2
+base_production = 3
+trade_goods = naval_supplies
+base_manpower = 3
+capital = "Blo"
 is_city = yes
 extra_cost = 1
-center_of_trade = 1
+  
 
-
-owner = GRO
-controller = GRO
-add_core = GRO
-add_core = NCH
+owner = OSS
+controller = OSS
+add_core = OSS

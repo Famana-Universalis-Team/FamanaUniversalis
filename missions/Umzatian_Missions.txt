@@ -404,6 +404,12 @@ umz_3 = {
         
        
         effect = {
+		west_estal_region = {
+			discover_country = ROOT
+		}
+		laglon_region = {
+			discover_country = ROOT
+		}
 		northern_umzat = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -731,7 +737,7 @@ umz_4 = {
         effect = {
 			5545 = {
 			 change_trade_goods = spices
-			 add_center_of_trade_level = 2
+			 add_center_of_trade_level = 1
 			}
 			5543 = {
 			 change_trade_goods = spices 
@@ -773,6 +779,10 @@ umz_4 = {
         
        
         effect = {
+		5016 = {
+			add_base_production = 2
+			add_center_of_trade_level = 1
+		}
 		every_known_country = {
 		limit = { government = native
 				 capital_scope = {
