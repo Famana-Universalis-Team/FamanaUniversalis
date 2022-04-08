@@ -9,7 +9,7 @@ fas_1 = {
 	has_country_shield = yes
 
 	for_the_clouds = {
-		icon = fashros_wheels
+		icon = mission_se_medicine_wheel
 		required_missions = {}
 		trigger = {
 			at_war_with_religious_enemy = yes

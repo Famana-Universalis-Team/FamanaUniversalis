@@ -272,3 +272,16 @@ delkia_3 = {
 		}
     }
 }
+
+delkia_4 = {
+	slot = 4
+	generic = no 
+	ai = no
+	potential = {
+        NOT = { map_setup = map_setum_random }
+        OR = {
+            tag = DEL
+        }
+    }
+    has_country_shield = yes
+}
