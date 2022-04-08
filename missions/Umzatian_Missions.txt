@@ -785,7 +785,10 @@ umz_4 = {
 		}
 		every_known_country = {
 		limit = { 
-				 government = native
+				OR = { 
+					   government = native
+					   government = tribal
+				    }
 				 capital_scope = {
 				 region = west_estal_region 
 				 
