@@ -474,9 +474,14 @@ global_tax_modifier = 0.05
 production_efficiency = 0.05
 }
 
-umz_umzatian_control = {
+umz_develop_m = {
 local_development_cost = -0.15
-local_build_time = -0.1
+local_defensiveness = 0.3
+}
+
+umz_develop_s = {
+local_development_cost = -0.15
+local_manpower_modifier = 0.25
 }
 
 umz_desert_cavalry = {
@@ -508,8 +513,22 @@ manpower_recovery_speed = 0.33
 }
 
 umz_vassals = {
-diplomatic_upkeep = 3
+diplomatic_upkeep = 2
 reduced_liberty_desire = 25
+}
+
+umz_inf = {
+local_friendly_movement_speed = 0.15
+province_trade_power_modifier = 0.1
+local_unrest = -2
+}
+
+umz_ref = {
+free_adm_policy = 1
+free_dip_policy = 1
+free_mil_policy = 1
+max_absolutism = 15
+state_maintenance_modifier = -0.33
 }
 
 

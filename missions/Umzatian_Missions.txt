@@ -39,7 +39,7 @@ umz_1 = {
 				effasha_area = {
 					
 					add_province_modifier = {
-						name = umz_umzatian_control
+						name = umz_develop_s
 						duration = 3650
 					}
 					
@@ -48,12 +48,69 @@ umz_1 = {
 			lyposh_area  = {
 				add_permanent_claim = ROOT
 			}
-			add_country_modifier = { 
-			name = umz_desert_cavalry
-			duration = 3650 
-			}
+			
 			
 		}
+    }
+	UMZ_nutia = {
+        icon = mission_trade_company_region_abroad
+        generic = no  		
+        position = 5   
+      
+        
+       
+        required_missions = {
+            UMZ_south
+        }
+        
+		 provinces_to_highlight = {
+           OR = {
+		   area = nuti_area
+		   area = atamsu_area
+		  
+		   }
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+        }
+        
+    
+       
+        trigger = {
+			nuti_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+        
+			atamsu_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}	
+        
+		
+		
+       
+       
+        effect = {
+          5097 = {
+		  add_building = shipyard
+		  }
+		  5100 = {
+		  add_building = shipyard
+		  }
+		  5103 = {
+		  add_building = grand_shipyard
+		  }
+			nuti = {
+         
+				add_trade_modifier = {
+                 who = ROOT
+                 duration = 3650
+                 power = 25
+                 key = umzatian_merchants
+				}
+			}
+		}
+	  
     }
 }
 
@@ -152,9 +209,17 @@ umz_2 = {
        
         effect = {
             fazalep_area  = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
 				add_permanent_claim = ROOT
 			}
 			effasha_area  = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
 				add_permanent_claim = ROOT
 			}
 		}
@@ -190,15 +255,80 @@ umz_2 = {
 				fazalep_area = {
 					
 					add_province_modifier = {
-						name = umz_umzatian_control
+						name = umz_develop_m
 						duration = 3650
 					}
 				}
 			ponaa_area  = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
 				add_permanent_claim = ROOT
 			}
 			roplea_area  = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
 				add_permanent_claim = ROOT
+			}
+		}
+    }
+	UMZ_south = {
+        icon = mission_bedouins
+        generic = no    
+             
+      
+        
+       
+        required_missions = {
+            UMZ_fazalep UMZ_effasha
+        }
+        
+		 provinces_to_highlight = {
+           OR = {
+		   area = ponaa_area
+		   area = lyposh_area
+		   province_id = 5230
+		   }
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+        }
+        
+    
+       
+        trigger = {
+		ponna_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+        }
+		lyposh_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+        }
+        owns_core_province = 5230
+       
+        effect = {
+          
+			nuti_area  = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			atamsu_area_area  = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			add_country_modifier = { 
+			name = umz_desert_cavalry
+			duration = 3650 
 			}
 		}
     }
@@ -273,6 +403,10 @@ umz_3 = {
        
         effect = {
 		northern_umzat = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
 				add_permanent_claim = ROOT
 			}
        
@@ -313,12 +447,24 @@ umz_3 = {
        
         effect = {
 			unnamed_area_22 = {
+			limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
 			add_permanent_claim = ROOT
 			}
 			emzelom_area = {
+			limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
 			add_permanent_claim = ROOT
 			}
 			5257 = {
+			limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
 			add_permanent_claim = ROOT
 			}
        
@@ -378,9 +524,17 @@ umz_3 = {
        
         effect = {
 			griglom_area = {
+			limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
 			add_permanent_claim = ROOT
 			}
 			west_feniki = {
+			limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
 			add_permanent_claim = ROOT
 			}
 			if = {   
@@ -420,6 +574,112 @@ umz_3 = {
 	
   
     }
+	UMZ_infrastructure = {
+        icon = mission_have_manufactories
+        generic = no  		
+        position = 6    
+      
+        
+       
+        required_missions = {
+            UMZ_new UMZ_peace UMZ_south
+		
+        }
+        
+		
+       
+    
+       
+        trigger = {
+		    all_owned_province = {
+					OR = {
+						has_building = mills
+						has_building = farm_estate
+						has_building = tradecompany
+						has_building = plantations
+						has_building = textile
+						has_building = weapons
+						has_building = wharf
+						has_building = furnace
+					}
+				
+				amount = 15
+				}
+			
+			
+		
+        }
+        
+       
+        effect = {
+			add_years_of_income = 1.5
+			every_owned_province = {
+				limit = {
+					is_core = ROOT
+					development = 10
+				}
+				add_country_modifier = { 
+				name = umz_inf
+				duration = -1
+				}
+			}
+		}	
+	
+	
+  
+    }
+	UMZ_reform = {
+        icon = mission_empire
+        generic = no  		
+        position = 6    
+      
+        
+       
+        required_missions = {
+            UMZ_infrastructure
+		
+        }
+        
+		
+       
+    
+       
+        trigger = {
+		  university = 5
+		  town_hall = 5
+		   NOT = {
+                OR = {
+                    estate_influence = {
+                        estate = estate_church
+                        influence = 65
+                    }
+                    estate_influence = {
+                        estate = estate_nobles
+                        influence = 65
+                    }
+                    estate_influence = {
+                        estate = estate_burghers
+                        influence = 65
+                    }
+                }
+            }
+		
+        }
+        
+       
+        effect = {
+			change_adm = 1
+			add_adm_power = 100
+			add_dip_power = 100
+			add_mil_power = 100
+			add_country_modifier = { 
+				name = umz_ref
+				duration = -1
+				}
+			
+		}
+  
+	}
    
  }
 	
@@ -510,7 +770,12 @@ umz_4 = {
        
         effect = {
 		every_known_country = {
-		limit = { primary_culture = Mirrisan }
+		limit = { government = native
+				 capital_scope = {
+				 region = west_estal_region 
+				 
+				   }
+				}
 		add_country_modifier = { 
 			name = umz_cut_off
 			duration = 3650 
