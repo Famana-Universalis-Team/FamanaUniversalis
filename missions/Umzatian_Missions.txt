@@ -100,8 +100,8 @@ umz_1 = {
 		  5103 = {
 		  add_building = grand_shipyard
 		  }
-		ROOT= {	
-			nuti = {
+			
+			5103 = {
          
 				add_trade_modifier = {
                  who = ROOT
@@ -110,7 +110,7 @@ umz_1 = {
                  key = umzatian_merchants
 				}
 			}
-		  }	
+		  	
 		}
 	  
     }
@@ -774,7 +774,8 @@ umz_4 = {
        
         effect = {
 		every_known_country = {
-		limit = { government = native
+		limit = { 
+				 government = native
 				 capital_scope = {
 				 region = west_estal_region 
 				 
