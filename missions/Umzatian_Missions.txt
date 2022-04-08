@@ -55,7 +55,7 @@ umz_1 = {
 	UMZ_nutia = {
         icon = mission_trade_company_region_abroad
         generic = no  		
-        position = 5   
+        position = 6  
       
         
        
@@ -100,6 +100,7 @@ umz_1 = {
 		  5103 = {
 		  add_building = grand_shipyard
 		  }
+		ROOT= {	
 			nuti = {
          
 				add_trade_modifier = {
@@ -109,6 +110,7 @@ umz_1 = {
                  key = umzatian_merchants
 				}
 			}
+		  }	
 		}
 	  
     }
@@ -277,8 +279,8 @@ umz_2 = {
     }
 	UMZ_south = {
         icon = mission_bedouins
-        generic = no    
-             
+        generic = no   		
+         position = 5    
       
         
        
@@ -319,7 +321,7 @@ umz_2 = {
 				}
 				add_permanent_claim = ROOT
 			}
-			atamsu_area_area  = {
+			atamsu_area  = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
@@ -591,7 +593,9 @@ umz_3 = {
     
        
         trigger = {
-		    all_owned_province = {
+		    calc_true_if = {
+				desc = build_manufactories_mission_tooltip
+				all_owned_province = {
 					OR = {
 						has_building = mills
 						has_building = farm_estate
@@ -602,9 +606,9 @@ umz_3 = {
 						has_building = wharf
 						has_building = furnace
 					}
-				
-				amount = 15
 				}
+				amount = 15
+			}
 			
 			
 		

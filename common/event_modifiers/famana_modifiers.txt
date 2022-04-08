@@ -524,11 +524,9 @@ local_unrest = -2
 }
 
 umz_ref = {
-free_adm_policy = 1
-free_dip_policy = 1
-free_mil_policy = 1
+free_policy = 1
 max_absolutism = 15
-state_maintenance_modifier = -0.33
+state_maintenance_modifier = -0.25
 }
 
 
