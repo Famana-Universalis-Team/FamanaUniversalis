@@ -60,7 +60,10 @@ aresian_decree_active = {
 
 yomtanian_nation = {
     potential = {
-        tag = HSH
+        OR = {
+            tag = HSH
+            tag = HOF
+        }
     }
     
     trigger = {
