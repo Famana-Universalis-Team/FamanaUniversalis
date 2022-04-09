@@ -122,7 +122,6 @@ oppian_group = {
 			TRADITIONALIST NHOUKAR 
 		}
 
-		defender_of_faith = yes
 		misguided_heretic = yes
 
 		on_convert = {
@@ -1251,10 +1250,10 @@ Agmagozi = {
 
 
 tonmo_group = {
+	defender_of_faith = yes
     tonmo = {
         icon = 22
         color = { 217 54 15 }
-		defender_of_faith = yes
         province = {
             local_missionary_strength = -0.02
         }

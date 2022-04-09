@@ -5,7 +5,7 @@
 #ODRP
 #KCM's RP
 #GLR's RP
-#My own RP (Fall of Nafa)
+#Adartho's RP
 #Sunset (ofc)
 #Programmers - Adartho, Ocros, u1145, SKM
 
@@ -60,6 +60,17 @@ Maxan = {
         }
         dynasty_names = {
             Ratonasha Loviaz Lekaux Jantada Jakar Deli Dijon Nedu Wamadera Manu Kanaz Sunek Noy Uchlir Dramra Mibsko Bohika
+        }
+    }
+	Amaxran = {
+        male_names = {
+            Dymio Agixadar Ratonasha Tormi Dorren Giun Tamar Paro Bamal Dorron Nokhes Amilian Camiclar Relambi Melze Yenat Zandar Ratelar Lunpikisa Sonon Tamander Lokis Lemi Romal Ifrel Asifsya Malav
+        }
+        female_names = {
+            Zemei Loqa Talova Pinar Edla Bruri Nabu Meira
+        }
+        dynasty_names = {
+            Ratonasha Loviaz Lekaux Jantada Jakar Deli Dijon Nedu Wamadera Manu Kanaz Sunek Uchlir Dramra Mibsko Bohika
         }
     }
 }
@@ -182,6 +193,7 @@ North_West_Antebari = {
 		}
 	}
 	Holk = {
+		primary = HLK
 		male_names = {      
 			Gri Bo Popo Bmolo Drup
 		}
@@ -528,7 +540,7 @@ Geopyopian = {
 #############################
 Ravsho = { #unfinished
 	Fashran = {
-		primary = FAS
+		primary = ANM
 		male_names = {
 			Ravshara Lanreisseir Unia Gaara Yharinel Axilea Ogro Astrazna Axiaraniro Raravshara Unrara
 		}
