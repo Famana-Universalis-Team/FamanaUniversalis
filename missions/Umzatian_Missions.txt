@@ -690,14 +690,15 @@ umz_3 = {
         effect = {
 			add_years_of_income = 1.5
 			custom_tooltip = umz_infrasctucture_tooltip
-			every_owned_province = {
-				limit = {
-					is_core = ROOT
-					development = 10
-				}
-				add_country_modifier = { 
-				name = umz_inf
-				duration = -1
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						development = 10
+					}
+					add_country_modifier = { 
+						name = umz_inf
+						duration = -1
+					}
 				}
 			}
 		}	
