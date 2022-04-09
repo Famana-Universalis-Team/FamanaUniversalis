@@ -524,7 +524,9 @@ local_unrest = -2
 }
 
 umz_ref = {
-free_policy = 1
+monarch_admin_power = 1
+monarch_diplomatic_power = 1
+monarch_military_power = 1
 max_absolutism = 15
 state_maintenance_modifier = -0.25
 }
@@ -536,7 +538,7 @@ siege_ability = 0.25
 }
 
 umz_crushed = {
-siege_ability = 0.2
+siege_ability = 0.15
 diplomatic_reputation = 1
 }
 

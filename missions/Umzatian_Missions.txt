@@ -689,16 +689,7 @@ umz_3 = {
        
         effect = {
 			add_years_of_income = 1.5
-			every_owned_province = {
-				limit = {
-					is_core = ROOT
-					development = 10
-				}
-				add_country_modifier = { 
-				name = umz_inf
-				duration = -1
-				}
-			}
+			custom_tooltip = umz_infrasctucture_tooltip
 		}	
 	
 	
@@ -712,7 +703,7 @@ umz_3 = {
         
        
         required_missions = {
-            UMZ_infrastructure
+            UMZ_infrastructure 
 		
         }
         
@@ -872,7 +863,7 @@ umz_4 = {
 	UMZ_eqiso = {
         icon = mission_landsknecht_soldier
         generic = no    
-             
+         position = 5     
       
         
        
@@ -926,7 +917,7 @@ umz_4 = {
 	UMZ_hasia = {
         icon = mission_teutonic_knights
         generic = no    
-             
+        position = 6   
       
         
        
@@ -944,7 +935,7 @@ umz_4 = {
     
        
         trigger = {
-			owns_core_province = 5695
+			owns = 5695
 			
 		
         }
@@ -954,6 +945,7 @@ umz_4 = {
 			5695 = {
 			change_culture = ROOT
 			change_religion = ROOT
+			add_core = ROOT
 			}
 			add_country_modifier = { 
 			name = umz_crushed
@@ -1153,31 +1145,13 @@ umz_5 = {
 		   }
 		  create_march = QUA
 		  5072 = { 
-					owner = { 
-							country_event = { 
-							id = umzatia.1
-							days = 1
-    
-						}  
-					} 
+				custom_tooltip = umz_tck_partition_tooltip_kis	
 		    }
 		  5070 = { 
-					owner = { 
-							country_event = { 
-							id = umzatia.2
-							days = 1
-    
-						}  
-					} 
+				custom_tooltip = umz_tck_partition_tooltip_zos	
 		    }
 		  5078 = { 
-					owner = { 
-							country_event = { 
-							id = umzatia.3
-							days = 1
-    
-						}  
-					} 
+				custom_tooltip = umz_tck_partition_tooltip_ent
 		    }
 			
 			add_country_modifier = { 
@@ -1189,4 +1163,50 @@ umz_5 = {
 		
       }
 	}
-
+	
+	##########
+	#tooltips#
+    ##########
+	
+	umz_tck_partition_tooltip_kis = {
+	owner = { 
+				country_event = { 
+					id = umzatia.1
+					days = 1
+    
+				}  
+		    } 
+	}
+	
+	umz_tck_partition_tooltip_zos = {
+	owner = { 
+					country_event = { 
+					id = umzatia.2
+					days = 1
+    
+					}  
+			} 
+	}
+	
+	umz_tck_partition_tooltip_ent = {
+	owner = { 
+					country_event = { 
+					id = umzatia.3
+					days = 1
+    
+					}  
+			}
+	}
+	
+	umz_infrasctucture_tooltip = {
+		every_owned_province = {
+				limit = {
+					is_core = ROOT
+					development = 10
+				}
+				add_country_modifier = { 
+				name = umz_inf
+				duration = -1
+				}
+			}
+	}
