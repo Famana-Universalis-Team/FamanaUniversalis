@@ -584,6 +584,70 @@ umz_3 = {
 	
   
     }
+	UMZ_laglon = {
+        icon = mission_great_wall
+        generic = no    
+             
+      
+        
+       
+        required_missions = {
+            UMZ_new
+		
+        }
+        
+		provinces_to_highlight = {
+			area = unnamed_area_14
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+				  
+			
+        }
+       
+    
+       
+        trigger = {
+			unnamed_area_14 = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			
+		
+        }
+        
+       
+        effect = {
+			unnamed_area_14 = {
+			limit = { 
+				is_empty = yes
+			}
+			create_colony = 1000
+			cede_province = ROOT
+			add_core = ROOT
+			change_culture = ROOT
+			change_religion = ROOT
+			
+			}
+			
+			west_feniki = {
+			limit = { 
+				is_empty = yes
+			}
+			create_colony = 1000
+			cede_province = ROOT
+			add_core = ROOT
+			change_culture = ROOT
+			change_religion = ROOT
+			
+			}
+			5020 = {
+				add_building = fort_18th
+			}
+       
+        }
+	
+	
+  
+    }
 	UMZ_infrastructure = {
         icon = mission_have_manufactories
         generic = no  		
@@ -592,7 +656,7 @@ umz_3 = {
         
        
         required_missions = {
-            UMZ_new UMZ_peace UMZ_south
+            UMZ_laglon UMZ_peace UMZ_south
 		
         }
         
@@ -805,6 +869,103 @@ umz_4 = {
        }
 	
 	}
+	UMZ_eqiso = {
+        icon = mission_landsknecht_soldier
+        generic = no    
+             
+      
+        
+       
+        required_missions = {
+            UMZ_new
+		
+        }
+        
+		provinces_to_highlight = {
+			area = fes_viom_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+				  
+			
+        }
+       
+    
+       
+        trigger = {
+			fes_viom_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			
+		
+        }
+        
+       
+        effect = {
+			hasia_area = {
+			limit = { 
+				is_empty = yes
+			}
+			create_colony = 1000
+			cede_province = ROOT
+			add_core = ROOT
+			change_culture = ROOT
+			change_religion = ROOT
+			
+			}
+			add_country_modifier = { 
+			name = umz_breach
+			duration = 3650 
+			}
+			
+       
+        }
+	
+	
+  
+    }
+	UMZ_hasia = {
+        icon = mission_teutonic_knights
+        generic = no    
+             
+      
+        
+       
+        required_missions = {
+            UMZ_eqiso
+		
+        }
+        
+		provinces_to_highlight = {
+			province_id = 5695
+				  
+			
+        }
+       
+    
+       
+        trigger = {
+			owns_core_province = 5695
+			
+		
+        }
+        
+       
+        effect = {
+			5695 = {
+			change_culture = ROOT
+			change_religion = ROOT
+			}
+			add_country_modifier = { 
+			name = umz_crushed
+			duration = -1
+			}
+			
+       
+        }
+	
+	
+  
+    }
 	
 	
    
