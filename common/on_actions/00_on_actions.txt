@@ -3704,6 +3704,40 @@ on_province_religion_converted = {
 	if = {
 		limit = {
 			OR = {
+				culture = Lerushian
+				culture = Xofkan
+			}
+			owner = {
+				religion = tonmo
+			}
+		}
+		add_core = JFX
+		change_culture = Amaxran
+	}
+	if = {
+		limit = {
+			OR = {
+				culture = Sixany
+				culture = Morian_C
+				culture = Delkian_C
+				culture = Glasian
+				culture = Neo_Xalnish
+				culture = Pawani_C
+				culture = Hoxan
+				culture = Elwaiti
+				culture = Kom
+				culture = Callan
+				culture = Opmaki
+			}
+			owner = {
+				religion = tonmo
+			}
+		}
+		add_core = JFX
+	}
+	if = {
+		limit = {
+			OR = {
 				culture = Yabonian
 				culture = Geteri
 				culture = Bamali_C

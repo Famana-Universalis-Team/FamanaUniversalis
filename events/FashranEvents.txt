@@ -593,3 +593,120 @@ country_event = { #Choosing a Capital
         }
     }
 }
+
+country_event = { #Southward Expansion (NOT MISSION)
+    id = fashros.7
+    title = fashros.7.t
+    desc = fashros.7.d
+    picture = BORDER_TENSION_eventPicture
+
+    trigger = {
+        tag = FAS
+        is_year = 260
+        owns_core_province = 5650
+        owns_core_province = 5603
+        owns_core_province = 5685
+        owns_core_province = 5848
+        owns_core_province = 5856
+    }
+
+    mean_time_to_happen = {
+        months = 60
+    }
+    
+    major = yes
+
+    option = {
+        name = fashros.7.a
+        custom_tooltip = southward_expansion_tooltip
+        northern_desert_region = {
+            discover_country = FAS
+        }
+        hidden_effect = {
+            if = {
+                limit = {
+                    5854 = {
+                        is_empty = yes
+                    }
+                }
+                5854 = {
+                    add_core = ROOT
+                    cede_province = ROOT
+                    change_religion = tonmo
+                    change_culture = Jimbalan
+                }
+            }
+            if = {
+                limit = {
+                    5830 = {
+                        is_empty = yes
+                    }
+                }
+                5830 = {
+                    add_core = ROOT
+                    cede_province = ROOT
+                    change_religion = tonmo
+                    change_culture = Fisbiklan
+                }
+            }
+            if = {
+                limit = {
+                    5887 = {
+                        is_empty = yes
+                    }
+                }
+                5887 = {
+                    add_core = ROOT
+                    cede_province = ROOT
+                    change_religion = tonmo
+                    change_culture = Kisholian
+                }
+            }
+            west_jimbalak_area = {
+                limit = {
+                    is_empty = yes
+                }
+                add_core = ROOT
+                cede_province = ROOT
+                change_religion = tonmo
+                change_culture = Jimbalan
+            }
+            nhoma_area_5 = {
+                limit = {
+                    is_empty = yes
+                }
+                add_core = ROOT
+                cede_province = ROOT
+                change_religion = tonmo
+                change_culture = Fisbiklan
+            }
+            vaks_area = {
+                limit = {
+                    is_empty = yes
+                }
+                add_core = ROOT
+                cede_province = ROOT
+                change_religion = tonmo
+                change_culture = Fisbiklan
+            }
+            ufulk_area = {
+                limit = {
+                    is_empty = yes
+                }
+                add_core = ROOT
+                cede_province = ROOT
+                change_religion = tonmo
+                change_culture = Fisbiklan
+            }
+            vadorvador_area = {
+                limit = {
+                    is_empty = yes
+                }
+                add_core = ROOT
+                cede_province = ROOT
+                change_religion = tonmo
+                change_culture = Kisholian
+            }
+        }
+    }
+}
