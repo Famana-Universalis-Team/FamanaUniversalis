@@ -5,6 +5,7 @@ age_of_discovery = {
 		always = yes
 	}	
 
+	religious_conflicts = yes
 	papacy = 1.0
 
 	objectives = {
@@ -455,6 +456,7 @@ age_of_absolutism = {
 		}
 	}
 	
+	religious_conflicts = yes
 	papacy = 1.5
 	
 	absolutism = {
@@ -643,6 +645,7 @@ age_of_revolutions = {
 		}
 	}
 	
+	religious_conflicts = yes
 	papacy = 2.0
 	absolutism = {
 		harsh_treatment = 1
