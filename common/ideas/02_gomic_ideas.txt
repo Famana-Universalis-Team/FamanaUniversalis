@@ -1631,45 +1631,6 @@ XOF_ideas = {
 	}
 }
 
-VAN_ideas = {
-    start = {
-        trade_goods_size_modifier = 0.10
-        development_cost = -0.1
-    }
-    
-    bonus = {
-        defensiveness = 0.15
-    }    
-
-    trigger = {
-        tag = VAN
-    }
-    free = yes
-    
-    van_the_govustan_way = {
-        technology_cost = -0.1
-    }
-    van_the_conscription_art = {
-        global_manpower_modifier = 0.25
-    }
-    van_modern_vanomatis = {
-        artillery_power = 0.20
-    }
-    van_university_scholars = {
-        advisor_cost = -0.10
-        idea_cost = -0.05
-    }
-    van_cheap_steel = {
-        artillery_cost = -0.25
-    }
-    van_army_engineering_corps = {
-        build_cost = -0.15
-    }
-    van_protect_trade_rights = {
-        global_trade_power = 0.1
-    }
-}
-
 NAK_ideas = {
     start = {
         manpower_recovery_speed = 0.15
@@ -2144,164 +2105,6 @@ Pomlen_ideas = {
     }
 }
 
-NHL_ideas = {
-    start = {
-        naval_forcelimit_modifier = 0.15
-		trade_efficiency = 0.10
-    }
-    
-    bonus = {
-        leader_land_fire = 1
-    }    
-
-    trigger = {
-        tag = NHL
-    }
-    free = yes
-    
-    nhl_has = {
-		army_tradition = 0.5
-    }
-    nhl_land = {
-		development_cost = -0.10
-    }
-    nhl_ordic = {
-        ship_durability = 0.10
-    }
-    nhl_dark = {
-        hostile_attrition = 1
-    }
-    nhl_shaar = {
-		prestige = 1
-    }
-    nhl_three = {
-		defensiveness = 0.15
-		fort_maintenance_modifier = -0.20
-    }
-    nhl_kin = {
-		core_creation = -0.10
-    }
-}
-
-ALT_ideas = {
-    start = {
-        shock_damage = 0.10
-		infantry_power = 0.10
-    }
-    
-    bonus = {
-        free_leader_pool = 1
-    }    
-
-    trigger = {
-        tag = ALT
-    }
-    free = yes
-    
-    alt_twin = {
-		prestige = 0.5
-		garrison_size = 0.20
-    }
-    alt_deluge = {
-		diplomats = 1
-    }
-    alt_forest = {
-        defensiveness = 0.15
-    }
-    alt_ordic = {
-        trade_steering = 0.20
-    }
-    alt_ozamah = {
-		movement_speed = 0.10
-    }
-    alt_warrior = {
-		reinforce_speed = 0.25
-    }
-    alt_national = {
-		interest = -0.5
-    }
-}
-
-ZUB_ideas = {
-    start = {
-        land_morale = 0.10
-		global_manpower_modifier = 0.15
-    }
-    
-    bonus = {
-        land_forcelimit_modifier = 0.15
-    }    
-
-    trigger = {
-        tag = ZUB
-    }
-    free = yes
-    
-    zub_old = {
-		legitimacy = 1
-    }
-    zub_gateway = {
-		global_prov_trade_power_modifier = 0.20
-    }
-    zub_neaki = {
-        infantry_power = 0.10
-    }
-    zub_van = {
-        artillery_power = 0.10
-    }
-    zub_prot = {
-		garrison_size = 0.10
-		defensiveness = 0.15
-    }
-    zub_agus = {
-		spy_offence = 0.15
-    }
-    zub_tol = {
-		tolerance_heretic = 2
-    }
-}
-
-RDU_ideas = {
-    start = {
-        years_of_nationalism = -5
-		cavalry_cost = -0.10
-    }
-    
-    bonus = {
-        war_exhaustion = -0.05
-    }    
-
-    trigger = {
-        tag = RDU
-    }
-    free = yes
-    
-    rdu_forest = {
-		hostile_attrition = 1
-    }
-    rdu_naravam = {
-		land_morale = 0.10
-		movement_speed = 0.05
-    }
-    rdu_aplun = {
-        trade_range_modifier = 0.15
-    }
-    rdu_ysnoma = {
-        mercenary_manpower = 0.25
-		merc_maintenance_modifier = -0.10
-    }
-    rdu_prime = {
-		production_efficiency = 0.10
-    }
-    rdu_warrior = {
-		prestige_from_land = 1.0
-    }
-    rdu_uma = {
-		reinforce_speed = 0.05
-		army_tradition = 0.5
-    }
-}
-
 VNA_ideas = {
     start = {
         siege_blockade_progress = 1
@@ -2341,5 +2144,122 @@ VNA_ideas = {
     vna_marines = {
 		land_forcelimit_modifier = 0.10
 		infantry_power = 0.05
+    }
+}
+
+KSL_ideas = {
+    start = {
+        missionary_maintenance_cost = -0.25
+		infantry_cost = -0.10
+    }
+    
+    bonus = {
+        tolerance_heathen = 2
+    }
+
+    trigger = {
+        tag = KSL
+    }
+    free = yes
+    
+    ksl_settling = {
+		development_cost = -0.10
+    }
+    ksl_footmen = {
+		infantry_power = 0.10
+    }
+    ksl_rule = {
+        free_policy	= 1
+    }
+    ksl_crossroads = {
+        trade_efficiency = 0.10
+		center_of_trade_upgrade_cost = -0.25
+    }
+    ksl_control = {
+		siege_ability = 0.15
+    }
+    ksl_wapur = {
+		trade_goods_size_modifier = 0.10
+    }
+    ksl_acceptance = {
+		years_of_nationalism = -5
+		num_accepted_cultures = 1
+    }
+}
+
+JFX_ideas = {
+    start = {
+        cavalry_power = 0.10
+		core_creation = -0.10
+    }
+    
+    bonus = {
+        build_cost = -0.10
+    }
+
+    trigger = {
+        tag = JFX
+    }
+    free = yes
+    
+    jfx_legacy = {
+		land_morale = 0.10
+    }
+    jfx_rulers = {
+		defensiveness = 0.15
+    }
+    jfx_xalian = {
+        legitimacy = 1
+    }
+    jfx_loyal = {
+        tolerance_own = 2
+    }
+    jfx_holy = {
+		missionaries = 1
+    }
+    jfx_rapid = {
+		envoy_travel_time = -0.20
+    }
+    jfx_cavalry = {
+		cavalry_cost = -0.10
+    }
+}
+
+NHM_ideas = {
+    start = {
+        land_morale = 0.15
+		tolerance_own = 1
+    }
+    
+    bonus = {
+        prestige = 1
+    }
+
+    trigger = {
+        tag = NHM
+    }
+    free = yes
+    
+    nhm_legacy = {
+		missionaries = 1
+    }
+    nhm_dynastic = {
+		global_unrest = -1
+    }
+    nhm_reforming = {
+        reform_progress_growth = 0.10
+    }
+    nhm_great = {
+        global_own_trade_power = 0.25
+		development_cost = -0.05
+    }
+    nhm_wars = {
+		core_creation = -0.15
+    }
+    nhm_island = {
+		auto_explore_adjacent_to_colony = yes
+    }
+    nhm_shipyards = {
+		global_ship_cost = -0.1
     }
 }

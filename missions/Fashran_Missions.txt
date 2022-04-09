@@ -1089,7 +1089,7 @@ fas_4 = {
 	}
 	
 	fas_open_the_holy_cave = {
-		icon = mission_asian_city
+		icon = fashros_mission_city
 		required_missions = {fas_conquer_the_heartland}
 		position = 6
 		trigger = {
@@ -1101,7 +1101,7 @@ fas_4 = {
 	}
 	
 	fas_the_fate_of_washoomism = {
-		icon = mission_asian_city
+		icon = fashros_mission_city
 		required_missions = {fas_open_the_holy_cave fas_a_new_tonxara}
 		position = 8
 		trigger = {
@@ -1200,7 +1200,7 @@ fas_5 = {
 	has_country_shield = yes
 
 	fas_protect_the_frontier = {
-		icon = mission_asian_city
+		icon = fashros_mission_city
 		required_missions = {}
 		trigger = {
 			always = no
@@ -1211,7 +1211,7 @@ fas_5 = {
 	}
 	
 	fas_humiliate_geopyopia = {
-		icon = mission_asian_city
+		icon = fashros_mission_city
 		required_missions = {fas_protect_the_frontier}
 		trigger = {
 			always = no
@@ -1222,7 +1222,7 @@ fas_5 = {
 	}
 
 	fas_seize_the_borderlands = {
-		icon = mission_asian_city
+		icon = fashros_mission_city
 		required_missions = {fas_humiliate_geopyopia}
 		trigger = {
 			always = no
@@ -1233,7 +1233,7 @@ fas_5 = {
 	}
 
 	fas_encroach_on_olopoka = {
-		icon = mission_asian_city
+		icon = fashros_mission_city
 		required_missions = {fas_seize_the_borderlands}
 		trigger = {
 			always = no
@@ -1244,7 +1244,7 @@ fas_5 = {
 	}
 
 	fas_conquer_the_heartland = {
-		icon = mission_asian_city
+		icon = fashros_mission_city
 		required_missions = {fas_encroach_on_olopoka}
 		trigger = {
 			always = no
@@ -1255,7 +1255,7 @@ fas_5 = {
 	}
 
 	fas_invade_the_south = {
-		icon = mission_asian_city
+		icon = fashros_mission_city
 		required_missions = {fas_conquer_the_heartland}
 		trigger = {
 			always = no
@@ -1266,7 +1266,7 @@ fas_5 = {
 	}
 
 	fas_a_new_tonxara = {
-		icon = mission_asian_city
+		icon = fashros_mission_city
 		required_missions = {fas_invade_the_south}
 		trigger = {
 			always = no

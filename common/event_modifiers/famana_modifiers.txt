@@ -544,3 +544,14 @@ del_delk_propestiy = {
 	production_efficiency = 0.15
 	infantry_cost = -0.15
 }
+
+pex_unity_modifier = {
+    global_autonomy = -0.05
+    tolerance_own = 1
+}
+
+pex_estali_dominion = {
+    harsh_treatment_cost = -0.33
+    stability_cost_modifier = -0.1
+    warscore_cost_vs_other_religion = -0.1
+}
