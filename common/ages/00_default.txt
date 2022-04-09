@@ -238,7 +238,10 @@ age_of_reformation = {
 	start = 290
 	
 	can_start = {
-		exists = NAF
+		custom_trigger_tooltip = {
+			tooltip = ECLIPSE_AGE_FLAG
+			has_global_flag	= eclipse_global_age_flag
+		}
 	}
 	
 	

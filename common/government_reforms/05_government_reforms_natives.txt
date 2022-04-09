@@ -51,6 +51,10 @@ native_chiefdom_reform = {
 	valid_for_nation_designer = yes
 	nation_designer_cost = 20
 
+	potential = {
+		NOT = { culture_group = Western_Estali }
+	}
+
 	modifiers = {
 		tribal_development_growth = 0.02
 	}
@@ -64,6 +68,10 @@ native_federation_reform = {
 	modifiers = {
 		global_manpower_modifier = 0.2
 	}
+
+	potential = {
+		NOT = { culture_group = Western_Estali }
+	}
 }
 
 native_clan_council_reform = {
@@ -75,6 +83,10 @@ native_clan_council_reform = {
 		diplomatic_upkeep = 1
 		diplomats = 1
 	}
+
+	potential = {
+		NOT = { culture_group = Western_Estali }
+	}
 }
 
 native_hereditary_reform = {
@@ -84,6 +96,10 @@ native_hereditary_reform = {
 	nation_designer_cost = 20
 	modifiers = {
 		stability_cost_modifier = -0.33
+	}
+
+	potential = {
+		NOT = { culture_group = Western_Estali }
 	}
 }
 
@@ -374,10 +390,7 @@ native_becomes_monarchy_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		NOT = { 
-			OR = { 
-				   culture_group = Naravami_C 
-				   culture_group = Western_Estali 
-				 }
+			culture_group = Naravami_C
 		}
 	}
 	trigger = {
@@ -402,10 +415,7 @@ native_becomes_republic_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		NOT = { 
-			OR = { 
-				   culture_group = Naravami_C 
-				   culture_group = Western_Estali 
-				 }
+			culture_group = Naravami_C
 		}
 	}
 	trigger = {
@@ -441,10 +451,7 @@ native_becomes_theocracy_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		NOT = { 
-			OR = { 
-				   culture_group = Naravami_C 
-				   culture_group = Western_Estali 
-				 }
+			culture_group = Naravami_C
 		}
 	}
 	trigger = {
@@ -468,11 +475,8 @@ native_becomes_horde_reform = {
 	icon = "horde_riding_highlighted"
 	allow_normal_conversion = yes
 	potential = {
-		NOT = { 
-			OR = { 
-				   culture_group = Naravami_C 
-				   culture_group = Western_Estali 
-				 }
+		NOT = {
+			culture_group = Naravami_C
 		}
 	}
 	trigger = {

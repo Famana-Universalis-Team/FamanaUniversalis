@@ -65,3 +65,15 @@ naravami_native_becomes_theocracy_reform = {
 	}
 	
 }
+west_estali_tribe_reform = {
+	icon = "native_martial_tradition_reform"
+	potential = { culture_group = Western_Estali }
+
+	valid_for_nation_designer = yes
+	nation_designer_cost = 20
+
+	modifiers = {
+		hostile_attrition = 1
+		reform_progress_growth = -0.5
+	}
+}

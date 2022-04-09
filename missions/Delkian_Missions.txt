@@ -17,7 +17,6 @@ delkia_1 = {
 		icon = promote_urbanization
 		required_missions = { }
 		provinces_to_highlight = {
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 			OR = {
 				province_id	= 5167
 				province_id = 5166
@@ -207,7 +206,10 @@ delkia_3 = {
 		
 		effect = {
 		    if = {
-				limit = { exists = ZEA }
+				limit = {
+					exists = ZEA
+					ZEA = { NOT = { total_development = 50 } }
+				}
 				vassalize = ZEA
 			}
 			unnamed_area_9 = {

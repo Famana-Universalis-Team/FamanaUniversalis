@@ -196,6 +196,7 @@ country_event = {
 		months = 1
 	}
 	immediate = {
+		set_global_flag	= eclipse_global_age_flag
 		every_country = {
 			limit = {
 				NOT = {

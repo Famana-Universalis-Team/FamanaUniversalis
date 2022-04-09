@@ -1389,7 +1389,7 @@ north_estali = {
 	}
 	gotzli = {
 		color = { 85 81 86 }
-		icon = 26
+		icon = 30
 		country = {
 			defensiveness = 0.10
 			stability_cost_modifier = -0.1

@@ -4,22 +4,7 @@ spriteTypes = {
 
 
 		spriteType = {
-		name = "mission_fashros_hands_praying"
-		texturefile = "gfx//interface//missions//famana_missions//mission_fashros_hands_praying.dds"
-	}
-	
-		spriteType = {
-		name = "mission_fashros_church"
-		texturefile = "gfx//interface//missions//famana_missions//mission_fashros_church.dds"
-	}
-	
-		spriteType = {
-		name = "fashros_assemble_an_army"
-		texturefile = "gfx//interface//missions//famana_missions//fashros_assemble_an_army.dds"
-	}
-	
-		spriteType = {
-		name = "fashros_wheels"
-		texturefile = "gfx//interface//missions//famana_missions//fashros_wheels.dds"
+		name = "fashros_mission_city"
+		texturefile = "gfx//interface//missions//fashros_mission_city.dds"
 	}
 }

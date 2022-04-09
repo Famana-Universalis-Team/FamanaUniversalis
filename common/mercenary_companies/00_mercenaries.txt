@@ -849,3 +849,25 @@ merc_kolya_duras = {
 		fire_damage = 0.10
 	}
 }
+
+# Untrar Battalion
+merc_untrar_battalion = {
+    regiments_per_development = 0.05
+    home_province = 6300 #Untrar
+	cavalry_weight = 0.2
+	cavalry_cap = 4
+	sprites = { westerngfx_sprite_pack }
+    trigger = {
+		any_owned_province = {
+			OR = {
+				region = apilanya_region
+				region = east_ordica_region
+				region = eastern_naravam_region
+			}
+		}
+	}
+	modifier = {
+		infantry_shock = 1
+		movement_speed = -0.20
+	}
+}

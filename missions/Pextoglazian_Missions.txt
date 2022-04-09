@@ -195,7 +195,7 @@ pex_6 = { #Post-disaster missions
     pex_sway_the_inner_circle = {
         icon = claim_the_borderlands
         required_missions = { pex_prevent_collapse }
-        position = 4
+        position = 5
         trigger = {
             5203 = {
                 NOT = {
@@ -244,6 +244,124 @@ pex_6 = { #Post-disaster missions
                 owned_by = PHL
                 owned_by = PTG
                 province_id = 5203
+            }
+        }
+    }
+
+    pex_integrate_the_walarans = {
+        icon = mission_unite_home_region
+        required_missions = { pex_sway_the_inner_circle }
+        position = 6
+        trigger = {
+            unnamed_pexto_8 = {
+				type = all
+				owned_by = ROOT
+			}
+            unnamed_pexto_5 = {
+				type = all
+				owned_by = ROOT
+			}
+            unnamed_pexto_9 = {
+				type = all
+				owned_by = ROOT
+			}
+        }
+        effect = {
+            vassalize = PCG
+            vassalize = PJS
+            vassalize = PPX
+            vassalize = PLY
+            add_country_modifier = {
+                duration = -1
+                name = pex_unity_modifier
+            }
+        }
+        provinces_to_highlight = {
+            OR = {
+                owned_by = PCG
+                owned_by = PJS
+                owned_by = PPX
+                owned_by = PLY
+            }
+        }
+    }
+
+    pex_the_northern_menace = {
+        icon = mission_teutonic_knights
+        required_missions = { pex_integrate_the_walarans }
+        position = 7
+        trigger = {
+            mrug_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+            usul_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+            celzion_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+        }
+        effect = {
+            unnamed_area_24 = { add_permanent_claim = ROOT }
+            unnamed_area_25 = { add_permanent_claim = ROOT }
+            abikuyra_area = { add_permanent_claim = ROOT }
+            nonter_area = { add_permanent_claim = ROOT }
+            unnamed_area_26 = { add_permanent_claim = ROOT }
+        }
+        provinces_to_highlight = {
+            NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			OR = {
+                area = mrug_area
+                area = usul_area
+                area = celzion_area
+            }
+        }
+    }
+
+    pex_defeat_ordica = {
+        icon = defeating_ordica
+        required_missions = { pex_the_northern_menace }
+        position = 8
+        trigger = {
+            unnamed_area_24 = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+            unnamed_area_25 = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+            abikuyra_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+            nonter_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+            unnamed_area_26 = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+        }
+        effect = {
+            add_mil_power = 250
+            add_country_modifier = {
+                duration = 9125
+                name = pex_estali_dominion
+            }
+        }
+        provinces_to_highlight = {
+            NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			OR = {
+                area = unnamed_area_24
+                area = unnamed_area_25
+                area = abikuyra_area
+                area = nonter_area
+                area = unnamed_area_26
             }
         }
     }
