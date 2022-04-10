@@ -1221,14 +1221,14 @@ guiTypes = {
 			{
 				name ="holy_site_icon_5"
 				spriteType = "GFX_icon_religion_small"
-				position = { x = 195 y = 296 }
+				position = { x = 35 y = 296 }
 				frame = 14
 #				scale = 0.75
 			}
 			
 			instantTextBoxType = {
 				name = "holy_site_name_5"
-				position = { x = 225 y = 301 }
+				position = { x = 65 y = 301 }
 				font = "vic_22"
 				borderSize = {x = 0 y = 0}
 				text = "Alexanderia"	

@@ -1383,7 +1383,9 @@ north_estali = {
 		province = {
 			local_missionary_strength = 0.02
 		}
-		
+
+		holy_sites = { 5725 6176 6189 6356 5709 }
+
 		heretic = { OGRACABA }
 	}
 	gotzli = {
