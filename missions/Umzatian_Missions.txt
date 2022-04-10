@@ -547,6 +547,20 @@ umz_3 = {
 				}
 			add_permanent_claim = ROOT
 			}
+			fes_viom_area = {
+			limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+			add_permanent_claim = ROOT
+			}
+			unnamed_area_14 = {
+			limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+			add_permanent_claim = ROOT
+			}
 			if = {   
 			     limit = { accepted_culture = Mirrisan }
 				 add_dip_power = 100
@@ -607,7 +621,7 @@ umz_3 = {
        
         trigger = {
 			unnamed_area_14 = {
-				type = all
+				limit = { is_empty = no }
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 			
@@ -700,7 +714,7 @@ umz_3 = {
 						duration = -1
 					}
 				}
-			}
+			}		
 		}	
 	
 	
