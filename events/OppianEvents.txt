@@ -696,6 +696,7 @@ country_event = {
 
 	trigger = {
 		tag = TCK
+		NOT = { has_country_modifier = umz_chaos }
 		UMZ = {
 		is_at_war = no
 		mission_completed = UMZ_sabotage
@@ -719,14 +720,8 @@ country_event = {
 	option = {
 		name = oppia.13.a
 		ai_chance = {
-			factor = 50
-			modifier = {
-				factor = 2
-				has_opinion = {
-				who = UMZ
-				value = -25
-				}
-			}
+			factor = 100
+			
 		}
 		UMZ = {
 			country_event = { 
@@ -741,14 +736,8 @@ country_event = {
 	option = {
 		name = oppia.13.b
 		ai_chance = {
-			factor = 50
-			modifier = {
-				factor = 2
-				has_opinion = {
-				who = UMZ
-				value = 75
-				}
-			}
+			factor = 0
+			
 		}
 		add_prestige = -5
 	}

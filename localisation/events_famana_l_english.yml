@@ -414,11 +414,49 @@
  FlavorKAP.1.d:0 "This is a desc!"
  FlavorKAP.1.a:0 "Loot Arrol for all it's worth!"
 
- #Umzatian Events
- umzatia.4.t:0 "The Quanexite Deluge"
+ 
 
  #Resteman Events
- restema.1.title:0 "Church Calls For End to Slavery"
- restema.1.desc:0 "Our priests call out for the centuries long practice of slavery to end in Restema. They claim that it stands in violation of lathvy morality and threaten to denounce the government over the issue. In addition, our adoption of Feniki culture has moved us closer to the Satryans and Oekbians, many of whom are still enslaved in parts of our country. The abolition of slavery would hurt the economy and upset local nobility, but could very well be the right decision long-term."
+ restema.1.t:0 "Church Calls For End to Slavery"
+ restema.1.d:0 "Our priests call out for the centuries long practice of slavery to end in Restema. They claim that it stands in violation of lathvy morality and threaten to denounce the government over the issue. In addition, our adoption of Feniki culture has moved us closer to the Satryans and Oekbians, many of whom are still enslaved in parts of our country. The abolition of slavery would hurt the economy and upset local nobility, but could very well be the right decision long-term."
  restema.1.a:0 "Ara spits on us! Let us free the slaves."
  restema.1.b:0 "Never!"
+ 
+ #Umzatian Events
+ umzatia.1.t:0 "The Partitions of The Crown Kingdom"
+ umzatia.1.d:0 "The Umzatians have destroyed The Crown Kingdom, even Quanex decided to secede taking the Crown of Emintas with them. If we entered and occupied the border areas of Kistu and Emasan, no one would be able to stop us." 
+ umzatia.1.a:0 "This is a great opportunity to strenghten our state."
+ umzatia.1.b:0 "Let's not get involved."
+ 
+ umzatia.2.t:0 "The Partitions of The Crown Kingdom"
+ umzatia.2.d:0 "The Umzatians have destroyed The Crown Kingdom, even Quanex decided to secede taking the Crown of Emintas with them. If we entered and occupied the border area of Zostin, no one would be able to stop us." 
+ umzatia.2.a:0 "This is a great opportunity to strenghten our state."
+ umzatia.2.b:0 "Let's not get involved."
+ 
+ umzatia.3.t:0 "The Partitions of The Crown Kingdom"
+ umzatia.3.d:0 "The Umzatians have destroyed The Crown Kingdom, even Quanex decided to secede taking the Crown of Emintas with them. If we entered and occupied the border area of Entru, no one would be able to stop us." 
+ umzatia.3.a:0 "This is a great opportunity to strenghten our state."
+ umzatia.3.b:0 "Let's not get involved."
+ 
+ umzatia.4.t:0 "The Quanexite Deluge"
+ umzatia.4.d:0 "Today the flood barriers of Quanex burst for seemingly no reason, flooding the harbour districts and lower parts of the palace. Unfortunately, that is where our dear King was staying. His excellency drowned among the havoc, first hit by a falling column. Meanwhile some state secrets were leaked to the people, and that is why we think that all this was orchestrated by enemies of the government or even the whole Crown Kingdom. It should come as no surprise that our lands have plunged into chaos the likes of which they have not seen since the end of the war with the Moxon. Umzatians seeing the state of our realm decided to march into Imagua in a what they call a peacekeeping mission, whether they will leave voluntarily is uncertain."
+ umzatia.4.a:0 "The Gods have left us!"
+ 
+ umzatia.5.t:0 "A Warning"
+ umzatia.5.d:0 "If Umzatia gains any advantage in this war, they will be able to force us to accept a peace deal that might mean the end of our rule in Oppia."
+ umzatia.5.a:0 "Quanex will not fall."
+ 
+ umzatia.6.t:0 "The Peace Deal"
+ umzatia.6.d:0 "idk" 
+ umzatia.6.a:0 "fail"
+ 
+ #Oppian events
+ oppia.13.t:0 "The Question of Imogua"
+ oppia.13.d:0 "The chaos in our realm has died down, but it seems that Umzatia doesn't want to return Imogua to it's rightful owners."
+ oppia.13.a:0 "Demand that they cede Imogua to us. The bastards were propably behind all this!"
+ oppia.13.b:0 "They can have it."
+ 
+ oppia.14.t:0 "Crown Kingdom's Delegation"
+ oppia.14.d:0 "A group of diplomats arrived in our capital, demanding that we "return the rightful Crown Kingdom lands of Imogua which we stole". This claim is clearly false and a product of the corrupt Quanexite elite, but perhaps we should agree and avoid angering them. 
+ oppia.14.a:0 "Imogua was obtained legitimately. We should keep it."
+ oppia.14.b:0 "They can have it."

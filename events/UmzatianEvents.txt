@@ -12,6 +12,7 @@ country_event = { #partition of TCK, not actually given to Umzatia (unless they 
 	}
     
     option = { #sure
+	name = "umzatia.1.a"
        5068 = {
 	   cede_province = ROOT
 	   }
@@ -20,7 +21,7 @@ country_event = { #partition of TCK, not actually given to Umzatia (unless they 
 	   }
     }
     option = { #no
-        
+       name = "umzatia.1.b" 
     }
 }
 country_event = { #partition of TCK, not actually given to Umzatia (unless they own the required province). ZOSTIN
@@ -35,13 +36,14 @@ country_event = { #partition of TCK, not actually given to Umzatia (unless they 
 	}
     
     option = { #sure
+	name = "umzatia.2.a"
        5067 = {
 	   cede_province = ROOT
 	   }
 	   
     }
     option = { #no
-        
+        name = "umzatia.2.a"
     }
 }
 country_event = { #partition of TCK, not actually given to Umzatia (unless they own the required province). ENTRU
@@ -56,13 +58,14 @@ country_event = { #partition of TCK, not actually given to Umzatia (unless they 
 	}
     
     option = { #sure
+	name = "umzatia.3.a"
        5207 = {
 	   cede_province = ROOT
 	   }
 	   
     }
     option = { #no
-        
+        name = "umzatia.3.a"
     }
 }
 country_event = { #TCK: what the hell just happened
@@ -76,7 +79,7 @@ country_event = { #TCK: what the hell just happened
     
    
     option = { #I'll think of something to go here
-        
+        name = "umzatia.4.a"
     }
 }
 country_event = { #Warning to the TCK that if they lose this war they will get screwed over
@@ -90,7 +93,7 @@ country_event = { #Warning to the TCK that if they lose this war they will get s
     
    
     option = { #I'll think of something to go here
-        
+        name = "umzatia.5.a"
     }
 }
 country_event = { #TCK: bad ending
@@ -104,6 +107,6 @@ country_event = { #TCK: bad ending
     
    
     option = { #I'll think of something to go here
-        
+         name = "umzatia.6.a"
     }
 }
