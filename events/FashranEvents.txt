@@ -396,15 +396,7 @@ country_event = { #Westward Expansion 2
                 change_religion = tonmo
                 change_culture = Khiman
             }
-            unnamed_area_38 = {
-                limit = {
-                    is_empty = yes
-                }
-                add_core = ROOT
-                cede_province = ROOT
-                change_religion = tonmo
-                change_culture = Khiman
-            }
+            
         }
     }
 }
