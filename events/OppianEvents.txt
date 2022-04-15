@@ -285,9 +285,7 @@ country_event = {
         5545 = {
             is_empty = yes
         }
-		5543= {
-            is_empty = yes
-        }
+		
     }
     mean_time_to_happen = {
         months = 50
@@ -297,16 +295,13 @@ country_event = {
         name = oppia.16.a
         goto = 5545
         ai_chance = { factor = 100 }
-        create_colony_mission_reward = { province = 5545 province = 5543  }
+        create_colony_mission_reward = { province = 5545  }
         hidden_effect = {
             5545 = {
                 change_culture = ROOT
                 change_religion = ROOT
             }
-			5543 = {
-                change_culture = ROOT
-                change_religion = ROOT
-            }
+			
         }
     }
     option = {
