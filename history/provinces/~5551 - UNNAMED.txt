@@ -4,12 +4,13 @@ discovered_by = west_gomic_tech_gr
 culture = Asetlan
 religion = animism
 hre = no
-base_tax = 1
+
+base_tax = 2
 base_production = 1
-base_manpower = 2
+base_manpower = 1
 native_size = 10
 native_ferocity = 1
 native_hostileness = 1
-capital = "Lubatim"
+capital = "UNNAMED"
 is_city = no
 extra_cost = 1

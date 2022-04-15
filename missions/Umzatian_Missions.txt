@@ -9,7 +9,6 @@ umz_1 = {
     has_country_shield = yes
 	UMZ_effasha = {
         icon = mission_sw_against_the_desert
-        generic = no  
 		position = 4
              
       
@@ -53,8 +52,7 @@ umz_1 = {
 		}
     }
 	UMZ_nutia = {
-        icon = mission_trade_company_region_abroad
-        generic = no  		
+        icon = mission_trade_company_region_abroad	
         position = 6  
       
         
@@ -127,7 +125,6 @@ umz_2 = {
     has_country_shield = yes
 	UMZ_sway_rial = {
         icon = mission_hanseatic_city          
-        generic = no    
              
       
         
@@ -190,7 +187,6 @@ umz_2 = {
     }
 	UMZ_strenghten = {
         icon = mission_egyptian_mamluk_soldier
-        generic = no    
 		position = 3
              
       
@@ -229,7 +225,6 @@ umz_2 = {
     }
 	UMZ_fazalep = {
         icon = mission_have_two_subjects
-        generic = no    
 		position = 4
              
       
@@ -281,7 +276,6 @@ umz_2 = {
     }
 	UMZ_south = {
         icon = mission_bedouins
-        generic = no   		
          position = 5    
       
         
@@ -302,17 +296,16 @@ umz_2 = {
     
        
         trigger = {
-		ponna_area = {
+			ponaa_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-        }
-		lyposh_area = {
+			lyposh_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-        }
-        owns_core_province = 5230
+        	owns_core_province = 5230
+		}
        
         effect = {
           
@@ -336,7 +329,6 @@ umz_2 = {
 			}
 		}
     }
-
 }   
 
 umz_3 = {
@@ -350,7 +342,6 @@ umz_3 = {
     has_country_shield = yes
 	UMZ_fleet = {
         icon =  mission_sea_battles      
-        generic = no    
              
       
         
@@ -380,7 +371,6 @@ umz_3 = {
     }
 	UMZ_kotzbal = {
         icon = mission_invade_island   
-        generic = no    
              
       
         
@@ -428,7 +418,6 @@ umz_3 = {
 	
 	UMZ_colony = {
         icon = mission_iberian_conquistador
-        generic = no    
              
       
         
@@ -457,35 +446,26 @@ umz_3 = {
        
         effect = {
 			unnamed_area_22 = {
-			limit = {
+				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
 				}
-			add_permanent_claim = ROOT
+				add_permanent_claim = ROOT
 			}
 			emzelom_area = {
-			limit = {
+				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
 				}
-			add_permanent_claim = ROOT
+				add_permanent_claim = ROOT
 			}
 			5257 = {
-			limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-			add_permanent_claim = ROOT
+				add_permanent_claim = ROOT
 			}
-       
-       }
-	
-	
-  
+		}
     }
 	UMZ_new = {
         icon = mission_crusade_for_varna
-        generic = no    
              
       
         
@@ -600,7 +580,6 @@ umz_3 = {
     }
 	UMZ_laglon = {
         icon = mission_great_wall
-        generic = no    
              
       
         
@@ -620,41 +599,39 @@ umz_3 = {
     
        
         trigger = {
-			unnamed_area_14 = {
-				limit = { is_empty = no }
-				country_or_non_sovereign_subject_holds = ROOT
+			owns_all_provinces = {
+				area = unnamed_area_14
+				NOT = {
+					is_empty = yes
+				}
 			}
-			
-		
         }
         
        
         effect = {
 			unnamed_area_14 = {
-			limit = { 
-				is_empty = yes
-			}
-			create_colony = 1000
-			cede_province = ROOT
-			add_core = ROOT
-			change_culture = ROOT
-			change_religion = ROOT
-			
+				limit = {
+					is_empty = yes
+				}
+				create_colony = 1000
+				cede_province = ROOT
+				add_core = ROOT
+				change_culture = ROOT
+				change_religion = ROOT
 			}
 			
 			west_feniki = {
-			limit = { 
-				is_empty = yes
-			}
-			create_colony = 1000
-			cede_province = ROOT
-			add_core = ROOT
-			change_culture = ROOT
-			change_religion = ROOT
-			
+				limit = { 
+					is_empty = yes
+				}
+				create_colony = 1000
+				cede_province = ROOT
+				add_core = ROOT
+				change_culture = ROOT
+				change_religion = ROOT
 			}
 			5020 = {
-				add_building = fort_18th
+				add_building = fort_15th
 			}
        
         }
@@ -664,7 +641,6 @@ umz_3 = {
     }
 	UMZ_infrastructure = {
         icon = mission_have_manufactories
-        generic = no  		
         position = 6    
       
         
@@ -722,7 +698,6 @@ umz_3 = {
     }
 	UMZ_reform = {
         icon = mission_empire
-        generic = no  		
         position = 6    
       
         
@@ -786,7 +761,6 @@ umz_4 = {
     has_country_shield = yes
 	UMZ_asetli = {
         icon = mission_early_game_buildings
-        generic = no   
 	    position = 2
              
       
@@ -833,7 +807,6 @@ umz_4 = {
 	}
 	UMZ_outer = {
         icon = mission_colonial
-        generic = no   
 	    
              
       
@@ -887,7 +860,6 @@ umz_4 = {
 	}
 	UMZ_eqiso = {
         icon = mission_landsknecht_soldier
-        generic = no    
          position = 5     
       
         
@@ -941,7 +913,6 @@ umz_4 = {
     }
 	UMZ_hasia = {
         icon = mission_teutonic_knights
-        generic = no    
         position = 6   
       
         
@@ -999,7 +970,6 @@ umz_5 = {
     has_country_shield = yes
 	UMZ_wealth = {
         icon =  mission_war_chest   
-        generic = no  
 	
              
       
@@ -1043,7 +1013,6 @@ umz_5 = {
     }
 	UMZ_sabotage = {
         icon =  mission_alliances  
-        generic = no    
         position = 3     
       
         
@@ -1092,7 +1061,6 @@ umz_5 = {
     }
 	UMZ_war = {
         icon = mission_cannons_firing
-        generic = no    
            
       
         
@@ -1136,7 +1104,6 @@ umz_5 = {
     }
 	UMZ_peace = {
         icon = mission_luther_theses
-        generic = no    
            
       
         
