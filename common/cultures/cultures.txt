@@ -1323,6 +1323,17 @@ Antiash = {
 			Mensh Selloni Haas Taqar Olar Ciukir "Ja'nny" 
         }
 	}
+	Antiari = {
+		male_names = {
+            Ashadir Kabir Abul Qayam Umea Hovakar Baoulis Uvushad Selamket Harjidwe
+        }
+        female_names = {
+            Kandar Oala Palana
+        }
+        dynasty_names = {
+			Mensh Selloni Haas Taqar Olar Ciukir "Ja'nny" 
+        }
+	}
 }
 
 #############################
@@ -1920,6 +1931,56 @@ Northwestern_Sakan = {
 		}
 		dynasty_names = {
 		Asetlar "Nitlal Lane" Nizesiz
+		}
+	}
+	
+
+}
+
+#############################
+Western_Great_Desert = {
+	Wiwiman = {
+		male_names = {      
+	    Yi Qub Qahi Dagahi Dugahi Igahi "Ri'Usabbi" Sibub Khafid Ammaqiq Dhanindi Yuh Umih Marur Mauk Mih Jakka Ajishaz Ajiwim Akrug 
+		}
+		female_names = {
+		Afl Sad Ghin Qahugua Uqar Ashutja Dhuk 
+		}
+		dynasty_names = {
+		Saaw Dhih Dihih Shimiu Kafl "Kuh Lubull"
+		}
+	}
+	Teshtelpan = {
+		male_names = {      
+		Yi Qub Qahi Dagahi Dugahi Igahi "Ri'Usabbi" Sibub Khafid Ammaqiq Dhanindi Yuh Umih Marur Mauk Mih Jakka Ajishaz Ajiwim Akrug 
+		}
+		female_names = {
+		Afl Sad Ghin Qahugua Uqar Ashutja Dhuk 
+		}
+		dynasty_names = {
+		Saaw Dhih Dihih Shimiu Kafl "Kuh Lubull"
+		}
+	}
+	Gidjifnoran = {
+		male_names = {      
+		Yi Qub Qahi Dagahi Dugahi Igahi "Ri'Usabbi" Sibub Khafid Ammaqiq Dhanindi Yuh Umih Marur Mauk Mih Jakka Ajishaz Ajiwim Akrug 
+		}
+		female_names = {
+		Afl Sad Ghin Qahugua Uqar Ashutja Dhuk 
+		}
+		dynasty_names = {
+		Saaw Dhih Dihih Shimiu Kafl "Kuh Lubull"
+		}
+	}
+	Amandari = {
+		male_names = {      
+		Yi Qub Qahi Dagahi Dugahi Igahi "Ri'Usabbi" Sibub Khafid Ammaqiq Dhanindi Yuh Umih Marur Mauk Mih Jakka Ajishaz Ajiwim Akrug 
+		}
+		female_names = {
+		Afl Sad Ghin Qahugua Uqar Ashutja Dhuk 
+		}
+		dynasty_names = {
+		Saaw Dhih Dihih Shimiu Kafl "Kuh Lubull"
 		}
 	}
 	
