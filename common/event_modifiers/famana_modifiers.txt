@@ -566,3 +566,8 @@ pex_estali_dominion = {
     stability_cost_modifier = -0.1
     warscore_cost_vs_other_religion = -0.1
 }
+
+del_punish_gadeans = {
+    global_unrest = -1
+    global_heathen_missionary_strength = 0.02
+}
