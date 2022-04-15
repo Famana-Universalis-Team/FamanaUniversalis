@@ -247,7 +247,9 @@ country_event = {
         name = oppia.15.a
         goto = 5551
         ai_chance = { factor = 100 }
-        create_colony_mission_reward = { province = 5551 province = 5547 province = 5546 }
+        create_colony_mission_reward = { province = 5551 }
+		create_colony_mission_reward = { province = 5547 }
+		create_colony_mission_reward = { province = 5546 }
         hidden_effect = {
             5551 = {
                 change_culture = ROOT
