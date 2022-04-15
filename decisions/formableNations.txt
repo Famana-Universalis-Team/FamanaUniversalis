@@ -625,7 +625,7 @@ country_decisions = {
 				value = 5
 				is_city = yes
 				OR = {
-					area = zne_area
+					area = heoki_area
 					area = unnamed_area_7
 					area = unnamed_area_8
 				}
@@ -668,6 +668,94 @@ country_decisions = {
 					NOT = { owned_by = ROOT }
 				}
 				add_permanent_claim = DES
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	ossor_nation = {
+		major = yes
+		potential = {
+			AND = {
+				culture = Ossori
+				NOT = { exists = OSS }
+				was_never_end_game_tag_trigger = yes
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 5105
+				province_id = 5106
+				province_id = 5109
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				is_city = no
+			}
+		}
+		allow = {
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			owns_core_province = 5105
+			owns_core_province = 5106
+			owns_core_province = 5109
+			capital_scope = {
+				is_core = ROOT
+			}
+			num_of_owned_provinces_with = {
+				value = 8
+				is_city = yes
+				OR = {
+					area = elorak_area
+					area = zne_area
+					area = mesdool_area
+				}
+			}
+		}
+		effect = {
+			restore_country_name = yes
+			change_tag = OSS
+			if = {
+				limit = {
+					AND = {
+						has_custom_ideas = no
+						NOT = {
+							has_idea_group = OSS_ideas
+						}
+					}
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
+			elorak_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = OSS
+			}
+			zne_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = OSS
+			}
+			mesdool_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = OSS
 			}
 			add_country_modifier = {
 				name = "centralization_modifier"
