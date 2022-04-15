@@ -215,6 +215,26 @@ spriteTypes = {
 		name = "GFX_dissolve_monasteries_icon"
 		texturefile = "gfx/interface/dissolve_monasteries_icon.dds"
 	}	
+				spriteType = {
+		name = "GFX_call_chiefs_icon"
+		texturefile = "gfx/interface/call_chiefs_icon.dds"
+	}	
+				spriteType = {
+		name = "GFX_recruit_warlord_icon"
+		texturefile = "gfx/interface/recruit_warlord_icon.dds"
+	}	
+				spriteType = {
+		name = "GFX_hold_war_ceremonies_icon"
+		texturefile = "gfx/interface/hold_war_ceremonies_icon.dds"
+	}	
+				spriteType = {
+		name = "GFX_spread_tonmo_icon"
+		texturefile = "gfx/interface/raise_horde_icon.dds"
+	}	
+				spriteType = {
+		name = "GFX_spread_tonmo_icon"
+		texturefile = "gfx/interface/raise_horde_icon.dds"
+	}	
 	
 				spriteType = {
 		name = "GFX_grant_monopoly_icon"
