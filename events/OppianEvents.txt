@@ -216,6 +216,106 @@ country_event = {
     }
 }
 
+# Expand into Asetli 1
+country_event = {
+    id = oppia.15
+    title = oppia.15.t
+    desc = oppia.15.d
+    picture = COLONIZATION_eventPicture
+    fire_only_once = yes
+
+    trigger = {
+        is_year = 225
+        tag = UMZ
+        owns_core_province = 5040
+        is_subject = no
+        5551 = {
+            is_empty = yes
+        }
+		5547= {
+            is_empty = yes
+        }
+		5546 = {
+            is_empty = yes
+        }
+    }
+    mean_time_to_happen = {
+        months = 50
+    }
+    
+    option = {
+        name = oppia.15.a
+        goto = 5551
+        ai_chance = { factor = 100 }
+        create_colony_mission_reward = { province = 5551 province = 5547 province = 5546 }
+        hidden_effect = {
+            5551 = {
+                change_culture = ROOT
+                change_religion = ROOT
+            }
+			5547 = {
+                change_culture = ROOT
+                change_religion = ROOT
+            }
+			5546 = {
+                change_culture = ROOT
+                change_religion = ROOT
+            }
+        }
+    }
+    option = {
+        name = oppia.15.b
+        ai_chance = { factor = 0 }
+        add_prestige = -10
+    }
+}
+# Expand into Asetli 2
+country_event = {
+    id = oppia.16
+    title = oppia.16.t
+    desc = oppia.16.d
+    picture = COLONIZATION_eventPicture
+    fire_only_once = yes
+
+    trigger = {
+        is_year = 275
+        tag = UMZ
+        owns_core_province = 5551
+        is_subject = no
+        5545 = {
+            is_empty = yes
+        }
+		5543= {
+            is_empty = yes
+        }
+    }
+    mean_time_to_happen = {
+        months = 50
+    }
+    
+    option = {
+        name = oppia.16.a
+        goto = 5545
+        ai_chance = { factor = 100 }
+        create_colony_mission_reward = { province = 5545 province = 5543  }
+        hidden_effect = {
+            5545 = {
+                change_culture = ROOT
+                change_religion = ROOT
+            }
+			5543 = {
+                change_culture = ROOT
+                change_religion = ROOT
+            }
+        }
+    }
+    option = {
+        name = oppia.16.b
+        ai_chance = { factor = 0 }
+        add_prestige = -10
+    }
+}
+
 #COR 1: Fasalep
 country_event = {
 	id = oppia.3
