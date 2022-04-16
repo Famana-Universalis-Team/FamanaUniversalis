@@ -2478,6 +2478,17 @@ country_decisions = {
 			set_capital = 5264
 			if = {
 				limit = {
+					AND = {
+						has_custom_ideas = no
+						NOT = {
+							has_idea_group = Mirrisan_ideas
+						}
+					}
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			if = {
+				limit = {
 					religion = lathvy
 				}
 				change_technology_group	= north_gomic_tech_gr
@@ -2500,6 +2511,13 @@ country_decisions = {
 					NOT = { owned_by = ROOT }
 				}
 				add_permanent_claim = MRR
+			}
+			every_province = {
+				limit = {
+					is_core	= ROOT
+					continent = antebar
+				}
+				remove_core = MRR
 			}
 			add_country_modifier = {
 				name = "centralization_modifier"
@@ -2998,7 +3016,7 @@ country_decisions = {
 				was_never_end_game_tag_trigger = yes
 				NOT = {
 				any_owned_province = {
-					continent = antebar
+						continent = antebar
 					}
 				}
 			    any_owned_province = {
@@ -3031,6 +3049,17 @@ country_decisions = {
 			restore_country_name = yes
 			change_tag = MRR
 			set_capital = 5264
+			if = {
+				limit = {
+					AND = {
+						has_custom_ideas = no
+						NOT = {
+							has_idea_group = Mirrisan_ideas
+						}
+					}
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
 			
 			change_technology_group	= north_gomic_tech_gr
 			change_unit_type = north_gomic_tech_gr

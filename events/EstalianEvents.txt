@@ -8,24 +8,24 @@ province_event = {
 
 	trigger = {
 		OR = {
-		exists = HSH
-		exists = HOF
+			exists = HSH
+			exists = HOF
 		}
 		NOT = {
 			owner = {
-			primary_culture = Yomtanian
+				primary_culture = Yomtanian
 			}
 		}
 		OR = {
-		region = west_estal_region
-		region = napora_region
-		region = west_ordica_region
-		area = area_149
-		area = area_148
-		area = area_136
-		area = area_105 
-		area = feyel_area
-		area = unnamed_area_14
+			region = west_estal_region
+			region = napora_region
+			region = west_ordica_region
+			area = area_149
+			area = area_148
+			area = area_136
+			area = area_105 
+			area = feyel_area
+			area = unnamed_area_14
 		}
 	}
 	
@@ -34,8 +34,10 @@ province_event = {
 	}
 
 	immediate = {
-		add_devastation = 25
-		save_event_target_as = prov_raided_yoms
+		hidden_effect = {
+			add_devastation = 25
+			save_event_target_as = prov_raided_yoms	
+		}
 	}
 	
 	option = {
