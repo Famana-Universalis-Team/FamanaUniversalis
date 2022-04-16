@@ -1433,12 +1433,12 @@ ROP_ideas = {
 
 LYP_ideas = {
 	start = {
+		global_heretic_missionary_strength = 0.02
 		diplomats = 1
-		core_creation = -0.15
 	}
 	
 	bonus = {
-		land_forcelimit_modifier = 0.10
+		legitimacy = 1
 	}	
 
 	trigger = {
@@ -1447,20 +1447,22 @@ LYP_ideas = {
 	free = yes
 	
 	lyp_reformation = {
-		global_missionary_strength = 0.01
+		tolerance_own = 2
+		prestige = 1
 	}
 	lyp_warriors = {
 		land_morale = 0.05
 		manpower_recovery_speed = 0.10
 	}
 	lyp_spies = {
-		spy_offence = 0.2
+		cavalry_power = 0.10
+		cavalry_cost = -0.20
 	}
 	lyp_path = {
-		tolerance_own = 2
+		diplomatic_upkeep = 2
 	}
 	lyp_loyalty = {
-		diplomatic_upkeep = 1
+		diplomatic_reputation = 1
 		liberty_desire_from_subject_development = -0.1
 	}
 	lyp_fort = {
