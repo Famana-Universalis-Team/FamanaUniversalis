@@ -783,7 +783,7 @@ umz_4 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 			development_in_provinces = {
-			value = 35
+			value = 30
 			area = asetli_area
 			}
 		
@@ -793,12 +793,12 @@ umz_4 = {
         effect = {
 			5545 = {
 			 change_trade_goods = spices
-			 add_center_of_trade_level = 1
+			 center_of_trade = 1
 			}
-			5543 = {
+			5551 = {
 			 change_trade_goods = spices 
 			}
-			5551 = { 
+			5546 = { 
 			 change_trade_goods = dyes
 			}
 			change_adm = 1

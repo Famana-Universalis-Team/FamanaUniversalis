@@ -567,7 +567,7 @@ fas_2 = {
 
 	fas_invade_the_hoxoi_coast = {
 		icon = crusader_fleet
-		required_missions = {fas_defeat_yabonia fas_pillage_kinvirel}
+		required_missions = {fas_pillage_kinvirel}
 		position = 9
 		trigger = {
 			owns_all_provinces = {
@@ -1146,6 +1146,7 @@ fas_4 = {
 	fas_seize_the_northern_shores = {
 		icon = mission_arabian_fort
 		required_missions = {fas_crush_kapolia}
+		position = 11
 		trigger = {
 			owns_all_provinces = {
 				region = emastalia_region
