@@ -127,9 +127,9 @@ country_event = {
                 change_religion = naravami
             }
             set_capital	= 6485
-	    RDU = { change_religion = Naravami
+	    RDU = { change_religion = naravami
 		    change_primary_culture = Rduma }
-	    KLV = { change_religion = Naravami
+	    KLV = { change_religion = naravami
 		    change_primary_culture = Rduma }
         }
         custom_tooltip = rdum_migrate_tooltip

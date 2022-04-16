@@ -355,8 +355,7 @@ umz_3 = {
     
        
         trigger = {
-		 navy_size_percentage = 0.75
-		
+		navy_size_percentage = 0.80
         }
         
        
@@ -1031,6 +1030,10 @@ umz_5 = {
 		value = 35
 		}
 		spymaster = 1
+		NOT = { 
+			alliance_with = TCK 
+			ruce = TCK 
+		}
         }
         
        
@@ -1078,7 +1081,10 @@ umz_5 = {
 		navy_size_percentage = 1
 		prestige = TCK
 	    legitimacy = TCK
-		NOT = { alliance_with = TCK }
+		NOT = {
+			alliance_with = TCK 
+			truce = TCK 
+		}
 		}
 		
         
