@@ -2712,7 +2712,7 @@ on_five_year_pulse = {
 						area = unnamed_area_14
 					}
 					NOT = { 
-					devastation = 10
+					has_country_modifier = yom_raided
 					}
 				}
 			}

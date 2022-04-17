@@ -31,13 +31,15 @@ country_event = {
 					area = feyel_area
 					area = unnamed_area_14
 					}
-					NOT = { 
-					devastation = 10
-					}
 				}
 				add_devastation = 15
 				save_event_target_as = prov_raided_yoms
 			}	
+			add_country_modifier = { 
+			name = yom_raided
+			hidden = yes
+			duration = 1825
+			}
 		}
 	}
 	
