@@ -1,4 +1,4 @@
-province_event = {
+country_event = {
 	id = estal.1
 	title = estal.1.t
 	desc = estal.1.d
@@ -8,15 +8,11 @@ province_event = {
 
 	trigger = {
 		OR = {
-			exists = HSH
-			exists = HOF
+		exists = HSH
+		exists = HOF
 		}
-		NOT = {
-			owner = {
-				primary_culture = Yomtanian
-			}
-		}
-		OR = {
+		any_owned_province = {
+			OR = {
 			region = west_estal_region
 			region = napora_region
 			region = west_ordica_region
@@ -26,6 +22,10 @@ province_event = {
 			area = area_105 
 			area = feyel_area
 			area = unnamed_area_14
+		    }	
+		}
+		NOT = {
+			primary_culture = Yomtanian
 		}
 	}
 	
@@ -35,23 +35,38 @@ province_event = {
 
 	immediate = {
 		hidden_effect = {
-			add_devastation = 25
-			save_event_target_as = prov_raided_yoms	
+			random_owned_province = { 
+				limit = {
+					OR = {
+					region = west_estal_region
+					region = napora_region
+					region = west_ordica_region
+					area = area_149
+					area = area_148
+					area = area_136
+					area = area_105 
+					area = feyel_area
+					area = unnamed_area_14
+					}
+				}
+				add_devastation = 25
+				save_event_target_as = prov_raided_yoms
+			}	
 		}
 	}
 	
 	option = {
 		name = "estal.1.a"
-		owner = {
 		add_years_of_income = -0.25
-		}
 		goto = prov_raided_yoms
 	}
 	option = {
 		name = "estal.1.b"
+		event_target:prov_raided_yoms = {
 		cancel_construction = yes
 		add_local_autonomy = 15
 		add_devastation = 25
+		}
 		goto = prov_raided_yoms
 	}
 	
