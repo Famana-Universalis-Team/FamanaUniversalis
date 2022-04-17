@@ -3,6 +3,7 @@ country_decisions = {
 	achievement_from_the_ashes = {
 		major = yes
 		potential = {
+			ironman = yes
 			OR = {
 				tag = MRS
 				tag = MOR
@@ -15,7 +16,6 @@ country_decisions = {
 			region = moria_region
 		}
 		allow = {
-			ironman = yes
 			was_tag = MRS
 			OR = {
 				tag = MOR
@@ -46,13 +46,13 @@ country_decisions = {
 	achievement_servant_of_delk = {
 		major = yes
 		potential = {
+			ironman = yes
 			OR = {
 				tag = DEL
 				was_tag = DEL
 			}
 		}
 		allow = {
-			ironman = yes
 			NOT = {
 				num_of_loans = 1
 			}
@@ -80,13 +80,13 @@ country_decisions = {
 	achievement_diaspora = {
 		major = yes
 		potential = {
+			ironman = yes
 			OR = {
 				tag = YTB
 				was_tag = YTB
 			}
 		}
 		allow = {
-			ironman = yes
 			num_of_owned_provinces_with = {
 				value = 20
 				culture	= Blastan
