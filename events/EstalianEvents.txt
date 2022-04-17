@@ -5,27 +5,10 @@ country_event = {
 	picture = VILLAGE_BURNING_eventPicture
 	
 	is_triggered_only = yes
-
+	
 	trigger = {
-		OR = {
-		exists = HSH
-		exists = HOF
-		}
-		any_owned_province = {
-			OR = {
-			region = west_estal_region
-			region = napora_region
-			region = west_ordica_region
-			area = area_149
-			area = area_148
-			area = area_136
-			area = area_105 
-			area = feyel_area
-			area = unnamed_area_14
-		    }	
-		}
 		NOT = {
-			primary_culture = Yomtanian
+			technology_group = antestal_yom_tech_gr
 		}
 	}
 	
@@ -48,8 +31,11 @@ country_event = {
 					area = feyel_area
 					area = unnamed_area_14
 					}
+					NOT = { 
+					devastation = 10
+					}
 				}
-				add_devastation = 25
+				add_devastation = 15
 				save_event_target_as = prov_raided_yoms
 			}	
 		}
@@ -65,7 +51,7 @@ country_event = {
 		event_target:prov_raided_yoms = {
 		cancel_construction = yes
 		add_local_autonomy = 15
-		add_devastation = 25
+		add_devastation = 10
 		}
 		goto = prov_raided_yoms
 	}
