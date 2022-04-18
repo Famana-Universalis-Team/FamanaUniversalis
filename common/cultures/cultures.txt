@@ -281,7 +281,7 @@ Pextoglazian = {
 }
 
 ############################
-Onobyan = {
+Fashranan = {
 	Onobyan = {
 		male_names = {
             Tonko 
@@ -293,6 +293,101 @@ Onobyan = {
 			Onobi
         }
 	}
+	Rovassi = {
+		male_names = {
+            Tonko 
+        }
+        female_names = {
+            Fuet
+        }
+        dynasty_names = {
+			Onobi
+        }
+	}
+	Icladeni = {
+		male_names = {
+            Tonko 
+        }
+        female_names = {
+            Fuet
+        }
+        dynasty_names = {
+			Onobi
+        }
+	}
+	Fashli = {
+		male_names = {
+            Tonko 
+        }
+        female_names = {
+            Fuet
+        }
+        dynasty_names = {
+			Onobi
+        }
+	}
+}
+############################
+Colbib = {
+	Bhilisan = {
+		male_names = {
+            Bhill
+        }
+        female_names = {
+            Bhillary
+        }
+        dynasty_names = {
+			Blith
+        }
+	}
+	Nungec = {  #I made it up 
+		male_names = {
+            Bhill
+        }
+        female_names = {
+            Bhillary
+        }
+        dynasty_names = {
+			Blith
+        }
+	}
+	Shoncos = { 
+		male_names = {
+            Bhill
+        }
+        female_names = {
+            Bhillary
+        }
+        dynasty_names = {
+			Blith
+        }
+	}
+	Blunshunsi = { 
+		male_names = {
+            Bhill
+        }
+        female_names = {
+            Bhillary
+        }
+        dynasty_names = {
+			Blith
+        }
+	}
+}
+############################
+Qubaric = {
+	Qubaran = {
+		male_names = {
+            Melkko
+        }
+        female_names = {
+            Irruz
+        }
+        dynasty_names = {
+			Pelkko
+        }
+	}
+	
 }
 
 #############################
@@ -821,6 +916,17 @@ Maldik = {
         }
 	}
 	Paldik = {
+		male_names = {
+            Odrig Brebar Odlac Ozgik Nabam Nolmo Natarda Tarda Muno Gahi Oyud Gedat Aport Kanda Nobo Amart Anuzum
+        }
+        female_names = {
+            Beroro Nai Mida Uge Imia Gilnia Uaizbia Kaiamau
+        }
+        dynasty_names = {
+			Mar Moyai Kemay Kasi Magya Komur Dilo Kayti Gag Mafnor Tomu Kamar Ufpau
+        }
+	}
+	Binnativan = {
 		male_names = {
             Odrig Brebar Odlac Ozgik Nabam Nolmo Natarda Tarda Muno Gahi Oyud Gedat Aport Kanda Nobo Amart Anuzum
         }
@@ -1680,6 +1786,17 @@ Lukscho_Brulic = {
 			Lukul "Ve Oiko" "Ve Thaon" Byuv Anekssys Eyhra 
         }
 	}
+	Malogian = {
+		male_names = {
+            Cerkieni Thouus Gasroon Ursoo Foranrt Irusuas Hozendwhi Palelpanetl Chyshyus Rusraimel Umalminothus Arseyagien
+        }
+        female_names = {
+            Ovvrona Agmita Joo Maul Ghenepes Anma 
+        }
+        dynasty_names = {
+			Lukul "Ve Oiko" "Ve Thaon" Byuv Anekssys Eyhra 
+        }
+	}
 	Brulan = {
 		male_names = {
 			Yars Foro Mingta Pork "Be'ylos" "Sor'lur" Krym
@@ -1985,4 +2102,76 @@ Western_Great_Desert = {
 	}
 	
 
+}
+#############################
+Central_Great_Desert = {        
+	Caxt = {
+		male_names = {      
+	    Xas 
+		}
+		female_names = {
+		Mushirg
+		}
+		dynasty_names = {
+		Zmangemba
+		}
+	}
+	Gatr = {
+		male_names = {      
+	    Hiyst
+		}
+		female_names = {
+		Asqga
+		}
+		dynasty_names = {
+		Janqonat
+		}
+	}
+	Totokari = {
+		male_names = {      
+	    Hiyst
+		}
+		female_names = {
+		Asqga
+		}
+		dynasty_names = {
+		Janqonat
+		}
+	}
+	Eleanan = {
+		male_names = {      
+	    Hiyst
+		}
+		female_names = {
+		Asqga
+		}
+		dynasty_names = {
+		Janqonat
+		}
+	}
+}
+#############################
+Eastern_Great_Desert = {
+	Ayyuntud = {
+		male_names = {      
+	    Hutta
+		}
+		female_names = {
+		Qih
+		}
+		dynasty_names = {
+		Kamlu
+		}
+	}
+	Ta_Gha = {
+		male_names = {      
+	    Hutta
+		}
+		female_names = {
+		Qih
+		}
+		dynasty_names = {
+		Kamlu
+		}
+	}
 }
