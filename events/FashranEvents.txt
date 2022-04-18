@@ -710,3 +710,95 @@ country_event = { #Southward Expansion (NOT MISSION)
         }
     }
 }
+country_event = { #Emtik Rights
+    id = fashros.8
+    title = fashros.8.t
+    desc = fashros.8.d
+    picture = INVENTION_eventPicture
+
+    trigger = {
+		TAG = FAS
+		5692 = {
+		owned_by = FAS
+		religion = va
+		culture = Emtik
+		}
+		5691 = {
+		owned_by = FAS
+		religion = va
+		culture = Emtik
+		}
+	
+	}
+
+    option = { #give them rights
+        name = fashros.8.a
+        ai_chance = {
+            factor = 1
+        }
+		5692 = {
+			add_province_modifier = { 
+				name = emtik_rights
+				duration = -1  
+			}
+		}
+		5691 = {
+			add_province_modifier = { 
+				name = emtik_rights
+				duration = -1  
+			}
+		}
+		add_country_modifier = { 
+			name = fas_emtik_rights
+			duration = -1  
+		
+        }   
+		add_accepted_culture = Emtik
+		set_global_flag = after_emtik_rights
+    }
+    option = { #no
+        name = fashros.8.b
+        ai_chance = {
+            factor = 0
+        }
+		add_horde_unity = 25
+       
+    }
+}
+
+country_event = { #Emtik provs lost
+    id = fashros.9
+    title = fashros.9.t
+    desc = fashros.9.d
+    picture = INVENTION_eventPicture
+	hidden = yes
+    trigger = {
+		has_global_flag = after_emtik_rights
+		NOT = {
+			5692 = {
+				OR = {
+					owned_by = FAS
+					owned_by = NHM
+				}
+			}
+			5691 = {
+				OR = {
+					owned_by = FAS
+					owned_by = NHM
+				}
+			}
+		}
+		owns = 5692
+		owns = 5691
+	}
+
+    option = { 
+        name = fashros.9.a
+		5692 = { 
+			remove_province_modifier = emtik_rights 
+		}
+		5691 = { 	
+			remove_province_modifier = emtik_rights 
+		}
+    }
+}
