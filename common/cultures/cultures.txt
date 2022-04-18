@@ -281,7 +281,7 @@ Pextoglazian = {
 }
 
 ############################
-Onobyan = {
+Fashranan = {
 	Onobyan = {
 		male_names = {
             Tonko 
@@ -293,6 +293,101 @@ Onobyan = {
 			Onobi
         }
 	}
+	Rovassi = {
+		male_names = {
+            Tonko 
+        }
+        female_names = {
+            Fuet
+        }
+        dynasty_names = {
+			Onobi
+        }
+	}
+	Icladeni = {
+		male_names = {
+            Tonko 
+        }
+        female_names = {
+            Fuet
+        }
+        dynasty_names = {
+			Onobi
+        }
+	}
+	Fashli = {
+		male_names = {
+            Tonko 
+        }
+        female_names = {
+            Fuet
+        }
+        dynasty_names = {
+			Onobi
+        }
+	}
+}
+############################
+Colbib = {
+	Bhilisan = {
+		male_names = {
+            Bhill
+        }
+        female_names = {
+            Bhillary
+        }
+        dynasty_names = {
+			Blith
+        }
+	}
+	Nungec = {  #I made it up 
+		male_names = {
+            Bhill
+        }
+        female_names = {
+            Bhillary
+        }
+        dynasty_names = {
+			Blith
+        }
+	}
+	Shoncos = { 
+		male_names = {
+            Bhill
+        }
+        female_names = {
+            Bhillary
+        }
+        dynasty_names = {
+			Blith
+        }
+	}
+	Blunshunsi = { 
+		male_names = {
+            Bhill
+        }
+        female_names = {
+            Bhillary
+        }
+        dynasty_names = {
+			Blith
+        }
+	}
+}
+############################
+Qubaric = {
+	Qubaran = {
+		male_names = {
+            Melkko
+        }
+        female_names = {
+            Irruz
+        }
+        dynasty_names = {
+			Pelkko
+        }
+	}
+	
 }
 
 #############################
@@ -821,6 +916,17 @@ Maldik = {
         }
 	}
 	Paldik = {
+		male_names = {
+            Odrig Brebar Odlac Ozgik Nabam Nolmo Natarda Tarda Muno Gahi Oyud Gedat Aport Kanda Nobo Amart Anuzum
+        }
+        female_names = {
+            Beroro Nai Mida Uge Imia Gilnia Uaizbia Kaiamau
+        }
+        dynasty_names = {
+			Mar Moyai Kemay Kasi Magya Komur Dilo Kayti Gag Mafnor Tomu Kamar Ufpau
+        }
+	}
+	Binnativan = {
 		male_names = {
             Odrig Brebar Odlac Ozgik Nabam Nolmo Natarda Tarda Muno Gahi Oyud Gedat Aport Kanda Nobo Amart Anuzum
         }
