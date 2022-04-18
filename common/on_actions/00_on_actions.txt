@@ -3833,15 +3833,6 @@ on_province_religion_converted = {
 		add_core = FSB
 		remove_core = BLK
 	}
-	if = {
-		limit = {
-			culture = Emtik
-			owner = {
-				religion = tonmo
-			}
-		}
-		change_culture = Khiman
-	}
 	else_if = {
 		limit = {
 			OR = {
