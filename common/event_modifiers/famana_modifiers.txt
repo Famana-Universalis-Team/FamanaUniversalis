@@ -221,8 +221,10 @@ rdum_dev = {
 }
 
 geop_kneecapping = {
-    stability_cost_to_declare_war = 3
+    stability_cost_to_declare_war = 5
     spy_offence = -1.0
+    diplomatic_upkeep = -4
+    diplomatic_reputation = -100
 }
 
 inner_turmoil_25 = {
