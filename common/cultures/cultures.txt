@@ -1786,6 +1786,17 @@ Lukscho_Brulic = {
 			Lukul "Ve Oiko" "Ve Thaon" Byuv Anekssys Eyhra 
         }
 	}
+	Malogian = {
+		male_names = {
+            Cerkieni Thouus Gasroon Ursoo Foranrt Irusuas Hozendwhi Palelpanetl Chyshyus Rusraimel Umalminothus Arseyagien
+        }
+        female_names = {
+            Ovvrona Agmita Joo Maul Ghenepes Anma 
+        }
+        dynasty_names = {
+			Lukul "Ve Oiko" "Ve Thaon" Byuv Anekssys Eyhra 
+        }
+	}
 	Brulan = {
 		male_names = {
 			Yars Foro Mingta Pork "Be'ylos" "Sor'lur" Krym
@@ -2091,4 +2102,65 @@ Western_Great_Desert = {
 	}
 	
 
+}
+#############################
+Central_Great_Desert = {        #there were literally no native countries or anything that could pass as native
+	Caxt = {
+		male_names = {      
+	    Xas 
+		}
+		female_names = {
+		Mushirg
+		}
+		dynasty_names = {
+		Zmangemba
+		}
+	}
+	Gatr = {
+		male_names = {      
+	    Hiyst
+		}
+		female_names = {
+		Asqga
+		}
+		dynasty_names = {
+		Janqonat
+		}
+	}
+	Maganyel = {
+		male_names = {      
+	    Hiyst
+		}
+		female_names = {
+		Asqga
+		}
+		dynasty_names = {
+		Janqonat
+		}
+	}
+}
+#############################
+Eastern_Great_Desert = {
+	Ayyuntud = {
+		male_names = {      
+	    Hutta
+		}
+		female_names = {
+		Qih
+		}
+		dynasty_names = {
+		Kamlu
+		}
+	}
+	Ta_Gha = {
+		male_names = {      
+	    Hutta
+		}
+		female_names = {
+		Qih
+		}
+		dynasty_names = {
+		Kamlu
+		}
+	}
 }
