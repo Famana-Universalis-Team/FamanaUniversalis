@@ -275,13 +275,15 @@ pex_6 = { #Post-disaster missions
                 duration = -1
                 name = pex_unity_modifier
             }
+            mrug_area = { add_permanent_claim = ROOT }
+            usul_area = { add_permanent_claim = ROOT }
+            celzion_area = { add_permanent_claim = ROOT }
         }
         provinces_to_highlight = {
             OR = {
-                owned_by = PCG
-                owned_by = PJS
-                owned_by = PPX
-                owned_by = PLY
+                area = unnamed_pexto_8
+                area = unnamed_pexto_5
+                area = unnamed_pexto_9
             }
         }
     }
