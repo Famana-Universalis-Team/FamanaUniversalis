@@ -261,7 +261,7 @@ country_event = { #Nozumol
     option = { #Change cultures
         name = fashros.2.a
         ai_chance = {
-            factor = 10
+            factor = 9
         }
         custom_tooltip = nozumol_culture_tooltip
         hidden_effect = {
@@ -715,6 +715,7 @@ country_event = { #Emtik Rights
     title = fashros.8.t
     desc = fashros.8.d
     picture = INVENTION_eventPicture
+    fire_only_once = yes
 
     trigger = {
 		TAG = FAS
@@ -772,6 +773,7 @@ country_event = { #Emtik provs lost
     desc = fashros.9.d
     picture = INVENTION_eventPicture
 	hidden = yes
+	fire_only_once = yes
     trigger = {
 		has_global_flag = after_emtik_rights
 		NOT = {
