@@ -3844,6 +3844,15 @@ on_province_religion_converted = {
 	}
 	if = {
 		limit = {
+			culture = Onobyan
+			owner = {
+				religion = tonmo
+			}
+		}
+		change_culture = Fashli
+	}
+	if = {
+		limit = {
 			superregion = ga_xal_superregion
 			religion = lathvy
 		}
