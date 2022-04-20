@@ -3307,7 +3307,7 @@ guiTypes = {
 			name = "blessing_icon"
 			scale = 0.60
 			spriteType = "GFX_idea_unknown"
-			position = { x= 0 y = 0 }
+			position = { x = 150 y = 57 }
 			Orientation = "UPPER_LEFT"
 		}
 	}
