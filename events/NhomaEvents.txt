@@ -62,7 +62,10 @@ country_event = {
    option = {
         name = nhoma.2.a
         goto = 5909
-        create_colony_mission_reward = { province = 5909 }
+        5909 = {
+	cede_province = IRF
+	add_core = IRF
+	}
         hidden_effect = {
             5909 = {
                 add_core = EYK
