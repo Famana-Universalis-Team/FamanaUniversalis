@@ -40,6 +40,7 @@ country_event = {
             }
         }
         ALT = { set_country_flag = nahallaian_coup }
+        set_country_flag = is_at_coup
     }
 
     option = {
@@ -186,5 +187,36 @@ country_event = {
         ai_chance = { factor = 1 }
         add_prestige = -25
         add_stability = -1
+    }
+}
+
+country_event = {
+    id = nhl.5
+    title = nhl.5.t
+    desc = nhl.5.d
+    picture = LIBERUM_VETO_eventPicture
+    fire_only_once = yes
+	mean_time_to_happen = {
+		months = 3
+	}
+	trigger = {
+        has_country_flag = is_at_coup
+        tag = NHL
+        NOT = {
+            exists = ALT
+            exists = TOL
+        }
+        every_province = {
+            limit = {
+                culture = Tolan
+            }
+            owned_by = NHL
+            change_culture = Nahallaian
+        }
+	}
+
+    option = {
+		name = nhl.5.a
+        ai_chance = { factor = 1 }
     }
 }
