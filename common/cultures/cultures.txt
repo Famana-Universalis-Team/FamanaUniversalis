@@ -340,7 +340,7 @@ Colbib = {
 			Blith
         }
 	}
-	Nungec = {  #I made it up 
+	Nungec = {  #I made it all up 
 		male_names = {
             Bhill
         }
@@ -373,6 +373,39 @@ Colbib = {
 			Blith
         }
 	}
+	Genxecu = { 
+		male_names = {
+            Bhill
+        }
+        female_names = {
+            Bhillary
+        }
+        dynasty_names = {
+			Blith
+        }
+	}
+	Zaj = { 
+		male_names = {
+            Bhill
+        }
+        female_names = {
+            Bhillary
+        }
+        dynasty_names = {
+			Blith
+        }
+	}
+	Cosmon = { 
+		male_names = {
+            Bhill
+        }
+        female_names = {
+            Bhillary
+        }
+        dynasty_names = {
+			Blith
+        }
+	}
 }
 ############################
 Qubaric = {
@@ -387,7 +420,17 @@ Qubaric = {
 			Pelkko
         }
 	}
-	
+	Barits = {
+		male_names = {      
+	    Barometer
+		}
+		female_names = {
+		Bromine
+		}
+		dynasty_names = {
+		Brood
+		}
+	}
 }
 
 #############################
@@ -927,6 +970,18 @@ Maldik = {
         }
 	}
 	Binnativan = {
+		male_names = {
+            Odrig Brebar Odlac Ozgik Nabam Nolmo Natarda Tarda Muno Gahi Oyud Gedat Aport Kanda Nobo Amart Anuzum
+        }
+        female_names = {
+            Beroro Nai Mida Uge Imia Gilnia Uaizbia Kaiamau
+        }
+        dynasty_names = {
+			Mar Moyai Kemay Kasi Magya Komur Dilo Kayti Gag Mafnor Tomu Kamar Ufpau
+        }
+	}
+	Ora_Maldan = {
+		primary = ORA
 		male_names = {
             Odrig Brebar Odlac Ozgik Nabam Nolmo Natarda Tarda Muno Gahi Oyud Gedat Aport Kanda Nobo Amart Anuzum
         }
@@ -1808,6 +1863,17 @@ Lukscho_Brulic = {
 			"kre Tomos" "kre Ylsar" "kre Poror" "kre Derl" "kre Yara"
 		}
 	}
+	Karikian = {
+		male_names = {
+			Yars Foro Mingta Pork "Be'ylos" "Sor'lur" Krym
+		}
+		female_names = {
+			Toko Borlun Rim "Fur'qor" "Loo'tor"
+		}
+		dynasty_names = {
+			"kre Tomos" "kre Ylsar" "kre Poror" "kre Derl" "kre Yara"
+		}
+	}
 }
 
 ############################ 
@@ -2149,6 +2215,17 @@ Central_Great_Desert = {
 		Janqonat
 		}
 	}
+	Horusakan = {
+		male_names = {      
+	    Hiyst
+		}
+		female_names = {
+		Asqga
+		}
+		dynasty_names = {
+		Janqonat
+		}
+	}
 }
 #############################
 Eastern_Great_Desert = {
@@ -2172,6 +2249,20 @@ Eastern_Great_Desert = {
 		}
 		dynasty_names = {
 		Kamlu
+		}
+	}
+}
+#############################
+Gacin_g = {
+	Old_Gacin = {
+		male_names = {      
+	    Rikshish
+		}
+		female_names = {
+		Deemon
+		}
+		dynasty_names = {
+		Surrsy
 		}
 	}
 }

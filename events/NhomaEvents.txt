@@ -1,0 +1,75 @@
+# Irfa Colonies 1
+country_event = {
+    id = nhoma.1
+    title = = nhoma.1.t
+    desc = nhoma.1.d
+    picture = COLONIZATION_eventPicture
+    fire_only_once = yes
+
+    trigger = {
+        is_year = 320
+        tag = IRF
+        owns_core_province = 5889
+        5910 = {
+            is_empty = yes
+        }
+		5911 = {
+            is_empty = yes
+        }
+    }
+    mean_time_to_happen = {
+        months = 12
+    }
+   #it will discover the onobya/fashrana region when it exists
+   
+   option = {
+        name = nhoma.1.a
+        goto = 5910
+        create_colony_mission_reward = { province = 5910 }
+		create_colony_mission_reward = { province = 5911 }
+        hidden_effect = {
+            5910 = {
+                change_culture = ROOT
+                change_religion = ROOT
+            }
+			5911 = {
+                change_culture = ROOT
+                change_religion = ROOT
+            }
+        }
+    }
+}
+# Irfa Colonies 2
+country_event = {
+    id = nhoma.2
+    title = = nhoma.2.t
+    desc = nhoma.2.d
+    picture = COLONIZATION_eventPicture
+    fire_only_once = yes
+
+    trigger = {
+        is_year = 370
+		tag = IRF
+        #at least one province in the Onobya/Fashrana region?
+        5909 = {
+            is_empty = yes
+        }
+    }
+    mean_time_to_happen = {
+        months = 12
+    }
+   
+   option = {
+        name = nhoma.2.a
+        goto = 5909
+        5909 = {
+	cede_province = IRF
+	add_core = IRF
+	}
+        hidden_effect = {
+            5909 = {
+                add_core = EYK
+            }
+        }
+    }
+}

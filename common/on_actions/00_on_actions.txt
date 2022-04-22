@@ -3842,6 +3842,22 @@ on_province_religion_converted = {
 		}
 		change_culture = Khiman
 	}
+	if = {
+		limit = {
+			culture = Onobyan
+			owner = {
+				religion = tonmo
+			}
+		}
+		change_culture = Fashli
+	}
+	if = {
+		limit = {
+			superregion = ga_xal_superregion
+			religion = lathvy
+		}
+		set_province_flag = ga_xal_lathvy_reconverted
+	}
 	else_if = {
 		limit = {
 			OR = {

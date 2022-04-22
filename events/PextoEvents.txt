@@ -453,7 +453,7 @@ country_event = { #bye bye pexto
     desc = pexto.14.d
     picture = LAND_MILITARY_eventPicture
 	mean_time_to_happen = {
-		years = 7
+		months = 84
 	}
 	trigger = {
 		AND = {
