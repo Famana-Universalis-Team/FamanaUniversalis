@@ -206,6 +206,11 @@ country_event = {
             exists = ALT
             exists = TOL
         }
+	}
+
+    option = {
+		name = nhl.5.a
+        ai_chance = { factor = 1 }
         every_province = {
             limit = {
                 culture = Tolan
@@ -213,10 +218,5 @@ country_event = {
             owned_by = NHL
             change_culture = Nahallaian
         }
-	}
-
-    option = {
-		name = nhl.5.a
-        ai_chance = { factor = 1 }
     }
 }
