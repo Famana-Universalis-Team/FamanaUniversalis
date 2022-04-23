@@ -904,4 +904,87 @@ country_decisions = {
 			factor = 1
 		}
 	}
+
+	conquer_eastern_dreklos = {
+		potential = {
+			dreklos_area = {
+				is_empty = yes
+			}
+			dip_tech = 1
+			owns_core_province = 5664
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = dreklos_area
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				is_city = no
+			}
+		}
+		allow = {
+			dip_tech = 4
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			mil_power = 50
+		}
+		effect = {
+			dreklos_area = {
+				limit = {
+					is_empty = yes
+				}
+				cede_province = ROOT
+				change_religion	= ROOT
+				ROOT = {
+					add_mil_power = -50
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	conquer_eastern_poto_haroo = {
+		potential = {
+			poto_haroo_area = {
+				is_empty = yes
+			}
+			dip_tech = 1
+			OR = {
+				owns_core_province = 6186
+				owns_core_province = 6187
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = poto_haroo_area
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				is_city = no
+			}
+		}
+		allow = {
+			dip_tech = 4
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			mil_power = 50
+		}
+		effect = {
+			poto_haroo_area = {
+				limit = {
+					is_empty = yes
+				}
+				cede_province = ROOT
+				change_religion	= ROOT
+				ROOT = {
+					add_mil_power = -50
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
 }
