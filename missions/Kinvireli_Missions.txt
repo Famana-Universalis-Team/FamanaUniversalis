@@ -643,7 +643,10 @@ kin_4 = {
     			            }
                         }
                     }
-                    emastalia_region = {
+                    bohora_area = {
+                        add_permanent_claim = ROOT
+                    }
+                    kachik_area = {
                         add_permanent_claim = ROOT
                     }
                 }

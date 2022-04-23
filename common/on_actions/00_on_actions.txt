@@ -2693,33 +2693,6 @@ on_four_year_pulse_4 = {
 }
 
 on_five_year_pulse = {
-	#if = {
-		#limit = {
-			#OR = {
-				#exists = HSH
-				#exists = HOF
-			#}
-			#any_owned_province = {
-				#OR = {
-					#region = west_estal_region
-					#region = napora_region
-					#region = west_ordica_region
-					#area = area_149
-					#area = area_148
-					#area = area_136
-					#area = area_105 
-					#area = feyel_area
-					#area = unnamed_area_14
-				#}
-				#NOT = { 
-				#has_country_modifier = yom_raided
-				#}
-			#}
-		#}
-		#country_event = {
-		#id = estal.1
-		#}
-	#}
 	random_events = {
 
 		# Innovativeness Events

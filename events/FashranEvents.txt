@@ -796,11 +796,41 @@ country_event = { #Emtik provs lost
 
     option = { 
         name = fashros.9.a
+        ai_chance = {
+            factor = 1
+        }
 		5692 = { 
 			remove_province_modifier = emtik_rights 
 		}
 		5691 = { 	
 			remove_province_modifier = emtik_rights 
 		}
+    }
+}
+
+country_event = {
+    id = fashros.10
+    title = fashros.10.t
+    desc = fashros.10.d
+    picture = MONGOL_BANNERS_eventPicture
+    hidden = yes
+    fire_only_once = yes
+    trigger = {
+        owns_core_province = 5862
+        is_year = 218
+        ai = yes
+    }
+    mean_time_to_happen = {
+        months = 3
+    }
+    option = {
+        name = fashros.10.a
+        ai_chance = {
+            factor = 1
+        }
+        declare_war_with_cb = {
+            who = NOZ
+            casus_belli = cb_horde_vs_civ
+        }
     }
 }

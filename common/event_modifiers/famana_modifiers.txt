@@ -574,13 +574,14 @@ del_punish_gadeans = {
     global_heathen_missionary_strength = 0.02
 }
 
-yom_raided = { }
+yom_raided_timer = {
+}
 
 emtik_rights = {
-local_missionary_strength = -0.1
-local_unrest = -2
+    local_missionary_strength = -0.1
+    local_unrest = -2
 }
 
 fas_emtik_rights = {
-idea_cost = -0.1
+    idea_cost = -0.1
 }
