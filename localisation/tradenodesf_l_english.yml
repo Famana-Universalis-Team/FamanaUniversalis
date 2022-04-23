@@ -1,4 +1,5 @@
 ﻿l_english:
+ #Nodes
  umzat:0 "Umzat"
  quanex:0 "Quanex"
  laglon:0 "Laglon"
@@ -42,3 +43,17 @@
  halosh:0 "Halosh"
  milk_road:0 "Milk Road"
  kurkar_node:0 "Antiash"
+
+ #Trade Companies
+ trade_company_umzat:0 "Umzatian Charter"
+ TRADE_COMPANY_UMZAT_Root_Culture_GetName:0 "[Root.Culture.GetName] Umzatian Company"
+ TRADE_COMPANY_UMZAT_Trade_Company:0 "Umzatian Company"
+ trade_company_quanex:0 "Umzatian Charter"
+ TRADE_COMPANY_QUANEX_Root_Culture_GetName:0 "[Root.Culture.GetName] Upper Oppian Company"
+ TRADE_COMPANY_QUANEX_Trade_Company:0 "Upper Oppian Company"
+ trade_company_fasalep:0 "Lower Oppian Charter"
+ TRADE_COMPANY_FASALEP_Root_Culture_GetName:0 "[Root.Culture.GetName] Lower Oppian Company"
+ TRADE_COMPANY_FASALEP_Trade_Company:0 "Lower Oppian Company"
+ trade_company_nuti:0 "Nutian Charter"
+ TRADE_COMPANY_NUTI_Root_Culture_GetName:0 "[Root.Culture.GetName] Nutian Company"
+ TRADE_COMPANY_NUTI_Trade_Company:0 "Nutian Company"

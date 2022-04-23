@@ -2,6 +2,7 @@
 great_desert_modifier = {
     local_friendly_movement_speed = -0.5
     local_hostile_movement_speed = -0.5
-    attrition = 3
+    attrition = 5
+    supply_limit_modifier = -0.8
     local_development_cost = 1
 }

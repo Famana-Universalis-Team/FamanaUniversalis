@@ -1,0 +1,771 @@
+
+trade_company_milk_road = {
+	color = { 75 120 121 }
+	
+	provinces = {
+		6876 5903 5904 5902 5901 5906 5898 5897 5896 5895 5899 6022 6898 6897 6896 6880 6899 6882 6881
+		6886 6884 6877 6878 6879 6874 6873 6872 5891 5887 5888 5826 5907 5836 5894 5827 5832 5892 5893
+		5900 6875
+	}
+	
+	# Specific
+	# Generic
+	names = {
+		name = "TRADE_COMPANY_MILK_ROAD_Root_Culture_GetName"
+	}
+	names = {
+		name = "TRADE_COMPANY_MILK_ROAD_Trade_Company"
+	}
+}
+
+trade_company_kurkar = {
+	color = { 175 128 103 }
+	
+	provinces = {
+		7963 7966 7965 7964 7967 7962 7968 7969 7971 7970 7248 7247 7245 7246 7249 7244 7243 7242 7250
+		7251 7241 7240 7239 7238 7237 7236
+	}
+	
+	# Specific
+	# Generic
+	names = {
+		name = "TRADE_COMPANY_KURKAR_Root_Culture_GetName"
+	}
+	names = {
+		name = "TRADE_COMPANY_KURKAR_Trade_Company"
+	}
+}
+
+trade_company_halosh = {
+	color = { 188 64 165 }
+	
+	provinces = {
+		7749 6855 6856 6862 6863 6860 6861 6859 6858 6857 6864 6865 6866 6867 6868 6869 6870 6871
+	}
+	
+	# Specific
+	# Generic
+	names = {
+		name = "TRADE_COMPANY_HALOSH_Root_Culture_GetName"
+	}
+	names = {
+		name = "TRADE_COMPANY_HALOSH_Trade_Company"
+	}
+}
+
+trade_company_takent = {
+	color = { 147 150 54 }
+	
+	provinces = {
+		6045 6044 6043 6042 6041 6004 6003 6002 6035 6034 6033 6000 5999 5998 5997 5996 5994 5995 6007
+		6008 6009 6048 6011 6049 6046 6056 6053 6039 6052 6031 6030 6029 
+	}
+	
+	# Specific
+	# Generic
+	names = {
+		name = "TRADE_COMPANY_TAKENT_Root_Culture_GetName"
+	}
+	names = {
+		name = "TRADE_COMPANY_TAKENT_Trade_Company"
+	}
+}
+
+trade_company_olamu = {
+	color = { 51 164 97 }
+	
+	provinces = {
+		6015 6014 6013 6017 6016 6021 6024 6023 6026 7831 6012 6018 6019 6020 6037 6032 6028 6027
+	}
+	
+	# Specific
+	# Generic
+	names = {
+		name = "TRADE_COMPANY_OLAMU_Root_Culture_GetName"
+	}
+	names = {
+		name = "TRADE_COMPANY_OLAMU_Trade_Company"
+	}
+}
+
+trade_company_anmoea = {
+	color = { 79 42 114 }
+	
+	provinces = {
+		5949 5951 5948 5947 5946 5953 5952 5945 5944 5960 5958 5954 5959 5956 5955 5986 5987 5990
+		5950 5984 5988 5983 5991 6005 5961 5962
+	}
+	
+	# Specific
+	# Generic
+	names = {
+		name = "TRADE_COMPANY_ANMOEA_Root_Culture_GetName"
+	}
+	names = {
+		name = "TRADE_COMPANY_ANMOEA_Trade_Company"
+	}
+}
+
+trade_company_bizugu = {
+	color = { 173 191 50 }
+	
+	provinces = {
+		5968 5868 5967 5957 5964 5969 5973 5972 5970 5971 5850 5849 5875 5974 5977 5979 5978 5992 5980
+		5993 5981 5975 5976 5966 5963 5965
+	}
+	
+	# Specific
+	# Generic
+	names = {
+		name = "TRADE_COMPANY_BIZUGU_Root_Culture_GetName"
+	}
+	names = {
+		name = "TRADE_COMPANY_BIZUGU_Trade_Company"
+	}
+}
+
+trade_company_nuzoto = {
+	color = { 136 66 141 }
+	
+	provinces = {
+		5840 5844 5845 5846 5842 5841 5873 5852 5855 5905 5856 5854 5851 5882 5859 5881 5839 5876 5860
+		5862 5886 5843 5837 5830 5828 5829 5848 5831
+	}
+	
+	# Specific
+	# Generic
+	names = {
+		name = "TRADE_COMPANY_NUZOTO_Root_Culture_GetName"
+	}
+	names = {
+		name = "TRADE_COMPANY_NUZOTO_Trade_Company"
+	}
+}
+
+trade_company_emtik = {
+	color = { 67 208 37 }
+	
+	provinces = {
+		5825 5867 5883 5838 5857 5864 5879 5834 5847 5833 5863 5853 5870 5861 5871 5866 5865 5880 5858
+		5869 5878 5877 5872 5874 5691 5692
+	}
+	
+	# Specific
+	# Generic
+	names = {
+		name = "TRADE_COMPANY_EMTIK_Root_Culture_GetName"
+	}
+	names = {
+		name = "TRADE_COMPANY_EMTIK_Trade_Company"
+	}
+}
+
+trade_company_hasia = {
+	color = { 131 164 114 }
+	
+	provinces = {
+		5695 6390 6391 6389 6393 6415 6414 6413 6392 6419 6418 6417 6416 6394 6396 6395 6399 6398 6397
+		6420 6423 6424 6422 6421 6427 6428 6425 6426 6388 6386 6387 5746
+	}
+	
+	# Specific
+	# Generic
+	names = {
+		name = "TRADE_COMPANY_HASIA_Root_Culture_GetName"
+	}
+	names = {
+		name = "TRADE_COMPANY_HASIA_Trade_Company"
+	}
+}
+
+trade_company_vamanya = {
+	color = { 186 166 86 }
+	
+	provinces = {
+		8458 6382 6383 6384 6385 6378 6168 6172 6171 6169 6170 6374 6376 6373 6372 6371 6370 6366 6367 6365
+		6362 6363 6359 6361 6360 6357 6358 6356 6355 6354 6352 6353 6351 5766
+	}
+	
+	# Specific
+	# Generic
+	names = {
+		name = "TRADE_COMPANY_VAMANYA_Root_Culture_GetName"
+	}
+	names = {
+		name = "TRADE_COMPANY_VAMANYA_Trade_Company"
+	}
+}
+
+trade_company_silvol = {
+	color = { 151 81 169 }
+	
+	provinces = {
+		6457 6458 6459 6461 6460 6463 6462 6464 6465 6466 7677 7676
+	}
+	
+	# Specific
+	# Generic
+	names = {
+		name = "TRADE_COMPANY_SILVOL_Root_Culture_GetName"
+	}
+	names = {
+		name = "TRADE_COMPANY_SILVOL_Trade_Company"
+	}
+}
+
+trade_company_shoowta = {
+	color = { 53 94 153 }
+	
+	provinces = {
+		6339 6340 6341 6338 6336 6337 6327 6324 6326 6330 6329 6325 6331 6332 6333 6335 6334 6328 6323 6322 6321
+		6320 6318 6319 6316 6314 6313 6309 6305 6304 6310 6315 6317 6306 6308 6311 6312 6342 6307 6303 6299 5772
+		5776
+	}
+	
+	# Specific
+	# Generic
+	names = {
+		name = "TRADE_COMPANY_SHOOWTA_Root_Culture_GetName"
+	}
+	names = {
+		name = "TRADE_COMPANY_SHOOWTA_Trade_Company"
+	}
+}
+
+trade_company_yovk = {
+	color = { 135 32 56 }
+	
+	provinces = {
+		6301 6297 6300 6302 6298 6296 6295 6292 6293 6294 6289 6288 6287 6291 6290 6286 6285 6284 6283 6282 6281 6280
+		6277 6278 6279 5760 
+	}
+	
+	# Specific
+	# Generic
+	names = {
+		name = "TRADE_COMPANY_YOVK_Root_Culture_GetName"
+	}
+	names = {
+		name = "TRADE_COMPANY_YOVK_Trade_Company"
+	}
+}
+
+trade_company_kolya = {
+	color = { 110 65 36 }
+	
+	provinces = {
+		6274 6276 6275 6271 6272 6273 6269 6268 6266 6270 6253 6265 6254 6267 6249 6250 6251 6252 6263 6261 6264 6259 6258
+		6260 6262 6256 6257 6255 5747 5751 
+	}
+	
+	# Specific
+	# Generic
+	names = {
+		name = "TRADE_COMPANY_KOLYA_Root_Culture_GetName"
+	}
+	names = {
+		name = "TRADE_COMPANY_KOLYA_Trade_Company"
+	}
+}
+
+trade_company_darz = {
+	color = { 72 121 85 }
+	
+	provinces = {
+		6224 6211 6210 6209 6215 6216 6223 6217 6206 6207 6208 6213 6214 6219 6220 6218 6212 6202 6201 6199 6200 
+	}
+	
+	# Specific
+	# Generic
+	names = {
+		name = "TRADE_COMPANY_DARZ_Root_Culture_GetName"
+	}
+	names = {
+		name = "TRADE_COMPANY_DARZ_Trade_Company"
+	}
+}
+
+trade_company_celzion = {
+	color = { 201 51 43 }
+	
+	provinces = {
+		6241 6239 6221 6204 6205 6244 6242 6243 6240 6203 6237 6238 6236 6234 6235 6233 6231 6232 6230 6228 6226
+		6227 6229 6225 6222 6198 6197 6196 5761 
+	}
+	
+	# Specific
+	# Generic
+	names = {
+		name = "TRADE_COMPANY_CELZION_Root_Culture_GetName"
+	}
+	names = {
+		name = "TRADE_COMPANY_CELZION_Trade_Company"
+	}
+}
+
+trade_company_laizio = {
+	color = { 235 85 52 }
+	
+	provinces = {
+		6441 6440 6439 6432 6433 6429 6431 6430 6435 6452 6438 6445 6446 6437 6853 6451 6450 6447 6449 6448 6444
+		6442 6402 6403 6436 6407 6408 
+	}
+	
+	# Specific
+	# Generic
+	names = {
+		name = "TRADE_COMPANY_LAIZIO_Root_Culture_GetName"
+	}
+	names = {
+		name = "TRADE_COMPANY_LAIZIO_Trade_Company"
+	}
+}
+
+trade_company_dotz = {
+	color = { 141 180 28 }
+	
+	provinces = {
+		5762 5763 6184 6185 6186 6190 6191 6187 6188 6189 6195 6194 6183 6181 6179 6180 6176 6174 6193 6192 6412 6411
+		6409 6410 6406 6182 6405 6404 6401 6400 6381 6380 6379 6377 6175 6173 6375 6369 6368 5884 5664 5061 6178 6177 
+	}
+	
+	# Specific
+	# Generic
+	names = {
+		name = "TRADE_COMPANY_DOTZ_Root_Culture_GetName"
+	}
+	names = {
+		name = "TRADE_COMPANY_DOTZ_Trade_Company"
+	}
+}
+
+trade_company_miris = {
+	color = { 115 80 72 }
+	
+	provinces = {
+		5013 5014 5016 5694 5254 5256 5257 5259 5258 5268 5267 5264 5266 5263 5262 5261 5260 5158 5235 5236 5702 5611
+		5743 5218
+	}
+	
+	# Specific
+	# Generic
+	names = {
+		name = "TRADE_COMPANY_MIRIS_Root_Culture_GetName"
+	}
+	names = {
+		name = "TRADE_COMPANY_MIRIS_Trade_Company"
+	}
+}
+
+trade_company_laglon = {
+	color = { 82 88 118 }
+	
+	provinces = {
+		5028 5039 5017 5018 5019 5020 5021 5022 5023 5024 5025 5026 5027 5029 5030 5031 5032 5033 5034 5035 5036 5037
+		5038 5269 5270 5271 5272 5273 5253 5255 5265 5279 4982 
+	}
+	
+	# Specific
+	# Generic
+	names = {
+		name = "TRADE_COMPANY_LAGLON_Root_Culture_GetName"
+	}
+	names = {
+		name = "TRADE_COMPANY_LAGLON_Trade_Company"
+	}
+}
+
+trade_company_montava = {
+	color = { 244 228 107 }
+	
+	provinces = {
+		6117 6125 5985 6038 6040 6051 6047 6006 5989 5727 5729 5730 5731 5732 5733 5734 5735 5736 5737 5738 5739 5740
+		5741 5742 5744 5745 5693 5669 5627 5617 5661 
+	}
+	
+	# Specific
+	# Generic
+	names = {
+		name = "TRADE_COMPANY_MONTAVA_Root_Culture_GetName"
+	}
+	names = {
+		name = "TRADE_COMPANY_MONTAVA_Trade_Company"
+	}
+}
+
+trade_company_nabrosia = {
+	color = { 248 180 34 }
+	
+	provinces = {
+		5709 5711 5712 5713 5714 5715 5716 5718 5719 5720 5721 5722 5724 5725 5726 5655 5658 5596 5607 5608 5637 5784
+		5618 5626 5500 5190 5634 5708 5759 5752 
+	}
+	
+	# Specific
+	# Generic
+	names = {
+		name = "TRADE_COMPANY_NABROSIA_Root_Culture_GetName"
+	}
+	names = {
+		name = "TRADE_COMPANY_NABROSIA_Trade_Company"
+	}
+}
+
+trade_company_walara = {
+	color = { 62 143 183 }
+	
+	provinces = {
+		5697 5698 5699 5700 5701 5703 5704 5705 5706 5284 5285 5286 5288 5289 5294 5295 5296 5298 5299 5309 5312 5313
+		5341 5310 5283 5824 5754 5282 5753 
+	}
+	
+	# Specific
+	# Generic
+	names = {
+		name = "TRADE_COMPANY_WALARA_Root_Culture_GetName"
+	}
+	names = {
+		name = "TRADE_COMPANY_WALARA_Trade_Company"
+	}
+}
+
+trade_company_maglazios = {
+	color = { 137 147 38 }
+	
+	provinces = {
+		5277 5281 5303 5304 5311 5335 5333 5317 5318 5334 5321 5274 5275 5276 5278 5280 5297 5300 5301 5302 5336 5319
+		5320 5322 5323 5324 5325 5326 5327 5328 5329 
+	}
+	
+	# Specific
+	# Generic
+	names = {
+		name = "TRADE_COMPANY_MAGLAZIOS_Root_Culture_GetName"
+	}
+	names = {
+		name = "TRADE_COMPANY_MAGLAZIOS_Trade_Company"
+	}
+}
+
+trade_company_pexamol = {
+	color = { 214 88 255 }
+	
+	provinces = {
+		5405 5381 5382 5383 5384 5385 5377 5380 5378 5379 5392 5427 5406 5425 5439 5397 5396 5393 5395 5552 5553 5390 5391
+		5394 5287 5577 5811 
+	}
+	
+	# Specific
+	# Generic
+	names = {
+		name = "TRADE_COMPANY_PEXAMOL_Root_Culture_GetName"
+	}
+	names = {
+		name = "TRADE_COMPANY_PEXAMOL_Trade_Company"
+	}
+}
+
+trade_company_pomlen = {
+	color = { 206 144 172 }
+	
+	provinces = {
+		5203 5308 5314 5315 5316 5330 5331 5332 5337 5338 5339 5340 5342 5343 5344 5345 5346 5347 5348 5349 5350 5351 5352
+		5353 5354 5355 5356 5357 5358 4997 
+	}
+	
+	# Specific
+	# Generic
+	names = {
+		name = "TRADE_COMPANY_POMLEN_Root_Culture_GetName"
+	}
+	names = {
+		name = "TRADE_COMPANY_POMLEN_Trade_Company"
+	}
+}
+
+trade_company_dimdivu = {
+	color = { 72 111 56 }
+	
+	provinces = {
+		5683 5689 5690 5680 5681 5682 5684 5685 5686 5687 5688 5785 5652 5603 5602 5516 5601 5515 5514 5679 5676 
+	}
+	
+	# Specific
+	# Generic
+	names = {
+		name = "TRADE_COMPANY_DIMDIVU_Root_Culture_GetName"
+	}
+	names = {
+		name = "TRADE_COMPANY_DIMDIVU_Trade_Company"
+	}
+}
+
+trade_company_jimkalin = {
+	color = { 196 181 80 }
+	
+	provinces = {
+		5644 5631 5615 5625 5613 5594 5656 5629 5657 5597 5672 5673 5599 5648 5650 5645 5647 5643 5609 5642 5636
+		5633 5639 5593 5616 5619 5677 
+	}
+	
+	# Specific
+	# Generic
+	names = {
+		name = "TRADE_COMPANY_JIMKALIN_Root_Culture_GetName"
+	}
+	names = {
+		name = "TRADE_COMPANY_JIMKALIN_Trade_Company"
+	}
+}
+
+trade_company_arrol = {
+	color = { 104 184 149 }
+	
+	provinces = {
+		5529 5530 5538 5539 5528 5531 5537 5540 5532 5527 5533 5541 5534 5526 5525 5535 5536 5523 5522 5521 5518
+		5524 5520 5519 5517 5510 5513 5511 5512 5604 5606 5605 5678 5728 
+	}
+	
+	# Specific
+	# Generic
+	names = {
+		name = "TRADE_COMPANY_ARROL_Root_Culture_GetName"
+	}
+	names = {
+		name = "TRADE_COMPANY_ARROL_Trade_Company"
+	}
+}
+
+trade_company_degladon = {
+	color = { 38 105 170 }
+	
+	provinces = {
+		5660 5509 5507 5505 5506 5504 5624 5659 5654 5663 5670 5668 5665 5481 5473 5497 5498 5480 5477 5474 5476
+		5621 5622 5623 5501 5502 5503 5499 5478 5479 5482 5483 5472 5595 5600 5674 5820 
+	}
+	
+	# Specific
+	# Generic
+	names = {
+		name = "TRADE_COMPANY_DEGLADON_Root_Culture_GetName"
+	}
+	names = {
+		name = "TRADE_COMPANY_DEGLADON_Trade_Company"
+	}
+}
+
+trade_company_umzat = {
+	color = { 181 11 28 }
+	
+	provinces = {
+		5040 5041 5042 5043 5044 5045 5046 5047 5050 5051 5052 5053 5551 5543 5545 5547 5546 5015 4981
+	}
+	
+	# Specific
+	# Generic
+	names = {
+		name = "TRADE_COMPANY_UMZAT_Root_Culture_GetName"
+	}
+	names = {
+		name = "TRADE_COMPANY_UMZAT_Trade_Company"
+	}
+}
+
+trade_company_fasalep = {
+	color = { 190 106 102 }
+	
+	provinces = {
+		5048 5049 5054 5055 5056 5057 5058 5082 5059 5083 5084 5085 5086 5087 5088 5089 5090 5091 5092
+		5093 5230 
+	}
+	
+	# Specific
+	# Generic
+	names = {
+		name = "TRADE_COMPANY_FASALEP_Root_Culture_GetName"
+	}
+	names = {
+		name = "TRADE_COMPANY_FASALEP_Trade_Company"
+	}
+}
+
+trade_company_quanex = {
+	color = { 30 66 116 }
+	
+	provinces = {
+		5068 5075 5077 5064 5065 5066 5062 5063 5208 5060 5067 5207 5071 5072 5073 5070 5069 5078 5074
+		5079 5076 5081 5080 
+	}
+	
+	# Specific
+	# Generic
+	names = {
+		name = "TRADE_COMPANY_QUANEX_Root_Culture_GetName"
+	}
+	names = {
+		name = "TRADE_COMPANY_QUANEX_Trade_Company"
+	}
+}
+
+trade_company_nuti = {
+	color = { 42 122 195 }
+	
+	provinces = {
+		5095 5097 5096 5094 5099 5100 5098 5102 5101 5103 5104 5105 5106 5107 5108 5109 5110 5111 5130
+		5129 5548 5240 5550 
+	}
+	
+	# Specific
+	# Generic
+	names = {
+		name = "TRADE_COMPANY_NUTI_Root_Culture_GetName"
+	}
+	names = {
+		name = "TRADE_COMPANY_NUTI_Trade_Company"
+	}
+}
+
+trade_company_arlen = {
+	color = { 180 210 100 }
+	
+	provinces = {
+		5124 5123 5128 5125 5131 5134 5112 5122 5121 5120 5126 5119 5132 5118 5133 5127 5113 5117 
+	}
+	
+	# Specific
+	# Generic
+	names = {
+		name = "TRADE_COMPANY_ARLEN_Root_Culture_GetName"
+	}
+	names = {
+		name = "TRADE_COMPANY_ARLEN_Trade_Company"
+	}
+}
+
+trade_company_makykay = {
+	color = { 186 54 39 }
+	
+	provinces = {
+		7961 5557 5556 5143 5116 5114 5115 5135 5136 5137 5138 5139 5140 5141 5144 5145 5146 5142
+		5148 5147 5149 5150 5151 5152 5153 5157 5156 5155 5154 5549 5542 5241 5290 5812 5813 5814
+		5815 
+	}
+	
+	# Specific
+	# Generic
+	names = {
+		name = "TRADE_COMPANY_MAKYKAY_Root_Culture_GetName"
+	}
+	names = {
+		name = "TRADE_COMPANY_MAKYKAY_Trade_Company"
+	}
+}
+
+trade_company_vesuxa = {
+	color = { 233 210 173 }
+	
+	provinces = {
+		5407 5408 5409 5410 5411 5414 5415 5416 5417 5418 5419 5420 5421 5422 5423 5450 5434 5412
+		5413 5443 5442 5441 5435 5431 5436 5437 5438 5440 5428 5429 5432 5433 5466 5822 5823 
+	}
+	
+	# Specific
+	# Generic
+	names = {
+		name = "TRADE_COMPANY_VESUXA_Root_Culture_GetName"
+	}
+	names = {
+		name = "TRADE_COMPANY_VESUXA_Trade_Company"
+	}
+}
+
+trade_company_houraska_xon = {
+	color = { 72 116 53 }
+	
+	provinces = {
+		5162 5161 5159 5160 5163 5164 5166 5165 5167 5168 5175 5170 5171 5172 5173 5242 5209 5174
+		5176 5177 5178 5179 5180 5181 5628 5306 5671 5818 5819 5790 
+	}
+	
+	# Specific
+	# Generic
+	names = {
+		name = "TRADE_COMPANY_HOURASKA_XON_Root_Culture_GetName"
+	}
+	names = {
+		name = "TRADE_COMPANY_HOURASKA_XON_Trade_Company"
+	}
+}
+
+trade_company_xon = {
+	color = { 249 243 35 }
+	
+	provinces = {
+		5555 5403 5400 5399 5404 5386 5387 5388 5398 5389 5401 5402 5424 5460 5461 5444 5445 5446 5447
+		5448 5449 5462 5463 5464 5465 5467 5468 5451 5452 5453 5454 5455 5456 5457 5458 5459 5558 5710 
+	}
+	
+	# Specific
+	# Generic
+	names = {
+		name = "TRADE_COMPANY_XON_Root_Culture_GetName"
+	}
+	names = {
+		name = "TRADE_COMPANY_XON_Trade_Company"
+	}
+}
+
+trade_company_agixion = {
+	color = { 255 165 56 }
+	
+	provinces = {
+		5227 5228 5007 5359 5360 5361 5362 5363 5364 5365 5366 5367 5368 5369 5370 5371 5372 5373 5374 5375
+		5376 5496 5484 5485 5486 5487 5488 5489 5490 5491 5492 5493 5239 5307 
+	}
+	
+	# Specific
+	# Generic
+	names = {
+		name = "TRADE_COMPANY_AGIXION_Root_Culture_GetName"
+	}
+	names = {
+		name = "TRADE_COMPANY_AGIXION_Trade_Company"
+	}
+}
+
+trade_company_kinvirel = {
+	color = { 166 149 132 }
+	
+	provinces = {
+		5202 5196 5199 5204 5189 5191 5192 5193 5197 5198 5201 5200 5471 5590 5591 5592 5612 5620 5469 5470 5195
+		5475 5183 5184 5185 5186 5187 5188 5194 5182 5667 5653 5494 5789 5791 5792 
+	}
+	
+	# Specific
+	# Generic
+	names = {
+		name = "TRADE_COMPANY_KINVIREL_Root_Culture_GetName"
+	}
+	names = {
+		name = "TRADE_COMPANY_KINVIREL_Trade_Company"
+	}
+}
+
+trade_company_emastalia = {
+	color = { 55 126 42 }
+	
+	provinces = {
+		5559 5560 5561 5562 5563 5564 5565 5566 5567 5568 5569 5570 5571 5572 5573 5574 5575 5576 5578 5579 5580
+		5581 5582 5583 5584 5717 5293 5291 5696 5707 5793 5810 5821 5809 5808 5807 5806 5804 5803 5802 5800 5799
+		5798 5797 5796 5795 5794 5666 5002 
+	}
+	
+	# Specific
+	# Generic
+	names = {
+		name = "TRADE_COMPANY_EMASTALIA_Root_Culture_GetName"
+	}
+	names = {
+		name = "TRADE_COMPANY_EMASTALIA_Trade_Company"
+	}
+}
