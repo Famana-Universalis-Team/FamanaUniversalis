@@ -12,7 +12,10 @@ extra_cost = 1
 
 discovered_by = west_gomic_tech_gr
 
-
+add_permanent_province_modifier = {
+	name = great_desert_modifier
+	duration = -1
+}
 
 
 

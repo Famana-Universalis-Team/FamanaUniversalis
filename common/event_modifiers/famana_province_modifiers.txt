@@ -1,0 +1,7 @@
+
+great_desert_modifier = {
+    local_friendly_movement_speed = -0.5
+    local_hostile_movement_speed = -0.5
+    attrition = 3
+    local_development_cost = 1
+}
