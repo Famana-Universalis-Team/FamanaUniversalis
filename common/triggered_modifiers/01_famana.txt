@@ -122,4 +122,7 @@ ai_fashros_buff = {
     interest = -2
     core_creation = -0.15
     administrative_efficiency = 0.05
+    monarch_admin_power = 1
+    monarch_diplomatic_power = 1
+    monarch_military_power = 1
 }

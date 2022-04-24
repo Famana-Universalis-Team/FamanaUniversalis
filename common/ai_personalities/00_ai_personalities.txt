@@ -447,6 +447,11 @@ ai_militarist = {
 			factor = 0.6
 			tag = SKT
 		}
+		modifier = {
+			factor = 0.25
+			tag = PEX
+			NOT = { is_year = 265 }
+		}
 	}
 	icon = 4
 }

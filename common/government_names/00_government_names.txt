@@ -38,30 +38,6 @@ helvania = {
 
 }
 
-tck_gov_name = {
-	rank = {
-		1 = TCK_REALM
-		2 = TCK_REALM
-		3 = TCK_REALM
-	}
-
-	ruler_male = {
-		1 = KING
-		2 = KING
-		3 = KING
-	}
-
-	ruler_female = {
-		1 = QUEEN
-		2 = QUEEN
-		3 = QUEEN
-	}
-
-	trigger = {
-		has_reform = crown_kingdom_reform
-	}
-}
-
 diocese_gov_name = {
 	rank = {
 		1 = DIOCESE
