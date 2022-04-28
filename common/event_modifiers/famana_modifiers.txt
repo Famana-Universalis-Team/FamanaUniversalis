@@ -585,3 +585,41 @@ emtik_rights = {
 fas_emtik_rights = {
     idea_cost = -0.1
 }
+
+pex_averted_disaster = {
+    army_tradition = 0.5
+    prestige = 1.0
+}
+
+pex_res_loyalty = {
+    liberty_desire = -60
+    global_missionary_strength = 0.05
+}
+
+pex_merchant_modifier = {
+    merchants = 1
+    trade_steering = 0.25
+}
+
+pex_lathvy_empire_modifier = {
+    missionaries = 1
+    prestige_decay = -0.02
+    diplomatic_upkeep = 2
+}
+
+pex_champion_of_ara_modifier = {
+    manpower_in_true_faith_provinces= 0.25
+}
+
+pex_emastalia_invasion = {
+    siege_ability = 0.10
+    army_tradition_from_battle = 1.0
+}
+
+pex_emastalia_province = {
+    trade_goods_size_modifier = 0.10
+}
+
+pex_cultural_revival = {
+    num_accepted_cultures = 2
+}

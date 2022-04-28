@@ -514,21 +514,7 @@ country_event = { #DIE ALREADY
 			country_event = { 
 				id = pexto.9
 			}
-			if = {
-				limit = {
-					5203 = {
-						owner = PEX
-					}
-				}
-				5203 = {
-					spawn_rebels = {
-						type = nationalist_rebels
-						size = 3
-					}
-					add_unrest = 10
-				}
-			}
-			ROOT = {
+			PEX = {
 				release_all_subjects = yes
 			}
 			log = "trolloglazia"
@@ -539,5 +525,45 @@ country_event = { #DIE ALREADY
         name = pexto.15.a
         ai_chance = { factor = 1 }
 		add_prestige = -100
+		if = {
+			limit = {
+				owns = 5203
+			}
+			5203 = {
+				cede_province = NPX
+			}
+		}
     }
+}
+
+country_event = {
+	id = pexto.16
+	title = pexto.16.t
+	desc = pexto.16.d
+	picture = REFORM_eventPicture
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = pexto.16.a
+		ai_chance = { factor = 0 }
+		add_stability = -2
+		add_country_modifier = {
+			name = "famana_conversion_zeal"
+			duration = 3650
+		}
+		change_religion = pawani
+	}
+	option = {
+		name = pexto.16.b
+		ai_chance = { factor = 1 }
+		add_prestige = 10
+		every_owned_province = {
+			limit = {
+				culture = Pawani_C
+			}
+			change_religion = lathvy
+		}
+	}
 }

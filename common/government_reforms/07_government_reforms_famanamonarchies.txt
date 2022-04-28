@@ -67,11 +67,39 @@ holy_monarchy_reform = {
 	potential = {
 		tag = PEX
 		NOT = { has_country_flag = pextocivilwar }
+		NOT = { has_country_flag = lathvy_empire_flag }
 	}
 	custom_attributes = {
 		locked_government_type = yes
 	}
 	fixed_rank = 2
+}
+
+holy_monarchy_reform_2 = {
+	icon = "pextoglazia"
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	legacy_equivalent = theocratic_government
+	valid_for_nation_designer = no
+	nation_designer_cost = 0
+	modifiers = {
+		global_missionary_strength = 0.01
+		governing_capacity_modifier = -0.1
+		church_influence_modifier = 0.2
+		church_loyalty_modifier = 0.05
+		nobles_loyalty_modifier = 0.05
+	}
+	queen = yes
+	royal_marriage = yes
+	potential = {
+		tag = PEX
+		has_country_flag = lathvy_empire_flag
+		NOT = { has_country_flag = pextocivilwar }
+	}
+	custom_attributes = {
+		locked_government_type = yes
+	}
+	fixed_rank = 3
 }
 
 corrupt_monarchy_reform = {

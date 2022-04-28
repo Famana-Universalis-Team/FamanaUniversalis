@@ -1,10 +1,25 @@
 	### Famana Mission Icons ###	
 	
 spriteTypes = {
-
-
-		spriteType = {
+	
+			spriteType = {
 		name = "fashros_mission_city"
-		texturefile = "gfx//interface//missions//fashros_mission_city.dds"
+		texturefile = "gfx//interface//missions//famana_missions//fashros_mission_city.dds"
 	}
+	
+			spriteType = {
+		name = "defeating_ordica"
+		texturefile = "gfx//interface//missions//famana_missions//defeating_ordica.dds"
+	}
+	
+			spriteType = {
+		name = "pex_oppia_mission"
+		texturefile = "gfx//interface//missions//famana_missions//pex_oppia_mission.dds"
+	}
+	
+			spriteType = {
+		name = "pex_lathvy_empire_mission"
+		texturefile = "gfx//interface//missions//famana_missions//pex_lathvy_empire_mission.dds"
+	}
+	
 }

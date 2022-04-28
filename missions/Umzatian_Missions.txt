@@ -1025,16 +1025,16 @@ umz_5 = {
     
        
         trigger = {
-		has_spy_network_in = {
-		who = TCK
-		value = 35
+			has_spy_network_in = {
+				who = TCK
+				value = 35
+				}
+			spymaster = 1
+			NOT = { 
+				alliance_with = TCK
+				truce_with = TCK
+        	}
 		}
-		spymaster = 1
-		NOT = { 
-			alliance_with = TCK 
-			ruce = TCK 
-		}
-        }
         
        
         effect = {
@@ -1042,25 +1042,20 @@ umz_5 = {
 				release = IMG
 				kill_ruler = yes
 				add_country_modifier = { 
-				name = umz_chaos
-				duration = 1825
+					name = umz_chaos
+					duration = 1825
 				}
 				country_event = { 
 					id = umzatia.4
-						 days = 1
-    
-					}
+					days = 1
+				}
 			}
-		   create_march = IMG
-		   add_spy_network_in = {
-			who = TCK
-			value = -35
+			create_march = IMG
+			add_spy_network_in = {
+				who = TCK
+				value = -35
 			}
-		   
-		   
-	    
         }
-		
     }
 	UMZ_war = {
         icon = mission_cannons_firing
@@ -1077,14 +1072,14 @@ umz_5 = {
     
        
         trigger = {
-		army_size_percentage = 1
-		navy_size_percentage = 1
-		prestige = TCK
-	    legitimacy = TCK
-		NOT = {
-			alliance_with = TCK 
-			truce = TCK 
-		}
+			army_size_percentage = 1
+			navy_size_percentage = 1
+			prestige = TCK
+	    	legitimacy = TCK
+			NOT = {
+				alliance_with = TCK
+				truce_with = TCK
+			}
 		}
 		
         

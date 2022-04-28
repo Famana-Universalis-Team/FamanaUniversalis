@@ -359,6 +359,11 @@
  HOLY_MONARCHY:0 "Holy Kingdom"
  HOLY_KING:0 "Holy King"
  HOLY_QUEEN:0 "Holy Queen"
+ holy_monarchy_reform_2:0 "Holy Monarchy"
+ holy_monarchy_reform_2_desc:0 "A holy monarchy is a theocratic government ruled jointly by a Secular Emperor and a Religious Leader. This system can frequently lead to clashes of power, especially as the Religious Leaders are the ones who usually have the power to choose the next emperor."
+ HOLY_EMPIRE:0 "Holy Empire"
+ HOLY_EMPEROR:0 "Holy Emperor"
+ HOLY_EMPRESS:0 "Holy Empress"
  
  #fenika natives
  ANK: "Ankoisa"
@@ -1936,6 +1941,10 @@
  BAMAL_NAME: "Bamal"
  BAMAL_NAME_ADJ: "Bamali"
  BAMAL_NAME_ADJ2: "Bamali"
+
+ THE_LATHVY_EMPIRE: "Lathvy Empire"
+ THE_LATHVY_EMPIRE_ADJ: "Lathvy Empire"
+ THE_LATHVY_EMPIRE_ADJ2: "Lathvy Empire"
 
  golden_mea_nation_title:0 "Form Golden Mea"
  golden_mea_nation_desc:0 "Having destroyed our enemies and secured our holdings, we can now officially proclaim our Golden Era."

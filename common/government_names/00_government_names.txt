@@ -278,6 +278,32 @@ holy_monarchy = {
 
 	trigger = {
 		tag = PEX
+		NOT = { has_country_flag = lathvy_empire_flag }
+	}
+}
+
+holy_monarchy_2 = {
+	rank = {
+		1 = HOLY_EMPIRE
+		2 = HOLY_EMPIRE
+		3 = HOLY_EMPIRE
+	}
+
+	ruler_male = {
+		1 = HOLY_EMPEROR
+		2 = HOLY_EMPEROR
+		3 = HOLY_EMPEROR
+	}
+
+	ruler_female = {
+		1 = HOLY_EMPRESS
+		2 = HOLY_EMPRESS
+		3 = HOLY_EMPRESS
+	}
+
+	trigger = {
+		tag = PEX
+		has_country_flag = lathvy_empire_flag
 	}
 }
 
