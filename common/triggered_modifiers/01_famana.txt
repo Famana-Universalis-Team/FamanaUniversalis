@@ -107,3 +107,22 @@ fashros_tech_support_modifier = {
     global_institution_spread = 0.25
     technology_cost = -0.05
 }
+
+ai_fashros_buff = {
+    potential = {
+        tag = FAS
+    }
+    trigger = {
+        ai = yes
+        NOT = { is_year = 320 }
+    }
+    global_tax_modifier	= 0.50
+    missionaries = 1
+    land_maintenance_modifier = -0.25
+    interest = -2
+    core_creation = -0.15
+    administrative_efficiency = 0.05
+    monarch_admin_power = 1
+    monarch_diplomatic_power = 1
+    monarch_military_power = 1
+}

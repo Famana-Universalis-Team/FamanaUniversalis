@@ -1,7 +1,9 @@
+namespace = nhoma
+
 # Irfa Colonies 1
 country_event = {
     id = nhoma.1
-    title = = nhoma.1.t
+    title = nhoma.1.t
     desc = nhoma.1.d
     picture = COLONIZATION_eventPicture
     fire_only_once = yes
@@ -24,7 +26,6 @@ country_event = {
    
    option = {
         name = nhoma.1.a
-        goto = 5910
         create_colony_mission_reward = { province = 5910 }
 		create_colony_mission_reward = { province = 5911 }
         hidden_effect = {
@@ -42,7 +43,7 @@ country_event = {
 # Irfa Colonies 2
 country_event = {
     id = nhoma.2
-    title = = nhoma.2.t
+    title = nhoma.2.t
     desc = nhoma.2.d
     picture = COLONIZATION_eventPicture
     fire_only_once = yes
@@ -61,10 +62,10 @@ country_event = {
    
    option = {
         name = nhoma.2.a
-        goto = 5909
         5909 = {
-	cede_province = IRF
-	add_core = IRF
+	        cede_province = IRF
+	        add_core = IRF
+        }
 	}
         hidden_effect = {
             5909 = {

@@ -1,61 +1,80 @@
-#country_event = {
-#	id = estal.1
-#	title = estal.1.t
-#	desc = estal.1.d
-#	picture = VILLAGE_BURNING_eventPicture
-#	
-#	is_triggered_only = yes
-#	
-#	trigger = {
-#		NOT = {
-#			technology_group = antestal_yom_tech_gr
-#		}
-#	}
-#	
-#	mean_time_to_happen = {
-#		days = 1
-#	}
-#
-#	immediate = {
-#		hidden_effect = {
-#			random_owned_province = { 
-#				limit = {
-#					OR = {
-#					region = west_estal_region
-#					region = napora_region
-#					region = west_ordica_region
-#					area = area_149
-#					area = area_148
-#					area = area_136
-#					area = area_105 
-#					area = feyel_area
-#					area = unnamed_area_14
-#					}
-#				}
-#				add_devastation = 15
-#				save_event_target_as = prov_raided_yoms
-#			}	
-#			add_country_modifier = { 
-#			name = yom_raided
-#			hidden = yes
-#			duration = 1825
-#			}
-#		}
-#	}
-#	
-#	option = {
-#		name = "estal.1.a"
-#		add_years_of_income = -0.25
-#		goto = prov_raided_yoms
-#	}
-#	option = {
-#		name = "estal.1.b"
-#		event_target:prov_raided_yoms = {
-#		cancel_construction = yes
-#		add_local_autonomy = 15
-#		add_devastation = 10
-#		}
-#		goto = prov_raided_yoms
-#	}
-#	
-#}
+namespace = estal
+
+country_event = {
+	id = estal.1
+	title = estal.1.t
+	desc = estal.1.d
+	picture = VILLAGE_BURNING_eventPicture
+	
+	trigger = {
+		NOT = {
+			has_country_modifier = yom_raided_timer
+		}
+        NOT = {
+			technology_group = antestal_yom_tech_gr
+		}
+        OR = {
+			exists = HSH
+			exists = HOF
+		}
+		any_owned_province = {
+			OR = {
+				region = west_estal_region
+				region = napora_region
+				region = west_ordica_region
+				area = area_149
+				area = area_148
+				area = area_136
+				area = area_105 
+				area = feyel_area
+				area = unnamed_area_14
+			}
+        }
+	}
+	
+	mean_time_to_happen = {
+		months = 30
+	}
+
+	immediate = {
+        hidden_effect = {
+			add_country_modifier = {
+                name = yom_raided_timer
+                duration = 1825
+                hidden = yes
+            }
+            random_owned_province = { 
+				limit = {
+					OR = {
+					    region = west_estal_region
+					    region = napora_region
+					    region = west_ordica_region
+					    area = area_149
+					    area = area_148
+					    area = area_136
+					    area = area_105 
+					    area = feyel_area
+					    area = unnamed_area_14
+					}
+				}
+				add_devastation = 15
+				save_event_target_as = prov_raided_yoms
+			}
+		}
+	}
+	
+	option = {
+		name = "estal.1.a"
+		add_years_of_income = -0.25
+		goto = prov_raided_yoms
+	}
+	option = {
+		name = "estal.1.b"
+		event_target:prov_raided_yoms = {
+		    cancel_construction = yes
+            add_local_autonomy = 15
+		    add_devastation = 10
+		}
+		goto = prov_raided_yoms
+	}
+}

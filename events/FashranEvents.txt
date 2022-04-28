@@ -513,6 +513,7 @@ country_event = { #Vanoman Question
             who = VAN
             modifier = fashros_stole_land
         }
+        add_truce_with = VAN
     }
     option = { #Offer a deal
         name = fashros.5.b
@@ -796,11 +797,117 @@ country_event = { #Emtik provs lost
 
     option = { 
         name = fashros.9.a
+        ai_chance = {
+            factor = 1
+        }
 		5692 = { 
 			remove_province_modifier = emtik_rights 
 		}
 		5691 = { 	
 			remove_province_modifier = emtik_rights 
 		}
+    }
+}
+
+country_event = {
+    id = fashros.10
+    title = fashros.10.t
+    desc = fashros.10.d
+    picture = MONGOL_BANNERS_eventPicture
+    hidden = yes
+    fire_only_once = yes
+    trigger = {
+        owns_core_province = 5862
+        is_year = 218
+        ai = yes
+    }
+    mean_time_to_happen = {
+        months = 3
+    }
+    option = {
+        name = fashros.10.a
+        ai_chance = {
+            factor = 1
+        }
+        declare_war_with_cb = {
+            who = NOZ
+            casus_belli = cb_horde_vs_civ
+        }
+    }
+}
+
+country_event = {
+	id = fashros.11
+	title = fashros.11.t
+	picture = WOUNDED_SOLDIERS_eventPicture
+	desc = fashros.11.d
+
+	fire_only_once = yes
+	
+	trigger = { 
+		tag = FAS
+		FAS = {
+			controls = 5840
+		}
+		NOZ = {
+			owns = 5840 
+		}
+        is_year = 215
+		NOT = {
+            is_year = 240
+        }
+		NOT = {
+			NOZ = { total_development = 100 }
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = fashros.11.a
+		ai_chance = { factor = 1 }
+		FAS = {
+			nuzoto_area = {
+				limit = { owned_by = NOZ }
+				cede_province = FAS
+			}
+			toza_area = {
+				limit = { owned_by = NOZ }
+				cede_province = FAS
+            }
+		}
+	}
+}
+
+country_event = {
+    id = fashros.12
+    title = fashros.12.t
+    picture = WOUNDED_SOLDIERS_eventPicture
+    desc = fashros.12.d
+
+    hidden = yes
+
+    trigger = {
+        ai = yes
+        5693 = {
+            is_claim = FAS
+        }
+        NOT = {
+            is_year = 290
+        }
+    }
+
+    mean_time_to_happen = {
+        days = 1
+    }
+
+    option = {
+        name = fashros.12.a
+        ai_chance = { factor = 1 }
+        5693 = {
+            remove_claim = FAS
+        }
     }
 }

@@ -35,7 +35,7 @@
  ##############################################
  rdum_migrate_tooltip: "We will lose all our current core provinces and instead migrate to the §YBrula §Wregion."
  spread_tonmo_aspect_tooltip: "A random §Yrival §Wcountry will lose §R1 §Wstability."
- kin_kapolia_tooltip: "If we complete this mission while having the Ghaloya, Aelbitrago, Mikledonia, Degladon, Geccis, Maru and Herrim areas owned by us or our non-tributary subjects:\n\n§Y[Root.GetName] §Wgains a permanent claim on §YEast Emastalia §WRegion.\n\nIf we complete this mission while being §YLathvy§W, being allied to §YKapolia §Wwith them having §G+200 §Wopinion of us, and having an army at least §G2.0 §Wtimes as strong as theirs:\n\nInherit §YKapolia§W."
+ kin_kapolia_tooltip: "If we complete this mission while having the Ghaloya, Aelbitrago, Mikledonia, Degladon, Geccis, Maru and Herrim areas owned by us or our non-tributary subjects:\n\n§Y[Root.GetName] §Wgains permanent claims on §YBohora §Wand §YKachikia §WAreas.\n\nIf we complete this mission while being §YLathvy§W, being allied to §YKapolia §Wwith them having §G+200 §Wopinion of us, and having an army at least §G2.0 §Wtimes the size of theirs:\n\nInherit §YKapolia§W."
  LATHVY_QEUSTION_FIRED: "The event '§YThe Lathvy Question§W' has happened."
  kin_zealot_personality: "Our rulers will be §G2.0 §Wtimes as likely to receive the §YZealot §Wruler personality."
  kin_true_faith_tooltip: "Every owned §Y[Root.Religion.GetName] §Wprovince gets '§YJasuan Piety§W' for\n§Y10 years§W, giving the following effects:\nLocal Development Cost: §G-10%\n§WLocal Tax Modifier: §G+10%"
