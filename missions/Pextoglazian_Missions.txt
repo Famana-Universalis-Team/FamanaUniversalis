@@ -705,9 +705,11 @@ pex_6 = { #Post-disaster missions
             is_defender_of_faith = yes
             piety = 1
             NOT = {
-                AND = {
-                    religion_group = lathvy_group
-                    is_rival = PEX
+                any_country = {
+                    AND = {
+                        religion_group = lathvy_group
+                        is_rival = PEX
+                    }
                 }
             }
         }
