@@ -765,7 +765,10 @@ pex_6 = { #Post-disaster missions
         required_missions = { pex_the_great_crusade pex_conquer_kapolia }
         position = 12
         trigger = {
-            
+            total_development = 2000
+            army_size = 300
+            religious_unity = 0.90
+            religion_group = lathvy
         }
         effect = {
             override_country_name = THE_LATHVY_EMPIRE
@@ -867,6 +870,12 @@ pex_7 = { #Post-disaster missions Right side
 			}
         }
         effect = {
+            add_army_professionalism = 0.025
+            add_army_tradition = 10
+            add_ruler_modifier = {
+                name = pex_lessons_degladon
+                duration = -1
+            }
         }
         provinces_to_highlight = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
@@ -920,13 +929,22 @@ pex_8 = { #Post-disaster missions Right side
         required_missions = { pex_revenge_on_oppia pex_invade_western_ordica pex_champion_of_ara }
         position = 11
         trigger = {
-            
+            num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 165
+				superregion = west_estal_superregion
+			}
         }
         effect = {
-            
+            west_estal_superregion = { add_permanent_claim = ROOT }
+            add_yearly_manpower	= 0.8
+            add_country_modifier = {
+                name = pex_begin_crusade
+                duration = 9125
+            }
         }
         provinces_to_highlight = {
-            
+            NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			superregion = west_estal_superregion
         }
     }
 }

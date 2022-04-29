@@ -572,7 +572,7 @@ country_event = {
 	id = pexto.17
 	title = pexto.17.t
 	desc = pexto.17.d
-	picture = REFORM_eventPicture
+	picture = POPE_PREACHING_eventPicture
 	fire_only_once = yes
 
 	is_triggered_only = yes
@@ -594,6 +594,10 @@ country_event = {
 			MOX = {
 				change_government = theocracy
 				add_government_reform = leading_clergy_reform
+				set_religious_school = {
+                    group = lathvy_group
+                    school = pextoglazian_school
+                }
 			}
 		}
 		custom_tooltip = pex_moxon_diocese
@@ -611,7 +615,6 @@ country_event = {
 			discount = yes
 			culture = Lerushian
 			religion = lathvy
-			location = 5361
 		}
 	}
 }
