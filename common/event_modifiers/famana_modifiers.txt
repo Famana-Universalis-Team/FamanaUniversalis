@@ -623,3 +623,12 @@ pex_emastalia_province = {
 pex_cultural_revival = {
     num_accepted_cultures = 2
 }
+
+pex_the_ordic_galley = {
+    naval_forcelimit_modifier = 0.10
+    ship_durability = 0.05
+}
+
+pex_admin_eff = {
+    administrative_efficiency = 0.05
+}

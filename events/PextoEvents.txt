@@ -567,3 +567,51 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = pexto.17
+	title = pexto.17.t
+	desc = pexto.17.d
+	picture = REFORM_eventPicture
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = pexto.17.a
+		ai_chance = { factor = 5 }
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					region = moxon_region
+				}
+				cede_province = MOX
+				add_core = MOX
+			}
+			PEX = {
+				create_march = MOX
+			}
+			MOX = {
+				change_government = theocracy
+				add_government_reform = leading_clergy_reform
+			}
+		}
+		custom_tooltip = pex_moxon_diocese
+		add_country_modifier = {
+			name = pex_admin_eff
+			duration = -1
+		}
+	}
+	option = {
+		name = pexto.17.b
+		ai_chance = { factor = 3 }
+		define_advisor = {
+			type = inquisitor
+			skill = 3
+			discount = yes
+			culture = Lerushian
+			religion = lathvy
+			location = 5361
+		}
+	}
+}

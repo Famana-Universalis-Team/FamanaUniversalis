@@ -694,9 +694,6 @@ country_event = {
 	hidden = yes
 	is_triggered_only = yes
 
-	mean_time_to_happen = {
-		months = 5
-	}
 	immediate = {
 		add_country_modifier = {
 			name = "debug_kill"
