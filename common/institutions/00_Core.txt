@@ -553,57 +553,13 @@ new_world_i = {
 			factor = 0.6
 			scale = yes
 			potential = {
-				owner = {
-					religion = tonmo
-				}
+				religion = tonmo
 				province_has_center_of_trade_of_level = 1
-				NOT = { province_has_center_of_trade_of_level = 2 }
 			}
 			custom_trigger_tooltip = {
 				tooltip = tonmo_tradecenter_1
-				owner = {
-					religion = tonmo
-				}
+				religion = tonmo
 				province_has_center_of_trade_of_level = 1
-				NOT = { province_has_center_of_trade_of_level = 2 }
-			}
-		}
-
-		modifier = {
-			factor = 0.9
-			scale = yes
-			potential = {
-				owner = {
-					religion = tonmo
-				}
-				province_has_center_of_trade_of_level = 2
-				NOT = { province_has_center_of_trade_of_level = 3 }
-			}
-			custom_trigger_tooltip = {
-				tooltip = tonmo_tradecenter_2
-				owner = {
-					religion = tonmo
-				}
-				province_has_center_of_trade_of_level = 2
-				NOT = { province_has_center_of_trade_of_level = 3 }
-			}
-		}
-
-		modifier = {
-			factor = 1.2
-			scale = yes
-			potential = {
-				owner = {
-					religion = tonmo
-				}
-				province_has_center_of_trade_of_level = 3
-			}
-			custom_trigger_tooltip = {
-				tooltip = tonmo_tradecenter_3
-				owner = {
-					religion = tonmo
-				}
-				province_has_center_of_trade_of_level = 3
 			}
 		}
 
@@ -659,8 +615,10 @@ new_world_i = {
 			factor = 0.48
 			scale = yes
 			potential = {
-    			province_has_center_of_trade_of_level = 1
-    			NOT = { province_has_center_of_trade_of_level = 2 }
+    			OR = {
+					province_has_center_of_trade_of_level = 1
+					is_capital = yes
+				}
 				OR = {
 					any_trade_node_member_province = {
         				new_world_i = 100
@@ -674,56 +632,14 @@ new_world_i = {
 							}
     					}
 					}
-					is_capital = yes
 				}
 			}
 			custom_trigger_tooltip = {
 				tooltip = friendly_tonmo_numerals_tradecenter_1
-				province_has_center_of_trade_of_level = 1
-    			NOT = { province_has_center_of_trade_of_level = 2 }
-    			OR = {
-					any_trade_node_member_province = {
-        				new_world_i = 100
-        				province_has_center_of_trade_of_level = 1
-    				}
-					owner = {
-						any_neighbor_country = {
-							any_owned_province = {
-								new_world_i = 100
-        						province_has_center_of_trade_of_level = 1
-							}
-    					}
-					}
+				OR = {
+					province_has_center_of_trade_of_level = 1
 					is_capital = yes
 				}
-			}
-		}
-
-		modifier = {
-			factor = 0.66
-			scale = yes
-			potential = {
-				province_has_center_of_trade_of_level = 2
-    			NOT = { province_has_center_of_trade_of_level = 3 }
-    			OR = {
-					any_trade_node_member_province = {
-        				new_world_i = 100
-        				province_has_center_of_trade_of_level = 1
-    				}
-					owner = {
-						any_neighbor_country = {
-							any_owned_province = {
-								new_world_i = 100
-        						province_has_center_of_trade_of_level = 1
-							}
-    					}
-					}
-				}
-			}
-			custom_trigger_tooltip = {
-				tooltip = friendly_tonmo_numerals_tradecenter_2
-				province_has_center_of_trade_of_level = 2
-    			NOT = { province_has_center_of_trade_of_level = 3 }
     			OR = {
 					any_trade_node_member_province = {
         				new_world_i = 100
@@ -742,40 +658,26 @@ new_world_i = {
 		}
 
 		modifier = {
-			factor = 0.9
+			factor = 0.48
 			scale = yes
 			potential = {
-				province_has_center_of_trade_of_level = 3
-    			OR = {
-					any_trade_node_member_province = {
-        				new_world_i = 100
-        				province_has_center_of_trade_of_level = 1
-    				}
-					owner = {
-						any_neighbor_country = {
-							any_owned_province = {
-								new_world_i = 100
-        						province_has_center_of_trade_of_level = 1
-							}
-    					}
+				region = {
+					any_province = {
+						AND = {
+							new_world_i = 100
+        					province_has_center_of_trade_of_level = 1
+						}
 					}
 				}
 			}
 			custom_trigger_tooltip = {
-				tooltip = friendly_tonmo_numerals_tradecenter_3
-				province_has_center_of_trade_of_level = 3
-    			OR = {
-					any_trade_node_member_province = {
-        				new_world_i = 100
-        				province_has_center_of_trade_of_level = 1
-    				}
-					owner = {
-						any_neighbor_country = {
-							any_owned_province = {
-								new_world_i = 100
-        						province_has_center_of_trade_of_level = 1
-							}
-    					}
+				tooltip = test
+				region = {
+					any_province = {
+						AND = {
+							new_world_i = 100
+        					province_has_center_of_trade_of_level = 1
+						}
 					}
 				}
 			}
