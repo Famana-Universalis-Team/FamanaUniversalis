@@ -562,38 +562,68 @@ pex_6 = { #Post-disaster missions
                     unrest = 0
                 }
             }
-            PLM = {
-                has_opinion = {
-	                who = ROOT
-	                value = 200
+            if = {
+                limit = {
+                    PLM = { is_subject_of = PEX }
                 }
-                NOT = {
-                    liberty_desire = 1
-                }
-            }
-            PHL = {
-                has_opinion = {
-	                who = ROOT
-	                value = 200
-                }
-                NOT = {
-                    liberty_desire = 1
+                PLM = {
+                    has_opinion = {
+	                    who = ROOT
+	                    value = 200
+                    }
+                    NOT = {
+                        liberty_desire = 1
+                    }
                 }
             }
-            PTG = {
-                has_opinion = {
-	                who = ROOT
-	                value = 200
+            if = {
+                limit = {
+                    PHL = { is_subject_of = PEX }
                 }
-                NOT = {
-                    liberty_desire = 1
+                PHL = {
+                    has_opinion = {
+	                    who = ROOT
+	                    value = 200
+                    }
+                    NOT = {
+                        liberty_desire = 1
+                    }
+                }
+            }
+            if = {
+                limit = {
+                    PHL = { is_subject_of = PEX }
+                }
+                PHL = {
+                    has_opinion = {
+	                    who = ROOT
+	                    value = 200
+                    }
+                    NOT = {
+                        liberty_desire = 1
+                    }
                 }
             }
         }
         effect = {
-            vassalize = PLM
-            vassalize = PHL
-            vassalize = PTG
+            if = {
+                limit = {
+                    PLM = { is_subject_of = PEX }
+                }
+                vassalize = PLM
+            }
+            if = {
+                limit = {
+                    PHL = { is_subject_of = PEX }
+                }
+                vassalize = PHL
+            }
+            if = {
+                limit = {
+                    PTG = { is_subject_of = PEX }
+                }
+                vassalize = PTG
+            }
             5203 = {
                 remove_core = NPX
             }
@@ -627,10 +657,43 @@ pex_6 = { #Post-disaster missions
 			}
         }
         effect = {
-            vassalize = PCG
-            vassalize = PJS
-            vassalize = PPX
-            vassalize = PLY
+            if = {
+                limit = {
+                    PCG = { is_subject_of = PEX }
+                }
+                vassalize = PCG
+            }
+            if = {
+                limit = {
+                    PJS = { is_subject_of = PEX }
+                }
+                vassalize = PJS
+            }
+            if = {
+                limit = {
+                    PPX = { is_subject_of = PEX }
+                }
+                vassalize = PPX
+            }
+            if = {
+                limit = {
+                    PLY = { is_subject_of = PEX }
+                }
+                vassalize = PLY
+            }
+            if = {
+                limit = {
+                    NOT = {
+                        PPX = { is_subject_of = PEX }
+                        PLY = { is_subject_of = PEX }
+                        PJS = { is_subject_of = PEX }
+                        PCG = { is_subject_of = PEX }
+                    }
+                }
+                pextoglazia_region = { add_permanent_claim = ROOT }
+                walara_region = { add_permanent_claim = ROOT }
+                lomea_region = { add_permanent_claim = ROOT }
+            }
             add_country_modifier = {
                 duration = -1
                 name = pex_unity_modifier
@@ -639,6 +702,8 @@ pex_6 = { #Post-disaster missions
             usul_area = { add_permanent_claim = ROOT }
             celzion_area = { add_permanent_claim = ROOT }
             unnamed_area_18 = { add_permanent_claim = ROOT }
+            riximi_area = { add_permanent_claim = ROOT }
+            nopatle_area = { add_permanent_claim = ROOT }
         }
         provinces_to_highlight = {
             OR = {
