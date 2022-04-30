@@ -33,41 +33,6 @@ ximal_center_fake = {
 	
 }
 
-ximal_center_real = {
-	potential = {
-		normal_or_historical_nations = yes
-	}
-	
-	#viewer = {
-	#}
-	
-	trigger = {
-		NOT = {
-			religion = delkian
-		}
-		religion = ROOT
-		owner = {
-			AND = {
-				religion = ROOT
-				religion_group = xalian_group
-			}
-		}
-	}
-	
-	prestige = 0.25
-	movement_speed = 0.10
-	
-	#Province scope
-	on_activation = {
-	
-	}
-	
-	on_deactivation = {
-	
-	}
-	
-}
-
 ximal_center_delkian = {
 	potential = {
 		normal_or_historical_nations = yes
@@ -83,8 +48,8 @@ ximal_center_delkian = {
 		}
 	}
 	
-	prestige = 0.5
-	movement_speed = 0.15
+	movement_speed = 0.1
+	prestige = 0.25
 	
 	#Province scope
 	on_activation = {
@@ -127,41 +92,6 @@ morsum_center_fake = {
 	
 }
 
-morsum_center_real = {
-	potential = {
-		normal_or_historical_nations = yes
-	}
-	
-	#viewer = {
-	#}
-	
-	trigger = {
-		NOT = {
-			religion = morian
-		}
-		religion = ROOT
-		owner = {
-			AND = {
-				religion = ROOT
-				religion_group = xalian_group
-			}
-		}
-	}
-	
-	siege_ability = 0.05
-	prestige = 0.25
-	
-	#Province scope
-	on_activation = {
-	
-	}
-	
-	on_deactivation = {
-	
-	}
-	
-}
-
 morsum_center_morian = {
 	potential = {
 		normal_or_historical_nations = yes
@@ -177,8 +107,8 @@ morsum_center_morian = {
 		}
 	}
 	
-	siege_ability = 0.10
-	prestige = 0.5
+	siege_ability = 0.05
+	prestige = 0.25
 	
 	#Province scope
 	on_activation = {
@@ -221,41 +151,6 @@ sixan_center_fake = {
 	
 }
 
-sixan_center_real = {
-	potential = {
-		normal_or_historical_nations = yes
-	}
-	
-	#viewer = {
-	#}
-	
-	trigger = {
-		NOT = {
-			religion = vinian
-		}
-		religion = ROOT
-		owner = {
-			AND = {
-				religion = ROOT
-				religion_group = xalian_group
-			}
-		}
-	}
-	
-	ship_durability = 0.05
-	prestige = 0.25
-	
-	#Province scope
-	on_activation = {
-	
-	}
-	
-	on_deactivation = {
-	
-	}
-	
-}
-
 sixan_center_vinian = {
 	potential = {
 		normal_or_historical_nations = yes
@@ -271,8 +166,8 @@ sixan_center_vinian = {
 		}
 	}
 	
-	ship_durability = 0.1
-	prestige = 0.5
+	ship_durability = 0.05
+	prestige = 0.25
 	
 	#Province scope
 	on_activation = {
@@ -315,41 +210,6 @@ xon_center_fake = {
 	
 }
 
-xon_center_real = {
-	potential = {
-		normal_or_historical_nations = yes
-	}
-	
-	#viewer = {
-	#}
-	
-	trigger = {
-		NOT = {
-			religion = shirian
-		}
-		religion = ROOT
-		owner = {
-			AND = {
-				religion = ROOT
-				religion_group = xalian_group
-			}
-		}
-	}
-	
-	embracement_cost = -0.1
-	prestige = 0.25
-	
-	#Province scope
-	on_activation = {
-	
-	}
-	
-	on_deactivation = {
-	
-	}
-	
-}
-
 xon_center_shirian = {
 	potential = {
 		normal_or_historical_nations = yes
@@ -365,8 +225,8 @@ xon_center_shirian = {
 		}
 	}
 	
-	embracement_cost = -0.15
-	prestige = 0.5
+	embracement_cost = -0.1
+	prestige = 0.25
 	
 	#Province scope
 	on_activation = {
