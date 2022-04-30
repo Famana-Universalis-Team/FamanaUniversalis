@@ -141,7 +141,7 @@ delkia_2 = {
 	del_turn_the_tables = {
 		icon = mission_onward_to_lahore
 		required_missions = { del_modernize_army }
-		position = 2
+		position = 3
 		
 		provinces_to_highlight = {
 			area = hoxona_area
@@ -172,9 +172,58 @@ delkia_2 = {
 			}
 		}
 	}
+
+	del_ropinver_conquest = {
+		icon = mission_onward_to_lahore
+		required_missions = { del_turn_the_tables }
+		position = 4
+		
+		provinces_to_highlight = {
+		OR = {
+			area = ropinver_area
+			area = hoxoi_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			ropinver_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT	
+			}
+			hoxoi_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT	
+			}
+		}	
+		
+		effect = {
+			add_country_modifier = {
+				name = del_wheat_of_the_east
+				duration = 8870
+			}
+		}
+	}
+	
+	del_ideal_borders = {
+		icon = mission_onward_to_lahore
+		required_missions = { del_ropinver_conquest del_ruins_of_jagama del_costal_cites }
+		position = 5
+		
+		trigger = {
+			total_development = 400
+		}
+		
+		effect = {
+		set_government_rank = 3
+			add_country_modifier = {
+				name = del_delkian_empire
+			}	duration = -1
+		}
+	}	
 }	
 	
-# Westward Expansion Branch/Defense Branch
+# Westward Expansion Branch
 delkia_3 = {
 	slot = 3
 	generic = no 
@@ -273,8 +322,41 @@ delkia_3 = {
 			}
 		}
     }
+
+	del_ruins_of_jagama = {
+		icon = mission_sw_against_the_desert
+		required_missions = { del_makyan_frontier }
+		position = 4
+		
+		provinces_to_highlight = {
+			area = bava_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			bava_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT	
+			}
+		}	
+		
+		effect = {
+		    if = {
+				limit = {
+					exists = ESP
+					ZEA = { NOT = { total_development = 50 } }
+				}
+				vassalize = ESP
+			}
+			add_country_modifier = {
+				name = del_west_gomic_coast
+				duration = -1
+			}
+		}
+	}
 }
 
+# Defense and Northern Expnasion Branch
 delkia_4 = {
 	slot = 4
 	generic = no 
@@ -286,4 +368,121 @@ delkia_4 = {
         }
     }
     has_country_shield = yes
+
+	del_protect_the_border = {
+		icon = mission_onward_to_lahore
+		required_missions = { del_modernize_army }
+		position = 2
+		
+		
+		trigger = {
+			5164 = {
+				has_building = fort_15th
+			}
+		}
+		
+		effect = {
+			sixan_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}			
+			marnet_area = {
+				limit = {
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+    }
+	
+	del_sixan_conquest = {
+		icon = mission_onward_to_lahore
+		required_missions = { del_protect_the_border }
+		position = 3
+		
+		
+	provinces_to_highlight = {
+		 OR = {
+			area = sixan_area
+			area = marnet_area
+		}
+		NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			sixan_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT	
+			}	
+			marnet_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT	
+			}
+		}
+		
+		effect = {
+			calla_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}			
+			oxaled_area = {
+				limit = {
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+    }
+	
+	del_costal_cites = {
+		icon = mission_onward_to_lahore
+		required_missions = { del_sixan_conquest }
+		position = 4
+		
+		
+	provinces_to_highlight = {
+		 OR = {
+			area = calla_area
+			area = oxaled_area
+		}
+		NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			calla_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT	
+			}	
+			oxaled_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT	
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = del_naval_building
+				duration = 8870
+			}
+		}
+	}
 }
+
+# Interal Missions
+delkia_5 = {
+	slot = 5
+	generic = no 
+	ai = yes
+	potential = {
+        NOT = { map_setup = map_setum_random }
+        OR = {
+            tag = DEL
+        }
+    }
+    has_country_shield = yes
