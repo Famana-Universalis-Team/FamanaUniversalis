@@ -465,6 +465,41 @@ pex_5 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
     }
+    pex_establish_the_maxan_diocese = {
+        icon = mission_develop_nevas_port
+        required_missions = { pex_defy_syadon }
+        position = 10
+        trigger = {
+            owns_all_provinces = {
+				region = moxon_region
+			}
+        }
+        effect = {
+            country_event = {
+                id = pexto.17
+                days = 30
+            }
+            hidden_effect = {
+                every_known_country = {
+                    limit = {
+                        religious_school = {
+	                        group = lathvy_group
+	                        school = maxan_school
+                        }
+                    }
+                    set_religious_school = {
+                        group = lathvy_group
+                        school = pextoglazian_school
+                    }
+                }
+            }
+            custom_tooltip = pex_maxan_school_convert_tt
+        }
+        provinces_to_highlight = {
+            NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			region = moxon_region
+        }
+    }
 }
 
 pex_6 = { #Post-disaster missions
@@ -527,38 +562,68 @@ pex_6 = { #Post-disaster missions
                     unrest = 0
                 }
             }
-            PLM = {
-                has_opinion = {
-	                who = ROOT
-	                value = 200
+            if = {
+                limit = {
+                    PLM = { is_subject_of = PEX }
                 }
-                NOT = {
-                    liberty_desire = 1
-                }
-            }
-            PHL = {
-                has_opinion = {
-	                who = ROOT
-	                value = 200
-                }
-                NOT = {
-                    liberty_desire = 1
+                PLM = {
+                    has_opinion = {
+	                    who = ROOT
+	                    value = 200
+                    }
+                    NOT = {
+                        liberty_desire = 1
+                    }
                 }
             }
-            PTG = {
-                has_opinion = {
-	                who = ROOT
-	                value = 200
+            if = {
+                limit = {
+                    PHL = { is_subject_of = PEX }
                 }
-                NOT = {
-                    liberty_desire = 1
+                PHL = {
+                    has_opinion = {
+	                    who = ROOT
+	                    value = 200
+                    }
+                    NOT = {
+                        liberty_desire = 1
+                    }
+                }
+            }
+            if = {
+                limit = {
+                    PHL = { is_subject_of = PEX }
+                }
+                PHL = {
+                    has_opinion = {
+	                    who = ROOT
+	                    value = 200
+                    }
+                    NOT = {
+                        liberty_desire = 1
+                    }
                 }
             }
         }
         effect = {
-            vassalize = PLM
-            vassalize = PHL
-            vassalize = PTG
+            if = {
+                limit = {
+                    PLM = { is_subject_of = PEX }
+                }
+                vassalize = PLM
+            }
+            if = {
+                limit = {
+                    PHL = { is_subject_of = PEX }
+                }
+                vassalize = PHL
+            }
+            if = {
+                limit = {
+                    PTG = { is_subject_of = PEX }
+                }
+                vassalize = PTG
+            }
             5203 = {
                 remove_core = NPX
             }
@@ -592,10 +657,43 @@ pex_6 = { #Post-disaster missions
 			}
         }
         effect = {
-            vassalize = PCG
-            vassalize = PJS
-            vassalize = PPX
-            vassalize = PLY
+            if = {
+                limit = {
+                    PCG = { is_subject_of = PEX }
+                }
+                vassalize = PCG
+            }
+            if = {
+                limit = {
+                    PJS = { is_subject_of = PEX }
+                }
+                vassalize = PJS
+            }
+            if = {
+                limit = {
+                    PPX = { is_subject_of = PEX }
+                }
+                vassalize = PPX
+            }
+            if = {
+                limit = {
+                    PLY = { is_subject_of = PEX }
+                }
+                vassalize = PLY
+            }
+            if = {
+                limit = {
+                    NOT = {
+                        PPX = { is_subject_of = PEX }
+                        PLY = { is_subject_of = PEX }
+                        PJS = { is_subject_of = PEX }
+                        PCG = { is_subject_of = PEX }
+                    }
+                }
+                pextoglazia_region = { add_permanent_claim = ROOT }
+                walara_region = { add_permanent_claim = ROOT }
+                lomea_region = { add_permanent_claim = ROOT }
+            }
             add_country_modifier = {
                 duration = -1
                 name = pex_unity_modifier
@@ -604,6 +702,8 @@ pex_6 = { #Post-disaster missions
             usul_area = { add_permanent_claim = ROOT }
             celzion_area = { add_permanent_claim = ROOT }
             unnamed_area_18 = { add_permanent_claim = ROOT }
+            riximi_area = { add_permanent_claim = ROOT }
+            nopatle_area = { add_permanent_claim = ROOT }
         }
         provinces_to_highlight = {
             OR = {
@@ -684,6 +784,8 @@ pex_6 = { #Post-disaster missions
                 duration = 9125
                 name = pex_estali_dominion
             }
+            dotz_area = { add_permanent_claim = ROOT }
+            poto_haroo_area = { add_permanent_claim = ROOT }
         }
         provinces_to_highlight = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
@@ -704,9 +806,10 @@ pex_6 = { #Post-disaster missions
         trigger = {
             is_defender_of_faith = yes
             piety = 1
-            NOT = {
-                any_country = {
-                    AND = {
+            custom_trigger_tooltip = {
+                tooltip = pex_champion_trigger_tt
+                NOT = {
+                    any_country = {
                         religion_group = lathvy_group
                         is_rival = PEX
                     }
@@ -719,6 +822,33 @@ pex_6 = { #Post-disaster missions
                 name = pex_champion_of_ara_modifier
                 duration = -1
             }
+        }
+    }
+
+    pex_the_lathvy_empire = {
+        icon = pex_lathvy_empire_mission
+        required_missions = { pex_the_great_crusade pex_conquer_kapolia }
+        position = 12
+        trigger = {
+            total_development = 2000
+            army_size = 300
+            religious_unity = 0.90
+            religion_group = lathvy
+        }
+        effect = {
+            override_country_name = THE_LATHVY_EMPIRE
+            add_country_modifier = {
+                name = pex_lathvy_empire_modifier
+                duration = -1
+            }
+            hidden_effect = {
+                set_country_flag = lathvy_empire_flag
+                add_government_reform = holy_monarchy_reform_2
+            }
+            hidden_effect = {
+                set_government_rank = 3
+            }
+            custom_tooltip = pex_empire_tt
         }
     }
 }
@@ -735,30 +865,86 @@ pex_7 = { #Post-disaster missions Right side
 
     pex_defy_syadon = {
         icon = mission_city_of_the_world's_desire
-        required_missions = { pex_the_holy_coast pex_defeat_ordica }
+        required_missions = { pex_the_holy_coast }
         position = 9
         trigger = {
-            
+            bohora_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+            kachik_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+            OR = {
+                NOT = { exists = NAF }
+                NAF = { is_subject_of = PEX }
+            }
         }
         effect = {
-            
+            kapolia_region = { add_permanent_claim = ROOT }
+            moxon_region = { add_permanent_claim = ROOT }
+            hidden_effect = {
+                every_owned_province = {
+                    limit = {
+                        culture = Kachik
+                    }
+                    change_culture = Bohoran
+                    change_religion = lathvy
+                    add_base_tax = -1
+                    add_base_production = -1
+                    add_base_manpower = -1
+                }
+                every_known_country = {
+                    limit = {
+                        religious_school = {
+                            group = lathvy_group
+                            school = nafan_school
+                        }
+                    }
+                    set_religious_school = {
+                        group = lathvy_group
+                        school = pextoglazian_school
+                    }
+                }
+            }
+            custom_tooltip = pex_change_nafa_culture
+            if = {
+                limit = {
+                    is_year = 291
+                }
+                custom_tooltip = pex_convert_nafan_school
+            }
         }
         provinces_to_highlight = {
-            
+            NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			OR = {
+                area = bohora_area
+                area = kachik_area
+            }
         }
     }
     pex_conquer_kapolia = {
         icon = mission_conquer_romania
         required_missions = { pex_defy_syadon }
-        position = 10
+        position = 11
         trigger = {
-            
+            kapolia_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
         }
         effect = {
-            
+            add_army_professionalism = 0.025
+            add_army_tradition = 10
+            add_ruler_modifier = {
+                name = pex_lessons_degladon
+                duration = -1
+            }
         }
         provinces_to_highlight = {
-            
+            NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			region = kapolia_region
         }
     }
 }
@@ -778,13 +964,28 @@ pex_8 = { #Post-disaster missions Right side
         required_missions = { pex_holy_restema pex_defeat_ordica }
         position = 9
         trigger = {
-            
+            dotz_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+            poto_haroo_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
         }
         effect = {
-            
+            west_ordica_region = { add_permanent_claim = ROOT }
+            add_country_modifier = {
+                name = pex_the_ordic_galley
+                duration = 9125
+            }
         }
         provinces_to_highlight = {
-            
+            NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			OR = {
+                area = dotz_area
+                area = poto_haroo_area
+            }
         }
     }
 
@@ -793,37 +994,22 @@ pex_8 = { #Post-disaster missions Right side
         required_missions = { pex_revenge_on_oppia pex_invade_western_ordica pex_champion_of_ara }
         position = 11
         trigger = {
-            
+            num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 165
+				superregion = west_estal_superregion
+			}
         }
         effect = {
-            
+            west_estal_superregion = { add_permanent_claim = ROOT }
+            add_yearly_manpower	= 0.8
+            add_country_modifier = {
+                name = pex_begin_crusade
+                duration = 9125
+            }
         }
         provinces_to_highlight = {
-            
-        }
-    }
-
-    pex_the_lathvy_empire = {
-        icon = pex_lathvy_empire_mission
-        required_missions = { pex_the_great_crusade }
-        position = 12
-        trigger = {
-            
-        }
-        effect = {
-            override_country_name = THE_LATHVY_EMPIRE
-            add_country_modifier = {
-                name = pex_lathvy_empire_modifier
-                duration = -1
-            }
-            hidden_effect = {
-                set_country_flag = lathvy_empire_flag
-                add_government_reform = holy_monarchy_reform_2
-            }
-            hidden_effect = {
-                set_government_rank = 3
-            }
-            custom_tooltip = pex_empire_tt
+            NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			superregion = west_estal_superregion
         }
     }
 }

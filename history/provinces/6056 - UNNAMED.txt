@@ -6,11 +6,11 @@ controller = FAS
 culture = South_Nhoman
 religion = tonmo
 hre = no
-base_tax = 1
-base_production = 1
+base_tax = 3
+base_production = 2
 trade_goods = grain
-base_manpower = 1
-capital = "UNNAMED"
+base_manpower = 2
+capital = "Takent"
 is_city = yes
 
 discovered_by = geopyopian_tech_gr

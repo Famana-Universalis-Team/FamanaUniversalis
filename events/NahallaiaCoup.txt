@@ -211,11 +211,10 @@ country_event = {
     option = {
 		name = nhl.5.a
         ai_chance = { factor = 1 }
-        every_province = {
+        every_owned_province = {
             limit = {
                 culture = Tolan
             }
-            owned_by = NHL
             change_culture = Nahallaian
         }
     }
