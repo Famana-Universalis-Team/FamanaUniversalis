@@ -1,0 +1,380 @@
+# Province Triggered modifiers are here.
+# These are added to provinces through the add_province_triggered_modifier effect
+#
+# Effects are fully scriptable here.
+
+ximal_center_fake = {
+	potential = {
+		normal_or_historical_nations = yes
+	}
+	
+	#viewer = {
+	#}
+	
+	trigger = {
+		religion = delkian
+		owner = {
+			NOT = {
+				religion = delkian
+			}
+		}
+	}
+	
+	local_missionary_strength = -0.05
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+	
+}
+
+ximal_center_real = {
+	potential = {
+		normal_or_historical_nations = yes
+	}
+	
+	#viewer = {
+	#}
+	
+	trigger = {
+		NOT = {
+			religion = delkian
+		}
+		religion = ROOT
+		owner = {
+			AND = {
+				religion = ROOT
+				religion_group = xalian_group
+			}
+		}
+	}
+	
+	prestige = 0.25
+	movement_speed = 0.10
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+	
+}
+
+ximal_center_delkian = {
+	potential = {
+		normal_or_historical_nations = yes
+	}
+	
+	#viewer = {
+	#}
+	
+	trigger = {
+		religion = delkian
+		owner = {
+			religion = delkian
+		}
+	}
+	
+	prestige = 0.5
+	movement_speed = 0.15
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+	
+}
+
+morsum_center_fake = {
+	potential = {
+		normal_or_historical_nations = yes
+	}
+	
+	#viewer = {
+	#}
+	
+	trigger = {
+		religion = morian
+		owner = {
+			NOT = {
+				religion = morian
+			}
+		}
+	}
+	
+	local_missionary_strength = -0.05
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+	
+}
+
+morsum_center_real = {
+	potential = {
+		normal_or_historical_nations = yes
+	}
+	
+	#viewer = {
+	#}
+	
+	trigger = {
+		NOT = {
+			religion = morian
+		}
+		religion = ROOT
+		owner = {
+			AND = {
+				religion = ROOT
+				religion_group = xalian_group
+			}
+		}
+	}
+	
+	siege_ability = 0.05
+	prestige = 0.25
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+	
+}
+
+morsum_center_morian = {
+	potential = {
+		normal_or_historical_nations = yes
+	}
+	
+	#viewer = {
+	#}
+	
+	trigger = {
+		religion = morian
+		owner = {
+			religion = morian
+		}
+	}
+	
+	siege_ability = 0.10
+	prestige = 0.5
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+	
+}
+
+sixan_center_fake = {
+	potential = {
+		normal_or_historical_nations = yes
+	}
+	
+	#viewer = {
+	#}
+	
+	trigger = {
+		religion = vinian
+		owner = {
+			NOT = {
+				religion = vinian
+			}
+		}
+	}
+	
+	local_missionary_strength = -0.05
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+	
+}
+
+sixan_center_real = {
+	potential = {
+		normal_or_historical_nations = yes
+	}
+	
+	#viewer = {
+	#}
+	
+	trigger = {
+		NOT = {
+			religion = vinian
+		}
+		religion = ROOT
+		owner = {
+			AND = {
+				religion = ROOT
+				religion_group = xalian_group
+			}
+		}
+	}
+	
+	ship_durability = 0.05
+	prestige = 0.25
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+	
+}
+
+sixan_center_vinian = {
+	potential = {
+		normal_or_historical_nations = yes
+	}
+	
+	#viewer = {
+	#}
+	
+	trigger = {
+		religion = vinian
+		owner = {
+			religion = vinian
+		}
+	}
+	
+	ship_durability = 0.1
+	prestige = 0.5
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+	
+}
+
+xon_center_fake = {
+	potential = {
+		normal_or_historical_nations = yes
+	}
+	
+	#viewer = {
+	#}
+	
+	trigger = {
+		religion = shirian
+		owner = {
+			NOT = {
+				religion = shirian
+			}
+		}
+	}
+	
+	local_missionary_strength = -0.05
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+	
+}
+
+xon_center_real = {
+	potential = {
+		normal_or_historical_nations = yes
+	}
+	
+	#viewer = {
+	#}
+	
+	trigger = {
+		NOT = {
+			religion = shirian
+		}
+		religion = ROOT
+		owner = {
+			AND = {
+				religion = ROOT
+				religion_group = xalian_group
+			}
+		}
+	}
+	
+	embracement_cost = -0.1
+	prestige = 0.25
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+	
+}
+
+xon_center_shirian = {
+	potential = {
+		normal_or_historical_nations = yes
+	}
+	
+	#viewer = {
+	#}
+	
+	trigger = {
+		religion = shirian
+		owner = {
+			religion = shirian
+		}
+	}
+	
+	embracement_cost = -0.15
+	prestige = 0.5
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+	
+}
