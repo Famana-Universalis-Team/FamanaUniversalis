@@ -520,12 +520,12 @@ new_world_i = {
 			religion = tonmo
 			province_has_center_of_trade_of_level = 1
 			development = 10
-			#NOT = {
-			#	OR = {
-			#		region = selka_region
-			#		region = nhoma_region
-			#	}
-			#}
+			NOT = {
+				OR = {
+					region = selka_region
+					region = nhoma_region
+				}
+			}
 		}
 	}
 	
