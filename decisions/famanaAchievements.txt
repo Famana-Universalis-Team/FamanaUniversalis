@@ -22,7 +22,7 @@ country_decisions = {
 				tag = GAX
 			}
 			num_of_owned_provinces_with = {
-				value = 122
+				value = 120
 				religion = morian
 				OR = {
 					region = south_xalia_region
@@ -98,6 +98,33 @@ country_decisions = {
 		effect = {
 			add_country_modifier = {
 				name = achievement_diaspora_modifier
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	achievement_rpw = {
+		major = yes
+		potential = {
+			ironman = yes
+			tag = FAS
+		}
+		allow = {
+			owns_all_provinces = {
+				OR = {
+					region = north_xalia_region
+					region = moria_region
+					region = east_xalia_region
+					region = south_xalia_region
+				}
+			}
+			NOT = { is_year = 300 }
+		}
+		effect = {
+			add_country_modifier = {
+				name = achievement_rpw_modifier
 				duration = -1
 			}
 		}
