@@ -520,6 +520,12 @@ new_world_i = {
 			religion = tonmo
 			province_has_center_of_trade_of_level = 1
 			development = 10
+			#NOT = {
+			#	OR = {
+			#		region = selka_region
+			#		region = nhoma_region
+			#	}
+			#}
 		}
 	}
 	
@@ -624,18 +630,22 @@ new_world_i = {
         				new_world_i = 100
         				province_has_center_of_trade_of_level = 1
     				}
-					owner = {
-						any_neighbor_country = {
-							any_owned_province = {
-								new_world_i = 100
-        						province_has_center_of_trade_of_level = 1
-							}
-    					}
+					#owner = {
+					#	any_neighbor_country = {
+					#		any_owned_province = {
+					#			new_world_i = 100
+        			#			province_has_center_of_trade_of_level = 1
+					#		}
+    				#	}
+					#}
+					region_for_scope_province = {
+						new_world_i = 100
+						province_has_center_of_trade_of_level = 1
 					}
 				}
 			}
 			custom_trigger_tooltip = {
-				tooltip = friendly_tonmo_numerals_tradecenter_1
+				tooltip = friendly_tonmo_numerals_tradecenter
 				OR = {
 					province_has_center_of_trade_of_level = 1
 					is_capital = yes
@@ -645,39 +655,17 @@ new_world_i = {
         				new_world_i = 100
         				province_has_center_of_trade_of_level = 1
     				}
-					owner = {
-						any_neighbor_country = {
-							any_owned_province = {
-								new_world_i = 100
-        						province_has_center_of_trade_of_level = 1
-							}
-    					}
-					}
-				}
-			}
-		}
-
-		modifier = {
-			factor = 0.48
-			scale = yes
-			potential = {
-				region = {
-					any_province = {
-						AND = {
-							new_world_i = 100
-        					province_has_center_of_trade_of_level = 1
-						}
-					}
-				}
-			}
-			custom_trigger_tooltip = {
-				tooltip = test
-				region = {
-					any_province = {
-						AND = {
-							new_world_i = 100
-        					province_has_center_of_trade_of_level = 1
-						}
+					#owner = {
+					#	any_neighbor_country = {
+					#		any_owned_province = {
+					#			new_world_i = 100
+        			#			province_has_center_of_trade_of_level = 1
+					#		}
+    				#	}
+					#}
+					region_for_scope_province = {
+						new_world_i = 100
+						province_has_center_of_trade_of_level = 1
 					}
 				}
 			}
