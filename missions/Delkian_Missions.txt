@@ -325,7 +325,7 @@ delkia_3 = {
 
 	del_ruins_of_jagama = {
 		icon = mission_sw_against_the_desert
-		required_missions = { del_makyan_frontier }
+		required_missions = { del_deal_with_gadea }
 		position = 4
 		
 		provinces_to_highlight = {
@@ -486,3 +486,35 @@ delkia_5 = {
         }
     }
     has_country_shield = yes
+
+	delkia_xalian_unite_the_faiths = {
+		icon = mission_hands_praying
+		required_missions = {  } #None
+		trigger = {
+            AND = {
+                religion_group = xalian_group
+                religious_unity	= 0.80
+                num_of_active_blessings	= 4
+                owns_core_province = 5388
+                owns_core_province = 5458
+                owns_core_province = 5163
+                owns_core_province = 5411
+            }
+        }
+		effect = {
+			add_country_modifier = {
+				name = united_the_xalian_faith
+                duration = -1
+			}
+		}
+		provinces_to_highlight = {
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			OR = {
+				province_id = 5458
+				province_id = 5163
+				province_id = 5411
+				province_id = 5388
+			}
+		}
+	}
+}

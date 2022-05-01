@@ -1,0 +1,53 @@
+tonxara_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		OR = {
+            tag = NHM
+            tag = JFX
+            tag = KSL
+            tag = HOY
+        }
+	}
+	has_country_shield = yes
+
+    fas_secure_the_empire = {
+		icon = mission_great_wall
+		required_missions = {}
+		trigger = {}
+		effect = {}
+	}
+
+    fas_supremacy_of_the_clouds = {
+		icon = mission_conquer_5_states
+		required_missions = {fas_secure_the_empire}
+		trigger = {}
+		effect = {}
+	}
+
+    fas_birth_of_the_tonmo_world = {
+		icon = mission_restore_kiev
+		required_missions = {fas_supremacy_of_the_clouds}
+		trigger = {
+		}
+		effect = {}
+	}
+}
+
+tonxara_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		OR = {
+            tag = NHM
+            tag = JFX
+            tag = KSL
+            tag = HOY
+        }
+	}
+	has_country_shield = yes
+}

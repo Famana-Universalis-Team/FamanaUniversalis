@@ -657,15 +657,6 @@ fas_2 = {
 			superregion = ga_xal_superregion
 		}
 	}
-
-	fas_birth_of_the_tonmo_world = {
-		icon = mission_restore_kiev
-		required_missions = {fas_supremacy_of_the_clouds}
-		position = 17
-		trigger = {
-		}
-		effect = {}
-	}
 }
 
 fas_3 = {
@@ -948,20 +939,6 @@ fas_3 = {
 		trigger = {}
 		effect = {}
 	}
-
-	fas_secure_the_empire = {
-		icon = mission_great_wall
-		required_missions = {fas_the_three_crowns}
-		trigger = {}
-		effect = {}
-	}
-
-	fas_supremacy_of_the_clouds = {
-		icon = mission_conquer_5_states
-		required_missions = {fas_secure_the_empire}
-		trigger = {}
-		effect = {}
-	}
 }
 
 fas_4 = {
@@ -1179,14 +1156,6 @@ fas_4 = {
 				}
 			}
 		}
-	}
-
-	fas_leaving_the_steppe = {
-		icon = mission_advance_to_the_dnieper
-		required_missions = {fas_supremacy_of_the_clouds}
-		position = 17
-		trigger = {}
-		effect = {}
 	}
 }
 
