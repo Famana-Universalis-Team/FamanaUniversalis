@@ -1197,6 +1197,7 @@ country_event = {
         }
         switch_tag = KSL
         hidden_effect = {
+            release_all_subjects = yes
             release = JFX
             release = NHM
             release = HOY
@@ -1247,6 +1248,7 @@ country_event = {
         }
         switch_tag = JFX
         hidden_effect = {
+            release_all_subjects = yes
             release = KSL
             release = NHM
             release = HOY
@@ -1296,6 +1298,7 @@ country_event = {
         }
         switch_tag = NHM
         hidden_effect = {
+            release_all_subjects = yes
             release = KSL
             release = JFX
             release = HOY
@@ -1345,6 +1348,7 @@ country_event = {
         }
         switch_tag = HOY
         hidden_effect = {
+            release_all_subjects = yes
             release = KSL
             release = JFX
             release = NHM
@@ -1386,6 +1390,7 @@ country_event = {
         name = fashros.17.e
         ai_chance = { factor = 10 }
         hidden_effect = {
+            release_all_subjects = yes
             release = KSL
             release = JFX
             release = NHM

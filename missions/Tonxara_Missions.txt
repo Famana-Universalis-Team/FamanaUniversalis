@@ -16,15 +16,140 @@ tonxara_1 = {
     fas_secure_the_empire = {
 		icon = mission_great_wall
 		required_missions = {}
-		trigger = {}
-		effect = {}
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = tonxara_rival_tt
+				NOT = {
+					any_rival_country = {
+						army_size = ROOT
+					}
+				}
+			}
+			power_projection = 80
+			if = {
+				limit = {
+					tag = NHM
+				}
+				custom_trigger_tooltip = {
+					tooltip = nhm_defeat_tt
+					OR = {
+						has_won_war_against = {
+							who = KSL
+							max_years_since = 25
+						}
+						has_won_war_against = {
+							who = HOY
+							max_years_since = 25
+						}
+						has_won_war_against = {
+							who = JFX
+							max_years_since = 25
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = HOY
+				}
+				custom_trigger_tooltip = {
+					tooltip = hoy_defeat_tt
+					OR = {
+						has_won_war_against = {
+							who = KSL
+							max_years_since = 25
+						}
+						has_won_war_against = {
+							who = NHM
+							max_years_since = 25
+						}
+						has_won_war_against = {
+							who = JFX
+							max_years_since = 25
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = KSL
+				}
+				custom_trigger_tooltip = {
+					tooltip = ksl_defeat_tt
+					OR = {
+						has_won_war_against = {
+							who = HOY
+							max_years_since = 25
+						}
+						has_won_war_against = {
+							who = NHM
+							max_years_since = 25
+						}
+						has_won_war_against = {
+							who = JFX
+							max_years_since = 25
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = JFX
+				}
+				custom_trigger_tooltip = {
+					tooltip = jfx_defeat_tt
+					OR = {
+						has_won_war_against = {
+							who = KSL
+							max_years_since = 25
+						}
+						has_won_war_against = {
+							who = NHM
+							max_years_since = 25
+						}
+						has_won_war_against = {
+							who = HOY
+							max_years_since = 25
+						}
+					}
+				}
+			}
+		}
+		effect = {
+			add_army_tradition = 25
+			add_country_modifier = {
+				name = tonxara_rise_new
+				duration = 18250
+			}
+		}
 	}
 
     fas_supremacy_of_the_clouds = {
 		icon = mission_conquer_5_states
 		required_missions = {fas_secure_the_empire}
-		trigger = {}
-		effect = {}
+		trigger = {
+			monthly_income = 100
+			custom_trigger_tooltip = {
+				tooltip = tonxara_supr_tt
+				NOT = {
+					any_owned_province = {
+						NOT = {
+							is_state_core = yes
+							religion = tonmo
+						}
+					}
+				}
+			}
+		}
+		effect = {
+			add_prestige = 20
+			define_advisor = {
+				type = philosopher
+				skill = 3
+				religion = tonmo
+				discount = yes
+			}
+		}
 	}
 
     fas_birth_of_the_tonmo_world = {
