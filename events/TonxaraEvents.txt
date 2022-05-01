@@ -1,0 +1,174 @@
+namespace = tonxara
+
+country_event = { #nhoma
+    id = tonxara.1
+    title = tonxara.1.t
+    picture = GOOD_WITH_MONARCH_eventPicture
+    desc = tonxara.1.d
+    fire_only_once = yes
+    major = yes
+
+    trigger = {
+        tag = NHM
+    }
+    option = {
+        name = tonxara.1.a
+        ai_chance = { factor = 1 }
+        if = {
+            limit = {
+                owns = 5963
+            }
+            set_capital = 5963
+        }
+        add_prestige = 10
+        add_adm_power = 100
+        add_dip_power = 100
+        add_mil_power = 100
+        add_manpower = 20
+        hidden_effect = {
+            every_country = {
+                every_owned_province = {
+                    remove_core = PREV
+                }
+            }
+            country_event = {
+                id = fashros.22
+                days = 1
+            }
+            ###Spawn in the Tonmo Cores here.
+
+
+        }
+    }
+}
+
+country_event = { #kisholi
+    id = tonxara.2
+    title = tonxara.2.t
+    picture = GOOD_WITH_MONARCH_eventPicture
+    desc = tonxara.2.d
+    fire_only_once = yes
+    major = yes
+
+    trigger = {
+        tag = KSL
+    }
+    option = {
+        name = tonxara.2.a
+        ai_chance = { factor = 1 }
+        if = {
+            limit = {
+                owns = 5644
+            }
+            set_capital = 5644
+        }
+        add_prestige = 10
+        add_adm_power = 100
+        add_dip_power = 100
+        add_mil_power = 100
+        add_manpower = 20
+        hidden_effect = {
+            every_country = {
+                every_owned_province = {
+                    remove_core = PREV
+                }
+            }
+            country_event = {
+                id = fashros.22
+                days = 1
+            }
+            ###Spawn in the Tonmo Cores here. i dont think most of the tags exist yet though
+
+
+            every_province = {
+                limit = {
+                    region = kapolia_region
+                    exists = NAF
+                }
+                add_claim = NAF
+            }
+        }
+    }
+}
+
+country_event = { #jafxoi
+    id = tonxara.3
+    title = tonxara.3.t
+    picture = GOOD_WITH_MONARCH_eventPicture
+    desc = tonxara.3.d
+    fire_only_once = yes
+    major = yes
+
+    trigger = {
+        tag = JFX
+    }
+    option = {
+        name = tonxara.3.a
+        ai_chance = { factor = 1 }
+        if = {
+            limit = {
+                owns = 5388
+            }
+            set_capital = 5388
+        }
+        add_prestige = 10
+        add_adm_power = 100
+        add_dip_power = 100
+        add_mil_power = 100
+        add_manpower = 20
+        hidden_effect = {
+            every_country = {
+                every_owned_province = {
+                    remove_core = PREV
+                }
+            }
+            country_event = {
+                id = fashros.22
+                days = 1
+            }
+            ###Spawn in the Tonmo Cores here. i dont think most of the tags exist yet though
+
+        }
+    }
+}
+
+country_event = { #hoyros
+    id = tonxara.4
+    title = tonxara.4.t
+    picture = GOOD_WITH_MONARCH_eventPicture
+    desc = tonxara.4.d
+    fire_only_once = yes
+    major = yes
+
+    trigger = {
+        tag = HOY
+    }
+    option = {
+        name = tonxara.4.a
+        ai_chance = { factor = 1 }
+        if = {
+            limit = {
+                owns = 7058
+            }
+            set_capital = 7058
+        }
+        add_prestige = 10
+        add_adm_power = 100
+        add_dip_power = 100
+        add_mil_power = 100
+        add_manpower = 20
+        hidden_effect = {
+            every_country = {
+                every_owned_province = {
+                    remove_core = PREV
+                }
+            }
+            country_event = {
+                id = fashros.22
+                days = 1
+            }
+            ###Spawn in the Tonmo Cores here. i dont think most of the tags exist yet though
+
+        }
+    }
+}

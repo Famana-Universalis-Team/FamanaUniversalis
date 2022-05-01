@@ -792,7 +792,7 @@ country_decisions = {
 			adm_tech = 5
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
-			owns_core_province = 5450
+			owns_core_province = 5416
 			owns_core_province = 5411
 			owns_core_province = 5441
 			owns_core_province = 5442
@@ -1946,6 +1946,18 @@ country_decisions = {
 					add_country_modifier = {
 						name = "cegon_isolation"
 						duration = -1
+					}
+					LAG = {
+						if = {
+							limit = {
+								ai = yes
+							}
+							add_ruler_personality = conquerer_personality
+							set_ai_personality = {
+								personality = ai_militarist
+								locked = yes
+							}
+						}
 					}
 				}
 			}

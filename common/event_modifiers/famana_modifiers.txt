@@ -662,3 +662,7 @@ tonxara_bonus_modifier = {
     stability_cost_modifier = -0.1
     religious_unity = 0.25
 }
+
+fashran_conquest_boost = {
+    warscore_cost_vs_other_religion = -0.10
+}

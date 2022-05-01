@@ -286,6 +286,16 @@ country_event = {
 			dip = 6
 			mil = 6
 		}
+		if = {
+			limit = {
+				ai = yes
+			}
+			add_ruler_personality = conquerer_personality
+			set_ai_personality = {
+				personality = ai_militarist
+				locked = yes
+			}
+		}
 		change_primary_culture = Kachik
 		set_religious_school = {
 			group = lathvy_group

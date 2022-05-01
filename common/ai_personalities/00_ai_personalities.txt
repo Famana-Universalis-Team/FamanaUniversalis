@@ -109,6 +109,10 @@ ai_capitalist = {
 			factor = 1.5
 			tag = UMZ
 		}
+		modifier = {
+			factor = 0
+			tag = FAS
+		}
 	}
 	icon = 2
 }
@@ -229,6 +233,10 @@ ai_diplomat = {
 		modifier = {
 			factor = 1.5
 			tag = BLK
+		}
+		modifier = {
+			factor = 0
+			tag = FAS
 		}
 	}
 	icon = 3
@@ -478,7 +486,11 @@ ai_colonialist = {
 		modifier = {
 			factor = 1.5
 			adm = 4
-		}		
+		}
+		modifier = {
+			factor = 0
+			tag = FAS
+		}
 		modifier = {
 			factor = 1.5
 			adm = 5
@@ -529,7 +541,11 @@ ai_balanced = {
 		modifier = {
 			factor = 1.25
 			always = yes # higher base chance
-		}	
+		}
+		modifier = {
+			factor = 0
+			tag = FAS
+		}
 		modifier = {
 			factor = 100
 			ai = no

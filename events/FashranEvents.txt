@@ -1028,12 +1028,12 @@ country_event = {
                 }
             }
 
-            all_owned_province = {
+            every_owned_province = {
                 limit = {
                     superregion = jasua_superregion
                     superregion = tonmo_supperregion
                 }
-                all_country = {
+                every_country = {
                     remove_core = PREV
                 }
             }
@@ -1192,7 +1192,10 @@ country_event = {
         name = fashros.17.a
         ai_chance = { factor = 0 }
         restore_country_name = yes
-        change_tag = KSL
+        hidden_effect = {
+            release = KSL
+        }
+        switch_tag = KSL
         hidden_effect = {
             release = JFX
             release = NHM
@@ -1239,7 +1242,10 @@ country_event = {
         name = fashros.17.b
         ai_chance = { factor = 0 }
         restore_country_name = yes
-        change_tag = JFX
+        hidden_effect = {
+            release = JFX
+        }
+        switch_tag = JFX
         hidden_effect = {
             release = KSL
             release = NHM
@@ -1285,7 +1291,10 @@ country_event = {
         name = fashros.17.c
         ai_chance = { factor = 0 }
         restore_country_name = yes
-        change_tag = NHM
+        hidden_effect = {
+            release = NHM
+        }
+        switch_tag = NHM
         hidden_effect = {
             release = KSL
             release = JFX
@@ -1331,7 +1340,10 @@ country_event = {
         name = fashros.17.f
         ai_chance = { factor = 0 }
         restore_country_name = yes
-        change_tag = HOY
+        hidden_effect = {
+            release = HOY
+        }
+        switch_tag = HOY
         hidden_effect = {
             release = KSL
             release = JFX
@@ -1488,5 +1500,143 @@ country_event = {
                 release = ZBL
             }
         }
+    }
+}
+
+#free warscore for rapid conquest of jasua region
+country_event = {
+    id = fashros.20
+    title = fasros.20.t
+    picture = HORDE_ON_HORSEBACK_eventPicture
+    desc = fashros.20.d
+    fire_only_once = yes
+
+    trigger = {
+        is_year = 282
+        tag = FAS
+    }
+    option = {
+        name = fashros.20.a
+        ai_chance = { factor = 1 }
+        add_country_modifier = {
+            name = fashran_conquest_boost
+            duration = 1825
+        }
+        add_claim = 5196
+        add_claim = 5185
+
+        if = {
+            limit = {
+                ai = yes
+            }
+            every_country = {
+                limit = {
+                    is_subject = no
+                    capital_scope = {
+                        superregion = jasua_superregion
+                    }
+                }
+                ROOT = {
+                    set_ai_attitude = {
+                        attitude = attitude_hostile
+                        who = PREV
+                        locked = yes
+                    }
+                }
+            }
+        }
+    }
+}
+
+country_event = {
+    id = fashros.21
+    title = fasros.21.t
+    picture = HORDE_ON_HORSEBACK_eventPicture
+    desc = fashros.21.d
+    fire_only_once = yes
+
+    trigger = {
+        is_year = 310
+        tag = FAS
+    }
+    option = {
+        name = fashros.21.a
+        ai_chance = { factor = 1 }
+        add_country_modifier = {
+            name = fashran_conquest_boost
+            duration = 1825
+        }
+        add_claim = 5163
+        add_claim = 5388
+
+        if = {
+            limit = {
+                ai = yes
+            }
+            every_country = {
+                limit = {
+                    is_subject = no
+                    capital_scope = {
+                        superregion = ga_xal_superregion
+                    }
+                }
+                ROOT = {
+                    set_ai_attitude = {
+                        attitude = attitude_hostile
+                        who = PREV
+                        locked = yes
+                    }
+                }
+            }
+        }
+    }
+}
+
+#spawn in the troops for the tonxaras
+country_event = {
+    id = fashros.22
+    hidden=yes
+    is_triggered_only = yes
+
+    immediate = {
+        capital_scope = {
+            ROOT = {
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                cavalry = PREV
+                cavalry = PREV
+                cavalry = PREV
+                cavalry = PREV
+                cavalry = PREV
+            }
+        }
+    }
+
+    option = {
+        name = fashros.22.a
+        ai_change = { factor = 1 }
     }
 }
