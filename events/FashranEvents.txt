@@ -1,3 +1,4 @@
+
 namespace = fashros
 
 country_event = { #Westward Expansion
@@ -484,6 +485,13 @@ country_event = { #Westward Expansion 3
                 change_religion = tonmo
                 change_culture = Fisbiklan
             }
+
+            BLK = {
+                country_event = { 
+                    id = jasuaE.8
+                    days = 5
+                }
+            }
         }
     }
 }
@@ -908,6 +916,408 @@ country_event = {
         ai_chance = { factor = 1 }
         5693 = {
             remove_claim = FAS
+        }
+    }
+}
+
+#warning about invasion
+country_event = {
+    id = fashros.14
+    title = fashros.14.t
+    picture = CONQUEST_eventPicture
+    desc = fashros.14.d
+    major = yes
+
+    trigger = {
+        technology_group = east_gomic_tech_gr
+        any_province = {
+			owned_by = FAS
+		    has_discovered = ROOT
+		}
+        NOT = { has_global_flag = tonmo_invasion }
+    }
+
+    mean_time_to_happen = {
+        days = 1
+    }
+
+    option = {
+        name = fashros.14.a
+        ai_chance = { factor = 1 }
+        set_global_flag = tonmo_invasion
+        custom_tooltip = fashros_discovery
+    }
+}
+
+#warning about collapse
+country_event = {
+    id = fashros.15
+    title = fashros.15.t
+    picture = BAD_WITH_MONARCH_eventPicture
+    desc = fashros.15.d
+    fire_only_once = yes
+
+    trigger = {
+        AND = {
+            is_year = 298
+            tag = FAS
+        }
+    }
+
+    mean_time_to_happen = {
+        days = 1
+    }
+
+    option = {
+        name = fashros.15.a
+        ai_chance = { factor = 1 }
+        hidden_effect = {
+            change_mil = 2
+            add_country_modifier = {
+                name = fashros_last_conquest
+                days = 90000
+            }
+            add_country_modifier = {
+                name = fashros_decay
+                days = 9000
+            }
+        }
+        custom_tooltip = fashros_death
+    }
+}
+
+#three crowns
+country_event = {
+    id = fashros.16
+    title = fashros.16.t
+    picture = BAD_WITH_MONARCH_eventPicture
+    desc = fashros.16.d
+    fire_only_once = yes
+    major = yes
+
+    trigger = {
+        AND = {
+            is_year = 310
+            tag = FAS
+            NOT = {
+                has_country_modifier = fashros_decay
+            }
+        }
+    }
+
+    mean_time_to_happen = {
+        days = 1
+    }
+
+    option = {
+        name = fashros.16.a
+        ai_chance = { factor = 1 }
+        add_stability = -6
+        kill_ruler = yes
+        hidden_effect = {
+            #First, cleanse all the existing cores.
+
+            every_subject_country = {
+                if = {
+                    limit = {
+                        is_overlord = FAS
+                    }
+                    FAS = {
+                        inherit = PREV
+                    }
+                }
+            }
+
+            all_owned_province = {
+                limit = {
+                    superregion = jasua_superregion
+                    superregion = tonmo_superregion
+                }
+                all_country = {
+                    remove_core = PREV
+                }
+            }
+
+            #Now, add the cores for the four tonxara nations.
+            every_owned_province = {
+                if = {
+                    limit = {
+                        OR = {
+                            superregion = west_estal_superregion
+                            superregion = ga_xal_superregion
+                            superregion = oppia_superregion
+                            area = hoxona_area
+                            area = hoxoi_area
+                            area = ropinver_area
+                            area = diam_area
+                            area = unnamed_area_11
+                            area = mahansha_area
+                        }
+                    }
+                    add_core = JFX
+                }
+                else_if = {
+                    limit = {
+                        OR = {
+                            superregion = jasua_superregion
+                            superregion = central_estal_supperregion
+                            superregion = great_desert_superregion
+                            superregion = north_estal_superregion
+                        }
+                    }
+                    add_core = KSL
+                }
+                else = {
+                    add_core = NHM
+                } #There is also a fourth Tonxara for Geopyopia called the Hoyros Tonxara, but they dont have a superregion yet
+            }
+
+            #name the country depending on the number of tonxaras
+            set_variable = {
+                which = tonxaraCount
+                value = 0
+            }
+
+            if = {
+                limit = { any_core_province = { is_core = JFX } }
+                change_variable = {
+                    which = tonxaraCount
+                    value = 1
+                }
+            }
+            if = {
+                limit = { any_core_province = { is_core = KSL } }
+                change_variable = {
+                    which = tonxaraCount
+                    value = 1
+                }
+            }
+            if = {
+                limit = { any_core_province = { is_core = NHM } }
+                change_variable = {
+                    which = tonxaraCount
+                    value = 1
+                }
+            }
+            if = {
+                limit = { any_core_province = { is_core = HOY } }
+                change_variable = {
+                    which = tonxaraCount
+                    value = 1
+                }
+            }
+
+            if = {
+                limit = {
+                    check_variable = {
+                        which = tonxaraCount
+                        value = 4
+                    }
+                }
+                override_country_name = FOUR_CROWNS
+            }
+            else_if = {
+                limit = {
+                    check_variable = {
+                        which = tonxaraCount
+                        value = 3
+                    }
+                }
+                override_country_name = THREE_CROWNS
+            }
+            else_if = {
+                limit = {
+                    check_variable = {
+                        which = tonxaraCount
+                        value = 2
+                    }
+                }
+                override_country_name = TWO_CROWNS
+            }
+            else_if = {
+                limit = {
+                    check_variable = {
+                        which = tonxaraCount
+                        value = 1
+                    }
+                }
+                override_country_name = ONE_CROWN
+            }
+            else = {
+                override_country_name = DEBUG_COUNTRY
+            }
+        }
+    }
+}
+
+#And finally, bye bye.
+country_event = {
+    id = fashros.17
+    title = fashros.17.t
+    picture = REVOLUTION_eventPicture
+    desc = fashros.17.d
+    fire_only_once = yes
+    major = yes
+
+    trigger = {
+        AND = {
+            is_year = 311
+            tag = FAS
+            NOT = {
+                has_country_modifier = fashros_decay
+            }
+        }
+    }
+
+    mean_time_to_happen = {
+        years = 2
+    }
+
+    option = { #go with kisholi
+        trigger = {
+            any_core_province = { is_core = KSL }
+        }
+        name = fashros.17.a
+        ai_chance = { factor = 0 }
+        restore_country_name = yes
+        change_tag = KSL
+        hidden_effect = {
+            release = JFX
+            release = NHM
+            release = HOY
+        }
+        custom_tooltip = play_as_kisholi
+    }
+    option = { #go with jafxoi
+        trigger = {
+            any_core_province = { is_core = JFX }
+        }
+        name = fashros.17.b
+        ai_chance = { factor = 0 }
+        restore_country_name = yes
+        change_tag = JFX
+        hidden_effect = {
+            release = KSL
+            release = NHM
+            release = HOY
+        }
+        custom_tooltip = play_as_jafxoi
+    }
+    option = { #go with nhoma
+        trigger = {
+            any_core_province = { is_core = NHM }
+        }
+        name = fashros.17.c
+        ai_chance = { factor = 0 }
+        restore_country_name = yes
+        change_tag = NHM
+        hidden_effect = {
+            release = KSL
+            release = JFX
+            release = HOY
+        }
+        custom_tooltip = play_as_nhoma
+    }
+    option = { #go with hoyros
+        trigger = {
+            any_core_province = { is_core = HOY }
+        }
+        name = fashros.17.f
+        ai_chance = { factor = 0 }
+        restore_country_name = yes
+        change_tag = HOY
+        hidden_effect = {
+            release = KSL
+            release = JFX
+            release = NHM
+        }
+        custom_tooltip = play_as_hoyros
+    }
+    option = { #for ai
+        name = fashros.17.e
+        ai_chance = { factor = 10 }
+        hidden_effect = {
+            release = KSL
+            release = JFX
+            release = NHM
+            release = HOY
+        }
+        custom_tooltip = end_fashros
+    }
+}
+
+#collapse nakoa
+country_event = {
+    id = fashros.18
+    title = fashros.18.t
+    picture = HORDE_ON_HORSEBACK_eventPicture
+    desc = fashros.18.d
+    fire_only_once = yes
+
+    trigger = {
+        tag = FAS
+        NAK = {
+            ai = yes
+        }
+        5536 = {
+            controlled_by = FAS
+        }
+    }
+
+    mean_time_to_happen = {
+        days = 1
+    }
+
+    option = {
+        name = fashros.18.a
+        ai_chance = { factor = 1 }
+        custom_tooltip = nakoa_collapsed
+        hidden_effect = {
+            NAK = {
+                release = RET
+                release = JIT
+                release = KE0
+                release = GOV
+            }
+        }
+    }
+}
+
+#collapse yabonia
+country_event = {
+    id = fashros.19
+    title = fashros.19.t
+    picture = HORDE_ON_HORSEBACK_eventPicture
+    desc = fashros.19.d
+    fire_only_once = yes
+
+    trigger = {
+        tag = FAS
+        YAB = {
+            ai = yes
+        }
+        5644 = {
+            controlled_by = FAS
+        }
+    }
+
+    mean_time_to_happen = {
+        days = 1
+    }
+
+    option = {
+        name = fashros.19.a
+        ai_chance = { factor = 1 }
+        custom_tooltip = yabonia_collapsed
+        hidden_effect = {
+            YAB = {
+                release = GET
+                release = BAL
+                release = NOG
+                release = JII
+                release = JTA
+                release = ZBL
+            }
         }
     }
 }
