@@ -670,6 +670,24 @@ on_great_project_constructed = {
 # OBS: Consider that the following on_actions can be called for Personal Union juniors as well.
 # country
 on_new_monarch = {
+	if = {
+		limit = {
+			tag = FAS
+		}
+		remove_ruler_personality = just_personality
+        remove_ruler_personality = righteous_personality
+        remove_ruler_personality = calm_personality
+        remove_ruler_personality = careful_personality
+        remove_ruler_personality = well_advised_personality
+		random_list = {
+			20 = { add_ruler_personality = cruel_personality }
+			20 = { add_ruler_personality = martial_educator_personality }
+			20 = { add_ruler_personality = conquerer_personality }
+			20 = { add_ruler_personality = pious_personality }
+			20 = { add_ruler_personality = zealot_personality }
+		}
+        set_ruler_flag = tonmo_blessed
+	}
 	crimean_succession_effect = yes #Scripted effect
 	slesvig_question_effect = yes #Scripted effect
 	if = {
