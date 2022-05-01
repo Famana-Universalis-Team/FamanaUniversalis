@@ -1,3 +1,4 @@
+
 country_decisions = {
 
 	arlenta_nation = {
@@ -1917,6 +1918,7 @@ country_decisions = {
 						is_core = PLM
 					}
 					add_core = LOM
+					remove_core = PLM
 					remove_claim = PLM
 				}
 			}
@@ -1970,6 +1972,13 @@ country_decisions = {
 			factor = 1
 		}
 		ai_importance = 400
+		if = {
+			limit = {
+				government = theocracy
+			}
+			change_government = monarchy
+			add_government_reform = autocracy_reform
+		}
 	}
 
 
