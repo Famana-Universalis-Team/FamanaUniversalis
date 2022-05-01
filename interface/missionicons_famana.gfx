@@ -21,5 +21,25 @@ spriteTypes = {
 		name = "pex_lathvy_empire_mission"
 		texturefile = "gfx//interface//missions//famana_missions//pex_lathvy_empire_mission.dds"
 	}
+
+			spriteType = {
+		name = "control_unrest"
+		texturefile = "gfx//interface//missions//famana_missions//control_unrest.dds"
+	}
+
+			spriteType = {
+		name = "mak_anarchy_end"
+		texturefile = "gfx//interface//missions//famana_missions//mak_anarchy_end.dds"
+	}
+
+			spriteType = {
+		name = "mak_countryside"
+		texturefile = "gfx//interface//missions//famana_missions//mak_countryside.dds"
+	}
+
+			spriteType = {
+		name = "mak_levies"
+		texturefile = "gfx//interface//missions//famana_missions//mak_levies.dds"
+	}
 	
 }
