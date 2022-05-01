@@ -658,3 +658,23 @@ bilik_isolation = {
     diplomatic_reputation = -5
     diplomatic_upkeep = -3
 }
+
+mak_stabilize = {
+    global_unrest = -2
+    global_prosperity_growth = 0.1
+    monthly_reform_progress_modifier = 0.15
+}
+
+mak_authority = {
+    global_autonomy = -0.05
+    tolerance_own = 1
+}
+
+mak_worship = {
+    global_tax_modifier = 0.1
+    monthly_fervor_increase = 0.5
+}
+
+mak_autonomy = {
+    state_maintenance_modifier = -0.5
+}
