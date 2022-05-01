@@ -656,3 +656,9 @@ bilik_isolation = {
     diplomatic_reputation = -5
     diplomatic_upkeep = -3
 }
+
+tonxara_bonus_modifier = {
+    global_unrest = -2
+    stability_cost_modifier = -0.1
+    religious_unity = 0.25
+}

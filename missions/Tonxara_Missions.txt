@@ -50,4 +50,11 @@ tonxara_5 = {
         }
 	}
 	has_country_shield = yes
+
+    fas_leaving_the_steppe = {
+		icon = mission_advance_to_the_dnieper
+		required_missions = {}
+		trigger = {}
+		effect = {}
+	}
 }

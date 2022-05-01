@@ -1031,7 +1031,7 @@ country_event = {
             all_owned_province = {
                 limit = {
                     superregion = jasua_superregion
-                    superregion = tonmo_superregion
+                    superregion = tonmo_supperregion
                 }
                 all_country = {
                     remove_core = PREV
@@ -1060,7 +1060,7 @@ country_event = {
                     limit = {
                         OR = {
                             superregion = jasua_superregion
-                            superregion = central_estal_supperregion
+                            superregion = central_estal_superregion
                             superregion = great_desert_superregion
                             superregion = north_estal_superregion
                         }
@@ -1070,6 +1070,18 @@ country_event = {
                 else = {
                     add_core = NHM
                 } #There is also a fourth Tonxara for Geopyopia called the Hoyros Tonxara, but they dont have a superregion yet
+                if = {
+                    limit = {
+                        OR = {
+                            area = ufulk_area
+                            area = unnamed_area_37
+                            area = unnamed_area_36
+                            area = yenis_area
+                        }
+                    }
+                    remove_core = KSL
+                    add_core = NHM
+                }
             }
 
             #name the country depending on the number of tonxaras
@@ -1185,6 +1197,38 @@ country_event = {
             release = JFX
             release = NHM
             release = HOY
+            swap_non_generic_missions = yes
+            swap_free_idea_group = yes
+            add_manpower = -1000
+            add_sailors	= -1000
+            change_graphical_culture = easterngfx
+            every_province = {
+                limit = {
+                    OR = {
+                        is_core = ROOT
+                        is_claim = ROOT
+                    }
+                    NOT = {
+                        owned_by = ROOT
+                    }
+                }
+                remove_core = ROOT
+                remove_claim = ROOT
+            }
+            jasua_superregion = { add_permanent_claim = KSL }
+            ga_xal_superregion = { add_permanent_claim = JFX }
+            tonmo_supperregion = { add_permanent_claim = NHM }
+            remove_country_modifier = fas_xalian_bureaucracy
+        }
+        if = {
+            limit = {
+                has_country_flag = fas_three_crowns_flag
+            }
+            add_country_modifier = {
+                name = tonxara_bonus_modifier
+                duration = 9125
+            }
+            add_manpower = 15
         }
         custom_tooltip = play_as_kisholi
     }
@@ -1200,6 +1244,37 @@ country_event = {
             release = KSL
             release = NHM
             release = HOY
+            swap_non_generic_missions = yes
+            swap_free_idea_group = yes
+            change_graphical_culture = westerngfx
+            add_manpower = -1000
+            add_sailors	= -1000
+            every_province = {
+                limit = {
+                    OR = {
+                        is_core = ROOT
+                        is_claim = ROOT
+                    }
+                    NOT = {
+                        owned_by = ROOT
+                    }
+                }
+                remove_core = ROOT
+                remove_claim = ROOT
+            }
+            jasua_superregion = { add_permanent_claim = KSL }
+            ga_xal_superregion = { add_permanent_claim = JFX }
+            tonmo_supperregion = { add_permanent_claim = NHM }
+        }
+        if = {
+            limit = {
+                has_country_flag = fas_three_crowns_flag
+            }
+            add_country_modifier = {
+                name = tonxara_bonus_modifier
+                duration = 9125
+            }
+            add_manpower = 15
         }
         custom_tooltip = play_as_jafxoi
     }
@@ -1215,6 +1290,37 @@ country_event = {
             release = KSL
             release = JFX
             release = HOY
+            swap_non_generic_missions = yes
+            swap_free_idea_group = yes
+            add_manpower = -1000
+            add_sailors	= -1000
+            every_province = {
+                limit = {
+                    OR = {
+                        is_core = ROOT
+                        is_claim = ROOT
+                    }
+                    NOT = {
+                        owned_by = ROOT
+                    }
+                }
+                remove_core = ROOT
+                remove_claim = ROOT
+            }
+            jasua_superregion = { add_permanent_claim = KSL }
+            ga_xal_superregion = { add_permanent_claim = JFX }
+            tonmo_supperregion = { add_permanent_claim = NHM }
+            remove_country_modifier = fas_xalian_bureaucracy
+        }
+        if = {
+            limit = {
+                has_country_flag = fas_three_crowns_flag
+            }
+            add_country_modifier = {
+                name = tonxara_bonus_modifier
+                duration = 9125
+            }
+            add_manpower = 15
         }
         custom_tooltip = play_as_nhoma
     }
@@ -1230,6 +1336,37 @@ country_event = {
             release = KSL
             release = JFX
             release = NHM
+            swap_non_generic_missions = yes
+            swap_free_idea_group = yes
+            add_manpower = -1000
+            add_sailors	= -1000
+            every_province = {
+                limit = {
+                    OR = {
+                        is_core = ROOT
+                        is_claim = ROOT
+                    }
+                    NOT = {
+                        owned_by = ROOT
+                    }
+                }
+                remove_core = ROOT
+                remove_claim = ROOT
+            }
+            jasua_superregion = { add_permanent_claim = KSL }
+            ga_xal_superregion = { add_permanent_claim = JFX }
+            tonmo_supperregion = { add_permanent_claim = NHM }
+            remove_country_modifier = fas_xalian_bureaucracy
+        }
+        if = {
+            limit = {
+                has_country_flag = fas_three_crowns_flag
+            }
+            add_country_modifier = {
+                name = tonxara_bonus_modifier
+                duration = 9125
+            }
+            add_manpower = 15
         }
         custom_tooltip = play_as_hoyros
     }
@@ -1241,6 +1378,38 @@ country_event = {
             release = JFX
             release = NHM
             release = HOY
+            jasua_superregion = { add_permanent_claim = KSL }
+            ga_xal_superregion = { add_permanent_claim = JFX }
+            tonmo_supperregion = { add_permanent_claim = NHM }
+            every_province = {
+                limit = {
+                    OR = {
+                        is_core = FAS
+                        is_claim = FAS
+                    }
+                    remove_core = FAS
+                    remove_claim = FAS
+                }
+            }
+            every_province = {
+                limit = {
+                    owned_by = FAS
+                    NOT = {
+                        OR = {
+                            is_core = KSL
+                            is_core = JFX
+                            is_core = HOY
+                        }
+                    }
+                }
+                cede_province = NHM
+            }
+            JFX = {
+                add_country_modifier = {
+                    name = fas_xalian_bureaucracy
+                    duration = -1
+                }
+            }
         }
         custom_tooltip = end_fashros
     }
