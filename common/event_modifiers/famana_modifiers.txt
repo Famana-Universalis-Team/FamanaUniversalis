@@ -548,13 +548,11 @@ fas_xalian_bureaucracy = {
 
 fas_local_rule = {
     local_autonomy = 0.10
-
 }
 
 del_delk_propestiy = {
-	development_cost = -0.15
 	production_efficiency = 0.15
-	infantry_cost = -0.15
+	infantry_cost = -0.10
 }
 
 pex_unity_modifier = {
@@ -677,4 +675,10 @@ mak_worship = {
 
 mak_autonomy = {
     state_maintenance_modifier = -0.5
+}
+
+tonxara_bonus_modifier = {
+    global_unrest = -2
+    stability_cost_modifier = -0.1
+    religious_unity = 0.25
 }

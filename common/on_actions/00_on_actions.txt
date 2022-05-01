@@ -3790,7 +3790,6 @@ on_province_religion_converted = {
 			OR = {
 				culture = Yatian
 				culture = Verkan
-				culture = Nakoan
 				culture = Blastan
 			}
 			owner = {

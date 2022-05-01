@@ -1,9 +1,11 @@
 bookmark = {
     name = "FAMANA_REC_BOOKMARK"
     desc = "FAMANA_REC_BOOKMARK_DESC"
+
     date = 212.6.6
     
     center = 5361
+
     country = FAS
     country = KIN
     country = UMZ
@@ -22,4 +24,5 @@ bookmark = {
     easy_country = PEX
     easy_country = KAP
     easy_country = DEL
+    default = yes
 }

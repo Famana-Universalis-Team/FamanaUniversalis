@@ -409,14 +409,12 @@ fas_1 = {
 					limit = {
 						superregion = tonmo_supperregion
 					}
-					add_core = NHM
 					add_province_modifier = {
 						name = fas_local_rule
 						duration = 3650
 					}
 				}
 			}
-			custom_tooltip = fas_nhoma_tooltip_1
 			custom_tooltip = fas_nhoma_tooltip_2
 		}
 		provinces_to_highlight = {
@@ -656,15 +654,6 @@ fas_2 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 			superregion = ga_xal_superregion
 		}
-	}
-
-	fas_birth_of_the_tonmo_world = {
-		icon = mission_restore_kiev
-		required_missions = {fas_supremacy_of_the_clouds}
-		position = 17
-		trigger = {
-		}
-		effect = {}
 	}
 }
 
@@ -917,16 +906,14 @@ fas_3 = {
 			hidden_effect = {
 				every_owned_province = {
 					limit = {
-						superregion = ga_xal_supperregion
+						superregion = ga_xal_superregion
 					}
-					add_core = JFX
 					add_province_modifier = {
 						name = fas_local_rule
 						duration = 3650
 					}
 				}
 			}
-			custom_tooltip = fas_jafxoi_tooltip_1
 			custom_tooltip = fas_jafxoi_tooltip_2
 		}
 		provinces_to_highlight = {
@@ -945,22 +932,16 @@ fas_3 = {
 		icon = mission_empire
 		required_missions = {fas_the_jafxoi_tonxara fas_the_nhoma_tonxara fas_the_kisholi_tonxara}
 		position = 14
-		trigger = {}
-		effect = {}
-	}
-
-	fas_secure_the_empire = {
-		icon = mission_great_wall
-		required_missions = {fas_the_three_crowns}
-		trigger = {}
-		effect = {}
-	}
-
-	fas_supremacy_of_the_clouds = {
-		icon = mission_conquer_5_states
-		required_missions = {fas_secure_the_empire}
-		trigger = {}
-		effect = {}
+		trigger = {
+			treasury = 800
+		}
+		effect = {
+			hidden_effect = {
+				set_country_flag = fas_three_crowns_flag
+			}
+			custom_tooltip = fas_crowns_mission_tt
+			add_treasury = -800
+		}
 	}
 }
 
@@ -1180,14 +1161,6 @@ fas_4 = {
 			}
 		}
 	}
-
-	fas_leaving_the_steppe = {
-		icon = mission_advance_to_the_dnieper
-		required_missions = {fas_supremacy_of_the_clouds}
-		position = 17
-		trigger = {}
-		effect = {}
-	}
 }
 
 fas_5 = {
@@ -1351,14 +1324,12 @@ fas_5 = {
 					limit = {
 						superregion = jasua_superregion
 					}
-					add_core = KSL
 					add_province_modifier = {
 						name = fas_local_rule
 						duration = 3650
 					}
 				}
 			}
-			custom_tooltip = fas_kisholi_tooltip_1
 			custom_tooltip = fas_kisholi_tooltip_2
 		}
 		provinces_to_highlight = {
