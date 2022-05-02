@@ -608,6 +608,7 @@ country_event = { #Southward Expansion (NOT MISSION)
     title = fashros.7.t
     desc = fashros.7.d
     picture = BORDER_TENSION_eventPicture
+    fire_only_once = yes
 
     trigger = {
         tag = FAS
@@ -927,6 +928,7 @@ country_event = {
     picture = CONQUEST_eventPicture
     desc = fashros.14.d
     major = yes
+    fire_only_once = yes
 
     trigger = {
         technology_group = east_gomic_tech_gr
@@ -997,7 +999,7 @@ country_event = {
 
     trigger = {
         AND = {
-            is_year = 310
+            is_year = 320
             tag = FAS
             NOT = {
                 has_country_modifier = fashros_decay
@@ -1173,7 +1175,7 @@ country_event = {
 
     trigger = {
         AND = {
-            is_year = 311
+            is_year = 322
             tag = FAS
             NOT = {
                 has_country_modifier = fashros_decay
@@ -1192,6 +1194,19 @@ country_event = {
         name = fashros.17.a
         ai_chance = { factor = 0 }
         restore_country_name = yes
+        every_province = {
+            limit = {
+                OR = {
+                    is_core = ROOT
+                    is_claim = ROOT
+                }
+                NOT = {
+                    owned_by = ROOT
+                }
+            }
+            remove_core = ROOT
+            remove_claim = ROOT
+        }
         hidden_effect = {
             release = KSL
         }
@@ -1205,19 +1220,6 @@ country_event = {
             add_manpower = -1000
             add_sailors	= -1000
             change_graphical_culture = easterngfx
-            every_province = {
-                limit = {
-                    OR = {
-                        is_core = ROOT
-                        is_claim = ROOT
-                    }
-                    NOT = {
-                        owned_by = ROOT
-                    }
-                }
-                remove_core = ROOT
-                remove_claim = ROOT
-            }
             jasua_superregion = { add_permanent_claim = KSL }
             ga_xal_superregion = { add_permanent_claim = JFX }
             tonmo_supperregion = { add_permanent_claim = NHM }
@@ -1242,6 +1244,19 @@ country_event = {
         name = fashros.17.b
         ai_chance = { factor = 0 }
         restore_country_name = yes
+        every_province = {
+            limit = {
+                OR = {
+                    is_core = ROOT
+                    is_claim = ROOT
+                }
+                NOT = {
+                    owned_by = ROOT
+                }
+            }
+            remove_core = ROOT
+            remove_claim = ROOT
+        }
         hidden_effect = {
             release = JFX
         }
@@ -1255,19 +1270,6 @@ country_event = {
             change_graphical_culture = westerngfx
             add_manpower = -1000
             add_sailors	= -1000
-            every_province = {
-                limit = {
-                    OR = {
-                        is_core = ROOT
-                        is_claim = ROOT
-                    }
-                    NOT = {
-                        owned_by = ROOT
-                    }
-                }
-                remove_core = ROOT
-                remove_claim = ROOT
-            }
             jasua_superregion = { add_permanent_claim = KSL }
             ga_xal_superregion = { add_permanent_claim = JFX }
             tonmo_supperregion = { add_permanent_claim = NHM }
@@ -1291,6 +1293,19 @@ country_event = {
         name = fashros.17.c
         ai_chance = { factor = 0 }
         restore_country_name = yes
+        every_province = {
+            limit = {
+                OR = {
+                    is_core = ROOT
+                    is_claim = ROOT
+                }
+                NOT = {
+                    owned_by = ROOT
+                }
+            }
+            remove_core = ROOT
+            remove_claim = ROOT
+        }
         hidden_effect = {
             release = NHM
         }
@@ -1303,19 +1318,6 @@ country_event = {
             swap_free_idea_group = yes
             add_manpower = -1000
             add_sailors	= -1000
-            every_province = {
-                limit = {
-                    OR = {
-                        is_core = ROOT
-                        is_claim = ROOT
-                    }
-                    NOT = {
-                        owned_by = ROOT
-                    }
-                }
-                remove_core = ROOT
-                remove_claim = ROOT
-            }
             jasua_superregion = { add_permanent_claim = KSL }
             ga_xal_superregion = { add_permanent_claim = JFX }
             tonmo_supperregion = { add_permanent_claim = NHM }
@@ -1340,6 +1342,19 @@ country_event = {
         name = fashros.17.f
         ai_chance = { factor = 0 }
         restore_country_name = yes
+        every_province = {
+            limit = {
+                OR = {
+                    is_core = ROOT
+                    is_claim = ROOT
+                }
+                NOT = {
+                    owned_by = ROOT
+                }
+            }
+            remove_core = ROOT
+            remove_claim = ROOT
+        }
         hidden_effect = {
             release = HOY
         }
@@ -1352,19 +1367,6 @@ country_event = {
             swap_free_idea_group = yes
             add_manpower = -1000
             add_sailors	= -1000
-            every_province = {
-                limit = {
-                    OR = {
-                        is_core = ROOT
-                        is_claim = ROOT
-                    }
-                    NOT = {
-                        owned_by = ROOT
-                    }
-                }
-                remove_core = ROOT
-                remove_claim = ROOT
-            }
             jasua_superregion = { add_permanent_claim = KSL }
             ga_xal_superregion = { add_permanent_claim = JFX }
             tonmo_supperregion = { add_permanent_claim = NHM }
@@ -1386,6 +1388,19 @@ country_event = {
         name = fashros.17.e
         ai_chance = { factor = 10 }
         hidden_effect = {
+            every_province = {
+                limit = {
+                    OR = {
+                        is_core = ROOT
+                        is_claim = ROOT
+                    }
+                    NOT = {
+                        owned_by = ROOT
+                    }
+                }
+                remove_core = ROOT
+                remove_claim = ROOT
+            }
             release = KSL
             release = JFX
             release = NHM
