@@ -39,15 +39,6 @@ name_this_idk={
 		158 36 30 
 	}
 	outgoing={
-		name="olamu"
-		path={
-			6037 6026 
-		}
-		control={
-			2778.000000 1425.000000 2863.000000 1430.000000 
-		}
-	}
-	outgoing={
 		name="anmonea"
 		path={
 			5984 5950 
@@ -114,14 +105,22 @@ milk_road = {
 	}
 }
 olamu={
-	location=7831
+	location=6026
 	color={
 		51 164 97 
 	}
 	members={
 		6015 6014 6013 6017 6016 6021 6024 6023 6026 7831 6012 6018 6019 6020 6037 6032 6028 6027 
 	}
-	end=yes
+	outgoing={
+		name="name_this_idk"
+		path={
+			6026 6037 
+		}
+		control={
+			1430.000000 2863.000000 1425.000000 2778.000000
+		}
+	}
 }
 anmonea={
 	location=5949
