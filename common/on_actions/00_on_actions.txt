@@ -23,6 +23,15 @@ on_startup = {
 		remove_country_modifier = tur_janissary
 	}
 	initialize_schools_effect = yes #This is only used here but is used for readability of on_action file.
+	if = {
+		limit = {
+			ai = no
+		}
+		country_event = {
+			id = yomtanian.1
+			days = 1
+		}
+	}
 }
 
 # country

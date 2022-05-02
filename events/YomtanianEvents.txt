@@ -1,0 +1,25 @@
+namespace = yomtanian
+
+#Historical or ahistorical yoms
+country_event = {
+    id = yomtanian.1
+    title = yomtanian.1.t
+    picture = IMPALED_SOLDIERS_eventPicture
+    desc = yomtanian.1.d
+    fire_only_once = yes
+    major = yes
+    is_triggered_only = yes
+
+	option = {
+		name = yomtanian.1.a
+		ai_chance = { factor = 1 }
+        highlight = yes
+        custom_tooltip = yom_historical
+	}
+    option = {
+		name = yomtanian.1.b
+		ai_chance = { factor = 0 }
+        set_global_flag = randomYomInvasions
+        custom_tooltip = yom_ahistorical
+	}
+}
