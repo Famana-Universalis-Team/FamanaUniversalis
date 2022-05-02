@@ -686,3 +686,14 @@ tonxara_bonus_modifier = {
 fashran_conquest_boost = {
     warscore_cost_vs_other_religion = -0.10
 }
+
+mak_anarchy_ending = {
+    stability_cost_modifier = -0.1
+    land_morale = 0.10
+    prestige = 0.5
+}
+
+mak_new_levies = {
+    land_morale = 0.05
+    land_maintenance_modifier = -0.10
+}

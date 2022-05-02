@@ -22,7 +22,7 @@ anarchy_2 = {
         effect = {
             change_government_reform_progress = 15
             add_country_modifier = {
-				name = "thriving_arms_industry"
+				name = "mak_new_levies"
 				duration = 9125 #25 years
 			}
         }
@@ -41,7 +41,7 @@ anarchy_2 = {
             add_adm_power = 100
             add_country_modifier = {
 				name = "mak_stabilize"
-				duration = 3650 #10 years
+				duration = 5475 #10 years
 			}
         }
     }
@@ -128,6 +128,10 @@ anarchy_3 = {
         effect = {
             add_prestige = 25
             add_legitimacy = 25
+            add_country_modifier = {
+				name = "mak_anarchy_ending"
+				duration = 9125
+			}
         }
     }
 }

@@ -11,8 +11,14 @@ country_event = {
 	
 	trigger = { 
 		tag = FAS
-		FAS = {
-			controls = 5683
+		OR = {
+			FAS = {
+				controls = 5683
+			}
+			war_score_against = {
+				who = BLK
+				value = 90
+			}
 		}
 		BLK = {
 			owns = 5683 
