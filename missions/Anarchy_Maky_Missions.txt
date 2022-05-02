@@ -29,7 +29,7 @@ anarchy_2 = {
     }
 
     anarchy_stability_through_peace = {
-        icon = reform_the_state
+        icon = mak_peace
         required_missions = { anarchy_gather_new_levies }
         trigger = {
             stability = 3
@@ -170,8 +170,7 @@ anarchy_4 = {
         icon = mission_temple_patronage
         required_missions = { anarchy_repair_the_country }
         trigger = {
-            num_of_owned_provinces_with	= {
-                value = 1
+            any_owned_province = {
                 has_building = temple
             }
         }
