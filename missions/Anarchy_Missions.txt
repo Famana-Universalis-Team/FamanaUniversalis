@@ -20,7 +20,7 @@ anarchy_2 = {
             manpower_percentage = 1
         }
         effect = {
-            change_government_reform_progress = 10
+            change_government_reform_progress = 15
             add_country_modifier = {
 				name = "thriving_arms_industry"
 				duration = 9125 #25 years
@@ -82,7 +82,7 @@ anarchy_3 = {
             }
 		}
         effect = {
-            change_government_reform_progress = 10
+            change_government_reform_progress = 15
             add_stability = 1
             add_country_modifier = {
 				name = "mak_authority"
@@ -103,7 +103,7 @@ anarchy_3 = {
             }
         }
         effect = {
-            change_government_reform_progress = 10
+            change_government_reform_progress = 15
             add_country_modifier = {
 				name = "mak_autonomy"
 				duration = 9125
@@ -176,7 +176,7 @@ anarchy_4 = {
             }
         }
         effect = {
-            change_government_reform_progress = 10
+            change_government_reform_progress = 15
             add_country_modifier = {
 				name = "mak_worship"
 				duration = 9125
