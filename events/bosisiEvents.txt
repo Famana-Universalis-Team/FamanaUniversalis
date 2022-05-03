@@ -11,14 +11,7 @@ country_event = {
 	picture = NATIVES_eventPicture
 
 	trigger = {
-		has_reform = desert_tribe
-		check_variable = {
-			which = myCountingVariable
-			value = 2
-		}
-		NOT = {
-			has_country_modifier = bosisi_migration
-		}
+		always = no
 	}
 
 	mean_time_to_happen = {
