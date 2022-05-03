@@ -170,6 +170,7 @@ country_decisions = {
 				duration = 7300
 			}
 			add_prestige = 10
+			swap_non_generic_missions = yes
 		}
 		ai_will_do = {
 			factor = 1
@@ -288,6 +289,7 @@ country_decisions = {
 				duration = 7300
 			}
 			add_prestige = 25
+			swap_non_generic_missions = yes
 		}
 		ai_will_do = {
 			factor = 1

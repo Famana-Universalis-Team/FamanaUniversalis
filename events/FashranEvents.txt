@@ -977,11 +977,11 @@ country_event = {
             change_mil = 2
             add_country_modifier = {
                 name = fashros_last_conquest
-                days = 90000
+                duration = 90000
             }
             add_country_modifier = {
                 name = fashros_decay
-                days = 9000
+                duration = 9000
             }
         }
         custom_tooltip = fashros_death
@@ -1022,7 +1022,7 @@ country_event = {
             every_subject_country = {
                 if = {
                     limit = {
-                        is_overlord = FAS
+                        is_subject_of = FAS
                     }
                     FAS = {
                         inherit = PREV
@@ -1406,9 +1406,9 @@ country_event = {
                         is_core = FAS
                         is_claim = FAS
                     }
-                    remove_core = FAS
-                    remove_claim = FAS
                 }
+                remove_core = FAS
+                remove_claim = FAS
             }
             every_province = {
                 limit = {
@@ -1644,6 +1644,6 @@ country_event = {
 
     option = {
         name = fashros.22.a
-        ai_change = { factor = 1 }
+        ai_chance = { factor = 1 }
     }
 }

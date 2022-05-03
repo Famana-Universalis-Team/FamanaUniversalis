@@ -1,0 +1,189 @@
+anarchy_2 = {
+    slot = 2
+    generic = no
+    ai = yes
+    potential = {
+        NOT = { map_setup = map_setup_random }
+		OR = {
+            has_reform = survivor_reform
+            has_reform = city_state_union_reform
+            has_reform = apocalyptic_helvania_reform
+        }
+    }
+    has_country_shield = yes
+
+    anarchy_gather_new_levies = {
+        icon = mak_levies
+        required_missions = { }
+        trigger = {
+            army_size_percentage = 1
+            manpower_percentage = 1
+        }
+        effect = {
+            change_government_reform_progress = 15
+            add_country_modifier = {
+				name = "mak_new_levies"
+				duration = 9125 #25 years
+			}
+        }
+    }
+
+    anarchy_stability_through_peace = {
+        icon = mak_peace
+        required_missions = { anarchy_gather_new_levies }
+        trigger = {
+            stability = 3
+            NOT = {
+                is_at_war = yes
+            }
+        }
+        effect = {
+            add_adm_power = 100
+            add_country_modifier = {
+				name = "mak_stabilize"
+				duration = 5475 #10 years
+			}
+        }
+    }
+}
+
+anarchy_3 = {
+    slot = 3
+    generic = no
+    ai = yes
+    potential = {
+        NOT = { map_setup = map_setup_random }
+		OR = {
+            has_reform = survivor_reform
+            has_reform = city_state_union_reform
+            has_reform = apocalyptic_helvania_reform
+        }
+    }
+    has_country_shield = yes
+
+    anarchy_unite_neighboring_cities = {
+        icon = unite_the_realm
+        required_missions = { }
+        provinces_to_highlight = {
+			area_for_scope_province = {
+				is_capital_of = ROOT
+			}
+			NOT = { owned_by = ROOT }
+		}
+		trigger = { #fix
+            capital_scope = {
+                area_for_scope_province = {
+                    type = all
+                    OR = {
+                        owned_by = ROOT
+                        is_empty = yes
+                    }
+                }
+            }
+		}
+        effect = {
+            change_government_reform_progress = 15
+            add_stability = 1
+            add_country_modifier = {
+				name = "mak_authority"
+				duration = 3650
+			}
+        }
+    }
+
+    anarchy_assert_our_authority = {
+        icon = control_unrest
+        required_missions = { anarchy_unite_neighboring_cities }
+        trigger = {
+            NOT = {
+                average_autonomy = 5
+            }
+            NOT = {
+                unrest = 0
+            }
+        }
+        effect = {
+            change_government_reform_progress = 15
+            add_country_modifier = {
+				name = "mak_autonomy"
+				duration = 9125
+			}
+        }
+    }
+
+    anarchy_end = {
+        icon = mak_anarchy_end
+        required_missions = {
+            anarchy_assert_our_authority
+            anarchy_stability_through_peace
+            anarchy_place_of_worship
+        }
+        trigger = {
+            NOT = {
+                has_reform = survivor_reform
+                has_reform = city_state_union_reform
+                has_reform = apocalyptic_helvania_reform
+            }
+        }
+        effect = {
+            add_prestige = 25
+            add_legitimacy = 25
+            add_country_modifier = {
+				name = "mak_anarchy_ending"
+				duration = 9125
+			}
+        }
+    }
+}
+
+anarchy_4 = {
+    slot = 4
+    generic = no
+    ai = yes
+    potential = {
+        NOT = { map_setup = map_setup_random }
+		OR = {
+            have_had_reform = survivor_reform
+            have_had_reform = city_state_union_reform
+            have_had_reform = apocalyptic_helvania_reform
+        }
+    }
+
+    has_country_shield = yes
+
+    anarchy_repair_the_country = {
+        icon = mak_countryside
+        required_missions = { }        
+        trigger = {
+            #calc_true_if = {
+            #    num_of_times_improved_by_owner = 3
+            #    amount = 3
+            #}
+            num_of_owned_provinces_with	= {
+                value = 3
+                num_of_times_improved_by_owner = 3
+            }
+        }
+        effect = {
+            change_government_reform_progress = 15
+            add_years_of_income = 2
+        }
+    }
+
+    anarchy_place_of_worship = {
+        icon = mission_temple_patronage
+        required_missions = { anarchy_repair_the_country }
+        trigger = {
+            any_owned_province = {
+                has_building = temple
+            }
+        }
+        effect = {
+            change_government_reform_progress = 15
+            add_country_modifier = {
+				name = "mak_worship"
+				duration = 9125
+			}
+        }
+    }
+}

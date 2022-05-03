@@ -41,5 +41,10 @@ spriteTypes = {
 		name = "mak_levies"
 		texturefile = "gfx//interface//missions//famana_missions//mak_levies.dds"
 	}
+
+			spriteType = {
+		name = "mak_peace"
+		texturefile = "gfx//interface//missions//famana_missions//mak_peace.dds"
+	}
 	
 }
