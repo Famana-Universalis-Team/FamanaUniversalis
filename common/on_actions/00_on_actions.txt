@@ -2,6 +2,14 @@
 
 # country
 on_startup = {
+	set_variable = {
+		which = desertTimer
+		value = 0
+	}
+	set_variable = {
+		which = desertCheck
+		value = 0
+	}
 	emperor = {
 		save_global_event_target_as = Emperor
 	}
@@ -2720,6 +2728,29 @@ on_four_year_pulse_4 = {
 }
 
 on_five_year_pulse = {
+	if = {
+		limit = {
+			has_reform = desert_tribe
+		}
+		immediate = {
+			change_variable = {
+				which = desertTimer
+				value = 1
+			}
+			if = {
+				limit = {
+					check_variable = {
+						which = desertTimer
+						value = 3
+					}
+				}
+				set_variable = {
+					which = desertTimer
+					value = 1
+				}
+			}
+		}
+	}
 	random_events = {
 
 		# Innovativeness Events

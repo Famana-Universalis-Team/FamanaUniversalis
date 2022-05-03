@@ -12,3 +12,33 @@ naravami_tribe_rdu_reform = {
 		church_power_modifier = -1.0
 	}
 }
+
+desert_tribe = {
+	icon = "deserttribe"
+	potential = { 
+		OR = {
+			religion = bosisi
+			religion = animism
+		}
+	}
+	allow_normal_conversion = no
+
+	raze_province = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 20
+
+	modifiers = {
+		may_perform_slave_raid_on_same_religion = yes 	
+		reform_progress_growth = -1
+		global_unrest = -5
+		global_missionary_strength = -0.10
+		trade_efficiency = 0.20
+		land_maintenance_modifier = -0.50
+		province_warscore_cost = 10
+		core_creation = 10
+		diplomatic_upkeep = -4
+		global_tax_modifier = 0.30
+		cb_on_religious_enemies = yes
+		custom_tooltip = migrations_tooltip
+	}
+}

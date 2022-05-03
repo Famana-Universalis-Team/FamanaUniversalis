@@ -1,0 +1,60 @@
+namespace = bosisi
+
+#### MIGRATION
+#Based on the desertTimer variable. if factor of two, it is migration time baby!
+
+#currently this event does not work. I'll figure it out some day, promise.
+country_event = {
+	id = bosisi.1
+	title = bosisi.1.t
+	desc = bosisi.1.d
+	picture = NATIVES_eventPicture
+
+	trigger = {
+		has_reform = desert_tribe
+		check_variable = {
+			which = myCountingVariable
+			value = 2
+		}
+		NOT = {
+			has_country_modifier = bosisi_migration
+		}
+	}
+
+	immediate = {
+		add_country_modifier = {
+			name = bosisi_migration
+			duration = 400
+		}
+	}
+
+	option = {
+		name = bosisi.1.1
+		ai_chance = { factor = 1 }
+	}
+	option = {
+		name = bosisi.1.b
+		ai_chance = { factor = 4 }
+		limit = {
+			any_neighbour_province = {
+				is_empty = yes 
+		}
+		capital_scope = {
+			random_neighbour_province = {
+				limit = {
+					NOT = { has_province_flag = selected_p }
+					is_empty = yes 
+				}
+				set_province_flag = selected_p
+				cede_province = ROOT
+				add_core = ROOT
+			}
+			set_capital = PREV
+			PREV = {
+				clr_province_flag = selected_p
+			}
+			remove_core = ROOT
+			cede_province = ---
+		}
+	}
+}

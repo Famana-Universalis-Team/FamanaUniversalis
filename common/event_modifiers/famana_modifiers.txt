@@ -697,3 +697,7 @@ mak_new_levies = {
     global_manpower_modifier = 0.10
     land_maintenance_modifier = -0.10
 }
+
+bosisi_migration = {
+    land_morale = 0.10
+}

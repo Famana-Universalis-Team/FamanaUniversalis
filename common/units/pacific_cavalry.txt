@@ -1,10 +1,10 @@
 # Polynesian Rifle Cavalry
 
-unit_type = polynesian_tech
+unit_type = great_desert_tech_gr
 type = cavalry
 
 maneuver = 2
-offensive_morale = 2
+offensive_morale = 3
 defensive_morale = 2
 offensive_fire = 0
 defensive_fire = 1

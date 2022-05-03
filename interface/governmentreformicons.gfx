@@ -8,6 +8,10 @@ spriteTypes = {
 		texturefile = "gfx//interface//government_reform_icons//nafanempire.dds"
 	}
 	spriteType = {
+		name = "government_reform_deserttribe"
+		texturefile = "gfx//interface//government_reform_icons//deserttribe.dds"
+	}
+	spriteType = {
 		name = "government_reform_oppian"
 		texturefile = "gfx//interface//government_reform_icons//oppian.dds"
 	}

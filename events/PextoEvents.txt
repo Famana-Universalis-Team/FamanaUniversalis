@@ -475,7 +475,15 @@ country_event = { #bye bye pexto
 			release = GNZ
 			release = PLK
 			release = NPX
+			release = RMX
 			release = POM
+		}
+		hidden_effect = {
+			PPX = {
+				add_core = 5288
+				add_core = 5283
+				add_core = 5284
+			}
 		}
 		west_estal_superregion = {
 			remove_core	= PEX
