@@ -1,14 +1,10 @@
-anarchy_2 = {
-    slot = 2
+mak_1 = {
+    slot = 1
     generic = no
     ai = yes
     potential = {
         NOT = { map_setup = map_setup_random }
-		OR = {
-            has_reform = survivor_reform
-            has_reform = city_state_union_reform
-            has_reform = apocalyptic_helvania_reform
-        }
+		tag = MAK
     }
     has_country_shield = yes
 

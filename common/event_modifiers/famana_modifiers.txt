@@ -694,6 +694,6 @@ mak_anarchy_ending = {
 }
 
 mak_new_levies = {
-    land_morale = 0.05
+    global_manpower_modifier = 0.10
     land_maintenance_modifier = -0.10
 }
