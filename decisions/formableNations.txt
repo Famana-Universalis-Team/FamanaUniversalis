@@ -3136,4 +3136,87 @@ country_decisions = {
 			factor = 1
 		}
 	}
+
+
+	ora_malda_nation = {
+		major = yes
+		potential = {
+			AND = {
+				tag = MLD
+				culture = Maldikian
+				NOT = { exists = ORA }
+				was_never_end_game_tag_trigger = yes
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 6265
+				province_id = 5725
+				province_id = 6236
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				is_city = no
+			}
+		}
+		allow = {
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			owns_core_province = 6265
+			owns_core_province = 5725
+			owns_core_province = 6236
+			capital_scope = {
+				is_core = ROOT
+			}
+			num_of_owned_provinces_with = {
+				value = 10
+				is_city = yes
+				OR = {
+					region = east_ordica_region
+				}
+			}
+		}
+		effect = {
+			restore_country_name = yes
+			change_tag = ORA
+			if = {
+				limit = {
+					AND = {
+						has_custom_ideas = no
+						NOT = {
+							has_idea_group = WLR_ideas
+						}
+					}
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
+			east_ordica_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = WLR
+			}
+			west_ordica_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = WLR
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
 }
