@@ -377,3 +377,27 @@ country_event = {
 		}
 	}
 }
+
+#Kalarga
+country_event = {
+	id = jasuaE.10
+	title = jasuaE.10.t
+	desc = jasuaE.10.d
+	picture = REFORM_eventPicture
+	fire_only_once = yes
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = jasuaE.10.a
+		ai_chance = { factor = 1 }
+		every_core_province = {
+			if = {
+				limit = {
+					culture = Bohoran
+				}
+				change_culture = Kachik
+			}
+		}
+	}
+}

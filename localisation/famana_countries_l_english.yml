@@ -194,6 +194,10 @@
  MLD_ADJ: "Maldikian"
  MLD_ADJ2: "Maldikian"
 
+ MALDAN_EMPIRE: "Maldik Empire"
+ MALDAN_EMPIRE_ADJ: "Maldik Imperial"
+ MALDAN_EMPIRE_ADJ2: "Maldik Imperial"
+
  KLY: "Kolya"
  KLY_ADJ: "Kolyan"
  KLY_ADJ2: "Kolyan"
@@ -868,6 +872,22 @@
  SOY_ADJ: "Soyian"
  SOY_ADJ2: "Soyian"
 
+ LDV: "Ludovians"
+ LDV_ADJ: "Ludoviani"
+ LDV_ADJ2: "Ludoviani"
+
+ TIT: "Totinos"
+ TIT_ADJ: "Totinian"
+ TIT_ADJ2: "Totinian"
+
+ ALU: "Alu"
+ ALU_ADJ: "Alian"
+ ALU_ADJ2: "Alian"
+
+ ODS: "Odisea"
+ ODS_ADJ: "Odisean"
+ ODS_ADJ2: "Odisean"
+
  #Jasua
 
  SKT: "Stroktur"
@@ -897,6 +917,10 @@
  RCK: "Rachik"
  RCK_ADJ: "Rachik"
  RCK_ADJ2: "Rachik"
+
+ HRT: "Hartimatul"
+ HRT_ADJ: "Hartimatuli"
+ HRT_ADJ2: "Hartimatuli"
 
  JII: "Jasiiko"
  JII_ADJ: "Jasiikian"
@@ -1948,6 +1972,14 @@
  VAM_ADJ: "Vamanyan"
  VAM_ADJ2: "Vamanyan"
 
+ MSD: "Masidon"
+ MSD_ADJ: "Masidoni"
+ MSD_ADJ2: "Masidoni"
+
+ KLG: "Kalarga"
+ KLG_ADJ: "Kalargan"
+ KLG_ADJ2: "Kalargan"
+
  BAMAL_NAME: "Bamal"
  BAMAL_NAME_ADJ: "Bamali"
  BAMAL_NAME_ADJ2: "Bamali"
@@ -1975,8 +2007,6 @@
  FOUR_CROWNS: "Four Crowns"
  FOUR_CROWNS_ADJ: "Crown Tonxaran"
  FOUR_CROWNS_ADJ2: "Crown Tonxaran"
- THE_LATHVY_EMPIRE_ADJ: "Lathvy Empire"
- THE_LATHVY_EMPIRE_ADJ2: "Lathvy Empire"
 
  golden_mea_nation_title:0 "Form Golden Mea"
  golden_mea_nation_desc:0 "Having destroyed our enemies and secured our holdings, we can now officially proclaim our Golden Era."
@@ -2057,5 +2087,14 @@
  gotzlic_nation_title:0 "Form Gotzlica"
  gotzlic_nation_desc:0 "For the first time ever, the disparate tribes and states of Gotzlica have been brought together under one banner. Our unlikely nation, risen from obscurity, will claim its spot among the great empires of history."
 
- ora_malda_nation_title:0 "Form Ora Malda"
+ ora_malda_nation_title:0 "Form the Maldik Empire"
  ora_malda_nation_desc:0 "Ordica has been crushed. The Maldikans, driven from their homeland in Emastalia, have now been able to defeat their overlords, who have spent so long looking down on us. We shall built a new empire on the ruins of the old."
+
+ escape_to_hartimatul_title:0 "Escape to Hartimatul"
+ escape_to_hartimatul_desc:0 "Kinvirel is lost! Our last bastion is here, on this island. If we take up a new identity, maybe we could stay clear of further trouble."
+
+ masidon_nation_title:0 "Form Masidon"
+ masidon_nation_desc:0 "Maky is dead. It will never return as a great power, and the sooner the survivors in Makykay and Okus realise, the faster we can get to building our new state. This new state will be one under the Gadean religion."
+
+ kalargan_nation_title:0 "Form Kalarga"
+ kalargan_nation_desc:0 "Kalarga was the name of the largest Kachik tribe before the Maxan invasion. Although its people have been scattered, its legacy remains, and we shall restore it to its former glory."

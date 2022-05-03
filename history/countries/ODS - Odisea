@@ -1,0 +1,19 @@
+government = tribal
+add_government_reform = desert_tribe
+government_rank = 1
+mercantilism = 10
+technology_group = great_desert_tech_gr
+religion = bosisi
+primary_culture = Caxt
+capital = 7972
+
+200.1.1 = {
+	monarch = {
+		name = "Danne"
+		dynasty = "Crut"
+		birth_date = 200.12.12
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+}

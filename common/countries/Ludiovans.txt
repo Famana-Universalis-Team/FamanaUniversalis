@@ -1,8 +1,8 @@
 #Country Name: Please see filename.
 
-graphical_culture = westerngfx
+graphical_culture = muslimgfx
 
-color = { 195  195  45 }
+color = { 100  125  165 }
 
 historical_idea_groups = {
 	economic_ideas
@@ -33,56 +33,37 @@ historical_units = {
 }
 
 monarch_names = {
-	"Syadon #0" = 1
-	"Syadine #0" = -1
+	"Ashadir #0" = 1
+	"Kabir #0" = 1
+	"Abul #0" = 1
+	"Qayam #0" = 1
+	"Umea #0" = 1
+	"Hovakar #0" = 1
+	"Kandar #0" = -1
+	"Oala #0" = -1
+	"Palana #0" = -1
 }
 
 leader_names = {
-	Dymio
-	Agixadar
-	Ratonasha
-	Tormi
-	Dorren
-	Giun
-	Tamar
-	Paro
-	Bamal
-	Dorron
-	Nokhes
-	Amilian
-	Camiclar
-	Relambi
-	Melze
-	Yenat
-	Zandar
-	Ratelar
-	Lunpikisa
-	Sonon
-	Tamander
-	Lokis
-	Lemi
-	Romal
-	Sydon
-	Amri
-	Ifrel
-	Asifsya
-	Malav
+	Ashadir
+	Kabir
+	Abul
+	Qayam
+	Umea
+	Hovakar
 }
 
 ship_names = {
-	Omadid
-	Chaungs
-	Hartitis
-	Bavatis
+	Qair
+	Uhan
+	Imaq
+	Lahan
 }
 
 army_names = {
-	"Fyatazha $PROVINCE$" 
+	"$PROVINCE$ militia" 
 }
 
 fleet_names = {
-	"Blue Navy"
-	"Red Navy"
-	"Black Navy"
-	"White Navy"
+	"Grand Navy"
 }

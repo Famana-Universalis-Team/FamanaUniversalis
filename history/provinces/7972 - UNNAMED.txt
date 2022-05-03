@@ -3,9 +3,13 @@
 culture = Antiari
 religion = bosisi
 hre = no
-base_tax = 1
-base_production = 1
+base_tax = 2
+base_production = 2
 base_manpower = 1
+add_core = ODS
+owner = ODS
+controller = ODS
+trade_goods = livestock
 capital = "UNNAMED"
 is_city = yes
 extra_cost = 1

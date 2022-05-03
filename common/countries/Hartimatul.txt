@@ -1,0 +1,96 @@
+#Country Name: Please see filename.
+
+graphical_culture = easterngfx
+
+color = { 120  180  180 }
+
+historical_idea_groups = {
+	economic_ideas
+	defensive_ideas
+	diplomatic_ideas
+	offensive_ideas
+	innovativeness_ideas
+	quantity_ideas
+	administrative_ideas
+	religious_ideas
+}
+
+historical_units = {
+	ottoman_yaya
+	ottoman_musellem
+	ottoman_azab
+	ottoman_timariot
+	ottoman_janissary
+	ottoman_spahi
+	ottoman_sekban
+	ottoman_reformed_spahi
+	ottoman_reformed_janissary
+	ottoman_toprakli_hit_and_run
+	ottoman_nizami_cedid
+	ottoman_toprakli_dragoon
+	eastern_skirmisher
+	eastern_uhlan
+	eastern_carabinier
+	ottoman_new_model
+	ottoman_lancer
+}
+
+monarch_names = {
+	"Orro #0" = 1
+	"Heum #0" = 1
+	"Fellares #0" = 1
+	"Kanunin #0" = 1
+	"Yamoszy #0" = 1
+	"Unahtare #0" = 1
+	"Eyath #0" = 1
+	"Ayorn #0" = 1
+	"Beroge #0" = 1
+	"Anel #0" = 1
+	"Horfi #0" = 1
+	"Paro #0" = 1
+	"Jekelekim #0" = 1
+	"Fovers #0" = 1
+	"Makei #0" = 1
+	"Astrazna #0" = 1
+	"Maro #0" = -1
+	"Yuni #0" = -1
+	"Delan #0" = -1
+	"Ezeldi #0" = -1
+}
+
+leader_names = {
+	Orro
+	Heum
+	Fellares
+	Kanunin
+	Yamoszy
+	Unahtare
+	Eyath
+	Ayorn
+	Beroge
+	Anel
+	Horfi
+	Paro
+	Jekelekim
+	Fovers
+	Makei
+	Astrazna
+}
+
+ship_names = {
+	Omadid
+	Chaungs
+	Hartitis
+	Bavatis
+}
+
+army_names = {
+	"Rananzha $PROVINCE$" 
+}
+
+fleet_names = {
+	"Blue Navy"
+	"Red Navy"
+	"Black Navy"
+	"White Navy"
+}

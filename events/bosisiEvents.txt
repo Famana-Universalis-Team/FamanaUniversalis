@@ -21,6 +21,10 @@ country_event = {
 		}
 	}
 
+	mean_time_to_happen = {
+		days = 1
+	}
+
 	immediate = {
 		add_country_modifier = {
 			name = bosisi_migration
@@ -55,6 +59,54 @@ country_event = {
 			}
 			remove_core = ROOT
 			cede_province = ---
+		}
+	}
+}
+
+country_event = {
+	id = bosisi.2
+	title = bosisi.2.t
+	desc = bosisi.2.d
+	picture = MILITARY_CAMP_eventPicture
+
+	trigger = {
+		is_year = 249
+		tag = KKR
+	}
+	
+	mean_time_to_happen = {
+		months = 4
+	}
+
+	immediate = {
+		hidden_effect = {
+			7239 = {
+				cede_province = ALU
+				change_culture = Ganush
+			}
+		}
+	}
+
+	option = {
+		name = bosisi.2.a
+		ai_chance = { factor = 9 }
+		add_truce_with = ALU
+		7250 = {
+			cede_province = ALU
+		}
+		7251 = {
+			cede_province = ALU
+		}
+	}
+
+	option = {
+		name = bosisi.2.b
+		ai_chance = { factor = 1 }
+		7250 = {
+			create_revolt = 10
+		}
+		7251 = {
+			create_revolt = 5
 		}
 	}
 }
