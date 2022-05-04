@@ -43,17 +43,13 @@ mak_1 = {
     }
 }
 
-anarchy_3 = {
-    slot = 3
+mak_2 = {
+    slot = 2
     generic = no
     ai = yes
     potential = {
         NOT = { map_setup = map_setup_random }
-		OR = {
-            has_reform = survivor_reform
-            has_reform = city_state_union_reform
-            has_reform = apocalyptic_helvania_reform
-        }
+		tag = MAK
     }
     has_country_shield = yes
 
@@ -132,19 +128,14 @@ anarchy_3 = {
     }
 }
 
-anarchy_4 = {
-    slot = 4
+mak_3 = {
+    slot = 3
     generic = no
     ai = yes
     potential = {
         NOT = { map_setup = map_setup_random }
-		OR = {
-            have_had_reform = survivor_reform
-            have_had_reform = city_state_union_reform
-            have_had_reform = apocalyptic_helvania_reform
-        }
+		tag = MAK
     }
-
     has_country_shield = yes
 
     anarchy_repair_the_country = {
