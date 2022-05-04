@@ -109,8 +109,8 @@ country_event = {
 			tag = VDY
 			tag = MKY
 		}
-		owns_core_province = 5140
 		has_country_flag = maky_rebuilding
+		owns_core_province = 5140
 	}
 
 	mean_time_to_happen = {
@@ -137,6 +137,7 @@ country_event = {
 				add_base_tax = 1
 			}
 			set_province_flag = province_rebuilt
+			set_country_flag = makykay_repaired
 		}
 	}
 	option = {
@@ -159,6 +160,7 @@ country_event = {
 				add_base_production = 1
 			}
 			set_province_flag = province_rebuilt
+			set_country_flag = makykay_repaired
 		}
 	}
 	option = {
@@ -181,6 +183,7 @@ country_event = {
 				add_base_manpower = 1
 			}
 			set_province_flag = province_rebuilt
+			set_country_flag = makykay_repaired
 		}
 	}
 }
@@ -198,9 +201,8 @@ country_event = {
 			tag = VDY
 			tag = MKY
 		}
-		5140 = { development = 15 }
+		has_country_flag = makykay_repaired
 		owns_core_province = 5138
-		has_country_flag = maky_rebuilding
 	}
 
 	mean_time_to_happen = {
@@ -227,6 +229,7 @@ country_event = {
 				add_base_tax = 1
 			}
 			set_province_flag = province_rebuilt
+			set_country_flag = vaximor_repaired
 		}
 	}
 	option = {
@@ -249,6 +252,7 @@ country_event = {
 				add_base_production = 1
 			}
 			set_province_flag = province_rebuilt
+			set_country_flag = vaximor_repaired
 		}
 	}
 	option = {
@@ -271,6 +275,7 @@ country_event = {
 				add_base_manpower = 1
 			}
 			set_province_flag = province_rebuilt
+			set_country_flag = vaximor_repaired
 		}
 	}
 }
@@ -288,9 +293,8 @@ country_event = {
 			tag = VDY
 			tag = MKY
 		}
-		5140 = { development = 15 }
+		has_country_flag = makykay_repaired
 		owns_core_province = 5153
-		has_country_flag = maky_rebuilding
 	}
 
 	mean_time_to_happen = {
@@ -317,6 +321,7 @@ country_event = {
 				add_base_tax = 1
 			}
 			set_province_flag = province_rebuilt
+			set_country_flag = jagama_repaired
 		}
 	}
 	option = {
@@ -339,6 +344,7 @@ country_event = {
 				add_base_production = 1
 			}
 			set_province_flag = province_rebuilt
+			set_country_flag = jagama_repaired
 		}
 	}
 	option = {
@@ -361,6 +367,7 @@ country_event = {
 				add_base_manpower = 1
 			}
 			set_province_flag = province_rebuilt
+			set_country_flag = jagama_repaired
 		}
 	}
 }
@@ -378,9 +385,8 @@ country_event = {
 			tag = VDY
 			tag = MKY
 		}
-		5140 = { development = 15 }
+		has_country_flag = makykay_repaired
 		owns_core_province = 5143
-		has_country_flag = maky_rebuilding
 	}
 
 	mean_time_to_happen = {
@@ -407,6 +413,7 @@ country_event = {
 				add_base_tax = 1
 			}
 			set_province_flag = province_rebuilt
+			set_country_flag = rishtokay_repaired
 		}
 	}
 	option = {
@@ -429,6 +436,7 @@ country_event = {
 				add_base_production = 1
 			}
 			set_province_flag = province_rebuilt
+			set_country_flag = rishtokay_repaired
 		}
 	}
 	option = {
@@ -451,6 +459,7 @@ country_event = {
 				add_base_manpower = 1
 			}
 			set_province_flag = province_rebuilt
+			set_country_flag = rishtokay_repaired
 		}
 	}
 }
@@ -468,9 +477,8 @@ country_event = {
 			tag = VDY
 			tag = MKY
 		}
-		5140 = { development = 15 }
+		has_country_flag = makykay_repaired
 		owns_core_province = 5139
-		has_country_flag = maky_rebuilding
 	}
 
 	mean_time_to_happen = {
@@ -497,6 +505,7 @@ country_event = {
 				add_base_tax = 1
 			}
 			set_province_flag = province_rebuilt
+			set_country_flag = dyri_repaired
 		}
 	}
 	option = {
@@ -519,6 +528,7 @@ country_event = {
 				add_base_production = 1
 			}
 			set_province_flag = province_rebuilt
+			set_country_flag = dyri_repaired
 		}
 	}
 	option = {
@@ -541,6 +551,7 @@ country_event = {
 				add_base_manpower = 1
 			}
 			set_province_flag = province_rebuilt
+			set_country_flag = dyri_repaired
 		}
 	}
 }
@@ -558,12 +569,11 @@ country_event = {
 			tag = MKY
 		}
 		has_country_flag = maky_rebuilding
-		5139 = { development = 9 }
-		5143 = { development = 10 }
-		5153 = { development = 8 }
-		5140 = { development = 15 }
-		5138 = { development = 10 }
-		5142 = { development = 7 }
+		has_country_flag = dyri_repaired
+		has_country_flag = vaximor_repaired
+		has_country_flag = jagama_repaired
+		has_country_flag = rishtokay_repaired
+		has_country_flag = okus_repaired
 		any_owned_province = {
 			AND = {
 				OR = {
@@ -717,7 +727,6 @@ country_event = {
 	title = maky.11.t
 	desc = maky.11.d
 	picture = CITY_DEVELOPMENT_eventPicture
-	fire_only_once = yes
 
 	trigger = {
 		OR = {
@@ -725,12 +734,11 @@ country_event = {
 			tag = MKY
 		}
 		has_country_flag = maky_rebuilding
-		5139 = { development = 9 }
-		5143 = { development = 10 }
-		5153 = { development = 8 }
-		5140 = { development = 15 }
-		5138 = { development = 10 }
-		5142 = { development = 7 }
+		has_country_flag = dyri_repaired
+		has_country_flag = vaximor_repaired
+		has_country_flag = jagama_repaired
+		has_country_flag = rishtokay_repaired
+		has_country_flag = okus_repaired
 		any_owned_province = {
 			AND = {
 				OR = {
@@ -782,7 +790,7 @@ country_event = {
 				add_base_manpower = 1
 			}
 			random = {
-				chance = 25
+				chance = 50
 				add_base_tax = 1
 			}
 			set_province_flag = province_rebuilt
@@ -818,7 +826,7 @@ country_event = {
 				add_base_manpower = 1
 			}
 			random = {
-				chance = 25
+				chance = 50
 				add_base_production = 1
 			}
 			set_province_flag = province_rebuilt
@@ -854,7 +862,7 @@ country_event = {
 				add_base_manpower = 1
 			}
 			random = {
-				chance = 25
+				chance = 50
 				add_base_manpower = 1
 			}
 			set_province_flag = province_rebuilt
@@ -871,13 +879,12 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
+		has_country_flag = makykay_repaired
 		OR = {
 			tag = VDY
 			tag = MKY
 		}
-		5140 = { development = 15 }
 		owns_core_province = 5142
-		has_country_flag = maky_rebuilding
 	}
 
 	mean_time_to_happen = {
@@ -910,6 +917,7 @@ country_event = {
 				80 = { }
 			}
 			set_province_flag = province_rebuilt
+			set_country_flag = okus_repaired
 		}
 	}
 	option = {
@@ -938,6 +946,7 @@ country_event = {
 				80 = { }
 			}
 			set_province_flag = province_rebuilt
+			set_country_flag = okus_repaired
 		}
 	}
 	option = {
@@ -966,6 +975,7 @@ country_event = {
 				80 = { }
 			}
 			set_province_flag = province_rebuilt
+			set_country_flag = okus_repaired
 		}
 	}
 }
@@ -986,12 +996,11 @@ country_event = {
 			tag = MKY
 		}
 		has_country_flag = maky_rebuilding
-		5139 = { development = 9 }
-		5143 = { development = 10 }
-		5153 = { development = 8 }
-		5140 = { development = 15 }
-		5138 = { development = 10 }
-		5142 = { development = 7 }
+		has_country_flag = dyri_repaired
+		has_country_flag = vaximor_repaired
+		has_country_flag = jagama_repaired
+		has_country_flag = rishtokay_repaired
+		has_country_flag = okus_repaired
 		NOT = {
 			any_owned_province = {
 				AND = {
@@ -1015,7 +1024,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 12
+		months = 1
 	}
 
 	option = {
@@ -1029,6 +1038,12 @@ country_event = {
 			duration = -1
 		}
 		clr_country_flag = maky_rebuilding
+		clr_country_flag = makykay_repaired
+		clr_country_flag = dyri_repaired
+		clr_country_flag = vaximor_repaired
+		clr_country_flag = jagama_repaired
+		clr_country_flag = rishtokay_repaired
+		clr_country_flag = okus_repaired
 		every_owned_province = {
 			clr_province_flag = province_rebuilt
 		}
