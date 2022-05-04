@@ -1216,8 +1216,22 @@ country_event = {
             release = JFX
             release = NHM
             release = HOY
-            swap_non_generic_missions = yes
-            swap_free_idea_group = yes
+            KSL = {
+                swap_non_generic_missions = yes
+                swap_free_idea_group = yes
+            }
+            JFX = {
+                swap_non_generic_missions = yes
+                swap_free_idea_group = yes
+            }
+            NHM = {
+                swap_non_generic_missions = yes
+                swap_free_idea_group = yes
+            }
+            HOY = {
+                swap_non_generic_missions = yes
+                swap_free_idea_group = yes
+            }
             add_manpower = -1000
             add_sailors	= -1000
             change_graphical_culture = easterngfx

@@ -3825,20 +3825,20 @@ on_province_religion_converted = {
 		change_culture = West_Kisholian
 		add_core = KSL
 	}
-	if = {
-		limit = {
-			OR = {
-				culture = Yatian
-				culture = Verkan
-				culture = Blastan
-			}
-			owner = {
-				religion = tonmo
-			}
-		}
-		change_culture = North_Kisholian
-		add_core = KSL
-	}
+	#if = {
+	#	limit = {
+	#		OR = {
+	#			culture = Yatian
+	#			culture = Verkan
+	#			culture = Blastan
+	#		}
+	#		owner = {
+	#			religion = tonmo
+	#		}
+	#	}
+	#	change_culture = North_Kisholian
+	#	add_core = KSL
+	#}
 	if = {
 		limit = {
 			OR = {

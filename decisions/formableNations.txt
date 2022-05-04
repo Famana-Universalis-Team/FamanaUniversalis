@@ -1982,18 +1982,18 @@ country_decisions = {
 				}
 				change_tag = JNS
 			}
+			if = {
+				limit = {
+					government = theocracy
+				}
+				change_government = monarchy
+				add_government_reform = autocracy_reform
+			}
 		}
 		ai_will_do = {
 			factor = 1
 		}
 		ai_importance = 400
-		if = {
-			limit = {
-				government = theocracy
-			}
-			change_government = monarchy
-			add_government_reform = autocracy_reform
-		}
 	}
 
 
@@ -3199,6 +3199,36 @@ country_decisions = {
 				}
 				add_permanent_claim = MLD
 			}
+			ordica_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = MLD
+			}
+			vordor_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = MLD
+			}
+			denire_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = MLD
+			}
+			kolya_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = MLD
+			}
+			area_58 = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = MLD
+			}
 			add_country_modifier = {
 				name = "centralization_modifier"
 				duration = 7300
@@ -3216,17 +3246,12 @@ country_decisions = {
 			AND = {
 				tag = KIN
 				owns_core_province = 5496
+				NOT = { owns = 5196 }
 				was_never_end_game_tag_trigger = yes
 			}
 		}
 		provinces_to_highlight = {
-			OR = {
-				province_id = 5496
-			}
-			OR = {
-				NOT = { owned_by = ROOT }
-				is_city = no
-			}
+			province_id = 5496
 		}
 		allow = {
 			is_free_or_tributary_trigger = yes
@@ -3240,16 +3265,41 @@ country_decisions = {
 		}
 		effect = {
 			change_tag = HRT
-			if = {
-				limit = {
-					AND = {
-						has_custom_ideas = no
-					}
-				}
-				country_event = { id = ideagroups.1 } #Swap Ideas
-			}
+			#if = {
+			#	limit = {
+			#		AND = {
+			#			has_custom_ideas = no
+			#		}
+			#	}
+			#	country_event = { id = ideagroups.1 } #Swap Ideas
+			#}
 			restore_country_name = yes
-			add_prestige = 25
+			add_prestige = -100
+			hidden_effect = {
+				swap_non_generic_missions = yes
+				every_owned_province = {
+					limit = {
+						NOT = {
+							province_id = 5496
+						}
+					}
+					remove_core = HRT
+					add_core = KIN
+					cede_province = KIN
+				}
+				every_province = {
+					limit = {
+						is_core = ROOT
+						NOT = { owned_by = ROOT }
+					}
+					remove_core = HRT
+					add_core = KIN
+				}
+				KIN = {
+					country_event = { id = ideagroups.1 } #Swap Ideas
+				}
+			}
+			custom_tooltip = hrt_lose_tt
 		}
 		ai_will_do = {
 			factor = 1
@@ -3407,10 +3457,10 @@ country_decisions = {
 			}
 		}
 		effect = {
-			if = {
-				limit = { has_custom_ideas = no }
-				country_event = { id = ideagroups.1 } #Swap Ideas
-			}
+			#if = {
+			#	limit = { has_custom_ideas = no }
+			#	country_event = { id = ideagroups.1 } #Swap Ideas
+			#}
 			restore_country_name = yes
 			change_tag = KLG
 			country_event = {
