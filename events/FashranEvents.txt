@@ -1441,6 +1441,7 @@ country_event = {
     picture = HORDE_ON_HORSEBACK_eventPicture
     desc = fashros.18.d
     fire_only_once = yes
+    major = yes
 
     trigger = {
         tag = FAS
