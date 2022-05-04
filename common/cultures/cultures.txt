@@ -408,18 +408,7 @@ Colbib = {
 	}
 }
 ############################
-Steppe_placeholder = {
-	Qubaran = {
-		male_names = {
-            Melkko
-        }
-        female_names = {
-            Irruz
-        }
-        dynasty_names = {
-			Pelkko
-        }
-	}
+Barits_C = {
 	Barits = {
 		male_names = {      
 	    Barometer
@@ -2042,6 +2031,17 @@ Western_Estali = { #unfinished
 Epilany = {
 	Kolyan = {
 		primary = KLY
+		male_names = {
+            Fesperim Korarim Deror Iotan Karuy Ilipim Sowar Orakim Niara Fondian Sewa Uniar Dangal
+        }
+        female_names = {
+            Seialen Avarai Terel Kirma Asnemil Batekan
+        }
+        dynasty_names = {
+        	"sa'Kolya" "sa'Denire" "sa'Pramtealin" "sa'Upim" "sa'Kaiyr" "sa'Jimin" "sa'Voran" "sa'Seno" "sa'Iliyia"
+        }
+	}
+	Qubaran = {
 		male_names = {
             Fesperim Korarim Deror Iotan Karuy Ilipim Sowar Orakim Niara Fondian Sewa Uniar Dangal
         }

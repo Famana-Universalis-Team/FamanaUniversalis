@@ -156,8 +156,30 @@ tonxara_1 = {
 		icon = mission_restore_kiev
 		required_missions = {fas_supremacy_of_the_clouds}
 		trigger = {
+			is_defender_of_faith = yes
+			custom_trigger_tooltip = {
+				tooltip = TONMO_COUNTRIES_TT
+				calc_true_if = {
+					all_known_country = {
+						religion = tonmo
+					}
+					amount = 10
+				}
+			}
+			AND = {
+				has_institution	= feudalism
+				has_institution	= renaissance
+				has_institution	= new_world_i
+				has_institution	= printing_press
+			}
 		}
-		effect = {}
+		effect = {
+			add_country_modifier = {
+				name = tonxara_tonmo_world
+				duration = -1
+			}
+			add_dip_power = 200
+		}
 	}
 }
 
@@ -179,7 +201,44 @@ tonxara_5 = {
     fas_leaving_the_steppe = {
 		icon = mission_advance_to_the_dnieper
 		required_missions = {}
-		trigger = {}
-		effect = {}
+		trigger = {
+			NOT = {
+				government = tribal
+			}
+			government_rank	= 3
+		}
+		effect = {
+			if = {
+				limit = {
+					government = monarchy
+				}
+				add_country_modifier = {
+					name = tonxara_gov_monarchy
+					duration = -1
+				}
+			}
+			if = {
+				limit = {
+					government = republic
+				}
+				add_country_modifier = {
+					name = tonxara_gov_republic
+					duration = -1
+				}
+			}
+			if = {
+				limit = {
+					government = theocracy
+				}
+				add_country_modifier = {
+					name = tonxara_gov_theocracy
+					duration = -1
+				}
+			}
+			add_ruler_modifier = {
+				name = tonxara_ruler_mdf
+				duration = -1
+			}
+		}
 	}
 }
