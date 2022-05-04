@@ -87,6 +87,7 @@ age_of_discovery = {
 			OR = {
 				government = republic
 				have_had_reform = steppe_horde
+				have_had_reform = nomadic_tonxara_gov
 			}
 		}
 		
