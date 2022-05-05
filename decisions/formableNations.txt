@@ -3315,7 +3315,15 @@ country_decisions = {
 					culture = Okus
 					culture = Opmaki
 				}
-				religion = gadan
+				OR = {
+					religion = gadan
+					religion = reformed_oppian
+					religion = western_oppian
+					religion = eastern_oppian
+					religion = animism
+					religion = bosisi
+					religion = lathvy
+				}
 				NOT = { exists = MKY }
 				NOT = { exists = MSD }
 				was_never_end_game_tag_trigger = yes
@@ -3350,20 +3358,86 @@ country_decisions = {
 			capital_scope = {
 				is_core = ROOT
 			}
-			num_of_owned_provinces_with = {
-				value = 10
-				religion = gadan
-				region = maky_region
+			if = {
+				limit = {
+					religion = gadan
+				}
+				num_of_owned_provinces_with = {
+					value = 10
+					religion = gadan
+					region = maky_region
+				}
+			}
+			else_if = {
+				limit = {
+					religion = reformed_oppian
+				}
+				num_of_owned_provinces_with = {
+					value = 10
+					religion = reformed_oppian
+					region = maky_region
+				}
+			}
+			else_if = {
+				limit = {
+					religion = western_oppian
+				}
+				num_of_owned_provinces_with = {
+					value = 10
+					religion = western_oppian
+					region = maky_region
+				}
+			}
+			else_if = {
+				limit = {
+					religion = eastern_oppian
+				}
+				num_of_owned_provinces_with = {
+					value = 10
+					religion = eastern_oppian
+					region = maky_region
+				}
+			}
+			else_if = {
+				limit = {
+					religion = animism
+				}
+				num_of_owned_provinces_with = {
+					value = 10
+					religion = animism
+					region = maky_region
+				}
+			}
+			else_if = {
+				limit = {
+					religion = bosisi
+				}
+				num_of_owned_provinces_with = {
+					value = 10
+					religion = bosisi
+					region = maky_region
+				}
+			}
+			else_if = {
+				limit = {
+					religion = lathvy
+				}
+				num_of_owned_provinces_with = {
+					value = 10
+					religion = lathvy
+					region = maky_region
+				}
 			}
 		}
 		effect = {
+			change_primary_culture = Okus
 			if = {
 				limit = { has_custom_ideas = no }
 				country_event = { id = ideagroups.1 } #Swap Ideas
 			}
 			restore_country_name = yes
 			change_tag = MSD
-			5140 = {
+			5142 = {
 				move_capital_effect = yes
 			}
 			add_core = {

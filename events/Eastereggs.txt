@@ -1,0 +1,25 @@
+namespace = eastereggs
+
+#discovery of protogomic
+country_event = {
+	id = eastereggs.1
+	title = eastereggs.1.t
+	desc = eastereggs.1.d
+	fire_only_once = yes
+	picture = BIG_BOOK_eventPicture
+
+	trigger = {
+		tag = NPX
+		is_year = 305
+	}
+	
+	mean_time_to_happen = {
+		days = 365
+	}
+
+	option = {
+		name = eastereggs.1.a
+		ai_chance = { factor = 1 }
+		add_prestige = 1
+	}
+}

@@ -10,6 +10,11 @@ on_startup = {
 		which = desertCheck
 		value = 0
 	}
+	export_to_variable = {
+		which = religionVar
+		value = religion
+		who = ROOT
+	}
 	emperor = {
 		save_global_event_target_as = Emperor
 	}
@@ -18,10 +23,6 @@ on_startup = {
 			is_emperor_of_china = yes
 		}
 		save_global_event_target_as = EmperorOfChina
-	}
-	events = {
-		muslim_school_events.20 #Pick School
-	#flavor_fra.15000 #Make the French Revolution happen if starting in 1789
 	}
 	if = {
 		limit = {
@@ -3757,8 +3758,59 @@ on_province_religion_converted = {
 			owner = {
 				religion = tonmo
 			}
+			development = 3
+			NOT = { development = 8 }
 		}
-		set_province_flag = tonmo_converted
+		owner = {
+			add_horde_unity = 1
+		}
+	}
+	if = {
+		limit = {
+			owner = {
+				religion = tonmo
+			}
+			development = 8
+			NOT = { development = 13 }
+		}
+		owner = {
+			add_horde_unity = 1.5
+		}
+	}
+	if = {
+		limit = {
+			owner = {
+				religion = tonmo
+			}
+			development = 18
+			NOT = { development = 23 }
+		}
+		owner = {
+			add_horde_unity = 2
+		}
+	}
+	if = {
+		limit = {
+			owner = {
+				religion = tonmo
+			}
+			development = 23
+			NOT = { development = 28 }
+		}
+		owner = {
+			add_horde_unity = 2.5
+		}
+	}
+	if = {
+		limit = {
+			owner = {
+				religion = tonmo
+			}
+			development = 28
+		}
+		owner = {
+			add_horde_unity = 3
+		}
 	}
 	if = {
 		limit = {
