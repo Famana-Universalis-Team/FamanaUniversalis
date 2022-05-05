@@ -52,6 +52,7 @@ province_event = { #Random coastal xalian provinces / provinces adjacent to lath
 		owner = {
 			NOT = {
 				has_country_modifier = recent_lathvy_province
+				NOT = { religion = lathvy }
 			}
 			OR = {
 				exists = PEX

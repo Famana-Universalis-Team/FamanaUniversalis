@@ -19,6 +19,10 @@ country_event = {
             NOT = {
                 treasury = 500
             }
+			has_opinion = {
+			who = XOF
+			value = -10
+			}
             exists = XOF
         }
     }
