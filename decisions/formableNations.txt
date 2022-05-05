@@ -3568,4 +3568,86 @@ country_decisions = {
 			factor = 1
 		}
 	}
-}
+	
+	form_nheomyr_diplomatically = {
+		major = yes
+		potential = {
+			AND = {
+				OR = {
+					tag = KMI
+					tag = BAS
+				}
+				NOT = { exists = NHE }
+				exists = KMI
+				exists = BAS
+				was_never_end_game_tag_trigger = yes
+			}
+		}
+		provinces_to_highlight = {
+			#uhh
+		}
+		allow = {
+			KMI = {
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			num_of_cities = 10
+			owns_core_province = 5866
+			owns_core_province = 5870
+			alliance_with = BAS
+			has_opinion = {
+				who = BAS
+				value = 190
+				}
+			}
+			BAS = {
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			num_of_cities = 10
+			owns_core_province = 5880
+			owns_core_province = 5865
+			alliance_with = BAS
+			has_opinion = {
+				who = KMI
+				value = 190
+				}
+			}
+		}
+		effect = {
+			if = {
+				limit = { tag = BAS }
+				inherit = KMI
+				add_accepted_culture = Khiman
+			}
+			if = {
+				limit = { tag = KMI }
+				inherit = BAS
+				add_accepted_culture = Bastranian
+			}
+			restore_country_name = yes
+			change_tag = NHE
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 50
+			swap_non_generic_missions = yes
+			if = {
+				limit = {
+					NOT = { government_rank = 3 }
+				}
+				set_government_rank = 3
+			}
+			nheomyr_region = {
+				add_permanent_claim = NHE
+			}
+			if = {
+					limit = { exists = BES }
+					BES = {
+						country_event = { 
+						id = nhoma.3
+						days = 1
+					}
+				}	
+			}
+		}
+	}

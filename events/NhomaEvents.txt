@@ -73,3 +73,28 @@ country_event = {
         }
     }
 }
+# Offer for Adrygpam to join Nheomyr
+country_event = {
+    id = nhoma.3
+    title = nhoma.3.t
+    desc = nhoma.3.d
+    picture = COURT_eventPicture
+    fire_only_once = yes
+	
+	is_triggered_only = yes
+  
+   option = {
+	ai_chance = { factor = 75 }
+        name = nhoma.3.a
+        NHE = {
+		inherit = BES
+		}
+    }
+	option = {
+	ai_chance = { factor = 25 }
+       name = nhoma.3.a
+       NHE = {
+	   add_claim = 5860
+	   }
+    }
+}
