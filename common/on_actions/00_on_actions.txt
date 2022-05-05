@@ -3757,8 +3757,59 @@ on_province_religion_converted = {
 			owner = {
 				religion = tonmo
 			}
+			development = 3
+			NOT = { development = 8 }
 		}
-		set_province_flag = tonmo_converted
+		owner = {
+			add_horde_unity = 1
+		}
+	}
+	if = {
+		limit = {
+			owner = {
+				religion = tonmo
+			}
+			development = 8
+			NOT = { development = 13 }
+		}
+		owner = {
+			add_horde_unity = 1.5
+		}
+	}
+	if = {
+		limit = {
+			owner = {
+				religion = tonmo
+			}
+			development = 18
+			NOT = { development = 23 }
+		}
+		owner = {
+			add_horde_unity = 2
+		}
+	}
+	if = {
+		limit = {
+			owner = {
+				religion = tonmo
+			}
+			development = 23
+			NOT = { development = 28 }
+		}
+		owner = {
+			add_horde_unity = 2.5
+		}
+	}
+	if = {
+		limit = {
+			owner = {
+				religion = tonmo
+			}
+			development = 28
+		}
+		owner = {
+			add_horde_unity = 3
+		}
 	}
 	if = {
 		limit = {
