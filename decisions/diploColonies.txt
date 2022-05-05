@@ -987,4 +987,262 @@ country_decisions = {
 			factor = 1
 		}
 	}
+	conquer_area_232 = {
+		potential = {
+			is_year = 350
+			area_232 = {
+				is_empty = yes
+			}
+			capital_scope = {
+			region = nhoma_region
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = bizugu_area
+			}
+		}
+		allow = {
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			mil_power = 50
+			bizugu_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			area_232 = {
+				limit = {
+					is_empty = yes
+				}
+				cede_province = ROOT
+				change_religion	= ROOT
+				change_culture = Fashli
+			}
+			ROOT = {
+					add_mil_power = -50
+				}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	conquer_5913 = {
+		potential = {
+			is_year = 410
+			5913 = {
+				is_empty = yes
+			}
+			capital_scope = {
+			region = nhoma_region
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = area_232
+			}
+		}
+		allow = {
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			mil_power = 25
+			area_232 = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			5913 = {
+				cede_province = ROOT
+				change_religion	= ROOT
+				change_culture = Fashli
+			}
+			ROOT = {
+					add_mil_power = -25
+				}
+			5911 = {
+			add_claim = ROOT
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	conquer_6076_6077 = { #in case Bhilis or Onobya don't take it
+		potential = {
+			is_year = 480
+			6076 = {
+				is_empty = yes
+			}
+			6077 = {
+				is_empty = yes
+			}
+			capital_scope = {
+			region = nhoma_region
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = area_232
+			}
+		}
+		allow = {
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			mil_power = 50
+			area_232 = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			6076 = {
+				cede_province = ROOT
+				change_religion	= ROOT
+				change_culture = Fashli
+				
+			}
+			6077 = {
+				cede_province = ROOT
+				change_religion	= ROOT
+				change_culture = Fashli
+				
+			}
+			ROOT = {
+					add_mil_power = -50
+				}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	conquer_5935_5934 = { 
+		potential = {
+			is_year = 350
+			5935 = {
+				is_empty = yes
+			}
+			5934 = {
+				is_empty = yes
+			}
+			capital_scope = {
+			region = nhoma_region
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = area_115
+			}
+		}
+		allow = {
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			dip_power = 25
+			mil_power = 25
+			area_115 = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			5935 = {
+				cede_province = ROOT
+				change_religion	= ROOT
+				change_culture = ROOT
+				
+			}
+			5934 = {
+				cede_province = ROOT
+				change_religion	= ROOT
+				change_culture = ROOT
+				
+			}
+			ROOT = {
+					add_mil_power = -25
+					add_dip_power = -25
+				}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	conquer_5933 = { 
+		potential = {
+			is_year = 390
+			5933 = {
+				is_empty = yes
+			}
+			capital_scope = {
+			region = nhoma_region
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 5934
+				province_id = 5944
+			}
+		}
+		allow = {
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			dip_power = 10
+			mil_power = 10
+			OR = {
+			owns_core_province = 5934
+			owns_core_province = 5944
+			}
+		}
+		effect = {
+			5933 = {
+				cede_province = ROOT
+				change_religion	= ROOT
+				change_culture = ROOT
+				
+			}
+			ROOT = {
+					add_mil_power = -10
+					add_dip_power = -10
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	conquer_5932 = { 
+		potential = {
+			is_year = 390
+			5932 = {
+				is_empty = yes
+			}
+			capital_scope = {
+			region = nhoma_region
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 5944
+			}
+		}
+		allow = {
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			mil_power = 10
+			owns_core_province = 5944
+		}
+		effect = {
+			5932 = {
+				cede_province = ROOT
+				change_religion	= ROOT
+				change_culture = Fashli
+				
+			}
+			ROOT = {
+					add_mil_power = -10
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
 }
