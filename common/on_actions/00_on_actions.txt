@@ -3851,8 +3851,6 @@ on_province_religion_converted = {
 			OR = {
 				culture = Yabonian
 				culture = Geteri
-				culture = Bamali_C
-				culture = Holk
 			}
 			owner = {
 				religion = tonmo
@@ -3865,8 +3863,21 @@ on_province_religion_converted = {
 	if = {
 		limit = {
 			OR = {
+				culture = Bamali_C
+				culture = Holk
+			}
+			owner = {
+				religion = tonmo
+			}
+		}
+		change_culture = Legeni
+		add_core = KSL
+		remove_core = BMF
+	}
+	if = {
+		limit = {
+			OR = {
 				culture = Kapolian
-				culture = Ghaloyan
 				culture = West_Jasuan
 				culture = Mikledonian
 			}
@@ -3875,6 +3886,19 @@ on_province_religion_converted = {
 			}
 		}
 		change_culture = West_Kisholian
+		add_core = KSL
+	}
+	if = {
+		limit = {
+			OR = {
+				culture = Ghaloyan
+				culture = Blastan
+			}
+			owner = {
+				religion = tonmo
+			}
+		}
+		change_culture = North_Kisholian
 		add_core = KSL
 	}
 	#if = {
