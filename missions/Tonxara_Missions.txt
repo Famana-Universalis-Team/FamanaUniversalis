@@ -206,6 +206,7 @@ tonxara_5 = {
 				government = tribal
 			}
 			government_rank	= 3
+			army_professionalism = 0.10
 		}
 		effect = {
 			if = {
