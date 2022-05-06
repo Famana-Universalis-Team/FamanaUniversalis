@@ -3587,9 +3587,9 @@ country_decisions = {
 			KMI = {
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
-			num_of_cities = 10
-			owns_core_province = 5866
-			owns_core_province = 5870
+			num_of_cities = 13
+			adm_tech = 10
+			owns_core_province = 5838
 			alliance_with = BAS
 			has_opinion = {
 				who = BAS
@@ -3599,10 +3599,10 @@ country_decisions = {
 			BAS = {
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
-			num_of_cities = 10
-			owns_core_province = 5880
-			owns_core_province = 5865
-			alliance_with = BAS
+			num_of_cities = 13
+			adm_tech = 10
+			owns_core_province = 5968
+			alliance_with = KMI
 			has_opinion = {
 				who = KMI
 				value = 190
@@ -3654,11 +3654,12 @@ country_decisions = {
 						country_event = { 
 						id = nhoma.3
 						days = 1
+						}
 					}
 				}	
 			}
 		}
-	}
+
 	
 	form_nheomyr_militarily = {
 		major = yes
@@ -3694,7 +3695,7 @@ country_decisions = {
 			owns_core_province = 5872
 			owns_core_province = 5871
 			num_of_owned_provinces_with = {
-				value = 25
+				value = 26
 				superregion = tonmo_supperregion
 			}
 			adm_tech = 10
