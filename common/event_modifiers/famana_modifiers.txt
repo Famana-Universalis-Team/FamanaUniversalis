@@ -728,3 +728,17 @@ tonxara_gov_republic = {
 tonxara_ruler_mdf = {
     all_power_cost = -0.1
 }
+
+yomtanian_ship_technology = {
+    technology_cost = -0.15
+}
+
+yomtanian_ship_steel = {
+    infantry_cost = -0.1
+}
+
+hartimatul_defence = {
+    enemy_core_creation = -0.1
+    hostile_attrition = 1
+    naval_forcelimit_modifier = 0.25
+}

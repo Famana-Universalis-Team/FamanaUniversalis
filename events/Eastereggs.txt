@@ -23,3 +23,40 @@ country_event = {
 		add_prestige = 1
 	}
 }
+
+#Yomtanian Spaceship
+#I did the maths, this event has a 2.9% chance of firing in a normal full length campaign from 212 to 639. From 212 to 324, it is more like a 0.77% chance of it having occured. In other words, you need to be very lucky to ever see this event.
+country_event = {
+	id = eastereggs.2
+	title = eastereggs.2.t
+	desc = eastereggs.2.d
+	picture = SYNTHETICS_eventPicture
+
+	trigger = {
+		always = yes
+	}
+
+	mean_time_to_happen = {
+		days = 3600000
+	}
+
+	option = {
+		highlight = yes
+		name = eastereggs.2.a
+		ai_chance = { factor = 1 }
+		add_country_modifier = {
+			name = yomtanian_ship_technology
+			duration = 3650
+		}
+		add_stability = -2
+	}
+
+	option = {
+		name = eastereggs.2.b
+		ai_chance = { factor = 1 }
+		add_country_modifier = {
+			name = yomtanian_ship_steel
+			duration = 3650
+		}
+	}
+}
