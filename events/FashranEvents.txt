@@ -1062,7 +1062,7 @@ country_event = {
                     limit = {
                         OR = {
                             superregion = jasua_superregion
-                            superregion = central_estal_superregion
+                            superregion = central_estal_supperregion
                             superregion = great_desert_superregion
                             superregion = north_estal_superregion
                         }
@@ -1193,62 +1193,62 @@ country_event = {
         }
         name = fashros.17.a
         ai_chance = { factor = 0 }
-        restore_country_name = yes
-        every_province = {
-            limit = {
-                OR = {
-                    is_core = ROOT
-                    is_claim = ROOT
-                }
-                NOT = {
-                    owned_by = ROOT
-                }
-            }
-            remove_core = ROOT
-            remove_claim = ROOT
-        }
+        custom_tooltip = fashros_kisholi_real
         hidden_effect = {
+            restore_country_name = yes
             release = KSL
-        }
-        switch_tag = KSL
-        hidden_effect = {
-            release_all_subjects = yes
-            release = JFX
-            release = NHM
-            release = HOY
-            KSL = {
-                swap_non_generic_missions = yes
-                swap_free_idea_group = yes
+            switch_tag = KSL
+            FAS = {
+                release_all_subjects = yes
+                release = HOY
+                release = JFX
+                release = NHM
             }
-            JFX = {
-                swap_non_generic_missions = yes
-                swap_free_idea_group = yes
+            every_province = {
+                limit = {
+                    OR = {
+                        is_core = FAS
+                        is_claim = FAS
+                    }
+                    NOT = {
+                        owned_by = FAS
+                    }
+                }
+                remove_core = FAS
+                remove_claim = FAS
+            }
+            KSL = {
+                add_manpower = -1000
+                add_sailors	= -1000
             }
             NHM = {
-                swap_non_generic_missions = yes
-                swap_free_idea_group = yes
+                add_manpower = -1000
+                add_sailors	= -1000
             }
             HOY = {
-                swap_non_generic_missions = yes
-                swap_free_idea_group = yes
+                add_manpower = -1000
+                add_sailors	= -1000
             }
-            add_manpower = -1000
-            add_sailors	= -1000
+            JFX = {
+                add_manpower = -1000
+                add_sailors	= -1000
+            }
             change_graphical_culture = easterngfx
             jasua_superregion = { add_permanent_claim = KSL }
             ga_xal_superregion = { add_permanent_claim = JFX }
             tonmo_supperregion = { add_permanent_claim = NHM }
-            remove_country_modifier = fas_xalian_bureaucracy
         }
         if = {
             limit = {
                 has_country_flag = fas_three_crowns_flag
             }
-            add_country_modifier = {
-                name = tonxara_bonus_modifier
-                duration = 14600
+            KSL = {
+                add_country_modifier = {
+                    name = tonxara_bonus_modifier
+                    duration = 14600
+                }
+                add_manpower = 15
             }
-            add_manpower = 15
         }
         custom_tooltip = play_as_kisholi
     }
@@ -1258,34 +1258,46 @@ country_event = {
         }
         name = fashros.17.b
         ai_chance = { factor = 0 }
-        restore_country_name = yes
-        every_province = {
-            limit = {
-                OR = {
-                    is_core = ROOT
-                    is_claim = ROOT
-                }
-                NOT = {
-                    owned_by = ROOT
-                }
-            }
-            remove_core = ROOT
-            remove_claim = ROOT
-        }
+        custom_tooltip = fashros_jafxoi_real
         hidden_effect = {
+            restore_country_name = yes
             release = JFX
-        }
-        switch_tag = JFX
-        hidden_effect = {
-            release_all_subjects = yes
-            release = KSL
-            release = NHM
-            release = HOY
-            swap_non_generic_missions = yes
-            swap_free_idea_group = yes
-            change_graphical_culture = westerngfx
-            add_manpower = -1000
-            add_sailors	= -1000
+            switch_tag = JFX
+            FAS = {
+                release_all_subjects = yes
+                release = KSL
+                release = HOY
+                release = NHM
+            }
+            every_province = {
+                limit = {
+                    OR = {
+                        is_core = FAS
+                        is_claim = FAS
+                    }
+                    NOT = {
+                        owned_by = FAS
+                    }
+                }
+                remove_core = FAS
+                remove_claim = FAS
+            }
+            KSL = {
+                add_manpower = -1000
+                add_sailors	= -1000
+            }
+            NHM = {
+                add_manpower = -1000
+                add_sailors	= -1000
+            }
+            HOY = {
+                add_manpower = -1000
+                add_sailors	= -1000
+            }
+            JFX = {
+                add_manpower = -1000
+                add_sailors	= -1000
+            }
             jasua_superregion = { add_permanent_claim = KSL }
             ga_xal_superregion = { add_permanent_claim = JFX }
             tonmo_supperregion = { add_permanent_claim = NHM }
@@ -1294,11 +1306,13 @@ country_event = {
             limit = {
                 has_country_flag = fas_three_crowns_flag
             }
-            add_country_modifier = {
-                name = tonxara_bonus_modifier
-                duration = 14600
+            JFX = {
+                add_country_modifier = {
+                    name = tonxara_bonus_modifier
+                    duration = 14600
+                }
+                add_manpower = 15
             }
-            add_manpower = 15
         }
         custom_tooltip = play_as_jafxoi
     }
@@ -1308,47 +1322,61 @@ country_event = {
         }
         name = fashros.17.c
         ai_chance = { factor = 0 }
-        restore_country_name = yes
-        every_province = {
-            limit = {
-                OR = {
-                    is_core = ROOT
-                    is_claim = ROOT
-                }
-                NOT = {
-                    owned_by = ROOT
-                }
-            }
-            remove_core = ROOT
-            remove_claim = ROOT
-        }
+        custom_tooltip = fashros_nhoma_real
         hidden_effect = {
+            restore_country_name = yes
             release = NHM
-        }
-        switch_tag = NHM
-        hidden_effect = {
-            release_all_subjects = yes
-            release = KSL
-            release = JFX
-            release = HOY
-            swap_non_generic_missions = yes
-            swap_free_idea_group = yes
-            add_manpower = -1000
-            add_sailors	= -1000
+            switch_tag = NHM
+            FAS = {
+                release_all_subjects = yes
+                release = KSL
+                release = JFX
+                release = HOY
+            }
+            every_province = {
+                limit = {
+                    OR = {
+                        is_core = FAS
+                        is_claim = FAS
+                    }
+                    NOT = {
+                        owned_by = FAS
+                    }
+                }
+                remove_core = FAS
+                remove_claim = FAS
+            }
+            KSL = {
+                add_manpower = -1000
+                add_sailors	= -1000
+            }
+            NHM = {
+                add_manpower = -1000
+                add_sailors	= -1000
+            }
+            HOY = {
+                add_manpower = -1000
+                add_sailors	= -1000
+            }
+            JFX = {
+                add_manpower = -1000
+                add_sailors	= -1000
+            }
             jasua_superregion = { add_permanent_claim = KSL }
             ga_xal_superregion = { add_permanent_claim = JFX }
             tonmo_supperregion = { add_permanent_claim = NHM }
-            remove_country_modifier = fas_xalian_bureaucracy
         }
         if = {
             limit = {
                 has_country_flag = fas_three_crowns_flag
             }
-            add_country_modifier = {
-                name = tonxara_bonus_modifier
-                duration = 14600
+            NHM = {
+                add_country_modifier = {
+                    name = tonxara_bonus_modifier
+                    duration = 14600
+                }
+                add_manpower = 15
             }
-            add_manpower = 15
         }
         custom_tooltip = play_as_nhoma
     }
@@ -1358,47 +1386,61 @@ country_event = {
         }
         name = fashros.17.f
         ai_chance = { factor = 0 }
-        restore_country_name = yes
-        every_province = {
-            limit = {
-                OR = {
-                    is_core = ROOT
-                    is_claim = ROOT
-                }
-                NOT = {
-                    owned_by = ROOT
-                }
-            }
-            remove_core = ROOT
-            remove_claim = ROOT
-        }
+        custom_tooltip = fashros_hoyros_real
         hidden_effect = {
+            restore_country_name = yes
             release = HOY
-        }
-        switch_tag = HOY
-        hidden_effect = {
-            release_all_subjects = yes
-            release = KSL
-            release = JFX
-            release = NHM
-            swap_non_generic_missions = yes
-            swap_free_idea_group = yes
-            add_manpower = -1000
-            add_sailors	= -1000
+            switch_tag = HOY
+            FAS = {
+                release_all_subjects = yes
+                release = KSL
+                release = JFX
+                release = NHM
+            }
+            every_province = {
+                limit = {
+                    OR = {
+                        is_core = FAS
+                        is_claim = FAS
+                    }
+                    NOT = {
+                        owned_by = FAS
+                    }
+                }
+                remove_core = FAS
+                remove_claim = FAS
+            }
+            KSL = {
+                add_manpower = -1000
+                add_sailors	= -1000
+            }
+            NHM = {
+                add_manpower = -1000
+                add_sailors	= -1000
+            }
+            HOY = {
+                add_manpower = -1000
+                add_sailors	= -1000
+            }
+            JFX = {
+                add_manpower = -1000
+                add_sailors	= -1000
+            }
             jasua_superregion = { add_permanent_claim = KSL }
             ga_xal_superregion = { add_permanent_claim = JFX }
             tonmo_supperregion = { add_permanent_claim = NHM }
-            remove_country_modifier = fas_xalian_bureaucracy
         }
         if = {
             limit = {
                 has_country_flag = fas_three_crowns_flag
             }
-            add_country_modifier = {
-                name = tonxara_bonus_modifier
-                duration = 14600
+            HOY = {
+                add_country_modifier = {
+                    name = tonxara_bonus_modifier
+                    duration = 14600
+                }
+                add_manpower = 15
             }
-            add_manpower = 15
         }
         custom_tooltip = play_as_hoyros
     }
@@ -1409,7 +1451,6 @@ country_event = {
             release_all_subjects = yes
             release = KSL
             release = JFX
-            release = NHM
             release = HOY
             jasua_superregion = { add_permanent_claim = KSL }
             ga_xal_superregion = { add_permanent_claim = JFX }
@@ -1424,6 +1465,7 @@ country_event = {
                 remove_core = FAS
                 remove_claim = FAS
             }
+            release = NHM
             every_province = {
                 limit = {
                     owned_by = FAS
@@ -1436,12 +1478,6 @@ country_event = {
                     }
                 }
                 cede_province = NHM
-            }
-            JFX = {
-                add_country_modifier = {
-                    name = fas_xalian_bureaucracy
-                    duration = -1
-                }
             }
         }
         custom_tooltip = end_fashros
