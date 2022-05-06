@@ -69,17 +69,16 @@ province_event = { #Random coastal xalian provinces / provinces adjacent to lath
 		}
 		superregion = ga_xal_superregion
 		NOT = { religion = tonmo }
+		NOT = { religion = lathvy }
 		NOT = { has_province_modifier = ga_xal_lathvy_reconverted }
 		any_neighbor_province = {
-			AND = {
-				NOT = {
-					has_province_flag = converted
-				}
-				OR = {
-					is_sea = yes
-					religion = lathvy
-				}
+			OR = {
+				is_sea = yes
+				religion = lathvy
 			}
+		}
+		NOT = {
+			has_province_flag = converted
 		}
 		NOT = {
 			development = 15
@@ -95,7 +94,11 @@ province_event = { #Random coastal xalian provinces / provinces adjacent to lath
         name = provincec.2.a
 		ai_chance = { factor = 1 }
 		hidden_trigger = {
-			NOT = { religion = lathvy }
+			NOT = {
+				owner = {
+					religion = lathvy
+				}
+			}
 		}
 		change_religion = lathvy
 		add_unrest = 4
@@ -111,10 +114,12 @@ province_event = { #Random coastal xalian provinces / provinces adjacent to lath
         name = provincec.2.b
 		ai_chance = { factor = 1 }
 		hidden_trigger = {
-			religion = lathvy
+			owner = {
+				religion = lathvy
+			}
 		}
 		change_religion = lathvy
 		set_province_flag = converted
-		add_piety = 5
+		add_piety = 0.05
 	}
 }
