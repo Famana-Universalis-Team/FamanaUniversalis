@@ -3265,6 +3265,10 @@ country_decisions = {
 			}
 		}
 		effect = {
+			add_country_modifier = {
+				name = hartimatul_defence
+				duration = -1
+			}
 			change_tag = HRT
 			#if = {
 			#	limit = {
