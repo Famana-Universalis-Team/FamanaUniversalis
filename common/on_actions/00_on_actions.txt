@@ -3823,6 +3823,7 @@ on_province_religion_converted = {
 			}
 		}
 		add_core = JFX
+		add_core = AMX
 		change_culture = Amaxran
 	}
 	if = {

@@ -291,6 +291,7 @@ country_event = {
 			adm = 6
 			dip = 6
 			mil = 6
+			leader = {	name = "Syadon Noy"            	type = general	fire = 6	shock = 6	manuever = 6	siege = 6}
 		}
 		if = {
 			limit = {
