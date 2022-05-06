@@ -139,7 +139,7 @@ age_of_discovery = {
 			}			
 		}
 		
-		ab_warscore_vs_religion = {
+		ab_warscore_religion = {
 			modifier = {
 				warscore_cost_vs_other_religion = -0.20
 			}
