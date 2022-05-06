@@ -3583,9 +3583,6 @@ country_decisions = {
 				was_never_end_game_tag_trigger = yes
 			}
 		}
-		provinces_to_highlight = {
-			#uhh
-		}
 		allow = {
 			KMI = {
 			is_free_or_tributary_trigger = yes
@@ -3629,7 +3626,7 @@ country_decisions = {
 				name = "centralization_modifier"
 				duration = 7300
 			}
-			add_prestige = 50
+			add_prestige = 25
 			swap_non_generic_missions = yes
 			if = {
 				limit = {
@@ -3641,7 +3638,18 @@ country_decisions = {
 				add_permanent_claim = NHE
 			}
 			if = {
-					limit = { exists = BES }
+					limit = {
+						BES = {
+							owns_core_province = 5871
+							owns_core_province = 5860
+							NOT = {
+								num_of_owned_provinces_with = {
+								value = 5
+								superregion = tonmo_supperregion
+								}
+							}
+						}
+					}
 					BES = {
 						country_event = { 
 						id = nhoma.3
@@ -3651,3 +3659,66 @@ country_decisions = {
 			}
 		}
 	}
+	
+	form_nheomyr_militarily = {
+		major = yes
+		potential = {
+			AND = {
+				OR = {
+					tag = KMI
+					tag = BAS
+				}
+				NOT = { exists = NHE }
+				was_never_end_game_tag_trigger = yes
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 5838
+				province_id = 5879
+				province_id = 5853
+				province_id = 5858
+				province_id = 5968
+				province_id = 5973
+				province_id = 5872
+				province_id = 5871 
+			}	
+		}
+		allow = {
+			owns_core_province = 5838
+			owns_core_province = 5879
+			owns_core_province = 5853
+			owns_core_province = 5858
+			owns_core_province = 5968
+			owns_core_province = 5973
+			owns_core_province = 5872
+			owns_core_province = 5871
+			num_of_owned_provinces_with = {
+				value = 25
+				superregion = tonmo_supperregion
+			}
+			adm_tech = 10
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+		}
+		effect = {
+			restore_country_name = yes
+			change_tag = NHE
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 50
+			swap_non_generic_missions = yes
+			if = {
+				limit = {
+					NOT = { government_rank = 3 }
+				}
+				set_government_rank = 3
+			}
+			nheomyr_region = {
+				add_permanent_claim = NHE
+			}
+		}
+	}
+}	
