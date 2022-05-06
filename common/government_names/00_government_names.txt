@@ -200,7 +200,16 @@ gov_tonxara = {
 
 	trigger = {
 		OR = {
-			tag = FAS
+			AND = {
+				OR = {
+					tag = FAS
+					tag = KSL
+					tag = HOY
+					tag = NHM
+					tag = JFX
+				}
+				religion = tonmo
+			}
 			AND = {
 				religion = tonmo
 				government_rank = 3
