@@ -1061,8 +1061,22 @@ country_decisions = {
 			ROOT = {
 					add_mil_power = -25
 				}
-			5911 = {
-			add_claim = ROOT
+			if = {
+				limit = {
+					5911 = {
+						is_empty = yes
+					}
+				}
+				5911 = {
+				cede_province = ROOT
+				change_religion	= ROOT
+				change_culture = Fashli
+				}
+			}
+			else = {
+				5911 = {
+				add_claim = ROOT
+				}
 			}
 		}
 		ai_will_do = {
