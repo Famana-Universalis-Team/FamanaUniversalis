@@ -3726,4 +3726,55 @@ country_decisions = {
 			}
 		}
 	}
+
+	oppian_empire = {
+		major = yes
+		potential = {
+			tag = OPP
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 5140
+				province_id = 5167
+				province_id = 5196
+				province_id = 5644
+				province_id = 5481
+				province_id = 5411
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				is_city = no
+			}
+		}
+		allow = {
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			owns_core_province = 5140
+			owns_core_province = 5167
+			owns_core_province = 5196
+			owns_core_province = 5644
+			owns_core_province = 5481
+			owns_core_province = 5411
+		}
+		effect = {
+			restore_country_name = yes
+			override_country_name = OPPIAN_EMPIRE_NAME
+			jasua_superregion = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = BMF
+			}
+			ga_xal_superregion = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = BMF
+			}
+			add_prestige = 100
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
 }	
