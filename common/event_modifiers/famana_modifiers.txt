@@ -738,7 +738,7 @@ yomtanian_ship_steel = {
 }
 
 hartimatul_defence = {
-    enemy_core_creation = -0.1
+    enemy_core_creation = 1.0
     hostile_attrition = 1
     naval_forcelimit_modifier = 0.25
 }

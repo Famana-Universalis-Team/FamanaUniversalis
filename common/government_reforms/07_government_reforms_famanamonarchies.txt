@@ -276,6 +276,7 @@ nomadic_tonxara_gov = {
 		years_of_nationalism = -5
 		global_missionary_strength = 0.02
 		governing_capacity = 1000
+		warscore_cost_vs_other_religion = -0.33
 	}
 	ai = {
 		factor = 1000
