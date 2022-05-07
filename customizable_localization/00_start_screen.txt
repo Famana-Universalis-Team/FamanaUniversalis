@@ -222,7 +222,6 @@ defined_text = {
     name = StartScreenUpLeftDesc
 	random = no
 
-    }
 	text = { #Gomic
         localisation_key = string_start_tag_gomic
         trigger = {
