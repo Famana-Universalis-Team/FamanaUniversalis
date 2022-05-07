@@ -3731,6 +3731,9 @@ country_decisions = {
 		major = yes
 		potential = {
 			tag = OPP
+			NOT = {
+				has_country_flag = opp_empire
+			}
 		}
 		provinces_to_highlight = {
 			OR = {
@@ -3757,6 +3760,7 @@ country_decisions = {
 			owns_core_province = 5411
 		}
 		effect = {
+			set_country_flag = opp_empire
 			restore_country_name = yes
 			override_country_name = OPPIAN_EMPIRE_NAME
 			jasua_superregion = {
