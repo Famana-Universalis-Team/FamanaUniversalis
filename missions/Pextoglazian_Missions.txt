@@ -526,7 +526,7 @@ pex_6 = { #Post-disaster missions
         }
         effect = {
             hidden_effect = {
-                remove_country_modifier	= pexto_purge_no_advisors
+                remove_country_modifier	= pexto_purge_advisors
                 remove_country_modifier	= pexto_cowardice
                 remove_country_modifier	= pexto_granted_city_rights
                 remove_country_modifier	= inner_turmoil_25
