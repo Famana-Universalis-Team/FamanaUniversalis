@@ -1727,3 +1727,35 @@ country_event = {
         ai_chance = { factor = 1 }
     }
 }
+
+#warning about xalian invasion
+country_event = {
+    id = fashros.23
+    title = fashros.23.t
+    picture = CONQUEST_eventPicture
+    desc = fashros.23.d
+    major = yes
+    fire_only_once = yes
+
+    trigger = {
+        any_owned_province = {
+            superregion = ga_xal_superregion
+        }
+        any_province = {
+			owned_by = FAS
+		    region = south_xalia_region
+		}
+        NOT = { has_global_flag = tonmo_xal_invasion }
+    }
+
+    mean_time_to_happen = {
+        days = 1
+    }
+
+    option = {
+        name = fashros.23.a
+        ai_chance = { factor = 1 }
+        set_global_flag = tonmo_xal_invasion
+        custom_tooltip = fashros_ga_xal_invasion_tt
+    }
+}
