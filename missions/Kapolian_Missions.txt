@@ -15,8 +15,7 @@ kap_1 = {
 		required_missions = { }
 		
 		 provinces_to_highlight = {
-			area = unnamed_area_40
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			province_id = 5503
 		}
 		
 		trigger = {
