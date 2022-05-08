@@ -1,6 +1,6 @@
 #Country Name: Please see filename.
 
-graphical_culture = westerngfx
+graphical_culture = asiangfx
 
 color = { 168  161  55 }
 
@@ -103,6 +103,14 @@ monarch_names = {
 	"Nogwaagy #0" = -1
 	"Oytiyde #0" = -1
 	"Vasigat #0" = -1
+	"Niruna #0" = 1
+	"Daar #0" = 1
+	"Soxiro #0" = 1
+	"Maa #0" = 1
+	"Enrogier #0" = 1
+	"Varli #0" = -1
+	"Bujun #0" = -1
+	"Tirin #0" = -1
 }
 
 leader_names = {
@@ -177,6 +185,11 @@ leader_names = {
 	Nogwaagy
 	Oytiyde
 	Vasigat
+	Niruna
+	Daar 
+	Soxiro 
+	Maa 
+	Enrogier
 }
 
 ship_names = {

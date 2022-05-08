@@ -677,3 +677,47 @@ Maxan_ideas = {
 		naval_forcelimit_modifier = 0.2
 	}
 }
+
+FSB_ideas = {
+	start = {
+		global_spy_defence = 0.50
+		trade_range_modifier = 0.25
+	}
+	
+	bonus = {
+		years_of_nationalism = -5
+	}
+
+	trigger = {
+		OR = {
+			tag = FSB
+			primary_culture = Fisbiklan
+		}
+	}
+	free = yes
+	
+	fsb_cloud = {
+		manpower_in_true_faith_provinces = 0.15
+		land_morale = 0.05
+	}
+	fsb_diplo = {
+		diplomatic_upkeep = 1
+		improve_relation_modifier = 0.10
+	}
+	fsb_cuisine = {
+		culture_conversion_cost = -0.25
+	}
+	fsb_riders = {
+		movement_speed = 0.10
+		discipline = 0.05
+	}
+	fsb_quiso = {
+		advisor_cost = -0.10
+	}
+	fsb_500 = {
+		free_adm_policy	= 1
+	}
+	fsb_guards = {
+		army_tradition = 1
+	}
+}

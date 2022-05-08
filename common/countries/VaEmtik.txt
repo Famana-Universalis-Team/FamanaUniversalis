@@ -1,6 +1,6 @@
 #Country Name: Please see filename.
 
-graphical_culture = westerngfx
+graphical_culture = asiangfx
 
 color = { 59  205  30 }
 
@@ -45,18 +45,72 @@ monarch_names = {
 	"Raravshara #0" = 1
 	"Unrara #0" = 1
 	"Dari #0" = -1
-	"Gaszron #0" = 1
-	"Urszus #0" = 1
-	"Forara #0" = 1
-	"Rzegarder #0" = 1
-	"Kaszasis #0" = 1
-	"Wenel #0" = 1
-	"Sotinotin #0" = 1
-	"Somin #0" = 1
-	"Jaines #0" = -1
-	"Mayel #0" = -1
-	"Ghones #0" = -1
-	"Aina #0" = -1
+	"Konu #0" = 1
+	"Cecor #0" = 1
+	"Xeb #0" = 1
+	"Mugch #0" = 1
+	"Otlabusubs #0" = 1
+	"Abusubs #0" = 1
+	"Xot #0" = 1
+	"Ortachercha #0" = 1
+	"Gotugdinx #0" = 1
+	"Ortushimnen #0" = 1
+	"Ortufun #0" = 1
+	"Bluxnach #0" = 1
+	"Bimo #0" = 1
+	"Cecobtu #0" = 1
+	"Ceyoye #0" = 1
+	"Chicumdo #0" = 1
+	"Chubeshamch #0" = 1
+	"Achercha #0" = 1
+	"Conx #0" = 1
+	"Dokt #0" = 1
+	"Elgu #0" = 1
+	"Durcho #0" = 1
+	"Gegcnegl #0" = 1
+	"Gongin #0" = 1
+	"Kadomdum #0" = 1
+	"Komsurlegch #0" = 1
+	"Ntonagalch #0" = 1
+	"Obcoxult #0" = 1
+	"Sarxo #0" = 1
+	"Segchal #0" = 1
+	"Shimu #0" = -1
+	"Shumch #0" = -1
+	"Shuror #0" = -1
+	"Tedibs #0" = -1
+	"Tabch #0" = -1
+	"Sogt #0" = -1
+	"Togtulttara #0" = -1
+	"Unx #0" = -1
+	"Xerd #0" = 1
+	"Xigchun #0" = 1
+	"Xodurxidrimi #0" = 1
+	"Yoyebodabr #0" = 1
+	"Bonaana #0" = -1
+	"Csongzu #0" = -1
+	"Balcsagy #0" = -1
+	"Bomsalgirucsurja #0" = -1
+	"Dimset #0" = -1
+	"Gyog #0" = -1
+	"Hersarag #0" = 1
+	"Nyucsum #0" = -1
+	"Opvidel #0" = 1
+	"Oneans #0" = 1
+	"Kulgy #0" = 1
+	"Jartel  #0" = -1
+	"Hunnos #0" = -1
+	"Nogwaagy #0" = -1
+	"Oytiyde #0" = -1
+	"Vasigat #0" = -1
+	"Niruna #0" = 1
+	"Daar #0" = 1
+	"Soxiro #0" = 1
+	"Maa #0" = 1
+	"Enrogier #0" = 1
+	"Varli #0" = -1
+	"Bujun #0" = -1
+	"Tirin #0" = -1
 }
 
 leader_names = {
@@ -71,14 +125,71 @@ leader_names = {
 	Axiaraniro
 	Raravshara
 	Unrara
-	Gaszron
-	Urszus
-	Forara
-	Rzegarder
-	Kaszasis
-	Wenel
-	Sotinotin
-	Somin
+	Konu 
+	Cecor
+	Xeb
+	Mugch
+	Otlabusubs
+	Abusubs
+	Xot
+	Ortachercha
+	Gotugdinx
+	Ortushimnen
+	Ortufun
+	Bluxnach
+	Bodbur
+	Bimo
+	Cecobtu
+	Ceyoye
+	Chicumdo	
+	Chubeshamch
+	Achercha
+	Conx
+	Dokt
+	Elgu
+	Durcho
+	Gegcnegl
+	Gongin
+	Kadomdum
+	Komsurlegch
+	Ntonagalch
+	Obcoxult
+	Sarxo
+	Segchal
+	Shimu
+	Shumch
+	Shuror
+	Tedibs
+	Tabch
+	Sogt
+	Togtultto
+	Unx
+	Xek
+	Xerd
+	Xigchun
+	Xodurxidrimi
+	Yoyebodable
+	Bonaany
+	Csongzu
+	Balcsagy
+	Bomsalgirucsurja
+	Dimset
+	Gyog
+	Hersarag
+	Nyucsum
+	Opvij
+	Oneans
+	Kulgy
+	Jartel
+	Hunnos
+	Nogwaagy
+	Oytiyde
+	Vasigat
+	Niruna
+	Daar 
+	Soxiro 
+	Maa 
+	Enrogier
 }
 
 ship_names = {

@@ -590,7 +590,12 @@ country_event = {
 			5255 = {
 				change_religion = lathvy
 				change_culture = Feniki
-				cede_province = FYL
+				if = {
+					limit = {
+						is_empty = yes
+					}
+					cede_province = FYL
+				}
 				add_core = FYL
 				hidden_effect = {
 					add_base_tax = 1
@@ -601,7 +606,12 @@ country_event = {
 			5265 = {
 				change_religion = lathvy
 				change_culture = Feniki
-				cede_province = FYL
+				if = {
+					limit = {
+						is_empty = yes
+					}
+					cede_province = FYL
+				}
 				add_core = FYL
 				hidden_effect = {
 					add_base_tax = 1
@@ -612,7 +622,12 @@ country_event = {
 			5279 = {
 				change_religion = lathvy
 				change_culture = Feniki
-				cede_province = WCH
+				if = {
+					limit = {
+						is_empty = yes
+					}
+					cede_province = WCH
+				}
 				add_core = WCH
 				hidden_effect = {
 					add_base_tax = 1
