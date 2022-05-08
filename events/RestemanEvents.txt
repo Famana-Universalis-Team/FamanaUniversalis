@@ -3,8 +3,8 @@ namespace = restema
 #Abandoning Slavery
 country_event = {
 	id = restema.1
-	title = restema.1.title
-	desc = restema.1.desc
+	title = restema.1.t
+	desc = restema.1.d
 	picture = FAMINE_eventPicture
 	fire_only_once = yes
 

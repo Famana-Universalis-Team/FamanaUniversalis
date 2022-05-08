@@ -2265,3 +2265,44 @@ NHM_ideas = {
 		global_ship_cost = -0.1
     }
 }
+
+EST_ideas = {
+    start = {
+        production_efficiency = 0.10
+		army_tradition = 1
+    }
+    
+    bonus = {
+        global_trade_power = 0.10
+    }
+
+    trigger = {
+        tag = EST
+    }
+    free = yes
+    
+    est_trade = {
+		trade_efficiency = 0.10
+    }
+    est_estal = {
+		global_manpower_modifier = 0.15
+		cavalry_power = 0.10
+    }
+    est_naval = {
+        galley_power = 0.20
+		galley_cost = -0.15
+    }
+    est_ideals = {
+        stability_cost_modifier = -0.10
+		promote_culture_cost = -0.25
+    }
+    est_lathvy = {
+		tolerance_own = 2
+    }
+    est_values = {
+		core_creation = -0.10
+    }
+    est_marksmen = {
+		fire_damage = 0.10
+    }
+}
