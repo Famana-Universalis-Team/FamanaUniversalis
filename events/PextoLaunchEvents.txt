@@ -8,6 +8,9 @@ country_event = {
     hidden = yes
 	trigger = {
         tag = PEX
+        NOT = {
+            has_country_flag = pex_collapse_prevented
+        }
         if = {
             limit = {
                 check_variable = { which = pex_collapse_progress value = 80 }
