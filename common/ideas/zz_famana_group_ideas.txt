@@ -407,7 +407,7 @@ naravami_ideas = {
     }
     narv_tribal_navies = {
         global_ship_cost = -0.1
-	navy_tradition = 1
+		navy_tradition = 1
     }
     narv_maritime_voyages = {
         naval_forcelimit_modifier = 0.2
@@ -424,5 +424,47 @@ naravami_ideas = {
     }
     narv_efficent_society = {
        max_absolutism = 10 
+    }
+}
+
+Ravsho_ideas = {
+    start = {
+        ae_impact = -0.10
+		global_tax_modifier = 0.10	
+    }
+
+    bonus = {
+        tolerance_own = 1
+    }
+
+    trigger = {
+        culture_group = Ravsho
+    }
+    free = yes
+
+    Ravsho_tonxara = {
+		core_creation = -0.05
+		unjustified_demands = -0.1
+    }
+    Ravsho_milk = {
+        caravan_power = 0.33
+		trade_range_modifier = 0.25
+    }
+    Ravsho_people = {
+        cavalry_power = 0.20
+    }
+    Ravsho_world = {
+		advisor_pool = 1
+		heir_chance	= 0.50
+    }
+    Ravsho_echoes = {
+        prestige_from_land = 1.0
+		cavalry_cost = -0.10
+    }
+    Ravsho_horde = {
+        years_of_nationalism = -5
+    }
+    Ravsho_heathens = {
+		warscore_cost_vs_other_religion = -0.15
     }
 }

@@ -48,6 +48,33 @@ crown_kingdom_reform = {
 	fixed_rank = 2
 }
 
+gov_tonxara = {
+	icon = "mamluk_government"
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	potential = {
+		has_reform = gov_tonxara
+		religion = tonmo
+		prestige = -50
+	}
+	legacy_equivalent = despotic_monarchy
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	modifiers = {
+		church_power_modifier = 0.5
+		cb_on_religious_enemies = yes
+		global_missionary_strength = 0.02
+		church_influence_modifier = 0.20
+	}
+	ai = {
+		factor = 1000 #generic
+	}
+	custom_attributes = {
+		locked_government_type = yes
+	}
+	fixed_rank = 3
+}
+
 holy_monarchy_reform = {
 	icon = "pextoglazia"
 	allow_normal_conversion = no
@@ -208,6 +235,7 @@ emmi = {
 		factor = 0.5 #generic
 	}
 }
+
 anmoean_council = {
 	icon = "trading_city"
 	allow_normal_conversion = no

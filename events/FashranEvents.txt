@@ -1220,18 +1220,22 @@ country_event = {
             KSL = {
                 add_manpower = -1000
                 add_sailors	= -1000
+                add_government_reform = gov_tonxara
             }
             NHM = {
                 add_manpower = -1000
                 add_sailors	= -1000
+                add_government_reform = gov_tonxara
             }
             HOY = {
                 add_manpower = -1000
                 add_sailors	= -1000
+                add_government_reform = gov_tonxara
             }
             JFX = {
                 add_manpower = -1000
                 add_sailors	= -1000
+                add_government_reform = gov_tonxara
             }
             change_graphical_culture = easterngfx
             jasua_superregion = { add_permanent_claim = KSL }
@@ -1285,18 +1289,22 @@ country_event = {
             KSL = {
                 add_manpower = -1000
                 add_sailors	= -1000
+                add_government_reform = gov_tonxara
             }
             NHM = {
                 add_manpower = -1000
                 add_sailors	= -1000
+                add_government_reform = gov_tonxara
             }
             HOY = {
                 add_manpower = -1000
                 add_sailors	= -1000
+                add_government_reform = gov_tonxara
             }
             JFX = {
                 add_manpower = -1000
                 add_sailors	= -1000
+                add_government_reform = gov_tonxara
             }
             jasua_superregion = { add_permanent_claim = KSL }
             ga_xal_superregion = { add_permanent_claim = JFX }
@@ -1349,18 +1357,22 @@ country_event = {
             KSL = {
                 add_manpower = -1000
                 add_sailors	= -1000
+                add_government_reform = gov_tonxara
             }
             NHM = {
                 add_manpower = -1000
                 add_sailors	= -1000
+                add_government_reform = gov_tonxara
             }
             HOY = {
                 add_manpower = -1000
                 add_sailors	= -1000
+                add_government_reform = gov_tonxara
             }
             JFX = {
                 add_manpower = -1000
                 add_sailors	= -1000
+                add_government_reform = gov_tonxara
             }
             jasua_superregion = { add_permanent_claim = KSL }
             ga_xal_superregion = { add_permanent_claim = JFX }
@@ -1413,18 +1425,22 @@ country_event = {
             KSL = {
                 add_manpower = -1000
                 add_sailors	= -1000
+                add_government_reform = gov_tonxara
             }
             NHM = {
                 add_manpower = -1000
                 add_sailors	= -1000
+                add_government_reform = gov_tonxara
             }
             HOY = {
                 add_manpower = -1000
                 add_sailors	= -1000
+                add_government_reform = gov_tonxara
             }
             JFX = {
                 add_manpower = -1000
                 add_sailors	= -1000
+                add_government_reform = gov_tonxara
             }
             jasua_superregion = { add_permanent_claim = KSL }
             ga_xal_superregion = { add_permanent_claim = JFX }
@@ -1478,6 +1494,18 @@ country_event = {
                     }
                 }
                 cede_province = NHM
+            }
+            KSL = {
+                add_government_reform = gov_tonxara
+            }
+            HOY = {
+                add_government_reform = gov_tonxara
+            }
+            NHM = {
+                add_government_reform = gov_tonxara
+            }
+            JFX = {
+                add_government_reform = gov_tonxara
             }
         }
         custom_tooltip = end_fashros

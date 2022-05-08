@@ -185,7 +185,7 @@ tomban_state_gov_name = {
 	}
 }
 
-gov_tonxara = {
+tonxara_gov_name = {
 	rank = {
 		3 = TONXARA
 	}
@@ -200,14 +200,9 @@ gov_tonxara = {
 
 	trigger = {
 		OR = {
-			tag = FAS
-			tag = KSL
-			tag = HOY
-			tag = NHM
-			tag = JFX
+			has_reform = nomadic_tonxara_gov
+			has_reform = gov_tonxara
 		}
-		religion = tonmo
-		government_rank = 3
 	}
 }
 

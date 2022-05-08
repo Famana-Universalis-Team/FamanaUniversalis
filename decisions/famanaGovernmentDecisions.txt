@@ -1,0 +1,83 @@
+country_decisions = {
+
+	become_emmi = {
+		potential = {
+			culture_group = Ravsho
+			NOT = { has_reform = emmi }
+			NOT = { has_reform = gov_tonxara }
+			NOT = { tag = FAS }
+			NOT = { tag = ANM }
+			government = monarchy
+		}
+		
+		allow = {
+			is_free_or_tributary_trigger = yes
+			prestige = 90
+			stability = 2
+		}
+		effect = {
+			add_government_reform = emmi
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	become_emmi_an = {
+		potential = {
+			culture_group = Ravsho
+			tag = ANM
+			NOT = { has_reform = emmi }
+			NOT = { has_reform = gov_tonxara }
+			government = monarchy
+		}
+		
+		allow = {
+			is_free_or_tributary_trigger = yes
+			prestige = 90
+			stability = 2
+		}
+		effect = {
+			add_government_reform = emmi
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	become_tonxara = {
+		potential = {
+			culture_group = Ravsho
+			NOT = { has_reform = gov_tonxara }
+			NOT = { has_reform = nomadic_tonxara_gov }
+			government_rank = 3
+			religion = tonmo
+			total_development = 250
+			in_golden_age = yes
+		}
+		
+		allow = {
+			is_free_or_tributary_trigger = yes
+			prestige = 100
+			stability = 3
+			church_power = 100
+			treasury = 500
+		}
+		effect = {
+			add_church_power = -100
+			add_treasury = -500
+			if = {
+				limit = {
+					NOT = {
+						government = monarchy
+					}
+				}
+				change_government = monarchy
+			}
+			add_government_reform = gov_tonxara
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
