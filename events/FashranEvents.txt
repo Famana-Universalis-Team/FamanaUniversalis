@@ -1759,3 +1759,36 @@ country_event = {
         custom_tooltip = fashros_ga_xal_invasion_tt
     }
 }
+
+country_event = { #Event that spawns cores for releasables. NOT DONE
+    id = fashros.24
+    title = fashros.24.t
+    picture = CIVIL_WAR_eventPicture
+    desc = fashros.24.d
+    fire_only_once = yes
+
+    trigger = {
+        is_year = 320
+        any_owned_province = {
+            limit = {
+                OR = {
+                    superregion = tonmo_supperregion
+                    superregion = jasua_superregion
+                }
+            }
+        }
+    }
+    mean_time_to_happen = {
+        days = 1
+    }
+    immediate = {
+        hidden_effect {
+            
+        }
+    }
+    option = {
+        name = fashros.24.a
+        ai_chance = { factor = 1 }
+        custom_tooltip = fas_releasables_event_tt
+    }
+}
