@@ -99,3 +99,48 @@ country_event = {
 	   }
     }
 }
+
+# Koff 
+country_event = {
+    id = nhoma.4
+    title = nhoma.4.t
+    desc = nhoma.4.d
+    picture = MERCHANTS_TALKING_eventPicture
+    fire_only_once = yes
+	
+	trigger = {
+        is_year = 327
+		tag = NHM
+        5866 = {
+		is_core = KFF
+		owned_by = NHM
+		}
+		NOT = { exists = KFF }
+
+    }
+	
+	mean_time_to_happen = {
+        months = 24
+    }
+  
+   option = {
+	ai_chance = { factor = 75 }
+        name = nhoma.4.a
+	goto = 5866
+        5866 = {
+	        cede_province = KFF
+        }
+		add_truce_with = KFF
+		#maybe this could accelerate the disaster when it's implemented
+    }
+	option = {
+	ai_chance = { factor = 25 }
+       name = nhoma.4.a
+	   5866 = {
+	   add_unrest = 10
+	   }
+	add_mil_power = -50
+	add_adm_power = -50
+       
+    }
+}
