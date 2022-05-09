@@ -403,3 +403,64 @@ country_event = {
 		}
 	}
 }
+
+#Nafa-fashros truce
+country_event = {
+	id = jasuaE.11
+	title = jasuaE.11.t
+	desc = jasuaE.11.d
+	picture = REFORM_eventPicture
+	fire_only_once = yes
+	hidden = yes
+
+	trigger = {
+		tag = FAS
+		FAS = {
+			ai = yes
+			OR = {
+				knows_country = SKT
+				knows_country = NAF
+			}
+		}
+		OR = {
+			SKT = {
+				ai = yes
+			}
+			NAF = {
+				ai = yes
+			}
+		}
+		NOT = {
+			OR = {
+				NAF = {
+					truce_with = FAS
+				}
+				SKT = {
+					truce_with = FAS
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = jasuaE.11.a
+		ai_chance = { factor = 1 }
+		if = {
+			limit = {
+				exists = NAF
+			}
+			FAS = {
+				add_truce_with = NAF
+			}
+		}
+		else = {
+			FAS = {
+				add_truce_with = SKT
+			}
+		}
+	}
+}
