@@ -3960,19 +3960,6 @@ on_province_religion_converted = {
 	}
 	if = {
 		limit = {
-			OR = {
-				culture = East_Emastalian
-				culture = West_Emastalian
-			}
-			owner = {
-				religion = tonmo
-			}
-		}
-		add_core = GTC
-		change_culture = Getciman
-	}
-	if = {
-		limit = {
 			superregion = ga_xal_superregion
 			religion = lathvy
 		}
