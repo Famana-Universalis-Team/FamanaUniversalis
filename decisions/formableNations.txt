@@ -3781,4 +3781,116 @@ country_decisions = {
 			factor = 1
 		}
 	}
-}	
+
+	menvid = {
+		major = yes
+		potential = {
+			OR = {
+				tag = NPT
+				tag = RMX
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = riximi_area
+				area = nopatle_area
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				is_city = no
+			}
+		}
+		allow = {
+			adm_tech = 5
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			RMX = {
+				reverse_has_opinion = {
+					who = NPT
+					value = 200
+				}
+			}
+			NPT = {
+				reverse_has_opinion = {
+					who = RMX
+					value = 200
+				}
+			}
+			5559 = {
+				OR = {
+					owned_by = NPT
+					owned_by = RMX
+				}
+			}
+			5560 = {
+				OR = {
+					owned_by = NPT
+					owned_by = RMX
+				}
+			}
+			5561 = {
+				OR = {
+					owned_by = NPT
+					owned_by = RMX
+				}
+			}
+			5562 = {
+				OR = {
+					owned_by = NPT
+					owned_by = RMX
+				}
+			}
+			5563 = {
+				OR = {
+					owned_by = NPT
+					owned_by = RMX
+				}
+			}
+			5564 = {
+				OR = {
+					owned_by = NPT
+					owned_by = RMX
+				}
+			}
+			5793 = {
+				OR = {
+					owned_by = NPT
+					owned_by = RMX
+				}
+			}
+			5810 = {
+				OR = {
+					owned_by = NPT
+					owned_by = RMX
+				}
+			}
+			5821 = {
+				OR = {
+					owned_by = NPT
+					owned_by = RMX
+				}
+			}
+			capital_scope = {
+				is_core = ROOT
+			}
+		}
+		effect = {
+			restore_country_name = yes
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
+			change_tag = MNV
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

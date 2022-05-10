@@ -84,7 +84,7 @@ country_decisions = {
 			}
 		}
 		allow = {
-			dip_tech = 7
+			dip_tech = 6
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
 			mil_power = 150
@@ -561,7 +561,7 @@ country_decisions = {
 			factor = 1
 		}
 	}
-	conquer_vava = {
+	conquer_vava = { #this is literally tyarda which amongoloid named this vava area what the fuck is wrong with you
 		potential = {
 			vava_area = {
 				is_empty = yes
@@ -585,7 +585,7 @@ country_decisions = {
 			}
 		}
 		allow = {
-			dip_tech = 9
+			dip_tech = 8
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
 			mil_power = 25
@@ -605,7 +605,7 @@ country_decisions = {
 			factor = 1
 		}
 	}
-	conquer_unnamed_area_54 = {
+	conquer_unnamed_area_54 = { #arlanda
 		potential = {
 			unnamed_area_54 = {
 				is_empty = yes
@@ -654,7 +654,7 @@ country_decisions = {
 			factor = 1
 		}
 	}
-	conquer_unnamed_area_55 = {
+	conquer_unnamed_area_55 = { #norva
 		potential = {
 			unnamed_area_55 = {
 				is_empty = yes
@@ -705,7 +705,7 @@ country_decisions = {
 			factor = 1
 		}
 	}
-	conquer_durra = {
+	conquer_durra = { #enseba
 		potential = {
 			durra_area = {
 				is_empty = yes
@@ -753,7 +753,7 @@ country_decisions = {
 			factor = 1
 		}
 	}
-	conquer_unnamed_area_53 = {
+	conquer_unnamed_area_53 = { #klamden
 		potential = {
 			unnamed_area_53 = {
 				is_empty = yes
@@ -883,7 +883,7 @@ country_decisions = {
 			}
 		}
 		allow = {
-			dip_tech = 7
+			dip_tech = 6
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
 			mil_power = 50
