@@ -525,6 +525,24 @@ country_event = { #DIE ALREADY
 			PEX = {
 				release_all_subjects = yes
 			}
+			all_owned_province = { 
+				limit = { culture = East_Ordican }
+				cede_province = CEL
+			}			
+			all_owned_province = { 
+				limit = { culture = Yuvlan }
+				cede_province = KAM
+			}
+			all_owned_province = { 
+				limit = { 
+					OR = {
+						culture = Ordican
+						culture = Dlosnim
+						culture = Vordori
+					}
+				}
+				cede_province = ORC
+			}
 			log = "trolloglazia"
 		}
 	}
