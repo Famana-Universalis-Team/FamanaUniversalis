@@ -3851,13 +3851,25 @@ on_province_religion_converted = {
 		limit = {
 			OR = {
 				culture = Yabonian
-				culture = Geteri
 			}
 			owner = {
 				religion = tonmo
 			}
 		}
 		change_culture = Kisholian
+		add_core = KSL
+		remove_core = BMF
+	}
+	if = {
+		limit = {
+			OR = {
+				culture = Geteri
+			}
+			owner = {
+				religion = tonmo
+			}
+		}
+		change_culture = Gatrian
 		add_core = KSL
 		remove_core = BMF
 	}
@@ -3878,15 +3890,37 @@ on_province_religion_converted = {
 	if = {
 		limit = {
 			OR = {
-				culture = Kapolian
 				culture = West_Jasuan
-				culture = Mikledonian
 			}
 			owner = {
 				religion = tonmo
 			}
 		}
 		change_culture = West_Kisholian
+		add_core = KSL
+	}
+	if = {
+		limit = {
+			OR = {
+				culture = Mikledonian
+			}
+			owner = {
+				religion = tonmo
+			}
+		}
+		change_culture = Rumay
+		add_core = KSL
+	}
+	if = {
+		limit = {
+			OR = {
+				culture = Kapolian
+			}
+			owner = {
+				religion = tonmo
+			}
+		}
+		change_culture = Kapoli
 		add_core = KSL
 	}
 	if = {
@@ -3902,20 +3936,18 @@ on_province_religion_converted = {
 		change_culture = North_Kisholian
 		add_core = KSL
 	}
-	#if = {
-	#	limit = {
-	#		OR = {
-	#			culture = Yatian
-	#			culture = Verkan
-	#			culture = Blastan
-	#		}
-	#		owner = {
-	#			religion = tonmo
-	#		}
-	#	}
-	#	change_culture = North_Kisholian
-	#	add_core = KSL
-	#}
+	if = {
+		limit = {
+			OR = {
+				culture = Yatian
+			}
+			owner = {
+				religion = tonmo
+			}
+		}
+		change_culture = Yati
+		add_core = KSL
+	}
 	if = {
 		limit = {
 			OR = {

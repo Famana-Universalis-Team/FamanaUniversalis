@@ -3882,6 +3882,14 @@ country_decisions = {
 				}
 				set_government_rank = 2
 			}
+			trigger = {
+				tag = RMX
+				inherit = NPT
+			}
+			trigger = {
+				tag = NPT
+				inherit = RMX
+			}
 			change_tag = MNV
 			add_country_modifier = {
 				name = "centralization_modifier"
