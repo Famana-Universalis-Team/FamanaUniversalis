@@ -795,6 +795,18 @@ Ravsho = { #unfinished
 			Wynrois Kan Addesh Verakol Erzas Assha Laznaristro Ibbish Raddois Ellash Taazrakol Ribkol
 		}
 	}
+	Zormian = {
+		primary = ZOR
+		male_names = {
+			Ravshara Lanreisseir Unia Gaara Yharinel Axilea Ogro Astrazna Axiaraniro Raravshara Unrara Niruna Daar Soxiro Maa Enrogier
+		}
+		female_names = {
+			Dari Varli Bujun Tirin
+		}
+		dynasty_names = {
+			Wynrois Kan Addesh Verakol Erzas Assha Laznaristro Ibbish Raddois Ellash Taazrakol Ribkol
+		}
+	}
 	Jimbalan = {
 		primary = JIB
 		male_names = {
@@ -808,7 +820,7 @@ Ravsho = { #unfinished
 		}
 	}
 	Forlimlan = {
-		primary = MIW
+		primary = FRL
 		male_names = {
 			Harumim Djalo Luzmiar Ahil Umiar Toman Tolatar Aro Acren Ettin Menelkir Yhaniel Unrou Gaeri Lanresi
 		}
@@ -1800,7 +1812,7 @@ Jasuan = {
 #############################
 Kisholi_C = {
     Kisholian = {
-		primary = KSL
+		primary = JMK
 		male_names = {
 			Ogro Yegum Fella Kanuni Yamoz Unahar Jada'ash Vande Yehum Eyath Ayon Beroge Anel Sdaz Horfi B'enn Po Hog Paro Jekelek Verakol
 		}
@@ -1812,7 +1824,7 @@ Kisholi_C = {
 		}
     }
 	West_Kisholian = {
-		primary = KSL
+		primary = RAY
 		male_names = {
 			Ogro Yegum Fella Kanuni Yamoz Unahar Jada'ash Vande Yehum Eyath Ayon Beroge Anel Sdaz Horfi B'enn Po Hog Paro Jekelek Verakol
 		}
@@ -1824,7 +1836,7 @@ Kisholi_C = {
 		}
     }
 	North_Kisholian = {
-		primary = KSL
+		primary = UFE
 		male_names = {
 			Ogro Yegum Fella Kanuni Yamoz Unahar Jada'ash Vande Yehum Eyath Ayon Beroge Anel Sdaz Horfi B'enn Po Hog Paro Jekelek Verakol
 		}
@@ -1836,7 +1848,7 @@ Kisholi_C = {
 		}
     }
 	South_Kisholian = {
-		primary = KSL
+		primary = ZAB
 		male_names = {
 			Ogro Yegum Fella Kanuni Yamoz Unahar Jada'ash Vande Yehum Eyath Ayon Beroge Anel Sdaz Horfi B'enn Po Hog Paro Jekelek Verakol
 		}
@@ -1848,6 +1860,7 @@ Kisholi_C = {
 		}
     }
 	Legeni = {
+		primary = LGN
 		male_names = {
 			Ogro Yegum Fella Kanuni Yamoz Unahar Jada'ash Vande Yehum Eyath Ayon Beroge Anel Sdaz Horfi B'enn Po Hog Paro Jekelek Verakol
 		}
