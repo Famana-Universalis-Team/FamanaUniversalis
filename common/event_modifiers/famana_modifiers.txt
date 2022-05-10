@@ -558,6 +558,7 @@ del_delk_propestiy = {
 pex_unity_modifier = {
     global_autonomy = -0.05
     tolerance_own = 1
+    governing_capacity = 500
 }
 
 pex_estali_dominion = {
