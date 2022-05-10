@@ -1770,12 +1770,8 @@ country_event = { #Event that spawns cores for releasables. NOT DONE
     trigger = {
         is_year = 320
         any_owned_province = {
-            limit = {
-                OR = {
-                    superregion = tonmo_supperregion
-                    superregion = jasua_superregion
-                }
-            }
+            superregion = tonmo_supperregion
+            superregion = jasua_superregion
         }
     }
     mean_time_to_happen = {
@@ -1783,7 +1779,136 @@ country_event = { #Event that spawns cores for releasables. NOT DONE
     }
     immediate = {
         hidden_effect {
-            
+            every_owned_province = {
+                limit = {
+                    OR = {
+                        province_id = 5949
+                        province_id = 5948
+                        province_id = 5958
+                        province_id = 5947
+                        province_id = 5953
+                        province_id = 5952
+                        province_id = 5946
+                        province_id = 5945
+                        province_id = 5944
+                    }
+                }
+                add_core = ANM
+            }
+            every_owned_province = {
+                limit = {
+                    OR = {
+                        province_id = 5949
+                        province_id = 5986
+                        province_id = 5950
+                        province_id = 5951
+                        province_id = 5984
+                        province_id = 5983
+                        province_id = 5962
+                        province_id = 5960
+                        province_id = 5976
+                        province_id = 5963
+                        province_id = 5961
+                        province_id = 5964
+                        province_id = 5957
+                        province_id = 5956
+                        province_id = 5955
+                        province_id = 5954
+                        province_id = 5959
+                    }
+                }
+                add_core = TYM
+            }
+            every_owned_province = {
+                limit = {
+                    OR = {
+                        province_id = 5962
+                        province_id = 5961
+                        province_id = 5825
+                        province_id = 5867
+                    }
+                }
+                add_core = VET
+            }
+            5866 = {
+                add_core = KFF
+            }
+            every_owned_province = {
+                limit = {
+                    OR = {
+                        province_id = 5865
+                        province_id = 5870
+                    }
+                }
+                add_core = OVM
+            }
+            every_owned_province = {
+                limit = {
+                    OR = {
+                        province_id = 5880
+                        province_id = 5874
+                        province_id = 5858
+                        province_id = 5878
+                    }
+                }
+                add_core = FBS
+            }
+            every_owned_province = {
+                limit = {
+                    OR = {
+                        province_id = 5838
+                        province_id = 5883
+                        province_id = 5834
+                        province_id = 5879
+                        province_id = 5833
+                        province_id = 5847
+                        province_id = 5853
+                    }
+                }
+                add_core = KMI
+            }
+            every_owned_province = {
+                limit = {
+                    OR = {
+                        province_id = 6013
+                        province_id = 6014
+                    }
+                }
+                add_core = MIW
+            }
+            every_owned_province = {
+                limit = {
+                    OR = {
+                        province_id = 6017
+                        province_id = 6018
+                        province_id = 6012
+                        province_id = 6019
+                        province_id = 6049
+                        province_id = 6011
+                        province_id = 6048
+                    }
+                }
+                add_core = ZOR
+            }
+            every_owned_province = {
+                limit = {
+                    OR = {
+                        province_id = 5869
+                        province_id = 5868
+                        province_id = 5968
+                        province_id = 5967
+                        province_id = 5965
+                        province_id = 5966
+                        province_id = 5969
+                        province_id = 5970
+                        province_id = 5971
+                        province_id = 5972
+                        province_id = 5973
+                        province_id = 5974
+                    }
+                }
+                add_core = BAS
+            }
         }
     }
     option = {
