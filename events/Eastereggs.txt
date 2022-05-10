@@ -84,8 +84,8 @@ country_event = {
 		add_prestige = 50
 		5203 = {
 			add_province_modifier = { 
-			name = Sawcon
-			duration = -1
+			name = sawcon
+			duration = -1  
 			}
 		}
 	}
@@ -96,7 +96,7 @@ country_event = {
 		5203 = {
 			add_province_modifier = { 
 			name = Sawcon
-			duration = -1
+			duration = -1  
 			}
 		}
 	}
