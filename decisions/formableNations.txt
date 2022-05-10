@@ -3782,9 +3782,77 @@ country_decisions = {
 		}
 	}
 
-	menvid = {
+	menvid_war = {
 		major = yes
 		potential = {
+			OR = {
+				tag = NPT
+				tag = RMX
+			}
+			owns = 5561
+			owns = 5563
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = riximi_area
+				area = nopatle_area
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				is_city = no
+			}
+		}
+		allow = {
+			OR = {
+				NOT = {
+					exist = NPT
+				}
+				NOT = {
+					exist = RMX
+				}
+			}
+			adm_tech = 5
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			owns_core_province = 5559
+			owns_core_province = 5560
+			owns_core_province = 5561
+			owns_core_province = 5562
+			owns_core_province = 5563
+			owns_core_province = 5564
+			owns_core_province = 5793
+			owns_core_province = 5810
+			owns_core_province = 5821
+			capital_scope = {
+				is_core = ROOT
+			}
+		}
+		effect = {
+			restore_country_name = yes
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
+			change_tag = MNV
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	menvid_diplo = {
+		major = yes
+		potential = {
+			AND = {
+				exists = NPT
+				exists = RMX
+			}
 			OR = {
 				tag = NPT
 				tag = RMX
