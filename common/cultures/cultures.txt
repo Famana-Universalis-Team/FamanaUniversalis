@@ -63,6 +63,7 @@ Maxan = {
         }
     }
 	Amaxran = {
+		primary = AMX
         male_names = {
             Dymio Agixadar Ratonasha Tormi Dorren Giun Tamar Paro Bamal Dorron Nokhes Amilian Camiclar Relambi Melze Yenat Zandar Ratelar Lunpikisa Sonon Tamander Lokis Lemi Romal Ifrel Asifsya Malav
         }
@@ -91,6 +92,18 @@ Emastalian = {
     }
 	West_Emastalian = {
 		primary = EST
+        male_names = {
+            Dymio Agixada Ratonasha Tormi Dorren Giun Tama Paro Bamal Dorron Nokhes Amilian Camicla Relambi Melze Yenat Zandar Ratelar Lunpixa Sonon Tamande Lokis Lemi Romal Sido Ifrel 
+        }
+        female_names = {
+            Zemei Loqa Talova Pina Si Edla Bruri Nadu Meira
+        }
+        dynasty_names = {
+            Ratonasha Loviaz Lekaux Jantada Jaka Deli Dion Nedu Wamadra Manu Kanaz Shunex Sunek Uchlir Dramra Mibsko Bohika Nahetle Ermefi Horfiv
+        }
+    }
+	Getciman = {
+		primary = GTC
         male_names = {
             Dymio Agixada Ratonasha Tormi Dorren Giun Tama Paro Bamal Dorron Nokhes Amilian Camicla Relambi Melze Yenat Zandar Ratelar Lunpixa Sonon Tamande Lokis Lemi Romal Sido Ifrel 
         }
