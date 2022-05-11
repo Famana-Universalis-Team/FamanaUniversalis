@@ -1811,7 +1811,6 @@ Kisholi_C = {
 		}
     }
 	West_Kisholian = {
-		primary = RAY
 		male_names = {
 			Ogro Yegum Fella Kanuni Yamoz Unahar Jada'ash Vande Yehum Eyath Ayon Beroge Anel Sdaz Horfi B'enn Po Hog Paro Jekelek Verakol
 		}
@@ -1858,29 +1857,8 @@ Kisholi_C = {
 			Kan H'rd Tino Kipi Monkus Noy Tzaz Anekol Bla Stas Horthy Borwell Sha'pir'o Ranazha Stas
 		}
     }
-	Gatrian = {
-		male_names = {
-			Ogro Yegum Fella Kanuni Yamoz Unahar Jada'ash Vande Yehum Eyath Ayon Beroge Anel Sdaz Horfi B'enn Po Hog Paro Jekelek Verakol
-		}
-		female_names = {
-			Womo Kanuni Maro Yuni Ezeldi
-		}
-		dynasty_names = {
-			Kan H'rd Tino Kipi Monkus Noy Tzaz Anekol Bla Stas Horthy Borwell Sha'pir'o Ranazha Stas
-		}
-	}
 	Rumay = {
-		male_names = {
-			Ogro Yegum Fella Kanuni Yamoz Unahar Jada'ash Vande Yehum Eyath Ayon Beroge Anel Sdaz Horfi B'enn Po Hog Paro Jekelek Verakol
-		}
-		female_names = {
-			Womo Kanuni Maro Yuni Ezeldi
-		}
-		dynasty_names = {
-			Kan H'rd Tino Kipi Monkus Noy Tzaz Anekol Bla Stas Horthy Borwell Sha'pir'o Ranazha Stas
-		}
-	}
-	Kapoli = {
+		primary = RAY
 		male_names = {
 			Ogro Yegum Fella Kanuni Yamoz Unahar Jada'ash Vande Yehum Eyath Ayon Beroge Anel Sdaz Horfi B'enn Po Hog Paro Jekelek Verakol
 		}
@@ -2203,8 +2181,6 @@ Northwestern_Sakan = {
 		Asetlar "Nitlal Lane" Nizesiz
 		}
 	}
-	
-
 }
 
 #############################

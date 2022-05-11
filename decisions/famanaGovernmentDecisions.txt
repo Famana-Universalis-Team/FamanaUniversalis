@@ -50,7 +50,7 @@ country_decisions = {
 			culture_group = Ravsho
 			NOT = { has_reform = gov_tonxara }
 			NOT = { has_reform = nomadic_tonxara_gov }
-			government_rank = 3
+			government_rank = 2
 			religion = tonmo
 			total_development = 250
 			in_golden_age = yes

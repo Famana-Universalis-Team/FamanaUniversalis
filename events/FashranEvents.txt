@@ -1760,7 +1760,7 @@ country_event = {
     }
 }
 
-country_event = { #Event that spawns cores for releasables. NOT DONE
+country_event = { #Event that spawns cores for releasables
     id = fashros.24
     title = fashros.24.t
     picture = CIVIL_WAR_eventPicture
@@ -1822,16 +1822,22 @@ country_event = { #Event that spawns cores for releasables. NOT DONE
             every_owned_province = {
                 limit = {
                     OR = {
-                        province_id = 5962
-                        province_id = 5961
+                        province_id = 5692
+                        province_id = 5691
                         province_id = 5825
                         province_id = 5867
+                        province_id = 5693
                     }
                 }
                 add_core = VET
             }
-            5866 = {
-                add_core = KFF
+            if = {
+                limit = {
+                    owns = 5866
+                }
+                5866 = {
+                    add_core = KFF
+                }
             }
             every_owned_province = {
                 limit = {
@@ -1909,11 +1915,443 @@ country_event = { #Event that spawns cores for releasables. NOT DONE
                 }
                 add_core = BAS
             }
+            every_owned_province = {
+                limit = {
+                    OR = {
+                        province_id = 6015
+                        province_id = 6016
+                        province_id = 6023
+                        province_id = 6024
+                        province_id = 6021
+                        province_id = 6020
+                        province_id = 6026
+                        province_id = 6037
+                        province_id = 6032
+                        province_id = 6039
+                        province_id = 6027
+                        province_id = 6028
+                        province_id = 6029
+                        province_id = 6030
+                        province_id = 6031
+                    }
+                }
+                add_core = ATR
+            }
+            every_owned_province = {
+                limit = {
+                    OR = {
+                        province_id = 6037
+                        province_id = 6032
+                        province_id = 6039
+                        province_id = 6028
+                        province_id = 6031
+                        province_id = 6029
+                        province_id = 6030
+                    }
+                }
+                add_core = SEM
+            }
+            every_owned_province = {
+                limit = {
+                    OR = {
+                        province_id = 6048
+                        province_id = 6049
+                        province_id = 6019
+                        province_id = 6017
+                        province_id = 6020
+                        province_id = 6052
+                        province_id = 6056
+                        province_id = 6046
+                    }
+                }
+                add_core = BLU
+            }
+            every_owned_province = {
+                limit = {
+                    OR = {
+                        province_id = 6033
+                        province_id = 6034
+                        province_id = 6035
+                        province_id = 6000
+                        province_id = 6043
+                        province_id = 6003
+                        province_id = 6044
+                        province_id = 6045
+                        province_id = 6041
+                        province_id = 6042
+                        province_id = 6053
+                    }
+                }
+                add_core = IPK
+            }
+            every_owned_province = {
+                limit = {
+                    OR = {
+                        province_id = 5875
+                        province_id = 5876
+                        province_id = 5881
+                        province_id = 5851
+                        province_id = 5882
+                        province_id = 5977
+                        province_id = 5978
+                        province_id = 5979
+                        province_id = 5839
+                        province_id = 5996
+                        province_id = 5997
+                        province_id = 5999
+                        province_id = 5998
+                        province_id = 6002
+                        province_id = 5994
+                        province_id = 5995
+                        province_id = 5992
+                        province_id = 5993
+                    }
+                }
+                add_core = MMM
+            }
+            every_owned_province = {
+                limit = {
+                    OR = {
+                        province_id = 5846
+                        province_id = 5855
+                        province_id = 5873
+                        province_id = 5852
+                        province_id = 5854
+                        province_id = 5856
+                        province_id = 5851
+                        province_id = 5882
+                    }
+                }
+                add_core = JIB
+            }
+            every_owned_province = {
+                limit = {
+                    OR = {
+                        province_id = 5877
+                        province_id = 5850
+                        province_id = 5849
+                        province_id = 5872
+                        province_id = 5875
+                        province_id = 5881
+                        province_id = 5876
+                        province_id = 5860
+                        province_id = 5871
+                        province_id = 5861
+                        province_id = 5863
+                        province_id = 5859
+                        province_id = 5845
+                        province_id = 5862
+                        province_id = 5844
+                        province_id = 5840
+                        province_id = 5842
+                    }
+                }
+                add_core = LAM
+            }
+            if = {
+                limit = {
+                    owns = 5871
+                }
+                5871 = {
+                    add_core = YBM
+                }
+            }
+            if = {
+                limit = {
+                    owns = 5863
+                }
+                5863 = {
+                    add_core = KLL
+                }
+            }
+            every_owned_province = {
+                limit = {
+                    OR = {
+                        province_id = 5987
+                        province_id = 5990
+                        province_id = 6009
+                        province_id = 5991
+                        province_id = 5988
+                        province_id = 6008
+                        province_id = 6007
+                        province_id = 6005
+                        province_id = 6004
+                        province_id = 5981
+                        province_id = 5980
+                        province_id = 5975
+                        province_id = 5977
+                        province_id = 5978
+                        province_id = 5992
+                        province_id = 5993
+                        province_id = 5995
+                        province_id = 5979
+                        province_id = 5839
+                        province_id = 5996
+                        province_id = 5997
+                        province_id = 5994
+                        province_id = 6002
+                        province_id = 5998
+                        province_id = 5999
+                        province_id = 6034
+                        province_id = 6033
+                        province_id = 6035
+                        province_id = 6000
+                        province_id = 6043
+                        province_id = 6003
+                        province_id = 6044
+                        province_id = 6045
+                        province_id = 6041
+                        province_id = 6042
+                        province_id = 6053
+                        province_id = 6046
+                        province_id = 6056
+                        province_id = 6052
+                    }
+                }
+                add_core = SLK
+            }
+            every_owned_province = {
+                limit = {
+                    OR = {
+                        province_id = 5680
+                        province_id = 5681
+                        province_id = 5785
+                        province_id = 5682
+                        province_id = 5684
+                        province_id = 5685
+                        province_id = 5686
+                        province_id = 5683
+                        province_id = 5687
+                        province_id = 5690
+                        province_id = 5689
+                        province_id = 5688
+                        province_id = 5836
+                        province_id = 5827
+                        province_id = 5832
+                        province_id = 5895
+                        province_id = 5896
+                        province_id = 5897
+                        province_id = 5898
+                        province_id = 5899
+                        province_id = 5829
+                        province_id = 5831
+                        province_id = 5828
+                        province_id = 5830
+                        province_id = 5886
+                        province_id = 5841
+                        province_id = 5848
+                        province_id = 5843
+                        province_id = 5837
+                        province_id = 5864
+                        province_id = 5857
+                    }
+                }
+                add_core = FSB
+            }
+            every_owned_province = {
+                limit = {
+                    OR = {
+                        province_id = 5603
+                        province_id = 5650
+                        province_id = 5826
+                        province_id = 5907
+                        province_id = 5894
+                    }
+                }
+                add_core = DGZ
+            }
+            every_owned_province = {
+                limit = {
+                    OR = {
+                        province_id = 5602
+                        province_id = 5516
+                        province_id = 5515
+                        province_id = 5514
+                        province_id = 5679
+                        province_id = 5513
+                        province_id = 5512
+                        province_id = 5511
+                        province_id = 5517
+                        province_id = 5518
+                    }
+                }
+                add_core = LGN
+            }
+            every_owned_province = {
+                limit = {
+                    OR = {
+                        province_id = 5887
+                        province_id = 5888
+                        province_id = 5609
+                        province_id = 5647
+                        province_id = 5639
+                    }
+                }
+                add_core = GTN
+            }
+            every_owned_province = {
+                limit = {
+                    OR = {
+                        province_id = 5242
+                        province_id = 5167
+                        province_id = 5175
+                        province_id = 5171
+                        province_id = 5173
+                        province_id = 5168
+                        province_id = 5170
+                        province_id = 5818
+                        province_id = 5172
+                        province_id = 5819
+                        province_id = 5209
+                        province_id = 5176
+                        province_id = 5306
+                        province_id = 5177
+                        province_id = 5179
+                        province_id = 5790
+                        province_id = 5178
+                        province_id = 5671
+                        province_id = 5180
+                        province_id = 5181
+                        province_id = 5174
+                        province_id = 5188
+                        province_id = 5789
+                        province_id = 5182
+                        province_id = 5183
+                        province_id = 5186
+                        province_id = 5184
+                        province_id = 5185
+                        province_id = 5187
+                        province_id = 5667
+                        province_id = 5791
+                        province_id = 5194
+                        province_id = 5195
+                    }
+                }
+                add_core = HOX
+            }
+            every_owned_province = {
+                limit = {
+                    OR = {
+                        province_id = 5633
+                        province_id = 5636
+                        province_id = 5631
+                        province_id = 5615
+                        province_id = 5625
+                        province_id = 5193
+                        province_id = 5619
+                        province_id = 5616
+                        province_id = 5613
+                        province_id = 5792
+                        province_id = 5192
+                        province_id = 5189
+                        province_id = 5191
+                        province_id = 5591
+                        province_id = 5620
+                        province_id = 5592
+                        province_id = 5612
+                        province_id = 5590
+                        province_id = 5590
+                        province_id = 5199
+                        province_id = 5196
+                        province_id = 5204
+                    }
+                }
+                add_core = ZAB
+            }
+            every_owned_province = {
+                limit = {
+                    OR = {
+                        province_id = 5197
+                        province_id = 5198
+                        province_id = 5653
+                        province_id = 5593
+                        province_id = 5202
+                        province_id = 5200
+                        province_id = 5201
+                        province_id = 5594
+                        province_id = 5629
+                        province_id = 5656
+                        province_id = 5644
+                        province_id = 5642
+                        province_id = 5643
+                        province_id = 5645
+                        province_id = 5672
+                        province_id = 5670
+                        province_id = 5657
+                        province_id = 5663
+                        province_id = 5599
+                        province_id = 5597
+                        province_id = 5673
+                        province_id = 5648
+                        province_id = 5652
+                        province_id = 5601
+                        province_id = 5676
+                        province_id = 5677
+                    }
+                }
+                add_core = JMK
+            }
+            every_owned_province = {
+                limit = {
+                    OR = {
+                        province_id = 5469
+                        province_id = 5494
+                        province_id = 5470
+                        province_id = 5471
+                        province_id = 5475
+                        province_id = 5660
+                        province_id = 5659
+                        province_id = 5624
+                        province_id = 5623
+                        province_id = 5474
+                        province_id = 5621
+                        province_id = 5595
+                        province_id = 5472
+                        province_id = 5622
+                        province_id = 5476
+                        province_id = 5477
+                        province_id = 5473
+                        province_id = 5481
+                        province_id = 5497
+                    }
+                }
+                add_core = RAY
+            }
+            every_owned_province = {
+                limit = {
+                    OR = {
+                        province_id = 5600
+                        province_id = 5501
+                        province_id = 5504
+                        province_id = 5674
+                        province_id = 5498
+                        province_id = 5654
+                        province_id = 5668
+                        province_id = 5505
+                        province_id = 5665
+                        province_id = 5510
+                        province_id = 5509
+                    }
+                }
+                add_core = UFE
+            }
         }
     }
     option = {
         name = fashros.24.a
         ai_chance = { factor = 1 }
         custom_tooltip = fas_releasables_event_tt
+        custom_tooltip = fashros_cores_autonomy_tt
+        hidden_effect = {
+            every_owned_province = {
+                limit = {
+                    OR = {
+                        culture_group = Ravsho
+                        culture_group = Kisholi_C
+                    }
+                }
+                add_local_autonomy = 50
+            }
+        }
     }
 }
