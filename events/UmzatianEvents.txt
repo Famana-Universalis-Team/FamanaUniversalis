@@ -8,20 +8,20 @@ country_event = { #partition of TCK, not actually given to Umzatia (unless they 
 
     is_triggered_only = yes
 	trigger = {
-	  NOT = { TAG = TCK }
+	    NOT = { tag = TCK }
 	}
     
     option = { #sure
-	name = "umzatia.1.a"
-       5068 = {
-	   cede_province = ROOT
-	   }
-	   5060 = {
-	   cede_province = ROOT
-	   }
+	    name = "umzatia.1.a"
+        5068 = {
+	        cede_province = ROOT
+	    }
+	    5060 = {
+	        cede_province = ROOT
+	    }
     }
     option = { #no
-       name = "umzatia.1.b" 
+        name = "umzatia.1.b" 
     }
 }
 country_event = { #partition of TCK, not actually given to Umzatia (unless they own the required province). ZOSTIN
@@ -32,7 +32,7 @@ country_event = { #partition of TCK, not actually given to Umzatia (unless they 
 
     is_triggered_only = yes
 	trigger = {
-	  NOT = { TAG = TCK }
+	  NOT = { tag = TCK }
 	}
     
     option = { #sure

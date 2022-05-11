@@ -7,15 +7,15 @@ country_event = {
 	picture = VILLAGE_BURNING_eventPicture
 	
 	trigger = {
+        OR = {
+			exists = HSH
+			exists = HOF
+		}
 		NOT = {
 			has_country_modifier = yom_raided_timer
 		}
         NOT = {
 			technology_group = antestal_yom_tech_gr
-		}
-        OR = {
-			exists = HSH
-			exists = HOF
 		}
 		any_owned_province = {
 			OR = {

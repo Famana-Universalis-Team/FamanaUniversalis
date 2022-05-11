@@ -6,7 +6,7 @@ country_event = {
 	title = eastereggs.1.t
 	desc = eastereggs.1.d
 	fire_only_once = yes
-	picture = BIG_BOOK_eventPicture
+	picture = EP_MOAIS_eventPicture
 
 	trigger = {
 		tag = NPX

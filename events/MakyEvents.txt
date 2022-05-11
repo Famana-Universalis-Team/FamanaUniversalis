@@ -12,30 +12,26 @@ country_event = {
 	picture = FARMING_eventPicture
 
 	trigger = {
-		has_country_flag = maky_stabilization
-		AND = {
-			NOT = { has_country_flag = had_maky.3 }
-			AND = {
-				OR = {
-					tag = FNC
-					tag = VAX
-					tag = DYR
-					tag = OKU	
-					tag = KRS
-					tag = RSH
-					tag = ELK
-					tag = MKK
-					tag = JKK
-					tag = ASR
-					tag = ZAK
-				}
-				OR = {
-					government = monarchy
-					government = republic
-					government = theocracy
-				}
-			}
+		OR = {
+			tag = FNC
+			tag = VAX
+			tag = DYR
+			tag = OKU	
+			tag = KRS
+			tag = RSH
+			tag = ELK
+			tag = MKK
+			tag = JKK
+			tag = ASR
+			tag = ZAK
 		}
+		OR = {
+			government = monarchy
+			government = republic
+			government = theocracy
+		}
+		NOT = { has_country_flag = had_maky.3 }
+		has_country_flag = maky_stabilization
 	}
 	immediate = {
 		set_country_flag = had_maky.3

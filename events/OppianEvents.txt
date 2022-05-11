@@ -672,6 +672,10 @@ country_event = {
 	hidden = yes
 
 	trigger = {
+		OR = {
+			tag = LAG
+			tag = RES
+		}
 		AND = {
 			has_global_flag = fenikiconvert
 			any_owned_province = {
