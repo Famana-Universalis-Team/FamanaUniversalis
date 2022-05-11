@@ -2149,46 +2149,6 @@ VNA_ideas = {
     }
 }
 
-KSL_ideas = {
-    start = {
-        missionary_maintenance_cost = -0.25
-		infantry_cost = -0.10
-    }
-    
-    bonus = {
-        tolerance_heathen = 2
-    }
-
-    trigger = {
-        tag = KSL
-    }
-    free = yes
-    
-    ksl_settling = {
-		development_cost = -0.10
-    }
-    ksl_footmen = {
-		infantry_power = 0.10
-    }
-    ksl_rule = {
-        free_policy	= 1
-    }
-    ksl_crossroads = {
-        trade_efficiency = 0.10
-		center_of_trade_upgrade_cost = -0.25
-    }
-    ksl_control = {
-		siege_ability = 0.15
-    }
-    ksl_wapur = {
-		trade_goods_size_modifier = 0.10
-    }
-    ksl_acceptance = {
-		years_of_nationalism = -5
-		num_accepted_cultures = 1
-    }
-}
-
 JFX_ideas = {
     start = {
         cavalry_power = 0.10
