@@ -73,7 +73,7 @@ country_event = {
         }
     }
 }
-# Offer for Adrygpam to join Nheomyr
+# Offer for Yarfu Bamol to join Nheomyr
 country_event = {
     id = nhoma.3
     title = nhoma.3.t
@@ -87,7 +87,7 @@ country_event = {
 	ai_chance = { factor = 75 }
         name = nhoma.3.a
         NHE = {
-		inherit = BES
+		inherit = YBM
 		}
     }
 	option = {
