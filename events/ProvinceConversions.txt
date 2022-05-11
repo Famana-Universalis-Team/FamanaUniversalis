@@ -92,7 +92,7 @@ province_event = { #Random coastal xalian provinces / provinces adjacent to lath
     option = {
         name = provincec.2.a
 		ai_chance = { factor = 1 }
-		hidden_trigger = {
+		trigger = {
 			NOT = {
 				owner = {
 					religion = lathvy
@@ -112,7 +112,7 @@ province_event = { #Random coastal xalian provinces / provinces adjacent to lath
 	option = {
         name = provincec.2.b
 		ai_chance = { factor = 1 }
-		hidden_trigger = {
+		trigger = {
 			owner = {
 				religion = lathvy
 			}
