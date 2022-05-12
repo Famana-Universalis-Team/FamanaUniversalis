@@ -3789,6 +3789,7 @@ country_decisions = {
 				tag = NPT
 				tag = RMX
 			}
+			NOT = { exists = MNV }
 			owns = 5561
 			owns = 5563
 		}
@@ -3857,6 +3858,7 @@ country_decisions = {
 				tag = NPT
 				tag = RMX
 			}
+			NOT = { exists = MNV }
 		}
 		provinces_to_highlight = {
 			OR = {
@@ -3959,6 +3961,40 @@ country_decisions = {
 				inherit = RMX
 			}
 			change_tag = MNV
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	forlimla_nation = {
+		major = yes
+		potential = {
+			culture = Forlimlan
+			NOT = { exists = FRL }
+			was_never_end_game_tag_trigger = yes
+		}
+		provinces_to_highlight = {
+			OR = {
+			 area = area_128
+			 NOT = { owned_by = ROOT }
+			}
+		}
+		allow = {
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			area_128 = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT	
+			}
+		}
+		effect = {
+			change_tag = FRL
 			add_country_modifier = {
 				name = "centralization_modifier"
 				duration = 7300
