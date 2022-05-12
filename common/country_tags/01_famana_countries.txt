@@ -20,7 +20,6 @@ NCH = "countries/Neches.txt"
 DES = "countries/Deshmoz.txt"
 THA = "countries/Thalmoria.txt"
 OAN = "countries/Vani.txt"
-#releasable
 ZNE = "countries/Zne.txt"
 QUA = "countries/Quanex.txt"
 SAR = "countries/Sar.txt"
@@ -57,6 +56,14 @@ NES = "countries/Nesrin.txt"
 CEL = "countries/Celzion.txt"
 YEN = "countries/YpEnnam.txt"
 KEN = "countries/KefEnnam.txt"
+YFS = "countries/YagFasturtartor.txt"
+DKL = "countries/Dukula.txt"
+NAB = "countries/Nabrosia.txt"
+VOR = "countries/Vordor.txt"
+RND = "countries/Rondos.txt"
+ARO = "countries/Amorlu.txt"
+GLB = "countries/Galboy.txt"
+#naravam
 NIR = "countries/Nirkif.txt"
 VEB = "countries/VeberDama.txt"
 BUV = "countries/Burgavy.txt"
@@ -85,6 +92,14 @@ BOR = "countries/Borborea.txt"
 VRI = "countries/Vrimelkon.txt"
 BRO = "countries/Borrodaz.txt"
 BRY = "countries/Ryzema.txt"
+#Miris
+ZTT = "countries/Zata.txt"
+RHJ = "countries/Ratahja.txt"
+MPL = "countries/Mapol.txt"
+NBE = "countries/Nobe.txt"
+ROL = "countries/Morol.txt"
+GRL = "countries/Girfelan.txt"
+OLF = "countries/Olfemek.txt"
 #naravam natives
 XIY = "countries/Xulidiyl.txt"
 DAS = "countries/Dastvar.txt"
@@ -121,15 +136,6 @@ PCG = "countries/PCegon.txt"
 PHL = "countries/PHilemo.txt"
 PLY = "countries/PLaysoma.txt"
 PJS = "countries/PJinasa.txt"
-
-#Miris
-ZTT = "countries/Zata.txt"
-RHJ = "countries/Ratahja.txt"
-MPL = "countries/Mapol.txt"
-NBE = "countries/Nobe.txt"
-ROL = "countries/Morol.txt"
-GRL = "countries/Girfelan.txt"
-OLF = "countries/Olfemek.txt"
 
 RON = "countries/Roana.txt" #absolutely trolled
 
@@ -191,7 +197,6 @@ GTS = "countries/GaTsaj.txt"
 ZEA = "countries/Zeaf.txt"
 DEL = "countries/Delkia.txt"
 ALM = "countries/AleMea.txt"
-
 #Xalian Releasables
 MAA = "countries/Mariana.txt"
 AGS = "countries/Agisana.txt"
@@ -202,6 +207,7 @@ MRS = "countries/Morsum.txt"
 VNN = "countries/Vinon.txt"
 VIN = "countries/Vinsa.txt"
 GMX = "countries/GaMox.txt"
+ELI = "countries/Eliwa.txt"
 
 #Eastern Oppia
 RPI = "countries/Ropinver.txt"
@@ -505,6 +511,8 @@ TNO = "countries/Tomba/Nesto.txt"
 TKK = "countries/Tomba/Ekat.txt"
 TYN = "countries/Tomba/Yanan.txt"
 TKO = "countries/Tomba/Kol.txt"
+
+# ----------------------------------------------
 
 #formable nations
 
