@@ -7,15 +7,13 @@ country_event = {
 	picture = RELIGION_eventPicture
 
 	trigger = {
-		AND = {
-			is_year = 225
-			NOT = {
-				is_year = 280
-			}
-			religion = morian
-			NOT = {
-				has_country_flag = has_had_arism
-			}
+		is_year = 225
+		NOT = {
+			is_year = 280
+		}
+		religion = morian
+		NOT = {
+			has_country_flag = has_had_arism
 		}
 	}
 	mean_time_to_happen = {

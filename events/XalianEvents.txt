@@ -11,20 +11,18 @@ country_event = {
     fire_only_once = yes
 
     trigger = {
-        AND = {
-            is_year = 220
-            tag = AGX
-            is_great_power = no
-            owns = 5371
-            NOT = {
-                treasury = 500
-            }
-			has_opinion = {
-			who = XOF
-			value = -100
-			}
-            exists = XOF
+        is_year = 220
+        tag = AGX
+        is_great_power = no
+        owns = 5371
+        NOT = {
+            treasury = 500
+		    has_opinion = {
+		        who = XOF
+		        value = -100
+		    }
         }
+        exists = XOF
     }
     mean_time_to_happen = {
         months = 120
@@ -84,11 +82,9 @@ country_event = {
     fire_only_once = yes
 
     trigger = {
-        AND = {
-            is_year = 220
-            tag = MRN
-            owns = 5163
-        }
+        is_year = 220
+        tag = MRN
+        owns = 5163
     }
     mean_time_to_happen = {
         months = 12
@@ -128,10 +124,8 @@ country_event = {
     fire_only_once = yes
 
     trigger = {
-        AND = {
-            tag = ALM
-            owns = 5411
-        }
+        tag = ALM
+        owns = 5411
     }
     mean_time_to_happen = {
         months = 12
@@ -176,16 +170,14 @@ country_event = {
     fire_only_once = yes
 
     trigger = {
+        is_year = 230
+        tag = PXA
+        is_great_power = no
+        exists = AGX
         AND = {
-            is_year = 230
-            tag = PXA
-            is_great_power = no
-            exists = AGX
-            AND = {
-                owns = 5365
-                owns = 5367
-                owns = 5368
-            }
+            owns = 5365
+            owns = 5367
+            owns = 5368
         }
     }
     mean_time_to_happen = {

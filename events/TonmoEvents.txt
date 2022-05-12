@@ -157,10 +157,8 @@ country_event = {
 	fire_only_once = yes
 
     trigger = {
-        AND = {
-			religion = tonmo
-       		owns = 5644 #jimalkin
-		}
+		religion = tonmo
+       	owns = 5644 #jimalkin
     }
 	mean_time_to_happen = {
 		months = 8
@@ -182,6 +180,7 @@ country_event = { #clear raised horde flag
     hidden = yes
 
     trigger = {
+        religion = tonmo
         had_country_flag = {
 	        flag = tonmo_raised_horde_flag
 	        days = 365

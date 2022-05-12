@@ -32,14 +32,14 @@ country_event = { #partition of TCK, not actually given to Umzatia (unless they 
 
     is_triggered_only = yes
 	trigger = {
-	  NOT = { tag = TCK }
+	    NOT = { tag = TCK }
 	}
     
     option = { #sure
 	name = "umzatia.2.a"
-       5067 = {
-	   cede_province = ROOT
-	   }
+        5067 = {
+	    cede_province = ROOT
+	    }
 	   
     }
     option = { #no
@@ -54,14 +54,14 @@ country_event = { #partition of TCK, not actually given to Umzatia (unless they 
 
     is_triggered_only = yes
 	trigger = {
-	  NOT = { TAG = TCK }
+	    NOT = { TAG = TCK }
 	}
     
     option = { #sure
 	name = "umzatia.3.a"
-       5207 = {
-	   cede_province = ROOT
-	   }
+        5207 = {
+	    cede_province = ROOT
+	    }
 	   
     }
     option = { #no
@@ -107,6 +107,6 @@ country_event = { #TCK: bad ending
     
    
     option = { #I'll think of something to go here
-         name = "umzatia.6.a"
+        name = "umzatia.6.a"
     }
 }

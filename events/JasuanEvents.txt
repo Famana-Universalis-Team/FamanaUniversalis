@@ -91,11 +91,9 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		AND = {
-			tag = KIN
-			religion = egr
-			is_year = 220
-		}
+		tag = KIN
+		religion = egr
+		is_year = 220
 	}
 	mean_time_to_happen = {
 		months = 200
@@ -168,10 +166,8 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		AND = {
-			tag = SKT
-			is_year = 285
-		}
+		tag = SKT
+		is_year = 285
 	}
 	mean_time_to_happen = {
 		months = 5
@@ -260,7 +256,7 @@ country_event = {
 	picture = ECLIPSE_eventPicture
 	is_triggered_only = yes
 	major = yes
-	
+
 	trigger = {
 		any_owned_province = {
 			culture = Kachik

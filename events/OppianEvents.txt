@@ -676,13 +676,11 @@ country_event = {
 			tag = LAG
 			tag = RES
 		}
-		AND = {
-			has_global_flag = fenikiconvert
-			any_owned_province = {
-				AND = {
-					culture = Laglan
-					religion = lathvy
-				}
+		has_global_flag = fenikiconvert
+		any_owned_province = {
+			AND = {
+				culture = Laglan
+				religion = lathvy
 			}
 		}
 	}
@@ -735,10 +733,6 @@ country_event = {
 	fire_only_once = yes
 	is_triggered_only = yes
 	major = yes
-
-	trigger = {
-
-	}
 
 	option = {
 		name = oppia.11.a
@@ -810,17 +804,17 @@ country_event = {
 		tag = TCK
 		NOT = { has_country_modifier = umz_chaos }
 		UMZ = {
-		is_at_war = no
-		mission_completed = UMZ_sabotage
-		5050 = {
-		country_or_non_sovereign_subject_holds = ROOT
-		}
-		5051 = {
-		country_or_non_sovereign_subject_holds = ROOT
-		}
-		5052 = {
-		country_or_non_sovereign_subject_holds = ROOT
-		}
+			is_at_war = no
+			mission_completed = UMZ_sabotage
+			5050 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			5051 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			5052 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
 		}
 	}
 	mean_time_to_happen = {

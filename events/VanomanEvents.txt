@@ -9,13 +9,11 @@ country_event = {
 	fire_only_once = yes
 
     trigger = {
-        AND = {
-			owns = 5693
-            is_year = 300
-            5889 = {
-                is_empty = yes
-            }
-		}
+		owns = 5693
+        is_year = 300
+        5889 = {
+            is_empty = yes
+        }
     }
 	mean_time_to_happen = {
 		months = 120
