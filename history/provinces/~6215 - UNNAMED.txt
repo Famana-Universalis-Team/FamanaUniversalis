@@ -5,57 +5,16 @@ discovered_by = west_gomic_tech_gr
 add_core = ORC
 owner = ORC
 controller = ORC
-add_core = FLB
 culture = Dlosnim
 religion = lathvy
 hre = no
-base_tax = 2
-base_production = 2
-trade_goods = iron
-base_manpower = 1
-capital = "Filib"
+base_tax = 4
+base_production = 3
+trade_goods = cloth
+base_manpower = 3
+center_of_trade = 1
+capital = "Dlosnim"
 is_city = yes
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

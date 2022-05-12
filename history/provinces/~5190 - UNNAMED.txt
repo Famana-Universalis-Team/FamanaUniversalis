@@ -5,16 +5,15 @@ religion = lathvy
 owner = ORC
 controller = ORC
 add_core = ORC
-add_core = SPT
+
 ###
 
 hre = no
 
-base_tax = 2
-base_production = 1
-trade_goods = naval_supplies
-base_manpower = 2
-capital = "Nonter"
+base_tax = 5
+base_production = 4
+trade_goods = wool
+base_manpower = 4
+capital = "Elteyn"
 is_city = no
 extra_cost = 1
-
