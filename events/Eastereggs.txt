@@ -71,11 +71,11 @@ country_event = {
 	
 	trigger = {
 		owns_core_province = 5203
+		is_year = 250
 	}
 
 	mean_time_to_happen = {
 		months = 600
-		is_year = 250
 	}
 
 	option = {
