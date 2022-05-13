@@ -289,6 +289,14 @@
  SPT: "Spoanta"
  SPT_ADJ: "Spoantan"
  SPT_ADJ2: "Spoantan"
+ 
+ YVR: "Yuvar"
+ YVR_ADJ: "Yuvar"
+ YVR_ADJ2: "Yuvar"
+ 
+ NOX: "Noxalo"
+ NOX_ADJ: "Noxalo"
+ NOX_ADJ2: "Noxalo"
 
  XRL: "Xarelda"
  XRL_ADJ: "Xareldan"
@@ -2222,7 +2230,15 @@
  oppian_empire_desc:0 "The Oppian Empire was the greatest nation the Gomic has seen thus far. It stretched from Quanex to Kinvirel; Umzat to Jimalkin and Okus to Degladon. It fell apart due to internal tensions as well as inability to keep our subjects in Jasua and East Oppia loyal, in part due to a blockade of the North Gomic. However, now that we have regained all the territory of this empire, we can declare ourselves its revival."
  
  form_nheomyr_diplomatically_title:0 "Form Nheomyr Diplomatically"
- form_nheomyr_diplomatically_desc:0 ""
+ form_nheomyr_diplomatically_desc:0 "Relations between our two nations have reached such good relations that advisiors from both countries are seriously considering the idea of an unified state. If it were to arise maybe we could invite the people of Yarfoo Bamol into this coastal empire."
  
  form_nheomyr_militarily_title:0 "Form Nheomyr Militarily"
- form_nheomyr_militarily_desc:0 ""
+ form_nheomyr_militarily_desc:0 "The dream od Nheomyr will not come true by diplomacy, but by our mighty conquests!"
+ 
+ menvid_diplo_title:0 "Unite Menvid"
+ menvid_diplo_desc:0 "By making friendly relations with our neighbor, we are entitled to the unification of our countries."
+ menvid_war_title:0 "Form Menvid"
+ menvid_war_desc:0 "By conquering the heartland of our former neighbour, we can proclaim the creation of a new kingdom."
+ 
+ forlimla_nation_title:0 "Form Forlimla" #reform? it techically was Forlimo so idk
+ forlimla_nation_desc:0 "We are descended from Geopyopian settlers who arrived here long before Fashros. While we abandoned Washoom the Forlimlans survived and, starting from the city of Miwle, carved out their own country among the chaos"
