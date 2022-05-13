@@ -3929,7 +3929,6 @@ on_province_religion_converted = {
 			OR = {
 				culture = Oppio_Jasuan
 				culture = Zoblotran
-				culture = Mahanshan
 			}
 			owner = {
 				religion = tonmo
