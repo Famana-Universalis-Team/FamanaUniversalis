@@ -541,8 +541,52 @@
  estal.1.d:0 "A band of Yomtanians wandered unnoticed into the area of one of our settlements and attacked it, burning houses and eating people along with animals. Some were kidnapped, but we don't know if they can be called lucky. The few inhabitants that are left ask for our help to restore order and rebuild."
  estal.1.a:0 "Organise help."
  estal.1.b:0 "They will have to deal with it themselves."
- 
+
+ #jasuan event inflitration
+ jasuaE.9.t:0 "Betrayal from Nakoa"
+ jasuaE.9.d:0 "As the Fashran Menace, allied with the forces of the Great Monster, approaches our borders, our supposed 'allies' in Nakoa have completely betrayed us! They have abanoned our courts and refused to provide military aid. We shall face this threat alone."
+ jasuaE.9.a:0 "Oh dear..."
+ bilik_isolation:0 "Bilik Isolation"
+
+ jasuaE.8.t:0 "The fall of Kinvirel"
+ jasuaE.8.d:0 "Lathvy exiles from the city of Kinvirel have reached our shores! They tell of how the incoming Fashran horde knocked the ancient walls down and set the city alight. The Crown Jewel of Jasua has just fallen to darkness."
+ jasuaE.8.a:0 "We shall house them for the time being."
+ kinvirel_exiles:0 "Kinvireli Exiles"
+
  #Fashran events
+ 
+ fashros.1.t:0 "The Third Tonxara Expansion"
+ fashros.1.d:0 ""
+ fashros.1.a:0 "Fashros will grow larger!"
+
+ fashros.2.t:0 "Fate of Nozumol"
+ fashros.2.d:0 ""
+ fashros.2.a:0 "One of us."
+ fashros.2.b:0 "I suppose we can accept them..."
+
+ fashros.3.t:0 "The Fourth Tonxara Expansion"
+ fashros.3.d:0 ""
+ fashros.3.a:0 "Fashros will grow larger!"
+
+ fashros.4.t:0 "Biliku Discovered"
+ fashros.4.d:0 ""
+ fashros.4.a:0 "Fashros will grow larger!"
+
+ fashros.5.t:0 "Vanoman Question"
+ fashros.5.d:0 ""
+ fashros.5.a:0 ""
+ fashros.5.b:0 ""
+
+ fashros.6.t:0 "A New Capital?"
+ fashros.6.d:0 ""
+ fashros.6.a:0 ""
+ fashros.6.b:0 ""
+ fashros.6.c:0 ""
+
+ fashros.7.t:0 "The Fifth Tonxara Expansion"
+ fashros.7.d:0 ""
+ fashros.7.a:0 "Fashros will grow larger!"
+
  fashros.8.t:0 "The Fate of Emtiks"
  fashros.8.d:0 "[Root.Monarch.GetTitle] [Root.Monarch.GetName] was visited by a small group of Vanoman settlers who, claiming to represent all Emtik people, begged to respect their customs and place of residence. In return, they offer to teach the famous Vanoman technological knowledge to anyone who wishes and to assist Fashros in making new discoveries."
  fashros.8.a:0 "If they promise to be loyal..."
@@ -550,16 +594,10 @@
  
  emtik_rights:0 "Emtik Rights"
  fas_emtik_rights:0 "Emtik Rights"
- 
- fashros.1.a:0 "Fashros will grow larger!"
- fashros.3.a:0 "Fashros will grow larger!"
- fashros.4.a:0 "Fashros will grow larger!"
- fashros.7.a:0 "Fashros will grow larger!"
 
- jasuaE.8.t:0 "The fall of Kinvirel"
- jasuaE.8.d:0 "Lathvy exiles from the city of Kinvirel have reached our shores! They tell of how the incoming Fashran horde knocked the ancient walls down and set the city alight. The Crown Jewel of Jasua has just fallen to darkness."
- jasuaE.8.a:0 "We shall house them for the time being."
- kinvirel_exiles:0 "Kinvireli Exiles"
+ fashros.11.t:0 "Fall of Nozumol"
+ fashros.11.d:0 "With the capital of Nozumol under our control, the remaining forces of Nozumol had deemed their struggle worthless and had decided to surrended themselves to the Tonxara. "
+ fashros.11.a:0 "Good riddance!"
 
  fashros.14.t:0 "Winds from the East"
  fashros.14.d:0 "Reports have come to us from traders of distant lands being roamed by a jingoistic, religious, nomadic empire. These people are apparently brutal, and seek to flatten everything in their wake. They tell us to take this warning seriously."
@@ -604,15 +642,12 @@
  fashros.19.a:0 "The Horde will devour them all."
  yabonia_collapsed:0 "A few nations in the southern Yabonia will become independent."
 
- jasuaE.9.t:0 "Betrayal from Nakoa"
- jasuaE.9.d:0 "As the Fashran Menace, allied with the forces of the Great Monster, approaches our borders, our supposed 'allies' in Nakoa have completely betrayed us! They have abanoned our courts and refused to provide military aid. We shall face this threat alone."
- jasuaE.9.a:0 "Oh dear..."
- bilik_isolation:0 "Bilik Isolation"
-
  fashros.20.t:0 "Into Jasua!"
  fashros.20.d:0 "Starting in 282, the Fashran Tonxara experienced an unprecendented level of expansion into the Jasua Region as they crushed their enemies rapidly."
  fashros.20.a:0 "Into Jasua!"
+ 
  fashran_conquest_boost:0 "Rapid Conquest"
+
  fasros.21.t:0 "Into Ga Xal!"
  fashros.21.d:0 "Starting in 310, the Fashran Tonxara experienced an unprecendented level of expansion into the Ga Xal Region as they crushed their enemies rapidly."
  fashros.21.a:0 "Into Ga Xal!"
@@ -624,6 +659,8 @@
  fashros.24.t:0 "Fracturing of the Tribes"
  fashros.24.d:0 "The tribal structures that have held the Ravsho people together for centuries are breaking down. To our horror, this is causing the local ruling elites of our empire to split off from the tribal confederation of Fashros to form their own identities. This, in combination with the other problems in our empire, could very well mean the end of the Tonxara. Let us hope it never comes to pass."
  fashros.24.a:0 "This does not bode well."
+
+ ###########################
 
  tonxara.1.t:0 "The Nhoma Tonxara"
  tonxara.1.d:0 "The Eastern Core of the Fashran Empire has been inherited by the Nhoma Tonxara. This state is mostly made of steppes and many Tonmo clans who were previously united under one Tonxara. Now that the unified Tonmo state is gone, it is no doubt that the Nhoma Tonxara will have to face severe hardships as it struggles to control the roaming hordes."

@@ -728,16 +728,16 @@ country_event = { #Emtik Rights
     fire_only_once = yes
 
     trigger = {
-		TAG = FAS
+		tag = FAS
 		5692 = {
-		owned_by = FAS
-		religion = va
-		culture = Emtik
+		    owned_by = FAS
+		    religion = va
+		    culture = Emtik
 		}
 		5691 = {
-		owned_by = FAS
-		religion = va
-		culture = Emtik
+		    owned_by = FAS
+	    	religion = va
+		    culture = Emtik
 		}
 	
 	}
@@ -777,7 +777,7 @@ country_event = { #Emtik Rights
     }
 }
 
-country_event = { #Emtik provs lost
+country_event = { #Emtik provs lost, not needed to locallize
     id = fashros.9
     title = fashros.9.t
     desc = fashros.9.d
@@ -785,6 +785,10 @@ country_event = { #Emtik provs lost
 	hidden = yes
 	fire_only_once = yes
     trigger = {
+        OR = {
+            tag = FAS
+            tag = NHM
+        }
 		has_global_flag = after_emtik_rights
 		NOT = {
 			5692 = {
@@ -818,7 +822,7 @@ country_event = { #Emtik provs lost
     }
 }
 
-country_event = {
+country_event = { #not needed to loc.
     id = fashros.10
     title = fashros.10.t
     desc = fashros.10.d
@@ -890,7 +894,7 @@ country_event = {
 	}
 }
 
-country_event = {
+country_event = { #not needed to loc
     id = fashros.12
     title = fashros.12.t
     picture = WOUNDED_SOLDIERS_eventPicture
@@ -899,12 +903,12 @@ country_event = {
     hidden = yes
 
     trigger = {
+        NOT = {
+            is_year = 290
+        }
         ai = yes
         5693 = {
             is_claim = FAS
-        }
-        NOT = {
-            is_year = 290
         }
     }
 
@@ -960,10 +964,8 @@ country_event = {
     fire_only_once = yes
 
     trigger = {
-        AND = {
-            is_year = 298
-            tag = FAS
-        }
+        is_year = 298
+        tag = FAS
     }
 
     mean_time_to_happen = {
