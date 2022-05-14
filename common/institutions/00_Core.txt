@@ -780,44 +780,28 @@ printing_press = {
 			scale = yes
 			potential = {
 				owner = {
-					religious_school = {
-						group = lathvy_group
-						school = nafan_school
+					OR = {
+						religious_school = {
+							group = lathvy_group
+							school = nafan_school
+						}
+						has_country_modifier = maliki_scholar_modifier
 					}
 				}
+				is_in_capital_area = yes
 			}
 			custom_trigger_tooltip = {
 				tooltip = has_nafa_school
 				owner = {
-					religious_school = {
-						group = lathvy_group
-						school = nafan_school
+					OR = {
+						religious_school = {
+							group = lathvy_group
+							school = nafan_school
+						}
+						has_country_modifier = maliki_scholar_modifier
 					}
 				}
-			}
-		}
-
-		modifier = {
-			factor = 0.3
-			scale = yes
-			potential = {
-				owner = {
-					reverse_has_opinion = {
-						who = NAF
-						value = 100
-					}
-				}
-				is_capital = yes
-			}
-			custom_trigger_tooltip = {
-				tooltip = friendly_nafa
-				owner = {
-					reverse_has_opinion = {
-						who = NAF
-						value = 100
-					}
-				}
-				is_capital = yes
+				is_in_capital_area = yes
 			}
 		}
 
@@ -868,7 +852,6 @@ printing_press = {
 				}
 			}
 		}
-
 	}
 	
 	ai_will_do = { #Cost of embracing institution must be lower than this factor * last month's regular income, and higher if loans are needed. (Or it has a more than long term goal...)
