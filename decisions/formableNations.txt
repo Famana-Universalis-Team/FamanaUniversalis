@@ -3980,10 +3980,11 @@ country_decisions = {
 			was_never_end_game_tag_trigger = yes
 		}
 		provinces_to_highlight = {
-			OR = {
-			 area = area_128
-			 NOT = { owned_by = ROOT }
+			AND = { 
+					area = area_128
+					NOT = { owned_by = ROOT }
 			}
+			
 		}
 		allow = {
 			is_free_or_tributary_trigger = yes
