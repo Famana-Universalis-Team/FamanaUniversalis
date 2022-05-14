@@ -1,0 +1,18 @@
+government = monarchy
+add_government_reform = tomban_reform
+government_rank = 1
+mercantilism = 10
+technology_group = tomban_tech_gr
+religion = tombasa
+primary_culture = Liblatoman
+capital = 7481
+
+200.1.1 = { #change to 200 or smth
+	monarch = {
+		name = "Regency"
+		adm = 0
+		dip = 0
+		mil = 0
+		regent = yes
+	}
+}
