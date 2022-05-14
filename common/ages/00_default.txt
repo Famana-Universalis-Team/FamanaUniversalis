@@ -19,7 +19,7 @@ age_of_discovery = {
 
 		obj_ahead_of_tech = {
 			allow = {
-					any_neighbor_country = {
+				any_neighbor_country = {
 					exists = yes
 				}
 			}
@@ -251,69 +251,49 @@ age_of_reformation = {
 	papacy = 1.25
 	
 	objectives = {
-		obj_christian_convert = {
-			OR = {
-				religion = protestant
-				religion = reformed
-				religion = anglican
-				religion = hussite
-			}
-		}
-		
-		obj_humanism_religious = {
-			OR = {
-				full_idea_group = humanist_ideas
-				full_idea_group = religious_ideas
-			}
-		}
-		
-		obj_convert_10_provinces = {
+
+		obj_nafan_scholar = {
 			custom_trigger_tooltip = {
-				tooltip = obj_convert_10_provinces_tooltip
-				check_variable = { which = num_converted_religion value = 10 }
+				tooltip = nafan_school_scholar
+				OR = {
+					religious_school = {
+						group = lathvy_group
+						school = nafan_school
+					}
+					has_country_modifier = maliki_scholar_modifier
+				}
 			}
 		}
 		
-		obj_colonial_empire = {
-			colony = 5
+		obj_philosopher = {
+			philosopher = 3
+		}
+		
+		obj_convert_20_provinces = {
+			custom_trigger_tooltip = {
+				tooltip = obj_convert_20_provinces_tooltip
+				check_variable = { which = num_converted_religion value = 20 }
+			}
+		}
+		
+		obj_development_growth = {
+			grown_by_development = 500
 		}
 		
 		obj_force_converted = {
-			custom_trigger_tooltip = {
-				tooltip = obj_force_converted_tooltip
-				has_country_flag = force_converted
-			}
+			num_of_centers_of_trade = 10
+			has_center_of_trade_of_level = 3
 		}
 		
-		obj_asian_trade = {
-			OR = {
-				trading_bonus = {
-					trade_goods = spices
-					value = yes
-				}
-				trading_bonus = {
-					trade_goods = cloves
-					value = yes
-				}
-				trading_bonus = {
-					trade_goods = chinaware
-					value = yes
-				}
-				trading_bonus = {
-					trade_goods = silk
-					value = yes
-				}
-			
-			}
-		
-		
+		obj_dof = {
+			is_defender_of_faith = yes
 		}
 		
 		obj_unify_culture = {	
 			is_subject = no
 			has_unified_culture_group = yes
 		}
-	}	
+	}
 	
 	
 	abilities = {
@@ -327,7 +307,6 @@ age_of_reformation = {
 				factor = 0
 			}
 		}
-	
 
 		ab_siege_blockades = {
 			modifier = {
@@ -345,7 +324,6 @@ age_of_reformation = {
 			}
 		}
 
-		
 		ab_warscore_vs_religion = {
 			modifier = {
 				warscore_cost_vs_other_religion = -0.25
@@ -363,6 +341,7 @@ age_of_reformation = {
 				factor = 10
 			}
 		}
+
 		ab_ship_power_propagation = {
 			modifier = {
 				ship_power_propagation = 0.2
@@ -371,7 +350,6 @@ age_of_reformation = {
 				factor = 10
 			}
 		}
-		
 		
 		ab_institution_spread_from_true_faith = {
 			modifier = {
@@ -391,7 +369,6 @@ age_of_reformation = {
 			}
 		}
 
-	
 		ab_spain_tercio = {
 			allow = {
 				tag = SPA
@@ -403,6 +380,7 @@ age_of_reformation = {
 				factor = 100
 			}
 		}
+		
 		ab_mughal_artillery = {
 			allow = {
 				tag = MUG
@@ -476,8 +454,10 @@ age_of_absolutism = {
 	
 	
 	objectives = {
-		obj_3_trade_companies = {
-			num_of_trade_companies = 3
+		obj_top_two_great_power = {
+			NOT = {
+				great_power_rank = 3
+			}
 		}
 		
 		obj_universities = {
