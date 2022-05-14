@@ -126,3 +126,31 @@ country_event = { #fashros
         }
     }
 }
+
+country_event = {
+    id = vanoma.3
+    title = vanoma.3.t
+    desc = vanoma.3.desc
+    picture = BATTLE_eventPicture
+	fire_only_once = yes
+    hidden = yes
+
+    trigger = {
+        tag = VAN
+    }
+	mean_time_to_happen = {
+		days = 1
+	}
+
+    option = {
+        name = vanoma.3.a
+        ai_chance = { factor = 1 }
+        VAN = {
+            add_country_modifier = { 
+                name = van_hidden
+                duration = -1
+                hidden = yes
+            }
+        }
+    }
+}

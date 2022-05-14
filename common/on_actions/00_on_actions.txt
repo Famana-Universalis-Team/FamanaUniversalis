@@ -2733,22 +2733,20 @@ on_five_year_pulse = {
 		limit = {
 			has_reform = desert_tribe
 		}
-		immediate = {
-			change_variable = {
+		change_variable = {
+			which = desertTimer
+			value = 1
+		}
+		if = {
+			limit = {
+				check_variable = {
+					which = desertTimer
+					value = 3
+				}
+			}
+			set_variable = {
 				which = desertTimer
 				value = 1
-			}
-			if = {
-				limit = {
-					check_variable = {
-						which = desertTimer
-						value = 3
-					}
-				}
-				set_variable = {
-					which = desertTimer
-					value = 1
-				}
 			}
 		}
 	}

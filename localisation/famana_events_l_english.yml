@@ -555,35 +555,40 @@
 
  #Fashran events
  
- fashros.1.t:0 "The Third Tonxara Expansion"
- fashros.1.d:0 ""
+ fashros.1.t:0 "Westward Expansion"
+ fashros.1.d:0 "The horde grows restless without war. To search for new riches to plunder, we must look to the west. Geopyopia has repelled all our attacks, so we have no choice but to look elsewhere."
  fashros.1.a:0 "Fashros will grow larger!"
 
  fashros.2.t:0 "Fate of Nozumol"
- fashros.2.d:0 ""
- fashros.2.a:0 "One of us."
- fashros.2.b:0 "I suppose we can accept them..."
+ fashros.2.d:0 "Nozumol is no longer washoomist. Having converted all of them to the true faith, this raises the question of what to do about their culture. We could try to integrate them into the Ravsho cultural sphere and turn them into us. But perhaps it would be more beneficial to let them preserve their own local quirks and customs?"
+ fashros.2.a:0 "Let them all be Ravsho."
+ fashros.2.b:0 "They deserve a place in the Tonxara."
 
- fashros.3.t:0 "The Fourth Tonxara Expansion"
- fashros.3.d:0 ""
+ fashros.3.t:0 "Pushing the Frontier"
+ fashros.3.d:0 "We have conquered Nozumol. Beyond it, all we can see is a vast, unending sea of grass."
  fashros.3.a:0 "Fashros will grow larger!"
 
- fashros.4.t:0 "Biliku Discovered"
+ fashros.4.t:0 "Discovery of Biliku"
  fashros.4.d:0 ""
  fashros.4.a:0 "Fashros will grow larger!"
 
- fashros.5.t:0 "Vanoman Question"
+ fashros.5.t:0 "The Vanoman Question"
  fashros.5.d:0 ""
- fashros.5.a:0 ""
- fashros.5.b:0 ""
+ fashros.5.a:0 "Seize the colony."
+ fashros.5.b:0 "Make an offer they can't refuse."
+
+ vanoma.2.t:0 "The Offer"
+ vanoma.2.d:0 ""
+ vanoma.2.a:0 "Do we really have a choice?"
+ vanoma.2.b:0 "We won't give up what's ours!"
 
  fashros.6.t:0 "A New Capital?"
  fashros.6.d:0 ""
- fashros.6.a:0 "Tyma is the best choice."
- fashros.6.b:0 "Keep it in Anmoea."
+ fashros.6.a:0 "Anmoea has served us well."
+ fashros.6.b:0 "Tyma is our best option."
  fashros.6.c:0 "Kinvirel will make a fine capital."
 
- fashros.7.t:0 "The Fifth Tonxara Expansion"
+ fashros.7.t:0 "Securing the Milk Road"
  fashros.7.d:0 ""
  fashros.7.a:0 "Fashros will grow larger!"
 
@@ -595,11 +600,11 @@
  emtik_rights:0 "Emtik Rights"
  fas_emtik_rights:0 "Emtik Rights"
 
- fashros.11.t:0 "Fall of Nozumol"
+ fashros.11.t:0 "The Fall of Nozumol"
  fashros.11.d:0 "With the capital of Nozumol under our control, the remaining forces of Nozumol had deemed their struggle worthless and had decided to surrended themselves to the Tonxara. "
  fashros.11.a:0 "Good riddance!"
 
- fashros.14.t:0 "Winds from the East"
+ fashros.14.t:0 "Winds From the East"
  fashros.14.d:0 "Reports have come to us from traders of distant lands being roamed by a jingoistic, religious, nomadic empire. These people are apparently brutal, and seek to flatten everything in their wake. They tell us to take this warning seriously."
  fashros.14.a:0 "From the steppes, hm?"
  fashros_discovery:0 "The Fashran Tonxara will continue to edge closer and closer to the Gomic."
@@ -642,14 +647,14 @@
  fashros.19.a:0 "The Horde will devour them all."
  yabonia_collapsed:0 "A few nations in the southern Yabonia will become independent."
 
- fashros.20.t:0 "Into Jasua!"
- fashros.20.d:0 "Starting in 282, the Fashran Tonxara experienced an unprecendented level of expansion into the Jasua Region as they crushed their enemies rapidly."
+ fasros.20.t:0 "Into Jasua!"
+ fashros.20.d:0 "Starting in 282, the Fashran Tonxara experienced an unprecendented level of expansion into the Jasuan region as they crushed their enemies rapidly."
  fashros.20.a:0 "Into Jasua!"
  
  fashran_conquest_boost:0 "Rapid Conquest"
 
  fasros.21.t:0 "Into Ga Xal!"
- fashros.21.d:0 "Starting in 310, the Fashran Tonxara experienced an unprecendented level of expansion into the Ga Xal Region as they crushed their enemies rapidly."
+ fashros.21.d:0 "Starting in 310, the Fashran Tonxara experienced an unprecendented level of expansion into the Xalian region as they crushed their enemies rapidly."
  fashros.21.a:0 "Into Ga Xal!"
 
  fashros.23.t:0 "The Horde Arrives!"

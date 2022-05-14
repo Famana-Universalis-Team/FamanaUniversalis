@@ -745,7 +745,11 @@ hartimatul_defence = {
 }
 
 Sawcon = {
-local_build_cost = -0.25
-local_production_efficiency = 0.15
-local_institution_spread = 0.1
+    local_build_cost = -0.25
+    local_production_efficiency = 0.15
+    local_institution_spread = 0.1
+}
+
+van_hidden = {
+    female_advisor_chance = 0.33
 }

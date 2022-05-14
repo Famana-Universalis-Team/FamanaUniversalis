@@ -45,6 +45,11 @@ monarch_names = {
 	"Mayel #0" = -1
 	"Ghones #0" = -1
 	"Aina #0" = -1
+	"Oren #0" = -1
+	"Kiman #0" = -1
+	"Sina #0" = -1
+	"Eran #0" = -1
+	"Birol #0" = -1
 }
 
 leader_names = {
@@ -65,9 +70,12 @@ ship_names = {
 }
 
 army_names = {
-	"Anomat $PROVINCE$ is" 
+	"Anomat $PROVINCE$ is"
 }
 
 fleet_names = {
-	"Outfaring fleet"
+	"Outfaring Fleet"
+	"Fleet of the Woods"
+	"Fleet of the Sea"
+	"Fleet of the Sky"
 }

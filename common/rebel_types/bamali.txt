@@ -1,15 +1,15 @@
 
 
 ######################################################################
-# Lathvy rebels. Disgruntled fanatics.
+# bamali rebels. Disgruntled fanatics.
 ######################################################################
-lathvy_rebels = {
+bamali_rebels = {
 
 	color = { 229 196 56 }
 
 	area = nation 					# Sticks to provinces of their nation
 	government = theocracy 			# Desires Theocracy
-	religion = lathvy
+	religion = bamali
 	defection = none				# Will not defect
 	defect_delay = 120				# Held provinces will auto-defect after 18 months, regardless of accept/enforce demands.
 	independence = none				# Does not strive for independence
@@ -47,7 +47,7 @@ lathvy_rebels = {
 		}
 		modifier = {
 			factor = 0.0
-			NOT = { religion = lathvy }
+			NOT = { religion = bamali }
 		}
 		modifier = {
 			factor = 0.001
@@ -92,21 +92,21 @@ lathvy_rebels = {
 		}
 		modifier = {
 			factor = 0.0
-			religion = lathvy
-			owner = { religion = lathvy }
+			religion = bamali
+			owner = { religion = bamali }
 		}
 		modifier = {
 			factor = 2.0
-			NOT = { religion = lathvy }
+			NOT = { religion = bamali }
 			any_neighbor_province = {
-	 			religion = lathvy
+	 			religion = bamali
 	 			NOT = { has_province_modifier = "forced_conversion" }
 	 		}
 	 	}
 		modifier = {
 			factor = 5
 			has_missionary = yes
-			religion = lathvy
+			religion = bamali
 		}
 		modifier = {
 			factor = 1.5
@@ -137,9 +137,9 @@ lathvy_rebels = {
 			if = {
 				limit = {
 					OR = {
-						religion = lathvy
+						religion = bamali
 						is_reformation_center = yes
-						owner = { religion = lathvy }
+						owner = { religion = bamali }
 					}
 				}
 				add_province_modifier = {
@@ -149,11 +149,11 @@ lathvy_rebels = {
 			}
 			if = {
 				limit = {
-					NOT = { religion = lathvy }
+					NOT = { religion = bamali }
 					is_reformation_center = no
-					NOT = { owner = { religion = lathvy } }
+					NOT = { owner = { religion = bamali } }
 				}
-				change_religion = lathvy
+				change_religion = bamali
 				add_province_modifier = {
 					name = "forced_conversion"
 					duration = 730
@@ -172,8 +172,8 @@ lathvy_rebels = {
 	# Country scope
 	can_negotiate_trigger = {
 		OR = {
-			religion_group = lathvy_group
-			dominant_religion = lathvy
+			religion_group = far_eastern_gomic
+			dominant_religion = bamali
 		}
 	}
 	
@@ -183,7 +183,7 @@ lathvy_rebels = {
 	}
 	
 	# Localisation for their demands
-	demands_description = "lathvy_rebels_demand"
+	demands_description = "bamali_rebels_demand"
 	
 	# Country Scope	
 	demands_enforced_effect = {
@@ -196,7 +196,7 @@ lathvy_rebels = {
 		}
 		if = {
 			limit = {
-				NOT = { religion_group = lathvy_group }
+				NOT = { religion_group = bamali }
 			}
 			add_prestige = -50
 			every_owned_province = {
@@ -214,7 +214,7 @@ lathvy_rebels = {
 		}
 		if = {
 			limit = {
-				religion = lathvy
+				religion = bamali
 			}
 			add_country_modifier = {
 				name = "religious_intolerance_enforced"
@@ -223,7 +223,7 @@ lathvy_rebels = {
 		}
 		if = {
 			limit = {
-				religion = lathvy
+				religion = bamali
 				has_estate = estate_church
 				NOT = {
 					has_estate_influence_modifier = {
@@ -241,20 +241,20 @@ lathvy_rebels = {
 		}
 		if = {
 			limit = {
-				NOT = { religion = lathvy }
-				dominant_religion = lathvy
+				NOT = { religion = bamali }
+				dominant_religion = bamali
 				NOT = { tag = PAP }
 			}
-			change_religion = lathvy
+			change_religion = bamali
 			force_converted = yes
 		}
 		if = {
 			limit = {
-				NOT = { religion = lathvy }
-				NOT = { dominant_religion = lathvy }
+				NOT = { religion = bamali }
+				NOT = { dominant_religion = bamali }
 				NOT = { tag = PAP }
 				NOT = { has_country_modifier = heretic_tolerance }
-				religion_group = lathvy_group
+				religion_group = far_eastern_gomic
 			}
 			add_country_modifier = {
 				name = "heretic_tolerance"

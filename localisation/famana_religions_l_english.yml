@@ -47,7 +47,7 @@
  traditional:0 "Traditional"
  lathvy:0 "Lathvy"
 
- western_oppian_religion_desc:0 "The traditional religion of the Oppian Empire. Held together by the crown of Emintas and the power of the emperor, it has fallen into disarray since the collapse of the empire, and violent wars in Oppia, with people now seeking for an alternative."
+ western_oppian_religion_desc:0 "The traditional religion of the Oppian Empire. Held together by the crown of Emintas and the power of the emperor, it has fallen into disarray since the collapse of the empire, and violent wars in Oppia, with people now seeking an alternative."
  reformed_oppian_religion_desc:0 "A new religion, seeing the reformation of core principles of the Oppian religion, including the abolishing of Sifa. It is regarded as dangerous, playing with the fire that is introducing new gods, as well as assimilating other religions."
  eastern_oppian_religion_desc:0 "A branch derived from the traditional Oppian faith, influenced by the religions of the eastern Gomic and Ga Xal, created by forced settlers in the east."
 
@@ -74,7 +74,7 @@
  eastern_oppian_rebels_army:0 "$RELIGION$ Army"
 
  RV_NO_DEITY_TITLE:0 "No deity selected"
- RV_NO_DEITY_DESC:0 "You have not selected a deity!"
+ RV_NO_DEITY_DESC:0 "Your religion allows you to select which god to follow as your main deity. Each deity will come with its own effects and last until your monarch changes."
  RV_PICK_DEITY:0 "Select deity"
 
  chigim:0 "Chigim"
@@ -185,8 +185,22 @@
  rochoni_religion:0 "Rochoni"
  rochoni_religion_desc:0 "Rochoni is a more loose denomination of Lathvy, which arose and is most popular in the northern regions of Estal. It revolves around the belief that Ara does not need the support of his followers to fight Loys and the Yomtanians."
 
+ rochoni_rebels_demand:0 "Convert $COUNTRYNAME$"
+ rochoni_rebels_demand_desc:0 "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
+ rochoni_rebels_title:0 "Religious"
+ rochoni_rebels_name:0 "$RELIGION$ Zealots"
+ rochoni_rebels_desc:0 "Religious fanatics tend to rise up in provinces controlled by nations of a different faith. They seek to spread their faith and smite all unbelievers."
+ rochoni_rebels_army:0 "$RELIGION$ Army"
+
  harmonic_religion:0 "Harmonic"
  harmonic_religion_desc:0 "Harmonic lathvy is a very strict interpretation of Lathvy, founded by the daughter of Syadon after the fall of the Nafan Empire. It holds that Ara and Loys should be worshipped side by side as they are equals."
+
+ harmonic_rebels_demand:0 "Convert $COUNTRYNAME$"
+ harmonic_rebels_demand_desc:0 "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
+ harmonic_rebels_title:0 "Religious"
+ harmonic_rebels_name:0 "$RELIGION$ Zealots"
+ harmonic_rebels_desc:0 "Religious fanatics tend to rise up in provinces controlled by nations of a different faith. They seek to spread their faith and smite all unbelievers."
+ harmonic_rebels_army:0 "$RELIGION$ Army"
 
  gadan_group:0 "Gadan"
  gadan:0 "Gadan"
@@ -340,7 +354,17 @@
  aresian_rebels_army:0 "$RELIGION$ Army"
 
  va:0 "Va"
- va_religion_desc:0 "Va is the religion of the isolationist Vanoman state, promoting the self interest of the Vanomans over cooperation."
+ va_religion_desc:0 "Va is the religion of the isolationist Vanoman state, promoting the self interest of the Vanomans over cooperation. Adherents of Va beleive in a trinity of gods who watch over the Vanoman people, and the Vanoman people only."
+
+ va_avor:0 "Avor"
+ va_avor_desc:0 "Avor is the goddess of wisdom, justice and the forest."
+
+ va_iderata:0 "Iderata"
+ va_iderata_desc:0 "Iderata is the goddess of trade, sailors and the sea."
+
+ va_diggiol:0 "Diggiol"
+ va_diggiol_desc:0 "Diggiol is the warrior goddess of cunning, courage and the sky."
+
  va_rebels_demand:0 "Convert $COUNTRYNAME$"
  va_rebels_demand_desc:0 "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
  va_rebels_title:0 "Religious"
@@ -352,6 +376,7 @@
 
  dorroman:0 "Dorroman"
  dorroman_religion_desc:0 "Dorroman is the state religion of the Dorroman people, believing in a strict caste system, and a philosophy following one's destiny as serving one of four Gods representing the seasons."
+
  dorroman_rebels_demand:0 "Convert $COUNTRYNAME$"
  dorroman_rebels_demand_desc:0 "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
  dorroman_rebels_title:0 "Religious"
@@ -360,6 +385,14 @@
  dorroman_rebels_army:0 "$RELIGION$ Army"
 
  agmagoz:0 "Agmagozi"
+ agmagoz_religion_desc:0 "The ancient religion of the long-gone Agmagozi Empire."
+
+ agmagoz_rebels_demand:0 "Convert $COUNTRYNAME$"
+ agmagoz_rebels_demand_desc:0 "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
+ agmagoz_rebels_title:0 "Religious"
+ agmagoz_rebels_name:0 "$RELIGION$ Zealots"
+ agmagoz_rebels_desc:0 "Religious fanatics tend to rise up in provinces controlled by nations of a different faith. They seek to spread their faith and smite all unbelievers."
+ agmagoz_rebels_army:0 "$RELIGION$ Army"
 
  tombasa:0 "Tombasa"
  tombasa_religion_desc:0 "Tombasa is a religion built on xenophobia and paranoia, and the appointement of a Tombasor to protect the Tomban People."
@@ -490,23 +523,52 @@
 
  ordic:0 "Ordic"
  ordic_religion_desc:0 "The Ordic faith is a collection of ancient barbarian traditions and beliefs. With the conversion of the major Ordic kingdoms to the Lathvy faith, it is a dying religion."
+
+ ordic_rebels_demand:0 "Convert $COUNTRYNAME$"
+ ordic_rebels_demand_desc:0 "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
+ ordic_rebels_title:0 "Religious"
+ ordic_rebels_name:0 "$RELIGION$ Zealots"
+ ordic_rebels_desc:0 "Religious fanatics tend to rise up in provinces controlled by nations of a different faith. They seek to spread their faith and smite all unbelievers."
+ ordic_rebels_army:0 "$RELIGION$ Army"
  
  gotzli:0 "Gotzli"
  gotzli_religion_desc:0 "A collection of ancient traditions and beliefs popular among the Gotzlic people." #not creative enough
+
+ gotzli_rebels_demand:0 "Convert $COUNTRYNAME$"
+ gotzli_rebels_demand_desc:0 "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
+ gotzli_rebels_title:0 "Religious"
+ gotzli_rebels_name:0 "$RELIGION$ Zealots"
+ gotzli_rebels_desc:0 "Religious fanatics tend to rise up in provinces controlled by nations of a different faith. They seek to spread their faith and smite all unbelievers."
+ gotzli_rebels_army:0 "$RELIGION$ Army"
 
  naravami:0 "Torviya"
  naravami_religion_desc: "§YTorviya §Wcountries can §Ggain §YChurch Power §Wby raiding coasts, winning wars and winning battles. Losing wars will cause you to §Rlose §YChurch Power§W.\n\nThe Torviya religion represents the various tribal beliefs of the Naravami people. Adherents of Torviya have varying regional differences, but generally, they believe in the ice gods beyond the great Naravami Mountains. Animal sacrifice plays a major part."
  north_estali:0 "North Estali"
 
-  look_for_heir_aspect:0 "Search For an Heir"
-	launch_hunting_parties_aspect:0 "Launch Hunting Parties"
-	increase_raiding_aspect:0 "Increase Raiding"
-	venerate_the_gods_aspect:0 "Venerate the Gods"
-	abandon_old_ideas_aspect:0 "Abandon Old Ideas"
-  build_naval_defenses_aspect:0 "Build Naval Defenses"
+ naravami_rebels_demand:0 "Convert $COUNTRYNAME$"
+ naravami_rebels_demand_desc:0 "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
+ naravami_rebels_title:0 "Religious"
+ naravami_rebels_name:0 "$RELIGION$ Zealots"
+ naravami_rebels_desc:0 "Religious fanatics tend to rise up in provinces controlled by nations of a different faith. They seek to spread their faith and smite all unbelievers."
+ naravami_rebels_army:0 "$RELIGION$ Army"
+
+ look_for_heir_aspect:0 "Search For an Heir"
+ launch_hunting_parties_aspect:0 "Launch Hunting Parties"
+ increase_raiding_aspect:0 "Increase Raiding"
+ venerate_the_gods_aspect:0 "Venerate the Gods"
+ abandon_old_ideas_aspect:0 "Abandon Old Ideas"
+ build_naval_defenses_aspect:0 "Build Naval Defenses"
 
  bosisi:0 "Bosisi"
  bosisi_religion_desc:0 "Bosisi is the tribal religion of the Antiash people. They believe in a diverse pantheon of gods, with the sun god being most important. It is believed that the sun god will grow stronger and dry up the great sanctuary lake if it is not regularily given sacrifices. In the most dire of times, slaves captured in raids may be sacrificed."
+
+ bosisi_rebels_demand:0 "Convert $COUNTRYNAME$"
+ bosisi_rebels_demand_desc:0 "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
+ bosisi_rebels_title:0 "Religious"
+ bosisi_rebels_name:0 "$RELIGION$ Zealots"
+ bosisi_rebels_desc:0 "Religious fanatics tend to rise up in provinces controlled by nations of a different faith. They seek to spread their faith and smite all unbelievers."
+ bosisi_rebels_army:0 "$RELIGION$ Army"
+
  CRUSADE:0 "Crusade"
  
  OGRACABA: "Ogracaba"

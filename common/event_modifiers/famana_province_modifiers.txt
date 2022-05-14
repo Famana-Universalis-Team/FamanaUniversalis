@@ -1,5 +1,6 @@
 
 great_desert_modifier = {
+    #picture = "great_desert_img"
     local_friendly_movement_speed = -0.5
     local_hostile_movement_speed = -0.5
     attrition = 5

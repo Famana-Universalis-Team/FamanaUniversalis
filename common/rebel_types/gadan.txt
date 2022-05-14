@@ -1,15 +1,15 @@
 
 
 ######################################################################
-# Lathvy rebels. Disgruntled fanatics.
+# gadan rebels. Disgruntled fanatics.
 ######################################################################
-lathvy_rebels = {
+gadan_rebels = {
 
 	color = { 229 196 56 }
 
 	area = nation 					# Sticks to provinces of their nation
 	government = theocracy 			# Desires Theocracy
-	religion = lathvy
+	religion = gadan
 	defection = none				# Will not defect
 	defect_delay = 120				# Held provinces will auto-defect after 18 months, regardless of accept/enforce demands.
 	independence = none				# Does not strive for independence
@@ -47,7 +47,7 @@ lathvy_rebels = {
 		}
 		modifier = {
 			factor = 0.0
-			NOT = { religion = lathvy }
+			NOT = { religion = gadan }
 		}
 		modifier = {
 			factor = 0.001
@@ -92,21 +92,21 @@ lathvy_rebels = {
 		}
 		modifier = {
 			factor = 0.0
-			religion = lathvy
-			owner = { religion = lathvy }
+			religion = gadan
+			owner = { religion = gadan }
 		}
 		modifier = {
 			factor = 2.0
-			NOT = { religion = lathvy }
+			NOT = { religion = gadan }
 			any_neighbor_province = {
-	 			religion = lathvy
+	 			religion = gadan
 	 			NOT = { has_province_modifier = "forced_conversion" }
 	 		}
 	 	}
 		modifier = {
 			factor = 5
 			has_missionary = yes
-			religion = lathvy
+			religion = gadan
 		}
 		modifier = {
 			factor = 1.5
@@ -137,9 +137,9 @@ lathvy_rebels = {
 			if = {
 				limit = {
 					OR = {
-						religion = lathvy
+						religion = gadan
 						is_reformation_center = yes
-						owner = { religion = lathvy }
+						owner = { religion = gadan }
 					}
 				}
 				add_province_modifier = {
@@ -149,11 +149,11 @@ lathvy_rebels = {
 			}
 			if = {
 				limit = {
-					NOT = { religion = lathvy }
+					NOT = { religion = gadan }
 					is_reformation_center = no
-					NOT = { owner = { religion = lathvy } }
+					NOT = { owner = { religion = gadan } }
 				}
-				change_religion = lathvy
+				change_religion = gadan
 				add_province_modifier = {
 					name = "forced_conversion"
 					duration = 730
@@ -172,8 +172,8 @@ lathvy_rebels = {
 	# Country scope
 	can_negotiate_trigger = {
 		OR = {
-			religion_group = lathvy_group
-			dominant_religion = lathvy
+			religion_group = gadan_group
+			dominant_religion = gadan
 		}
 	}
 	
@@ -183,7 +183,7 @@ lathvy_rebels = {
 	}
 	
 	# Localisation for their demands
-	demands_description = "lathvy_rebels_demand"
+	demands_description = "gadan_rebels_demand"
 	
 	# Country Scope	
 	demands_enforced_effect = {
@@ -196,7 +196,7 @@ lathvy_rebels = {
 		}
 		if = {
 			limit = {
-				NOT = { religion_group = lathvy_group }
+				NOT = { religion_group = gadan }
 			}
 			add_prestige = -50
 			every_owned_province = {
@@ -214,7 +214,7 @@ lathvy_rebels = {
 		}
 		if = {
 			limit = {
-				religion = lathvy
+				religion = gadan
 			}
 			add_country_modifier = {
 				name = "religious_intolerance_enforced"
@@ -223,7 +223,7 @@ lathvy_rebels = {
 		}
 		if = {
 			limit = {
-				religion = lathvy
+				religion = gadan
 				has_estate = estate_church
 				NOT = {
 					has_estate_influence_modifier = {
@@ -241,20 +241,20 @@ lathvy_rebels = {
 		}
 		if = {
 			limit = {
-				NOT = { religion = lathvy }
-				dominant_religion = lathvy
+				NOT = { religion = gadan }
+				dominant_religion = gadan
 				NOT = { tag = PAP }
 			}
-			change_religion = lathvy
+			change_religion = gadan
 			force_converted = yes
 		}
 		if = {
 			limit = {
-				NOT = { religion = lathvy }
-				NOT = { dominant_religion = lathvy }
+				NOT = { religion = gadan }
+				NOT = { dominant_religion = gadan }
 				NOT = { tag = PAP }
 				NOT = { has_country_modifier = heretic_tolerance }
-				religion_group = lathvy_group
+				religion_group = gadan_group
 			}
 			add_country_modifier = {
 				name = "heretic_tolerance"
