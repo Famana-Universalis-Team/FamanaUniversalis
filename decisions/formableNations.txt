@@ -301,19 +301,16 @@ country_decisions = {
 	south_oppia_nation = {
 		major = yes
 		potential = {
-			AND = {
-				culture = Lower_Oppian
-				NOT = { tag = OSS }
-				NOT = { exists = SOP }
-				was_never_end_game_tag_trigger = yes
-			}
+			culture = Lower_Oppian
+			NOT = { exists = SOP }
+			was_never_end_game_tag_trigger = yes
 		}
 		provinces_to_highlight = {
 			OR = {
 				province_id = 5049
-				province_id = 5056
 				province_id = 5091
 				province_id = 5230
+				province_id = 5056
 			}
 			OR = {
 				NOT = { owned_by = ROOT }
@@ -321,20 +318,21 @@ country_decisions = {
 			}
 		}
 		allow = {
-			adm_tech = 5
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
 			owns_core_province = 5049
-			owns_core_province = 5056
 			owns_core_province = 5091
-			owns_core_province = 5230
+			OR = {
+				owns_core_province = 5230
+				owns_core_province = 5056
+			}
 			capital_scope = {
 				is_core = ROOT
 			}
 			num_of_owned_provinces_with = {
-				value = 10
+				value = 8
 				is_city = yes
-				region = lower_oppia_region
+				culture = Lower_Oppian
 			}
 		}
 		effect = {
@@ -346,9 +344,9 @@ country_decisions = {
 				set_government_rank = 2
 			}
 			change_tag = SOP
-			lower_oppia_region = {
+			oppia_superregion = {
 				limit = {
-					NOT = { owned_by = ROOT }
+					culture = Lower_Oppian
 				}
 				add_permanent_claim = SOP
 			}
