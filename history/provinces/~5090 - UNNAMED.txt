@@ -8,13 +8,14 @@ culture = Lower_Oppian
 religion = reformed_oppian
 hre = no
 
-base_tax = 5
-base_production = 4
-trade_goods = wool
+base_tax = 2
+base_production = 3
+trade_goods = grain
 base_manpower = 2
-capital = "Lyropa'a"
+capital = "Yomash"
 is_city = no
-extra_cost = 1
+fort_15th = yes
+extra_cost = 2
   
 
 owner = LYP

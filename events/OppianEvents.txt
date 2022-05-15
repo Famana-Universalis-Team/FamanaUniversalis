@@ -694,9 +694,6 @@ country_event = {
 
 	is_triggered_only = yes
 	
-
-	
-
 	option = {
 		name = oppia.14.a
 		ai_chance = {
@@ -728,5 +725,41 @@ country_event = {
 		5051 = { cede_province = TCK  }
 		5052 = { cede_province = TCK  }
 		add_prestige = -5
+	}
+}
+
+#Lyposh claims
+country_event = {
+	id = oppia.18
+	title = oppia.18.t
+	desc = oppia.18.d
+	picture = ANGRY_MOB_eventPicture
+	fire_only_once = yes
+	major = yes
+
+	trigger = {
+		tag = LYP
+		NOT = {
+			alliance_with = EFF
+		}
+		owns_all_provinces = {
+			area = lyposh_area
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	option = {
+		name = oppia.18.a
+		ai_chance = {
+			factor = 1
+		}
+		effasha_area = { add_permanent_claim = ROOT }
+		add_country_modifier = {
+			name = lyp_attack
+			duration = 1825
+		}
 	}
 }

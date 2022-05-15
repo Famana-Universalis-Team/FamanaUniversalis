@@ -1587,6 +1587,7 @@ country_event = {
                 release = JII
                 release = JTA
                 release = ZBL
+                release = MHN
             }
         }
     }
@@ -2354,6 +2355,39 @@ country_event = { #Event that spawns cores for releasables
                 }
                 add_local_autonomy = 50
             }
+        }
+    }
+}
+
+country_event = { #AI event to annex nozumol
+    id = fashros.25
+    title = fashros.25.t
+    desc = fashros.25.d
+    picture = INVENTION_eventPicture
+	hidden = yes
+	fire_only_once = yes
+    trigger = {
+        tag = FAS
+        NOT = {
+           is_year = 225
+        }
+        NOZ = {
+            is_subject_of = FAS
+        }
+	}
+
+    option = { 
+        name = fashros.25.a
+        ai_chance = {
+            factor = 1
+        }
+		nuzoto_area = {
+            limit = { owned_by = NOZ }
+            cede_province = FAS
+        }
+        toza_area = {
+            limit = { owned_by = NOZ }
+            cede_province = FAS
         }
     }
 }

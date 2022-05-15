@@ -336,6 +336,14 @@ country_decisions = {
 			}
 		}
 		effect = {
+			hidden_effect = {
+				oppia_superregion = {
+					limit = {
+						culture = Lower_Oppian
+					}
+					add_permanent_claim = SOP
+				}
+			}
 			restore_country_name = yes
 			if = {
 				limit = {
@@ -344,12 +352,7 @@ country_decisions = {
 				set_government_rank = 2
 			}
 			change_tag = SOP
-			oppia_superregion = {
-				limit = {
-					culture = Lower_Oppian
-				}
-				add_permanent_claim = SOP
-			}
+			custom_tooltip = south_oppia_form_tt
 			add_country_modifier = {
 				name = "centralization_modifier"
 				duration = 7300

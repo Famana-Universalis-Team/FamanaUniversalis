@@ -15,32 +15,34 @@ country_event = {
 	}
 
     immediate = {
-        random_owned_province = {
-            limit = {
-                area = poto_haroo_area
+        hidden_effect = {
+            random_owned_province = {
+                limit = {
+                    area = poto_haroo_area
+                }
+                spawn_rebels = {
+                    type = pretender_rebels
+                    size = 2
+                    culture = Tolan
+                    religion = lathvy
+                    friend = ALT
+                }
             }
-            spawn_rebels = {
-                type = pretender_rebels
-                size = 2
-                culture = Tolan
-                religion = lathvy
-                friend = ALT
+            random_owned_province = {
+                limit = {
+                    area = dreklos_area
+                }
+                spawn_rebels = {
+                    type = pretender_rebels
+                    size = 1
+                    culture = Tolan
+                    religion = lathvy
+                    friend = ALT
+                }
             }
+            ALT = { set_country_flag = nahallaian_coup }
+            set_country_flag = is_at_coup
         }
-        random_owned_province = {
-            limit = {
-                area = dreklos_area
-            }
-            spawn_rebels = {
-                type = pretender_rebels
-                size = 1
-                culture = Tolan
-                religion = lathvy
-                friend = ALT
-            }
-        }
-        ALT = { set_country_flag = nahallaian_coup }
-        set_country_flag = is_at_coup
     }
 
     option = {
