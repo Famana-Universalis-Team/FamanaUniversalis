@@ -425,9 +425,11 @@ country_event = { #Vassals go disloyal 95%
     fire_only_once = yes
 
 	immediate = {
-		set_variable = {
-			which = pextoDisloyal
-			value = 7.0
+		hidden_effect = { 
+			set_variable = {
+				which = pextoDisloyal
+				value = 7.0
+			}
 		}
 	}
 
@@ -480,24 +482,12 @@ country_event = { #bye bye pexto
 			release = NPX
 			release = RMX
 			release = POM
-			all_owned_province = { 
-				limit = { culture = East_Ordican }
-				cede_province = CEL
-			}			
-			all_owned_province = { 
-				limit = { culture = Yuvlan }
-				cede_province = KAM
-			}
-			all_owned_province = { 
-				limit = { 
-					OR = {
-						culture = Ordican
-						culture = Dlosnim
-						culture = Vordori
-					}
-				}
-				cede_province = ORC
-			}
+			release = NOX
+			release = YVR
+			release = CEL
+			release = KAM
+			release = ARO
+			release = MLY
 		}
 		hidden_effect = {
 			PPX = {
