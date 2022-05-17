@@ -11,6 +11,8 @@ gomic_region = {
 		east_gomic
 		gomic
 		gomic_exit
+		glasian_sea_area
+		north_gomic_area
 	}
 }
 
@@ -732,5 +734,22 @@ voychonia_region = {
 		area_220
 		area_224
 		area_226
+	}
+}
+
+east_great_desert_region = {
+	areas = {
+		area_233
+		area_234
+		area_235
+		area_236
+		area_237
+		area_238
+		area_239
+		area_240
+		area_241
+		area_242
+		area_243
+		area_244
 	}
 }
