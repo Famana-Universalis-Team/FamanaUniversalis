@@ -1,0 +1,39 @@
+ordic_blessing_1 = {
+	is_blessing = yes
+
+	modifier = {
+		available_province_loot = 0.50
+	}
+}
+
+ordic_blessing_2 = {
+	is_blessing = yes
+
+	modifier = {
+		ae_impact = -0.1
+	}
+}
+
+ordic_blessing_3 = {
+	is_blessing = yes
+
+	modifier = {
+		global_unrest = -1
+	}
+}
+
+ordic_blessing_4 = {
+	is_blessing = yes
+
+	modifier = {
+		global_institution_spread = 0.25
+	}
+}
+
+ordic_blessing_5 = {
+	is_blessing = yes
+
+	modifier = {
+		capture_ship_chance = 0.20
+	}
+}

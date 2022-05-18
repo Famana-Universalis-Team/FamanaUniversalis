@@ -26,6 +26,35 @@ on_startup = {
 	}
 	if = {
 		limit = {
+			tag = GEP
+		}
+		add_country_modifier = {
+			name = gep_corrupt
+			duration = -1
+		}
+		add_country_modifier = {
+			name = gep_army
+			duration = -1
+		}
+		add_country_modifier = {
+			name = gep_decadence
+			duration = -1
+		}
+		add_country_modifier = {
+			name = gep_scheming
+			duration = -1
+		}
+		add_country_modifier = {
+			name = gep_isolated
+			duration = -1
+		}
+		add_country_modifier = {
+			name = gep_navy
+			duration = -1
+		}
+	}
+	if = {
+		limit = {
 			has_dlc = "Cradle of Civilization"
 			has_country_modifier = tur_janissary
 		}

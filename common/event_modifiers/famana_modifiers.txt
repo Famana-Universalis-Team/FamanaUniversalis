@@ -757,3 +757,9 @@ van_hidden = {
 lyp_attack = {
     discipline = 0.10
 }
+
+rejected_lathvy = {
+    tolerance_own = -2
+    tolerance_heathen = -3
+    stability_cost_modifier = 0.20
+}
