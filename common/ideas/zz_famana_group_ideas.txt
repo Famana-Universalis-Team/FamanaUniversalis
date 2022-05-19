@@ -454,6 +454,7 @@ naravami_ideas = {
     }
     narv_maritime_voyages = {
         naval_forcelimit_modifier = 0.2
+		may_perform_slave_raid = yes
     }
     narv_invaders_of_vamanya = {
        loot_amount = 0.10

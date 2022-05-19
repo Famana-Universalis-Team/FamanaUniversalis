@@ -78,12 +78,12 @@ KKR_ideas = {
 
 PEX_ideas = {
 	start = {
-		yearly_corruption = -0.1
+		yearly_corruption = -0.05
 		missionaries = 1
 	}
 	
 	bonus = {
-		infantry_power = 0.10
+		reinforce_cost_modifier = -0.10
 	}
 
 	trigger = {
@@ -95,7 +95,7 @@ PEX_ideas = {
 		global_tax_modifier = 0.10
 	}
 	pex_army = {
-		discipline = 0.05
+		diplomats = 1
 	}
 	pex_conquest = {
 		core_creation = -0.10
