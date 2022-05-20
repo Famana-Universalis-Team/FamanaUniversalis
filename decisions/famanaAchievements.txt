@@ -21,16 +21,19 @@ country_decisions = {
 				tag = MOR
 				tag = GAX
 			}
-			num_of_owned_provinces_with = {
-				value = 120
-				religion = morian
-				OR = {
-					region = south_xalia_region
-					region = east_xalia_region
-					region = north_xalia_region
-					region = moria_region
+			custom_trigger_tooltip = {
+				tooltip = MORIA_ACH_TT
+				num_of_owned_provinces_with = {
+					value = 120
+					religion = morian
+					OR = {
+						region = south_xalia_region
+						region = east_xalia_region
+						region = north_xalia_region
+						region = moria_region
+					}
 				}
-		    }
+			}
 		}
 		effect = {
 			add_country_modifier = {
@@ -125,6 +128,34 @@ country_decisions = {
 		effect = {
 			add_country_modifier = {
 				name = achievement_rpw_modifier
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	achievement_for_the_clouds = {
+		major = yes
+		potential = {
+			ironman = yes
+			tag = FAS
+		}
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = FAS_FTC_TT
+				mission_completed = fas_reform_the_faith
+				mission_completed = fas_the_three_crowns
+				mission_completed = fas_seize_the_northern_shores
+				mission_completed = fas_tonmo_science
+				mission_completed = fas_the_vanoman_heartland
+				mission_completed = fas_dimdivu_docks
+				mission_completed = fas_a_new_capital
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = achievement_for_the_clouds_modifier
 				duration = -1
 			}
 		}

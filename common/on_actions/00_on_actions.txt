@@ -2,19 +2,6 @@
 
 # country
 on_startup = {
-	set_variable = {
-		which = desertTimer
-		value = 0
-	}
-	set_variable = {
-		which = desertCheck
-		value = 0
-	}
-	export_to_variable = {
-		which = religionVar
-		value = religion
-		who = ROOT
-	}
 	emperor = {
 		save_global_event_target_as = Emperor
 	}
@@ -32,6 +19,21 @@ on_startup = {
 		remove_country_modifier = tur_janissary
 	}
 	initialize_schools_effect = yes #This is only used here but is used for readability of on_action file.
+
+	##################################################################### FAMANA SETUP
+	set_variable = {
+		which = desertTimer
+		value = 0
+	}
+	set_variable = {
+		which = desertCheck
+		value = 0
+	}
+	export_to_variable = {
+		which = religionVar
+		value = religion
+		who = ROOT
+	}
 	if = {
 		limit = {
 			ai = no
@@ -41,6 +43,107 @@ on_startup = {
 			days = 1
 		}
 	}
+	if = {
+		limit = {
+            OR = {
+				tag = VAN
+	            tag = SIX
+	            tag = GLT
+	            tag = KOM
+	            tag = ELW
+	            tag = OKU
+	            tag = RSH
+	            tag = PEX
+	            tag = OSS
+	            tag = NUT
+	            tag = ROP
+	            tag = UMZ
+	            tag = PXA
+	            tag = VAV
+	            tag = TYD
+	            tag = INI
+	            tag = GHA
+	            tag = YAB
+	            tag = XOF
+	            tag = AME
+	            tag = VNS
+	            tag = ELP
+	            tag = XON
+	            tag = VOX
+	            tag = PYA
+	            tag = REL
+	            tag = CLL
+	            tag = GTS
+	            tag = ZEA
+	            tag = ASR
+	            tag = VAX
+	            tag = DYR
+	            tag = FNC
+	            tag = TCK
+	            tag = KIN
+	            tag = KAP
+	            tag = SKT
+	            tag = AGX
+	            tag = NKM
+	            tag = DEL
+	            tag = GDA
+	            tag = ZAK
+	            tag = JKK
+	            tag = HZR
+	            tag = RTK
+	            tag = ELK
+	            tag = MKK
+	            tag = ELQ
+	            tag = UNS
+	            tag = MRL
+	            tag = HIT
+	            tag = DRA
+	            tag = NPT
+	            tag = RMX
+            }
+        }
+        country_event = { 
+            id = yomtanian.2
+        }
+	}
+	if = {
+		limit = {
+			tag = GEP
+		}
+		add_country_modifier = {
+			name = gep_corrupt
+			duration = -1
+		}
+		add_country_modifier = {
+			name = gep_army
+			duration = -1
+		}
+		add_country_modifier = {
+			name = gep_decadence
+			duration = -1
+		}
+		add_country_modifier = {
+			name = gep_scheming
+			duration = -1
+		}
+		add_country_modifier = {
+			name = gep_isolated
+			duration = -1
+		}
+		add_country_modifier = {
+			name = gep_navy
+			duration = -1
+		}
+	}
+	if = {
+		limit = {
+			tag = TLB
+		}
+		country_event = {
+			id = tomba.1
+		}
+	}
+	##################################################################### FAMANA SETUP
 }
 
 # country

@@ -65,16 +65,88 @@ country_event = {
 	
 	option = {
 		name = "estal.1.a"
+		ai_chance = {
+			factor = 3
+			modifier = {
+				factor = 0
+				num_of_loans = 1
+			}
+			modifier = {
+				factor = 0
+				NOT = { years_of_income	= 0.25 }
+			}
+		}
 		add_years_of_income = -0.25
 		goto = prov_raided_yoms
 	}
 	option = {
 		name = "estal.1.b"
+		ai_chance = { factor = 1 }
 		event_target:prov_raided_yoms = {
 		    cancel_construction = yes
             add_local_autonomy = 15
 		    add_devastation = 10
 		}
 		goto = prov_raided_yoms
+	}
+}
+
+country_event = {
+	id = estal.2
+	title = estal.2.t
+	desc = estal.2.d
+	picture = PRAYING_eventPicture
+	
+	trigger = {
+		NOT = { has_country_flag = lathvy_convert_fired }
+		NOT = { has_country_modifier = yomtanian_nation }
+        OR = {
+			religion_group = north_estali
+			religion = animism
+		}
+		is_year = 310
+		any_known_country = {
+			religion_group = lathvy
+		}
+		capital_scope = {
+			continent = estal
+		}
+		NOT = {
+			government = native
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 180
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = lathvy_convert_fired
+		}
+	}
+	
+	option = { #Convert to lathvy
+		name = "estal.2.a"
+		ai_chance = { factor = 12 }
+		add_stability = -2
+		add_country_modifier = {
+			name = "famana_conversion_zeal"
+			duration = 3650
+		}
+		change_religion = lathvy
+		capital_scope = {
+			change_religion = lathvy
+		}
+	}
+
+	option = { #Stay pagan
+		name = "estal.2.b"
+		ai_chance = { factor = 1 }
+		add_country_modifier = {
+			name = rejected_lathvy
+			duration = 5475
+		}
+		change_government_reform_progress = -25
 	}
 }

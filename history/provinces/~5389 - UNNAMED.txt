@@ -1,0 +1,21 @@
+discovered_by = east_gomic_tech_gr
+discovered_by = north_gomic_tech_gr
+
+discovered_by = west_gomic_tech_gr
+culture = Neo_Xalnish
+religion = lathvy
+owner = XON
+controller = XON
+add_core = XON
+
+###
+
+hre = no
+
+base_tax = 4
+base_production = 5
+trade_goods = grain
+base_manpower = 5
+capital = "Aixona"
+is_city = yes
+extra_cost = 1

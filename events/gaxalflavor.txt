@@ -17,7 +17,7 @@ country_event = {
 		}
 	}
 	mean_time_to_happen = {
-		years = 2
+		months = 24
 	}
 
 	immediate = {
@@ -80,7 +80,7 @@ country_event = {
 		religion = delkian
 	}
 	mean_time_to_happen = {
-		years = 8
+		months = 96
 	}
 
 	option = {
@@ -151,5 +151,160 @@ country_event = {
 			name = rastrayvarists_supported
 			duration = 1825
 		}
+	}
+}
+
+#Rastrayvar control
+country_event = {
+	id = gaxalf.4
+	title = gaxalf.4.t
+	desc = gaxalf.4.d
+	picture = FAMINE_eventPicture
+	hidden = yes
+
+	trigger = {
+		OR = {
+			had_global_flag	= {
+				flag = rastrayvar_control_flag
+				days = 1825
+			}
+			is_year = 217
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 1000
+	}
+
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = {
+					has_global_flag = rastrayvar_control_flag
+				}
+				clr_global_flag	= rastrayvar_control_flag
+				random_country = {
+					country_event = {
+						id = gaxalf.5
+						days = 1
+					}
+				}
+				random_country = {
+					limit = {
+						any_owned_province = {
+							OR = {
+								region = north_xalia_region
+								region = moxon_region
+								area = glazia_area
+							}
+						}
+					}
+					country_event = {
+						id = gaxalf.7
+						days = 1
+					}
+				}
+			}
+			else = {
+				set_global_flag = rastrayvar_control_flag
+			}
+			every_country = {
+				limit = {
+					any_owned_province = {
+						OR = {
+							region = north_xalia_region
+							region = moxon_region
+							area = glazia_area
+						}
+					}
+				}
+				country_event = {
+					id = gaxalf.6
+				}
+			}
+		}
+	}
+
+	option = {
+		name = gaxalf.4.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+#Rastrayvar control 2
+country_event = {
+	id = gaxalf.5
+	title = gaxalf.5.t
+	desc = gaxalf.5.d
+	picture = FAMINE_eventPicture
+	hidden = yes
+	is_triggered_only = yes
+
+	immediate = {
+		set_global_flag = rastrayvar_control_flag
+	}
+
+	option = {
+		name = gaxalf.5.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+#Actual rastrayvar event
+country_event = {
+	id = gaxalf.6
+	title = gaxalf.6.t
+	desc = gaxalf.6.d
+	picture = FAMINE_eventPicture
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					OR = {
+						region = north_xalia_region
+						region = moxon_region
+						area = glazia_area
+					}
+				}
+				add_devastation	= 25
+				cancel_construction = yes
+			}
+		}
+	}
+
+	option = {
+		name = gaxalf.6.a
+		ai_chance = { factor = 1 }
+		every_owned_province = {
+			limit = {
+				OR = {
+					region = north_xalia_region
+					region = moxon_region
+					area = glazia_area
+				}
+			}
+			add_province_modifier = {
+				name = rastrayvar_recovery_province_modifier
+				duration = 1825
+			}
+		}
+		add_stability = -1
+	}
+}
+
+#Actual rastrayvar event
+country_event = {
+	id = gaxalf.7
+	title = gaxalf.7.t
+	desc = gaxalf.7.d
+	picture = FAMINE_eventPicture
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = gaxalf.7.a
+		ai_chance = { factor = 1 }
 	}
 }

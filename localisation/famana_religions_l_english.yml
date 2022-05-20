@@ -523,6 +523,18 @@
 
  ordic:0 "Ordic"
  ordic_religion_desc:0 "The Ordic faith is a collection of ancient barbarian traditions and beliefs. With the conversion of the major Ordic kingdoms to the Lathvy faith, it is a dying religion."
+ ordic_blessings:0 "Ordic Blessings"
+ pick_ordic_blessing:0 "Pick Ordic Blessing"
+ ordic_blessing_1:0 "Holy Sacrifice"
+ ordic_blessing_2:0 "Expanding the Tribe"
+ ordic_blessing_3:0 "Embrace Mysticism"
+ ordic_blessing_4:0 "Integrate Lathvy Beliefs"
+ ordic_blessing_5:0 "Employ Sea Raiders"
+ HOLY_SITE_5725_DESC:0 "Nabrosia is the homeland of the eastern Ordics. While it has since been transformed into a hive of heathens, it is highly sacred in the Ordic faith."
+ HOLY_SITE_6176_DESC:0 "Ceanio is the place where the western Ordic tribes made their last stand against the Hasian Horde."
+ HOLY_SITE_6189_DESC:0 "Dothia was once the center of the Ordic religion. Now, it is out of our grasp."
+ HOLY_SITE_6356_DESC:0 "Brimelon has long been an important meeting place for the Ordics. Many ancient heroes lay buried here."
+ HOLY_SITE_5709_DESC:0 "It is said that the legendary Ordic god Heksada first descended to Famana in Borbor."
 
  ordic_rebels_demand:0 "Convert $COUNTRYNAME$"
  ordic_rebels_demand_desc:0 "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."

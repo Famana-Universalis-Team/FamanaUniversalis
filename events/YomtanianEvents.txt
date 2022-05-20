@@ -32,9 +32,8 @@ country_event = {
     is_triggered_only = yes
 	picture = BORDER_TENSION_eventPicture
 
-	option = {
-		name = yomtanian.2.a
-		set_country_flag = ravaged
+	immediate = {
+		hidden_effect = {
 		if = {
 			limit = {
 				OR = {
@@ -119,96 +118,192 @@ country_event = {
 				duration = 3650
 			}
 		}
+		}
+	}
+
+	option = {
+		name = yomtanian.2.a
+		set_country_flag = ravaged
+		if = {
+			limit = {
+				OR = {
+					tag = VAN
+					tag = SIX
+					tag = GLT
+					tag = KOM
+					tag = ELW
+					tag = OKU
+					tag = RSH
+					tag = PEX
+				}
+			}
+			tooltip = {
+				add_country_modifier = {
+					name = yom_invasion_1
+					duration = 3650
+				}
+			}
+		}
+		if = {
+			limit = {
+				OR = {
+					tag = OSS
+					tag = NUT
+					tag = ROP
+					tag = UMZ
+					tag = PXA
+					tag = VAV
+					tag = TYD
+					tag = INI
+					tag = GHA
+					tag = YAB
+					tag = XOF
+					tag = AME
+					tag = VNS
+					tag = ELP
+					tag = XON
+					tag = VOX
+					tag = PYA
+					tag = REL
+					tag = CLL
+					tag = GTS
+					tag = ZEA
+					tag = ASR
+					tag = VAX
+					tag = DYR
+					tag = FNC
+				}
+			}
+			tooltip = {
+				add_country_modifier = {
+					name = yom_invasion_2
+					duration = 3650
+				}
+			}
+		}
+		if = {
+			limit = {
+				OR = {
+					tag = TCK
+					tag = KIN
+					tag = KAP
+					tag = SKT
+					tag = AGX
+					tag = NKM
+					tag = DEL
+					tag = GDA
+					tag = ZAK
+					tag = JKK
+					tag = HZR
+					tag = RTK
+					tag = ELK
+					tag = MKK
+					tag = ELQ
+					tag = UNS
+					tag = MRL
+					tag = HIT
+					tag = DRA
+					tag = NPT
+					tag = RMX
+				}
+			}
+			tooltip = {
+				add_country_modifier = {
+					name = yom_invasion_3
+					duration = 3650
+				}
+			}
+		}
 	}
 }
 
 #Damage launcher
-country_event = {
-    id = yomtanian.3
-    title = yomtanian.3.t
-    picture = IMPALED_SOLDIERS_eventPicture
-    desc = yomtanian.3.d
-    fire_only_once = yes
-    hidden = yes
-
-    trigger = {
-        tag = AGX
-    }
-
-    mean_time_to_happen = {
-		days = 1
-	}
-
-    immediate = {
-        hidden_effect = {
-            every_country = {
-                limit = {
-                    OR = {
-                        tag = VAN
-			            tag = SIX
-			            tag = GLT
-			            tag = KOM
-			            tag = ELW
-			            tag = OKU
-			            tag = RSH
-			            tag = PEX
-			            tag = OSS
-			            tag = NUT
-			            tag = ROP
-			            tag = UMZ
-			            tag = PXA
-			            tag = VAV
-			            tag = TYD
-			            tag = INI
-			            tag = GHA
-			            tag = YAB
-			            tag = XOF
-			            tag = AME
-			            tag = VNS
-			            tag = ELP
-			            tag = XON
-			            tag = VOX
-			            tag = PYA
-			            tag = REL
-			            tag = CLL
-			            tag = GTS
-			            tag = ZEA
-			            tag = ASR
-			            tag = VAX
-			            tag = DYR
-			            tag = FNC
-			            tag = TCK
-			            tag = KIN
-			            tag = KAP
-			            tag = SKT
-			            tag = AGX
-			            tag = NKM
-			            tag = DEL
-			            tag = GDA
-			            tag = ZAK
-			            tag = JKK
-			            tag = HZR
-			            tag = RTK
-			            tag = ELK
-			            tag = MKK
-			            tag = ELQ
-			            tag = UNS
-			            tag = MRL
-			            tag = HIT
-			            tag = DRA
-			            tag = NPT
-			            tag = RMX
-                    }
-                }
-                country_event = { 
-                    id = yomtanian.2
-                }
-            }
-        }
-    }
-
-	option = {
-		name = yomtanian.3.a
-		ai_chance = { factor = 1 }
-	}
-}
+#country_event = {
+#    id = yomtanian.3
+#    title = yomtanian.3.t
+#    picture = IMPALED_SOLDIERS_eventPicture
+#    desc = yomtanian.3.d
+#    fire_only_once = yes
+#    hidden = yes
+#
+#    trigger = {
+#        tag = AGX
+#    }
+#
+#    mean_time_to_happen = {
+#		days = 1
+#	}
+#
+#    immediate = {
+#        hidden_effect = {
+#            every_country = {
+#                limit = {
+#                    OR = {
+#                        tag = VAN
+#			            tag = SIX
+#			            tag = GLT
+#			            tag = KOM
+#			            tag = ELW
+#			            tag = OKU
+#			            tag = RSH
+#			            tag = PEX
+#			            tag = OSS
+#			            tag = NUT
+#			            tag = ROP
+#			            tag = UMZ
+#			            tag = PXA
+#			            tag = VAV
+#			            tag = TYD
+#			            tag = INI
+#			            tag = GHA
+#			            tag = YAB
+#			            tag = XOF
+#			            tag = AME
+#			            tag = VNS
+#			            tag = ELP
+#			            tag = XON
+#			            tag = VOX
+#			            tag = PYA
+#			            tag = REL
+#			            tag = CLL
+#			            tag = GTS
+#			            tag = ZEA
+#			            tag = ASR
+#			            tag = VAX
+#			            tag = DYR
+#			            tag = FNC
+#			            tag = TCK
+#			            tag = KIN
+#			            tag = KAP
+#			            tag = SKT
+#			            tag = AGX
+#			            tag = NKM
+#			            tag = DEL
+#			            tag = GDA
+#			            tag = ZAK
+#			            tag = JKK
+#			            tag = HZR
+#			            tag = RTK
+#			            tag = ELK
+#			            tag = MKK
+#			            tag = ELQ
+#			            tag = UNS
+#			            tag = MRL
+#			            tag = HIT
+#			            tag = DRA
+#			            tag = NPT
+#			            tag = RMX
+#                   }
+#                }
+#                country_event = { 
+#                    id = yomtanian.2
+#                }
+#            }
+#        }
+#    }
+#
+#	option = {
+#		name = yomtanian.3.a
+#		ai_chance = { factor = 1 }
+#	}
+#}

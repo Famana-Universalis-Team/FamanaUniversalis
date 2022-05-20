@@ -105,7 +105,7 @@ Ordic_ideas = {
 		mercenary_manpower = 0.50
 	}
 	Ordic_fujja = {
-		development_cost = -0.10
+		prestige_from_land = 0.50
 	}
 	Ordic_volatile = {
 		core_creation = -0.10
@@ -454,6 +454,7 @@ naravami_ideas = {
     }
     narv_maritime_voyages = {
         naval_forcelimit_modifier = 0.2
+		may_perform_slave_raid = yes
     }
     narv_invaders_of_vamanya = {
        loot_amount = 0.10

@@ -34,7 +34,7 @@ spriteTypes = {
 		loadType = "INGAME"
 	}
 	
-### Zoroastrina Holy sites ###
+### Zoroastrian Holy sites ###
 	
 		spriteType = {
 		name = "GFX_holy_site_4430"
@@ -90,5 +90,37 @@ spriteTypes = {
 		name = "GFX_holy_site_5163"
 		texturefile = "gfx//interface//holy_sites//antioch.dds"
 		loadType = "INGAME"
+	}
+
+### Ordic Holy Sites ###
+
+	spriteType = { #Nabrosia
+		name = "GFX_holy_site_5725"
+		texturefile = "gfx//interface//famana_holy_sites//nabrosia.dds"
+		loadType = "INGAME"
+	}
+	
+		spriteType = { #Ceanio
+		name = "GFX_holy_site_6176"
+		texturefile = "gfx//interface//famana_holy_sites//ceanio.dds"
+		loadType = "INGAME"
+	}
+	
+		spriteType = { #Dothia
+		name = "GFX_holy_site_6189"
+		texturefile = "gfx//interface//famana_holy_sites//dothia.dds"
+		loadType = "INGAME"
+	}
+	
+		spriteType = { #Brimelon
+		name = "GFX_holy_site_6356"
+		texturefile = "gfx//interface//famana_holy_sites//brimelon.dds"
+		loadType = "INGAME"
+	}
+	
+	spriteType = { #Borbor
+	name = "GFX_holy_site_5709"
+	texturefile = "gfx//interface//famana_holy_sites//borbor.dds"
+	loadType = "INGAME"
 	}
 }

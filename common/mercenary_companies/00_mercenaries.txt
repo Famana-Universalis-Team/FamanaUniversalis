@@ -871,3 +871,116 @@ merc_untrar_battalion = {
 		movement_speed = -0.20
 	}
 }
+
+# Borturi Barbarians
+merc_borturi_barbarians = {
+    regiments_per_development = 0.05
+	cavalry_weight = 0.4
+    home_province = 6181 #Somewhere in bortur
+	sprites = { westerngfx_sprite_pack }
+	trigger = {
+		OR = {
+			any_owned_province = {
+				region = west_ordica_region
+			}
+			any_owned_province = {
+				region = napora_region
+			}
+			any_owned_province = {
+				region = vordor_region
+			}
+			any_owned_province = {
+				region = porlodya_region
+			}
+		}
+	}
+	modifier = {
+		reinforce_speed = 0.10
+	}
+}
+
+# Thalmorian Company
+merc_thalmorian_company = {
+    regiments_per_development = 0.03
+	cavalry_weight = 0.4
+	cost_modifier = 1.6
+    home_province = 5116 #Thalmor
+	sprites = { muslimgfx_sprite_pack }
+	trigger = {
+		5116 = {
+			culture = Thalmorian
+		}
+		OR = {
+			tag = THA
+			NOT = {
+				exists = THA
+			}
+		}
+		OR = {
+			any_owned_province = {
+				region = maky_region
+			}
+			any_owned_province = {
+				region = arlentan_area
+			}
+		}
+	}
+	modifier = {
+		shock_damage = 0.35
+	}
+}
+
+# Irfan Pirates
+merc_irfan_pirates = {
+    regiments_per_development = 0.05
+    home_province = 5889 #irfa
+	cavalry_weight = 0
+	sprites = { westerngfx_sprite_pack }
+    trigger = {
+		5889 = {
+			owned_by = IRF
+		}
+		OR = {
+			any_owned_province = {
+				region = nheomyr_region
+			}
+			any_owned_province = {
+				region = vanoma_region
+			}
+			any_owned_province = {
+				area = bizugu_area
+			}
+			any_owned_province = {
+				area = area_232
+			}
+			any_owned_province = {
+				area = irfa_area
+			}
+		}
+	}
+}
+
+# Warriors of the Spirit
+merc_spirit_warriors = {
+    regiments_per_development = 0.05
+	cavalry_weight = 0.4
+	cost_modifier = 0.8
+    home_province = 5842 #Nozumol
+	sprites = { asianfx_sprite_pack }
+	trigger = {
+		5842 = {
+			religion = washoom
+		}
+		OR = {
+			any_owned_province = {
+				region = nheomyr_region
+			}
+			any_owned_province = {
+				region = nozumol_region
+			}
+		}
+	}
+	modifier = {
+		infantry_power = 0.10
+	}
+}

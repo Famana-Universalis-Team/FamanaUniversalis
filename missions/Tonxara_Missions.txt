@@ -29,6 +29,11 @@ tonxara_1 = {
 			if = {
 				limit = {
 					tag = NHM
+					OR = {
+						exists = HOY
+						exists = KSL
+						exists = JFX
+					}
 				}
 				custom_trigger_tooltip = {
 					tooltip = nhm_defeat_tt
@@ -51,6 +56,11 @@ tonxara_1 = {
 			if = {
 				limit = {
 					tag = HOY
+					OR = {
+						exists = NHM
+						exists = KSL
+						exists = JFX
+					}
 				}
 				custom_trigger_tooltip = {
 					tooltip = hoy_defeat_tt
@@ -73,6 +83,11 @@ tonxara_1 = {
 			if = {
 				limit = {
 					tag = KSL
+					OR = {
+						exists = HOY
+						exists = NHM
+						exists = JFX
+					}
 				}
 				custom_trigger_tooltip = {
 					tooltip = ksl_defeat_tt
@@ -95,6 +110,11 @@ tonxara_1 = {
 			if = {
 				limit = {
 					tag = JFX
+					OR = {
+						exists = HOY
+						exists = KSL
+						exists = NHM
+					}
 				}
 				custom_trigger_tooltip = {
 					tooltip = jfx_defeat_tt

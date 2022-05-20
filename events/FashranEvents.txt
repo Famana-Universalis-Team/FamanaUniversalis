@@ -1197,52 +1197,10 @@ country_event = {
         ai_chance = { factor = 0 }
         custom_tooltip = fashros_kisholi_real
         hidden_effect = {
-            restore_country_name = yes
-            release = KSL
-            switch_tag = KSL
-            FAS = {
-                release_all_subjects = yes
-                release = HOY
-                release = JFX
-                release = NHM
+            1 = {
+                cede_province = FAS
             }
-            every_province = {
-                limit = {
-                    OR = {
-                        is_core = FAS
-                        is_claim = FAS
-                    }
-                    NOT = {
-                        owned_by = FAS
-                    }
-                }
-                remove_core = FAS
-                remove_claim = FAS
-            }
-            KSL = {
-                add_manpower = -1000
-                add_sailors	= -1000
-                add_government_reform = gov_tonxara
-            }
-            NHM = {
-                add_manpower = -1000
-                add_sailors	= -1000
-                add_government_reform = gov_tonxara
-            }
-            HOY = {
-                add_manpower = -1000
-                add_sailors	= -1000
-                add_government_reform = gov_tonxara
-            }
-            JFX = {
-                add_manpower = -1000
-                add_sailors	= -1000
-                add_government_reform = gov_tonxara
-            }
-            change_graphical_culture = easterngfx
-            jasua_superregion = { add_permanent_claim = KSL }
-            ga_xal_superregion = { add_permanent_claim = JFX }
-            tonmo_supperregion = { add_permanent_claim = NHM }
+            country_event = { id = fashros.26 }
         }
         if = {
             limit = {
@@ -1266,51 +1224,10 @@ country_event = {
         ai_chance = { factor = 0 }
         custom_tooltip = fashros_jafxoi_real
         hidden_effect = {
-            restore_country_name = yes
-            release = JFX
-            switch_tag = JFX
-            FAS = {
-                release_all_subjects = yes
-                release = KSL
-                release = HOY
-                release = NHM
+            1 = {
+                cede_province = FAS
             }
-            every_province = {
-                limit = {
-                    OR = {
-                        is_core = FAS
-                        is_claim = FAS
-                    }
-                    NOT = {
-                        owned_by = FAS
-                    }
-                }
-                remove_core = FAS
-                remove_claim = FAS
-            }
-            KSL = {
-                add_manpower = -1000
-                add_sailors	= -1000
-                add_government_reform = gov_tonxara
-            }
-            NHM = {
-                add_manpower = -1000
-                add_sailors	= -1000
-                add_government_reform = gov_tonxara
-            }
-            HOY = {
-                add_manpower = -1000
-                add_sailors	= -1000
-                add_government_reform = gov_tonxara
-            }
-            JFX = {
-                add_manpower = -1000
-                add_sailors	= -1000
-                add_government_reform = gov_tonxara
-            }
-            jasua_superregion = { add_permanent_claim = KSL }
-            ga_xal_superregion = { add_permanent_claim = JFX }
-            tonmo_supperregion = { add_permanent_claim = NHM }
+            country_event = { id = fashros.27 }
         }
         if = {
             limit = {
@@ -1334,51 +1251,10 @@ country_event = {
         ai_chance = { factor = 0 }
         custom_tooltip = fashros_nhoma_real
         hidden_effect = {
-            restore_country_name = yes
-            release = NHM
-            switch_tag = NHM
-            FAS = {
-                release_all_subjects = yes
-                release = KSL
-                release = JFX
-                release = HOY
+            1 = {
+                cede_province = FAS
             }
-            every_province = {
-                limit = {
-                    OR = {
-                        is_core = FAS
-                        is_claim = FAS
-                    }
-                    NOT = {
-                        owned_by = FAS
-                    }
-                }
-                remove_core = FAS
-                remove_claim = FAS
-            }
-            KSL = {
-                add_manpower = -1000
-                add_sailors	= -1000
-                add_government_reform = gov_tonxara
-            }
-            NHM = {
-                add_manpower = -1000
-                add_sailors	= -1000
-                add_government_reform = gov_tonxara
-            }
-            HOY = {
-                add_manpower = -1000
-                add_sailors	= -1000
-                add_government_reform = gov_tonxara
-            }
-            JFX = {
-                add_manpower = -1000
-                add_sailors	= -1000
-                add_government_reform = gov_tonxara
-            }
-            jasua_superregion = { add_permanent_claim = KSL }
-            ga_xal_superregion = { add_permanent_claim = JFX }
-            tonmo_supperregion = { add_permanent_claim = NHM }
+            country_event = { id = fashros.28 }
         }
         if = {
             limit = {
@@ -1402,51 +1278,10 @@ country_event = {
         ai_chance = { factor = 0 }
         custom_tooltip = fashros_hoyros_real
         hidden_effect = {
-            restore_country_name = yes
-            release = HOY
-            switch_tag = HOY
-            FAS = {
-                release_all_subjects = yes
-                release = KSL
-                release = JFX
-                release = NHM
+            1 = {
+                cede_province = FAS
             }
-            every_province = {
-                limit = {
-                    OR = {
-                        is_core = FAS
-                        is_claim = FAS
-                    }
-                    NOT = {
-                        owned_by = FAS
-                    }
-                }
-                remove_core = FAS
-                remove_claim = FAS
-            }
-            KSL = {
-                add_manpower = -1000
-                add_sailors	= -1000
-                add_government_reform = gov_tonxara
-            }
-            NHM = {
-                add_manpower = -1000
-                add_sailors	= -1000
-                add_government_reform = gov_tonxara
-            }
-            HOY = {
-                add_manpower = -1000
-                add_sailors	= -1000
-                add_government_reform = gov_tonxara
-            }
-            JFX = {
-                add_manpower = -1000
-                add_sailors	= -1000
-                add_government_reform = gov_tonxara
-            }
-            jasua_superregion = { add_permanent_claim = KSL }
-            ga_xal_superregion = { add_permanent_claim = JFX }
-            tonmo_supperregion = { add_permanent_claim = NHM }
+            country_event = { id = fashros.29 }
         }
         if = {
             limit = {
@@ -2388,6 +2223,311 @@ country_event = { #AI event to annex nozumol
         toza_area = {
             limit = { owned_by = NOZ }
             cede_province = FAS
+        }
+    }
+}
+
+country_event = { #Kisholi
+    id = fashros.26
+    title = fashros.26.t
+    desc = fashros.26.d
+    picture = INVENTION_eventPicture
+	hidden = yes
+    is_triggered_only = yes
+
+    immediate = {
+        hidden_effect = {
+            restore_country_name = yes
+            release = KSL
+            switch_tag = KSL
+            FAS = {
+                release_all_subjects = yes
+                release = HOY
+                release = JFX
+                release = NHM
+            }
+            every_province = {
+                limit = {
+                    OR = {
+                        is_core = FAS
+                        is_claim = FAS
+                    }
+                    NOT = {
+                        owned_by = FAS
+                    }
+                }
+                remove_core = FAS
+                remove_claim = FAS
+            }
+            KSL = {
+                add_manpower = -1000
+                add_sailors	= -1000
+                add_government_reform = gov_tonxara
+            }
+            NHM = {
+                add_manpower = -1000
+                add_sailors	= -1000
+                add_government_reform = gov_tonxara
+            }
+            HOY = {
+                add_manpower = -1000
+                add_sailors	= -1000
+                add_government_reform = gov_tonxara
+            }
+            JFX = {
+                add_manpower = -1000
+                add_sailors	= -1000
+                add_government_reform = gov_tonxara
+            }
+            change_graphical_culture = easterngfx
+            jasua_superregion = { add_permanent_claim = KSL }
+            ga_xal_superregion = { add_permanent_claim = JFX }
+            tonmo_supperregion = { add_permanent_claim = NHM }
+            country_event = {
+                id = fashros.30
+                days = 1
+            }
+        }
+    }
+
+    option = { 
+        name = fashros.26.a
+        ai_chance = {
+            factor = 1
+        }
+    }
+}
+
+country_event = { #Jafxoi
+    id = fashros.27
+    title = fashros.27.t
+    desc = fashros.27.d
+    picture = INVENTION_eventPicture
+	hidden = yes
+    is_triggered_only = yes
+
+    immediate = {
+        hidden_effect = {
+            restore_country_name = yes
+            release = JFX
+            switch_tag = JFX
+            FAS = {
+                release_all_subjects = yes
+                release = KSL
+                release = HOY
+                release = NHM
+            }
+            every_province = {
+                limit = {
+                    OR = {
+                        is_core = FAS
+                        is_claim = FAS
+                    }
+                    NOT = {
+                        owned_by = FAS
+                    }
+                }
+                remove_core = FAS
+                remove_claim = FAS
+            }
+            KSL = {
+                add_manpower = -1000
+                add_sailors	= -1000
+                add_government_reform = gov_tonxara
+            }
+            NHM = {
+                add_manpower = -1000
+                add_sailors	= -1000
+                add_government_reform = gov_tonxara
+            }
+            HOY = {
+                add_manpower = -1000
+                add_sailors	= -1000
+                add_government_reform = gov_tonxara
+            }
+            JFX = {
+                add_manpower = -1000
+                add_sailors	= -1000
+                add_government_reform = gov_tonxara
+            }
+            jasua_superregion = { add_permanent_claim = KSL }
+            ga_xal_superregion = { add_permanent_claim = JFX }
+            tonmo_supperregion = { add_permanent_claim = NHM }
+            country_event = {
+                id = fashros.30
+                days = 1
+            }
+        }
+    }
+
+    option = { 
+        name = fashros.27.a
+        ai_chance = {
+            factor = 1
+        }
+    }
+}
+
+country_event = { #Nhoma
+    id = fashros.28
+    title = fashros.28.t
+    desc = fashros.28.d
+    picture = INVENTION_eventPicture
+	hidden = yes
+    is_triggered_only = yes
+
+    immediate = {
+        hidden_effect = {
+            restore_country_name = yes
+            release = NHM
+            switch_tag = NHM
+            FAS = {
+                release_all_subjects = yes
+                release = KSL
+                release = JFX
+                release = HOY
+            }
+            every_province = {
+                limit = {
+                    OR = {
+                        is_core = FAS
+                        is_claim = FAS
+                    }
+                    NOT = {
+                        owned_by = FAS
+                    }
+                }
+                remove_core = FAS
+                remove_claim = FAS
+            }
+            KSL = {
+                add_manpower = -1000
+                add_sailors	= -1000
+                add_government_reform = gov_tonxara
+            }
+            NHM = {
+                add_manpower = -1000
+                add_sailors	= -1000
+                add_government_reform = gov_tonxara
+            }
+            HOY = {
+                add_manpower = -1000
+                add_sailors	= -1000
+                add_government_reform = gov_tonxara
+            }
+            JFX = {
+                add_manpower = -1000
+                add_sailors	= -1000
+                add_government_reform = gov_tonxara
+            }
+            jasua_superregion = { add_permanent_claim = KSL }
+            ga_xal_superregion = { add_permanent_claim = JFX }
+            tonmo_supperregion = { add_permanent_claim = NHM }
+            country_event = {
+                id = fashros.30
+                days = 1
+            }
+        }
+    }
+
+    option = { 
+        name = fashros.28.a
+        ai_chance = {
+            factor = 1
+        }
+    }
+}
+
+country_event = { #Hoyros
+    id = fashros.29
+    title = fashros.29.t
+    desc = fashros.29.d
+    picture = INVENTION_eventPicture
+	hidden = yes
+    is_triggered_only = yes
+
+    immediate = {
+        hidden_effect = {
+            restore_country_name = yes
+            release = HOY
+            switch_tag = HOY
+            FAS = {
+                release_all_subjects = yes
+                release = KSL
+                release = JFX
+                release = NHM
+            }
+            every_province = {
+                limit = {
+                    OR = {
+                        is_core = FAS
+                        is_claim = FAS
+                    }
+                    NOT = {
+                        owned_by = FAS
+                    }
+                }
+                remove_core = FAS
+                remove_claim = FAS
+            }
+            KSL = {
+                add_manpower = -1000
+                add_sailors	= -1000
+                add_government_reform = gov_tonxara
+            }
+            NHM = {
+                add_manpower = -1000
+                add_sailors	= -1000
+                add_government_reform = gov_tonxara
+            }
+            HOY = {
+                add_manpower = -1000
+                add_sailors	= -1000
+                add_government_reform = gov_tonxara
+            }
+            JFX = {
+                add_manpower = -1000
+                add_sailors	= -1000
+                add_government_reform = gov_tonxara
+            }
+            jasua_superregion = { add_permanent_claim = KSL }
+            ga_xal_superregion = { add_permanent_claim = JFX }
+            tonmo_supperregion = { add_permanent_claim = NHM }
+            country_event = {
+                id = fashros.30
+                days = 1
+            }
+        }
+    }
+
+    option = { 
+        name = fashros.29.a
+        ai_chance = {
+            factor = 1
+        }
+    }
+}
+
+country_event = { #End
+    id = fashros.30
+    title = fashros.30.t
+    desc = fashros.30.d
+    picture = INVENTION_eventPicture
+	hidden = yes
+    is_triggered_only = yes
+
+    immediate = {
+        hidden_effect = {
+            1 = {
+                cede_province = ---
+            }
+        }
+    }
+
+    option = { 
+        name = fashros.30.a
+        ai_chance = {
+            factor = 1
         }
     }
 }

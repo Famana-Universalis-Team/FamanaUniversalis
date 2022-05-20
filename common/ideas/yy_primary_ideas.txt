@@ -521,12 +521,12 @@ DEL_ideas = {
 
 ARL_ideas = {
     start = {
-        legitimacy = 1
+        cavalry_power = 0.33
         land_forcelimit_modifier = 0.15
     }
     
     bonus = {
-        cavalry_power = 0.33
+		legitimacy = 1
     }
 
     trigger = {
