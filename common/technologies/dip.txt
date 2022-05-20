@@ -119,7 +119,7 @@ technology = { #Naval Ambitions
 	}
 	
 	naval_morale			= 0.3
-	range					= 115
+	range					= 35
 	impressment_offices 	= yes
 	naval_engagement_width = 10
 }
@@ -150,7 +150,7 @@ technology = { #Carracks & Caravel
 	}
 	
 	naval_maintenance		= 	0.1
-	range					=	50
+	range					=	35
 	
 	enable = carrack
 	enable = caravel
@@ -182,7 +182,7 @@ technology = { #Wharf
 		new_world_i = 0.15
 	}
 	
-	range					= 	100
+	range					= 	35
 
 	wharf = yes
 
@@ -246,7 +246,7 @@ technology = { #The Galleon
 	}
 	
 	naval_maintenance		= 	0.1
-	range					=	50
+	range					=	35
 	global_colonial_growth  = 	15
 	
 	enable = galleon
@@ -281,7 +281,7 @@ technology = { #Merchantman
 	}
 	
 	trade_range				=	20
-	range					=	50
+	range					=	35
 	
 	
 	trade_depot = yes 
@@ -321,7 +321,7 @@ technology = { #The War Galleon
 	}
 	
 	naval_maintenance		= 	0.1	
-	range					=	50
+	range					=	35
 	
 	drydock = yes 
 	
@@ -399,7 +399,7 @@ technology = { #Heavy Frigates
 	}
 	
 	global_colonial_growth  = 	25	
-	range					=	150
+	range					=	35
 	allow_client_states = yes		
 
 	
@@ -460,7 +460,7 @@ technology = { #The Eastindiaman
 		enlightenment = 0.15
 	}
 	
-	range					=	200
+	range					=	35
 	global_colonial_growth  = 	25
 	num_accepted_cultures = 1
 	
