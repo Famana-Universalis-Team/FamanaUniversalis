@@ -189,6 +189,21 @@ country_event = {
 						days = 1
 					}
 				}
+				random_country = {
+					limit = {
+						any_owned_province = {
+							OR = {
+								region = north_xalia_region
+								region = moxon_region
+								area = glazia_area
+							}
+						}
+					}
+					country_event = {
+						id = gaxalf.7
+						days = 1
+					}
+				}
 			}
 			else = {
 				set_global_flag = rastrayvar_control_flag
@@ -276,5 +291,20 @@ country_event = {
 			}
 		}
 		add_stability = -1
+	}
+}
+
+#Actual rastrayvar event
+country_event = {
+	id = gaxalf.7
+	title = gaxalf.7.t
+	desc = gaxalf.7.d
+	picture = FAMINE_eventPicture
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = gaxalf.7.a
+		ai_chance = { factor = 1 }
 	}
 }

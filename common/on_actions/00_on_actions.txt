@@ -2,6 +2,25 @@
 
 # country
 on_startup = {
+	emperor = {
+		save_global_event_target_as = Emperor
+	}
+	if = {
+		limit = {
+			is_emperor_of_china = yes
+		}
+		save_global_event_target_as = EmperorOfChina
+	}
+	if = {
+		limit = {
+			has_dlc = "Cradle of Civilization"
+			has_country_modifier = tur_janissary
+		}
+		remove_country_modifier = tur_janissary
+	}
+	initialize_schools_effect = yes #This is only used here but is used for readability of on_action file.
+
+	##################################################################### FAMANA SETUP
 	set_variable = {
 		which = desertTimer
 		value = 0
@@ -15,52 +34,6 @@ on_startup = {
 		value = religion
 		who = ROOT
 	}
-	emperor = {
-		save_global_event_target_as = Emperor
-	}
-	if = {
-		limit = {
-			is_emperor_of_china = yes
-		}
-		save_global_event_target_as = EmperorOfChina
-	}
-	if = {
-		limit = {
-			tag = GEP
-		}
-		add_country_modifier = {
-			name = gep_corrupt
-			duration = -1
-		}
-		add_country_modifier = {
-			name = gep_army
-			duration = -1
-		}
-		add_country_modifier = {
-			name = gep_decadence
-			duration = -1
-		}
-		add_country_modifier = {
-			name = gep_scheming
-			duration = -1
-		}
-		add_country_modifier = {
-			name = gep_isolated
-			duration = -1
-		}
-		add_country_modifier = {
-			name = gep_navy
-			duration = -1
-		}
-	}
-	if = {
-		limit = {
-			has_dlc = "Cradle of Civilization"
-			has_country_modifier = tur_janissary
-		}
-		remove_country_modifier = tur_janissary
-	}
-	initialize_schools_effect = yes #This is only used here but is used for readability of on_action file.
 	if = {
 		limit = {
 			ai = no
@@ -133,6 +106,44 @@ on_startup = {
             id = yomtanian.2
         }
 	}
+	if = {
+		limit = {
+			tag = GEP
+		}
+		add_country_modifier = {
+			name = gep_corrupt
+			duration = -1
+		}
+		add_country_modifier = {
+			name = gep_army
+			duration = -1
+		}
+		add_country_modifier = {
+			name = gep_decadence
+			duration = -1
+		}
+		add_country_modifier = {
+			name = gep_scheming
+			duration = -1
+		}
+		add_country_modifier = {
+			name = gep_isolated
+			duration = -1
+		}
+		add_country_modifier = {
+			name = gep_navy
+			duration = -1
+		}
+	}
+	if = {
+		limit = {
+			tag = TLB
+		}
+		country_event = {
+			id = tomba.1
+		}
+	}
+	##################################################################### FAMANA SETUP
 }
 
 # country

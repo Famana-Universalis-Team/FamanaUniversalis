@@ -8,9 +8,7 @@ country_event = {
 	picture = MILITARY_CAMP_eventPicture
 	fire_only_once = yes
 
-	trigger = {
-		tag = TLB
-	}
+	is_triggered_only = yes
 
 	option = {
 		name = tomba.1.a

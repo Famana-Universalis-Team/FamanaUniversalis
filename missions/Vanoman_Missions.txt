@@ -34,6 +34,45 @@ van_1 = {
         }
         effect = {
             add_adm_tech = 1
+            add_country_modifier = {
+                name = van_tech_modifier
+                duration = -1
+            }
+        }
+    }
+
+    van_colonize_borlebin = {
+        icon = mission_recruit_the_cossacks
+        required_missions = { van_technological_advantage }
+        trigger = {
+            prestige = 25
+            owns_core_province = 5730
+            5729 = {
+                is_empty = yes
+            }
+            5617 = {
+                is_empty = yes
+            }
+            5727 = {
+                is_empty = yes
+            }
+            5627 = {
+                is_empty = yes
+            }
+        }
+        effect = {
+            borlebim_area = {
+                cede_province = ROOT
+                add_core = ROOT
+                change_culture = ROOT
+                change_religion	= ROOT
+            }
+        }
+        provinces_to_highlight = {
+            OR = {
+				area = borlebim_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
     }
 }

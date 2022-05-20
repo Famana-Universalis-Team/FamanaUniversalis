@@ -763,3 +763,9 @@ rejected_lathvy = {
     tolerance_heathen = -3
     stability_cost_modifier = 0.20
 }
+
+van_tech_modifier = {
+    innovativeness_gain = 0.5
+    free_adm_policy = 1
+    embracement_cost = -0.10
+}
