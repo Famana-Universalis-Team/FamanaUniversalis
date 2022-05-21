@@ -1,0 +1,20 @@
+diocese_reform = {
+	potential = {
+		tag = PCP
+		tag = PPX
+		tag = PTG
+		tag = PLM
+		tag = PLY
+		tag = PHL
+		tag = PJS
+	}
+	allow_normal_conversion = no
+	legacy_equivalent = theocratic_government
+	icon = "holy_state_reform"
+	valid_for_nation_designer = no
+	modifiers = {
+		tolerance_own = 2
+		prestige_decay = 0.02
+	}
+}
+

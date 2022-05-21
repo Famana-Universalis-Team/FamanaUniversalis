@@ -1914,7 +1914,7 @@ country_decisions = {
 			add_prestige = 10
 			if = {
 				limit = {
-					tag=PLM
+					tag = PLM
 				}
 				change_tag = LOM
 				every_province = {
