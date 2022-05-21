@@ -34,7 +34,7 @@ country_event = {
 				NOT = { religion_group = lathvy_group }
 			}
 		}
-		picture = PAINTER_ARTIST_eventPicture
+		picture = MUSLIM_SCHOLAR_WRITING_eventPicture
 	}
 	
 	picture = {
@@ -42,7 +42,7 @@ country_event = {
 			has_dlc = "Cradle of Civilization"
 			religion_group = lathvy_group
 		}
-		picture = MUSLIM_SCHOLAR_WRITING_eventPicture
+		picture = ST_PETERS_CHURCH_eventPicture
 	}
 	
 	is_triggered_only = yes
@@ -115,7 +115,7 @@ country_event = {
 				NOT = { religion_group = muslim }
 			}
 		}
-		picture = PAINTER_ARTIST_eventPicture
+		picture = ST_PETERS_CHURCH_eventPicture
 	}
 	picture = {
 		trigger = {
@@ -189,69 +189,9 @@ country_event = {
 country_event = {
 	id = institution_events.3
 	title = institution_events.3.t
-	picture = EXPLORERS_eventPicture
-	
-	desc = {
-		trigger = {
-			capital_scope = { continent = asia }
-			religion = confucianism
-		}
-		desc = institution_events.3.dc
-	}
-	
-	desc = {
-		trigger = {
-			capital_scope = { continent = asia }
-			OR = {
-				is_subject_of_type = daimyo_vassal
-				tag = JAP
-				has_reform = shogunate
-			}
-		}
-		desc = institution_events.3.djap1
-	}
-	
-	desc = {
-		trigger = {
-			capital_scope = { continent = asia }
-			OR = {
-				has_reform = indep_daimyo
-				AND = {
-					capital_scope = { region = japan_region }
-					NOT = { 
-						OR = {
-							tag = JAP
-							has_reform = shogunate
-						}
-					}
-					is_subject = no
-				}
-			}
-		}
-		desc = institution_events.3.djap2
-	}
-	
-	desc = {
-		trigger = {
-			capital_scope = { continent = asia }
-		}
-		desc = institution_events.3.da
-	}
-	
-	desc = {
-		trigger = {
-			capital_scope = { continent = oceania }
-			primary_culture = polynesian
-		}
-		desc = institution_events.3.dpoly
-	}
+	picture = TRADE_GOODS_FURS_FISH_AND_SALT_eventPicture
 
-	desc = {
-		trigger = {
-			capital_scope = { NOT = { continent = asia } }
-		}
-		desc = institution_events.3.d
-	}
+	desc = institution_events.3.d
 	
 	is_triggered_only = yes
 
@@ -315,70 +255,10 @@ country_event = {
 country_event = {
 	id = institution_events.300
 	title = institution_events.3.t
-	
-	desc = {
-		trigger = { FROM = { 
-			capital_scope = { continent = asia }
-			religion = confucianism
-		} }
-		desc = institution_events.3.dc
-	}
-	
-	desc = {
-		trigger = { FROM = {
-			capital_scope = { continent = asia }
-			OR = {
-				is_subject_of_type = daimyo_vassal
-				tag = JAP
-				has_reform = shogunate
-			}
-		} }
-		desc = institution_events.3.djap1
-	}
-	
-	desc = {
-		trigger = { FROM = {
-			capital_scope = { continent = asia }
-			OR = {
-				has_reform = indep_daimyo
-				AND = {
-					capital_scope = { region = japan_region }
-					NOT = { 
-						OR = {
-							tag = JAP
-							has_reform = shogunate
-						}
-					}
-					is_subject = no
-				}
-			}
-		} }
-		desc = institution_events.3.djap2
-	}
-	
-	desc = {
-		trigger = { FROM = {
-			capital_scope = { continent = asia }
-		} }
-		desc = institution_events.3.da
-	}
-	
-	desc = {
-		trigger = { FROM = {
-			capital_scope = { continent = oceania }
-			primary_culture = polynesian
-		} }
-		desc = institution_events.3.dpoly
-	}
 
-	desc = {
-		trigger = { FROM = {
-			capital_scope = { NOT = { continent = asia } }
-		} } 
-		desc = institution_events.300.d
-	}
+	desc = institution_events.300.d
 	
-	picture = EXPLORERS_eventPicture
+	picture = TRADE_GOODS_FURS_FISH_AND_SALT_eventPicture
 
 	is_triggered_only = yes
 
@@ -425,7 +305,7 @@ country_event = {
 #######################################
 #######################################
 #######################################
-# Printing Press
+# Edolyssa / Printing Press
 #######################################
 #######################################
 #######################################
@@ -434,14 +314,7 @@ country_event = {
 	title = institution_events.4.t
 	desc = institution_events.4.d
 	
-	picture = {
-		trigger = { NOT = { has_dlc = "Rights of Man" } }
-		picture = BIG_BOOK_eventPicture
-	}
-	picture = {
-		trigger = { has_dlc = "Rights of Man" }
-		picture = PRINTING_PRESS_eventPicture
-	}
+	picture = BIG_BOOK_eventPicture
 
 	is_triggered_only = yes
 
@@ -557,14 +430,7 @@ country_event = {
 	id = institution_events.400
 	title = institution_events.4.t
 	desc = institution_events.400.d
-	picture = {
-		trigger = { NOT = { has_dlc = "Rights of Man" } }
-		picture = BIG_BOOK_eventPicture
-	}
-	picture = {
-		trigger = { has_dlc = "Rights of Man" }
-		picture = PRINTING_PRESS_eventPicture
-	}
+	picture = BIG_BOOK_eventPicture
 
 	is_triggered_only = yes
 
@@ -1569,14 +1435,7 @@ country_event = {
 	id = institution_events.20
 	title = institution_events.20.t
 	
-	picture = {
-		trigger = { NOT = { has_dlc = "Rights of Man" } }
-		picture = COLONIZATION_eventPicture
-	}
-	picture = {
-		trigger = { has_dlc = "Rights of Man" }
-		picture = GLOBAL_TRADE_eventPicture
-	}
+	picture = TRADE_GOODS_FURS_FISH_AND_SALT_eventPicture
 	
 	desc = {
 		trigger = {

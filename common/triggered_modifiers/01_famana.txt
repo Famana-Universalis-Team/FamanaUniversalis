@@ -70,14 +70,11 @@ yomtanian_nation = {
         culture_group = Yomtanian
     }
     
-    technology_cost = 0.15
-    land_forcelimit_modifier = -0.35
-    shock_damage = 0.50
-    shock_damage_received = -0.25
-    fire_damage_received = 0.20
+    technology_cost = 0.10
+    infantry_power = 0.50
     cavalry_power = -1.00
-    artillery_power = -0.50
-    reinforce_speed = -0.33
+    reinforce_speed = -0.20
+    infantry_cost = 0.50
 }
 
 tonmo_reformed_modifier = {
