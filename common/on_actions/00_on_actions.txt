@@ -34,117 +34,18 @@ on_startup = {
 		value = religion
 		who = ROOT
 	}
-	if = {
-		limit = {
-			is_year = 212
-			ai = no
-		}
-		country_event = {
-			id = yomtanian.1
-			days = 1
-		}
-	}
-	if = {
-		limit = {
-			is_year = 212
-            OR = {
-				tag = VAN
-	            tag = SIX
-	            tag = GLT
-	            tag = KOM
-	            tag = ELW
-	            tag = OKU
-	            tag = RSH
-	            tag = PEX
-	            tag = OSS
-	            tag = NUT
-	            tag = ROP
-	            tag = UMZ
-	            tag = PXA
-	            tag = VAV
-	            tag = TYD
-	            tag = INI
-	            tag = GHA
-	            tag = YAB
-	            tag = XOF
-	            tag = AME
-	            tag = VNS
-	            tag = ELP
-	            tag = XON
-	            tag = VOX
-	            tag = PYA
-	            tag = REL
-	            tag = CLL
-	            tag = GTS
-	            tag = ZEA
-	            tag = ASR
-	            tag = VAX
-	            tag = DYR
-	            tag = FNC
-	            tag = TCK
-	            tag = KIN
-	            tag = KAP
-	            tag = SKT
-	            tag = AGX
-	            tag = NKM
-	            tag = DEL
-	            tag = GDA
-	            tag = ZAK
-	            tag = JKK
-	            tag = HZR
-	            tag = RTK
-	            tag = ELK
-	            tag = MKK
-	            tag = ELQ
-	            tag = UNS
-	            tag = MRL
-	            tag = HIT
-	            tag = DRA
-	            tag = NPT
-	            tag = RMX
-            }
-        }
-        country_event = { 
-            id = yomtanian.2
-        }
-	}
-	if = {
-		limit = {
-			is_year = 212
-			tag = GEP
-		}
-		add_country_modifier = {
-			name = gep_corrupt
-			duration = -1
-		}
-		add_country_modifier = {
-			name = gep_army
-			duration = -1
-		}
-		add_country_modifier = {
-			name = gep_decadence
-			duration = -1
-		}
-		add_country_modifier = {
-			name = gep_scheming
-			duration = -1
-		}
-		add_country_modifier = {
-			name = gep_isolated
-			duration = -1
-		}
-		add_country_modifier = {
-			name = gep_navy
-			duration = -1
-		}
-	}
-	if = {
-		limit = {
-			tag = TLB
-		}
-		country_event = {
-			id = tomba.1
-		}
+	events = {
+		#Yomtanian War Damage
+		yomtanian.2
+
+		#Yomtanian Historical/Ahistorical
+		yomtanian.1
+
+		#Deleting Tomba (Should be removed eventually)
+		tomba.1
+
+		#Geopyopia
+		geop.1
 	}
 	##################################################################### FAMANA SETUP
 }

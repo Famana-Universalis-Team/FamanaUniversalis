@@ -10,6 +10,11 @@ country_event = {
     major = yes
     is_triggered_only = yes
 
+	trigger = {
+		NOT = { is_year = 213 }
+		ai = no
+	}
+
 	option = {
 		name = yomtanian.1.a
 		ai_chance = { factor = 1 }
@@ -31,6 +36,66 @@ country_event = {
     desc = yomtanian.2.d
     is_triggered_only = yes
 	picture = BORDER_TENSION_eventPicture
+
+	trigger = {
+		NOT = { is_year = 213 }
+		OR = {
+			tag = VAN
+			tag = SIX
+			tag = GLT
+			tag = KOM
+			tag = ELW
+			tag = OKU
+			tag = RSH
+			tag = PEX
+			tag = OSS
+			tag = NUT
+			tag = ROP
+			tag = UMZ
+			tag = PXA
+			tag = VAV
+			tag = TYD
+			tag = INI
+			tag = GHA
+			tag = YAB
+			tag = XOF
+			tag = AME
+			tag = VNS
+			tag = ELP
+			tag = XON
+			tag = VOX
+			tag = PYA
+			tag = REL
+			tag = CLL
+			tag = GTS
+			tag = ZEA
+			tag = ASR
+			tag = VAX
+			tag = DYR
+			tag = FNC
+			tag = TCK
+			tag = KIN
+			tag = KAP
+			tag = SKT
+			tag = AGX
+			tag = NKM
+			tag = DEL
+			tag = GDA
+			tag = ZAK
+			tag = JKK
+			tag = HZR
+			tag = RTK
+			tag = ELK
+			tag = MKK
+			tag = ELQ
+			tag = UNS
+			tag = MRL
+			tag = HIT
+			tag = DRA
+			tag = NPT
+			tag = RMX
+		}
+	}
 
 	immediate = {
 		hidden_effect = {
