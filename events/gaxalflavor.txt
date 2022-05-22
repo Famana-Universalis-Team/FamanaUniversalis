@@ -116,15 +116,13 @@ country_event = {
 	picture = RELIGIOUS_TURMOIL_eventPicture
 
 	trigger = {
-		AND = {
-			is_year = 230
-			NOT = {
-				is_year = 245
-			}
-			religion = shirian
-			NOT = {
-				has_country_flag = has_had_rastrayvarism
-			}
+		is_year = 230
+		NOT = {
+			is_year = 245
+		}
+		religion = shirian
+		NOT = {
+			has_country_flag = has_had_rastrayvarism
 		}
 	}
 	mean_time_to_happen = {
@@ -163,17 +161,14 @@ country_event = {
 	hidden = yes
 
 	trigger = {
-		OR = {
-			had_global_flag	= {
-				flag = rastrayvar_control_flag
-				days = 1825
-			}
-			is_year = 217
+		had_global_flag	= {
+			flag = rastrayvar_control_flag
+			days = 1825
 		}
 	}
 
 	mean_time_to_happen = {
-		months = 1000
+		months = 1020
 	}
 
 	immediate = {
