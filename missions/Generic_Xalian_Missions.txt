@@ -12,7 +12,7 @@ xalian_religious_missions = {
 		trigger = {
             AND = {
                 religion_group = xalian_group
-                religious_unity	= 0.80
+                religious_unity	= 0.75
                 num_of_active_blessings	= 4
                 owns_core_province = 5388
                 owns_core_province = 5458
@@ -24,6 +24,10 @@ xalian_religious_missions = {
 			add_country_modifier = {
 				name = united_the_xalian_faith
                 duration = -1
+			}
+			custom_tooltip = united_xal_tt
+			hidden_effect = {
+				set_global_flag = united_xalian_faith_flag
 			}
 		}
 		provinces_to_highlight = {

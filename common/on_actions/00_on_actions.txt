@@ -34,6 +34,14 @@ on_startup = {
 		value = religion
 		who = ROOT
 	}
+	if = {
+		limit = {
+			NOT = {
+				is_year = 213
+			}
+		}
+		set_global_flag = rastrayvar_control_flag
+	}
 	events = {
 		#Yomtanian War Damage
 		yomtanian.2

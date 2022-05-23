@@ -411,8 +411,8 @@ del_ximal = {
 }
 
 famana_debug_convert = {
-    global_missionary_strength = 10.0
-    missionaries = 100
+    global_missionary_strength = 100.0
+    missionaries = 1000
 }
 
 rule_of_the_bamals = {

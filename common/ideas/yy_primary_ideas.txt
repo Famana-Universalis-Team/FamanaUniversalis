@@ -721,3 +721,44 @@ FSB_ideas = {
 		army_tradition = 1
 	}
 }
+
+Kachik_ideas = {
+	start = {
+		shock_damage = 0.10
+		idea_cost = -0.05		
+	}
+	
+	bonus = {
+		merchants = 1
+	}
+
+	trigger = {
+		primary_culture = Kachik
+	}
+	free = yes
+	
+	Kachik_1 = {
+		hostile_attrition = 1
+	}
+	Kachik_2 = {
+		movement_speed = 0.10
+	}
+	Kachik_3 = {
+		gold_depletion_chance_modifier = -0.75
+		global_tax_modifier	= 0.05
+	}
+	Kachik_4 = {
+		cav_to_inf_ratio = 0.25
+		defensiveness = 0.05
+	}
+	Kachik_5 = {
+		global_regiment_cost = -0.10
+	}
+	Kachik_6 = {
+		development_cost = -0.10
+		monarch_lifespan = 0.25
+	}
+	Kachik_7 = {
+		vassal_income = 0.25
+	}
+}

@@ -49,6 +49,9 @@ province_event = { #Random coastal xalian provinces / provinces adjacent to lath
 	goto = root
 
     trigger = {
+		NOT = {
+			has_global_flag = united_xalian_faith_flag
+		}
 		owner = {
 			NOT = {
 				has_country_modifier = recent_lathvy_province
@@ -84,6 +87,14 @@ province_event = { #Random coastal xalian provinces / provinces adjacent to lath
 		}
 		NOT = {
 			is_capital = yes
+		}
+		NOT = {
+			OR = {
+				province_id = 5388
+				province_id = 5458
+				province_id = 5411
+				province_id = 5163
+			}
 		}
 	}
     mean_time_to_happen = {
