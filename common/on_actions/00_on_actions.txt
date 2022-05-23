@@ -46,6 +46,7 @@ on_startup = {
 
 		#Geopyopia
 		geop.1
+	}
 	##################################################################### FAMANA SETUP
 }
 
@@ -1409,12 +1410,12 @@ on_mandate_of_heaven_gained = {
 			add_core = root
 		}
 	}
-	china_superregion = {
-		limit = {
-			NOT = { is_core = ROOT }
-		}
-		add_permanent_claim = ROOT
-	}
+	#china_superregion = {
+	#	limit = {
+	#		NOT = { is_core = ROOT }
+	#	}
+	#	add_permanent_claim = ROOT
+	#}
 	if = {
 		limit = {
 			has_dlc = "Mandate of Heaven"
@@ -1453,12 +1454,12 @@ on_mandate_of_heaven_lost = {
 		duration = 7300	# 20 years
 	}
 	add_stability = -2
-	china_superregion = {
-		limit = {
-			is_permanent_claim = ROOT
-		}
-		remove_claim = ROOT
-	}
+	#china_superregion = {
+	#	limit = {
+	#		is_permanent_claim = ROOT
+	#	}
+	#	remove_claim = ROOT
+	#}
 	if = {
 		limit = {
 			has_country_modifier = new_mandate_holder
