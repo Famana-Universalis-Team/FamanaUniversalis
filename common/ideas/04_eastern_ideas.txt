@@ -1,12 +1,12 @@
 
 GEP_ideas = {
     start = {
-        global_missionary_strength = 0.02
+        trade_goods_size_modifier = 0.10
         global_tax_modifier = 0.10
     }
 
     bonus = {
-        trade_goods_size_modifier = 0.10
+        global_missionary_strength = 0.02
     }
 
     trigger = {
@@ -26,7 +26,7 @@ GEP_ideas = {
         war_exhaustion = -0.05
     }
     gep_mountain_tactics = {
-        infantry_power = 0.20
+        infantry_power = 0.10
         hostile_attrition = 1
     }
     gep_the_teachings_of_haromiam_gastoor = {
@@ -61,10 +61,8 @@ FAS_ideas = {
     fas_spread_the_word = {
         missionaries = 1
     }
-    fas_servants_of_the_clouds = {
-        legitimacy = 1
-        devotion = 1
-        horde_unity = 1
+    fas_vanoman_artillery = {
+        siege_ability = 0.20
     }
     fas_steppe_road_monopoly = {
         global_prov_trade_power_modifier = 0.1
@@ -72,11 +70,13 @@ FAS_ideas = {
     fas_fashran_recruitment = {
         manpower_recovery_speed = 0.20
     }
+    fas_servants_of_the_clouds = {
+        legitimacy = 1
+        devotion = 1
+        horde_unity = 1
+    }
     fas_jasuan_architecture = {
         build_cost = -0.10
-    }
-    fas_vanoman_artillery = {
-        siege_ability = 0.20
     }
 }
 

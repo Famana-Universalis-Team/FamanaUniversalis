@@ -10,6 +10,9 @@ theocracy_mechanic = {
 	can_customise_heir = no
 	basic_reform = yes # = invisible/does not take up a slot
 	valid_for_nation_designer = no
+	custom_attributes = {
+		enables_divine_idea_group = yes
+	}
 
 	modifiers = {
 		brahmins_hindu_influence_modifier = 0.1
@@ -508,6 +511,7 @@ theocratic_democracy_reform = {
 		has_parliament = yes
 		custom_attributes = {
 			blocked_call_diet = yes
+			enables_divine_idea_group = yes
 		}
 	}
 	ai = {

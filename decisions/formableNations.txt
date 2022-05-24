@@ -459,6 +459,7 @@ country_decisions = {
 				}
 				add_permanent_claim = OPP
 			}
+			add_government_reform = oppian_empire_gov
 			add_country_modifier = {
 				name = "centralization_modifier"
 				duration = 7300
@@ -1302,18 +1303,6 @@ country_decisions = {
 				}
 				add_permanent_claim = MOX
 			}
-			kachik_area = {
-				limit = {
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = MOX
-			}
-			bohora_area = {
-				limit = {
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = MOX
-			}
 			add_prestige = 25
 		}
 		ai_will_do = {
@@ -1917,13 +1906,20 @@ country_decisions = {
 					tag = PLM
 				}
 				change_tag = LOM
-				every_province = {
+			}
+			hidden_effect = {
+				if = {
 					limit = {
-						is_core = PLM
+						tag = PLM
 					}
-					add_core = LOM
-					remove_core = PLM
-					remove_claim = PLM
+					every_province = {
+						limit = {
+							is_core = PLM
+						}
+						add_core = LOM
+						remove_core = PLM
+						remove_claim = PLM
+					}
 				}
 			}
 			if = {

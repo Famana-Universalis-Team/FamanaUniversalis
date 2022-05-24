@@ -227,6 +227,30 @@ gov_emmi = {
 	}
 }
 
+gov_anmoean_council_name = {
+	rank = {
+		1 = ANM_COUNCIL
+		2 = ANM_GRAND_COUNCIL
+		3 = ANM_GREAT_COUNCIL
+	}
+
+	ruler_male = {
+		1 = ANM_MAGISTRATE
+		2 = ANM_MAGISTRATE
+		3 = ANM_MAGISTRATE
+	}
+
+	ruler_female = {
+		1 = ANM_MAGISTRATE
+		2 = ANM_MAGISTRATE
+		3 = ANM_MAGISTRATE
+	}
+
+	trigger = {
+		has_reform = anmoean_council
+	}
+}
+
 anarchy = {
 	rank = {
 		1 = ANARCHY

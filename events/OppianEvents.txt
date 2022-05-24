@@ -396,7 +396,7 @@ country_event = {
 	}
 }
 
-#fenikia
+#feniki
 country_event = {
 	id = oppia.8
 	title = oppia.8.t
@@ -479,6 +479,7 @@ country_event = {
 		ai_chance = { factor = 1 }
 		change_religion = lathvy
 		change_primary_culture = Feniki
+		add_accepted_culture = Laglan
 		custom_tooltip = FENIKI_CONVERSION
 		set_global_flag = fenikiconvert
 		add_country_modifier = {

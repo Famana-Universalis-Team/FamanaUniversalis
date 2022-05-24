@@ -1,12 +1,14 @@
 diocese_reform = {
 	potential = {
-		tag = PCP
-		tag = PPX
-		tag = PTG
-		tag = PLM
-		tag = PLY
-		tag = PHL
-		tag = PJS
+		OR = {
+			tag = PCP
+			tag = PPX
+			tag = PTG
+			tag = PLM
+			tag = PLY
+			tag = PHL
+			tag = PJS
+		}
 	}
 	allow_normal_conversion = no
 	legacy_equivalent = theocratic_government
@@ -16,5 +18,91 @@ diocese_reform = {
 		tolerance_own = 2
 		prestige_decay = 0.02
 	}
+	custom_attributes = {
+		enables_divine_idea_group = yes
+	}
 }
 
+holy_monarchy_reform = {
+	icon = "pextoglazia"
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	legacy_equivalent = theocratic_government
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	modifiers = {
+		global_missionary_strength = 0.01
+		governing_capacity_modifier = -0.1
+		church_influence_modifier = 0.2
+		church_loyalty_modifier = 0.05
+		nobles_loyalty_modifier = 0.05
+	}
+	queen = yes
+	royal_marriage = yes
+	potential = {
+		tag = PEX
+		NOT = { has_country_flag = pextocivilwar }
+		NOT = { has_country_flag = lathvy_empire_flag }
+	}
+	custom_attributes = {
+		locked_government_type = yes
+		enables_divine_idea_group = yes
+	}
+	fixed_rank = 2
+}
+
+holy_monarchy_reform_2 = {
+	icon = "pextoglazia"
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	legacy_equivalent = theocratic_government
+	valid_for_nation_designer = no
+	nation_designer_cost = 0
+	modifiers = {
+		global_missionary_strength = 0.01
+		governing_capacity_modifier = -0.1
+		church_influence_modifier = 0.2
+		church_loyalty_modifier = 0.05
+		nobles_loyalty_modifier = 0.05
+	}
+	queen = yes
+	royal_marriage = yes
+	potential = {
+		tag = PEX
+		has_country_flag = lathvy_empire_flag
+		NOT = { has_country_flag = pextocivilwar }
+	}
+	custom_attributes = {
+		locked_government_type = yes
+		enables_divine_idea_group = yes
+	}
+	fixed_rank = 3
+}
+
+corrupt_monarchy_reform = {
+	icon = "shatteredpextoglazia"
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	legacy_equivalent = theocratic_government
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	modifiers = {
+		governing_capacity_modifier = -0.2
+		church_loyalty_modifier = -0.20
+		nobles_loyalty_modifier = -0.20
+		global_manpower_modifier = -0.33
+		land_morale = -0.15
+		tolerance_own = -1
+	}
+	queen = yes
+	royal_marriage = yes
+	potential = {
+		tag = PEX
+		has_country_flag = pextocivilwar
+	}
+	custom_attributes = {
+		locked_government_type = yes
+		enables_divine_idea_group = yes
+	}
+	fixed_rank = 2
+}
