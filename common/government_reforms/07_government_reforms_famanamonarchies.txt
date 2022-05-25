@@ -115,15 +115,15 @@ tomban_reform = {
 	nation_designer_cost = 0
 	modifiers = {
 		infantry_power = 0.10
-		land_morale = 0.10
 		fabricate_claims_cost = 0.50
+		ae_impact = 0.25
 	}
 	queen = yes
 	royal_marriage = yes
 	potential = {
-		culture_group = Toman
+		culture_group = Toman_C
 		NOT = {
-			tag = TLB
+			has_subject_of_type	= tomban_state
 		}
 	}
 	custom_attributes = {

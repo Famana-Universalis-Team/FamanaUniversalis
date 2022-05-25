@@ -4,6 +4,11 @@ discovered_by = north_gomic_tech_gr
 #Almuz
 culture = Mirrisan 
 religion = animism
+
+add_core = RHJ
+owner = RHJ
+controller = RHJ
+
 hre = no
 base_tax = 2
 base_production = 1
@@ -11,9 +16,8 @@ base_manpower = 1
 native_size = 30
 native_ferocity = 1
 native_hostileness = 1
-capital = "UNNAMED"
+capital = "Tlokec"
 is_city = no
 extra_cost = 1
-tribal_owner = NBE
 
 discovered_by = estal_tribal_tech_gr

@@ -499,9 +499,11 @@ was_never_end_game_tag_trigger = {	#Country Scope
 		NOT = { end_game_tags_blocked = yes }
 		AND = {
 			NOT = { was_tag = MKY }
-			NOT = { tag = VDY }
-			NOT = { was_tag = VDY }
 			NOT = { tag = MKY }
+			NOT = { was_tag = MSD }
+			NOT = { tag = MSD }
+			NOT = { was_tag = VDY }
+			NOT = { tag = VDY }
 			NOT = { was_tag = OPP }
 			NOT = { tag = OPP }
 			NOT = { was_tag = PEX }

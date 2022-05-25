@@ -512,3 +512,43 @@ Ravsho_ideas = {
 		warscore_cost_vs_other_religion = -0.15
     }
 }
+
+Maldan_ideas = {
+    start = {
+        advisor_pool = 1
+		shock_damage_received = -0.10
+    }
+
+    bonus = {
+        years_of_nationalism = -5
+    }
+
+    trigger = {
+        culture_group = Maldik
+    }
+    free = yes
+
+    Maldan_1 = {
+		monarch_admin_power = 1
+    }
+    Maldan_2 = {
+        merchants = 1
+		global_colonial_growth = 25
+    }
+    Maldan_3 = {
+        free_leader_pool = 1
+    }
+    Maldan_4 = {
+		reinforce_speed = 0.10
+    }
+    Maldan_5 = {
+        tolerance_heretic = 3
+		tolerance_heathen = 2
+    }
+    Maldan_6 = {
+		stability_cost_modifier = -0.1
+    }
+    Maldan_7 = {
+		num_accepted_cultures = 2
+    }
+}

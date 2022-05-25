@@ -12,6 +12,16 @@ country_event = {
 
     trigger = {
         NOT = { is_year = 213 }
+		NOT = {
+			OR = {
+				has_country_modifier = gep_corrupt
+				has_country_modifier = gep_army
+				has_country_modifier = gep_decadence
+				has_country_modifier = gep_scheming
+				has_country_modifier = gep_isolated
+				has_country_modifier = gep_navy
+			}
+		}
         tag = GEP
     }
 

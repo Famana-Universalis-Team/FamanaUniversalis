@@ -1003,7 +1003,10 @@ MKY_ideas = {
 	}	
 
 	trigger = {
-		tag = MKY
+		OR = {
+			tag = MKY
+			tag = MSD
+		}
 	}
 	free = yes
 	
@@ -1027,6 +1030,7 @@ MKY_ideas = {
 	}
 	mky_united = {
 		monthly_fervor_increase = 1
+		tolerance_own = 1
 	}
 	mky_bread = {
 		production_efficiency = 0.10
@@ -2265,5 +2269,43 @@ EST_ideas = {
     }
     est_marksmen = {
 		fire_damage = 0.10
+    }
+}
+
+ZEA_ideas = {
+    start = {
+        cb_on_religious_enemies	= yes
+		ae_impact = -0.10
+    }
+    
+    bonus = {
+        free_mil_policy = 1
+    }
+
+    trigger = {
+        tag = ZEA
+    }
+    free = yes
+    
+    zea_1 = {
+		core_creation = -0.1
+    }
+    zea_2 = {
+		global_missionary_strength = 0.02
+    }
+    zea_3 = {
+        land_morale = 0.10
+    }
+    zea_4 = {
+        prestige = 1
+    }
+    zea_5 = {
+		church_loyalty_modifier = 0.05
+    }
+    zea_6 = {
+		years_of_nationalism = -5
+    }
+    zea_7 = {
+		spy_offence = 0.1
     }
 }

@@ -83,21 +83,21 @@ country_event = {
 	
 	is_triggered_only = yes
   
-   option = {
-	ai_chance = { factor = 75 }
-        name = nhoma.3.a
+	option = {
+		ai_chance = { factor = 3 }
+        name = nhoma.3.b
         NHE = {
-		inherit = YBM
+		    inherit = YBM
 		}
     }
 	option = {
-	ai_chance = { factor = 25 }
-       name = nhoma.3.a
-       NHE = {
-	   add_claim = 5860
-	   add_claim = 5871
-	   }
-    }
+		ai_chance = { factor = 1 }
+		name = nhoma.3.a
+    	NHE = {
+			add_claim = 5860
+			add_claim = 5871
+		}
+	}
 }
 
 # Koff 

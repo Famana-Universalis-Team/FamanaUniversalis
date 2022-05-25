@@ -3267,6 +3267,7 @@ country_decisions = {
 				duration = -1
 			}
 			change_tag = HRT
+			set_government_rank = 1
 			#if = {
 			#	limit = {
 			#		AND = {
@@ -3533,10 +3534,17 @@ country_decisions = {
 			}
 		}
 		effect = {
-			#if = {
-			#	limit = { has_custom_ideas = no }
-			#	country_event = { id = ideagroups.1 } #Swap Ideas
-			#}
+			if = {
+				limit = {
+					AND = {
+						has_custom_ideas = no
+						NOT = {
+							has_idea_group = Kachik_ideas
+						}
+					}
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
 			restore_country_name = yes
 			change_tag = KLG
 			country_event = {
@@ -3639,27 +3647,27 @@ country_decisions = {
 				add_permanent_claim = NHE
 			}
 			if = {
-					limit = {
-						BES = {
-							owns_core_province = 5871
-							owns_core_province = 5860
-							NOT = {
-								num_of_owned_provinces_with = {
+				limit = {
+					YBM = {
+						owns_core_province = 5871
+						owns_core_province = 5860
+						NOT = {
+							num_of_owned_provinces_with = {
 								value = 5
 								superregion = tonmo_supperregion
-								}
 							}
 						}
 					}
-					BES = {
-						country_event = { 
+				}
+				YBM = {
+					country_event = { 
 						id = nhoma.3
 						days = 1
-						}
 					}
-				}	
+				}
 			}
 		}
+	}
 
 	
 	form_nheomyr_militarily = {
@@ -3803,10 +3811,10 @@ country_decisions = {
 		allow = {
 			OR = {
 				NOT = {
-					exist = NPT
+					exists = NPT
 				}
 				NOT = {
-					exist = RMX
+					exists = RMX
 				}
 			}
 			adm_tech = 5
@@ -3949,12 +3957,16 @@ country_decisions = {
 				}
 				set_government_rank = 2
 			}
-			trigger = {
-				tag = RMX
+			if = {
+				limit = {
+					tag = RMX
+				}
 				inherit = NPT
 			}
-			trigger = {
-				tag = NPT
+			if = {
+				limit = {
+					tag = NPT
+				}
 				inherit = RMX
 			}
 			change_tag = MNV
@@ -3998,6 +4010,115 @@ country_decisions = {
 				duration = 7300
 			}
 			add_prestige = 25
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	bava_nation = {
+		major = yes
+		potential = {
+			culture_group = Makyna
+			owns = 5153
+			capital	= 5153
+			OR = {
+				religion = mak
+				religion = animism
+			}
+			NOT = { exists = BVA }
+			was_never_end_game_tag_trigger = yes
+		}
+		allow = {
+			NOT = {
+				OR = {
+					has_reform = apocalyptic_helvania_reform
+					has_reform = city_state_union_reform
+					has_reform = survivor_reform
+				}
+			}
+			5153 = {
+				num_of_times_improved_by_owner = 20
+			}
+			full_idea_group	= maritime_ideas
+			num_of_galley = 15
+			owns_core_province = 5153
+			OR = {
+				owns_core_province = 5154
+				owns_core_province = 5152
+			}
+			NOT = {
+				num_of_cities = 10
+			}
+		}
+		effect = {
+			restore_country_name = yes
+			change_tag = BVA
+			change_primary_culture = Bavan
+			if = {
+				limit = {
+					primary_culture = Makyan_C
+				}
+				add_accepted_culture = Makyan_C
+			}
+			5153 = {
+				change_culture = Bavan
+			}
+			if = {
+				limit = {
+					owns = 5154
+				}
+				5154 = {
+					change_culture = Bavan
+				}
+			}
+			if = {
+				limit = {
+					owns = 5152
+				}
+				5152 = {
+					change_culture = Bavan
+				}
+			}
+			if = {
+				limit = {
+					AND = {
+						has_custom_ideas = no
+						NOT = {
+							has_idea_group = BVA_ideas
+						}
+					}
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
+			bava_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = BVA
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 5153
+				province_id = 5154
+				province_id = 5152
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				is_city = no
+			}
 		}
 		ai_will_do = {
 			factor = 1
