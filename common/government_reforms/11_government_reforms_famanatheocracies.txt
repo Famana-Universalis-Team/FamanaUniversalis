@@ -1,7 +1,7 @@
 diocese_reform = {
 	potential = {
 		OR = {
-			tag = PCP
+			tag = PCG
 			tag = PPX
 			tag = PTG
 			tag = PLM
@@ -19,8 +19,10 @@ diocese_reform = {
 		prestige_decay = 0.02
 	}
 	custom_attributes = {
+		locked_government_type = yes
 		enables_divine_idea_group = yes
 	}
+	fixed_rank = 1
 }
 
 holy_monarchy_reform = {
