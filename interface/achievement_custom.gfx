@@ -1,0 +1,7 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_background_achievement"
+		texturefile = "gfx//interface//eventinterfaces//event_interfaces.dds"
+		loadType = "INGAME"
+	}
+}

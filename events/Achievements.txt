@@ -1,0 +1,14 @@
+namespace = achievement
+
+country_event = {
+	id = achievement.1
+	title = achievement.1.t
+	desc = achievement.1.d
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = achievement.1.a
+		ai_chance = { factor = 1 }
+	}
+}
