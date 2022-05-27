@@ -19,9 +19,9 @@ estate_church_kachik_religious_rights = {
 			culture = Kachik
 		}
 	}
-	mechanics = {
-		enables_cossack_regiments
-	}
+	#mechanics = {
+	#	enables_cossack_regiments
+	#}
 	on_granted = {
 		set_country_flag = kachikreligiousrights
 		custom_tooltip = kachik_religious_rights_tip

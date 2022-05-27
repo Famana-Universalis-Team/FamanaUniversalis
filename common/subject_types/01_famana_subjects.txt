@@ -50,8 +50,9 @@ tomban_state = {
 diocese = {
 	copy_from = default
 
-	diplomacy_overlord_sprite = GFX_diplomacy_leadclients
-	diplomacy_subject_sprite = GFX_diplomacy_areclients
+	sprite = GFX_diocese_icon
+	diplomacy_overlord_sprite = GFX_diplomacy_leaddiocese
+	diplomacy_subject_sprite = GFX_diplomacy_amdiocese
 
 	is_potential_overlord = { always = no }
 

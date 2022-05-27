@@ -39,6 +39,6 @@ desert_tribe = {
 		diplomatic_upkeep = -4
 		global_tax_modifier = 0.30
 		cb_on_religious_enemies = yes
-		custom_tooltip = migrations_tooltip
+		#custom_tooltip = migrations_tooltip
 	}
 }
