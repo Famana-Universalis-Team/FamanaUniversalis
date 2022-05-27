@@ -243,7 +243,15 @@ defined_text = {
 			always = yes
 		}
 	}
+
+	text = {
+        localisation_key = string_start_title_fashros
+        trigger = {
+			tag = FAS
+		}
+    	}
 }
+
 
 ### Upper right description textbox
 #Ex: ""
