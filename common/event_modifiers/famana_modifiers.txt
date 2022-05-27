@@ -769,3 +769,8 @@ van_tech_modifier = {
     free_adm_policy = 1
     embracement_cost = -0.10
 }
+
+kap_pasban_trade = {
+    trade_steering = 0.15
+    global_own_trade_power = 0.1
+}

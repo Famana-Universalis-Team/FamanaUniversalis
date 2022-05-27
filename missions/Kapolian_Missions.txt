@@ -1,6 +1,30 @@
 
-kap_1 = {
+kap_1 = { #kinvirel - jasua region path
 	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		tag = KAP
+	}
+	has_country_shield = yes
+
+	kap_kinvirel_thing = {
+		icon = subiaco_press
+		required_missions = { }
+		
+		provinces_to_highlight = {
+		}
+		
+		trigger = {
+		}
+		effect = {
+		}
+    }
+}
+
+kap_3 = {
+	slot = 3
 	generic = no
     ai = yes
     potential = {
@@ -65,6 +89,9 @@ kap_1 = {
 				add_permanent_claim = ROOT
 			}
 			oearan_area  = {
+				add_permanent_claim = ROOT
+			}
+			pasba_area = {
 				add_permanent_claim = ROOT
 			}
 		}
@@ -159,7 +186,42 @@ kap_1 = {
 }
 
 kap_2 = {
-	slot = 5
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		tag = KAP
+	}
+	has_country_shield = yes
+
+	kap_seize_pasba = {
+		position = 3
+		icon = mission_hands_praying
+		required_missions = { kap_yatian_conquest }
+		provinces_to_highlight = {
+			area = pasba_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+            pasba_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+		    }
+        }
+		
+		effect = {
+			add_country_modifier = {
+				name = kap_pasban_trade
+				duration = 7300
+			}
+		}
+	}
+}
+
+kap_4 = {
+	slot = 4
 	generic = no
     ai = yes
     potential = {
@@ -169,8 +231,9 @@ kap_2 = {
     has_country_shield = yes
 	
 	kap_conquest_of_ghayola = {
+		position = 2
 		icon = mission_unite_the_deccan
-		required_missions = { }
+		required_missions = { kap_conquest_of_iaperko }
 		provinces_to_highlight = {
 			area = unnamed_area_33
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
@@ -258,6 +321,9 @@ kap_2 = {
 				add_permanent_claim = ROOT
 			}
 			yabonia_area = {
+				add_permanent_claim = ROOT
+			}
+			unnamed_area_35 = {
 				add_permanent_claim = ROOT
 			}
 			add_country_modifier = {

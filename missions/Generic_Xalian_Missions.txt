@@ -25,9 +25,14 @@ xalian_religious_missions = {
 				name = united_the_xalian_faith
                 duration = -1
 			}
-			custom_tooltip = united_xal_tt
-			hidden_effect = {
-				set_global_flag = united_xalian_faith_flag
+			if = {
+				limit = {
+					NOT = { has_global_flag = united_xalian_faith_flag }
+				}
+				custom_tooltip = united_xal_tt
+				hidden_effect = {
+					set_global_flag = united_xalian_faith_flag
+				}
 			}
 		}
 		provinces_to_highlight = {

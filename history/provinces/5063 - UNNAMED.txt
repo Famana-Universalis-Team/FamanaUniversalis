@@ -4,14 +4,15 @@ discovered_by = west_gomic_tech_gr
 #Written with Eu4 Easy Province Creator by emiroercn
 #UNNAMED
 add_core = TCK
+add_core = SAR
 owner = TCK
 controller = TCK
 culture = Quanexite
 religion = western_oppian
 hre = no
 
-base_tax = 6
-base_production = 5
+base_tax = 5
+base_production = 4
 trade_goods = wine
 base_manpower = 5
 capital = "Lesas"

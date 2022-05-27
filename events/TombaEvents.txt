@@ -18,11 +18,22 @@ country_event = {
 	option = {
 		name = tomba.1.a
 		ai_chance = { factor = 1 }
+		highlight = yes
 		every_province = {
 			limit = {
 				religion = tombasa
 			}
 			cede_province = ---
+		}
+	}
+
+	option = {
+		name = tomba.1.b
+		ai_chance = { factor = 0 }
+		trigger = {
+			NOT = {
+				ironman = yes
+			}
 		}
 	}
 }

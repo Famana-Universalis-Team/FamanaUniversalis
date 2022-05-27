@@ -165,6 +165,7 @@ country_event = {
 			flag = rastrayvar_control_flag
 			days = 1825
 		}
+		owns = 5377
 	}
 
 	mean_time_to_happen = {
@@ -255,7 +256,7 @@ country_event = {
 						area = glazia_area
 					}
 				}
-				add_devastation	= 25
+				add_devastation	= 15
 				cancel_construction = yes
 			}
 		}
