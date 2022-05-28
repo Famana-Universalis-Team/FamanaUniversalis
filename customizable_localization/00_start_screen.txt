@@ -235,15 +235,23 @@ defined_text = {
 					region = west_emastalia_regions
 				}
 			}
-        }
+        	}
     }
-	text = { #Fallback
+	text = {
+        localisation_key = string_start_tag_fashros
+        trigger = {
+			tag = FAS
+		}
+    }
+
+	text = {#Fallback
         localisation_key = string_start_tag_generic
 		trigger = {
 			always = yes
 		}
 	}
 }
+
 
 ### Upper right description textbox
 #Ex: ""
