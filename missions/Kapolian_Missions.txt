@@ -1,6 +1,6 @@
 
-kap_1 = { #kinvirel - jasua region path
-	slot = 1
+kap_4 = { #kinvirel - jasua region path
+	slot = 4
 	generic = no
 	ai = yes
 	potential = {
@@ -9,22 +9,257 @@ kap_1 = { #kinvirel - jasua region path
 	}
 	has_country_shield = yes
 
-	kap_kinvirel_thing = {
-		icon = subiaco_press
+	kap_fortify = {
+		position = 2
+		icon = mission_found_the_city_of_agra
 		required_missions = { }
 		
+		trigger = {
+			any_owned_province = {
+				OR = {
+					area = unnamed_area_32
+					area = unnamed_area_56
+				}
+				OR = {
+					has_building = fort_15th
+					has_building = fort_16th
+					has_building = fort_17th
+					has_building = fort_18th
+				}
+			}
+		}
+		effect = {
+			unnamed_area_31 = {
+				add_permanent_claim = ROOT
+			}
+			add_country_modifier = {
+				name = kap_kinvirel_invasion
+				duration = 3650
+			}
+		}
+    }
+	
+	kap_kinvirel_1 = {
+		icon = mission_conquer_mewar
+		required_missions = { kap_fortify }
+		
 		provinces_to_highlight = {
+			area = unnamed_area_31
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		
 		trigger = {
+			unnamed_area_31 = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
 		}
 		effect = {
+			unnamed_area_13 = {
+				add_permanent_claim = ROOT
+			}
+			kinvirel_area = {
+				add_permanent_claim = ROOT
+			}
+			5496 = {
+				add_permanent_claim = ROOT
+			}
+		}
+    }
+
+	kap_kinvirel_2 = {
+		icon = mission_conquer_arakan
+		required_missions = { kap_kinvirel_1 }
+		
+		provinces_to_highlight = {
+			OR = {
+				area = unnamed_area_13
+				area = kinvirel_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			unnamed_area_13 = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			kinvirel_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_treasury = 250
+			add_accepted_culture = West_Jasuan
+			add_country_modifier = {
+				name = kap_conquer_kinvirel_modifier
+				duration = -1
+			}
+		}
+    }
+
+	kap_yabonia_2 = {
+		icon = mission_conquer_rewakantha
+		required_missions = { kap_yabonia kap_kinvirel_2 }
+		position = 6
+		
+		provinces_to_highlight = {
+			OR = {
+				area = unnamed_area_49
+				area = unnamed_area_51
+				area = unnamed_area_50
+				area = geter_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			unnamed_area_49 = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			unnamed_area_51 = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			unnamed_area_50 = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			geter_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			unnamed_area_11 = {
+				add_permanent_claim = ROOT
+			}
+			unnamed_area_12 = {
+				add_permanent_claim = ROOT
+			}
+			shol_area = {
+				add_permanent_claim = ROOT
+			}
+			mahansha_area = {
+				add_permanent_claim = ROOT
+			}
+			if = {
+				limit = {
+					NOT = {
+						is_monarch_leader = yes
+					}
+				}
+				define_ruler_to_general	= {
+					fire = 3
+    				shock = 3
+    				manuever = 5
+    				siege = 2
+				}
+			}
 		}
     }
 }
 
-kap_3 = {
-	slot = 3
+kap_5 = { #kinvirel - jasua region path
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		tag = KAP
+	}
+	has_country_shield = yes
+
+	kap_nafa = {
+		position = 1
+		icon = subiaco_press
+		required_missions = {}
+		provinces_to_highlight = {
+			OR = {
+				area = bohora_area
+				area = kachik_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			OR = {
+				exists = NAF
+				AND = {
+					bohora_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					kachik_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					current_age	= age_of_reformation
+				}
+			}
+		}
+		effect = {
+			country_event = {
+				id = jasuaE.12
+				days = 30
+			}
+			if = {
+				limit = {
+					NOT = {
+						AND = {
+							bohora_area = {
+								type = all
+								country_or_non_sovereign_subject_holds = ROOT
+							}
+							kachik_area = {
+								type = all
+								country_or_non_sovereign_subject_holds = ROOT
+							}
+						}
+					}
+				}
+				bohora_area  = {
+					add_permanent_claim = ROOT
+				}
+				kachik_area  = {
+					add_permanent_claim = ROOT
+				}
+			}
+		}
+	}
+	
+	kap_hartimatul = {
+		position = 3
+		icon = reclaim_the_aegean
+		required_missions = { kap_fortify }
+		
+		provinces_to_highlight = {
+			province_id = 5496
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			5496 = {
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			5496 = {
+				add_trade_modifier = {
+					who = ROOT
+					duration = 9125
+					power = 80
+					key = KAP_MOXON_TROLLING
+				}
+			}
+		}
+    }
+}
+
+kap_2 = {
+	slot = 2
 	generic = no
     ai = yes
     potential = {
@@ -35,10 +270,10 @@ kap_3 = {
 	
 
 	kap_conquest_of_iaperko = {
-		icon = subiaco_press
+		icon = develop_konigsberg
 		required_missions = { }
 		
-		 provinces_to_highlight = {
+		provinces_to_highlight = {
 			province_id = 5503
 		}
 		
@@ -46,20 +281,20 @@ kap_3 = {
 			owns_core_province = 5503
 		}
 		effect = {
-			unnamed_area_40  = {
+			unnamed_area_40 = {
 				add_permanent_claim = ROOT
 			}
 			
-			yatia_area  = {
+			yatia_area = {
 				add_permanent_claim = ROOT
 			}
-			unnamed_area_33  = {
+			unnamed_area_33 = {
 				add_permanent_claim = ROOT
 			}
 		}
     }
 	kap_yatian_conquest = {
-		icon = subiaco_press
+		icon = claim_the_borderlands
 		required_missions = { kap_conquest_of_iaperko }
 		
 		provinces_to_highlight = {
@@ -88,7 +323,7 @@ kap_3 = {
 			nikat_area = {
 				add_permanent_claim = ROOT
 			}
-			oearan_area  = {
+			oearan_area = {
 				add_permanent_claim = ROOT
 			}
 			pasba_area = {
@@ -98,7 +333,7 @@ kap_3 = {
 	}
 
 	kap_verkan_nikat_conquest = {
-		icon = subiaco_press
+		icon = swiss_mercenaries
 		required_missions = { kap_yatian_conquest }
 		
 		provinces_to_highlight = {
@@ -136,7 +371,7 @@ kap_3 = {
 	}
 
 	kap_sack_of_arrol = {
-		icon = subiaco_press
+		icon = conquer_tuscany
 		required_missions = { kap_verkan_nikat_conquest}
 		
 		provinces_to_highlight = {
@@ -185,8 +420,8 @@ kap_3 = {
 	}
 }
 
-kap_2 = {
-	slot = 2
+kap_1 = {
+	slot = 1
 	generic = no
 	ai = yes
 	potential = {
@@ -197,7 +432,7 @@ kap_2 = {
 
 	kap_seize_pasba = {
 		position = 3
-		icon = mission_hands_praying
+		icon = mission_conquer_algiers
 		required_missions = { kap_yatian_conquest }
 		provinces_to_highlight = {
 			area = pasba_area
@@ -220,8 +455,8 @@ kap_2 = {
 	}
 }
 
-kap_4 = {
-	slot = 4
+kap_3 = {
+	slot = 3
 	generic = no
     ai = yes
     potential = {
@@ -260,7 +495,7 @@ kap_4 = {
 }
 
 	kap_the_frontier = {
-		icon = league_of_the_public_weal
+		icon = mission_into_persia_1
 		required_missions = { kap_conquest_of_ghayola }
 		provinces_to_highlight = {
 			OR = {
@@ -292,7 +527,7 @@ kap_4 = {
 	}
 	
 	kap_bamal_heartland = {
-		icon = league_of_the_public_weal
+		icon = dalmatian_conquest
 		required_missions = { kap_the_frontier }
 		provinces_to_highlight = {
 			OR = {
@@ -332,4 +567,51 @@ kap_4 = {
 			}
 		}
 	}
+	kap_yabonia = {
+		icon = mission_subdue_rajputana
+		required_missions = { kap_bamal_heartland }
+		
+		provinces_to_highlight = {
+			OR = {
+				area = unnamed_area_47
+				area = unnamed_area_48
+				area = yabonia_area
+				area = unnamed_area_35
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			unnamed_area_47 = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			unnamed_area_48 = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			yabonia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			unnamed_area_35 = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			unnamed_area_49 = {
+				add_permanent_claim = ROOT
+			}
+			unnamed_area_51 = {
+				add_permanent_claim = ROOT
+			}
+			unnamed_area_50 = {
+				add_permanent_claim = ROOT
+			}
+			geter_area = {
+				add_permanent_claim = ROOT
+			}
+		}
+    }
 }

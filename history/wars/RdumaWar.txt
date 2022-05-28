@@ -1,0 +1,24 @@
+name = "Rduma War"
+war_goal = {
+	type = take_claim
+	casus_belli = cb_conquest
+	province = 6655 #zubara
+}
+
+208.1.1 = {
+	add_attacker = RDU
+	add_defender = ZUB
+	add_defender = ORC
+	add_defender = MLD
+	add_defender = KLY
+	add_defender = VAN
+}
+
+209.1.1 = {
+	rem_attacker = RDU
+	rem_defender = ZUB
+	rem_defender = ORC
+	rem_defender = MLD
+	rem_defender = KLY
+	rem_defender = VAN
+}

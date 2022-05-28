@@ -2309,3 +2309,82 @@ ZEA_ideas = {
 		spy_offence = 0.1
     }
 }
+
+RNP_ideas = {
+    start = {
+        idea_cost = -0.10
+		infantry_cost = -0.20
+    }
+    
+    bonus = {
+        max_absolutism = 10
+    }
+
+    trigger = {
+        tag = RNP
+    }
+    free = yes
+    
+    rnp_1 = {
+		global_unrest = -2
+		harsh_treatment_cost = -0.25
+    }
+    rnp_2 = {
+		innovativeness_gain = 0.50
+    }
+    rnp_3 = {
+		war_taxes_cost_modifier = -0.50
+		war_exhaustion = -0.10
+    }
+    rnp_4 = {
+        merc_maintenance_modifier = -0.2
+    }
+    rnp_5 = {
+		advisor_cost = -0.10
+		prestige_decay = -0.01
+    }
+    rnp_6 = {
+		infantry_power = 0.10
+    }
+    rnp_7 = {
+		mercenary_manpower = 0.50
+    }
+}
+
+YFS_ideas = {
+    start = {
+		shock_damage = 0.10
+		leader_land_manuever = 1
+    }
+    
+    bonus = {
+		land_morale = 0.25
+    }
+
+    trigger = {
+        tag = YFS
+    }
+    free = yes
+    
+    yfs_1 = {
+		infantry_power = 0.10
+    }
+    yfs_2 = {
+		cavalry_power = 0.10
+    }
+    yfs_3 = {
+		global_manpower_modifier = 0.10
+    }
+    yfs_4 = {
+        leader_land_shock = 1
+    }
+    yfs_5 = {
+		fire_damage = 0.10
+    }
+    yfs_6 = {
+		siege_ability = 0.20
+    }
+    yfs_7 = {
+		discipline = 0.05
+    }
+}
