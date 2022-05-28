@@ -462,3 +462,39 @@ country_event = {
 		}
 	}
 }
+
+#Kapolia nafan thing
+country_event = {
+	id = jasuaE.12
+	title = jasuaE.12.t
+	desc = jasuaE.12.d
+	picture = POPE_PREACHING_eventPicture
+	fire_only_once = yes
+	is_triggered_only = yes
+
+
+	option = {
+		name = jasuaE.12.b
+		ai_chance = {
+			factor = 2
+		}
+		set_religious_school = {
+			group = lathvy_group
+			school = nafan_school
+		}
+	}
+	option = {
+		name = jasuaE.12.a
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				OR = {
+					is_rival = PEX
+					is_enemy = PEX
+				}
+			}
+		}
+		add_stability = 1
+	}
+}
