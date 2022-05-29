@@ -231,9 +231,9 @@ kap_5 = { #kinvirel - jasua region path
 	}
 	
 	kap_hartimatul = {
-		position = 3
+		position = 4
 		icon = reclaim_the_aegean
-		required_missions = { kap_fortify }
+		required_missions = { kap_kinvirel_1 }
 		
 		provinces_to_highlight = {
 			province_id = 5496
