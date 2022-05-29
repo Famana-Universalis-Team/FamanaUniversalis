@@ -1473,7 +1473,7 @@ country_event = {
         }
     }
 }
-
+#into ga xal
 country_event = {
     id = fashros.21
     title = fasros.21.t
@@ -1484,6 +1484,14 @@ country_event = {
     trigger = {
         is_year = 310
         tag = FAS
+		any_owned_province = {
+			OR = {
+				area = ropinver_area
+				area = hoxoi_area
+				area = hoxona_area
+				superregion = ga_xal_superregion
+			}
+		}
     }
     option = {
         name = fashros.21.a
