@@ -290,7 +290,7 @@ country_decisions = {
 				duration = 7300
 			}
 			add_prestige = 25
-			swap_non_generic_missions = yes
+			#swap_non_generic_missions = yes #fix this when they actually get added
 		}
 		ai_will_do = {
 			factor = 1
