@@ -43,6 +43,7 @@
  halosh:0 "Halosh"
  milk_road:0 "Milk Road"
  kurkar_node:0 "Sanctuary Lake"
+ venrol_node:0 "Venrol"
 
  #Trade Companies
  trade_company_umzat:0 "Umzatian Charter"
@@ -174,3 +175,6 @@
  trade_company_anmoea:0 "Anmoea Charter"
  TRADE_COMPANY_ANMOEA_Root_Culture_GetName:0 "[Root.Culture.GetName] Anmoea Company"
  TRADE_COMPANY_ANMOEA_Trade_Company:0 "Anmoea Company"
+ trade_company_venrol:0 "Gorfreki Charter"
+ TRADE_COMPANY_VENROL_Root_Culture_GetName:0 "[Root.Culture.GetName] Gorfreki Company"
+ TRADE_COMPANY_VENROL_Trade_Company:0 "Gorfreki Company"

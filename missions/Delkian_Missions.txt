@@ -1,5 +1,4 @@
 
-
 #Econmic Branch
 delkia_1 = {
 	slot = 1
@@ -13,9 +12,32 @@ delkia_1 = {
     }
     has_country_shield = yes
 	
+	del_pearl_of_delkia = {
+		icon = mission_central_asian_city
+		required_missions = { }
+		provinces_to_highlight = {
+			province_id = 5163
+		}
+		
+		trigger = {
+			owns_core_province = 5163
+			5163 = {
+				development = 28
+			}
+        }
+		effect = {
+			5163 = {
+				add_province_modifier = {
+				    name = del_ximal
+					duration = -1
+				}
+			}
+    	}
+	}
+
 	del_expand_the_cites = {
 		icon = promote_urbanization
-		required_missions = { }
+		required_missions = { del_pearl_of_delkia }
 		provinces_to_highlight = {
 			OR = {
 				province_id	= 5167
@@ -38,34 +60,11 @@ delkia_1 = {
 			}
         }
 	}
-	
-	del_pearl_of_delkia = {
-		icon = mission_central_asian_city
-		required_missions = { del_expand_the_cites }
-		provinces_to_highlight = {
-			province_id = 5163
-		}
-		
-		trigger = {
-			owns_core_province = 5163
-			5163 = {
-				development = 28
-			}
-        }
-		effect = {
-			5163 = {
-				add_province_modifier = {
-				    name = del_ximal
-					duration = -1
-				}
-			}   
-    		}
-	}
 
 	del_propestiy_for_all = {
 		icon = prosperity_for_all
 		position = 3
-		required_missions = { del_pearl_of_delkia }
+		required_missions = { del_expand_the_cites }
 		
 		trigger = {
 			if = {
@@ -115,10 +114,9 @@ delkia_2 = {
 		position = 1
 		
 		trigger = {
-			mil_tech = 4
 			army_size_percentage = 1
 			num_of_generals = 1
-		}	
+		}
 		
 		effect = {
 			hoxona_area = {
@@ -127,13 +125,17 @@ delkia_2 = {
 					NOT = { is_core = ROOT }
 				}
 				add_permanent_claim = ROOT
-			}	
+			}
 			tsaj_area = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT }
 					NOT = { is_core = ROOT }
 				}
 				add_permanent_claim = ROOT
+			}
+			add_country_modifier = {
+				name = del_modern_army
+				duration = 3650
 			}
 		}
 	}
@@ -153,7 +155,7 @@ delkia_2 = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT	
 			}
-		}	
+		}
 		
 		effect = {
 			ropinver_area = {
@@ -179,9 +181,9 @@ delkia_2 = {
 		position = 4
 		
 		provinces_to_highlight = {
-		OR = {
-			area = ropinver_area
-			area = hoxoi_area
+			OR = {
+				area = ropinver_area
+				area = hoxoi_area
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
@@ -195,32 +197,18 @@ delkia_2 = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT	
 			}
-		}	
+		}
 		
 		effect = {
 			add_country_modifier = {
 				name = del_wheat_of_the_east
-				duration = 8870
+				duration = 9125
+			}
+			5177 = {
+				add_center_of_trade_level = 1
 			}
 		}
 	}
-	
-	del_ideal_borders = {
-		icon = mission_onward_to_lahore
-		required_missions = { del_ropinver_conquest del_ruins_of_jagama del_costal_cites }
-		position = 5
-		
-		trigger = {
-			total_development = 400
-		}
-		
-		effect = {
-		set_government_rank = 3
-			add_country_modifier = {
-				name = del_delkian_empire
-			}	duration = -1
-		}
-	}	
 }	
 	
 # Westward Expansion Branch
@@ -251,15 +239,21 @@ delkia_3 = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT	
 			}
-		}	
+		}
 		
 		effect = {
-		    if = {
-				limit = {
-					exists = ZEA
-					ZEA = { NOT = { total_development = 50 } }
+			hidden_effect = {
+				if = {
+					limit = {
+						exists = ZEA
+						ZEA = { 
+							NOT = { total_development = 50 }
+							guaranteed_by = DEL
+							was_player = no
+						}
+					}
+					vassalize = ZEA
 				}
-				vassalize = ZEA
 			}
 			unnamed_area_9 = {
 				limit = {
@@ -267,13 +261,19 @@ delkia_3 = {
 					NOT = { is_core = ROOT	}
 				}
 				add_permanent_claim = ROOT
-			}	
+			}
 			zeaf_area = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT }
 					NOT = { is_core = ROOT }
 				}
 				add_permanent_claim = ROOT
+			}
+			if = {
+				limit = {
+					exists = ZEA
+				}
+				custom_tooltip = del_zeaf_if_tt
 			}
 		}
 	}
@@ -284,11 +284,11 @@ delkia_3 = {
 		position = 3
 		
 		provinces_to_highlight = {
-		 OR = {
-			area = unnamed_area_9
-			area = zeaf_area
-		}
-		NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			OR = {
+				area = unnamed_area_9
+				area = zeaf_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		
 		trigger = {
@@ -338,18 +338,54 @@ delkia_3 = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT	
 			}
-		}	
+		}
 		
 		effect = {
-		    if = {
-				limit = {
-					exists = ESP
-					ZEA = { NOT = { total_development = 50 } }
+		    hidden_effect = {
+				if = {
+					limit = {
+						exists = ESP
+						ZEA = { 
+							NOT = { total_development = 50 }
+							guaranteed_by = DEL
+							was_player = no
+						}
+					}
+					vassalize = ESP
 				}
-				vassalize = ESP
+			}
+			morsum_area = {
+				limit = {
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
 			}
 			add_country_modifier = {
 				name = del_west_gomic_coast
+				duration = -1
+			}
+			if = {
+				limit = {
+					exists = ESP
+				}
+				custom_tooltip = del_estephex_if_tt
+			}
+		}
+	}
+
+	del_ideal_borders = {
+		icon = mission_onward_to_lahore
+		required_missions = { del_ropinver_conquest del_ruins_of_jagama del_costal_cites }
+		position = 5
+		
+		trigger = {
+			total_development = 400
+		}
+		
+		effect = {
+			set_government_rank = 3
+			add_country_modifier = {
+				name = del_delkian_empire
 				duration = -1
 			}
 		}
@@ -374,10 +410,17 @@ delkia_4 = {
 		required_missions = { del_modernize_army }
 		position = 2
 		
-		
 		trigger = {
-			5164 = {
-				has_building = fort_15th
+			OR = {
+				5457 = {
+					is_claim = DEL
+				}
+				5458 = {
+					is_claim = DEL
+				}
+				5455 = {
+					is_claim = DEL
+				}
 			}
 		}
 		
@@ -385,12 +428,6 @@ delkia_4 = {
 			sixan_area = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT }
-					NOT = { is_core = ROOT	}
-				}
-				add_permanent_claim = ROOT
-			}			
-			marnet_area = {
-				limit = {
 					NOT = { is_core = ROOT	}
 				}
 				add_permanent_claim = ROOT
@@ -403,21 +440,13 @@ delkia_4 = {
 		required_missions = { del_protect_the_border }
 		position = 3
 		
-		
-	provinces_to_highlight = {
-		 OR = {
+		provinces_to_highlight = {
 			area = sixan_area
-			area = marnet_area
-		}
-		NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		
 		trigger = {
 			sixan_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT	
-			}	
-			marnet_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT	
 			}
@@ -430,8 +459,26 @@ delkia_4 = {
 					NOT = { is_core = ROOT	}
 				}
 				add_permanent_claim = ROOT
-			}			
+			}
 			oxaled_area = {
+				limit = {
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			marnet_area = {
+				limit = {
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			sostus_area = {
+				limit = {
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			vinsa_area = {
 				limit = {
 					NOT = { is_core = ROOT	}
 				}
@@ -445,20 +492,19 @@ delkia_4 = {
 		required_missions = { del_sixan_conquest }
 		position = 4
 		
-		
-	provinces_to_highlight = {
-		 OR = {
-			area = calla_area
-			area = oxaled_area
-		}
-		NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		provinces_to_highlight = {
+			OR = {
+				area = calla_area
+				area = oxaled_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		
 		trigger = {
 			calla_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT	
-			}	
+			}
 			oxaled_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT	
@@ -468,8 +514,9 @@ delkia_4 = {
 		effect = {
 			add_country_modifier = {
 				name = del_naval_building
-				duration = 8870
+				duration = 9125
 			}
+			add_mercantilism = 5
 		}
 	}
 }
@@ -489,22 +536,29 @@ delkia_5 = {
 
 	delkia_xalian_unite_the_faiths = {
 		icon = mission_hands_praying
-		required_missions = {  } #None
+		required_missions = { } #None
 		trigger = {
-            AND = {
-                religion_group = xalian_group
-                religious_unity	= 0.80
-                num_of_active_blessings	= 4
-                owns_core_province = 5388
-                owns_core_province = 5458
-                owns_core_province = 5163
-                owns_core_province = 5411
-            }
+            religion_group = xalian_group
+            religious_unity	= 0.80
+            num_of_active_blessings	= 4
+            owns_core_province = 5388
+            owns_core_province = 5458
+            owns_core_province = 5163
+            owns_core_province = 5411
         }
 		effect = {
 			add_country_modifier = {
 				name = united_the_xalian_faith
                 duration = -1
+			}
+			if = {
+				limit = {
+					NOT = { has_global_flag = united_xalian_faith_flag }
+				}
+				custom_tooltip = united_xal_tt
+				hidden_effect = {
+					set_global_flag = united_xalian_faith_flag
+				}
 			}
 		}
 		provinces_to_highlight = {
@@ -515,6 +569,52 @@ delkia_5 = {
 				province_id = 5411
 				province_id = 5388
 			}
+		}
+	}
+
+	del_into_ga_xal = {
+		icon = mission_onward_to_lahore
+		required_missions = { del_sixan_conquest }
+		position = 4
+		
+		provinces_to_highlight = {
+			OR = {
+				area = marnet_area
+				area = sostus_area
+				area = vinsa_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			marnet_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT	
+			}
+			sostus_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT	
+			}
+			vinsa_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT	
+			}
+		}
+		
+		effect = {
+			jexus_area = {
+				limit = {
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			abvori_area = {
+				limit = {
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			add_war_exhaustion = -10
 		}
 	}
 }
