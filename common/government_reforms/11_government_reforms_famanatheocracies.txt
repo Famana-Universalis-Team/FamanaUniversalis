@@ -1,5 +1,6 @@
 diocese_reform = {
 	potential = {
+		is_subject_of_type = diocese
 		OR = {
 			tag = PCG
 			tag = PPX
@@ -8,6 +9,7 @@ diocese_reform = {
 			tag = PLY
 			tag = PHL
 			tag = PJS
+			tag = PNV
 		}
 	}
 	allow_normal_conversion = no

@@ -592,9 +592,23 @@ pex_6 = { #Post-disaster missions
             }
             if = {
                 limit = {
-                    PHL = { is_subject_of = PEX }
+                    PTG = { is_subject_of = PEX }
                 }
-                PHL = {
+                PTG = {
+                    has_opinion = {
+	                    who = ROOT
+	                    value = 200
+                    }
+                    NOT = {
+                        liberty_desire = 1
+                    }
+                }
+            }
+            if = {
+                limit = {
+                    PNV = { is_subject_of = PEX }
+                }
+                PNV = {
                     has_opinion = {
 	                    who = ROOT
 	                    value = 200
@@ -624,6 +638,12 @@ pex_6 = { #Post-disaster missions
                 }
                 vassalize = PTG
             }
+            if = {
+                limit = {
+                    PNV = { is_subject_of = PEX }
+                }
+                vassalize = PNV
+            }
             5203 = {
                 remove_core = NPX
             }
@@ -633,6 +653,7 @@ pex_6 = { #Post-disaster missions
                 owned_by = PLM
                 owned_by = PHL
                 owned_by = PTG
+                owned_by = PNV
                 province_id = 5203
             }
         }

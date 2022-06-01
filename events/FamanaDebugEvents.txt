@@ -10,11 +10,8 @@ country_event = {
 
 	option = {
 		name = famana_debug.1.a
-		ai_chance = { factor = 1 }
-		add_country_modifier = {
-			name = midgame_crisis
-			duration = 36500
-		}
+		ai_chance = { factor = 1000 }
+		highlight = yes
 	}
 	option = {
 		name = famana_debug.1.b
@@ -69,6 +66,21 @@ country_event = {
 			every_owned_province = {
 				cede_province = ---
 			}
+		}
+	}
+	option = {
+		name = famana_debug.1.h
+		ai_chance = { factor = 1 }
+		every_country = {
+			change_religion = lathvy
+		}
+	}
+	option = {
+		name = famana_debug.1.j
+		ai_chance = { factor = 1 }
+		add_country_modifier = {
+			name = midgame_crisis
+			duration = 36500
 		}
 	}
 }
