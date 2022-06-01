@@ -465,7 +465,7 @@ country_event = { #bye bye pexto
 			tag = PEX
 			OR = {
 				has_country_flag = pextocivilwar
-				is_year = 350
+				is_year = 330
 			}
 		}
 	}
@@ -1150,7 +1150,7 @@ country_event = {
 
 	option = { #Yes Walara
 		name = pexto.32.a
-		ai_chance = { factor = 2 }
+		ai_chance = { factor = 3 }
 		JNS = {
 			country_event = {
 				days = 1
