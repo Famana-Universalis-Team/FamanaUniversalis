@@ -33,9 +33,6 @@ country_decisions = {
 			owns_core_province = 5121
 			owns_core_province = 5129
 			owns_core_province = 5119
-			capital_scope = {
-				is_core = ROOT
-			}
 			num_of_owned_provinces_with = {
 				value = 10
 				is_city = yes
@@ -139,9 +136,6 @@ country_decisions = {
 					owns_core_province = 5139
 				}
 			}
-			capital_scope = {
-				is_core = ROOT
-			}
 		}
 		effect = {
 			restore_country_name = yes
@@ -224,9 +218,6 @@ country_decisions = {
 			owns_core_province = 5140
 			owns_core_province = 5143
 			owns_core_province = 5137
-			capital_scope = {
-				is_core = ROOT
-			}
 			num_of_owned_provinces_with = {
 				value = 10
 				religion = mak
@@ -326,9 +317,6 @@ country_decisions = {
 				owns_core_province = 5230
 				owns_core_province = 5056
 			}
-			capital_scope = {
-				is_core = ROOT
-			}
 			num_of_owned_provinces_with = {
 				value = 8
 				is_city = yes
@@ -411,9 +399,6 @@ country_decisions = {
 			owns_core_province = 5062
 			owns_core_province = 5113
 			owns_core_province = 5081
-			capital_scope = {
-				is_core = ROOT
-			}
 			num_of_owned_provinces_with = {
 				value = 20
 				is_city = yes
@@ -519,9 +504,6 @@ country_decisions = {
 			owns_core_province = 5062
 			owns_core_province = 5113
 			owns_core_province = 5081
-			capital_scope = {
-				is_core = ROOT
-			}
 			num_of_owned_provinces_with = {
 				value = 20
 				is_city = yes
@@ -624,9 +606,6 @@ country_decisions = {
 			owns_core_province = 5118
 			owns_core_province = 5113
 			owns_core_province = 5133
-			capital_scope = {
-				is_core = ROOT
-			}
 			num_of_owned_provinces_with = {
 				value = 5
 				is_city = yes
@@ -712,9 +691,6 @@ country_decisions = {
 			owns_core_province = 5105
 			owns_core_province = 5106
 			owns_core_province = 5109
-			capital_scope = {
-				is_core = ROOT
-			}
 			num_of_owned_provinces_with = {
 				value = 8
 				is_city = yes
@@ -801,9 +777,6 @@ country_decisions = {
 			owns_core_province = 5411
 			owns_core_province = 5441
 			owns_core_province = 5442
-			capital_scope = {
-				is_core = ROOT
-			}
 			num_of_owned_provinces_with = {
 				value = 3
 				is_city = yes
@@ -860,9 +833,6 @@ country_decisions = {
 			owns_core_province = 5399
 			owns_core_province = 5388
 			owns_core_province = 5404
-			capital_scope = {
-				is_core = ROOT
-			}
 			num_of_owned_provinces_with = {
 				value = 15
 				superregion = ga_xal_superregion
@@ -1001,9 +971,6 @@ country_decisions = {
 			owns_core_province = 5458
 			owns_core_province = 5450
 			owns_core_province = 5445
-			capital_scope = {
-				is_core = ROOT
-			}
 			num_of_owned_provinces_with = {
 				value = 15
 				superregion = ga_xal_superregion
@@ -1107,9 +1074,6 @@ country_decisions = {
 			is_at_war = no
 			owns_core_province = 5167
 			owns_core_province = 5163
-			capital_scope = {
-				is_core = ROOT
-			}
 			num_of_owned_provinces_with = {
 				value = 10
 				superregion = ga_xal_superregion
@@ -1194,9 +1158,6 @@ country_decisions = {
 			owns_core_province = 5411
 			owns_core_province = 5442
 			owns_core_province = 5431
-			capital_scope = {
-				is_core = ROOT
-			}
 			num_of_owned_provinces_with = {
 				value = 10
 				superregion = ga_xal_superregion
@@ -1269,9 +1230,6 @@ country_decisions = {
 			owns_core_province = 5374
 			owns_core_province = 5372
 			owns_core_province = 5373
-			capital_scope = {
-				is_core = ROOT
-			}
 			num_of_owned_provinces_with = {
 				value = 15
 				region = moxon_region
@@ -1352,9 +1310,6 @@ country_decisions = {
 			owns_core_province = 5388 #xon
 			owns_core_province = 5450 #jexus
 			owns_core_province = 5399 #oxaled
-			capital_scope = {
-				is_core = ROOT
-			}
 			num_of_owned_provinces_with = {
 				value = 40
 				superregion = ga_xal_superregion
@@ -1437,9 +1392,6 @@ country_decisions = {
 			owns_core_province = 5536
 			owns_core_province = 5527
 			owns_core_province = 5519
-			capital_scope = {
-				is_core = ROOT
-			}
 			num_of_owned_provinces_with = {
 				value = 20
 				region = aresia_region
@@ -1507,9 +1459,6 @@ country_decisions = {
 			owns_core_province = 5481 #degladon
 			owns_core_province = 5644 #jimkalin
 			owns_core_province = 5501 #ghaloya
-			capital_scope = {
-				is_core = ROOT
-			}
 			num_of_owned_provinces_with = {
 				value = 70
 				superregion = jasua_superregion
@@ -1692,9 +1641,6 @@ country_decisions = {
 			owns_core_province = 5575
 			owns_core_province = 5581
 			owns_core_province = 5583
-			capital_scope = {
-				is_core = ROOT
-			}
 		}
 		effect = {
 			if = {
@@ -1762,9 +1708,6 @@ country_decisions = {
 			owns_core_province = 5182
 			owns_core_province = 5185
 			owns_core_province = 5174
-			capital_scope = {
-				is_core = ROOT
-			}
 		}
 		effect = {
 			if = {
@@ -1834,9 +1777,6 @@ country_decisions = {
 			owns_core_province = 5277
 			owns_core_province = 5028
 			owns_core_province = 5039
-			capital_scope = {
-				is_core = ROOT
-			}
 		}
 		effect = {
 			if = {
@@ -2038,9 +1978,6 @@ country_decisions = {
 			owns_core_province = 5679
 			owns_core_province = 5652
 			owns_core_province = 5513
-			capital_scope = {
-				is_core = ROOT
-			}
 		}
 		effect = {
 			restore_country_name = yes
@@ -2121,9 +2058,6 @@ country_decisions = {
 			owns_core_province = 5283
 			owns_core_province = 5298
 			owns_core_province = 5285
-			capital_scope = {
-				is_core = ROOT
-			}
 			num_of_owned_provinces_with = {
 				value = 10
 				is_city = yes
@@ -3188,9 +3122,6 @@ country_decisions = {
 			owns_core_province = 6265
 			owns_core_province = 5725
 			owns_core_province = 6236
-			capital_scope = {
-				is_core = ROOT
-			}
 			num_of_owned_provinces_with = {
 				value = 10
 				is_city = yes
@@ -3277,7 +3208,7 @@ country_decisions = {
 		allow = {
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
-			capital_scope = {
+			capital_scope = {  #kept it beacuse you are escaping to one province
 				is_core = ROOT
 			}
 			NOT = {
@@ -3381,9 +3312,6 @@ country_decisions = {
 			owns_core_province = 5140
 			owns_core_province = 5143
 			owns_core_province = 5137
-			capital_scope = {
-				is_core = ROOT
-			}
 			if = {
 				limit = {
 					religion = gadan
@@ -3548,9 +3476,6 @@ country_decisions = {
 			is_at_war = no
 			owns_core_province = 5493
 			owns_core_province = 5488
-			capital_scope = {
-				is_core = ROOT
-			}
 			num_of_owned_provinces_with = {
 				value = 8
 				region = kapolia_region
@@ -3852,9 +3777,6 @@ country_decisions = {
 			owns_core_province = 5793
 			owns_core_province = 5810
 			owns_core_province = 5821
-			capital_scope = {
-				is_core = ROOT
-			}
 		}
 		effect = {
 			restore_country_name = yes
