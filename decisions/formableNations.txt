@@ -3865,6 +3865,10 @@ country_decisions = {
 				set_government_rank = 2
 			}
 			change_tag = MNV
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
 			add_country_modifier = {
 				name = "centralization_modifier"
 				duration = 7300
@@ -3993,6 +3997,10 @@ country_decisions = {
 				inherit = RMX
 			}
 			change_tag = MNV
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
 			add_country_modifier = {
 				name = "centralization_modifier"
 				duration = 7300

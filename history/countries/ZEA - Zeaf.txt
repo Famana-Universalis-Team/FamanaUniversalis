@@ -16,4 +16,6 @@ capital = 5162	# change to real capital
 		dip = 4
 		mil = 3
 	}
+	add_ruler_personality = conqueror_personality
+	add_ruler_personality = zealot_personality
 }

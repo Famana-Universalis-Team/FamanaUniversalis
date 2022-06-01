@@ -248,7 +248,7 @@ delkia_3 = {
 						exists = ZEA
 						ZEA = { 
 							NOT = { total_development = 50 }
-							guaranteed_by = DEL
+							guaranteed_by = ROOT
 							was_player = no
 						}
 					}
@@ -313,12 +313,6 @@ delkia_3 = {
 					NOT = { is_core = ROOT	}
 				}
 				add_permanent_claim = ROOT
-			}			
-			morsum_area = {
-				limit = {
-					NOT = { is_core = ROOT	}
-				}
-				add_claim = ROOT
 			}
 		}
     }
@@ -345,9 +339,9 @@ delkia_3 = {
 				if = {
 					limit = {
 						exists = ESP
-						ZEA = { 
+						ESP = { 
 							NOT = { total_development = 50 }
-							guaranteed_by = DEL
+							guaranteed_by = ROOT
 							was_player = no
 						}
 					}
@@ -413,18 +407,28 @@ delkia_4 = {
 		trigger = {
 			OR = {
 				5457 = {
-					is_claim = DEL
+					is_claim = ROOT
 				}
 				5458 = {
-					is_claim = DEL
+					is_claim = ROOT
 				}
 				5455 = {
-					is_claim = DEL
+					is_claim = ROOT
 				}
 			}
 		}
 		
 		effect = {
+			if = {
+				limit = {
+					exists = SIX
+				}
+				reverse_add_casus_belli = {
+					target = DEL
+					type = cb_vassalize_mission
+					months = 12
+				}
+			}
 			sixan_area = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT }
@@ -453,6 +457,14 @@ delkia_4 = {
 		}
 		
 		effect = {
+			define_advisor = {
+				type = statesman
+				skill = 3
+				cost_multiplier = 0.25
+				culture = Sixany
+				religion = vinian
+				location = 5458
+			}
 			calla_area = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT }

@@ -552,3 +552,42 @@ Maldan_ideas = {
 		num_accepted_cultures = 2
     }
 }
+
+Vishman_ideas = {
+    start = {
+        development_cost = -0.10
+		global_tax_modifier = 0.10
+    }
+
+    bonus = {
+        trade_goods_size_modifier = 0.10
+    }
+
+    trigger = {
+        culture_group = Vishman_C
+    }
+    free = yes
+
+    Vishman_1 = {
+		global_unrest = -2
+    }
+    Vishman_2 = {
+		technology_cost = -0.05
+    }
+    Vishman_3 = {
+        diplomatic_upkeep = 1
+    }
+    Vishman_4 = {
+		army_tradition_from_battle = 0.50
+		drill_decay_modifier = -0.25
+    }
+    Vishman_5 = {
+        institution_spread_from_true_faith = 0.25
+    }
+    Vishman_6 = {
+		advisor_pool = 1
+    }
+    Vishman_7 = {
+		burghers_loyalty_modifier = 0.05
+    }
+}

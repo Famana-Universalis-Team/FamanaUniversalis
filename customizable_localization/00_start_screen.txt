@@ -225,17 +225,21 @@ defined_text = {
 	text = { #Gomic
         localisation_key = string_start_tag_gomic
         trigger = {
-			capital_scope = {
-				OR = {
-					superregion = oppia_superregion
-					superregion = ga_xal_superregion
-					superregion = jasua_superregion
-					superregion = west_estal_superregion
-					region = emastalia_region
-					region = west_emastalia_regions
-				}
-			}
-        	}
+            OR = {
+                culture_group = Pextoglazian
+                culture_group = Ordic_C
+                primary_culture	= Laglan
+                capital_scope = {
+                    OR = {
+                        superregion = oppia_superregion
+                        superregion = ga_xal_superregion
+                        superregion = jasua_superregion
+                        region = emastalia_region
+                        region = west_emastalia_region
+                    }
+                }
+            }
+        }
     }
 	text = {
         localisation_key = string_start_tag_fashros

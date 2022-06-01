@@ -1,0 +1,21 @@
+discovered_by = east_gomic_tech_gr
+discovered_by = north_gomic_tech_gr
+discovered_by = west_gomic_tech_gr
+culture = East_Emastalian
+religion = lathvy
+owner = ELQ
+controller = ELQ
+add_core = ELQ
+
+###
+
+hre = no
+
+base_tax = 2
+base_production = 1
+trade_goods = grain
+base_manpower = 2
+capital = "UNNAMED"
+is_city = yes
+extra_cost = 1
+
