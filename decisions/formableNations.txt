@@ -1892,6 +1892,7 @@ country_decisions = {
 				tag=PHL
 				tag=PLY
 				tag=PJS
+				tag=PNV
 			}
 		}
 		allow = {
@@ -1933,6 +1934,22 @@ country_decisions = {
 					tag=PTG
 				}
 				change_tag = TER
+			}
+			if = {
+				limit = {
+					tag=PNV
+				}
+				change_tag = NVI
+				hidden_effect = {
+					every_province = {
+						limit = {
+							is_core = PNV
+						}
+						add_core = NVI
+						remove_core = PNV
+						remove_claim = PNV
+					}
+				}
 			}
 			if = {
 				limit = {
@@ -2570,7 +2587,12 @@ country_decisions = {
 		major = yes
 		potential = {
 			AND = {
-				NOT = { exists = NVI}
+				NOT = {
+					OR = {
+						exists = NVI
+						exists = PNV
+					}
+				}
 				culture = Nevian
 				was_never_end_game_tag_trigger = yes
 			}
@@ -2596,6 +2618,7 @@ country_decisions = {
 			restore_country_name = yes
 			change_tag = NVI
 			set_capital = 5312
+			set_country_flag = nevia_formed
 			if = {
 				limit = {
 					NOT = { government_rank = 2 }

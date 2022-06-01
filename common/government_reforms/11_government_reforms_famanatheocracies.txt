@@ -42,7 +42,10 @@ holy_monarchy_reform = {
 	queen = yes
 	royal_marriage = yes
 	potential = {
-		tag = PEX
+		OR = {
+			tag = PEX
+			tag = WLR
+		}
 		NOT = { has_country_flag = pextocivilwar }
 		NOT = { has_country_flag = lathvy_empire_flag }
 	}

@@ -472,9 +472,8 @@ country_event = { #bye bye pexto
 		ROOT = {
 			release_all_subjects = yes
 			release	= RNP
-			release = FST
-			release = REN
-			release = KRH
+			release = PNV
+			release = NVI
 			release = PLM
 			release = LOM
 			release = GNZ
@@ -637,5 +636,696 @@ country_event = {
 			culture = Lerushian
 			religion = lathvy
 		}
+	}
+}
+
+#Nevian Divorce
+country_event = {
+	id = pexto.18
+	title = pexto.18.t
+	desc = pexto.18.d
+	picture = CIVIL_WAR_eventPicture
+	fire_only_once = yes
+	major = yes
+
+	trigger = {
+		ai = yes
+		tag = NVI
+		NOT = { has_country_flag = nevia_formed }
+	}
+
+	mean_time_to_happen = {
+		months = 2
+	}
+
+	option = {
+		name = pexto.18.a
+		ai_chance = { factor = 5 }
+		release = KRH
+		release = FST
+		release = REN
+		release = YVR
+		release = POM
+		release = RNP
+		release = PIX
+		release = NES
+		release = NOX
+		west_estal_superregion = {
+			remove_core = NVI
+			remove_core = PNV
+		}
+	}
+}
+
+#Nevian War
+country_event = {
+	id = pexto.19
+	title = pexto.19.t
+	desc = pexto.19.d
+	picture = CIVIL_WAR_eventPicture
+	fire_only_once = yes
+
+	trigger = {
+		ai = no
+		tag = NVI
+		NOT = { has_country_flag = nevia_formed }
+	}
+
+	mean_time_to_happen = {
+		months = 2
+	}
+
+	option = {
+		name = pexto.19.a
+		ai_chance = { factor = 5 }
+		5312 = {
+			if = {
+				limit = {
+					owned_by = NVI
+				}
+				spawn_rebels = {
+					type = nationalist_rebels
+					size = 1
+				}
+			}
+		}
+		5339 = {
+			if = {
+				limit = {
+					owned_by = NVI
+				}
+				spawn_rebels = {
+					type = nationalist_rebels
+					size = 1
+				}
+			}
+		}
+		5308 = {
+			if = {
+				limit = {
+					owned_by = NVI
+				}
+				spawn_rebels = {
+					type = nationalist_rebels
+					size = 1
+				}
+			}
+		}
+		5345 = {
+			if = {
+				limit = {
+					owned_by = NVI
+				}
+				spawn_rebels = {
+					type = nationalist_rebels
+					size = 1
+				}
+			}
+		}
+		5347 = {
+			if = {
+				limit = {
+					owned_by = NVI
+				}
+				spawn_rebels = {
+					type = nationalist_rebels
+					size = 1
+				}
+			}
+		}
+	}
+}
+
+#Lasdy issue - Event 1 (Pixrol is angry)
+country_event = {
+	id = pexto.20
+	title = pexto.20.t
+	desc = pexto.20.d
+	picture = CONQUEST_eventPicture
+	fire_only_once = yes
+
+	trigger = {
+		tag = PPX
+		exists = PNV
+		owns_core_province = 5309
+	}
+
+	mean_time_to_happen = {
+		years = 20 #so around 250 is the latest it will fire
+	}
+
+	option = { #Seek Pextoglazian support
+		name = pexto.20.a
+		ai_chance = { factor = 5 }
+		5309 = {
+			add_unrest = 10
+			add_local_autonomy = 15
+		}
+		PNV = {
+			country_event = {
+				days = 1
+				id = pexto.22
+			}
+		}
+		PEX = {
+			country_event = {
+				days = 30
+				id = pexto.23
+			}
+		}
+	}
+	option = {
+		name = pexto.20.b #Give up
+		ai_chance = { factor = 1 }
+		5309 = {
+			cede_province = PNV
+		}
+		PNV = {
+			country_event = {
+				days = 1
+				id = pexto.21
+			}
+		}
+	}
+}
+
+#Lasdy issue - Event 2 (Nevian response if ceded)
+country_event = {
+	id = pexto.21
+	title = pexto.21.t
+	desc = pexto.21.d
+	picture = CONQUEST_eventPicture
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = pexto.21.a
+		ai_chance = { factor = 1 }
+		5309 = {
+			cede_province = PNV #for tooltip's sake
+		}
+		define_advisor = {
+			type = spymaster
+			name = "Urkhan Loviaz"
+			skill = 2
+			culture = Nevian
+			religion = lathvy
+			discount = yes
+		}
+	}
+}
+
+#Lasdy issue - Event 3 (Nevian response if contested)
+country_event = {
+	id = pexto.22
+	title = pexto.22.t
+	desc = pexto.22.d
+	picture = ACCUSATION_eventPicture
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = pexto.22.a
+		ai_chance = { factor = 1 }
+		add_historical_rival = PPX
+	}
+}
+
+#Lasdy issue - Event 4 (Pextoglazia chooses the trial)
+country_event = {
+	id = pexto.23
+	title = pexto.23.t
+	desc = pexto.23.d
+	picture = ACCUSATION_eventPicture
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { #Trial by ordeal
+		name = pexto.23.a
+		ai_chance = { factor = 7 }
+		PPX = {
+			country_event = {
+				days = 1
+				id = pexto.27
+			}
+		}
+		PNV = {
+			country_event = {
+				days = 1
+				id = pexto.27
+			}
+		}
+		random = {
+			1 = { #Nevia wins the trial
+				PNV = {
+					country_event = {
+						days = 10
+						id = pexto.28
+					}
+				}
+			}
+			1 = { #Pixrol wins the trial
+				PNV = {
+					country_event = {
+						days = 10
+						id = pexto.29
+					}
+				}
+			}
+		}
+
+	}
+	option = { #Nevia's by right
+		name = pexto.23.b
+		ai_chance = { factor = 1 }
+		5309 = {
+			cede_province = PNV
+		}
+		PNV = {
+			country_event = {
+				days = 1
+				id = pexto.24
+			}
+		}
+		PPX = {
+			country_event = {
+				days = 1
+				id = pexto.25
+			}
+		}
+
+	}
+	option = { #Pixrol's by right
+		name = pexto.23.c
+		ai_chance = { factor = 1 }
+		5309 = {
+			cede_province = PPX
+		}
+		PPX = {
+			country_event = {
+				days = 1
+				id = pexto.24
+			}
+		}
+		PNV = {
+			country_event = {
+				days = 1
+				id = pexto.25
+			}
+		}
+
+	}
+	option = { #Let them fight it out
+		name = pexto.23.d
+		ai_chance = { factor = 1 }
+		5309 = {
+			add_nationalism = 10
+			add_unrest = 10
+			spawn_rebels = {
+				type = nationalist_rebels
+				size = 2
+				friend = PNV
+				win = yes
+			}
+		}
+		PPX = {
+			country_event = {
+				days = 1
+				id = pexto.26
+			}
+		}
+		PNV = {
+			country_event = {
+				days = 1
+				id = pexto.26
+			}
+		}
+	}
+}
+
+#Lasdy issue - Event 5 (Pextoglazia supports our claim)
+country_event = {
+	id = pexto.24
+	title = pexto.24.t
+	desc = pexto.24.d
+	picture = DEBATE_REPUBLICAN_eventPicture
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = pexto.24.a
+		ai_chance = { factor = 1 }
+		5309 = {
+			cede_province = root
+		}
+		add_devotion = 10
+		add_liberty_desire = -10
+	}
+}
+
+#Lasdy issue - Event 6 (Pextoglazia doesn't support our claim)
+country_event = {
+	id = pexto.25
+	title = pexto.25.t
+	desc = pexto.25.d
+	picture = DEBATE_REPUBLICAN_eventPicture
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = pexto.25.a
+		ai_chance = { factor = 1 }
+		add_devotion = -10
+		add_liberty_desire = 10
+	}
+}
+
+#Lasdy issue - Event 7 (Pextoglazia is a pussy and supports neither side)
+country_event = {
+	id = pexto.26
+	title = pexto.26.t
+	desc = pexto.26.d
+	picture = ANGRY_MOB_eventPicture
+	is_triggered_only = yes
+
+	option = {
+		name = pexto.26.a
+		ai_chance = { factor = 1 }
+		add_liberty_desire = 25
+	}
+}
+
+#Lasdy issue - Event 8 (Trial by Ordeal)
+country_event = {
+	id = pexto.27
+	title = pexto.27.t
+	desc = pexto.27.d
+	picture = RELIGION_eventPicture
+	is_triggered_only = yes
+
+	option = {
+		name = pexto.27.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+#Lasdy issue - Event 9 (Nevia wins)
+country_event = {
+	id = pexto.28
+	title = pexto.28.t
+	desc = pexto.28.d
+	picture = POPE_PREACHING_eventPicture
+	is_triggered_only = yes
+
+	option = {
+		name = pexto.28.a
+		ai_chance = { factor = 1 }
+		PNV = {
+			country_event = {
+				days = 1
+				id = pexto.30
+			}
+		}
+		PPX = {
+			country_event = {
+				days = 1
+				id = pexto.31
+			}
+		}
+	}
+}
+
+#Lasdy issue - Event 10 (Pixrol wins)
+country_event = {
+	id = pexto.29
+	title = pexto.29.t
+	desc = pexto.29.d
+	picture = POPE_PREACHING_eventPicture
+	is_triggered_only = yes
+
+	option = {
+		name = pexto.29.a
+		ai_chance = { factor = 1 }
+		PNV = {
+			country_event = {
+				days = 1
+				id = pexto.31
+			}
+		}
+		PPX = {
+			country_event = {
+				days = 1
+				id = pexto.30
+			}
+		}
+	}
+}
+
+#Lasdy issue - Event 11 (We won)
+country_event = {
+	id = pexto.30
+	title = pexto.30.t
+	desc = pexto.30.d
+	picture = POPE_PREACHING_eventPicture
+	is_triggered_only = yes
+
+	option = {
+		name = pexto.30.a
+		ai_chance = { factor = 1 }
+		5309 = {
+			cede_province = root
+			add_devotion = 10
+			add_piety = 0.2
+			add_prestige = 20
+		}
+	}
+}
+
+#Lasdy issue - Event 12 (We lost)
+country_event = {
+	id = pexto.31
+	title = pexto.31.t
+	desc = pexto.31.d
+	picture = POPE_PREACHING_eventPicture
+	is_triggered_only = yes
+
+	option = {
+		name = pexto.31.a
+		ai_chance = { factor = 1 }
+		add_devotion = 10
+	}
+
+	option = {
+		name = pexto.31.b
+		ai_chance = { factor = 1 }
+		add_piety = -0.2
+		add_prestige = -10
+		add_liberty_desire = 40
+	}
+}
+
+#Walara is formed
+country_event = {
+	id = pexto.32
+	title = pexto.32.t
+	desc = pexto.32.d
+	picture = DIPLOMACY_eventPicture
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 120
+	}
+
+	trigger = {
+		exists = JNS
+		exists = PIX
+		tag = PIX
+	}
+
+	option = { #Yes Walara
+		name = pexto.32.a
+		ai_chance = { factor = 2 }
+		JNS = {
+			country_event = {
+				days = 1
+				id = pexto.33
+			}
+		}
+	}
+
+	option = { #No Walara???
+		name = pexto.32.b
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = {
+	id = pexto.33
+	title = pexto.33.t
+	desc = pexto.33.d
+	picture = DIPLOMACY_eventPicture
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { #Yes
+		name = pexto.32.a
+		ai_chance = { factor = 1 }
+		PIX = {
+			country_event = {
+				days = 1
+				id = pexto.34
+			}
+		}
+		custom_tooltip = END_GAME_ANNEX
+	}
+
+	option = { #No
+		name = pexto.32.b
+		highlight = yes
+		ai_chance = { factor = 0 }
+		PIX = {
+			country_event = {
+				days = 1
+				id = pexto.35
+			}
+		}
+	}
+}
+
+country_event = {
+	id = pexto.34
+	title = pexto.34.t
+	desc = pexto.34.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	major = yes
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { #Theocratic Walara
+		name = pexto.34.a
+		ai_chance = { factor = 2 }
+		inherit = JNS
+
+		change_tag = WLR
+			if = {
+				limit = {
+					AND = {
+						has_custom_ideas = no
+						NOT = {
+							has_idea_group = WLR_ideas
+						}
+					}
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
+			walara_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = WLR
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			change_government = theocracy
+			add_government_reform = leading_clergy_reform
+	}
+
+	option = { #Monarchy Walara
+		name = pexto.34.b
+		ai_chance = { factor = 2 }
+		inherit = JNS
+
+		change_tag = WLR
+			if = {
+				limit = {
+					AND = {
+						has_custom_ideas = no
+						NOT = {
+							has_idea_group = WLR_ideas
+						}
+					}
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
+			walara_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = WLR
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			change_government = monarchy
+			add_government_reform = autocracy_reform
+	}
+
+	option = { #HM Walara
+		name = pexto.34.c
+		ai_chance = { factor = 4 }
+		inherit = JNS
+
+		change_tag = WLR
+			if = {
+				limit = {
+					AND = {
+						has_custom_ideas = no
+						NOT = {
+							has_idea_group = WLR_ideas
+						}
+					}
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
+			walara_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = WLR
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			change_government = theocracy
+			add_government_reform = holy_monarchy_reform
+	}
+}
+
+country_event = {
+	id = pexto.35
+	title = pexto.35.t
+	desc = pexto.35.d
+	picture = BAD_WITH_MONARCH_eventPicture
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = pexto.35.a
+		ai_chance = { factor = 2 }
 	}
 }

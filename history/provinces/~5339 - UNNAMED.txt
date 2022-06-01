@@ -3,9 +3,9 @@ discovered_by = north_gomic_tech_gr
 discovered_by = west_gomic_tech_gr
 culture = Nevian
 religion = lathvy
-owner = PNV
-controller = PNV
-add_core = PNV
+owner = PEX
+controller = PEX
+add_core = PEX
 add_core = REN
 
 ###
@@ -13,10 +13,13 @@ add_core = REN
 hre = no
 
 base_tax = 2
-base_production = 4
+base_production = 3
 trade_goods = fur
 base_manpower = 2
-capital = "Vafizz"
+capital = "Kaypatz"
 is_city = no
+
 extra_cost = 1
+center_of_trade = 1
+
 

@@ -16,6 +16,14 @@ dependency = {
 dependency = {
 	subject_type = "diocese"
 	first = PEX
+	second = PNV
+	start_date = 200.11.11
+	end_date = 1573.7.3
+}
+
+dependency = {
+	subject_type = "diocese"
+	first = PEX
 	second = PPX
 	start_date = 200.11.11
 	end_date = 1573.7.3
