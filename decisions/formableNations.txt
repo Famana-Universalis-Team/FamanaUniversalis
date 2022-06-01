@@ -138,6 +138,7 @@ country_decisions = {
 			}
 		}
 		effect = {
+			add_historical_friend = MSH
 			restore_country_name = yes
 			change_tag = VDY
 			if = {
