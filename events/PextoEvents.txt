@@ -500,6 +500,9 @@ country_event = { #bye bye pexto
 				add_core = 5283
 				add_core = 5284
 			}
+			POM = {
+				integrate = PEX
+			}
 		}
 		west_estal_superregion = {
 			remove_core	= PEX
