@@ -213,9 +213,83 @@ country_event = {
 				id = jasuaE.6
 			}
 		}
+		#First, check if Kalarga exists. Kalarga gets priority for Nafa.
+		KLG = {
+			if = {
+				limit = {
+					exists = yes
+				}
+				country_event = {
+					id = jasuaE.14
+				}
+			}
+		}
+		#Then Stroktur. Republican Stroktur takes priority.
 		SKT = {
-			country_event = {
-				id = jasuaE.7
+			if = {
+				limit = {
+					NOT = { exists = KLG }
+					NOT = { exists = NAF }
+					has_country_flag = stroktur_republic
+				}
+				country_event = {
+					id = jasuaE.7
+				}
+			}
+			else_if = {
+				limit = {
+					NOT = { exists = KLG }
+					NOT = { exists = NAF }
+					any_owned_province = {
+						culutre = Kachik
+					}
+				}
+				country_event = {
+					id = jasuaE.13
+				}
+			}
+			else = {
+				id = jasuaE.6
+			}
+		}
+		#Rachik and Yallwaka are next.
+		RCK = {
+			if = {
+				limit = {
+					NOT = { exists = KLG }
+					NOT = { exists = NAF }
+				}
+				country_event = {
+					id = jasuaE.15
+				}
+			}
+		}
+		YLL = {
+			if = {
+				limit = {
+					NOT = { exists = KLG }
+					NOT = { exists = RCK }
+					NOT = { exists = NAF }
+				}
+				country_event = {
+					id = jasuaE.15
+				}
+			}
+		}
+		#Finally, this means Nafa must have been conquered, so they will break free on their own.
+		5488 = {
+			owner = {
+				if = {
+					limit = {
+						NOT = { exists = KLG }
+						NOT = { exists = RCK }
+						NOT = { exists = NAF }
+						NOT = { exists = YLL }
+					}
+					country_event = {
+						id = jasuaE.16
+					}
+				}
 			}
 		}
 	}
@@ -258,12 +332,6 @@ country_event = {
 	is_triggered_only = yes
 	major = yes
 
-	trigger = {
-		any_owned_province = {
-			culture = Kachik
-		}
-	}
-	
 	option = {
 		name = jasuaE.7.a
 		ai_chance = { factor = 1 }
@@ -496,5 +564,274 @@ country_event = {
 			}
 		}
 		add_stability = 1
+	}
+}
+
+#nafa (kingdom of bohora)
+country_event = {
+	id = jasuaE.13
+	title = jasuaE.13.t
+	desc = jasuaE.13.d
+	picture = ECLIPSE_eventPicture
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = jasuaE.13.a
+		ai_chance = { factor = 1 }
+		change_tag = NAF
+		country_event = { id = ideagroups.1 } #Swap Ideas
+		add_stability = 1
+		change_government = monarchy
+		add_government_reform = nafan_gov
+		restore_country_name = yes
+		if = {
+			limit = {
+				NOT = { government_rank = 3 }
+			}
+			set_government_rank = 3
+		}
+		add_prestige = 25
+		kill_ruler = yes
+		define_ruler = {
+			name = "Syadon I"
+			dynasty = "Noy"
+			culture = Kachik
+			age = 20
+			adm = 6
+			dip = 6
+			mil = 6
+			leader = {	name = "Syadon Noy"            	type = general	fire = 6	shock = 6	manuever = 6	siege = 6}
+		}
+		if = {
+			limit = {
+				ai = yes
+			}
+			add_ruler_personality = conquerer_personality
+			set_ai_personality = {
+				personality = ai_militarist
+				locked = yes
+			}
+		}
+		change_primary_culture = Kachik
+		set_religious_school = {
+			group = lathvy_group
+			school = nafan_school
+		}
+		set_global_flag = NafaHappened
+		add_permanent_claim = 5483
+		add_permanent_claim = 5482
+		add_permanent_claim = 5583
+		add_permanent_claim = 5584
+	}
+	option = {
+		name = jasuaE.13.b
+		ai_chance = { factor = 0 }
+		add_stability = -2
+		random_owned_province = {
+			spawn_rebels = {
+				type = pretender_rebels
+				size = 3
+				leader = "Syadon I"
+				leader_dynasty = "Noy"
+			}
+		}
+	}
+}
+
+#nafa (kalarga)
+country_event = {
+	id = jasuaE.14
+	title = jasuaE.14.t
+	desc = jasuaE.14.d
+	picture = ECLIPSE_eventPicture
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = jasuaE.14.a
+		ai_chance = { factor = 1 }
+		change_tag = NAF
+		country_event = { id = ideagroups.1 } #Swap Ideas
+		add_stability = 1
+		change_government = monarchy
+		add_government_reform = nafan_gov
+		restore_country_name = yes
+		if = {
+			limit = {
+				NOT = { government_rank = 3 }
+			}
+			set_government_rank = 3
+		}
+		add_prestige = 25
+		kill_ruler = yes
+		define_ruler = {
+			name = "Syadon I"
+			dynasty = "Noy"
+			culture = Kachik
+			age = 20
+			adm = 6
+			dip = 6
+			mil = 6
+			leader = {	name = "Syadon Noy"            	type = general	fire = 6	shock = 6	manuever = 6	siege = 6}
+		}
+		if = {
+			limit = {
+				ai = yes
+			}
+			add_ruler_personality = conquerer_personality
+			set_ai_personality = {
+				personality = ai_militarist
+				locked = yes
+			}
+		}
+		change_primary_culture = Kachik
+		set_religious_school = {
+			group = lathvy_group
+			school = nafan_school
+		}
+		set_global_flag = NafaHappened
+		add_permanent_claim = 5483
+		add_permanent_claim = 5482
+		add_permanent_claim = 5583
+		add_permanent_claim = 5584
+	}
+	option = {
+		name = jasuaE.14.b
+		ai_chance = { factor = 1 }
+		add_stability = -2
+		random_owned_province = {
+			spawn_rebels = {
+				type = pretender_rebels
+				size = 2
+				leader = "Syadon I"
+				leader_dynasty = "Noy"
+			}
+		}
+	}
+}
+
+#nafa (yallwaka or rachik)
+country_event = {
+	id = jasuaE.15
+	title = jasuaE.15.t
+	desc = jasuaE.15.d
+	picture = ECLIPSE_eventPicture
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = jasuaE.15.a
+		ai_chance = { factor = 1 }
+		change_tag = NAF
+		country_event = { id = ideagroups.1 } #Swap Ideas
+		add_stability = 1
+		change_religion = lathvy
+		change_government = monarchy
+		add_government_reform = nafan_gov
+		restore_country_name = yes
+		if = {
+			limit = {
+				NOT = { government_rank = 3 }
+			}
+			set_government_rank = 3
+		}
+		add_prestige = 25
+		kill_ruler = yes
+		define_ruler = {
+			name = "Syadon I"
+			dynasty = "Noy"
+			culture = Kachik
+			age = 20
+			adm = 6
+			dip = 6
+			mil = 6
+			leader = {	name = "Syadon Noy"            	type = general	fire = 6	shock = 6	manuever = 6	siege = 6}
+		}
+		if = {
+			limit = {
+				ai = yes
+			}
+			add_ruler_personality = conquerer_personality
+			set_ai_personality = {
+				personality = ai_militarist
+				locked = yes
+			}
+		}
+		change_primary_culture = Kachik
+		set_religious_school = {
+			group = lathvy_group
+			school = nafan_school
+		}
+		set_global_flag = NafaHappened
+		add_permanent_claim = 5483
+		add_permanent_claim = 5482
+		add_permanent_claim = 5583
+		add_permanent_claim = 5584
+		add_permanent_claim = bohora_area
+		add_permanent_claim = kachikia_area
+	}
+	option = {
+		name = jasuaE.15.b
+		ai_chance = { factor = 0 }
+		add_stability = -2
+		random_owned_province = {
+			spawn_rebels = {
+				type = pretender_rebels
+				size = 1
+				leader = "Syadon I"
+				leader_dynasty = "Noy"
+			}
+		}
+	}
+}
+
+#nafa (yallwaka or rachik)
+country_event = {
+	id = jasuaE.16
+	title = jasuaE.16.t
+	desc = jasuaE.16.d
+	picture = ECLIPSE_eventPicture
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = jasuaE.16.a
+		ai_chance = { factor = 1 }
+		kachikia_area = {
+			add_core = NAF
+		}
+		5488 = {
+			spawn_rebels = {
+				type = nationalist_rebels
+				size = 4
+				leader = "Syadon I"
+				friend = NAF
+				leader_dynasty = "Noy"
+				win = yes
+				religion = lathvy
+				culture = Kachik
+			}
+		}
+		5491 = {
+			spawn_rebels = {
+				type = nationalist_rebels
+				size = 2
+				friend = NAF
+				win = yes
+				religion = lathvy
+				culture = Kachik
+			}
+		}
+		5492 = {
+			spawn_rebels = {
+				type = nationalist_rebels
+				size = 2
+				friend = NAF
+				win = yes
+				religion = lathvy
+				culture = Kachik
+			}
+		}
 	}
 }
