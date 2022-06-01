@@ -162,7 +162,7 @@ country_event = {
 	
 	option = {
 		name = ordica.5.b
-		ai_chance = { 
+		ai_chance = {
 			factor = 2
 			modifier = {
 				factor = 2
@@ -184,6 +184,14 @@ country_event = {
 		name = ordica.5.c
 		ai_chance = { 
 			factor = 2
+			modifier = {
+				factor = 100
+				owns_core_province = 5337
+			}
+			modifier = {
+				factor = 100
+				tag = POM
+			}
 		}
 	}
 }
