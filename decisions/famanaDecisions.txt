@@ -35,6 +35,8 @@ country_decisions = {
             any_owned_province = {
                 religion = lathvy
             }
+            NOT = { has_country_flag = lathvy_convert_fired }
+		    NOT = { has_country_modifier = yomtanian_nation }
         }
         allow = {
             is_free_or_tributary_trigger = yes
@@ -72,6 +74,8 @@ country_decisions = {
             any_owned_province = {
                 religion = rochoni
             }
+            NOT = { has_country_flag = lathvy_convert_fired }
+		    NOT = { has_country_modifier = yomtanian_nation }
         }
         allow = {
             is_free_or_tributary_trigger = yes

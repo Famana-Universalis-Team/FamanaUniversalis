@@ -745,42 +745,150 @@ country_event = { #TRADITIONAL & RINI
 				}
 			}
 		}
-	}
-	
-	immediate = {
+		any_known_country = {
+			OR = {
+				religion = lathvy
+				religion = rini
+			}
+		}
 	}
 	
 	mean_time_to_happen = {
 		days = 1
 	}
 	
-	option = {
+	option = { #nafan
 		name = lathvy_piety.16.a
 		trigger = {
 			has_global_flag = NafaHappened
+			any_known_country = {
+				religious_school = {
+					group = lathvy_group
+					school = nafan_school
+				}
+			}
 		}
 		ai_chance = { 
-			factor = 3
+			factor = 1
+			modifier = {
+				factor = 1.5
+				OR = {
+					full_idea_group	= humanist_ideas
+					full_idea_group = religious_ideas
+				}
+			}
+			modifier = {
+				factor = 20
+				OR = {
+					primary_culture = Kachik
+					primary_culture = Bohoran
+				}
+			}
+			modifier = {
+				factor = 1000
+				tag = NAF
+			}
+			modifier = {
+				factor = 4
+				current_age	= age_of_reformation
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					is_rival = NAF
+					is_enemy = NAF
+				}
+			}
 		}
 		set_religious_school = {
 			group = lathvy_group
 			school = nafan_school
 		}
 	}
-	option = {
+	option = { #pexto
 		name = lathvy_piety.16.b
+		trigger = {
+			any_known_country = {
+				religious_school = {
+					group = lathvy_group
+					school = pextoglazian_school
+				}
+			}
+		}
 		ai_chance = { 
 			factor = 1
+			modifier = {
+				factor = 1.5
+				full_idea_group	= humanist_ideas
+			}
+			modifier = {
+				factor = 10
+				capital_scope = {
+					superregion = west_estal_superregion
+				}
+			}
+			modifier = {
+				factor = 20
+				primary_culture = Pextan
+			}
+			modifier = {
+				factor = 1000
+				tag = PEX
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					is_rival = PEX
+					is_rival = POM
+					is_enemy = PEX
+					is_enemy = POM
+				}
+			}
 		}
 		set_religious_school = {
 			group = lathvy_group
 			school = pextoglazian_school
 		}
 	}
-	option = {
+	option = { #maxan
 		name = lathvy_piety.16.c
-		ai_chance = { 
+		trigger = {
+			any_known_country = {
+				religious_school = {
+					group = lathvy_group
+					school = maxan_school
+				}
+			}
+		}
+		ai_chance = {
 			factor = 1
+			modifier = {
+				factor = 1.5
+				full_idea_group	= religious_ideas
+			}
+			modifier = {
+				factor = 10
+				capital_scope = {
+					superregion = ga_xal_superregion
+				}
+			}
+			modifier = {
+				factor = 20
+				primary_culture = Lerushian
+			}
+			modifier = {
+				factor = 1000
+				tag = MOX
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					is_rival = MOX
+					is_rival = AGX
+					is_enemy = MOX
+					is_enemy = AGX
+				}
+			}
 		}
 		set_religious_school = {
 			group = lathvy_group

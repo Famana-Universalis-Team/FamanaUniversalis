@@ -501,7 +501,7 @@ delkia_4 = {
 	
 	del_costal_cites = {
 		icon = mission_onward_to_lahore
-		required_missions = { del_sixan_conquest }
+		required_missions = { mission_rice_field }
 		position = 4
 		
 		provinces_to_highlight = {
