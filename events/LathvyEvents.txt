@@ -843,6 +843,7 @@ country_event = { #TRADITIONAL & RINI
 					is_enemy = PEX
 					is_enemy = POM
 				}
+			}
 			modifier = {
 				factor = 0
 				has_global_flag = CelzionHappened
