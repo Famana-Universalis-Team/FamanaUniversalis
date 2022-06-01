@@ -1329,3 +1329,32 @@ country_event = {
 		ai_chance = { factor = 2 }
 	}
 }
+
+country_event = {
+	id = pexto.36
+	title = pexto.36.t
+	desc = pexto.36.d
+	picture = POPE_PREACHING_eventPicture
+	fire_only_once = yes
+	major = yes
+
+	trigger = {
+		tag = WLR
+		government = theocracy
+	}
+
+	mean_time_to_happen = {
+		months = 2
+	}
+
+	option = {
+		set_global_flag = WalaraHappened
+		set_religious_school = {
+			group = lathvy_group
+			school = walaran_school
+		}
+		prestige = 20
+		name = pexto.36.a
+		ai_chance = { factor = 2 }
+	}
+}

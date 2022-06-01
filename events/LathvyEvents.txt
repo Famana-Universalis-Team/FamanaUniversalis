@@ -843,6 +843,8 @@ country_event = { #TRADITIONAL & RINI
 					is_enemy = PEX
 					is_enemy = POM
 				}
+				factor = 0
+				has_global_flag = CelzionHappened
 			}
 		}
 		set_religious_school = {
@@ -893,6 +895,46 @@ country_event = { #TRADITIONAL & RINI
 		set_religious_school = {
 			group = lathvy_group
 			school = maxan_school
+		}
+	}
+	option = {
+		name = lathvy_piety.16.d
+		ai_chance = { 
+			factor = 0.2
+			modifier = {
+				factor = 7
+				capital_scope = {
+					region = walara_region
+					region = lomea_region
+				}
+			}
+		}
+		set_religious_school = {
+			group = lathvy_group
+			school = walaran_school
+		}
+		trigger = {
+			has_global_flag = WalaraHappened
+		}
+	}
+	
+	option = {
+		name = lathvy_piety.16.e
+		ai_chance = { 
+			factor = 1
+			modifier = {
+				factor = 2
+				capital_scope = {
+					superregion = west_estal_superregion
+				}
+			}
+		}
+		set_religious_school = {
+			group = lathvy_group
+			school = celzian_school
+		}
+		trigger = {
+			has_global_flag = CelzionHappened
 		}
 	}
 }

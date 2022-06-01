@@ -76,3 +76,114 @@ country_event = { #ordican claims 90%
 		}
     }
 }
+
+country_event = {
+	id = ordica.4
+	title = ordica.4.t
+	desc = ordica.4.d
+	picture = POPE_PREACHING_eventPicture
+	fire_only_once = yes
+	major = yes
+
+	trigger = {
+		tag = ORC
+		is_year = 320
+		NOT = { exists = PEX }
+	}
+
+	mean_time_to_happen = {
+		months = 2
+	}
+
+	option = {
+		set_global_flag = CelzionHappened
+		set_religious_school = {
+			group = lathvy_group
+			school = walaran_school
+		}
+		prestige = 20
+		name = ordica.4.a
+		ai_chance = { factor = 2 }
+	}
+}
+
+country_event = {
+	id = ordica.5
+	title = ordica.5.t
+	desc = ordica.5.d
+	picture = RELIGION_eventPicture
+
+	trigger = {
+		NOT = { has_country_flag = got_chance_to_switch_celzion }
+		has_global_flag = CelzionHappened
+		religion = lathvy
+		capital_scope = {
+			OR = {
+				superregion = west_estal_superregion
+				region = west_emastalia_region
+			}
+		}
+		OR = {
+			religious_school = {
+				group = lathvy
+				school = maxan_school
+			}
+			religious_school = {
+				group = lathvy
+				school = pextoglazian_school
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = ordica.5.a
+		ai_chance = { 
+			factor = 0.2
+			modifier = {
+				factor = 7
+				capital_scope = {
+					region = walara_region
+					region = lomea_region
+				}
+			}
+		}
+		set_religious_school = {
+			group = lathvy_group
+			school = walaran_school
+		}
+		trigger = {
+			has_global_flag = WalaraHappened
+		}
+	}
+	
+	option = {
+		name = ordica.5.b
+		ai_chance = { 
+			factor = 2
+			modifier = {
+				factor = 2
+				capital_scope = {
+					superregion = west_estal_superregion
+				}
+			}
+		}
+		set_religious_school = {
+			group = lathvy_group
+			school = celzian_school
+		}
+		trigger = {
+			has_global_flag = CelzionHappened
+		}
+	}
+
+	option = {
+		name = ordica.5.c
+		ai_chance = { 
+			factor = 2
+		}
+	}
+}
