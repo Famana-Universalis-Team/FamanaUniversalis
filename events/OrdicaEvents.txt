@@ -86,8 +86,9 @@ country_event = {
 	major = yes
 
 	trigger = {
-		tag = ORC
-		is_year = 320
+		owns_core_province = 6236
+		religion = lathvy
+		is_year = 326
 		NOT = { exists = PEX }
 	}
 
