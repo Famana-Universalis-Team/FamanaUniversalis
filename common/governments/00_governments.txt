@@ -11,6 +11,7 @@ monarchy = {
 				misl_confederacy_reform
 				rajput_kingdom
 				#Specific:
+				geq_reform
 				grand_duchy_reform
 				daimyo
 				indep_daimyo
@@ -417,7 +418,6 @@ tribal = {
 				gond_kingdom
 				great_mongol_state_reform
 				nomadic_tonxara_gov
-				geq_reform
 				naravami_tribe_rdu_reform
 				desert_tribe
 			}
