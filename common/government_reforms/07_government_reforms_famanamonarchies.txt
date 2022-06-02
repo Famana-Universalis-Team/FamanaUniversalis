@@ -286,6 +286,9 @@ geq_reform = {
 		stability_cost_to_declare_war = 1
 		enemy_core_creation = 0.2
 		defensiveness = 0.50
+		diplomatic_upkeep = -3
+		global_spy_defence = 1.0
+		production_efficiency = 0.10
 	}
 	ai = {
 		factor = 1000

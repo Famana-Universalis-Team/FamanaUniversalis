@@ -143,6 +143,12 @@ umz_2 = {
 		if = {
 				limit = { exists = RIA  }
 				AND = {
+					NOT = {
+						OR = {
+							is_rival = RIA
+							is_enemy = RIA
+						}
+					}
 					alliance_with = RIA
 					
 					RIA = {
@@ -163,7 +169,15 @@ umz_2 = {
        
         effect = {
            if = {
-				limit = { exists = RIA  }
+				limit = {
+					exists = RIA
+					NOT = {
+						OR = {
+							is_rival = RIA
+							is_enemy = RIA
+						}
+					}
+				}
 				vassalize = RIA
 			}
 	    else = {

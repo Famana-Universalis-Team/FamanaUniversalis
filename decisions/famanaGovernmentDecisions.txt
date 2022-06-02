@@ -90,9 +90,14 @@ country_decisions = {
                     superregion = jasua_superregion
                 }
             }
+			NOT = { has_reform = geq_reform }
+			NOT = {
+				alliance_with = FAS
+			}
         }
         allow = {
-            always = yes
+            is_free_or_tributary_trigger = yes
+			dip = 2
         }
         effect = {
             add_government_reform = geq_reform
