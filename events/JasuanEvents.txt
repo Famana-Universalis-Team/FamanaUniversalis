@@ -241,7 +241,7 @@ country_event = {
 					NOT = { exists = KLG }
 					NOT = { exists = NAF }
 					any_owned_province = {
-						culutre = Kachik
+						culture = Kachik
 					}
 				}
 				country_event = {
