@@ -463,6 +463,7 @@ country_event = { #bye bye pexto
 	trigger = {
 		AND = {
 			tag = PEX
+			NOT = { has_country_flag = pex_collapse_prevented }
 			OR = {
 				has_country_flag = pextocivilwar
 				is_year = 300
