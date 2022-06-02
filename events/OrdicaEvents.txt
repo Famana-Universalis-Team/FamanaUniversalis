@@ -102,7 +102,7 @@ country_event = {
 			group = lathvy_group
 			school = walaran_school
 		}
-		prestige = 20
+		add_prestige = 20
 		name = ordica.4.a
 		ai_chance = { factor = 2 }
 	}

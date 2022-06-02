@@ -743,6 +743,14 @@ country_event = { #TRADITIONAL & RINI
 					group = lathvy_group
 					school = maxan_school
 				}
+				religious_school = {
+					group = lathvy_group
+					school = walaran_school
+				}
+				religious_school = {
+					group = lathvy_group
+					school = celzian_school
+				}
 			}
 		}
 		any_known_country = {
