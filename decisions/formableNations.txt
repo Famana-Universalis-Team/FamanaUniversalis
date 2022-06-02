@@ -2098,12 +2098,9 @@ country_decisions = {
 				duration = 7300
 			}
 			add_prestige = 25
-			if = {
-				limit = {
-					government = theocracy
-				}
-				change_government = monarchy
-				add_government_reform = autocracy_reform
+			country_event = {
+				days = 1
+				id = pexto.34
 			}
 		}
 		ai_will_do = {
