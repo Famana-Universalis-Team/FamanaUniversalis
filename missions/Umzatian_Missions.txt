@@ -632,6 +632,9 @@ umz_3 = {
 			5020 = {
 				add_building = fort_15th
 			}
+			unnamed_area_15 = {
+			add_permanent_claim = ROOT
+			}
        
         }
 	
@@ -897,11 +900,13 @@ umz_4 = {
 			add_core = ROOT
 			change_culture = ROOT
 			change_religion = ROOT
-			
 			}
 			add_country_modifier = { 
 			name = umz_breach
 			duration = 3650 
+			}
+			hasia_area = {
+			discover_country = ROOT
 			}
 			
        
