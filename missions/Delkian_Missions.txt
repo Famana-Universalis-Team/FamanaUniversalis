@@ -141,7 +141,7 @@ delkia_2 = {
 	}
 	
 	del_turn_the_tables = {
-		icon = mission_onward_to_lahore
+		icon = mission_restore_caliphate_of_cordoba
 		required_missions = { del_modernize_army }
 		position = 3
 		
@@ -176,7 +176,7 @@ delkia_2 = {
 	}
 
 	del_ropinver_conquest = {
-		icon = mission_onward_to_lahore
+		icon = mission_rice_field
 		required_missions = { del_turn_the_tables }
 		position = 4
 		
@@ -279,7 +279,7 @@ delkia_3 = {
 	}
 	
 	del_deal_with_gadea = {
-		icon = mission_sw_against_the_desert
+		icon = mission_reclaim_lost_territory
 		required_missions = { del_makyan_frontier }
 		position = 3
 		
@@ -318,7 +318,7 @@ delkia_3 = {
     }
 
 	del_ruins_of_jagama = {
-		icon = mission_sw_against_the_desert
+		icon = mission_abu_saids_dream
 		required_missions = { del_deal_with_gadea }
 		position = 4
 		
@@ -368,7 +368,7 @@ delkia_3 = {
 	}
 
 	del_ideal_borders = {
-		icon = mission_onward_to_lahore
+		icon = mission_south_african_bases
 		required_missions = { del_ropinver_conquest del_ruins_of_jagama del_costal_cites }
 		position = 5
 		
@@ -400,7 +400,7 @@ delkia_4 = {
     has_country_shield = yes
 
 	del_protect_the_border = {
-		icon = mission_onward_to_lahore
+		icon = mission_conquer_maharashtra
 		required_missions = { del_modernize_army }
 		position = 2
 		
@@ -423,10 +423,12 @@ delkia_4 = {
 				limit = {
 					exists = SIX
 				}
-				reverse_add_casus_belli = {
-					target = DEL
-					type = cb_vassalize_mission
-					months = 12
+				SIX = {
+					add_casus_belli = {
+						target = DEL
+						type = cb_vassalize_mission
+						months = 12
+					}
 				}
 			}
 			sixan_area = {
@@ -500,8 +502,8 @@ delkia_4 = {
     }
 	
 	del_costal_cites = {
-		icon = mission_onward_to_lahore
-		required_missions = { mission_rice_field }
+		icon = mission_arabian_ports
+		required_missions = { del_sixan_conquest }
 		position = 4
 		
 		provinces_to_highlight = {
@@ -585,7 +587,7 @@ delkia_5 = {
 	}
 
 	del_into_ga_xal = {
-		icon = mission_onward_to_lahore
+		icon = mission_conquer_mewar
 		required_missions = { del_sixan_conquest }
 		position = 4
 		

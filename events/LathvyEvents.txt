@@ -743,6 +743,14 @@ country_event = { #TRADITIONAL & RINI
 					group = lathvy_group
 					school = maxan_school
 				}
+				religious_school = {
+					group = lathvy_group
+					school = walaran_school
+				}
+				religious_school = {
+					group = lathvy_group
+					school = celzian_school
+				}
 			}
 		}
 		any_known_country = {
@@ -825,6 +833,12 @@ country_event = { #TRADITIONAL & RINI
 				factor = 10
 				capital_scope = {
 					superregion = west_estal_superregion
+					NOT = {
+						OR = {
+							has_global_flag = WalaraHappened
+							has_global_flag = CelzionHappened
+						}
+					}
 				}
 			}
 			modifier = {
@@ -832,7 +846,7 @@ country_event = { #TRADITIONAL & RINI
 				primary_culture = Pextan
 			}
 			modifier = {
-				factor = 1000
+				factor = 10
 				tag = PEX
 			}
 			modifier = {
@@ -881,7 +895,7 @@ country_event = { #TRADITIONAL & RINI
 				primary_culture = Lerushian
 			}
 			modifier = {
-				factor = 1000
+				factor = 10
 				tag = MOX
 			}
 			modifier = {
@@ -899,15 +913,30 @@ country_event = { #TRADITIONAL & RINI
 			school = maxan_school
 		}
 	}
-	option = {
+	option = { #Walaran
 		name = lathvy_piety.16.d
 		ai_chance = { 
-			factor = 0.2
+			factor = 0.25
 			modifier = {
 				factor = 7
 				capital_scope = {
 					region = walara_region
 					region = lomea_region
+				}
+			}
+			modifier = {
+				factor = 20
+				primary_culture = Walaran
+			}
+			modifier = {
+				factor = 10
+				tag = WLR
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					is_rival = WLR
+					is_enemy = WLR
 				}
 			}
 		}
@@ -920,7 +949,7 @@ country_event = { #TRADITIONAL & RINI
 		}
 	}
 	
-	option = {
+	option = { #Celzian
 		name = lathvy_piety.16.e
 		ai_chance = { 
 			factor = 1
@@ -928,6 +957,21 @@ country_event = { #TRADITIONAL & RINI
 				factor = 2
 				capital_scope = {
 					superregion = west_estal_superregion
+				}
+			}
+			modifier = {
+				factor = 20
+				primary_culture = East_Ordican
+			}
+			modifier = {
+				factor = 10
+				tag = CEL
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					is_rival = CEL
+					is_enemy = CEL
 				}
 			}
 		}

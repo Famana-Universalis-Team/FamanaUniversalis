@@ -113,6 +113,30 @@ oppia_gov_name = {
 	}
 }
 
+vanoma_geq_name = {
+	rank = {
+		1 = GEQ
+		2 = GEQ
+		3 = EMPIRE
+	}
+
+	ruler_male = {
+		1 = DUKE
+		2 = KING
+		3 = EMPEROR
+	}
+
+	ruler_female = {
+		1 = DUCHESS
+		2 = QUEEN
+		3 = EMPRESS
+	}
+
+	trigger = {
+		has_reform = geq_reform
+	}
+}
+
 naravami_clan_name = {
 	rank = {
 		1 = NARAVAMI_CLAN
@@ -298,8 +322,35 @@ holy_monarchy = {
 	}
 
 	trigger = {
-		tag = PEX
+		OR = {
+			tag = PEX
+			has_reform = holy_monarchy_reform
+		}
 		NOT = { has_country_flag = lathvy_empire_flag }
+	}
+}
+
+high_bishophric = {
+	rank = {
+		1 = HIGH_BISHOPHRIC
+		2 = HIGH_BISHOPHRIC
+		3 = HIGH_BISHOPHRIC
+	}
+
+	ruler_male = {
+		1 = HIGH_PRIEST
+		2 = HIGH_PRIEST
+		3 = HIGH_PRIEST
+	}
+
+	ruler_female = {
+		1 = HIGH_PRIEST
+		2 = HIGH_PRIEST
+		3 = HIGH_PRIEST
+	}
+
+	trigger = {
+		has_reform = high_bishophric_reform
 	}
 }
 

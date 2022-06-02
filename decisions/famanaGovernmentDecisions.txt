@@ -80,4 +80,28 @@ country_decisions = {
 			factor = 1
 		}
 	}
+
+	vanoman_geq = {
+        potential = {
+            tag = VAN
+            FAS = {
+                num_of_owned_provinces_with = {
+                    value = 20
+                    superregion = jasua_superregion
+                }
+            }
+			NOT = { has_reform = geq_reform }
+			NOT = {
+				alliance_with = FAS
+			}
+        }
+        allow = {
+            is_free_or_tributary_trigger = yes
+			dip = 2
+        }
+        effect = {
+            add_government_reform = geq_reform
+			add_truce_with = FAS
+        }
+    }
 }

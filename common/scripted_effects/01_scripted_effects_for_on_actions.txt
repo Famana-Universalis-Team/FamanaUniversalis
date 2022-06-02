@@ -43,7 +43,47 @@ initialize_schools_effect = { #Used in on_startup on_action
 					opinion = -1
 				}
 			}
-		} #Nafan is chill with both
+		}
+		random_country = { #Celzian is hated by Pextoglazian
+			limit = {
+				religious_school = {
+					group = lathvy_group
+					school = celzian_school
+				}
+			}
+			random_country = {
+				limit = {
+					religious_school = {
+						group = lathvy_group
+						school = pextoglazian_school
+					}
+				}
+				set_school_opinion = {
+					who = PREV
+					opinion = -1
+				}
+			}
+		}
+		random_country = { #Celzian is hated by Pextoglazian
+			limit = {
+				religious_school = {
+					group = lathvy_group
+					school = walaran_school
+				}
+			}
+			random_country = {
+				limit = {
+					religious_school = {
+						group = lathvy_group
+						school = pextoglazian_school
+					}
+				}
+				set_school_opinion = {
+					who = PREV
+					opinion = -1
+				}
+			}
+		}
 	}
 }
 

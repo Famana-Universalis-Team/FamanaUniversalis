@@ -23,7 +23,7 @@ country_event = { #25%
         ai_chance = { factor = 1 }
 		add_country_modifier = { 
     		name = inner_turmoil_25
-    		duration = -1  
+    		duration = -1
 		}
     }
 }

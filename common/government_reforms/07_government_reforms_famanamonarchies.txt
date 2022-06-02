@@ -265,3 +265,32 @@ nomadic_tonxara_gov = {
 		factor = 1000
 	}
 }
+
+geq_reform = {
+	icon = "elective_monarchy"
+	allow_normal_conversion = no
+	potential = {
+		tag = VAN
+	}
+	fixed_rank = 2
+	valid_for_nation_designer = no
+
+	custom_attributes = {
+		locked_government_type = yes
+		enables_aristocratic_idea_group = yes
+	}
+
+	legacy_equivalent = despotic_monarchy
+
+	modifiers = {
+		stability_cost_to_declare_war = 1
+		enemy_core_creation = 0.2
+		defensiveness = 0.50
+		diplomatic_upkeep = -3
+		global_spy_defence = 1.0
+		production_efficiency = 0.10
+	}
+	ai = {
+		factor = 1000
+	}
+}

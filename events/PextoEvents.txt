@@ -463,9 +463,10 @@ country_event = { #bye bye pexto
 	trigger = {
 		AND = {
 			tag = PEX
+			NOT = { has_country_flag = pex_collapse_prevented }
 			OR = {
 				has_country_flag = pextocivilwar
-				is_year = 330
+				is_year = 300
 			}
 		}
 	}
@@ -497,13 +498,11 @@ country_event = { #bye bye pexto
 			release = FLB
 		}
 		hidden_effect = {
-			PPX = {
-				add_core = 5288
-				add_core = 5283
-				add_core = 5284
-			}
+			5288 = { add_core = PIX }
+			5283 = { add_core = PIX }
+			5284 = { add_core = PIX }
 			POM = {
-				integrate = PEX
+				inherit = PEX
 			}
 		}
 		west_estal_superregion = {
@@ -886,7 +885,7 @@ country_event = {
 				id = pexto.27
 			}
 		}
-		random = {
+		random_list = {
 			1 = { #Nevia wins the trial
 				PNV = {
 					country_event = {
@@ -1247,7 +1246,7 @@ country_event = {
 			}
 			add_prestige = 25
 			change_government = theocracy
-			add_government_reform = leading_clergy_reform
+			add_government_reform = high_bishophric_reform
 	}
 
 	option = { #Monarchy Walara
@@ -1364,8 +1363,33 @@ country_event = {
 			group = lathvy_group
 			school = walaran_school
 		}
-		prestige = 20
+		add_prestige = 20
 		name = pexto.36.a
+		ai_chance = { factor = 2 }
+	}
+}
+
+#secretly make pomlen a high bishophric if its not one yet
+country_event = {
+	id = pexto.37
+	fire_only_once = yes
+	hidden = yes
+
+	trigger = {
+		tag = POM
+		POM = {
+			NOT = { has_reform = high_bishophric_reform }
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		change_government = theocracy
+		add_government_reform = high_bishophric_reform
+		name = pexto.37.a
 		ai_chance = { factor = 2 }
 	}
 }

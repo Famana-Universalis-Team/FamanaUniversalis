@@ -11,6 +11,7 @@ monarchy = {
 				misl_confederacy_reform
 				rajput_kingdom
 				#Specific:
+				geq_reform
 				grand_duchy_reform
 				daimyo
 				indep_daimyo
@@ -530,6 +531,7 @@ theocracy = {
 				papacy_reform
 				holy_state_reform
 				united_cantons_reform
+				high_bishophric_reform
 				holy_monarchy_reform
 				holy_monarchy_reform_2
 				corrupt_monarchy_reform

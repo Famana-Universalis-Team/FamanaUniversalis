@@ -141,48 +141,58 @@ umz_2 = {
        
         trigger = {
 		if = {
-				limit = { exists = RIA  }
-				AND = {
-					alliance_with = RIA
-					
-					RIA = {
-						has_opinion = {
-							who = UMZ
-							value = 200
-						}
+			limit = {
+				exists = RIA
+				NOT = {
+					OR = {
+						is_rival = RIA
+						is_enemy = RIA
 					}
 				}
 			}
-	    else = {
-				owns_core_province = 5041
+			AND = {
+				alliance_with = RIA
+				RIA = {
+					has_opinion = {
+						who = UMZ
+						value = 200
+					}
+				}
 			}
-				
-			
+		}
+	    else = {
+			owns_core_province = 5041
+			}
         }
         
        
         effect = {
            if = {
-				limit = { exists = RIA  }
+				limit = {
+					exists = RIA
+					NOT = {
+						OR = {
+							is_rival = RIA
+							is_enemy = RIA
+						}
+					}
+				}
 				vassalize = RIA
 			}
 	    else = {
 				5041 = {     
-				add_unit_construction = {
-				type = light_ship
-				amount = 5
-				speed = 0.25
-				cost = 0
+					add_unit_construction = {
+						type = light_ship
+						amount = 5
+						speed = 0.25
+						cost = 0
 					}
-				
-				
 				}
 			}
 			add_country_modifier = { #yeah uhhh I'm not making this a trade modifier
-			name = umz_trade_domination
-			duration = 9125 
+				name = umz_trade_domination
+				duration = 9125 
 			}
-			
         }
     }
 	UMZ_strenghten = {
