@@ -205,3 +205,27 @@ stabilise_theocracy_reform = {
 		factor = 1
 	}
 }
+
+stabilise_horde_reform = {
+	icon = "horde_riding_highlighted"
+	allow_normal_conversion = yes
+	potential = {
+		tag = KRS
+		is_revolutionary = no
+	}
+	trigger = {
+		NOT = { has_government_attribute_short_desc = locked_government_type }
+		is_emperor = no
+		NOT = { is_lesser_in_union = yes }
+		
+	}
+	effect = {
+		lose_reforms = 4
+		change_government = tribal
+		add_government_reform = steppe_horde
+		set_country_flag = maky_stabilization
+	}
+	ai = {
+		factor = 2
+	}
+}
