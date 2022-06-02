@@ -86,6 +86,49 @@ holy_monarchy_reform_2 = {
 	fixed_rank = 3
 }
 
+high_bishophric_reform = {
+	icon = "highbishophric"
+	allow_normal_conversion = yes
+	lock_level_when_selected = yes
+	legacy_equivalent = theocratic_government
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	modifiers = {
+		global_missionary_strength = 0.01
+		church_influence_modifier = 0.2
+		church_loyalty_modifier = 0.1
+		monthly_piety = 0.05
+		diplomatic_reputation = 2
+	}
+	different_religion_acceptance = -30
+	rulers_can_be_generals = no
+	heirs_can_be_generals = no
+	potential = {
+		religion = lathvy
+		OR = {
+			AND = {
+				owns_core_province = 5337
+				religious_school = {
+					group = lathvy
+					school = pextoglazian_school
+				}
+			}
+			AND = {
+				owns_core_province = 5285
+				religious_school = {
+					group = lathvy
+					school = walaran_school
+				}
+			}
+		}
+	}
+	custom_attributes = {
+		locked_government_type = yes
+		enables_divine_idea_group = yes
+	}
+	fixed_rank = 2
+}
+
 corrupt_monarchy_reform = {
 	icon = "shatteredpextoglazia"
 	allow_normal_conversion = no

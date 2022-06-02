@@ -26,6 +26,7 @@ country_event = {
 
 #Yomtanian Spaceship
 #I did the maths, this event has a 2.9% chance of firing in a normal full length campaign from 212 to 639. From 212 to 324, it is more like a 0.77% chance of it having occured. In other words, you need to be very lucky to ever see this event.
+#update: decreased it again. It has an even lower chance of firing now, because i saw like 3 people get this event in their games
 country_event = {
 	id = eastereggs.2
 	title = eastereggs.2.t
@@ -37,7 +38,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		days = 3600000
+		days = 7200000
 	}
 
 	option = {

@@ -36,6 +36,10 @@ spriteTypes = {
 		texturefile = "gfx//interface//government_reform_icons//shatteredpextoglazia.dds"
 	}
 	spriteType = {
+		name = "government_reform_highbishophric"
+		texturefile = "gfx//interface//government_reform_icons//highbishophric.dds"
+	}
+	spriteType = {
 		name = "government_reform_landscape"
 		texturefile = "gfx//interface//government_reform_icons//landscape.dds"
 	}

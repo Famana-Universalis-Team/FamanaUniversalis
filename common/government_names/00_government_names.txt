@@ -298,8 +298,35 @@ holy_monarchy = {
 	}
 
 	trigger = {
-		tag = PEX
+		OR = {
+			tag = PEX
+			has_reform = holy_monarchy_reform
+		}
 		NOT = { has_country_flag = lathvy_empire_flag }
+	}
+}
+
+high_bishophric = {
+	rank = {
+		1 = HIGH_BISHOPHRIC
+		2 = HIGH_BISHOPHRIC
+		3 = HIGH_BISHOPHRIC
+	}
+
+	ruler_male = {
+		1 = HIGH_PRIEST
+		2 = HIGH_PRIEST
+		3 = HIGH_PRIEST
+	}
+
+	ruler_female = {
+		1 = HIGH_PRIEST
+		2 = HIGH_PRIEST
+		3 = HIGH_PRIEST
+	}
+
+	trigger = {
+		has_reform = high_bishophric_reform
 	}
 }
 

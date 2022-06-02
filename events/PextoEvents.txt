@@ -1247,7 +1247,7 @@ country_event = {
 			}
 			add_prestige = 25
 			change_government = theocracy
-			add_government_reform = leading_clergy_reform
+			add_government_reform = high_bishophric_reform
 	}
 
 	option = { #Monarchy Walara
@@ -1366,6 +1366,31 @@ country_event = {
 		}
 		prestige = 20
 		name = pexto.36.a
+		ai_chance = { factor = 2 }
+	}
+}
+
+#secretly make pomlen a high bishophric if its not one yet
+country_event = {
+	id = pexto.37
+	fire_only_once = yes
+	hidden = yes
+
+	trigger = {
+		tag = POM
+		POM = {
+			NOT = { has_reform = high_bishophric_reform }
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		change_government = theocracy
+		add_government_reform = high_bishophric_reform
+		name = pexto.37.a
 		ai_chance = { factor = 2 }
 	}
 }
