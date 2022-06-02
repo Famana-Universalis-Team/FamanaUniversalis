@@ -102,8 +102,10 @@ country_decisions = {
 		potential = {
 			AND = {
 				tag = DEL
-				NOT = {
-					has_country_flag = ximal_capital
+				5163 = {
+					NOT = {
+                        has_province_flag = ximal_capital
+                    }
 				}
 			}
 		}
@@ -112,15 +114,17 @@ country_decisions = {
 		}
 		allow = {
 			is_at_war = no
-			owns = 5163
+			5163 = {
+                owned_by = ROOT
+            }
 		}
 		effect = {
-			set_country_flag = ximal_capital
 			5163 = {
 				add_base_manpower = 2
 				add_base_tax = 2
 				add_base_production = 2
-			}	
+                set_province_flag = ximal_capital
+			}
 			DEL = {
 				set_capital = 5163
 			}
