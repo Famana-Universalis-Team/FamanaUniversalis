@@ -108,16 +108,26 @@ high_bishophric_reform = {
 		OR = {
 			AND = {
 				owns_core_province = 5337
-				religious_school = {
-					group = lathvy
-					school = pextoglazian_school
+				if = {
+					limit = {
+						has_dlc = "Cradle of Civilisation"
+					}
+					religious_school = {
+						group = lathvy
+						school = pextoglazian_school
+					}
 				}
 			}
 			AND = {
 				owns_core_province = 5285
-				religious_school = {
-					group = lathvy
-					school = walaran_school
+				if = {
+					limit = {
+						has_dlc = "Cradle of Civilisation"
+					}
+					religious_school = {
+						group = lathvy
+						school = walaran_school
+					}
 				}
 			}
 		}
@@ -127,6 +137,9 @@ high_bishophric_reform = {
 		enables_divine_idea_group = yes
 	}
 	fixed_rank = 2
+	ai = {
+		factor = 10
+	}
 }
 
 corrupt_monarchy_reform = {

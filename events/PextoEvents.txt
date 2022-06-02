@@ -465,7 +465,7 @@ country_event = { #bye bye pexto
 			tag = PEX
 			OR = {
 				has_country_flag = pextocivilwar
-				is_year = 330
+				is_year = 300
 			}
 		}
 	}
@@ -497,13 +497,11 @@ country_event = { #bye bye pexto
 			release = FLB
 		}
 		hidden_effect = {
-			PPX = {
-				add_core = 5288
-				add_core = 5283
-				add_core = 5284
-			}
+			5288 = { add_core = PIX }
+			5283 = { add_core = PIX }
+			5284 = { add_core = PIX }
 			POM = {
-				integrate = PEX
+				inherit = PEX
 			}
 		}
 		west_estal_superregion = {
