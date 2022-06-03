@@ -826,6 +826,10 @@ country_event = { #TRADITIONAL & RINI
 		ai_chance = { 
 			factor = 1
 			modifier = {
+				factor = 5
+				has_country_flag = vanomaLathvyFlag
+			}
+			modifier = {
 				factor = 1.5
 				full_idea_group	= humanist_ideas
 			}

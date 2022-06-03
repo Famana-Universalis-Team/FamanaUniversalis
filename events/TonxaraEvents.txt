@@ -201,6 +201,14 @@ country_event = { #ouchy wouchies to the tonxara
         NOT = {
             has_country_modifier = tonxara_troubles
         }
+        NOT = {
+            has_country_flag = tonxaraCBT
+        }
+    }
+    immediate = {
+        hidden_effect = {
+            set_country_flag = tonxaraCBT
+        }
     }
     option = {
         name = tonxara.6.a

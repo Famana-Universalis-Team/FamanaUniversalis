@@ -507,6 +507,51 @@
  vanoma_undisturbed_trade:0 "Undisturbed Trade"
  emtit_exit:0 "Exit of the Emtiti Pirates"
 
+ vanoma.4.t:0 "Expansion of Vanoma"
+ vanoma.4.desc:0 "Beyond our immediate borders, many Vanomans have settled in small villages and homesteads. Surely, we should not let them remain unprotected from the barbarians of interior Estal. To protect these Vanomans, we will set up a number of outposts in these territories. Of course, that means we can also tax these settlers."
+ vanoma.4.a:0 "Splendid!"
+
+ vanoma.5.t:0 "A Great Expedition"
+ vanoma.5.desc:0 "[Root.Monarch.GetTitle] [Root.Monarch.GetName] has had an idea. While Vanoma is a very advanced and prosperous nation, it lacks knowledge of the outside world. The Vanomans are aware of the existence of a great civilization straddling the shorelines of a vast inland sea, somewhere far in the south. A nation known as Moxon once contacted them to use their technology in a war against pale, monstruous beasts. Those same beasts then attacked Vanoma some decades later! To avoid such situations in the future, it would be very useful to know what is happening in the south. Therefore, an expedition should be sent to travel, map out and document the various countries of the region. It would be an expensive endeavor, however, and Vanoma is not the most outgoing nation."
+ vanoma.5.a:0 "It is time to expand our horizons!"
+ vanoma.5.b:0 "We cannot afford this."
+
+ vanoma.6.t:0 "The Expedition Reaches Jasua!"
+ vanoma.6.desc:0 "The delegation has reached the great city of Kinvirel. Here, they have acquired maps of the region, and documented many interesting aspects of Jasuan culture. Some members of the delegation are even saying that Jasuan culture is better than Vanoman! Do they have a point, or is Vanoma still the greatest?"
+ vanoma.6.a:0 "We have much to learn!"
+ vanoma.6.b:0 "Bah! They are mere barbarians."
+
+ vanoma.7.t:0 "The Expedition Reaches the Hoxoi Coast!"
+ vanoma.7.desc:0 "The expedition continues. Passing through the cities of Mahansha, Roklot and Ropinver, they have encountered many strange things. These people call themselves 'Oppians', but we have never heard of such a culture. The most astonishing thing, however, is the agriculture. Vast plantations line the hills of this coastal strip, growing plants we have never seen before. We could learn much from the locals."
+ vanoma.7.a:0 "Interesting."
+
+ vanoma.8.t:0 "The Expedition Reaches Ga Xal!"
+ vanoma.8.desc:0 "The delegation has reached its most spectacular destination. Ga Xal is clearly the grandest civilization in the entire world! The cities of Ximal, Sixan, Agixion and especially Xon strike awe into the delegation members. Xon in particular is an incredible feat of architecture. It is not just the cities that impress, however, but also the local technology. Many unique inventions, some of which are completely new to us, prove that Vanoma is not the only inventive society. Let us take some Xalian artifacts with us, so that we may use them at home."
+ vanoma.8.a:0 "It seems we are not the only inventors."
+
+ vanoma.9.t:0 "The Expedition Reaches Pextoglazia!"
+ vanoma.9.desc:0 "The expedition continues, this time by sea instead of land. On the other side of the Gomic from Ga Xal, in western Estal, lies the Holy Kingdom of Pextoglazia. The Lathvy religion, which we have known about for a long time thanks to Stroktur and Kapolia, seems to have originated in the Pextoglazian capital city of Pomlen. We have visited the Pextoglazian High Priest, and he taught us many interesting, but heretical, lessons. Some aspects of Lathvy philosophy are compatible with the Va faith, so it could be a good idea to bring this faith home with us."
+ vanoma.9.a:0 "Tell us more."
+ vanoma.9.b:0 "The old ways are best."
+
+ vanoma.10.t:0 "The Expedition Reaches Emastalia!"
+ vanoma.10.desc:0 "The final destination of the expedition, Emastalia, is an interesting one. Evidently descended from Maxans, the Emastalians are a people of merchants, artisans and shipbuilders. Their nautical design in particular is fascinating, making Vanoman designs look primitive in comparison. As intriguing as Emastalia is, we must now return to Vanoma."
+ vanoma.10.a:0 "Let us adopt these methods."
+
+ vanoma.11.t:0 "The Delegation Returns!"
+ vanoma.11.desc:0 "With great fanfare, the delegation has returned to $CAPITAL_CITY$. They have learned many things on their journey, which we can now use to our benefit at home! Their travels have brought them from Jasua, to Ga Xal, to Pextoglazia and Emastalia, and back again. They have done a great service for Vanoma, so a celebration is in order."
+ vanoma.11.a:0 "Brilliant!"
+
+ vanoma.12.t:0 "The Expedition Has Been Lost!"
+ vanoma.12.desc:0 "Tragically, it seems like the expedition to the Gomic has failed. There has been no sign of them for a long time, so it is safe to assume they didn't make it. We should remember those who died for Vanoma, but also realize that it was a mistake to send them on their journey in the first place. We will refrain from such idealism in the future."
+ vanoma.12.a:0 "Perhaps we are better off in isolation..."
+
+ vanoma.13.t:0 "The Spread of Lathvy"
+ vanoma.13.desc:0 "The Great Expedition brought us many great ideas and inventions, but it also brought with it a virus of the mind... the Lathvy faith. It has been spreading rapidly in recent years, based on the teachings of the High Priest of Pomlen. While some in our court are sympathetic towards this new religion, many are skeptical. What should be done about the Lathvyites?"
+ vanoma.13.a:0 "They are right."
+ vanoma.13.b:0 "Kill the heathens!"
+ vanoma.13.c:0 "To each their own."
+
  #Naravami Events
  naravam.2.t:0 "Threat of Annexation"
  naravam.2.desc:0 "As Ordica grows ever stronger, the future of our nation seems increasingly bleak. If we do not act soon, we may be directly integrated into the Ordican Empire. Time is running out, and unless we do something Rdumkatvar is surely lost."

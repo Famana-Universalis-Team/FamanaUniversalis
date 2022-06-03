@@ -154,3 +154,600 @@ country_event = {
         }
     }
 }
+
+country_event = {
+    id = vanoma.4
+    title = vanoma.4.t
+    desc = vanoma.4.desc
+    picture = JESUTIS_IN_BRAZIL_eventPicture
+    fire_only_once = yes
+
+    trigger = {
+        tag = VAN
+        is_year = 290
+        6038 = {
+            is_empty = yes
+        }
+        6040 = {
+            is_empty = yes
+        }
+        6051 = {
+            is_empty = yes
+        }
+        6047 = {
+            is_empty = yes
+        }
+        6006 = {
+            is_empty = yes
+        }
+        5989 = {
+            is_empty = yes
+        }
+    }
+
+    mean_time_to_happen = {
+        months = 120
+    }
+
+    option = {
+        name = vanoma.4.a
+        ai_chance = { factor = 1 }
+        if = {
+            limit = {
+                NOT = {
+                    stability = 3
+                }
+            }
+            add_stability = 1
+        }
+        unnamed_area_42 = {
+            cede_province = ROOT
+            add_core = ROOT
+            change_culture = ROOT
+            change_religion	= ROOT
+        }
+        mori_area = {
+            cede_province = ROOT
+            add_core = ROOT
+            change_culture = ROOT
+            change_religion	= ROOT
+        }
+        5989 = {
+            cede_province = ROOT
+            add_core = ROOT
+            change_culture = ROOT
+            change_religion	= ROOT
+        }
+    }
+}
+
+country_event = { #Vanoman expedition start
+    id = vanoma.5
+    title = vanoma.5.t
+    desc = vanoma.5.desc
+    picture = COURT_eventPicture
+    fire_only_once = yes
+
+    trigger = {
+        tag = VAN
+        is_year = 214
+        NOT = {
+            has_country_flag = vanomaHadExpeditionFlag
+        }
+    }
+
+    mean_time_to_happen = {
+        months = 60
+    }
+
+    immediate = {
+        hidden_effect = {
+            set_country_flag = vanomaHadExpeditionFlag
+        }
+    }
+
+    option = {
+        name = vanoma.5.a
+        ai_chance = { factor = 1 }
+        custom_tooltip = van_start_explo_event
+        add_treasury = -200
+        add_manpower = -2.5
+        add_country_modifier = {
+            name = van_no_diplomats
+            duration = -1
+        }
+        hidden_effect = {
+            country_event = {
+                id = vanoma.6
+                days = 100
+                random = 265
+            }
+            random = {
+                chance = 1
+                set_country_flag = vanomaExpeditionFailed
+            }
+        }
+    }
+
+    option = {
+        name = vanoma.5.b
+        ai_chance = { factor = 0 }
+    }
+}
+
+country_event = { #Jasua
+    id = vanoma.6
+    title = vanoma.6.t
+    desc = vanoma.6.desc
+    picture = HARBOUR_eventPicture
+    fire_only_once = yes
+    is_triggered_only = yes
+
+    trigger = {
+        NOT = {
+            has_country_flag = vanomaExpeditionFailed
+        }
+    }
+
+    immediate = {
+        hidden_effect = {
+            country_event = {
+                id = vanoma.7
+                days = 100
+                random = 265
+            }
+            random = {
+                chance = 1
+                set_country_flag = vanomaExpeditionFailed
+            }
+            jasua_region = {
+                discover_country = ROOT
+            }
+            kapolia_region = {
+                discover_country = ROOT
+            }
+            bamal_gulf_region = {
+                discover_country = ROOT
+            }
+        }
+    }
+
+    option = {
+        name = vanoma.6.a
+        ai_chance = { factor = 1 }
+        #add_adm_power = 50
+        custom_tooltip = van_exp_tt_general
+        custom_tooltip = van_jasua_tt_1
+        set_country_flag = van_add_adm_power_flag
+    }
+    option = {
+        name = vanoma.6.b
+        ai_chance = { factor = 1 }
+        #add_ruler_modifier = {
+        #    name = vanoman_exc
+        #    duration = -1
+        #}
+        custom_tooltip = van_exp_tt_general
+        custom_tooltip = van_jasua_tt_2
+        set_country_flag = vanoman_exc_flag
+    }
+}
+
+country_event = { #Hoxoi
+    id = vanoma.7
+    title = vanoma.7.t
+    desc = vanoma.7.desc
+    picture = HARBOUR_eventPicture
+    fire_only_once = yes
+    is_triggered_only = yes
+
+    trigger = {
+        NOT = {
+            has_country_flag = vanomaExpeditionFailed
+        }
+    }
+
+    immediate = {
+        hidden_effect = {
+            country_event = {
+                id = vanoma.8
+                days = 100
+                random = 265
+            }
+            random = {
+                chance = 1
+                set_country_flag = vanomaExpeditionFailed
+            }
+            eastern_desert_region = {
+                discover_country = ROOT
+            }
+            east_gomic = {
+                discover_country = ROOT
+            }
+        }
+    }
+
+    option = {
+        name = vanoma.7.a
+        ai_chance = { factor = 1 }
+        #add_country_modifier = {
+        #    name = van_hoxoi
+        #    duration = 9125
+        #}
+        custom_tooltip = van_exp_tt_general
+        custom_tooltip = van_hoxoi_tt
+        set_country_flag = van_hoxoi_flag
+    }
+}
+
+country_event = { #Ga Xal
+    id = vanoma.8
+    title = vanoma.8.t
+    desc = vanoma.8.desc
+    picture = HARBOUR_eventPicture
+    fire_only_once = yes
+    is_triggered_only = yes
+
+    immediate = {
+        hidden_effect = {
+            country_event = {
+                id = vanoma.9
+                days = 100
+                random = 265
+            }
+            random = {
+                chance = 1
+                set_country_flag = vanomaExpeditionFailed
+            }
+            moxon_region = {
+                discover_country = ROOT
+            }
+            south_xalia_region = {
+                discover_country = ROOT
+            }
+            east_xalia_region = {
+                discover_country = ROOT
+            }
+            north_xalia_region = {
+                discover_country = ROOT
+            }
+            moria_region = {
+                discover_country = ROOT
+            }
+        }
+    }
+
+    trigger = {
+        NOT = {
+            has_country_flag = vanomaExpeditionFailed
+        }
+    }
+
+    option = {
+        name = vanoma.8.a
+        ai_chance = { factor = 1 }
+        #add_country_modifier = {
+        #    name = van_gax
+        #    duration = 18250
+        #}
+        custom_tooltip = van_exp_tt_general
+        custom_tooltip = van_gaxal_tt
+        set_country_flag = van_gax_flag
+    }
+}
+
+country_event = { #Pexto
+    id = vanoma.9
+    title = vanoma.9.t
+    desc = vanoma.9.desc
+    picture = HARBOUR_eventPicture
+    fire_only_once = yes
+    is_triggered_only = yes
+
+    trigger = {
+        NOT = {
+            has_country_flag = vanomaExpeditionFailed
+        }
+    }
+
+    immediate = {
+        hidden_effect = {
+            country_event = {
+                id = vanoma.10
+                days = 100
+                random = 265
+            }
+            random = {
+                chance = 1
+                set_country_flag = vanomaExpeditionFailed
+            }
+            north_gomic_area = {
+                discover_country = ROOT
+            }
+            pextoglazia_region = {
+                discover_country = ROOT
+            }
+            lomea_region = {
+                discover_country = ROOT
+            }
+        }
+    }
+
+    option = {
+        name = vanoma.9.a
+        ai_chance = { factor = 1 }
+        #set_country_flag = vanomaLathvyFlag
+        #add_country_modifier = {
+        #    name = van_pex_lathvy
+        #    duration = 9125
+        #}
+        custom_tooltip = van_exp_tt_general
+        custom_tooltip = van_pexto_tt_1
+        set_country_flag = van_pex_lathvy_flag
+    }
+    option = {
+        name = vanoma.9.b
+        ai_chance = { factor = 1 }
+        #add_country_modifier = {
+        #    name = van_pex_va
+        #    duration = 9125
+        #}
+        custom_tooltip = van_exp_tt_general
+        custom_tooltip = van_pexto_tt_2
+        set_country_flag = van_pex_va_flag
+    }
+}
+
+country_event = { #Emastalia
+    id = vanoma.10
+    title = vanoma.10.t
+    desc = vanoma.10.desc
+    picture = HARBOUR_eventPicture
+    fire_only_once = yes
+    is_triggered_only = yes
+
+    trigger = {
+        NOT = {
+            has_country_flag = vanomaExpeditionFailed
+        }
+    }
+
+    immediate = {
+        hidden_effect = {
+            country_event = {
+                id = vanoma.11
+                days = 150
+                random = 400
+            }
+            pelig_region = {
+                discover_country = ROOT
+            }
+            emastalia_region = {
+                discover_country = ROOT
+            }
+            west_emastalia_region = {
+                discover_country = ROOT
+            }
+            apilanya_region = {
+                discover_country = ROOT
+            }
+            voychonia_region = {
+                discover_country = ROOT
+            }
+        }
+    }
+
+    option = {
+        name = vanoma.10.a
+        ai_chance = { factor = 1 }
+        #add_country_modifier = {
+        #    name = van_est
+        #    duration = 9125
+        #}
+        custom_tooltip = van_exp_tt_general
+        custom_tooltip = van_emastalia_tt 
+        set_country_flag = van_est_flag
+    }
+}
+
+country_event = { #Delegation returns
+    id = vanoma.11
+    title = vanoma.11.t
+    desc = vanoma.11.desc
+    picture = FEAST_eventPicture
+    fire_only_once = yes
+    is_triggered_only = yes
+
+    option = {
+        name = vanoma.11.a
+        ai_chance = { factor = 1 }
+        add_prestige = 25
+        remove_country_modifier	= van_no_diplomats
+        if = {
+            limit = {
+                has_country_flag = van_add_adm_power_flag
+            }
+            add_adm_power = 50
+        }
+        if = {
+            limit = {
+                has_country_flag = vanoman_exc_flag
+            }
+            add_ruler_modifier = {
+                name = vanoman_exc
+                duration = -1
+            }
+        }
+        if = {
+            limit = {
+                has_country_flag = van_hoxoi_flag
+            }
+            add_country_modifier = {
+                name = van_hoxoi
+                duration = 9125
+            }
+        }
+        if = {
+            limit = {
+                has_country_flag = van_gax_flag
+            }
+            add_country_modifier = {
+                name = van_gax
+                duration = 18250
+            }
+        }
+        if = {
+            limit = {
+                has_country_flag = van_pex_lathvy_flag
+            }
+            set_country_flag = vanomaLathvyFlag
+            add_country_modifier = {
+                name = van_pex_lathvy
+                duration = 9125
+            }
+        }
+        if = {
+            limit = {
+                has_country_flag = van_pex_va_flag
+            }
+            add_country_modifier = {
+                name = van_pex_va
+                duration = 9125
+            }
+        }
+        if = {
+            limit = {
+                has_country_flag = van_est_flag
+            }
+            add_country_modifier = {
+                name = van_est
+                duration = 9125
+            }
+        }
+    }
+}
+
+country_event = { #Delegation lost
+    id = vanoma.12
+    title = vanoma.12.t
+    desc = vanoma.12.desc
+    picture = FLAGSHIP_SUNK_eventPicture
+    fire_only_once = yes
+
+    trigger = {
+        tag = VAN
+        has_country_flag = vanomaExpeditionFailed
+    }
+
+    mean_time_to_happen = {
+        months = 12
+    }
+
+    option = {
+        name = vanoma.12.a
+        ai_chance = { factor = 1 }
+        custom_tooltip = vanoma_no_modifiers_exp
+        add_prestige = -25
+        remove_country_modifier	= van_no_diplomats
+    }
+}
+
+country_event = { #Lathvy
+    id = vanoma.13
+    title = vanoma.13.t
+    desc = vanoma.13.desc
+    picture = RELIGIOUS_WARS_eventPicture
+    fire_only_once = yes
+
+    trigger = {
+        tag = VAN
+        has_country_flag = vanomaLathvyFlag
+    }
+
+    immediate = {
+        hidden_effect = {
+            random_owned_province = {
+                limit = {
+                    region = vanoma_region
+                    NOT = {
+                        religion = lathvy
+                    }
+                }
+                change_religion	= lathvy
+            }
+            random_owned_province = {
+                limit = {
+                    region = vanoma_region
+                    NOT = {
+                        religion = lathvy
+                    }
+                }
+                change_religion	= lathvy
+            }
+            random_owned_province = {
+                limit = {
+                    region = vanoma_region
+                    NOT = {
+                        religion = lathvy
+                    }
+                }
+                change_religion	= lathvy
+            }
+            random_owned_province = {
+                limit = {
+                    region = vanoma_region
+                    NOT = {
+                        religion = lathvy
+                    }
+                }
+                change_religion	= lathvy
+            }
+        }
+    }
+
+    mean_time_to_happen = {
+        months = 120
+    }
+
+    option = { #Go lathvy
+        name = vanoma.13.a
+        ai_chance = { factor = 1 }
+        change_religion	= lathvy
+        add_stability = -2
+        add_country_modifier = {
+            name = famana_conversion_zea    l
+            duration = 9125
+        }
+    }
+    option = { #Stay va
+        name = vanoma.13.b
+        ai_chance = { factor = 4 }
+        random_owned_province = {
+            limit = {
+                region = vanoma_region
+                religion = lathvy
+            }
+            spawn_rebels = {
+                type = lathvy_rebels
+                size = 3
+            }
+        }
+    }
+    option = { #Acceptance
+        name = vanoma.13.c
+        ai_chance = { factor = 2 }
+        hidden_effect = {
+            every_owned_province = {
+                limit = {
+                    region = vanoma_region
+                    religion = lathvy
+                }
+                add_province_modifier = {
+                    name = van_lathvy_autonomy
+                    duration = 18250
+                }
+            }
+        }
+        custom_tooltip = vanoma_accept_lathvy
+    }
+}

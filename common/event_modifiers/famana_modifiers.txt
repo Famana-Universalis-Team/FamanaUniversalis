@@ -826,3 +826,36 @@ tonxara_troubles = {
     global_autonomy = 0.05
     years_of_nationalism = 10
 }
+
+van_no_diplomats = {
+    diplomats = -1
+}
+
+vanoman_exc = {
+    prestige_decay = -0.01
+}
+
+van_hoxoi = {
+    production_efficiency = 0.05
+}
+
+van_gax = {
+    adm_tech_cost_modifier = -0.05
+}
+
+van_pex_lathvy = {
+    idea_cost = -0.05
+}
+
+van_pex_va = {
+    tolerance_own = 1
+}
+
+van_est = {
+    global_ship_cost = -0.10
+}
+
+van_lathvy_autonomy = {
+    local_unrest = -10
+    local_missionary_strength = -1
+}
