@@ -108,7 +108,7 @@ country_event = {
 	}
 }
 
-#Johann Friedrich Böttger
+#Johann Friedrich Bï¿½ttger
 country_event = {
 	id = prices.3
 	title = prices.3.t
@@ -203,59 +203,6 @@ country_event = {
 	}
 }
 
-
-
-# Coffee Boom
-country_event = {
-	id = prices.5
-	title = prices.5.t
-	desc = prices.5.d
-	picture = TRADE_GOODS_PLANTATION_GOODS_IN_WAREHOUSE_eventPicture
-
-	fire_only_once = yes
-	
-	major = yes
-
-	trigger = {
-		OR = {
-			capital_scope = { continent = europe }
-			AND = {
-				any_owned_province = {
-					continent =  europe
-				}
-				dip_tech = 20
-			}
-		}
-		NOT = { has_global_flag = coffee_boom_happened }
-		OR = {
-			any_owned_province = {
-				region = malaya_region
-				trade_goods = coffee
-			}
-			any_subject_country = {
-				is_colonial_nation = yes
-				coffee = 4
-			}
-		}
-	}
-	
-	mean_time_to_happen = {
-		months = 1
-	}
-
-	
-	option = {
-		name = prices.5.a
-		change_price = {
-			trade_goods = coffee
-			key = COFFEE_BOOM
-			value = 0.5
-			duration = -1
-		}
-		add_years_of_income  = 0.25
-		add_prestige = 20
-	}
-}
 
 
 # Cotton Imports
@@ -842,12 +789,6 @@ country_event = {
 			value = 0.1
 			duration = -1
 		}
-		newfoundland_area = {
-			add_permanent_province_modifier = {
-				name = "grand_bank_fisheries"
-				duration = -1
-			}
-		}
 	}
 }
 
@@ -1271,64 +1212,6 @@ country_event = {
 	}
 }
 
-# Expansion of the Bengali Dye Production
-country_event = {
-	id = prices.25
-	title = prices.25.t
-	desc = prices.25.d
-	picture = TRADEGOODS_eventPicture
-
-	fire_only_once = yes
-	
-	major = yes
-
-	trigger = {
-		capital_scope = { continent = europe }
-		owns = 2047 #Tirhut
-		owns = 2063 #Central Doabd
-		bengal_region = { type = all owned_by = ROOT }
-		bihar_area = { type = all owned_by = ROOT }
-	}
-	mean_time_to_happen = {
-		months = 60
-	}
-	
-	
-	option = {
-		name = prices.25.a
-		random_owned_province = {
-			limit = {
-				region = bengal_region
-				NOT = { trade_goods = silk }
-				NOT = { trade_goods = dyes }
-			}
-			change_trade_goods = dyes
-		}
-		random_owned_province = {
-			limit = {
-				area = bihar_area
-				NOT = { trade_goods = silk }
-				NOT = { trade_goods = dyes }
-			}
-			change_trade_goods = dyes
-		}
-		every_owned_province = {
-			limit = { trade_goods = dyes }
-			add_unrest = 5
-		}
-		change_price = {
-			trade_goods = dyes
-			key = BENGALI_INDIGO_PRODUCTION
-			value = -0.25
-			duration = -1
-		}
-	}
-	option = {
-		name = prices.25.b
-		add_stability = -1
-	}
-}
-
 # Development of Veneering
 country_event = {
 	id = prices.26
@@ -1393,38 +1276,6 @@ country_event = {
 			trade_goods = tropical_wood
 			key = VENEERING
 			value = 0.5
-			duration = -1
-		}
-	}
-}
-
-# Ivory Shortage in East Asia
-country_event = {
-	id = prices.27
-	title = prices.27.t
-	desc = prices.27.d
-	picture = TRADEGOODS_eventPicture
-
-	fire_only_once = yes
-	
-	major = yes
-
-	trigger = {
-		is_year = 1750
-		capital_scope = { region = indo_china_region }
-		NOT = { has_global_flag = ivory_shortage_happened }
-	}
-	mean_time_to_happen = {
-		months = 1
-	}
-	
-	
-	option = {
-		name = prices.27.a
-		change_price = {
-			trade_goods = ivory
-			key = IVORY_SHORTAGE
-			value = 0.25
 			duration = -1
 		}
 	}
@@ -1549,79 +1400,6 @@ country_event = {
 		}
 	}
 }
-
-# Breaking the Arabian Monopoly on Coffee
-country_event = {
-	id = prices.31
-	title = prices.31.t
-	desc = prices.31.d
-	picture = TRADE_GOODS_PLANTATION_GOODS_IN_WAREHOUSE_eventPicture
-	goto = java_coffee_here
-
-	fire_only_once = yes
-	
-	major = yes
-
-	trigger = {
-		NOT = { has_global_flag = mocha_killed }
-		NOT = { owns = 387 } #Mocha
-		coffee = 2
-		has_discovered = 387
-		any_owned_province = {
-			has_building = plantations
-			trade_goods = coffee
-			NOT = { continent = africa }
-			NOT = { region = arabia_region }
-		}
-	}
-	
-	mean_time_to_happen = {
-		months = 1
-	}
-	
-	immediate = {
-		hidden_effect = {
-			387 = {
-				owner = {
-					save_event_target_as = owner_of_mocha
-				}
-				save_event_target_as = mocha
-			}
-			random_owned_province = {
-				limit = {
-					has_building = plantations
-					trade_goods = coffee
-					NOT = { continent = africa }
-					NOT = { region = arabia_region }
-				}
-				save_event_target_as = java_coffee_here #Used in localization
-			}
-		}
-	}
-	
-	option = {
-		name = prices.31.a
-		add_years_of_income  = 1
-		add_prestige = 20
-		change_price = {
-			trade_goods = coffee
-			key = JAVA_COFFEE
-			value = -0.4
-			duration = -1
-		}
-		387 = {
-			tooltip = { remove_province_modifier = coffea_arabica_modifier }
-		}
-		event_target:owner_of_mocha = {
-			country_event = { id = prices.32 }
-			add_opinion = {
-				who = ROOT
-				modifier = coffee_plant_spread
-			}
-		}
-	}
-}
-
 
 # Decline of Mocha
 country_event = {

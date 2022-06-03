@@ -554,6 +554,11 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_great_project_pexamol_pyramids"	
+		texturefile = "gfx//interface//great_projects//famana_great_projects//great_project_pexamol_pyramids.dds"
+	}
+
+	spriteType = {
 		name = "GFX_great_project_walls_of_quanex"	
 		texturefile = "gfx//interface//great_projects//famana_great_projects//great_project_walls_of_quanex.dds"
 	}
