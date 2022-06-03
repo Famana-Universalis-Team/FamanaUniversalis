@@ -118,6 +118,12 @@ country_event = { #lathvy conversion
 	
 	mean_time_to_happen = {
 		months = 180
+		modifier = {
+			factor = 5
+			capital_scope = {
+				superregion = north_estal_superregion
+			}
+		}
 	}
 
 	immediate = {
