@@ -171,4 +171,43 @@ country_decisions = {
 			factor = 1
 		}
 	}
+
+    destroy_pomlen = {
+		potential = {
+            NOT = { has_global_flag = Pomlen_Destroyed }
+            has_global_flag = CelzionHappened
+            OR = {
+                religious_school = {
+                    group = lathvy_group
+                    school = celzian_school
+                }
+                religious_school = {
+                    group = lathvy_group
+                    school = walaran_school
+                }
+                religious_school = {
+                    group = lathvy_group
+                    school = maxan_school
+                }
+                religious_school = {
+                    group = lathvy_group
+                    school = nafan_school
+                }
+            }
+		}
+		allow = {
+			OR = {
+                controls = 5337
+                owns = 5337
+            }
+		}
+		effect = {
+			add_prestige = -50
+            set_global_flag = Pomlen_Destroyed
+            custom_tooltip = POMLEN_DESTROYED
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
 }

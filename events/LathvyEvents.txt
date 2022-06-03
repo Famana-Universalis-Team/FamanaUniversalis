@@ -17,9 +17,6 @@ country_event = {
 	}
 
 	immediate = {
-		hidden_effect = {
-			log = "[GetDate] Lathvy Event"
-		}
 	}
 	
 	option = {
@@ -54,9 +51,6 @@ country_event = {
 	}
 	
 	immediate = {
-		hidden_effect = {
-			log = "[GetDate] Lathvy Event"
-		}
 	}
 	
 	option = {
@@ -95,9 +89,6 @@ country_event = {
 	}
 
 	immediate = {
-		hidden_effect = {
-			log = "[GetDate] Lathvy Event"
-		}
 	}
 	
 	option = {
@@ -133,9 +124,6 @@ country_event = {
 		days = 1
 	}
 	immediate = {
-		hidden_effect = {
-			log = "[GetDate] Lathvy Event"
-		}
 	}
 	
 	option = {
@@ -179,9 +167,6 @@ country_event = {
 	}
 
 	immediate = {
-		hidden_effect = {
-			log = "[GetDate] Lathvy Event"
-		}
 	}
 	
 	mean_time_to_happen = {
@@ -231,9 +216,6 @@ country_event = {
 	}
 
 	immediate = {
-		hidden_effect = {
-			log = "[GetDate] Lathvy Event"
-		}
 	}
 	
 	mean_time_to_happen = {
@@ -279,9 +261,6 @@ country_event = {
 	}
 
 	immediate = {
-		hidden_effect = {
-			log = "[GetDate] Lathvy Event"
-		}
 	}
 	
 	option = {
@@ -319,9 +298,6 @@ country_event = {
 	}
 
 	immediate = {
-		hidden_effect = {
-			log = "[GetDate] Lathvy Event"
-		}
 	}
 	
 	option = {
@@ -359,9 +335,6 @@ country_event = {
 	}
 
 	immediate = {
-		hidden_effect = {
-			log = "[GetDate] Lathvy Event"
-		}
 	}
 	
 	option = {
@@ -399,9 +372,6 @@ country_event = {
 	}
 
 	immediate = {
-		hidden_effect = {
-			log = "[GetDate] Lathvy Event"
-		}
 	}
 	
 	option = {
@@ -441,9 +411,6 @@ country_event = {
 	}
 
 	immediate = {
-		hidden_effect = {
-			log = "[GetDate] Lathvy Event"
-		}
 	}
 
 	option = {
@@ -480,9 +447,6 @@ country_event = {
 	}
 	
 	immediate = {
-		hidden_effect = {
-			log = "[GetDate] Lathvy Event"
-		}
 		hidden_effect = {
 			random_owned_province = {
 				limit = { is_capital = no }
@@ -568,9 +532,6 @@ country_event = {
 	
 	immediate = {
 		hidden_effect = {
-			log = "[GetDate] Lathvy Event"
-		}
-		hidden_effect = {
 			random_owned_province = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -633,9 +594,6 @@ country_event = {
 	}
 
 	immediate = {
-		hidden_effect = {
-			log = "[GetDate] Lathvy Event"
-		}
 	}
 	
 	mean_time_to_happen = {
@@ -676,9 +634,6 @@ country_event = {
 	immediate = {
 		hidden_effect = {
 			set_country_flag = shiite_friday_prayer
-		}
-		hidden_effect = {
-			log = "[GetDate] Lathvy Event"
 		}
 	}
 	
@@ -816,6 +771,7 @@ country_event = { #TRADITIONAL & RINI
 	option = { #pexto
 		name = lathvy_piety.16.b
 		trigger = {
+			NOT = { has_global_flag = PomlenDestroyed }
 			any_known_country = {
 				religious_school = {
 					group = lathvy_group
@@ -985,6 +941,227 @@ country_event = { #TRADITIONAL & RINI
 		}
 		trigger = {
 			has_global_flag = CelzionHappened
+		}
+	}
+}
+
+country_event = { #Destroy Pomlen
+	id = lathvy_piety.17
+	title = lathvy_piety.17.t
+	desc = lathvy_piety.17.d
+	picture = COUNTRY_COLLAPSE_eventPicture
+	is_triggered_only = yes
+
+	option = {
+		name = lathvy_piety.17.a
+		ai_chance = { factor = 1 }
+		add_piety = 10
+		custom_tooltip = POMLEN_DESTROYED
+		set_global_flag = PomlenDestroyed
+		hidden_effect = {
+			every_country = {
+				limit = {
+					religious_school = {
+						group = lathvy_group
+						school = pextoglazian_school
+					}
+				}
+				country_event = {
+					id = lathvy_piety.20
+					days = 30
+				}
+			}
+			if = {
+				limit = {
+					NOT = { has_global_flag = WalaraHappened }
+				}
+				5285 = {
+					owner = {
+						country_event = lathvy_piety.18
+					}
+				}
+			}	
+		}
+	}
+}
+
+country_event = { #Accept Walarans?
+	id = lathvy_piety.18
+	title = lathvy_piety.18.t
+	desc = lathvy_piety.18.d
+	picture = DEBATE_REPUBLICAN_eventPicture
+	is_triggered_only = yes
+
+	option = {
+		name = lathvy_piety.18.a
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				OR = {
+					religious_school = {
+						group = lathvy_group
+						school = celzian_school
+					}
+					religious_school = {
+						group = lathvy_group
+						school = nafan_school
+					}
+				}
+			}
+		}
+		country_event = {
+			id = lathvy_piety.19
+			days = 1
+		}
+	}
+	option = {
+		name = lathvy_piety.18.b
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				religious_school = {
+					group = lathvy_group
+					school = pextoglazian_school
+				}
+			}
+		}
+	}
+}
+
+country_event = { #Accept Walarans.
+	id = lathvy_piety.19
+	title = lathvy_piety.19.t
+	desc = lathvy_piety.19.d
+	picture = POPE_PREACHING_eventPicture
+	is_triggered_only = yes
+
+	option = {
+		set_global_flag = WalaraHappened
+		set_religious_school = {
+			group = lathvy_group
+			school = walaran_school
+		}
+		add_prestige = 20
+		name = lathvy_piety.19.a
+		ai_chance = { factor = 2 }
+	}
+}
+
+country_event = { #New School
+	id = lathvy_piety.20
+	title = lathvy_piety.20.t
+	desc = lathvy_piety.20.d
+	picture = POPE_PREACHING_eventPicture
+	is_triggered_only = yes
+
+	option = {
+		name = lathvy_piety.20.a
+		ai_chance = { 
+			factor = 0.25
+			modifier = {
+				factor = 7
+				capital_scope = {
+					region = walara_region
+					region = lomea_region
+				}
+			}
+			modifier = {
+				factor = 20
+				primary_culture = Walaran
+			}
+			modifier = {
+				factor = 10
+				tag = WLR
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					is_rival = WLR
+					is_enemy = WLR
+				}
+			}
+		}
+		set_religious_school = {
+			group = lathvy_group
+			school = walaran_school
+		}
+		trigger = {
+			has_global_flag = WalaraHappened
+		}
+	}
+	option = {
+		name = lathvy_piety.20.b
+		ai_chance = { 
+			factor = 1
+			modifier = {
+				factor = 2
+				capital_scope = {
+					superregion = west_estal_superregion
+				}
+			}
+			modifier = {
+				factor = 20
+				primary_culture = East_Ordican
+			}
+			modifier = {
+				factor = 10
+				tag = CEL
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					is_rival = CEL
+					is_enemy = CEL
+				}
+			}
+		}
+		set_religious_school = {
+			group = lathvy_group
+			school = celzian_school
+		}
+	}
+	option = {
+		name = lathvy_piety.20.c
+		ai_chance = { 
+			factor = 1
+			modifier = {
+				factor = 1.5
+				OR = {
+					full_idea_group	= humanist_ideas
+					full_idea_group = religious_ideas
+				}
+			}
+			modifier = {
+				factor = 20
+				OR = {
+					primary_culture = Kachik
+					primary_culture = Bohoran
+				}
+			}
+			modifier = {
+				factor = 1000
+				tag = NAF
+			}
+			modifier = {
+				factor = 4
+				current_age	= age_of_reformation
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					is_rival = NAF
+					is_enemy = NAF
+				}
+			}
+		}
+		set_religious_school = {
+			group = lathvy_group
+			school = nafan_school
+		}
+		trigger = {
+			has_global_flag = NafaHappened
 		}
 	}
 }

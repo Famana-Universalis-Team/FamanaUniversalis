@@ -44,10 +44,6 @@ heretic_rebels = {
 			NOT = { religion = catholic }
 		}
 		modifier = {
-			factor = 0.5
-			is_year = 1700
-		}
-		modifier = {
 			factor = 0.01
 			is_overseas = yes
 		}

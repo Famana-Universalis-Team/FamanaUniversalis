@@ -1212,11 +1212,11 @@ country_decisions = {
 				cede_province = ROOT
 				change_religion	= ROOT
 				change_culture = ROOT
-				
-			}
+			} 
 			ROOT = {
-					add_mil_power = -10
-					add_dip_power = -10
+				add_mil_power = -10
+				add_dip_power = -10
+				add_core = 5933
 			}
 		}
 		ai_will_do = {
@@ -1230,7 +1230,7 @@ country_decisions = {
 				is_empty = yes
 			}
 			capital_scope = {
-			region = nhoma_region
+				region = nhoma_region
 			}
 		}
 		provinces_to_highlight = {
@@ -1245,6 +1245,7 @@ country_decisions = {
 			owns_core_province = 5944
 		}
 		effect = {
+			log = "NHOMA COLONY DECISION"
 			5932 = {
 				cede_province = ROOT
 				change_religion	= ROOT

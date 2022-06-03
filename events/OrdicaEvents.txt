@@ -6,7 +6,6 @@ country_event = { #ordic-nahallaian split
 	desc = ordica.1.d
 	picture = MILITARY_CAMP_eventPicture
 	fire_only_once = yes
-	major = yes
 
 	mean_time_to_happen = {
 		months = 60
@@ -45,7 +44,6 @@ country_event = { #ordican claims 90%
     desc = ordica.3.d
     picture = LIBERUM_VETO_eventPicture
     fire_only_once = yes
-    major = yes
 	mean_time_to_happen = {
 		months = 10
 	}
@@ -84,17 +82,7 @@ country_event = {
 	picture = POPE_PREACHING_eventPicture
 	fire_only_once = yes
 	major = yes
-
-	trigger = {
-		owns_core_province = 6236
-		religion = lathvy
-		is_year = 326
-		NOT = { exists = PEX }
-	}
-
-	mean_time_to_happen = {
-		months = 2
-	}
+	is_triggered_only = yes
 
 	option = {
 		set_global_flag = CelzionHappened
@@ -106,6 +94,7 @@ country_event = {
 		name = ordica.4.a
 		ai_chance = { factor = 2 }
 	}
+	
 }
 
 country_event = {
@@ -194,5 +183,38 @@ country_event = {
 				tag = POM
 			}
 		}
+	}
+}
+
+country_event = {
+	id = ordica.6
+	title = ordica.6.t
+	desc = ordica.6.d
+	picture = POPE_PREACHING_eventPicture
+	fire_only_once = yes
+
+	trigger = {
+		owns_core_province = 6236
+		religion = lathvy
+		is_year = 326
+		NOT = { exists = PEX }
+	}
+
+	mean_time_to_happen = {
+		months = 2
+	}
+
+	option = {
+		country_event = {
+			id = ordica.4
+			days = 1
+		}
+		name = ordica.6.a
+		custom_tooltip = CELZION_THOUGHT
+		ai_chance = { factor = 5 }
+	}
+	option = {
+		name = ordica.6.b
+		ai_chance = { factor = 0 }
 	}
 }

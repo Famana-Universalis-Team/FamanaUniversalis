@@ -1008,3 +1008,29 @@
  tonxara.6.t:0 "Instability in the Tonxara"
  tonxara.6.d:0 "The Tonxara is unstable. We are a new nation, and so it is difficult to convince all of our subjects to rally around us. Many local lords and tribes want to break off from us, not recognising our authority ever since the collapse of Fashros. We must convince them with the might of steel that we are worthy."
  tonxara.6.a:0 "The coming years look grim."
+
+ ordica.6.t:0 "The Council of Celzion"
+ ordica.6.d:0 "With Pextoglazia long behind us, there are now proposals that we host a council reviewing new Lathvy doctrine."
+ ordica.6.a:0 "Let's do it."
+ ordica.6.b:0 "Let's not."
+ CELZION_THOUGHT:0 "This wll spawn a new Lathvy school of thought."
+
+ POMLEN_DESTROYED:0 "Every instance of Pextoglazian Thought will be replaced."
+ lathvy_piety.17.t:0 "The Destruction of the High Temple of Pomlen"
+ lathvy_piety.17.d:0 "Forces from [ROOT.GetName] entered the High Temple of Pomlen, the seat of the High Priest, and officially announced the dissolution of the Pextoglazian sect. The High Priest has been arrested, and then the High Temple was set on fire. As it burnt to the ground, countless Lathvy and Pextoglazian archives, as well as works of art, have been destroyed. The remnants of the sect have fled to the East, and Pextoglazian Thought has been erased."
+ lathvy_piety.17.a:0 "Good riddance."
+
+ lathvy_piety.18.t:0 "Accept Pomlen refugees?"
+ lathvy_piety.18.d:0 "With the destruction of the High Temple of Pomlen, we now have to decide what to do with many religious refugees who have come to the city of Vapalim."
+ lathvy_piety.18.a:0 "Le'ts hear out their proposal."
+ lathvy_piety.18.b:0 "Arrest them."
+
+ lathvy_piety.19.t:0 "The dawn of Walaran Thought"
+ ordica.6.d:0 "Following the destruction of the High Temple of Pomlen, many people fled to the city of Vapalim, residence of the Bishop of Pixrol. This was one of the most powerful positions within the faith, and upon hearing of the destruction in Pomlen, he has announced himself as the successor to the previous High Priest."
+ lathvy_piety.19.a:0 "Ok."
+
+ lathvy_piety.20.t:0 "The end of Pextoglazian Thought"
+ lathvy_piety.20.d:0 "With the destruction of the High Temple of Pomlen, we must now decide where we will take our faith next."
+ lathvy_piety.20.a:0 "Walara."
+ lathvy_piety.20.b:0 "Celzion."
+ lathvy_piety.20.c:0 "Nafa."
