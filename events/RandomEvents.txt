@@ -5033,8 +5033,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		is_elector = yes
-		is_emperor = no
+		always = no
 	}
 
 	mean_time_to_happen = {
@@ -5056,7 +5055,6 @@ country_event = {
 		add_years_of_income = 0.2
 		add_corruption = 0.5
 		random_country = {
-			limit = { is_elector = yes }
 			add_opinion = { who = ROOT modifier = opinion_accepted_bribe }
 		}
 	}
@@ -5065,7 +5063,6 @@ country_event = {
 		ai_chance = { factor = 30 }
 		add_prestige = 10
 		random_country = {
-			limit = { is_elector = yes }
 			add_opinion = { who = ROOT modifier = opinion_declined_bribe }
 		}
 	}

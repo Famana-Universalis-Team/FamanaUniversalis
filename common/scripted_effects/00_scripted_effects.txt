@@ -230,25 +230,6 @@ prev_move_capital_effect = {
 	}
 }
 
-remove_non_electors_emperors_from_empire_effect = {
-	if = {
-		limit = {
-			is_part_of_hre = yes
-			is_elector = no
-			is_emperor = no
-		}
-		custom_tooltip = remove_non_electors_emperors_from_empire_effect_tooltip
-		hidden_effect = {
-			every_owned_province = {
-				limit = {
-					is_part_of_hre = yes
-				}
-				set_in_empire = no
-			}
-		}
-	}
-}
-
 abolish_slavery_effect = {
 	custom_tooltip = abolished_slavery_act_tooltip
 	hidden_effect = {

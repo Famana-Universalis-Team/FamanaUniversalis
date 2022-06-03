@@ -812,3 +812,9 @@ del_modern_army = {
     shock_damage_received = -0.10
     manpower_recovery_speed = 0.15
 }
+
+orc_empire = {
+    governing_capacity_modifier = 0.10
+    global_prosperity_growth = 0.10
+    diplomatic_upkeep = 1
+}

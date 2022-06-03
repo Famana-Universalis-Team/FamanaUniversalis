@@ -1625,7 +1625,7 @@ country_event = { #Event that spawns cores for releasables
         days = 1
     }
     immediate = {
-        hidden_effect {
+        hidden_effect = {
             every_owned_province = {
                 limit = {
                     OR = {
