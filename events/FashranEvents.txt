@@ -1617,14 +1617,17 @@ country_event = { #Event that spawns cores for releasables
     trigger = {
         is_year = 320
         any_owned_province = {
-            superregion = tonmo_supperregion
-            superregion = jasua_superregion
+            OR = {
+                superregion = tonmo_supperregion
+                superregion = jasua_superregion
+            }
         }
     }
     mean_time_to_happen = {
         days = 1
     }
     immediate = {
+        log = "Gave cores to Fashran Releasables."
         hidden_effect = {
             every_owned_province = {
                 limit = {
