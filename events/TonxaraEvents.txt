@@ -158,13 +158,17 @@ country_event = { #Rise of Nafa
     title = tonxara.5.t
     picture = COUNTRY_COLLAPSE_eventPicture
     desc = tonxara.5.d
-    fire_only_once = yes
 
     mean_time_to_happen = {
         days = 1
     }
 
     trigger = {
+        OR = {
+            tag = KSL
+            tag = NHM #theres a bug where nhoma gets emastalia
+        }
+        NOT = { has_country_flag = Nafa_Unleashed }
         any_owned_province = {
             is_core = NAF
         }
@@ -173,5 +177,37 @@ country_event = { #Rise of Nafa
         name = tonxara.5.a
         ai_chance = { factor = 1 }
         release = NAF
+        set_country_flag = Nafa_Unleashed
+    }
+}
+
+country_event = { #ouchy wouchies to the tonxara
+    id = tonxara.6
+    title = tonxara.6.t
+    picture = COUNTRY_COLLAPSE_eventPicture
+    desc = tonxara.6.d
+
+    mean_time_to_happen = {
+        days = 1
+    }
+
+    trigger = {
+        OR = {
+            tag = KSL
+            tag = NHM
+            tag = JFX
+            tag = HOY
+        }
+        NOT = {
+            has_country_modifier = tonxara_troubles
+        }
+    }
+    option = {
+        name = tonxara.6.a
+        ai_chance = { factor = 1 }
+        add_country_modifier = {
+            name = tonxara_troubles
+            duration = 3650
+        }
     }
 }
