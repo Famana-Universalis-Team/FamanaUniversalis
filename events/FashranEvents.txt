@@ -2246,14 +2246,14 @@ country_event = { #AI event to annex nozumol
     trigger = {
         tag = FAS
         NOT = {
-           is_year = 225
+           is_year = 250
         }
         NOZ = {
             is_subject_of = FAS
         }
 	}
 
-    option = { 
+    option = {
         name = fashros.25.a
         ai_chance = {
             factor = 1
@@ -2571,5 +2571,21 @@ country_event = { #End
         ai_chance = {
             factor = 1
         }
+    }
+}
+
+country_event = { #Startup
+    id = fashros.31
+    title = fashros.31.t
+    desc = fashros.31.d
+    picture = MONGOL_BANNERS_eventPicture
+    is_triggered_only = yes
+
+    option = { 
+        name = fashros.31.a
+        ai_chance = {
+            factor = 1
+        }
+        custom_tooltip = fashros_startup_tt
     }
 }

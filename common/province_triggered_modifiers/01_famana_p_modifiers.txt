@@ -242,6 +242,9 @@ xon_center_shirian = {
 pomlen_high_priest = {
 	potential = {
 		normal_or_historical_nations = yes
+		NOT = {
+			has_global_flag = PomlenDestroyed
+		}
 	}
 
 	trigger = {

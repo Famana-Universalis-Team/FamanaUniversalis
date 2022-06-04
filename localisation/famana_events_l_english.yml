@@ -780,6 +780,10 @@
  fashros.24.d:0 "The tribal structures that have held the Ravsho people together for centuries are breaking down. To our horror, this is causing the local ruling elites of our empire to split off from the tribal confederation of Fashros to form their own identities. This, in combination with the other problems in our empire, could very well mean the end of the Tonxara. Let us hope it never comes to pass."
  fashros.24.a:0 "This does not bode well."
 
+ fashros.31.t:0 "The Fashran Tonxara"
+ fashros.31.d:0 "Fashros is a confederation of nomadic tribes, recently unified under one, greater empire. To ensure victory, loot and cohesion, Fashros must journey into unknown lands in the west."
+ fashros.31.a:0 "The horde is coming."
+
  ###########################
 
  tonxara.1.t:0 "The Nhoma Tonxara"
@@ -1015,6 +1019,10 @@
  ordica.6.b:0 "Let's not."
  CELZION_THOUGHT:0 "This wll spawn a new Lathvy school of thought."
 
+ ordica.7.t:0 "Dorlem's Tactics"
+ ordica.7.d:0 "A man by the name of Dorlem Comugia has recently published a book on battle tactics and military strategy called "Dorlemitz", or Dorlem's Tactics. Our top generals have all read the book, and they like what they see. This has the potential to revolutionize how wars are fought and elevate Ordica to an even higher level of greatness. Dorlem would make a fine general."
+ ordica.7.a:0 "Let him lead our armies!"
+
  POMLEN_DESTROYED:0 "Every instance of Pextoglazian Thought will be replaced."
  lathvy_piety.17.t:0 "The Destruction of the High Temple of Pomlen"
  lathvy_piety.17.d:0 "Forces from [ROOT.GetName] entered the High Temple of Pomlen, the seat of the High Priest, and officially announced the dissolution of the Pextoglazian sect. The High Priest has been arrested, and then the High Temple was set on fire. As it burnt to the ground, countless Lathvy and Pextoglazian archives, as well as works of art, have been destroyed. The remnants of the sect have fled to the East, and Pextoglazian Thought has been erased."
@@ -1025,8 +1033,8 @@
  lathvy_piety.18.a:0 "Le'ts hear out their proposal."
  lathvy_piety.18.b:0 "Arrest them."
 
- lathvy_piety.19.t:0 "The dawn of Walaran Thought"
- ordica.6.d:0 "Following the destruction of the High Temple of Pomlen, many people fled to the city of Vapalim, residence of the Bishop of Pixrol. This was one of the most powerful positions within the faith, and upon hearing of the destruction in Pomlen, he has announced himself as the successor to the previous High Priest."
+ lathvy_piety.19.t:0 "The Dawn of Walaran Thought"
+ lathvy_piety.19.d:0 "Following the destruction of the High Temple of Pomlen, many people fled to the city of Vapalim, residence of the Bishop of Pixrol. This was one of the most powerful positions within the faith, and upon hearing of the destruction in Pomlen, he has announced himself as the successor to the previous High Priest."
  lathvy_piety.19.a:0 "Ok."
 
  lathvy_piety.20.t:0 "The end of Pextoglazian Thought"

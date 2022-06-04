@@ -859,3 +859,9 @@ van_lathvy_autonomy = {
     local_unrest = -10
     local_missionary_strength = -1
 }
+
+dorlemitz_modifier = {
+    army_tradition = 2
+    infantry_power = 0.10
+    reinforce_speed = 0.15
+}
