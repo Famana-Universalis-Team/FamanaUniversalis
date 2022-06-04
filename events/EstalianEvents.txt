@@ -156,3 +156,162 @@ country_event = { #lathvy conversion
 		change_government_reform_progress = -25
 	}
 }
+
+#zubara migration
+country_event = {
+	id = estal.3
+	title = estal.3.t
+	desc = estal.3.t
+	picture = LAND_MILITARY_eventPicture
+	fire_only_once = yes 
+	major = yes
+	
+	trigger = {
+		tag = ZUB
+		OR = {
+		war_score = -70
+			AND = {
+				is_year = 345
+				NOT = { num_of_cities = 15 }
+			}
+		}
+	}
+	
+	option = { 
+		name = "estal.3.a"
+		ai_chance = { factor = 12 }
+		hidden_effect = {
+		every_country = {
+		white_peace = ZUB
+		}
+		6759 = {
+		 limit = {
+				    is_empty = yes
+			    }
+                cede_province = ZUB
+                add_core = ZUB
+                change_culture = Zubaran
+                change_religion = ZUB
+		}
+		6758 = {
+		 limit = {
+				    is_empty = yes
+			    }
+                cede_province = ZUB
+                add_core = ZUB
+                change_culture = Zubaran
+                change_religion = ZUB
+		}
+		6760 = {
+		 limit = {
+				    is_empty = yes
+			    }
+                cede_province = ZUB
+                add_core = ZUB
+                change_culture = Zubaran
+                change_religion = ZUB
+		}
+		6761 = {
+		 limit = {
+				    is_empty = yes
+			    }
+                cede_province = ZUB
+                add_core = ZUB
+                change_culture = Zubaran
+                change_religion = ZUB
+		}
+		6766 = {
+		 limit = {
+				    is_empty = yes
+			    }
+                cede_province = ZUB
+                add_core = ZUB
+                change_culture = Zubaran
+                change_religion = ZUB
+		}
+		6767 = {
+		 limit = {
+				    is_empty = yes
+			    }
+                cede_province = ZUB
+                add_core = ZUB
+                change_culture = Zubaran
+                change_religion = ZUB
+		}
+		set_capital = 6761
+		release = HZY
+		release = EHZ
+		release = WHZ
+		release = TOI
+		release = LER
+		release = NEN
+		release = RST
+		any_owned_province = { 
+			limit = { 
+				NOT = { 
+					OR = {
+					area_223 
+					area_221
+					area_231
+					}
+				}	
+			}	
+			cede_province = ---
+			remove_core = ZUB
+			}
+			set_global_flag = zubara_happened #a little tool that will help us later
+		}
+		custom_tooltip = zub_migrate_tooltip
+		}
+		
+		option = {
+		name = estal.3.b
+		add_prestige = 10
+		}
+		
+	}
+	
+#Qurak (Erlaqi migration)
+country_event = {
+	id = estal.4
+	title = estal.4.t
+	desc = estal.4.t
+	picture = LAND_MILITARY_eventPicture
+	fire_only_once = yes
+	
+	trigger = {
+		NOT = { 
+			exists = ELQ
+		}
+		6762 = {
+			is_empty = yes
+		}
+	}
+	
+	mean_time_to_happen = {
+	months = 12
+	}
+	
+	immediate = {
+		6762 = {
+			cede_province = ELQ
+            add_core = ELQ
+            change_culture = East_Emastalian
+            change_religion = lathvy 
+		}
+		ELQ = { 
+		override_country_name = Qurak
+		change_religion = lathvy
+		}
+		set_global_flag = qurak_happened
+		
+	}
+	option = {
+	name = estal.4.a
+	}
+}	
+
+
+
+	
+	
