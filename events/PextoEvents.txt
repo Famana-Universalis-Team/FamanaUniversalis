@@ -294,12 +294,12 @@ country_event = {
     title = pexto.10.t
     desc = pexto.10.d
     picture = ECONOMY_eventPicture
-	fire_only_once = yes
 	trigger = {
 		AND = {
 			tag = PEX
 			has_country_flag = pextocivilwar
 			owns_core_province = 5203
+			NOT = { has_country_flag = npNotSold }
 		}
 	}
 	mean_time_to_happen = {
@@ -316,6 +316,7 @@ country_event = {
 			}
 			add_unrest = 10
 		}
+		set_country_flag = npNotSold
     }
 	option = {
 		name = pexto.10.b
@@ -323,6 +324,7 @@ country_event = {
 		5203 = {
 			cede_province = NPX
 		}
+		set_country_flag = npNotSold
     }
 	option = {
 		trigger = {
@@ -338,6 +340,7 @@ country_event = {
 		name = pexto.10.c
         ai_chance = { factor = 4 }
 		set_global_flag = newpexamoldeal
+		set_country_flag = npNotSold
 		5561 = {
 			owner = {
 				country_event = {
@@ -360,8 +363,10 @@ country_event = {
 		name = pexto.11.a
         ai_chance = { factor = 1 }
 		PEX = {
+			clr_country_flag = npNotSold
 			country_event = {
 				id = pexto.10
+				days = 1
 			}
 		}
     }
@@ -377,7 +382,7 @@ country_event = {
 			factor = 1
 			modifier = {
 				factor = 100
-				treasury = 200
+				treasury = 151
 			}
 		}
     }
