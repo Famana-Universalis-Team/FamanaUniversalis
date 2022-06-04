@@ -272,6 +272,7 @@ pomlen_high_priest = {
 zosa_high_priest = {
 	potential = {
 		normal_or_historical_nations = yes
+		has_global_flag = WalaraHappened
 	}
 
 	trigger = {
