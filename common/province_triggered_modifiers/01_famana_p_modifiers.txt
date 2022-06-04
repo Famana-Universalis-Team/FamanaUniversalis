@@ -246,7 +246,7 @@ pomlen_high_priest = {
 			has_global_flag = PomlenDestroyed
 		}
 	}
-
+	
 	trigger = {
 		religion = lathvy
 		owner = {
@@ -257,9 +257,9 @@ pomlen_high_priest = {
 		}
 	}
 
+	prestige = 0.5
 	local_unrest = -5
 	local_tax_modifier = 0.25
-	prestige = 0.5
 	diplomatic_reputation = 1
 
 	on_activation = {
@@ -274,7 +274,7 @@ zosa_high_priest = {
 		normal_or_historical_nations = yes
 		has_global_flag = WalaraHappened
 	}
-
+	
 	trigger = {
 		religion = lathvy
 		owner = {
@@ -284,10 +284,10 @@ zosa_high_priest = {
 			}
 		}
 	}
-
+	
+	prestige = 0.25
 	local_unrest = -2.5
 	local_tax_modifier = 0.20
-	prestige = 0.25
 	diplomatic_reputation = 0.5
 
 	on_activation = {
