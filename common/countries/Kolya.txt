@@ -33,19 +33,55 @@ historical_units = {
 }
 
 monarch_names = {
-	"Placeholder #1" = 1
+	"Fesperim #0" = 5
+	"Korarim #0" = 2
+	"Deror #0" = 1
+	"Iotan #0" = 1
+	"Karuy #0" = 1
+	"Ilipim #0" = 1
+	"Sowar #0" = 1
+	"Orakim #0" = 1
+	"Niara #0" = 1
+	"Fondian #0" = 1
+	"Sewa #1" = 2
+	"Uniar #0" = 1
+	"Dangal #0" = 1
+	"Seialen #0" = -1
+	"Avarai #0" = -1
+	"Terel #0" = -1
+	"Kirma #0" = -1
+	"Asnemil #0" = -1
+	"Batekan #0" = -1
 }
 
 leader_names = {
-	Placeholder
+	Fesperim
+	Korarim
+	Deror
+	Iotan
+	Karuy
+	Ilipim
+	Sowar
+	Orakim
+	Niara
+	Fondian
+	Sewa
+	Uniar
+	Dangal
 }
 
 ship_names = {
-	Placeholder
+	Keput
+	Dutur
+	Fes
+	Niremil
+	Rotara
+	Kishkar
+	Nalesan
 }
 
 army_names = {
-	"$PROVINCE$ Army" 
+	"$PROVINCE$ Legion" 
 }
 
 fleet_names = {
