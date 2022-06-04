@@ -128,7 +128,10 @@ ALT_ideas = {
     }    
 
     trigger = {
-        tag = ALT
+        OR = {
+        	tag = ALT
+        	tag = TOL
+        }
     }
     free = yes
     
