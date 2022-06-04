@@ -2581,6 +2581,11 @@ country_event = { #Startup
     picture = MONGOL_BANNERS_eventPicture
     is_triggered_only = yes
 
+    trigger = {
+        tag = FAS
+        NOT = { is_year = 213 }
+    }
+
     option = { 
         name = fashros.31.a
         ai_chance = {
