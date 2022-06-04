@@ -1235,7 +1235,7 @@ country_decisions = {
 		}
 		provinces_to_highlight = {
 			OR = {
-				province_id = 5944
+				province_id = 5932
 			}
 		}
 		allow = {
@@ -1245,15 +1245,13 @@ country_decisions = {
 			owns_core_province = 5944
 		}
 		effect = {
-			log = "NHOMA COLONY DECISION"
 			5932 = {
 				cede_province = ROOT
 				change_religion	= ROOT
 				change_culture = Fashli
-				
 			}
 			ROOT = {
-					add_mil_power = -10
+				add_mil_power = -10
 			}
 		}
 		ai_will_do = {

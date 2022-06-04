@@ -1207,7 +1207,11 @@
  area_232:0 "Upper Bastrania"
  channel_islands_area:0 "Channel Islands"
  maldikon_area:0 "Maldikom"
- 
+ south_onobya_area:0 "South Onobya"
+ south_onobya_area_name:0 "South Onobya"
+ rubama_area:0 "Rubama"
+ rubama_area_name:0 "Rubama"
+
  #Regions
  upper_oppia_region:0 "Upper Oppia"
  upper_oppia_region_name:0 "Upper Oppia"
@@ -1389,6 +1393,12 @@
  east_great_desert_region:0 "Central Antebar"
  east_great_desert_region_name:0 "Central Antebar"
  east_great_desert_region_adj:0 "Central Antebari"
+ onobya_region:0 "Onobya"
+ onobya_region_desc:0 "Onobya"
+ onobya_region_adj:0 "Onobyan"
+ bizugu_region:0 "Bizugu"
+ bizugu_region_desc:0 "Bizugu"
+ bizugu_region_adj:0 "Bizugan"
 
  #Subcontinents
  oppia_superregion:0 "Oppia"
@@ -1420,7 +1430,10 @@
  hasmal_superregion_adj:0 "Hasmali"
  gacil_superregion:0 "Gacil"
  gacil_superregion_name:0 "Gacil"
- gacil_superregion:0 "Gacin"
+ gacil_superregion_adj:0 "Gacin"
+ bhillis_fashrana_superregion:0 "Bhillis-Fashrana"
+ bhillis_fashrana_superregion_name:0 "Bhillis-Fashrana"
+ bhillis_fashrana_superregion_adj:0 "Bhillisi-Fashranan"
 
  #Continents
  estal:0 "Estal"
