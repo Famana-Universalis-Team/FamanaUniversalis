@@ -249,7 +249,9 @@ country_event = {
 				}
 			}
 			else = {
-				id = jasuaE.6
+				country_event = {
+					id = jasuaE.6
+				}
 			}
 		}
 		#Rachik and Yallwaka are next.
@@ -277,15 +279,16 @@ country_event = {
 			}
 		}
 		#Finally, this means Nafa must have been conquered, so they will break free on their own.
-		5488 = {
-			owner = {
-				if = {
-					limit = {
-						NOT = { exists = KLG }
-						NOT = { exists = RCK }
-						NOT = { exists = NAF }
-						NOT = { exists = YLL }
-					}
+		if = {
+			limit = {
+				NOT = { exists = KLG }
+				NOT = { exists = RCK }
+				NOT = { exists = NAF }
+				NOT = { exists = YLL }
+				NOT = { tag = SKT }
+			}
+			5488 = {
+				owner = {
 					country_event = {
 						id = jasuaE.16
 					}
@@ -370,6 +373,7 @@ country_event = {
 			}
 		}
 		change_primary_culture = Kachik
+		add_accepted_culture = Bohoran
 		set_religious_school = {
 			group = lathvy_group
 			school = nafan_school
@@ -614,6 +618,7 @@ country_event = {
 			}
 		}
 		change_primary_culture = Kachik
+		add_accepted_culture = Bohoran
 		set_religious_school = {
 			group = lathvy_group
 			school = nafan_school
@@ -686,6 +691,7 @@ country_event = {
 			}
 		}
 		change_primary_culture = Kachik
+		add_accepted_culture = Bohoran
 		set_religious_school = {
 			group = lathvy_group
 			school = nafan_school
@@ -759,6 +765,7 @@ country_event = {
 			}
 		}
 		change_primary_culture = Kachik
+		add_accepted_culture = Bohoran
 		set_religious_school = {
 			group = lathvy_group
 			school = nafan_school

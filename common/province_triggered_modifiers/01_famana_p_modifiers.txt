@@ -238,3 +238,57 @@ xon_center_shirian = {
 	}
 	
 }
+
+pomlen_high_priest = {
+	potential = {
+		normal_or_historical_nations = yes
+	}
+
+	trigger = {
+		religion = lathvy
+		owner = {
+			religious_school = {
+				group = lathvy_group
+				school = pextoglazian_school
+			}
+		}
+	}
+
+	local_unrest = -5
+	local_tax_modifier = 0.25
+	prestige = 0.5
+	diplomatic_reputation = 1
+
+	on_activation = {
+	}
+
+	on_deactivation = {
+	}
+}
+
+zosa_high_priest = {
+	potential = {
+		normal_or_historical_nations = yes
+	}
+
+	trigger = {
+		religion = lathvy
+		owner = {
+			religious_school = {
+				group = lathvy_group
+				school = walaran_school
+			}
+		}
+	}
+
+	local_unrest = -2.5
+	local_tax_modifier = 0.20
+	prestige = 0.25
+	diplomatic_reputation = 0.5
+
+	on_activation = {
+	}
+
+	on_deactivation = {
+	}
+}

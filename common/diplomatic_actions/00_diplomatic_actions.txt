@@ -297,3 +297,19 @@ ask_for_tributary_state_action = {
 		}
 	}
 }
+
+request_to_join_federation = {
+	condition = {
+		allow = {
+			always = no
+		}
+	}
+}
+
+invite_to_federation = {
+	condition = {
+		allow = {
+			always = no
+		}
+	}
+}

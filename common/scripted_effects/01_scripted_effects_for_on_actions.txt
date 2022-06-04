@@ -64,7 +64,7 @@ initialize_schools_effect = { #Used in on_startup on_action
 				}
 			}
 		}
-		random_country = { #Celzian is hated by Pextoglazian
+		random_country = { #Walaran is hated by Pextoglazian
 			limit = {
 				religious_school = {
 					group = lathvy_group

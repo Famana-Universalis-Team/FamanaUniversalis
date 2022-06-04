@@ -100,14 +100,10 @@ country_decisions = {
     }
     ximal_capital = {
 		potential = {
-			AND = {
-				tag = DEL
-				5163 = {
-					NOT = {
-                        has_province_flag = ximal_capital
-                    }
-				}
-			}
+			tag = DEL
+            NOT = {
+                has_country_flag = ximal_capital_country
+            }
 		}
 		provinces_to_highlight = {
 			province_id = 5163
@@ -119,15 +115,23 @@ country_decisions = {
             }
 		}
 		effect = {
-			5163 = {
-				add_base_manpower = 2
-				add_base_tax = 2
-				add_base_production = 2
-                set_province_flag = ximal_capital
-			}
-			DEL = {
-				set_capital = 5163
-			}
+            if = {
+                limit = {
+                    5163 = {
+                        NOT = {
+                            has_province_flag = ximal_capital
+                        }
+                    }
+                }
+                5163 = {
+                    add_base_manpower = 2
+                    add_base_tax = 2
+                    add_base_production = 2
+                    set_province_flag = ximal_capital
+                }
+            }
+			set_capital = 5163
+            set_country_flag = ximal_capital_country
 			add_stability = 1
 		}
 		ai_will_do = {
@@ -169,6 +173,12 @@ country_decisions = {
 		}
 		ai_will_do = {
 			factor = 1
+            modifier = {
+                factor = 0
+                NOT = {
+                    current_age = age_of_absolutism
+                }
+            }
 		}
 	}
 

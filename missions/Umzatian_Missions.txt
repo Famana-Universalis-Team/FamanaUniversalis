@@ -629,7 +629,7 @@ umz_3 = {
 				change_religion = ROOT
 			}
 			
-			west_feniki = {
+			revdirom_area = {
 				limit = { 
 					is_empty = yes
 				}
@@ -638,6 +638,9 @@ umz_3 = {
 				add_core = ROOT
 				change_culture = ROOT
 				change_religion = ROOT
+			}
+			porlodya_region = {
+				discover_country = ROOT
 			}
 			5020 = {
 				add_building = fort_15th
@@ -915,8 +918,11 @@ umz_4 = {
 			name = umz_breach
 			duration = 3650 
 			}
-			hasia_area = {
-			discover_country = ROOT
+			napora_region = {
+				discover_country = ROOT
+			}
+			west_ordica_region = {
+				discover_country = ROOT
 			}
 			
        
