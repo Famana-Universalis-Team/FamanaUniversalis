@@ -1,10 +1,10 @@
 namespace = nhl
 
-country_event = {
+country_event = { #COUP
     id = nhl.1
     title = nhl.1.t
     desc = nhl.1.d
-    picture = LIBERUM_VETO_eventPicture
+    picture = SIEGE_PRAGUE_CASTLE_eventPicture
     fire_only_once = yes
 	mean_time_to_happen = {
 		months = 12
@@ -51,12 +51,13 @@ country_event = {
     }
 }
 
-country_event = {
+country_event = { #ALT intervenes
     id = nhl.2
     title = nhl.2.t
     desc = nhl.2.d
-    picture = LIBERUM_VETO_eventPicture
+    picture = REVOLT_HUNGARIAN_eventPicture
     fire_only_once = yes
+    major = yes
 	mean_time_to_happen = {
 		days = 1
 	}
@@ -116,13 +117,19 @@ country_event = {
         ALT = { declare_war = NHL }
         alo_tramo_area = { add_claim = NHL }
     }
+
+    option = {
+        name = nhl.2.b
+        ai_chance = { factor = 0 }
+        add_truce_with = NHL
+    }
 }
 
 country_event = {
     id = nhl.3
     title = nhl.3.t
     desc = nhl.3.d
-    picture = LIBERUM_VETO_eventPicture
+    picture = WAR_OF_THE_ROSES_eventPicture
     fire_only_once = yes
 	mean_time_to_happen = {
 		days = 1
@@ -168,7 +175,7 @@ country_event = {
     id = nhl.4
     title = nhl.4.t
     desc = nhl.4.d
-    picture = LIBERUM_VETO_eventPicture
+    picture = PLAGUE_eventPicture
     fire_only_once = yes
 	mean_time_to_happen = {
 		days = 1
@@ -189,6 +196,7 @@ country_event = {
         ai_chance = { factor = 1 }
         add_prestige = -25
         add_stability = -1
+        set_government_rank = 2
     }
 }
 
@@ -196,7 +204,7 @@ country_event = {
     id = nhl.5
     title = nhl.5.t
     desc = nhl.5.d
-    picture = LIBERUM_VETO_eventPicture
+    picture = LAND_MILITARY_eventPicture
     fire_only_once = yes
 	mean_time_to_happen = {
 		months = 3

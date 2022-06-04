@@ -97,7 +97,7 @@ high_bishophric_reform = {
 		global_missionary_strength = 0.01
 		church_influence_modifier = 0.2
 		church_loyalty_modifier = 0.1
-		monthly_piety = 0.05
+		monthly_piety = 0.005
 		diplomatic_reputation = 2
 	}
 	different_religion_acceptance = -30

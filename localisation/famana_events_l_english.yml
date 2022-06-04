@@ -1036,3 +1036,25 @@
  lathvy_piety.20.a:0 "Walara."
  lathvy_piety.20.b:0 "Celzion."
  lathvy_piety.20.c:0 "Nafa."
+
+ #West Ordic Events
+ nhl.1.t:0 "Coup in Nahallaia"
+ nhl.1.d:0 "A hidden conspiracy has unfolded over a period of years. Government officials have worked with parts of the Nahallaian army to undermine the [Root.Monarch.GetTitle] and replace him with a new leader. Today, the coup began. An attempt on [Root.Monarch.GetName]'s life has left him scarred and deformed. The very existence of the Nahallaian state is now under threat, as the coup leaves the country vulnerable to attacks from tribes, the Tolans or even Ordica itself."
+ nhl.1.a:0 "Kill the traitors!"
+
+ nhl.2.t:0 "The Nahallaian Deluge"
+ nhl.2.d:0 "Nahallaia is in chaos. As two rival [NHL.Monarch.GetTitle]s fight for control of the nation, they give us an opportunity to restore the great nation of Tolo. If we enter Nahallaia with our troops and support the new pretender to the throne, we can destroy the Nahallaian state forever. Western Ordica will return to how it was meant to be, ruled by one, benevolent Tolan Kingdom."
+ nhl.2.a:0 "Let us help them!"
+ nhl.2.b:0 "It's too risky."
+
+ nhl.3.t:0 "Victory in Nahallaia"
+ nhl.3.d:0 "We are victorious! Nahallaia has been defeated in battle, allowing us to retake their wrongfully stolen territory. We will no longer be the rump state of Alo Tramo, but a great Tolan Kingdom. This is a glorious day."
+ nhl.3.a:0 "Tolo rises once more!"
+
+ nhl.4.t:0 "The End of the Nahallaian Empire"
+ nhl.4.d:0 "This is the end. As Alo Tramo sweeps into our territory, the dream of a Nahallaian Empire dies. Our empire, forged with blood, will slip out of our control. Everything we have worked towards will be lost. May Loys curse them!"
+ nhl.4.a:0 "We have lost."
+
+ nhl.5.t:0 "Tolo Defeated"
+ nhl.5.d:0 "Against all odds, we have held our empire together. Alo Tramo has been defeated, as have the pretenders to our throne. Nahallaia remains the supreme ruler of Western Ordica. Now, to ensure this never happens again, we must assimilate the Tolans into our culture."
+ nhl.5.a:0 "Ah... victory."

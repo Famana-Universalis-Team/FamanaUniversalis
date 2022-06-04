@@ -33,20 +33,79 @@ historical_units = {
 }
 
 monarch_names = {
-	"Placeholder #0" = 1
-	"Placeholdera #0" = -1
+	"Marda #0" = 1
+	"Gezbonam #0" = 1
+	"Bidum #0" = 1
+	"Nomeg #0" = 1
+	"Galne #0" = 1
+	"Dazdo #0" = 1
+	"Dulkop #0" = 1
+	"Mogibi #0" = 1
+	"Bimemi #0" = 1
+	"Gitifpa #0" = 1
+	"Pagagi #0" = 1
+	"Bitop #0" = 1
+	"Gakut #0" = 1
+	"Dumego #0" = 1
+	"Nezdog #0" = 1
+	"Muguni #0" = 1
+	"Bulman #0" = 1
+	"Tipmum #0" = 1
+	"Mokdab #0" = 1
+	"Domsmun #0" = 1
+	"Negun #0" = 1
+	"Nomog #0" = 1
+	"Doyni #0" = 1
+	"Belde #0" = 1
+	"Kuvar #0" = -1
+	"Dibu #0" = -1
+	"Tuki #0" = -1
+	"Begugpo #0" = -1
+	"Mepap #0" = -1
+	"Omi #0" = -1
+	"Nufku #0" = -1
+	"Noahna #0" = -1
+	"Naymoda #0" = -1
+	"Dotik #0" = -1
 }
 
 leader_names = {
-	Placeholder
+	Marda
+	Gezbonam
+	Bidum
+	Nomeg
+	Galne
+	Dazdo
+	Dulkop
+	Mogibi
+	Bimemi
+	Gitifpa
+	Pagagi
+	Bitop
+	Gakut
+	Dumego
+	Nezdog
+	Muguni
+	Bulman
+	Tipmum
+	Mokdab
+	Domsmun
+	Negun
+	Nomog
+	Doyni
+	Belde
 }
 
 ship_names = {
-	Placeholder
+	Butak
+	Delu
+	Zebran
+	Buterker
+	Dabodyi
 }
 
 army_names = {
-	"Legion of $PROVINCE$" 
+	"$PROVINCE$ Battalion" 
 }
 
 fleet_names = {
