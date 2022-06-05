@@ -1069,37 +1069,37 @@ country_event = {
 	option = {
 		name = maky.14.a
 		hidden_effect = {
-			release = LVY
-			release = KRS
-			release = OKU
-			release = RSH
-			release = VAX
-			release = ELK
-			release = RTK
-			release = HZR
-			release = MKK
-			release = DYR #just in case
-		
+				release = LVY
+				release = KRS
+				release = OKU
+				release = RSH
+				release = VAX
+				release = ELK
+				release = RTK
+				release = HZR
+				release = MKK
+				release = DYR #just in case
+			
 		7241 = {
 			cede_province = TKM
 			add_core = TKM
-			hidden_effect = {
-				add_base_manpower = 1
-			}
+			add_base_manpower = 1
+			change_culture = Okus
+			change_religion = mak
+			
 		}
 		7240 = {
 			cede_province = TKM
 			add_core = TKM
-			hidden_effect = {
-				add_base_manpower = 1
-			}
+			add_base_manpower = 1
+			change_culture = Okus
+			change_religion = mak
 		}
-		any_owned_province = { 
+		any_province = { 
 			limit = { 
-				NOT = { area_237 }
-			cede_province = ---
-			remove_core = TKM
+				NOT = { area = area_237 }
 			}
+			remove_core = TKM
 		}
 		}
 		custom_tooltip = tkm_migrate_tooltip

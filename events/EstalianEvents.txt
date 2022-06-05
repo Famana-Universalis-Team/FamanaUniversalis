@@ -181,86 +181,88 @@ country_event = {
 		name = "estal.3.a"
 		ai_chance = { factor = 12 }
 		hidden_effect = {
-		every_country = {
-		white_peace = ZUB
-		}
-		6759 = {
-		 limit = {
-				    is_empty = yes
-			    }
-                cede_province = ZUB
-                add_core = ZUB
-                change_culture = Zubaran
-                change_religion = ZUB
-		}
-		6758 = {
-		 limit = {
-				    is_empty = yes
-			    }
-                cede_province = ZUB
-                add_core = ZUB
-                change_culture = Zubaran
-                change_religion = ZUB
-		}
-		6760 = {
-		 limit = {
-				    is_empty = yes
-			    }
-                cede_province = ZUB
-                add_core = ZUB
-                change_culture = Zubaran
-                change_religion = ZUB
-		}
-		6761 = {
-		 limit = {
-				    is_empty = yes
-			    }
-                cede_province = ZUB
-                add_core = ZUB
-                change_culture = Zubaran
-                change_religion = ZUB
-		}
-		6766 = {
-		 limit = {
-				    is_empty = yes
-			    }
-                cede_province = ZUB
-                add_core = ZUB
-                change_culture = Zubaran
-                change_religion = ZUB
-		}
-		6767 = {
-		 limit = {
-				    is_empty = yes
-			    }
-                cede_province = ZUB
-                add_core = ZUB
-                change_culture = Zubaran
-                change_religion = ZUB
-		}
-		set_capital = 6761
-		release = HZY
-		release = EHZ
-		release = WHZ
-		release = TOI
-		release = LER
-		release = NEN
-		release = RST
-		any_owned_province = { 
-			limit = { 
-				NOT = { 
-					OR = {
-					area_223 
-					area_221
-					area_231
+			every_known_country = {
+			white_peace = ZUB
+			}
+			6759 = {
+					limit = {
+						is_empty = yes
 					}
+					cede_province = ZUB
+					add_core = ZUB
+					change_culture = Zubaran
+					change_religion = ZUB
+			}
+			6758 = {
+				limit = {
+						is_empty = yes
+					}
+					cede_province = ZUB
+					add_core = ZUB
+					change_culture = Zubaran
+					change_religion = ZUB
+			}
+			6760 = {
+					limit = {
+						is_empty = yes
+					}
+					cede_province = ZUB
+					add_core = ZUB
+					change_culture = Zubaran
+					change_religion = ZUB
+			}
+			6761 = {
+				limit = {
+				    is_empty = yes
+			    }
+                cede_province = ZUB
+                add_core = ZUB
+                change_culture = Zubaran
+                change_religion = ZUB
+			}
+			6766 = {
+				limit = {
+				    is_empty = yes
+			    }
+                cede_province = ZUB
+                add_core = ZUB
+                change_culture = Zubaran
+                change_religion = ZUB
+			}
+			6767 = {
+				limit = {
+				    is_empty = yes
+			    }
+                cede_province = ZUB
+                add_core = ZUB
+                change_culture = Zubaran
+                change_religion = ZUB
+			}
+			set_capital = 6761
+			release = HZY
+			release = EHZ
+			release = WHZ
+			release = TOI
+			release = LER
+			release = NEN
+			release = RST
+			release = BIO
+			release = MIZ
+			any_owned_province = { 
+				limit = { 
+					NOT = { 
+						OR = {
+						area = area_223 
+						area = area_221
+						area = area_231
+						}
+					}	
 				}	
-			}	
 			cede_province = ---
 			remove_core = ZUB
 			}
 			set_global_flag = zubara_happened #a little tool that will help us later
-		}
+			}
 		custom_tooltip = zub_migrate_tooltip
 		}
 		
