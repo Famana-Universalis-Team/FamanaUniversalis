@@ -1095,12 +1095,14 @@ country_event = {
 			change_culture = Okus
 			change_religion = mak
 		}
-		any_province = { 
-			limit = { 
-				NOT = { area = area_237 }
+			5812 = {
+				cede_province = ---
+                remove_core = TKM
 			}
-			remove_core = TKM
-		}
+			5813 = {
+				cede_province = ---
+                remove_core = TKM
+			}
 		}
 		custom_tooltip = tkm_migrate_tooltip
 	}
