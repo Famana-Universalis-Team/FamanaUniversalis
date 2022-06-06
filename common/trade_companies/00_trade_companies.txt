@@ -1,4 +1,60 @@
 
+trade_company_rosta = {
+	color = { 48 76 95 }
+	
+	provinces = {
+		6597 6571 6572 6578 6580 6600 6599 6601 6602 6603 6604 6605 6607 6606 6608 6609 6612 6613 6629
+		6631 6627 6628 6595 6594 6593 6590 6591 6592 6596 6579 6589 6588 6598 6620 6622 6621 6624 6625
+		6626 6610 6611 6614 6615 6623 6617 6616 6618 6619
+	}
+	
+	# Specific
+	# Generic
+	names = {
+		name = "TRADE_COMPANY_ROSTA_Root_Culture_GetName"
+	}
+	names = {
+		name = "TRADE_COMPANY_ROSTA_Trade_Company"
+	}
+}
+
+trade_company_nenki = {
+	color = { 212 147 80 }
+	
+	provinces = {
+		6643 6644 6639 6664 6660 6642 6659 6641 6630 6658 6657 6656 6632 6661 6788 6662 6787 6666 6663
+		6665 6648 6646 6647 6649 6650 6654 6652 6651 6653 6655 6668 6669 6670 6671 6667 6778 6779 6777
+		6780 6782 6781 6768 6767 6769 6766 6761 6765 6764 6763
+	}
+	
+	# Specific
+	# Generic
+	names = {
+		name = "TRADE_COMPANY_NENKI_Root_Culture_GetName"
+	}
+	names = {
+		name = "TRADE_COMPANY_NENKI_Trade_Company"
+	}
+}
+
+trade_company_dethoni = {
+	color = { 158 45 117 }
+	
+	provinces = {
+		6582 6587 6586 6585 6583 6584 6569 6547 6546 6548 6549 6536 6532 6535 6538 6541 6540 6550 6551
+		6568 6633 6634 6645 6635 6636 6640 6638 6637
+	}
+	
+	# Specific
+	# Generic
+	names = {
+		name = "TRADE_COMPANY_DETHONI_Root_Culture_GetName"
+	}
+	names = {
+		name = "TRADE_COMPANY_DETHONI_Trade_Company"
+	}
+}
+
 trade_company_milk_road = {
 	color = { 75 120 121 }
 	

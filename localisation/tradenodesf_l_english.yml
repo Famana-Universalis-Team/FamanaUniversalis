@@ -44,6 +44,9 @@
  milk_road:0 "Milk Road"
  kurkar_node:0 "Govat"
  venrol_node:0 "Venrol"
+ dethoni_node:0 "Dethoni"
+ nenki_node:0 "Nenki"
+ rosta_node:0 "Rosta"
 
  #Trade Companies
  trade_company_umzat:0 "Umzatian Charter"
@@ -178,3 +181,12 @@
  trade_company_venrol:0 "Gorfreki Charter"
  TRADE_COMPANY_VENROL_Root_Culture_GetName:0 "[Root.Culture.GetName] Gorfreki Company"
  TRADE_COMPANY_VENROL_Trade_Company:0 "Gorfreki Company"
+ trade_company_dethoni:0 "Leronyan Charter"
+ TRADE_COMPANY_DETHONI_Root_Culture_GetName:0 "[Root.Culture.GetName] Leronyan Company"
+ TRADE_COMPANY_DETHONI_Trade_Company:0 "Leronyan Company"
+ trade_company_nenki:0 "Zubaran Charter"
+ TRADE_COMPANY_NENKI_Root_Culture_GetName:0 "[Root.Culture.GetName] Zubaran Company"
+ TRADE_COMPANY_NENKI_Trade_Company:0 "Zubaran Company"
+ trade_company_rosta:0 "East Gotzlic Charter"
+ TRADE_COMPANY_ROSTA_Root_Culture_GetName:0 "[Root.Culture.GetName] East Gotzlic Company"
+ TRADE_COMPANY_ROSTA_Trade_Company:0 "East Gotzlic Company"

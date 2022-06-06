@@ -1096,7 +1096,7 @@ far_eastern_gomic = {
 		icon = 14
 		color = { 69 106 58 }
 		country = {
-			development_cost = -0.10
+			stability_cost_modifier = -0.10
 			tolerance_own = 2
 		}
 		country_as_secondary = {

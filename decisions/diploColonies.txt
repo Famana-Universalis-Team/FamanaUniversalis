@@ -945,6 +945,63 @@ country_decisions = {
 		}
 	}
 
+	conquer_nuros = {
+		potential = {
+			area_100 = {
+				is_empty = yes
+			}
+			dip_tech = 6
+			OR = {
+				owns_core_province = 5282
+				owns_core_province = 5286
+				owns_core_province = 5288
+			}
+			NOT = {
+				OR = {
+					tag = PJS
+					tag = PCG
+					tag = PLY
+				}
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = area_100
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				is_city = no
+			}
+		}
+		allow = {
+			OR = {
+				dip_tech = 11
+				AND = {
+					exists = RES
+					dip_tech = 9
+				}
+			}
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			mil_power = 50
+		}
+		effect = {
+			area_100 = {
+				limit = {
+					is_empty = yes
+				}
+				cede_province = ROOT
+				change_religion	= ROOT
+				ROOT = {
+					add_mil_power = -50
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
 	conquer_eastern_poto_haroo = {
 		potential = {
 			poto_haroo_area = {

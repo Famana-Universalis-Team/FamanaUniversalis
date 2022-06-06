@@ -114,6 +114,9 @@ country_event = { #lathvy conversion
 		NOT = {
 			government = native
 		}
+		NOT = {
+			tag = RDU
+		}
 	}
 	
 	mean_time_to_happen = {
@@ -177,66 +180,66 @@ country_event = {
 		}
 	}
 	
-	option = { 
+	option = {
 		name = "estal.3.a"
 		ai_chance = { factor = 12 }
 		hidden_effect = {
 			every_known_country = {
-			white_peace = ZUB
+				white_peace = ROOT
 			}
 			6759 = {
 					limit = {
 						is_empty = yes
 					}
-					cede_province = ZUB
-					add_core = ZUB
-					change_culture = Zubaran
-					change_religion = ZUB
+					cede_province = ROOT
+					add_core = ROOT
+					change_culture = ROOT
+					change_religion = ROOT
 			}
 			6758 = {
 				limit = {
 						is_empty = yes
 					}
-					cede_province = ZUB
-					add_core = ZUB
-					change_culture = Zubaran
-					change_religion = ZUB
+					cede_province = ROOT
+					add_core = ROOT
+					change_culture = ROOT
+					change_religion = ROOT
 			}
 			6760 = {
 					limit = {
 						is_empty = yes
 					}
-					cede_province = ZUB
-					add_core = ZUB
-					change_culture = Zubaran
-					change_religion = ZUB
+					cede_province = ROOT
+					add_core = ROOT
+					change_culture = ROOT
+					change_religion = ROOT
 			}
 			6761 = {
 				limit = {
 				    is_empty = yes
 			    }
-                cede_province = ZUB
-                add_core = ZUB
-                change_culture = Zubaran
-                change_religion = ZUB
+                cede_province = ROOT
+                add_core = ROOT
+                change_culture = ROOT
+                change_religion = ROOT
 			}
 			6766 = {
 				limit = {
 				    is_empty = yes
 			    }
-                cede_province = ZUB
-                add_core = ZUB
-                change_culture = Zubaran
-                change_religion = ZUB
+                cede_province = ROOT
+                add_core = ROOT
+                change_culture = ROOT
+                change_religion = ROOT
 			}
 			6767 = {
 				limit = {
 				    is_empty = yes
 			    }
-                cede_province = ZUB
-                add_core = ZUB
-                change_culture = Zubaran
-                change_religion = ZUB
+                cede_province = ROOT
+                add_core = ROOT
+                change_culture = ROOT
+                change_religion = ROOT
 			}
 			set_capital = 6761
 			release = HZY
@@ -248,7 +251,7 @@ country_event = {
 			release = RST
 			release = BIO
 			release = MIZ
-			every_owned_province = { 
+			every_owned_province = {
 				limit = { 
 					NOT = { 
 						OR = {
@@ -258,8 +261,8 @@ country_event = {
 						}
 					}	
 				}	
-			cede_province = ---
-			remove_core = ZUB
+				cede_province = ---
+				remove_core = ZUB
 			}
 			set_global_flag = zubara_happened #a little tool that will help us later
 			}
