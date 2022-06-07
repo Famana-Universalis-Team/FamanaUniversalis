@@ -297,10 +297,10 @@ age_of_reformation = {
 	
 	abilities = {
 	
-		ab_allow_religion_enforced = {
+		#maybe replace due to dlc
+		ab_army_prof_famana = {
 			effect = {
-				custom_tooltip = religion_enforced_edict
-				set_country_flag = religion_enforced_edict
+				add_army_professionalism = 0.05
 			}
 			ai_will_do = {
 				factor = 0
