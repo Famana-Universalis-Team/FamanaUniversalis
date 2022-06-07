@@ -1398,3 +1398,30 @@ country_event = {
 		ai_chance = { factor = 2 }
 	}
 }
+
+#Get rid of stolen dioceses
+country_event = {
+	id = pexto.38
+	hidden = yes
+
+	trigger = {
+		NOT = {
+			tag = PEX
+		}
+		diocese = 1
+	}
+
+	immediate = {
+		every_subject_country = {
+			limit = {
+				is_subject_of_type = diocese
+			}
+			grant_independence = yes
+		}
+	}
+
+	option = {
+		name = pexto.38.a
+		ai_chance = { factor = 1 }
+	}
+}

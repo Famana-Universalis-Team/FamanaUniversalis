@@ -490,6 +490,11 @@
 
  maky_rebuilt:0 "Maky Rebuilt"
 
+ maky.14.t:0 "The Tokum Migration"
+ maky.14.d:0 "The people of Tokum suffer in the blistering heat of the Great Desert. Struggling to survive on the hostile banks of the upper Makyna, they yearn for a better place to live. We know of the Antiash people, who settled around a great lake in the middle of the desert. Perhaps we could settle there as well."
+ maky.14.a:0 "Let us find a better home."
+ maky.14.b:0 "We will stay."
+
  fce.1.t:0 "The Open Frontier"
  fce.1.d:0 "$CAPITAL_CITY$ was founded decades ago as an outpost of Moxon. Fundamentally, we are a nation of pioneers. Now that we are free from Maxan rule, perhaps we should continue our legacy and venture further inland."
  fce.1.a:0 "Estal will be ours!"
@@ -653,16 +658,25 @@
  estal.2.a:0 "We will serve Ara."
  estal.2.b:0 "Exile the missionairies!"
 
+ estal.3.t:0 "A Great Humiliation"
+ estal.3.d:0 "We have been defeated by those who we should have easily been able to defeat. We have never known shame like this. In accordance with Gotzlic customs, it is only appropriate that we retreat from Gotzlica, since our enemies are clearly superior. Maybe we can find new opportunities in the steppes of Central Estal."
+ estal.3.a:0 "The shame is too great to stay in Gotzlica."
+ estal.3.b:0 "No, this is but a mere setback."
+
  #jasuan event inflitration
  jasuaE.9.t:0 "Betrayal from Nakoa"
- jasuaE.9.d:0 "As the Fashran Menace, allied with the forces of the Great Monster, approaches our borders, our supposed 'allies' in Nakoa have completely betrayed us! They have abanoned our courts and refused to provide military aid. We shall face this threat alone."
+ jasuaE.9.d:0 "As the Fashran menace, allied with the forces of the Great Monster, approaches our borders, our supposed 'allies' in Nakoa have completely betrayed us! They have abandoned our courts and refused to provide military aid. We shall face this threat alone."
  jasuaE.9.a:0 "Oh dear..."
  bilik_isolation:0 "Bilik Isolation"
 
- jasuaE.8.t:0 "The fall of Kinvirel"
- jasuaE.8.d:0 "Lathvy exiles from the city of Kinvirel have reached our shores! They tell of how the incoming Fashran horde knocked the ancient walls down and set the city alight. The Crown Jewel of Jasua has just fallen to darkness."
+ jasuaE.8.t:0 "The Fall of Kinvirel"
+ jasuaE.8.d:0 "Lathvy exiles from the city of Kinvirel have reached our shores! They tell of how the incoming Fashran horde knocked the ancient walls down and set the city alight. The crown jewel of Jasua has just fallen into darkness."
  jasuaE.8.a:0 "We shall house them for the time being."
  kinvirel_exiles:0 "Kinvireli Exiles"
+
+ jasuaE.17.t:0 "The Bilik Migration"
+ jasuaE.17.d:0 "Biliku has fallen. Foreign barbarians have conquered and pillaged our home, leaving us no choice but to flee from our country. Many Biliks have made the long march from Biliku, to Bamfad, and all the way through Aresia. We do not know if we are safe from the Great Monster here, but we have not found a better place to settle. The migration has left what remains of the Bilik state weak and ineffective, and it will take years before we have restored any semblance of our former strength."
+ jasuaE.17.a:0 "At least we are free..."
 
  #Fashran events
  
@@ -703,7 +717,7 @@
  fashros.7.d:0 "The Milk Road, walked by desert barbarians and Geopyopian merchants, is a vital part of the local trade network in northern Antebar. Control of it would constitute a great source of revenue for the Tonxara, so it would be a no-brainer to extend our borders into the desert if it provided us with increased control of the Milk Road. However, this would involve the eviction of the local tribes, which may require brute force."
  fashros.7.a:0 "Fashros will grow larger!"
 
- fashros.8.t:0 "The Fate of Emtiks"
+ fashros.8.t:0 "Fate of the Emtiks"
  fashros.8.d:0 "[Root.Monarch.GetTitle] [Root.Monarch.GetName] was visited by a small group of Vanoman settlers who, claiming to represent all Emtik people, begged to respect their customs and place of residence. In return, they offer to teach the famous Vanoman technological knowledge to anyone who wishes and to assist Fashros in making new discoveries."
  fashros.8.a:0 "If they promise to be loyal..."
  fashros.8.b:0 "The horde doesn't make exceptions."
@@ -748,7 +762,7 @@
  fashros_nhoma_real:0 "Play as §YNhoma§!."
  fashros_hoyros_real:0 "Play as §YHoyros§!."
 
- fashros.18.t:0 "Nakoa collapsed!"
+ fashros.18.t:0 "Nakoa Collapsed!"
  fashros.18.d:0 "By taking the key cities of Arrol and Ayli, the Nakoan Government has been unsuccessful at contacting the feudal lords residing in the Northern Mountains. They have declared independence, and weakened our enemy."
  fashros.18.a:0 "The Horde will devour all of them."
  nakoa_collapsed:0 "A few nations in the North of Nakoa shall become independent."
@@ -851,6 +865,8 @@
  nhoma.4.d:0 "One of the tribes that settled during our conquests near the Sea of Ovtim took advantage of the uncertainty of the current situation and formed their own government based in their main city, Koff. Our authority in this province is fading and soon we will not be able to call it ours. "
  nhoma.4.a:0 "We will let them have 'independence', for now atleast."
  nhoma.4.b:0 "Send in the army and arrest the involved."
+
+
 
  eastereggs.4.t:0 "Oforog's insanity"
  eastereggs.4.d:0 "When the previous Emperor of Moxon died suddenly of unknown causes, likely possesion by Loys' spirit, his realm was left to his eldest son Oforog. However, he was not qualified to rule at all, which had led to the splintering of the Maxan isles. He had likely inherited the same genetic condition from his father which caused paranoia and made him eternally possesed by evil spirits. Agixiana's future is completely undecided as we have only now realised that a mad king rules our nation."

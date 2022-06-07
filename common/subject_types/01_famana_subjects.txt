@@ -24,6 +24,7 @@ tomban_state = {
 	can_use_claims = yes
 	can_concentrate_development = no
 	gets_help_with_rebels = no
+	can_transfer_in_peace = no
 
 	can_fight = {
 		same_overlord = tomban_state

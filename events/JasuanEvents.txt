@@ -38,6 +38,17 @@ country_event = {
 			BLK = { total_development = 180 }
 		}
 	}
+
+	immediate = {
+		hidden_effect = {
+			BLK = {
+				country_event = {
+					id = jasuaE.17
+					days = 30
+				}
+			}
+		}
+	}
 	
 	mean_time_to_happen = {
 		days = 1
@@ -441,6 +452,7 @@ country_event = {
 	option = {
 		name = jasuaE.9.a
 		ai_chance = { factor = 1 }
+		remove_historical_friend = NAK
 		add_historical_rival = NAK
 		add_country_modifier = {
 			name = bilik_isolation
@@ -840,5 +852,26 @@ country_event = {
 				culture = Kachik
 			}
 		}
+	}
+}
+
+#Biliku migration
+country_event = {
+	id = jasuaE.17
+	title = jasuaE.17.t
+	desc = jasuaE.17.d
+	picture = SMUGGLERS_eventPicture
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = jasuaE.17.a
+		ai_chance = { factor = 1 }
+
+		add_country_modifier = {
+			name = blk_resettled
+			duration = 3650
+		}
+		add_prestige = -100
 	}
 }

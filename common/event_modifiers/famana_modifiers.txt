@@ -865,3 +865,9 @@ dorlemitz_modifier = {
     infantry_power = 0.10
     reinforce_speed = 0.15
 }
+
+blk_resettled = {
+    production_efficiency = -0.20
+    all_power_cost = 0.1
+    heir_chance = -1
+}

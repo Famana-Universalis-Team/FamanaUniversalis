@@ -308,109 +308,121 @@ age_of_reformation = {
 			}
 		}
 
-		ab_siege_blockades = {
+		ab_diplomatic_networks = {
 			modifier = {
-				siege_blockade_progress = 1
+				diplomats = 1
+			}
+			ai_will_do = {
+				factor = 10
+				#modifier = {
+				#}
+			}
+		}
+
+		ab_extensive_claims_famana = {
+			rule = {
+				can_chain_claim = yes
+			}
+			modifier = {
+				fabricate_claims_cost = -0.50
+			}
+			ai_will_do = {
+				factor = 10
+				#modifier = {
+				#}
+			}
+		}
+		
+		ab_faster_seiges = {
+			modifier = {
+				siege_ability = 0.15
+			}
+			ai_will_do = {
+				factor = 10
+				#modifier = {
+				#}
+			}
+		}
+
+		ab_glorious_battles = {
+			modifier = {
+				prestige_from_land = 1.0
+			}
+			ai_will_do = {
+				factor = 10
+				#modifier = {
+				#}
+			}
+		}
+		
+		ab_edict_famana = { #ADD AN EDICT
+			modifier = {
+				
+			}
+			ai_will_do = {
+				factor = 10
+				#modifier = {
+				#}
+			}
+		}
+
+		ab_faster_settlement = {
+			modifier = {
+				global_colonial_growth = 30
 			}
 			ai_will_do = {
 				factor = 10
 				modifier = {
 					factor = 0
 					NOT = {
-							num_of_ports = 5
+						num_of_colonists = 1
 					}
 				}
-
 			}
 		}
 
-		ab_warscore_vs_religion = {
-			modifier = {
-				warscore_cost_vs_other_religion = -0.25
-			}
-			ai_will_do = {
-				factor = 10
-			}
-		}
-		
-		ab_mercenary_discipline = {
-			modifier = {
-				mercenary_discipline = 0.05
-			}
-			ai_will_do = {
-				factor = 10
-			}
-		}
-
-		ab_ship_power_propagation = {
-			modifier = {
-				ship_power_propagation = 0.2
-			}
-			ai_will_do = {
-				factor = 10
-			}
-		}
-		
-		ab_institution_spread_from_true_faith = {
-			modifier = {
-				institution_spread_from_true_faith = 0.5
-			}
-			ai_will_do = {
-				factor = 10
-			}
-		}
-
-		ab_prestige_per_development_from_conversion = {
-			modifier = {
-				prestige_per_development_from_conversion = 0.3
-			}
-			ai_will_do = {
-				factor = 10
-			}
-		}
-
-		ab_spain_tercio = {
+		ab_rostan_morale = {
 			allow = {
-				tag = SPA
+				tag = RST
 			}
 			modifier = {
-				shock_damage_received = -0.3
+				land_morale = 0.25
 			}
 			ai_will_do = {
 				factor = 100
 			}
 		}
 		
-		ab_mughal_artillery = {
+		ab_geopyopian_prosperity = {
 			allow = {
 				tag = GEP
 			}
 			modifier = {
-				global_tax_modifier = 0.20
+				global_tax_modifier = 0.33
 			}
 			ai_will_do = {
 				factor = 100
 			}
 		}
 		
-		ab_polish_legitimacy = {
+		ab_nafan_expansion = {
 			allow = {
 				tag = NAF
 			}
 			modifier = {
-				administrative_efficiency = 0.05
+				administrative_efficiency = 0.10
 			}
 			ai_will_do = {
 				factor = 100
 			}
 		}
 		
-		ab_persia_reinforce = {
+		ab_resteman_trade = {
 			allow = {
-				tag = PER
+				tag = RES
 			}
 			modifier = {
-				reinforce_cost_modifier = -0.3
+				global_trade_power = 0.5
 			}
 			ai_will_do = {
 				factor = 100

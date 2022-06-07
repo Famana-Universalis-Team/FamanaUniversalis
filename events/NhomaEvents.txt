@@ -147,11 +147,14 @@ country_event = {
 
 #Jimbalan migration  (waiting for the nhome collapse to make a flag)
 #country_event = {
-	#id = nhoma.5
-	#title = nhoma.5
+	##id = nhoma.5
+	#title = nhoma.5.t
+    #desc = nhoma.5.d
 	#picture = LAND_MILITARY_eventPicture
 	#fire_only_once = yes
 	
+# hey is this supposed to fire for a random country? That's what the trigger does rn
+
 	#trigger = {
 		
 		#NOT = { 

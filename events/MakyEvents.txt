@@ -1052,10 +1052,14 @@ country_event = {
 	desc = maky.14.d
 	picture = LAND_MILITARY_eventPicture
 	fire_only_once = yes
+	major = yes
 	
 	trigger = {
-		is_year = 333
+		is_year = 330
 		tag = TKM
+		NOT = {
+			total_development = 100
+		}
 		OR = {
 			7241 = { is_empty = yes }
 			7240 = { is_empty = yes }
@@ -1063,11 +1067,12 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 12
+		months = 24
 	}
 	
 	option = {
 		name = maky.14.a
+		ai_chance = { factor = 1 }
 		hidden_effect = {
 				release = LVY
 				release = KRS
@@ -1080,28 +1085,29 @@ country_event = {
 				release = MKK
 				release = DYR #just in case
 			
-		7241 = {
-			cede_province = TKM
-			add_core = TKM
-			add_base_manpower = 1
-			change_culture = Okus
-			change_religion = mak
-			
-		}
-		7240 = {
-			cede_province = TKM
-			add_core = TKM
-			add_base_manpower = 1
-			change_culture = Okus
-			change_religion = mak
-		}
+			7241 = {
+				cede_province = ROOT
+				add_core = ROOT
+				add_base_manpower = 1
+				change_culture = ROOT
+				change_religion = ROOT
+			}
+			7240 = {
+				cede_province = ROOT
+				add_core = ROOT
+				add_base_manpower = 1
+				change_culture = ROOT
+				change_religion = ROOT
+			}
 			5812 = {
 				cede_province = ---
-                remove_core = TKM
+                remove_core = ROOT
+				add_base_manpower = -1
 			}
 			5813 = {
-				cede_province = ---
-                remove_core = TKM
+				cede_province = LVY
+                remove_core = ROOT
+				add_base_manpower = -1
 			}
 		}
 		custom_tooltip = tkm_migrate_tooltip
@@ -1109,7 +1115,7 @@ country_event = {
 	
 	option = {
 		name = maky.14.b 
+		ai_chance = { factor = 0 }
 		add_prestige = 5
 	}
-	
 }	

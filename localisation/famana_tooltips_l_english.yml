@@ -33,7 +33,7 @@
  INSUFFICIENT_DIP_TECH_31: "You need §YDiplomatic Technology 31 §Wto colonize this province."
  INSUFFICIENT_DIP_TECH_32: "You need §YDiplomatic Technology 32 §Wto colonize this province."
  ##############################################
- rdum_migrate_tooltip: "We will lose all our current core provinces and instead migrate to the §YBrula §Wregion."
+ rdum_migrate_tooltip: "We will lose all our current core provinces and instead migrate to the §YBrula§! region."
  spread_tonmo_aspect_tooltip: "A random §Yrival §Wcountry will lose §R1 §Wstability."
  kin_kapolia_tooltip: "If we complete this mission while having the Ghaloya, Aelbitrago, Mikledonia, Degladon, Geccis, Maru and Herrim areas owned by us or our non-tributary subjects:\n\n§Y[Root.GetName] §Wgains permanent claims on §YBohora §Wand §YKachikia §WAreas.\n\nIf we complete this mission while being §YLathvy§W, being allied to §YKapolia §Wwith them having §G+200 §Wopinion of us, and having an army at least §G2.0 §Wtimes the size of theirs:\n\nInherit §YKapolia§W."
  LATHVY_QEUSTION_FIRED: "The event '§YThe Lathvy Question§W' has happened."
@@ -117,3 +117,5 @@
  van_emastalia_tt: "Vanoma gets '§YEmastalian Shipbuilding§!' for §Y25 years§!, giving the following effects:\nShip Costs: §G-10.0%§!"
  vanoma_accept_lathvy: "Every owned §YLathvy§! province in §YVanoma§! region gets '§YLathvy Autonomy§!' for §Y50 years§!, giving the following effects:\nLocal Unrest: §G-2.00§!\nLocal Missionary Strength: §R-100.0%§!"
  fashros_startup_tt: "§RFashros will divide into separate Tonxaras during the Age of the Eclipse. One of these may be controlled by the player.§!"
+ tkm_migrate_tooltip: "We will lose all our current core provinces and instead migrate to the §YCentral Antebar§! region."
+ zub_migrate_tooltip: "We will lose all our current core provinces and instead migrate to the §YVoychonia§! region."
