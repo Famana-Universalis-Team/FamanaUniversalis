@@ -228,38 +228,38 @@ spriteTypes = {
 
 	# Age of Reformation Objectives
 	spriteType = {
-		name = "GFX_obj_christian_convert"
-		texturefile = "gfx/interface/ages/obj_christian_convert.dds"
+		name = "GFX_obj_tradecenters"
+		texturefile = "gfx/interface/ages/obj_5_centers_of_trade.dds"
 	}
 	
 	spriteType = {
-		name = "GFX_obj_humanism_religious"
-		texturefile = "gfx/interface/ages/obj_humanism_religious.dds"
-	}
-	
-	spriteType = {
-		name = "GFX_obj_convert_10_provinces"
-		texturefile = "gfx/interface/ages/obj_convert_10_provinces.dds"
-	}
-	
-	spriteType = {
-		name = "GFX_obj_colonial_empire"
-		texturefile = "gfx/interface/ages/obj_colonial_empire.dds"
-	}
-	
-	spriteType = {
-		name = "GFX_obj_force_converted"
-		texturefile = "gfx/interface/ages/obj_force_converted.dds"
-	}
-	
-	spriteType = {
-		name = "GFX_obj_asian_trade"
-		texturefile = "gfx/interface/ages/obj_asian_trade.dds"
+		name = "GFX_obj_dof"
+		texturefile = "gfx/interface/ages/obj_dof.dds"
 	}
 	
 	spriteType = {
 		name = "GFX_obj_unify_culture"
 		texturefile = "gfx/interface/ages/obj_unify_culture.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_obj_nafan_scholar"
+		texturefile = "gfx/interface/ages/obj_nafan_scholar.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_obj_philosopher"
+		texturefile = "gfx/interface/ages/obj_philosopher.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_obj_convert_20_provinces"
+		texturefile = "gfx/interface/ages/obj_convert_20_provinces.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_obj_development_growth"
+		texturefile = "gfx/interface/ages/obj_development_growth.dds"
 	}
 	
 
@@ -463,6 +463,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_ab_great_leader"
 		texturefile = "gfx/interface/ages/ab_great_leader.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ab_edict_integration_effort"
+		texturefile = "gfx/interface/ages/ab_allow_edict_of_absolutism.dds"
 	}
 	
 

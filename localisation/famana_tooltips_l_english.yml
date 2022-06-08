@@ -120,3 +120,8 @@
  tkm_migrate_tooltip: "We will lose all our current core provinces and instead migrate to the §YCentral Antebar§! region."
  zub_migrate_tooltip: "We will lose all our current core provinces and instead migrate to the §YVoychonia§! region."
  nafa_jzoet_tt: "§YJzoet will become available for hire§!"
+ integration_effort_flag: "Allows State Edict '§YIntegration Effort§!'\n (Years of Separatism: §G-10§!)\n"
+ edict_integration_effort_tooltip: "Requires '§YIntegration Effort Edict§!' from Age of the Eclipse."
+ edict_int_tt: "Allows State Edict '§YIntegration Effort§!'\n (Local Years of Separatism: §G-10§!)"
+ nafan_school_scholar:0 "Follow §YNafan Thought§! or invite scholars of §YNafan Thought§!"
+ obj_convert_20_provinces_tooltip: "Converted at least §Y20§! provinces to §Y[Root.Religion.GetName]§!"

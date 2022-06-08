@@ -280,7 +280,7 @@ age_of_reformation = {
 			grown_by_development = 500
 		}
 		
-		obj_tradecenters = {
+		obj_tradecenters = { #
 			num_of_centers_of_trade = 10
 		}
 		
@@ -288,7 +288,7 @@ age_of_reformation = {
 			is_defender_of_faith = yes
 		}
 		
-		obj_unify_culture = {	
+		obj_unify_culture = { #
 			is_subject = no
 			has_unified_culture_group = yes
 		}
@@ -300,7 +300,7 @@ age_of_reformation = {
 		#maybe replace due to dlc
 		ab_great_leader = {
 			effect = {
-				create_general = { tradition = 75 }
+				create_general = { tradition = 80 }
 			}
 			ai_will_do = {
 				factor = 10
@@ -354,12 +354,15 @@ age_of_reformation = {
 			}
 		}
 		
-		ab_edict_famana = { #ADD AN EDICT
-			modifier = {
-				
+		ab_edict_integration_effort = {
+			effect = {
+				hidden_effect = {
+					set_country_flag = integration_effort_flag
+				}
+				custom_tooltip = edict_int_tt
 			}
 			ai_will_do = {
-				factor = 10
+				factor = 0
 				#modifier = {
 				#}
 			}

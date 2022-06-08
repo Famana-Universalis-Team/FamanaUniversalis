@@ -36,14 +36,26 @@
  ab_ordican_conquest:0 "Ordican Conquests"
 
  #Age of the Eclipse
- #Insert objectives
+ obj_nafan_scholar:0 "Follow Nafan Thought"
+ obj_nafan_scholar_desc:0 "Be a Lathvy nation of Nafan Thought or invite Nafan scholars."
+ obj_philosopher:0 "Host Philosopoher"
+ obj_philosopher_desc:0 "Have a Philosopher with a skill of at least 3."
+ obj_convert_20_provinces:0 "Convert 20 provinces"
+ obj_convert_20_provinces_desc:0 "Convert at least 20 provinces to the true faith."
+ obj_development_growth:0 "Expand Nation"
+ obj_development_growth_desc:0 "Increase total development by at least 500."
+ obj_tradecenters:0 "Control Trade Centers"
+ obj_tradecenters_desc:0 "Own at least 10 provinces that have a center of trade."
+ obj_dof:0 "Defender of the Faith"
+ obj_dof_desc:0 "Be the Defender of the Faith of your religion."
 
  ab_great_leader:0 "Great Leader"
  ab_diplomatic_networks:0 "Diplomatic Networks"
  ab_extensive_claims_famana:0 "Extensive Claims"
  ab_faster_seiges:0 "Faster Sieges"
  ab_glorious_battles:0 "Glorious Battles"
- #ab_edict_famana:0 ""
+ ab_edict_integration_effort:0 "Integration Effort Edict"
+ edict_integration_effort:0 "Integration Effort"
  ab_faster_settlement:0 "Rapid Settlement"
  ab_rostan_morale:0 "Rostan Morale"
  ab_geopyopian_prosperity:0 "Geopyopian Taxation"

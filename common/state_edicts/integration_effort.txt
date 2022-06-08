@@ -1,0 +1,25 @@
+edict_integration_effort = {
+	potential = {
+		current_age = age_of_reformation
+	}
+	
+	allow = {
+		custom_trigger_tooltip = {
+			tooltip = edict_integration_effort_tooltip
+			has_country_flag = integration_effort_flag
+		}
+		current_age = age_of_reformation
+	}
+	
+	modifier = { # OBS: Modify AI accordingly if this is changed
+		local_years_of_nationalism = -10
+	}
+	
+	color = {  229 52 52  }
+	
+	
+	ai_will_do = {
+		factor = 0
+	}
+	
+}
