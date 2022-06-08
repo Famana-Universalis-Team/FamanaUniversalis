@@ -298,12 +298,12 @@ age_of_reformation = {
 	abilities = {
 	
 		#maybe replace due to dlc
-		ab_army_prof_famana = {
+		ab_great_leader = {
 			effect = {
-				add_army_professionalism = 0.05
+				create_general = { tradition = 75 }
 			}
 			ai_will_do = {
-				factor = 0
+				factor = 10
 			}
 		}
 

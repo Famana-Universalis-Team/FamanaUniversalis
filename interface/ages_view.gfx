@@ -408,121 +408,61 @@ spriteTypes = {
 		texturefile = "gfx/interface/ages/ab_cheaper_mercenaries.dds"
 	}
 	spriteType = {
-		name = "GFX_ab_allow_feudal_de_jure_law"
-		texturefile = "gfx/interface/ages/ab_allow_feudal_de_jure_law.dds"
-	}
-	
-	spriteType = {
-		name = "GFX_ab_claim_duration"
-		texturefile = "gfx/interface/ages/ab_claim_duration.dds"
-	}
-	
-	spriteType = {
-		name = "GFX_ab_transfer_vassal_wargoal"
-		texturefile = "gfx/interface/ages/ab_transfer_vassal_wargoal.dds"
-	}
-	
-	spriteType = {
-		name = "GFX_ab_can_chain_claim"
-		texturefile = "gfx/interface/ages/ab_can_chain_claim.dds"
-	}
-	
-	spriteType = {
-		name = "GFX_ab_free_exploration_maintenance"
-		texturefile = "gfx/interface/ages/ab_free_exploration_maintenance.dds"
-	}
-	
-	spriteType = {
-		name = "GFX_ab_colony_boost_development"
-		texturefile = "gfx/interface/ages/ab_colony_boost_development.dds"
-	}
-	
-	spriteType = {
 		name = "GFX_ab_attack_bonus_in_capital_terrain"
 		texturefile = "gfx/interface/ages/ab_attack_bonus_in_capital_terrain.dds"
 	}	
 	
-	spriteType = {
-		name = "GFX_ab_ottoman_siege_ability"
-		texturefile = "gfx/interface/ages/ab_ottoman_siege_ability.dds"
-	}	
-	
-	spriteType = {
-		name = "GFX_ab_portugal_colonial_growth"
-		texturefile = "gfx/interface/ages/ab_portugal_colonial_growth.dds"
-	}	
-	
-	spriteType = {
-		name = "GFX_ab_venice_ship_trade"
-		texturefile = "gfx/interface/ages/ab_venice_ship_trade.dds"
-	}	
-	
-	spriteType = {
-		name = "GFX_ab_denmark_reduced_lib_desire"
-		texturefile = "gfx/interface/ages/ab_denmark_reduced_lib_desire.dds"
-	}	
-	
-	spriteType = {
-		name = "GFX_ab_justified_wars"
-		texturefile = "gfx/interface/ages/ab_justified_wars.dds"
-	}
 	
 	
 	
 	# Age of Reformation Abilities
 	spriteType = {
-		name = "GFX_ab_allow_religion_enforced"
-		texturefile = "gfx/interface/ages/ab_allow_religion_enforced.dds"
+		name = "GFX_ab_rostan_morale"
+		texturefile = "gfx/interface/ages/ab_rostan_morale.dds"
 	}
 	
 	spriteType = {
-		name = "GFX_ab_culture_cost"
-		texturefile = "gfx/interface/ages/ab_culture_cost.dds"
+		name = "GFX_ab_geopyopian_prosperity"
+		texturefile = "gfx/interface/ages/ab_geopyopian_prosperity.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_nafan_expansion"
+		texturefile = "gfx/interface/ages/ab_nafan_expansion.dds"
 	}
 	
 	spriteType = {
-		name = "GFX_ab_cheaper_enforce_religion"
-		texturefile = "gfx/interface/ages/ab_cheaper_enforce_religion.dds"
+		name = "GFX_ab_resteman_trade"
+		texturefile = "gfx/interface/ages/ab_resteman_trade.dds"
 	}
 	
 	spriteType = {
-		name = "GFX_ab_placed_merchants"
-		texturefile = "gfx/interface/ages/ab_placed_merchants.dds"
+		name = "GFX_ab_extensive_claims_famana"
+		texturefile = "gfx/interface/ages/ab_extensive_claims_famana.dds"
 	}
 	
 	spriteType = {
-		name = "GFX_ab_ship_power_propagation"
-		texturefile = "gfx/interface/ages/ab_ship_power_propagation.dds"
+		name = "GFX_ab_faster_settlement"
+		texturefile = "gfx/interface/ages/ab_faster_settlement.dds"
 	}
 	
 	spriteType = {
-		name = "GFX_ab_institution_spread_from_true_faith"
-		texturefile = "gfx/interface/ages/ab_institution_spread_from_true_faith.dds"
+		name = "GFX_ab_glorious_battles"
+		texturefile = "gfx/interface/ages/ab_glorious_battles.dds"
 	}
 	
 	spriteType = {
-		name = "GFX_ab_prestige_per_development_from_conversion"
-		texturefile = "gfx/interface/ages/ab_prestige_per_development_from_conversion.dds"
+		name = "GFX_ab_faster_seiges"
+		texturefile = "gfx/interface/ages/ab_faster_seiges.dds"
 	}
 	
 	spriteType = {
-		name = "GFX_ab_spain_tercio"
-		texturefile = "gfx/interface/ages/ab_spain_tercio.dds"
+		name = "GFX_ab_diplomatic_networks"
+		texturefile = "gfx/interface/ages/ab_diplomatic_networks.dds"
 	}
 	
 	spriteType = {
-		name = "GFX_ab_mughal_artillery"
-		texturefile = "gfx/interface/ages/ab_mughal_artillery.dds"
-	}
-	
-	spriteType = {
-		name = "GFX_ab_polish_legitimacy"
-		texturefile = "gfx/interface/ages/ab_polish_legitimacy.dds"
-	}
-	
-	spriteType = {
-		name = "GFX_ab_persia_reinforce"
-		texturefile = "gfx/interface/ages/ab_persia_reinforce.dds"
+		name = "GFX_ab_great_leader"
+		texturefile = "gfx/interface/ages/ab_great_leader.dds"
 	}
 	
 
