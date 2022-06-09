@@ -119,3 +119,42 @@ NOZ_ideas = {
         land_attrition = -0.10
     }
 }
+
+VET_ideas = {
+    start = {
+        global_ship_cost = -0.25
+        global_trade_goods_size_modifier = 0.1
+    }
+
+    bonus = {
+        free_dip_policy = 1
+    }
+
+    trigger = {
+        tag = VET
+    }
+    free = yes
+
+    vet_1 = {
+        religious_unity = 0.33
+    }
+    vet_2 = {
+        global_unrest = -2
+    }
+    vet_3 = {
+        merchants = 1
+        global_ship_trade_power = 0.2
+    }
+    vet_4 = {
+        infantry_power = 0.10
+    }
+    vet_5 = {
+        defensiveness = 0.10
+    }
+    vet_6 = {
+        navy_tradition = 1
+    }
+    vet_7 = {
+        improve_relation_modifier = 0.2
+    }
+}

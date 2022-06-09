@@ -3025,7 +3025,6 @@ country_event = { #kill tonxara
         release = RAY #
         release = MIW #
         release = VET #
-        release = IGM #
         release = OVM #
         release = KFF #
         release = LAM #
@@ -3046,12 +3045,22 @@ country_event = { #kill tonxara
         #release = BLU #
         #release = IPK #
         #release = MMM #
+        #release = IGM #
         ################## non playables
         release = GEP
         release = NAF
         release = EYK
         release = IRF
         #NOTE: add geopyopian releasables at some point
+        LAM = {
+            add_government_reform = emmi
+        }
+        JMK = {
+            add_government_reform = emmi
+        }
+        SLK = {
+            add_government_reform = emmi
+        }
     }
 }
 
