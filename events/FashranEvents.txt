@@ -2602,15 +2602,13 @@ country_event = { #Aresian religious resistance
     desc = fashros.32.d
     picture = ANGRY_MOB_eventPicture
     major = yes
+    fire_only_once = yes
 
     trigger = {
         tag = FAS
         num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
             value = 15
             region = aresia_region
-        }
-        NOT = {
-            has_country_flag = fashros_aresian_res_happened
         }
     }
 
@@ -2625,7 +2623,6 @@ country_event = { #Aresian religious resistance
         }
         custom_tooltip = fashros_aresian_res_tooltip
         hidden_effect = {
-            set_country_flag = fashros_aresian_res_happened
             every_province = {
                 limit = {
                     NOT = {
@@ -2660,15 +2657,13 @@ country_event = { #Vanoman religious resistance
     desc = fashros.33.d
     picture = ANGRY_MOB_eventPicture
     major = yes
+    fire_only_once = yes
 
     trigger = {
         tag = FAS
         num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
             value = 7
             region = vanoma_region
-        }
-        NOT = {
-            has_country_flag = fashros_vanoman_res_happened
         }
     }
 
@@ -2683,7 +2678,6 @@ country_event = { #Vanoman religious resistance
         }
         custom_tooltip = fashros_vanoman_res_tooltip
         hidden_effect = {
-            set_country_flag = fashros_vanoman_res_happened
             every_province = {
                 limit = {
                     NOT = {

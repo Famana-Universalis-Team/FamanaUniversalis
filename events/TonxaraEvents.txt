@@ -67,15 +67,16 @@ country_event = { #kisholi
                 id = fashros.22
                 days = 1
             }
-            ###Spawn in the Tonmo Cores here. i dont think most of the tags exist yet though
-
-
-            every_province = {
+            if = {
                 limit = {
-                    region = kapolia_region
                     exists = NAF
                 }
-                add_claim = NAF
+                every_owned_province = {
+                    limit = {
+                        region = kapolia_region
+                    }
+                    add_claim = NAF
+                }
             }
         }
     }
@@ -111,8 +112,6 @@ country_event = { #jafxoi
                 id = fashros.22
                 days = 1
             }
-            ###Spawn in the Tonmo Cores here. i dont think most of the tags exist yet though
-
         }
     }
 }
@@ -147,8 +146,6 @@ country_event = { #hoyros
                 id = fashros.22
                 days = 1
             }
-            ###Spawn in the Tonmo Cores here. i dont think most of the tags exist yet though
-
         }
     }
 }
@@ -217,5 +214,44 @@ country_event = { #ouchy wouchies to the tonxara
             name = tonxara_troubles
             duration = 3650
         }
+    }
+}
+
+country_event = { #Koff
+    id = tonxara.7
+    title = tonxara.7.t
+    picture = COUNTRY_COLLAPSE_eventPicture
+    desc = tonxara.7.d
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        months = 24
+    }
+
+    trigger = {
+        tag = NHM
+        NOT = {
+            exists = KFF
+        }
+    }
+    immediate = {
+        release = KFF
+    }
+    option = {
+        name = tonxara.7.a
+        ai_chance = { factor = 4 }
+        add_truce_with = KFF
+        remove_core = 5866
+        add_prestige = -5
+    }
+    option = {
+        name = tonxara.7.b
+        ai_chance = { factor = 1 }
+        declare_war_with_cb = {
+            who = KFF
+            casus_belli = cb_core
+            war_goal_province = 5866
+        }
+        add_stability = -1
     }
 }
