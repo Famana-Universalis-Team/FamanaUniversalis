@@ -100,103 +100,57 @@ country_event = {
 	}
 }
 
-# Koff 
+#Jimbalan migration  (decided to scrap the flag idea)
 country_event = {
-    id = nhoma.4
-    title = nhoma.4.t
-    desc = nhoma.4.d
-    picture = MERCHANTS_TALKING_eventPicture
-    fire_only_once = yes
+	id = nhoma.5
+	title = nhoma.5.t
+    desc = nhoma.5.d
+	picture = LAND_MILITARY_eventPicture
+	fire_only_once = yes
+	hidden = yes
 	
 	trigger = {
-        is_year = 327
-		tag = NHM
-        5866 = {
-		is_core = KFF
-		owned_by = NHM
+		year = 342
+		NOT = { 
+			exists = JIB
 		}
-		NOT = { exists = KFF }
-
-    }
+	}
 	
 	mean_time_to_happen = {
-        months = 24
-    }
-  
-   option = {
-	ai_chance = { factor = 75 }
-        name = nhoma.4.a
-	goto = 5866
-        5866 = {
-	        cede_province = KFF
-        }
-		add_truce_with = KFF
-		#maybe this could accelerate the disaster when it's implemented
-    }
+	months = 12
+	}
+	
+	immediate = {
+		6010 = {
+			limit = {
+				    is_empty = yes
+			   }
+			cede_province = JIB
+            add_core = JIB
+            change_culture = Jimbalan
+            change_religion = tonmo
+		}
+		6567 = {
+			limit = {
+				  is_empty = yes
+			   }
+			cede_province = JIB
+            add_core = JIB
+           change_culture = Jimbalan
+           change_religion = tonmo
+		}
+		6552 = {
+			limit = {
+				   is_empty = yes
+			    }
+			cede_province = JIB
+            add_core = JIB
+            change_culture = Jimbalan
+            change_religion = tonmo
+		}
+		JIB = { change_religion = tonmo }
+	}
 	option = {
-	ai_chance = { factor = 25 }
-       name = nhoma.4.b
-	   5866 = {
-	   add_unrest = 10
-	   }
-	add_mil_power = -50
-	add_adm_power = -50
-       
-    }
+	name = nhoma.5.a
+	}
 }
-
-#Jimbalan migration  (waiting for the nhome collapse to make a flag)
-#country_event = {
-	##id = nhoma.5
-	#title = nhoma.5.t
-    #desc = nhoma.5.d
-	#picture = LAND_MILITARY_eventPicture
-	#fire_only_once = yes
-	
-# hey is this supposed to fire for a random country? That's what the trigger does rn
-
-	#trigger = {
-		
-		#NOT = { 
-			#exists = JIB
-		#}
-	#}
-	
-	#mean_time_to_happen = {
-	#months = 12
-	#}
-	
-	#immediate = {
-		#6010 = {
-			#limit = {
-				    #is_empty = yes
-			   # }
-			#cede_province = JIB
-           # add_core = JIB
-           # change_culture = Jimbalan
-           # change_religion = tonmo
-		#}
-		#6567 = {
-			#limit = {
-				  #  is_empty = yes
-			   # }
-			#cede_province = JIB
-           # add_core = JIB
-           # change_culture = Jimbalan
-           # change_religion = tonmo
-		#}
-		#6552 = {
-			#limit = {
-				   # is_empty = yes
-			    #}
-			#cede_province = JIB
-            #add_core = JIB
-            #change_culture = Jimbalan
-            #change_religion = tonmo
-	#	}
-		#JIB = { change_religion = tonmo }
-	#}
-	#option = {
-	#name = nhoma.5.a
-	#}
-#}
