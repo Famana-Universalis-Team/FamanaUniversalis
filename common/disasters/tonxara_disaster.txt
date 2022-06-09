@@ -53,6 +53,13 @@ tonxara_disaster = {
 		NOT = { num_of_rebel_controlled_provinces = 1 }
         legitimacy = 90
         religious_unity = 0.75
+        custom_trigger_tooltip = {
+            tooltip = TONXARA_DIS_5Y_TOOLTIP
+            had_country_flag = {
+                flag = tonxaraDisasterHappened
+                days = 3650
+            }
+        }
     }
 
     on_start = tonxara.6

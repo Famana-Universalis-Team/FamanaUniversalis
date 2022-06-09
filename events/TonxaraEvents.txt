@@ -184,6 +184,13 @@ country_event = { #disaster start event
     picture = COUNTRY_COLLAPSE_eventPicture
     desc = tonxara.6.d
     is_triggered_only = yes
+    major = yes
+
+    immediate = {
+        hidden_effect = {
+            set_country_flag = tonxaraDisasterHappened
+        }
+    }
 
     option = {
         name = tonxara.6.a
@@ -195,9 +202,11 @@ country_event = { #disaster start event
         name = tonxara.6.b
         ai_chance = { factor = 0 }
         custom_tooltip = tonxara_you_should_release_yourself_NOW_tooltip
-        #country_event = {
-        #    id = tonxara.9 #Event that lets you pick releasable, alternatively lets you go back
-        #}
+        hidden_effect = {
+            country_event = {
+                id = tonxara.9 #Event that lets you pick releasable, alternatively lets you go back.
+            }
+        }
     }
 }
 
@@ -219,7 +228,27 @@ country_event = { #Koff
         }
     }
     immediate = {
-        release = KFF
+        hidden_effect = {
+            release = KFF
+            5866 = {
+                add_base_tax = 1
+                add_base_production = 2
+                add_base_manpower = 1
+            }
+            KFF = {
+                capital_scope = {
+                    ROOT = {
+                        infantry = PREV
+                        infantry = PREV
+                        infantry = PREV
+                        cavalry = PREV
+                    }
+                }
+                create_general = {
+                    tradition = 100
+                }
+            }
+        }
     }
     option = {
         name = tonxara.7.a
@@ -246,6 +275,7 @@ country_event = { #disaster end event
     picture = CITY_DEVELOPMENT_eventPicture
     desc = tonxara.8.d
     is_triggered_only = yes
+    major = yes
 
     immediate = {
         hidden_effect = {
@@ -259,4 +289,2827 @@ country_event = { #disaster end event
     }
 }
 
-country_event = {} #tonxara.9, this event will let you pick your new country or go back to the previous event
+country_event = { #tonxara.9, this event will let you pick your new country or go back to the previous event. Options based on whatever cores you have. OBS includes amaxras
+    id = tonxara.9
+    title = tonxara.9.title
+    picture = CITY_DEVELOPMENT_eventPicture
+    desc = tonxara.9.desc
+    is_triggered_only = yes
+
+    option = {
+        name = tonxara.9.a
+        ai_chance = { factor = 1 }
+        highlight = yes
+        country_event = {
+            id = tonxara.6 #Go back
+        }
+    }
+
+    option = { #Fisbiklu
+        name = tonxara.9.b
+        ai_chance = { factor = 0 }
+
+        trigger = {
+            any_owned_province = {
+                is_core	= FSB
+            }
+            NOT = {
+                exists = FSB
+            }
+        }
+
+        hidden_effect = {
+            ROOT = {
+                country_event = {
+                    id = tonxara.10 #you should kill yourself NOW!
+                    days = 1
+                }
+                release_all_subjects = yes
+            }
+        }
+
+        release = FSB
+        switch_tag = FSB
+
+        hidden_effect = {
+            FSB = {
+                set_country_flag = givenBonusTonmo
+                capital_scope = {
+                    ROOT = {
+                        infantry = PREV
+                        infantry = PREV
+                        infantry = PREV
+                        cavalry = PREV
+                        cavalry = PREV
+                    }
+                }
+                add_adm_power = 100
+                add_dip_power = 100
+                add_mil_power = 100
+                add_manpower = 5
+            }
+            if = {
+                limit = {
+                    FSB = {
+                        total_development = 100
+                    }
+                }
+                FSB = {
+                    capital_scope = {
+                        ROOT = {
+                            infantry = PREV
+                            infantry = PREV
+                            infantry = PREV
+                            cavalry = PREV
+                            cavalry = PREV
+                        }
+                    }
+                    add_manpower = 5
+                }
+            }
+            if = {
+                limit = {
+                    FSB = {
+                        total_development = 200
+                    }
+                }
+                FSB = {
+                    capital_scope = {
+                        ROOT = {
+                            infantry = PREV
+                            infantry = PREV
+                            infantry = PREV
+                            cavalry = PREV
+                            cavalry = PREV
+                        }
+                    }
+                    add_manpower = 5
+                }
+            }
+        }
+    }
+
+    option = { #Amaxras
+        name = tonxara.9.c
+        ai_chance = { factor = 0 }
+
+        trigger = {
+            any_owned_province = {
+                is_core	= AMX
+            }
+            NOT = {
+                exists = AMX
+            }
+        }
+
+        hidden_effect = {
+            ROOT = {
+                country_event = {
+                    id = tonxara.10 #you should kill yourself NOW!
+                    days = 1
+                }
+                release_all_subjects = yes
+            }
+        }
+
+        release = AMX
+        switch_tag = AMX
+
+        hidden_effect = {
+            AMX = {
+                set_country_flag = givenBonusTonmo
+                capital_scope = {
+                    ROOT = {
+                        infantry = PREV
+                        infantry = PREV
+                        infantry = PREV
+                        cavalry = PREV
+                        cavalry = PREV
+                    }
+                }
+                add_adm_power = 100
+                add_dip_power = 100
+                add_mil_power = 100
+                add_manpower = 5
+            }
+            if = {
+                limit = {
+                    AMX = {
+                        total_development = 100
+                    }
+                }
+                AMX = {
+                    capital_scope = {
+                        ROOT = {
+                            infantry = PREV
+                            infantry = PREV
+                            infantry = PREV
+                            cavalry = PREV
+                            cavalry = PREV
+                        }
+                    }
+                    add_manpower = 5
+                }
+            }
+            if = {
+                limit = {
+                    AMX = {
+                        total_development = 200
+                    }
+                }
+                AMX = {
+                    capital_scope = {
+                        ROOT = {
+                            infantry = PREV
+                            infantry = PREV
+                            infantry = PREV
+                            cavalry = PREV
+                            cavalry = PREV
+                        }
+                    }
+                    add_manpower = 5
+                }
+            }
+        }
+    }
+
+    option = { #Degzool
+        name = tonxara.9.d
+        ai_chance = { factor = 0 }
+
+        trigger = {
+            any_owned_province = {
+                is_core	= DGZ
+            }
+            NOT = {
+                exists = DGZ
+            }
+        }
+
+        hidden_effect = {
+            ROOT = {
+                country_event = {
+                    id = tonxara.10 #you should kill yourself NOW!
+                    days = 1
+                }
+                release_all_subjects = yes
+            }
+        }
+
+        release = DGZ
+        switch_tag = DGZ
+
+        hidden_effect = {
+            DGZ = {
+                set_country_flag = givenBonusTonmo
+                capital_scope = {
+                    ROOT = {
+                        infantry = PREV
+                        infantry = PREV
+                        infantry = PREV
+                        cavalry = PREV
+                        cavalry = PREV
+                    }
+                }
+                add_adm_power = 100
+                add_dip_power = 100
+                add_mil_power = 100
+                add_manpower = 5
+            }
+            if = {
+                limit = {
+                    DGZ = {
+                        total_development = 100
+                    }
+                }
+                DGZ = {
+                    capital_scope = {
+                        ROOT = {
+                            infantry = PREV
+                            infantry = PREV
+                            infantry = PREV
+                            cavalry = PREV
+                            cavalry = PREV
+                        }
+                    }
+                    add_manpower = 5
+                }
+            }
+            if = {
+                limit = {
+                    DGZ = {
+                        total_development = 200
+                    }
+                }
+                DGZ = {
+                    capital_scope = {
+                        ROOT = {
+                            infantry = PREV
+                            infantry = PREV
+                            infantry = PREV
+                            cavalry = PREV
+                            cavalry = PREV
+                        }
+                    }
+                    add_manpower = 5
+                }
+            }
+        }
+    }
+
+    option = { #Legenia
+        name = tonxara.9.e
+        ai_chance = { factor = 0 }
+
+        trigger = {
+            any_owned_province = {
+                is_core	= LGN
+            }
+            NOT = {
+                exists = LGN
+            }
+        }
+
+        hidden_effect = {
+            ROOT = {
+                country_event = {
+                    id = tonxara.10 #you should kill yourself NOW!
+                    days = 1
+                }
+                release_all_subjects = yes
+            }
+        }
+
+        release = LGN
+        switch_tag = LGN
+
+        hidden_effect = {
+            LGN = {
+                set_country_flag = givenBonusTonmo
+                capital_scope = {
+                    ROOT = {
+                        infantry = PREV
+                        infantry = PREV
+                        infantry = PREV
+                        cavalry = PREV
+                        cavalry = PREV
+                    }
+                }
+                add_adm_power = 100
+                add_dip_power = 100
+                add_mil_power = 100
+                add_manpower = 5
+            }
+            if = {
+                limit = {
+                    LGN = {
+                        total_development = 100
+                    }
+                }
+                LGN = {
+                    capital_scope = {
+                        ROOT = {
+                            infantry = PREV
+                            infantry = PREV
+                            infantry = PREV
+                            cavalry = PREV
+                            cavalry = PREV
+                        }
+                    }
+                    add_manpower = 5
+                }
+            }
+            if = {
+                limit = {
+                    LGN = {
+                        total_development = 200
+                    }
+                }
+                LGN = {
+                    capital_scope = {
+                        ROOT = {
+                            infantry = PREV
+                            infantry = PREV
+                            infantry = PREV
+                            cavalry = PREV
+                            cavalry = PREV
+                        }
+                    }
+                    add_manpower = 5
+                }
+            }
+        }
+    }
+
+    option = { #Gatria
+        name = tonxara.9.f
+        ai_chance = { factor = 0 }
+
+        trigger = {
+            any_owned_province = {
+                is_core	= GTN
+            }
+            NOT = {
+                exists = GTN
+            }
+        }
+
+        hidden_effect = {
+            ROOT = {
+                country_event = {
+                    id = tonxara.10 #you should kill yourself NOW!
+                    days = 1
+                }
+                release_all_subjects = yes
+            }
+        }
+
+        release = GTN
+        switch_tag = GTN
+
+        hidden_effect = {
+            GTN = {
+                set_country_flag = givenBonusTonmo
+                capital_scope = {
+                    ROOT = {
+                        infantry = PREV
+                        infantry = PREV
+                        infantry = PREV
+                        cavalry = PREV
+                        cavalry = PREV
+                    }
+                }
+                add_adm_power = 100
+                add_dip_power = 100
+                add_mil_power = 100
+                add_manpower = 5
+            }
+            if = {
+                limit = {
+                    GTN = {
+                        total_development = 100
+                    }
+                }
+                GTN = {
+                    capital_scope = {
+                        ROOT = {
+                            infantry = PREV
+                            infantry = PREV
+                            infantry = PREV
+                            cavalry = PREV
+                            cavalry = PREV
+                        }
+                    }
+                    add_manpower = 5
+                }
+            }
+            if = {
+                limit = {
+                    GTN = {
+                        total_development = 200
+                    }
+                }
+                GTN = {
+                    capital_scope = {
+                        ROOT = {
+                            infantry = PREV
+                            infantry = PREV
+                            infantry = PREV
+                            cavalry = PREV
+                            cavalry = PREV
+                        }
+                    }
+                    add_manpower = 5
+                }
+            }
+        }
+    }
+
+    option = { #Zablata
+        name = tonxara.9.g
+        ai_chance = { factor = 0 }
+
+        trigger = {
+            any_owned_province = {
+                is_core	= ZAB
+            }
+            NOT = {
+                exists = ZAB
+            }
+        }
+
+        hidden_effect = {
+            ROOT = {
+                country_event = {
+                    id = tonxara.10 #you should kill yourself NOW!
+                    days = 1
+                }
+                release_all_subjects = yes
+            }
+        }
+
+        release = ZAB
+        switch_tag = ZAB
+
+        hidden_effect = {
+            ZAB = {
+                set_country_flag = givenBonusTonmo
+                capital_scope = {
+                    ROOT = {
+                        infantry = PREV
+                        infantry = PREV
+                        infantry = PREV
+                        cavalry = PREV
+                        cavalry = PREV
+                    }
+                }
+                add_adm_power = 100
+                add_dip_power = 100
+                add_mil_power = 100
+                add_manpower = 5
+            }
+            if = {
+                limit = {
+                    ZAB = {
+                        total_development = 100
+                    }
+                }
+                ZAB = {
+                    capital_scope = {
+                        ROOT = {
+                            infantry = PREV
+                            infantry = PREV
+                            infantry = PREV
+                            cavalry = PREV
+                            cavalry = PREV
+                        }
+                    }
+                    add_manpower = 5
+                }
+            }
+            if = {
+                limit = {
+                    ZAB = {
+                        total_development = 200
+                    }
+                }
+                ZAB = {
+                    capital_scope = {
+                        ROOT = {
+                            infantry = PREV
+                            infantry = PREV
+                            infantry = PREV
+                            cavalry = PREV
+                            cavalry = PREV
+                        }
+                    }
+                    add_manpower = 5
+                }
+            }
+        }
+    }
+
+    option = { #Jimkalin
+        name = tonxara.9.h
+        ai_chance = { factor = 0 }
+
+        trigger = {
+            any_owned_province = {
+                is_core	= JMK
+            }
+            NOT = {
+                exists = JMK
+            }
+        }
+
+        hidden_effect = {
+            ROOT = {
+                country_event = {
+                    id = tonxara.10 #you should kill yourself NOW!
+                    days = 1
+                }
+                release_all_subjects = yes
+            }
+        }
+
+        release = JMK
+        switch_tag = JMK
+
+        hidden_effect = {
+            JMK = {
+                set_country_flag = givenBonusTonmo
+                capital_scope = {
+                    ROOT = {
+                        infantry = PREV
+                        infantry = PREV
+                        infantry = PREV
+                        cavalry = PREV
+                        cavalry = PREV
+                    }
+                }
+                add_adm_power = 100
+                add_dip_power = 100
+                add_mil_power = 100
+                add_manpower = 5
+            }
+            if = {
+                limit = {
+                    JMK = {
+                        total_development = 100
+                    }
+                }
+                JMK = {
+                    capital_scope = {
+                        ROOT = {
+                            infantry = PREV
+                            infantry = PREV
+                            infantry = PREV
+                            cavalry = PREV
+                            cavalry = PREV
+                        }
+                    }
+                    add_manpower = 5
+                }
+            }
+            if = {
+                limit = {
+                    JMK = {
+                        total_development = 200
+                    }
+                }
+                JMK = {
+                    capital_scope = {
+                        ROOT = {
+                            infantry = PREV
+                            infantry = PREV
+                            infantry = PREV
+                            cavalry = PREV
+                            cavalry = PREV
+                        }
+                    }
+                    add_manpower = 5
+                }
+            }
+        }
+    }
+
+    option = { #Ufela
+        name = tonxara.9.i
+        ai_chance = { factor = 0 }
+
+        trigger = {
+            any_owned_province = {
+                is_core	= UFE
+            }
+            NOT = {
+                exists = UFE
+            }
+        }
+
+        hidden_effect = {
+            ROOT = {
+                country_event = {
+                    id = tonxara.10 #you should kill yourself NOW!
+                    days = 1
+                }
+                release_all_subjects = yes
+            }
+        }
+
+        release = UFE
+        switch_tag = UFE
+
+        hidden_effect = {
+            UFE = {
+                set_country_flag = givenBonusTonmo
+                capital_scope = {
+                    ROOT = {
+                        infantry = PREV
+                        infantry = PREV
+                        infantry = PREV
+                        cavalry = PREV
+                        cavalry = PREV
+                    }
+                }
+                add_adm_power = 100
+                add_dip_power = 100
+                add_mil_power = 100
+                add_manpower = 5
+            }
+            if = {
+                limit = {
+                    UFE = {
+                        total_development = 100
+                    }
+                }
+                UFE = {
+                    capital_scope = {
+                        ROOT = {
+                            infantry = PREV
+                            infantry = PREV
+                            infantry = PREV
+                            cavalry = PREV
+                            cavalry = PREV
+                        }
+                    }
+                    add_manpower = 5
+                }
+            }
+            if = {
+                limit = {
+                    UFE = {
+                        total_development = 200
+                    }
+                }
+                UFE = {
+                    capital_scope = {
+                        ROOT = {
+                            infantry = PREV
+                            infantry = PREV
+                            infantry = PREV
+                            cavalry = PREV
+                            cavalry = PREV
+                        }
+                    }
+                    add_manpower = 5
+                }
+            }
+        }
+    }
+
+    option = { #Rumay
+        name = tonxara.9.j
+        ai_chance = { factor = 0 }
+
+        trigger = {
+            any_owned_province = {
+                is_core	= RAY
+            }
+            NOT = {
+                exists = RAY
+            }
+        }
+
+        hidden_effect = {
+            ROOT = {
+                country_event = {
+                    id = tonxara.10 #you should kill yourself NOW!
+                    days = 1
+                }
+                release_all_subjects = yes
+            }
+        }
+
+        release = RAY
+        switch_tag = RAY
+
+        hidden_effect = {
+            RAY = {
+                set_country_flag = givenBonusTonmo
+                capital_scope = {
+                    ROOT = {
+                        infantry = PREV
+                        infantry = PREV
+                        infantry = PREV
+                        cavalry = PREV
+                        cavalry = PREV
+                    }
+                }
+                add_adm_power = 100
+                add_dip_power = 100
+                add_mil_power = 100
+                add_manpower = 5
+            }
+            if = {
+                limit = {
+                    RAY = {
+                        total_development = 100
+                    }
+                }
+                RAY = {
+                    capital_scope = {
+                        ROOT = {
+                            infantry = PREV
+                            infantry = PREV
+                            infantry = PREV
+                            cavalry = PREV
+                            cavalry = PREV
+                        }
+                    }
+                    add_manpower = 5
+                }
+            }
+            if = {
+                limit = {
+                    RAY = {
+                        total_development = 200
+                    }
+                }
+                RAY = {
+                    capital_scope = {
+                        ROOT = {
+                            infantry = PREV
+                            infantry = PREV
+                            infantry = PREV
+                            cavalry = PREV
+                            cavalry = PREV
+                        }
+                    }
+                    add_manpower = 5
+                }
+            }
+        }
+    }
+
+    option = { #Miwle
+        name = tonxara.9.k
+        ai_chance = { factor = 0 }
+
+        trigger = {
+            any_owned_province = {
+                is_core	= MIW
+            }
+            NOT = {
+                exists = MIW
+            }
+        }
+
+        hidden_effect = {
+            ROOT = {
+                country_event = {
+                    id = tonxara.10 #you should kill yourself NOW!
+                    days = 1
+                }
+                release_all_subjects = yes
+            }
+        }
+
+        release = MIW
+        switch_tag = MIW
+
+        hidden_effect = {
+            MIW = {
+                set_country_flag = givenBonusTonmo
+                capital_scope = {
+                    ROOT = {
+                        infantry = PREV
+                        infantry = PREV
+                        infantry = PREV
+                        cavalry = PREV
+                        cavalry = PREV
+                    }
+                }
+                add_adm_power = 100
+                add_dip_power = 100
+                add_mil_power = 100
+                add_manpower = 5
+            }
+            if = {
+                limit = {
+                    MIW = {
+                        total_development = 100
+                    }
+                }
+                MIW = {
+                    capital_scope = {
+                        ROOT = {
+                            infantry = PREV
+                            infantry = PREV
+                            infantry = PREV
+                            cavalry = PREV
+                            cavalry = PREV
+                        }
+                    }
+                    add_manpower = 5
+                }
+            }
+            if = {
+                limit = {
+                    MIW = {
+                        total_development = 200
+                    }
+                }
+                MIW = {
+                    capital_scope = {
+                        ROOT = {
+                            infantry = PREV
+                            infantry = PREV
+                            infantry = PREV
+                            cavalry = PREV
+                            cavalry = PREV
+                        }
+                    }
+                    add_manpower = 5
+                }
+            }
+        }
+    }
+
+    option = { #Va Emtik
+        name = tonxara.9.l
+        ai_chance = { factor = 0 }
+
+        trigger = {
+            any_owned_province = {
+                is_core	= VET
+            }
+            NOT = {
+                exists = VET
+            }
+        }
+
+        hidden_effect = {
+            ROOT = {
+                country_event = {
+                    id = tonxara.10 #you should kill yourself NOW!
+                    days = 1
+                }
+                release_all_subjects = yes
+            }
+        }
+
+        release = VET
+        switch_tag = VET
+
+        hidden_effect = {
+            VET = {
+                set_country_flag = givenBonusTonmo
+                capital_scope = {
+                    ROOT = {
+                        infantry = PREV
+                        infantry = PREV
+                        infantry = PREV
+                        cavalry = PREV
+                        cavalry = PREV
+                    }
+                }
+                add_adm_power = 100
+                add_dip_power = 100
+                add_mil_power = 100
+                add_manpower = 5
+            }
+            if = {
+                limit = {
+                    VET = {
+                        total_development = 100
+                    }
+                }
+                VET = {
+                    capital_scope = {
+                        ROOT = {
+                            infantry = PREV
+                            infantry = PREV
+                            infantry = PREV
+                            cavalry = PREV
+                            cavalry = PREV
+                        }
+                    }
+                    add_manpower = 5
+                }
+            }
+            if = {
+                limit = {
+                    VET = {
+                        total_development = 200
+                    }
+                }
+                VET = {
+                    capital_scope = {
+                        ROOT = {
+                            infantry = PREV
+                            infantry = PREV
+                            infantry = PREV
+                            cavalry = PREV
+                            cavalry = PREV
+                        }
+                    }
+                    add_manpower = 5
+                }
+            }
+        }
+    }
+
+    option = { #Igam
+        name = tonxara.9.m
+        ai_chance = { factor = 0 }
+
+        trigger = {
+            any_owned_province = {
+                is_core	= IGM
+            }
+            NOT = {
+                exists = IGM
+            }
+        }
+
+        hidden_effect = {
+            ROOT = {
+                country_event = {
+                    id = tonxara.10 #you should kill yourself NOW!
+                    days = 1
+                }
+                release_all_subjects = yes
+            }
+        }
+
+        release = IGM
+        switch_tag = IGM
+
+        hidden_effect = {
+            IGM = {
+                set_country_flag = givenBonusTonmo
+                capital_scope = {
+                    ROOT = {
+                        infantry = PREV
+                        infantry = PREV
+                        infantry = PREV
+                        cavalry = PREV
+                        cavalry = PREV
+                    }
+                }
+                add_adm_power = 100
+                add_dip_power = 100
+                add_mil_power = 100
+                add_manpower = 5
+            }
+            if = {
+                limit = {
+                    IGM = {
+                        total_development = 100
+                    }
+                }
+                IGM = {
+                    capital_scope = {
+                        ROOT = {
+                            infantry = PREV
+                            infantry = PREV
+                            infantry = PREV
+                            cavalry = PREV
+                            cavalry = PREV
+                        }
+                    }
+                    add_manpower = 5
+                }
+            }
+            if = {
+                limit = {
+                    IGM = {
+                        total_development = 200
+                    }
+                }
+                IGM = {
+                    capital_scope = {
+                        ROOT = {
+                            infantry = PREV
+                            infantry = PREV
+                            infantry = PREV
+                            cavalry = PREV
+                            cavalry = PREV
+                        }
+                    }
+                    add_manpower = 5
+                }
+            }
+        }
+    }
+
+    option = { #Ovmaz
+        name = tonxara.9.n
+        ai_chance = { factor = 0 }
+
+        trigger = {
+            any_owned_province = {
+                is_core	= OVM
+            }
+            NOT = {
+                exists = OVM
+            }
+        }
+
+        hidden_effect = {
+            ROOT = {
+                country_event = {
+                    id = tonxara.10 #you should kill yourself NOW!
+                    days = 1
+                }
+                release_all_subjects = yes
+            }
+        }
+
+        release = OVM
+        switch_tag = OVM
+
+        hidden_effect = {
+            OVM = {
+                set_country_flag = givenBonusTonmo
+                capital_scope = {
+                    ROOT = {
+                        infantry = PREV
+                        infantry = PREV
+                        infantry = PREV
+                        cavalry = PREV
+                        cavalry = PREV
+                    }
+                }
+                add_adm_power = 100
+                add_dip_power = 100
+                add_mil_power = 100
+                add_manpower = 5
+            }
+            if = {
+                limit = {
+                    OVM = {
+                        total_development = 100
+                    }
+                }
+                OVM = {
+                    capital_scope = {
+                        ROOT = {
+                            infantry = PREV
+                            infantry = PREV
+                            infantry = PREV
+                            cavalry = PREV
+                            cavalry = PREV
+                        }
+                    }
+                    add_manpower = 5
+                }
+            }
+            if = {
+                limit = {
+                    OVM = {
+                        total_development = 200
+                    }
+                }
+                OVM = {
+                    capital_scope = {
+                        ROOT = {
+                            infantry = PREV
+                            infantry = PREV
+                            infantry = PREV
+                            cavalry = PREV
+                            cavalry = PREV
+                        }
+                    }
+                    add_manpower = 5
+                }
+            }
+        }
+    }
+
+    option = { #Koff
+        name = tonxara.9.o
+        ai_chance = { factor = 0 }
+
+        trigger = {
+            any_owned_province = {
+                is_core	= KFF
+            }
+            NOT = {
+                exists = KFF
+            }
+        }
+
+        hidden_effect = {
+            ROOT = {
+                country_event = {
+                    id = tonxara.10 #you should kill yourself NOW!
+                    days = 1
+                }
+                release_all_subjects = yes
+            }
+        }
+
+        release = KFF
+        switch_tag = KFF
+
+        hidden_effect = {
+            KFF = {
+                set_country_flag = givenBonusTonmo
+                capital_scope = {
+                    ROOT = {
+                        infantry = PREV
+                        infantry = PREV
+                        infantry = PREV
+                        cavalry = PREV
+                        cavalry = PREV
+                    }
+                }
+                add_adm_power = 100
+                add_dip_power = 100
+                add_mil_power = 100
+                add_manpower = 5
+            }
+            if = {
+                limit = {
+                    KFF = {
+                        total_development = 100
+                    }
+                }
+                KFF = {
+                    capital_scope = {
+                        ROOT = {
+                            infantry = PREV
+                            infantry = PREV
+                            infantry = PREV
+                            cavalry = PREV
+                            cavalry = PREV
+                        }
+                    }
+                    add_manpower = 5
+                }
+            }
+            if = {
+                limit = {
+                    KFF = {
+                        total_development = 200
+                    }
+                }
+                KFF = {
+                    capital_scope = {
+                        ROOT = {
+                            infantry = PREV
+                            infantry = PREV
+                            infantry = PREV
+                            cavalry = PREV
+                            cavalry = PREV
+                        }
+                    }
+                    add_manpower = 5
+                }
+            }
+        }
+    }
+
+    option = { #Lamyr
+        name = tonxara.9.q
+        ai_chance = { factor = 0 }
+
+        trigger = {
+            any_owned_province = {
+                is_core	= LAM
+            }
+            NOT = {
+                exists = LAM
+            }
+        }
+
+        hidden_effect = {
+            ROOT = {
+                country_event = {
+                    id = tonxara.10 #you should kill yourself NOW!
+                    days = 1
+                }
+                release_all_subjects = yes
+            }
+        }
+
+        release = LAM
+        switch_tag = LAM
+
+        hidden_effect = {
+            LAM = {
+                set_country_flag = givenBonusTonmo
+                capital_scope = {
+                    ROOT = {
+                        infantry = PREV
+                        infantry = PREV
+                        infantry = PREV
+                        cavalry = PREV
+                        cavalry = PREV
+                    }
+                }
+                add_adm_power = 100
+                add_dip_power = 100
+                add_mil_power = 100
+                add_manpower = 5
+            }
+            if = {
+                limit = {
+                    LAM = {
+                        total_development = 100
+                    }
+                }
+                LAM = {
+                    capital_scope = {
+                        ROOT = {
+                            infantry = PREV
+                            infantry = PREV
+                            infantry = PREV
+                            cavalry = PREV
+                            cavalry = PREV
+                        }
+                    }
+                    add_manpower = 5
+                }
+            }
+            if = {
+                limit = {
+                    LAM = {
+                        total_development = 200
+                    }
+                }
+                LAM = {
+                    capital_scope = {
+                        ROOT = {
+                            infantry = PREV
+                            infantry = PREV
+                            infantry = PREV
+                            cavalry = PREV
+                            cavalry = PREV
+                        }
+                    }
+                    add_manpower = 5
+                }
+            }
+        }
+    }
+
+    option = { #Zormia
+        name = tonxara.9.r
+        ai_chance = { factor = 0 }
+
+        trigger = {
+            any_owned_province = {
+                is_core	= ZOR
+            }
+            NOT = {
+                exists = ZOR
+            }
+        }
+
+        hidden_effect = {
+            ROOT = {
+                country_event = {
+                    id = tonxara.10 #you should kill yourself NOW!
+                    days = 1
+                }
+                release_all_subjects = yes
+            }
+        }
+
+        release = ZOR
+        switch_tag = ZOR
+
+        hidden_effect = {
+            ZOR = {
+                set_country_flag = givenBonusTonmo
+                capital_scope = {
+                    ROOT = {
+                        infantry = PREV
+                        infantry = PREV
+                        infantry = PREV
+                        cavalry = PREV
+                        cavalry = PREV
+                    }
+                }
+                add_adm_power = 100
+                add_dip_power = 100
+                add_mil_power = 100
+                add_manpower = 5
+            }
+            if = {
+                limit = {
+                    ZOR = {
+                        total_development = 100
+                    }
+                }
+                ZOR = {
+                    capital_scope = {
+                        ROOT = {
+                            infantry = PREV
+                            infantry = PREV
+                            infantry = PREV
+                            cavalry = PREV
+                            cavalry = PREV
+                        }
+                    }
+                    add_manpower = 5
+                }
+            }
+            if = {
+                limit = {
+                    ZOR = {
+                        total_development = 200
+                    }
+                }
+                ZOR = {
+                    capital_scope = {
+                        ROOT = {
+                            infantry = PREV
+                            infantry = PREV
+                            infantry = PREV
+                            cavalry = PREV
+                            cavalry = PREV
+                        }
+                    }
+                    add_manpower = 5
+                }
+            }
+        }
+    }
+
+    option = { #Anmoea
+        name = tonxara.9.s
+        ai_chance = { factor = 0 }
+
+        trigger = {
+            any_owned_province = {
+                is_core	= ANM
+            }
+            NOT = {
+                exists = ANM
+            }
+        }
+
+        hidden_effect = {
+            ROOT = {
+                country_event = {
+                    id = tonxara.10 #you should kill yourself NOW!
+                    days = 1
+                }
+                release_all_subjects = yes
+            }
+        }
+
+        release = ANM
+        switch_tag = ANM
+
+        hidden_effect = {
+            ANM = {
+                set_country_flag = givenBonusTonmo
+                capital_scope = {
+                    ROOT = {
+                        infantry = PREV
+                        infantry = PREV
+                        infantry = PREV
+                        cavalry = PREV
+                        cavalry = PREV
+                    }
+                }
+                add_adm_power = 100
+                add_dip_power = 100
+                add_mil_power = 100
+                add_manpower = 5
+            }
+            if = {
+                limit = {
+                    ANM = {
+                        total_development = 100
+                    }
+                }
+                ANM = {
+                    capital_scope = {
+                        ROOT = {
+                            infantry = PREV
+                            infantry = PREV
+                            infantry = PREV
+                            cavalry = PREV
+                            cavalry = PREV
+                        }
+                    }
+                    add_manpower = 5
+                }
+            }
+            if = {
+                limit = {
+                    ANM = {
+                        total_development = 200
+                    }
+                }
+                ANM = {
+                    capital_scope = {
+                        ROOT = {
+                            infantry = PREV
+                            infantry = PREV
+                            infantry = PREV
+                            cavalry = PREV
+                            cavalry = PREV
+                        }
+                    }
+                    add_manpower = 5
+                }
+            }
+        }
+    }
+
+    option = { #Atrampefa
+        name = tonxara.9.t
+        ai_chance = { factor = 0 }
+
+        trigger = {
+            any_owned_province = {
+                is_core	= ATR
+            }
+            NOT = {
+                exists = ATR
+            }
+        }
+
+        hidden_effect = {
+            ROOT = {
+                country_event = {
+                    id = tonxara.10 #you should kill yourself NOW!
+                    days = 1
+                }
+                release_all_subjects = yes
+            }
+        }
+
+        release = ATR
+        switch_tag = ATR
+
+        hidden_effect = {
+            ATR = {
+                set_country_flag = givenBonusTonmo
+                capital_scope = {
+                    ROOT = {
+                        infantry = PREV
+                        infantry = PREV
+                        infantry = PREV
+                        cavalry = PREV
+                        cavalry = PREV
+                    }
+                }
+                add_adm_power = 100
+                add_dip_power = 100
+                add_mil_power = 100
+                add_manpower = 5
+            }
+            if = {
+                limit = {
+                    ATR = {
+                        total_development = 100
+                    }
+                }
+                ATR = {
+                    capital_scope = {
+                        ROOT = {
+                            infantry = PREV
+                            infantry = PREV
+                            infantry = PREV
+                            cavalry = PREV
+                            cavalry = PREV
+                        }
+                    }
+                    add_manpower = 5
+                }
+            }
+            if = {
+                limit = {
+                    ATR = {
+                        total_development = 200
+                    }
+                }
+                ATR = {
+                    capital_scope = {
+                        ROOT = {
+                            infantry = PREV
+                            infantry = PREV
+                            infantry = PREV
+                            cavalry = PREV
+                            cavalry = PREV
+                        }
+                    }
+                    add_manpower = 5
+                }
+            }
+        }
+    }
+
+    option = { #Selka
+        name = tonxara.9.u
+        ai_chance = { factor = 0 }
+
+        trigger = {
+            any_owned_province = {
+                is_core	= SLK
+            }
+            NOT = {
+                exists = SLK
+            }
+        }
+
+        hidden_effect = {
+            ROOT = {
+                country_event = {
+                    id = tonxara.10 #you should kill yourself NOW!
+                    days = 1
+                }
+                release_all_subjects = yes
+            }
+        }
+
+        release = SLK
+        switch_tag = SLK
+
+        hidden_effect = {
+            SLK = {
+                set_country_flag = givenBonusTonmo
+                capital_scope = {
+                    ROOT = {
+                        infantry = PREV
+                        infantry = PREV
+                        infantry = PREV
+                        cavalry = PREV
+                        cavalry = PREV
+                    }
+                }
+                add_adm_power = 100
+                add_dip_power = 100
+                add_mil_power = 100
+                add_manpower = 5
+            }
+            if = {
+                limit = {
+                    SLK = {
+                        total_development = 100
+                    }
+                }
+                SLK = {
+                    capital_scope = {
+                        ROOT = {
+                            infantry = PREV
+                            infantry = PREV
+                            infantry = PREV
+                            cavalry = PREV
+                            cavalry = PREV
+                        }
+                    }
+                    add_manpower = 5
+                }
+            }
+            if = {
+                limit = {
+                    SLK = {
+                        total_development = 200
+                    }
+                }
+                SLK = {
+                    capital_scope = {
+                        ROOT = {
+                            infantry = PREV
+                            infantry = PREV
+                            infantry = PREV
+                            cavalry = PREV
+                            cavalry = PREV
+                        }
+                    }
+                    add_manpower = 5
+                }
+            }
+        }
+    }
+
+    option = { #Tyma
+        name = tonxara.9.v
+        ai_chance = { factor = 0 }
+
+        trigger = {
+            any_owned_province = {
+                is_core	= TYM
+            }
+            NOT = {
+                exists = TYM
+            }
+        }
+
+        hidden_effect = {
+            ROOT = {
+                country_event = {
+                    id = tonxara.10 #you should kill yourself NOW!
+                    days = 1
+                }
+                release_all_subjects = yes
+            }
+            every_province = {
+                remove_core = ROOT
+            }
+        }
+
+        release = TYM
+        switch_tag = TYM
+
+        hidden_effect = {
+            TYM = {
+                set_country_flag = givenBonusTonmo
+                capital_scope = {
+                    ROOT = {
+                        infantry = PREV
+                        infantry = PREV
+                        infantry = PREV
+                        cavalry = PREV
+                        cavalry = PREV
+                    }
+                }
+                add_adm_power = 100
+                add_dip_power = 100
+                add_mil_power = 100
+                add_manpower = 5
+            }
+            if = {
+                limit = {
+                    TYM = {
+                        total_development = 100
+                    }
+                }
+                TYM = {
+                    capital_scope = {
+                        ROOT = {
+                            infantry = PREV
+                            infantry = PREV
+                            infantry = PREV
+                            cavalry = PREV
+                            cavalry = PREV
+                        }
+                    }
+                    add_manpower = 5
+                }
+            }
+            if = {
+                limit = {
+                    TYM = {
+                        total_development = 200
+                    }
+                }
+                TYM = {
+                    capital_scope = {
+                        ROOT = {
+                            infantry = PREV
+                            infantry = PREV
+                            infantry = PREV
+                            cavalry = PREV
+                            cavalry = PREV
+                        }
+                    }
+                    add_manpower = 5
+                }
+            }
+        }
+    }
+
+    option = { #Fuka Bastrania
+        name = tonxara.9.w
+        ai_chance = { factor = 0 }
+
+        trigger = {
+            any_owned_province = {
+                is_core	= FBS
+            }
+            NOT = {
+                exists = FBS
+            }
+        }
+
+        hidden_effect = {
+            ROOT = {
+                country_event = {
+                    id = tonxara.10 #you should kill yourself NOW!
+                    days = 1
+                }
+                release_all_subjects = yes
+            }
+            every_province = {
+                remove_core = ROOT
+            }
+        }
+
+        release = FBS
+        switch_tag = FBS
+
+        hidden_effect = {
+            FBS = {
+                set_country_flag = givenBonusTonmo
+                capital_scope = {
+                    ROOT = {
+                        infantry = PREV
+                        infantry = PREV
+                        infantry = PREV
+                        cavalry = PREV
+                        cavalry = PREV
+                    }
+                }
+                add_adm_power = 100
+                add_dip_power = 100
+                add_mil_power = 100
+                add_manpower = 5
+            }
+            if = {
+                limit = {
+                    FBS = {
+                        total_development = 100
+                    }
+                }
+                FBS = {
+                    capital_scope = {
+                        ROOT = {
+                            infantry = PREV
+                            infantry = PREV
+                            infantry = PREV
+                            cavalry = PREV
+                            cavalry = PREV
+                        }
+                    }
+                    add_manpower = 5
+                }
+            }
+            if = {
+                limit = {
+                    FBS = {
+                        total_development = 200
+                    }
+                }
+                FBS = {
+                    capital_scope = {
+                        ROOT = {
+                            infantry = PREV
+                            infantry = PREV
+                            infantry = PREV
+                            cavalry = PREV
+                            cavalry = PREV
+                        }
+                    }
+                    add_manpower = 5
+                }
+            }
+        }
+    }
+
+    option = { #Jimbalak
+        name = tonxara.9.x
+        ai_chance = { factor = 0 }
+
+        trigger = {
+            any_owned_province = {
+                is_core	= JIB
+            }
+            NOT = {
+                exists = JIB
+            }
+        }
+
+        hidden_effect = {
+            ROOT = {
+                country_event = {
+                    id = tonxara.10 #you should kill yourself NOW!
+                    days = 1
+                }
+                release_all_subjects = yes
+            }
+            every_province = {
+                remove_core = ROOT
+            }
+        }
+
+        release = JIB
+        switch_tag = JIB
+
+        hidden_effect = {
+            JIB = {
+                set_country_flag = givenBonusTonmo
+                capital_scope = {
+                    ROOT = {
+                        infantry = PREV
+                        infantry = PREV
+                        infantry = PREV
+                        cavalry = PREV
+                        cavalry = PREV
+                    }
+                }
+                add_adm_power = 100
+                add_dip_power = 100
+                add_mil_power = 100
+                add_manpower = 5
+            }
+            if = {
+                limit = {
+                    JIB = {
+                        total_development = 100
+                    }
+                }
+                JIB = {
+                    capital_scope = {
+                        ROOT = {
+                            infantry = PREV
+                            infantry = PREV
+                            infantry = PREV
+                            cavalry = PREV
+                            cavalry = PREV
+                        }
+                    }
+                    add_manpower = 5
+                }
+            }
+            if = {
+                limit = {
+                    JIB = {
+                        total_development = 200
+                    }
+                }
+                JIB = {
+                    capital_scope = {
+                        ROOT = {
+                            infantry = PREV
+                            infantry = PREV
+                            infantry = PREV
+                            cavalry = PREV
+                            cavalry = PREV
+                        }
+                    }
+                    add_manpower = 5
+                }
+            }
+        }
+    }
+
+    option = { #Bastrania
+        name = tonxara.9.y
+        ai_chance = { factor = 0 }
+
+        trigger = {
+            any_owned_province = {
+                is_core	= BAS
+            }
+            NOT = {
+                exists = BAS
+            }
+        }
+
+        hidden_effect = {
+            ROOT = {
+                country_event = {
+                    id = tonxara.10 #you should kill yourself NOW!
+                    days = 1
+                }
+                release_all_subjects = yes
+            }
+            every_province = {
+                remove_core = ROOT
+            }
+        }
+
+        release = BAS
+        switch_tag = BAS
+
+        hidden_effect = {
+            BAS = {
+                set_country_flag = givenBonusTonmo
+                capital_scope = {
+                    ROOT = {
+                        infantry = PREV
+                        infantry = PREV
+                        infantry = PREV
+                        cavalry = PREV
+                        cavalry = PREV
+                    }
+                }
+                add_adm_power = 100
+                add_dip_power = 100
+                add_mil_power = 100
+                add_manpower = 5
+            }
+            if = {
+                limit = {
+                    BAS = {
+                        total_development = 100
+                    }
+                }
+                BAS = {
+                    capital_scope = {
+                        ROOT = {
+                            infantry = PREV
+                            infantry = PREV
+                            infantry = PREV
+                            cavalry = PREV
+                            cavalry = PREV
+                        }
+                    }
+                    add_manpower = 5
+                }
+            }
+            if = {
+                limit = {
+                    BAS = {
+                        total_development = 200
+                    }
+                }
+                BAS = {
+                    capital_scope = {
+                        ROOT = {
+                            infantry = PREV
+                            infantry = PREV
+                            infantry = PREV
+                            cavalry = PREV
+                            cavalry = PREV
+                        }
+                    }
+                    add_manpower = 5
+                }
+            }
+        }
+    }
+
+    option = { #Khim
+        name = tonxara.9.z
+        ai_chance = { factor = 0 }
+
+        trigger = {
+            any_owned_province = {
+                is_core	= KMI
+            }
+            NOT = {
+                exists = KMI
+            }
+        }
+
+        hidden_effect = {
+            ROOT = {
+                country_event = {
+                    id = tonxara.10 #you should kill yourself NOW!
+                    days = 1
+                }
+                release_all_subjects = yes
+            }
+            every_province = {
+                remove_core = ROOT
+            }
+        }
+
+        release = KMI
+        switch_tag = KMI
+
+        hidden_effect = {
+            KMI = {
+                set_country_flag = givenBonusTonmo
+                capital_scope = {
+                    ROOT = {
+                        infantry = PREV
+                        infantry = PREV
+                        infantry = PREV
+                        cavalry = PREV
+                        cavalry = PREV
+                    }
+                }
+                add_adm_power = 100
+                add_dip_power = 100
+                add_mil_power = 100
+                add_manpower = 5
+            }
+            if = {
+                limit = {
+                    KMI = {
+                        total_development = 100
+                    }
+                }
+                KMI = {
+                    capital_scope = {
+                        ROOT = {
+                            infantry = PREV
+                            infantry = PREV
+                            infantry = PREV
+                            cavalry = PREV
+                            cavalry = PREV
+                        }
+                    }
+                    add_manpower = 5
+                }
+            }
+            if = {
+                limit = {
+                    KMI = {
+                        total_development = 200
+                    }
+                }
+                KMI = {
+                    capital_scope = {
+                        ROOT = {
+                            infantry = PREV
+                            infantry = PREV
+                            infantry = PREV
+                            cavalry = PREV
+                            cavalry = PREV
+                        }
+                    }
+                    add_manpower = 5
+                }
+            }
+        }
+    }
+
+    option = { #Hoxoi
+        name = tonxara.9.za
+        ai_chance = { factor = 0 }
+
+        trigger = {
+            any_owned_province = {
+                is_core	= HOX
+            }
+            NOT = {
+                exists = HOX
+            }
+        }
+
+        hidden_effect = {
+            ROOT = {
+                country_event = {
+                    id = tonxara.10 #you should kill yourself NOW!
+                    days = 1
+                }
+                release_all_subjects = yes
+            }
+            every_province = {
+                remove_core = ROOT
+            }
+        }
+
+        release = HOX
+        switch_tag = HOX
+
+        hidden_effect = {
+            HOX = {
+                set_country_flag = givenBonusTonmo
+                capital_scope = {
+                    ROOT = {
+                        infantry = PREV
+                        infantry = PREV
+                        infantry = PREV
+                        cavalry = PREV
+                        cavalry = PREV
+                    }
+                }
+                add_adm_power = 100
+                add_dip_power = 100
+                add_mil_power = 100
+                add_manpower = 5
+            }
+            if = {
+                limit = {
+                    HOX = {
+                        total_development = 100
+                    }
+                }
+                HOX = {
+                    capital_scope = {
+                        ROOT = {
+                            infantry = PREV
+                            infantry = PREV
+                            infantry = PREV
+                            cavalry = PREV
+                            cavalry = PREV
+                        }
+                    }
+                    add_manpower = 5
+                }
+            }
+            if = {
+                limit = {
+                    HOX = {
+                        total_development = 200
+                    }
+                }
+                HOX = {
+                    capital_scope = {
+                        ROOT = {
+                            infantry = PREV
+                            infantry = PREV
+                            infantry = PREV
+                            cavalry = PREV
+                            cavalry = PREV
+                        }
+                    }
+                    add_manpower = 5
+                }
+            }
+        }
+    }
+
+    option = { #Kel
+        name = tonxara.9.zb
+        ai_chance = { factor = 0 }
+
+        trigger = {
+            any_owned_province = {
+                is_core	= KLL
+            }
+            NOT = {
+                exists = KLL
+            }
+        }
+
+        hidden_effect = {
+            ROOT = {
+                country_event = {
+                    id = tonxara.10 #you should kill yourself NOW!
+                    days = 1
+                }
+                release_all_subjects = yes
+            }
+            every_province = {
+                remove_core = ROOT
+            }
+        }
+
+        release = KLL
+        switch_tag = KLL
+
+        hidden_effect = {
+            KLL = {
+                set_country_flag = givenBonusTonmo
+                capital_scope = {
+                    ROOT = {
+                        infantry = PREV
+                        infantry = PREV
+                        infantry = PREV
+                        cavalry = PREV
+                        cavalry = PREV
+                    }
+                }
+                add_adm_power = 100
+                add_dip_power = 100
+                add_mil_power = 100
+                add_manpower = 5
+            }
+            if = {
+                limit = {
+                    KLL = {
+                        total_development = 100
+                    }
+                }
+                KLL = {
+                    capital_scope = {
+                        ROOT = {
+                            infantry = PREV
+                            infantry = PREV
+                            infantry = PREV
+                            cavalry = PREV
+                            cavalry = PREV
+                        }
+                    }
+                    add_manpower = 5
+                }
+            }
+            if = {
+                limit = {
+                    KLL = {
+                        total_development = 200
+                    }
+                }
+                KLL = {
+                    capital_scope = {
+                        ROOT = {
+                            infantry = PREV
+                            infantry = PREV
+                            infantry = PREV
+                            cavalry = PREV
+                            cavalry = PREV
+                        }
+                    }
+                    add_manpower = 5
+                }
+            }
+        }
+    }
+
+    option = { #Yarfoo
+        name = tonxara.9.zc
+        ai_chance = { factor = 0 }
+
+        trigger = {
+            any_owned_province = {
+                is_core	= YBM
+            }
+            NOT = {
+                exists = YBM
+            }
+        }
+
+        hidden_effect = {
+            ROOT = {
+                country_event = {
+                    id = tonxara.10 #you should kill yourself NOW!
+                    days = 1
+                }
+                release_all_subjects = yes
+            }
+            every_province = {
+                remove_core = ROOT
+            }
+        }
+
+        release = YBM
+        switch_tag = YBM
+
+        hidden_effect = {
+            YBM = {
+                set_country_flag = givenBonusTonmo
+                capital_scope = {
+                    ROOT = {
+                        infantry = PREV
+                        infantry = PREV
+                        infantry = PREV
+                        cavalry = PREV
+                        cavalry = PREV
+                    }
+                }
+                add_adm_power = 100
+                add_dip_power = 100
+                add_mil_power = 100
+                add_manpower = 5
+            }
+            if = {
+                limit = {
+                    YBM = {
+                        total_development = 100
+                    }
+                }
+                YBM = {
+                    capital_scope = {
+                        ROOT = {
+                            infantry = PREV
+                            infantry = PREV
+                            infantry = PREV
+                            cavalry = PREV
+                            cavalry = PREV
+                        }
+                    }
+                    add_manpower = 5
+                }
+            }
+            if = {
+                limit = {
+                    YBM = {
+                        total_development = 200
+                    }
+                }
+                YBM = {
+                    capital_scope = {
+                        ROOT = {
+                            infantry = PREV
+                            infantry = PREV
+                            infantry = PREV
+                            cavalry = PREV
+                            cavalry = PREV
+                        }
+                    }
+                    add_manpower = 5
+                }
+            }
+        }
+    }
+
+    option = { #Semoea
+        name = tonxara.9.zd
+        ai_chance = { factor = 0 }
+
+        trigger = {
+            any_owned_province = {
+                is_core	= SEM
+            }
+            NOT = {
+                exists = SEM
+            }
+        }
+
+        hidden_effect = {
+            ROOT = {
+                country_event = {
+                    id = tonxara.10 #you should kill yourself NOW!
+                    days = 1
+                }
+                release_all_subjects = yes
+            }
+            every_province = {
+                remove_core = ROOT
+            }
+        }
+
+        release = SEM
+        switch_tag = SEM
+
+        hidden_effect = {
+            SEM = {
+                set_country_flag = givenBonusTonmo
+                capital_scope = {
+                    ROOT = {
+                        infantry = PREV
+                        infantry = PREV
+                        infantry = PREV
+                        cavalry = PREV
+                        cavalry = PREV
+                    }
+                }
+                add_adm_power = 100
+                add_dip_power = 100
+                add_mil_power = 100
+                add_manpower = 5
+            }
+            if = {
+                limit = {
+                    SEM = {
+                        total_development = 100
+                    }
+                }
+                SEM = {
+                    capital_scope = {
+                        ROOT = {
+                            infantry = PREV
+                            infantry = PREV
+                            infantry = PREV
+                            cavalry = PREV
+                            cavalry = PREV
+                        }
+                    }
+                    add_manpower = 5
+                }
+            }
+            if = {
+                limit = {
+                    SEM = {
+                        total_development = 200
+                    }
+                }
+                SEM = {
+                    capital_scope = {
+                        ROOT = {
+                            infantry = PREV
+                            infantry = PREV
+                            infantry = PREV
+                            cavalry = PREV
+                            cavalry = PREV
+                        }
+                    }
+                    add_manpower = 5
+                }
+            }
+        }
+    }
+
+    option = { #Bluec
+        name = tonxara.9.ze
+        ai_chance = { factor = 0 }
+
+        trigger = {
+            any_owned_province = {
+                is_core	= BLU
+            }
+            NOT = {
+                exists = BLU
+            }
+        }
+
+        hidden_effect = {
+            ROOT = {
+                country_event = {
+                    id = tonxara.10 #you should kill yourself NOW!
+                    days = 1
+                }
+                release_all_subjects = yes
+            }
+            every_province = {
+                remove_core = ROOT
+            }
+        }
+
+        release = BLU
+        switch_tag = BLU
+
+        hidden_effect = {
+            BLU = {
+                set_country_flag = givenBonusTonmo
+                capital_scope = {
+                    ROOT = {
+                        infantry = PREV
+                        infantry = PREV
+                        infantry = PREV
+                        cavalry = PREV
+                        cavalry = PREV
+                    }
+                }
+                add_adm_power = 100
+                add_dip_power = 100
+                add_mil_power = 100
+                add_manpower = 5
+            }
+            if = {
+                limit = {
+                    BLU = {
+                        total_development = 100
+                    }
+                }
+                BLU = {
+                    capital_scope = {
+                        ROOT = {
+                            infantry = PREV
+                            infantry = PREV
+                            infantry = PREV
+                            cavalry = PREV
+                            cavalry = PREV
+                        }
+                    }
+                    add_manpower = 5
+                }
+            }
+            if = {
+                limit = {
+                    BLU = {
+                        total_development = 200
+                    }
+                }
+                BLU = {
+                    capital_scope = {
+                        ROOT = {
+                            infantry = PREV
+                            infantry = PREV
+                            infantry = PREV
+                            cavalry = PREV
+                            cavalry = PREV
+                        }
+                    }
+                    add_manpower = 5
+                }
+            }
+        }
+    }
+
+    option = { #Ipak
+        name = tonxara.9.zf
+        ai_chance = { factor = 0 }
+
+        trigger = {
+            any_owned_province = {
+                is_core	= IPK
+            }
+            NOT = {
+                exists = IPK
+            }
+        }
+
+        hidden_effect = {
+            ROOT = {
+                country_event = {
+                    id = tonxara.10 #you should kill yourself NOW!
+                    days = 1
+                }
+                release_all_subjects = yes
+            }
+            every_province = {
+                remove_core = ROOT
+            }
+        }
+
+        release = IPK
+        switch_tag = IPK
+
+        hidden_effect = {
+            BLU = {
+                set_country_flag = givenBonusTonmo
+                capital_scope = {
+                    ROOT = {
+                        infantry = PREV
+                        infantry = PREV
+                        infantry = PREV
+                        cavalry = PREV
+                        cavalry = PREV
+                    }
+                }
+                add_adm_power = 100
+                add_dip_power = 100
+                add_mil_power = 100
+                add_manpower = 5
+            }
+            if = {
+                limit = {
+                    IPK = {
+                        total_development = 100
+                    }
+                }
+                IPK = {
+                    capital_scope = {
+                        ROOT = {
+                            infantry = PREV
+                            infantry = PREV
+                            infantry = PREV
+                            cavalry = PREV
+                            cavalry = PREV
+                        }
+                    }
+                    add_manpower = 5
+                }
+            }
+            if = {
+                limit = {
+                    IPK = {
+                        total_development = 200
+                    }
+                }
+                IPK = {
+                    capital_scope = {
+                        ROOT = {
+                            infantry = PREV
+                            infantry = PREV
+                            infantry = PREV
+                            cavalry = PREV
+                            cavalry = PREV
+                        }
+                    }
+                    add_manpower = 5
+                }
+            }
+        }
+    }
+
+    option = { #Merkomm
+        name = tonxara.9.zg
+        ai_chance = { factor = 0 }
+
+        trigger = {
+            any_owned_province = {
+                is_core	= MMM
+            }
+            NOT = {
+                exists = MMM
+            }
+        }
+
+        hidden_effect = {
+            ROOT = {
+                country_event = {
+                    id = tonxara.10 #you should kill yourself NOW!
+                    days = 1
+                }
+                release_all_subjects = yes
+            }
+            every_province = {
+                remove_core = ROOT
+            }
+        }
+
+        release = MMM
+        switch_tag = MMM
+
+        hidden_effect = {
+            MMM = {
+                set_country_flag = givenBonusTonmo
+                capital_scope = {
+                    ROOT = {
+                        infantry = PREV
+                        infantry = PREV
+                        infantry = PREV
+                        cavalry = PREV
+                        cavalry = PREV
+                    }
+                }
+                add_adm_power = 100
+                add_dip_power = 100
+                add_mil_power = 100
+                add_manpower = 5
+            }
+            if = {
+                limit = {
+                    MMM = {
+                        total_development = 100
+                    }
+                }
+                MMM = {
+                    capital_scope = {
+                        ROOT = {
+                            infantry = PREV
+                            infantry = PREV
+                            infantry = PREV
+                            cavalry = PREV
+                            cavalry = PREV
+                        }
+                    }
+                    add_manpower = 5
+                }
+            }
+            if = {
+                limit = {
+                    MMM = {
+                        total_development = 200
+                    }
+                }
+                MMM = {
+                    capital_scope = {
+                        ROOT = {
+                            infantry = PREV
+                            infantry = PREV
+                            infantry = PREV
+                            cavalry = PREV
+                            cavalry = PREV
+                        }
+                    }
+                    add_manpower = 5
+                }
+            }
+        }
+    }
+}
+
+country_event = { #kill tonxara
+    id = tonxara.10
+    title = tonxara.10.t
+    picture = CITY_DEVELOPMENT_eventPicture
+    desc = tonxara.10.desc
+    is_triggered_only = yes
+    hidden = yes
+
+    immediate = {
+        ################## playable and get released normally
+        release = FSB #
+        release = AMX #
+        release = DGZ #
+        release = LGN #
+        release = GTN #
+        release = ZAB #
+        release = JMK #
+        release = UFE #
+        release = RAY #
+        release = MIW #
+        release = VET #
+        release = IGM #
+        release = OVM #
+        release = KFF #
+        release = LAM #
+        release = ZOR #
+        release = ANM #
+        release = ATR #
+        release = SLK #
+        release = TYM #
+        release = FBS #
+        release = JIB #
+        release = BAS #
+        release = KMI #
+        release = HOX #
+        ################## releasables (these can also be played)
+        #release = KLL #
+        #release = YBM #
+        #release = SEM #
+        #release = BLU #
+        #release = IPK #
+        #release = MMM #
+        ################## non playables
+        release = GEP
+        release = NAF
+        release = EYK
+        release = IRF
+        #NOTE: add geopyopian releasables at some point
+    }
+}
+
+country_event = { #Bonus for others
+    id = tonxara.11
+    title = tonxara.11.t
+    picture = OVEREXTENSION_eventPicture
+    desc = tonxara.11.desc
+    hidden = yes
+
+    trigger = {
+        NOT = {
+            is_year = 360
+        }
+        NOT = {
+            has_country_flag = givenBonusTonmo
+        }
+        ai = yes
+        OR = {
+            tag = FSB 
+            tag = AMX 
+            tag = DGZ 
+            tag = LGN 
+            tag = GTN 
+            tag = ZAB 
+            tag = JMK 
+            tag = UFE 
+            tag = RAY 
+            tag = MIW 
+            tag = VET 
+            tag = IGM 
+            tag = OVM 
+            tag = KFF 
+            tag = LAM 
+            tag = ZOR 
+            tag = ANM 
+            tag = ATR 
+            tag = SLK 
+            tag = TYM 
+            tag = FBS 
+            tag = JIB 
+            tag = BAS 
+            tag = KMI 
+            tag = HOX 
+            tag = KLL 
+            tag = YBM 
+            tag = SEM
+            tag = BLU 
+            tag = IPK 
+            tag = MMM 
+        }
+    }
+
+    immediate = {
+        hidden_effect = {
+            set_country_flag = givenBonusTonmo
+        }
+    }
+
+    option = {
+        name = tonxara.11.a
+        ai_chance = { factor = 1 }
+
+        ROOT = {
+            set_country_flag = givenBonusTonmo
+            capital_scope = {
+                ROOT = {
+                    infantry = PREV
+                    infantry = PREV
+                    infantry = PREV
+                    cavalry = PREV
+                    cavalry = PREV
+                }
+            }
+            add_adm_power = 100
+            add_dip_power = 100
+            add_mil_power = 100
+            add_manpower = 5
+        }
+        if = {
+            limit = {
+                ROOT = {
+                    total_development = 100
+                }
+            }
+            ROOT = {
+                capital_scope = {
+                    ROOT = {
+                        infantry = PREV
+                        infantry = PREV
+                        infantry = PREV
+                        cavalry = PREV
+                        cavalry = PREV
+                    }
+                }
+                add_manpower = 5
+            }
+        }
+        if = {
+            limit = {
+                ROOT = {
+                    total_development = 200
+                }
+            }
+            ROOT = {
+                capital_scope = {
+                    ROOT = {
+                        infantry = PREV
+                        infantry = PREV
+                        infantry = PREV
+                        cavalry = PREV
+                        cavalry = PREV
+                    }
+                }
+                add_manpower = 5
+            }
+        }
+    }
+}

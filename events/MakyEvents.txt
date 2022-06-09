@@ -1060,10 +1060,8 @@ country_event = {
 		NOT = {
 			total_development = 100
 		}
-		OR = {
-			7241 = { is_empty = yes }
-			7240 = { is_empty = yes }
-		}
+		7241 = { is_empty = yes }
+		7240 = { is_empty = yes }
 	}
 	
 	mean_time_to_happen = {
@@ -1083,7 +1081,7 @@ country_event = {
 				release = RTK
 				release = HZR
 				release = MKK
-				release = DYR #just in case
+				release = DYR
 			
 			7241 = {
 				cede_province = ROOT
