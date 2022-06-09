@@ -195,6 +195,7 @@ country_event = { #disaster start event
     option = {
         name = tonxara.6.a
         ai_chance = { factor = 1 }
+        custom_tooltip = tonxara_disaster_fight_tt
         add_stability = -5
         add_legitimacy = -15
     }
@@ -326,6 +327,9 @@ country_event = { #tonxara.9, this event will let you pick your new country or g
                 }
                 release_all_subjects = yes
             }
+            every_province = {
+                remove_core = ROOT
+            }
         }
 
         release = FSB
@@ -370,7 +374,7 @@ country_event = { #tonxara.9, this event will let you pick your new country or g
             if = {
                 limit = {
                     FSB = {
-                        total_development = 200
+                        total_development = 150
                     }
                 }
                 FSB = {
@@ -409,6 +413,9 @@ country_event = { #tonxara.9, this event will let you pick your new country or g
                     days = 1
                 }
                 release_all_subjects = yes
+            }
+            every_province = {
+                remove_core = ROOT
             }
         }
 
@@ -454,7 +461,7 @@ country_event = { #tonxara.9, this event will let you pick your new country or g
             if = {
                 limit = {
                     AMX = {
-                        total_development = 200
+                        total_development = 150
                     }
                 }
                 AMX = {
@@ -493,6 +500,9 @@ country_event = { #tonxara.9, this event will let you pick your new country or g
                     days = 1
                 }
                 release_all_subjects = yes
+            }
+            every_province = {
+                remove_core = ROOT
             }
         }
 
@@ -538,7 +548,7 @@ country_event = { #tonxara.9, this event will let you pick your new country or g
             if = {
                 limit = {
                     DGZ = {
-                        total_development = 200
+                        total_development = 150
                     }
                 }
                 DGZ = {
@@ -577,6 +587,9 @@ country_event = { #tonxara.9, this event will let you pick your new country or g
                     days = 1
                 }
                 release_all_subjects = yes
+            }
+            every_province = {
+                remove_core = ROOT
             }
         }
 
@@ -622,7 +635,7 @@ country_event = { #tonxara.9, this event will let you pick your new country or g
             if = {
                 limit = {
                     LGN = {
-                        total_development = 200
+                        total_development = 150
                     }
                 }
                 LGN = {
@@ -661,6 +674,9 @@ country_event = { #tonxara.9, this event will let you pick your new country or g
                     days = 1
                 }
                 release_all_subjects = yes
+            }
+            every_province = {
+                remove_core = ROOT
             }
         }
 
@@ -706,7 +722,7 @@ country_event = { #tonxara.9, this event will let you pick your new country or g
             if = {
                 limit = {
                     GTN = {
-                        total_development = 200
+                        total_development = 150
                     }
                 }
                 GTN = {
@@ -745,6 +761,9 @@ country_event = { #tonxara.9, this event will let you pick your new country or g
                     days = 1
                 }
                 release_all_subjects = yes
+            }
+            every_province = {
+                remove_core = ROOT
             }
         }
 
@@ -790,7 +809,7 @@ country_event = { #tonxara.9, this event will let you pick your new country or g
             if = {
                 limit = {
                     ZAB = {
-                        total_development = 200
+                        total_development = 150
                     }
                 }
                 ZAB = {
@@ -829,6 +848,9 @@ country_event = { #tonxara.9, this event will let you pick your new country or g
                     days = 1
                 }
                 release_all_subjects = yes
+            }
+            every_province = {
+                remove_core = ROOT
             }
         }
 
@@ -874,7 +896,7 @@ country_event = { #tonxara.9, this event will let you pick your new country or g
             if = {
                 limit = {
                     JMK = {
-                        total_development = 200
+                        total_development = 150
                     }
                 }
                 JMK = {
@@ -913,6 +935,9 @@ country_event = { #tonxara.9, this event will let you pick your new country or g
                     days = 1
                 }
                 release_all_subjects = yes
+            }
+            every_province = {
+                remove_core = ROOT
             }
         }
 
@@ -958,7 +983,7 @@ country_event = { #tonxara.9, this event will let you pick your new country or g
             if = {
                 limit = {
                     UFE = {
-                        total_development = 200
+                        total_development = 150
                     }
                 }
                 UFE = {
@@ -997,6 +1022,9 @@ country_event = { #tonxara.9, this event will let you pick your new country or g
                     days = 1
                 }
                 release_all_subjects = yes
+            }
+            every_province = {
+                remove_core = ROOT
             }
         }
 
@@ -1042,7 +1070,7 @@ country_event = { #tonxara.9, this event will let you pick your new country or g
             if = {
                 limit = {
                     RAY = {
-                        total_development = 200
+                        total_development = 150
                     }
                 }
                 RAY = {
@@ -1081,6 +1109,9 @@ country_event = { #tonxara.9, this event will let you pick your new country or g
                     days = 1
                 }
                 release_all_subjects = yes
+            }
+            every_province = {
+                remove_core = ROOT
             }
         }
 
@@ -1126,7 +1157,7 @@ country_event = { #tonxara.9, this event will let you pick your new country or g
             if = {
                 limit = {
                     MIW = {
-                        total_development = 200
+                        total_development = 150
                     }
                 }
                 MIW = {
@@ -1165,6 +1196,9 @@ country_event = { #tonxara.9, this event will let you pick your new country or g
                     days = 1
                 }
                 release_all_subjects = yes
+            }
+            every_province = {
+                remove_core = ROOT
             }
         }
 
@@ -1210,7 +1244,7 @@ country_event = { #tonxara.9, this event will let you pick your new country or g
             if = {
                 limit = {
                     VET = {
-                        total_development = 200
+                        total_development = 150
                     }
                 }
                 VET = {
@@ -1249,6 +1283,9 @@ country_event = { #tonxara.9, this event will let you pick your new country or g
                     days = 1
                 }
                 release_all_subjects = yes
+            }
+            every_province = {
+                remove_core = ROOT
             }
         }
 
@@ -1294,7 +1331,7 @@ country_event = { #tonxara.9, this event will let you pick your new country or g
             if = {
                 limit = {
                     IGM = {
-                        total_development = 200
+                        total_development = 150
                     }
                 }
                 IGM = {
@@ -1333,6 +1370,9 @@ country_event = { #tonxara.9, this event will let you pick your new country or g
                     days = 1
                 }
                 release_all_subjects = yes
+            }
+            every_province = {
+                remove_core = ROOT
             }
         }
 
@@ -1378,7 +1418,7 @@ country_event = { #tonxara.9, this event will let you pick your new country or g
             if = {
                 limit = {
                     OVM = {
-                        total_development = 200
+                        total_development = 150
                     }
                 }
                 OVM = {
@@ -1417,6 +1457,9 @@ country_event = { #tonxara.9, this event will let you pick your new country or g
                     days = 1
                 }
                 release_all_subjects = yes
+            }
+            every_province = {
+                remove_core = ROOT
             }
         }
 
@@ -1462,7 +1505,7 @@ country_event = { #tonxara.9, this event will let you pick your new country or g
             if = {
                 limit = {
                     KFF = {
-                        total_development = 200
+                        total_development = 150
                     }
                 }
                 KFF = {
@@ -1501,6 +1544,9 @@ country_event = { #tonxara.9, this event will let you pick your new country or g
                     days = 1
                 }
                 release_all_subjects = yes
+            }
+            every_province = {
+                remove_core = ROOT
             }
         }
 
@@ -1546,7 +1592,7 @@ country_event = { #tonxara.9, this event will let you pick your new country or g
             if = {
                 limit = {
                     LAM = {
-                        total_development = 200
+                        total_development = 150
                     }
                 }
                 LAM = {
@@ -1585,6 +1631,9 @@ country_event = { #tonxara.9, this event will let you pick your new country or g
                     days = 1
                 }
                 release_all_subjects = yes
+            }
+            every_province = {
+                remove_core = ROOT
             }
         }
 
@@ -1630,7 +1679,7 @@ country_event = { #tonxara.9, this event will let you pick your new country or g
             if = {
                 limit = {
                     ZOR = {
-                        total_development = 200
+                        total_development = 150
                     }
                 }
                 ZOR = {
@@ -1669,6 +1718,9 @@ country_event = { #tonxara.9, this event will let you pick your new country or g
                     days = 1
                 }
                 release_all_subjects = yes
+            }
+            every_province = {
+                remove_core = ROOT
             }
         }
 
@@ -1714,7 +1766,7 @@ country_event = { #tonxara.9, this event will let you pick your new country or g
             if = {
                 limit = {
                     ANM = {
-                        total_development = 200
+                        total_development = 150
                     }
                 }
                 ANM = {
@@ -1753,6 +1805,9 @@ country_event = { #tonxara.9, this event will let you pick your new country or g
                     days = 1
                 }
                 release_all_subjects = yes
+            }
+            every_province = {
+                remove_core = ROOT
             }
         }
 
@@ -1798,7 +1853,7 @@ country_event = { #tonxara.9, this event will let you pick your new country or g
             if = {
                 limit = {
                     ATR = {
-                        total_development = 200
+                        total_development = 150
                     }
                 }
                 ATR = {
@@ -1837,6 +1892,9 @@ country_event = { #tonxara.9, this event will let you pick your new country or g
                     days = 1
                 }
                 release_all_subjects = yes
+            }
+            every_province = {
+                remove_core = ROOT
             }
         }
 
@@ -1882,7 +1940,7 @@ country_event = { #tonxara.9, this event will let you pick your new country or g
             if = {
                 limit = {
                     SLK = {
-                        total_development = 200
+                        total_development = 150
                     }
                 }
                 SLK = {
@@ -1969,7 +2027,7 @@ country_event = { #tonxara.9, this event will let you pick your new country or g
             if = {
                 limit = {
                     TYM = {
-                        total_development = 200
+                        total_development = 150
                     }
                 }
                 TYM = {
@@ -2056,7 +2114,7 @@ country_event = { #tonxara.9, this event will let you pick your new country or g
             if = {
                 limit = {
                     FBS = {
-                        total_development = 200
+                        total_development = 150
                     }
                 }
                 FBS = {
@@ -2143,7 +2201,7 @@ country_event = { #tonxara.9, this event will let you pick your new country or g
             if = {
                 limit = {
                     JIB = {
-                        total_development = 200
+                        total_development = 150
                     }
                 }
                 JIB = {
@@ -2230,7 +2288,7 @@ country_event = { #tonxara.9, this event will let you pick your new country or g
             if = {
                 limit = {
                     BAS = {
-                        total_development = 200
+                        total_development = 150
                     }
                 }
                 BAS = {
@@ -2317,7 +2375,7 @@ country_event = { #tonxara.9, this event will let you pick your new country or g
             if = {
                 limit = {
                     KMI = {
-                        total_development = 200
+                        total_development = 150
                     }
                 }
                 KMI = {
@@ -2404,7 +2462,7 @@ country_event = { #tonxara.9, this event will let you pick your new country or g
             if = {
                 limit = {
                     HOX = {
-                        total_development = 200
+                        total_development = 150
                     }
                 }
                 HOX = {
@@ -2491,7 +2549,7 @@ country_event = { #tonxara.9, this event will let you pick your new country or g
             if = {
                 limit = {
                     KLL = {
-                        total_development = 200
+                        total_development = 150
                     }
                 }
                 KLL = {
@@ -2578,7 +2636,7 @@ country_event = { #tonxara.9, this event will let you pick your new country or g
             if = {
                 limit = {
                     YBM = {
-                        total_development = 200
+                        total_development = 150
                     }
                 }
                 YBM = {
@@ -2665,7 +2723,7 @@ country_event = { #tonxara.9, this event will let you pick your new country or g
             if = {
                 limit = {
                     SEM = {
-                        total_development = 200
+                        total_development = 150
                     }
                 }
                 SEM = {
@@ -2752,7 +2810,7 @@ country_event = { #tonxara.9, this event will let you pick your new country or g
             if = {
                 limit = {
                     BLU = {
-                        total_development = 200
+                        total_development = 150
                     }
                 }
                 BLU = {
@@ -2839,7 +2897,7 @@ country_event = { #tonxara.9, this event will let you pick your new country or g
             if = {
                 limit = {
                     IPK = {
-                        total_development = 200
+                        total_development = 150
                     }
                 }
                 IPK = {
@@ -2926,7 +2984,7 @@ country_event = { #tonxara.9, this event will let you pick your new country or g
             if = {
                 limit = {
                     MMM = {
-                        total_development = 200
+                        total_development = 150
                     }
                 }
                 MMM = {
@@ -2967,7 +3025,6 @@ country_event = { #kill tonxara
         release = RAY #
         release = MIW #
         release = VET #
-        release = IGM #
         release = OVM #
         release = KFF #
         release = LAM #
@@ -2988,12 +3045,22 @@ country_event = { #kill tonxara
         #release = BLU #
         #release = IPK #
         #release = MMM #
+        #release = IGM #
         ################## non playables
         release = GEP
         release = NAF
         release = EYK
         release = IRF
         #NOTE: add geopyopian releasables at some point
+        LAM = {
+            add_government_reform = emmi
+        }
+        JMK = {
+            add_government_reform = emmi
+        }
+        SLK = {
+            add_government_reform = emmi
+        }
     }
 }
 
@@ -3003,6 +3070,10 @@ country_event = { #Bonus for others
     picture = OVEREXTENSION_eventPicture
     desc = tonxara.11.desc
     hidden = yes
+
+    mean_time_to_happen = {
+        months = 1
+    }
 
     trigger = {
         NOT = {
@@ -3079,37 +3150,33 @@ country_event = { #Bonus for others
                     total_development = 100
                 }
             }
-            ROOT = {
-                capital_scope = {
-                    ROOT = {
-                        infantry = PREV
-                        infantry = PREV
-                        infantry = PREV
-                        cavalry = PREV
-                        cavalry = PREV
-                    }
+            capital_scope = {
+                ROOT = {
+                    infantry = PREV
+                    infantry = PREV
+                    infantry = PREV
+                    cavalry = PREV
+                    cavalry = PREV
                 }
-                add_manpower = 5
             }
+            add_manpower = 5
         }
         if = {
             limit = {
                 ROOT = {
-                    total_development = 200
+                    total_development = 150
                 }
             }
-            ROOT = {
-                capital_scope = {
-                    ROOT = {
-                        infantry = PREV
-                        infantry = PREV
-                        infantry = PREV
-                        cavalry = PREV
-                        cavalry = PREV
-                    }
+            capital_scope = {
+                ROOT = {
+                    infantry = PREV
+                    infantry = PREV
+                    infantry = PREV
+                    cavalry = PREV
+                    cavalry = PREV
                 }
-                add_manpower = 5
             }
+            add_manpower = 5
         }
     }
 }

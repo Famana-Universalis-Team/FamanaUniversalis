@@ -281,7 +281,7 @@ country_event = {
 			release = RST
 			release = BIO
 			release = MIZ
-			every_province = {
+			every_owned_province = {
 				limit = {
 					NOT = { 
 						OR = {
@@ -292,6 +292,17 @@ country_event = {
 					}
 				}
 				cede_province = ---
+			}
+			every_province = {
+				limit = {
+					NOT = { 
+						OR = {
+							area = area_223 
+							area = area_221
+							area = area_231
+						}
+					}
+				}
 				remove_core = ZUB
 			}
 			set_global_flag = zubara_happened #a little tool that will help us later
