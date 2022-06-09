@@ -586,6 +586,9 @@ fas_2 = {
 			east_xalia_region = { add_permanent_claim = ROOT }
 			north_xalia_region = { add_permanent_claim = ROOT }
 			moxon_region = { add_permanent_claim = ROOT }
+			ga_xal_superregion = {
+				discover_country = FAS
+			}
 		}
 		provinces_to_highlight = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
@@ -818,6 +821,9 @@ fas_3 = {
 			}
 			kapolia_region = {
 				add_permanent_claim = ROOT
+			}
+			east_gomic = {
+				discover_country = FAS
 			}
 			add_country_modifier = {
 				name = fas_adopt_jasuan_manufacturing

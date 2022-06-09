@@ -13,3 +13,8 @@ rastrayvar_recovery_province_modifier = {
     local_production_efficiency	= -0.5
     local_development_cost = 0.25
 }
+
+aresian_resistance_modifier = {
+    local_missionary_strength = -0.05
+    local_missionary_maintenance_cost = 1.0
+}

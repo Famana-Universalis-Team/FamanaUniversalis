@@ -1394,6 +1394,7 @@ country_event = {
 
     trigger = {
         tag = FAS
+        exists = NAK
         NAK = {
             ai = yes
         }
@@ -2592,5 +2593,113 @@ country_event = { #Startup
             factor = 1
         }
         custom_tooltip = fashros_startup_tt
+    }
+}
+
+country_event = { #Aresian religious resistance
+    id = fashros.32
+    title = fashros.32.t
+    desc = fashros.32.d
+    picture = ANGRY_MOB_eventPicture
+    major = yes
+
+    trigger = {
+        tag = FAS
+        num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+            value = 15
+            region = aresia_region
+        }
+        NOT = {
+            has_country_flag = fashros_aresian_res_happened
+        }
+    }
+
+    mean_time_to_happen = {
+        months = 8
+    }
+
+    option = {
+        name = fashros.32.a
+        ai_chance = {
+            factor = 1
+        }
+        custom_tooltip = fashros_aresian_res_tooltip
+        hidden_effect = {
+            set_country_flag = fashros_aresian_res_happened
+            every_province = {
+                limit = {
+                    NOT = {
+                        is_empty = yes
+                    }
+                    NOT = {
+                        religion = tonmo
+                    }
+                    OR = {
+                        region = aresia_region
+                        area = borlebim_area
+                    }
+                    OR = {
+                        culture = Bilik_C
+                        culture = Verkan
+                        culture = Nakoan
+                    }
+                }
+                add_province_modifier = {
+                    name = aresian_resistance_modifier
+                    duration = 27375
+                }
+            }
+        }
+        add_stability = -1
+    }
+}
+
+country_event = { #Vanoman religious resistance
+    id = fashros.33
+    title = fashros.33.t
+    desc = fashros.33.d
+    picture = ANGRY_MOB_eventPicture
+    major = yes
+
+    trigger = {
+        tag = FAS
+        num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+            value = 7
+            region = vanoma_region
+        }
+        NOT = {
+            has_country_flag = fashros_vanoman_res_happened
+        }
+    }
+
+    mean_time_to_happen = {
+        months = 12
+    }
+
+    option = {
+        name = fashros.33.a
+        ai_chance = {
+            factor = 1
+        }
+        custom_tooltip = fashros_vanoman_res_tooltip
+        hidden_effect = {
+            set_country_flag = fashros_vanoman_res_happened
+            every_province = {
+                limit = {
+                    NOT = {
+                        is_empty = yes
+                    }
+                    NOT = {
+                        religion = tonmo
+                    }
+                    region = vanoma_region
+                    culture = Vanoman
+                }
+                add_province_modifier = {
+                    name = aresian_resistance_modifier
+                    duration = 18250
+                }
+            }
+        }
     }
 }
