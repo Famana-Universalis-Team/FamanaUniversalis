@@ -863,3 +863,9 @@ blk_resettled = {
     all_power_cost = 0.1
     heir_chance = -1
 }
+
+zub_humil = {
+    land_morale = -0.25
+    global_manpower_modifier = -0.50
+    global_tax_modifier = -0.20
+}

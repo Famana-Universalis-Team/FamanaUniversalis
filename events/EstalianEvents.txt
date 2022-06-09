@@ -171,11 +171,17 @@ country_event = {
 	
 	trigger = {
 		tag = ZUB
-		OR = {
-		war_score = -70
-			AND = {
-				is_year = 345
-				NOT = { num_of_cities = 15 }
+		any_enemy_country = {
+			war_score_against = {
+				who = ZUB
+				value = 70
+			}
+		}
+		NOT = {
+			OR = {
+				owns_core_province = 6536
+				owns_core_province = 6587
+				owns_core_province = 6584
 			}
 		}
 	}
@@ -187,59 +193,83 @@ country_event = {
 			every_known_country = {
 				white_peace = ROOT
 			}
-			6759 = {
-					limit = {
+			if = {
+				limit = {
+					6759 = {
 						is_empty = yes
 					}
+				}
+				6759 = {
 					cede_province = ROOT
 					add_core = ROOT
 					change_culture = ROOT
 					change_religion = ROOT
+				}
 			}
-			6758 = {
+			if = {
 				limit = {
+					6758 = {
 						is_empty = yes
 					}
+				}
+				6758 = {
 					cede_province = ROOT
 					add_core = ROOT
 					change_culture = ROOT
 					change_religion = ROOT
+				}
 			}
-			6760 = {
-					limit = {
+			if = {
+				limit = {
+					6760 = {
 						is_empty = yes
 					}
+				}
+				6760 = {
 					cede_province = ROOT
 					add_core = ROOT
 					change_culture = ROOT
 					change_religion = ROOT
+				}
 			}
-			6761 = {
+			if = {
 				limit = {
-				    is_empty = yes
-			    }
-                cede_province = ROOT
-                add_core = ROOT
-                change_culture = ROOT
-                change_religion = ROOT
+					6761 = {
+						is_empty = yes
+					}
+				}
+				6761 = {
+					cede_province = ROOT
+					add_core = ROOT
+					change_culture = ROOT
+					change_religion = ROOT
+				}
 			}
-			6766 = {
+			if = {
 				limit = {
-				    is_empty = yes
-			    }
-                cede_province = ROOT
-                add_core = ROOT
-                change_culture = ROOT
-                change_religion = ROOT
+					6766 = {
+						is_empty = yes
+					}
+				}
+				6766 = {
+					cede_province = ROOT
+					add_core = ROOT
+					change_culture = ROOT
+					change_religion = ROOT
+				}
 			}
-			6767 = {
+			if = {
 				limit = {
-				    is_empty = yes
-			    }
-                cede_province = ROOT
-                add_core = ROOT
-                change_culture = ROOT
-                change_religion = ROOT
+					6767 = {
+						is_empty = yes
+					}
+				}
+				6767 = {
+					cede_province = ROOT
+					add_core = ROOT
+					change_culture = ROOT
+					change_religion = ROOT
+				}
 			}
 			set_capital = 6761
 			release = HZY
@@ -251,30 +281,34 @@ country_event = {
 			release = RST
 			release = BIO
 			release = MIZ
-			every_owned_province = {
-				limit = { 
+			every_province = {
+				limit = {
 					NOT = { 
 						OR = {
-						area = area_223 
-						area = area_221
-						area = area_231
+							area = area_223 
+							area = area_221
+							area = area_231
 						}
-					}	
-				}	
+					}
+				}
 				cede_province = ---
 				remove_core = ZUB
 			}
 			set_global_flag = zubara_happened #a little tool that will help us later
-			}
+		}
 		custom_tooltip = zub_migrate_tooltip
-		}
-		
-		option = {
-			name = estal.3.b
-			add_prestige = 10
-		}
-		
 	}
+		
+	option = {
+		name = estal.3.b
+		add_prestige = 10
+		add_country_modifier = {
+			name = zub_humil
+			duration = 9125
+		}
+	}
+		
+}
 	
 #Qurak (Erlaqi migration)
 country_event = {
