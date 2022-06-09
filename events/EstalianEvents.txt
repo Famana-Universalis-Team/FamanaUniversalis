@@ -283,6 +283,7 @@ country_event = {
 			release = MIZ
 			every_province = {
 				limit = {
+					owned_by = ZUB
 					NOT = { 
 						OR = {
 							area = area_223 
