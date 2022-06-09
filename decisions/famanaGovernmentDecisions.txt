@@ -25,8 +25,13 @@ country_decisions = {
 
 	become_emmi_an = {
 		potential = {
+			OR = {
+				culture_group = Ravsho
+				primary_culture = Kisholian
+			}
 			culture_group = Ravsho
-			tag = ANM
+			primary_culture = Kisholian
+			NOT = { tag = ANM }
 			NOT = { has_reform = emmi }
 			NOT = { has_reform = gov_tonxara }
 			government = monarchy
@@ -36,6 +41,7 @@ country_decisions = {
 			is_free_or_tributary_trigger = yes
 			prestige = 90
 			stability = 2
+			cavalry_fraction = 0.25
 		}
 		effect = {
 			add_government_reform = emmi
