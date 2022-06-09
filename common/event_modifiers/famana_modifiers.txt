@@ -819,14 +819,6 @@ orc_empire = {
     diplomatic_upkeep = 1
 }
 
-tonxara_troubles = {
-    global_unrest = 5
-    land_morale = -0.10
-    yearly_corruption = 0.05
-    global_autonomy = 0.05
-    years_of_nationalism = 10
-}
-
 van_no_diplomats = {
     diplomats = -1
 }

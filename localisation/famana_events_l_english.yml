@@ -269,12 +269,12 @@
  pexto.6.a:0 "What a shame."
 
  pexto.16.t:0 "Returning to Our Roots"
- pexto.16.d:0 "We find ourselves in Pextum, our old homeland. Decades ago, we fled from the overbearing Morian Empire to keep our freedom. We made a new home for ourselves, we faced immense struggle, and we created the lathvy faith. But a new option is now presenting itself, namely the idea of returning to our traditional beliefs. Some call it heretical, others appropriate."
+ pexto.16.d:0 "We find ourselves in Pextum, our old homeland. Decades ago, we fled from the overbearing Morian Empire to keep our freedom. We made a new home for ourselves, we faced immense struggle, and we created the Lathvy faith. But a new option is now presenting itself, namely the idea of returning to our traditional beliefs. Some call it heretical, others appropriate."
  pexto.16.a:0 "Pawani it is."
  pexto.16.b:0 "Heretics, all of them!"
  pexto.17.t:0 "The Diocese of Moxon"
  pexto.17.d:0 "We have brought the people of Moxon, who were once our closest brothers in faith, under Pextoglazian rule. Now, we are at a crossroads, as many local religious thinkers wish to establish a Maxan Diocese following the Pextoglazian School. Direct control of the land would benefit us tremendously, as Moxon is a very wealthy archipelago, yet the prospect of a local bulwark against heathen faiths in the Eastern Gomic is something we must consider."
- pexto.17.a:0 "It will be a bastion of lathvy!"
+ pexto.17.a:0 "It will be a bastion of Lathvy!"
  pexto.17.b:0 "Let us bring the local talent to [Root.Capital.GetCapitalName] instead."
 
  gaxal.9.t:0 "An Unfitting Name"
@@ -395,7 +395,7 @@
  provincec.2.d:0 "In the years after the fall of the Maxan Empire, many Lathvites moved to Ga Xal and former Maxan imperial lands in an evangelical mission to spread their faith."
  provincec.2.a:0 "Weeds in the garden."
  provincec.2.b:0 "It is of no matter to us."
- recent_lathvy_province:0 "Anti-lathvy Zeal"
+ recent_lathvy_province:0 "Anti-Lathvy Zeal"
 
 #Aresian Decadence Events
  aresian_decree_active:0 "Aresian Decree Active"
@@ -604,7 +604,7 @@
 
  #Resteman Events
  restema.1.t:0 "Church Calls For End to Slavery"
- restema.1.d:0 "Our priests call out for the centuries long practice of slavery to end in Restema. They claim that it stands in violation of lathvy morality and threaten to denounce the government over the issue. In addition, our adoption of Feniki culture has moved us closer to the Satryans and Oekbians, many of whom are still enslaved in parts of our country. The abolition of slavery would hurt the economy and upset local nobility, but could very well be the right decision long-term."
+ restema.1.d:0 "Our priests call out for the centuries long practice of slavery to end in Restema. They claim that it stands in violation of Lathvy morality and threaten to denounce the government over the issue. In addition, our adoption of Feniki culture has moved us closer to the Satryans and Oekbians, many of whom are still enslaved in parts of our country. The abolition of slavery would hurt the economy and upset local nobility, but could very well be the right decision long-term."
  restema.1.a:0 "Ara spits on us! Let us free the slaves."
  restema.1.b:0 "Never!"
  
@@ -752,7 +752,7 @@
  fashros.17.c:0 "Play as Nhoma"
  fashros.17.f:0 "Play as Hoyros"
  fashros.17.e:0 "It is the end."
- play_as_kisholi:0 "§R\nKisholi, although in the most lucrative position of the new Tonxaras, will need to fight the growing lathvy threat on its doorstep."
+ play_as_kisholi:0 "§R\nKisholi, although in the most lucrative position of the new Tonxaras, will need to fight the growing Lathvy threat on its doorstep."
  play_as_jafxoi:0 "§R\nJafxoi will need to fight foreign powers and keep a highly rebellious population stable."
  play_as_nhoma:0 "§R\nDue to the clan structures of Nhoma, it is certain to collapse into smaller nations."
  play_as_hoyros:0 "§R\nHoyros will need to fight a brutal series of wars against what's left of Geopyopia, dissidents in its own land, and potentially against a menace from against the sea.."
@@ -825,6 +825,12 @@
  tonxara.7.d:0 "The traitorous state of Koff has seceded from our country. This is of course highly treasonous, but as a new and unstable state, it is unclear if it would even be worth fighting them. Such a move would only destabilize our nation further, so it may be more advantageous to simply let them have their independence for now."
  tonxara.7.a:0 "Let them go."
  tonxara.7.b:0 "Koff belongs to us!"
+
+ tonxara.8.t:0 "The Tonxara Lives On!"
+ tonxara.8.d:0 "We have won! Those who sought to tear down our glorious empire have been defeated, and we now have full control of our nation. The world will tremble before the might of our united Tonxara."
+ tonxara.8.a:0 "We are victorious."
+
+ tonxara_disaster:0 "War of the Tonxara"
 
  yomtanian.1.t:0 "Allow historical Yomtanian invasions?"
  yomtanian.1.d:0 "At the start of the game, there are 5 Yomtanian nations, as well as a 6th one offscreen. Each of them has the random ability to transform into a Yomtanian horde, if given the chance."
@@ -1035,7 +1041,8 @@
  tonxara_troubles:0 "Early Tonxara Issues"
  tonxara.6.t:0 "Instability in the Tonxara"
  tonxara.6.d:0 "The Tonxara is unstable. We are a new nation, and so it is difficult to convince all of our subjects to rally around us. Many local lords and tribes want to break off from us, not recognising our authority ever since the collapse of Fashros. We must convince them with the might of steel that we are worthy."
- tonxara.6.a:0 "The coming years look grim."
+ tonxara.6.a:0 "We shall fight!"
+ tonxara.6.b:0 "No, this is a lost cause."
 
  ordica.6.t:0 "The Council of Celzion"
  ordica.6.d:0 "With Pextoglazia long behind us, there are now proposals that we host a council reviewing new Lathvy doctrine."

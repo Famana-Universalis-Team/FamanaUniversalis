@@ -1,3 +1,80 @@
-#tonxara_disaster = {
-#
-#}
+tonxara_disaster = {
+    potential = {
+        OR = {
+            tag = KSL
+            tag = NHM
+            tag = JFX
+            tag = HOY
+        }
+        NOT = {
+            has_country_flag = survivedTonxaraDisaster
+        }
+    }
+
+    can_start = {
+        has_any_disaster = no
+        has_reform = gov_tonxara
+    }
+
+    progress = {
+        modifier = {
+            factor = 1.5
+            always = yes
+        }
+        modifier = {
+            factor = 0.25
+            NOT = { stability = 0 }
+        }
+        modifier = {
+			factor = 0.5
+			war_exhaustion = 5
+	    }
+        modifier = {
+            factor = 0.25
+            is_at_war = yes
+        }
+        modifier = {
+            factor = 20.0
+            is_bankrupt = yes
+        }
+    }
+
+    can_stop = { has_any_disaster = yes }
+
+    can_end = {
+        stability = 2
+        NOT = {
+            is_at_war = yes
+        }
+        is_bankrupt = no
+		NOT = { num_of_loans = 5 }
+		NOT = { corruption = 5 }
+		NOT = { num_of_rebel_armies = 1 }
+		NOT = { num_of_rebel_controlled_provinces = 1 }
+        legitimacy = 90
+        religious_unity = 0.75
+    }
+
+    on_start = tonxara.6
+    on_end = tonxara.8
+
+    #Should have unique events for the tonxaras, as well as generic events
+    #Nhoma should get a bunch of tribal and seperatist rebels, as well as an event that makes them no longer a tonxara
+    #A generic event should nuke your prestige by like -50
+    #Generic events should also just spam separatists
+    on_monthly = {
+        events = {
+        }
+        random_events = {
+        }
+    }
+
+    modifier = {
+        global_unrest = 10
+        land_morale = -0.15
+        yearly_corruption = 0.15
+        global_autonomy = 0.10
+        years_of_nationalism = 10
+        stability_cost_modifier = 2.5
+	}
+}

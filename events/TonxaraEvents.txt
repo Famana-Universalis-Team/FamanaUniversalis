@@ -178,49 +178,33 @@ country_event = { #Rise of Nafa
     }
 }
 
-country_event = { #ouchy wouchies to the tonxara
+country_event = { #disaster start event
     id = tonxara.6
     title = tonxara.6.t
     picture = COUNTRY_COLLAPSE_eventPicture
     desc = tonxara.6.d
+    is_triggered_only = yes
 
-    mean_time_to_happen = {
-        days = 1
-    }
-
-    trigger = {
-        OR = {
-            tag = KSL
-            tag = NHM
-            tag = JFX
-            tag = HOY
-        }
-        NOT = {
-            has_country_modifier = tonxara_troubles
-        }
-        NOT = {
-            has_country_flag = tonxaraCBT
-        }
-    }
-    immediate = {
-        hidden_effect = {
-            set_country_flag = tonxaraCBT
-        }
-    }
     option = {
         name = tonxara.6.a
         ai_chance = { factor = 1 }
-        add_country_modifier = {
-            name = tonxara_troubles
-            duration = 3650
-        }
+        add_stability = -5
+        add_legitimacy = -15
+    }
+    option = { #Kill your country and play a releasable
+        name = tonxara.6.b
+        ai_chance = { factor = 0 }
+        custom_tooltip = tonxara_you_should_release_yourself_NOW_tooltip
+        #country_event = {
+        #    id = tonxara.9 #Event that lets you pick releasable, alternatively lets you go back
+        #}
     }
 }
 
 country_event = { #Koff
     id = tonxara.7
     title = tonxara.7.t
-    picture = COUNTRY_COLLAPSE_eventPicture
+    picture = LAND_MILITARY_eventPicture
     desc = tonxara.7.d
     fire_only_once = yes
 
@@ -255,3 +239,24 @@ country_event = { #Koff
         add_stability = -1
     }
 }
+
+country_event = { #disaster end event
+    id = tonxara.8
+    title = tonxara.8.t
+    picture = CITY_DEVELOPMENT_eventPicture
+    desc = tonxara.8.d
+    is_triggered_only = yes
+
+    immediate = {
+        hidden_effect = {
+            set_country_flag = survivedTonxaraDisaster
+        }
+    }
+    option = {
+        name = tonxara.8.a
+        ai_chance = { factor = 1 }
+        add_stability = 1
+    }
+}
+
+country_event = {} #tonxara.9, this event will let you pick your new country or go back to the previous event

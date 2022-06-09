@@ -22,6 +22,14 @@ spriteTypes = {
 
 
 	spriteType = {
+		name = "GFX_disaster_tonxara_disaster"
+		texturefile = "gfx//interface//disasters//tonxara_disaster.dds"
+		noOfFrames = 3
+		loadType = "INGAME"
+	}
+
+
+	spriteType = {
 		name = "GFX_disaster_siamese_revolution"
 		texturefile = "gfx//interface//disasters//siamese_revolution.dds"
 		noOfFrames = 3
