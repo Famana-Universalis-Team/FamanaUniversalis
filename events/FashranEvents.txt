@@ -1679,7 +1679,6 @@ country_event = { #Event that spawns cores for releasables
             every_owned_province = {
                 limit = {
                     OR = {
-                        province_id = 5949
                         province_id = 5986
                         province_id = 5950
                         province_id = 5951

@@ -198,14 +198,14 @@ country_event = { #disaster start event
         custom_tooltip = tonxara_disaster_fight_tt
         add_stability = -5
         add_legitimacy = -15
-        hidden_effect = {
-            every_owned_province = {
-                limit = {
-                    religion = tonmo
-                }
-                add_nationalism = 15
-            }
-        }
+        #hidden_effect = {
+        #    every_owned_province = {
+        #        limit = {
+        #            religion = tonmo
+        #        }
+        #        add_nationalism = 15
+        #    }
+        #}
     }
     option = { #Kill your country and play a releasable
         name = tonxara.6.b
@@ -245,17 +245,11 @@ country_event = { #Koff
                 add_base_manpower = 1
             }
             KFF = {
-                capital_scope = {
-                    ROOT = {
-                        infantry = PREV
-                        infantry = PREV
-                        infantry = PREV
-                        cavalry = PREV
-                    }
-                }
                 create_general = {
                     tradition = 100
                 }
+                add_manpower = 5
+                add_treasury = 100
             }
         }
     }
@@ -3062,12 +3056,15 @@ country_event = { #kill tonxara
         #NOTE: add geopyopian releasables at some point
         LAM = {
             add_government_reform = emmi
+            set_country_flag = isEmmiFlag
         }
         JMK = {
             add_government_reform = emmi
+            set_country_flag = isEmmiFlag
         }
         SLK = {
             add_government_reform = emmi
+            set_country_flag = isEmmiFlag
         }
     }
 }
@@ -3230,5 +3227,228 @@ country_event = {
             name = nhm_fake_tonxara
             duration = -1
         }
+    }
+}
+
+country_event = {
+    id = tonxara.13
+    title = tonxara.13.t
+    picture = BATTLE_eventPicture
+    desc = tonxara.13.d
+    is_triggered_only = yes
+
+    trigger = {
+        NOT = {
+            stability = 1
+        }
+    }
+
+    #mean_time_to_happen = {
+    #    months = 1
+    #}
+
+    immediate = {
+        hidden_effect = {
+            random_owned_province = {
+                spawn_rebels = {
+                    type = nationalist_rebels
+                    size = 1
+                }
+            }
+            random_owned_province = {
+                spawn_rebels = {
+                    type = nationalist_rebels
+                    size = 1
+                }
+            }
+        }
+    }
+
+    option = {
+        name = tonxara.13.a
+        ai_chance = { factor = 1 }
+    }
+}
+
+country_event = {
+    id = tonxara.14
+    title = tonxara.14.t
+    picture = BATTLE_eventPicture
+    desc = tonxara.14.d
+    is_triggered_only = yes
+
+    #mean_time_to_happen = {
+    #    months = 2
+    #}
+
+    trigger = {
+        NOT = {
+            stability = 0
+        }
+    }
+
+    immediate = {
+        hidden_effect = {
+            random_owned_province = {
+                spawn_rebels = {
+                    type = nationalist_rebels
+                    size = 2
+                }
+            }
+        }
+    }
+
+    option = {
+        name = tonxara.14.a
+        ai_chance = { factor = 1 }
+    }
+}
+
+country_event = {
+    id = tonxara.15
+    title = tonxara.15.t
+    picture = BATTLE_eventPicture
+    desc = tonxara.15.d
+    is_triggered_only = yes
+
+    #mean_time_to_happen = {
+    #    months = 3
+    #}
+
+    trigger = {
+        NOT = {
+            stability = -1
+        }
+    }
+
+    immediate = {
+        hidden_effect = {
+            random_owned_province = {
+                spawn_rebels = {
+                    type = nationalist_rebels
+                    size = 3
+                }
+            }
+        }
+    }
+
+    option = {
+        name = tonxara.15.a
+        ai_chance = { factor = 1 }
+    }
+}
+
+country_event = {
+    id = tonxara.16
+    title = tonxara.16.t
+    picture = BATTLE_eventPicture
+    desc = tonxara.16.d
+    hidden = yes
+
+    trigger = {
+        NOT = {
+            num_of_owned_provinces_with	= {
+                value = 15
+                is_core = ROOT
+            }
+        }
+        has_disaster = tonxara_disaster
+    }
+
+    immediate = {
+        ################## playable and get released normally
+        release = FSB #
+        release = AMX #
+        release = DGZ #
+        release = LGN #
+        release = GTN #
+        release = ZAB #
+        release = JMK #
+        release = UFE #
+        release = RAY #
+        release = MIW #
+        release = VET #
+        release = OVM #
+        release = KFF #
+        release = LAM #
+        release = ZOR #
+        release = ANM #
+        release = ATR #
+        release = SLK #
+        release = TYM #
+        release = FBS #
+        release = JIB #
+        release = BAS #
+        release = KMI #
+        release = HOX #
+        ################## releasables (these can also be played)
+        #release = KLL #
+        #release = YBM #
+        #release = SEM #
+        #release = BLU #
+        #release = IPK #
+        #release = MMM #
+        #release = IGM #
+        ################## non playables
+        release = GEP
+        release = NAF
+        release = EYK
+        release = IRF
+        #NOTE: add geopyopian releasables at some point
+        LAM = {
+            add_government_reform = emmi
+            set_country_flag = isEmmiFlag
+        }
+        JMK = {
+            add_government_reform = emmi
+            set_country_flag = isEmmiFlag
+        }
+        SLK = {
+            add_government_reform = emmi
+            set_country_flag = isEmmiFlag
+        }
+    }
+
+    option = {
+        name = tonxara.16.a
+        ai_chance = { factor = 1 }
+    }
+}
+
+country_event = { #fuck you
+    id = tonxara.17
+    title = tonxara.17.t
+    picture = BATTLE_eventPicture
+    desc = tonxara.17.d
+    hidden = yes
+
+    trigger = {
+        OR = {
+            tag = LAM
+            tag = SLK
+            tag = JMK
+        }
+        NOT = {
+            has_reform = emmi
+            has_country_flag = isEmmiFlag
+        }
+    }
+
+    mean_time_to_happen = {
+        days = 1
+    }
+
+    immediate = {
+        if = {
+            limit = {
+                government = monarchy
+            }
+            add_government_reform = emmi
+        }
+    }
+
+    option = {
+        name = tonxara.17.a
+        ai_chance = { factor = 1 }
     }
 }
