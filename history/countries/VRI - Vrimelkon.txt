@@ -6,14 +6,13 @@ technology_group = estal_tribal_tech_gr
 religion = ordic
 primary_culture = Vamanyan
 capital = 6361	# real 
-
 200.1.1 = {
 	monarch = {
-		name = "Rydartag"
-		dynasty = "Lemman"
-		birth_date = 183.8.19
-		adm = 4
+		name = "Regency"
+		birth_date = 199.12.12
+		adm = 3
 		dip = 3
-		mil = 6
+		mil = 3
+		regent = yes
 	}
 }

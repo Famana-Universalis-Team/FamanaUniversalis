@@ -100,7 +100,7 @@ country_event = {
 	}
 }
 
-#Jimbalan migration  (decided to scrap the flag idea)
+#Jimbalak migration  (decided to scrap the flag idea)
 country_event = {
 	id = nhoma.5
 	title = nhoma.5.t
@@ -110,47 +110,56 @@ country_event = {
 	hidden = yes
 	
 	trigger = {
-		year = 342
-		NOT = { 
+		is_year = 340
+		NOT = {
 			exists = JIB
 		}
+        any_owned_province = {
+            region = nozumol_region
+        }
 	}
 	
 	mean_time_to_happen = {
-	months = 12
+	    months = 12
 	}
 	
 	immediate = {
-		6010 = {
-			limit = {
-				    is_empty = yes
-			   }
-			cede_province = JIB
+        if = {
+            limit = {
+                6010 = {
+                    is_empty = yes
+                }
+            }
+            cede_province = JIB
             add_core = JIB
             change_culture = Jimbalan
             change_religion = tonmo
-		}
-		6567 = {
-			limit = {
-				  is_empty = yes
-			   }
-			cede_province = JIB
-            add_core = JIB
-           change_culture = Jimbalan
-           change_religion = tonmo
-		}
-		6552 = {
-			limit = {
-				   is_empty = yes
-			    }
-			cede_province = JIB
+        }
+        if = {
+            limit = {
+                6567 = {
+                    is_empty = yes
+                }
+            }
+            cede_province = JIB
             add_core = JIB
             change_culture = Jimbalan
             change_religion = tonmo
-		}
-		JIB = { change_religion = tonmo }
+        }
+        if = {
+            limit = {
+                6552 = {
+                    is_empty = yes
+                }
+            }
+            cede_province = JIB
+            add_core = JIB
+            change_culture = Jimbalan
+            change_religion = tonmo
+        }
+        JIB = { change_religion = tonmo }
 	}
 	option = {
-	name = nhoma.5.a
+	    name = nhoma.5.a
 	}
 }
