@@ -26,10 +26,8 @@ tonxara_disaster = {
             tag = NHM
         }
         modifier = {
-            factor = {
-                factor = 0.5
-                tag = JFX
-            }
+            factor = 0.5
+            tag = JFX
         }
         modifier = {
             factor = 0.25
