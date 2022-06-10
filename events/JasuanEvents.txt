@@ -11,6 +11,7 @@ country_event = {
 	
 	trigger = { 
 		tag = FAS
+		is_year = 225
 		OR = {
 			FAS = {
 				controls = 5683
@@ -47,6 +48,8 @@ country_event = {
 					days = 30
 				}
 			}
+			white_peace	= NAK
+			white_peace	= KAP
 		}
 	}
 	
@@ -873,5 +876,58 @@ country_event = {
 			duration = 3650
 		}
 		add_prestige = -100
+	}
+}
+
+country_event = { #Anti-Biliku-exploit event
+	id = jasuaE.18
+	title = jasuaE.18.t
+	desc = jasuaE.18.d
+	picture = SIEGE_eventPicture
+
+	trigger = {
+		tag = FAS
+		NOT = { is_year = 225 }
+		OR = {
+			BLK = {
+				is_subject_of = FAS
+			}
+			any_owned_province = {
+				OR = {
+					is_core = BLK
+				}
+			}
+		}
+	}
+
+	option = {
+		name = jasuaE.18.a
+		ai_chance = { factor = 1 }
+		if = {
+			limit = {
+				BLK = {
+					is_subject_of = FAS
+				}
+			}
+			BLK = {
+				grant_independence = yes
+				add_truce_with = FAS
+			}
+		}
+		if = {
+			limit = {
+				any_owned_province = {
+					OR = {
+						is_core = BLK
+					}
+				}
+			}
+			every_owned_province = {
+				limit = {
+					is_core = BLK
+				}
+				cede_province = BLK
+			}
+		}
 	}
 }

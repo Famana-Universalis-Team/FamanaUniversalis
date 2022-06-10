@@ -198,6 +198,14 @@ country_event = { #disaster start event
         custom_tooltip = tonxara_disaster_fight_tt
         add_stability = -5
         add_legitimacy = -15
+        hidden_effect = {
+            every_owned_province = {
+                limit = {
+                    religion = tonmo
+                }
+                add_nationalism = 15
+            }
+        }
     }
     option = { #Kill your country and play a releasable
         name = tonxara.6.b
@@ -3177,6 +3185,50 @@ country_event = { #Bonus for others
                 }
             }
             add_manpower = 5
+        }
+    }
+}
+
+country_event = {
+    id = tonxara.12
+    title = tonxara.12.t
+    picture = KING_SICK_IN_BED_eventPicture
+    desc = tonxara.12.desc
+    major = yes
+    is_triggered_only = yes
+
+    #king dies, no more tonxara gov
+
+    trigger = {
+        tag = NHM
+        is_year = 330
+        NOT = {
+            has_country_flag = removedTonxaraGov
+        }
+        has_reform = gov_tonxara
+    }
+
+    immediate = {
+        hidden_effect = {
+            kill_ruler = yes
+            set_country_flag = removedTonxaraGov
+        }
+    }
+
+    option = { #Give up tonxara
+        name = tonxara.12.a
+        ai_chance = { factor = 3 }
+        remove_government_reform = gov_tonxara
+        add_government_reform = autocracy_reform
+    }
+
+    option = { #Keep tonxara
+        name = tonxara.12.b
+        ai_chance = { factor = 1 }
+        add_legitimacy = -25
+        add_ruler_modifier = {
+            name = nhm_fake_tonxara
+            duration = -1
         }
     }
 }

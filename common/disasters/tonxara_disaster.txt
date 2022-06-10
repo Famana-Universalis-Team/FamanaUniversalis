@@ -71,6 +71,7 @@ tonxara_disaster = {
     #Generic events should also just spam separatists
     on_monthly = {
         events = {
+            tonxara.12 #Nhoma event for removing tonxara
         }
         random_events = {
         }
