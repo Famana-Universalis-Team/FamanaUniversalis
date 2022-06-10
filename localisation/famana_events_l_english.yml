@@ -678,6 +678,10 @@
  jasuaE.17.d:0 "Biliku has fallen. Foreign barbarians have conquered and pillaged our home, leaving us no choice but to flee from our country. Many Biliks have made the long march from Biliku, to Bamfad, and all the way through Aresia. We do not know if we are safe from the Great Monster here, but we have not found a better place to settle. The migration has left what remains of the Bilik state weak and ineffective, and it will take years before we have restored any semblance of our former strength."
  jasuaE.17.a:0 "At least we are free..."
 
+ jasuaE.18.t:0 "Biliku Breaks Free!"
+ jasuaE.18.d:0 "Our subjects in Biliku have broken free from our rule! Since our territory is disconnected from theirs, we have no choice but to let them go. For now..."
+ jasuaE.18.a:0 "There is nothing we can do."
+
  #Fashran events
  
  fashros.1.t:0 "Westward Expansion"
@@ -1071,6 +1075,23 @@
  tonxara.9.ze:0 "Play as Bluec."
  tonxara.9.zf:0 "Play as Ipak."
  tonxara.9.zg:0 "Play as Merkom'm."
+
+ tonxara.12.t:0 "Death of the Crota'tam"
+ tonxara.12.desc:0 "The Crota'tam of Nhoma has perished! This morning, when his servants tried to wake him, it became apparent that he had died in his sleep. This is a disaster for the Tonxara, as we have no legitimate heir. The status of Tonxara is a massive boon to our state, as it grants us religious control of our Tonmo subjects. But this recent development means we may have no choice but to give up the title of Crota'tam."
+ tonxara.12.a:0 "We will relinquish the title."
+ tonxara.12.b:0 "[Root.Monarch.GetName] is the rightful Crota'tam!"
+
+ tonxara.13.t:0 "Rebels Rise Up"
+ tonxara.13.d:0 "Dissidents have risen up all over our country. They seek independence from [ROOT.GetName], and to establish their own kingdoms. To keep the country together, we must defeat these traitors."
+ tonxara.13.a:0 "We will prevail!"
+
+ tonxara.14.t:0 "Rebels Rise Up"
+ tonxara.14.d:0 "Dissidents have risen up all over our country. They seek independence from [ROOT.GetName], and to establish their own kingdoms. To keep the country together, we must defeat these traitors."
+ tonxara.14.a:0 "We will prevail!"
+
+ tonxara.15.t:0 "Rebels Rise Up"
+ tonxara.15.d:0 "Dissidents have risen up all over our country. They seek independence from [ROOT.GetName], and to establish their own kingdoms. To keep the country together, we must defeat these traitors."
+ tonxara.15.a:0 "We will prevail!"
 
  ordica.6.t:0 "The Council of Celzion"
  ordica.6.d:0 "With Pextoglazia long behind us, there are now proposals that we host a council reviewing new Lathvy doctrine."

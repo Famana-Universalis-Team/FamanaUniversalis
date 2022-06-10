@@ -869,3 +869,9 @@ zub_humil = {
     global_manpower_modifier = -0.50
     global_tax_modifier = -0.20
 }
+
+nhm_fake_tonxara = {
+    prestige = -1.0
+    heir_chance = -0.5
+    advisor_cost = 0.10
+}
