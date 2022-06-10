@@ -18,3 +18,17 @@ religious_school = maxan_school
 		mil = 4
 	}
 }
+
+201.1.1 = { 
+	heir = {
+		name = "Dorren"
+		monarch_name = "Dorren"
+		dynasty = "Ermefi"
+		birth_date = 195.6.23
+		death_date = 243.1.1
+		claim = 95
+		adm = 2
+		dip = 4
+		mil = 2
+	}
+}

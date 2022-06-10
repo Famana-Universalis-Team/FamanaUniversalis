@@ -19,3 +19,17 @@ capital = 5167	# change to real capital
 		mil = 3
 	}
 }
+
+201.1.1 = { 
+	heir = {
+		name = "Gadal"
+		monarch_name = "Gadal"
+		dynasty = "Eurea"
+		birth_date = 190.4.12
+		death_date = 225.6.6
+		claim = 75
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}

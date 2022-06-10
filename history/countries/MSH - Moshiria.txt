@@ -24,3 +24,17 @@ historical_rival = ALM
 	add_ruler_personality = silver_tongue_personality
 	add_ruler_personality = careful_personality
 }
+
+201.1.1 = { 
+	heir = {
+		name = "Certakalim"
+		monarch_name = "Certakalim"
+		dynasty = "Galali"
+		birth_date = 199.12.11
+		death_date = 244.8.8
+		claim = 95
+		adm = 5
+		dip = 2
+		mil = 3
+	}
+}

@@ -17,3 +17,17 @@ capital = 5185	# change to real capital
 		mil = 1
 	}
 }
+
+211.10.13 = { 
+	heir = {
+		name = "Galvis"
+		monarch_name = "Galvis"
+		dynasty = "Radalf"
+		birth_date = 211.10.13
+		death_date = 267.4.3
+		claim = 90
+		adm = 4
+		dip = 4
+		mil = 4
+	}
+}

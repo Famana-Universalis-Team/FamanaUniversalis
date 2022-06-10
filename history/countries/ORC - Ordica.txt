@@ -36,3 +36,17 @@ religious_school = pextoglazian_school
 		death_date = 256.2.9
 	}
 }
+
+201.1.1 = { 
+	heir = {
+		name = "Cenudai"
+		monarch_name = "Cenudai"
+		dynasty = "Gyage"
+		birth_date = 196.6.12
+		death_date = 272.1.1
+		claim = 95
+		adm = 3
+		dip = 3
+		mil = 4
+	}
+}

@@ -18,3 +18,16 @@ capital = 5113	# change to real capital
 	}
 }
 
+201.1.1 = { 
+	heir = {
+		name = "Div"
+		monarch_name = "Div"
+		dynasty = "Zene"
+		birth_date = 196.1.28
+		death_date = 252.9.14
+		claim = 95
+		adm = 2
+		dip = 3
+		mil = 1
+	}
+}
