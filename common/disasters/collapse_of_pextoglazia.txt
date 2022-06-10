@@ -29,6 +29,10 @@ collapse_of_pextoglazia = {
                 defensive_war_with = ORC
             }
         }
+        modifier = {
+            factor = 1
+            is_year = 275
+        }
     }
 
 	can_stop = { has_any_disaster = yes }
