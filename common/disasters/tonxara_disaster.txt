@@ -18,8 +18,18 @@ tonxara_disaster = {
 
     progress = {
         modifier = {
+            factor = 5
+            tag = KSL
+        }
+        modifier = {
             factor = 1.5
-            always = yes
+            tag = NHM
+        }
+        modifier = {
+            factor = {
+                factor = 0.5
+                tag = JFX
+            }
         }
         modifier = {
             factor = 0.25
