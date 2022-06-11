@@ -19,3 +19,17 @@ historical_friend = KEP
 		birth_date = 180.5.14
 	}
 }
+
+201.1.1 = { 
+	heir = {
+		name = "Leglend"
+		monarch_name = "Laglend"
+		dynasty = "Kilia"
+		birth_date = 197.8.13
+		death_date = 256.6.28
+		claim = 95
+		adm = 5
+		dip = 4
+		mil = 5
+	}
+}

@@ -17,3 +17,17 @@ capital = 5388	# change to real capital
 		mil = 2
 	}
 }
+
+205.1.1 = { 
+	heir = {
+		name = "Certas"
+		monarch_name = "Certas"
+		dynasty = "Jikiro"
+		birth_date = 204.6.14
+		death_date = 284.4.12
+		claim = 95
+		adm = 3
+		dip = 3
+		mil = 1
+	}
+}

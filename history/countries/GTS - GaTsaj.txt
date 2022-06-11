@@ -18,3 +18,17 @@ capital = 5159	# change to real capital
 		mil = 2
 	}
 }
+
+201.1.1 = { 
+	heir = {
+		name = "Badur"
+		monarch_name = "Badur"
+		dynasty = "Bonen"
+		birth_date = 186.4.14
+		death_date = 276.9.21
+		claim = 95
+		adm = 3
+		dip = 1
+		mil = 4
+	}
+}

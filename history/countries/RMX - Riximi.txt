@@ -16,6 +16,20 @@ historical_friend = NPT
 		adm = 5
 		dip = 4
 		mil = 1
-		birth_date = 197.12.3
+		birth_date = 195.12.3
+	}
+}
+
+211.6.6 = { 
+	heir = {
+		name = "Leglend"
+		monarch_name = "Laglend"
+		dynasty = "Kilia"
+		birth_date = 211.5.16
+		death_date = 253.4.12
+		claim = 95
+		adm = 2
+		dip = 6
+		mil = 2
 	}
 }
