@@ -24,3 +24,18 @@ add_accepted_culture = Kachik
 		mil = 2
 	}
 }
+
+211.6.6 = { 
+	heir = {
+		name = "Mitrhus"
+		monarch_name = "Mitrhus"
+		dynasty = "Manu"
+		birth_date = 211.5.16
+		death_date = 253.4.12
+		claim = 100
+		adm = 4
+		dip = 0
+		mil = 5
+	}
+}
+

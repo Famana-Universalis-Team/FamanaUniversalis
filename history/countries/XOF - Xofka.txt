@@ -19,3 +19,17 @@ religious_school = pextoglazian_school
 		mil = 4
 	}
 }
+
+211.6.6 = { 
+	heir = {
+		name = "Relambi"
+		monarch_name = "Relambi"
+		dynasty = "Sunek"
+		birth_date = 211.5.16
+		death_date = 253.4.12
+		claim = 95
+		adm = 1
+		dip = 5
+		mil = 2
+	}
+}
