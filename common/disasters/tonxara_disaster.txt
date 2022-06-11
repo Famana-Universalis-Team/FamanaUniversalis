@@ -18,8 +18,16 @@ tonxara_disaster = {
 
     progress = {
         modifier = {
+            factor = 5
+            tag = KSL
+        }
+        modifier = {
             factor = 1.5
-            always = yes
+            tag = NHM
+        }
+        modifier = {
+            factor = 0.5
+            tag = JFX
         }
         modifier = {
             factor = 0.25
@@ -75,9 +83,9 @@ tonxara_disaster = {
         }
         random_events = {
             300 = 0
-            40 = tonxara.13 #separatists small
-            30 = tonxara.14 #separatists mid
-            10 = tonxara.15 #separatists large
+            60 = tonxara.13 #separatists small
+            45 = tonxara.14 #separatists mid
+            20 = tonxara.15 #separatists large
         }
     }
 

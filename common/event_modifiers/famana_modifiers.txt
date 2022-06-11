@@ -875,3 +875,9 @@ nhm_fake_tonxara = {
     heir_chance = -0.5
     advisor_cost = 0.10
 }
+
+ksl_amogus = {
+    land_forcelimit_modifier = -0.50
+    global_manpower_modifier = -0.50
+    min_autonomy = 25
+}

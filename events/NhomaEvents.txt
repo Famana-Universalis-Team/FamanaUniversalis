@@ -165,6 +165,63 @@ country_event = {
 }
 
 #Khim-fisbiklu alliance
-#country_event = {
-#
-#}
+country_event = {
+    id = nhoma.6
+	title = nhoma.6.t
+    desc = nhoma.6.d
+	picture = DIPLOMACY_eventPicture
+	fire_only_once = yes
+
+    trigger = {
+        tag = FSB
+        exists = KMI
+        NOT = {
+            OR = {
+                alliance_with = KMI
+                is_rival = KMI
+                is_enemy = KMI
+            }
+        }
+    }
+
+    mean_time_to_happen = {
+        days = 10
+    }
+
+    option = { #Yes
+        name = nhoma.6.a
+        ai_chance = { factor = 1 }
+        KMI = {
+            country_event = {
+                id = nhoma.7
+                days = 1
+            }
+        }
+    }
+
+    option = { #No
+        name = nhoma.6.b
+        ai_chance = { factor = 0 }
+    }
+}
+
+#Khim-fisbiklu alliance (Khim)
+country_event = {
+    id = nhoma.7
+	title = nhoma.7.t
+    desc = nhoma.7.d
+	picture = DIPLOMACY_eventPicture
+    is_triggered_only = yes
+    major = yes
+
+    option = { #Yes
+        name = nhoma.7.a
+        ai_chance = { factor = 3 }
+        create_alliance = FSB
+    }
+
+    option = { #No
+        name = nhoma.7.b
+        ai_chance = { factor = 1 }
+    }
+}

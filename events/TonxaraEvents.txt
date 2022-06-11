@@ -3452,3 +3452,31 @@ country_event = { #fuck you
         ai_chance = { factor = 1 }
     }
 }
+
+country_event = { #fuck you kisholi
+    id = tonxara.18
+    title = tonxara.18.t
+    picture = WAR_OF_THE_ROSES_eventPicture
+    desc = tonxara.18.d
+    major = yes
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        months = 3
+    }
+
+    trigger = {
+        tag = KSL
+        is_year = 325
+    }
+
+    option = {
+        name = tonxara.18.a
+        ai_chance = { factor = 1 }
+        add_country_modifier = {
+            name = ksl_amogus
+            duration = 9125
+        }
+        add_prestige = -50
+    }
+}
