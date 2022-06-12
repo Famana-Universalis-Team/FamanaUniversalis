@@ -3270,7 +3270,7 @@ country_event = {
 
     trigger = {
         NOT = {
-            stability = 1
+            stability = 3
         }
     }
 
@@ -3320,7 +3320,7 @@ country_event = {
 
     trigger = {
         NOT = {
-            stability = 0
+            stability = 2
         }
     }
 
@@ -3360,7 +3360,7 @@ country_event = {
 
     trigger = {
         NOT = {
-            stability = -1
+            stability = 1
         }
     }
 
