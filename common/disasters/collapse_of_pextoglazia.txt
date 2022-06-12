@@ -35,7 +35,8 @@ collapse_of_pextoglazia = {
         }
     }
 
-	can_stop = { has_any_disaster = yes }
+	can_stop = {
+    }
 
 	can_end = {
         AND = {
