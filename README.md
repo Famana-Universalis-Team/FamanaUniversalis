@@ -11,12 +11,7 @@ Special thanks to the team:
 - **SKM** (Developer)
 - **Ocros** (Developer)
 - **u1145** (Developer)
-- **Bacon** (Developer)
 - **Rag** (Playtester)
-- **WESTZ** (Lore)
-- **Meme** (Lore)
-- **KCM** (Lore)
-- **NaZa** (Lore)
 
 ## Installation guide
 
