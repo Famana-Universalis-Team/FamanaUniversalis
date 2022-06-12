@@ -2604,10 +2604,12 @@ country_event = { #Aresian religious resistance
     fire_only_once = yes
 
     trigger = {
-        tag = FAS
-        num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-            value = 15
-            region = aresia_region
+        religion = aresian
+        FAS = {
+            num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+                value = 15
+                region = aresia_region
+            }
         }
     }
 
@@ -2659,10 +2661,12 @@ country_event = { #Vanoman religious resistance
     fire_only_once = yes
 
     trigger = {
-        tag = FAS
-        num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-            value = 7
-            region = vanoma_region
+        tag = VAN
+        FAS = {
+            num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+                value = 7
+                region = vanoma_region
+            }
         }
     }
 
