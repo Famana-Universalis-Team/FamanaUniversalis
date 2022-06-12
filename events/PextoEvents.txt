@@ -481,7 +481,7 @@ country_event = { #bye bye pexto
         ai_chance = { factor = 1 }
 		ROOT = {
 			release_all_subjects = yes
-			release	= RNP
+			release = RNP
 			release = PNV
 			release = NVI
 			release = REN
