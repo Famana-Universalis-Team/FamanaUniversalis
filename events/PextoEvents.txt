@@ -462,19 +462,20 @@ country_event = { #bye bye pexto
     title = pexto.14.t
     desc = pexto.14.d
     picture = LAND_MILITARY_eventPicture
+
+	trigger = {
+		tag = PEX
+		NOT = { has_country_flag = pex_collapse_prevented }
+		OR = {
+			has_country_flag = pextocivilwar
+			is_year = 300
+		}
+	}
+
 	mean_time_to_happen = {
 		months = 30
 	}
-	trigger = {
-		AND = {
-			tag = PEX
-			NOT = { has_country_flag = pex_collapse_prevented }
-			OR = {
-				has_country_flag = pextocivilwar
-				is_year = 300
-			}
-		}
-	}
+
     option = {
 		name = pexto.14.a
         ai_chance = { factor = 1 }

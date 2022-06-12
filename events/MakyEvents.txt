@@ -1107,6 +1107,20 @@ country_event = {
                 remove_core = ROOT
 				add_base_manpower = -1
 			}
+			every_province = {
+				limit = {
+					NOT = {
+						OR = {
+							province_id = 7241
+							province_id = 7240
+						}
+					}
+				}
+				remove_core = ROOT
+			}
+		}
+		every_known_country = {
+			white_peace = ROOT
 		}
 		custom_tooltip = tkm_migrate_tooltip
 	}

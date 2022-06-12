@@ -752,7 +752,7 @@ country_event = { #TRADITIONAL & RINI
 				tag = NAF
 			}
 			modifier = {
-				factor = 4
+				factor = 2.5
 				current_age	= age_of_reformation
 			}
 			modifier = {
