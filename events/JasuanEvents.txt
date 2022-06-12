@@ -931,3 +931,40 @@ country_event = { #Anti-Biliku-exploit event
 		}
 	}
 }
+
+country_event = { #nafan fashran peace
+	id = jasuaE.19
+	title = jasuaE.19.t
+	desc = jasuaE.19.d
+	picture = SIEGE_eventPicture
+	hidden = yes
+
+	trigger = {
+		OR = {
+			tag = SKT
+			tag = NAF
+		}
+		FAS = {
+			ai = yes
+		}
+		ai = yes
+		war_with = FAS
+	}
+
+	option = {
+		name = jasuaE.18.a
+		ai_chance = { factor = 1 }
+		if = {
+			limit = {
+				tag = SKT
+			}
+			white_peace = FAS
+		}
+		if = {
+			limit = {
+				tag = NAF
+			}
+			white_peace = FAS
+		}
+	}
+}
