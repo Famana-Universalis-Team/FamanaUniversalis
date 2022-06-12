@@ -3286,6 +3286,12 @@ country_event = {
                     size = 1
                 }
             }
+            random_owned_province = {
+                spawn_rebels = {
+                    type = nationalist_rebels
+                    size = 1
+                }
+            }
             #random_owned_province = {
             #    spawn_rebels = {
             #        type = nationalist_rebels
@@ -3326,6 +3332,12 @@ country_event = {
                     size = 2
                 }
             }
+            random_owned_province = {
+                spawn_rebels = {
+                    type = nationalist_rebels
+                    size = 2
+                }
+            }
         }
     }
 
@@ -3354,6 +3366,12 @@ country_event = {
 
     immediate = {
         hidden_effect = {
+            random_owned_province = {
+                spawn_rebels = {
+                    type = nationalist_rebels
+                    size = 3
+                }
+            }
             random_owned_province = {
                 spawn_rebels = {
                     type = nationalist_rebels
