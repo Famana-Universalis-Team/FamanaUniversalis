@@ -3054,17 +3054,44 @@ country_event = { #kill tonxara
         release = EYK
         release = IRF
         #NOTE: add geopyopian releasables at some point
-        LAM = {
-            add_government_reform = emmi
-            set_country_flag = isEmmiFlag
+        if = {
+            limit = {
+                NOT = {
+                    LAM = {
+                        has_reform = emmi
+                    }
+                }
+            }
+            LAM = {
+                add_government_reform = emmi
+                set_country_flag = isEmmiFlag
+            }
         }
-        JMK = {
-            add_government_reform = emmi
-            set_country_flag = isEmmiFlag
+        if = {
+            limit = {
+                NOT = {
+                    JMK = {
+                        has_reform = emmi
+                    }
+                }
+            }
+            JMK = {
+                add_government_reform = emmi
+                set_country_flag = isEmmiFlag
+            }
         }
-        SLK = {
-            add_government_reform = emmi
-            set_country_flag = isEmmiFlag
+        if = {
+            limit = {
+                NOT = {
+                    SLK = {
+                        has_reform = emmi
+                    }
+                }
+            }
+            SLK = {
+                add_government_reform = emmi
+                set_country_flag = isEmmiFlag
+            }
         }
     }
 }
@@ -3192,7 +3219,7 @@ country_event = {
     picture = KING_SICK_IN_BED_eventPicture
     desc = tonxara.12.desc
     major = yes
-    is_triggered_only = yes
+    #is_triggered_only = yes
 
     #king dies, no more tonxara gov
 
@@ -3203,6 +3230,10 @@ country_event = {
             has_country_flag = removedTonxaraGov
         }
         has_reform = gov_tonxara
+    }
+
+    mean_time_to_happen = {
+        months = 12
     }
 
     immediate = {
@@ -3255,12 +3286,12 @@ country_event = {
                     size = 1
                 }
             }
-            random_owned_province = {
-                spawn_rebels = {
-                    type = nationalist_rebels
-                    size = 1
-                }
-            }
+            #random_owned_province = {
+            #    spawn_rebels = {
+            #        type = nationalist_rebels
+            #        size = 1
+            #    }
+            #}
         }
     }
 
@@ -3395,17 +3426,44 @@ country_event = {
         release = EYK
         release = IRF
         #NOTE: add geopyopian releasables at some point
-        LAM = {
-            add_government_reform = emmi
-            set_country_flag = isEmmiFlag
+        if = {
+            limit = {
+                NOT = {
+                    LAM = {
+                        has_reform = emmi
+                    }
+                }
+            }
+            LAM = {
+                add_government_reform = emmi
+                set_country_flag = isEmmiFlag
+            }
         }
-        JMK = {
-            add_government_reform = emmi
-            set_country_flag = isEmmiFlag
+        if = {
+            limit = {
+                NOT = {
+                    JMK = {
+                        has_reform = emmi
+                    }
+                }
+            }
+            JMK = {
+                add_government_reform = emmi
+                set_country_flag = isEmmiFlag
+            }
         }
-        SLK = {
-            add_government_reform = emmi
-            set_country_flag = isEmmiFlag
+        if = {
+            limit = {
+                NOT = {
+                    SLK = {
+                        has_reform = emmi
+                    }
+                }
+            }
+            SLK = {
+                add_government_reform = emmi
+                set_country_flag = isEmmiFlag
+            }
         }
     }
 
@@ -3478,5 +3536,39 @@ country_event = { #fuck you kisholi
             duration = 9125
         }
         add_prestige = -50
+    }
+}
+
+country_event = { #nhoma death
+    id = tonxara.19
+    title = tonxara.19.t
+    picture = WAR_OF_THE_ROSES_eventPicture
+    desc = tonxara.19.d
+    hidden = yes
+    fire_only_once = yes
+
+    trigger = {
+        tag = NHM
+        ai = yes
+        NOT = {
+            num_of_owned_provinces_with	= {
+                value = 50
+                superregion = tonmo_supperregion
+            }
+        }
+    }
+
+    immediate = {
+        country_event = {
+            id = tonxara.10
+        }
+        every_province = {
+            remove_core = NHM
+        }
+    }
+
+    option = {
+        name = tonxara.19.a
+        ai_chance = { factor = 1 }
     }
 }

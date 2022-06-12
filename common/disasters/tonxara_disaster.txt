@@ -14,15 +14,18 @@ tonxara_disaster = {
     can_start = {
         has_any_disaster = no
         has_reform = gov_tonxara
+        NOT = {
+            is_year = 380
+        }
     }
 
     progress = {
         modifier = {
-            factor = 5
+            factor = 2.5
             tag = KSL
         }
         modifier = {
-            factor = 1.5
+            factor = 1.0
             tag = NHM
         }
         modifier = {
@@ -79,13 +82,13 @@ tonxara_disaster = {
     #Generic events should also just spam separatists
     on_monthly = {
         events = {
-            tonxara.12 #Nhoma event for removing tonxara
+            #tonxara.12 #Nhoma event for removing tonxara
         }
         random_events = {
             300 = 0
-            60 = tonxara.13 #separatists small
-            45 = tonxara.14 #separatists mid
-            20 = tonxara.15 #separatists large
+            50 = tonxara.13 #separatists small
+            35 = tonxara.14 #separatists mid
+            15 = tonxara.15 #separatists large
         }
     }
 
@@ -95,6 +98,6 @@ tonxara_disaster = {
         yearly_corruption = 0.10
         global_autonomy = 0.10
         years_of_nationalism = 10
-        stability_cost_modifier = 1.5
+        stability_cost_modifier = 1.0
 	}
 }

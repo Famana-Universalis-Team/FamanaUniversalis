@@ -877,7 +877,7 @@ nhm_fake_tonxara = {
 }
 
 ksl_amogus = {
-    land_forcelimit_modifier = -0.50
-    global_manpower_modifier = -0.50
-    min_autonomy = 25
+    land_forcelimit_modifier = -0.3
+    global_manpower_modifier = -0.33
+    min_autonomy = 20
 }
