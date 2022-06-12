@@ -1688,6 +1688,7 @@ country_decisions = {
 				NOT = { exists = HVK }
 				culture_group = Hoxoi
 				was_never_end_game_tag_trigger = yes
+				NOT = { religion = tonmo }
 			}
 		}
 		provinces_to_highlight = {
@@ -1696,7 +1697,6 @@ country_decisions = {
 				province_id = 5188
 				province_id = 5185
 				province_id = 5174
-				province_id = 5792
 			}
 			OR = {
 				NOT = { owned_by = ROOT }
@@ -1708,7 +1708,7 @@ country_decisions = {
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
 			owns_core_province = 5177
-			owns_core_province = 5182
+			owns_core_province = 5188
 			owns_core_province = 5185
 			owns_core_province = 5174
 		}
