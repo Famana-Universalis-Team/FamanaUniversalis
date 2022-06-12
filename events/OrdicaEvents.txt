@@ -255,3 +255,91 @@ country_event = { #Dorlem's Tactics / Dorlemitz
 		}
 	}
 }
+
+#The Maldiks settle down
+country_event = {
+	id = ordica.8
+	title = ordica.8.t
+	desc = ordica.8.d
+	picture = HUSSARS_eventPicture
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			every_core_province = {
+				if = {
+					limit = {
+						culture = Kolyan
+						owned_by = ROOT
+					}
+					change_culture = Ora_Maldan
+				}
+				if = {
+					limit = {
+						OR = { 
+						culture = Dlosnim 
+						culture = East_Ordican 
+						}
+						owned_by = ROOT
+					}
+					change_culture = Meryaldik
+				}
+				if = {
+					limit = {
+						culture = Ordican
+						owned_by = ROOT
+					}
+					change_culture = Naba_Maldan
+				}
+			}
+			add_accepted_culture = Ora_Maldan
+			add_accepted_culture = Meryaldik
+			add_accepted_culture = Naba_Maldan
+		}
+	}
+
+	option = {
+		name = ordica.8.a
+		5725 = {
+		add_base_tax = 2
+		add_base_production = 2
+		add_base_manpower = 2
+		}
+		6236 = {
+		add_base_tax = 2
+		add_base_production = 2
+		add_base_manpower = 2
+		}
+		if = {
+			limit = {
+			6227 = { culture = Meryaldik }
+			}
+			6227 = { 
+			add_base_tax = 2
+			add_base_production = 2
+			add_base_manpower = 2
+			}
+		}
+		if = {
+			limit = {
+			6211 = { culture = Meryaldik }
+			}
+			6211 = { 
+			add_base_tax = 2
+			add_base_production = 2
+			add_base_manpower = 2
+			}
+		}
+		if = {
+			limit = {
+			6215 = { culture = Meryaldik }
+			}
+			6215 = { 
+			add_base_tax = 2
+			add_base_production = 2
+			add_base_manpower = 2
+			}
+		}
+	}
+}

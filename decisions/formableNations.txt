@@ -3102,6 +3102,9 @@ country_decisions = {
 				tag = MLD
 				culture = Maldikian
 				was_never_end_game_tag_trigger = yes
+				NOT = {
+					has_country_flag = formed_maldan_empire
+				}
 			}
 		}
 		provinces_to_highlight = {
@@ -3184,7 +3187,12 @@ country_decisions = {
 				name = "centralization_modifier"
 				duration = 7300
 			}
+			country_event = {
+				id = ordica.8
+				days = 1
+			}
 			add_prestige = 25
+			set_country_flag = formed_maldan_empire
 		}
 		ai_will_do = {
 			factor = 1

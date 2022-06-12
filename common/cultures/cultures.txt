@@ -1019,6 +1019,28 @@ Maldik = {
 			Mar Moyai Kemay Kasi Magya Komur Dilo Kayti Gag Mafnor Tomu Kamar Ufpau
         }
 	}
+	Naba_Maldan = {
+		male_names = {
+            Odrig Brebar Odlac Ozgik Nabam Nolmo Natarda Tarda Muno Gahi Oyud Gedat Aport Kanda Nobo Amart Anuzum
+        }
+        female_names = {
+            Beroro Nai Mida Uge Imia Gilnia Uaizbia Kaiamau
+        }
+        dynasty_names = {
+			Mar Moyai Kemay Kasi Magya Komur Dilo Kayti Gag Mafnor Tomu Kamar Ufpau
+        }
+	}
+	Meryaldik = {
+		male_names = {
+            Odrig Brebar Odlac Ozgik Nabam Nolmo Natarda Tarda Muno Gahi Oyud Gedat Aport Kanda Nobo Amart Anuzum
+        }
+        female_names = {
+            Beroro Nai Mida Uge Imia Gilnia Uaizbia Kaiamau
+        }
+        dynasty_names = {
+			Mar Moyai Kemay Kasi Magya Komur Dilo Kayti Gag Mafnor Tomu Kamar Ufpau
+        }
+	}
 }
 
 #############################
@@ -1136,6 +1158,7 @@ Ordic_C = {
         }
 	}
 	Vordori = {
+		primary = VOR
 		male_names = {
             Ordic Berber Odalco Ozgici Niabiame Nuolme Natuydai Tordou Munai Gyagyi Oydoytu Gyedaitau Aiypaito Cenudai Noboai Aimiate Aulnauzmu
         }
@@ -1195,6 +1218,7 @@ Ordic_C = {
         }
 	}
 	Dlosnim = {
+		primary = FLB
 		male_names = {
             Oddic Bebbe Oduro Oggic Nabama Num Natur Dord Man Gyag Oddutu Geditur Apart Gyenda Lobonai Amart Almazumm
         }
@@ -1235,6 +1259,19 @@ Yomtanian = { # unfinished
 	}
 	
 	Hofrrejjdkman = {
+		
+		male_names = {
+			Nihaluchan Oboloianifpeni Gweanhrefn Ugujaj Kowa Twon Olid Sxaskxa
+		}
+		female_names = {
+			Ayen Tesey Ifs Moak Mnaxyik
+		}
+		dynasty_names = {
+			Gusan Isk Ga'a Gosi Kaoad Has
+		}
+	}
+	
+	Jzoet = {
 		
 		male_names = {
 			Nihaluchan Oboloianifpeni Gweanhrefn Ugujaj Kowa Twon Olid Sxaskxa
