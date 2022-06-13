@@ -204,6 +204,9 @@ country_decisions = {
                     school = nafan_school
                 }
             }
+            capital_scope = {
+                superregion = west_estal_superregion
+            }
 		}
 		allow = {
 			OR = {
