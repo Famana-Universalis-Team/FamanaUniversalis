@@ -213,6 +213,10 @@ country_decisions = {
 		}
 		effect = {
 			add_prestige = -50
+            5337 = {
+                remove_building = temple
+                remove_building = cathedral
+            }
             set_global_flag = Pomlen_Destroyed
             custom_tooltip = POMLEN_DESTROYED
 		}
