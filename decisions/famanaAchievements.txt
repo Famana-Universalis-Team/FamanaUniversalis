@@ -1128,7 +1128,10 @@ country_decisions = {
 			}
 		}
 		allow = {
-			government = anarchy
+			custom_trigger_tooltip = {
+				tooltip = anarchy_ach_tt
+				government = anarchy
+			}
 			total_development = 1000
 		}
 		effect = {
