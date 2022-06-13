@@ -1,6 +1,10 @@
 ﻿l_english:
 
- #From the Ashes
+ achievement.1.t:0 "£background_achievement£"
+ achievement.1.d:0 "£background_achievement£"
+ achievement.1.a:0 "£background_achievement£" 
+
+#From the Ashes
  achievement_from_the_ashes_title:0 "£adm£Achievement - §YFrom the Ashes§!"
  achievement_from_the_ashes_desc:0 "As Morsum, restore Moria and convert all of Ga Xal to Morian."
  achievement_from_the_ashes_modifier:0 "§GAchievement - From the Ashes§!"
@@ -15,7 +19,7 @@
  #Diaspora
  achievement_diaspora_title:0 "£adm£Achievement - §YDiaspora§!"
  achievement_diaspora_desc:0 "As Yatia-Blasta, own 20 provinces of Blastan culture by 350."
- achievement_diaspora_modifier:0 "Achievement - Diaspora"
+ achievement_diaspora_modifier:0 "§GAchievement - Diaspora§!"
  achievement_diaspora_modifier_desc:0 "As Yatia-Blasta, own 20 provinces of Blastan culture by 350."
 
  #Relentless Push West
@@ -30,11 +34,134 @@
  achievement_for_the_clouds_modifier:0 "§GAchievement - For the Clouds§!"
  achievement_for_the_clouds_modifier_desc:0 "Complete the Fashran mission tree."
 
- achievement_for_the_clouds_title:0 "£adm£Achievement - §YFor the Clouds§!"
- achievement_for_the_clouds_desc:0 "Complete the Fashran mission tree."
- achievement_for_the_clouds_modifier:0 "§GAchievement - For the Clouds§!"
- achievement_for_the_clouds_modifier_desc:0 "Complete the Fashran mission tree."
+ #Bad Boy
+ achievement_bad_boy_title:0 "£adm£Achievement - §YBad Boy§!"
+ achievement_bad_boy_desc:0 "Have 100 allegiance to Loys as Moxon."
+ achievement_bad_boy_modifier:0 "§GAchievement - Bad Boy§!"
+ achievement_bad_boy_modifier_desc:0 "Have 100 allegiance to Loys as Moxon."
 
- achievement.1.t:0 "£background_achievement£"
- achievement.1.d:0 "£background_achievement£"
- achievement.1.a:0 "£background_achievement£"
+ #I Go Yes, Forever
+ achievement_i_go_yes_forever_title:0 "£adm£Achievement - §YI Go Yes, Forever§!"
+ achievement_i_go_yes_forever_desc:0 "As Bava, own all of Maky."
+ achievement_i_go_yes_forever_modifier:0 "§GAchievement - I Go Yes, Forever§!"
+ achievement_i_go_yes_forever_modifier_desc:0 "As Bava, own all of Maky."
+
+ #Get Rial
+ achievement_get_rial_title:0 "£adm£Achievement - §YGet Rial§!"
+ achievement_get_rial_desc:0 "As Geter, own the province of Rial."
+ achievement_get_rial_modifier:0 "§GAchievement - Get Rial§!"
+ achievement_get_rial_modifier_desc:0 "As Geter, own the province of Rial."
+
+ #Tee Spilled
+ achievement_tee_spilled_title:0 "£adm£Achievement - §YTee Spilled§!"
+ achievement_tee_spilled_desc:0 "As Delkia, occupy the Bamal area and bring it to 100% devastation."
+ achievement_tee_spilled_modifier:0 "§GAchievement - Tee Spilled§!"
+ achievement_tee_spilled_modifier_desc:0 "As Delkia, occupy the Bamal area and bring it to 100% devastation."
+
+ #Sweet Revenge
+ achievement_sweet_revenge_title:0 "£adm£Achievement - §YSweet Revenge§!"
+ achievement_sweet_revenge_desc:0 "As Nakoa, unite Aresia and conquer all of Jasua."
+ achievement_sweet_revenge_modifier:0 "§GAchievement - Sweet Revenge§!"
+ achievement_sweet_revenge_modifier_desc:0 "As Nakoa, unite Aresia and conquer all of Jasua."
+
+ #Holk Smash
+ achievement_holk_smash_title:0 "£adm£Achievement - §YHolk Smash§!"
+ achievement_holk_smash_desc:0 "As Holk, deploy 100,000 artillery."
+ achievement_holk_smash_modifier:0 "§GAchievement - Holk Smash§!"
+ achievement_holk_smash_modifier_desc:0 "As Holk, deploy 100,000 artillery."
+
+ #Malding
+ achievement_malding_title:0 "£adm£Achievement - §YMalding§!"
+ achievement_malding_desc:0 "As a nation of Maldik culture, have 100% revanchism."
+ achievement_malding_modifier:0 "§GAchievement - Malding§!"
+ achievement_malding_modifier_desc:0 "As a nation of Maldik culture, have 100% revanchism."
+
+ #1984
+ achievement_1984_title:0 "£adm£Achievement - §Y1984§!"
+ achievement_1984_desc:0 "As Ora Malda, own all Naravami provinces and control New Pexamol."
+ achievement_1984_modifier:0 "§GAchievement - 1984§!"
+ achievement_1984_modifier_desc:0 "As Ora Malda, own all Naravami provinces and control New Pexamol."
+
+ #Back With a Vengeance
+ achievement_back_with_a_vengeance_title:0 "£adm£Achievement - §YBack With a Vengeance§!"
+ achievement_back_with_a_vengeance_desc:0 "As Yatia-Blasta, form Hovakidra."
+ achievement_back_with_a_vengeance_modifier:0 "§GAchievement - Back With a Vengeance§!"
+ achievement_back_with_a_vengeance_modifier_desc:0 "As Yatia-Blasta, form Hovakidra."
+
+ #Blood Red Moon
+ achievement_blood_red_moon_title:0 "£adm£Achievement - §YBlood Red Moon§!"
+ achievement_blood_red_moon_desc:0 "As Tyarda, unite Emastalia and expel the Kachiks from Stroktur."
+ achievement_blood_red_moon_modifier:0 "§GAchievement - Blood Red Moon§!"
+ achievement_blood_red_moon_modifier_desc:0 "As Tyarda, unite Emastalia and expel the Kachiks from Stroktur."
+
+ #Z'nestal
+ achievement_znestal_title:0 "£adm£Achievement - §YZ'nestal§!"
+ achievement_znestal_desc:0 "As Z’ne, own or have a subject own all of Estal.	"
+ achievement_znestal_modifier:0 "§GAchievement - Z'nestal§!"
+ achievement_znestal_modifier_desc:0 "As Z’ne, own or have a subject own all of Estal."
+
+ #Nobody Lives Forever
+ achievement_nobody_lives_forever_title:0 "£adm£Achievement - §YNobody Lives Forever§!"
+ achievement_nobody_lives_forever_desc:0 "As Fashros, convert the entire Jasuan region to Tonmo."
+ achievement_nobody_lives_forever_modifier:0 "§GAchievement - Nobody Lives Forever§!"
+ achievement_nobody_lives_forever_modifier_desc:0 "As Fashros, convert the entire Jasuan region to Tonmo."
+
+ #Majestaz' Dream
+ achievement_majestaz_dream_title:0 "£adm£Achievement - §YMajestaz' Dream§!"
+ achievement_majestaz_dream_desc:0 "	As New Pexamol, conquer Oppia, Laglon, Ga Xal and Pextoglazia."
+ achievement_majestaz_dream_modifier:0 "§GAchievement - Majestaz' Dream§!"
+ achievement_majestaz_dream_modifier_desc:0 "	As New Pexamol, conquer Oppia, Laglon, Ga Xal and Pextoglazia."
+
+ #The True Lathvyite
+ achievement_the_true_lathvyite_title:0 "£adm£Achievement - §YThe True Lathvyite§!"
+ achievement_the_true_lathvyite_desc:0 "As Ordica, own Pomlen and have Pextoglazia not exist by 220."
+ achievement_the_true_lathvyite_modifier:0 "§GAchievement - The True Lathvyite§!"
+ achievement_the_true_lathvyite_modifier_desc:0 "As Ordica, own Pomlen and have Pextoglazia not exist by 220."
+
+ #Yabonian Spies
+ achievement_yabonian_spies_title:0 "£adm£Achievement - §YYabonian Spies§!"
+ achievement_yabonian_spies_desc:0 "As Yabonia, have spy network of size 100 in at least 6 countries."
+ achievement_yabonian_spies_modifier:0 "§GAchievement - Yabonian Spies§!"
+ achievement_yabonian_spies_modifier_desc:0 "As Yabonia, have spy network of size 100 in at least 6 countries."
+
+ #Crusader
+ achievement_crusader_title:0 "£adm£Achievement - §YCrusader§!"
+ achievement_crusader_desc:0 "As Yabonia, own Anmoea and have Fashros not exist without converting to Tonmo."
+ achievement_crusader_modifier:0 "§GAchievement - Crusader§!"
+ achievement_crusader_modifier_desc:0 "As Yabonia, own Anmoea and have Fashros not exist without converting to Tonmo."
+
+ #Third Time's the Charm
+ achievement_third_times_the_charm_title:0 "£adm£Achievement - §YThird Time's the Charm§!"
+ achievement_third_times_the_charm_desc:0 "As Sixan, form Ga Xal and own all of Ga Xal as core provinces."
+ achievement_third_times_the_charm_modifier:0 "§GAchievement - Third Time's the Charm§!"
+ achievement_third_times_the_charm_modifier_desc:0 "As Sixan, form Ga Xal and own all of Ga Xal as core provinces."
+
+ #Never Trust an Oppian
+ achievement_never_trust_an_oppian_title:0 "£adm£Achievement - §YNever Trust an Oppian§!"
+ achievement_never_trust_an_oppian_desc:0 "As the Crown Kingdom, form Oppia and restore the empire."
+ achievement_never_trust_an_oppian_modifier:0 "§GAchievement - Never Trust an Oppian§!"
+ achievement_never_trust_an_oppian_modifier_desc:0 "As the Crown Kingdom, form Oppia and restore the empire."
+
+ #Never Trust a Jasuan
+ achievement_never_trust_a_jasuan_title:0 "£adm£Achievement - §YNever Trust a Jasuan§!"
+ achievement_never_trust_a_jasuan_desc:0 "As Kinvirel, stay Eastern Gomic, form Jasua and own Xon, Quanex and Pomlen."
+ achievement_never_trust_a_jasuan_modifier:0 "§GAchievement - Never Trust a Jasuan§!"
+ achievement_never_trust_a_jasuan_modifier_desc:0 "As Kinvirel, stay Eastern Gomic, form Jasua and own Xon, Quanex and Pomlen."
+
+ #Warrior Spirit
+ achievement_warrior_spirit_title:0 "£adm£Achievement - §YWarrior Spirit§!"
+ achievement_warrior_spirit_desc:0 "Form Oppia as Fona."
+ achievement_warrior_spirit_modifier:0 "§GAchievement - Warrior Spirit§!"
+ achievement_warrior_spirit_modifier_desc:0 "Form Oppia as Fona."
+
+ #Mother Anarchy Loves her Sons
+ achievement_mother_anarchy_loves_her_sons_title:0 "£adm£Achievement - §YMother Anarchy Loves her Sons§!"
+ achievement_mother_anarchy_loves_her_sons_desc:0 "Have 1000 development as a Makyan anarchic nation without reforming your nation."
+ achievement_mother_anarchy_loves_her_sons_modifier:0 "§GAchievement - Mother Anarchy Loves her Sons§!"
+ achievement_mother_anarchy_loves_her_sons_modifier_desc:0 "Have 1000 development as a Makyan anarchic nation without reforming your nation."
+
+ #Mission Impozumol
+ achievement_mission_impozumol_title:0 "£adm£Achievement - §YMission Impozumol§!"
+ achievement_mission_impozumol_desc:0 "As Nozumol, survive until 250."
+ achievement_mission_impozumol_modifier:0 "§GAchievement - Mission Impozumol§!"
+ achievement_mission_impozumol_modifier_desc:0 "As Nozumol, survive until 250."

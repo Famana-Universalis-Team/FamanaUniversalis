@@ -1,20 +1,20 @@
-namespace = famana_debug
+namespace = fdebug
 
 country_event = {
-	id = famana_debug.1
-	title = famana_debug.1.t
+	id = fdebug.1
+	title = fdebug.1.t
 	picture = BATTLE_eventPicture
-	desc = famana_debug.1_desc
+	desc = fdebug.1_desc
 	
 	is_triggered_only = yes
 
 	option = {
-		name = famana_debug.1.a
+		name = fdebug.1.a
 		ai_chance = { factor = 1000 }
 		highlight = yes
 	}
 	option = {
-		name = famana_debug.1.b
+		name = fdebug.1.b
 		ai_chance = { factor = 1 }
 		add_country_modifier = {
 			name = famana_debug_convert
@@ -22,28 +22,28 @@ country_event = {
 		}
 	}
 	option = {
-		name = famana_debug.1.c
+		name = fdebug.1.c
 		ai_chance = { factor = 1 }
 		every_owned_province = {
 			change_religion = ROOT
 		}
 	}
 	option = {
-		name = famana_debug.1.d
+		name = fdebug.1.d
 		ai_chance = { factor = 1 }
 		every_province = {
 			cede_province = ROOT
 		}
 	}
 	option = {
-		name = famana_debug.1.e
+		name = fdebug.1.e
 		ai_chance = { factor = 1 }
 		every_owned_province = {
 			add_core = ROOT
 		}
 	}
 	option = {
-		name = famana_debug.1.f
+		name = fdebug.1.f
 		ai_chance = { factor = 1 }
 		every_province = {
 			limit = {
@@ -55,7 +55,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = famana_debug.1.g
+		name = fdebug.1.g
 		ai_chance = { factor = 1 }
 		every_country = {
 			limit = {
@@ -69,18 +69,23 @@ country_event = {
 		}
 	}
 	option = {
-		name = famana_debug.1.h
+		name = fdebug.1.h
 		ai_chance = { factor = 1 }
 		every_country = {
 			change_religion = lathvy
 		}
 	}
 	option = {
-		name = famana_debug.1.j
+		name = fdebug.1.j
 		ai_chance = { factor = 1 }
 		add_country_modifier = {
 			name = midgame_crisis
 			duration = 36500
 		}
+	}
+	option = {
+		name = fdebug.1.i
+		ai_chance = { factor = 1 }
+		set_country_flag = debug_achievements
 	}
 }

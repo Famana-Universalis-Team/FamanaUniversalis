@@ -3,17 +3,27 @@ country_decisions = {
 	achievement_from_the_ashes = {
 		major = yes
 		potential = {
-			ironman = yes
 			OR = {
-				tag = MRS
-				tag = MOR
+				AND = {
+					normal_or_historical_nations = yes
+					normal_province_values = yes
+					ironman = yes
+					start_date = 212.6.6
+					NOT = { num_of_custom_nations = 1 }
+					ai = no
+					OR = {
+						tag = MRS
+						AND = {
+							tag = MOR
+							was_tag = MRS
+						}
+					}
+				}
+				has_country_flag = debug_achievements
 			}
-		}
-		provinces_to_highlight = {
-			region = south_xalia_region
-			region = east_xalia_region
-			region = north_xalia_region
-			region = moria_region
+			NOT = {
+				has_country_modifier = achievement_from_the_ashes_modifier
+			}
 		}
 		allow = {
 			was_tag = MRS
@@ -23,15 +33,25 @@ country_decisions = {
 			}
 			custom_trigger_tooltip = {
 				tooltip = MORIA_ACH_TT
-				num_of_owned_provinces_with = {
-					value = 120
+				south_xalia_region = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
 					religion = morian
-					OR = {
-						region = south_xalia_region
-						region = east_xalia_region
-						region = north_xalia_region
-						region = moria_region
-					}
+				}
+				east_xalia_region = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+					religion = morian
+				}
+				north_xalia_region = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+					religion = morian
+				}
+				moria_region = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+					religion = morian
 				}
 			}
 		}
@@ -49,10 +69,20 @@ country_decisions = {
 	achievement_servant_of_delk = {
 		major = yes
 		potential = {
-			ironman = yes
 			OR = {
-				tag = DEL
-				was_tag = DEL
+				AND = {
+					normal_or_historical_nations = yes
+					normal_province_values = yes
+					ironman = yes
+					start_date = 212.6.6
+					NOT = { num_of_custom_nations = 1 }
+					ai = no
+					tag = DEL
+				}
+				has_country_flag = debug_achievements
+			}
+			NOT = {
+				has_country_modifier = achievement_servant_of_delk_modifier
 			}
 		}
 		allow = {
@@ -83,10 +113,23 @@ country_decisions = {
 	achievement_diaspora = {
 		major = yes
 		potential = {
-			ironman = yes
 			OR = {
-				tag = YTB
-				was_tag = YTB
+				AND = {
+					normal_or_historical_nations = yes
+					normal_province_values = yes
+					ironman = yes
+					start_date = 212.6.6
+					NOT = { num_of_custom_nations = 1 }
+					ai = no
+					OR = {
+						tag = YTB
+						was_tag = YTB
+					}
+				}
+				has_country_flag = debug_achievements
+			}
+			NOT = {
+				has_country_modifier = achievement_diaspora_modifier
 			}
 		}
 		allow = {
@@ -111,8 +154,21 @@ country_decisions = {
 	achievement_rpw = {
 		major = yes
 		potential = {
-			ironman = yes
-			tag = FAS
+			OR = {
+				AND = {
+					normal_or_historical_nations = yes
+					normal_province_values = yes
+					ironman = yes
+					start_date = 212.6.6
+					NOT = { num_of_custom_nations = 1 }
+					ai = no
+					tag = FAS
+				}
+				has_country_flag = debug_achievements
+			}
+			NOT = {
+				has_country_modifier = achievement_rpw_modifier
+			}
 		}
 		allow = {
 			owns_all_provinces = {
@@ -138,8 +194,21 @@ country_decisions = {
 	achievement_for_the_clouds = {
 		major = yes
 		potential = {
-			ironman = yes
-			tag = FAS
+			OR = {
+				AND = {
+					normal_or_historical_nations = yes
+					normal_province_values = yes
+					ironman = yes
+					start_date = 212.6.6
+					NOT = { num_of_custom_nations = 1 }
+					ai = no
+					tag = FAS
+				}
+				has_country_flag = debug_achievements
+			}
+			NOT = {
+				has_country_modifier = achievement_for_the_clouds_modifier
+			}
 		}
 		allow = {
 			custom_trigger_tooltip = {
@@ -156,6 +225,623 @@ country_decisions = {
 		effect = {
 			add_country_modifier = {
 				name = achievement_for_the_clouds_modifier
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	achievement_bad_boy = {
+		major = yes
+		potential = {
+			OR = {
+				AND = {
+					normal_or_historical_nations = yes
+					normal_province_values = yes
+					ironman = yes
+					start_date = 212.6.6
+					NOT = { num_of_custom_nations = 1 }
+					ai = no
+					tag = MOX
+				}
+				has_country_flag = debug_achievements
+			}
+			NOT = {
+				has_country_modifier = achievement_bad_boy_modifier
+			}
+		}
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = MOX_BB_TT
+				religion_group = lathvy_group
+				NOT = {
+					piety = -0.99
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = achievement_bad_boy_modifier
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	achievement_i_go_yes_forever = {
+		major = yes
+		potential = {
+			OR = {
+				AND = {
+					normal_or_historical_nations = yes
+					normal_province_values = yes
+					ironman = yes
+					start_date = 212.6.6
+					NOT = { num_of_custom_nations = 1 }
+					ai = no
+					tag = BVA
+				}
+				has_country_flag = debug_achievements
+			}
+			NOT = {
+				has_country_modifier = achievement_i_go_yes_forever_modifier
+			}
+		}
+		allow = {
+			owns_all_provinces = {
+				region = maky_region
+				NOT = {
+					is_empty = yes
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = achievement_i_go_yes_forever_modifier
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	achievement_get_rial = {
+		major = yes
+		potential = {
+			OR = {
+				AND = {
+					normal_or_historical_nations = yes
+					normal_province_values = yes
+					ironman = yes
+					start_date = 212.6.6
+					NOT = { num_of_custom_nations = 1 }
+					ai = no
+					tag = GET
+				}
+				has_country_flag = debug_achievements
+			}
+			NOT = {
+				has_country_modifier = achievement_get_rial_modifier
+			}
+		}
+		allow = {
+			5041 = {
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = achievement_get_rial_modifier
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	achievement_tee_spilled = {
+		major = yes
+		potential = {
+			OR = {
+				AND = {
+					normal_or_historical_nations = yes
+					normal_province_values = yes
+					ironman = yes
+					start_date = 212.6.6
+					NOT = { num_of_custom_nations = 1 }
+					ai = no
+					tag = DEL
+				}
+				has_country_flag = debug_achievements
+			}
+			NOT = {
+				has_country_modifier = achievement_tee_spilled_modifier
+			}
+		}
+		allow = {
+			unnamed_area_39 = {
+				type = all
+				controlled_by = ROOT
+				devastation	= 100
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = achievement_tee_spilled_modifier
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	achievement_sweet_revenge = {
+		major = yes
+		potential = {
+			OR = {
+				AND = {
+					normal_or_historical_nations = yes
+					normal_province_values = yes
+					ironman = yes
+					start_date = 212.6.6
+					NOT = { num_of_custom_nations = 1 }
+					ai = no
+					OR = {
+						tag = NAK
+						AND = {
+							tag = ARS
+							was_tag = NAK
+						}
+					}
+				}
+				has_country_flag = debug_achievements
+			}
+			NOT = {
+				has_country_modifier = achievement_sweet_revenge_modifier
+			}
+		}
+		allow = {
+			was_tag = NAK
+			tag = ARS
+			aresia_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			jasua_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			unnamed_area_39 = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			unnamed_area_44 = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			unnamed_area_45 = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			unnamed_area_35 = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			unnamed_area_48 = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			unnamed_area_33 = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			unnamed_area_56 = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			unnamed_area_32 = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			unnamed_area_52 = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			unnamed_area_30 = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			geccis_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			unnamed_area_29 = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = achievement_sweet_revenge_modifier
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	achievement_holk_smash = {
+		major = yes
+		potential = {
+			OR = {
+				AND = {
+					normal_or_historical_nations = yes
+					normal_province_values = yes
+					ironman = yes
+					start_date = 212.6.6
+					NOT = { num_of_custom_nations = 1 }
+					ai = no
+					tag = HLK
+				}
+				has_country_flag = debug_achievements
+			}
+			NOT = {
+				has_country_modifier = achievement_holk_smash_modifier
+			}
+		}
+		allow = {
+			num_of_artillery = 100
+		}
+		effect = {
+			add_country_modifier = {
+				name = achievement_holk_smash_modifier
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	achievement_malding = {
+		major = yes
+		potential = {
+			OR = {
+				AND = {
+					normal_or_historical_nations = yes
+					normal_province_values = yes
+					ironman = yes
+					start_date = 212.6.6
+					NOT = { num_of_custom_nations = 1 }
+					ai = no
+					culture_group = Maldikian
+				}
+				has_country_flag = debug_achievements
+			}
+			NOT = {
+				has_country_modifier = achievement_malding_modifier
+			}
+		}
+		allow = {
+			revanchism = 100
+		}
+		effect = {
+			add_country_modifier = {
+				name = achievement_malding_modifier
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	achievement_1984 = {
+		major = yes
+		potential = {
+			OR = {
+				AND = {
+					normal_or_historical_nations = yes
+					normal_province_values = yes
+					ironman = yes
+					start_date = 212.6.6
+					NOT = { num_of_custom_nations = 1 }
+					ai = no
+					tag = ORM
+				}
+				has_country_flag = debug_achievements
+			}
+			NOT = {
+				has_country_modifier = achievement_1984_modifier
+			}
+		}
+		allow = {
+			western_naravam_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			eastern_naravam_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			5203 = {
+				controlled_by = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = achievement_1984_modifier
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	achievement_back_with_a_vengeance = {
+		major = yes
+		potential = {
+			OR = {
+				AND = {
+					normal_or_historical_nations = yes
+					normal_province_values = yes
+					ironman = yes
+					start_date = 212.6.6
+					NOT = { num_of_custom_nations = 1 }
+					ai = no
+					OR = {
+						tag = YTB
+						AND = {
+							tag = HVK
+							was_tag = YTB
+						}
+					}
+				}
+				has_country_flag = debug_achievements
+			}
+			NOT = {
+				has_country_modifier = achievement_back_with_a_vengeance_modifier
+			}
+		}
+		allow = {
+			was_tag = YTB
+			tag = HVK
+		}
+		effect = {
+			add_country_modifier = {
+				name = achievement_back_with_a_vengeance_modifier
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	achievement_blood_red_moon = {
+		major = yes
+		potential = {
+			OR = {
+				AND = {
+					normal_or_historical_nations = yes
+					normal_province_values = yes
+					ironman = yes
+					start_date = 212.6.6
+					NOT = { num_of_custom_nations = 1 }
+					ai = no
+					OR = {
+						tag = TYD
+						AND = {
+							tag = EST
+							was_tag = TYD
+						}
+					}
+				}
+				has_country_flag = debug_achievements
+			}
+			NOT = {
+				has_country_modifier = achievement_blood_red_moon_modifier
+			}
+		}
+		allow = {
+			was_tag = TYD
+			tag = EST
+			custom_trigger_tooltip = {
+				tooltip = blood_red_tooltip
+				NOT = {
+					any_province = {
+						OR = {
+							area = bohora_area
+							area = kachik_area
+						}
+						culture = Kachik
+					}
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = achievement_blood_red_moon_modifier
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	achievement_znestal = {
+		major = yes
+		potential = {
+			OR = {
+				AND = {
+					normal_or_historical_nations = yes
+					normal_province_values = yes
+					ironman = yes
+					start_date = 212.6.6
+					NOT = { num_of_custom_nations = 1 }
+					ai = no
+					tag = ZNE
+				}
+				has_country_flag = debug_achievements
+			}
+			NOT = {
+				has_country_modifier = achievement_znestal_modifier
+			}
+		}
+		allow = {
+			estal = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+				NOT = {
+					is_empty = yes
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = achievement_znestal_modifier
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	achievement_nobody_lives_forever = {
+		major = yes
+		potential = {
+			OR = {
+				AND = {
+					normal_or_historical_nations = yes
+					normal_province_values = yes
+					ironman = yes
+					start_date = 212.6.6
+					NOT = { num_of_custom_nations = 1 }
+					ai = no
+					tag = FAS
+				}
+				has_country_flag = debug_achievements
+			}
+			NOT = {
+				has_country_modifier = achievement_nobody_lives_forever_modifier
+			}
+		}
+		allow = {
+			jasua_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+				religion = tonmo
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = achievement_nobody_lives_forever_modifier
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	achievement_never_trust_an_oppian = {
+		major = yes
+		potential = {
+			OR = {
+				AND = {
+					normal_or_historical_nations = yes
+					normal_province_values = yes
+					ironman = yes
+					start_date = 212.6.6
+					NOT = { num_of_custom_nations = 1 }
+					ai = no
+					OR = {
+						tag = TCK
+						AND = {
+							tag = OPP
+							was_tag = TCK
+						}
+					}
+				}
+				has_country_flag = debug_achievements
+			}
+			NOT = {
+				has_country_modifier = achievement_never_trust_an_oppian_modifier
+			}
+		}
+		allow = {
+			tag = OPP
+			was_tag = TCK
+			custom_trigger_tooltip = {
+				tooltip = opptck_ach_tt
+				has_country_flag = opp_empire
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = achievement_never_trust_an_oppian_modifier
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	achievement_majestaz_dream = {
+		major = yes
+		potential = {
+			OR = {
+				AND = {
+					normal_or_historical_nations = yes
+					normal_province_values = yes
+					ironman = yes
+					start_date = 212.6.6
+					NOT = { num_of_custom_nations = 1 }
+					ai = no
+					tag = NPX
+				}
+				has_country_flag = debug_achievements
+			}
+			NOT = {
+				has_country_modifier = achievement_majestaz_dream_modifier
+			}
+		}
+		allow = {
+			oppia_superregion = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+				NOT = {
+					is_empty = yes
+				}
+			}
+			ga_xal_superregion = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+				NOT = {
+					is_empty = yes
+				}
+			}
+			laglon_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+				NOT = {
+					is_empty = yes
+				}
+			}
+			lomea_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			walara_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			pextoglazia_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = achievement_majestaz_dream_modifier
 				duration = -1
 			}
 		}
