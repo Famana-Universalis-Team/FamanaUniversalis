@@ -9,10 +9,27 @@ base_manpower = 1
 native_size = 20
 native_ferocity = 1
 native_hostileness = 1
-capital = "Quaranitte"
+capital = "UNNAMED"
 is_city = no
 
+add_permanent_province_modifier = {
+	name = settle_14
+	duration = -1
+}
+
 discovered_by = north_antebari_tech_gr
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

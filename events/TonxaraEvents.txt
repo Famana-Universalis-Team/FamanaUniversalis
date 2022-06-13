@@ -3286,18 +3286,28 @@ country_event = {
                     size = 1
                 }
             }
-            random_owned_province = {
-                spawn_rebels = {
-                    type = nationalist_rebels
-                    size = 1
+            if = {
+                limit = {
+                    total_development = 700
+                }
+                random_owned_province = {
+                    spawn_rebels = {
+                        type = nationalist_rebels
+                        size = 1
+                    }
                 }
             }
-            #random_owned_province = {
-            #    spawn_rebels = {
-            #        type = nationalist_rebels
-            #        size = 1
-            #    }
-            #}
+            if = {
+                limit = {
+                    total_development = 1400
+                }
+                random_owned_province = {
+                    spawn_rebels = {
+                        type = nationalist_rebels
+                        size = 1
+                    }
+                }
+            }
         }
     }
 
@@ -3332,10 +3342,26 @@ country_event = {
                     size = 2
                 }
             }
-            random_owned_province = {
-                spawn_rebels = {
-                    type = nationalist_rebels
-                    size = 2
+            if = {
+                limit = {
+                    total_development = 700
+                }
+                random_owned_province = {
+                    spawn_rebels = {
+                        type = nationalist_rebels
+                        size = 2
+                    }
+                }
+            }
+            if = {
+                limit = {
+                    total_development = 1400
+                }
+                random_owned_province = {
+                    spawn_rebels = {
+                        type = nationalist_rebels
+                        size = 2
+                    }
                 }
             }
         }
@@ -3372,10 +3398,26 @@ country_event = {
                     size = 3
                 }
             }
-            random_owned_province = {
-                spawn_rebels = {
-                    type = nationalist_rebels
-                    size = 3
+            if = {
+                limit = {
+                    total_development = 700
+                }
+                random_owned_province = {
+                    spawn_rebels = {
+                        type = nationalist_rebels
+                        size = 3
+                    }
+                }
+            }
+            if = {
+                limit = {
+                    total_development = 1400
+                }
+                random_owned_province = {
+                    spawn_rebels = {
+                        type = nationalist_rebels
+                        size = 3
+                    }
                 }
             }
         }
