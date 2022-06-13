@@ -11,7 +11,7 @@ collapse_of_pextoglazia = {
     }
 	progress = {
         modifier = {
-            factor = 0.10
+            factor = 0.125
             is_year = 215
         }
         modifier = {
@@ -30,7 +30,7 @@ collapse_of_pextoglazia = {
             }
         }
         modifier = {
-            factor = 1
+            factor = 0.375
             is_year = 275
         }
     }
