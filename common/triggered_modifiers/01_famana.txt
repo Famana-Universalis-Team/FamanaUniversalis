@@ -83,7 +83,10 @@ tonmo_reformed_modifier = {
     }
 
     trigger = {
-        has_global_flag = tonmo_religion_reformed_flag
+        custom_trigger_tooltip = {
+            tooltip = tonmo_reformation_trig_modifier_tooltip
+            has_global_flag = tonmo_religion_reformed_flag
+        }
     }
 
     global_tax_modifier	= 0.10
