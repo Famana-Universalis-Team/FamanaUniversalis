@@ -849,4 +849,339 @@ country_decisions = {
 			factor = 1
 		}
 	}
+	achievement_the_true_lathvyite = {
+		major = yes
+		potential = {
+			OR = {
+				AND = {
+					normal_or_historical_nations = yes
+					normal_province_values = yes
+					ironman = yes
+					start_date = 212.6.6
+					NOT = { num_of_custom_nations = 1 }
+					ai = no
+					tag = ORC
+				}
+				has_country_flag = debug_achievements
+			}
+			NOT = {
+				has_country_modifier = achievement_the_true_lathvyite_modifier
+			}
+		}
+		allow = {
+			NOT = {
+				is_year = 221
+			}
+			NOT = {
+				exists = PEX
+			}
+			owns = 5337
+		}
+		effect = {
+			add_country_modifier = {
+				name = achievement_the_true_lathvyite_modifier
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	achievement_yabonian_spies = {
+		major = yes
+		potential = {
+			OR = {
+				AND = {
+					normal_or_historical_nations = yes
+					normal_province_values = yes
+					ironman = yes
+					start_date = 212.6.6
+					NOT = { num_of_custom_nations = 1 }
+					ai = no
+					tag = YAB
+				}
+				has_country_flag = debug_achievements
+			}
+			NOT = {
+				has_country_modifier = achievement_yabonian_spies_modifier
+			}
+		}
+		allow = {
+			calc_true_if = {
+				all_neighbor_country = {
+					has_spy_network_from = {
+						who = YAB
+						value = 100
+					}
+				}
+				amount = 6
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = achievement_yabonian_spies_modifier
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	achievement_third_times_the_charm = {
+		major = yes
+		potential = {
+			OR = {
+				AND = {
+					normal_or_historical_nations = yes
+					normal_province_values = yes
+					ironman = yes
+					start_date = 212.6.6
+					NOT = { num_of_custom_nations = 1 }
+					ai = no
+					OR = {
+						tag = SIX
+						AND = {
+							tag = GAX
+							was_tag = SIX
+						}
+					}
+				}
+				has_country_flag = debug_achievements
+			}
+			NOT = {
+				has_country_modifier = achievement_third_times_the_charm_modifier
+			}
+		}
+		allow = {
+			was_tag = SIX
+			tag = GAX
+			south_xalia_region = {
+				type = all
+				owned_by = ROOT
+			}
+			east_xalia_region = {
+				type = all
+				owned_by = ROOT
+			}
+			north_xalia_region = {
+				type = all
+				owned_by = ROOT
+			}
+			moria_region = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = achievement_third_times_the_charm_modifier
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	achievement_crusader = {
+		major = yes
+		potential = {
+			OR = {
+				AND = {
+					normal_or_historical_nations = yes
+					normal_province_values = yes
+					ironman = yes
+					start_date = 212.6.6
+					NOT = { num_of_custom_nations = 1 }
+					ai = no
+					OR = {
+						tag = YAB
+						AND = {
+							tag = JAS
+							was_tag = YAB
+						}
+					}
+				}
+				has_country_flag = debug_achievements
+			}
+			NOT = {
+				has_country_modifier = achievement_crusader_modifier
+			}
+		}
+		allow = {
+			NOT = {
+				religion = tonmo
+			}
+			NOT = {
+				exists = FAS
+			}
+			owns_core_province = 5949
+		}
+		effect = {
+			add_country_modifier = {
+				name = achievement_crusader_modifier
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	achievement_never_trust_a_jasuan = {
+		major = yes
+		potential = {
+			OR = {
+				AND = {
+					normal_or_historical_nations = yes
+					normal_province_values = yes
+					ironman = yes
+					start_date = 212.6.6
+					NOT = { num_of_custom_nations = 1 }
+					ai = no
+					OR = {
+						tag = KIN
+						AND = {
+							tag = JAS
+							was_tag = KIN
+						}
+					}
+				}
+				has_country_flag = debug_achievements
+			}
+			NOT = {
+				has_country_modifier = achievement_never_trust_a_jasuan_modifier
+			}
+		}
+		allow = {
+			tag = JAS
+			was_tag = KIN
+			religion = egr
+			owns_core_province = 5388
+			owns_core_province = 5337
+			owns_core_province = 5066
+		}
+		effect = {
+			add_country_modifier = {
+				name = achievement_never_trust_a_jasuan_modifier
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	achievement_warrior_spirit = {
+		major = yes
+		potential = {
+			OR = {
+				AND = {
+					normal_or_historical_nations = yes
+					normal_province_values = yes
+					ironman = yes
+					start_date = 212.6.6
+					NOT = { num_of_custom_nations = 1 }
+					ai = no
+					OR = {
+						tag = FNC
+						AND = {
+							tag = OPP
+							was_tag = FNC
+						}
+					}
+				}
+				has_country_flag = debug_achievements
+			}
+			NOT = {
+				has_country_modifier = achievement_warrior_spirit_modifier
+			}
+		}
+		allow = {
+			tag = OPP
+			was_tag = FNC
+		}
+		effect = {
+			add_country_modifier = {
+				name = achievement_warrior_spirit_modifier
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	achievement_mother_anarchy_loves_her_sons = {
+		major = yes
+		potential = {
+			OR = {
+				AND = {
+					normal_or_historical_nations = yes
+					normal_province_values = yes
+					ironman = yes
+					start_date = 212.6.6
+					NOT = { num_of_custom_nations = 1 }
+					ai = no
+					government = anarchy
+				}
+				has_country_flag = debug_achievements
+			}
+			NOT = {
+				has_country_modifier = achievement_mother_anarchy_loves_her_sons_modifier
+			}
+		}
+		allow = {
+			government = anarchy
+			total_development = 1000
+		}
+		effect = {
+			add_country_modifier = {
+				name = achievement_mother_anarchy_loves_her_sons_modifier
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	achievement_mission_impozumol = {
+		major = yes
+		potential = {
+			OR = {
+				AND = {
+					normal_or_historical_nations = yes
+					normal_province_values = yes
+					ironman = yes
+					start_date = 212.6.6
+					NOT = { num_of_custom_nations = 1 }
+					ai = no
+					tag = NOZ
+				}
+				has_country_flag = debug_achievements
+			}
+			NOT = {
+				has_country_modifier = achievement_mission_impozumol_modifier
+			}
+		}
+		allow = {
+			is_year = 250
+			NOT = {
+				is_at_war = yes
+			}
+			nuzoto_area = {
+				type = all
+				owned_by = ROOT
+			}
+			toza_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = achievement_mission_impozumol_modifier
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
 }
