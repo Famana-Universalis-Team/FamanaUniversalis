@@ -1404,6 +1404,7 @@ country_event = {
 country_event = {
 	id = pexto.38
 	hidden = yes
+	fire_only_once = yes
 
 	trigger = {
 		NOT = {
@@ -1423,6 +1424,31 @@ country_event = {
 
 	option = {
 		name = pexto.38.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+#Kill pomlen rebels
+country_event = {
+	id = pexto.39
+	hidden = yes
+	fire_only_once = yes
+
+	trigger = {
+		tag = POM
+		NOT = {
+			exists = PEX
+		}
+	}
+
+	immediate = {
+		5337 = {
+			clear_rebels = yes
+		}
+	}
+
+	option = {
+		name = pexto.39.a
 		ai_chance = { factor = 1 }
 	}
 }
