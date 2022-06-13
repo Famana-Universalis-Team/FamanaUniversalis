@@ -3921,6 +3921,7 @@ on_province_religion_converted = {
 	if = {
 		limit = {
 			culture = Bilik_C
+			continent = antebar
 			owner = {
 				religion = tonmo
 			}

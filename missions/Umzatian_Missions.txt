@@ -609,7 +609,11 @@ umz_3 = {
        
         trigger = {
 			owns_all_provinces = {
-				area = unnamed_area_14
+				OR = {
+					area = unnamed_area_14
+					area = griglom_area
+					area = west_feniki
+				}
 				NOT = {
 					is_empty = yes
 				}
