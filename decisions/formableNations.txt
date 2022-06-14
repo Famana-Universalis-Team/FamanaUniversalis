@@ -2467,6 +2467,17 @@ country_decisions = {
 			set_capital = 5264
 			if = {
 				limit = {
+					5694 = {
+						is_empty = yes
+					}
+				}
+				5694 = {
+					add_core = ROOT
+					cede_province = ROOT
+				}
+			}
+			if = {
+				limit = {
 					AND = {
 						has_custom_ideas = no
 						NOT = {
