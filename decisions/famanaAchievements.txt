@@ -1156,6 +1156,12 @@ country_decisions = {
 					NOT = { num_of_custom_nations = 1 }
 					ai = no
 					tag = NOZ
+					NOT = {
+						was_tag = FAS
+					}
+					NOT = {
+						is_year = 251
+					}
 				}
 				has_country_flag = debug_achievements
 			}
@@ -1168,6 +1174,7 @@ country_decisions = {
 			NOT = {
 				is_at_war = yes
 			}
+			is_free_or_tributary_trigger = yes
 			nuzoto_area = {
 				type = all
 				owned_by = ROOT
