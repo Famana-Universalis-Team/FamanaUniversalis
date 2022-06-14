@@ -2629,9 +2629,6 @@ country_event = { #Aresian religious resistance
                     NOT = {
                         is_empty = yes
                     }
-                    NOT = {
-                        religion = tonmo
-                    }
                     region = aresia_region
                     OR = {
                         culture = Bilik_C
@@ -2682,9 +2679,6 @@ country_event = { #Vanoman religious resistance
                 limit = {
                     NOT = {
                         is_empty = yes
-                    }
-                    NOT = {
-                        religion = tonmo
                     }
                     region = vanoma_region
                 }
