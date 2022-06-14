@@ -138,7 +138,6 @@ country_decisions = {
 			}
 		}
 		effect = {
-			add_historical_friend = MSH
 			restore_country_name = yes
 			change_tag = VDY
 			if = {
@@ -166,6 +165,10 @@ country_decisions = {
 			}
 			add_prestige = 10
 			#swap_non_generic_missions = yes
+			add_historical_friend = MSH
+			MSH = {
+				add_historical_friend = VDY
+			}
 		}
 		ai_will_do = {
 			factor = 1

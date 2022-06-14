@@ -184,6 +184,13 @@ country_event = {
         }
     }
 
+    immediate = {
+        add_historical_friend = KMI
+        KMI = {
+            add_historical_friend = FSB
+        }
+    }
+
     mean_time_to_happen = {
         days = 10
     }

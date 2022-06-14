@@ -189,6 +189,35 @@ country_event = { #disaster start event
     immediate = {
         hidden_effect = {
             set_country_flag = tonxaraDisasterHappened
+            if = {
+                limit = {
+                    ai = yes
+                }
+                if = {
+                    limit = {
+                        tag = NHM
+                    }
+                    random = {
+                        chance = 5
+                        set_country_flag = noRebelsTonxara
+                    }
+                }
+                if = {
+                    limit = {
+                        tag = JFX
+                    }
+                    random = {
+                        chance = 25
+                        set_country_flag = noRebelsTonxara
+                    }
+                }
+                else = {
+                    random = {
+                        chance = 10
+                        set_country_flag = noRebelsTonxara
+                    }
+                }
+            }
         }
     }
 
@@ -3272,6 +3301,9 @@ country_event = {
         NOT = {
             stability = 3
         }
+        NOT = {
+            has_country_flag = noRebelsTonxara
+        }
     }
 
     #mean_time_to_happen = {
@@ -3280,10 +3312,15 @@ country_event = {
 
     immediate = {
         hidden_effect = {
-            random_owned_province = {
-                spawn_rebels = {
-                    type = nationalist_rebels
-                    size = 1
+            if = {
+                limit = {
+                    total_development = 300
+                }
+                random_owned_province = {
+                    spawn_rebels = {
+                        type = nationalist_rebels
+                        size = 1
+                    }
                 }
             }
             if = {
@@ -3332,14 +3369,22 @@ country_event = {
         NOT = {
             stability = 2
         }
+        NOT = {
+            has_country_flag = noRebelsTonxara
+        }
     }
 
     immediate = {
         hidden_effect = {
-            random_owned_province = {
-                spawn_rebels = {
-                    type = nationalist_rebels
-                    size = 2
+            if = {
+                limit = {
+                    total_development = 300
+                }
+                random_owned_province = {
+                    spawn_rebels = {
+                        type = nationalist_rebels
+                        size = 2
+                    }
                 }
             }
             if = {
@@ -3388,14 +3433,22 @@ country_event = {
         NOT = {
             stability = 1
         }
+        NOT = {
+            has_country_flag = noRebelsTonxara
+        }
     }
 
     immediate = {
         hidden_effect = {
-            random_owned_province = {
-                spawn_rebels = {
-                    type = nationalist_rebels
-                    size = 3
+            if = {
+                limit = {
+                    total_development = 300
+                }
+                random_owned_province = {
+                    spawn_rebels = {
+                        type = nationalist_rebels
+                        size = 3
+                    }
                 }
             }
             if = {
