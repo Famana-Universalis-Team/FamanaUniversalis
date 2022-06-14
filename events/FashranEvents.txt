@@ -2614,7 +2614,7 @@ country_event = { #Aresian religious resistance
     }
 
     mean_time_to_happen = {
-        months = 8
+        months = 4
     }
 
     option = {
@@ -2632,10 +2632,7 @@ country_event = { #Aresian religious resistance
                     NOT = {
                         religion = tonmo
                     }
-                    OR = {
-                        region = aresia_region
-                        area = borlebim_area
-                    }
+                    region = aresia_region
                     OR = {
                         culture = Bilik_C
                         culture = Verkan
@@ -2664,14 +2661,14 @@ country_event = { #Vanoman religious resistance
         tag = VAN
         FAS = {
             num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-                value = 7
+                value = 4
                 region = vanoma_region
             }
         }
     }
 
     mean_time_to_happen = {
-        months = 12
+        months = 6
     }
 
     option = {
@@ -2690,7 +2687,6 @@ country_event = { #Vanoman religious resistance
                         religion = tonmo
                     }
                     region = vanoma_region
-                    culture = Vanoman
                 }
                 add_province_modifier = {
                     name = aresian_resistance_modifier

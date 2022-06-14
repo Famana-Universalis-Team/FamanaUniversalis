@@ -1452,3 +1452,92 @@ country_event = {
 		ai_chance = { factor = 1 }
 	}
 }
+
+country_event = { #pexto save launch event
+	id = pexto.40
+	hidden = yes
+	fire_only_once = yes
+
+	trigger = {
+		tag = PEX
+		ai = yes
+		was_player = no
+		NOT = { has_country_flag = pextocivilwar }
+        NOT = { has_country_flag = survived_fall }
+        NOT = { has_country_flag = pex_collapse_prevented }
+		NOT = {
+			is_year = 250
+		}
+		is_year = 220
+	}
+	
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	immediate = {
+		random = {
+			chance = 20
+			country_event = {
+				id = pexto.41
+			}
+		}
+	}
+
+	option = {
+		name = pexto.40.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = { #Disaster averted
+	id = pexto.41
+	title = pexto.41.t
+	desc = pexto.41.d
+	picture = BAD_WITH_MONARCH_eventPicture
+	is_triggered_only = yes
+	major = yes
+
+	immediate = {
+		hidden_effect = {
+			remove_country_modifier	= pexto_purge_advisors
+			remove_country_modifier	= pexto_cowardice
+			remove_country_modifier	= pexto_granted_city_rights
+			remove_country_modifier	= inner_turmoil_25
+			remove_country_modifier	= pexto_vassal_priviliges
+			remove_country_modifier = inner_turmoil_75
+			every_province = {
+				limit = {
+					OR = {
+						has_province_modifier = pexto_cultural_autonomy
+						has_province_modifier = glazian_cities
+					}
+				}
+				remove_province_modifier = pexto_cultural_autonomy
+				remove_province_modifier = glazian_cities
+			}
+			set_country_flag = pex_collapse_prevented
+			complete_mission = pex_obtain_aras_approval
+			complete_mission = pex_stabilize_the_realm
+			complete_mission = pex_defend_pextoglazia
+			complete_mission = pex_reorganize_the_army
+			complete_mission = pex_prevent_collapse
+			complete_mission = pex_subdue_the_clergy
+			complete_mission = pex_ensure_diocese_loyalty
+		}
+	}
+
+	option = {
+		name = pexto.41.a
+		ai_chance = { factor = 1 }
+		add_years_of_income	= -0.75
+		add_adm_power = -100
+		add_dip_power = -100
+		add_mil_power = -100
+		custom_tooltip = pex_prevent_collapse_tooltip
+		add_country_modifier = {
+			name = pex_averted_disaster
+			duration = 5475
+		}
+	}
+}
