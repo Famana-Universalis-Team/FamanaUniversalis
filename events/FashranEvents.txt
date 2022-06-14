@@ -2661,14 +2661,14 @@ country_event = { #Vanoman religious resistance
         tag = VAN
         FAS = {
             num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-                value = 4
+                value = 2
                 region = vanoma_region
             }
         }
     }
 
     mean_time_to_happen = {
-        months = 6
+        months = 1
     }
 
     option = {
