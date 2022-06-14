@@ -2632,12 +2632,8 @@ country_event = { #Aresian religious resistance
         hidden_effect = {
             every_province = {
                 limit = {
-                    NOT = {
-                        is_empty = yes
-                    }
                     region = aresia_region
                     OR = {
-                        culture = Bilik_C
                         culture = Verkan
                         culture = Nakoan
                     }
@@ -2683,9 +2679,6 @@ country_event = { #Vanoman religious resistance
         hidden_effect = {
             every_province = {
                 limit = {
-                    NOT = {
-                        is_empty = yes
-                    }
                     region = vanoma_region
                 }
                 add_province_modifier = {
