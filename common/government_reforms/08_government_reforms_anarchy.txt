@@ -207,7 +207,7 @@ stabilise_theocracy_reform = {
 }
 
 stabilise_horde_reform = {
-	icon = "horde_riding_highlighted"
+	icon = "horde_riding"
 	allow_normal_conversion = yes
 	potential = {
 		tag = KRS
