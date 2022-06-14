@@ -750,13 +750,19 @@ country_event = { #Emtik Rights
 		5692 = {
 			add_province_modifier = { 
 				name = emtik_rights
-				duration = -1  
+				duration = 36500
 			}
 		}
 		5691 = {
 			add_province_modifier = { 
 				name = emtik_rights
-				duration = -1  
+				duration = 36500
+			}
+		}
+        5693 = {
+			add_province_modifier = { 
+				name = emtik_rights
+				duration = 36500
 			}
 		}
 		add_country_modifier = { 
