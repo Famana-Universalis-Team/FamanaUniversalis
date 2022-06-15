@@ -750,13 +750,19 @@ country_event = { #Emtik Rights
 		5692 = {
 			add_province_modifier = { 
 				name = emtik_rights
-				duration = -1  
+				duration = 36500
 			}
 		}
 		5691 = {
 			add_province_modifier = { 
 				name = emtik_rights
-				duration = -1  
+				duration = 36500
+			}
+		}
+        5693 = {
+			add_province_modifier = { 
+				name = emtik_rights
+				duration = 36500
 			}
 		}
 		add_country_modifier = { 
@@ -1221,7 +1227,7 @@ country_event = {
     }
 
     mean_time_to_happen = {
-        years = 2
+        months = 24
     }
 
     option = { #go with kisholi
@@ -2626,15 +2632,8 @@ country_event = { #Aresian religious resistance
         hidden_effect = {
             every_province = {
                 limit = {
-                    NOT = {
-                        is_empty = yes
-                    }
-                    NOT = {
-                        religion = tonmo
-                    }
                     region = aresia_region
                     OR = {
-                        culture = Bilik_C
                         culture = Verkan
                         culture = Nakoan
                     }
@@ -2661,14 +2660,14 @@ country_event = { #Vanoman religious resistance
         tag = VAN
         FAS = {
             num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-                value = 4
+                value = 2
                 region = vanoma_region
             }
         }
     }
 
     mean_time_to_happen = {
-        months = 6
+        months = 1
     }
 
     option = {
@@ -2680,12 +2679,6 @@ country_event = { #Vanoman religious resistance
         hidden_effect = {
             every_province = {
                 limit = {
-                    NOT = {
-                        is_empty = yes
-                    }
-                    NOT = {
-                        religion = tonmo
-                    }
                     region = vanoma_region
                 }
                 add_province_modifier = {

@@ -274,6 +274,7 @@ country_event = { #Koff
                 add_base_manpower = 1
             }
             KFF = {
+                change_religion	= tonmo
                 create_general = {
                     tradition = 100
                 }

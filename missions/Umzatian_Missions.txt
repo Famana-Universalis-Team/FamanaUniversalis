@@ -468,8 +468,37 @@ umz_3 = {
 				}
 				add_permanent_claim = ROOT
 			}
+			west_feniki = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 			5257 = {
 				add_permanent_claim = ROOT
+			}
+			if = {
+				limit = {
+					5253 = {
+						is_empty = yes
+					}
+				}
+				5253 = {
+					add_core = ROOT
+					cede_province = ROOT
+				}
+			}
+			if = {
+				limit = {
+					5694 = {
+						is_empty = yes
+					}
+				}
+				5694 = {
+					add_core = ROOT
+					cede_province = ROOT
+				}
 			}
 		}
     }
@@ -523,13 +552,6 @@ umz_3 = {
        
         effect = {
 			griglom_area = {
-			limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-			add_permanent_claim = ROOT
-			}
-			west_feniki = {
 			limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
@@ -622,16 +644,6 @@ umz_3 = {
         
        
         effect = {
-			unnamed_area_14 = {
-				limit = {
-					is_empty = yes
-				}
-				create_colony = 1000
-				cede_province = ROOT
-				add_core = ROOT
-				change_culture = ROOT
-				change_religion = ROOT
-			}
 			
 			revdirom_area = {
 				limit = { 
@@ -650,9 +662,11 @@ umz_3 = {
 				add_building = fort_15th
 			}
 			unnamed_area_15 = {
-			add_permanent_claim = ROOT
+				add_permanent_claim = ROOT
 			}
-       
+			feyel_area = {
+				add_permanent_claim = ROOT
+			}
         }
 	
 	

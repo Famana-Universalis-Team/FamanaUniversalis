@@ -511,7 +511,10 @@ country_event = { #bye bye pexto
 				inherit = PEX
 			}
 		}
-		west_estal_superregion = {
+		every_province = {
+			limit = {
+				continent = estal
+			}
 			remove_core	= PEX
 		}
     }
@@ -1442,7 +1445,14 @@ country_event = {
 	}
 
 	immediate = {
-		5337 = {
+		every_province = {
+			limit = {
+				OR = {
+					region = pextoglazia_region
+					region = lomea_region
+					region = walara_region
+				}
+			}
 			clear_rebels = yes
 		}
 	}
