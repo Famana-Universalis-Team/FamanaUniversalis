@@ -130,10 +130,12 @@ country_event = {
                     is_empty = yes
                 }
             }
-            cede_province = JIB
-            add_core = JIB
-            change_culture = Jimbalan
-            change_religion = tonmo
+			6010 = { 
+				cede_province = JIB
+				add_core = JIB
+				change_culture = Jimbalan
+				change_religion = tonmo
+			}
         }
         if = {
             limit = {
@@ -141,10 +143,12 @@ country_event = {
                     is_empty = yes
                 }
             }
-            cede_province = JIB
-            add_core = JIB
-            change_culture = Jimbalan
-            change_religion = tonmo
+			6567 = {
+				cede_province = JIB
+				add_core = JIB
+				change_culture = Jimbalan
+				change_religion = tonmo
+			}
         }
         if = {
             limit = {
@@ -152,10 +156,12 @@ country_event = {
                     is_empty = yes
                 }
             }
-            cede_province = JIB
-            add_core = JIB
-            change_culture = Jimbalan
-            change_religion = tonmo
+			6552 = {
+				cede_province = JIB
+				add_core = JIB
+				change_culture = Jimbalan
+				change_religion = tonmo
+			}
         }
         JIB = { change_religion = tonmo }
 	}
