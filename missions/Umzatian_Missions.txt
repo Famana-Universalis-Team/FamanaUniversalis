@@ -923,18 +923,21 @@ umz_4 = {
        
         effect = {
 			hasia_area = {
-			limit = { 
-				is_empty = yes
+				limit = {
+					is_empty = yes
+				}
+				create_colony = 1000
+				cede_province = ROOT
+				add_core = ROOT
+				change_culture = ROOT
+				change_religion = ROOT
 			}
-			create_colony = 1000
-			cede_province = ROOT
-			add_core = ROOT
-			change_culture = ROOT
-			change_religion = ROOT
+			hasia_area = {
+				add_permanent_claim = ROOT
 			}
 			add_country_modifier = { 
-			name = umz_breach
-			duration = 3650 
+				name = umz_breach
+				duration = 3650 
 			}
 			napora_region = {
 				discover_country = ROOT
@@ -942,8 +945,6 @@ umz_4 = {
 			west_ordica_region = {
 				discover_country = ROOT
 			}
-			
-       
         }
 	
 	
@@ -977,13 +978,16 @@ umz_4 = {
        
         effect = {
 			5695 = {
-			change_culture = ROOT
-			change_religion = ROOT
-			add_core = ROOT
+				change_culture = ROOT
+				change_religion = ROOT
+				add_core = ROOT
+				add_base_tax = -3
+				add_base_production = -3
+				add_base_manpower = -3
 			}
 			add_country_modifier = { 
-			name = umz_crushed
-			duration = -1
+				name = umz_crushed
+				duration = -1
 			}
 			
        
