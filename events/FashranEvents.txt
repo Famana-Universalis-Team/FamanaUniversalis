@@ -2613,7 +2613,7 @@ country_event = { #Aresian religious resistance
         religion = aresian
         FAS = {
             num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-                value = 15
+                value = 10
                 region = aresia_region
             }
         }
@@ -2630,19 +2630,7 @@ country_event = { #Aresian religious resistance
         }
         custom_tooltip = fashros_aresian_res_tooltip
         hidden_effect = {
-            every_province = {
-                limit = {
-                    region = aresia_region
-                    OR = {
-                        culture = Verkan
-                        culture = Nakoan
-                    }
-                }
-                add_province_modifier = {
-                    name = aresian_resistance_modifier
-                    duration = 27375
-                }
-            }
+            set_global_flag = aresiaResistingTonmo
         }
         add_stability = -1
     }
@@ -2677,15 +2665,90 @@ country_event = { #Vanoman religious resistance
         }
         custom_tooltip = fashros_vanoman_res_tooltip
         hidden_effect = {
-            every_province = {
-                limit = {
-                    region = vanoma_region
-                }
-                add_province_modifier = {
-                    name = aresian_resistance_modifier
-                    duration = 18250
+            set_global_flag = vanomaResistingTonmo
+        }
+    }
+}
+
+country_event = { #ugh
+    id = fashros.34
+    title = fashros.34.t
+    desc = fashros.34.d
+    picture = ANGRY_MOB_eventPicture
+    hidden = yes
+
+    mean_time_to_happen = {
+        months = 6
+    }
+
+    trigger = {
+        tag = FAS
+        is_year = 225
+        NOT = {
+            is_year = 330
+        }
+        OR = {
+            has_global_flag = fashros_vanoman_res_tooltip
+            has_global_flag = aresiaResistingTonmo
+        }
+    }
+
+    immediate = {
+        every_owned_province = {
+            limit = {
+                OR = {
+                    AND = {
+                        culture = Bilik_C
+                        continent = estal
+                    }
+                    culture = Nakoan
+                    culture = Verkan
+                    culture = Vanoman
+                    province_id = 5693
                 }
             }
+            add_province_modifier = {
+                name = aresian_resistance_modifier
+                duration = -1
+            }
+        }
+    }
+
+    option = {
+        name = fashros.34.a
+        ai_chance = {
+            factor = 1
+        }
+    }
+}
+
+country_event = { #ugh 2
+    id = fashros.35
+    title = fashros.35.t
+    desc = fashros.35.d
+    picture = ANGRY_MOB_eventPicture
+    hidden = yes
+
+    mean_time_to_happen = {
+        months = 1
+    }
+
+    trigger = {
+        NOT = {
+            exists = FAS
+        }
+    }
+
+    immediate = {
+        every_province = {
+            remove_province_modifier = aresian_resistance_modifier
+        }
+    }
+
+    option = {
+        name = fashros.34.a
+        ai_chance = {
+            factor = 1
         }
     }
 }
