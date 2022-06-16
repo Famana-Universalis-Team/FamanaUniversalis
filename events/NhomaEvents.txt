@@ -124,6 +124,17 @@ country_event = {
 	}
 	
 	immediate = {
+        tonmo_supperregion = {
+            type = all
+            remove_core = JIB
+            remove_claim = JIB
+        }
+        every_province = {
+            limit = {
+                culture = Jimbalan
+            }
+            change_culture = Central_Nhoman
+        }
         if = {
             limit = {
                 6010 = {

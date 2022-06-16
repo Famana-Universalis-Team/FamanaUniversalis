@@ -79,7 +79,7 @@
  STATE_PATRIARCH_ALREADY_MAX_AUTH:0 "Decadence is already maximized."
  ORTHIC_NOT_CURR:0 "The '$NAME|Y$' is already our declared decree!"
  ORTHIC_NO_AUTH:0 "You need $VAL|Y$ Decadence to declare a new decree to all regions, but you only have $CURR|Y$."
- ORTHIC_DO_IT:0 "Commissioning $NAME|Y$ to all regions will remove $COST|R$ Decadence and give ($EFFECT$) until $UNTIL|Y$."
+ ORTHIC_DO_IT:0 "Commissioning $NAME|Y$ to all regions will add §R1§! Decadence and give ($EFFECT$) until $UNTIL|Y$."
  CONFIRMICON:0 "Confirm Decree Declaration"
  CONFIRMICON_TEXT:0 "$EFFECT$\nAre you sure?"
  NO_ICON_COMMISSIONED:0 "There is currently no decree declared."
