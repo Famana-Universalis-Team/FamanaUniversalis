@@ -110,7 +110,7 @@ country_event = {
 	hidden = yes
 	
 	trigger = {
-		is_year = 340
+		is_year = 360
 		NOT = {
 			exists = JIB
 		}
