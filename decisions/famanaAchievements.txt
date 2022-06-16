@@ -1119,7 +1119,11 @@ country_decisions = {
 					start_date = 212.6.6
 					NOT = { num_of_custom_nations = 1 }
 					ai = no
-					government = anarchy
+					OR = {
+						has_reform = survivor_reform
+						has_reform = city_state_union_reform
+						has_reform = apocalyptic_helvania_reform
+					}
 				}
 				has_country_flag = debug_achievements
 			}
