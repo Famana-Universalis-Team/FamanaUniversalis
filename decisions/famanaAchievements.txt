@@ -1134,7 +1134,11 @@ country_decisions = {
 		allow = {
 			custom_trigger_tooltip = {
 				tooltip = anarchy_ach_tt
-				government = anarchy
+				OR = {
+					has_reform = survivor_reform
+					has_reform = city_state_union_reform
+					has_reform = apocalyptic_helvania_reform
+				}
 			}
 			total_development = 1000
 		}
