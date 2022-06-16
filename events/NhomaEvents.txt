@@ -124,8 +124,10 @@ country_event = {
 	}
 	
 	immediate = {
-        tonmo_supperregion = {
-            type = all
+        every_province = {
+            limit = {
+                superregion = tonmo_supperregion
+            }
             remove_core = JIB
             remove_claim = JIB
         }
