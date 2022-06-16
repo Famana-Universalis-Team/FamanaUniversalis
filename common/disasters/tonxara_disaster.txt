@@ -14,6 +14,7 @@ tonxara_disaster = {
     can_start = {
         has_any_disaster = no
         has_reform = gov_tonxara
+        total_development = 150
         NOT = {
             is_year = 380
         }
