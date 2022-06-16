@@ -374,13 +374,18 @@ country_event = {
 			adm = 6
 			dip = 6
 			mil = 6
-			leader = {	name = "Syadon Noy"            	type = general	fire = 6	shock = 6	manuever = 6	siege = 6}
+		}
+		define_ruler_to_general = {
+			fire = 6
+			shock = 6
+			manuever = 6
+			siege = 6
 		}
 		if = {
 			limit = {
 				ai = yes
 			}
-			add_ruler_personality = conquerer_personality
+			add_ruler_personality = conqueror_personality
 			set_ai_personality = {
 				personality = ai_militarist
 				locked = yes
@@ -431,7 +436,7 @@ country_event = {
 	option = {
 		name = jasuaE.8.a
 		ai_chance = { factor = 1 }
-		global_manpower = 5
+		add_manpower = 5
 		add_country_modifier = {
 			name = kinvirel_exiles
 			duration = 3650
@@ -620,13 +625,18 @@ country_event = {
 			adm = 6
 			dip = 6
 			mil = 6
-			leader = {	name = "Syadon Noy"            	type = general	fire = 6	shock = 6	manuever = 6	siege = 6}
+		}
+		define_ruler_to_general = {
+			fire = 6
+			shock = 6
+			manuever = 6
+			siege = 6
 		}
 		if = {
 			limit = {
 				ai = yes
 			}
-			add_ruler_personality = conquerer_personality
+			add_ruler_personality = conqueror_personality
 			set_ai_personality = {
 				personality = ai_militarist
 				locked = yes
@@ -693,13 +703,18 @@ country_event = {
 			adm = 6
 			dip = 6
 			mil = 6
-			leader = {	name = "Syadon Noy"            	type = general	fire = 6	shock = 6	manuever = 6	siege = 6}
+		}
+		define_ruler_to_general = {
+			fire = 6
+			shock = 6
+			manuever = 6
+			siege = 6
 		}
 		if = {
 			limit = {
 				ai = yes
 			}
-			add_ruler_personality = conquerer_personality
+			add_ruler_personality = conqueror_personality
 			set_ai_personality = {
 				personality = ai_militarist
 				locked = yes
@@ -767,13 +782,18 @@ country_event = {
 			adm = 6
 			dip = 6
 			mil = 6
-			leader = {	name = "Syadon Noy"            	type = general	fire = 6	shock = 6	manuever = 6	siege = 6}
+		}
+		define_ruler_to_general = {
+			fire = 6
+			shock = 6
+			manuever = 6
+			siege = 6
 		}
 		if = {
 			limit = {
 				ai = yes
 			}
-			add_ruler_personality = conquerer_personality
+			add_ruler_personality = conqueror_personality
 			set_ai_personality = {
 				personality = ai_militarist
 				locked = yes
@@ -791,7 +811,7 @@ country_event = {
 		add_permanent_claim = 5583
 		add_permanent_claim = 5584
 		add_permanent_claim = bohora_area
-		add_permanent_claim = kachikia_area
+		add_permanent_claim = kachik_area
 	}
 	option = {
 		name = jasuaE.15.b
@@ -816,11 +836,19 @@ country_event = {
 	picture = ECLIPSE_eventPicture
 	is_triggered_only = yes
 	major = yes
+
+	immediate = {
+		hidden_effect = {
+			kachik_area = {
+				add_core = NAF
+			}
+		}
+	}
 	
 	option = {
 		name = jasuaE.16.a
 		ai_chance = { factor = 1 }
-		kachikia_area = {
+		kachik_area = {
 			add_core = NAF
 		}
 		5488 = {

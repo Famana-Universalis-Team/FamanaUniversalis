@@ -831,10 +831,7 @@ fas_3 = {
 			}
 			custom_tooltip = fas_artifacts_tooltip
 			hidden_effect = {
-				every_province = {
-					limit = {
-						area = area_117
-					}
+				area_117 = {
 					add_province_modifier = {
 						name = fas_kinvireli_artifacts
 						duration = 3650

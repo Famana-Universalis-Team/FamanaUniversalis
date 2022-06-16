@@ -297,7 +297,7 @@ country_event = {
 				limit = {
 					NOT = { 
 						OR = {
-							area = area_223 
+							area = area_223
 							area = area_221
 							area = area_231
 						}
@@ -353,9 +353,17 @@ country_event = {
             change_culture = East_Emastalian
             change_religion = lathvy 
 		}
+		emastalia_region = {
+			remove_core = ELQ
+			remove_claim = ELQ
+		}
+		west_emastalia_region = {
+			remove_core = ELQ
+			remove_claim = ELQ
+		}
 		ELQ = { 
-		override_country_name = Qurak
-		change_religion = lathvy
+			override_country_name = Qurak
+			change_religion = lathvy
 		}
 		set_global_flag = qurak_happened
 		

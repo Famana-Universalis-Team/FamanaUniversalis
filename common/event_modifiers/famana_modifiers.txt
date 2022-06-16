@@ -873,3 +873,8 @@ ksl_amogus = {
     min_autonomy = 20
     global_missionary_strength = -0.02
 }
+
+lag_slavery_continues = {
+    diplomatic_reputation = -1
+    tolerance_own = -1
+}

@@ -293,13 +293,13 @@ country_event = { #Nozumol
             factor = 1
         }
         add_accepted_culture = Nozuman
-        every_province = {
-            limit = {
-                OR = {
-                    area = nuzoto_area
-                    area = toza_area
-                }
+        nuzoto_area = {
+            add_province_modifier = {
+                name = nozumol_culture_bonus
+                duration = -1
             }
+        }
+        toza_area = {
             add_province_modifier = {
                 name = nozumol_culture_bonus
                 duration = -1

@@ -715,13 +715,13 @@ country_event = { #Lathvy
         change_religion	= lathvy
         add_stability = -2
         add_country_modifier = {
-            name = famana_conversion_zea    l
+            name = famana_conversion_zeal
             duration = 9125
         }
     }
     option = { #Stay va
         name = vanoma.13.b
-        ai_chance = { factor = 4 }
+        ai_chance = { factor = 2 }
         random_owned_province = {
             limit = {
                 region = vanoma_region
@@ -735,7 +735,7 @@ country_event = { #Lathvy
     }
     option = { #Acceptance
         name = vanoma.13.c
-        ai_chance = { factor = 2 }
+        ai_chance = { factor = 1 }
         hidden_effect = {
             every_owned_province = {
                 limit = {

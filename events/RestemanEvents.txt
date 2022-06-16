@@ -47,8 +47,8 @@ country_event = {
             loyalty = -15
         }
         add_country_modifier = {
-            duration = 1825
             name = lag_slavery_continues
+            duration = 1825
         }
 	}
 }
