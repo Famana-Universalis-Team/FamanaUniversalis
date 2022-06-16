@@ -81,24 +81,24 @@ country_event = {
 
 	option = {
 		name = eastereggs.3.a
-		ai_chance = { factor = 5 }
+		ai_chance = { factor = 1 }
 		add_treasury = -50
-		add_prestige = 50
+		add_prestige = 20
 		5203 = {
 			add_province_modifier = { 
-			name = Sawcon
-			duration = -1
+				name = Sawcon
+				duration = -1
 			}
 		}
 	}
 
 	option = {
 		name = eastereggs.3.b
-		ai_chance = { factor = 5 }
+		ai_chance = { factor = 1 }
 		5203 = {
 			add_province_modifier = { 
-			name = Sawcon
-			duration = -1
+				name = Sawcon
+				duration = -1
 			}
 		}
 	}
@@ -126,5 +126,9 @@ country_event = {
 		ai_chance = { factor = 5 }
 		add_prestige = -50
 		add_stability = -1
+		add_ruler_modifier = {
+			name = insanity_of_oforog
+			duration = -1
+		}
 	}
 }

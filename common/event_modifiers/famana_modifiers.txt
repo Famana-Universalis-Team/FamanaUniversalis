@@ -878,3 +878,10 @@ lag_slavery_continues = {
     diplomatic_reputation = -1
     tolerance_own = -1
 }
+
+insanity_of_oforog = {
+    all_power_cost = 0.10
+    land_morale = -0.05
+    naval_morale = -0.05
+    advisor_cost = 0.15
+}

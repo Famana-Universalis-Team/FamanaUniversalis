@@ -1108,11 +1108,11 @@ country_event = {
 	option = {
 		name = pexto.30.a
 		ai_chance = { factor = 1 }
+		add_devotion = 10
+		add_piety = 0.2
+		add_prestige = 20
 		5309 = {
 			cede_province = root
-			add_devotion = 10
-			add_piety = 0.2
-			add_prestige = 20
 		}
 	}
 }
