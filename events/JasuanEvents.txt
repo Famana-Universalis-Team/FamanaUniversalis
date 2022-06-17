@@ -47,6 +47,7 @@ country_event = {
 					id = jasuaE.17
 					days = 30
 				}
+				set_country_flag = borlebinMigrated
 			}
 			white_peace	= NAK
 			white_peace	= KAP
@@ -1049,6 +1050,7 @@ country_event = {
 				id = jasuaE.17
 				days = 30
 			}
+			set_country_flag = borlebinMigrated
 		}
 	}
 

@@ -1963,7 +1963,6 @@ country_decisions = {
 			tag = BMF
 			primary_culture = Bamali_C
 			NOT = { has_country_flag = bamal_formed }
-			was_never_end_game_tag_trigger = yes
 		}
 		provinces_to_highlight = {
 			OR = {
@@ -4163,6 +4162,69 @@ country_decisions = {
 				override_country_name = ORDISAN_EMPIRE_NAME
 			}
 			add_prestige = 25
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	biliku_reform_from_borlebin = {
+		major = yes
+		potential = {
+			tag = BLK
+			primary_culture = Bilik_C
+			has_country_flag = borlebinMigrated
+		}
+		major = yes
+		provinces_to_highlight = {
+			OR = {
+				province_id = 5682
+				province_id = 5683
+				province_id = 5689
+				province_id = 5690
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				is_city = no
+			}
+		}
+		allow = {
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			owns_core_province = 5682
+			owns_core_province = 5683
+			owns_core_province = 5689
+			owns_core_province = 5690
+		}
+		effect = {
+			restore_country_name = yes
+			clr_country_flag = borlebinMigrated
+			set_capital = 5683
+			if = {
+				limit = {
+					government_rank = 1
+				}
+				set_government_rank = 2
+			}
+			unnamed_area_37 = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = BMF
+			}
+			unnamed_area_36 = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = BMF
+			}
+			yenis_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = BMF
+			}
+			add_prestige = 10
 		}
 		ai_will_do = {
 			factor = 1
