@@ -35,30 +35,6 @@ age_of_discovery = {
 			}
 		}
 
-		#obj_island_ahead_of_tech = {
-		#	allow = {
-		#		NOT = {
-		#			any_neighbor_country = {
-		#				exists = yes
-		#			}
-		#		}
-		#	}
-		#	custom_trigger_tooltip = {
-		#		tooltip = obj_island_ahead_of_tech_tooltip
-		#		NOT = {
-		#			ROOT = {
-		#				capital_scope = {
-		#					region_for_scope_province = {
-		#						owner = {
-		#							tech_difference = 1
-		#						}
-		#					}
-		#				}
-		#			}
-		#		}
-		#	}
-		#}
-
 		obj_dev_provinces = {
 			num_of_owned_provinces_with = {
 				value = 10

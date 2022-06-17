@@ -185,11 +185,6 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = "GFX_obj_island_ahead_of_tech"
-		texturefile = "gfx/interface/ages/obj_5_centers_of_trade.dds"
-	}
-	
-	spriteType = {
 		name = "GFX_obj_25_development_city"
 		texturefile = "gfx/interface/ages/obj_huge_capital.dds"
 	}
