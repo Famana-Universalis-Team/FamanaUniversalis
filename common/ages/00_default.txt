@@ -18,41 +18,17 @@ age_of_discovery = {
 		}
 
 		obj_ahead_of_tech = {
-			allow = {
-				any_neighbor_country = {
-					exists = yes
-				}
-			}
+			#allow = {
+			#	any_neighbor_country = {
+			#		exists = yes
+			#	}
+			#}
 			custom_trigger_tooltip = {
 				tooltip = obj_ahead_of_tech_tooltip
 				NOT = {
 					OR = {
 						any_neighbor_country = {
 							tech_difference = 0
-						}
-					}
-				}
-			}
-		}
-
-		obj_island_ahead_of_tech = {
-			allow = {
-				NOT = {
-					any_neighbor_country = {
-						exists = yes
-					}
-				}
-			}
-			custom_trigger_tooltip = {
-				tooltip = obj_island_ahead_of_tech_tooltip
-				NOT = {
-					ROOT = {
-						capital_scope = {
-							region_for_scope_province = {
-								owner = {
-									tech_difference = 1
-								}
-							}
 						}
 					}
 				}
