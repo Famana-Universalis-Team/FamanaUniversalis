@@ -1241,4 +1241,37 @@ country_decisions = {
 			factor = 1
 		}
 	}
+	achievement_et_tu_karse = {
+		major = yes
+		potential = {
+			OR = {
+				AND = {
+					normal_or_historical_nations = yes
+					normal_province_values = yes
+					ironman = yes
+					start_date = 212.6.6
+					NOT = { num_of_custom_nations = 1 }
+					ai = no
+					tag = JXS
+				}
+				has_country_flag = debug_achievements
+			}
+			NOT = {
+				has_country_modifier = achievement_jexus_christo_modifier
+			}
+		}
+		allow = {
+			owns_core_province = 5100
+			full_idea_group	= religious_ideas
+		}
+		effect = {
+			add_country_modifier = {
+				name = achievement_jexus_christo_modifier
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
 }
