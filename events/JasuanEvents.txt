@@ -221,11 +221,18 @@ country_event = {
 		every_country = {
 			limit = {
 				NOT = {
-					tag = SKT
+					OR = {
+						tag = SKT
+						tag = RCK
+						tag = NAF
+						tag = KLG
+						tag = YLL
+					}
 				}
 			}
 			country_event = {
 				id = jasuaE.6
+				days = 1
 			}
 		}
 		#First, check if Kalarga exists. Kalarga gets priority for Nafa.
@@ -236,6 +243,7 @@ country_event = {
 				}
 				country_event = {
 					id = jasuaE.14
+					days = 1
 				}
 			}
 		}
@@ -249,6 +257,7 @@ country_event = {
 				}
 				country_event = {
 					id = jasuaE.7
+					days = 1
 				}
 			}
 			else_if = {
@@ -261,11 +270,13 @@ country_event = {
 				}
 				country_event = {
 					id = jasuaE.13
+					days = 1
 				}
 			}
 			else = {
 				country_event = {
 					id = jasuaE.6
+					days = 1
 				}
 			}
 		}
@@ -278,6 +289,7 @@ country_event = {
 				}
 				country_event = {
 					id = jasuaE.15
+					days = 1
 				}
 			}
 		}
@@ -290,6 +302,7 @@ country_event = {
 				}
 				country_event = {
 					id = jasuaE.15
+					days = 1
 				}
 			}
 		}
@@ -306,6 +319,7 @@ country_event = {
 				owner = {
 					country_event = {
 						id = jasuaE.16
+						days = 1
 					}
 				}
 			}
@@ -829,7 +843,7 @@ country_event = {
 	}
 }
 
-#nafa (yallwaka or rachik)
+#nafa (spawn if occupied)
 country_event = {
 	id = jasuaE.16
 	title = jasuaE.16.t
@@ -849,6 +863,7 @@ country_event = {
 	option = {
 		name = jasuaE.16.a
 		ai_chance = { factor = 1 }
+		set_global_flag = NafanRevolt
 		kachik_area = {
 			add_core = NAF
 		}
@@ -1052,6 +1067,77 @@ country_event = {
 			}
 			set_country_flag = borlebinMigrated
 		}
+	}
+
+
+#nafa (spawn if occupied)
+country_event = {
+	id = jasuaE.21
+	hidden = yes
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	trigger = {
+		tag = RCK
+		has_global_flag = NafanRevolt
+	}
+
+	immediate = {
+		change_tag = NAF
+		country_event = { id = ideagroups.1 } #Swap Ideas
+		add_stability = 1
+		change_religion = lathvy
+		change_government = monarchy
+		add_government_reform = nafan_gov
+		restore_country_name = yes
+		if = {
+			limit = {
+				NOT = { government_rank = 3 }
+			}
+			set_government_rank = 3
+		}
+		add_prestige = 25
+		kill_ruler = yes
+		define_ruler = {
+			name = "Syadon I"
+			dynasty = "Noy"
+			culture = Kachik
+			age = 20
+			adm = 6
+			dip = 6
+			mil = 6
+		}
+		define_ruler_to_general = {
+			fire = 6
+			shock = 6
+			manuever = 6
+			siege = 6
+		}
+		if = {
+			limit = {
+				ai = yes
+			}
+			add_ruler_personality = conqueror_personality
+			set_ai_personality = {
+				personality = ai_militarist
+				locked = yes
+			}
+		}
+		change_primary_culture = Kachik
+		add_accepted_culture = Bohoran
+		set_religious_school = {
+			group = lathvy_group
+			school = nafan_school
+		}
+		set_global_flag = NafaHappened
+		add_permanent_claim = 5483
+		add_permanent_claim = 5482
+		add_permanent_claim = 5583
+		add_permanent_claim = 5584
+		add_permanent_claim = bohora_area
+		add_permanent_claim = kachik_area
 	}
 
 	option = {

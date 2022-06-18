@@ -116,11 +116,11 @@ country_event = {
 		}
 		OR = {
 			religious_school = {
-				group = lathvy
+				group = lathvy_group
 				school = maxan_school
 			}
 			religious_school = {
-				group = lathvy
+				group = lathvy_group
 				school = pextoglazian_school
 			}
 		}
@@ -142,6 +142,7 @@ country_event = {
 				}
 			}
 		}
+		log = "[Root.GetName] switched to Walaran Thought"
 		set_religious_school = {
 			group = lathvy_group
 			school = walaran_school
@@ -162,6 +163,7 @@ country_event = {
 				}
 			}
 		}
+		log = "[Root.GetName] switched to Celzion Thought"
 		set_religious_school = {
 			group = lathvy_group
 			school = celzian_school
@@ -172,7 +174,8 @@ country_event = {
 	}
 
 	option = {
-		name = ordica.5.c
+		name = ordica.5.d
+		log = "[Root.GetName] is staying firm with their Lathvy beliefs."
 		ai_chance = { 
 			factor = 2
 			modifier = {
@@ -183,6 +186,27 @@ country_event = {
 				factor = 100
 				tag = POM
 			}
+		}
+	}
+
+	option = {
+		name = ordica.5.c
+		ai_chance = {
+			factor = 2
+			modifier = {
+				factor = 2
+				capital_scope = {
+					region = west_emastalia_region
+				}
+			}
+		}
+		log = "[Root.GetName] switched to Nafan Thought"
+		set_religious_school = {
+			group = lathvy_group
+			school = nafan_school
+		}
+		trigger = {
+			has_global_flag = NafaHappened
 		}
 	}
 }

@@ -215,6 +215,10 @@ country_decisions = {
             }
 		}
 		effect = {
+            country_event = {
+                id = lathvy_piety.17
+                days = 1
+            }
 			add_prestige = -50
             5337 = {
                 remove_building = temple
