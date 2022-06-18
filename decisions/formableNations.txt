@@ -2136,21 +2136,25 @@ country_decisions = {
 				NOT = { exists = YEN }
 				NOT = { exists = KEN }
 			}
+			OR = {
+				owns_core_province = 6176
+				owns_core_province = 6174
+			}
 		}
 		effect = {
 			restore_country_name = yes
 			change_tag = ENN
-			if = {
-				limit = {
-					AND = {
-						has_custom_ideas = no
-						NOT = {
-							has_idea_group = ENN_ideas
-						}
-					}
-				}
-				country_event = { id = ideagroups.1 } #Swap Ideas
-			}
+			#if = {
+			#	limit = {
+			#		AND = {
+			#			has_custom_ideas = no
+			#			NOT = {
+			#				has_idea_group = ENN_ideas
+			#			}
+			#		}
+			#	}
+			#	country_event = { id = ideagroups.1 } #Swap Ideas
+			#}
 			if = {
 				limit = {
 					NOT = { government_rank = 2 }
