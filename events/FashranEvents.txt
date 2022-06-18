@@ -1230,6 +1230,25 @@ country_event = {
         months = 24
     }
 
+    immediate = {
+        hidden_effect = {
+            every_owned_province = {
+                limit = {
+                    NOT = {
+                        OR = {
+                            is_core = KSL
+                            is_core = NHM
+                            is_core = HOY
+                            is_core = JFX
+                        }
+                    }
+                }
+                add_core = NHM
+                remove_core = FAS
+            }
+        }
+    }
+
     option = { #go with kisholi
         trigger = {
             any_core_province = { is_core = KSL }
