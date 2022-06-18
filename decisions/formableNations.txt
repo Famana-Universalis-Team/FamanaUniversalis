@@ -2163,6 +2163,15 @@ country_decisions = {
 				}
 				add_permanent_claim = ROOT
 			}
+			ennam_area = {
+				limit = {
+					is_empty = yes
+				}
+				cede_province = ROOT
+				change_culture = ROOT
+				change_religion = ROOT
+				add_core = ROOT
+			}
 			add_country_modifier = {
 				name = "centralization_modifier"
 				duration = 7300
