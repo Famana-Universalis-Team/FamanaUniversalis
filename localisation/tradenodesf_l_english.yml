@@ -49,6 +49,7 @@
  rosta_node:0 "Rosta"
  thaon_node:0 "Thaon"
  brula_node:0 "Brula"
+ lignord_node:0 "Lignord"
 
  #Trade Companies
  trade_company_umzat:0 "Umzatian Charter"
@@ -198,3 +199,6 @@
  trade_company_brula:0 "Brulan Charter"
  TRADE_COMPANY_BRULA_Root_Culture_GetName:0 "[Root.Culture.GetName] Brulan Company"
  TRADE_COMPANY_BRULA_Trade_Company:0 "Brulan Company"
+ trade_company_lignord:0 "Voychon Charter"
+ TRADE_COMPANY_LIGNORD_Root_Culture_GetName:0 "[Root.Culture.GetName] Voychon Company"
+ TRADE_COMPANY_LIGNORD_Trade_Company:0 "Voychon Company"
