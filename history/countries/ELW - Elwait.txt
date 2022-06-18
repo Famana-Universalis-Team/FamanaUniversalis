@@ -1,5 +1,5 @@
-government = republic
-add_government_reform = oligarchic_republic
+government = monarchy
+add_government_reform = autocracy_reform
 government_rank = 1
 mercantilism = 10
 technology_group = west_gomic_tech_gr
@@ -9,7 +9,8 @@ capital = 5380	# change to real capital
 
 212.2.2 = { #change to 200 or smth
 	monarch = {
-		name = "Tlatlu Amatl Ilumta"
+		name = "Tlatlu Amatl"
+		dynasty = "Ilumta"
 		adm = 5
 		dip = 6
 		mil = 6
