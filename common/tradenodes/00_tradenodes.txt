@@ -1194,6 +1194,24 @@ lignord_node = {
 	}
 }
 
+malda_node = {
+	location = 6707
+	color = { 117 72 170 }
+	inland = yes
+	outgoing={
+		name= "emastalia"
+		path={
+			
+		}
+		control={
+			1524.000000 1515.000000 1593.000000 1524.000000 
+		}
+	}
+	members={
+		6707 6714 6706 6708 6710 6715 6713 6712 6704 6705 6703 6702 6701 6700 6699 6698 6697 6709 6696 6245
+	}
+}
+
 kinvirel={
 	location=5196
 	color={
