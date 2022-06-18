@@ -4249,4 +4249,112 @@ country_decisions = {
 			factor = 1
 		}
 	}
+	
+	form_alutokum_diplomatically = {
+		major = yes
+		potential = {
+			AND = {
+				OR = {
+					tag = TKM
+					tag = ALU
+				}
+				NOT = { exists = ATM }
+				exists = TKM
+				exists = ALU
+				was_never_end_game_tag_trigger = yes
+			}
+		}
+		allow = {
+			TKM = {
+				is_free_or_tributary_trigger = yes
+				is_at_war = no
+				adm_tech = 10
+				has_country_flag = tkm_migrated
+				alliance_with = ALU
+				has_opinion = {
+					who = ALU
+					value = 150
+				}
+			}
+			ALU = {
+				is_free_or_tributary_trigger = yes
+				is_at_war = no
+				adm_tech = 10
+				owns_core_province = 7250
+				alliance_with = TKM
+				has_opinion = {
+					who = TKM
+					value = 150
+				}
+			}
+		}
+		effect = {
+			if = {
+				limit = { tag = TKM }
+				inherit = ALU
+				add_accepted_culture = Ganush
+			}
+			if = {
+				limit = { tag = ALU }
+				inherit = TKM
+				add_accepted_culture = Okus
+			}
+			restore_country_name = yes
+			change_tag = ATM
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+		}
+	}
+	
+	form_alutokum_militarily = {
+		major = yes
+		potential = {
+			AND = {
+				OR = {
+					tag = TKM
+					tag = ALU
+				}
+				NOT = { exists = ATM }
+				was_never_end_game_tag_trigger = yes
+			}
+		}
+		provinces_to_highlight = {
+			OR = { area = area_237 }
+			OR = {
+				NOT = { owned_by = ROOT }
+				is_city = no
+			}
+		}
+		allow = {
+			area_237 = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			If = {
+				limit = { tag = ALU }
+				accepted_culture = Okus
+			}
+			If = {
+				limit = { tag = TKM }
+				accepted_culture = Ganush
+			}
+			adm_tech = 10
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+		}
+		effect = {
+			restore_country_name = yes
+			change_tag = ATM
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+		}
+	}
+	
 }
