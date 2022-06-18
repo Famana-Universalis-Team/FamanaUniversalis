@@ -1,4 +1,41 @@
 
+trade_company_brula = {
+	color = { 82 29 21 }
+	
+	provinces = {
+		6473 6581 6470 6469 6468 6467 6471 6472 6473 6477 6478 6479 6480 6493 6487 6486 6485 6484 6481
+		6482 6476 6475 6474 6577 6575 6576 6574 6483 6573 6570
+	}
+	
+	# Specific
+	# Generic
+	names = {
+		name = "TRADE_COMPANY_BRULA_Root_Culture_GetName"
+	}
+	names = {
+		name = "TRADE_COMPANY_BRULA_Trade_Company"
+	}
+}
+
+trade_company_thaon = {
+	color = { 82 29 21 }
+	
+	provinces = {
+		6499 6498 6502 6520 6525 6524 6523 6491 6492 6497 6518 6519 6517 6515 6516 6509 6511 6514 6512
+		6520 6525 6524 6523 6490 6489 6488 6495 6496 6526 6527 6522 6521 6504 6503 6505 6507 6542 6539
+		6528 6530 6494 6534 6533 6531 6506 6508 6501 6500
+	}
+	
+	# Specific
+	# Generic
+	names = {
+		name = "TRADE_COMPANY_THAON_Root_Culture_GetName"
+	}
+	names = {
+		name = "TRADE_COMPANY_THAON_Trade_Company"
+	}
+}
+
 trade_company_rosta = {
 	color = { 48 76 95 }
 	
