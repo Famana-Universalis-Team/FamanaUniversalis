@@ -31,7 +31,7 @@ country_decisions = {
 		}
 		allow = {
 			dip_tech = 9
-			is_free_or_tributary_trigger = yes
+			##is_free_or_tributary_trigger = yes
 			is_at_war = no
 			mil_power = 100
 		}
@@ -85,7 +85,7 @@ country_decisions = {
 		}
 		allow = {
 			dip_tech = 6
-			is_free_or_tributary_trigger = yes
+			###is_free_or_tributary_trigger = yes
 			is_at_war = no
 			mil_power = 150
 		}
@@ -136,7 +136,7 @@ country_decisions = {
 		}
 		allow = {
 			dip_tech = 11
-			is_free_or_tributary_trigger = yes
+			###is_free_or_tributary_trigger = yes
 			is_at_war = no
 			mil_power = 125
 		}
@@ -184,7 +184,7 @@ country_decisions = {
 		}
 		allow = {
 			dip_tech = 5
-			is_free_or_tributary_trigger = yes
+			###is_free_or_tributary_trigger = yes
 			is_at_war = no
 			mil_power = 75
 		}
@@ -225,7 +225,7 @@ country_decisions = {
 		}
 		allow = {
 			dip_tech = 4
-			is_free_or_tributary_trigger = yes
+			###is_free_or_tributary_trigger = yes
 			is_at_war = no
 			mil_power = 50
 		}
@@ -270,7 +270,7 @@ country_decisions = {
 		}
 		allow = {
 			dip_tech = 10
-			is_free_or_tributary_trigger = yes
+			###is_free_or_tributary_trigger = yes
 			is_at_war = no
 			treasury = 100
 		}
@@ -308,7 +308,7 @@ country_decisions = {
 		}
 		allow = {
 			dip_tech = 14
-			is_free_or_tributary_trigger = yes
+			###is_free_or_tributary_trigger = yes
 			is_at_war = no
 			treasury = 100
 		}
@@ -345,7 +345,7 @@ country_decisions = {
 		}
 		allow = {
 			dip_tech = 14
-			is_free_or_tributary_trigger = yes
+			###is_free_or_tributary_trigger = yes
 			is_at_war = no
 			treasury = 100
 		}
@@ -382,7 +382,7 @@ country_decisions = {
 		}
 		allow = {
 			dip_tech = 14
-			is_free_or_tributary_trigger = yes
+			###is_free_or_tributary_trigger = yes
 			is_at_war = no
 			treasury = 100
 		}
@@ -419,7 +419,7 @@ country_decisions = {
 		}
 		allow = {
 			dip_tech = 4
-			is_free_or_tributary_trigger = yes
+			###is_free_or_tributary_trigger = yes
 			is_at_war = no
 			mil_power = 50
 		}
@@ -457,7 +457,7 @@ country_decisions = {
 		}
 		allow = {
 			dip_tech = 11
-			is_free_or_tributary_trigger = yes
+			###is_free_or_tributary_trigger = yes
 			is_at_war = no
 			mil_power = 50
 		}
@@ -497,7 +497,7 @@ country_decisions = {
 		}
 		allow = {
 			dip_tech = 18
-			is_free_or_tributary_trigger = yes
+			###is_free_or_tributary_trigger = yes
 			is_at_war = no
 			mil_power = 100
 		}
@@ -541,7 +541,7 @@ country_decisions = {
 		}
 		allow = {
 			dip_tech = 18
-			is_free_or_tributary_trigger = yes
+			###is_free_or_tributary_trigger = yes
 			is_at_war = no
 			mil_power = 50
 		}
@@ -586,7 +586,7 @@ country_decisions = {
 		}
 		allow = {
 			dip_tech = 8
-			is_free_or_tributary_trigger = yes
+			###is_free_or_tributary_trigger = yes
 			is_at_war = no
 			mil_power = 25
 		}
@@ -635,7 +635,7 @@ country_decisions = {
 		}
 		allow = {
 			dip_tech = 6
-			is_free_or_tributary_trigger = yes
+			###is_free_or_tributary_trigger = yes
 			is_at_war = no
 			mil_power = 125
 		}
@@ -686,7 +686,7 @@ country_decisions = {
 		}
 		allow = {
 			dip_tech = 7
-			is_free_or_tributary_trigger = yes
+			###is_free_or_tributary_trigger = yes
 			is_at_war = no
 			mil_power = 100
 		}
@@ -733,7 +733,7 @@ country_decisions = {
 		}
 		allow = {
 			dip_tech = 6
-			is_free_or_tributary_trigger = yes
+			###is_free_or_tributary_trigger = yes
 			is_at_war = no
 			mil_power = 75
 		}
@@ -786,7 +786,7 @@ country_decisions = {
 		}
 		allow = {
 			dip_tech = 6
-			is_free_or_tributary_trigger = yes
+			###is_free_or_tributary_trigger = yes
 			is_at_war = no
 			mil_power = 75
 		}
@@ -838,7 +838,7 @@ country_decisions = {
 		}
 		allow = {
 			dip_tech = 6
-			is_free_or_tributary_trigger = yes
+			###is_free_or_tributary_trigger = yes
 			is_at_war = no
 			mil_power = 75
 		}
@@ -884,7 +884,7 @@ country_decisions = {
 		}
 		allow = {
 			dip_tech = 6
-			is_free_or_tributary_trigger = yes
+			###is_free_or_tributary_trigger = yes
 			is_at_war = no
 			mil_power = 50
 		}
@@ -924,7 +924,7 @@ country_decisions = {
 		}
 		allow = {
 			dip_tech = 4
-			is_free_or_tributary_trigger = yes
+			###is_free_or_tributary_trigger = yes
 			is_at_war = no
 			mil_power = 50
 		}
@@ -981,7 +981,7 @@ country_decisions = {
 					dip_tech = 9
 				}
 			}
-			is_free_or_tributary_trigger = yes
+			###is_free_or_tributary_trigger = yes
 			is_at_war = no
 			mil_power = 50
 		}
@@ -1024,7 +1024,7 @@ country_decisions = {
 		}
 		allow = {
 			dip_tech = 4
-			is_free_or_tributary_trigger = yes
+			###is_free_or_tributary_trigger = yes
 			is_at_war = no
 			mil_power = 50
 		}
@@ -1060,7 +1060,7 @@ country_decisions = {
 			}
 		}
 		allow = {
-			is_free_or_tributary_trigger = yes
+			###is_free_or_tributary_trigger = yes
 			is_at_war = no
 			mil_power = 50
 			bizugu_area = {
@@ -1101,7 +1101,7 @@ country_decisions = {
 			}
 		}
 		allow = {
-			is_free_or_tributary_trigger = yes
+			##is_free_or_tributary_trigger = yes
 			is_at_war = no
 			mil_power = 25
 			area_232 = {
@@ -1159,7 +1159,7 @@ country_decisions = {
 			}
 		}
 		allow = {
-			is_free_or_tributary_trigger = yes
+			##is_free_or_tributary_trigger = yes
 			is_at_war = no
 			mil_power = 50
 			area_232 = {
@@ -1207,7 +1207,7 @@ country_decisions = {
 			}
 		}
 		allow = {
-			is_free_or_tributary_trigger = yes
+			##is_free_or_tributary_trigger = yes
 			is_at_war = no
 			dip_power = 25
 			mil_power = 25
@@ -1255,7 +1255,7 @@ country_decisions = {
 			}
 		}
 		allow = {
-			is_free_or_tributary_trigger = yes
+			##is_free_or_tributary_trigger = yes
 			is_at_war = no
 			dip_power = 10
 			mil_power = 10
@@ -1296,7 +1296,7 @@ country_decisions = {
 			}
 		}
 		allow = {
-			is_free_or_tributary_trigger = yes
+			##is_free_or_tributary_trigger = yes
 			is_at_war = no
 			mil_power = 10
 			owns_core_province = 5944

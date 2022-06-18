@@ -2142,21 +2142,25 @@ country_decisions = {
 				NOT = { exists = YEN }
 				NOT = { exists = KEN }
 			}
+			OR = {
+				owns_core_province = 6176
+				owns_core_province = 6174
+			}
 		}
 		effect = {
 			restore_country_name = yes
 			change_tag = ENN
-			if = {
-				limit = {
-					AND = {
-						has_custom_ideas = no
-						NOT = {
-							has_idea_group = ENN_ideas
-						}
-					}
-				}
-				country_event = { id = ideagroups.1 } #Swap Ideas
-			}
+			#if = {
+			#	limit = {
+			#		AND = {
+			#			has_custom_ideas = no
+			#			NOT = {
+			#				has_idea_group = ENN_ideas
+			#			}
+			#		}
+			#	}
+			#	country_event = { id = ideagroups.1 } #Swap Ideas
+			#}
 			if = {
 				limit = {
 					NOT = { government_rank = 2 }
@@ -2168,6 +2172,15 @@ country_decisions = {
 					NOT = { owned_by = ROOT }
 				}
 				add_permanent_claim = ROOT
+			}
+			ennam_area = {
+				limit = {
+					is_empty = yes
+				}
+				cede_province = ROOT
+				change_culture = ROOT
+				change_religion = ROOT
+				add_core = ROOT
 			}
 			add_country_modifier = {
 				name = "centralization_modifier"
