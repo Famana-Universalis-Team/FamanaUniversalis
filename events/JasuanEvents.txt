@@ -1060,3 +1060,46 @@ country_event = {
 		ai_chance = { factor = 1 }
 	}
 }
+#Bohoran culture shift
+country_event = {
+	id = JasuaE.21
+	title = JasuaE.21.t
+	desc = JasuaE.21.d
+	picture = REFORM_eventPicture
+	fire_only_once = yes
+
+	trigger = {
+		is_year = 230
+		any_owned_province = {
+		culture = Bohoran
+		}
+		NOT = {
+		culture_group = Maxan
+		}
+	}
+	
+	option = {
+		name = jasuaE.21.a
+		ai_chance = { factor = 8 }
+		every_owned_province = {
+		limit = { culture = Bohoran }
+		change_culture = Bohoran_E
+		}
+		change_primary_culture = Bohoran_E
+	}
+	
+	option = {
+		name = jasuaE.21.b
+		ai_chance = { factor = 2 }
+		add_dip_power = -50
+		5361 = {
+			add_trade_modifier = {
+            who = ROOT
+            duration = 3650
+            power = 25
+            key = maxan_focus
+			}
+		}
+	}
+
+}
