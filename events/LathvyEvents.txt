@@ -955,7 +955,7 @@ country_event = { #Destroy Pomlen
 	option = {
 		name = lathvy_piety.17.a
 		ai_chance = { factor = 1 }
-		add_piety = 10
+		add_piety = -1
 		custom_tooltip = POMLEN_DESTROYED
 		set_global_flag = PomlenDestroyed
 		hidden_effect = {
@@ -977,7 +977,10 @@ country_event = { #Destroy Pomlen
 				}
 				5285 = {
 					owner = {
-						country_event = lathvy_piety.18
+						country_event = {
+							id = lathvy_piety.18
+							days = 1
+						}
 					}
 				}
 			}	

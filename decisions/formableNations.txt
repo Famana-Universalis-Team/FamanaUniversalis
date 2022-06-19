@@ -4346,13 +4346,14 @@ country_decisions = {
 				name = "centralization_modifier"
 				duration = 7300
 			}
-			If = {
+			if = {
 				limit = { tag = ALU }
 				add_accepted_culture = Okus
 			}
-			If = {
+			if = {
 				limit = { tag = TKM }
 				add_accepted_culture = Ganush
+				change_religion = bosisi
 			}
 			add_prestige = 25
 		}
