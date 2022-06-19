@@ -1,4 +1,42 @@
 
+trade_company_qubare = {
+	color = { 138 125 36 }
+	
+	provinces = {
+		6726 6742 6738 6741 6739 6740 6762 6737 6689 6755 6756 6757 6759 6754 6758 6688 6753 6751 6760
+		6749 6686 6687 6751 6749 6750 6673 6672 6685 6684 6682 6683 6680 6681 6678 6679 6752 6676 6677
+		6675 6674 6563 6564 6565 6566 6558 6559 6557 6561 6553 6555 6556 6543 6544 6545 6554
+	}
+	
+	# Specific
+	# Generic
+	names = {
+		name = "TRADE_COMPANY_QUBARE_Root_Culture_GetName"
+	}
+	names = {
+		name = "TRADE_COMPANY_QUBARE_Trade_Company"
+	}
+}
+
+trade_company_malda = {
+	color = { 117 72 170 }
+	
+	provinces = {
+		6707 6714 6706 6708 6710 6715 6713 6712 6704 6705 6703 6702 6701 6700 6699 6698 6697 6709 6696
+		6245 6720 6721 6722 6719 6718 6716 6717 6711 6695 6246 6694 6247 6693 6248 6692 6730 6691 6731
+		6690 6723 6733 6732 6734 6736 6735
+	}
+	
+	# Specific
+	# Generic
+	names = {
+		name = "TRADE_COMPANY_MALDA_Root_Culture_GetName"
+	}
+	names = {
+		name = "TRADE_COMPANY_MALDA_Trade_Company"
+	}
+}
+
 trade_company_lignord = {
 	color = { 107 144 138 }
 	
