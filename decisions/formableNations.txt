@@ -4243,7 +4243,7 @@ country_decisions = {
 			factor = 1
 		}
 	}
-  kisholi_nation = {
+  	kisholi_nation = {
 		major = yes
 		potential = {
 			NOT = { exists = KSL }
@@ -4378,56 +4378,6 @@ country_decisions = {
 			add_country_modifier = {
 				name = "centralization_modifier"
 				duration = 7300
-			}
-			add_prestige = 25
-		}
-	}
-	
-	form_alutokum_militarily = {
-		major = yes
-		potential = {
-			AND = {
-				OR = {
-					tag = TKM
-					tag = ALU
-				}
-				NOT = { exists = ATM }
-				was_never_end_game_tag_trigger = yes
-				TKM = { has_country_flag = tkm_migrated }
-			}
-		}
-		provinces_to_highlight = {
-			OR = { area = area_237 }
-			OR = {
-				NOT = { owned_by = ROOT }
-				is_city = no
-			}
-		}
-		allow = {
-			area_237 = {
-				type = all
-				owned_by = ROOT
-				is_core = ROOT
-			}
-			adm_tech = 10
-			is_free_or_tributary_trigger = yes
-			is_at_war = no
-		}
-		effect = {
-			restore_country_name = yes
-			change_tag = ATM
-			add_country_modifier = {
-				name = "centralization_modifier"
-				duration = 7300
-			}
-			if = {
-				limit = { tag = ALU }
-				add_accepted_culture = Okus
-			}
-			if = {
-				limit = { tag = TKM }
-				add_accepted_culture = Ganush
-				change_religion = bosisi
 			}
 			add_prestige = 25
 		}
