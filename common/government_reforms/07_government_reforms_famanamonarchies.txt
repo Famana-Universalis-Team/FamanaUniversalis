@@ -307,6 +307,33 @@ geq_reform = {
 	}
 }
 
+resteman_thalassocracy = {
+	icon = "merchant_ship"
+	allow_normal_conversion = no
+	potential = {
+		tag = RES
+	}
+	valid_for_nation_designer = no
+
+	custom_attributes = {
+		locked_government_type = yes
+		enables_plutocratic_idea_group = yes
+		enables_aristocratic_idea_group = no
+	}
+
+	legacy_equivalent = despotic_monarchy
+
+	modifiers = {
+		global_sailors_modifier = 0.25
+		naval_morale = 0.1
+		navy_tradition_decay = -0.02
+		global_institution_spread = 0.20
+	}
+	ai = {
+		factor = 1000
+	}
+}
+
 nokadi_reform = {
 	icon = "sakdina_system_reform"
 	potential = {
