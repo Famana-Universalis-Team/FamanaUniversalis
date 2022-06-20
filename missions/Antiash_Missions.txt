@@ -1,0 +1,103 @@
+antiash_3 = {
+	slot = 3
+    generic = no
+    ai = no
+	potential = {
+        NOT = { map_setup = map_setup_random }
+		OR = {
+		tag = KKR
+		tag = ALU
+		tag = ATM
+		}
+    }
+	has_country_shield = yes
+	antiash_prepare = {
+        icon =  mission_unite_home_region      
+
+        required_missions = {
+            
+        }
+
+        trigger = {
+			has_spy_network_in = {
+				who = TIT
+				value = 10
+			}
+        }
+        
+       
+        effect = {
+			declare_war_with_cb = {
+			who = TIT
+			casus_belli = cb_insult
+			}
+		}
+       
+    }
+	antiash_settle = {
+        icon =  mission_bedouins      
+
+        required_missions = {
+            antiash_prepare
+        }
+
+        trigger = {
+			area_239 = {
+				type = all
+				OR = {
+					is_empty = yes
+					owned_by = ROOT 
+				}
+			}
+        }
+        
+       
+        effect = {
+			7236 = {
+			cede_province = ROOT
+			add_core = ROOT
+			}
+			7237 = {
+			cede_province = ROOT
+			add_core = ROOT
+			}
+			7238 = {
+			cede_province = ROOT
+			add_core = ROOT
+			}
+		}
+       
+    }
+	antiash_population = {
+        icon = mission_rice_field    
+
+        required_missions = {
+            antiash_settle
+        }
+
+        trigger = {
+			total_development = 75
+        }
+        
+       
+        effect = {
+			7971 = {
+			cede_province = ROOT
+			add_core = ROOT
+			}
+			7970 = {
+			cede_province = ROOT
+			add_core = ROOT
+			}
+			7969 = {
+			cede_province = ROOT
+			add_core = ROOT
+			}
+			7968= {
+			cede_province = ROOT
+			add_core = ROOT
+			}
+		}
+    }
+
+}
