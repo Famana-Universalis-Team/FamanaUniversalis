@@ -58,4 +58,71 @@ country_event = {
 			create_revolt = 5
 		}
 	}
+	
+	option = {
+		highlight = yes
+		trigger = {
+		ai = no
+		}
+		name = bosisi.2.c
+		7250 = {
+			cede_province = ALU
+		}
+		7251 = {
+			cede_province = ALU
+		}
+		switch_tag = ALU
+		ALU = {
+			add_truce_with = KKR
+		}
+	}
+}
+#the totinos flee
+country_event = {
+	id = bosisi.3
+	title = bosisi.3.t
+	desc = bosisi.3.d
+	picture = WOUNDED_SOLDIERS_eventPicture
+	fire_only_once = yes
+	
+	trigger = {
+		OR = { 
+			tag = KKR 
+			tag = ALU 
+			tag = ATM 
+		}
+		mission_completed = antiash_prepare
+		war_score_against = {
+		who = TIT
+		value = 50
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 4
+	}
+	
+	immediate = {
+		hidden_effect = {
+			7273 = {
+				cede_province = ---
+				remove_core = TIT
+			}
+			random_province = {
+				limit = { 
+					AND = { 
+						region = east_great_desert_region 
+						is_empty = yes 
+					}
+				}
+				cede_province = TIT
+				add_core = TIT
+			}
+			TIT = { change_religion = bosisi }
+		}
+	}
+	
+	option = {
+		name = bosisi.3.a
+	}
 }
