@@ -2588,3 +2588,42 @@ CLL_ideas = {
 		merc_maintenance_modifier = -0.15
 	}
 }
+
+ATM_ideas = {
+	start = {
+		idea_cost = -0.1
+		cavalry_power = 0.20
+	}
+	
+	bonus = {
+		administrative_efficiency = 0.05
+	}
+
+	trigger = {
+		tag = ATM
+	}
+	free = yes
+	
+	atm_1 = {
+		manpower_recovery_speed = 0.10
+	}
+	atm_2 = {
+		core_creation = -0.1
+	}
+	atm_3 = {
+		discipline = 0.05
+	}
+	atm_4 = {
+		global_colonial_growth = 25
+	}
+	atm_5 = {
+		prestige_from_land = 0.50
+		free_leader_pool = 1
+	}
+	atm_6 = {
+		merchants = 1
+	}
+	atm_7 = {
+		governing_capacity_modifier = 0.1
+	}
+}

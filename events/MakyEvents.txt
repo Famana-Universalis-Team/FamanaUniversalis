@@ -1148,9 +1148,9 @@ country_event = {
 				remove_core = ROOT
 			}
 			set_country_flag = tkm_migrated
-		}
-		every_known_country = {
-			white_peace = ROOT
+			every_known_country = {
+				white_peace = ROOT
+			}
 		}
 		custom_tooltip = tkm_migrate_tooltip
 	}

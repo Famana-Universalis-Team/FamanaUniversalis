@@ -588,3 +588,43 @@ Vishman_ideas = {
 		burghers_loyalty_modifier = 0.05
     }
 }
+
+Antiash_ideas = {
+    start = {
+		loot_amount = 0.50
+		war_exhaustion = -0.10
+    }
+
+    bonus = {
+		global_manpower_modifier = 0.10
+    }
+
+    trigger = {
+        culture_group = Antiash
+    }
+    free = yes
+
+    Antiash_1 = {
+		land_attrition = -0.25
+		cavalry_flanking = 0.50
+    }
+    Antiash_2 = {
+		heir_chance = 0.5
+    }
+    Antiash_3 = {
+        global_regiment_recruit_speed = -0.10
+    }
+    Antiash_4 = {
+		mil_tech_cost_modifier = -0.1	
+    }
+    Antiash_5 = {
+        all_power_cost = -0.025
+    }
+    Antiash_6 = {
+		cav_to_inf_ratio = 0.25
+		cavalry_power = 0.10
+    }
+    Antiash_7 = {
+		harsh_treatment_cost = -0.25
+    }
+}
