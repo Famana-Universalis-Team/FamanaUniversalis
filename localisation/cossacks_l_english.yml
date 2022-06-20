@@ -1459,7 +1459,7 @@
  CN_ENABLE_TOOLTIP:0 "Enable Custom Nation creation for all players."
  CN_ENABLE_TOOLTIP_DELAYED:0 "Custom Nation creation should be disabled until all players have joined if you are playing with Random New World or from a savegame."
  LASTS_UNTIL_DATE:0 "Lasts until $DATE|Y$"
- RANDOM_NEW_WORLD_BLOCKED_TOO_LATE:0 ""
+ RANDOM_NEW_WORLD_BLOCKED_TOO_LATE:0 "§YRandom New World§! cannot be enabled if your start date is later than $DATE$."
  LOST_ESTATE_INFLUENCE_MOD:0 "Their Influence is now $VAL$ ($DIFF$)."
  LOST_ESTATE_LOYALTY_MOD:0 "Their Loyalty is now $VAL$ ($DIFF$)."
  MAJOR_DLCS_NOT_IN_SAVE:1 "§Y- One or more DLCs have now been toggled that were previously enabled or disabled in the savegame.§!"

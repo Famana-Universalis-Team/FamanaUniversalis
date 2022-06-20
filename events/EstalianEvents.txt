@@ -170,7 +170,6 @@ country_event = {
 	major = yes
 	
 	trigger = {
-		is_year = 300
 		tag = ZUB
 		any_enemy_country = {
 			war_score_against = {

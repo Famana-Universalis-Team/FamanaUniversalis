@@ -26,7 +26,7 @@ umz_1 = {
     
        
         trigger = {
-			effasha_area = {
+		effasha_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -1071,7 +1071,7 @@ umz_5 = {
 			has_spy_network_in = {
 				who = TCK
 				value = 35
-			}
+				}
 			spymaster = 1
 			NOT = { 
 				alliance_with = TCK

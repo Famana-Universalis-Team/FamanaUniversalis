@@ -90,35 +90,6 @@ country_event = {
 			}
 		}
 	}
-	option = {
-		highlight = yes
-		trigger = {
-		ai = no
-		}
-		name = maky.4.b
-		
-			5150 = {
-				cede_province = ROOT
-				add_core = ROOT
-			}
-			5813 = {
-				cede_province = TKM
-				add_core = LVY
-				add_core = TKM
-				hidden_effect = {
-					add_base_manpower = 1
-				}
-			}
-			5812 = {
-				cede_province = TKM
-				add_core = TKM
-				hidden_effect = {
-					add_base_manpower = 1
-				}
-			}
-		
-		switch_tag = TKM
-	}	
 }
 
 #makykay
@@ -1147,7 +1118,6 @@ country_event = {
 				}
 				remove_core = ROOT
 			}
-			set_country_flag = tkm_migrated
 		}
 		every_known_country = {
 			white_peace = ROOT
