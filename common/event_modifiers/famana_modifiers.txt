@@ -890,3 +890,7 @@ vanoman_settlement_modifier = {
     development_cost = -0.05
     institution_spread_from_true_faith = 0.20
 }
+
+antiash_settlers = {
+development_cost = -0.15
+}
