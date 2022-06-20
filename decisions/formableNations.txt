@@ -4378,12 +4378,22 @@ country_decisions = {
 				inherit = TKM
 				add_accepted_culture = Okus
 			}
+			if = {
+				limit = {
+					NOT = {
+						religion = bosisi
+					}
+				}
+				change_religion = bosisi
+			}
 			restore_country_name = yes
 			change_tag = ATM
 			add_country_modifier = {
 				name = "centralization_modifier"
 				duration = 7300
 			}
+			country_event = { id = ideagroups.1 } #Swap Ideas
+			swap_non_generic_missions = yes
 			add_prestige = 25
 		}
 	}
@@ -4419,21 +4429,31 @@ country_decisions = {
 			is_at_war = no
 		}
 		effect = {
+			if = {
+				limit = { tag = ALU }
+				add_accepted_culture = Okus
+			}
 			restore_country_name = yes
 			change_tag = ATM
 			add_country_modifier = {
 				name = "centralization_modifier"
 				duration = 7300
 			}
+			country_event = { id = ideagroups.1 } #Swap Ideas
 			if = {
-				limit = { tag = ALU }
-				add_accepted_culture = Okus
+				limit = {
+					NOT = {
+						religion = bosisi
+					}
+				}
+				change_religion = bosisi
 			}
 			if = {
 				limit = { tag = TKM }
 				add_accepted_culture = Ganush
 				change_religion = bosisi
 			}
+			swap_non_generic_missions = yes
 			add_prestige = 25
 		}
 	}
