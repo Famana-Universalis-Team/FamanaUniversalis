@@ -193,13 +193,13 @@ antiash_1 = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			every_province = {
-				limit = { 
-				area = rishtokay_area
-				is_empty = no
-				}
-				country_or_non_sovereign_subject_holds = ROOT
-			}
+			#rishtokay_area = {
+				#type = all
+				#limit = {
+					#NOT = { is_empty = yes }
+				#}
+				#country_or_non_sovereign_subject_holds = ROOT
+			#}
         }
 		effect = {
 			5556 = {
@@ -309,7 +309,7 @@ antiash_2 = {
 	has_country_shield = yes
 	antiash_into = {
 		icon = mission_conquer_5_states
-		position = 8
+		position = 9
 		required_missions = {
 			antiash_opmaki
 			antiash_ximal
@@ -542,6 +542,7 @@ antiash_3 = {
     }
 	antiash_ximal = {
         icon = mission_crusade_for_varna
+		position = 8
 
         required_missions = {
             antiash_delkian
@@ -581,7 +582,7 @@ antiash_4 = {
 	has_country_shield = yes
 	antiash_invade = {
 		icon = mission_cossack_cavalry
-		position = 6
+		position = 7
 		required_missions = {
 			antiash_further
 			antiash_delkian
@@ -736,6 +737,7 @@ antiash_5 = {
 	}
 	antiash_further = {
 		icon = mission_manchu_warrior
+		position = 6
 		required_missions = {
 			antiash_approach
 		}
