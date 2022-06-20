@@ -14,6 +14,7 @@ naravami_tribe_rdu_reform = {
 }
 
 desert_tribe = {
+	allow_normal_conversion = yes
 	icon = "deserttribe"
 	potential = { 
 		OR = {
@@ -27,7 +28,7 @@ desert_tribe = {
 			}
 		}
 	}
-	allow_normal_conversion = no
+	lock_level_when_selected = yes
 
 	raze_province = yes
 	valid_for_nation_designer = yes
