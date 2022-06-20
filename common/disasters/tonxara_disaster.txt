@@ -7,7 +7,13 @@ tonxara_disaster = {
             tag = HOY
         }
         NOT = {
-            has_country_flag = survivedTonxaraDisaster
+            OR = {
+                has_country_flag = survivedTonxaraDisaster
+                has_country_flag = formedKisholiDecision
+            }
+        }
+        NOT = {
+            is_year = 380
         }
     }
 
@@ -15,9 +21,6 @@ tonxara_disaster = {
         has_any_disaster = no
         has_reform = gov_tonxara
         total_development = 150
-        NOT = {
-            is_year = 380
-        }
     }
 
     progress = {

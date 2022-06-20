@@ -234,16 +234,19 @@ gov_emmi = {
 	rank = {
 		1 = EMMI
 		2 = EMMI
+		3 = EMPIRE
 	}
 
 	ruler_male = {
 		1 = EM_MALA
 		2 = EM_MALA
+		3 = EMPEROR
 	}
 
 	ruler_female = {
 		1 = EM_MALO
 		2 = EM_MALO
+		3 = EMPRESS
 	}
 
 	trigger = {
