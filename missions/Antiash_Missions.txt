@@ -293,6 +293,76 @@ antiash_1 = {
 			}
 		}	
 	}
+	antiash_jexus = {
+		icon =  mission_impaled_soldies
+		position = 10
+		required_missions = {
+            antiash_into
+		}
+		trigger = {
+			abvori_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			jexus_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+        }
+		effect = {
+			vau_area = {
+				add_permanent_claim = ROOT
+			}
+			walamo_area = {
+				add_permanent_claim = ROOT
+			}
+			annamed_area_21 = {
+				add_permanent_claim = ROOT
+			}
+		}	
+	}
+	antiash_moshiria = {
+		icon =  mission_chinese_general_riding
+		required_missions = {
+            antiash_jexus
+		}
+		trigger = {
+			vau_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			walamo_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			annamed_area_21 = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+        }
+		effect = {
+			pyarxu_area = {
+				add_permanent_claim = ROOT
+			}
+		}	
+	}
+	antiash_pyarxu = {
+		icon =  mission_chinese_general_riding
+		required_missions = {
+            antiash_jexus
+		}
+		trigger = {
+			pyarxu_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+        }
+		effect = {
+			xon_area = {
+				add_permanent_claim = ROOT
+			}
+		}	
+	}
 }
 antiash_2 = {
 	slot = 2
@@ -347,6 +417,24 @@ antiash_2 = {
 			}
 		}
 	}
+	antiash_xon = {
+		icon =  mission_conquer_50_development
+		position = 13 
+		required_missions = {
+            antiash_relxal
+			antiash_pyarxu
+		}
+		trigger = {
+			xon_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+        }
+		effect = {
+			#idk
+		}	
+	}
+	
 }
 antiash_3 = {
 	slot = 3
@@ -565,6 +653,57 @@ antiash_3 = {
 			}
 		}
     }
+	antiash_calla = {
+		icon =  mission_galleys_in_port
+		position = 10 
+		required_missions = {
+            antiash_into
+		}
+		trigger = {
+			calla_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			vinsa_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			sostus_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+        }
+		effect = {
+			vinon_area = {
+				add_permanent_claim = ROOT
+			}
+			oxaled_area = {
+				add_permanent_claim = ROOT
+			}
+		}	
+	}
+	antiash_relxal = {
+		icon =  mission_italian_condottiere
+		position = 10 
+		required_missions = {
+            antiash_into
+		}
+		trigger = {
+			vinon_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			oxaled_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+        }
+		effect = {
+			xon_area = {
+				add_permanent_claim = ROOT
+			}
+		}	
+	}
 
 }
 antiash_4 = {
@@ -635,6 +774,29 @@ antiash_4 = {
 			unnamed_area_31 = {
 				add_permanent_claim = ROOT
 			}
+		}
+	}
+	antiash_kinvirel = {
+		icon = mission_hanseatic_city
+		required_missions = {
+			antiash_invade
+		}
+		trigger = {
+			kinvirel_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			unnamed_area_13 = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			unnamed_area_31 = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			#idk
 		}
 	}
 }
@@ -817,6 +979,34 @@ antiash_5 = {
 			shol_area = {
 				add_permanent_claim = ROOT
 			}
+		}
+	}
+	antiash_yabonia = {
+		icon = mission_have_two_subjects
+		position = 8
+		required_missions = {
+			antiash_invade
+		}
+		trigger = {
+			unnamed_area_50 = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			unnamed_area_12 = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			unnamed_area_51 = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			unnamed_area_49 = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			#idk
 		}
 	}
 }
