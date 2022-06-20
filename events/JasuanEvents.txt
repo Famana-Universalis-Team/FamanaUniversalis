@@ -1167,11 +1167,14 @@ country_event = {
 	option = {
 		name = jasuaE.21.a
 		ai_chance = { factor = 8 }
-		every_owned_province = {
+		every_province = {
 		limit = { culture = Bohoran }
 		change_culture = Bohoran_E
 		}
+		if = {
+		limit = { primary_culture = Bohoran }
 		change_primary_culture = Bohoran_E
+		}
 	}
 	
 	option = {
