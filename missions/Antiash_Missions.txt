@@ -450,7 +450,7 @@ antiash_3 = {
 		}
     }
 	antiash_delkum = {
-        icon = mission_rice_field    
+        icon = control_unrest  
 
         required_missions = {
             antiash_population
