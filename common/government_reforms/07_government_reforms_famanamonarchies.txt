@@ -79,7 +79,20 @@ gov_tonxara = {
 	potential = {
 		has_reform = gov_tonxara
 		religion = tonmo
-		prestige = -50
+		OR = {
+			prestige = -50
+			AND = {
+				OR = {
+					tag = JFX
+					tag = NHM
+					tag = KSL
+					tag = HOY
+				}
+				NOT = {
+					is_year = 380
+				}
+			}
+		}
 	}
 	legacy_equivalent = despotic_monarchy
 	valid_for_nation_designer = yes

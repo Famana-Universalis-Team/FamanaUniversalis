@@ -4316,6 +4316,9 @@ country_decisions = {
 				add_permanent_claim = ROOT
 			}
 			add_prestige = 25
+			hidden_effect = {
+				set_country_flag = formedKisholiDecision
+			}
 		}
 		ai_will_do = {
 			factor = 1
