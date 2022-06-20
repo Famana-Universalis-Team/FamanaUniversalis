@@ -4249,7 +4249,7 @@ country_decisions = {
 			factor = 1
 		}
 	}
-  kisholi_nation = {
+  	kisholi_nation = {
 		major = yes
 		potential = {
 			NOT = { exists = KSL }
@@ -4329,7 +4329,6 @@ country_decisions = {
 			factor = 1
 		}
 	}
-
 	form_alutokum_diplomatically = {
 		major = yes
 		potential = {
@@ -4388,7 +4387,6 @@ country_decisions = {
 			add_prestige = 25
 		}
 	}
-	
 	form_alutokum_militarily = {
 		major = yes
 		potential = {
