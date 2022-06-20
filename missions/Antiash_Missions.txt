@@ -349,7 +349,7 @@ antiash_1 = {
 	antiash_pyarxu = {
 		icon =  mission_chinese_general_riding
 		required_missions = {
-            antiash_jexus
+            antiash_moshiria
 		}
 		trigger = {
 			pyarxu_area = {
@@ -684,9 +684,9 @@ antiash_3 = {
 	}
 	antiash_relxal = {
 		icon =  mission_italian_condottiere
-		position = 10 
+		position = 12 
 		required_missions = {
-            antiash_into
+            antiash_calla
 		}
 		trigger = {
 			vinon_area = {
