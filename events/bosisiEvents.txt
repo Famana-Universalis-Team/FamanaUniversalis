@@ -62,7 +62,7 @@ country_event = {
 	option = {
 		highlight = yes
 		trigger = {
-		ai = no
+			ai = no
 		}
 		name = bosisi.2.c
 		7250 = {
@@ -86,34 +86,32 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		OR = { 
-			tag = KKR 
-			tag = ALU 
-			tag = ATM 
+		OR = {
+			tag = KKR
+			tag = ALU
+			tag = ATM
 		}
 		mission_completed = antiash_prepare
 		war_score_against = {
-		who = TIT
-		value = 50
+			who = TIT
+			value = 50
 		}
 	}
 	
 	mean_time_to_happen = {
-		months = 4
+		days = 1
 	}
 	
 	immediate = {
 		hidden_effect = {
-			7273 = {
+			7237 = {
 				cede_province = ---
 				remove_core = TIT
 			}
 			random_province = {
-				limit = { 
-					AND = { 
-						region = east_great_desert_region 
-						is_empty = yes 
-					}
+				limit = {
+					region = east_great_desert_region 
+					is_empty = yes
 				}
 				cede_province = TIT
 				add_core = TIT
@@ -124,5 +122,7 @@ country_event = {
 	
 	option = {
 		name = bosisi.3.a
+		ai_chance = { factor = 1 }
+		custom_tooltip = totinosFleesTooltip
 	}
 }

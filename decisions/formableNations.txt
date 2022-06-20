@@ -4386,6 +4386,12 @@ country_decisions = {
 				}
 				change_religion = bosisi
 			}
+			if = {
+				limit = {
+					government = tribal
+				}
+				add_government_reform = antiash_federation
+			}
 			restore_country_name = yes
 			change_tag = ATM
 			add_country_modifier = {
@@ -4452,6 +4458,12 @@ country_decisions = {
 				limit = { tag = TKM }
 				add_accepted_culture = Ganush
 				change_religion = bosisi
+			}
+			if = {
+				limit = {
+					government = tribal
+				}
+				add_government_reform = antiash_federation
 			}
 			swap_non_generic_missions = yes
 			add_prestige = 25

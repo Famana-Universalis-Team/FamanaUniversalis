@@ -14,18 +14,27 @@ naravami_tribe_rdu_reform = {
 }
 
 desert_tribe = {
+	allow_normal_conversion = yes
 	icon = "deserttribe"
 	potential = { 
 		OR = {
-			religion = bosisi
-			religion = animism
+			culture_group = Central_Great_Desert
+			culture_group = Antiash
+		}
+		NOT = {
+			num_of_owned_provinces_with	= {
+				value = 2
+				is_core = ROOT
+			}
 		}
 	}
-	allow_normal_conversion = no
+	lock_level_when_selected = yes
 
 	raze_province = yes
 	valid_for_nation_designer = yes
 	nation_designer_cost = 20
+
+	fixed_rank = 1
 
 	modifiers = {
 		may_perform_slave_raid_on_same_religion = yes 	
@@ -35,10 +44,45 @@ desert_tribe = {
 		trade_efficiency = 0.20
 		land_maintenance_modifier = -0.50
 		province_warscore_cost = 10
-		core_creation = 10
+		core_creation = 100
 		diplomatic_upkeep = -4
 		global_tax_modifier = 0.30
 		cb_on_religious_enemies = yes
 		#custom_tooltip = migrations_tooltip
+	}
+	ai = {
+		factor = 0
+	}
+}
+
+antiash_federation = {
+	icon = "siddhi_recruitment"
+	allow_normal_conversion = yes
+	potential = {
+		has_reform = antiash_federation
+	}
+
+	valid_for_nation_designer = yes
+	nation_designer_cost = 20
+	legacy_equivalent = tribal_federation_legacy
+
+	lock_level_when_selected = yes
+	raze_province = yes
+
+	modifiers = {
+		num_accepted_cultures = 2
+		promote_culture_cost = -0.50
+		global_autonomy = 0.05
+		heir_chance = -0.5
+	}
+
+	conditional = {
+		allow = { has_dlc = "Cradle of Civilization" }
+		government_abilities = {
+			tribal_federation_mechanic
+		}
+	}
+	ai = {
+		factor = 1
 	}
 }
