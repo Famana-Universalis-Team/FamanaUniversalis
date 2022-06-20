@@ -30,7 +30,7 @@ van_1 = {
         icon = mission_early_modern_university
         required_missions = { van_develop_montava }
         trigger = {
-            innovativeness = 25
+            innovativeness = 30
         }
         effect = {
             add_adm_tech = 1
@@ -66,10 +66,6 @@ van_1 = {
                 add_core = ROOT
                 change_culture = ROOT
                 change_religion	= ROOT
-            }
-            add_country_modifier = {
-                name = vanoman_settlement_modifier
-                duration = 9125
             }
         }
         provinces_to_highlight = {
