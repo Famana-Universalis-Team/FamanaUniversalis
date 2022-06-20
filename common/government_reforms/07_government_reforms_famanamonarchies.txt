@@ -293,3 +293,28 @@ geq_reform = {
 		factor = 1000
 	}
 }
+
+nokadi_reform = {
+	icon = "sakdina_system_reform"
+	potential = {
+		tag = NKM
+	}
+	valid_for_nation_designer = no
+
+	custom_attributes = {
+		enables_aristocratic_idea_group = yes
+	}
+
+	legacy_equivalent = despotic_monarchy
+	maintain_dynasty = yes
+	can_change_primary_culture = no
+
+	modifiers = {
+		global_unrest = -2
+		nobles_loyalty_modifier = 0.05
+		advisor_cost = 0.10
+	}
+	ai = {
+		factor = 1000
+	}
+}

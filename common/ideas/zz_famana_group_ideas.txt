@@ -285,10 +285,7 @@ Xalnish_ideas = {
 	}
 
 	trigger = {
-		OR = {
-			culture_group = Xalian
-			culture_group = Komelwaiti
-		}
+		culture_group = Xalian
 	}
 	free = yes
 	
@@ -529,7 +526,7 @@ Maldan_ideas = {
     free = yes
 
     Maldan_1 = {
-		monarch_admin_power = 1
+		monarch_diplomatic_power = 1
     }
     Maldan_2 = {
         merchants = 1
