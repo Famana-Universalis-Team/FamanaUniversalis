@@ -1,3 +1,268 @@
+antiash_1 = {
+	slot = 1
+    generic = no
+    ai = no
+	potential = {
+        NOT = { map_setup = map_setup_random }
+		OR = {
+		tag = KKR
+		tag = ALU
+		tag = ATM
+		}
+    }
+	has_country_shield = yes
+	antiash_homeland = {
+		icon =  mission_mosque
+		position = 4
+		required_missions = {
+            antiash_population
+        }
+		
+		trigger = {
+			7967 = {
+			infantry_in_province = 2
+			}
+			area_234 = {
+				type = all
+				infantry_in_province = 2
+			}
+        }
+		effect = {
+			7967 = {
+				kill_units = {
+				who = ROOT
+				type = infantry
+				amount = 2
+				}
+				cede_province = ROOT
+				add_core = ROOT
+			}
+			area_234 = {
+				kill_units = {
+				who = ROOT
+				type = infantry
+				amount = 2
+				}
+				cede_province = ROOT
+				add_core = ROOT
+				add_province_modifier = { 
+				name = antiash_settlers
+				duration = 3650
+				}
+			}
+			add_years_of_income = 0.25
+		}	
+	}
+	antiash_tokum = {
+		icon =  mission_sw_against_the_desert
+		required_missions = {
+            antiash_homeland
+        }
+		
+		trigger = {
+			kars_area = { #sic
+				type = all
+				infantry_in_province = 2
+			}
+			5150 = {
+			infantry_in_province = 2
+			}
+        }
+		effect = {
+			kars_area = {
+				kill_units = {
+				who = ROOT
+				type = infantry
+				amount = 2
+				}
+				cede_province = ROOT
+				add_core = ROOT
+				change_religion = ROOT
+				change_culture = ROOT
+				add_province_modifier = { 
+				name = antiash_settlers
+				duration = 3650
+				}
+			}
+			5150 = {
+				kill_units = {
+				who = ROOT
+				type = infantry
+				amount = 2
+				}
+				cede_province = ROOT
+				add_core = ROOT
+				change_religion = ROOT
+				change_culture = ROOT
+			}
+			okus_area = {
+				add_permanent_claim = ROOT
+			}
+		}	
+	}
+	antiash_kars = {
+		icon =  mission_egyptian_mamluk_soldier
+		required_missions = {
+            antiash_tokum
+		}
+		trigger = {
+			okus_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			rishtokay_area = {
+				type = all
+				limit = { is_empty = no }
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+        }
+		effect = {
+			5556 = {
+			cede_province = ROOT
+			add_core = ROOT
+			change_religion = ROOT
+			change_culture = ROOT
+			}
+			5146 = {
+			cede_province = ROOT
+			add_core = ROOT
+			change_religion = ROOT
+			change_culture = ROOT
+			}
+			7961 = {
+			cede_province = ROOT
+			add_core = ROOT
+			change_religion = ROOT
+			change_culture = ROOT
+			}
+			makykay_area = {
+				add_permanent_claim = ROOT
+			}
+			bava_area = {
+				add_permanent_claim = ROOT
+			}
+			vaximor_area = {
+				add_permanent_claim = ROOT
+			}
+		}	
+	}
+	antiash_delta = {
+		icon =  mission_persian_soldiers
+		required_missions = {
+            antiash_kars
+		}
+		trigger = {
+			makykay_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			bava_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			vaximor_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+        }
+		effect = {
+			5557 = {
+			cede_province = ROOT
+			add_core = ROOT
+			change_religion = ROOT
+			change_culture = ROOT
+			}
+			unnamed_area_9 = {
+				add_permanent_claim = ROOT
+			}
+			zeaf_area = {
+				add_permanent_claim = ROOT
+			}
+			tsaj_area = {
+				add_permanent_claim = ROOT
+			}
+		}	
+	}
+	antiash_opmaki = {
+		icon =  mission_arabian_fort
+		required_missions = {
+            antiash_delta
+		}
+		trigger = {
+			unnamed_area_9 = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			zeaf_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			tsaj_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+        }
+		effect = {
+			morsum_area = {
+				add_permanent_claim = ROOT
+			}
+		}	
+	}
+}
+antiash_2 = {
+	slot = 2
+    generic = no
+    ai = no
+	potential = {
+        NOT = { map_setup = map_setup_random }
+		OR = {
+		tag = KKR
+		tag = ALU
+		tag = ATM
+		}
+    }
+	has_country_shield = yes
+	antiash_into = {
+		icon = mission_conquer_5_states
+		position = 8
+		required_missions = {
+			antiash_opmaki
+			antiash_ximal
+		}
+		trigger = {
+			morsum_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			marnet_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			sixan_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		
+		}
+		effect = {
+			abvori_area = {
+				add_permanent_claim = ROOT
+			}
+			jexus_area = {
+				add_permanent_claim = ROOT
+			}
+			sustus_area = {
+				add_permanent_claim = ROOT
+			}
+			vinsa_area = {
+				add_permanent_claim = ROOT
+			}
+			calla_area = {
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+}
 antiash_3 = {
 	slot = 3
     generic = no
@@ -99,10 +364,125 @@ antiash_3 = {
 			}
 		}
     }
+	antiash_delkum = {
+        icon = mission_rice_field    
+
+        required_missions = {
+            antiash_population
+        }
+
+        trigger = {
+			7962 = {
+			infantry_in_province = 2
+			}
+        }
+        
+       
+        effect = {
+			7962 = {
+				kill_units = {
+					who = ROOT
+					type = infantry
+					amount = 2
+				}
+				cede_province = ROOT
+				add_core = ROOT
+				change_religion = ROOT
+				change_culture = ROOT
+			}
+			south_delkia = {
+			add_permanent_claim = ROOT
+			}
+		}
+    }
+	antiash_south_delkia = {
+        icon = mission_ne_palisades    
+
+        required_missions = {
+            antiash_delkum
+        }
+
+        trigger = {
+			south_delkia = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+        }
+        
+       
+        effect = {
+			houras_area = {
+			add_permanent_claim = ROOT
+			}
+			5173 = {
+			add_permanent_claim = ROOT
+			}
+			hoxona_area = {
+			add_permanent_claim = ROOT
+			}
+		}
+    }
+	antiash_delkian = {
+        icon = mission_non-western_cavalry_raid
+
+        required_missions = {
+            antiash_south_delkia
+        }
+
+        trigger = {
+			houras_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			5173 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			hoxona_area = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+        }
+        
+       
+        effect = {
+			marn_area = {
+			add_permanent_claim = ROOT
+			}
+			ropinver_area = {
+			add_permanent_claim = ROOT
+			}
+			hoxoi_area = {
+			add_permanent_claim = ROOT
+			}
+		}
+    }
+	antiash_ximal = {
+        icon = mission_crusade_for_varna
+
+        required_missions = {
+            antiash_delkia
+        }
+
+        trigger = {
+			marn_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+        }
+        
+       
+        effect = {
+			sixan_area = {
+			add_permanent_claim = ROOT
+			}
+			marnet_area = {
+			add_permanent_claim = ROOT
+			}
+		}
+    }
 
 }
-antiash_1 = {
-	slot = 1
+antiash_4 = {
+	slot = 4
     generic = no
     ai = no
 	potential = {
@@ -114,64 +494,103 @@ antiash_1 = {
 		}
     }
 	has_country_shield = yes
-	antiash_homeland = {
-		icon =  mission_mosque
+	antiash_invade = {
+		icon = mission_cossack_cavalry
+		position = 6
 		required_missions = {
-            antiash_population
-        }
-		
+			antiash_further
+			antiash_delkian
+		}
 		trigger = {
-			7967 = {
-			infantry_in_province = 2
-			}
-			area_234 = {
+			unnamed_area_11 = {
 				type = all
-				infantry_in_province = 2
+				country_or_non_sovereign_subject_holds = ROOT
 			}
-        }
+			diam_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			mahansha_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			shol_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			ropinver_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			hoxoi_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
 		effect = {
-			7967 = {
-				kill_units = {
-				who = ROOT
-				type = infantry
-				amount = 2
-				}
-				cede_province = ROOT
-				add_core = ROOT
+			unnamed_area_12 = {
+				add_permanent_claim = ROOT
 			}
-			area_234 = {
-				kill_units = {
-				who = ROOT
-				type = infantry
-				amount = 2
-				}
-				cede_province = ROOT
-				add_core = ROOT
-				add_province_modifier = { 
-				name = antiash_settlers
-				duration = 3650
-				}
+			unnamed_area_51 = { #:alien:
+				add_permanent_claim = ROOT
 			}
-			add_years_of_income = 0.25
-		}	
+			unnamed_area_50 = {
+				add_permanent_claim = ROOT
+			}
+			unnamed_area_49 = {
+				add_permanent_claim = ROOT
+			}
+			kinvirel_area = {
+				add_permanent_claim = ROOT
+			}
+			unnamed_area_13 = {
+				add_permanent_claim = ROOT
+			}
+			unnamed_area_31 = {
+				add_permanent_claim = ROOT
+			}
+		}
 	}
-	antiash_tokum = {
-		icon =  mission_sw_against_the_desert
+}
+antiash_5 = {
+	slot = 5
+    generic = no
+    ai = no
+	potential = {
+        NOT = { map_setup = map_setup_random }
+		OR = {
+		tag = KKR
+		tag = ALU
+		tag = ATM
+		}
+    }
+	has_country_shield = yes
+	antiash_approach = {
+		icon =  mission_assemble_an_army
+		position = 4
 		required_missions = {
-            antiash_homeland
-        }
-		
+			antiash_population
+		}
 		trigger = {
-			kars_area = { #sic
+			area_243 = {
 				type = all
 				infantry_in_province = 2
 			}
-			5150 = {
-			infantry_in_province = 2
+			7972 = {
+				infantry_in_province = 2
 			}
-        }
+		}
 		effect = {
-			kars_area = {
+			7972 = {
+				kill_units = {
+				who = ROOT
+				type = infantry
+				amount = 2
+				}
+				cede_province = ROOT
+				add_core = ROOT
+			}
+			area_243 = {
 				kill_units = {
 				who = ROOT
 				type = infantry
@@ -186,7 +605,33 @@ antiash_1 = {
 				duration = 3650
 				}
 			}
-			5150 = {
+		}
+	}
+	antiash_further = {
+		icon = mission_manchu_warrior
+		required_missions = {
+			antiash_approach
+		}
+		trigger = {
+			area_244 = {
+				type = all
+				infantry_in_province = 2
+			}
+			5184 = {
+				infantry_in_province = 2
+			}
+		}
+		effect = {
+			5184 = {
+				kill_units = {
+				who = ROOT
+				type = infantry
+				amount = 2
+				}
+				cede_province = ROOT
+				add_core = ROOT
+			}
+			area_244 = {
 				kill_units = {
 				who = ROOT
 				type = infantry
@@ -196,116 +641,24 @@ antiash_1 = {
 				add_core = ROOT
 				change_religion = ROOT
 				change_culture = ROOT
+				add_province_modifier = { 
+				name = antiash_settlers
+				duration = 3650
+				}
 			}
-			okus_area = {
+			unnamed_area_11 = {
 				add_permanent_claim = ROOT
 			}
-		}	
-	}
-	antiash_kars = {
-		icon =  mission_egyptian_mamluk_soldier
-		required_missions = {
-            antiash_tokum
+			diam_area = {
+				add_permanent_claim = ROOT
+			}
+			mahansha_area = {
+				add_permanent_claim = ROOT
+			}
+			shol_area = {
+				add_permanent_claim = ROOT
+			}
 		}
-		trigger = {
-			okus_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			rishtokay_area = {
-				limit = { is_empty = no }
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-        }
-		effect = {
-			5556 = {
-			cede_province = ROOT
-			add_core = ROOT
-			change_religion = ROOT
-			change_culture = ROOT
-			}
-			5146 = {
-			cede_province = ROOT
-			add_core = ROOT
-			change_religion = ROOT
-			change_culture = ROOT
-			}
-			7961 = {
-			cede_province = ROOT
-			add_core = ROOT
-			change_religion = ROOT
-			change_culture = ROOT
-			}
-			makykay_area = {
-				add_permanent_claim = ROOT
-			}
-			bava_area = {
-				add_permanent_claim = ROOT
-			}
-			vaximor_area = {
-				add_permanent_claim = ROOT
-			}
-		}	
 	}
-	antiash_delta = {
-		icon =  mission_persian_soldiers
-		required_missions = {
-            antiash_kars
-		}
-		trigger = {
-			makykay_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			bava_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			vaximor_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-        }
-		effect = {
-			5557 = {
-			cede_province = ROOT
-			add_core = ROOT
-			change_religion = ROOT
-			change_culture = ROOT
-			}
-			unnamed_area_9 = {
-				add_permanent_claim = ROOT
-			}
-			zeaf_area = {
-				add_permanent_claim = ROOT
-			}
-			tsaj_area = {
-				add_permanent_claim = ROOT
-			}
-		}	
-	}
-	antiash_opmaki = {
-		icon =  mission_arabian_fort
-		required_missions = {
-            antiash_delta
-		}
-		trigger = {
-			unnamed_area_9_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			zeaf_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			tsaj_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-        }
-		effect = {
-			marnet_area = {
-				add_permanent_claim = ROOT
-			}
-		}	
-	}
+}
+
