@@ -22,9 +22,17 @@ antiash_1 = {
 			7967 = {
 			infantry_in_province = 2
 			}
-			area_234 = {
-				type = all
-				infantry_in_province = 2
+			7965 = {
+			infantry_in_province = 2
+			}
+			7964 = {
+			infantry_in_province = 2
+			}
+			7963 = {
+			infantry_in_province = 2
+			}
+			7966 = {
+			infantry_in_province = 2
 			}
         }
 		effect = {
@@ -37,7 +45,7 @@ antiash_1 = {
 				cede_province = ROOT
 				add_core = ROOT
 			}
-			area_234 = {
+			7965 = {
 				kill_units = {
 				who = ROOT
 				type = infantry
@@ -45,11 +53,35 @@ antiash_1 = {
 				}
 				cede_province = ROOT
 				add_core = ROOT
-				add_province_modifier = { 
-				name = antiash_settlers
-				duration = 3650
-				}
 			}
+			7964 = {
+				kill_units = {
+				who = ROOT
+				type = infantry
+				amount = 2
+				}
+				cede_province = ROOT
+				add_core = ROOT
+			}
+			7962 = {
+				kill_units = {
+				who = ROOT
+				type = infantry
+				amount = 2
+				}
+				cede_province = ROOT
+				add_core = ROOT
+			}
+			7966 = {
+				kill_units = {
+				who = ROOT
+				type = infantry
+				amount = 2
+				}
+				cede_province = ROOT
+				add_core = ROOT
+			}
+			
 			add_years_of_income = 0.25
 		}	
 	}
@@ -60,16 +92,27 @@ antiash_1 = {
         }
 		
 		trigger = {
-			kars_area = { #sic
-				type = all
-				infantry_in_province = 2
-			}
 			5150 = {
 			infantry_in_province = 2
 			}
+			5813 = {
+			infantry_in_province = 2
+			}
+			5812 = {
+			infantry_in_province = 2
+			}
+			5815 = {
+			infantry_in_province = 2
+			}
+			7984 = {
+			infantry_in_province = 2
+			}
+			5814 = {
+			infantry_in_province = 2
+			} 
         }
 		effect = {
-			kars_area = {
+			5150 = {
 				kill_units = {
 				who = ROOT
 				type = infantry
@@ -79,12 +122,52 @@ antiash_1 = {
 				add_core = ROOT
 				change_religion = ROOT
 				change_culture = ROOT
-				add_province_modifier = { 
-				name = antiash_settlers
-				duration = 3650
-				}
 			}
-			5150 = {
+			5813 = {
+				kill_units = {
+				who = ROOT
+				type = infantry
+				amount = 2
+				}
+				cede_province = ROOT
+				add_core = ROOT
+				change_religion = ROOT
+				change_culture = ROOT
+			}
+			5812= {
+				kill_units = {
+				who = ROOT
+				type = infantry
+				amount = 2
+				}
+				cede_province = ROOT
+				add_core = ROOT
+				change_religion = ROOT
+				change_culture = ROOT
+			}
+			5815 = {
+				kill_units = {
+				who = ROOT
+				type = infantry
+				amount = 2
+				}
+				cede_province = ROOT
+				add_core = ROOT
+				change_religion = ROOT
+				change_culture = ROOT
+			}
+			7984 = {
+				kill_units = {
+				who = ROOT
+				type = infantry
+				amount = 2
+				}
+				cede_province = ROOT
+				add_core = ROOT
+				change_religion = ROOT
+				change_culture = ROOT
+			}
+			5814 = {
 				kill_units = {
 				who = ROOT
 				type = infantry
@@ -110,9 +193,11 @@ antiash_1 = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			rishtokay_area = {
-				type = all
-				limit = { is_empty = no }
+			every_province = {
+				limit = { 
+				area = rishtokay_area
+				is_empty = no
+				}
 				country_or_non_sovereign_subject_holds = ROOT
 			}
         }
@@ -459,7 +544,7 @@ antiash_3 = {
         icon = mission_crusade_for_varna
 
         required_missions = {
-            antiash_delkia
+            antiash_delkian
         }
 
         trigger = {
@@ -572,11 +657,22 @@ antiash_5 = {
 			antiash_population
 		}
 		trigger = {
-			area_243 = {
-				type = all
+			7972 = {
 				infantry_in_province = 2
 			}
-			7972 = {
+			7960 = {
+				infantry_in_province = 2
+			}
+			7959 = {
+				infantry_in_province = 2
+			}
+			7958 = {
+				infantry_in_province = 2
+			}
+			7957 = {
+				infantry_in_province = 2
+			}
+			7956 = {
 				infantry_in_province = 2
 			}
 		}
@@ -590,7 +686,7 @@ antiash_5 = {
 				cede_province = ROOT
 				add_core = ROOT
 			}
-			area_243 = {
+			7960 = {
 				kill_units = {
 				who = ROOT
 				type = infantry
@@ -598,13 +694,44 @@ antiash_5 = {
 				}
 				cede_province = ROOT
 				add_core = ROOT
-				change_religion = ROOT
-				change_culture = ROOT
-				add_province_modifier = { 
-				name = antiash_settlers
-				duration = 3650
-				}
 			}
+			7959 = {
+				kill_units = {
+				who = ROOT
+				type = infantry
+				amount = 2
+				}
+				cede_province = ROOT
+				add_core = ROOT
+			}
+			7958 = {
+				kill_units = {
+				who = ROOT
+				type = infantry
+				amount = 2
+				}
+				cede_province = ROOT
+				add_core = ROOT
+			}
+			7957 = {
+				kill_units = {
+				who = ROOT
+				type = infantry
+				amount = 2
+				}
+				cede_province = ROOT
+				add_core = ROOT
+			}
+			7956 = {
+				kill_units = {
+				who = ROOT
+				type = infantry
+				amount = 2
+				}
+				cede_province = ROOT
+				add_core = ROOT
+			}
+			
 		}
 	}
 	antiash_further = {
@@ -613,11 +740,19 @@ antiash_5 = {
 			antiash_approach
 		}
 		trigger = {
-			area_244 = {
-				type = all
+			5184 = {
 				infantry_in_province = 2
 			}
-			5184 = {
+			7955 = {
+				infantry_in_province = 2
+			}
+			7954 = {
+				infantry_in_province = 2
+			}
+			7953 = {
+				infantry_in_province = 2
+			}
+			7952 = {
 				infantry_in_province = 2
 			}
 		}
@@ -631,7 +766,7 @@ antiash_5 = {
 				cede_province = ROOT
 				add_core = ROOT
 			}
-			area_244 = {
+			7955 = {
 				kill_units = {
 				who = ROOT
 				type = infantry
@@ -639,13 +774,35 @@ antiash_5 = {
 				}
 				cede_province = ROOT
 				add_core = ROOT
-				change_religion = ROOT
-				change_culture = ROOT
-				add_province_modifier = { 
-				name = antiash_settlers
-				duration = 3650
-				}
 			}
+			7954 = {
+				kill_units = {
+				who = ROOT
+				type = infantry
+				amount = 2
+				}
+				cede_province = ROOT
+				add_core = ROOT
+			}
+			7953 = {
+				kill_units = {
+				who = ROOT
+				type = infantry
+				amount = 2
+				}
+				cede_province = ROOT
+				add_core = ROOT
+			}
+			7952 = {
+				kill_units = {
+				who = ROOT
+				type = infantry
+				amount = 2
+				}
+				cede_province = ROOT
+				add_core = ROOT
+			}
+			
 			unnamed_area_11 = {
 				add_permanent_claim = ROOT
 			}
