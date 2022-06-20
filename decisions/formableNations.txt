@@ -1800,6 +1800,12 @@ country_decisions = {
 			change_tag = RES
 			change_technology_group	= north_gomic_tech_gr
 			change_unit_type = north_gomic_tech_gr
+			if = {
+				limit = {
+					government = monarchy
+				}
+				add_government_reform = resteman_thalassocracy
+			}
 			add_country_modifier = {
 				name = "centralization_modifier"
 				duration = 7300
@@ -4243,7 +4249,7 @@ country_decisions = {
 			factor = 1
 		}
 	}
-  kisholi_nation = {
+  	kisholi_nation = {
 		major = yes
 		potential = {
 			NOT = { exists = KSL }
@@ -4323,7 +4329,6 @@ country_decisions = {
 			factor = 1
 		}
 	}
-
 	form_alutokum_diplomatically = {
 		major = yes
 		potential = {
@@ -4382,7 +4387,6 @@ country_decisions = {
 			add_prestige = 25
 		}
 	}
-	
 	form_alutokum_militarily = {
 		major = yes
 		potential = {
