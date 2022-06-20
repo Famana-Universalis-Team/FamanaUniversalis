@@ -96,7 +96,7 @@ anarchy_3 = {
         required_missions = { anarchy_unite_neighboring_cities }
         trigger = {
             NOT = {
-                average_autonomy = 10
+                average_autonomy = 5
             }
             NOT = {
                 unrest = 0
