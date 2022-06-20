@@ -97,8 +97,8 @@
 
  gomic_pagan_group:0 "Ancient Gomic"
  mak:0 "Mak"
- mak_religion_desc:0 "The ancestral pagan religion of the Makyan people, believing in the sun, Um, as their god.\nUm is the main God of the Makyan religion, thought to be the Sun. He oversees the Makyan people, and will guide them through history.\nNivolo is one of the lesser Makyan Gods, symbolized by Famana's moon. Makyan Priests refer to him for his sly personality in matters of trade and espionage.\nHalogan is the main servant of Um, represented by another moon. It is to him that Makyans call to help with military matters."
- halogenite:0 "Haloganite"
+ mak_religion_desc:0 "The ancestral pagan religion of the Makyan people, believing in the sun, Um, as their one and only god."
+ halogenite:0 "Halogenite"
  xalnish:0 "Xalnish"
  oppian:0 "Oppian"
  mak_rebels_demand:0 "Convert $COUNTRYNAME$"
@@ -107,14 +107,6 @@
  mak_rebels_name:0 "$RELIGION$ Zealots"
  mak_rebels_desc:0 "Religious fanatics tend to rise up in provinces controlled by nations of a different faith. They seek to spread their faith and smite all unbelievers."
  mak_rebels_army:0 "$RELIGION$ Army"
-
- fervor_trade:0 "Nivolo Worship"
- fervor_trade_short:0 "Nivolo"
- fervor_war:0 "Um Worship"
- fervor_war_short:0 "Um"
- fervor_stability:0 "Halogan Worship"
- fervor_stability_short:0 "Halogan"
- fervor_base:0 "Base"
 
  vaximorian:0 "Vaximorian"
  vaximorian_religion_desc:0 "A religion present solely in Vaximor. The people following this religion believe in 7 celestial gods who constantly battle each other for power."
@@ -497,6 +489,14 @@
  washoom_rebels_army:0 "$RELIGION$ Army"
  polokist:0 "Polokist"
  gastorist:0 "Gastorist"
+
+ fervor_trade:0 "Nivolo is one of the lesser Makyan Gods, the only one powerful enough to recieve one of the two moon as his celestial object. Makyan Priests refer to him for his sly personality in matters of trade and espionage"
+ fervor_trade_short:0 "Nivolo"
+ fervor_war:0 "Um is the main God of the Makyan religion, thought to be the Sun. He oversees the Makyan people, and will guide them through history"
+ fervor_war_short:0 "Um"
+ fervor_stability:0 "Halogan is the main servant of Um, represented by a moon. It is to him that Makyans call to help with military matters"
+ fervor_stability_short:0 "Halogan"
+ fervor_base:0 "Base"
 
  GAIN_PIETY:0 "Move $VALUE|Y$ towards Ara"
  LOSE_PIETY:0 "Move $VALUE|Y$ towards Loys"
