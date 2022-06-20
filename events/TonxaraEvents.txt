@@ -235,6 +235,14 @@ country_event = { #disaster start event
         #        add_nationalism = 15
         #    }
         #}
+        if = {
+            limit = {
+                tag = KSL
+            }
+            hidden_effect = {
+                set_country_flag = kisholiDisasterJimkalin
+            }
+        }
     }
     option = { #Kill your country and play a releasable
         name = tonxara.6.b

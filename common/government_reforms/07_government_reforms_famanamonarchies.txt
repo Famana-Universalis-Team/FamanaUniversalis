@@ -79,7 +79,20 @@ gov_tonxara = {
 	potential = {
 		has_reform = gov_tonxara
 		religion = tonmo
-		prestige = -50
+		OR = {
+			prestige = -50
+			AND = {
+				OR = {
+					tag = JFX
+					tag = NHM
+					tag = KSL
+					tag = HOY
+				}
+				NOT = {
+					is_year = 380
+				}
+			}
+		}
 	}
 	legacy_equivalent = despotic_monarchy
 	valid_for_nation_designer = yes
@@ -315,6 +328,31 @@ resteman_thalassocracy = {
 		naval_morale = 0.1
 		navy_tradition_decay = -0.02
 		global_institution_spread = 0.20
+	}
+	ai = {
+		factor = 1000
+	}
+}
+
+nokadi_reform = {
+	icon = "sakdina_system_reform"
+	potential = {
+		tag = NKM
+	}
+	valid_for_nation_designer = no
+
+	custom_attributes = {
+		enables_aristocratic_idea_group = yes
+	}
+
+	legacy_equivalent = despotic_monarchy
+	maintain_dynasty = yes
+	can_change_primary_culture = no
+
+	modifiers = {
+		global_unrest = -2
+		nobles_loyalty_modifier = 0.05
+		advisor_cost = 0.10
 	}
 	ai = {
 		factor = 1000

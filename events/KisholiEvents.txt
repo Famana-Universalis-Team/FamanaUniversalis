@@ -1,0 +1,36 @@
+
+namespace = kisholi
+
+country_event = {
+	id = kisholi.1
+	title = kisholi.1.t
+	picture = FARMING_eventPicture
+	desc = kisholi.1.d
+	hidden = yes
+	fire_only_once = yes
+	
+	trigger = {
+		tag = KSL
+		exists = JMK
+		has_country_flag = kisholiDisasterJimkalin
+	}
+
+	immediate = {
+		5644 = {
+			cede_province = JMK
+			add_core = JMK
+		}
+		JMK = {
+			set_capital = 5644
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = kisholi.1.a
+		ai_chance = { factor = 1 }
+	}
+}

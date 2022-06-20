@@ -2549,3 +2549,42 @@ FNC_ideas = {
 		loot_amount = 0.50
 	}
 }
+
+CLL_ideas = {
+	start = {
+		diplomatic_reputation = 1
+		defensiveness = 0.10
+	}
+	
+	bonus = {
+		recover_army_morale_speed = 0.10
+	}	
+
+	trigger = {
+		tag = CLL
+	}
+	free = yes
+	
+	cll_1 = {
+		infantry_cost = -0.10
+	}
+	cll_2 = {
+		army_tradition = 1
+	}
+	cll_3 = {
+		monarch_admin_power = 1
+	}
+	cll_4 = {
+		legitimacy = 1
+	}
+	cll_5 = {
+		global_garrison_growth = 0.20
+		fort_maintenance_modifier = -0.10
+	}
+	cll_6 = {
+		trade_efficiency = 0.1
+	}
+	cll_7 = {
+		merc_maintenance_modifier = -0.15
+	}
+}
