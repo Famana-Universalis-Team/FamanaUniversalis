@@ -18,3 +18,7 @@ aresian_resistance_modifier = {
     local_missionary_strength = -1.0
     local_missionary_maintenance_cost = 1.0
 }
+
+kalargan_gold_modifier = {
+    local_gold_depletion_chance_modifier = -0.75
+}
