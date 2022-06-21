@@ -204,7 +204,8 @@ country_event = {
 		hidden_effect = {
 			country_event = { 
 			id = bosisi.7
-			months = 6
+			days = 100
+            random = 265
 			}
 		}
 	}
@@ -234,7 +235,8 @@ country_event = {
 		hidden_effect = {
 			country_event = { 
 			id = bosisi.8
-			months = 1
+			days = 100
+            random = 265
 			}
 		}
 	}
@@ -254,7 +256,8 @@ country_event = {
 		hidden_effect = {
 			country_event = { 
 			id = bosisi.9
-			months = 7
+			days = 300
+            random = 265
 			}
 		}
 	}
@@ -291,7 +294,8 @@ country_event = {
 		hidden_effect = {
 			country_event = { 
 			id = bosisi.11
-			months = 3
+			days = 100
+            random = 265
 			}
 		}
 	}
@@ -325,26 +329,26 @@ country_event = {
 	option = {
 		name = bosisi.11.a
 		add_country_modifier = {
-				name = "antiash_dorroman_trade"
-				duration = 18 250 #50 years
+			name = "antiash_dorroman_trade"
+			duration = 18 250 #50 years
 		}
 	}
 	option = {
-		name = bosisi.11.a
+		name = bosisi.11.b
 		add_country_modifier = {
-				name = "antiash_dorroman_tech"
-				duration = 18 250 #50 years
+			name = "antiash_dorroman_tech"
+			duration = 18 250 #50 years
 		}
 	}
 	option = {
-		name = bosisi.11.a
+		name = bosisi.11.c
 		add_country_modifier = {
-				name = "antiash_dorroman_lessons"
-				duration = 18 250 #50 years
+			name = "antiash_dorroman_lessons"
+			duration = 18 250 #50 years
 		}
 	}
 	option = {
-		name = bosisi.11.a
+		name = bosisi.11.d
 		change_religion = dorroman
 		capial_scope = {
 			change_religion = dorroman
