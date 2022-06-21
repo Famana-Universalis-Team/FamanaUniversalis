@@ -1073,7 +1073,7 @@ country_event = {
 
 #nafa (spawn if occupied)
 country_event = {
-	id = jasuaE.21
+	id = jasuaE.20
 	hidden = yes
 
 	mean_time_to_happen = {
@@ -1157,23 +1157,34 @@ country_event = {
 	trigger = {
 		is_year = 230
 		any_owned_province = {
-		culture = Bohoran
+			culture = Bohoran
 		}
 		NOT = {
-		culture_group = Maxan
+			culture_group = Maxan
 		}
+	}
+
+	mean_time_to_happen = {
+		months = 48
 	}
 	
 	option = {
 		name = jasuaE.21.a
 		ai_chance = { factor = 8 }
 		every_province = {
-		limit = { culture = Bohoran }
-		change_culture = Bohoran_E
+			limit = { culture = Bohoran }
+			change_culture = Bohoran_E
 		}
 		if = {
-		limit = { primary_culture = Bohoran }
-		change_primary_culture = Bohoran_E
+			limit = { primary_culture = Bohoran }
+			change_primary_culture = Bohoran_E
+		}
+		if = {
+			limit = {
+				accepted_culture = Bohoran
+			}
+			add_accepted_culture = Bohoran_E
+			remove_accepted_culture	= Bohoran
 		}
 	}
 	
@@ -1183,10 +1194,10 @@ country_event = {
 		add_dip_power = -50
 		5361 = {
 			add_trade_modifier = {
-            who = ROOT
-            duration = 3650
-            power = 25
-            key = maxan_focus
+            	who = ROOT
+            	duration = 3650
+            	power = 25
+            	key = maxan_focus
 			}
 		}
 	}

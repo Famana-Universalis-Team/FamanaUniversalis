@@ -47,4 +47,9 @@ spriteTypes = {
 		texturefile = "gfx//interface//missions//famana_missions//mak_peace.dds"
 	}
 	
+	spriteType = {
+		name = "naf_eclipse_icon"
+		texturefile = "gfx//interface//missions//famana_missions//naf_eclipse_icon.dds"
+	}
+	
 }

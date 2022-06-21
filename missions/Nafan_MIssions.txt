@@ -1,0 +1,187 @@
+
+eclipse_1 = {
+    slot = 1
+    generic = no
+    ai = yes
+    potential = {
+        NOT = { map_setup = map_setup_random }
+		OR = {
+            tag = SKT
+            tag = NAF
+            tag = KLG
+        }
+    }
+    has_country_shield = yes
+
+    eclipse_kalargan_gold = {
+        icon = mission_entrepot_of_india
+        required_missions = { }
+        trigger = {
+        }
+        effect = {
+            
+        }
+        #provinces_to_highlight = {}
+    }
+
+    eclipse_great_port_of_bohora = {
+        icon = secure_the_republic
+        required_missions = { eclipse_kalargan_gold eclipse_the_eclipse }
+        trigger = {
+        }
+        effect = {
+            
+        }
+        #provinces_to_highlight = {}
+    }
+}
+
+eclipse_2 = {
+    slot = 2
+    generic = no
+    ai = yes
+    potential = {
+        NOT = { map_setup = map_setup_random }
+		OR = {
+            tag = SKT
+            tag = NAF
+            tag = KLG
+        }
+    }
+    has_country_shield = yes
+}
+
+eclipse_3 = {
+    slot = 3
+    generic = no
+    ai = yes
+    potential = {
+        NOT = { map_setup = map_setup_random }
+		OR = {
+            tag = SKT
+            tag = NAF
+            tag = KLG
+        }
+    }
+    has_country_shield = yes
+
+    eclipse_the_eclipse = {
+        icon = naf_eclipse_icon
+        required_missions = { }
+        trigger = {
+            custom_trigger_tooltip = {
+                tooltip = ECLIPSE_FIRED_MISSION
+                has_global_flag = eclipse_global_age_flag
+            }
+        }
+        effect = {
+            
+        }
+        #provinces_to_highlight = {}
+    }
+}
+
+eclipse_branching_temp = {
+    slot = 3
+    generic = no
+    ai = yes
+    potential = {
+        NOT = { map_setup = map_setup_random }
+		OR = {
+            tag = SKT
+            tag = NAF
+            tag = KLG
+        }
+        NOT = {
+            OR = {
+                has_country_flag = nafanMissionsFlag
+                has_country_flag = strokturMissionsFlag
+                has_country_flag = kalarganMissionsFlag
+            }
+        }
+    }
+
+    eclipse_branching = {
+        icon = mission_unknown_mission
+        required_missions = { eclipse_the_eclipse }
+        position = 3
+        trigger = {
+        }
+        effect = {
+            
+        }
+        #provinces_to_highlight = {}
+    }
+}
+
+eclipse_4 = {
+    slot = 4
+    generic = no
+    ai = yes
+    potential = {
+        NOT = { map_setup = map_setup_random }
+		OR = {
+            tag = SKT
+            tag = NAF
+            tag = KLG
+        }
+    }
+    has_country_shield = yes
+}
+
+eclipse_5 = {
+    slot = 5
+    generic = no
+    ai = yes
+    potential = {
+        NOT = { map_setup = map_setup_random }
+		OR = {
+            tag = SKT
+            tag = NAF
+            tag = KLG
+        }
+    }
+    has_country_shield = yes
+
+    eclipse_healing_the_rift = {
+        icon = mission_rb_unite_the_clans
+        required_missions = { }
+        trigger = {
+            NOT = { has_estate_privilege = estate_church_kachik_religious_rights }
+            5489 = {
+                religion = lathvy
+            }
+            5491 = {
+                religion = lathvy
+            }
+            kachik_area = {
+                type = all
+                NOT = { local_autonomy = 1 }
+            }
+            bohora_area = {
+                type = all
+                NOT = { local_autonomy = 1 }
+            }
+        }
+        effect = {
+            
+        }
+        provinces_to_highlight = {
+            OR = {
+                province_id = 5489
+                province_id = 5491
+            }
+        }
+    }
+
+    eclipse_bohorans_and_kachiks = {
+        icon = mission_religious
+        required_missions = { eclipse_healing_the_rift eclipse_the_eclipse }
+        trigger = {
+        }
+        effect = {
+            
+        }
+        #provinces_to_highlight = {}
+    }
+}
