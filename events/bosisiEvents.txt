@@ -330,21 +330,21 @@ country_event = {
 		name = bosisi.11.a
 		add_country_modifier = {
 			name = "antiash_dorroman_trade"
-			duration = 18 250 #50 years
+			duration = 18250 #50 years
 		}
 	}
 	option = {
 		name = bosisi.11.b
 		add_country_modifier = {
 			name = "antiash_dorroman_tech"
-			duration = 18 250 #50 years
+			duration = 18250 #50 years
 		}
 	}
 	option = {
 		name = bosisi.11.c
 		add_country_modifier = {
 			name = "antiash_dorroman_lessons"
-			duration = 18 250 #50 years
+			duration = 18250 #50 years
 		}
 	}
 	option = {
@@ -370,7 +370,7 @@ country_event = {
 		limit = { region = maky_region }
 			add_province_modifier = {
 				name = antiash_forgave
-				duration = 18 250 #50 years
+				duration = 18250 #50 years
 			}
 		}
 	}
