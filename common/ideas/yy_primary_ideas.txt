@@ -79,8 +79,8 @@ Nevian_ideas = {
 
 Ekelan_ideas = {
 	start = {
-		land_morale = 0.10
-		capture_ship_chance = 0.25
+		land_morale = 0.15
+		inflation_reduction = 0.1
 	}
 	
 	bonus = {
@@ -96,24 +96,24 @@ Ekelan_ideas = {
 	free = yes
 	
 	Ekelan_resist = {
-		defensiveness = 0.15
+		fort_maintenance_modifier = -0.20
 	}
 	Ekelan_jungle = {
-		hostile_attrition = 1
+		defensiveness = 0.15
 	}
 	Ekelan_trad = {
-		global_unrest = -1
-		religious_unity = 0.15
+		hostile_attrition = 1
 	}
 	Ekelan_sea = {
 		navy_tradition = 1
-		global_ship_cost = -0.10
+		ship_durability = 0.05
 	}
 	Ekelan_diplo = {
 		diplomatic_upkeep = 1
 	}
 	Ekelan_gods = {
-		legitimacy = 1
+		tolerance_own = 1
+		legitimacy = 0.5
 	}
 	Ekelan_royal = {
 		advisor_pool = 1
