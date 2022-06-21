@@ -826,8 +826,7 @@ country_event = {
 		add_permanent_claim = 5482
 		add_permanent_claim = 5583
 		add_permanent_claim = 5584
-		add_permanent_claim = bohora_area
-		add_permanent_claim = kachik_area
+		add_permanent_claim = stroktur_region
 	}
 	option = {
 		name = jasuaE.15.b
@@ -858,6 +857,9 @@ country_event = {
 			kachik_area = {
 				add_core = NAF
 			}
+			leta_area = {
+				add_core = NAF
+			}
 		}
 	}
 	
@@ -866,6 +868,9 @@ country_event = {
 		ai_chance = { factor = 1 }
 		set_global_flag = NafanRevolt
 		kachik_area = {
+			add_core = NAF
+		}
+		leta_area = {
 			add_core = NAF
 		}
 		5488 = {
@@ -1080,8 +1085,7 @@ country_event = {
 		add_permanent_claim = 5482
 		add_permanent_claim = 5583
 		add_permanent_claim = 5584
-		add_permanent_claim = bohora_area
-		add_permanent_claim = kachik_area
+		add_permanent_claim = stroktur_region
 	}
 
 	option = {

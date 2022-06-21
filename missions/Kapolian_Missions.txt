@@ -177,10 +177,7 @@ kap_5 = { #kinvirel - jasua region path
 		icon = subiaco_press
 		required_missions = {}
 		provinces_to_highlight = {
-			OR = {
-				area = bohora_area
-				area = kachik_area
-			}
+			region = stroktur_region
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		
@@ -188,11 +185,7 @@ kap_5 = { #kinvirel - jasua region path
 			OR = {
 				exists = NAF
 				AND = {
-					bohora_area = {
-						type = all
-						country_or_non_sovereign_subject_holds = ROOT
-					}
-					kachik_area = {
+					stroktur_region = {
 						type = all
 						country_or_non_sovereign_subject_holds = ROOT
 					}
@@ -208,22 +201,13 @@ kap_5 = { #kinvirel - jasua region path
 			if = {
 				limit = {
 					NOT = {
-						AND = {
-							bohora_area = {
-								type = all
-								country_or_non_sovereign_subject_holds = ROOT
-							}
-							kachik_area = {
-								type = all
-								country_or_non_sovereign_subject_holds = ROOT
-							}
+						stroktur_region = {
+							type = all
+							country_or_non_sovereign_subject_holds = ROOT
 						}
 					}
 				}
-				bohora_area  = {
-					add_permanent_claim = ROOT
-				}
-				kachik_area  = {
+				stroktur_region  = {
 					add_permanent_claim = ROOT
 				}
 			}

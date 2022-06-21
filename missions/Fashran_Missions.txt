@@ -732,6 +732,9 @@ fas_3 = {
 			kapolia_region = {
 				discover_country = ROOT
 			}
+			stroktur_region = {
+				discover_country = ROOT
+			}
 			eastern_desert_region = {
 				discover_country = ROOT
 			}
@@ -820,6 +823,9 @@ fas_3 = {
 				add_permanent_claim = ROOT
 			}
 			kapolia_region = {
+				add_permanent_claim = ROOT
+			}
+			stroktur_region = {
 				add_permanent_claim = ROOT
 			}
 			east_gomic = {
@@ -1120,6 +1126,9 @@ fas_4 = {
 			west_emastalia_region = {
 				add_claim = ROOT
 			}
+			stroktur_region = {
+				add_claim = ROOT
+			}
 		}
 		provinces_to_highlight = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
@@ -1144,6 +1153,12 @@ fas_4 = {
 					is_empty = yes
 				}
 			}
+			owns_all_provinces = {
+				region = stroktur_region
+				NOT = {
+					is_empty = yes
+				}
+			}
 		}
 		effect = {
 			add_country_modifier = {
@@ -1157,6 +1172,7 @@ fas_4 = {
 				OR = {
 					region = emastalia_region
 					region = west_emastalia_region
+					region = stroktur_region
 				}
 				NOT = {
 					is_empty = yes
@@ -1299,15 +1315,7 @@ fas_5 = {
 					area = pasba_area
 					area = yatia_area
 					area = unnamed_area_40
-					AND = {
-						region = kapolia_region
-						NOT = {
-							OR = {
-								area = bohora_area
-								area = kachik_area
-							}
-						}
-					}
+					region = kapolia_region
 				}
 				NOT = {
 					is_empty = yes
@@ -1344,15 +1352,7 @@ fas_5 = {
 				area = pasba_area
 				area = yatia_area
 				area = unnamed_area_40
-				AND = {
-					region = kapolia_region
-					NOT = {
-						OR = {
-							area = bohora_area
-							area = kachik_area
-						}
-					}
-				}
+				region = kapolia_region
 			}
 			NOT = {
 				is_empty = yes

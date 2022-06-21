@@ -404,8 +404,7 @@ pex_5 = {
 			}
         }
         effect = {
-            bohora_area = { add_permanent_claim = ROOT }
-            kachik_area = { add_permanent_claim = ROOT }
+            stroktur_region = { add_permanent_claim = ROOT }
             pexamol_area = { add_permanent_claim = ROOT }
             south_pextum_area = { add_permanent_claim = ROOT }
             hidden_effect = {
@@ -895,11 +894,7 @@ pex_7 = { #Post-disaster missions Right side
         required_missions = { pex_the_holy_coast }
         position = 9
         trigger = {
-            bohora_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-            kachik_area = {
+            stroktur_region = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -945,10 +940,7 @@ pex_7 = { #Post-disaster missions Right side
         }
         provinces_to_highlight = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
-			OR = {
-                area = bohora_area
-                area = kachik_area
-            }
+			region = stroktur_region
         }
     }
     pex_conquer_kapolia = {

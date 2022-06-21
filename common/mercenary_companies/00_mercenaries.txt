@@ -555,17 +555,23 @@ merc_durran_company = {
     home_province = 5566
 	sprites = { westerngfx_sprite_pack }
     trigger = {
-	OR = { 
-	any_owned_province = {
-			region = pextoglazia_region
-		}
-		any_owned_province = {
-			region = kapolia_region
-		}
-		any_owned_province = {
-			region = emastalia_region
-		}
-	}	
+		OR = { 
+			any_owned_province = {
+				region = pextoglazia_region
+			}
+			any_owned_province = {
+				region = kapolia_region
+			}
+			any_owned_province = {
+				region = stroktur_region
+			}
+			any_owned_province = {
+				region = emastalia_region
+			}
+			any_owned_province = {
+				region = west_emastalia_region
+			}
+		}	
 	}
 	modifier = {
 	
@@ -582,18 +588,23 @@ merc_unsets_volunteers = {
 	cost_modifier = 0.75
 	sprites = { westerngfx_sprite_pack }
     trigger = {
-	OR = { 
-	any_owned_province = {
-			region = pextoglazia_region
-		}
-		any_owned_province = {
-			region = kapolia_region
-		}
-		any_owned_province = {
-			region = emastalia_region
-		}
-		
-	}	
+		OR = { 
+			any_owned_province = {
+				region = pextoglazia_region
+			}
+			any_owned_province = {
+				region = kapolia_region
+			}
+			any_owned_province = {
+				region = stroktur_region
+			}
+			any_owned_province = {
+				region = emastalia_region
+			}
+			any_owned_province = {
+				region = west_emastalia_region
+			}
+		}	
 	}
 	modifier = {
 	
@@ -681,6 +692,9 @@ merc_iimksan_dool = {
 			}
 			any_owned_province = {
 				region = kapolia_region
+			}
+			any_owned_province = {
+				region = stroktur_region
 			}
 		
 		
