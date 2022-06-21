@@ -61,12 +61,11 @@ tonxara_disaster = {
         NOT = {
             is_at_war = yes
         }
-        is_bankrupt = no
 		NOT = { num_of_loans = 5 }
 		NOT = { corruption = 5 }
 		NOT = { num_of_rebel_armies = 1 }
 		NOT = { num_of_rebel_controlled_provinces = 1 }
-        legitimacy = 90
+        legitimacy = 80
         religious_unity = 0.60
         custom_trigger_tooltip = {
             tooltip = TONXARA_DIS_5Y_TOOLTIP

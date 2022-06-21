@@ -371,9 +371,9 @@ antiash_2 = {
 	potential = {
         NOT = { map_setup = map_setup_random }
 		OR = {
-		tag = KKR
-		tag = ALU
-		tag = ATM
+			tag = KKR
+			tag = ALU
+			tag = ATM
 		}
     }
 	has_country_shield = yes
