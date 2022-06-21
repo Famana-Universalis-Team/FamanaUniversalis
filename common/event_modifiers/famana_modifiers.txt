@@ -915,10 +915,61 @@ antiash_entering_ga_xal = {
 	raze_power_gain = 0.15
 }
 
+antiash_dominating_the_region = {
+	ae_impact = -0.15
+	core_creation = -0.15
+}
+
+antiash_new_fortifications = {
+	local_defensiveness = 0.2
+	local_hostile_movement_speed = -0.5
+}
+
+antiash_invasion = {
+	province_warscore_cost = -0.2
+	movement_speed = 0.15
+}
+
 antiash_nostalgic_journey = {
 	global_unrest = -3
 	global_manpower_modifier = 0.10
 } 
+
+antiash_kinvireli_trade = {
+	trade_efficiency = 0.15
+	global_institution_spread = 0.2
+}
+
+antiash_pirates = {
+	may_perform_slave_raid = yes
+	naval_morale = 0.1
+}
+
+antiash_m_privileges = {
+	local_sailors_modifier = 0.25
+	local_ship_cost = -0.5
+	min_local_autonomy = 20
+}
+
+antiash_dorroman_trade = {
+	tax_income = 10
+}
+
+antiash_dorroman_tech = {
+	technology_cost = -0.2
+	idea_cost = -0.2
+	global_institution_spread = 0.2
+	monthly_reform_progress_modifier = 0.2
+}
+
+antiash_dorroman_lessons = {
+	all_power_cost = -0.2
+}
+
+antiash_forgave = {
+	local_unrest = -3
+	local_autonomy = -0.05
+}
 
 kalargan_gold_country = {
     monthly_gold_inflation_modifier = -0.50

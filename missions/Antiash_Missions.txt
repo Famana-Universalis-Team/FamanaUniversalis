@@ -198,7 +198,12 @@ antiash_1 = {
 			maky_region = {
 				discover_country = ROOT
 			}
-			#le event
+			hidden_effect = {
+				country_event = { 
+				id = bosisi.10
+				days = 30
+				}
+			}	
 		}	
 	}
 	antiash_kars = {
@@ -345,9 +350,12 @@ antiash_1 = {
 			tsaj_area = {
 				add_permanent_claim = ROOT
 			}
-			#le event
 			moria_region = {
 				discover_country = ROOT
+			}
+			country_event = { 
+				id = bosisi.12
+				days = 1
 			}
 		}	
 	}
@@ -993,14 +1001,7 @@ antiash_4 = {
 			}
 		}
 		provinces_to_highlight = {
-			OR = {
-			area = unnamed_area_11
-			area = diam_area
-			area = mahansha_area
-			area = shol_area
-			area = ropinver_area
-			area = hoxoi_area
-			}
+			region = eastern_desert_region
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		effect = {
@@ -1025,8 +1026,11 @@ antiash_4 = {
 			unnamed_area_31 = {
 				add_permanent_claim = ROOT
 			}
-			#le event
-		}
+			country_event = { 
+				id = bosisi.4
+				days = 1
+			}
+		}	
 	}
 	antiash_kinvirel = {
 		icon = mission_hanseatic_city
@@ -1056,7 +1060,10 @@ antiash_4 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		effect = {
-			#le event
+			country_event = { 
+				id = bosisi.5
+				days = 1
+			}
 			kapolia_region = {
 				add_permanent_claim = ROOT
 				discover_country = ROOT
@@ -1279,7 +1286,12 @@ antiash_5 = {
 				name = "antiash_invasion"
 				duration = 9125 #25 years
 			}
-			#le event
+			hidden_effect = {
+				country_event = { 
+				id = bosisi.6
+				days = 30
+				}
+			}
 		}
 	}
 	antiash_yabonia = {
