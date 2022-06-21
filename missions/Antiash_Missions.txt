@@ -418,6 +418,21 @@ antiash_2 = {
 		}
     }
 	has_country_shield = yes
+	antiash_army = {
+	icon = mission_conquer_5_states
+		required_missions = {
+		
+		}
+		trigger = {
+			army_size_percentage = 1
+		}
+		effect = {
+			add_country_modifier = {
+				name = "thriving_arms_industry"
+				duration = 9125 #25 years
+			}
+		}
+	}
 	antiash_into = {
 		icon = mission_conquer_5_states
 		position = 9
@@ -649,7 +664,7 @@ antiash_3 = {
         }
        
 		provinces_to_highlight = {
-			provincegroup = south_delkia
+			province_group = south_delkia
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
        
@@ -815,6 +830,19 @@ antiash_4 = {
 		}
     }
 	has_country_shield = yes
+	antiash_buildings = {
+		icon = mission_early_game_buildings
+		trigger = {
+			temple = 5
+			workshop = 5
+		}
+		effect = {
+			add_country_modifier = {
+				name = "growing_economy"
+				duration = 9125 #25 years
+			}
+		}	
+	}
 	antiash_invade = {
 		icon = mission_cossack_cavalry
 		position = 7
@@ -848,6 +876,17 @@ antiash_4 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
+		provinces_to_highlight = {
+			OR = {
+			area = unnamed_area_11
+			area = diam_area
+			area = mahansha_area
+			area = shol_area
+			area = ropinver_area
+			area = hoxoi_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
 		effect = {
 			unnamed_area_12 = {
 				add_permanent_claim = ROOT
@@ -872,17 +911,6 @@ antiash_4 = {
 			}
 		}
 	}
-		provinces_to_highlight = {
-			OR = {
-			area = unnamed_area_11
-			area = diam_area
-			area = mahansha_area
-			area = shol_area
-			area = ropinver_area
-			area = hoxoi_area
-			}
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
-		}
 	antiash_kinvirel = {
 		icon = mission_hanseatic_city
 		required_missions = {
@@ -929,7 +957,7 @@ antiash_5 = {
     }
 	has_country_shield = yes
 	antiash_approach = {
-		icon =  mission_assemble_an_army
+		icon =  mission_prepare_an_invasion_force
 		position = 4
 		required_missions = {
 			antiash_population
@@ -957,11 +985,7 @@ antiash_5 = {
 		provinces_to_highlight = {
 			OR = {
 				province_id = 7972
-				province_id = 7960
-				province_id = 7959
-				province_id = 7958
-				province_id = 7957
-				province_id = 7956
+				area = 243
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
