@@ -87,8 +87,11 @@ antiash_1 = {
 				cede_province = ROOT
 				add_core = ROOT
 			}
-			
 			add_years_of_income = 0.25
+			add_country_modifier = {
+				name = "antiash_nostalgic_journey"
+				duration = 9125 #25 years
+			}
 		}	
 	}
 	antiash_tokum = {
@@ -192,6 +195,10 @@ antiash_1 = {
 			okus_area = {
 				add_permanent_claim = ROOT
 			}
+			maky_region = {
+				discover_country = ROOT
+			}
+			#le event
 		}	
 	}
 	antiash_kars = {
@@ -251,6 +258,48 @@ antiash_1 = {
 			vaximor_area = {
 				add_permanent_claim = ROOT
 			}
+			okus_area = {
+				add_province_modifier = {
+					name = antiash_raid_victim
+					duration = 3650
+				}
+			}
+			area_239 = {
+				add_province_modifier = {
+					name = antiash_raid_receiver
+					duration = 3650
+				}
+			}
+			area_238 = {
+				add_province_modifier = {
+					name = antiash_raid_receiver
+					duration = 3650
+				}
+			}
+			area_237 = {
+				add_province_modifier = {
+					name = antiash_raid_receiver
+					duration = 3650
+				}
+			}
+			area_236 = {
+				add_province_modifier = {
+					name = antiash_raid_receiver
+					duration = 3650
+				}
+			}
+			arlenta_region = {
+				discover_country = ROOT
+			}
+			unnamed_area_9 = {
+				discover_country = ROOT
+			}
+			zeaf_area = {
+				discover_country = ROOT
+			}
+			tsaj_area = {
+				discover_country = ROOT
+			}
 		}	
 	}
 	antiash_delta = {
@@ -295,6 +344,10 @@ antiash_1 = {
 			}
 			tsaj_area = {
 				add_permanent_claim = ROOT
+			}
+			#le event
+			moria_region = {
+				discover_country = ROOT
 			}
 		}	
 	}
@@ -374,7 +427,7 @@ antiash_1 = {
 	antiash_pyarxu = {
 		icon =  mission_establish_high_seas_navy
 		required_missions = {
-            antiash_moshiria
+            antiash_jexus
 		}
 		trigger = {
 			vau_area = {
@@ -482,6 +535,16 @@ antiash_2 = {
 			calla_area = {
 				add_permanent_claim = ROOT
 			}
+			add_country_modifier = {
+				name = "antiash_entering_ga_xal"
+				duration = 9125 #25 years
+			}
+			north_xalia_region = {
+				discover_country = ROOT
+			}
+			moxon_region = {
+				discover_country = ROOT
+			}
 		}
 	}
 	antiash_xon = {
@@ -503,7 +566,13 @@ antiash_2 = {
 			}
         }
 		effect = {
-			#idk
+			ga_xal_superregion = {
+				limit = { 
+					NOT = { country_or_non_sovereign_subject_holds = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
+			#something
 		}	
 	}
 	
@@ -613,6 +682,16 @@ antiash_3 = {
 			cede_province = ROOT
 			add_core = ROOT
 			}
+			hidden_effect = {
+				east_great_desert_region = {
+					add_permanent_claim = ROOT
+				}
+				5184 = {
+					add_permanent_claim = ROOT
+				}
+				#to make killing desert tribes easier
+			}
+			add_prestige = 25
 		}
     }
 	antiash_delkum = {
@@ -647,6 +726,15 @@ antiash_3 = {
 			south_delkia = {
 			add_permanent_claim = ROOT
 			}
+			marn_area = {
+				discover_country = ROOT
+			}
+			houras_area = {
+				discover_country = ROOT
+			}
+			unnamed_area_10 = {
+				discover_country = ROOT
+			}
 		}
     }
 	antiash_south_delkia = {
@@ -677,6 +765,15 @@ antiash_3 = {
 			}
 			hoxona_area = {
 			add_permanent_claim = ROOT
+			}
+			east_xalia_region = {
+				discover_country = ROOT
+			}
+			hoxona_area = {
+				discover_country = ROOT
+			}
+			ropinver_area = {
+				discover_country = ROOT
 			}
 		}
     }
@@ -714,9 +811,6 @@ antiash_3 = {
 			add_permanent_claim = ROOT
 			}
 			ropinver_area = {
-			add_permanent_claim = ROOT
-			}
-			hoxoi_area = {
 			add_permanent_claim = ROOT
 			}
 		}
@@ -838,7 +932,7 @@ antiash_4 = {
 		}
 		effect = {
 			add_country_modifier = {
-				name = "growing_economy"
+				name = "antiash_production"
 				duration = 9125 #25 years
 			}
 		}	
@@ -1044,7 +1138,24 @@ antiash_5 = {
 				cede_province = ROOT
 				add_core = ROOT
 			}
-			
+			area_244 = {
+				discover_country = ROOT
+			}
+			diam_area = {
+				discover_country = ROOT
+			}
+			hoxoi_area = {
+				discover_country = ROOT
+			}
+			mahansha_area = {
+				discover_country = ROOT
+			}
+			unnamed_area_11 = {
+				discover_country = ROOT
+			}
+			shol_area = {
+				discover_country = ROOT
+			}
 		}
 	}
 	
@@ -1124,19 +1235,15 @@ antiash_5 = {
 				cede_province = ROOT
 				add_core = ROOT
 			}
-			
-			unnamed_area_11 = {
+			eastern_desert_region = {
 				add_permanent_claim = ROOT
 			}
-			diam_area = {
-				add_permanent_claim = ROOT
+			unnamed_area_12 = {
+				discover_country = ROOT
 			}
-			mahansha_area = {
-				add_permanent_claim = ROOT
-			}
-			shol_area = {
-				add_permanent_claim = ROOT
-			}
+			jasua_region = {
+				discover_country = ROOT
+			}	
 		}
 	}
 	antiash_yabonia = {
