@@ -455,6 +455,12 @@ antiash_1 = {
 			xon_area = {
 				add_permanent_claim = ROOT
 			}
+			5404 = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+			}
+			create_admiral = { tradition = 75 }
 		}	
 	}
 }
@@ -796,7 +802,6 @@ antiash_3 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
         }
-        
 		provinces_to_highlight = {
 			OR = {
 			area = houras_area
@@ -805,13 +810,16 @@ antiash_3 = {
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
-       
         effect = {
 			marn_area = {
 			add_permanent_claim = ROOT
 			}
 			ropinver_area = {
 			add_permanent_claim = ROOT
+			}
+			add_country_modifier = {
+				name = "antiash_dominating_the_region"
+				duration = 9125 #25 years
 			}
 		}
     }
@@ -842,7 +850,14 @@ antiash_3 = {
 			marnet_area = {
 			add_permanent_claim = ROOT
 			}
+			marn_area = {
+				add_province_modifier = {
+					name = antiash_new_fortifications
+					duration = 9125 #25 years
+				}
+			}
 		}
+		
     }
 	antiash_calla = {
 		icon =  mission_galleys_in_port
@@ -907,6 +922,33 @@ antiash_3 = {
 			xon_area = {
 				add_permanent_claim = ROOT
 			}
+			5399 = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+				add_unit_construction = {
+				type = galley
+				amount = 5
+				speed = 0.1
+				cost = 0
+				}
+			}
+			5398 = {
+				add_unit_construction = {
+				type = galley
+				amount = 5
+				speed = 0.1
+				cost = 0
+				}
+			}
+			5447 = {
+				add_unit_construction = {
+				type = galley
+				amount = 5
+				speed = 0.1
+				cost = 0
+				}
+			}
 		}	
 	}
 
@@ -945,27 +987,7 @@ antiash_4 = {
 			antiash_delkian
 		}
 		trigger = {
-			unnamed_area_11 = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			diam_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			mahansha_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			shol_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			ropinver_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			hoxoi_area = {
+			eastern_desert_region = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -1003,6 +1025,7 @@ antiash_4 = {
 			unnamed_area_31 = {
 				add_permanent_claim = ROOT
 			}
+			#le event
 		}
 	}
 	antiash_kinvirel = {
@@ -1033,7 +1056,15 @@ antiash_4 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		effect = {
-			#idk
+			#le event
+			kapolia_region = {
+				add_permanent_claim = ROOT
+				discover_country = ROOT
+			}
+			add_country_modifier = {
+				name = "antiash_kinvireli_trade"
+				duration = -1
+			}
 		}
 	}
 }
@@ -1243,7 +1274,12 @@ antiash_5 = {
 			}
 			jasua_region = {
 				discover_country = ROOT
-			}	
+			}
+			add_country_modifier = {
+				name = "antiash_invasion"
+				duration = 9125 #25 years
+			}
+			#le event
 		}
 	}
 	antiash_yabonia = {
@@ -1280,7 +1316,27 @@ antiash_5 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		effect = {
-			#idk
+			jasua_region = {
+				limit = {
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			5616 = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+			}
+			5612 = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+			}
+			5631 = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+			}
 		}
 	}
 }
