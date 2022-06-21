@@ -1094,6 +1094,11 @@ umz_5 = {
 				}
 			}
 			create_march = IMG
+			hidden_effect = {
+				IMG = {
+					change_religion = ROOT
+				}
+			}
 			add_spy_network_in = {
 				who = TCK
 				value = -35
@@ -1180,6 +1185,11 @@ umz_5 = {
 						
 		   }
 		  create_march = QUA
+			hidden_effect = {
+				QUA = {
+				change_religion = ROOT
+				}
+			}
 		  5072 = { 
 				custom_tooltip = umz_tck_partition_tooltip	
 				owner = { 
