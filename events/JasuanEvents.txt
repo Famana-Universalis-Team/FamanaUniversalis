@@ -1014,63 +1014,6 @@ country_event = { #nafan fashran peace
 	}
 }
 
-country_event = {
-	id = jasuaE.20
-	title = jasuaE.20.t
-	desc = jasuaE.20.d
-	picture = SIEGE_eventPicture
-	hidden = yes
-	fire_only_once = yes
-
-	trigger = {
-		is_year = 225
-		tag = BLK
-		is_subject_of = FAS
-		BLK = {
-			ai = yes
-		}
-		FAS = {
-			ai = yes
-		}
-		NOT = {
-			total_development = 200
-		}
-	}
-
-	immediate = {
-		every_owned_province = {
-			add_core = FAS
-		}
-		FAS = {
-			inherit = BLK
-		}
-		borlebim_area = {
-			limit = { 
-				is_empty = yes
-			}
-			create_colony = 1000
-			cede_province = BLK
-			add_core = BLK
-			change_culture = Bilik_C
-			change_religion = bilik
-			add_base_tax = 1
-			add_base_production = 1
-			add_base_manpower = 1
-		}
-		BLK = {
-			override_country_name = Borlebin
-			change_religion = bilik
-		}
-		BLK = {
-			country_event = {
-				id = jasuaE.17
-				days = 30
-			}
-			set_country_flag = borlebinMigrated
-		}
-	}
-
-
 #nafa (spawn if occupied)
 country_event = {
 	id = jasuaE.20
@@ -1148,9 +1091,9 @@ country_event = {
 }
 #Bohoran culture shift
 country_event = {
-	id = JasuaE.21
-	title = JasuaE.21.t
-	desc = JasuaE.21.d
+	id = jasuaE.21
+	title = jasuaE.21.t
+	desc = jasuaE.21.d
 	picture = REFORM_eventPicture
 	fire_only_once = yes
 
@@ -1217,4 +1160,94 @@ country_event = {
 		}
 	}
 
+}
+
+country_event = {
+	id = jasuaE.22
+	title = jasuaE.22.t
+	desc = jasuaE.22.d
+	picture = REFORM_eventPicture
+	hidden = yes
+
+	trigger = {
+		any_owned_province = {
+			has_province_modifier = kachik_religious_autonomy
+		}
+		NOT = { has_estate_privilege = estate_church_kachik_religious_rights }
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	immediate = {
+		every_owned_province = {
+			limit = {
+				has_province_modifier = kachik_religious_autonomy
+			}
+			remove_province_modifier = kachik_religious_autonomy
+		}
+	}
+
+	option = {
+		name = jasuaE.22.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = {
+	id = jasuaE.23
+	title = jasuaE.23.t
+	desc = jasuaE.23.d
+	picture = SIEGE_eventPicture
+	hidden = yes
+	fire_only_once = yes
+
+	trigger = {
+		is_year = 225
+		tag = BLK
+		is_subject_of = FAS
+		BLK = {
+			ai = yes
+		}
+		FAS = {
+			ai = yes
+		}
+		NOT = {
+			total_development = 200
+		}
+	}
+
+	immediate = {
+		every_owned_province = {
+			add_core = FAS
+		}
+		FAS = {
+			inherit = BLK
+		}
+		borlebim_area = {
+			limit = { 
+				is_empty = yes
+			}
+			create_colony = 1000
+			cede_province = BLK
+			add_core = BLK
+			change_culture = Bilik_C
+			change_religion = bilik
+			add_base_tax = 1
+			add_base_production = 1
+			add_base_manpower = 1
+		}
+		BLK = {
+			override_country_name = Borlebin
+			change_religion = bilik
+		}
+		BLK = {
+			country_event = {
+				id = jasuaE.17
+				days = 30
+			}
+			set_country_flag = borlebinMigrated
+		}
+	}
 }

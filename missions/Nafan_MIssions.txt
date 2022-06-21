@@ -17,11 +17,27 @@ eclipse_1 = {
         icon = mission_entrepot_of_india
         required_missions = { }
         trigger = {
+            5488 = {
+                base_production = 10
+                owned_by = ROOT
+            }
         }
         effect = {
-            
+            add_country_modifier = {
+                name = kalargan_gold_country
+                duration = 9125
+            }
+            5488 = {
+                add_province_modifier = {
+                    name = kalargan_gold_modifier
+                    duration = -1
+                }
+            }
+            add_treasury = 250
         }
-        #provinces_to_highlight = {}
+        provinces_to_highlight = {
+            province_id = 5488
+        }
     }
 
     eclipse_great_port_of_bohora = {
@@ -30,7 +46,17 @@ eclipse_1 = {
         trigger = {
         }
         effect = {
-            
+            #OTHER EFFECTS
+
+            5485 = {
+                change_trade_goods = cloth
+            }
+            5486 = {
+                change_trade_goods = wine
+            }
+            5487 = {
+                change_trade_goods = paper
+            }
         }
         #provinces_to_highlight = {}
     }
