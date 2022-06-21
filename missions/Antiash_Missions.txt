@@ -1,7 +1,7 @@
 antiash_1 = {
 	slot = 1
     generic = no
-    ai = no
+    ai = yes
 	potential = {
         NOT = { map_setup = map_setup_random }
 		OR = {
@@ -35,6 +35,12 @@ antiash_1 = {
 			infantry_in_province = 2
 			}
         }
+		provinces_to_highlight = {
+			OR = {
+			area = area_234
+			province_id = 7967
+			}
+		}
 		effect = {
 			7967 = {
 				kill_units = {
@@ -90,7 +96,12 @@ antiash_1 = {
 		required_missions = {
             antiash_homeland
         }
-		
+		provinces_to_highlight = {
+			OR = {
+			area = kars_area
+			province_id = 5150
+			}
+		}
 		trigger = {
 			5150 = {
 			infantry_in_province = 2
@@ -193,14 +204,25 @@ antiash_1 = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			#rishtokay_area = {
-				#type = all
-				#limit = {
-					#NOT = { is_empty = yes }
-				#}
-				#country_or_non_sovereign_subject_holds = ROOT
-			#}
+			5145 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			5149 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			5143 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
         }
+		provinces_to_highlight = {
+			OR = {
+			area = okus_area
+			province_id = 5145
+			province_id = 5149
+			province_id = 5143
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
 		effect = {
 			5556 = {
 			cede_province = ROOT
@@ -250,6 +272,14 @@ antiash_1 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
         }
+		provinces_to_highlight = {
+			OR = {
+			area = makykay_area
+			area = bava_area
+			area = vaximor_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
 		effect = {
 			5557 = {
 			cede_province = ROOT
@@ -287,6 +317,14 @@ antiash_1 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
         }
+		provinces_to_highlight = {
+			OR = {
+			area = unnamed_area_9
+			area = zeaf_area
+			area = tsaj_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
 		effect = {
 			morsum_area = {
 				add_permanent_claim = ROOT
@@ -313,6 +351,14 @@ antiash_1 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
         }
+		provinces_to_highlight = {
+			OR = {
+			area = abvori_area
+			area = jexus_area
+			area = walamo_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
 		effect = {
 			vau_area = {
 				add_permanent_claim = ROOT
@@ -344,6 +390,14 @@ antiash_1 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
         }
+		provinces_to_highlight = {
+			OR = {
+			area = vau_area
+			area = unnamed_area_21
+			area = pyarxu_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
 		effect = {
 			xon_area = {
 				add_permanent_claim = ROOT
@@ -354,7 +408,7 @@ antiash_1 = {
 antiash_2 = {
 	slot = 2
     generic = no
-    ai = no
+    ai = yes
 	potential = {
         NOT = { map_setup = map_setup_random }
 		OR = {
@@ -386,6 +440,14 @@ antiash_2 = {
 			}
 		
 		}
+		provinces_to_highlight = {
+			OR = {
+			area = morsum_area
+			area = marnet_area
+			area = sixan_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
 		effect = {
 			abvori_area = {
 				add_permanent_claim = ROOT
@@ -409,10 +471,15 @@ antiash_2 = {
 	}
 	antiash_xon = {
 		icon =  mission_conquer_50_development
-		position = 13 
+		position = 12 
 		required_missions = {
             antiash_relxal
 			antiash_pyarxu
+		}
+	
+		provinces_to_highlight = {
+			area = xon_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
 			xon_area = {
@@ -429,7 +496,7 @@ antiash_2 = {
 antiash_3 = {
 	slot = 3
     generic = no
-    ai = no
+    ai = yes
 	potential = {
         NOT = { map_setup = map_setup_random }
 		OR = {
@@ -452,8 +519,11 @@ antiash_3 = {
 				value = 10
 			}
         }
-        
        
+		provinces_to_highlight = {
+			province_id = 7237
+		}
+
         effect = {
 			declare_war_with_cb = {
 			who = TIT
@@ -478,7 +548,10 @@ antiash_3 = {
 				}
 			}
         }
-        
+      
+		provinces_to_highlight = {
+			area = area_239
+		}
        
         effect = {
 			7236 = {
@@ -539,7 +612,10 @@ antiash_3 = {
 			infantry_in_province = 2
 			}
         }
-        
+      
+		provinces_to_highlight = {
+			province_id = 7962
+		}
        
         effect = {
 			7962 = {
@@ -571,7 +647,11 @@ antiash_3 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
         }
-        
+       
+		provinces_to_highlight = {
+			provincegroup = south_delkia
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
        
         effect = {
 			houras_area = {
@@ -605,6 +685,14 @@ antiash_3 = {
 			}
         }
         
+		provinces_to_highlight = {
+			OR = {
+			area = houras_area
+			area = hoxona_area
+			province_id = 5173
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
        
         effect = {
 			marn_area = {
@@ -633,6 +721,10 @@ antiash_3 = {
 			}
         }
         
+		provinces_to_highlight = {
+			area = marn_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
        
         effect = {
 			sixan_area = {
@@ -663,6 +755,14 @@ antiash_3 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
         }
+		provinces_to_highlight = {
+			OR = {
+			area = calla_area
+			area = vinsa_area
+			area = sostus_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
 		effect = {
 			vinon_area = {
 				add_permanent_claim = ROOT
@@ -673,8 +773,7 @@ antiash_3 = {
 		}	
 	}
 	antiash_relxal = {
-		icon =  mission_italian_condottiere
-		position = 12 
+		icon =  mission_italian_condottiere 
 		required_missions = {
             antiash_calla
 		}
@@ -688,6 +787,13 @@ antiash_3 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
         }
+		provinces_to_highlight = {
+			OR = {
+			area = vinon_area
+			area = oxaled_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
 		effect = {
 			xon_area = {
 				add_permanent_claim = ROOT
@@ -699,7 +805,7 @@ antiash_3 = {
 antiash_4 = {
 	slot = 4
     generic = no
-    ai = no
+    ai = yes
 	potential = {
         NOT = { map_setup = map_setup_random }
 		OR = {
@@ -766,6 +872,17 @@ antiash_4 = {
 			}
 		}
 	}
+		provinces_to_highlight = {
+			OR = {
+			area = unnamed_area_11
+			area = diam_area
+			area = mahansha_area
+			area = shol_area
+			area = ropinver_area
+			area = hoxoi_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
 	antiash_kinvirel = {
 		icon = mission_hanseatic_city
 		required_missions = {
@@ -785,6 +902,14 @@ antiash_4 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
+		provinces_to_highlight = {
+			OR = {
+			area = kinvirel_area
+			area = unnamed_area_13
+			area = unnamed_area_31
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
 		effect = {
 			#idk
 		}
@@ -793,7 +918,7 @@ antiash_4 = {
 antiash_5 = {
 	slot = 5
     generic = no
-    ai = no
+    ai = yes
 	potential = {
         NOT = { map_setup = map_setup_random }
 		OR = {
@@ -828,6 +953,17 @@ antiash_5 = {
 			7956 = {
 				infantry_in_province = 2
 			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 7972
+				province_id = 7960
+				province_id = 7959
+				province_id = 7958
+				province_id = 7957
+				province_id = 7956
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		effect = {
 			7972 = {
@@ -887,6 +1023,7 @@ antiash_5 = {
 			
 		}
 	}
+	
 	antiash_further = {
 		icon = mission_manchu_warrior
 		position = 6
@@ -909,6 +1046,13 @@ antiash_5 = {
 			7952 = {
 				infantry_in_province = 2
 			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 5184
+				area = area_224
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		effect = {
 			5184 = {
@@ -994,6 +1138,15 @@ antiash_5 = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = unnamed_area_50
+				area = unnamed_area_12
+				area = unnamed_area_51
+				area = unnamed_area_49
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		effect = {
 			#idk

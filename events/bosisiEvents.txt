@@ -112,6 +112,9 @@ country_event = {
 				limit = {
 					region = east_great_desert_region 
 					is_empty = yes
+					NOT = {
+					area = area_239
+					}
 				}
 				cede_province = TIT
 				add_core = TIT
