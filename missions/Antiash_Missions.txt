@@ -294,7 +294,7 @@ antiash_1 = {
 		}	
 	}
 	antiash_jexus = {
-		icon =  mission_impaled_soldies
+		icon =  mission_chinese_general_riding
 		position = 10
 		required_missions = {
             antiash_into
@@ -308,12 +308,16 @@ antiash_1 = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
+			walamo_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
         }
 		effect = {
 			vau_area = {
 				add_permanent_claim = ROOT
 			}
-			walamo_area = {
+			pyarxu_area = {
 				add_permanent_claim = ROOT
 			}
 			annamed_area_21 = {
@@ -321,17 +325,13 @@ antiash_1 = {
 			}
 		}	
 	}
-	antiash_moshiria = {
-		icon =  mission_chinese_general_riding
+	antiash_pyarxu = {
+		icon =  mission_establish_high_seas_navy
 		required_missions = {
-            antiash_jexus
+            antiash_moshiria
 		}
 		trigger = {
 			vau_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			walamo_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -339,19 +339,6 @@ antiash_1 = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-        }
-		effect = {
-			pyarxu_area = {
-				add_permanent_claim = ROOT
-			}
-		}	
-	}
-	antiash_pyarxu = {
-		icon =  mission_chinese_general_riding
-		required_missions = {
-            antiash_moshiria
-		}
-		trigger = {
 			pyarxu_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -404,6 +391,9 @@ antiash_2 = {
 				add_permanent_claim = ROOT
 			}
 			jexus_area = {
+				add_permanent_claim = ROOT
+			}
+			walamo_area  ={
 				add_permanent_claim = ROOT
 			}
 			sustus_area = {
