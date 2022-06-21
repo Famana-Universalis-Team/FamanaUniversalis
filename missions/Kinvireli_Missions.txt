@@ -520,49 +520,15 @@ kin_4 = {
         icon = mission_conquer_maharashtra
         required_missions = { kin_destruction_of_yabonia }
         provinces_to_highlight = {
-			OR = {
-                area = unnamed_area_33
-                area = unnamed_area_56
-                area = unnamed_area_32
-                area = unnamed_area_30
-                area = geccis_area
-                area = unnamed_area_29
-                area = unnamed_area_52
-            }
+			region = kapolia_region
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
             OR = {
-                AND = {
-                    unnamed_area_33 = {
-				        type = all
-				        country_or_non_sovereign_subject_holds = ROOT
-			        }
-                    unnamed_area_56 = {
-				        type = all
-				        country_or_non_sovereign_subject_holds = ROOT
-			        }
-                    unnamed_area_32 = {
-				        type = all
-				        country_or_non_sovereign_subject_holds = ROOT
-			        }
-                    unnamed_area_30 = {
-				        type = all
-				        country_or_non_sovereign_subject_holds = ROOT
-			        }
-                    geccis_area = {
-				        type = all
-				        country_or_non_sovereign_subject_holds = ROOT
-			        }
-                    unnamed_area_29 = {
-				        type = all
-				        country_or_non_sovereign_subject_holds = ROOT
-			        }
-                    unnamed_area_52 = {
-				        type = all
-				        country_or_non_sovereign_subject_holds = ROOT
-			        }
-                }
+                kapolia_region = {
+				    type = all
+				    country_or_non_sovereign_subject_holds = ROOT
+			    }
                 AND = {
                     army_strength = {
                         who = KAP
@@ -613,40 +579,13 @@ kin_4 = {
                 if = {
                     limit = {
                         AND = {
-                            unnamed_area_33 = {
+                            kapolia_region = {
 				                type = all
 				                country_or_non_sovereign_subject_holds = ROOT
 			                }
-                            unnamed_area_56 = {
-	    			            type = all
-		    		            country_or_non_sovereign_subject_holds = ROOT
-			                }
-                            unnamed_area_32 = {
-				                type = all
-				                country_or_non_sovereign_subject_holds = ROOT
-    			            }
-                            unnamed_area_30 = {
-		    		            type = all
-			    	            country_or_non_sovereign_subject_holds = ROOT
-			                }
-                            geccis_area = {
-				                type = all
-				                country_or_non_sovereign_subject_holds = ROOT
-    			            }
-                            unnamed_area_29 = {
-		    		            type = all
-			    	            country_or_non_sovereign_subject_holds = ROOT
-			                }
-                            unnamed_area_52 = {
-				                type = all
-				                country_or_non_sovereign_subject_holds = ROOT
-    			            }
                         }
                     }
-                    bohora_area = {
-                        add_permanent_claim = ROOT
-                    }
-                    kachik_area = {
+                    stroktur_region = {
                         add_permanent_claim = ROOT
                     }
                 }

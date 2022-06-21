@@ -3517,7 +3517,7 @@ country_decisions = {
 			owns_core_province = 5488
 			num_of_owned_provinces_with = {
 				value = 8
-				region = kapolia_region
+				region = stroktur_region
 			}
 		}
 		effect = {
@@ -3541,10 +3541,7 @@ country_decisions = {
 			5488 = {
 				move_capital_effect = yes
 			}
-			kachik_area = {
-				add_core = KLG
-			}
-			bohora_area = {
+			stroktur_region = {
 				add_core = KLG
 			}
 			if = {
@@ -3558,7 +3555,7 @@ country_decisions = {
 				duration = 7300
 			}
 			add_prestige = 10
-			#swap_non_generic_missions = yes
+			swap_non_generic_missions = yes
 		}
 		ai_will_do = {
 			factor = 1

@@ -12,10 +12,10 @@ add_core = SKT
 
 hre = no
 
-base_tax = 5
-base_production = 4
+base_tax = 3
+base_production = 3
 trade_goods = fish
-base_manpower = 5
+base_manpower = 4
 capital = "Peyss Jent"
 is_city = yes
 extra_cost = 1

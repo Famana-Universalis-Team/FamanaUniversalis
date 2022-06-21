@@ -333,9 +333,9 @@
  bohora_area:0 "Bohora"
  bohora_area_name:0 "Bohora"
  bohora_area_adj:0 "Bohoran"
- unnamed_area_29:0 "Maru"
- unnamed_area_29_name:0 "Maru"
- unnamed_area_29_adj:0 "Maruian"
+ unnamed_area_29:0 "Affan"
+ unnamed_area_29_name:0 "Affan"
+ unnamed_area_29_adj:0 "Affani"
  unnamed_area_30:0 "Degladon"
  unnamed_area_30_name:0 "Degladon"
  unnamed_area_30_adj:0 "Degladonian"
@@ -1234,7 +1234,12 @@
  area_239:0 "Makorr"
  area_239_name:0 "Makorr"
  area_239_adj:0 "Makorri"
-
+ maru_area:0 "Maru"
+ maru_area_name:0 "Maru"
+ maru_area_adj:0 "Maruan"
+ leta_area:0 "Leta"
+ leta_area_name:0 "Leta"
+ leta_area_adj:0 "Letan"
  #Regions
  upper_oppia_region:0 "Upper Oppia"
  upper_oppia_region_name:0 "Upper Oppia"
@@ -1425,6 +1430,9 @@
  northwest_bhilis_region:0 "Northwest Bhilis"
  northwest_bhilis_region_desc:0 "Northwest Bhilis"
  northwest_bhilis_region_adj:0 "Northwestern Bhili"
+ stroktur_region:0 "Stroktur"
+ stroktur_region_name:0 "Stroktur"
+ stroktur_region_adj:0 "Stroktur"
 
  #Subcontinents
  oppia_superregion:0 "Oppia"

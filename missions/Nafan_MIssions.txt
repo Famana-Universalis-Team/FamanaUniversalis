@@ -180,11 +180,7 @@ eclipse_5 = {
             5491 = {
                 religion = lathvy
             }
-            kachik_area = {
-                type = all
-                NOT = { local_autonomy = 1 }
-            }
-            bohora_area = {
+            stroktur_region = {
                 type = all
                 NOT = { local_autonomy = 1 }
             }

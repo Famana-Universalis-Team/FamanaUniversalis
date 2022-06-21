@@ -649,10 +649,7 @@ country_decisions = {
 				tooltip = blood_red_tooltip
 				NOT = {
 					any_province = {
-						OR = {
-							area = bohora_area
-							area = kachik_area
-						}
+						region = stroktur_region
 						culture = Kachik
 					}
 				}

@@ -470,8 +470,6 @@ west_emastalia_region = {
 
 kapolia_region = {
 	areas = {
-		kachik_area
-		bohora_area
 		unnamed_area_29
 		unnamed_area_30
 		unnamed_area_33
@@ -772,5 +770,14 @@ northwest_bhilis_region = {
 	areas = {
 		channel_islands_area
 		area_205
+	}
+}
+
+stroktur_region = {
+	areas = {
+		bohora_area
+		kachik_area
+		maru_area
+		leta_area
 	}
 }
