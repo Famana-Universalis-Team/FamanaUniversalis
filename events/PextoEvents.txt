@@ -329,7 +329,7 @@ country_event = {
 	option = {
 		trigger = {
 			NOT = {
-				AND = {
+				OR = {
 					has_global_flag = newpexamoldeal
 					5561 = {
 						owned_by = PEX
@@ -345,6 +345,7 @@ country_event = {
 			owner = {
 				country_event = {
 					id = pexto.11
+					days = 1
 				}
 			}
 		}
@@ -893,7 +894,7 @@ country_event = {
 		}
 		random_list = {
 			1 = { #Nevia wins the trial
-				PNV = {
+				PEX = {
 					country_event = {
 						days = 10
 						id = pexto.28
@@ -901,7 +902,7 @@ country_event = {
 				}
 			}
 			1 = { #Pixrol wins the trial
-				PNV = {
+				PEX = {
 					country_event = {
 						days = 10
 						id = pexto.29
@@ -952,7 +953,7 @@ country_event = {
 
 	}
 	option = { #Let them fight it out
-		name = pexto.23.d
+		name = pexto.23.e
 		ai_chance = { factor = 1 }
 		5309 = {
 			add_nationalism = 10
