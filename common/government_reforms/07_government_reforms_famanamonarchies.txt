@@ -338,6 +338,7 @@ nokadi_reform = {
 	icon = "sakdina_system_reform"
 	potential = {
 		tag = NKM
+		dynasty = "Nokadi"
 	}
 	valid_for_nation_designer = no
 

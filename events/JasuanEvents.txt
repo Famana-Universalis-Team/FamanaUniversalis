@@ -1186,6 +1186,21 @@ country_event = {
 			add_accepted_culture = Bohoran_E
 			remove_accepted_culture	= Bohoran
 		}
+		hidden_effect = {
+			every_country = {
+				limit = {
+					accepted_culture = Bohoran
+				}
+				change_primary_culture = Bohoran_E
+			}
+			every_country = {
+				limit = {
+					primary_culture = Bohoran
+				}
+				add_accepted_culture = Bohoran_E
+				remove_accepted_culture	= Bohoran
+			}
+		}
 	}
 	
 	option = {
