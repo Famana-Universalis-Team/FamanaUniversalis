@@ -891,9 +891,34 @@ vanoman_settlement_modifier = {
     institution_spread_from_true_faith = 0.20
 }
 
-antiash_settlers = {
+antiash_raid_receiver = {
     development_cost = -0.15
+	local_prosperity_growth = 0.2
 }
+
+antiash_raid_victim = {
+    local_monthly_devastation = 0.3
+	local_tax_modifier = 0.3
+}
+
+antiash_production = {
+   production_efficiency = 0.10
+}
+
+antiash_nostalgic_journey = {
+	global_unrest = -3
+	global_manpower_modifier = 0.10
+}
+
+antiash_entering_ga_xal = {
+	loot_amount = 0.15
+	raze_power_gain = 0.15
+}
+
+antiash_nostalgic_journey = {
+	global_unrest = -3
+	global_manpower_modifier = 0.10
+} 
 
 kalargan_gold_country = {
     monthly_gold_inflation_modifier = -0.50
