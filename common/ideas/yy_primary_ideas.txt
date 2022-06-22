@@ -801,3 +801,42 @@ Kachik_ideas = {
 		vassal_income = 0.25
 	}
 }
+
+Lukscha_ideas = {
+	start = {
+		loot_amount = 0.50
+		leader_land_shock = 1
+	}
+	
+	bonus = {
+		global_unrest = -1
+	}
+
+	trigger = {
+		primary_culture = Lukschan
+	}
+	free = yes
+	
+	Lukscha_1 = {
+		shock_damage = 0.10
+	}
+	Lukscha_2 = {
+		land_morale = 0.05
+		siege_ability = 0.10
+	}
+	Lukscha_3 = {
+		unjustified_demands = -0.20
+	}
+	Lukscha_4 = {
+		manpower_recovery_speed = 0.15
+	}
+	Lukscha_5 = {
+		possible_policy = 1
+	}
+	Lukscha_6 = {
+		land_attrition = -0.10
+	}
+	Lukscha_7 = {
+		prestige_decay = -0.01
+	}
+}

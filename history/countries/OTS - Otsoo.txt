@@ -1,0 +1,21 @@
+government = tribal
+add_government_reform = tribal_kingdom
+government_rank = 1
+mercantilism = 10
+technology_group = gotzlic_tech_gr
+religion = lukschan_R
+primary_culture = Lukschan
+#historical_rival = 
+#historical_friend = 
+capital = 6505
+
+200.1.1 = {
+	monarch = {
+		name = "Ursoo"
+		dynasty = "Ve Oiko"
+		birth_date = 193.12.12
+		adm = 0
+		dip = 3
+		mil = 5
+	}
+}

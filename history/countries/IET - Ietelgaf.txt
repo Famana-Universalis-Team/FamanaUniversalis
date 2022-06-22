@@ -1,0 +1,21 @@
+government = tribal
+add_government_reform = tribal_kingdom
+government_rank = 1
+mercantilism = 10
+technology_group = gotzlic_tech_gr
+religion = lukschan_R
+primary_culture = Lukschan
+#historical_rival = 
+#historical_friend = 
+capital = 6502
+
+200.1.1 = {
+	monarch = {
+		name = "Irusuas"
+		dynasty = "Anekssys"
+		birth_date = 187.12.12
+		adm = 5
+		dip = 5
+		mil = 1
+	}
+}

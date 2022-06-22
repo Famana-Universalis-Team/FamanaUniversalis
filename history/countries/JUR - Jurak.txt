@@ -1,0 +1,21 @@
+government = tribal
+add_government_reform = tribal_kingdom
+government_rank = 1
+mercantilism = 10
+technology_group = gotzlic_tech_gr
+religion = lukschan_R
+primary_culture = Lukschan
+#historical_rival = 
+#historical_friend = 
+capital = 6501
+
+200.1.1 = {
+	monarch = {
+		name = "Thouus"
+		dynasty = "Lukul"
+		birth_date = 186.12.12
+		adm = 0
+		dip = 6
+		mil = 1
+	}
+}
