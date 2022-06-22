@@ -4466,4 +4466,77 @@ country_decisions = {
 			add_prestige = 25
 		}
 	}
+
+	lukscha_nation = {
+		major = yes
+		potential = {
+			AND = {
+				NOT = { exists = LKS }
+				primary_culture = Lukschan
+				was_never_end_game_tag_trigger = yes
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 6499
+				province_id = 6498
+				province_id = 6503
+				province_id = 6504
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				is_city = no
+			}
+		}
+		allow = {
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			owns_core_province = 6499
+			owns_core_province = 6498
+			owns_core_province = 6503
+			owns_core_province = 6504
+			num_of_owned_provinces_with = {
+				value = 7
+				region = lukscha_region
+		    }
+		}
+		effect = {
+			if = {
+				limit = {
+					AND = {
+						has_custom_ideas = no
+						NOT = {
+							has_idea_group = Lukscha_ideas
+						}
+					}
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			restore_country_name = yes
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
+			change_tag = LKS
+			6499 = {
+				move_capital_effect = yes
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			lukscha_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = LKS
+			}
+			add_prestige = 25
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
 }

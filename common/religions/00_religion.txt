@@ -1500,6 +1500,23 @@ north_estali = {
 		
 		heretic = { UGRONIS }
 	}
+	lukschan_R = {
+		color = { 102 42 72 }
+		icon = 31
+		country = {
+			war_exhaustion = -0.05
+			hostile_attrition = 1
+		}
+		country_as_secondary = {
+			land_forcelimit_modifier = 0.10
+			prestige_from_land = 0.25
+		}
+		province = {
+			local_missionary_strength = 0.01
+		}
+		
+		heretic = { JUNMOVVEN }
+	}
 	harmonized_modifier = harmonized_pagan
 	
 	crusade_name = HOLY_WAR
