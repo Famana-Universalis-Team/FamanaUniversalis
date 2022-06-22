@@ -404,6 +404,7 @@ country_event = {
 			change_culture = Ora_Maldan
 			add_claim = ORC
 			cede_province = ORL
+			add_core = ORL
 		}
 		6250 = {
 			add_base_manpower = 1
@@ -413,18 +414,26 @@ country_event = {
 			change_religion = ordic
 			add_claim = ORC
 			cede_province = ORL
+			add_core = ORL
 		}
 		6251 = {
 			add_base_production = 1
 			change_culture = Ora_Maldan
 			add_claim = ORC
 			cede_province = ORM
+			add_core = ORM
 		}
 		6252 = {
 			change_culture = Ora_Maldan
 			add_claim = ORC
 			cede_province = ORM
+			add_core = ORM
 		}
-		#maybe include the culture conversion of the two disjointed kolyan provinces too? just a thought
+		6689 = {
+			change_culture = Ora_Maldan
+		}
+		6690 = {
+			change_culture = Ora_Maldan
+		}
 	}
 }
