@@ -360,7 +360,7 @@ nokadi_reform = {
 	}
 }
 antiash_domain_gov = {
-	icon = "siddhi_recruitment"
+	icon = "noble_muslim"
 	potantial = {
 		has_reform = antiash_domain_gov 
 	}
@@ -373,8 +373,8 @@ antiash_domain_gov = {
 	modifiers = {
 		prestige_from_land = 0.15
 		core_creation = -0.10
-		loot_amount = 0.15
-		raze_power_gain = 0.10
+		legitimacy = 1
+		tolerance_own = 2
 		siege_ability = 0.10
 		unjustified_demands = -0.2
 		governing_capacity_modifier = 0.15
