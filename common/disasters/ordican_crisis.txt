@@ -1,0 +1,49 @@
+ordican_crisis= {
+	potential = {
+        tag = ORC
+		NOT = { has_country_flag = survived_crisis }
+	}
+	can_start = {
+        has_any_disaster = no
+        is_year = 350
+    }
+	progress = {
+        modifier = {
+            factor = 0.13
+            is_year = 400
+        }
+    }
+
+	can_stop = { has_any_disaster = yes }
+
+	can_end = {
+        AND = {
+            NOT = {
+                PEX = {
+                    total_development = 100
+                }
+            }
+            NOT = {
+                any_country = {
+                    is_subject_of_type_with_overlord = { who = PEX type = diocese }
+                }
+            }
+            is_at_war = no
+        }
+    }
+
+	on_start = pexto.1
+    on_end = pexto.2
+
+    on_monthly = {
+        events = {
+        }
+        random_events = {
+        }
+    }
+
+	modifier = {
+        global_unrest = 5
+        discipline = -0.15
+	}
+}
