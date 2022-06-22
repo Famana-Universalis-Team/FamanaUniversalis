@@ -367,8 +367,10 @@ country_event = {
 	option = {
 		name = bosisi.12.a
 		every_owned_province = {
-		limit = { region = maky_region }
-			add_province_modifier = {
+			limit = { 
+			region = maky_region 
+			}
+				add_province_modifier = {
 				name = antiash_forgave
 				duration = 18250 #50 years
 			}
