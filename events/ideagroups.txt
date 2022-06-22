@@ -8637,7 +8637,7 @@ country_event = {
 	id = ideagroups.1919
 	title = ideagroups.1919.t
 	desc = ideagroups.1919.d
-	picture = _eventPicture
+	picture = NATIVE_eventPicture
 	is_triggered_only = yes
 	
 	trigger = {
@@ -8826,7 +8826,7 @@ country_event = {
 	id = ideagroups.1934
 	title = ideagroups.1934.t
 	desc = ideagroups.1934.d
-	picture = _eventPicture
+	picture = NATIVE_eventPicture
 
 	is_triggered_only = yes
 	
