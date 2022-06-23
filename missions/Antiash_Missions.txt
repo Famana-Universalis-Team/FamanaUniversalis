@@ -95,7 +95,7 @@ antiash_1 = {
 		}	
 	}
 	antiash_tokum = {
-		icon =  mission_sw_against_the_desert
+		icon =  mission_conquer_air 
 		required_missions = {
             antiash_homeland
         }
@@ -207,7 +207,7 @@ antiash_1 = {
 		}	
 	}
 	antiash_kars = {
-		icon =  mission_egyptian_mamluk_soldier
+		icon =  mission_conquer_timbuktu
 		required_missions = {
             antiash_tokum
 		}
@@ -308,7 +308,7 @@ antiash_1 = {
 		}	
 	}
 	antiash_delta = {
-		icon =  mission_persian_soldiers
+		icon = mission_pacify_the_berbers
 		required_missions = {
             antiash_kars
 		}
@@ -360,7 +360,7 @@ antiash_1 = {
 		}	
 	}
 	antiash_opmaki = {
-		icon =  mission_arabian_fort
+		icon = jerusalem
 		required_missions = {
             antiash_delta
 		}
@@ -504,7 +504,7 @@ antiash_2 = {
     }
 	has_country_shield = yes
 	antiash_army = {
-	icon = mission_landsknecht_soldier
+	icon = mission_levantine_restoration
 		required_missions = {
 		
 		}
@@ -580,7 +580,7 @@ antiash_2 = {
 		}
 	}
 	antiash_xon = {
-		icon =  mission_conquer_50_development
+		icon = take_constantinople
 		position = 12 
 		required_missions = {
             antiash_relxal
@@ -742,7 +742,7 @@ antiash_3 = {
 		}
     }
 	antiash_delkum = {
-        icon = control_unrest  
+        icon = mission_traverse_the_sahara
 
         required_missions = {
             antiash_population
@@ -865,7 +865,7 @@ antiash_3 = {
 		}
     }
 	antiash_ximal = {
-        icon = mission_crusade_for_varna
+        icon = fight_bosnian_heresies
 		position = 8
 
         required_missions = {
@@ -901,7 +901,7 @@ antiash_3 = {
 		
     }
 	antiash_calla = {
-		icon =  mission_galleys_in_port
+		icon =  mission_control_the_barbary_coast
 		position = 10 
 		required_missions = {
             antiash_into
@@ -1012,7 +1012,7 @@ antiash_4 = {
     }
 	has_country_shield = yes
 	antiash_buildings = {
-		icon = mission_early_game_buildings
+		icon = mission_into_persia_1
 		trigger = {
 			temple = 5
 			workshop = 5
@@ -1070,7 +1070,7 @@ antiash_4 = {
 		}	
 	}
 	antiash_kinvirel = {
-		icon = mission_hanseatic_city
+		icon = capture_adriatic_ports
 		required_missions = {
 			antiash_invade
 		}
@@ -1332,7 +1332,7 @@ antiash_5 = {
 		}
 	}
 	antiash_yabonia = {
-		icon = mission_have_two_subjects
+		icon = pacify_the_albanian_lands
 		position = 8
 		required_missions = {
 			antiash_invade
