@@ -368,6 +368,7 @@ country_event = {
 		name = jasuaE.7.a
 		ai_chance = { factor = 1 }
 		change_tag = NAF
+		set_country_flag = getNafanMissions
 		country_event = { id = ideagroups.1 } #Swap Ideas
 		add_stability = 1
 		change_government = monarchy
@@ -422,6 +423,7 @@ country_event = {
 		name = jasuaE.7.b
 		ai_chance = { factor = 0 }
 		add_stability = -2
+		set_country_flag = getStrokturMissions
 	}
 }
 
@@ -620,6 +622,7 @@ country_event = {
 		name = jasuaE.13.a
 		ai_chance = { factor = 1 }
 		change_tag = NAF
+		set_country_flag = getNafanMissions
 		country_event = { id = ideagroups.1 } #Swap Ideas
 		add_stability = 1
 		change_government = monarchy
@@ -682,6 +685,7 @@ country_event = {
 				leader_dynasty = "Noy"
 			}
 		}
+		set_country_flag = getStrokturMissions
 	}
 }
 
@@ -698,6 +702,7 @@ country_event = {
 		name = jasuaE.14.a
 		ai_chance = { factor = 1 }
 		change_tag = NAF
+		set_country_flag = getNafanMissions
 		country_event = { id = ideagroups.1 } #Swap Ideas
 		add_stability = 1
 		change_government = monarchy
@@ -760,6 +765,7 @@ country_event = {
 				leader_dynasty = "Noy"
 			}
 		}
+		set_country_flag = getKalarganMissions
 	}
 }
 
@@ -776,6 +782,7 @@ country_event = {
 		name = jasuaE.15.a
 		ai_chance = { factor = 1 }
 		change_tag = NAF
+		set_country_flag = getNafanMissions
 		country_event = { id = ideagroups.1 } #Swap Ideas
 		add_stability = 1
 		change_religion = lathvy
@@ -840,6 +847,7 @@ country_event = {
 				leader_dynasty = "Noy"
 			}
 		}
+		set_country_flag = getKalarganMissions
 	}
 }
 
@@ -1035,6 +1043,7 @@ country_event = {
 
 	immediate = {
 		change_tag = NAF
+		set_country_flag = getNafanMissions
 		country_event = { id = ideagroups.1 } #Swap Ideas
 		add_stability = 1
 		change_religion = lathvy
@@ -1091,6 +1100,7 @@ country_event = {
 	option = {
 		name = jasuaE.20.a
 		ai_chance = { factor = 1 }
+		set_country_flag = getKalarganMissions
 	}
 }
 #Bohoran culture shift
