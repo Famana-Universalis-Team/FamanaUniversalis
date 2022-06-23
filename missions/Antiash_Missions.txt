@@ -21,18 +21,23 @@ antiash_1 = {
 		trigger = {
 			7967 = {
 			infantry_in_province = 2
+			infantry_in_province = ROOT
 			}
 			7965 = {
 			infantry_in_province = 2
+			infantry_in_province = ROOT
 			}
 			7964 = {
 			infantry_in_province = 2
+			infantry_in_province = ROOT
 			}
 			7963 = {
 			infantry_in_province = 2
+			infantry_in_province = ROOT
 			}
 			7966 = {
 			infantry_in_province = 2
+			infantry_in_province = ROOT
 			}
         }
 		provinces_to_highlight = {
@@ -108,21 +113,27 @@ antiash_1 = {
 		trigger = {
 			5150 = {
 			infantry_in_province = 2
+			infantry_in_province = ROOT
 			}
 			5813 = {
 			infantry_in_province = 2
+			infantry_in_province = ROOT
 			}
 			5812 = {
 			infantry_in_province = 2
+			infantry_in_province = ROOT
 			}
 			5815 = {
 			infantry_in_province = 2
+			infantry_in_province = ROOT
 			}
 			7984 = {
 			infantry_in_province = 2
+			infantry_in_province = ROOT
 			}
 			5814 = {
 			infantry_in_province = 2
+			infantry_in_province = ROOT
 			} 
         }
 		effect = {
@@ -751,6 +762,7 @@ antiash_3 = {
         trigger = {
 			7962 = {
 			infantry_in_province = 2
+			infantry_in_province = ROOT
 			}
         }
       
@@ -1134,21 +1146,27 @@ antiash_5 = {
 		trigger = {
 			7972 = {
 				infantry_in_province = 2
+				infantry_in_province = ROOT
 			}
 			7960 = {
 				infantry_in_province = 2
+				infantry_in_province = ROOT
 			}
 			7959 = {
 				infantry_in_province = 2
+				infantry_in_province = ROOT
 			}
 			7958 = {
 				infantry_in_province = 2
+				infantry_in_province = ROOT
 			}
 			7957 = {
 				infantry_in_province = 2
+				infantry_in_province = ROOT
 			}
 			7956 = {
 				infantry_in_province = 2
+				infantry_in_province = ROOT
 			}
 		}
 		provinces_to_highlight = {
@@ -1243,18 +1261,23 @@ antiash_5 = {
 		trigger = {
 			5184 = {
 				infantry_in_province = 2
+				infantry_in_province = ROOT
 			}
 			7955 = {
 				infantry_in_province = 2
+				infantry_in_province = ROOT
 			}
 			7954 = {
 				infantry_in_province = 2
+				infantry_in_province = ROOT
 			}
 			7953 = {
 				infantry_in_province = 2
+				infantry_in_province = ROOT
 			}
 			7952 = {
 				infantry_in_province = 2
+				infantry_in_province = ROOT
 			}
 		}
 		provinces_to_highlight = {
