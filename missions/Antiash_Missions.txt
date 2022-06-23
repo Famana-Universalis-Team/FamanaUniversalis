@@ -430,6 +430,24 @@ antiash_1 = {
 			unnamed_area_21 = {
 				add_permanent_claim = ROOT
 			}
+			abvori_area = {
+				add_province_modifier = {
+					name = antiash_recruitment
+					duration = 9125 #25 years
+				}
+			}
+			jexus_area = {
+				add_province_modifier = {
+					name = antiash_recruitment
+					duration = 9125 #25 years
+				}
+			}
+			walamo_area = {
+				add_province_modifier = {
+					name = antiash_recruitment
+					duration = 9125 #25 years
+				}
+			}
 		}	
 	}
 	antiash_pyarxu = {
@@ -586,7 +604,18 @@ antiash_2 = {
 				}
 				add_permanent_claim = ROOT
 			}
-			#something
+			add_adm_power = 100
+			add_dip_power = 100
+			add_mil_power = 100
+			add_prestige = 25
+			add_adm_tech = 1
+			add_dip_tech = 1
+			add_mil_tech = 1
+			add_country_modifier = {
+				name = "antiash_took_xon"
+				duration = -1
+			}
+			#too strong?????????????????????????????????????????????????????????????????????????????????
 		}	
 	}
 	
@@ -683,18 +712,22 @@ antiash_3 = {
 			7971 = {
 			cede_province = ROOT
 			add_core = ROOT
+			change_culture = Kurkari
 			}
 			7970 = {
 			cede_province = ROOT
 			add_core = ROOT
+			change_culture = Kurkari
 			}
 			7969 = {
 			cede_province = ROOT
 			add_core = ROOT
+			change_culture = Ashdamir
 			}
 			7968= {
 			cede_province = ROOT
 			add_core = ROOT
+			change_culture = Manthwar
 			}
 			hidden_effect = {
 				east_great_desert_region = {
@@ -901,6 +934,10 @@ antiash_3 = {
 			}
 			oxaled_area = {
 				add_permanent_claim = ROOT
+			}
+			add_country_modifier = {
+				name = "antiash_xalian_mercenaries"
+				duration = 9125 #25 years
 			}
 		}	
 	}
