@@ -4405,7 +4405,7 @@ country_decisions = {
 		major = yes
 		potential = {
 			OR = {
-				tag = TKM
+				tag = TKM	
 				tag = ALU
 			}
 			NOT = { exists = ATM }

@@ -168,7 +168,6 @@ nafan_gov = {
 		governing_capacity = 250
 		church_loyalty_modifier = 0.1
 		heir_chance	= -2
-		block_introduce_heir = yes
 	}
 
 	conditional = {
@@ -364,22 +363,23 @@ nokadi_reform = {
 }
 antiash_domain_gov = {
 	icon = "noble_muslim"
+	allow_normal_conversion = yes
 	potantial = {
 		has_reform = antiash_domain_gov 
+		culture_group = Antiash
 	}
 	valid_for_nation_designer = no
 	raze_province = yes
 	can_change_primary_culture = no
+	lock_level_when_selected = yes
 	custom_attributes = {
 		enables_horde_idea_group = yes
+		enables_aristocratic_idea_group = no
 	}
 	modifiers = {
-		prestige_from_land = 0.15
-		core_creation = -0.10
 		legitimacy = 1
-		tolerance_own = 2
-		siege_ability = 0.10
-		unjustified_demands = -0.2
-		governing_capacity_modifier = 0.15
+		tolerance_own = 1
+		governing_capacity_modifier = 0.20
+		core_creation = -0.15
 	}
 }
