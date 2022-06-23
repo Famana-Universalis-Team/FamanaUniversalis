@@ -4496,7 +4496,7 @@ country_decisions = {
 				}
 				set_government_rank = 3
 			}
-			add_prestige = 50
+			add_prestige = 25
 			set_global_flag = antiash_domain_proclaimed
 		}
 	}
