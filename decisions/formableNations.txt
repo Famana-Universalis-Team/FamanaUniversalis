@@ -4410,19 +4410,6 @@ country_decisions = {
 			}
 			NOT = { exists = ATM }
 			was_never_end_game_tag_trigger = yes
-			OR = {
-				TKM = { has_country_flag = tkm_migrated }
-				AND = {
-					NOT = {
-						exists = TKM
-					}
-					area_237 = {
-						type = all
-						owned_by = ROOT
-						is_core = ROOT
-					}
-				}
-			}
 		}
 		provinces_to_highlight = {
 			OR = { area = area_237 }
