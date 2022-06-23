@@ -21,3 +21,34 @@ country_event = {
         custom_tooltip = nafa_jzoet_tt
     }
 }
+
+country_event = {
+    id = nafa.2
+    title = nafa.2.t
+    desc = nafa.2.d
+    picture = COURT_eventPicture
+
+    trigger = {
+        tag = NAF
+        NOT = {
+            has_heir = yes
+        }
+    }
+
+    mean_time_to_happen = {
+        months = 2
+    }
+
+    option = {
+        name = nafa.2.a
+        ai_chance = { factor = 1 }
+        define_heir	= {
+            name = "Syadon"
+            dynasty = "Noy"
+            claim = 100
+            male = yes
+            culture = ROOT
+            religion = ROOT
+        }
+    }
+}

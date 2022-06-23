@@ -3,13 +3,12 @@ country_decisions = {
 	maky_rebuild = {
 		major = yes
 		potential = {
-			AND = {
-				OR = {
-					tag = VDY
-					tag = MKY
-				}
+			OR = {
+				tag = VDY
+				tag = MKY
+				tag = MSD
 			}
-			NOT = { has_country_flag = rebuild_decision }
+			NOT = { has_global_flag = rebuild_decision_global }
 		}
 		provinces_to_highlight = {
 			OR = {
@@ -30,19 +29,16 @@ country_decisions = {
 			owns_all_provinces = {
     			region = maky_region
 			}
-            OR = {
-                tag = VDY
-				tag = MKY
-            }
 			adm_power = 100
 			dip_power = 100
 			mil_power = 100
-			years_of_income	= 3
+			years_of_income	= 1.5
 			manpower_percentage = 0.75
 		}
 		effect = {
 			set_country_flag = rebuild_decision
             set_country_flag = maky_rebuilding
+			set_global_flag = rebuild_decision_global
 			add_years_of_income = -1.5
 			add_yearly_manpower = -2.5
 			add_adm_power = -100

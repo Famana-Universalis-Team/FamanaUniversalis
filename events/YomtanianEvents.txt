@@ -46,7 +46,13 @@ country_event = {
 
 	trigger = {
 		NOT = { is_year = 213 }
-		NOT = { has_country_modifier = yom_invasion_1 }
+		NOT = {
+			OR = {
+				has_country_modifier = yom_invasion_1
+				has_country_modifier = yom_invasion_2
+				has_country_modifier = yom_invasion_3
+			}
+		}
 		OR = {
 			tag = VAN
 			tag = SIX

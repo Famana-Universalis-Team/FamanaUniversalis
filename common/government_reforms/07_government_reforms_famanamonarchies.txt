@@ -146,6 +146,7 @@ nafan_gov = {
 	icon = "nafanempire"
 	allow_normal_conversion = no
 	lock_level_when_selected = yes
+	maintain_dynasty = yes
 	potential = {
 		tag = NAF
 	}
@@ -166,6 +167,8 @@ nafan_gov = {
 		monarch_admin_power = 2
 		governing_capacity = 250
 		church_loyalty_modifier = 0.1
+		heir_chance	= -2
+		block_introduce_heir = yes
 	}
 
 	conditional = {

@@ -5,13 +5,13 @@ graphical_culture = westerngfx
 color = { 255  247  251 }
 
 historical_idea_groups = {
-	economic_ideas
-	defensive_ideas
+	quantity_ideas
+	administrative_ideas
+	quality_ideas
 	diplomatic_ideas
 	offensive_ideas
 	innovativeness_ideas
-	quantity_ideas
-	administrative_ideas
+	economic_ideas
 	religious_ideas
 }
 
@@ -33,8 +33,60 @@ historical_units = {
 }
 
 monarch_names = {
-	"Syadon #0" = 1
-	"Syadine #0" = -1
+	"Syadon #0" = 10
+	"Dymio #0" = 1
+	"Agixadar #0" = 1
+	"Ratonasha #0" = 1
+	"Tormi #0" = 1
+	"Dorren #0" = 1
+	"Giun #0" = 1
+	"Tamar #0" = 1
+	"Paro #0" = 1
+	"Bamal #0" = 1
+	"Dorron #0" = 1
+	"Nokhes #0" = 1
+	"Amilian #0" = 1
+	"Camiclar #0" = 1
+	"Relambi #0" = 1
+	"Melze #0" = 1
+	"Yenat #0" = 1
+	"Zandar #0" = 1
+	"Ratelar #0" = 1
+	"Lunpikisa #0" = 1
+	"Sonon #0" = 1
+	"Tamander #0" = 1
+	"Lokis #0" = 1
+	"Lemi #0" = 1
+	"Romal #0" = 1
+	"Sydon #0" = 1
+	"Amri #0" = 1
+	"Ifrel #0" = 1
+	"Asifsya #0" = 1
+	"Malav #0" = 1
+	"Elret #0" = 1
+	"Abus #0" = 1
+	"Ordit #0" = 1
+	"Altruis #0" = 1
+	"Mego #0" = 1
+	"Arpidon #0" = 1
+	"Enkuess #0" = 1
+	"Oe'it #0" = 1
+	"Auead #0" = 1
+	"Ranki #0" = 1
+	"Mangaan #0" = 1
+	"Eyus #0" = 1
+	"Hgevi #0" = 1
+	"Dymio #0" = 1
+	"Sini #0" = -1
+	"Yiana #0" = -1
+	"Hyega #0" = -1
+	"Ortessa #0" = -1
+	"Jkebla #0" = -1
+	"Fuvhetha #0" = -1
+	"Eyugb  #0" = -1
+	"Bhefa #0" = -1
+	"Yilis #0" = -1
+	"Syadine #0" = -10
 }
 
 leader_names = {

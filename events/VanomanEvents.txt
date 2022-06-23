@@ -45,13 +45,33 @@ country_event = {
             cede_province = IRF
             add_core = IRF
             change_culture = Emtik
-            change_religion	= va
             add_base_tax = 1
             add_base_production = 1
             add_base_manpower = 1
         }
         IRF = {
             add_truce_with = ROOT
+        }
+        if = {
+            limit = {
+                5693 = {
+                    religion = va
+                }
+            }
+            5889 = {
+                change_religion = va
+            }
+            IRF = {
+                change_religion = va
+            }
+        }
+        else = {
+            5889 = {
+                change_religion = ROOT
+            }
+            IRF = {
+                change_religion = ROOT
+            }
         }
     }
 }
@@ -709,7 +729,7 @@ country_event = { #Lathvy
     }
 
     mean_time_to_happen = {
-        months = 120
+        months = 360
     }
 
     option = { #Go lathvy
@@ -724,7 +744,7 @@ country_event = { #Lathvy
     }
     option = { #Stay va
         name = vanoma.13.b
-        ai_chance = { factor = 2 }
+        ai_chance = { factor = 3 }
         random_owned_province = {
             limit = {
                 region = vanoma_region
@@ -738,7 +758,7 @@ country_event = { #Lathvy
     }
     option = { #Acceptance
         name = vanoma.13.c
-        ai_chance = { factor = 1 }
+        ai_chance = { factor = 2 }
         hidden_effect = {
             every_owned_province = {
                 limit = {
