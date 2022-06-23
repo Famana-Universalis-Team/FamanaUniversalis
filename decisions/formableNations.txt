@@ -4475,8 +4475,44 @@ country_decisions = {
 			swap_non_generic_missions = yes
 			add_prestige = 25
 		}
+	}	
+	proclaim_the_antiash_domain = {
+		major = yes
+		potential = {
+			culture_group = Antiash
+			NOT = { 
+				has_global_flag = antiash_domain_proclaimed
+			}
+		}
+		allow = {
+			total_development = 450
+			adm_tech = 10
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+		}
+		effect = {
+			override_country_name = ANTIASH_DOMAIN
+			if = {
+				limit = { 
+					NOT = { government = monarchy }
+				}
+				change_government = monarchy
+			}
+			add_government_reform = antiash_domain_gov
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			if = {
+				limit = {
+					NOT = { government_rank = 3 }
+				}
+				set_government_rank = 3
+			}
+			add_prestige = 50
+			set_global_flag = antiash_domain_proclaimed
+		}
 	}
-
 	lukscha_nation = {
 		major = yes
 		potential = {

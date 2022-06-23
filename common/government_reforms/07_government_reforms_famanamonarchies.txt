@@ -362,3 +362,24 @@ nokadi_reform = {
 		factor = 1000
 	}
 }
+antiash_domain_gov = {
+	icon = "noble_muslim"
+	potantial = {
+		has_reform = antiash_domain_gov 
+	}
+	valid_for_nation_designer = no
+	raze_province = yes
+	can_change_primary_culture = no
+	custom_attributes = {
+		enables_horde_idea_group = yes
+	}
+	modifiers = {
+		prestige_from_land = 0.15
+		core_creation = -0.10
+		legitimacy = 1
+		tolerance_own = 2
+		siege_ability = 0.10
+		unjustified_demands = -0.2
+		governing_capacity_modifier = 0.15
+	}
+}
