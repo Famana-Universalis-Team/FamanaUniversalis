@@ -1122,12 +1122,15 @@ fas_4 = {
 			}
 			emastalia_region = {
 				add_claim = ROOT
+				discover_country = ROOT
 			}
 			west_emastalia_region = {
 				add_claim = ROOT
+				discover_country = ROOT
 			}
 			stroktur_region = {
 				add_claim = ROOT
+				discover_country = ROOT
 			}
 		}
 		provinces_to_highlight = {
