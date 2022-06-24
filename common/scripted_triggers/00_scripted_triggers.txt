@@ -510,8 +510,8 @@ was_never_end_game_tag_trigger = {	#Country Scope
 			NOT = { tag = ORC }
 			NOT = { was_tag = ORS }
 			NOT = { tag = ORS }
-			NOT = { was_tag = GEO }
-			NOT = { tag = GEO }
+			NOT = { was_tag = GEP }
+			NOT = { tag = GEP }
 			NOT = { was_tag = FAS }
 			NOT = { tag = FAS }
 			NOT = { was_tag = GAX }

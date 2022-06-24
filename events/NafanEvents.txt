@@ -33,6 +33,13 @@ country_event = {
         NOT = {
             has_heir = yes
         }
+        NOT = {
+            has_country_flag = nafaWaitingForHeir
+        }
+    }
+
+    immediate = {
+        set_country_flag = nafaWaitingForHeir
     }
 
     mean_time_to_happen = {
@@ -49,6 +56,9 @@ country_event = {
             male = yes
             culture = ROOT
             religion = ROOT
+        }
+        hidden_effect = {
+            clr_country_flag = nafaWaitingForHeir
         }
     }
 }

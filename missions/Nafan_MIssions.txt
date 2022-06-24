@@ -44,18 +44,28 @@ eclipse_1 = {
         icon = secure_the_republic
         required_missions = { eclipse_kalargan_gold eclipse_the_eclipse }
         trigger = {
-            5493 = {
+            5361 = {
                 trade_share	= {
                     country = ROOT
                     share = 33
                 }
             }
-            #5493 = {
-            #    has_building = 
-            #} #should be drydock and level 2
+            5493 = {
+                OR = {
+                    has_building = dock
+                    has_building = drydock
+                }
+            }
+            num_of_light_ship = 10
         }
         effect = {
-            #OTHER EFFECTS
+            5493 = {
+                add_center_of_trade_level = 1
+                add_province_modifier = {
+                    name = bohora_trade_hub
+                    duration = -1
+                }
+            }
 
             5485 = {
                 change_trade_goods = cloth
@@ -67,7 +77,9 @@ eclipse_1 = {
                 change_trade_goods = paper
             }
         }
-        #provinces_to_highlight = {}
+        provinces_to_highlight = {
+            province_id = 5493
+        }
     }
 }
 
@@ -195,10 +207,10 @@ eclipse_5 = {
         trigger = {
             NOT = { has_estate_privilege = estate_church_kachik_religious_rights }
             5489 = {
-                religion = lathvy
+                religion = ROOT
             }
             5491 = {
-                religion = lathvy
+                religion = ROOT
             }
             stroktur_region = {
                 type = all
@@ -206,7 +218,16 @@ eclipse_5 = {
             }
         }
         effect = {
-            
+            add_country_modifier = {
+                name = skt_cultural_harmony
+                duration = 9125
+            }
+            stroktur_region = {
+                add_province_modifier = {
+                    name = skt_cultural_harmony_local
+                    duration = 3650
+                }
+            }
         }
         provinces_to_highlight = {
             OR = {
@@ -242,7 +263,7 @@ nafa_1 = {
     has_country_shield = yes
 
     naf_dominate_the_gomic = {
-        icon = mission_develop_nevas_port
+        icon = mission_raid_on_venice
         required_missions = { naf_founding_of_syadona eclipse_great_port_of_bohora }
         position = 4
         trigger = {
@@ -255,7 +276,7 @@ nafa_1 = {
     }
 
     naf_emastalian_golden_age = {
-        icon = mission_develop_nevas_port
+        icon = mission_dominate_persian_gulf
         required_missions = { naf_the_summer_coast }
         position = 6
         trigger = {
@@ -268,7 +289,7 @@ nafa_1 = {
     }
 
     naf_build_a_grand_navy = {
-        icon = mission_develop_nevas_port
+        icon = mission_conquer_arakan
         required_missions = {}
         position = 7
         trigger = {
@@ -281,7 +302,7 @@ nafa_1 = {
     }
 
     naf_the_staple_port = {
-        icon = mission_develop_nevas_port
+        icon = mission_shipyards_of_gujarat
         required_missions = { naf_build_a_grand_navy }
         position = 8
         trigger = {
@@ -294,7 +315,7 @@ nafa_1 = {
     }
 
     naf_rival_the_ordics = {
-        icon = mission_develop_nevas_port
+        icon = mission_protect_albania
         required_missions = { naf_unite_emastalia }
         position = 9
         trigger = {
@@ -307,7 +328,7 @@ nafa_1 = {
     }
 
     naf_destroy_the_ordican_empire = {
-        icon = mission_develop_nevas_port
+        icon = mission_steppe_warriors
         required_missions = { naf_rival_the_ordics }
         position = 10
         trigger = {
@@ -320,7 +341,7 @@ nafa_1 = {
     }
 
     naf_sweep_up_pextoglazia = {
-        icon = mission_develop_nevas_port
+        icon = mission_european_church
         required_missions = { naf_destroy_the_ordican_empire naf_defeat_restema }
         position = 12
         trigger = {
@@ -333,7 +354,7 @@ nafa_1 = {
     }
 
     naf_burn_the_temple = {
-        icon = mission_develop_nevas_port
+        icon = mission_rb_control_state_religion
         required_missions = { naf_sweep_up_pextoglazia }
         position = 13
         trigger = {
@@ -346,7 +367,7 @@ nafa_1 = {
     }
 
     naf_persuade_remaining_heretics = {
-        icon = mission_develop_nevas_port
+        icon = mission_luther_theses
         required_missions = { naf_burn_the_temple }
         position = 15
         trigger = {
@@ -359,7 +380,7 @@ nafa_1 = {
     }
 
     naf_link_gomic_infrastructure = {
-        icon = mission_develop_nevas_port
+        icon = mission_gujarati_diaspora
         required_missions = { naf_propagate_the_edolyssa }
         position = 19
         trigger = {
@@ -386,7 +407,7 @@ nafa_2 = {
     has_country_shield = yes
 
     naf_influence_emastalia = {
-        icon = mission_develop_nevas_port
+        icon = mission_noble_council
         required_missions = { naf_founding_of_syadona }
         position = 4
         trigger = {
@@ -399,7 +420,7 @@ nafa_2 = {
     }
 
     naf_the_summer_coast = {
-        icon = mission_develop_nevas_port
+        icon = mission_cromandel_coast
         required_missions = { naf_influence_emastalia }
         position = 5
         trigger = {
@@ -412,7 +433,7 @@ nafa_2 = {
     }
 
     naf_unite_emastalia = {
-        icon = mission_develop_nevas_port
+        icon = mission_dominate_the_mediterranean
         required_missions = { naf_the_summer_coast }
         position = 8
         trigger = {
@@ -425,7 +446,7 @@ nafa_2 = {
     }
 
     naf_convert_ga_xal = {
-        icon = mission_develop_nevas_port
+        icon = mission_wine_monopolies
         required_missions = { naf_dominate_jafxoi }
         position = 9
         trigger = {
@@ -438,7 +459,7 @@ nafa_2 = {
     }
 
     naf_defeat_restema = {
-        icon = mission_develop_nevas_port
+        icon = mission_malayan_viceroyalty
         required_missions = { naf_intervene_in_oppia }
         position = 11
         trigger = {
@@ -451,7 +472,7 @@ nafa_2 = {
     }
 
     naf_seize_miris = {
-        icon = mission_develop_nevas_port
+        icon = mission_advance_to_the_dnieper
         required_missions = { naf_defeat_restema }
         position = 12
         trigger = {
@@ -464,7 +485,7 @@ nafa_2 = {
     }
 
     naf_conquest_of_hasia = {
-        icon = mission_develop_nevas_port
+        icon = mission_invade_island
         required_missions = { naf_seize_miris }
         position = 13
         trigger = {
@@ -477,7 +498,7 @@ nafa_2 = {
     }
 
     naf_new_syadona = {
-        icon = mission_develop_nevas_port
+        icon = mission_look_west
         required_missions = { naf_conquest_of_hasia naf_establish_the_rini_order }
         position = 14
         trigger = {
@@ -490,33 +511,33 @@ nafa_2 = {
     }
 
     naf_gomic_unity = {
-        icon = mission_develop_nevas_port
+        icon = mission_rb_mediterranean_authority
         required_missions = { naf_the_war_of_titans }
         position = 15
         trigger = {
             
         }
         effect = {
-            
+            custom_tooltip = naf_agm_unfinished_tooltip
         }
         #provinces_to_highlight = {}
     }
 
     naf_a_shared_identity = {
-        icon = mission_develop_nevas_port
+        icon = mission_portuguese_ceylon
         required_missions = { naf_gomic_unity naf_persuade_remaining_heretics }
         position = 16
         trigger = {
             
         }
         effect = {
-            
+            custom_tooltip = naf_agm_unfinished_tooltip
         }
         #provinces_to_highlight = {}
     }
 
     naf_propagate_the_edolyssa = {
-        icon = mission_develop_nevas_port
+        icon = mission_brahmin_administrators
         required_missions = { }
         position = 18
         trigger = {
@@ -529,7 +550,7 @@ nafa_2 = {
     }
 
     naf_build_the_imperial_routes = {
-        icon = mission_develop_nevas_port
+        icon = mission_subjugate_rajputana
         required_missions = { naf_propagate_the_edolyssa }
         position = 19
         trigger = {
@@ -569,7 +590,7 @@ nafa_3 = {
     }
 
     naf_landfall_in_elwait = {
-        icon = mission_develop_nevas_port
+        icon = mission_dominate_genoa
         required_missions = { naf_founding_of_syadona }
         position = 4
         trigger = {
@@ -582,7 +603,7 @@ nafa_3 = {
     }
 
     naf_prepare_an_invasion_force = {
-        icon = mission_develop_nevas_port
+        icon = mission_control_surat
         required_missions = { naf_landfall_in_elwait }
         position = 5
         trigger = {
@@ -595,7 +616,7 @@ nafa_3 = {
     }
 
     naf_defeat_xolnomarka = {
-        icon = mission_develop_nevas_port
+        icon = mission_rb_conquer_the_highlands
         required_missions = { naf_prepare_an_invasion_force }
         position = 6
         trigger = {
@@ -608,7 +629,7 @@ nafa_3 = {
     }
 
     naf_xalian_integration = {
-        icon = mission_develop_nevas_port
+        icon = mission_establish_the_prikazy
         required_missions = { naf_defeat_xolnomarka }
         position = 7
         trigger = {
@@ -621,7 +642,7 @@ nafa_3 = {
     }
 
     naf_dominate_jafxoi = {
-        icon = mission_develop_nevas_port
+        icon = mission_italian_condottiere
         required_missions = { naf_xalian_integration naf_destroy_kisholi }
         position = 8
         trigger = {
@@ -634,7 +655,7 @@ nafa_3 = {
     }
 
     naf_intervene_in_oppia = {
-        icon = mission_develop_nevas_port
+        icon = mission_conquer_riga
         required_missions = { naf_dominate_jafxoi }
         position = 10
         trigger = {
@@ -647,7 +668,7 @@ nafa_3 = {
     }
 
     naf_lessons_from_old_empires = {
-        icon = mission_develop_nevas_port
+        icon = mission_weather_the_troubles
         required_missions = { naf_intervene_in_oppia }
         position = 12
         trigger = {
@@ -660,7 +681,7 @@ nafa_3 = {
     }
 
     naf_establish_the_rini_order = {
-        icon = mission_develop_nevas_port
+        icon = mission_teutonic_knights
         required_missions = { }
         position = 13
         trigger = {
@@ -673,59 +694,59 @@ nafa_3 = {
     }
 
     naf_the_war_of_titans = {
-        icon = mission_develop_nevas_port
+        icon = mission_control_the_ganges_delta
         required_missions = { naf_capture_northwest_saka }
         position = 14
         trigger = {
             
         }
         effect = {
-            
+            custom_tooltip = naf_agm_unfinished_tooltip
         }
         #provinces_to_highlight = {}
     }
 
     naf_down_the_makyna = {
-        icon = mission_develop_nevas_port
+        icon = mission_sw_against_the_desert
         required_missions = { naf_the_war_of_titans }
         position = 15
         trigger = {
             
         }
         effect = {
-            
+            custom_tooltip = naf_agm_unfinished_tooltip
         }
         #provinces_to_highlight = {}
     }
 
     naf_enter_qamon = {
-        icon = mission_develop_nevas_port
+        icon = mission_trade_with_cathay
         required_missions = { naf_down_the_makyna }
         position = 16
         trigger = {
             
         }
         effect = {
-            
+            custom_tooltip = naf_agm_unfinished_tooltip
         }
         #provinces_to_highlight = {}
     }
 
     naf_rule_antestal = {
-        icon = mission_develop_nevas_port
+        icon = mission_conquer_gujarat_bah
         required_missions = { naf_enter_qamon naf_a_shared_identity naf_take_ekelo }
         position = 17
         trigger = {
             
         }
         effect = {
-            
+            custom_tooltip = naf_agm_unfinished_tooltip
         }
         #provinces_to_highlight = {}
     }
 
     naf_technological_advantage = {
-        icon = mission_develop_nevas_port
+        icon = mission_industrialize_bengal
         required_missions = { naf_propagate_the_edolyssa }
         position = 19
         trigger = {
@@ -752,7 +773,7 @@ nafa_4 = {
     has_country_shield = yes
 
     naf_hold_fashros_at_bay = {
-        icon = mission_develop_nevas_port
+        icon = mission_city_of_the_world's_desire
         required_missions = { naf_founding_of_syadona }
         position = 4
         trigger = {
@@ -765,7 +786,7 @@ nafa_4 = {
     }
 
     naf_partition_moxon = {
-        icon = mission_develop_nevas_port
+        icon = mission_rb_conquer_the_isles
         required_missions = { naf_prepare_an_invasion_force naf_hold_fashros_at_bay  }
         position = 6
         trigger = {
@@ -778,7 +799,7 @@ nafa_4 = {
     }
 
     naf_a_compromise_in_thought = {
-        icon = mission_develop_nevas_port
+        icon = mission_rb_weather_the_reformation
         required_missions = { naf_partition_moxon }
         position = 7
         trigger = {
@@ -791,7 +812,7 @@ nafa_4 = {
     }
 
     naf_aresian_incursion = {
-        icon = mission_develop_nevas_port
+        icon = mission_land_of_churches
         required_missions = { naf_destroy_kisholi }
         position = 8
         trigger = {
@@ -804,7 +825,7 @@ nafa_4 = {
     }
 
     naf_dominate_eastern_estal = {
-        icon = mission_develop_nevas_port
+        icon = mission_rb_import_potatoes
         required_missions = { naf_aresian_incursion }
         position = 9
         trigger = {
@@ -817,7 +838,7 @@ nafa_4 = {
     }
 
     naf_fortify_gatria = {
-        icon = mission_develop_nevas_port
+        icon = mission_golden_century
         required_missions = { naf_consolidate_jasua }
         position = 10
         trigger = {
@@ -830,7 +851,7 @@ nafa_4 = {
     }
 
     naf_claim_western_oppia = {
-        icon = mission_develop_nevas_port
+        icon = mission_invade_the_deccan_dlh
         required_missions = { naf_intervene_in_oppia }
         position = 11
         trigger = {
@@ -843,7 +864,7 @@ nafa_4 = {
     }
 
     naf_capture_northwest_saka = {
-        icon = mission_develop_nevas_port
+        icon = mission_conquer_bengal_dlh
         required_missions = { naf_claim_western_oppia }
         position = 13
         trigger = {
@@ -856,27 +877,27 @@ nafa_4 = {
     }
 
     naf_crossing_the_desert = {
-        icon = mission_develop_nevas_port
+        icon = mission_egyptian_mamluk_soldier
         required_missions = { naf_the_war_of_titans }
         position = 15
         trigger = {
             
         }
         effect = {
-            
+            custom_tooltip = naf_agm_unfinished_tooltip
         }
         #provinces_to_highlight = {}
     }
 
     naf_take_ekelo = {
-        icon = mission_develop_nevas_port
+        icon = mission_iberian_conquistador
         required_missions = { naf_crossing_the_desert naf_down_the_makyna }
         position = 16
         trigger = {
             
         }
         effect = {
-            
+            custom_tooltip = naf_agm_unfinished_tooltip
         }
         #provinces_to_highlight = {}
     }
@@ -909,20 +930,28 @@ nafa_5 = {
     has_country_shield = yes
 
     naf_utilize_jzoet = {
-        icon = mission_develop_nevas_port
+        icon = mission_defeat_muscovy
         required_missions = { }
         position = 3
         trigger = {
-            
+            has_country_modifier = jzoet_help
+            num_of_mercenaries = 4
         }
         effect = {
-            
+            remove_country_modifier = jzoet_help
+            add_country_modifier = {
+                name = integrated_jzoet
+                duration = -1
+            }
+            custom_tooltip = nafaBuffJzoet
+            custom_tooltip = nafaMayGetJzoetEventsInTheFuture
+            set_country_flag = workingWithJzoet
         }
         #provinces_to_highlight = {}
     }
 
     naf_undermine_the_tonxara = {
-        icon = mission_develop_nevas_port
+        icon = mission_raid_on_genoa
         required_missions = { naf_hold_fashros_at_bay }
         position = 5
         trigger = {
@@ -935,7 +964,7 @@ nafa_5 = {
     }
 
     naf_a_claim_to_jasua = {
-        icon = mission_develop_nevas_port
+        icon = mission_restore_faith_in_the_throne
         required_missions = { naf_undermine_the_tonxara }
         position = 6
         trigger = {
@@ -948,7 +977,7 @@ nafa_5 = {
     }
 
     naf_destroy_kisholi = {
-        icon = mission_develop_nevas_port
+        icon = mission_conquer_romania
         required_missions = { naf_a_claim_to_jasua }
         position = 7
         trigger = {
@@ -961,7 +990,7 @@ nafa_5 = {
     }
 
     naf_consolidate_jasua = {
-        icon = mission_develop_nevas_port
+        icon = mission_fatehpur_sikri
         required_missions = { naf_destroy_kisholi }
         position = 9
         trigger = {
@@ -974,7 +1003,7 @@ nafa_5 = {
     }
 
     naf_tolerate_the_kisholi = {
-        icon = mission_develop_nevas_port
+        icon = mission_din_i_llahi
         required_missions = { naf_consolidate_jasua }
         position = 10
         trigger = {
@@ -987,7 +1016,7 @@ nafa_5 = {
     }
 
     naf_gather_the_greatest_thinkers = {
-        icon = mission_develop_nevas_port
+        icon = mission_rb_control_electors
         required_missions = {  }
         position = 11
         trigger = {
@@ -1000,7 +1029,7 @@ nafa_5 = {
     }
 
     naf_ponder_the_eclipse = {
-        icon = mission_develop_nevas_port
+        icon = mission_mosque
         required_missions = { naf_gather_the_greatest_thinkers }
         position = 12
         trigger = {
@@ -1013,7 +1042,7 @@ nafa_5 = {
     }
 
     naf_the_truth_of_the_eclipse = {
-        icon = mission_develop_nevas_port
+        icon = mission_rb_trinity_college_dublin
         required_missions = { naf_ponder_the_eclipse }
         position = 13
         trigger = {

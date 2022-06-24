@@ -503,7 +503,7 @@
  naf_convert_ga_xal_title:0 "Convert Ga Xal"
  naf_defeat_restema_title:0 "Defeat Restema"
  naf_seize_miris_title:0 "Seize Miris"
- naf_conquest_of_hasia_title:0 "Conquest of Hasia"
+ naf_conquest_of_hasia_title:0 "Wipe Out Hasia"
  naf_new_syadona_title:0 "New Syadona"
  naf_gomic_unity_title:0 "Gomic Unity"
  naf_a_shared_identity_title:0 "A Shared Identity"
@@ -540,7 +540,7 @@
  naf_consolidate_jasua_title:0 "Consolidate Jasua"
  naf_tolerate_the_kisholi_title:0 "Tolerate the Kisholi"
  naf_gather_the_greatest_thinkers_title:0 "Nafan Philosophy"
- naf_ponder_the_eclipse_title:0 "Ponder the World"
+ naf_ponder_the_eclipse_title:0 "Ponder the Sky"
  naf_the_truth_of_the_eclipse_title:0 "The Truth of the Eclipse"
 
  naf_dominate_the_gomic_desc:0 ""
@@ -561,8 +561,8 @@
  naf_seize_miris_desc:0 ""
  naf_conquest_of_hasia_desc:0 ""
  naf_new_syadona_desc:0 ""
- naf_gomic_unity_desc:0 ""
- naf_a_shared_identity_desc:0 ""
+ naf_gomic_unity_desc:0 "§RThis branch of the mission tree is currently not available. It will be added in the coming Dorromas Update.§!"
+ naf_a_shared_identity_desc:0 "§RThis branch of the mission tree is currently not available. It will be added in the coming Dorromas Update.§!"
  naf_propagate_the_edolyssa_desc:0 ""
  naf_build_the_imperial_routes_desc:0 ""
  naf_founding_of_syadona_desc:0 ""
@@ -574,10 +574,10 @@
  naf_intervene_in_oppia_desc:0 ""
  naf_lessons_from_old_empires_desc:0 ""
  naf_establish_the_rini_order_desc:0 ""
- naf_the_war_of_titans_desc:0 ""
- naf_down_the_makyna_desc:0 ""
- naf_enter_qamon_desc:0 ""
- naf_rule_antestal_desc:0 ""
+ naf_the_war_of_titans_desc:0 "§RThis branch of the mission tree is currently not available. It will be added in the coming Dorromas Update.§!"
+ naf_down_the_makyna_desc:0 "§RThis branch of the mission tree is currently not available. It will be added in the coming Dorromas Update.§!"
+ naf_enter_qamon_desc:0 "§RThis branch of the mission tree is currently not available. It will be added in the coming Dorromas Update.§!"
+ naf_rule_antestal_desc:0 "§RThis branch of the mission tree is currently not available. It will be added in the coming Dorromas Update.§!"
  naf_technological_advantage_desc:0 ""
  naf_hold_fashros_at_bay_desc:0 ""
  naf_partition_moxon_desc:0 ""
@@ -587,8 +587,8 @@
  naf_fortify_gatria_desc:0 ""
  naf_claim_western_oppia_desc:0 ""
  naf_capture_northwest_saka_desc:0 ""
- naf_crossing_the_desert_desc:0 ""
- naf_take_ekelo_desc:0 ""
+ naf_crossing_the_desert_desc:0 "§RThis branch of the mission tree is currently not available. It will be added in the coming Dorromas Update.§!"
+ naf_take_ekelo_desc:0 "§RThis branch of the mission tree is currently not available. It will be added in the coming Dorromas Update.§!"
  naf_utilize_jzoet_desc:0 ""
  naf_undermine_the_tonxara_desc:0 ""
  naf_a_claim_to_jasua_desc:0 ""
@@ -600,7 +600,10 @@
  naf_the_truth_of_the_eclipse_desc:0 ""
 
  #Nafan Mission Rewards
- 
+ bohora_trade_hub:0 "Local Trade Hub"
+ skt_cultural_harmony:0 "Cultural Harmony"
+ skt_cultural_harmony_local:0 "Eased Cultural Tensions"
+ integrated_jzoet:0 "Close Collaboration With Jzoet"
 
 
 
