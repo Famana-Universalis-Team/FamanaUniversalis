@@ -61,13 +61,13 @@ merc_haoli_free_company = {
 	modifier = { }
 }
 
-# Jzoets
+# Jzoet
 merc_jzoets = {
     regiments_per_development = 0.01
     home_province = 5491 # yallwaka
 	cost_modifier = 0.1
-	cavalry_weight = 0.1
-	cavalry_cap = 4
+	cavalry_weight = 0
+	cavalry_cap = 0
 	sprites = { westerngfx_sprite_pack }
 	trigger = {
 		has_country_modifier = jzoet_help
@@ -75,6 +75,23 @@ merc_jzoets = {
 	modifier = {
 		infantry_power = 0.05
 		shock_damage = 0.05
+	}
+}
+
+# Buffed Jzoet
+merc_jzoets_buffed = {
+    regiments_per_development = 0.04
+    home_province = 5491 # yallwaka
+	cost_modifier = 0.05
+	cavalry_weight = 0
+	cavalry_cap = 0
+	sprites = { westerngfx_sprite_pack }
+	trigger = {
+		has_country_modifier = integrated_jzoet
+	}
+	modifier = {
+		infantry_power = 0.10
+		shock_damage = 0.10
 	}
 }
 
