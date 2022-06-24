@@ -207,7 +207,7 @@ eclipse_5 = {
 
     eclipse_bohorans_and_kachiks = {
         icon = mission_religious
-        required_missions = { eclipse_healing_the_rift # }
+        required_missions = { eclipse_healing_the_rift eclipse_the_eclipse }
         trigger = {
         }
         effect = {
