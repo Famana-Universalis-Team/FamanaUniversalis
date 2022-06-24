@@ -44,6 +44,15 @@ eclipse_1 = {
         icon = secure_the_republic
         required_missions = { eclipse_kalargan_gold eclipse_the_eclipse }
         trigger = {
+            5493 = {
+                trade_share	= {
+                    country = ROOT
+                    share = 33
+                }
+            }
+            #5493 = {
+            #    has_building = 
+            #} #should be drydock and level 2
         }
         effect = {
             #OTHER EFFECTS
