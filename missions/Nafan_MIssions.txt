@@ -339,64 +339,25 @@ nafa_1 = {
     naf_persuade_remaining_heretics = {
         icon = mission_develop_nevas_port
         required_missions = { naf_burn_the_temple }
-        position = 14
-        trigger = {
-            
-        }
-        effect = {
-            
-        }
-        #provinces_to_highlight = {}
-    }
-
-    naf_prepare_a_great_voyage = {
-        icon = mission_settlers_north_america
-        required_missions = { naf_new_syadona }
         position = 15
         trigger = {
             
         }
         effect = {
-            custom_tooltip = naf_mak_unfinished_tooltip
+            
         }
         #provinces_to_highlight = {}
     }
 
-    naf_settle_in_larna = {
-        icon = mission_settlers_north_america
-        required_missions = { naf_prepare_a_great_voyage }
-        position = 16
+    naf_link_gomic_infrastructure = {
+        icon = mission_develop_nevas_port
+        required_missions = { naf_propagate_the_edolyssa }
+        position = 19
         trigger = {
             
         }
         effect = {
-            custom_tooltip = naf_mak_unfinished_tooltip
-        }
-        #provinces_to_highlight = {}
-    }
-
-    naf_the_war_for_makan = {
-        icon = mission_settlers_north_america
-        required_missions = { naf_settle_in_larna }
-        position = 17
-        trigger = {
             
-        }
-        effect = {
-            custom_tooltip = naf_mak_unfinished_tooltip
-        }
-        #provinces_to_highlight = {}
-    }
-
-    naf_end_the_yomtanian_menace = {
-        icon = mission_settlers_north_america
-        required_missions = { naf_the_war_for_makan }
-        position = 18
-        trigger = {
-            
-        }
-        effect = {
-            custom_tooltip = naf_mak_unfinished_tooltip
         }
         #provinces_to_highlight = {}
     }
@@ -519,20 +480,46 @@ nafa_2 = {
         #provinces_to_highlight = {}
     }
 
-    naf_our_true_destiny = {
-        icon = mission_settlers_north_america
-        required_missions = { naf_settle_in_larna }
-        position = 17
+    naf_gomic_unity = {
+        icon = mission_develop_nevas_port
+        required_missions = { naf_the_war_of_titans }
+        position = 15
         trigger = {
             
         }
         effect = {
-            custom_tooltip = naf_mak_unfinished_tooltip
+            
         }
         #provinces_to_highlight = {}
     }
 
-    naf_link_gomic_infrastructure = {
+    naf_a_shared_identity = {
+        icon = mission_develop_nevas_port
+        required_missions = { naf_gomic_unity naf_persuade_remaining_heretics }
+        position = 16
+        trigger = {
+            
+        }
+        effect = {
+            
+        }
+        #provinces_to_highlight = {}
+    }
+
+    naf_propagate_the_edolyssa = {
+        icon = mission_develop_nevas_port
+        required_missions = { }
+        position = 18
+        trigger = {
+            
+        }
+        effect = {
+            
+        }
+        #provinces_to_highlight = {}
+    }
+
+    naf_build_the_imperial_routes = {
         icon = mission_develop_nevas_port
         required_missions = { naf_propagate_the_edolyssa }
         position = 19
@@ -572,7 +559,7 @@ nafa_3 = {
         #provinces_to_highlight = {}
     }
 
-    naf_landfall_in_ewlait = {
+    naf_landfall_in_elwait = {
         icon = mission_develop_nevas_port
         required_missions = { naf_founding_of_syadona }
         position = 4
@@ -587,7 +574,7 @@ nafa_3 = {
 
     naf_prepare_an_invasion_force = {
         icon = mission_develop_nevas_port
-        required_missions = { naf_landfall_in_ewlait }
+        required_missions = { naf_landfall_in_elwait }
         position = 5
         trigger = {
             
@@ -676,7 +663,20 @@ nafa_3 = {
         #provinces_to_highlight = {}
     }
 
-    naf_gomic_unity = {
+    naf_the_war_of_titans = {
+        icon = mission_develop_nevas_port
+        required_missions = { naf_capture_northwest_saka }
+        position = 14
+        trigger = {
+            
+        }
+        effect = {
+            
+        }
+        #provinces_to_highlight = {}
+    }
+
+    naf_down_the_makyna = {
         icon = mission_develop_nevas_port
         required_missions = { naf_the_war_of_titans }
         position = 15
@@ -689,9 +689,9 @@ nafa_3 = {
         #provinces_to_highlight = {}
     }
 
-    naf_a_shared_identity = {
+    naf_enter_qamon = {
         icon = mission_develop_nevas_port
-        required_missions = { naf_gomic_unity }
+        required_missions = { naf_down_the_makyna }
         position = 16
         trigger = {
             
@@ -702,10 +702,10 @@ nafa_3 = {
         #provinces_to_highlight = {}
     }
 
-    naf_propagate_the_edolyssa = {
+    naf_rule_antestal = {
         icon = mission_develop_nevas_port
-        required_missions = { }
-        position = 18
+        required_missions = { naf_enter_qamon naf_a_shared_identity naf_take_ekelo }
+        position = 17
         trigger = {
             
         }
@@ -715,7 +715,7 @@ nafa_3 = {
         #provinces_to_highlight = {}
     }
 
-    naf_build_the_imperial_routes = {
+    naf_technological_advantage = {
         icon = mission_develop_nevas_port
         required_missions = { naf_propagate_the_edolyssa }
         position = 19
@@ -836,7 +836,7 @@ nafa_4 = {
     naf_capture_northwest_saka = {
         icon = mission_develop_nevas_port
         required_missions = { naf_claim_western_oppia }
-        position = 12
+        position = 13
         trigger = {
             
         }
@@ -846,20 +846,7 @@ nafa_4 = {
         #provinces_to_highlight = {}
     }
 
-    naf_the_war_of_titans = {
-        icon = mission_develop_nevas_port
-        required_missions = { naf_capture_northwest_saka }
-        position = 14
-        trigger = {
-            
-        }
-        effect = {
-            
-        }
-        #provinces_to_highlight = {}
-    }
-
-    naf_down_the_makyna = {
+    naf_crossing_the_desert = {
         icon = mission_develop_nevas_port
         required_missions = { naf_the_war_of_titans }
         position = 15
@@ -872,9 +859,9 @@ nafa_4 = {
         #provinces_to_highlight = {}
     }
 
-    naf_enter_qamon = {
+    naf_take_ekelo = {
         icon = mission_develop_nevas_port
-        required_missions = { naf_down_the_makyna }
+        required_missions = { naf_crossing_the_desert naf_down_the_makyna }
         position = 16
         trigger = {
             
@@ -885,28 +872,15 @@ nafa_4 = {
         #provinces_to_highlight = {}
     }
 
-    naf_rule_antestal = {
-        icon = mission_develop_nevas_port
-        required_missions = { naf_enter_qamon naf_a_shared_identity naf_take_ekelo }
+    naf_our_true_destiny = {
+        icon = mission_settlers_north_america
+        required_missions = { naf_settle_in_larna }
         position = 17
         trigger = {
             
         }
         effect = {
-            
-        }
-        #provinces_to_highlight = {}
-    }
-
-    naf_technological_advantage = {
-        icon = mission_develop_nevas_port
-        required_missions = { naf_propagate_the_edolyssa }
-        position = 19
-        trigger = {
-            
-        }
-        effect = {
-            
+            custom_tooltip = naf_mak_unfinished_tooltip
         }
         #provinces_to_highlight = {}
     }
@@ -1042,28 +1016,54 @@ nafa_5 = {
         #provinces_to_highlight = {}
     }
 
-    naf_crossing_the_desert = {
-        icon = mission_develop_nevas_port
-        required_missions = { naf_the_war_of_titans }
-        position = 15
+    naf_prepare_a_great_voyage = {
+        icon = mission_settlers_north_america
+        required_missions = { naf_capture_northwest_saka }
+        position = 14
         trigger = {
             
         }
         effect = {
-            
+            custom_tooltip = naf_mak_unfinished_tooltip
         }
         #provinces_to_highlight = {}
     }
 
-    naf_take_ekelo = {
-        icon = mission_develop_nevas_port
-        required_missions = { naf_crossing_the_desert naf_down_the_makyna }
+    naf_settle_in_larna = {
+        icon = mission_settlers_north_america
+        required_missions = { naf_prepare_a_great_voyage }
         position = 16
         trigger = {
             
         }
         effect = {
+            custom_tooltip = naf_mak_unfinished_tooltip
+        }
+        #provinces_to_highlight = {}
+    }
+
+    naf_the_war_for_makan = {
+        icon = mission_settlers_north_america
+        required_missions = { naf_settle_in_larna }
+        position = 17
+        trigger = {
             
+        }
+        effect = {
+            custom_tooltip = naf_mak_unfinished_tooltip
+        }
+        #provinces_to_highlight = {}
+    }
+
+    naf_end_the_yomtanian_menace = {
+        icon = mission_settlers_north_america
+        required_missions = { naf_the_war_for_makan }
+        position = 18
+        trigger = {
+            
+        }
+        effect = {
+            custom_tooltip = naf_mak_unfinished_tooltip
         }
         #provinces_to_highlight = {}
     }

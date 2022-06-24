@@ -382,6 +382,7 @@ country_event = {
 		}
 		add_prestige = 25
 		kill_ruler = yes
+		kill_heir = {}
 		define_ruler = {
 			name = "Syadon I"
 			dynasty = "Noy"
@@ -636,6 +637,7 @@ country_event = {
 		}
 		add_prestige = 25
 		kill_ruler = yes
+		kill_heir = {}
 		define_ruler = {
 			name = "Syadon I"
 			dynasty = "Noy"
@@ -716,6 +718,7 @@ country_event = {
 		}
 		add_prestige = 25
 		kill_ruler = yes
+		kill_heir = {}
 		define_ruler = {
 			name = "Syadon I"
 			dynasty = "Noy"
@@ -797,6 +800,7 @@ country_event = {
 		}
 		add_prestige = 25
 		kill_ruler = yes
+		kill_heir = {}
 		define_ruler = {
 			name = "Syadon I"
 			dynasty = "Noy"
@@ -1058,6 +1062,7 @@ country_event = {
 		}
 		add_prestige = 25
 		kill_ruler = yes
+		kill_heir = {}
 		define_ruler = {
 			name = "Syadon I"
 			dynasty = "Noy"
