@@ -132,6 +132,8 @@ eclipse_branching_temp = {
                 has_country_flag = getNafanMissions
                 has_country_flag = getKalarganMissions
                 has_country_flag = getStrokturMissions
+                tag = NAF
+                tag = KLG
             }
         }
     }
