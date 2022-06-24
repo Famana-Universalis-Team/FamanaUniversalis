@@ -61,6 +61,9 @@ country_event = {
 	trigger = {
 		is_year = 270
 		owns = 5149
+		5812 = {
+			is_empty = yes
+		}
 	}
 
 	mean_time_to_happen = {
@@ -1126,6 +1129,7 @@ country_event = {
 				change_culture = ROOT
 				change_religion = ROOT
 			}
+			set_capital = 7240
 			5812 = {
 				cede_province = ---
                 remove_core = ROOT
