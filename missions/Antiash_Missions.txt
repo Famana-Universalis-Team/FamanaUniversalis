@@ -739,7 +739,6 @@ antiash_3 = {
 				}
 				#to make killing desert tribes easier
 			}
-			add_prestige = 25
 		}
     }
 	antiash_delkum = {
@@ -1015,13 +1014,52 @@ antiash_4 = {
 	antiash_buildings = {
 		icon = mission_into_persia_1
 		trigger = {
-			temple = 5
-			workshop = 5
+			temple = 3
+			workshop = 3
 		}
 		effect = {
 			add_country_modifier = {
 				name = "antiash_production"
 				duration = 9125 #25 years
+			}
+		}	
+	}
+	antiash_invite = {
+		icon = mission_into_persia_2
+		required_missions = {
+			antiash_buildings
+		}
+		trigger = {
+			any_known_county = {
+				limit = { has_institution = feudalism }
+				alliance_with = ROOT
+			}
+			prestige = 30
+		}
+		effect = {
+			7243 = {
+				add_institution_embracement = {
+				which = feudalism
+				value = 20
+				}
+			}
+			7246 = {
+				add_institution_embracement = {
+				which = feudalism
+				value = 20
+				}
+			}
+			7250 = {
+				add_institution_embracement = {
+				which = feudalism
+				value = 20
+				}
+			}
+			7245 = {
+				add_institution_embracement = {
+				which = feudalism
+				value = 20
+				}
 			}
 		}	
 	}
