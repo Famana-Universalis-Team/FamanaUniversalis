@@ -316,7 +316,7 @@ country_event = {
 #expedition to Dorromas - 2
 country_event = {
 	id = bosisi.11
-	title = bosisi.1.t
+	title = bosisi.11.t
 	desc = bosisi.11.d
 	picture = SHWEDAGON_PAGON_eventPicture
 	fire_only_once = yes
@@ -350,7 +350,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = bosisi.11.d
+		name = bosisi.11.od
 		change_religion = dorroman
 		capital_scope = {
 			change_religion = dorroman
