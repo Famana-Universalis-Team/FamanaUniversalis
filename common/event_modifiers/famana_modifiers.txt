@@ -982,6 +982,32 @@ antiash_took_xon = {
 	global_autonomy = -0.03
 }
 
+antiash_cultural = {
+	idea_cost = -0.05
+	prestige = 0.5
+	advisor_pool = 1
+}
+
+antiash_architect = {
+	allowed_num_of_buildings = 1
+	province_trade_power_modifier = 0.2
+	local_development_cost = -0.25
+	local_production_efficiency = 0.15
+}
+
+antiash_reformed_bosisi = {
+	global_missionary_strength = 0.02
+	tolerance_own = 1
+	religious_unity = 0.5
+}
+
+antiash_prophet = {
+	missionaries = 2
+	warscore_cost_vs_other_religion = -0.15
+	cb_on_religious_enemies = yes
+	monarch_lifespan = 0.2
+}
+
 kalargan_gold_country = {
     monthly_gold_inflation_modifier = -0.50
     development_cost = -0.05

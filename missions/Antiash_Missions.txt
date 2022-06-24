@@ -11,6 +11,9 @@ antiash_1 = {
 		}
     }
 	has_country_shield = yes
+	antiash_raid = {
+		icon =  mission_mosque
+	}
 	antiash_homeland = {
 		icon =  mission_mosque
 		position = 4
@@ -518,6 +521,44 @@ antiash_2 = {
 			}
 		}
 	}
+	antiash_reform = {
+		trigger = {
+			advisor = theologian
+			estate_loyalty = {
+			estate = estate_church
+			loyalty = 65
+			}
+			legitimacy = 65
+		}
+		effect = {
+			add_country_modifier = {
+				name = "antiash_reformed_bosisi"
+				duration = -1
+			}
+			add_ruler_modifier = { 
+			name = antiash_prophet
+			duration = -1 
+			}
+		}
+	}
+	antiash_culture = {
+		trigger = {
+			advisor = artist
+			any_neighbor_country = {
+			tech_difference = 1
+			} 
+		}
+		effect = {
+			add_country_modifier = {
+				name = "antiash_cultural"
+				duration = -1
+			}
+			country_event = { 
+				id = bosisi.13
+				days = 1
+			}
+		}
+	}
 	antiash_into = {
 		icon = mission_conquer_5_states
 		position = 9
@@ -1014,54 +1055,85 @@ antiash_4 = {
 	antiash_buildings = {
 		icon = mission_into_persia_1
 		trigger = {
-			temple = 3
-			workshop = 3
+			temple = 5
+			workshop = 5
 		}
 		effect = {
-			add_country_modifier = {
-				name = "antiash_production"
-				duration = 9125 #25 years
-			}
+			#idk
 		}	
 	}
-	antiash_invite = {
-		icon = mission_into_persia_2
-		required_missions = {
-			antiash_buildings
-		}
+	antiash_cotton = {
+		icon = mission_into_persia_1
 		trigger = {
-			any_known_county = {
-				limit = { has_institution = feudalism }
-				alliance_with = ROOT
+			7246 = {
+				base_production = 10
+				has_building = worshop
 			}
-			prestige = 30
+			7244 = {
+				base_production = 10
+				has_building = worshop
+			}
 		}
 		effect = {
-			7243 = {
-				add_institution_embracement = {
-				which = feudalism
-				value = 20
-				}
-			}
 			7246 = {
-				add_institution_embracement = {
-				which = feudalism
-				value = 20
+				add_province_modifier = {
+				name = "antiash_production"
+				duration = -1
 				}
 			}
-			7250 = {
-				add_institution_embracement = {
-				which = feudalism
-				value = 20
+			7244 = {
+				add_province_modifier = {
+				name = "antiash_production"
+				duration = -1
+				}
+			}
+			7247 = {
+				change_trade_goods = cotton
+				add_province_modifier = {
+				name = "antiash_production"
+				duration = -1
 				}
 			}
 			7245 = {
-				add_institution_embracement = {
-				which = feudalism
-				value = 20
+				change_trade_goods = cotton
+				add_province_modifier = {
+				name = "antiash_production"
+				duration = -1
 				}
 			}
-		}	
+			7269 = {
+				change_trade_goods = cotton
+				add_province_modifier = {
+				name = "antiash_production"
+				duration = -1
+				}
+			}
+		}
+	}
+	antiash_promote = {
+		icon = mission_into_persia_1
+		trigger = {
+			calc_true_if = {
+				any_known_county = {
+					has_opinion = {
+						who = ROOT
+						value = 100
+					}
+				}
+				amount = 4
+			}
+			diplomatic_reputation = 2
+		}
+		effect = {
+			change_price = {
+			trade_goods = cotton
+			key = ANTIASH_ADVERTISING
+			value = 0.75
+			duration = -1
+			}
+			add_years_of_income  = 0.25
+			add_prestige = 15
+		}
 	}
 	antiash_invade = {
 		icon = mission_cossack_cavalry
@@ -1164,6 +1236,42 @@ antiash_5 = {
 		}
     }
 	has_country_shield = yes
+	antiash_invite = {
+		icon = mission_into_persia_2
+		trigger = {
+			any_known_county = {
+				limit = { has_institution = feudalism }
+				alliance_with = ROOT
+			}
+			prestige = 30
+		}
+		effect = {
+			7243 = {
+				add_institution_embracement = {
+				which = feudalism
+				value = 20
+				}
+			}
+			7246 = {
+				add_institution_embracement = {
+				which = feudalism
+				value = 20
+				}
+			}
+			7250 = {
+				add_institution_embracement = {
+				which = feudalism
+				value = 20
+				}
+			}
+			7245 = {
+				add_institution_embracement = {
+				which = feudalism
+				value = 20
+				}
+			}
+		}	
+	}
 	antiash_approach = {
 		icon =  mission_prepare_an_invasion_force
 		position = 4
