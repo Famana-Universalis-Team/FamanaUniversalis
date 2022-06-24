@@ -1025,3 +1025,8 @@ jzoet_help = {
     global_manpower_modifier = 0.05
     harsh_treatment_cost = -0.2
 }
+
+syadons_conquests = {
+    years_of_nationalism = -5
+    land_maintenance_modifier = -0.20
+}

@@ -581,10 +581,62 @@ nafa_3 = {
         required_missions = { eclipse_the_eclipse }
         position = 3
         trigger = {
-            
+            5583 = {
+                owned_by = ROOT
+                is_capital_of = ROOT
+                development = 20
+            }
         }
         effect = {
-            
+            5583 = {
+                add_center_of_trade_level = 1
+            }
+            add_ruler_modifier = {
+                name = syadons_conquests
+                duration = -1
+            }
+            #Actually, maybe make this an event?
+            if = {
+                limit = {
+                    exists = VAV
+                }
+                add_casus_belli = {
+                    target = VAV
+                    type = cb_vassalize_mission
+                    months = 300
+                }
+            }
+            if = {
+                limit = {
+                    exists = INI
+                }
+                add_casus_belli = {
+                    target = INI
+                    type = cb_vassalize_mission
+                    months = 300
+                }
+            }
+            if = {
+                limit = {
+                    exists = PXA
+                }
+                add_casus_belli = {
+                    target = PXA
+                    type = cb_vassalize_mission
+                    months = 300
+                }
+            }
+            if = {
+                limit = {
+                    exists = ELQ
+                }
+                add_casus_belli = {
+                    target = ELQ
+                    type = cb_vassalize_mission
+                    months = 300
+                }
+            }
+            elwait_area = { add_permanent_claim = ROOT }
         }
         #provinces_to_highlight = {}
     }
