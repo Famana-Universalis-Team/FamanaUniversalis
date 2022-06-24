@@ -307,6 +307,8 @@ country_event = {
 			skill = 3
 			culture = Manthwar
 			religion = bosisi
+			discount = yes
+			location = 5815
 		}
 		add_prestige = -15
 	}
