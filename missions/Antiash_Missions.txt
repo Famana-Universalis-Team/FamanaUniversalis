@@ -20,23 +20,18 @@ antiash_1 = {
 		
 		trigger = {
 			7967 = {
-			infantry_in_province = 2
 			infantry_in_province = ROOT
 			}
 			7965 = {
-			infantry_in_province = 2
 			infantry_in_province = ROOT
 			}
 			7964 = {
-			infantry_in_province = 2
 			infantry_in_province = ROOT
 			}
 			7963 = {
-			infantry_in_province = 2
 			infantry_in_province = ROOT
 			}
 			7966 = {
-			infantry_in_province = 2
 			infantry_in_province = ROOT
 			}
         }
@@ -51,7 +46,7 @@ antiash_1 = {
 				kill_units = {
 				who = ROOT
 				type = infantry
-				amount = 2
+				amount = 1
 				}
 				cede_province = ROOT
 				add_core = ROOT
@@ -60,7 +55,7 @@ antiash_1 = {
 				kill_units = {
 				who = ROOT
 				type = infantry
-				amount = 2
+				amount = 1
 				}
 				cede_province = ROOT
 				add_core = ROOT
@@ -69,7 +64,7 @@ antiash_1 = {
 				kill_units = {
 				who = ROOT
 				type = infantry
-				amount = 2
+				amount = 1
 				}
 				cede_province = ROOT
 				add_core = ROOT
@@ -78,7 +73,7 @@ antiash_1 = {
 				kill_units = {
 				who = ROOT
 				type = infantry
-				amount = 2
+				amount = 1
 				}
 				cede_province = ROOT
 				add_core = ROOT
@@ -87,7 +82,7 @@ antiash_1 = {
 				kill_units = {
 				who = ROOT
 				type = infantry
-				amount = 2
+				amount = 1
 				}
 				cede_province = ROOT
 				add_core = ROOT
@@ -112,27 +107,21 @@ antiash_1 = {
 		}
 		trigger = {
 			5150 = {
-			infantry_in_province = 2
 			infantry_in_province = ROOT
 			}
 			5813 = {
-			infantry_in_province = 2
 			infantry_in_province = ROOT
 			}
 			5812 = {
-			infantry_in_province = 2
 			infantry_in_province = ROOT
 			}
 			5815 = {
-			infantry_in_province = 2
 			infantry_in_province = ROOT
 			}
 			7984 = {
-			infantry_in_province = 2
 			infantry_in_province = ROOT
 			}
 			5814 = {
-			infantry_in_province = 2
 			infantry_in_province = ROOT
 			} 
         }
@@ -141,7 +130,7 @@ antiash_1 = {
 				kill_units = {
 				who = ROOT
 				type = infantry
-				amount = 2
+				amount = 1
 				}
 				cede_province = ROOT
 				add_core = ROOT
@@ -152,7 +141,7 @@ antiash_1 = {
 				kill_units = {
 				who = ROOT
 				type = infantry
-				amount = 2
+				amount = 1
 				}
 				cede_province = ROOT
 				add_core = ROOT
@@ -163,7 +152,7 @@ antiash_1 = {
 				kill_units = {
 				who = ROOT
 				type = infantry
-				amount = 2
+				amount = 1
 				}
 				cede_province = ROOT
 				add_core = ROOT
@@ -174,7 +163,7 @@ antiash_1 = {
 				kill_units = {
 				who = ROOT
 				type = infantry
-				amount = 2
+				amount = 1
 				}
 				cede_province = ROOT
 				add_core = ROOT
@@ -185,7 +174,7 @@ antiash_1 = {
 				kill_units = {
 				who = ROOT
 				type = infantry
-				amount = 2
+				amount = 1
 				}
 				cede_province = ROOT
 				add_core = ROOT
@@ -196,7 +185,7 @@ antiash_1 = {
 				kill_units = {
 				who = ROOT
 				type = infantry
-				amount = 2
+				amount = 1
 				}
 				cede_province = ROOT
 				add_core = ROOT
@@ -724,6 +713,7 @@ antiash_3 = {
 			cede_province = ROOT
 			add_core = ROOT
 			change_culture = Kurkari
+			add_building = fort_15th
 			}
 			7970 = {
 			cede_province = ROOT
@@ -761,7 +751,6 @@ antiash_3 = {
 
         trigger = {
 			7962 = {
-			infantry_in_province = 2
 			infantry_in_province = ROOT
 			}
         }
@@ -775,7 +764,7 @@ antiash_3 = {
 				kill_units = {
 					who = ROOT
 					type = infantry
-					amount = 2
+					amount = 1
 				}
 				cede_province = ROOT
 				add_core = ROOT
@@ -1145,34 +1134,28 @@ antiash_5 = {
 		}
 		trigger = {
 			7972 = {
-				infantry_in_province = 2
 				infantry_in_province = ROOT
 			}
 			7960 = {
-				infantry_in_province = 2
 				infantry_in_province = ROOT
 			}
 			7959 = {
-				infantry_in_province = 2
 				infantry_in_province = ROOT
 			}
 			7958 = {
-				infantry_in_province = 2
 				infantry_in_province = ROOT
 			}
 			7957 = {
-				infantry_in_province = 2
 				infantry_in_province = ROOT
 			}
 			7956 = {
-				infantry_in_province = 2
 				infantry_in_province = ROOT
 			}
 		}
 		provinces_to_highlight = {
 			OR = {
 				province_id = 7972
-				area = 243
+				area = area_243
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
@@ -1181,7 +1164,7 @@ antiash_5 = {
 				kill_units = {
 				who = ROOT
 				type = infantry
-				amount = 2
+				amount = 1
 				}
 				cede_province = ROOT
 				add_core = ROOT
@@ -1190,7 +1173,7 @@ antiash_5 = {
 				kill_units = {
 				who = ROOT
 				type = infantry
-				amount = 2
+				amount = 1
 				}
 				cede_province = ROOT
 				add_core = ROOT
@@ -1199,7 +1182,7 @@ antiash_5 = {
 				kill_units = {
 				who = ROOT
 				type = infantry
-				amount = 2
+				amount = 1
 				}
 				cede_province = ROOT
 				add_core = ROOT
@@ -1208,7 +1191,7 @@ antiash_5 = {
 				kill_units = {
 				who = ROOT
 				type = infantry
-				amount = 2
+				amount = 1
 				}
 				cede_province = ROOT
 				add_core = ROOT
@@ -1217,7 +1200,7 @@ antiash_5 = {
 				kill_units = {
 				who = ROOT
 				type = infantry
-				amount = 2
+				amount = 1
 				}
 				cede_province = ROOT
 				add_core = ROOT
@@ -1226,7 +1209,7 @@ antiash_5 = {
 				kill_units = {
 				who = ROOT
 				type = infantry
-				amount = 2
+				amount = 1
 				}
 				cede_province = ROOT
 				add_core = ROOT
@@ -1260,23 +1243,18 @@ antiash_5 = {
 		}
 		trigger = {
 			5184 = {
-				infantry_in_province = 2
 				infantry_in_province = ROOT
 			}
 			7955 = {
-				infantry_in_province = 2
 				infantry_in_province = ROOT
 			}
 			7954 = {
-				infantry_in_province = 2
 				infantry_in_province = ROOT
 			}
 			7953 = {
-				infantry_in_province = 2
 				infantry_in_province = ROOT
 			}
 			7952 = {
-				infantry_in_province = 2
 				infantry_in_province = ROOT
 			}
 		}
@@ -1292,7 +1270,7 @@ antiash_5 = {
 				kill_units = {
 				who = ROOT
 				type = infantry
-				amount = 2
+				amount = 1
 				}
 				cede_province = ROOT
 				add_core = ROOT
@@ -1301,7 +1279,7 @@ antiash_5 = {
 				kill_units = {
 				who = ROOT
 				type = infantry
-				amount = 2
+				amount = 1
 				}
 				cede_province = ROOT
 				add_core = ROOT
@@ -1310,7 +1288,7 @@ antiash_5 = {
 				kill_units = {
 				who = ROOT
 				type = infantry
-				amount = 2
+				amount = 1
 				}
 				cede_province = ROOT
 				add_core = ROOT
@@ -1319,7 +1297,7 @@ antiash_5 = {
 				kill_units = {
 				who = ROOT
 				type = infantry
-				amount = 2
+				amount = 1
 				}
 				cede_province = ROOT
 				add_core = ROOT
@@ -1328,7 +1306,7 @@ antiash_5 = {
 				kill_units = {
 				who = ROOT
 				type = infantry
-				amount = 2
+				amount = 1
 				}
 				cede_province = ROOT
 				add_core = ROOT
