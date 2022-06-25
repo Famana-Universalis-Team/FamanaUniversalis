@@ -28,8 +28,8 @@ country_event = {
 						NOT = { has_province_flag = chosen_migarate }
 					}
 					save_event_target_as = migration_province_1
+					set_province_flag = chosen_migarate
 				}
-				set_province_flag = chosen_migarate
 				ROOT = { set_country_flag = prov1 }
 			}
 			if = { #2
@@ -46,8 +46,8 @@ country_event = {
 						NOT = { has_province_flag = chosen_migarate }
 					}
 					save_event_target_as = migration_province_2
+					set_province_flag = chosen_migarate
 				}
-				set_province_flag = chosen_migarate
 				ROOT = { set_country_flag = prov2 }
 			}
 			if = { #3
@@ -64,8 +64,8 @@ country_event = {
 						NOT = { has_province_flag = chosen_migarate }
 					}
 					save_event_target_as = migration_province_3
+					set_province_flag = chosen_migarate
 				}
-				set_province_flag = chosen_migarate
 				ROOT = { set_country_flag = prov3 }
 			}
 		}
