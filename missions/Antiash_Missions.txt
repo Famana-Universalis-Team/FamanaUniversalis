@@ -11,9 +11,6 @@ antiash_1 = {
 		}
     }
 	has_country_shield = yes
-	antiash_raid = {
-		icon =  mission_mosque
-	}
 	antiash_homeland = {
 		icon =  mission_mosque
 		position = 4
@@ -396,7 +393,7 @@ antiash_1 = {
 		}	
 	}
 	antiash_jexus = {
-		icon =  mission_chinese_general_riding
+		icon =  mission_afghan_frontier
 		position = 10
 		required_missions = {
             antiash_into
@@ -522,6 +519,7 @@ antiash_2 = {
 		}
 	}
 	antiash_reform = {
+		icon = mission_patronize_art_and_religion
 		trigger = {
 			advisor = theologian
 			estate_loyalty = {
@@ -542,6 +540,7 @@ antiash_2 = {
 		}
 	}
 	antiash_culture = {
+		icon = mission_ahmadabad_paper
 		required_missions = {
             antiash_reform
 		}
@@ -1068,7 +1067,7 @@ antiash_4 = {
 		}	
 	}
 	antiash_cotton = {
-		icon = mission_into_persia_1
+		icon = mission_industrialize_bengal
 		trigger = {
 			7246 = {
 				base_production = 10
@@ -1119,7 +1118,7 @@ antiash_4 = {
 		required_missions = {
             antiash_cotton
 		}
-		icon = mission_into_persia_1
+		icon = mission_friends_or_enemies_(morocco)
 		trigger = {
 			calc_true_if = {
 				any_known_country = {
@@ -1247,7 +1246,7 @@ antiash_5 = {
 	antiash_invite = {
 		icon = mission_into_persia_2
 		trigger = {
-			any_known_county = {
+			any_known_country = {
 				limit = { has_institution = feudalism }
 				alliance_with = ROOT
 			}
