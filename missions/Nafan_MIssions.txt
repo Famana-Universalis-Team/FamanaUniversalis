@@ -323,7 +323,23 @@ nafa_1 = {
         required_missions = { naf_the_summer_coast }
         position = 6
         trigger = {
-            
+            custom_trigger_tooltip = {
+                tooltip = goldenAgeEmastaliaNafa
+                all_owned_province = {
+                    region = emastalia_region
+                    is_prosperous = yes
+                }
+            }
+            custom_trigger_tooltip = {
+                tooltip = goldenAgeEmastaliaNafaCities
+                calc_true_if = {
+                    all_owned_province = {
+                        region = emastalia_region
+                        development = 20
+                    }
+                    amount = 4
+                }
+            }
         }
         effect = {
             
@@ -425,7 +441,7 @@ nafa_1 = {
     naf_link_gomic_infrastructure = {
         icon = mission_gujarati_diaspora
         required_missions = { naf_propagate_the_edolyssa }
-        position = 19
+        position = 18
         trigger = {
             
         }
@@ -538,7 +554,7 @@ nafa_2 = {
                                     region = emastalia_region
                                 }
                             }
-                            amount = 2
+                            amount = 1
                         }
                     }
                     define_advisor = {
@@ -567,12 +583,32 @@ nafa_2 = {
         required_missions = { naf_influence_emastalia }
         position = 5
         trigger = {
-            
+            owns_all_provinces = {
+				region = emastalia_region
+				NOT = {
+					is_empty = yes
+				}
+			}
         }
         effect = {
-            
+            set_country_flag = nafaBlockCruel
+            custom_tooltip = nafaBlockCruelTooltip
+            add_yearly_sailors = 5.0
+            west_emastalia_region = { add_permanent_claim = ROOT }
+            if = {
+                limit = {
+                    NOT = {
+                        accepted_culture = East_Emastalian
+                    }
+                    add_accepted_culture = East_Emastalian
+                }
+            }
         }
-        #provinces_to_highlight = {}
+        provinces_to_highlight = {
+            NOT = { country_or_non_sovereign_subject_holds = ROOT }
+            NOT = { is_empty = yes }
+            region = emastalia_region
+        }
     }
 
     naf_unite_emastalia = {
@@ -682,7 +718,7 @@ nafa_2 = {
     naf_propagate_the_edolyssa = {
         icon = mission_brahmin_administrators
         required_missions = { }
-        position = 18
+        position = 17
         trigger = {
             
         }
@@ -695,7 +731,7 @@ nafa_2 = {
     naf_build_the_imperial_routes = {
         icon = mission_subjugate_rajputana
         required_missions = { naf_propagate_the_edolyssa }
-        position = 19
+        position = 18
         trigger = {
             
         }
@@ -740,6 +776,16 @@ nafa_3 = {
             }
             if = {
                 limit = {
+                    exists = TYD
+                }
+                add_casus_belli = {
+                    target = TYD
+                    type = cb_vassalize_mission
+                    months = 300
+                }
+            }
+            if = {
+                limit = {
                     exists = VAV
                 }
                 add_casus_belli = {
@@ -769,6 +815,11 @@ nafa_3 = {
                 }
             }
             elwait_area = { add_permanent_claim = ROOT }
+            5368 = { add_permanent_claim = ROOT }
+            5307 = { add_permanent_claim = ROOT }
+            5370 = { add_permanent_claim = ROOT }
+            5373 = { add_permanent_claim = ROOT }
+            5496 = { add_permanent_claim = ROOT }
         }
         provinces_to_highlight = {
             province_id = 5583
@@ -873,12 +924,30 @@ nafa_3 = {
         required_missions = { naf_prepare_an_invasion_force }
         position = 6
         trigger = {
-            
+            unnamed_area_20 = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+            pexamol_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+            south_pextum_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
         }
         effect = {
-            
+            add_prestige = 20
         }
-        #provinces_to_highlight = {}
+        provinces_to_highlight = {
+            NOT = { country_or_non_sovereign_subject_holds = ROOT }
+            OR = {
+                area = unnamed_area_20
+                area = pexamol_area
+                area = south_pextum_area
+            }
+        }
     }
 
     naf_xalian_integration = {
@@ -1001,7 +1070,7 @@ nafa_3 = {
     naf_technological_advantage = {
         icon = mission_industrialize_bengal
         required_missions = { naf_propagate_the_edolyssa }
-        position = 19
+        position = 18
         trigger = {
             
         }
@@ -1043,12 +1112,36 @@ nafa_4 = {
         required_missions = { naf_prepare_an_invasion_force naf_hold_fashros_at_bay  }
         position = 6
         trigger = {
-            
+            5368 = {
+                country_or_non_sovereign_subject_holds = ROOT
+            }
+            5307 = {
+                country_or_non_sovereign_subject_holds = ROOT
+            }
+            5370 = {
+                country_or_non_sovereign_subject_holds = ROOT
+            }
+            5373 = {
+                country_or_non_sovereign_subject_holds = ROOT
+            }
+            5496 = {
+                country_or_non_sovereign_subject_holds = ROOT
+            }
         }
         effect = {
-            
+            moxon_region = { add_permanent_claim = ROOT }
+            custom_tooltip = NEEDS_MORE_REWARDS
         }
-        #provinces_to_highlight = {}
+        provinces_to_highlight = {
+            NOT = { country_or_non_sovereign_subject_holds = ROOT }
+            OR = {
+                province_id = 5368
+                province_id = 5307
+                province_id = 5370
+                province_id = 5373
+                province_id = 5496
+            }
+        }
     }
 
     naf_a_compromise_in_thought = {
@@ -1056,12 +1149,84 @@ nafa_4 = {
         required_missions = { naf_partition_moxon }
         position = 7
         trigger = {
-            
+            moxon_region = {
+                type = all
+                country_or_non_sovereign_subject_holds = ROOT
+            }
+            OR = {
+                custom_trigger_tooltip = {
+                    tooltip = nafanMaxanTooltip
+                    NOT = {
+                        any_country = {
+                            religious_school = {
+                                group = lathvy_group
+                                school = maxan_school
+                            }
+                        }
+                    }
+                }
+                AND = {
+                    piety = 0.75
+                    prestige = 90
+                    is_defender_of_faith = yes
+                }
+            }
         }
         effect = {
-            
+            custom_tooltip = nafaChangeAllMaxansIntoNafanSchool
+            hidden_effect = {
+                if = {
+                    limit = {
+                        any_country = {
+                            religious_school = {
+                                group = lathvy_group
+                                school = maxan_school
+                            }
+                        }
+                    }
+                    every_known_country = {
+                        limit = {
+                            religious_school = {
+                                group = lathvy_group
+                                school = maxan_school
+                            }
+                        }
+                        set_religious_school = {
+                            group = lathvy_group
+                            school = nafan_school
+                        }
+                    }
+                }
+            }
+            if = {
+                limit = {
+                    5496 = {
+                        owned_by = ROOT
+                    }
+                }
+                5496 = {
+                    change_culture = Bohoran_E
+                }
+                if = {  
+                    limit = {
+                        NOT = {
+                            5496 = {
+                                religion = ROOT
+                            }
+                        }
+                        change_religion = ROOT
+                    }
+                }
+            }
+            add_country_modifier = {
+                name = nafa_trolled_moxon
+                duration = -1
+            }
         }
-        #provinces_to_highlight = {}
+        provinces_to_highlight = {
+            NOT = { country_or_non_sovereign_subject_holds = ROOT }
+            region = moxon_region
+        }
     }
 
     naf_aresian_incursion = {

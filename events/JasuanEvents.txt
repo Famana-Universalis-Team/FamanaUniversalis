@@ -398,11 +398,11 @@ country_event = {
 			manuever = 6
 			siege = 6
 		}
+		add_ruler_personality = conqueror_personality
 		if = {
 			limit = {
 				ai = yes
 			}
-			add_ruler_personality = conqueror_personality
 			set_ai_personality = {
 				personality = ai_militarist
 				locked = yes
@@ -653,6 +653,7 @@ country_event = {
 			manuever = 6
 			siege = 6
 		}
+		add_ruler_personality = conqueror_personality
 		if = {
 			limit = {
 				ai = yes
@@ -734,6 +735,7 @@ country_event = {
 			manuever = 6
 			siege = 6
 		}
+		add_ruler_personality = conqueror_personality
 		if = {
 			limit = {
 				ai = yes
@@ -816,6 +818,7 @@ country_event = {
 			manuever = 6
 			siege = 6
 		}
+		add_ruler_personality = conqueror_personality
 		if = {
 			limit = {
 				ai = yes
@@ -1078,6 +1081,7 @@ country_event = {
 			manuever = 6
 			siege = 6
 		}
+		add_ruler_personality = conqueror_personality
 		if = {
 			limit = {
 				ai = yes
@@ -1235,6 +1239,10 @@ country_event = {
 		NOT = {
 			total_development = 200
 		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
 	}
 
 	immediate = {

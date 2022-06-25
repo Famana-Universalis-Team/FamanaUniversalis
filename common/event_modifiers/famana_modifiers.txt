@@ -1052,5 +1052,9 @@ nafa_preparing_gaxal = {
     leader_cost = -0.10
 }
 
-nafa_invading_xal =  {
+nafa_invading_xal =  {}
+
+nafa_trolled_moxon = {
+    prestige_decay = -0.01
+    tolerance_own = 1
 }
