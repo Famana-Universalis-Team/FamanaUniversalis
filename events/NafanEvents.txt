@@ -62,3 +62,21 @@ country_event = {
         }
     }
 }
+
+country_event = {
+    id = nafa.3
+    title = nafa.3.t
+    desc = nafa.3.d
+    picture = CITY_VIEW_eventPicture
+    is_triggered_only = yes
+
+    option = {
+        name = nafa.3.a
+        ai_chance = { factor = 1 }
+        add_ruler_modifier = {
+            name = syadons_conquests
+            duration = -1
+        }
+        add_yearly_manpower = 1.5
+    }
+}

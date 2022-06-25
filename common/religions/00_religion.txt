@@ -1192,7 +1192,7 @@ far_eastern_gomic = {
 		personal_deity = yes
 
 		country = {
-			technology_cost = -0.1
+			technology_cost = -0.05
 			global_tax_modifier = 0.10
 		}
 		country_as_secondary = {
