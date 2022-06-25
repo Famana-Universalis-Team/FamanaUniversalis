@@ -831,7 +831,6 @@ zealot_personality = {
 			factor = 2
 			has_country_flag = kin_zealot_chance
 		}
-		
 	}
 	
 	different_religion_war_multiplier = 2
@@ -1623,10 +1622,6 @@ bold_fighter_personality = {
 				factor = 1
 				MIL = 6
 			}
-			modifier = {
-				factor = 2
-				has_country_flag = fas_bold_fighter_chance
-			}
 		}
 	}
 
@@ -1663,6 +1658,10 @@ bold_fighter_personality = {
 	allow = { }
 	
 	chance = {
+		modifier = {
+			factor = 2
+			has_country_flag = fas_bold_fighter_chance
+		}
 	}
 	
 	enemy_strength_multiplier = 0.85
@@ -2649,6 +2648,10 @@ cruel_personality = {
 					consort_has_personality = babbling_buffoon_personality
 					consort_has_personality = petty_personality
 				}
+			}
+			modifier = {
+				factor = 0
+				has_country_flag = nafaBlockCruel
 			}
 		}
 	}
