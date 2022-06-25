@@ -411,10 +411,115 @@ nafa_2 = {
         required_missions = { naf_founding_of_syadona }
         position = 4
         trigger = {
-            
+            if = {
+                limit = {
+                    exists = TYD
+                }
+                TYD = {
+                    OR = {
+                        is_subject_of = ROOT
+                        guaranteed_by = ROOT
+                    }
+                }
+            }
+            if = {
+                limit = {
+                    exists = VAV
+                }
+                VAV = {
+                    OR = {
+                        is_subject_of = ROOT
+                        guaranteed_by = ROOT
+                    }
+                }
+            }
+            if = {
+                limit = {
+                    exists = INI
+                }
+                INI = {
+                    OR = {
+                        is_subject_of = ROOT
+                        guaranteed_by = ROOT
+                    }
+                }
+            }
+            if = {
+                limit = {
+                    exists = PXA
+                }
+                PXA = {
+                    OR = {
+                        is_subject_of = ROOT
+                        guaranteed_by = ROOT
+                    }
+                }
+            }
+            if = {
+                limit = {
+                    exists = ELQ
+                }
+                ELQ = {
+                    OR = {
+                        is_subject_of = ROOT
+                        guaranteed_by = ROOT
+                    }
+                }
+            }
+            if = {
+                limit = {
+                    NOT = {
+                        OR = {
+                            exists = TYD
+                            exists = VAV
+                            exists = INI
+                            exists = PXA
+                            exists = ELQ
+                        }
+                    }
+                }
+                num_of_owned_provinces_with	= {
+                    value = 5
+                    region = emastalia_region
+                    is_core = ROOT
+                }
+            }
         }
         effect = {
-            
+            if = {
+                limit = {
+                    dip = 6
+                }
+                add_dip_power = 100
+            }
+            else = {
+                change_dip = 1
+            }
+            emastalia_region = { add_permanent_claim = ROOT }
+            custom_tooltip = ifCompleteInfluenceEst
+            hidden_effect = {
+                if = {
+                    limit = {
+                        calc_true_if = {
+                            all_known_country = {
+                                is_subject_of = ROOT
+                                capital_scope = {
+                                    region = emastalia_region
+                                }
+                            }
+                            amount = 2
+                        }
+                    }
+                }
+                define_advisor = {
+                    type = statesman
+                    skill = 3
+                    culture = East_Emastalian
+                    religion = lathvy
+                    discount = yes
+                    location = 5583
+                }
+            }
         }
         #provinces_to_highlight = {}
     }
@@ -591,11 +696,10 @@ nafa_3 = {
             5583 = {
                 add_center_of_trade_level = 1
             }
-            add_ruler_modifier = {
-                name = syadons_conquests
-                duration = -1
+            country_event = {
+                id = nafa.3
+                days = 1
             }
-            #Actually, maybe make this an event?
             if = {
                 limit = {
                     exists = VAV
@@ -638,7 +742,9 @@ nafa_3 = {
             }
             elwait_area = { add_permanent_claim = ROOT }
         }
-        #provinces_to_highlight = {}
+        provinces_to_highlight = {
+            province_id = 5583
+        }
     }
 
     naf_landfall_in_elwait = {
