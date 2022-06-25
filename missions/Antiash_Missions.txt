@@ -69,7 +69,7 @@ antiash_1 = {
 				cede_province = ROOT
 				add_core = ROOT
 			}
-			7962 = {
+			7963 = {
 				kill_units = {
 				who = ROOT
 				type = infantry
@@ -1105,7 +1105,7 @@ antiash_4 = {
 				duration = -1
 				}
 			}
-			7269 = {
+			7969 = {
 				change_trade_goods = cotton
 				add_province_modifier = {
 				name = "antiash_production"
@@ -1118,10 +1118,10 @@ antiash_4 = {
 		required_missions = {
             antiash_cotton
 		}
-		icon = mission_friends_or_enemies_(morocco)
+		icon = mission_friends_or_enemies_
 		trigger = {
 			calc_true_if = {
-				any_known_country = {
+				all_known_country = {
 					has_opinion = {
 						who = ROOT
 						value = 100
@@ -1247,7 +1247,7 @@ antiash_5 = {
 		icon = mission_into_persia_2
 		trigger = {
 			any_known_country = {
-				limit = { has_institution = feudalism }
+				has_institution = feudalism 
 				alliance_with = ROOT
 			}
 			prestige = 30
