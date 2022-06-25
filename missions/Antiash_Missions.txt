@@ -14,7 +14,10 @@ antiash_1 = {
 	antiash_raid = {
 		icon =  mission_raid_on_iceland
 		trigger = {
-			has_country_flag = antiash_raided_5_capitals
+			custom_trigger_tooltip = {
+				tooltip = ANTIASH_RAID_5_CAPITALS
+				has_country_flag = antiash_raided_5_capitals	
+			}
 		}
 		effect = {
 			capital_scope = {
@@ -32,21 +35,11 @@ antiash_1 = {
             antiash_population
         }
 		trigger = {
-			7967 = {
-			infantry_in_province = ROOT
-			}
-			7965 = {
-			infantry_in_province = ROOT
-			}
-			7964 = {
-			infantry_in_province = ROOT
-			}
-			7963 = {
-			infantry_in_province = ROOT
-			}
-			7966 = {
-			infantry_in_province = ROOT
-			}
+		owns_core_province = 7967
+		owns_core_province = 7965
+		owns_core_province = 7964
+		owns_core_province = 7963
+		owns_core_province = 7966
         }
 		provinces_to_highlight = {
 			OR = {
@@ -55,51 +48,6 @@ antiash_1 = {
 			}
 		}
 		effect = {
-			7967 = {
-				kill_units = {
-				who = ROOT
-				type = infantry
-				amount = 1
-				}
-				cede_province = ROOT
-				add_core = ROOT
-			}
-			7965 = {
-				kill_units = {
-				who = ROOT
-				type = infantry
-				amount = 1
-				}
-				cede_province = ROOT
-				add_core = ROOT
-			}
-			7964 = {
-				kill_units = {
-				who = ROOT
-				type = infantry
-				amount = 1
-				}
-				cede_province = ROOT
-				add_core = ROOT
-			}
-			7963 = {
-				kill_units = {
-				who = ROOT
-				type = infantry
-				amount = 1
-				}
-				cede_province = ROOT
-				add_core = ROOT
-			}
-			7966 = {
-				kill_units = {
-				who = ROOT
-				type = infantry
-				amount = 1
-				}
-				cede_province = ROOT
-				add_core = ROOT
-			}
 			add_years_of_income = 0.25
 			add_country_modifier = {
 				name = "antiash_nostalgic_journey"
@@ -119,89 +67,35 @@ antiash_1 = {
 			}
 		}
 		trigger = {
-			5150 = {
-			infantry_in_province = ROOT
-			}
-			5813 = {
-			infantry_in_province = ROOT
-			}
-			5812 = {
-			infantry_in_province = ROOT
-			}
-			5815 = {
-			infantry_in_province = ROOT
-			}
-			7984 = {
-			infantry_in_province = ROOT
-			}
-			5814 = {
-			infantry_in_province = ROOT
-			} 
+			owns_core_province = 5150
+			owns_core_province = 5813
+			owns_core_province = 5812
+			owns_core_province = 5815
+			owns_core_province = 7984
+			owns_core_province = 5814
         }
 		effect = {
 			5150 = {
-				kill_units = {
-				who = ROOT
-				type = infantry
-				amount = 1
-				}
-				cede_province = ROOT
-				add_core = ROOT
 				change_religion = ROOT
 				change_culture = ROOT
 			}
 			5813 = {
-				kill_units = {
-				who = ROOT
-				type = infantry
-				amount = 1
-				}
-				cede_province = ROOT
-				add_core = ROOT
 				change_religion = ROOT
 				change_culture = ROOT
 			}
 			5812= {
-				kill_units = {
-				who = ROOT
-				type = infantry
-				amount = 1
-				}
-				cede_province = ROOT
-				add_core = ROOT
 				change_religion = ROOT
 				change_culture = ROOT
 			}
 			5815 = {
-				kill_units = {
-				who = ROOT
-				type = infantry
-				amount = 1
-				}
-				cede_province = ROOT
-				add_core = ROOT
 				change_religion = ROOT
 				change_culture = ROOT
 			}
 			7984 = {
-				kill_units = {
-				who = ROOT
-				type = infantry
-				amount = 1
-				}
-				cede_province = ROOT
-				add_core = ROOT
 				change_religion = ROOT
 				change_culture = ROOT
 			}
 			5814 = {
-				kill_units = {
-				who = ROOT
-				type = infantry
-				amount = 1
-				}
-				cede_province = ROOT
-				add_core = ROOT
 				change_religion = ROOT
 				change_culture = ROOT
 			}
@@ -810,9 +704,7 @@ antiash_3 = {
         }
 
         trigger = {
-			7962 = {
-			infantry_in_province = ROOT
-			}
+			owns_core_province = 7962
         }
       
 		provinces_to_highlight = {
@@ -821,13 +713,6 @@ antiash_3 = {
        
         effect = {
 			7962 = {
-				kill_units = {
-					who = ROOT
-					type = infantry
-					amount = 1
-				}
-				cede_province = ROOT
-				add_core = ROOT
 				change_religion = ROOT
 				change_culture = ROOT
 			}
@@ -1079,7 +964,19 @@ antiash_4 = {
 			workshop = 5
 		}
 		effect = {
-			#idk
+			add_stability = 1
+			add_estate_loyalty = {
+				estate = estate_nobles
+				loyalty = 5
+			}
+			add_estate_loyalty = {
+				estate = estate_clergy
+				loyalty = 5
+			}
+			add_estate_loyalty = {
+				estate = estate_burghers
+				loyalty = 5
+			}
 		}	
 	}
 	antiash_cotton = {
@@ -1262,9 +1159,12 @@ antiash_5 = {
 	antiash_invite = {
 		icon = mission_into_persia_2
 		trigger = {
-			any_known_country = {
-				has_institution = feudalism
-				alliance_with = ROOT
+			custom_trigger_tooltip = {
+				tooltip = ANTIASH_ALLIES_MET
+				any_known_country = {
+					has_institution = feudalism
+					alliance_with = ROOT
+				}
 			}
 			prestige = 30
 		}
@@ -1296,24 +1196,12 @@ antiash_5 = {
 			antiash_population
 		}
 		trigger = {
-			7972 = {
-				infantry_in_province = ROOT
-			}
-			7960 = {
-				infantry_in_province = ROOT
-			}
-			7959 = {
-				infantry_in_province = ROOT
-			}
-			7958 = {
-				infantry_in_province = ROOT
-			}
-			7957 = {
-				infantry_in_province = ROOT
-			}
-			7956 = {
-				infantry_in_province = ROOT
-			}
+			owns_core_province = 7972
+			owns_core_province = 7960
+			owns_core_province = 7959
+			owns_core_province = 7958
+			owns_core_province = 7957
+			owns_core_province = 7956
 		}
 		provinces_to_highlight = {
 			OR = {
@@ -1323,59 +1211,9 @@ antiash_5 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		effect = {
-			7972 = {
-				kill_units = {
-				who = ROOT
-				type = infantry
-				amount = 1
-				}
-				cede_province = ROOT
-				add_core = ROOT
-			}
-			7960 = {
-				kill_units = {
-				who = ROOT
-				type = infantry
-				amount = 1
-				}
-				cede_province = ROOT
-				add_core = ROOT
-			}
-			7959 = {
-				kill_units = {
-				who = ROOT
-				type = infantry
-				amount = 1
-				}
-				cede_province = ROOT
-				add_core = ROOT
-			}
-			7958 = {
-				kill_units = {
-				who = ROOT
-				type = infantry
-				amount = 1
-				}
-				cede_province = ROOT
-				add_core = ROOT
-			}
-			7957 = {
-				kill_units = {
-				who = ROOT
-				type = infantry
-				amount = 1
-				}
-				cede_province = ROOT
-				add_core = ROOT
-			}
-			7956 = {
-				kill_units = {
-				who = ROOT
-				type = infantry
-				amount = 1
-				}
-				cede_province = ROOT
-				add_core = ROOT
+			every_owned_province = {
+				limit = { area = area_243 }
+				change_religion = ROOT
 			}
 			area_244 = {
 				discover_country = ROOT
@@ -1405,21 +1243,11 @@ antiash_5 = {
 			antiash_approach
 		}
 		trigger = {
-			5184 = {
-				infantry_in_province = ROOT
-			}
-			7955 = {
-				infantry_in_province = ROOT
-			}
-			7954 = {
-				infantry_in_province = ROOT
-			}
-			7953 = {
-				infantry_in_province = ROOT
-			}
-			7952 = {
-				infantry_in_province = ROOT
-			}
+			owns_core_province = 5814
+			owns_core_province = 7955
+			owns_core_province = 7954
+			owns_core_province = 7953
+			owns_core_province = 7952
 		}
 		provinces_to_highlight = {
 			OR = {
@@ -1429,50 +1257,10 @@ antiash_5 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		effect = {
-			5184 = {
-				kill_units = {
-				who = ROOT
-				type = infantry
-				amount = 1
-				}
-				cede_province = ROOT
-				add_core = ROOT
-			}
-			7955 = {
-				kill_units = {
-				who = ROOT
-				type = infantry
-				amount = 1
-				}
-				cede_province = ROOT
-				add_core = ROOT
-			}
-			7954 = {
-				kill_units = {
-				who = ROOT
-				type = infantry
-				amount = 1
-				}
-				cede_province = ROOT
-				add_core = ROOT
-			}
-			7953 = {
-				kill_units = {
-				who = ROOT
-				type = infantry
-				amount = 1
-				}
-				cede_province = ROOT
-				add_core = ROOT
-			}
-			7952 = {
-				kill_units = {
-				who = ROOT
-				type = infantry
-				amount = 1
-				}
-				cede_province = ROOT
-				add_core = ROOT
+			every_owned_province = {
+				limit = { area = area_244 }
+				change_culture = ROOT
+				change_religion = ROOT
 			}
 			eastern_desert_region = {
 				add_permanent_claim = ROOT
