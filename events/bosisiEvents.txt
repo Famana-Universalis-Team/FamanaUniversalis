@@ -387,21 +387,3 @@ country_event = {
 		}
 	}
 }
-#architect
-country_event = {
-	id = bosisi.13
-	title = bosisi.13.t
-	desc = bosisi.13.d
-	picture = CITY_VIEW_eventPicture
-	fire_only_once = yes
-	is_triggered_only = yes
-	option = {
-		name = bosisi.13.a
-		capital_scope = {
-			add_province_modifier = { 
-				name = antiash_architect
-				duration = -1  
-			}		
-		}
-	}
-}

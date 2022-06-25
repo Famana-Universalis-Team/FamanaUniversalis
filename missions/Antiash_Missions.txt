@@ -542,6 +542,9 @@ antiash_2 = {
 		}
 	}
 	antiash_culture = {
+		required_missions = {
+            antiash_reform
+		}
 		trigger = {
 			advisor = artist
 			any_neighbor_country = {
@@ -553,10 +556,12 @@ antiash_2 = {
 				name = "antiash_cultural"
 				duration = -1
 			}
-			country_event = { 
-				id = bosisi.13
-				days = 1
-			}
+			capital_scope = {
+				add_province_modifier = { 
+					name = antiash_architect
+					duration = -1  
+				}		
+			}	
 		}
 	}
 	antiash_into = {
@@ -1067,11 +1072,11 @@ antiash_4 = {
 		trigger = {
 			7246 = {
 				base_production = 10
-				has_building = worshop
+				has_building = workshop
 			}
 			7244 = {
 				base_production = 10
-				has_building = worshop
+				has_building = workshop
 			}
 		}
 		effect = {
@@ -1111,10 +1116,13 @@ antiash_4 = {
 		}
 	}
 	antiash_promote = {
+		required_missions = {
+            antiash_cotton
+		}
 		icon = mission_into_persia_1
 		trigger = {
 			calc_true_if = {
-				any_known_county = {
+				any_known_country = {
 					has_opinion = {
 						who = ROOT
 						value = 100
