@@ -1539,6 +1539,8 @@ gadan_group = {
 			free_leader_pool = 1
 			prestige_from_land = 0.25
 		}
+
+		ancestors = yes
 		
 		heretic = { REDUCED_PANTHEON EXPANDED_PANTHEON MALKAPLATAN }	
 	}
