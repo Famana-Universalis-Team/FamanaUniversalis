@@ -267,12 +267,55 @@ nafa_1 = {
         required_missions = { naf_founding_of_syadona eclipse_great_port_of_bohora }
         position = 4
         trigger = {
-            
+            5002 = {
+                highest_value_trade_node = yes
+            }
+            5002 = {
+                trade_share	= {
+                    country = ROOT
+                    share = 50
+                }
+            }
+            5196 = {
+                trade_share	= {
+                    country = ROOT
+                    share = 50
+                }
+            }
         }
         effect = {
-            
+            custom_tooltip = nafaDomGomicTt
+            hidden_effect = {
+                every_owned_province = {
+                    limit = {
+                        province_has_center_of_trade_of_level = 1
+                        OR = {
+                            region = emastalia_region
+                            region = west_emastalia_region
+                            region = moxon_region
+                            region = stroktur_region
+                            region = jasua_region
+                            region = kapolia_region
+                        }
+                    }
+                    add_province_modifier = {
+                        name = nafa_epic_trade
+                        duration = 18250
+                    }
+                }
+            }
+            add_country_modifier = {
+                name = nafan_fleet_power
+                duration = 7300
+            }
+            add_navy_tradition = 25
         }
-        #provinces_to_highlight = {}
+        provinces_to_highlight = {
+            OR = {
+                province_id = 5002
+                province_id = 5196
+            }
+        }
     }
 
     naf_emastalian_golden_age = {
@@ -457,24 +500,12 @@ nafa_2 = {
             }
             if = {
                 limit = {
-                    exists = ELQ
-                }
-                ELQ = {
-                    OR = {
-                        is_subject_of = ROOT
-                        guaranteed_by = ROOT
-                    }
-                }
-            }
-            if = {
-                limit = {
                     NOT = {
                         OR = {
                             exists = TYD
                             exists = VAV
                             exists = INI
                             exists = PXA
-                            exists = ELQ
                         }
                     }
                 }
@@ -510,18 +541,25 @@ nafa_2 = {
                             amount = 2
                         }
                     }
-                }
-                define_advisor = {
-                    type = statesman
-                    skill = 3
-                    culture = East_Emastalian
-                    religion = lathvy
-                    discount = yes
-                    location = 5583
+                    define_advisor = {
+                        type = statesman
+                        skill = 3
+                        culture = East_Emastalian
+                        religion = lathvy
+                        discount = yes
+                        location = 5583
+                    }
                 }
             }
         }
-        #provinces_to_highlight = {}
+        provinces_to_highlight = {
+            OR = {
+                owned_by = TYD
+                owned_by = INI
+                owned_by = VAV
+                owned_by = PXA
+            }
+        }
     }
 
     naf_the_summer_coast = {
@@ -730,16 +768,6 @@ nafa_3 = {
                     months = 300
                 }
             }
-            if = {
-                limit = {
-                    exists = ELQ
-                }
-                add_casus_belli = {
-                    target = ELQ
-                    type = cb_vassalize_mission
-                    months = 300
-                }
-            }
             elwait_area = { add_permanent_claim = ROOT }
         }
         provinces_to_highlight = {
@@ -752,12 +780,44 @@ nafa_3 = {
         required_missions = { naf_founding_of_syadona }
         position = 4
         trigger = {
-            
+            elwait_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+            num_of_transport = 10
         }
         effect = {
-            
+            if = {
+                limit = {
+                    NOT = {
+                        any_province = {
+                            area = elwait_area
+                            OR = {
+                                has_building = fort_15th
+                                has_building = fort_16th
+                                has_building = fort_17th
+                                has_building = fort_18th
+                            }
+                        }
+                    }
+                }
+                5377 = {
+                    add_building_construction = {
+                        building = fort_15th
+                        speed = 0.25
+                        cost = 0.0
+                    }
+                }
+            }
+            add_country_modifier = {
+                name = nafa_preparing_gaxal
+                duration = 3650
+            }
         }
-        #provinces_to_highlight = {}
+        provinces_to_highlight = {
+            NOT = { country_or_non_sovereign_subject_holds = ROOT }
+            area = elwait_area
+        }
     }
 
     naf_prepare_an_invasion_force = {
@@ -765,12 +825,47 @@ nafa_3 = {
         required_missions = { naf_landfall_in_elwait }
         position = 5
         trigger = {
-            
+            any_owned_province = {
+                area = elwait_area
+                infantry_in_province = 10
+            }
+            num_of_owned_provinces_with = {
+                value = 4
+                region = north_xalia_region
+            }
+            custom_trigger_tooltip = {
+                tooltip = nafaArmySizeXalTt
+                NOT = {
+                    any_country = {
+                        capital_scope = {
+                            superregion = ga_xal_superregion
+                        }
+                        army_size = ROOT
+                    }
+                }
+            }
         }
         effect = {
-            
+            custom_tooltip = nafa_invading_xal_tooltip
+            hidden_effect = {
+                add_country_modifier = {
+                    name = nafa_invading_xal
+                    duration = 5475
+                    hidden = yes
+                }
+            }
+            add_power_projection = {
+                type = mission_rewards_power_projection
+                amount = 25
+            }
+            unnamed_area_20 = { add_permanent_claim = ROOT }
+            pexamol_area = { add_permanent_claim = ROOT }
+            south_pextum_area = { add_permanent_claim = ROOT }
         }
-        #provinces_to_highlight = {}
+        provinces_to_highlight = {
+            owned_by = NAF
+            area = elwait_area
+        }
     }
 
     naf_defeat_xolnomarka = {
