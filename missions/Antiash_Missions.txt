@@ -12,7 +12,7 @@ antiash_1 = {
     }
 	has_country_shield = yes
 	antiash_raid = {
-		icon =  mission_mosque
+		icon =  mission_raid_on_iceland
 		trigger = {
 			has_country_flag = antiash_raided_5_capitals
 		}
@@ -540,6 +540,7 @@ antiash_2 = {
 			loyalty = 65
 			}
 			legitimacy = 65
+			has_institution = renaissance
 		}
 		effect = {
 			add_country_modifier = {
@@ -559,9 +560,11 @@ antiash_2 = {
 		}
 		trigger = {
 			advisor = artist
-			any_neighbor_country = {
-			tech_difference = 1
-			} 
+			all_neighbor_country = { 
+				ROOT = {
+					tech_difference = 1
+				}
+			}
 		}
 		effect = {
 			add_country_modifier = {

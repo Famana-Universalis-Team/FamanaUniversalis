@@ -983,15 +983,14 @@ antiash_cultural = {
 
 antiash_architect = {
 	allowed_num_of_buildings = 1
-	province_trade_power_modifier = 0.2
 	local_development_cost = -0.25
-	local_production_efficiency = 0.15
+	institution_growth = 2
 }
 
 antiash_reformed_bosisi = {
 	global_missionary_strength = 0.02
 	tolerance_own = 1
-	religious_unity = 0.1
+	stability_cost_modifier = -0.10
 }
 
 antiash_prophet = {
