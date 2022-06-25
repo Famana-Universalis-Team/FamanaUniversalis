@@ -128,6 +128,24 @@ ai_fashros_buff = {
     diplomatic_reputation = 2
 }
 
+naf_xolnomarkan_invasion_buff = {
+    potential = {
+        tag = NAF
+    }
+    trigger = {
+        has_country_modifier = nafa_invading_xal
+        any_known_country = {
+            capital_scope = {
+                superregion = ga_xal_superregion
+            }
+            war_with = ROOT
+        }
+    }
+    land_morale = 0.20
+    reinforce_speed = 0.10
+    siege_ability = 0.25
+}
+
 ################################ AGES
 
 age_1_trig_modifier = { #despair

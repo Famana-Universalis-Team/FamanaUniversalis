@@ -1921,7 +1921,7 @@ country_decisions = {
 							limit = {
 								ai = yes
 							}
-							add_ruler_personality = conquerer_personality
+							add_ruler_personality = conqueror_personality
 							set_ai_personality = {
 								personality = ai_militarist
 								locked = yes
