@@ -62,6 +62,30 @@ diocese_gov_name = {
 	}
 }
 
+desert_tribe_name = {
+	rank = {
+		1 = DESERT_TRIBE
+		2 = DESERT_TRIBE
+		3 = DESERT_TRIBE
+	}
+
+	ruler_male = {
+		1 = CHIEF
+		2 = CHIEF
+		3 = CHIEF
+	}
+
+	ruler_female = {
+		1 = CHIEF
+		2 = CHIEF
+		3 = CHIEF
+	}
+
+	trigger = {
+		has_reform = desert_tribe
+	}
+}
+
 qanoyo_diarchy_name = {
 	rank = {
 		1 = DIARCHY

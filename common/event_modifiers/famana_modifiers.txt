@@ -1032,3 +1032,11 @@ syadons_conquests = {
     years_of_nationalism = -5
     land_maintenance_modifier = -0.20
 }
+
+recent_migration = {
+    global_tax_modifier = 0.5
+    production_efficiency = 0.5
+}
+
+didnt_migrate = {
+}

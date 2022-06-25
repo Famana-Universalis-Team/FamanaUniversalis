@@ -231,4 +231,30 @@ country_decisions = {
 			factor = 1
 		}
 	}
+
+    tribal_migrate = {
+        potential = {
+            has_reform = desert_tribe
+		}
+		allow = {
+			NOT = {
+                OR = {
+                    has_country_modifier = recent_migration
+                    has_country_modifier = didnt_migrate
+                    hidden_trigger = {
+                        has_country_flag = migmenuopen
+                    }
+                }
+            }
+		}
+		effect = {
+            country_event = {
+                id = bosisi.1
+            }
+            set_country_flag = migmenuopen
+		}
+		ai_will_do = {
+			factor = 1
+		}
+    }
 }

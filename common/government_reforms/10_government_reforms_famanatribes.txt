@@ -46,7 +46,8 @@ desert_tribe = {
 		province_warscore_cost = 10
 		core_creation = 100
 		diplomatic_upkeep = -4
-		global_tax_modifier = 0.30
+		global_tax_modifier = -0.20
+		production_efficiency = -0.5
 		cb_on_religious_enemies = yes
 		#custom_tooltip = migrations_tooltip
 	}
