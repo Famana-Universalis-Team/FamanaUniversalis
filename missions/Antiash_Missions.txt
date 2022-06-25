@@ -1118,7 +1118,7 @@ antiash_4 = {
 		required_missions = {
             antiash_cotton
 		}
-		icon = mission_friends_or_enemies_
+		icon = sources_of_trade
 		trigger = {
 			calc_true_if = {
 				all_known_country = {
@@ -1247,7 +1247,7 @@ antiash_5 = {
 		icon = mission_into_persia_2
 		trigger = {
 			any_known_country = {
-				NOT = { has_unembraced_institution = feudalism }
+				has_institution = feudalism
 				alliance_with = ROOT
 			}
 			prestige = 30
@@ -1256,25 +1256,19 @@ antiash_5 = {
 			7243 = {
 				add_institution_embracement = {
 				which = feudalism
-				value = 20
+				value = 100
 				}
 			}
-			7246 = {
+			7244 = {
 				add_institution_embracement = {
 				which = feudalism
-				value = 20
+				value = 100
 				}
 			}
 			7250 = {
 				add_institution_embracement = {
 				which = feudalism
-				value = 20
-				}
-			}
-			7245 = {
-				add_institution_embracement = {
-				which = feudalism
-				value = 20
+				value = 100
 				}
 			}
 		}	
