@@ -1247,7 +1247,7 @@ antiash_5 = {
 		icon = mission_into_persia_2
 		trigger = {
 			any_known_country = {
-				has_institution = feudalism 
+				NOT = { has_unembraced_institution = feudalism }
 				alliance_with = ROOT
 			}
 			prestige = 30
