@@ -638,6 +638,121 @@ on_siege_won_country = {
 			add_church_power = 5
 		}
 	}
+	if = {
+		limit = {
+			NOT = { has_global_flag = antiash_mission_finished has_country_flag = antiash_raided_1_capital }
+			ROOT = { 
+				OR = {
+					tag = KKR
+					tag = ALU
+					tag = ATM
+				}
+			}
+			FROM = {
+				is_capital = yes
+				NOT  = {
+					has_province_flag = antiash_raided
+				}
+			}
+		}
+			
+		set_country_flag  = antiash_raided_1_capital
+		FROM = {
+			set_province_flag = antiash_raided
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_global_flag = antiash_mission_finished has_country_flag = antiash_raided_2_capitals }
+			ROOT = { 
+				OR = {
+					tag = KKR
+					tag = ALU
+					tag = ATM
+				}
+			}
+			FROM = {
+				is_capital = yes
+				NOT  = {
+					has_province_flag = antiash_raided
+				}
+			}
+		}
+			
+		set_country_flag  = antiash_raided_2_capitals
+		FROM = {
+			set_province_flag = antiash_raided
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_global_flag = antiash_mission_finished has_country_flag = antiash_raided_3_capitals }
+			ROOT = { 
+				OR = {
+					tag = KKR
+					tag = ALU
+					tag = ATM
+				}
+			}
+			FROM = {
+				is_capital = yes
+				NOT  = {
+					has_province_flag = antiash_raided
+				}
+			}
+		}
+			
+		set_country_flag  = antiash_raided_3_capitals
+		FROM = {
+			set_province_flag = antiash_raided
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_global_flag = antiash_mission_finished has_country_flag = antiash_raided_4_capitals }
+			ROOT = { 
+				OR = {
+					tag = KKR
+					tag = ALU
+					tag = ATM
+				}
+			}
+			FROM = {
+				is_capital = yes
+				NOT  = {
+					has_province_flag = antiash_raided
+				}
+			}
+		}
+			
+		set_country_flag  = antiash_raided_4_capitals
+		FROM = {
+			set_province_flag = antiash_raided
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_global_flag = antiash_mission_finished has_country_flag = antiash_raided_5_capitals }
+			ROOT = { 
+				OR = {
+					tag = KKR
+					tag = ALU
+					tag = ATM
+				}
+			}
+			FROM = {
+				is_capital = yes
+				NOT  = {
+					has_province_flag = antiash_raided
+				}
+			}
+		}
+			
+		set_country_flag  = antiash_raided_5_capitals
+		FROM = {
+			set_province_flag = antiash_raided
+		}
+	}
 	grant_manpower_from_capital_slave_raid = yes
 	events = {
 		tyw_events.14 # Fall of Prague in Religious War

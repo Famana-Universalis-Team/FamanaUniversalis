@@ -11,13 +11,26 @@ antiash_1 = {
 		}
     }
 	has_country_shield = yes
+	antiash_raid = {
+		icon =  mission_mosque
+		trigger = {
+			has_country_flag = antiash_raided_5_capitals
+		}
+		effect = {
+			capital_scope = {
+				add_base_tax = 4
+				add_base_production = 4
+				add_base_manpower = 4
+			}
+			set_global_flag = antiash_mission_finished
+		}
+	}
 	antiash_homeland = {
 		icon =  mission_mosque
 		position = 4
 		required_missions = {
             antiash_population
         }
-		
 		trigger = {
 			7967 = {
 			infantry_in_province = ROOT
