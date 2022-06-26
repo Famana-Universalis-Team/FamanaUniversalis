@@ -440,7 +440,7 @@ nafa_1 = {
                 }
             }
             add_estate_loyalty = {
-                estate = estate_church
+                estate = estate_burghers
                 loyalty = 20
             }
         }
@@ -1539,7 +1539,7 @@ nafa_5 = {
             
         }
         effect = {
-            
+
             #if they exist, we are at war with them and they are in the disaster, we will be able to annex and core all of their provinces upon occupying them
         }
         #provinces_to_highlight = {}
