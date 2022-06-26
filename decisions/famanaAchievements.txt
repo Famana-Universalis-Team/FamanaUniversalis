@@ -1297,6 +1297,10 @@ country_decisions = {
 			NOT = {
 				num_of_cities = 11
 			}
+			custom_trigger_tooltip = {
+				tooltip = elwaitingGameTooltip
+				NOT = { has_country_flag = elwaitingGameCheated }
+			}
 		}
 		effect = {
 			add_country_modifier = {
