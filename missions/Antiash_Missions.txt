@@ -454,11 +454,11 @@ antiash_2 = {
 		}
 		trigger = {
 			advisor = artist
-			all_neighbor_country = { 
-				ROOT = {
-					tech_difference = 1
+			NOT = {
+				any_neighbor_country = {
+				tech_difference = 1
 				}
-			}
+			} 
 		}
 		effect = {
 			add_country_modifier = {
@@ -1048,7 +1048,7 @@ antiash_4 = {
 			change_price = {
 			trade_goods = cotton
 			key = ANTIASH_ADVERTISING
-			value = 0.75
+			value = 0.3
 			duration = -1
 			}
 			add_years_of_income  = 0.25

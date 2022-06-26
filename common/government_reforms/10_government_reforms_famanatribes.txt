@@ -87,3 +87,34 @@ antiash_federation = {
 		factor = 1
 	}
 }
+
+four_tribe_rule = {
+	icon = "native_clan_council_reform"
+	allow_normal_conversion = no
+	potential = {
+		has_reform = four_tribe_rule
+	}
+
+	valid_for_nation_designer = no
+	legacy_equivalent = tribal_federation_legacy
+	heir = no
+	lock_level_when_selected = yes
+	raze_province = yes
+	
+	modifiers = {
+		num_accepted_cultures = 2
+		promote_culture_cost = -0.50
+		global_autonomy = -0.05
+	}
+	
+	conditional = {
+		allow = { has_dlc = "Cradle of Civilization" }
+		government_abilities = {
+			tribal_federation_mechanic
+		}
+	}
+	
+	ai = {
+		factor = 1
+	}
+}
