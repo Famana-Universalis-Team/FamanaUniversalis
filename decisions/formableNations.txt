@@ -3554,7 +3554,7 @@ country_decisions = {
 				name = "centralization_modifier"
 				duration = 7300
 			}
-			add_prestige = 10
+			add_prestige = 25
 			swap_non_generic_missions = yes
 		}
 		ai_will_do = {

@@ -1278,3 +1278,99 @@ country_event = {
 		}
 	}
 }
+
+country_event = { #Kalargan uprising
+	id = jasuaE.24
+	title = jasuaE.24.t
+	desc = jasuaE.24.d
+	picture = BATTLE_eventPicture
+	fire_only_once = yes
+
+	trigger = {
+		tag = SKT
+		any_owned_province = {
+			culture = Kachik
+		}
+		owns = 5488
+	}
+
+	mean_time_to_happen = {
+		months = 180
+		modifier = {
+			factor = 3.0
+			mission_completed = eclipse_healing_the_rift
+		}
+	}
+
+	option = { #Fight the rebels
+		name = jasuaE.24.a
+		ai_chance = { factor = 10 }
+		highlight = yes
+		5488 = {
+			spawn_rebels = {
+				size = 2
+				type = nationalist_rebels
+			}
+		}
+		add_stability = -1
+	}
+
+	option = { #Go kalarga
+		name = jasuaE.24.b
+		ai_chance = { factor = 1 }
+		if = {
+			limit = {
+				AND = {
+					has_custom_ideas = no
+					NOT = {
+						has_idea_group = Kachik_ideas
+					}
+				}
+			}
+			country_event = { id = ideagroups.1 } #Swap Ideas
+		}
+		restore_country_name = yes
+		change_tag = KLG
+		5488 = {
+			move_capital_effect = yes
+		}
+		stroktur_region = {
+			add_core = KLG
+		}
+		if = {
+			limit = {
+				NOT = { government_rank = 2 }
+			}
+			set_government_rank = 2
+		}
+		add_country_modifier = {
+			name = "centralization_modifier"
+			duration = 7300
+		}
+		hidden_effect = {
+			every_owned_province = {
+				remove_core = YLL
+				remove_core = RCK
+			}
+		}
+		change_primary_culture = Kachik
+		if = {
+			limit = {
+				any_owned_province = {
+					culture = Bohoran
+				}
+			}
+			add_accepted_culture = Bohoran
+		}
+		if = {
+			limit = {
+				any_owned_province = {
+					culture = Bohoran_E
+				}
+			}
+			add_accepted_culture = Bohoran_E
+		}
+		add_prestige = -50
+		add_legitimacy = -25
+	}
+}
