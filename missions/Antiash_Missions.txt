@@ -1018,11 +1018,16 @@ antiash_4 = {
 				duration = -1
 				}
 			}
-			7969 = {
-				change_trade_goods = cotton
-				add_province_modifier = {
-				name = "antiash_production"
-				duration = -1
+			if = {
+				limit = {
+					owns = 7969
+				}
+				7969 = {
+					change_trade_goods = cotton
+					add_province_modifier = {
+					name = "antiash_production"
+					duration = -1
+					}
 				}
 			}
 		}
@@ -1033,14 +1038,17 @@ antiash_4 = {
 		}
 		icon = sources_of_trade
 		trigger = {
-			calc_true_if = {
-				all_known_country = {
-					has_opinion = {
-						who = ROOT
-						value = 100
+			custom_trigger_tooltip = {
+				tooltip = antiashPromoteTooltip
+				calc_true_if = {
+					all_known_country = {
+						has_opinion = {
+							who = ROOT
+							value = 100
+						}
 					}
+					amount = 4
 				}
-				amount = 4
 			}
 			diplomatic_reputation = 2
 		}

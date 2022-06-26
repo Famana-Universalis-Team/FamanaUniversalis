@@ -895,7 +895,7 @@ antiash_raid_victim = {
 }
 
 antiash_production = {
-   production_efficiency = 0.10
+    local_production_efficiency = 0.10
 }
 
 antiash_nostalgic_journey = {
