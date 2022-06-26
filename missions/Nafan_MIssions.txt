@@ -290,6 +290,7 @@ eclipse_5 = {
                     fire = 6
                     manuever = 6
                     siege = 3
+                    name = "Zandar Bohika"
                 }
             }
             if = {
@@ -304,6 +305,7 @@ eclipse_5 = {
                     fire = 4
                     manuever = 4
                     siege = 1
+                    name = "Arpidon Kalar"
                 }
             }
             add_stability_or_adm_power = yes
@@ -402,7 +404,10 @@ nafa_1 = {
             custom_trigger_tooltip = {
                 tooltip = goldenAgeEmastaliaNafa
                 all_owned_province = {
-                    region = emastalia_region
+                    OR = {
+                        region = emastalia_region
+                        region = west_emastalia_region
+                    }
                     is_prosperous = yes
                 }
             }
@@ -418,9 +423,34 @@ nafa_1 = {
             }
         }
         effect = {
-            
+            add_years_of_income = -0.5
+            custom_tooltip = nafaEstGA
+            hidden_effect = {
+                every_owned_province = {
+                    limit = {
+                        OR = {
+                            region = emastalia_region
+                            region = west_emastalia_region
+                        }
+                    }
+                    add_province_modifier = {
+                        name = emastalian_golden_age_modifier
+                        duration = 14600
+                    }
+                }
+            }
+            add_estate_loyalty = {
+                estate = estate_church
+                loyalty = 20
+            }
         }
-        #provinces_to_highlight = {}
+        provinces_to_highlight = {
+            OR = {
+                region = emastalia_region
+                region = west_emastalia_region
+            }
+            owned_by = ROOT
+        }
     }
 
     naf_build_a_grand_navy = {
@@ -1171,7 +1201,22 @@ nafa_4 = {
         required_missions = { naf_founding_of_syadona }
         position = 4
         trigger = {
-            
+            stroktur_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+            is_free_or_tributary_trigger = yes
+			is_at_war = no
+            OR = {
+                truce_with = FAS
+                NOT = {
+                    exists = FAS
+                }
+            }
+            NOT = {
+                revanchism = 1
+            }
+            castle = 5
         }
         effect = {
             
@@ -1445,12 +1490,45 @@ nafa_5 = {
         required_missions = { naf_hold_fashros_at_bay }
         position = 5
         trigger = {
-            
+            if = {
+                limit = {
+                    exists = KSL
+                }
+                has_spy_network_in = {
+                    who = KSL
+                    value = 75
+                }
+            }
+            else = {
+                num_of_allies = 4
+            }
         }
         effect = {
-            
+            if = {
+                limit = {
+                    exists = KSL
+                }
+                kapolia_region = { add_permanent_claim = ROOT }
+                jasua_region = { add_permanent_claim = ROOT }
+                custom_tooltip = nafaClaimKisholi
+                hidden_effect = {
+                    every_province = {
+                        limit = {
+                            is_core = KSL
+                        }
+                        add_claim = ROOT
+                    }
+                }
+                custom_tooltip = addEventForKisholiHere #Potentially a general that converts to lathvy and defects?
+            }
+            else = {
+                kapolia_region = { add_permanent_claim = ROOT }
+                jasua_region = { add_permanent_claim = ROOT }
+            }
         }
-        #provinces_to_highlight = {}
+        provinces_to_highlight = {
+
+        }
     }
 
     naf_a_claim_to_jasua = {
@@ -1462,6 +1540,7 @@ nafa_5 = {
         }
         effect = {
             
+            #if they exist, we are at war with them and they are in the disaster, we will be able to annex and core all of their provinces upon occupying them
         }
         #provinces_to_highlight = {}
     }
