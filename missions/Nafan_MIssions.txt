@@ -600,8 +600,8 @@ nafa_2 = {
                     NOT = {
                         accepted_culture = East_Emastalian
                     }
-                    add_accepted_culture = East_Emastalian
                 }
+                add_accepted_culture = East_Emastalian
             }
         }
         provinces_to_highlight = {
@@ -1210,8 +1210,8 @@ nafa_4 = {
                                 religion = ROOT
                             }
                         }
-                        change_religion = ROOT
                     }
+                    change_religion = ROOT
                 }
             }
             add_country_modifier = {
