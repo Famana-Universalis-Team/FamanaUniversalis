@@ -81,10 +81,34 @@ country_event = {
     option = {
         name = naravam.2.a
         ai_chance = { factor = 80 }
+        trigger = {
+            any_province = {
+                OR = {
+                    area = area_156
+                    area = area_157
+                }
+                is_empty = yes
+            }
+        }
+        goto = 6485
         hidden_effect = {
-            feemk_area = {
-                cede_province = ORC
-                remove_core = RDU
+            if = {
+                limit = {
+                    exists = KLY
+                    KLY = {
+                        is_subject_of = ORC
+                    }
+                }
+                feemk_area = {
+                    cede_province = KLY
+                    remove_core = RDU
+                }
+            }
+            else = {
+                feemk_area = {
+                    cede_province = ORC
+                    remove_core = RDU
+                }
             }
             nere_area = {
                 cede_province = ---
@@ -137,12 +161,11 @@ country_event = {
         add_prestige = -10s
         add_country_modifier = {
             name = rdum_dev
-            duration = 3650
+            duration = 1825
         }
         add_adm_power = 150
         add_dip_power = 150
         add_mil_power = 150
-	goto = 6482
     }
 
     option = {
