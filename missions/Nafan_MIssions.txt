@@ -306,7 +306,7 @@ eclipse_5 = {
                     siege = 1
                 }
             }
-            add_stability = 1
+            add_stability_or_adm_power = yes
             custom_tooltip = eclipseFreeDevTooltip
             hidden_effect = {
                 every_owned_province = {

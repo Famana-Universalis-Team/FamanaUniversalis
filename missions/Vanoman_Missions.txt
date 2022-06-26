@@ -19,7 +19,7 @@ van_1 = {
         }
         effect = {
             add_splendor = 250
-            add_stability = 1
+            add_stability_or_adm_power = yes
         }
         provinces_to_highlight = {
             province_id = 5669
