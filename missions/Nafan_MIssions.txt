@@ -880,10 +880,6 @@ nafa_3 = {
                 area = elwait_area
                 infantry_in_province = 10
             }
-            num_of_owned_provinces_with = {
-                value = 4
-                region = north_xalia_region
-            }
             custom_trigger_tooltip = {
                 tooltip = nafaArmySizeXalTt
                 NOT = {
@@ -914,8 +910,8 @@ nafa_3 = {
             south_pextum_area = { add_permanent_claim = ROOT }
         }
         provinces_to_highlight = {
-            owned_by = NAF
             area = elwait_area
+            owned_by = ROOT
         }
     }
 
