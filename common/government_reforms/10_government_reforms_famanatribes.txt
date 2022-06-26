@@ -100,7 +100,7 @@ four_tribe_rule = {
 	heir = no
 	lock_level_when_selected = yes
 	raze_province = yes
-	
+
 	modifiers = {
 		num_accepted_cultures = 2
 		promote_culture_cost = -0.50
