@@ -1454,8 +1454,7 @@ LYP_ideas = {
 		manpower_recovery_speed = 0.10
 	}
 	lyp_reformation = {
-		tolerance_own = 2
-		prestige = 0.5
+		tolerance_own = 1
 		global_heretic_missionary_strength = 0.02
 	}
 	lyp_spies = {
@@ -1470,7 +1469,7 @@ LYP_ideas = {
 		defensiveness = 0.20
 	}
 	lyp_path = {
-		diplomatic_upkeep = 2
+		diplomatic_upkeep = 1
 	}
 	lyp_heart = {
 		global_own_trade_power = 0.15

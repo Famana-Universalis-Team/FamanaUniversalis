@@ -241,9 +241,85 @@ eclipse_5 = {
         icon = mission_religious
         required_missions = { eclipse_healing_the_rift eclipse_the_eclipse }
         trigger = {
+            estate_loyalty = {
+                estate = estate_nobles
+                loyalty = 70
+            }
+            if = {
+                limit = {
+                    OR = {
+                        primary_culture = Bohoran
+                        primary_culture = Bohoran_E
+                    }
+                }
+                accepted_culture = Kachik
+            }
+            if = {
+                limit = {
+                    primary_culture = Kachik
+                    any_owned_province = {
+                        culture = Bohoran
+                    }
+                }
+                accepted_culture = Bohoran
+            }
+            if = {
+                limit = {
+                    primary_culture = Kachik
+                    any_owned_province = {
+                        culture = Bohoran_E
+                    }
+                }
+                accepted_culture = Bohoran_E
+            }
+            temple = 10
+            NOT = {
+                any_owned_province = {
+                    region = stroktur_region
+                    unrest = 1
+                }
+            }
         }
         effect = {
-            
+            if = {
+                limit = {
+                    primary_culture = Kachik
+                }
+                define_admiral = {
+                    shock = 4
+                    fire = 6
+                    manuever = 6
+                    siege = 3
+                }
+            }
+            if = {
+                limit = {
+                    OR = {
+                        primary_culture = Bohoran
+                        primary_culture = Bohoran_E
+                    }
+                }
+                define_general = {
+                    shock = 3
+                    fire = 4
+                    manuever = 4
+                    siege = 1
+                }
+            }
+            add_stability = 1
+            custom_tooltip = eclipseFreeDevTooltip
+            hidden_effect = {
+                every_owned_province = {
+					limit = {
+						region = stroktur_region
+                        OR = {
+                            has_building = temple
+                            has_building = cathedral
+                        }
+					}
+					add_base_tax = 1
+				}
+            }
         }
         #provinces_to_highlight = {}
     }
