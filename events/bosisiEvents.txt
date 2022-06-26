@@ -621,18 +621,6 @@ country_event = {
 		has_reform = four_tribe_rule
 	}
 	
-	iimmediate = {
-		hidden_effect = {
-			define_ruler = {
-				name = "The Council"
-				adm = 0
-				dip = 0
-				mil = 0
-				regency = yes
-			}
-		}
-	}
-	
 	option = {
 	name = bosisi.13.a
 		define_ruler = {
