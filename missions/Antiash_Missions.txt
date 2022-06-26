@@ -1038,14 +1038,17 @@ antiash_4 = {
 		}
 		icon = sources_of_trade
 		trigger = {
-			calc_true_if = {
-				all_known_country = {
-					has_opinion = {
-						who = ROOT
-						value = 100
+			custom_trigger_tooltip = {
+				tooltip = antiashPromoteTooltip
+				calc_true_if = {
+					all_known_country = {
+						has_opinion = {
+							who = ROOT
+							value = 100
+						}
 					}
+					amount = 4
 				}
-				amount = 4
 			}
 			diplomatic_reputation = 2
 		}
