@@ -83,7 +83,7 @@ anarchy_3 = {
 		}
         effect = {
             change_government_reform_progress = 15
-            add_stability = 1
+            add_stability_or_adm_power = yes
             add_country_modifier = {
 				name = "mak_authority"
 				duration = 3650

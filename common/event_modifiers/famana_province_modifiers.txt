@@ -36,3 +36,9 @@ skt_cultural_harmony_local = {
 nafa_epic_trade = {
     province_trade_power_value = 10
 }
+
+emastalian_golden_age_modifier = {
+    local_institution_spread = 0.25
+    trade_goods_size_modifier = 0.50
+    local_development_cost = -0.15
+}
