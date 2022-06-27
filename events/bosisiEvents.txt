@@ -610,48 +610,48 @@ country_event = {
 	}
 }
 #four tribe reform monarch choosing
-country_event = {
-	id = bosisi.13
-	title = bosisi.13.t
-	desc = bosisi.13.d
-	picture = AULIC_COUNCIL_eventPicture
-	is_triggered_only = yes
+#country_event = {
+	#id = bosisi.13
+	#title = bosisi.13.t
+	#desc = bosisi.13.d
+	#picture = AULIC_COUNCIL_eventPicture
+	#is_triggered_only = yes
 
-	trigger = {
-		has_reform = four_tribe_rule
-	}
+	#trigger = {
+		#has_reform = four_tribe_rule
+	#}
 	
-	option = {
-	name = bosisi.13.a
-		define_ruler = {
-			culture = Kurkari
-			religion = Kurkari
-			hide_skills = yes
-		}
+	#option = {
+	#name = bosisi.13.a
+		#define_ruler = {
+			#culture = Kurkari
+			#religion = Kurkari
+			#hide_skills = yes
+		#}
 	
-	}
-	option = {
-		name = bosisi.13.b
-		define_ruler = {
-			culture = Ashdamir
-			religion = Ashdamir
-			hide_skills = yes
-		}
-	}
-	option = {
-		name = bosisi.13.c
-		define_ruler = {
-			culture = Manthwar
-			religion = Manthwar
-			hide_skills = yes
-		}
-	}
-	option = {
-		name = bosisi.13.od
-		define_ruler = {
-			culture = Ganush
-			religion = Ganush
-			hide_skills = yes
-		}
-	}
-}
+	#}
+	#option = {
+		#name = bosisi.13.b
+		#define_ruler = {
+			#culture = Ashdamir
+			#religion = Ashdamir
+			#hide_skills = yes
+		#}
+	#}
+	#option = {
+		#name = bosisi.13.c
+		#define_ruler = {
+			#culture = Manthwar
+			#religion = Manthwar
+			#hide_skills = yes
+		#}
+	#}
+	#option = {
+		#name = bosisi.13.od
+		#define_ruler = {
+			#culture = Ganush
+			#religion = Ganush
+			#hide_skills = yes
+		#}
+	}#
+#}

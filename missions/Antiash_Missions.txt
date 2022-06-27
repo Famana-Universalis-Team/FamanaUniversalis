@@ -596,20 +596,22 @@ antiash_3 = {
         }
 
         trigger = {
-			has_spy_network_in = {
-				who = TIT
-				value = 10
-			}
+			dip_power = 100
         }
        
 		provinces_to_highlight = {
-			province_id = 7237
+			area_239 = {
+				type = all
+				OR = {
+					is_empty = yes
+					owned_by = ROOT 
+				}
+			}
 		}
 
         effect = {
-			declare_war_with_cb = {
-			who = TIT
-			casus_belli = cb_insult
+			area_239 = {
+				add_core = ROOT
 			}
 		}
        
