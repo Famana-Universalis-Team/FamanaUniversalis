@@ -1125,8 +1125,11 @@ country_event = {
 		any_owned_province = {
 			culture = Bohoran
 		}
-		NOT = {
-			culture_group = Maxan
+		OR = {
+			tag = SKT
+			NOT = {
+				culture_group = Maxan
+			}
 		}
 	}
 
