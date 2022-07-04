@@ -3,21 +3,19 @@ discovered_by = north_gomic_tech_gr
 discovered_by = west_gomic_tech_gr
 #Written with Eu4 Easy Province Creator by emiroercn
 #UNNAMED
- 
-culture = Arlentan
+add_core = LAG
+owner = LAG
+controller = LAG
+culture = Laglan
 religion = western_oppian
 hre = no
 
-base_tax = 2
-base_production = 3
-trade_goods = iron
-base_manpower = 1
-capital = "Sestu"
+base_tax = 6
+base_production = 6
+trade_goods = fur
+base_manpower = 5
+capital = "Esmekeed"
 is_city = yes
 extra_cost = 1
-fort_15th = yes
+center_of_trade = 1
 
-owner = OSS
-controller = OSS
-add_core = OSS
-add_core = ZNE

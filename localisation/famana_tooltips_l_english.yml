@@ -35,7 +35,7 @@
  ##############################################
  rdum_migrate_tooltip: "We will lose all our current core provinces and instead migrate to the §YBrula§! Region."
  spread_tonmo_aspect_tooltip: "A random §Yrival §Wcountry will lose §R1 §Wstability."
- kin_kapolia_tooltip: "If we complete this mission while the §YKapolia§! Region is owned by us or our non-tributary subjects:\n\n§Y[Root.GetName]§! gains permanent claims on the §YStroktur§! Region.\n\nIf we complete this mission while being §YLathvy§!, being allied to §YKapolia§! with them having §G+200§! opinion of us, and having an army at least §Y200%§! of §YKapolia§!:\n\nInherit §YKapolia§W."
+ kin_kapolia_tooltip: "If the §YKapolia§! Region is owned by us or our non-tributary subjects:\n\n§Y[Root.GetName]§! gains permanent claims on the §YStroktur§! Region.\n\nIf we are of §YLathvy§! religion, allied to §YKapolia§! with them having §G+200§! opinion of us, and have an army at least §Y200%§! of §YKapolia§!:\n\nInherit §YKapolia§W."
  LATHVY_QEUSTION_FIRED: "The event '§YThe Lathvy Question§W' has happened."
  kin_zealot_personality: "Our rulers will be §G2.0 §Wtimes as likely to receive the §YZealot §Wruler personality."
  kin_true_faith_tooltip: "Every owned §Y[Root.Religion.GetName] §Wprovince gets '§YJasuan Piety§W' for\n§Y10 years§W, giving the following effects:\nLocal Development Cost: §G-10.0%\n§WLocal Tax Modifier: §G+10.0%"
@@ -154,3 +154,8 @@
  antiashPromoteTooltip: "At least §Y4§! countries have §Y100§! or more opinion of §Y[Root.GetName]§!"
  elwaitingGameTooltip: "Has never owned more than §Y10§! provinces for over a month"
  nafaEstGA: "Every owned province in the §YEast Emastalia§! or §YWest Emastalia§! Region gets '§YGolden Age§!' for §Y40 years§!, giving the following effects:\nLocal Development Cost: §G-15.0%§!\nLocal Goods Produced Modifier: §G+50.0%§!\nInstitution Spread: §G+25.0%§!\n"
+ tyardaGetCoresNAF: "§YNafa§! gains cores on all §YTyardan§! provinces in the §YEast Emastalia§! Region."
+ vavaGetCoresNAF: "§YNafa§! gains cores on all §YVavan§! provinces in the §YEast Emastalia§! Region."
+ iniGetCoresNAF: "§YNafa§! gains cores on all §YIni§! provinces in the §YEast Emastalia§! Region."
+ poxaGetCoresNAF: "§YNafa§! gains cores on all §YPoxan§! provinces in the §YEast Emastalia§! Region."
+ nafGrandNavyIf: "If we have a navy larger than §YRestema§! and §YMoxon§! does not exist:\n\n"
