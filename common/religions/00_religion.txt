@@ -1134,7 +1134,7 @@ far_eastern_gomic = {
 
 			increase_army_training = {
 				global_manpower_modifier = -0.05
-				yearly_army_professionalism = 0.02
+				yearly_army_professionalism = 0.01
 				allow = { always = yes }
 			}
 			tax_exemptions_for_traders = {
@@ -1159,12 +1159,12 @@ far_eastern_gomic = {
 			}
 			placate_civil_populace = {
 				prestige = -1
-				global_unrest = -3
+				global_unrest = -2
 				allow = { always = yes }
 			}
 			appoint_skilled_commanders = {
 				free_leader_pool = -1
-				land_morale = 0.15
+				land_morale = 0.10
 				allow = { always = yes }
 			}
 			nominate_new_advisors = {
