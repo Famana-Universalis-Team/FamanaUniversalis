@@ -21,6 +21,9 @@
  rini_rebels_desc:0 "Religious fanatics tend to rise up in provinces controlled by nations of a different faith. They seek to spread their faith and smite all unbelievers."
  rini_rebels_army:0 "$RELIGION$ Army"
 
+ lathvy_center_of_reformation:0 "Lathvy Center of Conversion"
+ rochoni_center_of_reformation:0 "Rochoni Center of Reformation"
+
  canonise_the_igealbidon_aspect:0 "Canonise the Igealbidon"
  holy_draft_aspect:0 "Holy Draft"
  crush_the_yomtanians_aspect:0 "Crush the Yomtanians"
@@ -29,7 +32,7 @@
  united_amatanians_aspect:0 "Unite the Amatanians"
  successor_of_the_eclipse_aspect:0 "Successor of the Eclipse"
  reinvent_churches_aspect:0 "Reinvent the Churches"
-
+ 
  desc_canonise_the_igealbidon_aspect:0 "The Igealbidon tells us of the rise of Nafa and our relation with Yomtanians. If we made it a holy book, more people will understand our viewpoint."
  desc_holy_draft_aspect:0 "The struggle between Ara and Loys is not just in one's mind, but must also be shown on the battlefield."
  desc_crush_the_yomtanians_aspect:0 "We must break the delicate balance of continents and interfere with Makan if we want to truly win the eternal war."
@@ -47,7 +50,7 @@
  traditional:0 "Traditional"
  lathvy:0 "Lathvy"
 
- western_oppian_religion_desc:0 "The traditional religion of the Oppian Empire. Held together by the crown of Emintas and the power of the emperor, it has fallen into disarray since the collapse of the empire, and violent wars in Oppia, with people now seeking an alternative."
+ western_oppian_religion_desc:0 "The traditional religion of the Oppian Empire. Held together by the crown of Emintas and the power of the emperor, it has fallen into disarray since the collapse of the empire and violent wars in Oppia, with people now seeking an alternative."
  reformed_oppian_religion_desc:0 "A new religion, seeing the reformation of core principles of the Oppian religion, including the abolishing of Sifa. It is regarded as dangerous, playing with the fire that is introducing new gods, as well as assimilating other religions."
  eastern_oppian_religion_desc:0 "A branch derived from the traditional Oppian faith, influenced by the religions of the eastern Gomic and Ga Xal, created by forced settlers in the east."
 
@@ -191,7 +194,28 @@
  lathvy_rebels_army:0 "$RELIGION$ Army"
 
  rochoni_religion:0 "Rochoni"
- rochoni_religion_desc:0 "Rochoni is a more loose denomination of Lathvy, which arose and is most popular in the northern regions of Estal. It revolves around the belief that Ara does not need the support of his followers to fight Loys and the Yomtanians."
+ rochoni_religion_desc:0 "Rochoni is a more loose denomination of Lathvy, which arose and is most popular in the northern regions of Estal. It revolves around the belief that Ara does not need the support of his followers to fight Loys and the Yomtanians. The religion focuses on the veneration of specific saints rather than Ara or Loys themselves."
+
+ rochoni_saint_1:0 "Dangal"
+ rochoni_saint_1_desc:0 ""
+
+ rochoni_saint_2:0 "Ilipim"
+ rochoni_saint_2_desc:0 ""
+
+ rochoni_saint_3:0 "Iotan"
+ rochoni_saint_3_desc:0 ""
+
+ rochoni_saint_4:0 "Muguni"
+ rochoni_saint_4_desc:0 ""
+
+ rochoni_saint_5:0 "Simot"
+ rochoni_saint_5_desc:0 ""
+
+ rochoni_saint_6:0 "Hozen"
+ rochoni_saint_6_desc:0 ""
+
+ rochoni_saint_7:0 "Czszyn"
+ rochoni_saint_7_desc:0 ""
 
  rochoni_rebels_demand:0 "Convert $COUNTRYNAME$"
  rochoni_rebels_demand_desc:0 "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
@@ -201,7 +225,7 @@
  rochoni_rebels_army:0 "$RELIGION$ Army"
 
  harmonic_religion:0 "Harmonic"
- harmonic_religion_desc:0 "Harmonic lathvy is a very strict interpretation of Lathvy, founded by the daughter of Syadon after the fall of the Nafan Empire. It holds that Ara and Loys should be worshipped side by side as they are equals."
+ harmonic_religion_desc:0 "Harmonic Lathvy is a very strict interpretation of the religion, founded by the daughter of Syadon after the fall of the Nafan Empire. It holds that Ara and Loys should be worshipped side by side as they are equals."
 
  harmonic_rebels_demand:0 "Convert $COUNTRYNAME$"
  harmonic_rebels_demand_desc:0 "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
@@ -241,7 +265,7 @@
  delkian_rebels_army:0 "$RELIGION$ Army"
 
  vinian:0 "Vinian"
- vinian_religion_desc:0 "One of the four Xalian religions, Vinian believes in the supremacy of Vin, the Water God, and his eternal creations."
+ vinian_religion_desc:0 ""
  vinian_rebels_demand:0 "Convert $COUNTRYNAME$"
  vinian_rebels_demand_desc:0 "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
  vinian_rebels_title:0 "Religious"
@@ -301,7 +325,7 @@
 
  pawani:0 "Pawani"
  pexomania:0 "Pexomania"
- pawani_religion_desc:0 "Pawani represents the religious beliefs of the pawani people."
+ pawani_religion_desc:0 "Pawani represents the religious beliefs of the Pawani people, primarily polytheistic worship of a pantheon of Gods, who are usually presented as Dragons."
  pawani_rebels_demand:0 "Convert $COUNTRYNAME$"
  pawani_rebels_demand_desc:0 "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
  pawani_rebels_title:0 "Religious"
@@ -353,7 +377,7 @@
  bilik_rebels_army:0 "$RELIGION$ Army"
 
  aresian:0 "Aresian"
- aresian_religion_desc:0 "The Aresian religion believes in Phamsa, a cosmic deity which found Famana, and has since taken care of it, protecting it from monsterous cosmic Gachra, and becoming its God."
+ aresian_religion_desc:0 "The Aresian religion believes in Phamsa, a cosmic deity which found Famana, and has since taken care of it, protecting it from the cosmic monster Gachra, and becoming its God."
  aresian_rebels_demand:0 "Convert $COUNTRYNAME$"
  aresian_rebels_demand_desc:0 "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
  aresian_rebels_title:0 "Religious"
@@ -401,9 +425,9 @@
  agmagoz_rebels_name:0 "$RELIGION$ Zealots"
  agmagoz_rebels_desc:0 "Religious fanatics tend to rise up in provinces controlled by nations of a different faith. They seek to spread their faith and smite all unbelievers."
  agmagoz_rebels_army:0 "$RELIGION$ Army"
-
+ 
  tombasa:0 "Tombasa"
- tombasa_religion_desc:0 "Tombasa is a religion built on xenophobia and paranoia, and the appointement of a Tombasor to protect the Tomban People."
+ tombasa_religion_desc:0 "Tombasa is an ethnic religion built on xenophobia, mistrust of outsiders, paranoia, and the appointement of a Tombasor to protect the Tomban People."
  tombasa_rebels_demand:0 "Convert $COUNTRYNAME$"
  tombasa_rebels_demand_desc:0 "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
  tombasa_rebels_title:0 "Religious"
@@ -412,7 +436,7 @@
  tombasa_rebels_army:0 "$RELIGION$ Army"
 
  qanoyan:0 "Qanoyan"
- qanoyan_religion_desc:0 "when the localisation is not present!"
+ qanoyan_religion_desc:0 "Qanoyan is an offshoot religion of Qamon. Its isolation from previous Qamoni centres as well as new light on the ruins of the old Agmagozi empire has led to significant religious reform."
  qanoyan_rebels_demand:0 "Convert $COUNTRYNAME$"
  qanoyan_rebels_demand_desc:0 "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
  qanoyan_rebels_title:0 "Religious"
@@ -463,7 +487,7 @@
  raise_horde_aspect:0 "Raise Horde"
  desc_raise_horde_aspect:0 "The hordes are ready to be unleashed. Our enemies will tremble before the might of our endless horsemen."
  spread_tonmo_aspect:0 "Destabilize Rivals"
- desc_spread_tonmo_aspect:0 "By arming Tonmo radicals in foreign lands, we can help sow instability in our enemies' midst."
+ desc_spread_tonmo_aspect:0 "A"
 
  increase_army_training:0 "Increase Army Training"
  desc_increase_army_training:0 ""
@@ -520,6 +544,8 @@
  walaran_school_desc:0 "The Walaran school is one of many schools that arose following the collapse of Pextoglazia, Focused on the High Priest of Vapalim more so than Pomlen, it is considered more conservative, as well as local."
  celzian_school:0 "Celzian Thought"
  celzian_school_desc:0 "The Celzian School was the dominant school following the collapse of Pextoglazia. It keeps much of the same religious belief, but disputes the authority of the High Priest of Pomlen, it is more decentralised, focusing on a council of Bishops instead."
+ koylan_school:0 "Kolyan Thought"
+ koylan_school_desc:0 "The Kolyan School dawned during the conversion of Naravam to Lathvy. It embraces the Council of Celzion, but integrates many pagan Torviya beliefs and has its own canon of saints."
 
  christian:0 "Error group"
  catholic:0 "Horologian"

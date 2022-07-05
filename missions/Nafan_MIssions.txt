@@ -281,6 +281,7 @@ eclipse_5 = {
             }
         }
         effect = {
+            add_stability_or_adm_power = yes
             if = {
                 limit = {
                     primary_culture = Kachik
@@ -290,7 +291,6 @@ eclipse_5 = {
                     fire = 6
                     manuever = 6
                     siege = 3
-                    name = "Zandar Bohika"
                 }
             }
             if = {
@@ -305,10 +305,8 @@ eclipse_5 = {
                     fire = 4
                     manuever = 4
                     siege = 1
-                    name = "Arpidon Kalar"
                 }
             }
-            add_stability_or_adm_power = yes
             custom_tooltip = eclipseFreeDevTooltip
             hidden_effect = {
                 every_owned_province = {
@@ -443,6 +441,21 @@ nafa_1 = {
                 estate = estate_burghers
                 loyalty = 20
             }
+            5570 = {
+                change_trade_goods = cloth
+            }
+            5574 = {
+                change_trade_goods = cloth
+            }
+            5562 = {
+                change_trade_goods = wine
+            }
+            5578 = {
+                change_trade_goods = paper
+            }
+            5717 = {
+                change_trade_goods = glass
+            }
         }
         provinces_to_highlight = {
             OR = {
@@ -458,10 +471,43 @@ nafa_1 = {
         required_missions = {}
         position = 7
         trigger = {
-            
+            num_of_galley = 40
+            navy_tradition = 50
+
         }
         effect = {
-            
+            add_country_modifier = {
+                name = nafaBigNavy
+                duration = 27375
+            }
+            5583 = {
+                create_flagship = {    
+                    name = "Eresidar"
+                    type = galley
+                }
+            }
+            custom_tooltip = nafGrandNavyIf
+            hidden_effect = {
+                if = {
+                    limit = {
+                        OR = {
+                            OR = {
+                                NOT = {
+                                    exists = RES
+                                }
+                                navy_size = RES
+                            }
+                            NOT = {
+                                exists = MOX
+                            }
+                        }
+                    }
+                    add_country_modifier = {
+                        name = nafaBiggerNavy
+                        duration = 7300
+                    }
+                }
+            }
         }
         #provinces_to_highlight = {}
     }
@@ -471,10 +517,47 @@ nafa_1 = {
         required_missions = { naf_build_a_grand_navy }
         position = 8
         trigger = {
-            
+            custom_trigger_tooltip = {
+                tooltip = amogusAmogusAmogus
+                calc_true_if = {
+                    all_owned_province = {
+                        has_port = yes
+                        development = 30
+                        province_has_center_of_trade_of_level = 2
+                    }
+                    amount = 5
+                }
+            }
         }
         effect = {
-            
+            #get claims on every coastal gomic province with 15 or more development
+            custom_tooltip = nafaGetClaimsOnCoasts
+            hidden_effect = {
+                every_province = {
+                    limit = {
+                        OR = {
+                            superregion = oppia_superregion
+                            superregion = ga_xal_superregion
+                            region = eastern_desert_region
+                            region = jasua_region
+                            region = kapolia_region
+                            region = stroktur_region
+                            region = laglon_region
+                            region = lomea_region
+                            region = pextoglazia_region
+                            region = emastalia_region
+                            region = west_emastalia_region
+                        }
+                        has_port = yes
+                        development	= 15
+                    }
+                    add_claim = ROOT
+                }
+            }
+            add_country_modifier = {
+                name = nafa_trade_epic
+                duration = -1
+            }
         }
         #provinces_to_highlight = {}
     }
@@ -641,12 +724,137 @@ nafa_2 = {
         effect = {
             if = {
                 limit = {
-                    dip = 6
+                    OR = {
+                        exists = TYD
+                        exists = VAV
+                        exists = INI
+                        exists = PXA
+                    }
                 }
-                add_dip_power = 100
+                if = {
+                    limit = {
+                        dip = 6
+                    }
+                    add_dip_power = 100
+                }
+                else = {
+                    change_dip = 1
+                }
             }
             else = {
-                change_dip = 1
+                if = {
+                    limit = {
+                        mil = 6
+                    }
+                    add_mil_power = 100
+                }
+                else = {
+                    change_mil = 1
+                }
+            }
+            if = {
+                limit = {
+                    TYD = {
+                        is_subject_of = ROOT
+                    }
+                }
+                inherit	= TYD
+            }
+            if = {
+                limit = {
+                    VAV = {
+                        is_subject_of = ROOT
+                    }
+                }
+                inherit	= VAV
+            }
+            if = {
+                limit = {
+                    INI = {
+                        is_subject_of = ROOT
+                    }
+                }
+                inherit	= INI
+            }
+            if = {
+                limit = {
+                    PXA = {
+                        is_subject_of = ROOT
+                    }
+                }
+                inherit	= PXA
+            }
+            if = {
+                limit = {
+                    TYD = {
+                        guaranteed_by = ROOT
+                    }
+                }
+                custom_tooltip = tyardaGetCoresNAF
+                    hidden_effect = {
+                        TYD = {
+                            every_owned_province = {
+                                limit = {
+                                    region = emastalia_region
+                                }
+                                add_core = NAF
+                            }
+                        }
+                    }
+            }
+            if = {
+                limit = {
+                    VAV = {
+                        guaranteed_by = ROOT
+                    }
+                }
+                custom_tooltip = vavaGetCoresNAF
+                    hidden_effect = {
+                        VAV = {
+                            every_owned_province = {
+                                limit = {
+                                    region = emastalia_region
+                                }
+                                add_core = NAF
+                            }
+                        }
+                    }
+            }
+            if = {
+                limit = {
+                    INI = {
+                        guaranteed_by = ROOT
+                    }
+                }
+                custom_tooltip = iniGetCoresNAF
+                    hidden_effect = {
+                        INI = {
+                            every_owned_province = {
+                                limit = {
+                                    region = emastalia_region
+                                }
+                                add_core = NAF
+                            }
+                        }
+                    }
+            }
+            if = {
+                limit = {
+                    PXA = {
+                        guaranteed_by = ROOT
+                    }
+                }
+                custom_tooltip = poxaGetCoresNAF
+                    hidden_effect = {
+                        PXA = {
+                            every_owned_province = {
+                                limit = {
+                                    region = emastalia_region
+                                }
+                                add_core = NAF
+                            }
+                        }
+                    }
             }
             emastalia_region = { add_permanent_claim = ROOT }
             custom_tooltip = ifCompleteInfluenceEst
@@ -660,7 +868,7 @@ nafa_2 = {
                                     region = emastalia_region
                                 }
                             }
-                            amount = 1
+                            amount = 2
                         }
                     }
                     define_advisor = {
@@ -673,6 +881,7 @@ nafa_2 = {
                     }
                 }
             }
+            custom_tooltip = THIS_DOES_NOT_WORK_IDK_WHY
         }
         provinces_to_highlight = {
             OR = {
@@ -869,7 +1078,7 @@ nafa_3 = {
             5583 = {
                 owned_by = ROOT
                 is_capital_of = ROOT
-                development = 20
+                development = 25
             }
         }
         effect = {
@@ -1216,7 +1425,7 @@ nafa_4 = {
             NOT = {
                 revanchism = 1
             }
-            castle = 5
+            fort_15th = 5
         }
         effect = {
             
@@ -1246,8 +1455,26 @@ nafa_4 = {
             }
         }
         effect = {
+            add_years_of_owned_provinces_production_income = {
+                years = 25
+                trigger = {
+                    OR = {
+                        trade_goods = fish
+                        trade_goods = naval_supplies
+                    }
+                }
+                custom_tooltip = nafaMoxonFish
+            }
+            custom_tooltip = nafaHartimatulTooltip
+            set_country_flag = nafaOwnsHartimatul
+            #5496 = {
+            #    add_province_modifier = {
+            #        name = nafaHartimatulModifierTest
+            #        duration = -1
+            #    }
+            #}
+            #conditional, has to be owned by nafa and have a fort building of some kind
             moxon_region = { add_permanent_claim = ROOT }
-            custom_tooltip = NEEDS_MORE_REWARDS
         }
         provinces_to_highlight = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
@@ -1481,6 +1708,7 @@ nafa_5 = {
             custom_tooltip = nafaBuffJzoet
             custom_tooltip = nafaMayGetJzoetEventsInTheFuture
             set_country_flag = workingWithJzoet
+            custom_tooltip = ADD_JZOET_EVENTS
         }
         #provinces_to_highlight = {}
     }
@@ -1525,6 +1753,7 @@ nafa_5 = {
                 kapolia_region = { add_permanent_claim = ROOT }
                 jasua_region = { add_permanent_claim = ROOT }
             }
+            custom_tooltip = maybe_lift_fow_effect
         }
         provinces_to_highlight = {
 

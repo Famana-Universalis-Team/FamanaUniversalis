@@ -1399,7 +1399,7 @@ country_decisions = {
 			owns_core_province = 5527
 			owns_core_province = 5519
 			num_of_owned_provinces_with = {
-				value = 20
+				value = 25
 				region = aresia_region
 		    }
 		}
@@ -4119,45 +4119,6 @@ country_decisions = {
 			OR = {
 				NOT = { owned_by = ROOT }
 				is_city = no
-			}
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	ordican_empire_decision = {
-		major = yes
-		potential = {
-			tag = ORC
-			NOT = { has_country_flag = Ordican_Empire }
-		}
-		provinces_to_highlight = {
-			AND = { 
-					superregion = west_estal_superregion
-					NOT = { owned_by = ROOT }
-			}
-			
-		}
-		allow = {
-			is_free_or_tributary_trigger = yes
-			is_at_war = no
-			government_rank = 3
-			owns_core_province = 5357
-			owns_core_province = 6184
-			num_of_owned_provinces_with = {
-				value = 100
-				superregion = west_estal_superregion
-			}
-		}
-		effect = {
-			clear_saved_name = yes
-			override_country_name = ORDICAN_EMPIRE_NAME
-			set_country_flag = Ordican_Empire
-			add_prestige = 25
-			add_country_modifier = {
-				name = orc_empire
-				duration = -1
 			}
 		}
 		ai_will_do = {
