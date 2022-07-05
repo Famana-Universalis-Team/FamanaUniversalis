@@ -466,26 +466,31 @@ nafa_1 = {
                 duration = 27375
             }
             5583 = {
-                ROOT = {
-                    create_flagship = {    
-                        name = "Eresidar"
-                        type = galley
-                    }
+                create_flagship = {    
+                    name = "Eresidar"
+                    type = galley
                 }
             }
             custom_tooltip = nafGrandNavyIf
-            if = {
-                limit = {
-                    NOT = {
+            hidden_effect = {
+                if = {
+                    limit = {
                         OR = {
-                            exists = MOX
-                            navy_size = RES
+                            OR = {
+                                NOT = {
+                                    exists = RES
+                                }
+                                navy_size = RES
+                            }
+                            NOT = {
+                                exists = MOX
+                            }
                         }
                     }
-                }
-                add_country_modifier = {
-                    name = nafaBiggerNavy
-                    duration = 7300
+                    add_country_modifier = {
+                        name = nafaBiggerNavy
+                        duration = 7300
+                    }
                 }
             }
         }
@@ -705,7 +710,7 @@ nafa_2 = {
             }
             if = {
                 limit = {
-                    TYD = {
+                    VAV = {
                         is_subject_of = ROOT
                     }
                 }
@@ -713,7 +718,7 @@ nafa_2 = {
             }
             if = {
                 limit = {
-                    TYD = {
+                    INI = {
                         is_subject_of = ROOT
                     }
                 }
@@ -721,7 +726,7 @@ nafa_2 = {
             }
             if = {
                 limit = {
-                    TYD = {
+                    PXA = {
                         is_subject_of = ROOT
                     }
                 }
@@ -811,7 +816,7 @@ nafa_2 = {
                                     region = emastalia_region
                                 }
                             }
-                            amount = 1
+                            amount = 2
                         }
                     }
                     define_advisor = {
@@ -824,6 +829,7 @@ nafa_2 = {
                     }
                 }
             }
+            custom_tooltip = THIS_DOES_NOT_WORK_IDK_WHY
         }
         provinces_to_highlight = {
             OR = {
@@ -1367,7 +1373,7 @@ nafa_4 = {
             NOT = {
                 revanchism = 1
             }
-            castle = 5
+            fort_15th = 5
         }
         effect = {
             
