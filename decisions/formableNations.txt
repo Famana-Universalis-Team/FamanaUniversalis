@@ -1753,7 +1753,9 @@ country_decisions = {
 			}
 			if = {
 				limit = {
-					is_empty = yes
+					5184 = {
+						is_empty = yes
+					}
 				}
 				5184 = {
 					cede_province = HVK

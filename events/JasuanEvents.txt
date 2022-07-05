@@ -114,10 +114,15 @@ country_event = {
 		months = 200
 	}
 
-	option = {
+	option = { #Go lathvy
 		name = jasuaE.2.a
-		ai_chance = { factor = 12 }
-		ai_chance = { factor = 8 }
+		ai_chance = {
+			factor = 5
+			modifier = {
+				factor = 2
+				has_matching_religion = lathvy
+			}
+		}
 		add_prestige = 20
 		add_stability = -1
 		add_country_modifier = {
@@ -129,8 +134,9 @@ country_event = {
 			set_country_flag = lathvy_question_flag
 		}
 	}
-	option = {
+	option = { #Dont
 		name = jasuaE.2.b
+		ai_chance = { factor = 2 }
 		hidden_effect = {
 			set_country_flag = lathvy_question_flag
 		}
@@ -139,9 +145,6 @@ country_event = {
 			name = "outdated_heretic"
 			duration = 1825
 		}
-		
-		ai_chance = { factor = 1 }
-		ai_chance = { factor = 2 }
 	}
 }
 
