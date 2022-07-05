@@ -22,11 +22,7 @@ on_startup = {
 
 	##################################################################### FAMANA SETUP
 	set_variable = {
-		which = desertTimer
-		value = 0
-	}
-	set_variable = {
-		which = desertCheck
+		which = achievementID
 		value = 0
 	}
 	export_to_variable = {
