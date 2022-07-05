@@ -4373,7 +4373,7 @@ country_decisions = {
 			if = {
 				limit = { tag = ALU }
 				inherit = TKM
-				add_accepted_culture = Okus
+				add_accepted_culture = Karsian
 			}
 			if = {
 				limit = {
@@ -4431,7 +4431,7 @@ country_decisions = {
 		effect = {
 			if = {
 				limit = { tag = ALU }
-				add_accepted_culture = Okus
+				add_accepted_culture = Karsian
 			}
 			restore_country_name = yes
 			change_tag = ATM
