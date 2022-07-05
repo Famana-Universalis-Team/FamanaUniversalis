@@ -152,6 +152,7 @@ country_decisions = {
 		allow = {
 			is_at_war = no
 			piety = 1.0
+            full_idea_group	= religious_ideas
             religious_school = {
                 group = lathvy_group
                 school = nafan_school

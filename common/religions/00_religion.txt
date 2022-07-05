@@ -728,7 +728,7 @@ lathvy_group = {
 
 		country = {
 			discipline = 0.05
-			core_creation = -0.25
+			core_creation = -0.10
 		}
 		
 		country_as_secondary = {
@@ -763,7 +763,9 @@ lathvy_group = {
 
 	rochoni = {
 		icon = 28
-		color = { 181 141 32 } 
+		color = { 181 141 32 }
+
+		personal_deity = yes
 
 		country = {
 			technology_cost = -0.1

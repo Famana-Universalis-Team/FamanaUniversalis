@@ -441,6 +441,21 @@ nafa_1 = {
                 estate = estate_burghers
                 loyalty = 20
             }
+            5570 = {
+                change_trade_goods = cloth
+            }
+            5574 = {
+                change_trade_goods = cloth
+            }
+            5562 = {
+                change_trade_goods = wine
+            }
+            5578 = {
+                change_trade_goods = paper
+            }
+            5717 = {
+                change_trade_goods = glass
+            }
         }
         provinces_to_highlight = {
             OR = {
@@ -505,7 +520,34 @@ nafa_1 = {
             
         }
         effect = {
-            
+            #get claims on every coastal gomic province with 15 or more development
+            custom_tooltip = nafaGetClaimsOnCoasts
+            hidden_effect = {
+                every_province = {
+                    limit = {
+                        OR = {
+                            superregion = oppia_superregion
+                            superregion = ga_xal_superregion
+                            region = eastern_desert_region
+                            region = jasua_region
+                            region = kapolia_region
+                            region = stroktur_region
+                            region = laglon_region
+                            region = lomea_region
+                            region = pextoglazia_region
+                            region = emastalia_region
+                            region = west_emastalia_region
+                        }
+                        has_port = yes
+                        development	= 15
+                    }
+                    add_claim = ROOT
+                }
+            }
+            add_country_modifier = {
+                name = nafa_trade_epic
+                duration = -1
+            }
         }
         #provinces_to_highlight = {}
     }
