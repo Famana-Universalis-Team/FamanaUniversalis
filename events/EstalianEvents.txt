@@ -98,6 +98,7 @@ country_event = { #lathvy conversion
 	picture = PRAYING_eventPicture
 	
 	trigger = {
+		has_global_flag = LathvyConversionsStarted
 		NOT = { has_country_flag = lathvy_convert_fired }
 		NOT = { has_country_modifier = yomtanian_nation }
         OR = {
@@ -106,7 +107,7 @@ country_event = { #lathvy conversion
 		}
 		is_year = 350
 		any_known_country = {
-			religion_group = lathvy
+			religion_group = lathvy_group
 		}
 		capital_scope = {
 			continent = estal
@@ -151,7 +152,17 @@ country_event = { #lathvy conversion
 
 	option = { #Stay pagan
 		name = estal.2.b
-		ai_chance = { factor = 1 }
+		ai_chance = { 
+			factor = 1
+			modifier = {
+				factor = 20
+				capital_scope = {
+					region = lukscha_region
+					region = east_gotzlic_region
+					region = gotzlic_region
+				}
+			}
+		}
 		add_country_modifier = {
 			name = rejected_lathvy
 			duration = 5475

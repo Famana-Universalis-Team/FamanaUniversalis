@@ -13,7 +13,7 @@ country_event = {
 	}
 }
 
-country_event = {
+country_event = { #vinetroll
 	id = achievement.2
 	title = achievement.2.t
 	desc = achievement.2.d
@@ -37,5 +37,24 @@ country_event = {
 	option = {
 		name = achievement.2.a
 		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = {
+	id = achievement.3
+	title = achievement.3.t
+	desc = achievement.3.d
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = achievement.1.a
+		ai_chance = { factor = 1 }
+		hidden_effect = {
+			captial_scope = {
+				cede_province = ---
+				remove_core = ROOT
+			}
+		}
 	}
 }

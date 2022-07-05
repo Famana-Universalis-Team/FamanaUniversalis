@@ -526,7 +526,6 @@ lathvy_group = {
 				knows_of_scholar_country_capital_trigger = yes
 				OR = {
 					religion = lathvy
-					religion = rini
 				}
 			}
 
@@ -646,7 +645,6 @@ lathvy_group = {
 				knows_of_scholar_country_capital_trigger = yes
 				OR = {
 					religion = lathvy
-					religion = rini
 				}
 			}
 
@@ -686,7 +684,7 @@ lathvy_group = {
 				knows_of_scholar_country_capital_trigger = yes
 				OR = {
 					religion = lathvy
-					religion = rini
+					religion = rochoni
 				}
 			}
 
@@ -720,6 +718,45 @@ lathvy_group = {
 			# religion_sub_modifier = no is possible, will hide icon in religious screen
 			idea_cost = -0.1
 		}
+		koylan_school = {
+			potential_invite_scholar = {
+				knows_of_scholar_country_capital_trigger = yes
+				OR = {
+					religion = lathvy
+					religion = rochoni
+				}
+			}
+
+			# THIS = Nation wanting to invite the scholar, FROM = Nation that follows that school
+			can_invite_scholar = {
+				adm_power_cost = 50
+				piety = 0.5
+				reverse_has_opinion = { who = FROM value = 150 }
+				NOT = { has_country_modifier = ismaili_school_modifier }
+				OR = {
+					alliance_with = FROM
+					is_subject_of = FROM
+					overlord_of = FROM
+				}
+				hidden_progressive_opinion_for_scholar_trigger = yes
+			}
+
+			# THIS = Nation wanting to invite the scholar, FORM = Nation that sends scholar
+			on_invite_scholar = {
+				adm_power_cost = 50
+				clear_religious_scholar_modifiers_effect = yes
+				custom_tooltip = INVITE_SCHOLAR_COUNTRY_TEXT
+				add_country_modifier = { name = ismaili_school_modifier duration = 7300 }
+			}
+
+			# If you don't set this it will expand on_invite_scholar effect which might be super big
+			invite_scholar_modifier_display = ismaili_school_modifier
+
+			picture = "GFX_icon_muslim_school_ismaili"
+
+			# religion_sub_modifier = no is possible, will hide icon in religious screen
+			shock_damage = 0.10
+		}
 	}
 
 	rini = {
@@ -728,7 +765,7 @@ lathvy_group = {
 
 		country = {
 			discipline = 0.05
-			core_creation = -0.25
+			core_creation = -0.10
 		}
 		
 		country_as_secondary = {
@@ -759,11 +796,17 @@ lathvy_group = {
 		center_of_religion = 5066 #change to Hasia in the actual famana mod
 		misguided_heretic = yes
 		declare_war_in_regency = yes
+		on_convert = {
+			change_religion = rini
+		}
+		date = 450.1.1
 	}
 
 	rochoni = {
 		icon = 28
-		color = { 181 141 32 } 
+		color = { 181 141 32 }
+
+		personal_deity = yes
 
 		country = {
 			technology_cost = -0.1
@@ -782,6 +825,28 @@ lathvy_group = {
 		heretic = {
 			TRADITIONALIST NEO_PAGAN KARAKIST ULTRAORTHODOX
 		}
+
+		will_get_center = { #Refered to even for initial CoR Spawn
+		    any_owned_province = {
+			    can_have_center_of_reformation_trigger = {
+				    RELIGION = rochoni
+			    }
+		    }
+	    }
+		allowed_center_conversion = {
+			naravami
+			animism
+			va
+			tonmo
+			egr
+			bamali
+			ordic
+			lathvy
+		}
+		on_convert = {
+			change_religion = rochoni
+		}
+		date = 400.1.1
 	}
 
 	harmonic = {
@@ -805,6 +870,10 @@ lathvy_group = {
 		heretic = {
 			ULTRA_ASCETIC TRADITIONALIST SYNCRETIST
 		}
+		on_convert = {
+			change_religion = harmonic
+		}
+		date = 500.1.1
 	}
 
 	lathvy = {
@@ -832,6 +901,31 @@ lathvy_group = {
 		}
 
 		center_of_religion = 5337 #Pomlen
+
+		will_get_center = { #Refered to even for initial CoR Spawn
+			any_owned_province = {
+				can_have_center_of_reformation_trigger = {
+					RELIGION = lathvy
+				}
+			}
+		}
+
+		allowed_conversion = {
+			rini
+			rochoni
+			harmonic
+		}
+
+		allowed_center_conversion = {
+			naravami
+			animism
+			va
+			tonmo
+			egr
+			bamali
+			ordic
+		}
+		
 	}
 
 	crusade_name = CRUSADE
@@ -1134,7 +1228,7 @@ far_eastern_gomic = {
 
 			increase_army_training = {
 				global_manpower_modifier = -0.05
-				yearly_army_professionalism = 0.02
+				yearly_army_professionalism = 0.01
 				allow = { always = yes }
 			}
 			tax_exemptions_for_traders = {
@@ -1159,12 +1253,12 @@ far_eastern_gomic = {
 			}
 			placate_civil_populace = {
 				prestige = -1
-				global_unrest = -3
+				global_unrest = -2
 				allow = { always = yes }
 			}
 			appoint_skilled_commanders = {
 				free_leader_pool = -1
-				land_morale = 0.15
+				land_morale = 0.10
 				allow = { always = yes }
 			}
 			nominate_new_advisors = {

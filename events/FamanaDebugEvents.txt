@@ -86,6 +86,19 @@ country_event = {
 	option = {
 		name = fdebug.1.i
 		ai_chance = { factor = 1 }
+		trigger = {
+			NOT = {
+				has_country_flag = debug_achievements
+			}
+		}
 		set_country_flag = debug_achievements
+	}
+	option = {
+		name = fdebug.1.k
+		trigger = {
+			has_country_flag = debug_achievements
+		}
+		ai_chance = { factor = 1 }
+		clr_country_flag = debug_achievements
 	}
 }

@@ -348,6 +348,7 @@
  lathvy_piety.16.c:0 "Ara calls to us; we must liberate the world!"
  lathvy_piety.16.d:0 "The folks in Walara have the right idea."
  lathvy_piety.16.e:0 "The Council of Celzion is the only possible interpretation."
+ lathvy_piety.16.f:0 "The decision at Koyla seems to be the most logical."
 
  pexto.10.t:0 "The Question of New Pexamol"
  pexto.10.d:0 "New Pexamol has always been one of our most rebellious provinces. Located on a remote island, it has developed a unique identity. With the collapse of our government, the inhabitants of the island want to now take it for themselves."
@@ -967,7 +968,7 @@
  eastereggs.4.a:0 "May Ara save us!"
 
  tomba.1.t:0 "Unplayable Region"
- tomba.1.d:0 "Tomba is not currently playable. Come back after the Agmagoz Update."
+ tomba.1.d:0 "Tomba is not currently playable. Come back after the Dorromas Update."
  tomba.1.a:0 "Delete Tomba"
  tomba.1.b:0 "Keep Tomba (debug)"
 
@@ -983,6 +984,7 @@
  fdebug.1.t:0 "Famana Universalis Debug Menu"
  fdebug.1.desc:0 "so real"
  fdebug.1.i:0 "Debug achievements"
+ fdebug.1.k:0 "Disable achievement debug"
  fdebug.1.j:0 "Midgame crisis"
  fdebug.1.b:0 "More missionaries"
  fdebug.1.c:0 "Convert all owned provinces"
@@ -1252,3 +1254,24 @@
  bosisi.1.c:0 "[migration_province_2.GetName] looks good"
  bosisi.1.e:0 "We should go towards [migration_province_3.GetName]"
  DESERT_TRIBE:0 "Desert Tribe"
+
+ naravam.4.t:0 "Lathvy arrives in Naravam"
+ naravam.4.d:0 "For long, Naravam has followed the pagan Torviya religion. However, with the arrival of missionaries from Ordica, this has begun to change. Many are starting to accept the will of Ara, but others are pushing back. Violence is becoming more common as tensions brew between the two faiths."
+ naravam.4.a:0 "The future is mixed."
+
+ naravam.5.t:0 "Heresy in Koyla!"
+ naravam.5.d:0 "As Lathvy spreads into Naravam, some converted Bishops have recently held a conference with religious leaders in the city of Koyla. This council included many Koylan leaders and tribal Ora Chiefs, challenging the views dominant further West. The new interpretation of Lathvy is now spreading into Naravam, further signifying the increased fracturing of the Lathvy faith."
+ naravam.5.a:0 "One Religion, but many interpetations."
+ KoylaUnlocked:0 "Koylan Thought will be unlocked as a Religious School."
+
+ naravam.6.t:0 "Accept Koylan Thought?"
+ naravam.6.d:0 "With the rise of Koylan Thought close to us, it might be optimal to accept this new interpretation of traditional Lathvy doctrine and practices."
+ naravam.6.a:0 "It makes more sense to us."
+ naravam.6.b:0 "We will stay with our current path."
+
+ naravam.7.t:0 "The Naravmi Schism"
+ naravam.7.d:0 "For many years, Lathvy has remained as one religion. Although there have been scholarly debates about the source of authority in the religion and on minor topics, no faction has been more separate than the recent Rochoni Lathvites. Formed out of dissatisfied Naravmis as well as rebellious tribal chiefs in Ordica, this new denomination rejects the ecumenicalism of traditional Lathvy, operating on its own basis. It claims that Ara and Loys are equally beyond human comprehension or understanding, and so the Human world is completely irrelevant to their fight. Rather than a battleground for the Gods, Rochonis claim that the World is merely an illusion, or projection, of their struggle."
+ naravam.7.a:0 "A most interesting development."
+
+ achievement.3.t:0 "[GetachievementTitle]
+ achievement.3.d:0 "[GetachievementDesc]
