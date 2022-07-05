@@ -2,7 +2,7 @@ country_decisions = {
 
 	achievement_from_the_ashes = {
 		major = yes
-		potential = {
+		potential = { 
 			OR = {
 				AND = {
 					normal_or_historical_nations = yes
@@ -56,6 +56,10 @@ country_decisions = {
 			}
 		}
 		effect = {
+			set_variable = {
+				which = achievementID
+				value = 1
+			}
 			add_country_modifier = {
 				name = achievement_from_the_ashes_modifier
 				duration = -1
@@ -100,6 +104,10 @@ country_decisions = {
 		    }
 		}
 		effect = {
+			set_variable = {
+				which = achievementID
+				value = 2
+			}
 			add_country_modifier = {
 				name = achievement_servant_of_delk_modifier
 				duration = -1
@@ -142,6 +150,10 @@ country_decisions = {
 			}
 		}
 		effect = {
+			set_variable = {
+				which = achievementID
+				value = 3
+			}
 			add_country_modifier = {
 				name = achievement_diaspora_modifier
 				duration = -1
@@ -182,6 +194,10 @@ country_decisions = {
 			NOT = { is_year = 300 }
 		}
 		effect = {
+			set_variable = {
+				which = achievementID
+				value = 4
+			}
 			add_country_modifier = {
 				name = achievement_rpw_modifier
 				duration = -1
@@ -223,6 +239,10 @@ country_decisions = {
 			}
 		}
 		effect = {
+			set_variable = {
+				which = achievementID
+				value = 5
+			}
 			add_country_modifier = {
 				name = achievement_for_the_clouds_modifier
 				duration = -1
@@ -261,6 +281,10 @@ country_decisions = {
 			}
 		}
 		effect = {
+			set_variable = {
+				which = achievementID
+				value = 6
+			}
 			add_country_modifier = {
 				name = achievement_bad_boy_modifier
 				duration = -1
@@ -298,6 +322,10 @@ country_decisions = {
 			}
 		}
 		effect = {
+			set_variable = {
+				which = achievementID
+				value = 6
+			}
 			add_country_modifier = {
 				name = achievement_i_go_yes_forever_modifier
 				duration = -1
@@ -332,6 +360,10 @@ country_decisions = {
 			}
 		}
 		effect = {
+			set_variable = {
+				which = achievementID
+				value = 7
+			}
 			add_country_modifier = {
 				name = achievement_get_rial_modifier
 				duration = -1
@@ -368,6 +400,10 @@ country_decisions = {
 			}
 		}
 		effect = {
+			set_variable = {
+				which = achievementID
+				value = 8
+			}
 			add_country_modifier = {
 				name = achievement_tee_spilled_modifier
 				duration = -1
@@ -463,6 +499,10 @@ country_decisions = {
 			}
 		}
 		effect = {
+			set_variable = {
+				which = achievementID
+				value = 9
+			}
 			add_country_modifier = {
 				name = achievement_sweet_revenge_modifier
 				duration = -1
@@ -569,6 +609,10 @@ country_decisions = {
 			}
 		}
 		effect = {
+			set_variable = {
+				which = achievementID
+				value = 10
+			}
 			add_country_modifier = {
 				name = achievement_1984_modifier
 				duration = -1
@@ -608,6 +652,10 @@ country_decisions = {
 			tag = HVK
 		}
 		effect = {
+			set_variable = {
+				which = achievementID
+				value = 11
+			}
 			add_country_modifier = {
 				name = achievement_back_with_a_vengeance_modifier
 				duration = -1
@@ -656,6 +704,10 @@ country_decisions = {
 			}
 		}
 		effect = {
+			set_variable = {
+				which = achievementID
+				value = 12
+			}
 			add_country_modifier = {
 				name = achievement_blood_red_moon_modifier
 				duration = -1
@@ -694,6 +746,10 @@ country_decisions = {
 			}
 		}
 		effect = {
+			set_variable = {
+				which = achievementID
+				value = 13
+			}
 			add_country_modifier = {
 				name = achievement_znestal_modifier
 				duration = -1
@@ -730,6 +786,10 @@ country_decisions = {
 			}
 		}
 		effect = {
+			set_variable = {
+				which = achievementID
+				value = 14
+			}
 			add_country_modifier = {
 				name = achievement_nobody_lives_forever_modifier
 				duration = -1
@@ -773,6 +833,10 @@ country_decisions = {
 			}
 		}
 		effect = {
+			set_variable = {
+				which = achievementID
+				value = 15
+			}
 			add_country_modifier = {
 				name = achievement_never_trust_an_oppian_modifier
 				duration = -1
@@ -837,6 +901,10 @@ country_decisions = {
 			}
 		}
 		effect = {
+			set_variable = {
+				which = achievementID
+				value = 16
+			}
 			add_country_modifier = {
 				name = achievement_majestaz_dream_modifier
 				duration = -1
@@ -875,6 +943,10 @@ country_decisions = {
 			owns = 5337
 		}
 		effect = {
+			set_variable = {
+				which = achievementID
+				value = 17
+			}
 			add_country_modifier = {
 				name = achievement_the_true_lathvyite_modifier
 				duration = -1
@@ -915,6 +987,10 @@ country_decisions = {
 			}
 		}
 		effect = {
+			set_variable = {
+				which = achievementID
+				value = 18
+			}
 			add_country_modifier = {
 				name = achievement_yabonian_spies_modifier
 				duration = -1
@@ -970,6 +1046,10 @@ country_decisions = {
 			}
 		}
 		effect = {
+			set_variable = {
+				which = achievementID
+				value = 19
+			}
 			add_country_modifier = {
 				name = achievement_third_times_the_charm_modifier
 				duration = -1
@@ -1014,6 +1094,10 @@ country_decisions = {
 			owns_core_province = 5949
 		}
 		effect = {
+			set_variable = {
+				which = achievementID
+				value = 20
+			}
 			add_country_modifier = {
 				name = achievement_crusader_modifier
 				duration = -1
@@ -1057,6 +1141,10 @@ country_decisions = {
 			owns_core_province = 5066
 		}
 		effect = {
+			set_variable = {
+				which = achievementID
+				value = 21
+			}
 			add_country_modifier = {
 				name = achievement_never_trust_a_jasuan_modifier
 				duration = -1
@@ -1096,6 +1184,10 @@ country_decisions = {
 			was_tag = FNC
 		}
 		effect = {
+			set_variable = {
+				which = achievementID
+				value = 22
+			}
 			add_country_modifier = {
 				name = achievement_warrior_spirit_modifier
 				duration = -1
@@ -1140,6 +1232,10 @@ country_decisions = {
 			total_development = 1000
 		}
 		effect = {
+			set_variable = {
+				which = achievementID
+				value = 23
+			}
 			add_country_modifier = {
 				name = achievement_mother_anarchy_loves_her_sons_modifier
 				duration = -1
@@ -1190,6 +1286,10 @@ country_decisions = {
 			}
 		}
 		effect = {
+			set_variable = {
+				which = achievementID
+				value = 24
+			}
 			add_country_modifier = {
 				name = achievement_mission_impozumol_modifier
 				duration = -1
@@ -1229,6 +1329,10 @@ country_decisions = {
 			}
 		}
 		effect = {
+			set_variable = {
+				which = achievementID
+				value = 25
+			}
 			add_country_modifier = {
 				name = achievement_et_tu_karse_modifier
 				duration = -1
@@ -1262,6 +1366,10 @@ country_decisions = {
 			full_idea_group	= religious_ideas
 		}
 		effect = {
+			set_variable = {
+				which = achievementID
+				value = 26
+			}
 			add_country_modifier = {
 				name = achievement_jexus_christo_modifier
 				duration = -1
@@ -1303,6 +1411,10 @@ country_decisions = {
 			}
 		}
 		effect = {
+			set_variable = {
+				which = achievementID
+				value = 30
+			}
 			add_country_modifier = {
 				name = achievement_the_elwaiting_game_modifier
 				duration = -1
