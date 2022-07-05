@@ -257,11 +257,11 @@ country_event = {
             }
             if = {
                 limit = {
-                    primary_culture = Shwoota
+                    primary_culture = Shoowta
                 }
                 every_province = {
                     limit = {
-                        culture = Shwoota
+                        culture = Shoowta
                     }
                     add_permanent_claim = ROOT
                 }
