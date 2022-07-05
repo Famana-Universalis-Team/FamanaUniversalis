@@ -1707,7 +1707,7 @@ country_decisions = {
 			}
 		}
 		allow = {
-			adm_tech = 10
+			adm_tech = 5
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
 			owns_core_province = 5177
@@ -1727,6 +1727,18 @@ country_decisions = {
 					NOT = { government_rank = 2 }
 				}
 				set_government_rank = 2
+			}
+			if = {
+				limit = {
+					culture = Hoxan
+				}
+				add_accepted_culture = Mahanshan
+			}
+			if = {
+				limit = {
+					culture = Mahanshan
+				}
+				add_accepted_culture = Hoxan
 			}
 			change_tag = HVK
 			add_country_modifier = {
