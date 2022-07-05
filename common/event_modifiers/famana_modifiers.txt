@@ -1075,3 +1075,10 @@ nafa_trade_epic = {
     global_trade_power = 0.1
     global_ship_trade_power = 0.25
 }
+
+nafaHartimatulModifierTest = {
+    hostile_disembark_speed = 2.5
+    hostile_fleet_attrition = 2
+    local_defensiveness = 0.25
+    supply_limit_modifier = 0.20
+}

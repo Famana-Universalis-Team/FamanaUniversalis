@@ -159,4 +159,7 @@
  iniGetCoresNAF: "§YNafa§! gains cores on all §YIni§! provinces in the §YEast Emastalia§! Region."
  poxaGetCoresNAF: "§YNafa§! gains cores on all §YPoxan§! provinces in the §YEast Emastalia§! Region."
  nafGrandNavyIf: "\nIf we have a navy larger than §YRestema§! and §YMoxon§! does not exist:\n\nNafa gets '§YSea Access Denial§!' for §Y20 years§!, giving the following effects:\nBlockade Efficiency: §G+33.0%§!\nNaval Barrage cost: §G-50.0%§!\nShip Disengagement Chance: §G+20.0%§!"
- nafaGetClaimsOnCoasts: "§YNafa§! gains claims on every coastal province adjacent to the §YGomic Sea§! with at least §Y15§! development."
+ nafaGetClaimsOnCoasts: "§YNafa§! gains claims on every coastal province adjacent to the §YGomic Sea§! with at least §Y15§! development.\n"
+ amogusAmogusAmogus: "At least §Y5§! owned provinces with a Center of Trade level of 2 or more have at least §Y30§! development"
+ nafaMoxonFish: "of production income from provinces with §YFish§! or §YNaval Supplies§!."
+ nafaHartimatulTooltip: "\nWhile §YHartimatul§! is owned by §YNafa§! and has a fort, it will receive '§YNafan Stronghold§!', giving the following effects:\nLocal Defensiveness: §G+25.0%§!\nSupply Limit Modifier: §G+20.0%§!\nHostile Disembark Time: §G+250.0%§!\nHostile Fleet Attrition: §G+2.00§!\n"
