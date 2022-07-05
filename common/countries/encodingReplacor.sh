@@ -1,11 +1,9 @@
 #!/bin/bash
 
-FROM_ENCODING="utf8"
-TO_ENCODING="iso88591"
 #convert
-CONVERT=" iconv  -f   $FROM_ENCODING  -t   $TO_ENCODING"
+CONVERT=" iconv -f utf8 -t iso88591"
 #loop to convert multiple files 
 for  file  in  *.txt; do
-     $CONVERT   "$file"
+     $CONVERT "$file"
 done
 exit 0

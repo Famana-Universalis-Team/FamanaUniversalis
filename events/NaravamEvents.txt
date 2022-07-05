@@ -190,8 +190,13 @@ country_event = {
 			NOT = {
                 tag = RDU
             }
-            NOT = {
-                government = native
+            if = {
+                limit = {
+                    has_dlc = "Conquest of Paradise"
+                }
+                NOT = {
+                    government = native
+                }
             }
             is_year = 300
 			NOT = {
@@ -216,5 +221,223 @@ country_event = {
 			name = call_of_the_frontier_naravam
 			duration = 18250
 		}
+        hidden_effect = {
+            if = {
+                limit = {
+                    primary_culture = Nirkifi
+                }
+                every_province = {
+                    limit = {
+                        culture = Nirkifi
+                    }
+                    add_permanent_claim = ROOT
+                }
+            }
+            if = {
+                limit = {
+                    primary_culture = Rduma
+                }
+                every_province = {
+                    limit = {
+                        culture = Rduma
+                    }
+                    add_permanent_claim = ROOT
+                }
+            }
+            if = {
+                limit = {
+                    primary_culture = Burgavian
+                }
+                every_province = {
+                    limit = {
+                        culture = Burgavian
+                    }
+                    add_permanent_claim = ROOT
+                }
+            }
+            if = {
+                limit = {
+                    primary_culture = Shwoota
+                }
+                every_province = {
+                    limit = {
+                        culture = Shwoota
+                    }
+                    add_permanent_claim = ROOT
+                }
+            }
+            if = {
+                limit = {
+                    primary_culture = Veberi
+                }
+                every_province = {
+                    limit = {
+                        culture = Veberi
+                    }
+                    add_permanent_claim = ROOT
+                }
+            }
+            if = {
+                limit = {
+                    primary_culture = Lihisian
+                }
+                every_province = {
+                    limit = {
+                        culture = Lihisian
+                    }
+                    add_permanent_claim = ROOT
+                }
+            }
+	}
+}
+}
+
+#Start of lathvy conversions in Naravam
+country_event = {
+	id = naravam.4
+	title = naravam.4.t
+	picture = RELIGIOUS_CONVERSION_eventPicture
+	desc = naravam.4.d
+    major = yes
+    fire_only_once = yes
+	
+	trigger = {
+        capital_scope = {
+            region = eastern_naravam_region
+        }
+        is_year = 350
+        any_known_country = {
+			religion_group = lathvy_group
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = naravam.4.a
+		ai_chance = { factor = 1 }
+        capital_scope = {
+            change_religion = lathvy
+            add_reform_center = lathvy
+        }
+        set_global_flag = LathvyConversionsStarted
+        every_country = {
+            limit = {
+                religion = naravami
+            }
+            add_opinion = {
+                who = ORC
+                modifier = lathvy_spreading
+            }
+        }
+	}
+}
+
+#Bishops in Koyla
+country_event = {
+	id = naravam.5
+	title = naravam.5.t
+	picture = JESUTIS_IN_BRAZIL_eventPicture
+	desc = naravam.5.d
+    major = yes
+    fire_only_once = yes
+	
+	trigger = {
+        capital_scope = {
+            region = eastern_naravam_region
+        }
+        religion = lathvy
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = naravam.5.a
+		ai_chance = { factor = 1 }
+        set_global_flag = KoylaHappened
+        custom_tooltip = KoylaUnlocked
+	}
+}
+
+#Koyla conversion
+country_event = {
+	id = naravam.6
+	title = naravam.6.t
+	picture = JESUTIS_IN_BRAZIL_eventPicture
+	desc = naravam.6.d
+	
+	trigger = {
+        has_global_flag = KoylaHappened
+        capital_scope = {
+            OR = {
+                region = eastern_naravam_region
+                region = western_naravam_region
+                region = apilanya_region
+            }
+        }
+        religion = lathvy
+        NOT = {
+            religious_school = {
+                group = lathvy_group
+                school = koylan_school
+            }
+        }
+	}
+	
+	mean_time_to_happen = {
+		months = 5
+	}
+
+    option = {
+		name = naravam.6.b
+		ai_chance = { factor = 20 }
+        set_religious_school = {
+            group = lathvy_group
+            school = koylan_school
+        }
+	}
+
+	option = {
+		name = naravam.6.b
+		ai_chance = { factor = 1 }
+        set_country_flag = refused_conversion
+        add_prestige = -10
+	}
+}
+
+#Rochoni reformation
+country_event = {
+	id = naravam.7
+	title = naravam.7.t
+	picture = JESUTIS_IN_BRAZIL_eventPicture
+	desc = naravam.7.d
+	
+	trigger = {
+        current_age = age_of_absolutism
+        capital_scope = {
+            OR = {
+                region = eastern_naravam_region
+                region = western_naravam_region
+                region = apilanya_region
+            }
+        }
+        religion = lathvy
+	}
+	
+	mean_time_to_happen = {
+		months = 5
+	}
+
+    option = {
+		name = naravam.7.a
+		ai_chance = { factor = 20 }
+        capital_scope = {
+            change_religion = rochoni
+            add_reform_center = rochoni
+        }
 	}
 }

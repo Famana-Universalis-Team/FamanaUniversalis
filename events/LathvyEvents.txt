@@ -706,6 +706,10 @@ country_event = { #TRADITIONAL & RINI
 					group = lathvy_group
 					school = celzian_school
 				}
+				religious_school = {
+					group = lathvy_group
+					school = koylan_school
+				}
 			}
 		}
 		any_known_country = {
@@ -943,6 +947,51 @@ country_event = { #TRADITIONAL & RINI
 			has_global_flag = CelzionHappened
 		}
 	}
+
+	option = { #Kolyan
+	name = lathvy_piety.16.f
+	ai_chance = { 
+		factor = 2
+		modifier = {
+			factor = 0
+			NOT = {
+				capital_scope = {
+					OR = {
+						region = western_naravam_region
+						region = eastern_naravam_region
+						region = apilanya_region
+						region = voychonia_region
+						region = lukscha_region
+						region = gotzlic_region
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 20
+			OR = {
+				primary_culture = Nirkifi
+				primary_culture = Rduma
+				primary_culture = Nirkifi
+				primary_culture = Burgavian
+				primary_culture = Shwoota
+				primary_culture = Veberi
+				primary_culture = Lihisian
+			}
+		}
+		modifier = {
+			factor = 2
+			religion = rochoni
+		}
+	}
+	set_religious_school = {
+		group = lathvy_group
+		school = koylan_school
+	}
+	trigger = {
+		has_global_flag = KoylaHappened
+	}
+}
 }
 
 country_event = { #Destroy Pomlen
