@@ -1730,13 +1730,13 @@ country_decisions = {
 			}
 			if = {
 				limit = {
-					culture = Hoxan
+					primary_culture = Hoxan
 				}
 				add_accepted_culture = Mahanshan
 			}
 			if = {
 				limit = {
-					culture = Mahanshan
+					primary_culture = Mahanshan
 				}
 				add_accepted_culture = Hoxan
 			}
