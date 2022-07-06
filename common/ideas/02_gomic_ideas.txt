@@ -2626,3 +2626,43 @@ ATM_ideas = {
 		governing_capacity_modifier = 0.1
 	}
 }
+
+FAZ_ideas = {
+	start = {
+		merchants = 1
+		autonomy_change_time = -0.5
+	}
+	
+	bonus = {
+		build_cost = -0.1
+	}
+
+	trigger = {
+		tag = FAZ
+	}
+	free = yes
+	
+	faz_1 = {
+		production_efficiency = 0.10
+	}
+	faz_2 = {
+		yearly_army_professionalism = 0.005
+	}
+	faz_3 = {
+		adm_advisor_cost = -0.20
+	}
+	faz_4 = {
+		reinforce_speed = 0.10
+		envoy_travel_time = -0.25
+	}
+	faz_5 = {
+		land_maintenance_modifier = -0.10
+	}
+	faz_6 = {
+		mercantilism_cost = -0.1
+		trade_steering = 0.2
+	}
+	faz_7 = {
+		interest = -1
+	}
+}
