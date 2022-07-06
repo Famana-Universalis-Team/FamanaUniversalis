@@ -1082,3 +1082,8 @@ nafaHartimatulModifierTest = {
     local_defensiveness = 0.25
     supply_limit_modifier = 0.20
 }
+
+fas_more_cav = {
+    cavalry_power = 0.10
+    movement_speed = 0.05
+}

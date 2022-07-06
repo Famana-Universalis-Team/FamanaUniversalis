@@ -20,3 +20,13 @@ extra_cost = 1
 owner = OSS
 controller = OSS
 add_core = OSS
+
+212.6.7 = {
+owner = NUS
+controller = NUS
+add_core = NUS
+remove_core = OSS
+#culture = 
+#religion = 
+#trade_goods = 
+}

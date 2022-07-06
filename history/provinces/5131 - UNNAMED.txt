@@ -21,3 +21,13 @@ controller = GRO
 add_core = GRO
 add_core = NCH
 fort_15th = yes
+
+212.6.7 = {
+owner = NCH
+controller = NCH
+add_core = NCH
+remove_core = GRO
+#culture = 
+#religion = 
+#trade_goods = 
+}

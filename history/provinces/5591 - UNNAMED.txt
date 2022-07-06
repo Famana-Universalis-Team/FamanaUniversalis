@@ -18,3 +18,13 @@ base_manpower = 2
 capital = "Geptlogada"
 is_city = no
 extra_cost = 1
+
+212.6.7 = {
+owner = JII
+controller = JII
+add_core = JII
+remove_core = YAB
+#culture = 
+#religion = 
+#trade_goods = 
+}

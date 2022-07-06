@@ -16,6 +16,12 @@ capital = "Tanyunne"
 is_city = no
 center_of_trade = 1
 
-
-
-
+212.6.7 = {
+owner = YAB
+controller = YAB
+add_core = YAB
+#remove_core = 
+culture = Yabonian
+religion = bamali
+trade_goods = wool
+}

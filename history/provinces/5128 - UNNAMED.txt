@@ -20,3 +20,13 @@ extra_cost = 1
 owner = GRO
 controller = GRO
 add_core = GRO
+
+212.6.7 = {
+owner = NUS
+controller = NUS
+add_core = NUS
+remove_core = GRO
+#culture = 
+#religion = 
+#trade_goods = 
+}

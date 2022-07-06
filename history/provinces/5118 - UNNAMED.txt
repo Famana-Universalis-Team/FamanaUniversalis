@@ -21,3 +21,13 @@ owner = DES
 controller = DES
 add_core = DES
 add_core = NCH
+
+212.6.7 = {
+owner = NCH
+controller = NCH
+add_core = NCH
+remove_core = DES
+#culture = 
+#religion = 
+#trade_goods = 
+}

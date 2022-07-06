@@ -21,3 +21,13 @@ capital = "Jantibloo"
 is_city = no
 extra_cost = 1
 
+
+212.6.7 = {
+owner = FSB
+controller = FSB
+add_core = FSB
+remove_core = BLK
+culture = Fisbiklan
+religion = tonmo
+discovered_by = north_antebari_tech_gr
+}

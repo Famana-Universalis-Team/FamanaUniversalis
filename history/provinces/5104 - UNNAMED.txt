@@ -20,3 +20,14 @@ owner = OSS
 controller = OSS
 add_core = OSS
 add_core = VLM
+
+
+212.6.7 = {
+owner = VLM
+controller = VLM
+add_core = VLM
+remove_core = OSS
+#culture = 
+#religion = 
+#trade_goods = 
+}

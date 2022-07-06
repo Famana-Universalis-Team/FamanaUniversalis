@@ -15,7 +15,16 @@ native_hostileness = 5
 capital = "Ufulk"
 is_city = no
 
-
+212.6.7 = {
+owner = FSB
+controller = FSB
+add_core = FSB
+#remove_core = 
+culture = Fisbiklan
+religion = tonmo
+trade_goods = grain
+discovered_by = north_antebari_tech_gr
+}
 
 
 

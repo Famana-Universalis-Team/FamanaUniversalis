@@ -1,6 +1,6 @@
 call_chiefs_aspect = {
 	sprite = "GFX_call_chiefs_icon"
-	cost = 200
+	cost = 150
 	trigger = {
 		is_at_war = yes
 	}

@@ -20,3 +20,12 @@ capital = "Panfillidanda"
 is_city = no
 extra_cost = 1
 
+212.6.7 = {
+owner = GET
+controller = GET
+add_core = GET
+remove_core = YAB
+#culture = 
+#religion = 
+#trade_goods = 
+}

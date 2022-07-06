@@ -20,3 +20,13 @@ base_manpower = 1
 capital = "Pondchez"
 is_city = no
 extra_cost = 1
+
+212.6.7 = {
+owner = HLK
+controller = HLK
+add_core = HLK
+remove_core = YAB
+#culture = 
+#religion = 
+#trade_goods = 
+}

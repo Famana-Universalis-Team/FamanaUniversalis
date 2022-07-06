@@ -20,3 +20,13 @@ extra_cost = 1
 owner = DES
 controller = DES
 add_core = DES
+
+212.6.7 = {
+owner = DBT
+controller = DBT
+add_core = DBT
+remove_core = DES
+#culture = 
+#religion = 
+#trade_goods = 
+}

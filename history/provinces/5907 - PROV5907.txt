@@ -10,3 +10,13 @@ native_ferocity = 1
 native_hostileness = 1
 capital = "Yaumenne"
 is_city = no
+
+212.6.7 = {
+owner = YAB
+controller = YAB
+add_core = YAB
+#remove_core = 
+culture = Yabonian
+religion = bamali
+trade_goods = wool
+}

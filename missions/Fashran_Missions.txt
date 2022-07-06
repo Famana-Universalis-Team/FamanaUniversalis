@@ -552,6 +552,10 @@ fas_2 = {
             	}
 			}
 			custom_tooltip = FAS_ECO_TOOLTIP
+			add_country_modifier = {
+				name = fas_more_cav
+				duration = -1
+			}
 		}
 		provinces_to_highlight = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }

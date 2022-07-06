@@ -21,3 +21,13 @@ owner = OSS
 controller = OSS
 add_core = OSS
 add_core = ZNE
+
+212.6.7 = {
+owner = ZNE
+controller = ZNE
+add_core = ZNE
+remove_core = OSS
+#culture = 
+#religion = 
+#trade_goods = 
+}
