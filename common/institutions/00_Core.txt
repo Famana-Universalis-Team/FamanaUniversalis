@@ -1043,7 +1043,7 @@ manufactories = {
 		is_island = no
 		is_state = yes
 		development = 25
-		owner = { religion = lathvy }
+		owner = { religion_group = lathvy_group }
 		OR = {
 			superregion = jasua_superregion
 			superregion = west_estal_superregion

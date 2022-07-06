@@ -174,7 +174,13 @@ age_of_discovery = {
 		
 		ab_roklot_warriors = {
 			allow = {
-				tag = RKL
+				OR = {
+					tag = RKL
+					AND = {
+						tag = HVK
+						was_tag = RKL
+					}
+				}
 			}
 			modifier = {
 				infantry_power = 0.2
@@ -186,7 +192,13 @@ age_of_discovery = {
 
 		ab_moshirian_diplomacy = {
 			allow = {
-				tag = MSH
+				OR = {
+					tag = MSH
+					AND = {
+						tag = GAX
+						was_tag = MSH
+					}
+				}
 			}
 			modifier = {
 				diplomatic_reputation = 5

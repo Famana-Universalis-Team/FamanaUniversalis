@@ -138,6 +138,45 @@ country_decisions = {
 			}
 		}
 		effect = {
+			hidden_effect = {
+				change_primary_culture = Vaxidarian
+				remove_accepted_culture = Vaximor
+				remove_accepted_culture = Dyrian
+				DYR = {
+					every_owned_province = {
+						limit = {
+							OR = {
+								culture = Vaximor
+								culture = Dyrian
+							}
+						}
+						change_culture = Vaxidarian
+					}
+				}
+				VAX = {
+					every_owned_province = {
+						limit = {
+							OR = {
+								culture = Vaximor
+								culture = Dyrian
+							}
+						}
+						change_culture = Vaxidarian
+					}
+				}
+				every_owned_province = {
+					limit = {
+						OR = {
+							culture = Vaximor
+							culture = Dyrian
+						}
+					}
+					change_culture = Vaxidarian
+				}
+				set_ruler_culture = Vaxidarian
+				set_heir_culture = Vaxidarian
+				set_consort_culture	= Vaxidarian
+			}
 			restore_country_name = yes
 			change_tag = VDY
 			if = {
@@ -169,6 +208,7 @@ country_decisions = {
 			MSH = {
 				add_historical_friend = VDY
 			}
+			custom_tooltip = mergeVaximorDyrian
 		}
 		ai_will_do = {
 			factor = 1
@@ -1693,6 +1733,7 @@ country_decisions = {
 				was_never_end_game_tag_trigger = yes
 				NOT = { religion = tonmo }
 			}
+			religion_group = oppian_group
 		}
 		provinces_to_highlight = {
 			OR = {

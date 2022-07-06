@@ -213,6 +213,7 @@ country_event = {
 
 	trigger = {
 		is_year = 291
+		NOT = { is_year = 292 }
 		owns = 5493
 	}
 	
@@ -366,6 +367,12 @@ country_event = {
 	picture = ECLIPSE_eventPicture
 	is_triggered_only = yes
 	major = yes
+
+	trigger = {
+		NOT = {
+			exists = NAF
+		}
+	}
 
 	option = {
 		name = jasuaE.7.a
@@ -621,6 +628,12 @@ country_event = {
 	picture = ECLIPSE_eventPicture
 	is_triggered_only = yes
 	major = yes
+
+	trigger = {
+		NOT = {
+			exists = NAF
+		}
+	}
 	
 	option = {
 		name = jasuaE.13.a
@@ -703,6 +716,12 @@ country_event = {
 	picture = ECLIPSE_eventPicture
 	is_triggered_only = yes
 	major = yes
+
+	trigger = {
+		NOT = {
+			exists = NAF
+		}
+	}
 	
 	option = {
 		name = jasuaE.14.a
@@ -785,6 +804,12 @@ country_event = {
 	picture = ECLIPSE_eventPicture
 	is_triggered_only = yes
 	major = yes
+
+	trigger = {
+		NOT = {
+			exists = NAF
+		}
+	}
 	
 	option = {
 		name = jasuaE.15.a
@@ -1049,6 +1074,9 @@ country_event = {
 	trigger = {
 		tag = RCK
 		has_global_flag = NafanRevolt
+		NOT = {
+			exists = NAF
+		}
 	}
 
 	immediate = {
