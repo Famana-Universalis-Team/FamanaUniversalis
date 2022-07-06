@@ -1380,3 +1380,28 @@ country_event = { #Kalargan uprising
 		add_legitimacy = -25
 	}
 }
+
+country_event = { #bruh
+	id = jasuaE.25
+	title = jasuaE.25.t
+	desc = jasuaE.25.d
+	picture = BATTLE_eventPicture
+	fire_only_once = yes
+	hidden = yes
+	is_triggered_only = yes
+
+	trigger = {
+        NOT = { is_year = 213 }
+		dynasty = "Noy"
+        tag = SKT
+    }
+
+	immediate = {
+        set_dynasty	= "Manu"
+    }
+
+    option = {
+        name = jasuaE.25.a
+        ai_chance = { factor = 1 }
+    }
+}
