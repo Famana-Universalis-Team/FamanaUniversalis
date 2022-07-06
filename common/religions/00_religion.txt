@@ -718,7 +718,7 @@ lathvy_group = {
 			# religion_sub_modifier = no is possible, will hide icon in religious screen
 			idea_cost = -0.1
 		}
-		koylan_school = {
+		kolyan_school = {
 			potential_invite_scholar = {
 				knows_of_scholar_country_capital_trigger = yes
 				OR = {
