@@ -168,6 +168,10 @@ country_event = {
 		5059 = {
 			change_religion = reformed_oppian
 			add_reform_center = reformed_oppian
+			add_province_modifier = {
+				name = religious_zeal_at_conv
+				duration = 10950
+			}
 		}
 	}
 	option = {
@@ -229,6 +233,10 @@ country_event = {
 		5103 = {
 			change_religion = reformed_oppian
 			add_reform_center = reformed_oppian
+			add_province_modifier = {
+				name = religious_zeal_at_conv
+				duration = 10950
+			}
 		}
 	}
 	option = {
@@ -290,6 +298,10 @@ country_event = {
 		5188 = {
 			change_religion = reformed_oppian
 			add_reform_center = reformed_oppian
+			add_province_modifier = {
+				name = religious_zeal_at_conv
+				duration = 10950
+			}
 		}
 		hidden_effect = {
 			5059 = {

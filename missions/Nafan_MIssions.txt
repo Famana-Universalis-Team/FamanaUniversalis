@@ -1262,6 +1262,11 @@ nafa_3 = {
             unnamed_area_20 = { add_permanent_claim = ROOT }
             pexamol_area = { add_permanent_claim = ROOT }
             south_pextum_area = { add_permanent_claim = ROOT }
+            5368 = { add_permanent_claim = ROOT }
+            5307 = { add_permanent_claim = ROOT }
+            5370 = { add_permanent_claim = ROOT }
+            5373 = { add_permanent_claim = ROOT }
+            5496 = { add_permanent_claim = ROOT }
         }
         provinces_to_highlight = {
             area = elwait_area
@@ -1289,6 +1294,11 @@ nafa_3 = {
         }
         effect = {
             add_prestige = 20
+
+            south_xalia_region = { add_permanent_claim = ROOT }
+			moria_region = { add_permanent_claim = ROOT }
+			east_xalia_region = { add_permanent_claim = ROOT }
+			north_xalia_region = { add_permanent_claim = ROOT }
         }
         provinces_to_highlight = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }

@@ -321,6 +321,10 @@ country_event = {
         capital_scope = {
             change_religion = lathvy
             add_reform_center = lathvy
+            add_province_modifier = {
+				name = religious_zeal_at_conv
+				duration = 10950
+			}
         }
         set_global_flag = LathvyConversionsStarted
         every_country = {
@@ -438,6 +442,10 @@ country_event = {
         capital_scope = {
             change_religion = rochoni
             add_reform_center = rochoni
+            add_province_modifier = {
+				name = religious_zeal_at_conv
+				duration = 10950
+			}
         }
 	}
 }
