@@ -708,7 +708,7 @@ country_event = { #TRADITIONAL & RINI
 				}
 				religious_school = {
 					group = lathvy_group
-					school = koylan_school
+					school = kolyan_school
 				}
 			}
 		}
@@ -986,10 +986,10 @@ country_event = { #TRADITIONAL & RINI
 	}
 	set_religious_school = {
 		group = lathvy_group
-		school = koylan_school
+		school = kolyan_school
 	}
 	trigger = {
-		has_global_flag = KoylaHappened
+		has_global_flag = KolyaHappened
 	}
 }
 }

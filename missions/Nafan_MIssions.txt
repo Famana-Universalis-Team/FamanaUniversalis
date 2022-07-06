@@ -66,15 +66,29 @@ eclipse_1 = {
                     duration = -1
                 }
             }
-
-            5485 = {
-                change_trade_goods = cloth
+            if = {
+                limit = {
+                    owns = 5485
+                }
+                5485 = {
+                    change_trade_goods = cloth
+                }
             }
-            5486 = {
-                change_trade_goods = wine
+            if = {
+                limit = {
+                    owns = 5486
+                }
+                5486 = {
+                    change_trade_goods = wine
+                }
             }
-            5487 = {
-                change_trade_goods = paper
+            if = {
+                limit = {
+                    owns = 5487
+                }
+                5487 = {
+                    change_trade_goods = paper
+                }
             }
         }
         provinces_to_highlight = {
@@ -441,20 +455,45 @@ nafa_1 = {
                 estate = estate_burghers
                 loyalty = 20
             }
-            5570 = {
-                change_trade_goods = cloth
+            if = {
+                limit = {
+                    owns = 5570
+                }
+                5570 = {
+                    change_trade_goods = cloth
+                }
             }
-            5574 = {
-                change_trade_goods = cloth
+            if = {
+                limit = {
+                    owns = 5574
+                }
+                5574 = {
+                    change_trade_goods = cloth
+                }
             }
-            5562 = {
-                change_trade_goods = wine
+            if = {
+                limit = {
+                    owns = 5562
+                }
+                5562 = {
+                    change_trade_goods = wine
+                }
             }
-            5578 = {
-                change_trade_goods = paper
+            if = {
+                limit = {
+                    owns = 5578
+                }
+                5578 = {
+                    change_trade_goods = paper
+                }
             }
-            5717 = {
-                change_trade_goods = glass
+            if = {
+                limit = {
+                    owns = 5717
+                }
+                5717 = {
+                    change_trade_goods = glass
+                }
             }
         }
         provinces_to_highlight = {

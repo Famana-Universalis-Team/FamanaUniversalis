@@ -335,7 +335,7 @@ country_event = {
 	}
 }
 
-#Bishops in Koyla
+#Bishops in Kolya
 country_event = {
 	id = naravam.5
 	title = naravam.5.t
@@ -358,12 +358,12 @@ country_event = {
 	option = {
 		name = naravam.5.a
 		ai_chance = { factor = 1 }
-        set_global_flag = KoylaHappened
-        custom_tooltip = KoylaUnlocked
+        set_global_flag = KolyaHappened
+        custom_tooltip = KolyaUnlocked
 	}
 }
 
-#Koyla conversion
+#Kolya conversion
 country_event = {
 	id = naravam.6
 	title = naravam.6.t
@@ -371,7 +371,7 @@ country_event = {
 	desc = naravam.6.d
 	
 	trigger = {
-        has_global_flag = KoylaHappened
+        has_global_flag = KolyaHappened
         capital_scope = {
             OR = {
                 region = eastern_naravam_region
@@ -383,7 +383,7 @@ country_event = {
         NOT = {
             religious_school = {
                 group = lathvy_group
-                school = koylan_school
+                school = kolyan_school
             }
         }
 	}
@@ -393,11 +393,11 @@ country_event = {
 	}
 
     option = {
-		name = naravam.6.b
+		name = naravam.6.a
 		ai_chance = { factor = 20 }
         set_religious_school = {
             group = lathvy_group
-            school = koylan_school
+            school = kolyan_school
         }
 	}
 
