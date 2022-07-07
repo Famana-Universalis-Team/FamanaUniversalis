@@ -10,6 +10,7 @@ country_event = {
     is_triggered_only = yes
 
 	trigger = {
+		NOT = { is_year = 213 }
 		ai = no
 	}
 	option = {
@@ -279,7 +280,7 @@ country_event = {
 	}
 }
 
-#make sure only the host gets it
+#make sure only the host gets it - currently doesnt work as a random player gets it instead.
 country_event = {
     id = gamesetup.6
 	hidden = yes
