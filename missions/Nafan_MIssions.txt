@@ -950,6 +950,25 @@ nafa_2 = {
             set_country_flag = nafaBlockCruel
             custom_tooltip = nafaBlockCruelTooltip
             add_yearly_sailors = 5.0
+            custom_tooltip = nafaColonize1
+            hidden_effect = {
+                area_61 = {
+                    limit = {
+                        is_empty = yes
+                    }
+                    cede_province = ROOT
+                    change_religion	= ROOT
+                    change_culture = East_Emastalian
+                }
+                area_62 = {
+                    limit = {
+                        is_empty = yes
+                    }
+                    cede_province = ROOT
+                    change_religion	= ROOT
+                    change_culture = East_Emastalian
+                }
+            }
             west_emastalia_region = { add_permanent_claim = ROOT }
             if = {
                 limit = {
@@ -972,12 +991,21 @@ nafa_2 = {
         required_missions = { naf_the_summer_coast }
         position = 8
         trigger = {
-            
+            owns_all_provinces = {
+				region = west_emastalia_region
+				NOT = {
+					is_empty = yes
+				}
+			}
         }
         effect = {
             
         }
-        #provinces_to_highlight = {}
+        provinces_to_highlight = {
+            NOT = { country_or_non_sovereign_subject_holds = ROOT }
+            NOT = { is_empty = yes }
+            region = west_emastalia_region
+        }
     }
 
     naf_convert_ga_xal = {
