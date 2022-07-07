@@ -1,0 +1,88 @@
+#Country Name: Please see filename.
+
+graphical_culture = muslimgfx
+
+color = { 215  255  107 }
+
+historical_idea_groups = {
+	economic_ideas
+	defensive_ideas
+	diplomatic_ideas
+	offensive_ideas
+	innovativeness_ideas
+	quantity_ideas
+	administrative_ideas
+	religious_ideas
+}
+
+historical_units = {
+	ottoman_yaya
+	ottoman_musellem
+	ottoman_azab
+	ottoman_timariot
+	ottoman_janissary
+	ottoman_spahi
+	ottoman_sekban
+	ottoman_reformed_spahi
+	ottoman_reformed_janissary
+	ottoman_toprakli_hit_and_run
+	ottoman_nizami_cedid
+	ottoman_toprakli_dragoon
+	eastern_skirmisher
+	eastern_uhlan
+	eastern_carabinier
+	ottoman_new_model
+	ottoman_lancer
+}
+
+monarch_names = {
+	"Alletan #0" = 1
+	"Dif #0" = 1
+	"Galvis #0" = 1
+	"Rannos #0" = 1
+	"Vanii #0" = 1
+	"Yoms #0" = 1
+	"Gamletan #0" = 1
+	"Aytrus #0" = 1
+	"Gamefan #0" = 1
+	"Galif #0" = 1
+	"Sus #0" = 1
+	"Alcuge #0" = 1
+	"Soufi #0" = -1
+	"Mazia #0" = -1
+	"Zoi #0" = -1
+	"Messia #0" = -1
+}
+
+leader_names = {
+	Alletan
+	Dif
+	Galvis
+	Rannos
+	Vanii
+	Yoms
+	Gamletan
+	Aytrus
+	Gamefan
+	Galif
+	Sus
+	Alcuge
+}
+
+ship_names = {
+	Pavtis
+	Naglon
+	Talak
+	Aramesh
+}
+
+army_names = {
+	"Divaca ane $PROVINCE$" 
+}
+
+fleet_names = {
+	"Blue Navy"
+	"Red Navy"
+	"Black Navy"
+	"White Navy"
+}
