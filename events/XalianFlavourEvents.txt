@@ -8,7 +8,11 @@ country_event = { #Celebrations of Shir
 	is_triggered_only = yes
 	
 	trigger = {
-		NOT = { religion = shirian }
+		OR = {
+			religion = morian
+			religion = delkian
+			religion = vinian
+		}
 	}
 
 	option = {
@@ -42,7 +46,11 @@ country_event = { #Celebrations of Delk
 	is_triggered_only = yes
 
 	trigger = {
-		NOT = { religion = delkian }
+		OR = {
+			religion = morian
+			religion = shirian
+			religion = vinian
+		}
 	}
 
 	option = {
@@ -76,7 +84,11 @@ country_event = { #Celebrations of Mor
 	is_triggered_only = yes
 
 	trigger = {
-		NOT = { religion = morian }
+		OR = {
+			religion = shirian
+			religion = delkian
+			religion = vinian
+		}
 	}
 
 	option = {
@@ -110,7 +122,11 @@ country_event = { #Celebrations of Vin
 	is_triggered_only = yes
 
 	trigger = {
-		NOT = { religion = vinian }
+		OR = {
+			religion = morian
+			religion = shirian
+			religion = delkian
+		}
 	}
 	
 	option = {
@@ -142,6 +158,14 @@ country_event = { #Celebrations of Our God
 	desc = XalianFlavour.5.d
 	picture = THEATRE_eventPicture
 	is_triggered_only = yes
+	trigger = {
+		OR = {
+			religion = morian
+			religion = shirian
+			religion = delkian
+			religion = vinian
+		}
+	}
 
 	option = {
 		name = XalianFlavour.1.a
@@ -171,6 +195,14 @@ country_event = { #Good foreign diplomacy
 	desc = XalianFlavour.7.d
 	picture = DIPLOMACY_SIGNING_eventPicture
 	is_triggered_only = yes
+	trigger = {
+		OR = {
+			religion = morian
+			religion = shirian
+			religion = delkian
+			religion = vinian
+		}
+	}
 
 	option = {
 		name = XalianFlavour.7.a
@@ -201,6 +233,14 @@ country_event = { #Shitty foreign diplomacy
 	desc = XalianFlavour.8.d
 	picture = PROTESTANT_CATHOLIC_DEBATE_eventPicture
 	is_triggered_only = yes
+	trigger = {
+		OR = {
+			religion = morian
+			religion = shirian
+			religion = delkian
+			religion = vinian
+		}
+	}
 
 	option = {
 		name = XalianFlavour.8.a
@@ -311,5 +351,54 @@ country_event = { #Discovery of Minkoo
 		ai_chance = { factor = 1 }
 		add_prestige = 50
 		change_innovativeness = 5
+	}
+}
+
+country_event = { #Fall of Shiraska Xon
+	id = XalianFlavour.11
+	title = XalianFlavour.1.t
+	desc = XalianFlavour.11.d
+	picture = GENERALS_DISCUSSING_eventPicture
+	fire_only_once = yes
+
+	trigger = {
+		AND = {
+			owns_core_province = 5467
+			NOT = { tag = MSH }
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = XalianFlavour.11.a
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 100
+				religion = shirian
+			}
+		}
+		add_prestige = 10
+	}
+	option = {
+		name = XalianFlavour.11.b
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 100
+				NOT = { religion = shirian }
+			}
+		}
+		5467 = {
+			change_province_name = "Xindal"
+			rename_capital = "Xindal"
+		}
+		add_prestige = 10
 	}
 }

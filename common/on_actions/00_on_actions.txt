@@ -3324,14 +3324,6 @@ on_five_year_pulse_2 = {
 
 on_five_year_pulse_3 = {
 	if = {
-		limit = {
-			OR = {
-				religion = delkian
-				religion = morian
-				religion = vinian
-				religion = shirian
-			}
-		}
 		random_events = {
 			100 = XalianFlavour.1
 			100 = XalianFlavour.2
@@ -3341,7 +3333,6 @@ on_five_year_pulse_3 = {
 			100 = XalianFlavour.7
 			100 = XalianFlavour.8
 		}
-	}
 }
 
 on_five_year_pulse_4 = {
