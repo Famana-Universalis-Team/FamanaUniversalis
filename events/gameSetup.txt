@@ -10,6 +10,7 @@ country_event = {
     is_triggered_only = yes
 
 	trigger = {
+		NOT = { is_year = 213 }
 		ai = no
 	}
 	option = {
