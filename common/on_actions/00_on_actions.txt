@@ -2840,27 +2840,6 @@ on_four_year_pulse_4 = {
 }
 
 on_five_year_pulse = {
-	if = {
-		limit = {
-			has_reform = desert_tribe
-		}
-		change_variable = {
-			which = desertTimer
-			value = 1
-		}
-		if = {
-			limit = {
-				check_variable = {
-					which = desertTimer
-					value = 3
-				}
-			}
-			set_variable = {
-				which = desertTimer
-				value = 1
-			}
-		}
-	}
 	random_events = {
 
 		# Innovativeness Events
@@ -3344,18 +3323,63 @@ on_five_year_pulse_2 = {
 }
 
 on_five_year_pulse_3 = {
-	random_events = {
-		#100 = propagate_religion_events.1
-		#100 = propagate_religion_events.2
-		#100 = propagate_religion_events.3
-		#100 = propagate_religion_events.4
-		#100 = propagate_religion_events.5
-		#100 = propagate_religion_events.6
-		#100 = propagate_religion_events.8
-		#100 = propagate_religion_events.9
-		#100 = propagate_religion_events.10
-		#100 = propagate_religion_events.11 #Province event
-		1000 = 0
+	if = {
+		limit = {
+			OR = {
+				religion = delkian
+				religion = morian
+				religion = vinian
+				religion = shirian
+			}
+		}
+		random_events = {
+			100 = {
+				if = {
+					limit = {
+						NOT = { religion = shirian }
+					}
+					XalianFlavour.1
+				}
+				else = {
+					XalianFlavour.5
+				}
+			}
+			100 = {
+				if = {
+					limit = {
+						NOT = { religion = Delkian }
+					}
+					XalianFlavour.2
+				}
+				else = {
+					XalianFlavour.5
+				}
+			}
+			100 = {
+				if = {
+					limit = {
+						NOT = { religion = Morian }
+					}
+					XalianFlavour.3
+				}
+				else = {
+					XalianFlavour.5
+				}
+			}
+			100 = {
+				if = {
+					limit = {
+						NOT = { religion = Vinian }
+					}
+					XalianFlavour.4
+				}
+				else = {
+					XalianFlavour.5
+				}
+			}
+			100 = XalianFlavour.7
+			100 = XalianFlavour.8
+		}
 	}
 }
 

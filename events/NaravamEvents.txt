@@ -107,6 +107,7 @@ country_event = {
             else = {
                 feemk_area = {
                     cede_province = ORC
+                    add_core = KLY
                     remove_core = RDU
                 }
             }
@@ -257,22 +258,22 @@ country_event = {
             }
             if = {
                 limit = {
-                    primary_culture = Shoowta
+                    primary_culture = Shoowtan
                 }
                 every_province = {
                     limit = {
-                        culture = Shoowta
+                        culture = Shoowtan
                     }
                     add_permanent_claim = ROOT
                 }
             }
             if = {
                 limit = {
-                    primary_culture = Veberi
+                    primary_culture = Rouragi
                 }
                 every_province = {
                     limit = {
-                        culture = Veberi
+                        culture = Rouragi
                     }
                     add_permanent_claim = ROOT
                 }
@@ -288,8 +289,8 @@ country_event = {
                     add_permanent_claim = ROOT
                 }
             }
-	}
-}
+        }
+    }
 }
 
 #Start of lathvy conversions in Naravam
@@ -419,6 +420,7 @@ country_event = {
 	title = naravam.7.t
 	picture = JESUTIS_IN_BRAZIL_eventPicture
 	desc = naravam.7.d
+    fire_only_once = yes
 	
 	trigger = {
         current_age = age_of_absolutism
@@ -446,6 +448,15 @@ country_event = {
 				name = religious_zeal_at_conv
 				duration = 10950
 			}
+        }
+        every_province = {
+            limit = {
+                AND = {
+                    region = eastern_naravam_region
+                    religion = lathvy
+                }
+            }
+            remove_reform_center = lathvy
         }
 	}
 }

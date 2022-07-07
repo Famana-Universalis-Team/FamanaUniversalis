@@ -2842,6 +2842,12 @@ country_decisions = {
 				duration = 7300
 			}
 			add_prestige = 25
+			every_province = {
+				limit = {
+					culture = Nirkifi
+				}
+				add_core = ROOT
+			}
 		}
 		ai_will_do = {
 			factor = 1
@@ -2889,6 +2895,12 @@ country_decisions = {
 				duration = 7300
 			}
 			add_prestige = 25
+			every_province = {
+				limit = {
+					culture = Burgavian
+				}
+				add_core = ROOT
+			}
 		}
 		ai_will_do = {
 			factor = 1
@@ -2938,6 +2950,12 @@ country_decisions = {
 				duration = 7300
 			}
 			add_prestige = 25
+			every_province = {
+				limit = {
+					culture = Rouragi
+				}
+				add_core = ROOT
+			}
 		}
 		ai_will_do = {
 			factor = 1
@@ -2998,6 +3016,12 @@ country_decisions = {
 				duration = 7300
 			}
 			add_prestige = 25
+			every_province = {
+				limit = {
+					culture = Nirkifi
+				}
+				add_core = ROOT
+			}
 		}
 		ai_will_do = {
 			factor = 1

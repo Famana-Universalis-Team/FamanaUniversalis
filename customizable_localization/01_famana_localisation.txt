@@ -12,3 +12,133 @@ defined_text = {
         localisation_key = eastOppianCulture
     }
 }
+
+defined_text = {
+    name = OurGod
+	random = no
+
+	text = {
+        localisation_key = VinGod
+        trigger = {
+			religion = vinian
+        }
+    }
+    text = {
+        localisation_key = DelkGod
+        trigger = {
+			religion = delkian
+        }
+    }
+    text = {
+        localisation_key = ShirGod
+        trigger = {
+			religion = shirian
+        }
+    }
+    text = {
+        localisation_key = MorGod
+        trigger = {
+			religion = morian
+        }
+    }
+    text = {
+        localisation_key = ErrorGod
+        trigger = {
+			NOT = {
+                OR = {
+                    religion = shirian
+                    religion = delkian
+                    religion = morian
+                    religion = vinian
+                }
+            }
+        }
+    }
+}
+
+defined_text = {
+    name = GetMinkoo
+	random = no
+
+	text = {
+        localisation_key = Minkoo #Ga Xal, Moxon, Maky, Emastalia, Bohora
+        trigger = {
+            OR = {
+                culture_group = Maxan
+                culture_group = Emastalian
+                culture_group = Makyna
+                culture_group = Xalian
+                culture_group = Komelwaiti
+            }
+        }
+    }
+    text = {
+        localisation_key = Foversia #Jasua
+        trigger = {
+			OR = {
+                culture_group = Jasuan
+                culture_group = North_West_Antebari
+                culture_group = Aresian_C
+            }
+        }
+    }
+    text = {
+        localisation_key = Syadonesh #Nafa
+        trigger = {
+			OR = {
+                culture_group = Pustian
+            }
+        }
+    }
+    text = {
+        localisation_key = Karath #Fashros, Kisholi
+        trigger = {
+			culture_group = Ravsho
+            culture_group = Kisholi
+        }
+    }
+    text = {
+        localisation_key = Quinax #Oppia
+        trigger = {
+			culture_group = Oppian
+            culture_group = Hoxoi
+        }
+    }
+    text = {
+        localisation_key = Ranadezh #North Estal
+        trigger = {
+			culture_group = Gotzlic
+            culture_group = South_Gotzlic
+            culture_group = Naravami_C
+            culture_group = Ordic_C
+            culture_group = Lukscho_Brulic
+            culture_group = Barits
+            culture_group = Voychon
+        }
+    }
+    text = {
+        localisation_key = Hromur #Geopyopia
+        trigger = {
+			capital_scope = {
+                culture_group = Geopyopian
+            }
+        }
+    }
+    text = {
+        localisation_key = ShiNazh #Agmagoz
+        trigger = {
+			capital_scope = {
+                continent = Antebar
+            }
+        }
+    }
+    text = {
+        localisation_key = Sichu #Vanoma
+        trigger = {
+			culture = Vanoman
+        }
+    }
+    text = {
+        localisation_key = Talilhth #Other
+    }
+}

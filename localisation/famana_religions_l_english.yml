@@ -256,7 +256,7 @@
  HOLY_SITE_5163_DESC:0 "Ximal is the most holy city for Delkians, as it served as the capital of the earth kingdom of Ga Delk."
 
  delkian:0 "Delkian"
- delkian_religion_desc:0 "One of the four Xalian religions, Delkian believes in the supremacy of Delk, the Earth God, and his eternal creations."
+ delkian_religion_desc:0 "A Xalian Religion, Delkian is based on the common Xalian Alchemy system. Following the Great Xalian Schism that tore apart the ancient religion, the Delkian faction swore total allegience to Delk, one of the four Xalian Gods. He is percieved as the deistic incarnation of the Earth element."
  delkian_rebels_demand:0 "Convert $COUNTRYNAME$"
  delkian_rebels_demand_desc:0 "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
  delkian_rebels_title:0 "Religious"
@@ -265,7 +265,7 @@
  delkian_rebels_army:0 "$RELIGION$ Army"
 
  vinian:0 "Vinian"
- vinian_religion_desc:0 ""
+ vinian_religion_desc:0 "A Xalian Religion, Vinian is based on the common Xalian Alchemy system. Following the Great Xalian Schism that tore apart the ancient religion, the Vinian faction swore total allegience to Vin, one of the four Xalian Gods. He is percieved as the deistic incarnation of the Water element."
  vinian_rebels_demand:0 "Convert $COUNTRYNAME$"
  vinian_rebels_demand_desc:0 "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
  vinian_rebels_title:0 "Religious"
@@ -274,7 +274,7 @@
  vinian_rebels_army:0 "$RELIGION$ Army"
 
  morian:0 "Morian"
- morian_religion_desc:0 "One of the four Xalian religions, Morian is special and believes that there is only one God, Mor, who is recognised as a God of fire and war in the other religions."
+ morian_religion_desc:0 "A Xalian Religion, Morian is based on the common Xalian Alchemy system. Following the Great Xalian Schism that tore apart the ancient religion, the Morian faction swore total allegience to Mor. Mor is special, because where he is a God associated with the fundamental element of fire in the other religions, the Morians reject the existence of the other three Gods, and claim him to be the only God, and the incarnation of all four fundamental elements."
  morian_rebels_demand:0 "Convert $COUNTRYNAME$"
  morian_rebels_demand_desc:0 "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
  morian_rebels_title:0 "Religious"
@@ -283,7 +283,7 @@
  morian_rebels_army:0 "$RELIGION$ Army"
 
  shirian:0 "Shirian"
- shirian_religion_desc:0 "One of the four Xalian religions, Shirian believes in the supremacy of Shir, the Air God, and his eternal creations."
+ shirian_religion_desc:0 "A Xalian Religion, Shirian is based on the common Xalian Alchemy system. Following the Great Xalian Schism that tore apart the ancient religion, the Shirian faction swore total allegience to Delk, one of the four Xalian Gods. He is percieved as the deistic incarnation of the Air element."
  shirian_rebels_demand:0 "Convert $COUNTRYNAME$"
  shirian_rebels_demand_desc:0 "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
  shirian_rebels_title:0 "Religious"
@@ -307,6 +307,11 @@
  morsum_center_morian_desc:0 "Morsum is a holy city in the Morian religion, and controlling said city will give great benefits."
  ximal_center_delkian:0 "Holy City of Ximal"
  ximal_center_delkian_desc:0 "Ximal is a holy city in the Delkian religion, and controlling said city will give great benefits."
+
+ VinGod:0 "Vin"
+ DelkGod:0 "Delk"
+ ShirGod:0 "Shir"
+ MorGod:0 "Mor"
 
  strenghten_the_government:0 "Strengthen the Government"
  desc_strenghten_the_government:0 "The local lords of Ga Xal have far too much freedom. It is imperative that we take measures to bring them closer to the central government."

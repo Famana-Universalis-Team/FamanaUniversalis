@@ -1087,3 +1087,13 @@ fas_more_cav = {
     cavalry_power = 0.10
     movement_speed = 0.05
 }
+
+jexus_converted = {
+    tolerance_heretic = -2
+}
+
+morian_reformed = {
+    infantry_power = -0.15
+    tolerance_heretic = 2
+    diplomatic_reputation = 2
+}

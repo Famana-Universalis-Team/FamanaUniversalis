@@ -2619,12 +2619,30 @@ country_event = {
 		}
 		highlight = yes
 		trigger = {
-			ruler_has_personality_ancestor = { key = scholar }
+			AND = {
+				ruler_has_personality_ancestor = { key = scholar }
+				NOT = {
+					OR = {
+						religion = vaximorian
+						religion = pawani
+						religion = mak
+					}
+				}
+			}
 		}
 		add_adm_power = 20
 	}
 	
 	option = {
+		trigger = {
+			NOT = {
+				OR = {
+					religion = vaximorian
+					religion = pawani
+					religion = mak
+				}
+			}
+		}
 		name = "EVTOPTA5060"		# It's an omen
 		if = {
 			limit = { NOT = { stability = -2 } }
@@ -2636,6 +2654,15 @@ country_event = {
 		}
 	}
 	option = {
+		trigger = {
+			NOT = {
+				OR = {
+					religion = vaximorian
+					religion = pawani
+					religion = mak
+				}
+			}
+		}
 		name = "EVTOPTB5060"		# The end is nigh!
 		if = {
 			limit = { NOT = { stability = -2 } }
@@ -2647,6 +2674,15 @@ country_event = {
 		}
 	}
 	option = {
+		trigger = {
+			NOT = {
+				OR = {
+					religion = vaximorian
+					religion = pawani
+					religion = mak
+				}
+			}
+		}
 		name = "EVTOPTC5060"		# The economy, fools!
 		if = {
 			limit = { NOT = { stability = -2 } }
@@ -2658,6 +2694,15 @@ country_event = {
 		}
 	}
 	option = {
+		trigger = {
+			NOT = {
+				OR = {
+					religion = vaximorian
+					religion = pawani
+					religion = mak
+				}
+			}
+		}
 		name = "EVTOPTE5060"		# I wish I lived in more enlightened times.
 		if = {
 			limit = { NOT = { stability = -2 } }
@@ -2671,7 +2716,16 @@ country_event = {
 	option = {
 		name = "EVTOPTF5060"		# Sacrifice a human heart to appease the comet!
 		trigger = {
-			religion_group = pagan
+			AND = {
+				religion_group = pagan
+				NOT = {
+					OR = {
+						religion = vaximorian
+						religion = pawani
+						religion = mak
+					}
+				}
+			}
 		}
 		if = {
 			limit = { NOT = { stability = -2 } }
@@ -2683,6 +2737,9 @@ country_event = {
 		}
 	}
 	option = {
+		trigger = {
+
+		}
 		name = "EVTOPTG5060"		# If only we had comet sense!
 		if = {
 			limit = { NOT = { stability = -2 } }
@@ -2696,7 +2753,16 @@ country_event = {
 	option = {
 		name = "EVTOPTH5060"		# Oh comet, devil's kith and kin...
 		trigger = {
-			NOT = { religion_group = pagan }
+			AND = {
+				NOT = { religion_group = pagan }
+				NOT = {
+					OR = {
+						religion = vaximorian
+						religion = pawani
+						religion = mak
+					}
+				}
+			}
 		}		
 		if = {
 			limit = { NOT = { stability = -2 } }
@@ -2708,34 +2774,15 @@ country_event = {
 		}
 	}		
 	option = {
-		name = "EVTOPTI5060"		# What a great start into the new year
 		trigger = {
-			NOT = { is_year = 1445 }
+			NOT = {
+				OR = {
+					religion = vaximorian
+					religion = pawani
+					religion = mak
+				}
+			}
 		}
-		if = {
-			limit = { NOT = { stability = -2 } }
-			add_adm_power = -100
-		}		
-		if = {
-			limit = { stability = -2 }
-			add_stability = -1
-		}
-	}	
-	option = {
-		name = "EVTOPTJ5060"		# That's now Victoria's problem, not mine
-		trigger = {
-			is_year = 1810
-		}
-		if = {
-			limit = { NOT = { stability = -2 } }
-			add_adm_power = -100
-		}		
-		if = {
-			limit = { stability = -2 }
-			add_stability = -1
-		}
-	}	
-	option = {
 		name = "EVTOPTK5060"		# That's it. I'm dead
 		if = {
 			limit = { NOT = { stability = -2 } }
@@ -2745,7 +2792,43 @@ country_event = {
 			limit = { stability = -2 }
 			add_stability = -1
 		}
-	}		
+	}
+	option = {						# Um has a new servant 
+		trigger = {
+			religion = mak
+		}
+		name = "CometMakResponse"
+		add_fervor = 30
+	}
+	option = {						# Reminder of our science
+		trigger = {
+			religion = pawani
+		}
+		name = "CometPawaniResponse"
+		if = {
+			limit = {
+				has_dlc = "Rule Britannia"
+			}
+			change_innovativeness = 2
+		}
+		else = {
+			add_dip_power = 100
+		}
+	}
+	option = {						# Panic over new celestial body
+		trigger = {
+			religion = vaximorian
+		}
+		name = "CometVaximorianResponse"
+		if = {
+			limit = { NOT = { stability = -2 } }
+			add_adm_power = -100
+		}		
+		if = {
+			limit = { stability = -2 }
+			add_stability = -1
+		}
+	}
 }
 
 #########################################################

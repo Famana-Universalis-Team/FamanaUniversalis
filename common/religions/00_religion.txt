@@ -843,8 +843,36 @@ lathvy_group = {
 			ordic
 			lathvy
 		}
+		allowed_conversion = {
+			lathvy
+		}
 		on_convert = {
 			change_religion = rochoni
+			if = {
+				limit = {
+					NOT = {
+						calc_true_if = {
+							all_province = {
+								religion = rochoni
+								is_reformation_center = yes
+							}
+							amount = 3
+						}
+					}
+				}
+				hidden_effect = {
+					random_owned_province = {
+						limit = {
+							can_have_center_of_reformation_trigger = {
+								RELIGION = rochoni
+							}
+						}
+						change_religion = rochoni
+						add_reform_center = rochoni
+					}
+				}
+				custom_tooltip = CENTER_OF_REFORMATION_POSSIBLE
+			}
 		}
 		date = 400.1.1
 	}

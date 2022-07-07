@@ -1,0 +1,299 @@
+namespace = XalianFlavour
+
+country_event = { #Celebrations of Shir
+	id = XalianFlavour.1
+	title = XalianFlavour.1.t
+	desc = XalianFlavour.1.d
+	picture = THEATRE_eventPicture
+	is_triggered_only = yes
+
+	option = {
+		name = XalianFlavour.1.a
+		ai_chance = { factor = 1 }
+		add_prestige = 10
+		if = {
+			limit = {
+				any_country = {
+					religion = shirian
+				}
+			}
+			random_country = {
+				limit = {
+					religion = shirian
+				}
+				add_opinion = {
+					who = ROOT
+					modifier = dedicated_festival
+				}
+			}
+		}
+	}
+}
+
+country_event = { #Celebrations of Delk
+	id = XalianFlavour.2
+	title = XalianFlavour.2.t
+	desc = XalianFlavour.2.d
+	picture = THEATRE_eventPicture
+	is_triggered_only = yes
+
+	option = {
+		name = XalianFlavour.1.a
+		ai_chance = { factor = 1 }
+		add_prestige = 10
+		if = {
+			limit = {
+				any_country = {
+					religion = delkian
+				}
+			}
+			random_country = {
+				limit = {
+					religion = delkian
+				}
+				add_opinion = {
+					who = ROOT
+					modifier = dedicated_festival
+				}
+			}
+		}
+	}
+}
+
+country_event = { #Celebrations of Mor
+	id = XalianFlavour.3
+	title = XalianFlavour.3.t
+	desc = XalianFlavour.3.d
+	picture = THEATRE_eventPicture
+	is_triggered_only = yes
+
+	option = {
+		name = XalianFlavour.1.a
+		ai_chance = { factor = 1 }
+		add_prestige = 10
+		if = {
+			limit = {
+				any_country = {
+					religion = morian
+				}
+			}
+			random_country = {
+				limit = {
+					religion = morian
+				}
+				add_opinion = {
+					who = ROOT
+					modifier = dedicated_festival
+				}
+			}
+		}
+	}
+}
+
+country_event = { #Celebrations of Vin
+	id = XalianFlavour.4
+	title = XalianFlavour.4.t
+	desc = XalianFlavour.4.d
+	picture = THEATRE_eventPicture
+	is_triggered_only = yes
+
+	option = {
+		name = XalianFlavour.1.a
+		ai_chance = { factor = 1 }
+		add_prestige = 10
+		if = {
+			limit = {
+				any_country = {
+					religion = vinian
+				}
+			}
+			random_country = {
+				limit = {
+					religion = vinian
+				}
+				add_opinion = {
+					who = ROOT
+					modifier = dedicated_festival
+				}
+			}
+		}
+	}
+}
+
+country_event = { #Celebrations of Our God
+	id = XalianFlavour.5
+	title = XalianFlavour.5.t
+	desc = XalianFlavour.5.d
+	picture = THEATRE_eventPicture
+	is_triggered_only = yes
+
+	option = {
+		name = XalianFlavour.1.a
+		ai_chance = { factor = 1 }
+		add_stability = 1
+	}
+}
+
+country_event = { #Morian Polytheism
+	id = XalianFlavour.6 #why would you honestly ever do this tbh
+	title = XalianFlavour.6.t
+	desc = XalianFlavour.6.d
+	is_triggered_only = yes
+	major = yes
+	picture = EP_POLYNESIAN_MARAE_eventPicture
+
+	option = {
+		name = XalianFlavour.6.a
+		ai_chance = { factor = 1 }
+		add_prestige = -15
+	}
+}
+
+country_event = { #Good foreign diplomacy
+	id = XalianFlavour.7
+	title = XalianFlavour.7.t
+	desc = XalianFlavour.7.d
+	picture = DIPLOMACY_SIGNING_eventPicture
+	is_triggered_only = yes
+
+	option = {
+		name = XalianFlavour.7.a
+		ai_chance = { factor = 1 }
+		every_country = {
+			limit = {
+				AND = {
+					OR = {
+						religion = vinian
+						religion = delkian
+						religion = shirian
+						AND = {
+							religion = morian
+							has_global_flag = MorianPolytheism
+						}
+					}
+					is_neighbor_of = ROOT
+				}
+			}
+			add_opinion = { who = ROOT modifier = opinion_good_relations }
+		}
+	}
+}
+
+country_event = { #Shitty foreign diplomacy
+	id = XalianFlavour.8
+	title = XalianFlavour.8.t
+	desc = XalianFlavour.8.d
+	picture = PROTESTANT_CATHOLIC_DEBATE_eventPicture
+	is_triggered_only = yes
+
+	option = {
+		name = XalianFlavour.8.a
+		ai_chance = { factor = 1 }
+		every_country = {
+			limit = {
+				AND = {
+					OR = {
+						religion = vinian
+						religion = delkian
+						religion = shirian
+						AND = {
+							religion = morian
+							has_global_flag = MorianPolytheism
+						}
+					}
+					is_neighbor_of = ROOT
+				}
+			}
+			add_opinion = { who = ROOT modifier = opinion_angry }
+		}
+	}
+}
+
+country_event = { #Xalian Periodic Table
+	id = XalianFlavour.9
+	title = XalianFlavour.9.t
+	desc = XalianFlavour.9.d
+	picture = REFORM_eventPicture
+	major = yes
+	fire_only_once = yes
+
+	trigger = {
+		AND = {
+			OR = {
+				religion = morian
+				religion = shirian
+				religion = vinian
+				religion = delkian
+			}
+			adm_tech = 10
+			has_advisor = yes
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 18
+	}
+
+	option = {
+		name = XalianFlavour.9.a
+		ai_chance = { factor = 1 }
+		add_prestige = 30
+		if = {
+			limit = {
+				has_dlc = "Rule Britannia"
+			}
+			change_innovativeness = 5
+		}
+		change_price = {
+			trade_goods = gems
+			key = XALNISH_TABLE
+			value = 0.25
+			duration = -1
+		}
+		define_advisor = {
+			type = natural_scientist
+			name = "Xixi Kalinar"
+			skill = 3
+			discount = yes
+		}
+	}
+}
+
+country_event = { #Discovery of Minkoo
+	id = XalianFlavour.10
+	title = XalianFlavour.10.t
+	desc = XalianFlavour.10.d
+	picture = AULIC_COUNCIL_eventPicture
+	major = yes
+	fire_only_once = yes
+
+	trigger = {
+		AND = {
+			adm_tech = 12
+			has_institution = new_world_i
+			if = {
+				limit = {
+					has_dlc = "Rule Britannia"
+				}
+				innovativeness = 15
+			}
+			else = {
+				has_advisor = yes
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = XalianFlavour.10.a
+		ai_chance = { factor = 1 }
+		add_prestige = 50
+		change_innovativeness = 5
+	}
+}

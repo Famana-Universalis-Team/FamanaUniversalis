@@ -258,4 +258,53 @@ country_decisions = {
 			factor = 1
 		}
     }
+
+    jexus_become_morian = {
+        potential = {
+            AND = {
+                tag = JXS
+                NOT = { religion = morian }
+            }
+		}
+		allow = {
+			owns_core_province = 5411
+            owns_core_province = 5450
+		}
+		effect = {
+            change_religion = morian
+            add_prestige = 50
+            add_country_modifier = {
+                name = jexus_converted
+                duration = 3650
+            }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+    }
+
+    reform_morian_religion = {
+        potential = {
+            religion = morian
+            NOT = { has_global_flag = MorianPolytheism }
+		}
+		allow = {
+			owns_core_province = 5411
+            owns_core_province = 5441
+            owns_core_province = 5450
+		}
+		effect = {
+            add_country_modifier = {
+                name = morian_reformed
+                duration = -1
+            }
+            set_global_flag = MorianPolytheism
+            country_event = {
+                id = XalnishFlavour.6
+            }
+		}
+		ai_will_do = {
+			factor = 0
+		}
+    }
 }

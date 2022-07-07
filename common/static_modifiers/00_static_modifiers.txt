@@ -1632,23 +1632,12 @@ maliki_scholar_modifier = {
 	missionaries = 1
 }
 
-shafii_scholar_modifier = {
+jafari_scholar_modifier = {
 	religion_sub_modifier = yes # Will make icon placed next to religion modifier
 	religion = yes
 	is_scholar_modifier = yes # Tells the AI and will only show the alert if country has none
 	expire_message_type = "RELIGIOUS_SCHOLAR_EXPIRY"
-	merchants = 1
-}
-
-ismaili_scholar_modifier = {
-	religion_sub_modifier = yes # Will make icon placed next to religion modifier
-	religion = yes
-	is_scholar_modifier = yes # Tells the AI and will only show the alert if country has none
-	expire_message_type = "RELIGIOUS_SCHOLAR_EXPIRY"
-	horde_unity = 1
-	legitimacy = 1
-	republican_tradition = 0.5
-	devotion = 1
+	production_efficiency = 0.10
 }
 
 jafari_scholar_modifier = {
@@ -1656,15 +1645,23 @@ jafari_scholar_modifier = {
 	religion = yes
 	is_scholar_modifier = yes # Tells the AI and will only show the alert if country has none
 	expire_message_type = "RELIGIOUS_SCHOLAR_EXPIRY"
-	shock_damage = 0.1
+	production_efficiency = 0.10
 }
 
-zaidi_scholar_modifier = {
+ismaili_scholar_modifier = {
 	religion_sub_modifier = yes # Will make icon placed next to religion modifier
 	religion = yes
 	is_scholar_modifier = yes # Tells the AI and will only show the alert if country has none
 	expire_message_type = "RELIGIOUS_SCHOLAR_EXPIRY"
-	shock_damage_received = -0.1
+	shock_damage = 0.10
+}
+
+shafii_scholar_modifier = {
+	religion_sub_modifier = yes # Will make icon placed next to religion modifier
+	religion = yes
+	is_scholar_modifier = yes # Tells the AI and will only show the alert if country has none
+	expire_message_type = "RELIGIOUS_SCHOLAR_EXPIRY"
+	merchants = 1
 }
 
 ########################################
