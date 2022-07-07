@@ -34,7 +34,7 @@ chigim =
 
 hovaki = 
 {
-	diplomatic_reputation = 1
+	diplomatic_reputation = 2
 	improve_relation_modifier = 0.20
 	
 	allow = {
@@ -89,7 +89,7 @@ jayla =
 nima = 
 {
 	technology_cost = -0.05
-	idea_cost = -0.05
+	idea_cost = -0.10
 	
 	allow = {
 		OR = {
@@ -142,7 +142,7 @@ roh =
 
 yorlox =
 {
-	prestige_decay = -0.01
+	prestige_decay = -0.02
 	siege_ability = 0.10
 	
 	allow = {
