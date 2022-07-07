@@ -1,0 +1,280 @@
+namespace = gamesetup
+
+#Settings
+country_event = {
+    id = gamesetup.1
+    title = gamesetup.1.t
+    picture = INVENTION_eventPicture
+    desc = gamesetup.1.d
+    major = yes
+    is_triggered_only = yes
+
+	trigger = {
+		ai = no
+	}
+	option = {
+		name = gamesetup.1.a
+		ai_chance = { factor = 10 }
+        highlight = yes
+        custom_tooltip = DontChange
+	}
+    option = { #Pextoglazia Settings
+		name = gamesetup.1.b
+		ai_chance = { factor = 0 }
+        country_event = {
+			id = gamesetup.2
+		}
+	}
+	option = { #Ordica Settings
+		name = gamesetup.1.c
+		ai_chance = { factor = 0 }
+		country_event = {
+			id = gamesetup.3
+		}
+	}
+	option = { #Tonxara Settings
+		name = gamesetup.1.e
+		ai_chance = { factor = 0 }
+		country_event = {
+			id = gamesetup.4
+		}
+	}
+	option = { #Yomtanian Settings
+		name = gamesetup.1.f
+		ai_chance = { factor = 0 }
+		country_event = {
+			id = gamesetup.5
+		}
+	}
+}
+
+#Pextoglazia settings
+country_event = {
+    id = gamesetup.2
+    title = gamesetup.2.t
+    picture = INVENTION_eventPicture
+    desc = gamesetup.2.d
+    is_triggered_only = yes
+
+	trigger = {
+		ai = no
+	}
+
+	option = {
+		name = gamesetup.2.a
+		ai_chance = { factor = 1 }
+        custom_tooltip = PextoglaziaDefault
+		set_global_flag = PextoglaziaDefault
+		clr_global_flag = PextoglaziaSurvive
+		clr_global_flag = PextoglaziaDies
+		clr_global_flag = PextoglaziaDevolves
+		hidden_effect = {
+			country_event = {
+				id = gamesetup.1
+			}
+		}
+	}
+    option = {
+		name = gamesetup.2.b
+		ai_chance = { factor = 1 }
+        custom_tooltip = PextoglaziaSurvive
+		set_global_flag = PextoglaziaSurvive
+		clr_global_flag = PextoglaziaDefault
+		clr_global_flag = PextoglaziaDies
+		clr_global_flag = PextoglaziaDevolves
+		hidden_effect = {
+			country_event = {
+				id = gamesetup.1
+			}
+		}
+	}
+	option = {
+		name = gamesetup.2.c
+		ai_chance = { factor = 1 }
+        custom_tooltip = PextoglaziaCollapse
+		set_global_flag = PextoglaziaDies
+		clr_global_flag = PextoglaziaDefault
+		clr_global_flag = PextoglaziaSurvive
+		clr_global_flag = PextoglaziaDevolves
+		hidden_effect = {
+			country_event = {
+				id = gamesetup.1
+			}
+		}
+	}
+	option = {
+		name = gamesetup.2.e
+		ai_chance = { factor = 1 }
+        custom_tooltip = PextoglaziaMessyCollapse
+		set_global_flag = PextoglaziaDevolves
+		clr_global_flag = PextoglaziaDefault
+		clr_global_flag = PextoglaziaDies
+		clr_global_flag = PextoglaziaSurvive
+		hidden_effect = {
+			country_event = {
+				id = gamesetup.1
+			}
+		}
+	}
+}
+
+#Ordica settings
+country_event = {
+    id = gamesetup.3
+    title = gamesetup.3.t
+    picture = INVENTION_eventPicture
+    desc = gamesetup.3.d
+    is_triggered_only = yes
+
+	trigger = {
+		ai = no
+	}
+
+	option = {
+		name = gamesetup.3.a
+		ai_chance = { factor = 1 }
+        custom_tooltip = OrdicaDefault
+		set_global_flag = OrdicaDefault
+		clr_global_flag = OrdicaCollapse
+		clr_global_flag = OrdicaReform
+		clr_global_flag = OrdicaDecay
+		hidden_effect = {
+			country_event = {
+				id = gamesetup.1
+			}
+		}
+	}
+    option = {
+		name = gamesetup.3.b
+		ai_chance = { factor = 1 }
+        custom_tooltip = OrdicaCollapse
+		set_global_flag = OrdicaCollapse
+		clr_global_flag = OrdicaDefault
+		clr_global_flag = OrdicaReform
+		clr_global_flag = OrdicaDecay
+		hidden_effect = {
+			country_event = {
+				id = gamesetup.1
+			}
+		}
+	}
+	option = {
+		name = gamesetup.3.c
+		ai_chance = { factor = 1 }
+        custom_tooltip = OrdicaReform
+		set_global_flag = OrdicaReform
+		clr_global_flag = OrdicaDefault
+		clr_global_flag = OrdicaCollapse
+		clr_global_flag = OrdicaDecay
+		hidden_effect = {
+			country_event = {
+				id = gamesetup.1
+			}
+		}
+	}
+	option = {
+		name = gamesetup.3.e
+		ai_chance = { factor = 1 }
+        custom_tooltip = OrdicaDecay
+		set_global_flag = OrdicaDecay
+		clr_global_flag = OrdicaDefault
+		clr_global_flag = OrdicaReform
+		clr_global_flag = OrdicaCollapse
+		hidden_effect = {
+			country_event = {
+				id = gamesetup.1
+			}
+		}
+	}
+}
+
+#Fashros settings
+country_event = {
+    id = gamesetup.4
+    title = gamesetup.4.t
+    picture = INVENTION_eventPicture
+    desc = gamesetup.4.d
+    is_triggered_only = yes
+
+	trigger = {
+		ai = no
+	}
+
+	option = {
+		name = gamesetup.4.a
+		ai_chance = { factor = 1 }
+        custom_tooltip = TonxaraDefault
+		set_global_flag = TonxaraDefault
+		clr_global_flag = TonxaraFight
+		clr_global_flag = TonxaraDies
+		hidden_effect = {
+			country_event = {
+				id = gamesetup.1
+			}
+		}
+	}
+    option = {
+		name = gamesetup.4.b
+		ai_chance = { factor = 1 }
+        custom_tooltip = TonxaraSurvive
+		set_global_flag = TonxaraFight
+		clr_global_flag = TonxaraDies
+		clr_global_flag = TonxaraDefault
+		hidden_effect = {
+			country_event = {
+				id = gamesetup.1
+			}
+		}
+	}
+	option = {
+		name = gamesetup.4.c
+		ai_chance = { factor = 1 }
+        custom_tooltip = TonxaraCollapse
+		set_global_flag = TonxaraDies
+		clr_global_flag = TonxaraDefault
+		clr_global_flag = TonxaraFight
+		hidden_effect = {
+			country_event = {
+				id = gamesetup.1
+			}
+		}
+	}
+}
+
+#Yomtanians settings
+country_event = {
+    id = gamesetup.5
+    title = gamesetup.5.t
+    picture = INVENTION_eventPicture
+    desc = gamesetup.5.d
+    is_triggered_only = yes
+
+	trigger = {
+		ai = no
+	}
+
+	option = {
+		name = gamesetup.5.a
+		ai_chance = { factor = 1 }
+        custom_tooltip = yom_historical
+		set_global_flag = YomtanianDefault
+		clr_global_flag = YomtanianAhistorical
+		hidden_effect = {
+			country_event = {
+				id = gamesetup.1
+			}
+		}
+	}
+    option = {
+		name = gamesetup.5.b
+		ai_chance = { factor = 1 }
+        custom_tooltip = yom_ahistorical
+		set_global_flag = YomtanianAhistorical
+		clr_global_flag = YomtanianDefault
+		hidden_effect = {
+			country_event = {
+				id = gamesetup.1
+			}
+		}
+	}
+}

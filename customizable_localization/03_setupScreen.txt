@@ -1,0 +1,97 @@
+defined_text = {
+    name = PextoStatus
+
+	text = {
+        localisation_key = PextoDefault
+        trigger = {
+			has_global_flag = PextoglaziaDefault
+        }
+    }
+	text = {
+        localisation_key = PextoSurvive
+        trigger = {
+			has_global_flag = PextoglaziaSurvive
+        }
+    }
+	text = {
+        localisation_key = PextoDie
+        trigger = {
+			has_global_flag = PextoglaziaDies
+        }
+    }
+	text = {
+        localisation_key = PextoMessyDie
+        trigger = {
+			has_global_flag = PextoglaziaDevolves
+        }
+    }
+}
+
+defined_text = {
+    name = OrdicoStatus
+
+	text = {
+        localisation_key = OrdicoDefault
+        trigger = {
+			has_global_flag = OrdicaDefault
+        }
+    }
+	text = {
+        localisation_key = OrdicoCollapse
+        trigger = {
+			has_global_flag = OrdicaCollapse
+        }
+    }
+	text = {
+        localisation_key = OrdicoReform
+        trigger = {
+			has_global_flag = OrdicaReform
+        }
+    }
+	text = {
+        localisation_key = OrdicoDecay
+        trigger = {
+			has_global_flag = OrdicaDecay
+        }
+    }
+}
+
+defined_text = {
+    name = FashroStatus
+
+	text = {
+        localisation_key = FashroDefault
+        trigger = {
+			has_global_flag = TonxaraDefault
+        }
+    }
+	text = {
+        localisation_key = FashroFight
+        trigger = {
+			has_global_flag = TonxaraFight
+        }
+    }
+	text = {
+        localisation_key = FashroDie
+        trigger = {
+			has_global_flag = TonxaraDies
+        }
+    }
+}
+
+defined_text = {
+    name = YomStatus
+	
+	text = {
+        localisation_key = YomHistorical
+        trigger = {
+			has_global_flag = YomtanianDefault
+        }
+    }
+	text = {
+        localisation_key = YomAhistorical
+        trigger = {
+			has_global_flag = YomtanianAhistorical
+        }
+    }
+}

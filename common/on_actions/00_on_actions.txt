@@ -2,6 +2,10 @@
 
 # country
 on_startup = {
+	set_global_flag = PextoglaziaDefault
+	set_global_flag = OrdicaDefault
+	set_global_flag = TonxaraDefault
+	set_global_flag = YomtanianDefault
 	emperor = {
 		save_global_event_target_as = Emperor
 	}
@@ -39,11 +43,9 @@ on_startup = {
 		set_global_flag = rastrayvar_control_flag
 	}
 	events = {
+
 		#Yomtanian War Damage
 		yomtanian.2
-
-		#Yomtanian Historical/Ahistorical #TURN THIS BACK ON WHEN YOMS GET ADDED
-		#yomtanian.1
 
 		#Deleting Tomba (Should be removed eventually)
 		tomba.1
@@ -56,6 +58,9 @@ on_startup = {
 
 		#Stroktur fix
 		jasuaE.25
+	}
+	events = { #after the others so it spawns on top
+		gamesetup.1
 	}
 	##################################################################### FAMANA SETUP
 }

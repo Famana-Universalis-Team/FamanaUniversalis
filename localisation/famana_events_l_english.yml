@@ -1273,5 +1273,67 @@
  naravam.7.d:0 "For many years, Lathvy has remained as one religion. Although there have been scholarly debates about the source of authority in the religion and on minor topics, no faction has been more separate than the recent Rochoni Lathvites. Formed out of dissatisfied Naravamis as well as rebellious tribal chiefs in Ordica, this new denomination rejects the ecumenicalism of traditional Lathvy, operating on its own basis. It claims that Ara and Loys are equally beyond human comprehension or understanding, and so the Human world is completely irrelevant to their fight. Rather than a battleground for the Gods, Rochonis claim that the World is merely an illusion, or projection, of their struggle."
  naravam.7.a:0 "A most interesting development."
 
- achievement.3.t:0 "[GetachievementTitle]
- achievement.3.d:0 "[GetachievementDesc]
+ gamesetup.1.t:0 "Game Setup"
+ gamesetup.1.d:0 "Set up the game options in this menu.\n\n§BIn Multiplayer, all players except the Host should pick the topmost option to confirm options. The host should confirm all other players have done this before they try to change the settings.§!\n\nNOTE- THESE OPTIONS WILL NOT AFFECT PLAYERS. THIS ONLY DECIDES THE COURSE OF ACTION FOR AI.\n§RTURNING OFF DEFAULT SETTINGS WILL DISABLE ACHIEVEMENTS.§!"
+ gamesetup.1.a:0 "Confirm Options"
+ DontChange:0 "This will confirm your choices for the settings. It is usually reccomended to keep settings to default for the best in-game experience."
+
+ gamesetup.1.b:0 "Pextoglazia - [PextoStatus]"
+ PextoDefault:0 "DEFAULT"
+ PextoSurvive:0 "ALWAYS SURVIVES"
+ PextoDie:0 "ALWAYS COLLAPSES"
+ PextoMessyDie:0 "ALWAYS DEVOLVES"
+
+ gamesetup.1.c:0 "Ordica - [OrdicoStatus]"
+ OrdicoDefault:0 "DEFAULT"
+ OrdicoCollapse:0 "ALWAYS COLLAPSES"
+ OrdicoReform:0 "ALWAYS REFORMS"
+ OrdicoDecay:0 "ALWAYS DECAYS"
+
+ gamesetup.1.e:0 "Post-Fashros - [FashroStatus]"
+ FashroDefault:0 "DEFAULT"
+ FashroFight:0 "ALWAYS FIGHTS"
+ FashroDie:0 "ALWAYS COLLAPSES"
+
+ gamesetup.1.f:0 "Yomtanians - [YomStatus]"
+ YomHistorical:0 "HISTORICAL"
+ YomAhistorical:0 "AHISTORICAL"
+
+ gamesetup.2.t:0 "Pextoglazia Settings"
+ gamesetup.2.d:0 ""
+ gamesetup.2.a:0 "Default"
+ gamesetup.2.b:0 "Always Survive"
+ gamesetup.2.c:0 "Always Collapse"
+ gamesetup.2.e:0 "Always Devolve"
+ 
+ PextoglaziaDefault:0 "Pextoglazia will usually collapse, but there is a small chance of them further devolving or even surviving."
+ PextoglaziaSurvive:0 "Pextoglazia will always survive and will never face their disaster."
+ PextoglaziaCollapse:0 "Pextoglazia will always collapse."
+ PextoglaziaMessyCollapse:0 "Pextoglazia will always give independence to its subjects and seperatists, and retreat to Pomlen."
+
+ gamesetup.3.t:0 "Ordica Settings"
+ gamesetup.3.d:0 ""
+ gamesetup.3.a:0 "Default"
+ gamesetup.3.b:0 "Always Collapse"
+ gamesetup.3.c:0 "Always Reform"
+ gamesetup.3.e:0 "Always Decay"
+
+ OrdicaDefault:0 "Ordica can go down any path during the Ordican Crisis."
+ OrdicaCollapse:0 "The Ordican Crisis will always lead to Ordica's collapse."
+ OrdicaReform:0 "Ordica will always choose to reform during the Crisis into the new nation of Ordisa."
+ OrdicaDecay:0 "Ordica will always survive the Crisis, although in a weakened state."
+
+ gamesetup.4.t:0 "Post-Fashros Settings"
+ gamesetup.4.d:0 ""
+ gamesetup.4.a:0 "Default"
+ gamesetup.4.b:0 "Always Fight"
+ gamesetup.4.c:0 "Always Collapse"
+
+ TonxaraDefault:0 "The Post-Fashran Tonxaras will randomly choose to fight or die."
+ TonxaraSurvive:0 "The Tonxaras will always choose to fight their rebels."
+ TonxaraCollapse:0 "The Tonxaras will always choose to collapse."
+
+ gamesetup.5.t:0 "Yomtanian Settings"
+ gamesetup.5.d:0 ""
+ gamesetup.5.a:0 "Historical"
+ gamesetup.5.b:0 "Ahistorical"

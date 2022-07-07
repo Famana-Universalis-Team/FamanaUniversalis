@@ -2078,3 +2078,12 @@ mal_owns_provinces_in_region = {
 		AND = { has_country_flag = mal_journey_to_horn_of_africa	any_owned_province = { region = horn_of_africa_region	} }
 	}
 }
+
+default_game_settings = {
+	AND = {
+			has_global_flag = PextoglaziaDefault
+			has_global_flag = OrdicaDefault
+			has_global_flag = TonxaraDefault
+			has_global_flag = YomtanianDefault
+		}
+}
