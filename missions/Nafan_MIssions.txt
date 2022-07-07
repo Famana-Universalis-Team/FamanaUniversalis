@@ -598,7 +598,11 @@ nafa_1 = {
                 duration = -1
             }
         }
-        #provinces_to_highlight = {}
+        provinces_to_highlight = {
+            owned_by = ROOT
+            has_port = yes
+            province_has_center_of_trade_of_level = 2
+        }
     }
 
     naf_rival_the_ordics = {
@@ -763,6 +767,28 @@ nafa_2 = {
         effect = {
             if = {
                 limit = {
+                    calc_true_if = {
+                        all_known_country = {
+                            is_subject_of = ROOT
+                            capital_scope = {
+                                region = emastalia_region
+                            }
+                        }
+                        amount = 2
+                    }
+                }
+                hidden_effect = {
+                    define_advisor = {
+                        type = statesman
+                        skill = 3
+                        culture = East_Emastalian
+                        discount = yes
+                        location = 5583
+                    }
+                }
+            }
+            if = {
+                limit = {
                     OR = {
                         exists = TYD
                         exists = VAV
@@ -897,30 +923,6 @@ nafa_2 = {
             }
             emastalia_region = { add_permanent_claim = ROOT }
             custom_tooltip = ifCompleteInfluenceEst
-            hidden_effect = {
-                if = {
-                    limit = {
-                        calc_true_if = {
-                            all_known_country = {
-                                is_subject_of = ROOT
-                                capital_scope = {
-                                    region = emastalia_region
-                                }
-                            }
-                            amount = 2
-                        }
-                    }
-                    define_advisor = {
-                        type = statesman
-                        skill = 3
-                        culture = East_Emastalian
-                        religion = lathvy
-                        discount = yes
-                        location = 5583
-                    }
-                }
-            }
-            custom_tooltip = THIS_DOES_NOT_WORK_IDK_WHY
         }
         provinces_to_highlight = {
             OR = {
