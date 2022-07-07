@@ -1295,10 +1295,7 @@ nafa_3 = {
         effect = {
             add_prestige = 20
 
-            south_xalia_region = { add_permanent_claim = ROOT }
-			moria_region = { add_permanent_claim = ROOT }
-			east_xalia_region = { add_permanent_claim = ROOT }
-			north_xalia_region = { add_permanent_claim = ROOT }
+            
         }
         provinces_to_highlight = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
@@ -1318,7 +1315,11 @@ nafa_3 = {
             
         }
         effect = {
-            
+
+            south_xalia_region = { add_permanent_claim = ROOT }
+			moria_region = { add_permanent_claim = ROOT }
+			east_xalia_region = { add_permanent_claim = ROOT }
+			north_xalia_region = { add_permanent_claim = ROOT }
         }
         #provinces_to_highlight = {}
     }
@@ -1328,10 +1329,77 @@ nafa_3 = {
         required_missions = { naf_xalian_integration naf_destroy_kisholi }
         position = 8
         trigger = {
-            
+            OR = {
+                south_xalia_region = {
+                    type = all
+                    country_or_non_sovereign_subject_holds = ROOT
+                }
+                moria_region = {
+                    type = all
+                    country_or_non_sovereign_subject_holds = ROOT
+                }
+                east_xalia_region = {
+                    type = all
+                    country_or_non_sovereign_subject_holds = ROOT
+                }
+                north_xalia_region = {
+                    type = all
+                    country_or_non_sovereign_subject_holds = ROOT
+                }
+                AND = {
+                    exists = JFX
+                    NOT = {
+                        OR = {
+                            JFX = {
+                                stability = 3
+                                legitimacy = 90
+                            }
+                        }
+                    }
+                    OR = {
+                        JFX = {
+                            has_disaster = tonxara_disaster
+                        }
+                        JFX = {
+                            has_disaster_progress = {
+                                disaster = tonxara_disaster
+                                value = 50
+                            }
+                        }
+                    }
+                }
+            }
         }
         effect = {
-            
+            #Event for all xalian nations to join nafa, if they refuse we gain subjugation cbs on them
+
+            if = { #Event for jafxoi, where they can be integrated, else we gain cores and lose claims on all of their provinces in ga xal superregion
+                limit = {
+                    exists = JFX
+                    NOT = {
+                        OR = {
+                            JFX = {
+                                stability = 3
+                                legitimacy = 90
+                            }
+                        }
+                    }
+                    OR = {
+                        JFX = {
+                            has_disaster = tonxara_disaster
+                        }
+                        JFX = {
+                            has_disaster_progress = {
+                                disaster = tonxara_disaster
+                                value = 50
+                            }
+                        }
+                    }
+                }
+
+
+
+            }
         }
         #provinces_to_highlight = {}
     }

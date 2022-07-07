@@ -488,7 +488,7 @@ renaissance = {
 #######################################
 # Tonmo Numerals
 # 
-# <insert a joke about british dental health here>
+#
 #######################################
 
 new_world_i = {
@@ -737,14 +737,19 @@ printing_press = {
 			}
 			AND = {
 				is_year = 360
+				is_island = no
 				NOT = { exists = NAF }
 				culture = Kachik
-				any_province = {
-					AND = {
+				owner = {
+					any_owned_province = {
 						culture = Kachik
-						owner = { NOT = { tag = NAF } }
 					}
 				}
+			}
+			AND = {
+				is_year = 390
+				is_island = no
+				region = stroktur_region
 			}
 		}
 	}

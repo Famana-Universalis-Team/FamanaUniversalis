@@ -1323,6 +1323,9 @@ Yomtanian = { # unfinished
 
 #############################
 Pustian = { #rename
+	province = {
+		local_culture_conversion_cost = -0.20
+	}
 	Kachik = {
 		primary = RCK
 		male_names = {
@@ -1436,6 +1439,10 @@ Aresian_C = {
 
 #############################
 Komelwaiti = {
+	province = {
+		local_culture_conversion_cost = 0.33
+		local_core_creation	= 0.20
+	}
 	Elwaiti = {
 		primary = ELW
 		male_names = {
