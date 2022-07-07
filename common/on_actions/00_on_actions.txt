@@ -60,7 +60,7 @@ on_startup = {
 		jasuaE.25
 	}
 	events = { #after the others so it spawns on top
-		gamesetup.1
+		gamesetup.6
 	}
 	##################################################################### FAMANA SETUP
 }
