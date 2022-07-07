@@ -3333,50 +3333,11 @@ on_five_year_pulse_3 = {
 			}
 		}
 		random_events = {
-			100 = {
-				if = {
-					limit = {
-						NOT = { religion = shirian }
-					}
-					XalianFlavour.1
-				}
-				else = {
-					XalianFlavour.5
-				}
-			}
-			100 = {
-				if = {
-					limit = {
-						NOT = { religion = Delkian }
-					}
-					XalianFlavour.2
-				}
-				else = {
-					XalianFlavour.5
-				}
-			}
-			100 = {
-				if = {
-					limit = {
-						NOT = { religion = Morian }
-					}
-					XalianFlavour.3
-				}
-				else = {
-					XalianFlavour.5
-				}
-			}
-			100 = {
-				if = {
-					limit = {
-						NOT = { religion = Vinian }
-					}
-					XalianFlavour.4
-				}
-				else = {
-					XalianFlavour.5
-				}
-			}
+			100 = XalianFlavour.1
+			100 = XalianFlavour.2
+			100 = XalianFlavour.3
+			100 = XalianFlavour.4
+			100 = XalianFlavour.5
 			100 = XalianFlavour.7
 			100 = XalianFlavour.8
 		}

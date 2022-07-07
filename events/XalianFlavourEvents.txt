@@ -6,6 +6,10 @@ country_event = { #Celebrations of Shir
 	desc = XalianFlavour.1.d
 	picture = THEATRE_eventPicture
 	is_triggered_only = yes
+	
+	trigger = {
+		NOT = { religion = shirian }
+	}
 
 	option = {
 		name = XalianFlavour.1.a
@@ -37,6 +41,10 @@ country_event = { #Celebrations of Delk
 	picture = THEATRE_eventPicture
 	is_triggered_only = yes
 
+	trigger = {
+		NOT = { religion = delkian }
+	}
+
 	option = {
 		name = XalianFlavour.1.a
 		ai_chance = { factor = 1 }
@@ -66,6 +74,10 @@ country_event = { #Celebrations of Mor
 	desc = XalianFlavour.3.d
 	picture = THEATRE_eventPicture
 	is_triggered_only = yes
+
+	trigger = {
+		NOT = { religion = morian }
+	}
 
 	option = {
 		name = XalianFlavour.1.a
@@ -97,6 +109,10 @@ country_event = { #Celebrations of Vin
 	picture = THEATRE_eventPicture
 	is_triggered_only = yes
 
+	trigger = {
+		NOT = { religion = vinian }
+	}
+	
 	option = {
 		name = XalianFlavour.1.a
 		ai_chance = { factor = 1 }
