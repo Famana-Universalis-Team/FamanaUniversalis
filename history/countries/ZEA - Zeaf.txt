@@ -1,5 +1,5 @@
 government = monarchy
-add_government_reform = autocracy_reform
+add_government_reform = zeaf_tribe
 government_rank = 1
 mercantilism = 10
 technology_group = west_gomic_tech_gr
@@ -10,7 +10,7 @@ capital = 5162	# change to real capital
 200.1.1 = { #change to 200 or smth
 	monarch = {
 		name = "Neubaia"
-		dynasty = "Zenesharh"
+		dynasty = "Zeaf"
 		birth_date = 194.1.10
 		adm = 6
 		dip = 4

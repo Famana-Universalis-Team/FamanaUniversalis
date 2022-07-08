@@ -402,3 +402,59 @@ four_tribe_rule_m = {
 		factor = 1
 	}
 }
+
+bureaucratic_monarchy = {
+	icon = "burmonarchy"
+	allow_normal_conversion = yes
+	potential = {
+		AND = {
+			OR = {
+				government_rank = 2
+				government_rank = 3
+			}
+			OR = {
+				religion = morian
+				religion = gadan
+				religion = vinian
+				religion = shirian
+				religion = delkian
+				religion = pawani
+				AND = {
+					religion = lathvy
+					capital_scope = {
+						superregion = ga_xal_superregion
+					}
+				}
+			}
+		}
+	}
+	modifiers = {
+		burghers_influence_modifier = 0.10
+		nobles_influence_modifier = 0.05
+		state_maintenance_modifier = -0.10
+		innovativeness_gain = 0.10
+	}
+	
+	ai = {
+		factor = 1
+	}
+}
+
+zeaf_tribe = {
+	icon = "zeaf"
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	potential = {
+		tag = ZEA
+	}
+	maintain_dynasty = yes
+	modifiers = {
+		leader_cost = -0.10
+		global_regiment_cost = -0.10
+		global_unrest = -1
+	}
+	
+	ai = {
+		factor = 1
+	}
+}

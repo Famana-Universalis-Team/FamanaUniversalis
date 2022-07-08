@@ -24,6 +24,14 @@ spriteTypes = {
 		texturefile = "gfx//interface//government_reform_icons//vaxifire.dds"
 	}
 	spriteType = {
+		name = "government_reform_burmonarchy"
+		texturefile = "gfx//interface//government_reform_icons//BurMonarchy.dds"
+	}
+	spriteType = {
+		name = "government_reform_zeaf"
+		texturefile = "gfx//interface//government_reform_icons//zeaf.dds"
+	}
+	spriteType = {
 		name = "government_reform_crowncity"
 		texturefile = "gfx//interface//government_reform_icons//crowncity.dds"
 	}

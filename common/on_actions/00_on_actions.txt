@@ -3322,17 +3322,17 @@ on_five_year_pulse_2 = {
 	}
 }
 
-on_five_year_pulse_3 = {
-	if = {
-		random_events = {
-			100 = XalianFlavour.1
-			100 = XalianFlavour.2
-			100 = XalianFlavour.3
-			100 = XalianFlavour.4
-			100 = XalianFlavour.5
-			100 = XalianFlavour.7
-			100 = XalianFlavour.8
-		}
+on_five_year_pulse_3 = { #Flavour Events
+	random_events = { #Xalian Flavour
+		100 = XalianFlavour.1
+		100 = XalianFlavour.2
+		100 = XalianFlavour.3
+		100 = XalianFlavour.4
+		100 = XalianFlavour.5
+		100 = XalianFlavour.7
+		100 = XalianFlavour.8
+		100 = 0
+	}
 }
 
 on_five_year_pulse_4 = {
