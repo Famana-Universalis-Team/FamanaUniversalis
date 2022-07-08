@@ -363,10 +363,6 @@ antiash_1 = {
             antiash_jexus
 		}
 		trigger = {
-			vau_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
 			unnamed_area_21 = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -378,7 +374,6 @@ antiash_1 = {
         }
 		provinces_to_highlight = {
 			OR = {
-			area = vau_area
 			area = unnamed_area_21
 			area = pyarxu_area
 			}

@@ -937,12 +937,6 @@ country_decisions = {
 				}
 				add_permanent_claim = MSH
 			}
-			vau_area = {
-				limit = {
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = MSH
-			}
 			karmanon_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
@@ -1540,13 +1534,19 @@ country_decisions = {
 				}
 				add_permanent_claim = JAS
 			}
+			kapolia_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = JAS
+			}
 			mahansha_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
 				add_permanent_claim = JAS
 			}
-			unnamed_area_12 = {
+			shol_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
@@ -1558,13 +1558,7 @@ country_decisions = {
 				}
 				add_permanent_claim = JAS
 			}
-			unnamed_area_44 = {
-				limit = {
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = JAS
-			}
-			unnamed_area_45 = {
+			unnamed_area_12 = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
@@ -1582,43 +1576,7 @@ country_decisions = {
 				}
 				add_permanent_claim = JAS
 			}
-			unnamed_area_40 = {
-				limit = {
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = JAS
-			}
-			unnamed_area_56 = {
-				limit = {
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = JAS
-			}
-			unnamed_area_33 = {
-				limit = {
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = JAS
-			}
-			unnamed_area_32 = {
-				limit = {
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = JAS
-			}
-			unnamed_area_52 = {
-				limit = {
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = JAS
-			}
-			unnamed_area_30 = {
-				limit = {
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = JAS
-			}
-			unnamed_area_29 = {
+			unnamed_area_45 = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
@@ -1630,18 +1588,19 @@ country_decisions = {
 				}
 				add_permanent_claim = JAS
 			}
-			geccis_area = {
+			unnamed_area_44 = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
 				add_permanent_claim = JAS
 			}
-			shol_area = {
+			unnamed_area_40 = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
 				add_permanent_claim = JAS
 			}
+
 			add_prestige = 25
 		}
 		ai_will_do = {

@@ -1189,7 +1189,7 @@ country_event = { #Vaximorian conversion
 		name = maky.15.a
 		ai_chance = { factor = 20 }
 		add_prestige = -20
-		legitimacy = 10
+		add_legitimacy = 10
 	}
 	
 	option = { #Return to our roots
