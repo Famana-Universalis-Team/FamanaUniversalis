@@ -611,7 +611,7 @@ country_event = {
 }
 #four tribe reform monarch choosing
 #country_event = {
-	#id = bosisi.13
+	# id = bosisi.13
 	#title = bosisi.13.t
 	#desc = bosisi.13.d
 	#picture = AULIC_COUNCIL_eventPicture
@@ -653,5 +653,167 @@ country_event = {
 			#religion = Ganush
 			#hide_skills = yes
 		#}
-	}#
+	#}#
 #}
+
+#Make tribe flee if occupied
+country_event = {
+	id = bosisi.13
+	title = bosisi.13.t
+	desc = bosisi.13.d
+	picture = NUSANTARA_WAR_eventPicture
+
+	trigger = {
+		OR = { #Checks if province is controlled by someone (other than the tribe itself)
+			AND = {
+				NOT = { tag = LDV }
+				LDV = {
+					capital_scope = {
+						controlled_by = ROOT
+					}
+				}
+			}
+			AND = {
+				NOT = { tag = ODS }
+				ODS = {
+					capital_scope = {
+						controlled_by = ROOT
+					}
+				}
+			}
+			AND = {
+				NOT = { tag = SOY }
+				SOY = {
+					capital_scope = {
+						controlled_by = ROOT
+					}
+				}
+			}
+			AND = {
+				NOT = { tag = TIT }
+				TIT = {
+					capital_scope = {
+						controlled_by = ROOT
+					}
+				}
+			}
+			## add Jzoet here when the time comes
+		}
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				AND = {
+					NOT = { tag = LDV }
+					LDV = {
+						capital_scope = {
+							controlled_by = ROOT
+						}
+					}
+				}
+			}
+			LDV = {
+				save_event_target_as = tribe_in_question
+				capital_scope = {
+					save_event_target_as = tribe_capital
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				AND = {
+					NOT = { tag = ODS }
+					ODS = {
+						capital_scope = {
+							controlled_by = ROOT
+						}
+					}
+				}
+			}
+			ODS = {
+				save_event_target_as = tribe_in_question
+				capital_scope = {
+					save_event_target_as = tribe_capital
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				AND = {
+					NOT = { tag = SOY }
+					SOY = {
+						capital_scope = {
+							controlled_by = ROOT
+						}
+					}
+				}
+			}
+			SOY = {
+				save_event_target_as = tribe_in_question
+				capital_scope = {
+					save_event_target_as = tribe_capital
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				AND = {
+					NOT = { tag = TIT }
+					TIT = {
+						capital_scope = {
+							controlled_by = ROOT
+						}
+					}
+				}
+			}
+			TIT = {
+				save_event_target_as = tribe_in_question
+				capital_scope = {
+					save_event_target_as = tribe_capital
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = bosisi.13.a
+		ai_chance = { factor = 1 }
+		add_years_of_income = 0.10 #compensation
+		white_peace = event_target:tribe_in_question
+		event_target:tribe_capital = {
+			remove_core = event_target:tribe_in_question
+			if = {
+				limit = {
+					event_target:tribe_capital = {
+						any_neighbor_province = {
+							is_empty = yes
+						}
+					}
+				}
+				random_empty_neighbor_province = {
+					cede_province = event_target:tribe_in_question
+					add_core = event_target:tribe_in_question
+				}
+			}
+			else = { #If there is nowhere to flee, just teleport lmao
+				random_province = {
+					limit = {
+						region = east_great_desert_region 
+						is_empty = yes
+						NOT = {
+							area = area_239
+						}
+					}
+					cede_province = event_target:tribe_in_question
+					add_core = event_target:tribe_in_question
+				}
+			}
+			cede_province = ---
+		}
+	}
+}
