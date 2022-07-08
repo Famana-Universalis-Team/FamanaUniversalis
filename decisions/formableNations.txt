@@ -1855,6 +1855,9 @@ country_decisions = {
 			change_tag = RES
 			change_technology_group	= north_gomic_tech_gr
 			change_unit_type = north_gomic_tech_gr
+			hidden_effect = {
+				change_graphical_culture = westerngfx
+			}
 			if = {
 				limit = {
 					government = monarchy
@@ -2297,6 +2300,9 @@ country_decisions = {
 				}
 				change_technology_group	= north_gomic_tech_gr
 				change_unit_type = north_gomic_tech_gr
+				hidden_effect = {
+					change_graphical_culture = westerngfx
+				}
 			}
 			vordor_region = {
 				limit = {
@@ -2566,6 +2572,9 @@ country_decisions = {
 				}
 				change_technology_group	= north_gomic_tech_gr
 				change_unit_type = north_gomic_tech_gr
+				hidden_effect = {
+					change_graphical_culture = westerngfx
+				}
 			}
 			if = {
 				limit = {
@@ -3098,6 +3107,9 @@ country_decisions = {
 				}
 				change_technology_group	= gotzlic_tech_gr
 				change_unit_type = gotzlic_tech_gr
+				hidden_effect = {
+					change_graphical_culture = easterngfx
+				}
 			}
 			set_capital	= 6300
 			western_naravam_region = {
@@ -3179,7 +3191,18 @@ country_decisions = {
 			
 			change_technology_group	= north_gomic_tech_gr
 			change_unit_type = north_gomic_tech_gr
+			hidden_effect = {
+				change_graphical_culture = westerngfx
+			}
 			change_primary_culture = Mirrisan
+			if = {
+				limit = {
+					any_owned_province = {
+						culture = Umzatian
+					}
+				}
+				add_accepted_culture = Umzatian
+			}
 			if = {
 				limit = {
 					NOT = { government_rank = 2 }
