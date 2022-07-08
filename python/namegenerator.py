@@ -1,29 +1,24 @@
 import random
 
-Liq = ['m', 'n', 'r', 's', 'z']
-ObsVl = ['t', 'p', 'k', 'c']
-ObsVd = ['d', 'b', 'g', 'ğ']
-vow = ['a', 'e', 'i', 'o', 'u', 'y']
-dith = ['ai', 'ei', 'yo', 'yu']
+Plosives = ['p', 't', 'd', 'b', 'd', 'k', 'g', 'x', 'x']
+Liquids = ['m', 'n', 'r', 's', 'z', 'w', 'v', 'f']
+Vowels = ['e', 'i', 'o', 'a', 'e', 'i', 'o', 'a', 'ai', 'ei', 'ua', 'ea']
 
-with open("NameListMaxan.txt", "w") as f:
+with open("NameListXalian.txt", "w") as f:
     f.write('')
 for x in range(0,100):
     #define boolean tags
     endsWithVowel = False
-    voicedEnding = False
-    consonantEnding = False
     syllables = 0
     name = ''
-    weight = 0
     #generate syllabes
     roll = random.randint(1,100)
     print(roll)
-    if roll >= 95:
+    if roll >= 80:
         syllables = 4
-    elif roll >= 75:
+    elif roll >= 50:
         syllables = 3
-    elif roll >= 30:
+    elif roll >= 5:
         syllables = 2
     else:
         syllables = 1
@@ -33,92 +28,45 @@ for x in range(0,100):
         #First, determine syllable structure.
         roll = random.randint(1,100)
         
-        if syllables == 4:
-            weight = 40
-        elif syllables == 3:
-            weight = 15
-    
-        if roll >= 80 and endsWithVowel == False and syllables != 1:
+        if roll >= 75 and endsWithVowel == False:
             structure = 0 #v
-            endsWithVowel = True
-            weight = 0
-        elif roll >= 60-(weight/2) and syllables != 1:
+        elif roll >= 45:
             structure = 1 #cv
-            endsWithVowel = True
-            weight = 0
-        elif roll >= 40-weight and endsWithVowel == False and syllables != 1:
-            structure = 2 #vc
-            endsWithVowel = False
-            weight = 0
+        elif roll >= 30 and endsWithVowel == False:
+            structure = 2 #vl
         else:
-            structure = 3 #cvc
-            endsWithVowel = False
-            weight = 10
+            structure = 3 #cvl
         
         if structure == 0: #v
-            roll = random.randint(0,3)
-            if roll == 0:
-                name+=dith[random.randint(0,3)]
-            else:
-                name+=vow[random.randint(0,5)]
-            voicedEnding = False
-            consonantEnding = False
+            name+=Vowels[random.randint(0,11)]
+            endsWithVowel = True
         elif structure == 1: #cv
-            roll = random.randint(0,2)
-            if roll == 1 and voicedEnding == False and consonantEnding == False:
-                name+=ObsVl[random.randint(0,3)]
-            elif roll == 2 and consonantEnding == False:
-                name+=ObsVd[random.randint(0,3)]
+            if endsWithVowel == False: #then the last syllable ended with a liquid
+                name+=Plosives[random.randint(0,8)]
             else:
-                name+=Liq[random.randint(0,4)]
-            roll = random.randint(0,3)
-            if roll == 0:
-                name+=dith[random.randint(0,3)]
+                roll = random.randint(0,1)
+                if roll == 0:
+                    name+=Plosives[random.randint(0,8)]
+                else:
+                    name+=Liquids[random.randint(0,7)]
+            name+=Vowels[random.randint(0,11)]
+            endsWithVowel = True
+        elif structure == 2: #vl
+            name+=Vowels[random.randint(0,11)]
+            name+=Liquids[random.randint(0,7)]
+            endsWithVowel = False
+        else: #cvl
+            if endsWithVowel == False: #then the last syllable ended with a liquid
+                name+=Plosives[random.randint(0,8)]
             else:
-                name+=vow[random.randint(0,5)]
-            voicedEnding = False
-            consonantEnding = False
-        elif structure == 2: #vc
-            roll = random.randint(0,3)
-            if roll == 0:
-                name+=dith[random.randint(0,3)]
-            else:
-                name+=vow[random.randint(0,5)]
-            roll = random.randint(0,2)
-            if roll == 1:
-                name+=ObsVl[random.randint(0,3)]
-                voicedEnding = False
-                consonantEnding = True
-            elif roll == 2:
-                name+=ObsVd[random.randint(0,3)]
-                voicedEnding = True
-                consonantEnding = True
-            else:
-                name+=Liq[random.randint(0,4)]
-                voicedEnding = True
-                consonantEnding = False
-        else: #cvc
-            roll = random.randint(0,2)
-            if roll == 1 and voicedEnding == False and consonantEnding == False:
-                name+=ObsVl[random.randint(0,3)]
-            elif roll == 2 and consonantEnding == False:
-                name+=ObsVd[random.randint(0,3)]
-            else:
-                name+=Liq[random.randint(0,4)]
-            name+=vow[random.randint(0,5)]
-            roll = random.randint(0,2)
-            if roll == 1:
-                name+=ObsVl[random.randint(0,3)]
-                voicedEnding = False
-                consonantEnding = True
-            elif roll == 2:
-                name+=ObsVd[random.randint(0,3)]
-                voicedEnding = True
-                consonantEnding = True
-            else:
-                name+=Liq[random.randint(0,4)]
-                voicedEnding = True
-                consonantEnding = False
+                roll = random.randint(0,1)
+                if roll == 0:
+                    name+=Plosives[random.randint(0,8)]
+                else:
+                    name+=Liquids[random.randint(0,7)]
+            name+=Vowels[random.randint(0,11)]
+            name+=Liquids[random.randint(0,7)]
+            endsWithVowel = False
     name = name.replace("nm", "n")
     name = name.replace("mn", "n")
     name = name.replace("rr", "l")
@@ -127,7 +75,7 @@ for x in range(0,100):
     name = name.replace("rm", "l")
     print(name)
     #finally, write to file
-    with open("NameListMaxan.txt", "a") as f:
+    with open("NameListXalian.txt", "a") as f:
         f.write(f'{name.title()} ')
         
         
@@ -147,3 +95,9 @@ for x in range(0,100):
     syllables = 1-4 at 30%, 45%, 20%, 5% distribution
     structure is CVC, VC, CV, V at 40, 20, 20, 20
     two vowels cannot follow each other'''
+    
+'''XALIAN - CVL
+    Words seem to include x, l, k, m, n, t, p, s, z, j, g (kh?), d, b, w, v, f
+    Vowels: i, a, o, e
+    Dithongs: ea, ua (wa), ei, ai
+    structure is V, CV, VL, CVL at 25, 30, 20, 25'''
