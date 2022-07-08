@@ -62,7 +62,7 @@ country_event = {
 	}
 
 	option = {
-		name = gamesetup.2.a
+		name = gamesetup.2.a ## Implemented
 		ai_chance = { factor = 1 }
         custom_tooltip = PextoglaziaDefault
 		set_global_flag = PextoglaziaDefault
@@ -76,7 +76,7 @@ country_event = {
 		}
 	}
     option = {
-		name = gamesetup.2.b
+		name = gamesetup.2.b ## Implemented
 		ai_chance = { factor = 1 }
         custom_tooltip = PextoglaziaSurvive
 		set_global_flag = PextoglaziaSurvive
@@ -90,7 +90,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = gamesetup.2.c
+		name = gamesetup.2.c ## Implemented
 		ai_chance = { factor = 1 }
         custom_tooltip = PextoglaziaCollapse
 		set_global_flag = PextoglaziaDies
@@ -202,7 +202,7 @@ country_event = {
 	}
 
 	option = {
-		name = gamesetup.4.a
+		name = gamesetup.4.a ## Implemented
 		ai_chance = { factor = 1 }
         custom_tooltip = TonxaraDefault
 		set_global_flag = TonxaraDefault
@@ -215,7 +215,7 @@ country_event = {
 		}
 	}
     option = {
-		name = gamesetup.4.b
+		name = gamesetup.4.b ## Implemented
 		ai_chance = { factor = 1 }
         custom_tooltip = TonxaraSurvive
 		set_global_flag = TonxaraFight
@@ -228,7 +228,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = gamesetup.4.c
+		name = gamesetup.4.c ## Implemented
 		ai_chance = { factor = 1 }
         custom_tooltip = TonxaraCollapse
 		set_global_flag = TonxaraDies
@@ -280,7 +280,8 @@ country_event = {
 	}
 }
 
-#make sure only the host gets it - currently doesnt work as a random player gets it instead.
+#make sure only the host gets it -
+#currently doesnt work as a random player gets it instead.
 country_event = {
     id = gamesetup.6
 	hidden = yes

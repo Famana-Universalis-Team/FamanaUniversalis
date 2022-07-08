@@ -1021,7 +1021,7 @@ gomic_pagan_group = {
 	}
 	
 	vaximorian = {
-		icon = 1
+		icon = 32
 		color = { 108 184 180 }
 		personal_deity = yes
 		province = {
@@ -1432,8 +1432,8 @@ Agmagozi = {
 		heretic = { GISHIAN JINISH }
 	}
 
-	urbaxan = { # Fix icons and colors
-		icon = 19
+	urbaxan = { # Fix colors
+		icon = 33
 		color = { 39 128 29 }
 
 		country = {

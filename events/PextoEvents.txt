@@ -1472,6 +1472,8 @@ country_event = { #pexto save launch event
 		NOT = { has_country_flag = pextocivilwar }
         NOT = { has_country_flag = survived_fall }
         NOT = { has_country_flag = pex_collapse_prevented }
+		NOT = { has_global_flag = PextoglaziaDies }
+		NOT = { has_global_flag = PextoglaziaDevolves }
 		NOT = {
 			is_year = 250
 		}
@@ -1546,5 +1548,34 @@ country_event = { #Disaster averted
 			name = pex_averted_disaster
 			duration = 5475
 		}
+	}
+}
+
+country_event = { #Railroad pexto save
+	id = pexto.42
+	hidden = yes
+	fire_only_once = yes
+
+	trigger = {
+		tag = PEX
+		ai = yes
+		was_player = no
+		is_year = 220
+		has_global_flag = PextoglaziaSurvive
+	}
+	
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	immediate = {
+		country_event = {
+			id = pexto.41
+		}
+	}
+
+	option = {
+		name = pexto.40.a
+		ai_chance = { factor = 1 }
 	}
 }

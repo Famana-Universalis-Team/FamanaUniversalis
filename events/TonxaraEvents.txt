@@ -223,7 +223,13 @@ country_event = { #disaster start event
 
     option = {
         name = tonxara.6.a
-        ai_chance = { factor = 1 }
+        ai_chance = {
+            factor = 4
+            modifier = {
+                factor = 0
+                has_global_flag = TonxaraDies
+            }
+        }
         custom_tooltip = tonxara_disaster_fight_tt
         add_stability = -5
         add_legitimacy = -15
@@ -246,8 +252,14 @@ country_event = { #disaster start event
     }
     option = { #Kill your country and play a releasable
         name = tonxara.6.b
-        ai_chance = { factor = 0 }
-        custom_tooltip = tonxara_you_should_release_yourself_NOW_tooltip
+        ai_chance = {
+            factor = 1
+            modifier = {
+                factor = 0
+                has_global_flag = TonxaraFight
+            }
+        }
+        custom_tooltip = tonxara_you_should_release_yourself_NOW_tooltip #lmao
         hidden_effect = {
             country_event = {
                 id = tonxara.9 #Event that lets you pick releasable, alternatively lets you go back.
