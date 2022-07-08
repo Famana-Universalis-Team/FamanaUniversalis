@@ -36,3 +36,8 @@ bad_xalnish_diplomats = {
 	opinion = -10
 	yearly_decay = 1
 }
+
+abandoned_mak_vaximor = {
+	opinion = -50
+	yearly_decay = 2
+}

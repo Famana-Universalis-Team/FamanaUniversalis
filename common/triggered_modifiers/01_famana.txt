@@ -11,20 +11,21 @@ gomic_religious_unity = {
                 current_age = age_of_reformation
             }
             OR = {
-			religion = western_oppian
-			religion = eastern_oppian
-			religion = reformed_oppian
-			religion = shirian
-			religion = delkian
-			religion = vinian
-			religion = egr
-			religion = bamali
-			religion = aresian
-			religion = bilik
-			religion = gadan
-            religion = mak
-            religion = pawani
-		}
+			    religion = western_oppian
+			    religion = eastern_oppian
+			    religion = reformed_oppian
+			    religion = shirian
+			    religion = delkian
+			    religion = vinian
+			    religion = egr
+			    religion = bamali
+			    religion = aresian
+			    religion = bilik
+			    religion = gadan
+                religion = mak
+                religion = vaximorian
+                religion = pawani
+		    }
         }
 	}
 

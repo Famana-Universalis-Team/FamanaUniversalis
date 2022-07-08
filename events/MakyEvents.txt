@@ -1165,3 +1165,56 @@ country_event = {
 		add_prestige = 5
 	}
 }	
+
+country_event = { #Vaximorian conversion
+	id = maky.15
+	title = maky.15.t
+	desc = maky.15.d
+	picture = PRAYING_eventPicture
+	fire_only_once = yes
+	
+	trigger = {
+		is_year = 212
+		NOT = {
+			is_year = 220
+		}
+		tag = VAX
+	}
+	
+	mean_time_to_happen = {
+		months = 36
+	}
+	
+	option = { #Submit to mak
+		name = maky.15.a
+		ai_chance = { factor = 20 }
+		add_prestige = -20
+		legitimacy = 10
+	}
+	
+	option = { #Return to our roots
+		name = maky.15.b 
+		ai_chance = { factor = 1 }
+		add_stability = -1
+		change_religion = vaximorian
+		if = {
+			limit = {
+				owns = 5138
+			}
+			5138 = {
+				change_religion = vaximorian
+			}
+		}
+		every_country = {
+			limit = {
+				capital_scope = {
+					region = maky_region
+				}
+			}
+			add_opinion = {
+				who = ROOT
+				modifier = abandoned_mak_vaximor
+			}
+		}
+	}
+}	

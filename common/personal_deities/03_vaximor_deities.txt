@@ -6,7 +6,7 @@ nivolo = {
 	discipline = 0.05
 	
 	allow = { religion = vaximorian }
-	sprite = 12
+	sprite = 11
 	
 	ai_will_do = {
 		factor = 1
@@ -32,7 +32,7 @@ halogan = {
 	siege_ability = 0.15
 	
 	allow = { religion = vaximorian }
-	sprite = 13
+	sprite = 11
 	
 	ai_will_do = {
 		factor = 1
@@ -52,7 +52,7 @@ tarkoo = {
 	inflation_reduction = 0.1
 	
 	allow = { religion = vaximorian }
-	sprite = 14
+	sprite = 11
 	
 	ai_will_do = {
 		factor = 1
@@ -72,7 +72,7 @@ fiskoo = {
 	development_cost = -0.1
 	
 	allow = { religion = vaximorian }
-	sprite = 15
+	sprite = 11
 	
 	ai_will_do = {
 		factor = 1
@@ -92,7 +92,7 @@ yastkoo = {
 	global_institution_spread = 0.20
 	
 	allow = { religion = vaximorian }
-	sprite = 16
+	sprite = 11
 	
 	ai_will_do = {
 		factor = 1
@@ -108,7 +108,7 @@ um = {
 	core_creation = -0.10
 	
 	allow = { religion = vaximorian }
-	sprite = 17
+	sprite = 11
 	
 	ai_will_do = {
 		factor = 1
@@ -132,7 +132,7 @@ chisuliv = {
 	ship_durability = 0.10
 	
 	allow = { religion = vaximorian }
-	sprite = 17
+	sprite = 11
 	
 	ai_will_do = {
 		factor = 1
