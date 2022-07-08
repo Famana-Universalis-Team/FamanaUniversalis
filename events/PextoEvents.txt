@@ -1474,6 +1474,7 @@ country_event = { #pexto save launch event
         NOT = { has_country_flag = pex_collapse_prevented }
 		NOT = { has_global_flag = PextoglaziaDies }
 		NOT = { has_global_flag = PextoglaziaDevolves }
+		NOT = { has_global_flag = PextoglaziaSurvive }
 		NOT = {
 			is_year = 250
 		}

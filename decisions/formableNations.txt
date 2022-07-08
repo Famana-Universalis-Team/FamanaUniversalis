@@ -404,7 +404,7 @@ country_decisions = {
 				OR = {
 					religion = western_oppian
 					religion = reformed_oppian
-					religion = lathvy
+					religion_group = lathvy_group
 				}
 				NOT = { exists = OPP }
 				was_never_end_game_tag_trigger = yes
@@ -509,7 +509,7 @@ country_decisions = {
 				OR = {
 					religion = eastern_oppian
 					religion = reformed_oppian
-					religion = lathvy
+					religion_group = lathvy_group
 				}
 				NOT = { exists = OPP }
 				was_never_end_game_tag_trigger = yes
@@ -1319,15 +1319,18 @@ country_decisions = {
 		potential = {
 			AND = {
 				NOT = { exists = GAX }
+				NOT = {
+					AND = {
+						tag = PYA
+						religion_group = lathvy_group
+					}
+				}
 				culture_group = Xalian
 				was_never_end_game_tag_trigger = yes
 				OR = {
-					religion = morian
-					religion = shirian
+					religion_group = xalian_group
 					religion = gadan
-					religion = vinian
-					religion = delkian
-					religion = lathvy
+					religion_group = lathvy_group
 				}
 			}
 		}
@@ -2296,7 +2299,7 @@ country_decisions = {
 			}
 			if = {
 				limit = {
-					religion = lathvy
+					religion_group = lathvy_group
 				}
 				change_technology_group	= north_gomic_tech_gr
 				change_unit_type = north_gomic_tech_gr
@@ -2568,7 +2571,7 @@ country_decisions = {
 			}
 			if = {
 				limit = {
-					religion = lathvy
+					religion_group = lathvy_group
 				}
 				change_technology_group	= north_gomic_tech_gr
 				change_unit_type = north_gomic_tech_gr
@@ -3103,7 +3106,7 @@ country_decisions = {
 			}
 			if = {
 				limit = {
-					religion = lathvy
+					religion_group = lathvy_group
 				}
 				change_technology_group	= gotzlic_tech_gr
 				change_unit_type = gotzlic_tech_gr
@@ -3415,12 +3418,10 @@ country_decisions = {
 				}
 				OR = {
 					religion = gadan
-					religion = reformed_oppian
-					religion = western_oppian
-					religion = eastern_oppian
+					religion_group = oppian_group
 					religion = animism
 					religion = bosisi
-					religion = lathvy
+					religion_group = lathvy_group
 				}
 				NOT = { exists = MKY }
 				NOT = { exists = MSD }
@@ -3515,11 +3516,11 @@ country_decisions = {
 			}
 			else_if = {
 				limit = {
-					religion = lathvy
+					religion_group = lathvy_group
 				}
 				num_of_owned_provinces_with = {
 					value = 10
-					religion = lathvy
+					religion_group = lathvy_group
 					region = maky_region
 				}
 			}
@@ -4628,6 +4629,94 @@ country_decisions = {
 					NOT = { owned_by = ROOT }
 				}
 				add_permanent_claim = LKS
+			}
+			add_prestige = 25
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	pyarxinisan_nation = {
+		major = yes
+		potential = {
+			AND = {
+				NOT = { exists = PXS }
+				tag = PYA
+				was_never_end_game_tag_trigger = yes
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 5404
+				province_id = 5386
+				province_id = 5388
+				province_id = 5384
+				province_id = 5431
+				province_id = 5467
+				province_id = 5396
+				province_id = 5377
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				is_city = no
+			}
+		}
+		allow = {
+			adm_tech = 10
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			religion_group = lathvy_group
+			owns_core_province = 5404
+			owns_core_province = 5386
+			owns_core_province = 5388
+			owns_core_province = 5384
+			owns_core_province = 5431
+			owns_core_province = 5467
+			owns_core_province = 5396
+			owns_core_province = 5377
+			num_of_owned_provinces_with = {
+				value = 30
+				superregion = ga_xal_superregion
+		    }
+		}
+		effect = {
+			#if = {
+			#	limit = { has_custom_ideas = no }
+			#	country_event = { id = ideagroups.1 } #Swap Ideas
+			#}
+			restore_country_name = yes
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
+			change_tag = PXS
+			5404 = {
+				move_capital_effect = yes
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			east_xalia_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = GAX
+			}
+			north_xalia_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = GAX
+			}
+			moria_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = GAX
 			}
 			add_prestige = 25
 		}

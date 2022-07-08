@@ -207,7 +207,10 @@ PYA_ideas = {
 	}	
 
 	trigger = {
-		tag = PYA
+		OR = {
+			tag = PYA
+			tag = PXS
+		}
 	}
 	free = yes
 	

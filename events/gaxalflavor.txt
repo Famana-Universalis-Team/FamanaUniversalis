@@ -51,7 +51,8 @@ country_event = {
 		name = gaxalf.1.b
 		ai_chance = { factor = 30 }
 		every_known_country = {
-			limit = { religion = lathvy
+			limit = {
+				religion_group = lathvy_group
 				capital_scope = {
 					superregion = ga_xal_superregion
 				}
