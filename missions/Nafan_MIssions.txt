@@ -1892,8 +1892,7 @@ nafa_4 = {
             upper_oppia_region = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
-			}
-            custom_tooltip = but_ONLY_colonized_somehow
+			} #ONLY COLONIZED ????
             lower_oppia_region = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
