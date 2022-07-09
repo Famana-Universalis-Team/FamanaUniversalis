@@ -14,9 +14,17 @@ fas_1 = {
 		trigger = {
 			at_war_with_religious_enemy = yes
 			army_size_percentage = 1.0
-			custom_trigger_tooltip = {
-				tooltip = RAISED_TONMO_HORDE_TOOLTIP
-				has_country_flag = tonmo_raised_horde_flag
+			if = {
+				limit = {
+					has_dlc = "Rule Britannia"
+				}
+				custom_trigger_tooltip = {
+					tooltip = RAISED_TONMO_HORDE_TOOLTIP
+					has_country_flag = tonmo_raised_horde_flag
+				}
+			}
+			else = {
+				num_of_cavalry = 80
 			}
 		}
 		effect = {

@@ -1097,3 +1097,20 @@ morian_reformed = {
     tolerance_heretic = 2
     diplomatic_reputation = 2
 }
+
+naf_legions = {
+    yearly_army_professionalism = 0.005
+    drill_gain_modifier = 0.25
+}
+
+naf_integrate_xal_b = {
+    all_power_cost = -0.05
+    yearly_corruption = -0.05
+    advisor_pool = 1
+}
+
+naf_desperate_struggle = {
+    land_morale = -0.10
+    naval_morale = -0.10
+    global_trade_power = -0.20
+}

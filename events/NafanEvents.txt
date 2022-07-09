@@ -80,3 +80,225 @@ country_event = {
         add_yearly_manpower = 1.5
     }
 }
+
+country_event = {
+    id = nafa.4
+    title = nafa.4.t
+    desc = nafa.4.d
+    picture = MILITARY_CAMP_eventPicture
+    is_triggered_only = yes
+    major = yes
+
+    option = { #Accept
+        name = nafa.4.a
+        ai_chance = {
+            factor = 4
+            modifier = {
+                factor = 10
+                tag = JFX
+                has_disaster = tonxara_disaster
+            }
+            modifier = {
+                factor = 4
+                tag = JFX
+                has_disaster_progress = {
+                    disaster = tonxara_disaster
+                    value = 50
+                }
+            }
+            modifier = {
+                factor = 2
+                NOT = {
+                    border_distance = {
+                        who = NAF
+                        distance = 50
+                    }
+                }
+            }
+            modifier = {
+                factor = 2
+                religion_group = lathvy_group
+            }
+            modifier = {
+                factor = 4
+                religious_school = {
+                    group = lathvy_group
+                    school = nafan_school
+                }
+            }
+            modifier = {
+                factor = 2.5
+                NOT = {
+                    total_development = 50
+                }
+            }
+        }
+        NAF = {
+            inherit = ROOT
+        }
+    }
+
+    option = { #Decline
+        name = nafa.4.b
+        ai_chance = {
+            factor = 1
+            modifier = {
+                factor = 1000
+                OR = {
+                    tag = GAX
+                    tag = PXS
+                    AND = {
+                        tag = JFX
+                        NOT = {
+                            OR = {
+                                has_disaster_progress = {
+                                    disaster = tonxara_disaster
+                                    value = 50
+                                }
+                                has_disaster = tonxara_disaster
+                            }
+                        }
+                    }
+                }
+            }
+            modifier = {
+                factor = 4
+                OR = {
+                    tag = MOR
+                    tag = DEL
+                    tag = MSH
+                    tag = VNA
+                }
+            }
+            modifier = {
+                factor = 2
+                total_development = 250
+                NOT = {
+                    tag = JFX
+                }
+            }
+            modifier = {
+                factor = 10
+                total_development = 500
+                NOT = {
+                    tag = JFX
+                }
+            }
+            modifier = {
+                factor = 1000
+                government_rank = 3
+            }
+            modifier = {
+                factor = 2.5
+                government_rank = 2
+            }
+            modifier = {
+                factor = 10
+                OR = {
+                    is_rival = NAF
+                    is_enemy = NAF
+                }
+            }
+            modifier = {
+                factor = 10
+                num_of_owned_provinces_with = {
+                    value = 10
+                    NOT = {
+                        OR = {
+                            region = south_xalia_region
+                            region = moria_region
+                            region = east_xalia_region
+                            region = north_xalia_region
+                        }
+                    }
+                }
+            }
+            modifier = {
+                factor = 5
+                NAF = {
+                    NOT = {
+                        total_development = 1000
+                    }
+                }
+            }
+            modifier = {
+                factor = 10
+                NAF = {
+                    NOT = {
+                        total_development = 500
+                    }
+                }
+            }
+            modifier = {
+                factor = 1000
+                NAF = {
+                    NOT = {
+                        total_development = 250
+                    }
+                }
+            }
+        }
+        custom_tooltip = NafaGetCoresOnOurLand
+        hidden_effect = {
+            every_owned_province = {
+                limit = {
+                    OR = {
+                        region = south_xalia_region
+                        region = moria_region
+                        region = east_xalia_region
+                        region = north_xalia_region
+                    }
+                }
+                remove_claim = NAF
+                add_core = NAF
+            }
+        }
+        add_country_modifier = {
+            name = naf_desperate_struggle
+            duration = 9125
+        }
+    }
+}
+
+country_event = { #subject get cores
+    id = nafa.5
+    title = nafa.5.t
+    desc = nafa.5.d
+    picture = CITY_VIEW_eventPicture
+    fire_only_once = yes
+    hidden = yes
+
+    mean_time_to_happen = {
+        months = 1
+    }
+
+    trigger = {
+        is_subject_of = NAF
+        any_owned_province = {
+            OR = {
+                region = upper_oppia_region
+                region = lower_oppia_region
+            }
+        }
+    }
+
+    immediate = {
+        every_province = {
+            limit = {
+                OR = {
+                    region = upper_oppia_region
+                    region = lower_oppia_region
+                }
+                NOT = {
+                    owned_by = NAF
+                }
+            }
+            add_core = ROOT
+        }
+    }
+
+    option = {
+        name = nafa.5.a
+        ai_chance = { factor = 1 }
+    }
+}

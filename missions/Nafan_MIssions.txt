@@ -969,7 +969,6 @@ nafa_2 = {
                     change_culture = East_Emastalian
                 }
             }
-            west_emastalia_region = { add_permanent_claim = ROOT }
             if = {
                 limit = {
                     NOT = {
@@ -978,6 +977,7 @@ nafa_2 = {
                 }
                 add_accepted_culture = East_Emastalian
             }
+            west_emastalia_region = { add_permanent_claim = ROOT }
         }
         provinces_to_highlight = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
@@ -1029,7 +1029,7 @@ nafa_2 = {
             
         }
         effect = {
-            
+            custom_tooltip = ifWeHaveAFlagShipAndSomeOtherStuffGetRidiculousBonusesToIt
         }
         #provinces_to_highlight = {}
     }
@@ -1324,8 +1324,11 @@ nafa_3 = {
         }
         effect = {
             add_prestige = 20
-
-            
+            add_war_exhaustion = -10
+            add_country_modifier = {
+                name = naf_legions
+                duration = -1
+            }            
         }
         provinces_to_highlight = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
@@ -1342,16 +1345,74 @@ nafa_3 = {
         required_missions = { naf_defeat_xolnomarka }
         position = 7
         trigger = {
-            
+            custom_trigger_tooltip = {
+                tooltip = nafaXalIntegrateTooltip
+                any_owned_province = {
+                    OR = {
+                        region = south_xalia_region
+                        region = moria_region
+                        region = east_xalia_region
+                        region = north_xalia_region
+                    }
+                    has_owner_accepted_culture = yes
+                }
+            }
+            num_of_owned_provinces_with	= {
+                value = 5
+                OR = {
+                    region = south_xalia_region
+                    region = moria_region
+                    region = east_xalia_region
+                    region = north_xalia_region
+                }
+                religion_group = lathvy
+            }
+            num_of_owned_provinces_with	= {
+                value = 3
+                OR = {
+                    region = south_xalia_region
+                    region = moria_region
+                    region = east_xalia_region
+                    region = north_xalia_region
+                }
+                OR = {
+                    has_building = courthouse
+                    has_building = town_hall
+                }
+            }
+            adm_power = 150
         }
         effect = {
-
+            add_adm_power = -150
+            if = {
+                limit = {
+                    NOT = {
+                        adm = 6
+                    }
+                }
+                change_adm = 1
+            }
+            else = {
+                add_legitimacy = 10
+            }
+            add_country_modifier = {
+                name = naf_integrate_xal_b
+                duration = 21900
+            }
             south_xalia_region = { add_permanent_claim = ROOT }
 			moria_region = { add_permanent_claim = ROOT }
 			east_xalia_region = { add_permanent_claim = ROOT }
 			north_xalia_region = { add_permanent_claim = ROOT }
         }
-        #provinces_to_highlight = {}
+        provinces_to_highlight = {
+            OR = {
+                region = south_xalia_region
+                region = moria_region
+                region = east_xalia_region
+                region = north_xalia_region
+            }
+            owned_by = ROOT
+        }
     }
 
     naf_dominate_jafxoi = {
@@ -1401,37 +1462,47 @@ nafa_3 = {
             }
         }
         effect = {
-            #Event for all xalian nations to join nafa, if they refuse we gain subjugation cbs on them
-
-            if = { #Event for jafxoi, where they can be integrated, else we gain cores and lose claims on all of their provinces in ga xal superregion
-                limit = {
-                    exists = JFX
-                    NOT = {
-                        OR = {
-                            JFX = {
-                                stability = 3
-                                legitimacy = 90
+            bava_area = {
+				add_permanent_claim = ROOT
+			}
+            makykay_area = {
+				add_permanent_claim = ROOT
+			}
+            vaximor_area = {
+				add_permanent_claim = ROOT
+			}
+            arlenta_region = {
+				add_permanent_claim = ROOT
+			}
+            custom_tooltip = nafaAnnexXalEvent
+            hidden_effect = {
+                every_known_country = {
+                    limit = {
+                        capital_scope = {
+                            OR = {
+                                region = south_xalia_region
+                                region = moria_region
+                                region = east_xalia_region
+                                region = north_xalia_region
                             }
                         }
                     }
-                    OR = {
-                        JFX = {
-                            has_disaster = tonxara_disaster
-                        }
-                        JFX = {
-                            has_disaster_progress = {
-                                disaster = tonxara_disaster
-                                value = 50
-                            }
-                        }
+                    country_event = {
+                        id = nafa.4
+                        days = 30
                     }
                 }
-
-
-
             }
         }
-        #provinces_to_highlight = {}
+        provinces_to_highlight = {
+            OR = {
+                region = south_xalia_region
+                region = moria_region
+                region = east_xalia_region
+                region = north_xalia_region
+            }
+            NOT = { country_or_non_sovereign_subject_holds = ROOT }
+        }
     }
 
     naf_intervene_in_oppia = {
@@ -1439,23 +1510,77 @@ nafa_3 = {
         required_missions = { naf_dominate_jafxoi }
         position = 10
         trigger = {
-            
+            bava_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+            makykay_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+            vaximor_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+            arlenta_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
         }
         effect = {
-            
+            custom_tooltip = something_diplo
+
+            hidden_effect = {
+                every_known_country = {
+                    limit = {
+                        culture_group = Oppian
+                    }
+                    reverse_add_casus_belli = {
+                        target = NAF
+                        type = cb_vassalize_mission
+                        months = 300
+                    }
+                }
+            }
+            custom_tooltip = naf_subjugate_oppia_tt
+            custom_tooltip = nafaOppianCoresTooltip
+            set_country_flag = nafaOppianVassalFlag
+            upper_oppia_region = {
+				add_permanent_claim = ROOT
+			}
+            lower_oppia_region = {
+				add_permanent_claim = ROOT
+			}
+            laglon_region = {
+				add_permanent_claim = ROOT
+			}
+            unnamed_pexto_10 = {
+                add_permanent_claim = ROOT
+            }
         }
-        #provinces_to_highlight = {}
+        provinces_to_highlight = {
+            OR = {
+                area = vaximor_area
+                area = makykay_area
+                area = bava_area
+                region = arlenta_region
+            }
+            NOT = { country_or_non_sovereign_subject_holds = ROOT }
+        }
     }
 
-    naf_lessons_from_old_empires = {
+    naf_lessons_from_old_empires = { #Integrate oppia and stuff
         icon = mission_weather_the_troubles
         required_missions = { naf_intervene_in_oppia }
         position = 12
         trigger = {
-            
+            #Have a vassal control all of oppia OR control it yourself
+            #If it is a vassal, integrate it for free
+            #Else, get some other bonus
         }
         effect = {
             
+            custom_tooltip = ifNutiaHelpedUsGainControlThenDiploBonus
         }
         #provinces_to_highlight = {}
     }
@@ -1741,7 +1866,7 @@ nafa_4 = {
             
         }
         effect = {
-            
+            custom_tooltip = annexVanomaMaybe
         }
         #provinces_to_highlight = {}
     }
@@ -1764,7 +1889,15 @@ nafa_4 = {
         required_missions = { naf_intervene_in_oppia }
         position = 11
         trigger = {
-            
+            upper_oppia_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+            custom_tooltip = but_ONLY_colonized_somehow
+            lower_oppia_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
         }
         effect = {
             
