@@ -161,6 +161,7 @@ age_1_trig_modifier = { #despair
     envoy_travel_time = 0.25
     land_forcelimit_modifier = -0.10
     global_supply_limit_modifier = -0.10
+    artillery_power = -0.33
 }
 
 age_2_trig_modifier = { #eclipse
@@ -177,6 +178,7 @@ age_2_trig_modifier = { #eclipse
     tolerance_own = 1
     governing_capacity_modifier = 0.1
     church_influence_modifier = 0.05
+    artillery_power = -0.20
 }
 
 age_3_trig_modifier = { #titans
@@ -194,6 +196,7 @@ age_3_trig_modifier = { #titans
     land_forcelimit_modifier = 0.10
     governing_capacity_modifier = 0.25
     development_cost = 0.05
+    artillery_power = -0.1
 }
 
 age_4_trig_modifier = { #old legends

@@ -106,9 +106,12 @@ technology = {
 
 	#Pike Square
 	
-
+	
 	land_morale = 	0.5
 	military_tactics 	= 	0.25
+	
+	enable = houfnice
+
 }
 
 technology = {
@@ -198,11 +201,8 @@ technology = {
 	}
 	
 	#The limber
-	artillery_fire 		= 	1
-	artillery_shock 	=	0.05
 	military_tactics 	= 	0.25
 	enable = large_cast_bronze_mortar 
-	enable = houfnice
 }
 
 technology = {
@@ -257,6 +257,8 @@ technology = {
 	
 	#Reiter
 	maneuver_value 		= 	0.25
+
+	artillery_fire 		= 	1.0
 
 	enable = hungarian_hussar
 	enable = ottoman_spahi		
@@ -346,8 +348,8 @@ technology = {
 	}
 	
 	#Trunnions
-	artillery_shock 	= 	0.1
-	artillery_fire 		= 	0.4
+	artillery_fire 		=	0.5
+	artillery_shock		=	0.1
 	
 	enable = small_cast_iron_bombard
 	enable = large_cast_iron_bombard
@@ -435,7 +437,7 @@ technology = {
 	
 	#Standardisation of Calibre
 	artillery_shock 	= 	0.1
-	artillery_fire 		= 	1.0	
+	artillery_fire 		= 	1.0
 
 
 	training_fields = yes
@@ -443,6 +445,7 @@ technology = {
 	combat_width = 1
 	
 	enable = chambered_demi_cannon
+	enable = leather_cannon
 }
 
 technology = {
@@ -483,7 +486,6 @@ technology = {
 	enable = ottoman_reformed_spahi		
 	enable = mamluk_musket_charge 
 	enable = afsharid_reformed	
-	enable = leather_cannon	
 	enable = steppe_mounted_raiders
 	enable = ha_xoloti
 	enable = aboriginal_swarm_cav
@@ -582,7 +584,7 @@ technology = {
 	#Cartridge	(1620)?)
 	cavalry_fire		=	0.5
 	artillery_shock 	=	0.1
-	artillery_fire		=	2.0
+	artillery_fire		=	1.0
 	
 	combat_width = 2
 	
@@ -675,7 +677,7 @@ technology = {
 	
 	#Metallurgy
 	artillery_shock 	=	0.1
-	artillery_fire		=	2.0
+	artillery_fire		=	1.0
 	
 	enable = royal_mortar	
 }
