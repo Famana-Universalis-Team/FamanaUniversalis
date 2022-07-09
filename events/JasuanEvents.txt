@@ -1433,3 +1433,27 @@ country_event = { #bruh
         ai_chance = { factor = 1 }
     }
 }
+
+country_event = { #kinvirel helvanists setup
+	id = jasuaE.26
+	title = jasuaE.26.t
+	desc = jasuaE.26.d
+	picture = BATTLE_eventPicture
+	fire_only_once = yes
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+        NOT = { is_year = 213 }
+		tag = KIN
+    }
+
+	immediate = {
+		change_statists_vs_orangists = -0.33
+	}
+
+    option = {
+        name = jasuaE.26.a
+        ai_chance = { factor = 1 }
+    }
+}

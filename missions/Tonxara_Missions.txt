@@ -153,8 +153,8 @@ tonxara_1 = {
 				tooltip = tonxara_supr_tt
 				NOT = {
 					any_owned_province = {
+						is_state_core = ROOT
 						NOT = {
-							is_state_core = ROOT
 							religion = tonmo
 						}
 					}

@@ -56,8 +56,11 @@ on_startup = {
 		#Fashros
 		fashros.31
 
-		#Stroktur fix
+		#Stroktur Noy dynasty setup
 		jasuaE.25
+
+		#Kinvirel mechanics setup
+		jasuaE.26
 	}
 	events = { #after the others so it spawns on top
 		gamesetup.1
