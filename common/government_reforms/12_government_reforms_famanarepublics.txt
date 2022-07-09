@@ -2,9 +2,15 @@ kinvireli_republic = {
 	icon = "fraternite_reform"
 	allow_normal_conversion = yes
 	potential = {
-		tag = KIN
+		OR = {
+			tag = KIN
+			AND = {
+				tag = JAS
+				was_tag = KIN
+			}
+		}
 	}
-	legacy_equivalent = dutch_republic_legacy
+	legacy_equivalent = oligarchic_republic
 	valid_for_nation_designer = yes
 	nation_designer_cost = 40
 	royal_marriage = yes
