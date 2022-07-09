@@ -3,7 +3,7 @@
 graphical_culture = westerngfx
 
 color = { 168  50  28 }
-
+ 
 historical_idea_groups = {
 	economic_ideas
 	defensive_ideas
@@ -33,56 +33,94 @@ historical_units = {
 }
 
 monarch_names = {
-	"Galim #0" = 1
-	"Aubais #0" = 1
-	"Rumbaliv #0" = 1
-	"Di-Bodalf #0" = 1
-	"Rumbalim #0" = 1
-	"Bodaos #0" = 1
-	"Ayubaia #0" = 1
-	"Neubaia #0" = 1
-	"Arlivicus #0" = 1
-	"Kaliv #0" = 1
-	"Kalivicus #0" = 1
-	"Lodarla #0" = 1
-	"Gialcut #0" = 1
-	"Ayusa #0" = 1
-	"Maniamugea #0" = 1
-	"Buyam #0" = 1
-	"Tusshi #0" = 1
-	"Diman #0" = 1
-	"Saomese #0" = 1
-	"Chale #0" = -1
-	"Ceona #0" = -1
-	"Talova #0" = -1
-	"Dlaz #0" = -1
-	"Name #0" = -1
-	"Tarina #0" = -1
-	"Ta #0" = -1
-	"Mza #0" = -1
-	"Ista #0" = -1
-	"Nyx #0" = -1
+	"Aysin #0" = 1
+	"Kigivo #0" = 1
+	"Oviv #0" = 1
+	"Avkako?i #0" = 2
+	"Bége #0" = 1
+	"Dirazpö #0" = 1
+	"Avbube #0" = 1
+	"Akez #0" = 1
+	"Kerdé #0" = 1
+	"Uwis #0" = 1
+	"?irti #0" = 1
+	"Oza #0" = 1
+	"?izon #0" = 1
+	"Iwavay #0" = 1
+	"Tizay #0" = 1
+	"O?andez #0" = 5
+	"Dasim #0" = 1
+	"Koder #0" = 1
+	"?a?o #0" = 1
+	"Dasös #0" = 1
+	"Asimaba #0" = 1
+	"Bewovir #0" = 1
+	"Tay?eda #0" = 1
+	"Goveré #0" = 1
+	"Bando #0" = 1
+	"Pizkom #0" = 1
+	"Dovez #0" = 1
+	"Agari #0" = 1
+	"Kö?emi #0" = 1
+	"Tevo #0" = 1
+	"?esi #0" = 1
+	"Dosei #0" = 1
+	"Am?ar #0" = 1
+	"Urez #0" = 1
+	"Dimo #0" = 1
+	"?akivo #0" = 1
+	"?oske #0" = 1
+	"?ovini #0" = -1
+	"Öpova #0" = -1
+	"Evo #0" = -1
+	"Ba?a #0" = -1
+	"Öpora #0" = -1
+	"Bivi #0" = -1
+	"Ovi #0" = -1
+	"Ini #0" = -1
+	"Asbe #0" = -1
+	"Adiv #0" = -1
+	"Gei #0" = -1
 }
 
 leader_names = {
-	Kalin
-	Jams
-	Remel
-	Niro
-	Gadel
-	Tanus
-	Niro
-	Jijiro
-	Poni
-	Kerta
-	Kert
-	Fani
-	Siak
-	Kanadat
-	Jalio
-	Sicki
-	Siliri
-	Pioro
+	Aysin
+	Kigivo
+	Oviv
+	Avkako?i
+	Bége
+	Dirazpö
+	Avbube
+	Akez
+	Kerdé
+	Uwis
+	?irti
+	Oza
+	?izon
+	Iwavay
+	Tizay
+	O?andez
+	Dasim
+	Koder
+	?a?o
+	Dasös
+	Asimaba
+	Bewovir
+	Tay?eda
+	Goveré
+	Bando
+	Pizkom
+	Dovez
+	Agari
+	Kö?emi
+	Tevo
+	?esi
+	Dosei
+	Am?ar
+	Urez
+	Dimo
+	?akivo
+	?oske
 }
 
 ship_names = {

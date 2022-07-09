@@ -3,7 +3,7 @@
 graphical_culture = westerngfx
 
 color = { 249  243  35 }
-
+ 
 historical_idea_groups = {
 	economic_ideas
 	defensive_ideas
@@ -54,6 +54,39 @@ monarch_names = {
 	"Jaines #0" = -1
 	"Rurolat #0" = -1
 	"Tavas #0" = -1
+	"Aisin #0" = 1
+	"Kigifo #0" = 1
+	"Dirazpù #0" = 1
+	"Akez #0" = 1
+	"Kerde #0" = 1
+	"Xirti #0" = 1
+	"Oza #0" = 1
+	"Xizon #0" = 1
+	"Tizai #0" = 1
+	"Oxandez #0" = 1
+	"Dasim #0" = 1
+	"Koder #0" = 1
+	"Dasùs #0" = 1
+	"Bewofir #0" = 1
+	"Taixeda #0" = 1
+	"Agari #0" = 1
+	"Kùxemi #0" = 1
+	"Tevo #0" = 1
+	"Xesi #0" = 1
+	"Dosei #0" = 1
+	"Amxar #0" = 1
+	"Dimo #0" = 1
+	"Xakifo #0" = 1
+	"Ùpova #0" = -1
+	"Evo #0" = -1
+	"Baxa #0" = -1
+	"Ùpora #0" = -1
+	"Bifi #0" = -1
+	"Ofi #0" = -1
+	"Ini #0" = -1
+	"Asbe #0" = -1
+	"Adiv #0" = -1
+	"Gei #0" = -1
 }
 
 leader_names = {
@@ -75,6 +108,47 @@ leader_names = {
 	Sicki
 	Siliri
 	Pioro
+	Aisin
+	Kigifo
+	Oviv
+	Avkakoxi
+	Beige
+	Dirazpù
+	Avbuabe
+	Akez
+	Pefenodo
+	Kerde
+	Uawis
+	Xirti
+	Oza
+	Xizon
+	Iwavai
+	Tizai
+	Evgirimo
+	Parimai
+	Oxandez
+	Dasim
+	Koder
+	Xaxo
+	Dasùs
+	Asimaba
+	Bewofir
+	Taixeda
+	Goferei
+	Bando
+	Pizkom
+	Dofez
+	Ederifdo
+	Agari
+	Kùxemi
+	Tevo
+	Xesi
+	Dosei
+	Amxar
+	Uarez
+	Dimo
+	Xakifo
+	Xoske
 }
 
 ship_names = {
