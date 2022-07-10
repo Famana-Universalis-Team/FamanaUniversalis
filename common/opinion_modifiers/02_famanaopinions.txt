@@ -41,3 +41,11 @@ abandoned_mak_vaximor = {
 	opinion = -50
 	yearly_decay = 2
 }
+
+yom_hate_amatan = {
+	opinion = -1000
+}
+
+amatan_hate_yom = {
+	opinion = -1000
+}

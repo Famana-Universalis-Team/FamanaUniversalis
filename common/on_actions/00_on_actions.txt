@@ -42,6 +42,32 @@ on_startup = {
 		}
 		set_global_flag = rastrayvar_control_flag
 	}
+	every_country = {
+		limit = {
+			NOT = {
+				OR = {
+					tag = HSH
+					tag = HOF
+				}
+			}
+		}
+		add_opinion = {
+		    who = HSH
+		    modifier = amatan_hate_yom
+		}
+		add_opinion = {
+		    who = HOF
+		    modifier = amatan_hate_yom
+		}
+		reverse_add_opinion = {
+		    who = HSH
+		    modifier = yom_hate_amatan
+		}
+		reverse_add_opinion = {
+		    who = HOF
+		    modifier = yom_hate_amatan
+		}
+	}
 	events = {
 
 		#Yomtanian War Damage
