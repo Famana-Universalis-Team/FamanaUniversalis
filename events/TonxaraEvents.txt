@@ -360,7 +360,7 @@ country_event = { #tonxara.9, this event will let you pick your new country or g
 
     option = { #Fisbiklu
         name = tonxara.9.b
-        ai_chance = { factor = 0 }
+        ai_chance = { factor = 1 }
 
         trigger = {
             any_owned_province = {
@@ -447,7 +447,7 @@ country_event = { #tonxara.9, this event will let you pick your new country or g
 
     option = { #Amaxras
         name = tonxara.9.c
-        ai_chance = { factor = 0 }
+        ai_chance = { factor = 1 }
 
         trigger = {
             any_owned_province = {
@@ -534,7 +534,7 @@ country_event = { #tonxara.9, this event will let you pick your new country or g
 
     option = { #Degzool
         name = tonxara.9.d
-        ai_chance = { factor = 0 }
+        ai_chance = { factor = 1 }
 
         trigger = {
             any_owned_province = {
@@ -621,7 +621,7 @@ country_event = { #tonxara.9, this event will let you pick your new country or g
 
     option = { #Legenia
         name = tonxara.9.e
-        ai_chance = { factor = 0 }
+        ai_chance = { factor = 1 }
 
         trigger = {
             any_owned_province = {
@@ -969,7 +969,7 @@ country_event = { #tonxara.9, this event will let you pick your new country or g
 
     option = { #Ufela
         name = tonxara.9.i
-        ai_chance = { factor = 0 }
+        ai_chance = { factor = 1 }
 
         trigger = {
             any_owned_province = {
@@ -1056,7 +1056,7 @@ country_event = { #tonxara.9, this event will let you pick your new country or g
 
     option = { #Rumay
         name = tonxara.9.j
-        ai_chance = { factor = 0 }
+        ai_chance = { factor = 1 }
 
         trigger = {
             any_owned_province = {
@@ -3143,6 +3143,11 @@ country_event = { #kill tonxara
                 set_country_flag = isEmmiFlag
             }
         }
+    }
+
+    option = {
+        name = troll
+        ai_chance = { factor = 1 }
     }
 }
 
