@@ -658,13 +658,13 @@ country_event = {
 			duration = -1
 		}
 		random_owned_province = {
-			anti_tax_rebels = 2
+			particularist_rebels = 2
 		}
 		random_owned_province = {
-			anti_tax_rebels = 2
+			particularist_rebels = 2
 		}
 		random_owned_province = {
-			anti_tax_rebels = 2
+			particularist_rebels = 2
 		}
 		set_country_flag = pissedoffnobles
 	}
@@ -690,7 +690,6 @@ country_event = {
 	option = {
 		name = ordica.15.a
 		ai_chance = { factor = 1 }
-		add_years_of_income = -0.33
 		add_country_modifier = {
 			name = orc_no_manpower
 			duration = -1
@@ -855,6 +854,7 @@ country_event = {
 			release = YUV
 			release = YVR
 			release = NOX
+			release = KAM
 		}
 		create_subject = {
 			subject_type = march
@@ -871,6 +871,10 @@ country_event = {
 		create_subject = {
 			subject_type = march
 			subject = YVR
+		}
+		create_subject = {
+			subject_type = march
+			subject = KAM
 		}
 		add_country_modifier = {
 			name = orc_decentralisation
@@ -1079,6 +1083,9 @@ country_event = {
 					infantry = PREV
 				}
 			}
+			PRT = {
+				change_religion = rochoni
+			}
 			random_owned_province = {
 				limit = {
 					region = apilanya_region
@@ -1106,6 +1113,7 @@ country_event = {
 		}
 		set_country_flag = pramteaIndependent
 	}
+	
 	option = {
 		name = ordica.19.b #let them go
 		ai_chance = { factor = 3 }
@@ -1144,6 +1152,9 @@ country_event = {
 					infantry = PREV
 				}
 			}
+			KLY = {
+				change_religion = rochoni
+			}
 			every_owned_province = {
 				limit = {
 					region = eastern_naravam_region
@@ -1153,6 +1164,9 @@ country_event = {
 				KLV = {
 					infantry = PREV
 				}
+			}
+			KLV = {
+				change_religion = rochoni
 			}
 			6261 = {
 				add_building = fort_15th
@@ -1234,7 +1248,7 @@ country_event = {
 		}
 	}
 	option = { #leave it be
-		name = ordica.21.a
+		name = ordica.21.b
 		ai_chance = { factor = 2 }
 		add_truce_with = VAM
 	}
@@ -1284,6 +1298,15 @@ country_event = {
 		area_177 = {
 			add_core = ORM
 			cede_province = ORM
+		}
+		ORA = {
+			change_religion = rochoni
+		}
+		ORL = {
+			change_religion = rochoni
+		}
+		ORM = {
+			change_religion = rochoni
 		}
 	}
 }

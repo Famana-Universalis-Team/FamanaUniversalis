@@ -13,11 +13,11 @@ ordican_crisis= {
     }
 	progress = {
         modifier = {
-            factor = 0.10
+            factor = 0.15
             is_year = 400
         }
         modifier = {
-            factor = 0.10
+            factor = 0.20
             has_global_flag = RochoniReformation
         }
     }
