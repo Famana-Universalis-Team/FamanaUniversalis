@@ -3683,7 +3683,7 @@ country_event = { #nhoma death
         NOT = {
             num_of_owned_provinces_with	= {
                 value = 50
-                superregion = tonmo_supperregion
+                superregion = nhoma_superregion
             }
         }
     }

@@ -50,7 +50,7 @@ fas_1 = {
 					ROOT = {
 						any_owned_province = {
 							AND = {
-								superregion = tonmo_supperregion
+								superregion = nhoma_superregion
 								religion = tonmo
 								unrest = 0
 							}
@@ -83,7 +83,7 @@ fas_1 = {
 			}
 		}
 		provinces_to_highlight = {
-			superregion = tonmo_supperregion
+			superregion = nhoma_superregion
 			religion = tonmo
 		}
 	}
@@ -334,7 +334,7 @@ fas_1 = {
 		trigger = {
 			num_of_owned_provinces_with	= {
 				value = 20
-				superregion	= tonmo_supperregion
+				superregion	= nhoma_superregion
 				development	= 10
 			}
 		}
@@ -395,7 +395,7 @@ fas_1 = {
 		required_missions = {fas_great_cities_of_the_east}
 		trigger = {
 			owns_all_provinces = {
-				superregion = tonmo_supperregion
+				superregion = nhoma_superregion
 				NOT = {
 					is_empty = yes
 				}
@@ -405,7 +405,7 @@ fas_1 = {
 			}
 			num_of_owned_provinces_with = {
     			value = 125
-    			superregion = tonmo_supperregion
+    			superregion = nhoma_superregion
     			religion = tonmo
 			}
 			adm_power = 100
@@ -415,7 +415,7 @@ fas_1 = {
 			hidden_effect = {
 				every_owned_province = {
 					limit = {
-						superregion = tonmo_supperregion
+						superregion = nhoma_superregion
 					}
 					add_province_modifier = {
 						name = fas_local_rule
@@ -427,7 +427,7 @@ fas_1 = {
 		}
 		provinces_to_highlight = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
-				superregion = tonmo_supperregion
+				superregion = nhoma_superregion
 			NOT = {
 				is_empty = yes
 			}

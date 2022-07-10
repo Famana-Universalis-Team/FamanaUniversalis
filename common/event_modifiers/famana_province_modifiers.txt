@@ -42,3 +42,9 @@ emastalian_golden_age_modifier = {
     trade_goods_size_modifier = 0.50
     local_development_cost = -0.15
 }
+
+naf_fortified_gatra_bonus = {
+    local_defensiveness = 0.25
+    local_hostile_movement_speed = -0.2
+    local_manpower_modifier = 0.50
+}

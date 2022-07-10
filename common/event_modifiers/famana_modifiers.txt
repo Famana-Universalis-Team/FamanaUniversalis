@@ -1114,3 +1114,14 @@ naf_desperate_struggle = {
     naval_morale = -0.10
     global_trade_power = -0.20
 }
+
+naf_oppia_trollage = {
+    diplomatic_reputation = 1
+    diplomatic_annexation_cost = -0.25
+}
+
+naf_sweeping_estal = {
+    province_warscore_cost = -0.10
+    cavalry_fire = 1
+    stability_cost_to_declare_war = -2
+}

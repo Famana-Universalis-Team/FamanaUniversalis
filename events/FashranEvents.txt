@@ -1041,7 +1041,7 @@ country_event = {
             every_owned_province = {
                 limit = {
                     superregion = jasua_superregion
-                    superregion = tonmo_supperregion
+                    superregion = nhoma_superregion
                 }
                 every_country = {
                     limit = {
@@ -1367,7 +1367,7 @@ country_event = {
             release = HOY
             jasua_superregion = { add_permanent_claim = KSL }
             ga_xal_superregion = { add_permanent_claim = JFX }
-            tonmo_supperregion = { add_permanent_claim = NHM }
+            nhoma_superregion = { add_permanent_claim = NHM }
             every_province = {
                 limit = {
                     OR = {
@@ -2349,7 +2349,7 @@ country_event = { #Kisholi
             change_graphical_culture = easterngfx
             jasua_superregion = { add_permanent_claim = KSL }
             ga_xal_superregion = { add_permanent_claim = JFX }
-            tonmo_supperregion = { add_permanent_claim = NHM }
+            nhoma_superregion = { add_permanent_claim = NHM }
             country_event = {
                 id = fashros.30
                 days = 1
@@ -2419,7 +2419,7 @@ country_event = { #Jafxoi
             }
             jasua_superregion = { add_permanent_claim = KSL }
             ga_xal_superregion = { add_permanent_claim = JFX }
-            tonmo_supperregion = { add_permanent_claim = NHM }
+            nhoma_superregion = { add_permanent_claim = NHM }
             country_event = {
                 id = fashros.30
                 days = 1
@@ -2489,7 +2489,7 @@ country_event = { #Nhoma
             }
             jasua_superregion = { add_permanent_claim = KSL }
             ga_xal_superregion = { add_permanent_claim = JFX }
-            tonmo_supperregion = { add_permanent_claim = NHM }
+            nhoma_superregion = { add_permanent_claim = NHM }
             country_event = {
                 id = fashros.30
                 days = 1
@@ -2559,7 +2559,7 @@ country_event = { #Hoyros
             }
             jasua_superregion = { add_permanent_claim = KSL }
             ga_xal_superregion = { add_permanent_claim = JFX }
-            tonmo_supperregion = { add_permanent_claim = NHM }
+            nhoma_superregion = { add_permanent_claim = NHM }
             country_event = {
                 id = fashros.30
                 days = 1

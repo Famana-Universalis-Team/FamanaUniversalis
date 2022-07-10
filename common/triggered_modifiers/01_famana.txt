@@ -147,6 +147,23 @@ naf_xolnomarkan_invasion_buff = {
     siege_ability = 0.25
 }
 
+naf_nhoma_defense = {
+    potential = {
+        tag = NAF
+    }
+    trigger = {
+        has_country_flag = nafNotControllingTonmo
+        NOT = {
+            any_owned_province = {
+                superregion = nhoma_superregion
+                owned_by = NAF
+            }
+        }
+    }
+    army_tradition_decay = -0.01
+    shock_damage_received = -0.10
+}
+
 ################################ AGES
 
 age_1_trig_modifier = { #despair
