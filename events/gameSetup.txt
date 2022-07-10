@@ -1,4 +1,4 @@
-namespace = gamesetup
+	namespace = gamesetup
 
 #Settings
 country_event = {
@@ -10,7 +10,7 @@ country_event = {
     is_triggered_only = yes
 
 	trigger = {
-		NOT = { is_year = 213 }
+		NOT = { has_global_flag = game_is_setup }
 		ai = no
 	}
 	option = {
@@ -18,6 +18,7 @@ country_event = {
 		ai_chance = { factor = 10 }
         highlight = yes
         custom_tooltip = DontChange
+		set_global_flag = game_is_setup
 	}
     option = { #Pextoglazia Settings
 		name = gamesetup.1.b
@@ -289,7 +290,7 @@ country_event = {
     is_triggered_only = yes
 
 	trigger = {
-		NOT = { is_year = 213 }
+		NOT = { has_global_flag = game_is_setup }
 		ai = no
 	}
 	immediate = {

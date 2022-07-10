@@ -626,6 +626,16 @@
  bosisi_rebels_desc:0 "Religious fanatics tend to rise up in provinces controlled by nations of a different faith. They seek to spread their faith and smite all unbelievers."
  bosisi_rebels_army:0 "$RELIGION$ Army"
 
+ has:0 "Has"
+ has_religion_desc:0 "Has is a religion of the Hasians, Yomtanians, who believe that Dan Cru, the great gamer, will once return onto famana and game end all the humans."
+
+ has_rebels_demand:0 "Convert $COUNTRYNAME$"
+ has_rebels_demand_desc:0 "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
+ has_rebels_title:0 "Religious"
+ has_rebels_name:0 "$RELIGION$ Zealots"
+ has_rebels_desc:0 "Religious fanatics tend to rise up in provinces controlled by nations of a different faith. They seek to spread their faith and smite all unbelievers."
+ has_rebels_army:0 "$RELIGION$ Army"
+
  CRUSADE:0 "Crusade"
  
  OGRACABA: "Ogracaba"

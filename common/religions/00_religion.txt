@@ -1674,3 +1674,29 @@ gadan_group = {
 	
 	crusade_name = HOLY_WAR
 }
+antestal_yomtanian_group = {
+	flag_emblem_index_range = { 83 96 } ############fix
+	flags_with_emblem_percentage = 33 #############fix
+	has = {
+		center_of_religion = 5695
+		icon = 9 #############fix
+		color = { 72 132 177 }
+		
+		country = {
+			leader_cost = -0.10 #############fix
+			improve_relation_modifier = 0.15 #############fix
+		}
+		
+		country_as_secondary = {
+			free_leader_pool = 1 #############fix
+			prestige_from_land = 0.25 #############fix
+		}
+
+		
+		heretic = { HASIAN }	
+	}
+	
+	harmonized_modifier = harmonized_pagan
+	
+	crusade_name = HOLY_WAR
+}
