@@ -1113,7 +1113,7 @@ country_event = {
 		}
 		set_country_flag = pramteaIndependent
 	}
-	
+
 	option = {
 		name = ordica.19.b #let them go
 		ai_chance = { factor = 3 }
@@ -1152,9 +1152,6 @@ country_event = {
 					infantry = PREV
 				}
 			}
-			KLY = {
-				change_religion = rochoni
-			}
 			every_owned_province = {
 				limit = {
 					region = eastern_naravam_region
@@ -1166,6 +1163,9 @@ country_event = {
 				}
 			}
 			KLV = {
+				change_religion = rochoni
+			}
+			KLY = {
 				change_religion = rochoni
 			}
 			6261 = {

@@ -246,7 +246,7 @@ nomadic_tonxara_gov = {
 	legacy_equivalent = steppe_horde_legacy
 	nomad = yes
 	raze_province = yes
-	valid_for_nation_designer = no
+	valid_for_nation_designer = yes
 	nation_designer_cost = 0
 	nation_designer_trigger = {
 		technology_group = north_antebari_tech_gr
@@ -288,7 +288,7 @@ geq_reform = {
 		tag = VAN
 	}
 	fixed_rank = 2
-	valid_for_nation_designer = no
+	valid_for_nation_designer = yes
 
 	custom_attributes = {
 		locked_government_type = yes
@@ -316,8 +316,7 @@ resteman_thalassocracy = {
 	potential = {
 		tag = RES
 	}
-	valid_for_nation_designer = no
-
+	valid_for_nation_designer = yes
 	custom_attributes = {
 		locked_government_type = yes
 		enables_plutocratic_idea_group = yes
@@ -343,7 +342,7 @@ nokadi_reform = {
 		tag = NKM
 		dynasty = "Nokadi"
 	}
-	valid_for_nation_designer = no
+	valid_for_nation_designer = yes
 
 	custom_attributes = {
 		enables_aristocratic_idea_group = yes
@@ -373,6 +372,7 @@ antiash_domain_gov = {
 	raze_province = yes
 	can_change_primary_culture = no
 	lock_level_when_selected = yes
+	valid_for_nation_designer = yes
 	custom_attributes = {
 		enables_horde_idea_group = yes
 		enables_aristocratic_idea_group = no
@@ -387,6 +387,7 @@ antiash_domain_gov = {
 four_tribe_rule_m = {
 	icon = "native_clan_council_reform"
 	allow_normal_conversion = no
+	valid_for_nation_designer = yes
 	potential = {
 		has_reform = four_tribe_rule_m
 	}
@@ -407,6 +408,7 @@ four_tribe_rule_m = {
 bureaucratic_monarchy = {
 	icon = "burmonarchy"
 	allow_normal_conversion = yes
+	valid_for_nation_designer = yes
 	potential = {
 		AND = {
 			OR = {
@@ -445,6 +447,7 @@ zeaf_tribe = {
 	icon = "zeaf"
 	allow_normal_conversion = no
 	lock_level_when_selected = yes
+	valid_for_nation_designer = yes
 	potential = {
 		tag = ZEA
 	}
@@ -463,6 +466,7 @@ zeaf_tribe = {
 pyarxan_stratocracy = {
 	icon = "regionally_elected_commanders"
 	allow_normal_conversion = no
+	valid_for_nation_designer = yes
 	potential = {
 		OR = {
 			tag = PXS
@@ -486,6 +490,7 @@ ordican_senate = {
 	icon = "ordican_senate"
 	allow_normal_conversion = no
 	lock_level_when_selected = yes
+	valid_for_nation_designer = yes
 	potential = {
 		AND = {
 			tag = ORC

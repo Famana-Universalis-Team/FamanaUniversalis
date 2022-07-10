@@ -97,7 +97,7 @@ four_tribe_rule = {
 		has_reform = four_tribe_rule
 	}
 
-	valid_for_nation_designer = no
+	valid_for_nation_designer = yes
 	legacy_equivalent = tribal_federation_legacy
 	heir = no
 	lock_level_when_selected = yes
@@ -114,6 +114,57 @@ four_tribe_rule = {
 		government_abilities = {
 			tribal_federation_mechanic
 		}
+	}
+	
+	ai = {
+		factor = 1
+	}
+}
+
+tribal_ora = {
+	icon = "ora"
+	allow_normal_conversion = yes
+	potential = {
+		primary_culture = Ora_Maldan
+	}
+
+	valid_for_nation_designer = yes
+	legacy_equivalent = tribal_federation_legacy
+	lock_level_when_selected = yes
+
+	modifiers = {
+		may_recruit_female_generals = yes
+		manpower_in_true_faith_provinces= 0.10
+		hostile_attrition = 1
+	}
+	
+	ai = {
+		factor = 1
+	}
+}
+
+ora_confederation = {
+	icon = "ora"
+	allow_normal_conversion = yes
+	potential = {
+		primary_culture = Ora_Maldan
+	}
+
+	valid_for_nation_designer = yes
+	legacy_equivalent = tribal_federation_legacy
+	lock_level_when_selected = yes
+
+	modifiers = {
+		may_recruit_female_generals = yes
+		manpower_in_true_faith_provinces= 0.10
+		hostile_attrition = 1
+		administrative_efficiency = 0.1
+		general_cost = -0.15
+	}
+
+	custom_attributes = {
+		heir = no
+		royal_marriage = no
 	}
 	
 	ai = {
