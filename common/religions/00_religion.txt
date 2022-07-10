@@ -863,9 +863,12 @@ lathvy_group = {
 				hidden_effect = {
 					random_owned_province = {
 						limit = {
-							can_have_center_of_reformation_trigger = {
-								RELIGION = rochoni
+							AND = {
+								can_have_center_of_reformation_trigger = {
+									RELIGION = rochoni
+								}
 							}
+							superregion = north_estal_superregion
 						}
 						change_religion = rochoni
 						add_reform_center = rochoni

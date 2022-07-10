@@ -1486,10 +1486,43 @@ country_event = { #pexto save launch event
 	}
 
 	immediate = {
-		random = {
-			chance = 20
-			country_event = {
-				id = pexto.41
+		if = {
+			limit = {
+				OR = {
+					PNV = {
+						ai = no
+					}
+					PPX = {
+						ai = no
+					}
+					PLM = {
+						ai = no
+					}
+					PTG = {
+						ai = no
+					}
+					PCG = {
+						ai = no
+					}
+					PHL = {
+						ai = no
+					}
+					PJS = {
+						ai = no
+					}
+					PLY = {
+						ai = no
+					}
+				}
+			}
+			add_adm_power = 1 ##Do nothing
+		}
+		else = {
+			random = {
+				chance = 8
+				country_event = {
+					id = pexto.41
+				}
 			}
 		}
 	}

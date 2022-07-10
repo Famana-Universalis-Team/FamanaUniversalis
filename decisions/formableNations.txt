@@ -4177,37 +4177,6 @@ country_decisions = {
 		}
 	}
 
-	ordisan_nation_decision = {
-		major = yes
-		potential = {
-			tag = ORC
-			is_year = 400
-		}
-		allow = {
-			is_free_or_tributary_trigger = yes
-			is_at_war = no
-			adm_tech = 18
-		}
-		effect = {
-			change_tag = ORS
-			add_country_modifier = {
-				name = "centralization_modifier"
-				duration = 7300
-			}
-			clear_saved_name = yes
-			if = {
-				limit = {
-					has_country_flag = Ordican_Empire
-				}
-				override_country_name = ORDISAN_EMPIRE_NAME
-			}
-			add_prestige = 25
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
 	biliku_reform_from_borlebin = {
 		major = yes
 		potential = {

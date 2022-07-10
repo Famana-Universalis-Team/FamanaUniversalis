@@ -1125,3 +1125,61 @@ naf_sweeping_estal = {
     cavalry_fire = 1
     stability_cost_to_declare_war = -2
 }
+
+orc_disaster_modifier = {
+    war_exhaustion = 0.10
+}
+
+orc_no_taxes = {
+    global_tax_modifier = -0.20
+    trade_efficiency = -0.10
+    production_efficiency = -0.10
+}
+
+orc_poor_taxes = {
+    global_tax_modifier = -0.10
+    trade_efficiency = -0.05
+    production_efficiency = -0.05
+    nobles_loyalty_modifier = -0.10
+    burghers_loyalty_modifier = -0.10
+}
+
+orc_no_manpower = {
+    war_exhaustion = 0.05
+    land_forcelimit_modifier = -0.10
+    manpower_recovery_speed = -0.20
+    global_manpower_modifier = -0.20
+    mercenary_manpower = -0.50
+}
+
+orc_forced_draft = {
+    war_exhaustion = 0.10
+    clergy_loyalty_modifier = -0.10
+    manpower_recovery_speed = -0.10
+    global_manpower_modifier = -0.10
+    land_maintenance_modifier = 0.10
+    discipline = -0.05
+    mercenary_manpower = -0.50
+}
+
+orc_forced_levvy = {
+    nobles_loyalty_modifier = -0.10
+    burghers_loyalty_modifier = -0.10
+    movement_speed = -0.10
+    land_morale = -0.10
+}
+
+orc_no_ships = {
+    navy_tradition_decay = 0.10
+    global_ship_cost = 0.20
+    global_sailors_modifier = -0.50
+}
+
+orc_bail_out_ships = {
+    global_ship_cost = 0.20
+    naval_maintenance_modifier = 0.10
+}
+
+orc_decentralisation = {
+    global_autonomy = 0.05
+}

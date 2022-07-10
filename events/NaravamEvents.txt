@@ -441,6 +441,7 @@ country_event = {
     option = {
 		name = naravam.7.a
 		ai_chance = { factor = 20 }
+        enable_religion = rochoni
         capital_scope = {
             change_religion = rochoni
             add_reform_center = rochoni
@@ -449,6 +450,7 @@ country_event = {
 				duration = 10950
 			}
         }
+        set_global_flag = RochoniReformation
         every_province = {
             limit = {
                 AND = {
@@ -459,4 +461,41 @@ country_event = {
             remove_reform_center = lathvy
         }
 	}
+}
+
+#the ai never colonises these provinces grrr
+country_event = {
+	id = naravam.8
+	title = naravam.8.t
+	picture = FARMING_eventPicture
+	desc = naravam.8.d
+    fire_only_once = yes
+	
+	trigger = {
+        current_age = age_of_absolutism
+        owns_core_province = 6289
+        6286 = {
+            is_empty = yes
+        }
+        6285 = {
+            is_empty = yes
+        }
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+	}
+
+    option = {
+		name = naravam.8.a
+		ai_chance = { factor = 20 }
+        6286 = {
+            add_core = ROOT
+            cede_province = ROOT
+        }
+        6285 = {
+            add_core = ROOT
+            cede_province = ROOT
+        }
+    }
 }

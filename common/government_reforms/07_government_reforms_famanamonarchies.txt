@@ -481,3 +481,27 @@ pyarxan_stratocracy = {
 		factor = 1000
 	}
 }
+
+ordican_senate = {
+	icon = "ordican_senate"
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	potential = {
+		AND = {
+			tag = ORC
+			OR = {
+				has_global_flag = OrdicaDisaster
+				has_global_flag = survivedOrdicanCrisis
+			}
+		}
+	}
+	custom_attributes = {
+		has_parliament = yes
+	}
+	modifiers = {
+		global_institution_spread = 0.1
+		clergy_influence_modifier = 1
+		nobles_influence_modifier = 1
+		burghers_influence_modifier = 1
+	}
+}

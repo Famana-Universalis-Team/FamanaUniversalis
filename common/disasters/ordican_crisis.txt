@@ -1,39 +1,38 @@
 ordican_crisis= {
 	potential = {
         tag = ORC
-		NOT = { has_country_flag = survived_crisis }
+		OR = {
+            current_age = age_of_reformation
+            current_age = age_of_absolutism
+        }
+        NOT = { has_global_flag = survivedOrdicanCrisis }
 	}
 	can_start = {
         has_any_disaster = no
-        is_year = 350
+        current_age = age_of_absolutism
     }
 	progress = {
         modifier = {
-            factor = 0.13
+            factor = 0.10
             is_year = 400
+        }
+        modifier = {
+            factor = 0.10
+            has_global_flag = RochoniReformation
         }
     }
 
 	can_stop = { has_any_disaster = yes }
 
 	can_end = {
-        AND = {
-            NOT = {
-                PEX = {
-                    total_development = 100
-                }
-            }
-            NOT = {
-                any_country = {
-                    is_subject_of_type_with_overlord = { who = PEX type = diocese }
-                }
-            }
-            is_at_war = no
+        has_country_flag = OrdicanDisasterEnded
+        custom_trigger_tooltip = {
+            tooltip = OrdicanDisasterEndedTT
         }
     }
 
-	on_start = pexto.1
-    on_end = pexto.2
+	on_start = ordica.12
+    on_end = ordica.13
 
     on_monthly = {
         events = {
@@ -43,7 +42,10 @@ ordican_crisis= {
     }
 
 	modifier = {
-        global_unrest = 5
-        discipline = -0.15
+        legitimacy = -1
+        governing_capacity_modifier = -0.33
+        army_tradition_decay = 0.05
+        land_morale = -0.15
+        defensiveness = -0.20
 	}
 }
