@@ -1,0 +1,58 @@
+namespace = gotz
+#
+##Leronya demands subjugation
+#country_event = {
+#    id = gotz.1
+#    title = gotz.1.t
+#    desc = gotz.1.desc
+#    picture = BATTLE_eventPicture
+#	fire_only_once = yes
+#
+#    mean_time_to_happen = {
+#		months = 60
+#	}
+#
+#    trigger = {
+#        is_year = 240
+#        tag = LER
+#    }
+#
+#    immediate = {
+#    }
+#
+#    option = {
+#        name = gotz.1.a
+#        ai_chance = { factor = 0.8 }
+#        EHZ = {
+#            country_event = { 
+#                id = gotz.2.a
+#            }
+#        }
+#    }
+#    option = {
+#        name = gotz.1.b
+#        ai_chance = { factor = 0.2 }
+#    }
+#}
+#
+##EHZ response
+#country_event = {
+#    id = gotz.2
+#    title = gotz.2.t
+#    desc = gotz.2.desc
+#    picture = BATTLE_eventPicture
+#	fire_only_once = yes
+#    is_triggered_only = yes
+#
+#    immediate = {
+#    }
+#
+#    option = {
+#        name = gotz.2.a
+#        ai_chance = { factor = 1 }
+#    }
+#    option = {
+#        name = gotz.2.b
+#        ai_chance = { factor = 1 }
+#    }
+#}
