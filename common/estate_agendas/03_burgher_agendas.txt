@@ -968,19 +968,6 @@ estate_burghers_discover_X_in_america = {
 	selection_weight = {
 		factor = 2.5
 		modifier = {
-			factor = 2
-			OR = {
-				tag = POR
-				tag = CAS
-				tag = GBR
-				tag = NED
-				tag = FRA
-				tag = NAV
-				tag = DAN
-				tag = NOR
-			}
-		}
-		modifier = {
 			factor = 0.5
 			NOT = { num_of_colonists = 1 }
 		}
@@ -1093,19 +1080,6 @@ estate_burghers_colonise_X = {
 	}
 	selection_weight = {
 		factor = 2.5
-		modifier = {
-			factor = 2
-			OR = {
-				tag = POR
-				tag = CAS
-				tag = GBR
-				tag = NED
-				tag = FRA
-				tag = NAV
-				tag = DAN
-				tag = NOR
-			}
-		}
 		modifier = {
 			factor = 2
 			num_of_colonists = 2
@@ -1291,19 +1265,6 @@ estate_burghers_colonise_more_X = {
 		factor = 2.5
 		modifier = {
 			factor = 2
-			OR = {
-				tag = POR
-				tag = CAS
-				tag = GBR
-				tag = NED
-				tag = FRA
-				tag = NAV
-				tag = DAN
-				tag = NOR
-			}
-		}
-		modifier = {
-			factor = 2
 			num_of_colonists = 2
 		}
 		modifier = {
@@ -1461,19 +1422,6 @@ estate_burghers_colonial_nation = {
 		factor = 2.5
 		modifier = {
 			factor = 2
-			OR = {
-				tag = POR
-				tag = CAS
-				tag = GBR
-				tag = NED
-				tag = FRA
-				tag = NAV
-				tag = DAN
-				tag = NOR
-			}
-		}
-		modifier = {
-			factor = 2
 			num_of_colonists = 2
 		}
 		modifier = {
@@ -1562,15 +1510,6 @@ estate_burghers_expand_trade_company = {
 	}
 	selection_weight = {
 		factor = 2.5
-		modifier = {
-			factor = 2
-			OR = {
-				tag = POR
-				tag = CAS
-				tag = GBR
-				tag = NED
-			}
-		}
 		modifier = {
 			factor = 1.5
 			num_of_colonists = 1
@@ -2129,13 +2068,6 @@ estate_burghers_tea_trade = {
 		modifier = {
 			factor = 2
 			num_of_strong_trade_companies = 2
-		}
-		modifier = {
-			factor = 2.5
-			OR = {
-				tag = ENG
-				tag = GBR
-			}
 		}
 	}
 	provinces_to_highlight = {

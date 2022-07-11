@@ -83,9 +83,8 @@ groups = {
 	}
 
 	antestal_yom_tech_gr = {
-		start_level = 2
-		start_cost_modifier = 1.5
-		is_primitive = yes
+		start_level = 3
+		start_cost_modifier = 0
 	}
 
 	naravami_tech_gr = {
