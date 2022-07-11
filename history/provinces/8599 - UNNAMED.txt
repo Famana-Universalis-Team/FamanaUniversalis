@@ -2,7 +2,7 @@
 #UNNAMED
 culture = Placeholder_culture
 religion = animism
-hre = no
+hre = yes
 base_tax = 1
 base_production = 1
 base_manpower = 1
@@ -12,3 +12,6 @@ native_hostileness = 3
 capital = "UNNAMED"
 is_city = no
 extra_cost = 10
+owner = RON
+controller = RON
+core = RON
