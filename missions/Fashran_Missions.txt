@@ -528,15 +528,17 @@ fas_2 = {
 		icon = take_the_littoral
 		required_missions = {fas_raid_jimkalin fas_conquer_bamal}
 		trigger = {
-			owns_core_province = 5644
-			OR = {
-				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-					value = 12
-					region = jasua_region
-				}
-				NOT = {
-					exists = YAB
-				}
+			yabonia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			unnamed_area_47 = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			unnamed_area_34 = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		effect = {
@@ -578,11 +580,9 @@ fas_2 = {
 		required_missions = {fas_pillage_kinvirel}
 		position = 9
 		trigger = {
-			owns_all_provinces = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 35
 				region = eastern_desert_region
-				NOT = {
-					is_empty = yes
-				}
 			}
 		}
 		effect = {
