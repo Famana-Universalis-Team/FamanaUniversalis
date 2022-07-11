@@ -34,6 +34,22 @@ on_startup = {
 		value = religion
 		who = ROOT
 	}
+	set_variable = {
+		which = otherGuyMil
+		value = 0
+	}
+	set_variable = {
+		which = otherGuyAge
+		value = 0
+	}
+	set_variable = {
+		which = otherGuyGender
+		value = 0
+	}
+	set_variable = {
+		which = currentRulerAge
+		value = 0
+	}
 	if = {
 		limit = {
 			NOT = {

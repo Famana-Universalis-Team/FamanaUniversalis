@@ -774,3 +774,154 @@ country_event = {
 		}
 	}
 }
+
+#Duel for succession
+#country_event = {
+#	id = oppia.19
+#	title = oppia.19.t
+#	desc = oppia.19.d
+#	picture = NUSANTARA_THRONE_eventPicture
+#	is_triggered_only = yes
+#
+#	immediate = {
+#		export_to_variable = {
+#			variable_name = currentRulerAge
+#			value = monarch_age
+#		}
+#		random = { #set the other guy's mil skill
+#			1 = {
+#				set_variable = {
+#					which = otherGuyMil
+#					value = 0
+#				}
+#			}
+#			1 = {
+#				set_variable = {
+#					which = otherGuyMil
+#					value = 1
+#				}
+#			}
+#			1 = {
+#				set_variable = {
+#					which = otherGuyMil
+#					value = 2
+#				}
+#			}
+#			1 = {
+#				set_variable = {
+#					which = otherGuyMil
+#					value = 3
+#				}
+#			}
+#			1 = {
+#				set_variable = {
+#					which = otherGuyMil
+#					value = 4
+#				}
+#			}
+#			1 = {
+#				set_variable = {
+#					which = otherGuyMil
+#					value = 5
+#				}
+#			}
+#			1 = {
+#				set_variable = {
+#					which = otherGuyMil
+#					value = 6
+#				}
+#			}
+#		}
+#		random = { #set the other guy's age
+#			1 = {
+#				limit = {
+#					check_variable = {
+#						which = currentRulerAge
+#						value = 6
+#					} 
+#				}
+#				set_variable = {
+#					which = otherGuyAge
+#					value = 6
+#				}
+#			}
+#			1 = {
+#				limit = {
+#					check_variable = {
+#						which = currentRulerAge
+#						value = 5
+#					} 
+#				}
+#				set_variable = {
+#					which = otherGuyAge
+#					value = 5
+#				}
+#			}
+#			1 = {
+#				limit = {
+#					check_variable = {
+#						which = currentRulerAge
+#						value = 4
+#					} 
+#				}
+#				set_variable = {
+#					which = otherGuyAge
+#					value = 4
+#				}
+#			}
+#			1 = {
+#				limit = {
+#					check_variable = {
+#						which = currentRulerAge
+#						value = 3
+#					} 
+#				}
+#				set_variable = {
+#					which = otherGuyAge
+#					value = 3
+#				}
+#			}
+#			1 = {
+#				limit = {
+#					check_variable = {
+#						which = currentRulerAge
+#						value = 2
+#					} 
+#				}
+#				set_variable = {
+#					which = otherGuyAge
+#					value = 2
+#				}
+#			}
+#			1 = {
+#				set_variable = {
+#					which = otherGuyAge
+#					value = 1
+#				}
+#			}
+#		}
+#		random = {
+#			1 = { #female
+#				set_variable = {
+#					which = otherGuyGender
+#					value = 0
+#				}
+#			}
+#			5 = { #male
+#				set_variable = {
+#					which = otherGuyGender
+#					value = 1
+#				}
+#			}
+#		}
+#	}
+#	
+#	option = {
+#		name = oppia.19.a
+#		ai_chance = {
+#			factor = 1
+#		}
+#		kill_ruler = yes
+#		set_ruler = variable:challengerID
+#	}
+#}

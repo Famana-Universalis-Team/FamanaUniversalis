@@ -1119,6 +1119,15 @@ country_event = {
 		ai_chance = { factor = 3 }
 		add_truce_with = PRT
 		set_country_flag = pramteaIndependent
+		PRT = {
+			every_owned_province = {
+				limit = {
+					is_core = ORC
+				}
+				remove_core = ORC
+				add_claim = ORC
+			}
+		}
 	}
 }
 
@@ -1196,6 +1205,24 @@ country_event = {
 		add_truce_with = PRT
 		add_truce_with = KLY
 		add_truce_with = KLV
+		KLY = {
+			every_owned_province = {
+				limit = {
+					is_core = ORC
+				}
+				remove_core = ORC
+				add_claim = ORC
+			}
+		}
+		KLV = {
+			every_owned_province = {
+				limit = {
+					is_core = ORC
+				}
+				remove_core = ORC
+				add_claim = ORC
+			}
+		}
 	}
 }
 
@@ -1251,6 +1278,15 @@ country_event = {
 		name = ordica.21.b
 		ai_chance = { factor = 2 }
 		add_truce_with = VAM
+		VAM = {
+			every_owned_province = {
+				limit = {
+					is_core = ORC
+				}
+				remove_core = ORC
+				add_claim = ORC
+			}
+		}
 	}
 }
 
