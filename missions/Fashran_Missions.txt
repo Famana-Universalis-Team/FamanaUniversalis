@@ -528,17 +528,15 @@ fas_2 = {
 		icon = take_the_littoral
 		required_missions = {fas_raid_jimkalin fas_conquer_bamal}
 		trigger = {
-			yabonia_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			unnamed_area_47 = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			unnamed_area_34 = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+			owns_core_province = 5644
+			OR = {
+				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+					value = 12
+					region = jasua_region
+				}
+				NOT = {
+					exists = YAB
+				}
 			}
 		}
 		effect = {
@@ -816,17 +814,27 @@ fas_3 = {
 		required_missions = {fas_defeat_yabonia}
 		position = 8
 		trigger = {
-			kinvirel_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			unnamed_area_31 = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			unnamed_area_13 = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+			OR = {
+				AND = {
+					kinvirel_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					unnamed_area_31 = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					unnamed_area_13 = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+				}
+				AND = {
+					NOT = {
+						exists = KIN
+					}
+					owns_core_province = 5196
+				}
 			}
 		}
 		effect = {

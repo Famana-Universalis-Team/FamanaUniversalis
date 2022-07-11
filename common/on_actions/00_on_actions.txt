@@ -4048,7 +4048,12 @@ on_province_religion_converted = {
 		limit = {
 			OR = {
 				culture = Oppio_Jasuan
-				culture = Zoblotran
+				AND = {
+					NOT = {
+						area = unnamed_area_11
+					}
+					culture = Zoblotran
+				}
 			}
 			owner = {
 				religion = tonmo
@@ -4056,6 +4061,16 @@ on_province_religion_converted = {
 		}
 		change_culture = South_Kisholian
 		add_core = KSL
+	}
+	if = {
+		limit = {
+			area = unnamed_area_11
+			owner = {
+				religion = tonmo
+			}
+		}
+		change_culture = Mahanshan
+		add_core = JFX
 	}
 	if = {
 		limit = {

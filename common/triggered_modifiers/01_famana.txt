@@ -122,12 +122,13 @@ ai_fashros_buff = {
     land_maintenance_modifier = -0.25
     interest = -2
     core_creation = -0.15
-    administrative_efficiency = 0.10
+    administrative_efficiency = 0.15
     diplomatic_upkeep = -4
     monarch_admin_power = 1
     monarch_diplomatic_power = 1
     monarch_military_power = 1
     diplomatic_reputation = 2
+    missionary_maintenance_cost = -0.5
 }
 
 naf_xolnomarkan_invasion_buff = {
