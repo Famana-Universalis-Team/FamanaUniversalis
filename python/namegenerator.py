@@ -1,9 +1,9 @@
 import random
 
-Obs = ["p", "t", "k", "q", "ž", "š", "ç", "qh"]
+Obs = ["p", "t", "k", "q", "z", "s", "ç", "qh"]
 Son = ["h", "f", "v", "m", "n", "l", 'v']
 Liq = ["l", "f", 'r']
-Coda = ["ñ", "ž", "š", "h", "f", "v", "m", "n", "l", "j"]
+Coda = ["ñ", "z", "s", "h", "f", "v", "m", "n", "l", "j"]
 Plos = ["p", "t", "k", "q", "'", "ç", "qy"]
 FrontV = ["a", "e", "a", "e", "i", "y", "ai"]
 BackV = ["o", "u", "o", "u", "ü", "ö", "ï", "ou"]
@@ -212,7 +212,7 @@ for x in range(0,100):
                 backBased = True
             name+=Plos[random.randint(0,6)]
             endsWithVowel=False
-    name = name.replace("žf", "žv")
+    name = name.replace("zf", "zv")
     
     name = name.replace("pç", "ç")
     name = name.replace("tç", "ç")
@@ -221,15 +221,15 @@ for x in range(0,100):
     name = name.replace("'ç", "ç")
     name = name.replace("çç", "ç")
     name = name.replace("qyç", "ç")
-    name = name.replace("žç", "ç")
-    name = name.replace("šç", "ç")
+    name = name.replace("zç", "ç")
+    name = name.replace("sç", "ç")
     name = name.replace("çp", "ç")
     name = name.replace("çt", "ç")
     name = name.replace("çk", "ç")
     name = name.replace("çq", "ç")
-    name = name.replace("çž", "ç")
-    name = name.replace("çš", "ç")
-    name = name.replace("çš", "ç")
+    name = name.replace("çz", "ç")
+    name = name.replace("çs", "ç")
+    name = name.replace("çs", "ç")
     name = name.replace("çç", "ç")
     name = name.replace("ç'", "ç")
     
@@ -240,14 +240,14 @@ for x in range(0,100):
     name = name.replace("'qy", "qy")
     name = name.replace("qyç", "qy")
     name = name.replace("qyqy", "qy")
-    name = name.replace("žqy", "qy")
-    name = name.replace("šqy", "qy")
+    name = name.replace("zqy", "qy")
+    name = name.replace("sqy", "qy")
     name = name.replace("qyp", "qy")
     name = name.replace("qyt", "qy")
     name = name.replace("qyk", "qy")
     name = name.replace("qyq", "qy")
-    name = name.replace("qyž", "qy")
-    name = name.replace("qyš", "qy")
+    name = name.replace("qyz", "qy")
+    name = name.replace("qys", "qy")
     name = name.replace("çqy", "qy")
     name = name.replace("qyqy", "qy")
     name = name.replace("qy'", "qy")
@@ -257,61 +257,61 @@ for x in range(0,100):
     name = name.replace("kp", "pt")
     name = name.replace("qp", "pt")
     name = name.replace("'p", "pt")
-    name = name.replace("žp", "pt")
-    name = name.replace("šp", "pt")
+    name = name.replace("zp", "pt")
+    name = name.replace("sp", "pt")
     name = name.replace("pp", "pt")
     name = name.replace("pt", "pt")
     name = name.replace("pk", "pt")
     name = name.replace("pq", "pt")
-    name = name.replace("pž", "pt")
-    name = name.replace("pš", "pt")
+    name = name.replace("pz", "pt")
+    name = name.replace("ps", "pt")
     name = name.replace("p'", "pt")
     
     name = name.replace("tt", "tk")
     name = name.replace("kt", "tk")
     name = name.replace("qt", "tk")
     name = name.replace("'t", "tk")
-    name = name.replace("žt", "tk")
-    name = name.replace("št", "tk")
+    name = name.replace("zt", "tk")
+    name = name.replace("st", "tk")
     name = name.replace("tt", "tk")
     name = name.replace("tk", "tk")
     name = name.replace("tq", "tk")
-    name = name.replace("tž", "tk")
-    name = name.replace("tš", "tk")
+    name = name.replace("tz", "tk")
+    name = name.replace("ts", "tk")
     name = name.replace("t'", "tk")
     
     name = name.replace("kk", "kh")
     name = name.replace("qk", "kh")
     name = name.replace("'k", "kh")
-    name = name.replace("žk", "kh")
-    name = name.replace("šk", "kh")
+    name = name.replace("zk", "kh")
+    name = name.replace("sk", "kh")
     name = name.replace("tk", "kh")
     name = name.replace("kq", "kh")
-    name = name.replace("kž", "kh")
-    name = name.replace("kš", "kh")
+    name = name.replace("kz", "kh")
+    name = name.replace("ks", "kh")
     name = name.replace("k'", "kh")
     
     name = name.replace("qq", "q'")
     name = name.replace("'q", "q'")
-    name = name.replace("žq", "q'")
-    name = name.replace("šq", "q'")
+    name = name.replace("zq", "q'")
+    name = name.replace("sq", "q'")
     name = name.replace("tq", "q'")
     name = name.replace("qq", "q'")
-    name = name.replace("qž", "q'")
-    name = name.replace("qš", "q'")
+    name = name.replace("qz", "q'")
+    name = name.replace("qs", "q'")
     name = name.replace("q'", "q'")
     
     name = name.replace("''", "'")
-    name = name.replace("ž'", "ž")
-    name = name.replace("š'", "š")
-    name = name.replace("'ž", "ž")
-    name = name.replace("'š", "š")
+    name = name.replace("z'", "z")
+    name = name.replace("s'", "s")
+    name = name.replace("'z", "z")
+    name = name.replace("'s", "s")
     name = name.replace("''", "'")
     
-    name = name.replace("žž", "ž")
-    name = name.replace("šž", "š")
-    name = name.replace("šš", "š")
-    name = name.replace("žš", "ž")
+    name = name.replace("zz", "z")
+    name = name.replace("sz", "s")
+    name = name.replace("ss", "s")
+    name = name.replace("zs", "z")
     
     print(name)
     #finally, write to file
@@ -344,10 +344,10 @@ for x in range(0,100):
     
 '''Fashran - OLVC
     We have free reign pretty much, so:
-    Obstruent Onset: p, t, k, q, ž, š, ç, qy
+    Obstruent Onset: p, t, k, q, z, s, ç, qy
     Sonorant Onset: h, f, v, m, n, l, j
-    Onset liquid if obstruent: l, j, f (v if ž). Only if obstruent onset
-    Coda: ñ (next syllable must begin with V), ž, š, h, f, v, m, n, l, j
+    Onset liquid if obstruent: l, j, f (v if z). Only if obstruent onset
+    Coda: ñ (next syllable must begin with V), z, s, h, f, v, m, n, l, j
     Plosive Coda: p, t, k, q, ', ç, qy
         Plosive clusters must always be front to back -> ie. pt, tk, kq, q' are allowed but say, pq or kt aren't. Affricates don't form clusters.
     Front vowels: a, e, i, y, ÿ, ai

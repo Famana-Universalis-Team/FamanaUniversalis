@@ -505,8 +505,8 @@ ordican_senate = {
 	}
 	modifiers = {
 		global_institution_spread = 0.1
-		clergy_influence_modifier = 1
-		nobles_influence_modifier = 1
-		burghers_influence_modifier = 1
+		clergy_influence_modifier = 0.1
+		nobles_influence_modifier = 0.1
+		burghers_influence_modifier = 0.11
 	}
 }
