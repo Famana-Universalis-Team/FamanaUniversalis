@@ -2,7 +2,10 @@
 #UNNAMED
 culture = Placeholder_culture
 religion = animism
-hre = no
+add_core = SHV
+owner = SHV
+controller = SHV
+hre = yes
 base_tax = 1
 base_production = 1
 base_manpower = 1

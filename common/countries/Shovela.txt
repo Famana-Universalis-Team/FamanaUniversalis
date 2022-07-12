@@ -1,8 +1,8 @@
 #Country Name: Please see filename.
 
-graphical_culture = muslimgfx
+graphical_culture = indiangfx
 
-color = { 220  190  100 }
+color = { 149  79  165 }
 
 historical_idea_groups = {
 	economic_ideas
@@ -36,51 +36,20 @@ historical_units = {
 }
 
 monarch_names = {
-	"Orro #0" = 1
-	"Heum #0" = 1
-	"Fellares #0" = 1
-	"Kanunin #0" = 1
-	"Yamoszy #0" = 1
-	"Unahtare #0" = 1
-	"Eyath #0" = 1
-	"Ayorn #0" = 1
-	"Beroge #0" = 1
-	"Anel #0" = 1
-	"Horfi #0" = 1
-	"Paro #0" = 1
-	"Jekelekim #0" = 1
-	"Fovers #0" = 1
-	"Maro #0" = -1
-	"Yuni #0" = -1
-	"Delan #0" = -1
+	"Shasha #0" = 1
+	"Silin #0" = -1
 }
 
 leader_names = {
-	Orro
-	Heum
-	Fellares
-	Kanunin
-	Yamoszy
-	Unahtare
-	Eyath
-	Ayorn
-	Beroge
-	Anel
-	Horfi
-	Paro
-	Jekelekim
-	Fovers
+	Shasha
 }
 
 ship_names = {
-	Pavtis
-	Naglon
-	Talak
-	Aramesh
+	Vish
 }
 
 army_names = {
-	"Divaci ane $PROVINCE$" 
+	"Shaba $PROVINCE$ Lash"
 }
 
 fleet_names = {
