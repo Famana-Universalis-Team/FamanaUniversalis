@@ -49,6 +49,12 @@ country_decisions = {
 				add_base_tax = 3
 				add_base_production = 3
 			}
+			5584 = {
+				limit = {
+					owned_by = NAF
+				}
+				change_culture = Kachik
+			}
 			NAF = {
 				set_capital = 5583
 			}

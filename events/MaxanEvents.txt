@@ -21,7 +21,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 48
+		months = 30
 	}
 	
 	option = {
@@ -81,46 +81,7 @@ country_event = {
 	desc = maxan.2.d
 	picture = REFORM_eventPicture
 	fire_only_once = yes
-
-	trigger = {
-        NOT = {
-            MOX = {
-                has_country_flag = moxon_presence
-            }
-        }
-		is_year = 280
-		any_owned_province = {
-			OR = {
-                culture = West_Maxan
-                culture = East_Maxan
-            }
-		}
-		OR = {
-            primary_culture = West_Maxan
-            primary_culture = East_Maxan
-        }
-        NOT = {
-			MOX = {
-				any_owned_province = {
-					OR = {
-						region_for_scope_province= {
-							region = stroktur_region
-						}
-						region_for_scope_province= {
-							region = emastalia_region
-						}
-						region_for_scope_province= {
-							region = west_emastalia_region
-						}
-					}
-				}
-			}
-        }
-	}
-
-	mean_time_to_happen = {
-		months = 48
-	}
+	is_triggered_only = yes
 	
 	option = {
 		name = maxan.2.a
@@ -325,4 +286,93 @@ country_event = {
         }
 	}
 
+}
+
+#Control event for 2
+country_event = {
+	id = maxan.4
+	title = maxan.4.t
+	desc = maxan.4.d
+	picture = REFORM_eventPicture
+	fire_only_once = yes
+	hidden = yes
+
+	trigger = {
+		is_year = 280
+        NOT = {
+            MOX = {
+                has_country_flag = moxon_presence
+            }
+        }
+		any_owned_province = {
+			OR = {
+                culture = West_Maxan
+                culture = East_Maxan
+            }
+		}
+		OR = {
+            primary_culture = West_Maxan
+            primary_culture = East_Maxan
+        }
+        NOT = {
+			MOX = {
+				any_owned_province = {
+					OR = {
+						region_for_scope_province= {
+							region = stroktur_region
+						}
+						region_for_scope_province= {
+							region = emastalia_region
+						}
+						region_for_scope_province= {
+							region = west_emastalia_region
+						}
+					}
+				}
+			}
+        }
+	}
+
+	mean_time_to_happen = {
+		months = 30
+	}
+
+	immediate = {
+	    every_country = {
+	        limit = {
+				ai = no
+	        	capital_scope = {
+					region_for_scope_province = {
+						OR = {
+							region = emastalia_region
+	        	        	region = west_emastalia_region
+						}
+					}
+	        	}
+			}
+			country_event = {
+	            id = maxan.2
+	        }
+	    }
+	    random_country = {
+	        limit = {
+	            capital_scope = {
+	                region_for_scope_province = {
+						OR = {
+							region = emastalia_region
+	                    	region = west_emastalia_region
+						}
+					}
+	            }
+	        }
+	        country_event = {
+	            id = maxan.2
+	        }
+	    }
+	}
+
+	option = {
+		name = maxan.4.a
+		ai_chance = { factor = 1 }
+	}
 }

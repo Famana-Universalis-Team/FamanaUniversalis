@@ -13,8 +13,10 @@ country_event = {
 		tag = FAS
 		is_year = 225
 		OR = {
-			FAS = {
-				controls = 5683
+			BLK = {
+				capital_scope = {
+					controlled_by = FAS
+				}
 			}
 			war_score_against = {
 				who = BLK
@@ -32,6 +34,9 @@ country_event = {
 				is_empty = yes
 			}
 			5627 = {
+				is_empty = yes
+			}
+			5617 = {
 				is_empty = yes
 			}
 		}
