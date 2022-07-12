@@ -42,6 +42,24 @@ country_event = {
 			add_accepted_culture = Bohoran_E
 			remove_accepted_culture	= Bohoran
 		}
+		if = {
+			limit = {
+				ruler_culture = Bohoran
+			}
+			set_ruler_culture = Bohoran_E
+		}
+		if = {
+			limit = {
+				consort_culture = Bohoran
+			}
+			set_consort_culture = Bohoran_E
+		}
+		if = {
+			limit = {
+				heir_culture = Bohoran
+			}
+			set_heir_culture = Bohoran_E
+		}
 		hidden_effect = {
 			every_country = {
 				limit = {
@@ -85,7 +103,15 @@ country_event = {
 	
 	option = {
 		name = maxan.2.a
-		ai_chance = { factor = 1 }
+		ai_chance = {
+			factor = 1000
+			modifier = {
+				factor = 0
+				any_country = {
+					has_country_flag = maxan_event_here
+				}
+			}
+		}
 		every_province = {
 			limit = { culture = West_Maxan }
 			change_culture = West_Emastalian
@@ -245,6 +271,19 @@ country_event = {
 		}
 	}
 
+	option = {
+		name = maxan.2.b
+		ai_chance = { factor = 1 }
+		trigger = {
+			AND = {
+				ai = yes
+				any_country = {
+					has_country_flag = maxan_event_here
+				}
+			}
+		}
+	}
+
 }
 
 country_event = {
@@ -256,7 +295,7 @@ country_event = {
     hidden = yes
 
 	trigger = {
-		is_year = 280
+		is_year = 270
 		MOX = {
 			any_owned_province = {
 				OR = {
@@ -271,7 +310,7 @@ country_event = {
 					}
 				}
 			}
-		}	
+		}
 	}
 
 	mean_time_to_happen = {
@@ -298,7 +337,7 @@ country_event = {
 	hidden = yes
 
 	trigger = {
-		is_year = 280
+		is_year = 270
         NOT = {
             MOX = {
                 has_country_flag = moxon_presence
@@ -353,6 +392,7 @@ country_event = {
 			country_event = {
 	            id = maxan.2
 	        }
+			set_country_flag = maxan_event_here
 	    }
 	    random_country = {
 	        limit = {
