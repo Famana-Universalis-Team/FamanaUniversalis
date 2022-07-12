@@ -196,104 +196,117 @@ defined_text = {
 	random = no
 
     text = { #Oppian
-    localisation_key = string_start_tag_oppia
-    trigger = {
-        capital_scope = {
-            superregion = oppia_superregion
-        }
+        localisation_key = string_start_tag_oppia
+        trigger = {
+            capital_scope = {
+                superregion = oppia_superregion
+            }
     }
 
     text = { #Xalian-Makyan
-    localisation_key = string_start_tag_xalian
-    trigger = {
-        capital_scope = {
-            superregion = ga_xal_superregion
+        localisation_key = string_start_tag_xalian
+        trigger = {
+            capital_scope = {
+                superregion = ga_xal_superregion
+            }
         }
     }
 
     text = { #Emastalia
-    localisation_key = string_start_tag_emast
-    trigger = {
-        capital_scope = {
-            OR = {
-                region = emastalia_region
-                region = west_emastalia_region
-                region = stroktur_region
+        localisation_key = string_start_tag_emast
+        trigger = {
+            capital_scope = {
+                OR = {
+                    region = emastalia_region
+                    region = west_emastalia_region
+                    region = stroktur_region
+                }
             }
         }
     }
 
     text = { #Jasuan
-    localisation_key = string_start_tag_jasuan
-    trigger = {
-        technology_group = east_gomic_tech_gr
+        localisation_key = string_start_tag_jasuan
+        trigger = {
+            technology_group = east_gomic_tech_gr
+        }
     }
 
     text = { #Pextoglazian
-    localisation_key = string_start_tag_pexto
-    trigger = {
-        culture_group = Pextoglazian
+        localisation_key = string_start_tag_pexto
+        trigger = {
+            culture_group = Pextoglazian
+        }
     }
 
     text = { #Miris
-    localisation_key = string_start_tag_miris
-    trigger = {
-        OR = {
-            culture = Mirisian
-            culture = Halosian
+        localisation_key = string_start_tag_miris
+        trigger = {
+            OR = {
+                culture = Mirisian
+                culture = Halosian
+            }
         }
     }
 
     text = { #Ordic-Vamanyan
-    localisation_key = string_start_tag_ordic
-    trigger = {
-        OR = {
-            culture_group = Ordic_C
-            culture_group = Maldik
-            culture_group = Epilany
+        localisation_key = string_start_tag_ordic
+        trigger = {
+            OR = {
+                culture_group = Ordic_C
+                culture_group = Maldik
+                culture_group = Epilany
+            }
         }
     }
 
     text = { #Naravami
-    localisation_key = string_start_tag_naravam
-    trigger = {
-        technology_group = naravami_tech_gr
+        localisation_key = string_start_tag_naravam
+        trigger = {
+            technology_group = naravami_tech_gr
+        }
     }
 
     text = { #Vanoma
-    localisation_key = string_start_tag_vanoma
-    trigger = {
-        tag = VAN
+        localisation_key = string_start_tag_vanoma
+        trigger = {
+            tag = VAN
+        }
     }
 
     text = { #North Estal
-    localisation_key = string_start_tag_estal
-    trigger = {
-        technology_group = gotzlic_tech_gr
+        localisation_key = string_start_tag_estal
+        trigger = {
+            technology_group = gotzlic_tech_gr
+        }
     }
 
     text = { #Geopyopia
-    localisation_key = string_start_tag_gep
-    trigger = {
-        technology_group = geopyopian_tech_gr
+        localisation_key = string_start_tag_gep
+        trigger = {
+            technology_group = geopyopian_tech_gr
+        }
     }
 
     text = { #Qamoni
-    localisation_key = string_start_tag_qamon
-    trigger = {
-        technology_group = qamoni_tech_gr
+        localisation_key = string_start_tag_qamon
+        trigger = {
+            technology_group = qamoni_tech_gr
+        }
     }
 
     text = { #Tomba
-    localisation_key = string_start_tag_tomba
-    trigger = {
-        technology_group = tomban_tech_gr
+        localisation_key = string_start_tag_tomba
+        trigger = {
+            technology_group = tomban_tech_gr
+        }
     }
 
     text = { #Hasmal
-    localisation_key = string_start_tag_hasmal
-    trigger = {
-        technology_group = hasmali_tech_gr
+        localisation_key = string_start_tag_hasmal
+        trigger = {
+            technology_group = hasmali_tech_gr
+        }
     }
 
 	text = { #Generic Gomic
