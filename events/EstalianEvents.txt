@@ -362,7 +362,22 @@ country_event = {
 		6762 = {
 			cede_province = ELQ
             add_core = ELQ
-            change_culture = East_Emastalian
+			if = {
+				limit = {
+					ELQ = {
+						primary_culture = East_Maxan
+					}
+				}
+				change_culture = East_Maxan
+			}
+			if = {
+				limit = {
+					ELQ = {
+						primary_culture = East_Emastalian
+					}
+				}
+				change_culture = East_Emastalian
+			}
             change_religion = lathvy 
 		}
 		emastalia_region = {
