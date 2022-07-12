@@ -132,3 +132,20 @@ country_event = {
 		}
 	}
 }
+
+#Dan Tzu
+country_event = {
+	id = eastereggs.5
+	title = eastereggs.5.t
+	desc = eastereggs.5.d
+	picture = GENERALS_DISCUSSING_eventPicture
+	fire_only_once = yes
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = eastereggs.5.a
+		ai_chance = { factor = 5 }
+		add_prestige = 10
+	}
+}
