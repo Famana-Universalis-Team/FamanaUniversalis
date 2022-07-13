@@ -307,4 +307,29 @@ country_decisions = {
 			factor = 0
 		}
     }
+
+    stupid_fucking_fashran_ai = {
+        potential = {
+            tag = FAS
+            ai = yes
+            FAS = {
+                num_of_subjects = 1
+            }
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+            FAS = {
+                every_subject_country = {
+                    every_owned_province = {
+                        cede_province = FAS
+                    }
+                }
+            }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+    }
 }
