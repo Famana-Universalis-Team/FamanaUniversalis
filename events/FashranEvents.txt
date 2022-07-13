@@ -1400,6 +1400,11 @@ country_event = {
                                 region = maky_region
                                 region = eastern_desert_region
                                 region = east_great_desert_region
+                                region = jasua_region
+                                region = kapolia_region
+                                region = stroktur_region
+                                region = vanoma_region
+                                region = aresia_region
                             }
                         }
                     }
@@ -1430,6 +1435,28 @@ country_event = {
                     }
                 }
                 cede_province = JFX
+            }
+            every_province = {
+                limit = {
+                    owned_by = FAS
+                    NOT = {
+                        OR = {
+                            is_core = KSL
+                            is_core = JFX
+                            is_core = HOY
+                        }
+                    }
+                    region_for_scope_province = {
+                        OR = {
+                            region = jasua_region
+                            region = kapolia_region
+                            region = stroktur_region
+                            region = vanoma_region
+                            region = aresia_region
+                        }
+                    }
+                }
+                cede_province = KSL
             }
             KSL = {
                 add_government_reform = gov_tonxara
