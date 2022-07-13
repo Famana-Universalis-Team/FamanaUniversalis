@@ -312,12 +312,11 @@ country_decisions = {
         potential = {
             tag = FAS
             ai = yes
-            FAS = {
-                num_of_subjects = 1
-            }
 		}
 		allow = {
-			always = yes
+			FAS = {
+                num_of_subjects = 1
+            }
 		}
 		effect = {
             FAS = {
