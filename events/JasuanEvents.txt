@@ -96,6 +96,14 @@ country_event = {
 		BLK = {
 			override_country_name = Borlebin
 			change_religion = bilik
+			add_historical_friend = NAK
+			add_historical_friend = VAN
+		}
+		VAN = {
+			add_historical_friend = BLK
+		}
+		NAK = {
+			add_historical_friend = BLK
 		}
 	}
 }

@@ -128,7 +128,9 @@ ai_fashros_buff = {
     monarch_diplomatic_power = 1
     monarch_military_power = 1
     diplomatic_reputation = 2
-    missionary_maintenance_cost = -0.5
+    missionary_maintenance_cost = -0.75
+    governing_capacity = 250
+    ae_impact = -0.25
     culture_conversion_cost = 100
 }
 

@@ -317,10 +317,25 @@ country_decisions = {
 			FAS = {
                 num_of_subjects = 1
             }
+            if = {
+                limit = {
+                    VAN = {
+                        is_subject_of = FAS
+                    }
+                }
+                FAS = {
+                    num_of_subjects = 2
+                }
+            }
 		}
 		effect = {
             FAS = {
                 every_subject_country = {
+                    limit = {
+                        NOT = {
+                            tag = VAN
+                        }
+                    }
                     every_owned_province = {
                         cede_province = FAS
                     }

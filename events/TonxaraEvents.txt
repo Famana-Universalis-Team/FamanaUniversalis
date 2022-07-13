@@ -1054,6 +1054,180 @@ country_event = { #tonxara.9, this event will let you pick your new country or g
         }
     }
 
+    option = { #Edesul
+        name = tonxara.9.i
+        ai_chance = { factor = 1 }
+
+        trigger = {
+            any_owned_province = {
+                is_core	= EDS
+            }
+            NOT = {
+                exists = EDS
+            }
+        }
+
+        hidden_effect = {
+            ROOT = {
+                country_event = {
+                    id = tonxara.10 #you should kill yourself NOW!
+                    days = 1
+                }
+                release_all_subjects = yes
+            }
+            every_province = {
+                remove_core = ROOT
+            }
+        }
+
+        release = EDS
+        switch_tag = EDS
+
+        hidden_effect = {
+            EDS = {
+                set_country_flag = givenBonusTonmo
+                capital_scope = {
+                    ROOT = {
+                        infantry = PREV
+                        infantry = PREV
+                        infantry = PREV
+                        cavalry = PREV
+                        cavalry = PREV
+                    }
+                }
+                add_adm_power = 100
+                add_dip_power = 100
+                add_mil_power = 100
+                add_manpower = 5
+            }
+            if = {
+                limit = {
+                    EDS = {
+                        total_development = 100
+                    }
+                }
+                EDS = {
+                    capital_scope = {
+                        ROOT = {
+                            infantry = PREV
+                            infantry = PREV
+                            infantry = PREV
+                            cavalry = PREV
+                            cavalry = PREV
+                        }
+                    }
+                    add_manpower = 5
+                }
+            }
+            if = {
+                limit = {
+                    EDS = {
+                        total_development = 150
+                    }
+                }
+                EDS = {
+                    capital_scope = {
+                        ROOT = {
+                            infantry = PREV
+                            infantry = PREV
+                            infantry = PREV
+                            cavalry = PREV
+                            cavalry = PREV
+                        }
+                    }
+                    add_manpower = 5
+                }
+            }
+        }
+    }
+
+    option = { #Yati
+        name = tonxara.9.i
+        ai_chance = { factor = 1 }
+
+        trigger = {
+            any_owned_province = {
+                is_core	= YIT
+            }
+            NOT = {
+                exists = YIT
+            }
+        }
+
+        hidden_effect = {
+            ROOT = {
+                country_event = {
+                    id = tonxara.10 #you should kill yourself NOW!
+                    days = 1
+                }
+                release_all_subjects = yes
+            }
+            every_province = {
+                remove_core = ROOT
+            }
+        }
+
+        release = YIT
+        switch_tag = YIT
+
+        hidden_effect = {
+            YIT = {
+                set_country_flag = givenBonusTonmo
+                capital_scope = {
+                    ROOT = {
+                        infantry = PREV
+                        infantry = PREV
+                        infantry = PREV
+                        cavalry = PREV
+                        cavalry = PREV
+                    }
+                }
+                add_adm_power = 100
+                add_dip_power = 100
+                add_mil_power = 100
+                add_manpower = 5
+            }
+            if = {
+                limit = {
+                    YIT = {
+                        total_development = 100
+                    }
+                }
+                YIT = {
+                    capital_scope = {
+                        ROOT = {
+                            infantry = PREV
+                            infantry = PREV
+                            infantry = PREV
+                            cavalry = PREV
+                            cavalry = PREV
+                        }
+                    }
+                    add_manpower = 5
+                }
+            }
+            if = {
+                limit = {
+                    YIT = {
+                        total_development = 150
+                    }
+                }
+                YIT = {
+                    capital_scope = {
+                        ROOT = {
+                            infantry = PREV
+                            infantry = PREV
+                            infantry = PREV
+                            cavalry = PREV
+                            cavalry = PREV
+                        }
+                    }
+                    add_manpower = 5
+                }
+            }
+        }
+    }
+
     option = { #Rumay
         name = tonxara.9.j
         ai_chance = { factor = 1 }
@@ -3090,6 +3264,8 @@ country_event = { #kill tonxara
         release = BAS #
         release = KMI #
         release = HOX #
+        release = EDS #
+        release = YIT #
         ################## releasables (these can also be played)
         #release = KLL #
         #release = YBM #
@@ -3704,6 +3880,40 @@ country_event = { #nhoma death
 
     option = {
         name = tonxara.19.a
+        ai_chance = { factor = 1 }
+    }
+}
+
+country_event = { #kisholi death
+    id = tonxara.20
+    title = tonxara.20.t
+    picture = WAR_OF_THE_ROSES_eventPicture
+    desc = tonxara.20.d
+    hidden = yes
+    fire_only_once = yes
+
+    trigger = {
+        tag = KSL
+        ai = yes
+        NOT = {
+            num_of_owned_provinces_with	= {
+                value = 50
+                superregion = jasua_superregion
+            }
+        }
+    }
+
+    immediate = {
+        country_event = {
+            id = tonxara.10
+        }
+        every_province = {
+            remove_core = KSL
+        }
+    }
+
+    option = {
+        name = tonxara.20.a
         ai_chance = { factor = 1 }
     }
 }

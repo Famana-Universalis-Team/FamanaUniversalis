@@ -129,8 +129,10 @@ fas_1 = {
 			yatia_area = { add_permanent_claim = ROOT }
 			unnamed_area_40 = { add_permanent_claim = ROOT }
 			verko_area = { add_permanent_claim = ROOT }
-			oearan_area = { add_permanent_claim = ROOT }
-			nikat_area = { add_permanent_claim = ROOT }
+			north_nakoa_area = { add_permanent_claim = ROOT }
+			nakoa_area = { add_permanent_claim = ROOT }
+			5524 = { add_permanent_claim = ROOT }
+			5520 = { add_permanent_claim = ROOT }
 			add_country_modifier = {
 				name = fas_ravsho_migrations
 				duration = 9125
@@ -162,12 +164,18 @@ fas_1 = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			oearan_area = {
+			north_nakoa_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			nikat_area = {
+			nakoa_area = {
 				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			5524 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			5520 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
@@ -182,8 +190,10 @@ fas_1 = {
 				area = yatia_area
 				area = unnamed_area_40
 				area = verko_area
-				area = oearan_area
-				area = nikat_area
+				area = north_nakoa_area
+				area = nakoa_area
+				province_id = 5520
+				province_id = 5524
 			}
 		}
 	}
@@ -192,11 +202,11 @@ fas_1 = {
 		icon = mission_conquer_novgorod
 		required_missions = {fas_into_aresia}
 		trigger = {
-			nakoa_area = {
+			nikat_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			north_nakoa_area = {
+			oearan_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -237,8 +247,8 @@ fas_1 = {
 		provinces_to_highlight = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 			OR = {
-				area = nakoa_area
-				area = north_nakoa_area
+				area = nikat_area
+				area = oearan_area
 				area = govrrol_area
 				area = jassine_area
 				area = jiat_area
@@ -564,6 +574,34 @@ fas_2 = {
 				name = fas_more_cav
 				duration = -1
 			}
+			add_country_modifier = {
+        	    name = fashran_conquest_boost
+        	    duration = 1825
+        	}
+			if = {
+        	    limit = {
+        	        ai = yes
+        	    }
+        	    add_country_modifier = {
+        	        name = fashran_conquest_boost_AI
+        	        duration = 1825
+        	    }
+        	    every_country = {
+        	        limit = {
+        	            is_subject = no
+        	            capital_scope = {
+        	                superregion = jasua_superregion
+        	            }
+        	        }
+        	        ROOT = {
+        	            set_ai_attitude = {
+        	                attitude = attitude_hostile
+        	                who = PREV
+        	                locked = yes
+        	            }
+        	        }
+        	    }
+        	}
 		}
 		provinces_to_highlight = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
@@ -599,6 +637,34 @@ fas_2 = {
 			ga_xal_superregion = {
 				discover_country = FAS
 			}
+			add_country_modifier = {
+        	    name = fashran_conquest_boost
+        	    duration = 1825
+        	}
+			if = {
+        	    limit = {
+        	        ai = yes
+        	    }
+        	    add_country_modifier = {
+        	        name = fashran_conquest_boost_AI
+        	        duration = 1825
+        	    }
+        	    every_country = {
+        	        limit = {
+        	            is_subject = no
+        	            capital_scope = {
+        	                superregion = ga_xal_superregion
+        	            }
+        	        }
+        	        ROOT = {
+        	            set_ai_attitude = {
+        	                attitude = attitude_hostile
+        	                who = PREV
+        	                locked = yes
+        	            }
+        	        }
+        	    }
+        	}
 		}
 		provinces_to_highlight = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
@@ -1152,6 +1218,19 @@ fas_4 = {
 				add_claim = ROOT
 				discover_country = ROOT
 			}
+			add_country_modifier = {
+        	    name = fashran_conquest_boost
+        	    duration = 1825
+        	}
+			if = {
+        	    limit = {
+        	        ai = yes
+        	    }
+        	    add_country_modifier = {
+        	        name = fashran_conquest_boost_AI
+        	        duration = 1825
+        	    }
+        	}
 		}
 		provinces_to_highlight = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
