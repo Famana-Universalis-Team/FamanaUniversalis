@@ -175,38 +175,6 @@ ai_diplomat = {
 			total_development = 100
 		}
 		modifier = {
-			factor = 2
-			tag = HAB
-		}		
-		modifier = {
-			factor = 2
-			tag = FRA
-		}		
-		modifier = {
-			factor = 3
-			tag = BYZ
-		}
-		modifier = {
-			factor = 5
-			tag = PAP
-		}		
-		modifier = {
-			factor = 5
-			tag = MNG
-		}
-		modifier = {
-			factor = 10
-			tag = KOR
-		}
-		modifier = {
-			factor = 3
-			OR = {
-				tag = ARA
-				tag = CAS
-			}
-			NOT = { is_year = 1500 }
-		}
-		modifier = {
 			factor = 5
 			has_reform = free_city
 		}
@@ -314,10 +282,6 @@ ai_militarist = {
 			}
 		}
 		modifier = {
-			factor = 2
-			tag = MCH
-		}
-		modifier = {
 			factor = 100
 			invasion_nation = yes
 		}
@@ -344,36 +308,6 @@ ai_militarist = {
 		modifier = {
 			factor = 2
 			is_march = yes
-		}
-		modifier = {
-			factor = 2
-			OR = {
-				tag = MOS
-				tag = RUS
-				tag = TUR
-				tag = CSU
-			}
-		}			
-		modifier = {
-			factor = 0.5
-			tag = FRA
-		}	
-		modifier = {
-			factor = 0.5
-			tag = PAP
-		}		
-		modifier = {
-			factor = 0.5
-			tag = MNG
-		}
-		modifier = {
-			factor = 0.1
-			tag = KOR
-		}	
-		modifier = {
-			factor = 100
-			religion = nahuatl
-			is_religion_reformed = no
 		}
 		modifier = {
 			factor = 0.5
@@ -518,18 +452,6 @@ ai_colonialist = {
 		modifier = {
 			factor = 0
 			NOT = { num_of_colonists = 1 }
-		}
-		modifier = {
-			factor = 3
-			tag = POR
-		}
-		modifier = {
-			factor = 2
-			tag = CAS
-		}
-		modifier = {
-			factor = 2
-			tag = SPA
 		}
 	}
 	icon = 5

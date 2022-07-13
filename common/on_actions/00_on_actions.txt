@@ -510,14 +510,14 @@ on_new_monarch = {
 			remove_province_modifier = home_of_consort
 		}
 	}
-	if = {
-		limit = {
-			NOT = { has_dlc = "Mandate of Heaven" }
-			has_country_modifier = the_mandate_of_heaven
-			NOT = { legitimacy = 80 }
-		}
-		country_event = { id = china_events.32 }	# History of last ruler
-	}
+	#if = {
+	#	limit = {
+	#		NOT = { has_dlc = "Mandate of Heaven" }
+	#		has_country_modifier = the_mandate_of_heaven
+	#		NOT = { legitimacy = 80 }
+	#	}
+	#	country_event = { id = china_events.32 }	# History of last ruler
+	#}
 	# ambrosian_republic_effect = yes
 	succession_culture_religion_effect = yes
 	sheik_ul_islam_effect = yes
