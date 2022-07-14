@@ -1055,7 +1055,7 @@ country_event = { #tonxara.9, this event will let you pick your new country or g
     }
 
     option = { #Edesul
-        name = tonxara.9.i
+        name = tonxara.9.ed
         ai_chance = { factor = 1 }
 
         trigger = {
@@ -1142,7 +1142,7 @@ country_event = { #tonxara.9, this event will let you pick your new country or g
     }
 
     option = { #Yati
-        name = tonxara.9.i
+        name = tonxara.9.yt
         ai_chance = { factor = 1 }
 
         trigger = {
@@ -3378,6 +3378,8 @@ country_event = { #Bonus for others
             tag = BLU 
             tag = IPK 
             tag = MMM 
+            tag = EDS
+            tag = YIT
         }
     }
 
@@ -3727,6 +3729,8 @@ country_event = {
         release = BAS #
         release = KMI #
         release = HOX #
+        release = EDS #
+        release = YIT #
         ################## releasables (these can also be played)
         #release = KLL #
         #release = YBM #
@@ -3897,7 +3901,7 @@ country_event = { #kisholi death
         ai = yes
         NOT = {
             num_of_owned_provinces_with	= {
-                value = 50
+                value = 30
                 superregion = jasua_superregion
             }
         }
