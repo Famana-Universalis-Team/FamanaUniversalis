@@ -498,15 +498,6 @@ fas_2 = {
 				name = fas_horde_arrives
 				duration = -1
 			}
-			if = {
-        	    limit = {
-        	        ai = yes
-        	    }
-        	    add_country_modifier = {
-        	        name = fashran_conquest_boost_AI
-        	        duration = 1825
-        	    }
-        	}
 		}
 		provinces_to_highlight = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
@@ -572,9 +563,11 @@ fas_2 = {
 					value = 10
 					region = jasua_region
 				}
-				owns_core_province = 5644
-				NOT = {
-					exists = YAB
+				OR = {
+					owns_core_province = 5644
+					NOT = {
+						exists = YAB
+					}
 				}
 			}
 		}

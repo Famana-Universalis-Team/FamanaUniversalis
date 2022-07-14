@@ -243,19 +243,18 @@ country_event = { #Nozumol
 	}
 
     trigger = {
-        AND = {
-            nuzoto_area = {
-                type = all
-                AND = {
-                    owned_by = ROOT
-                    religion = tonmo
-                }
-            }
-            toza_area = {
-                type = all
+        tag = FAS
+        nuzoto_area = {
+            type = all
+            AND = {
                 owned_by = ROOT
                 religion = tonmo
             }
+        }
+        toza_area = {
+            type = all
+            owned_by = ROOT
+            religion = tonmo
         }
     }
 
@@ -1389,8 +1388,8 @@ country_event = {
                             is_core = HOY
                         }
                     }
-                    region_for_scope_province = {
-                        NOT = {
+                    NOT = {
+                        region_for_scope_province = {
                             OR = {
                                 region = east_xalia_region
                                 region = moria_region
@@ -2341,6 +2340,25 @@ country_event = { #Event that spawns cores for releasables
                 }
                 add_core = EDS
             }
+            every_owned_province = {
+                limit = {
+                    NOT = {
+                        culture = Nakoan
+                    }
+                }
+                remove_core = NAK
+            }
+            every_owned_province = {
+                limit = {
+                    region = aresia_region
+                }
+                remove_core = SZI
+                remove_core = MOY
+                remove_core = OER
+                remove_core = NIK
+                remove_core = LCT
+                remove_core = VRK
+            }
         }
     }
     option = {
@@ -2357,6 +2375,50 @@ country_event = { #Event that spawns cores for releasables
                     }
                 }
                 add_local_autonomy = 50
+            }
+            every_owned_province = {
+                limit = {
+                    OR = {
+                        province_id = 5521
+                        province_id = 5606
+                        province_id = 5522
+                        province_id = 5523
+                    }
+                }
+                add_core = OER
+            }
+            every_owned_province = {
+                limit = {
+                    OR = {
+                        province_id = 5520
+                    }
+                }
+                add_core = SZI
+            }
+            every_owned_province = {
+                limit = {
+                    OR = {
+                        province_id = 5524
+                    }
+                }
+                add_core = MOY
+            }
+            every_owned_province = {
+                limit = {
+                    OR = {
+                        province_id = 5526
+                        province_id = 5527
+                    }
+                }
+                add_core = NIK
+            }
+            every_owned_province = {
+                limit = {
+                    OR = {
+                        province_id = 5525
+                    }
+                }
+                add_core = LCT
             }
         }
     }

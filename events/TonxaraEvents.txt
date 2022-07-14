@@ -3266,6 +3266,13 @@ country_event = { #kill tonxara
         release = HOX #
         release = EDS #
         release = YIT #
+        release = LCT #
+        release = NIK #
+        release = OER #
+        release = MOY #
+        release = SZI #
+        release = NAK #
+        release = BLK #
         ################## releasables (these can also be played)
         #release = KLL #
         #release = YBM #
@@ -3339,6 +3346,7 @@ country_event = { #Bonus for others
     }
 
     trigger = {
+        is_year = 320
         NOT = {
             is_year = 360
         }
@@ -3694,6 +3702,11 @@ country_event = {
     hidden = yes
 
     trigger = {
+        OR = {
+            tag = NHM
+            tag = JFX
+            tag = KSL
+        }
         NOT = {
             num_of_owned_provinces_with	= {
                 value = 15
@@ -3731,6 +3744,21 @@ country_event = {
         release = HOX #
         release = EDS #
         release = YIT #
+        release = LCT #
+        release = NIK #
+        release = OER #
+        release = MOY #
+        release = SZI #
+        release = NAK #
+        release = BLK #
+        if = {
+            limit = {
+                any_owned_province = {
+                    is_core = KLG
+                }
+            }
+            release = KLG
+        }
         ################## releasables (these can also be played)
         #release = KLL #
         #release = YBM #
