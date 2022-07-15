@@ -14,6 +14,9 @@ country_decisions = {
 			OR = {
 				region = maky_region
 			}
+			NOT = {
+				is_empty = yes
+			}
 			OR = {
 				NOT = { owned_by = ROOT }
 				is_city = no
@@ -28,6 +31,9 @@ country_decisions = {
 			}			
 			owns_all_provinces = {
     			region = maky_region
+				NOT = {
+					is_empty = yes
+				}
 			}
 			adm_power = 100
 			dip_power = 100

@@ -6,8 +6,8 @@ country_event = {
 	picture = EXPLORERS_eventPicture
 	desc = fce.1.d
 	
-	trigger = { 
-		is_year = 220
+	trigger = {
+		culture_group = Emastalian
 		NOT = {
 			AND = {
 				tag = INI
@@ -19,10 +19,10 @@ country_event = {
 				}
 			}
 		}
+		is_year = 220
 		NOT = {
 			is_year = 250
 		}
-		culture_group = Emastalian
 		NOT = {
 			has_country_flag = has_had_fce1
 		}

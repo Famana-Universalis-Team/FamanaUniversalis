@@ -222,9 +222,9 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
+		owns = 5493
 		is_year = 291
 		NOT = { is_year = 292 }
-		owns = 5493
 	}
 	
 	mean_time_to_happen = {
@@ -458,12 +458,12 @@ country_event = {
 	major = yes
 	
 	trigger = {
-		5196 = {
-			owned_by = FAS
-		}
 		OR = {
 			tag = SKT
 			tag = NAF
+		}
+		5196 = {
+			owned_by = FAS
 		}
 	}
 
@@ -1196,8 +1196,8 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		is_year = 225
 		tag = BLK
+		is_year = 225
 		is_subject_of = FAS
 		BLK = {
 			ai = yes
@@ -1277,7 +1277,7 @@ country_event = { #Kalargan uprising
 		highlight = yes
 		5488 = {
 			spawn_rebels = {
-				size = 2
+				size = 1
 				type = nationalist_rebels
 			}
 		}
@@ -1354,9 +1354,9 @@ country_event = { #bruh
 	is_triggered_only = yes
 
 	trigger = {
+		tag = SKT
         NOT = { is_year = 213 }
 		dynasty = "Noy"
-        tag = SKT
     }
 
 	immediate = {
@@ -1379,8 +1379,8 @@ country_event = { #kinvirel helvanists setup
 	hidden = yes
 
 	trigger = {
-        NOT = { is_year = 213 }
 		tag = KIN
+        NOT = { is_year = 213 }
     }
 
 	immediate = {

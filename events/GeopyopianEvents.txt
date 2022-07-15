@@ -11,6 +11,7 @@ country_event = {
     is_triggered_only = yes
 
     trigger = {
+		tag = GEP
         NOT = { is_year = 213 }
 		NOT = {
 			OR = {
@@ -22,7 +23,6 @@ country_event = {
 				has_country_modifier = gep_navy
 			}
 		}
-        tag = GEP
     }
 
     immediate = {

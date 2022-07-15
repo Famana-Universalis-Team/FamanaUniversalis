@@ -3589,6 +3589,9 @@ country_decisions = {
 				value = 8
 				region = stroktur_region
 			}
+			NOT = {
+				num_of_cities = 26
+			}
 		}
 		effect = {
 			if = {

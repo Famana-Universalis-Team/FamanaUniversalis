@@ -7,11 +7,11 @@ country_event = {
 	picture = RELIGION_eventPicture
 
 	trigger = {
+		religion = morian
 		is_year = 225
 		NOT = {
 			is_year = 280
 		}
-		religion = morian
 		NOT = {
 			has_country_flag = has_had_arism
 		}
@@ -117,11 +117,11 @@ country_event = {
 	picture = RELIGIOUS_TURMOIL_eventPicture
 
 	trigger = {
+		religion = shirian
 		is_year = 230
 		NOT = {
 			is_year = 245
 		}
-		religion = shirian
 		NOT = {
 			has_country_flag = has_had_rastrayvarism
 		}
@@ -162,11 +162,11 @@ country_event = {
 	hidden = yes
 
 	trigger = {
+		owns = 5377
 		had_global_flag	= {
 			flag = rastrayvar_control_flag
 			days = 1825
 		}
-		owns = 5377
 	}
 
 	mean_time_to_happen = {

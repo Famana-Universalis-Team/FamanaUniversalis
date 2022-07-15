@@ -57,7 +57,7 @@ hold_war_ceremonies_aspect = {
 
 raise_horde_aspect = {
 	sprite = "GFX_raise_horde_icon"
-	cost = 100
+	cost = 150
 	trigger = {
 		NOT = { manpower_percentage	= 0.90 }
 	}
