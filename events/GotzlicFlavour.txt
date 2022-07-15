@@ -1,58 +1,821 @@
 namespace = gotz
-#
-##Leronya demands subjugation
-#country_event = {
-#    id = gotz.1
-#    title = gotz.1.t
-#    desc = gotz.1.desc
-#    picture = BATTLE_eventPicture
-#	fire_only_once = yes
-#
-#    mean_time_to_happen = {
-#		months = 60
-#	}
-#
-#    trigger = {
-#        is_year = 240
-#        tag = LER
-#    }
-#
-#    immediate = {
-#    }
-#
-#    option = {
-#        name = gotz.1.a
-#        ai_chance = { factor = 0.8 }
-#        EHZ = {
-#            country_event = { 
-#                id = gotz.2.a
-#            }
-#        }
-#    }
-#    option = {
-#        name = gotz.1.b
-#        ai_chance = { factor = 0.2 }
-#    }
-#}
-#
-##EHZ response
-#country_event = {
-#    id = gotz.2
-#    title = gotz.2.t
-#    desc = gotz.2.desc
-#    picture = BATTLE_eventPicture
-#	fire_only_once = yes
-#    is_triggered_only = yes
-#
-#    immediate = {
-#    }
-#
-#    option = {
-#        name = gotz.2.a
-#        ai_chance = { factor = 1 }
-#    }
-#    option = {
-#        name = gotz.2.b
-#        ai_chance = { factor = 1 }
-#    }
-#}
+
+#Leronya demands subjugation
+country_event = {
+    id = gotz.1
+    title = gotz.1.t
+    desc = gotz.1.desc
+    picture = BATTLE_eventPicture
+	fire_only_once = yes
+
+    mean_time_to_happen = {
+		months = 60
+	}
+
+    trigger = {
+        NOT = {
+            has_global_flag = leronya_gone
+        }
+        is_year = 240
+        tag = LER
+    }
+
+    immediate = {
+    }
+
+    option = {
+        name = gotz.1.a
+        ai_chance = { factor = 8 }
+        EHZ = {
+            country_event = { 
+                id = gotz.2
+            }
+        }
+    }
+    option = {
+        name = gotz.1.b
+        ai_chance = { factor = 2 }
+        every_country = {
+            limit = {
+                capital_scope = {
+                    OR = {
+                        region_for_scope_province = {
+                            region = gotzlic_region
+                        }
+                        region_for_scope_province = {
+                            region = east_gotzlic_region
+                        }
+                        region_for_scope_province = {
+                            region = south_gotzlic_region
+                        }
+                    }
+                }
+            }
+            add_opinion = {
+                who = LER
+                modifier = good_chungus_leronya
+            }
+        }
+    }
+}
+
+#EHZ response
+country_event = {
+    id = gotz.2
+    title = gotz.2.t
+    desc = gotz.2.desc
+    picture = BATTLE_eventPicture
+	fire_only_once = yes
+    is_triggered_only = yes
+
+    immediate = {
+    }
+
+    option = {
+        name = gotz.2.a
+        ai_chance = {
+            factor = 2
+            modifier = {
+				factor = 4
+				army_strength = {
+                	who = LER
+                	value = 0.8
+                }
+			}
+            modifier = {
+				factor = 8
+				army_strength = {
+                	who = LER
+                	value = 1
+                }
+			}
+        }
+        LER = {
+            country_event = { 
+                id = gotz.3
+            }
+        }
+    }
+    option = {
+        name = gotz.2.b
+        ai_chance = {
+            factor = 8
+            modifier = {
+				factor = 16
+				army_strength = {
+                	who = LER
+                	value = 0.5
+                }
+			}
+            modifier = {
+				factor = 1000
+				NOT = {
+                    army_strength = {
+                    	who = LER
+                    	value = 0.5
+                    }
+                }
+			}
+        }
+        LER = {
+            country_event = { 
+                id = gotz.4
+            }
+        }
+    }
+}
+
+#LER declares war or backs off
+country_event = {
+    id = gotz.3
+    title = gotz.3.t
+    desc = gotz.3.desc
+    picture = BATTLE_eventPicture
+	fire_only_once = yes
+    is_triggered_only = yes
+
+    immediate = {
+    }
+
+    option = {
+        name = gotz.3.a
+        ai_chance = { factor = 1 }
+        add_prestige = -10
+        add_legitimacy = -10
+    }
+    option = {
+        name = gotz.3.b
+        ai_chance = { factor = 9 }
+        EHZ = {
+            every_owned_province = {
+                add_claim = LER
+            }
+        }
+        declare_war_with_cb = {
+            who = EHZ
+            casus_belli = cb_vassalize_mission
+        }
+        6636 = {
+			limit = { 
+				is_empty = yes
+			}
+			create_colony = 1000
+			cede_province = LER
+			add_core = LER
+            random_list = {
+                33 = {
+                    add_base_tax = 1
+                }
+                33 = {
+                    add_base_production = 1
+                }
+                33 = {
+                    add_base_manpower = 1
+                }
+            }
+		}
+    }
+}
+
+#LER EHZ accepted subjugate
+country_event = {
+    id = gotz.4
+    title = gotz.4.t
+    desc = gotz.4.desc
+    picture = BATTLE_eventPicture
+	fire_only_once = yes
+    is_triggered_only = yes
+
+    immediate = {
+    }
+
+    option = {
+        name = gotz.4.a
+        ai_chance = { factor = 1 }
+        LER = {
+            vassalize = EHZ
+        }
+        6636 = {
+			limit = { 
+				is_empty = yes
+			}
+			create_colony = 1000
+			cede_province = LER
+			add_core = LER
+            random_list = {
+                33 = {
+                    add_base_tax = 1
+                }
+                33 = {
+                    add_base_production = 1
+                }
+                33 = {
+                    add_base_manpower = 1
+                }
+            }
+		}
+        add_prestige = 10
+    }
+}
+
+#Zubara demands hozy freedom
+country_event = {
+    id = gotz.5
+    title = gotz.5.t
+    desc = gotz.5.desc
+    picture = BATTLE_eventPicture
+	fire_only_once = yes
+
+    mean_time_to_happen = {
+		months = 30
+	}
+
+    trigger = {
+        NOT = {
+            has_global_flag = leronya_gone
+        }
+        is_year = 270
+        tag = ZUB
+        LER = {
+            OR = {
+                country_or_non_sovereign_subject_holds = 6547
+                country_or_non_sovereign_subject_holds = 6546
+            }
+        }
+    }
+
+    immediate = {
+    }
+
+    option = {
+        name = gotz.5.a
+        ai_chance = { factor = 1 }
+        LER = {
+            country_event = { 
+                id = gotz.7
+            }
+        }
+    }
+
+    option = {
+        name = gotz.5.b
+        ai_chance = { factor = 0 }
+        add_prestige = -10
+    }
+
+}
+
+#optimizing event
+country_event = {
+    id = gotz.6
+    title = gotz.6.t
+    desc = gotz.6.desc
+    picture = BATTLE_eventPicture
+	fire_only_once = yes
+
+    mean_time_to_happen = {
+		days = 1
+	}
+
+    trigger = {
+        is_year = 245
+        NOT = {
+            exists = LER
+        }
+    }
+
+    immediate = {
+        set_global_flag = leronya_gone
+    }
+
+    option = {
+        name = gotz.6.a
+        ai_chance = { factor = 1 }
+    }
+}
+
+#Leronya answers
+country_event = {
+    id = gotz.7
+    title = gotz.7.t
+    desc = gotz.7.desc
+    picture = BATTLE_eventPicture
+	fire_only_once = yes
+    is_triggered_only = yes
+
+    immediate = {
+    }
+
+    option = {
+        name = gotz.7.a
+        ai_chance = {
+            factor = 8
+            modifier = {
+				factor = 4
+				army_strength = {
+                	who = ZUB
+                	value = 0.8
+                }
+			}
+            modifier = {
+				factor = 8
+				army_strength = {
+                	who = LER
+                	value = 0.5
+                }
+			}
+        }
+        ZUB = {
+            country_event = { 
+                id = gotz.8
+            }
+        }
+    }
+    option = {
+        name = gotz.7.b
+        ai_chance = {
+            factor = 2
+            modifier = {
+				factor = 1
+				army_strength = {
+                	who = ZUB
+                	value = 1
+                }
+			}
+            modifier = {
+				factor = 0
+				army_strength = {
+                	who = LER
+                	value = 1.5
+                }
+			}
+        }
+        ZUB = {
+            country_event = { 
+                id = gotz.9
+            }
+        }
+    }
+}
+
+#Leronya denies
+country_event = {
+    id = gotz.8
+    title = gotz.8.t
+    desc = gotz.8.desc
+    picture = BATTLE_eventPicture
+	fire_only_once = yes
+    is_triggered_only = yes
+
+    immediate = {
+    }
+
+    option = { #pussy
+        name = gotz.8.a
+        ai_chance = { factor = 1 }
+        add_legitimacy = -10
+        if = {
+            limit = {
+                exists = NEN
+            }
+            NEN = {
+                add_trust = {
+                    who = ZUB
+                    value = -20
+                }
+            }
+        }
+        if = {
+            limit = {
+                exists = RST
+            }
+            RST = {
+                add_trust = {
+                    who = ZUB
+                    value = -20
+                }
+            }
+        }
+        if = {
+            limit = {
+                exists = WHZ
+            }
+            WHZ = {
+                add_trust = {
+                    who = ZUB
+                    value = -20
+                }
+            }
+        }
+        if = {
+            limit = {
+                exists = TOI
+            }
+            TOI = {
+                add_trust = {
+                    who = ZUB
+                    value = -20
+                }
+            }
+        }
+        add_trust = {
+            who = LER
+            value = -50
+            mutual = yes
+        }
+    }
+
+    option = { #war time
+        name = gotz.8.b
+        ai_chance = { factor = 9 }
+        6546 = {
+            add_core = WHZ
+        }
+        6547 = {
+            add_claim = ZUB
+        }
+        dethoni_area = {
+            add_claim = NEN
+        }
+        form_coalition_against = LER
+        WHZ = {
+            if = {
+                limit = {
+                    NOT = {
+                        alliance_with = LER
+                    }
+                }
+                form_coalition_against = LER
+            }
+        }
+        NEN = {
+            if = {
+                limit = {
+                    NOT = {
+                        alliance_with = LER
+                    }
+                }
+                form_coalition_against = LER
+            }
+        }
+        declare_war_with_cb = {
+            who = LER
+            casus_belli = cb_super_badboy
+        }
+        6634 = {
+			limit = { 
+				is_empty = yes
+			}
+			create_colony = 1000
+			cede_province = ZUB
+			add_core = ZUB
+            random_list = {
+                33 = {
+                    add_base_tax = 1
+                }
+                33 = {
+                    add_base_production = 1
+                }
+                33 = {
+                    add_base_manpower = 1
+                }
+            }
+		}
+        6645 = {
+			limit = { 
+				is_empty = yes
+			}
+			create_colony = 1000
+			cede_province = ZUB
+			add_core = ZUB
+            random_list = {
+                33 = {
+                    add_base_tax = 1
+                }
+                33 = {
+                    add_base_production = 1
+                }
+                33 = {
+                    add_base_manpower = 1
+                }
+            }
+		}
+        set_country_flag = zubara_war
+    }
+}
+
+#Leronya accepts
+country_event = {
+    id = gotz.9
+    title = gotz.9.t
+    desc = gotz.9.desc
+    picture = BATTLE_eventPicture
+	fire_only_once = yes
+    is_triggered_only = yes
+
+    immediate = {
+    }
+
+    option = {
+        name = gotz.9.a
+        ai_chance = { factor = 8 }
+        add_prestige = 10
+        add_legitimacy = 10
+        LER = {
+            release = EHZ
+        }
+        EHZ = {
+            grant_independence = yes
+        }
+        create_guarantee = EHZ
+        6634 = {
+			limit = { 
+				is_empty = yes
+			}
+			create_colony = 1000
+			cede_province = ZUB
+			add_core = ZUB
+            random_list = {
+                33 = {
+                    add_base_tax = 1
+                }
+                33 = {
+                    add_base_production = 1
+                }
+                33 = {
+                    add_base_manpower = 1
+                }
+            }
+		}
+        6645 = {
+			limit = { 
+				is_empty = yes
+			}
+			create_colony = 1000
+			cede_province = ZUB
+			add_core = ZUB
+            random_list = {
+                33 = {
+                    add_base_tax = 1
+                }
+                33 = {
+                    add_base_production = 1
+                }
+                33 = {
+                    add_base_manpower = 1
+                }
+            }
+		}
+    }
+}
+
+#Rastan expansion
+country_event = {
+    id = gotz.10
+    title = gotz.10.t
+    desc = gotz.10.desc
+    picture = BATTLE_eventPicture
+	fire_only_once = yes
+
+    trigger = {
+        is_year = 300
+        tag = RST
+    }
+
+    mean_time_to_happen = {
+        months = 36
+    }
+
+    option = {
+        name = gotz.10.a
+        ai_chance = { factor = 1 }
+        rosta_area = {
+			limit = { 
+				is_empty = yes
+			}
+			create_colony = 1000
+			cede_province = RST
+			add_core = RST
+		}
+        RST = {
+            country_event = {
+                id = gotz.11
+            }
+        }
+    }
+}
+
+#rosta dev event
+country_event = {
+    id = gotz.11
+    title = gotz.11.t
+    desc = gotz.11.desc
+    picture = BATTLE_eventPicture
+	is_triggered_only = yes
+    hidden = yes
+
+    immediate = {
+        random_owned_province = {
+            limit = {
+                AND = {
+                    area = rosta_area
+		        	NOT = {
+                        province_id = 6597
+                    }
+		        }
+            }
+            random_list = {
+                33 = {
+                    add_base_tax = 1
+                }
+                33 = {
+                    add_base_production = 1
+                }
+                33 = {
+                    add_base_manpower = 1
+                }
+            }
+        }
+        RST = {
+            country_event = {
+                id = gotz.12
+            }
+        }
+    }
+
+    option = {
+        name = gotz.11.a
+        ai_chance = { factor = 1 }
+    }
+}
+
+#rosta dev event 2
+country_event = {
+    id = gotz.12
+    title = gotz.12.t
+    desc = gotz.12.desc
+    picture = BATTLE_eventPicture
+	is_triggered_only = yes
+    hidden = yes
+
+    immediate = {
+        random_owned_province = {
+            limit = {
+                AND = {
+                    area = rosta_area
+		        	NOT = {
+                        province_id = 6597
+                    }
+		        }
+            }
+            random_list = {
+                33 = {
+                    add_base_tax = 1
+                }
+                33 = {
+                    add_base_production = 1
+                }
+                33 = {
+                    add_base_manpower = 1
+                }
+            }
+        }
+        RST = {
+            country_event = {
+                id = gotz.13
+            }
+        }
+    }
+
+    option = {
+        name = gotz.12.a
+        ai_chance = { factor = 1 }
+    }
+}
+
+#rosta dev event 3
+country_event = {
+    id = gotz.13
+    title = gotz.13.t
+    desc = gotz.13.desc
+    picture = BATTLE_eventPicture
+	is_triggered_only = yes
+    hidden = yes
+
+    immediate = {
+        random_owned_province = {
+            limit = {
+                AND = {
+                    area = rosta_area
+		        	NOT = {
+                        province_id = 6597
+                    }
+		        }
+            }
+            random_list = {
+                33 = {
+                    add_base_tax = 1
+                }
+                33 = {
+                    add_base_production = 1
+                }
+                33 = {
+                    add_base_manpower = 1
+                }
+            }
+        }
+        RST = {
+            country_event = {
+                id = gotz.14
+            }
+        }
+    }
+
+    option = {
+        name = gotz.13.a
+        ai_chance = { factor = 1 }
+    }
+}
+
+#rosta dev event 4
+country_event = {
+    id = gotz.14
+    title = gotz.14.t
+    desc = gotz.14.desc
+    picture = BATTLE_eventPicture
+	is_triggered_only = yes
+    hidden = yes
+
+    immediate = {
+        random_owned_province = {
+            limit = {
+                AND = {
+                    area = rosta_area
+		        	NOT = {
+                        province_id = 6597
+                    }
+		        }
+            }
+            random_list = {
+                33 = {
+                    add_base_tax = 1
+                }
+                33 = {
+                    add_base_production = 1
+                }
+                33 = {
+                    add_base_manpower = 1
+                }
+            }
+        }
+        RST = {
+            country_event = {
+                id = gotz.15
+            }
+        }
+    }
+
+    option = {
+        name = gotz.14.a
+        ai_chance = { factor = 1 }
+    }
+}
+
+#rosta dev event 5
+country_event = {
+    id = gotz.15
+    title = gotz.15.t
+    desc = gotz.15.desc
+    picture = BATTLE_eventPicture
+	is_triggered_only = yes
+    hidden = yes
+
+    immediate = {
+        random_owned_province = {
+            limit = {
+                AND = {
+                    area = rosta_area
+		        	NOT = {
+                        province_id = 6597
+                    }
+		        }
+            }
+            random_list = {
+                33 = {
+                    add_base_tax = 1
+                }
+                33 = {
+                    add_base_production = 1
+                }
+                33 = {
+                    add_base_manpower = 1
+                }
+            }
+        }
+    }
+
+    option = {
+        name = gotz.15.a
+        ai_chance = { factor = 1 }
+    }
+}
