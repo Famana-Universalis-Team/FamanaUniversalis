@@ -41,31 +41,29 @@ country_event = {
     major = yes
 
     trigger = {
-        AND = {
-            tag = RDU
-            is_year = 280
-            NOT = {
-                is_year = 350
-            }
-            liberty_desire = 20
-            RDU = {
-                AND = {
-                    is_subject_of = ORC
-                    owns_all_provinces = {
-                        OR = {
-                            area = nere_area
-                            area = kletvar_area
-                            area = area_57
-                            area = feemk_area
-                        }
-                        NOT = {
-                            any_owned_province = {
-                                NOT = {
-                                    area = nere_area
-                                    area = kletvar_area
-                                    area = area_57
-                                    area = feemk_area
-                                }
+        is_year = 280
+        NOT = {
+            is_year = 350
+        }
+        tag = RDU
+        liberty_desire = 20
+        RDU = {
+            AND = {
+                is_subject_of = ORC
+                owns_all_provinces = {
+                    OR = {
+                        area = nere_area
+                        area = kletvar_area
+                        area = area_57
+                        area = feemk_area
+                    }
+                    NOT = {
+                        any_owned_province = {
+                            NOT = {
+                                area = nere_area
+                                area = kletvar_area
+                                area = area_57
+                                area = feemk_area
                             }
                         }
                     }
@@ -186,27 +184,25 @@ country_event = {
 	picture = TRADE_GOODS_FURS_FISH_AND_SALT_eventPicture
 	desc = naravam.3.d
 	
-	trigger = { 
-		AND = {
-			NOT = {
-                tag = RDU
+	trigger = {
+        is_year = 300
+		NOT = {
+			is_year = 400
+		}
+		NOT = {
+            tag = RDU
+        }
+        culture_group = Naravami_C
+        if = {
+            limit = {
+                has_dlc = "Conquest of Paradise"
             }
-            if = {
-                limit = {
-                    has_dlc = "Conquest of Paradise"
-                }
-                NOT = {
-                    government = native
-                }
+            NOT = {
+                government = native
             }
-            is_year = 300
-			NOT = {
-				is_year = 400
-			}
-			culture_group = Naravami_C
-			NOT = {
-				has_country_flag = has_had_naravam3
-			}
+        }
+		NOT = {
+			has_country_flag = has_had_naravam3
 		}
 	}
 	
@@ -303,10 +299,10 @@ country_event = {
     fire_only_once = yes
 	
 	trigger = {
+        is_year = 350
         capital_scope = {
             region = eastern_naravam_region
         }
-        is_year = 350
         any_known_country = {
 			religion_group = lathvy_group
 		}

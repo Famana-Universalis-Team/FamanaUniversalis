@@ -98,14 +98,14 @@ country_event = { #lathvy conversion
 	picture = PRAYING_eventPicture
 	
 	trigger = {
+		is_year = 350
 		has_global_flag = LathvyConversionsStarted
-		NOT = { has_country_flag = lathvy_convert_fired }
-		NOT = { has_country_modifier = yomtanian_nation }
-        OR = {
+		OR = {
 			religion_group = north_estali
 			religion = animism
 		}
-		is_year = 350
+		NOT = { has_country_flag = lathvy_convert_fired }
+		NOT = { has_country_modifier = yomtanian_nation }
 		any_known_country = {
 			religion_group = lathvy_group
 		}

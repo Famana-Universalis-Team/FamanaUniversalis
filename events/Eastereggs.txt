@@ -9,8 +9,8 @@ country_event = {
 	picture = EP_MOAIS_eventPicture
 
 	trigger = {
-		tag = NPX
 		is_year = 305
+		tag = NPX
 	}
 	
 	mean_time_to_happen = {
@@ -71,8 +71,8 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		owns_core_province = 5203
 		is_year = 250
+		owns_core_province = 5203
 	}
 
 	mean_time_to_happen = {

@@ -907,11 +907,11 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		has_country_flag = makykay_repaired
 		OR = {
 			tag = VDY
 			tag = MKY
 		}
+		has_country_flag = makykay_repaired
 		owns_core_province = 5142
 	}
 
