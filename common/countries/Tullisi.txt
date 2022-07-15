@@ -1,0 +1,104 @@
+#Country Name: Please see filename.
+
+graphical_culture = westerngfx
+
+color = { 37  97  137 }
+
+historical_idea_groups = {
+	offensive_ideas
+	administrative_ideas
+	religious_ideas
+	innovativeness_ideas
+	diplomatic_ideas
+	trade_ideas
+	economic_ideas
+	quantity_ideas
+}
+
+historical_units = {
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+	swiss_landsknechten
+	dutch_maurician
+	austrian_tercio
+	austrian_grenzer
+	austrian_hussar
+	austrian_white_coat
+	austrian_jaeger
+	mixed_order_infantry
+	open_order_cavalry
+	napoleonic_square
+	napoleonic_lancers
+}
+
+monarch_names = {
+	"Beroro #3" = -1
+	"Nai #0" = -1
+	"Mida #0" = -1
+	"Uge #0" = -1
+	"Imia #0" = -1
+	"Gilnia #0" = -1
+	"Uaizbia #0" = -1
+	"Kaiamau #0" = -1
+	"Ordic #0" = 1
+	"Berber #0" = 1
+	"Odalco #0" = 1
+	"Ozgici #0" = 1
+	"Niabiame #0" = 1
+	"Nuolme #1" = 3
+	"Natuydai #0" = 1
+	"Tordou #2" = 2
+	"Munai #2" = 1
+	"Gyagyi #0" = 1
+	"Oydoytu #0" = 1
+	"Gyedaitau #0" = 1
+	"Aiypaito #0" = 1
+	"Cenudai #3" = 1
+	"Noboai #0" = 1
+	"Aimiate #0" = 1
+	"Aulnauzmu #0" = 1
+}
+
+leader_names = {
+	Ordic
+	Berber
+	Odalco
+	Ozgici
+	Niabiame
+	Nuolme
+	Natuydai
+	Tordou
+	Munai
+	Gyagyi
+	Oydoytu
+	Gyedaitau
+	Aiypaito
+	Cenudai
+	Noboai
+	Aimiate
+	Aulnauzmu
+}
+
+ship_names = {
+	Malgya
+	Munai
+	Imia
+	Gyagyi
+	Iau
+	Taio
+	Aygyu
+	Kuguno
+	Comugia
+	Nici
+	Urgyae
+	Nutunu
+}
+
+army_names = {
+	"Legion of $PROVINCE$" 
+}
+
+fleet_names = {
+	"Great Navy"
+}

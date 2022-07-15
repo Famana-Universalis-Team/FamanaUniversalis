@@ -1187,3 +1187,7 @@ orc_bail_out_ships = {
 orc_decentralisation = {
     global_autonomy = 0.05
 }
+
+orc_overextension_decreased = {
+    global_unrest = -2
+}

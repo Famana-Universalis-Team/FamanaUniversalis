@@ -149,3 +149,20 @@ country_event = {
 		add_prestige = 10
 	}
 }
+
+#BURY THE LIGHT DEEP WITHINNNNNNN
+country_event = {
+	id = eastereggs.6
+	title = eastereggs.6.t
+	desc = eastereggs.6.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	fire_only_once = yes
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = eastereggs.5.a
+		ai_chance = { factor = 5 }
+		add_prestige = 10
+	}
+}

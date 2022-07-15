@@ -210,6 +210,14 @@ country_event = {
 				country_event = {
 					id = gaxalf.6
 				}
+				if = {
+					limit = {
+						has_ruler = "Vergil"
+					}
+					country_event = {
+						id = eastereggs.6
+					}
+				}
 			}
 		}
 	}

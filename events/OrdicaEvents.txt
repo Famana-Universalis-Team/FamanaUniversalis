@@ -766,7 +766,7 @@ country_event = {
 			name = orc_no_ships
 			duration = -1
 		}
-		add_country_flag = dockyardStrike
+		set_country_flag = dockyardStrike
 	}
 	option = {
 		name = ordica.16.b
@@ -895,6 +895,7 @@ country_event = {
 		random_owned_province = {
 			noble_rebels = 2
 		}
+		set_country_flag = noblesNoAutonomy
 	}
 }
 
@@ -1342,59 +1343,119 @@ country_event = {
 		}
 	}
 }
-
+ 
 #Tullisi Pirates
 country_event = {
-	id = ordica.15
-	title = ordica.15.t
-	desc = ordica.15.d
-	picture = WOUNDED_SOLDIERS_eventPicture
+	id = ordica.23
+	title = ordica.23.t
+	desc = ordica.23.d
+	picture = CARIBBEAN_PIRATE_FORT_eventPicture
 	fire_only_once = yes
 
 	mean_time_to_happen = {
-		months = 8
+		months = 12
 	}
 
 	trigger = {
 		tag = ORC
 		has_global_flag = OrdicaDisaster
+		has_country_flag = dockyardStrike
+	}
+
+	immediate = {
+		hidden_effect = {
+			5719 = {
+				add_core = TUL
+				add_unrest = 4
+			}
+		}
 	}
 
 	option = {
-		name = ordica.15.c
+		name = ordica.23.a
+		ai_chance = { factor = 3 }
+		5719 = {
+			nationalist_rebels = 2
+		}
+	}
+	option = {
+		name = ordica.23.b
 		ai_chance = { factor = 1 }
+		5719 = {
+			cede_province = TUL
+		}
+		add_truce_with = TUL
+	}
+	option = {
+		name = ordica.23.c
+		ai_chance = { factor = 0 }
+		5719 = {
+			cede_province = TUL
+		}
+		add_truce_with = TUL
+		switch_tag = TUL
 	}
 }
 
 #Bafan Pirates
 country_event = {
-	id = ordica.15
-	title = ordica.15.t
-	desc = ordica.15.d
-	picture = WOUNDED_SOLDIERS_eventPicture
+	id = ordica.24
+	title = ordica.24.t
+	desc = ordica.24.d
+	picture = CARIBBEAN_PIRATE_FORT_eventPicture
 	fire_only_once = yes
 
 	mean_time_to_happen = {
-		months = 8
+		months = 12
 	}
 
 	trigger = {
 		tag = ORC
 		has_global_flag = OrdicaDisaster
+		has_country_flag = dockyardStrike
+	}
+
+	immediate = {
+		hidden_effect = {
+			5699 = {
+				add_core = BAF
+				add_unrest = 4
+			}
+		}
 	}
 
 	option = {
-		name = ordica.15.c
+		name = ordica.24.a
+		ai_chance = { factor = 3 }
+		5699 = {
+			nationalist_rebels = 2
+		}
+	}
+	option = {
+		name = ordica.24.b
 		ai_chance = { factor = 1 }
+		5699 = {
+			cede_province = BAF
+		}
+		add_truce_with = BAF
+	}
+	option = {
+		name = ordica.24.c
+		ai_chance = { factor = 0 }
+		5699 = {
+			cede_province = BAF
+		}
+		add_truce_with = BAF
+		switch_tag = BAF
 	}
 }
 
 #Yuvlar indepndence
 country_event = {
-	id = ordica.15
-	title = ordica.15.t
-	desc = ordica.15.d
-	picture = WOUNDED_SOLDIERS_eventPicture
+	id = ordica.25
+	title = ordica.25.t
+	desc = ordica.25.d
+	picture = REVOLUTION_eventPicture
 	fire_only_once = yes
 
 	mean_time_to_happen = {
@@ -1404,43 +1465,196 @@ country_event = {
 	trigger = {
 		tag = ORC
 		has_global_flag = OrdicaDisaster
+		OR = {
+			NOT = {
+				OR = {
+					has_country_flag = allowedNoblesNoTaxes
+					has_country_flag = didntPushNobles
+				}
+			}
+			has_country_flag = noblesNoAutonomy
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					OR = {
+						region = walara_region
+						culture = Yuvlan
+					}
+				}
+				add_core = YUV
+				cede_province = YUV
+				YUV = {
+					infantry = PREV
+				}
+			}
+			5294 = {
+				add_building = fort_16th
+			}
+		}
 	}
 
 	option = {
-		name = ordica.15.c
+		name = ordica.25.a
 		ai_chance = { factor = 1 }
+		declare_war_with_cb = {
+			who = YUV
+			casus_belli = cb_vassalize_mission
+		}
+	}
+	option = { #leave it be
+		name = ordica.25.b
+		ai_chance = { factor = 1 }
+		add_truce_with = YUV
+		YUV = {
+			every_owned_province = {
+				limit = {
+					is_core = ORC
+				}
+				remove_core = ORC
+				add_claim = ORC
+			}
+		}
 	}
 }
 
 #Pextans get pissy
 country_event = {
-	id = ordica.15
-	title = ordica.15.t
-	desc = ordica.15.d
-	picture = WOUNDED_SOLDIERS_eventPicture
+	id = ordica.26
+	title = ordica.26.t
+	desc = ordica.26.d
+	picture = DEBATE_REPUBLICAN_eventPicture
 	fire_only_once = yes
 
 	mean_time_to_happen = {
-		months = 8
+		months = 16
 	}
 
 	trigger = {
 		tag = ORC
 		has_global_flag = OrdicaDisaster
+		any_owned_province = {
+			region = pextoglazia_region
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					region = pextoglazia_region
+				}
+				add_unrest = 10
+			}
+			every_owned_province = {
+				limit = {
+					culture = Glasian
+				}
+				add_core = LOM
+			}
+			unnamed_pexto_3 = {
+				add_core = POM
+			}
+			pomlen_area = {
+				add_core = POM
+			}
+			kimina_area = {
+				add_core = POM
+			}
+			unnamed_pexto_2 = {
+				add_core = FST
+			}
+			unnamed_pexto_3 = {
+				add_core = POM
+			}
+			unnamed_pexto_4 = {
+				add_core = REN
+			}
+			porlam_area = {
+				add_core = KRH
+			}
+			5339 = {
+				remove_core = KRH
+				add_core = REN
+			}
+			5309 = {
+				remove_core = REN
+				add_core = KRH
+			}
+			mofemi_morsum_area = {
+				add_core = RND
+				add_core = RNP
+			}
+			5352 = {
+				remove_core = RND
+				add_core = RNP
+			}
+			unnamed_pexto_1 = {
+				add_core = RNP
+			}
+			5356 = {
+				add_core = RND
+			}
+		}
 	}
 
 	option = {
-		name = ordica.15.c
+		name = ordica.26.a
+		ai_chance = { factor = 3 }
+		random_owned_province = {
+			limit = {
+				region = pextoglazia_region
+			}
+			nationalist_rebels = 3
+		}
+		random_owned_province = {
+			limit = {
+				region = pextoglazia_region
+			}
+			nationalist_rebels = 3
+		}
+		random_owned_province = {
+			limit = {
+				region = pextoglazia_region
+			}
+			nationalist_rebels = 3
+		}
+		every_owned_province = {
+			limit = {
+				region = pextoglazia_region
+			}
+			add_province_modifier = {
+				name = orc_pextans_angry
+				duration = 3650
+			}
+		}
+	}
+	option = {
+		name = ordica.26.b
 		ai_chance = { factor = 1 }
+		release = LOM
+		release = KRH
+		release = ROL
+		release = FST
+		release = POM
+		release = RND
+		release = RNP
+		add_country_modifier = {
+			name = orc_overextension_decreased
+			duration = 3650
+		}
 	}
 }
 
 #Scholars are angry
 country_event = {
-	id = ordica.15
-	title = ordica.15.t
-	desc = ordica.15.d
-	picture = WOUNDED_SOLDIERS_eventPicture
+	id = ordica.27
+	title = ordica.27.t
+	desc = ordica.27.d
+	picture = WESTERNISATION_eventPicture
 	fire_only_once = yes
 
 	mean_time_to_happen = {
@@ -1453,14 +1667,19 @@ country_event = {
 	}
 
 	option = {
-		name = ordica.15.c
+		name = ordica.27.a
+		ai_chance = { factor = 1 }
+	}
+
+	option = {
+		name = ordica.27.b
 		ai_chance = { factor = 1 }
 	}
 }
 
 #Religious schism
 country_event = {
-	id = ordica.15
+	id = ordica.28
 	title = ordica.15.t
 	desc = ordica.15.d
 	picture = WOUNDED_SOLDIERS_eventPicture
@@ -1476,16 +1695,16 @@ country_event = {
 	}
 
 	option = {
-		name = ordica.15.c
+		name = ordica.28.a
 		ai_chance = { factor = 1 }
 	}
 }
 
 #Ro-troll-ni
 country_event = {
-	id = ordica.15
-	title = ordica.15.t
-	desc = ordica.15.d
+	id = ordica.29
+	title = ordica.29.t
+	desc = ordica.29.d
 	picture = WOUNDED_SOLDIERS_eventPicture
 	fire_only_once = yes
 
@@ -1499,16 +1718,16 @@ country_event = {
 	}
 
 	option = {
-		name = ordica.15.c
+		name = ordica.29.a
 		ai_chance = { factor = 1 }
 	}
 }
 
 #Religious rebels
 country_event = {
-	id = ordica.15
-	title = ordica.15.t
-	desc = ordica.15.d
+	id = ordica.30
+	title = ordica.30.t
+	desc = ordica.30.d
 	picture = WOUNDED_SOLDIERS_eventPicture
 	fire_only_once = yes
 
@@ -1522,16 +1741,16 @@ country_event = {
 	}
 
 	option = {
-		name = ordica.15.c
+		name = ordica.30.a
 		ai_chance = { factor = 1 }
 	}
 }
 
 #Everyone is angry if you keep trying to use force
 country_event = {
-	id = ordica.15
-	title = ordica.15.t
-	desc = ordica.15.d
+	id = ordica.31
+	title = ordica.31.t
+	desc = ordica.31.d
 	picture = WOUNDED_SOLDIERS_eventPicture
 	fire_only_once = yes
 
@@ -1545,16 +1764,16 @@ country_event = {
 	}
 
 	option = {
-		name = ordica.15.c
+		name = ordica.31.a
 		ai_chance = { factor = 1 }
 	}
 }
 
 #Ordisa - Nobles get representation, Scholarly enlightenment, Religious reform
 country_event = {
-	id = ordica.15
-	title = ordica.15.t
-	desc = ordica.15.d
+	id = ordica.32
+	title = ordica.32.t
+	desc = ordica.32.d
 	picture = WOUNDED_SOLDIERS_eventPicture
 	fire_only_once = yes
 
@@ -1568,16 +1787,16 @@ country_event = {
 	}
 
 	option = {
-		name = ordica.15.c
+		name = ordica.32.a
 		ai_chance = { factor = 1 }
 	}
 }
 
 #Maldans run off into the steppe - Qubare if no Zubara
 country_event = {
-	id = ordica.15
-	title = ordica.15.t
-	desc = ordica.15.d
+	id = ordica.33
+	title = ordica.33.t
+	desc = ordica.33.d
 	picture = WOUNDED_SOLDIERS_eventPicture
 	fire_only_once = yes
 
@@ -1591,16 +1810,16 @@ country_event = {
 	}
 
 	option = {
-		name = ordica.15.c
+		name = ordica.33.a
 		ai_chance = { factor = 1 }
 	}
 }
 
 #Total collapse if you keep failing
 country_event = {
-	id = ordica.15
-	title = ordica.15.t
-	desc = ordica.15.d
+	id = ordica.34
+	title = ordica.34.t
+	desc = ordica.34.d
 	picture = WOUNDED_SOLDIERS_eventPicture
 	fire_only_once = yes
 
@@ -1614,16 +1833,16 @@ country_event = {
 	}
 
 	option = {
-		name = ordica.15.c
+		name = ordica.34.a
 		ai_chance = { factor = 1 }
 	}
 }
 
 #End of the disaster after ~3 years
 country_event = {
-	id = ordica.15
-	title = ordica.15.t
-	desc = ordica.15.d
+	id = ordica.35
+	title = ordica.35.t
+	desc = ordica.35.d
 	picture = WOUNDED_SOLDIERS_eventPicture
 	fire_only_once = yes
 
@@ -1637,7 +1856,7 @@ country_event = {
 	}
 
 	option = {
-		name = ordica.15.c
+		name = ordica.35.a
 		ai_chance = { factor = 1 }
 	}
 }
