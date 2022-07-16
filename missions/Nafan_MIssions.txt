@@ -130,13 +130,21 @@ eclipse_3 = {
         icon = naf_eclipse_icon
         required_missions = { }
         trigger = {
-            custom_trigger_tooltip = {
+            if = {
+                limit = {
+                    tag = KLG
+                }
+                tag = KLG
+            }
+            else = {
+                custom_trigger_tooltip = {
                 tooltip = ECLIPSE_FIRED_MISSION
                 OR = {
                     has_country_flag = getNafanMissions
                     has_country_flag = getKalarganMissions
                     has_country_flag = getStrokturMissions
                 }
+            }
             }
         }
         effect = {

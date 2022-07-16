@@ -170,6 +170,9 @@ umz_2 = {
            if = {
 				limit = {
 					exists = RIA
+					RIA = {
+						ai = yes
+					}
 					NOT = {
 						OR = {
 							is_rival = RIA
@@ -179,6 +182,22 @@ umz_2 = {
 				}
 				vassalize = RIA
 			}
+		else = {
+			if = {
+				limit = {
+					exists = RIA
+					NOT = {
+						OR = {
+							is_rival = RIA
+							is_enemy = RIA
+						}
+					}
+				}
+				5041 = {
+					add_core = ROOT
+				}
+			}
+		}
 	    else = {
 				5041 = {     
 					add_unit_construction = {
