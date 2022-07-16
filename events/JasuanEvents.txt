@@ -51,8 +51,17 @@ country_event = {
 				}
 				set_country_flag = borlebinMigrated
 			}
-			white_peace	= NAK
-			white_peace	= KAP
+			every_country = {
+				limit = {
+					AND = {
+						defensive_war_with = FAS
+					}
+					NOT = {
+						tag = BLK
+					}
+				}
+				white_peace	= FAS
+			}
 		}
 	}
 	

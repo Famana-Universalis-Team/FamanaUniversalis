@@ -1176,8 +1176,15 @@ fas_4 = {
 				region = kapolia_region
 			}
 			owns_core_province = 5481
-			NOT = {
-				exists = KAP
+			if = {
+				limit = {
+					ai = no
+				}
+				AND = {
+					NOT = {
+						exists = KAP
+					}
+				}
 			}
 		}
 		effect = {

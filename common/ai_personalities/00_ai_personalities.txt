@@ -386,6 +386,10 @@ ai_militarist = {
 			tag = BLK
 		}
 		modifier = {
+			factor = 0.2
+			tag = NAK
+		}
+		modifier = {
 			factor = 0.6
 			tag = SKT
 		}

@@ -2356,6 +2356,16 @@ country_event = { #Event that spawns cores for releasables
                 }
                 remove_core = NAK
             }
+            if = {
+                limit = {
+                    any_owned_province = {
+                        is_core = ARS
+                    }
+                }
+                every_owned_province = {
+                    remove_core = ARS
+                }
+            }
             every_owned_province = {
                 limit = {
                     region = aresia_region
