@@ -783,7 +783,6 @@ country_event = {
 			devotion = 20
 		}
 		NOT = { has_ruler_flag = denied_secularists }
-		NOT = { has_reform = papacy_reform }
 	}
 	
 	

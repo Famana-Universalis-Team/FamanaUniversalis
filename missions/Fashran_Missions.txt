@@ -597,29 +597,6 @@ fas_2 = {
 			country_event = {
 				id = fashros.20
 			}
-			if = {
-        	    limit = {
-        	        ai = yes
-        	    }
-        	    country_event = {
-					id = fashros.20
-				}
-        	    every_country = {
-        	        limit = {
-        	            is_subject = no
-        	            capital_scope = {
-        	                superregion = jasua_superregion
-        	            }
-        	        }
-        	        ROOT = {
-        	            set_ai_attitude = {
-        	                attitude = attitude_hostile
-        	                who = PREV
-        	                locked = yes
-        	            }
-        	        }
-        	    }
-        	}
 		}
 		provinces_to_highlight = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
@@ -655,44 +632,9 @@ fas_2 = {
 			ga_xal_superregion = {
 				discover_country = FAS
 			}
-			east_gomic = {
-				discover_country = FAS
-			}
-			5003 = {
-				discover_country = FAS
-			}
-			5004 = {
-				discover_country = FAS
-			}
-			5005 = {
-				discover_country = FAS
-			}
 			country_event = {
 				id = fashros.21
 			}
-			if = {
-        	    limit = {
-        	        ai = yes
-        	    }
-        	    country_event = {
-					id = fashros.21
-				}
-        	    every_country = {
-        	        limit = {
-        	            is_subject = no
-        	            capital_scope = {
-        	                superregion = ga_xal_superregion
-        	            }
-        	        }
-        	        ROOT = {
-        	            set_ai_attitude = {
-        	                attitude = attitude_hostile
-        	                who = PREV
-        	                locked = yes
-        	            }
-        	        }
-        	    }
-        	}
 		}
 		provinces_to_highlight = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
@@ -943,6 +885,15 @@ fas_3 = {
 				add_permanent_claim = ROOT
 			}
 			east_gomic = {
+				discover_country = FAS
+			}
+			5003 = {
+				discover_country = FAS
+			}
+			5004 = {
+				discover_country = FAS
+			}
+			5005 = {
 				discover_country = FAS
 			}
 			add_country_modifier = {

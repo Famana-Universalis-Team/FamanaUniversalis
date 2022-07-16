@@ -1005,12 +1005,10 @@ country_event = {
     major = yes
 
     trigger = {
-        AND = {
-            tag = FAS
-            is_year = 320
-            NOT = {
-                has_country_modifier = fashros_decay
-            }
+        tag = FAS
+        is_year = 320
+        NOT = {
+            has_country_modifier = fashros_decay
         }
     }
 
@@ -1216,12 +1214,10 @@ country_event = {
     major = yes
 
     trigger = {
-        AND = {
-            is_year = 322
-            tag = FAS
-            NOT = {
-                has_country_modifier = fashros_decay
-            }
+        tag = FAS
+        is_year = 322
+        NOT = {
+            has_country_modifier = fashros_decay
         }
     }
 
@@ -1571,7 +1567,7 @@ country_event = {
         ai_chance = { factor = 1 }
         add_country_modifier = {
             name = fashran_conquest_boost
-            duration = 1825
+            duration = 3650
         }
 
         if = {
@@ -1580,7 +1576,7 @@ country_event = {
             }
             add_country_modifier = {
                 name = fashran_conquest_boost_AI
-                duration = 1825
+                duration = 3650
             }
             every_country = {
                 limit = {
@@ -1592,7 +1588,7 @@ country_event = {
                 ROOT = {
                     set_ai_attitude = {
                         attitude = attitude_hostile
-                        who = PREV
+                        who = FAS
                         locked = yes
                     }
                 }
@@ -1627,7 +1623,7 @@ country_event = {
         ai_chance = { factor = 1 }
         add_country_modifier = {
             name = fashran_conquest_boost
-            duration = 1825
+            duration = 3650
         }
 
         if = {
@@ -1636,7 +1632,7 @@ country_event = {
             }
             add_country_modifier = {
                 name = fashran_conquest_boost_AI
-                duration = 1825
+                duration = 3650
             }
             every_country = {
                 limit = {
@@ -1648,7 +1644,7 @@ country_event = {
                 ROOT = {
                     set_ai_attitude = {
                         attitude = attitude_hostile
-                        who = PREV
+                        who = FAS
                         locked = yes
                     }
                 }
@@ -1750,8 +1746,8 @@ country_event = { #Event that spawns cores for releasables
     fire_only_once = yes
 
     trigger = {
-        is_year = 320
         tag = FAS
+        is_year = 320
     }
     
     mean_time_to_happen = {
@@ -2345,8 +2341,11 @@ country_event = { #Event that spawns cores for releasables
             }
             every_owned_province = {
                 limit = {
-                    NOT = {
-                        culture = Nakoan
+                    OR = {
+                        NOT = {
+                            culture = Nakoan
+                        }
+                        province_id = 5527
                     }
                 }
                 remove_core = NAK
@@ -2795,8 +2794,8 @@ country_event = { #Aresian religious resistance
     fire_only_once = yes
 
     trigger = {
-        is_year = 230
         religion = aresian
+        is_year = 230
         FAS = {
             num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
                 value = 10
@@ -2833,8 +2832,8 @@ country_event = { #Vanoman religious resistance
     fire_only_once = yes
 
     trigger = {
-        is_year = 230
         tag = VAN
+        is_year = 230
         FAS = {
             num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
                 value = 2
