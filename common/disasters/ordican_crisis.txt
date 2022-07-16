@@ -18,16 +18,19 @@ ordican_crisis= {
         }
         modifier = {
             factor = 0.20
-            has_global_flag = RochoniReformation
+            custom_trigger_tooltip = {
+                tooltip = rochoniReformationHappenedTooltip
+                has_global_flag = RochoniReformation
+            }
         }
     }
 
 	can_stop = { has_any_disaster = yes }
 
 	can_end = {
-        has_country_flag = OrdicanDisasterEnded
         custom_trigger_tooltip = {
             tooltip = OrdicanDisasterEndedTT
+            has_country_flag = OrdicanDisasterEnded
         }
     }
 

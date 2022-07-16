@@ -273,8 +273,8 @@ country_event = { #subject get cores
     }
 
     trigger = {
-        is_year = 290
         exists = NAF
+        is_year = 290
         is_subject_of = NAF
         any_owned_province = {
             OR = {

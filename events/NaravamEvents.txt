@@ -10,9 +10,8 @@ country_event = {
     hidden = yes
 
     trigger = {
-        RDU = {
-            is_subject_of = ORC
-        }
+        tag = RDU
+        is_subject_of = ORC
     }
 	mean_time_to_happen = {
 		days = 1
@@ -41,11 +40,11 @@ country_event = {
     major = yes
 
     trigger = {
+        tag = RDU
         is_year = 280
         NOT = {
             is_year = 350
         }
-        tag = RDU
         liberty_desire = 20
         RDU = {
             AND = {
@@ -185,14 +184,14 @@ country_event = {
 	desc = naravam.3.d
 	
 	trigger = {
+        culture_group = Naravami_C
+        NOT = {
+            tag = RDU
+        }
         is_year = 300
 		NOT = {
 			is_year = 400
 		}
-		NOT = {
-            tag = RDU
-        }
-        culture_group = Naravami_C
         if = {
             limit = {
                 has_dlc = "Conquest of Paradise"
@@ -299,10 +298,10 @@ country_event = {
     fire_only_once = yes
 	
 	trigger = {
-        is_year = 350
         capital_scope = {
             region = eastern_naravam_region
         }
+        is_year = 350
         any_known_country = {
 			religion_group = lathvy_group
 		}
@@ -419,7 +418,6 @@ country_event = {
     fire_only_once = yes
 	
 	trigger = {
-        current_age = age_of_absolutism
         capital_scope = {
             OR = {
                 region = eastern_naravam_region
@@ -428,6 +426,7 @@ country_event = {
             }
         }
         religion = lathvy
+        current_age = age_of_absolutism
 	}
 	
 	mean_time_to_happen = {
@@ -468,8 +467,8 @@ country_event = {
     fire_only_once = yes
 	
 	trigger = {
-        current_age = age_of_absolutism
         owns_core_province = 6289
+        current_age = age_of_absolutism
         6286 = {
             is_empty = yes
         }

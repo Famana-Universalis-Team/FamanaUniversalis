@@ -3346,14 +3346,6 @@ country_event = { #Bonus for others
     }
 
     trigger = {
-        is_year = 320
-        NOT = {
-            is_year = 360
-        }
-        NOT = {
-            has_country_flag = givenBonusTonmo
-        }
-        ai = yes
         OR = {
             tag = FSB 
             tag = AMX 
@@ -3389,6 +3381,14 @@ country_event = { #Bonus for others
             tag = EDS
             tag = YIT
         }
+        is_year = 320
+        NOT = {
+            is_year = 360
+        }
+        NOT = {
+            has_country_flag = givenBonusTonmo
+        }
+        ai = yes
     }
 
     immediate = {

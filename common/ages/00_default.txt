@@ -564,6 +564,7 @@ age_of_absolutism = {
 	
 		ab_france_fire_damage = {
 			allow = {
+				always = no
 			}
 			modifier = {
 				fire_damage = 0.2
@@ -574,6 +575,7 @@ age_of_absolutism = {
 		}
 		ab_dutch_anti_corruption = {
 			allow = {
+				always = no
 			}
 			modifier = {
 				yearly_corruption = -0.2
@@ -584,6 +586,7 @@ age_of_absolutism = {
 		}	
 		ab_sweden_manpower = {
 			allow = {
+				always = no
 			}
 			modifier = {
 				manpower_recovery_speed = 0.35
@@ -595,6 +598,7 @@ age_of_absolutism = {
 
 		ab_manchu_banner = {
 			allow = {
+				always = no
 			}
 			modifier = {
 				amount_of_banners = 0.5
@@ -751,6 +755,7 @@ age_of_revolutions = {
 		}
 		ab_pru_military = {
 			allow = {
+				always = no
 			}
 			modifier = {
 				fire_damage_received = -0.2
@@ -761,6 +766,7 @@ age_of_revolutions = {
 		}
 		ab_gbr_fleet = {
 			allow = {
+				always = no
 			}
 			modifier = {
 				naval_maintenance_modifier = -0.33
@@ -771,6 +777,7 @@ age_of_revolutions = {
 		}
 		ab_russia_boost = {
 			allow = {
+				always = no
 			}
 			modifier = {
 				governing_capacity_modifier = 0.33
@@ -781,6 +788,7 @@ age_of_revolutions = {
 		}
 		ab_austria_rep = {
 			allow = {
+				always = no
 			}
 			modifier = {
 				diplomatic_reputation = 5

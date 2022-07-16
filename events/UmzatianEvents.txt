@@ -54,7 +54,7 @@ country_event = { #partition of TCK, not actually given to Umzatia (unless they 
 
     is_triggered_only = yes
 	trigger = {
-	    NOT = { TAG = TCK }
+	    NOT = { tag = TCK }
 	}
     
     option = { #sure

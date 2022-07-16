@@ -9,8 +9,8 @@ country_event = {
     fire_only_once = yes
 
     trigger = {
+		tag = UMZ
         is_year = 225
-        tag = UMZ
         owns_core_province = 5044
         is_subject = no
         5016 = {
@@ -61,8 +61,8 @@ country_event = {
     fire_only_once = yes
 
     trigger = {
+		tag = UMZ
         is_year = 225
-        tag = UMZ
         owns_core_province = 5040
         is_subject = no
         5551 = {
@@ -115,8 +115,8 @@ country_event = {
     fire_only_once = yes
 
     trigger = {
+		tag = UMZ
         is_year = 275
-        tag = UMZ
         owns_core_province = 5551
         is_subject = no
         5545 = {
@@ -158,8 +158,8 @@ country_event = {
 	major = yes
 
 	trigger = {
+		owns = 5059
 		is_year = 213
-		owns_core_province = 5059
 	}
 	mean_time_to_happen = {
 		months = 20
@@ -223,8 +223,8 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
+		owns = 5103
 		is_year = 230
-		owns_core_province = 5103
 	}
 	mean_time_to_happen = {
 		months = 20
@@ -288,8 +288,8 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
+		owns = 5188
 		is_year = 260
-		owns_core_province = 5188
 	}
 	mean_time_to_happen = {
 		months = 20
@@ -359,8 +359,8 @@ country_event = {
 	hidden = yes
 
 	trigger = {
+		owns = 5188
 		is_year = 300
-		owns_core_province = 5188
 	}
 	mean_time_to_happen = {
 		months = 20
@@ -385,8 +385,8 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
+		owns = 5017
 		is_year = 236
-		owns_core_province = 5017
 	}
 	mean_time_to_happen = {
 		months = 20
@@ -417,8 +417,8 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		is_year = 271
 		tag = LAG
+		is_year = 271
 	}
 
 	mean_time_to_happen = {

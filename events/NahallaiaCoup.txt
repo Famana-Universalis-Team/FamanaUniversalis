@@ -10,8 +10,8 @@ country_event = { #COUP
 		months = 12
 	}
 	trigger = {
+        tag = NHL
         is_year = 238
-		tag = NHL
 	}
 
     immediate = {
@@ -135,8 +135,8 @@ country_event = {
 		days = 1
 	}
 	trigger = {
-        is_year = 238
         tag = ALT
+        is_year = 238
         ALT = { has_country_flag = nahallaian_coup }
         OR = {
             6184 = {
@@ -181,8 +181,8 @@ country_event = {
 		days = 1
 	}
 	trigger = {
-        is_year = 238
         tag = NHL
+        is_year = 238
         OR = {
             exists = TOL
             ALT = {
@@ -210,8 +210,8 @@ country_event = {
 		months = 3
 	}
 	trigger = {
-        has_country_flag = is_at_coup
         tag = NHL
+        has_country_flag = is_at_coup
         NOT = {
             exists = ALT
             exists = TOL

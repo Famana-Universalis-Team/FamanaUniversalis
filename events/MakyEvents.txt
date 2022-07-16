@@ -59,11 +59,11 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		is_year = 270
 		owns = 5149
 		5812 = {
 			is_empty = yes
 		}
+		is_year = 270
 	}
 
 	mean_time_to_happen = {
@@ -1087,8 +1087,9 @@ country_event = {
 	major = yes
 	
 	trigger = {
-		is_year = 330
 		tag = TKM
+		is_year = 330
+		is_free_or_tributary_trigger = yes
 		NOT = {
 			total_development = 100
 		}
@@ -1177,11 +1178,11 @@ country_event = { #Vaximorian conversion
 	fire_only_once = yes
 	
 	trigger = {
+		tag = VAX
 		is_year = 212
 		NOT = {
 			is_year = 220
 		}
-		tag = VAX
 	}
 	
 	mean_time_to_happen = {

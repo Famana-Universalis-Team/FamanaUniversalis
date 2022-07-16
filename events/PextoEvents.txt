@@ -418,10 +418,8 @@ country_event = { #Vassals go disloyal 95%
     desc = pexto.13.d
     picture = BATTLE_eventPicture
 	trigger = {
-		AND = {
-			tag = PEX
-			has_country_flag = pextocivilwar
-		}
+		tag = PEX
+		has_country_flag = pextocivilwar
 	}
 
 	mean_time_to_happen = {
@@ -666,8 +664,8 @@ country_event = {
 	major = yes
 
 	trigger = {
-		ai = yes
 		tag = NVI
+		ai = yes
 		NOT = { has_country_flag = nevia_formed }
 	}
 
@@ -703,8 +701,8 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		ai = no
 		tag = NVI
+		ai = no
 		NOT = { has_country_flag = nevia_formed }
 	}
 
@@ -1154,9 +1152,9 @@ country_event = {
 	}
 
 	trigger = {
+		tag = PIX
 		exists = JNS
 		exists = PIX
-		tag = PIX
 	}
 
 	option = { #Yes Walara
@@ -1408,10 +1406,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
+		diocese = 1
 		NOT = {
 			tag = PEX
 		}
-		diocese = 1
 	}
 
 	immediate = {

@@ -8,15 +8,15 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		is_year = 280
-		any_owned_province = {
-			culture = Bohoran
-		}
 		OR = {
 			tag = SKT
 			NOT = {
 				culture_group = Maxan
 			}
+		}
+		is_year = 280
+		any_owned_province = {
+			culture = Bohoran
 		}
 	}
 
@@ -296,6 +296,7 @@ country_event = {
     hidden = yes
 
 	trigger = {
+		exists = MOX
 		is_year = 270
 		MOX = {
 			any_owned_province = {
@@ -338,6 +339,10 @@ country_event = {
 	hidden = yes
 
 	trigger = {
+		OR = {
+            primary_culture = Maxan_West_Emastalian
+            primary_culture = Maxan_East_Emastalian
+        }
 		is_year = 270
         NOT = {
             MOX = {
@@ -350,10 +355,6 @@ country_event = {
                 culture = Maxan_East_Emastalian
             }
 		}
-		OR = {
-            primary_culture = Maxan_West_Emastalian
-            primary_culture = Maxan_East_Emastalian
-        }
         NOT = {
 			MOX = {
 				any_owned_province = {

@@ -1268,7 +1268,7 @@
  bosisi.1.e:0 "We should go towards [migration_province_3.GetName]"
  DESERT_TRIBE:0 "Desert Tribe"
 
- naravam.4.t:0 "Lathvy arrives in Naravam"
+ naravam.4.t:0 "Lathvy Arrives in Naravam"
  naravam.4.d:0 "For long, Naravam has followed the pagan Torviya religion. However, with the arrival of missionaries from Ordica, this has begun to change. Many are starting to accept the will of Ara, but others are pushing back. Violence is becoming more common as tensions brew between the two faiths."
  naravam.4.a:0 "The future is mixed."
 
@@ -1355,7 +1355,7 @@
  CometPawaniResponse:0 "A reminder of our connection to the Heavens."
  CometVaximorianResponse:0 "A new God has arrived to challenge our ones."
 
- XalianFlavour.6.t:0 "Morian Monotheism ended"
+ XalianFlavour.6.t:0 "The End of Morian Monotheism"
  XalianFlavour.6.d:0 "Since the days of the great Kingdom of Moria, the Morians have followed a completely separate pantheon from the other Xalian religions. Where the Morians believed in one, mighty, superior God, the others belived in a more esoteric religion with four vague Gods representing the four elements making up the Universe. However, this has changed as new religious councils have begun to hint at the reintroduction and renewed worship of the other three Gods."
  XalianFlavour.6.a:0 "Four brothers, torn apart."
 
@@ -1377,18 +1377,18 @@
  XalianFlavour.5.t:0 "Celebrations of [OurGod]"
  XalianFlavour.5.d:0 "The ancient Xalians from whom we are descended considered [OurGod] to be merely one of the four equal Gods who each presided over a fundamental element. We have since been able to scientifically disprove this, and confirm that [OurGod] is the most powerful of the Gods, ruling over the others. Because of our gratefulness for His creations, we have dedicated a festival to Him."
 
- XalianFlavour.7.t:0 "A common understanding"
+ XalianFlavour.7.t:0 "A Common Understanding"
  XalianFlavour.7.d:0 "The United Xalian faith is long gone over petty disputes such as the nature of the Gods, the exact domain of each God, and the importance of each God. However, even though we are divided, in soul and blood we still remain one culture and one religion."
  XalianFlavour.7.a:0 "A toast to our people!"
 
- XalianFlavour.8.t:0 "Religious misunderstanding"
+ XalianFlavour.8.t:0 "Religious Misunderstanding"
  XalianFlavour.8.d:0 "We have tried to contact some of our neighbours over potentially mending some of the wounds caused by the collapse of the Neo-Xalnish Empire. This has however not ended successfully, with the discussion quickly turning to religious matters and our Diplomats getting furious over foreign interpreations of [OurGod]."
  XalianFlavour.8.a:0 "A shame."
 
  good_xalnish_diplomats:0 "Good Diplomats"
  bad_xalnish_diplomats:0 "Bad Diplomats"
 
- XALNISH_TABLE:0 "Organisation of the elemenets"
+ XALNISH_TABLE:0 "Organisation of the Elemenets"
  XALNISH_TABLE:0 "The elements of the world have been organised into a table by Xalian religious scholars."
 
  XalianFlavour.9.t:0 "The Organisation of the Elements"
@@ -1414,8 +1414,8 @@
  XalianFlavour.11.a:0 "The city has become known as Shiraska Xon now."
  XalianFlavour.11.b:0 "Revert it to its old name."
 
- bosisi.13.t:0 "We route the Nomads!"
- bosisi.13.d:0 "The Nomads which have infested our borders have been successfully routed after the occupation of their capital by us."
+ bosisi.13.t:0 "We Route the Nomads!"
+ bosisi.13.d:0 "The nomads which have infested our borders have been successfully routed after the occupation of their capital by us."
  bosisi.13.a:0 "Good riddance."
 
  ordica.10.t:0 "War of the Pramtean Confederation"
@@ -1423,25 +1423,25 @@
  ordica.10.a:0 "Hunt them down!"
 
  naravam.8.t:0 "Expansion South!"
- naravam.8.d:0 "Due to its control by the Ordica-alighned Rduma people, some of the lands South of our nation have been left desolate ever since the Great Rduma Migration. Since nobody has colonised this yet, it is open for us."
+ naravam.8.d:0 "Due to its control by the Ordican-aligned Rduma people, some of the lands south of our nation have been left desolate ever since the Great Rduma Migration. Since nobody has colonised this yet, it is open for us."
  naravam.8.a:0 "Excellent!"
 
  ordican_crisis:0 "Ordican Crisis"
  desc_ordican_crisis:0 "Ordican Crisis"
  orc_disaster_modifier:0 "Start of the Crisis"
  ordica.12.t:0 "The Ordican Crisis"
- ordica.12.d:0 "Ordica has shone its light brightly for many centuries now. Despite what it may look like on the outside, Ordica has actually been a fairly dysfunctional state, where tribal chiefs deep in Estal's forests swear loyalty to the King in name only. During wartime, it has relied almost entirely on levies from its subjects, with a pitiful centralised army. This has led to a crisis, as the governors, nobles and aristocrats who have held their faith in Ordica for so long are starting to renoucne their loyalty, and the appeal of the dating empire is waning. If [ORC.Monarch.GetTitle] [ORC.Monarch.GetName] is unable to convince these rebels to remain under the Crown, this could spell the collapse of Ordica."
+ ordica.12.d:0 "Ordica has shone its light brightly for many centuries now. Despite what it may look like on the outside, Ordica has actually been a fairly dysfunctional state, where tribal chiefs deep in Estal's forests swear loyalty to the King in name only. During wartime, it has relied almost entirely on levies from its subjects, with a pitiful royal army. This has led to a crisis, as the governors and aristocrats who have held their faith in Ordica for so long are starting to renounce their loyalty, and the appeal of the aging empire is waning. If [ORC.Monarch.GetTitle] [ORC.Monarch.GetName] is unable to convince these rebels to remain under the Crown, this could spell the end for Ordica."
  ordica.12.a:0 "Worrying."
  RequirementForOrdisa:0 "§YThis will bring us one step forward to forming the enlightened nation of Ordisa and ending the Crisis.§!"
 
- ordica.13.t:0 "The Ordican Crisis is resolved."
- ordica.13.d:0 "After a long period of fighting, the Ordican Crisis has come to an end. A new Status Quo reigns in the regions, regardless of whether Ordica is stronger or weaker than before."
- ordica.13.a:0 "A new page in our history."
+ ordica.13.t:0 "The Ordican Crisis is Resolved."
+ ordica.13.d:0 "After a long period of fighting, the Ordican Crisis has come to an end. A new Status quo reigns in the regions, regardless of whether Ordica is stronger or weaker than before."
+ ordica.13.a:0 "A new era has begun."
 
- orc_no_taxes:0 "Nobles refusing to pay Taxes"
- orc_poor_taxes:0 "Forced payment of Taxes"
- ordica.14.t:0 "The Nobility refuse to pay taxes"
- ordica.14.d:0 "With the power of the Crown being questioned, we have stopped recieving tax payments from many influential Nobles and Tribal Chiefs. This can prove to be a major issue if not dealt with quickly."
+ orc_no_taxes:0 "Nobles Refusing to Pay Taxes"
+ orc_poor_taxes:0 "Forced Taxation"
+ ordica.14.t:0 "The Nobility Refuse to Pay Taxes!"
+ ordica.14.d:0 "With the power of the Crown being questioned, we have stopped receiving tax payments from many influential nobles and tribal Chiefs. This can prove to be a major issue if not dealt with quickly."
  ordica.14.a:0 "What can you do?"
  ordica.14.b:0 "Remind them of whom they are subordinate to."
 
@@ -1449,9 +1449,9 @@
  orc_forced_draft:0 "Forced Draft"
  orc_forced_levvy:0 "Forced Levvy"
  ordica.15.t:0 "Nobles refuse to provide a levvy!"
- ordica.15.d:0 "Large parts of the Ordican Army are sources from various chiefs and nobles across our realm. With the recent fall of trust in our rule, they have started to refuse providing their legally required levies, or joining us on campaigns."
+ ordica.15.d:0 "Large parts of the Ordican Army are sourced from various Chiefs and nobles across our realm. With the recent fall in trust of our rule, they have started to refuse providing their legally required levies, or refusing to join us on campaigns."
  ordica.15.a:0 "We can live without them!"
- ordica.15.b:0 "Recruit more from our land."
+ ordica.15.b:0 "Recruit more from our own land."
  ordica.15.c:0 "Force them."
 
  orc_no_ships:0 "No Shipworkers"
@@ -1463,64 +1463,62 @@
 
  orc_decentralisation:0 "Decentralisation"
  ordica.17.t:0 "Nobles Demand Representation!"
- ordica.17.d:0 "Following the crisis of Tax and Manpower, the Nobility in our country have rapidly been growing in power. In particular, they now demand more power. Some of the more powerful nobles in our country - living in the South - demand so much power that they would essentially be greater than the King himself."
+ ordica.17.d:0 "Following the crisis of tax and manpower, the nobility in our country have rapidly been growing in power. Now, they are demanding even more influence. Some of the more powerful nobles in our country - living in the south - demand so much power that they would essentially be superior to the King himself."
  ordica.17.a:0 "They are our backbone, after all."
- ordica.17.b:0 "Are they Traitors? Then kill them."
+ ordica.17.b:0 "Are they traitors? Then kill them."
 
- ordica.18.t:0 "Chiefs revolt!"
- ordica.18.d:0 "Much of Ordica is covered in dense, untraversible forest. The only way Ordica holds control over much of this land is allying with local tribal Chiefs who in turn swear loyalty to the Ordican King. While this system of autonomy has worked for many years, with the Crisis currently going on in the country some have takeb the oppurtunity to try and gain independence."
+ ordica.18.t:0 "Chiefs' Revolt!"
+ ordica.18.d:0 "Much of Ordica is covered in dense, untraversable forests. The only way for Ordica to maintain their control over these lands is allying with local tribal Chiefs who in turn swear loyalty to the Ordican King. While this system of autonomy has worked for many years, with the Crisis currently going on in the country some have taken the oppurtunity to try to gain their independence."
  ordica.18.a:0 "Take them out!"
 
- ordica.19.t:0 "Pramtea declares independence!"
+ ordica.19.t:0 "Pramtea Declares Independence!"
  ordica.19.d:0 "The Pramtean Confederation, a union of many tribal Oras, has once again risen to fight the Ordican Occupiers, similarly to the previous war."
  ordica.19.a:0 "Traitors!"
  ordica.19.b:0 "We aren't in the state to fight right now."
 
- ordica.20.t:0 "Koyla rises up!"
- ordica.20.d:0 "Kolya has long been the largest feudal subdivision within Ordica, hosting the most powerful nobles. With issues at home, these have managed to take their oppurtunity to rise up."
+ ordica.20.t:0 "Kolya Rises Up!"
+ ordica.20.d:0 "Kolya has long been the largest feudal subdivision within Ordica, hosting the most powerful nobles. With our issues at home, they have seized the opportunity to rise up."
  ordica.20.a:0 "This is war!"
  ordica.20.b:0 "We've bitten off more than we can chew."
 
- ordica.21.t:0 "Vamanya secedes!"
- ordica.21.d:0 "Vamanya, separated from mainland Ordica by the Olinivar sea, has seized on the turmoil in the central government and declared its independence."
+ ordica.21.t:0 "Vamanya Secedes!"
+ ordica.21.d:0 "Vamanya, separated from mainland Ordica by the Olinivar Sea, has capitalized on the turmoil in the central government and declared its independence."
  ordica.21.a:0 "Remind them who their rightful King is."
  ordica.21.b:0 "Leave them be."
 
- ordica.22.t:0 "The fate of Pramtea"
- ordica.22.d:0 "Although we have secured our independence from Ordica, the future of the Pramtean nation is still in the air."
- ordica.22.a:0 "Invite the Prince of Koyla to be our Chief."
+ ordica.22.t:0 "The Fate of Pramtea"
+ ordica.22.d:0 "Although we have secured our independence from Ordica, the future of the Pramtean nation is still up in the air."
+ ordica.22.a:0 "Invite the Prince of Kolya to be our Chief."
  ordica.22.b:0 "Our tribes matter more than the Confederation."
 
- eastereggs.5.t:0 "The rise of Dan Tzu"
- eastereggs.5.d:0 "Dan Tzu was one of the most phenomenal generals the Ancient World had ever known. His sharp eye for tactical skill and the ability to - in his own words - \"micromanage\" his front lines was unheard of. He would later write a book known as \"On the Art of War\" which became studied for centuries afterwards as a brilliant piece of military literature."
+ eastereggs.5.t:0 "The Rise of Dan Tzu"
+ eastereggs.5.d:0 "Dan Tzu was one of the most phenomenal generals the ancient world had ever known. His sharp eye for tactical skill and the ability to - in his own words - \"micromanage\" his troops was unheard of. He would later write a book known as \"On the Art of War\" which became studied for centuries afterwards as a brilliant piece of military literature."
  eastereggs.5.a:0 "Fascinating..."
 
- eastereggs.6.t:0 "The storm that is approaching"
- eastereggs.6.d:0 "As the Rastrayvar hit our country, our king, [ROOT.Monarch.GetName] walked out of his palace to provoke the black clouds in isolation. This is surprising, because ever since he reclaimed his name following his birth in a Mor cult, he has been consistently blessed by Shirian priests. He has adopted the image of Xarlan, an avatar of Shir representing Death, as his main worship icon. As a result, his confrontation of the storm was seen as a religious ritual."
+ eastereggs.6.t:0 "The Storm That is Approaching"
+ eastereggs.6.d:0 "As the Rastrayvar hit our country, our king, [ROOT.Monarch.GetName] walked out of his palace to provoke the black clouds in isolation. This is surprising, because ever since he reclaimed his name following his birth in a Mor cult, he has been consistently blessed by Shirian priests. He has adopted the image of Xarlan, an avatar of Shir representing death, as his main icon of worship. As a result, his confrontation of the storm was seen as a religious ritual."
  eastereggs.6.a:0 "FORSAKEN, I AM AWAKENED..."
 
  ordica.23.t:0 "The Pirates of Tullisi"
- ordica.23.d:0 "Recently, as sailors are out of work, piracy has increased significantly. In particular, the island of Tullisi has become a haven for these pirates, who are declaring an independent republic."
+ ordica.23.d:0 "Recently, as sailors are out of work, piracy has increased significantly. In particular, the island of Tullisi has become a haven for these pirates, who are now declaring their own independent republic."
  ordica.23.a:0 "It's our island!"
  ordica.23.b:0 "Let them go."
  ordica.23.c:0 "A pirate's life for me!"
 
  ordica.24.t:0 "The Pirates of Bafa"
- ordica.24.d:0 "Recently, as sailors are out of work, piracy has increased significantly. In particular, the island of Bafa has become a haven for these pirates, who are declaring an independent republic."
+ ordica.24.d:0 "Recently, as sailors are out of work, piracy has increased significantly. In particular, the island of Bafa has become a haven for these pirates, who are now declaring their own independent republic."
  ordica.24.a:0 "It's our island!"
  ordica.24.b:0 "Let them go."
  ordica.24.c:0 "A pirate's life for me!"
 
  ordica.25.t:0 "Yuvlar breaks off!"
- ordica.25.d:0 "Yuvlar has long been distantly separated from the Ordican Monarchy, ruled by the most powerful nobles in the Empire. With the Crisis in Nabrosia, the scheming powers that be have decided to end their oath to the Crown."
+ ordica.25.d:0 "Yuvlar has long been distantly separated from the Ordican monarchy, ruled by the most powerful nobles in the Empire. With the Crisis in Nabrosia, the scheming powers that be have decided to end their oath to the Crown."
  ordica.25.a:0 "Reclaim our rightful land!"
  ordica.25.b:0 "They do have a right to self-determination after all."
 
  orc_pextans_angry:0 "Disunity of Culture"
  orc_overextension_decreased:0 "Lessened Overextension"
  ordica.26.t:0 "Our troubles in Pextum"
- ordica.26.d:0 "Ever since our conquest of Pextoglazia, uniting the nationalities has been difficult. While at the start, most nobles were willing to cooperate with us against the percieved tyrrany of the High Priest, now they have grown dissentful and want back their indepence. They think that us Ordicans cannot be trusted, and impose too high of a tax on them."
+ ordica.26.d:0 "Ever since our conquest of Pextoglazia, uniting the nationalities has been difficult. While at the start, most nobles were willing to cooperate with us against the perceived tyranny of the High Priest, now they have grown resentful towards us and want their independence back. They think that us Ordicans cannot be trusted, and impose too many taxes on them."
  ordica.26.a:0 "They signed a deal!"
  ordica.26.b:0 "Maybe they have a point."
-
- 

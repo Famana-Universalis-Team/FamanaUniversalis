@@ -274,16 +274,14 @@ country_event = { #Xalian Periodic Table
 	fire_only_once = yes
 
 	trigger = {
-		AND = {
-			OR = {
-				religion = morian
-				religion = shirian
-				religion = vinian
-				religion = delkian
-			}
-			adm_tech = 10
-			has_advisor = yes
+		OR = {
+			religion = morian
+			religion = shirian
+			religion = vinian
+			religion = delkian
 		}
+		adm_tech = 10
+		has_advisor = yes
 	}
 
 	mean_time_to_happen = {
@@ -324,18 +322,17 @@ country_event = { #Discovery of Minkoo
 	fire_only_once = yes
 
 	trigger = {
-		AND = {
-			adm_tech = 12
-			has_institution = new_world_i
-			if = {
-				limit = {
-					has_dlc = "Rule Britannia"
-				}
-				innovativeness = 15
+		culture_group = Xalian
+		adm_tech = 12
+		has_institution = new_world_i
+		if = {
+			limit = {
+				has_dlc = "Rule Britannia"
 			}
-			else = {
-				has_advisor = yes
-			}
+			innovativeness = 15
+		}
+		else = {
+			has_advisor = yes
 		}
 	}
 
@@ -349,7 +346,7 @@ country_event = { #Discovery of Minkoo
 	option = {
 		name = XalianFlavour.10.a
 		ai_chance = { factor = 1 }
-		add_prestige = 50
+		add_prestige = 20
 		change_innovativeness = 5
 	}
 }
@@ -362,10 +359,8 @@ country_event = { #Fall of Shiraska Xon
 	fire_only_once = yes
 
 	trigger = {
-		AND = {
-			owns_core_province = 5467
-			NOT = { tag = MSH }
-		}
+		owns_core_province = 5467
+		NOT = { tag = MSH }
 	}
 
 	mean_time_to_happen = {

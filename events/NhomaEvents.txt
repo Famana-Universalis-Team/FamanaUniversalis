@@ -9,8 +9,8 @@ country_event = {
     fire_only_once = yes
 
     trigger = {
-        is_year = 320
         tag = IRF
+        is_year = 320
         owns_core_province = 5889
         5910 = {
             is_empty = yes
@@ -49,8 +49,8 @@ country_event = {
     fire_only_once = yes
 
     trigger = {
+        tag = IRF
         is_year = 370
-		tag = IRF
         #at least one province in the Onobya/Fashrana region?
         5909 = {
             is_empty = yes
@@ -110,10 +110,11 @@ country_event = {
 	hidden = yes
 	
 	trigger = {
-		is_year = 360
-		NOT = {
+        owns = 5854
+        NOT = {
 			exists = JIB
 		}
+        is_year = 360
         any_owned_province = {
             region = nozumol_region
         }
