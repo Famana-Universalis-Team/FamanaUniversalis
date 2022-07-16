@@ -359,8 +359,11 @@ country_event = {
 	hidden = yes
 
 	trigger = {
+		OR = {
+			tag = FAS
+			is_year = 300
+		}
 		owns = 5188
-		is_year = 300
 	}
 	mean_time_to_happen = {
 		months = 20
