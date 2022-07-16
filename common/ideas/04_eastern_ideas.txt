@@ -157,3 +157,86 @@ VET_ideas = {
         improve_relation_modifier = 0.2
     }
 }
+
+NHE_ideas = {
+    start = {
+        drill_gain_modifier = 0.50
+        diplomats = 1
+    }
+
+    bonus = {
+        trade_goods_size_modifier = 0.10
+    }
+
+    trigger = {
+        tag = NHE
+    }
+    free = yes
+
+    nhe_1 = {
+        fire_damage = 0.10
+    }
+    nhe_2 = {
+        tolerance_heathen = 1
+        improve_relation_modifier = 0.10
+    }
+    nhe_3 = {
+        land_forcelimit_modifier = 0.05
+        mercenary_discipline = 0.05
+    }
+    nhe_4 = {
+        naval_tradition_from_trade = 1.50
+    }
+    nhe_5 = {
+        production_efficiency = 0.10
+        build_cost = -0.05
+    }
+    nhe_6 = {
+        technology_cost = -0.05
+        innovativeness_gain = 0.25
+    }
+    nhe_7 = {
+        global_manpower_modifier = 0.20
+    }
+}
+
+TYM_ideas = {
+    start = {
+        adm_tech_cost_modifier = -0.1
+        cavalry_cost = -0.15
+    }
+
+    bonus = {
+        yearly_absolutism = 1
+    }
+
+    trigger = {
+        tag = TYM
+    }
+    free = yes
+
+    tym_1 = {
+        yearly_corruption = -0.05
+    }
+    tym_2 = {
+        legitimacy = 1
+    }
+    tym_3 = {
+        church_power_modifier = 0.10
+        tolerance_own = 1
+    }
+    tym_4 = {
+        cavalry_flanking = 0.50
+        recover_army_morale_speed = 0.05
+    }
+    tym_5 = {
+        core_creation = -0.2
+    }
+    tym_6 = {
+        prestige = 1
+    }
+    tym_7 = {
+        heir_chance = 0.75
+        block_introduce_heir = yes
+    }
+}

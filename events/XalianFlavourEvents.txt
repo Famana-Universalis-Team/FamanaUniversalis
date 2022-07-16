@@ -159,12 +159,7 @@ country_event = { #Celebrations of Our God
 	picture = THEATRE_eventPicture
 	is_triggered_only = yes
 	trigger = {
-		OR = {
-			religion = morian
-			religion = shirian
-			religion = delkian
-			religion = vinian
-		}
+		religion_group = xalian_group
 	}
 
 	option = {
@@ -196,12 +191,7 @@ country_event = { #Good foreign diplomacy
 	picture = DIPLOMACY_SIGNING_eventPicture
 	is_triggered_only = yes
 	trigger = {
-		OR = {
-			religion = morian
-			religion = shirian
-			religion = delkian
-			religion = vinian
-		}
+		religion_group = xalian_group
 	}
 
 	option = {
@@ -234,12 +224,7 @@ country_event = { #Shitty foreign diplomacy
 	picture = PROTESTANT_CATHOLIC_DEBATE_eventPicture
 	is_triggered_only = yes
 	trigger = {
-		OR = {
-			religion = morian
-			religion = shirian
-			religion = delkian
-			religion = vinian
-		}
+		religion_group = xalian_group
 	}
 
 	option = {
@@ -274,12 +259,7 @@ country_event = { #Xalian Periodic Table
 	fire_only_once = yes
 
 	trigger = {
-		OR = {
-			religion = morian
-			religion = shirian
-			religion = vinian
-			religion = delkian
-		}
+		religion_group = xalian_group
 		adm_tech = 10
 		has_advisor = yes
 	}

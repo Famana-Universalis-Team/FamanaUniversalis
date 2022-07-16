@@ -416,11 +416,8 @@ bureaucratic_monarchy = {
 				government_rank = 3
 			}
 			OR = {
-				religion = morian
+				religion_group = xalian_group
 				religion = gadan
-				religion = vinian
-				religion = shirian
-				religion = delkian
 				religion = pawani
 				AND = {
 					religion = lathvy

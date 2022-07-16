@@ -45,12 +45,7 @@ defined_text = {
         localisation_key = ErrorGod
         trigger = {
 			NOT = {
-                OR = {
-                    religion = shirian
-                    religion = delkian
-                    religion = morian
-                    religion = vinian
-                }
+                religion_group = xalian_group
             }
         }
     }

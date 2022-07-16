@@ -563,4 +563,14 @@ spriteTypes = {
 		texturefile = "gfx//interface//great_projects//famana_great_projects//great_project_walls_of_quanex.dds"
 	}
 
+	spriteType = {
+		name = "GFX_great_project_grand_nik_shipyards"	
+		texturefile = "gfx//interface//great_projects//famana_great_projects//great_project_grand_nik_shipyards.dds"
+	}
+
+	spriteType = {
+		name = "GFX_great_project_city_of_xon"	
+		texturefile = "gfx//interface//great_projects//famana_great_projects//great_project_city_of_xon.dds"
+	}
+
 }
