@@ -1094,6 +1094,8 @@ country_event = {
                             area = diam_area
                             area = unnamed_area_11
                             area = mahansha_area
+                            area = area_244
+                            area = area_243
                         }
                     }
                     add_core = JFX
@@ -1361,7 +1363,11 @@ country_event = {
             release = JFX
             release = HOY
             jasua_superregion = { add_permanent_claim = KSL }
+            unnamed_area_37 = { remove_claim = KSL }
+            unnamed_area_36 = { remove_claim = KSL }
+            yenis_area = { remove_claim = KSL }
             ga_xal_superregion = { add_permanent_claim = JFX }
+            eastern_desert_region = { add_permanent_claim = JFX }
             nhoma_superregion = { add_permanent_claim = NHM }
             every_province = {
                 limit = {
@@ -2513,7 +2519,11 @@ country_event = { #Kisholi
             }
             change_graphical_culture = easterngfx
             jasua_superregion = { add_permanent_claim = KSL }
+            unnamed_area_37 = { remove_claim = KSL }
+            unnamed_area_36 = { remove_claim = KSL }
+            yenis_area = { remove_claim = KSL }
             ga_xal_superregion = { add_permanent_claim = JFX }
+            eastern_desert_region = { add_permanent_claim = JFX }
             nhoma_superregion = { add_permanent_claim = NHM }
             country_event = {
                 id = fashros.30
@@ -2583,7 +2593,11 @@ country_event = { #Jafxoi
                 add_government_reform = gov_tonxara
             }
             jasua_superregion = { add_permanent_claim = KSL }
+            unnamed_area_37 = { remove_claim = KSL }
+            unnamed_area_36 = { remove_claim = KSL }
+            yenis_area = { remove_claim = KSL }
             ga_xal_superregion = { add_permanent_claim = JFX }
+            eastern_desert_region = { add_permanent_claim = JFX }
             nhoma_superregion = { add_permanent_claim = NHM }
             country_event = {
                 id = fashros.30
@@ -2653,7 +2667,11 @@ country_event = { #Nhoma
                 add_government_reform = gov_tonxara
             }
             jasua_superregion = { add_permanent_claim = KSL }
+            unnamed_area_37 = { remove_claim = KSL }
+            unnamed_area_36 = { remove_claim = KSL }
+            yenis_area = { remove_claim = KSL }
             ga_xal_superregion = { add_permanent_claim = JFX }
+            eastern_desert_region = { add_permanent_claim = JFX }
             nhoma_superregion = { add_permanent_claim = NHM }
             country_event = {
                 id = fashros.30
@@ -2723,7 +2741,11 @@ country_event = { #Hoyros
                 add_government_reform = gov_tonxara
             }
             jasua_superregion = { add_permanent_claim = KSL }
+            unnamed_area_37 = { remove_claim = KSL }
+            unnamed_area_36 = { remove_claim = KSL }
+            yenis_area = { remove_claim = KSL }
             ga_xal_superregion = { add_permanent_claim = JFX }
+            eastern_desert_region = { add_permanent_claim = JFX }
             nhoma_superregion = { add_permanent_claim = NHM }
             country_event = {
                 id = fashros.30

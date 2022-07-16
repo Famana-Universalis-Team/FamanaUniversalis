@@ -2081,10 +2081,10 @@ country_decisions = {
 						was_tag = GRL
 						was_tag = RHJ
 						was_tag = MPL
-						AND = {
-							was_tag = EQI
-							tag = MRR
-						}
+						#AND = {
+						#	was_tag = EQI
+						#	tag = MRR
+						#}
 					}
 					has_country_flag = startedLegitAch
 				}

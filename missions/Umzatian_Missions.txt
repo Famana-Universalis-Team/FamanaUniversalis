@@ -620,13 +620,11 @@ umz_3 = {
 			
 				}
 			}
-			
-			
-       
+			add_country_modifier = { 
+			    name = umz_colonist
+			    duration = -1
+			}
        }
-	
-	
-  
     }
 	UMZ_laglon = {
         icon = mission_great_wall
@@ -910,7 +908,7 @@ umz_4 = {
        }
 	
 	}
-	UMZ_eqiso = {
+	UMZ_equiso = {
         icon = mission_landsknecht_soldier
          position = 5     
       
@@ -976,7 +974,7 @@ umz_4 = {
         
        
         required_missions = {
-            UMZ_eqiso
+            UMZ_equiso
 		
         }
         
