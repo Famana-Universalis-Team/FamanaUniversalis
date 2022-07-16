@@ -27,39 +27,7 @@ country_event = {
 	option = {
 		name = maxan.1.a
 		ai_chance = { factor = 8 }
-		every_province = {
-			limit = { culture = Bohoran }
-			change_culture = Bohoran_E
-		}
-		if = {
-			limit = { primary_culture = Bohoran }
-			change_primary_culture = Bohoran_E
-		}
-		if = {
-			limit = {
-				accepted_culture = Bohoran
-			}
-			add_accepted_culture = Bohoran_E
-			remove_accepted_culture	= Bohoran
-		}
-		if = {
-			limit = {
-				ruler_culture = Bohoran
-			}
-			set_ruler_culture = Bohoran_E
-		}
-		if = {
-			limit = {
-				consort_culture = Bohoran
-			}
-			set_consort_culture = Bohoran_E
-		}
-		if = {
-			limit = {
-				heir_culture = Bohoran
-			}
-			set_heir_culture = Bohoran_E
-		}
+		custom_tooltip = BohoranCultureGroupChange
 		hidden_effect = {
 			every_country = {
 				limit = {
@@ -73,6 +41,39 @@ country_event = {
 				}
 				add_accepted_culture = Bohoran_E
 				remove_accepted_culture	= Bohoran
+			}
+			every_province = {
+				limit = { culture = Bohoran }
+				change_culture = Bohoran_E
+			}
+			if = {
+				limit = { primary_culture = Bohoran }
+				change_primary_culture = Bohoran_E
+			}
+			if = {
+				limit = {
+					accepted_culture = Bohoran
+				}
+				add_accepted_culture = Bohoran_E
+				remove_accepted_culture	= Bohoran
+			}
+			if = {
+				limit = {
+					ruler_culture = Bohoran
+				}
+				set_ruler_culture = Bohoran_E
+			}
+			if = {
+				limit = {
+					consort_culture = Bohoran
+				}
+				set_consort_culture = Bohoran_E
+			}
+			if = {
+				limit = {
+					heir_culture = Bohoran
+				}
+				set_heir_culture = Bohoran_E
 			}
 		}
 	}

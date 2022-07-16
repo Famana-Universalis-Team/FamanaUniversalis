@@ -28,22 +28,27 @@ on_startup = {
 		value = religion
 		who = ROOT
 	}
+	#set_variable = {
+	#	which = otherGuyMil
+	#	value = 0
+	#}
+	#set_variable = {
+		#which = otherGuyAge
+		#value = 0
+	#}
+	#set_variable = {
+	#	which = otherGuyGender
+	#	value = 0
+	#}
+	#set_variable = {
+	#	which = currentRulerAge
+	#	value = 0
+	#}
 	set_variable = {
-		which = otherGuyMil
+		which = IDforAchievementCounters
 		value = 0
 	}
-	set_variable = {
-		which = otherGuyAge
-		value = 0
-	}
-	set_variable = {
-		which = otherGuyGender
-		value = 0
-	}
-	set_variable = {
-		which = currentRulerAge
-		value = 0
-	}
+	
 	if = {
 		limit = {
 			NOT = {
@@ -79,6 +84,9 @@ on_startup = {
 		}
 	}
 	events = {
+
+		#Used to verify the player's starting country for some achievements
+		achievement.4
 
 		#Yomtanian War Damage
 		yomtanian.2

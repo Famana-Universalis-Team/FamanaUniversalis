@@ -5,13 +5,13 @@ country_decisions = {
 		potential = { 
 			OR = {
 				AND = {
+					ai = no
 					default_game_settings = yes
 					normal_or_historical_nations = yes
 					normal_province_values = yes
 					ironman = yes
 					start_date = 212.6.6
 					NOT = { num_of_custom_nations = 1 }
-					ai = no
 					OR = {
 						tag = MRS
 						AND = {
@@ -76,13 +76,13 @@ country_decisions = {
 		potential = {
 			OR = {
 				AND = {
+					ai = no
 					default_game_settings = yes
 					normal_or_historical_nations = yes
 					normal_province_values = yes
 					ironman = yes
 					start_date = 212.6.6
 					NOT = { num_of_custom_nations = 1 }
-					ai = no
 					tag = DEL
 				}
 				has_country_flag = debug_achievements
@@ -125,13 +125,13 @@ country_decisions = {
 		potential = {
 			OR = {
 				AND = {
+					ai = no
 					default_game_settings = yes
 					normal_or_historical_nations = yes
 					normal_province_values = yes
 					ironman = yes
 					start_date = 212.6.6
 					NOT = { num_of_custom_nations = 1 }
-					ai = no
 					OR = {
 						tag = YTB
 						was_tag = YTB
@@ -171,13 +171,13 @@ country_decisions = {
 		potential = {
 			OR = {
 				AND = {
+					ai = no
 					default_game_settings = yes
 					normal_or_historical_nations = yes
 					normal_province_values = yes
 					ironman = yes
 					start_date = 212.6.6
 					NOT = { num_of_custom_nations = 1 }
-					ai = no
 					tag = FAS
 				}
 				has_country_flag = debug_achievements
@@ -216,13 +216,13 @@ country_decisions = {
 		potential = {
 			OR = {
 				AND = {
+					ai = no
 					default_game_settings = yes
 					normal_or_historical_nations = yes
 					normal_province_values = yes
 					ironman = yes
 					start_date = 212.6.6
 					NOT = { num_of_custom_nations = 1 }
-					ai = no
 					tag = FAS
 				}
 				has_country_flag = debug_achievements
@@ -262,13 +262,13 @@ country_decisions = {
 		potential = {
 			OR = {
 				AND = {
+					ai = no
 					default_game_settings = yes
 					normal_or_historical_nations = yes
 					normal_province_values = yes
 					ironman = yes
 					start_date = 212.6.6
 					NOT = { num_of_custom_nations = 1 }
-					ai = no
 					tag = MOX
 				}
 				has_country_flag = debug_achievements
@@ -305,13 +305,13 @@ country_decisions = {
 		potential = {
 			OR = {
 				AND = {
+					ai = no
 					default_game_settings = yes
 					normal_or_historical_nations = yes
 					normal_province_values = yes
 					ironman = yes
 					start_date = 212.6.6
 					NOT = { num_of_custom_nations = 1 }
-					ai = no
 					tag = BVA
 				}
 				has_country_flag = debug_achievements
@@ -347,13 +347,13 @@ country_decisions = {
 		potential = {
 			OR = {
 				AND = {
+					ai = no
 					default_game_settings = yes
 					normal_or_historical_nations = yes
 					normal_province_values = yes
 					ironman = yes
 					start_date = 212.6.6
 					NOT = { num_of_custom_nations = 1 }
-					ai = no
 					tag = GET
 				}
 				has_country_flag = debug_achievements
@@ -386,13 +386,13 @@ country_decisions = {
 		potential = {
 			OR = {
 				AND = {
+					ai = no
 					default_game_settings = yes
 					normal_or_historical_nations = yes
 					normal_province_values = yes
 					ironman = yes
 					start_date = 212.6.6
 					NOT = { num_of_custom_nations = 1 }
-					ai = no
 					tag = DEL
 				}
 				has_country_flag = debug_achievements
@@ -427,13 +427,13 @@ country_decisions = {
 		potential = {
 			OR = {
 				AND = {
+					ai = no
 					default_game_settings = yes
 					normal_or_historical_nations = yes
 					normal_province_values = yes
 					ironman = yes
 					start_date = 212.6.6
 					NOT = { num_of_custom_nations = 1 }
-					ai = no
 					OR = {
 						tag = NAK
 						AND = {
@@ -527,13 +527,13 @@ country_decisions = {
 		potential = {
 			OR = {
 				AND = {
+					ai = no
 					default_game_settings = yes
 					normal_or_historical_nations = yes
 					normal_province_values = yes
 					ironman = yes
 					start_date = 212.6.6
 					NOT = { num_of_custom_nations = 1 }
-					ai = no
 					tag = HLK
 				}
 				has_country_flag = debug_achievements
@@ -560,13 +560,13 @@ country_decisions = {
 		potential = {
 			OR = {
 				AND = {
+					ai = no
 					default_game_settings = yes
 					normal_or_historical_nations = yes
 					normal_province_values = yes
 					ironman = yes
 					start_date = 212.6.6
 					NOT = { num_of_custom_nations = 1 }
-					ai = no
 					culture_group = Maldikian
 				}
 				has_country_flag = debug_achievements
@@ -593,13 +593,13 @@ country_decisions = {
 		potential = {
 			OR = {
 				AND = {
+					ai = no
 					default_game_settings = yes
 					normal_or_historical_nations = yes
 					normal_province_values = yes
 					ironman = yes
 					start_date = 212.6.6
 					NOT = { num_of_custom_nations = 1 }
-					ai = no
 					tag = ORM
 				}
 				has_country_flag = debug_achievements
@@ -640,13 +640,13 @@ country_decisions = {
 		potential = {
 			OR = {
 				AND = {
+					ai = no
 					default_game_settings = yes
 					normal_or_historical_nations = yes
 					normal_province_values = yes
 					ironman = yes
 					start_date = 212.6.6
 					NOT = { num_of_custom_nations = 1 }
-					ai = no
 					OR = {
 						tag = YTB
 						AND = {
@@ -684,13 +684,13 @@ country_decisions = {
 		potential = {
 			OR = {
 				AND = {
+					ai = no
 					default_game_settings = yes
 					normal_or_historical_nations = yes
 					normal_province_values = yes
 					ironman = yes
 					start_date = 212.6.6
 					NOT = { num_of_custom_nations = 1 }
-					ai = no
 					OR = {
 						tag = TYD
 						AND = {
@@ -737,13 +737,13 @@ country_decisions = {
 		potential = {
 			OR = {
 				AND = {
+					ai = no
 					default_game_settings = yes
 					normal_or_historical_nations = yes
 					normal_province_values = yes
 					ironman = yes
 					start_date = 212.6.6
 					NOT = { num_of_custom_nations = 1 }
-					ai = no
 					tag = ZNE
 				}
 				has_country_flag = debug_achievements
@@ -780,13 +780,13 @@ country_decisions = {
 		potential = {
 			OR = {
 				AND = {
+					ai = no
 					default_game_settings = yes
 					normal_or_historical_nations = yes
 					normal_province_values = yes
 					ironman = yes
 					start_date = 212.6.6
 					NOT = { num_of_custom_nations = 1 }
-					ai = no
 					tag = FAS
 				}
 				has_country_flag = debug_achievements
@@ -821,13 +821,13 @@ country_decisions = {
 		potential = {
 			OR = {
 				AND = {
+					ai = no
 					default_game_settings = yes
 					normal_or_historical_nations = yes
 					normal_province_values = yes
 					ironman = yes
 					start_date = 212.6.6
 					NOT = { num_of_custom_nations = 1 }
-					ai = no
 					OR = {
 						tag = TCK
 						AND = {
@@ -869,13 +869,13 @@ country_decisions = {
 		potential = {
 			OR = {
 				AND = {
+					ai = no
 					default_game_settings = yes
 					normal_or_historical_nations = yes
 					normal_province_values = yes
 					ironman = yes
 					start_date = 212.6.6
 					NOT = { num_of_custom_nations = 1 }
-					ai = no
 					tag = NPX
 				}
 				has_country_flag = debug_achievements
@@ -938,13 +938,13 @@ country_decisions = {
 		potential = {
 			OR = {
 				AND = {
+					ai = no
 					default_game_settings = yes
 					normal_or_historical_nations = yes
 					normal_province_values = yes
 					ironman = yes
 					start_date = 212.6.6
 					NOT = { num_of_custom_nations = 1 }
-					ai = no
 					tag = ORC
 				}
 				has_country_flag = debug_achievements
@@ -981,13 +981,13 @@ country_decisions = {
 		potential = {
 			OR = {
 				AND = {
+					ai = no
 					default_game_settings = yes
 					normal_or_historical_nations = yes
 					normal_province_values = yes
 					ironman = yes
 					start_date = 212.6.6
 					NOT = { num_of_custom_nations = 1 }
-					ai = no
 					tag = YAB
 				}
 				has_country_flag = debug_achievements
@@ -1026,13 +1026,13 @@ country_decisions = {
 		potential = {
 			OR = {
 				AND = {
+					ai = no
 					default_game_settings = yes
 					normal_or_historical_nations = yes
 					normal_province_values = yes
 					ironman = yes
 					start_date = 212.6.6
 					NOT = { num_of_custom_nations = 1 }
-					ai = no
 					OR = {
 						tag = SIX
 						AND = {
@@ -1086,13 +1086,13 @@ country_decisions = {
 		potential = {
 			OR = {
 				AND = {
+					ai = no
 					default_game_settings = yes
 					normal_or_historical_nations = yes
 					normal_province_values = yes
 					ironman = yes
 					start_date = 212.6.6
 					NOT = { num_of_custom_nations = 1 }
-					ai = no
 					OR = {
 						tag = YAB
 						AND = {
@@ -1135,13 +1135,13 @@ country_decisions = {
 		potential = {
 			OR = {
 				AND = {
+					ai = no
 					default_game_settings = yes
 					normal_or_historical_nations = yes
 					normal_province_values = yes
 					ironman = yes
 					start_date = 212.6.6
 					NOT = { num_of_custom_nations = 1 }
-					ai = no
 					OR = {
 						tag = KIN
 						AND = {
@@ -1183,13 +1183,13 @@ country_decisions = {
 		potential = {
 			OR = {
 				AND = {
+					ai = no
 					default_game_settings = yes
 					normal_or_historical_nations = yes
 					normal_province_values = yes
 					ironman = yes
 					start_date = 212.6.6
 					NOT = { num_of_custom_nations = 1 }
-					ai = no
 					OR = {
 						tag = FNC
 						AND = {
@@ -1227,13 +1227,13 @@ country_decisions = {
 		potential = {
 			OR = {
 				AND = {
+					ai = no
 					default_game_settings = yes
 					normal_or_historical_nations = yes
 					normal_province_values = yes
 					ironman = yes
 					start_date = 212.6.6
 					NOT = { num_of_custom_nations = 1 }
-					ai = no
 					OR = {
 						has_reform = survivor_reform
 						has_reform = city_state_union_reform
@@ -1276,13 +1276,13 @@ country_decisions = {
 		potential = {
 			OR = {
 				AND = {
+					ai = no
 					default_game_settings = yes
 					normal_or_historical_nations = yes
 					normal_province_values = yes
 					ironman = yes
 					start_date = 212.6.6
 					NOT = { num_of_custom_nations = 1 }
-					ai = no
 					tag = NOZ
 					NOT = {
 						was_tag = FAS
@@ -1331,13 +1331,13 @@ country_decisions = {
 		potential = {
 			OR = {
 				AND = {
+					ai = no
 					default_game_settings = yes
 					normal_or_historical_nations = yes
 					normal_province_values = yes
 					ironman = yes
 					start_date = 212.6.6
 					NOT = { num_of_custom_nations = 1 }
-					ai = no
 					OR = {
 						tag = KRS
 						was_tag = KRS
@@ -1375,13 +1375,13 @@ country_decisions = {
 		potential = {
 			OR = {
 				AND = {
+					ai = no
 					default_game_settings = yes
 					normal_or_historical_nations = yes
 					normal_province_values = yes
 					ironman = yes
 					start_date = 212.6.6
 					NOT = { num_of_custom_nations = 1 }
-					ai = no
 					tag = JXS
 				}
 				has_country_flag = debug_achievements
@@ -1413,13 +1413,13 @@ country_decisions = {
 		potential = {
 			OR = {
 				AND = {
+					ai = no
 					default_game_settings = yes
 					normal_or_historical_nations = yes
 					normal_province_values = yes
 					ironman = yes
 					start_date = 212.6.6
 					NOT = { num_of_custom_nations = 1 }
-					ai = no
 					tag = ELW
 				}
 				has_country_flag = debug_achievements
@@ -1447,6 +1447,669 @@ country_decisions = {
 			}
 			add_country_modifier = {
 				name = achievement_the_elwaiting_game_modifier
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	achievement_mimes_of_moria = {
+		major = yes
+		potential = {
+			OR = {
+				AND = {
+					ai = no
+					default_game_settings = yes
+					normal_or_historical_nations = yes
+					normal_province_values = yes
+					ironman = yes
+					start_date = 212.6.6
+					NOT = { num_of_custom_nations = 1 }
+					was_tag = MRL
+					has_country_flag = startedLegitAch
+				}
+				has_country_flag = debug_achievements
+			}
+			NOT = {
+				has_country_modifier = achievement_mimes_of_moria_modifier
+			}
+		}
+		allow = {
+			tag = MOR
+			was_tag = MRL
+		}
+		effect = {
+			add_country_modifier = {
+				name = achievement_mimes_of_moria_modifier
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	achievement_laglong = {
+		major = yes
+		potential = {
+			OR = {
+				AND = {
+					ai = no
+					default_game_settings = yes
+					normal_or_historical_nations = yes
+					normal_province_values = yes
+					ironman = yes
+					start_date = 212.6.6
+					NOT = { num_of_custom_nations = 1 }
+					tag = LAG
+				}
+				has_country_flag = debug_achievements
+			}
+			NOT = {
+				has_country_modifier = achievement_laglong_modifier
+			}
+		}
+		allow = {
+			all_province = {
+				AND = {
+					any_neighbor_province = {
+						region = gomic_region
+					}
+					is_empty = no
+					owner = LAG
+					is_sea = no
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = achievement_laglong_modifier
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	achievement_eclipse_never_sets = {
+		major = yes
+		potential = {
+			OR = {
+				AND = {
+					ai = no
+					default_game_settings = yes
+					normal_or_historical_nations = yes
+					normal_province_values = yes
+					ironman = yes
+					start_date = 212.6.6
+					NOT = { num_of_custom_nations = 1 }
+					tag = NAF
+				}
+				has_country_flag = debug_achievements
+			}
+			NOT = {
+				has_country_modifier = achievement_eclipse_never_sets_modifier
+			}
+		}
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = NAF_FTC_TT
+				mission_completed = naf_dominate_the_gomic
+				mission_completed = eclipse_bohorans_and_kachiks
+				mission_completed = naf_utilize_jzoet
+				mission_completed = naf_emastalian_golden_age
+				mission_completed = naf_the_staple_port
+				mission_completed = naf_dominate_eastern_estal
+				mission_completed = naf_convert_ga_xal
+				mission_completed = naf_lessons_from_old_empires
+				mission_completed = naf_the_truth_of_the_eclipse
+				mission_completed = naf_new_syadona
+				#mission_completed = naf_end_the_yomtanian_menace
+				mission_completed = naf_technological_advantage
+				mission_completed = naf_build_the_imperial_routes
+				mission_completed = naf_gomic_unity
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = achievement_eclipse_never_sets_modifier
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	achievement_umenie_vojny = {
+		major = yes
+		potential = {
+			OR = {
+				AND = {
+					ai = no
+					default_game_settings = yes
+					normal_or_historical_nations = yes
+					normal_province_values = yes
+					ironman = yes
+					start_date = 212.6.6
+					NOT = { num_of_custom_nations = 1 }
+					has_country_flag = wonDanTzuBattle
+				}
+				has_country_flag = debug_achievements
+			}
+			NOT = {
+				has_country_modifier = achievement_umenie_vojny_modifier
+			}
+		}
+		allow = {
+			has_country_flag = wonDanTzuBattle
+			custom_trigger_tooltip = {
+				tooltip = umenie_vojny_yes
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = achievement_umenie_vojny_modifier
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	achievement_tide_has_turned = {
+		major = yes
+		potential = {
+			OR = {
+				AND = {
+					ai = no
+					default_game_settings = yes
+					normal_or_historical_nations = yes
+					normal_province_values = yes
+					ironman = yes
+					start_date = 212.6.6
+					NOT = { num_of_custom_nations = 1 }
+					OR = {
+						tag = BAF
+						tag = TUL
+					}
+				}
+				has_country_flag = debug_achievements
+			}
+			NOT = {
+				has_country_modifier = achievement_tide_has_turned_modifier
+			}
+		}
+		allow = {
+			hidden_trigger = {
+				calc_true_if = {
+					all_country = {
+						AND = {
+							has_opinion_modifier = {
+								who = PREV
+								modifier = slaves_raided
+							}
+							culture_group = Naravami_C
+						}
+					}
+					amount = 5
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = tideturnedTT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = achievement_tide_has_turned_modifier
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	achievement_barbarian_no_more = {
+		major = yes
+		potential = {
+			OR = {
+				AND = {
+					ai = no
+					default_game_settings = yes
+					normal_or_historical_nations = yes
+					normal_province_values = yes
+					ironman = yes
+					start_date = 212.6.6
+					NOT = { num_of_custom_nations = 1 }
+					OR = {
+						was_tag = RME
+						was_tag = BRO
+						was_tag = VRI
+						was_tag = YON
+						was_tag = BRY
+						was_tag = BRM
+						was_tag = BOR
+					}
+					has_country_flag = startedLegitAch
+				}
+				has_country_flag = debug_achievements
+			}
+			NOT = {
+				has_country_modifier = achievement_barbarian_no_more_modifier
+			}
+		}
+		allow = {
+			tag = VAM
+			religion = ordic
+			6356 = {
+				owner = VAM
+				religion = ordic
+			}
+			6176 = {
+				owner = VAM
+				religion = ordic
+			}
+			6189 = {
+				owner = VAM
+				religion = ordic
+			}
+			6709 = {
+				owner = VAM
+				religion = ordic
+			}
+			5725 = {
+				owner = VAM
+				religion = ordic
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = achievement_barbarian_no_more_modifier
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	achievement_one_flame_to_rule_them_all = {
+		major = yes
+		potential = {
+			OR = {
+				AND = {
+					ai = no
+					default_game_settings = yes
+					normal_or_historical_nations = yes
+					normal_province_values = yes
+					ironman = yes
+					start_date = 212.6.6
+					NOT = { num_of_custom_nations = 1 }
+					OR = {
+						religion = lathvy
+						religion = rochoni
+						religion = rini
+						religion = harmonic
+					}
+				}
+				has_country_flag = debug_achievements
+			}
+			NOT = {
+				has_country_modifier = achievement_one_flame_to_rule_them_all_modifier
+			}
+		}
+		allow = {
+			if = {
+				limit = {
+					religion = rochoni
+				}
+				any_country = {
+					NOT = {
+						OR = {
+							religion = lathvy
+							religion = rini
+							religion = harmonic
+						}
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					religion = lathvy
+				}
+				any_country = {
+					NOT = {
+						OR = {
+							religion = rochoni
+							religion = rini
+							religion = harmonic
+						}
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					religion = rini
+				}
+				any_country = {
+					NOT = {
+						OR = {
+							religion = lathvy
+							religion = rochoni
+							religion = harmonic
+						}
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					religion = harmonic
+				}
+				any_country = {
+					NOT = {
+						OR = {
+							religion = lathvy
+							religion = rini
+							religion = rochoni
+						}
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					religious_school = {
+						group = lathvy_group
+						school = maxan_school
+					}
+				}
+				any_country = {
+					NOT = {
+						OR = {
+							religious_school = {
+								group = lathvy_group
+								school = pextoglazian_school
+							}
+							religious_school = {
+								group = lathvy_group
+								school = walaran_school
+							}
+							religious_school = {
+								group = lathvy_group
+								school = kolyan_school
+							}
+							religious_school = {
+								group = lathvy_group
+								school = nafan_school
+							}
+							religious_school = {
+								group = lathvy_group
+								school = celzian_school
+							}
+						}
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					religious_school = {
+						group = lathvy_group
+						school = pextoglazian_school
+					}
+				}
+				any_country = {
+					NOT = {
+						OR = {
+							religious_school = {
+								group = lathvy_group
+								school = maxan_school
+							}
+							religious_school = {
+								group = lathvy_group
+								school = walaran_school
+							}
+							religious_school = {
+								group = lathvy_group
+								school = kolyan_school
+							}
+							religious_school = {
+								group = lathvy_group
+								school = nafan_school
+							}
+							religious_school = {
+								group = lathvy_group
+								school = celzian_school
+							}
+						}
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					religious_school = {
+						group = lathvy_group
+						school = walaran_school
+					}
+				}
+				any_country = {
+					NOT = {
+						OR = {
+							religious_school = {
+								group = lathvy_group
+								school = pextoglazian_school
+							}
+							religious_school = {
+								group = lathvy_group
+								school = maxan_school
+							}
+							religious_school = {
+								group = lathvy_group
+								school = kolyan_school
+							}
+							religious_school = {
+								group = lathvy_group
+								school = nafan_school
+							}
+							religious_school = {
+								group = lathvy_group
+								school = celzian_school
+							}
+						}
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					religious_school = {
+						group = lathvy_group
+						school = kolyan_school
+					}
+				}
+				any_country = {
+					NOT = {
+						OR = {
+							religious_school = {
+								group = lathvy_group
+								school = pextoglazian_school
+							}
+							religious_school = {
+								group = lathvy_group
+								school = walaran_school
+							}
+							religious_school = {
+								group = lathvy_group
+								school = maxan_school
+							}
+							religious_school = {
+								group = lathvy_group
+								school = nafan_school
+							}
+							religious_school = {
+								group = lathvy_group
+								school = celzian_school
+							}
+						}
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					religious_school = {
+						group = lathvy_group
+						school = nafan_school
+					}
+				}
+				any_country = {
+					NOT = {
+						OR = {
+							religious_school = {
+								group = lathvy_group
+								school = pextoglazian_school
+							}
+							religious_school = {
+								group = lathvy_group
+								school = walaran_school
+							}
+							religious_school = {
+								group = lathvy_group
+								school = kolyan_school
+							}
+							religious_school = {
+								group = lathvy_group
+								school = maxan_school
+							}
+							religious_school = {
+								group = lathvy_group
+								school = celzian_school
+							}
+						}
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					religious_school = {
+						group = lathvy_group
+						school = celzian_school
+					}
+				}
+				any_country = {
+					NOT = {
+						OR = {
+							religious_school = {
+								group = lathvy_group
+								school = pextoglazian_school
+							}
+							religious_school = {
+								group = lathvy_group
+								school = walaran_school
+							}
+							religious_school = {
+								group = lathvy_group
+								school = kolyan_school
+							}
+							religious_school = {
+								group = lathvy_group
+								school = nafan_school
+							}
+							religious_school = {
+								group = lathvy_group
+								school = maxan_school
+							}
+						}
+					}
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = achievement_one_flame_to_rule_them_all_modifier
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	achievement_lathvy_empire = {
+		major = yes
+		potential = {
+			OR = {
+				AND = {
+					ai = no
+					default_game_settings = yes
+					normal_or_historical_nations = yes
+					normal_province_values = yes
+					ironman = yes
+					start_date = 212.6.6
+					NOT = { num_of_custom_nations = 1 }
+					tag = PEX
+				}
+				has_country_flag = debug_achievements
+			}
+			NOT = {
+				has_country_modifier = achievement_lathvy_empire_modifier
+			}
+		}
+		allow = {
+			mission_completed = pex_the_lathvy_empire
+		}
+		effect = {
+			add_country_modifier = {
+				name = achievement_lathvy_empire_modifier
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	achievement_free_and_awakened = {
+		major = yes
+		potential = {
+			OR = {
+				AND = {
+					ai = no
+					default_game_settings = yes
+					normal_or_historical_nations = yes
+					normal_province_values = yes
+					ironman = yes
+					start_date = 212.6.6
+					NOT = { num_of_custom_nations = 1 }
+					OR = {
+						was_tag = ROL
+						was_tag = OLF
+						was_tag = ZTT
+						was_tag = GRL
+						was_tag = RHJ
+						was_tag = MPL
+						AND = {
+							was_tag = EQI
+							tag = MRR
+						}
+					}
+					has_country_flag = startedLegitAch
+				}
+				has_country_flag = debug_achievements
+			}
+			NOT = {
+				has_country_modifier = achievement_free_and_awakened_modifier
+			}
+		}
+		allow = {
+			tag = MRR
+			NOT = {
+				any_country = {
+					AND = {
+						capital_scope = {
+							superregion = oppia_superregion
+						}
+						tech_difference = 1
+					}
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = achievement_free_and_awakened_modifier
 				duration = -1
 			}
 		}
