@@ -1644,8 +1644,8 @@ country_decisions = {
 				calc_true_if = {
 					all_country = {
 						AND = {
-							has_opinion_modifier = {
-								who = PREV
+							reverse_has_opinion_modifier = {
+								who = ROOT
 								modifier = slaves_raided
 							}
 							culture_group = Naravami_C
