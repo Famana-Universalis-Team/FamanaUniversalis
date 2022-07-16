@@ -278,14 +278,14 @@ defined_text = {
     text = { #North Estal
         localisation_key = string_start_tag_estal
         trigger = {
-            technology_group = gotzlic_tech_gr
+            technology_group = estali_tech_gr
         }
     }
 
     text = { #Geopyopia
         localisation_key = string_start_tag_gep
         trigger = {
-            technology_group = geopyopian_tech_gr
+            technology_group = washoom_tech_gr
         }
     }
 

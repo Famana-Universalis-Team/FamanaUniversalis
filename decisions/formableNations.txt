@@ -1824,8 +1824,8 @@ country_decisions = {
 				set_government_rank = 2
 			}
 			change_tag = RES
-			change_technology_group	= north_gomic_tech_gr
-			change_unit_type = north_gomic_tech_gr
+			change_technology_group	= lathvy_tech_gr
+			change_unit_type = lathvy_tech_gr
 			hidden_effect = {
 				change_graphical_culture = westerngfx
 			}
@@ -2269,8 +2269,8 @@ country_decisions = {
 				limit = {
 					religion_group = lathvy_group
 				}
-				change_technology_group	= north_gomic_tech_gr
-				change_unit_type = north_gomic_tech_gr
+				change_technology_group	= lathvy_tech_gr
+				change_unit_type = lathvy_tech_gr
 				hidden_effect = {
 					change_graphical_culture = westerngfx
 				}
@@ -2541,8 +2541,8 @@ country_decisions = {
 				limit = {
 					religion_group = lathvy_group
 				}
-				change_technology_group	= north_gomic_tech_gr
-				change_unit_type = north_gomic_tech_gr
+				change_technology_group	= lathvy_tech_gr
+				change_unit_type = lathvy_tech_gr
 				hidden_effect = {
 					change_graphical_culture = westerngfx
 				}
@@ -3076,8 +3076,8 @@ country_decisions = {
 				limit = {
 					religion_group = lathvy_group
 				}
-				change_technology_group	= gotzlic_tech_gr
-				change_unit_type = gotzlic_tech_gr
+				change_technology_group	= estali_tech_gr
+				change_unit_type = estali_tech_gr
 				hidden_effect = {
 					change_graphical_culture = easterngfx
 				}
@@ -3160,8 +3160,8 @@ country_decisions = {
 				remove_core = ROOT
 			}
 			
-			change_technology_group	= north_gomic_tech_gr
-			change_unit_type = north_gomic_tech_gr
+			change_technology_group	= lathvy_tech_gr
+			change_unit_type = lathvy_tech_gr
 			hidden_effect = {
 				change_graphical_culture = westerngfx
 			}

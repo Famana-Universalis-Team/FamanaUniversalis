@@ -1900,7 +1900,7 @@ nafa_4 = {
                 }
             }
             5826 = {
-                is_owned_by = NAF
+                owned_by = NAF
                 is_core = NAF
                 OR = {
                     has_building = fort_15th
@@ -1910,7 +1910,7 @@ nafa_4 = {
                 }
             }
             5894 = {
-                is_owned_by = NAF
+                owned_by = NAF
                 is_core = NAF
                 OR = {
                     has_building = fort_15th

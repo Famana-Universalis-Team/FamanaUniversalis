@@ -84,3 +84,141 @@ bhillis_fashrana_superregion = {
 	bizugu_region
 	northwest_bhilis_region
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# A region can only belong to one super region.
+
+india_superregion = {
+}
+
+east_indies_superregion = {
+}
+
+oceania_superregion = {
+}
+
+china_superregion = {
+
+}
+
+europe_superregion = { #Western Europe
+}
+
+eastern_europe_superregion = {
+
+}
+
+tartary_superregion = {
+
+}
+
+far_east_superregion = {
+	
+}
+
+africa_superregion = {
+
+}
+
+southern_africa_superregion = {
+
+}
+
+south_america_superregion = { # amazonia
+
+}
+
+andes_superregion = {
+
+}
+
+north_america_superregion = {
+
+}
+
+central_america_superregion = {
+
+}
+
+near_east_superregion = {
+
+}
+
+persia_superregion = {
+
+}
+
+new_world_superregion = {
+}
+
+# Sea super regions are used by AI to plan naval bases (it wants at least one fleet in each it has non-home presence if possible).
+
+west_american_sea_superregion = {
+
+}
+
+east_american_sea_superregion = {
+
+}
+
+north_european_sea_superregion = {
+
+}
+
+south_european_sea_superregion = {
+
+}
+
+west_african_sea_superregion = {
+
+}
+
+east_african_sea_superregion = {
+
+}
+
+indian_pacific_sea_superregion = {
+
+}
+
+north_pacific_sea_superregion = {
+
+}

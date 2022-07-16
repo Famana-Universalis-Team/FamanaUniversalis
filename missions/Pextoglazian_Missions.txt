@@ -96,8 +96,8 @@ pex_1 = {
 		                	set_government_rank = 2
 		                }
 			            change_tag = RES
-			            change_technology_group	= north_gomic_tech_gr
-			            change_unit_type = north_gomic_tech_gr
+			            change_technology_group	= lathvy_tech_gr
+			            change_unit_type = lathvy_tech_gr
                         if = {
                             limit = {
                                 government = monarchy

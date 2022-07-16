@@ -779,3 +779,524 @@ stroktur_region = {
 		leta_area
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# A province can only belong to one region!
+
+
+########################################
+# EUROPE                               #
+########################################
+
+france_region = {
+}
+
+scandinavia_region = {
+	areas = {
+	}
+}
+
+
+low_countries_region = {
+	areas = {
+	}
+
+}
+
+italy_region = {
+	areas = {
+	}
+}
+
+
+north_german_region = {
+	areas = {
+	}
+}
+
+
+
+
+south_german_region = {
+	areas = {
+	}
+}
+
+russia_region = {
+	areas = {
+	}
+}
+
+
+ural_region = {
+	areas = {
+	}
+}
+
+iberia_region = {
+	areas = {
+	}
+}
+
+
+
+british_isles_region = {
+	areas = {
+	}
+}
+
+baltic_region = {
+	areas = {
+	}
+}
+
+poland_region = {
+	areas = {
+	}
+}
+
+ruthenia_region = {
+	areas = {
+	}
+}
+
+crimea_region = {
+	areas = {
+	}
+}
+
+balkan_region = {
+	areas = {
+	}
+}
+
+carpathia_region = {
+	areas = {
+	}
+}
+
+egypt_region = {
+	areas = {
+	}
+}
+
+maghreb_region = {
+	areas = {
+	}
+}
+
+mashriq_region = {
+	areas = {
+	}
+}
+
+anatolia_region = {
+	areas = {
+	}
+}
+
+persia_region = {
+	areas = {
+	}
+}
+
+khorasan_region = {
+	areas = {
+	}
+}
+
+
+caucasia_region = {
+	areas = {
+	}
+}
+
+arabia_region = {
+	areas = {
+	}
+}
+
+niger_region = {
+	areas = {
+	}
+}
+
+guinea_region = {
+	areas = {
+	}
+}
+
+
+sahel_region = {
+	areas = {
+	}
+}
+
+horn_of_africa_region = {
+	areas = {
+	}
+}
+
+east_africa_region = {
+	areas = {
+	}
+}
+
+central_africa_region = {
+	areas = {
+	}
+}
+
+kongo_region = {
+	areas = {
+	}
+}
+
+central_asia_region = {
+	areas = {
+	}
+}
+
+south_africa_region = {
+	areas = {
+	}
+}
+
+west_siberia_region = {
+	areas = {
+	}
+}
+
+east_siberia_region = {
+	areas = {
+	}
+}
+
+mongolia_region = {
+	areas = {
+	}
+}
+
+manchuria_region = {
+	areas = {
+	}
+}
+
+korea_region = {
+	areas = {
+	}
+}
+
+tibet_region = {
+	areas = {
+	}
+}
+
+hindusthan_region = {
+	areas = {
+	}
+}
+
+bengal_region = {
+	areas = {
+	}
+}
+
+west_india_region = {
+	areas = {
+	}
+}
+
+deccan_region = {
+	areas = {
+	}
+}
+
+coromandel_region = {
+	areas = {
+	}
+}
+
+
+burma_region = {
+	areas = {
+	}
+}
+
+japan_region = {
+	areas = {
+	}
+}
+
+australia_region = {
+	areas = {
+	}
+}
+
+
+south_china_region = {
+	areas = {
+	}
+}
+
+xinan_region = {
+	areas = {
+	}
+}
+
+north_china_region = {
+	
+	areas = {
+	}
+}
+
+brazil_region = {
+	
+	areas = {
+	}
+}
+
+la_plata_region = {
+
+	areas = {
+	}
+}
+
+
+colombia_region = {
+	areas = {
+	}
+}
+
+peru_region = {
+	areas = {
+	}
+}
+
+upper_peru_region = {
+	areas = {
+	}
+}
+
+malaya_region = {	#Western Indonesia Malaya.
+	areas = {
+	}
+}
+
+
+moluccas_region = {
+	areas = {
+	}
+}
+
+
+
+indonesia_region = { #Eastern Indonesian/Malayan Islands.
+	areas = {
+	}
+}
+
+
+oceanea_region = {
+	areas = {
+	}
+}
+
+indo_china_region = {
+	areas = {
+	}
+}
+
+canada_region = {
+	areas = {
+	}
+}
+
+great_lakes_region = {
+	areas = {
+	}
+}
+
+northeast_america_region = {
+	areas = {
+	}
+}
+
+southeast_america_region =  {
+	areas = {
+	}
+}
+
+mississippi_region = {
+	areas = {
+	}
+}
+
+great_plains_region = {
+	areas = {
+	}
+}
+
+california_region = {
+	areas = {
+	}
+}
+
+cascadia_region = {
+	areas = {
+	}
+}
+
+hudson_bay_region = {
+	areas = {
+	}
+}
+
+mexico_region = {
+	areas = {
+	}
+}
+
+rio_grande_region = {
+	areas = {
+	}
+}
+
+central_america_region = {
+	areas = {
+	}
+}
+
+carribeans_region = {
+	areas = {
+	}
+}
+
+#Sea Regions
+baltic_sea_region = {
+	areas = {
+	}
+}
+
+north_atlantic_region = {
+	areas = {
+	}
+}
+
+american_east_coast_region = {
+	areas = {
+	}
+}
+
+mediterrenean_region = {
+	areas = {
+	}
+}
+
+caribbean_sea_region = {
+	areas = {
+	}
+}
+
+
+west_african_sea_region = {
+	areas = {
+	}
+}
+
+west_indian_ocean_region = {
+	areas = {
+	}
+}
+
+arabian_sea_region = {
+	areas = {
+	}
+}
+
+east_indian_ocean_region = {
+	areas = {
+	}
+}
+
+south_indian_ocean_region = {
+	areas = {
+	}
+}
+
+south_china_sea_region = {
+	areas = {
+	}
+}
+
+east_china_sea_region = {
+	areas = {
+	}
+}
+
+north_west_pacific_region = {
+	areas = {
+	}
+}
+
+south_west_pacific_region = {
+	areas = {
+	}
+}
+
+south_east_pacific_region = {
+	areas = {
+	}
+}
+
+north_east_pacific_region = {
+	areas = {
+	}
+}
+
+pacific_south_america_region = {
+	areas = {
+	}
+}
+
+atlantic_south_america_region = {
+	areas = {
+	}
+}
+
+south_atlantic_region = {
+	areas = {
+	}
+}
