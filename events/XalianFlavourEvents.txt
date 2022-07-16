@@ -19,7 +19,6 @@ country_event = { #Celebrations of Shir
 		name = XalianFlavour.1.a
 		ai_chance = { factor = 1 }
 		add_prestige = 10
-		log = "Shir event"
 		if = {
 			limit = {
 				any_country = {
@@ -55,7 +54,6 @@ country_event = { #Celebrations of Delk
 	}
 
 	option = {
-		log = "Delk event"
 		name = XalianFlavour.1.a
 		ai_chance = { factor = 1 }
 		add_prestige = 10
@@ -94,7 +92,6 @@ country_event = { #Celebrations of Mor
 	}
 
 	option = {
-		log = "Mor event"
 		name = XalianFlavour.1.a
 		ai_chance = { factor = 1 }
 		add_prestige = 10
@@ -133,7 +130,6 @@ country_event = { #Celebrations of Vin
 	}
 	
 	option = {
-		log = "Vin event"
 		name = XalianFlavour.1.a
 		ai_chance = { factor = 1 }
 		add_prestige = 10
@@ -172,7 +168,6 @@ country_event = { #Celebrations of Our God
 	}
 
 	option = {
-		log = "Chosen God event"
 		name = XalianFlavour.1.a
 		ai_chance = { factor = 1 }
 		add_stability = 1

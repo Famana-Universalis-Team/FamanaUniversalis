@@ -278,6 +278,7 @@ country_event = {
 	}
 
     trigger = {
+        religion = gotzli
         NOT = {
             exists = LER
         }
@@ -597,9 +598,14 @@ country_event = {
 			cede_province = RST
 			add_core = RST
 		}
-        RST = {
-            country_event = {
-                id = gotz.11
+        nizoora_area = {
+            add_permanent_claim = RST
+        }
+        hidden_effect = {
+            RST = {
+                country_event = {
+                    id = gotz.11
+                }
             }
         }
     }
@@ -615,24 +621,40 @@ country_event = {
     hidden = yes
 
     immediate = {
-        random_owned_province = {
-            limit = {
-                AND = {
-                    area = rosta_area
-		        	NOT = {
-                        province_id = 6597
-                    }
-		        }
-            }
+        6596 = {
             random_list = {
-                33 = {
+                15 = {
                     add_base_tax = 1
                 }
-                33 = {
+                15 = {
                     add_base_production = 1
                 }
-                33 = {
+                15 = {
                     add_base_manpower = 1
+                }
+                10 = {
+                    add_base_tax = 1
+                    add_base_production = 1
+                }
+                10 = {
+                    add_base_production = 1
+                    add_base_manpower = 1
+                }
+                10 = {
+                    add_base_manpower = 1
+                    add_base_tax = 1
+                }
+                5 = {
+                    add_base_tax = 2
+                }
+                5 = {
+                    add_base_production = 2
+                }
+                5 = {
+                    add_base_manpower = 2
+                }
+                10 = {
+                    
                 }
             }
         }
@@ -659,24 +681,40 @@ country_event = {
     hidden = yes
 
     immediate = {
-        random_owned_province = {
-            limit = {
-                AND = {
-                    area = rosta_area
-		        	NOT = {
-                        province_id = 6597
-                    }
-		        }
-            }
+        6579 = {
             random_list = {
-                33 = {
+                15 = {
                     add_base_tax = 1
                 }
-                33 = {
+                15 = {
                     add_base_production = 1
                 }
-                33 = {
+                15 = {
                     add_base_manpower = 1
+                }
+                10 = {
+                    add_base_tax = 1
+                    add_base_production = 1
+                }
+                10 = {
+                    add_base_production = 1
+                    add_base_manpower = 1
+                }
+                10 = {
+                    add_base_manpower = 1
+                    add_base_tax = 1
+                }
+                5 = {
+                    add_base_tax = 2
+                }
+                5 = {
+                    add_base_production = 2
+                }
+                5 = {
+                    add_base_manpower = 2
+                }
+                10 = {
+                    
                 }
             }
         }
@@ -703,24 +741,40 @@ country_event = {
     hidden = yes
 
     immediate = {
-        random_owned_province = {
-            limit = {
-                AND = {
-                    area = rosta_area
-		        	NOT = {
-                        province_id = 6597
-                    }
-		        }
-            }
+        6588 = {
             random_list = {
-                33 = {
+                15 = {
                     add_base_tax = 1
                 }
-                33 = {
+                15 = {
                     add_base_production = 1
                 }
-                33 = {
+                15 = {
                     add_base_manpower = 1
+                }
+                10 = {
+                    add_base_tax = 1
+                    add_base_production = 1
+                }
+                10 = {
+                    add_base_production = 1
+                    add_base_manpower = 1
+                }
+                10 = {
+                    add_base_manpower = 1
+                    add_base_tax = 1
+                }
+                5 = {
+                    add_base_tax = 2
+                }
+                5 = {
+                    add_base_production = 2
+                }
+                5 = {
+                    add_base_manpower = 2
+                }
+                10 = {
+                    
                 }
             }
         }
@@ -747,30 +801,41 @@ country_event = {
     hidden = yes
 
     immediate = {
-        random_owned_province = {
-            limit = {
-                AND = {
-                    area = rosta_area
-		        	NOT = {
-                        province_id = 6597
-                    }
-		        }
-            }
+        6589 = {
             random_list = {
-                33 = {
+                15 = {
                     add_base_tax = 1
                 }
-                33 = {
+                15 = {
                     add_base_production = 1
                 }
-                33 = {
+                15 = {
                     add_base_manpower = 1
                 }
-            }
-        }
-        RST = {
-            country_event = {
-                id = gotz.15
+                10 = {
+                    add_base_tax = 1
+                    add_base_production = 1
+                }
+                10 = {
+                    add_base_production = 1
+                    add_base_manpower = 1
+                }
+                10 = {
+                    add_base_manpower = 1
+                    add_base_tax = 1
+                }
+                5 = {
+                    add_base_tax = 2
+                }
+                5 = {
+                    add_base_production = 2
+                }
+                5 = {
+                    add_base_manpower = 2
+                }
+                10 = {
+                    
+                }
             }
         }
     }
@@ -781,41 +846,53 @@ country_event = {
     }
 }
 
-#rosta dev event 5
+#Rasta owns nizoora
 country_event = {
     id = gotz.15
     title = gotz.15.t
     desc = gotz.15.desc
     picture = BATTLE_eventPicture
-	is_triggered_only = yes
-    hidden = yes
+	fire_only_once = yes
 
-    immediate = {
-        random_owned_province = {
-            limit = {
-                AND = {
-                    area = rosta_area
-		        	NOT = {
-                        province_id = 6597
-                    }
-		        }
-            }
-            random_list = {
-                33 = {
-                    add_base_tax = 1
-                }
-                33 = {
-                    add_base_production = 1
-                }
-                33 = {
-                    add_base_manpower = 1
-                }
-            }
+    trigger = {
+        tag = RST
+        is_year = 300
+        nizoora_area = {
+            type = all
+            country_or_non_sovereign_subject_holds = ROOT
         }
+    }
+
+    mean_time_to_happen = {
+        months = 1
     }
 
     option = {
         name = gotz.15.a
         ai_chance = { factor = 1 }
+        6580 = {
+			limit = { 
+				is_empty = yes
+			}
+			create_colony = 1000
+			cede_province = RST
+			add_core = RST
+		}
+        6581 = {
+			limit = { 
+				is_empty = yes
+			}
+			create_colony = 1000
+			cede_province = RST
+			add_core = RST
+		}
+        6592 = {
+			limit = { 
+				is_empty = yes
+			}
+			create_colony = 1000
+			cede_province = RST
+			add_core = RST
+		}
     }
 }

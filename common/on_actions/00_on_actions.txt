@@ -1022,11 +1022,7 @@ on_integrate = {
 # Nation annexed.
 # FROM is the nation being annexed
 on_annexed = {
-
 	on_annexed_estate_privileges_effect = yes
-	FROM = {
-		log = "[From.GetName] was annexed by [Root.GetName]."
-	}
 }
 
 # When the chinese empire gets dismantled (e.g. when the emperor is annexed)
@@ -3934,7 +3930,6 @@ on_flagship_destroyed = {
 
 # this = Released country, FROM = Releasing country
 on_country_released = {
-	log = "LOGGED"
 }
 
 # ROOT = province, FROM = country
@@ -4066,7 +4061,6 @@ on_golden_bull_enacted = {
 on_conquest = {
 	remove_named_unrest = estate_land_seized
 	clr_province_flag = has_estate_unrest_flag
-	log = "[Root.GetName] has been conquered from [From.GetName]"
 }
 
 on_country_creation = {
