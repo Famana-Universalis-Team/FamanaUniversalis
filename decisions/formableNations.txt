@@ -1618,8 +1618,8 @@ country_decisions = {
 				NOT = { exists = EST }
 				OR = {
 					culture_group = Emastalian
-					primary_culture = Far_Maxan
-					primary_culture = Near_Maxan
+					primary_culture = Maxan_West_Emastalian
+					primary_culture = Maxan_East_Emastalian
 				}
 				was_never_end_game_tag_trigger = yes
 			}

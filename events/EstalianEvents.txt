@@ -365,10 +365,10 @@ country_event = {
 			if = {
 				limit = {
 					ELQ = {
-						primary_culture = East_Maxan
+						primary_culture = Maxan_East_Emastalian
 					}
 				}
-				change_culture = East_Maxan
+				change_culture = Maxan_East_Emastalian
 			}
 			if = {
 				limit = {
