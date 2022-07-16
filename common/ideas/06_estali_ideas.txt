@@ -238,3 +238,41 @@ RDU_ideas = {
 		army_tradition = 0.5
     }
 }
+
+VAM_ideas = {
+    start = {
+        naval_forcelimit_modifier = 0.1
+		land_attrition = -0.15
+    }
+    
+    bonus = {
+        discipline = 0.05
+    }    
+
+    trigger = {
+        tag = VAM
+    }
+    free = yes
+    
+    vam_1 = {
+		fabricate_claims_cost = -0.2
+    }
+    vam_2 = {
+		build_cost = -0.15
+    }
+    vam_3 = {
+        shock_damage = 0.10
+    }
+    vam_4 = {
+        global_ship_trade_power = 0.2
+    }
+    vam_5 = {
+		defensiveness = 0.1
+    }
+    vam_6 = {
+		heavy_ship_power = 0.20
+    }
+    vam_7 = {
+		global_tax_modifier = 0.1
+    }
+}
