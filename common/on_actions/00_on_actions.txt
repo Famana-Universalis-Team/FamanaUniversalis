@@ -3459,7 +3459,7 @@ on_province_religion_converted = {
 				religion = tonmo
 			}
 		}
-		change_culture = Kisholian
+		change_culture = Yavonian
 		add_core = KSL
 	}
 	if = {
@@ -3510,7 +3510,7 @@ on_province_religion_converted = {
 				religion = tonmo
 			}
 		}
-		change_culture = North_Kisholian
+		change_culture = Ufelan
 		add_core = KSL
 	}
 	if = {
@@ -3541,7 +3541,7 @@ on_province_religion_converted = {
 				religion = tonmo
 			}
 		}
-		change_culture = South_Kisholian
+		change_culture = Zablatan
 		add_core = KSL
 	}
 	if = {

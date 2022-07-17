@@ -698,6 +698,7 @@ Geopyopian = {
 		}
 		dynasty_names = {
 			Gastoor Nutia Jora Qyva Red Ligori Onsh Natigua Zimn Viden Apak Lypeus
+		}
 	}
 	Fyartin = {
 		male_names = {
@@ -1264,7 +1265,7 @@ Ordic_C = {
 			Mar Mora Kyemat Gyez Maya Mogur Bortu Kayar Kag Mayar Tor Ufipar
         }
 	}
-	East_Ordican = {
+	Celzian = {
 		primary = CEL
 		male_names = {
             Oddic Bebbe Oduro Oggic Nabama Num Natur Dord Man Gyag Oddutu Geditur Apart Gyenda Lobonai Amart Almazumm
@@ -1926,7 +1927,7 @@ Jasuan = {
 
 #############################
 Kisholi_C = {
-    Kisholian = { #yavonian
+    Yavonian = { #yavonian
 		primary = JMK
 		male_names = {
 			Ogro Yegum Fella Kanuni Yamoz Unahar Jada'ash Vande Yehum Eyath Ayon Beroge Anel Sdaz Horfi B'enn Po Hog Paro Jekelek Verakol
@@ -1949,7 +1950,7 @@ Kisholi_C = {
 			Kan H'rd Tino Kipi Monkus Noy Tzaz Anekol Bla Stas Horthy Borwell Sha'pir'o Ranazha Stas
 		}
     }
-	North_Kisholian = { #ufelan
+	Ufelan = { #ufelan
 		primary = UFE
 		male_names = {
 			Ogro Yegum Fella Kanuni Yamoz Unahar Jada'ash Vande Yehum Eyath Ayon Beroge Anel Sdaz Horfi B'enn Po Hog Paro Jekelek Verakol
@@ -1961,7 +1962,7 @@ Kisholi_C = {
 			Kan H'rd Tino Kipi Monkus Noy Tzaz Anekol Bla Stas Horthy Borwell Sha'pir'o Ranazha Stas
 		}
     }
-	South_Kisholian = { #zablatian
+	Zablatan = { #zablatan
 		primary = ZAB
 		male_names = {
 			Ogro Yegum Fella Kanuni Yamoz Unahar Jada'ash Vande Yehum Eyath Ayon Beroge Anel Sdaz Horfi B'enn Po Hog Paro Jekelek Verakol

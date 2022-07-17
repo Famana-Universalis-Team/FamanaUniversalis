@@ -668,7 +668,7 @@ country_event = { #Southward Expansion (NOT MISSION)
                     add_core = ROOT
                     cede_province = ROOT
                     change_religion = tonmo
-                    change_culture = Kisholian
+                    change_culture = Yavonian
                 }
             }
             west_jimbalak_area = {
@@ -714,7 +714,7 @@ country_event = { #Southward Expansion (NOT MISSION)
                 add_core = ROOT
                 cede_province = ROOT
                 change_religion = tonmo
-                change_culture = Kisholian
+                change_culture = Yavonian
             }
         }
     }

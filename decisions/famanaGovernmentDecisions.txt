@@ -27,10 +27,10 @@ country_decisions = {
 		potential = {
 			OR = {
 				culture_group = Ravsho
-				primary_culture = Kisholian
+				primary_culture = Yavonian
 			}
 			culture_group = Ravsho
-			primary_culture = Kisholian
+			primary_culture = Yavonian
 			NOT = { tag = ANM }
 			NOT = { has_reform = emmi }
 			NOT = { has_reform = gov_tonxara }
