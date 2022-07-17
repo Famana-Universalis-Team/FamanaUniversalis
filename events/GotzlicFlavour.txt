@@ -31,6 +31,10 @@ country_event = {
                 id = gotz.2
             }
         }
+        add_historical_rival = ZUB
+        ZUB = {
+            add_historical_rival = LER
+        }
     }
     option = {
         name = gotz.1.b
@@ -584,7 +588,7 @@ country_event = {
     }
 
     mean_time_to_happen = {
-        months = 36
+        months = 24
     }
 
     option = {
@@ -896,3 +900,216 @@ country_event = {
 		}
     }
 }
+
+#Hozyan expansion
+country_event = {
+    id = gotz.16
+    title = gotz.16.t
+    desc = gotz.16.desc
+    picture = BATTLE_eventPicture
+	fire_only_once = yes
+
+    trigger = {
+        OR = {
+            tag = EHZ
+            tag = WHZ
+            tag = HZY
+            tag = TOI
+        }
+        owns = 6546
+        owns = 6549
+        is_year = 300
+    }
+
+    mean_time_to_happen = {
+        months = 30
+    }
+
+    option = {
+        name = gotz.16.a
+        ai_chance = { factor = 1 }
+        6538 = {
+			limit = { 
+				is_empty = yes
+			}
+			create_colony = 1000
+			cede_province = ROOT
+			add_core = ROOT
+		}
+        6541 = {
+			limit = { 
+				is_empty = yes
+			}
+			create_colony = 1000
+			cede_province = ROOT
+			add_core = ROOT
+		}
+        if = {
+            limit = {
+                OR = {
+                    tag = EHZ
+                    tag = WHZ
+                    tag = HZY
+                }
+            }
+            override_country_name = Hozirara
+        }
+    }
+}
+
+#Rasta/Hozy big expansion
+country_event = {
+    id = gotz.17
+    title = gotz.17.t
+    desc = gotz.17.desc
+    picture = BATTLE_eventPicture
+	fire_only_once = yes
+
+    trigger = {
+        tag = ZUB
+        is_year = 300
+        nizoora_area = {
+            type = all
+            country_or_non_sovereign_subject_holds = ROOT
+        }
+    }
+
+    mean_time_to_happen = {
+        months = 1
+    }
+
+    option = {
+        name = gotz.17.a
+        ai_chance = { factor = 1 }
+        6590 = {
+			limit = { 
+				is_empty = yes
+			}
+			create_colony = 1000
+			cede_province = RST
+			add_core = RST
+		}
+        6591 = {
+			limit = { 
+				is_empty = yes
+			}
+			create_colony = 1000
+			cede_province = RST
+			add_core = RST
+		}
+        6592 = {
+			limit = { 
+				is_empty = yes
+			}
+			create_colony = 1000
+			cede_province = RST
+			add_core = RST
+		}
+        6593 = {
+			limit = { 
+				is_empty = yes
+			}
+			create_colony = 1000
+			cede_province = RST
+			add_core = RST
+		}
+        6635 = {
+			limit = { 
+				is_empty = yes
+			}
+			create_colony = 1000
+			cede_province = RST
+			add_core = RST
+		}
+        6636 = {
+			limit = { 
+				is_empty = yes
+			}
+			create_colony = 1000
+			cede_province = RST
+			add_core = RST
+		}
+        6637 = {
+			limit = { 
+				is_empty = yes
+			}
+			create_colony = 1000
+			cede_province = RST
+			add_core = RST
+		}
+        6638 = {
+			limit = { 
+				is_empty = yes
+			}
+			create_colony = 1000
+			cede_province = RST
+			add_core = RST
+		}
+        6551 = {
+			limit = { 
+				is_empty = yes
+			}
+			create_colony = 1000
+			cede_province = HZR
+			add_core = HZR
+		}
+        6566 = {
+			limit = { 
+				is_empty = yes
+			}
+			create_colony = 1000
+			cede_province = HZR
+			add_core = HZR
+		}
+        6568 = {
+			limit = { 
+				is_empty = yes
+			}
+			create_colony = 1000
+			cede_province = HZR
+			add_core = HZR
+		}
+        6633 = {
+			limit = { 
+				is_empty = yes
+			}
+			create_colony = 1000
+			cede_province = HZR
+			add_core = HZR
+		}
+        6634 = {
+			limit = { 
+				is_empty = yes
+			}
+			create_colony = 1000
+			cede_province = HZR
+			add_core = HZR
+		}
+        6646 = {
+			limit = { 
+				is_empty = yes
+			}
+			create_colony = 1000
+			cede_province = HZR
+			add_core = HZR
+		}
+        6538 = {
+			limit = { 
+				is_empty = yes
+			}
+			create_colony = 1000
+			cede_province = HZR
+			add_core = HZR
+		}
+        6541 = {
+			limit = { 
+				is_empty = yes
+			}
+			create_colony = 1000
+			cede_province = HZR
+			add_core = HZR
+		}
+    }
+}
+
+#Nenki migrates to the lakes
