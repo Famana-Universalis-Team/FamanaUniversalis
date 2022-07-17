@@ -43,7 +43,7 @@ DOR_ideas = {
 QAN_ideas = {
     start = {
         army_tradition = 0.5
-        trade_efficiency = 0.15
+        trade_efficiency = 0.10
     }
     
     bonus = {
@@ -60,14 +60,14 @@ QAN_ideas = {
         army_tradition_decay = -0.01
     }
     qan_the_old_empire = {
-        land_morale = 0.20
+        land_morale = 0.10
     }
     qan_research_corps = {
         technology_cost = -0.05
-        infantry_power = 0.10
+        infantry_cost = -0.10
     }
     qan_home_of_the_bite_giants = {
-        cavalry_power = 0.20
+        cavalry_power = 0.10
     }
     qan_the_ancient_records = {
         core_creation = -0.1
@@ -78,6 +78,5 @@ QAN_ideas = {
     }
     qan_peasant_army = {
         global_regiment_cost = -0.10
-        global_manpower_modifier = 0.20
     }
 }

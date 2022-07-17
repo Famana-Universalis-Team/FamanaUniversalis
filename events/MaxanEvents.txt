@@ -14,10 +14,11 @@ country_event = {
 				culture_group = Maxan
 			}
 		}
-		is_year = 280
 		any_owned_province = {
 			culture = Bohoran
 		}
+		is_year = 245
+		has_global_flag = goForMaxanShift
 	}
 
 	mean_time_to_happen = {
@@ -27,6 +28,7 @@ country_event = {
 	option = {
 		name = maxan.1.a
 		ai_chance = { factor = 8 }
+		set_country_flag = sktWentEmastalian
 		custom_tooltip = BohoranCultureGroupChange
 		hidden_effect = {
 			every_country = {
@@ -81,6 +83,7 @@ country_event = {
 	option = {
 		name = maxan.1.b
 		ai_chance = { factor = 2 }
+		set_country_flag = sktWentMaxan
 		add_dip_power = -50
 		5361 = {
 			add_trade_modifier = {
@@ -101,6 +104,7 @@ country_event = {
 	picture = REFORM_eventPicture
 	fire_only_once = yes
 	is_triggered_only = yes
+	major = yes
 	
 	option = {
 		name = maxan.2.a
@@ -113,90 +117,91 @@ country_event = {
 				}
 			}
 		}
-		every_province = {
-			limit = { culture = Maxan_West_Emastalian }
-			change_culture = West_Emastalian
-		}
-        every_province = {
-			limit = { culture = Maxan_East_Emastalian }
-			change_culture = East_Emastalian
-		}
-
-		if = {
-			limit = {
-				primary_culture = Maxan_West_Emastalian
-			}
-			change_primary_culture = West_Emastalian
-			set_ruler_culture = West_Emastalian
-		}
-
-		if = {
-			limit = {
-				OR = {
-					primary_culture = Maxan_West_Emastalian
-					primary_culture = West_Emastalian
-				}
-				has_consort = yes
-			}
-			set_consort_culture = West_Emastalian
-		}
-
-		if = {
-			limit = {
-				OR = {
-					primary_culture = Maxan_West_Emastalian
-					primary_culture = West_Emastalian
-				}
-				has_heir = yes
-			}
-			set_heir_culture = West_Emastalian
-		}
-
-        if = {
-			limit = {
-				primary_culture = Maxan_East_Emastalian
-			}
-			set_ruler_culture = East_Emastalian
-			change_primary_culture = East_Emastalian
-		}
-
-		if = {
-			limit = {
-				OR = {
-					primary_culture = Maxan_East_Emastalian
-					primary_culture = East_Emastalian
-				}
-				has_consort = yes
-			}
-			set_consort_culture = Maxan_East_Emastalian
-		}
-
-		if = {
-			limit = {
-				OR = {
-					primary_culture = Maxan_East_Emastalian
-					primary_culture = East_Emastalian
-				}
-				has_heir = yes
-			}
-			set_heir_culture = Maxan_East_Emastalian
-		}
-
-		if = {
-			limit = {
-				accepted_culture = Maxan_West_Emastalian
-			}
-			add_accepted_culture = West_Emastalian
-			remove_accepted_culture	= Maxan_West_Emastalian
-		}
-        if = {
-			limit = {
-				accepted_culture = Maxan_East_Emastalian
-			}
-			add_accepted_culture = East_Emastalian
-			remove_accepted_culture	= Maxan_East_Emastalian
-		}
+		custom_tooltip = emastalianShiftTooltip
 		hidden_effect = {
+			every_province = {
+				limit = { culture = Maxan_West_Emastalian }
+				change_culture = West_Emastalian
+			}
+        	every_province = {
+				limit = { culture = Maxan_East_Emastalian }
+				change_culture = East_Emastalian
+			}
+
+			if = {
+				limit = {
+					primary_culture = Maxan_West_Emastalian
+				}
+				change_primary_culture = West_Emastalian
+				set_ruler_culture = West_Emastalian
+			}
+
+			if = {
+				limit = {
+					OR = {
+						primary_culture = Maxan_West_Emastalian
+						primary_culture = West_Emastalian
+					}
+					has_consort = yes
+				}
+				set_consort_culture = West_Emastalian
+			}
+
+			if = {
+				limit = {
+					OR = {
+						primary_culture = Maxan_West_Emastalian
+						primary_culture = West_Emastalian
+					}
+					has_heir = yes
+				}
+				set_heir_culture = West_Emastalian
+			}
+
+        	if = {
+				limit = {
+					primary_culture = Maxan_East_Emastalian
+				}
+				set_ruler_culture = East_Emastalian
+				change_primary_culture = East_Emastalian
+			}
+
+			if = {
+				limit = {
+					OR = {
+						primary_culture = Maxan_East_Emastalian
+						primary_culture = East_Emastalian
+					}
+					has_consort = yes
+				}
+				set_consort_culture = Maxan_East_Emastalian
+			}
+
+			if = {
+				limit = {
+					OR = {
+						primary_culture = Maxan_East_Emastalian
+						primary_culture = East_Emastalian
+					}
+					has_heir = yes
+				}
+				set_heir_culture = Maxan_East_Emastalian
+			}
+
+			if = {
+				limit = {
+					accepted_culture = Maxan_West_Emastalian
+				}
+				add_accepted_culture = West_Emastalian
+				remove_accepted_culture	= Maxan_West_Emastalian
+			}
+        	if = {
+				limit = {
+					accepted_culture = Maxan_East_Emastalian
+				}
+				add_accepted_culture = East_Emastalian
+				remove_accepted_culture	= Maxan_East_Emastalian
+			}
 			every_country = {
 				limit = {
 					primary_culture = Maxan_West_Emastalian
@@ -343,7 +348,7 @@ country_event = {
             primary_culture = Maxan_West_Emastalian
             primary_culture = Maxan_East_Emastalian
         }
-		is_year = 270
+		is_year = 240
         NOT = {
             MOX = {
                 has_country_flag = moxon_presence
@@ -379,6 +384,7 @@ country_event = {
 	}
 
 	immediate = {
+		set_global_flag = goForMaxanShift
 	    every_country = {
 	        limit = {
 				ai = no
