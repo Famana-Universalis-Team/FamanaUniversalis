@@ -676,6 +676,16 @@ umz_3 = {
 				change_culture = ROOT
 				change_religion = ROOT
 			}
+			west_feniki = {
+				limit = { 
+					is_empty = yes
+				}
+				create_colony = 1000
+				cede_province = ROOT
+				add_core = ROOT
+				change_culture = ROOT
+				change_religion = ROOT
+			}
 			porlodya_region = {
 				discover_country = ROOT
 			}
