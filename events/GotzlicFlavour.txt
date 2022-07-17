@@ -954,6 +954,13 @@ country_event = {
             }
             override_country_name = Hozirara
         }
+        remove_historical_friend = ZUB
+        ZUB = {
+            remove_historical_friend = WHZ
+        }
+        WHZ = {
+            remove_historical_friend = HZY
+        }
     }
 }
 
@@ -968,9 +975,8 @@ country_event = {
     trigger = {
         tag = ZUB
         is_year = 300
-        nizoora_area = {
-            type = all
-            country_or_non_sovereign_subject_holds = ROOT
+        ZUB = {
+            owns_core_province = 6761
         }
     }
 
@@ -1050,64 +1056,64 @@ country_event = {
 				is_empty = yes
 			}
 			create_colony = 1000
-			cede_province = HZR
-			add_core = HZR
+			cede_province = HZY
+			add_core = HZY
 		}
         6566 = {
 			limit = { 
 				is_empty = yes
 			}
 			create_colony = 1000
-			cede_province = HZR
-			add_core = HZR
+			cede_province = HZY
+			add_core = HZY
 		}
         6568 = {
 			limit = { 
 				is_empty = yes
 			}
 			create_colony = 1000
-			cede_province = HZR
-			add_core = HZR
+			cede_province = HZY
+			add_core = HZY
 		}
         6633 = {
 			limit = { 
 				is_empty = yes
 			}
 			create_colony = 1000
-			cede_province = HZR
-			add_core = HZR
+			cede_province = HZY
+			add_core = HZY
 		}
         6634 = {
 			limit = { 
 				is_empty = yes
 			}
 			create_colony = 1000
-			cede_province = HZR
-			add_core = HZR
+			cede_province = HZY
+			add_core = HZY
 		}
         6646 = {
 			limit = { 
 				is_empty = yes
 			}
 			create_colony = 1000
-			cede_province = HZR
-			add_core = HZR
+			cede_province = HZY
+			add_core = HZY
 		}
         6538 = {
 			limit = { 
 				is_empty = yes
 			}
 			create_colony = 1000
-			cede_province = HZR
-			add_core = HZR
+			cede_province = HZY
+			add_core = HZY
 		}
         6541 = {
 			limit = { 
 				is_empty = yes
 			}
 			create_colony = 1000
-			cede_province = HZR
-			add_core = HZR
+			cede_province = HZY
+			add_core = HZY
 		}
     }
 }

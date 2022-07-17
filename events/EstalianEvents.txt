@@ -190,10 +190,23 @@ country_event = {
 				owns_core_province = 6584
 			}
 		}
-		any_enemy_country = {
-			war_score_against = {
-				who = ZUB
-				value = 70
+		OR = {
+			any_enemy_country = {
+				war_score_against = {
+					who = ZUB
+					value = 60
+				}
+			}
+			any_enemy_country = {
+				controls = 6649
+			}
+			any_known_country = {
+				limit = {
+					NOT = {
+						tag = ZUB
+					}
+				}
+				owns_core_province = 6649
 			}
 		}
 	}

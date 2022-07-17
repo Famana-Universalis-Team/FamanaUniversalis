@@ -3752,7 +3752,7 @@ country_event = {
         release = SZI #
         release = NAK #
         release = BLK #
-        release = VAN #
+        release = VAN # 
         ################## releasables (these can also be played)
         #release = KLL #
         #release = YBM #
@@ -3887,10 +3887,16 @@ country_event = { #nhoma death
     trigger = {
         tag = NHM
         ai = yes
-        NOT = {
-            num_of_owned_provinces_with	= {
-                value = 50
-                superregion = nhoma_superregion
+        OR = {
+            NOT = {
+                num_of_owned_provinces_with	= {
+                    value = 100
+                    superregion = nhoma_superregion
+                }
+            }
+            had_country_flag = {
+                flag = tonxaraDisasterHappened
+                days = 7300
             }
         }
     }

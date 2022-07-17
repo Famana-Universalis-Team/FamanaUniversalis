@@ -1206,7 +1206,7 @@ country_event = {
     }
 }
 
-#And finally, bye bye.
+#And finally, bye bye. FUCK THIS EVENT
 country_event = {
     id = fashros.17
     title = fashros.17.t
@@ -1230,18 +1230,53 @@ country_event = {
     immediate = {
         hidden_effect = {
             every_owned_province = {
-                limit = {
-                    NOT = {
+                if = {
+                    limit = {
                         OR = {
-                            is_core = KSL
-                            is_core = NHM
-                            is_core = HOY
-                            is_core = JFX
+                            superregion = west_estal_superregion
+                            superregion = ga_xal_superregion
+                            superregion = oppia_superregion
+                            area = hoxona_area
+                            area = hoxoi_area
+                            area = ropinver_area
+                            area = diam_area
+                            area = unnamed_area_11
+                            area = mahansha_area
+                            area = area_244
+                            area = area_243
                         }
                     }
+                    add_core = JFX
+                    remove_core = FAS
                 }
-                add_core = NHM
-                remove_core = FAS
+                else_if = {
+                    limit = {
+                        OR = {
+                            superregion = jasua_superregion
+                            superregion = central_estal_supperregion
+                            superregion = great_desert_superregion
+                            superregion = north_estal_superregion
+                        }
+                    }
+                    add_core = KSL
+                    remove_core = FAS
+                }
+                else = {
+                    add_core = NHM
+                    remove_core = FAS
+                } #There is also a fourth Tonxara for Geopyopia called the Hoyros Tonxara, but they dont have a superregion yet
+                if = {
+                    limit = {
+                        OR = {
+                            area = ufulk_area
+                            area = unnamed_area_37
+                            area = unnamed_area_36
+                            area = yenis_area
+                        }
+                    }
+                    remove_core = KSL
+                    add_core = NHM
+                }
             }
         }
     }
@@ -1486,9 +1521,17 @@ country_event = {
 
     trigger = {
         tag = FAS
-        exists = NAK
-        NAK = {
-            ai = yes
+        OR = {
+            exists = NAK
+            exists = ARS
+        }
+        OR = {
+            NAK = {
+                ai = yes
+            }
+            ARS = {
+                ai = yes
+            }
         }
         5536 = {
             controlled_by = FAS
@@ -1504,11 +1547,27 @@ country_event = {
         ai_chance = { factor = 1 }
         custom_tooltip = nakoa_collapsed
         hidden_effect = {
-            NAK = {
-                release = RET
-                release = JIT
-                release = KE0
-                release = GOV
+            if = {
+                limit = {
+                    exists = NAK
+                }
+                NAK = {
+                    release = RET
+                    release = JIT
+                    release = KE0
+                    release = GOV
+                }
+            }
+            if = {
+                limit = {
+                    exists = ARS
+                }
+                ARS = {
+                    release = RET
+                    release = JIT
+                    release = KE0
+                    release = GOV
+                }
             }
         }
     }
@@ -1629,7 +1688,7 @@ country_event = {
         ai_chance = { factor = 1 }
         add_country_modifier = {
             name = fashran_conquest_boost
-            duration = 3650
+            duration = 5475
         }
 
         if = {
@@ -2356,6 +2415,15 @@ country_event = { #Event that spawns cores for releasables
                 }
                 remove_core = NAK
             }
+            every_owned_province = {
+                limit = {
+                    culture = Nakoan
+                    NOT = {
+                        province_id = 5527
+                    }
+                }
+                add_core = NAK
+            }
             if = {
                 limit = {
                     any_owned_province = {
@@ -2830,7 +2898,7 @@ country_event = { #Aresian religious resistance
         is_year = 230
         FAS = {
             num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-                value = 10
+                value = 1
                 region = aresia_region
             }
         }
@@ -2919,7 +2987,7 @@ country_event = { #ugh
                 OR = {
                     AND = {
                         culture = Bilik_C
-                        continent = estal
+                        region = vanoma_region
                     }
                     culture = Nakoan
                     culture = Middle_Aresian
@@ -2955,9 +3023,16 @@ country_event = { #ugh 2
     }
 
     trigger = {
-        is_year = 320
+        is_year = 325
         NOT = {
             exists = FAS
+        }
+        KSL = {
+            NOT = {
+                any_owned_province = {
+                    religion = aresian
+                }
+            }
         }
     }
 
