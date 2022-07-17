@@ -29,6 +29,7 @@ country_event = {
         EHZ = {
             country_event = { 
                 id = gotz.2
+                days = 7
             }
         }
         add_historical_rival = ZUB
@@ -97,6 +98,7 @@ country_event = {
         LER = {
             country_event = { 
                 id = gotz.3
+                days = 7
             }
         }
     }
@@ -124,6 +126,7 @@ country_event = {
         LER = {
             country_event = { 
                 id = gotz.4
+                days = 7
             }
         }
     }
@@ -257,6 +260,7 @@ country_event = {
         LER = {
             country_event = { 
                 id = gotz.7
+                days = 7
             }
         }
     }
@@ -333,6 +337,7 @@ country_event = {
         ZUB = {
             country_event = { 
                 id = gotz.8
+                days = 7
             }
         }
     }
@@ -358,6 +363,7 @@ country_event = {
         ZUB = {
             country_event = { 
                 id = gotz.9
+                days = 7
             }
         }
     }
@@ -964,7 +970,7 @@ country_event = {
     }
 }
 
-#Rasta big expansion
+#East big expansion
 country_event = {
     id = gotz.17
     title = gotz.17.t
@@ -1074,14 +1080,18 @@ country_event = {
         dethoni_area = {
             add_permanent_claim = NEN
         }
-        every_known_country = {
-            limit = {
-                owns = 6584
-            }
-            country_event = {
-                id = gotz.19
+        6584 = {
+            owner = {
+                country_event = {
+                    id = gotz.19
+                    days = 7
+                }
             }
         }
+    }
+    option = { #skm is a pussy
+        name = gotz.18.b
+        ai_chance = { factor = 0 }
     }
 }
 
@@ -1323,7 +1333,7 @@ country_event = {
     }
 }
 
-#Hozy big expansion
+#West big expansion
 country_event = {
     id = gotz.21
     title = gotz.21.t
@@ -1366,6 +1376,8 @@ country_event = {
 			create_colony = 1000
 			cede_province = ROOT
 			add_core = ROOT
+            change_culture = Zubaran
+            change_religion = gotzli
 		}
         6634 = {
 			limit = { 
@@ -1382,6 +1394,8 @@ country_event = {
 			create_colony = 1000
 			cede_province = ROOT
 			add_core = ROOT
+            change_culture = Zubaran
+            change_religion = gotzli
 		}
         6538 = {
 			limit = { 

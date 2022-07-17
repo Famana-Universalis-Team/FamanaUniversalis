@@ -197,13 +197,14 @@ country_event = {
 				}
 			}
 			any_known_country = {
+				NOT = {
+					tag = ZUB
+				}
 				controls = 6649
 			}
 			any_known_country = {
-				limit = {
-					NOT = {
-						tag = ZUB
-					}
+				NOT = {
+					tag = ZUB
 				}
 				owns_core_province = 6649
 			}
@@ -295,6 +296,22 @@ country_event = {
 					change_religion = ROOT
 				}
 			}
+			6768 = {
+				change_culture = Zubaran
+				change_religion = ROOT
+			}
+			6673 = {
+				change_culture = Zubaran
+				change_religion = ROOT
+			}
+			6749 = {
+				change_culture = Zubaran
+				change_religion = ROOT
+			}
+			6671 = {
+				change_culture = Zubaran
+				change_religion = ROOT
+			}
 			set_capital = 6761
 			release = HZY
 			release = EHZ
@@ -334,6 +351,7 @@ country_event = {
 			   	owner = {
 					country_event = {
 						id = gotz.17
+						days = 7
 					}
 			   	}
 			}
@@ -341,6 +359,7 @@ country_event = {
 			   	owner = {
 					country_event = {
 						id = gotz.21
+						days = 7
 					}
 			   	}
 			}
