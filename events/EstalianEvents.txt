@@ -182,7 +182,6 @@ country_event = {
 	
 	trigger = {
 		tag = ZUB
-		is_year = 300
 		NOT = {
 			OR = {
 				owns_core_province = 6536
@@ -191,13 +190,13 @@ country_event = {
 			}
 		}
 		OR = {
-			any_enemy_country = {
+			any_known_country = {
 				war_score_against = {
 					who = ZUB
 					value = 60
 				}
 			}
-			any_enemy_country = {
+			any_known_country = {
 				controls = 6649
 			}
 			any_known_country = {
@@ -331,6 +330,20 @@ country_event = {
 				remove_core = ZUB
 			}
 			set_global_flag = zubara_happened #a little tool that will help us later
+			6584 = {
+			   	owner = {
+					country_event = {
+						id = gotz.17
+					}
+			   	}
+			}
+			6548 = {
+			   	owner = {
+					country_event = {
+						id = gotz.21
+					}
+			   	}
+			}
 		}
 		custom_tooltip = zub_migrate_tooltip
 	}

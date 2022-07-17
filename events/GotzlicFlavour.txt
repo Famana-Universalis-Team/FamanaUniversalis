@@ -964,25 +964,14 @@ country_event = {
     }
 }
 
-#Rasta/Hozy big expansion
+#Rasta big expansion
 country_event = {
     id = gotz.17
     title = gotz.17.t
     desc = gotz.17.desc
     picture = BATTLE_eventPicture
 	fire_only_once = yes
-
-    trigger = {
-        tag = ZUB
-        is_year = 300
-        ZUB = {
-            owns_core_province = 6761
-        }
-    }
-
-    mean_time_to_happen = {
-        months = 1
-    }
+    is_triggered_only = yes
 
     option = {
         name = gotz.17.a
@@ -992,130 +981,423 @@ country_event = {
 				is_empty = yes
 			}
 			create_colony = 1000
-			cede_province = RST
-			add_core = RST
+			cede_province = ROOT
+			add_core = ROOT
 		}
         6591 = {
 			limit = { 
 				is_empty = yes
 			}
 			create_colony = 1000
-			cede_province = RST
-			add_core = RST
+			cede_province = ROOT
+			add_core = ROOT
 		}
         6592 = {
 			limit = { 
 				is_empty = yes
 			}
 			create_colony = 1000
-			cede_province = RST
-			add_core = RST
+			cede_province = ROOT
+			add_core = ROOT
 		}
         6593 = {
 			limit = { 
 				is_empty = yes
 			}
 			create_colony = 1000
-			cede_province = RST
-			add_core = RST
+			cede_province = ROOT
+			add_core = ROOT
 		}
         6635 = {
 			limit = { 
 				is_empty = yes
 			}
 			create_colony = 1000
-			cede_province = RST
-			add_core = RST
+			cede_province = ROOT
+			add_core = ROOT
 		}
         6636 = {
 			limit = { 
 				is_empty = yes
 			}
 			create_colony = 1000
-			cede_province = RST
-			add_core = RST
+			cede_province = ROOT
+			add_core = ROOT
 		}
         6637 = {
 			limit = { 
 				is_empty = yes
 			}
 			create_colony = 1000
-			cede_province = RST
-			add_core = RST
+			cede_province = ROOT
+			add_core = ROOT
 		}
         6638 = {
 			limit = { 
 				is_empty = yes
 			}
 			create_colony = 1000
-			cede_province = RST
-			add_core = RST
+			cede_province = ROOT
+			add_core = ROOT
 		}
+    }
+}
+
+#Nenki migrates to the lakes
+country_event = {
+    id = gotz.18
+    title = gotz.18.t
+    desc = gotz.18.desc
+    picture = BATTLE_eventPicture
+	fire_only_once = yes
+
+    mean_time_to_happen = {
+		months = 30
+	}
+
+    trigger = {
+        tag = NEN
+        OR = {
+            is_year = 270
+            ZUB = {
+                offensive_war_with = LER
+            }
+        }
+    }
+
+    immediate = {
+    }
+
+    option = {
+        name = gotz.18.a
+        ai_chance = { factor = 1 }
+        dethoni_area = {
+            add_permanent_claim = NEN
+        }
+        every_known_country = {
+            limit = {
+                owns = 6584
+            }
+            country_event = {
+                id = gotz.19
+            }
+        }
+    }
+}
+
+#response to nenki demands
+country_event = {
+    id = gotz.19
+    title = gotz.19.t
+    desc = gotz.19.desc
+    picture = BATTLE_eventPicture
+	fire_only_once = yes
+    is_triggered_only = yes
+    major = yes
+
+    immediate = {
+    }
+
+    option = {
+        name = gotz.19.a #give nenki their place by the lake
+        ai_chance = { factor = 1 }
+        every_owned_province = {
+            limit = {
+                area = dethoni_area
+            }
+            cede_province = NEN
+            add_core = NEN
+        }
+        6636 = {
+            limit = {
+                is_empty = yes
+            }
+            cede_province = NEN
+            add_core = NEN
+        }
+        6643 = {
+            cede_province = ---
+            remove_core = NEN
+        }
+        6569 = {
+            change_culture = Nenki
+            random_list = {
+                6 = {
+                    add_base_tax = 1
+                    add_base_production = 1
+                }
+                6 = {
+                    add_base_production = 1
+                    add_base_manpower = 1
+                }
+                6 = {
+                    add_base_manpower = 1
+                    add_base_tax = 1
+                }
+                6 = {
+                    add_base_tax = 2
+                }
+                6 = {
+                    add_base_production = 2
+                }
+                6 = {
+                    add_base_manpower = 2
+                }
+                6 = {
+                    add_base_tax = 2
+                    add_base_production = 1
+                }
+                6 = {
+                    add_base_tax = 1
+                    add_base_production = 2
+                }
+                6 = {
+                    add_base_production = 2
+                    add_base_manpower = 1
+                }
+                6 = {
+                    add_base_production = 1
+                    add_base_manpower = 2
+                }
+                6 = {
+                    add_base_manpower = 2
+                    add_base_tax = 1
+                }
+                6 = {
+                    add_base_manpower = 1
+                    add_base_tax = 2
+                }
+                6 = {
+                    add_base_tax = 3
+                }
+                6 = {
+                    add_base_production = 3
+                }
+                6 = {
+                    add_base_manpower = 3
+                }
+                6 = {
+                    add_base_tax = 1
+                    add_base_production = 1
+                    add_base_tax = 1
+                }
+            }
+        }
+        NEN = {
+            set_capital = 6569
+            set_country_flag = nenki_trolled_dethoni
+        }
+    }
+    option = {
+        name = gotz.19.b #refuse and go to war
+        ai_chance = {
+            factor = 1
+            modifier = {
+                factor = 0
+                ZUB = {
+                    offensive_war_with = LER
+                }
+            }
+        }
+        NEN = {
+            declare_war_with_cb = {
+                who = ROOT
+                casus_belli = cb_conquest
+                war_goal_province = 6584
+            }
+        }
+    }
+}
+
+#nenki wins war
+country_event = {
+    id = gotz.20
+    title = gotz.20.t
+    desc = gotz.20.desc
+    picture = BATTLE_eventPicture
+	fire_only_once = yes
+
+    trigger = {
+        tag = NEN
+        NOT = {
+            has_country_flag = nenki_trolled_dethoni
+        }
+        is_year = 250
+        NEN = {
+            controls = 6569
+            controls = 6584
+            controls = 6585
+        }
+    }
+
+    mean_time_to_happen = {
+        days = 1
+    }
+
+    immediate = {
+        every_known_country	 = {
+            limit = {
+                OR = {
+                    offensive_war_with = NEN
+                    defensive_war_with = NEN
+                }
+            }
+            white_peace = NEN
+        }
+    }
+
+    option = {
+        name = gotz.20.a #let us migrate
+        ai_chance = { factor = 1 }
+        every_province = {
+            limit = {
+                area = dethoni_area
+            }
+            cede_province = NEN
+            add_core = NEN
+        }
+        6569 = {
+            change_culture = Nenki
+            random_list = {
+                6 = {
+                    add_base_tax = 1
+                    add_base_production = 1
+                }
+                6 = {
+                    add_base_production = 1
+                    add_base_manpower = 1
+                }
+                6 = {
+                    add_base_manpower = 1
+                    add_base_tax = 1
+                }
+                6 = {
+                    add_base_tax = 2
+                }
+                6 = {
+                    add_base_production = 2
+                }
+                6 = {
+                    add_base_manpower = 2
+                }
+                6 = {
+                    add_base_tax = 2
+                    add_base_production = 1
+                }
+                6 = {
+                    add_base_tax = 1
+                    add_base_production = 2
+                }
+                6 = {
+                    add_base_production = 2
+                    add_base_manpower = 1
+                }
+                6 = {
+                    add_base_production = 1
+                    add_base_manpower = 2
+                }
+                6 = {
+                    add_base_manpower = 2
+                    add_base_tax = 1
+                }
+                6 = {
+                    add_base_manpower = 1
+                    add_base_tax = 2
+                }
+                6 = {
+                    add_base_tax = 3
+                }
+                6 = {
+                    add_base_production = 3
+                }
+                6 = {
+                    add_base_manpower = 3
+                }
+            }
+        }
+        set_capital = 6569
+        6643 = {
+            cede_province = ---
+            remove_core = NEN
+        }
+    }
+}
+
+#Hozy big expansion
+country_event = {
+    id = gotz.21
+    title = gotz.21.t
+    desc = gotz.21.desc
+    picture = BATTLE_eventPicture
+	fire_only_once = yes
+    is_triggered_only = yes
+
+    option = {
+        name = gotz.21.a
+        ai_chance = { factor = 1 }
         6551 = {
 			limit = { 
 				is_empty = yes
 			}
 			create_colony = 1000
-			cede_province = HZY
-			add_core = HZY
+			cede_province = ROOT
+			add_core = ROOT
 		}
         6566 = {
 			limit = { 
 				is_empty = yes
 			}
 			create_colony = 1000
-			cede_province = HZY
-			add_core = HZY
+			cede_province = ROOT
+			add_core = ROOT
 		}
         6568 = {
 			limit = { 
 				is_empty = yes
 			}
 			create_colony = 1000
-			cede_province = HZY
-			add_core = HZY
+			cede_province = ROOT
+			add_core = ROOT
 		}
         6633 = {
 			limit = { 
 				is_empty = yes
 			}
 			create_colony = 1000
-			cede_province = HZY
-			add_core = HZY
+			cede_province = ROOT
+			add_core = ROOT
 		}
         6634 = {
 			limit = { 
 				is_empty = yes
 			}
 			create_colony = 1000
-			cede_province = HZY
-			add_core = HZY
+			cede_province = ROOT
+			add_core = ROOT
 		}
         6646 = {
 			limit = { 
 				is_empty = yes
 			}
 			create_colony = 1000
-			cede_province = HZY
-			add_core = HZY
+			cede_province = ROOT
+			add_core = ROOT
 		}
         6538 = {
 			limit = { 
 				is_empty = yes
 			}
 			create_colony = 1000
-			cede_province = HZY
-			add_core = HZY
+			cede_province = ROOT
+			add_core = ROOT
 		}
         6541 = {
 			limit = { 
 				is_empty = yes
 			}
 			create_colony = 1000
-			cede_province = HZY
-			add_core = HZY
+			cede_province = ROOT
+			add_core = ROOT
 		}
     }
 }
-
-#Nenki migrates to the lakes

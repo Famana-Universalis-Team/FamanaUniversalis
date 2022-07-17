@@ -2694,11 +2694,11 @@ country_decisions = {
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
 			OR = {
-				owns_core_province = 6546
 				owns_core_province = 6547
 				owns_core_province = 6548
 				owns_core_province = 6549
 			}
+			owns_core_province = 6546
 			OR = {
 				NOT = { exists = WHZ }
 				NOT = { exists = EHZ }
