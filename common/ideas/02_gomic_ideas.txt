@@ -2670,3 +2670,48 @@ FAZ_ideas = {
 		interest = -1
 	}
 }
+
+SOY_ideas = {
+	start = {
+		land_morale = 0.10
+		prestige_from_land = 1.00
+	}
+	
+	bonus = {
+		global_colonial_growth = 30
+	}
+
+	trigger = {
+		tag = SOY
+	}
+	free = yes
+	
+	soy_1 = {
+		legitimacy = 1.0
+		move_capital_cost_modifier = -0.5
+	}
+	soy_2 = {
+		diplomats = 1
+		rival_change_cost = -0.5
+	}
+	soy_3 = {
+		trade_goods_size_modifier = 0.10
+		enemy_core_creation = 0.5
+	}
+	soy_4 = {
+		tolerance_own = 3
+		naval_morale = 0.20
+	}
+	soy_5 = {
+		leader_land_manuever = 2
+		movement_speed = 0.15
+	}
+	soy_6 = {
+		leader_land_shock = 1
+		culture_conversion_cost = -0.25
+	}
+	soy_7 = {
+		justify_trade_conflict_cost = -1.0
+		caravan_power = 0.10
+	}
+}
