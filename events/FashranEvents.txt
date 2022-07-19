@@ -3049,3 +3049,33 @@ country_event = { #ugh 2
         }
     }
 }
+
+country_event = { #The Tonmo Golden Age
+    id = fashros.36
+    title = fashros.36.t
+    desc = fashros.36.d
+    picture = WESTERNISATION_eventPicture
+    major = yes
+    fire_only_once = yes
+
+    trigger = {
+        has_institution = new_world_i
+        tag = FAS
+        owns_core_province = 5644 #jimkalin
+    }
+
+    mean_time_to_happen = {
+        months = 12
+    }
+
+    option = {
+        name = fashros.36.a
+        ai_chance = {
+            factor = 1
+        }
+        add_prestige = 20
+        custom_tooltip = liturgical_tonmo_enabled
+        custom_tooltip = evangelical_tonmo_enabled
+        set_global_flag = TonmoGoldenAge
+    }
+}

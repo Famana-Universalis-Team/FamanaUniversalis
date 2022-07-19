@@ -448,6 +448,21 @@ spriteTypes = {
 		texturefile = "gfx/interface/incident_icons.dds"
 		noOfFrames = 8
 	}
+	
+	spriteType = {
+		name = "GFX_icon_tonmo_school_tribal"
+		texturefile = "gfx/interface/icon_tonmo_school_tribal.dds"
+	}
+
+	spriteType = {
+		name = "GFX_icon_tonmo_school_liturgical"
+		texturefile = "gfx/interface/icon_tonmo_school_liturgical.dds"
+	}
+
+	spriteType = {
+		name = "GFX_icon_tonmo_school_evangelical"
+		texturefile = "gfx/interface/icon_tonmo_school_evangelical.dds"
+	}
 
 	spriteType = {
 		name = "GFX_icon_muslim_school_hanafi"

@@ -2864,8 +2864,8 @@ on_five_year_pulse_2 = {
 }
 
 on_five_year_pulse_3 = { #Flavour Events
-	random_events = { #Xalian Flavour
-		100 = XalianFlavour.1
+	random_events = {
+		100 = XalianFlavour.1 #Xalian Flavour
 		100 = XalianFlavour.2
 		100 = XalianFlavour.3
 		100 = XalianFlavour.4
@@ -2873,6 +2873,13 @@ on_five_year_pulse_3 = { #Flavour Events
 		100 = XalianFlavour.7
 		100 = XalianFlavour.8
 		100 = 0
+
+		75 = tonmo.5 #Tonmo Flavour
+		75 = tonmo.6
+		75 = tonmo.7
+		20 = tonmo.8
+		40 = tonmo.9
+		75 = tonmo.10
 	}
 }
 

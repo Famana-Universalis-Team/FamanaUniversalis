@@ -1464,6 +1464,125 @@ Agmagozi = {
 
 tonmo_group = {
 	defender_of_faith = yes
+
+	religious_schools = {
+		tribal_school = {
+			potential_invite_scholar = {
+				knows_of_scholar_country_capital_trigger = yes
+				OR = {
+					religion = tonmo
+				}
+			}
+
+			# THIS = Nation wanting to invite the scholar, FROM = Nation that follows that school
+			can_invite_scholar = {
+				adm_power_cost = 50
+				piety = 0.5
+				reverse_has_opinion = { who = FROM value = 150 }
+				NOT = { has_country_modifier = tribal_scholar_modifier }
+				OR = {
+					alliance_with = FROM
+					is_subject_of = FROM
+					overlord_of = FROM
+				}
+				hidden_progressive_opinion_for_scholar_trigger = yes
+			}
+
+			# THIS = Nation wanting to invite the scholar, FORM = Nation that sends scholar
+			on_invite_scholar = {
+				adm_power_cost = 50
+				clear_religious_scholar_modifiers_effect = yes
+				custom_tooltip = INVITE_SCHOLAR_COUNTRY_TEXT
+				add_country_modifier = { name = tribal_scholar_modifier duration = 7300 }
+			}
+
+			# If you don't set this it will expand on_invite_scholar effect which might be super big
+			invite_scholar_modifier_display = tribal_scholar_modifier
+
+			picture = "GFX_icon_tonmo_school_tribal"
+
+			# religion_sub_modifier = no is possible, will hide icon in religious screen
+			unjustified_demands = -0.10
+		}
+
+		liturgical_school = {
+			potential_invite_scholar = {
+				knows_of_scholar_country_capital_trigger = yes
+				OR = {
+					religion = tonmo
+				}
+			}
+
+			# THIS = Nation wanting to invite the scholar, FROM = Nation that follows that school
+			can_invite_scholar = {
+				adm_power_cost = 50
+				piety = 0.5
+				reverse_has_opinion = { who = FROM value = 150 }
+				NOT = { has_country_modifier = liturgical_scholar_modifier }
+				OR = {
+					alliance_with = FROM
+					is_subject_of = FROM
+					overlord_of = FROM
+				}
+				hidden_progressive_opinion_for_scholar_trigger = yes
+			}
+
+			# THIS = Nation wanting to invite the scholar, FORM = Nation that sends scholar
+			on_invite_scholar = {
+				adm_power_cost = 50
+				clear_religious_scholar_modifiers_effect = yes
+				custom_tooltip = INVITE_SCHOLAR_COUNTRY_TEXT
+				add_country_modifier = { name = liturgical_scholar_modifier duration = 7300 }
+			}
+
+			# If you don't set this it will expand on_invite_scholar effect which might be super big
+			invite_scholar_modifier_display = liturgical_scholar_modifier
+
+			picture = "GFX_icon_tonmo_school_liturgical"
+
+			# religion_sub_modifier = no is possible, will hide icon in religious screen
+			global_tax_modifier = 0.10
+		}
+
+		evangelical_school = {
+			potential_invite_scholar = {
+				knows_of_scholar_country_capital_trigger = yes
+				OR = {
+					religion = tonmo
+				}
+			}
+
+			# THIS = Nation wanting to invite the scholar, FROM = Nation that follows that school
+			can_invite_scholar = {
+				adm_power_cost = 50
+				piety = 0.5
+				reverse_has_opinion = { who = FROM value = 150 }
+				NOT = { has_country_modifier = evangelical_scholar_modifier }
+				OR = {
+					alliance_with = FROM
+					is_subject_of = FROM
+					overlord_of = FROM
+				}
+				hidden_progressive_opinion_for_scholar_trigger = yes
+			}
+
+			# THIS = Nation wanting to invite the scholar, FORM = Nation that sends scholar
+			on_invite_scholar = {
+				adm_power_cost = 50
+				clear_religious_scholar_modifiers_effect = yes
+				custom_tooltip = INVITE_SCHOLAR_COUNTRY_TEXT
+				add_country_modifier = { name = evangelical_scholar_modifier duration = 7300 }
+			}
+
+			# If you don't set this it will expand on_invite_scholar effect which might be super big
+			invite_scholar_modifier_display = evangelical_scholar_modifier
+
+			picture = "GFX_icon_tonmo_school_evangelical"
+
+			# religion_sub_modifier = no is possible, will hide icon in religious screen
+			global_missionary_strength = 0.02
+		}
+	}
     tonmo = {
         icon = 22
         color = { 217 54 15 }

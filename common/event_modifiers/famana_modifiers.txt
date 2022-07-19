@@ -1195,3 +1195,18 @@ orc_overextension_decreased = {
 umz_colonist = {
     colonists = 1
 }
+
+tonmo_bad_blood = {
+    cavalry_cost = 0.15
+    production_efficiency = -0.10
+}
+
+tonmo_evil_weather = {
+    infantry_cost  = 0.15
+    global_tax_modifier = -0.10
+}
+
+tonmo_no_doctors = {
+    recover_army_morale_speed = -0.10
+    reinforce_speed = -0.10
+}

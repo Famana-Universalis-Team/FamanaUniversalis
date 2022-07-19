@@ -199,3 +199,306 @@ country_event = { #clear raised horde flag
         ai_chance = { factor = 1 }
     }
 }
+
+country_event = { #school
+    id = tonmo.4
+    title = tonmo.4.t
+    desc = tonmo.4.desc
+    picture = PROTESTANT_CATHOLIC_DEBATE_eventPicture
+
+    trigger = {
+        religion = tonmo
+        NOT = {
+            OR = {
+                religious_school = {
+					group = tonmo_group
+					school = tribal_school
+				}
+                religious_school = {
+					group = tonmo_group
+					school = liturgical_school
+				}
+                religious_school = {
+					group = tonmo_group
+					school = evangelical_school
+				}
+            }
+        }
+    }
+
+    mean_time_to_happen = {
+        days = 1
+    }
+
+    immediate = {
+    }
+
+    option = {
+        name = tonmo.4.a
+        ai_chance = {
+            factor = 1
+            modifier = {
+                factor = 3
+                capital_scope = {
+                    superregion = nhoma_superregion
+                }
+            }
+        }
+        set_religious_school = {
+			group = tonmo_group
+			school = tribal_school
+		}
+    }
+    option = {
+        name = tonmo.4.b
+        ai_chance = {
+            factor = 1
+            modifier = {
+                factor = 3
+                capital_scope = {
+                    superregion = jasua_superregion
+                }
+            }
+            modifier = {
+                factor = 2
+                capital_scope = {
+                    superregion = ga_xal_superregion
+                }
+            }
+            modifier = {
+                factor = 2
+                tag = FSB
+            }
+        }
+        set_religious_school = {
+			group = tonmo_group
+			school = liturgical_school
+		}
+        trigger = {
+            has_global_flag = TonmoGoldenAge
+        }
+    }
+    option = {
+        name = tonmo.4.c
+        ai_chance = {
+            factor = 1
+            modifier = {
+                factor = 3
+                capital_scope = {
+                    superregion = ga_xal_superregion
+                }
+            }
+            modifier = {
+                factor = 2
+                capital_scope = {
+                    superregion = jasua_superregion
+                }
+            }
+        }
+        set_religious_school = {
+			group = tonmo_group
+			school = evangelical_school
+		}
+        trigger = {
+            has_global_flag = TonmoGoldenAge
+        }
+    }
+}
+
+#Tonmo event - Gaara congegation
+country_event = {
+    id = tonmo.5
+    title = tonmo.5.t
+    desc = tonmo.5.desc
+    picture = EP_POLYNESIAN_MARAE_eventPicture
+
+    trigger = {
+        religion = tonmo
+    }
+	mean_time_to_happen = {
+		months = 5
+	}
+
+    option = {
+        name = tonmo.5.a
+        ai_chance = { factor = 1 }
+        add_church_power = 20
+    }
+}
+
+#Tonmo event - Alad'desh
+country_event = {
+    id = tonmo.6
+    title = tonmo.6.t
+    desc = tonmo.6.desc
+    picture = PRAYING_eventPicture
+
+    trigger = {
+        religion = tonmo
+    }
+	mean_time_to_happen = {
+		months = 4
+	}
+
+    option = {
+        name = tonmo.6.a
+        ai_chance = { factor = 1 }
+        add_stability = 1
+    }
+    option = {
+        name = tonmo.6.b
+        ai_chance = { factor = 1 }
+        add_adm_power = 100
+    }
+}
+
+#Tonmo event - Bad Omens (tribal only)
+country_event = {
+    id = tonmo.7
+    title = tonmo.7.t
+    desc = tonmo.7.desc
+    picture = PLAGUE_eventPicture
+
+    trigger = {
+        religious_school = {
+            group = tonmo_group
+            school = tribal_school
+        }
+        religion = tonmo
+    }
+	mean_time_to_happen = {
+		months = 8
+	}
+
+    option = {
+        name = tonmo.7.a #amimal blood
+        ai_chance = { factor = 1 }
+        add_country_modifier = {
+            name = tonmo_bad_blood
+            duration = 1825
+        }
+    }
+    option = {
+        name = tonmo.7.b #bad weather
+        ai_chance = { factor = 1 }
+        add_country_modifier = {
+            name = tonmo_evil_weather
+            duration = 1825
+        }
+    }
+}
+
+#Tonmo event - King falls ill with Demons (tribal only)
+country_event = {
+    id = tonmo.8
+    title = tonmo.8.t
+    desc = tonmo.8.desc
+    picture = KING_SICK_IN_BED_eventPicture
+
+    trigger = {
+        religious_school = {
+            group = tonmo_group
+            school = tribal_school
+        }
+        religion = tonmo
+        NOT = { has_ruler_flag = purified }
+        adm =1
+        dip =1
+        mil = 1
+    }
+	mean_time_to_happen = {
+		months = 8
+	}
+
+    immediate = {
+        set_ruler_flag = purified
+    }
+
+    option = {
+        name = tonmo.8.a
+        ai_chance = { factor = 1 }
+        change_adm = -1
+    }
+    option = {
+        name = tonmo.8.b
+        ai_chance = { factor = 1 }
+        change_dip = -1
+    }
+    option = {
+        name = tonmo.8.c
+        ai_chance = { factor = 1 }
+        change_mil = -1
+    }
+    option = {
+        name = tonmo.8.e
+        ai_chance = { factor = 1 }
+        add_church_power = -25
+        trigger = {
+            has_global_flag = TonmoGoldenAge
+        }
+    }
+}
+
+#Tonmo event - Lack of Medical Professionals due to tribal bullshit (tribal only)
+country_event = {
+    id = tonmo.9
+    title = tonmo.9.t
+    desc = tonmo.9.desc
+    picture = ACCUSATION_eventPicture
+    fire_only_once = yes
+
+    trigger = {
+        tag = FAS
+        religious_school = {
+            group = tonmo_group
+            school = tribal_school
+        }
+        religion = tonmo
+    }
+	mean_time_to_happen = {
+		months = 8
+	}
+
+    option = {
+        name = tonmo.9.a
+        ai_chance = { factor = 1 }
+        add_country_modifier = {
+            name = tonmo_no_doctors
+            duration = 3650
+        }
+    }
+    option = {
+        name = tonmo.9.b
+        ai_chance = { factor = 1 }
+        add_church_power = -100
+    }
+}
+
+#Tonmo event - Chiefs argue over minor deities
+country_event = {
+    id = tonmo.10
+    title = tonmo.10.t
+    desc = tonmo.10.desc
+    picture = PEASANTS_BARTERING_eventPicture
+
+    trigger = {
+        religion = tonmo
+    }
+	mean_time_to_happen = {
+		months = 8
+	}
+
+    option = {
+        name = tonmo.10.a
+        ai_chance = { factor = 1 }
+        add_dip_power = -33
+    }
+    option = {
+        name = tonmo.10.b
+        ai_chance = { factor = 1 }
+        add_estate_loyalty = {
+            estate = estate_nobles
+            loyalty = -15
+        }
+    }
+}
