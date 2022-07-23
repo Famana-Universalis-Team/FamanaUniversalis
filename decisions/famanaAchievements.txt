@@ -609,13 +609,17 @@ country_decisions = {
 			}
 		}
 		allow = {
-			western_naravam_region = {
-				NOT = { is_empty = yes }
-				country_or_non_sovereign_subject_holds = ROOT
+			owns_all_provinces = {
+				region = western_naravam_region
+				NOT = {
+					is_empty = yes
+				}
 			}
-			eastern_naravam_region = {
-				NOT = { is_empty = yes }
-				country_or_non_sovereign_subject_holds = ROOT
+			owns_all_provinces = {
+				region = eastern_naravam_region
+				NOT = {
+					is_empty = yes
+				}
 			}
 			5203 = {
 				controlled_by = ROOT

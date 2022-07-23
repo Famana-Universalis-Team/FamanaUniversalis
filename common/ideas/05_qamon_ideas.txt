@@ -42,12 +42,12 @@ DOR_ideas = {
 
 QAN_ideas = {
     start = {
-        army_tradition = 0.5
-        trade_efficiency = 0.10
+        army_tradition_decay = -0.01
+        trade_goods_size_modifier = 0.10
     }
     
     bonus = {
-        ae_impact = -0.1
+        leader_land_shock = 1
     }    
 
     trigger = {
@@ -56,27 +56,25 @@ QAN_ideas = {
     free = yes
     
     qan_military_academy = {
-        leader_land_shock = 1
-        army_tradition_decay = -0.01
-    }
-    qan_the_old_empire = {
-        land_morale = 0.10
-    }
-    qan_research_corps = {
         technology_cost = -0.05
-        infantry_cost = -0.10
-    }
-    qan_home_of_the_bite_giants = {
-        cavalry_power = 0.10
-    }
-    qan_the_ancient_records = {
-        core_creation = -0.1
         global_unrest = -1
     }
+    qan_the_old_empire = {
+        land_morale = 0.15
+    }
+    qan_research_corps = {
+        cavalry_cost = -0.10
+    }
+    qan_home_of_the_bite_giants = {
+        cavalry_shock = 1
+    }
+    qan_the_ancient_records = {
+        spy_offence = 0.10
+    }
     qan_illegal_trade = {
-        global_trade_power = 0.1
+        core_creation = -0.10
     }
     qan_peasant_army = {
-        global_regiment_cost = -0.10
+        ae_impact = -0.10
     }
 }
