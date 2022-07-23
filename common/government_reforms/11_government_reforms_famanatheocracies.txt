@@ -13,6 +13,7 @@ diocese_reform = {
 		}
 	}
 	allow_normal_conversion = no
+	lock_level_when_selected = yes
 	legacy_equivalent = theocratic_government
 	icon = "holy_state_reform"
 	valid_for_nation_designer = yes
