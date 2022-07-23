@@ -72,7 +72,7 @@ country_event = {
 		name = fdebug.1.h
 		ai_chance = { factor = 1 }
 		every_country = {
-			change_religion = lathvy
+			change_religion = ROOT
 		}
 	}
 	option = {

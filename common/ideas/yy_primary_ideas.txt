@@ -73,7 +73,7 @@ Nevian_ideas = {
 		artillery_power = 0.15
 	}
 	Nevian_jom = {
-		trade_goods_size_modifier = 0.10
+		global_trade_goods_size_modifier = 0.10
 	}
 }
 
@@ -178,7 +178,7 @@ Alavyas_ideas = {
 		idea_cost = -0.05
 	}
 	Alavyas_delta = {
-		trade_goods_size_modifier = 0.10
+		global_trade_goods_size_modifier = 0.10
 	}
 	Alavyas_nilifo = {
 		global_ship_cost = -0.33
@@ -438,7 +438,7 @@ DES_ideas = {
 	}
 	
 	bonus = {
-		trade_goods_size_modifier = 0.10
+		global_trade_goods_size_modifier = 0.10
 	}	
 
 	trigger = {
@@ -540,7 +540,7 @@ DEL_ideas = {
 		yearly_corruption = -0.1
 	}
 	del_farming_mastery = {
-		trade_goods_size_modifier = 0.15
+		global_trade_goods_size_modifier = 0.15
 	}
 	del_natural_harmony = {
 		stability_cost_modifier = -0.1

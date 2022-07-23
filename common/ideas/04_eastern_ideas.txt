@@ -1,7 +1,7 @@
 
 GEP_ideas = {
     start = {
-        trade_goods_size_modifier = 0.10
+        global_trade_goods_size_modifier = 0.10
         global_tax_modifier = 0.10
     }
 
@@ -165,7 +165,7 @@ NHE_ideas = {
     }
 
     bonus = {
-        trade_goods_size_modifier = 0.10
+        global_trade_goods_size_modifier = 0.10
     }
 
     trigger = {

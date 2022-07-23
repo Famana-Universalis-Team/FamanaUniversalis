@@ -476,7 +476,7 @@ country_event = {
 	trigger = {
 		has_country_flag = has_improve_opinion_flag
 		any_known_country = {
-			has_religion_of_increased_opinion_for_scope = {
+			hasian_faith_of_increased_opinion_for_scope = {
 				who = ROOT
 			}
 			NOT = {
@@ -495,7 +495,7 @@ country_event = {
 	option = { 
 		every_known_country = {
 			limit = {
-				has_religion_of_increased_opinion_for_scope = {
+				hasian_faith_of_increased_opinion_for_scope = {
 					who = ROOT
 				}
 				NOT = {

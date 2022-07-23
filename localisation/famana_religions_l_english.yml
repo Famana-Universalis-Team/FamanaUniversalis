@@ -613,7 +613,7 @@
  lukschan_R_rebels_army:0 "$RELIGION$ Army"
 
  naravami:0 "Torviya"
- naravami_religion_desc: "§YTorviya §Wcountries can §Ggain §YChurch Power §Wby raiding coasts, winning wars and winning battles. Losing wars will cause you to §Rlose §YChurch Power§W.\n\nThe Torviya religion represents the various tribal beliefs of the Naravami people. Adherents of Torviya have varying regional differences, but generally, they believe in the ice gods beyond the great Naravami Mountains. Animal sacrifice plays a major part."
+ naravami_religion_desc:0 "§YTorviya §Wcountries can §Ggain §YChurch Power §Wby raiding coasts, winning wars and winning battles. Losing wars will cause you to §Rlose §YChurch Power§W.\n\nThe Torviya religion represents the various tribal beliefs of the Naravami people. Adherents of Torviya have varying regional differences, but generally, they believe in the ice gods beyond the great Naravami Mountains. Animal sacrifice plays a major part."
  north_estali:0 "North Estali"
 
  naravami_rebels_demand:0 "Convert $COUNTRYNAME$"
@@ -640,15 +640,15 @@
  bosisi_rebels_desc:0 "Religious fanatics tend to rise up in provinces controlled by nations of a different faith. They seek to spread their faith and smite all unbelievers."
  bosisi_rebels_army:0 "$RELIGION$ Army"
 
- has:0 "Has"
- has_religion_desc:0 "Has is a religion of the Hasians, Yomtanians, who believe that Dan Cru, the great gamer, will once return onto famana and game end all the humans."
+ hasian_faith:0 "Hasian"
+ hasian_faith_religion_desc:0 "Hasian is the religion of the Hasians, Yomtanians who believe that Dan Cru, the great gamer, will once return onto Famana and game end all the humans."
 
- has_rebels_demand:0 "Convert $COUNTRYNAME$"
- has_rebels_demand_desc:0 "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
- has_rebels_title:0 "Religious"
- has_rebels_name:0 "$RELIGION$ Zealots"
- has_rebels_desc:0 "Religious fanatics tend to rise up in provinces controlled by nations of a different faith. They seek to spread their faith and smite all unbelievers."
- has_rebels_army:0 "$RELIGION$ Army"
+ hasian_faith_rebels_demand:0 "Convert $COUNTRYNAME$"
+ hasian_faith_rebels_demand_desc:0 "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
+ hasian_faith_rebels_title:0 "Religious"
+ hasian_faith_rebels_name:0 "$RELIGION$ Zealots"
+ hasian_faith_rebels_desc:0 "Religious fanatics tend to rise up in provinces controlled by nations of a different faith. They seek to spread their faith and smite all unbelievers."
+ hasian_faith_rebels_army:0 "$RELIGION$ Army"
 
  CRUSADE:0 "Crusade"
  

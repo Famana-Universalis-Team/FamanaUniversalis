@@ -43,7 +43,7 @@ DOR_ideas = {
 QAN_ideas = {
     start = {
         army_tradition_decay = -0.01
-        trade_goods_size_modifier = 0.10
+        global_trade_goods_size_modifier = 0.10
     }
     
     bonus = {

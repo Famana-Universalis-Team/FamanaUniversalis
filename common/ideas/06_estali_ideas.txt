@@ -41,7 +41,7 @@ KLY_ideas = {
 
 VAN_ideas = {
     start = {
-        trade_goods_size_modifier = 0.10
+        global_trade_goods_size_modifier = 0.10
         development_cost = -0.1
     }
     

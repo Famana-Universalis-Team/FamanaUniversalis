@@ -1808,7 +1808,7 @@ has_completed_idea_group_of_category = {
 	]
 }
 
-has_religion_of_increased_opinion_for_scope = {
+hasian_faith_of_increased_opinion_for_scope = {
 	OR = {
 		AND = { religion = catholic $who$ = { has_country_flag = has_increased_catholic_opinion } }
 		AND = { religion = anglican $who$ = { has_country_flag = has_increased_anglican_opinion } }
@@ -1841,7 +1841,7 @@ has_religion_of_increased_opinion_for_scope = {
 	}
 }
 
-reverse_has_religion_of_increased_opinion_for_scope = {
+reverse_hasian_faith_of_increased_opinion_for_scope = {
 	OR = {
 		AND = { $who$ = { religion = catholic } has_country_flag = has_increased_catholic_opinion }
 		AND = { $who$ = { religion = anglican } has_country_flag = has_increased_anglican_opinion }
