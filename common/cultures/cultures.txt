@@ -2363,7 +2363,18 @@ Western_Great_Desert = {
 
 }
 #############################
-Central_Great_Desert = {        
+Central_Great_Desert = {    
+	Gan = {
+		male_names = {      
+	    Xas 
+		}
+		female_names = {
+		Mushirg
+		}
+		dynasty_names = {
+		Zmangemba
+		}
+	}    
 	Caxt = {
 		male_names = {      
 	    Xas 
