@@ -20,12 +20,13 @@ feudalism_reform = {
 	allow_normal_conversion = yes
 	legacy_equivalent = feudal_monarchy
 	potential = {
-		is_institution_enabled = feudalism_two
+		age = age_of_revolutions
 	}
 	valid_for_nation_designer = yes
 	nation_designer_cost = 0
 	modifiers = {
 		vassal_income = 0.25
+		diplomatic_upkeep = 1
 		nobles_influence_modifier = 0.05
 		maratha_exclusive_influence_modifier = 0.05
 		rajput_exclusive_influence_modifier = 0.05

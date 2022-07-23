@@ -665,7 +665,7 @@ country_event = {
 country_event = { #TRADITIONAL & RINI
 	id = lathvy_piety.16
 	title = lathvy_piety.16.t
-	desc = lathvy_piety.16.d
+	desc = lathvy_piety.16.desc
 	picture = PRAYING_eventPicture
 	
 	mean_time_to_happen = {

@@ -3602,14 +3602,7 @@ country_decisions = {
 		}
 		effect = {
 			if = {
-				limit = {
-					AND = {
-						has_custom_ideas = no
-						NOT = {
-							has_idea_group = Kachik_ideas
-						}
-					}
-				}
+				limit = { has_custom_ideas = no }
 				country_event = { id = ideagroups.1 } #Swap Ideas
 			}
 			restore_country_name = yes
@@ -3634,8 +3627,8 @@ country_decisions = {
 				name = "centralization_modifier"
 				duration = 7300
 			}
-			add_prestige = 25
 			swap_non_generic_missions = yes
+			add_prestige = 25
 		}
 		ai_will_do = {
 			factor = 1

@@ -162,6 +162,29 @@ country_event = {
             who = EHZ
             casus_belli = cb_vassalize_mission
         }
+        if = {
+            limit = {
+                6636 = {
+                    is_empty = yes
+                }
+            }
+            6636 = {
+                create_colony = 1000
+			    cede_province = LER
+			    add_core = LER
+                random_list = {
+                    33 = {
+                        add_base_tax = 1
+                    }
+                    33 = {
+                        add_base_production = 1
+                    }
+                    33 = {
+                        add_base_manpower = 1
+                    }
+                }
+            }
+        }
         6636 = {
 			limit = { 
 				is_empty = yes

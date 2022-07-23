@@ -347,7 +347,7 @@
  friday_prayers_lathvy:0 "Friday Prayers"
 
  lathvy_piety.16.t:0 "Our Position on the Lathvy Schism"
- lathvy_piety.16.d:0 "With our conversion, we must now choose a new path for the Lathvy faith."
+ lathvy_piety.16.desc:0 "With our conversion, we must now choose a new path for the Lathvy faith."
  lathvy_piety.16.a:0 "We side with Syadon!"
  lathvy_piety.16.b:0 "The traditionalists in Pomlen are right."
  lathvy_piety.16.c:0 "Ara calls to us; we must liberate the world!"
@@ -1186,15 +1186,15 @@
  tonxara.12.b:0 "[Root.Monarch.GetName] is the rightful Crota'tam!"
 
  tonxara.13.t:0 "Rebels Rise Up"
- tonxara.13.d:0 "Dissidents have risen up all over our country. They seek independence from [ROOT.GetName], and to establish their own kingdoms. To keep the country together, we must defeat these traitors."
+ tonxara.13.d:0 "Dissidents have risen up all over our country. They seek independence from [Root.GetName], and to establish their own kingdoms. To keep the country together, we must defeat these traitors."
  tonxara.13.a:0 "We will prevail!"
 
  tonxara.14.t:0 "Rebels Rise Up"
- tonxara.14.d:0 "Dissidents have risen up all over our country. They seek independence from [ROOT.GetName], and to establish their own kingdoms. To keep the country together, we must defeat these traitors."
+ tonxara.14.d:0 "Dissidents have risen up all over our country. They seek independence from [Root.GetName], and to establish their own kingdoms. To keep the country together, we must defeat these traitors."
  tonxara.14.a:0 "We will prevail!"
 
  tonxara.15.t:0 "Rebels Rise Up"
- tonxara.15.d:0 "Dissidents have risen up all over our country. They seek independence from [ROOT.GetName], and to establish their own kingdoms. To keep the country together, we must defeat these traitors."
+ tonxara.15.d:0 "Dissidents have risen up all over our country. They seek independence from [Root.GetName], and to establish their own kingdoms. To keep the country together, we must defeat these traitors."
  tonxara.15.a:0 "We will prevail!"
 
  tonxara.18.t:0 "A Worrying Development"
@@ -1217,7 +1217,7 @@
 
  POMLEN_DESTROYED:0 "Every instance of §YPextoglazian Thought§! will be replaced."
  lathvy_piety.17.t:0 "The Destruction of the High Temple of Pomlen"
- lathvy_piety.17.d:0 "Forces from [ROOT.GetName] entered the High Temple of Pomlen, the seat of the High Priest, and officially announced the dissolution of the Pextoglazian sect. The High Priest has been arrested, and then the High Temple was set on fire. As it burnt to the ground, countless Lathvy and Pextoglazian archives, as well as works of art, have been destroyed. The remnants of the sect have fled to the East, and Pextoglazian Thought has been erased."
+ lathvy_piety.17.d:0 "Forces from [Root.GetName] entered the High Temple of Pomlen, the seat of the High Priest, and officially announced the dissolution of the Pextoglazian sect. The High Priest has been arrested, and then the High Temple was set on fire. As it burnt to the ground, countless Lathvy and Pextoglazian archives, as well as works of art, have been destroyed. The remnants of the sect have fled to the East, and Pextoglazian Thought has been erased."
  lathvy_piety.17.a:0 "Good riddance."
 
  lathvy_piety.18.t:0 "Accept Pomlen refugees?"
@@ -1501,7 +1501,7 @@
  eastereggs.5.a:0 "Fascinating..."
 
  eastereggs.6.t:0 "The Storm That is Approaching"
- eastereggs.6.d:0 "As the Rastrayvar hit our country, our king, [ROOT.Monarch.GetName] walked out of his palace to provoke the black clouds in isolation. This is surprising, because ever since he reclaimed his name following his birth in a Mor cult, he has been consistently blessed by Shirian priests. He has adopted the image of Xarlan, an avatar of Shir representing death, as his main icon of worship. As a result, his confrontation of the storm was seen as a religious ritual."
+ eastereggs.6.d:0 "As the Rastrayvar hit our country, our king, [Root.Monarch.GetName] walked out of his palace to provoke the black clouds in isolation. This is surprising, because ever since he reclaimed his name following his birth in a Mor cult, he has been consistently blessed by Shirian priests. He has adopted the image of Xarlan, an avatar of Shir representing death, as his main icon of worship. As a result, his confrontation of the storm was seen as a religious ritual."
  eastereggs.6.a:0 "FORSAKEN, I AM AWAKENED..."
 
  ordica.23.t:0 "The Pirates of Tullisi"
@@ -1532,28 +1532,28 @@
  fashros.36.d:0 "Jasua converted to Tonmo in record speed, eliminating many of the pagan religions that were present there before, as well as making the Lathvies a minority. Of course, a lot of this was due to the extreme amounts of blood spilt during the Fashran conquest, but over the Horde, new ideas began to spread. The centre of the Tonmo World would start shifting East, with the Aresian Sea being the most prominant region. With this came great advances in Tonmo science and technology, as well as theology inventing new ways of percieving the Tonmo Religion."
  fashros.36.a:0 "We are unstoppable."
 
- tonmo.4.t:0 "Choosing our school"
+ tonmo.4.t:0 "Our Position on the Tonmo Schism"
  tonmo.4.d:0 "Tonmo is a wide and diverse religion, and there exist many different schools for us to choose from."
  tonmo.4.a:0 "Tribal."
  tonmo.4.b:0 "Liturgical."
  tonmo.4.c:0 "Evangelical."
 
  tonmo.5.t:0 "Celebrating Gaara"
- tonmo.5.d:0 "The main God of the Tonmo religion is Gaara, a genderless, formless and incomprehensibly trancsendant being who watches over the Universe. Under him serve many minor Gods, called Mynyç'i, and Angels below them, who are thought to concentrate their spiritual energy in the clouds. While our celebrations can only be heard by the divine spirits at the bottom of this heirarchy, who themselves are difficult to understand for Human brains as is, we can only hope our praise reaches Gaara."
+ tonmo.5.desc:0 "The main God of the Tonmo religion is Gaara, a genderless, formless and incomprehensibly trancsendant being who watches over the Universe. Under him serve many minor Gods, called Mynyç'i, and Angels below them, who are thought to concentrate their spiritual energy in the clouds. While our celebrations can only be heard by the divine spirits at the bottom of this heirarchy, who themselves are difficult to understand for Human brains as is, we can only hope our praise reaches Gaara."
  tonmo.5.a:0 "Let's celebrate."
 
  tonmo.6.t:0 "The Festival of Alad'desh"
- tonmo.6.d:0 "One of the main Tonmo festivals is Alad'desh, a time of intense prayer for Tonmans. The day is spent fasting, praying to Gaara as well as His subordinates, and reading religious literature. Then, on the evening, the fast is broken by huge community gatherings involving dance, drink and song."
+ tonmo.6.desc:0 "One of the main Tonmo festivals is Alad'desh, a time of intense prayer for Tonmans. The day is spent fasting, praying to Gaara as well as His subordinates, and reading religious literature. Then, on the evening, the fast is broken by huge community gatherings involving dance, drink and song."
  tonmo.6.a:0 "This will bring much joy to our nation."
  tonmo.6.b:0 "Let's hope our Prayers went through."
 
  tonmo.7.t:0 "Bad Omens blanket our nation"
- tonmo.7.d:0 "People are falling sick en masse in [ROOT.Capital.GetName], and it is becoming problematic for us. A team of theologians and doctors have determined the likely cause to either corruption in the ground caused by excessive animal blood, which will result in us having to limit our meat and cavalry; while others proclaim it to be bad winds and discord in the sky, which we will have to outwait."
- tonmo.7.a:0 "It's a buildup of Animal Blood."
+ tonmo.7.desc:0 "People are falling sick en masse in [Root.Capital.GetName], and it is becoming problematic for us. A team of theologians and doctors have determined the likely cause to either corruption in the ground caused by excessive animal blood, which will result in us having to limit our meat and cavalry; while others proclaim it to be bad winds and discord in the sky, which we will have to outwait."
+ tonmo.7.a:0 "It's a buildup of animal blood."
  tonmo.7.b:0 "The winds today are foul."
 
- tonmo.8.t:0 "Demons infect our [ROOT.Monarch.GetTitle]!"
- tonmo.8.d:0 "[ROOT.Monarch.GetTitle] [ROOT.Monarch.GetTitle] has recently awoken in a very poor mood. After an analysis by a highly respected religious leader and a team of doctors, we have determined evil energy has seeped into him, summoned by evil Angels who have rebelled against Gaara. While some doctors reject this conclusion, claiming it to be pagan nonsense, many still claim that the only way to get rid of it is by bloodletting."
+ tonmo.8.t:0 "Demons infect our [Root.Monarch.GetTitle]!"
+ tonmo.8.d:0 "[Root.Monarch.GetTitle] [Root.Monarch.GetTitle] has recently awoken in a very poor mood. After an analysis by a highly respected religious leader and a team of doctors, we have determined evil energy has seeped into him, summoned by evil Angels who have rebelled against Gaara. While some doctors reject this conclusion, claiming it to be pagan nonsense, many still claim that the only way to get rid of it is by bloodletting."
  tonmo.8.a:0 "Let's make a cut here..."
  tonmo.8.b:0 "An incision here maybe..."
  tonmo.8.c:0 "A gash here could be good..."

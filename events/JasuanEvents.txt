@@ -549,6 +549,22 @@ country_event = {
 		name = jasuaE.10.b
 		ai_chance = { factor = 5 }
 		add_prestige = 10
+		if = {
+			limit = {
+				any_owned_province = {
+					culture = Bohoran
+				}
+			}
+			add_accepted_culture = Bohoran
+		}
+		if = {
+			limit = {
+				any_owned_province = {
+					culture = Bohoran_E
+				}
+			}
+			add_accepted_culture = Bohoran_E
+		}
 	}
 }
 

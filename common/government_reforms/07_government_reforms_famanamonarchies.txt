@@ -324,6 +324,7 @@ resteman_thalassocracy = {
 	}
 
 	legacy_equivalent = despotic_monarchy
+	can_change_primary_culture = no
 
 	modifiers = {
 		global_sailors_modifier = 0.25

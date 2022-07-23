@@ -610,11 +610,11 @@ country_decisions = {
 		}
 		allow = {
 			western_naravam_region = {
-				type = all
+				NOT = { is_empty = yes }
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 			eastern_naravam_region = {
-				type = all
+				NOT = { is_empty = yes }
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 			5203 = {
@@ -955,7 +955,7 @@ country_decisions = {
 		}
 		allow = {
 			NOT = {
-				is_year = 221
+				is_year = 223
 			}
 			NOT = {
 				exists = PEX

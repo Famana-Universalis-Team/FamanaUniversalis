@@ -88,7 +88,7 @@ holy_monarchy_reform_2 = {
 
 high_bishophric_reform = {
 	icon = "highbishophric"
-	allow_normal_conversion = yes
+	allow_normal_conversion = no
 	lock_level_when_selected = yes
 	legacy_equivalent = theocratic_government
 	valid_for_nation_designer = yes

@@ -2715,3 +2715,42 @@ SOY_ideas = {
 		caravan_power = 0.10
 	}
 }
+
+KLG_ideas = {
+	start = {
+		fire_damage_received = -0.10
+		hostile_attrition = 1
+	}
+	
+	bonus = {
+		leader_land_fire = 1
+	}
+
+	trigger = {
+		tag = KLG
+	}
+	free = yes
+	
+	klg_1 = {
+		land_morale = 0.05
+		army_tradition = 1.0
+	}
+	klg_2 = {
+		leader_land_shock = 1
+	}
+	klg_3 = {
+		global_trade_power = 0.10
+	}
+	klg_4 = {
+		culture_conversion_cost = -0.20
+	}
+	klg_5 = {
+		may_perform_slave_raid = yes
+	}
+	klg_6 = {
+		technology_cost = -0.05
+	}
+	klg_7 = {
+		leader_naval_fire = 1
+	}
+}
