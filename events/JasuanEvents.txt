@@ -589,9 +589,15 @@ country_event = {
 		OR = {
 			SKT = {
 				ai = yes
+				NOT = {
+					total_development = 500
+				}
 			}
 			NAF = {
 				ai = yes
+				NOT = {
+					total_development = 500
+				}
 			}
 		}
 		NOT = {

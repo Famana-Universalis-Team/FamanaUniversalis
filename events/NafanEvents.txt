@@ -273,8 +273,9 @@ country_event = { #subject get cores
     }
 
     trigger = {
-        exists = NAF
-        is_year = 290
+        NAF = {
+            has_country_flag = nafaOppianVassalFlag
+        }
         is_subject_of = NAF
         any_owned_province = {
             OR = {
@@ -282,6 +283,7 @@ country_event = { #subject get cores
                 region = lower_oppia_region
             }
         }
+        is_year = 290
     }
 
     immediate = {
@@ -302,5 +304,51 @@ country_event = { #subject get cores
     option = {
         name = nafa.5.a
         ai_chance = { factor = 1 }
+    }
+}
+
+country_event = { #Kisholi nobles defect
+    id = nafa.6
+    title = nafa.6.t
+    desc = nafa.6.d
+    picture = CONQUEST_eventPicture
+
+    mean_time_to_happen = {
+        months = 6
+    }
+
+    trigger = {
+        tag = NAF
+        has_country_flag = nafaKisholiDefectFlag
+        offensive_war_with = KSL
+        KSL = {
+            ai = yes
+        }
+        any_province = {
+            owned_by = KSL
+            controlled_by = ROOT
+        }
+        current_age = age_of_reformation
+    }
+
+    option = {
+        name = nafa.6.a
+        ai_chance = { factor = 1 }
+
+        every_province = {
+            limit = {
+                superregion = jasua_superregion
+                owned_by = KSL
+                controlled_by = ROOT
+            }
+            cede_province = ROOT
+            add_core = ROOT
+            remove_core = KSL
+            hidden_effect = {
+                NAF = {
+                    add_manpower = 0.5
+                }
+            }
+        }
     }
 }

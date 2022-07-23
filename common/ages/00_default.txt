@@ -288,7 +288,7 @@ age_of_reformation = {
 		#maybe replace due to dlc
 		ab_great_leader = {
 			effect = {
-				create_general = { tradition = 80 }
+				create_general = { tradition = 100 }
 			}
 			ai_will_do = {
 				factor = 10

@@ -24,7 +24,7 @@ country_event = {
                 }
             }
         }
-        add_church_power = 200
+        add_church_power = 150
     }
     option = {
         name = tonmo.1.b
@@ -311,6 +311,7 @@ country_event = {
     title = tonmo.5.t
     desc = tonmo.5.desc
     picture = EP_POLYNESIAN_MARAE_eventPicture
+    is_triggered_only = yes
 
     trigger = {
         religion = tonmo
@@ -332,6 +333,7 @@ country_event = {
     title = tonmo.6.t
     desc = tonmo.6.desc
     picture = PRAYING_eventPicture
+    is_triggered_only = yes
 
     trigger = {
         religion = tonmo
@@ -344,6 +346,11 @@ country_event = {
         name = tonmo.6.a
         ai_chance = { factor = 1 }
         add_stability = 1
+        trigger = {
+            NOT = {
+                stability = 3
+            }
+        }
     }
     option = {
         name = tonmo.6.b
@@ -358,6 +365,7 @@ country_event = {
     title = tonmo.7.t
     desc = tonmo.7.desc
     picture = PLAGUE_eventPicture
+    is_triggered_only = yes
 
     trigger = {
         religious_school = {
@@ -394,6 +402,7 @@ country_event = {
     title = tonmo.8.t
     desc = tonmo.8.desc
     picture = KING_SICK_IN_BED_eventPicture
+    is_triggered_only = yes
 
     trigger = {
         religious_school = {
@@ -402,8 +411,8 @@ country_event = {
         }
         religion = tonmo
         NOT = { has_ruler_flag = purified }
-        adm =1
-        dip =1
+        adm = 1
+        dip = 1
         mil = 1
     }
 	mean_time_to_happen = {
@@ -453,10 +462,10 @@ country_event = {
             group = tonmo_group
             school = tribal_school
         }
-        religion = tonmo
+        is_year = 230
     }
 	mean_time_to_happen = {
-		months = 8
+		months = 100
 	}
 
     option = {
@@ -480,6 +489,7 @@ country_event = {
     title = tonmo.10.t
     desc = tonmo.10.desc
     picture = PEASANTS_BARTERING_eventPicture
+    is_triggered_only = yes
 
     trigger = {
         religion = tonmo

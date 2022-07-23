@@ -47,6 +47,9 @@ country_event = { #kisholi
 
     trigger = {
         tag = KSL
+        NOT = {
+            has_country_flag = formedKisholiDecision
+        }
     }
     option = {
         name = tonxara.2.a
