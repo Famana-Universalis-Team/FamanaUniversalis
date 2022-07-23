@@ -196,7 +196,7 @@ gadan_rebels = {
 		}
 		if = {
 			limit = {
-				NOT = { religion_group = gadan }
+				NOT = { religion_group = gadan_group }
 			}
 			add_prestige = -50
 			every_owned_province = {

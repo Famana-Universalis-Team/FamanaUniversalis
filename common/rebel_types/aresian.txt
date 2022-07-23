@@ -196,7 +196,7 @@ aresian_rebels = {
 		}
 		if = {
 			limit = {
-				NOT = { religion_group = aresian }
+				NOT = { religion_group = far_eastern_gomic }
 			}
 			add_prestige = -50
 			every_owned_province = {

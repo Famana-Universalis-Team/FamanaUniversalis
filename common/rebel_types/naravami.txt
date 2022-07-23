@@ -196,7 +196,7 @@ naravami_rebels = {
 		}
 		if = {
 			limit = {
-				NOT = { religion_group = naravami }
+				NOT = { religion_group = north_estali }
 			}
 			add_prestige = -50
 			every_owned_province = {

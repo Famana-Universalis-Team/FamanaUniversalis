@@ -196,7 +196,7 @@ dorroman_rebels = {
 		}
 		if = {
 			limit = {
-				NOT = { religion_group = dorroman }
+				NOT = { religion_group = Agmagozi }
 			}
 			add_prestige = -50
 			every_owned_province = {

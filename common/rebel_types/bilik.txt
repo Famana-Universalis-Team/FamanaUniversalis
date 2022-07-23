@@ -196,7 +196,7 @@ bilik_rebels = {
 		}
 		if = {
 			limit = {
-				NOT = { religion_group = bilik }
+				NOT = { religion_group = far_eastern_gomic }
 			}
 			add_prestige = -50
 			every_owned_province = {

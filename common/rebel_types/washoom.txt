@@ -196,7 +196,7 @@ washoom_rebels = {
 		}
 		if = {
 			limit = {
-				NOT = { religion_group = washoom }
+				NOT = { religion_group = washoom_group }
 			}
 			add_prestige = -50
 			every_owned_province = {
