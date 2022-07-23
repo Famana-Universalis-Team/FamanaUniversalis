@@ -3932,7 +3932,7 @@ country_event = { #kisholi death
         ai = yes
         NOT = {
             num_of_owned_provinces_with	= {
-                value = 30
+                value = 15
                 superregion = jasua_superregion
             }
         }
