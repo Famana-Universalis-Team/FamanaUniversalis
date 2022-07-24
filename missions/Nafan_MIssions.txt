@@ -423,12 +423,16 @@ nafa_1 = {
         trigger = {
             custom_trigger_tooltip = {
                 tooltip = goldenAgeEmastaliaNafa
-                all_owned_province = {
-                    OR = {
-                        region = emastalia_region
-                        region = west_emastalia_region
+                NOT = {
+                    any_owned_province = {
+                        OR = {
+                            region = emastalia_region
+                            region = west_emastalia_region
+                        }
+                        NOT = {
+                            is_prosperous = yes
+                        }
                     }
-                    is_prosperous = yes
                 }
             }
             custom_trigger_tooltip = {
@@ -519,8 +523,8 @@ nafa_1 = {
         required_missions = {}
         position = 7
         trigger = {
-            num_of_galley = 40
-            navy_tradition = 50
+            num_of_galley = 60
+            navy_tradition = 40
 
         }
         effect = {
@@ -1452,24 +1456,31 @@ nafa_3 = {
                     type = all
                     country_or_non_sovereign_subject_holds = ROOT
                 }
-                AND = {
-                    exists = JFX
-                    NOT = {
-                        OR = {
-                            JFX = {
-                                stability = 3
-                                legitimacy = 90
-                            }
+                if = {
+                    limit = {
+                        JFX = {
+                            ai = yes
                         }
                     }
-                    OR = {
-                        JFX = {
-                            has_disaster = tonxara_disaster
+                    AND = {
+                        exists = JFX
+                        NOT = {
+                            OR = {
+                                JFX = {
+                                    stability = 3
+                                    legitimacy = 90
+                                }
+                            }
                         }
-                        JFX = {
-                            has_disaster_progress = {
-                                disaster = tonxara_disaster
-                                value = 50
+                        OR = {
+                            JFX = {
+                                has_disaster = tonxara_disaster
+                            }
+                            JFX = {
+                                has_disaster_progress = {
+                                    disaster = tonxara_disaster
+                                    value = 50
+                                }
                             }
                         }
                     }
@@ -1964,7 +1975,13 @@ nafa_4 = {
         effect = {
             
         }
-        #provinces_to_highlight = {}
+        provinces_to_highlight = {
+            NOT = { country_or_non_sovereign_subject_holds = ROOT }
+            OR = {
+                region = upper_oppia_region
+                region = lower_oppia_region
+            }
+        }
     }
 
     naf_capture_northwest_saka = {
