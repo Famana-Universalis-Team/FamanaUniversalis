@@ -597,6 +597,9 @@ grand_nik_shipyards = {
 
 	#can we build it?
 	build_trigger = {
+		owner = {
+			culture_group = Vanoman
+		}
 		culture_group = Vanoman
 	}
 
@@ -610,11 +613,17 @@ grand_nik_shipyards = {
 
 	#can our country use it?
 	can_use_modifiers_trigger = {
+		owner = {
+			culture_group = Vanoman
+		}
 		culture_group = Vanoman
 	}
 
 	#can our country upgrade it?
 	can_upgrade_trigger = {
+		owner = {
+			culture_group = Vanoman
+		}
 		culture_group = Vanoman
 	}
 
@@ -783,6 +792,12 @@ city_of_xon = {
 
 	#can we build it?
 	build_trigger = {
+		owner = {
+			OR = {
+				religion_group = xalian_group
+				religion_group = lathvy_group
+			}
+		}
 		OR = {
 			religion_group = xalian_group
 			religion_group = lathvy_group
@@ -800,6 +815,12 @@ city_of_xon = {
 
 	#can our country use it?
 	can_use_modifiers_trigger = {
+		owner = {
+			OR = {
+				religion_group = xalian_group
+				religion_group = lathvy_group
+			}
+		}
 		OR = {
 			religion_group = xalian_group
 			religion_group = lathvy_group
@@ -809,6 +830,12 @@ city_of_xon = {
 
 	#can our country upgrade it?
 	can_upgrade_trigger = {
+		owner = {
+			OR = {
+				religion_group = xalian_group
+				religion_group = lathvy_group
+			}
+		}
 		OR = {
 			religion_group = xalian_group
 			religion_group = lathvy_group
