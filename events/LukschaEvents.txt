@@ -1,0 +1,152 @@
+namespace = lukscham
+
+country_event = {
+	id = lukscham.1
+	hidden = yes
+	fire_only_once = yes
+
+	trigger = {
+		capital_scope = {
+			region = lukscha_region
+		}
+		NOT = {
+			exists = LKS
+		}
+		is_year = 310
+		KYR = {
+			ai = yes
+		}
+		EVV = {
+			ai = yes
+		}
+		GYY = {
+			ai = yes
+		}
+		OTS = {
+			ai = yes
+		}
+		PLA = {
+			ai = yes
+		}
+		IET = {
+			ai = yes
+		}
+		ZOK = {
+			ai = yes
+		}
+		JUR = {
+			ai = yes
+		}
+		HRS = {
+			ai = yes
+		}
+		area_76 = {
+			type = all
+			OR = {
+				owned_by = KYR
+				owned_by = GYY
+				owned_by = EVV
+				owned_by = OTS
+				owned_by = PLA
+				owned_by = IET
+				owned_by = ZOK
+				owned_by = JUR
+				owned_by = HRS
+			}
+		}
+		area_77 = {
+			type = all
+			OR = {
+				owned_by = KYR
+				owned_by = GYY
+				owned_by = EVV
+				owned_by = OTS
+				owned_by = PLA
+				owned_by = IET
+				owned_by = ZOK
+				owned_by = JUR
+				owned_by = HRS
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	immediate = {
+		area_76 = {
+			cede_province = LKS
+			add_core = LKS
+		}
+		area_77 = {
+			cede_province = LKS
+			add_core = LKS
+		}
+		LKS = {
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			lukscha_region = {
+				limit = {
+					NOT = {
+						owned_by = ROOT
+					}
+					is_empty = yes
+				}
+				add_permanent_claim = LKS
+			}
+			lukscha_region = {
+				limit = {
+					NOT = {
+						OR = {
+							owned_by = ROOT
+							is_empty = yes
+						}
+					}
+				}
+				add_core = LKS
+			}
+			add_prestige = 25
+			add_treasury = 1000
+			add_manpower = 50
+			country_event = {
+				id = lukscham.2
+			}
+			add_country_modifier = {
+				name = lukscha_ai_unif
+				duration = 9125
+			}
+		}
+	}
+}
+
+country_event = {
+	id = lukscham.2
+	hidden = yes
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	immediate = {
+		capital_scope = {
+    		ROOT = {
+        		infantry = PREV
+				infantry = PREV
+				infantry = PREV
+				infantry = PREV
+				infantry = PREV
+				infantry = PREV
+				infantry = PREV
+				infantry = PREV
+				infantry = PREV
+				infantry = PREV
+				infantry = PREV
+				infantry = PREV
+				infantry = PREV
+				infantry = PREV
+				infantry = PREV
+    		}
+		}
+	}
+}

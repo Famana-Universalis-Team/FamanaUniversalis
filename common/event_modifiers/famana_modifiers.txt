@@ -1210,3 +1210,10 @@ tonmo_no_doctors = {
     recover_army_morale_speed = -0.10
     reinforce_speed = -0.10
 }
+
+lukscha_ai_unif = {
+    diplomatic_upkeep = -4
+    discipline = 0.25
+    land_forcelimit_modifier = 2.5
+    global_tax_modifier = 10.0
+}
