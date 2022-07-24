@@ -305,7 +305,7 @@
  IS_NOT_SUBJECT_TYPE_OF:0 "Is not a $SUBJECTTYPE$ of $WHO$.\n"
  HAS_SUBJECT_TYPE:0 "Has a $SUBJECTTYPE$.\n"
  HAS_NOT_SUBJECT_TYPE:0 "Has no $SUBJECTTYPE$.\n"
- hasian_faith:0 "Religion in $PROVINCE|Y$ is $RELIGION|Y$"
+ HAS_RELIGION:0 "Religion in $PROVINCE|Y$ is $RELIGION|Y$"
  HAS_NOT_RELIGION:0 "Religion in $PROVINCE|Y$ is not $RELIGION|Y$"
  BREAK_ALLIANCE_CANNOT_COST:0 "You need at least §Y$COST$§! Favors with §Y$COUNTRY$§! to ask them to Break an Alliance."
  BREAK_ALLIANCE_CANNOT_OPINION:0 "You need at least §Y$OPINION$§! Opinion with §Y$COUNTRY$§! to ask them to Break an Alliance."

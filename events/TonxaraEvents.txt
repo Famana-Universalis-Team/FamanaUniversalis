@@ -297,7 +297,7 @@ country_event = { #Koff
                 add_base_manpower = 1
             }
             KFF = {
-                change_religion	= tonmo
+                #change_religion = tonmo
                 create_general = {
                     tradition = 100
                 }
@@ -3710,12 +3710,10 @@ country_event = {
             tag = NHM
             tag = JFX
             tag = KSL
+            tag = HOY
         }
         NOT = {
-            num_of_owned_provinces_with	= {
-                value = 15
-                is_core = ROOT
-            }
+            num_of_cities = 15
         }
         has_disaster = tonxara_disaster
     }
