@@ -1975,7 +1975,7 @@ nafa_4 = {
         effect = {
             
         }
-        provinces_to_highlight = {
+        provinces_to_highlight = { #
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
             OR = {
                 region = upper_oppia_region
