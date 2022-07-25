@@ -448,7 +448,7 @@ pex_5 = {
         }
         effect = {
             country_event = {
-                id = pexto.16
+                id = pextoglazia.16
             }
             elwait_area = { add_permanent_claim = ROOT }
             vox_larm_area = { add_permanent_claim = ROOT }
@@ -480,7 +480,7 @@ pex_5 = {
         }
         effect = {
             country_event = {
-                id = pexto.17
+                id = pextoglazia.17
                 days = 30
             }
             hidden_effect = {

@@ -195,7 +195,7 @@ kap_5 = { #kinvirel - jasua region path
 		}
 		effect = {
 			country_event = {
-				id = jasuaE.12
+				id = jasua.12
 				days = 30
 			}
 			if = {
@@ -380,7 +380,7 @@ kap_2 = {
 		
 		effect = {
 			country_event = {
-				id = FlavorKAP.1
+				id = kapolia.1
 			}
 		}
 	}

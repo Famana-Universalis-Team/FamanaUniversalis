@@ -698,8 +698,20 @@ kin_6 = {
             }
         }
         effect = {
-            5496 = {
-                add_center_of_trade_level = 1
+            if = {
+                limit = {
+                    NOT = {
+                        5496 = {
+                            province_has_center_of_trade_of_level = 3
+                        }
+                    }
+                }
+                5496 = {
+                    add_center_of_trade_level = 1
+                }
+            }
+            else = {
+                add_mercantilism = 3
             }
             moxon_region = {
                 add_permanent_claim = ROOT

@@ -1,9 +1,9 @@
-namespace = gaxalf
+namespace = xalflavor_other
 #Arism
 country_event = {
-	id = gaxalf.1
-	title = gaxalf.1.t
-	desc = gaxalf.1.d
+	id = xalflavor_other.1
+	title = xalflavor_other.1.t
+	desc = xalflavor_other.1.d
 	picture = RELIGION_eventPicture
 
 	trigger = {
@@ -27,7 +27,7 @@ country_event = {
 	}
 
 	option = {
-		name = gaxalf.1.a
+		name = xalflavor_other.1.a
 		ai_chance = { factor = 70 }
 		every_known_country = {
 			limit = {
@@ -48,7 +48,7 @@ country_event = {
 	}
 
 	option = {
-		name = gaxalf.1.b
+		name = xalflavor_other.1.b
 		ai_chance = { factor = 30 }
 		every_known_country = {
 			limit = {
@@ -70,9 +70,9 @@ country_event = {
 }
 #Beaunty of Delk
 country_event = {
-	id = gaxalf.2
-	title = gaxalf.2.t
-	desc = gaxalf.2.d
+	id = xalflavor_other.2
+	title = xalflavor_other.2.t
+	desc = xalflavor_other.2.d
 	picture = MERCHANTS_TALKING_eventPicture
 
 	fire_only_once = yes
@@ -85,7 +85,7 @@ country_event = {
 	}
 
 	option = {
-		name = gaxalf.2.a
+		name = xalflavor_other.2.a
 		ai_chance = { factor = 50 }
 		add_estate_loyalty = {
 			estate = estate_church
@@ -103,7 +103,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = gaxalf.2.b
+		name = xalflavor_other.2.b
 		ai_chance = { factor = 50 }
 		add_years_of_income = 1.25
 	}
@@ -111,9 +111,9 @@ country_event = {
 
 #Rastrayvarism
 country_event = {
-	id = gaxalf.3
-	title = gaxalf.3.t
-	desc = gaxalf.3.d
+	id = xalflavor_other.3
+	title = xalflavor_other.3.t
+	desc = xalflavor_other.3.d
 	picture = RELIGIOUS_TURMOIL_eventPicture
 
 	trigger = {
@@ -137,14 +137,14 @@ country_event = {
 	}
 
 	option = {
-		name = gaxalf.3.a
+		name = xalflavor_other.3.a
 		ai_chance = { factor = 70 }
 		add_stability = 1
 		add_years_of_income = -0.5
 	}
 
 	option = {
-		name = gaxalf.3.b
+		name = xalflavor_other.3.b
 		ai_chance = { factor = 30 }
 		add_country_modifier = {
 			name = rastrayvarists_supported
@@ -155,9 +155,9 @@ country_event = {
 
 #Rastrayvar control
 country_event = {
-	id = gaxalf.4
-	title = gaxalf.4.t
-	desc = gaxalf.4.d
+	id = xalflavor_other.4
+	title = xalflavor_other.4.t
+	desc = xalflavor_other.4.d
 	picture = FAMINE_eventPicture
 	hidden = yes
 
@@ -178,7 +178,7 @@ country_event = {
 			clr_global_flag	= rastrayvar_control_flag
 			random_country = {
 				country_event = {
-					id = gaxalf.5
+					id = xalflavor_other.5
 					days = 30
 				}
 			}
@@ -193,7 +193,7 @@ country_event = {
 					}
 				}
 				country_event = {
-					id = gaxalf.7
+					id = xalflavor_other.7
 					days = 1
 				}
 			}
@@ -208,7 +208,7 @@ country_event = {
 					}
 				}
 				country_event = {
-					id = gaxalf.6
+					id = xalflavor_other.6
 				}
 				if = {
 					limit = {
@@ -223,16 +223,16 @@ country_event = {
 	}
 
 	option = {
-		name = gaxalf.4.a
+		name = xalflavor_other.4.a
 		ai_chance = { factor = 1 }
 	}
 }
 
 #Rastrayvar control 2
 country_event = {
-	id = gaxalf.5
-	title = gaxalf.5.t
-	desc = gaxalf.5.d
+	id = xalflavor_other.5
+	title = xalflavor_other.5.t
+	desc = xalflavor_other.5.d
 	picture = FAMINE_eventPicture
 	hidden = yes
 	is_triggered_only = yes
@@ -242,16 +242,16 @@ country_event = {
 	}
 
 	option = {
-		name = gaxalf.5.a
+		name = xalflavor_other.5.a
 		ai_chance = { factor = 1 }
 	}
 }
 
 #Actual rastrayvar event
 country_event = {
-	id = gaxalf.6
-	title = gaxalf.6.t
-	desc = gaxalf.6.d
+	id = xalflavor_other.6
+	title = xalflavor_other.6.t
+	desc = xalflavor_other.6.d
 	picture = FAMINE_eventPicture
 	is_triggered_only = yes
 
@@ -272,7 +272,7 @@ country_event = {
 	}
 
 	option = {
-		name = gaxalf.6.a
+		name = xalflavor_other.6.a
 		ai_chance = { factor = 1 }
 		every_owned_province = {
 			limit = {
@@ -302,15 +302,15 @@ country_event = {
 }
 
 country_event = {
-	id = gaxalf.7
-	title = gaxalf.7.t
-	desc = gaxalf.7.d
+	id = xalflavor_other.7
+	title = xalflavor_other.7.t
+	desc = xalflavor_other.7.d
 	picture = FAMINE_eventPicture
 	is_triggered_only = yes
 	major = yes
 
 	option = {
-		name = gaxalf.7.a
+		name = xalflavor_other.7.a
 		ai_chance = { factor = 1 }
 	}
 }

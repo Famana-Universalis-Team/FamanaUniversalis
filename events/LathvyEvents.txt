@@ -1,9 +1,9 @@
-namespace = lathvy_piety
+namespace = lathvy
 #Vitrages
 country_event = {
-	id = lathvy_piety.1
-	title = lathvy_piety.1.t
-	desc = lathvy_piety.1.d
+	id = lathvy.1
+	title = lathvy.1.t
+	desc = lathvy.1.d
 	picture = ORTHODOX_eventPicture
 	
 	is_triggered_only = yes
@@ -21,13 +21,13 @@ country_event = {
 	
 	option = {
 		ai_chance = { factor = 60 }
-		name = lathvy_piety.1.a #leavefire
+		name = lathvy.1.a #leavefire
 		add_piety = 0.10
 		add_country_modifier = { name = lathvy_fire_pits duration = 540 }
 		}
 	option = {
 		ai_chance = { factor = 40 }
-		name = lathvy_piety.1.b #allowvitrages
+		name = lathvy.1.b #allowvitrages
 		add_piety = -0.10
 		add_prestige = 15
 	}
@@ -35,9 +35,9 @@ country_event = {
 
 #LostYomtanians
 country_event = {
-	id = lathvy_piety.2
-	title = lathvy_piety.2.t
-	desc = lathvy_piety.2.d
+	id = lathvy.2
+	title = lathvy.2.t
+	desc = lathvy.2.d
 	picture = ANGRY_MOB_eventPicture
 	
 	is_triggered_only = yes
@@ -55,7 +55,7 @@ country_event = {
 	
 	option = {
 		ai_chance = { factor = 60 }
-		name = lathvy_piety.2.a #killthem
+		name = lathvy.2.a #killthem
 		add_piety = 0.15
 		add_estate_loyalty = {
 		estate = estate_church
@@ -65,7 +65,7 @@ country_event = {
 	}
 	option = {
 		ai_chance = { factor = 40 }
-		name = lathvy_piety.2.b #allowyomtanians
+		name = lathvy.2.b #allowyomtanians
 		add_piety = -0.15
 		add_country_modifier = { name = lathvy_let_yoms_go duration = 540 }
 	}
@@ -73,9 +73,9 @@ country_event = {
 
 #pilgrims
 country_event = {
-	id = lathvy_piety.3
-	title = lathvy_piety.3.t
-	desc = lathvy_piety.3.d
+	id = lathvy.3
+	title = lathvy.3.t
+	desc = lathvy.3.d
 	picture = EUROPEAN_REFUGEES_eventPicture
 	
 	is_triggered_only = yes
@@ -93,7 +93,7 @@ country_event = {
 	
 	option = {
 		ai_chance = { factor = 50 }
-		name = lathvy_piety.3.a #helppilgrims
+		name = lathvy.3.a #helppilgrims
 		add_adm_power = -30
 		add_mil_power = -30
 		add_piety = 0.10
@@ -101,7 +101,7 @@ country_event = {
 	}
 	option = {
 		ai_chance = { factor = 50 }
-		name = lathvy_piety.3.b #nah
+		name = lathvy.3.b #nah
 		add_piety = -0.10
 		add_country_modifier = { name = lathvy_unsafe_pilgrims duration = 360 }
 	}
@@ -109,9 +109,9 @@ country_event = {
 
 #reliquiary
 country_event = {
-	id = lathvy_piety.4
-	title = lathvy_piety.4.t
-	desc = lathvy_piety.4.d
+	id = lathvy.4
+	title = lathvy.4.t
+	desc = lathvy.4.d
 	picture = IMPORTANT_STATUE_eventPicture
 	
 	is_triggered_only = yes
@@ -128,20 +128,20 @@ country_event = {
 	
 	option = {
 		ai_chance = { factor = 20 }
-		name = lathvy_piety.4.a #rich
+		name = lathvy.4.a #rich
 		add_years_of_income = -0.5
 		add_prestige = 15
 		add_piety = 0.15
 	}
 	option = {
 		ai_chance = { factor = 40 }
-		name = lathvy_piety.4.b #normal
+		name = lathvy.4.b #normal
 		add_years_of_income = -0.2
 		add_piety = 0.05
 	}
 	option = {
 		ai_chance = { factor = 40 }
-		name = lathvy_piety.4.c #nah
+		name = lathvy.4.c #nah
 		add_piety = -0.10
 		add_estate_loyalty = {
 			estate = estate_church
@@ -152,9 +152,9 @@ country_event = {
 
 #heir
 country_event = {
-	id = lathvy_piety.5
-	title = lathvy_piety.5.t
-	desc = lathvy_piety.5.d
+	id = lathvy.5
+	title = lathvy.5.t
+	desc = lathvy.5.d
 	picture = SPY_eventPicture
 	
 	is_triggered_only = yes
@@ -173,7 +173,7 @@ country_event = {
 	
 	option = {
 		ai_chance = { factor = 10 }
-		name = lathvy_piety.5.a #execute
+		name = lathvy.5.a #execute
 			kill_heir = {}
 			add_piety = 0.15
 			add_legitimacy = 15
@@ -181,18 +181,18 @@ country_event = {
 		}
 	option = {
 		ai_chance = { factor = 45 }
-		name = lathvy_piety.5.b #punish
+		name = lathvy.5.b #punish
 		add_piety = 0.05
 		add_estate_influence_modifier = {
     		estate = estate_church
-			desc = lathvy_piety_heir
+			desc = lathvy_heir
     		influence = 10
     		duration = 360
 	    }
 }
 	option = {
 		ai_chance = { factor = 45 }
-		name = lathvy_piety.5.c #nah
+		name = lathvy.5.c #nah
 		add_piety = -0.15
 		add_legitimacy = -10
 		add_devotion = -10
@@ -200,9 +200,9 @@ country_event = {
 }
 # Returning Scholars
 country_event = {
-	id = lathvy_piety.6
-	title = lathvy_piety.6.t
-	desc = lathvy_piety.6.d
+	id = lathvy.6
+	title = lathvy.6.t
+	desc = lathvy.6.d
 	picture = BIG_BOOK_eventPicture
 	
 	is_triggered_only = yes
@@ -221,7 +221,7 @@ country_event = {
 	}
 	
 	option = {
-		name = lathvy_piety.6.a
+		name = lathvy.6.a
 		ai_chance = {
 			factor = 60
 			
@@ -230,7 +230,7 @@ country_event = {
 		add_adm_power = 10
 	}
 	option = {
-		name = lathvy_piety.6.b
+		name = lathvy.6.b
 		ai_chance = {
 			factor = 40
 			
@@ -241,9 +241,9 @@ country_event = {
 }
 # Latvhy Branches Rally Support
 country_event = {
-	id = lathvy_piety.7
-	title = lathvy_piety.7.t
-	desc = lathvy_piety.7.d
+	id = lathvy.7
+	title = lathvy.7.t
+	desc = lathvy.7.d
 	picture = STREET_SPEECH_eventPicture
 	
 	is_triggered_only = yes
@@ -262,7 +262,7 @@ country_event = {
 	}
 	
 	option = {
-		name = lathvy_piety.7.a
+		name = lathvy.7.a
 		ai_chance = {
 			factor = 60
 		}
@@ -270,7 +270,7 @@ country_event = {
 		add_legitimacy = 10
 	}
 	option = {
-		name = lathvy_piety.7.b
+		name = lathvy.7.b
 		ai_chance = {
 			factor = 40
 		}
@@ -280,9 +280,9 @@ country_event = {
 }
 # Enjoining Right and Forbidding Wrong
 country_event = {
-	id = lathvy_piety.8
-	title = lathvy_piety.8.t
-	desc = lathvy_piety.8.d
+	id = lathvy.8
+	title = lathvy.8.t
+	desc = lathvy.8.d
 	picture = CITY_DEVELOPMENT_eventPicture
 
 	is_triggered_only = yes
@@ -299,7 +299,7 @@ country_event = {
 	}
 	
 	option = {
-		name = lathvy_piety.8.a
+		name = lathvy.8.a
 		ai_chance = {
 			factor = 60
 		}
@@ -307,7 +307,7 @@ country_event = {
 		add_adm_power = 40
 	}
 	option = {
-		name = lathvy_piety.8.b
+		name = lathvy.8.b
 		ai_chance = {
 			factor = 40
 		}
@@ -317,9 +317,9 @@ country_event = {
 }
 # Debate over branch Practices
 country_event = {
-	id = lathvy_piety.9
-	title = lathvy_piety.9.t
-	desc = lathvy_piety.9.d
+	id = lathvy.9
+	title = lathvy.9.t
+	desc = lathvy.9.d
 	picture = REFORM_eventPicture
 	
 	is_triggered_only = yes
@@ -336,14 +336,14 @@ country_event = {
 	}
 	
 	option = {
-		name = lathvy_piety.9.a
+		name = lathvy.9.a
 		ai_chance = {
 			factor = 60
 		}
 		add_piety = 0.1
 	}
 	option = {
-		name = lathvy_piety.9.b
+		name = lathvy.9.b
 		ai_chance = {
 			factor = 40
 		}
@@ -352,9 +352,9 @@ country_event = {
 }
 # Purification of Tax Laws
 country_event = {
-	id = lathvy_piety.10
-	title = lathvy_piety.10.t
-	desc = lathvy_piety.10.d
+	id = lathvy.10
+	title = lathvy.10.t
+	desc = lathvy.10.d
 	picture = COURT_eventPicture
 	
 	is_triggered_only = yes
@@ -373,7 +373,7 @@ country_event = {
 	}
 	
 	option = {
-		name = lathvy_piety.10.a
+		name = lathvy.10.a
 		ai_chance = {
 			factor = 60
 		}
@@ -384,7 +384,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = lathvy_piety.10.b
+		name = lathvy.10.b
 		ai_chance = {
 			factor = 40
 		}
@@ -393,9 +393,9 @@ country_event = {
 }
 # Mystics and Storytellers
 country_event = {
-	id = lathvy_piety.11
-	title = lathvy_piety.11.t
-	desc = lathvy_piety.11.d
+	id = lathvy.11
+	title = lathvy.11.t
+	desc = lathvy.11.d
 	picture = REFORM_eventPicture
 	
 	is_triggered_only = yes
@@ -412,14 +412,14 @@ country_event = {
 	}
 
 	option = {
-		name = lathvy_piety.11.a
+		name = lathvy.11.a
 		ai_chance = {
 			factor = 60
 		}
 		add_piety = 0.1
 	}
 	option = {
-		name = lathvy_piety.11.b
+		name = lathvy.11.b
 		ai_chance = {
 			factor = 40
 		}
@@ -428,9 +428,9 @@ country_event = {
 }
 # Trade Guilds and Fraternities
 country_event = {
-	id = lathvy_piety.12
-	title = lathvy_piety.12.t
-	desc = lathvy_piety.12.d
+	id = lathvy.12
+	title = lathvy.12.t
+	desc = lathvy.12.d
 	picture = COURT_eventPicture
 	
 	is_triggered_only = yes
@@ -486,7 +486,7 @@ country_event = {
 	}
 	
 	option = {
-		name = lathvy_piety.12.a
+		name = lathvy.12.a
 		ai_chance = {
 			factor = 60
 			
@@ -495,7 +495,7 @@ country_event = {
 		add_prestige = 10
 	}
 	option = {
-		name = lathvy_piety.12.b
+		name = lathvy.12.b
 		ai_chance = {
 			factor = 40
 		}
@@ -511,9 +511,9 @@ country_event = {
 }
 # Orders growing in popularity in [new_province.GetName]
 country_event = {
-	id = lathvy_piety.13
-	title = lathvy_piety.13.t
-	desc = lathvy_piety.13.d
+	id = lathvy.13
+	title = lathvy.13.t
+	desc = lathvy.13.d
 	picture = REFORM_eventPicture
 	goto = new_province
 	
@@ -546,7 +546,7 @@ country_event = {
 	}
 	
 	option = {
-		name = lathvy_piety.13.a
+		name = lathvy.13.a
 		ai_chance = {
 			factor = 60
 			
@@ -560,7 +560,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = lathvy_piety.13.b
+		name = lathvy.13.b
 		ai_chance = {
 			factor = 40
 			
@@ -576,9 +576,9 @@ country_event = {
 }
 # "Disregard of the Lathvy law?"
 country_event = {
-	id = lathvy_piety.14
-	title = lathvy_piety.14.t
-	desc = lathvy_piety.14.d
+	id = lathvy.14
+	title = lathvy.14.t
+	desc = lathvy.14.d
 	picture = COURT_eventPicture
 	
 	is_triggered_only = yes
@@ -599,13 +599,13 @@ country_event = {
 	}
 	
 	option = {
-		name = lathvy_piety.14.a
+		name = lathvy.14.a
 		ai_chance = { factor = 70 }
 		add_piety = 0.25
 		add_estate_church_loyalty_effect = yes
 	}
 	option = {
-		name = lathvy_piety.14.b
+		name = lathvy.14.b
 		ai_chance = { factor = 30 }
 		reduce_estate_church_loyalty_effect = yes
 		add_piety = -0.1
@@ -617,9 +617,9 @@ country_event = {
 }
 # Friday Prayer
 country_event = {
-	id = lathvy_piety.15
-	title = lathvy_piety.15.t
-	desc = lathvy_piety.15.d
+	id = lathvy.15
+	title = lathvy.15.t
+	desc = lathvy.15.d
 	picture = PRAYING_eventPicture
 	
 	is_triggered_only = yes
@@ -640,7 +640,7 @@ country_event = {
 	}
 	
 	option = {
-		name = lathvy_piety.15.a
+		name = lathvy.15.a
 		ai_chance = { 
 			factor = 100
 		}
@@ -652,7 +652,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = lathvy_piety.15.b
+		name = lathvy.15.b
 		ai_chance = { 
 			factor = 0
 		}
@@ -663,9 +663,9 @@ country_event = {
 
 #choose school
 country_event = { #TRADITIONAL & RINI
-	id = lathvy_piety.16
-	title = lathvy_piety.16.t
-	desc = lathvy_piety.16.desc
+	id = lathvy.16
+	title = lathvy.16.t
+	desc = lathvy.16.desc
 	picture = PRAYING_eventPicture
 	
 	mean_time_to_happen = {
@@ -723,7 +723,7 @@ country_event = { #TRADITIONAL & RINI
 	}
 	
 	option = { #nafan
-		name = lathvy_piety.16.a
+		name = lathvy.16.a
 		trigger = {
 			has_global_flag = NafaHappened
 			any_known_country = {
@@ -771,7 +771,7 @@ country_event = { #TRADITIONAL & RINI
 		}
 	}
 	option = { #pexto
-		name = lathvy_piety.16.b
+		name = lathvy.16.b
 		trigger = {
 			NOT = { has_global_flag = PomlenDestroyed }
 			any_known_country = {
@@ -831,7 +831,7 @@ country_event = { #TRADITIONAL & RINI
 		}
 	}
 	option = { #maxan
-		name = lathvy_piety.16.c
+		name = lathvy.16.c
 		trigger = {
 			any_known_country = {
 				religious_school = {
@@ -876,7 +876,7 @@ country_event = { #TRADITIONAL & RINI
 		}
 	}
 	option = { #Walaran
-		name = lathvy_piety.16.d
+		name = lathvy.16.d
 		ai_chance = { 
 			factor = 0.25
 			modifier = {
@@ -912,7 +912,7 @@ country_event = { #TRADITIONAL & RINI
 	}
 	
 	option = { #Celzian
-		name = lathvy_piety.16.e
+		name = lathvy.16.e
 		ai_chance = { 
 			factor = 1
 			modifier = {
@@ -947,7 +947,7 @@ country_event = { #TRADITIONAL & RINI
 	}
 
 	option = { #Kolyan
-	name = lathvy_piety.16.f
+	name = lathvy.16.f
 	ai_chance = { 
 		factor = 2
 		modifier = {
@@ -993,14 +993,14 @@ country_event = { #TRADITIONAL & RINI
 }
 
 country_event = { #Destroy Pomlen
-	id = lathvy_piety.17
-	title = lathvy_piety.17.t
-	desc = lathvy_piety.17.d
+	id = lathvy.17
+	title = lathvy.17.t
+	desc = lathvy.17.d
 	picture = COUNTRY_COLLAPSE_eventPicture
 	is_triggered_only = yes
 
 	option = {
-		name = lathvy_piety.17.a
+		name = lathvy.17.a
 		ai_chance = { factor = 1 }
 		add_piety = -1
 		custom_tooltip = POMLEN_DESTROYED
@@ -1014,7 +1014,7 @@ country_event = { #Destroy Pomlen
 					}
 				}
 				country_event = {
-					id = lathvy_piety.20
+					id = lathvy.20
 					days = 30
 				}
 			}
@@ -1025,7 +1025,7 @@ country_event = { #Destroy Pomlen
 				5285 = {
 					owner = {
 						country_event = {
-							id = lathvy_piety.18
+							id = lathvy.18
 							days = 1
 						}
 					}
@@ -1036,14 +1036,14 @@ country_event = { #Destroy Pomlen
 }
 
 country_event = { #Accept Walarans?
-	id = lathvy_piety.18
-	title = lathvy_piety.18.t
-	desc = lathvy_piety.18.d
+	id = lathvy.18
+	title = lathvy.18.t
+	desc = lathvy.18.d
 	picture = DEBATE_REPUBLICAN_eventPicture
 	is_triggered_only = yes
 
 	option = {
-		name = lathvy_piety.18.a
+		name = lathvy.18.a
 		ai_chance = {
 			factor = 1
 			modifier = {
@@ -1061,12 +1061,12 @@ country_event = { #Accept Walarans?
 			}
 		}
 		country_event = {
-			id = lathvy_piety.19
+			id = lathvy.19
 			days = 1
 		}
 	}
 	option = {
-		name = lathvy_piety.18.b
+		name = lathvy.18.b
 		ai_chance = {
 			factor = 1
 			modifier = {
@@ -1081,9 +1081,9 @@ country_event = { #Accept Walarans?
 }
 
 country_event = { #Accept Walarans.
-	id = lathvy_piety.19
-	title = lathvy_piety.19.t
-	desc = lathvy_piety.19.d
+	id = lathvy.19
+	title = lathvy.19.t
+	desc = lathvy.19.d
 	picture = POPE_PREACHING_eventPicture
 	is_triggered_only = yes
 
@@ -1094,20 +1094,20 @@ country_event = { #Accept Walarans.
 			school = walaran_school
 		}
 		add_prestige = 20
-		name = lathvy_piety.19.a
+		name = lathvy.19.a
 		ai_chance = { factor = 2 }
 	}
 }
 
 country_event = { #New School
-	id = lathvy_piety.20
-	title = lathvy_piety.20.t
-	desc = lathvy_piety.20.d
+	id = lathvy.20
+	title = lathvy.20.t
+	desc = lathvy.20.d
 	picture = POPE_PREACHING_eventPicture
 	is_triggered_only = yes
 
 	option = {
-		name = lathvy_piety.20.a
+		name = lathvy.20.a
 		ai_chance = { 
 			factor = 0.25
 			modifier = {
@@ -1142,7 +1142,7 @@ country_event = { #New School
 		}
 	}
 	option = {
-		name = lathvy_piety.20.b
+		name = lathvy.20.b
 		ai_chance = { 
 			factor = 1
 			modifier = {
@@ -1173,7 +1173,7 @@ country_event = { #New School
 		}
 	}
 	option = {
-		name = lathvy_piety.20.c
+		name = lathvy.20.c
 		ai_chance = { 
 			factor = 1
 			modifier = {

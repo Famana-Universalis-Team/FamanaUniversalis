@@ -1,9 +1,9 @@
-namespace = maxan
+namespace = moxon
 #Bohoran culture shift
 country_event = {
-	id = maxan.1
-	title = maxan.1.t
-	desc = maxan.1.d
+	id = moxon.1
+	title = moxon.1.t
+	desc = moxon.1.d
 	picture = REFORM_eventPicture
 	fire_only_once = yes
 
@@ -26,7 +26,7 @@ country_event = {
 	}
 	
 	option = {
-		name = maxan.1.a
+		name = moxon.1.a
 		ai_chance = { factor = 8 }
 		set_country_flag = sktWentEmastalian
 		custom_tooltip = BohoranCultureGroupChange
@@ -81,7 +81,7 @@ country_event = {
 	}
 	
 	option = {
-		name = maxan.1.b
+		name = moxon.1.b
 		ai_chance = { factor = 2 }
 		set_country_flag = sktWentMaxan
 		add_dip_power = -50
@@ -98,16 +98,16 @@ country_event = {
 }
 
 country_event = {
-	id = maxan.2
-	title = maxan.2.t
-	desc = maxan.2.d
+	id = moxon.2
+	title = moxon.2.t
+	desc = moxon.2.d
 	picture = REFORM_eventPicture
 	fire_only_once = yes
 	is_triggered_only = yes
 	major = yes
 	
 	option = {
-		name = maxan.2.a
+		name = moxon.2.a
 		ai_chance = {
 			factor = 1000
 			modifier = {
@@ -278,7 +278,7 @@ country_event = {
 	}
 
 	option = {
-		name = maxan.2.b
+		name = moxon.2.b
 		ai_chance = { factor = 1 }
 		trigger = {
 			AND = {
@@ -293,9 +293,9 @@ country_event = {
 }
 
 country_event = {
-	id = maxan.3
-	title = maxan.3.t
-	desc = maxan.3.d
+	id = moxon.3
+	title = moxon.3.t
+	desc = moxon.3.d
 	picture = REFORM_eventPicture
 	fire_only_once = yes
     hidden = yes
@@ -325,7 +325,7 @@ country_event = {
 	}
 	
 	option = {
-		name = maxan.3.a
+		name = moxon.3.a
 		ai_chance = { factor = 1 }
 		MOX = {
             set_country_flag = moxon_presence
@@ -336,9 +336,9 @@ country_event = {
 
 #Control event for 2
 country_event = {
-	id = maxan.4
-	title = maxan.4.t
-	desc = maxan.4.d
+	id = moxon.4
+	title = moxon.4.t
+	desc = moxon.4.d
 	picture = REFORM_eventPicture
 	fire_only_once = yes
 	hidden = yes
@@ -398,7 +398,7 @@ country_event = {
 	        	}
 			}
 			country_event = {
-	            id = maxan.2
+	            id = moxon.2
 	        }
 			set_country_flag = maxan_event_here
 	    }
@@ -414,13 +414,13 @@ country_event = {
 	            }
 	        }
 	        country_event = {
-	            id = maxan.2
+	            id = moxon.2
 	        }
 	    }
 	}
 
 	option = {
-		name = maxan.4.a
+		name = moxon.4.a
 		ai_chance = { factor = 1 }
 	}
 }

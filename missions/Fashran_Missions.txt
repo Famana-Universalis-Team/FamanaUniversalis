@@ -830,10 +830,21 @@ fas_3 = {
 			}
 		}
 		effect = {
+			if = {
+                limit = {
+                    NOT = {
+                        5683 = {
+                            province_has_center_of_trade_of_level = 3
+                        }
+                    }
+                }
+                5683 = {
+                    add_center_of_trade_level = 1
+                }
+            }
 			5683 = {
-				add_center_of_trade_level = 1
 				add_unit_construction = {
-    			type = light_ship
+    				type = light_ship
     				amount = 10
     				speed = 0.1
     				cost = 0

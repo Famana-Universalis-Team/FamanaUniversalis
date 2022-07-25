@@ -59,8 +59,19 @@ eclipse_1 = {
             num_of_light_ship = 10
         }
         effect = {
+            if = {
+                limit = {
+                    NOT = {
+                        5493 = {
+                            province_has_center_of_trade_of_level = 3
+                        }
+                    }
+                }
+                5493 = {
+                    add_center_of_trade_level = 1
+                }
+            }
             5493 = {
-                add_center_of_trade_level = 1
                 add_province_modifier = {
                     name = bohora_trade_hub
                     duration = -1
@@ -1018,7 +1029,7 @@ nafa_2 = {
 			}
         }
         effect = {
-            
+            custom_tooltip = permclaimMalpixRegionAndAColonistMaybeOtherStuffToo
         }
         provinces_to_highlight = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
@@ -1170,8 +1181,17 @@ nafa_3 = {
             }
         }
         effect = {
-            5583 = {
-                add_center_of_trade_level = 1
+            if = {
+                limit = {
+                    NOT = {
+                        5583 = {
+                            province_has_center_of_trade_of_level = 3
+                        }
+                    }
+                }
+                5583 = {
+                    add_center_of_trade_level = 1
+                }
             }
             country_event = {
                 id = nafa.3

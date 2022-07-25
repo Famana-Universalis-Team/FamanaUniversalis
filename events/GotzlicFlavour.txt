@@ -1,10 +1,10 @@
-namespace = gotz
+namespace = gotzlica
 
 #Leronya demands subjugation
 country_event = {
-    id = gotz.1
-    title = gotz.1.t
-    desc = gotz.1.desc
+    id = gotzlica.1
+    title = gotzlica.1.t
+    desc = gotzlica.1.desc
     picture = BATTLE_eventPicture
 	fire_only_once = yes
 
@@ -24,11 +24,11 @@ country_event = {
     }
 
     option = {
-        name = gotz.1.a
+        name = gotzlica.1.a
         ai_chance = { factor = 8 }
         EHZ = {
             country_event = { 
-                id = gotz.2
+                id = gotzlica.2
                 days = 7
             }
         }
@@ -38,7 +38,7 @@ country_event = {
         }
     }
     option = {
-        name = gotz.1.b
+        name = gotzlica.1.b
         ai_chance = { factor = 2 }
         every_country = {
             limit = {
@@ -66,9 +66,9 @@ country_event = {
 
 #EHZ response
 country_event = {
-    id = gotz.2
-    title = gotz.2.t
-    desc = gotz.2.desc
+    id = gotzlica.2
+    title = gotzlica.2.t
+    desc = gotzlica.2.desc
     picture = BATTLE_eventPicture
 	fire_only_once = yes
     is_triggered_only = yes
@@ -77,7 +77,7 @@ country_event = {
     }
 
     option = {
-        name = gotz.2.a
+        name = gotzlica.2.a
         ai_chance = {
             factor = 2
             modifier = {
@@ -97,13 +97,13 @@ country_event = {
         }
         LER = {
             country_event = { 
-                id = gotz.3
+                id = gotzlica.3
                 days = 7
             }
         }
     }
     option = {
-        name = gotz.2.b
+        name = gotzlica.2.b
         ai_chance = {
             factor = 8
             modifier = {
@@ -125,7 +125,7 @@ country_event = {
         }
         LER = {
             country_event = { 
-                id = gotz.4
+                id = gotzlica.4
                 days = 7
             }
         }
@@ -134,9 +134,9 @@ country_event = {
 
 #LER declares war or backs off
 country_event = {
-    id = gotz.3
-    title = gotz.3.t
-    desc = gotz.3.desc
+    id = gotzlica.3
+    title = gotzlica.3.t
+    desc = gotzlica.3.desc
     picture = BATTLE_eventPicture
 	fire_only_once = yes
     is_triggered_only = yes
@@ -145,13 +145,13 @@ country_event = {
     }
 
     option = {
-        name = gotz.3.a
+        name = gotzlica.3.a
         ai_chance = { factor = 1 }
         add_prestige = -10
         add_legitimacy = -10
     }
     option = {
-        name = gotz.3.b
+        name = gotzlica.3.b
         ai_chance = { factor = 9 }
         EHZ = {
             every_owned_province = {
@@ -209,9 +209,9 @@ country_event = {
 
 #LER EHZ accepted subjugate
 country_event = {
-    id = gotz.4
-    title = gotz.4.t
-    desc = gotz.4.desc
+    id = gotzlica.4
+    title = gotzlica.4.t
+    desc = gotzlica.4.desc
     picture = BATTLE_eventPicture
 	fire_only_once = yes
     is_triggered_only = yes
@@ -220,7 +220,7 @@ country_event = {
     }
 
     option = {
-        name = gotz.4.a
+        name = gotzlica.4.a
         ai_chance = { factor = 1 }
         LER = {
             vassalize = EHZ
@@ -250,9 +250,9 @@ country_event = {
 
 #Zubara demands hozy freedom
 country_event = {
-    id = gotz.5
-    title = gotz.5.t
-    desc = gotz.5.desc
+    id = gotzlica.5
+    title = gotzlica.5.t
+    desc = gotzlica.5.desc
     picture = BATTLE_eventPicture
 	fire_only_once = yes
 
@@ -278,18 +278,18 @@ country_event = {
     }
 
     option = {
-        name = gotz.5.a
+        name = gotzlica.5.a
         ai_chance = { factor = 1 }
         LER = {
             country_event = { 
-                id = gotz.7
+                id = gotzlica.7
                 days = 7
             }
         }
     }
 
     option = {
-        name = gotz.5.b
+        name = gotzlica.5.b
         ai_chance = { factor = 0 }
         add_prestige = -10
     }
@@ -298,9 +298,9 @@ country_event = {
 
 #optimizing event
 country_event = {
-    id = gotz.6
-    title = gotz.6.t
-    desc = gotz.6.desc
+    id = gotzlica.6
+    title = gotzlica.6.t
+    desc = gotzlica.6.desc
     picture = BATTLE_eventPicture
 	fire_only_once = yes
 
@@ -321,16 +321,16 @@ country_event = {
     }
 
     option = {
-        name = gotz.6.a
+        name = gotzlica.6.a
         ai_chance = { factor = 1 }
     }
 }
 
 #Leronya answers
 country_event = {
-    id = gotz.7
-    title = gotz.7.t
-    desc = gotz.7.desc
+    id = gotzlica.7
+    title = gotzlica.7.t
+    desc = gotzlica.7.desc
     picture = BATTLE_eventPicture
 	fire_only_once = yes
     is_triggered_only = yes
@@ -339,7 +339,7 @@ country_event = {
     }
 
     option = {
-        name = gotz.7.a
+        name = gotzlica.7.a
         ai_chance = {
             factor = 8
             modifier = {
@@ -359,13 +359,13 @@ country_event = {
         }
         ZUB = {
             country_event = { 
-                id = gotz.8
+                id = gotzlica.8
                 days = 7
             }
         }
     }
     option = {
-        name = gotz.7.b
+        name = gotzlica.7.b
         ai_chance = {
             factor = 2
             modifier = {
@@ -385,7 +385,7 @@ country_event = {
         }
         ZUB = {
             country_event = { 
-                id = gotz.9
+                id = gotzlica.9
                 days = 7
             }
         }
@@ -394,9 +394,9 @@ country_event = {
 
 #Leronya denies
 country_event = {
-    id = gotz.8
-    title = gotz.8.t
-    desc = gotz.8.desc
+    id = gotzlica.8
+    title = gotzlica.8.t
+    desc = gotzlica.8.desc
     picture = BATTLE_eventPicture
 	fire_only_once = yes
     is_triggered_only = yes
@@ -405,7 +405,7 @@ country_event = {
     }
 
     option = { #pussy
-        name = gotz.8.a
+        name = gotzlica.8.a
         ai_chance = { factor = 1 }
         add_legitimacy = -10
         if = {
@@ -460,7 +460,7 @@ country_event = {
     }
 
     option = { #war time
-        name = gotz.8.b
+        name = gotzlica.8.b
         ai_chance = { factor = 9 }
         6546 = {
             add_core = WHZ
@@ -540,9 +540,9 @@ country_event = {
 
 #Leronya accepts
 country_event = {
-    id = gotz.9
-    title = gotz.9.t
-    desc = gotz.9.desc
+    id = gotzlica.9
+    title = gotzlica.9.t
+    desc = gotzlica.9.desc
     picture = BATTLE_eventPicture
 	fire_only_once = yes
     is_triggered_only = yes
@@ -551,7 +551,7 @@ country_event = {
     }
 
     option = {
-        name = gotz.9.a
+        name = gotzlica.9.a
         ai_chance = { factor = 8 }
         add_prestige = 10
         add_legitimacy = 10
@@ -605,9 +605,9 @@ country_event = {
 
 #Rastan expansion
 country_event = {
-    id = gotz.10
-    title = gotz.10.t
-    desc = gotz.10.desc
+    id = gotzlica.10
+    title = gotzlica.10.t
+    desc = gotzlica.10.desc
     picture = BATTLE_eventPicture
 	fire_only_once = yes
 
@@ -621,7 +621,7 @@ country_event = {
     }
 
     option = {
-        name = gotz.10.a
+        name = gotzlica.10.a
         ai_chance = { factor = 1 }
         rosta_area = {
 			limit = { 
@@ -637,7 +637,7 @@ country_event = {
         hidden_effect = {
             RST = {
                 country_event = {
-                    id = gotz.11
+                    id = gotzlica.11
                 }
             }
         }
@@ -646,9 +646,9 @@ country_event = {
 
 #rosta dev event
 country_event = {
-    id = gotz.11
-    title = gotz.11.t
-    desc = gotz.11.desc
+    id = gotzlica.11
+    title = gotzlica.11.t
+    desc = gotzlica.11.desc
     picture = BATTLE_eventPicture
 	is_triggered_only = yes
     hidden = yes
@@ -693,22 +693,22 @@ country_event = {
         }
         RST = {
             country_event = {
-                id = gotz.12
+                id = gotzlica.12
             }
         }
     }
 
     option = {
-        name = gotz.11.a
+        name = gotzlica.11.a
         ai_chance = { factor = 1 }
     }
 }
 
 #rosta dev event 2
 country_event = {
-    id = gotz.12
-    title = gotz.12.t
-    desc = gotz.12.desc
+    id = gotzlica.12
+    title = gotzlica.12.t
+    desc = gotzlica.12.desc
     picture = BATTLE_eventPicture
 	is_triggered_only = yes
     hidden = yes
@@ -753,22 +753,22 @@ country_event = {
         }
         RST = {
             country_event = {
-                id = gotz.13
+                id = gotzlica.13
             }
         }
     }
 
     option = {
-        name = gotz.12.a
+        name = gotzlica.12.a
         ai_chance = { factor = 1 }
     }
 }
 
 #rosta dev event 3
 country_event = {
-    id = gotz.13
-    title = gotz.13.t
-    desc = gotz.13.desc
+    id = gotzlica.13
+    title = gotzlica.13.t
+    desc = gotzlica.13.desc
     picture = BATTLE_eventPicture
 	is_triggered_only = yes
     hidden = yes
@@ -813,22 +813,22 @@ country_event = {
         }
         RST = {
             country_event = {
-                id = gotz.14
+                id = gotzlica.14
             }
         }
     }
 
     option = {
-        name = gotz.13.a
+        name = gotzlica.13.a
         ai_chance = { factor = 1 }
     }
 }
 
 #rosta dev event 4
 country_event = {
-    id = gotz.14
-    title = gotz.14.t
-    desc = gotz.14.desc
+    id = gotzlica.14
+    title = gotzlica.14.t
+    desc = gotzlica.14.desc
     picture = BATTLE_eventPicture
 	is_triggered_only = yes
     hidden = yes
@@ -874,16 +874,16 @@ country_event = {
     }
 
     option = {
-        name = gotz.14.a
+        name = gotzlica.14.a
         ai_chance = { factor = 1 }
     }
 }
 
 #Rasta owns nizoora
 country_event = {
-    id = gotz.15
-    title = gotz.15.t
-    desc = gotz.15.desc
+    id = gotzlica.15
+    title = gotzlica.15.t
+    desc = gotzlica.15.desc
     picture = BATTLE_eventPicture
 	fire_only_once = yes
 
@@ -901,7 +901,7 @@ country_event = {
     }
 
     option = {
-        name = gotz.15.a
+        name = gotzlica.15.a
         ai_chance = { factor = 1 }
         6580 = {
 			limit = { 
@@ -932,9 +932,9 @@ country_event = {
 
 #Hozyan expansion
 country_event = {
-    id = gotz.16
-    title = gotz.16.t
-    desc = gotz.16.desc
+    id = gotzlica.16
+    title = gotzlica.16.t
+    desc = gotzlica.16.desc
     picture = BATTLE_eventPicture
 	fire_only_once = yes
 
@@ -955,7 +955,7 @@ country_event = {
     }
 
     option = {
-        name = gotz.16.a
+        name = gotzlica.16.a
         ai_chance = { factor = 1 }
         6538 = {
 			limit = { 
@@ -995,15 +995,15 @@ country_event = {
 
 #East big expansion
 country_event = {
-    id = gotz.17
-    title = gotz.17.t
-    desc = gotz.17.desc
+    id = gotzlica.17
+    title = gotzlica.17.t
+    desc = gotzlica.17.desc
     picture = BATTLE_eventPicture
 	fire_only_once = yes
     is_triggered_only = yes
 
     option = {
-        name = gotz.17.a
+        name = gotzlica.17.a
         ai_chance = { factor = 1 }
         6590 = {
 			limit = { 
@@ -1074,9 +1074,9 @@ country_event = {
 
 #Nenki migrates to the lakes
 country_event = {
-    id = gotz.18
-    title = gotz.18.t
-    desc = gotz.18.desc
+    id = gotzlica.18
+    title = gotzlica.18.t
+    desc = gotzlica.18.desc
     picture = BATTLE_eventPicture
 	fire_only_once = yes
 
@@ -1098,7 +1098,7 @@ country_event = {
     }
 
     option = {
-        name = gotz.18.a
+        name = gotzlica.18.a
         ai_chance = { factor = 1 }
         dethoni_area = {
             add_permanent_claim = NEN
@@ -1106,23 +1106,23 @@ country_event = {
         6584 = {
             owner = {
                 country_event = {
-                    id = gotz.19
+                    id = gotzlica.19
                     days = 7
                 }
             }
         }
     }
     option = { #skm is a pussy
-        name = gotz.18.b
+        name = gotzlica.18.b
         ai_chance = { factor = 0 }
     }
 }
 
 #response to nenki demands
 country_event = {
-    id = gotz.19
-    title = gotz.19.t
-    desc = gotz.19.desc
+    id = gotzlica.19
+    title = gotzlica.19.t
+    desc = gotzlica.19.desc
     picture = BATTLE_eventPicture
 	fire_only_once = yes
     is_triggered_only = yes
@@ -1132,7 +1132,7 @@ country_event = {
     }
 
     option = {
-        name = gotz.19.a #give nenki their place by the lake
+        name = gotzlica.19.a #give nenki their place by the lake
         ai_chance = { factor = 1 }
         every_owned_province = {
             limit = {
@@ -1222,7 +1222,7 @@ country_event = {
         }
     }
     option = {
-        name = gotz.19.b #refuse and go to war
+        name = gotzlica.19.b #refuse and go to war
         ai_chance = {
             factor = 1
             modifier = {
@@ -1244,9 +1244,9 @@ country_event = {
 
 #nenki wins war
 country_event = {
-    id = gotz.20
-    title = gotz.20.t
-    desc = gotz.20.desc
+    id = gotzlica.20
+    title = gotzlica.20.t
+    desc = gotzlica.20.desc
     picture = BATTLE_eventPicture
 	fire_only_once = yes
 
@@ -1280,7 +1280,7 @@ country_event = {
     }
 
     option = {
-        name = gotz.20.a #let us migrate
+        name = gotzlica.20.a #let us migrate
         ai_chance = { factor = 1 }
         every_province = {
             limit = {
@@ -1358,15 +1358,15 @@ country_event = {
 
 #West big expansion
 country_event = {
-    id = gotz.21
-    title = gotz.21.t
-    desc = gotz.21.desc
+    id = gotzlica.21
+    title = gotzlica.21.t
+    desc = gotzlica.21.desc
     picture = BATTLE_eventPicture
 	fire_only_once = yes
     is_triggered_only = yes
 
     option = {
-        name = gotz.21.a
+        name = gotzlica.21.a
         ai_chance = { factor = 1 }
         6551 = {
 			limit = { 

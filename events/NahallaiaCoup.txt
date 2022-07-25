@@ -1,9 +1,9 @@
-namespace = nhl
+namespace = nahallaia
 
 country_event = { #COUP
-    id = nhl.1
-    title = nhl.1.t
-    desc = nhl.1.d
+    id = nahallaia.1
+    title = nahallaia.1.t
+    desc = nahallaia.1.d
     picture = SIEGE_PRAGUE_CASTLE_eventPicture
     fire_only_once = yes
 	mean_time_to_happen = {
@@ -46,15 +46,15 @@ country_event = { #COUP
     }
 
     option = {
-		name = nhl.1.a
+		name = nahallaia.1.a
         ai_chance = { factor = 1 }
     }
 }
 
 country_event = { #ALT intervenes
-    id = nhl.2
-    title = nhl.2.t
-    desc = nhl.2.d
+    id = nahallaia.2
+    title = nahallaia.2.t
+    desc = nahallaia.2.d
     picture = REVOLT_HUNGARIAN_eventPicture
     fire_only_once = yes
     major = yes
@@ -67,7 +67,7 @@ country_event = { #ALT intervenes
 	}
 
     option = {
-		name = nhl.2.a
+		name = nahallaia.2.a
         ai_chance = { factor = 1 }
 		bortur_area = { add_claim = ALT }
         6194 = { add_claim = ALT }
@@ -119,16 +119,16 @@ country_event = { #ALT intervenes
     }
 
     option = {
-        name = nhl.2.b
+        name = nahallaia.2.b
         ai_chance = { factor = 0 }
         add_truce_with = NHL
     }
 }
 
 country_event = {
-    id = nhl.3
-    title = nhl.3.t
-    desc = nhl.3.d
+    id = nahallaia.3
+    title = nahallaia.3.t
+    desc = nahallaia.3.d
     picture = WAR_OF_THE_ROSES_eventPicture
     fire_only_once = yes
 	mean_time_to_happen = {
@@ -155,7 +155,7 @@ country_event = {
 	}
 
     option = {
-		name = nhl.3.a
+		name = nahallaia.3.a
         ai_chance = { factor = 1 }
         NHL = {
             every_owned_province = {
@@ -172,9 +172,9 @@ country_event = {
 }
 
 country_event = {
-    id = nhl.4
-    title = nhl.4.t
-    desc = nhl.4.d
+    id = nahallaia.4
+    title = nahallaia.4.t
+    desc = nahallaia.4.d
     picture = PLAGUE_eventPicture
     fire_only_once = yes
 	mean_time_to_happen = {
@@ -192,7 +192,7 @@ country_event = {
 	}
 
     option = {
-		name = nhl.4.a
+		name = nahallaia.4.a
         ai_chance = { factor = 1 }
         add_prestige = -25
         add_stability = -1
@@ -201,9 +201,9 @@ country_event = {
 }
 
 country_event = {
-    id = nhl.5
-    title = nhl.5.t
-    desc = nhl.5.d
+    id = nahallaia.5
+    title = nahallaia.5.t
+    desc = nahallaia.5.d
     picture = LAND_MILITARY_eventPicture
     fire_only_once = yes
 	mean_time_to_happen = {
@@ -219,7 +219,7 @@ country_event = {
 	}
 
     option = {
-		name = nhl.5.a
+		name = nahallaia.5.a
         ai_chance = { factor = 1 }
         every_owned_province = {
             limit = {

@@ -95,16 +95,16 @@ on_startup = {
 		tomba.1
 
 		#Geopyopia
-		geop.1
+		geopyopia.1
 
 		#Fashros
 		fashros.31
 
 		#Stroktur Noy dynasty setup
-		jasuaE.25
+		jasua.25
 
 		#Kinvirel mechanics setup
-		jasuaE.26
+		jasua.26
 	}
 	events = { #after the others so it spawns on top
 		gamesetup.1
@@ -2041,11 +2041,11 @@ on_thri_yearly_pulse_2 = {
 		
 		80 = 0
 		# Lathvy Piety Events
-		40 = lathvy_piety.1
-		40 = lathvy_piety.2
-		40 = lathvy_piety.3
-		40 = lathvy_piety.4
-		5 = lathvy_piety.5
+		40 = lathvy.1
+		40 = lathvy.2
+		40 = lathvy.3
+		40 = lathvy.4
+		5 = lathvy.5
 		
 		
 	}
@@ -2865,13 +2865,13 @@ on_five_year_pulse_2 = {
 
 on_five_year_pulse_3 = { #Flavour Events
 	random_events = {
-		100 = XalianFlavour.1 #Xalian Flavour
-		100 = XalianFlavour.2
-		100 = XalianFlavour.3
-		100 = XalianFlavour.4
-		100 = XalianFlavour.5
-		100 = XalianFlavour.7
-		100 = XalianFlavour.8
+		100 = xalflavor.1 #Xalian Flavour
+		100 = xalflavor.2
+		100 = xalflavor.3
+		100 = xalflavor.4
+		100 = xalflavor.5
+		100 = xalflavor.7
+		100 = xalflavor.8
 
 		100 = tonmo.5 #Tonmo Flavour
 		100 = tonmo.6

@@ -1,9 +1,9 @@
-namespace = pextolaunch
+namespace = pex_launch
 
 country_event = {
-    id = pextolaunch.1
-    title = pextolaunch.1.t
-    desc = pextolaunch.1.d
+    id = pex_launch.1
+    title = pex_launch.1.t
+    desc = pex_launch.1.d
     picture = LIBERUM_VETO_eventPicture
     hidden = yes
 	trigger = {
@@ -92,65 +92,65 @@ country_event = {
         change_variable = { which = pex_collapse_progress value = 10 }
         random_list  = {
             12 = {
-                trigger = { NOT = { has_country_flag = had_pextodis_4 } }
+                trigger = { NOT = { has_country_flag = had_pex_disaster_4 } }
                 country_event = {
-                    id = pextodis.4
+                    id = pex_disaster.4
                     days = 30
                     random = 30
                 }
             }
             12 = {
-                trigger = { NOT = { has_country_flag = had_pextodis_5 } }
+                trigger = { NOT = { has_country_flag = had_pex_disaster_5 } }
                 country_event = {
-                    id = pextodis.5
+                    id = pex_disaster.5
                     days = 30
                     random = 30
                 }
             }
             12 = {
-                trigger = { NOT = { has_country_flag = had_pextodis_6 } }
+                trigger = { NOT = { has_country_flag = had_pex_disaster_6 } }
                 country_event = {
-                    id = pextodis.6
+                    id = pex_disaster.6
                     days = 30
                     random = 30
                 }
             }
             12 = {
-                trigger = { NOT = { has_country_flag = had_pextodis_7 } }
+                trigger = { NOT = { has_country_flag = had_pex_disaster_7 } }
                 country_event = {
-                    id = pextodis.7
+                    id = pex_disaster.7
                     days = 30
                     random = 30
                 }
             }
             12 = {
-                trigger = { NOT = { has_country_flag = had_pextodis_8 } }
+                trigger = { NOT = { has_country_flag = had_pex_disaster_8 } }
                 country_event = {
-                    id = pextodis.8
+                    id = pex_disaster.8
                     days = 30
                     random = 30
                 }
             }
             12 = {
-                trigger = { NOT = { has_country_flag = had_pextodis_9 } }
+                trigger = { NOT = { has_country_flag = had_pex_disaster_9 } }
                 country_event = {
-                    id = pextodis.9
+                    id = pex_disaster.9
                     days = 30
                     random = 30
                 }
             }
             12 = {
-                trigger = { NOT = { has_country_flag = had_pextodis_10 } }
+                trigger = { NOT = { has_country_flag = had_pex_disaster_10 } }
                 country_event = {
-                    id = pextodis.10
+                    id = pex_disaster.10
                     days = 30
                     random = 30
                 }
             }
             12 = {
-                trigger = { NOT = { has_country_flag = had_pextodis_11 } }
+                trigger = { NOT = { has_country_flag = had_pex_disaster_11 } }
                 country_event = {
-                    id = pextodis.11
+                    id = pex_disaster.11
                     days = 30
                     random = 30
                 }
@@ -159,7 +159,7 @@ country_event = {
     }
 
     option = {
-		name = pextolaunch.1.a 
+		name = pex_launch.1.a 
         ai_chance = { factor = 1 }
     }
 }

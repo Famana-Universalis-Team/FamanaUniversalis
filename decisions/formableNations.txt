@@ -2145,7 +2145,7 @@ country_decisions = {
 			add_prestige = 25
 			country_event = {
 				days = 1
-				id = pexto.34
+				id = pextoglazia.34
 			}
 		}
 		ai_will_do = {
@@ -3608,7 +3608,7 @@ country_decisions = {
 			restore_country_name = yes
 			change_tag = KLG
 			country_event = {
-				id = jasuaE.10
+				id = jasua.10
 				days = 1
 			}
 			5488 = {

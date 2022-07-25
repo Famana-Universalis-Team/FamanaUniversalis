@@ -1,9 +1,9 @@
-namespace = XalianFlavour
+namespace = xalflavor
 
 country_event = { #Celebrations of Shir
-	id = XalianFlavour.1
-	title = XalianFlavour.1.t
-	desc = XalianFlavour.1.d
+	id = xalflavor.1
+	title = xalflavor.1.t
+	desc = xalflavor.1.d
 	picture = THEATRE_eventPicture
 	is_triggered_only = yes
 	
@@ -16,7 +16,7 @@ country_event = { #Celebrations of Shir
 	}
 
 	option = {
-		name = XalianFlavour.1.a
+		name = xalflavor.1.a
 		ai_chance = { factor = 1 }
 		add_prestige = 10
 		if = {
@@ -39,9 +39,9 @@ country_event = { #Celebrations of Shir
 }
 
 country_event = { #Celebrations of Delk
-	id = XalianFlavour.2
-	title = XalianFlavour.2.t
-	desc = XalianFlavour.2.d
+	id = xalflavor.2
+	title = xalflavor.2.t
+	desc = xalflavor.2.d
 	picture = THEATRE_eventPicture
 	is_triggered_only = yes
 
@@ -54,7 +54,7 @@ country_event = { #Celebrations of Delk
 	}
 
 	option = {
-		name = XalianFlavour.1.a
+		name = xalflavor.1.a
 		ai_chance = { factor = 1 }
 		add_prestige = 10
 		if = {
@@ -77,9 +77,9 @@ country_event = { #Celebrations of Delk
 }
 
 country_event = { #Celebrations of Mor
-	id = XalianFlavour.3
-	title = XalianFlavour.3.t
-	desc = XalianFlavour.3.d
+	id = xalflavor.3
+	title = xalflavor.3.t
+	desc = xalflavor.3.d
 	picture = THEATRE_eventPicture
 	is_triggered_only = yes
 
@@ -92,7 +92,7 @@ country_event = { #Celebrations of Mor
 	}
 
 	option = {
-		name = XalianFlavour.1.a
+		name = xalflavor.1.a
 		ai_chance = { factor = 1 }
 		add_prestige = 10
 		if = {
@@ -115,9 +115,9 @@ country_event = { #Celebrations of Mor
 }
 
 country_event = { #Celebrations of Vin
-	id = XalianFlavour.4
-	title = XalianFlavour.4.t
-	desc = XalianFlavour.4.d
+	id = xalflavor.4
+	title = xalflavor.4.t
+	desc = xalflavor.4.d
 	picture = THEATRE_eventPicture
 	is_triggered_only = yes
 
@@ -130,7 +130,7 @@ country_event = { #Celebrations of Vin
 	}
 	
 	option = {
-		name = XalianFlavour.1.a
+		name = xalflavor.1.a
 		ai_chance = { factor = 1 }
 		add_prestige = 10
 		if = {
@@ -153,9 +153,9 @@ country_event = { #Celebrations of Vin
 }
 
 country_event = { #Celebrations of Our God
-	id = XalianFlavour.5
-	title = XalianFlavour.5.t
-	desc = XalianFlavour.5.d
+	id = xalflavor.5
+	title = xalflavor.5.t
+	desc = xalflavor.5.d
 	picture = THEATRE_eventPicture
 	is_triggered_only = yes
 	trigger = {
@@ -163,31 +163,31 @@ country_event = { #Celebrations of Our God
 	}
 
 	option = {
-		name = XalianFlavour.1.a
+		name = xalflavor.1.a
 		ai_chance = { factor = 1 }
 		add_stability = 1
 	}
 }
 
 country_event = { #Morian Polytheism
-	id = XalianFlavour.6 #why would you honestly ever do this tbh
-	title = XalianFlavour.6.t
-	desc = XalianFlavour.6.d
+	id = xalflavor.6 #why would you honestly ever do this tbh
+	title = xalflavor.6.t
+	desc = xalflavor.6.d
 	is_triggered_only = yes
 	major = yes
 	picture = EP_POLYNESIAN_MARAE_eventPicture
 
 	option = {
-		name = XalianFlavour.6.a
+		name = xalflavor.6.a
 		ai_chance = { factor = 1 }
 		add_prestige = -15
 	}
 }
 
 country_event = { #Good foreign diplomacy
-	id = XalianFlavour.7
-	title = XalianFlavour.7.t
-	desc = XalianFlavour.7.d
+	id = xalflavor.7
+	title = xalflavor.7.t
+	desc = xalflavor.7.d
 	picture = DIPLOMACY_SIGNING_eventPicture
 	is_triggered_only = yes
 	trigger = {
@@ -195,7 +195,7 @@ country_event = { #Good foreign diplomacy
 	}
 
 	option = {
-		name = XalianFlavour.7.a
+		name = xalflavor.7.a
 		ai_chance = { factor = 1 }
 		every_country = {
 			limit = {
@@ -218,9 +218,9 @@ country_event = { #Good foreign diplomacy
 }
 
 country_event = { #Shitty foreign diplomacy
-	id = XalianFlavour.8
-	title = XalianFlavour.8.t
-	desc = XalianFlavour.8.d
+	id = xalflavor.8
+	title = xalflavor.8.t
+	desc = xalflavor.8.d
 	picture = PROTESTANT_CATHOLIC_DEBATE_eventPicture
 	is_triggered_only = yes
 	trigger = {
@@ -228,7 +228,7 @@ country_event = { #Shitty foreign diplomacy
 	}
 
 	option = {
-		name = XalianFlavour.8.a
+		name = xalflavor.8.a
 		ai_chance = { factor = 1 }
 		every_country = {
 			limit = {
@@ -251,9 +251,9 @@ country_event = { #Shitty foreign diplomacy
 }
 
 country_event = { #Xalian Periodic Table
-	id = XalianFlavour.9
-	title = XalianFlavour.9.t
-	desc = XalianFlavour.9.d
+	id = xalflavor.9
+	title = xalflavor.9.t
+	desc = xalflavor.9.d
 	picture = REFORM_eventPicture
 	major = yes
 	fire_only_once = yes
@@ -269,7 +269,7 @@ country_event = { #Xalian Periodic Table
 	}
 
 	option = {
-		name = XalianFlavour.9.a
+		name = xalflavor.9.a
 		ai_chance = { factor = 1 }
 		add_prestige = 30
 		if = {
@@ -294,9 +294,9 @@ country_event = { #Xalian Periodic Table
 }
 
 country_event = { #Discovery of Minkoo
-	id = XalianFlavour.10
-	title = XalianFlavour.10.t
-	desc = XalianFlavour.10.d
+	id = xalflavor.10
+	title = xalflavor.10.t
+	desc = xalflavor.10.d
 	picture = AULIC_COUNCIL_eventPicture
 	major = yes
 	fire_only_once = yes
@@ -324,7 +324,7 @@ country_event = { #Discovery of Minkoo
 	}
 
 	option = {
-		name = XalianFlavour.10.a
+		name = xalflavor.10.a
 		ai_chance = { factor = 1 }
 		add_prestige = 20
 		change_innovativeness = 5
@@ -332,9 +332,9 @@ country_event = { #Discovery of Minkoo
 }
 
 country_event = { #Fall of Shiraska Xon
-	id = XalianFlavour.11
-	title = XalianFlavour.1.t
-	desc = XalianFlavour.11.d
+	id = xalflavor.11
+	title = xalflavor.1.t
+	desc = xalflavor.11.d
 	picture = GENERALS_DISCUSSING_eventPicture
 	fire_only_once = yes
 
@@ -351,7 +351,7 @@ country_event = { #Fall of Shiraska Xon
 	}
 
 	option = {
-		name = XalianFlavour.11.a
+		name = xalflavor.11.a
 		ai_chance = {
 			factor = 1
 			modifier = {
@@ -362,7 +362,7 @@ country_event = { #Fall of Shiraska Xon
 		add_prestige = 10
 	}
 	option = {
-		name = XalianFlavour.11.b
+		name = xalflavor.11.b
 		ai_chance = {
 			factor = 1
 			modifier = {
