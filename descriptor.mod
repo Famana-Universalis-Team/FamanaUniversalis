@@ -18,10 +18,12 @@ tags={
 }
 name="Famana Universalis"
 replace_path="common/country_tags"
-replace_path="history/provinces"
 replace_path="common/countries"
+replace_path="history/provinces"
 replace_path="history/countries"
 replace_path="history/diplomacy"
+replace_path="history/wars"
+replace_path="history/advisors"
 replace_path="gfx/flags"
 replace_path="gfx/loadingscreens"
 replace_path="common/bookmarks"
