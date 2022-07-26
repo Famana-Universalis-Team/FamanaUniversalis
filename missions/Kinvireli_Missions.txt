@@ -243,6 +243,16 @@ kin_3 = {
             unnamed_area_12 = {
                 add_permanent_claim = ROOT
             }
+            add_country_modifier = {
+                name = kin_expelled_oppians
+                duration = 7300
+            }
+            shol_area = {
+                add_province_modifier = {
+                    name = kin_rejasuofication
+                    duration = -1
+                }
+            }
         }
     }
 
@@ -270,6 +280,10 @@ kin_3 = {
         effect = {
             eastern_desert_region = {
                 add_permanent_claim = ROOT
+            }
+            add_country_modifier = {
+                name = kin_taking_back_whats_ours
+                duration = -1
             }
         }
     }
@@ -361,10 +375,58 @@ kin_3 = {
 			}
         }
         effect = {
-            add_casus_belli	= {
-                target = BLK
-                type = cb_vassalize_mission
-                months = 120
+            if = {
+                limit = {
+                    exists = BLK
+                }
+                add_casus_belli	= {
+                    target = BLK
+                    type = cb_vassalize_mission
+                    months = 120
+                }
+            }
+            else = {
+                unnamed_area_37 = { add_permanent_claim = ROOT }
+			    yenis_area = { add_permanent_claim = ROOT }
+			    unnamed_area_36 = { add_permanent_claim = ROOT }
+            }
+            bamal_gulf_region = {
+                add_province_modifier = {
+                    name = kin_integrated_bamalis
+                    duration = -1
+                }
+            }
+            hidden_effect = {
+                unnamed_area_37 = {
+                    if = {
+                        limit = {
+                            NOT = {
+                                owned_by = ROOT
+                            }
+                        }
+                        remove_province_modifier = kin_integrated_bamalis
+                    }
+                }
+			    yenis_area = {
+                    if = {
+                        limit = {
+                            NOT = {
+                                owned_by = ROOT
+                            }
+                        }
+                        remove_province_modifier = kin_integrated_bamalis
+                    }
+                }
+			    unnamed_area_36 = {
+                    if = {
+                        limit = {
+                            NOT = {
+                                owned_by = ROOT
+                            }
+                        }
+                        remove_province_modifier = kin_integrated_bamalis
+                    }
+                }
             }
         }
     }
@@ -460,6 +522,14 @@ kin_4 = {
             jasua_region = {
                 add_permanent_claim = ROOT
             }
+            5644 = {
+                add_trade_modifier = {
+                    who = ROOT
+                    duration = 9125
+                    power = 50
+                    key = kin_merchant_jmk
+                }
+            }
         }
     }
     
@@ -513,6 +583,10 @@ kin_4 = {
             }
             unnamed_area_29 = {
                 add_permanent_claim = ROOT
+            }
+            add_power_projection = {
+                type = mission_rewards_power_projection
+                amount = 25
             }
         }
     }
@@ -611,6 +685,7 @@ kin_5 = {
     kin_pearl_of_jasua = {
         icon = reform_the_monte
         required_missions = { }
+        position = 4
         provinces_to_highlight = {
             province_id = 5196
         }

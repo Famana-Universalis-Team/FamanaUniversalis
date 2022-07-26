@@ -64,6 +64,15 @@ kap_4 = { #kinvirel - jasua region path
 			5496 = {
 				add_permanent_claim = ROOT
 			}
+			if = {
+				limit = {
+					exists = KIN
+				}
+				add_historical_rival = KIN
+			}
+			unnamed_area_31 = {
+				add_devastation = -100
+			}
 		}
     }
 
@@ -171,48 +180,6 @@ kap_5 = { #kinvirel - jasua region path
 		tag = KAP
 	}
 	has_country_shield = yes
-
-	kap_nafa = {
-		position = 1
-		icon = subiaco_press
-		required_missions = {}
-		provinces_to_highlight = {
-			region = stroktur_region
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
-		}
-		
-		trigger = {
-			OR = {
-				exists = NAF
-				AND = {
-					stroktur_region = {
-						type = all
-						country_or_non_sovereign_subject_holds = ROOT
-					}
-					current_age	= age_of_reformation
-				}
-			}
-		}
-		effect = {
-			country_event = {
-				id = jasua.12
-				days = 30
-			}
-			if = {
-				limit = {
-					NOT = {
-						stroktur_region = {
-							type = all
-							country_or_non_sovereign_subject_holds = ROOT
-						}
-					}
-				}
-				stroktur_region  = {
-					add_permanent_claim = ROOT
-				}
-			}
-		}
-	}
 	
 	kap_hartimatul = {
 		position = 4
@@ -275,6 +242,8 @@ kap_2 = {
 			unnamed_area_33 = {
 				add_permanent_claim = ROOT
 			}
+			custom_tooltip = getIakperkoMercs
+			set_country_flag = iakperko_merc_flag
 		}
     }
 	kap_yatian_conquest = {
@@ -313,6 +282,7 @@ kap_2 = {
 			pasba_area = {
 				add_permanent_claim = ROOT
 			}
+			add_yearly_manpower = 2.5
 		}
 	}
 
@@ -351,6 +321,7 @@ kap_2 = {
 			north_nakoa_area = {
 				add_permanent_claim = ROOT
 			}
+			add_adm_power = 100
 		}
 	}
 
@@ -413,6 +384,48 @@ kap_1 = {
 		tag = KAP
 	}
 	has_country_shield = yes
+
+	kap_nafa = {
+		position = 1
+		icon = subiaco_press
+		required_missions = {}
+		provinces_to_highlight = {
+			region = stroktur_region
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			OR = {
+				exists = NAF
+				AND = {
+					stroktur_region = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					current_age	= age_of_reformation
+				}
+			}
+		}
+		effect = {
+			country_event = {
+				id = jasua.12
+				days = 30
+			}
+			if = {
+				limit = {
+					NOT = {
+						stroktur_region = {
+							type = all
+							country_or_non_sovereign_subject_holds = ROOT
+						}
+					}
+				}
+				stroktur_region  = {
+					add_permanent_claim = ROOT
+				}
+			}
+		}
+	}
 
 	kap_seize_pasba = {
 		position = 3
@@ -507,6 +520,14 @@ kap_3 = {
 			unnamed_area_39 = {
 				add_permanent_claim = ROOT
 			}
+			define_advisor = {
+				type = commandant
+				skill = 3
+				discount = yes
+				culture = Yabonian
+				religion = lathvy
+				location = 5663
+			}
 		}
 	}
 	
@@ -596,6 +617,7 @@ kap_3 = {
 			geter_area = {
 				add_permanent_claim = ROOT
 			}
+			change_mil = 1
 		}
     }
 }

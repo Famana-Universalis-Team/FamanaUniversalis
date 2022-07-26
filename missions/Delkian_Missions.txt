@@ -172,6 +172,10 @@ delkia_2 = {
 				}
 				add_permanent_claim = ROOT
 			}
+			add_ruler_modifier = {
+				name = del_conqueror_of_oppians
+				duration = -1
+			}
 		}
 	}
 
@@ -447,6 +451,7 @@ delkia_4 = {
 				}
 				add_permanent_claim = ROOT
 			}
+			add_army_tradition = 10
 		}
     }
 	

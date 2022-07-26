@@ -1694,7 +1694,7 @@ country_event = {
 					}
 				}
 				define_exiled_ruler = {
-					dynasty = "historic_dynasty"
+					dynasty = historic_dynasty
 					exiled_as = "states_general_abolished_@ROOT"
 				}
 			}

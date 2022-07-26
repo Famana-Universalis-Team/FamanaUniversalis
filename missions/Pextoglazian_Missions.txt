@@ -69,9 +69,6 @@ pex_1 = {
         }
         effect = {
             add_piety = 0.25
-            arlentan_area = { add_permanent_claim = ROOT }
-            gromash_area = { add_permanent_claim = ROOT }
-            arlen_area = { add_permanent_claim = ROOT }
             hidden_effect = {
                 if = {
                     limit = {
@@ -143,6 +140,9 @@ pex_1 = {
                     }
                 }
             }
+            arlentan_area = { add_permanent_claim = ROOT }
+            gromash_area = { add_permanent_claim = ROOT }
+            arlen_area = { add_permanent_claim = ROOT }
         }
         provinces_to_highlight = {
             OR = {
@@ -370,12 +370,12 @@ pex_5 = {
 			}
         }
         effect = {
-            emastalia_region = { add_permanent_claim = ROOT }
-            west_emastalia_region = { add_permanent_claim = ROOT }
             add_country_modifier = {
                 name = pex_emastalia_invasion
                 duration = 3650
             }
+            emastalia_region = { add_permanent_claim = ROOT }
+            west_emastalia_region = { add_permanent_claim = ROOT }
         }
         provinces_to_highlight = {
             OR = {
@@ -404,9 +404,6 @@ pex_5 = {
 			}
         }
         effect = {
-            stroktur_region = { add_permanent_claim = ROOT }
-            pexamol_area = { add_permanent_claim = ROOT }
-            south_pextum_area = { add_permanent_claim = ROOT }
             hidden_effect = {
                 every_owned_province = {
                     limit = {
@@ -422,6 +419,9 @@ pex_5 = {
                 }
             }
             custom_tooltip = pex_emast_tt
+            stroktur_region = { add_permanent_claim = ROOT }
+            pexamol_area = { add_permanent_claim = ROOT }
+            south_pextum_area = { add_permanent_claim = ROOT }
         }
         provinces_to_highlight = {
             OR = {
@@ -450,16 +450,16 @@ pex_5 = {
             country_event = {
                 id = pextoglazia.16
             }
-            elwait_area = { add_permanent_claim = ROOT }
-            vox_larm_area = { add_permanent_claim = ROOT }
-            pawan_area = { add_permanent_claim = ROOT }
-            glazia_area = { add_permanent_claim = ROOT }
             add_country_modifier = {
                 name = pex_cultural_revival
                 duration = -1
             }
             add_accepted_culture = Pawani_C
             add_accepted_culture = Glasian
+            elwait_area = { add_permanent_claim = ROOT }
+            vox_larm_area = { add_permanent_claim = ROOT }
+            pawan_area = { add_permanent_claim = ROOT }
+            glazia_area = { add_permanent_claim = ROOT }
         }
         provinces_to_highlight = {
             OR = {
@@ -706,6 +706,10 @@ pex_6 = { #Post-disaster missions
                 }
                 vassalize = PLY
             }
+            add_country_modifier = {
+                duration = -1
+                name = pex_unity_modifier
+            }
             if = {
                 limit = {
                     NOT = {
@@ -718,10 +722,6 @@ pex_6 = { #Post-disaster missions
                 pextoglazia_region = { add_permanent_claim = ROOT }
                 walara_region = { add_permanent_claim = ROOT }
                 lomea_region = { add_permanent_claim = ROOT }
-            }
-            add_country_modifier = {
-                duration = -1
-                name = pex_unity_modifier
             }
             mrug_area = { add_permanent_claim = ROOT }
             usul_area = { add_permanent_claim = ROOT }

@@ -1217,3 +1217,32 @@ lukscha_ai_unif = {
     land_forcelimit_modifier = 2.5
     global_tax_modifier = 10.0
 }
+
+af_coalition_modifier = {
+    land_morale = 0.10
+    diplomatic_reputation = 2
+}
+
+af_defender_of_jasua_modifier = {
+    ae_impact = -0.10
+    defensiveness = 0.20
+}
+
+fashros_trolled_severely = {
+    shock_damage_received = 0.33
+    war_exhaustion = 0.10
+}
+
+del_conqueror_of_oppians = {
+    core_creation = -0.10
+}
+
+kin_expelled_oppians = {
+    unjustified_demands = -0.25
+    warscore_cost_vs_other_religion	= -0.10
+    naval_morale = 0.10
+}
+
+kin_taking_back_whats_ours = {
+    culture_conversion_cost = -0.15
+}

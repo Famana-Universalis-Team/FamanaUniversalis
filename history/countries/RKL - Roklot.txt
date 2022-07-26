@@ -15,7 +15,7 @@ capital = 5174
 		adm = 3
 		dip = 5
 		mil = 5
-		leader = {	name = "Gamefan Enstaf"            	type = general	fire = 5	shock = 6	manuever = 5	siege = 4}
+		leader = {	name = "Gamefan Enstaf"            	type = general	fire = 2	shock = 6	manuever = 5	siege = 1}
 	}
 	add_ruler_personality = inspiring_leader_personality
 }

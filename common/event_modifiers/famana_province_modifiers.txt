@@ -55,3 +55,14 @@ orc_pextans_angry = {
     local_years_of_nationalism = 5
     local_manpower_modifier = -0.25
 }
+
+kin_integrated_bamalis = {
+    local_autonomy = -0.05
+    local_governing_cost = -0.50
+    local_manpower_modifier = 0.10
+}
+
+kin_rejasuofication = {
+    local_culture_conversion_cost = -0.20
+    local_missionary_strength = 0.02
+}

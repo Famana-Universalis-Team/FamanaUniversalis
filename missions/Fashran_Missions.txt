@@ -518,6 +518,9 @@ fas_2 = {
 			}
 		}
 		effect = {
+			yabonia_area = { add_permanent_claim = ROOT }
+			unnamed_area_47 = { add_permanent_claim = ROOT }
+			unnamed_area_34 = { add_permanent_claim = ROOT }
 			5644 = {
 				add_devastation	= 100
 				add_base_tax = -2
@@ -525,9 +528,6 @@ fas_2 = {
 				add_base_manpower = -2
 			}
 			add_years_of_income	= 0.5
-			yabonia_area = { add_permanent_claim = ROOT }
-			unnamed_area_47 = { add_permanent_claim = ROOT }
-			unnamed_area_34 = { add_permanent_claim = ROOT }
 		}
 		provinces_to_highlight = {
 			province_id = 5644
