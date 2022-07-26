@@ -1640,7 +1640,7 @@ jafari_scholar_modifier = {
 	production_efficiency = 0.10
 }
 
-jafari_scholar_modifier = {
+zaidi_scholar_modifier = {
 	religion_sub_modifier = yes # Will make icon placed next to religion modifier
 	religion = yes
 	is_scholar_modifier = yes # Tells the AI and will only show the alert if country has none

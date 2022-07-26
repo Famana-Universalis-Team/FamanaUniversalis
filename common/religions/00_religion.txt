@@ -495,7 +495,7 @@ pagan = {
 	flag_emblem_index_range = { 83 96 }
 
 	animism = {
-		color = { 127 0 0 }
+		color = { 10 63 46 }
 		icon = 21
 		country = {
 			tolerance_own = 1
@@ -1354,6 +1354,10 @@ Agmagozi = {
 			legitimacy = 0.5
 		}
 
+		allowed_conversion = {
+			urbaxan
+		}
+
 		heretic = {
 			BARQOKYROT
 		}
@@ -1374,6 +1378,10 @@ Agmagozi = {
 
 		province = {
 			local_missionary_strength = 0.01
+		}
+
+		allowed_conversion = {
+			urbaxan
 		}
 
 		heretic = {
@@ -1398,6 +1406,10 @@ Agmagozi = {
 			local_missionary_strength = 0.01
 		}
 
+		allowed_conversion = {
+			urbaxan
+		}
+
 		heretic = {
 			OLD_AGMAGOZI
 		}
@@ -1414,6 +1426,13 @@ Agmagozi = {
 		country_as_secondary = {
 			ae_impact = -0.1
 			years_of_nationalism = -5
+		}
+
+		allowed_conversion = {
+			qanoyan
+			qamon
+			urbaxan
+			dorroman
 		}
 
 		heretic = {
@@ -1461,6 +1480,7 @@ Agmagozi = {
 
 	crusade_name = HOLY_WAR
 	
+	#date = 250.1.1
 }
 
 
