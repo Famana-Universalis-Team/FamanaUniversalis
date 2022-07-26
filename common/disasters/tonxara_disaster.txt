@@ -58,22 +58,27 @@ tonxara_disaster = {
     can_stop = { has_any_disaster = yes }
 
     can_end = {
-        stability = 2
-        NOT = {
-            is_at_war = yes
-        }
-		NOT = { corruption = 5 }
-		NOT = { num_of_rebel_armies = 1 }
-		NOT = { num_of_rebel_controlled_provinces = 1 }
-        num_of_cities = 20
-        legitimacy = 80
-        religious_unity = 0.60
-        custom_trigger_tooltip = {
-            tooltip = TONXARA_DIS_5Y_TOOLTIP
-            had_country_flag = {
-                flag = tonxaraDisasterHappened
-                days = 3650
+        OR = {
+            AND = {
+                stability = 2
+                NOT = {
+                    is_at_war = yes
+                }
+		        NOT = { corruption = 5 }
+		        NOT = { num_of_rebel_armies = 1 }
+		        NOT = { num_of_rebel_controlled_provinces = 1 }
+                num_of_cities = 20
+                legitimacy = 80
+                religious_unity = 0.60
+                custom_trigger_tooltip = {
+                    tooltip = TONXARA_DIS_5Y_TOOLTIP
+                    had_country_flag = {
+                        flag = tonxaraDisasterHappened
+                        days = 3650
+                    }
+                }
             }
+            current_age = age_of_absolutism
         }
     }
 
