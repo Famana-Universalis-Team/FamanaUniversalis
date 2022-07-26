@@ -94,7 +94,6 @@ country_event = {
 			}
 		}
 	}
-
 }
 
 country_event = {
@@ -422,5 +421,89 @@ country_event = {
 	option = {
 		name = moxon.4.a
 		ai_chance = { factor = 1 }
+	}
+}
+
+#Kachik->Emastalian
+country_event = {
+	id = moxon.5
+	title = moxon.5.t
+	desc = moxon.5.d
+	picture = REFORM_eventPicture
+	fire_only_once = yes
+	major = yes
+
+	trigger = {
+		owns = 5492
+		NOT = {
+			OR = {
+				exists = NAF
+				exists = KLG
+			}
+		}
+		NOT = {
+			OR = {
+				current_age	= age_of_discovery
+				current_age	= age_of_reformation
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 360
+	}
+	
+	option = {
+		name = moxon.5.a
+		ai_chance = { factor = 1 }
+		custom_tooltip = kachikBecomeEmastalian
+		hidden_effect = {
+			every_country = {
+				limit = {
+					primary_culture = Kachik
+				}
+				change_primary_culture = Bohoran_E
+			}
+			every_country = {
+				limit = {
+					accepted_culture = Kachik
+				}
+				add_accepted_culture = Bohoran_E
+				remove_accepted_culture	= Kachik
+			}
+			every_province = {
+				limit = { culture = Kachik }
+				change_culture = Bohoran_E
+			}
+			if = {
+				limit = { primary_culture = Kachik }
+				change_primary_culture = Bohoran_E
+			}
+			if = {
+				limit = {
+					accepted_culture = Kachik
+				}
+				add_accepted_culture = Bohoran_E
+				remove_accepted_culture	= Kachik
+			}
+			if = {
+				limit = {
+					ruler_culture = Kachik
+				}
+				set_ruler_culture = Bohoran_E
+			}
+			if = {
+				limit = {
+					consort_culture = Kachik
+				}
+				set_consort_culture = Bohoran_E
+			}
+			if = {
+				limit = {
+					heir_culture = Kachik
+				}
+				set_heir_culture = Bohoran_E
+			}
+		}
 	}
 }

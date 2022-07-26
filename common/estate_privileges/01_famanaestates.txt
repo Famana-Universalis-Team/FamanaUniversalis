@@ -16,6 +16,9 @@ estate_church_kachik_religious_rights = {
 		any_owned_province = {
 			religion = animism
 		}
+		any_owned_province = {
+			culture = Kachik
+		}
 	}
     can_select = {
 		any_owned_province = {
