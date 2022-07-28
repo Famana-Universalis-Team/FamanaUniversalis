@@ -79,12 +79,13 @@ country_event = {
         name = naravam.2.a
         ai_chance = { factor = 80 }
         trigger = {
-            any_province = {
-                OR = {
-                    area = area_156
-                    area = area_157
+            OR = {
+                area_156 = {
+                    is_empty = yes
                 }
-                is_empty = yes
+                area_157 = {
+                    is_empty = yes
+                }
             }
         }
         goto = 6485

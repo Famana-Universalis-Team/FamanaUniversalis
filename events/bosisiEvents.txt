@@ -661,10 +661,12 @@ country_event = {
 					}
 				}
 			}
-			LDV = {
-				save_event_target_as = tribe_in_question
-				capital_scope = {
-					save_event_target_as = tribe_capital
+			hidden_effect = {
+				LDV = {
+					save_event_target_as = tribe_in_question
+					capital_scope = {
+						save_event_target_as = tribe_capital
+					}
 				}
 			}
 		}
@@ -679,10 +681,12 @@ country_event = {
 					}
 				}
 			}
-			ODS = {
-				save_event_target_as = tribe_in_question
-				capital_scope = {
-					save_event_target_as = tribe_capital
+			hidden_effect = {
+				ODS = {
+					save_event_target_as = tribe_in_question
+					capital_scope = {
+						save_event_target_as = tribe_capital
+					}
 				}
 			}
 		}
@@ -697,10 +701,12 @@ country_event = {
 					}
 				}
 			}
-			SOY = {
-				save_event_target_as = tribe_in_question
-				capital_scope = {
-					save_event_target_as = tribe_capital
+			hidden_effect = {
+				SOY = {
+					save_event_target_as = tribe_in_question
+					capital_scope = {
+						save_event_target_as = tribe_capital
+					}
 				}
 			}
 		}
@@ -715,10 +721,12 @@ country_event = {
 					}
 				}
 			}
-			TIT = {
-				save_event_target_as = tribe_in_question
-				capital_scope = {
-					save_event_target_as = tribe_capital
+			hidden_effect = {
+				TIT = {
+					save_event_target_as = tribe_in_question
+					capital_scope = {
+						save_event_target_as = tribe_capital
+					}
 				}
 			}
 		}

@@ -66,3 +66,14 @@ kin_rejasuofication = {
     local_culture_conversion_cost = -0.20
     local_missionary_strength = 0.02
 }
+
+naf_embracing_lathvy_beliefs = {
+    local_missionary_strength = 0.05
+    local_tax_modifier = 0.10
+    local_autonomy = -0.10
+}
+
+naf_tight_grip = {
+    local_governing_cost = -0.50
+    local_unrest = -2
+}

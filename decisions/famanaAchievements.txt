@@ -759,10 +759,10 @@ country_decisions = {
 		allow = {
 			estal = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-				NOT = {
-					is_empty = yes
-				}
+                OR = {
+                    country_or_non_sovereign_subject_holds = ROOT
+                    is_empty = yes
+                }
 			}
 		}
 		effect = {
@@ -891,24 +891,24 @@ country_decisions = {
 		allow = {
 			oppia_superregion = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-				NOT = {
-					is_empty = yes
-				}
+                OR = {
+                    country_or_non_sovereign_subject_holds = ROOT
+                    is_empty = yes
+                }
 			}
 			ga_xal_superregion = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-				NOT = {
-					is_empty = yes
-				}
+                OR = {
+                    country_or_non_sovereign_subject_holds = ROOT
+                    is_empty = yes
+                }
 			}
 			laglon_region = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-				NOT = {
-					is_empty = yes
-				}
+                OR = {
+                    country_or_non_sovereign_subject_holds = ROOT
+                    is_empty = yes
+                }
 			}
 			lomea_region = {
 				type = all

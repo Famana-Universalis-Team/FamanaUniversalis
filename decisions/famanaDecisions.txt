@@ -140,13 +140,11 @@ country_decisions = {
 	}
     nafa_rini = {
 		potential = {
-			AND = {
-				tag = NAF
-                religion = lathvy
-                has_idea_group = religious_ideas
-				NOT = {
-					has_country_flag = nafa_rini_flag
-				}
+			tag = NAF
+            religion = lathvy
+            has_idea_group = religious_ideas
+			NOT = {
+				has_country_flag = nafa_rini_flag
 			}
 		}
 		allow = {
@@ -166,6 +164,10 @@ country_decisions = {
 		effect = {
 			set_country_flag = nafa_rini_flag
             change_religion = rini
+            add_country_modifier = {
+                name = naf_rini_elite
+                duration = -1
+            }
             add_country_modifier = {
 			    name = "conversion_zeal"
 			    duration = 3650
@@ -340,6 +342,49 @@ country_decisions = {
                         cede_province = FAS
                     }
                 }
+            }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+    }
+
+    naf_encourage_exploration = {
+        potential = {
+            tag = NAF
+            has_country_flag = naf_conq_decision_flag
+		}
+		allow = {
+			if = {
+                limit = {
+                    NOT = {
+                        has_country_flag = naf_conq_temp
+                    }
+                }
+                custom_trigger_tooltip = {
+                    tooltip = nafa50yearsWait
+                    NOT = { has_country_modifier = nafa_decision_cooldown }
+                }
+            }
+            dip_power = 100
+		}
+		effect = {
+            hidden_effect = {
+                if = {
+                    limit = {
+                        has_country_flag = naf_conq_temp
+                    }
+                    clr_country_flag = naf_conq_temp
+                }
+                add_country_modifier = {
+                    name = nafa_decision_cooldown
+                    duration = 9125
+                    hidden = yes
+                }
+            }
+            add_dip_power = -100
+            create_conquistador = {
+                tradition = 60
             }
 		}
 		ai_will_do = {

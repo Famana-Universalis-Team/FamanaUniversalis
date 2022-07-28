@@ -1246,3 +1246,34 @@ kin_expelled_oppians = {
 kin_taking_back_whats_ours = {
     culture_conversion_cost = -0.15
 }
+
+naf_estali_frontier = {
+    colonists = 1
+}
+
+naf_adopt_resteman_strategies = {
+    leader_naval_fire = 1
+    leader_naval_shock = 1
+    leader_naval_manuever = 1
+}
+
+fu_extended_golden_age = {
+    land_morale = 0.10
+    naval_morale = 0.10
+    all_power_cost = -0.10
+    global_trade_goods_size_modifier = 0.10
+    max_absolutism = 5
+    max_revolutionary_zeal = 10
+}
+
+naf_colonial_ventures = {
+    colonists = 1
+    native_uprising_chance = -0.25
+}
+
+naf_rini_elite = {
+    religious_unity = 0.5
+    tolerance_heretic = 3
+}
+
+nafa_decision_cooldown = {}

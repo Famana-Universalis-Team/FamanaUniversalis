@@ -390,17 +390,19 @@ pex_5 = {
         required_missions = { pex_into_emastalia }
         position = 8
         trigger = {
-            owns_all_provinces = {
-				region = emastalia_region
-				NOT = {
-					is_empty = yes
-				}
+            emastalia_region = {
+				type = all
+                OR = {
+                    country_or_non_sovereign_subject_holds = ROOT
+                    is_empty = yes
+                }
 			}
-			owns_all_provinces = {
-				region = west_emastalia_region
-				NOT = {
-					is_empty = yes
-				}
+            west_emastalia_region = {
+				type = all
+                OR = {
+                    country_or_non_sovereign_subject_holds = ROOT
+                    is_empty = yes
+                }
 			}
         }
         effect = {

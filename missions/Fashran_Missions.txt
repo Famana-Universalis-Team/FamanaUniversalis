@@ -291,11 +291,12 @@ fas_1 = {
 		required_missions = {fas_montavas_treasure}
 		trigger = {
 			OR = {
-				owns_all_provinces = {
-					region = vanoma_region
-					NOT = {
-						is_empty = yes
-					}
+				vanoma_region = {
+					type = all
+                	OR = {
+                	    country_or_non_sovereign_subject_holds = ROOT
+                	    is_empty = yes
+                	}
 				}
 				AND = {
 					alliance_with = VAN
@@ -315,9 +316,10 @@ fas_1 = {
 		effect = {
 			if = {
 				limit = {
-					owns_all_provinces = {
-						region = vanoma_region
-						NOT = {
+					vanoma_region = {
+						type = all
+						OR = {
+							owned_by = ROOT
 							is_empty = yes
 						}
 					}
@@ -1227,23 +1229,26 @@ fas_4 = {
 		required_missions = {fas_crush_kapolia}
 		position = 11
 		trigger = {
-			owns_all_provinces = {
-				region = emastalia_region
-				NOT = {
-					is_empty = yes
-				}
+			emastalia_region = {
+				type = all
+                OR = {
+                    country_or_non_sovereign_subject_holds = ROOT
+                    is_empty = yes
+                }
 			}
-			owns_all_provinces = {
-				region = west_emastalia_region
-				NOT = {
-					is_empty = yes
-				}
+			west_emastalia_region = {
+				type = all
+                OR = {
+                    country_or_non_sovereign_subject_holds = ROOT
+                    is_empty = yes
+                }
 			}
-			owns_all_provinces = {
-				region = stroktur_region
-				NOT = {
-					is_empty = yes
-				}
+			stroktur_region = {
+				type = all
+                OR = {
+                    country_or_non_sovereign_subject_holds = ROOT
+                    is_empty = yes
+                }
 			}
 		}
 		effect = {

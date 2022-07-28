@@ -440,9 +440,9 @@ merc_morsum = {
 # Callan Marines
 merc_callan = {
     regiments_per_development = 0.025
-	cavalry_weight = 0.1
+	cavalry_weight = 0
 	artillery_weight = 0.3
-	cavalry_cap = 4
+	cavalry_cap = 0
     home_province = 5459
 	cost_modifier = 0.5
 	sprites = { westerngfx_sprite_pack }
@@ -1026,11 +1026,32 @@ merc_iakperko_guard = {
 	sprites = { easterngfx_sprite_pack }
     trigger = {
 		custom_trigger_tooltip = {
-			tooltip = iakperkoGuardTooltip2
+			tooltip = iakperkoGuardTooltip
 			has_country_flag = iakperko_merc_flag
 		}
 	}
 	modifier = {
 		land_morale = 0.20
+	}
+}
+
+# Feniki Marines
+merc_feniki_marines = {
+    regiments_per_development = 0.03
+	cavalry_weight = 0
+	artillery_weight = 0.3
+	cavalry_cap = 0
+    home_province = 5028
+	cost_modifier = 0.33
+	sprites = { westerngfx_sprite_pack }
+    trigger = {
+		custom_trigger_tooltip = {
+			tooltip = FenikiMarinesTooltip
+			has_country_flag = feniki_merc_flag
+		}
+	}
+	modifier = {
+		fire_damage = 0.10
+		reinforce_speed = 1.0
 	}
 }

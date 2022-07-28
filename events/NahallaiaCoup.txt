@@ -48,6 +48,7 @@ country_event = { #COUP
     option = {
 		name = nahallaia.1.a
         ai_chance = { factor = 1 }
+        add_stability = -1
     }
 }
 
