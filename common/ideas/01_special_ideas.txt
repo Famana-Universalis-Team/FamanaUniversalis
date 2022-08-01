@@ -1,0 +1,39 @@
+Golden_Mea_ideas = {
+    start = {
+        trade_efficiency = 0.10
+        idea_cost = -0.10
+    }
+    
+    bonus = {
+        merchants = 1
+    }    
+
+    trigger = {
+        tag = ALM
+        has_country_flag = golden_mea_formed
+    }
+    free = yes
+    
+    Golden_Mea_northward_push = {
+        core_creation = -0.20
+    }
+    Golden_Mea_a_grand_army = {
+        land_forcelimit_modifier = 0.15
+    }
+    Golden_Mea_glazian_connections = {
+        trade_range_modifier = 0.25
+    }
+    Golden_Mea_the_four_gods = {
+        tolerance_heretic = 3
+    }
+    Golden_Mea_western_gomic_trade = {
+        trade_steering = 0.25
+        global_institution_spread = 0.10
+    }
+    Golden_Mea_morian_heritage = {
+        mil_tech_cost_modifier = -0.1
+    }
+    Golden_Mea_rupax_system = {
+        global_autonomy = -0.05
+    }
+}

@@ -40,7 +40,12 @@ country_decisions = {
         }
         allow = {
             is_free_or_tributary_trigger = yes
-            NOT = { is_tribal = yes }
+            NOT = {
+				OR = {
+					government = tribal
+					government = native
+				}
+			}
         }
         effect = {
             change_religion	= lathvy
@@ -79,7 +84,12 @@ country_decisions = {
         }
         allow = {
             is_free_or_tributary_trigger = yes
-            NOT = { is_tribal = yes }
+            NOT = {
+				OR = {
+					government = tribal
+					government = native
+				}
+			}
         }
         effect = {
             change_religion	= rochoni
