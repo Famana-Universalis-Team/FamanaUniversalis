@@ -3019,12 +3019,6 @@ country_decisions = {
 		major = yes
 		potential = {
 			NOT = { exists = NRV }
-			NOT = {
-				OR = {
-					government = tribal
-					government = native
-				}
-			}
 			culture_group = Naravami_C
 			was_never_end_game_tag_trigger = yes
 		}
@@ -3048,6 +3042,12 @@ country_decisions = {
 			adm_tech = 20
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
+			NOT = {
+				OR = {
+					government = tribal
+					government = native
+				}
+			}
 			AND = {
 				owns_core_province = 6285
 				owns_core_province = 6286
