@@ -898,7 +898,7 @@ merc_untrar_battalion = {
 		}
 	}
 	modifier = {
-		infantry_shock = 1
+		infantry_shock = 0.25
 		movement_speed = -0.20
 	}
 }

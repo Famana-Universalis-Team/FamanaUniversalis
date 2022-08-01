@@ -805,10 +805,12 @@ country_decisions = {
 		}
 		provinces_to_highlight = {
 			OR = {
-				province_id = 5450
-				province_id = 5442
 				province_id = 5411
+				province_id = 5442
+				province_id = 5434
 				province_id = 5441
+				province_id = 5431
+				province_id = 5439
 			}
 			OR = {
 				NOT = { owned_by = ROOT }
@@ -819,25 +821,42 @@ country_decisions = {
 			adm_tech = 5
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
-			owns_core_province = 5416
 			owns_core_province = 5411
-			owns_core_province = 5441
 			owns_core_province = 5442
+			owns_core_province = 5434
+			owns_core_province = 5441
+			owns_core_province = 5431
+			owns_core_province = 5439
 			num_of_owned_provinces_with = {
-				value = 3
+				value = 10
 				is_city = yes
 				region = moria_region
 		    }
+			army_size = 30
 		}
 		effect = {
 			restore_country_name = yes
 			override_country_name = GOLDEN_MEA
 			set_country_flag = golden_mea_formed
+			custom_tooltip = aleMeaBuffIdeas
+			hidden_effect = { swap_free_idea_group = yes }
 			if = {
 				limit = {
 					government_rank = 1
 				}
 				set_government_rank = 2
+			}
+			if = {
+				limit = {
+					has_reform = autocracy_reform
+				}
+				add_government_reform = bureaucratic_monarchy
+			}
+			moria_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ALM
 			}
 			add_prestige = 25
 		}
@@ -864,9 +883,7 @@ country_decisions = {
 		}
 		provinces_to_highlight = {
 			OR = {
-				province_id = 5399
-				province_id = 5388
-				province_id = 5404
+				province_id = 
 			}
 			OR = {
 				NOT = { owned_by = ROOT }
@@ -1344,6 +1361,8 @@ country_decisions = {
 				province_id = 5388
 				province_id = 5450
 				province_id = 5399
+				province_id = 5467
+				province_id = 5167
 			}
 			OR = {
 				NOT = { owned_by = ROOT }
@@ -1360,6 +1379,10 @@ country_decisions = {
 			owns_core_province = 5388 #xon
 			owns_core_province = 5450 #jexus
 			owns_core_province = 5399 #oxaled
+			OR = {
+				owns_core_province = 5467 #shiraska xon
+				owns_core_province = 5167 #houraska xon
+			}
 			num_of_owned_provinces_with = {
 				value = 40
 				superregion = ga_xal_superregion
@@ -2761,6 +2784,7 @@ country_decisions = {
 				value = 50
 				culture_group = Gotzlic
 			}
+			NOT = { is_tribal = yes }
 		}
 		effect = {
 			restore_country_name = yes
@@ -2812,6 +2836,7 @@ country_decisions = {
 				value = 10
 				culture = Nirkifi
 			}
+			NOT = { government = native }
 		}
 		effect = {
 			restore_country_name = yes
@@ -2865,6 +2890,7 @@ country_decisions = {
 				value = 10
 				culture = Burgavian
 			}
+			NOT = { government = native }
 		}
 		effect = {
 			restore_country_name = yes
@@ -2910,6 +2936,7 @@ country_decisions = {
 			OR = {
 				NOT = { owned_by = ROOT }
 			}
+			NOT = { government = native }
 		}
 		allow = {
 			is_free_or_tributary_trigger = yes
@@ -2985,7 +3012,7 @@ country_decisions = {
 				owns_core_province = 6334
 				owns_core_province = 6328
 				owns_core_province = 6323
-			
+			NOT = { government = native }			
 		}
 		effect = {
 			restore_country_name = yes
@@ -3019,12 +3046,6 @@ country_decisions = {
 		major = yes
 		potential = {
 			NOT = { exists = NRV }
-			NOT = {
-				OR = {
-					government = tribal
-					government = native
-				}
-			}
 			culture_group = Naravami_C
 			was_never_end_game_tag_trigger = yes
 		}
@@ -3048,6 +3069,12 @@ country_decisions = {
 			adm_tech = 20
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
+			NOT = {
+				OR = {
+					government = tribal
+					government = native
+				}
+			}
 			AND = {
 				owns_core_province = 6285
 				owns_core_province = 6286
