@@ -289,8 +289,13 @@ country_decisions = {
         potential = {
             religion = morian
             NOT = { has_global_flag = MorianPolytheism }
+            NOT = { ruler_has_personality = zealot_personality }
 		}
 		allow = {
+            OR = {
+                adm = 4
+                dip = 4
+            }
 			owns_core_province = 5411
             owns_core_province = 5441
             owns_core_province = 5450
@@ -307,6 +312,17 @@ country_decisions = {
 		}
 		ai_will_do = {
 			factor = 0
+		}
+        provinces_to_highlight = {
+			OR = {
+				province_id = 5411
+				province_id = 5441
+				province_id = 5450
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				is_city = no
+			}
 		}
     }
 

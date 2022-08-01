@@ -1159,15 +1159,6 @@ nafa_2 = {
                     change_religion = ROOT
                 }
             }
-            define_advisor = {
-                type = inquisitor
-                skill = 3
-                cost_multiplier = 0.25
-                female = yes
-                culture = Neo_Xalnish
-                religion = ROOT
-                name = "Xofini Jikiro"
-            }
             custom_tooltip = getAdmBasedOnXalianCenters
             hidden_effect = {
                 if = {
@@ -1837,18 +1828,6 @@ nafa_3 = {
             }
         }
         effect = {
-            bava_area = {
-				add_permanent_claim = ROOT
-			}
-            makykay_area = {
-				add_permanent_claim = ROOT
-			}
-            vaximor_area = {
-				add_permanent_claim = ROOT
-			}
-            arlenta_region = {
-				add_permanent_claim = ROOT
-			}
             custom_tooltip = nafaAnnexXalEvent
             hidden_effect = {
                 every_known_country = {
@@ -1868,6 +1847,27 @@ nafa_3 = {
                     }
                 }
             }
+            define_advisor = {
+                type = inquisitor
+                skill = 3
+                cost_multiplier = 0.25
+                female = yes
+                culture = Neo_Xalnish
+                religion = ROOT
+                name = "Xofini Jikiro"
+            }
+            bava_area = {
+				add_permanent_claim = ROOT
+			}
+            makykay_area = {
+				add_permanent_claim = ROOT
+			}
+            vaximor_area = {
+				add_permanent_claim = ROOT
+			}
+            arlenta_region = {
+				add_permanent_claim = ROOT
+			}
         }
         provinces_to_highlight = {
             OR = {

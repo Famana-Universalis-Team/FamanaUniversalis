@@ -2754,3 +2754,84 @@ KLG_ideas = {
 		leader_naval_fire = 1
 	}
 }
+
+MNR_ideas = {
+	start = {
+		no_religion_penalty = yes
+		global_sailors_modifier = 0.25
+	}
+	
+	bonus = {
+		unjustified_demands = -0.1
+	}
+
+	trigger = {
+		tag = MNR
+	}
+	free = yes
+	
+	mnr_1 = {
+		galley_power = 0.15
+		global_ship_repair = 0.1
+	}
+	mnr_2 = {
+		naval_morale = 0.1
+	}
+	mnr_3 = {
+		global_trade_power = 0.1
+	}
+	mnr_4 = {
+		embargo_efficiency = 0.25
+		power_projection_from_insults = 0.50
+	}
+	mnr_5 = {
+		recover_navy_morale_speed = 0.25
+	}
+	mnr_6 = {
+		ship_durability	= 0.05
+	}
+	mnr_7 = {
+		mercenary_cost = -0.20
+		leader_cost = -0.10
+	}
+}
+
+MAA_ideas = {
+	start = {
+		defensiveness = 0.10
+		diplomatic_upkeep = 1
+	}
+	
+	bonus = {
+		adm_advisor_cost = -0.20
+	}
+
+	trigger = {
+		tag = MAA
+	}
+	free = yes
+	
+	maa_1 = {
+		global_trade_goods_size_modifier = 0.10
+	}
+	maa_2 = {
+		garrison_size = 0.25
+	}
+	maa_3 = {
+		loot_amount = 0.50
+		available_province_loot	= 0.25
+	}
+	maa_4 = {
+		diplomatic_reputation = 2
+	}
+	maa_5 = {
+		development_cost = -0.05
+		build_cost = -0.05
+	}
+	maa_6 = {
+		tolerance_own = 1
+	}
+	maa_7 = {
+		diplomats = 1
+	}
+}
