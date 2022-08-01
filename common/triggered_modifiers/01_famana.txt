@@ -178,7 +178,7 @@ age_1_trig_modifier = { #despair
     trigger = {
         always = yes
     }
-    development_cost = 0.20
+    development_cost = 0.25
     ae_impact = 0.10
     envoy_travel_time = 0.25
     land_forcelimit_modifier = -0.10
@@ -192,7 +192,7 @@ age_2_trig_modifier = { #eclipse
     trigger = {
         always = yes
     }
-    development_cost = 0.10
+    development_cost = 0.15
     envoy_travel_time = 0.10
     global_missionary_strength = 0.01
     tolerance_heathen = -1
@@ -215,7 +215,7 @@ age_3_trig_modifier = { #titans
     global_institution_spread = 0.1
     land_forcelimit_modifier = 0.10
     governing_capacity_modifier = 0.25
-    development_cost = 0.05
+    development_cost = 0.10
 }
 
 age_4_trig_modifier = { #old legends
@@ -225,7 +225,6 @@ age_4_trig_modifier = { #old legends
     trigger = {
         always = yes
     }
-    development_cost = -0.05
     all_power_cost = 0.05
     max_absolutism = -10
     governing_capacity_modifier = -0.15

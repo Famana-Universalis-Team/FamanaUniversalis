@@ -911,11 +911,16 @@ global_trade = {
 	
 	can_start = {
 		is_year = 400
-		is_capital = yes
-		is_island = no
-		is_state = yes
-		religion = urbaxan
-		development = 25
+		OR = {
+			AND = {
+				is_capital = yes
+				is_island = no
+				is_state = yes
+				religion = urbaxan
+				development = 25
+			}
+			region = maky_region #THIS IS TEMPORARY
+		}
 	}
 
 	start_chance = 5		#in 100 for when a province can_start
