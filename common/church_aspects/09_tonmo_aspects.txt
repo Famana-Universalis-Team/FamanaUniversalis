@@ -23,7 +23,9 @@ recruit_warlord_aspect = {
 	cost = 100
 	effect = {
 		create_general = { tradition = 40 }
-		add_army_professionalism = 0.01
+		hidden_effect = {
+			add_army_professionalism = 0.01
+		}
 	}
 	ai_will_do = {
 		factor = 2
