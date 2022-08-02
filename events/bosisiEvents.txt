@@ -616,6 +616,7 @@ country_event = {
 			AND = {
 				NOT = { tag = LDV }
 				LDV = {
+					has_reform = desert_tribe
 					capital_scope = {
 						controlled_by = ROOT
 					}
@@ -624,6 +625,7 @@ country_event = {
 			AND = {
 				NOT = { tag = ODS }
 				ODS = {
+					has_reform = desert_tribe
 					capital_scope = {
 						controlled_by = ROOT
 					}
@@ -632,6 +634,7 @@ country_event = {
 			AND = {
 				NOT = { tag = SOY }
 				SOY = {
+					has_reform = desert_tribe
 					capital_scope = {
 						controlled_by = ROOT
 					}
@@ -640,6 +643,7 @@ country_event = {
 			AND = {
 				NOT = { tag = TIT }
 				TIT = {
+					has_reform = desert_tribe
 					capital_scope = {
 						controlled_by = ROOT
 					}

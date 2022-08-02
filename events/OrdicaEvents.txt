@@ -1860,3 +1860,48 @@ country_event = {
 		ai_chance = { factor = 1 }
 	}
 }
+
+#Acceptance of kolyan and maldik
+country_event = {
+	id = ordica.36
+	title = ordica.36.t
+	desc = ordica.36.d
+	picture = ANGRY_MOB_eventPicture
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 15
+	}
+
+	trigger = {
+		tag = ORC
+		owns_core_province = 6262
+		owns_core_province = 6270
+		NOT = {
+			OR = {
+				exists = KLY
+				exists = MLD
+			}
+		}
+	}
+
+	option = { #Accept
+		name = ordica.36.a
+		ai_chance = { factor = 1 }
+		add_country_modifier = {
+			name = orc_vassal_acceptance
+			duration = -1
+		}
+		add_accepted_culture = Kolyan
+		add_accepted_culture = Maldikian
+	}
+
+	option = { #Culture conversion cost
+		name = ordica.36.b
+		ai_chance = { factor = 0 }
+		add_country_modifier = {
+			name = orc_ordicization
+			duration = 9125
+		}
+	}
+}

@@ -1277,3 +1277,13 @@ naf_rini_elite = {
 }
 
 nafa_decision_cooldown = {}
+
+orc_vassal_acceptance = {
+    num_accepted_cultures = 2
+    global_autonomy = 0.025
+}
+
+orc_ordicization = {
+    culture_conversion_cost = -0.25
+    global_unrest = 1
+}
