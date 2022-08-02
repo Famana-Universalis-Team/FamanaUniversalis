@@ -1,77 +1,39 @@
 namespace = lukscham
 
-country_event = {
+country_event = { #WHAT THE FUCK IS HAPPENING
 	id = lukscham.1
 	hidden = yes
 	fire_only_once = yes
 
 	trigger = {
-		capital_scope = {
-			region = lukscha_region
-		}
+		owns = 6499
 		NOT = {
 			exists = LKS
 		}
+		ai = yes
 		is_year = 310
-		KYR = {
-			ai = yes
-		}
-		EVV = {
-			ai = yes
-		}
-		GYY = {
-			ai = yes
-		}
-		OTS = {
-			ai = yes
-		}
-		PLA = {
-			ai = yes
-		}
-		IET = {
-			ai = yes
-		}
-		ZOK = {
-			ai = yes
-		}
-		JUR = {
-			ai = yes
-		}
-		HRS = {
-			ai = yes
+		NOT = {
+			has_global_flag = notAIlukscham
 		}
 		area_76 = {
 			type = all
-			OR = {
-				owned_by = KYR
-				owned_by = GYY
-				owned_by = EVV
-				owned_by = OTS
-				owned_by = PLA
-				owned_by = IET
-				owned_by = ZOK
-				owned_by = JUR
-				owned_by = HRS
+			owner = {
+				primary_culture = Lukschan
+				ai = yes
 			}
 		}
 		area_77 = {
 			type = all
-			OR = {
-				owned_by = KYR
-				owned_by = GYY
-				owned_by = EVV
-				owned_by = OTS
-				owned_by = PLA
-				owned_by = IET
-				owned_by = ZOK
-				owned_by = JUR
-				owned_by = HRS
+			owner = {
+				primary_culture = Lukschan
+				ai = yes
 			}
 		}
 	}
 
 	mean_time_to_happen = {
 		months = 240
+		#months = 1
 	}
 	
 	immediate = {
@@ -92,7 +54,7 @@ country_event = {
 			lukscha_region = {
 				limit = {
 					NOT = {
-						owned_by = ROOT
+						owned_by = LKS
 					}
 					is_empty = yes
 				}
@@ -102,7 +64,7 @@ country_event = {
 				limit = {
 					NOT = {
 						OR = {
-							owned_by = ROOT
+							owned_by = LKS
 							is_empty = yes
 						}
 					}
@@ -142,5 +104,24 @@ country_event = {
 				infantry = PREV
     		}
 		}
+	}
+}
+
+country_event = {
+	id = lukscham.3
+	hidden = yes
+	fire_only_once = yes
+	
+	trigger = {
+		primary_culture = Lukschan
+		ai = no
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	immediate = {
+		set_global_flag = notAIlukscham
 	}
 }
