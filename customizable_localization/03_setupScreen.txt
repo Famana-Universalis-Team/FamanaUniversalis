@@ -4,25 +4,35 @@ defined_text = {
 	text = {
         localisation_key = PextoDefault
         trigger = {
-			has_global_flag = PextoglaziaDefault
+            OR = {
+                has_country_flag = countryPextoglaziaDefault
+                NOT = {
+                    OR = {
+                        has_country_flag = countryPextoglaziaDefault
+				        has_country_flag = countryPextoglaziaSurvive
+				        has_country_flag = countryPextoglaziaDies
+				        has_country_flag = countryPextoglaziaDevolves
+			        }
+                }
+            }
         }
     }
 	text = {
         localisation_key = PextoSurvive
         trigger = {
-			has_global_flag = PextoglaziaSurvive
+			has_country_flag = countryPextoglaziaSurvive
         }
     }
 	text = {
         localisation_key = PextoDie
         trigger = {
-			has_global_flag = PextoglaziaDies
+			has_country_flag = countryPextoglaziaDies
         }
     }
 	text = {
         localisation_key = PextoMessyDie
         trigger = {
-			has_global_flag = PextoglaziaDevolves
+			has_country_flag = countryPextoglaziaDevolves
         }
     }
 }
@@ -33,25 +43,35 @@ defined_text = {
 	text = {
         localisation_key = OrdicoDefault
         trigger = {
-			has_global_flag = OrdicaDefault
+			OR = {
+                has_country_flag = countryOrdicaDefault
+                NOT = {
+                    OR = {
+				        has_country_flag = countryOrdicaDefault
+				        has_country_flag = countryOrdicaCollapse
+				        has_country_flag = countryOrdicaReform
+				        has_country_flag = countryOrdicaDecay
+			        }
+                }
+            }
         }
     }
 	text = {
         localisation_key = OrdicoCollapse
         trigger = {
-			has_global_flag = OrdicaCollapse
+			has_country_flag = countryOrdicaCollapse
         }
     }
 	text = {
         localisation_key = OrdicoReform
         trigger = {
-			has_global_flag = OrdicaReform
+			has_country_flag = countryOrdicaReform
         }
     }
 	text = {
         localisation_key = OrdicoDecay
         trigger = {
-			has_global_flag = OrdicaDecay
+			has_country_flag = countryOrdicaDecay
         }
     }
 }
@@ -62,19 +82,28 @@ defined_text = {
 	text = {
         localisation_key = FashroDefault
         trigger = {
-			has_global_flag = TonxaraDefault
+			OR = {
+                has_country_flag = countryTonxaraDefault
+                NOT = {
+                    OR = {
+				        has_country_flag = countryTonxaraDefault
+				        has_country_flag = countryTonxaraFight
+				        has_country_flag = countryTonxaraDies
+			        }
+                }
+            }
         }
     }
 	text = {
         localisation_key = FashroFight
         trigger = {
-			has_global_flag = TonxaraFight
+			has_country_flag = countryTonxaraFight
         }
     }
 	text = {
         localisation_key = FashroDie
         trigger = {
-			has_global_flag = TonxaraDies
+			has_country_flag = countryTonxaraDies
         }
     }
 }
@@ -85,13 +114,46 @@ defined_text = {
 	text = {
         localisation_key = YomHistorical
         trigger = {
-			has_global_flag = YomtanianDefault
+			OR = {
+                has_country_flag = countryYomtanianDefault
+                NOT = {
+                    OR = {
+				        has_country_flag = countryYomtanianDefault
+				        has_country_flag = countryYomtanianAhistorical
+			        }
+                }
+            }
         }
     }
 	text = {
         localisation_key = YomAhistorical
         trigger = {
-			has_global_flag = YomtanianAhistorical
+			has_country_flag = countryYomtanianAhistorical
+        }
+    }
+}
+
+defined_text = {
+    name = TombaStatus
+	
+	text = {
+        localisation_key = TombaDeletedLoc
+        trigger = {
+			OR = {
+                has_country_flag = countryTombaDeleted
+                NOT = {
+                    OR = {
+				        has_country_flag = countryTombaDeleted
+				        has_country_flag = countryTombaExists
+			        }
+                }
+            }
+        }
+    }
+	text = {
+        localisation_key = TombaExistsLoc
+        trigger = {
+			has_country_flag = countryTombaExists
         }
     }
 }

@@ -1001,10 +1001,10 @@
  eastereggs.4.d:0 "When the previous Emperor of Moxon died suddenly of unknown causes, likely possession by Loys' spirit, his realm was left to his eldest son Oforog. However, Oforog was not qualified to rule at all, which led to the splintering of the Maxan isles. He had likely inherited the same genetic condition from his father which made him paranoid and caused him to be eternally possessed by evil spirits. Agixiana's future is completely up in the air, as we now come to realize that a mad king rules our nation."
  eastereggs.4.a:0 "May Ara save us!"
 
- tomba.1.t:0 "Unplayable Region"
- tomba.1.d:0 "Tomba is not currently playable. Come back after the Dorromas Update."
- tomba.1.a:0 "Delete Tomba"
- tomba.1.b:0 "Keep Tomba (debug)"
+ #tomba.1.t:0 "Unplayable Region"
+ #tomba.1.d:0 "Tomba is not currently playable. Come back after the Dorromas Update."
+ #tomba.1.a:0 "Delete Tomba"
+ #tomba.1.b:0 "Keep Tomba (debug)"
 
  oppia.18.t:0 "The Rise of Lyposh"
  oppia.18.d:0 "Ever since the collapse of the Quanex Realm, [Root.GetName] has been a weak, minor state compared to its larger neighbors. This will change very soon, as ambitions to create a united South Oppian kingdom take hold in the country. The Effashans are in the way, however, which is why the [Root.Monarch.GetTitle] has decided to lay claim to their entire territory."
@@ -1309,9 +1309,11 @@
  naravam.7.a:0 "A most interesting development."
 
  gamesetup.1.t:0 "Game Setup"
- gamesetup.1.d:0 "Set up the game options in this menu.\n\n§BIn Multiplayer, all players except the Host should pick the topmost option to confirm options. The host should confirm all other players have done this before they try to change the settings.§!\n\nNOTE- THESE OPTIONS WILL NOT AFFECT PLAYERS. THIS ONLY DECIDES THE COURSE OF ACTION FOR AI.\n§RTURNING OFF DEFAULT SETTINGS WILL DISABLE ACHIEVEMENTS.§!"
- gamesetup.1.a:0 "Confirm Options"
- DontChange:0 "This will confirm your choices for the settings. It is usually reccomended to keep settings to default for the best in-game experience."
+ gamesetup.1.d:0 "Set up desired game options in this menu. Note that these options will not affect the players, only the AI.\n\n§BIn Multiplayer, all players except the Host should pick the option 'Dismiss' to ignore the event.§!\n\n§RWarning: Changing the settings will disable all modded achievements.§!\n\nCURRENTLY NON-FUNCTIONAL SETTINGS:\n-Pextoglazia devolves\n-All Ordica settings"
+ gamesetup.1.a:0 "Confirm changes."
+ gamesetup.1.aa:0 "Dismiss."
+ ignore_gamesetup_tt: "§RThis will ignore any changes you have made to the settings.§!\n\nChoose this option if you do not wish to change anything, or if you are not the host in a multiplayer game."
+ DontChange:0 "§GThis will confirm the changes you have made to the settings.§!\n\nIf you wish to undo all changes, select '§YDismiss§!' instead."
 
  gamesetup.1.b:0 "Pextoglazia - [PextoStatus]"
  PextoDefault:0 "DEFAULT"
@@ -1333,6 +1335,10 @@
  gamesetup.1.f:0 "Yomtanians - [YomStatus]"
  YomHistorical:0 "HISTORICAL"
  YomAhistorical:0 "AHISTORICAL"
+
+ gamesetup.1.g:0 "Tomba - [TombaStatus]"
+ TombaDeletedLoc:0 "DISABLED"
+ TombaExistsLoc:0 "ENABLED"
 
  gamesetup.2.t:0 "Pextoglazia Settings"
  gamesetup.2.d:0 ""
@@ -1372,6 +1378,17 @@
  gamesetup.5.d:0 ""
  gamesetup.5.a:0 "Historical"
  gamesetup.5.b:0 "Ahistorical"
+
+ gamesetup.6.t:0 "Tomba Settings"
+ gamesetup.6.d:0 ""
+ gamesetup.6.a:0 "Disable Tomba (Default)"
+ gamesetup.6.b:0 "Enable Tomba (Debug Option)"
+ tomba_delete: "All Tomban provinces will be uncolonized and the region will be unplayable, saving performance."
+ tomba_keep_debug: "Tomba will remain in the game. This option is not recommended, as the region is performance-heavy and does not work in this version of the mod."
+
+ gamesetup.7.t:0 "Settings Confirmed!"
+ gamesetup.7.d:0 "All changes have been applied."
+ gamesetup.7.a:0 "OK."
 
  CometMakResponse:0 "Um appears to have a new servant, for now at least."
  CometPawaniResponse:0 "A reminder of our connection to the Heavens."

@@ -158,16 +158,14 @@ country_event = { #Rise of Nafa
     title = tonxara.5.t
     picture = COUNTRY_COLLAPSE_eventPicture
     desc = tonxara.5.d
+    fire_only_once = yes
 
     mean_time_to_happen = {
         days = 1
     }
 
     trigger = {
-        OR = {
-            tag = KSL
-            tag = NHM #theres a bug where nhoma gets emastalia
-        }
+        tag = KSL
         NOT = { has_country_flag = Nafa_Unleashed }
         any_owned_province = {
             is_core = NAF
@@ -227,7 +225,7 @@ country_event = { #disaster start event
     option = {
         name = tonxara.6.a
         ai_chance = {
-            factor = 4
+            factor = 6
             modifier = {
                 factor = 0
                 has_global_flag = TonxaraDies
@@ -354,7 +352,7 @@ country_event = { #tonxara.9, this event will let you pick your new country or g
 
     option = {
         name = tonxara.9.a
-        ai_chance = { factor = 1 }
+        ai_chance = { factor = 0 }
         highlight = yes
         country_event = {
             id = tonxara.6 #Go back
@@ -711,7 +709,7 @@ country_event = { #tonxara.9, this event will let you pick your new country or g
 
     option = { #Gatria
         name = tonxara.9.f
-        ai_chance = { factor = 0 }
+        ai_chance = { factor = 1 }
 
         trigger = {
             any_owned_province = {
@@ -798,7 +796,7 @@ country_event = { #tonxara.9, this event will let you pick your new country or g
 
     option = { #Zablata
         name = tonxara.9.g
-        ai_chance = { factor = 0 }
+        ai_chance = { factor = 1 }
 
         trigger = {
             any_owned_province = {
@@ -885,7 +883,7 @@ country_event = { #tonxara.9, this event will let you pick your new country or g
 
     option = { #Jimkalin
         name = tonxara.9.h
-        ai_chance = { factor = 0 }
+        ai_chance = { factor = 1 }
 
         trigger = {
             any_owned_province = {
@@ -1320,7 +1318,7 @@ country_event = { #tonxara.9, this event will let you pick your new country or g
 
     option = { #Miwle
         name = tonxara.9.k
-        ai_chance = { factor = 0 }
+        ai_chance = { factor = 1 }
 
         trigger = {
             any_owned_province = {
@@ -1407,7 +1405,7 @@ country_event = { #tonxara.9, this event will let you pick your new country or g
 
     option = { #Va Emtik
         name = tonxara.9.l
-        ai_chance = { factor = 0 }
+        ai_chance = { factor = 1 }
 
         trigger = {
             any_owned_province = {
@@ -1494,7 +1492,7 @@ country_event = { #tonxara.9, this event will let you pick your new country or g
 
     option = { #Igam
         name = tonxara.9.m
-        ai_chance = { factor = 0 }
+        ai_chance = { factor = 1 }
 
         trigger = {
             any_owned_province = {
@@ -1581,7 +1579,7 @@ country_event = { #tonxara.9, this event will let you pick your new country or g
 
     option = { #Ovmaz
         name = tonxara.9.n
-        ai_chance = { factor = 0 }
+        ai_chance = { factor = 1 }
 
         trigger = {
             any_owned_province = {
@@ -1668,7 +1666,7 @@ country_event = { #tonxara.9, this event will let you pick your new country or g
 
     option = { #Koff
         name = tonxara.9.o
-        ai_chance = { factor = 0 }
+        ai_chance = { factor = 1 }
 
         trigger = {
             any_owned_province = {
@@ -1755,7 +1753,7 @@ country_event = { #tonxara.9, this event will let you pick your new country or g
 
     option = { #Lamyr
         name = tonxara.9.q
-        ai_chance = { factor = 0 }
+        ai_chance = { factor = 1 }
 
         trigger = {
             any_owned_province = {
@@ -1842,7 +1840,7 @@ country_event = { #tonxara.9, this event will let you pick your new country or g
 
     option = { #Zormia
         name = tonxara.9.r
-        ai_chance = { factor = 0 }
+        ai_chance = { factor = 1 }
 
         trigger = {
             any_owned_province = {
@@ -1929,7 +1927,7 @@ country_event = { #tonxara.9, this event will let you pick your new country or g
 
     option = { #Anmoea
         name = tonxara.9.s
-        ai_chance = { factor = 0 }
+        ai_chance = { factor = 1 }
 
         trigger = {
             any_owned_province = {
@@ -2016,7 +2014,7 @@ country_event = { #tonxara.9, this event will let you pick your new country or g
 
     option = { #Atrampefa
         name = tonxara.9.t
-        ai_chance = { factor = 0 }
+        ai_chance = { factor = 1 }
 
         trigger = {
             any_owned_province = {
@@ -2103,7 +2101,7 @@ country_event = { #tonxara.9, this event will let you pick your new country or g
 
     option = { #Selka
         name = tonxara.9.u
-        ai_chance = { factor = 0 }
+        ai_chance = { factor = 1 }
 
         trigger = {
             any_owned_province = {
@@ -2190,7 +2188,7 @@ country_event = { #tonxara.9, this event will let you pick your new country or g
 
     option = { #Tyma
         name = tonxara.9.v
-        ai_chance = { factor = 0 }
+        ai_chance = { factor = 1 }
 
         trigger = {
             any_owned_province = {
@@ -2277,7 +2275,7 @@ country_event = { #tonxara.9, this event will let you pick your new country or g
 
     option = { #Fuka Bastrania
         name = tonxara.9.w
-        ai_chance = { factor = 0 }
+        ai_chance = { factor = 1 }
 
         trigger = {
             any_owned_province = {
@@ -2364,7 +2362,7 @@ country_event = { #tonxara.9, this event will let you pick your new country or g
 
     option = { #Jimbalak
         name = tonxara.9.x
-        ai_chance = { factor = 0 }
+        ai_chance = { factor = 1 }
 
         trigger = {
             any_owned_province = {
@@ -2451,7 +2449,7 @@ country_event = { #tonxara.9, this event will let you pick your new country or g
 
     option = { #Bastrania
         name = tonxara.9.y
-        ai_chance = { factor = 0 }
+        ai_chance = { factor = 1 }
 
         trigger = {
             any_owned_province = {
@@ -2538,7 +2536,7 @@ country_event = { #tonxara.9, this event will let you pick your new country or g
 
     option = { #Khim
         name = tonxara.9.z
-        ai_chance = { factor = 0 }
+        ai_chance = { factor = 1 }
 
         trigger = {
             any_owned_province = {
@@ -2625,7 +2623,7 @@ country_event = { #tonxara.9, this event will let you pick your new country or g
 
     option = { #Hoxoi
         name = tonxara.9.za
-        ai_chance = { factor = 0 }
+        ai_chance = { factor = 1 }
 
         trigger = {
             any_owned_province = {
@@ -2712,7 +2710,7 @@ country_event = { #tonxara.9, this event will let you pick your new country or g
 
     option = { #Kel
         name = tonxara.9.zb
-        ai_chance = { factor = 0 }
+        ai_chance = { factor = 1 }
 
         trigger = {
             any_owned_province = {
@@ -2799,7 +2797,7 @@ country_event = { #tonxara.9, this event will let you pick your new country or g
 
     option = { #Yarfoo
         name = tonxara.9.zc
-        ai_chance = { factor = 0 }
+        ai_chance = { factor = 1 }
 
         trigger = {
             any_owned_province = {
@@ -2886,7 +2884,7 @@ country_event = { #tonxara.9, this event will let you pick your new country or g
 
     option = { #Semoea
         name = tonxara.9.zd
-        ai_chance = { factor = 0 }
+        ai_chance = { factor = 1 }
 
         trigger = {
             any_owned_province = {
@@ -2973,7 +2971,7 @@ country_event = { #tonxara.9, this event will let you pick your new country or g
 
     option = { #Bluec
         name = tonxara.9.ze
-        ai_chance = { factor = 0 }
+        ai_chance = { factor = 1 }
 
         trigger = {
             any_owned_province = {
@@ -3060,7 +3058,7 @@ country_event = { #tonxara.9, this event will let you pick your new country or g
 
     option = { #Ipak
         name = tonxara.9.zf
-        ai_chance = { factor = 0 }
+        ai_chance = { factor = 1 }
 
         trigger = {
             any_owned_province = {
@@ -3147,7 +3145,7 @@ country_event = { #tonxara.9, this event will let you pick your new country or g
 
     option = { #Merkomm
         name = tonxara.9.zg
-        ai_chance = { factor = 0 }
+        ai_chance = { factor = 1 }
 
         trigger = {
             any_owned_province = {

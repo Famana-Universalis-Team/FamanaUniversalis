@@ -6,6 +6,7 @@ on_startup = {
 	set_global_flag = OrdicaDefault
 	set_global_flag = TonxaraDefault
 	set_global_flag = YomtanianDefault
+	set_global_flag = TombaDeleted
 	emperor = {
 		save_global_event_target_as = Emperor
 	}
@@ -92,7 +93,7 @@ on_startup = {
 		yomtanian.2
 
 		#Deleting Tomba (Should be removed eventually)
-		tomba.1
+		#tomba.1
 
 		#Geopyopia
 		geopyopia.1
@@ -109,9 +110,12 @@ on_startup = {
 		#Pexto diocese setup
 		pextoglazia.43
 	}
-	events = { #after the others so it spawns on top
-		gamesetup.0
-		#gamesetup.1
+	events = { #After the others so it spawns on top
+		
+		gamesetup.1
+
+		#Settings launcher
+		#gamesetup.0
 	}
 	##################################################################### /FAMANA SETUP
 }
