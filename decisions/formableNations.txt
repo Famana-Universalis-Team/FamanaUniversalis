@@ -3483,75 +3483,10 @@ country_decisions = {
 			owns_core_province = 5140
 			owns_core_province = 5143
 			owns_core_province = 5137
-			if = {
-				limit = {
-					religion = gadan
-				}
-				num_of_owned_provinces_with = {
-					value = 10
-					religion = gadan
-					region = maky_region
-				}
-			}
-			else_if = {
-				limit = {
-					religion = reformed_oppian
-				}
-				num_of_owned_provinces_with = {
-					value = 10
-					religion = reformed_oppian
-					region = maky_region
-				}
-			}
-			else_if = {
-				limit = {
-					religion = western_oppian
-				}
-				num_of_owned_provinces_with = {
-					value = 10
-					religion = western_oppian
-					region = maky_region
-				}
-			}
-			else_if = {
-				limit = {
-					religion = eastern_oppian
-				}
-				num_of_owned_provinces_with = {
-					value = 10
-					religion = eastern_oppian
-					region = maky_region
-				}
-			}
-			else_if = {
-				limit = {
-					religion = animism
-				}
-				num_of_owned_provinces_with = {
-					value = 10
-					religion = animism
-					region = maky_region
-				}
-			}
-			else_if = {
-				limit = {
-					religion = bosisi
-				}
-				num_of_owned_provinces_with = {
-					value = 10
-					religion = bosisi
-					region = maky_region
-				}
-			}
-			else_if = {
-				limit = {
-					religion_group = lathvy_group
-				}
-				num_of_owned_provinces_with = {
-					value = 10
-					religion_group = lathvy_group
-					region = maky_region
-				}
+			num_of_owned_provinces_with = {
+				value = 10
+				religion = ROOT
+				region = maky_region
 			}
 		}
 		effect = {
