@@ -105,6 +105,9 @@ on_startup = {
 
 		#Kinvirel mechanics setup
 		jasua.26
+
+		#Pexto diocese setup
+		pextoglazia.43
 	}
 	events = { #after the others so it spawns on top
 		gamesetup.1

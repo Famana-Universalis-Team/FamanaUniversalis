@@ -110,6 +110,7 @@ country_event = { #lathvy conversion
 			religion_group = north_estali
 			religion = animism
 		}
+		NOT = { religon = maschi }
 		NOT = { has_country_flag = lathvy_convert_fired }
 		NOT = { has_country_modifier = yomtanian_nation }
 		NOT = {

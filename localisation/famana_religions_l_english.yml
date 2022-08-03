@@ -602,15 +602,15 @@
  gotzli_rebels_desc:0 "Religious fanatics tend to rise up in provinces controlled by nations of a different faith. They seek to spread their faith and smite all unbelievers."
  gotzli_rebels_army:0 "$RELIGION$ Army"
 
- lukschan_R:0 "Maschi"
- lukschan_R_religion_desc:0 "The Maschi religion is a collection of tribal customs and beliefs. Moon worship and Matriarchy are major parts of the religion."
+ maschi:0 "Maschi"
+ maschi_religion_desc:0 "The Maschi religion is a collection of tribal customs and beliefs. Moon worship and Matriarchy are major parts of the religion."
 
- lukschan_R_rebels_demand:0 "Convert $COUNTRYNAME$"
- lukschan_R_rebels_demand_desc:0 "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
- lukschan_R_rebels_title:0 "Religious"
- lukschan_R_rebels_name:0 "$RELIGION$ Zealots"
- lukschan_R_rebels_desc:0 "Religious fanatics tend to rise up in provinces controlled by nations of a different faith. They seek to spread their faith and smite all unbelievers."
- lukschan_R_rebels_army:0 "$RELIGION$ Army"
+ maschi_rebels_demand:0 "Convert $COUNTRYNAME$"
+ maschi_rebels_demand_desc:0 "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
+ maschi_rebels_title:0 "Religious"
+ maschi_rebels_name:0 "$RELIGION$ Zealots"
+ maschi_rebels_desc:0 "Religious fanatics tend to rise up in provinces controlled by nations of a different faith. They seek to spread their faith and smite all unbelievers."
+ maschi_rebels_army:0 "$RELIGION$ Army"
 
  naravami:0 "Torviya"
  naravami_religion_desc:0 "§YTorviya§! countries can gain §YChurch Power§! by raiding coasts, winning wars and winning battles. Losing wars will cause you to lose §YChurch Power§!.\n\nThe Torviya religion represents the various tribal beliefs of the Naravami people. Adherents of Torviya have varying regional differences, but generally, they believe in the ice gods beyond the great Naravami Mountains. Animal sacrifice plays a major part."

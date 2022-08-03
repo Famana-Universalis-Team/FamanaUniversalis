@@ -1611,3 +1611,192 @@ country_event = { #Railroad pexto save
 		ai_chance = { factor = 1 }
 	}
 }
+
+country_event = { #country clone event fix (startup)
+	id = pextoglazia.43
+    hidden = yes
+    is_triggered_only = yes
+
+	trigger = {
+		OR = {
+			tag = PLM
+			tag = PTG
+			tag = PHL
+			tag = PCG
+			tag = PJS
+			tag = PPX
+			tag = PLY
+			tag = PNV
+		}
+		NOT = { has_country_flag = isPextoDiocese }
+		NOT = { is_year = 213 }
+	}
+
+	immediate = {
+        set_country_flag = isPextoDiocese
+    }
+
+    option = {
+        name = pextoglazia.43.a
+        ai_chance = { factor = 1 }
+    }
+}
+
+country_event = { #country clone event fix
+	id = pextoglazia.44
+    hidden = yes
+
+	trigger = {
+		has_country_flag = isPextoDiocese
+		OR = {
+			tag = LOM
+			tag = TER
+			tag = CEG
+			tag = JNS
+			tag = HIL
+			tag = PIX
+			tag = NVI
+			tag = LAY
+		}
+		OR = {
+			exists = PLM
+			exists = PTG
+			exists = PCG
+			exists = PJS
+			exists = PHL
+			exists = PPX
+			exists = PNV
+			exists = PLY
+		}
+	}
+
+	#mean_time_to_happen = {
+	#	months = 1
+	#}
+
+	immediate = {
+        if = {
+			limit = {
+				tag = LOM
+				exists = PLM
+			}
+			PLM = {
+				every_owned_province = {
+					cede_province = LOM
+				}
+			}
+		}
+		if = {
+			limit = {
+				tag = TER
+				exists = PTG
+			}
+			PTG = {
+				every_owned_province = {
+					cede_province = TER
+				}
+			}
+		}
+		if = {
+			limit = {
+				tag = HIL
+				exists = PHL
+			}
+			PHL = {
+				every_owned_province = {
+					cede_province = HIL
+				}
+			}
+		}
+		if = {
+			limit = {
+				tag = CEG
+				exists = PCG
+			}
+			PCG = {
+				every_owned_province = {
+					cede_province = CEG
+				}
+			}
+		}
+		if = {
+			limit = {
+				tag = JNS
+				exists = PJS
+			}
+			PJS = {
+				every_owned_province = {
+					cede_province = JNS
+				}
+			}
+		}
+		if = {
+			limit = {
+				tag = PIX
+				exists = PPX
+			}
+			PPX = {
+				every_owned_province = {
+					cede_province = PIX
+				}
+			}
+		}
+		if = {
+			limit = {
+				tag = LAY
+				exists = PLY
+			}
+			PLY = {
+				every_owned_province = {
+					cede_province = LAY
+				}
+			}
+		}
+		if = {
+			limit = {
+				tag = NVI
+				exists = PNV
+			}
+			PNV = {
+				every_owned_province = {
+					cede_province = NVI
+				}
+			}
+		}
+    }
+
+    option = {
+        name = pextoglazia.44.a
+        ai_chance = { factor = 1 }
+    }
+}
+
+country_event = { #delete pex cores
+	id = pextoglazia.45
+    hidden = yes
+    fire_only_once = yes
+
+	trigger = {
+		owns = 5337
+		NOT = { exists = PEX }
+	}
+
+	immediate = {
+		every_province = {
+			limit = {
+				OR = {
+					is_permanent_claim = PEX
+					is_claim = PEX
+					is_core = PEX
+				}
+			}
+			remove_claim = PEX
+			remove_core = PEX
+		}
+    }
+
+    option = {
+        name = pextoglazia.45.a
+        ai_chance = { factor = 1 }
+    }
+}

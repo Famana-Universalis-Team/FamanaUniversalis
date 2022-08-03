@@ -832,7 +832,7 @@ country_decisions = {
 				is_city = yes
 				region = moria_region
 		    }
-			army_size = 30
+			#army_size = 20
 		}
 		effect = {
 			restore_country_name = yes
@@ -879,6 +879,7 @@ country_decisions = {
 				}
 				NOT = { has_country_flag = shiria_formed }
 				was_never_end_game_tag_trigger = yes
+				NOT = { has_country_flag = golden_mea_formed }
 			}
 		}
 		provinces_to_highlight = {
@@ -1007,6 +1008,7 @@ country_decisions = {
 				culture_group = Xalian
 				religion = vinian
 				was_never_end_game_tag_trigger = yes
+				NOT = { has_country_flag = golden_mea_formed }
 			}
 		}
 		provinces_to_highlight = {
@@ -1114,6 +1116,7 @@ country_decisions = {
 				culture_group = Xalian
 				religion = delkian
 				was_never_end_game_tag_trigger = yes
+				NOT = { has_country_flag = golden_mea_formed }
 			}
 		}
 		provinces_to_highlight = {
@@ -1195,6 +1198,7 @@ country_decisions = {
 				culture_group = Xalian
 				religion = morian
 				was_never_end_game_tag_trigger = yes
+				NOT = { has_country_flag = golden_mea_formed }
 			}
 		}
 		provinces_to_highlight = {
@@ -1895,14 +1899,38 @@ country_decisions = {
 	reform_pexto_decision = {
 		potential = {
 			OR = {
-				tag=PLM
-				tag=PPX
-				tag=PTG
-				tag=PCG
-				tag=PHL
-				tag=PLY
-				tag=PJS
-				tag=PNV
+				AND = {
+					tag = PLM
+					NOT = { exists = LOM }
+				}
+				AND = {
+					tag = PTG
+					NOT = { exists = TER }
+				}
+				AND = {
+					tag = PCG
+					NOT = { exists = CEG }
+				}
+				AND = {
+					tag = PHL
+					NOT = { exists = HIL }
+				}
+				AND = {
+					tag = PJS
+					NOT = { exists = JNS }
+				}
+				AND = {
+					tag = PNV
+					NOT = { exists = NVI }
+				}
+				AND = {
+					tag = PPX
+					NOT = { exists = PIX }
+				}
+				AND = {
+					tag = PLY
+					NOT = { exists = LAY }
+				}
 			}
 		}
 		allow = {

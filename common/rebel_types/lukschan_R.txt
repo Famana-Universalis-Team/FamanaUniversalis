@@ -3,13 +3,13 @@
 ######################################################################
 # lukscha rebels. Disgruntled fanatics.
 ######################################################################
-lukschan_R_rebels = {
+maschi_rebels = {
 
 	color = { 229 196 56 }
 
 	area = nation 					# Sticks to provinces of their nation
 	government = theocracy 			# Desires Theocracy
-	religion = lukschan_R
+	religion = maschi
 	defection = none				# Will not defect
 	defect_delay = 120				# Held provinces will auto-defect after 18 months, regardless of accept/enforce demands.
 	independence = none				# Does not strive for independence
@@ -47,7 +47,7 @@ lukschan_R_rebels = {
 		}
 		modifier = {
 			factor = 0.0
-			NOT = { religion = lukschan_R }
+			NOT = { religion = maschi }
 		}
 		modifier = {
 			factor = 0.001
@@ -92,21 +92,21 @@ lukschan_R_rebels = {
 		}
 		modifier = {
 			factor = 0.0
-			religion = lukschan_R
-			owner = { religion = lukschan_R }
+			religion = maschi
+			owner = { religion = maschi }
 		}
 		modifier = {
 			factor = 2.0
-			NOT = { religion = lukschan_R }
+			NOT = { religion = maschi }
 			any_neighbor_province = {
-	 			religion = lukschan_R
+	 			religion = maschi
 	 			NOT = { has_province_modifier = "forced_conversion" }
 	 		}
 	 	}
 		modifier = {
 			factor = 5
 			has_missionary = yes
-			religion = lukschan_R
+			religion = maschi
 		}
 		modifier = {
 			factor = 1.5
@@ -137,9 +137,9 @@ lukschan_R_rebels = {
 			if = {
 				limit = {
 					OR = {
-						religion = lukschan_R
+						religion = maschi
 						is_reformation_center = yes
-						owner = { religion = lukschan_R }
+						owner = { religion = maschi }
 					}
 				}
 				add_province_modifier = {
@@ -149,11 +149,11 @@ lukschan_R_rebels = {
 			}
 			if = {
 				limit = {
-					NOT = { religion = lukschan_R }
+					NOT = { religion = maschi }
 					is_reformation_center = no
-					NOT = { owner = { religion = lukschan_R } }
+					NOT = { owner = { religion = maschi } }
 				}
-				change_religion = lukschan_R
+				change_religion = maschi
 				add_province_modifier = {
 					name = "forced_conversion"
 					duration = 730
@@ -173,7 +173,7 @@ lukschan_R_rebels = {
 	can_negotiate_trigger = {
 		OR = {
 			religion_group = north_estali
-			dominant_religion = lukschan_R
+			dominant_religion = maschi
 		}
 	}
 	
@@ -183,7 +183,7 @@ lukschan_R_rebels = {
 	}
 	
 	# Localisation for their demands
-	demands_description = "lukschan_R_rebels_demand"
+	demands_description = "maschi_rebels_demand"
 	
 	# Country Scope	
 	demands_enforced_effect = {
@@ -214,7 +214,7 @@ lukschan_R_rebels = {
 		}
 		if = {
 			limit = {
-				religion = lukschan_R
+				religion = maschi
 			}
 			add_country_modifier = {
 				name = "religious_intolerance_enforced"
@@ -223,7 +223,7 @@ lukschan_R_rebels = {
 		}
 		if = {
 			limit = {
-				religion = lukschan_R
+				religion = maschi
 				has_estate = estate_church
 				NOT = {
 					has_estate_influence_modifier = {
@@ -241,17 +241,17 @@ lukschan_R_rebels = {
 		}
 		if = {
 			limit = {
-				NOT = { religion = lukschan_R }
-				dominant_religion = lukschan_R
+				NOT = { religion = maschi }
+				dominant_religion = maschi
 				NOT = { tag = PAP }
 			}
-			change_religion = lukschan_R
+			change_religion = maschi
 			force_converted = yes
 		}
 		if = {
 			limit = {
-				NOT = { religion = lukschan_R }
-				NOT = { dominant_religion = lukschan_R }
+				NOT = { religion = maschi }
+				NOT = { dominant_religion = maschi }
 				NOT = { tag = PAP }
 				NOT = { has_country_modifier = heretic_tolerance }
 				religion_group = north_estali

@@ -2835,3 +2835,43 @@ MAA_ideas = {
 		diplomats = 1
 	}
 }
+
+HLK_ideas = {
+	start = {
+		diplomats = 1
+		enemy_core_creation	= 1.0
+	}
+	
+	bonus = {
+		leader_land_fire = 1
+	}
+
+	trigger = {
+		tag = HLK
+	}
+	free = yes
+	
+	hlk_1 = {
+		land_forcelimit_modifier = 0.10
+	}
+	hlk_2 = {
+		improve_relation_modifier = 0.10
+		diplomatic_reputation = 1
+	}
+	hlk_3 = {
+		artillery_power	= 0.15
+	}
+	hlk_4 = {
+		artillery_cost = -0.10
+	}
+	hlk_5 = {
+		vassal_forcelimit_bonus = 0.33
+		diplomatic_annexation_cost = -0.10
+	}
+	hlk_6 = {
+		backrow_artillery_damage = 0.10
+	}
+	hlk_7 = {
+		fire_damage = 0.10
+	}
+}
