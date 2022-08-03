@@ -198,6 +198,12 @@ country_decisions = {
 			}
 			add_core = 5139
 			add_core = 5138
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
 			add_country_modifier = {
 				name = "centralization_modifier"
 				duration = 7300
