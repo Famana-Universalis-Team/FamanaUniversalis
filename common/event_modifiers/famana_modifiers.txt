@@ -1292,3 +1292,24 @@ naf_settle_malpix = {
     colonists = 1
     global_colonial_growth = 40
 }
+
+naf_cutting_edge = {
+    prestige = 1
+    production_efficiency = 0.10
+}
+
+naf_great_innovator = {
+    embracement_cost = -0.33
+    advisor_pool = 2
+}
+
+naf_armytradmerchant_cooldown = {}
+
+naf_greater_gomic_market = {
+    trade_efficiency = 0.15
+    global_autonomy = -0.025
+}
+
+naf_get_vanoman_tech = {
+    technology_cost = -0.05
+}

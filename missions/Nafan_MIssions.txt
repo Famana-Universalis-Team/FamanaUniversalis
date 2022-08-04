@@ -543,11 +543,17 @@ nafa_1 = {
                 name = nafaBigNavy
                 duration = 27375
             }
-            5583 = {
-                create_flagship = {    
-                    name = "Eresidar"
-                    type = galley
+            if = {
+                limit = {
+                    owns = 5583
                 }
+                5583 = {
+                    create_flagship = {    
+                        name = "Eresidar"
+                        type = galley
+                    }
+                }
+                custom_tooltip = famanaSpace
             }
             custom_tooltip = nafGrandNavyIf
             hidden_effect = {
@@ -852,10 +858,39 @@ nafa_1 = {
         required_missions = { naf_propagate_the_edolyssa }
         position = 18
         trigger = {
-            
+            num_of_owned_provinces_with	= {
+                value = 5
+                province_has_center_of_trade_of_level = 3
+            }
+            if = {
+                limit = {
+                    dip_tech = 22
+                }
+                stock_exchange = 15
+            }
+            else = {
+                if = {
+                    limit = {
+                        dip_tech = 17
+                    }
+                    trade_depot = 25
+                }
+            }
+            else = {
+                marketplace = 50
+            }
+            estate_loyalty = {
+                estate = estate_burghers
+                loyalty = 65
+            }
         }
         effect = {
-            
+            custom_tooltip = nafMercTC
+            set_country_flag = nafaGetMercantilism
+            add_country_modifier = {
+                name = naf_greater_gomic_market
+                duration = 18250
+            }
         }
         #provinces_to_highlight = {}
     }
@@ -1124,7 +1159,7 @@ nafa_2 = {
 			}
         }
         effect = {
-            set_country_flag = nafaBlockCruel
+            #set_country_flag = nafaBlockCruel
             custom_tooltip = nafaBlockCruelTooltip
             add_yearly_sailors = 5.0
             custom_tooltip = nafaColonize1
@@ -1864,12 +1899,57 @@ nafa_2 = {
         required_missions = { naf_propagate_the_edolyssa }
         position = 18
         trigger = {
-            
+            NOT = {
+                any_owned_province = {
+                    has_province_modifier = slaves_raided
+                }
+            }
+            5002 = {
+                highest_value_trade_node = yes
+                trade_share = {
+                    country = ROOT
+                    share = 100
+                }
+            }
+            5196 = {
+                trade_share = {
+                    country = ROOT
+                    share = 100
+                }
+            }
+            trade_efficiency = 0.50
+            trading_bonus = {
+	            trade_goods = cloth
+	            value = yes
+            }
+            if = {
+                limit = {
+                    has_dlc = "Cradle of Civilization"
+                }
+                trader = 5
+            }
+            else = {
+                trader = 3
+            }
         }
         effect = {
-            
+            add_mercantilism = 5
+            add_years_of_owned_provinces_production_income = {
+                years = 2
+                trigger = {
+                    trade_goods = cloth
+                }
+                custom_tooltip = nafaGetClothBonus
+            }
+            custom_tooltip = nafGetArmyTradMerchant
+            set_country_flag = naf_army_merchant_flag
         }
-        #provinces_to_highlight = {}
+        provinces_to_highlight = {
+            OR = {
+                province_id = 5002
+                province_id = 5196
+            }
+        }
     }
 }
 
@@ -2430,10 +2510,42 @@ nafa_3 = {
         required_missions = { naf_propagate_the_edolyssa }
         position = 18
         trigger = {
-            
+            OR = {
+                innovativeness = 75
+                full_idea_group	= innovative_ideas
+            }
+            custom_trigger_tooltip = {
+				tooltip = obj_ahead_of_tech_tooltip
+				NOT = {
+					OR = {
+						any_neighbor_country = {
+							tech_difference = 0
+						}
+					}
+				}
+			}
+            natural_scientist = 3
         }
         effect = {
-            
+            change_government_reform_progress = 50
+            #set_country_flag = nafaIncreaseScholar
+            custom_tooltip = nafaIncreaseScholarTooltip
+            add_country_modifier = {
+                name = naf_cutting_edge
+                duration = 9125
+            }
+            custom_tooltip = nafGreatInnovator
+            if = {
+                limit = {
+                    innovativeness = 100
+                }
+                hidden_effect = {
+                    add_ruler_modifier = {
+                        name = naf_great_innovator
+                        duration = -1
+                    }
+                }
+            }
         }
         #provinces_to_highlight = {}
     }
@@ -2710,12 +2822,47 @@ nafa_4 = {
         required_missions = { naf_aresian_incursion }
         position = 9
         trigger = {
-            
+            vanoma_region = {
+				type = all
+                OR = {
+                    country_or_non_sovereign_subject_holds = ROOT
+                    is_empty = yes
+                }
+			}
+            aresia_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+            num_of_owned_provinces_with	= {
+                value = 15
+                region = aresia_region
+                religion = ROOT
+            }
         }
         effect = {
-            custom_tooltip = annexVanomaMaybe
+            if = {
+                limit = {
+                    VAN = { is_subject_of = NAF }
+                }
+                inherit = VAN
+                add_dip_power = -400
+            }
+            add_country_modifier = {
+                name = naf_get_vanoman_tech
+                duration = 27375
+            }
+            custom_tooltip = addHarmonicEventandSettlingOfEasternEstal
         }
-        #provinces_to_highlight = {}
+        provinces_to_highlight = {
+            NOT = { country_or_non_sovereign_subject_holds = ROOT }
+            OR = {
+                region = aresia_region
+                AND = {
+                    region = vanoma_region
+                    NOT = { is_empty = yes }
+                }
+            }
+        }
     }
 
     naf_fortify_gatria = {
@@ -2759,7 +2906,7 @@ nafa_4 = {
             }
         }
         effect = {
-            set_country_flag = nafNotControllingTonmo
+            #set_country_flag = nafNotControllingTonmo
             custom_tooltip = nafaNotControllingTonmoTooltip
             vadorvador_area = {
                 add_province_modifier = {
@@ -2780,20 +2927,20 @@ nafa_4 = {
         icon = mission_invade_the_deccan_dlh
         required_missions = { naf_intervene_in_oppia }
         position = 11
-        trigger = { #needs highlight
+        trigger = {
             upper_oppia_region = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
-			} #ONLY COLONIZED ????
+			}
             lower_oppia_region = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
         }
         effect = {
-            
+            custom_tooltip = eventForCrownOfEmintasAlsoMaybeAnnexYourSubjectForFree
         }
-        provinces_to_highlight = { #
+        provinces_to_highlight = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
             OR = {
                 region = upper_oppia_region
@@ -3011,7 +3158,13 @@ nafa_5 = {
         required_missions = {  }
         position = 11
         trigger = {
-            
+            religion_group = lathvy_group
+            philosopher = 3
+            OR = {
+                innovativeness = 50
+                full_idea_group = religious_ideas
+                full_idea_group = humanist_ideas
+            }
         }
         effect = {
             

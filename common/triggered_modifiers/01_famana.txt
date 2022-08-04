@@ -157,7 +157,7 @@ naf_nhoma_defense = {
         tag = NAF
     }
     trigger = {
-        has_country_flag = nafNotControllingTonmo
+        mission_completed = naf_fortify_gatria
         NOT = {
             any_owned_province = {
                 superregion = nhoma_superregion

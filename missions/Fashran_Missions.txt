@@ -622,9 +622,9 @@ fas_2 = {
 		}
 		effect = {
 			change_mil = 1
-			hidden_effect = {
-                set_country_flag = fas_bold_fighter_chance
-            }
+			#hidden_effect = {
+            #    set_country_flag = fas_bold_fighter_chance
+            #}
             custom_tooltip = fas_bold_fighter_personality
 			south_xalia_region = { add_permanent_claim = ROOT }
 			moria_region = { add_permanent_claim = ROOT }

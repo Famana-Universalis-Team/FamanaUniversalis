@@ -385,3 +385,167 @@ country_event = {
         ai_chance = { factor = 1 }
     }
 }
+
+country_event = {
+    id = nafa.8
+    hidden = yes
+
+    trigger = {
+        tag = NAF
+        has_country_flag = naf_army_merchant_flag
+        NOT = { has_country_modifier = naf_armytradmerchant_cooldown }
+    }
+
+    mean_time_to_happen = {
+        days = 1
+    }
+
+    immediate = {
+        add_country_modifier = {
+            name = naf_armytradmerchant_cooldown
+            hidden = yes
+            duration = 365
+        }
+        if = {
+            limit = {
+                5002 = {
+                    has_merchant = PREV
+                }
+            }
+            add_army_tradition = 0.1
+        }
+        if = {
+            limit = {
+                4997 = {
+                    has_merchant = PREV
+                }
+            }
+            add_army_tradition = 0.1
+        }
+        if = {
+            limit = {
+                5321 = {
+                    has_merchant = PREV
+                }
+            }
+            add_army_tradition = 0.1
+        }
+        if = {
+            limit = {
+                4982 = {
+                    has_merchant = PREV
+                }
+            }
+            add_army_tradition = 0.1
+        }
+        if = {
+            limit = {
+                5218 = {
+                    has_merchant = PREV
+                }
+            }
+            add_army_tradition = 0.1
+        }
+        if = {
+            limit = {
+                4981 = {
+                    has_merchant = PREV
+                }
+            }
+            add_army_tradition = 0.1
+        }
+        if = {
+            limit = {
+                5066 = {
+                    has_merchant = PREV
+                }
+            }
+            add_army_tradition = 0.1
+        }
+        if = {
+            limit = {
+                5103 = {
+                    has_merchant = PREV
+                }
+            }
+            add_army_tradition = 0.1
+        }
+        if = {
+            limit = {
+                5121 = {
+                    has_merchant = PREV
+                }
+            }
+            add_army_tradition = 0.1
+        }
+        if = {
+            limit = {
+                5140 = {
+                    has_merchant = PREV
+                }
+            }
+            add_army_tradition = 0.1
+        }
+        if = {
+            limit = {
+                5442 = {
+                    has_merchant = PREV
+                }
+            }
+            add_army_tradition = 0.1
+        }
+        if = {
+            limit = {
+                5552 = {
+                    has_merchant = PREV
+                }
+            }
+            add_army_tradition = 0.1
+        }
+        if = {
+            limit = {
+                5388 = {
+                    has_merchant = PREV
+                }
+            }
+            add_army_tradition = 0.1
+        }
+        if = {
+            limit = {
+                5361 = {
+                    has_merchant = PREV
+                }
+            }
+            add_army_tradition = 0.1
+        }
+        if = {
+            limit = {
+                5167 = {
+                    has_merchant = PREV
+                }
+            }
+            add_army_tradition = 0.1
+        }
+        if = {
+            limit = {
+                5196 = {
+                    has_merchant = PREV
+                }
+            }
+            add_army_tradition = 0.1
+        }
+        if = {
+            limit = {
+                5481 = {
+                    has_merchant = PREV
+                }
+            }
+            add_army_tradition = 0.1
+        }
+    }
+
+    option = {
+        name = nafa.8.a
+        ai_chance = { factor = 1 }
+    }
+}

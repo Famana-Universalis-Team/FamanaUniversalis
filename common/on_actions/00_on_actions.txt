@@ -3827,7 +3827,16 @@ on_trade_company_investment = {
 }
 
 on_center_of_trade_upgrade = {
-
+	if = {
+		limit = {
+			owner = {
+				has_country_flag = nafaGetMercantilism
+			}
+		}
+		owner = {
+			add_mercantilism = 1
+		}
+	}
 }
 
 on_center_of_trade_downgrade = {
