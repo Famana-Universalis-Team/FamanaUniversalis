@@ -1053,6 +1053,10 @@ country_decisions = {
 			capital_scope = {
 			region = nhoma_region
 			}
+			NOT = {
+				tag = NHM
+				ai = yes
+			}
 		}
 		provinces_to_highlight = {
 			OR = {
@@ -1093,6 +1097,10 @@ country_decisions = {
 			}
 			capital_scope = {
 			region = nhoma_region
+			}
+			NOT = {
+				tag = NHM
+				ai = yes
 			}
 		}
 		provinces_to_highlight = {
@@ -1152,6 +1160,10 @@ country_decisions = {
 			capital_scope = {
 			region = nhoma_region
 			}
+			NOT = {
+				tag = NHM
+				ai = yes
+			}
 		}
 		provinces_to_highlight = {
 			OR = {
@@ -1200,6 +1212,10 @@ country_decisions = {
 			capital_scope = {
 			region = nhoma_region
 			}
+			NOT = {
+				tag = NHM
+				ai = yes
+			}
 		}
 		provinces_to_highlight = {
 			OR = {
@@ -1247,6 +1263,10 @@ country_decisions = {
 			capital_scope = {
 			region = nhoma_region
 			}
+			NOT = {
+				tag = NHM
+				ai = yes
+			}
 		}
 		provinces_to_highlight = {
 			OR = {
@@ -1288,6 +1308,10 @@ country_decisions = {
 			}
 			capital_scope = {
 				region = nhoma_region
+			}
+			NOT = {
+				tag = NHM
+				ai = yes
 			}
 		}
 		provinces_to_highlight = {

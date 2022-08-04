@@ -77,3 +77,28 @@ naf_tight_grip = {
     local_governing_cost = -0.50
     local_unrest = -2
 }
+
+npx_kicked_out_glazians = {
+    local_unrest = 10
+}
+
+npx_recent_glazian_settlement = {
+    local_development_cost = -0.10
+    trade_goods_size_modifier = 0.25
+}
+
+npx_recent_smaller_glazian_settlement = {
+    local_development_cost = -0.10
+}
+
+naf_imperial_hospital = {
+    local_manpower_modifier = 0.25
+    local_sailors_modifier = 0.25
+    supply_limit_modifier = 0.10
+    local_monthly_devastation = -0.10
+}
+
+naf_benefits_of_edolyssa = {
+    local_development_cost = -0.10
+    local_friendly_movement_speed = 0.15
+}

@@ -575,11 +575,7 @@ country_decisions = {
 			hidden_effect = {
 				every_owned_province = {
 					limit = {
-						OR = {
-							culture = Hoxan
-							culture = Blastan
-							culture = Zoblotran
-						}
+						culture_group = Hoxoi
 					}
 					change_culture = Neo_Oppian
 				}

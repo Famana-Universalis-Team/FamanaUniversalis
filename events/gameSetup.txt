@@ -29,6 +29,7 @@ country_event = {
 
 	trigger = {
 		NOT = { has_global_flag = game_is_setup }
+		NOT = { has_country_flag = dismissedStartup }
 		ai = no
 		NOT = { is_year = 213 }
 	}
@@ -192,6 +193,7 @@ country_event = {
 		ai_chance = { factor = 10 }
 		highlight = yes
 		custom_tooltip = ignore_gamesetup_tt
+		set_country_flag = dismissedStartup
 		clr_country_flag = countryPextoglaziaDefault
 		clr_country_flag = countryPextoglaziaSurvive
 		clr_country_flag = countryPextoglaziaDies

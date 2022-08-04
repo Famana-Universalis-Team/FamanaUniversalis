@@ -3776,10 +3776,11 @@ on_regiment_recruited = {
 on_mercenary_recruited = {
 	if = {
 		limit = {
-			OR = {
-				FROM = { NOT = { has_country_flag = oyo_cavalry_do_not_consume_ap } }
-				ROOT = { NOT = { mercenary_company = merc_oyo_cavalry } }
-			}
+			ROOT = { NOT = { mercenary_company = merc_iakperko_guard } }
+			ROOT = { NOT = { mercenary_company = merc_feniki_marines } }
+			ROOT = { NOT = { mercenary_company = merc_quanex_guard } }
+			ROOT = { NOT = { mercenary_company = merc_jzoets } }
+			ROOT = { NOT = { mercenary_company = merc_jzoets_buffed } }
 		}
 		FROM = {
 			add_army_professionalism = -0.05

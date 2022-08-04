@@ -562,6 +562,9 @@ country_event = {
             grant_independence = yes
         }
         create_guarantee = EHZ
+        EHZ = {
+            change_religion = gotzli
+        }
         6634 = {
 			limit = { 
 				is_empty = yes

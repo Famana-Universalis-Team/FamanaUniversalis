@@ -1800,3 +1800,190 @@ country_event = { #delete pex cores
         ai_chance = { factor = 1 }
     }
 }
+
+country_event = { #Glazians settle in new pexamol
+	id = pextoglazia.46
+	title = pextoglazia.46.t
+	desc = pextoglazia.46.desc
+	picture = EUROPEAN_REFUGEES_eventPicture
+	fire_only_once = yes
+
+	trigger = {
+		owns_core_province = 5203
+		NOT = { exists = PEX }
+		NOT = { 5203 = { culture = Glazian } }
+		NOT = { primary_culture = Glazian }
+		is_year = 240
+		NOT = { is_year = 300 }
+	}
+
+	mean_time_to_happen = {
+		months = 36
+	}
+
+	option = { #New Pexamol 1: Allow them to stay
+        name = pextoglazia.46.a
+        ai_chance = {
+			factor = 10 
+			modifier = {
+				factor = 0.5
+				NOT = { num_of_cities = 2 }
+			}
+		}
+		trigger = {
+			tag = NPX
+		}
+		add_prestige = -10
+		5203 = {
+			add_base_tax = 1
+			add_province_modifier = {
+				name = npx_recent_smaller_glazian_settlement
+				duration = 7300
+			}
+		}
+		hidden_effect = {
+			random_province	= {
+				limit = {
+					culture = Glazian
+					region = lomea_region
+				}
+				add_base_tax = -1
+			}
+		}
+    }
+
+	option = { #New Pexamol 2: Embrace Glazian culture
+        name = pextoglazia.46.b
+        ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0.1
+				NOT = { num_of_cities = 2 }
+			}
+			modifier = {
+				factor = 5
+				any_owned_province = { culture = Glazian }
+			}
+		}
+		trigger = {
+			tag = NPX
+		}
+		add_prestige = -25
+		change_primary_culture = Glazian
+		5203 = {
+			add_base_tax = 1
+			add_base_production = 1
+			add_base_manpower = 1
+			change_culture = Glazian
+			add_province_modifier = {
+				name = npx_recent_glazian_settlement
+				duration = 7300
+			}
+		}
+		hidden_effect = {
+			random_province	= {
+				limit = {
+					culture = Glazian
+					region = lomea_region
+				}
+				add_base_tax = -1
+			}
+			random_province	= {
+				limit = {
+					culture = Glazian
+					region = lomea_region
+				}
+				add_base_production = -1
+			}
+			random_province	= {
+				limit = {
+					culture = Glazian
+					region = lomea_region
+				}
+				add_base_manpower = -1
+			}
+		}
+    }
+
+	option = { #New Pexamol 3: Kick them out
+        name = pextoglazia.46.c
+        ai_chance = { factor = 2 }
+		trigger = {
+			tag = NPX
+		}
+		add_stability = -1
+		5203 = {
+			add_province_modifier = {
+				name = npx_kicked_out_glazians
+				duration = 1825
+			}
+		}
+    }
+
+	option = { #Let them stay
+        name = pextoglazia.46.d
+        ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 100
+				primary_culture = Glazian
+			}
+		}
+		trigger = {
+			NOT = { tag = NPX }
+		}
+		5203 = {
+			add_base_tax = 1
+			add_base_production = 1
+			add_base_manpower = 1
+			change_culture = Glazian
+			add_province_modifier = {
+				name = npx_recent_glazian_settlement
+				duration = 7300
+			}
+		}
+		hidden_effect = {
+			random_province	= {
+				limit = {
+					culture = Glazian
+					region = lomea_region
+				}
+				add_base_tax = -1
+			}
+			random_province	= {
+				limit = {
+					culture = Glazian
+					region = lomea_region
+				}
+				add_base_production = -1
+			}
+			random_province	= {
+				limit = {
+					culture = Glazian
+					region = lomea_region
+				}
+				add_base_manpower = -1
+			}
+		}
+    }
+
+	option = { #Kick them out
+        name = pextoglazia.46.e
+        ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 10
+				tag = POM
+			}
+		}
+		trigger = {
+			NOT = { tag = NPX }
+		}
+		5203 = {
+			add_province_modifier = {
+				name = npx_kicked_out_glazians
+				duration = 1825
+			}
+		}
+    }
+}
