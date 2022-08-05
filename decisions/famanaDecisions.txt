@@ -207,26 +207,20 @@ country_decisions = {
 		potential = {
             NOT = { has_global_flag = Pomlen_Destroyed }
             has_global_flag = CelzionHappened
-            OR = {
+            NOT = {
                 religious_school = {
                     group = lathvy_group
-                    school = celzian_school
-                }
-                religious_school = {
-                    group = lathvy_group
-                    school = walaran_school
-                }
-                religious_school = {
-                    group = lathvy_group
-                    school = maxan_school
-                }
-                religious_school = {
-                    group = lathvy_group
-                    school = nafan_school
+                    school = pextoglazian_school
                 }
             }
             capital_scope = {
                 superregion = west_estal_superregion
+            }
+            NOT = {
+                OR = {
+                    tag = PEX
+                    tag = NAF
+                }
             }
 		}
 		allow = {

@@ -832,12 +832,37 @@ nafa_1 = {
         required_missions = { naf_sweep_up_pextoglazia }
         position = 13
         trigger = {
-            
+            owns_core_province = 5337
+            religious_school = {
+                group = lathvy_group
+                school = nafan_school
+            }
+            is_defender_of_faith = yes
+            piety = 1
+            prestige = 75
         }
         effect = {
-            
+            custom_tooltip = nafDestroyPextoTemple
+            custom_tooltip = nafaChangeAllPextoglaziansIntoNafanSchool
+            hidden_effect = {
+                set_global_flag = Pomlen_Destroyed
+                every_known_country = {
+                    limit = {
+                        religious_school = {
+                            group = lathvy_group
+                            school = pextoglazian_school
+                        }
+                    }
+                    set_religious_school = {
+                        group = lathvy_group
+                        school = nafan_school
+                    }
+                }
+            }
         }
-        #provinces_to_highlight = {}
+        provinces_to_highlight = {
+            province_id = 5337
+        }
     }
 
     naf_persuade_remaining_heretics = {
@@ -2587,9 +2612,30 @@ nafa_4 = {
             fort_15th = 5
         }
         effect = {
-            
+            add_yearly_manpower = 2.5
+            8849 = {
+                add_province_modifier = {
+                    name = naf_defense_fashros
+                    duration = -1
+                }
+            }
+            8850 = {
+                add_province_modifier = {
+                    name = naf_defense_fashros
+                    duration = -1
+                }
+            }
+            5486 = {
+                add_province_modifier = {
+                    name = naf_defense_fashros
+                    duration = -1
+                }
+            }
         }
-        #provinces_to_highlight = {}
+        provinces_to_highlight = {
+            NOT = { country_or_non_sovereign_subject_holds = ROOT }
+            region = stroktur_region
+        }
     }
 
     naf_partition_moxon = {
@@ -2678,26 +2724,16 @@ nafa_4 = {
         effect = {
             custom_tooltip = nafaChangeAllMaxansIntoNafanSchool
             hidden_effect = {
-                if = {
+                every_known_country = {
                     limit = {
-                        any_country = {
-                            religious_school = {
-                                group = lathvy_group
-                                school = maxan_school
-                            }
+                        religious_school = {
+                            group = lathvy_group
+                            school = maxan_school
                         }
                     }
-                    every_known_country = {
-                        limit = {
-                            religious_school = {
-                                group = lathvy_group
-                                school = maxan_school
-                            }
-                        }
-                        set_religious_school = {
-                            group = lathvy_group
-                            school = nafan_school
-                        }
+                    set_religious_school = {
+                        group = lathvy_group
+                        school = nafan_school
                     }
                 }
             }
@@ -2782,6 +2818,7 @@ nafa_4 = {
                 every_owned_province = {
                     limit = {
                         region = aresia_region
+                        NOT = { religion = tonmo }
                     }
                     add_province_modifier = {
                         name = naf_embracing_lathvy_beliefs
@@ -2849,7 +2886,7 @@ nafa_4 = {
             }
             add_country_modifier = {
                 name = naf_get_vanoman_tech
-                duration = 27375
+                duration = 9125
             }
             custom_tooltip = addHarmonicEventandSettlingOfEasternEstal
         }
@@ -2938,7 +2975,7 @@ nafa_4 = {
 			}
         }
         effect = {
-            custom_tooltip = eventForCrownOfEmintasAlsoMaybeAnnexYourSubjectForFree
+            custom_tooltip = eventForCrownOfEmintasAlsoMaybeAnnexYourSubjectForFree #An event could let you have TCK as a vassal for epic bonuses
         }
         provinces_to_highlight = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
@@ -3054,34 +3091,33 @@ nafa_5 = {
             else = {
                 num_of_allies = 4
             }
+            army_size = 40
         }
         effect = {
             if = {
                 limit = {
                     exists = KSL
                 }
-                kapolia_region = { add_permanent_claim = ROOT }
-                jasua_region = { add_permanent_claim = ROOT }
-                custom_tooltip = nafaClaimKisholi
-                hidden_effect = {
-                    every_province = {
-                        limit = {
-                            is_core = KSL
-                        }
-                        add_claim = ROOT
-                    }
+                KSL = {
+                    remove_fow = 120
                 }
-                custom_tooltip = addEventForKisholiHere #Potentially a general that converts to lathvy and defects?
+                country_event = {
+                    id = nafa.9
+                }
             }
-            else = {
-                kapolia_region = { add_permanent_claim = ROOT }
-                jasua_region = { add_permanent_claim = ROOT }
+            custom_tooltip = nafaClaimKisholi
+            hidden_effect = {
+                every_province = {
+                    limit = {
+                        is_core = KSL
+                    }
+                    add_claim = ROOT
+                }
             }
-            custom_tooltip = maybe_lift_fow_effect
+            kapolia_region = { add_permanent_claim = ROOT }
+            jasua_region = { add_permanent_claim = ROOT }
         }
-        provinces_to_highlight = {
-
-        }
+        #provinces_to_highlight = {}
     }
 
     naf_a_claim_to_jasua = {
@@ -3089,13 +3125,72 @@ nafa_5 = {
         required_missions = { naf_undermine_the_tonxara }
         position = 6
         trigger = {
-            
+            NOT = { exists = FAS }
+            if = {
+                limit = {
+                    exists = KSL
+                }
+                offensive_war_with = KSL
+            }
+            else = {
+                at_war_with_religious_enemy = yes
+            }
+            controls = 5481
+            controls = 5196
+            controls = 5644
         }
         effect = {
-
-            #if they exist, we are at war with them and they are in the disaster, we will be able to annex and core all of their provinces upon occupying them
+            add_country_modifier = {
+                name = naf_into_jasua
+                duration = 9125
+            }
+            if = {
+                limit = {
+                    exists = KSL
+                }
+                custom_tooltip = nafaAnnexKisholiEvent
+                set_country_flag = naf_allow_annex_kisholi
+                add_adm_power = -250
+            }
+            mahansha_area = {
+				add_permanent_claim = ROOT
+			}
+			shol_area = {
+				add_permanent_claim = ROOT
+			}
+			unnamed_area_11 = {
+				add_permanent_claim = ROOT
+			}
+			unnamed_area_12 = {
+				add_permanent_claim = ROOT
+			}
+			unnamed_area_48 = {
+				add_permanent_claim = ROOT
+			}
+			unnamed_area_35 = {
+				add_permanent_claim = ROOT
+			}
+			unnamed_area_45 = {
+				add_permanent_claim = ROOT
+			}
+			unnamed_area_39 = {
+				add_permanent_claim = ROOT
+			}
+			unnamed_area_44 = {
+				add_permanent_claim = ROOT
+			}
+			unnamed_area_40 = {
+				add_permanent_claim = ROOT
+			}
         }
-        #provinces_to_highlight = {}
+        provinces_to_highlight = {
+            OR = {
+                province_id = 5481
+                province_id = 5196
+                province_id = 5644
+            }
+            NOT = { controlled_by = ROOT }
+        }
     }
 
     naf_destroy_kisholi = {
@@ -3103,12 +3198,42 @@ nafa_5 = {
         required_missions = { naf_a_claim_to_jasua }
         position = 7
         trigger = {
-            
+            NOT = {
+                exists = KSL
+            }
+            num_of_owned_provinces_with	= {
+                value = 75
+                superregion = jasua_superregion
+            }
         }
         effect = {
-            
+            custom_tooltip = nafaMSinKapolia
+            hidden_effect = {
+                every_owned_province = {
+                    limit = {
+                        continent = estal
+                        religion = tonmo
+                    }
+                    add_province_modifier = {
+                        name = naf_reconvert_jasua
+                        duration = -1
+                    }
+                }
+            }
+            add_estate_loyalty = {
+                estate = estate_nobles
+                loyalty = 10
+            }
+            add_estate_loyalty = {
+                estate = estate_church
+                loyalty = 10
+            }
+            eastern_desert_region = { add_permanent_claim = ROOT }
         }
-        #provinces_to_highlight = {}
+        provinces_to_highlight = {
+            NOT = { country_or_non_sovereign_subject_holds = ROOT }
+            superregion = jasua_superregion
+        }
     }
 
     naf_consolidate_jasua = {
@@ -3116,11 +3241,31 @@ nafa_5 = {
         required_missions = { naf_destroy_kisholi }
         position = 9
         trigger = {
-            
+            NOT = {
+                any_owned_province = {
+                    superregion = jasua_superregion
+                    OR = {
+                        local_autonomy = 25
+                        unrest = 10
+                    }
+                }
+            }
+            NOT = {
+                OR = {
+                    num_of_rebel_controlled_provinces = 1
+                    num_of_rebel_armies = 1
+                }
+            }
+            eastern_desert_region = {
+                type = all
+			    country_or_non_sovereign_subject_holds = ROOT
+            }
         }
         effect = {
-            #other shit
-
+            add_country_modifier = {
+                name = naf_pacified_kisholi
+                duration = -1
+            }
             add_government_power = {
                 government_mechanic = russian_mechanic
                 which = ADM
@@ -3137,7 +3282,10 @@ nafa_5 = {
                 amount = 150
             }
         }
-        #provinces_to_highlight = {}
+        provinces_to_highlight = {
+            NOT = { country_or_non_sovereign_subject_holds = ROOT }
+            region = eastern_desert_region
+        }
     }
 
     naf_tolerate_the_kisholi = {

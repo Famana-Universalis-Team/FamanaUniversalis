@@ -1360,6 +1360,7 @@ country_event = {
 		tag = ORC
 		has_global_flag = OrdicaDisaster
 		has_country_flag = dockyardStrike
+		owns = 5719
 	}
 
 	immediate = {
@@ -1413,6 +1414,7 @@ country_event = {
 		tag = ORC
 		has_global_flag = OrdicaDisaster
 		has_country_flag = dockyardStrike
+		owns = 5699
 	}
 
 	immediate = {
@@ -1547,7 +1549,10 @@ country_event = {
 				limit = {
 					region = pextoglazia_region
 				}
-				add_unrest = 10
+				add_province_modifier = {
+					name = orc_pex_unrest
+					duration = 7300
+				}
 			}
 			every_owned_province = {
 				limit = {
@@ -1622,13 +1627,16 @@ country_event = {
 			}
 			nationalist_rebels = 3
 		}
-		every_owned_province = {
-			limit = {
-				region = pextoglazia_region
-			}
-			add_province_modifier = {
-				name = orc_pextans_angry
-				duration = 3650
+		custom_tooltip = orcPextansMad
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					region = pextoglazia_region
+				}
+				add_province_modifier = {
+					name = orc_pextans_angry
+					duration = 3650
+				}
 			}
 		}
 	}

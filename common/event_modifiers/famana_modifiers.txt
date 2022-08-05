@@ -1312,4 +1312,19 @@ naf_greater_gomic_market = {
 
 naf_get_vanoman_tech = {
     technology_cost = -0.05
+    artillery_cost = -0.10
+}
+
+naf_verakols_ideas = {
+    cavalry_power = 0.10
+    movement_speed = 0.05
+}
+
+naf_into_jasua = {
+    core_creation = -0.10
+}
+
+naf_pacified_kisholi = {
+    num_accepted_cultures = 3
+    promote_culture_cost = -0.25
 }

@@ -319,7 +319,7 @@ country_event = { #Kisholi nobles defect
 
     trigger = {
         tag = NAF
-        has_country_flag = nafaKisholiDefectFlag
+        has_country_flag = naf_allow_annex_kisholi
         offensive_war_with = KSL
         KSL = {
             ai = yes
@@ -547,5 +547,37 @@ country_event = {
     option = {
         name = nafa.8.a
         ai_chance = { factor = 1 }
+    }
+}
+
+country_event = { #Defecting kisholi general
+    id = nafa.9
+    title = nafa.9.t
+    desc = nafa.9.d
+    picture = ADVISOR_eventPicture
+    fire_only_once = yes
+    is_triggered_only = yes
+
+    option = {
+        name = nafa.9.a
+        ai_chance = { factor = 1 }
+        define_general = {
+            shock = 4
+            fire = 4
+            manuever = 5
+            siege = 0
+            trait = born_to_the_saddle_personality
+            name = "Verakol Ranazha"
+        }
+        add_country_modifier = {
+            name = naf_verakols_ideas
+            duration = 3650
+        }
+        add_treasury = -100
+    }
+
+    option = {
+        name = nafa.9.b
+        ai_chance = { factor = 0 }
     }
 }
