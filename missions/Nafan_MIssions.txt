@@ -780,14 +780,16 @@ nafa_1 = {
                     exists = ORC
                     ORC = { ai = yes }
                 }
-
+                #EVENT#EVENT#EVENT#EVENT#EVENT#EVENT
             }
             else = {
                 if = {
-                    exists = ORS
-                    ORS = { ai = yes }
+                    limit = {
+                        exists = ORS
+                        ORS = { ai = yes }
+                    }
+                    #EVENT#EVENT#EVENT#EVENT#EVENT
                 }
-
             }
             custom_tooltip = divideOrdicaEvent
             add_country_modifier = {
@@ -1060,7 +1062,10 @@ nafa_2 = {
                         is_subject_of = ROOT
                     }
                 }
-                inherit	= TYD
+                custom_tooltip = nafAnnexTooltipTYD
+                hidden_effect = {
+                    inherit	= TYD
+                }
             }
             if = {
                 limit = {
@@ -1068,7 +1073,10 @@ nafa_2 = {
                         is_subject_of = ROOT
                     }
                 }
-                inherit	= VAV
+                custom_tooltip = nafAnnexTooltipVAV
+                hidden_effect = {
+                    inherit	= VAV
+                }
             }
             if = {
                 limit = {
@@ -1076,7 +1084,10 @@ nafa_2 = {
                         is_subject_of = ROOT
                     }
                 }
-                inherit	= INI
+                custom_tooltip = nafAnnexTooltipINI
+                hidden_effect = {
+                    inherit	= INI
+                }
             }
             if = {
                 limit = {
@@ -1084,7 +1095,10 @@ nafa_2 = {
                         is_subject_of = ROOT
                     }
                 }
-                inherit	= PXA
+                custom_tooltip = nafAnnexTooltipPXA
+                hidden_effect = {
+                    inherit	= PXA
+                }
             }
             if = {
                 limit = {
@@ -1443,25 +1457,25 @@ nafa_2 = {
                         }
                         add_adm_power = 150
                     }
-                }
-                else = {
-                    if = {
-                        limit = {
-                            num_of_owned_provinces_with = {
-                                value = 2
-                                OR = {
-                                    province_id = 5388
-                                    province_id = 5458
-                                    province_id = 5163
-                                    province_id = 5411
+                    else = {
+                        if = {
+                            limit = {
+                                num_of_owned_provinces_with = {
+                                    value = 2
+                                    OR = {
+                                        province_id = 5388
+                                        province_id = 5458
+                                        province_id = 5163
+                                        province_id = 5411
+                                    }
                                 }
                             }
+                            add_adm_power = 100
                         }
-                        add_adm_power = 100
+                        else = {
+                            add_adm_power = 50
+                        }
                     }
-                }
-                else = {
-                    add_adm_power = 50
                 }
             }
             if = {
@@ -1568,7 +1582,7 @@ nafa_2 = {
                 type = all
 				country_or_non_sovereign_subject_holds = ROOT
             }
-            unnamed_area_22 = {
+            olfemek_area = {
                 type = all
 				country_or_non_sovereign_subject_holds = ROOT
             }
@@ -1623,7 +1637,7 @@ nafa_2 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
             OR = {
                 area = northern_umzat
-                area = unnamed_area_22
+                area = olfemek_area
                 area = emzelom_area
                 province_id = 5257
                 province_id = 5256
@@ -1643,7 +1657,7 @@ nafa_2 = {
                 owned_by = ROOT
             }
             NOT = {
-                eixsts = HSH
+                exists = HSH
             }
         }
         effect = {
@@ -1960,7 +1974,7 @@ nafa_2 = {
         effect = {
             add_mercantilism = 5
             add_years_of_owned_provinces_production_income = {
-                years = 2
+                years = 20
                 trigger = {
                     trade_goods = cloth
                 }
@@ -2825,17 +2839,18 @@ nafa_4 = {
                         duration = 3650
                     }
                 }
-            }
-            if = {
-                limit = {
-                    exists = VAN
+                if = {
+                    limit = {
+                        exists = VAN
+                    }
+                    add_casus_belli = {
+                        target = VAN
+                        type = cb_vassalize_mission
+                        months = 120
+                    }
                 }
-                add_casus_belli = {
-                    target = VAN
-                    type = cb_vassalize_mission
-                    months = 120
-                }
             }
+            custom_tooltip = nafaSubjugateVanoma
             aresia_region = { add_permanent_claim = ROOT }
             vanoma_region = { add_permanent_claim = ROOT }
             gorfrek_region = { add_permanent_claim = ROOT }
@@ -2875,6 +2890,12 @@ nafa_4 = {
                 region = aresia_region
                 religion = ROOT
             }
+            if = {
+                limit = {
+                    VAN = { is_subject_of = NAF }
+                }
+                dip_power = 500
+            }
         }
         effect = {
             if = {
@@ -2882,7 +2903,7 @@ nafa_4 = {
                     VAN = { is_subject_of = NAF }
                 }
                 inherit = VAN
-                add_dip_power = -400
+                add_dip_power = -500
             }
             add_country_modifier = {
                 name = naf_get_vanoman_tech
@@ -2965,20 +2986,56 @@ nafa_4 = {
         required_missions = { naf_intervene_in_oppia }
         position = 11
         trigger = {
-            upper_oppia_region = {
+            lower_oppia_region = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-            lower_oppia_region = {
+            lower_oppia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+            roplea_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+            arma_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+            eastern_core_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+            quanex_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+            western_core_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+            goll_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+            umzat_bay = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+            east_umzatia = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
         }
         effect = {
             custom_tooltip = eventForCrownOfEmintasAlsoMaybeAnnexYourSubjectForFree #An event could let you have TCK as a vassal for epic bonuses
+            zilas_region = {
+                add_permanent_claim = ROOT
+            }
         }
         provinces_to_highlight = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
+            NOT = { area = umzat_islands_area }
             OR = {
                 region = upper_oppia_region
                 region = lower_oppia_region

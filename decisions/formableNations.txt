@@ -659,7 +659,7 @@ country_decisions = {
 				is_city = yes
 				OR = {
 					area = heoki_area
-					area = unnamed_area_7
+					area = dibata_area
 					area = unnamed_area_8
 				}
 			}
@@ -696,7 +696,7 @@ country_decisions = {
 				}
 				add_permanent_claim = DES
 			}
-			unnamed_area_7 = {
+			dibata_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}

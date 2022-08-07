@@ -419,4 +419,60 @@ country_decisions = {
 			factor = 1
 		}
     }
+
+    release_tck_decision = {
+        potential = {
+            owns = 5066
+            NOT = {
+                OR = {
+                    has_country_flag = released_TCK_flag
+                    culture_group = Oppian
+                    capital_scope = { region = oppia_superregion }
+                    tag = RES
+                    tag = LAG
+                    tag = PEX
+                    tag = GAX
+                    tag = MKY
+                }
+            }
+		}
+		allow = {
+			NOT = {
+                exists = TCK
+            }
+            5066 = {
+                is_core = TCK
+            }
+		}
+		effect = {
+            set_country_flag = released_TCK_flag
+            5066 = {
+                cede_province = TCK
+                remove_core = ROOT
+                remove_claim = ROOT
+            }
+            hidden_effect = {
+                every_owned_province = {
+                    limit = {
+                        NOT = {
+                            province_id = 5066
+                        }
+                    }
+                    remove_core = TCK
+                }
+            }
+            create_march = TCK
+            TCK = {
+                override_country_name = CROWN_CITY_NAME
+                set_government_rank = 1
+                hidden_effect = {
+                    set_dynasty	= "Sar"
+                }
+            }
+            custom_tooltip = decisionReleasedTCK
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+    }
 }

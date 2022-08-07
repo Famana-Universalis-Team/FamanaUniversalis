@@ -1158,7 +1158,7 @@ orc_no_manpower = {
 
 orc_forced_draft = {
     war_exhaustion = 0.10
-    clergy_loyalty_modifier = -0.10
+    church_loyalty_modifier = -0.10
     manpower_recovery_speed = -0.10
     global_manpower_modifier = -0.10
     land_maintenance_modifier = 0.10
@@ -1327,4 +1327,12 @@ naf_into_jasua = {
 naf_pacified_kisholi = {
     num_accepted_cultures = 3
     promote_culture_cost = -0.25
+}
+
+naf_sar_insanity = {
+    all_power_cost = 0.25
+    land_morale = -0.10
+    naval_morale = -0.10
+    advisor_cost = 0.20
+    stability_cost_modifier = 0.25
 }

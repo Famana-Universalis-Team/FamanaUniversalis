@@ -581,3 +581,34 @@ country_event = { #Defecting kisholi general
         ai_chance = { factor = 0 }
     }
 }
+
+country_event = { #Sar whispers
+    id = nafa.10
+    title = nafa.10.t
+    desc = nafa.10.d
+    picture = BAD_WITH_MONARCH_eventPicture
+    fire_only_once = yes
+
+    trigger = {
+        tag = NAF
+        TCK = {
+            is_subject_of = NAF
+            dynasty	= "Sar"
+        }
+        at_war_with_religious_enemy = yes
+        current_age = age_of_absolutism
+    }
+
+    mean_time_to_happen = {
+        months = 60
+    }
+
+    option = {
+        name = nafa.10.a
+        ai_chance = { factor = 1 }
+        add_ruler_modifier = {
+            name = naf_sar_insanity
+            duration = -1
+        }
+    }
+}

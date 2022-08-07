@@ -55,6 +55,7 @@ crown_kingdom_reform = {
 	allow_normal_conversion = no
 	lock_level_when_selected = yes
 	legacy_equivalent = despotic_monarchy
+	maintain_dynasty = yes
 	valid_for_nation_designer = yes
 	nation_designer_cost = 0
 	modifiers = {
@@ -503,8 +504,8 @@ ordican_senate = {
 	}
 	modifiers = {
 		global_institution_spread = 0.1
-		clergy_influence_modifier = 0.1
+		church_influence_modifier = 0.1
 		nobles_influence_modifier = 0.1
-		burghers_influence_modifier = 0.11
+		burghers_influence_modifier = 0.1
 	}
 }

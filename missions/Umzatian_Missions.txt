@@ -182,37 +182,37 @@ umz_2 = {
 				}
 				vassalize = RIA
 			}
-		else = {
-			if = {
-				limit = {
-					exists = RIA
-					NOT = {
-						OR = {
-							is_rival = RIA
-							is_enemy = RIA
+			else = {
+				if = {
+					limit = {
+						exists = RIA
+						NOT = {
+							OR = {
+								is_rival = RIA
+								is_enemy = RIA
+							}
 						}
 					}
+					5041 = {
+						add_core = ROOT
+					}
 				}
-				5041 = {
-					add_core = ROOT
+				else = {
+					5041 = {     
+						add_unit_construction = {
+							type = light_ship
+							amount = 5
+							speed = 0.25
+							cost = 0
+						}
+					}
+					add_country_modifier = { #yeah uhhh I'm not making this a trade modifier
+						name = umz_trade_domination
+						duration = 9125 
+					}
 				}
 			}
 		}
-	    else = {
-				5041 = {     
-					add_unit_construction = {
-						type = light_ship
-						amount = 5
-						speed = 0.25
-						cost = 0
-					}
-				}
-			}
-			add_country_modifier = { #yeah uhhh I'm not making this a trade modifier
-				name = umz_trade_domination
-				duration = 9125 
-			}
-        }
     }
 	UMZ_strenghten = {
         icon = mission_egyptian_mamluk_soldier
@@ -473,7 +473,7 @@ umz_3 = {
         
        
         effect = {
-			unnamed_area_22 = {
+			olfemek_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
@@ -511,7 +511,7 @@ umz_3 = {
         }
         
 		provinces_to_highlight = {
-          OR = {  area = unnamed_area_22
+          OR = {  area = olfemek_area
 				  area =  emzelom_area
 				  province_id = 5257
 				  province_id = 5256
@@ -522,7 +522,7 @@ umz_3 = {
     
        
         trigger = {
-		    unnamed_area_22 = {
+		    olfemek_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
