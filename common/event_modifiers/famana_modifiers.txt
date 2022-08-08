@@ -1340,3 +1340,17 @@ naf_sar_insanity = {
 naf_troll_ordica = {
     spy_offence = 0.33
 }
+
+lyp_united_the_south = {
+    manpower_in_true_faith_provinces = 0.33
+}
+
+lyp_nutian_architecture = {
+    build_cost = -0.10
+    build_time = -0.10
+}
+
+lyp_prosperity_in_oppia = {
+    development_cost = -0.10
+    global_prosperity_growth = 0.25
+}
