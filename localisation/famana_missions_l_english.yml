@@ -680,7 +680,7 @@
  antiash_into_title:0 "Into Ga Xal"
  antiash_into_desc:0 "On land, Ga Xal is cut off from the outside world. Our invasions have created a perfect situation to strike and begin the march on Xon."
  antiash_xon_title:0 "Conquer Xon"
- antiash_xon_desc:0 "Back when the Antiash lived solely in the Great Desert no one would have thought that one day glorious Xon will fall to our regiments. Yet here we are, ready to join the list of this mighty city's owners!"
+ antiash_xon_desc:0 "Back when the Antiash lived solely in the Great Desert no one would have thought that one day glorious Xon will fall to our regiments. Yet here we are, ready to join the list of this mighty city's owners, and loot the various libraries of the city!"
  antiash_prepare_title:0 "Prepare the Attack"
  antiash_prepare_desc:0 "We have made the Great Sanctuary Lake a new home, but it is not completely ours. The Totinos tribe prevents us from colonising the much drier, but still valuable eastern coast. They must be chased out."
  antiash_settle_title:0 "Settle the East Bank"
@@ -727,9 +727,9 @@
  ANTIASH_ALLIES_MET:0 "Any allied country:\nHas embraced §YMetallurgy§!"
  
  #Antiash Rewards
- antiash_raid_receiver:0 "Riches From Raiding"
+ antiash_raid_receiver:0 "Stolen Goods"
  antiash_raid_receiver_desc:0 ""
- antiash_raid_victim:0 "Unstoppable Raids"
+ antiash_raid_victim:0 "Unopposed Raids"
  antiash_raid_victim_desc:0 ""
  antiash_production:0 "Incrased Production"
  antiash_production_desc:0 ""
@@ -763,10 +763,12 @@
  antiash_xalian_mercenaries_desc:0 ""
  antiash_took_xon:0 "Conquerors of Xon"
  antiash_took_xon_desc:0 ""
- antiash_cultural:0 "Nation of Science and Art"
+ antiash_cultural:0 "Growth of Science"
  antiash_architect:0 "City of Great Minds"
  antiash_reformed_bosisi:0 "Reformed Bosisi"
  antiash_prophet:0 "Prophet"
+ antiash_restore_kashroon:0 "Restore Kashroon"
+ antiash_kashroon_temple:0 "Kashroon Temple"
 
 
 

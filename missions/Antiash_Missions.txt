@@ -297,6 +297,40 @@ antiash_1 = {
 			morsum_area = {
 				add_permanent_claim = ROOT
 			}
+			if = {
+				limit = { has_dlc = "Origins" } #idk if that's the actual name 
+				add_country_modifier = antiash_restore_kashroon
+			}
+		}	
+	}
+	antiash_kashroon = {
+		icon = mnd_maj_candi_shrines
+		required_missions = {
+            antiash_opmaki
+		}
+		trigger = {
+			if = {
+				limit = { has_dlc = "Origins" }
+				has_great_project = {
+					type = kashroon_temple
+					tier = 1
+				}
+			}
+			else = {
+				5156 = {
+					development = 15
+				}
+			}
+        }
+		provinces_to_highlight = {
+			province_id = 5156
+		}
+		effect = {
+			add_prestige = 25
+			add_country_modifier = {
+				name = antiash_kashroon_temple
+				duration = -1
+			}
 		}	
 	}
 	antiash_jexus = {
@@ -967,7 +1001,7 @@ antiash_4 = {
 				loyalty = 5
 			}
 			add_estate_loyalty = {
-				estate = estate_clergy
+				estate = estate_church
 				loyalty = 5
 			}
 			add_estate_loyalty = {
@@ -1147,6 +1181,50 @@ antiash_4 = {
 			}
 		}
 	}
+	antiash_ganush = {
+		icon = mission_spoils_of_war
+		required_missions = {
+			
+		}
+		trigger = {
+			is_in_war = {
+				attacker_leader = ROOT
+				casus_belli = cb_humiliate
+				war_score = 70
+			}
+		}
+		effect = {
+			every_owned_province = {
+				limit = { culture = Ganush }
+				add_province_modifier = {
+					name = "antiash_happy_ganush"
+					duration = -1
+				}
+			}
+		}
+	}
+	antiash_manthwar = {
+		icon = mission_the_tamil_trade_guilds
+		required_missions = {
+			
+		}
+		trigger = {
+			estate_loyalty = {
+			estate = estate_burghers
+			loyalty = 65
+			}
+		}
+		effect = {
+			every_owned_province = {
+				limit = { culture = Manthwar }
+				add_province_modifier = {
+					name = "antiash_happy_manthwar"
+					duration = -1
+				}
+			}
+		}
+	}
+	
 }
 antiash_5 = {
 	slot = 5
@@ -1218,6 +1296,7 @@ antiash_5 = {
 		effect = {
 			every_owned_province = {
 				limit = { area = area_243 }
+				change_culture = ROOT
 				change_religion = ROOT
 			}
 			area_244 = {
@@ -1346,6 +1425,127 @@ antiash_5 = {
 			bamal_gulf_region  = {
 				discover_country = ROOT
 			}
+		}
+	}
+	antiash_kurkari = {
+		icon = mission_restore_rule_over_mysore
+		required_missions = {
+			
+		}
+		trigger = {
+			7244 = {
+				num_of_units_in_province = {
+				who = ROOT
+				amount = 5 
+				}
+			}
+			7243 = {
+				num_of_units_in_province = {
+				who = ROOT
+				amount = 5 
+				}
+			}
+			7242 = {
+				num_of_units_in_province = {
+				who = ROOT
+				amount = 5 
+				}
+			}
+		}
+		effect = {
+			7244 = {
+				spawn_rebels = {
+				type = noble_rebels
+				size = 1
+				}
+			}
+			7243 = {
+				spawn_rebels = {
+				type = noble_rebels
+				size = 0.5
+				}
+			}
+			7242 = {
+				spawn_rebels = {
+				type = noble_rebels
+				size = 0.5
+				}
+			}
+			every_owned_province = {
+				limit = { culture = Manthwar }
+				add_province_modifier = {
+					name = "antiash_happy_kurkari"
+					duration = -1
+				}
+			}
+		}
+	}
+	antiash_ashdamir = {
+		icon = mission_upper_burma_campaign
+		required_missions = {
+			
+		}
+		trigger = {
+			5175 = {
+				owned_by = ROOT
+				religion = bosisi
+				NOT = { nationalism = 1 }
+				has_building = temple 
+			}
+			5171 = {
+				owned_by = ROOT
+				religion = bosisi
+				NOT = { nationalism = 1 }
+			}
+			5819 = {
+				owned_by = ROOT
+				religion = bosisi
+				NOT = { nationalism = 1 }
+			}
+			dip_power = 200
+		}
+		effect = {
+			add_dip_power = -200
+			5175 = {
+				change_culture = Ashdamir
+				add_base_manpower = 1
+				add_base_production = 1
+				add_base_tax = 1
+			}
+			5171 = {
+				change_culture = Ashdamir
+				add_base_manpower = 1
+				add_base_production = 1
+				add_base_tax = 1
+			}
+			5819 = {
+				change_culture = Ashdamir
+				add_base_manpower = 1
+				add_base_production = 1
+				add_base_tax = 1
+			}
+			every_owned_province = {
+				limit = { culture = Ashdamir }
+				add_province_modifier = {
+					name = "antiash_happy_ashdamir"
+					duration = -1
+				}
+			}
+		}
+	}
+	antiash_happy_people = {
+		icon = mission_che_principal_peole
+		required_missions = {
+			
+		}
+		trigger = {
+			has_country_modifier = antiash_happy_ganush
+			has_country_modifier = antiash_happy_manthwar
+			has_country_modifier = antiash_happy_kurkari
+			has_country_modifier = antiash_happy_ashdamir
+		}
+		effect = {
+			add_government_reform = four_tribe_rule
 		}
 	}
 }
