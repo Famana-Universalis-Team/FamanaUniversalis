@@ -273,10 +273,10 @@ country_event = { #subject get cores
     }
 
     trigger = {
+        is_subject_of = NAF
         NAF = {
             has_country_flag = nafaOppianVassalFlag
         }
-        is_subject_of = NAF
         any_owned_province = {
             OR = {
                 region = upper_oppia_region
@@ -298,6 +298,17 @@ country_event = { #subject get cores
                 }
             }
             add_core = ROOT
+        }
+        if = {
+            limit = {
+                OR = {
+                    tag = NUT
+                    tag = ROP
+                }
+            }
+            NAF = {
+                set_country_flag = nutiaRopleaVassalFlag
+            }
         }
     }
 

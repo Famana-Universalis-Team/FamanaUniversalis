@@ -101,4 +101,18 @@ country_event = {
 		ai_chance = { factor = 1 }
 		clr_country_flag = debug_achievements
 	}
+	option = {
+		name = fdebug.1.l
+		ai_chance = { factor = 1 }
+		every_province = {
+			limit = {
+				continent = estal
+				NOT = {
+					is_wasteland = yes
+				}
+			}
+			cede_province = ROOT
+			add_core = ROOT
+		}
+	}
 }

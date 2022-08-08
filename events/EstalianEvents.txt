@@ -210,6 +210,12 @@ country_event = {
 				owns_core_province = 6649
 			}
 		}
+		any_province = {
+			limit = {
+				region = voychonia_region
+			}
+			is_empty = yes
+		}
 	}
 	
 	option = {

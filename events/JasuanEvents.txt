@@ -529,18 +529,16 @@ country_event = {
 	option = {
 		name = jasua.10.a
 		ai_chance = { factor = 3 }
-		every_core_province = {
-			if = {
-				limit = {
-					culture = Bohoran
-					owned_by = ROOT
-				}
-				change_culture = Kachik
-				remove_core = SKT
-				add_base_tax = -2
-				add_base_production = -2
-				add_base_manpower = -2
+		every_owned_province = {
+			limit = {
+				culture = Bohoran
+				is_core = ROOT
 			}
+			change_culture = Kachik
+			remove_core = SKT
+			add_base_tax = -2
+			add_base_production = -2
+			add_base_manpower = -2
 		}
 		add_stability = 1
 	}

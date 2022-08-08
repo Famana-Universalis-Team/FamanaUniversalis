@@ -1424,6 +1424,7 @@ country_event = {
 				add_unrest = 4
 			}
 		}
+		set_global_flag = bafaPirateFlag
 	}
 
 	option = {
@@ -1911,5 +1912,193 @@ country_event = {
 			name = orc_ordicization
 			duration = 9125
 		}
+	}
+}
+
+#Nafan trollage
+country_event = {
+	id = ordica.37
+	title = ordica.37.t
+	desc = ordica.37.d
+	picture = BANKRUPTCY_eventPicture
+	fire_only_once = yes
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = ordica.37.a
+		ai_chance = { factor = 1 }
+		custom_tooltip = orcDestroyEmpire
+		hidden_effect = {
+			every_subject_country = {
+				grant_independence = yes
+			}
+			if = {
+				limit = {
+					tag = ORC
+				}
+				every_province = {
+					remove_core = ORC
+					remove_claim = ORC
+				}
+				every_owned_province = { #Ordisa
+					limit = {
+						OR = {
+							region = ordica_region
+							region = east_ordica_region
+							region = pextoglazia_region
+							region = pelig_region
+							region = west_emastalia_region
+							province_id = 5719
+						}
+						NOT = {
+							OR = {
+								area = unnamed_area_24
+								area = nabrosia_area
+								province_id = 5726
+								province_id = 5722
+							}
+						}
+					}
+					cede_province = ORS
+					add_core = ORS
+				}
+				NAF = {
+					declare_war_with_cb = {
+    					who = ORS
+    					casus_belli = cb_annex
+						war_goal_province = 5190
+					}
+				}
+				ORS = {
+					every_owned_province = {
+						change_controller = NAF
+					}
+				}
+			}
+
+			every_owned_province = { #Yuvla
+				limit = {
+					OR = {
+						area = unnamed_area_24
+						region = walara_region
+						region = lomea_region
+						province_id = 6193
+					}
+				}
+				cede_province = YUV
+				add_core = YUV
+			}
+			every_owned_province = { #Vamanya
+				limit = {
+					OR = {
+						region = vordor_region
+						region = west_ordica_region
+						region = napora_region
+						region = porlodya_region
+						region = west_estal_region
+						region = laglon_region
+						province_id = 5726
+						province_id = 5722
+						area = nabrosia_area
+					}
+					NOT = {
+						province_id = 6193
+					}
+				}
+				cede_province = VAM
+				add_core = VAM
+			}
+			every_owned_province = { #Kletvar
+				limit = {
+					OR = {
+						region = western_naravam_region
+						region = eastern_naravam_region
+						region = gacil_superregion
+					}
+				}
+				cede_province = KLV
+				add_core = KLV
+			}
+			every_owned_province = { #Kolya
+				limit = {
+					OR = {
+						superregion = central_estal_supperregion
+						superregion = north_estal_superregion
+					}
+					NOT = {
+						OR = {
+							region = western_naravam_region
+							region = eastern_naravam_region
+							region = pelig_region
+							region = west_emastalia_region
+						}
+					}
+				}
+				cede_province = KLY
+				add_core = KLY
+			}
+			every_province = {
+				limit = {
+					NOT = {
+						owned_by = ORS
+					}
+				}
+				remove_core = ORS
+				remove_claim = ORS
+			}
+			NAF = {
+				vassalize = YUV
+			}
+			country_event = {
+				id = ordica.39
+				days = 1
+			}
+		}
+	}
+}
+
+#Bafa
+country_event = {
+	id = ordica.38
+	hidden = yes
+	fire_only_once = yes
+
+	trigger = {
+		tag = BAF
+		has_global_flag = bafaPirateFlag
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		change_government = republic
+		add_government_reform = pirate_republic_reform
+		change_religion = lathvy
+	}
+
+	option = {
+		name = ordica.38.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = {
+	id = ordica.39
+	hidden = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		every_owned_province = {
+			cede_province = ORS
+		}
+	}
+
+	option = {
+		name = ordica.39.a
+		ai_chance = { factor = 1 }
 	}
 }

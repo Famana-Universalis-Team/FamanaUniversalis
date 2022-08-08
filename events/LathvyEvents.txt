@@ -764,6 +764,14 @@ country_event = { #TRADITIONAL & RINI
 					is_enemy = NAF
 				}
 			}
+			modifier = {
+				factor = 1000
+				is_subject_of = NAF
+			}
+			modifier = {
+				factor = 4
+				alliance_with = NAF
+			}
 		}
 		set_religious_school = {
 			group = lathvy_group

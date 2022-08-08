@@ -127,7 +127,10 @@ ORC_ideas = {
 	}
 
 	trigger = {
-		tag = ORC
+		OR = {
+			tag = ORC
+			tag = ORS
+		}
 	}
 	free = yes
 	
@@ -646,7 +649,10 @@ RES_ideas = {
 	}	
 
 	trigger = {
-		tag = RES
+		OR = {
+			tag = RES
+			culture = Feniki
+		}
 	}
 	free = yes
 	

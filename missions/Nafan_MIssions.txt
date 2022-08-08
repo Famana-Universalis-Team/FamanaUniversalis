@@ -149,17 +149,44 @@ eclipse_3 = {
             }
             else = {
                 custom_trigger_tooltip = {
-                tooltip = ECLIPSE_FIRED_MISSION
-                OR = {
-                    has_country_flag = getNafanMissions
-                    has_country_flag = getKalarganMissions
-                    has_country_flag = getStrokturMissions
+                    tooltip = ECLIPSE_FIRED_MISSION
+                    OR = {
+                        has_country_flag = getNafanMissions
+                        has_country_flag = getKalarganMissions
+                        has_country_flag = getStrokturMissions
+                    }
                 }
-            }
             }
         }
         effect = {
-            swap_non_generic_missions = yes
+            if = {
+                limit = {
+                    has_country_flag = getNafanMissions
+                }
+                custom_tooltip = eclipseGetMissionsNAF
+                hidden_effect = { swap_non_generic_missions = yes }
+            }
+            else = {
+                if = {
+                    limit = {
+                        has_country_flag = getKalarganMissions
+                    }
+                    custom_tooltip = eclipseGetMissionsKLG
+                    hidden_effect = { swap_non_generic_missions = yes }
+                }
+                else = {
+                    if = {
+                        limit = {
+                            has_country_flag = getStrokturMissions
+                        }
+                        custom_tooltip = eclipseGetMissionsSKT
+                        hidden_effect = { swap_non_generic_missions = yes }
+                    }
+                    else = {
+                        swap_non_generic_missions = yes
+                    }
+                }
+            }
 
             #getNafanMissions
             #getKalarganMissions
@@ -353,6 +380,54 @@ eclipse_5 = {
 					add_base_tax = 1
 				}
             }
+        }
+        #provinces_to_highlight = {}
+    }
+}
+
+stroktur_1 = {
+    slot = 1
+    generic = no
+    ai = yes
+    potential = {
+        NOT = { map_setup = map_setup_random }
+		has_country_flag = getStrokturMissions
+    }
+    has_country_shield = yes
+
+    skt_trade_dominance = {
+        icon = mission_raid_on_venice
+        required_missions = { mission_galleys_in_port }
+        position = 1
+        trigger = {
+
+        }
+        effect = {
+
+        }
+        #provinces_to_highlight = {}
+    }
+}
+
+stroktur_5 = {
+    slot = 5
+    generic = no
+    ai = yes
+    potential = {
+        NOT = { map_setup = map_setup_random }
+		has_country_flag = getStrokturMissions
+    }
+    has_country_shield = yes
+
+    skt_expel_the_kachiks = {
+        icon = mission_raid_on_venice
+        required_missions = { eclipse_bohorans_and_kachiks }
+        position = 5
+        trigger = {
+
+        }
+        effect = {
+
         }
         #provinces_to_highlight = {}
     }
@@ -709,10 +784,28 @@ nafa_1 = {
             }
         }
         effect = {
-            custom_tooltip = someOtherRewardIDK
-            
-
-
+            if = {
+                limit = {
+                    exists = ORC
+                }
+                hidden_effect = {
+                    add_historical_rival = ORC
+                }
+                custom_tooltip = nafAddRivalOrdica
+            }
+            if = {
+                limit = {
+                    exists = ORS
+                }
+                hidden_effect = {
+                    add_historical_rival = ORS
+                }
+                custom_tooltip = nafAddRivalOrdisa
+            }
+            add_country_modifier = {
+                name = naf_troll_ordica
+                duration = 9125
+            }
             pextoglazia_region = {
                 add_permanent_claim = ROOT
             }
@@ -742,45 +835,16 @@ nafa_1 = {
                     exists = ORC
                     ORC = { ai = yes }
                 }
-
-            }
-            else = {
-                if = {
-                    exists = ORS
-                    ORS = { ai = yes }
+                offensive_war_with = ORC
+                controls = 5725
+                controls = 5703
+                controls = 6236
+                controls = 6211
+                controls = 5190
+                ORC = {
+                    NOT = { manpower_percentage	= 0.10 }
+                    war_exhaustion = 10
                 }
-
-            }
-            else = {
-                celzion_area = {
-                    type = all
-				    country_or_non_sovereign_subject_holds = ROOT
-                }
-                usul_area = {
-                    type = all
-				    country_or_non_sovereign_subject_holds = ROOT
-                }
-                mrug_area = {
-                    type = all
-				    country_or_non_sovereign_subject_holds = ROOT
-                }
-                unnamed_pexto_1 = {
-                    type = all
-				    country_or_non_sovereign_subject_holds = ROOT
-                }
-                mofemi_morsum_area = {
-                    type = all
-				    country_or_non_sovereign_subject_holds = ROOT
-                }
-            }
-        }
-        effect = {
-            if = {
-                limit = {
-                    exists = ORC
-                    ORC = { ai = yes }
-                }
-                #EVENT#EVENT#EVENT#EVENT#EVENT#EVENT
             }
             else = {
                 if = {
@@ -788,24 +852,103 @@ nafa_1 = {
                         exists = ORS
                         ORS = { ai = yes }
                     }
-                    #EVENT#EVENT#EVENT#EVENT#EVENT
+                    offensive_war_with = ORS
+                    controls = 5725
+                    controls = 5703
+                    controls = 6236
+                    controls = 6211
+                    controls = 5190
+                    ORS = {
+                        NOT = { manpower_percentage	= 0.10 }
+                        war_exhaustion = 10
+                    }
+                }
+                else = {
+                    celzion_area = {
+                        type = all
+				        country_or_non_sovereign_subject_holds = ROOT
+                    }
+                    usul_area = {
+                        type = all
+				        country_or_non_sovereign_subject_holds = ROOT
+                    }
+                    mrug_area = {
+                        type = all
+				        country_or_non_sovereign_subject_holds = ROOT
+                    }
+                    unnamed_pexto_1 = {
+                        type = all
+				        country_or_non_sovereign_subject_holds = ROOT
+                    }
+                    mofemi_morsum_area = {
+                        type = all
+				        country_or_non_sovereign_subject_holds = ROOT
+                    }
                 }
             }
-            custom_tooltip = divideOrdicaEvent
+        }
+        effect = {
             add_country_modifier = {
                 name = naf_sweeping_estal
                 duration = 3650
+            }
+            if = {
+                limit = {
+                    exists = ORC
+                    ORC = { ai = yes }
+                }
+                ORC = {
+                    country_event = {
+                        id = ordica.37
+                    }
+                }
+            }
+            else = {
+                if = {
+                    limit = {
+                        exists = ORS
+                        ORS = { ai = yes }
+                    }
+                    ORS = {
+                        country_event = {
+                            id = ordica.37
+                        }
+                    }
+                }
             }
             add_mil_power = 250
         }
         provinces_to_highlight = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
-            OR = {
-                area = celzion_area
-                area = usul_area
-                area = mrug_area
-                area = unnamed_pexto_1
-                area = mofemi_morsum_area
+            if = {
+                limit = {
+                    OR = {
+                        AND = {
+                            exists = ORC
+                            ORC = { ai = yes }
+                        }
+                        AND = {
+                            exists = ORS
+                            ORS = { ai = yes }
+                        }
+                    }
+                }
+                OR = {
+                    province_id = 5725
+                    province_id = 5703
+                    province_id = 6236
+                    province_id = 6211
+                    province_id = 5190
+                }
+            }
+            else = {
+                OR = {
+                    area = celzion_area
+                    area = usul_area
+                    area = mrug_area
+                    area = unnamed_pexto_1
+                    area = mofemi_morsum_area
+                }
             }
         }
     }
@@ -1698,7 +1841,7 @@ nafa_2 = {
         required_missions = { naf_the_war_of_titans }
         position = 15
         trigger = {
-            
+            always = no
         }
         effect = {
             custom_tooltip = naf_agm_unfinished_tooltip
@@ -1711,7 +1854,7 @@ nafa_2 = {
         required_missions = { naf_gomic_unity naf_persuade_remaining_heretics }
         position = 16
         trigger = {
-            
+            always = no
         }
         effect = {
             custom_tooltip = naf_agm_unfinished_tooltip
@@ -2463,17 +2606,15 @@ nafa_3 = {
         }
     }
 
-    naf_lessons_from_old_empires = { #Integrate oppia and stuff
+    naf_lessons_from_old_empires = {
         icon = mission_weather_the_troubles
         required_missions = { naf_intervene_in_oppia }
         position = 12
         trigger = {
-            #Have a vassal control all of oppia OR control it yourself
-            #If it is a vassal, integrate it for free
-            #Else, get some other bonus
+            
         }
         effect = {
-            
+            #nutiaRopleaVassalFlag (Use this)
             custom_tooltip = ifNutiaHelpedUsGainControlThenDiploBonus
         }
         #provinces_to_highlight = {}
@@ -2497,7 +2638,7 @@ nafa_3 = {
         required_missions = { naf_capture_northwest_saka }
         position = 14
         trigger = {
-            
+            always = no
         }
         effect = {
             custom_tooltip = naf_agm_unfinished_tooltip
@@ -2510,7 +2651,7 @@ nafa_3 = {
         required_missions = { naf_the_war_of_titans }
         position = 15
         trigger = {
-            
+            always = no
         }
         effect = {
             custom_tooltip = naf_agm_unfinished_tooltip
@@ -2523,7 +2664,7 @@ nafa_3 = {
         required_missions = { naf_down_the_makyna }
         position = 16
         trigger = {
-            
+            always = no
         }
         effect = {
             custom_tooltip = naf_agm_unfinished_tooltip
@@ -2536,7 +2677,7 @@ nafa_3 = {
         required_missions = { naf_enter_qamon naf_a_shared_identity naf_take_ekelo }
         position = 17
         trigger = {
-            
+            always = no
         }
         effect = {
             custom_tooltip = naf_agm_unfinished_tooltip
@@ -3028,9 +3169,37 @@ nafa_4 = {
 			}
         }
         effect = {
-            custom_tooltip = eventForCrownOfEmintasAlsoMaybeAnnexYourSubjectForFree #An event could let you have TCK as a vassal for epic bonuses
+            hidden_effect = {
+                every_owned_province = {
+                    limit = {
+                        superregion = oppia_superregion
+                    }
+                    add_province_modifier = {
+                        name = naf_pacified_oppia
+                        duration = 9125
+                    }
+                }
+            }
+            custom_tooltip = nafAnnexOppVassalFree
+            hidden_effect = {
+                random_subject_country = {
+                    limit = {
+                        capital_scope = {
+                            superregion = oppia_superregion
+                        }
+                        NOT = { tag = TCK }
+                    }
+                    ROOT = {
+                        inherit = PREV
+                    }
+                }
+            }
+
+            custom_tooltip = nafPacifyOppia
+
             zilas_region = {
                 add_permanent_claim = ROOT
+                discover_country = ROOT
             }
         }
         provinces_to_highlight = {
@@ -3048,12 +3217,15 @@ nafa_4 = {
         required_missions = { naf_claim_western_oppia }
         position = 13
         trigger = {
-            
+            always = no
         }
         effect = {
-            
+            custom_tooltip = naf_agm_unfinished_tooltip
         }
-        #provinces_to_highlight = {}
+        #provinces_to_highlight = {
+            #NOT = { country_or_non_sovereign_subject_holds = ROOT }
+            #region = zilas_region
+        #}
     }
 
     naf_crossing_the_desert = {
@@ -3061,7 +3233,7 @@ nafa_4 = {
         required_missions = { naf_the_war_of_titans }
         position = 15
         trigger = {
-            
+            always = no
         }
         effect = {
             custom_tooltip = naf_agm_unfinished_tooltip
@@ -3074,7 +3246,7 @@ nafa_4 = {
         required_missions = { naf_crossing_the_desert naf_down_the_makyna }
         position = 16
         trigger = {
-            
+            always = no
         }
         effect = {
             custom_tooltip = naf_agm_unfinished_tooltip
@@ -3087,7 +3259,7 @@ nafa_4 = {
         required_missions = { naf_settle_in_larna }
         position = 17
         trigger = {
-            
+            always = no
         }
         effect = {
             custom_tooltip = naf_mak_unfinished_tooltip
@@ -3408,7 +3580,7 @@ nafa_5 = {
         required_missions = { naf_capture_northwest_saka }
         position = 14
         trigger = {
-            
+            always = no
         }
         effect = {
             custom_tooltip = naf_mak_unfinished_tooltip
@@ -3421,7 +3593,7 @@ nafa_5 = {
         required_missions = { naf_prepare_a_great_voyage }
         position = 16
         trigger = {
-            
+            always = no
         }
         effect = {
             custom_tooltip = naf_mak_unfinished_tooltip
@@ -3434,7 +3606,7 @@ nafa_5 = {
         required_missions = { naf_settle_in_larna }
         position = 17
         trigger = {
-            
+            always = no
         }
         effect = {
             custom_tooltip = naf_mak_unfinished_tooltip
@@ -3447,7 +3619,7 @@ nafa_5 = {
         required_missions = { naf_the_war_for_makan }
         position = 18
         trigger = {
-            
+            always = no
         }
         effect = {
             custom_tooltip = naf_mak_unfinished_tooltip

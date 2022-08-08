@@ -427,7 +427,7 @@ country_decisions = {
                 OR = {
                     has_country_flag = released_TCK_flag
                     culture_group = Oppian
-                    capital_scope = { region = oppia_superregion }
+                    capital_scope = { superregion = oppia_superregion }
                     tag = RES
                     tag = LAG
                     tag = PEX
@@ -464,7 +464,6 @@ country_decisions = {
             create_march = TCK
             TCK = {
                 override_country_name = CROWN_CITY_NAME
-                set_government_rank = 1
                 hidden_effect = {
                     set_dynasty	= "Sar"
                 }

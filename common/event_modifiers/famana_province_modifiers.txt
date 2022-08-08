@@ -116,3 +116,8 @@ naf_reconvert_jasua = {
 orc_pex_unrest = {
     local_unrest = 10
 }
+
+naf_pacified_oppia = {
+    local_unrest = -2
+    local_missionary_maintenance_cost = -0.33
+}

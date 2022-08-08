@@ -138,3 +138,37 @@ defined_text = {
         localisation_key = Talilhth #Other
     }
 }
+
+defined_text = {
+    name = NafaTCKLocalisation
+	random = no
+
+	text = {
+        localisation_key = nafSpareTCK
+        trigger = {
+			TCK = {
+                is_subject_of = ROOT
+            }
+        }
+    }
+}
+
+defined_text = {
+    name = OrdicaOrOrdisa
+	random = no
+
+	text = {
+        localisation_key = OrdisaName
+        trigger = {
+			exists = ORS
+            NOT = { exists = ORC }
+        }
+    }
+    text = {
+        localisation_key = OrdicaName
+        trigger = {
+			exists = ORC
+            NOT = { exists = ORS }
+        }
+    }
+}
