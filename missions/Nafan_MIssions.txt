@@ -396,9 +396,8 @@ stroktur_1 = {
     has_country_shield = yes
 
     skt_trade_dominance = {
-        icon = mission_raid_on_venice
-        required_missions = { mission_galleys_in_port }
-        position = 1
+        icon = mission_galleys_in_port
+        required_missions = { eclipse_great_port_of_bohora }
         trigger = {
 
         }
@@ -407,6 +406,115 @@ stroktur_1 = {
         }
         #provinces_to_highlight = {}
     }
+}
+
+stroktur_3 = {
+    slot = 3
+    generic = yes
+    ai = yes
+    potential = {
+        NOT = { map_setup = map_setup_random }
+		has_country_flag = getStrokturMissions
+    }
+    has_country_shield = yes
+
+    skt_a_new_identity = {
+        icon = mission_galleys_in_port
+        required_missions = { eclipse_the_eclipse }
+        position = 3
+        trigger = {
+
+        }
+        effect = {
+            
+        }
+        #provinces_to_highlight = {}
+    }
+}
+
+stroktur_branching = {
+    slot = 3
+    generic = yes
+    ai = yes
+    potential = {
+        NOT = { map_setup = map_setup_random }
+        has_country_flag = getStrokturMissions
+		NOT = {
+            OR = {
+                has_country_flag = getStrokturMOXMissions
+                has_country_flag = getStrokturESTMissions
+            }
+        }
+    }
+    has_country_shield = yes
+
+    stroktur_branching_1 = {
+        icon = mission_unknown_mission
+        required_missions = { skt_a_new_identity }
+        position = 4
+        trigger = {
+        }
+        effect = {
+            
+        }
+        #provinces_to_highlight = {}
+    }
+    stroktur_branching_2 = {
+        icon = mission_unknown_mission
+        required_missions = { stroktur_branching_1 }
+        trigger = {
+        }
+        effect = {
+            
+        }
+        #provinces_to_highlight = {}
+    }
+    stroktur_branching_3 = {
+        icon = mission_unknown_mission
+        required_missions = { stroktur_branching_2 }
+        trigger = {
+        }
+        effect = {
+            
+        }
+        #provinces_to_highlight = {}
+    }
+    stroktur_branching_4 = {
+        icon = mission_unknown_mission
+        required_missions = { stroktur_branching_3 }
+        trigger = {
+        }
+        effect = {
+            
+        }
+        #provinces_to_highlight = {}
+    }
+}
+
+stroktur_mox = {
+    slot = 3
+    generic = no
+    ai = yes
+    potential = {
+        NOT = { map_setup = map_setup_random }
+		has_country_flag = getStrokturMOXMissions
+    }
+    has_country_shield = yes
+
+    
+}
+
+stroktur_est = {
+    slot = 3
+    generic = no
+    ai = yes
+    potential = {
+        NOT = { map_setup = map_setup_random }
+		has_country_flag = getStrokturESTMissions
+    }
+    has_country_shield = yes
+
+    
 }
 
 stroktur_5 = {
@@ -420,9 +528,8 @@ stroktur_5 = {
     has_country_shield = yes
 
     skt_expel_the_kachiks = {
-        icon = mission_raid_on_venice
+        icon = mission_galleys_in_port
         required_missions = { eclipse_bohorans_and_kachiks }
-        position = 5
         trigger = {
 
         }

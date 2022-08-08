@@ -243,14 +243,15 @@ arlenta_region = {
 	}
 }
 
-maky_region = {
+zilas_region = {
 	areas = {
-		vaximor_area
-		makykay_area
-		okus_area
-		bava_area
-		rishtokay_area
-		marii_area
+		area_196
+		area_197
+		area_198
+		area_199
+		area_200
+		area_201
+		area_202
 	}
 }
 
@@ -265,14 +266,21 @@ south_xalia_region = {
 	}
 }
 
-upper_makyna_region = {
+gorfrek_region = {
 	areas = {
-		kars_area
-		umber_area
-		area_207
-		area_208
-		area_209
-		area_210
+		area_61
+		area_62
+		area_63
+		area_64
+		area_65
+		area_66
+		area_67
+		area_68
+		area_69
+		area_70
+		area_71
+		area_72
+		area_73
 	}
 }
 
@@ -332,27 +340,28 @@ west_estal_region = {
 	}
 }
 
-napora_region = {
+west_emastalia_region = {
 	areas = {
-		area_150
-		area_137
-		hasia_area
-		area_138
-		area_152
-		area_139
-		area_164
+		riximi_area
+		nopatle_area
+		real_durra_area
+		durra_area
+		unsets_area
+		unnamed_area_53
+		area_56
 	}
 }
 
-porlodya_region = {
+vordor_region = {
 	areas = {
-		area_149
-		area_136
-		area_105
-		area_135
-		area_148
-		area_106
-		area_100
+		holy_bridge_area
+		vordor_area
+		nagolai_area
+		area_98
+		area_140
+		area_141
+		area_153
+		area_154
 	}
 }
 
@@ -432,16 +441,15 @@ west_ordica_region = {
 	}
 }
 
-vordor_region = {
+porlodya_region = {
 	areas = {
-		holy_bridge_area
-		vordor_area
-		nagolai_area
-		area_98
-		area_140
-		area_141
-		area_153
-		area_154
+		area_149
+		area_136
+		area_105
+		area_135
+		area_148
+		area_106
+		area_100
 	}
 }
 
@@ -456,15 +464,15 @@ emastalia_region = {
 	}
 }
 
-west_emastalia_region = {
+napora_region = {
 	areas = {
-		riximi_area
-		nopatle_area
-		real_durra_area
-		durra_area
-		unsets_area
-		unnamed_area_53
-		area_56
+		area_150
+		area_137
+		hasia_area
+		area_138
+		area_152
+		area_139
+		area_164
 	}
 }
 
@@ -496,15 +504,10 @@ east_xalia_region = {
 	}
 }
 
-moria_region = {
+gacil_region = {
 	areas = {
-		jexus_area
-		karmanon_area
-		morsum_area
-		mariana_area
-		vesuxa_area
-		glazia_area
-		abvori_area
+		gabero_area
+		tirix_area
 	}
 }
 
@@ -546,35 +549,26 @@ aresia_region = {
 	}
 }
 
-vanoma_region = {
+moria_region = {
 	areas = {
-		unnamed_area_43
-		unnamed_area_42
-		unnamed_area_41
-		borlebim_area
-		lefim_area
-		mori_area
-		area_74
-		area_75
-		area_60
+		jexus_area
+		karmanon_area
+		morsum_area
+		mariana_area
+		vesuxa_area
+		glazia_area
+		abvori_area
 	}
 }
 
-gorfrek_region = {
+upper_makyna_region = {
 	areas = {
-		area_61
-		area_62
-		area_63
-		area_64
-		area_65
-		area_66
-		area_67
-		area_68
-		area_69
-		area_70
-		area_71
-		area_72
-		area_73
+		kars_area
+		umber_area
+		area_207
+		area_208
+		area_209
+		area_210
 	}
 }
 
@@ -662,10 +656,17 @@ bamal_gulf_region = {
 	}
 }
 
-gacil_region = {
+vanoma_region = {
 	areas = {
-		gabero_area
-		tirix_area
+		unnamed_area_43
+		unnamed_area_42
+		unnamed_area_41
+		borlebim_area
+		lefim_area
+		mori_area
+		area_74
+		area_75
+		area_60
 	}
 }
 
@@ -781,17 +782,17 @@ stroktur_region = {
 	}
 }
 
-zilas_region = {
+maky_region = {
 	areas = {
-		area_196
-		area_197
-		area_198
-		area_199
-		area_200
-		area_201
-		area_202
+		vaximor_area
+		makykay_area
+		okus_area
+		bava_area
+		rishtokay_area
+		marii_area
 	}
 }
+
 
 
 
