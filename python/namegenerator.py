@@ -1,321 +1,94 @@
 import random
 
-Obs = ["p", "t", "k", "q", "z", "s", "ç", "qh"]
-Son = ["h", "f", "v", "m", "n", "l", 'v']
-Liq = ["l", "f", 'r']
-Coda = ["ñ", "z", "s", "h", "f", "v", "m", "n", "l", "j"]
-Plos = ["p", "t", "k", "q", "'", "ç", "qy"]
-FrontV = ["a", "e", "a", "e", "i", "y", "ai"]
-BackV = ["o", "u", "o", "u", "ü", "ö", "ï", "ou"]
+Son = ["s", "z", "sh", "zh"]
+App = ["l", "w", "y", "r"]
+StpFr = ["p", "b", "t", "d", "k", "g", "m", "n", "ng", "f", "v", "th", "sh", "zh", "s", "z", "h", "c"]
+Con = StpFr + App
+Vow = ["a", "e", "i", "o", "u", "y"]
+Dith = ["ai", "ao", "ay", "oi", "ea", "ua", "ia"]
 
-with open("NameListRavsho.txt", "w") as f:
+with open("NameListJasuan.txt", "w") as f:
     f.write('')
 for x in range(0,100):
     #define boolean tags
+    endsWithVowel=False
+    name=''
     weight = 0
-    endsWithVowel = False
-    syllables = 0
-    name = ''
-    frontBased = False
-    backBased = False
+    
     #generate syllabes
     roll = random.randint(1,100)
-    print(roll)
     if roll >= 88:
         syllables = 4
-        syllyweight = 10
+        syllyweight = 15
+        weight+=20
     elif roll >= 55:
         syllables = 3
         syllyweight = 5
+        weight+=10
     elif roll >= 5:
         syllables = 2
         syllyweight = 2
+        weight+=4
     else:
         syllables = 1
         syllyweight = 0
         
     #now, assemble the word from the syllables
-    for syl in range(0,syllables):\
-        #First, determine syllable structure.
-        roll = random.randint(1,100) + weight + syllyweight
+    for syl in range(0,syllables):
+        deltaWeight = 0
+        #ONSET
+        roll = random.randint(1,100) + syllyweight + weight
         
-        if roll >= 90 and endsWithVowel==False:
-            structure = 0 #v
-            weight = 0
-        elif roll >= 78:
-            structure = 1 #ov
-        elif roll >= 72:
-            structure = 2 #sv
-        elif roll >= 57:
-            structure = 3 #olv
-        elif roll >= 53 and endsWithVowel==False:
-            structure = 4 #vc
-        elif roll >= 49 and endsWithVowel==False:
-            structure = 5 #vp
-        elif roll >= 39:
-            structure = 6 #ovc
-            weight = 5
-        elif roll >= 29:
-            structure = 7 #svc
-            weight = 5
-        elif roll >= 22:
-            structure = 8 #olvc
-            weight = 5
-        elif roll >= 15:
-            structure = 9 #ovp
-            weight = 10
-        elif roll >= 5:
-            structure = 10 #svp
-            weight = 10
-        else:
-            structure = 11 #olvp
-            weight = 10
+        if roll >= 70 and endsWithVowel==False: #-
+            name+=''
+            deltaWeight+=-5
+        elif roll >= 40: #f
+            name+=random.choice(StpFr)
+        elif roll >= 25: #s
+            name+=random.choice(Son)
+        elif roll >= 10: #fa
+            name+=random.choice(StpFr)
+            name+=random.choice(App)
+            deltaWeight+=5
+        else: #sfa
+            name+=random.choice(Son)
+            name+=random.choice(StpFr)
+            name+=random.choice(App)
+            deltaWeight+=10
+            
+        #VOWEL
+        codaRoll = random.randint(1,100) + syllyweight + weight
+        roll = random.randint(1,100) + syllyweight + weight
         
-        if structure == 0: #v
-            if (random.randint(0,1) == 1 or frontBased == True) and backBased != True:
-                name+=FrontV[random.randint(0,6)]
-                frontBased = True
-                backBased = False
-            else:
-                name+=BackV[random.randint(0,7)]
-                frontBased = False
-                backBased = True
-            endsWithVowel=True
-        elif structure == 1: #ov
-            name+=Obs[random.randint(0,7)]
-            if (random.randint(0,1) == 1 or frontBased == True) and backBased != True:
-                name+=FrontV[random.randint(0,6)]
-                frontBased = True
-                backBased = False
-            else:
-                name+=BackV[random.randint(0,7)]
-                frontBased = False
-                backBased = True
-            endsWithVowel=True
-        elif structure == 2: #sv
-            name+=Son[random.randint(0,6)]
-            if (random.randint(0,1) == 1 or frontBased == True) and backBased != True:
-                name+=FrontV[random.randint(0,6)]
-                frontBased = True
-                backBased = False
-            else:
-                name+=BackV[random.randint(0,7)]
-                frontBased = False
-                backBased = True
-            endsWithVowel=True
-        elif structure == 3: #olv
-            name+=Obs[random.randint(0,7)]
-            name+=Liq[random.randint(0,2)]
-            if (random.randint(0,1) == 1 or frontBased == True) and backBased != True:
-                name+=FrontV[random.randint(0,6)]
-                frontBased = True
-                backBased = False
-            else:
-                name+=BackV[random.randint(0,7)]
-                frontBased = False
-                backBased = True
-            endsWithVowel=True
-        elif structure == 4: #vc
-            if (random.randint(0,1) == 1 or frontBased == True) and backBased != True:
-                name+=FrontV[random.randint(0,6)]
-                frontBased = True
-                backBased = False
-            else:
-                name+=BackV[random.randint(0,7)]
-                frontBased = False
-                backBased = True
-            name+=Coda[random.randint(0,9)]
-            endsWithVowel=False
-        elif structure == 5: #vp
-            if (random.randint(0,1) == 1 or frontBased == True) and backBased != True:
-                name+=FrontV[random.randint(0,6)]
-                frontBased = True
-                backBased = False
-            else:
-                name+=BackV[random.randint(0,7)]
-                frontBased = False
-                backBased = True
-            name+=Plos[random.randint(0,6)]
-            endsWithVowel=False
-        elif structure == 6: #ovc
-            name+=Obs[random.randint(0,7)]
-            if (random.randint(0,1) == 1 or frontBased == True) and backBased != True:
-                name+=FrontV[random.randint(0,6)]
-                frontBased = True
-                backBased = False
-            else:
-                name+=BackV[random.randint(0,7)]
-                frontBased = False
-                backBased = True
-            name+=Coda[random.randint(0,9)]
-            endsWithVowel=False
-        elif structure == 7: #svc
-            name+=Son[random.randint(0,6)]
-            if (random.randint(0,1) == 1 or frontBased == True) and backBased != True:
-                name+=FrontV[random.randint(0,6)]
-                frontBased = True
-                backBased = False
-            else:
-                name+=BackV[random.randint(0,7)]
-                frontBased = False
-                backBased = True
-            name+=Coda[random.randint(0,9)]
-            endsWithVowel=False
-        elif structure == 8: #olvc
-            name+=Obs[random.randint(0,7)]
-            name+=Liq[random.randint(0,2)]
-            if (random.randint(0,1) == 1 or frontBased == True) and backBased != True:
-                name+=FrontV[random.randint(0,6)]
-                frontBased = True
-                backBased = False
-            else:
-                name+=BackV[random.randint(0,7)]
-                frontBased = False
-                backBased = True
-            name+=Coda[random.randint(0,9)]
-            endsWithVowel=False
-        elif structure == 9: #ovp
-            name+=Obs[random.randint(0,7)]
-            if (random.randint(0,1) == 1 or frontBased == True) and backBased != True:
-                name+=FrontV[random.randint(0,6)]
-                frontBased = True
-                backBased = False
-            else:
-                name+=BackV[random.randint(0,7)]
-                frontBased = False
-                backBased = True
-            name+=Plos[random.randint(0,6)]
-            endsWithVowel=False
-        elif structure == 10: #svp
-            name+=Son[random.randint(0,6)]
-            if (random.randint(0,1) == 1 or frontBased == True) and backBased != True:
-                name+=FrontV[random.randint(0,6)]
-                frontBased = True
-                backBased = False
-            else:
-                name+=BackV[random.randint(0,7)]
-                frontBased = False
-                backBased = True
-            name+=Plos[random.randint(0,6)]
-            endsWithVowel=False
-            endsWithVowel=False
-        else: #olvp
-            name+=Obs[random.randint(0,7)]
-            name+=Liq[random.randint(0,2)]
-            if (random.randint(0,1) == 1 or frontBased == True) and backBased != True:
-                name+=FrontV[random.randint(0,6)]
-                frontBased = True
-                backBased = False
-            else:
-                name+=BackV[random.randint(0,7)]
-                frontBased = False
-                backBased = True
-            name+=Plos[random.randint(0,6)]
-            endsWithVowel=False
-    name = name.replace("zf", "zv")
-    
-    name = name.replace("pç", "ç")
-    name = name.replace("tç", "ç")
-    name = name.replace("kç", "ç")
-    name = name.replace("qç", "ç")
-    name = name.replace("'ç", "ç")
-    name = name.replace("çç", "ç")
-    name = name.replace("qyç", "ç")
-    name = name.replace("zç", "ç")
-    name = name.replace("sç", "ç")
-    name = name.replace("çp", "ç")
-    name = name.replace("çt", "ç")
-    name = name.replace("çk", "ç")
-    name = name.replace("çq", "ç")
-    name = name.replace("çz", "ç")
-    name = name.replace("çs", "ç")
-    name = name.replace("çs", "ç")
-    name = name.replace("çç", "ç")
-    name = name.replace("ç'", "ç")
-    
-    name = name.replace("pqy", "qy")
-    name = name.replace("tqy", "qy")
-    name = name.replace("kqy", "qy")
-    name = name.replace("qqy", "qy")
-    name = name.replace("'qy", "qy")
-    name = name.replace("qyç", "qy")
-    name = name.replace("qyqy", "qy")
-    name = name.replace("zqy", "qy")
-    name = name.replace("sqy", "qy")
-    name = name.replace("qyp", "qy")
-    name = name.replace("qyt", "qy")
-    name = name.replace("qyk", "qy")
-    name = name.replace("qyq", "qy")
-    name = name.replace("qyz", "qy")
-    name = name.replace("qys", "qy")
-    name = name.replace("çqy", "qy")
-    name = name.replace("qyqy", "qy")
-    name = name.replace("qy'", "qy")
-    
-    name = name.replace("pp", "pt")
-    name = name.replace("tp", "pt")
-    name = name.replace("kp", "pt")
-    name = name.replace("qp", "pt")
-    name = name.replace("'p", "pt")
-    name = name.replace("zp", "pt")
-    name = name.replace("sp", "pt")
-    name = name.replace("pp", "pt")
-    name = name.replace("pt", "pt")
-    name = name.replace("pk", "pt")
-    name = name.replace("pq", "pt")
-    name = name.replace("pz", "pt")
-    name = name.replace("ps", "pt")
-    name = name.replace("p'", "pt")
-    
-    name = name.replace("tt", "tk")
-    name = name.replace("kt", "tk")
-    name = name.replace("qt", "tk")
-    name = name.replace("'t", "tk")
-    name = name.replace("zt", "tk")
-    name = name.replace("st", "tk")
-    name = name.replace("tt", "tk")
-    name = name.replace("tk", "tk")
-    name = name.replace("tq", "tk")
-    name = name.replace("tz", "tk")
-    name = name.replace("ts", "tk")
-    name = name.replace("t'", "tk")
-    
-    name = name.replace("kk", "kh")
-    name = name.replace("qk", "kh")
-    name = name.replace("'k", "kh")
-    name = name.replace("zk", "kh")
-    name = name.replace("sk", "kh")
-    name = name.replace("tk", "kh")
-    name = name.replace("kq", "kh")
-    name = name.replace("kz", "kh")
-    name = name.replace("ks", "kh")
-    name = name.replace("k'", "kh")
-    
-    name = name.replace("qq", "q'")
-    name = name.replace("'q", "q'")
-    name = name.replace("zq", "q'")
-    name = name.replace("sq", "q'")
-    name = name.replace("tq", "q'")
-    name = name.replace("qq", "q'")
-    name = name.replace("qz", "q'")
-    name = name.replace("qs", "q'")
-    name = name.replace("q'", "q'")
-    
-    name = name.replace("''", "'")
-    name = name.replace("z'", "z")
-    name = name.replace("s'", "s")
-    name = name.replace("'z", "z")
-    name = name.replace("'s", "s")
-    name = name.replace("''", "'")
-    
-    name = name.replace("zz", "z")
-    name = name.replace("sz", "s")
-    name = name.replace("ss", "s")
-    name = name.replace("zs", "z")
+        if (roll >= 25 and not codaRoll >= 75) or (roll >= 50): #v
+            name+=random.choice(Vow)
+        else: #d
+            name+=random.choice(Dith)
+            deltaWeight+=5
+            
+        #CODA
+        roll = codaRoll
+        
+        if roll >= 75: #-
+            name+=''
+            endsWithVowel = True
+            deltaWeight+=-15
+        elif roll >= 50: #C
+            name+=random.choice(Con)
+            endsWithVowel = False
+        elif roll >= 25: #F
+            name+=random.choice(StpFr)
+            endsWithVowel = False
+        else: #CF
+            name+=random.choice(Con)
+            name+=random.choice(StpFr)
+            endsWithVowel = False
+            deltaWeight+=15
     
     print(name)
+    weight+=deltaWeight
     #finally, write to file
-    with open("NameListRavsho.txt", "a") as f:
+    with open("NameListJasuan.txt", "a") as f:
         f.write(f'{name.title()} ')
         
         
@@ -367,3 +140,32 @@ for x in range(0,100):
     SVP - 10
     OLVP - 5
     '''
+    
+'''Jasuan - SFAVCF - based on english kinda
+    Sonorants: s, z, sh, zh
+    Approximants: l, w, j, r
+    Stop-Fricatives: p, b, t, d, k, g, m, n, ng, f, v, th, sh, zh, s, z, h
+    Consonants: p, b, t, d, k, g, m, n, ng, f, v, th, sh, zh, s, z, h, l, w, j, r
+    Vowels: a, e, i, o, u, y
+    Dithongs: ai, ao, ay, oi, ea, ua, ia
+    Structures:
+    ONSET:
+        - - 30
+        F - 30
+        SF - 15
+        FA - 15
+        SFA - 10
+    CODA:
+        - - 25
+        C - 25
+        F - 25
+        CF - 25
+    VOWEL:
+        Single = 75
+        Dithong = 25 (rises to 50 if no coda)
+        
+        Zavum Brash Evibshem Poineb Ezhse Icamisu Elinze Finga Sroithus Upazh Bypai Aszav Kizhi Uko Koithia Ozuth Ucith Ethode Unezan Azaysav Bolgoi Apoko Akuacor Ekupo Ashusove Shatab Nathay Thay Fovers Obama Ogro Plakill
+Shrumgyi Kuvia Izengozi Bemaizh Fophi Ekopsu Sumu Athea
+Tyofim Usiste Thayzoz Fythpil Sayshly Krumef Dloberg Sisao Nozygate Athydakat Upar Azobaythis Oshysbo Syhozh Shushec Dishgay Apitag Sazhikuzh Fella Astauand
+'''
+
