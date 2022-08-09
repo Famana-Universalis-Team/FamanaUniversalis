@@ -29,12 +29,12 @@ kap_4 = { #kinvirel - jasua region path
 			}
 		}
 		effect = {
-			unnamed_area_31 = {
-				add_permanent_claim = ROOT
-			}
 			add_country_modifier = {
 				name = kap_kinvirel_invasion
 				duration = 3650
+			}
+			unnamed_area_31 = {
+				add_permanent_claim = ROOT
 			}
 		}
     }
@@ -55,6 +55,18 @@ kap_4 = { #kinvirel - jasua region path
 			}
 		}
 		effect = {
+			if = {
+				limit = {
+					exists = KIN
+				}
+				add_historical_rival = KIN
+			}
+			every_owned_province = {
+				limit = {
+					area = unnamed_area_31
+				}
+				add_devastation = -100
+			}
 			unnamed_area_13 = {
 				add_permanent_claim = ROOT
 			}
@@ -63,15 +75,6 @@ kap_4 = { #kinvirel - jasua region path
 			}
 			5496 = {
 				add_permanent_claim = ROOT
-			}
-			if = {
-				limit = {
-					exists = KIN
-				}
-				add_historical_rival = KIN
-			}
-			unnamed_area_31 = {
-				add_devastation = -100
 			}
 		}
     }
@@ -142,18 +145,6 @@ kap_4 = { #kinvirel - jasua region path
 			}
 		}
 		effect = {
-			unnamed_area_11 = {
-				add_permanent_claim = ROOT
-			}
-			unnamed_area_12 = {
-				add_permanent_claim = ROOT
-			}
-			shol_area = {
-				add_permanent_claim = ROOT
-			}
-			mahansha_area = {
-				add_permanent_claim = ROOT
-			}
 			if = {
 				limit = {
 					NOT = {
@@ -166,6 +157,18 @@ kap_4 = { #kinvirel - jasua region path
     				manuever = 5
     				siege = 2
 				}
+			}
+			unnamed_area_11 = {
+				add_permanent_claim = ROOT
+			}
+			unnamed_area_12 = {
+				add_permanent_claim = ROOT
+			}
+			shol_area = {
+				add_permanent_claim = ROOT
+			}
+			mahansha_area = {
+				add_permanent_claim = ROOT
 			}
 		}
     }
@@ -232,18 +235,17 @@ kap_2 = {
 			owns_core_province = 5503
 		}
 		effect = {
+			custom_tooltip = getIakperkoMercs
+			set_country_flag = iakperko_merc_flag
 			unnamed_area_40 = {
 				add_permanent_claim = ROOT
 			}
-			
 			yatia_area = {
 				add_permanent_claim = ROOT
 			}
 			unnamed_area_33 = {
 				add_permanent_claim = ROOT
 			}
-			custom_tooltip = getIakperkoMercs
-			set_country_flag = iakperko_merc_flag
 		}
     }
 	kap_yatian_conquest = {
@@ -270,6 +272,7 @@ kap_2 = {
         }
 		
 		effect = {
+			add_yearly_manpower = 2.5
 			verko_area = {
 				add_permanent_claim = ROOT
 			}
@@ -282,7 +285,6 @@ kap_2 = {
 			pasba_area = {
 				add_permanent_claim = ROOT
 			}
-			add_yearly_manpower = 2.5
 		}
 	}
 
@@ -315,13 +317,13 @@ kap_2 = {
         }
 		
 		effect = {
+			add_adm_power = 100
 			nakoa_area = {
 				add_permanent_claim = ROOT
 			}
 			north_nakoa_area = {
 				add_permanent_claim = ROOT
 			}
-			add_adm_power = 100
 		}
 	}
 
@@ -478,15 +480,15 @@ kap_3 = {
 	    }
 	}
 	effect = {
+		add_country_modifier = {
+			name = kap_push_the_frontier
+			duration = 3650
+		}
 		unnamed_area_44 = {
 			add_permanent_claim = ROOT 
 		}
 		unnamed_area_34 = {
 			add_permanent_claim = ROOT
-		}
-		add_country_modifier = {
-			name = kap_push_the_frontier
-			duration = 3650
 		}
     }
 }
@@ -514,12 +516,6 @@ kap_3 = {
         }
 		
 		effect = {
-			unnamed_area_45 = {
-				add_permanent_claim = ROOT
-			}
-			unnamed_area_39 = {
-				add_permanent_claim = ROOT
-			}
 			define_advisor = {
 				type = commandant
 				skill = 3
@@ -527,6 +523,12 @@ kap_3 = {
 				culture = Yabonian
 				religion = lathvy
 				location = 5663
+			}
+			unnamed_area_45 = {
+				add_permanent_claim = ROOT
+			}
+			unnamed_area_39 = {
+				add_permanent_claim = ROOT
 			}
 		}
 	}
@@ -554,6 +556,10 @@ kap_3 = {
         }
 		
 		effect = {
+			add_country_modifier = {
+				name = rule_of_the_bamals
+				duration = -1
+			}
 			unnamed_area_47 = {
 				add_permanent_claim = ROOT
 			}
@@ -565,10 +571,6 @@ kap_3 = {
 			}
 			unnamed_area_35 = {
 				add_permanent_claim = ROOT
-			}
-			add_country_modifier = {
-				name = rule_of_the_bamals
-				duration = -1
 			}
 		}
 	}
@@ -605,6 +607,7 @@ kap_3 = {
 			}
 		}
 		effect = {
+			change_mil = 1
 			unnamed_area_49 = {
 				add_permanent_claim = ROOT
 			}
@@ -617,7 +620,6 @@ kap_3 = {
 			geter_area = {
 				add_permanent_claim = ROOT
 			}
-			change_mil = 1
 		}
     }
 }
