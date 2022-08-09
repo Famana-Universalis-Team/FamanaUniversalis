@@ -1566,7 +1566,14 @@ antiash_5 = {
 			mission_completed = antiash_ashdamir
 		}
 		effect = {
-			add_government_reform = four_tribe_rule
+			if = {
+				limit = { government = tribal }
+				add_government_reform = four_tribe_rule
+			}
+			else = {
+				change_government_reform_progress = 200
+				add_adm_power = 200
+			}
 		}
 	}
 }
