@@ -993,13 +993,13 @@ antiash_architect = {
 }
 
 antiash_reformed_bosisi = {
-	global_missionary_strength = 0.02
+	missionaries = 1
 	tolerance_own = 1
 	stability_cost_modifier = -0.10
 }
 
 antiash_prophet = {
-	missionaries = 2
+	missionaries = 1
 	warscore_cost_vs_other_religion = -0.15
 	cb_on_religious_enemies = yes
 	monarch_lifespan = 0.2
@@ -1012,9 +1012,9 @@ antiash_restore_kashroon = {
 }
 
 antiash_kashroon_temple = {
-	missionaries = 1
-	religious_unity = 0.5
-	relation_with_heathens = 10
+	global_missionary_strength = 0.02
+	religious_unity = 0.25
+	tolerance_heathen = 1
 }
 
 antiash_happy_ganush = {

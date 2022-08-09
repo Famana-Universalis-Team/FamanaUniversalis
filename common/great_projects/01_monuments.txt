@@ -50,8 +50,13 @@ kashroon_temple = {
 		religion_group = gomic_pagan_group
 		culture_group = Makyna
         owner = {
-            religion_group = gomic_pagan_group
-		    culture_group = Makyna
+            OR = {
+				AND = {
+					religion_group = gomic_pagan_group
+					culture_group = Makyna
+				}
+				has_country_modifier = antiash_restore_kashroon
+			}
         }
 	}
 
@@ -60,8 +65,13 @@ kashroon_temple = {
 		religion_group = gomic_pagan_group
 		culture_group = Makyna
         owner = {
-            religion_group = gomic_pagan_group
-		    culture_group = Makyna
+            OR = {
+				AND = {
+					religion_group = gomic_pagan_group
+					culture_group = Makyna
+				}
+				has_country_modifier = antiash_restore_kashroon
+			}
         }
 	}
 
