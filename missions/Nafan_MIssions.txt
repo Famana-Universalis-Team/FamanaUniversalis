@@ -141,13 +141,13 @@ eclipse_3 = {
         icon = naf_eclipse_icon
         required_missions = { }
         trigger = {
-            if = {
-                limit = {
-                    tag = KLG
-                }
-                tag = KLG
-            }
-            else = {
+            #if = {
+            #    limit = {
+            #        tag = KLG
+            #    }
+            #    tag = KLG
+            #}
+            #else = {
                 custom_trigger_tooltip = {
                     tooltip = ECLIPSE_FIRED_MISSION
                     OR = {
@@ -156,7 +156,7 @@ eclipse_3 = {
                         has_country_flag = getStrokturMissions
                     }
                 }
-            }
+            #}
         }
         effect = {
             if = {
@@ -203,18 +203,18 @@ eclipse_branching_temp = {
     ai = yes
     potential = {
         NOT = { map_setup = map_setup_random }
-		OR = {
+		#OR = {
             tag = SKT
-            tag = NAF
-            tag = KLG
-        }
+        #    tag = NAF
+        #    tag = KLG
+        #}
         NOT = {
             OR = {
                 has_country_flag = getNafanMissions
                 has_country_flag = getKalarganMissions
                 has_country_flag = getStrokturMissions
-                tag = NAF
-                tag = KLG
+                #tag = NAF
+                #tag = KLG
             }
         }
     }
@@ -396,7 +396,7 @@ stroktur_1 = {
     has_country_shield = yes
 
     skt_trade_dominance = {
-        icon = mission_galleys_in_port
+        icon = sources_of_trade
         required_missions = { eclipse_great_port_of_bohora }
         trigger = {
 
@@ -410,7 +410,7 @@ stroktur_1 = {
 
 stroktur_3 = {
     slot = 3
-    generic = yes
+    generic = no
     ai = yes
     potential = {
         NOT = { map_setup = map_setup_random }
@@ -426,7 +426,19 @@ stroktur_3 = {
 
         }
         effect = {
-            
+            if = {
+                limit = {
+                    primary_culture = Bohoran
+                }
+                set_country_flag = getStrokturMOXMissions
+            }
+            if = {
+                limit = {
+                    primary_culture = Bohoran_E
+                }
+                set_country_flag = getStrokturESTMissions
+            }
+            swap_non_generic_missions = yes
         }
         #provinces_to_highlight = {}
     }
@@ -434,7 +446,7 @@ stroktur_3 = {
 
 stroktur_branching = {
     slot = 3
-    generic = yes
+    generic = no
     ai = yes
     potential = {
         NOT = { map_setup = map_setup_random }
@@ -501,7 +513,50 @@ stroktur_mox = {
     }
     has_country_shield = yes
 
+    stroktur_return_to_our_roots = {
+        icon = mission_galleys_in_port
+        position = 4
+        required_missions = { skt_a_new_identity }
+        trigger = {
+        }
+        effect = {
+            
+        }
+        #provinces_to_highlight = {}
+    }
     
+    stroktur_reclaim_hartimatul = {
+        icon = mission_galleys_in_port
+        required_missions = { stroktur_return_to_our_roots }
+        trigger = {
+        }
+        effect = {
+            
+        }
+        #provinces_to_highlight = {}
+    }
+
+    stroktur_return_to_lerush = {
+        icon = mission_galleys_in_port
+        required_missions = { stroktur_reclaim_hartimatul }
+        trigger = {
+        }
+        effect = {
+            
+        }
+        #provinces_to_highlight = {}
+    }
+
+    stroktur_unite_the_country_mox = {
+        icon = mission_galleys_in_port
+        required_missions = { stroktur_return_to_lerush }
+        trigger = {
+        }
+        effect = {
+            
+        }
+        #provinces_to_highlight = {}
+    }
 }
 
 stroktur_est = {
@@ -514,7 +569,50 @@ stroktur_est = {
     }
     has_country_shield = yes
 
-    
+    stroktur_adopt_emastalian_culture = {
+        icon = mission_galleys_in_port
+        position = 4
+        required_missions = { skt_a_new_identity }
+        trigger = {
+        }
+        effect = {
+            
+        }
+        #provinces_to_highlight = {}
+    }
+
+    stroktur_conquer_tyarda = {
+        icon = mission_galleys_in_port
+        required_missions = { stroktur_adopt_emastalian_culture }
+        trigger = {
+        }
+        effect = {
+            
+        }
+        #provinces_to_highlight = {}
+    }
+
+    stroktur_emastalian_invasion = {
+        icon = mission_galleys_in_port
+        required_missions = { stroktur_conquer_tyarda }
+        trigger = {
+        }
+        effect = {
+            
+        }
+        #provinces_to_highlight = {}
+    }
+
+    stroktur_unite_the_country_est = {
+        icon = mission_galleys_in_port
+        required_missions = { stroktur_west_emastalian_conquest }
+        trigger = {
+        }
+        effect = {
+            
+        }
+        #provinces_to_highlight = {}
+    }
 }
 
 stroktur_5 = {
@@ -528,7 +626,7 @@ stroktur_5 = {
     has_country_shield = yes
 
     skt_expel_the_kachiks = {
-        icon = mission_galleys_in_port
+        icon = protect_against_austria
         required_missions = { eclipse_bohorans_and_kachiks }
         trigger = {
 
