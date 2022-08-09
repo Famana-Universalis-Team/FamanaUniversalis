@@ -8,6 +8,7 @@ anti_fashran_coalition_branch = {
 			superregion = jasua_superregion
 		}
 		NOT = { is_year = 213 }
+		NOT = { religion = tonmo }
 		exists = FAS
 	}
 	af_anti_fashran_coalition = {
