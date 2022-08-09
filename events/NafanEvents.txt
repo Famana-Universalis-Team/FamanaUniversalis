@@ -623,3 +623,32 @@ country_event = { #Sar whispers
         }
     }
 }
+
+country_event = {
+    id = nafa.11
+    hidden = yes
+    fire_only_once = yes
+
+    trigger = {
+        tag = NAF
+        ai = yes
+        NOT = {
+            mission_completed = eclipse_the_eclipse
+        }
+    }
+
+    mean_time_to_happen = {
+        months = 24
+    }
+
+    immediate = {
+        complete_mission = eclipse_the_eclipse
+        set_country_flag = getNafanMissions
+        swap_non_generic_missions = yes
+    }
+
+    option = {
+        name = nafa.11.a
+        ai_chance = { factor = 1 }
+    }
+}

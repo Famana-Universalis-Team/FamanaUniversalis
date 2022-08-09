@@ -1,13 +1,17 @@
 import random
 
-Son = ["s", "z", "sh", "zh"]
-App = ["l", "w", "y", "r"]
-StpFr = ["p", "b", "t", "d", "k", "g", "m", "n", "ng", "f", "v", "th", "sh", "zh", "s", "z", "h", "c"]
-Con = StpFr + App
-Vow = ["a", "e", "i", "o", "u", "y"]
-Dith = ["ai", "ao", "ay", "oi", "ea", "ua", "ia"]
+Liq = ["y", "l", "l", "r"]
+UnStop = ["p", "t", "k", "c", "j"]
+VoStops = ["b", "d", "g", "c", "j"]
+UnFricative = ["s", "s", "f", "h"]
+VoFricative = ["m", "n", "ñ", "z", "z", "v"]
+VoSib = ["z", "z"]
+UnSib = ["s", "s"]
+ShortVowel = ["a", "e", "i", "o", "u", "y"]
+LongVowel = ["á", "é", "í", "ó", "ú", "ý"]
+Consonants = Liq + UnStop + VoStops + UnFricative + VoFricative
 
-with open("NameListJasuan.txt", "w") as f:
+with open("NameListKachik.txt", "w") as f:
     f.write('')
 for x in range(0,100):
     #define boolean tags
@@ -36,59 +40,102 @@ for x in range(0,100):
     #now, assemble the word from the syllables
     for syl in range(0,syllables):
         deltaWeight = 0
+        
         #ONSET
         roll = random.randint(1,100) + syllyweight + weight
         
-        if roll >= 70 and endsWithVowel==False: #-
+        if roll >= 75 and endsWithVowel==False: #-
             name+=''
-            deltaWeight+=-5
-        elif roll >= 40: #f
-            name+=random.choice(StpFr)
-        elif roll >= 25: #s
-            name+=random.choice(Son)
-        elif roll >= 10: #fa
-            name+=random.choice(StpFr)
-            name+=random.choice(App)
-            deltaWeight+=5
-        else: #sfa
-            name+=random.choice(Son)
-            name+=random.choice(StpFr)
-            name+=random.choice(App)
-            deltaWeight+=10
+            deltaWeight += -10
+        elif roll >= 35: #C
+            name+=random.choice(Consonants)
+        elif roll >= 25: #PF
+            if (random.randint(0,1) == 1):
+                name+=random.choice(UnStop)
+                name+=random.choice(UnFricative)
+            else:
+                name+=random.choice(VoStops)
+                name+=random.choice(VoFricative)
+            deltaWeight += 5
+        elif roll >= 20: #SPF
+            if (random.randint(0,1) == 1):
+                name+=random.choice(UnSib)
+                name+=random.choice(UnStop)
+                name+=random.choice(UnFricative)
+            else:
+                name+=random.choice(VoSib)
+                name+=random.choice(VoStops)
+                name+=random.choice(VoFricative)
+            deltaWeight += 15
+        elif roll >= 10: #PL
+            name+=random.choice(VoStops)
+            name+=random.choice(Liq)
+            deltaWeight += 5
+        elif roll >= 5: #SPL
+            if (random.randint(0,1) == 1):
+                name+=random.choice(VoSib)
+            else:
+                name+=random.choice(UnSib)
+            name+=random.choice(VoStops)
+            name+=random.choice(Liq)
+            deltaWeight += 15
+        else: #PFL
+            name+=random.choice(VoStops)
+            name+=random.choice(VoFricative)
+            name+=random.choice(Liq)
+            deltaWeight += 15
             
         #VOWEL
-        codaRoll = random.randint(1,100) + syllyweight + weight
         roll = random.randint(1,100) + syllyweight + weight
         
-        if (roll >= 25 and not codaRoll >= 75) or (roll >= 50): #v
-            name+=random.choice(Vow)
-        else: #d
-            name+=random.choice(Dith)
-            deltaWeight+=5
+        if (roll >= 50): #v
+            name+=random.choice(ShortVowel)
+        else: #vv
+            name+=random.choice(LongVowel)
+            deltaWeight += 5
             
         #CODA
-        roll = codaRoll
+        roll = random.randint(1,100) + syllyweight + weight
         
-        if roll >= 75: #-
+        if roll >= 60: #-
             name+=''
-            endsWithVowel = True
-            deltaWeight+=-15
-        elif roll >= 50: #C
-            name+=random.choice(Con)
-            endsWithVowel = False
-        elif roll >= 25: #F
-            name+=random.choice(StpFr)
-            endsWithVowel = False
-        else: #CF
-            name+=random.choice(Con)
-            name+=random.choice(StpFr)
-            endsWithVowel = False
-            deltaWeight+=15
+            endsWithVowel=True
+            deltaWeight += -5
+        elif roll >= 30: #C
+            name+=random.choice(Consonants)
+            endsWithVowel=False
+        elif roll >= 20: #LP
+            name+=random.choice(Liq)
+            if (random.randint(0,1) == 1):
+                name+=random.choice(UnStop)
+            else:
+                name+=random.choice(VoStops)
+            endsWithVowel=False
+            deltaWeight += 5
+        elif roll >= 10: #FP
+            if (random.randint(0,1) == 1):
+                name+=random.choice(UnFricative)
+                name+=random.choice(UnStop)
+            else:
+                name+=random.choice(VoFricative)
+                name+=random.choice(VoStops)
+            endsWithVowel=False
+            deltaWeight += 5
+        else: #LPF
+            name+=random.choice(Liq)
+            if (random.randint(0,1) == 1):
+                name+=random.choice(UnFricative)
+                name+=random.choice(UnStop)
+            else:
+                name+=random.choice(VoFricative)
+                name+=random.choice(VoStops)
+            endsWithVowel=False
+            deltaWeight += 10
     
     print(name)
     weight+=deltaWeight
     #finally, write to file
-    with open("NameListJasuan.txt", "a") as f:
+    with open("NameListKachik.txt", "a") as f:
         f.write(f'{name.title()} ')
         
         
@@ -115,7 +162,7 @@ for x in range(0,100):
     Dithongs: ea, ua (wa), ei, ai
     structure is V, CV, VL, CVL at 25, 30, 20, 25'''
     
-'''Fashran - OLVC
+'''Fashran - OLVC based on finno-ugric and turkic languages
     We have free reign pretty much, so:
     Obstruent Onset: p, t, k, q, z, s, ç, qy
     Sonorant Onset: h, f, v, m, n, l, j
@@ -163,9 +210,30 @@ for x in range(0,100):
     VOWEL:
         Single = 75
         Dithong = 25 (rises to 50 if no coda)
-        
-        Zavum Brash Evibshem Poineb Ezhse Icamisu Elinze Finga Sroithus Upazh Bypai Aszav Kizhi Uko Koithia Ozuth Ucith Ethode Unezan Azaysav Bolgoi Apoko Akuacor Ekupo Ashusove Shatab Nathay Thay Fovers Obama Ogro Plakill
-Shrumgyi Kuvia Izengozi Bemaizh Fophi Ekopsu Sumu Athea
-Tyofim Usiste Thayzoz Fythpil Sayshly Krumef Dloberg Sisao Nozygate Athydakat Upar Azobaythis Oshysbo Syhozh Shushec Dishgay Apitag Sazhikuzh Fella Astauand
 '''
 
+'''Kachik - CCCVCCC based on slavic languages
+    Consonants: p, b, t, d, k, g, m, n, ñ, c, c', j, j', s, z, s', z', h, v, f, y, l, l', r
+    Liquids: y, l, l', r
+    Unvoiced Stops: p, t, k, c, j
+    Voiced Stops: b, d, g, c', j'
+    Unvoiced Fricatives: s, s', f, h
+    Voiced Fricatives: m, n, ñ, z, z', v
+    Short Vowels: a, e, i, o, u, y
+    Long Vowels: á, é, í, ó, ú, ý
+    Structures:
+    ONSET:
+        - - 25
+        C - 40
+        PF - 10
+        SPF - 5
+        PL - 10
+        SPL - 5
+        PFL - 5
+    CODA:
+        - - 40
+        C - 30
+        LP - 10
+        FP - 10
+        LPF - 10
+'''
