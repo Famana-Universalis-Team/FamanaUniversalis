@@ -306,7 +306,7 @@ antiash_1 = {
 		}
 	}
 	antiash_kashroon = {
-		icon = mnd_maj_candi_shrines
+		icon = mission_temple_patronage
 		required_missions = {
             antiash_opmaki
 		}
@@ -726,6 +726,10 @@ antiash_3 = {
 					add_permanent_claim = ROOT
 				}
 				#to make killing desert tribes easier
+			}
+			add_country_modifier = {
+				name = "antiash_settlers"
+				duration = 3600 #10 years
 			}
 		}
     }
@@ -1203,6 +1207,7 @@ antiash_4 = {
 					duration = -1
 				}
 			}
+			add_tribal_allegiance = 10
 		}
 	}
 	antiash_manthwar = {
@@ -1224,6 +1229,7 @@ antiash_4 = {
 					duration = -1
 				}
 			}
+			add_tribal_allegiance = 10
 		}
 	}
 	
@@ -1438,19 +1444,19 @@ antiash_5 = {
 			7244 = {
 				num_of_units_in_province = {
 				who = ROOT
-				amount = 5 
+				amount = 10 
 				}
 			}
 			7243 = {
 				num_of_units_in_province = {
 				who = ROOT
-				amount = 5 
+				amount = 10 
 				}
 			}
 			7242 = {
 				num_of_units_in_province = {
 				who = ROOT
-				amount = 5 
+				amount = 10 
 				}
 			}
 		}
@@ -1480,6 +1486,7 @@ antiash_5 = {
 					duration = -1
 				}
 			}
+			add_tribal_allegiance = 10
 		}
 	}
 	antiash_ashdamir = {
@@ -1533,18 +1540,19 @@ antiash_5 = {
 					duration = -1
 				}
 			}
+			add_tribal_allegiance = 10
 		}
 	}
-	antiash_happy_people = {
+	antiash_happy_tribes = {
 		icon = mission_che_principal_peole
 		required_missions = {
 			
 		}
 		trigger = {
-			has_country_modifier = antiash_happy_ganush
-			has_country_modifier = antiash_happy_manthwar
-			has_country_modifier = antiash_happy_kurkari
-			has_country_modifier = antiash_happy_ashdamir
+			mission_completed = antiash_ganush
+			mission_completed = antiash_kurkari
+			mission_completed = antiash_manthwar
+			mission_completed = antiash_ashdamir
 		}
 		effect = {
 			add_government_reform = four_tribe_rule

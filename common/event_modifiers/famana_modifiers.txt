@@ -1011,7 +1011,7 @@ antiash_restore_kashroon = {
 	great_project_upgrade_cost = -0.25
 }
 
-antiash_kashroon_temples = {
+antiash_kashroon_temple = {
 	missionaries = 1
 	religious_unity = 0.5
 	relation_with_heathens = 10
@@ -1037,6 +1037,10 @@ antiash_happy_kurkari = {
 antiash_happy_ashdamir = {
 	local_unrest = -1
 	local_governing_cost = -0.5
+}
+
+antiash_settlers = {
+	global_colonial_growth = 25
 }
 
 kalargan_gold_country = {

@@ -105,7 +105,7 @@ four_tribe_rule = {
 
 	modifiers = {
 		num_accepted_cultures = 2
-		promote_culture_cost = -0.50
+		yearly_tribal_allegiance = 0.25
 		global_autonomy = -0.05
 	}
 	
