@@ -882,6 +882,9 @@ country_decisions = {
 				NOT = { has_country_flag = shiria_formed }
 				was_never_end_game_tag_trigger = yes
 				NOT = { has_country_flag = golden_mea_formed }
+				NOT = { tag = VNA }
+				NOT = { tag = MOR }
+				NOT = { tag = DEL }
 			}
 		}
 		provinces_to_highlight = {
@@ -1013,6 +1016,9 @@ country_decisions = {
 				religion = vinian
 				was_never_end_game_tag_trigger = yes
 				NOT = { has_country_flag = golden_mea_formed }
+				NOT = { tag = MSH }
+				NOT = { tag = MOR }
+				NOT = { tag = DEL }
 			}
 		}
 		provinces_to_highlight = {
@@ -1121,6 +1127,9 @@ country_decisions = {
 				religion = delkian
 				was_never_end_game_tag_trigger = yes
 				NOT = { has_country_flag = golden_mea_formed }
+				NOT = { tag = MSH }
+				NOT = { tag = MOR }
+				NOT = { tag = VNA }
 			}
 		}
 		provinces_to_highlight = {
@@ -1203,6 +1212,9 @@ country_decisions = {
 				religion = morian
 				was_never_end_game_tag_trigger = yes
 				NOT = { has_country_flag = golden_mea_formed }
+				NOT = { tag = MSH }
+				NOT = { tag = VNA }
+				NOT = { tag = DEL }
 			}
 		}
 		provinces_to_highlight = {
@@ -1849,7 +1861,14 @@ country_decisions = {
 		}
 		effect = {
 			if = {
-				limit = { has_custom_ideas = no }
+				limit = {
+					AND = {
+						has_custom_ideas = no
+						NOT = {
+							has_idea_group = RES_ideas
+						}
+					}
+				}
 				country_event = { id = ideagroups.1 } #Swap Ideas
 			}
 			set_capital = 5028

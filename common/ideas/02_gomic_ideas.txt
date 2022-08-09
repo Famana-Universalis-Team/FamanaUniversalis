@@ -2881,3 +2881,43 @@ HLK_ideas = {
 		fire_damage = 0.10
 	}
 }
+
+YTB_ideas = {
+	start = {
+		discipline = 0.05
+		defensiveness = 0.15
+	}
+	
+	bonus = {
+		warscore_cost_vs_other_religion = -0.10
+	}
+
+	trigger = {
+		tag = YTB
+	}
+	free = yes
+	
+	ytb_1 = {
+		religious_unity = 0.25
+	}
+	ytb_2 = {
+		land_forcelimit_modifier = 0.20
+	}
+	ytb_3 = {
+		hostile_attrition = 1
+	}
+	ytb_4 = {
+		shock_damage_received = -0.10
+		fort_maintenance_modifier = -0.20
+	}
+	ytb_5 = {
+		global_garrison_growth = 0.10
+		enemy_core_creation = 0.50
+	}
+	ytb_6 = {
+		merchants = 1
+	}
+	ytb_7 = {
+		culture_conversion_cost = -0.20
+	}
+}

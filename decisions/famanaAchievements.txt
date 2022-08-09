@@ -9,7 +9,7 @@ country_decisions = {
 					default_game_settings = yes
 					normal_or_historical_nations = yes
 					normal_province_values = yes
-					ironman = yes
+					#ironman = yes
 					start_date = 212.6.6
 					NOT = { num_of_custom_nations = 1 }
 					OR = {
@@ -27,6 +27,10 @@ country_decisions = {
 			}
 		}
 		allow = {
+			custom_trigger_tooltip = {
+				tooltip = tooltipIronmanAch
+				ironman = yes
+			}
 			was_tag = MRS
 			OR = {
 				tag = MOR
@@ -80,7 +84,7 @@ country_decisions = {
 					default_game_settings = yes
 					normal_or_historical_nations = yes
 					normal_province_values = yes
-					ironman = yes
+					#ironman = yes
 					start_date = 212.6.6
 					NOT = { num_of_custom_nations = 1 }
 					tag = DEL
@@ -92,6 +96,10 @@ country_decisions = {
 			}
 		}
 		allow = {
+			custom_trigger_tooltip = {
+				tooltip = tooltipIronmanAch
+				ironman = yes
+			}
 			NOT = {
 				num_of_loans = 1
 			}
@@ -129,7 +137,7 @@ country_decisions = {
 					default_game_settings = yes
 					normal_or_historical_nations = yes
 					normal_province_values = yes
-					ironman = yes
+					#ironman = yes
 					start_date = 212.6.6
 					NOT = { num_of_custom_nations = 1 }
 					OR = {
@@ -144,6 +152,10 @@ country_decisions = {
 			}
 		}
 		allow = {
+			custom_trigger_tooltip = {
+				tooltip = tooltipIronmanAch
+				ironman = yes
+			}
 			num_of_owned_provinces_with = {
 				value = 20
 				culture	= Blastan
@@ -175,7 +187,7 @@ country_decisions = {
 					default_game_settings = yes
 					normal_or_historical_nations = yes
 					normal_province_values = yes
-					ironman = yes
+					#ironman = yes
 					start_date = 212.6.6
 					NOT = { num_of_custom_nations = 1 }
 					tag = FAS
@@ -187,6 +199,10 @@ country_decisions = {
 			}
 		}
 		allow = {
+			custom_trigger_tooltip = {
+				tooltip = tooltipIronmanAch
+				ironman = yes
+			}
 			owns_all_provinces = {
 				OR = {
 					region = north_xalia_region
@@ -220,7 +236,7 @@ country_decisions = {
 					default_game_settings = yes
 					normal_or_historical_nations = yes
 					normal_province_values = yes
-					ironman = yes
+					#ironman = yes
 					start_date = 212.6.6
 					NOT = { num_of_custom_nations = 1 }
 					tag = FAS
@@ -232,6 +248,10 @@ country_decisions = {
 			}
 		}
 		allow = {
+			custom_trigger_tooltip = {
+				tooltip = tooltipIronmanAch
+				ironman = yes
+			}
 			custom_trigger_tooltip = {
 				tooltip = FAS_FTC_TT
 				mission_completed = fas_reform_the_faith
@@ -266,7 +286,7 @@ country_decisions = {
 					default_game_settings = yes
 					normal_or_historical_nations = yes
 					normal_province_values = yes
-					ironman = yes
+					#ironman = yes
 					start_date = 212.6.6
 					NOT = { num_of_custom_nations = 1 }
 					tag = MOX
@@ -278,6 +298,10 @@ country_decisions = {
 			}
 		}
 		allow = {
+			custom_trigger_tooltip = {
+				tooltip = tooltipIronmanAch
+				ironman = yes
+			}
 			custom_trigger_tooltip = {
 				tooltip = MOX_BB_TT
 				religion_group = lathvy_group
@@ -309,7 +333,7 @@ country_decisions = {
 					default_game_settings = yes
 					normal_or_historical_nations = yes
 					normal_province_values = yes
-					ironman = yes
+					#ironman = yes
 					start_date = 212.6.6
 					NOT = { num_of_custom_nations = 1 }
 					tag = BVA
@@ -321,6 +345,10 @@ country_decisions = {
 			}
 		}
 		allow = {
+			custom_trigger_tooltip = {
+				tooltip = tooltipIronmanAch
+				ironman = yes
+			}
 			owns_all_provinces = {
 				region = maky_region
 				NOT = {
@@ -351,7 +379,7 @@ country_decisions = {
 					default_game_settings = yes
 					normal_or_historical_nations = yes
 					normal_province_values = yes
-					ironman = yes
+					#ironman = yes
 					start_date = 212.6.6
 					NOT = { num_of_custom_nations = 1 }
 					tag = GET
@@ -363,6 +391,10 @@ country_decisions = {
 			}
 		}
 		allow = {
+			custom_trigger_tooltip = {
+				tooltip = tooltipIronmanAch
+				ironman = yes
+			}
 			5041 = {
 				owned_by = ROOT
 			}
@@ -390,7 +422,7 @@ country_decisions = {
 					default_game_settings = yes
 					normal_or_historical_nations = yes
 					normal_province_values = yes
-					ironman = yes
+					#ironman = yes
 					start_date = 212.6.6
 					NOT = { num_of_custom_nations = 1 }
 					tag = DEL
@@ -402,6 +434,10 @@ country_decisions = {
 			}
 		}
 		allow = {
+			custom_trigger_tooltip = {
+				tooltip = tooltipIronmanAch
+				ironman = yes
+			}
 			unnamed_area_39 = {
 				type = all
 				controlled_by = ROOT
@@ -431,7 +467,7 @@ country_decisions = {
 					default_game_settings = yes
 					normal_or_historical_nations = yes
 					normal_province_values = yes
-					ironman = yes
+					#ironman = yes
 					start_date = 212.6.6
 					NOT = { num_of_custom_nations = 1 }
 					OR = {
@@ -449,6 +485,10 @@ country_decisions = {
 			}
 		}
 		allow = {
+			custom_trigger_tooltip = {
+				tooltip = tooltipIronmanAch
+				ironman = yes
+			}
 			was_tag = NAK
 			tag = ARS
 			aresia_region = {
@@ -531,7 +571,7 @@ country_decisions = {
 					default_game_settings = yes
 					normal_or_historical_nations = yes
 					normal_province_values = yes
-					ironman = yes
+					#ironman = yes
 					start_date = 212.6.6
 					NOT = { num_of_custom_nations = 1 }
 					tag = HLK
@@ -543,6 +583,10 @@ country_decisions = {
 			}
 		}
 		allow = {
+			custom_trigger_tooltip = {
+				tooltip = tooltipIronmanAch
+				ironman = yes
+			}
 			num_of_artillery = 100
 		}
 		effect = {
@@ -564,7 +608,7 @@ country_decisions = {
 					default_game_settings = yes
 					normal_or_historical_nations = yes
 					normal_province_values = yes
-					ironman = yes
+					#ironman = yes
 					start_date = 212.6.6
 					NOT = { num_of_custom_nations = 1 }
 					culture_group = Maldikian
@@ -576,6 +620,10 @@ country_decisions = {
 			}
 		}
 		allow = {
+			custom_trigger_tooltip = {
+				tooltip = tooltipIronmanAch
+				ironman = yes
+			}
 			revanchism = 100
 		}
 		effect = {
@@ -597,7 +645,7 @@ country_decisions = {
 					default_game_settings = yes
 					normal_or_historical_nations = yes
 					normal_province_values = yes
-					ironman = yes
+					#ironman = yes
 					start_date = 212.6.6
 					NOT = { num_of_custom_nations = 1 }
 					tag = ORM
@@ -609,6 +657,10 @@ country_decisions = {
 			}
 		}
 		allow = {
+			custom_trigger_tooltip = {
+				tooltip = tooltipIronmanAch
+				ironman = yes
+			}
 			owns_all_provinces = {
 				region = western_naravam_region
 				NOT = {
@@ -648,7 +700,7 @@ country_decisions = {
 					default_game_settings = yes
 					normal_or_historical_nations = yes
 					normal_province_values = yes
-					ironman = yes
+					#ironman = yes
 					start_date = 212.6.6
 					NOT = { num_of_custom_nations = 1 }
 					OR = {
@@ -666,6 +718,10 @@ country_decisions = {
 			}
 		}
 		allow = {
+			custom_trigger_tooltip = {
+				tooltip = tooltipIronmanAch
+				ironman = yes
+			}
 			was_tag = YTB
 			tag = HVK
 		}
@@ -692,7 +748,7 @@ country_decisions = {
 					default_game_settings = yes
 					normal_or_historical_nations = yes
 					normal_province_values = yes
-					ironman = yes
+					#ironman = yes
 					start_date = 212.6.6
 					NOT = { num_of_custom_nations = 1 }
 					OR = {
@@ -710,6 +766,10 @@ country_decisions = {
 			}
 		}
 		allow = {
+			custom_trigger_tooltip = {
+				tooltip = tooltipIronmanAch
+				ironman = yes
+			}
 			was_tag = TYD
 			tag = EST
 			custom_trigger_tooltip = {
@@ -745,7 +805,7 @@ country_decisions = {
 					default_game_settings = yes
 					normal_or_historical_nations = yes
 					normal_province_values = yes
-					ironman = yes
+					#ironman = yes
 					start_date = 212.6.6
 					NOT = { num_of_custom_nations = 1 }
 					tag = ZNE
@@ -757,6 +817,10 @@ country_decisions = {
 			}
 		}
 		allow = {
+			custom_trigger_tooltip = {
+				tooltip = tooltipIronmanAch
+				ironman = yes
+			}
 			estal = {
 				type = all
                 OR = {
@@ -788,7 +852,7 @@ country_decisions = {
 					default_game_settings = yes
 					normal_or_historical_nations = yes
 					normal_province_values = yes
-					ironman = yes
+					#ironman = yes
 					start_date = 212.6.6
 					NOT = { num_of_custom_nations = 1 }
 					tag = FAS
@@ -800,6 +864,10 @@ country_decisions = {
 			}
 		}
 		allow = {
+			custom_trigger_tooltip = {
+				tooltip = tooltipIronmanAch
+				ironman = yes
+			}
 			jasua_region = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -829,7 +897,7 @@ country_decisions = {
 					default_game_settings = yes
 					normal_or_historical_nations = yes
 					normal_province_values = yes
-					ironman = yes
+					#ironman = yes
 					start_date = 212.6.6
 					NOT = { num_of_custom_nations = 1 }
 					OR = {
@@ -847,6 +915,10 @@ country_decisions = {
 			}
 		}
 		allow = {
+			custom_trigger_tooltip = {
+				tooltip = tooltipIronmanAch
+				ironman = yes
+			}
 			tag = OPP
 			was_tag = TCK
 			custom_trigger_tooltip = {
@@ -877,7 +949,7 @@ country_decisions = {
 					default_game_settings = yes
 					normal_or_historical_nations = yes
 					normal_province_values = yes
-					ironman = yes
+					#ironman = yes
 					start_date = 212.6.6
 					NOT = { num_of_custom_nations = 1 }
 					tag = NPX
@@ -889,6 +961,10 @@ country_decisions = {
 			}
 		}
 		allow = {
+			custom_trigger_tooltip = {
+				tooltip = tooltipIronmanAch
+				ironman = yes
+			}
 			oppia_superregion = {
 				type = all
                 OR = {
@@ -946,7 +1022,7 @@ country_decisions = {
 					default_game_settings = yes
 					normal_or_historical_nations = yes
 					normal_province_values = yes
-					ironman = yes
+					#ironman = yes
 					start_date = 212.6.6
 					NOT = { num_of_custom_nations = 1 }
 					tag = ORC
@@ -958,6 +1034,10 @@ country_decisions = {
 			}
 		}
 		allow = {
+			custom_trigger_tooltip = {
+				tooltip = tooltipIronmanAch
+				ironman = yes
+			}
 			NOT = {
 				is_year = 223
 			}
@@ -989,7 +1069,7 @@ country_decisions = {
 					default_game_settings = yes
 					normal_or_historical_nations = yes
 					normal_province_values = yes
-					ironman = yes
+					#ironman = yes
 					start_date = 212.6.6
 					NOT = { num_of_custom_nations = 1 }
 					tag = YAB
@@ -1001,6 +1081,10 @@ country_decisions = {
 			}
 		}
 		allow = {
+			custom_trigger_tooltip = {
+				tooltip = tooltipIronmanAch
+				ironman = yes
+			}
 			calc_true_if = {
 				all_neighbor_country = {
 					has_spy_network_from = {
@@ -1034,7 +1118,7 @@ country_decisions = {
 					default_game_settings = yes
 					normal_or_historical_nations = yes
 					normal_province_values = yes
-					ironman = yes
+					#ironman = yes
 					start_date = 212.6.6
 					NOT = { num_of_custom_nations = 1 }
 					OR = {
@@ -1052,6 +1136,10 @@ country_decisions = {
 			}
 		}
 		allow = {
+			custom_trigger_tooltip = {
+				tooltip = tooltipIronmanAch
+				ironman = yes
+			}
 			was_tag = SIX
 			tag = GAX
 			south_xalia_region = {
@@ -1094,7 +1182,7 @@ country_decisions = {
 					default_game_settings = yes
 					normal_or_historical_nations = yes
 					normal_province_values = yes
-					ironman = yes
+					#ironman = yes
 					start_date = 212.6.6
 					NOT = { num_of_custom_nations = 1 }
 					OR = {
@@ -1112,6 +1200,10 @@ country_decisions = {
 			}
 		}
 		allow = {
+			custom_trigger_tooltip = {
+				tooltip = tooltipIronmanAch
+				ironman = yes
+			}
 			NOT = {
 				religion = tonmo
 			}
@@ -1143,7 +1235,7 @@ country_decisions = {
 					default_game_settings = yes
 					normal_or_historical_nations = yes
 					normal_province_values = yes
-					ironman = yes
+					#ironman = yes
 					start_date = 212.6.6
 					NOT = { num_of_custom_nations = 1 }
 					OR = {
@@ -1161,6 +1253,10 @@ country_decisions = {
 			}
 		}
 		allow = {
+			custom_trigger_tooltip = {
+				tooltip = tooltipIronmanAch
+				ironman = yes
+			}
 			tag = JAS
 			was_tag = KIN
 			religion = egr
@@ -1191,7 +1287,7 @@ country_decisions = {
 					default_game_settings = yes
 					normal_or_historical_nations = yes
 					normal_province_values = yes
-					ironman = yes
+					#ironman = yes
 					start_date = 212.6.6
 					NOT = { num_of_custom_nations = 1 }
 					OR = {
@@ -1209,6 +1305,10 @@ country_decisions = {
 			}
 		}
 		allow = {
+			custom_trigger_tooltip = {
+				tooltip = tooltipIronmanAch
+				ironman = yes
+			}
 			tag = OPP
 			was_tag = FNC
 		}
@@ -1235,7 +1335,7 @@ country_decisions = {
 					default_game_settings = yes
 					normal_or_historical_nations = yes
 					normal_province_values = yes
-					ironman = yes
+					#ironman = yes
 					start_date = 212.6.6
 					NOT = { num_of_custom_nations = 1 }
 					OR = {
@@ -1251,6 +1351,10 @@ country_decisions = {
 			}
 		}
 		allow = {
+			custom_trigger_tooltip = {
+				tooltip = tooltipIronmanAch
+				ironman = yes
+			}
 			custom_trigger_tooltip = {
 				tooltip = anarchy_ach_tt
 				OR = {
@@ -1284,7 +1388,7 @@ country_decisions = {
 					default_game_settings = yes
 					normal_or_historical_nations = yes
 					normal_province_values = yes
-					ironman = yes
+					#ironman = yes
 					start_date = 212.6.6
 					NOT = { num_of_custom_nations = 1 }
 					tag = NOZ
@@ -1302,6 +1406,10 @@ country_decisions = {
 			}
 		}
 		allow = {
+			custom_trigger_tooltip = {
+				tooltip = tooltipIronmanAch
+				ironman = yes
+			}
 			is_year = 250
 			NOT = {
 				is_at_war = yes
@@ -1339,7 +1447,7 @@ country_decisions = {
 					default_game_settings = yes
 					normal_or_historical_nations = yes
 					normal_province_values = yes
-					ironman = yes
+					#ironman = yes
 					start_date = 212.6.6
 					NOT = { num_of_custom_nations = 1 }
 					OR = {
@@ -1354,6 +1462,10 @@ country_decisions = {
 			}
 		}
 		allow = {
+			custom_trigger_tooltip = {
+				tooltip = tooltipIronmanAch
+				ironman = yes
+			}
 			has_reform = steppe_horde
 			5140 = {
 				owned_by = ROOT
@@ -1383,7 +1495,7 @@ country_decisions = {
 					default_game_settings = yes
 					normal_or_historical_nations = yes
 					normal_province_values = yes
-					ironman = yes
+					#ironman = yes
 					start_date = 212.6.6
 					NOT = { num_of_custom_nations = 1 }
 					tag = JXS
@@ -1395,6 +1507,10 @@ country_decisions = {
 			}
 		}
 		allow = {
+			custom_trigger_tooltip = {
+				tooltip = tooltipIronmanAch
+				ironman = yes
+			}
 			owns_core_province = 5100
 			full_idea_group	= religious_ideas
 		}
@@ -1421,7 +1537,7 @@ country_decisions = {
 					default_game_settings = yes
 					normal_or_historical_nations = yes
 					normal_province_values = yes
-					ironman = yes
+					#ironman = yes
 					start_date = 212.6.6
 					NOT = { num_of_custom_nations = 1 }
 					tag = ELW
@@ -1433,6 +1549,10 @@ country_decisions = {
 			}
 		}
 		allow = {
+			custom_trigger_tooltip = {
+				tooltip = tooltipIronmanAch
+				ironman = yes
+			}
 			is_year = 400
 			religion = pawani
 			culture = Elwaiti
@@ -1467,7 +1587,7 @@ country_decisions = {
 					default_game_settings = yes
 					normal_or_historical_nations = yes
 					normal_province_values = yes
-					ironman = yes
+					#ironman = yes
 					start_date = 212.6.6
 					NOT = { num_of_custom_nations = 1 }
 					was_tag = MRL
@@ -1480,6 +1600,10 @@ country_decisions = {
 			}
 		}
 		allow = {
+			custom_trigger_tooltip = {
+				tooltip = tooltipIronmanAch
+				ironman = yes
+			}
 			tag = MOR
 			was_tag = MRL
 		}
@@ -1502,7 +1626,7 @@ country_decisions = {
 					default_game_settings = yes
 					normal_or_historical_nations = yes
 					normal_province_values = yes
-					ironman = yes
+					#ironman = yes
 					start_date = 212.6.6
 					NOT = { num_of_custom_nations = 1 }
 					tag = LAG
@@ -1514,15 +1638,13 @@ country_decisions = {
 			}
 		}
 		allow = {
-			all_province = {
-				AND = {
-					any_neighbor_province = {
-						region = gomic_region
-					}
-					is_empty = no
-					owner = LAG
-					is_sea = no
-				}
+			custom_trigger_tooltip = {
+				tooltip = tooltipIronmanAch
+				ironman = yes
+			}
+			num_of_owned_provinces_with	= {
+				value = 100
+				has_port = yes
 			}
 		}
 		effect = {
@@ -1544,7 +1666,7 @@ country_decisions = {
 					default_game_settings = yes
 					normal_or_historical_nations = yes
 					normal_province_values = yes
-					ironman = yes
+					#ironman = yes
 					start_date = 212.6.6
 					NOT = { num_of_custom_nations = 1 }
 					tag = NAF
@@ -1556,6 +1678,10 @@ country_decisions = {
 			}
 		}
 		allow = {
+			custom_trigger_tooltip = {
+				tooltip = tooltipIronmanAch
+				ironman = yes
+			}
 			custom_trigger_tooltip = {
 				tooltip = NAF_FTC_TT
 				mission_completed = naf_dominate_the_gomic
@@ -1593,7 +1719,7 @@ country_decisions = {
 					default_game_settings = yes
 					normal_or_historical_nations = yes
 					normal_province_values = yes
-					ironman = yes
+					#ironman = yes
 					start_date = 212.6.6
 					NOT = { num_of_custom_nations = 1 }
 					has_country_flag = wonDanTzuBattle
@@ -1605,6 +1731,10 @@ country_decisions = {
 			}
 		}
 		allow = {
+			custom_trigger_tooltip = {
+				tooltip = tooltipIronmanAch
+				ironman = yes
+			}
 			has_country_flag = wonDanTzuBattle
 			custom_trigger_tooltip = {
 				tooltip = umenie_vojny_yes
@@ -1629,7 +1759,7 @@ country_decisions = {
 					default_game_settings = yes
 					normal_or_historical_nations = yes
 					normal_province_values = yes
-					ironman = yes
+					#ironman = yes
 					start_date = 212.6.6
 					NOT = { num_of_custom_nations = 1 }
 					OR = {
@@ -1644,6 +1774,10 @@ country_decisions = {
 			}
 		}
 		allow = {
+			custom_trigger_tooltip = {
+				tooltip = tooltipIronmanAch
+				ironman = yes
+			}
 			hidden_trigger = {
 				calc_true_if = {
 					all_country = {
@@ -1681,7 +1815,7 @@ country_decisions = {
 					default_game_settings = yes
 					normal_or_historical_nations = yes
 					normal_province_values = yes
-					ironman = yes
+					#ironman = yes
 					start_date = 212.6.6
 					NOT = { num_of_custom_nations = 1 }
 					OR = {
@@ -1702,6 +1836,10 @@ country_decisions = {
 			}
 		}
 		allow = {
+			custom_trigger_tooltip = {
+				tooltip = tooltipIronmanAch
+				ironman = yes
+			}
 			tag = VAM
 			religion = ordic
 			6356 = {
@@ -1744,7 +1882,7 @@ country_decisions = {
 					default_game_settings = yes
 					normal_or_historical_nations = yes
 					normal_province_values = yes
-					ironman = yes
+					#ironman = yes
 					start_date = 212.6.6
 					NOT = { num_of_custom_nations = 1 }
 					OR = {
@@ -1761,6 +1899,10 @@ country_decisions = {
 			}
 		}
 		allow = {
+			custom_trigger_tooltip = {
+				tooltip = tooltipIronmanAch
+				ironman = yes
+			}
 			if = {
 				limit = {
 					religion = rochoni
@@ -2042,7 +2184,7 @@ country_decisions = {
 					default_game_settings = yes
 					normal_or_historical_nations = yes
 					normal_province_values = yes
-					ironman = yes
+					#ironman = yes
 					start_date = 212.6.6
 					NOT = { num_of_custom_nations = 1 }
 					tag = PEX
@@ -2054,6 +2196,10 @@ country_decisions = {
 			}
 		}
 		allow = {
+			custom_trigger_tooltip = {
+				tooltip = tooltipIronmanAch
+				ironman = yes
+			}
 			mission_completed = pex_the_lathvy_empire
 		}
 		effect = {
@@ -2075,7 +2221,7 @@ country_decisions = {
 					default_game_settings = yes
 					normal_or_historical_nations = yes
 					normal_province_values = yes
-					ironman = yes
+					#ironman = yes
 					start_date = 212.6.6
 					NOT = { num_of_custom_nations = 1 }
 					OR = {
@@ -2099,6 +2245,10 @@ country_decisions = {
 			}
 		}
 		allow = {
+			custom_trigger_tooltip = {
+				tooltip = tooltipIronmanAch
+				ironman = yes
+			}
 			tag = MRR
 			NOT = {
 				any_country = {

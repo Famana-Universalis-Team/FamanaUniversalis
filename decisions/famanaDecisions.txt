@@ -70,7 +70,7 @@ country_decisions = {
             }
             modifier = {
                 factor = 0
-                religon = maschi
+                religion = maschi
             }
         }
     }
@@ -112,7 +112,7 @@ country_decisions = {
             }
             modifier = {
                 factor = 0
-                religon = maschi
+                religion = maschi
             }
         }
     }
@@ -427,6 +427,8 @@ country_decisions = {
                 OR = {
                     has_country_flag = released_TCK_flag
                     culture_group = Oppian
+                    culture_group = Hoxoi
+                    religion_group = oppian_group
                     capital_scope = { superregion = oppia_superregion }
                     tag = RES
                     tag = LAG

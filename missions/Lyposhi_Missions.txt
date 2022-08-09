@@ -179,7 +179,15 @@ lyp_1 = {
             }
         }
         effect = {
-            change_adm = 1
+            if = {
+                limit = {
+                    adm = 6
+                }
+                add_adm_power = 100
+            }
+            else = {
+                change_adm = 1
+            }
             add_country_modifier = {
                 name = lyp_prosperity_in_oppia
                 duration = 12775

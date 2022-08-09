@@ -110,7 +110,7 @@ country_event = { #lathvy conversion
 			religion_group = north_estali
 			religion = animism
 		}
-		NOT = { religon = maschi }
+		NOT = { religion = maschi }
 		NOT = { has_country_flag = lathvy_convert_fired }
 		NOT = { has_country_modifier = yomtanian_nation }
 		NOT = {
@@ -210,10 +210,7 @@ country_event = {
 				owns_core_province = 6649
 			}
 		}
-		any_province = {
-			limit = {
-				region = voychonia_region
-			}
+		6761 = {
 			is_empty = yes
 		}
 	}
@@ -376,6 +373,7 @@ country_event = {
 		
 	option = {
 		name = estal.3.b
+		ai_chance = { factor = 0 }
 		add_prestige = 10
 		add_country_modifier = {
 			name = zub_humil
@@ -449,5 +447,6 @@ country_event = {
 	}
 	option = {
 		name = estal.4.a
+		ai_chance = { factor = 1 }
 	}
 }

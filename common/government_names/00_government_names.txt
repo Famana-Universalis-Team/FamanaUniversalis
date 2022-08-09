@@ -406,6 +406,30 @@ holy_monarchy_2 = {
 	}
 }
 
+velorad_name = {
+	rank = {
+		1 = VELORAD
+		2 = VELORAD
+		3 = VELORAD
+	}
+
+	ruler_male = {
+		1 = VELORAD
+		2 = VELORAD
+		3 = VELORAD
+	}
+
+	ruler_female = {
+		1 = VELORAD
+		2 = VELORAD
+		3 = VELORAD
+	}
+
+	trigger = {
+		is_emperor = yes
+	}
+}
+
 islamic_caliphate = {
 	rank = {
 		3 = ISLAMIC_CALIPHATE

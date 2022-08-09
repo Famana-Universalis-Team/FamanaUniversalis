@@ -297,11 +297,13 @@ antiash_1 = {
 			morsum_area = {
 				add_permanent_claim = ROOT
 			}
-			if = {
-				limit = { has_dlc = "Origins" } #idk if that's the actual name 
-				add_country_modifier = antiash_restore_kashroon
-			}
-		}	
+			#if = {
+			#	limit = {
+			#		has_dlc = "Leviathan"
+			#	}
+				#add_country_modifier = antiash_restore_kashroon
+			#}
+		}
 	}
 	antiash_kashroon = {
 		icon = mnd_maj_candi_shrines
@@ -309,18 +311,18 @@ antiash_1 = {
             antiash_opmaki
 		}
 		trigger = {
-			if = {
-				limit = { has_dlc = "Origins" }
-				has_great_project = {
-					type = kashroon_temple
-					tier = 1
-				}
-			}
-			else = {
+			#if = {
+			#	limit = { has_dlc = "Leviathan" }
+				#has_great_project = {
+				#	type = kashroon_temple
+				#	tier = 1
+				#}
+			#}
+			#else = {
 				5156 = {
 					development = 15
 				}
-			}
+			#}
         }
 		provinces_to_highlight = {
 			province_id = 5156
