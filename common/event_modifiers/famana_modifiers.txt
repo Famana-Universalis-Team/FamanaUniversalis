@@ -1413,3 +1413,12 @@ skt_new_trade_networks = {
 antiash_cav_ratio = {
     cav_to_inf_ratio = 1.0
 }
+
+skt_tradpilled = {
+    legitimacy = 1
+}
+
+skt_claimant_moxon = {
+    ae_impact = -0.10
+    naval_morale = 0.10
+}

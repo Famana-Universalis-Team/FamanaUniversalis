@@ -446,7 +446,7 @@ stroktur_1 = {
         provinces_to_highlight = {
             OR = {
                 province_id = 5002
-                province_id = 5002
+                province_id = 5361
             }
         }
     }
@@ -572,9 +572,39 @@ stroktur_mox = {
         position = 4
         required_missions = { skt_a_new_identity }
         trigger = {
+            if = {
+                limit = {
+                    any_owned_province = {
+                        region = moxon_region
+                    }
+                }
+                OR = {
+                    accepted_culture = Lerushian
+                    accepted_culture = Xofkan
+                }
+            }
+            else = {
+                OR = {
+                    adm = 4
+                    any_ally = {
+                        OR = {
+                            accepted_culture = Lerushian
+                            accepted_culture = Xofkan
+                        }
+                    }
+                }
+            }
+            prestige = 50
         }
         effect = {
-            
+            add_stability_or_adm_power = yes
+            add_country_modifier = {
+                name = skt_tradpilled
+                duration = 9125
+            }
+            5496 = {
+                add_permanent_claim = ROOT
+            }
         }
         #provinces_to_highlight = {}
     }
@@ -583,33 +613,132 @@ stroktur_mox = {
         icon = mission_portuguese_oman
         required_missions = { stroktur_return_to_our_roots }
         trigger = {
+            5496 = {
+                country_or_non_sovereign_subject_holds = ROOT
+            }
         }
         effect = {
-            
+            add_country_modifier = {
+                name = skt_claimant_moxon
+                duration = 7300
+            }
+            meaprin_area = {
+                add_permanent_claim = ROOT
+            }
+            outer_moxon_area = {
+                add_permanent_claim = ROOT
+            }
+            agixion_area = {
+                add_permanent_claim = ROOT
+            }
         }
-        #provinces_to_highlight = {}
+        provinces_to_highlight = {
+            NOT = { country_or_non_sovereign_subject_holds = ROOT }
+            province_id = 5496
+        }
     }
 
     stroktur_return_to_lerush = {
         icon = mission_arabian_sea_trade
         required_missions = { stroktur_reclaim_hartimatul }
         trigger = {
+            meaprin_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+            outer_moxon_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+            agixion_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
         }
         effect = {
-            
+            5361 = {
+                add_unit_construction = {
+    				type = galley
+    				amount = 10
+    				speed = 0.1
+    				cost = 0
+				}
+            }
+            moxon_region = {
+                add_permanent_claim = ROOT
+            }
         }
-        #provinces_to_highlight = {}
+        provinces_to_highlight = {
+            NOT = { country_or_non_sovereign_subject_holds = ROOT }
+            OR = {
+                area = meaprin_area
+                area = outer_moxon_area
+                area = agixion_area
+            }
+        }
     }
 
     stroktur_unite_the_country_mox = {
         icon = mission_autocratic_rule
         required_missions = { stroktur_return_to_lerush }
         trigger = {
+            moxon_region = {
+                type = all
+				country_or_non_sovereign_subject_holds = ROOT
+            }
         }
         effect = {
-            
+            5361 = {
+                add_trade_modifier = {
+                    who = ROOT
+                    duration = 9125
+                    power = 50
+                    key = SKT_MOX_CONTROL
+                }
+            }
+            custom_tooltip = SKTFormMoxon
+            add_prestige = 25
+            add_adm_power = 100
+            add_dip_power = 100
+            add_mil_power = 100
+            hidden_effect = {
+                complete_mission = stroktur_unite_the_country_mox
+                if = {
+                    limit = {
+                        culture_group = Maxan
+                    }
+                    restore_country_name = yes
+			        if = {
+				        limit = {
+				        	government_rank = 1
+				        }
+				        set_government_rank = 2
+			        }
+			        change_tag = MOX
+			        if = {
+			        	limit = { has_custom_ideas = no }
+			        	country_event = { id = ideagroups.1 } #Swap Ideas
+			        }
+			        5361 = {
+			        	move_capital_effect = yes
+			        }
+			        add_country_modifier = {
+			        	name = "centralization_modifier"
+				        duration = 7300
+			        }
+			        moxon_region = {
+			        	limit = {
+			        		NOT = { owned_by = ROOT }
+			        	}
+			        	add_permanent_claim = MOX
+			        }
+                }
+            }
         }
-        #provinces_to_highlight = {}
+        provinces_to_highlight = {
+            NOT = { country_or_non_sovereign_subject_holds = ROOT }
+            region = moxon_region
+        }
     }
 }
 
@@ -764,7 +893,7 @@ stroktur_est = {
                         culture_group = Emastalian
                     }
                     if = {
-				    limit = { has_custom_ideas = no }
+				        limit = { has_custom_ideas = no }
 				        country_event = { id = ideagroups.1 } #Swap Ideas
 			        }
 			        restore_country_name = yes
@@ -772,7 +901,7 @@ stroktur_est = {
 				        limit = {
 					        NOT = { government_rank = 2 }
 				        }
-				    set_government_rank = 2
+				        set_government_rank = 2
 			        }
 			        change_tag = EST
 			        add_country_modifier = {
@@ -1147,7 +1276,7 @@ nafa_1 = {
                 region = pelig_region
             }
             5560 = {
-                owned_by = ROOT
+                country_or_non_sovereign_subject_holds = ROOT
             }
             if = {
                 limit = {
@@ -3418,7 +3547,7 @@ nafa_4 = {
                     }
                 }
             }
-            custom_tooltip = nafaSubjugateVanoma
+            custom_tooltip = SubjugateVanomaTooltip
             aresia_region = { add_permanent_claim = ROOT }
             vanoma_region = { add_permanent_claim = ROOT }
             gorfrek_region = { add_permanent_claim = ROOT }

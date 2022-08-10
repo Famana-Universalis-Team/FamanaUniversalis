@@ -416,17 +416,36 @@ delkia_4 = {
 		icon = mission_conquer_maharashtra
 		required_missions = { del_modernize_army }
 		position = 2
+
+		provinces_to_highlight = {
+			OR = {
+				province_id = 5457
+				province_id = 5458
+				province_id = 5455
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			NOT = { is_claim = ROOT }
+		}
 		
 		trigger = {
 			OR = {
 				5457 = {
-					is_claim = ROOT
+					OR = {
+						is_claim = ROOT
+						country_or_non_sovereign_subject_holds = ROOT
+					}
 				}
 				5458 = {
-					is_claim = ROOT
+					OR = {
+						is_claim = ROOT
+						country_or_non_sovereign_subject_holds = ROOT
+					}
 				}
 				5455 = {
-					is_claim = ROOT
+					OR = {
+						is_claim = ROOT
+						country_or_non_sovereign_subject_holds = ROOT
+					}
 				}
 			}
 		}
@@ -436,11 +455,14 @@ delkia_4 = {
 				limit = {
 					exists = SIX
 				}
-				SIX = {
-					add_casus_belli = {
-						target = DEL
-						type = cb_vassalize_mission
-						months = 12
+				custom_tooltip = delSixanSubj
+				hidden_effect = {
+					SIX = {
+						add_casus_belli = {
+							target = DEL
+							type = cb_vassalize_mission
+							months = 12
+						}
 					}
 				}
 			}

@@ -250,6 +250,9 @@ country_decisions = {
     tribal_migrate = {
         potential = {
             has_reform = desert_tribe
+            NOT = {
+                num_of_cities = 2
+            }
 		}
 		allow = {
 			NOT = {

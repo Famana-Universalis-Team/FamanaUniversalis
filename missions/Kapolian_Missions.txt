@@ -196,7 +196,7 @@ kap_5 = { #kinvirel - jasua region path
 		
 		trigger = {
 			5496 = {
-				owned_by = ROOT
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		effect = {

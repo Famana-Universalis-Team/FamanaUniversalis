@@ -237,10 +237,13 @@ fas_1 = {
 						alliance_with = VAN
 					}
 				}
-				add_casus_belli = {
-					target = VAN
-					type = cb_vassalize_mission
-					months = 300
+				custom_tooltip = SubjugateVanomaTooltip
+				hidden_effect = {
+					add_casus_belli = {
+						target = VAN
+						type = cb_vassalize_mission
+						months = 300
+					}
 				}
 			}
 		}

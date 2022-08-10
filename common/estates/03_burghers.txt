@@ -228,16 +228,22 @@ estate_burghers =
 		}
 	}
 	custom_name = {
+		desc = estate_aqatmanth
+		trigger = {
+			religion = bosisi
+		}
+	}
+	custom_name = {
 		desc = estate_merchant_guilds
 		trigger = {
 			OR = {	#Just like "NOT = { religion_group = Christian }", but at least it doesn't override estate names for new religion groups
 				#Still needs more diversity
-				religion_group = muslim
-				religion_group = eastern
-				religion_group = dharmic
+				religion = lathvy
+				religion_group = north_estali
+				religion_group = Agmagozi
+				religion_group = far_eastern_gomic
+				religion_group = gomic_pagan_group
 				religion_group = pagan
-				religion_group = jewish_group
-				religion_group = zoroastrian_group
 			}
 		}
 	}
