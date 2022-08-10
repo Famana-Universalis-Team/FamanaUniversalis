@@ -75,30 +75,6 @@ antiash_1 = {
 			owns_core_province = 5814
         }
 		effect = {
-			5150 = {
-				change_religion = ROOT
-				change_culture = ROOT
-			}
-			5813 = {
-				change_religion = ROOT
-				change_culture = ROOT
-			}
-			5812= {
-				change_religion = ROOT
-				change_culture = ROOT
-			}
-			5815 = {
-				change_religion = ROOT
-				change_culture = ROOT
-			}
-			7984 = {
-				change_religion = ROOT
-				change_culture = ROOT
-			}
-			5814 = {
-				change_religion = ROOT
-				change_culture = ROOT
-			}
 			okus_area = {
 				add_permanent_claim = ROOT
 			}
@@ -683,14 +659,17 @@ antiash_3 = {
 			7236 = {
 			cede_province = ROOT
 			add_core = ROOT
+			change_culture = ROOT
 			}
 			7237 = {
 			cede_province = ROOT
 			add_core = ROOT
+			change_culture = ROOT
 			}
 			7238 = {
 			cede_province = ROOT
 			add_core = ROOT
+			change_culture = ROOT
 			}
 		}
        
@@ -760,10 +739,6 @@ antiash_3 = {
 		}
        
         effect = {
-			7962 = {
-				change_religion = ROOT
-				change_culture = ROOT
-			}
 			south_delkia = {
 			add_permanent_claim = ROOT
 			}
@@ -1313,11 +1288,6 @@ antiash_5 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		effect = {
-			every_owned_province = {
-				limit = { area = area_243 }
-				change_culture = ROOT
-				change_religion = ROOT
-			}
 			area_244 = {
 				discover_country = ROOT
 			}
@@ -1360,11 +1330,6 @@ antiash_5 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		effect = {
-			every_owned_province = {
-				limit = { area = area_244 }
-				change_culture = ROOT
-				change_religion = ROOT
-			}
 			eastern_desert_region = {
 				add_permanent_claim = ROOT
 			}
