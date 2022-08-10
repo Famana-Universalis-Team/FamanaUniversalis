@@ -1391,3 +1391,21 @@ lyp_prosperity_in_oppia = {
     development_cost = -0.10
     global_prosperity_growth = 0.25
 }
+
+skt_shifting_identity = {
+    global_autonomy = -0.05
+    prestige = 1
+}
+
+skt_est_influence = {
+    improve_relation_modifier = 0.20
+}
+
+skt_unite_est = {
+    ae_impact = -0.10
+    years_of_nationalism = -5
+}
+
+skt_new_trade_networks = {
+    merchants = 1
+}

@@ -183,7 +183,8 @@ eclipse_3 = {
                         hidden_effect = { swap_non_generic_missions = yes }
                     }
                     else = {
-                        swap_non_generic_missions = yes
+                        custom_tooltip = eclipseExplainBranches
+                        #swap_non_generic_missions = yes
                     }
                 }
             }
@@ -399,12 +400,55 @@ stroktur_1 = {
         icon = sources_of_trade
         required_missions = { eclipse_great_port_of_bohora }
         trigger = {
-
+            if = {
+                limit = {
+                    culture = Bohoran_E
+                }
+                5002 = {
+                    trade_share	= {
+                        country = ROOT
+                        share = 80
+                    }
+                }
+            }
+            else = {
+                5361 = {
+                    trade_share = {
+                        country = ROOT
+                        share = 80
+                    }
+                }
+            }
         }
         effect = {
-
+            add_country_modifier = {
+                name = skt_new_trade_networks
+                duration = -1
+            }
+            custom_tooltip = SKTAddNewTradeCenters
+            hidden_effect = {
+                random_owned_province = {
+                    limit = {
+                        province_has_center_of_trade_of_level = 1
+                        NOT = { province_has_center_of_trade_of_level = 3 }
+                    }
+                    add_center_of_trade_level = 1
+                }
+                random_owned_province = {
+                    limit = {
+                        province_has_center_of_trade_of_level = 1
+                        NOT = { province_has_center_of_trade_of_level = 3 }
+                    }
+                    add_center_of_trade_level = 1
+                }
+            }
         }
-        #provinces_to_highlight = {}
+        provinces_to_highlight = {
+            OR = {
+                province_id = 5002
+                province_id = 5002
+            }
+        }
     }
 }
 
@@ -422,10 +466,20 @@ stroktur_3 = {
         icon = mission_intervene_in_castile
         required_missions = { eclipse_the_eclipse }
         position = 3
-        trigger = {
-
+        trigger = { 
+            custom_trigger_tooltip = {
+                tooltip = SKTNewIdentityTooltip
+                OR = {
+                    has_country_flag = sktWentMaxan
+                    has_country_flag = sktWentEmastalian
+                }
+            }
         }
         effect = {
+            add_country_modifier = {
+                name = skt_shifting_identity
+                duration = 3650
+            }
             if = {
                 limit = {
                     primary_culture = Bohoran
@@ -574,9 +628,63 @@ stroktur_est = {
         position = 4
         required_missions = { skt_a_new_identity }
         trigger = {
+            if = {
+                limit = {
+                    any_owned_province = {
+                        OR = {
+                            region = west_emastalia_region
+                            region = emastalia_region
+                        }
+                    }
+                }
+                OR = {
+                    accepted_culture = West_Emastalian
+                    accepted_culture = East_Emastalian
+                }
+            }
+            else = {
+                OR = {
+                    adm = 4
+                    any_ally = { culture_group = Emastalian }
+                }
+            }
+            philosopher = 2
         }
         effect = {
-            
+            custom_tooltip = sktBaseProd
+            hidden_effect = {
+                random_owned_province = {
+                    limit = {
+                        culture = Bohoran_E
+                    }
+                    add_base_production = 3
+                }
+                random_owned_province = {
+                    limit = {
+                        culture = Bohoran_E
+                    }
+                    add_base_production = 3
+                }
+                random_owned_province = {
+                    limit = {
+                        culture = Bohoran_E
+                    }
+                    add_base_production = 3
+                }
+                random_owned_province = {
+                    limit = {
+                        culture = Bohoran_E
+                    }
+                    add_base_production = 3
+                }
+            }
+            add_country_modifier = {
+                name = skt_est_influence
+                duration = 9125
+            }
+            tyarda_area = {
+                add_permanent_claim = ROOT
+            }
         }
         #provinces_to_highlight = {}
     }
@@ -585,33 +693,111 @@ stroktur_est = {
         icon = mission_portuguese_malacca
         required_missions = { stroktur_adopt_emastalian_culture }
         trigger = {
+            tyarda_area = {
+                type = all
+				country_or_non_sovereign_subject_holds = ROOT
+            }
         }
         effect = {
-            
+            add_country_modifier = {
+                name = skt_unite_est
+                duration = 7300
+            }
+            emastalia_region = {
+                add_permanent_claim = ROOT
+            }
         }
-        #provinces_to_highlight = {}
+        provinces_to_highlight = {
+            NOT = { country_or_non_sovereign_subject_holds = ROOT }
+            area = tyarda_area
+        }
     }
 
     stroktur_emastalian_invasion = {
         icon = mission_recruit_the_cossacks
         required_missions = { stroktur_conquer_tyarda }
         trigger = {
+            emastalia_region = {
+                type = all
+				country_or_non_sovereign_subject_holds = ROOT
+            }
         }
         effect = {
-            
+            add_yearly_manpower = 5
+            west_emastalia_region = {
+                add_permanent_claim = ROOT
+            }
         }
-        #provinces_to_highlight = {}
+        provinces_to_highlight = {
+            NOT = { country_or_non_sovereign_subject_holds = ROOT }
+            region = emastalia_region
+        }
     }
 
     stroktur_unite_the_country_est = {
         icon = mission_invade_the_deccan_dlh
         required_missions = { stroktur_emastalian_invasion }
         trigger = {
+            west_emastalia_region = {
+                type = all
+				country_or_non_sovereign_subject_holds = ROOT
+            }
         }
         effect = {
-            
+            5002 = {
+                add_trade_modifier = {
+                    who = ROOT
+                    duration = 9125
+                    power = 50
+                    key = SKT_EST_CONTROL
+                }
+            }
+            custom_tooltip = SKTFormEmastalia
+            add_prestige = 25
+            add_adm_power = 100
+            add_dip_power = 100
+            add_mil_power = 100
+            hidden_effect = {
+                complete_mission = stroktur_unite_the_country_est
+                if = {
+                    limit = {
+                        culture_group = Emastalian
+                    }
+                    if = {
+				    limit = { has_custom_ideas = no }
+				        country_event = { id = ideagroups.1 } #Swap Ideas
+			        }
+			        restore_country_name = yes
+			        if = {
+				        limit = {
+					        NOT = { government_rank = 2 }
+				        }
+				    set_government_rank = 2
+			        }
+			        change_tag = EST
+			        add_country_modifier = {
+				        name = "centralization_modifier"
+				        duration = 7300
+			        }
+			        emastalia_region = {
+				        limit = {
+				        	NOT = { owned_by = ROOT }
+				        }
+				        add_permanent_claim = EST
+			        }
+			        west_emastalia_region = {
+			        	limit = {
+			        		NOT = { owned_by = ROOT }
+			        	}
+			        	add_permanent_claim = EST
+			        }
+                }
+            }
         }
-        #provinces_to_highlight = {}
+        provinces_to_highlight = {
+            NOT = { country_or_non_sovereign_subject_holds = ROOT }
+            region = west_emastalia_region
+        }
     }
 }
 
@@ -629,12 +815,48 @@ stroktur_5 = {
         icon = protect_against_austria
         required_missions = { eclipse_bohorans_and_kachiks }
         trigger = {
-
+            stroktur_region = {
+                type = all
+				owned_by = ROOT
+            }
+            NOT = {
+                any_owned_province = {
+                    region = stroktur_region
+                    culture = Kachik
+                }
+            }
         }
         effect = {
-
+            if = {
+                limit = {
+                    mil = 6
+                }
+                add_mil_power = 100
+            }
+            else = {
+                change_mil = 1
+            }
+            custom_tooltip = SKTAutonomyStroktur
+            hidden_effect = {
+                every_owned_province = {
+                    limit = {
+                        region = stroktur_region
+                    }
+                    add_local_autonomy = -20
+                }
+            }
+            kachik_area = {
+                add_province_modifier = {
+                    name = skt_bohoran_resettlement
+                    duration = 18250
+                }
+            }
         }
-        #provinces_to_highlight = {}
+        provinces_to_highlight = {
+            owned_by = ROOT
+            culture = Kachik
+            region = stroktur_region
+        }
     }
 }
 

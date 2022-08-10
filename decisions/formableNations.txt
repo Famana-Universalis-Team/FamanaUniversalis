@@ -1284,13 +1284,10 @@ country_decisions = {
 		potential = {
 			AND = {
 				NOT = { exists = MOX }
+				NOT = { tag = SKT }
 				OR = {
 					primary_culture = Lerushian
 					primary_culture = Xofkan
-					AND = {
-						primary_culture = Bohoran
-						has_country_flag = sktWentMaxan
-					}
 				}
 				was_never_end_game_tag_trigger = yes
 			}
@@ -1662,14 +1659,11 @@ country_decisions = {
 		potential = {
 			AND = {
 				NOT = { exists = EST }
+				NOT = { tag = SKT }
 				OR = {
 					culture_group = Emastalian
 					primary_culture = Maxan_West_Emastalian
 					primary_culture = Maxan_East_Emastalian
-					AND = {
-						primary_culture = Bohoran_E
-						has_country_flag = sktWentEmastalian
-					}
 				}
 				was_never_end_game_tag_trigger = yes
 			}

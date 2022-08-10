@@ -631,10 +631,11 @@ country_event = {
 
     trigger = {
         tag = NAF
-        ai = yes
+        #ai = yes
         NOT = {
             mission_completed = eclipse_the_eclipse
         }
+        is_year = 300
     }
 
     mean_time_to_happen = {

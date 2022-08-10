@@ -563,7 +563,7 @@ country_decisions = {
 	}
 	conquer_vava = { #this is literally tyarda which amongoloid named this vava area what the fuck is wrong with you
 		potential = {
-			vava_area = {
+			tyarda_area = {
 				is_empty = yes
 			}
 			dip_tech = 6
@@ -577,7 +577,7 @@ country_decisions = {
 		}
 		provinces_to_highlight = {
 			OR = {
-				area = vava_area
+				area = tyarda_area
 			}
 			OR = {
 				NOT = { owned_by = ROOT }
@@ -591,7 +591,7 @@ country_decisions = {
 			mil_power = 25
 		}
 		effect = {
-			vava_area = {
+			tyarda_area = {
 				limit = {
 					is_empty = yes
 				}
