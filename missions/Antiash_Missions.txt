@@ -751,6 +751,10 @@ antiash_3 = {
 			unnamed_area_10 = {
 				discover_country = ROOT
 			}
+			add_country_modifier = {
+				name = antiash_cav_ratio
+				duration = 18250
+			}
 		}
     }
 	antiash_south_delkia = {
