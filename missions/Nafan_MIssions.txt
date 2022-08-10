@@ -419,7 +419,7 @@ stroktur_3 = {
     has_country_shield = yes
 
     skt_a_new_identity = {
-        icon = mission_galleys_in_port
+        icon = mission_intervene_in_castile
         required_missions = { eclipse_the_eclipse }
         position = 3
         trigger = {
@@ -526,7 +526,7 @@ stroktur_mox = {
     }
     
     stroktur_reclaim_hartimatul = {
-        icon = mission_galleys_in_port
+        icon = mission_portuguese_oman
         required_missions = { stroktur_return_to_our_roots }
         trigger = {
         }
@@ -537,7 +537,7 @@ stroktur_mox = {
     }
 
     stroktur_return_to_lerush = {
-        icon = mission_galleys_in_port
+        icon = mission_arabian_sea_trade
         required_missions = { stroktur_reclaim_hartimatul }
         trigger = {
         }
@@ -548,7 +548,7 @@ stroktur_mox = {
     }
 
     stroktur_unite_the_country_mox = {
-        icon = mission_galleys_in_port
+        icon = mission_autocratic_rule
         required_missions = { stroktur_return_to_lerush }
         trigger = {
         }
@@ -570,7 +570,7 @@ stroktur_est = {
     has_country_shield = yes
 
     stroktur_adopt_emastalian_culture = {
-        icon = mission_galleys_in_port
+        icon = mission_brazilian_bandeirantes
         position = 4
         required_missions = { skt_a_new_identity }
         trigger = {
@@ -582,7 +582,7 @@ stroktur_est = {
     }
 
     stroktur_conquer_tyarda = {
-        icon = mission_galleys_in_port
+        icon = mission_portuguese_malacca
         required_missions = { stroktur_adopt_emastalian_culture }
         trigger = {
         }
@@ -593,7 +593,7 @@ stroktur_est = {
     }
 
     stroktur_emastalian_invasion = {
-        icon = mission_galleys_in_port
+        icon = mission_recruit_the_cossacks
         required_missions = { stroktur_conquer_tyarda }
         trigger = {
         }
@@ -604,8 +604,8 @@ stroktur_est = {
     }
 
     stroktur_unite_the_country_est = {
-        icon = mission_galleys_in_port
-        required_missions = { stroktur_west_emastalian_conquest }
+        icon = mission_invade_the_deccan_dlh
+        required_missions = { stroktur_emastalian_invasion }
         trigger = {
         }
         effect = {
