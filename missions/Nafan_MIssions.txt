@@ -588,8 +588,8 @@ stroktur_mox = {
                     adm = 4
                     any_ally = {
                         OR = {
-                            accepted_culture = Lerushian
-                            accepted_culture = Xofkan
+                            primary_culture = Lerushian
+                            primary_culture = Xofkan
                         }
                     }
                 }
