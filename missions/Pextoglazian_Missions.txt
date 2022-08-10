@@ -26,19 +26,25 @@ pex_1 = {
         effect = {
             if = {
                 limit = { exists = RES }
-                add_casus_belli = {
-					target = RES
-					type = cb_vassalize_mission
-					months = 300
-				}
+                custom_tooltip = pexGetCBonRes
+                hidden_effect = {
+                    add_casus_belli = {
+					    target = RES
+					    type = cb_vassalize_mission
+					    months = 300
+				    }
+                }
             }
             if = {
                 limit = { exists = LAG }
-                add_casus_belli = {
-					target = LAG
-					type = cb_vassalize_mission
-					months = 300
-				}
+                custom_tooltip = pexGetCBonLag
+                hidden_effect = {
+                    add_casus_belli = {
+					    target = LAG
+					    type = cb_vassalize_mission
+					    months = 300
+				    }
+                }
             }
             create_admiral = { tradition = 80 }
         }
