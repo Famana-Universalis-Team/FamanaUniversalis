@@ -250,9 +250,6 @@ country_decisions = {
     tribal_migrate = {
         potential = {
             has_reform = desert_tribe
-            NOT = {
-                num_of_cities = 2
-            }
 		}
 		allow = {
 			NOT = {
@@ -261,6 +258,14 @@ country_decisions = {
                     has_country_modifier = didnt_migrate
                     hidden_trigger = {
                         has_country_flag = migmenuopen
+                    }
+                    custom_trigger_tooltip = {
+                        tooltip = desertMigrateTroll
+                        NOT = {
+                            num_of_owned_provinces_with	= {
+                                value = 2
+                            }
+                        }
                     }
                 }
             }

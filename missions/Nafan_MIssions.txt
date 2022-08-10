@@ -780,7 +780,6 @@ stroktur_est = {
             philosopher = 2
         }
         effect = {
-            custom_tooltip = sktBaseProd
             hidden_effect = {
                 random_owned_province = {
                     limit = {
@@ -811,6 +810,7 @@ stroktur_est = {
                 name = skt_est_influence
                 duration = 9125
             }
+            custom_tooltip = sktBaseProd
             tyarda_area = {
                 add_permanent_claim = ROOT
             }
@@ -852,6 +852,7 @@ stroktur_est = {
             }
         }
         effect = {
+            create_general = { tradition = 80 }
             add_yearly_manpower = 5
             west_emastalia_region = {
                 add_permanent_claim = ROOT

@@ -509,9 +509,18 @@ country_event = {
 		ai_chance = { factor = 1 }
 		remove_historical_friend = NAK
 		add_historical_rival = NAK
+		NAK = {
+			remove_historical_friend = BLK
+			add_historical_rival = BLK
+		}
+		add_trust = {
+    		who = NAK
+    		value = -25
+    		mutual = yes
+		}
 		add_country_modifier = {
 			name = bilik_isolation
-			duration = 9000
+			duration = 9125
 		}
 	}
 }
