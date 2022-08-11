@@ -4443,10 +4443,11 @@ kalarga_3 = {
             }
             define_advisor = {
                 type = master_of_mint
-                discount = yes
+                cost_multiplier = 0.35
                 culture = Kachik
                 religion = animism
                 location = 5489
+                skill = 3
             }
         }
         provinces_to_highlight = {
@@ -4473,7 +4474,19 @@ kalarga_3 = {
             }
         }
         effect = {
-            custom_tooltip = EventHere
+            add_dip_power = 250
+            bohora_area = {
+                add_province_modifier = {
+                    name = klg_reclaimed_coast
+                    duration = -1
+                }
+            }
+            maru_area = {
+                add_province_modifier = {
+                    name = klg_reclaimed_coast
+                    duration = -1
+                }
+            }
         }
         provinces_to_highlight = {
             NOT = { culture = Kachik }
@@ -4496,7 +4509,22 @@ kalarga_3 = {
             }
         }
         effect = {
-
+            add_prestige = 25
+            if = {
+                limit = {
+                    mil = 6
+                }
+                add_mil_power = 100
+            }
+            else = {
+                change_mil = 1
+            }
+            moxon_region = {
+                add_province_modifier = {
+                    name = klg_return_to_the_homeland
+                    duration = 9125
+                }
+            }
         }
         provinces_to_highlight = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
@@ -4509,12 +4537,30 @@ kalarga_3 = {
         required_missions = { klg_avenge_our_ancestors }
         position = 10
         trigger = {
-
+            num_of_owned_provinces_with = {
+                value = 10
+                region = moxon_region
+                culture = Kachik
+            }
         }
         effect = {
-
+            add_country_modifier = {
+                name = klg_settle_moxon
+                duration = 7300
+            }
+            5388 = {
+                add_trade_modifier = {
+                    who = ROOT
+                    duration = 5475
+                    power = 100
+                    key = DOMINATE_MOXON_KLG
+                }
+            }
         }
-        #provinces_to_highlight = {}
+        provinces_to_highlight = {
+            NOT = { culture = Kachik }
+            region = moxon_region
+        }
     }
 
     klg_great_kalarga = {
@@ -4525,7 +4571,18 @@ kalarga_3 = {
 
         }
         effect = {
-
+            override_country_name = GREAT_KALARGA
+            add_country_modifier = {
+                name = klg_great_kalargan_empire
+                duration = -1
+            }
+            capital_scope = {
+                add_base_production = 10
+                add_province_modifier = {
+                    name = klg_deep_mining
+                    duration = -1
+                }
+            }
         }
         #provinces_to_highlight = {}
     }
@@ -4579,7 +4636,28 @@ kalarga_4 = {
         required_missions = { klg_expel_the_bohorans }
         position = 7
         trigger = {
-
+            bohora_area = {
+				type = all
+				development = 15
+                NOT = {
+                    unrest = 0
+                }
+			}
+            maru_area = {
+				type = all
+				development = 15
+                NOT = {
+                    unrest = 0
+                }
+			}
+            num_of_owned_provinces_with = {
+                value = 3
+                OR = {
+                    area = bohora_area
+                    area = maru_area
+                }
+                has_building = manufactory #DOESNT WORK!!!!
+            }
         }
         effect = {
 

@@ -125,3 +125,20 @@ naf_pacified_oppia = {
 skt_bohoran_resettlement = {
     local_development_cost = -0.15
 }
+
+klg_return_to_the_homeland = {
+    local_culture_conversion_cost = -0.15
+    local_unrest = 2.5
+    local_autonomy = -0.05
+}
+
+klg_deep_mining = {
+    local_development_cost = -0.33
+    local_gold_depletion_chance_modifier = -1.0
+    trade_goods_size = 1.5
+}
+
+klg_reclaimed_coast = {
+    local_sailors_modifier = 0.50
+    local_production_efficiency = 0.1
+}

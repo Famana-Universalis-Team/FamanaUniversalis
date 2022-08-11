@@ -494,11 +494,24 @@ country_decisions = {
 		}
 		allow = {
             5552 = {
-                has_great_project = {
-                    type = pexamol_pyramids
-                    tier = 1
-                }
                 religion = pawani
+                custom_trigger_tooltip = {
+                    tooltip = relightPPtooltip
+                    OR = {
+                        has_great_project = {
+                            type = pexamol_pyramids
+                            tier = 1
+                        }
+                        has_great_project = {
+                            type = pexamol_pyramids
+                            tier = 2
+                        }
+                        has_great_project = {
+                            type = pexamol_pyramids
+                            tier = 3
+                        }
+                    }
+                }
             }
 		}
 		effect = {

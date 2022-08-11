@@ -1455,3 +1455,25 @@ klg_father_of_kalarga = {
     prestige = 1
     monthly_reform_progress_modifier = 0.1
 }
+
+klg_settle_moxon = {
+    development_cost = -0.20
+    harsh_treatment_cost = -0.33
+}
+
+klg_great_kalargan_empire = {
+    production_efficiency = 0.15
+    global_institution_spread = 0.25
+    trade_steering = 0.33
+}
+
+nhoma_centralize = {
+    land_forcelimit_modifier = 0.10
+    development_cost = -0.10
+}
+
+nhoma_go_horde = {
+    ae_impact = 0.50
+    global_tax_modifier = -0.20
+    diplomatic_reputation = -1
+}
