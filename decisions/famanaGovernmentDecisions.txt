@@ -64,8 +64,8 @@ country_decisions = {
 		
 		allow = {
 			is_free_or_tributary_trigger = yes
-			prestige = 100
-			stability = 3
+			prestige = 50
+			stability = 2
 			church_power = 100
 			treasury = 500
 		}

@@ -6,50 +6,327 @@
 
 namespace = prices
 
-# Triangle Trade
+# Milk Road
 country_event = {
 	id = prices.1
 	title = prices.1.t
 	desc = prices.1.d
-	picture = TRADE_GOODS_PLANTATION_GOODS_IN_WAREHOUSE_eventPicture
+	picture = TRADEGOODS_eventPicture
 
 	fire_only_once = yes
-	
 	major = yes
 
 	trigger = {
-		colony = 1
-		NOT = { has_global_flag = triangle_happened }
-		any_subject_country = {
-			is_colonial_nation = yes
-			OR = {
-				capital_scope = { continent = north_america }
-				capital_scope = { continent = south_america }
-				capital_scope = { continent = new_world }
-			}
-			OR = {
-				tobacco = 4
-				sugar = 4
-				cotton = 4
-			}
+		owns_core_province = 5644
+		5644 = { #most trade power in Jimkalin
+			has_most_province_trade_power = ROOT
 		}
-		
+		5831 = {
+			NOT = { is_empty = yes }
+		}
+		5826 = {
+			NOT = { is_empty = yes }
+		}
+		is_year = 300
 	}
+
 	mean_time_to_happen = {
-		months = 1
+		months = 12
 	}
-	
 	
 	option = {
 		name = prices.1.a
 		change_price = {
-			trade_goods = slaves
-			key = TRIANGLE_TRADE
-			value = 0.5
+			trade_goods = livestock
+			key = MILK_ROAD
+			value = 0.10
+			duration = -1
+		}
+		change_price = {
+			trade_goods = chinaware
+			key = MILK_ROAD
+			value = 0.10
+			duration = -1
+		}
+		change_price = {
+			trade_goods = tea
+			key = MILK_ROAD
+			value = 0.10
 			duration = -1
 		}
 		add_years_of_income  = 0.25
+		add_prestige = 10
+		set_global_flag = milk_road_happened
+	}
+}
+
+# Contact with Hasmal
+country_event = {
+	id = prices.2
+	title = prices.2.t
+	desc = prices.2.d
+	picture = PEASANTS_BARTERING_eventPicture
+
+	fire_only_once = yes
+	major = yes
+
+	trigger = {
+		capital_scope = {
+			OR = {
+				continent = antebar
+				continent = estal
+			}
+		}
+		any_known_country = {
+			capital_scope = {
+				continent = hasmal
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = prices.2.a
+		change_price = {
+			trade_goods = coffee
+			key = HASMAL_CONTACT
+			value = 0.25
+			duration = -1
+		}
+		change_price = {
+			trade_goods = tobacco
+			key = HASMAL_CONTACT
+			value = 0.25
+			duration = -1
+		}
+		change_price = {
+			trade_goods = spices
+			key = HASMAL_CONTACT
+			value = -0.50
+			duration = 3650
+		}
+		add_years_of_income  = 0.10
 		add_prestige = 20
-		set_global_flag = triangle_happened
+		set_global_flag = vishma_contact_happened
+	}
+}
+
+# Advancements in Agriculture
+country_event = {
+	id = prices.3
+	title = prices.3.t
+	desc = prices.3.d
+	picture = FARMING_WIFE_eventPicture
+
+	fire_only_once = yes
+	major = yes
+
+	trigger = {
+		has_institution = printing_press
+		capital_scope = { continent = estal }
+		NOT = {
+			AND = {
+				tag = NAF #nafa is op already as is
+				ai = no
+			}
+		}
+	}
+
+	immediate = {
+		set_saved_name = {
+			key = amazing_naturalist
+			type = advisor
+			scope = ROOT
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+	
+	option = {
+		name = prices.3.a
+		define_advisor = {
+			type = natural_scientist
+			name = amazing_naturalist
+			skill = 3
+			discount = yes
+		}
+		change_price = {
+			trade_goods = grain
+			key = ALYMIN
+			value = 0.25
+			duration = 3650
+		}
+		change_price = {
+			trade_goods = tea
+			key = ALYMIN
+			value = 0.25
+			duration = 3650
+		}
+		change_price = {
+			trade_goods = spices
+			key = ALYMIN
+			value = -0.10
+			duration = 3650
+		}
+		change_price = {
+			trade_goods = wine
+			key = ALYMIN
+			value = -0.10
+			duration = 3650
+		}
+		hidden_effect = {
+			every_province = {
+				limit = {
+					AND = {
+						trade_goods = grain
+						owner = {
+							knows_country = ROOT
+						}
+					}
+				}
+				add_province_modifier = {
+					name = the_alymin_modifier
+					duration = 3650
+				}
+			}
+		}
+		custom_tooltip = alyminTooltip
+		add_years_of_income  = 0.10
+		add_prestige = 10
+		set_global_flag = alymin_established
+	}
+}
+
+# Rebuilding of the Makyna
+
+country_event = {
+	id = prices.4
+	title = prices.4.t
+	desc = prices.4.d
+	picture = GREAT_BUILDING_eventPicture
+
+	fire_only_once = yes
+	major = yes
+
+	trigger = {
+		capital_scope = {
+			region = maky_region
+		}
+		grown_by_development = 20
+		development_in_provinces = {
+			value = 60
+			region = maky_region
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = prices.4.a
+		change_price = {
+			trade_goods = grain
+			key = MAKY_GRAIN
+			value = -0.10
+			duration = 36500
+		}
+		add_years_of_income = 0.10
+	}
+}
+
+# Caffiene is legalised in Lathvy
+
+country_event = {
+	id = prices.5
+	title = prices.5.t
+	desc = prices.5.d
+	picture = TRADE_GOODS_PLANTATION_GOODS_IN_WAREHOUSE_eventPicture
+
+	fire_only_once = yes
+	major = yes
+
+	trigger = {
+		religious_school = {
+			group = lathvy_group
+			school = celzian_school
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+	
+	option = {
+		name = prices.5.a
+		change_price = {
+			trade_goods = coffee
+			key = LEGAL_CAFFIENE
+			value = 0.10
+			duration = -1
+		}
+		change_price = {
+			trade_goods = tea
+			key = LEGAL_CAFFIENE
+			value = 0.10
+			duration = -1
+		}
+		every_country = {
+			limit = {
+				OR = {
+					religion = lathvy
+					religion = rochoni
+					religion = rini
+				}
+			}
+			add_country_modifier = {
+				name = lathvy_coffee_legal
+				duration = 3650
+			}
+		}
+	}
+}
+
+# Prayer Books
+
+country_event = {
+	id = prices.6
+	title = prices.6.t
+	desc = prices.6.d
+	picture = BIG_BOOK_eventPicture
+
+	fire_only_once = yes
+	major = yes
+
+	trigger = {
+		has_institution = renaissance
+		religion = lathvy
+		capital_scope = {
+			superregion = west_estal_superregion
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 60
+	}
+	
+	option = {
+		name = prices.6.a
+		change_price = {
+			trade_goods = paper
+			key = PRAYER_BOOKS
+			value = 0.50
+			duration = -1
+		}
+		add_prestige = 20
+		add_country_modifier = {
+			name = first_prayer_books
+			duration = 3650
+		}
 	}
 }

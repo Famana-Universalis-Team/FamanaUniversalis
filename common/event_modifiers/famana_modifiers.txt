@@ -1477,3 +1477,12 @@ nhoma_go_horde = {
     global_tax_modifier = -0.20
     diplomatic_reputation = -1
 }
+
+lathvy_coffee_legal = {
+    technology_cost = -0.05
+}
+
+first_prayer_books = {
+    tolerance_own = 3
+    global_missionary_strength = 0.02
+}
