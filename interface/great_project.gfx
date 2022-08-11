@@ -573,4 +573,24 @@ spriteTypes = {
 		texturefile = "gfx//interface//great_projects//famana_great_projects//great_project_city_of_xon.dds"
 	}
 
+	spriteType = {
+		name = "GFX_great_project_agixion_colossus"	
+		texturefile = "gfx//interface//great_projects//famana_great_projects//great_project_agixion_colossus.dds"
+	}
+
+	spriteType = {
+		name = "GFX_great_project_fovers_bathhouse"	
+		texturefile = "gfx//interface//great_projects//famana_great_projects//great_project_fovers_bathhouse.dds"
+	}
+
+	spriteType = {
+		name = "GFX_great_project_gardens_of_shiraska_xon"	
+		texturefile = "gfx//interface//great_projects//famana_great_projects//great_project_gardens_of_shiraska_xon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_great_project_pomlen_temple"	
+		texturefile = "gfx//interface//great_projects//famana_great_projects//great_project_pomlen_temple.dds"
+	}
+
 }
