@@ -1055,3 +1055,18 @@ merc_feniki_marines = {
 		reinforce_speed = 1.0
 	}
 }
+# Ganushan Warriors
+merc_ganushan_warriors = {
+    regiments_per_development = 0.03
+	cavalry_weight = 0.6
+    home_province = 7250
+	sprites = { muslimgfx_sprite_pack }
+    trigger = {
+		any_owned_province = {
+				region = east_great_desert_region
+		}
+	}
+	modifier = {
+		land_morale = 0.15
+	}
+}

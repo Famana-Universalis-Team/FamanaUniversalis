@@ -288,7 +288,7 @@ antiash_1 = {
 		}
 	}
 	antiash_kashroon = {
-		icon = mission_temple_patronage
+		icon = mission_patronize_local_gods
 		required_missions = {
             antiash_opmaki
 		}
@@ -719,7 +719,7 @@ antiash_3 = {
 			}
 			add_country_modifier = {
 				name = "antiash_settlers"
-				duration = 3650 #10 years
+				duration = 7300 #20 years
 			}
 		}
     }

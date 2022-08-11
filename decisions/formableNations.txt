@@ -4676,4 +4676,65 @@ country_decisions = {
 			factor = 1
 		}
 	}
+
+	yavonia_nation = {
+		major = yes
+		potential = {
+			AND = {
+				culture = Yavonian
+				NOT = { exists = YAV }
+				was_never_end_game_tag_trigger = yes
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 5644
+				province_id = 5648 
+				province_id = 5599
+				province_id = 5680
+				province_id = 5609
+				province_id = 5616
+				province_id = 5791
+				province_id = 5197
+				province_id = 5656
+			}
+		}
+		allow = {
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			owns_core_province = 5644
+			owns_core_province = 5648 
+			owns_core_province = 5599
+			owns_core_province = 5680
+			owns_core_province = 5609
+			owns_core_province = 5616
+			owns_core_province = 5791
+			owns_core_province = 5197
+			owns_core_province = 5656
+		}
+		effect = {
+			restore_country_name = yes
+			change_tag = YAV
+			if = {
+				limit = {
+					NOT = { government_rank = 3 }
+				}
+				set_government_rank = 3
+			}
+			if = {
+				limit = {
+					government = monarchy
+				}
+				add_government_reform = gov_tonxara
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
 }
