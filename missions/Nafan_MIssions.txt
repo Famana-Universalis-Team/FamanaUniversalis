@@ -4656,7 +4656,7 @@ kalarga_4 = {
                     area = bohora_area
                     area = maru_area
                 }
-                has_building = manufactory
+                has_building = manufactory #DOESNT WORK!!!!
             }
         }
         effect = {
