@@ -4426,7 +4426,7 @@ kalarga_3 = {
                     unrest = 0
                 }
             }
-            kachikia_area = {
+            kachik_area = {
                 type = all
                 development = 10
             }
@@ -4452,7 +4452,7 @@ kalarga_3 = {
         provinces_to_highlight = {
             NOT = { development = 10 }
             OR = {
-                area = kachikia_area
+                area = kachik_area
                 area = leta_area
             }
         }
