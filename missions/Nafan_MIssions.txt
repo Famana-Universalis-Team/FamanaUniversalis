@@ -4443,10 +4443,11 @@ kalarga_3 = {
             }
             define_advisor = {
                 type = master_of_mint
-                discount = yes
+                cost_multiplier = 0.35
                 culture = Kachik
                 religion = animism
                 location = 5489
+                skill = 3
             }
         }
         provinces_to_highlight = {
@@ -4496,7 +4497,22 @@ kalarga_3 = {
             }
         }
         effect = {
-
+            add_prestige = 25
+            if = {
+                limit = {
+                    mil = 6
+                }
+                add_mil_power = 100
+            }
+            else = {
+                change_mil = 1
+            }
+            moxon_region = {
+                add_province_modifier = {
+                    name = klg_return_to_the_homeland
+                    duration = 9125
+                }
+            }
         }
         provinces_to_highlight = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }

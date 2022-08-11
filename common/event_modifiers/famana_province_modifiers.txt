@@ -125,3 +125,9 @@ naf_pacified_oppia = {
 skt_bohoran_resettlement = {
     local_development_cost = -0.15
 }
+
+klg_return_to_the_homeland = {
+    local_culture_conversion_cost = -0.15
+    local_unrest = 2.5
+    local_autonomy = -0.05
+}

@@ -1390,6 +1390,13 @@ country_event = { #Kalargan uprising
 			}
 			add_accepted_culture = Bohoran_E
 		}
+		if = {
+			limit = {
+				NOT = { government = monarchy }
+			}
+			change_government = monarchy
+			add_government_reform = autocracy_reform
+		}
 		add_prestige = -50
 		add_legitimacy = -25
 	}
