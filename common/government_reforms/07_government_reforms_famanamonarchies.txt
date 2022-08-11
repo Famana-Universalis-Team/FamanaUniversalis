@@ -509,3 +509,19 @@ ordican_senate = {
 		burghers_influence_modifier = 0.1
 	}
 }
+
+kachik_monarchy = {
+	icon = "shogunate"
+	allow_normal_conversion = no
+	valid_for_nation_designer = yes
+	potential = {
+		has_reform = kachik_monarchy
+	}
+	legacy_equivalent = despotic_monarchy
+	can_change_primary_culture = no
+	modifiers = {
+		global_unrest = -1
+		unjustified_demands	= -0.15
+		nobles_influence_modifier = 0.10
+	}
+}

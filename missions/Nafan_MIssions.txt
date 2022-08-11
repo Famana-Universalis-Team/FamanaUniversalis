@@ -4220,6 +4220,16 @@ kalarga_1 = {
         }
         effect = {
 
+
+            5496 = {
+                add_permanent_claim = ROOT
+            }
+            5370 = {
+                add_permanent_claim = ROOT
+            }
+            5373 = {
+                add_permanent_claim = ROOT
+            }
         }
         #provinces_to_highlight = {}
     }
@@ -4229,12 +4239,20 @@ kalarga_1 = {
         required_missions = { klg_renewed_seafaring_culture }
         position = 8
         trigger = {
-
+            num_of_owned_provinces_with = {
+                value = 2
+                region = moxon_region
+            }
         }
         effect = {
-
+            moxon_region = {
+                add_permanent_claim = ROOT
+            }
         }
-        #provinces_to_highlight = {}
+        provinces_to_highlight = {
+            NOT = { country_or_non_sovereign_subject_holds = ROOT }
+            region = moxon_region
+        }
     }
 
     klg_control_the_seas = {
@@ -4286,6 +4304,19 @@ kalarga_2 = {
         }
         effect = {
 
+
+            unnamed_area_29 = {
+                add_permanent_claim = ROOT
+            }
+            geccis_area = {
+                add_permanent_claim = ROOT
+            }
+            unnamed_area_30 = {
+                add_permanent_claim = ROOT
+            }
+            unnamed_area_32 = {
+                add_permanent_claim = ROOT
+            }
         }
         #provinces_to_highlight = {}
     }
@@ -4295,12 +4326,44 @@ kalarga_2 = {
         required_missions = { klg_seize_trade_routes }
         position = 8
         trigger = {
-
+            unnamed_area_29 = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+            geccis_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+            unnamed_area_30 = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+            unnamed_area_32 = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
         }
         effect = {
 
+            unnamed_area_31 = {
+                add_permanent_claim = ROOT
+            }
+            unnamed_area_13 = {
+                add_permanent_claim = ROOT
+            }
+            kinvirel_area = {
+                add_permanent_claim = ROOT
+            }
         }
-        #provinces_to_highlight = {}
+        provinces_to_highlight = {
+            NOT = { country_or_non_sovereign_subject_holds = ROOT }
+            OR = {
+                area = unnamed_area_29
+                area = geccis_area
+                area = unnamed_area_30
+                area = unnamed_area_32
+            }
+        }
     }
 }
 
@@ -4322,12 +4385,34 @@ kalarga_3 = {
         required_missions = { eclipse_the_eclipse }
         position = 3
         trigger = {
-
+            bohora_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+                is_core = ROOT
+			}
+            maru_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+                is_core = ROOT
+			}
+            government = monarchy
         }
         effect = {
-
+            add_country_modifier = {
+                name = klg_new_kachik_state
+                duration = 9125
+            }
+            country_event = {
+                id = nafa.13
+            }
         }
-        #provinces_to_highlight = {}
+        provinces_to_highlight = {
+            NOT = { country_or_non_sovereign_subject_holds = ROOT }
+            OR = {
+                area = bohora_area
+                area = maru_area
+            }
+        }
     }
 
     klg_a_kachik_nation = {
@@ -4335,12 +4420,43 @@ kalarga_3 = {
         required_missions = { klg_secure_the_coast }
         position = 4
         trigger = {
-
+            NOT = {
+                any_owned_province = {
+                    culture = Kachik
+                    unrest = 0
+                }
+            }
+            every_owned_province = {
+                limit = {
+                    OR = {
+                        area = kachikia_area
+                        area = leta_area
+                    }
+                }
+                development = 10
+            }
         }
         effect = {
-
+            add_stability_or_adm_power = yes
+            add_ruler_modifier = {
+                name = klg_father_of_kalarga
+                duration = -1
+            }
+            define_advisor = {
+                type = master_of_mint
+                discount = yes
+                culture = Kachik
+                religion = animism
+                location = 5489
+            }
         }
-        #provinces_to_highlight = {}
+        provinces_to_highlight = {
+            NOT = { development = 10 }
+            OR = {
+                area = kachikia_area
+                area = leta_area
+            }
+        }
     }
 
     klg_expel_the_bohorans = {
@@ -4348,12 +4464,25 @@ kalarga_3 = {
         required_missions = { klg_a_kachik_nation }
         position = 6
         trigger = {
-
+            bohora_area = {
+                type = all
+                culture = Kachik
+            }
+            maru_area = {
+                type = all
+                culture = Kachik
+            }
         }
         effect = {
-
+            custom_tooltip = EventHere
         }
-        #provinces_to_highlight = {}
+        provinces_to_highlight = {
+            NOT = { culture = Kachik }
+            OR = {
+                area = bohora_area
+                area = maru_area
+            }
+        }
     }
 
     klg_avenge_our_ancestors = {
@@ -4362,11 +4491,18 @@ kalarga_3 = {
         position = 9
         trigger = {
 
+            moxon_region = {
+                type = all
+                country_or_non_sovereign_subject_holds = ROOT
+            }
         }
         effect = {
 
         }
-        #provinces_to_highlight = {}
+        provinces_to_highlight = {
+            NOT = { country_or_non_sovereign_subject_holds = ROOT }
+            region = moxon_region
+        }
     }
 
     klg_a_new_homeland = {
@@ -4414,10 +4550,27 @@ kalarga_4 = {
         required_missions = { klg_modernize_the_army }
         position = 5
         trigger = {
-
+            num_of_generals_with_traits = 2
+            army_tradition = 60
         }
         effect = {
-
+            custom_tooltip = klgArmyTradForGenerals
+            add_country_modifier = {
+                name = klg_leaders_better
+                duration = -1
+            }
+            custom_tooltip = klgIfCav
+            hidden_effect = {
+                if = {
+                    limit = {
+                        num_of_cavalry = 12
+                    }
+                }
+                add_country_modifier = {
+                    name = klg_get_cav
+                    duration = -1
+                }
+            }
         }
         #provinces_to_highlight = {}
     }
@@ -4467,10 +4620,19 @@ kalarga_5 = {
         required_missions = { klg_secure_the_coast }
         position = 4
         trigger = {
-
+            army_size_percentage = 1.0
+            army_professionalism = 0.075
+            army_reformer = 2
         }
         effect = {
-
+            add_yearly_manpower	= 2
+            add_country_modifier = {
+                name = klg_reformed_army
+                duration = 10950
+            }
+            emastalia_region = {
+                add_permanent_claim = ROOT
+            }
         }
         #provinces_to_highlight = {}
     }
@@ -4509,7 +4671,9 @@ kalarga_5 = {
 
         }
         effect = {
-
+            gorfrek_region = {
+                add_permanent_claim = ROOT
+            }
         }
         #provinces_to_highlight = {}
     }
@@ -4519,11 +4683,17 @@ kalarga_5 = {
         required_missions = { klg_into_the_woods }
         position = 10
         trigger = {
-
+            num_of_owned_provinces_with = {
+                value = 20
+                region = gorfrek_region
+            }
         }
         effect = {
 
         }
-        #provinces_to_highlight = {}
+        provinces_to_highlight = {
+            NOT = { country_or_non_sovereign_subject_holds = ROOT }
+            region = gorfrek_region
+        }
     }
 }

@@ -3757,6 +3757,12 @@ on_leader_recruited = {
 # country
 on_general_recruited = {
 	add_army_professionalism = 0.01
+	if = {
+		limit = {
+			mission_completed = klg_recruit_new_leaders
+		}
+		add_army_tradition = 1
+	}
 }
 
 # country

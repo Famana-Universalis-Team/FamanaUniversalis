@@ -1423,7 +1423,35 @@ skt_claimant_moxon = {
     naval_morale = 0.10
 }
 
+
 pawani_lit_pyramids = {
     global_unrest = -1
     global_missionary_strength = 0.01
+}
+
+klg_reformed_army = {
+    drill_gain_modifier	= 0.50
+	reinforce_cost_modifier = -0.20
+    discipline = 0.05
+}
+
+klg_leaders_better = {
+    free_leader_pool = 1
+    army_tradition_from_battle = 0.5
+}
+
+klg_get_cav = {
+    cavalry_power = 0.10
+    cav_to_inf_ratio = 0.15
+}
+
+klg_new_kachik_state = {
+    core_creation = -0.10
+    shock_damage = 0.15
+}
+
+klg_father_of_kalarga = {
+    all_power_cost = -0.05
+    prestige = 1
+    monthly_reform_progress_modifier = 0.1
 }

@@ -1369,6 +1369,9 @@ country_event = { #Kalargan uprising
 				remove_core = YLL
 				remove_core = RCK
 			}
+			kill_ruler = yes
+			kill_heir = {}
+			remove_consort = yes
 		}
 		change_primary_culture = Kachik
 		if = {
