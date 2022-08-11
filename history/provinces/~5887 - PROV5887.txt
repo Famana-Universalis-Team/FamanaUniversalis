@@ -1,0 +1,22 @@
+# No previous file for PROV5887
+culture = Ayyuntud
+religion = animism
+hre = no
+base_tax = 1
+base_production = 1
+base_manpower = 1
+native_size = 1
+native_ferocity = 1
+native_hostileness = 1
+capital = "Enastin"
+is_city = no
+
+212.6.7 = {
+owner = GET
+controller = GET
+add_core = GET
+#remove_core = 
+culture = Geteri
+religion = bamali
+trade_goods = salt
+}

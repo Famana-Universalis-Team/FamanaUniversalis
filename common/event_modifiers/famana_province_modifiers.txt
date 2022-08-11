@@ -131,3 +131,9 @@ klg_return_to_the_homeland = {
     local_unrest = 2.5
     local_autonomy = -0.05
 }
+
+klg_deep_mining = {
+    local_development_cost = -0.33
+    local_gold_depletion_chance_modifier = -1.0
+    trade_goods_size = 1.5
+}

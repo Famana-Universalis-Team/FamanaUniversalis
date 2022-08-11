@@ -4525,12 +4525,30 @@ kalarga_3 = {
         required_missions = { klg_avenge_our_ancestors }
         position = 10
         trigger = {
-
+            num_of_owned_provinces_with = {
+                value = 10
+                region = moxon_region
+                culture = Kachik
+            }
         }
         effect = {
-
+            add_country_modifier = {
+                name = klg_settle_moxon
+                duration = 7300
+            }
+            5388 = {
+                add_trade_modifier = {
+                    who = ROOT
+                    duration = 5475
+                    power = 100
+                    key = DOMINATE_MOXON_KLG
+                }
+            }
         }
-        #provinces_to_highlight = {}
+        provinces_to_highlight = {
+            NOT = { culture = Kachik }
+            region = moxon_region
+        }
     }
 
     klg_great_kalarga = {
@@ -4541,7 +4559,18 @@ kalarga_3 = {
 
         }
         effect = {
-
+            override_country_name = GREAT_KALARGA
+            add_country_modifier = {
+                name = klg_great_kalargan_empire
+                duration = -1
+            }
+            capital_scope = {
+                add_base_production = 10
+                add_province_modifier = {
+                    name = klg_deep_mining
+                    duration = -1
+                }
+            }
         }
         #provinces_to_highlight = {}
     }
