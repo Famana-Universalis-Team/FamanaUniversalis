@@ -4184,3 +4184,346 @@ nafa_5 = {
         #provinces_to_highlight = {}
     }
 }
+
+kalarga_1 = {
+    slot = 1
+    generic = no
+    ai = yes
+    potential = {
+        NOT = { map_setup = map_setup_random }
+        OR = {
+            tag = KLG
+            has_country_flag = getKalarganMissions
+        }
+    }
+    has_country_shield = yes
+
+    klg_reclaiming_our_heritage = {
+        icon = mission_portuguese_ceylon
+        required_missions = { klg_secure_the_coast }
+        position = 4
+        trigger = {
+
+        }
+        effect = {
+
+        }
+        #provinces_to_highlight = {}
+    }
+
+    klg_renewed_seafaring_culture = {
+        icon = mission_scandinavian_port_authority
+        required_missions = { klg_reclaiming_our_heritage }
+        position = 6
+        trigger = {
+
+        }
+        effect = {
+
+        }
+        #provinces_to_highlight = {}
+    }
+
+    klg_threaten_the_maxans = {
+        icon = mission_establish_high_seas_navy
+        required_missions = { klg_renewed_seafaring_culture }
+        position = 8
+        trigger = {
+
+        }
+        effect = {
+
+        }
+        #provinces_to_highlight = {}
+    }
+
+    klg_control_the_seas = {
+        icon = mission_dominate_gujarati_trade
+        required_missions = { klg_threaten_the_maxans }
+        position = 10
+        trigger = {
+
+        }
+        effect = {
+
+        }
+        #provinces_to_highlight = {}
+    }
+}
+
+kalarga_2 = {
+    slot = 2
+    generic = no
+    ai = yes
+    potential = {
+        NOT = { map_setup = map_setup_random }
+        OR = {
+            tag = KLG
+            has_country_flag = getKalarganMissions
+        }
+    }
+    has_country_shield = yes
+
+    klg_kalargan_fire = {
+        icon = klg_fire
+        required_missions = { klg_reclaiming_our_heritage }
+        position = 5
+        trigger = {
+
+        }
+        effect = {
+
+        }
+        #provinces_to_highlight = {}
+    }
+
+    klg_seize_trade_routes = {
+        icon = mission_unite_coromandel
+        required_missions = { klg_expel_the_bohorans }
+        position = 7
+        trigger = {
+
+        }
+        effect = {
+
+        }
+        #provinces_to_highlight = {}
+    }
+
+    klg_the_jasuan_coast = {
+        icon = mission_occupy_alexandria
+        required_missions = { klg_seize_trade_routes }
+        position = 8
+        trigger = {
+
+        }
+        effect = {
+
+        }
+        #provinces_to_highlight = {}
+    }
+}
+
+kalarga_3 = {
+    slot = 3
+    generic = no
+    ai = yes
+    potential = {
+        NOT = { map_setup = map_setup_random }
+        OR = {
+            tag = KLG
+            has_country_flag = getKalarganMissions
+        }
+    }
+    has_country_shield = yes
+
+    klg_secure_the_coast = {
+        icon = mission_secure_the_malabar_coast
+        required_missions = { eclipse_the_eclipse }
+        position = 3
+        trigger = {
+
+        }
+        effect = {
+
+        }
+        #provinces_to_highlight = {}
+    }
+
+    klg_a_kachik_nation = {
+        icon = mission_seize_the_bengal_coast
+        required_missions = { klg_secure_the_coast }
+        position = 4
+        trigger = {
+
+        }
+        effect = {
+
+        }
+        #provinces_to_highlight = {}
+    }
+
+    klg_expel_the_bohorans = {
+        icon = mission_noble_council
+        required_missions = { klg_a_kachik_nation }
+        position = 6
+        trigger = {
+
+        }
+        effect = {
+
+        }
+        #provinces_to_highlight = {}
+    }
+
+    klg_avenge_our_ancestors = {
+        icon = mission_rb_conquer_brittany
+        required_missions = { klg_expel_the_bohorans klg_threaten_the_maxans }
+        position = 9
+        trigger = {
+
+        }
+        effect = {
+
+        }
+        #provinces_to_highlight = {}
+    }
+
+    klg_a_new_homeland = {
+        icon = mission_guilds_of_barcelona
+        required_missions = { klg_avenge_our_ancestors }
+        position = 10
+        trigger = {
+
+        }
+        effect = {
+
+        }
+        #provinces_to_highlight = {}
+    }
+
+    klg_great_kalarga = {
+        icon = mission_conquer_novgorod
+        required_missions = { klg_control_the_seas klg_a_new_homeland klg_unite_eastern_estal }
+        position = 11
+        trigger = {
+
+        }
+        effect = {
+
+        }
+        #provinces_to_highlight = {}
+    }
+}
+
+kalarga_4 = {
+    slot = 4
+    generic = no
+    ai = yes
+    potential = {
+        NOT = { map_setup = map_setup_random }
+        OR = {
+            tag = KLG
+            has_country_flag = getKalarganMissions
+        }
+    }
+    has_country_shield = yes
+
+    klg_recruit_new_leaders = {
+        icon = mission_crusade_for_varna
+        required_missions = { klg_modernize_the_army }
+        position = 5
+        trigger = {
+
+        }
+        effect = {
+
+        }
+        #provinces_to_highlight = {}
+    }
+
+    klg_resettle_the_towns = {
+        icon = mission_eastern_european_city
+        required_missions = { klg_expel_the_bohorans }
+        position = 7
+        trigger = {
+
+        }
+        effect = {
+
+        }
+        #provinces_to_highlight = {}
+    }
+
+    klg_adopt_maxan_techniques = {
+        icon = mission_rb_monopolize_the_channel
+        required_missions = { klg_resettle_the_towns }
+        position = 8
+        trigger = {
+
+        }
+        effect = {
+
+        }
+        #provinces_to_highlight = {}
+    }
+}
+
+kalarga_5 = {
+    slot = 5
+    generic = no
+    ai = yes
+    potential = {
+        NOT = { map_setup = map_setup_random }
+        OR = {
+            tag = KLG
+            has_country_flag = getKalarganMissions
+        }
+    }
+    has_country_shield = yes
+
+    klg_modernize_the_army = {
+        icon = mission_noble_council
+        required_missions = { klg_secure_the_coast }
+        position = 4
+        trigger = {
+
+        }
+        effect = {
+
+        }
+        #provinces_to_highlight = {}
+    }
+
+    klg_the_expedition = {
+        icon = mission_conquer_malwa_bah
+        required_missions = { klg_modernize_the_army }
+        position = 6
+        trigger = {
+
+        }
+        effect = {
+
+        }
+        #provinces_to_highlight = {}
+    }
+
+    klg_reconnect_with_the_tribes = {
+        icon = mission_che_the_beloved_woman
+        required_missions = { klg_the_expedition }
+        position = 7
+        trigger = {
+
+        }
+        effect = {
+
+        }
+        #provinces_to_highlight = {}
+    }
+    
+    klg_into_the_woods = {
+        icon = mission_collect_yasak
+        required_missions = { klg_reconnect_with_the_tribes }
+        position = 9
+        trigger = {
+
+        }
+        effect = {
+
+        }
+        #provinces_to_highlight = {}
+    }
+
+    klg_unite_eastern_estal = {
+        icon = mission_rb_rein_in_the_highland_clans
+        required_missions = { klg_into_the_woods }
+        position = 10
+        trigger = {
+
+        }
+        effect = {
+
+        }
+        #provinces_to_highlight = {}
+    }
+}

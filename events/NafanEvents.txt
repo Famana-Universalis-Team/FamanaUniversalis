@@ -653,3 +653,33 @@ country_event = {
         ai_chance = { factor = 1 }
     }
 }
+
+country_event = {
+    id = nafa.12
+    hidden = yes
+    fire_only_once = yes
+
+    trigger = {
+        tag = KLG
+        #ai = yes
+        NOT = {
+            mission_completed = eclipse_the_eclipse
+        }
+        is_year = 300
+    }
+
+    mean_time_to_happen = {
+        months = 24
+    }
+
+    immediate = {
+        complete_mission = eclipse_the_eclipse
+        set_country_flag = getKalarganMissions
+        swap_non_generic_missions = yes
+    }
+
+    option = {
+        name = nafa.12.a
+        ai_chance = { factor = 1 }
+    }
+}

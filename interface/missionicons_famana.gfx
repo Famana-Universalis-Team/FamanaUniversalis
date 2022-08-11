@@ -21,6 +21,11 @@ spriteTypes = {
 		name = "pex_lathvy_empire_mission"
 		texturefile = "gfx//interface//missions//famana_missions//pex_lathvy_empire_mission.dds"
 	}
+	
+			spriteType = {
+		name = "klg_fire"
+		texturefile = "gfx//interface//missions//famana_missions//klg_fire.dds"
+	}
 
 			spriteType = {
 		name = "control_unrest"
