@@ -61,10 +61,7 @@ kap_4 = { #kinvirel - jasua region path
 				}
 				add_historical_rival = KIN
 			}
-			every_owned_province = {
-				limit = {
-					area = unnamed_area_31
-				}
+			unnamed_area_31 = {
 				add_devastation = -100
 			}
 			unnamed_area_13 = {
