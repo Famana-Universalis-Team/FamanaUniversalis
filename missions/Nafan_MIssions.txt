@@ -4426,13 +4426,12 @@ kalarga_3 = {
                     unrest = 0
                 }
             }
-            every_owned_province = {
-                limit = {
-                    OR = {
-                        area = kachikia_area
-                        area = leta_area
-                    }
-                }
+            kachikia_area = {
+                type = all
+                development = 10
+            }
+            leta_area = {
+                type = all
                 development = 10
             }
         }
