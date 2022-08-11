@@ -1,38 +1,3 @@
-#Country Name: Please see filename.
-
-graphical_culture = westerngfx
-
-color = { 194  144  65` }
-
-historical_idea_groups = {
-	economic_ideas
-	defensive_ideas
-	diplomatic_ideas
-	offensive_ideas
-	innovativeness_ideas
-	quantity_ideas
-	administrative_ideas
-	religious_ideas
-}
-
-historical_units = {
-	western_medieval_infantry
-	western_medieval_knights
-	western_men_at_arms
-	swiss_landsknechten
-	dutch_maurician
-	austrian_tercio
-	austrian_grenzer
-	austrian_hussar
-	austrian_white_coat
-	austrian_jaeger
-	mixed_order_infantry
-	open_order_cavalry
-	napoleonic_square
-	napoleonic_lancers
-}
-
-monarch_names = {
 	"Galág #0" = 1
 	"Anaslú #0" = 1
 	"Ombá #0" = 1
@@ -86,34 +51,20 @@ monarch_names = {
 	"Gíja #0" = -1
 	"Wífa #0" = -1
 	"Soofi #0" = -1
-}
 
-leader_names = {
-	Arlentan
-	Div
-	Galivicus
-	Randos
-	Vanaia
-	Yomas
-	Bodalf
-	Gameltan
-	Ayubais
-}
 
-ship_names = {
-	Pavtis
-	Naglon
-	Talak
-	Aramesh
-}
-
-army_names = {
-	"Divaca ane $PROVINCE$" 
-}
-
-fleet_names = {
-	"Blue Navy"
-	"Red Navy"
-	"Black Navy"
-	"White Navy"
-}
+	Seowbám
+	Momunouf
+	Hantou
+	Accaci
+	Sar
+	Máspop
+	Íba
+	Thaul
+	Lábe
+	Gojotújlo
+	Nehoulpo
+	Outhlud
+	Lunúwta
+	Fautut
+	Arli

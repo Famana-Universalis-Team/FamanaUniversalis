@@ -1,141 +1,73 @@
 import random
 
-Liq = ["y", "l", "l", "r"]
-UnStop = ["p", "t", "k", "c", "j"]
-VoStops = ["b", "d", "g", "c", "j"]
-UnFricative = ["s", "s", "f", "h"]
-VoFricative = ["m", "n", "ñ", "z", "z", "v"]
-VoSib = ["z", "z"]
-UnSib = ["s", "s"]
-ShortVowel = ["a", "e", "i", "o", "u", "y"]
-LongVowel = ["á", "é", "í", "ó", "ú", "ý"]
-Consonants = Liq + UnStop + VoStops + UnFricative + VoFricative
+Stops = ["p", "t", "l", "b", "d", "g", "p", "t", "l", "b", "d", "g", "'"]
+Sonorants = ["s", "f", "h", "m", "n", "j", "l", "w"]
+ShortVowels = ["a", "e", "o", "u"]
+LongVowels = ["á", "í", "ú", "ou", "au", "ia"]
+Consonants = Stops+Sonorants
 
-with open("NameListKachik.txt", "w") as f:
+with open("NameListOppian.txt", "w") as f:
     f.write('')
 for x in range(0,100):
     #define boolean tags
     endsWithVowel=False
     name=''
-    weight = 0
     
     #generate syllabes
     roll = random.randint(1,100)
-    if roll >= 88:
+    if roll >= 90:
         syllables = 4
-        syllyweight = 15
-        weight+=20
     elif roll >= 55:
         syllables = 3
-        syllyweight = 5
-        weight+=10
     elif roll >= 5:
         syllables = 2
-        syllyweight = 2
-        weight+=4
     else:
         syllables = 1
-        syllyweight = 0
         
     #now, assemble the word from the syllables
     for syl in range(0,syllables):
-        deltaWeight = 0
-        
+        if syl == syllables-2:
+            stressedSyl = True
+        else:
+            stressedSyl = False
+            
+            
         #ONSET
-        roll = random.randint(1,100) + syllyweight + weight
+        roll = random.randint(1,100)
         
-        if roll >= 75 and endsWithVowel==False: #-
+        if roll >= 70 and endsWithVowel==False: #-
             name+=''
-            deltaWeight += -10
         elif roll >= 35: #C
             name+=random.choice(Consonants)
-        elif roll >= 25: #PF
-            if (random.randint(0,1) == 1):
-                name+=random.choice(UnStop)
-                name+=random.choice(UnFricative)
-            else:
-                name+=random.choice(VoStops)
-                name+=random.choice(VoFricative)
-            deltaWeight += 5
-        elif roll >= 20: #SPF
-            if (random.randint(0,1) == 1):
-                name+=random.choice(UnSib)
-                name+=random.choice(UnStop)
-                name+=random.choice(UnFricative)
-            else:
-                name+=random.choice(VoSib)
-                name+=random.choice(VoStops)
-                name+=random.choice(VoFricative)
-            deltaWeight += 15
-        elif roll >= 10: #PL
-            name+=random.choice(VoStops)
-            name+=random.choice(Liq)
-            deltaWeight += 5
-        elif roll >= 5: #SPL
-            if (random.randint(0,1) == 1):
-                name+=random.choice(VoSib)
-            else:
-                name+=random.choice(UnSib)
-            name+=random.choice(VoStops)
-            name+=random.choice(Liq)
-            deltaWeight += 15
-        else: #PFL
-            name+=random.choice(VoStops)
-            name+=random.choice(VoFricative)
-            name+=random.choice(Liq)
-            deltaWeight += 15
+        elif roll >= 20: #PS
+            name+=random.choice(Stops)
+            name+=random.choice(Sonorants)
+        elif roll >= 5: #SP
+            name+=random.choice(Sonorants)
+            name+=random.choice(Stops)
+        else: #ZPS
+            name+='s'
+            name+=random.choice(Stops)
+            name+=random.choice(Sonorants)
             
         #VOWEL
-        roll = random.randint(1,100) + syllyweight + weight
-        
-        if (roll >= 50): #v
-            name+=random.choice(ShortVowel)
-        else: #vv
-            name+=random.choice(LongVowel)
-            deltaWeight += 5
+        if stressedSyl==True: #Stress
+            name+=random.choice(LongVowels)
+        else: #No Stress
+            name+=random.choice(ShortVowels)
             
         #CODA
-        roll = random.randint(1,100) + syllyweight + weight
+        roll = random.randint(0,2)
         
-        if roll >= 60: #-
+        if roll != 0: #-
             name+=''
-            endsWithVowel=True
-            deltaWeight += -5
-        elif roll >= 30: #C
+            endsWithVowel = True
+        else: #C
             name+=random.choice(Consonants)
-            endsWithVowel=False
-        elif roll >= 20: #LP
-            name+=random.choice(Liq)
-            if (random.randint(0,1) == 1):
-                name+=random.choice(UnStop)
-            else:
-                name+=random.choice(VoStops)
-            endsWithVowel=False
-            deltaWeight += 5
-        elif roll >= 10: #FP
-            if (random.randint(0,1) == 1):
-                name+=random.choice(UnFricative)
-                name+=random.choice(UnStop)
-            else:
-                name+=random.choice(VoFricative)
-                name+=random.choice(VoStops)
-            endsWithVowel=False
-            deltaWeight += 5
-        else: #LPF
-            name+=random.choice(Liq)
-            if (random.randint(0,1) == 1):
-                name+=random.choice(UnFricative)
-                name+=random.choice(UnStop)
-            else:
-                name+=random.choice(VoFricative)
-                name+=random.choice(VoStops)
-            endsWithVowel=False
-            deltaWeight += 10
-    
+        
     print(name)
-    weight+=deltaWeight
     #finally, write to file
-    with open("NameListKachik.txt", "a") as f:
+    with open("NameListOppian.txt", "a") as f:
         f.write(f'{name.title()} ')
         
         
@@ -236,4 +168,25 @@ for x in range(0,100):
         LP - 10
         FP - 10
         LPF - 10
+'''
+
+'''Oppian - CCCVC based on latin
+    Sibilants - s
+    Stops - p, t, k, b, d, g, '
+    Sonorants - s, f, h, m, n, j, l, w
+    Short Vowels - a, e, o, u
+    Long Vowels - á, í, ú, ou, au, ya
+    
+    Stress based system - stress always on panultimate syllable. Stressed syllables are long, unless the word is one syllable long.
+    
+    STRUCTURES:
+    ONSET:
+        - - 20
+        C - 30
+        PS - 20
+        SP - 20
+        ZPS - 10
+    CODA:
+        - - 50
+        C - 50
 '''
