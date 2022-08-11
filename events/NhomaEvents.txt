@@ -249,3 +249,59 @@ country_event = {
         ai_chance = { factor = 1 }
     }
 }
+
+#horde or dev
+country_event = {
+    id = nhoma.8
+	title = nhoma.8.t
+    desc = nhoma.8.d
+	picture = IMPALED_SOLDIERS_eventPicture
+
+    trigger = {
+        religion = tonmo
+        culture_group = Ravsho
+        NOT = {
+            has_country_flag = gotNhomaSteppeEvent
+        }
+        is_year = 320
+        NOT = { is_year = 400 }
+        NOT = {
+            OR = {
+                tag = FAS
+                tag = KSL
+                tag = NHM
+                tag = JFX
+                tag = HOY
+            }
+        }
+    }
+
+    mean_time_to_happen = {
+        months = 5
+    }
+
+    immediate = {
+        set_country_flag = gotNhomaSteppeEvent
+    }
+
+    option = { #horde
+        name = nhoma.8.b
+        ai_chance = { factor = 1 }
+        change_government = tribal
+        add_government_reform = steppe_horde
+        add_country_modifier = {
+            name = nhoma_go_horde
+            duration = 9125
+        }
+    }
+
+    option = { #dev
+        name = nhoma.8.a
+        ai_chance = { factor = 10 }
+        add_country_modifier = {
+            name = nhoma_centralize
+            duration = -1
+        }
+        add_prestige = -20
+    }
+}

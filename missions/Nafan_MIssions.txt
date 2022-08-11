@@ -4474,7 +4474,19 @@ kalarga_3 = {
             }
         }
         effect = {
-            custom_tooltip = EventHere
+            add_dip_power = 250
+            bohora_area = {
+                add_province_modifier = {
+                    name = klg_reclaimed_coast
+                    duration = -1
+                }
+            }
+            maru_area = {
+                add_province_modifier = {
+                    name = klg_reclaimed_coast
+                    duration = -1
+                }
+            }
         }
         provinces_to_highlight = {
             NOT = { culture = Kachik }
@@ -4624,7 +4636,28 @@ kalarga_4 = {
         required_missions = { klg_expel_the_bohorans }
         position = 7
         trigger = {
-
+            bohora_area = {
+				type = all
+				development = 15
+                NOT = {
+                    unrest = 0
+                }
+			}
+            maru_area = {
+				type = all
+				development = 15
+                NOT = {
+                    unrest = 0
+                }
+			}
+            num_of_owned_provinces_with = {
+                value = 3
+                OR = {
+                    area = bohora_area
+                    area = maru_area
+                }
+                has_building = manufactory
+            }
         }
         effect = {
 

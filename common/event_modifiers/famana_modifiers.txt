@@ -1466,3 +1466,14 @@ klg_great_kalargan_empire = {
     global_institution_spread = 0.25
     trade_steering = 0.33
 }
+
+nhoma_centralize = {
+    land_forcelimit_modifier = 0.10
+    development_cost = -0.10
+}
+
+nhoma_go_horde = {
+    ae_impact = 0.50
+    global_tax_modifier = -0.20
+    diplomatic_reputation = -1
+}

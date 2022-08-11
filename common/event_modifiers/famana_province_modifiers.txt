@@ -137,3 +137,8 @@ klg_deep_mining = {
     local_gold_depletion_chance_modifier = -1.0
     trade_goods_size = 1.5
 }
+
+klg_reclaimed_coast = {
+    local_sailors_modifier = 0.50
+    local_production_efficiency = 0.1
+}
