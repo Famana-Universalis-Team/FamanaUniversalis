@@ -33,124 +33,77 @@ historical_units = {
 }
 
 monarch_names = {
-	"Arlentan #0" = 1
+	"Galág #0" = 1
+	"Anaslú #0" = 1
+	"Ombá #0" = 1
+	"Tagoul #0" = 1
+	"Yalu #0" = 1
+	"Laughe #0" = 1
+	"Páte #0" = 1
+	"Apetounpo #0" = 1
+	"Báde #0" = 1
+	"Dúpe #0" = 1
+	"Flyane #0" = 1
+	"Asghiado #0" = 1
+	"Niado #0" = 1
+	"Oudo #0" = 1
+	"Ndálma #0" = 1
+	"Ísju #0" = 1
+	"Fúmbol #0" = 1
+	"Búwu #0" = 1
+	"Húlep #0" = 1
+	"Outhu #0" = 1
+	"Maugja #0" = 1
+	"Fiawed #0" = 1
+	"Túlset #0" = 1
+	"Úgud #0" = 1
+	"Gúbnu #0" = 1
+	"Ládo #0" = 1
+	"Fouled #0" = 1
+	"Súngo #0" = 1
+	"Lolíbu #0" = 1
+	"Muhpúta #0" = 1
+	"Olíbe #0" = 1
+	"Elápmo #0" = 1
+	"Ágam #0" = 1
+	"Outsube #0" = 1
+	"Tsoumu #0" = 1
+	"Lliawo #0" = 1
+	"Groman #0" = 1
+	"Ayubais #0" = 1
 	"Div #0" = 1
-	"Galivicus #0" = 1
+	"Galiv #0" = 1
+	"Menus #0" = 1
 	"Randos #0" = 1
 	"Vanaia #0" = 1
-	"Yomas #0" = 1
 	"Bodalf #0" = 1
-	"Gameltan #0" = 1
-	"Ayubais #0" = 1
-	"Gamevan #0" = 1
-	"Ranaia #0" = 1
-	"Aubaia  #0" = 1
-	"Galiv #0" = 1
-	"Tusus #0" = 1
-	"Alcuge #0" = 1
-	"Sazat #0" = 1
-	"Nus #0" = 1
-	"Nunus #0" = 1
-	"Menus #0" = 1
-	"Vi #0" = 1
-	"Renus #0" = 1
-	"Agov #0" = 1
-	"Imanza #0" = 1
-	"Iganzi #0" = 1
-	"Agbubasmas #0" = 1
-	"Agburaz #0" = 1
-	"Agbutut #0" = 1
-	"Salgeu #0" = 1
-	"Sovgigga #0" = 1
-	"Tatzav #0" = 1
-	"Tigzoni #0" = 1
-	"Demu  #0" = 1
-	"Dasmas #0" = 1
-	"Neduv #0" = 1
-	"Utudrembum #0" = 1
-	"Gammat #0" = 1
-	"Fomlig #0" = 1
-	"Dochysis #0" = 1
-	"Ditbul #0" = 1
-	"Chyuzis #0" = 1
-	"Ason #0" = 1
-	"Amut #0" = 1
-	"Mibmul #0" = 1
-	"Moshut #0" = 1
-	"Irrichy #0" = 1
-	"Gorvul #0" = 1
-	"Gurtues #0" = 1
-	"Itean #0" = 1
-	"Nidvu #0" = 1
-	"Ufigag #0" = 1
-	"Umsat #0" = 1
-	"Tuftas #0" = 1
-	"Orom #0" = 1	
-	"Groman #0" = 1
+
+	"Phauop #0" = -1
+	"Wdúsa #0" = -1
+	"Pílu #0" = -1
+	"Amediamo #0" = -1
+	"Tú'e #0" = -1
+	"Gíja #0" = -1
+	"Wífa #0" = -1
 	"Soofi #0" = -1
-	"Maxia #0" = -1
-	"Idagme #0" = -1
-	"Surca #0" = -1
-	"Duchyte #0" = -1
-	"Gizzagke #0" = -1
-	"Fifmechy #0" = -1
-	"Uchyovmia #0" = -1
-	"Uzuste #0" = -1
 }
 
 leader_names = {
-	Arlentan
-	Div
-	Galivicus
-	Randos
-	Vanaia
-	Yomas
-	Bodalf
-	Gameltan
-	Ayubais
-	Gamevan 
-	Ranaia 
-	Aubaia 
-	Galiv 
-	Tusus 
-	Alcuge 
-	Sazat 
-	Nus 
-	Nunus 
-	Menus 
-	Vi 
-	Renus 
-	Agov 
-	Imanza 
-	Iganzi 
-	Agbubasmas 
-	Agburaz 
-	Agbutut 
-	Salgeu 
-	Sovgigga 
-	Tatzav 
-	Tigzoni 
-	Demu 
-	Dasmas 
-	Neduv 
-	Utudrembum 
-	Gammat 
-	Fomlig 
-	Dochysis 
-	Ditbul 
-	Chyuzis 
-	Ason 
-	Amut 
-	Mibmul 
-	Moshut 
-	Irrichy 
-	Gorvul
-	Gurtues 
-	Itean 
-	Nidvu 
-	Ufigag
-	Umsat
-	Tuftas 
+	Seowbám
+	Momunouf
+	Hantou
+	Accaci
+	Sar
+	Máspop
+	Íba
+	Thaul
+	Lábe
+	Gojotújlo
+	Nehoulpo
+	Outhlud
+	Lunúwta
+	Fautut
+	Arli
 }
 
 ship_names = {

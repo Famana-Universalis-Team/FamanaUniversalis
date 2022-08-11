@@ -33,29 +33,77 @@ historical_units = {
 }
 
 monarch_names = {
-	"Arlentan #0" = 1
+	"Galág #0" = 1
+	"Anaslú #0" = 1
+	"Ombá #0" = 1
+	"Tagoul #0" = 1
+	"Yalu #0" = 1
+	"Laughe #0" = 1
+	"Páte #0" = 1
+	"Apetounpo #0" = 1
+	"Báde #0" = 1
+	"Dúpe #0" = 1
+	"Flyane #0" = 1
+	"Asghiado #0" = 1
+	"Niado #0" = 1
+	"Oudo #0" = 1
+	"Ndálma #0" = 1
+	"Ísju #0" = 1
+	"Fúmbol #0" = 1
+	"Búwu #0" = 1
+	"Húlep #0" = 1
+	"Outhu #0" = 1
+	"Maugja #0" = 1
+	"Fiawed #0" = 1
+	"Túlset #0" = 1
+	"Úgud #0" = 1
+	"Gúbnu #0" = 1
+	"Ládo #0" = 1
+	"Fouled #0" = 1
+	"Súngo #0" = 1
+	"Lolíbu #0" = 1
+	"Muhpúta #0" = 1
+	"Olíbe #0" = 1
+	"Elápmo #0" = 1
+	"Ágam #0" = 1
+	"Outsube #0" = 1
+	"Tsoumu #0" = 1
+	"Lliawo #0" = 1
+	"Groman #0" = 1
+	"Ayubais #0" = 1
 	"Div #0" = 1
-	"Galivicus #0" = 1
+	"Galiv #0" = 1
+	"Menus #0" = 1
 	"Randos #0" = 1
 	"Vanaia #0" = 1
-	"Yomas #0" = 1
 	"Bodalf #0" = 1
-	"Gameltan #0" = 1
-	"Ayubais #0" = 1
+
+	"Phauop #0" = -1
+	"Wdúsa #0" = -1
+	"Pílu #0" = -1
+	"Amediamo #0" = -1
+	"Tú'e #0" = -1
+	"Gíja #0" = -1
+	"Wífa #0" = -1
 	"Soofi #0" = -1
-	"Maxia #0" = -1
 }
 
 leader_names = {
-	Arlentan
-	Div
-	Galivicus
-	Randos
-	Vanaia
-	Yomas
-	Bodalf
-	Gameltan
-	Ayubais
+	Seowbám
+	Momunouf
+	Hantou
+	Accaci
+	Sar
+	Máspop
+	Íba
+	Thaul
+	Lábe
+	Gojotújlo
+	Nehoulpo
+	Outhlud
+	Lunúwta
+	Fautut
+	Arli
 }
 
 ship_names = {
