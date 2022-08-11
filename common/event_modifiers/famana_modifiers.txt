@@ -1422,3 +1422,8 @@ skt_claimant_moxon = {
     ae_impact = -0.10
     naval_morale = 0.10
 }
+
+pawani_lit_pyramids = {
+    global_unrest = -1
+    global_missionary_strength = 0.01
+}

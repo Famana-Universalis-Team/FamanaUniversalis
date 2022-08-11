@@ -24,6 +24,10 @@ on_startup = {
 		which = achievementID
 		value = 0
 	}
+	set_variable = {
+		which = giruTowerFinished
+		value = 0
+	}
 	export_to_variable = {
 		which = religionVar
 		value = religion

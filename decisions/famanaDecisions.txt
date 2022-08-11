@@ -484,4 +484,33 @@ country_decisions = {
 			factor = 1000
 		}
     }
+
+    relight_pawani_pyramids_decision = {
+        potential = {
+            religion = pawani
+            owns_core_province = 5552
+            has_dlc = "Leviathan"
+            NOT = { has_country_flag = Pawani_Pyramids_Relit }
+		}
+		allow = {
+            5552 = {
+                has_great_project = {
+                    type = pexamol_pyramids
+                    tier = 1
+                }
+                religion = pawani
+            }
+		}
+		effect = {
+            add_country_modifier = {
+                name = pawani_lit_pyramids
+                duration = -1
+            }
+            add_prestige = 10
+            set_country_flag = Pawani_Pyramids_Relit
+		}
+		ai_will_do = {
+			factor = 1
+		}
+    }
 }

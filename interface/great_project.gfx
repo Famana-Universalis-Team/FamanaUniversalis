@@ -448,11 +448,6 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_great_project_porcelain_tower_nanjing"	
-		texturefile = "gfx//interface//great_projects//great_project_porcelain_tower_nanjing.dds"
-	}
-
-	spriteType = {
 		name = "GFX_great_project_qhapaq_nam"	
 		texturefile = "gfx//interface//great_projects//great_project_qhapaq_nam.dds"
 	}
@@ -591,6 +586,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_great_project_pomlen_temple"	
 		texturefile = "gfx//interface//great_projects//famana_great_projects//great_project_pomlen_temple.dds"
+	}
+
+	spriteType = {
+		name = "GFX_great_project_giru_tower"	
+		texturefile = "gfx//interface//great_projects//great_project_porcelain_tower_nanjing.dds"
 	}
 
 }

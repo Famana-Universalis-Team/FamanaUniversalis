@@ -35,10 +35,15 @@ country_event = {
 
 	trigger = {
 		always = yes
+		NOT = { has_global_flag = comet_crashed }
 	}
 
 	mean_time_to_happen = {
 		months = 240000
+	}
+
+	immediate = {
+		set_global_flag = comet_crashed
 	}
 
 	option = {

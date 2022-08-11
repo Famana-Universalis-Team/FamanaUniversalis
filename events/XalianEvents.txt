@@ -317,3 +317,80 @@ country_event = { #maner pirates
         add_government_reform = merchants_reform
     }
 }
+
+country_event = { #giru tower completed
+    id = gaxal.11
+    title = gaxal.11.t
+    desc = gaxal.11.d
+    picture = SHWEDAGON_PAGON_eventPicture
+
+    fire_only_once = yes
+
+    trigger = { 
+        owns_core_province = 5450
+        is_year = 260
+        NOT = {
+            has_great_project = {
+                type = giru_tower
+                tier = 3
+            }
+        }
+        has_dlc = "Leviathan"
+    }
+    mean_time_to_happen = {
+        months = 24
+    }
+
+    option = { #shame on you
+        name = gaxal.11.a
+        ai_chance = { factor = 3 }
+        add_prestige = -20
+        5450 = {
+            add_great_project_tier = {
+                type = giru_tower
+                tier = 1
+            }
+            hidden_effect = {
+                add_great_project_tier = {
+                    type = giru_tower
+                    tier = 1
+                }
+            }
+        }
+    }
+}
+
+country_event = { #giru tower destroyed
+    id = gaxal.12
+    title = gaxal.12.t
+    desc = gaxal.12.d
+    picture = CHURCH_ESTATE_UPSET_eventPicture
+    major = yes
+
+    fire_only_once = yes
+
+    trigger = { 
+        owns_core_province = 5450
+        is_year = 290
+        has_great_project = {
+            type = giru_tower
+            tier = 3
+        }
+        has_dlc = "Leviathan"
+    }
+    mean_time_to_happen = {
+        months = 240
+    }
+
+    option = { #trolled
+        name = gaxal.12.a
+        ai_chance = { factor = 3 }
+        add_prestige = -10
+        5450 = {
+            destroy_great_project = {
+                type = giru_tower
+            }        
+        }
+        set_global_flag = giru_tower_destroyed
+    }
+}
