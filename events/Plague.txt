@@ -7,27 +7,8 @@ province_event = {
 	desc = plague.1.d
 	picture = PLAGUE_eventPicture
 	goto = ROOT
-	is_mtth_scaled_to_size = 1
 
-	trigger = {
-		development = 6
-		has_port = yes
-		NOT = {
-			has_province_modifier = recent_maskrana_outbreak
-		}
-		NOT = {
-						owner = {
-				has_country_modifier = recent_disease
-			}
-		}
-		NOT = {
-			owner = {has_institution = printing_press} #edolyssa
-		}
-	}
-
-	mean_time_to_happen = {
-		months = 240
-	}
+	is_triggered_only = yes
 
 	immediate = {
 		hidden_effect = {
@@ -171,26 +152,7 @@ province_event = {
 	desc = plague.2.d	
 	picture = PLAGUE_eventPicture
 	goto = ROOT
-	is_mtth_scaled_to_size = 1
-
-	trigger = {
-		development = 6
-		NOT = {
-			has_province_modifier = recent_pesthi_outbreak
-		}
-		NOT = {
-						owner = {
-				has_country_modifier = recent_disease
-			}
-		}
-		NOT = {
-			owner = {has_institution = printing_press} #edolyssa
-		}
-	}
-
-	mean_time_to_happen = {
-		months = 240
-	}
+	is_triggered_only = yes
 
 	immediate = {
 		hidden_effect = {
@@ -336,26 +298,7 @@ province_event = {
 	desc = plague.3.d
 	picture = PLAGUE_eventPicture
 	goto = ROOT
-	is_mtth_scaled_to_size = 1
-
-	trigger = {
-		development = 6
-		NOT = {
-			has_province_modifier = recent_sandpox_outbreak
-		}
-		NOT = {
-						owner = {
-				has_country_modifier = recent_disease
-			}
-		}
-		NOT = {
-			owner = {has_institution = printing_press} #edolyssa
-		}
-	}
-
-	mean_time_to_happen = {
-		months = 240
-	}
+	is_triggered_only = yes
 
 	immediate = {
 		hidden_effect = {
@@ -502,27 +445,7 @@ province_event = {
 	desc = plague.4.d
 	picture = PLAGUE_eventPicture
 	goto = ROOT
-	is_mtth_scaled_to_size = 1
-
-	trigger = {
-		development = 15 # only big cities get the flu
-		NOT = {
-			has_province_modifier = recent_influenza_outbreak
-		}
-		
-		NOT = {
-						owner = {
-				has_country_modifier = recent_disease
-			}
-		}
-		NOT = {
-			owner = {has_institution = printing_press} #edolyssa
-		}
-	}
-
-	mean_time_to_happen = {
-		months = 240
-	}
+	is_triggered_only = yes
 
 	immediate = {
 		hidden_effect = {
@@ -582,37 +505,7 @@ province_event = {
 	desc = plague.5.d
 	picture = FAMINE_eventPicture
 	goto = ROOT
-	is_mtth_scaled_to_size = 1
-
-	trigger = {
-		OR = {
-			has_terrain = farmlands
-			has_terrain = steppe
-			has_terrain = grasslands
-		}
-		OR = {
-			trade_goods = grain #plants basically
-			trade_goods = wine
-			trade_goods = spices
-			trade_goods = tea
-			trade_goods = coffee
-		}
-		NOT = {
-			has_province_modifier = recent_blight_outbreak
-		}
-		NOT = {
-						owner = {
-				has_country_modifier = recent_disease
-			}
-		}
-		NOT = {
-			has_global_flag = alymin_established
-		}
-	}
-
-	mean_time_to_happen = {
-		months = 240
-	}
+	is_triggered_only = yes
 
 	immediate = {
 		hidden_effect = {
@@ -653,25 +546,7 @@ province_event = {
 	desc = plague.6.d
 	picture = PLAGUE_eventPicture
 	goto = ROOT
-	is_mtth_scaled_to_size = 1
-
-	trigger = {
-		development = 6
-		has_port = yes
-		NOT = {
-			has_province_modifier = recent_maskrana_outbreak
-		}
-		NOT = {
-						owner = {
-				has_country_modifier = recent_disease
-			}
-		}
-		owner = {has_institution = printing_press} #edolyssa
-	}
-
-	mean_time_to_happen = {
-		months = 240
-	}
+	is_triggered_only = yes
 
 	immediate = {
 		hidden_effect = {
@@ -781,25 +656,7 @@ province_event = {
 	desc = plague.7.d
 	picture = PLAGUE_eventPicture
 	goto = ROOT
-	is_mtth_scaled_to_size = 1
-
-	trigger = {
-		development = 6
-		has_port = yes
-		NOT = {
-			has_province_modifier = recent_pesthi_outbreak
-		}
-		NOT = {
-						owner = {
-				has_country_modifier = recent_disease
-			}
-		}
-		owner = {has_institution = printing_press} #edolyssa
-	}
-
-	mean_time_to_happen = {
-		months = 240
-	}
+	is_triggered_only = yes
 
 	immediate = {
 		hidden_effect = {
@@ -908,25 +765,7 @@ province_event = {
 	desc = plague.8.d
 	picture = PLAGUE_eventPicture
 	goto = ROOT
-	is_mtth_scaled_to_size = 1
-
-	trigger = {
-		development = 6
-		has_port = yes
-		NOT = {
-			has_province_modifier = recent_sandpox_outbreak
-		}
-		NOT = {
-						owner = {
-				has_country_modifier = recent_disease
-			}
-		}
-		owner = {has_institution = printing_press} #edolyssa
-	}
-
-	mean_time_to_happen = {
-		months = 240
-	}
+	is_triggered_only = yes
 
 	immediate = {
 		hidden_effect = {
@@ -1036,25 +875,7 @@ province_event = {
 	desc = plague.9.d
 	picture = PLAGUE_eventPicture
 	goto = ROOT
-	is_mtth_scaled_to_size = 1
-
-	trigger = {
-		development = 18 #cities need to be bigger for flu now to account for worse debuffs
-		has_port = yes
-		NOT = {
-			has_province_modifier = recent_sandpox_outbreak
-		}
-		NOT = {
-			owner = {
-				has_country_modifier = recent_disease
-			}
-		}
-		owner = {has_institution = printing_press} #edolyssa
-	}
-
-	mean_time_to_happen = {
-		months = 240
-	}
+	is_triggered_only = yes
 
 	immediate = {
 		hidden_effect = {
@@ -1129,37 +950,7 @@ province_event = {
 	desc = plague.10.d
 	picture = FAMINE_eventPicture
 	goto = ROOT
-	is_mtth_scaled_to_size = 1
-
-	trigger = {
-		OR = {
-			has_terrain = farmlands
-			has_terrain = steppe
-			has_terrain = grasslands
-		}
-		OR = {
-			trade_goods = grain #plants basically
-			trade_goods = wine
-			trade_goods = spices
-			trade_goods = tea
-			trade_goods = coffee
-		}
-		NOT = {
-			has_province_modifier = recent_blight_outbreak
-		}
-		NOT = {
-			owner = {
-				has_country_modifier = recent_disease
-			}
-		}
-		NOT = {
-			has_global_flag = alymin_established
-		}
-	}
-
-	mean_time_to_happen = {
-		months = 240
-	}
+	is_triggered_only = yes
 
 	immediate = {
 		hidden_effect = {
@@ -1339,5 +1130,673 @@ province_event = {
 				}
 			}
 		}
+	}
+}
+
+#Disease controller
+country_event = {
+	id = plague.14
+	hidden = yes
+
+	trigger = {
+		any_province = {
+			development = 6
+		}
+		NOT = {
+			has_country_modifier = recent_disease
+		}
+	}
+
+	mean_time_to_happen = {
+		years = 20
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				has_institution = printing_press
+			}
+			random_list = {
+				3 = {
+					random_list = {
+						1 = {
+							random_province = {
+								limit = {
+									AND = {
+										NOT = {
+											any_province_in_state = {
+												OR = {
+													has_province_modifier = recent_maskrana_outbreak #prevents multiple outbreaks from spreading to the same province
+													has_province_modifier = recent_pesthi_outbreak
+													has_province_modifier = recent_sandpox_outbreak
+												}
+											}
+										}
+										development = 6
+									}
+								}
+								province_event = { #maskrana
+									id = plague.6
+									days = 1
+								}
+							}
+						}
+						1 = {
+							random_province = { #peshti
+							limit = {
+								AND = {
+									NOT = {
+										any_province_in_state = {
+											OR = {
+												has_province_modifier = recent_maskrana_outbreak #prevents multiple outbreaks from spreading to the same province
+												has_province_modifier = recent_pesthi_outbreak
+												has_province_modifier = recent_sandpox_outbreak
+											}
+										}
+									}
+									development = 6
+								}
+							}
+								province_event = {
+									id = plague.7
+									days = 1
+								}
+							}
+						}
+						1 = {
+							random_province = { #sandpox
+							limit = {
+								AND = {
+									NOT = {
+										any_province_in_state = {
+											OR = {
+												has_province_modifier = recent_maskrana_outbreak #prevents multiple outbreaks from spreading to the same province
+												has_province_modifier = recent_pesthi_outbreak
+												has_province_modifier = recent_sandpox_outbreak
+											}
+										}
+									}
+									development = 6
+								}
+							}
+								province_event = {
+									id = plague.8
+									days = 1
+								}
+							}
+						}
+					}
+				}
+				1 = {
+					if = {
+						limit = {
+							any_province = {
+								development = 15
+							}
+						}
+						random_province = { #influenza
+							limit = {
+								development = 15
+							}
+							province_event = {
+								id = plague.9
+								days = 1
+							}
+						}
+					}
+					else = {
+						random_list = {
+							1 = {
+								random_province = {
+									limit = {
+										AND = {
+											NOT = {
+												any_province_in_state = {
+													OR = {
+														has_province_modifier = recent_maskrana_outbreak #prevents multiple outbreaks from spreading to the same province
+														has_province_modifier = recent_pesthi_outbreak
+														has_province_modifier = recent_sandpox_outbreak
+													}
+												}
+											}
+											development = 6
+										}
+									}
+									province_event = { #maskrana
+										id = plague.6
+										days = 1
+									}
+								}
+							}
+							1 = {
+								random_province = { #peshti
+								limit = {
+									AND = {
+										NOT = {
+											any_province_in_state = {
+												OR = {
+													has_province_modifier = recent_maskrana_outbreak #prevents multiple outbreaks from spreading to the same province
+													has_province_modifier = recent_pesthi_outbreak
+													has_province_modifier = recent_sandpox_outbreak
+												}
+											}
+										}
+										development = 6
+									}
+								}
+									province_event = {
+										id = plague.7
+										days = 1
+									}
+								}
+							}
+							1 = {
+								random_province = { #sandpox
+								limit = {
+									AND = {
+										NOT = {
+											any_province_in_state = {
+												OR = {
+													has_province_modifier = recent_maskrana_outbreak #prevents multiple outbreaks from spreading to the same province
+													has_province_modifier = recent_pesthi_outbreak
+													has_province_modifier = recent_sandpox_outbreak
+												}
+											}
+										}
+										development = 6
+									}
+								}
+									province_event = {
+										id = plague.8
+										days = 1
+									}
+								}
+							}
+						}
+					}
+				}
+				1 = {
+					if = {
+						limit = {
+							any_province = {
+								AND = {
+									OR = {
+										has_terrain = farmlands
+										has_terrain = steppe
+										has_terrain = grasslands
+									}
+									OR = {
+										trade_goods = grain #plants basically
+										trade_goods = wine
+										trade_goods = spices
+										trade_goods = tea
+										trade_goods = coffee
+									}
+									has_global_flag = alymin_established
+								}
+							}
+						}
+						random_province = { #blight
+							limit = {
+								AND = {
+									OR = {
+										has_terrain = farmlands
+										has_terrain = steppe
+										has_terrain = grasslands
+									}
+									OR = {
+										trade_goods = grain #plants basically
+										trade_goods = wine
+										trade_goods = spices
+										trade_goods = tea
+										trade_goods = coffee
+									}
+								}
+							}
+							province_event = {
+								id = plague.10
+								days = 1
+							}
+						}
+					}
+					else_if = {
+						limit = {
+							any_province = {
+								AND = {
+									OR = {
+										has_terrain = farmlands
+										has_terrain = steppe
+										has_terrain = grasslands
+									}
+									OR = {
+										trade_goods = grain #plants basically
+										trade_goods = wine
+										trade_goods = spices
+										trade_goods = tea
+										trade_goods = coffee
+									}
+								}
+							}
+						}
+						random_province = { #blight without the alymin
+							limit = {
+								AND = {
+									OR = {
+										has_terrain = farmlands
+										has_terrain = steppe
+										has_terrain = grasslands
+									}
+									OR = {
+										trade_goods = grain #plants basically
+										trade_goods = wine
+										trade_goods = spices
+										trade_goods = tea
+										trade_goods = coffee
+									}
+								}
+							}
+							province_event = {
+								id = plague.5
+								days = 1
+							}
+						}
+					}
+					else = {
+						random_list = {
+							1 = {
+								random_province = {
+									limit = {
+										AND = {
+											NOT = {
+												any_province_in_state = {
+													OR = {
+														has_province_modifier = recent_maskrana_outbreak #prevents multiple outbreaks from spreading to the same province
+														has_province_modifier = recent_pesthi_outbreak
+														has_province_modifier = recent_sandpox_outbreak
+													}
+												}
+											}
+											development = 6
+										}
+									}
+									province_event = { #maskrana
+										id = plague.6
+										days = 1
+									}
+								}
+							}
+							1 = {
+								random_province = { #peshti
+								limit = {
+									AND = {
+										NOT = {
+											any_province_in_state = {
+												OR = {
+													has_province_modifier = recent_maskrana_outbreak #prevents multiple outbreaks from spreading to the same province
+													has_province_modifier = recent_pesthi_outbreak
+													has_province_modifier = recent_sandpox_outbreak
+												}
+											}
+										}
+										development = 6
+									}
+								}
+									province_event = {
+										id = plague.7
+										days = 1
+									}
+								}
+							}
+							1 = {
+								random_province = { #sandpox
+								limit = {
+									AND = {
+										NOT = {
+											any_province_in_state = {
+												OR = {
+													has_province_modifier = recent_maskrana_outbreak #prevents multiple outbreaks from spreading to the same province
+													has_province_modifier = recent_pesthi_outbreak
+													has_province_modifier = recent_sandpox_outbreak
+												}
+											}
+										}
+										development = 6
+									}
+								}
+									province_event = {
+										id = plague.8
+										days = 1
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		else = {
+			random_list = {
+				3 = {
+					random_list = {
+						1 = {
+							random_province = {
+								limit = {
+									AND = {
+										NOT = {
+											any_province_in_state = {
+												OR = {
+													has_province_modifier = recent_maskrana_outbreak #prevents multiple outbreaks from spreading to the same province
+													has_province_modifier = recent_pesthi_outbreak
+													has_province_modifier = recent_sandpox_outbreak
+												}
+											}
+										}
+										development = 6
+									}
+								}
+								province_event = { #maskrana
+									id = plague.1
+									days = 1
+								}
+							}
+						}
+						1 = {
+							random_province = { #peshti
+							limit = {
+								AND = {
+									NOT = {
+										any_province_in_state = {
+											OR = {
+												has_province_modifier = recent_maskrana_outbreak #prevents multiple outbreaks from spreading to the same province
+												has_province_modifier = recent_pesthi_outbreak
+												has_province_modifier = recent_sandpox_outbreak
+											}
+										}
+									}
+									development = 6
+								}
+							}
+								province_event = {
+									id = plague.2
+									days = 1
+								}
+							}
+						}
+						1 = {
+							random_province = { #sandpox
+							limit = {
+								AND = {
+									NOT = {
+										any_province_in_state = {
+											OR = {
+												has_province_modifier = recent_maskrana_outbreak #prevents multiple outbreaks from spreading to the same province
+												has_province_modifier = recent_pesthi_outbreak
+												has_province_modifier = recent_sandpox_outbreak
+											}
+										}
+									}
+									development = 6
+								}
+							}
+								province_event = {
+									id = plague.3
+									days = 1
+								}
+							}
+						}
+					}
+				}
+				1 = {
+					if = {
+						limit = {
+							any_province = {
+								development = 15
+							}
+						}
+						random_province = { #influenza
+							limit = {
+								development = 15
+							}
+							province_event = {
+								id = plague.4
+								days = 1
+							}
+						}
+					}
+					else = {
+						random_list = {
+							1 = {
+								random_province = {
+									limit = {
+										AND = {
+											NOT = {
+												any_province_in_state = {
+													OR = {
+														has_province_modifier = recent_maskrana_outbreak #prevents multiple outbreaks from spreading to the same province
+														has_province_modifier = recent_pesthi_outbreak
+														has_province_modifier = recent_sandpox_outbreak
+													}
+												}
+											}
+											development = 6
+										}
+									}
+									province_event = { #maskrana
+										id = plague.1
+										days = 1
+									}
+								}
+							}
+							1 = {
+								random_province = { #peshti
+								limit = {
+									AND = {
+										NOT = {
+											any_province_in_state = {
+												OR = {
+													has_province_modifier = recent_maskrana_outbreak #prevents multiple outbreaks from spreading to the same province
+													has_province_modifier = recent_pesthi_outbreak
+													has_province_modifier = recent_sandpox_outbreak
+												}
+											}
+										}
+										development = 6
+									}
+								}
+									province_event = {
+										id = plague.2
+										days = 1
+									}
+								}
+							}
+							1 = {
+								random_province = { #sandpox
+								limit = {
+									AND = {
+										NOT = {
+											any_province_in_state = {
+												OR = {
+													has_province_modifier = recent_maskrana_outbreak #prevents multiple outbreaks from spreading to the same province
+													has_province_modifier = recent_pesthi_outbreak
+													has_province_modifier = recent_sandpox_outbreak
+												}
+											}
+										}
+										development = 6
+									}
+								}
+									province_event = {
+										id = plague.3
+										days = 1
+									}
+								}
+							}
+						}
+					}
+				}
+				1 = {
+					if = {
+						limit = {
+							any_province = {
+								AND = {
+									OR = {
+										has_terrain = farmlands
+										has_terrain = steppe
+										has_terrain = grasslands
+									}
+									OR = {
+										trade_goods = grain #plants basically
+										trade_goods = wine
+										trade_goods = spices
+										trade_goods = tea
+										trade_goods = coffee
+									}
+									has_global_flag = alymin_established #it is technically possible to have alymin without edolyssa
+								}
+							}
+						}
+						random_province = { #blight
+							limit = {
+								AND = {
+									OR = {
+										has_terrain = farmlands
+										has_terrain = steppe
+										has_terrain = grasslands
+									}
+									OR = {
+										trade_goods = grain #plants basically
+										trade_goods = wine
+										trade_goods = spices
+										trade_goods = tea
+										trade_goods = coffee
+									}
+								}
+							}
+							province_event = {
+								id = plague.10
+								days = 1
+							}
+						}
+					}
+					else_if = {
+						limit = {
+							any_province = {
+								AND = {
+									OR = {
+										has_terrain = farmlands
+										has_terrain = steppe
+										has_terrain = grasslands
+									}
+									OR = {
+										trade_goods = grain #plants basically
+										trade_goods = wine
+										trade_goods = spices
+										trade_goods = tea
+										trade_goods = coffee
+									}
+								}
+							}
+						}
+						random_province = { #blight without the alymin
+							limit = {
+								AND = {
+									OR = {
+										has_terrain = farmlands
+										has_terrain = steppe
+										has_terrain = grasslands
+									}
+									OR = {
+										trade_goods = grain #plants basically
+										trade_goods = wine
+										trade_goods = spices
+										trade_goods = tea
+										trade_goods = coffee
+									}
+								}
+							}
+							province_event = {
+								id = plague.5
+								days = 1
+							}
+						}
+					}
+					else = {
+						random_list = {
+							1 = {
+								random_province = {
+									limit = {
+										AND = {
+											NOT = {
+												any_province_in_state = {
+													OR = {
+														has_province_modifier = recent_maskrana_outbreak #prevents multiple outbreaks from spreading to the same province
+														has_province_modifier = recent_pesthi_outbreak
+														has_province_modifier = recent_sandpox_outbreak
+													}
+												}
+											}
+											development = 6
+										}
+									}
+									province_event = { #maskrana
+										id = plague.1
+										days = 1
+									}
+								}
+							}
+							1 = {
+								random_province = { #peshti
+								limit = {
+									AND = {
+										NOT = {
+											any_province_in_state = {
+												OR = {
+													has_province_modifier = recent_maskrana_outbreak #prevents multiple outbreaks from spreading to the same province
+													has_province_modifier = recent_pesthi_outbreak
+													has_province_modifier = recent_sandpox_outbreak
+												}
+											}
+										}
+										development = 6
+									}
+								}
+									province_event = {
+										id = plague.2
+										days = 1
+									}
+								}
+							}
+							1 = {
+								random_province = { #sandpox
+								limit = {
+									AND = {
+										NOT = {
+											any_province_in_state = {
+												OR = {
+													has_province_modifier = recent_maskrana_outbreak #prevents multiple outbreaks from spreading to the same province
+													has_province_modifier = recent_pesthi_outbreak
+													has_province_modifier = recent_sandpox_outbreak
+												}
+											}
+										}
+										development = 6
+									}
+								}
+									province_event = {
+										id = plague.3
+										days = 1
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	option = {
+		name = plague.11.a
+		ai_chance = { factor = 1 }
 	}
 }
