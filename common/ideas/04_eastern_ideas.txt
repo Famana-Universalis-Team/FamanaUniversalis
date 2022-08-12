@@ -240,3 +240,41 @@ TYM_ideas = {
         block_introduce_heir = yes
     }
 }
+
+YAV_ideas = {
+    start = {
+        tolerance_own = 2
+        land_maintenance_modifier = -0.10
+    }
+
+    bonus = {
+        max_absolutism = 15
+    }
+
+    trigger = {
+        tag = YAV
+    }
+    free = yes
+
+    yav_1 = {
+        core_creation = -0.20
+    }
+    yav_2 = {
+        dip_tech_cost_modifier = -0.1
+    }
+    yav_3 = {
+        religious_unity = 1.0
+    }
+    yav_4 = {
+        administrative_efficiency = 0.05
+    }
+    yav_5 = {
+        warscore_cost_vs_other_religion	= -0.15
+    }
+    yav_6 = {
+        governing_capacity_modifier	= 0.1
+    }
+    yav_7 = {
+        free_mil_policy = 1
+    }
+}

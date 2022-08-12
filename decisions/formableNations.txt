@@ -4698,8 +4698,13 @@ country_decisions = {
 				province_id = 5197
 				province_id = 5656
 			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				is_city = no
+			}
 		}
 		allow = {
+			adm_tech = 20
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
 			owns_core_province = 5644
@@ -4716,6 +4721,10 @@ country_decisions = {
 			restore_country_name = yes
 			change_tag = YAV
 			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			if = {
 				limit = {
 					NOT = { government_rank = 3 }
 				}
@@ -4727,6 +4736,19 @@ country_decisions = {
 				}
 				add_government_reform = gov_tonxara
 			}
+			jasua_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = YAV
+			}
+			bamali_gulf_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = YAV
+			}
+			set_capital = 5648
 			add_country_modifier = {
 				name = "centralization_modifier"
 				duration = 7300

@@ -3631,7 +3631,7 @@ nafa_4 = {
                 any_owned_province = {
                     OR = {
                         region = northern_desert_region
-                        region = bamal_gulf_region
+                        region = bamali_gulf_region
                         region = jasua_region
                     }
                     NOT = {

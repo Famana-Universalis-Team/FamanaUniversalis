@@ -121,7 +121,7 @@ fas_1 = {
 		trigger = {
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				value = 20
-				region = bamal_gulf_region
+				region = bamali_gulf_region
 			}
 		}
 		effect = {
@@ -140,7 +140,7 @@ fas_1 = {
 		}
 		provinces_to_highlight = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
-			region = bamal_gulf_region
+			region = bamali_gulf_region
 		}
 	}
 
@@ -498,7 +498,7 @@ fas_2 = {
 			}
 		}
 		effect = {
-			bamal_gulf_region = { add_permanent_claim = ROOT }
+			bamali_gulf_region = { add_permanent_claim = ROOT }
 			add_ruler_modifier = {
 				name = fas_horde_arrives
 				duration = -1
@@ -774,7 +774,7 @@ fas_3 = {
 			jasua_region = {
 				discover_country = ROOT
 			}
-			bamal_gulf_region = {
+			bamali_gulf_region = {
 				discover_country = ROOT
 			}
 			aresia_region = {
@@ -1403,7 +1403,7 @@ fas_5 = {
 		trigger = {
 			owns_all_provinces = {
 				OR = {
-					region = bamal_gulf_region
+					region = bamali_gulf_region
 					region = jasua_region
 					region = eastern_desert_region
 					area = pasba_area
@@ -1440,7 +1440,7 @@ fas_5 = {
 		provinces_to_highlight = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 			OR = {
-				region = bamal_gulf_region
+				region = bamali_gulf_region
 				region = jasua_region
 				region = eastern_desert_region
 				area = pasba_area
