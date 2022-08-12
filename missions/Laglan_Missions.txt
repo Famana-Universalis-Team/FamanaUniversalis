@@ -1,0 +1,178 @@
+
+lag_1 = {
+    slot = 1
+    generic = no
+    ai = yes
+    potential = {
+        NOT = { map_setup = map_setup_random }
+		OR = {
+            tag = RES
+            tag = LAG
+        }
+    }
+    has_country_shield = yes
+
+    lag_feniki_culture = {
+        icon = secure_the_republic
+        required_missions = { }
+        trigger = {
+
+        }
+        effect = {
+
+        }
+        #provinces_to_highlight = {}
+    }
+
+    lag_sense_of_unity = {
+        icon = secure_the_republic
+        required_missions = { lag_feniki_culture }
+        trigger = {
+
+        }
+        effect = {
+
+        }
+        #provinces_to_highlight = {}
+    }
+
+    lag_beyond_the_highlands = {
+        icon = secure_the_republic
+        required_missions = { lag_feyel_and_woch }
+        trigger = {
+
+        }
+        effect = {
+
+        }
+        #provinces_to_highlight = {}
+    }
+}
+
+lag_2 = {
+    slot = 2
+    generic = no
+    ai = yes
+    potential = {
+        NOT = { map_setup = map_setup_random }
+		OR = {
+            tag = RES
+            tag = LAG
+        }
+    }
+    has_country_shield = yes
+
+    lag_feyel_and_woch = {
+        icon = secure_the_republic
+        required_missions = {lag_sense_of_unity }
+        trigger = {
+
+        }
+        effect = {
+
+        }
+        #provinces_to_highlight = {}
+    }
+}
+
+lag_3 = {
+    slot = 3
+    generic = no
+    ai = yes
+    potential = {
+        NOT = { map_setup = map_setup_random }
+		OR = {
+            tag = RES
+            tag = LAG
+        }
+    }
+    has_country_shield = yes
+
+    lag_deal_with_the_guilds = {
+        icon = secure_the_republic
+        required_missions = { }
+        trigger = {
+
+        }
+        effect = {
+
+        }
+        #provinces_to_highlight = {}
+    }
+}
+
+lag_4 = {
+    slot = 4
+    generic = no
+    ai = yes
+    potential = {
+        NOT = { map_setup = map_setup_random }
+		OR = {
+            tag = RES
+            tag = LAG
+        }
+    }
+    has_country_shield = yes
+
+    lag_sponsor_fishermen = {
+        icon = secure_the_republic
+        required_missions = { }
+        trigger = {
+
+        }
+        effect = {
+
+        }
+        #provinces_to_highlight = {}
+    }
+
+    lag_develop_the_coastline = {
+        icon = secure_the_republic
+        required_missions = { lag_sponsor_fishermen lag_build_ports }
+        trigger = {
+
+        }
+        effect = {
+
+        }
+        #provinces_to_highlight = {}
+    }
+
+    lag_expand_the_inland_cities = {
+        icon = secure_the_republic
+        required_missions = { lag_develop_the_coastline}
+        trigger = {
+
+        }
+        effect = {
+
+        }
+        #provinces_to_highlight = {}
+    }
+}
+
+lag_5 = {
+    slot = 5
+    generic = no
+    ai = yes
+    potential = {
+        NOT = { map_setup = map_setup_random }
+		OR = {
+            tag = RES
+            tag = LAG
+        }
+    }
+    has_country_shield = yes
+
+    lag_build_ports = {
+        icon = secure_the_republic
+        required_missions = { }
+        trigger = {
+
+        }
+        effect = {
+
+        }
+        #provinces_to_highlight = {}
+    }
+}
