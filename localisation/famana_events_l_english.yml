@@ -122,7 +122,6 @@
  estate_church_kachik_religious_rights:0 "Kachik Religious Rights"
  kachik_religious_autonomy:0 "Kachik Religious Rights"
  estate_church_kachik_religious_rights_desc:0 "The Kachik people have always had a unique identity, along with a unique religion. We have made a deal with them to allow them to keep their identity in return for service to us."
- kachik_religious_rights_tip:0 "§YKachik provinces will be unconvertable, but will provide small bonuses.§!"
  feniki_zeal:0 "Feniki Zeal"
 
  gaxal.3.t:0 "The Transfer of Ximal"
@@ -1574,6 +1573,13 @@
  eastereggs.6.t:0 "The Storm That is Approaching"
  eastereggs.6.d:0 "As the Rastrayvar hit our country, our king, [Root.Monarch.GetName] walked out of his palace to provoke the black clouds in isolation. This is surprising, because ever since he reclaimed his name following his birth in a Mor cult, he has been consistently blessed by Shirian priests. He has adopted the image of Xarlan, an avatar of Shir representing death, as his main icon of worship. As a result, his confrontation of the storm was seen as a religious ritual."
  eastereggs.6.a:0 "FORSAKEN, I AM AWAKENED..."
+
+ eastereggs.7.t:0 "Pawani Cultists on New Pexamol!"
+ eastereggs.7.d:0 "A hidden cult has emerged on the island of New Pexamol. Following the ancient pagan religion of their distant ancestors, they have now taken control of the whole island! We cannot imagine Ara is pleased about this development."
+ eastereggs.7.a:0 "Slay the heretics!"
+ eastereggs.7.b:0 "It is of no concern to us."
+ npx_pawani_crackdown:0 "Pagan Crackdown"
+ npx_pawani_tolerance:0 "Religious Tolerance"
 
  ordica.23.t:0 "The Pirates of Tullisi"
  ordica.23.d:0 "Recently, as sailors are out of work, piracy has increased significantly. In particular, the island of Tullisi has become a haven for these pirates, who are now declaring their own independent republic."

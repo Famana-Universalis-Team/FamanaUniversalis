@@ -7,12 +7,13 @@
  pick_shirian_blessing:0 "Pick Shirian Blessing"
  morian_blessings:0 "Morian Blessings"
  pick_morian_blessing:0 "Pick Morian Blessing"
+ xalian_religion_blessings:0 "Xalian Blessings"
+ pick_xalian_religion_blessing:0 "Pick Xalian Blessing"
  lathvy_group:0 "Lathvy"
  rini:0 "Rini"
  rini_religion_desc:0 "Rini lathvy is a militaristic religion created by Nafan and Kachik crusaders. It is very similar to Traditional Lathvy, but has an almost heretical obsession with the destruction of Yomtanians, the pleasing of Ara as well as their Nafan heritage."
  liberal:0 "Liberal"
  yomtanian:0 "Yomtanian"
- yosist:0 "Yosist"
  rochoni:0 "Rochoni" 
  rini_rebels_demand:0 "Convert $COUNTRYNAME$"
  rini_rebels_demand_desc:0 "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
@@ -20,6 +21,7 @@
  rini_rebels_name:0 "$RELIGION$ Zealots"
  rini_rebels_desc:0 "Religious fanatics tend to rise up in provinces controlled by nations of a different faith. They seek to spread their faith and smite all unbelievers."
  rini_rebels_army:0 "$RELIGION$ Army"
+ HARMONIC: "Harmonic"
 
  lathvy_center_of_reformation:0 "Lathvy Center of Conversion"
  rochoni_center_of_reformation:0 "Rochoni Center of Reformation"
@@ -49,6 +51,9 @@
  reformed:0 "Reformed"
  traditional:0 "Traditional"
  lathvy:0 "Lathvy"
+
+ TEPANK: "Tepank"
+ JAYLAN: "Jaylan"
 
  western_oppian_religion_desc:0 "The traditional religion of the Oppian Empire. Held together by the crown of Emintas and the power of the emperor, it has fallen into disarray since the collapse of the empire and violent wars in Oppia, with people now seeking an alternative."
  reformed_oppian_religion_desc:0 "A new religion, seeing the reformation of core principles of the Oppian religion, including the abolishing of Sifa. It is regarded as dangerous, playing with the fire that is introducing new gods, as well as assimilating other religions."
@@ -397,6 +402,8 @@
  bilik_rebels_name:0 "$RELIGION$ Zealots"
  bilik_rebels_desc:0 "Religious fanatics tend to rise up in provinces controlled by nations of a different faith. They seek to spread their faith and smite all unbelievers."
  bilik_rebels_army:0 "$RELIGION$ Army"
+ DOUBTER: "Doubter"
+ MONSTER_WORSHIPPER: "Monster Worshipper"
 
  aresian:0 "Aresian"
  aresian_religion_desc:0 "The Aresian religion believes in Phamsa, a cosmic deity which found Famana, and has since taken care of it, protecting it from the cosmic monster Gachra, and becoming its God."
@@ -440,6 +447,9 @@
 
  agmagoz:0 "Agmagozi"
  agmagoz_religion_desc:0 "The ancient religion of the long-gone Agmagozi Empire."
+ QANOYAN: "Qanoyan"
+ DORROMAN: "Dorroman"
+ TOMBASA: "Tombasa"
 
  agmagoz_rebels_demand:0 "Convert $COUNTRYNAME$"
  agmagoz_rebels_demand_desc:0 "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
@@ -456,6 +466,8 @@
  tombasa_rebels_name:0 "$RELIGION$ Zealots"
  tombasa_rebels_desc:0 "Religious fanatics tend to rise up in provinces controlled by nations of a different faith. They seek to spread their faith and smite all unbelievers."
  tombasa_rebels_army:0 "$RELIGION$ Army"
+ GISHIAN: "Gishian"
+ JINISH: "Jinish"
 
  qanoyan:0 "Qanoyan"
  qanoyan_religion_desc:0 "Qanoyan is an offshoot religion of Qamon. Its isolation from previous Qamoni centres as well as new light on the ruins of the old Agmagozi empire has led to significant religious reform."
@@ -484,6 +496,7 @@
  urbaxan_rebels_name:0 "$RELIGION$ Zealots"
  urbaxan_rebels_desc:0 "Religious fanatics tend to rise up in provinces controlled by nations of a different faith. They seek to spread their faith and smite all unbelievers."
  urbaxan_rebels_army:0 "$RELIGION$ Army"
+ BALOLI: "Baloli"
 
  tonmo_group:0 "Tonmo"
  tonmo:0 "Tonmo"
@@ -494,7 +507,7 @@
  tonmo_rebels_name:0 "$RELIGION$ Zealots"
  tonmo_rebels_desc:0 "Religious fanatics tend to rise up in provinces controlled by nations of a different faith. They seek to spread their faith and smite all unbelievers."
  tonmo_rebels_army:0 "$RELIGION$ Army"
- qydian:0 "Qydian"
+ QYDIAN: "Qydian"
  TONMO_ASPECTS: "Commands"
  TONMO_ASPECTS_LONG: "Tonmo Command"
  TONMO_ASPECTS_SHORT: "Command"
@@ -628,10 +641,11 @@
  maschi_rebels_name:0 "$RELIGION$ Zealots"
  maschi_rebels_desc:0 "Religious fanatics tend to rise up in provinces controlled by nations of a different faith. They seek to spread their faith and smite all unbelievers."
  maschi_rebels_army:0 "$RELIGION$ Army"
+ JUNMOVVEN: "Junmovven"
 
  naravami:0 "Torviya"
  naravami_religion_desc:0 "§YTorviya§! countries can gain §YChurch Power§! by raiding coasts, winning wars and winning battles. Losing wars will cause you to lose §YChurch Power§!.\n\nThe Torviya religion represents the various tribal beliefs of the Naravami people. Adherents of Torviya have varying regional differences, but generally, they believe in the ice gods beyond the great Naravami Mountains. Animal sacrifice plays a major part."
- north_estali:0 "North Estali"
+ north_estali:0 "Old Estali"
 
  naravami_rebels_demand:0 "Convert $COUNTRYNAME$"
  naravami_rebels_demand_desc:0 "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
@@ -667,6 +681,8 @@
  hasian_faith_rebels_name:0 "$RELIGION$ Zealots"
  hasian_faith_rebels_desc:0 "Religious fanatics tend to rise up in provinces controlled by nations of a different faith. They seek to spread their faith and smite all unbelievers."
  hasian_faith_rebels_army:0 "$RELIGION$ Army"
+ HOFRREJJDKMA_H: "Hofrrejjdkman"
+ ANNIHILATION_WAR: "Annihilation"
 
  CRUSADE:0 "Crusade"
  

@@ -1557,56 +1557,6 @@ arabic_tribal = {
 	}
 }
 
-muslim_tribal = {
-	rank = {
-		1 = MALIKATE
-		2 = SULTANATE
-		3 = EMPIRE
-	}
-
-	ruler_male = {
-		1 = MALIK
-		2 = SULTAN
-		3 = GREAT_SULTAN
-	}
-
-	ruler_female = {
-		1 = MALIKAH
-		2 = SULTANA
-		3 = GREAT_SULTANA
-	}
-	
-	consort_male = {
-		1 = MALIK
-		2 = SULTAN_CONSORT
-		3 = SULTAN_CONSORT
-	}
-
-	consort_female = {
-		1 = MALIKAH
-		2 = SULTANA
-		3 = SULTANA
-	}
-	
-	heir_male = {
-		1 = MALIK
-		2 = SHAHZADE
-		3 = SHAHZADE
-	}
-
-	heir_female = {
-		1 = MALIKAH
-		2 = SHAHZADE
-		3 = SHAHZADE
-	}
-
-	trigger = {
-		religion_group = muslim
-		government = tribal
-		NOT = { has_reform = steppe_horde }
-	}
-}
-
 kathiawar_tribal_monarchy = { #Sammas of Sindh are also Jams
 	rank = {
 		1 = PRINCEDOM

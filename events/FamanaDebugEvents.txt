@@ -57,15 +57,12 @@ country_event = {
 	option = {
 		name = fdebug.1.g
 		ai_chance = { factor = 1 }
-		every_country = {
-			limit = {
-				NOT = {
-					tag = ROOT
-				}
-			}
-			every_owned_province = {
-				cede_province = ---
-			}
+		every_province = {
+			cede_province = ---
+			remove_building	= fort_15th
+			remove_building	= fort_16th
+			remove_building	= fort_17th
+			remove_building	= fort_18th
 		}
 	}
 	option = {

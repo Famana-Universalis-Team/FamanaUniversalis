@@ -263,13 +263,11 @@
  3devlost: "§Y3 Random Points§! of §YDevelopment§! will be lost"
  burning_crop_fields: "§YBy burning the few infected crop fields, we will save the rest of the province at the cost of worsening our public image.§!"
  cutting_infected_plants: "§YBy cutting the infected plants, if we are careless enough to skip over any infections the blight can re-emerge and ruin the harvest anyways.§!"
-
  klgDevTax: "Gain §G10.00§! Ducats every time Base Tax is developed."
  klg_glass_bonus: "Reinvigorated Maxan Glassmaking"
  klgIfGlass: "If we complete this mission while having at least §Y5§! owned provinces with §YGlass§!:\nEvery owned province with §YGlass§! gets '§YReinvigorated Maxan Glassmaking§!' until the end of the game, giving the following effects:\nLocal Goods Produced: §G+2.00§!"
  klgUniteCultures: "If we complete this mission while all colonized provinces in the §YGorfrek§! Region are owned by §YKalarga§!:\nEvery province of §YRelvi§!, §YOemsudi§! or §YVen§! culture will become §YKachik§!."
  klgGetDevGorfrek: "§Y10§! random owned provinces in the §YGorfrek§! Region will gain §G1§! Base Tax, §G1§! Base Production and §G1§! Base Manpower."
-
  AraGod:0 "Ara"
  GaaraGod:0 "Gaara"
  UmGod:0 "Um"
@@ -278,4 +276,5 @@
  PhasmaGod:0 "Phamsa"
  YorloxGod:0 "Yorlox"
  GodsGod:0 "The Gods"
-
+ revokeKachikRelRights: "'§YKachik Religious Autonomy§!' will be removed from all owned provinces."
+ kachik_religious_rights_tip: "All owned §YAnimist§! §YKachik§! provinces get '§YKachik Religious Autonomy§!', giving the following effects:\nLocal Production Efficiency: §G+10.0%§!\nLocal Missionary Strength: §R-5.0%§!\nLocal Manpower Modifier: §G+10.0%§!"

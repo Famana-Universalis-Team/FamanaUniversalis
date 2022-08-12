@@ -6,19 +6,14 @@ estate_church_kachik_religious_rights = {
 	loyalty = -0.05
 	influence  = -0.10
     is_valid = {
-		NOT = { tag = NAF }
+		NOT = { primary_culture = Kachik }
 		OR = {
 			has_estate_privilege = estate_church_kachik_religious_rights
-			AND = {
-				tag = SKT
-				NOT = { has_estate_privilege = estate_church_kachik_religious_rights }
-			}
+			tag = SKT
 		}
+		religion = lathvy
 		any_owned_province = {
 			religion = animism
-		}
-		any_owned_province = {
-			culture = Kachik
 		}
 	}
     can_select = {
@@ -47,6 +42,7 @@ estate_church_kachik_religious_rights = {
 	}
 	on_revoked = {
 		clr_country_flag = kachikreligiousrights
+		custom_tooltip = revokeKachikRelRights
 	}
 	on_revoked_province = {
 		if = {

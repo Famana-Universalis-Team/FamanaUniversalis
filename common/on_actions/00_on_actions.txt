@@ -3386,6 +3386,12 @@ on_province_religion_converted = {
 	on_province_religion_converted_estate_privileges_effect = yes
 	if = {
 		limit = {
+			has_province_modifier = kachik_religious_autonomy
+		}
+		remove_province_modifier = kachik_religious_autonomy
+	}
+	if = {
+		limit = {
 			owner = {
 				religion = tonmo
 			}

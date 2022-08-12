@@ -74,6 +74,7 @@ country_event = {
 	desc = eastereggs.3.d
 	picture = EP_MOAIS_eventPicture
 	fire_only_once = yes
+	goto = 5203
 	
 	trigger = {
 		is_year = 250
@@ -170,5 +171,68 @@ country_event = {
 		name = eastereggs.6.a
 		ai_chance = { factor = 5 }
 		add_prestige = 10
+	}
+}
+
+#Pawani Cultists
+country_event = {
+	id = eastereggs.7
+	title = eastereggs.7.t
+	desc = eastereggs.7.d
+	picture = RELIGIOUS_TURMOIL_eventPicture
+	fire_only_once = yes
+	goto = 5203
+
+	trigger = {
+		owns = 5203
+		religion_group = lathvy_group
+		NOT = {
+			OR = {
+				tag = NPX
+				religion = pawani
+			}
+		}
+		5203 = {
+			religion_group = lathvy_group
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 8000
+	}
+
+	immediate = {
+		hidden_effect = {
+			5203 = {
+				change_religion = pawani
+			}
+		}
+	}
+
+	option = { #Crack down
+		name = eastereggs.7.a
+		ai_chance = { factor = 10 }
+		trigger = {
+			NOT = {
+				has_idea_group = humanist_ideas
+			}
+		}
+		5203 = {
+			add_province_modifier = {
+				name = npx_pawani_crackdown
+				duration = 3650
+			}
+		}
+	}
+
+	option = { #Tolerate
+		name = eastereggs.7.b
+		ai_chance = { factor = 1 }
+		5203 = {
+			add_province_modifier = {
+				name = npx_pawani_tolerance
+				duration = 9125
+			}
+		}
 	}
 }

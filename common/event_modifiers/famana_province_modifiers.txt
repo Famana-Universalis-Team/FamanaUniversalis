@@ -275,3 +275,13 @@ sandpox_outbreak = {
     local_tax_modifier = -0.25
     local_manpower_modifier = -0.5
 }
+
+npx_pawani_crackdown = {
+    local_unrest = 15
+    local_missionary_strength = 0.02
+}
+
+npx_pawani_tolerance = {
+    local_unrest = -2
+    local_missionary_strength = -0.10
+}

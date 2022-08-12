@@ -1190,11 +1190,15 @@ xalian_group = {
 		color = { 220 255 10 }
 		country = {
 			global_missionary_strength = 0.01
-			production_efficiency = 0.10
+			production_efficiency = 0.15
 		}
 		country_as_secondary = {
 			core_creation = -0.1
 			ae_impact = -0.15
+		}
+
+		province = {
+			local_unrest = -1
 		}
 		
 		holy_sites = { 5388 5458 5411 5163 }
@@ -1858,15 +1862,14 @@ antestal_yomtanian_group = {
 		}
 
 		province = {
-			local_missionary_strength = -0.05
-			local_culture_conversion_cost = 10.0
+			local_missionary_strength = -0.02
 		}
 
 		
-		heretic = { HASIAN }	
+		heretic = { HOFRREJJDKMA_H }	
 	}
 	
 	harmonized_modifier = harmonized_pagan
 	
-	crusade_name = HOLY_WAR
+	crusade_name = ANNIHILATION_WAR
 }

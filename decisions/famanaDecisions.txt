@@ -264,6 +264,7 @@ country_decisions = {
                         NOT = {
                             num_of_owned_provinces_with	= {
                                 value = 2
+                                owned_by = ROOT
                             }
                         }
                     }

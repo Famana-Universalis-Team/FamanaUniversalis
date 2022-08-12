@@ -1202,38 +1202,38 @@ country_event = {
 	}
 }
 
-country_event = {
-	id = jasua.22
-	title = jasua.22.t
-	desc = jasua.22.d
-	picture = REFORM_eventPicture
-	hidden = yes
-
-	trigger = {
-		any_owned_province = {
-			has_province_modifier = kachik_religious_autonomy
-		}
-		NOT = { has_estate_privilege = estate_church_kachik_religious_rights }
-	}
-
-	mean_time_to_happen = {
-		months = 1
-	}
-
-	immediate = {
-		every_owned_province = {
-			limit = {
-				has_province_modifier = kachik_religious_autonomy
-			}
-			remove_province_modifier = kachik_religious_autonomy
-		}
-	}
-
-	option = {
-		name = jasua.22.a
-		ai_chance = { factor = 1 }
-	}
-}
+#country_event = {
+#	id = jasua.22
+#	title = jasua.22.t
+#	desc = jasua.22.d
+#	picture = REFORM_eventPicture
+#	hidden = yes
+#
+#	trigger = {
+#		any_owned_province = {
+#			has_province_modifier = kachik_religious_autonomy
+#		}
+#		NOT = { has_estate_privilege = estate_church_kachik_religious_rights }
+#	}
+#
+#	mean_time_to_happen = {
+#		months = 1
+#	}
+#
+#	immediate = {
+#		every_owned_province = {
+#			limit = {
+#				has_province_modifier = kachik_religious_autonomy
+#			}
+#			remove_province_modifier = kachik_religious_autonomy
+#		}
+#	}
+#
+#	option = {
+#		name = jasua.22.a
+#		ai_chance = { factor = 1 }
+#	}
+#}
 
 country_event = {
 	id = jasua.23
