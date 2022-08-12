@@ -1185,6 +1185,29 @@ xalian_group = {
 		
 		heretic = { RASTRAYVARIST DELLOP UNIFIER }	
 	}
+	xalian_religion = {
+		icon = 34
+		color = { 220 255 10 }
+		country = {
+			global_missionary_strength = 0.01
+			production_efficiency = 0.10
+		}
+		country_as_secondary = {
+			core_creation = -0.1
+			ae_impact = -0.15
+		}
+		
+		holy_sites = { 5388 5458 5411 5163 }
+		
+		blessings = {
+			strenghten_the_government
+			legions_of_truth
+			believe_on_the_four_true_gods
+			followers_of_the_four_gods
+		}
+		
+		heretic = { SHIRIAN MORIAN DELKIAN VINIAN }	
+	}
 
 	harmonized_modifier = harmonized_pagan
 	

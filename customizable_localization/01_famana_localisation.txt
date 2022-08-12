@@ -256,3 +256,28 @@ defined_text = {
         localisation_key = GodsGod
     }
 }
+
+defined_text = {
+    name = RandomXalGod
+
+	text = {
+        localisation_key = VinGod
+    }
+    text = {
+        localisation_key = DelkGod
+    }
+    text = {
+        localisation_key = ShirGod
+    }
+    text = {
+        localisation_key = MorGod
+    }
+    text = {
+        localisation_key = ErrorGod
+        trigger = {
+			NOT = {
+                religion_group = xalian_group
+            }
+        }
+    }
+}
