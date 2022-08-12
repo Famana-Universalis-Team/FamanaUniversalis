@@ -40,6 +40,7 @@ province_event = {
 				add_country_modifier = {
 					name = recent_disease
 					duration = 3650
+					hidden = yes
 				}
 			}
 		}
@@ -167,7 +168,7 @@ province_event = {
 province_event = {
 	id = plague.2
 	title = plague.2.t
-	desc = plague.2.d
+	desc = plague.2.d	
 	picture = PLAGUE_eventPicture
 	goto = ROOT
 	is_mtth_scaled_to_size = 1
@@ -202,6 +203,7 @@ province_event = {
 				add_country_modifier = {
 					name = recent_disease
 					duration = 3650
+					hidden = yes
 				}
 			}
 		}
@@ -366,6 +368,7 @@ province_event = {
 				add_country_modifier = {
 					name = recent_disease
 					duration = 3650
+					hidden = yes
 				}
 			}
 		}
@@ -531,6 +534,7 @@ province_event = {
 				add_country_modifier = {
 					name = recent_disease
 					duration = 3650
+					hidden = yes
 				}
 			}
 		}
@@ -620,6 +624,7 @@ province_event = {
 				add_country_modifier = {
 					name = recent_disease
 					duration = 3650
+					hidden = yes
 				}
 			}
 		}
@@ -679,6 +684,7 @@ province_event = {
 				add_country_modifier = {
 					name = recent_disease
 					duration = 3650
+					hidden = yes
 				}
 			}
 		}
@@ -806,6 +812,7 @@ province_event = {
 				add_country_modifier = {
 					name = recent_disease
 					duration = 3650
+					hidden = yes
 				}
 			}
 		}
@@ -932,6 +939,7 @@ province_event = {
 				add_country_modifier = {
 					name = recent_disease
 					duration = 3650
+					hidden = yes
 				}
 			}
 		}
@@ -1058,6 +1066,7 @@ province_event = {
 				add_country_modifier = {
 					name = recent_disease
 					duration = 3650
+					hidden = yes
 				}
 			}
 		}
@@ -1162,6 +1171,7 @@ province_event = {
 				add_country_modifier = {
 					name = recent_disease
 					duration = 3650
+					hidden = yes
 				}
 			}
 		}

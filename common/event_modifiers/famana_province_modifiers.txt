@@ -167,9 +167,7 @@ recent_blight_outbreak = {
     local_unrest = 1
 }
 
-recent_disease = {
-
-}
+recent_disease = {}
 
 totalQuarantine = {
     local_production_efficiency = -0.5
