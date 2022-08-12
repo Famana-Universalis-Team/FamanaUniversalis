@@ -35,7 +35,54 @@ helvania = {
 			}
 		}
 	}
+}
 
+lukscha_clan = {
+	rank = {
+		1 = NARAVAMI_CLAN
+		2 = NARAVAMI_CLAN
+		3 = NARAVAMI_CLAN
+	}
+
+	ruler_male = {
+		1 = CLAN_FATHER
+		2 = CLAN_FATHER
+		3 = CLAN_FATHER
+	}
+
+	ruler_female = {
+		1 = CLAN_MOTHER
+		2 = CLAN_MOTHER
+		3 = CLAN_MOTHER
+	}
+
+	trigger = {
+		has_reform = lukscha_tribe
+	}
+}
+
+lukscha = {
+	rank = {
+		1 = TRIBAL_COUNCIL
+		2 = TRIBAL_COUNCIL
+		3 = TRIBAL_COUNCIL
+	}
+
+	ruler_male = {
+		1 = FIRST_CHIEF
+		2 = FIRST_CHIEF
+		3 = FIRST_CHIEF
+	}
+
+	ruler_female = {
+		1 = FIRST_CHIEF
+		2 = FIRST_CHIEF
+		3 = FIRST_CHIEF
+	}
+
+	trigger = {
+		has_reform = lukscha_forum
+	}
 }
 
 diocese_gov_name = {

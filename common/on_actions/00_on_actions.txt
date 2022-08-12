@@ -508,6 +508,15 @@ on_new_monarch = {
 	}
 	if = {
 		limit = {
+			has_reform = lukscha_tribe
+		}
+		country_event = {
+			id = lukscham.4
+			days = 30
+		}
+	}
+	if = {
+		limit = {
 			has_consort_regency = no
 			any_owned_province = {
 				has_province_modifier = domain_of_spouses_family

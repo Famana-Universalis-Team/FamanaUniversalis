@@ -171,3 +171,32 @@ ora_confederation = {
 		factor = 1
 	}
 }
+
+lukscha_tribe = {
+	icon = "lukscha_tribe"
+	allow_normal_conversion = yes
+	potential = {
+		AND = {
+			primary_culture = Lukschan
+			religion = maschi
+		}
+	}
+	valid_for_nation_designer = yes
+	legacy_equivalent = tribal_federation_legacy
+	lock_level_when_selected = yes
+
+	modifiers = {
+		may_recruit_female_generals = yes
+		female_advisor_chance = 0.60
+		monarch_lifespan = 0.15
+		ae_impact = -0.2
+	}
+
+	custom_attributes = {
+		royal_marriage = no
+	}
+	
+	ai = {
+		factor = 1
+	}
+}

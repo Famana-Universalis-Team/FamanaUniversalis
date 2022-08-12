@@ -1,5 +1,5 @@
 government = tribal
-add_government_reform = tribal_kingdom
+add_government_reform = lukscha_tribe
 government_rank = 1
 mercantilism = 10
 technology_group = estali_tech_gr
@@ -11,6 +11,7 @@ capital = 6502
 
 200.1.1 = {
 	monarch = {
+		female = yes
 		name = "Irusuas"
 		dynasty = "Anekssys"
 		birth_date = 187.12.12

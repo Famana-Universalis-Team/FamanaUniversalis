@@ -140,3 +140,102 @@ country_event = {
         ai_chance = { factor = 1 }
     }
 }
+
+country_event = {
+	id = lukscham.4
+	picture = NUSANTARA_QUEEN_eventPicture
+	title = lukscham.4.t
+	desc = lukscham.4.d
+	is_triggered_only = yes
+
+	immediate = {
+		set_saved_name = {
+			key = heir1
+			type = advisor
+			scope = ROOT
+		}
+		set_saved_name = {
+			key = heir2
+			type = advisor
+			scope = ROOT
+		}
+		set_saved_name = {
+			key = heir3
+			type = advisor
+			scope = ROOT
+		}
+	}
+
+	option = {
+        name = lukscham.4.a
+        ai_chance = { factor = 1 }
+		hidden_effect = {
+			kill_heir = {
+				allow_new_heir = no
+			}
+		}
+		define_heir = {
+			name = heir3
+			claim = 100
+			age = 3
+			female = yes
+		}
+    }
+	option = {
+        name = lukscham.4.b
+        ai_chance = { factor = 1 }
+		hidden_effect = {
+			kill_heir = {
+				allow_new_heir = no
+			}
+		}
+		define_heir = {
+			name = heir2
+			claim = 100
+			age = 3
+			female = yes
+		}
+    }
+	option = {
+        name = lukscham.4.c
+        ai_chance = { factor = 1 }
+		hidden_effect = {
+			kill_heir = {
+				allow_new_heir = no
+			}
+		}
+		define_heir = {
+			name = heir1
+			claim = 100
+			age = 3
+			female = yes
+		}
+    }
+}
+
+country_event = {
+	id = lukscham.5
+	picture = PROTESTANT_CATHOLIC_DEBATE_eventPicture
+	title = lukscham.5.t
+	desc = lukscham.5.d
+	fire_only_once = yes
+
+	trigger = {
+		tag = LKS
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		
+	}
+
+	option = {
+        name = lukscham.5.a
+        ai_chance = { factor = 1 }
+		remove_government_reform = lukscha_tribe
+		add_government_reform = lukscha_forum
+    }
+}
