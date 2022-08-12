@@ -146,3 +146,103 @@ klg_reclaimed_coast = {
 the_alymin_modifier = {
     trade_goods_size_modifier = 0.1
 }
+
+recent_maskrana_outbreak = {
+    local_unrest = 1
+}
+
+recent_pesthi_outbreak = {
+    local_unrest = 1
+}
+
+recent_sandpox_outbreak = {
+    local_unrest = 1
+}
+
+recent_influenza_outbreak = {
+    local_unrest = 1
+}
+
+recent_blight_outbreak = {
+    local_unrest = 1
+}
+
+recent_disease = {
+
+}
+
+totalQuarantine = {
+    local_production_efficiency = -0.5
+    local_tax_modifier = -0.5
+    local_manpower_modifier = -1
+    local_unrest = 5
+}
+
+local_doctors = {
+    local_production_efficiency = -0.25
+    local_tax_modifier = -0.25
+    local_manpower_modifier = -0.5
+}
+
+nothingDone = {
+    local_production_efficiency = -0.10
+    local_tax_modifier = -0.10
+    local_manpower_modifier = -0.5
+    trade_goods_size_modifier = -0.10
+}
+
+noHarvest = {
+    local_production_efficiency = -1
+    trade_goods_size_modifier = -1
+}
+
+fluQuarantine = {
+    local_production_efficiency = -0.25
+    local_tax_modifier = -0.25
+    local_manpower_modifier = -0.5
+}
+
+fluDoctors = {
+    local_production_efficiency = -0.1
+    local_tax_modifier = -0.1
+    local_manpower_modifier = -0.1
+    local_unrest = -2
+}
+
+failedHarvest = {
+    local_unrest = 3
+    development_cost = 0.20
+}
+
+edolyssaCare = {
+    local_production_efficiency = -0.10
+    local_tax_modifier = -0.10
+    local_manpower_modifier = -0.25
+}
+
+edolyssaQuarantine = {
+    local_production_efficiency = -0.25
+    local_tax_modifier = -0.25
+    local_manpower_modifier = -1
+    local_unrest = 5
+}
+
+edolyssaFluQuarantine = {
+    local_production_efficiency = -0.30
+    local_tax_modifier = -0.30
+    local_manpower_modifier = -0.5
+    local_unrest = 1
+}
+
+edolyssaFluDoctors = {
+    local_production_efficiency = -0.15
+    local_tax_modifier = -0.15
+    local_manpower_modifier = -0.15
+    local_unrest = 1
+}
+
+fieldsBurnt = {
+    local_unrest = 5
+    local_autonomy = 0.05
+    local_tax_modifier = -0.1
+}
