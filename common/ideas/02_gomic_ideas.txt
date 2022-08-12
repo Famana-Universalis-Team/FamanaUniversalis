@@ -2749,6 +2749,7 @@ KLG_ideas = {
 	}
 	klg_4 = {
 		culture_conversion_cost = -0.20
+		may_explore = yes
 	}
 	klg_5 = {
 		may_perform_slave_raid = yes

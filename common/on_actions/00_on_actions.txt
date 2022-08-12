@@ -1228,6 +1228,16 @@ on_dismantle_revolution = {
 
 # province
 on_adm_development = {
+	if = {
+		limit = {
+			owner = {
+				mission_completed = klg_resettle_the_towns
+			}
+		}
+		owner = {
+			add_treasury = 10
+		}
+	}
 }
 
 # province

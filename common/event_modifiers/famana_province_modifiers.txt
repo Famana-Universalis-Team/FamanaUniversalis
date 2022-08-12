@@ -135,7 +135,7 @@ klg_return_to_the_homeland = {
 klg_deep_mining = {
     local_development_cost = -0.33
     local_gold_depletion_chance_modifier = -1.0
-    trade_goods_size = 1.5
+    trade_goods_size = 3.0
 }
 
 klg_reclaimed_coast = {
@@ -245,4 +245,13 @@ fieldsBurnt = {
     local_unrest = 5
     local_autonomy = 0.05
     local_tax_modifier = -0.1
+}
+
+klg_developed_stroktur = {
+    allowed_num_of_buildings = 1
+    local_prosperity_growth	= 0.50
+}
+
+klg_more_glass = {
+    trade_goods_size = 2
 }

@@ -1465,6 +1465,7 @@ klg_great_kalargan_empire = {
     production_efficiency = 0.15
     global_institution_spread = 0.25
     trade_steering = 0.33
+    monthly_gold_inflation_modifier	= -0.25
 }
 
 nhoma_centralize = {
@@ -1485,4 +1486,64 @@ lathvy_coffee_legal = {
 first_prayer_books = {
     tolerance_own = 3
     global_missionary_strength = 0.02
+}
+
+klg_construction = {
+    build_cost = -0.20
+}
+
+klg_seafarers = {
+    naval_tradition_from_battle = 1.0
+    sailors_recovery_speed = 0.1
+}
+
+klg_kalargan_fire = {
+    leader_naval_fire = 1
+    galley_power = 0.20
+}
+
+klg_marines = {
+    allowed_marine_fraction = 0.25
+}
+
+klg_warriors = {
+    global_manpower_modifier = 0.15
+    army_tradition = 0.5
+}
+
+klg_artisans = {
+    global_trade_goods_size_modifier = 0.10
+    global_tax_modifier = 0.10
+}
+
+klg_old_places = {
+    idea_cost = -0.10
+}
+
+klg_colony_rush = {
+	global_colonial_growth = 50
+    native_assimilation = 0.25
+}
+
+klg_into_the_woods_modifier = {
+    colonists = 1
+    native_uprising_chance = -0.50
+}
+
+klg_rule_the_interior = {
+    colonists = 1
+}
+
+klg_disrupted_jasuan_trade = {
+    global_trade_power = 0.10
+}
+
+klg_defeated_kapolia = {
+    province_warscore_cost = -0.15
+    naval_morale = 0.10
+}
+
+klg_epic_navy = {
+    trade_efficiency = 0.10
+    naval_maintenance_modifier = -0.25
 }
