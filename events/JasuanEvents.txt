@@ -1309,12 +1309,15 @@ country_event = { #Kalargan uprising
 			culture = Kachik
 		}
 		owns = 5488
+		NOT = {
+			is_year = 285
+		}
 	}
 
 	mean_time_to_happen = {
 		months = 180
 		modifier = {
-			factor = 3.0
+			factor = 2.0
 			mission_completed = eclipse_healing_the_rift
 		}
 	}
