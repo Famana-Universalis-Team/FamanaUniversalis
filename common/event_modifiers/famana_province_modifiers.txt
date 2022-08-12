@@ -246,3 +246,24 @@ fieldsBurnt = {
     local_autonomy = 0.05
     local_tax_modifier = -0.1
 }
+
+maskrana_outbreak = {
+    local_unrest = 2
+    local_production_efficiency = -0.25
+    local_tax_modifier = -0.25
+    local_manpower_modifier = -0.5
+}
+
+peshti_outbreak = {
+    local_unrest = 2
+    local_production_efficiency = -0.25
+    local_tax_modifier = -0.25
+    local_manpower_modifier = -0.5
+}
+
+sandpox_outbreak = {
+    local_unrest = 2
+    local_production_efficiency = -0.25
+    local_tax_modifier = -0.25
+    local_manpower_modifier = -0.5
+}
