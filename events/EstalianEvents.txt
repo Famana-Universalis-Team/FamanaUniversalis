@@ -450,3 +450,30 @@ country_event = {
 		ai_chance = { factor = 1 }
 	}
 }
+
+#Pramtea fix
+country_event = {
+	id = estal.5
+	fire_only_once = yes
+	hidden = yes
+	
+	trigger = {
+		tag = PRT
+		NOT = {
+			has_reform = ora_confederation
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		change_government = tribal
+		add_government_reform = ora_confederation
+	}
+	option = {
+		name = estal.5.a
+		ai_chance = { factor = 1 }
+	}
+}

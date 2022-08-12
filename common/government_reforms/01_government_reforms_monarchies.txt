@@ -418,7 +418,7 @@ iqta = {
 	icon = "muslim"
 	allow_normal_conversion = yes
 	potential = {
-		religion_group = muslim
+		has_reform = iqta
 	}
 	valid_for_nation_designer = yes
 	nation_designer_cost = 10
@@ -1079,7 +1079,7 @@ misl_confederacy_reform = {
 	icon = "misl_confederacy"
 	potential = {
 		has_dlc = "Dharma"
-		religion = sikhism
+		has_reform = misl_confederacy_reform
 	}
 	valid_for_nation_designer = yes
 	nation_designer_cost = 10
