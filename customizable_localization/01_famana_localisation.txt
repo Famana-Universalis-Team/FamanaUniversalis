@@ -172,3 +172,112 @@ defined_text = {
         }
     }
 }
+
+defined_text = {
+    name = OurDeity
+	random = no
+
+	text = {
+        localisation_key = DelkGod #specifically for disease scenario cause Delk has an avatar associated with disease. If you're using this in a different context, maybe add in the other xalian gods as loc triggers too
+        trigger = {
+			AND = {
+                religion_group = xalian_group
+                OR = {
+                    NOT = { religion = morian }
+                    has_global_flag = MorianPolytheism
+                }
+            }
+        }
+    }
+    text = {
+        localisation_key = MorGod
+        trigger = {
+			religion = morian #if polytheism is enabled it will fire the above trigger anws so no need for 2 checks
+        }
+    }
+    text = {
+        localisation_key = AraGod
+        trigger = {
+			religion_group = lathvy_group
+        }
+    }
+
+    text = {
+        localisation_key = GaaraGod
+        trigger = {
+			religion_group = tonmo_group
+        }
+    }
+
+    text = {
+        localisation_key = UmGod
+        trigger = {
+			OR = {
+                religion = mak
+                religion = vaximorian
+            }
+        }
+    }
+
+    text = {
+        localisation_key = AncestorsGod
+        trigger = {
+			religion_group = gadan_group
+        }
+    }
+
+    text = {
+        localisation_key = SpiritsGod
+        trigger = {
+			OR = {
+                religion_group = north_estali
+                religion_group = washoom_group
+                religion = animism
+                religion = pawani
+            }
+        }
+    }
+
+    text = {
+        localisation_key = PhasmaGod
+        trigger = {
+			religion = aresian
+        }
+    }
+
+    text = {
+        localisation_key = YorloxGod
+        trigger = {
+			religion_group = oppian_group
+        }
+    }
+
+    text = {
+        localisation_key = GodsGod
+    }
+}
+
+defined_text = {
+    name = RandomXalGod
+
+	text = {
+        localisation_key = VinGod
+    }
+    text = {
+        localisation_key = DelkGod
+    }
+    text = {
+        localisation_key = ShirGod
+    }
+    text = {
+        localisation_key = MorGod
+    }
+    text = {
+        localisation_key = ErrorGod
+        trigger = {
+			NOT = {
+                religion_group = xalian_group
+            }
+        }
+    }
+}

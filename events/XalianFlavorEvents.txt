@@ -377,3 +377,37 @@ country_event = { #Fall of Shiraska Xon
 		add_prestige = 10
 	}
 }
+
+country_event = { #Celebrations of our Gods (united xalian religion)
+	id = xalflavor.12
+	title = xalflavor.12.t
+	desc = xalflavor.12.d
+	picture = THEATRE_eventPicture
+	is_triggered_only = yes
+	
+	trigger = {
+		religion = xalian_religion
+	}
+
+	option = {
+		name = xalflavor.1.a
+		ai_chance = { factor = 1 }
+		add_stability = 1
+		if = {
+			limit = {
+				any_country = {
+					religion = xalian_religion
+				}
+			}
+			random_country = {
+				limit = {
+					religion = xalian_religion
+				}
+				add_opinion = {
+					who = ROOT
+					modifier = dedicated_festival
+				}
+			}
+		}
+	}
+}

@@ -247,6 +247,7 @@ fieldsBurnt = {
     local_tax_modifier = -0.1
 }
 
+
 klg_developed_stroktur = {
     allowed_num_of_buildings = 1
     local_prosperity_growth	= 0.50
@@ -254,4 +255,25 @@ klg_developed_stroktur = {
 
 klg_more_glass = {
     trade_goods_size = 2
+}
+
+maskrana_outbreak = {
+    local_unrest = 2
+    local_production_efficiency = -0.25
+    local_tax_modifier = -0.25
+    local_manpower_modifier = -0.5
+}
+
+peshti_outbreak = {
+    local_unrest = 2
+    local_production_efficiency = -0.25
+    local_tax_modifier = -0.25
+    local_manpower_modifier = -0.5
+}
+
+sandpox_outbreak = {
+    local_unrest = 2
+    local_production_efficiency = -0.25
+    local_tax_modifier = -0.25
+    local_manpower_modifier = -0.5
 }

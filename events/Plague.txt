@@ -26,12 +26,12 @@ province_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 480
+		months = 240
 	}
 
 	immediate = {
 		hidden_effect = {
-			set_province_flag = focus
+			
 			add_province_modifier = {
 				name = recent_maskrana_outbreak
 				duration = 7300
@@ -87,12 +87,12 @@ province_event = {
 							id = plague.11
 							days = 30
 						}
-						set_province_flag = plague1
+						
 					}
 				}
 			}
 		}
-		clr_province_flag = focus
+		
 	}
 	option = { # Rely on terrible old timey doctors
 		name = plague.1.b
@@ -128,12 +128,12 @@ province_event = {
 							id = plague.11
 							days = 30
 						}
-						set_province_flag = plague1
+						
 					}
 				}
 			}
 		}
-		clr_province_flag = focus
+		
 	}
 	option = { # Do nothing
 		name = plague.1.c
@@ -149,19 +149,17 @@ province_event = {
 					#do nothing
 				}
 				50 = {
-					owner = {
-						set_country_flag = plague1
-					}
 					random_neighbor_province = {
 						province_event = {
 							id = plague.11
 							days = 30
 						}
+						
 					}
 				}
 			}
 		}
-		clr_province_flag = focus
+		
 	}
 }
 
@@ -190,12 +188,12 @@ province_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 480
+		months = 240
 	}
 
 	immediate = {
 		hidden_effect = {
-			set_province_flag = focus
+			
 			add_province_modifier = {
 				name = recent_pesthi_outbreak
 				duration = 7300
@@ -248,15 +246,15 @@ province_event = {
 				5 = {
 					random_neighbor_province = {
 						province_event = {
-							id = plague.11
+							id = plague.12
 							days = 30
 						}
-						set_province_flag = plague2
+						
 					}
 				}
 			}
 		}
-		clr_province_flag = focus
+		
 	}
 	option = { # Rely on terrible old timey doctors
 		name = plague.2.b
@@ -290,15 +288,15 @@ province_event = {
 					random_neighbor_province = {
 
 						province_event = {
-							id = plague.11
+							id = plague.12
 							days = 30
 						}
-						set_province_flag = plague2
+						
 					}
 				}
 			}
 		}
-		clr_province_flag = focus
+		
 	}
 	option = { # Do nothing
 		name = plague.2.c
@@ -317,15 +315,15 @@ province_event = {
 					random_neighbor_province = {
 
 						province_event = {
-							id = plague.11
+							id = plague.12
 							days = 30
 						}
-						set_province_flag = plague2
+						
 					}
 				}
 			}
 		}
-		clr_province_flag = focus
+		
 	}
 }
 
@@ -354,12 +352,12 @@ province_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 480
+		months = 240
 	}
 
 	immediate = {
 		hidden_effect = {
-			set_province_flag = focus
+			
 			add_province_modifier = {
 				name = recent_sandpox_outbreak
 				duration = 7300
@@ -413,15 +411,15 @@ province_event = {
 					random_neighbor_province = {
 
 						province_event = {
-							id = plague.11
+							id = plague.13
 							days = 30
 						}
-						set_province_flag = plague3
+						
 					}
 				}
 			}
 		}
-		clr_province_flag = focus
+		
 	}
 	option = { # Rely on terrible old timey doctors
 		name = plague.3.b
@@ -455,15 +453,15 @@ province_event = {
 					random_neighbor_province = {
 
 						province_event = {
-							id = plague.11
+							id = plague.13
 							days = 30
 						}
-						set_province_flag = plague3
+						
 					}
 				}
 			}
 		}
-		clr_province_flag = focus
+		
 	}
 	option = { # Do nothing
 		name = plague.3.c
@@ -482,15 +480,15 @@ province_event = {
 					random_neighbor_province = {
 
 						province_event = {
-							id = plague.11
+							id = plague.13
 							days = 30
 						}
-						set_province_flag = plague3
+						
 					}
 				}
 			}
 		}
-		clr_province_flag = focus
+		
 	}
 }
 
@@ -520,7 +518,7 @@ province_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 480
+		months = 240
 	}
 
 	immediate = {
@@ -609,7 +607,7 @@ province_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 480
+		months = 240
 	}
 
 	immediate = {
@@ -667,12 +665,12 @@ province_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 480
+		months = 240
 	}
 
 	immediate = {
 		hidden_effect = {
-			set_province_flag = focus
+			
 			add_province_modifier = {
 				name = recent_maskrana_outbreak
 				duration = 7300
@@ -710,12 +708,12 @@ province_event = {
 							id = plague.11
 							days = 30
 						}
-						set_province_flag = plague6
+						
 					}
 				}
 			}
 		}
-		clr_province_flag = focus
+		
 	}
 	option = { # Enforce Quarantine
 		name = plague.6.b
@@ -739,7 +737,7 @@ province_event = {
 				}
 			}
 		}
-		clr_province_flag = focus
+		
 	}
 	option = { # Do nothing
 		name = plague.6.c
@@ -761,12 +759,12 @@ province_event = {
 							id = plague.11
 							days = 30
 						}
-						set_province_flag = plague6
+						
 					}
 				}
 			}
 		}
-		clr_province_flag = focus
+		
 	}
 }
 
@@ -794,12 +792,12 @@ province_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 480
+		months = 240
 	}
 
 	immediate = {
 		hidden_effect = {
-			set_province_flag = focus
+			
 			add_province_modifier = {
 				name = recent_pesthi_outbreak
 				duration = 7300
@@ -834,15 +832,15 @@ province_event = {
 					random_neighbor_province = {
 
 						province_event = {
-							id = plague.11
+							id = plague.12
 							days = 30
 						}
-						set_province_flag = plague7
+						
 					}
 				}
 			}
 		}
-		clr_province_flag = focus
+		
 	}
 	option = { # Enforce Quarantine
 		name = plague.7.b
@@ -866,7 +864,7 @@ province_event = {
 				}
 			}
 		}
-		clr_province_flag = focus
+		
 	}
 	option = { # Do nothing
 		name = plague.7.c
@@ -884,15 +882,15 @@ province_event = {
 				25 = {
 					random_neighbor_province = {
 						province_event = {
-							id = plague.11
+							id = plague.12
 							days = 30
 						}
-						set_province_flag = plague7
+						
 					}
 				}
 			}
 		}
-		clr_province_flag = focus
+		
 	}
 }
 
@@ -920,12 +918,12 @@ province_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 480
+		months = 240
 	}
 
 	immediate = {
 		hidden_effect = {
-			set_province_flag = focus
+			
 			add_province_modifier = {
 				name = recent_sandpox_outbreak
 				duration = 7300
@@ -960,15 +958,15 @@ province_event = {
 					random_neighbor_province = {
 
 						province_event = {
-							id = plague.11
+							id = plague.13
 							days = 30
 						}
-						set_province_flag = plague8
+						
 					}
 				}
 			}
 		}
-		clr_province_flag = focus
+		
 	}
 	option = { # Enforce Quarantine
 		name = plague.8.b
@@ -992,7 +990,7 @@ province_event = {
 				}
 			}
 		}
-		clr_province_flag = focus
+		
 	}
 	option = { # Do nothing
 		name = plague.8.c
@@ -1011,15 +1009,15 @@ province_event = {
 					random_neighbor_province = {
 
 						province_event = {
-							id = plague.11
+							id = plague.13
 							days = 30
 						}
-						set_province_flag = plague8
+						
 					}
 				}
 			}
 		}
-		clr_province_flag = focus
+		
 	}
 }
 
@@ -1047,7 +1045,7 @@ province_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 480
+		months = 240
 	}
 
 	immediate = {
@@ -1151,7 +1149,7 @@ province_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 480
+		months = 240
 	}
 
 	immediate = {
@@ -1226,112 +1224,110 @@ province_event = {
 	}
 }
 
+#Maskrana Spreads
 province_event = {
 	id = plague.11
-	hidden = yes
+	title = plague.11.t
+	desc = plague.11.d
+	picture = PLAGUE_eventPicture
+	goto = ROOT
 	is_triggered_only = yes
 
 	immediate = {
-		log = "Plague 11 successfully called."
-		THIS = {
-			if = {
-				limit = {
-					OR = {
-						has_province_modifier = recent_blight_outbreak
-						has_province_modifier = recent_maskrana_outbreak
-						has_province_modifier = recent_pesthi_outbreak
-						has_province_modifier = recent_sandpox_outbreak
-						has_province_modifier = recent_influenza_outbreak
-					}
-				}
-				#do nothing
-			}
-			else_if = {
-				limit = {
-					owner = {
-						has_country_flag = plague1
-					}
-				}
-				province_event = {
-					id = plague.1
-					days = 1
-				}
-				owner = {
-					clr_country_flag = plague1
-				}
-				log = "put it on country"
-			}
-			else_if = {
-				limit = {
-					FROM = {
-						has_province_flag = plague1
-					}
-				}
-				province_event = {
-					id = plague.1
-					days = 1
-				}
-				clr_province_flag = plague1
-				log = "put it on from province"
-			}
-			else_if = {
-				limit = {
-					has_province_flag = plague2
-				}
-				province_event = {
-					id = plague.2
-					days = 1
-				}
-				clr_province_flag = plague2
-			}
-			else_if = {
-				limit = {
-					has_province_flag = plague3
-				}
-				province_event = {
-					id = plague.3
-					days = 1
-				}
-				clr_province_flag = plague3
-			}
-			else_if = {
-				limit = {
-					has_province_flag = plague6
-				}
-				province_event = {
-					id = plague.6
-					days = 1
-				}
-				clr_province_flag = plague6
-			}
-			else_if = {
-				limit = {
-					has_province_flag = plague7
-				}
-				province_event = {
-					id = plague.7
-					days = 1
-				}
-				clr_province_flag = plague7
-			}
-			else_if = {
-				limit = {
-					has_province_flag = plague8
-				}
-				province_event = {
-					id = plague.8
-					days = 1
-				}
-				clr_province_flag = plague8
-			}
-			else = {
-				log = "No country flag on plague province"
-			}
-		}
 	}
 
 	option = {
 		name = plague.11.a
 		ai_chance = { factor = 1 }
+		owner = {
+			add_stability = -1
+		}
+		every_province_in_state = {
+			limit = {
+				NOT = { has_province_modifier = recent_maskrana_outbreak }
+			}
+			add_province_modifier = {
+				name = maskrana_outbreak
+				duration = 730
+			}
+			hidden_effect = {
+				add_province_modifier = {
+					name = recent_maskrana_outbreak
+					duration = 7300
+				}
+			}
+		}
+	}
+}
+
+#Peshti Spreads
+province_event = {
+	id = plague.12
+	title = plague.12.t
+	desc = plague.12.d
+	picture = PLAGUE_eventPicture
+	goto = ROOT
+	is_triggered_only = yes
+
+	immediate = {
+	}
+
+	option = {
+		name = plague.11.a
+		ai_chance = { factor = 1 }
+		owner = {
+			add_stability = -1
+		}
+		every_province_in_state = {
+			limit = {
+				NOT = { has_province_modifier = recent_pesthi_outbreak }
+			}
+			add_province_modifier = {
+				name = peshti_outbreak
+				duration = 730
+			}
+			hidden_effect = {
+				add_province_modifier = {
+					name = recent_pesthi_outbreak
+					duration = 7300
+				}
+			}
+		}
+	}
+}
+
+#Sandpox Spreads
+province_event = {
+	id = plague.13
+	title = plague.13.t
+	desc = plague.13.d
+	picture = PLAGUE_eventPicture
+	goto = ROOT
+	is_triggered_only = yes
+
+	immediate = {
+	}
+
+	option = {
+		name = plague.11.a
+		ai_chance = { factor = 1 }
+		owner = {
+			add_stability = -1
+		}
+		every_province_in_state = {
+			limit = {
+				NOT = { has_province_modifier = recent_sandpox_outbreak }
+			}
+			add_province_modifier = {
+				name = sandpox_outbreak
+				duration = 730
+			}
+			hidden_effect = {
+				add_province_modifier = {
+					name = recent_sandpox_outbreak
+					duration = 7300
+				}
+			}
+		}
 	}
 }
