@@ -278,3 +278,27 @@
  GodsGod:0 "The Gods"
  revokeKachikRelRights: "'§YKachik Religious Autonomy§!' will be removed from all owned provinces."
  kachik_religious_rights_tip: "All owned §YAnimist§! §YKachik§! provinces get '§YKachik Religious Autonomy§!', giving the following effects:\nLocal Production Efficiency: §G+10.0%§!\nLocal Missionary Strength: §R-5.0%§!\nLocal Manpower Modifier: §G+10.0%§!"
+
+ XALIAN_FORCE_USED: "§YThis will only change our state religion. We will still need to convert all our provinces.§!"
+
+ COUNCIL_OF_XON_REPRESENTATIVES: "§YWe will invite religious authorities from all four Xalian faiths to Xon to discuss the matter. The following authorities will be invited:§!\n[Root.ShirianAuthority]\n[Root.VinianAuthority]\n[Root.DelkianAuthority]\n[Root.MorianAuthority]\n\n§YIf we get 3/4 of the delegations on our side, accounting for 80% of the development in Ga Xal, we will replace every province and state religion of the agreeing parties with the restored Xalian religion.§!"
+
+ YouShirInvited: "@[shirian_representative.GetTag] §GWe§! will represent the §YShirian§! faith."
+ CapitalShirInvited: "§Y@[shirian_representative.GetTag] [shirian_representative.GetName]§! will represent the §YShirian§! faith."
+ NationShirInvited: "§Y@[shirian_representative.GetTag] [shirian_representative.GetName]§! will represent the §YShirian§! faith."
+ BishopsShirInvited: "An independent §YCouncil of Bishops§! will represent the §YShirian§! faith."
+
+ YouMorInvited: "@[morian_representative.GetTag] §GWe§! will represent the §YMorian§! faith."
+ CapitalMorInvited: "§Y@[morian_representative.GetTag] [morian_representative.GetName]§! will represent the §YMorian§! faith."
+ NationMorInvited: "§Y@[morian_representative.GetTag] [morian_representative.GetName]§! will represent the §YMorian§! faith."
+ BishopsMorInvited: "An independent §YCouncil of Bishops§! will represent the §YMorian§! faith."
+
+ YouDelkInvited: "@[delkian_representative.GetTag] §GWe§! will represent the §YDelkian§! faith."
+ CapitalDelkInvited: "§Y@[delkian_representative.GetTag] [delkian_representative.GetName]§! will represent the §YDelkian§! faith."
+ NationDelkInvited: "§Y@[delkian_representative.GetTag] [delkian_representative.GetName]§! will represent the §YDelkian§! faith."
+ BishopsDelkInvited: "An independent §YCouncil of Bishops§! will represent the §YDelkian§! faith."
+
+ YouVinInvited: "@[vinian_representative.GetTag] §GWe§! will represent the §YVinian§! faith."
+ CapitalVinInvited: "§Y@[vinian_representative.GetTag] [vinian_representative.GetName]§! will represent the §YVinian§! faith."
+ NationVinInvited: "§Y@[vinian_representative.GetTag] [vinian_representative.GetName]§! will represent the §YVinian§! faith."
+ BishopsVinInvited: "An independent §YCouncil of Bishops§! will represent the §YVinian§! faith."

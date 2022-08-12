@@ -281,3 +281,143 @@ defined_text = {
         }
     }
 }
+
+defined_text = {
+    name = ShirianAuthority
+    random = no
+
+    text = {
+        localisation_key = YouShirInvited
+        trigger = { #basically these mean that the player is going to be there
+            ai = no
+            religion = shirian
+        }
+    }
+	text = {
+        localisation_key = CapitalShirInvited
+        trigger = {
+            any_known_country = {
+                AND = {
+                    religion = shirian
+                    owns_core_province = 5388 #xon
+                }
+            }
+        }
+    }
+    text = {
+        localisation_key = NationShirInvited
+        trigger = {
+            any_known_country = {
+                religion = shirian
+            }
+        }
+    }
+    text = {
+        localisation_key = BishopsShirInvited
+    }
+}
+
+defined_text = {
+    name = DelkianAuthority
+    random = no
+
+    text = {
+        localisation_key = YouDelkInvited
+        trigger = { #basically these mean that the player is going to be there
+            ai = no
+            religion = delkian
+        }
+    }
+	text = {
+        localisation_key = CapitalDelkInvited
+        trigger = {
+            any_known_country = {
+                AND = {
+                    religion = delkian
+                    owns_core_province = 5388 #xon
+                }
+            }
+        }
+    }
+    text = {
+        localisation_key = NationDelkInvited
+        trigger = {
+            any_known_country = {
+                religion = delkian
+            }
+        }
+    }
+    text = {
+        localisation_key = BishopsDelkInvited
+    }
+}
+
+defined_text = {
+    name = MorianAuthority
+    random = no
+
+    text = {
+        localisation_key = YouMorInvited
+        trigger = { #basically these mean that the player is going to be there
+            ai = no
+            religion = morian
+        }
+    }
+	text = {
+        localisation_key = CapitalMorInvited
+        trigger = {
+            any_known_country = {
+                AND = {
+                    religion = morian
+                    owns_core_province = 5388 #xon
+                }
+            }
+        }
+    }
+    text = {
+        localisation_key = NationMorInvited
+        trigger = {
+            any_known_country = {
+                religion = morian
+            }
+        }
+    }
+    text = {
+        localisation_key = BishopsMorInvited
+    }
+}
+
+defined_text = {
+    name = VinianAuthority
+    random = no
+
+    text = {
+        localisation_key = YouVinInvited
+        trigger = { #basically these mean that the player is going to be there
+            ai = no
+            religion = vinian
+        }
+    }
+	text = {
+        localisation_key = CapitalVinInvited
+        trigger = {
+            any_known_country = {
+                AND = {
+                    religion = vinian
+                    owns_core_province = 5388 #xon
+                }
+            }
+        }
+    }
+    text = {
+        localisation_key = NationVinInvited
+        trigger = {
+            any_known_country = {
+                religion = vinian
+            }
+        }
+    }
+    text = {
+        localisation_key = BishopsVinInvited
+    }
+}

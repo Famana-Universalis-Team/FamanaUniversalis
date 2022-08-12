@@ -1488,6 +1488,7 @@ first_prayer_books = {
     global_missionary_strength = 0.02
 }
 
+
 klg_construction = {
     build_cost = -0.20
 }
@@ -1546,4 +1547,9 @@ klg_defeated_kapolia = {
 klg_epic_navy = {
     trade_efficiency = 0.10
     naval_maintenance_modifier = -0.25
+}
+
+conversion_to_xalian = {
+    global_heretic_missionary_strength = 0.05
+    tolerance_heretic = -2
 }
