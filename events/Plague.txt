@@ -84,9 +84,10 @@ province_event = {
 				5 = {
 					random_neighbor_province = {
 						province_event = {
-							id = plague.1
+							id = plague.11
 							days = 30
 						}
+						set_province_flag = plague1
 					}
 				}
 			}
@@ -124,9 +125,10 @@ province_event = {
 				25 = {
 					random_neighbor_province = {
 						province_event = {
-							id = plague.1
+							id = plague.11
 							days = 30
 						}
+						set_province_flag = plague1
 					}
 				}
 			}
@@ -147,9 +149,12 @@ province_event = {
 					#do nothing
 				}
 				50 = {
+					owner = {
+						set_country_flag = plague1
+					}
 					random_neighbor_province = {
 						province_event = {
-							id = plague.1
+							id = plague.11
 							days = 30
 						}
 					}
@@ -243,9 +248,10 @@ province_event = {
 				5 = {
 					random_neighbor_province = {
 						province_event = {
-							id = plague.2
+							id = plague.11
 							days = 30
 						}
+						set_province_flag = plague2
 					}
 				}
 			}
@@ -284,9 +290,10 @@ province_event = {
 					random_neighbor_province = {
 
 						province_event = {
-							id = plague.2
+							id = plague.11
 							days = 30
 						}
+						set_province_flag = plague2
 					}
 				}
 			}
@@ -310,9 +317,10 @@ province_event = {
 					random_neighbor_province = {
 
 						province_event = {
-							id = plague.2
+							id = plague.11
 							days = 30
 						}
+						set_province_flag = plague2
 					}
 				}
 			}
@@ -405,9 +413,10 @@ province_event = {
 					random_neighbor_province = {
 
 						province_event = {
-							id = plague.3
+							id = plague.11
 							days = 30
 						}
+						set_province_flag = plague3
 					}
 				}
 			}
@@ -446,9 +455,10 @@ province_event = {
 					random_neighbor_province = {
 
 						province_event = {
-							id = plague.3
+							id = plague.11
 							days = 30
 						}
+						set_province_flag = plague3
 					}
 				}
 			}
@@ -472,9 +482,10 @@ province_event = {
 					random_neighbor_province = {
 
 						province_event = {
-							id = plague.3
+							id = plague.11
 							days = 30
 						}
+						set_province_flag = plague3
 					}
 				}
 			}
@@ -696,9 +707,10 @@ province_event = {
 					random_neighbor_province = {
 
 						province_event = {
-							id = plague.6
+							id = plague.11
 							days = 30
 						}
+						set_province_flag = plague6
 					}
 				}
 			}
@@ -746,9 +758,10 @@ province_event = {
 					random_neighbor_province = {
 
 						province_event = {
-							id = plague.6
+							id = plague.11
 							days = 30
 						}
+						set_province_flag = plague6
 					}
 				}
 			}
@@ -821,9 +834,10 @@ province_event = {
 					random_neighbor_province = {
 
 						province_event = {
-							id = plague.7
+							id = plague.11
 							days = 30
 						}
+						set_province_flag = plague7
 					}
 				}
 			}
@@ -869,11 +883,11 @@ province_event = {
 				}
 				25 = {
 					random_neighbor_province = {
-
 						province_event = {
-							id = plague.7
+							id = plague.11
 							days = 30
 						}
+						set_province_flag = plague7
 					}
 				}
 			}
@@ -946,9 +960,10 @@ province_event = {
 					random_neighbor_province = {
 
 						province_event = {
-							id = plague.8
+							id = plague.11
 							days = 30
 						}
+						set_province_flag = plague8
 					}
 				}
 			}
@@ -996,9 +1011,10 @@ province_event = {
 					random_neighbor_province = {
 
 						province_event = {
-							id = plague.8
+							id = plague.11
 							days = 30
 						}
+						set_province_flag = plague8
 					}
 				}
 			}
@@ -1023,7 +1039,7 @@ province_event = {
 			has_province_modifier = recent_sandpox_outbreak
 		}
 		NOT = {
-						owner = {
+			owner = {
 				has_country_modifier = recent_disease
 			}
 		}
@@ -1207,5 +1223,115 @@ province_event = {
 				duration = 1825
 			}
 		}
+	}
+}
+
+province_event = {
+	id = plague.11
+	hidden = yes
+	is_triggered_only = yes
+
+	immediate = {
+		log = "Plague 11 successfully called."
+		THIS = {
+			if = {
+				limit = {
+					OR = {
+						has_province_modifier = recent_blight_outbreak
+						has_province_modifier = recent_maskrana_outbreak
+						has_province_modifier = recent_pesthi_outbreak
+						has_province_modifier = recent_sandpox_outbreak
+						has_province_modifier = recent_influenza_outbreak
+					}
+				}
+				#do nothing
+			}
+			else_if = {
+				limit = {
+					owner = {
+						has_country_flag = plague1
+					}
+				}
+				province_event = {
+					id = plague.1
+					days = 1
+				}
+				owner = {
+					clr_country_flag = plague1
+				}
+				log = "put it on country"
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						has_province_flag = plague1
+					}
+				}
+				province_event = {
+					id = plague.1
+					days = 1
+				}
+				clr_province_flag = plague1
+				log = "put it on from province"
+			}
+			else_if = {
+				limit = {
+					has_province_flag = plague2
+				}
+				province_event = {
+					id = plague.2
+					days = 1
+				}
+				clr_province_flag = plague2
+			}
+			else_if = {
+				limit = {
+					has_province_flag = plague3
+				}
+				province_event = {
+					id = plague.3
+					days = 1
+				}
+				clr_province_flag = plague3
+			}
+			else_if = {
+				limit = {
+					has_province_flag = plague6
+				}
+				province_event = {
+					id = plague.6
+					days = 1
+				}
+				clr_province_flag = plague6
+			}
+			else_if = {
+				limit = {
+					has_province_flag = plague7
+				}
+				province_event = {
+					id = plague.7
+					days = 1
+				}
+				clr_province_flag = plague7
+			}
+			else_if = {
+				limit = {
+					has_province_flag = plague8
+				}
+				province_event = {
+					id = plague.8
+					days = 1
+				}
+				clr_province_flag = plague8
+			}
+			else = {
+				log = "No country flag on plague province"
+			}
+		}
+	}
+
+	option = {
+		name = plague.11.a
+		ai_chance = { factor = 1 }
 	}
 }
