@@ -2534,25 +2534,6 @@ pomlen_temple = {
 	#can we build it?
 	build_trigger = {
 		always = no
-		#if = {
-		#	limit = {
-		#	has_dlc = "Cradle of Civilization"
-		#	}
-		#	owner = {
-		#		religion_group = lathvy_group
-		#		religious_school = {
-		#			group = lathvy_group
-		#			school = pextoglazian_school
-		#		}
-		#	}
-		#	religion_group = lathvy_group
-		#}
-		#else = {
-		#	owner = {
-		#	religion_group = lathvy_group
-		#	}
-		#	religion_group = lathvy_group
-		#}
 	}
 
 	#what to do when it's built
@@ -2567,48 +2548,12 @@ pomlen_temple = {
 
 	#can our country use it?
 	can_use_modifiers_trigger = {
-		if = {
-			limit = {
-			has_dlc = "Cradle of Civilization"
-			}
-			owner = {
-				religion_group = lathvy_group
-				religious_school = {
-					group = lathvy_group
-					school = pextoglazian_school
-				}
-			}
-			religion_group = lathvy_group
-		}
-		else = {
-			owner = {
-			religion_group = lathvy_group
-			}
-			religion_group = lathvy_group
-		}
+		always = no
 	}
 
 	#can our country upgrade it?
 	can_upgrade_trigger = {
-		if = {
-			limit = {
-			has_dlc = "Cradle of Civilization"
-			}
-			owner = {
-				religion_group = lathvy_group
-				religious_school = {
-					group = lathvy_group
-					school = pextoglazian_school
-				}
-			}
-			religion_group = lathvy_group
-		}
-		else = {
-			owner = {
-			religion_group = lathvy_group
-			}
-			religion_group = lathvy_group
-		}
+		always = no
 	}
 
 	#can our country keep it or is it destroyed when we get hold of it?

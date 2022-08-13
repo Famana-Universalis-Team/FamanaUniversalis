@@ -1,0 +1,356 @@
+
+defined_text = {
+	name = GetAppropriateTagShir
+	random = no
+	
+    text = {
+		trigger = {
+			has_global_flag = noShirianRepresentative
+		}
+        localisation_key = BishopsXon
+    }
+    text = {
+        localisation_key = ShirRep
+    }
+}
+
+defined_text = {
+	name = GetAppropriateTagMor
+	random = no
+	
+    text = {
+		trigger = {
+			has_global_flag = noMorianRepresentative
+		}
+        localisation_key = BishopsXon
+    }
+    text = {
+        localisation_key = ShirRep
+    }
+}
+
+defined_text = {
+	name = GetAppropriateTagDelk
+	random = no
+	
+    text = {
+		trigger = {
+			has_global_flag = noDelkianRepresentative
+		}
+        localisation_key = BishopsXon
+    }
+    text = {
+        localisation_key = ShirRep
+    }
+}
+
+defined_text = {
+	name = GetAppropriateTagVin
+	random = no
+	
+    text = {
+		trigger = {
+			has_global_flag = noShirianRepresentative
+		}
+        localisation_key = BishopsXon
+    }
+    text = {
+        localisation_key = ShirRep
+    }
+}
+
+defined_text = {
+	name = player_or_no_council_shir
+	random = no
+	
+    text = {
+		trigger = {
+			event_target:shirian_representative = {
+				ai = no
+			}
+		}
+        localisation_key = PlayerReasonsShir
+    }
+    text = {
+        localisation_key = ShirXonReasons
+    }
+}
+
+defined_text = {
+	name = player_or_no_council_mor
+	random = no
+	
+    text = {
+		trigger = {
+			event_target:morian_representative = {
+				ai = no
+			}
+		}
+        localisation_key = PlayerReasonsMor
+    }
+    text = {
+        localisation_key = MorXonReasons
+    }
+}
+
+defined_text = {
+	name = player_or_no_council_delk
+	random = no
+	
+    text = {
+		trigger = {
+			event_target:delkian_representative = {
+				ai = no
+			}
+		}
+        localisation_key = PlayerReasonsDelk
+    }
+    text = {
+        localisation_key = DelkXonReasons
+    }
+}
+
+defined_text = {
+	name = player_or_no_council_vin
+	random = no
+	
+    text = {
+		trigger = {
+			event_target:vinian_representative = {
+				ai = no
+			}
+		}
+        localisation_key = PlayerReasonsVinS
+    }
+    text = {
+        localisation_key = VinXonReasons
+    }
+}
+
+defined_text = {
+	name = checkAcceptShir
+	random = no
+	
+    text = {
+		trigger = {
+			has_global_flag = ShirAgrees
+		}
+        localisation_key = CouncilXonYes
+    }
+    text = {
+        localisation_key = CouncilXonNo
+    }
+}
+
+defined_text = {
+	name = checkAcceptMor
+	random = no
+	
+    text = {
+		trigger = {
+			has_global_flag = MorAgrees
+		}
+        localisation_key = CouncilXonYes
+    }
+    text = {
+        localisation_key = CouncilXonNo
+    }
+}
+
+defined_text = {
+	name = checkAcceptDelk
+	random = no
+	
+    text = {
+		trigger = {
+			has_global_flag = DelkAgrees
+		}
+        localisation_key = CouncilXonYes
+    }
+    text = {
+        localisation_key = CouncilXonNo
+    }
+}
+
+defined_text = {
+	name = checkAcceptVin
+	random = no
+	
+    text = {
+		trigger = {
+			has_global_flag = VinAgrees
+		}
+        localisation_key = CouncilXonYes
+    }
+    text = {
+        localisation_key = CouncilXonNo
+    }
+}
+
+defined_text = {
+	name = GetShirVinBrotherhood
+	random = no
+	
+    text = {
+		trigger = {
+			event_target:conductor_of_council_xon = {
+				has_country_flag = shirian_brotherhood
+			}
+		}
+        localisation_key = ShirVinBrotherhood
+    }
+    text = {
+        localisation_key = CoXempty
+    }
+}
+
+
+defined_text = {
+	name = GetMorMonotheism
+	random = no
+	
+    text = {
+		trigger = {
+			event_target:conductor_of_council_xon = {
+				has_country_flag = morian_monotheism_cox
+			}
+		}
+        localisation_key = MorianMonotheismCox
+    }
+    text = {
+        localisation_key = CoXempty
+    }
+}
+
+defined_text = {
+	name = GetPlayerShir
+	random = no
+	
+    text = {
+		trigger = {
+			event_target:conductor_of_council_xon = {
+				has_country_flag = player_is_shir
+			}
+		}
+        localisation_key = PlayerIsShir
+    }
+    text = {
+        localisation_key = CoXempty
+    }
+}
+
+defined_text = {
+	name = GetPlayerMor
+	random = no
+	
+    text = {
+		trigger = {
+			event_target:conductor_of_council_xon = {
+				has_country_flag = player_is_mor
+			}
+		}
+        localisation_key = PlayerIsMor
+    }
+    text = {
+        localisation_key = CoXempty
+    }
+}
+
+defined_text = {
+	name = GetPlayerDelk
+	random = no
+	
+    text = {
+		trigger = {
+			event_target:conductor_of_council_xon = {
+				has_country_flag = player_is_delk
+			}
+		}
+        localisation_key = PlayerIsDelk
+    }
+    text = {
+        localisation_key = CoXempty
+    }
+}
+
+defined_text = {
+	name = GetPlayerVin
+	random = no
+	
+    text = {
+		trigger = {
+			event_target:conductor_of_council_xon = {
+				has_country_flag = player_is_vin
+			}
+		}
+        localisation_key = PlayerIsVin
+    }
+    text = {
+        localisation_key = CoXempty
+    }
+}
+
+defined_text = {
+	name = PlayerVoteMor
+	random = no
+	
+    text = {
+		trigger = {
+			event_target:conductor_of_council_xon = {
+				has_country_flag = morian_player_vote
+			}
+		}
+        localisation_key = PlayerVoted
+    }
+    text = {
+        localisation_key = CoXempty
+    }
+}
+defined_text = {
+	name = PlayerVoteDelk
+	random = no
+	
+    text = {
+		trigger = {
+			event_target:conductor_of_council_xon = {
+				has_country_flag = delkian_player_vote
+			}
+		}
+        localisation_key = PlayerVoted
+    }
+    text = {
+        localisation_key = CoXempty
+    }
+}
+defined_text = {
+	name = PlayerVoteVin
+	random = no
+	
+    text = {
+		trigger = {
+			event_target:conductor_of_council_xon = {
+				has_country_flag = vinian_player_vote
+			}
+		}
+        localisation_key = PlayerVoted
+    }
+    text = {
+        localisation_key = CoXempty
+    }
+}
+defined_text = {
+	name = PlayerVoteShir
+	random = no
+	
+    text = {
+		trigger = {
+			event_target:conductor_of_council_xon = {
+				has_country_flag = shirian_player_vote
+			}
+		}
+        localisation_key = PlayerVoted
+    }
+    text = {
+        localisation_key = CoXempty
+    }
+}

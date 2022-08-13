@@ -238,7 +238,7 @@
  SKTFormMoxon: "Country changes to @MOX §YMoxon§!."
  SKTAddNewTradeCenters: "§Y2§! random owned Centers of Trade will be §Gupgraded§!."
  SKTAutonomyStroktur: "Every owned province in the §YStroktur§! Region loses §G-20.00%§! Local Autonomy."
- eclipseExplainBranches: "§RThis is a branching mission tree. The extended missions can only be obtained after completing 'The Eclipse' event.§!\n\n@NAF §YNafan Missions§! can be obtained by forming §YNafa§! during '§YThe Eclipse§!' event.\n\n@KLG §YKalargan Missions§! can be obtained by forming §YKalarga§! during '§YThe Kalargan Revolt§!' event.\n\n@SKT / @MOX §YMaxan Strokturi Missions§! can be obtained by remaining in the §YMaxan§! culture group during the '§YFading Cultural Ties§!' event.\n\n@SKT / @EST §YEmastalian Strokturi Missions§! can be obtained by moving to the §YEmastalian§! culture group during the '§YFading Cultural Ties§!' event."
+ eclipseExplainBranches: "§RThis is a branching mission tree. The extended missions can only be obtained after completing 'The Eclipse' event, except for Kalargan Missions, which can be obtained earlier.§!\n\n@NAF §YNafan Missions§! can be obtained by forming §YNafa§! during '§YThe Eclipse§!' event.\n\n@KLG §YKalargan Missions§! can be obtained by forming §YKalarga§! during '§YThe Kalargan Revolt§!' event.\n\n@SKT / @MOX §YMaxan Strokturi Missions§! can be obtained by remaining in the §YMaxan§! culture group during the '§YFading Cultural Ties§!' event.\n\n@SKT / @EST §YEmastalian Strokturi Missions§! can be obtained by moving to the §YEmastalian§! culture group during the '§YFading Cultural Ties§!' event."
  delSixanSubjWarning: "§YWe will launch Raids against Vinian Provinces. This may anger Sixan and cause them to retaliate.§!"
  delSixanSubj: "@SIX §YSixan§! gain §YSubjugation§! Casus Belli on §Y[Root.GetName]§!"
  desertMigrateTroll: "Do NOT own more than §Y1§! province"
@@ -303,6 +303,41 @@
  CapitalVinInvited: "§Y@[vinian_representative.GetTag] [vinian_representative.GetName]§! will represent the §YVinian§! faith."
  NationVinInvited: "§Y@[vinian_representative.GetTag] [vinian_representative.GetName]§! will represent the §YVinian§! faith."
  BishopsVinInvited: "An independent §YCouncil of Bishops§! will represent the §YVinian§! faith."
+
+ BishopsXon: "A Council of Bishops"
+ COUNCIL_XON_START: "The §YCouncil of Xon§! will begin. All Xalian-Religious nations can view the status of the council via the decisions menu. If a consensus is not reached in §Y10 years§!, the council will automatically expire."
+
+ CouncilXonYes: "£yes£ agree"
+ CouncilXonNo: "£no£ disagree"
+
+ SEE_COUNCIL: "The Council of Xon is an attempt by representatives of all four major Xalian religions to restore the old preschism faith. It can succeed when at least 3/4 of the delegations agree, and the agreeing delegations' respective religions account for 80% of development in Ga Xal."
+ ShirXonReasons: "\nShirian is represented by §Y[GetAppropriateTagShir]§!.\nAs of now, Shirian has [checkAcceptShir]d with our proposal.\nPositive: §G[Root.ShirXonReasonsPos.GetValue]§!\nNegative: §R[Root.ShirXonReasonsNeg.GetValue]§!\n\nWe need at least §Y1§! more §Gpositive§! than §Rnegative§! reasons for an acceptance.\n\n[PlayerVoteShir][GetPlayerShir][GetShirVinBrotherhood]\n\n"
+ VinXonReasons: "\nVinian is represented by §Y[GetAppropriateTagVin]§!.\nAs of now, Vinian has [checkAcceptVin]d with our proposal.\nPositive: §G[Root.VinXonReasonsPos.GetValue]§!\nNegative: §R[Root.VinXonReasonsNeg.GetValue]§!\n\nWe need at least §Y1§! more §Gpositive§! than §Rnegative§! reasons for an acceptance.\n\n[PlayerVoteVin][GetPlayerVin][GetShirVinBrotherhood]\n\n"
+ MorXonReasons: "\nMorian is represented by §Y[GetAppropriateTagMor]§!.\nAs of now, Morian has [checkAcceptMor]d with our proposal.\nPositive: §G[Root.MorXonReasonsPos.GetValue]§!\nNegative: §R[Root.MorXonReasonsNeg.GetValue]§!\n\nWe need at least §Y1§! more §Gpositive§! than §Rnegative§! reasons for an acceptance.\n\n[PlayerVoteMor][GetPlayerMor]\n\n[MorianMonotheismCox]"
+ DelkXonReasons: "\nDelkian is represented by §Y[GetAppropriateTagDelk]§!.\nAs of now, Delkian has [checkAcceptDelk]d with our proposal.\nPositive: §G[Root.DelkXonReasonsPos.GetValue]§!\nNegative: §R[Root.DelkXonReasonsNeg.GetValue]§!\n\nWe need at least §Y1§! more §Gpositive§! than §Rnegative§! reasons for an acceptance.\n\n[PlayerVoteDelk][GetPlayerDelk]\n\n"
+ PlayerReasonsShir: "This nation is controlled by a player. They may choose their position on their own whims.\nd our proposal."
+ PlayerReasonsMor: "This nation is controlled by a player. They may choose their position on their own whims.\nAs of now, Morian has [checkAcceptMor]d our proposal."
+ PlayerReasonsDelk: "This nation is controlled by a player. They may choose their position on their own whims.\nAs of now, Delkian has [checkAcceptDelk]d our proposal."
+ PlayerReasonsVin: "This nation is controlled by a player. They may choose their position on their own whims.\nAs of now, Vinian has [checkAcceptVin]d our proposal."
+
+ SHIR_REASONS: "[Rootplayer_or_no_council_shir]"
+ MOR_REASONS: "[Rootplayer_or_no_council_mor]"
+ VIN_REASONS: "[Root.player_or_no_council_vin]"
+ DELK_REASONS: "[Rootplayer_or_no_council_delk]"
+
+ ShirRep: "[shirian_representative.GetName]"
+ VinRep: "[vinian_representative.GetName]"
+ MorRep: "[morian_representative.GetName]"
+ DelkRep: "[delkian_representative.GetName]"
+
+ CoXempty: "" # for when a modifier isnt fulfilled
+ ShirVinBrotherhood: "\nShirian-Vinian Brotherhood: §G+25§!" #POSITIVE
+ MorianMonotheismCox: "\nMorian is a Monotheistic religion: §R-100§!"
+ PlayerIsShir: "\nStarted the Council: §G+1000§!"
+ PlayerIsVin: "\nStarted the Council: §G+1000§!"
+ PlayerIsMor: "\nStarted the Council: §G+1000§!"
+ PlayerIsDelk: "\nStarted the Council: §G+1000§!"
+ PlayerVoted: "\nPlayer Voted Yes: §G+1000§!"
 
  TONMO_SCHOOLS_SCHISM: "Relations between the §YTribal§! and §YEvangelical§! schools will worsen.\nRelations between the §YTribal§! and §YLiturgical§! schools will worsen.\n Relations between the §YLitugical§! and §YEvangelical§! schools will improve."
 
