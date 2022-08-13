@@ -144,6 +144,7 @@ country_event = {
 country_event = {
 	id = lukscham.4
 	picture = NUSANTARA_QUEEN_eventPicture
+	picture = FEMALES_eventpicture
 	title = lukscham.4.t
 	desc = lukscham.4.d
 	is_triggered_only = yes
@@ -238,4 +239,28 @@ country_event = {
 		remove_government_reform = lukscha_tribe
 		add_government_reform = lukscha_forum
     }
+}
+
+country_event = { #give heirs
+	id = lukscham.6
+	hidden = yes
+
+	trigger = {
+		has_reform = lukscha_tribe
+		NOT = { has_heir = yes }
+	}
+
+	mean_time_to_happen = {
+		days = 30
+	}
+
+	immediate = {
+		country_event = {
+			id = lukscham.4
+		}
+	}
+
+	option = {
+		name = troll
+	}
 }

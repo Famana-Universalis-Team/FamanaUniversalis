@@ -33,6 +33,38 @@ on_startup = {
 		value = religion
 		who = ROOT
 	}
+	set_variable = {
+		which = ShirXonReasonsPos
+		value = 0
+	}
+	set_variable = {
+		which = MorXonReasonsPos
+		value = 0
+	}
+	set_variable = {
+		which = VinXonReasonsPos
+		value = 0
+	}
+	set_variable = {
+		which = DelkXonReasonsPos
+		value = 0
+	}
+	set_variable = {
+		which = ShirXonReasonsNeg
+		value = 0
+	}
+	set_variable = {
+		which = MorXonReasonsNeg
+		value = 0
+	}
+	set_variable = {
+		which = VinXonReasonsNeg
+		value = 0
+	}
+	set_variable = {
+		which = DelkXonReasonsNeg
+		value = 0
+	}
 	#set_variable = {
 	#	which = otherGuyMil
 	#	value = 0
