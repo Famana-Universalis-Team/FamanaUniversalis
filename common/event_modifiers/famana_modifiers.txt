@@ -1567,3 +1567,16 @@ agx_united_moxon = {
     development_cost = -0.10
     prestige = 1
 }
+
+nrv_religion_questioned = {
+	global_missionary_strength = -0.01
+	church_influence_modifier = -0.1
+	global_religious_conversion_resistance = -0.1
+}
+
+nrv_religion_confirmed = {
+	global_missionary_strength = 0.01
+	church_influence_modifier = 0.1
+	tolerance_own = 1
+	global_religious_conversion_resistance = 1
+}

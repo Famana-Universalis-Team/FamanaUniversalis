@@ -2327,6 +2327,8 @@ mea_dizz_castle = {
 			OR = {
 				primary_culture = Laglan
 				primary_culture = Feniki
+				accepted_culture = Laglan
+				accepted_culture = Feniki
 			}
 		}
 	}
@@ -2347,6 +2349,8 @@ mea_dizz_castle = {
 			OR = {
 				primary_culture = Laglan
 				primary_culture = Feniki
+				accepted_culture = Laglan
+				accepted_culture = Feniki
 			}
 		}
 	}
@@ -2357,6 +2361,8 @@ mea_dizz_castle = {
 			OR = {
 				primary_culture = Laglan
 				primary_culture = Feniki
+				accepted_culture = Laglan
+				accepted_culture = Feniki
 			}
 		}
 	}
@@ -2440,7 +2446,6 @@ mea_dizz_castle = {
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
 			local_defensiveness = 0.35
-			fort_level = 2
 			local_unrest = -2
 			fort_maintenance_modifier = -1
 		}
@@ -2476,7 +2481,6 @@ mea_dizz_castle = {
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
 			local_defensiveness = 0.45
-			fort_level = 3
 			local_unrest = -3
 		}
 

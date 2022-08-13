@@ -495,3 +495,140 @@ country_event = {
         }
     }
 }
+
+#expedition to find the ice gods - 1
+country_event = {
+	id = naravam.9
+	title = naravam.9.t
+	picture = STREET_SPEECH_eventPicture
+	desc = naravam.9.d
+    fire_only_once = yes
+	
+	trigger = {
+        religion = naravami
+		is_year = 350
+	}
+	
+	mean_time_to_happen = {
+		months = 65
+	}
+
+    option = {
+		name = naravam.8.a
+		add_adm_power = -15
+		hidden_effect = {
+			random_list = {
+				1 = {
+					country_event = { 
+						id = naravam.9
+						days = 100
+						random = 265
+					}
+				}
+				1 = {
+					country_event = { 
+						id = naravam.10
+						days = 100
+						random = 265
+					}
+				}
+				1 = {
+					country_event = { 
+						id = naravam.11
+						days = 100
+						random = 265
+					}
+				}
+			}
+		}
+    }
+	
+	option = {
+		name = naravam.8.a
+        add_prestige = 5
+    }
+	
+	option = {
+		name = naravam.8.a
+		add_prestige = -15
+		change_religion = lathvy
+    }
+}
+
+#expedition to find the ice gods - 2 - they do not return
+country_event = {
+	id = naravam.9
+	title = naravam.9.t
+	picture = NATIVES_eventPicture
+	desc = naravam.9.d
+    fire_only_once = yes
+	is_triggered_only = yes
+
+    option = {
+		name = naravam.9.a
+		add_stability = -1
+    }	
+	
+	option = {
+		name = naravam.9.a
+		add_dip_power = -25
+		add_legitimacy = -10
+    }
+}
+
+#expedition to find the ice gods - 2 - they do not find the gods
+country_event = {
+	id = naravam.10
+	title = naravam.10.t
+	picture = WOUNDED_SOLDIERS_eventPicture
+	desc = naravam.10.d
+    fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = naravam.10.b
+		add_treasury = 35
+		add_country_modifier = {
+			name = nrv_religion_questioned
+			duration = 1600
+		}
+    }
+	
+	option = {
+		name = naravam.10.b
+		add_treasury = 35
+		add_years_of_income = -0.25
+		add_legitimacy = -10
+    }
+	
+}
+
+#expedition to find the ice gods - 2 - they find the gods
+country_event = {
+	id = naravam.11
+	title = naravam.11.t
+	picture = EXPLORERS_eventPicture
+	desc = naravam.11.d
+    fire_only_once = yes
+	is_triggered_only = yes
+
+    option = {
+		name = naravam.11.a
+		add_stability = 1
+		add_country_modifier = {
+			name = nrv_religion_confirmed
+			duration = 1600
+		}
+    }	
+	
+	option = {
+		name = naravam.11.a
+		add_years_of_income = 0.5
+		add_prestige = 50
+		add_stability = 1
+		add_country_modifier = {
+			name = nrv_religion_confirmed
+			duration = 1600
+		}
+    }
+}

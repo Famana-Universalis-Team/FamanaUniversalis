@@ -154,6 +154,19 @@ estate_church =
 		}
 	}
 	
+	custom_name = {
+		desc = estate_shamans
+		trigger = {
+			OR = {
+				religion_group = north_estali
+				religious_school = {
+					group = tonmo_group
+					school = tribal_school
+				}
+			}
+		}
+	}
+	
 
 	contributes_to_curia_treasury = yes
 	color = { 200 150 0 }
