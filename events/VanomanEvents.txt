@@ -774,3 +774,70 @@ country_event = { #Lathvy
         custom_tooltip = vanoma_accept_lathvy
     }
 }
+
+country_event = { #Pick New king
+    id = vanoma.14
+    title = vanoma.14.t
+    desc = vanoma.14.desc
+    picture = NUSANTARA_THRONE_eventPicture
+
+    is_triggered_only = yes
+
+    immediate = {
+		set_saved_name = {
+			key = heir1
+			type = advisor
+			scope = ROOT
+		}
+		set_saved_name = {
+			key = heir2
+			type = advisor
+			scope = ROOT
+		}
+		set_saved_name = {
+			key = heir3
+			type = advisor
+			scope = ROOT
+		}
+	}
+
+	option = {
+        name = vanoma.14.a
+        ai_chance = { factor = 1 }
+		hidden_effect = {
+			kill_heir = {
+				allow_new_heir = no
+			}
+		}
+		define_heir = {
+			name = heir3
+			claim = 100
+		}
+    }
+	option = {
+        name = vanoma.14.b
+        ai_chance = { factor = 1 }
+		hidden_effect = {
+			kill_heir = {
+				allow_new_heir = no
+			}
+		}
+		define_heir = {
+			name = heir2
+			claim = 100
+		}
+    }
+	option = {
+        name = vanoma.14.c
+        ai_chance = { factor = 1 }
+		hidden_effect = {
+			kill_heir = {
+				allow_new_heir = no
+			}
+		}
+		define_heir = {
+			name = heir1
+			claim = 100
+		}
+    }
+}

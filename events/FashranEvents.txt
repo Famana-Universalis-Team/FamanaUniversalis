@@ -3079,3 +3079,46 @@ country_event = { #The Tonmo Golden Age
         set_global_flag = TonmoGoldenAge
     }
 }
+
+
+country_event = { #Croatian is injured
+    id = fashros.37
+    title = fashros.37.t
+    desc = fashros.37.d
+    picture = IMPALED_SOLDIERS_eventPicture
+    major = yes
+    major_trigger = {
+        OR = { #only people who will care can hear about it
+            capital_scope = {
+                superregion = jasua_superregion
+            }
+            war_with = FAS
+            is_neighbor_of = FAS
+        }
+    }
+    fire_only_once = yes
+    is_triggered_only = yes
+
+    option = {
+        name = fashros.37.a
+        ai_chance = {
+            factor = 1
+        }
+        set_ruler_flag = purified
+        random_list = {
+            1 = {
+                change_dip = -1
+            }
+            1 = {
+                change_mil = -1
+            }
+            1 = {
+                change_adm = -1
+            }
+        }
+        add_country_modifier = {
+            name = fas_croatian_injured
+            duration = 1825
+        }
+    }
+}

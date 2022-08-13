@@ -525,3 +525,24 @@ kachik_monarchy = {
 		nobles_influence_modifier = 0.10
 	}
 }
+
+vanoman_elective_monarchy = {
+	icon = "ordican_senate"
+	allow_normal_conversion = no
+	valid_for_nation_designer = yes
+	potential = {
+		tag = VAN
+	}
+	legacy_equivalent = despotic_monarchy
+	can_change_primary_culture = no
+	modifiers = {
+		legitimacy = 1
+		max_absolutism = -30
+		prestige_decay = -0.20
+	}
+	custom_attributes = {
+		has_parliament = yes
+		heir = no
+		royal_marriage = no
+	}
+}

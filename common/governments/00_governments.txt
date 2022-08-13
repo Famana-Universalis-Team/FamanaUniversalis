@@ -12,7 +12,7 @@ monarchy = {
 				rajput_kingdom
 				bureaucratic_monarchy
 				#Specific:
-				geq_reform
+				vanoman_elective_monarchy
 				grand_duchy_reform
 				daimyo
 				indep_daimyo
@@ -64,6 +64,7 @@ monarchy = {
 				imperial_nobility_reform
 				four_tribe_rule_m
 				ordican_senate
+				geq_reform
 			}
 		}
 		bureaucracy = {

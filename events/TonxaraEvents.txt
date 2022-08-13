@@ -3976,3 +3976,96 @@ country_event = { #noreligion fix
         ai_chance = { factor = 1 }
     }
 }
+
+country_event = { #Religious Falling Out
+    id = tonxara.21
+    title = tonxara.21.t
+    picture = PROTESTANT_CATHOLIC_DEBATE_eventPicture
+    desc = tonxara.21.d
+    fire_only_once = yes
+
+    trigger = {
+        has_dlc = "Cradle of Civilisation"
+        has_global_flag = TonmoGoldenAge
+        FAS = { exists = no }
+        religion = tonmo
+        capital_scope = {
+            superregion = jasua_superregion
+        }
+    }
+
+    mean_time_to_happen = {
+        years = 5
+    }
+
+    immediate = {
+    }
+
+    option = {
+        name = tonxara.21.a
+        ai_chance = { factor = 1 }
+        custom_tooltip = TONMO_SCHOOLS_SCHISM
+        hidden_effect = {
+            random_country = { #Tribal is hated by Liturgical
+                limit = {
+                    religious_school = {
+                        group = tonmo_group
+                        school = tribal_school
+                    }
+                }
+                random_country = {
+                    limit = {
+                        religious_school = {
+                            group = tonmo_group
+                            school = liturgical_school
+                        }
+                    }
+                    set_school_opinion = {
+                        who = PREV
+                        opinion = -1
+                    }
+                }
+            }
+            random_country = { #Tribal is hated by Evangelical
+                limit = {
+                    religious_school = {
+                        group = tonmo_group
+                        school = tribal_school
+                    }
+                }
+                random_country = {
+                    limit = {
+                        religious_school = {
+                            group = tonmo_group
+                            school = evangelical_school
+                        }
+                    }
+                    set_school_opinion = {
+                        who = PREV
+                        opinion = -1
+                    }
+                }
+            }
+            random_country = { #Evangelical is liked by Liturgical
+                limit = {
+                    religious_school = {
+                        group = tonmo_group
+                        school = evangelical_school
+                    }
+                }
+                random_country = {
+                    limit = {
+                        religious_school = {
+                            group = tonmo_group
+                            school = liturgical_school
+                        }
+                    }
+                    set_school_opinion = {
+                        who = PREV
+                        opinion = 1
+                    }
+                }
+            }
+        }
+    }
+}

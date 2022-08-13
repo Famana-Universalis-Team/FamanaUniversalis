@@ -455,6 +455,13 @@ delkia_4 = {
 				limit = {
 					exists = SIX
 				}
+				custom_tooltip = delSixanSubjWarning
+				5455 = {
+					add_devastation = 10
+				}
+				5457 = {
+					add_devastation = 10
+				}
 				custom_tooltip = delSixanSubj
 				hidden_effect = {
 					SIX = {
@@ -474,6 +481,7 @@ delkia_4 = {
 				add_permanent_claim = ROOT
 			}
 			add_army_tradition = 10
+			add_years_of_income = 0.25
 		}
     }
 	

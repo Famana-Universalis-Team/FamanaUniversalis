@@ -239,6 +239,7 @@
  SKTAddNewTradeCenters: "§Y2§! random owned Centers of Trade will be §Gupgraded§!."
  SKTAutonomyStroktur: "Every owned province in the §YStroktur§! Region loses §G20.0%§! autonomy."
  eclipseExplainBranches: "§RThis is a branching mission tree. The extended missions can only be obtained after completing 'The Eclipse' event.§!\n\n@NAF §YNafan Missions§! can be obtained by forming §YNafa§! during '§YThe Eclipse§!' event.\n\n@KLG §YKalargan Missions§! can be obtained by forming §YKalarga§! during '§YThe Kalargan Revolt§!' event.\n\n@SKT / @MOX §YMaxan Strokturi Missions§! can be obtained by remaining in the §YMaxan§! culture group during the '§YFading Cultural Ties§!' event.\n\n@SKT / @EST §YEmastalian Strokturi Missions§! can be obtained by moving to the §YEmastalian§! culture group during the '§YFading Cultural Ties§!' event."
+ delSixanSubjWarning: "§YWe will launch Raids against Vinian Provinces. This may anger Sixan and cause them to retaliate.§!"
  delSixanSubj: "@SIX §YSixan§! gain §YSubjugation§! Casus Belli on §Y[Root.GetName]§!"
  desertMigrateTroll: "Do NOT own more than §Y1§! province"
  pexGetCBonLag: "§Y[Root.GetName]§! gain §YSubjugation§! Casus Belli on @LAG §YLaglon§!."
@@ -302,3 +303,5 @@
  CapitalVinInvited: "§Y@[vinian_representative.GetTag] [vinian_representative.GetName]§! will represent the §YVinian§! faith."
  NationVinInvited: "§Y@[vinian_representative.GetTag] [vinian_representative.GetName]§! will represent the §YVinian§! faith."
  BishopsVinInvited: "An independent §YCouncil of Bishops§! will represent the §YVinian§! faith."
+
+ TONMO_SCHOOLS_SCHISM: "Relations between the §YTribal§! and §YEvangelical§! schools will worsen.\nRelations between the §YTribal§! and §YLiturgical§! schools will worsen.\n Relations between the §YLitugical§! and §YEvangelical§! schools will improve."

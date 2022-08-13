@@ -99,7 +99,7 @@ for x in range(0,100):
     Obstruent Onset: p, t, k, q, z, s, ç, qy
     Sonorant Onset: h, f, v, m, n, l, j
     Onset liquid if obstruent: l, j, f (v if z). Only if obstruent onset
-    Coda: ñ (next syllable must begin with V), z, s, h, f, v, m, n, l, j
+    Coda: n (next syllable must begin with V), z, s, h, f, v, m, n, l, j
     Plosive Coda: p, t, k, q, ', ç, qy
         Plosive clusters must always be front to back -> ie. pt, tk, kq, q' are allowed but say, pq or kt aren't. Affricates don't form clusters.
     Front vowels: a, e, i, y, ÿ, ai
@@ -145,12 +145,12 @@ for x in range(0,100):
 '''
 
 '''Kachik - CCCVCCC based on slavic languages
-    Consonants: p, b, t, d, k, g, m, n, ñ, c, c', j, j', s, z, s', z', h, v, f, y, l, l', r
+    Consonants: p, b, t, d, k, g, m, n, n, c, c', j, j', s, z, s', z', h, v, f, y, l, l', r
     Liquids: y, l, l', r
     Unvoiced Stops: p, t, k, c, j
     Voiced Stops: b, d, g, c', j'
     Unvoiced Fricatives: s, s', f, h
-    Voiced Fricatives: m, n, ñ, z, z', v
+    Voiced Fricatives: m, n, n, z, z', v
     Short Vowels: a, e, i, o, u, y
     Long Vowels: á, é, í, ó, ú, ý
     Structures:
