@@ -148,17 +148,27 @@ eclipse_3 = {
             #    tag = KLG
             #}
             #else = {
-                custom_trigger_tooltip = {
-                    tooltip = ECLIPSE_FIRED_MISSION
-                    OR = {
-                        has_country_flag = getNafanMissions
-                        has_country_flag = getKalarganMissions
-                        has_country_flag = getStrokturMissions
+                OR = {
+                    custom_trigger_tooltip = {
+                        tooltip = ECLIPSE_FIRED_MISSION
+                        OR = {
+                            has_country_flag = getNafanMissions
+                            has_country_flag = getKalarganMissions
+                            has_country_flag = getStrokturMissions
+                        }
                     }
+                    tag = KLG
                 }
             #}
         }
         effect = {
+            set_country_flag = removeBranchingSKT
+            if = {
+                limit = {
+                    has_country_flag = getKalarganMissionsCounter
+                }
+                clr_country_flag = getKalarganMissionsCounter
+            }
             if = {
                 limit = {
                     has_country_flag = getNafanMissions
@@ -169,7 +179,23 @@ eclipse_3 = {
             else = {
                 if = {
                     limit = {
-                        has_country_flag = getKalarganMissions
+                        OR = {
+                            AND = {
+                                has_country_flag = getKalarganMissions
+                                NOT = {
+                                    has_country_flag = getNafanMissions
+                                }
+                            }
+                            AND = {
+                                tag = KLG
+                                NOT = {
+                                    OR = {
+                                        has_country_flag = getNafanMissions
+                                        has_country_flag = getStrokturMissions
+                                    }
+                                }
+                            }
+                        }
                     }
                     custom_tooltip = eclipseGetMissionsKLG
                     hidden_effect = { swap_non_generic_missions = yes }
@@ -205,19 +231,12 @@ eclipse_branching_temp = {
     has_country_shield = no
     potential = {
         NOT = { map_setup = map_setup_random }
-		#OR = {
-            tag = SKT
-        #    tag = NAF
-        #    tag = KLG
-        #}
         NOT = {
-            OR = {
-                has_country_flag = getNafanMissions
-                has_country_flag = getKalarganMissions
-                has_country_flag = getStrokturMissions
-                #tag = NAF
-                #tag = KLG
-            }
+            has_country_flag = removeBranchingSKT
+        }
+		OR = {
+            tag = SKT
+            tag = KLG
         }
     }
 
@@ -4192,10 +4211,8 @@ kalarga_1 = {
     ai = yes
     potential = {
         NOT = { map_setup = map_setup_random }
-        OR = {
-            tag = KLG
-            has_country_flag = getKalarganMissions
-        }
+        has_country_flag = getKalarganMissions
+        NOT = { has_country_flag = getKalarganMissionsCounter }
     }
     has_country_shield = yes
 
@@ -4315,10 +4332,8 @@ kalarga_2 = {
     ai = yes
     potential = {
         NOT = { map_setup = map_setup_random }
-        OR = {
-            tag = KLG
-            has_country_flag = getKalarganMissions
-        }
+        has_country_flag = getKalarganMissions
+        NOT = { has_country_flag = getKalarganMissionsCounter }
     }
     has_country_shield = yes
 
@@ -4455,10 +4470,8 @@ kalarga_3 = {
     ai = yes
     potential = {
         NOT = { map_setup = map_setup_random }
-        OR = {
-            tag = KLG
-            has_country_flag = getKalarganMissions
-        }
+        has_country_flag = getKalarganMissions
+        NOT = { has_country_flag = getKalarganMissionsCounter }
     }
     has_country_shield = yes
 
@@ -4684,10 +4697,8 @@ kalarga_4 = {
     ai = yes
     potential = {
         NOT = { map_setup = map_setup_random }
-        OR = {
-            tag = KLG
-            has_country_flag = getKalarganMissions
-        }
+        has_country_flag = getKalarganMissions
+        NOT = { has_country_flag = getKalarganMissionsCounter }
     }
     has_country_shield = yes
 
@@ -4830,10 +4841,8 @@ kalarga_5 = {
     ai = yes
     potential = {
         NOT = { map_setup = map_setup_random }
-        OR = {
-            tag = KLG
-            has_country_flag = getKalarganMissions
-        }
+        has_country_flag = getKalarganMissions
+        NOT = { has_country_flag = getKalarganMissionsCounter }
     }
     has_country_shield = yes
 

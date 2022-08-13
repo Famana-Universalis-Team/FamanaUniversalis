@@ -258,6 +258,7 @@ country_event = {
 				days = 1
 			}
 		}
+		# KALARGA->NAFA HAS BEEN REMOVED.
 		#First, check if Kalarga exists. Kalarga gets priority for Nafa.
 		KLG = {
 			if = {
@@ -784,6 +785,11 @@ country_event = {
 	option = {
 		name = jasua.14.a
 		ai_chance = { factor = 1 }
+		trigger = {
+			NOT = {
+				mission_completed = eclipse_the_eclipse
+			}
+		}
 		change_tag = NAF
 		set_country_flag = getNafanMissions
 		country_event = { id = ideagroups.1 } #Swap Ideas
@@ -850,7 +856,8 @@ country_event = {
 				leader_dynasty = "Noy"
 			}
 		}
-		set_country_flag = getKalarganMissions
+		#set_country_flag = getKalarganMissions
+		set_country_flag = getKalarganMissionsCounter
 	}
 }
 
@@ -1315,9 +1322,9 @@ country_event = { #Kalargan uprising
 	}
 
 	mean_time_to_happen = {
-		months = 180
+		months = 4380
 		modifier = {
-			factor = 2.0
+			factor = 2.5
 			mission_completed = eclipse_healing_the_rift
 		}
 	}
@@ -1402,6 +1409,7 @@ country_event = { #Kalargan uprising
 		}
 		add_prestige = -50
 		add_legitimacy = -25
+		set_country_flag = getKalarganMissions
 	}
 }
 
