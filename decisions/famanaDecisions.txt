@@ -707,4 +707,42 @@ country_decisions = {
             }
 		}
     }
+
+    destroy_the_colossus = {
+        potential = {
+            OR = {
+                tag = KLG
+                tag = YLL
+                tag = RCK
+            }
+            owns_core_province = 5361
+            5361 = {
+                OR = {
+                    has_great_project = {
+                        type = agixion_colossus
+                        tier = 1
+                    }
+                    has_great_project = {
+                        type = agixion_colossus
+                        tier = 2
+                    }
+                    has_great_project = {
+                        type = agixion_colossus
+                        tier = 3
+                    }
+                }
+            }
+            has_dlc = "Leviathan"
+		}
+		allow = {
+		}
+		effect = {
+            country_event = {
+                id = nafa.15
+            }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+    }
 }

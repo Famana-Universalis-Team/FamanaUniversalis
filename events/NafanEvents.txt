@@ -751,3 +751,26 @@ country_event = { #Kalargan culture
         }
     }
 }
+
+country_event = { #Colossus Destroyed
+    id = nafa.15
+    title = nafa.15.t
+    desc = nafa.15.d
+    picture = EP_ISLAND_eventPicture
+    fire_only_once = yes
+    is_triggered_only = yes
+
+    option = {
+        name = nafa.15.a
+        ai_chance = { factor = 1 }
+        5361 = {
+            destroy_great_project = {
+                type = agixion_colossus
+            }
+            add_province_modifier = {
+                name = klg_stil_daniil
+                duration = -1
+            }
+        }
+    }
+}
