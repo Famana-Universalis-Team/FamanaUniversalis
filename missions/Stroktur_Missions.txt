@@ -135,7 +135,7 @@ eclipse_3 = {
             tag = KLG
         }
     }
-    has_country_shield = yes
+    has_country_shield = no
 
     eclipse_the_eclipse = {
         icon = naf_eclipse_icon
@@ -202,6 +202,7 @@ eclipse_branching_temp = {
     slot = 3
     generic = no
     ai = yes
+    has_country_shield = no
     potential = {
         NOT = { map_setup = map_setup_random }
 		#OR = {
@@ -512,7 +513,7 @@ stroktur_branching = {
             }
         }
     }
-    has_country_shield = yes
+    has_country_shield = no
 
     stroktur_branching_1 = {
         icon = mission_unknown_mission

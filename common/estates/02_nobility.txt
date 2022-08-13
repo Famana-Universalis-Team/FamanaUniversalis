@@ -412,6 +412,12 @@ estate_nobles =
 			tag = KON
 		}
 	}
+	custom_name = {
+		desc = estate_eiawal
+		trigger = {
+			tag = VAN
+		}
+	}
 	
 	color = { 200 0 50 }
 	

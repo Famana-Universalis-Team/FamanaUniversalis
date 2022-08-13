@@ -97,13 +97,13 @@ country_decisions = {
                 }
             }
 			NOT = { has_reform = geq_reform }
-			NOT = {
-				alliance_with = FAS
-			}
         }
         allow = {
             is_free_or_tributary_trigger = yes
 			dip = 2
+			NOT = {
+				alliance_with = FAS
+			}
         }
         effect = {
             add_government_reform = geq_reform

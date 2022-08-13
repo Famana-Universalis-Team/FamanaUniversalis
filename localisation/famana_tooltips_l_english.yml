@@ -237,7 +237,7 @@
  SKTFormEmastalia: "Country changes to @EST §YEmastaly§!."
  SKTFormMoxon: "Country changes to @MOX §YMoxon§!."
  SKTAddNewTradeCenters: "§Y2§! random owned Centers of Trade will be §Gupgraded§!."
- SKTAutonomyStroktur: "Every owned province in the §YStroktur§! Region loses §G20.0%§! autonomy."
+ SKTAutonomyStroktur: "Every owned province in the §YStroktur§! Region loses §G-20.00%§! Local Autonomy."
  eclipseExplainBranches: "§RThis is a branching mission tree. The extended missions can only be obtained after completing 'The Eclipse' event.§!\n\n@NAF §YNafan Missions§! can be obtained by forming §YNafa§! during '§YThe Eclipse§!' event.\n\n@KLG §YKalargan Missions§! can be obtained by forming §YKalarga§! during '§YThe Kalargan Revolt§!' event.\n\n@SKT / @MOX §YMaxan Strokturi Missions§! can be obtained by remaining in the §YMaxan§! culture group during the '§YFading Cultural Ties§!' event.\n\n@SKT / @EST §YEmastalian Strokturi Missions§! can be obtained by moving to the §YEmastalian§! culture group during the '§YFading Cultural Ties§!' event."
  delSixanSubjWarning: "§YWe will launch Raids against Vinian Provinces. This may anger Sixan and cause them to retaliate.§!"
  delSixanSubj: "@SIX §YSixan§! gain §YSubjugation§! Casus Belli on §Y[Root.GetName]§!"
@@ -247,7 +247,7 @@
  giru_not_destroyed: "The Giru Tower has not been destroyed."
  pawaniPyramidsRelit: "The Pyramids of Pextum are relit."
  klgArmyTradForGenerals: "Gain §G1.0§! Army Tradition for every General recruited."
- klgIfCav: "If we complete this mission while having at least §Y12§! Cavalry:\nKalarga gets '§YIntegrated Cavalry§!' until the end of the game, giving the following effects:\nCavalry Combat Ability: §G10.0%§!\nCavalry to Infantry Ratio: §G15.0%§!"
+ klgIfCav: "If we complete this mission while having at least §Y12§! Cavalry:\nKalarga gets '§YIntegrated Cavalry§!' until the end of the game, giving the following effects:\nCavalry Combat Ability: §G+10.0%§!\nCavalry to Infantry Ratio: §G+15.0%§!"
  relightPPtooltip: "Have the great project §YPyramids of Pextum§! at §YTier 1§! or higher"
  DOMINATE_MOXON_KLG: "Domination of the Eastern Gomic"
  alyminTooltip: "Every known §YGrain§! Province gets §YThe Codex Alymin§! for §Y10 years§!, giving the following effects:\nGoods Produced: §G+10.0%§!\n"
@@ -305,3 +305,8 @@
  BishopsVinInvited: "An independent §YCouncil of Bishops§! will represent the §YVinian§! faith."
 
  TONMO_SCHOOLS_SCHISM: "Relations between the §YTribal§! and §YEvangelical§! schools will worsen.\nRelations between the §YTribal§! and §YLiturgical§! schools will worsen.\n Relations between the §YLitugical§! and §YEvangelical§! schools will improve."
+
+ didOforogEvent: "The event '§YOforog's Insanity§!' has happened."
+ agxSKTsubj: "§Y[Root.GetName]§! gain §YSubjugation§! Casus Belli on @SKT §YStroktur§!."
+ gaxal4aTT: "Gain §R+25.00%§! Local Autonomy in every owned §YMorian§! province.\nEvery owned §YMorian§! province gets '§YMorian Fervor§!' for §Y10 years§!, giving the following effects:\nLocal Missionary Strength: §R-3.0%§!"
+ gaxal4bTT: "Gain §R12.00§! unrest in every owned §YMorian§! province."

@@ -1,6 +1,6 @@
 xalian_religious_missions = {
 	slot = 5
-	has_country_shield = yes
+	has_country_shield = no
 	
 	generic = yes
 	
@@ -13,8 +13,16 @@ xalian_religious_missions = {
 		trigger = {
             AND = {
                 religion_group = xalian_group
-                religious_unity	= 0.75
-                num_of_active_blessings	= 4
+				if = {
+					limit = {
+						has_dlc = "Rights of Man"
+					}
+					religious_unity	= 0.75
+                	num_of_active_blessings	= 4
+				}
+				else = {
+					religious_unity = 1.0
+				}
                 owns_core_province = 5388
                 owns_core_province = 5458
                 owns_core_province = 5163

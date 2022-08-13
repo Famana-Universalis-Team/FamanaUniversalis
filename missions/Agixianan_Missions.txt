@@ -1,0 +1,160 @@
+
+agx_1 = {
+    slot = 1
+    generic = no
+    ai = yes
+    potential = {
+        NOT = { map_setup = map_setup_random }
+		tag = AGX
+    }
+    has_country_shield = yes
+
+    agx_oust_the_mad_king = {
+        icon = mission_interfaith_relations
+        required_missions = { }
+        trigger = {
+            custom_trigger_tooltip = {
+                tooltip = didOforogEvent
+                has_country_flag = insanityOfOforog
+            }
+            NOT = {
+                has_ruler_modifier = insanity_of_oforog
+            }
+        }
+        effect = {
+            add_legitimacy = 20
+            add_country_modifier = {
+                name = agx_new_leadership
+                duration = 9125
+            }
+            outer_moxon_area = {
+                add_permanent_claim = ROOT
+            }
+            meaprin_area = {
+                add_permanent_claim = ROOT
+            }
+            agixion_area = {
+                add_permanent_claim = ROOT
+            }
+        }
+        #provinces_to_highlight = {}
+    }
+
+    agx_control_lerush = {
+        icon = mission_sea_battles
+        required_missions = { agx_oust_the_mad_king}
+        trigger = {
+            outer_moxon_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+            meaprin_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+            agixion_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+        }
+        effect = {
+            add_mil_power = 100
+            define_advisor = {
+                type = commandant
+                skill = 3
+                cost_multiplier = 0.35
+                location = 5359
+                culture = Lerushian
+                religion = ROOT
+            }
+            rozvos_area = {
+                add_permanent_claim = ROOT
+            }
+        }
+        provinces_to_highlight = {
+            NOT = { country_or_non_sovereign_subject_holds = ROOT }
+            OR = {
+                area = outer_moxon_area
+                area = meaprin_area
+                area = agixion_area
+            }
+        }
+    }
+
+    agx_seize_the_isles = {
+        icon = mission_corsairs_of_the_north_sea
+        required_missions = { agx_control_lerush}
+        trigger = {
+            5371 = {
+                owned_by = ROOT
+            }
+            5372 = {
+                owned_by = ROOT
+            }
+            5373 = {
+                owned_by = ROOT
+            }
+        }
+        effect = {
+            add_yearly_sailors = 5
+            5372 = {
+                add_unit_construction = {
+                    type = galley
+                    amount = 10
+                    speed = 0.1
+                    cost = 0
+                }
+            }
+            xofka_area = {
+                add_permanent_claim = ROOT
+            }
+        }
+        provinces_to_highlight = {
+            NOT = { country_or_non_sovereign_subject_holds = ROOT }
+            OR = {
+                province_id = 5371
+                province_id = 5372
+                province_id = 5373
+            }
+        }
+    }
+
+    agx_defeat_xofka = {
+        icon = mission_raid_on_venice
+        required_missions = { agx_seize_the_isles}
+        trigger = {
+            xofka_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+        }
+        effect = {
+            add_country_modifier = {
+                name = agx_united_moxon
+                duration = 7300
+            }
+            if = {
+                limit = {
+                    exists = SKT
+                }
+                custom_tooltip = agxSKTsubj
+                hidden_effect = {
+                    add_casus_belli = {
+					    target = SKT
+					    type = cb_vassalize_mission
+					    months = 300
+				    }
+                }
+            }
+            else = {
+                stroktur_region = {
+                    add_permanent_claim = ROOT
+                }
+            }
+        }
+        provinces_to_highlight = {
+            NOT = { country_or_non_sovereign_subject_holds = ROOT }
+            area = xofka_area
+        }
+    }
+}

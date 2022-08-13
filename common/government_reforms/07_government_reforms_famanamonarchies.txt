@@ -538,7 +538,7 @@ vanoman_elective_monarchy = {
 	modifiers = {
 		legitimacy = 1
 		max_absolutism = -30
-		prestige_decay = -0.20
+		prestige_decay = -0.02
 	}
 	custom_attributes = {
 		has_parliament = yes

@@ -134,25 +134,31 @@ country_event = {
     option = {
         name = gaxal.4.a
         ai_chance = { factor = 1 }
-        every_owned_province = {
-            limit = {
-                religion = morian
-            }
-            add_local_autonomy = 25
-            add_province_modifier = {
-                name = "morian_fervor"
-                duration = 3650
+        custom_tooltip = gaxal4aTT
+        hidden_effect = {
+            every_owned_province = {
+                limit = {
+                    religion = morian
+                }
+                add_local_autonomy = 25
+                add_province_modifier = {
+                    name = "morian_fervor"
+                    duration = 3650
+                }
             }
         }
     }
     option = {
         name = gaxal.4.b
         ai_chance = { factor = 1 }
-        every_owned_province = {
-            limit = {
-                religion = morian
+        custom_tooltip = gaxal4bTT
+        hidden_effect = {
+            every_owned_province = {
+                limit = {
+                    religion = morian
+                }
+                add_unrest = 12
             }
-            add_unrest = 12
         }
     }
 }

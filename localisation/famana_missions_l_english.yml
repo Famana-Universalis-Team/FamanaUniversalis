@@ -2,13 +2,10 @@
  
  #Vanoman Missions
  van_develop_montava_title:0 "Develop Montava"
- van_develop_montava:0 "Develop Montava"
  van_develop_montava_desc:0 "Montava is the heart of Vanoma. It is the center of governance, trade, culture and faith. Accordingly, we should turn it into the greatest city in the world, the pearl of our nation and the envy of our rivals."
  van_technological_advantage_title:0 "Technological Advantage"
- van_technological_advantage:0 "Technological Advantage"
  van_technological_advantage_desc:0 "Vanoma and technology go hand in hand. Ever since the establishment of the University of Montava, knowledge has always been highly valued. If we make additional technological strides, we may be able to gain a significant advantage over our barbarian neighbors."
  van_colonize_borlebin_title:0 "Settle the Eastern Plains"
- van_colonize_borlebin:0 "Settle the Eastern Plains"
  van_colonize_borlebin_desc:0 "To our east is a lightly settled grassland area, populated by uncivilized tribes. Colonizing it ourselves would bring us closer to the Aresians, allowing us to trade with them, or maybe engage in some less peaceful endeavors."
  vanoman_settlement_modifier:0 "Taming the Frontier"
 
@@ -939,3 +936,17 @@
  lyp_united_the_south:0 "United the South"
  lyp_nutian_architecture:0 "Nutian Architecture"
  lyp_prosperity_in_oppia:0 "Prosperity in Oppia"
+
+ #Agixianan Missions
+ agx_oust_the_mad_king_title:0 "Oust the Mad King"
+ agx_oust_the_mad_king_desc:0 "A madman rules our nation! Until he is taken off the throne, we cannot have any hope for the future of our nation. Only then can we seek to further our interests abroad."
+ agx_control_lerush_title:0 "Control Lerush"
+ agx_control_lerush_desc:0 "Before we expand overseas, we must secure the island on which we find ourselves. While we are the dominant power on Lerush, the Elixopan Republic and Poxan colonies have eluded us so far."
+ agx_seize_the_isles_title:0 "Seize the Isles"
+ agx_seize_the_isles_desc:0 "In order to dominate our main rival, we must first seize the two islands between Lerush and Xofka. Ameleka, on which we already have a foothold, and Vensa Lo, which is an independent duchy."
+ agx_defeat_xofka_title:0 "Defeat Xofka"
+ agx_defeat_xofka_desc:0 "With the conquest of Ameleka and Vensa, the only remaining obstacle to our inevitable conquest of Moxon is the Republic of Xofka."
+
+ #Agixianan Mission Rewards
+ agx_new_leadership:0 "New Leadership"
+ agx_united_moxon:0 "Moxon United"

@@ -1557,3 +1557,13 @@ conversion_to_xalian = {
 fas_croatian_injured = {
     land_morale = -0.10
 }
+
+agx_new_leadership = {
+    land_morale = 0.10
+    naval_morale = 0.10
+}
+
+agx_united_moxon = {
+    development_cost = -0.10
+    prestige = 1
+}
