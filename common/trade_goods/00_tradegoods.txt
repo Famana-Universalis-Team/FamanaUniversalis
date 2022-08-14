@@ -850,6 +850,8 @@ ivory = {
 			NOT = { has_terrain = jungle }
 			NOT = { has_terrain = savannah }
 			NOT = { has_terrain = glacier }
+			NOT = { region = napora_region }
+			NOT = { region = vordor_region }
 		}
 		modifier = {
 			factor = 0

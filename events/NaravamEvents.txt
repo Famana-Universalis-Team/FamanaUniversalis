@@ -544,12 +544,12 @@ country_event = {
     }
 	
 	option = {
-		name = naravam.8.a
+		name = naravam.8.b
         add_prestige = 5
     }
 	
 	option = {
-		name = naravam.8.a
+		name = naravam.8.c
 		add_prestige = -15
 		change_religion = lathvy
     }
@@ -557,10 +557,10 @@ country_event = {
 
 #expedition to find the ice gods - 2 - they do not return
 country_event = {
-	id = naravam.9
-	title = naravam.9.t
+	id = naravam.10
+	title = naravam.10.t
 	picture = NATIVES_eventPicture
-	desc = naravam.9.d
+	desc = naravam.10.d
     fire_only_once = yes
 	is_triggered_only = yes
 
@@ -570,7 +570,7 @@ country_event = {
     }	
 	
 	option = {
-		name = naravam.9.a
+		name = naravam.9.b
 		add_dip_power = -25
 		add_legitimacy = -10
     }
@@ -578,15 +578,15 @@ country_event = {
 
 #expedition to find the ice gods - 2 - they do not find the gods
 country_event = {
-	id = naravam.10
-	title = naravam.10.t
+	id = naravam.11
+	title = naravam.11.t
 	picture = WOUNDED_SOLDIERS_eventPicture
-	desc = naravam.10.d
+	desc = naravam.11.d
     fire_only_once = yes
 	is_triggered_only = yes
 
 	option = {
-		name = naravam.10.b
+		name = naravam.10.a
 		add_treasury = 35
 		add_country_modifier = {
 			name = nrv_religion_questioned
@@ -605,10 +605,10 @@ country_event = {
 
 #expedition to find the ice gods - 2 - they find the gods
 country_event = {
-	id = naravam.11
-	title = naravam.11.t
+	id = naravam.12
+	title = naravam.12.t
 	picture = EXPLORERS_eventPicture
-	desc = naravam.11.d
+	desc = naravam.12.d
     fire_only_once = yes
 	is_triggered_only = yes
 
@@ -622,8 +622,8 @@ country_event = {
     }	
 	
 	option = {
-		name = naravam.11.a
-		add_years_of_income = 0.5
+		name = naravam.11.b
+		add_years_of_income = -0.5
 		add_prestige = 50
 		add_stability = 1
 		add_country_modifier = {

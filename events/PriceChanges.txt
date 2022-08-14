@@ -362,28 +362,14 @@ country_event = {
 			value = 0.50
 			duration = -1
 		}
-		random_province = {
+		every_province = {
 			limit = {
 				trade_goods = ivory
 				superregion = west_estal_superregion
 			}
 			change_trade_goods = unknown
 		}
-		random_province = {
-			limit = {
-				trade_goods = ivory
-				superregion = west_estal_superregion
-			}
-			change_trade_goods = unknown
-		}
-		random_province = {
-			limit = {
-				trade_goods = ivory
-				superregion = west_estal_superregion
-			}
-			change_trade_goods = unknown
-		}
-		any_known_country = {
+		every_known_country = {
 			limit = {
 				religion = pawani
 			}
