@@ -143,6 +143,38 @@ high_bishophric_reform = {
 	}
 }
 
+holy_templars_reform = {
+	icon = "three_classes_reform"
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	legacy_equivalent = theocratic_government
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	allow_convert = no
+	modifiers = {
+		church_influence_modifier = 0.2
+		land_morale = 0.10
+		manpower_recovery_speed = 0.10
+		missionaries = 1
+		cb_on_religious_enemies = yes
+	}
+	different_religion_acceptance = -30
+	rulers_can_be_generals = yes
+	heirs_can_be_generals = yes
+	potential = {
+		tag = HLT
+		religion = lathvy
+	}
+	custom_attributes = {
+		locked_government_type = yes
+		enables_divine_idea_group = yes
+	}
+	fixed_rank = 3
+	ai = {
+		factor = 1000
+	}
+}
+
 corrupt_monarchy_reform = {
 	icon = "shatteredpextoglazia"
 	allow_normal_conversion = no

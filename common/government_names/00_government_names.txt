@@ -109,6 +109,30 @@ diocese_gov_name = {
 	}
 }
 
+hlt_gov_name = {
+	rank = {
+		1 = GRAND_ORDER
+		2 = GRAND_ORDER
+		3 = GRAND_ORDER
+	}
+
+	ruler_male = {
+		1 = HIGH_PRIEST
+		2 = HIGH_PRIEST
+		3 = HIGH_PRIEST
+	}
+
+	ruler_female = {
+		1 = HIGH_PRIEST
+		2 = HIGH_PRIEST
+		3 = HIGH_PRIEST
+	}
+
+	trigger = {
+		has_reform = holy_templars_reform
+	}
+}
+
 vanoma_geq_name = {
 	rank = {
 		1 = GEQ
