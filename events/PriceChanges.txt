@@ -343,11 +343,11 @@ country_event = {
 	major = yes
 
 	trigger = {
-		is_year = 466
 		any_owned_province = {
 			trade_goods = ivory
 			superregion = west_estal_superregion
 		}
+		is_year = 466
 	}
 
 	mean_time_to_happen = {

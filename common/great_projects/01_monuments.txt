@@ -2707,7 +2707,7 @@ atisha_irrigation_systems = {
 	start = 7246
 	
 	# date built in real life (so anything built during game time will be there if you start a game after that date)
-	date = 295.07.04
+	date = 210.07.04
 	
 	#time to build
 	time = {
@@ -2912,7 +2912,7 @@ saplangard_palace = {
 	start = 6290
 	
 	# date built in real life (so anything built during game time will be there if you start a game after that date)
-	date = 332.07.04
+	date = 210.07.04
 	
 	#time to build
 	time = {
@@ -2937,6 +2937,9 @@ saplangard_palace = {
 		owner = {
 			culture_group = Naravami_C
 		}
+		NOT = {
+			government = native
+		}
 	}
 
 	#what to do when it's built
@@ -2953,6 +2956,9 @@ saplangard_palace = {
 		owner = {
 			culture_group = Naravami_C
 		}
+		NOT = {
+			government = native
+		}
 	}
 
 	#can our country upgrade it?
@@ -2960,6 +2966,9 @@ saplangard_palace = {
 		culture_group = Naravami_C
 		owner = {
 			culture_group = Naravami_C
+		}
+		NOT = {
+			government = native
 		}
 	}
 
