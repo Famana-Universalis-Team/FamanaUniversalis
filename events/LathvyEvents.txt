@@ -1350,51 +1350,52 @@ country_event = {
 	}
 
 	immediate = {
-		random_known_country = {
-			limit = {
-				capital_scope = {
-					AND = {
-						NOT = {
-							any_province_in_state = {
-								OR = {
-									has_province_modifier = recently_visited_lathvy
-									has_province_flag = possible_hp_destination
+		hidden_effect = {
+			random_known_country = {
+				limit = {
+					capital_scope = {
+						AND = {
+							NOT = {
+								any_province_in_state = {
+									OR = {
+										has_province_modifier = recently_visited_lathvy
+										has_province_flag = possible_hp_destination
+									}
 								}
 							}
-						}
-						owner = {
-							NOT = { religion_group = lathvy_group }
+							owner = {
+								NOT = { religion_group = lathvy_group }
+							}
 						}
 					}
 				}
-			}
-			capital_scope = {
-				save_event_target_as = Destination1
-				set_province_flag = possible_hp_destination
-			}
-		}
-
-		random_known_country = {
-			limit = {
 				capital_scope = {
-					AND = {
-						NOT = {
-							any_province_in_state = {
-								OR = {
-									has_province_modifier = recently_visited_lathvy
-									has_province_flag = possible_hp_destination
+					save_event_target_as = Destination1
+					set_province_flag = possible_hp_destination
+				}
+			}
+			random_known_country = {
+				limit = {
+					capital_scope = {
+						AND = {
+							NOT = {
+								any_province_in_state = {
+									OR = {
+										has_province_modifier = recently_visited_lathvy
+										has_province_flag = possible_hp_destination
+									}
 								}
 							}
-						}
-						owner = {
-							NOT = { religion_group = lathvy_group }
+							owner = {
+								NOT = { religion_group = lathvy_group }
+							}
 						}
 					}
 				}
-			}
-			capital_scope = {
-				save_event_target_as = Destination2
-				set_province_flag = possible_hp_destination
+				capital_scope = {
+					save_event_target_as = Destination2
+					set_province_flag = possible_hp_destination
+				}
 			}
 		}
 	}
