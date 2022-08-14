@@ -1290,51 +1290,162 @@ far_eastern_gomic = {
 				global_manpower_modifier = -0.05
 				yearly_army_professionalism = 0.01
 				allow = { always = yes }
+				ai_will_do = {
+					factor = 1
+					modifier = {
+						factor = 2
+						NOT = {
+							army_size = 15
+						}
+					}
+					modifier = {
+						factor = 2
+						OR = {
+							has_idea_group = offensive_ideas
+							has_idea_group = quality_ideas
+						}
+					}
+				}
 			}
 			tax_exemptions_for_traders = {
 				global_tax_modifier = -0.05
 				trade_efficiency = 0.15
 				allow = { always = yes }
+				ai_will_do = {
+					factor = 1
+					modifier = {
+						factor = 2.5
+						estate_influence = {
+    						estate = estate_burghers
+    						influence = 55
+						}
+					}
+				}
 			}
 			improve_fortifications = {
 				fort_maintenance_modifier = 0.1
 				defensiveness = 0.25
 				allow = { always = yes }
+				ai_will_do = {
+					factor = 1
+					modifier = {
+						factor = 4
+						is_at_war = yes
+					}
+					modifier = {
+						factor = 2
+						has_idea_group = defensive_ideas
+					}
+				}
 			}
 			lower_production_quotas = {
 				global_trade_goods_size_modifier = -0.05
 				production_efficiency = 0.15
 				allow = { always = yes }
+				ai_will_do = {
+					factor = 2
+					modifier = {
+						factor = 1.5
+						has_idea_group = economic_ideas
+					}
+				}
 			}
 			revisit_the_integration_system = {
 				state_maintenance_modifier = 0.1
 				core_creation = -0.1
 				allow = { always = yes }
+				ai_will_do = {
+					factor = 1.5
+					modifier = {
+						factor = 2
+						OR = {
+							overextension_percentage = 0.50
+							has_idea_group = administrative_ideas
+						}
+					}
+				}
 			}
 			placate_civil_populace = {
 				prestige = -1
 				global_unrest = -2
 				allow = { always = yes }
+				ai_will_do = {
+					factor = 1
+					modifier = {
+						factor = 10
+						unrest = 6
+					}
+				}
 			}
 			appoint_skilled_commanders = {
 				free_leader_pool = -1
 				land_morale = 0.10
 				allow = { always = yes }
+				ai_will_do = {
+					factor = 2
+					modifier = {
+						factor = 0
+						num_of_generals	= 3
+					}
+				}
 			}
 			nominate_new_advisors = {
 				stability_cost_modifier = 0.1
 				same_culture_advisor_cost = -0.25
 				allow = { always = yes }
+				ai_will_do = {
+					factor = 2
+					modifier = {
+						factor = 0
+						NOT = { has_advisor = yes }
+					}
+				}
 			}
 			sponsor_talented_philosophers = {
 				global_institution_spread = -0.1
 				idea_cost = -0.15
 				allow = { always = yes }
+				ai_will_do = {
+					factor = 1
+					modifier = {
+						factor = 2.5
+						OR = {
+							has_idea_group = religious_ideas
+							has_idea_group = innovative_ideas
+						}
+					}
+				}
 			}
 			ensure_subject_loyalty = {
 				legitimacy = -0.5
 				all_estate_loyalty_equilibrium = 0.15
 				allow = { always = yes }
+				ai_will_do = {
+					factor = 1
+					modifier = {
+						factor = 4
+						OR = {
+							NOT = {
+								estate_loyalty = {
+    								estate = estate_burghers
+    								loyalty = 20
+								}
+							}
+							NOT = {
+								estate_loyalty = {
+    								estate = estate_nobles
+    								loyalty = 20
+								}
+							}
+							NOT = {
+								estate_loyalty = {
+    								estate = estate_church
+    								loyalty = 20
+								}
+							}
+						}
+					}
+				}
 			}
 		}
 	}

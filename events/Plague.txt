@@ -1040,8 +1040,22 @@ province_event = {
 	option = {
 		name = plague.11.a
 		ai_chance = { factor = 1 }
-		owner = {
-			add_stability = -1
+		if = {
+			limit = {
+				owner = {
+					NOT = {
+						total_development = 500
+					}
+				}
+			}
+			owner = {
+				add_stability = -1
+			}
+		}
+		else = {
+			owner = {
+				add_adm_power = -25
+			}
 		}
 		every_province_in_state = {
 			limit = {
@@ -1076,8 +1090,22 @@ province_event = {
 	option = {
 		name = plague.11.a
 		ai_chance = { factor = 1 }
-		owner = {
-			add_stability = -1
+		if = {
+			limit = {
+				owner = {
+					NOT = {
+						total_development = 500
+					}
+				}
+			}
+			owner = {
+				add_stability = -1
+			}
+		}
+		else = {
+			owner = {
+				add_adm_power = -25
+			}
 		}
 		every_province_in_state = {
 			limit = {
@@ -1112,8 +1140,22 @@ province_event = {
 	option = {
 		name = plague.11.a
 		ai_chance = { factor = 1 }
-		owner = {
-			add_stability = -1
+		if = {
+			limit = {
+				owner = {
+					NOT = {
+						total_development = 500
+					}
+				}
+			}
+			owner = {
+				add_stability = -1
+			}
+		}
+		else = {
+			owner = {
+				add_adm_power = -25
+			}
 		}
 		every_province_in_state = {
 			limit = {

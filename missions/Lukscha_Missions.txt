@@ -1,0 +1,103 @@
+
+lks_1 = {
+    slot = 1
+    generic = no
+    ai = yes
+    potential = {
+        NOT = { map_setup = map_setup_random }
+		tag = LKS
+    }
+    has_country_shield = yes
+
+    lks_rein_in_the_chiefs = {
+        icon = lks_moon_icon
+        required_missions = { }
+        trigger = {
+            
+        }
+        effect = {
+            
+        }
+        provinces_to_highlight = {
+            
+        }
+    }
+
+    lks_ensure_unity = {
+        icon = lks_moon_icon
+        required_missions = { lks_rein_in_the_chiefs }
+        trigger = {
+            if = {
+                limit = {
+                    ai = yes
+                }
+                always = yes
+            }
+            else = {
+                
+            }
+        }
+        effect = {
+            
+        }
+        provinces_to_highlight = {
+            
+        }
+    }
+
+    lks_beyond_the_forest = {
+        icon = lks_moon_icon
+        required_missions = { lks_ensure_unity }
+        trigger = {
+            
+        }
+        effect = {
+            
+        }
+        provinces_to_highlight = {
+            
+        }
+    }
+
+    lks_conquer_rduma = {
+        icon = lks_moon_icon
+        required_missions = { lks_beyond_the_forest }
+        trigger = {
+            
+        }
+        effect = {
+            
+        }
+        provinces_to_highlight = {
+            
+        }
+    }
+
+    lks_in_search_of_loot = {
+        icon = lks_moon_icon
+        required_missions = { lks_conquer_rduma }
+        trigger = {
+            
+        }
+        effect = {
+            
+        }
+        provinces_to_highlight = {
+            
+        }
+    }
+
+    lks_dominion_over_gotzlica = {
+        icon = lks_moon_icon
+        required_missions = { lks_in_search_of_loot }
+        trigger = {
+            
+        }
+        effect = {
+            
+        }
+        provinces_to_highlight = {
+            
+        }
+    }
+}

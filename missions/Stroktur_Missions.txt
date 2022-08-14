@@ -4213,6 +4213,7 @@ kalarga_1 = {
         NOT = { map_setup = map_setup_random }
         has_country_flag = getKalarganMissions
         NOT = { has_country_flag = getKalarganMissionsCounter }
+        NOT = { has_country_flag = getNafanMissions }
     }
     has_country_shield = yes
 
@@ -4286,17 +4287,20 @@ kalarga_1 = {
                 value = 2
                 region = moxon_region
             }
-            NOT = {
-                any_country = {
-                    capital_scope = {
-                        region = moxon_region
+            custom_trigger_tooltip = {
+                tooltip = klgmoxnavy
+                NOT = {
+                    any_country = {
+                        capital_scope = {
+                            region = moxon_region
+                        }
+                        navy_size = ROOT
                     }
-                    navy_size = ROOT
                 }
             }
         }
         effect = {
-            add_yearly_sailors = 2
+            add_yearly_sailors = 3
             moxon_region = {
                 add_permanent_claim = ROOT
             }
@@ -4334,6 +4338,7 @@ kalarga_2 = {
         NOT = { map_setup = map_setup_random }
         has_country_flag = getKalarganMissions
         NOT = { has_country_flag = getKalarganMissionsCounter }
+        NOT = { has_country_flag = getNafanMissions }
     }
     has_country_shield = yes
 
@@ -4472,6 +4477,7 @@ kalarga_3 = {
         NOT = { map_setup = map_setup_random }
         has_country_flag = getKalarganMissions
         NOT = { has_country_flag = getKalarganMissionsCounter }
+        NOT = { has_country_flag = getNafanMissions }
     }
     has_country_shield = yes
 
@@ -4663,7 +4669,12 @@ kalarga_3 = {
         required_missions = { klg_control_the_seas klg_a_new_homeland klg_unite_eastern_estal }
         position = 11
         trigger = {
-
+            num_of_owned_provinces_with = {
+                value = 40
+                culture = Kachik
+            }
+            total_development = 750
+            army_size = 80
         }
         effect = {
             override_country_name = GREAT_KALARGA
@@ -4699,6 +4710,7 @@ kalarga_4 = {
         NOT = { map_setup = map_setup_random }
         has_country_flag = getKalarganMissions
         NOT = { has_country_flag = getKalarganMissionsCounter }
+        NOT = { has_country_flag = getNafanMissions }
     }
     has_country_shield = yes
 
@@ -4843,6 +4855,7 @@ kalarga_5 = {
         NOT = { map_setup = map_setup_random }
         has_country_flag = getKalarganMissions
         NOT = { has_country_flag = getKalarganMissionsCounter }
+        NOT = { has_country_flag = getNafanMissions }
     }
     has_country_shield = yes
 

@@ -229,14 +229,14 @@ country_event = {
 		days = 1
 	}
 
-	immediate = {
-		
-	}
+	#immediate = {
+	#}
 
 	option = {
         name = lukscham.5.a
         ai_chance = { factor = 1 }
 		remove_government_reform = lukscha_tribe
+		change_government = republic
 		add_government_reform = lukscha_forum
     }
 }

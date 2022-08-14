@@ -57,4 +57,9 @@ spriteTypes = {
 		texturefile = "gfx//interface//missions//famana_missions//naf_eclipse_icon.dds"
 	}
 	
+	spriteType = {
+		name = "lks_moon_icon"
+		texturefile = "gfx//interface//missions//famana_missions//lks_moon_icon.dds"
+	}
+	
 }
