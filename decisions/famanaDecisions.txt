@@ -720,7 +720,8 @@ country_decisions = {
                 tag = YLL
                 tag = RCK
             }
-            owns_core_province = 5361
+            owns = 5361
+            has_dlc = "Leviathan"
             5361 = {
                 OR = {
                     has_great_project = {
@@ -737,9 +738,11 @@ country_decisions = {
                     }
                 }
             }
-            has_dlc = "Leviathan"
 		}
 		allow = {
+            5361 = {
+                is_core = ROOT
+            }
 		}
 		effect = {
             country_event = {

@@ -1260,7 +1260,7 @@
  SET_DEFENDER_OF_THE_FAITH_EFFECT:0 "$COUNTRY|Y$ becomes Defender of the $RELIGION|Y$ Faith"
  REMOVE_DEFENDER_OF_THE_FAITH_EFFECT:0 "$COUNTRY|Y$ is no longer Defender of the $RELIGION|Y$ Faith"
  BUILD_GREAT_PROJECT_EFFECT:0 "Builds the great project $NAME|Y$."
- DESTROY_GREAT_PROJECT:0 "Destroys the great project $NAME|Y$."
+ DESTROY_GREAT_PROJECT:0 "Destroys the great project $NAME|Y$. "
  MOVE_GREAT_PROJECT_INSTANTLY:0 "The $TYPE$ $NAME|Y$ moves to $PROVINCE|Y$."
  MODIFIER_GLOBAL_MONTHLY_DEVASTATION:0 "Global Monthly Devastation"
  MODIFIER_GLOBAL_PROPSPERITY_GROWTH:0 "Global Prosperity Growth"

@@ -13,7 +13,13 @@ lks_1 = {
         icon = lks_moon_icon
         required_missions = { }
         trigger = {
-            
+            lukscham_region = {
+                type = all
+                OR = {
+                    owned_by = ROOT
+                    is_empty = yes
+                }
+            }
         }
         effect = {
             
@@ -34,7 +40,7 @@ lks_1 = {
                 always = yes
             }
             else = {
-                
+
             }
         }
         effect = {

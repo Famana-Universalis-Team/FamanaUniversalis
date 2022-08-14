@@ -1690,16 +1690,11 @@ country_decisions = {
 		}
 		provinces_to_highlight = {
 			OR = {
-				province_id = 5561
-				province_id = 5563
-				province_id = 5566
-				province_id = 5567
-				province_id = 5568
-				province_id = 5570
 				province_id = 5572
 				province_id = 5575
 				province_id = 5581
 				province_id = 5583
+				province_id = 5566
 			}
 			OR = {
 				NOT = { owned_by = ROOT }
@@ -1710,17 +1705,21 @@ country_decisions = {
 			adm_tech = 10
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
-			owns_core_province = 5561
-			owns_core_province = 5563
-			owns_core_province = 5566
-			owns_core_province = 5567
-			owns_core_province = 5568
-			owns_core_province = 5568
-			owns_core_province = 5570
 			owns_core_province = 5572
 			owns_core_province = 5575
 			owns_core_province = 5581
-			owns_core_province = 5583
+			OR = {
+				owns_core_province = 5583
+				owns_core_province = 5566
+			}
+			num_of_owned_provinces_with = {
+				value = 25
+				is_core = ROOT
+				OR = {
+					region = emastalia_region
+					region = west_emastalia_region
+				}
+			}
 		}
 		effect = {
 			if = {
