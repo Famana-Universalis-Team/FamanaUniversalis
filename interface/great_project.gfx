@@ -602,4 +602,14 @@ spriteTypes = {
 		name = "GFX_great_project_mea_dizz_castle"	
 		texturefile = "gfx//interface//great_projects//famana_great_projects//great_project_mea_dizz_castle.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_great_project_atisha_irrigation_systems"	
+		texturefile = "gfx//interface//great_projects//famana_great_projects//great_project_atisha_irrigation_systems.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_great_project_saplangard_palace"	
+		texturefile = "gfx//interface//great_projects//famana_great_projects//great_project_saplangard_palace.dds"
+	}
 }

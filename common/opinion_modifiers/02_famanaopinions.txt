@@ -64,3 +64,13 @@ pope_visit_opinion = {
 	opinion = 25
 	yearly_decay = 0.5
 }
+
+dragon_killer = {
+	opinion -15
+	yearly_decay = 0.5
+}
+
+sacrificed_us = {
+	opinion -50
+	yearly_decay = 0.5
+}

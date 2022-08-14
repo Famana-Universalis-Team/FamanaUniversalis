@@ -1589,3 +1589,21 @@ freedom_of_speech_lathvy = {
 pope_visit_lathvy = {
     tolerance_heathen = 2
 }
+
+human_sacrifices = {
+	all_power_cost = -0.10
+	global_unrest = 1
+}
+
+enemy_sacrifices = {
+	land_morale = 5
+	all_power_cost = -0.10
+	diplomatic_reputation = -1
+}
+
+holy_hunt_effects = {
+	global_unrest = -3
+	prestige = 1
+	church_loyalty_modifier = 0.05
+	church_power_modifier = 0.5
+}
