@@ -553,12 +553,15 @@ country_decisions = {
             }
 		}
 		allow = {
-            NOT = {
-                any_country = {
-                    AND = {
-                        total_development = ROOT #has more development than the player
-                        any_owned_province = {
-                            superregion = ga_xal_superregion #owns any provinces in ga xal. basically you need to become the sole superpower (and fashros probably needs to be dead)
+            custom_trigger_tooltip = {
+                tooltip = MOST_DEV_GA_XAL
+                NOT = {
+                    any_country = {
+                        AND = {
+                            total_development = ROOT #has more development than the player
+                            any_owned_province = {
+                                superregion = ga_xal_superregion #owns any provinces in ga xal. basically you need to become the sole superpower (and fashros probably needs to be dead)
+                            }
                         }
                     }
                 }
@@ -655,12 +658,15 @@ country_decisions = {
             }
 		}
 		allow = {
-            NOT = {
-                any_country = {
-                    AND = {
-                        total_development = ROOT #has more development than the player
-                        any_owned_province = {
-                            superregion = ga_xal_superregion #owns any provinces in ga xal. basically you need to become the sole superpower (and fashros probably needs to be dead)
+            custom_trigger_tooltip = {
+                tooltip = MOST_DEV_GA_XAL
+                NOT = {
+                    any_country = {
+                        AND = {
+                            total_development = ROOT #has more development than the player
+                            any_owned_province = {
+                                superregion = ga_xal_superregion #owns any provinces in ga xal. basically you need to become the sole superpower (and fashros probably needs to be dead)
+                            }
                         }
                     }
                 }

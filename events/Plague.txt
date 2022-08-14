@@ -1194,6 +1194,7 @@ country_event = {
 	}
 
 	immediate = {
+		log = "disease fired for [Root.GetName]"
 		if = {
 			limit = {
 				has_institution = printing_press

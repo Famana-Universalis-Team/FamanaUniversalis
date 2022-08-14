@@ -281,6 +281,7 @@
  kachik_religious_rights_tip: "All owned §YAnimist§! §YKachik§! provinces get '§YKachik Religious Autonomy§!', giving the following effects:\nLocal Production Efficiency: §G+10.0%§!\nLocal Missionary Strength: §R-5.0%§!\nLocal Manpower Modifier: §G+10.0%§!"
 
  XALIAN_FORCE_USED: "§YThis will only change our state religion. We will still need to convert all our provinces.§!"
+ MOST_DEV_GA_XAL: "No country in Ga Xal has more development than us."
 
  COUNCIL_OF_XON_REPRESENTATIVES: "§YWe will invite religious authorities from all four Xalian faiths to Xon to discuss the matter. The following authorities will be invited:§!\n[Root.ShirianAuthority]\n[Root.VinianAuthority]\n[Root.DelkianAuthority]\n[Root.MorianAuthority]\n\n§YIf we get 3/4 of the delegations on our side, accounting for 80% of the development in Ga Xal, we will replace every province and state religion of the agreeing parties with the restored Xalian religion.§!"
 
@@ -313,17 +314,17 @@
  SEE_COUNCIL: "The Council of Xon is an attempt by representatives of all four major Xalian religions to restore the old preschism faith. It can succeed when at least 3/4 of the delegations agree, and the agreeing delegations' respective religions account for 80% of development in Ga Xal."
  ShirXonReasons: "\nShirian is represented by §Y[GetAppropriateTagShir]§!.\nAs of now, Shirian has [checkAcceptShir]d with our proposal.\nPositive: §G[Root.ShirXonReasonsPos.GetValue]§!\nNegative: §R[Root.ShirXonReasonsNeg.GetValue]§!\n\nWe need at least §Y1§! more §Gpositive§! than §Rnegative§! reasons for an acceptance.\n\n[PlayerVoteShir][GetPlayerShir][GetShirVinBrotherhood]\n\n"
  VinXonReasons: "\nVinian is represented by §Y[GetAppropriateTagVin]§!.\nAs of now, Vinian has [checkAcceptVin]d with our proposal.\nPositive: §G[Root.VinXonReasonsPos.GetValue]§!\nNegative: §R[Root.VinXonReasonsNeg.GetValue]§!\n\nWe need at least §Y1§! more §Gpositive§! than §Rnegative§! reasons for an acceptance.\n\n[PlayerVoteVin][GetPlayerVin][GetShirVinBrotherhood]\n\n"
- MorXonReasons: "\nMorian is represented by §Y[GetAppropriateTagMor]§!.\nAs of now, Morian has [checkAcceptMor]d with our proposal.\nPositive: §G[Root.MorXonReasonsPos.GetValue]§!\nNegative: §R[Root.MorXonReasonsNeg.GetValue]§!\n\nWe need at least §Y1§! more §Gpositive§! than §Rnegative§! reasons for an acceptance.\n\n[PlayerVoteMor][GetPlayerMor]\n\n[MorianMonotheismCox]"
+ MorXonReasons: "cock"
  DelkXonReasons: "\nDelkian is represented by §Y[GetAppropriateTagDelk]§!.\nAs of now, Delkian has [checkAcceptDelk]d with our proposal.\nPositive: §G[Root.DelkXonReasonsPos.GetValue]§!\nNegative: §R[Root.DelkXonReasonsNeg.GetValue]§!\n\nWe need at least §Y1§! more §Gpositive§! than §Rnegative§! reasons for an acceptance.\n\n[PlayerVoteDelk][GetPlayerDelk]\n\n"
  PlayerReasonsShir: "This nation is controlled by a player. They may choose their position on their own whims.\nd our proposal."
  PlayerReasonsMor: "This nation is controlled by a player. They may choose their position on their own whims.\nAs of now, Morian has [checkAcceptMor]d our proposal."
  PlayerReasonsDelk: "This nation is controlled by a player. They may choose their position on their own whims.\nAs of now, Delkian has [checkAcceptDelk]d our proposal."
  PlayerReasonsVin: "This nation is controlled by a player. They may choose their position on their own whims.\nAs of now, Vinian has [checkAcceptVin]d our proposal."
 
- SHIR_REASONS: "[Rootplayer_or_no_council_shir]"
- MOR_REASONS: "[Rootplayer_or_no_council_mor]"
- VIN_REASONS: "[Root.player_or_no_council_vin]"
- DELK_REASONS: "[Rootplayer_or_no_council_delk]"
+ SHIR_REASONS: "Shir Reasoning"
+ MOR_REASONS: "Mor Reasoning"
+ VIN_REASONS: "Vin Reasoning"
+ DELK_REASONS: "Delk Reasoning"
 
  ShirRep: "[shirian_representative.GetName]"
  VinRep: "[vinian_representative.GetName]"
@@ -332,12 +333,12 @@
 
  CoXempty: "" # for when a modifier isnt fulfilled
  ShirVinBrotherhood: "\nShirian-Vinian Brotherhood: §G+25§!" #POSITIVE
- MorianMonotheismCox: "\nMorian is a Monotheistic religion: §R-100§!"
- PlayerIsShir: "\nStarted the Council: §G+1000§!"
- PlayerIsVin: "\nStarted the Council: §G+1000§!"
- PlayerIsMor: "\nStarted the Council: §G+1000§!"
- PlayerIsDelk: "\nStarted the Council: §G+1000§!"
- PlayerVoted: "\nPlayer Voted Yes: §G+1000§!"
+ MorianMonotheismCox: "\nMorian is a Monotheistic religion: §R-100§!" #NEGATIVE
+ PlayerIsShir: "\nStarted the Council: §G+1000§!" #POSITIVE
+ PlayerIsVin: "\nStarted the Council: §G+1000§!" #POSITIVE
+ PlayerIsMor: "\nStarted the Council: §G+1000§!" #POSITIVE
+ PlayerIsDelk: "\nStarted the Council: §G+1000§!" #POSITIVE
+ PlayerVoted: "\nPlayer Voted Yes: §G+1000§!" #POSITIVE
 
  TONMO_SCHOOLS_SCHISM: "Relations between the §YTribal§! and §YEvangelical§! schools will worsen.\nRelations between the §YTribal§! and §YLiturgical§! schools will worsen.\n Relations between the §YLitugical§! and §YEvangelical§! schools will improve."
 

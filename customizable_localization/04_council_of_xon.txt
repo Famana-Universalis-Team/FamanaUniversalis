@@ -65,7 +65,7 @@ defined_text = {
 	
     text = {
 		trigger = {
-			event_target:shirian_representative = {
+			MSH = {
 				ai = no
 			}
 		}
@@ -89,7 +89,7 @@ defined_text = {
         localisation_key = PlayerReasonsMor
     }
     text = {
-        localisation_key = MorXonReasons
+        localisation_key = VinXonReasons
     }
 }
 

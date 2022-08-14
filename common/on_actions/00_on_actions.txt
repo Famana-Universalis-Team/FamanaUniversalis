@@ -557,14 +557,6 @@ on_new_monarch = {
 	}
 	if = {
 		limit = {
-			has_reform = vanoman_elective_monarchy
-		}
-		country_event = {
-			id = vanoma.14
-		}
-	}
-	if = {
-		limit = {
 			has_consort_regency = no
 			any_owned_province = {
 				has_province_modifier = domain_of_spouses_family
@@ -633,6 +625,14 @@ on_new_consort = {
 
 # country
 on_monarch_death = {
+	if = {
+		limit = {
+			has_reform = vanoman_elective_monarchy
+		}
+		country_event = {
+			id = vanoma.14
+		}
+	}
 	if = {
 		limit = { has_country_modifier = sought_after_bachelor }
 		remove_country_modifier = sought_after_bachelor
