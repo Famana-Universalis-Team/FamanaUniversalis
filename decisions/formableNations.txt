@@ -4802,4 +4802,118 @@ country_decisions = {
 			factor = 1
 		}
 	}
+
+	holy_templar_nation = {
+		major = yes
+		potential = {
+			culture_group = Pextoglazian
+			government = theocracy
+			government_rank = 2
+			OR = {
+				religious_school = {
+					group = lathvy_group
+					school = pextoglazian_school
+				}
+				religious_school = {
+					group = lathvy_group
+					school = walaran_school
+				}
+			}
+			NOT = { exists = HLT }
+			was_never_end_game_tag_trigger = yes
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 5337
+				province_id = 5285
+				province_id = 5321
+				province_id = 5301
+				province_id = 5312
+				province_id = 5298
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				is_city = no
+			}
+		}
+		allow = {
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			OR = {
+				NOT = { exists = POM }
+				tag = POM
+			}
+			OR = {
+				NOT = { exists = WLR }
+				tag = WLR
+			}
+			owns_core_province = 5337
+			owns_core_province = 5285
+			owns_core_province = 5321
+			owns_core_province = 5301
+			owns_core_province = 5312
+			owns_core_province = 5298
+			num_of_owned_provinces_with = {
+				value = 30
+				OR = {
+					region = pextoglazia_region
+					region = lomea_region
+					region = walara_region
+				}
+			}
+		}
+		effect = {
+			restore_country_name = yes
+			change_tag = HLT
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			if = {
+				limit = {
+					NOT = { government_rank = 3 }
+				}
+				set_government_rank = 3
+			}
+			add_government_reform = holy_templars_reform
+			pextoglazia_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = HLT
+			}
+			lomea_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = HLT
+			}
+			walara_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = HLT
+			}
+			if = {
+				limit = {
+					religious_school = {
+						group = lathvy_group
+						school = pextoglazian_school
+					}
+				}
+				set_capital = 5337
+			}
+			else = {
+				set_capital = 5285
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
 }
