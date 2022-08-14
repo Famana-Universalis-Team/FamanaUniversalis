@@ -514,7 +514,7 @@ country_event = {
 	}
 
     option = {
-		name = naravam.8.a
+		name = naravam.9.a
 		add_adm_power = -15
 		hidden_effect = {
 			random_list = {
@@ -544,12 +544,12 @@ country_event = {
     }
 	
 	option = {
-		name = naravam.8.b
+		name = naravam.9.b
         add_prestige = 5
     }
 	
 	option = {
-		name = naravam.8.c
+		name = naravam.9.c
 		add_prestige = -15
 		change_religion = lathvy
     }
@@ -565,12 +565,12 @@ country_event = {
 	is_triggered_only = yes
 
     option = {
-		name = naravam.9.a
+		name = naravam.10.a
 		add_stability = -1
     }	
 	
 	option = {
-		name = naravam.9.b
+		name = naravam.10.b
 		add_dip_power = -25
 		add_legitimacy = -10
     }
@@ -586,7 +586,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = naravam.10.a
+		name = naravam.11.a
 		add_treasury = 35
 		add_country_modifier = {
 			name = nrv_religion_questioned
@@ -595,7 +595,7 @@ country_event = {
     }
 	
 	option = {
-		name = naravam.10.b
+		name = naravam.11.b
 		add_treasury = 35
 		add_years_of_income = -0.25
 		add_legitimacy = -10
@@ -613,7 +613,7 @@ country_event = {
 	is_triggered_only = yes
 
     option = {
-		name = naravam.11.a
+		name = naravam.12.a
 		add_stability = 1
 		add_country_modifier = {
 			name = nrv_religion_confirmed
@@ -622,7 +622,7 @@ country_event = {
     }	
 	
 	option = {
-		name = naravam.11.b
+		name = naravam.12.b
 		add_years_of_income = -0.5
 		add_prestige = 50
 		add_stability = 1
