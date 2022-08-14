@@ -778,7 +778,7 @@ country_event = { #Lathvy
 country_event = { #Pick New king
     id = vanoma.14
     title = vanoma.14.t
-    desc = vanoma.14.desc
+    desc = vanoma.14.d
     picture = NUSANTARA_THRONE_eventPicture
 
     is_triggered_only = yes
@@ -804,12 +804,7 @@ country_event = { #Pick New king
 	option = {
         name = vanoma.14.a
         ai_chance = { factor = 1 }
-		hidden_effect = {
-			kill_heir = {
-				allow_new_heir = no
-			}
-		}
-		define_heir = {
+		define_ruler = {
 			name = heir3
 			claim = 100
 		}
@@ -817,12 +812,7 @@ country_event = { #Pick New king
 	option = {
         name = vanoma.14.b
         ai_chance = { factor = 1 }
-		hidden_effect = {
-			kill_heir = {
-				allow_new_heir = no
-			}
-		}
-		define_heir = {
+		define_ruler = {
 			name = heir2
 			claim = 100
 		}
@@ -830,12 +820,7 @@ country_event = { #Pick New king
 	option = {
         name = vanoma.14.c
         ai_chance = { factor = 1 }
-		hidden_effect = {
-			kill_heir = {
-				allow_new_heir = no
-			}
-		}
-		define_heir = {
+		define_ruler = {
 			name = heir1
 			claim = 100
 		}

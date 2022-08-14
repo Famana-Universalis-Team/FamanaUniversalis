@@ -33,10 +33,7 @@ on_startup = {
 		value = religion
 		who = ROOT
 	}
-	set_variable = {
-		which = ShirXonReasonsPos
-		value = 0
-	}
+
 	set_variable = {
 		which = MorXonReasonsPos
 		value = 0
@@ -2128,7 +2125,9 @@ on_thri_yearly_pulse_2 = {
 		40 = lathvy.3
 		40 = lathvy.4
 		5 = lathvy.5
-		
+		20 = lathvy.21
+		40 = lathvy.22
+		40 = lathvy.23
 		
 	}
 }

@@ -1792,8 +1792,21 @@
  narava.10.b:0 "Pay them to be quiet."
  
  naravam.11.t:0 "The expedition returns after meeting the Gods"
- naravam.11.d:0 "The adventurers came back carrying good news: while they weren't able to convince any God to come with them, they have met many in far away domains. At the northern edge of the mountain range they were approached by a talking wolf-man who became their guide and they together descened into a mystic forest populated by poweful Gods and teeming with lesser spirits. They spent many days in this place in a some sort of an elevated state talking to chief beings from our mythology, drinking ambrosia and going on hunts. The shamans eventually decided that it would be selfish to stay there and decided to return, of course not before asking for a blessing for our nation."
+ naravam.11.d:0 "The adventurers came back carrying good news; while they weren't able to convince any God to come with them, they have met many in far away domains. At the northern edge of the mountain range they were approached by a talking wolf-man who became their guide and they together descened into a mystic forest populated by poweful Gods and teeming with lesser spirits. They spent many days in this place in a some sort of an elevated state talking to chief beings from our mythology, drinking ambrosia and going on hunts. The shamans eventually decided that it would be selfish to stay there and decided to return, of course not before asking for a blessing for our nation."
  naravam.11.a:0 "Those men are heroes."
  naravam.11.b:0 "Pay someone educated to write down their epic journey."
  
- 
+ lathvy.21.t:0 "Modified Prayer Books spreading!"
+ lathvy.21.d:0 "Lathvy Prayer Books are often standardised to the word, and it is expected that all copies follow this standardisation. However, recently Lathvy authorities have gotten ahold of some heretical translations, likely produced by some rogue scribes. If we let these spread, we will be imposing religious censorship but it will prevent heresy."
+ lathvy.21.a:0 "Burn them!"
+ lathvy.21.b:0 "It's not a big deal."
+
+ lathvy.22.t:0 "Heir caught breaking religious rules!"
+ lathvy.22.d:0 "Recently, [Root.Heir.GetName] was caught drinking wine at a party with some other wealthy aristocrats. This is unacceptable, as all forms of Alcohol are banned in the Lathvy religion. Despite this, we must consider whether or not it is worth it to punish our own flesh and blood for such a relatively minor transgressionm, as doing so could hurt our own rule's credibility."
+ lathvy.22.a:0 "Expose him publically."
+ lathvy.22.b:0 "Cover it up."
+
+ lathvy.23.t:0 "Foreign Expeditions"
+ lathvy.23.d:0 "As the home of a High Priest, it is our responisibility to represent the Lathvy Religion internationally. Recently, the High Priest has recieved an offer to travel aboard to heathen religions to represent our Faith."
+ lathvy.23.a:0 "Go to [Root.Destination1.GetName]"
+ lathvy.23.b:0 "Go to [Root.Destination2.GetName]"

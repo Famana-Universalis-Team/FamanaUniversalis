@@ -1223,3 +1223,252 @@ country_event = { #New School
 		}
 	}
 }
+
+#Illegal prayer books
+country_event = {
+	id = lathvy.21
+	title = lathvy.21.t
+	desc = lathvy.21.d
+	picture = BIG_BOOK_eventPicture
+	
+	is_triggered_only = yes
+
+	trigger = {
+		uses_piety = yes
+		has_institution = renaissance
+		OR = {
+			religious_school = { #Kolyan and Maxan don't use prayer books
+				group = lathvy_group
+				school = nafan_school
+			}
+			religious_school = {
+				group = lathvy_group
+				school = celzian_school
+			}
+			religious_school = {
+				group = lathvy_group
+				school = pextoglazian_school
+			}
+			religious_school = {
+				group = lathvy_group
+				school = walaran_school
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+	}
+	
+	option = {
+		ai_chance = { factor = 2 }
+		name = lathvy.21.a #Burn them!
+		add_piety = 0.10
+		
+	}
+	option = {
+		ai_chance = { factor = 1 }
+		name = lathvy.21.b #Let them be.
+		add_piety = -0.05
+		add_country_modifier = { name = freedom_of_speech_lathvy duration = 912 }
+	}
+}
+
+#Heir is naughty
+country_event = {
+	id = lathvy.22
+	title = lathvy.22.t
+	desc = lathvy.22.d
+	picture = ACCUSATION_eventPicture
+	
+	is_triggered_only = yes
+
+	trigger = {
+		uses_piety = yes
+		has_heir = yes
+		heir_age = 16 #dont want to promote child drinking
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+	}
+	
+	option = {
+		ai_chance = { factor = 2 }
+		name = lathvy.22.a #Expose him
+		add_piety = -0.10
+		add_heir_claim = -20
+		add_estate_loyalty = {
+			estate = estate_church
+			loyalty = 10
+		}
+	}
+	option = {
+		ai_chance = { factor = 1 }
+		name = lathvy.22.b #Cover him up
+		add_corruption = 0.50
+	}
+}
+
+#Visiting regions as High Priest
+country_event = {
+	id = lathvy.23
+	title = lathvy.23.t
+	desc = lathvy.23.d
+	picture = POPE_PREACHING_eventPicture
+	
+	is_triggered_only = yes
+
+	trigger = {
+		uses_piety = yes
+		OR = {
+			AND = {
+				religious_school = {
+					group = lathvy_group
+					school = pextoglazian_school
+				}
+				owns_core_province = 5337
+			}
+			AND = {
+				religious_school = {
+					group = lathvy_group
+					school = walaran_school
+				}
+				owns_core_province = 5285
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		random_known_country = {
+			limit = {
+				capital_scope = {
+					AND = {
+						NOT = {
+							any_province_in_state = {
+								OR = {
+									has_province_modifier = recently_visited_lathvy
+									has_province_flag = possible_hp_destination
+								}
+							}
+						}
+						owner = {
+							NOT = { religion_group = lathvy_group }
+						}
+					}
+				}
+			}
+			capital_scope = {
+				save_event_target_as = Destination1
+				set_province_flag = possible_hp_destination
+			}
+		}
+
+		random_known_country = {
+			limit = {
+				capital_scope = {
+					AND = {
+						NOT = {
+							any_province_in_state = {
+								OR = {
+									has_province_modifier = recently_visited_lathvy
+									has_province_flag = possible_hp_destination
+								}
+							}
+						}
+						owner = {
+							NOT = { religion_group = lathvy_group }
+						}
+					}
+				}
+			}
+			capital_scope = {
+				save_event_target_as = Destination2
+				set_province_flag = possible_hp_destination
+			}
+		}
+	}
+	
+	option = {
+		ai_chance = { factor = 2 }
+		name = lathvy.23.a #Des1
+		event_target:Destination1 = {
+			clr_province_flag = possible_hp_destination
+			every_province_in_state = {
+				if = {
+					limit = {
+						is_capital = yes
+					}
+					add_province_modifier = {
+						name = recently_visited_lathvy
+						duration = 7300
+						hidden = yes
+					}
+					owner = {
+						if = {
+							limit = {
+								NOT = {
+									religion_group = lathvy_group
+								}
+							}
+							add_country_modifier = {
+								name = pope_visit_lathvy
+								duration = 1825
+							}
+							reverse_add_opinion = {
+								who = ROOT
+								modifier = pope_visit_opinion
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	option = {
+		ai_chance = { factor = 1 }
+		name = lathvy.23.b #Des2
+		event_target:Destination2 = {
+			clr_province_flag = possible_hp_destination
+			every_province_in_state = {
+				if = {
+					limit = {
+						is_capital = yes
+					}
+					add_province_modifier = {
+						name = recently_visited_lathvy
+						duration = 7300
+						hidden = yes
+					}
+					owner = {
+						if = {
+							limit = {
+								NOT = {
+									religion_group = lathvy_group
+								}
+							}
+							add_country_modifier = {
+								name = pope_visit_lathvy
+								duration = 1825
+							}
+							reverse_add_opinion = {
+								who = ROOT
+								modifier = pope_visit_opinion
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

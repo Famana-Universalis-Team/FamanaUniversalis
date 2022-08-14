@@ -1580,3 +1580,12 @@ nrv_religion_confirmed = {
 	tolerance_own = 1
 	global_religious_conversion_resistance = 1
 }
+
+freedom_of_speech_lathvy = {
+    global_unrest = -1
+    idea_cost = -0.10
+}
+
+pope_visit_lathvy = {
+    tolerance_heathen = 2
+}
