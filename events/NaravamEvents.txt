@@ -516,6 +516,7 @@ country_event = {
     option = {
 		name = naravam.9.a
 		add_adm_power = -15
+        custom_tooltip = nrvGoExp
 		hidden_effect = {
 			random_list = {
 				1 = {
