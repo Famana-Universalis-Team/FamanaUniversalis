@@ -373,7 +373,7 @@ country_event = {
 			limit = {
 				religion = pawani
 			}
-			reverse_add_opinion = {
+			add_opinion = {
 			who = ROOT
 			modifier = dragon_killer
 			}

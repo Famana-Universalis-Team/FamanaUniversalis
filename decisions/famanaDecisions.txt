@@ -767,8 +767,6 @@ country_decisions = {
 		allow = {
 				custom_trigger_tooltip = {
 					tooltip = holy_hunt_10_years
-				}
-				hidden_trigger = {
 					NOT = { has_country_modifier = recent_holy_hunt }
 				}
 		}
@@ -814,8 +812,6 @@ country_decisions = {
 		allow = {
             custom_trigger_tooltip = {
 				tooltip = sacrifice_10_years
-			}
-			hidden_trigger = {
 				NOT = { has_country_modifier = recent_human_sacrifice }
 			}
 		}
@@ -844,8 +840,6 @@ country_decisions = {
 		allow = {
 			custom_trigger_tooltip = {
 				tooltip = sacrifice_10_years
-			}
-			hidden_trigger = {
 				NOT = { has_country_modifier = recent_human_sacrifice }
 			}
 			is_at_war = yes

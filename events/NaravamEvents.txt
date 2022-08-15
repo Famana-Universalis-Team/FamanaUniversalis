@@ -571,7 +571,7 @@ country_event = {
 	
 	option = {
 		name = naravam.10.b
-		add_dip_power = -25
+		add_dip_power = -75
 		add_legitimacy = -10
     }
 }
@@ -617,7 +617,7 @@ country_event = {
 		add_stability = 1
 		add_country_modifier = {
 			name = nrv_religion_confirmed
-			duration = 1600
+			duration = 3600
 		}
     }	
 	
@@ -628,7 +628,7 @@ country_event = {
 		add_stability = 1
 		add_country_modifier = {
 			name = nrv_religion_confirmed
-			duration = 1600
+			duration = 3600
 		}
     }
 }
