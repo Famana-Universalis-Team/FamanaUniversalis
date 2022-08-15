@@ -119,7 +119,7 @@ PEX_ideas = {
 ORC_ideas = {
 	start = {
 		infantry_power = 0.15
-		diplomatic_reputation = 1
+		colonists = 1
 	}
 	
 	bonus = {
@@ -127,10 +127,7 @@ ORC_ideas = {
 	}
 
 	trigger = {
-		OR = {
-			tag = ORC
-			tag = ORS
-		}
+		tag = ORC
 	}
 	free = yes
 	
@@ -140,21 +137,62 @@ ORC_ideas = {
 	orc_academy = {
 		leader_land_shock = 1
 	}
-	orc_kuda = {
-		war_exhaustion_cost = -0.10
-		state_maintenance_modifier = -0.10
+	orc_enforce = {
+		global_own_trade_power = 0.10
+		global_colonial_growth = 15
 	}
 	orc_maldiks = {
 		reduced_liberty_desire = 20
 		diplomatic_annexation_cost = -0.10
 	}
 	orc_great = {
-		idea_cost = -0.1
+		governing_capacity_modifier = 0.10
 	}
-	orc_enforce = {
-		global_own_trade_power = 0.25
+	orc_kuda = {
+		war_exhaustion_cost = -0.10
+		state_maintenance_modifier = -0.10
 	}
 	orc_train = {
+		fire_damage_received = -0.10
+	}
+}
+
+ORS_ideas = {
+	start = {
+		global_trade_goods_size_modifier = 0.10
+		land_forcelimit_modifier = 0.10
+	}
+	
+	bonus = {
+		trade_efficiency = 0.1
+	}
+
+	trigger = {
+		tag = ORS
+	}
+	free = yes
+	
+	ors_1 = {
+		legitimacy = 1
+	}
+	ors_2 = {
+		leader_land_shock = 1
+	}
+	ors_3 = {
+		global_own_trade_power = 0.25
+	}
+	ors_4 = {
+		merc_maintenance_modifier = -0.20
+		global_regiment_cost = -0.10
+	}
+	ors_5 = {
+		navy_tradition = 1
+	}
+	ors_6 = {
+		defensiveness = 0.10
+		war_exhaustion = -0.05
+	}
+	ors_7 = {
 		fire_damage_received = -0.10
 	}
 }

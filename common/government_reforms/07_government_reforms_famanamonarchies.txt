@@ -492,7 +492,10 @@ ordican_senate = {
 	valid_for_nation_designer = yes
 	potential = {
 		AND = {
-			tag = ORC
+			OR = {
+				tag = ORC
+				tag = ORS
+			}
 			OR = {
 				has_global_flag = OrdicaDisaster
 				has_global_flag = survivedOrdicanCrisis

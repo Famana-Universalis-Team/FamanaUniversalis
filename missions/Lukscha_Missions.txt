@@ -13,7 +13,7 @@ lks_1 = {
         icon = lks_moon_icon
         required_missions = { }
         trigger = {
-            lukscham_region = {
+            lukscha_region = {
                 type = all
                 OR = {
                     owned_by = ROOT
@@ -25,7 +25,9 @@ lks_1 = {
             
         }
         provinces_to_highlight = {
-            
+            NOT = { country_or_non_sovereign_subject_holds = ROOT }
+            NOT = { is_empty = yes }
+			region = lukscha_region
         }
     }
 
@@ -40,7 +42,18 @@ lks_1 = {
                 always = yes
             }
             else = {
-
+                num_of_owned_provinces_with = {
+                    value = 5
+                    has_seat_in_parliament = yes
+                }
+                estate_loyalty = {
+                    estate = estate_church
+                    loyalty = 60
+                }
+                estate_loyalty = {
+                    estate = estate_nobles
+                    loyalty = 60
+                }
             }
         }
         effect = {
