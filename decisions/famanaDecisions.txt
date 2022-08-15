@@ -763,33 +763,32 @@ country_decisions = {
 	hold_a_holy_hunt = {
         potential = {
             religion = naravami
+            NOT = { has_country_modifier = recent_holy_hunt }
 		}
 		allow = {
-				custom_trigger_tooltip = {
-					tooltip = holy_hunt_10_years
-					NOT = { has_country_modifier = recent_holy_hunt }
-				}
+			mil = 2
+            mil_power = 30
 		}
 		effect = {
             add_mil_power = -30
 			add_country_modifier = {
 				name = holy_hunt_effects
-				duration = 1800
+				duration = 1825
 			}
+            add_estate_loyalty = {
+                estate = estate_church
+                loyalty = 10
+            }
 			hidden_effect = {
 				add_country_modifier = {
 					name = recent_holy_hunt
-					duration = 7200
+					duration = 7300
 					hidden = yes
 				}
 			}
 		}
 		ai_will_do = {
 			factor = 0.5
-			modifier = {
-                factor = 0
-				NOT = { mil_power = 30 }
-            }
 			modifier = {
                 factor = 0.2
 				NOT = { mil_power = 50 }
@@ -808,25 +807,24 @@ country_decisions = {
 	perform_human_sacrifices = {
         potential = {
             religion = bosisi
+            NOT = { has_country_modifier = recent_human_sacrifice }
 		}
 		allow = {
-            custom_trigger_tooltip = {
-				tooltip = sacrifice_10_years
-				NOT = { has_country_modifier = recent_human_sacrifice }
-			}
+            manpower = 1
 		}
 		effect = {
 			add_country_modifier = {
 				name = human_sacrifices
-				duration = 1800
+				duration = 1825
 			}
 			hidden_effect = {
 				add_country_modifier = {
 					name = recent_human_sacrifice
-					duration = 3600
+					duration = 3650
 					hidden = yes
 				}
 			}
+            add_manpower = -1
 		}
 		ai_will_do = {
 			factor = 0
@@ -836,19 +834,17 @@ country_decisions = {
 	perform_enemy_sacrifices = {
         potential = {
             religion = bosisi
+            NOT = { has_country_modifier = recent_human_sacrifice }
+            NOT = { stability = 3 }
 		}
 		allow = {
-			custom_trigger_tooltip = {
-				tooltip = sacrifice_10_years
-				NOT = { has_country_modifier = recent_human_sacrifice }
-			}
 			is_at_war = yes
 		}
 		effect = {
 			add_stability = 1
 			add_country_modifier = {
 				name = enemy_sacrifices
-				duration = 1800
+				duration = 1825
 			}
 			every_country = {
 				limit = { war_with = ROOT }
@@ -860,7 +856,7 @@ country_decisions = {
 			hidden_effect = {
 				add_country_modifier = {
 					name = recent_human_sacrifice
-					duration = 3600
+					duration = 3650
 					hidden = yes
 				}
 			}

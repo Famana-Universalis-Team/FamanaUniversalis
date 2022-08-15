@@ -2750,7 +2750,16 @@ atisha_irrigation_systems = {
 
 	#can our country use it?
 	can_use_modifiers_trigger = {
-	
+		culture_group = Antiash
+		owner = {
+			OR = {
+				culture_group = Antiash
+				accepted_culture = Kurkari
+				accepted_culture = Manthwar
+				accepted_culture = Ashdamir
+				accepted_culture = Ganush
+			}
+		}
 	}
 
 	#can our country upgrade it?

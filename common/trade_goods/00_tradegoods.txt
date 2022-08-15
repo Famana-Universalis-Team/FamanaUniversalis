@@ -842,16 +842,16 @@ ivory = {
 			NOT = { continent = africa }
 			NOT = { area = subarctic_islands_area }
 			NOT = { area = greenland_area }
-			NOT = { region = napora_region }
-			NOT = { region = vordor_region }
+			#NOT = { region = napora_region }
+			#NOT = { region = vordor_region }
 		}
 		modifier = {
 			factor = 0
 			NOT = { has_terrain = jungle }
 			NOT = { has_terrain = savannah }
 			NOT = { has_terrain = glacier }
-			NOT = { region = napora_region }
-			NOT = { region = vordor_region }
+			#NOT = { region = napora_region }
+			#NOT = { region = vordor_region }
 		}
 		modifier = {
 			factor = 0
