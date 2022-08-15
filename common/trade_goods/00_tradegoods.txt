@@ -838,37 +838,41 @@ ivory = {
 		}
 		modifier = {
 			factor = 0
-			NOT = { continent = asia }
-			NOT = { continent = africa }
-			NOT = { area = subarctic_islands_area }
-			NOT = { area = greenland_area }
-			#NOT = { region = napora_region }
-			#NOT = { region = vordor_region }
-		}
-		modifier = {
-			factor = 0
-			NOT = { has_terrain = jungle }
-			NOT = { has_terrain = savannah }
-			NOT = { has_terrain = glacier }
-			#NOT = { region = napora_region }
-			#NOT = { region = vordor_region }
-		}
-		modifier = {
-			factor = 0
-			OR = {
-				region = west_siberia_region
-				region = east_siberia_region
-				region = manchuria_region
-				region = central_asia_region
-				region = south_africa_region
+			NOT = { 
+				OR = {
+					continent = estal 
+					continent = antebar 
+				}
 			}
 		}
 		modifier = {
-			factor = 0.5
-			region = malaya_region
-			region = moluccas_region
-			region = indonesia_region
+			factor = 0
+			NOT = {
+				OR = { 
+				has_terrain = jungle 
+				has_terrain = savannah
+				has_terrain = glacier 
+				region = napora_region 
+				region = vordor_region 
+				}
+			}
 		}
+		#modifier = {
+			#factor = 0
+			#OR = {
+				#region = west_siberia_region
+				#region = east_siberia_region
+				#region = manchuria_region
+				#region = central_asia_region
+				#region = south_africa_region
+			#}
+		#}
+		#modifier = {
+			#factor = 0.5
+			#region = malaya_region
+			#region = moluccas_region
+			#region = indonesia_region
+		#}
 		modifier = {
 			factor = 1.25
 			OR = {
