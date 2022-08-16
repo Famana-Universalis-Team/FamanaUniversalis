@@ -624,15 +624,16 @@ on_new_consort = {
 }
 
 # country
-on_monarch_death = {
-	if = {
-		limit = {
-			has_reform = vanoman_elective_monarchy
-		}
-		country_event = {
-			id = vanoma.14
-		}
-	}
+on_monarch_death = { #ADARTHO FIX THIS YOU ANGLOID
+	#if = {
+	#	limit = {
+	#		has_reform = vanoman_elective_monarchy
+	#	}
+	#
+	#	country_event = {
+	#		id = vanoma.14
+	#	}
+	#}
 	if = {
 		limit = { has_country_modifier = sought_after_bachelor }
 		remove_country_modifier = sought_after_bachelor
