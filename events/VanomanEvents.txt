@@ -808,6 +808,7 @@ country_event = { #Pick New king
 			name = heir3
 			claim = 100
 		}
+        set_country_flag = dead_ruler
     }
 	option = {
         name = vanoma.14.b
@@ -816,6 +817,7 @@ country_event = { #Pick New king
 			name = heir2
 			claim = 100
 		}
+        set_country_flag = dead_ruler
     }
 	option = {
         name = vanoma.14.c
@@ -824,5 +826,6 @@ country_event = { #Pick New king
 			name = heir1
 			claim = 100
 		}
+        set_country_flag = dead_ruler
     }
 }

@@ -627,8 +627,11 @@ on_new_consort = {
 on_monarch_death = {
 	if = {
 		limit = {
+			NOT = { has_country_flag = dead_ruler }
 			has_reform = vanoman_elective_monarchy
 		}
+		set_country_flag = dead_ruler
+		exile_ruler_as = my_exiled_ruler
 		country_event = {
 			id = vanoma.14
 		}
