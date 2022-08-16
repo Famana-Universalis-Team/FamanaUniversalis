@@ -39,6 +39,7 @@ lag_1 = {
     lag_beyond_the_highlands = {
         icon = secure_the_republic
         required_missions = { lag_feyel_and_woch }
+        position = 4
         trigger = {
 
         }
@@ -65,6 +66,7 @@ lag_2 = {
     lag_feyel_and_woch = {
         icon = secure_the_republic
         required_missions = {lag_sense_of_unity }
+        position = 3
         trigger = {
 
         }
@@ -91,6 +93,20 @@ lag_3 = {
     lag_deal_with_the_guilds = {
         icon = secure_the_republic
         required_missions = { }
+        position = 2
+        trigger = {
+
+        }
+        effect = {
+
+        }
+        #provinces_to_highlight = {}
+    }
+
+    lag_the_question_of_slavery = {
+        icon = secure_the_republic
+        required_missions = { lag_deal_with_the_guilds lag_expand_the_inland_cities }
+        position = 4
         trigger = {
 
         }
@@ -167,6 +183,19 @@ lag_5 = {
     lag_build_ports = {
         icon = secure_the_republic
         required_missions = { }
+        trigger = {
+
+        }
+        effect = {
+
+        }
+        #provinces_to_highlight = {}
+    }
+
+    lag_the_unsinkable_fleet = {
+        icon = secure_the_republic
+        required_missions = { lag_build_ports }
+        position = 4
         trigger = {
 
         }
