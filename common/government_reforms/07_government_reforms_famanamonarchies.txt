@@ -286,7 +286,7 @@ geq_reform = {
 	icon = "elective_monarchy"
 	allow_normal_conversion = no
 	potential = {
-		tag = VAN
+		has_reform = geq_reform
 	}
 	fixed_rank = 2
 	valid_for_nation_designer = yes
