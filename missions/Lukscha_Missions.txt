@@ -22,7 +22,11 @@ lks_1 = {
             }
         }
         effect = {
-            
+            add_army_tradition = 25
+            add_country_modifier = {
+                name = lks_reined_in_chiefs
+                duration = 5475
+            }
         }
         provinces_to_highlight = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
@@ -48,33 +52,64 @@ lks_1 = {
                 }
                 estate_loyalty = {
                     estate = estate_church
-                    loyalty = 60
+                    loyalty = 65
                 }
                 estate_loyalty = {
                     estate = estate_nobles
-                    loyalty = 60
+                    loyalty = 65
                 }
             }
         }
         effect = {
-            
+            add_adm_power = 250
+            add_country_modifier = {
+                name = lks_the_first_forum
+                duration = 18250
+            }
+            add_country_modifier = {
+                name = lks_internal_growth
+                duration = 3650
+            }
         }
-        provinces_to_highlight = {
-            
-        }
+        #provinces_to_highlight = {}
     }
 
     lks_beyond_the_forest = {
         icon = lks_moon_icon
         required_missions = { lks_ensure_unity }
         trigger = {
-            
+            if = {
+                limit = {
+                    ai = yes
+                }
+                is_year = 390
+            }
+            else = {
+                NOT = {
+                    has_country_modifier = lks_internal_growth
+                }
+                num_of_owned_provinces_with = {
+                    value = 10
+                    region = lukscha_region
+                    development = 8
+                }
+                num_of_generals = 1
+            }
         }
         effect = {
-            
+            add_country_modifier = {
+                name = lks_population_boom
+                duration = 9125
+            }
+            country_event = {
+                id = lukscham.7
+            }
         }
         provinces_to_highlight = {
-            
+            owned_by = ROOT
+            NOT = { development = 10 }
+            NOT = { is_empty = yes }
+			region = lukscha_region
         }
     }
 
@@ -82,7 +117,18 @@ lks_1 = {
         icon = lks_moon_icon
         required_missions = { lks_beyond_the_forest }
         trigger = {
-            
+            if = {
+                limit = {
+                    ai = yes
+                }
+                is_year = 400
+            }
+            else = {
+                NOT = {
+                    has_country_modifier = lks_population_boom
+                }
+                
+            }
         }
         effect = {
             

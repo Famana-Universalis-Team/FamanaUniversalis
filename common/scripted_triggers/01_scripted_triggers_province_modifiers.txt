@@ -159,6 +159,10 @@ province_with_special_goods_produced_trigger = {
 		has_province_modifier = jingdezhen_kilns
 		has_province_modifier = perfume_capital
 		has_active_triggered_province_modifier = cerro_rico_modifier
+		#Famana
+		has_province_modifier = fasalep_diamond_mines
+		has_province_modifier = gomic_breadbasket
+		has_province_modifier = slave_markets_of_ameleka
 	}
 }
 
@@ -182,6 +186,10 @@ province_without_special_goods_produced_trigger = {
 		has_province_modifier = perfume_capital
 		has_active_triggered_province_modifier = cerro_rico_modifier
 		has_latent_trade_goods = coal
+		#Famana
+		has_province_modifier = fasalep_diamond_mines
+		has_province_modifier = gomic_breadbasket
+		has_province_modifier = slave_markets_of_ameleka
 	}
 }
 

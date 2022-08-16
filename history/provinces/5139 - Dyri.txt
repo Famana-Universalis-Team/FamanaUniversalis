@@ -24,3 +24,8 @@ add_permanent_province_modifier = {
 	name = makyna_estuary_modifier
 	duration = -1
 }
+
+add_permanent_province_modifier = {
+	name = gomic_breadbasket
+	duration = -1
+}

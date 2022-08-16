@@ -20,3 +20,8 @@ extra_cost = 1
 owner = RTK
 controller = RTK
 add_core = RTK
+
+add_permanent_province_modifier = {
+	name = gomic_breadbasket
+	duration = -1
+}

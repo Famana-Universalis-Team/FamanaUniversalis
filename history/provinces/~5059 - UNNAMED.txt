@@ -19,8 +19,3 @@ is_city = yes
 extra_cost = 1
 
 center_of_trade = 2
-
-add_permanent_province_modifier = {
-	name = fasalep_diamond_mines
-	duration = -1
-}

@@ -20,8 +20,3 @@ extra_cost = 1
 owner = HZR
 controller = HZR
 add_core = HZR
-
-add_permanent_province_modifier = {
-	name = gomic_breadbasket
-	duration = -1
-}

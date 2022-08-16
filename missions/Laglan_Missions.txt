@@ -5,7 +5,10 @@ lag_1 = {
     ai = yes
     potential = {
         NOT = { map_setup = map_setup_random }
-		always = no
+		OR = {
+            tag = LAG
+            tag = RES
+        }
     }
     has_country_shield = yes
 
@@ -52,7 +55,10 @@ lag_2 = {
     ai = yes
     potential = {
         NOT = { map_setup = map_setup_random }
-		always = no
+		OR = {
+            tag = LAG
+            tag = RES
+        }
     }
     has_country_shield = yes
 
@@ -75,7 +81,10 @@ lag_3 = {
     ai = yes
     potential = {
         NOT = { map_setup = map_setup_random }
-		always = no
+		OR = {
+            tag = LAG
+            tag = RES
+        }
     }
     has_country_shield = yes
 
@@ -98,7 +107,10 @@ lag_4 = {
     ai = yes
     potential = {
         NOT = { map_setup = map_setup_random }
-		always = no
+		OR = {
+            tag = LAG
+            tag = RES
+        }
     }
     has_country_shield = yes
 
@@ -145,7 +157,10 @@ lag_5 = {
     ai = yes
     potential = {
         NOT = { map_setup = map_setup_random }
-		always = no
+		OR = {
+            tag = LAG
+            tag = RES
+        }
     }
     has_country_shield = yes
 

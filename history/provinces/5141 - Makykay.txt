@@ -19,3 +19,8 @@ extra_cost = 1
 owner = ELK
 controller = ELK
 add_core = ELK
+
+add_permanent_province_modifier = {
+	name = gomic_breadbasket
+	duration = -1
+}

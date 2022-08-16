@@ -1,5 +1,6 @@
 discovered_by = east_gomic_tech_gr
 discovered_by = lathvy_tech_gr
+discovered_by = west_gomic_tech_gr
 #Written with Eu4 Easy Province Creator by emiroercn
 #UNNAMED
 add_core = LAG
@@ -10,13 +11,11 @@ religion = western_oppian
 hre = no
 
 base_tax = 3
-base_production = 2
+base_production = 3
 trade_goods = fish
-base_manpower = 2
-capital = "Haoli"
+base_manpower = 4
+capital = "Huparan"
 is_city = yes
 extra_cost = 1
+center_of_trade = 1
 
-fort_15th = yes
-
-discovered_by = west_gomic_tech_gr
