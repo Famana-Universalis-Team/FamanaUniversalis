@@ -145,7 +145,10 @@ lks_1 = {
             
         }
         effect = {
-            
+            add_country_modifier = {
+                name = lks_into_gotzlica
+                duration = 9125
+            }
         }
         provinces_to_highlight = {
             
@@ -159,7 +162,8 @@ lks_1 = {
             
         }
         effect = {
-            
+            add_army_professionalism = 0.05
+            add_treasury = 750
         }
         provinces_to_highlight = {
             
