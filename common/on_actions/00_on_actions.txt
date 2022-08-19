@@ -631,6 +631,7 @@ on_monarch_death = {
 			has_reform = vanoman_elective_monarchy
 		}
 		set_country_flag = dead_ruler
+		add_stability = 1
 		exile_ruler_as = my_exiled_ruler
 		country_event = {
 			id = vanoma.14

@@ -321,12 +321,12 @@
  PlayerReasonsDelk: "This nation is controlled by a player. They may choose their position on their own whims.\nAs of now, Delkian has [checkAcceptDelk]d our proposal."
  PlayerReasonsVin: "This nation is controlled by a player. They may choose their position on their own whims.\nAs of now, Vinian has [checkAcceptVin]d our proposal."
 
- SHIR_REASONS: "Shir Reasoning"
- MOR_REASONS: "Mor Reasoning"
- VIN_REASONS: "Vin Reasoning"
- DELK_REASONS: "Delk Reasoning"
+ SHIR_REASONS: "[GetAppropriateTagShir]"
+ MOR_REASONS: "[GetAppropriateTagMor]"
+ VIN_REASONS: "[GetAppropriateTagVin]"
+ DELK_REASONS: "[GetAppropriateTagDelk]"
 
- ShirRep: "[shirian_representative.GetName]"
+ ShirRep: "[player_or_no_council_shir.GetName]"
  VinRep: "[vinian_representative.GetName]"
  MorRep: "[morian_representative.GetName]"
  DelkRep: "[delkian_representative.GetName]"

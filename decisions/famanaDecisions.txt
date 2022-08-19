@@ -600,6 +600,7 @@ country_decisions = {
 
     restore_xalian_diplomatically = {
         potential = {
+            always = no
             NOT = { has_global_flag = Council_of_Xon }
             NOT = { has_global_flag = Xalian_religion_restored }
             religious_ideas = 7 #completed religious ideas
