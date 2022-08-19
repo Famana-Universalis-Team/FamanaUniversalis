@@ -1639,3 +1639,25 @@ lks_into_gotzlica = {
     infantry_power = 0.15
     reinforce_speed = 0.20
 }
+
+orc_foreign_scholars = {
+    global_institution_spread = 0.1
+    technology_cost = -0.1
+}
+
+orc_internal_scholars = {
+    innovativeness_gain = 0.5
+    free_policy = 1
+    idea_cost = -0.1
+}
+
+orc_religious_debate = {
+    global_missionary_strength = -0.01
+    global_heretic_missionary_strength = -0.03
+    tolerance_heretic = 3
+}
+
+orc_one_faith = {
+    global_missionary_strength = 0.02
+    monthly_piety = 0.05
+}

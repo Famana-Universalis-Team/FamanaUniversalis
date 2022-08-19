@@ -663,6 +663,12 @@ country_event = {
 			particularist_rebels = 2
 		}
 		set_country_flag = pissedoffnobles
+		hidden_effect = {
+			change_variable = {
+				which = OrdicanFuckups
+				value = 1
+			}
+		}
 	}
 }
 
@@ -718,6 +724,12 @@ country_event = {
 				size = 2
 			}
 		}
+		hidden_effect = {
+			change_variable = {
+				which = OrdicanFuckups
+				value = 1
+			}
+		}
 	}
 	option = {
 		name = ordica.15.c
@@ -734,6 +746,12 @@ country_event = {
 		}
 		random_owned_province = {
 			noble_rebels = 2
+		}
+		hidden_effect = {
+			change_variable = {
+				which = OrdicanFuckups
+				value = 1
+			}
 		}
 	}
 }
@@ -896,6 +914,12 @@ country_event = {
 			noble_rebels = 2
 		}
 		set_country_flag = noblesNoAutonomy
+		hidden_effect = {
+			change_variable = {
+				which = OrdicanFuckups
+				value = 1
+			}
+		}
 	}
 }
 
@@ -1640,6 +1664,12 @@ country_event = {
 				}
 			}
 		}
+		hidden_effect = {
+			change_variable = {
+				which = OrdicanFuckups
+				value = 1
+			}
+		}
 	}
 	option = {
 		name = ordica.26.b
@@ -1663,11 +1693,11 @@ country_event = {
 	id = ordica.27
 	title = ordica.27.t
 	desc = ordica.27.d
-	picture = WESTERNISATION_eventPicture
+	picture = STREET_SPEECH_eventPicture
 	fire_only_once = yes
 
 	mean_time_to_happen = {
-		months = 8
+		months = 10
 	}
 
 	trigger = {
@@ -1676,13 +1706,29 @@ country_event = {
 	}
 
 	option = {
-		name = ordica.27.a
-		ai_chance = { factor = 1 }
+		name = ordica.27.a #Placate foreign scholars
+		ai_chance = { factor = 4 }
+		custom_tooltip = RequirementForOrdisa
+		add_country_modifier = {
+			name = orc_foreign_scholars
+			duration = 3650
+		}
+		set_country_flag = orc_invited_foreingers
 	}
 
 	option = {
-		name = ordica.27.b
+		name = ordica.27.b #Isolationism
 		ai_chance = { factor = 1 }
+		add_country_modifier = {
+			name = orc_internal_scholars
+			duration = 3650
+		}
+		hidden_effect = {
+			change_variable = {
+				which = OrdicanFuckups
+				value = 1
+			}
+		}
 	}
 }
 
@@ -1691,11 +1737,11 @@ country_event = {
 	id = ordica.28
 	title = ordica.15.t
 	desc = ordica.15.d
-	picture = WOUNDED_SOLDIERS_eventPicture
+	picture = RELIGION_eventPicture
 	fire_only_once = yes
 
 	mean_time_to_happen = {
-		months = 8
+		months = 12
 	}
 
 	trigger = {
@@ -1704,8 +1750,30 @@ country_event = {
 	}
 
 	option = {
-		name = ordica.28.a
+		name = ordica.28.a #Encourage religious debate
+		ai_chance = { factor = 4 }
+		custom_tooltip = RequirementForOrdisa
+		add_piety = -0.1
+		add_country_modifier = {
+			name = orc_religious_debate
+			duration = 3650
+		}
+		set_country_flag = orc_religious_tolerance
+	}
+
+	option = {
+		name = ordica.28.b #Burn everything
 		ai_chance = { factor = 1 }
+		add_country_modifier = {
+			name = orc_one_faith
+			duration = 1825
+		}
+		hidden_effect = {
+			change_variable = {
+				which = OrdicanFuckups
+				value = 1
+			}
+		}
 	}
 }
 
@@ -1714,7 +1782,7 @@ country_event = {
 	id = ordica.29
 	title = ordica.29.t
 	desc = ordica.29.d
-	picture = WOUNDED_SOLDIERS_eventPicture
+	picture = RELIGIOUS_CONVERSION_eventPicture
 	fire_only_once = yes
 
 	mean_time_to_happen = {
@@ -1724,11 +1792,37 @@ country_event = {
 	trigger = {
 		tag = ORC
 		has_global_flag = OrdicaDisaster
+		any_owned_Province = {
+			OR = {
+				area = garex_area
+				area = veclla_area
+				area = roltam_area
+				area = loqass_area
+				area = darz_area
+			}
+		}
+		has_global_flag = RochoniReformation
 	}
 
 	option = {
-		name = ordica.29.a
+		name = ordica.29.a #aaaaaaaaaaaaaaaaaaaaaaa
 		ai_chance = { factor = 1 }
+		every_owned_province = {
+			limit = {
+				AND = {
+					OR = {
+						area = garex_area
+						area = veclla_area
+						area = roltam_area
+						area = loqass_area
+						area = darz_area
+					}
+					religion = lathvy
+				}
+			}
+			change_religion = rochoni
+		}
+		set_country_flag = rochoni_pest
 	}
 }
 
@@ -1737,21 +1831,56 @@ country_event = {
 	id = ordica.30
 	title = ordica.30.t
 	desc = ordica.30.d
-	picture = WOUNDED_SOLDIERS_eventPicture
+	picture = RELIGIOUS_TURMOIL_eventPicture
 	fire_only_once = yes
 
 	mean_time_to_happen = {
-		months = 8
+		months = 2
 	}
 
 	trigger = {
 		tag = ORC
 		has_global_flag = OrdicaDisaster
+		has_country_flag = rochoni_pest
+		religion = lathvy
 	}
 
 	option = {
 		name = ordica.30.a
 		ai_chance = { factor = 1 }
+		random_owned_province = {
+			limit = {
+				religion = rochoni
+			}
+			spawn_rebels = {
+				type = rochoni_rebels
+				size = 2
+			}
+		}
+		random_owned_province = {
+			limit = {
+				religion = rochoni
+			}
+			spawn_rebels = {
+				type = rochoni_rebels
+				size = 1
+			}
+		}
+		random_owned_province = {
+			limit = {
+				religion = rochoni
+			}
+			spawn_rebels = {
+				type = rochoni_rebels
+				size = 1
+			}
+		}
+	}
+
+	option = {
+		name = ordica.30.b
+		ai_chance = { factor = 0 }
+		change_religion = rochoni
 	}
 }
 
@@ -1770,11 +1899,27 @@ country_event = {
 	trigger = {
 		tag = ORC
 		has_global_flag = OrdicaDisaster
+		check_variable = {
+			which = OrdicanFuckups
+			value = 3
+		}
 	}
 
 	option = {
 		name = ordica.31.a
 		ai_chance = { factor = 1 }
+		add_war_exhaustion = 2
+	}
+	option = {
+		name = ordica.31.b
+		ai_chance = { factor = 3 }
+		hidden_effect = {
+			change_variable = {
+				which = OrdicanFuckups
+				value = 1
+			}
+		}
+		add_stability = -1
 	}
 }
 
@@ -1783,30 +1928,58 @@ country_event = {
 	id = ordica.32
 	title = ordica.32.t
 	desc = ordica.32.d
-	picture = WOUNDED_SOLDIERS_eventPicture
+	picture = SEJM_eventPicture
 	fire_only_once = yes
+	major = yes
 
 	mean_time_to_happen = {
-		months = 8
+		months = 1
 	}
 
 	trigger = {
 		tag = ORC
 		has_global_flag = OrdicaDisaster
+		AND = {
+			has_country_flag = NoblesHappy
+			has_country_flag = orc_religious_tolerance
+			has_country_flag = orc_invited_foreingers
+		}
 	}
 
 	option = {
 		name = ordica.32.a
 		ai_chance = { factor = 1 }
+		restore_country_name = yes
+		change_tag = ORS
+		if = {
+			limit = {
+				AND = {
+					has_custom_ideas = no
+					NOT = {
+						has_idea_group = ORS_ideas
+					}
+				}
+			}
+			country_event = { id = ideagroups.1 } #Swap Ideas
+		}
+		if = {
+			limit = {
+				NOT = { government_rank = 3 }
+			}
+			set_government_rank = 3
+		}
+		country_event = {
+			id = ordica.13
+		}
 	}
 }
 
-#Maldans run off into the steppe - Qubare if no Zubara
+#Maldans run off into the steppe - Qubare if no Zubara  ##### REMEMBER TO DO THIS EVENT LATER
 country_event = {
 	id = ordica.33
 	title = ordica.33.t
 	desc = ordica.33.d
-	picture = WOUNDED_SOLDIERS_eventPicture
+	picture = WOUNDED_SOLDIERS_eventPicture ####	REMIND ME TO DO THIS ONE
 	fire_only_once = yes
 
 	mean_time_to_happen = {
@@ -1814,6 +1987,7 @@ country_event = {
 	}
 
 	trigger = {
+		always = no
 		tag = ORC
 		has_global_flag = OrdicaDisaster
 	}
@@ -1829,39 +2003,108 @@ country_event = {
 	id = ordica.34
 	title = ordica.34.t
 	desc = ordica.34.d
-	picture = WOUNDED_SOLDIERS_eventPicture
+	picture = REVOLUTION_eventPicture
 	fire_only_once = yes
 
 	mean_time_to_happen = {
-		months = 8
+		months = 5
 	}
 
 	trigger = {
 		tag = ORC
 		has_global_flag = OrdicaDisaster
+		if = {
+			limit = {
+				ai = no
+			}
+			check_variable = {
+				which = OrdicanFuckups
+				value = 6
+			}
+		}
+		else = {
+			check_variable = {
+				which = OrdicanFuckups
+				value = 4
+			}
+		}
 	}
 
 	option = {
 		name = ordica.34.a
 		ai_chance = { factor = 1 }
+		custom_tooltip = ORC_COLLAPSE
+		hidden_effect = {
+			release_all_subjects = yes
+			release = VOR
+			release = NAB
+			release = PRT
+			release = KLY
+			release = VAM
+			release = DKL
+			release = YUV
+			release = JNS
+			release = PIX
+			release = WLR
+			release = LAY
+			release = ROL
+			release = FST
+			release = KRH
+			release = POM
+			release = GNZ
+			release = NPX
+			release = RND
+			release = RNP
+			release = KAM
+			release = SPT
+			release = FLB
+			release = ARO
+			release = GLB
+			release = NES
+			release = CEL
+			release = YVR
+			release = NOX
+			release = MLY
+			release = MLD
+			release = RDU
+			release = RMX
+			release = DRA
+			release = BAF
+			release = TUL
+			5725 = {
+				owner = {
+					inherit = ROOT
+				}
+			}
+			every_province = {
+				limit = {
+					is_core = ROOT
+				}
+				remove_core = ROOT
+			}
+		}
 	}
 }
 
 #End of the disaster after ~3 years
 country_event = {
 	id = ordica.35
-	title = ordica.35.t
-	desc = ordica.35.d
-	picture = WOUNDED_SOLDIERS_eventPicture
 	fire_only_once = yes
+	hidden = yes
 
 	mean_time_to_happen = {
-		months = 8
+		months = 30
 	}
 
 	trigger = {
 		tag = ORC
 		has_global_flag = OrdicaDisaster
+	}
+
+	immediate = {
+		country_event = {
+			id = ordica.13
+		}
 	}
 
 	option = {

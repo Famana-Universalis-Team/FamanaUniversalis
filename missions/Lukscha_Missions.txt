@@ -54,10 +54,6 @@ lks_1 = {
                     estate = estate_church
                     loyalty = 65
                 }
-                estate_loyalty = {
-                    estate = estate_nobles
-                    loyalty = 65
-                }
             }
         }
         effect = {
