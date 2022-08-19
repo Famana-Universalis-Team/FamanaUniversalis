@@ -62,9 +62,23 @@ on_startup = {
 		#which = DelkXonReasonsNeg
 		#value = 0
 	#}
-	set_variable = {
-		which = OrdicanFuckups
-		value = 0
+	if = {
+		limit = {
+			tag = ORC
+		}
+		set_variable = {
+			which = OrdicanFuckups
+			value = 0
+		}
+	}
+	if = {
+		limit = {
+			has_reform = desert_tribe
+		}
+		set_variable = {
+			which = migrations
+			value = 0
+		}
 	}
 	#set_variable = {
 	#	which = otherGuyMil
@@ -235,6 +249,24 @@ on_war_won = {
 		}
 		add_church_power = 50
 	}
+
+	if = {
+		limit = {
+			AND = {
+				ROOT = {
+					has_reform = desert_tribe
+				}
+				FROM = {
+					NOT = {
+						has_reform = desert_tribe
+					}
+				}
+			}
+		}
+		ROOT = {
+			set_country_flag = civilised_war_won
+		}
+	}
 }
 
 # country
@@ -357,6 +389,28 @@ on_battle_lost_province = {
 # country
 # root = winning country, from = location
 on_siege_won_country = {
+	if = {
+		limit = {
+			FROM = {
+				owner = {
+					AND = {
+						OR = {
+							tag = LDV
+							tag = TIT
+							tag = ODS
+							tag = SOY
+						}
+						NOT = {
+							has_country_flag = mission_no_migrating
+						}
+					}
+				}
+			}
+		}
+		country_event = {
+			id = bosisi.13
+		}
+	}
 	if = {
 		limit = {
 			NOT = { has_global_flag = antiash_mission_finished has_country_flag = antiash_raided_1_capital }

@@ -250,6 +250,7 @@ country_decisions = {
     tribal_migrate = {
         potential = {
             has_reform = desert_tribe
+            NOT = { has_country_flag = mission_no_migrating }
 		}
 		allow = {
 			NOT = {
@@ -259,15 +260,6 @@ country_decisions = {
                     hidden_trigger = {
                         has_country_flag = migmenuopen
                     }
-                    custom_trigger_tooltip = {
-                        tooltip = desertMigrateTroll
-                        NOT = {
-                            num_of_owned_provinces_with	= {
-                                value = 2
-                                owned_by = ROOT
-                            }
-                        }
-                    }
                 }
             }
 		}
@@ -276,6 +268,20 @@ country_decisions = {
                 id = bosisi.1
             }
             set_country_flag = migmenuopen
+            if = {
+                limit = {
+                    num_of_owned_provinces_with = {
+                        value = 2
+                        owned_by = ROOT
+                    }
+                }
+                every_owned_province = {
+                    limit = {
+                        NOT = { is_capital = yes }
+                    }
+                    cede_province = previous_owner
+                }
+            }
 		}
 		ai_will_do = {
 			factor = 1

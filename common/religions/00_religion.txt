@@ -1006,6 +1006,7 @@ gomic_pagan_group = {
 		province = {
 			local_missionary_strength = 0.02
 		}
+		declare_war_in_regency = yes
 		
 		heretic = { ANTIASH_H }
 	}

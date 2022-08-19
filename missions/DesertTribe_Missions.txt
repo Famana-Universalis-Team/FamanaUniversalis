@@ -1,0 +1,179 @@
+desert_tribe_1 = {
+    slot = 2
+    generic = no
+    ai = yes
+    potential = {
+		has_reform = desert_tribe
+    }
+    has_country_shield = yes
+
+	destribe_fight_tribes = {
+        icon = mission_non-western_cavalry_raid
+        required_missions = { }
+		position = 2
+        trigger = {
+            custom_trigger_tooltip = {
+				tooltip = DESERT_TRIBES_BEATEN
+				has_country_flag = successful_repel_tribe
+			}
+        }
+        effect = {
+			add_manpower = 4
+            add_country_modifier = {
+				name = destr_army
+				duration = -1
+			}
+        }
+    }
+
+	destribe_fight_countries = {
+        icon = mission_steppe_warriors
+        required_missions = { }
+		position = 4
+        trigger = {
+            custom_trigger_tooltip = {
+				tooltip = NONDESERT_TRIBES_BEATEN
+				has_country_flag = civilised_war_won
+			}
+        }
+        effect = {
+			add_manpower = 4
+            add_country_modifier = {
+				name = destr_nationhood
+				duration = -1
+			}
+        }
+    }
+}
+
+desert_tribe_2 = {
+    slot = 3
+    generic = no
+    ai = yes
+    potential = {
+		has_reform = desert_tribe
+    }
+    has_country_shield = yes
+
+    destribe_search_for_water = {
+        icon = mission_bedouins
+        required_missions = { }
+        trigger = {
+            custom_trigger_tooltip = {
+				tooltip = MIGRATE_GREAT_DESERT
+				check_variable = {
+					which = migrations
+					value = 3
+				}
+			}
+        }
+        effect = {
+            change_government_reform_progress = 100
+			set_country_flag = allowed_to_not_migrate
+			custom_tooltip = ALLOW_GD_NOMIGRATE
+        }
+    }
+
+	destribe_leave_the_desert = {
+        icon = mission_sw_against_the_desert
+        required_missions = { destribe_search_for_water }
+        trigger = {
+			capital_scope = {
+				NOT = { has_province_modifier = great_desert_modifier }
+			}
+        }
+        effect = {
+			add_country_modifier = {
+				name = destr_encourage_settlement
+				duration = 36500
+			}
+			create_conquistador = { tradition = 50 }
+        }
+    }
+
+	destribe_settle_down = {
+        icon = mission_sw_yucca_plants
+        required_missions = { destribe_leave_the_desert }
+        trigger = {
+			capital_scope = {
+				NOT = { has_province_modifier = great_desert_modifier }
+			}
+			custom_trigger_tooltip = {
+				tooltip = DESTRIBE_WAIT_15_YEARS
+				NOT = { has_country_modifier = destr_migtimer }
+			}
+        }
+        effect = {
+			custom_tooltip = no_more_migrations
+			set_country_flag = mission_no_migrating
+			add_country_modifier = {
+				name = destr_colonisation
+				duration = 5475
+			}
+			capital_scope = {
+				add_base_manpower = 1
+				add_base_tax = 1
+				add_base_production = 1
+			}
+        }
+    }
+
+	destribe_develop_up = {
+        icon = mission_arabian_fort
+        required_missions = { destribe_settle_down }
+        trigger = {
+			num_of_owned_provinces_with = {
+				value = 3
+				owned_by = ROOT
+			}
+        }
+        effect = {
+			custom_tooltip = destr_debuff_counter
+			add_country_modifier = {
+				name = destr_development
+				duration = -1
+			}
+        }
+    }
+
+	destribe_reform = {
+        icon = mission_eastern_european_city
+        required_missions = { destribe_develop_up }
+        trigger = {
+			total_development = 20
+        }
+        effect = {
+			remove_country_modifier = destr_development
+			add_government_reform = tribal_despotism
+			swap_non_generic_missions = yes
+			set_country_flag = desert_tribe_achievement # add some achievement here maybe idk
+        }
+    }
+
+}
+
+desert_tribe_3 = {
+    slot = 4
+    generic = no
+    ai = yes
+    potential = {
+		has_reform = desert_tribe
+    }
+    has_country_shield = yes
+
+	destribe_trade_monopoly = {
+        icon = mission_dominate_home_trade_node
+        required_missions = { destribe_leave_the_desert }
+		position = 3
+        trigger = {
+			capital_scope = {
+				has_trader = ROOT
+				province_trade_power = 2
+			}
+        }
+        effect = {
+			add_years_of_income = 0.5
+			add_mercantilism = 5
+        }
+    }
+}

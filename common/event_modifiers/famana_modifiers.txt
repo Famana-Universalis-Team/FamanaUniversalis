@@ -1661,3 +1661,37 @@ orc_one_faith = {
     global_missionary_strength = 0.02
     monthly_piety = 0.05
 }
+
+destr_encourage_settlement = {
+    global_tax_modifier = 0.25
+    global_trade_power = 0.25
+}
+
+destr_migtimer = {}
+
+destr_colonisation = {
+    colonists = 1
+    global_colonial_growth = 25
+    native_assimilation = 0.25
+    native_uprising_chance = -0.50
+    global_missionary_strength = 0.05
+}
+
+destr_development = {
+    core_creation = -100
+    build_cost = -100
+    development_cost = -100
+    diplomatic_upkeep = 2
+}
+
+destr_army = {
+    movement_speed = 0.10
+    reinforce_speed = 0.10
+    manpower_recovery_speed = 0.10
+}
+
+destr_nationhood = {
+    technology_cost = -0.1
+    development_cost = -0.1
+    army_tradition = 1
+}

@@ -82,7 +82,7 @@ country_event = {
 
 	option = { #Refuse to Migrate. Enabled by missions.
 		name = bosisi.1.a
-		ai_chance = { factor = 1 } #i doubt the ai will get this far down the tree
+		ai_chance = { factor = 0 } #i doubt the ai will get this far down the tree
 		trigger = {
 			has_country_flag = allowed_to_not_migrate
 		}
@@ -159,6 +159,18 @@ country_event = {
 			duration = 3650
 		}
 		clr_country_flag = migmenuopen
+		hidden_effect = {
+			change_variable = {
+				which = migrations
+				value = 1
+			}
+			remove_country_modifier = destr_migtimer
+			add_country_modifier = {
+				name = destr_migtimer
+				duration = 10950
+				hidden = yes
+			}
+		}
 	}
 	option = { #Migrate to choice 2
 		name = bosisi.1.c
@@ -194,6 +206,18 @@ country_event = {
 			duration = 3650
 		}
 		clr_country_flag = migmenuopen
+		hidden_effect = {
+			change_variable = {
+				which = migrations
+				value = 1
+			}
+			remove_country_modifier = destr_migtimer
+			add_country_modifier = {
+				name = destr_migtimer
+				duration = 10950
+				hidden = yes
+			}
+		}
 	}
 	option = { #Migrate to choice 3
 		name = bosisi.1.e
@@ -229,6 +253,18 @@ country_event = {
 			duration = 3650
 		}
 		clr_country_flag = migmenuopen
+		hidden_effect = {
+			change_variable = {
+				which = migrations
+				value = 1
+			}
+			remove_country_modifier = destr_migtimer
+			add_country_modifier = {
+				name = destr_migtimer
+				duration = 10950
+				hidden = yes
+			}
+		}
 	}
 }
 
@@ -610,50 +646,10 @@ country_event = {
 	title = bosisi.13.t
 	desc = bosisi.13.d
 	picture = NUSANTARA_WAR_eventPicture
-
-	trigger = {
-		OR = { #Checks if province is controlled by someone (other than the tribe itself)
-			AND = {
-				NOT = { tag = LDV }
-				LDV = {
-					has_reform = desert_tribe
-					capital_scope = {
-						controlled_by = ROOT
-					}
-				}
-			}
-			AND = {
-				NOT = { tag = ODS }
-				ODS = {
-					has_reform = desert_tribe
-					capital_scope = {
-						controlled_by = ROOT
-					}
-				}
-			}
-			AND = {
-				NOT = { tag = SOY }
-				SOY = {
-					has_reform = desert_tribe
-					capital_scope = {
-						controlled_by = ROOT
-					}
-				}
-			}
-			AND = {
-				NOT = { tag = TIT }
-				TIT = {
-					has_reform = desert_tribe
-					capital_scope = {
-						controlled_by = ROOT
-					}
-				}
-			}
-			## add Jzoet here when the time comes
-		}
-	}
+	is_triggered_only = yes
 
 	immediate = {
+		set_country_flag = successful_repel_tribe
 		if = {
 			limit = {
 				AND = {
