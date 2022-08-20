@@ -219,7 +219,10 @@ gadea_reform = {
 		global_trade_goods_size_modifier = 0.10
 	}
 	potential = {
-		tag = GDA
+		OR = {
+			tag = GDA
+			tag = GDL
+		}
 	}
 	custom_attributes = {
 		locked_government_type = yes

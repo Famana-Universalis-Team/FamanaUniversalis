@@ -352,6 +352,11 @@ country_event = {
 				id = xalflavor_other.9
 			}
 		}
+		GDL = {
+			country_event = {
+				id = xalflavor_other.9
+			}
+		}
 	}
 
 	option = {
@@ -367,6 +372,11 @@ country_event = {
 			}
 		}
 		GDA = {
+			country_event = {
+				id = xalflavor_other.10
+			}
+		}
+		GDL = {
 			country_event = {
 				id = xalflavor_other.10
 			}
@@ -424,7 +434,10 @@ country_event = { #if gadan converts away
 	picture = RELIGIOUS_TURMOIL_eventPicture
 
 	trigger = {
-		tag = GDA
+		OR = {
+			tag = GDA
+			tag = GDL
+		}
 		NOT = { religion = gadan }
 	}
 
@@ -457,7 +470,10 @@ country_event = { #become vassal
 			is_subject = yes
 		}
 		NOT = {
-			tag = GDA
+			OR = {
+				tag = GDA
+				tag = GDL
+			}
 		}
 		has_global_flag = Gadea_Vassal_Swarm
 	}
@@ -482,6 +498,15 @@ country_event = { #become vassal
 					id = xalflavor_other.15
 				}
 			}
+			GDL = {
+				create_subject = {
+					subject_type = gadan_tributary_state_annexable
+					subject = ROOT
+				}
+				country_event = {
+					id = xalflavor_other.15
+				}
+			}
 		}
 		else_if = {
 			limit = {
@@ -493,6 +518,15 @@ country_event = { #become vassal
 				}
 			}
 			GDA = {
+				create_subject = {
+					subject_type = gadan_tributary_state_annexable
+					subject = ROOT
+				}
+				country_event = {
+					id = xalflavor_other.15
+				}
+			}
+			GDL = {
 				create_subject = {
 					subject_type = gadan_tributary_state_annexable
 					subject = ROOT
@@ -527,9 +561,27 @@ country_event = { #become vassal
 					id = xalflavor_other.15
 				}
 			}
+			GDL = {
+				create_subject = {
+					subject_type = gadan_tributary_state_annexable
+					subject = ROOT
+				}
+				country_event = {
+					id = xalflavor_other.15
+				}
+			}
 		}
 		else = {
 			GDA = {
+				create_subject = {
+					subject_type = gadan_tributary_state
+					subject = ROOT
+				}
+				country_event = {
+					id = xalflavor_other.14
+				}
+			}
+			GDL = {
 				create_subject = {
 					subject_type = gadan_tributary_state
 					subject = ROOT
@@ -627,8 +679,13 @@ country_event = { #if gadea dies
 	fire_only_once = yes
 
 	trigger = {
-		GDA = {
-			exists = no
+		OR = {
+			GDA = {
+				exists = no
+			}
+			GDL = {
+				exists = no
+			}
 		}
 	}
 

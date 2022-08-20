@@ -3542,7 +3542,12 @@ country_decisions = {
 		major = yes
 		potential = {
 			AND = {
-				NOT = { tag = GDA }
+				NOT = {
+					OR = {
+						tag = GDA
+						tag = GDL
+					}
+				}
 				OR = {
 					culture = Makyan_C
 					culture = Okus

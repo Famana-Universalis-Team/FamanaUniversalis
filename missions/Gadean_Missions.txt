@@ -4,7 +4,10 @@ gadea_1 = {
     ai = yes
     potential = {
 		AND = {
-			tag = GDA
+			OR = {
+				tag = GDA
+				tag = GDL
+			}
 			has_reform = gadea_reform
 		}
 	}
@@ -67,7 +70,10 @@ gadea_2 = {
     ai = yes
     potential = {
 		AND = {
-			tag = GDA
+			OR = {
+				tag = GDA
+				tag = GDL
+			}
 			has_reform = gadea_reform
 		}
     }
@@ -223,7 +229,10 @@ gadea_3 = {
     ai = yes
     potential = {
 		AND = {
-			tag = GDA
+			OR = {
+				tag = GDA
+				tag = GDL
+			}
 			has_reform = gadea_reform
 		}
 	}
@@ -271,7 +280,11 @@ gadea_3 = {
 						}
 						OR = {
 							is_subject_of = GDA
-							tag = GDA
+							is_subject_of = GDL
+							OR = {
+								tag = GDA
+								tag = GDL
+							}
 						}
 					}
 				}
@@ -369,7 +382,10 @@ gadea_4 = {
     ai = yes
     potential = {
 		AND = {
-			tag = GDA
+			OR = {
+				tag = GDA
+				tag = GDL
+			}
 			has_reform = gadea_reform
 		}
     }
@@ -550,7 +566,10 @@ gadea_5 = {
     ai = yes
     potential = {
 		AND = {
-			tag = GDA
+			OR = {
+				tag = GDA
+				tag = GDL
+			}
 			has_reform = gadea_reform
 		}
 	}
@@ -639,6 +658,98 @@ gadea_5 = {
 			}
 			change_government_reform_progress = 100
 			add_prestige = 50
+		}
+	}
+	gadea_enter_delkia = {
+		position = 6
+		icon = mission_great_wall
+		required_missions = { gadea_conscript_from_subjects }
+		trigger = {
+			5161 = {
+				owner = {
+					OR = {
+						tag = GDA
+						tag = GDL
+						is_subject_of = GDA
+						is_subject_of = GDL
+					}
+				}
+			}
+			5163 = {
+				owner = {
+					has_spy_network_from = {
+						who = ROOT
+						value = 50
+					}
+				}
+			}
+        }
+		effect = {
+			marn_area = {
+				add_permanent_claim = ROOT
+			}
+			sixan_area = {
+				add_permanent_claim = ROOT
+			}
+			marnet_area = {
+				add_permanent_claim = ROOT
+			}
+			DEL = {
+				add_casus_belli = {
+					target = PREV
+					type = cb_convert_gadan
+					months = 240
+				}
+			}
+			MRN = {
+				add_casus_belli = {
+					target = PREV
+					type = cb_convert_gadan
+					months = 240
+				}
+			}
+			SIX = {
+				add_casus_belli = {
+					target = PREV
+					type = cb_convert_gadan
+					months = 240
+				}
+			}
+		}
+	}
+
+	gadea_conquer_vinia = {
+		position = 7
+		icon = mission_great_wall
+		required_missions = { gadea_enter_delkia }
+		trigger = {
+			5458 = {
+				owner = {
+					OR = {
+						tag = GDA
+						tag = GDL
+						is_subject_of = GDA
+						is_subject_of = GDL
+					}
+				}
+			}
+        }
+		effect = {
+			every_country = {
+				limit = {
+					capital_scope = {
+						OR = {
+							region = moria_region
+							region = east_xalia_region
+						}
+					}
+				}
+				add_casus_belli = {
+					target = PREV
+					type = cb_convert_gadan
+					months = 240
+				}
+			}
 		}
 	}
 }
