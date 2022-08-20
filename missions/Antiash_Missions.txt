@@ -658,17 +658,14 @@ antiash_3 = {
         effect = {
 			7236 = {
 			cede_province = ROOT
-			add_core = ROOT
 			change_culture = ROOT
 			}
 			7237 = {
 			cede_province = ROOT
-			add_core = ROOT
 			change_culture = ROOT
 			}
 			7238 = {
 			cede_province = ROOT
-			add_core = ROOT
 			change_culture = ROOT
 			}
 		}
@@ -691,7 +688,6 @@ antiash_3 = {
 			cede_province = ROOT
 			add_core = ROOT
 			change_culture = Kurkari
-			add_building = fort_15th
 			}
 			7970 = {
 			cede_province = ROOT
@@ -702,20 +698,12 @@ antiash_3 = {
 			cede_province = ROOT
 			add_core = ROOT
 			change_culture = Ashdamir
+			add_building = fort_15th
 			}
 			7968= {
 			cede_province = ROOT
 			add_core = ROOT
 			change_culture = Manthwar
-			}
-			hidden_effect = {
-				east_great_desert_region = {
-					add_permanent_claim = ROOT
-				}
-				5184 = {
-					add_permanent_claim = ROOT
-				}
-				#to make killing desert tribes easier
 			}
 			add_country_modifier = {
 				name = "antiash_settlers"
@@ -1247,7 +1235,7 @@ antiash_5 = {
 					alliance_with = ROOT
 				}
 			}
-			prestige = 30
+			prestige = 15
 		}
 		effect = {
 			7243 = {

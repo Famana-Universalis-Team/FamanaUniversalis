@@ -795,19 +795,7 @@ country_decisions = {
 			}
 		}
 		ai_will_do = {
-			factor = 0.5
-			modifier = {
-                factor = 0.2
-				NOT = { mil_power = 50 }
-            }
-			modifier = {
-                factor = 0.33
-				NOT = { mil_power = 70 }
-            }
-			modifier = {
-                factor = 0.5
-				NOT = { mil_power = 100 }
-            }
+			factor = 0 #i do not trust it
 		}
     }
 	
