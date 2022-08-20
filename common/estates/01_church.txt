@@ -153,6 +153,13 @@ estate_church =
 			tag = VAN
 		}
 	}
+
+	custom_name = {
+		desc = estate_maldawan
+		trigger = {
+			culture_group = Maldik
+		}
+	}
 	
 	custom_name = {
 		desc = estate_shamans
