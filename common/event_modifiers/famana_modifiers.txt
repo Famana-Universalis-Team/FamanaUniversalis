@@ -1752,3 +1752,15 @@ gadea_subject_manpwoer = {
     manpower_recovery_speed = 0.10
     manpower_in_true_faith_provinces= 0.25
 }
+
+gadea_rapid_expansion = {
+    core_creation = -0.15
+    reduced_liberty_desire = 5
+}
+
+gadea_gadelis = {
+    reduced_liberty_desire = 10
+    diplomatic_annexation_cost = -0.10
+    global_missionary_strength = 0.02
+    ae_impact = -0.33
+}

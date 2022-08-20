@@ -159,6 +159,62 @@ gadea_2 = {
 			}
 		}
 	}
+
+	gadea_expand_gadea = {
+		position = 6
+		icon = mission_monarch_in_throne_room
+		required_missions = { gadea_convert_maky }
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 6
+				owned_by = ROOT
+			}
+			owns_core_province = 5140
+			owns_core_province = 5407
+			owns_core_province = 5161
+        }
+		effect = {
+			add_country_modifier = {
+				name = gadea_rapid_expansion
+				duration = 3650
+			}
+		}
+	}
+
+	gadea_centralise_all_vassals = {
+		position = 7
+		icon = mission_have_two_subjects
+		required_missions = { gadea_expand_gadea }
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 6
+				owned_by = ROOT
+			}
+			owns_core_province = 5140
+			owns_core_province = 5407
+			owns_core_province = 5161
+        }
+		effect = {
+			custom_tooltip = GADEA_VASSAL_SWARM_HERE_TO_STAY_GLOBAL
+			set_global_flag = Gadea_Vassal_Swarm_Annexable
+			hidden_effect = {
+				every_country = {
+					limit = {
+						AND = {
+							is_subject_of = ROOT
+							is_subject_of_type = gadan_tributary_state
+						}
+					}
+					ROOT = {
+						create_subject = {
+							subject_type = gadan_tributary_state_annexable
+							subject = PREV
+						}
+					}
+				}
+			}
+		}
+	}
 }
 
 gadea_3 = {
@@ -276,6 +332,35 @@ gadea_3 = {
 			}
 		}
 	}
+
+	gadea_gadelis = {
+		position = 8
+		icon = mission_empire
+		required_missions = { gadea_centralise_all_vassals gadea_morsum_for_peace gadea_centralise }
+		trigger = {
+			owns_core_province = 5409
+			owns_core_province = 5161
+			total_development = 50
+        }
+		effect = {
+			change_tag = GDL
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_country_modifier = {
+				name = gadea_gadelis
+				duration = -1
+			}
+			add_prestige = 25
+		}
+	}
 }
 
 gadea_4 = {
@@ -334,15 +419,15 @@ gadea_4 = {
 		icon = mission_persian_soldiers
 		required_missions = { gadea_build_army }
 		trigger = {
-			army_size = 15
-			num_of_generals = 2
+			has_estate_privilege = estate_nobles_levies
+			mil = 3
         }
 		effect = {
 			custom_tooltip = GADEA_MANPOWER_FROM_SUBJECTS
 			hidden_effect = {
 				every_subject_country = {
 					ROOT = {
-						add_manpower = 5
+						add_manpower = 2
 					}
 				}
 			}
