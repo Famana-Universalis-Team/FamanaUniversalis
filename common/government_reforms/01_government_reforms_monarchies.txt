@@ -58,13 +58,15 @@ plutocratic_reform = {
 		OR = {
 			technology_group = west_gomic_tech_gr
 			technology_group = east_gomic_tech_gr
+			culture_group = Maxan
+			culture_group = Emastalian
 		}
 	}
 	nation_designer_trigger = {
 		OR = {
 			technology_group = west_gomic_tech_gr
 			technology_group = east_gomic_tech_gr
-			technology_group = qamoni_tech_gr
+			#technology_group = qamoni_tech_gr
 		}
 	}
 	valid_for_nation_designer = yes

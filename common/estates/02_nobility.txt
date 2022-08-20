@@ -230,9 +230,9 @@ estate_nobles =
 	
 	#Alternative naming of estates
 	custom_name = {
-		desc = estate_noblesname
+		desc = estate_aristocrats
 		trigger = {
-			has_institution	= feudalism_two
+			has_reform = aristocracy_reform
 		}
 	}
 	custom_name = {

@@ -112,7 +112,7 @@ lukscha_forum = {
 		enables_aristocratic_idea_group = yes
 		has_parliament = yes
 		locked_government_type = yes
-		
+		blocked_call_diet = yes
 	}
 
 	rulers_can_be_generals = no

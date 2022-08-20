@@ -1,4 +1,18 @@
 
+aristocracy_reform = {
+	icon = "nobleman"
+	allow_normal_conversion = yes
+	legacy_equivalent = feudal_monarchy
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	modifiers = {
+		land_forcelimit_modifier = 0.05
+		nobles_influence_modifier = 0.05
+	}
+	ai = {
+		factor = 0.5 #generic
+	}
+}
 
 oppian_state_reform = {
 	icon = "oppian"
@@ -16,6 +30,12 @@ oppian_state_reform = {
 				tag = OPP
 				tag = TCK
 			}
+		}
+	}
+	conditional = {
+		allow = { has_dlc = "Cradle of Civilization" }
+		government_abilities = {
+			iqta_mechanic
 		}
 	}
 }
@@ -504,6 +524,7 @@ ordican_senate = {
 	}
 	custom_attributes = {
 		has_parliament = yes
+		blocked_call_diet = yes
 	}
 	modifiers = {
 		global_institution_spread = 0.1
@@ -547,6 +568,7 @@ vanoman_elective_monarchy = {
 		has_parliament = yes
 		heir = no
 		royal_marriage = no
+		blocked_call_diet = yes
 	}
 }
 
