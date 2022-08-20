@@ -238,7 +238,10 @@ estate_nobles =
 	custom_name = {
 		desc = estate_chieftains
 		trigger = {
-			government = tribal
+			OR = {
+				government = tribal
+				has_reform = gotzlic_kingdom
+			}
 		}
 	}
 	custom_name = {

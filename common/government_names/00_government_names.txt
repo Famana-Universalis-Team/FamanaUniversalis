@@ -109,6 +109,30 @@ diocese_gov_name = {
 	}
 }
 
+diocese_gov_name = {
+	rank = {
+		1 = KINGDOM
+		2 = GREAT_KINGDOM
+		3 = EMPIRE
+	}
+
+	ruler_male = {
+		1 = KING
+		2 = GREAT_KING
+		3 = EMPEROR
+	}
+
+	ruler_female = {
+		1 = QUEEN
+		2 = GREAT_QUEEN
+		3 = EMPRESS
+	}
+
+	trigger = {
+		has_reform = gotzlic_kingdom
+	}
+}
+
 hlt_gov_name = {
 	rank = {
 		1 = GRAND_ORDER

@@ -549,3 +549,19 @@ vanoman_elective_monarchy = {
 		royal_marriage = no
 	}
 }
+
+gotzlic_kingdom = {
+	icon = "landscape"
+	legacy_equivalent = despotic_monarchy
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	maintain_dynasty = yes
+	modifiers = {
+		monarch_military_power = 1
+		prestige_decay = -0.01
+		nobles_influence_modifier = 0.20
+	}
+	potential = {
+		culture_group = Gotzlic
+	}
+}
