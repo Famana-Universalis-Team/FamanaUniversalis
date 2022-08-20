@@ -93,3 +93,136 @@ diocese = {
 	bestow_gifts = yes
 	conscript_general = yes
 }
+
+gadan_tributary_state = {
+	copy_from = default
+	count = vassal
+	# Graphics:
+	# Graphics:
+	sprite = GFX_icon_vassal
+	diplomacy_overlord_sprite = GFX_diplomacy_leadvassal # The one that the overlord sees
+	diplomacy_subject_sprite = GFX_diplomacy_amvassal	# The one that the subject sees
+
+	# Properties:
+	can_fight_independence_war = no
+	joins_overlords_wars = yes
+	joins_colonial_wars = no
+	is_voluntary = no
+	overlord_can_attack = yes
+	takes_diplo_slot = no
+	base_liberty_desire = -5
+	relative_power_class = 1
+	should_quit_wars_on_activation = no
+	can_send_tribute = yes
+	can_have_subjects_of_other_types = yes
+	uses_military_focus = no
+	overlord_protects_external = yes
+	counts_for_borders = yes
+	can_use_claims = yes
+	share_rebel_popup = yes
+	can_transfer_in_peace = no
+	can_set_mil_focus = no
+	can_send_missionary_to_subject = no
+	overlord_can_fabricate_for = yes
+	does_overlord_size_count_for_warscore_cost = yes
+	can_have_great_projects_moved_by_overlord = yes
+
+	can_concentrate_development = no
+	
+	liberty_desire_development_ratio = 0.175
+	trust_on_start = 0
+	
+	overlord_opinion_modifier = is_tributary
+	subject_opinion_modifier = is_tributary
+	
+	can_fight = {
+	}
+	can_rival = {
+	}
+	can_ally = {
+	}
+	can_marry = {
+	}
+
+	# Subject Interactions:
+	# (immediate)
+	enforce_religion = no
+	grant_core_claim = yes
+	bestow_gifts = yes
+	send_additional_troops = yes
+	demand_artifacts = yes
+	demand_additional_tribute = yes
+	block_settlement_growth = no
+	allow_settlement_growth = no
+	placate_rulers = yes
+	knowledge_sharing = yes
+	# (continuous)
+	embargo_rivals = yes
+}
+
+gadan_tributary_state_annexable = {
+	copy_from = default
+	count = vassal
+	# Graphics:
+	# Graphics:
+	sprite = GFX_icon_vassal
+	diplomacy_overlord_sprite = GFX_diplomacy_leadvassal # The one that the overlord sees
+	diplomacy_subject_sprite = GFX_diplomacy_amvassal	# The one that the subject sees
+
+	# Properties:
+	can_be_annexed = yes
+	can_fight_independence_war = yes
+	joins_overlords_wars = yes
+	joins_colonial_wars = no
+	is_voluntary = no
+	overlord_can_attack = yes
+	takes_diplo_slot = no
+	base_liberty_desire = -3
+	relative_power_class = 1
+	should_quit_wars_on_activation = no
+	can_send_tribute = yes
+	can_have_subjects_of_other_types = yes
+	uses_military_focus = no
+	overlord_protects_external = yes
+	counts_for_borders = yes
+	can_use_claims = yes
+	share_rebel_popup = yes
+	can_transfer_in_peace = no
+	can_set_mil_focus = no
+	can_send_missionary_to_subject = no
+	overlord_can_fabricate_for = yes
+	does_overlord_size_count_for_warscore_cost = yes
+	can_have_great_projects_moved_by_overlord = yes
+
+	can_concentrate_development = no
+	
+	liberty_desire_development_ratio = 0.25
+	trust_on_start = 0
+	
+	overlord_opinion_modifier = is_tributary
+	subject_opinion_modifier = is_tributary
+	
+	can_fight = {
+	}
+	can_rival = {
+	}
+	can_ally = {
+	}
+	can_marry = {
+	}
+
+	# Subject Interactions:
+	# (immediate)
+	enforce_religion = no
+	grant_core_claim = yes
+	bestow_gifts = yes
+	send_additional_troops = yes
+	demand_artifacts = yes
+	demand_additional_tribute = yes
+	block_settlement_growth = no
+	allow_settlement_growth = no
+	placate_rulers = yes
+	knowledge_sharing = yes
+	# (continuous)
+	embargo_rivals = yes
+}

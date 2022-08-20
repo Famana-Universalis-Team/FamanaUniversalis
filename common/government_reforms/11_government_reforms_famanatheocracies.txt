@@ -202,3 +202,28 @@ corrupt_monarchy_reform = {
 	}
 	fixed_rank = 2
 }
+
+gadea_reform = {
+	icon = "gadea"
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	legacy_equivalent = theocratic_government
+	valid_for_nation_designer = yes
+	nation_designer_cost = 50
+	start_territory_to_estates = 0.1
+	republican_name = yes
+	modifiers = {
+		tolerance_heathen = -4
+		tolerance_own = 3
+		global_missionary_strength = 0.02
+		global_trade_goods_size_modifier = 0.10
+	}
+	potential = {
+		tag = GDA
+	}
+	custom_attributes = {
+		locked_government_type = yes
+		enables_divine_idea_group = yes
+	}
+	fixed_rank = 2
+}

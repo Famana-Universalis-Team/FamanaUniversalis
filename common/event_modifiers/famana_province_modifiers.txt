@@ -306,3 +306,9 @@ gomic_breadbasket = {
 slave_markets_of_ameleka = {
     trade_goods_size = 3
 }
+
+growth_of_gadea = {
+    local_build_cost = -0.25
+    local_tax_modifier = 0.25
+    trade_goods_size_modifier = 0.1
+}

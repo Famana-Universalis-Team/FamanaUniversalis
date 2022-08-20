@@ -357,3 +357,7 @@
  DESERT_TRIBES_BEATEN: "Has won a war against another desert tribe"
  NONDESERT_TRIBES_BEATEN: "Has won a war against a non-nomadic nation"
  kinBLKsubj: "§Y[Root.GetName]§! gain §YSubjugation§! Casus Belli on §Y[BLK.GetName]§!."
+ GADEA_VASSAL_SWARM_FORMED: "We will demand every §YGadan§! nation to submit to our religious authority. We will gain the §YSubjugation§! casus belli against those who refuse."
+ GADAN_SUBJUGATE_REGION: "Every remaining Gadan nation is either our vassal or tributary"
+ GADEA_VASSAL_SWARM_HERE_TO_STAY: "Every nation that is converted to §YGadan§! will immediately become a §YGadan tributary§!."
+ NO_GADAN_WAR: "Gadan Tributaries cannot assist in offensive wars."

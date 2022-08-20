@@ -13,6 +13,19 @@
 # TRIGGERED - Triggered from within the code or by event effects
 # --------------------------------------------------------------
 
+#Gadan convert
+cb_convert_gadan = {
+	valid_for_subject = no
+
+	is_triggered_only = yes
+	months = 240
+
+	prerequisites = {
+	}
+
+	war_goal = convert_nation
+}
+
 # Restoration of recently broken PU
 cb_restore_personal_union = {
 	valid_for_subject = no

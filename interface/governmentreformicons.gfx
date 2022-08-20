@@ -24,6 +24,10 @@ spriteTypes = {
 		texturefile = "gfx//interface//government_reform_icons//ora.dds"
 	}
 	spriteType = {
+		name = "government_reform_gadea"
+		texturefile = "gfx//interface//government_reform_icons//Gadea.dds"
+	}
+	spriteType = {
 		name = "government_reform_lukscha_forum"
 		texturefile = "gfx//interface//government_reform_icons//LukschaForum.dds"
 	}

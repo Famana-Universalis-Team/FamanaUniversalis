@@ -314,3 +314,341 @@ country_event = {
 		ai_chance = { factor = 1 }
 	}
 }
+
+# GADAN MISSION EVENTS
+
+country_event = {
+	id = xalflavor_other.8
+	title = xalflavor_other.8.t
+	desc = xalflavor_other.8.d
+	picture = RELIGION_eventPicture
+	is_triggered_only = yes
+
+	immediate = {
+	}
+
+	option = {
+		name = xalflavor_other.8.a #agree
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 1
+				NOT = {
+					has_opinion = {
+						who = GDA
+						value = 0
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				development_in_provinces = {
+					value = 20
+				}
+			}
+		}
+		GDA = {
+			country_event = {
+				id = xalflavor_other.9
+			}
+		}
+	}
+
+	option = {
+		name = xalflavor_other.8.b #disagree
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 1
+				has_opinion = {
+					who = GDA
+					value = 0
+				}
+			}
+		}
+		GDA = {
+			country_event = {
+				id = xalflavor_other.10
+			}
+		}
+	}
+}
+
+country_event = { #yes
+	id = xalflavor_other.9
+	title = xalflavor_other.9.t
+	desc = xalflavor_other.9.d
+	picture = RELIGIOUS_CONVERSION_eventPicture
+	is_triggered_only = yes
+
+	immediate = {
+
+	}
+
+	option = {
+		name = xalflavor_other.9.a
+		ai_chance = { factor = 1 }
+		create_subject = {
+			subject_type = gadan_tributary_state
+			subject = FROM
+		}
+	}
+}
+
+country_event = { #no
+	id = xalflavor_other.10
+	title = xalflavor_other.10.t
+	desc = xalflavor_other.10.d
+	picture = RELIGIOUS_TURMOIL_eventPicture
+	is_triggered_only = yes
+
+	immediate = {
+		
+	}
+
+	option = {
+		name = xalflavor_other.10.a
+		ai_chance = { factor = 1 }
+		add_casus_belli = {
+			target = FROM
+			type = cb_vassalize_mission
+			months = 180
+		}
+	}
+}
+
+country_event = { #if gadan converts away
+	id = xalflavor_other.11
+	title = xalflavor_other.11.t
+	desc = xalflavor_other.11.d
+	picture = RELIGIOUS_TURMOIL_eventPicture
+
+	trigger = {
+		tag = GDA
+		NOT = { religion = gadan }
+	}
+
+	immediate = {
+
+	}
+
+	option = {
+		name = xalflavor_other.11.a
+		ai_chance = { factor = 1 }
+		clr_global_flag = Gadea_Vassal_Swarm
+		release_all_subjects = yes
+		swap_non_generic_missions = yes
+	}
+}
+
+country_event = { #become vassal
+	id = xalflavor_other.12
+	title = xalflavor_other.12.t
+	desc = xalflavor_other.12.d
+	picture = RELIGIOUS_CONVERSION_eventPicture
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	trigger = {
+		religion = gadan
+		NOT = {
+			is_subject = yes
+		}
+		NOT = {
+			tag = GDA
+		}
+		has_global_flag = Gadea_Vassal_Swarm
+	}
+
+	immediate = {
+		
+	}
+
+	option = {
+		name = xalflavor_other.12.a
+		ai_chance = { factor = 1 }
+		if = {
+			limit = {
+				has_global_flag = Gadea_Vassal_Swarm_Annexable
+			}
+			GDA = {
+				create_subject = {
+					subject_type = gadan_tributary_state_annexable
+					subject = ROOT
+				}
+				country_event = {
+					id = xalflavor_other.15
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				AND = {
+					has_global_flag = Gadea_Vassal_Swarm_Maky
+					capital_scope = {
+						region = maky_region
+					}
+				}
+			}
+			GDA = {
+				create_subject = {
+					subject_type = gadan_tributary_state_annexable
+					subject = ROOT
+				}
+				country_event = {
+					id = xalflavor_other.15
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				AND = {
+					has_global_flag = Gadea_Vassal_Swarm_Gadan
+					capital_scope = {
+						OR = {
+							area = morsum_area
+							area = mariana_area
+							area = tsaj_area
+							area = zeaf_area
+							area = bava_area
+							area = unnamed_area_9
+						}
+					}
+				}
+			}
+			GDA = {
+				create_subject = {
+					subject_type = gadan_tributary_state_annexable
+					subject = ROOT
+				}
+				country_event = {
+					id = xalflavor_other.15
+				}
+			}
+		}
+		else = {
+			GDA = {
+				create_subject = {
+					subject_type = gadan_tributary_state
+					subject = ROOT
+				}
+				country_event = {
+					id = xalflavor_other.14
+				}
+			}
+		}
+	}
+}
+
+country_event = { #unbecome vassal
+	id = xalflavor_other.13
+	title = xalflavor_other.13.t
+	desc = xalflavor_other.13.d
+	picture = RELIGIOUS_CONVERSION_eventPicture
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	trigger = {
+		NOT = { religion = gadan }
+		OR = {
+			is_subject_of_type = gadan_tributary_state
+			is_subject_of_type = gadan_tributary_state_annexable
+		}
+	}
+
+	option = {
+		name = xalflavor_other.13.a
+		ai_chance = { factor = 1 }
+		grant_independence = yes
+	}
+}
+
+country_event = { #learning of new trib
+	id = xalflavor_other.14
+	title = xalflavor_other.14.t
+	desc = xalflavor_other.14.d
+	picture = RELIGIOUS_CONVERSION_eventPicture
+	is_triggered_only = yes
+
+	immediate = {
+		
+	}
+
+	option = {
+		name = xalflavor_other.14.a
+		ai_chance = { factor = 1 }
+		custom_tooltip = Gadea_new_trib
+	}
+}
+
+country_event = { #learning of new vassal
+	id = xalflavor_other.15
+	title = xalflavor_other.14.t #intentional
+	desc = xalflavor_other.14.d
+	picture = RELIGIOUS_CONVERSION_eventPicture
+	is_triggered_only = yes
+
+	immediate = {
+		
+	}
+
+	option = {
+		name = xalflavor_other.14.a
+		ai_chance = { factor = 1 }
+		custom_tooltip = Gadea_new_vassal
+	}
+}
+
+country_event = { #learning of vassal leaving
+	id = xalflavor_other.16
+	title = xalflavor_other.16.t
+	desc = xalflavor_other.16.d
+	picture = RELIGIOUS_TURMOIL_eventPicture
+	is_triggered_only = yes
+
+	immediate = {
+		
+	}
+
+	option = {
+		name = xalflavor_other.16.a
+		ai_chance = { factor = 1 }
+		custom_tooltip = Gadea_leaves
+	}
+}
+
+country_event = { #if gadea dies
+	id = xalflavor_other.16
+	hidden = yes
+	fire_only_once = yes
+
+	trigger = {
+		GDA = {
+			exists = no
+		}
+	}
+
+	immediate = {
+		every_known_country = {
+			limit = {
+				OR = {
+					is_subject_of_type = gadan_tributary_state
+					is_subject_of_type = gadan_tributary_state_annexable
+				}
+			}
+			release = THIS
+		}
+	}
+
+	option = {
+		name = xalflavor_other.16.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+
+# / GADAN MISSION EVENTS

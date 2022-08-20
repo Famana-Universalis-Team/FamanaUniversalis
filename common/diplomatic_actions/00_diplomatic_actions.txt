@@ -313,3 +313,27 @@ invite_to_federation = {
 		}
 	}
 }
+
+callaction = {
+	condition = {
+        tooltip = NO_GADAN_WAR
+        potential = {
+            FROM = {
+                is_subject_of = ROOT
+                is_subject_of_type = gadan_tributary_state
+            }
+            NOT = {
+                is_in_war = {
+                    defender_leader = ROOT
+                }
+            }
+        }
+        allow = {
+            NOT = {
+                is_in_war = {
+                    attacker_leader = ROOT
+                }
+            }
+        }
+    }
+}

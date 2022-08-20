@@ -1,0 +1,227 @@
+gadea_1 = {
+	slot = 1
+    generic = no
+    ai = yes
+    potential = {
+		tag = GDA
+	}
+	has_country_shield = yes
+
+	gadea_pirates_of_maner = {
+		position = 4
+		icon = mission_establish_high_seas_navy
+		required_missions = { gadea_wipe_heretics } #None
+		trigger = {
+			OR = {
+				owns_core_province = 8857
+				8857 = {
+					owner = {
+						is_subject_of = ROOT
+					}
+				}
+			}
+        }
+		effect = {
+			add_country_modifier = {
+				name = gadea_naval
+				duration = -1
+			}
+		}
+	}
+
+}
+
+gadea_2 = {
+	slot = 2
+    generic = no
+    ai = yes
+    potential = {
+		tag = GDA
+    }
+    has_country_shield = yes
+
+	gadea_gain_allies = {
+		position = 1
+		icon = mission_alliances
+		required_missions = {  } #None
+		trigger = {
+			num_of_allies = 2
+        }
+		effect = {
+			add_country_modifier = {
+				name = gadea_diplomacy
+				duration = 3650
+			}
+		}
+	}
+
+	gadea_invade_maky = {
+		position = 4
+		icon = mission_cossack_cavalry
+		required_missions = { gadea_wipe_heretics } #None
+		trigger = {
+			OR = {
+				army_reformer = 1
+				commandant = 1
+				army_organiser = 1
+			}
+			development_in_provinces = {
+				value = 25
+			}
+        }
+		effect = {
+			every_known_country = {
+				limit = {
+					capital_scope = {
+						region = maky_region
+					}
+				}
+				ROOT = {
+					add_casus_belli = {
+						target = PREV
+						type = cb_convert_gadan
+						months = 240
+					}
+				}
+			}
+		}
+	}
+}
+
+gadea_3 = {
+	slot = 3
+    generic = no
+    ai = yes
+    potential = {
+		tag = GDA
+	}
+	has_country_shield = yes
+
+	gadea_council = {
+		position = 2
+		icon = mission_have_two_subjects
+		required_missions = { gadea_gain_allies gadea_develop_holy_city }
+		trigger = {
+			hidden_trigger = { ai = no } #the ai shouldnt be capable of doing this. PLAYER ONLY!
+			army_size = 6
+			num_of_generals = 1
+        }
+		effect = {
+			custom_tooltip = GADEA_VASSAL_SWARM_FORMED
+			hidden_effect = {
+				every_known_country = {
+					limit = {
+						religion = gadan
+					}
+					country_event = {
+						id = xalflavor_other.8
+					}
+				}
+			}
+		}
+	}
+
+	gadea_wipe_heretics = {
+		position = 3
+		icon = mission_unite_home_region
+		required_missions = { gadea_council }
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = GADAN_SUBJUGATE_REGION
+				all_known_country = {
+					if = {
+						limit = {
+							religion = gadan
+						}
+						OR = {
+							is_subject_of = GDA
+							tag = GDA
+						}
+					}
+				}
+			}
+        }
+		effect = {
+			custom_tooltip = GADEA_VASSAL_SWARM_HERE_TO_STAY
+			set_global_flag = Gadea_Vassal_Swarm
+		}
+	}
+}
+
+gadea_4 = {
+	slot = 4
+    generic = no
+    ai = yes
+    potential = {
+		tag = GDA
+    }
+    has_country_shield = yes
+
+	gadea_develop_holy_city = {
+		position = 1
+		icon = mission_eastern_european_city
+		required_missions = {  } #None
+		trigger = {
+			5155 = {
+				development = 15
+			}
+        }
+		effect = {
+			5155 = {
+				add_province_modifier = {
+					name = growth_of_gadea
+					duration = 9125
+				}
+			}
+		}
+	}
+
+	gadea_build_army = {
+		position = 4
+		icon = mission_assemble_an_army
+		required_missions = { gadea_wipe_heretics } #None
+		trigger = {
+			army_size = 15
+			num_of_generals = 2
+        }
+		effect = {
+			add_country_modifier = {
+				name = gadea_fortifications
+				duration = -1
+			}
+			add_country_modifier = {
+				name = gadean_army
+				duration = 5475
+			}
+		}
+	}
+}
+
+gadea_5 = {
+	slot = 5
+    generic = no
+    ai = yes
+    potential = {
+		tag = GDA
+	}
+	has_country_shield = yes
+
+	gadea_control_trade = {
+		position = 4
+		icon = mission_asian_trader
+		required_missions = { gadea_wipe_heretics } #None
+		trigger = {
+			capital_scope = {
+				has_most_province_trade_power = ROOT
+				has_trader = ROOT
+			}
+        }
+		effect = {
+			add_years_of_income = 1
+			add_country_modifier = {
+				name = gadea_trade
+				duration = 3650
+			}
+		}
+	}
+}

@@ -10,3 +10,15 @@
  tomban_state_is_our: "$NAME|Y$ is one of our tomban states."
  tomban_state_title: "Tomban State"
  tomban_state_title_plural: "Tomban States"
+
+ gadan_tributary_state: "Gadan Tributary"
+ gadan_tributary_state_long_desc: "A state subordinate to the Priests in Gadea."
+ gadan_tributary_state_is_our: "$NAME|Y$ is one of our Gadan Tributaries."
+ gadan_tributary_state_title: "Gadan Tributary"
+ gadan_tributary_state_title_plural: "Gadan Tributary"
+
+ gadan_tributary_state_annexable_state: "Gadan Vassal"
+ gadan_tributary_state_annexable_state_long_desc: "A state subordinate to the Priests in Gadea."
+ gadan_tributary_state_annexable_state_is_our: "$NAME|Y$ is one of our Gadan Vassals."
+ gadan_tributary_state_annexable_state_title: "Gadan Vassal"
+ gadan_tributary_state_annexable_title_plural: "Gadan Vassals"

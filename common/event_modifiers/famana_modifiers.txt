@@ -1711,3 +1711,30 @@ soy_lib_3 = {
     tolerance_own = 2
     missionaries = 1
 }
+
+gadea_diplomacy = {
+    diplomatic_reputation = 2
+    tolerance_own = 1
+}
+
+gadea_naval = {
+    global_ship_cost = -0.1
+    naval_forcelimit_modifier = 0.25
+    blockade_efficiency = 0.1
+}
+
+gadea_fortifications = {
+    fort_maintenance_modifier = -0.15
+}
+
+gadean_army = {
+    land_forcelimit_modifier = 0.10
+    land_maintenance_modifier = 0.10
+    manpower_in_true_faith_provinces= 0.25
+    shock_damage = 0.10
+}
+
+gadea_trade = {
+    trade_steering = 0.15
+    trade_efficiency = 0.10
+}
