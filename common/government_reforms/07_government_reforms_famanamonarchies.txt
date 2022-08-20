@@ -1,4 +1,6 @@
+####################################################### Generic Reforms
 
+#Tier 1 Power Structure
 aristocracy_reform = {
 	icon = "nobleman"
 	allow_normal_conversion = yes
@@ -13,6 +15,71 @@ aristocracy_reform = {
 		factor = 0.5 #generic
 	}
 }
+
+#Tier 5 Army Focus
+army_focus_cav_armies = {
+	icon = "army_focus_cav_armies"
+	allow_normal_conversion = yes
+	modifiers = {
+		cav_to_inf_ratio = 0.15
+		cavalry_power = 0.05
+	}
+	ai = {
+		factor = 1
+		#modifier = {
+		#	factor = 2
+		#
+		#}
+	}
+}
+army_focus_mercenaries = {
+	icon = "army_focus_mercenaries"
+	allow_normal_conversion = yes
+	modifiers = {
+		mercenary_discipline = 0.05
+		merc_maintenance_modifier = -0.10
+	}
+	ai = {
+		factor = 1
+		#modifier = {
+		#	factor = 2
+		#
+		#}
+	}
+}
+army_focus_legions = {
+	icon = "army_focus_legions"
+	allow_normal_conversion = yes
+	modifiers = {
+		army_tradition = 0.33
+		drill_decay_modifier = -0.25
+	}
+	ai = {
+		factor = 1
+		#modifier = {
+		#	factor = 2
+		#
+		#}
+	}
+}
+
+army_focus_skirmishers = {
+	icon = "army_focus_skirmishers"
+	allow_normal_conversion = yes
+	modifiers = {
+		global_regiment_cost = -0.10
+		movement_speed = 0.05
+	}
+	ai = {
+		factor = 1
+		#modifier = {
+		#	factor = 2
+		#
+		#}
+	}
+}
+
+#######################################################
 
 oppian_state_reform = {
 	icon = "oppian"

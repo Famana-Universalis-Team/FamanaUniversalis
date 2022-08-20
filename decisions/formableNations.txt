@@ -852,7 +852,10 @@ country_decisions = {
 			}
 			if = {
 				limit = {
-					has_reform = autocracy_reform
+					government = monarchy
+					NOT = {
+						has_reform = bureaucratic_monarchy
+					}
 				}
 				add_government_reform = bureaucratic_monarchy
 			}
@@ -1012,6 +1015,15 @@ country_decisions = {
 				}
 				set_government_rank = 2
 			}
+			if = {
+				limit = {
+					government = monarchy
+					NOT = {
+						has_reform = bureaucratic_monarchy
+					}
+				}
+				add_government_reform = bureaucratic_monarchy
+			}
 			add_prestige = 25
 		}
 		ai_will_do = {
@@ -1121,6 +1133,15 @@ country_decisions = {
 				}
 				add_permanent_claim = VNA
 			}
+			if = {
+				limit = {
+					government = monarchy
+					NOT = {
+						has_reform = bureaucratic_monarchy
+					}
+				}
+				add_government_reform = bureaucratic_monarchy
+			}
 			add_country_modifier = {
 				name = "centralization_modifier"
 				duration = 7300
@@ -1208,6 +1229,15 @@ country_decisions = {
 				}
 				add_permanent_claim = DEL
 			}
+			if = {
+				limit = {
+					government = monarchy
+					NOT = {
+						has_reform = bureaucratic_monarchy
+					}
+				}
+				add_government_reform = bureaucratic_monarchy
+			}
 			add_country_modifier = {
 				name = "centralization_modifier"
 				duration = 7300
@@ -1286,6 +1316,15 @@ country_decisions = {
 				add_permanent_claim = MOR
 			}
 			change_tag = MOR
+			if = {
+				limit = {
+					government = monarchy
+					NOT = {
+						has_reform = bureaucratic_monarchy
+					}
+				}
+				add_government_reform = bureaucratic_monarchy
+			}
 			add_country_modifier = {
 				name = "centralization_modifier"
 				duration = 7300
@@ -1468,6 +1507,15 @@ country_decisions = {
 					NOT = { owned_by = ROOT }
 				}
 				add_permanent_claim = GAX
+			}
+			if = {
+				limit = {
+					government = monarchy
+					NOT = {
+						has_reform = bureaucratic_monarchy
+					}
+				}
+				add_government_reform = bureaucratic_monarchy
 			}
 			add_prestige = 25
 		}

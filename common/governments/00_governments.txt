@@ -95,6 +95,15 @@ monarchy = {
 				imperial_principle_reform
 			}
 		}
+		army_focus_level = {
+			reforms = {
+				army_focus_cav_armies
+				army_focus_mercenaries
+				#army_focus_leadership
+				army_focus_legions
+				army_focus_skirmishers
+			}
+		}
 		deliberative_assembly = {
 			reforms = {
 				parliamentary_reform

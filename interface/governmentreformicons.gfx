@@ -1,5 +1,21 @@
 spriteTypes = {
 	spriteType = {
+		name = "government_reform_army_focus_cav_armies"
+		texturefile = "gfx//interface//government_reform_icons//army_focus_cav_armies.dds"
+	}
+	spriteType = {
+		name = "government_reform_army_focus_mercenaries"
+		texturefile = "gfx//interface//government_reform_icons//army_focus_mercenaries.dds"
+	}
+	spriteType = {
+		name = "government_reform_army_focus_legions"
+		texturefile = "gfx//interface//government_reform_icons//army_focus_legions.dds"
+	}
+	spriteType = {
+		name = "government_reform_army_focus_skirmishers"
+		texturefile = "gfx//interface//government_reform_icons//army_focus_skirmishers.dds"
+	}
+	spriteType = {
 		name = "government_reform_king_2"
 		texturefile = "gfx//interface//government_reform_icons//king_2.dds"
 	}
