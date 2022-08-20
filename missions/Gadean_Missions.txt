@@ -3,9 +3,39 @@ gadea_1 = {
     generic = no
     ai = yes
     potential = {
-		tag = GDA
+		AND = {
+			tag = GDA
+			has_reform = gadea_reform
+		}
 	}
 	has_country_shield = yes
+
+	gadea_inroads_ga_xal = {
+		position = 2
+		icon = mission_market_place_with_asian_traders
+		required_missions = { gadea_gain_allies }
+		trigger = {
+			is_neighbor_of = ALM
+			diplomatic_reputation = 1
+			total_development = 20
+        }
+		effect = {
+			every_country = {
+				limit = {
+					is_rival = ALM
+				}
+				add_opinion = {
+					who = ROOT
+					modifier = enemy_of_my_enemy
+				}
+				reverse_add_opinion = {
+					who = ROOT
+					modifier = enemy_of_my_enemy
+				}
+			}
+			add_mercantilism = 4
+		}
+	}
 
 	gadea_pirates_of_maner = {
 		position = 4
@@ -36,7 +66,10 @@ gadea_2 = {
     generic = no
     ai = yes
     potential = {
-		tag = GDA
+		AND = {
+			tag = GDA
+			has_reform = gadea_reform
+		}
     }
     has_country_shield = yes
 
@@ -86,6 +119,46 @@ gadea_2 = {
 			}
 		}
 	}
+
+	gadea_convert_maky = {
+		position = 5
+		icon = mission_hands_praying
+		required_missions = { gadea_invade_maky }
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 10
+				region = maky_region
+				religion = gadan
+			}
+        }
+		effect = {
+			custom_tooltip = GADEA_VASSAL_SWARM_HERE_TO_STAY_MAKY
+			set_global_flag = Gadea_Vassal_Swarm_Maky
+			hidden_effect = {
+				every_country = {
+					limit = {
+						AND = {
+							is_subject_of = ROOT
+							is_subject_of_type = gadan_tributary_state
+							capital_scope = {
+								region = maky_region
+							}
+						}
+					}
+					ROOT = {
+						create_subject = {
+							subject_type = gadan_tributary_state_annexable
+							subject = PREV
+						}
+					}
+				}
+			}
+			add_country_modifier = {
+				name = gadea_conquest_of_maky
+				duration = 7300
+			}
+		}
+	}
 }
 
 gadea_3 = {
@@ -93,7 +166,10 @@ gadea_3 = {
     generic = no
     ai = yes
     potential = {
-		tag = GDA
+		AND = {
+			tag = GDA
+			has_reform = gadea_reform
+		}
 	}
 	has_country_shield = yes
 
@@ -105,6 +181,10 @@ gadea_3 = {
 			hidden_trigger = { ai = no } #the ai shouldnt be capable of doing this. PLAYER ONLY!
 			army_size = 6
 			num_of_generals = 1
+			num_of_owned_provinces_with = { #otherwise the player will suffer due to the disloyalty
+				value = 2
+				owned_by = ROOT
+			}
         }
 		effect = {
 			custom_tooltip = GADEA_VASSAL_SWARM_FORMED
@@ -146,6 +226,56 @@ gadea_3 = {
 			set_global_flag = Gadea_Vassal_Swarm
 		}
 	}
+
+	gadea_centralise = {
+		position = 5
+		icon = mission_european_church
+		required_missions = { gadea_wipe_heretics }
+		trigger = {
+			all_country = {
+				if = {
+					limit = {
+						is_subject_of = ROOT
+					}
+					NOT = { liberty_desire = 50 }
+					has_opinion = {
+						who = ROOT
+						value = 50
+					}
+				}
+			}
+        }
+		effect = {
+			custom_tooltip = GADEA_INTEGRATED_VASSAL_SWARM
+			set_global_flag = Gadea_Vassal_Swarm_Gadan
+			hidden_effect = {
+				every_country = {
+					limit = {
+						AND = {
+							is_subject_of = ROOT
+							is_subject_of_type = gadan_tributary_state
+							capital_scope = {
+								OR = {
+									area = morsum_area
+									area = mariana_area
+									area = tsaj_area
+									area = zeaf_area
+									area = bava_area
+									area = unnamed_area_9
+								}
+							}
+						}
+					}
+					ROOT = {
+						create_subject = {
+							subject_type = gadan_tributary_state_annexable
+							subject = PREV
+						}
+					}
+				}
+			}
+		}
+	}
 }
 
 gadea_4 = {
@@ -153,7 +283,10 @@ gadea_4 = {
     generic = no
     ai = yes
     potential = {
-		tag = GDA
+		AND = {
+			tag = GDA
+			has_reform = gadea_reform
+		}
     }
     has_country_shield = yes
 
@@ -195,6 +328,135 @@ gadea_4 = {
 			}
 		}
 	}
+
+	gadea_conscript_from_subjects = {
+		position = 5
+		icon = mission_persian_soldiers
+		required_missions = { gadea_build_army }
+		trigger = {
+			army_size = 15
+			num_of_generals = 2
+        }
+		effect = {
+			custom_tooltip = GADEA_MANPOWER_FROM_SUBJECTS
+			hidden_effect = {
+				every_subject_country = {
+					ROOT = {
+						add_manpower = 5
+					}
+				}
+			}
+			add_country_modifier = {
+				name = gadea_subject_manpwoer
+				duration = 3650
+			}
+		}
+	}
+
+	gadea_justify_ale_mea = {
+		position = 6
+		icon = mission_crusade_for_varna
+		required_missions = { gadea_conscript_from_subjects }
+		trigger = {
+			army_size_percentage = 1
+			num_of_owned_provinces_with = {
+				value = 2
+				has_building = fort_15th
+			}
+        }
+		effect = {
+			raise_war_taxes = yes
+			mariana_area = {
+				add_permanent_claim = ROOT
+			}
+			morsum_area = {
+				add_permanent_claim = ROOT
+			}
+			if = {
+				limit = {
+					ALM = {
+						exists = yes
+					}
+				}
+				declare_war_with_cb = {
+					who = ALM
+					casus_belli = cb_conquest
+				}
+			}
+			else = {
+				custom_tooltip = FOCUS_BYPASSED
+			}
+		}
+	}
+
+	gadea_morsum_for_peace = {
+		position = 7
+		icon = mission_alliances
+		required_missions = { gadea_justify_ale_mea }
+		trigger = {
+			OR = {
+				AND = {
+					is_in_war = {
+						attacker_leader = ROOT
+						defender_leader = ALM
+						war_score = 35
+					}
+					if = { #makes sure Ale Mea owns Mariana and Morsum
+						limit = {
+							ALM = {
+								owns_core_province = 5409
+							}
+						}
+						controls = 5409
+					}
+					if = {
+						limit = {
+							ALM = {
+								owns_core_province = 5411
+							}
+						}
+						controls = 5411
+					}
+				}
+				ALM = {
+					OR = {
+						exists = no
+						NOT = {
+							controls = 5411
+						}
+					}
+				}
+			}
+        }
+		effect = {
+			if = {
+				limit = {
+					ALM = {
+						OR = {
+							exists = no
+							NOT = {
+								controls = 5411
+							}
+						}
+					}
+				}
+				custom_tooltip = FOCUS_BYPASSED
+			}
+			else = {
+				add_years_of_income = 1.5
+				ALM = {
+					release = MRS
+					release = MAA
+				}
+				MRS = {
+					change_religion = gadan
+				}
+				MAA = {
+					change_religion = gadan
+				}
+			}
+		}
+	}
 }
 
 gadea_5 = {
@@ -202,9 +464,58 @@ gadea_5 = {
     generic = no
     ai = yes
     potential = {
-		tag = GDA
+		AND = {
+			tag = GDA
+			has_reform = gadea_reform
+		}
 	}
 	has_country_shield = yes
+
+	gadea_develop_gadan = {
+		position = 2
+		icon = mission_hanseatic_city
+		required_missions = { gadea_develop_holy_city } #None
+		trigger = {
+			5155 = {
+				num_of_times_improved = 5
+				OR = {
+					has_building = temple
+					has_building = marketplace
+				}
+			}
+			OR = {
+				5159 = {
+					num_of_times_improved = 5
+				}
+				5161 = {
+					num_of_times_improved = 5
+				}
+			}
+			OR = {
+				5407 = {
+					num_of_times_improved = 5
+				}
+				5153 = {
+					num_of_times_improved = 5
+				}
+			}
+			OR = {
+				5156 = {
+					num_of_times_improved = 5
+				}
+				5162 = {
+					num_of_times_improved = 5
+				}
+			}
+        }
+		effect = {
+			add_years_of_income = 0.5
+			add_country_modifier = {
+				name = gadea_mass_construction
+				duration = 7300 #20 years
+			}
+		}
+	}
 
 	gadea_control_trade = {
 		position = 4
@@ -222,6 +533,27 @@ gadea_5 = {
 				name = gadea_trade
 				duration = 3650
 			}
+		}
+	}
+	gadea_build_up_region = {
+		position = 5
+		icon = mission_early_modern_university
+		required_missions = { gadea_control_trade } #None
+		trigger = {
+			grown_by_development = 20
+			num_of_owned_provinces_with = {
+				value = 5
+				num_of_buildings_in_province = 1
+			}
+        }
+		effect = {
+			define_advisor = {
+				type = treasurer
+				skill = 3
+				discount = yes
+			}
+			change_government_reform_progress = 100
+			add_prestige = 50
 		}
 	}
 }

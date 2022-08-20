@@ -1729,12 +1729,26 @@ gadea_fortifications = {
 
 gadean_army = {
     land_forcelimit_modifier = 0.10
-    land_maintenance_modifier = 0.10
-    manpower_in_true_faith_provinces= 0.25
+    land_maintenance_modifier = -0.10
     shock_damage = 0.10
 }
 
 gadea_trade = {
     trade_steering = 0.15
     trade_efficiency = 0.10
+}
+
+gadea_mass_construction = {
+    global_autonomy = -0.05
+    global_prosperity_growth = 0.1
+}
+
+gadea_conquest_of_maky = {
+    reduced_liberty_desire = 15
+    diplomatic_annexation_cost = -0.25
+}
+
+gadea_subject_manpwoer = {
+    manpower_recovery_speed = 0.10
+    manpower_in_true_faith_provinces= 0.25
 }
