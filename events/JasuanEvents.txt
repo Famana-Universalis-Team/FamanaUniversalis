@@ -1322,7 +1322,7 @@ country_event = { #Kalargan uprising
 	}
 
 	mean_time_to_happen = {
-		months = 4380
+		months = 144
 		modifier = {
 			factor = 2.5
 			mission_completed = eclipse_healing_the_rift
