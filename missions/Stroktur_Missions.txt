@@ -247,7 +247,7 @@ eclipse_branching_temp = {
         trigger = {
         }
         effect = {
-            
+            custom_tooltip = eclipseBranchingTooltip
         }
         #provinces_to_highlight = {}
     }
@@ -541,7 +541,7 @@ stroktur_branching = {
         trigger = {
         }
         effect = {
-            
+            custom_tooltip = branchingStrokturTooltip
         }
         #provinces_to_highlight = {}
     }
@@ -551,7 +551,7 @@ stroktur_branching = {
         trigger = {
         }
         effect = {
-            
+            custom_tooltip = branchingStrokturTooltip
         }
         #provinces_to_highlight = {}
     }
@@ -561,7 +561,7 @@ stroktur_branching = {
         trigger = {
         }
         effect = {
-            
+            custom_tooltip = branchingStrokturTooltip
         }
         #provinces_to_highlight = {}
     }
@@ -571,7 +571,7 @@ stroktur_branching = {
         trigger = {
         }
         effect = {
-            
+            custom_tooltip = branchingStrokturTooltip
         }
         #provinces_to_highlight = {}
     }
