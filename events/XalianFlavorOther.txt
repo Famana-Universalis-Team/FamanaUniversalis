@@ -743,6 +743,9 @@ country_event = { #gain cb
 				}
 			}
 		}
+		GDA = {
+			knows_country = ROOT
+		}
 	}
 
 	immediate = {

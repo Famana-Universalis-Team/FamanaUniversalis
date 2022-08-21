@@ -54,4 +54,71 @@ xalian_religious_missions = {
 			}
 		}
 	}
+	xalian_survive_the_invasions = {
+		position = 3
+		icon = mission_chinese_general_riding
+		required_missions = { }
+		trigger = {
+			NOT = {
+				FAS = {
+					exists = yes
+				}
+			}
+        }
+		effect = {
+			add_prestige = 10
+		}
+	}
+
+	xalian_find_converts = {
+		position = 4
+		icon = mission_cossack_cavalry
+		required_missions = { xalian_survive_the_invasions }
+		trigger = {
+			OR = {
+				religious_ideas = 7
+				is_defender_of_faith = yes
+			}
+			any_owned_province = {
+				AND = {
+					religion = tonmo
+					has_missionary = yes
+				}
+			}
+        }
+		effect = {
+			custom_tooltip = getRavshoMercs
+			set_country_flag = ravsho_merc_flag
+		}
+	}
+
+	xalian_expel_tonmo = {
+		position = 5
+		icon = mission_crusade_for_varna
+		required_missions = { xalian_find_converts }
+		trigger = {
+			NOT = {
+				any_province = {
+					AND = {
+						OR = {
+							superregion = ga_xal_superregion
+							region = eastern_desert_region #hoxoi
+						}
+						religion = tonmo
+					}
+				}
+			}
+        }
+		effect = {
+			add_country_modifier = {
+				name = gadea_tonmo_defeated
+				duration = 9125
+			}
+			define_advisor = {
+				type = theologian
+				skill = 3
+				discount = yes
+			}
+		}
+	}
 }
