@@ -489,26 +489,60 @@ country_event = { #become vassal
 			limit = {
 				has_global_flag = Gadea_Vassal_Swarm_Annexable
 			}
-			GDA = {
-				create_subject = {
-					subject_type = gadan_tributary_state_annexable
-					subject = ROOT
+			if = {
+				limit = {
+					NOT = { has_global_flag = GadelisFlag }
 				}
-				country_event = {
-					id = xalflavor_other.15
+				GDA = {
+					create_subject = {
+						subject_type = gadan_tributary_state_annexable
+						subject = ROOT
+					}
+					country_event = {
+						id = xalflavor_other.15
+					}
 				}
 			}
-			GDL = {
-				create_subject = {
-					subject_type = gadan_tributary_state_annexable
-					subject = ROOT
-				}
-				country_event = {
-					id = xalflavor_other.15
+			else = {
+				GDL = {
+					create_subject = {
+						subject_type = gadan_tributary_state_annexable
+						subject = ROOT
+					}
+					country_event = {
+						id = xalflavor_other.15
+					}
 				}
 			}
 		}
-		else_if = {
+		else = {
+			if = {
+				limit = {
+					NOT = { has_global_flag = GadelisFlag }
+				}
+				GDA = {
+					create_subject = {
+						subject_type = gadan_tributary_state
+						subject = ROOT
+					}
+					country_event = {
+						id = xalflavor_other.14
+					}
+				}
+			}
+			else = {
+				GDL = {
+					create_subject = {
+						subject_type = gadan_tributary_state
+						subject = ROOT
+					}
+					country_event = {
+						id = xalflavor_other.14
+					}
+				}	
+			}
+		}
+		if = {
 			limit = {
 				AND = {
 					has_global_flag = Gadea_Vassal_Swarm_Maky
@@ -517,26 +551,33 @@ country_event = { #become vassal
 					}
 				}
 			}
-			GDA = {
-				create_subject = {
-					subject_type = gadan_tributary_state_annexable
-					subject = ROOT
+			if = {
+				limit = {
+					NOT = { has_global_flag = GadelisFlag }
 				}
-				country_event = {
-					id = xalflavor_other.15
+				GDA = {
+					create_subject = {
+						subject_type = gadan_tributary_state_annexable
+						subject = ROOT
+					}
+					country_event = {
+						id = xalflavor_other.15
+					}
 				}
 			}
-			GDL = {
-				create_subject = {
-					subject_type = gadan_tributary_state_annexable
-					subject = ROOT
-				}
-				country_event = {
-					id = xalflavor_other.15
+			else = {
+				GDL = {
+					create_subject = {
+						subject_type = gadan_tributary_state_annexable
+						subject = ROOT
+					}
+					country_event = {
+						id = xalflavor_other.15
+					}
 				}
 			}
 		}
-		else_if = {
+		if = {
 			limit = {
 				AND = {
 					has_global_flag = Gadea_Vassal_Swarm_Gadan
@@ -552,42 +593,29 @@ country_event = { #become vassal
 					}
 				}
 			}
-			GDA = {
-				create_subject = {
-					subject_type = gadan_tributary_state_annexable
-					subject = ROOT
+			if = {
+				limit = {
+					NOT = { has_global_flag = GadelisFlag }
 				}
-				country_event = {
-					id = xalflavor_other.15
-				}
-			}
-			GDL = {
-				create_subject = {
-					subject_type = gadan_tributary_state_annexable
-					subject = ROOT
-				}
-				country_event = {
-					id = xalflavor_other.15
+				GDA = {
+					create_subject = {
+						subject_type = gadan_tributary_state_annexable
+						subject = ROOT
+					}
+					country_event = {
+						id = xalflavor_other.15
+					}
 				}
 			}
-		}
-		else = {
-			GDA = {
-				create_subject = {
-					subject_type = gadan_tributary_state
-					subject = ROOT
-				}
-				country_event = {
-					id = xalflavor_other.14
-				}
-			}
-			GDL = {
-				create_subject = {
-					subject_type = gadan_tributary_state
-					subject = ROOT
-				}
-				country_event = {
-					id = xalflavor_other.14
+			else = {
+				GDL = {
+					create_subject = {
+						subject_type = gadan_tributary_state_annexable
+						subject = ROOT
+					}
+					country_event = {
+						id = xalflavor_other.15
+					}
 				}
 			}
 		}

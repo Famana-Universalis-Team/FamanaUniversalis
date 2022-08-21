@@ -541,6 +541,7 @@ gadea_3 = {
 				complete_mission = gadea_gadelis
 			}
 			change_tag = GDL
+			set_global_flag = GadelisFlag
 			if = {
 				limit = {
 					NOT = { government_rank = 2 }
