@@ -206,7 +206,7 @@ country_event = {
                     NOT = {
                         OR = {
                             region = south_xalia_region
-                            region = moria_region
+                            region = west_xalia_region
                             region = east_xalia_region
                             region = north_xalia_region
                         }
@@ -244,7 +244,7 @@ country_event = {
                 limit = {
                     OR = {
                         region = south_xalia_region
-                        region = moria_region
+                        region = west_xalia_region
                         region = east_xalia_region
                         region = north_xalia_region
                     }

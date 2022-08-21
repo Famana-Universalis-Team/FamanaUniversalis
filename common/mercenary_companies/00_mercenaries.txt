@@ -20,7 +20,7 @@ merc_pexamolite_paladins = {
 				region = north_xalia_region
 			}
 			any_owned_province = {
-				region = moria_region
+				region = west_xalia_region
 			}
 		}
 	}
@@ -115,7 +115,7 @@ merc_jabuskay_band = {
 				region = south_xalia_region
 			}
 			any_owned_province = {
-				region = moria_region
+				region = west_xalia_region
 			}
 		}	
 	}

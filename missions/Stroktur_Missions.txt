@@ -2945,7 +2945,7 @@ nafa_3 = {
                 any_owned_province = {
                     OR = {
                         region = south_xalia_region
-                        region = moria_region
+                        region = west_xalia_region
                         region = east_xalia_region
                         region = north_xalia_region
                     }
@@ -2956,7 +2956,7 @@ nafa_3 = {
                 value = 5
                 OR = {
                     region = south_xalia_region
-                    region = moria_region
+                    region = west_xalia_region
                     region = east_xalia_region
                     region = north_xalia_region
                 }
@@ -2966,7 +2966,7 @@ nafa_3 = {
                 value = 3
                 OR = {
                     region = south_xalia_region
-                    region = moria_region
+                    region = west_xalia_region
                     region = east_xalia_region
                     region = north_xalia_region
                 }
@@ -2995,14 +2995,14 @@ nafa_3 = {
                 duration = 21900
             }
             south_xalia_region = { add_permanent_claim = ROOT }
-			moria_region = { add_permanent_claim = ROOT }
+			west_xalia_region = { add_permanent_claim = ROOT }
 			east_xalia_region = { add_permanent_claim = ROOT }
 			north_xalia_region = { add_permanent_claim = ROOT }
         }
         provinces_to_highlight = {
             OR = {
                 region = south_xalia_region
-                region = moria_region
+                region = west_xalia_region
                 region = east_xalia_region
                 region = north_xalia_region
             }
@@ -3020,7 +3020,7 @@ nafa_3 = {
                     type = all
                     country_or_non_sovereign_subject_holds = ROOT
                 }
-                moria_region = {
+                west_xalia_region = {
                     type = all
                     country_or_non_sovereign_subject_holds = ROOT
                 }
@@ -3071,7 +3071,7 @@ nafa_3 = {
                         capital_scope = {
                             OR = {
                                 region = south_xalia_region
-                                region = moria_region
+                                region = west_xalia_region
                                 region = east_xalia_region
                                 region = north_xalia_region
                             }
@@ -3108,7 +3108,7 @@ nafa_3 = {
         provinces_to_highlight = {
             OR = {
                 region = south_xalia_region
-                region = moria_region
+                region = west_xalia_region
                 region = east_xalia_region
                 region = north_xalia_region
             }

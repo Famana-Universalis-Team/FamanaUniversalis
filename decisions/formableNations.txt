@@ -832,7 +832,7 @@ country_decisions = {
 			num_of_owned_provinces_with = {
 				value = 10
 				is_city = yes
-				region = moria_region
+				region = west_xalia_region
 		    }
 			#army_size = 20
 		}
@@ -859,7 +859,7 @@ country_decisions = {
 				}
 				add_government_reform = bureaucratic_monarchy
 			}
-			moria_region = {
+			west_xalia_region = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
@@ -1309,7 +1309,7 @@ country_decisions = {
 				}
 				set_government_rank = 2
 			}
-			moria_region = {
+			west_xalia_region = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
@@ -1502,7 +1502,7 @@ country_decisions = {
 				}
 				add_permanent_claim = GAX
 			}
-			moria_region = {
+			west_xalia_region = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
@@ -4761,7 +4761,7 @@ country_decisions = {
 				}
 				add_permanent_claim = PXS
 			}
-			moria_region = {
+			west_xalia_region = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}

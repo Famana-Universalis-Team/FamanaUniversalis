@@ -53,7 +53,7 @@ country_decisions = {
 					country_or_non_sovereign_subject_holds = ROOT
 					religion = morian
 				}
-				moria_region = {
+				west_xalia_region = {
 					type = all
 					country_or_non_sovereign_subject_holds = ROOT
 					religion = morian
@@ -206,7 +206,7 @@ country_decisions = {
 			owns_all_provinces = {
 				OR = {
 					region = north_xalia_region
-					region = moria_region
+					region = west_xalia_region
 					region = east_xalia_region
 					region = south_xalia_region
 				}
@@ -1154,7 +1154,7 @@ country_decisions = {
 				type = all
 				owned_by = ROOT
 			}
-			moria_region = {
+			west_xalia_region = {
 				type = all
 				owned_by = ROOT
 			}

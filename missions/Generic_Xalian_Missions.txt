@@ -1,6 +1,6 @@
 xalian_religious_missions = {
 	slot = 5
-	has_country_shield = yes
+	has_country_shield = no
 	
 	generic = yes
 	
@@ -10,6 +10,7 @@ xalian_religious_missions = {
 	xalian_unite_the_faiths = {
 		icon = mission_hands_praying
 		required_missions = {  } #None
+		position = 1
 		trigger = {
             AND = {
                 religion_group = xalian_group
@@ -54,8 +55,30 @@ xalian_religious_missions = {
 			}
 		}
 	}
+}
+
+xalian_fashros_missions = {
+	slot = 5
+	has_country_shield = no
+	
+	generic = yes
+	
+	potential = {
+		capital_scope = {
+			OR = {
+				region = south_xalia_region
+				region = east_xalia_region
+				region = west_xalia_region
+				region = north_xalia_region
+			}
+		}
+		NOT = {
+			religion = gadan
+		}
+	}
+
 	xalian_survive_the_invasions = {
-		position = 3
+		position = 2
 		icon = mission_chinese_general_riding
 		required_missions = { }
 		trigger = {
@@ -71,7 +94,7 @@ xalian_religious_missions = {
 	}
 
 	xalian_find_converts = {
-		position = 4
+		position = 3
 		icon = mission_cossack_cavalry
 		required_missions = { xalian_survive_the_invasions }
 		trigger = {
@@ -93,7 +116,7 @@ xalian_religious_missions = {
 	}
 
 	xalian_expel_tonmo = {
-		position = 5
+		position = 4
 		icon = mission_crusade_for_varna
 		required_missions = { xalian_find_converts }
 		trigger = {

@@ -1009,7 +1009,7 @@ gadea_5 = {
 				limit = {
 					capital_scope = {
 						OR = {
-							region = moria_region
+							region = west_xalia_region
 							region = east_xalia_region
 						}
 					}
