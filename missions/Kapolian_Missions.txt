@@ -1,3 +1,48 @@
+kap_piety_mission = {
+	slot = 4
+	has_country_shield = no
+	
+	generic = no
+	
+	potential = {
+		tag = KAP
+	}
+	kap_pick_a_side = {
+		icon = mission_european_church
+		required_missions = {  } #None
+		position = 1
+		trigger = {
+            religion_group = lathvy_group
+			OR = {
+				piety = 1
+				NOT = {
+					piety = -0.99
+				}
+			}
+        }
+		effect = {
+			if = {
+				limit = {
+					piety = 0
+				}
+				add_stability = 1
+				add_country_modifier = {
+					name = lathvy_good_boy
+					duration = 9125
+				}
+			}
+			else = {
+				add_mil_power = 75
+				add_country_modifier = {
+					name = lathvy_bad_boy
+					duration = 9125
+				}
+			}
+		}
+		#provinces_to_highlight = {
+		#}
+	}
+}
 
 kap_4 = { #kinvirel - jasua region path
 	slot = 4
@@ -619,50 +664,4 @@ kap_3 = {
 			}
 		}
     }
-}
-
-kap_piety_mission = {
-	slot = 4
-	has_country_shield = no
-	
-	generic = no
-	
-	potential = {
-		tag = KAP
-	}
-	kap_pick_a_side = {
-		icon = mission_european_church
-		required_missions = {  } #None
-		position = 1
-		trigger = {
-            religion_group = lathvy_group
-			OR = {
-				piety = 1
-				NOT = {
-					piety = -0.99
-				}
-			}
-        }
-		effect = {
-			if = {
-				limit = {
-					piety = 0
-				}
-				add_stability = 1
-				add_country_modifier = {
-					name = lathvy_good_boy
-					duration = 9125
-				}
-			}
-			else = {
-				add_mil_power = 75
-				add_country_modifier = {
-					name = lathvy_bad_boy
-					duration = 9125
-				}
-			}
-		}
-		#provinces_to_highlight = {
-		#}
-	}
 }
