@@ -1093,7 +1093,7 @@ merc_zeaf_skirmishers = {
 
 # Kyny Band
 merc_kyny_band = { #Light cavalry
-    regiments_per_development = 0.015 #small
+    regiments_per_development = 0.02 #small
 	cavalry_weight = 0.6
 	artillery_weight = 0
 	cavalry_cap = 12
@@ -1113,7 +1113,7 @@ merc_kyny_band = { #Light cavalry
 }
 # Cilrizi Khesig
 merc_cilrizi_khesig = { #Heavy Infantry
-    regiments_per_development = 0.01 #small
+    regiments_per_development = 0.015 #small
 	cavalry_weight = 0
 	artillery_weight = 0
 	cavalry_cap = 0
@@ -1134,7 +1134,7 @@ merc_cilrizi_khesig = { #Heavy Infantry
 }
 # Tsarkan Horse Archers
 merc_tsarkan_archers = { #Heavy Cavalry
-    regiments_per_development = 0.015 #small
+    regiments_per_development = 0.02 #small
 	cavalry_weight = 0.6
 	artillery_weight = 0
 	cavalry_cap = 12
@@ -1149,6 +1149,6 @@ merc_tsarkan_archers = { #Heavy Cavalry
 	}
 	modifier = {
 		cavalry_power = 0.15
-		leader_land_manuever = 3
+		leader_land_manuever = 6
 	}
 }
