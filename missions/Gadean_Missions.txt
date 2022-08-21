@@ -479,16 +479,11 @@ gadea_3 = {
 		icon = mission_european_church
 		required_missions = { gadea_wipe_heretics }
 		trigger = {
-			all_country = {
-				if = {
-					limit = {
-						is_subject_of = ROOT
-					}
-					NOT = { liberty_desire = 50 }
-					has_opinion = {
-						who = ROOT
-						value = 50
-					}
+			all_subject_country= {
+				NOT = { liberty_desire = 50 }
+				has_opinion = {
+					who = ROOT
+					value = 50
 				}
 			}
         }
