@@ -20,6 +20,10 @@ cb_convert_gadan = {
 	is_triggered_only = yes
 
 	prerequisites = {
+		OR = {
+			tag = GDA
+			tag = GDL
+		}
 	}
 
 	war_goal = convert_nation
