@@ -361,6 +361,9 @@
  del_costal_cites_desc:0 "The cities of the Vinian coast are prime places for ports."
  del_into_ga_xal_title:0 "Rout the Vinians"
  del_into_ga_xal_desc:0 "The Vinians have been destroyed, and the route to inner Ga Xal is now open."
+ #kill yourself
+ delkia_xalian_unite_the_faiths_title:0 "Unite the Faith"
+ delkia_xalian_unite_the_faiths_desc:0 "For centuries, the Xalian faith has been divided in four. Now that we hold all four Xalian holy sites, we are in a position to end this division permanently."
  #Delkian Mission Rewards
  rebuilding_delkia:0 "Rebuilding Delkia"
  del_ximal:0 "Expansion of Ximal"
@@ -1045,10 +1048,13 @@
  gadea_conquer_vinia_desc:0 "Gadea is no longer a small, tiny, irrelevant state! We will march into Sixan victorious, and burn their heretical artefacts. What sort of religion worships water? We must show them the truth."
  gadea_dominate_gaxal_title:0 "Dominate Ga Xal"
  gadea_dominate_gaxal_desc:0 "Would all the hubris of the Xalians ever predict that it would be us, Opmaki, who rule over them? Certaintly not. Their greedy fists have supressed us for too long. Now it is time to show them how imperialism is done properly."
- 
 
+ #Lathvy Missions
+ lathvy_pick_a_side_title:0 "Obtain Divine Favor"
+ lathvy_pick_a_side_desc:0 "We must show that we are loyal to our god, so that he may bless us with good fortune in our endeavors. The future of our people depends on our faith in the Lathvy doctrine above all else."
+ #Lathvy Mission Rewards
+ lathvy_bad_boy:0 "Servant of Loys"
+ lathvy_good_boy:0 "Servant of Ara"
 
-
- #kill yourself
- delkia_xalian_unite_the_faiths_title:0 "Unite the Faith"
- delkia_xalian_unite_the_faiths_desc:0 "For centuries, the Xalian faith has been divided in four. Now that we hold all four Xalian holy sites, we are in a position to end this division permanently."
+ kap_pick_a_side_title:0 "Obtain Divine Favor"
+ kap_pick_a_side_desc:0 "We must show that we are loyal to our god, so that he may bless us with good fortune in our endeavors. The future of our people depends on our faith in the Lathvy doctrine above all else."

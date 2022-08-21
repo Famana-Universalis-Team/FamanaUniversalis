@@ -1807,3 +1807,13 @@ soy_ajetaz = {
     land_morale = 0.15
     monarch_lifespan = 0.25
 }
+
+lathvy_good_boy = {
+    prestige = 1.0
+    global_missionary_strength = 0.01
+}
+
+lathvy_bad_boy = {
+    manpower_recovery_speed = 0.10
+    global_unrest = -1
+}
