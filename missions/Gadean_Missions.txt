@@ -20,7 +20,7 @@ gadea_1 = {
 		required_missions = { gadea_gain_allies }
 		trigger = {
 			is_neighbor_of = ALM
-			diplomatic_reputation = 1
+			diplomatic_reputation = 3
 			total_development = 20
         }
 		effect = {
@@ -54,6 +54,9 @@ gadea_1 = {
 					}
 				}
 			}
+			8857 = {
+				has_building = dock
+			}
         }
 		provinces_to_highlight = {
 			province_id = 8857
@@ -78,6 +81,9 @@ gadea_1 = {
 						is_subject_of = ROOT
 					}
 				}
+			}
+			5162 = {
+				has_building = barracks
 			}
         }
 		provinces_to_highlight = {
@@ -633,6 +639,10 @@ gadea_4 = {
 		trigger = {
 			has_estate_privilege = estate_nobles_levies
 			mil = 3
+			employed_advisor = {
+				category = MIL
+				religion = gadan
+			}
         }
 		effect = {
 			custom_tooltip = GADEA_MANPOWER_FROM_SUBJECTS
@@ -659,6 +669,12 @@ gadea_4 = {
 			num_of_owned_provinces_with = {
 				value = 2
 				has_building = fort_15th
+			}
+			ALM = {
+				has_spy_network_from = {
+					who = ROOT
+					value = 50
+				}
 			}
         }
 		effect = {
