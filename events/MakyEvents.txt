@@ -1221,4 +1221,54 @@ country_event = { #Vaximorian conversion
 			}
 		}
 	}
+}
+
+country_event = { #Kashroon temple inscriptions
+	id = maky.16
+	title = maky.16.t
+	desc = maky.16.d
+	picture = SHWEDAGON_PAGON_eventPicture
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = { 
+		name = maky.16.a #objectively a shit option the troll is absolute
+		add_country_modifier = {
+			name = "reconstructed_carvings" 
+			duration = -1
+		}
+	}
+	
+	option = { 
+		name = maky.16.b
+		add_country_modifier = {
+			name = "religious_carvings"
+			duration = -1
+		}
+	}
+	
+	option = { 
+		name = maky.16.c
+		add_country_modifier = {
+			name = "patriotic_carvings"
+			duration = -1
+		}
+	}
+	
+	option = { 
+		name = maky.16.d.o
+		add_country_modifier = {
+			name = "scientific_carvings"
+			duration = -1
+		}
+	}
+	
+	option = { 
+		name = maky.16.e
+		add_country_modifier = {
+			name = "prestigious_carvings"
+			duration = -1
+		}
+	}
+	
 }	

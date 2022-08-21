@@ -105,6 +105,10 @@ kashroon_temple = {
 
 		#what effects happen when this tier is achieved
 		on_upgraded = {
+			country_event = { 
+				id = maky.16
+				days = 1
+			}
 		}
 	}
 
