@@ -357,15 +357,12 @@ gadea_2 = {
 		required_missions = { gadea_gadelis }
 		trigger = {
 			army_size_percentage = 1
-			all_province = {
-				if = {
-					limit = {
-						AND = {
-							NOT = { is_empty = yes }
-							region = maky_region
-						}
+			maky_region = {
+				all_province = {
+					OR = {
+						is_empty = yes
+						owned_by = ROOT
 					}
-					owned_by = ROOT
 				}
 			}
 			5133 = {
@@ -783,14 +780,8 @@ gadea_4 = {
 		required_missions = { gadea_gadelis gadea_dominate_gaxal }
 		trigger = {
 			army_size_percentage = 1
-			all_province = {
-				if = {
-					limit = {
-						AND = {
-							NOT = { is_empty = yes }
-							region = south_xalia_region
-						}
-					}
+			south_xalia_region = {
+				all_province = {
 					owned_by = ROOT
 				}
 			}
