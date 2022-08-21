@@ -409,6 +409,7 @@ country_event = {
 
     trigger = { 
         ## Copied trigger from Council of Xon decision.
+        always = no
         ai = no
         NOT = { has_global_flag = Council_of_Xon }
         NOT = { has_global_flag = Xalian_religion_restored }
