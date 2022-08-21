@@ -16,6 +16,7 @@
 #Gadan convert
 cb_convert_gadan = {
 	valid_for_subject = no
+	months = 1200
 
 	is_triggered_only = yes
 
