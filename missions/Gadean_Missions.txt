@@ -895,8 +895,8 @@ gadea_5 = {
 		required_missions = { gadea_wipe_heretics } #None
 		trigger = {
 			capital_scope = {
-				has_most_province_trade_power = ROOT
 				has_trader = ROOT
+				is_strongest_trade_power = ROOT
 			}
         }
 		effect = {
