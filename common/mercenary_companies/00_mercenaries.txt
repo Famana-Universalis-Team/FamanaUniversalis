@@ -1070,3 +1070,85 @@ merc_ganushan_warriors = {
 		land_morale = 0.15
 	}
 }
+# Zeaf Skirmishers
+merc_zeaf_skirmishers = {
+    regiments_per_development = 0.03
+	cavalry_weight = 0.4 # smth like 12 inf 8 cav
+	artillery_weight = 0
+	cavalry_cap = 8
+    home_province = 5162
+	cost_modifier = 0.33
+	sprites = { muslimgfx_sprite_pack }
+    trigger = {
+		custom_trigger_tooltip = {
+			tooltip = ZeafSkirmishersTooltip
+			has_country_flag = zeaf_merc_flag
+		}
+	}
+	modifier = {
+		shock_damage = 0.10
+		movement_speed = 0.10
+	}
+}
+
+# Kyny Band
+merc_kyny_band = { #Light cavalry
+    regiments_per_development = 0.015 #small
+	cavalry_weight = 0.6
+	artillery_weight = 0
+	cavalry_cap = 12
+    home_province = 5167 #Houraska Xon, where I imagine the Jafxoi capital to likely be since they never get to Xon
+	cost_modifier = 0.33
+	sprites = { muslimgfx_sprite_pack }
+    trigger = {
+		custom_trigger_tooltip = {
+			tooltip = RavshoMercsTooltip
+			has_country_flag = ravsho_merc_flag
+		}
+	}
+	modifier = {
+		movement_speed = 0.15
+		cavalry_flanking = 0.10
+	}
+}
+# Cilrizi Khesig
+merc_cilrizi_khesig = { #Heavy Infantry
+    regiments_per_development = 0.01 #small
+	cavalry_weight = 0
+	artillery_weight = 0
+	cavalry_cap = 0
+    home_province = 5167 #Houraska Xon, where I imagine the Jafxoi capital to likely be since they never get to Xon
+	cost_modifier = 0.50
+	sprites = { muslimgfx_sprite_pack }
+    trigger = {
+		custom_trigger_tooltip = {
+			tooltip = RavshoMercsTooltip
+			has_country_flag = ravsho_merc_flag
+		}
+	}
+	modifier = {
+		shock_damage_received = -0.35
+		land_morale = 0.10
+		discipline = 0.05
+	}
+}
+# Tsarkan Horse Archers
+merc_tsarkan_archers = { #Heavy Cavalry
+    regiments_per_development = 0.015 #small
+	cavalry_weight = 0.6
+	artillery_weight = 0
+	cavalry_cap = 12
+    home_province = 5167 #Houraska Xon, where I imagine the Jafxoi capital to likely be since they never get to Xon
+	cost_modifier = 0.60
+	sprites = { muslimgfx_sprite_pack }
+    trigger = {
+		custom_trigger_tooltip = {
+			tooltip = RavshoMercsTooltip
+			has_country_flag = ravsho_merc_flag
+		}
+	}
+	modifier = {
+		cavalry_power = 0.15
+		leader_land_manuever = 3
+	}
+}

@@ -674,7 +674,7 @@ country_event = { #learning of vassal leaving
 }
 
 country_event = { #if gadea dies
-	id = xalflavor_other.16
+	id = xalflavor_other.17
 	hidden = yes
 	fire_only_once = yes
 
@@ -707,5 +707,57 @@ country_event = { #if gadea dies
 	}
 }
 
+country_event = { #Warning of Gadea
+	id = xalflavor_other.18
+	title = xalflavor_other.18.t
+	desc = xalflavor_other.18.d
+	picture = RELIGIOUS_TURMOIL_eventPicture
+	is_triggered_only = yes
 
-# / GADAN MISSION EVENTS
+	immediate = {
+		
+	}
+
+	option = {
+		name = xalflavor_other.18.a
+		ai_chance = { factor = 1 }
+		custom_tooltip = GadeaWarning
+	}
+}
+
+country_event = { #gain cb
+	id = xalflavor_other.19
+	hidden = yes
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	trigger = {
+		has_global_flag = Gadean_Imperial_crusade
+		NOT = {
+			GDA = {
+				has_casus_belli = {
+					type = cb_convert_gadan
+					target = ROOT
+				}
+			}
+		}
+	}
+
+	immediate = {
+		ROOT = {
+			reverse_add_casus_belli = {
+				type = cb_convert_gadan
+				target = GDL
+			}
+		}
+	}
+
+	option = {
+		name = xalflavor_other.18.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+# / GADAN MISSION EVENTS Gadean_Imperial_crusade

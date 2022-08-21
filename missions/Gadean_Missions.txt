@@ -9,6 +9,7 @@ gadea_1 = {
 				tag = GDL
 			}
 			has_reform = gadea_reform
+			religion = gadan
 		}
 	}
 	has_country_shield = yes
@@ -43,7 +44,7 @@ gadea_1 = {
 	gadea_pirates_of_maner = {
 		position = 4
 		icon = mission_establish_high_seas_navy
-		required_missions = { gadea_wipe_heretics } #None
+		required_missions = { gadea_wipe_heretics }
 		trigger = {
 			OR = {
 				owns_core_province = 8857
@@ -54,10 +55,110 @@ gadea_1 = {
 				}
 			}
         }
+		provinces_to_highlight = {
+			province_id = 8857
+		}
 		effect = {
 			add_country_modifier = {
 				name = gadea_naval
 				duration = -1
+			}
+		}
+	}
+
+	gadea_enlist_zeafs = {
+		position = 5
+		icon = mission_non-western_cavalry_raid
+		required_missions = { gadea_pirates_of_maner }
+		trigger = {
+			OR = {
+				owns_core_province = 5162
+				5162 = {
+					owner = {
+						is_subject_of = ROOT
+					}
+				}
+			}
+        }
+		provinces_to_highlight = {
+			province_id = 5162
+		}
+		effect = {
+			custom_tooltip = getZeafMercs
+			set_country_flag = zeaf_merc_flag
+			add_country_modifier = {
+				name = gadea_zeafs
+				duration = -1
+			}
+		}
+	}
+
+	gadea_survive_the_invasions = {
+		position = 6
+		icon = mission_chinese_general_riding
+		required_missions = { }
+		trigger = {
+			NOT = {
+				FAS = {
+					exists = yes
+				}
+			}
+        }
+		effect = {
+			add_prestige = 10
+		}
+	}
+
+	gadea_find_converts = {
+		position = 7
+		icon = mission_cossack_cavalry
+		required_missions = { gadea_survive_the_invasions }
+		trigger = {
+			OR = {
+				religious_ideas = 7
+				is_defender_of_faith = yes
+			}
+			any_owned_province = {
+				AND = {
+					religion = tonmo
+					has_missionary = yes
+				}
+			}
+        }
+		effect = {
+			custom_tooltip = getRavshoMercs
+			set_country_flag = ravsho_merc_flag
+		}
+	}
+
+	gadea_expel_tonmo = {
+		position = 8
+		icon = mission_crusade_for_varna
+		required_missions = { gadea_find_converts }
+		trigger = {
+			NOT = {
+				any_province = {
+					AND = {
+						OR = {
+							superregion = ga_xal_superregion
+							region = eastern_desert_region #hoxoi
+						}
+						religion = tonmo
+					}
+				}
+			}
+        }
+		effect = {
+			add_country_modifier = {
+				name = gadea_tonmo_defeated
+				duration = 9125
+			}
+			define_advisor = {
+				type = theologian
+				skill = 3
+				culture = Opmaki
+				religion = gadan
+				discount = yes
 			}
 		}
 	}
@@ -75,6 +176,7 @@ gadea_2 = {
 				tag = GDL
 			}
 			has_reform = gadea_reform
+			religion = gadan
 		}
     }
     has_country_shield = yes
@@ -119,7 +221,6 @@ gadea_2 = {
 					add_casus_belli = {
 						target = PREV
 						type = cb_convert_gadan
-						months = 240
 					}
 				}
 			}
@@ -179,6 +280,13 @@ gadea_2 = {
 			owns_core_province = 5407
 			owns_core_province = 5161
         }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 5140
+				province_id = 5407
+				province_id = 5161
+			}
+		}
 		effect = {
 			add_country_modifier = {
 				name = gadea_rapid_expansion
@@ -192,13 +300,29 @@ gadea_2 = {
 		icon = mission_have_two_subjects
 		required_missions = { gadea_expand_gadea }
 		trigger = {
-			num_of_owned_provinces_with = {
-				value = 6
-				owned_by = ROOT
+			all_subject_country = {
+				if ={
+					limit = {
+						ai = no
+					}
+					ai_attitude = {
+						who = FROM
+						attitude = attitude_loyal
+					}
+				}
 			}
-			owns_core_province = 5140
-			owns_core_province = 5407
-			owns_core_province = 5161
+			employed_advisor = {
+				category = ADM
+				religion = gadan
+			}
+			employed_advisor = {
+				category = DIP
+				religion = gadan
+			}
+			employed_advisor = {
+				category = MIL
+				religion = gadan
+			}
         }
 		effect = {
 			custom_tooltip = GADEA_VASSAL_SWARM_HERE_TO_STAY_GLOBAL
@@ -221,6 +345,59 @@ gadea_2 = {
 			}
 		}
 	}
+	gadea_oppia = {
+		position = 9
+		icon = mission_kowtow
+		required_missions = { gadea_gadelis }
+		trigger = {
+			army_size_percentage = 1
+			all_province = {
+				if = {
+					limit = {
+						AND = {
+							NOT = { is_empty = yes }
+							region = maky_region
+						}
+					}
+					owned_by = ROOT
+				}
+			}
+			5133 = {
+				OR = {
+					owner = {
+						OR = {
+							tag = ROOT
+							is_subject_of = ROOT
+						}
+					}
+					controller = {
+						OR = {
+							tag = ROOT
+							is_subject_of = ROOT
+						}
+					}
+				}
+			}
+        }
+		provinces_to_highlight = {
+			province_id = 5113
+		}
+		effect = {
+			every_country = {
+				limit = {
+					capital_scope = {
+						superregion = oppia_superregion
+					}
+				}
+				GDA = {
+					add_casus_belli = {
+						type = cb_convert_gadan
+						target = PREV
+					}
+				}
+			}
+		}
+	}
 }
 
 gadea_3 = {
@@ -234,6 +411,7 @@ gadea_3 = {
 				tag = GDL
 			}
 			has_reform = gadea_reform
+			religion = gadan
 		}
 	}
 	has_country_shield = yes
@@ -352,9 +530,11 @@ gadea_3 = {
 		required_missions = { gadea_centralise_all_vassals gadea_morsum_for_peace gadea_centralise }
 		trigger = {
 			owns_core_province = 5409
-			owns_core_province = 5161
 			total_development = 50
         }
+		provinces_to_highlight = {
+			province_id = 5409
+		}
 		effect = {
 			change_tag = GDL
 			if = {
@@ -374,6 +554,23 @@ gadea_3 = {
 			add_prestige = 25
 		}
 	}
+
+	gadea_one_faith = {
+		position = 10
+		icon = mission_unite_home_region
+		required_missions = { gadea_jasua gadea_oppia }
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 150
+				religion = gadan
+			}
+        }
+		effect = {
+			custom_tooltip = GADEA_EVERYONE_CB
+			set_global_flag = Gadean_Imperial_crusade
+			add_prestige = 50
+		}
+	}
 }
 
 gadea_4 = {
@@ -387,6 +584,7 @@ gadea_4 = {
 				tag = GDL
 			}
 			has_reform = gadea_reform
+			religion = gadan
 		}
     }
     has_country_shield = yes
@@ -483,6 +681,11 @@ gadea_4 = {
 					who = ALM
 					casus_belli = cb_conquest
 				}
+				ALM = {
+					country_event = {
+						id = xalflavor_other.18
+					}
+				}
 			}
 			else = {
 				custom_tooltip = FOCUS_BYPASSED
@@ -558,6 +761,59 @@ gadea_4 = {
 			}
 		}
 	}
+	gadea_jasua = {
+		position = 9
+		icon = mission_kowtow
+		required_missions = { gadea_gadelis gadea_dominate_gaxal }
+		trigger = {
+			army_size_percentage = 1
+			all_province = {
+				if = {
+					limit = {
+						AND = {
+							NOT = { is_empty = yes }
+							region = south_xalia_region
+						}
+					}
+					owned_by = ROOT
+				}
+			}
+			5177 = {
+				OR = {
+					owner = {
+						OR = {
+							tag = ROOT
+							is_subject_of = ROOT
+						}
+					}
+					controller = {
+						OR = {
+							tag = ROOT
+							is_subject_of = ROOT
+						}
+					}
+				}
+			}
+        }
+		provinces_to_highlight = {
+			province_id = 5177
+		}
+		effect = {
+			every_country = {
+				limit = {
+					capital_scope = {
+						superregion = jasua_superregion
+					}
+				}
+				GDA = {
+					add_casus_belli = {
+						type = cb_convert_gadan
+						target = PREV
+					}
+				}
+			}
+		}
+	}
 }
 
 gadea_5 = {
@@ -571,6 +827,7 @@ gadea_5 = {
 				tag = GDL
 			}
 			has_reform = gadea_reform
+			religion = gadan
 		}
 	}
 	has_country_shield = yes
@@ -612,6 +869,17 @@ gadea_5 = {
 				}
 			}
         }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 5155
+				province_id = 5159
+				province_id = 5161
+				province_id = 5407
+				province_id = 5153
+				province_id = 5156
+				province_id = 5162
+			}
+		}
 		effect = {
 			add_years_of_income = 0.5
 			add_country_modifier = {
@@ -684,6 +952,9 @@ gadea_5 = {
 				}
 			}
         }
+		provinces_to_highlight = {
+			province_id = 5161
+		}
 		effect = {
 			marn_area = {
 				add_permanent_claim = ROOT
@@ -698,21 +969,18 @@ gadea_5 = {
 				add_casus_belli = {
 					target = PREV
 					type = cb_convert_gadan
-					months = 240
 				}
 			}
 			MRN = {
 				add_casus_belli = {
 					target = PREV
 					type = cb_convert_gadan
-					months = 240
 				}
 			}
 			SIX = {
 				add_casus_belli = {
 					target = PREV
 					type = cb_convert_gadan
-					months = 240
 				}
 			}
 		}
@@ -734,6 +1002,9 @@ gadea_5 = {
 				}
 			}
         }
+		provinces_to_highlight = {
+			province_id = 5458
+		}
 		effect = {
 			every_country = {
 				limit = {
@@ -744,10 +1015,81 @@ gadea_5 = {
 						}
 					}
 				}
-				add_casus_belli = {
-					target = PREV
-					type = cb_convert_gadan
-					months = 240
+				GDA = {
+					add_casus_belli = {
+						type = cb_convert_gadan
+						target = PREV
+					}
+				}
+			}
+			add_country_modifier = {
+				name = gadea_opmaki_resurgance
+				duration = 5475
+			}
+		}
+	}
+
+	gadea_dominate_gaxal = {
+		position = 8
+		icon = mission_conquer_50_development
+		required_missions = { gadea_conquer_vinia gadea_morsum_for_peace }
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 50
+				religion = gadan
+				superregion = ga_xal_superregion
+			}
+			5442 = {
+				owner = {
+					OR = {
+						tag = GDA
+						tag = GDL
+						is_subject_of = GDA
+						is_subject_of = GDL
+					}
+				}
+			}
+			5399 = {
+				owner = {
+					OR = {
+						tag = GDA
+						tag = GDL
+						is_subject_of = GDA
+						is_subject_of = GDL
+					}
+				}
+			}
+        }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 5442
+				province_id = 5399
+			}
+		}
+		effect = {
+			custom_tooltip = GDA_GAXAL_OPINION_MODIFIER
+			hidden_effect = {
+				every_subject_country = {
+					add_opinion = {
+						who = ROOT
+						modifier = conquest_ga_xal
+					}
+				}
+			}
+			every_country = {
+				limit = {
+					capital_scope = {
+						OR = {
+							region = north_xalia_region
+							region = eastern_desert_region
+						}
+					}
+				}
+				GDA = {
+					add_casus_belli = {
+						type = cb_convert_gadan
+						target = PREV
+					}
 				}
 			}
 		}

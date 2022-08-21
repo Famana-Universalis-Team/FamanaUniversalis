@@ -90,10 +90,7 @@ country_event = {
 			tag = AGX
 			tag = NKM
 			tag = DEL
-								OR = {
-						tag = GDA
-						tag = GDL
-					}
+			tag = GDA
 			tag = ZAK
 			tag = JKK
 			tag = HZR
@@ -176,10 +173,7 @@ country_event = {
 					tag = AGX
 					tag = NKM
 					tag = DEL
-										OR = {
-						tag = GDA
-						tag = GDL
-					}
+					tag = GDA
 					tag = ZAK
 					tag = JKK
 					tag = HZR
@@ -273,10 +267,7 @@ country_event = {
 					tag = AGX
 					tag = NKM
 					tag = DEL
-										OR = {
-						tag = GDA
-						tag = GDL
-					}
+					tag = GDA
 					tag = ZAK
 					tag = JKK
 					tag = HZR
@@ -364,10 +355,7 @@ country_event = {
 #			            tag = AGX
 #			            tag = NKM
 #			            tag = DEL
-#			            					OR = {
-						tag = GDA
-						tag = GDL
-					}
+#			            tag = GDA
 #			            tag = ZAK
 #			            tag = JKK
 #			            tag = HZR

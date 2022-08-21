@@ -1714,7 +1714,7 @@ soy_lib_3 = {
 
 gadea_diplomacy = {
     diplomatic_reputation = 2
-    tolerance_own = 1
+    relation_with_same_culture = 10
 }
 
 gadea_naval = {
@@ -1783,4 +1783,20 @@ scientific_carvings = {
 
 presitigous_carvings = {
 	prestige_decay = -0.02
+}
+
+gadea_opmaki_resurgance = {
+	culture_conversion_cost = -0.33
+    missionary_maintenance_cost = -0.20
+    same_culture_advisor_cost = -0.15
+}
+
+gadea_zeafs = {
+	cav_to_inf_ratio = 0.33
+    cavalry_cost = -0.20
+}
+
+gadea_tonmo_defeated = {
+    warscore_cost_vs_other_religion = -0.10
+    culture_conversion_cost = -0.10
 }
