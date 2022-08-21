@@ -531,6 +531,9 @@ gadea_3 = {
 			province_id = 5409
 		}
 		effect = {
+			hidden_effect = {
+				complete_mission = gadea_gadelis
+			}
 			change_tag = GDL
 			if = {
 				limit = {

@@ -91,3 +91,32 @@ country_event = {
 		add_heir_personality = free_thinker_personality
 	}
 }
+
+#Ajetaz the Great 2
+country_event = {
+    id = soy.3
+    title = soy.3.t
+    picture = COURT_eventPicture
+    desc = soy.3.desc
+    fire_only_once = yes
+
+	trigger = {
+		tag = SOY
+		has_ruler = "Ajetaz 'the Great'"
+		has_country_flag = gotAjetazEvent
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = soy.3.a
+		ai_chance = { factor = 1 }
+		add_stability = 1
+		add_ruler_modifier = {
+			name = soy_ajetaz
+			duration = -1
+		}
+	}
+}
