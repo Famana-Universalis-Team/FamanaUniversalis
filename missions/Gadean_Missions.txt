@@ -279,7 +279,7 @@ gadea_2 = {
 		required_missions = { gadea_convert_maky }
 		trigger = {
 			num_of_owned_provinces_with = {
-				value = 6
+				value = 25
 				owned_by = ROOT
 			}
 			owns_core_province = 5140
@@ -531,7 +531,7 @@ gadea_3 = {
 		required_missions = { gadea_centralise_all_vassals gadea_morsum_for_peace gadea_centralise }
 		trigger = {
 			owns_core_province = 5409
-			total_development = 50
+			total_development = 200
         }
 		provinces_to_highlight = {
 			province_id = 5409
