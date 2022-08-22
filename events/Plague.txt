@@ -1185,7 +1185,7 @@ country_event = {
 			development = 6
 		}
 		NOT = {
-			has_country_modifier = recent_disease
+			has_country_modifier = recent_disease_trve
 		}
 	}
 
@@ -1195,8 +1195,8 @@ country_event = {
 
 	immediate = {
 		add_country_modifier = {
-			name = recent_disease
-			duration = 14600
+			name = recent_disease_trve
+			duration = 9125
 			hidden = yes
 		}
 		log = "disease fired for [Root.GetName]"
@@ -1208,7 +1208,7 @@ country_event = {
 				3 = {
 					random_list = {
 						1 = {
-							random_province = {
+							random_owned_province = {
 								limit = {
 									AND = {
 										NOT = {
@@ -1230,7 +1230,7 @@ country_event = {
 							}
 						}
 						1 = {
-							random_province = { #peshti
+							random_owned_province = { #peshti
 							limit = {
 								AND = {
 									NOT = {
@@ -1252,7 +1252,7 @@ country_event = {
 							}
 						}
 						1 = {
-							random_province = { #sandpox
+							random_owned_province = { #sandpox
 							limit = {
 								AND = {
 									NOT = {
@@ -1278,11 +1278,11 @@ country_event = {
 				1 = {
 					if = {
 						limit = {
-							any_province = {
+							any_owned_province = {
 								development = 15
 							}
 						}
-						random_province = { #influenza
+						random_owned_province = { #influenza
 							limit = {
 								development = 15
 							}
@@ -1295,7 +1295,7 @@ country_event = {
 					else = {
 						random_list = {
 							1 = {
-								random_province = {
+								random_owned_province = {
 									limit = {
 										AND = {
 											NOT = {
@@ -1317,7 +1317,7 @@ country_event = {
 								}
 							}
 							1 = {
-								random_province = { #peshti
+								random_owned_province = { #peshti
 								limit = {
 									AND = {
 										NOT = {
@@ -1339,7 +1339,7 @@ country_event = {
 								}
 							}
 							1 = {
-								random_province = { #sandpox
+								random_owned_province = { #sandpox
 								limit = {
 									AND = {
 										NOT = {
@@ -1366,7 +1366,7 @@ country_event = {
 				1 = {
 					if = {
 						limit = {
-							any_province = {
+							any_owned_province = {
 								AND = {
 									OR = {
 										has_terrain = farmlands
@@ -1384,7 +1384,7 @@ country_event = {
 								}
 							}
 						}
-						random_province = { #blight
+						random_owned_province = { #blight
 							limit = {
 								AND = {
 									OR = {
@@ -1409,7 +1409,7 @@ country_event = {
 					}
 					else_if = {
 						limit = {
-							any_province = {
+							any_owned_province = {
 								AND = {
 									OR = {
 										has_terrain = farmlands
@@ -1426,7 +1426,7 @@ country_event = {
 								}
 							}
 						}
-						random_province = { #blight without the alymin
+						random_owned_province = { #blight without the alymin
 							limit = {
 								AND = {
 									OR = {
@@ -1452,7 +1452,7 @@ country_event = {
 					else = {
 						random_list = {
 							1 = {
-								random_province = {
+								random_owned_province = {
 									limit = {
 										AND = {
 											NOT = {
@@ -1474,7 +1474,7 @@ country_event = {
 								}
 							}
 							1 = {
-								random_province = { #peshti
+								random_owned_province = { #peshti
 								limit = {
 									AND = {
 										NOT = {
@@ -1496,7 +1496,7 @@ country_event = {
 								}
 							}
 							1 = {
-								random_province = { #sandpox
+								random_owned_province = { #sandpox
 								limit = {
 									AND = {
 										NOT = {
@@ -1527,7 +1527,7 @@ country_event = {
 				3 = {
 					random_list = {
 						1 = {
-							random_province = {
+							random_owned_province = {
 								limit = {
 									AND = {
 										NOT = {
@@ -1549,7 +1549,7 @@ country_event = {
 							}
 						}
 						1 = {
-							random_province = { #peshti
+							random_owned_province = { #peshti
 							limit = {
 								AND = {
 									NOT = {
@@ -1571,7 +1571,7 @@ country_event = {
 							}
 						}
 						1 = {
-							random_province = { #sandpox
+							random_owned_province = { #sandpox
 							limit = {
 								AND = {
 									NOT = {
@@ -1597,11 +1597,11 @@ country_event = {
 				1 = {
 					if = {
 						limit = {
-							any_province = {
+							any_owned_province = {
 								development = 15
 							}
 						}
-						random_province = { #influenza
+						random_owned_province = { #influenza
 							limit = {
 								development = 15
 							}
@@ -1614,7 +1614,7 @@ country_event = {
 					else = {
 						random_list = {
 							1 = {
-								random_province = {
+								random_owned_province = {
 									limit = {
 										AND = {
 											NOT = {
@@ -1636,7 +1636,7 @@ country_event = {
 								}
 							}
 							1 = {
-								random_province = { #peshti
+								random_owned_province = { #peshti
 								limit = {
 									AND = {
 										NOT = {
@@ -1658,7 +1658,7 @@ country_event = {
 								}
 							}
 							1 = {
-								random_province = { #sandpox
+								random_owned_province = { #sandpox
 								limit = {
 									AND = {
 										NOT = {
@@ -1685,7 +1685,7 @@ country_event = {
 				1 = {
 					if = {
 						limit = {
-							any_province = {
+							any_owned_province = {
 								AND = {
 									OR = {
 										has_terrain = farmlands
@@ -1703,7 +1703,7 @@ country_event = {
 								}
 							}
 						}
-						random_province = { #blight
+						random_owned_province = { #blight
 							limit = {
 								AND = {
 									OR = {
@@ -1728,7 +1728,7 @@ country_event = {
 					}
 					else_if = {
 						limit = {
-							any_province = {
+							any_owned_province = {
 								AND = {
 									OR = {
 										has_terrain = farmlands
@@ -1745,7 +1745,7 @@ country_event = {
 								}
 							}
 						}
-						random_province = { #blight without the alymin
+						random_owned_province = { #blight without the alymin
 							limit = {
 								AND = {
 									OR = {
@@ -1771,7 +1771,7 @@ country_event = {
 					else = {
 						random_list = {
 							1 = {
-								random_province = {
+								random_owned_province = {
 									limit = {
 										AND = {
 											NOT = {
@@ -1793,7 +1793,7 @@ country_event = {
 								}
 							}
 							1 = {
-								random_province = { #peshti
+								random_owned_province = { #peshti
 								limit = {
 									AND = {
 										NOT = {
@@ -1815,7 +1815,7 @@ country_event = {
 								}
 							}
 							1 = {
-								random_province = { #sandpox
+								random_owned_province = { #sandpox
 								limit = {
 									AND = {
 										NOT = {
