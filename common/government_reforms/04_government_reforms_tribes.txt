@@ -374,6 +374,9 @@ tribe_becomes_monarchy_reform = {
 		NOT = { 
 			has_reform = stateless_society
 		}
+		NOT = {
+			culture_group = Lukschan
+		}
 	}
 	trigger = {
 		NOT = { has_government_attribute_short_desc = locked_government_type }
@@ -464,6 +467,11 @@ tribe_becomes_monarchy_reform = {
 tribe_becomes_republic_reform = {
 	icon = "parliament_highlighted"
 	allow_normal_conversion = yes
+	potential = {
+		NOT = {
+			culture_group = Lukschan
+		}
+	}
 	trigger = {
 		NOT = { is_lesser_in_union = yes }
 		NOT = { has_government_attribute_short_desc = locked_government_type }
@@ -579,6 +587,9 @@ tribe_becomes_theocracy_reform = {
 		NOT = { 
 			has_reform = stateless_society
 		}
+		NOT = {
+			culture_group = Lukschan
+		}
 	}
 	trigger = {
 		NOT = { is_lesser_in_union = yes }
@@ -681,6 +692,9 @@ tribe_becomes_horde_reform = {
 	potential = {
 		NOT = { 
 			has_reform = stateless_society
+		}
+		NOT = {
+			culture_group = Lukschan
 		}
 	}
 	effect = {

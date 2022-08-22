@@ -13,7 +13,7 @@ lag_1 = {
     has_country_shield = yes
 
     lag_feniki_culture = {
-        icon = secure_the_republic
+        icon = mission_ottoman_harem
         required_missions = { }
         trigger = {
 
@@ -48,6 +48,45 @@ lag_1 = {
         }
         #provinces_to_highlight = {}
     }
+
+    lag_settle_the_frontier = {
+        icon = secure_the_republic
+        required_missions = { lag_beyond_the_highlands }
+        position = 5
+        trigger = {
+
+        }
+        effect = {
+
+        }
+        #provinces_to_highlight = {}
+    }
+
+    lag_shores_of_the_olivinar = {
+        icon = secure_the_republic
+        required_missions = { lag_settle_the_frontier }
+        position = 7
+        trigger = {
+
+        }
+        effect = {
+
+        }
+        #provinces_to_highlight = {}
+    }
+
+    lag_commandeer_the_channel = {
+        icon = secure_the_republic
+        required_missions = { lag_shores_of_the_olivinar lag_the_war_for_walara }
+        position = 11
+        trigger = {
+
+        }
+        effect = {
+
+        }
+        #provinces_to_highlight = {}
+    }
 }
 
 lag_2 = {
@@ -67,6 +106,71 @@ lag_2 = {
         icon = secure_the_republic
         required_missions = {lag_sense_of_unity }
         position = 3
+        trigger = {
+
+        }
+        effect = {
+
+        }
+        #provinces_to_highlight = {}
+    }
+
+    lag_face_the_barbarians = {
+        icon = mission_rb_conquer_the_highlands
+        required_missions = {lag_feyel_and_woch }
+        position = 5
+        trigger = {
+
+        }
+        effect = {
+
+        }
+        #provinces_to_highlight = {}
+    }
+
+    lag_expel_hasia = {
+        icon = mission_rb_conquer_the_isles
+        required_missions = {lag_face_the_barbarians }
+        position = 6
+        trigger = {
+
+        }
+        effect = {
+
+        }
+        #provinces_to_highlight = {}
+    }
+
+    lag_dominate_west_estal = {
+        icon = secure_the_republic
+        required_missions = {lag_expel_hasia lag_shores_of_the_olivinar }
+        position = 8
+        trigger = {
+
+        }
+        effect = {
+
+        }
+        #provinces_to_highlight = {}
+    }
+
+    lag_the_war_for_walara = {
+        icon = secure_the_republic
+        required_missions = { lag_annex_tegaria }
+        position = 10
+        trigger = {
+
+        }
+        effect = {
+
+        }
+        #provinces_to_highlight = {}
+    }
+
+    lag_invade_the_north = {
+        icon = mission_rb_colonise_canada
+        required_missions = { lag_the_war_for_walara lag_raid_on_pomlen }
+        position = 13
         trigger = {
 
         }
@@ -104,9 +208,74 @@ lag_3 = {
     }
 
     lag_the_question_of_slavery = {
-        icon = secure_the_republic
+        icon = mission_mayan_conquest
         required_missions = { lag_deal_with_the_guilds lag_expand_the_inland_cities }
         position = 4
+        trigger = {
+
+        }
+        effect = {
+
+        }
+        #provinces_to_highlight = {}
+    }
+
+    lag_claim_the_great_city = {
+        icon = mission_monarch_in_throne_room
+        required_missions = { lag_face_the_barbarians }
+        position = 6
+        trigger = {
+
+        }
+        effect = {
+
+        }
+        #provinces_to_highlight = {}
+    }
+
+    lag_capture_gineazia = {
+        icon = secure_the_republic
+        required_missions = { lag_annex_tegaria }
+        position = 10
+        trigger = {
+
+        }
+        effect = {
+
+        }
+        #provinces_to_highlight = {}
+    }
+
+    lag_lomean_conquest = {
+        icon = secure_the_republic
+        required_missions = { lag_capture_gineazia }
+        position = 11
+        trigger = {
+
+        }
+        effect = {
+
+        }
+        #provinces_to_highlight = {}
+    }
+
+    lag_raid_on_pomlen = {
+        icon = secure_the_republic
+        required_missions = { lag_lomean_conquest }
+        position = 12
+        trigger = {
+
+        }
+        effect = {
+
+        }
+        #provinces_to_highlight = {}
+    }
+
+    lag_the_resteman_perspective = {
+        icon = secure_the_republic
+        required_missions = { lag_raid_on_pomlen }
+        position = 14
         trigger = {
 
         }
@@ -131,7 +300,7 @@ lag_4 = {
     has_country_shield = yes
 
     lag_sponsor_fishermen = {
-        icon = secure_the_republic
+        icon = mission_rb_cod_wars
         required_missions = { }
         trigger = {
 
@@ -155,8 +324,73 @@ lag_4 = {
     }
 
     lag_expand_the_inland_cities = {
-        icon = secure_the_republic
+        icon = mission_industrialize_bengal
         required_missions = { lag_develop_the_coastline}
+        trigger = {
+
+        }
+        effect = {
+
+        }
+        #provinces_to_highlight = {}
+    }
+
+    lag_control_the_channel = {
+        icon = mission_disrupt_portuguese_trade
+        position = 5
+        required_missions = { lag_the_unsinkable_fleet }
+        trigger = {
+
+        }
+        effect = {
+
+        }
+        #provinces_to_highlight = {}
+    }
+
+    lag_subjugate_cegon = {
+        icon = secure_the_republic
+        position = 7
+        required_missions = { }
+        trigger = {
+
+        }
+        effect = {
+
+        }
+        #provinces_to_highlight = {}
+    }
+
+    lag_annex_tegaria = {
+        icon = secure_the_republic
+        position = 9
+        required_missions = { lag_subjugate_cegon }
+        trigger = {
+
+        }
+        effect = {
+
+        }
+        #provinces_to_highlight = {}
+    }
+
+    lag_land_in_arlenta = {
+        icon = mission_raid_on_venice
+        position = 11
+        required_missions = { lag_annex_tegaria }
+        trigger = {
+
+        }
+        effect = {
+
+        }
+        #provinces_to_highlight = {}
+    }
+
+    lag_secure_new_pexamol = {
+        icon = secure_the_republic
+        position = 13
+        required_missions = { lag_raid_on_pomlen }
         trigger = {
 
         }
@@ -196,6 +430,58 @@ lag_5 = {
         icon = secure_the_republic
         required_missions = { lag_build_ports }
         position = 4
+        trigger = {
+
+        }
+        effect = {
+
+        }
+        #provinces_to_highlight = {}
+    }
+
+    lag_improve_naval_leadership = {
+        icon = secure_the_republic
+        required_missions = { lag_the_unsinkable_fleet }
+        position = 6
+        trigger = {
+
+        }
+        effect = {
+
+        }
+        #provinces_to_highlight = {}
+    }
+
+    lag_friends_in_oppia = {
+        icon = secure_the_republic
+        required_missions = { }
+        position = 8
+        trigger = {
+
+        }
+        effect = {
+
+        }
+        #provinces_to_highlight = {}
+    }
+
+    lag_into_the_fray = {
+        icon = secure_the_republic
+        required_missions = { lag_friends_in_oppia }
+        position = 10
+        trigger = {
+
+        }
+        effect = {
+
+        }
+        #provinces_to_highlight = {}
+    }
+    
+    lag_overshadow_oppia = {
+        icon = secure_the_republic
+        required_missions = { lag_land_in_arlenta }
+        position = 12
         trigger = {
 
         }

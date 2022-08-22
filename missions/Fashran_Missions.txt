@@ -330,7 +330,10 @@ fas_1 = {
 				add_treasury = 750
 			}
 			else = {
-				create_march = VAN
+				hidden_effect = {
+					create_march = VAN
+				}
+				custom_tooltip = fasMakeVanMarch
 			}
 		}
 		provinces_to_highlight = {
