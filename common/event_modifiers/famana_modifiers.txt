@@ -1820,3 +1820,8 @@ lathvy_bad_boy = {
 
 recent_disease_trve = {
 }
+
+lag_shipbuilding = {
+	global_ship_cost = -0.25
+    global_ship_recruit_speed = -0.5
+}
