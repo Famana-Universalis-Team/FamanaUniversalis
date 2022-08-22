@@ -1196,7 +1196,7 @@ country_event = {
 	immediate = {
 		add_country_modifier = {
 			name = recent_disease
-			duration = 7300
+			duration = 14600
 			hidden = yes
 		}
 		log = "disease fired for [Root.GetName]"
