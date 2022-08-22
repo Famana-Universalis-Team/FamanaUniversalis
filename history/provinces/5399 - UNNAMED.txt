@@ -16,7 +16,6 @@ base_production = 4
 trade_goods = fish
 base_manpower = 5
 capital = "Oxaled"
-is_city = no
+is_city = yes
 
-extra_cost = 1
 center_of_trade = 1

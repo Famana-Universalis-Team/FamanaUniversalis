@@ -17,6 +17,6 @@ base_production = 3
 trade_goods = cloth
 base_manpower = 3
 capital = "Yevia"
-is_city = no
-extra_cost = 1
+is_city = yes
+
 

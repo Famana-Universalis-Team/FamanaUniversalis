@@ -10,8 +10,8 @@ native_size = 25
 native_ferocity = no
 native_hostileness = 5
 capital = "Yebohn"
-is_city = no
-extra_cost = 10
+is_city = yes
+#
 
 discovered_by = west_gomic_tech_gr
 

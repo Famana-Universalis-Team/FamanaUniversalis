@@ -17,6 +17,6 @@ base_production = 3
 trade_goods = fish
 base_manpower = 2
 capital = "Supeli"
-is_city = no
-extra_cost = 1
+is_city = yes
+
 add_local_autonomy = 40

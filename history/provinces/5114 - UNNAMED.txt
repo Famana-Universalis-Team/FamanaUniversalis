@@ -13,8 +13,8 @@ base_production = 3
 trade_goods = glass
 base_manpower = 3
 capital = "Menem"
-is_city = no
-extra_cost = 1
+is_city = yes
+
   
 
 owner = DES

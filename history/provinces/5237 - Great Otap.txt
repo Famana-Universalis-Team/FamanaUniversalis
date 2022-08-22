@@ -7,7 +7,8 @@ base_manpower = 2
 trade_goods = slaves
 capital = "UNNAMED"
 is_city = yes
-extra_cost = 1
+
+
 owner = DOR
 controller = DOR
 add_core = DOR

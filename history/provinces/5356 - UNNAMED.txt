@@ -18,6 +18,6 @@ base_production = 1
 trade_goods = grain
 base_manpower = 2
 capital = "Jill"
-is_city = no
-extra_cost = 1
+is_city = yes
+
 

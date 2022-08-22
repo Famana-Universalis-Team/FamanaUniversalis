@@ -18,9 +18,8 @@ base_production = 3
 trade_goods = fur
 base_manpower = 2
 capital = "Kaypatz"
-is_city = no
+is_city = yes
 
-extra_cost = 1
 center_of_trade = 1
 
 

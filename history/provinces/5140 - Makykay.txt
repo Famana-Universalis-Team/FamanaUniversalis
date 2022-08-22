@@ -14,9 +14,8 @@ trade_goods = wine
 base_manpower = 2
 capital = "Makykay"
 is_city = yes
-extra_cost = 1
 center_of_trade = 2
-
+extra_cost = 6
 owner = MKK
 controller = MKK
 add_core = MKK

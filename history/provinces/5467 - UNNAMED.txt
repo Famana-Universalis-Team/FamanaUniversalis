@@ -16,7 +16,7 @@ base_production = 5
 trade_goods = livestock
 base_manpower = 5
 capital = "Shiraska Xon"
-is_city = no
-extra_cost = 1
+is_city = yes
+
 
 fort_15th = yes

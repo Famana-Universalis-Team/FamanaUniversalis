@@ -16,8 +16,8 @@ base_production = 1
 trade_goods = livestock
 base_manpower = 1
 capital = "Montqo"
-is_city = no
-extra_cost = 1
+is_city = yes
+
 
 212.6.7 = {
 owner = BAL

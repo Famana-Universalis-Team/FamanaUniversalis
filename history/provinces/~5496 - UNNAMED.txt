@@ -1,0 +1,24 @@
+discovered_by = east_gomic_tech_gr
+discovered_by = lathvy_tech_gr
+culture = Lerushian
+religion = lathvy
+owner = KIN
+controller = KIN
+add_core = KIN
+add_core = HRT
+
+###
+
+hre = no
+
+base_tax = 2
+base_production = 3
+trade_goods = gems
+base_manpower = 1
+capital = "Hartimatul"
+is_city = yes
+center_of_trade = 1
+add_province_triggered_modifier = naf_hartimatul_stronghold
+
+
+discovered_by = west_gomic_tech_gr

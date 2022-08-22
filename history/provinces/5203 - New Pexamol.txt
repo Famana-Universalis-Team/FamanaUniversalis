@@ -13,12 +13,11 @@ trade_goods = wine
 base_manpower = 4
 capital = "New Pexamol"
 is_city = yes
-extra_cost = 1
 center_of_trade = 1
 
 add_local_autonomy = 15
   
-
+extra_cost = 4
 owner = PEX
 controller = PEX
 add_core = PEX

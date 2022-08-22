@@ -11,7 +11,7 @@ owner = SOY
 controller = SOY
 trade_goods = livestock
 capital = "Soy"
-is_city = no
+is_city = yes
 discovered_by = great_desert_tech_gr
 
 add_permanent_province_modifier = {

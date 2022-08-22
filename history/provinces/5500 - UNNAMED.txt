@@ -15,6 +15,6 @@ base_production = 1
 trade_goods = naval_supplies
 base_manpower = 2
 capital = "Nonter"
-is_city = no
-extra_cost = 1
+is_city = yes
+
 

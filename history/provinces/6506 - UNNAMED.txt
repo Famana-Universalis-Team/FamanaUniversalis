@@ -14,5 +14,5 @@ base_production = 1
 trade_goods = fur
 base_manpower = 2
 capital = "UNNAMED"
-is_city = no
-extra_cost = 1
+is_city = yes
+#extra_cost = 1

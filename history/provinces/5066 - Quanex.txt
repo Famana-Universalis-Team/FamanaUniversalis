@@ -15,7 +15,7 @@ base_production = 8
 trade_goods = paper
 base_manpower = 8
 capital = "Quanex"
-is_city = no
+is_city = yes
 extra_cost = 15
 
 center_of_trade = 2

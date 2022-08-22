@@ -18,5 +18,5 @@ base_production = 5
 trade_goods = incense
 base_manpower = 3
 capital = "Ragor"
-is_city = no
-extra_cost = 1
+is_city = yes
+

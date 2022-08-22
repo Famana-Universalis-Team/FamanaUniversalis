@@ -1,0 +1,23 @@
+discovered_by = east_gomic_tech_gr
+discovered_by = lathvy_tech_gr
+discovered_by = west_gomic_tech_gr
+culture = West_Jasuan
+religion = egr
+owner = KIN
+controller = KIN
+add_core = KIN
+
+###
+
+hre = no
+
+base_tax = 9
+base_production = 10
+trade_goods = paper
+base_manpower = 8
+capital = "Kinvirel"
+is_city = yes
+extra_cost = 5
+center_of_trade = 3
+fort_15th = yes
+

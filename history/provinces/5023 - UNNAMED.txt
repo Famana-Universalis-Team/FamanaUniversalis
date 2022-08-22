@@ -15,8 +15,10 @@ trade_goods = fish
 base_manpower = 2
 capital = "Haoli"
 is_city = yes
-extra_cost = 1
+
 
 fort_15th = yes
 
 discovered_by = west_gomic_tech_gr
+
+extra_cost = 4

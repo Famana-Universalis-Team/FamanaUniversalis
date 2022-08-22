@@ -16,8 +16,7 @@ base_production = 4
 trade_goods = grain
 base_manpower = 3
 capital = "Trilsekin"
-is_city = no
-extra_cost = 1
+is_city = yes
 center_of_trade = 1
 
 fort_15th = yes

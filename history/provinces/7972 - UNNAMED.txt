@@ -12,7 +12,7 @@ controller = ODS
 trade_goods = livestock
 capital = "Riz'Thattui"
 is_city = yes
-extra_cost = 1
+
 discovered_by = great_desert_tech_gr
 
 add_permanent_province_modifier = {
