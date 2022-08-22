@@ -73,7 +73,11 @@ xalian_fashros_missions = {
 			}
 		}
 		NOT = {
-			religion = gadan
+			OR = {
+				tag = GDL
+				tag = GDA
+				tag = ZEA
+			}
 		}
 	}
 
