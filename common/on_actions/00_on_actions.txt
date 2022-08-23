@@ -3904,6 +3904,12 @@ on_general_recruited = {
 
 # country
 on_admiral_recruited = {
+	if = {
+		limit = {
+			mission_completed = lag_improve_naval_leadership
+		}
+		add_navy_tradition = 1
+	}
 }
 
 # country

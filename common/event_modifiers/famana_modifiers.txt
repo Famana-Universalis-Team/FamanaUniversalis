@@ -455,74 +455,74 @@ umz_ready_navy = {
 }
 
 umz_high_development = {
-global_tax_modifier = 0.05
-production_efficiency = 0.05
+    global_tax_modifier = 0.05
+    production_efficiency = 0.05
 }
 
 umz_develop_m = {
-local_development_cost = -0.15
-local_defensiveness = 0.3
+    local_development_cost = -0.15
+    local_defensiveness = 0.3
 }
 
 umz_develop_s = {
-local_development_cost = -0.15
-local_manpower_modifier = 0.25
+    local_development_cost = -0.15
+    local_manpower_modifier = 0.25
 }
 
 umz_desert_cavalry = {
-cavalry_cost = -0.10
-cavalry_power = 0.15
+    cavalry_cost = -0.10
+    cavalry_power = 0.15
 }
 
 umz_cut_off = {
-global_trade_power = -0.25
-global_institution_spread = -0.25
-global_unrest = 2
+    global_trade_power = -0.25
+    global_institution_spread = -0.25
+    global_unrest = 2
 }
 
 umz_colonization = {
-local_institution_spread = 0.25
-local_missionary_strength = 0.03
-trade_goods_size = 0.3
+    local_institution_spread = 0.25
+    local_missionary_strength = 0.03
+    trade_goods_size = 0.3
 }
 
 umz_chaos = {
-global_unrest = 3
-stability_cost_modifier = 0.1
-global_autonomy = 0.05
+    global_unrest = 3
+    stability_cost_modifier = 0.1
+    global_autonomy = 0.05
 }
 
 umz_war_enthusiasm = {
-land_morale = 0.15
-manpower_recovery_speed = 0.33
+    land_morale = 0.15
+    manpower_recovery_speed = 0.33
 }
 
 umz_vassals = {
-diplomatic_upkeep = 2
-reduced_liberty_desire = 25
+    diplomatic_upkeep = 2
+    reduced_liberty_desire = 25
 }
 
 umz_inf = {
-local_friendly_movement_speed = 0.15
-province_trade_power_modifier = 0.1
-local_unrest = -2
+    local_friendly_movement_speed = 0.15
+    province_trade_power_modifier = 0.1
+    local_unrest = -2
 }
 
 umz_ref = {
-free_policy = 1
-max_absolutism = 15
-state_maintenance_modifier = -0.25
+    free_policy = 1
+    max_absolutism = 15
+    state_maintenance_modifier = -0.25
 }
 
 umz_breach = {
-artillery_fire = 1
-artillery_bonus_vs_fort = 1
-siege_ability = 0.25
+    artillery_fire = 1
+    artillery_bonus_vs_fort = 1
+    siege_ability = 0.25
 }
 
 umz_crushed = {
-siege_ability = 0.15
-diplomatic_reputation = 1
+    siege_ability = 0.15
+    diplomatic_reputation = 1
 }
 
 
@@ -1874,4 +1874,9 @@ lag_royal_trade = {
 lag_into_pexto = {
     ae_impact = -0.10
     province_warscore_cost = -0.10
+}
+
+lag_into_oppia = {
+    naval_morale = 0.10
+    land_morale = 0.10
 }

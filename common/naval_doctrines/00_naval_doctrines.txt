@@ -116,3 +116,18 @@ jasuan_craftsmanship =
 
 	button_gfx = 6
 }
+
+resteman_fleet_command =
+{
+	can_select = {
+		mission_completed = lag_improve_naval_leadership
+	}
+
+	country_modifier = {
+		leader_naval_fire = 2
+		leader_naval_manuever = 2
+		leader_naval_shock = 2
+	}
+
+	button_gfx = 5
+}

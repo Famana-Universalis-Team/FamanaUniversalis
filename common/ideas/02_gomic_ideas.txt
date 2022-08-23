@@ -710,13 +710,14 @@ RES_ideas = {
 	}
 	res_great = {
 		naval_forcelimit_modifier = 0.33
+		allowed_marine_fraction = 0.25
 	}
 	res_rule = {
-		diplomatic_upkeep = 1
 		liberty_desire_from_subject_development = -0.05
+		envoy_travel_time = -0.25
 	}
 	res_spies = {
-		spy_offence = 0.25
+		spy_offence = 0.20
 	}
 }
 

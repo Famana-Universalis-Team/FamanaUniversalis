@@ -199,7 +199,9 @@ lag_3 = {
         required_missions = { }
         position = 2
         trigger = {
-            has_center_of_trade_of_level = 3
+            any_owned_province = {
+                province_has_center_of_trade_of_level = 3
+            }
             OR = {
                 estate_loyalty = {
                     estate = estate_burghers
@@ -225,7 +227,7 @@ lag_3 = {
             }
         }
         provinces_to_highlight = {
-            owned_by = LAG
+            owned_by = ROOT
             province_has_center_of_trade_of_level = 1
             NOT = {
                 province_has_center_of_trade_of_level = 3
@@ -248,7 +250,7 @@ lag_3 = {
 
     lag_claim_the_great_city = {
         icon = mission_monarch_in_throne_room
-        required_missions = { lag_face_the_barbarians }
+        required_missions = { lag_control_the_channel }
         position = 6
         trigger = {
 
@@ -329,12 +331,75 @@ lag_4 = {
         icon = mission_rb_cod_wars
         required_missions = { }
         trigger = {
-
+            OR = {
+                wharf = 3
+                trade_goods_produced_amount = {
+	                trade_goods = fish
+	                amount = 6
+                }
+            }
         }
         effect = {
-
+            custom_tooltip = lagGetFishMoney
+            hidden_effect = {
+                random_owned_province = {
+                    limit = {
+                        trade_goods = fish
+                    }
+                    add_province_modifier = {
+                        name = lag_more_fish
+                        duration = -1
+                    }
+                }
+                random_owned_province = {
+                    limit = {
+                        trade_goods = fish
+                    }
+                    add_province_modifier = {
+                        name = lag_more_fish
+                        duration = -1
+                    }
+                }
+                random_owned_province = {
+                    limit = {
+                        trade_goods = fish
+                    }
+                    add_province_modifier = {
+                        name = lag_more_fish
+                        duration = -1
+                    }
+                }
+                random_owned_province = {
+                    limit = {
+                        trade_goods = fish
+                    }
+                    add_province_modifier = {
+                        name = lag_more_fish
+                        duration = -1
+                    }
+                }
+                random_owned_province = {
+                    limit = {
+                        trade_goods = fish
+                    }
+                    add_province_modifier = {
+                        name = lag_more_fish
+                        duration = -1
+                    }
+                }
+            }
+            add_years_of_owned_provinces_production_income = {
+                years = 5
+                trigger = {
+                    trade_goods = fish
+                }
+                custom_tooltip = LAG_GET_A_LOT_OF_FISH
+            }
         }
-        #provinces_to_highlight = {}
+        provinces_to_highlight = {
+            owned_by = ROOT
+            trade_goods = fish
+        }
     }
 
     lag_develop_the_coastline = {
@@ -411,7 +476,14 @@ lag_4 = {
             }
         }
         effect = {
-
+            define_advisor = {
+                type = diplomat
+                skill = 3
+                cost_multiplier = 0.35
+                location = 5303
+                culture = Glazian
+                religion = Lathvy
+            }
             
             area_100 = {
                 add_permanent_claim = ROOT
@@ -444,14 +516,27 @@ lag_4 = {
     lag_land_in_arlenta = {
         icon = mission_raid_on_venice
         position = 11
-        required_missions = { lag_annex_tegaria }
+        required_missions = { lag_annex_tegaria lag_into_the_fray }
         trigger = {
-
+            any_owned_province = {
+                OR = {
+                    area = gromash_area
+                    area = arlen_area
+                    area = arlentan_area
+                }
+            }
         }
         effect = {
 
         }
-        #provinces_to_highlight = {}
+        provinces_to_highlight = {
+            NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			OR = {
+                area = gromash_area
+                area = arlen_area
+                area = arlentan_area
+            }
+        }
     }
 
     lag_secure_new_pexamol = {
@@ -485,7 +570,7 @@ lag_5 = {
         icon = secure_the_republic
         required_missions = { }
         trigger = {
-            num_of_ports = 18
+            num_of_ports = 16
             OR = {
                 dock = 10
                 drydock = 5
@@ -575,10 +660,13 @@ lag_5 = {
         required_missions = { lag_the_unsinkable_fleet }
         position = 6
         trigger = {
-
+            navy_tradition = 60
+            num_of_admirals = 2
+            advisor = naval_reformer
         }
         effect = {
-
+            custom_tooltip = lagMoreNavyTrad
+            custom_tooltip = lagUnlockDoctrine
         }
         #provinces_to_highlight = {}
     }
@@ -601,10 +689,21 @@ lag_5 = {
         required_missions = { lag_friends_in_oppia }
         position = 10
         trigger = {
-
+            custom_trigger_tooltip = {
+                tooltip = lagWarWithOpp
+                any_country = {
+                    culture_group = Oppian
+                    defensive_war_with = ROOT
+                }
+            }
+            num_of_galley = 30
         }
         effect = {
-
+            add_country_modifier = {
+                name = lag_into_oppia
+                duration = 7300
+            }
+            custom_tooltip = lagUnlockNewGovReform
         }
         #provinces_to_highlight = {}
     }
@@ -617,7 +716,10 @@ lag_5 = {
 
         }
         effect = {
-
+            #PICK BETWEEN RESTEMAN EMPIRE AND AESOPPIA
+            #country_event = {
+            #    id = restema.2
+            #}
         }
         #provinces_to_highlight = {}
     }

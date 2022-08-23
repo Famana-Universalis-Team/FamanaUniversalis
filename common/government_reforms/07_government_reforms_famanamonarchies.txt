@@ -79,6 +79,29 @@ army_focus_skirmishers = {
 	}
 }
 
+res_naval_support_doctrine = {
+	icon = "church_and_state_reform"
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			tag = LAG
+			tag = RES
+		}
+		mission_completed = lag_into_the_fray
+	}
+	modifiers = {
+		global_naval_barrage_cost = -0.75
+		siege_blockade_progress = 1
+	}
+	ai = {
+		factor = 1
+		#modifier = {
+		#	factor = 2
+		#
+		#}
+	}
+}
+
 #######################################################
 
 oppian_state_reform = {

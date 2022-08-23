@@ -2026,7 +2026,9 @@ country_decisions = {
 			}
 		}
 		allow = {
-			is_free_or_tributary_trigger = yes
+			NOT = {
+				is_subject_of = PEX
+			}
 			is_at_war = no
 		}
 		effect = {
