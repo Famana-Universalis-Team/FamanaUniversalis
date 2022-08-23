@@ -85,7 +85,10 @@ delkia_fashros_missions = {
 			}
 			any_owned_province = {
 				AND = {
-					religion = tonmo
+					custom_trigger_tooltip = {
+						tooltip = rel_in_province_tonmo
+						religion = tonmo
+					}
 					has_missionary = yes
 				}
 			}
@@ -108,7 +111,10 @@ delkia_fashros_missions = {
 							superregion = ga_xal_superregion
 							region = eastern_desert_region #hoxoi
 						}
-						religion = tonmo
+						custom_trigger_tooltip = {
+							tooltip = rel_in_province_tonmo
+							religion = tonmo
+						}
 					}
 				}
 			}
@@ -390,7 +396,7 @@ delkia_3 = {
 					vassalize = ZEA
 				}
 			}
-			unnamed_area_9 = {
+			gadea_area = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT }
 					NOT = { is_core = ROOT	}
@@ -420,7 +426,7 @@ delkia_3 = {
 		
 		provinces_to_highlight = {
 			OR = {
-				area = unnamed_area_9
+				area = gadea_area
 				area = zeaf_area
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
@@ -431,7 +437,7 @@ delkia_3 = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT	
 			}	
-			unnamed_area_9 = {
+			gadea_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT	
 			}

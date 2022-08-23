@@ -1080,9 +1080,25 @@ merc_zeaf_skirmishers = {
 	cost_modifier = 0.33
 	sprites = { muslimgfx_sprite_pack }
     trigger = {
-		custom_trigger_tooltip = {
-			tooltip = ZeafSkirmishersTooltip
-			has_country_flag = zeaf_merc_flag
+		OR = {
+			AND = {
+				custom_trigger_tooltip = {
+					tooltip = Zeaf2MercsTooltip
+					ZEA = {
+						has_country_flag = zeaf_merc_flag
+					}
+				}
+				OR = {
+					tag = ZEA
+					any_ally = {
+						tag = ZEA
+					}
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = ZeafSkirmishersTooltip
+				has_country_flag = zeaf_merc_flag
+			}
 		}
 	}
 	modifier = {
@@ -1150,5 +1166,36 @@ merc_tsarkan_archers = { #Heavy Cavalry
 	modifier = {
 		cavalry_power = 0.15
 		leader_land_manuever = 6
+	}
+}
+# Faris Cataphracts
+merc_faris_cataphracts = {
+    regiments_per_development = 0.025
+	cavalry_weight = 0.4
+	artillery_weight = 0
+	cavalry_cap = 8
+    home_province = 5162
+	cost_modifier = 0.65
+	sprites = { muslimgfx_sprite_pack }
+    trigger = {
+		AND = {
+			custom_trigger_tooltip = {
+				tooltip = Zeaf2MercsTooltip
+				ZEA = {
+					has_country_flag = zeaf_merc_flag
+				}
+			}
+			OR = {
+				tag = ZEA
+				any_ally = {
+					tag = ZEA
+				}
+			}
+		}
+	}
+	modifier = {
+		shock_damage = 0.15
+		shock_damage_received = -0.25
+		discipline = 0.10
 	}
 }

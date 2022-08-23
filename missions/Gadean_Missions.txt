@@ -126,7 +126,10 @@ gadea_1 = {
 			}
 			any_owned_province = {
 				AND = {
-					religion = tonmo
+					custom_trigger_tooltip = {
+						tooltip = rel_in_province_tonmo
+						religion = tonmo
+					}
 					has_missionary = yes
 				}
 			}
@@ -149,7 +152,10 @@ gadea_1 = {
 							superregion = ga_xal_superregion
 							region = eastern_desert_region #hoxoi
 						}
-						religion = tonmo
+						custom_trigger_tooltip = {
+							tooltip = rel_in_province_tonmo
+							religion = tonmo
+						}
 					}
 				}
 			}
@@ -512,7 +518,7 @@ gadea_3 = {
 									area = tsaj_area
 									area = zeaf_area
 									area = bava_area
-									area = unnamed_area_9
+									area = gadea_area
 								}
 							}
 						}

@@ -312,3 +312,13 @@ growth_of_gadea = {
     local_tax_modifier = 0.25
     trade_goods_size_modifier = 0.1
 }
+
+zea_holy_city = {
+    local_build_cost = -0.25
+    local_tax_modifier = 0.10
+}
+
+zea_owner_of_gadea = {
+    local_build_cost = -0.33
+    trade_goods_size_modifier = 0.15
+}

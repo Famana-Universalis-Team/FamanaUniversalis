@@ -179,7 +179,7 @@ antiash_1 = {
 			arlenta_region = {
 				discover_country = ROOT
 			}
-			unnamed_area_9 = {
+			gadea_area = {
 				discover_country = ROOT
 			}
 			zeaf_area = {
@@ -224,7 +224,7 @@ antiash_1 = {
 			change_religion = ROOT
 			change_culture = ROOT
 			}
-			unnamed_area_9 = {
+			gadea_area = {
 				add_permanent_claim = ROOT
 			}
 			zeaf_area = {
@@ -248,7 +248,7 @@ antiash_1 = {
             antiash_delta
 		}
 		trigger = {
-			unnamed_area_9 = {
+			gadea_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -263,7 +263,7 @@ antiash_1 = {
         }
 		provinces_to_highlight = {
 			OR = {
-			area = unnamed_area_9
+			area = gadea_area
 			area = zeaf_area
 			area = tsaj_area
 			}

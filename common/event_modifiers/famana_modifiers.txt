@@ -1825,3 +1825,44 @@ lag_shipbuilding = {
 	global_ship_cost = -0.25
     global_ship_recruit_speed = -0.5
 }
+
+zea_raise_banners = {
+    mercenary_cost = -0.10
+    infantry_cost = -0.10
+    land_morale = 0.05
+}
+
+zea_conquest_of_maky = {
+    core_creation = -0.1
+    state_maintenance_modifier = -0.33
+}
+
+zea_holy_cities = {
+    culture_conversion_cost = -0.25
+    global_missionary_strength = 0.01
+}
+
+zea_tribal_masidon = {
+    defensiveness = 0.10
+    recover_army_morale_speed = 0.10
+}
+
+zea_integrate_tribes = {
+    manpower_in_true_faith_provinces= 0.10
+    tolerance_own = 2
+}
+
+zea_mountain_warfare = {
+    leader_siege = 1
+    global_supply_limit_modifier = 0.10
+}
+
+zea_anti_xalian_diplomacy = {
+    tolerance_heathen = -2
+    manpower_in_true_faith_provinces= 0.05
+}
+
+zea_rebuilding = {
+    development_cost = -0.10
+    build_time = -0.33
+}
