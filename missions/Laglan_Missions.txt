@@ -199,12 +199,38 @@ lag_3 = {
         required_missions = { }
         position = 2
         trigger = {
-
+            has_center_of_trade_of_level = 3
+            OR = {
+                estate_loyalty = {
+                    estate = estate_burghers
+                    loyalty = 80
+                }
+                NOT = {
+                    estate_influence = {
+                        estate = estate_burghers
+                        influence = 20
+                    }
+                }
+            }
         }
         effect = {
-
+            add_mercantilism = 10
+            add_country_modifier = {
+                name = lag_royal_trade
+                duration = 7300
+            }
+            change_estate_land_share = {
+				estate = estate_burghers
+				share = -5
+			}
         }
-        #provinces_to_highlight = {}
+        provinces_to_highlight = {
+            owned_by = LAG
+            province_has_center_of_trade_of_level = 1
+            NOT = {
+                province_has_center_of_trade_of_level = 3
+            }
+        }
     }
 
     lag_the_question_of_slavery = {
@@ -418,7 +444,7 @@ lag_5 = {
         icon = secure_the_republic
         required_missions = { }
         trigger = {
-            num_of_ports = 20
+            num_of_ports = 18
             OR = {
                 dock = 10
                 drydock = 5

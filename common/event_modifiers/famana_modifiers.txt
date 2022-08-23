@@ -1866,3 +1866,7 @@ zea_rebuilding = {
     development_cost = -0.10
     build_time = -0.33
 }
+
+lag_royal_trade = {
+    trade_efficiency = 0.15
+}
