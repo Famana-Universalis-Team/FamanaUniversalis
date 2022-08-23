@@ -676,10 +676,21 @@ lag_5 = {
         required_missions = { }
         position = 8
         trigger = {
-
+            any_ally = {
+                capital_scope = {
+                    superregion = oppia_superregion
+                    has_opinion = {
+	                    who = ROOT
+	                    value = 150
+                    }
+                }
+            }
         }
         effect = {
-
+            add_country_modifier = {
+                name = lag_oppian_friend
+                duration = 9125
+            }
         }
         #provinces_to_highlight = {}
     }

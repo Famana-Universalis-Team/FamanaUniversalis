@@ -1880,3 +1880,8 @@ lag_into_oppia = {
     naval_morale = 0.10
     land_morale = 0.10
 }
+
+lag_oppian_friend = {
+    diplomatic_reputation = 1
+    galley_power = 0.10
+}
