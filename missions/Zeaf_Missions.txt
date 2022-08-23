@@ -352,7 +352,7 @@ zeaf_2 = {
 	}
 }
 
-military_missions_zeaf = { #Series name is displayed over the slot?
+zea_military_missions = { #Series name is displayed over the slot?
 	slot = 3 #ie, second upper left column
 	generic = yes #if a mission without generic = yes wants this slot then it overrides this.
 	ai = no #Can exist under the series itself or within individual missions.
@@ -363,7 +363,7 @@ military_missions_zeaf = { #Series name is displayed over the slot?
 	
 	#missions
 	#1st tier: (they appear in the order scripted here in the interface, all missions within one "series" has an arrow going down to the next one scripted)
-	build_army_mission = { #Localized as reclaim_maine_title and reclaim_maine_desc
+	zea_build_army_mission = { #Localized as reclaim_maine_title and reclaim_maine_desc
 		icon = mission_build_up_to_force_limit
 		required_missions = {  } #None
 		trigger = {
@@ -377,7 +377,7 @@ military_missions_zeaf = { #Series name is displayed over the slot?
 		}
 	}
 	#2nd tier: (second because it is the second mission to be listed)
-	expand_country_mission = {
+	zea_expand_country_mission = {
 		icon = mission_conquer_50_development
 		required_missions = { build_army_mission }
 		trigger = { grown_by_development = 50 }
@@ -397,7 +397,7 @@ military_missions_zeaf = { #Series name is displayed over the slot?
 		}
 	}
 	#3d Tier: (not actually scripted as third, it's third as it is the 3rd one in this mission series)
-	conquer_states = {
+	zea_conquer_states = {
 		icon = mission_cannons_firing
 		required_missions = { expand_country_mission }
 		trigger = { grown_by_states = 5 }
@@ -409,7 +409,7 @@ military_missions_zeaf = { #Series name is displayed over the slot?
 		}
 	}
 	#4th
-	assemble_an_army = {
+	zea_assemble_an_army = {
 		icon = mission_assemble_an_army
 		required_missions = { conquer_states }
 		trigger = { army_size = 80 }
@@ -421,7 +421,7 @@ military_missions_zeaf = { #Series name is displayed over the slot?
 		}
 	}
 	#5th
-	unite_home_region = {
+	zea_unite_home_region = {
 		icon = mission_unite_home_region
 		required_missions = { assemble_an_army }
 		provinces_to_highlight = {
@@ -455,7 +455,7 @@ military_missions_zeaf = { #Series name is displayed over the slot?
 
 
 #2nd mission series:
-diplomatic_missions_zeaf = {
+zea_diplomatic_missions = {
 	slot = 4
 	
 	generic = yes
@@ -465,7 +465,7 @@ diplomatic_missions_zeaf = {
 		religion = gadan
 	}
 	
-	building_alliances = {
+	zea_building_alliances = {
 		icon = mission_alliances
 		required_missions = {  } #none
 		trigger = {
@@ -490,7 +490,7 @@ diplomatic_missions_zeaf = {
 			}
 		}
 	}
-	have_two_subjects = {
+	zea_have_two_subjects = {
 		icon = mission_have_two_subjects
 		required_missions = { building_alliances }
 		trigger = { num_of_non_tributary_subjects = 2 }
@@ -501,7 +501,7 @@ diplomatic_missions_zeaf = {
 			}
 		}
 	}
-	establish_high_seas_navy = {
+	zea_establish_high_seas_navy = {
 		icon = mission_establish_high_seas_navy
 		required_missions = { have_two_subjects }
 		trigger = { 
@@ -517,7 +517,7 @@ diplomatic_missions_zeaf = {
 			}
 		}
 	}
-	dominate_home_trade_node = {
+	zea_dominate_home_trade_node = {
 		icon = mission_dominate_home_trade_node
 		required_missions = { establish_high_seas_navy }
 		trigger = {
@@ -595,7 +595,7 @@ diplomatic_missions_zeaf = {
 			}
 		}
 	}
-	trade_company_region_abroad = {
+	zea_trade_company_region_abroad = {
 		icon = mission_trade_company_region_abroad
 		required_missions = { dominate_home_trade_node }
 		trigger = {
@@ -626,7 +626,7 @@ diplomatic_missions_zeaf = {
 }
 
  #3nd mission series:
-administrative_missions_zeaf = {
+ zea_administrative_missions = {
 	slot = 5
 	
 	generic = yes
@@ -635,7 +635,7 @@ administrative_missions_zeaf = {
 		tag = ZEA
 		religion = gadan
 	}
-	high_income_mission = {
+	zea_high_income_mission = {
 		icon = mission_high_income
 		required_missions = {  } #None
 		trigger = { share_of_starting_income = 1.5 }
@@ -646,7 +646,7 @@ administrative_missions_zeaf = {
 			}
 		}
 	}
-	build_temples = {
+	zea_build_temples = {
 		icon = mission_early_game_buildings
 		required_missions = { high_income_mission }
 		trigger = {
@@ -661,7 +661,7 @@ administrative_missions_zeaf = {
 			}
 		}
 	}
-	build_treasury = {
+	zea_build_treasury = {
 		icon = mission_war_chest
 		required_missions = { build_temples }
 		trigger = { treasury = 2000 }
@@ -672,7 +672,7 @@ administrative_missions_zeaf = {
 			}
 		}
 	}
-	build_manufactories = {
+	zea_build_manufactories = {
 		icon = mission_have_manufactories
 		required_missions = { build_treasury }
 		trigger = {
@@ -701,7 +701,7 @@ administrative_missions_zeaf = {
 			add_years_of_income = 1.5
 		}
 	}
-	imperial_ambition_mission = {
+	zea_imperial_ambition_mission = {
 		icon = mission_empire
 		required_missions = { build_manufactories }
 		trigger = {
@@ -717,7 +717,7 @@ administrative_missions_zeaf = {
 	}
 }
 
-xalian_fashros_missions_zeaf = {
+xalian_fashros_missions = {
 	slot = 3
 	has_country_shield = no
 	
@@ -728,7 +728,7 @@ xalian_fashros_missions_zeaf = {
 		religion = gadan
 	}
 
-	xalian_survive_the_invasions = {
+	zea_xalian_survive_the_invasions = {
 		position = 6
 		icon = mission_chinese_general_riding
 		required_missions = { }
@@ -744,7 +744,7 @@ xalian_fashros_missions_zeaf = {
 		}
 	}
 
-	xalian_find_converts = {
+	zea_xalian_find_converts = {
 		position = 7
 		icon = mission_cossack_cavalry
 		required_missions = { xalian_survive_the_invasions }
@@ -769,7 +769,7 @@ xalian_fashros_missions_zeaf = {
 		}
 	}
 
-	xalian_expel_tonmo = {
+	zea_xalian_expel_tonmo = {
 		position = 8
 		icon = mission_crusade_for_varna
 		required_missions = { xalian_find_converts }
