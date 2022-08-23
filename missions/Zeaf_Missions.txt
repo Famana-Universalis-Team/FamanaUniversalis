@@ -172,8 +172,10 @@ zeaf_1 = {
 						}
 						OR = {
 							is_empty = yes
-							owned_by = ROOT
-							religion = gadan
+							AND = {
+								owned_by = ROOT
+								religion = gadan
+							}
 						}
 					}
 				}
