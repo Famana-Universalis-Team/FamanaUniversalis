@@ -215,14 +215,14 @@ lag_3 = {
         }
         effect = {
             add_mercantilism = 10
-            add_country_modifier = {
-                name = lag_royal_trade
-                duration = 7300
-            }
             change_estate_land_share = {
 				estate = estate_burghers
 				share = -5
 			}
+            add_country_modifier = {
+                name = lag_royal_trade
+                duration = 7300
+            }
         }
         provinces_to_highlight = {
             owned_by = LAG
@@ -379,12 +379,25 @@ lag_4 = {
         position = 7
         required_missions = { }
         trigger = {
-
+            unnamed_pexto_10 = {
+                type = all
+                country_or_non_sovereign_subject_holds = ROOT
+            }
         }
         effect = {
-
+            add_mil_power = 100
+            add_country_modifier = {
+                name = lag_into_pexto
+                duration = 9125
+            }
+            unnamed_pexto_8 = {
+                add_permanent_claim = ROOT
+            }
         }
-        #provinces_to_highlight = {}
+        provinces_to_highlight = {
+            NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			area = unnamed_pexto_10
+        }
     }
 
     lag_annex_tegaria = {
@@ -392,12 +405,40 @@ lag_4 = {
         position = 9
         required_missions = { lag_subjugate_cegon }
         trigger = {
-
+            unnamed_pexto_8 = {
+                type = all
+                country_or_non_sovereign_subject_holds = ROOT
+            }
         }
         effect = {
 
+            
+            area_100 = {
+                add_permanent_claim = ROOT
+            }
+            unnamed_pexto_11 = {
+                add_permanent_claim = ROOT
+            }
+            unnamed_pexto_7 = {
+                add_permanent_claim = ROOT
+            }
+            maglazios_area = {
+                add_permanent_claim = ROOT
+            }
+            gromash_area = {
+                add_permanent_claim = ROOT
+            }
+            arlen_area = {
+                add_permanent_claim = ROOT
+            }
+            arlentan_area = {
+                add_permanent_claim = ROOT
+            }
         }
-        #provinces_to_highlight = {}
+        provinces_to_highlight = {
+            NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			area = unnamed_pexto_8
+        }
     }
 
     lag_land_in_arlenta = {

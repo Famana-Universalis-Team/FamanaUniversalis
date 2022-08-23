@@ -1870,3 +1870,8 @@ zea_rebuilding = {
 lag_royal_trade = {
     trade_efficiency = 0.15
 }
+
+lag_into_pexto = {
+    ae_impact = -0.10
+    province_warscore_cost = -0.10
+}
