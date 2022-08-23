@@ -69,7 +69,9 @@ zeaf_1 = {
 			maky_region = {
 				add_permanent_claim = ROOT
 			}
-			cede_province = 5146
+			5146 = {
+				cede_province = ROOT
+			}
 			add_country_modifier = {
 				name = zea_conquest_of_maky
 				duration = 5475
