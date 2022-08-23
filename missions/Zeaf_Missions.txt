@@ -264,21 +264,16 @@ zeaf_2 = {
 			}
         }
 		effect = {
-			custom_tooltip = VASSALISE_GADEA
-			hidden_effect = {
-				if = {
-					limit = {
-						GDA = {
-							AND = {
-								owns_core_province = 5155
-								ai = yes
-							}
-						}
+			if = {
+				limit = {
+					GDA = {
+						owns_core_province = 5155
+						ai = yes
 					}
-					create_subject = {
-						subject_type = vassal
-						who = GDA
-					}
+				}
+				custom_tooltip = VASSALISE_GADEA
+				hidden_effect = {
+					vassalize = GDA
 				}
 			}
 			5155 = {
