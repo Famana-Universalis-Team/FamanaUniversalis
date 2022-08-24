@@ -1905,3 +1905,17 @@ tck_sar_dynasty = {
     monarch_lifespan = 0.15
     heir_chance = 0.10
 }
+
+lag_tame_the_coast = {
+    global_trade_goods_size_modifier = 0.20
+}
+
+lag_massive_navy = {
+    ship_durability = 0.10
+    own_coast_naval_combat_bonus = 1.0
+}
+
+lag_troll_tck = {
+    naval_forcelimit_modifier = -0.50
+    global_trade_power = -0.25
+}

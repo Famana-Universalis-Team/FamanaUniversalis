@@ -345,47 +345,67 @@ lag_4 = {
                 random_owned_province = {
                     limit = {
                         trade_goods = fish
+                        NOT = {
+                            has_province_flag = lag_got_fish
+                        }
                     }
                     add_province_modifier = {
                         name = lag_more_fish
                         duration = -1
                     }
+                    set_province_flag = lag_got_fish
                 }
                 random_owned_province = {
                     limit = {
                         trade_goods = fish
+                        NOT = {
+                            has_province_flag = lag_got_fish
+                        }
                     }
                     add_province_modifier = {
                         name = lag_more_fish
                         duration = -1
                     }
+                    set_province_flag = lag_got_fish
                 }
                 random_owned_province = {
                     limit = {
                         trade_goods = fish
+                        NOT = {
+                            has_province_flag = lag_got_fish
+                        }
                     }
                     add_province_modifier = {
                         name = lag_more_fish
                         duration = -1
                     }
+                    set_province_flag = lag_got_fish
                 }
                 random_owned_province = {
                     limit = {
                         trade_goods = fish
+                        NOT = {
+                            has_province_flag = lag_got_fish
+                        }
                     }
                     add_province_modifier = {
                         name = lag_more_fish
                         duration = -1
                     }
+                    set_province_flag = lag_got_fish
                 }
                 random_owned_province = {
                     limit = {
                         trade_goods = fish
+                        NOT = {
+                            has_province_flag = lag_got_fish
+                        }
                     }
                     add_province_modifier = {
                         name = lag_more_fish
                         duration = -1
                     }
+                    set_province_flag = lag_got_fish
                 }
             }
             add_years_of_owned_provinces_production_income = {
@@ -406,24 +426,93 @@ lag_4 = {
         icon = secure_the_republic
         required_missions = { lag_sponsor_fishermen lag_build_ports }
         trigger = {
-
+            num_of_owned_provinces_with = {
+                value = 10
+                region = laglon_region
+                has_port = yes
+                development = 15
+            }
         }
         effect = {
-
+            add_country_modifier = {
+                name = lag_tame_the_coast
+                duration = 5475
+            }
+            if = {
+                limit = {
+                    NOT = {
+                        5022 = {
+                            province_has_center_of_trade_of_level = 3
+                        }
+                    }
+                }
+                5022 = {
+                    add_center_of_trade_level = 1
+                }
+            }
+            5020 = {
+                change_trade_goods = glass
+            }
+            5019 = {
+                change_trade_goods = cloth
+            }
+            5026 = {
+                change_trade_goods = wine
+            }
         }
-        #provinces_to_highlight = {}
+        provinces_to_highlight = {
+            owned_by = ROOT
+            has_port = yes
+            region = laglon_region
+            NOT = {development = 15}
+        }
     }
 
     lag_expand_the_inland_cities = {
         icon = mission_industrialize_bengal
         required_missions = { lag_develop_the_coastline}
         trigger = {
-
+            share_of_starting_income = 2.0
+            temple = 10
+            workshop = 10
+            5029 = {
+                owned_by = ROOT
+                num_of_times_improved_by_owner = 5
+            }
+            5032 = {
+                owned_by = ROOT
+                num_of_times_improved_by_owner = 5
+            }
+            5036 = {
+                owned_by = ROOT
+                num_of_times_improved_by_owner = 5
+            }
         }
         effect = {
-
+            add_adm_power = 150
+            5028 = {
+                add_base_tax = 2
+                add_base_production = 2
+                add_base_manpower = 2
+            }
+            unnamed_area_17 = {
+                add_prosperity = 100
+            }
+            unnamed_area_18 = {
+                add_prosperity = 100
+            }
+            unnamed_area_16 = {
+                add_prosperity = 100
+            }
         }
-        #provinces_to_highlight = {}
+        provinces_to_highlight = {
+            owned_by = ROOT
+            OR = {
+                province_id = 5029
+                province_id = 5032
+                province_id = 5036
+            }
+        }
     }
 
     lag_control_the_channel = {
@@ -431,12 +520,70 @@ lag_4 = {
         position = 5
         required_missions = { lag_the_unsinkable_fleet }
         trigger = {
-
+            4982 = {
+                trade_share	= {
+                    country = ROOT
+                    share = 99
+                }
+            }
+            if = {
+                limit = {
+                    exists = TCK
+                }
+                navy_size = TCK
+            }
+            if = {
+                limit = {
+                    exists = UMZ
+                }
+                navy_size = UMZ
+            }
+            if = {
+                limit = {
+                    exists = NUT
+                }
+                navy_size = NUT
+            }
+            if = {
+                limit = {
+                    exists = OPP
+                }
+                navy_size = OPP
+            }
         }
         effect = {
-
+            5066 = {
+                add_trade_modifier = {
+                    who = ROOT
+                    duration = 3650
+                    power = 125
+                    key = LAG_QUANEX_TAKEOVER
+                }
+            }
+            if = {
+                limit = {
+                    exists = TCK
+                }
+                TCK = {
+                    add_country_modifier = {
+                        name = lag_troll_tck
+                        duration = 3650
+                    }
+                }
+            }
+            quanex_area = {
+                add_permanent_claim = ROOT
+            }
+            western_core_area = {
+                add_permanent_claim = ROOT
+            }
+            eastern_core_area = {
+                add_permanent_claim = ROOT
+            }
         }
-        #provinces_to_highlight = {}
+        provinces_to_highlight = {
+            province_id = 4982
+        }
     }
 
     lag_subjugate_cegon = {
@@ -647,10 +794,17 @@ lag_5 = {
         required_missions = { lag_build_ports }
         position = 4
         trigger = {
-
+            OR = {
+                num_of_galley = 40
+                num_of_heavy_ship = 15
+            }
+            navy_size_percentage = 0.9
         }
         effect = {
-
+            add_country_modifier = {
+                name = lag_massive_navy
+                duration = -1
+            }
         }
         #provinces_to_highlight = {}
     }
@@ -725,7 +879,7 @@ lag_5 = {
                     defensive_war_with = ROOT
                 }
             }
-            num_of_galley = 30
+            navy_size = 50
         }
         effect = {
             add_country_modifier = {

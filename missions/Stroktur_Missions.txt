@@ -451,15 +451,19 @@ stroktur_1 = {
                     limit = {
                         province_has_center_of_trade_of_level = 1
                         NOT = { province_has_center_of_trade_of_level = 3 }
+                        NOT = {has_province_flag = skt_upgraded_trade_center}
                     }
                     add_center_of_trade_level = 1
+                    set_province_flag = skt_upgraded_trade_center
                 }
                 random_owned_province = {
                     limit = {
                         province_has_center_of_trade_of_level = 1
                         NOT = { province_has_center_of_trade_of_level = 3 }
+                        NOT = {has_province_flag = skt_upgraded_trade_center}
                     }
                     add_center_of_trade_level = 1
+                    set_province_flag = skt_upgraded_trade_center
                 }
             }
         }
@@ -804,26 +808,34 @@ stroktur_est = {
                 random_owned_province = {
                     limit = {
                         culture = Bohoran_E
+                        NOT = {has_province_flag = skt_culture_production_added}
                     }
                     add_base_production = 3
+                    set_province_flag = skt_culture_production_added
                 }
                 random_owned_province = {
                     limit = {
                         culture = Bohoran_E
+                        NOT = {has_province_flag = skt_culture_production_added}
                     }
                     add_base_production = 3
+                    set_province_flag = skt_culture_production_added
                 }
                 random_owned_province = {
                     limit = {
                         culture = Bohoran_E
+                        NOT = {has_province_flag = skt_culture_production_added}
                     }
                     add_base_production = 3
+                    set_province_flag = skt_culture_production_added
                 }
                 random_owned_province = {
                     limit = {
                         culture = Bohoran_E
+                        NOT = {has_province_flag = skt_culture_production_added}
                     }
                     add_base_production = 3
+                    set_province_flag = skt_culture_production_added
                 }
             }
             add_country_modifier = {
@@ -2060,90 +2072,110 @@ nafa_2 = {
                         NOT = {
                             religion = ROOT
                         }
+                        NOT = { has_province_flag = naf_converted_to_lathvy_xal }
                         superregion = ga_xal_superregion
                     }
                     change_religion = ROOT
+                    set_province_flag = naf_converted_to_lathvy_xal
                 }
                 random_owned_province = {
                     limit = {
                         NOT = {
                             religion = ROOT
                         }
+                        NOT = { has_province_flag = naf_converted_to_lathvy_xal }
                         superregion = ga_xal_superregion
                     }
                     change_religion = ROOT
+                    set_province_flag = naf_converted_to_lathvy_xal
                 }
                 random_owned_province = {
                     limit = {
                         NOT = {
                             religion = ROOT
                         }
+                        NOT = { has_province_flag = naf_converted_to_lathvy_xal }
                         superregion = ga_xal_superregion
                     }
                     change_religion = ROOT
+                    set_province_flag = naf_converted_to_lathvy_xal
                 }
                 random_owned_province = {
                     limit = {
                         NOT = {
                             religion = ROOT
                         }
+                        NOT = { has_province_flag = naf_converted_to_lathvy_xal }
                         superregion = ga_xal_superregion
                     }
                     change_religion = ROOT
+                    set_province_flag = naf_converted_to_lathvy_xal
                 }
                 random_owned_province = {
                     limit = {
                         NOT = {
                             religion = ROOT
                         }
+                        NOT = { has_province_flag = naf_converted_to_lathvy_xal }
                         superregion = ga_xal_superregion
                     }
                     change_religion = ROOT
+                    set_province_flag = naf_converted_to_lathvy_xal
                 }
                 random_owned_province = {
                     limit = {
                         NOT = {
                             religion = ROOT
                         }
+                        NOT = { has_province_flag = naf_converted_to_lathvy_xal }
                         superregion = ga_xal_superregion
                     }
                     change_religion = ROOT
+                    set_province_flag = naf_converted_to_lathvy_xal
                 }
                 random_owned_province = {
                     limit = {
                         NOT = {
                             religion = ROOT
                         }
+                        NOT = { has_province_flag = naf_converted_to_lathvy_xal }
                         superregion = ga_xal_superregion
                     }
                     change_religion = ROOT
+                    set_province_flag = naf_converted_to_lathvy_xal
                 }
                 random_owned_province = {
                     limit = {
                         NOT = {
                             religion = ROOT
                         }
+                        NOT = { has_province_flag = naf_converted_to_lathvy_xal }
                         superregion = ga_xal_superregion
                     }
                     change_religion = ROOT
+                    set_province_flag = naf_converted_to_lathvy_xal
                 }
                 random_owned_province = {
                     limit = {
                         NOT = {
                             religion = ROOT
                         }
+                        NOT = { has_province_flag = naf_converted_to_lathvy_xal }
                         superregion = ga_xal_superregion
                     }
                     change_religion = ROOT
+                    set_province_flag = naf_converted_to_lathvy_xal
                 }
                 random_owned_province = {
                     limit = {
                         NOT = {
                             religion = ROOT
                         }
+                        NOT = { has_province_flag = naf_converted_to_lathvy_xal }
                         superregion = ga_xal_superregion
                     }
                     change_religion = ROOT
+                    set_province_flag = naf_converted_to_lathvy_xal
                 }
             }
             custom_tooltip = getAdmBasedOnXalianCenters
@@ -2457,182 +2489,222 @@ nafa_2 = {
                 random_owned_province = {
                     limit = {
                         development = 8
+                        NOT = { has_province_flag = naf_added_imp_hospital }
                     }
                     add_province_modifier = {
                         name = naf_imperial_hospital
                         duration = -1
                     }
+                    set_province_flag = naf_added_imp_hospital
                 }
                 random_owned_province = {
                     limit = {
                         development = 8
+                        NOT = { has_province_flag = naf_added_imp_hospital }
                     }
                     add_province_modifier = {
                         name = naf_imperial_hospital
                         duration = -1
                     }
+                    set_province_flag = naf_added_imp_hospital
                 }
                 random_owned_province = {
                     limit = {
                         development = 8
+                        NOT = { has_province_flag = naf_added_imp_hospital }
                     }
                     add_province_modifier = {
                         name = naf_imperial_hospital
                         duration = -1
                     }
+                    set_province_flag = naf_added_imp_hospital
                 }
                 random_owned_province = {
                     limit = {
                         development = 8
+                        NOT = { has_province_flag = naf_added_imp_hospital }
                     }
                     add_province_modifier = {
                         name = naf_imperial_hospital
                         duration = -1
                     }
+                    set_province_flag = naf_added_imp_hospital
                 }
                 random_owned_province = {
                     limit = {
                         development = 8
+                        NOT = { has_province_flag = naf_added_imp_hospital }
                     }
                     add_province_modifier = {
                         name = naf_imperial_hospital
                         duration = -1
                     }
+                    set_province_flag = naf_added_imp_hospital
                 }
                 random_owned_province = {
                     limit = {
                         development = 8
+                        NOT = { has_province_flag = naf_added_imp_hospital }
                     }
                     add_province_modifier = {
                         name = naf_imperial_hospital
                         duration = -1
                     }
+                    set_province_flag = naf_added_imp_hospital
                 }
                 random_owned_province = {
                     limit = {
                         development = 8
+                        NOT = { has_province_flag = naf_added_imp_hospital }
                     }
                     add_province_modifier = {
                         name = naf_imperial_hospital
                         duration = -1
                     }
+                    set_province_flag = naf_added_imp_hospital
                 }
                 random_owned_province = {
                     limit = {
                         development = 8
+                        NOT = { has_province_flag = naf_added_imp_hospital }
                     }
                     add_province_modifier = {
                         name = naf_imperial_hospital
                         duration = -1
                     }
+                    set_province_flag = naf_added_imp_hospital
                 }
                 random_owned_province = {
                     limit = {
                         development = 8
+                        NOT = { has_province_flag = naf_added_imp_hospital }
                     }
                     add_province_modifier = {
                         name = naf_imperial_hospital
                         duration = -1
                     }
+                    set_province_flag = naf_added_imp_hospital
                 }
                 random_owned_province = {
                     limit = {
                         development = 8
+                        NOT = { has_province_flag = naf_added_imp_hospital }
                     }
                     add_province_modifier = {
                         name = naf_imperial_hospital
                         duration = -1
                     }
+                    set_province_flag = naf_added_imp_hospital
                 }
                 random_owned_province = {
                     limit = {
                         development = 8
+                        NOT = { has_province_flag = naf_added_imp_hospital }
                     }
                     add_province_modifier = {
                         name = naf_imperial_hospital
                         duration = -1
                     }
+                    set_province_flag = naf_added_imp_hospital
                 }
                 random_owned_province = {
                     limit = {
                         development = 8
+                        NOT = { has_province_flag = naf_added_imp_hospital }
                     }
                     add_province_modifier = {
                         name = naf_imperial_hospital
                         duration = -1
                     }
+                    set_province_flag = naf_added_imp_hospital
                 }
                 random_owned_province = {
                     limit = {
                         development = 8
+                        NOT = { has_province_flag = naf_added_imp_hospital }
                     }
                     add_province_modifier = {
                         name = naf_imperial_hospital
                         duration = -1
                     }
+                    set_province_flag = naf_added_imp_hospital
                 }
                 random_owned_province = {
                     limit = {
                         development = 8
+                        NOT = { has_province_flag = naf_added_imp_hospital }
                     }
                     add_province_modifier = {
                         name = naf_imperial_hospital
                         duration = -1
                     }
+                    set_province_flag = naf_added_imp_hospital
                 }
                 random_owned_province = {
                     limit = {
                         development = 8
+                        NOT = { has_province_flag = naf_added_imp_hospital }
                     }
                     add_province_modifier = {
                         name = naf_imperial_hospital
                         duration = -1
                     }
+                    set_province_flag = naf_added_imp_hospital
                 }
                 random_owned_province = {
                     limit = {
                         development = 8
+                        NOT = { has_province_flag = naf_added_imp_hospital }
                     }
                     add_province_modifier = {
                         name = naf_imperial_hospital
                         duration = -1
                     }
+                    set_province_flag = naf_added_imp_hospital
                 }
                 random_owned_province = {
                     limit = {
                         development = 8
+                        NOT = { has_province_flag = naf_added_imp_hospital }
                     }
                     add_province_modifier = {
                         name = naf_imperial_hospital
                         duration = -1
                     }
+                    set_province_flag = naf_added_imp_hospital
                 }
                 random_owned_province = {
                     limit = {
                         development = 8
+                        NOT = { has_province_flag = naf_added_imp_hospital }
                     }
                     add_province_modifier = {
                         name = naf_imperial_hospital
                         duration = -1
                     }
+                    set_province_flag = naf_added_imp_hospital
                 }
                 random_owned_province = {
                     limit = {
                         development = 8
+                        NOT = { has_province_flag = naf_added_imp_hospital }
                     }
                     add_province_modifier = {
                         name = naf_imperial_hospital
                         duration = -1
                     }
+                    set_province_flag = naf_added_imp_hospital
                 }
                 random_owned_province = {
                     limit = {
                         development = 8
+                        NOT = { has_province_flag = naf_added_imp_hospital }
                     }
                     add_province_modifier = {
                         name = naf_imperial_hospital
                         duration = -1
                     }
+                    set_province_flag = naf_added_imp_hospital
                 }
                 every_owned_province = {
                     add_province_modifier = {
@@ -4984,82 +5056,102 @@ kalarga_5 = {
                 random_owned_province = {
                     limit = {
                         region = gorfrek_region
+                        NOT = { has_province_flag = klg_added_dev_gorfrek }
                     }
                     add_base_tax = 1
                     add_base_production = 1
                     add_base_manpower = 1
+                    set_province_flag = klg_added_dev_gorfrek
                 }
                 random_owned_province = {
                     limit = {
                         region = gorfrek_region
+                        NOT = { has_province_flag = klg_added_dev_gorfrek }
                     }
                     add_base_tax = 1
                     add_base_production = 1
                     add_base_manpower = 1
+                    set_province_flag = klg_added_dev_gorfrek
                 }
                 random_owned_province = {
                     limit = {
                         region = gorfrek_region
+                        NOT = { has_province_flag = klg_added_dev_gorfrek }
                     }
                     add_base_tax = 1
                     add_base_production = 1
                     add_base_manpower = 1
+                    set_province_flag = klg_added_dev_gorfrek
                 }
                 random_owned_province = {
                     limit = {
                         region = gorfrek_region
+                        NOT = { has_province_flag = klg_added_dev_gorfrek }
                     }
                     add_base_tax = 1
                     add_base_production = 1
                     add_base_manpower = 1
+                    set_province_flag = klg_added_dev_gorfrek
                 }
                 random_owned_province = {
                     limit = {
                         region = gorfrek_region
+                        NOT = { has_province_flag = klg_added_dev_gorfrek }
                     }
                     add_base_tax = 1
                     add_base_production = 1
                     add_base_manpower = 1
+                    set_province_flag = klg_added_dev_gorfrek
                 }
                 random_owned_province = {
                     limit = {
                         region = gorfrek_region
+                        NOT = { has_province_flag = klg_added_dev_gorfrek }
                     }
                     add_base_tax = 1
                     add_base_production = 1
                     add_base_manpower = 1
+                    set_province_flag = klg_added_dev_gorfrek
                 }
                 random_owned_province = {
                     limit = {
                         region = gorfrek_region
+                        NOT = { has_province_flag = klg_added_dev_gorfrek }
                     }
                     add_base_tax = 1
                     add_base_production = 1
                     add_base_manpower = 1
+                    set_province_flag = klg_added_dev_gorfrek
                 }
                 random_owned_province = {
                     limit = {
                         region = gorfrek_region
+                        NOT = { has_province_flag = klg_added_dev_gorfrek }
                     }
                     add_base_tax = 1
                     add_base_production = 1
                     add_base_manpower = 1
+                    set_province_flag = klg_added_dev_gorfrek
                 }
                 random_owned_province = {
                     limit = {
                         region = gorfrek_region
+                        NOT = { has_province_flag = klg_added_dev_gorfrek }
                     }
                     add_base_tax = 1
                     add_base_production = 1
                     add_base_manpower = 1
+                    set_province_flag = klg_added_dev_gorfrek
                 }
                 random_owned_province = {
                     limit = {
                         region = gorfrek_region
+                        NOT = { has_province_flag = klg_added_dev_gorfrek }
                     }
                     add_base_tax = 1
                     add_base_production = 1
                     add_base_manpower = 1
+                    set_province_flag = klg_added_dev_gorfrek
                 }
             }
             custom_tooltip = klgUniteCultures
