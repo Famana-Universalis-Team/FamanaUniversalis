@@ -11,8 +11,25 @@ tck_slot_1 = {
 		required_missions = { tck_the_good_king }
 		position = 2
 		trigger = {
+			army_size_percentage = 1
+			has_mil_advisor = yes
+			if = {
+				limit = {
+					ai = no
+				}
+				hidden_trigger = {
+					has_country_flag = Tck_Beastmode_Ai
+				}
+			}
         }
 		effect = {
+			add_casus_belli = {
+				target = UMZ
+				type = cb_restore_personal_union
+			}
+			goll_area = {
+				add_permanent_claim = ROOT
+			}
 		}
 		provinces_to_highlight = {
 		}
@@ -22,10 +39,48 @@ tck_slot_1 = {
 		required_missions = { tck_restore_umzat }
 		position = 3
 		trigger = {
+			OR = {
+				owns_core_province = 5044
+				UMZ = {
+					AND = {
+						is_subject_of = ROOT
+						ai_attitude = {
+							who = ROOT
+							attitude = attitude_loyal
+						}
+					}
+				}
+			}
+			years_of_income = 0.5
         }
 		effect = {
+			add_years_of_income = -0.5
+			5044 = {
+				add_building = dock
+				add_building = shipyard
+			}
+			country_event = {
+				id = oppia.22
+			}
+			gomic_exit = {
+            	discover_country = ROOT
+            }
+            umzat_islands_area = {
+            	discover_country = ROOT
+            }
+			northern_umzat = {
+				discover_country = ROOT
+			}
+			create_colony_mission_reward = { province = 5016 }
+			hidden_effect = {
+				5016 = {
+					change_culture = ROOT
+					change_religion = ROOT
+				}
+			}
 		}
 		provinces_to_highlight = {
+			province_id = 5044
 		}
 	}
 	tck_new_umzat = {
@@ -33,10 +88,55 @@ tck_slot_1 = {
 		required_missions = { tck_umzatian_shipyards }
 		position = 4
 		trigger = {
+			owns_core_province = 5016
+			navy_size_percentage = 0.75
+			5044 = {
+				has_most_province_trade_power = ROOT
+			}
         }
 		effect = {
+			if = {
+				limit = {
+					MRR = {
+						exists = no
+					}
+				}
+				MRR = {
+					override_country_name = NEW_UMZAT
+				}
+				5016 = {
+					cede_province = MRR
+					add_core = MRR
+				}
+				west_estal_region = {
+					limit = {
+						is_empty = no
+					}
+					add_claim = MRR
+				}
+			}
+			else = {
+				west_estal_region = {
+					limit = {
+						is_empty = no
+					}
+					add_claim = ROOT
+				}
+			}
+			west_estal_region = {
+				limit = {
+					is_empty = no
+				}
+				discover_country = ROOT
+			}
+			add_prestige = 25
+			add_country_modifier = {
+				name = tck_new_lands
+				duration = 3650
+			}
 		}
 		provinces_to_highlight = {
+			province_id = 5016
 		}
 	}
 	tck_carvel_shipbuilding = {
@@ -44,8 +144,25 @@ tck_slot_1 = {
 		required_missions = { tck_new_umzat }
 		position = 5
 		trigger = {
+			dip_tech = 10
+			OR = {
+				advisor = naval_reformer
+				advisor = army_reformer
+			}
+			num_of_owned_provinces_with = {
+				value = 5
+				has_building = shipyard
+			}
         }
 		effect = {
+			random_owned_province = {
+				limit = { has_port = yes }
+				heavy_ship = ROOT
+			}
+			add_country_modifier = {
+				name = tck_carvel_shipbuilding
+				duration = -1
+			}
 		}
 		provinces_to_highlight = {
 		}
@@ -279,10 +396,28 @@ tck_slot_3 = {
 		required_missions = {  } #None
 		position = 3
 		trigger = {
+			is_year = 350
+			5015 = {
+				is_empty = yes
+				has_discovered = ROOT
+			}
         }
 		effect = {
+			create_colony_mission_reward = { province = 5015 }
+			5015 = {
+				add_base_manpower = 1
+				add_base_production = 1
+				add_base_tax = 1
+			}
+			hidden_effect = {
+				5015 = {
+					change_culture = ROOT
+					change_religion = ROOT
+				}
+			}
 		}
 		provinces_to_highlight = {
+			province_id = 5015
 		}
 	}
 	tck_desert_infrastructure = {

@@ -1919,3 +1919,31 @@ lag_troll_tck = {
     naval_forcelimit_modifier = -0.50
     global_trade_power = -0.25
 }
+
+tck_merc_navy = {
+    global_ship_cost = -0.15
+    privateer_efficiency = 0.2
+    admiral_cost = -0.1
+}
+
+tck_trader_navy = {
+    light_ship_power = 0.20
+    trade_efficiency = 0.10
+    galley_power = -0.10
+    transport_cost = 0.10
+}
+
+tck_military_navy = {
+    galley_power = 0.10
+    heavy_ship_power = 0.10
+}
+
+tck_new_lands = {
+    trade_steering = 0.10
+    global_autonomy = -0.05
+}
+
+tck_carvel_shipbuilding = {
+    ship_durability = 0.25
+    heavy_ship_power = 0.10
+}

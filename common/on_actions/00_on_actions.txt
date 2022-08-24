@@ -140,6 +140,14 @@ on_startup = {
 			tag = TCK
 		}
 		set_ruler_flag = MenselSar
+		random_list = {
+			1 = {
+				set_country_flag = Tck_Beastmode_Ai
+			}
+			3 = {
+				#do nothing
+			}
+		}
 	}
 	events = {
 
