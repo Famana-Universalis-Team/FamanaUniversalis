@@ -135,6 +135,12 @@ on_startup = {
 		    modifier = yom_hate_amatan
 		}
 	}
+	if = {
+		limit = {
+			tag = TCK
+		}
+		set_ruler_flag = MenselSar
+	}
 	events = {
 
 		#Used to verify the player's starting country for some achievements
@@ -635,6 +641,31 @@ on_new_monarch = {
 		every_owned_province = {
 			limit = { has_province_modifier = home_of_consort }
 			remove_province_modifier = home_of_consort
+		}
+	}
+	if = {
+		limit = {
+			AND = {
+				tag = TCK
+				has_new_dynasty = yes
+			}
+		}
+		if = {
+			limit = {
+				dynasty = "Sar"
+				NOT = { has_country_modifier = tck_sar_dynasty }
+			}
+			add_country_modifier = {
+				name = tck_sar_dynasty
+				duration = -1
+			}
+		}
+		if = {
+			limit = {
+				NOT = { dynasty = "Sar" }
+				has_country_modifier = tck_sar_dynasty
+			}
+			remove_country_modifier = tck_sar_dynasty
 		}
 	}
 	#if = {

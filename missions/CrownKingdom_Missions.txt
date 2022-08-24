@@ -224,10 +224,16 @@ tck_slot_3 = {
 		required_missions = {  } #None
 		position = 1
 		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = MenselSarDead
+				has_country_flag = SarDead
+			}
         }
 		effect = {
-		}
-		provinces_to_highlight = {
+			add_country_modifier = {
+				name = tck_mourning_mensel
+				duration = 3650
+			}
 		}
 	}
 	tck_the_sar_dynasty = {
@@ -235,10 +241,37 @@ tck_slot_3 = {
 		required_missions = { tck_the_good_king }
 		position = 2
 		trigger = {
+			5062 = {
+				AND = {
+					has_building = fort_15th
+					grown_by_development = 5
+				}
+			}
+			legitimacy = 100
         }
 		effect = {
+			custom_tooltip = SarDynastyModifierTooltip
+			hidden_effect = {
+				add_country_modifier = {
+					name = tck_sar_dynasty
+					duration = -1
+				}
+			}
+			define_advisor = {
+				type = diplomat
+				skill = 2
+				name = "Galivicus Sar"
+				discount = yes
+			}
+			5062 = {
+				add_province_modifier = {
+					name = tck_sar_development
+					duration = 7300
+				}
+			}
 		}
 		provinces_to_highlight = {
+			province_id = 5062
 		}
 	}
 	tck_jol_cema = {

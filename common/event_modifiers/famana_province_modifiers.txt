@@ -326,3 +326,13 @@ zea_owner_of_gadea = {
 lag_more_fish = {
     trade_goods_size = 1
 }
+
+tck_less_fish = {
+    trade_goods_size = -1
+    local_unrest = 1
+}
+
+tck_sar_development = {
+    trade_goods_size = 1
+    production_efficiency = 0.10
+}

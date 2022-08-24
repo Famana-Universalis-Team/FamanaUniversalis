@@ -928,3 +928,103 @@ country_event = {
 #		set_ruler = variable:challengerID
 #	}
 #}
+
+#### TCK MISSIONS
+
+#Laglan Competition
+country_event = {
+	id = oppia.20
+	title = oppia.20.t
+	desc = oppia.20.d
+	picture = SHIP_SAILING_eventPicture
+	fire_only_once = yes
+
+	trigger = {
+		tag = TCK
+		OR = {
+			LAG = {
+				mission_completed = lag_sponsor_fishermen
+			}
+			RES = {
+				mission_completed = lag_sponsor_fishermen
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 4
+	}
+	
+	option = {
+		name = oppia.20.a #Contest them
+		ai_chance = {
+			factor = 1
+		}
+		add_years_of_income = -0.5
+		add_country_modifier = {
+			name = tck_contesting_laglon
+			duration = 3650
+		}
+		add_opinion = {
+			who = LAG
+			modifier = lag_tck_trade_war
+		}
+		reverse_add_opinion = {
+			who = LAG
+			modifier = lag_tck_trade_war
+		}
+		add_casus_belli = {
+			type = cb_trade_conflict
+			target = LAG
+		}
+	}
+
+	option = {
+		name = oppia.20.b #Surrender to them
+		ai_chance = {
+			factor = 1
+		}
+		add_country_modifier = {
+			name = tck_gave_up_fishermen
+			duration = 3650
+		}
+		every_owned_province = {
+			limit = {
+				trade_goods = fish
+			}
+			add_province_modifier = {
+				name = tck_less_fish
+				duration = 7300
+			}
+		}
+	}
+}
+
+#Mensel Sar
+country_event = {
+	id = oppia.21
+	title = oppia.21.t
+	desc = oppia.21.d
+	picture = DEATH_OF_HEIR_eventPicture
+	fire_only_once = yes
+
+	trigger = {
+		tag = TCK
+		NOT = {
+			has_ruler_flag = MenselSar
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = oppia.21.a #Contest them
+		ai_chance = {
+			factor = 1
+		}
+		add_prestige = 10
+		set_country_flag = SarDead
+	}
+}

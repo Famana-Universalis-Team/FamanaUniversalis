@@ -1885,3 +1885,23 @@ lag_oppian_friend = {
     diplomatic_reputation = 1
     galley_power = 0.10
 }
+
+tck_gave_up_fishermen = {
+    trade_efficiency = -0.10
+}
+
+tck_contesting_laglon = {
+    trade_steering = 0.10
+    light_ship_power = 0.10
+}
+
+tck_mourning_mensel = {
+    prestige_decay = -0.5
+    legitimacy = 1
+}
+
+tck_sar_dynasty = {
+    monarch_diplomatic_power = 1
+    monarch_lifespan = 0.15
+    heir_chance = 0.10
+}
