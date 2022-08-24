@@ -52,3 +52,62 @@ country_event = {
         }
 	}
 }
+
+country_event = {
+	id = restema.2
+	title = restema.2.t
+	desc = restema.2.desc
+	picture = FEAST_eventPicture
+	fire_only_once = yes
+    is_triggered_only = yes
+
+	option = { #Restema
+		name = restema.2.a
+		ai_chance = {
+			factor = 1
+		}
+        add_prestige = 25
+	}
+
+    option = { #Resteman Empire
+		name = restema.2.b
+        trigger = {
+            government_rank = 3
+        }
+		ai_chance = {
+			factor = 0
+		}
+        override_country_name = RESTEMAN_EMPIRE
+        add_prestige = 25
+	}
+
+    option = { #Aesoppia
+		name = restema.2.c
+        trigger = {
+            any_owned_province = {
+                superregion = oppia_superregion
+            }
+        }
+		ai_chance = {
+			factor = 0
+		}
+        override_country_name = AESOPPIA
+        add_country_modifier = {
+            name = lag_get_culture_acc
+            duration = -1
+        }
+	}
+
+    option = { #Fenika
+		name = restema.2.d
+        primary_culture = Feniki
+		ai_chance = {
+			factor = 0
+		}
+        override_country_name = FENIKA
+        add_country_modifier = {
+            name = lag_get_culture_conv
+            duration = -1
+        }
+	}
+}

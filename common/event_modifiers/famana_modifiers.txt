@@ -1919,3 +1919,19 @@ lag_troll_tck = {
     naval_forcelimit_modifier = -0.50
     global_trade_power = -0.25
 }
+
+lag_get_culture_conv = {
+    culture_conversion_cost = -0.10
+}
+
+lag_get_culture_acc = {
+    num_accepted_cultures = 1
+}
+
+lag_humiliated = {
+    prestige_decay = 0.01
+}
+
+lag_oppian_intervention = {
+    global_trade_power = 0.15
+}

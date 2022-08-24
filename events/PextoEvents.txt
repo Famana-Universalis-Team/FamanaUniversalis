@@ -863,6 +863,9 @@ country_event = {
 		name = pextoglazia.22.a
 		ai_chance = { factor = 1 }
 		add_historical_rival = PPX
+		PPX = {
+			add_historical_rival = ROOT
+		}
 	}
 }
 

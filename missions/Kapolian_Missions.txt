@@ -105,6 +105,9 @@ kap_4 = { #kinvirel - jasua region path
 					exists = KIN
 				}
 				add_historical_rival = KIN
+				KIN = {
+					add_historical_rival = ROOT
+				}
 			}
 			unnamed_area_31 = {
 				add_devastation = -100

@@ -266,12 +266,41 @@ lag_3 = {
         required_missions = { lag_annex_tegaria }
         position = 10
         trigger = {
-
+            unnamed_pexto_7 = {
+                type = all
+                country_or_non_sovereign_subject_holds = ROOT
+            }
+            maglazios_area = {
+                type = all
+                country_or_non_sovereign_subject_holds = ROOT
+            }
         }
         effect = {
-
+            if = {
+                limit = {
+                    NOT = {
+                        government_rank = 3
+                    }
+                }
+                set_government_rank = 3
+            }
+            unnamed_pexto_5 = {
+                add_permanent_claim = ROOT
+            }
+            unnamed_pexto_9 = {
+                add_permanent_claim = ROOT
+            }
+            unnamed_pexto_6 = {
+                add_permanent_claim = ROOT
+            }
         }
-        #provinces_to_highlight = {}
+        provinces_to_highlight = {
+            NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			OR = {
+                area = unnamed_pexto_7
+                area = maglazios_area
+            }
+        }
     }
 
     lag_lomean_conquest = {
@@ -279,12 +308,32 @@ lag_3 = {
         required_missions = { lag_capture_gineazia }
         position = 11
         trigger = {
-
+            unnamed_pexto_5 = {
+                type = all
+                country_or_non_sovereign_subject_holds = ROOT
+            }
+            unnamed_pexto_9 = {
+                type = all
+                country_or_non_sovereign_subject_holds = ROOT
+            }
+            unnamed_pexto_6 = {
+                type = all
+                country_or_non_sovereign_subject_holds = ROOT
+            }
         }
         effect = {
-
+            pextoglazia_region = {
+                add_permanent_claim = ROOT
+            }
         }
-        #provinces_to_highlight = {}
+        provinces_to_highlight = {
+            NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			OR = {
+                area = unnamed_pexto_5
+                area = unnamed_pexto_9
+                area = unnamed_pexto_6
+            }
+        }
     }
 
     lag_raid_on_pomlen = {
@@ -292,12 +341,21 @@ lag_3 = {
         required_missions = { lag_lomean_conquest }
         position = 12
         trigger = {
-
+            5337 = {
+                owned_by = ROOT
+            }
+            num_of_owned_provinces_with = {
+                value = 12
+                region = pextoglazia_region
+            }
         }
         effect = {
 
         }
-        #provinces_to_highlight = {}
+        provinces_to_highlight = {
+            NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			region = pextoglazia_region
+        }
     }
 
     lag_the_resteman_perspective = {
@@ -653,6 +711,14 @@ lag_4 = {
             arlentan_area = {
                 add_permanent_claim = ROOT
             }
+            if = {
+                limit = {
+                    tag = LAG
+                }
+                unnamed_area_23 = {
+                    add_permanent_claim = ROOT
+                }
+            }
         }
         provinces_to_highlight = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
@@ -674,7 +740,28 @@ lag_4 = {
             }
         }
         effect = {
-
+            add_country_modifier = {
+                name = lag_oppian_intervention
+                duration = 7300
+            }
+            if = {
+                limit = {
+                    exists = OSS
+                }
+                add_historical_rival = OSS
+                OSS = {
+                    add_historical_rival = ROOT
+                }
+            }
+            custom_tooltip = lagMarineArmyTrad
+            if = {
+                limit = {
+                    num_of_marines = 15
+                }
+                hidden_effect = {
+                    army_tradition = 20
+                }
+            }
         }
         provinces_to_highlight = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
@@ -896,14 +983,43 @@ lag_5 = {
         required_missions = { lag_land_in_arlenta }
         position = 12
         trigger = {
-
+            if = {
+                limit = {
+                    NOT = {
+                        tag = RES
+                    }
+                }
+                tag = RES
+            }
+            num_of_owned_provinces_with = {
+                value = 40
+                superregion = oppia_superregion
+            }
         }
         effect = {
-            #PICK BETWEEN RESTEMAN EMPIRE AND AESOPPIA
-            #country_event = {
-            #    id = restema.2
-            #}
+            #PICK NEW NAME
+            country_event = {
+                id = restema.2
+            }
+            custom_tooltip = lagGetBadOppia
+            hidden_effect = {
+                every_known_country = {
+                    limit = {
+                        culture_group = Oppian
+                        NOT = {
+                            tag = ROOT
+                        }
+                    }
+                    add_country_modifier = {
+                        name = lag_humiliated
+                        duration = 18250
+                    }
+                }
+            }
         }
-        #provinces_to_highlight = {}
+        provinces_to_highlight = {
+            NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			superregion = oppia_superregion
+        }
     }
 }

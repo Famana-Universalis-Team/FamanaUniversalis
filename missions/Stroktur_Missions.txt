@@ -1379,6 +1379,9 @@ nafa_1 = {
                 }
                 hidden_effect = {
                     add_historical_rival = ORC
+                    ORC = {
+                        add_historical_rival = ROOT
+                    }
                 }
                 custom_tooltip = nafAddRivalOrdica
             }
@@ -1388,6 +1391,9 @@ nafa_1 = {
                 }
                 hidden_effect = {
                     add_historical_rival = ORS
+                    ORS = {
+                        add_historical_rival = ROOT
+                    }
                 }
                 custom_tooltip = nafAddRivalOrdisa
             }
