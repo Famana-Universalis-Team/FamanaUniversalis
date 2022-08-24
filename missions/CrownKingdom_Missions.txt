@@ -435,39 +435,42 @@ tck_slot_2 = {
 				custom_tooltip = FOCUS_BYPASSED
 			}
 			else = {
-				every_province = {
-					limit = {
-						AND = {
-							OR = {
-								area = mesdool_area
-								area = elorak_area
-							}
-							OR = {
-								owned_by = ROOT
-								controlled_by = ROOT
+				custom_tooltip = ElorakBreakaway
+				hidden_effect = {
+					every_province = {
+						limit = {
+							AND = {
+								OR = {
+									area = mesdool_area
+									area = elorak_area
+								}
+								OR = {
+									owned_by = ROOT
+									controlled_by = ROOT
+								}
 							}
 						}
-					}
-					cede_province = ELR
-					add_core = ELR
-				}
-			}
-			create_subject = {
-				who = ELR
-				subject_type = personal_union
-			}
-			custom_tooltip = OssorShattered
-			hidden_effect = {
-				every_country = {
-					OSS = {
-						release = PREV
+						cede_province = ELR
+						add_core = ELR
 					}
 				}
-			}
-			OSS = {
-				add_country_modifier = {
-					name = tck_shattered_ossor
-					duration = 3650
+				create_subject = {
+					who = ELR
+					subject_type = personal_union
+				}
+				custom_tooltip = OssorShattered
+				hidden_effect = {
+					every_country = {
+						OSS = {
+							release = PREV
+						}
+					}
+				}
+				OSS = {
+					add_country_modifier = {
+						name = tck_shattered_ossor
+						duration = 3650
+					}
 				}
 			}
 		}
