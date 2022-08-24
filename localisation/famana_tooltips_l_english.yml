@@ -393,6 +393,8 @@
  MenselSarDead: "§YMensel Sar§! is dead."
  SarDynastyModifierTooltip: "[Root.GetName] gets '§YThe Sar Dynasty§! until the end of the game, as long as the dynasty is §YSar§!, giving the following effects:\nChance of New Heir: §G+10.0%§!\nMonarch Diplomatic Skill: §G+1.00§!\nAverage Monarch Lifespan: §G+15.0%§!\n"
  lagGetCoastalClaims: "§Y[Root.GetName]§! gains claims on all coastal provinces in the §YOppia§! Superregion."
- LAG_QUANEX_TAKEOVER: "Hostile Takeover"
+ LAG_QUANEX_TAKEOVER: "Hostile Takeover"ream
  lagGetBadOppia: "Every known country of §YOppian§! culture gets '§YOppian Humiliation§!' for §Y50 years§!, giving the following effects:\nPrestige Decay: §R+1.0%§!"
  lagMarineArmyTrad: "If we complete this mission while having at least §Y15§! Marines:\nGain §G20.0§! Army Tradition."
+ CrownKingdomWarning: "If @TCK §YThe Crown Kingdom§! occupies §YElorak§! with at least §Y50% war score§!, they will release the nation of §YElorak§! as their subject."
+ OssorShattered: "@OSS §YOssor§! will release every nation possible."

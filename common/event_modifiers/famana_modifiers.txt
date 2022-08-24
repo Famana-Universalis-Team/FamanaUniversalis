@@ -1963,3 +1963,36 @@ tck_carvel_shipbuilding = {
     ship_durability = 0.25
     heavy_ship_power = 0.10
 }
+
+tck_oppian_flatlands = {
+    global_supply_limit_modifier = 0.20
+}
+
+tck_to_elorak = {
+    siege_blockade_progress = 1
+    land_morale = 0.10
+}
+
+tck_shattered_ossor = {
+    land_morale = -0.25
+    global_unrest = 2
+}
+
+tck_rule_by_example = {
+    global_unrest = -2
+}
+
+tck_oppia_united = {
+    num_accepted_cultures = 3
+}
+
+tck_restore_laglan_rule = {
+    global_missionary_strength = 0.02
+    culture_conversion_cost = -0.33
+}
+
+tck_compete_with_thalassocracy = {
+    galley_power = 0.10
+    transport_power = 0.10
+    allowed_marine_fraction = 0.1
+}

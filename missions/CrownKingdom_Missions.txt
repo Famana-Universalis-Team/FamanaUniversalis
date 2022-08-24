@@ -13,6 +13,9 @@ tck_slot_1 = {
 		trigger = {
 			army_size_percentage = 1
 			has_mil_advisor = yes
+			UMZ = {
+				NOT = { alliance_with = TCK }
+			}
 			if = {
 				limit = {
 					ai = no
@@ -103,6 +106,10 @@ tck_slot_1 = {
 				}
 				MRR = {
 					override_country_name = NEW_UMZAT
+					create_subject = {
+						subject_type = client_march
+						subject = MRR
+					}
 				}
 				5016 = {
 					cede_province = MRR
@@ -159,12 +166,11 @@ tck_slot_1 = {
 				limit = { has_port = yes }
 				heavy_ship = ROOT
 			}
+			add_navy_tradition = 10
 			add_country_modifier = {
 				name = tck_carvel_shipbuilding
 				duration = -1
 			}
-		}
-		provinces_to_highlight = {
 		}
 	}
 	tck_mines_of_fasalep = {
@@ -248,10 +254,45 @@ tck_slot_2 = {
 		required_missions = { tck_restore_umzat }
 		position = 3
 		trigger = {
+			AND = {
+				owns_core_province = 5072
+				owns_core_province = 5069
+			}
+			5066 = {
+				trade_share = {
+					country = ROOT
+					share = 60
+				}
+			}
         }
 		effect = {
+			roplea_area = {
+				add_permanent_claim = ROOT
+			}
+			arma_area = {
+				add_permanent_claim = ROOT
+			}
+			lower_oppia_area = {
+				add_permanent_claim = ROOT
+			}
+			upper_oppia_region = { #cores every uncored province in the region
+				every_province = {
+					limit = {
+						AND = {
+							owned_by = ROOT
+							NOT = { is_core = ROOT }
+						}
+					}
+					add_core = ROOT
+				}
+			}
+			change_government_reform_progress = 50
 		}
 		provinces_to_highlight = {
+			OR = {
+				province_id = 5072
+				province_id = 5069
+			}
 		}
 	}
 
@@ -260,10 +301,37 @@ tck_slot_2 = {
 		required_missions = { tck_reclaim_minor_darlates }
 		position = 5
 		trigger = {
+			owns_core_province = 5047
+			owns_core_province = 5073
+			total_development = 200
+			num_of_cavalry = 6
         }
 		effect = {
+			astom_area = {
+				add_permanent_claim = ROOT
+			}
+			ponaa_area = {
+				add_permanent_claim = ROOT
+			}
+			lyposh_area = {
+				add_permanent_claim = ROOT
+			}
+			effasha_area = {
+				add_permanent_claim = ROOT
+			}
+			fazalep_area = {
+				add_permanent_claim = ROOT
+			}
+			add_country_modifier = {
+				name = tck_oppian_flatlands
+				duration = 5475
+			}
 		}
 		provinces_to_highlight = {
+			OR = {
+				province_id = 5047
+				province_id = 5073
+			}
 		}
 	}
 
@@ -272,10 +340,63 @@ tck_slot_2 = {
 		required_missions = { tck_cross_mountains }
 		position = 6
 		trigger = {
+			owns_core_province = 5081
+			owns_core_province = 5088
+			5066 = {
+				trade_share = {
+					country = ROOT
+					share = 80
+				}
+			}
+			if = {
+				limit = {
+					NUT = {
+						exists = yes
+					}
+				}
+				NUT = {
+					has_spy_network_from = {
+						who = ROOT
+						value = 40
+					}
+				}
+			}
+			if = {
+				limit = {
+					OSS = {
+						alliance_with = NUT
+					}
+				}
+				OSS = {
+					has_spy_network_from = {
+						who = ROOT
+						value = 40
+					}
+				}
+			}
         }
 		effect = {
+			add_casus_belli = {
+				target = NUT
+				type = cb_restore_personal_union
+			}
+			add_country_modifier = {
+				name = tck_to_elorak
+				duration = 3650
+			}
+			hidden_effect = {
+				OSS = {
+					country_event = {
+						id = oppia.23
+					}
+				}
+			}
 		}
 		provinces_to_highlight = {
+			OR = {
+				province_id = 5081
+				province_id = 5088
+			}
 		}
 	}
 
@@ -284,10 +405,76 @@ tck_slot_2 = {
 		required_missions = { tck_restore_nutia }
 		position = 7
 		trigger = {
+			OR = {
+				owns_core_province = 5103
+				NUT = {
+					is_subject_of = ROOT
+				}
+			}
+			OR = {
+				AND = {
+					is_in_war = {
+						war_score = 50
+						defender_leader = OSS
+						attacker_leader = ROOT
+					}
+					controls = 5106
+				}
+				OSS = {
+					NOT = { owns_core_province = 5106 }
+				}
+			}
         }
 		effect = {
+			if = {
+				limit = {
+					OSS = {
+						NOT = { owns_core_province = 5106 }
+					}
+				}
+				custom_tooltip = FOCUS_BYPASSED
+			}
+			else = {
+				every_province = {
+					limit = {
+						AND = {
+							OR = {
+								area = mesdool_area
+								area = elorak_area
+							}
+							OR = {
+								owned_by = ROOT
+								controlled_by = ROOT
+							}
+						}
+					}
+					cede_province = ELK
+				}
+			}
+			create_subject = {
+				who = ELK
+				subject_type = personal_union
+			}
+			custom_tooltip = OssorShattered
+			hidden_effect = {
+				every_country = {
+					OSS = {
+						release = PREV
+					}
+				}
+			}
+			OSS = {
+				add_country_modifier = {
+					name = tck_shattered_ossor
+					duration = 3650
+				}
+			}
 		}
 		provinces_to_highlight = {
+			OR = {
+				province_id = 5103
+				province_id = 5106
+			}
 		}
 	}
 
@@ -296,10 +483,57 @@ tck_slot_2 = {
 		required_missions = { tck_restore_elorak }
 		position = 8
 		trigger = {
+			5124 = {
+				OR = {
+					owned_by = ROOT
+					owner = {
+						is_subject_of = ROOT
+					}
+				}
+			}
+			5123 = {
+				OR = {
+					owned_by = ROOT
+					owner = {
+						is_subject_of = ROOT
+					}
+				}
+			}
+			5121 = {
+				OR = {
+					owned_by = ROOT
+					owner = {
+						is_subject_of = ROOT
+					}
+				}
+			}
+			5119 = {
+				OR = {
+					owned_by = ROOT
+					owner = {
+						is_subject_of = ROOT
+					}
+				}
+			}
+			NOT = {
+				any_country = {
+					primary_culture = Arlentan
+				}
+			}
         }
 		effect = {
+			add_prestige = 20
+			country_event = {
+				id = oppia.24
+			}
 		}
 		provinces_to_highlight = {
+			OR = {
+				province_id = 5124
+				province_id = 5123
+				province_id = 5121
+				province_id = 5119
+			}
 		}
 	}
 
@@ -308,10 +542,44 @@ tck_slot_2 = {
 		required_missions = { tck_invade_arlenta }
 		position = 9
 		trigger = {
+			heoki_area = {
+				OR = {
+					owned_by = ROOT
+					owner = {
+						is_subject_of = ROOT
+					}
+				}
+			}
+			dibata_area = {
+				OR = {
+					owned_by = ROOT
+					owner = {
+						is_subject_of = ROOT
+					}
+				}
+			}
+			num_of_transport = 16
         }
 		effect = {
+			vaximor_area = {
+				add_permanent_claim = ROOT
+			}
+			rishtokay_area =  {
+				add_permanent_claim = ROOT
+			}
+			makykay_area = {
+				add_permanent_claim = ROOT
+			}
+			add_country_modifier = {
+				name = tck_oppia_united
+				duration = -1
+			}
 		}
 		provinces_to_highlight = {
+			OR = {
+				area = heoki_area
+				area = dibata_area
+			}
 		}
 	}
 
@@ -320,10 +588,66 @@ tck_slot_2 = {
 		required_missions = { tck_towards_the_delta }
 		position = 11
 		trigger = {
+			if = {
+				limit = {
+					RES = {
+						exists = yes
+					}
+				}
+				navy_size = RES
+				has_spy_network_in = {
+					who = RES
+					value = 25
+				}
+			}
+			else_if = {
+				limit = {
+					LAG = {
+						exists = yes
+					}
+				}
+				navy_size = LAG
+				has_spy_network_in = {
+					who = LAG
+					value = 25
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						has_dlc = "Wealth of Nations"
+						has_dlc = "Mare Nostrum"
+						has_dlc = "Golden Century"
+					}
+				}
+				5022 = {
+					has_privateer_share_in_trade_node = {
+						who = ROOT
+						share = 15
+					}
+				}
+			}
         }
 		effect = {
+			laglon_region = {
+				add_permanent_claim = ROOT
+			}
+			if = {
+				limit = {
+					has_global_flag = fenikiconvert
+				}
+				add_country_modifier = {
+					name = tck_restore_laglan_rule
+					duration = 7300
+				}
+			}
+			add_country_modifier = {
+				name = tck_compete_with_thalassocracy
+				duration = 3650
+			}
 		}
 		provinces_to_highlight = {
+			province_id = 4982
 		}
 	}
 }

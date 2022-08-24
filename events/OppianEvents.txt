@@ -1059,13 +1059,164 @@ country_event = {
 		}
 	}
 	option = {
-		name = oppia.22.a
+		name = oppia.22.c
 		ai_chance = {
 			factor = 1
 		}
 		add_country_modifier = {
 			name = tck_military_navy
 			duration = -1
+		}
+	}
+}
+
+#Ossor Warning
+country_event = {
+	id = oppia.23
+	title = oppia.23.t
+	desc = oppia.23.d
+	picture = ASSASSINATION_eventPicture
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = oppia.22.a
+		ai_chance = {
+			factor = 1
+		}
+		custom_tooltip = CrownKingdomWarning
+	}
+}
+
+#Fate of Arlenta
+country_event = {
+	id = oppia.24
+	title = oppia.24.t
+	desc = oppia.24.d
+	picture = STREET_SPEECH_eventPicture
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = oppia.24.a
+		ai_chance = {
+			factor = 1
+		}
+		add_years_of_income = 0.5
+		5123 = {
+			add_province_modifier = {
+				name = tck_punished
+				duration = 5475
+			}
+			add_base_manpower = -2
+			add_base_production = -2
+			add_base_production = -2
+		}
+		5121 = {
+			add_province_modifier = {
+				name = tck_new_administration
+				duration = 5475
+			}
+		}
+		5119 = {
+			add_province_modifier = {
+				name = tck_new_administration
+				duration = 5475
+			}
+		}
+		add_country_modifier = {
+			name = tck_rule_by_example
+			duration = 3650
+		}
+	}
+	option = {
+		name = oppia.24.b
+		ai_chance = {
+			factor = 1
+		}
+		add_years_of_income = 0.5
+		5123 = {
+			add_province_modifier = {
+				name = tck_new_administration
+				duration = 5475
+			}
+		}
+		5121 = {
+			add_province_modifier = {
+				name = tck_punished
+				duration = 5475
+			}
+			add_base_manpower = -2
+			add_base_production = -2
+			add_base_production = -2
+		}
+		5119 = {
+			add_province_modifier = {
+				name = tck_new_administration
+				duration = 5475
+			}
+		}
+		add_country_modifier = {
+			name = tck_rule_by_example
+			duration = 3650
+		}
+	}
+	option = {
+		name = oppia.24.c
+		ai_chance = {
+			factor = 1
+		}
+		add_years_of_income = 0.5
+		5123 = {
+			add_province_modifier = {
+				name = tck_new_administration
+				duration = 5475
+			}
+		}
+		5121 = {
+			add_province_modifier = {
+				name = tck_new_administration
+				duration = 5475
+			}
+		}
+		5119 = {
+			add_province_modifier = {
+				name = tck_punished
+				duration = 5475
+			}
+			add_base_manpower = -2
+			add_base_production = -2
+			add_base_production = -2
+		}
+		add_country_modifier = {
+			name = tck_rule_by_example
+			duration = 3650
+		}
+	}
+	option = {
+		name = oppia.24.d
+		ai_chance = {
+			factor = 1
+		}
+		add_prestige = 25
+		add_stability = 1
+		5123 = {
+			add_province_modifier = {
+				name = tck_new_administration
+				duration = 5475
+			}
+		}
+		5121 = {
+			add_province_modifier = {
+				name = tck_new_administration
+				duration = 5475
+			}
+		}
+		5119 = {
+			add_province_modifier = {
+				name = tck_new_administration
+				duration = 5475
+			}
 		}
 	}
 }

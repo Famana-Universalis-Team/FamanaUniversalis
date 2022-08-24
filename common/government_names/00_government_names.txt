@@ -3,6 +3,30 @@
 
 #Heir and consort titles are generally kept simple for clarity unless there is something special in particular that can be used.
 
+oppia_konusate_reform = {
+	rank = {
+		1 = KONUSATE
+		2 = KONUSATE
+		3 = KONUSATE
+	}
+
+	ruler_male = {
+		1 = DARLUS
+		2 = KING
+		3 = EMPEROR
+	}
+
+	ruler_female = {
+		1 = DARLAT
+		2 = QUEEN
+		3 = EMPRESS
+	}
+
+	trigger = {
+		junior_union_with = QUA
+	}
+}
+
 helvania = {
 	rank = {
 		1 = HELVANIA
