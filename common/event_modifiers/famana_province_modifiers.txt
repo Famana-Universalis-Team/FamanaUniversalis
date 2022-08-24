@@ -340,10 +340,11 @@ tck_sar_development = {
 lag_quanex = {
     local_unrest = -5
     local_defensiveness = 0.20
+}
 
 tck_new_administration = {
     local_unrest = 2
-    trade_efficiency = -0.10
+    trade_goods_size = -1
 }
 
 tck_punished = {
