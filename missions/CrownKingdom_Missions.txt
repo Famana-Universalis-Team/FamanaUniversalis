@@ -448,11 +448,12 @@ tck_slot_2 = {
 							}
 						}
 					}
-					cede_province = ELK
+					cede_province = ELR
+					add_core = ELR
 				}
 			}
 			create_subject = {
-				who = ELK
+				who = ELR
 				subject_type = personal_union
 			}
 			custom_tooltip = OssorShattered
