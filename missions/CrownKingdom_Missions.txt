@@ -1,0 +1,528 @@
+tck_slot_1 = {
+	slot = 1
+	has_country_shield = yes
+	ai = yes
+
+	potential = {
+		tag = TCK
+	}
+	tck_restore_umzat = {
+		icon = mission_monarch_in_throne_room
+		required_missions = { tck_the_good_king }
+		position = 2
+		trigger = {
+        }
+		effect = {
+		}
+		provinces_to_highlight = {
+		}
+	}
+	tck_umzatian_shipyards = {
+		icon = mission_galleys_in_port
+		required_missions = { tck_restore_umzat }
+		position = 3
+		trigger = {
+        }
+		effect = {
+		}
+		provinces_to_highlight = {
+		}
+	}
+	tck_new_umzat = {
+		icon = mission_iberian_conquistador
+		required_missions = { tck_umzatian_shipyards }
+		position = 4
+		trigger = {
+        }
+		effect = {
+		}
+		provinces_to_highlight = {
+		}
+	}
+	tck_carvel_shipbuilding = {
+		icon = mission_establish_high_seas_navy
+		required_missions = { tck_new_umzat }
+		position = 5
+		trigger = {
+        }
+		effect = {
+		}
+		provinces_to_highlight = {
+		}
+	}
+	tck_mines_of_fasalep = {
+		icon = mission_sw_torquoise_mining
+		required_missions = { tck_cross_mountains }
+		position = 6
+		trigger = {
+        }
+		effect = {
+		}
+		provinces_to_highlight = {
+		}
+	}
+	tck_vielan_vinyards = {
+		icon = mak_countryside
+		required_missions = { tck_restore_nutia }
+		position = 7
+		trigger = {
+        }
+		effect = {
+		}
+		provinces_to_highlight = {
+		}
+	}
+	tck_take_out_accaci = {
+		icon = mission_noble_council
+		required_missions = { tck_restore_elorak }
+		position = 8
+		trigger = {
+        }
+		effect = {
+		}
+		provinces_to_highlight = {
+		}
+	}
+	tck_reclaim_artefacts = {
+		icon = mission_empire
+		required_missions = { tck_invade_arlenta }
+		position = 9
+		trigger = {
+        }
+		effect = {
+		}
+		provinces_to_highlight = {
+		}
+	}
+	tck_qamon_mercenaries = {
+		icon = mission_indian_stateman
+		required_missions = { } #None
+		position = 10
+		trigger = {
+        }
+		effect = {
+		}
+		provinces_to_highlight = {
+		}
+	}
+	tck_bite_giants = {
+		icon = mission_indian_soldier_elephant
+		required_missions = { tck_qamon_mercenaries }
+		position = 11
+		trigger = {
+        }
+		effect = {
+		}
+		provinces_to_highlight = {
+		}
+	}
+}
+
+tck_slot_2 = {
+	slot = 2
+	has_country_shield = yes
+	ai = yes
+
+	potential = {
+		tag = TCK
+	}
+	tck_reclaim_minor_darlates = {
+		icon = mission_conquer_50_development
+		required_missions = { tck_restore_umzat }
+		position = 3
+		trigger = {
+        }
+		effect = {
+		}
+		provinces_to_highlight = {
+		}
+	}
+
+	tck_cross_mountains = {
+		icon = mission_sw_against_the_desert
+		required_missions = { tck_reclaim_minor_darlates }
+		position = 5
+		trigger = {
+        }
+		effect = {
+		}
+		provinces_to_highlight = {
+		}
+	}
+
+	tck_restore_nutia = {
+		icon = mission_monarch_in_throne_room
+		required_missions = { tck_cross_mountains }
+		position = 6
+		trigger = {
+        }
+		effect = {
+		}
+		provinces_to_highlight = {
+		}
+	}
+
+	tck_restore_elorak = {
+		icon = mission_crusade_for_varna
+		required_missions = { tck_restore_nutia }
+		position = 7
+		trigger = {
+        }
+		effect = {
+		}
+		provinces_to_highlight = {
+		}
+	}
+
+	tck_invade_arlenta = {
+		icon = mission_chinese_general_riding
+		required_missions = { tck_restore_elorak }
+		position = 8
+		trigger = {
+        }
+		effect = {
+		}
+		provinces_to_highlight = {
+		}
+	}
+
+	tck_towards_the_delta = {
+		icon = mission_persian_soldiers
+		required_missions = { tck_invade_arlenta }
+		position = 9
+		trigger = {
+        }
+		effect = {
+		}
+		provinces_to_highlight = {
+		}
+	}
+
+	tck_take_back_laglon = {
+		icon = mission_sea_battles
+		required_missions = { tck_towards_the_delta }
+		position = 11
+		trigger = {
+        }
+		effect = {
+		}
+		provinces_to_highlight = {
+		}
+	}
+}
+
+tck_slot_3 = {
+	slot = 3
+	has_country_shield = yes
+	ai = yes
+
+	potential = {
+		tag = TCK
+	}
+	tck_the_good_king = {
+		icon = persian_king
+		required_missions = {  } #None
+		position = 1
+		trigger = {
+        }
+		effect = {
+		}
+		provinces_to_highlight = {
+		}
+	}
+	tck_the_sar_dynasty = {
+		icon = mission_feast
+		required_missions = { tck_the_good_king }
+		position = 2
+		trigger = {
+        }
+		effect = {
+		}
+		provinces_to_highlight = {
+		}
+	}
+	tck_jol_cema = {
+		icon = mission_invade_island
+		required_missions = {  } #None
+		position = 3
+		trigger = {
+        }
+		effect = {
+		}
+		provinces_to_highlight = {
+		}
+	}
+	tck_desert_infrastructure = {
+		icon = mission_sw_yucca_plants
+		required_missions = { tck_cross_mountains }
+		position = 6
+		trigger = {
+        }
+		effect = {
+		}
+		provinces_to_highlight = {
+		}
+	}
+	tck_eastern_coast = {
+		icon = mak_peace
+		required_missions = { tck_desert_infrastructure }
+		position = 7
+		trigger = {
+        }
+		effect = {
+		}
+		provinces_to_highlight = {
+		}
+	}
+	tck_alakim_river = {
+		icon = mission_ne_birch_bark_canoes
+		required_missions = { tck_restore_elorak }
+		position = 8
+		trigger = {
+        }
+		effect = {
+		}
+		provinces_to_highlight = {
+		}
+	}
+	tck_sea_of_ejeko = {
+		icon = mission_iberian_conquistador
+		required_missions = { tck_alakim_river }
+		position = 8
+		trigger = {
+        }
+		effect = {
+		}
+		provinces_to_highlight = {
+		}
+	}
+	tck_coronation = {
+		icon = mission_empire
+		required_missions = { tck_towards_the_delta tck_provencial_governors }
+		position = 10
+		trigger = {
+        }
+		effect = {
+		}
+		provinces_to_highlight = {
+		}
+	}
+	tck_oppian_hegemony = {
+		icon = mission_unite_home_region
+		required_missions = { tck_coronation }
+		position = 12
+		trigger = {
+        }
+		effect = {
+		}
+		provinces_to_highlight = {
+		}
+	}
+}
+
+tck_slot_4 = {
+	slot = 4
+	has_country_shield = yes
+	ai = yes
+
+	potential = {
+		tag = TCK
+	}
+	tck_crown_army = {
+		icon = mission_phalanx
+		required_missions = { tck_build_up_river }
+		position = 3
+		trigger = {
+        }
+		effect = {
+		}
+		provinces_to_highlight = {
+		}
+	}
+	tck_oppian_siege_weaponry = {
+		icon = mission_ballista
+		required_missions = { tck_crown_army }
+		position = 4
+		trigger = {
+        }
+		effect = {
+		}
+		provinces_to_highlight = {
+		}
+	}
+	tck_new_model_army = {
+		icon = mission_assemble_an_army
+		required_missions = { tck_oppian_siege_weaponry tck_rebuild_temples }
+		position = 5
+		trigger = {
+        }
+		effect = {
+		}
+		provinces_to_highlight = {
+		}
+	}
+	tck_finest_diplomats = {
+		icon = mission_alliances
+		required_missions = { } #None
+		position = 6
+		trigger = {
+        }
+		effect = {
+		}
+		provinces_to_highlight = {
+		}
+	}
+	tck_sar_power = {
+		icon = great_castle
+		required_missions = { tck_finest_diplomats }
+		position = 8
+		trigger = {
+        }
+		effect = {
+		}
+		provinces_to_highlight = {
+		}
+	}
+	tck_provencial_governors = {
+		icon = mission_asian_trader
+		required_missions = { tck_sar_power }
+		position = 9
+		trigger = {
+        }
+		effect = {
+		}
+		provinces_to_highlight = {
+		}
+	}
+	tck_wipe_out_pretenders = {
+		icon = mission_impaled_soldies
+		required_missions = { tck_provencial_governors }
+		position = 11
+		trigger = {
+        }
+		effect = {
+		}
+		provinces_to_highlight = {
+		}
+	}
+}
+
+tck_slot_5 = {
+	slot = 5
+	has_country_shield = yes
+	ai = yes
+
+	potential = {
+		tag = TCK
+	}
+	tck_build_up_river = {
+		icon = mission_colonial
+		required_missions = { tck_the_good_king }
+		position = 2
+		trigger = {
+        }
+		effect = {
+		}
+		provinces_to_highlight = {
+		}
+	}
+	tck_flood_barriers = {
+		icon = mission_hanseatic_city
+		required_missions = { tck_build_up_river }
+		position = 3
+		trigger = {
+        }
+		effect = {
+		}
+		provinces_to_highlight = {
+		}
+	}
+	tck_rebuild_temples = {
+		icon = mission_european_church
+		required_missions = { tck_flood_barriers }
+		position = 4
+		trigger = {
+        }
+		effect = {
+		}
+		provinces_to_highlight = {
+		}
+	}
+	tck_oppian_schism = {
+		icon = pex_oppia_mission
+		required_missions = { tck_rebuild_temples }
+		position = 5
+		trigger = {
+        }
+		effect = {
+		}
+		provinces_to_highlight = {
+		}
+	}
+	tck_reconcile_religion = {
+		icon = mission_religious
+		required_missions = { tck_oppian_schism }
+		position = 6
+		trigger = {
+        }
+		effect = {
+		}
+		provinces_to_highlight = {
+		}
+	}
+	tck_oppian_schools = {
+		icon = mission_scholar_officials
+		required_missions = { tck_finest_diplomats }
+		position = 7
+		trigger = {
+        }
+		effect = {
+		}
+		provinces_to_highlight = {
+		}
+	}
+	tck_oppian_economics = {
+		icon = mission_dominate_home_trade_node
+		required_missions = { tck_oppian_schools }
+		position = 8
+		trigger = {
+        }
+		effect = {
+		}
+		provinces_to_highlight = {
+		}
+	}
+	tck_gates_of_gomic = {
+		icon = mission_establish_high_seas_navy
+		required_missions = { tck_oppian_economics }
+		position = 9
+		trigger = {
+        }
+		effect = {
+		}
+		provinces_to_highlight = {
+		}
+	}
+	tck_ravsho_mercs = {
+		icon = mission_non-western_cavalry_raid
+		required_missions = { } #None
+		position = 10
+		trigger = {
+        }
+		effect = {
+		}
+		provinces_to_highlight = {
+		}
+	}
+	tck_revolutionised_cav = {
+		icon = mission_cossack_cavalry
+		required_missions = { tck_ravsho_mercs }
+		position = 11
+		trigger = {
+        }
+		effect = {
+		}
+		provinces_to_highlight = {
+		}
+	}
+}
