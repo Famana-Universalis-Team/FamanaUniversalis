@@ -1882,8 +1882,8 @@ lag_into_oppia = {
 }
 
 lag_oppian_friend = {
-    diplomatic_reputation = 1
-    galley_power = 0.10
+    diplomats = 1
+    improve_relation_modifier = 0.20
 }
 
 tck_gave_up_fishermen = {

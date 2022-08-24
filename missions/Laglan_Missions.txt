@@ -389,7 +389,7 @@ lag_4 = {
                 }
             }
             add_years_of_owned_provinces_production_income = {
-                years = 5
+                years = 10
                 trigger = {
                     trade_goods = fish
                 }
@@ -679,17 +679,35 @@ lag_5 = {
             any_ally = {
                 capital_scope = {
                     superregion = oppia_superregion
-                    has_opinion = {
-	                    who = ROOT
-	                    value = 150
-                    }
+                }
+                has_opinion = {
+	                who = ROOT
+	                value = 150
                 }
             }
         }
         effect = {
+            if = {
+                limit = {
+                    dip = 6
+                }
+                add_dip_power = 100
+            }
+            else = {
+                change_dip = 1
+            }
             add_country_modifier = {
                 name = lag_oppian_friend
                 duration = 9125
+            }
+            custom_tooltip = lagGetCoastalClaims
+            hidden_effect = {
+                oppia_superregion = {
+                    limit = {
+                        has_port = yes
+                    }
+                    add_claim = ROOT
+                }
             }
         }
         #provinces_to_highlight = {}
