@@ -336,3 +336,8 @@ tck_sar_development = {
     trade_goods_size = 1
     local_production_efficiency = 0.10
 }
+
+lag_quanex = {
+    local_unrest = -5
+    local_defensiveness = 0.20
+}

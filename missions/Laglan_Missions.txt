@@ -20,6 +20,7 @@ lag_1 = {
         }
         effect = {
 
+            #bonus depending on pexto/maxan school
         }
         #provinces_to_highlight = {}
     }
@@ -253,12 +254,28 @@ lag_3 = {
         required_missions = { lag_control_the_channel }
         position = 6
         trigger = {
-
+            owns_core_province = 5066
+            NOT = {
+                exists = TCK
+            }
         }
         effect = {
-
+            5066 = {
+                add_province_modifier = {
+                    name = lag_quanex
+                    duration = -1
+                }
+                change_culture = ROOT
+                change_religion = ROOT
+            }
+            add_treasury = 500
         }
-        #provinces_to_highlight = {}
+        provinces_to_highlight = {
+            NOT = {
+                owned_by = ROOT
+            }
+            province_id = 5066
+        }
     }
 
     lag_capture_gineazia = {
