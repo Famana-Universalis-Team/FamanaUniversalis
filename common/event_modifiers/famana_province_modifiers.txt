@@ -352,3 +352,13 @@ tck_punished = {
     local_tax_modifier = 0.15
     local_production_efficiency = -0.25
 }
+
+tck_fasalep_mines = {
+    trade_goods_size = 1
+    local_production_efficiency = 0.10
+}
+
+tck_vielan_vinyards = {
+    trade_goods_size = 1
+    local_production_efficiency = 0.10
+}

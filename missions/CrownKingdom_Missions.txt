@@ -94,7 +94,7 @@ tck_slot_1 = {
 			owns_core_province = 5016
 			navy_size_percentage = 0.75
 			5044 = {
-				has_most_province_trade_power = ROOT
+				is_strongest_trade_power = ROOT
 			}
         }
 		effect = {
@@ -178,10 +178,48 @@ tck_slot_1 = {
 		required_missions = { tck_cross_mountains }
 		position = 6
 		trigger = {
+			5059 = {
+				AND = {
+					owned_by = ROOT
+					has_building = marketplace
+					has_building = workshop
+					grown_by_development = 3
+				}
+			}
         }
 		effect = {
+			5059 = {
+				add_province_modifier = {
+					name = tck_fasalep_mines
+					duration = -1
+				}
+				add_base_production = 1
+			}
+			5047 = {
+				change_trade_goods = iron
+				add_base_production = 1
+			}
+			5083 = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_base_production = 1
+			}
+			5084 = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_base_production = 1
+			}
+			5056 = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_base_production = 1
+			}
 		}
 		provinces_to_highlight = {
+			province_id = 5059
 		}
 	}
 	tck_vielan_vinyards = {
@@ -189,10 +227,35 @@ tck_slot_1 = {
 		required_missions = { tck_restore_nutia }
 		position = 7
 		trigger = {
+			5102 = {
+				AND = {
+					owned_by = ROOT
+					has_building = manufactory
+					grown_by_development = 3
+				}
+			}
         }
 		effect = {
+			5102 = {
+				add_province_modifier = {
+					name = tck_vielan_vinyards
+					duration = -1
+				}
+				add_base_production = 1
+			}
+			5103 = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_base_production = 1
+			}
+			add_country_modifier = {
+				name = tck_wine_courtroom
+				duration = 5475
+			}
 		}
 		provinces_to_highlight = {
+			province_id = 5102
 		}
 	}
 	tck_take_out_accaci = {
@@ -200,10 +263,25 @@ tck_slot_1 = {
 		required_missions = { tck_restore_elorak }
 		position = 8
 		trigger = {
+			OSS = {
+				exists = no
+			}
+			NOT = {
+				any_country = {
+					dynasty = "Accaci"
+				}
+			}
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 10
+				culture = Ossori
+			}
         }
 		effect = {
-		}
-		provinces_to_highlight = {
+			add_prestige = 20
+			add_country_modifier = {
+				name = tck_only_imperial_family
+				duration = 3650
+			}
 		}
 	}
 	tck_reclaim_artefacts = {
@@ -211,10 +289,12 @@ tck_slot_1 = {
 		required_missions = { tck_invade_arlenta }
 		position = 9
 		trigger = {
+			prestige = 50
+			has_adm_advisor = yes
         }
 		effect = {
-		}
-		provinces_to_highlight = {
+			custom_tooltip = ArtefactsSearch
+			set_country_flag = TCKsearchingforartefacts
 		}
 	}
 	tck_qamon_mercenaries = {

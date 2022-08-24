@@ -1996,3 +1996,31 @@ tck_compete_with_thalassocracy = {
     transport_power = 0.10
     allowed_marine_fraction = 0.1
 }
+
+tck_wine_courtroom = {
+    advisor_cost = -0.10
+    prestige_decay = -0.05
+    heir_chance = 0.10
+}
+
+tck_only_imperial_family = {
+    legitimacy = 1
+}
+
+tck_sword_of_astom = {
+    discipline = 0.05
+    war_exhaustion = -0.10
+    mercenary_cost = 0.10
+}
+
+tck_gallagums_urn = {
+    diplomatic_reputation = 2
+    province_warscore_cost = -0.10
+    ae_impact = 0.15
+}
+
+tck_imperial_standard = {
+    governing_capacity_modifier = 0.25
+    core_creation = -0.10
+    global_unrest = 2
+}

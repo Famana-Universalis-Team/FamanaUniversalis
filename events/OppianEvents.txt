@@ -1221,4 +1221,145 @@ country_event = {
 	}
 }
 
+#Sword of Astom discovered
+country_event = {
+	id = oppia.25
+	title = oppia.25.t
+	desc = oppia.25.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	fire_only_once = yes
+	
+	trigger = {
+		has_country_flag = searchingForAstom
+	}
+
+	mean_time_to_happen = {
+		years = 1
+	}
+
+	immediate = {
+		random_province = {
+			limit = {
+				owner = {
+					OR = {
+						tag = ROOT
+						is_subject_of = ROOT
+					}
+				}
+			}
+			save_event_target_as = relic_event_target
+		}
+	}
+
+	goto = relic_event_target
+	
+	option = {
+		name = oppia.25.a
+		ai_chance = {
+			factor = 1
+		}
+		clr_country_flag = searchingForAstom
+		clr_country_flag = TCKsearchingforartefacts
+		add_legitimacy = 10
+		add_country_modifier = {
+			name = tck_sword_of_astom
+			duration = -1
+		}
+	}
+}
+
+#Galagum's Urn discovered
+country_event = {
+	id = oppia.26
+	title = oppia.26.t
+	desc = oppia.26.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	fire_only_once = yes
+	
+	trigger = {
+		has_country_flag = searchingForGalagum
+	}
+
+	mean_time_to_happen = {
+		years = 1
+	}
+
+	immediate = {
+		random_province = {
+			limit = {
+				owner = {
+					OR = {
+						tag = ROOT
+						is_subject_of = ROOT
+					}
+				}
+			}
+			save_event_target_as = relic_event_target
+		}
+	}
+
+	goto = relic_event_target
+	
+	option = {
+		name = oppia.26.a
+		ai_chance = {
+			factor = 1
+		}
+		clr_country_flag = searchingForGalagum
+		clr_country_flag = TCKsearchingforartefacts
+		add_legitimacy = 10
+		add_country_modifier = {
+			name = tck_gallagums_urn
+			duration = -1
+		}
+	}
+}
+
+#Imperial Standard
+country_event = {
+	id = oppia.27
+	title = oppia.27.t
+	desc = oppia.27.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	fire_only_once = yes
+	
+	trigger = {
+		has_country_flag = searchingForStandard
+	}
+
+	mean_time_to_happen = {
+		years = 1
+	}
+
+	immediate = {
+		random_province = {
+			limit = {
+				owner = {
+					OR = {
+						tag = ROOT
+						is_subject_of = ROOT
+					}
+				}
+			}
+			save_event_target_as = relic_event_target
+		}
+	}
+
+	goto = relic_event_target
+	
+	option = {
+		name = oppia.27.a
+		ai_chance = {
+			factor = 1
+		}
+		clr_country_flag = searchingForStandard
+		clr_country_flag = TCKsearchingforartefacts
+		add_legitimacy = 10
+		add_country_modifier = {
+			name = tck_imperial_standard
+			duration = -1
+		}
+	}
+}
+
 #### / TCK MISSIONS

@@ -863,4 +863,82 @@ country_decisions = {
 			factor = 1
 		}
     }
+
+    tck_search_blade_of_astom = {
+        potential = {
+            has_country_flag = TCKsearchingforartefacts
+            NOT = {
+                OR = {
+                    has_country_flag = searchingForAstom
+                    has_country_flag = searchingForGalagum
+                    has_country_flag = searchingForStandard
+                }
+            }
+		}
+		allow = {
+			years_of_income = 0.25
+            manpower = 2
+		}
+		effect = {
+			add_years_of_income = -0.25
+            add_manpower = -2
+            custom_tooltip = search_for_astom
+            set_country_flag = searchingForAstom
+		}
+		ai_will_do = {
+			factor = 1
+		}
+    }
+
+    tck_search_galagums_urn = {
+        potential = {
+            has_country_flag = TCKsearchingforartefacts
+            NOT = {
+                OR = {
+                    has_country_flag = searchingForAstom
+                    has_country_flag = searchingForGalagum
+                    has_country_flag = searchingForStandard
+                }
+            }
+		}
+		allow = {
+			years_of_income = 0.25
+            manpower = 2
+		}
+		effect = {
+			add_years_of_income = -0.25
+            add_manpower = -2
+            custom_tooltip = search_for_galagum
+            set_country_flag = searchingForGalagum
+		}
+		ai_will_do = {
+			factor = 1
+		}
+    }
+
+    tck_search_imperial_standard = {
+        potential = {
+            has_country_flag = TCKsearchingforartefacts
+            NOT = {
+                OR = {
+                    has_country_flag = searchingForAstom
+                    has_country_flag = searchingForGalagum
+                    has_country_flag = searchingForStandard
+                }
+            }
+		}
+		allow = {
+			years_of_income = 0.25
+            manpower = 2
+		}
+		effect = {
+			add_years_of_income = -0.25
+            add_manpower = -2
+            custom_tooltip = search_for_standard
+            set_country_flag = searchingForStandard
+		}
+		ai_will_do = {
+			factor = 1
+		}
+    }
 }

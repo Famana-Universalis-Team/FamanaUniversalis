@@ -1933,8 +1933,8 @@
  oppia.22.t:0 "The Purpose of our Navy"
  oppia.22.d:0 "With our control over Umzatia, we have to choose a reason for our Grand navy to exist. Traditionally, Laglon controlled the Quanex strait with their superior ships, to the point that many people would consider them a navy with a state. The Crown has however chosen to spend its money on competing, with the following doctrine - "
  oppia.22.a:0 "Hire specialised Mercenary Fleets for each situation."
- oppia.22.b:b "Build a fleet for trading purposes."
- oppia.22.c:c "Build a fleet for military projection"
+ oppia.22.b:0 "Build a fleet for trading purposes."
+ oppia.22.c:0 "Build a fleet for military projection"
 
  oppia.23.t:0 "The Hubris of the Quanexites"
  oppia.23.d:0 "We have been idle for too long, as we watched the Crown Kingdom cut down nation after nation in their delusional dream to restore the Oppian Empire. It is obvious that they want to restore many of the Konusates - the old Imperial Provinces - one of which was Elorak. We cannot let them get the better of us!"
@@ -1946,3 +1946,15 @@
  oppia.24.b:0 "Destroy Arlen, the new and artificial city."
  oppia.24.c:0 "Burn Neches, the largest city."
  oppia.24.d:0 "Who said anything about razing?"
+
+ oppia.25.t:0 "Rediscovery of the Sword of Astom!"
+ oppia.25.d:0 "We have finally been able to find the Sword of Astom in [relic_event_target.GetName]. This was the legendary sword of the Oppian Emperors which went missing in the chaos of post-collapse Oppia. How it ended up here we can only speculate, but at last we can bring it home."
+ oppia.25.a:0 "A fine addition to our collection."
+
+ oppia.26.t:0 "Rediscovery of Galagum's Urn!"
+ oppia.26.d:0 "We have finally been able to find Galagum's Urn in [relic_event_target.GetName]. This was the urn containing the ashes of legendary diplomat Galagum Accaci which went missing in the chaos of post-collapse Oppia. How it ended up here we can only speculate, but at last we can bring it home."
+ oppia.26.a:0 "A fine addition to our collection."
+
+ oppia.27.t:0 "Rediscovery of the First Imperial Banner!"
+ oppia.27.d:0 "We have finally been able to find the First Imperial Banner in [relic_event_target.GetName]. This was the flag containing the first ever known use of the 'Oppian Symbol' which went missing in the chaos of post-collapse Oppia. How it ended up here we can only speculate, but at last we can bring it home."
+ oppia.27.a:0 "A fine addition to our collection."
