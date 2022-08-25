@@ -1659,7 +1659,7 @@ orc_religious_debate = {
 
 orc_one_faith = {
     global_missionary_strength = 0.02
-    monthly_piety = 0.05
+    monthly_piety = 0.01
 }
 
 destr_encourage_settlement = {
@@ -2023,4 +2023,22 @@ tck_imperial_standard = {
     governing_capacity_modifier = 0.25
     core_creation = -0.10
     global_unrest = 2
+}
+
+lag_seizeure_of_maglazios = {
+    monthly_piety = 0.005
+    technology_cost = -0.05
+}
+
+lag_enlisting_locals = {
+    manpower_recovery_speed = 0.20
+}
+
+lag_butcher_of_glazia = {
+    discipline = 0.10
+}
+
+lag_forest_pioneers = {
+    colonists = 1
+    global_colonial_growth = 10
 }

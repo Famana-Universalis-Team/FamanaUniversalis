@@ -362,3 +362,8 @@ tck_vielan_vinyards = {
     trade_goods_size = 1
     local_production_efficiency = 0.10
 }
+
+lag_a_glazian_welcome = {
+    local_core_creation = -0.25
+    local_unrest = -3
+}

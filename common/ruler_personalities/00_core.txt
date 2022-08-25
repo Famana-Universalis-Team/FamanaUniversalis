@@ -99,6 +99,13 @@ just_personality = {
 		}
 	}
 
+	chance = {
+		modifier = {
+			factor = 4
+			mission_completed = lag_feyel_and_woch
+		}
+	}
+
 	easy_war_chance_multiplier = 0.5
 	fair_fights = yes
 	

@@ -16,7 +16,8 @@ lag_1 = {
         icon = mission_ottoman_harem
         required_missions = { }
         trigger = {
-
+            philosopher = 2
+            
         }
         effect = {
 
@@ -26,7 +27,7 @@ lag_1 = {
     }
 
     lag_sense_of_unity = {
-        icon = secure_the_republic
+        icon = mission_novgorod_the_great
         required_missions = { lag_feniki_culture }
         trigger = {
 
@@ -38,11 +39,11 @@ lag_1 = {
     }
 
     lag_beyond_the_highlands = {
-        icon = secure_the_republic
+        icon = mission_collect_yasak
         required_missions = { lag_feyel_and_woch }
         position = 4
         trigger = {
-
+            
         }
         effect = {
 
@@ -51,7 +52,7 @@ lag_1 = {
     }
 
     lag_settle_the_frontier = {
-        icon = secure_the_republic
+        icon = mission_clear_the_delta
         required_missions = { lag_beyond_the_highlands }
         position = 5
         trigger = {
@@ -64,7 +65,7 @@ lag_1 = {
     }
 
     lag_shores_of_the_olivinar = {
-        icon = secure_the_republic
+        icon = mission_unite_coromandel
         required_missions = { lag_settle_the_frontier }
         position = 7
         trigger = {
@@ -77,7 +78,7 @@ lag_1 = {
     }
 
     lag_commandeer_the_channel = {
-        icon = secure_the_republic
+        icon = mission_divert_trade_from_bengal
         required_missions = { lag_shores_of_the_olivinar lag_the_war_for_walara }
         position = 11
         trigger = {
@@ -104,16 +105,37 @@ lag_2 = {
     has_country_shield = yes
 
     lag_feyel_and_woch = {
-        icon = secure_the_republic
+        icon = mission_gharbianss
         required_missions = {lag_sense_of_unity }
         position = 3
         trigger = {
-
+            stability = 2
+            feyel_area = {
+                type = all
+                owned_by = ROOT
+                NOT = {
+                    nationalism	= 1
+                }
+            }
         }
         effect = {
-
+            custom_tooltip = lagGetJustPers
+            add_country_modifier = {
+                name = lag_forest_pioneers
+                duration = -1
+            }
+            west_estal_region = {
+                add_permanent_claim = ROOT
+                discover_country = ROOT
+            }
+            porlodya_region = {
+                discover_country = ROOT
+            }
         }
-        #provinces_to_highlight = {}
+        provinces_to_highlight = {
+            NOT = {owned_by = ROOT}
+            area = feyel_area
+        }
     }
 
     lag_face_the_barbarians = {
@@ -121,12 +143,22 @@ lag_2 = {
         required_missions = {lag_feyel_and_woch }
         position = 5
         trigger = {
-
+            west_estal_region = {
+				type = all
+                OR = {
+                    country_or_non_sovereign_subject_holds = ROOT
+                    is_empty = yes
+                }
+			}
         }
         effect = {
 
         }
-        #provinces_to_highlight = {}
+        provinces_to_highlight = {
+            NOT = { country_or_non_sovereign_subject_holds = ROOT }
+            NOT = { is_empty = yes }
+            region = west_estal_region
+        }
     }
 
     lag_expel_hasia = {
@@ -143,7 +175,7 @@ lag_2 = {
     }
 
     lag_dominate_west_estal = {
-        icon = secure_the_republic
+        icon = mission_heart_of_the_hansa
         required_missions = {lag_expel_hasia lag_shores_of_the_olivinar }
         position = 8
         trigger = {
@@ -156,7 +188,7 @@ lag_2 = {
     }
 
     lag_the_war_for_walara = {
-        icon = secure_the_republic
+        icon = mission_raid_on_valencia
         required_missions = { lag_annex_tegaria }
         position = 10
         trigger = {
@@ -196,7 +228,7 @@ lag_3 = {
     has_country_shield = yes
 
     lag_deal_with_the_guilds = {
-        icon = secure_the_republic
+        icon = mission_dominate_home_trade_node
         required_missions = { }
         position = 2
         trigger = {
@@ -279,7 +311,7 @@ lag_3 = {
     }
 
     lag_capture_gineazia = {
-        icon = secure_the_republic
+        icon = mission_religious
         required_missions = { lag_annex_tegaria }
         position = 10
         trigger = {
@@ -295,11 +327,35 @@ lag_3 = {
         effect = {
             if = {
                 limit = {
+                    religion = lathvy
+                }
+                add_country_modifier = {
+                    name = lag_seizeure_of_maglazios
+                    duration = 5475
+                }
+            }
+            else = {
+                add_prestige = 10
+            }
+            if = {
+                limit = {
                     NOT = {
                         government_rank = 3
                     }
                 }
                 set_government_rank = 3
+            }
+            unnamed_pexto_7 = {
+                add_province_modifier = {
+                    name = lag_a_glazian_welcome
+                    duration = 3650
+                }
+            }
+            maglazios_area = {
+                add_province_modifier = {
+                    name = lag_a_glazian_welcome
+                    duration = 3650
+                }
             }
             unnamed_pexto_5 = {
                 add_permanent_claim = ROOT
@@ -321,7 +377,7 @@ lag_3 = {
     }
 
     lag_lomean_conquest = {
-        icon = secure_the_republic
+        icon = mission_cathedral_cities
         required_missions = { lag_capture_gineazia }
         position = 11
         trigger = {
@@ -339,9 +395,26 @@ lag_3 = {
             }
         }
         effect = {
+            add_army_professionalism = 0.05
+            add_country_modifier = {
+                name = lag_enlisting_locals
+                duration = 7300
+            }
             pextoglazia_region = {
                 add_permanent_claim = ROOT
             }
+            if = {
+                limit = {
+                    exists = PEX
+                }
+                hidden_effect = {
+                    add_ruler_modifier = {
+                        name = lag_butcher_of_glazia
+                        duration = -1
+                    }
+                }
+            }
+            custom_tooltip = lagIfPextoExists
         }
         provinces_to_highlight = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
@@ -354,7 +427,7 @@ lag_3 = {
     }
 
     lag_raid_on_pomlen = {
-        icon = secure_the_republic
+        icon = mission_crusade_for_varna
         required_missions = { lag_lomean_conquest }
         position = 12
         trigger = {
@@ -367,7 +440,7 @@ lag_3 = {
             }
         }
         effect = {
-
+            #add an event
         }
         provinces_to_highlight = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
@@ -376,7 +449,7 @@ lag_3 = {
     }
 
     lag_the_resteman_perspective = {
-        icon = secure_the_republic
+        icon = mission_rb_angevin_kingdom
         required_missions = { lag_raid_on_pomlen }
         position = 14
         trigger = {
@@ -498,7 +571,7 @@ lag_4 = {
     }
 
     lag_develop_the_coastline = {
-        icon = secure_the_republic
+        icon = mission_rb_conquer_brittany
         required_missions = { lag_sponsor_fishermen lag_build_ports }
         trigger = {
             num_of_owned_provinces_with = {
@@ -544,7 +617,7 @@ lag_4 = {
     }
 
     lag_expand_the_inland_cities = {
-        icon = mission_industrialize_bengal
+        icon = mission_rb_prospect_for_coal
         required_missions = { lag_develop_the_coastline}
         trigger = {
             share_of_starting_income = 2.0
@@ -639,10 +712,13 @@ lag_4 = {
                 limit = {
                     exists = TCK
                 }
-                TCK = {
-                    add_country_modifier = {
-                        name = lag_troll_tck
-                        duration = 3650
+                custom_tooltip = lagTCKtroll
+                hidden_effect = {
+                    TCK = {
+                        add_country_modifier = {
+                            name = lag_troll_tck
+                            duration = 3650
+                        }
                     }
                 }
             }
@@ -662,7 +738,7 @@ lag_4 = {
     }
 
     lag_subjugate_cegon = {
-        icon = secure_the_republic
+        icon = mission_develop_cordoba
         position = 7
         required_missions = { }
         trigger = {
@@ -688,7 +764,7 @@ lag_4 = {
     }
 
     lag_annex_tegaria = {
-        icon = secure_the_republic
+        icon = mission_turning_the_tables
         position = 9
         required_missions = { lag_subjugate_cegon }
         trigger = {
@@ -791,7 +867,7 @@ lag_4 = {
     }
 
     lag_secure_new_pexamol = {
-        icon = secure_the_republic
+        icon = mission_corsairs_of_the_north_sea
         position = 13
         required_missions = { lag_raid_on_pomlen }
         trigger = {
@@ -894,7 +970,7 @@ lag_5 = {
     }
 
     lag_the_unsinkable_fleet = {
-        icon = secure_the_republic
+        icon = mission_look_west
         required_missions = { lag_build_ports }
         position = 4
         trigger = {
@@ -914,7 +990,7 @@ lag_5 = {
     }
 
     lag_improve_naval_leadership = {
-        icon = secure_the_republic
+        icon = mission_danzig_or_war
         required_missions = { lag_the_unsinkable_fleet }
         position = 6
         trigger = {
@@ -930,7 +1006,7 @@ lag_5 = {
     }
 
     lag_friends_in_oppia = {
-        icon = secure_the_republic
+        icon = mission_noble_council
         required_missions = { }
         position = 8
         trigger = {
@@ -972,7 +1048,7 @@ lag_5 = {
     }
 
     lag_into_the_fray = {
-        icon = secure_the_republic
+        icon = mission_subdue_rajputana
         required_missions = { lag_friends_in_oppia }
         position = 10
         trigger = {
@@ -996,7 +1072,7 @@ lag_5 = {
     }
     
     lag_overshadow_oppia = {
-        icon = secure_the_republic
+        icon = mission_subdue_the_afghans
         required_missions = { lag_land_in_arlenta }
         position = 12
         trigger = {
