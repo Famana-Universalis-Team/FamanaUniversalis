@@ -1339,4 +1339,170 @@ country_decisions = {
 			factor = 1
 		}
 	}
+	colonize_alqyl = {
+		potential = {
+			OR = {
+				has_country_flag = TCKdesert_modernised
+				overlord = {
+					has_country_flag = TCKdesert_modernised
+				}
+			}
+			OR = {
+				7979 = {
+					is_empty = yes
+				}
+				7980 = {
+					is_empty = yes
+				}
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 5091
+				province_id = 5093
+			}
+		}
+		allow = {
+			dip_tech = 10
+			###is_free_or_tributary_trigger = yes
+			is_at_war = no
+			mil_power = 50
+			AND = {
+				owns_core_province = {
+					province_id = 5091
+				}
+				owns_core_province = {
+					province_id = 5093
+				}
+			}
+		}
+		effect = {
+			5091 = {
+				cede_province = ROOT
+				change_religion	= ROOT
+				change_culture = ROOT
+				
+			}
+			5093 = {
+				cede_province = ROOT
+				change_religion	= ROOT
+				change_culture = ROOT
+				
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	colonize_asetli = {
+		potential = {
+			OR = {
+				has_country_flag = TCKeast_coast
+				overlord = {
+					has_country_flag = TCKeast_coast
+				}
+			}
+			5545 = {
+				is_empty = yes
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 5040
+			}
+		}
+		allow = {
+			dip_tech = 12
+			###is_free_or_tributary_trigger = yes
+			is_at_war = no
+			mil_power = 50
+			owns_core_province = 5040
+		}
+		effect = {
+			5545 = {
+				cede_province = ROOT
+				change_religion	= ROOT
+				change_culture = ROOT
+				
+			}
+			5546 = {
+				cede_province = ROOT
+				change_religion	= ROOT
+				change_culture = ROOT
+				
+			}
+			5547 = {
+				cede_province = ROOT
+				change_religion	= ROOT
+				change_culture = ROOT
+				
+			}
+			5551 = {
+				cede_province = ROOT
+				change_religion	= ROOT
+				change_culture = ROOT
+				
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	colonize_yarong = {
+		potential = {
+			OR = {
+				has_country_flag = TCKeast_coast
+				overlord = {
+					has_country_flag = TCKeast_coast
+				}
+			}
+			8163 = {
+				is_empty = yes
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 5545
+			}
+		}
+		allow = {
+			dip_tech = 15
+			###is_free_or_tributary_trigger = yes
+			is_at_war = no
+			mil_power = 50
+			owns_core_province = 5545
+		}
+		effect = {
+			5163 = {
+				discover_country = ROOT
+			}
+			5543 = {
+				cede_province = ROOT
+				change_religion	= ROOT
+				change_culture = ROOT
+				
+			}
+			8161 = {
+				cede_province = ROOT
+				change_religion	= ROOT
+				change_culture = ROOT
+				
+			}
+			8162 = {
+				cede_province = ROOT
+				change_religion	= ROOT
+				change_culture = ROOT
+				
+			}
+			8163 = {
+				cede_province = ROOT
+				change_religion	= ROOT
+				change_culture = ROOT
+				
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
 }

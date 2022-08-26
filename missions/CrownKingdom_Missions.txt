@@ -302,10 +302,10 @@ tck_slot_1 = {
 		required_missions = { } #None
 		position = 10
 		trigger = {
+			always = no
         }
 		effect = {
-		}
-		provinces_to_highlight = {
+			custom_tooltip = naf_agm_unfinished_tooltip
 		}
 	}
 	tck_bite_giants = {
@@ -313,10 +313,10 @@ tck_slot_1 = {
 		required_missions = { tck_qamon_mercenaries }
 		position = 11
 		trigger = {
+			always = no
         }
 		effect = {
-		}
-		provinces_to_highlight = {
+			custom_tooltip = naf_agm_unfinished_tooltip
 		}
 	}
 }
@@ -833,10 +833,135 @@ tck_slot_3 = {
 		required_missions = { tck_cross_mountains }
 		position = 6
 		trigger = {
+			num_of_owned_provinces_with = {
+				value = 5
+				grown_by_development = 3
+				region = lower_oppia_region
+			}
+			num_of_owned_provinces_with = {
+				value = 2
+				has_building = courthouse
+				region = lower_oppia_region
+			}
         }
 		effect = {
+			set_country_flag = TCKdesert_modernised
+			custom_tooltip = ColonisteAlqyl
+			5049 = {
+				if = {
+					limit = {
+						OR = {
+							owned_by = ROOT
+							owner = {
+								is_subject_of = ROOT
+							}
+						}
+					}
+					add_province_modifier = {
+						name = tck_desert_cities
+						duration = -1
+					}
+				}
+			}
+			5056 = {
+				if = {
+					limit = {
+						OR = {
+							owned_by = ROOT
+							owner = {
+								is_subject_of = ROOT
+							}
+						}
+					}
+					add_province_modifier = {
+						name = tck_desert_cities
+						duration = -1
+					}
+				}
+			}
+			5230 = {
+				if = {
+					limit = {
+						OR = {
+							owned_by = ROOT
+							owner = {
+								is_subject_of = ROOT
+							}
+						}
+					}
+					add_province_modifier = {
+						name = tck_desert_cities
+						duration = -1
+					}
+				}
+			}
+			5049 = {
+				if = {
+					limit = {
+						OR = {
+							owned_by = ROOT
+							owner = {
+								is_subject_of = ROOT
+							}
+						}
+					}
+					add_province_modifier = {
+						name = tck_desert_cities
+						duration = -1
+					}
+				}
+			}
+			5099 = {
+				if = {
+					limit = {
+						OR = {
+							owned_by = ROOT
+							owner = {
+								is_subject_of = ROOT
+							}
+						}
+					}
+					add_province_modifier = {
+						name = tck_desert_cities
+						duration = -1
+					}
+				}
+			}
+			5091 = {
+				if = {
+					limit = {
+						OR = {
+							owned_by = ROOT
+							owner = {
+								is_subject_of = ROOT
+							}
+						}
+					}
+					add_province_modifier = {
+						name = tck_desert_cities
+						duration = -1
+					}
+				}
+			}
+			5059 = {
+				if = {
+					limit = {
+						OR = {
+							owned_by = ROOT
+							owner = {
+								is_subject_of = ROOT
+							}
+						}
+					}
+					add_province_modifier = {
+						name = tck_desert_cities
+						duration = -1
+					}
+				}
+			}
 		}
 		provinces_to_highlight = {
+			region = lower_oppia_region
 		}
 	}
 	tck_eastern_coast = {
@@ -846,6 +971,8 @@ tck_slot_3 = {
 		trigger = {
         }
 		effect = {
+			set_country_flag = TCKeast_coast
+			custom_tooltip = Colonise_Yarong
 		}
 		provinces_to_highlight = {
 		}
@@ -866,10 +993,10 @@ tck_slot_3 = {
 		required_missions = { tck_alakim_river }
 		position = 8
 		trigger = {
+			always = no
         }
 		effect = {
-		}
-		provinces_to_highlight = {
+			custom_tooltip = naf_agm_unfinished_tooltip
 		}
 	}
 	tck_coronation = {

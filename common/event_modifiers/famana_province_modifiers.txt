@@ -367,3 +367,8 @@ lag_a_glazian_welcome = {
     local_core_creation = -0.25
     local_unrest = -3
 }
+
+tck_desert_cities = {
+    supply_limit_modifier = 0.10
+    province_trade_power_modifier = 0.10
+}
