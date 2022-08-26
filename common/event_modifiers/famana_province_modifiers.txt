@@ -377,3 +377,8 @@ lag_esmekeed = {
     local_production_efficiency = 0.20
     allowed_num_of_buildings = 1
 }
+
+lag_convert_to_feniki = {
+    local_unrest = 10
+    local_missionary_strength = 0.03
+}
