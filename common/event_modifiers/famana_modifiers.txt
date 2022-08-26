@@ -121,8 +121,8 @@ desert_empire = {
 }
 
 restema_culture = {
-	num_accepted_cultures = 3
-    culture_conversion_cost = -0.25
+	num_accepted_cultures = 2
+    culture_conversion_cost = -0.15
 }
 
 debug_kill = {
@@ -2041,4 +2041,13 @@ lag_butcher_of_glazia = {
 lag_forest_pioneers = {
     colonists = 1
     global_colonial_growth = 10
+}
+
+lag_united_we_stand = {
+    free_adm_policy = 1
+    war_exhaustion = -0.05
+}
+
+lag_laglan_plains = {
+    production_efficiency = 0.10
 }

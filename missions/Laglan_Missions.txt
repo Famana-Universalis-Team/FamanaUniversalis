@@ -17,25 +17,109 @@ lag_1 = {
         required_missions = { }
         trigger = {
             philosopher = 2
-            
+            culture_group = Western_Estali
+            laglon_region = {
+                type = all
+                OR = {
+                    AND = {
+                        culture_group = Western_Estali
+                        owner = {
+                            culture_group = Western_Estali
+                        }
+                    }
+                    is_empty = yes
+                }
+            }
         }
         effect = {
-
-            #bonus depending on pexto/maxan school
+            create_explorer = { tradition = 60 }
+            5028 = {
+                change_trade_goods = dyes
+                add_province_modifier = {
+                    name = lag_esmekeed
+                    duration = -1
+                }
+            }
+            if = {
+                limit = {
+                    NOT = {
+                        is_year = 291
+                    }
+                }
+                custom_tooltip = lagSchoolThing
+                if = {
+                    limit = {
+                        religious_school = {
+	                        group = lathvy_group
+	                        school = pextoglazian_school
+                        }
+                    }
+                    hidden_effect = {
+                        add_estate_loyalty = {
+                            estate = estate_church
+                            loyalty = 40
+                        }
+                    }
+                }
+                if = {
+                    limit = {
+                        religious_school = {
+	                        group = lathvy_group
+	                        school = maxan_school
+                        }
+                    }
+                    hidden_effect = {
+                        add_manpower = 15
+                    }
+                }
+            }
         }
-        #provinces_to_highlight = {}
+        provinces_to_highlight = {
+            region = laglon_region
+            NOT = {
+                is_empty = yes
+            }
+            NOT = {
+                culture_group = Western_Estali
+            }
+        }
     }
 
     lag_sense_of_unity = {
         icon = mission_novgorod_the_great
         required_missions = { lag_feniki_culture }
         trigger = {
-
+            NOT = {
+                any_owned_province = {
+                    region = laglon_region
+                    local_autonomy = 1
+                }
+            }
+            if = {
+                limit = {
+                    religious_school = {
+	                    group = lathvy_group
+	                    school = maxan_school
+                    }
+                }
+            	army_size_percentage = 0.8
+            }
+            else = {
+                manpower_percentage = 0.60
+            }
         }
         effect = {
-
+            add_stability_or_adm_power = yes
+            add_country_modifier = {
+                name = lag_united_we_stand
+                duration = -1
+            }
         }
-        #provinces_to_highlight = {}
+        provinces_to_highlight = {
+            owned_by = ROOT
+            region = laglon_region
+            local_autonomy = 1
+        }
     }
 
     lag_beyond_the_highlands = {
@@ -109,7 +193,9 @@ lag_2 = {
         required_missions = {lag_sense_of_unity }
         position = 3
         trigger = {
-            stability = 2
+            NOT = {
+                unrest = -2
+            }
             feyel_area = {
                 type = all
                 owned_by = ROOT
@@ -453,7 +539,7 @@ lag_3 = {
         required_missions = { lag_raid_on_pomlen }
         position = 14
         trigger = {
-
+            is_defender_of_faith = yes
         }
         effect = {
 
@@ -638,6 +724,10 @@ lag_4 = {
         }
         effect = {
             add_adm_power = 150
+            add_country_modifier = {
+                name = lag_laglan_plains
+                duration = -1
+            }
             5028 = {
                 add_base_tax = 2
                 add_base_production = 2

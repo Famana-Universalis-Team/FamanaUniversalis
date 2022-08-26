@@ -167,7 +167,7 @@
  nafaColonize1: "§Y[Root.GetName]§! will gain control of the §YAnpara§! and §YTepat§! Areas."
  nafaXalIntegrateTooltip: "Any owned province in the §YSouth Xalia§!, §YWest Xalia§!, §YEast Xalia§! or §YNorth Xalia§! Region is of an Accepted Culture"
  naf_subjugate_oppia_tt: "§Y[Root.GetName]§! gains a §YSubjugation§! Casus Belli on every country of §YOppian§! culture."
- NafaGetCoresOnOurLand: "§Y[Root.GetName]§! gains cores on all our owned provinces in the §YSouth Xalia§!, §YWest Xalia§!, §YEast Xalia§! and §YNorth Xalia§! Region."
+ NafaGetCoresOnOurLand: "§Y[NAF.GetName]§! gains cores on all our owned provinces in the §YSouth Xalia§!, §YWest Xalia§!, §YEast Xalia§! and §YNorth Xalia§! Region."
  nafaAnnexXalEvent: "Every known country with their capital in the §YSouth Xalia§!, §YWest Xalia§!, §YEast Xalia§! or §YNorth Xalia§! Region gets the event '§YNafan Ultimatum§!' in §Y30 days§!."
  nafaOppianCoresTooltip: "Our first subject with owned provinces in the §YLower Oppia§! or §YUpper Oppia§! Regions will receive cores on said regions."
  nafaNotControllingTonmoTooltip: "While §Y[Root.GetName]§! does not have any owned provinces in the §YNhoma§! Superregion, we will receive '§YBulwark Against the Barbarians§!', giving the following effects:\nYearly Army Tradition Decay: §G-1.0%§!\nShock Damage Received: §G-10.0%§!\n"
@@ -409,3 +409,4 @@
  search_for_standard: "We will begin the search for §Ythe First Imperial Standard§!. When found, this will give us the following effects:\nGoverning Capacity Modifier: §G+25.0%§!\nCore Creation Cost: §G-10.0%§!\nGlobal Unrest: §R+2.00%§!"
  ColonisteAlqyl: "Unlocks the colonisation of §YAlqyl§! for us and our subjects."
  Colonise_Yarong: "Unlocks the colonisation of §YAsetli§! for us and our subjects.\nUnlocks the colonisation of §YYarong§! for us and our subjects."
+ lagSchoolThing: "If we complete this mission while following the §YPextoglazian§! school:\nThe §YClergy§! Estate gains §G40§! loyalty.\n\nIf we complete this mission while following the §YMaxan§! school:\nGain §G15,000§! Manpower."

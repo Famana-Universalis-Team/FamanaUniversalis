@@ -19,18 +19,5 @@ religious_school = pextoglazian_school
 		dip = 2
 		mil = 2
 	}
-}
-
-201.1.1 = { 
-	heir = {
-		name = "Foshtnan"
-		monarch_name = "Foshtnan III"
-		dynasty = "Mayar"
-		birth_date = 174.5.13
-		death_date = 232.3.15
-		claim = 95
-		adm = 1
-		dip = 1
-		mil = 3
-	}
+	add_ruler_personality = zealot_personality
 }

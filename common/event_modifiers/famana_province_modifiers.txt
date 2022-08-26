@@ -372,3 +372,8 @@ tck_desert_cities = {
     supply_limit_modifier = 0.10
     province_trade_power_modifier = 0.10
 }
+lag_esmekeed = {
+    local_development_cost = -0.25
+    local_production_efficiency = 0.20
+    allowed_num_of_buildings = 1
+}
