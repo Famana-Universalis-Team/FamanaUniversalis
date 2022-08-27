@@ -4,6 +4,7 @@ discovered_by = lathvy_tech_gr
 add_core = NHL
 add_core = BTR
 owner = NHL
+is_city = yes
 controller = NHL
 culture = Tolan
 religion = lathvy
@@ -13,7 +14,7 @@ base_production = 2
 trade_goods = fish
 base_manpower = 2
 capital = "Nirati"
-is_city = yes
+ 
 
 discovered_by = west_estali_tech_gr
 

@@ -13,10 +13,11 @@ base_production = 3
 trade_goods = livestock
 base_manpower = 2
 capital = "Nedooman"
-is_city = yes
+ 
 
   
 
 owner = FAZ
+is_city = yes
 controller = FAZ
 add_core = FAZ

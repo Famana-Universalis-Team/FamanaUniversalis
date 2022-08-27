@@ -4,6 +4,7 @@ discovered_by = west_gomic_tech_gr
 culture = Pextan
 religion = lathvy
 owner = PEX
+is_city = yes
 controller = PEX
 add_core = PEX
 add_core = POM
@@ -17,7 +18,7 @@ base_production = 7
 trade_goods = paper
 base_manpower = 8
 capital = "Pomlen"
-is_city = yes
+ 
 extra_cost = 8
 center_of_trade = 2
 fort_15th = yes

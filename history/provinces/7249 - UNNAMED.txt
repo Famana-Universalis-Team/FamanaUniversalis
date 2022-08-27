@@ -2,6 +2,7 @@
 #UNNAMED
 add_core = KKR
 owner = KKR
+is_city = yes
 controller = KKR
 culture = Manthwar
 religion = bosisi
@@ -11,7 +12,7 @@ base_production = 2
 trade_goods = spices
 base_manpower = 1
 capital = "A'Jrat"
-is_city = yes
+ 
 discovered_by = great_desert_tech_gr
 
 

@@ -4,6 +4,7 @@ discovered_by = west_gomic_tech_gr
 culture = Glasian
 religion = vinian
 owner = MSH
+is_city = yes
 controller = MSH
 add_core = MSH
 
@@ -16,6 +17,6 @@ base_production = 3
 trade_goods = cloth
 base_manpower = 2
 capital = "Nikron"
-is_city = yes
+ 
 
 

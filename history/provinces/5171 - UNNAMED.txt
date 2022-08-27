@@ -4,6 +4,7 @@ discovered_by = west_gomic_tech_gr
 culture = Delkian_C
 religion = delkian
 owner = DEL
+is_city = yes
 controller = DEL
 add_core = DEL
 
@@ -16,7 +17,7 @@ base_production = 4
 trade_goods = grain
 base_manpower = 2
 capital = "Nela"
-is_city = yes
+ 
 fort_15th = yes
 
 

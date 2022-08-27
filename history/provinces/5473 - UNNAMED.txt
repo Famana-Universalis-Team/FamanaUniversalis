@@ -4,6 +4,7 @@ discovered_by = west_gomic_tech_gr
 culture = Mikledonian
 religion = lathvy
 owner = KAP
+is_city = yes
 controller = KAP
 add_core = KAP
 add_core = MLN
@@ -17,5 +18,5 @@ base_production = 5
 trade_goods = iron
 base_manpower = 4
 capital = "Eda Monvran"
-is_city = yes
+ 
 #extra_cost = 1

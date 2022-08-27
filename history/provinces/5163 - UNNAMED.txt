@@ -4,6 +4,7 @@ discovered_by = west_gomic_tech_gr
 culture = Delkian_C
 religion = delkian
 owner = MRN
+is_city = yes
 controller = MRN
 add_core = DEL
 add_core = MRN
@@ -19,7 +20,7 @@ base_production = 8
 trade_goods = copper
 base_manpower = 7
 capital = "Ximal"
-is_city = yes
+ 
 extra_cost = 10
 center_of_trade = 2
 fort_15th = yes

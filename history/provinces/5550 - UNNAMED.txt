@@ -13,16 +13,18 @@ base_production = 4
 trade_goods = naval_supplies
 base_manpower = 3
 capital = "Skabarr"
-is_city = yes
+ 
 
   
 
 owner = OSS
+is_city = yes
 controller = OSS
 add_core = OSS
 
 212.6.7 = {
 owner = NUS
+is_city = yes
 controller = NUS
 add_core = NUS
 remove_core = OSS

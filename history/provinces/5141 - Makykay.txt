@@ -13,10 +13,11 @@ base_production = 1
 trade_goods = wine
 base_manpower = 1
 capital = "Jabuskay"
-is_city = yes
+ 
 
 
 owner = ELK
+is_city = yes
 controller = ELK
 add_core = ELK
 

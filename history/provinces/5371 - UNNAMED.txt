@@ -4,6 +4,7 @@ discovered_by = west_gomic_tech_gr
 culture = Xofkan
 religion = lathvy
 owner = AGX
+is_city = yes
 controller = AGX
 add_core = AGX
 add_core = AME
@@ -18,7 +19,7 @@ base_production = 3
 trade_goods = slaves
 base_manpower = 2
 capital = "Melka"
-is_city = yes
+ 
 
 add_local_autonomy = 50
 

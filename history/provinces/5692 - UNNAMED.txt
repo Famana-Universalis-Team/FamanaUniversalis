@@ -4,6 +4,7 @@ discovered_by = lathvy_tech_gr
 culture = Emtik
 religion = va
 owner = VAN
+is_city = yes
 controller = VAN
 add_core = VAN
 
@@ -16,7 +17,7 @@ base_production = 4
 trade_goods = paper
 base_manpower = 3
 capital = "Emtik"
-is_city = yes
+ 
 fort_15th = yes
 add_permanent_province_modifier = {
 	name = river_estuary_modifier

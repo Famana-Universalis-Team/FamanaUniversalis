@@ -4,6 +4,7 @@ discovered_by = west_gomic_tech_gr
 culture = Lerushian
 religion = lathvy
 owner = ELP
+is_city = yes
 controller = ELP
 add_core = ELP
 
@@ -16,6 +17,6 @@ base_production = 4
 trade_goods = cloth
 base_manpower = 5
 capital = "Elixopo"
-is_city = yes
+ 
 
 

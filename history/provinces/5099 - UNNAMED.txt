@@ -13,10 +13,11 @@ base_production = 4
 trade_goods = livestock
 base_manpower = 5
 capital = "Hapopin"
-is_city = yes
+ 
 center_of_trade = 1
 
 
 owner = NUT
+is_city = yes
 controller = NUT
 add_core = NUT

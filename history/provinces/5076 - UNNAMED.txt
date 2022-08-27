@@ -5,6 +5,7 @@ discovered_by = west_gomic_tech_gr
 #UNNAMED
 add_core = ZIT
 owner = ZIT
+is_city = yes
 controller = ZIT
 culture = Roplean
 religion = western_oppian
@@ -15,5 +16,5 @@ base_production = 3
 trade_goods = gems
 base_manpower = 2
 capital = "Zitul"
-is_city = yes
+ 
 

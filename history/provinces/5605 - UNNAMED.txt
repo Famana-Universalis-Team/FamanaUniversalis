@@ -5,6 +5,7 @@ discovered_by = west_gomic_tech_gr
 culture = Nakoan
 religion = aresian
 owner = NAK
+is_city = yes
 controller = NAK
 add_core = NAK
 
@@ -17,7 +18,7 @@ base_production = 5
 trade_goods = cloth
 base_manpower = 6
 capital = "Ayli"
-is_city = yes
+ 
 
 
 fort_15th = yes

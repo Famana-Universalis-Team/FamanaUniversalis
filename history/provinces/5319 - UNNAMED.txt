@@ -4,6 +4,7 @@ discovered_by = west_gomic_tech_gr
 culture = Glazian
 religion = lathvy
 owner = PEX
+is_city = yes
 controller = PEX
 add_core = PEX
 add_core = PLM
@@ -17,7 +18,7 @@ base_production = 4
 trade_goods = wine
 base_manpower = 3
 capital = "Girt Cedurama"
-is_city = yes
+ 
 
 
 add_local_autonomy = 35

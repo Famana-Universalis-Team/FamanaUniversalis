@@ -4,6 +4,7 @@ discovered_by = west_gomic_tech_gr
 culture = Yabonian
 religion = egr
 owner = YAB
+is_city = yes
 controller = YAB
 add_core = YAB
 
@@ -16,7 +17,7 @@ base_production = 6
 trade_goods = incense
 base_manpower = 5
 capital = "Jimkalin"
-is_city = yes
+ 
 center_of_trade = 2
 
 

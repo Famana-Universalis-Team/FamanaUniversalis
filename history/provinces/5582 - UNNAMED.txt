@@ -4,6 +4,7 @@ discovered_by = west_gomic_tech_gr
 culture = Maxan_East_Emastalian
 religion = lathvy
 owner = TYD
+is_city = yes
 controller = TYD
 add_core = TYD
 
@@ -16,6 +17,6 @@ base_production = 2
 trade_goods = paper
 base_manpower = 2
 capital = "Rimat"
-is_city = yes
+ 
 
 

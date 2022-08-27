@@ -4,6 +4,7 @@ discovered_by = west_gomic_tech_gr
 culture = Lerushian
 religion = lathvy
 owner = PXA
+is_city = yes
 controller = PXA
 add_core = PXA
 add_core = MEP
@@ -17,7 +18,7 @@ base_production = 4
 trade_goods = naval_supplies
 base_manpower = 2
 capital = "Meaprin"
-is_city = yes
+ 
 
 add_local_autonomy = 60
 center_of_trade = 1

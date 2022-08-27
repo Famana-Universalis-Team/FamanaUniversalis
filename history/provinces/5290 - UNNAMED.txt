@@ -4,6 +4,7 @@ discovered_by = west_gomic_tech_gr
 culture = Opmaki
 religion = gadan
 owner = ZAK
+is_city = yes
 controller = ZAK
 add_core = ZAK
 
@@ -16,6 +17,6 @@ base_production = 2
 trade_goods = naval_supplies
 base_manpower = 1
 capital = "Lestaphex"
-is_city = yes
+ 
 
 

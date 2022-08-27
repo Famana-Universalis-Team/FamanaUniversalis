@@ -10,9 +10,10 @@ base_production = 1
 # livestock
 base_manpower = 1
 capital = "Solop"
-is_city = yes
+ 
 #
 
+is_city = no
 native_size = 5
 native_ferocity = 5
 native_hostileness = 5

@@ -13,17 +13,19 @@ base_production = 7
 trade_goods = wool
 base_manpower = 5
 capital = "Dibata"
-is_city = yes
+ 
 center_of_trade = 1
 
 
 owner = DES
+is_city = yes
 controller = DES
 add_core = DES
 add_core = DBT
 
 212.6.7 = {
 owner = DBT
+is_city = yes
 controller = DBT
 add_core = DBT
 remove_core = DES

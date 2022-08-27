@@ -9,11 +9,12 @@ base_tax = 1
 base_production = 1
 base_manpower = 2
 # wool
+is_city = no
 native_size = 12
 native_ferocity = 5
 native_hostileness = 5
 capital = "Ori Ejom"
-is_city = yes
+ 
 
 discovered_by = washoom_tech_gr
 

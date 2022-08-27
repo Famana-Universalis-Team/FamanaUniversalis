@@ -3,6 +3,7 @@ discovered_by = lathvy_tech_gr
 culture = Lerushian
 religion = lathvy
 owner = KIN
+is_city = yes
 controller = KIN
 add_core = KIN
 add_core = HRT
@@ -16,7 +17,7 @@ base_production = 3
 trade_goods = gems
 base_manpower = 1
 capital = "Hartimatul"
-is_city = yes
+ 
 center_of_trade = 1
 add_province_triggered_modifier = naf_hartimatul_stronghold
 

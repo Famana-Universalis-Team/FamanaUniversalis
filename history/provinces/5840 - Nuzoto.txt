@@ -4,6 +4,7 @@ discovered_by = east_gomic_tech_gr
 #Nuzoto
 add_core = NOZ
 owner = NOZ
+is_city = yes
 controller = NOZ
 culture = Nozuman
 religion = washoom
@@ -13,7 +14,7 @@ base_production = 3
 trade_goods = wool
 base_manpower = 2
 capital = "Nuzoto"
-is_city = yes
+ 
 #
 center_of_trade = 1
 

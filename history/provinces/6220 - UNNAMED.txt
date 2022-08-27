@@ -4,6 +4,7 @@ discovered_by = west_gomic_tech_gr
 #UNNAMED
 add_core = ORC
 owner = ORC
+is_city = yes
 controller = ORC
 add_core = FLB
 culture = Dlosnim
@@ -14,7 +15,7 @@ base_production = 2
 trade_goods = grain
 base_manpower = 1
 capital = "Gapf"
-is_city = yes
+ 
 
 
 

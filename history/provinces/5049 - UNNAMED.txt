@@ -5,6 +5,7 @@ discovered_by = west_gomic_tech_gr
 #UNNAMED
 add_core = EFF
 owner = EFF
+is_city = yes
 controller = EFF
 culture = Lower_Oppian
 religion = western_oppian
@@ -15,7 +16,7 @@ base_production = 4
 trade_goods = cloth
 base_manpower = 2
 capital = "Effasha"
-is_city = yes
+ 
 
 
 center_of_trade = 1

@@ -13,11 +13,12 @@ base_production = 5
 trade_goods = wine
 base_manpower = 4
 capital = "He'oki"
-is_city = yes
+ 
 
   
 
 owner = DES
+is_city = yes
 controller = DES
 add_core = DES
 fort_15th = yes
@@ -25,6 +26,7 @@ add_core = GDS
 
 212.6.7 = {
 owner = DBT
+is_city = yes
 controller = DBT
 add_core = DBT
 remove_core = DES

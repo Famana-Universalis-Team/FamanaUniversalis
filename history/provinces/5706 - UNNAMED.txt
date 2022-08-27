@@ -4,6 +4,7 @@ discovered_by = west_gomic_tech_gr
 culture = Yuvlan
 religion = lathvy
 owner = ORC
+is_city = yes
 controller = ORC
 add_core = ORC
 add_core = KAM
@@ -16,7 +17,7 @@ base_production = 4
 trade_goods = naval_supplies
 base_manpower = 2
 capital = "Slapni"
-is_city = yes
+ 
 center_of_trade = 1
 
 

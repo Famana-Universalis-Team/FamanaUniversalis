@@ -4,6 +4,7 @@ discovered_by = west_gomic_tech_gr
 culture = Sixany
 religion = vinian
 owner = MRN
+is_city = yes
 controller = MRN
 add_core = MRN
 
@@ -16,7 +17,7 @@ base_production = 2
 trade_goods = iron
 base_manpower = 5
 capital = "Gamerd"
-is_city = yes
+ 
 
 
 fort_15th = yes

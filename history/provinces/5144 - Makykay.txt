@@ -13,11 +13,12 @@ base_production = 1
 trade_goods = tropical_wood
 base_manpower = 1
 capital = "Almuz"
-is_city = yes
+ 
 
   
 
 owner = HZR
+is_city = yes
 controller = HZR
 add_core = HZR
 

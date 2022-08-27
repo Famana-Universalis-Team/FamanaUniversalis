@@ -5,6 +5,7 @@ discovered_by = west_gomic_tech_gr
 culture = Kachik
 religion = animism
 owner = SKT
+is_city = yes
 controller = SKT
 add_core = SKT
 add_core = RCK
@@ -18,6 +19,6 @@ base_production = 3
 trade_goods = fur
 base_manpower = 2
 capital = "Yallwaka"
-is_city = yes
+ 
 
 

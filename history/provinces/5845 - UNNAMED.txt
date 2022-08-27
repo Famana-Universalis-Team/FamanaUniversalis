@@ -4,6 +4,7 @@ discovered_by = east_gomic_tech_gr
 #UNNAMED
 add_core = NOZ
 owner = NOZ
+is_city = yes
 controller = NOZ
 culture = Nozuman
 religion = washoom
@@ -13,7 +14,7 @@ base_production = 1
 trade_goods = livestock
 base_manpower = 1
 capital = "Barkozgo"
-is_city = yes
+ 
 #
 
 discovered_by = washoom_tech_gr

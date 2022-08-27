@@ -5,6 +5,7 @@ discovered_by = west_gomic_tech_gr
 culture = Glasian
 religion = vinian
 owner = JXS
+is_city = yes
 controller = JXS
 add_core = JXS
 
@@ -17,7 +18,7 @@ base_production = 5
 trade_goods = cloth
 base_manpower = 4
 capital = "Jexus"
-is_city = yes
+ 
 
 
 fort_15th = yes

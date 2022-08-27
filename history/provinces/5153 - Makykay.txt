@@ -13,9 +13,10 @@ base_production = 1
 trade_goods = naval_supplies
 base_manpower = 1
 capital = "Jagama"
-is_city = yes
+ 
 
 
 owner = JKK
+is_city = yes
 controller = JKK
 add_core = JKK

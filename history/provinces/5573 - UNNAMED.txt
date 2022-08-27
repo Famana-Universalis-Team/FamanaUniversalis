@@ -4,6 +4,7 @@ discovered_by = west_gomic_tech_gr
 culture = Maxan_East_Emastalian
 religion = lathvy
 owner = ELQ
+is_city = yes
 controller = ELQ
 add_core = ELQ
 
@@ -16,6 +17,6 @@ base_production = 4
 trade_goods = fish
 base_manpower = 2
 capital = "Quilves"
-is_city = yes
+ 
 
 

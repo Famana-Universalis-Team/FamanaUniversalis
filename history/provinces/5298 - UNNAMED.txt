@@ -4,6 +4,7 @@ discovered_by = west_gomic_tech_gr
 culture = Walaran
 religion = lathvy
 owner = PPX
+is_city = yes
 controller = PPX
 add_core = PPX
 
@@ -16,5 +17,5 @@ base_production = 6
 trade_goods = livestock
 base_manpower = 5
 capital = "Zosa"
-is_city = yes
+ 
 

@@ -5,6 +5,7 @@ discovered_by = west_gomic_tech_gr
 #UNNAMED
 add_core = UMZ
 owner = UMZ
+is_city = yes
 controller = UMZ
 culture = Lower_Oppian
 religion = western_oppian
@@ -15,7 +16,7 @@ base_production = 1
 trade_goods = gold
 base_manpower = 2
 capital = "Zavin"
-is_city = yes
+ 
 
 
 add_local_autonomy = 20

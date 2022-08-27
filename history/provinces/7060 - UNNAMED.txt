@@ -2,6 +2,7 @@
 #UNNAMED
 add_core = GEP
 owner = GEP
+is_city = yes
 controller = GEP
 culture = Zeli
 religion = washoom
@@ -11,7 +12,7 @@ base_production = 6
 trade_goods = grain
 base_manpower = 5
 capital = "UNNAMED"
-is_city = yes
+ 
 
 discovered_by = washoom_tech_gr
 

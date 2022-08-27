@@ -5,6 +5,7 @@ discovered_by = west_gomic_tech_gr
 #elwait idk
 add_core = NKM
 owner = NKM
+is_city = yes
 controller = NKM
 add_core = ELI
 culture = Elwaiti
@@ -16,6 +17,6 @@ base_production = 2
 trade_goods = wool
 base_manpower = 2
 capital = "Lexaith"
-is_city = yes
+ 
 extra_cost = 2
 

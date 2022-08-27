@@ -4,6 +4,7 @@ discovered_by = west_gomic_tech_gr
 culture = Hoxan
 religion = eastern_oppian
 owner = RPI
+is_city = yes
 controller = RPI
 add_core = RPI
 
@@ -16,6 +17,6 @@ base_production = 1
 trade_goods = wool
 base_manpower = 2
 capital = "James"
-is_city = yes
+ 
 
 

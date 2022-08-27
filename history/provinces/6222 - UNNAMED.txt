@@ -3,6 +3,7 @@ discovered_by = lathvy_tech_gr
 #UNNAMED
 add_core = ORC
 owner = ORC
+is_city = yes
 controller = ORC
 add_core = MLY
 culture = Dlosnim
@@ -13,7 +14,7 @@ base_production = 2
 trade_goods = wool
 base_manpower = 1
 capital = "Graqult"
-is_city = yes
+ 
 
 
 

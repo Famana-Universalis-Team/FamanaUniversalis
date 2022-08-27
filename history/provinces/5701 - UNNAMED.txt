@@ -4,6 +4,7 @@ discovered_by = west_gomic_tech_gr
 culture = Yuvlan
 religion = lathvy
 owner = ORC
+is_city = yes
 controller = ORC
 add_core = ORC
 add_core = YUV
@@ -16,6 +17,6 @@ base_production = 2
 trade_goods = grain
 base_manpower = 2
 capital = "Tostesya"
-is_city = yes
+ 
 
 

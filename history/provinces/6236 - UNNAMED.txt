@@ -4,6 +4,7 @@ discovered_by = west_gomic_tech_gr
 #UNNAMED
 add_core = ORC
 owner = ORC
+is_city = yes
 controller = ORC
 add_core = CEL
 culture = Celzian
@@ -14,7 +15,7 @@ base_production = 4
 trade_goods = gems
 base_manpower = 4
 capital = "Celzion"
-is_city = yes
+ 
 center_of_trade = 2
 
 fort_15th = yes

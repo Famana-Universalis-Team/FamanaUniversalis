@@ -4,6 +4,7 @@ discovered_by = west_gomic_tech_gr
 culture = Yabonian
 religion = bamali
 owner = YAB
+is_city = yes
 controller = YAB
 add_core = YAB
 
@@ -16,6 +17,6 @@ base_production = 3
 trade_goods = iron
 base_manpower = 4
 capital = "Qasura"
-is_city = yes
+ 
 
 

@@ -4,6 +4,7 @@ discovered_by = west_gomic_tech_gr
 culture = West_Jasuan
 religion = egr
 owner = KIN
+is_city = yes
 controller = KIN
 add_core = KIN
 
@@ -16,7 +17,7 @@ base_production = 10
 trade_goods = paper
 base_manpower = 8
 capital = "Kinvirel"
-is_city = yes
+ 
 extra_cost = 15
 center_of_trade = 3
 fort_15th = yes

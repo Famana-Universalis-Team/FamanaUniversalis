@@ -4,6 +4,7 @@ discovered_by = west_gomic_tech_gr
 culture = Glazian
 religion = lathvy
 owner = PLM
+is_city = yes
 controller = PLM
 add_core = PLM
 
@@ -16,6 +17,6 @@ base_production = 4
 trade_goods = grain
 base_manpower = 4
 capital = "Kauddo Jent"
-is_city = yes
+ 
 
 

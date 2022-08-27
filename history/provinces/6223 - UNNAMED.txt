@@ -3,6 +3,7 @@ discovered_by = lathvy_tech_gr
 #UNNAMED
 add_core = ORC
 owner = ORC
+is_city = yes
 controller = ORC
 add_core = GLB
 culture = Dlosnim
@@ -13,7 +14,7 @@ base_production = 1
 trade_goods = naval_supplies
 base_manpower = 2
 capital = "Hufiengibb"
-is_city = yes
+ 
 
 
 

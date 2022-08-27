@@ -4,6 +4,7 @@ discovered_by = west_gomic_tech_gr
 #UNNAMED
 add_core = ORC
 owner = ORC
+is_city = yes
 controller = ORC
 add_core = CEL
 add_core = ARO
@@ -15,7 +16,7 @@ base_production = 2
 trade_goods = livestock
 base_manpower = 1
 capital = "Ronnts"
-is_city = yes
+ 
 
 
 

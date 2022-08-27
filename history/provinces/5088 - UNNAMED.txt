@@ -13,10 +13,11 @@ base_production = 7
 trade_goods = paper
 base_manpower = 5
 capital = "Astom"
-is_city = yes
+ 
 
 
 owner = PON
+is_city = yes
 controller = PON
 add_core = PON
 add_core = AST

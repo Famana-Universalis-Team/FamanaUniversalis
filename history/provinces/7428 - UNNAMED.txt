@@ -1,5 +1,6 @@
 add_core = QAN
 owner = QAN
+is_city = yes
 controller = QAN
 culture = Qanoyan_C
 religion = qanoyan
@@ -9,7 +10,7 @@ base_production = 1
 trade_goods = coffee
 base_manpower = 1
 capital = "UNNAMED"
-is_city = yes
+ 
 extra_cost = 26
 discovered_by = qamoni_tech_gr
 discovered_by = great_desert_tech_gr

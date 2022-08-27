@@ -14,10 +14,11 @@ base_production = 4
 trade_goods = wine
 base_manpower = 3
 capital = "Fokay"
-is_city = yes
+ 
 center_of_trade = 1
 
 
 owner = OKU
+is_city = yes
 controller = OKU
 add_core = OKU

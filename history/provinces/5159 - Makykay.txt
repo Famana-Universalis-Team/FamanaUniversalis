@@ -4,6 +4,7 @@ discovered_by = west_gomic_tech_gr
 culture = Opmaki
 religion = gadan
 owner = GTS
+is_city = yes
 controller = GTS
 add_core = GTS
 add_core = HRK
@@ -17,6 +18,6 @@ base_production = 5
 trade_goods = salt
 base_manpower = 6
 capital = "Mea Pazga"
-is_city = yes
+ 
 
 

@@ -5,10 +5,11 @@ base_production = 4
 base_manpower = 3
 trade_goods = sugar
 capital = "UNNAMED"
-is_city = yes
+ 
 
 
 owner = DOR
+is_city = yes
 controller = DOR
 add_core = DOR
 center_of_trade = 1

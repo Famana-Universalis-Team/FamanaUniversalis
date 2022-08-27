@@ -2,6 +2,7 @@ discovered_by = lathvy_tech_gr
 culture = Vordori
 religion = lathvy
 owner = ORC
+is_city = yes
 controller = ORC
 add_core = ORC
 add_core = VOR
@@ -15,7 +16,7 @@ base_production = 1
 trade_goods = fish
 base_manpower = 2
 capital = "Maranda"
-is_city = yes
+ 
 
 
 discovered_by = west_estali_tech_gr

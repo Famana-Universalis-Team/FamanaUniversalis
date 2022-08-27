@@ -5,6 +5,7 @@ discovered_by = west_gomic_tech_gr
 #UNNAMED
 add_core = LAG
 owner = LAG
+is_city = yes
 controller = LAG
 culture = Laglan
 religion = western_oppian
@@ -15,5 +16,5 @@ base_production = 2
 trade_goods = fish
 base_manpower = 3
 capital = "Porero"
-is_city = yes
+ 
 extra_cost = 2

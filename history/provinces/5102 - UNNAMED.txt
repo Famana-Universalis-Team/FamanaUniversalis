@@ -13,10 +13,11 @@ base_production = 3
 trade_goods = wine
 base_manpower = 2
 capital = "Viela"
-is_city = yes
+ 
 
   
 
 owner = NUT
+is_city = yes
 controller = NUT
 add_core = NUT

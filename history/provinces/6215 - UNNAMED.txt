@@ -4,6 +4,7 @@ discovered_by = west_gomic_tech_gr
 #UNNAMED
 add_core = ORC
 owner = ORC
+is_city = yes
 controller = ORC
 add_core = FLB
 culture = Dlosnim
@@ -15,7 +16,7 @@ trade_goods = cloth
 base_manpower = 3
 center_of_trade = 1
 capital = "Dlosnim"
-is_city = yes
+ 
 
 
 

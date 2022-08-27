@@ -4,6 +4,7 @@ discovered_by = west_gomic_tech_gr
 culture = Neo_Xalnish
 religion = shirian
 owner = MSH
+is_city = yes
 controller = MSH
 add_core = MSH
 
@@ -16,6 +17,6 @@ base_production = 4
 trade_goods = glass
 base_manpower = 3
 capital = "Doiraxel"
-is_city = yes
+ 
 
 

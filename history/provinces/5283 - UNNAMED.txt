@@ -4,6 +4,7 @@ discovered_by = west_gomic_tech_gr
 culture = Walaran
 religion = lathvy
 owner = PJS
+is_city = yes
 controller = PJS
 add_core = PJS
 
@@ -16,6 +17,6 @@ base_production = 3
 trade_goods = grain
 base_manpower = 2
 capital = "Pef Golepaf"
-is_city = yes
+ 
 
 fort_15th = yes

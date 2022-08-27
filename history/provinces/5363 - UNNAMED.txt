@@ -4,6 +4,7 @@ discovered_by = west_gomic_tech_gr
 culture = Lerushian
 religion = lathvy
 owner = AGX
+is_city = yes
 controller = AGX
 add_core = AGX
 add_core = OIX
@@ -16,6 +17,6 @@ base_production = 3
 trade_goods = grain
 base_manpower = 4
 capital = "Shezz"
-is_city = yes
+ 
 
 

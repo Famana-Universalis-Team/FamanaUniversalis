@@ -5,6 +5,7 @@ discovered_by = west_gomic_tech_gr
 #UNNAMED
 add_core = TCK
 owner = TCK
+is_city = yes
 controller = TCK
 culture = Quanexite
 religion = western_oppian
@@ -15,7 +16,7 @@ base_production = 8
 trade_goods = paper
 base_manpower = 8
 capital = "Quanex"
-is_city = yes
+ 
 extra_cost = 15
 
 center_of_trade = 2

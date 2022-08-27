@@ -4,6 +4,7 @@ discovered_by = west_gomic_tech_gr
 culture = Glazian
 religion = lathvy
 owner = PLM
+is_city = yes
 controller = PLM
 add_core = PLM
 add_core = XRL
@@ -17,6 +18,6 @@ base_production = 3
 trade_goods = fur
 base_manpower = 2
 capital = "Xarelda"
-is_city = yes
+ 
 
 

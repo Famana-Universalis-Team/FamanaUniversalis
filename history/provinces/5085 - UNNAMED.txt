@@ -13,10 +13,11 @@ base_production = 1
 trade_goods = grain
 base_manpower = 2
 capital = "Rush"
-is_city = yes
+ 
 
   
 
 owner = PON
+is_city = yes
 controller = PON
 add_core = PON

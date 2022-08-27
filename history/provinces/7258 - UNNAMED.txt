@@ -2,6 +2,7 @@
 #UNNAMED
 add_core = NLF
 owner = NLF
+is_city = yes
 controller = NLF
 culture = Alavyas
 religion = qamon
@@ -11,7 +12,7 @@ base_production = 1
 trade_goods = naval_supplies
 base_manpower = 1
 capital = "UNNAMED"
-is_city = yes
+ 
 discovered_by = qamoni_tech_gr
 
 

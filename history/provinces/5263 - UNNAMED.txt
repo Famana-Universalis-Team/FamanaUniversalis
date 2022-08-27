@@ -1,5 +1,6 @@
 add_core = ZTT
 owner = ZTT
+is_city = yes
 controller = ZTT
 culture = Mirrisan  discovered_by = west_estali_tech_gr
 religion = animism
@@ -9,6 +10,6 @@ base_production = 1
 trade_goods = livestock
 base_manpower = 1
 capital = "Keenuhi"
-is_city = yess
+ s
 
 center_of_trade = 1

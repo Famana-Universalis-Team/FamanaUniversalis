@@ -4,6 +4,7 @@ discovered_by = west_gomic_tech_gr
 culture = Mahanshan
 religion = eastern_oppian
 owner = MHN
+is_city = yes
 controller = MHN
 add_core = MHN
 
@@ -16,7 +17,7 @@ base_production = 5
 trade_goods = spices
 base_manpower = 5
 capital = "Mahansha"
-is_city = yes
+ 
 
 center_of_trade = 1
 

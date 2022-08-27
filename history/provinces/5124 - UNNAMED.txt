@@ -13,9 +13,10 @@ base_production = 6
 trade_goods = wine
 base_manpower = 4
 capital = "Nusa"
-is_city = yes
+ 
 
 
 owner = NUS
+is_city = yes
 controller = NUS
 add_core = NUS

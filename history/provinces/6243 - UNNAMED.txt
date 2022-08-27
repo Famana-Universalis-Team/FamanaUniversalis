@@ -5,6 +5,7 @@ discovered_by = west_gomic_tech_gr
 #UNNAMED
 add_core = ORC
 owner = ORC
+is_city = yes
 controller = ORC
 add_core = NES
 culture = Celzian
@@ -15,7 +16,7 @@ base_production = 1
 trade_goods = livestock
 base_manpower = 3
 capital = "Mrug"
-is_city = yes
+ 
 
 
 

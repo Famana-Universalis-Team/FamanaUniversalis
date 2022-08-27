@@ -4,6 +4,7 @@ discovered_by = west_gomic_tech_gr
 culture = Glazian
 religion = lathvy
 owner = PTG
+is_city = yes
 controller = PTG
 add_core = PTG
 
@@ -16,6 +17,6 @@ base_production = 4
 trade_goods = paper
 base_manpower = 3
 capital = "Micazia"
-is_city = yes
+ 
 
 

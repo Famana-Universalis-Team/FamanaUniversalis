@@ -5,6 +5,7 @@ discovered_by = west_gomic_tech_gr
 #UNNAMED
 add_core = FAZ
 owner = FAZ
+is_city = yes
 controller = FAZ
 culture = Lower_Oppian
 religion = western_oppian
@@ -15,7 +16,7 @@ base_production = 5
 trade_goods = gems
 base_manpower = 3
 capital = "Fasalep"
-is_city = yes
+ 
 
 
 center_of_trade = 2

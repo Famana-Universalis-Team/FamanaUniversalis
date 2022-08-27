@@ -5,6 +5,7 @@ discovered_by = west_gomic_tech_gr
 #UNNAMED
 add_core = UMA
 owner = UMA
+is_city = yes
 controller = UMA
 culture = Lower_Oppian
 religion = reformed_oppian
@@ -15,7 +16,7 @@ base_production = 3
 trade_goods = iron
 base_manpower = 2
 capital = "Umar"
-is_city = yes
+ 
 
 
 center_of_trade = 1

@@ -13,10 +13,11 @@ base_production = 4
 trade_goods = salt
 base_manpower = 5
 capital = "Lyposh"
-is_city = yes
+ 
 
   
 
 owner = LYP
+is_city = yes
 controller = LYP
 add_core = LYP

@@ -3,6 +3,7 @@ discovered_by = west_gomic_tech_gr
 culture = Ordican
 religion = lathvy
 owner = ORC
+is_city = yes
 controller = ORC
 add_core = ORC
 add_core = DKL
@@ -16,5 +17,5 @@ base_production = 1
 trade_goods = wool
 base_manpower = 1
 capital = "Daum"
-is_city = yes
+ 
 

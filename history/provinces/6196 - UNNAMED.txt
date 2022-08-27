@@ -5,6 +5,7 @@ discovered_by = west_gomic_tech_gr
 #UNNAMED
 add_core = ORC
 owner = ORC
+is_city = yes
 controller = ORC
 add_core = KAM
 culture = Ordican
@@ -15,7 +16,7 @@ base_production = 2
 trade_goods = grain
 base_manpower = 1
 capital = "Storgovia"
-is_city = yes
+ 
 
 
 

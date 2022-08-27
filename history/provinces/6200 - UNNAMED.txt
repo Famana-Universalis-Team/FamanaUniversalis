@@ -4,6 +4,7 @@ discovered_by = west_gomic_tech_gr
 #UNNAMED
 add_core = ORC
 owner = ORC
+is_city = yes
 controller = ORC
 add_core = SPT
 culture = Ordican
@@ -14,7 +15,7 @@ base_production = 2
 trade_goods = naval_supplies
 base_manpower = 2
 capital = "Fabla"
-is_city = yes
+ 
 
 
 

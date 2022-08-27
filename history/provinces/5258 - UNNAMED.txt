@@ -1,5 +1,6 @@
 add_core = GRL
 owner = GRL
+is_city = yes
 controller = GRL
 culture = Mirrisan  discovered_by = west_estali_tech_gr
 religion = animism
@@ -9,5 +10,5 @@ base_production = 2
 trade_goods = fur
 base_manpower = 1
 capital = "Kondya"
-is_city = yess
+ s
 #extra_cost = 1

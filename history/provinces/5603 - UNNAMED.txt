@@ -5,6 +5,7 @@ discovered_by = west_gomic_tech_gr
 culture = Holk
 religion = bamali
 owner = YAB
+is_city = yes
 controller = YAB
 add_core = YAB
 add_core = HLK
@@ -18,11 +19,12 @@ base_production = 3
 trade_goods = salt
 base_manpower = 2
 capital = "Degzool"
-is_city = yes
+ 
 
 
 212.6.7 = {
 owner = HLK
+is_city = yes
 controller = HLK
 add_core = HLK
 remove_core = YAB

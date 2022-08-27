@@ -5,6 +5,7 @@ discovered_by = west_gomic_tech_gr
 culture = Bamali_C
 religion = bamali
 owner = YAB
+is_city = yes
 controller = YAB
 add_core = YAB
 add_core = HLK
@@ -18,11 +19,12 @@ base_production = 2
 trade_goods = grain
 base_manpower = 1
 capital = "Pondchez"
-is_city = yes
+ 
 
 
 212.6.7 = {
 owner = HLK
+is_city = yes
 controller = HLK
 add_core = HLK
 remove_core = YAB

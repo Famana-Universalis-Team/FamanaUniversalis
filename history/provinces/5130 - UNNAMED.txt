@@ -13,10 +13,11 @@ base_production = 1
 trade_goods = livestock
 base_manpower = 2
 capital = "Daffifo"
-is_city = yes
+ 
 
   
 
 owner = OSS
+is_city = yes
 controller = OSS
 add_core = OSS

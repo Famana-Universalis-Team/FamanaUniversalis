@@ -4,6 +4,7 @@ discovered_by = west_gomic_tech_gr
 #UNNAMED
 add_core = NHL
 owner = NHL
+is_city = yes
 controller = NHL
 culture = Tolan
 religion = lathvy
@@ -13,7 +14,7 @@ base_production = 2
 trade_goods = naval_supplies
 base_manpower = 1
 capital = "Gejas"
-is_city = yes
+ 
 
 discovered_by = west_estali_tech_gr
 

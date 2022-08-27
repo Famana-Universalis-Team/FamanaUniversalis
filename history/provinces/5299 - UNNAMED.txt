@@ -4,6 +4,7 @@ discovered_by = west_gomic_tech_gr
 culture = Walaran
 religion = lathvy
 owner = PPX
+is_city = yes
 controller = PPX
 add_core = PPX
 
@@ -16,6 +17,6 @@ base_production = 3
 trade_goods = naval_supplies
 base_manpower = 2
 capital = "Krok"
-is_city = yes
+ 
 
 

@@ -4,6 +4,7 @@ discovered_by = lathvy_tech_gr
 add_core = NHL
 add_core = BTR
 owner = NHL
+is_city = yes
 controller = NHL
 culture = Tolan
 religion = lathvy
@@ -13,7 +14,7 @@ base_production = 3
 trade_goods = grain
 base_manpower = 4
 capital = "Yokusa"
-is_city = yes
+ 
 fort_15th = yes
 
 discovered_by = west_estali_tech_gr

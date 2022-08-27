@@ -5,6 +5,7 @@ discovered_by = west_gomic_tech_gr
 culture = Bamali_C
 religion = bamali
 owner = BMF
+is_city = yes
 controller = BMF
 add_core = BMF
 
@@ -17,7 +18,7 @@ base_production = 3
 trade_goods = fish
 base_manpower = 4
 capital = "Ventul"
-is_city = yes
+ 
 
 center_of_trade = 1
 

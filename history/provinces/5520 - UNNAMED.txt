@@ -5,6 +5,7 @@ discovered_by = west_gomic_tech_gr
 culture = Middle_Aresian
 religion = aresian
 owner = SZI
+is_city = yes
 controller = SZI
 add_core = SZI
 
@@ -17,6 +18,6 @@ base_production = 5
 trade_goods = grain
 base_manpower = 3
 capital = "Szizk"
-is_city = yes
+ 
 
 

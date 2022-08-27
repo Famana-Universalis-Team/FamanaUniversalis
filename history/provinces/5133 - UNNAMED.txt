@@ -13,16 +13,18 @@ base_production = 5
 trade_goods = glass
 base_manpower = 3
 capital = "Gledessa"
-is_city = yes
+ 
 extra_cost = 2
 
 owner = DES
+is_city = yes
 controller = DES
 add_core = DES
 add_core = GDS
 
 212.6.7 = {
 owner = DBT
+is_city = yes
 controller = DBT
 add_core = DBT
 remove_core = DES

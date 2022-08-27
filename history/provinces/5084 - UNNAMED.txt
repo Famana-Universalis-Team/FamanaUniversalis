@@ -13,10 +13,11 @@ base_production = 4
 trade_goods = incense
 base_manpower = 3
 capital = "Daono"
-is_city = yes
+ 
 
   
 
 owner = PON
+is_city = yes
 controller = PON
 add_core = PON

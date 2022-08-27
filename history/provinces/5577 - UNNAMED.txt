@@ -5,6 +5,7 @@ discovered_by = west_gomic_tech_gr
 culture = Pawani_C
 religion = shirian
 owner = NKM
+is_city = yes
 controller = NKM
 add_core = NKM
 add_core = ELI
@@ -18,5 +19,5 @@ base_production = 2
 trade_goods = incense
 base_manpower = 2
 capital = "Yenowam"
-is_city = yes
+ 
 

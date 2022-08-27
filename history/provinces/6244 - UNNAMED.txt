@@ -6,6 +6,7 @@ discovered_by = west_gomic_tech_gr
 add_core = ORC
 add_core = NOX
 owner = ORC
+is_city = yes
 controller = ORC
 culture = Celzian
 religion = lathvy
@@ -15,7 +16,7 @@ base_production = 3
 trade_goods = iron
 base_manpower = 2
 capital = "Noxalo"
-is_city = yes
+ 
 
 
 

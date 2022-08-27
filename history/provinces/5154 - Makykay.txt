@@ -13,9 +13,10 @@ base_production = 2
 trade_goods = fish
 base_manpower = 1
 capital = "Bamig"
-is_city = yes
+ 
 
 
 owner = JKK
+is_city = yes
 controller = JKK
 add_core = JKK

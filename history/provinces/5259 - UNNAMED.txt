@@ -1,5 +1,6 @@
 add_core = ZTT
 owner = ZTT
+is_city = yes
 controller = ZTT
 culture = Mirrisan  discovered_by = west_estali_tech_gr
 religion = animism
@@ -9,5 +10,5 @@ base_production = 2
 trade_goods = fur
 base_manpower = 1
 capital = "Mandis"
-is_city = yes
+ 
 #extra_cost = 1

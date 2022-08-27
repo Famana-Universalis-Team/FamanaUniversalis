@@ -5,6 +5,7 @@ discovered_by = west_gomic_tech_gr
 add_core = NHL
 add_core = AGL
 owner = NHL
+is_city = yes
 controller = NHL
 culture = Nahallaian
 religion = lathvy
@@ -14,7 +15,7 @@ base_production = 3
 trade_goods = fur
 base_manpower = 4
 capital = "Poto Haroo"
-is_city = yes
+ 
 
 discovered_by = west_estali_tech_gr
 

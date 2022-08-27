@@ -13,12 +13,13 @@ base_production = 6
 trade_goods = iron
 base_manpower = 9
 capital = "Elorak"
-is_city = yes
+ 
 extra_cost = 5
 center_of_trade = 1
 
 
 owner = OSS
+is_city = yes
 controller = OSS
 add_core = OSS
 fort_15th = yes

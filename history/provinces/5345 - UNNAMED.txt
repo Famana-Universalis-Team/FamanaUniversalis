@@ -4,6 +4,7 @@ discovered_by = west_gomic_tech_gr
 culture = Nevian
 religion = lathvy
 owner = PEX
+is_city = yes
 controller = PEX
 add_core = PEX
 add_core = FST
@@ -17,7 +18,7 @@ base_production = 3
 trade_goods = livestock
 base_manpower = 2
 capital = "Urcol"
-is_city = yes
+ 
 
 
 add_local_autonomy = 50

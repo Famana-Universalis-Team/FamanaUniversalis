@@ -5,6 +5,7 @@ discovered_by = west_gomic_tech_gr
 culture = Yatian
 religion = aresian
 owner = YTI
+is_city = yes
 controller = YTI
 add_core = YTI
 
@@ -17,6 +18,6 @@ base_production = 3
 trade_goods = livestock
 base_manpower = 2
 capital = "Gemmes"
-is_city = yes
+ 
 
 

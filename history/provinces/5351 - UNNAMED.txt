@@ -4,6 +4,7 @@ discovered_by = west_gomic_tech_gr
 culture = Pextan
 religion = lathvy
 owner = PEX
+is_city = yes
 controller = PEX
 add_core = PEX
 add_core = RNP
@@ -17,7 +18,7 @@ base_production = 1
 trade_goods = livestock
 base_manpower = 1
 capital = "Pispaey"
-is_city = yes
+ 
 
 
 

@@ -5,6 +5,7 @@ discovered_by = west_gomic_tech_gr
 #UNNAMED
 add_core = UMZ
 owner = UMZ
+is_city = yes
 controller = UMZ
 culture = Umzatian
 religion = western_oppian
@@ -15,5 +16,5 @@ base_production = 1
 trade_goods = livestock
 base_manpower = 4
 capital = "Zbei"
-is_city = yes
+ 
 

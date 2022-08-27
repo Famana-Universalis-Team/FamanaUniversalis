@@ -7,6 +7,7 @@ discovered_by = west_gomic_tech_gr
 add_core = UMZ
 add_core = MEL
 owner = UMZ
+is_city = yes
 controller = UMZ
 culture = Umzatian
 religion = western_oppian
@@ -17,7 +18,7 @@ base_production = 2
 trade_goods = livestock
 base_manpower = 2
 capital = "Melab"
-is_city = yes
+ 
 
 
 add_claim = TCK

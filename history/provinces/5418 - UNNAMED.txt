@@ -4,6 +4,7 @@ discovered_by = west_gomic_tech_gr
 culture = Sixany
 religion = vinian
 owner = MRN
+is_city = yes
 controller = MRN
 add_core = MRN
 add_core = GMX
@@ -17,5 +18,5 @@ base_production = 4
 trade_goods = grain
 base_manpower = 4
 capital = "Soka"
-is_city = yes
+ 
 

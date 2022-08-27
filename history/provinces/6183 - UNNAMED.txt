@@ -4,6 +4,7 @@ discovered_by = west_gomic_tech_gr
 #UNNAMED
 add_core = ALT
 owner = ALT
+is_city = yes
 controller = ALT
 culture = Tolan
 religion = lathvy
@@ -13,7 +14,7 @@ base_production = 5
 trade_goods = livestock
 base_manpower = 4
 capital = "Alo Tramo"
-is_city = yes
+ 
 center_of_trade = 1
 
 discovered_by = west_estali_tech_gr

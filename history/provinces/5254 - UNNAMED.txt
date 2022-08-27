@@ -1,5 +1,6 @@
 add_core = MPL
 owner = MPL
+is_city = yes
 controller = MPL
 culture = Mirrisan
 discovered_by = west_estali_tech_gr
@@ -10,5 +11,5 @@ base_production = 1
 trade_goods = fish
 base_manpower = 2
 capital = "Nancephone"
-is_city = yes
+ 
 #extra_cost = 1

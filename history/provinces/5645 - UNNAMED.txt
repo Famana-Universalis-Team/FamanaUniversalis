@@ -4,6 +4,7 @@ discovered_by = west_gomic_tech_gr
 culture = Yabonian
 religion = bamali
 owner = YAB
+is_city = yes
 controller = YAB
 add_core = YAB
 
@@ -16,6 +17,6 @@ base_production = 2
 trade_goods = livestock
 base_manpower = 2
 capital = "Velliportz"
-is_city = yes
+ 
 
 

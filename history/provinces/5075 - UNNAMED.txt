@@ -5,6 +5,7 @@ discovered_by = west_gomic_tech_gr
 #UNNAMED
 add_core = ARI
 owner = ARI
+is_city = yes
 controller = ARI
 culture = Roplean
 religion = western_oppian
@@ -15,5 +16,5 @@ base_production = 3
 trade_goods = livestock
 base_manpower = 2
 capital = "Mers"
-is_city = yes
+ 
 

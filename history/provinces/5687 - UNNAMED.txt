@@ -6,6 +6,7 @@ discovered_by = washoom_tech_gr
 culture = Bilik_C
 religion = bilik
 owner = BLK
+is_city = yes
 controller = BLK
 add_core = BLK
 
@@ -18,12 +19,13 @@ base_production = 1
 trade_goods = livestock
 base_manpower = 1
 capital = "Dielber"
-is_city = yes
+ 
 
 
 
 212.6.7 = {
 owner = FSB
+is_city = yes
 controller = FSB
 add_core = FSB
 remove_core = BLK

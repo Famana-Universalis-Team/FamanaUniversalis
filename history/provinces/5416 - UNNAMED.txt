@@ -4,6 +4,7 @@ discovered_by = west_gomic_tech_gr
 culture = Glasian
 religion = vinian
 owner = JXS
+is_city = yes
 controller = JXS
 add_core = JXS
 
@@ -16,6 +17,6 @@ base_production = 3
 trade_goods = glass
 base_manpower = 3
 capital = "Meclikoon"
-is_city = yes
+ 
 
 

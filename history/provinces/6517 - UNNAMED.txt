@@ -2,6 +2,7 @@ discovered_by = estali_tech_gr
 culture = Lukschan
 religion = maschi
 owner = EVV
+is_city = yes
 controller = EVV
 add_core = EVV
 
@@ -14,5 +15,5 @@ base_production = 1
 trade_goods = iron
 base_manpower = 1
 capital = "UNNAMED"
-is_city = yes
+ 
 #extra_cost = 1

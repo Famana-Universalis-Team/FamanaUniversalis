@@ -4,6 +4,7 @@ discovered_by = west_gomic_tech_gr
 culture = Sixany
 religion = shirian
 owner = REL
+is_city = yes
 controller = REL
 add_core = REL
 
@@ -16,5 +17,5 @@ base_production = 1
 trade_goods = naval_supplies
 base_manpower = 2
 capital = "Mawl"
-is_city = yes
+ 
 

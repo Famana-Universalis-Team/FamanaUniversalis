@@ -8,10 +8,11 @@ base_production = 1
 base_manpower = 2
 add_core = TIT
 owner = TIT
+is_city = yes
 controller = TIT
 trade_goods = livestock
 capital = "Makorr"
-is_city = yes
+ 
 discovered_by = great_desert_tech_gr
 
 center_of_trade = 1

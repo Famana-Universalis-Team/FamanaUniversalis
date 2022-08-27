@@ -4,6 +4,7 @@ discovered_by = west_gomic_tech_gr
 culture = Neo_Xalnish
 religion = shirian
 owner = MSH
+is_city = yes
 controller = MSH
 add_core = MSH
 
@@ -16,7 +17,7 @@ base_production = 5
 trade_goods = livestock
 base_manpower = 5
 capital = "Shiraska Xon"
-is_city = yes
+ 
 
 
 fort_15th = yes

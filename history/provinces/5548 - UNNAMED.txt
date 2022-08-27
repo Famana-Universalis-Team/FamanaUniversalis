@@ -13,10 +13,11 @@ base_production = 2
 trade_goods = iron
 base_manpower = 3
 capital = "Psaym"
-is_city = yes
+ 
 
   
 
 owner = NUT
+is_city = yes
 controller = NUT
 add_core = NUT

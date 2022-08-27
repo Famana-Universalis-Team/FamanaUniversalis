@@ -4,6 +4,7 @@ discovered_by = west_gomic_tech_gr
 culture = Lerushian
 religion = lathvy
 owner = AGX
+is_city = yes
 controller = AGX
 add_core = AGX
 
@@ -16,6 +17,6 @@ base_production = 2
 trade_goods = copper
 base_manpower = 2
 capital = "Einliraion"
-is_city = yes
+ 
 
 

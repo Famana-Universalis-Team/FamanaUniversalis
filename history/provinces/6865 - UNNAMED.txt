@@ -4,13 +4,14 @@ culture = Placeholder_culture
 religion = animism
 add_core = SHV
 owner = SHV
+is_city = yes
 controller = SHV
 hre = yes
 base_tax = 1
 base_production = 1
 base_manpower = 1
 capital = "UNNAMED"
-is_city = yes
+ 
 
 discovered_by = hasmali_tech_gr
 

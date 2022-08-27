@@ -4,6 +4,7 @@ add_core = DOR
 add_core = NRQ
 add_core = KNK
 owner = DOR
+is_city = yes
 controller = DOR
 culture = Oblokelan
 religion = dorroman
@@ -13,7 +14,7 @@ base_production = 1
 trade_goods = slaves
 base_manpower = 2
 capital = "UNNAMED"
-is_city = yes
+ 
 discovered_by = qamoni_tech_gr
 
 

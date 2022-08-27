@@ -14,9 +14,10 @@ base_production = 1
 trade_goods = tropical_wood
 base_manpower = 1
 capital = "Linguish"
-is_city = yes
+ 
 
 
 owner = RSH
+is_city = yes
 controller = RSH
 add_core = RSH

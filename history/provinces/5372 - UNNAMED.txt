@@ -4,6 +4,7 @@ discovered_by = west_gomic_tech_gr
 culture = Xofkan
 religion = lathvy
 owner = AME
+is_city = yes
 controller = AME
 add_core = AME
 
@@ -16,7 +17,7 @@ base_production = 4
 trade_goods = paper
 base_manpower = 6
 capital = "Raliaex"
-is_city = yes
+ 
 center_of_trade = 1
 
 

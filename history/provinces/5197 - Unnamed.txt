@@ -4,6 +4,7 @@ discovered_by = west_gomic_tech_gr
 culture = West_Jasuan
 religion = egr
 owner = KIN
+is_city = yes
 controller = KIN
 add_core = KIN
 
@@ -16,6 +17,6 @@ base_production = 2
 trade_goods = gold
 base_manpower = 3
 capital = "Mukeri"
-is_city = yes
+ 
 extra_cost = 5
 

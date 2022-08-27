@@ -13,9 +13,10 @@ base_production = 1
 trade_goods = copper
 base_manpower = 2
 capital = "Zyx"
-is_city = yes
+ 
 
 
 owner = ZAK
+is_city = yes
 controller = ZAK
 add_core = ZAK

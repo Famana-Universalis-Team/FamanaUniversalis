@@ -5,6 +5,7 @@ discovered_by = west_gomic_tech_gr
 culture = Yatian
 religion = lathvy
 owner = IAK
+is_city = yes
 controller = IAK
 add_core = IAK
 
@@ -17,6 +18,6 @@ base_production = 3
 trade_goods = glass
 base_manpower = 4
 capital = "Iakperko"
-is_city = yes
+ 
 
 

@@ -4,6 +4,7 @@ discovered_by = west_gomic_tech_gr
 culture = Lerushian
 religion = lathvy
 owner = AGX
+is_city = yes
 controller = AGX
 add_core = AGX
 
@@ -16,7 +17,7 @@ base_production = 8
 trade_goods = glass
 base_manpower = 7
 capital = "Agixion"
-is_city = yes
+ 
 
 
 center_of_trade = 3

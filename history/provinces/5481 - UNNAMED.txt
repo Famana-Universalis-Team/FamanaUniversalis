@@ -5,6 +5,7 @@ discovered_by = west_gomic_tech_gr
 culture = Kapolian
 religion = lathvy
 owner = KAP
+is_city = yes
 controller = KAP
 add_core = KAP
 
@@ -17,7 +18,7 @@ base_production = 9
 trade_goods = paper
 base_manpower = 7
 capital = "Degladon"
-is_city = yes
+ 
 center_of_trade = 1
 
 fort_15th = yes

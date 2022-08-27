@@ -13,17 +13,19 @@ base_production = 2
 trade_goods = grain
 base_manpower = 3
 capital = "Ratusa"
-is_city = yes
+ 
 
   
 
 owner = DES
+is_city = yes
 controller = DES
 add_core = DES
 add_core = GDS
 
 212.6.7 = {
 owner = DBT
+is_city = yes
 controller = DBT
 add_core = DBT
 remove_core = DES

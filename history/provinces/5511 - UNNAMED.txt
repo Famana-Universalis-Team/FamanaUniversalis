@@ -5,6 +5,7 @@ discovered_by = west_gomic_tech_gr
 culture = Yatian
 religion = bamali
 owner = PAS
+is_city = yes
 controller = PAS
 add_core = PAS
 
@@ -17,6 +18,6 @@ base_production = 3
 trade_goods = paper
 base_manpower = 3
 capital = "Jaktan"
-is_city = yes
+ 
 
 

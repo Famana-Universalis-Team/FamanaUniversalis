@@ -12,8 +12,9 @@ base_tax = 1
 base_production = 1
 trade_goods = livestock
 base_manpower = 1
-is_city = yes
+ 
 extra_cost = 2
+is_city = no
 native_size = 30
 native_ferocity = 6
 native_hostileness = 5

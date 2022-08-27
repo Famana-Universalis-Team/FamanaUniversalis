@@ -4,6 +4,7 @@ discovered_by = west_gomic_tech_gr
 culture = Hoxan
 religion = eastern_oppian
 owner = SYL
+is_city = yes
 controller = SYL
 add_core = SYL
 
@@ -16,5 +17,5 @@ base_production = 1
 trade_goods = naval_supplies
 base_manpower = 1
 capital = "Shalack"
-is_city = yes
+ 
 #extra_cost = 1

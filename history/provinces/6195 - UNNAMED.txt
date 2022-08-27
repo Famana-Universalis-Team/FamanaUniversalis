@@ -4,6 +4,7 @@ discovered_by = west_gomic_tech_gr
 #UNNAMED
 add_core = NHL
 owner = NHL
+is_city = yes
 controller = NHL
 culture = Nahallaian
 religion = lathvy
@@ -13,7 +14,7 @@ base_production = 1
 trade_goods = grain
 base_manpower = 2
 capital = "Idaio"
-is_city = yes
+ 
 
 discovered_by = west_estali_tech_gr
 

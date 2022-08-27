@@ -13,10 +13,11 @@ base_production = 1
 trade_goods = fish
 base_manpower = 1
 capital = "Gowa"
-is_city = yes
+ 
 
   
 
 owner = FNC
+is_city = yes
 controller = FNC
 add_core = FNC

@@ -2,6 +2,7 @@ discovered_by = lathvy_tech_gr
 culture = Ordican
 religion = lathvy
 owner = ORC
+is_city = yes
 controller = ORC
 add_core = ORC
 add_core = NAB
@@ -15,7 +16,7 @@ base_production = 3
 trade_goods = grain
 base_manpower = 2
 capital = "Jerritin"
-is_city = yes
+ 
 
 
 discovered_by = west_estali_tech_gr

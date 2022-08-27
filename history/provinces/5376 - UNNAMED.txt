@@ -4,6 +4,7 @@ discovered_by = west_gomic_tech_gr
 culture = Xofkan
 religion = lathvy
 owner = XOF
+is_city = yes
 controller = XOF
 add_core = XOF
 
@@ -16,6 +17,6 @@ base_production = 3
 trade_goods = fish
 base_manpower = 2
 capital = "Nert"
-is_city = yes
+ 
 
 

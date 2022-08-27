@@ -14,9 +14,10 @@ base_production = 2
 trade_goods = iron
 base_manpower = 2
 capital = "Artokay"
-is_city = yes
+ 
 
 
 owner = OKU
+is_city = yes
 controller = OKU
 add_core = OKU

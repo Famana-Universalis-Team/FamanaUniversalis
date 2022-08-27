@@ -4,6 +4,7 @@ discovered_by = west_gomic_tech_gr
 culture = Morian_C
 religion = morian
 owner = ALM
+is_city = yes
 controller = ALM
 add_core = ALM
 add_core = MRS
@@ -17,7 +18,7 @@ base_production = 8
 trade_goods = iron
 base_manpower = 8
 capital = "Morsum"
-is_city = yes
+ 
 extra_cost = 10
 fort_15th = yes
 add_province_triggered_modifier = morsum_center_fake

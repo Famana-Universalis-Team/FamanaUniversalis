@@ -6,6 +6,7 @@ discovered_by = west_gomic_tech_gr
 add_core = TCK
 add_core = SAR
 owner = TCK
+is_city = yes
 controller = TCK
 culture = Quanexite
 religion = western_oppian
@@ -16,7 +17,7 @@ base_production = 4
 trade_goods = wine
 base_manpower = 5
 capital = "Lesas"
-is_city = yes
+ 
 
 
 add_core = QUA

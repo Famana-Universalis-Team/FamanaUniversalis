@@ -14,10 +14,11 @@ base_production = 3
 trade_goods = wool
 base_manpower = 2
 capital = "Carfey"
-is_city = yes
+ 
 
   
 
 owner = LYP
+is_city = yes
 controller = LYP
 add_core = LYP

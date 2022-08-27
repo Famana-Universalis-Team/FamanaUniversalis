@@ -13,11 +13,12 @@ base_production = 3
 trade_goods = fur
 base_manpower = 3
 capital = "Lemog"
-is_city = yes
+ 
 
   
 
 owner = NUT
+is_city = yes
 controller = NUT
 add_core = NUT
 add_core = OAN

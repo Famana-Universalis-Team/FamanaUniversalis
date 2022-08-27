@@ -4,6 +4,7 @@ discovered_by = west_gomic_tech_gr
 culture = Glasian
 religion = shirian
 owner = ALM
+is_city = yes
 controller = ALM
 add_core = ALM
 
@@ -16,7 +17,7 @@ base_production = 4
 trade_goods = cloth
 base_manpower = 3
 capital = "Glazia"
-is_city = yes
+ 
 center_of_trade = 1
 
 

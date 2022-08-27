@@ -3,6 +3,7 @@ discovered_by = naravami_tech_gr
 culture = Leronyan
 religion = gotzli
 owner = LER
+is_city = yes
 controller = LER
 add_core = LER
 add_core = MIZ
@@ -16,7 +17,7 @@ base_production = 4
 trade_goods = copper
 base_manpower = 4
 capital = "Nizoora"
-is_city = yes
+ 
 center_of_trade = 1
 
 extra_cost = 4

@@ -4,6 +4,7 @@ discovered_by = west_gomic_tech_gr
 culture = Glasian
 religion = vinian
 owner = ALM
+is_city = yes
 controller = ALM
 add_core = ALM
 
@@ -16,6 +17,6 @@ base_production = 4
 trade_goods = livestock
 base_manpower = 3
 capital = "Roqro"
-is_city = yes
+ 
 
 

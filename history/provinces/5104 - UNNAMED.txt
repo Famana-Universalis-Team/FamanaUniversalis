@@ -13,10 +13,11 @@ base_production = 6
 trade_goods = fish
 base_manpower = 5
 capital = "Mesdool"
-is_city = yes
+ 
 
 
 owner = OSS
+is_city = yes
 controller = OSS
 add_core = OSS
 add_core = VLM
@@ -24,6 +25,7 @@ add_core = VLM
 
 212.6.7 = {
 owner = VLM
+is_city = yes
 controller = VLM
 add_core = VLM
 remove_core = OSS

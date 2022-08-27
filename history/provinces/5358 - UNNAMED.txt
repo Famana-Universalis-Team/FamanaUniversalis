@@ -4,6 +4,7 @@ discovered_by = west_gomic_tech_gr
 culture = Pextan
 religion = lathvy
 owner = PEX
+is_city = yes
 controller = PEX
 add_core = PEX
 add_core = POM
@@ -17,6 +18,6 @@ base_production = 3
 trade_goods = wine
 base_manpower = 3
 capital = "Ballealfo"
-is_city = yes
+ 
 
 

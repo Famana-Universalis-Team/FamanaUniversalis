@@ -4,6 +4,7 @@ discovered_by = west_gomic_tech_gr
 culture = Maxan_East_Emastalian
 religion = lathvy
 owner = VAV
+is_city = yes
 controller = VAV
 add_core = VAV
 
@@ -16,6 +17,6 @@ base_production = 5
 trade_goods = paper
 base_manpower = 5
 capital = "Vava"
-is_city = yes
+ 
 
 

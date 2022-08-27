@@ -3,6 +3,7 @@ discovered_by = naravami_tech_gr
 culture = Leronyan
 religion = gotzli
 owner = LER
+is_city = yes
 controller = LER
 add_core = LER
 add_core = BIO
@@ -16,7 +17,7 @@ base_production = 2
 trade_goods = fish
 base_manpower = 3
 capital = "UNNAMED"
-is_city = yes
+ 
 
 
 

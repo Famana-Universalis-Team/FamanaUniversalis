@@ -4,6 +4,7 @@ discovered_by = west_gomic_tech_gr
 culture = Maxan_West_Emastalian
 religion = lathvy
 owner = DRA
+is_city = yes
 controller = DRA
 add_core = DRA
 
@@ -16,6 +17,6 @@ base_production = 1
 trade_goods = fish
 base_manpower = 2
 capital = "Mo Axil"
-is_city = yes
+ 
 
 

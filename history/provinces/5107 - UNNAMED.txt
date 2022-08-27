@@ -13,11 +13,12 @@ base_production = 2
 trade_goods = salt
 base_manpower = 3
 capital = "Ysmat"
-is_city = yes
+ 
 
   
 
 owner = OSS
+is_city = yes
 controller = OSS
 add_core = OSS
 add_core = ELR

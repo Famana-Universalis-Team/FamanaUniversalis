@@ -2,6 +2,7 @@
 #UNNAMED
 add_core = FAS
 owner = FAS
+is_city = yes
 controller = FAS
 culture = Fashran
 religion = tonmo
@@ -12,7 +13,7 @@ base_production = 4
 trade_goods = chinaware
 base_manpower = 3
 capital = "Anmoea"
-is_city = yes
+ 
 
 center_of_trade = 2
 

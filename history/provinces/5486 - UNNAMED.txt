@@ -5,6 +5,7 @@ discovered_by = west_gomic_tech_gr
 culture = Kachik
 religion = lathvy
 owner = SKT
+is_city = yes
 controller = SKT
 add_core = SKT
 add_core = RCK
@@ -18,7 +19,7 @@ base_production = 4
 trade_goods = livestock
 base_manpower = 2
 capital = "Jantavu"
-is_city = yes
+ 
 
 fort_15th = yes
 

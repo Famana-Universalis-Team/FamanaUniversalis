@@ -13,11 +13,12 @@ base_production = 1
 trade_goods = tea
 base_manpower = 1
 capital = "Garkay"
-is_city = yes
+ 
 
   
 
 owner = RTK
+is_city = yes
 controller = RTK
 add_core = RTK
 

@@ -4,6 +4,7 @@ discovered_by = west_gomic_tech_gr
 culture = Mikledonian
 religion = lathvy
 owner = KAP
+is_city = yes
 controller = KAP
 add_core = KAP
 
@@ -16,6 +17,6 @@ base_production = 3
 trade_goods = iron
 base_manpower = 3
 capital = "Pea Neas"
-is_city = yes
+ 
 
 

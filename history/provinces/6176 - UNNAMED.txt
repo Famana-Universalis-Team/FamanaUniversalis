@@ -3,6 +3,7 @@ discovered_by = lathvy_tech_gr
 #UNNAMED
 add_core = YEN
 owner = YEN
+is_city = yes
 controller = YEN
 culture = Tolan
 religion = ordic
@@ -12,7 +13,7 @@ base_production = 5
 trade_goods = grain
 base_manpower = 3
 capital = "Ceanio"
-is_city = yes
+ 
 
 discovered_by = west_estali_tech_gr
 

@@ -4,6 +4,7 @@ discovered_by = west_gomic_tech_gr
 culture = Oppio_Jasuan
 religion = eastern_oppian
 owner = YAB
+is_city = yes
 controller = YAB
 add_core = YAB
 add_core = GET
@@ -17,11 +18,12 @@ base_production = 1
 trade_goods = salt
 base_manpower = 2
 capital = "Raiseer"
-is_city = yes
+ 
 
 
 212.6.7 = {
 owner = BAL
+is_city = yes
 controller = BAL
 add_core = BAL
 remove_core = YAB

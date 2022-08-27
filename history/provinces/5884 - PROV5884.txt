@@ -3,6 +3,7 @@ discovered_by = west_gomic_tech_gr
 culture = Nahallaian
 religion = lathvy
 owner = NHL
+is_city = yes
 controller = NHL
 add_core = NHL
 
@@ -14,7 +15,7 @@ base_tax = 5
 base_production = 4
 trade_goods = naval_supplies
 base_manpower = 4
-is_city = yes
+ 
 capital = "Dreklos"
 
 discovered_by = west_estali_tech_gr

@@ -13,10 +13,11 @@ base_production = 1
 trade_goods = iron
 base_manpower = 2
 capital = "Fona"
-is_city = yes
+ 
 
   
 
 owner = FNC
+is_city = yes
 controller = FNC
 add_core = FNC

@@ -1,5 +1,6 @@
 add_core = OLF
 owner = OLF
+is_city = yes
 controller = OLF
 culture = Mirrisan  discovered_by = west_estali_tech_gr
 religion = animism
@@ -9,5 +10,5 @@ base_production = 1
 trade_goods = fish
 base_manpower = 1
 capital = "Oipo' Alo"
-is_city = yess
+ s
 #extra_cost = 1

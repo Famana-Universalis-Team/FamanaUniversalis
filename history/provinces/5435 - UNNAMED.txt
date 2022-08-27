@@ -4,6 +4,7 @@ discovered_by = west_gomic_tech_gr
 culture = Glasian
 religion = morian
 owner = ALM
+is_city = yes
 controller = ALM
 add_core = ALM
 
@@ -16,6 +17,6 @@ base_production = 3
 trade_goods = fish
 base_manpower = 4
 capital = "Scoyah"
-is_city = yes
+ 
 
 

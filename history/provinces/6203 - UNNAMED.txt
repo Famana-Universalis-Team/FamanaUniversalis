@@ -5,6 +5,7 @@ discovered_by = west_gomic_tech_gr
 #UNNAMED
 add_core = ORC
 owner = ORC
+is_city = yes
 controller = ORC
 add_core = NES
 add_core = ARO
@@ -16,7 +17,7 @@ base_production = 4
 trade_goods = paper
 base_manpower = 3
 capital = "Nesrin"
-is_city = yes
+ 
 center_of_trade = 2
 
 

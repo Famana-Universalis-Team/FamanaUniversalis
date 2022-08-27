@@ -5,6 +5,7 @@ discovered_by = west_gomic_tech_gr
 culture = Bamali_C
 religion = bamali
 owner = YAB
+is_city = yes
 controller = YAB
 add_core = YAB
 
@@ -17,6 +18,6 @@ base_production = 3
 trade_goods = cloth
 base_manpower = 3
 capital = "Yevia"
-is_city = yes
+ 
 
 

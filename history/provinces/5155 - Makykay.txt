@@ -13,12 +13,13 @@ base_production = 4
 trade_goods = glass
 base_manpower = 3
 capital = "Gadea"
-is_city = yes
+ 
 center_of_trade = 1
 add_province_triggered_modifier = religious_center
 
 
 fort_15th = yes
 owner = GDA
+is_city = yes
 controller = GDA
 add_core = GDA

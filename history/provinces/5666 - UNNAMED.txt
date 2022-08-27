@@ -4,6 +4,7 @@ discovered_by = west_gomic_tech_gr
 culture = Maxan_East_Emastalian
 religion = lathvy
 owner = ELQ
+is_city = yes
 controller = ELQ
 add_core = ELQ
 
@@ -16,6 +17,6 @@ base_production = 3
 trade_goods = naval_supplies
 base_manpower = 3
 capital = "Brelonsua"
-is_city = yes
+ 
 
 

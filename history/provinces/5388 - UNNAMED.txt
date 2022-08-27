@@ -4,6 +4,7 @@ discovered_by = west_gomic_tech_gr
 culture = Neo_Xalnish
 religion = shirian
 owner = XON
+is_city = yes
 controller = XON
 add_core = XON
 
@@ -16,7 +17,7 @@ base_production = 10
 trade_goods = chinaware
 base_manpower = 9
 capital = "Xon"
-is_city = yes
+ 
 extra_cost = 20
 center_of_trade = 2
 fort_15th = yes

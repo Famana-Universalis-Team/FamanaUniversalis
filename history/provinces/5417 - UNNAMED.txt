@@ -4,6 +4,7 @@ discovered_by = west_gomic_tech_gr
 culture = Glasian
 religion = vinian
 owner = MRN
+is_city = yes
 controller = MRN
 add_core = MRN
 
@@ -16,5 +17,5 @@ base_production = 4
 trade_goods = wool
 base_manpower = 2
 capital = "Anbish"
-is_city = yes
+ 
 

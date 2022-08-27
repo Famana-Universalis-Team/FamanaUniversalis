@@ -2,6 +2,7 @@ discovered_by = estali_tech_gr
 culture = Lukschan
 religion = maschi
 owner = OTS
+is_city = yes
 controller = OTS
 add_core = OTS
 
@@ -14,5 +15,5 @@ base_production = 2
 trade_goods = iron
 base_manpower = 1
 capital = "UNNAMED"
-is_city = yes
+ 
 #extra_cost = 1

@@ -4,6 +4,7 @@ discovered_by = west_gomic_tech_gr
 culture = Neo_Xalnish
 religion = lathvy
 owner = REL
+is_city = yes
 controller = REL
 add_core = REL
 
@@ -16,5 +17,5 @@ base_production = 3
 trade_goods = wine
 base_manpower = 2
 capital = "Relxon"
-is_city = yes
+ 
 

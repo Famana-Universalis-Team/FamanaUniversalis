@@ -2,6 +2,7 @@
 #UNNAMED
 add_core = FAS
 owner = FAS
+is_city = yes
 controller = FAS
 culture = South_Nhoman
 religion = tonmo
@@ -11,7 +12,7 @@ base_production = 2
 trade_goods = grain
 base_manpower = 2
 capital = "Takent"
-is_city = yes
+ 
 center_of_trade = 1
 
 discovered_by = washoom_tech_gr

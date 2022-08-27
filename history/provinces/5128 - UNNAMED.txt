@@ -14,15 +14,17 @@ base_production = 3
 trade_goods = glass
 base_manpower = 3
 capital = "Sapar"
-is_city = yes
+ 
 
 
 owner = GRO
+is_city = yes
 controller = GRO
 add_core = GRO
 
 212.6.7 = {
 owner = NUS
+is_city = yes
 controller = NUS
 add_core = NUS
 remove_core = GRO

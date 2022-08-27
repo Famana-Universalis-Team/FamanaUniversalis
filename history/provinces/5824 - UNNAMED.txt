@@ -5,6 +5,7 @@ discovered_by = west_gomic_tech_gr
 #Constantinople
 add_core = PPX
 owner = PPX
+is_city = yes
 controller = PPX
 culture = Walaran
 religion = lathvy
@@ -14,5 +15,5 @@ base_production = 3
 trade_goods = fish
 base_manpower = 3
 capital = "Jaxam"
-is_city = yes
+ 
 extra_cost = 2

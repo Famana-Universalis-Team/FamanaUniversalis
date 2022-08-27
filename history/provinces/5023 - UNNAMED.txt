@@ -4,6 +4,7 @@ discovered_by = lathvy_tech_gr
 #UNNAMED
 add_core = LAG
 owner = LAG
+is_city = yes
 controller = LAG
 culture = Laglan
 religion = western_oppian
@@ -14,7 +15,7 @@ base_production = 2
 trade_goods = fish
 base_manpower = 2
 capital = "Haoli"
-is_city = yes
+ 
 
 
 fort_15th = yes

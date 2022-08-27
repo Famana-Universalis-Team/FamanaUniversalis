@@ -2,6 +2,7 @@ discovered_by = estali_tech_gr
 discovered_by = lathvy_tech_gr
 add_core = MLD
 owner = MLD
+is_city = yes
 controller = MLD
 culture = Maldikian
 religion = lathvy
@@ -11,7 +12,7 @@ base_production = 1
 trade_goods = naval_supplies
 base_manpower = 2
 capital = "Ienlquinxte"
-is_city = yes
+ 
 discovered_by = naravami_tech_gr
 
 

@@ -4,6 +4,7 @@ discovered_by = west_gomic_tech_gr
 culture = Ghaloyan
 religion = bamali
 owner = YAB
+is_city = yes
 controller = YAB
 add_core = YAB
 add_core = YNS
@@ -17,5 +18,5 @@ base_production = 1
 trade_goods = livestock
 base_manpower = 3
 capital = "Tiz"
-is_city = yes
+ 
 

@@ -6,6 +6,7 @@ discovered_by = west_gomic_tech_gr
 add_core = TCK
 add_core = QUA
 owner = TCK
+is_city = yes
 controller = TCK
 culture = Quanexite
 religion = western_oppian
@@ -16,5 +17,5 @@ base_production = 5
 trade_goods = grain
 base_manpower = 5
 capital = "Kistu"
-is_city = yes
+ 
 

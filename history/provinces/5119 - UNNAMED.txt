@@ -13,17 +13,19 @@ base_production = 8
 trade_goods = salt
 base_manpower = 6
 capital = "Neches"
-is_city = yes
+ 
 center_of_trade = 1
 
 
 owner = GRO
+is_city = yes
 controller = GRO
 add_core = GRO
 add_core = NCH
 
 212.6.7 = {
 owner = NCH
+is_city = yes
 controller = NCH
 add_core = NCH
 remove_core = GRO

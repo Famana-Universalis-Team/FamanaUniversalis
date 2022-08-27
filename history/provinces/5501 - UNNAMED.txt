@@ -4,6 +4,7 @@ discovered_by = west_gomic_tech_gr
 culture = Ghaloyan
 religion = bamali
 owner = GHA
+is_city = yes
 controller = GHA
 add_core = GHA
 
@@ -16,7 +17,7 @@ base_production = 5
 trade_goods = cloth
 base_manpower = 3
 capital = "Ghaloya"
-is_city = yes
+ 
 
 
 fort_15th = yes

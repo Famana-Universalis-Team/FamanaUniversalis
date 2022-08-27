@@ -8,11 +8,12 @@ add_core = VOR
 base_tax = 1
 base_production = 1
 base_manpower = 2
+is_city = no
 native_size = 30
 native_ferocity = 6
 native_hostileness = 5
 capital = "Vanam"
-is_city = yes
+ 
 
 
 discovered_by = west_estali_tech_gr

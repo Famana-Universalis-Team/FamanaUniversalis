@@ -4,6 +4,7 @@ discovered_by = west_gomic_tech_gr
 culture = Mahanshan
 religion = eastern_oppian
 owner = MHN
+is_city = yes
 controller = MHN
 add_core = MHN
 add_core = HSL
@@ -17,6 +18,6 @@ base_production = 3
 trade_goods = fish
 base_manpower = 3
 capital = "Mishol"
-is_city = yes
+ 
 
 

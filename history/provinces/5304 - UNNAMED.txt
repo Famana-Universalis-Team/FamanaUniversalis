@@ -4,6 +4,7 @@ discovered_by = west_gomic_tech_gr
 culture = Glazian
 religion = lathvy
 owner = PTG
+is_city = yes
 controller = PTG
 add_core = PTG
 
@@ -16,6 +17,6 @@ base_production = 3
 trade_goods = grain
 base_manpower = 1
 capital = "Nossissix"
-is_city = yes
+ 
 
 

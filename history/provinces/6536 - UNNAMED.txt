@@ -3,6 +3,7 @@ discovered_by = naravami_tech_gr
 culture = Hozyan
 religion = gotzli
 owner = TOI
+is_city = yes
 controller = TOI
 add_core = TOI
 
@@ -15,7 +16,7 @@ base_production = 3
 trade_goods = grain
 base_manpower = 2
 capital = "UNNAMED"
-is_city = yes
+ 
 
 
 

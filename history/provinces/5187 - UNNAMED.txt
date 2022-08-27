@@ -4,6 +4,7 @@ discovered_by = west_gomic_tech_gr
 culture = Zoblotran
 religion = eastern_oppian
 owner = ZBL
+is_city = yes
 controller = ZBL
 add_core = ZBL
 
@@ -16,6 +17,6 @@ base_production = 3
 trade_goods = grain
 base_manpower = 3
 capital = "Talix"
-is_city = yes
+ 
 
 

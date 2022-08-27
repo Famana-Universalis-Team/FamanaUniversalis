@@ -4,6 +4,7 @@ discovered_by = west_gomic_tech_gr
 culture = Yabonian
 religion = egr
 owner = YAB
+is_city = yes
 controller = YAB
 add_core = YAB
 add_core = NOG
@@ -16,11 +17,12 @@ base_production = 2
 trade_goods = wine
 base_manpower = 1
 capital = "Aev"
-is_city = yes
+ 
 
 
 212.6.7 = {
 owner = NOG
+is_city = yes
 controller = NOG
 add_core = NOG
 remove_core = YAB

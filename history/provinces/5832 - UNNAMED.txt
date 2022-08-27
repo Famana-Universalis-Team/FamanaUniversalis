@@ -9,16 +9,18 @@ base_tax = 1
 base_production = 1
 base_manpower = 1
 # grain
+is_city = no
 native_size = 12
 native_ferocity = 5
 native_hostileness = 5
 capital = "Yutuhli"
-is_city = yes
+ 
 
 discovered_by = washoom_tech_gr
 
 212.6.7 = {
 owner = FSB
+is_city = yes
 controller = FSB
 add_core = FSB
 #remove_core = 

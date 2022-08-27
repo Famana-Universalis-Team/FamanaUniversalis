@@ -6,14 +6,16 @@ hre = no
 base_tax = 1
 base_production = 1
 base_manpower = 1
+is_city = no
 native_size = 1
 native_ferocity = 6
 native_hostileness = 5
 capital = "Enastin"
-is_city = yes
+ 
 
 212.6.7 = {
 owner = GET
+is_city = yes
 controller = GET
 add_core = GET
 #remove_core = 

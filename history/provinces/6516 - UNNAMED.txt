@@ -2,6 +2,7 @@ discovered_by = estali_tech_gr
 culture = Lukschan
 religion = maschi
 owner = KYR
+is_city = yes
 controller = KYR
 add_core = KYR
 
@@ -14,5 +15,5 @@ base_production = 1
 trade_goods = fur
 base_manpower = 1
 capital = "UNNAMED"
-is_city = yes
+ 
 #extra_cost = 1

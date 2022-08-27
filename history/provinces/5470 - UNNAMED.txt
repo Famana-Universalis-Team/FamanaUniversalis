@@ -4,6 +4,7 @@ discovered_by = west_gomic_tech_gr
 culture = West_Jasuan
 religion = lathvy
 owner = KIN
+is_city = yes
 controller = KIN
 add_core = KIN
 add_core = PAU
@@ -16,6 +17,6 @@ base_production = 4
 trade_goods = grain
 base_manpower = 3
 capital = "Anoya"
-is_city = yes
+ 
 
 

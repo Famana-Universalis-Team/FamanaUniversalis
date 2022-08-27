@@ -4,6 +4,7 @@ discovered_by = west_gomic_tech_gr
 culture = Geteri
 religion = eastern_oppian
 owner = YAB
+is_city = yes
 controller = YAB
 add_core = YAB
 add_core = GET
@@ -17,11 +18,12 @@ base_production = 1
 trade_goods = livestock
 base_manpower = 2
 capital = "Gauyar"
-is_city = yes
+ 
 
 
 212.6.7 = {
 owner = GET
+is_city = yes
 controller = GET
 add_core = GET
 remove_core = YAB

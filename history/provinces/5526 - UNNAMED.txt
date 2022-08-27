@@ -5,6 +5,7 @@ discovered_by = west_gomic_tech_gr
 culture = Middle_Aresian
 religion = aresian
 owner = NIK
+is_city = yes
 controller = NIK
 add_core = NIK
 
@@ -17,6 +18,6 @@ base_production = 5
 trade_goods = glass
 base_manpower = 4
 capital = "Vewdi"
-is_city = yes
+ 
 
 

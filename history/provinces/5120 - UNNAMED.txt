@@ -13,9 +13,10 @@ base_production = 2
 trade_goods = wool
 base_manpower = 2
 capital = "Khagoram"
-is_city = yes
+ 
 
 
 owner = GRO
+is_city = yes
 controller = GRO
 add_core = GRO

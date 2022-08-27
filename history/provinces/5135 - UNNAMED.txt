@@ -13,11 +13,12 @@ base_production = 1
 trade_goods = spices
 base_manpower = 2
 capital = "Sorzka"
-is_city = yes
+ 
 
   
 
 owner = FNC
+is_city = yes
 controller = FNC
 add_core = FNC
 add_claim = DES

@@ -4,6 +4,7 @@ discovered_by = west_gomic_tech_gr
 culture = Sixany
 religion = vinian
 owner = SIX
+is_city = yes
 controller = SIX
 add_core = SIX
 add_core = AGS
@@ -17,5 +18,5 @@ base_production = 2
 trade_goods = cloth
 base_manpower = 2
 capital = "Vintin"
-is_city = yes
+ 
 

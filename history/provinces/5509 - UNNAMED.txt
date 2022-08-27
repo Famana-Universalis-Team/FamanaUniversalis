@@ -5,6 +5,7 @@ discovered_by = west_gomic_tech_gr
 culture = Blastan
 religion = eastern_oppian
 owner = YTB
+is_city = yes
 controller = YTB
 add_core = YTB
 
@@ -17,7 +18,7 @@ base_production = 6
 trade_goods = gems
 base_manpower = 5
 capital = "Blasta"
-is_city = yes
+ 
 center_of_trade = 1
 
 

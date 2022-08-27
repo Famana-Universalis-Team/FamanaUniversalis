@@ -5,6 +5,7 @@ discovered_by = west_gomic_tech_gr
 culture = Yatian
 religion = bamali
 owner = EMS
+is_city = yes
 controller = EMS
 add_core = EMS
 
@@ -17,7 +18,7 @@ base_production = 5
 trade_goods = fish
 base_manpower = 4
 capital = "Emsiloa"
-is_city = yes
+ 
 
 add_permanent_province_modifier = {
 	name = river_estuary_modifier

@@ -3,6 +3,7 @@ discovered_by = west_gomic_tech_gr
 culture = Ordican
 religion = lathvy
 owner = ORC
+is_city = yes
 controller = ORC
 add_core = ORC
 add_core = NAB
@@ -16,7 +17,7 @@ base_production = 3
 trade_goods = grain
 base_manpower = 2
 capital = "Lham"
-is_city = yes
+ 
 center_of_trade = 1
 
 

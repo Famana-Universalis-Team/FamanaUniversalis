@@ -13,11 +13,12 @@ base_production = 1
 trade_goods = grain
 base_manpower = 1
 capital = "Dyri Lasoo"
-is_city = yes
+ 
 
   
 
 owner = DYR
+is_city = yes
 controller = DYR
 add_core = DYR
 add_permanent_province_modifier = {

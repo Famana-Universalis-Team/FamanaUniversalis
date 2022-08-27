@@ -5,6 +5,7 @@ discovered_by = west_gomic_tech_gr
 culture = Middle_Aresian
 religion = egr
 owner = VRK
+is_city = yes
 controller = VRK
 add_core = VRK
 
@@ -17,6 +18,6 @@ base_production = 3
 trade_goods = livestock
 base_manpower = 3
 capital = "Verko"
-is_city = yes
+ 
 
 

@@ -13,16 +13,18 @@ base_production = 2
 trade_goods = cloth
 base_manpower = 2
 capital = "Fubater"
-is_city = yes
+ 
 
 
 owner = GRO
+is_city = yes
 controller = GRO
 add_core = GRO
 add_core = NCH
 
 212.6.7 = {
 owner = NCH
+is_city = yes
 controller = NCH
 add_core = NCH
 remove_core = GRO

@@ -6,6 +6,7 @@ discovered_by = washoom_tech_gr
 culture = Bilik_C
 religion = bilik
 owner = BLK
+is_city = yes
 controller = BLK
 add_core = BLK
 
@@ -18,7 +19,7 @@ base_production = 6
 trade_goods = fish
 base_manpower = 6
 capital = "Dimdivu"
-is_city = yes
+ 
 add_permanent_province_modifier = {
 	name = river_estuary_modifier
 	duration = -1
@@ -32,6 +33,7 @@ center_of_trade = 1
 
 212.6.7 = {
 owner = FSB
+is_city = yes
 controller = FSB
 add_core = FSB
 remove_core = BLK

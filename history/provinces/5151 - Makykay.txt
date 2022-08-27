@@ -13,9 +13,10 @@ base_production = 1
 trade_goods = gems
 base_manpower = 1
 capital = "Esluz"
-is_city = yes
+ 
 
 
 owner = ASR
+is_city = yes
 controller = ASR
 add_core = ASR

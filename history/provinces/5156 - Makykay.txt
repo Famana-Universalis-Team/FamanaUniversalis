@@ -13,10 +13,11 @@ base_production = 3
 trade_goods = iron
 base_manpower = 1
 capital = "Jikiki"
-is_city = yes
+ 
 
 
 owner = ZAK
+is_city = yes
 controller = ZAK
 add_core = ZAK
 add_core = HRK

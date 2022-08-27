@@ -5,16 +5,18 @@ culture = Lihisian
 religion = naravami
 owner = LIH
 add_core = LIH
+is_city = yes
 controller = LIH
 hre = no
 base_tax = 1
 base_production = 1
 base_manpower = 1
+is_city = no
 native_size = 25
 native_ferocity = 6
 native_hostileness = 5
 capital = "Lihis"
-is_city = yes
+ 
 
 
 

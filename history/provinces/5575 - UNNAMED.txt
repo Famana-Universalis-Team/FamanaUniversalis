@@ -4,6 +4,7 @@ discovered_by = west_gomic_tech_gr
 culture = Maxan_East_Emastalian
 religion = lathvy
 owner = PXA
+is_city = yes
 controller = PXA
 add_core = PXA
 
@@ -16,7 +17,7 @@ base_production = 4
 trade_goods = paper
 base_manpower = 4
 capital = "Poxa"
-is_city = yes
+ 
 center_of_trade = 1
 
 fort_15th = yes

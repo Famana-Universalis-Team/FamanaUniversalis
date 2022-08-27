@@ -4,6 +4,7 @@ discovered_by = lathvy_tech_gr
 #UNNAMED
 add_core = RDU
 owner = RDU
+is_city = yes
 controller = RDU
 culture = Rduma
 religion = naravami
@@ -13,7 +14,7 @@ base_production = 2
 trade_goods = livestock
 base_manpower = 2
 capital = "Kletvar"
-is_city = yes
+ 
 
 discovered_by = naravami_tech_gr
 

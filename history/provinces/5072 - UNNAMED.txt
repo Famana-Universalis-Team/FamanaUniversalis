@@ -5,6 +5,7 @@ discovered_by = west_gomic_tech_gr
 #UNNAMED
 add_core = ROP
 owner = ROP
+is_city = yes
 controller = ROP
 culture = Roplean
 religion = western_oppian
@@ -15,6 +16,6 @@ base_production = 6
 trade_goods = cloth
 base_manpower = 6
 capital = "Nejavil"
-is_city = yes
+ 
 extra_cost = 4
 fort_15th = yes

@@ -4,6 +4,7 @@ discovered_by = west_gomic_tech_gr
 culture = Maxan_West_Emastalian
 religion = lathvy
 owner = DRA
+is_city = yes
 controller = DRA
 add_core = DRA
 
@@ -16,6 +17,6 @@ base_production = 6
 trade_goods = paper
 base_manpower = 5
 capital = "Durra"
-is_city = yes
+ 
 center_of_trade = 2
 

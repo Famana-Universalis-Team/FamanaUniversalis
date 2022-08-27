@@ -5,6 +5,7 @@ discovered_by = west_gomic_tech_gr
 culture = Yatian
 religion = aresian
 owner = PAS
+is_city = yes
 controller = PAS
 add_core = PAS
 
@@ -17,7 +18,7 @@ base_production = 3
 trade_goods = grain
 base_manpower = 4
 capital = "Solos"
-is_city = yes
+ 
 
 center_of_trade = 1
 

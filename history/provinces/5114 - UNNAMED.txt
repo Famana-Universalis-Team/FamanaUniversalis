@@ -13,17 +13,19 @@ base_production = 3
 trade_goods = glass
 base_manpower = 3
 capital = "Menem"
-is_city = yes
+ 
 
   
 
 owner = DES
+is_city = yes
 controller = DES
 add_core = DES
 add_core = DBT
 
 212.6.7 = {
 owner = THA
+is_city = yes
 controller = THA
 add_core = THA
 remove_core = DES

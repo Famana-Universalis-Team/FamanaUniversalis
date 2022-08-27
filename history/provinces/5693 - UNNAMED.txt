@@ -4,6 +4,7 @@ discovered_by = lathvy_tech_gr
 culture = Emtik
 religion = va
 owner = VAN
+is_city = yes
 controller = VAN
 add_core = VAN
 
@@ -16,6 +17,6 @@ base_production = 3
 trade_goods = fish
 base_manpower = 2
 capital = "Emtit"
-is_city = yes
+ 
 
 add_local_autonomy = 25

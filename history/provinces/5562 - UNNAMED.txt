@@ -4,6 +4,7 @@ discovered_by = west_gomic_tech_gr
 culture = Maxan_West_Emastalian
 religion = lathvy
 owner = RMX
+is_city = yes
 controller = RMX
 add_core = RMX
 
@@ -16,6 +17,6 @@ base_production = 3
 trade_goods = fur
 base_manpower = 2
 capital = "Merilan"
-is_city = yes
+ 
 
 
