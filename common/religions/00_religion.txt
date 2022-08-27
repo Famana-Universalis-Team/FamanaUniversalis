@@ -138,6 +138,7 @@ oppian_group = {
 
 	crusade_name = CRUSADE
 
+	harmonized_modifier = harmonized_oppian
 }
 
 christian = {
@@ -511,6 +512,8 @@ pagan = {
 		
 		heretic = { SNAKE_CLAN }
 	}
+
+	harmonized_modifier = harmonized_pagan
 }
 
 
@@ -963,6 +966,8 @@ lathvy_group = {
 
 	crusade_name = CRUSADE
 
+	harmonized_modifier = harmonized_lathvy
+
 }
 
 # If you add religions, and use those tags, do not change them without changing everywhere they are used.
@@ -1077,10 +1082,11 @@ gomic_pagan_group = {
 
 		heretic = { PEXOMANIA }	
 	}
-	harmonized_modifier = harmonized_pagan
+	#
 	
 	crusade_name = HOLY_WAR
 	
+	harmonized_modifier = harmonized_gomic
 }
 
 xalian_group = {
@@ -1214,10 +1220,11 @@ xalian_group = {
 		heretic = { SHIRIAN MORIAN DELKIAN VINIAN }	
 	}
 
-	harmonized_modifier = harmonized_pagan
+	#
 	
 	crusade_name = HOLY_WAR
 	
+	harmonized_modifier = harmonized_xalian
 }
 
 far_eastern_gomic = {
@@ -1469,8 +1476,10 @@ far_eastern_gomic = {
 		heretic = { AMENUAN }	
 	}
 
-	harmonized_modifier = harmonized_pagan
+	#
 	crusade_name = HOLY_WAR
+
+	harmonized_modifier = harmonized_feg
 }
 
 
@@ -1620,6 +1629,8 @@ Agmagozi = {
 	crusade_name = HOLY_WAR
 	
 	#date = 250.1.1
+
+	harmonized_modifier = harmonized_agmagozi
 }
 
 
@@ -1775,6 +1786,7 @@ tonmo_group = {
 
 	crusade_name = JIHAD
 
+	harmonized_modifier = harmonized_tonmo
 }
 
 washoom_group = {
@@ -1801,6 +1813,7 @@ washoom_group = {
 
 	crusade_name = HOLY_WAR
 	
+	harmonized_modifier = harmonized_washoom
 }
 
 placeholder_group = {
@@ -1822,10 +1835,11 @@ placeholder_group = {
 		
 		heretic = { UNKNOWN_H }	
 	}
-	harmonized_modifier = harmonized_pagan
+	#
 	
 	crusade_name = HOLY_WAR
 	
+	harmonized_modifier = harmonized_placeholder
 }
 
 north_estali = {
@@ -1861,6 +1875,8 @@ north_estali = {
 		aspects_name = PROTESTANT_ASPECTS
 		
 		heretic = { NULLIC }
+
+		harmonized_modifier = harmonized_naravami
 	}
 	ordic = { 
 		color = { 139 144 110 }
@@ -1887,6 +1903,8 @@ north_estali = {
 		holy_sites = { 5725 6176 6189 6356 5709 }
 
 		heretic = { OGRACABA }
+
+		harmonized_modifier = harmonized_ordic
 	}
 	gotzli = {
 		color = { 85 81 86 }
@@ -1904,6 +1922,8 @@ north_estali = {
 		}
 		
 		heretic = { UGRONIS }
+
+		harmonized_modifier = harmonized_gotzlic
 	}
 	maschi = {
 		color = { 102 42 72 }
@@ -1919,10 +1939,12 @@ north_estali = {
 		province = {
 			local_missionary_strength = 0.01
 		}
+
+		uses_harmony = yes
 		
 		heretic = { JUNMOVVEN }
 	}
-	harmonized_modifier = harmonized_pagan
+	#
 	
 	crusade_name = HOLY_WAR
 }
@@ -1950,9 +1972,11 @@ gadan_group = {
 		heretic = { REDUCED_PANTHEON EXPANDED_PANTHEON MALKAPLATAN }	
 	}
 	
-	harmonized_modifier = harmonized_pagan
+	#
 	
 	crusade_name = HOLY_WAR
+
+	harmonized_modifier = harmonized_gadan
 }
 antestal_yomtanian_group = {
 	flag_emblem_index_range = { 83 96 } ############fix
@@ -1981,7 +2005,9 @@ antestal_yomtanian_group = {
 		heretic = { HOFRREJJDKMA_H }	
 	}
 	
-	harmonized_modifier = harmonized_pagan
+	#
 	
 	crusade_name = ANNIHILATION_WAR
+
+	harmonized_modifier = harmonized_ay
 }

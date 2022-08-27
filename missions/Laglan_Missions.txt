@@ -217,6 +217,9 @@ lag_2 = {
             porlodya_region = {
                 discover_country = ROOT
             }
+            gomic_exit = {
+                discover_country = ROOT
+            }
         }
         provinces_to_highlight = {
             NOT = {owned_by = ROOT}
@@ -238,23 +241,23 @@ lag_2 = {
 			}
         }
         effect = {
-
-            every_owned_province = {
-                limit = {
-                    culture = Mirrisan
-                }
-                change_culture = Feniki
-                add_province_modifier = {
-                    name = lag_convert_to_feniki
-                    duration = 7300
+            hidden_effect = {
+                every_owned_province = {
+                    limit = {
+                        culture = Mirrisan
+                    }
+                    change_culture = Feniki
+                    add_province_modifier = {
+                        name = lag_convert_to_feniki
+                        duration = 7300
+                    }
                 }
             }
-
+            custom_tooltip = lagGoConvertMir
             fes_viom_area = {
 				limit = {
 					is_empty = yes
 				}
-				create_colony = 1000
 				cede_province = ROOT
 				add_core = ROOT
 				change_culture = ROOT
@@ -264,17 +267,15 @@ lag_2 = {
 				limit = {
 					is_empty = yes
 				}
-				create_colony = 1000
 				cede_province = ROOT
 				add_core = ROOT
 				change_culture = ROOT
 				change_religion = ROOT
 			}
-
-
-
-
-            custom_tooltip = addsomethinghereidkALSOfixthetooltip
+            napora_region = {
+                add_permanent_claim = ROOT
+                discover_country = ROOT
+            }
         }
         provinces_to_highlight = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }

@@ -1257,3 +1257,29 @@ merc_halonsi_tribesmen = {
 		land_morale = 0.10
 	}
 }
+
+# Hozyan Bandits
+merc_hozyan_bandits = {
+    regiments_per_development = 0.04
+    home_province = 6549 # east hozy
+	cavalry_weight = 0.2
+	cavalry_cap = 4
+	sprites = { easterngfx_sprite_pack }
+    trigger = {
+		OR = {
+			any_owned_province = {
+				region = gotzlic_region
+			}
+			any_owned_province = {
+				region = east_gotzlic_region
+			}
+			any_owned_province = {
+				region = south_gotzlic_region
+			}
+		}
+	}
+	modifier = {
+		movement_speed = 0.10
+		discipline = -0.05
+	}
+}
