@@ -287,8 +287,9 @@ merc_hasian = {
 		}
 	}
 	modifier = {
-		infantry_power = 0.50
-		reinforce_speed = -0.20
+		#infantry_power = 0.50
+		infantry_shock = 1.5
+		reinforce_speed = -0.50
 	}
 }
 
@@ -1197,5 +1198,62 @@ merc_faris_cataphracts = {
 		shock_damage = 0.15
 		shock_damage_received = -0.25
 		discipline = 0.10
+	}
+}
+
+# Poguri Tribe
+merc_tribe_of_poguri = {
+    regiments_per_development = 0.05
+    home_province = 6026 # poguri
+	cavalry_weight = 0.4
+	cavalry_cap = 8
+	sprites = { asiangfx_sprite_pack }
+    trigger = {
+		any_owned_province = {
+			region = selka_region
+		}
+	}
+	modifier = {
+		shock_damage = 0.10
+	}
+}
+
+# Lashran Raiders
+merc_lashran_raiders = {
+    regiments_per_development = 0.03
+    home_province = 5945 # myaena
+	cavalry_weight = 0.5
+	cavalry_cap = 16
+	sprites = { asiangfx_sprite_pack }
+	cost_modifier = 0.35
+    trigger = {
+		any_owned_province = {
+			region = nhoma_region
+		}
+		religion = tonmo
+	}
+	modifier = {
+		discipline = -0.075
+		cavalry_power = 0.20
+	}
+}
+
+# Halonsi Tribesmen
+merc_halonsi_tribesmen = {
+    regiments_per_development = 0.025
+    home_province = 6420 # halons
+	cavalry_weight = 0
+	sprites = { northamericagfx_sprite_pack }
+	cost_modifier = 0.9
+    trigger = {
+		any_owned_province = {
+			superregion = west_estal_superregion
+		}
+		NOT = {
+			religion_group = lathvy_group
+		}
+	}
+	modifier = {
+		land_morale = 0.10
 	}
 }
