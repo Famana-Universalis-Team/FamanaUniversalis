@@ -100,6 +100,12 @@ lks_1 = {
             country_event = {
                 id = lukscham.7
             }
+            area_156 = {
+                add_permanent_claim = ROOT
+            }
+            area_157 = {
+                add_permanent_claim = ROOT
+            }
         }
         provinces_to_highlight = {
             owned_by = ROOT
@@ -144,6 +150,12 @@ lks_1 = {
             add_country_modifier = {
                 name = lks_into_gotzlica
                 duration = 9125
+            }
+            gotzlic_region = {
+                add_permanent_claim = ROOT
+            }
+            east_gotzlic_region = {
+                add_permanent_claim = ROOT
             }
         }
         provinces_to_highlight = {
