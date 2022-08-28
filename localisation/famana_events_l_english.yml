@@ -1352,7 +1352,7 @@
  naravam.7.a:0 "A most interesting development."
 
  gamesetup.1.t:0 "Game Setup"
- gamesetup.1.d:0 "Set up desired game options in this menu. Note that these options will not affect the players, only the AI.\n\n§BIn Multiplayer, all players except the Host should pick the option 'Dismiss' to ignore the event.§!\n\n§RWarning: Changing the settings will disable all modded achievements.§!\n\nCURRENTLY NON-FUNCTIONAL SETTINGS:\n-Pextoglazia devolves\n-All Ordica settings\n-All Yomtanian settings"
+ gamesetup.1.d:0 "Set up desired game options in this menu. Note that these options will not affect the players, only the AI.\n\n§BIn Multiplayer, all players except the Host should pick the option 'Dismiss' to ignore the event.§!\n\n§RWarning: Changing the settings will disable all modded achievements.§!"
  gamesetup.1.a:0 "Confirm changes."
  gamesetup.1.aa:0 "Dismiss."
  ignore_gamesetup_tt: "§RThis will ignore any changes you have made to the settings.§!\n\nChoose this option if you do not wish to change anything, or if you are not the host in a multiplayer game."

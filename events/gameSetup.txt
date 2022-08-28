@@ -223,6 +223,10 @@ country_event = {
 		country_event = {
 			id = gamesetup.3
 		}
+
+		trigger = { #Add functionality
+			always = no
+		}
 	}
 	option = { #Tonxara Settings
 		name = gamesetup.1.e
@@ -236,6 +240,10 @@ country_event = {
 		ai_chance = { factor = 0 }
 		country_event = {
 			id = gamesetup.5
+		}
+
+		trigger = { #Add functionality
+			always = no
 		}
 	}
 	option = { #Tomba settings
@@ -314,6 +322,10 @@ country_event = {
 			country_event = {
 				id = gamesetup.1
 			}
+		}
+
+		trigger = { #Add functionality
+			always = no
 		}
 	}
 }
