@@ -611,16 +611,11 @@ country_event = { #Southward Expansion (NOT MISSION)
 
     trigger = {
         tag = FAS
-        OR = {
-            is_year = 260
-            AND = {
-                owns_core_province = 5650
-                owns_core_province = 5603
-                owns_core_province = 5685
-                owns_core_province = 5848
-                owns_core_province = 5856
-            }
-        }
+        owns_core_province = 5650
+        owns_core_province = 5603
+        owns_core_province = 5685
+        owns_core_province = 5848
+        owns_core_province = 5856
     }
 
     mean_time_to_happen = {
