@@ -372,7 +372,7 @@ country_decisions = {
 			hidden_effect = {
 				set_variable = {
 					which = achievementID
-					value = 6
+					value = 7
 				}
 			}
 			add_country_modifier = {
@@ -417,7 +417,7 @@ country_decisions = {
 			hidden_effect = {
 				set_variable = {
 					which = achievementID
-					value = 7
+					value = 8
 				}
 			}
 			add_country_modifier = {
@@ -464,7 +464,7 @@ country_decisions = {
 			hidden_effect = {
 				set_variable = {
 					which = achievementID
-					value = 8
+					value = 9
 				}
 			}
 			add_country_modifier = {
@@ -570,7 +570,7 @@ country_decisions = {
 			hidden_effect = {
 				set_variable = {
 					which = achievementID
-					value = 9
+					value = 10
 				}
 			}
 			add_country_modifier = {
@@ -610,6 +610,12 @@ country_decisions = {
 			num_of_artillery = 100
 		}
 		effect = {
+			hidden_effect = {
+				set_variable = {
+					which = achievementID
+					value = 11
+				}
+			}
 			add_country_modifier = {
 				name = achievement_holk_smash_modifier
 				duration = -1
@@ -647,6 +653,12 @@ country_decisions = {
 			revanchism = 100
 		}
 		effect = {
+			hidden_effect = {
+				set_variable = {
+					which = achievementID
+					value = 12
+				}
+			}
 			add_country_modifier = {
 				name = achievement_malding_modifier
 				duration = -1
@@ -701,7 +713,7 @@ country_decisions = {
 			hidden_effect = {
 				set_variable = {
 					which = achievementID
-					value = 10
+					value = 13
 				}
 			}
 			add_country_modifier = {
@@ -751,7 +763,7 @@ country_decisions = {
 			hidden_effect = {
 				set_variable = {
 					which = achievementID
-					value = 11
+					value = 14
 				}
 			}
 			add_country_modifier = {
@@ -810,7 +822,7 @@ country_decisions = {
 			hidden_effect = {
 				set_variable = {
 					which = achievementID
-					value = 12
+					value = 15
 				}
 			}
 			add_country_modifier = {
@@ -859,7 +871,7 @@ country_decisions = {
 			hidden_effect = {
 				set_variable = {
 					which = achievementID
-					value = 13
+					value = 16
 				}
 			}
 			add_country_modifier = {
@@ -906,7 +918,7 @@ country_decisions = {
 			hidden_effect = {
 				set_variable = {
 					which = achievementID
-					value = 14
+					value = 17
 				}
 			}
 			add_country_modifier = {
@@ -960,7 +972,7 @@ country_decisions = {
 			hidden_effect = {
 				set_variable = {
 					which = achievementID
-					value = 15
+					value = 23
 				}
 			}
 			add_country_modifier = {
@@ -1035,7 +1047,7 @@ country_decisions = {
 			hidden_effect = {
 				set_variable = {
 					which = achievementID
-					value = 16
+					value = 18
 				}
 			}
 			add_country_modifier = {
@@ -1084,7 +1096,7 @@ country_decisions = {
 			hidden_effect = {
 				set_variable = {
 					which = achievementID
-					value = 17
+					value = 19
 				}
 			}
 			add_country_modifier = {
@@ -1135,7 +1147,7 @@ country_decisions = {
 			hidden_effect = {
 				set_variable = {
 					which = achievementID
-					value = 18
+					value = 20
 				}
 			}
 			add_country_modifier = {
@@ -1201,7 +1213,7 @@ country_decisions = {
 			hidden_effect = {
 				set_variable = {
 					which = achievementID
-					value = 19
+					value = 22
 				}
 			}
 			add_country_modifier = {
@@ -1256,7 +1268,7 @@ country_decisions = {
 			hidden_effect = {
 				set_variable = {
 					which = achievementID
-					value = 20
+					value = 21
 				}
 			}
 			add_country_modifier = {
@@ -1310,7 +1322,7 @@ country_decisions = {
 			hidden_effect = {
 				set_variable = {
 					which = achievementID
-					value = 21
+					value = 24
 				}
 			}
 			add_country_modifier = {
@@ -1360,7 +1372,7 @@ country_decisions = {
 			hidden_effect = {
 				set_variable = {
 					which = achievementID
-					value = 22
+					value = 25
 				}
 			}
 			add_country_modifier = {
@@ -1415,7 +1427,7 @@ country_decisions = {
 			hidden_effect = {
 				set_variable = {
 					which = achievementID
-					value = 23
+					value = 26
 				}
 			}
 			add_country_modifier = {
@@ -1476,7 +1488,7 @@ country_decisions = {
 			hidden_effect = {
 				set_variable = {
 					which = achievementID
-					value = 24
+					value = 27
 				}
 			}
 			add_country_modifier = {
@@ -1526,7 +1538,7 @@ country_decisions = {
 			hidden_effect = {
 				set_variable = {
 					which = achievementID
-					value = 25
+					value = 28
 				}
 			}
 			add_country_modifier = {
@@ -1570,7 +1582,7 @@ country_decisions = {
 			hidden_effect = {
 				set_variable = {
 					which = achievementID
-					value = 26
+					value = 29
 				}
 			}
 			add_country_modifier = {
