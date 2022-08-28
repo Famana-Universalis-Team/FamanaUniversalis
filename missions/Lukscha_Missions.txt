@@ -10,7 +10,7 @@ lks_1 = {
     has_country_shield = yes
 
     lks_rein_in_the_chiefs = {
-        icon = lks_moon_icon
+        icon = mission_protect_white_sea_trade
         required_missions = { }
         trigger = {
             lukscha_region = {
@@ -36,7 +36,7 @@ lks_1 = {
     }
 
     lks_ensure_unity = {
-        icon = lks_moon_icon
+        icon = mission_rb_settle_the_north
         required_missions = { lks_rein_in_the_chiefs }
         trigger = {
             if = {
@@ -116,7 +116,7 @@ lks_1 = {
     }
 
     lks_conquer_rduma = {
-        icon = lks_moon_icon
+        icon = mission_rb_into_ireland
         required_missions = { lks_beyond_the_forest }
         trigger = {
             if = {
@@ -141,7 +141,7 @@ lks_1 = {
     }
 
     lks_in_search_of_loot = {
-        icon = lks_moon_icon
+        icon = mission_amur_acquisition
         required_missions = { lks_conquer_rduma }
         trigger = {
             
@@ -164,7 +164,7 @@ lks_1 = {
     }
 
     lks_dominion_over_gotzlica = {
-        icon = lks_moon_icon
+        icon = mission_advance_to_the_dnieper
         required_missions = { lks_in_search_of_loot }
         trigger = {
             

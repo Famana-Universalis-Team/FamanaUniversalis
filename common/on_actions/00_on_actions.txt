@@ -138,6 +138,9 @@ on_startup = {
 	if = {
 		limit = {
 			tag = TCK
+			NOT = {
+				has_ruler_flag = MenselSar
+			}
 		}
 		set_ruler_flag = MenselSar
 		random_list = {
