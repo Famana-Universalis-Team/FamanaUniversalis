@@ -285,7 +285,11 @@ Hozyan_ideas = {
 	}	
 
 	trigger = {
-		primary_culture = Hozyan
+		OR = {
+			tag = HZY
+			tag = EHZ
+			tag = WHZ
+		}
 	}
 	free = yes
 	

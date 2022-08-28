@@ -48,11 +48,7 @@ helvania = {
 
 	trigger = {
 		AND = {
-			OR = {
-				tag = VAX
-				tag = VDY
-				tag = DYR
-			}
+			culture_group = Makyna
 			OR = {
 				has_reform = apocalyptic_helvania_reform
 				government = republic
