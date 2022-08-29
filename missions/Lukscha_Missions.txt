@@ -167,14 +167,46 @@ lks_1 = {
         icon = mission_advance_to_the_dnieper
         required_missions = { lks_in_search_of_loot }
         trigger = {
-            
+            gotzlic_region = {
+                type = all
+                OR = {
+                    country_or_non_sovereign_subject_holds = ROOT
+                    is_empty = yes
+                }
+            }
+            east_gotzlic_region = {
+                type = all
+                OR = {
+                    country_or_non_sovereign_subject_holds = ROOT
+                    is_empty = yes
+                    province_id = 6643
+                }
+            }
         }
         effect = {
+            if = {
+                limit = {
+                    NOT = {
+                        government_rank = 3
+                    }
+                }
+                set_government_rank = 3
+            }
             add_army_professionalism = 0.05
             add_treasury = 750
+            add_country_modifier = {
+                name = lks_tiger_of_the_north
+                duration = -1
+            }
         }
         provinces_to_highlight = {
-            
+            NOT = { country_or_non_sovereign_subject_holds = ROOT }
+            NOT = { is_empty = yes }
+            NOT = { province_id = 6643 }
+            OR = {
+                region = gotzlic_region
+                region = east_gotzlic_region
+            }
         }
     }
 }

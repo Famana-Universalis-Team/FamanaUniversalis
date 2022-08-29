@@ -2051,3 +2051,9 @@ lag_united_we_stand = {
 lag_laglan_plains = {
     production_efficiency = 0.10
 }
+
+lks_tiger_of_the_north = {
+    colonists = 1
+    global_colonial_growth = 35
+    global_manpower_modifier = 0.20
+}
