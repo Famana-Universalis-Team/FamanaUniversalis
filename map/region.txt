@@ -151,8 +151,8 @@ apilanya_region = {
 		area_162
 		area_161
 		area_183
-		area_163
 		feemk_area
+		area_219
 	}
 }
 
@@ -162,8 +162,6 @@ gotzlic_region = {
 		bojj_area
 		sovi_area
 		hozy_area
-		area_185
-		area_189
 		area_192
 		area_191
 		area_188
@@ -172,6 +170,7 @@ gotzlic_region = {
 		area_180
 		area_190
 		area_184
+		area_163
 		area_245
 		new_zubaran_area
 	}
@@ -664,6 +663,7 @@ vanoma_region = {
 		unnamed_area_43
 		unnamed_area_42
 		unnamed_area_41
+		area_109
 		borlebim_area
 		lefim_area
 		mori_area
@@ -678,7 +678,6 @@ east_gotzlic_region = {
 		area_158
 		nenki_area
 		area_159
-		area_160
 		dethoni_area
 		nizoora_area
 		rosta_area
@@ -698,9 +697,9 @@ south_gotzlic_region = {
 		area_182
 		area_176
 		area_175
-		area_109
 		area_108
 		area_110
+		area_160
 	}
 }
 
@@ -721,7 +720,6 @@ pelig_region = {
 
 voychonia_region = {
 	areas = {
-		area_219
 		area_223
 		area_221
 		area_225
@@ -729,6 +727,8 @@ voychonia_region = {
 		area_230
 		area_228
 		area_166
+		area_189
+		area_185
 		area_165
 		area_227
 		area_229
