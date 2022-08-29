@@ -275,7 +275,7 @@ country_event = {
 
 	immediate = {
 		hidden_effect = {
-
+			set_country_flag = reached_rduma
 		}
 	}
 
@@ -295,6 +295,177 @@ country_event = {
 					area = area_155
 					province_id = 6520
 					province_id = 6525
+				}
+			}
+			cede_province = LKS
+			add_core = LKS
+		}
+    }
+}
+
+country_event = {
+	id = lukscham.8
+	picture = PROTESTANT_CATHOLIC_DEBATE_eventPicture
+	title = lukscham.8.t
+	desc = lukscham.8.d
+	fire_only_once = yes
+
+	trigger = {
+		tag = LKS
+		area_157 = {
+			type = all
+			owned_by = LKS
+		}
+		area_156 = {
+			type = all
+			owned_by = LKS
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	immediate = {
+		hidden_effect = {
+
+		}
+	}
+
+	option = {
+        name = lukscham.8.a
+        ai_chance = { factor = 1 }
+		every_province = {
+			limit = {
+				is_empty = yes
+				OR = {
+					area = area_81
+					area = area_181
+					province_id = 6521
+				}
+			}
+			cede_province = LKS
+			add_core = LKS
+		}
+    }
+}
+
+country_event = {
+	id = lukscham.9
+	picture = PROTESTANT_CATHOLIC_DEBATE_eventPicture
+	title = lukscham.9.t
+	desc = lukscham.9.d
+	fire_only_once = yes
+
+	trigger = {
+		tag = LKS
+		OR = {
+			any_country = {
+        	    capital_scope = {
+        	        OR = {
+        	            region_for_scope_province = {
+        	                region = gotzlic_region
+        	            }
+        	            region_for_scope_province = {
+        	                region = east_gotzlic_region
+        	            }
+        	            region_for_scope_province = {
+        	                region = south_gotzlic_region
+        	            }
+        	        }
+        	    }
+        	    defensive_war_with = LKS
+        	}
+			any_country = {
+        	    capital_scope = {
+        	        OR = {
+        	            region_for_scope_province = {
+        	                region = gotzlic_region
+        	            }
+        	            region_for_scope_province = {
+        	                region = east_gotzlic_region
+        	            }
+        	            region_for_scope_province = {
+        	                region = south_gotzlic_region
+        	            }
+        	        }
+        	    }
+        	    offensive_war_with = LKS
+        	}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	immediate = {
+		hidden_effect = {
+
+		}
+	}
+
+	option = {
+        name = lukscham.9.a
+        ai_chance = { factor = 1 }
+		every_province = {
+			limit = {
+				is_empty = yes
+				OR = {
+					area = area_82
+					area = area_170
+					area = area_171
+					area = area_157
+					area = area_188
+					area = area_187
+					province_id = 6521
+				}
+			}
+			cede_province = LKS
+			add_core = LKS
+		}
+    }
+}
+
+country_event = {
+	id = lukscham.10
+	picture = PROTESTANT_CATHOLIC_DEBATE_eventPicture
+	title = lukscham.10.t
+	desc = lukscham.10.d
+	fire_only_once = yes
+
+	trigger = {
+		tag = LKS
+		has_country_flag = reached_rduma
+		area_156 = {
+			type = all
+			is_empty = yes
+		}
+		area_157 = {
+			type = all
+			is_empty = yes
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	immediate = {
+		hidden_effect = {
+
+		}
+	}
+
+	option = {
+        name = lukscham.10.a
+        ai_chance = { factor = 1 }
+		every_province = {
+			limit = {
+				is_empty = yes
+				OR = {
+					area = area_156
+					area = area_157
 				}
 			}
 			cede_province = LKS
