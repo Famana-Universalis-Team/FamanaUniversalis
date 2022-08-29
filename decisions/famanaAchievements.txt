@@ -1863,6 +1863,7 @@ country_decisions = {
 			custom_trigger_tooltip = {
 				tooltip = tideturnedTT
 			}
+			has_reform = pirate_republic_reform
 		}
 		effect = {
 			add_country_modifier = {
