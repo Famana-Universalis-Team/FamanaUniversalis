@@ -382,3 +382,8 @@ lag_convert_to_feniki = {
     local_unrest = 10
     local_missionary_strength = 0.03
 }
+
+lag_develop_the_interior = {
+    local_development_cost = -0.25
+    local_build_cost = -0.20
+}

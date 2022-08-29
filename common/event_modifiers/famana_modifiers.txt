@@ -2057,3 +2057,8 @@ lks_tiger_of_the_north = {
     global_colonial_growth = 35
     global_manpower_modifier = 0.20
 }
+
+lag_colony_rush = {
+	global_colonial_growth = 50
+    native_assimilation = 0.25
+}

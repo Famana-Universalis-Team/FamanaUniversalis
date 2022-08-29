@@ -127,12 +127,24 @@ lag_1 = {
         required_missions = { lag_feyel_and_woch }
         position = 4
         trigger = {
-            
+            num_of_owned_provinces_with = {
+                value = 10
+                region = porlodya_region
+            }
         }
         effect = {
-
+            add_country_modifier = {
+                name = lag_colony_rush
+                duration = 10950
+            }
+            create_conquistador = {
+                tradition = 60
+            }
         }
-        #provinces_to_highlight = {}
+        provinces_to_highlight = {
+            NOT = {country_or_non_sovereign_subject_holds = ROOT}
+            region = porlodya_region
+        }
     }
 
     lag_settle_the_frontier = {
@@ -140,12 +152,26 @@ lag_1 = {
         required_missions = { lag_beyond_the_highlands }
         position = 5
         trigger = {
-
+            porlodya_region = {
+                type = all
+                country_or_non_sovereign_subject_holds = ROOT
+            }
         }
         effect = {
-
+            porlodya_region = {
+                add_province_modifier = {
+                    name = lag_develop_the_interior
+                    duration = 9125
+                }
+            }
+            west_ordica_region = {
+                add_permanent_claim = ROOT
+            }
         }
-        #provinces_to_highlight = {}
+        provinces_to_highlight = {
+            NOT = {country_or_non_sovereign_subject_holds = ROOT}
+            region = porlodya_region
+        }
     }
 
     lag_shores_of_the_olivinar = {
@@ -153,12 +179,22 @@ lag_1 = {
         required_missions = { lag_settle_the_frontier }
         position = 7
         trigger = {
-
+            west_ordica_region = {
+                type = all
+                OR = {
+                    country_or_non_sovereign_subject_holds = ROOT
+                    is_empty = yes
+                }
+            }
         }
         effect = {
 
         }
-        #provinces_to_highlight = {}
+        provinces_to_highlight = {
+            NOT = {country_or_non_sovereign_subject_holds = ROOT}
+            NOT = {is_empty = yes}
+            region = west_ordica_region
+        }
     }
 
     lag_commandeer_the_channel = {
@@ -289,12 +325,28 @@ lag_2 = {
         required_missions = {lag_face_the_barbarians }
         position = 6
         trigger = {
-
+            owns = 5695
         }
         effect = {
-
+            5695 = {
+				change_culture = ROOT
+				change_religion = ROOT
+				add_core = ROOT
+				add_base_tax = -3
+				add_base_production = -3
+				add_base_manpower = -3
+			}
+			add_country_modifier = { 
+				name = umz_crushed
+				duration = -1
+			}
         }
-        #provinces_to_highlight = {}
+        provinces_to_highlight = {
+            NOT = {
+                country_or_non_sovereign_subject_holds = ROOT
+            }
+            province_id = 5695
+        }
     }
 
     lag_dominate_west_estal = {
@@ -883,6 +935,25 @@ lag_4 = {
             unnamed_pexto_8 = {
                 add_permanent_claim = ROOT
             }
+            if = {
+                limit = {
+                    is_year = 215
+                }
+                custom_tooltip = lagIfCegon
+                if = {
+                    limit = {
+                        exists = PEX
+                    }
+                    hidden_effect = {
+                        PEX = {
+                            add_disaster_progress = {
+                                disaster = collapse_of_pextoglazia
+                                value = 75
+                            }
+                        }
+                    }
+                }
+            }
         }
         provinces_to_highlight = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
@@ -998,12 +1069,32 @@ lag_4 = {
         position = 13
         required_missions = { lag_raid_on_pomlen }
         trigger = {
-
+            5203 = {
+                country_or_non_sovereign_subject_holds = ROOT
+            }
         }
         effect = {
-
+            add_yearly_sailors = 5
+            if = {
+                limit = {
+                    5203 = {
+                        NOT = {
+                            province_has_center_of_trade_of_level = 3
+                        }
+                    }
+                }
+                5203 = {
+                    add_center_of_trade_level = 1
+                }
+            }
+            create_admiral = { tradition = 100 }
         }
-        #provinces_to_highlight = {}
+        provinces_to_highlight = {
+            NOT = {
+                country_or_non_sovereign_subject_holds = ROOT
+            }
+            province_id = 5203
+        }
     }
 }
 
