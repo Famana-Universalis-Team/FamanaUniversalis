@@ -356,15 +356,13 @@ tck_slot_2 = {
 				add_permanent_claim = ROOT
 			}
 			upper_oppia_region = { #cores every uncored province in the region
-				every_province = {
-					limit = {
-						AND = {
-							owned_by = ROOT
-							NOT = { is_core = ROOT }
-						}
+				limit = {
+					AND = {
+						owned_by = ROOT
+						NOT = { is_core = ROOT }
 					}
-					add_core = ROOT
 				}
+				add_core = ROOT
 			}
 			change_government_reform_progress = 50
 		}
@@ -517,17 +515,21 @@ tck_slot_2 = {
 			else = {
 				custom_tooltip = ElorakBreakaway
 				hidden_effect = {
-					every_province = {
+					mesdool_area = {
 						limit = {
-							AND = {
-								OR = {
-									area = mesdool_area
-									area = elorak_area
-								}
-								OR = {
-									owned_by = ROOT
-									controlled_by = ROOT
-								}
+							OR = {
+								owned_by = ROOT
+								controlled_by = ROOT
+							}
+						}
+						cede_province = ELR
+						add_core = ELR
+					}
+					elorak_area = {
+						limit = {
+							OR = {
+								owned_by = ROOT
+								controlled_by = ROOT
 							}
 						}
 						cede_province = ELR

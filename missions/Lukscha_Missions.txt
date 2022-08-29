@@ -64,7 +64,7 @@ lks_1 = {
             }
             add_country_modifier = {
                 name = lks_internal_growth
-                duration = 9125
+                duration = 5475
             }
         }
         #provinces_to_highlight = {}
@@ -95,7 +95,7 @@ lks_1 = {
         effect = {
             add_country_modifier = {
                 name = lks_population_boom
-                duration = 9125
+                duration = 5475
             }
             country_event = {
                 id = lukscham.7

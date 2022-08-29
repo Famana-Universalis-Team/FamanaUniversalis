@@ -1266,25 +1266,82 @@ nafa_1 = {
             #get claims on every coastal gomic province with 15 or more development
             custom_tooltip = nafaGetClaimsOnCoasts
             hidden_effect = {
-                every_province = {
+                oppia_superregion = {
                     limit = {
-                        OR = {
-                            superregion = oppia_superregion
-                            superregion = ga_xal_superregion
-                            region = eastern_desert_region
-                            region = jasua_region
-                            region = kapolia_region
-                            region = stroktur_region
-                            region = laglon_region
-                            region = lomea_region
-                            region = pextoglazia_region
-                            region = emastalia_region
-                            region = west_emastalia_region
-                        }
                         has_port = yes
-                        development	= 15
+                        development = 15
                     }
-                    add_claim = ROOT
+                    add_permanent_claim = ROOT
+                }
+                ga_xal_superregion = {
+                    limit = {
+                        has_port = yes
+                        development = 15
+                    }
+                    add_permanent_claim = ROOT
+                }
+                eastern_desert_region = {
+                    limit = {
+                        has_port = yes
+                        development = 15
+                    }
+                    add_permanent_claim = ROOT
+                }
+                jasua_region = {
+                    limit = {
+                        has_port = yes
+                        development = 15
+                    }
+                    add_permanent_claim = ROOT
+                }
+                kapolia_region = {
+                    limit = {
+                        has_port = yes
+                        development = 15
+                    }
+                    add_permanent_claim = ROOT
+                }
+                stroktur_region = {
+                    limit = {
+                        has_port = yes
+                        development = 15
+                    }
+                    add_permanent_claim = ROOT
+                }
+                laglon_region = {
+                    limit = {
+                        has_port = yes
+                        development = 15
+                    }
+                    add_permanent_claim = ROOT
+                }
+                lomea_region = {
+                    limit = {
+                        has_port = yes
+                        development = 15
+                    }
+                    add_permanent_claim = ROOT
+                }
+                pextoglazia_region = {
+                    limit = {
+                        has_port = yes
+                        development = 15
+                    }
+                    add_permanent_claim = ROOT
+                }
+                emastalia_region = {
+                    limit = {
+                        has_port = yes
+                        development = 15
+                    }
+                    add_permanent_claim = ROOT
+                }
+                west_emastalia_region = {
+                    limit = {
+                        has_port = yes
+                        development = 15
+                    }
+                    add_permanent_claim = ROOT
                 }
             }
             add_country_modifier = {
