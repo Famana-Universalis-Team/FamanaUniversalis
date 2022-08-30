@@ -30,14 +30,14 @@ gadea_1 = {
 				}
 				add_opinion = {
 					who = ROOT
-					modifier = enemy_of_my_enemy
+					modifier = alm_enemy_of_my_enemy
 				}
 				reverse_add_opinion = {
 					who = ROOT
-					modifier = enemy_of_my_enemy
+					modifier = alm_enemy_of_my_enemy
 				}
 			}
-			add_mercantilism = 4
+			add_mercantilism = 5
 		}
 	}
 
