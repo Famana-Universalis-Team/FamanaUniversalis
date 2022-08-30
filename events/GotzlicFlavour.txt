@@ -914,14 +914,6 @@ country_event = {
 			cede_province = RST
 			add_core = RST
 		}
-        6581 = {
-			limit = { 
-				is_empty = yes
-			}
-			create_colony = 1000
-			cede_province = RST
-			add_core = RST
-		}
         6592 = {
 			limit = { 
 				is_empty = yes
@@ -976,16 +968,16 @@ country_event = {
 			cede_province = ROOT
 			add_core = ROOT
 		}
-        #if = {
-        #    limit = {
-        #        OR = {
-        #            tag = EHZ
-        #            tag = WHZ
-        #            tag = HZY
-        #        }
-        #    }
-        #    override_country_name = Hozirara
-        #}
+        if = {
+            limit = {
+                OR = {
+                    tag = EHZ
+                    tag = WHZ
+                    tag = HZY
+                }
+            }
+            override_country_name = Hozi
+        }
         remove_historical_friend = ZUB
         ZUB = {
             remove_historical_friend = WHZ
@@ -1371,14 +1363,6 @@ country_event = {
     option = {
         name = gotzlica.21.a
         ai_chance = { factor = 1 }
-        6551 = {
-			limit = { 
-				is_empty = yes
-			}
-			create_colony = 1000
-			cede_province = ROOT
-			add_core = ROOT
-		}
         6566 = {
 			limit = { 
 				is_empty = yes
