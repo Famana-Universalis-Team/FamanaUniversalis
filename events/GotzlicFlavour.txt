@@ -934,12 +934,6 @@ country_event = {
 	fire_only_once = yes
 
     trigger = {
-        OR = {
-            tag = EHZ
-            tag = WHZ
-            tag = HZY
-            tag = TOI
-        }
         owns = 6546
         owns = 6549
         is_year = 300
@@ -968,22 +962,22 @@ country_event = {
 			cede_province = ROOT
 			add_core = ROOT
 		}
-        if = {
-            limit = {
-                OR = {
-                    tag = EHZ
-                    tag = WHZ
-                    tag = HZY
-                }
-            }
-            override_country_name = Hozi
-        }
+        #if = {
+        #    limit = {
+        #        OR = {
+        #            tag = EHZ
+        #            tag = WHZ
+        #            tag = HZY
+        #        }
+        #    }
+        #    override_country_name = Hozi
+        #}
         remove_historical_friend = ZUB
         ZUB = {
             remove_historical_friend = WHZ
         }
         WHZ = {
-            remove_historical_friend = HZY
+            remove_historical_friend = ZUB
         }
     }
 }
@@ -1077,6 +1071,12 @@ country_event = {
 
     mean_time_to_happen = {
 		months = 30
+        modifier = {
+	    	factor = 0.1
+	    	ZUB = {
+                offensive_war_with = LER
+            }
+	    }
 	}
 
     trigger = {
@@ -1220,12 +1220,6 @@ country_event = {
         name = gotzlica.19.b #refuse and go to war
         ai_chance = {
             factor = 1
-            modifier = {
-                factor = 0
-                ZUB = {
-                    offensive_war_with = LER
-                }
-            }
         }
         NEN = {
             declare_war_with_cb = {
@@ -1250,11 +1244,18 @@ country_event = {
         NOT = {
             has_country_flag = nenki_trolled_dethoni
         }
-        is_year = 250
-        NEN = {
-            controls = 6569
-            controls = 6584
-            controls = 6585
+        OR = {
+            NEN = {
+                controls = 6569
+                controls = 6584
+                controls = 6585
+            }
+            ZUB = {
+                has_won_war_against = {
+                	who = LER
+                	max_years_since = 1
+                }
+            }
         }
     }
 
@@ -1423,5 +1424,47 @@ country_event = {
 			cede_province = ROOT
 			add_core = ROOT
 		}
+    }
+}
+
+#nenki loses war
+country_event = {
+    id = gotzlica.22
+    title = gotzlica.22.t
+    desc = gotzlica.22.desc
+    picture = BATTLE_eventPicture
+	fire_only_once = yes
+
+    trigger = {
+        controls = 6643
+        6643 = {
+            is_empty = no
+        }
+        NOT = {
+            tag = NEN
+        }
+    }
+
+    mean_time_to_happen = {
+        days = 1
+    }
+
+    option = {
+        name = gotzlica.22.a #the destruction of nenki
+        ai_chance = { factor = 1 }
+        6643 = {
+            cede_province = ---
+            remove_core = NEN
+            set_base_tax = 1
+            set_base_production = 1
+            set_base_manpower = 1
+        }
+        capital_scope = {
+            add_base_tax = 1
+            add_base_production = 1
+            add_base_manpower = 1
+        }
+        add_treasury = 150
+        add_prestige = 10
     }
 }
