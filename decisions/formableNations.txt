@@ -4581,10 +4581,10 @@ country_decisions = {
 			}
 		}
 		allow = {
-			total_development = 450
 			adm_tech = 10
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
+			total_development = 450
 		}
 		effect = {
 			override_country_name = ANTIASH_DOMAIN
