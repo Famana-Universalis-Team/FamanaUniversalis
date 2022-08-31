@@ -65,6 +65,9 @@ province_event = {
 				}
 				5 = {
 					random_neighbor_province = {
+						limit = {
+							owned_by = ROOT
+						}
 						province_event = {
 							id = plague.11
 							days = 30
@@ -106,6 +109,9 @@ province_event = {
 				}
 				25 = {
 					random_neighbor_province = {
+						limit = {
+							owned_by = ROOT
+						}
 						province_event = {
 							id = plague.11
 							days = 30
@@ -132,6 +138,9 @@ province_event = {
 				}
 				50 = {
 					random_neighbor_province = {
+						limit = {
+							owned_by = ROOT
+						}
 						province_event = {
 							id = plague.11
 							days = 30
@@ -209,6 +218,9 @@ province_event = {
 				}
 				5 = {
 					random_neighbor_province = {
+						limit = {
+							owned_by = ROOT
+						}
 						province_event = {
 							id = plague.12
 							days = 30
@@ -250,7 +262,9 @@ province_event = {
 				}
 				25 = {
 					random_neighbor_province = {
-
+						limit = {
+							owned_by = ROOT
+						}
 						province_event = {
 							id = plague.12
 							days = 30
@@ -277,7 +291,9 @@ province_event = {
 				}
 				50 = {
 					random_neighbor_province = {
-
+						limit = {
+							owned_by = ROOT
+						}
 						province_event = {
 							id = plague.12
 							days = 30
@@ -355,7 +371,9 @@ province_event = {
 				}
 				5 = {
 					random_neighbor_province = {
-
+						limit = {
+							owned_by = ROOT
+						}
 						province_event = {
 							id = plague.13
 							days = 30
@@ -397,7 +415,9 @@ province_event = {
 				}
 				25 = {
 					random_neighbor_province = {
-
+						limit = {
+							owned_by = ROOT
+						}
 						province_event = {
 							id = plague.13
 							days = 30
@@ -424,7 +444,9 @@ province_event = {
 				}
 				50 = {
 					random_neighbor_province = {
-
+						limit = {
+							owned_by = ROOT
+						}
 						province_event = {
 							id = plague.13
 							days = 30
@@ -584,7 +606,9 @@ province_event = {
 				}
 				10 = {
 					random_neighbor_province = {
-
+						limit = {
+							owned_by = ROOT
+						}
 						province_event = {
 							id = plague.11
 							days = 30
@@ -635,7 +659,9 @@ province_event = {
 				}
 				25 = {
 					random_neighbor_province = {
-
+						limit = {
+							owned_by = ROOT
+						}
 						province_event = {
 							id = plague.11
 							days = 30
@@ -694,7 +720,9 @@ province_event = {
 				}
 				10 = {
 					random_neighbor_province = {
-
+						limit = {
+							owned_by = ROOT
+						}
 						province_event = {
 							id = plague.12
 							days = 30
@@ -745,6 +773,9 @@ province_event = {
 				}
 				25 = {
 					random_neighbor_province = {
+						limit = {
+							owned_by = ROOT
+						}
 						province_event = {
 							id = plague.12
 							days = 30
@@ -803,7 +834,9 @@ province_event = {
 				}
 				10 = {
 					random_neighbor_province = {
-
+						limit = {
+							owned_by = ROOT
+						}
 						province_event = {
 							id = plague.13
 							days = 30
@@ -854,7 +887,9 @@ province_event = {
 				}
 				25 = {
 					random_neighbor_province = {
-
+						limit = {
+							owned_by = ROOT
+						}
 						province_event = {
 							id = plague.13
 							days = 30

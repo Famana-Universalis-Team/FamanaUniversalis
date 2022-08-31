@@ -1082,17 +1082,41 @@ merc_zeaf_skirmishers = {
 	sprites = { muslimgfx_sprite_pack }
     trigger = {
 		OR = {
-			AND = {
-				custom_trigger_tooltip = {
-					tooltip = Zeaf2MercsTooltip
-					ZEA = {
-						has_country_flag = zeaf_merc_flag
+			if = {
+				limit = {
+					exists = MSD
+					NOT = {
+						exists = ZEA
 					}
 				}
-				OR = {
-					tag = ZEA
-					any_ally = {
+				AND = {
+					custom_trigger_tooltip = {
+						tooltip = Masidon2MercsTooltip
+						MSD = {
+							has_country_flag = zeaf_merc_flag
+						}
+					}
+					OR = {
+						tag = MSD
+						any_ally = {
+							tag = MSD
+						}
+					}
+				}
+			}
+			else = {
+				AND = {
+					custom_trigger_tooltip = {
+						tooltip = Zeaf2MercsTooltip
+						ZEA = {
+							has_country_flag = zeaf_merc_flag
+						}
+					}
+					OR = {
 						tag = ZEA
+						any_ally = {
+							tag = ZEA
+						}
 					}
 				}
 			}
@@ -1179,17 +1203,41 @@ merc_faris_cataphracts = {
 	cost_modifier = 0.65
 	sprites = { muslimgfx_sprite_pack }
     trigger = {
-		AND = {
-			custom_trigger_tooltip = {
-				tooltip = Zeaf2MercsTooltip
-				ZEA = {
-					has_country_flag = zeaf_merc_flag
+		if = {
+			limit = {
+				exists = MSD
+				NOT = {
+					exists = ZEA
 				}
 			}
-			OR = {
-				tag = ZEA
-				any_ally = {
+			AND = {
+				custom_trigger_tooltip = {
+					tooltip = Masidon2MercsTooltip
+					MSD = {
+						has_country_flag = zeaf_merc_flag
+					}
+				}
+				OR = {
+					tag = MSD
+					any_ally = {
+						tag = MSD
+					}
+				}
+			}
+		}
+		else = {
+			AND = {
+				custom_trigger_tooltip = {
+					tooltip = Zeaf2MercsTooltip
+					ZEA = {
+						has_country_flag = zeaf_merc_flag
+					}
+				}
+				OR = {
 					tag = ZEA
+					any_ally = {
+						tag = ZEA
+					}
 				}
 			}
 		}

@@ -253,7 +253,9 @@ pex_2 = {
         required_missions = { pex_obtain_aras_approval }
         trigger = {
             stability = 3
-            num_of_rebel_controlled_provinces = 0
+            NOT = {
+                num_of_rebel_controlled_provinces = 1
+            }
             adm_power = 100
         }
         effect = {
