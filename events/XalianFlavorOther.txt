@@ -289,11 +289,8 @@ country_event = {
 		}
 		if = {
 			limit = {
-				OR = {
-					NOT = { has_country_modifier = rastrayvarists_supported }
-					capital_scope = {
-						superregion = ga_xal_superregion
-					}
+				capital_scope = {
+					superregion = ga_xal_superregion
 				}
 			}
 			add_stability = -1
