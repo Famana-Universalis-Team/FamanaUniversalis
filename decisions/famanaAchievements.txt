@@ -1912,23 +1912,23 @@ country_decisions = {
 			tag = VAM
 			religion = ordic
 			6356 = {
-				owner = VAM
+				owned_by = VAM
 				religion = ordic
 			}
 			6176 = {
-				owner = VAM
+				owned_by = VAM
 				religion = ordic
 			}
 			6189 = {
-				owner = VAM
+				owned_by = VAM
 				religion = ordic
 			}
 			6709 = {
-				owner = VAM
+				owned_by = VAM
 				religion = ordic
 			}
 			5725 = {
-				owner = VAM
+				owned_by = VAM
 				religion = ordic
 			}
 		}
@@ -1977,8 +1977,8 @@ country_decisions = {
 				limit = {
 					religion = rochoni
 				}
-				any_country = {
-					NOT = {
+				NOT = {
+					any_country = {
 						OR = {
 							religion = lathvy
 							religion = rini
@@ -1991,8 +1991,8 @@ country_decisions = {
 				limit = {
 					religion = lathvy
 				}
-				any_country = {
-					NOT = {
+				NOT = {
+					any_country = {
 						OR = {
 							religion = rochoni
 							religion = rini
@@ -2005,8 +2005,8 @@ country_decisions = {
 				limit = {
 					religion = rini
 				}
-				any_country = {
-					NOT = {
+				NOT = {
+					any_country = {
 						OR = {
 							religion = lathvy
 							religion = rochoni
@@ -2019,8 +2019,8 @@ country_decisions = {
 				limit = {
 					religion = harmonic
 				}
-				any_country = {
-					NOT = {
+				NOT = {
+					any_country = {
 						OR = {
 							religion = lathvy
 							religion = rini
@@ -2037,8 +2037,8 @@ country_decisions = {
 						school = maxan_school
 					}
 				}
-				any_country = {
-					NOT = {
+				NOT = {
+					any_country = {
 						OR = {
 							religious_school = {
 								group = lathvy_group
@@ -2071,8 +2071,8 @@ country_decisions = {
 						school = pextoglazian_school
 					}
 				}
-				any_country = {
-					NOT = {
+				NOT = {
+					any_country = {
 						OR = {
 							religious_school = {
 								group = lathvy_group
@@ -2105,8 +2105,8 @@ country_decisions = {
 						school = walaran_school
 					}
 				}
-				any_country = {
-					NOT = {
+				NOT = {
+					any_country = {
 						OR = {
 							religious_school = {
 								group = lathvy_group
@@ -2139,8 +2139,8 @@ country_decisions = {
 						school = kolyan_school
 					}
 				}
-				any_country = {
-					NOT = {
+				NOT = {
+					any_country = {
 						OR = {
 							religious_school = {
 								group = lathvy_group
@@ -2173,8 +2173,8 @@ country_decisions = {
 						school = nafan_school
 					}
 				}
-				any_country = {
-					NOT = {
+				NOT = {
+					any_country = {
 						OR = {
 							religious_school = {
 								group = lathvy_group
@@ -2207,8 +2207,8 @@ country_decisions = {
 						school = celzian_school
 					}
 				}
-				any_country = {
-					NOT = {
+				NOT = {
+					any_country = {
 						OR = {
 							religious_school = {
 								group = lathvy_group

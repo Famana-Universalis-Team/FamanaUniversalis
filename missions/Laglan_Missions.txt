@@ -202,12 +202,71 @@ lag_1 = {
         required_missions = { lag_shores_of_the_olivinar lag_the_war_for_walara }
         position = 11
         trigger = {
-
+            unnamed_pexto_14 = {
+                type = all
+                country_or_non_sovereign_subject_holds = ROOT
+            }
+            unnamed_pexto_24 = {
+                type = all
+                country_or_non_sovereign_subject_holds = ROOT
+            }
+            5753 = {
+                trade_share = {
+                    country = ROOT
+                    share = 85
+                }
+            }
         }
         effect = {
-
+            6184 = {
+                add_trade_modifier = {
+                    who = ROOT
+                    duration = 10950
+                    power = 40
+                    key = CONTROL_YUVLAR
+                }
+            }
+            5725 = {
+                add_trade_modifier = {
+                    who = ROOT
+                    duration = 10950
+                    power = 40
+                    key = CONTROL_YUVLAR
+                }
+            }
+            6236 = {
+                add_trade_modifier = {
+                    who = ROOT
+                    duration = 10950
+                    power = 40
+                    key = CONTROL_YUVLAR
+                }
+            }
+            5289 = {
+                add_province_modifier = {
+                    name = lag_channel_toll
+                    duration = -1
+                }
+            }
+            if = {
+                limit = {
+                    NOT = {
+                        5289 = {
+                            province_has_center_of_trade_of_level = 3
+                        }
+                    }
+                }
+                add_center_of_trade_level = 1
+            }
         }
-        #provinces_to_highlight = {}
+        provinces_to_highlight = {
+            NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			OR = {
+                area = unnamed_area_24
+                area = unnamed_pexto_14
+                province_id = 5753
+            }
+        }
     }
 }
 
@@ -367,12 +426,24 @@ lag_2 = {
         required_missions = { lag_annex_tegaria }
         position = 10
         trigger = {
-
+            unnamed_pexto_11 = {
+                type = all
+                country_or_non_sovereign_subject_holds = ROOT
+            }
+            if = {
+                limit = {
+                    exists = WLR
+                }
+                army_size = WLR
+            }
         }
         effect = {
 
         }
-        #provinces_to_highlight = {}
+        provinces_to_highlight = {
+            NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			area = unnamed_pexto_11
+        }
     }
 
     lag_invade_the_north = {

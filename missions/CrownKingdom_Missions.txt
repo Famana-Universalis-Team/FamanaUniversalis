@@ -199,23 +199,29 @@ tck_slot_1 = {
 				change_trade_goods = iron
 				add_base_production = 1
 			}
-			5083 = {
+			if = {
 				limit = {
-					owned_by = ROOT
+					owns = 5083
 				}
-				add_base_production = 1
+				5083 = {
+					add_base_production = 1
+				}
 			}
-			5084 = {
+			if = {
 				limit = {
-					owned_by = ROOT
+					owns = 5084
 				}
-				add_base_production = 1
+				5084 = {
+					add_base_production = 1
+				}
 			}
-			5056 = {
+			if = {
 				limit = {
-					owned_by = ROOT
+					owns = 5056
 				}
-				add_base_production = 1
+				5056 = {
+					add_base_production = 1
+				}
 			}
 		}
 		provinces_to_highlight = {
@@ -243,11 +249,13 @@ tck_slot_1 = {
 				}
 				add_base_production = 1
 			}
-			5103 = {
+			if = {
 				limit = {
-					owned_by = ROOT
+					owns = 5103
 				}
-				add_base_production = 1
+				5103 = {
+					add_base_production = 1
+				}
 			}
 			add_country_modifier = {
 				name = tck_wine_courtroom
