@@ -458,6 +458,9 @@ lag_2 = {
             unnamed_pexto_14 = {
                 add_permanent_claim = ROOT
             }
+            unnamed_pexto_12 = {
+                add_permanent_claim = ROOT
+            }
         }
         provinces_to_highlight = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
@@ -470,12 +473,27 @@ lag_2 = {
         required_missions = { lag_the_war_for_walara lag_raid_on_pomlen }
         position = 13
         trigger = {
-
+            unnamed_pexto_12 = {
+                type = all
+                country_or_non_sovereign_subject_holds = ROOT
+            }
+            unnamed_pexto_4 = {
+                type = all
+                country_or_non_sovereign_subject_holds = ROOT
+            }
         }
         effect = {
 
         }
-        #provinces_to_highlight = {}
+        provinces_to_highlight = {
+            NOT = {
+                country_or_non_sovereign_subject_holds = ROOT
+            }
+            OR = {
+                area = unnamed_pexto_12
+                area = unnamed_pexto_4
+            }
+        }
     }
 }
 
