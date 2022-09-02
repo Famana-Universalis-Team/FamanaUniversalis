@@ -1846,11 +1846,12 @@ country_decisions = {
 				tooltip = tooltipIronmanAch
 				ironman = yes
 			}
-			hidden_trigger = {
+			custom_trigger_tooltip = {
+				tooltip = tideturnedTT
 				calc_true_if = {
 					all_country = {
 						AND = {
-							reverse_has_opinion_modifier = {
+							has_opinion_modifier = {
 								who = ROOT
 								modifier = slaves_raided
 							}
@@ -1859,9 +1860,6 @@ country_decisions = {
 					}
 					amount = 5
 				}
-			}
-			custom_trigger_tooltip = {
-				tooltip = tideturnedTT
 			}
 			has_reform = pirate_republic_reform
 		}
@@ -1954,8 +1952,32 @@ country_decisions = {
 					#ironman = yes
 					start_date = 212.6.6
 					NOT = { num_of_custom_nations = 1 }
+					religion_group = lathvy_group
 					OR = {
-						religion_group = lathvy_group
+						religious_school = {
+							group = lathvy_group
+							school = pextoglazian_school
+						}
+						religious_school = {
+							group = lathvy_group
+							school = maxan_school
+						}
+						religious_school = {
+							group = lathvy_group
+							school = nafan_school
+						}
+						religious_school = {
+							group = lathvy_group
+							school = celzian_school
+						}
+						religious_school = {
+							group = lathvy_group
+							school = walaran_school
+						}
+						religious_school = {
+							group = lathvy_group
+							school = kolyan_school
+						}
 					}
 					has_dlc = "Cradle of Civilization"
 				}

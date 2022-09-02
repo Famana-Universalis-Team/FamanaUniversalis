@@ -1046,9 +1046,15 @@ merc_feniki_marines = {
 	cost_modifier = 0.33
 	sprites = { westerngfx_sprite_pack }
     trigger = {
-		custom_trigger_tooltip = {
-			tooltip = FenikiMarinesTooltip
-			has_country_flag = feniki_merc_flag
+		OR = {
+			custom_trigger_tooltip = {
+				tooltip = FenikiMarinesTooltip
+				has_country_flag = feniki_merc_flag
+			}
+			custom_trigger_tooltip = {
+				tooltip = lagFenikiTooltipMerc
+				has_country_flag = lagCanGetFenikiMarines
+			}
 		}
 	}
 	modifier = {
@@ -1329,5 +1335,21 @@ merc_hozyan_bandits = {
 	modifier = {
 		movement_speed = 0.10
 		discipline = -0.05
+	}
+}
+
+# Krok Company
+merc_krok_company = {
+    regiments_per_development = 0.05
+    home_province = 5299 # krok
+	cavalry_weight = 0.2
+	cavalry_cap = 4
+	cost_modifier = 0.5
+	sprites = { westerngfx_sprite_pack }
+    trigger = {
+		mission_completed = lag_invade_the_north
+	}
+	modifier = {
+		fire_damage = 0.20
 	}
 }

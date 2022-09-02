@@ -10,7 +10,7 @@ legions_of_truth = {
 	is_blessing = yes
 
 	modifier = {
-		land_morale = 0.10
+		land_morale = 0.05
 	}
 }
 
@@ -18,7 +18,7 @@ believe_on_the_one_true_god = {
 	is_blessing = yes
 
 	modifier = {
-		global_missionary_strength = 0.02
+		global_heretic_missionary_strength = 0.02
 	}
 }
 
@@ -50,7 +50,7 @@ followers_of_shir = {
 	is_blessing = yes
 
 	modifier = {
-		idea_cost = -0.1 
+		idea_cost = -0.10
 	}
 }
 

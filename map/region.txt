@@ -623,15 +623,16 @@ nozumol_region = {
 	}
 }
 
-nheomyr_region = {
+bamali_gulf_region = {
 	areas = {
-		fuka_area
-		north_khim_area
-		vamkad_area
-		nhoma_area_3
-		unnamed_area_38
-		nhoma_area_2
-		nhoma_area_6
+		unnamed_area_37
+		unnamed_area_36
+		unnamed_area_35
+		unnamed_area_39
+		unnamed_area_48
+		unnamed_area_45
+		unnamed_area_44
+		yenis_area
 	}
 }
 
@@ -645,16 +646,15 @@ northern_desert_region = {
 	}
 }
 
-bamali_gulf_region = {
+nheomyr_region = {
 	areas = {
-		unnamed_area_37
-		unnamed_area_36
-		unnamed_area_35
-		unnamed_area_39
-		unnamed_area_48
-		unnamed_area_45
-		unnamed_area_44
-		yenis_area
+		fuka_area
+		north_khim_area
+		vamkad_area
+		nhoma_area_3
+		unnamed_area_38
+		nhoma_area_2
+		nhoma_area_6
 	}
 }
 

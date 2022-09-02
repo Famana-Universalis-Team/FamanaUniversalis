@@ -1316,7 +1316,7 @@ naf_rini_elite = {
 nafa_decision_cooldown = {}
 
 orc_vassal_acceptance = {
-    num_accepted_cultures = 2
+    num_accepted_cultures = 3
     global_autonomy = 0.025
 }
 
@@ -2085,4 +2085,9 @@ lag_religious_acceptance = {
     advisor_pool = 1
     tolerance_heretic = 2
     prestige = 0.5
+}
+
+lag_control_the_mountain_passes = {
+    global_supply_limit_modifier = 0.20
+    land_attrition = -0.10
 }

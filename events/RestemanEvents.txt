@@ -187,6 +187,6 @@ country_event = { #Raid on the temple
                 duration = -1
             }
         }
-        custom_tooltip = gain_access_to_pomlen_modifier
+        #custom_tooltip = gain_access_to_pomlen_modifier
 	}
 }

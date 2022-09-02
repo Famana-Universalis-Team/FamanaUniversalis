@@ -1029,73 +1029,28 @@ Hoxoi = {
 }
 
 #############################
-Maldik = {
-	Maldikian = { #malding
-		primary = MLD
+Epilany = {
+	Kolyan = {
+		primary = KLY
 		male_names = {
-            Odrig Brebar Odlac Ozgik Nabam Nolmo Natarda Tarda Muno Gahi Oyud Gedat Aport Kanda Nobo Amart Anuzum
+            Fesperim Korarim Deror Iotan Karuy Ilipim Sowar Orakim Niara Fondian Sewa Uniar Dangal
         }
         female_names = {
-            Beroro Nai Mida Uge Imia Gilnia Uaizbia Kaiamau
+            Seialen Avarai Terel Kirma Asnemil Batekan
         }
         dynasty_names = {
-			Mar Moyai Kemay Kasi Magya Komur Dilo Kayti Gag Mafnor Tomu Kamar Ufpau
+        	"sa'Kolya" "sa'Denire" "sa'Pramtealin" "sa'Upim" "sa'Kaiyr" "sa'Jimin" "sa'Voran" "sa'Seno" "sa'Iliyia"
         }
 	}
-	Paldik = {
+	Qubaran = {
 		male_names = {
-            Odrig Brebar Odlac Ozgik Nabam Nolmo Natarda Tarda Muno Gahi Oyud Gedat Aport Kanda Nobo Amart Anuzum
+            Fesperim Korarim Deror Iotan Karuy Ilipim Sowar Orakim Niara Fondian Sewa Uniar Dangal
         }
         female_names = {
-            Beroro Nai Mida Uge Imia Gilnia Uaizbia Kaiamau
+            Seialen Avarai Terel Kirma Asnemil Batekan
         }
         dynasty_names = {
-			Mar Moyai Kemay Kasi Magya Komur Dilo Kayti Gag Mafnor Tomu Kamar Ufpau
-        }
-	}
-	Binnativan = {
-		male_names = {
-            Odrig Brebar Odlac Ozgik Nabam Nolmo Natarda Tarda Muno Gahi Oyud Gedat Aport Kanda Nobo Amart Anuzum
-        }
-        female_names = {
-            Beroro Nai Mida Uge Imia Gilnia Uaizbia Kaiamau
-        }
-        dynasty_names = {
-			Mar Moyai Kemay Kasi Magya Komur Dilo Kayti Gag Mafnor Tomu Kamar Ufpau
-        }
-	}
-	Ora_Maldan = {
-		primary = ORA
-		male_names = {
-            Odrig Brebar Odlac Ozgik Nabam Nolmo Natarda Tarda Muno Gahi Oyud Gedat Aport Kanda Nobo Amart Anuzum
-        }
-        female_names = {
-            Beroro Nai Mida Uge Imia Gilnia Uaizbia Kaiamau
-        }
-        dynasty_names = {
-			Mar Moyai Kemay Kasi Magya Komur Dilo Kayti Gag Mafnor Tomu Kamar Ufpau
-        }
-	}
-	Naba_Maldan = {
-		male_names = {
-            Odrig Brebar Odlac Ozgik Nabam Nolmo Natarda Tarda Muno Gahi Oyud Gedat Aport Kanda Nobo Amart Anuzum
-        }
-        female_names = {
-            Beroro Nai Mida Uge Imia Gilnia Uaizbia Kaiamau
-        }
-        dynasty_names = {
-			Mar Moyai Kemay Kasi Magya Komur Dilo Kayti Gag Mafnor Tomu Kamar Ufpau
-        }
-	}
-	Meryaldik = {
-		male_names = {
-            Odrig Brebar Odlac Ozgik Nabam Nolmo Natarda Tarda Muno Gahi Oyud Gedat Aport Kanda Nobo Amart Anuzum
-        }
-        female_names = {
-            Beroro Nai Mida Uge Imia Gilnia Uaizbia Kaiamau
-        }
-        dynasty_names = {
-			Mar Moyai Kemay Kasi Magya Komur Dilo Kayti Gag Mafnor Tomu Kamar Ufpau
+        	"sa'Kolya" "sa'Denire" "sa'Pramtealin" "sa'Upim" "sa'Kaiyr" "sa'Jimin" "sa'Voran" "sa'Seno" "sa'Iliyia"
         }
 	}
 }
@@ -2245,28 +2200,73 @@ Western_Estali = { #unfinished
 }
 
 #############################
-Epilany = {
-	Kolyan = {
-		primary = KLY
+Maldik = {
+	Maldikian = { #malding
+		primary = MLD
 		male_names = {
-            Fesperim Korarim Deror Iotan Karuy Ilipim Sowar Orakim Niara Fondian Sewa Uniar Dangal
+            Odrig Brebar Odlac Ozgik Nabam Nolmo Natarda Tarda Muno Gahi Oyud Gedat Aport Kanda Nobo Amart Anuzum
         }
         female_names = {
-            Seialen Avarai Terel Kirma Asnemil Batekan
+            Beroro Nai Mida Uge Imia Gilnia Uaizbia Kaiamau
         }
         dynasty_names = {
-        	"sa'Kolya" "sa'Denire" "sa'Pramtealin" "sa'Upim" "sa'Kaiyr" "sa'Jimin" "sa'Voran" "sa'Seno" "sa'Iliyia"
+			Mar Moyai Kemay Kasi Magya Komur Dilo Kayti Gag Mafnor Tomu Kamar Ufpau
         }
 	}
-	Qubaran = {
+	Paldik = {
 		male_names = {
-            Fesperim Korarim Deror Iotan Karuy Ilipim Sowar Orakim Niara Fondian Sewa Uniar Dangal
+            Odrig Brebar Odlac Ozgik Nabam Nolmo Natarda Tarda Muno Gahi Oyud Gedat Aport Kanda Nobo Amart Anuzum
         }
         female_names = {
-            Seialen Avarai Terel Kirma Asnemil Batekan
+            Beroro Nai Mida Uge Imia Gilnia Uaizbia Kaiamau
         }
         dynasty_names = {
-        	"sa'Kolya" "sa'Denire" "sa'Pramtealin" "sa'Upim" "sa'Kaiyr" "sa'Jimin" "sa'Voran" "sa'Seno" "sa'Iliyia"
+			Mar Moyai Kemay Kasi Magya Komur Dilo Kayti Gag Mafnor Tomu Kamar Ufpau
+        }
+	}
+	Binnativan = {
+		male_names = {
+            Odrig Brebar Odlac Ozgik Nabam Nolmo Natarda Tarda Muno Gahi Oyud Gedat Aport Kanda Nobo Amart Anuzum
+        }
+        female_names = {
+            Beroro Nai Mida Uge Imia Gilnia Uaizbia Kaiamau
+        }
+        dynasty_names = {
+			Mar Moyai Kemay Kasi Magya Komur Dilo Kayti Gag Mafnor Tomu Kamar Ufpau
+        }
+	}
+	Ora_Maldan = {
+		primary = ORA
+		male_names = {
+            Odrig Brebar Odlac Ozgik Nabam Nolmo Natarda Tarda Muno Gahi Oyud Gedat Aport Kanda Nobo Amart Anuzum
+        }
+        female_names = {
+            Beroro Nai Mida Uge Imia Gilnia Uaizbia Kaiamau
+        }
+        dynasty_names = {
+			Mar Moyai Kemay Kasi Magya Komur Dilo Kayti Gag Mafnor Tomu Kamar Ufpau
+        }
+	}
+	Naba_Maldan = {
+		male_names = {
+            Odrig Brebar Odlac Ozgik Nabam Nolmo Natarda Tarda Muno Gahi Oyud Gedat Aport Kanda Nobo Amart Anuzum
+        }
+        female_names = {
+            Beroro Nai Mida Uge Imia Gilnia Uaizbia Kaiamau
+        }
+        dynasty_names = {
+			Mar Moyai Kemay Kasi Magya Komur Dilo Kayti Gag Mafnor Tomu Kamar Ufpau
+        }
+	}
+	Meryaldik = {
+		male_names = {
+            Odrig Brebar Odlac Ozgik Nabam Nolmo Natarda Tarda Muno Gahi Oyud Gedat Aport Kanda Nobo Amart Anuzum
+        }
+        female_names = {
+            Beroro Nai Mida Uge Imia Gilnia Uaizbia Kaiamau
+        }
+        dynasty_names = {
+			Mar Moyai Kemay Kasi Magya Komur Dilo Kayti Gag Mafnor Tomu Kamar Ufpau
         }
 	}
 }
