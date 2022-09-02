@@ -188,7 +188,20 @@ lag_1 = {
             }
         }
         effect = {
-
+            add_adm_power = 35
+            add_dip_power = 35
+            add_mil_power = 35
+            add_country_modifier = {
+                name = lag_further_our_reach
+                duration = 7300
+            }
+            add_country_modifier = {
+                name = lag_access_northern_trade_routes
+                duration = -1
+            }
+            unnamed_area_24 = {
+                add_permanent_claim = ROOT
+            }
         }
         provinces_to_highlight = {
             NOT = {country_or_non_sovereign_subject_holds = ROOT}
@@ -206,10 +219,11 @@ lag_1 = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
             }
-            unnamed_pexto_24 = {
+            unnamed_area_24 = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
             }
+            owns_core_province = 5289
             5753 = {
                 trade_share = {
                     country = ROOT
@@ -218,6 +232,24 @@ lag_1 = {
             }
         }
         effect = {
+            5289 = {
+                add_province_modifier = {
+                    name = lag_channel_toll
+                    duration = -1
+                }
+            }
+            if = {
+                limit = {
+                    NOT = {
+                        5289 = {
+                            province_has_center_of_trade_of_level = 3
+                        }
+                    }
+                }
+                5289 = {
+                    add_center_of_trade_level = 1
+                }
+            }
             6184 = {
                 add_trade_modifier = {
                     who = ROOT
@@ -242,22 +274,6 @@ lag_1 = {
                     key = CONTROL_YUVLAR
                 }
             }
-            5289 = {
-                add_province_modifier = {
-                    name = lag_channel_toll
-                    duration = -1
-                }
-            }
-            if = {
-                limit = {
-                    NOT = {
-                        5289 = {
-                            province_has_center_of_trade_of_level = 3
-                        }
-                    }
-                }
-                add_center_of_trade_level = 1
-            }
         }
         provinces_to_highlight = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
@@ -265,6 +281,7 @@ lag_1 = {
                 area = unnamed_area_24
                 area = unnamed_pexto_14
                 province_id = 5753
+                province_id = 5289
             }
         }
     }
@@ -438,7 +455,9 @@ lag_2 = {
             }
         }
         effect = {
-
+            unnamed_pexto_14 = {
+                add_permanent_claim = ROOT
+            }
         }
         provinces_to_highlight = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
@@ -546,7 +565,10 @@ lag_3 = {
                 change_culture = ROOT
                 change_religion = ROOT
             }
-            add_treasury = 500
+            #add_treasury = 500
+            umzat_islands_area = {
+                add_permanent_claim = ROOT
+            }
         }
         provinces_to_highlight = {
             NOT = {
@@ -686,7 +708,9 @@ lag_3 = {
             }
         }
         effect = {
-            #add an event
+            country_event = {
+                id = restema.4
+            }
         }
         provinces_to_highlight = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
@@ -702,7 +726,13 @@ lag_3 = {
             is_defender_of_faith = yes
         }
         effect = {
-
+            country_event = {
+                id = restema.3
+            }
+            add_country_modifier = {
+                name = lag_new_lathvy_doctrine
+                duration = 5475
+            }
         }
         #provinces_to_highlight = {}
     }

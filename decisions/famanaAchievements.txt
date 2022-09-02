@@ -1955,10 +1955,7 @@ country_decisions = {
 					start_date = 212.6.6
 					NOT = { num_of_custom_nations = 1 }
 					OR = {
-						religion = lathvy
-						religion = rochoni
-						religion = rini
-						religion = harmonic
+						religion_group = lathvy_group
 					}
 					has_dlc = "Cradle of Civilization"
 				}

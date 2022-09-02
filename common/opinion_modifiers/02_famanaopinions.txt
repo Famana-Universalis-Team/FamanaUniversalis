@@ -89,3 +89,8 @@ lag_tck_trade_war = {
 	opinion = -100
 	yearly_decay = 1
 }
+
+looted_the_high_temple = {
+	opinion = -60
+	yearly_decay = 2
+}

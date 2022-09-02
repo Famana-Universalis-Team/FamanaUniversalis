@@ -2031,7 +2031,7 @@ lag_seizeure_of_maglazios = {
 }
 
 lag_enlisting_locals = {
-    manpower_recovery_speed = 0.20
+    manpower_recovery_speed = 0.10
 }
 
 lag_butcher_of_glazia = {
@@ -2059,6 +2059,30 @@ lks_tiger_of_the_north = {
 }
 
 lag_colony_rush = {
-	global_colonial_growth = 50
+	global_colonial_growth = 45
     native_assimilation = 0.25
+}
+
+lag_new_lathvy_doctrine = {
+    tolerance_own = 2.0
+}
+
+lag_further_our_reach = {
+    range = 0.25
+    envoy_travel_time = -0.15
+}
+
+lag_access_northern_trade_routes = {
+    global_ship_trade_power = 0.10
+}
+
+lag_stolen_artifacts = {
+    idea_cost = -0.075
+    adm_tech_cost_modifier = -0.25
+}
+
+lag_religious_acceptance = {
+    advisor_pool = 1
+    tolerance_heretic = 2
+    prestige = 0.5
 }
