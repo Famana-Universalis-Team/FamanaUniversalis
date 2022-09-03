@@ -1353,3 +1353,43 @@ merc_krok_company = {
 		fire_damage = 0.20
 	}
 }
+
+# vordor fians
+merc_vordor_fians = {
+    regiments_per_development = 0.05
+    home_province = 5716 
+	cavalry_weight = 0.1
+	cavalry_cap = 4
+	cost_modifier = 0.5
+	sprites = { westerngfx_sprite_pack }
+    trigger = {
+		OR = {
+			religion_group = north_estali
+			has_country_modifier = orc_levvied_armies
+		}
+	}
+	modifier = {
+		local_friendly_movement_speed = 0.10
+		shock_damage_received = -0.05
+	}
+}
+
+# nabrozca cingetoi
+merc_nabrozca_cingetoi = {
+    regiments_per_development = 0.05
+    home_province = 5725
+	cavalry_weight = 0.1
+	cavalry_cap = 4
+	cost_modifier = 0.35
+	sprites = { westerngfx_sprite_pack }
+    trigger = {
+		OR = {
+			religion_group = north_estali
+			has_country_modifier = orc_levvied_armies
+		}
+	}
+	modifier = {
+		shock_damage_received = -0.10
+	}
+}
+
