@@ -47,7 +47,7 @@ ordican_high_kingdom = {
 	}
 
 	trigger = {
-		junior_union_with = TCK
+		has_reform = ordican_confederation_reform
 	}
 }
 
