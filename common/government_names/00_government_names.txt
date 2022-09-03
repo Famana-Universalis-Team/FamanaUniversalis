@@ -27,6 +27,30 @@ oppia_konusate_reform = {
 	}
 }
 
+ordican_high_kingdom = {
+	rank = {
+		1 = HIGH_DUCHY
+		2 = HIGH_KINGDOM
+		3 = EMPIRE
+	}
+
+	ruler_male = {
+		1 = HIGH_DUKE
+		2 = HIGH_KING
+		3 = HIGH_KING
+	}
+
+	ruler_female = {
+		1 = HIGH_DUCHESS
+		2 = HIGH_QUEEN
+		3 = HIGH_QUEEN
+	}
+
+	trigger = {
+		junior_union_with = TCK
+	}
+}
+
 helvania = {
 	rank = {
 		1 = HELVANIA

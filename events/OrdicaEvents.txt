@@ -2351,3 +2351,71 @@ country_event = {
 		ai_chance = { factor = 1 }
 	}
 }
+
+#Ordican Debuffs
+country_event = {
+	id = ordica.40
+	title = ordica.40.t
+	desc = ordica.40.d
+	picture = NUSANTARA_THRONE_eventPicture
+	fire_only_once = yes
+	major = yes
+	major_trigger = {
+		capital_scope = {
+			region = west_estal_region
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	trigger = {
+		tag = ORC
+	}
+
+	option = {
+		name = ordica.40.a
+		ai_chance = { factor = 1 }
+		custom_tooltip = OrdisaCrisisandMissions
+		add_country_modifier = {
+			name = orc_religious_intolerance
+			duration = -1
+		}
+		add_country_modifier = {
+			name = orc_disjointed_economy
+			duration = -1
+		}
+		add_country_modifier = {
+			name = orc_levvied_armies
+			duration = -1
+		}
+		custom_tooltip = OrdcaDebuffaExplain
+	}
+}
+
+#DEBUG - immediately backpedal and delete the modifiers cause the ordican mission tree doesnt exist
+country_event = {
+	id = ordica.41
+	title = ordica.41.t
+	desc = ordica.41.d
+	picture = NUSANTARA_THRONE_eventPicture
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	trigger = {
+		tag = ORC
+		has_country_modifier = orc_religious_intolerance
+	}
+
+	option = {
+		name = ordica.41.a
+		ai_chance = { factor = 1 }
+		remove_country_modifier = orc_religious_intolerance
+		remove_country_modifier = orc_disjointed_economy
+		remove_country_modifier = orc_levvied_armies
+	}
+}

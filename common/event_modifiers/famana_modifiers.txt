@@ -2091,3 +2091,19 @@ lag_control_the_mountain_passes = {
     global_supply_limit_modifier = 0.20
     land_attrition = -0.10
 }
+
+orc_religious_intolerance = {
+    global_missionary_strength = -0.02
+    tolerance_heathen = 1
+}
+
+orc_disjointed_economy = {
+    global_tax_modifier = -0.15
+    trade_efficiency = -0.10
+}
+
+orc_levvied_armies = {
+    land_forcelimit_modifier = -0.10
+    shock_damage_received = 0.10
+    global_supply_limit_modifier = 0.35
+}

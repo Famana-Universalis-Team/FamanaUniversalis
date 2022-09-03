@@ -18,7 +18,7 @@ tck_slot_1 = {
 			}
 			if = {
 				limit = {
-					ai = no
+					ai = yes
 				}
 				hidden_trigger = {
 					has_country_flag = Tck_Beastmode_Ai
@@ -106,9 +106,11 @@ tck_slot_1 = {
 				}
 				MRR = {
 					override_country_name = NEW_UMZAT
-					create_subject = {
-						subject_type = client_march
-						subject = MRR
+					ROOT = {
+						create_subject = {
+							subject_type = client_march
+							subject = PREV
+						}
 					}
 				}
 				5016 = {
@@ -363,15 +365,18 @@ tck_slot_2 = {
 			lower_oppia_area = {
 				add_permanent_claim = ROOT
 			}
-			upper_oppia_region = { #cores every uncored province in the region
-				limit = {
-					AND = {
-						owned_by = ROOT
-						NOT = { is_core = ROOT }
+			hidden_effect = {
+				upper_oppia_region = { #cores every uncored province in the region
+					limit = {
+						AND = {
+							owned_by = ROOT
+							NOT = { is_core = ROOT }
+						}
 					}
+					add_core = ROOT
 				}
-				add_core = ROOT
 			}
+			custom_tooltip = tckCoreUpperOppia
 			change_government_reform_progress = 50
 		}
 		provinces_to_highlight = {
@@ -609,9 +614,12 @@ tck_slot_2 = {
 					}
 				}
 			}
-			NOT = {
-				any_country = {
-					primary_culture = Arlentan
+			custom_trigger_tooltip = {
+				tooltip = tckArlentaCulture
+				NOT = {
+					any_country = {
+						primary_culture = Arlentan
+					}
 				}
 			}
         }
@@ -652,7 +660,7 @@ tck_slot_2 = {
 					}
 				}
 			}
-			num_of_transport = 16
+			num_of_transport = 25
         }
 		effect = {
 			vaximor_area = {
@@ -979,12 +987,28 @@ tck_slot_3 = {
 		required_missions = { tck_desert_infrastructure }
 		position = 7
 		trigger = {
+			OR = {
+				owns_core_province = 5044
+				UMZ = {
+					AND = {
+						is_subject_of = ROOT
+						ai_attitude = {
+							who = ROOT
+							attitude = attitude_loyal
+						}
+					}
+				}
+			}
+			num_of_transport = 30
+			dip_power = 100
         }
 		effect = {
+			add_dip_power = -100
 			set_country_flag = TCKeast_coast
 			custom_tooltip = Colonise_Yarong
 		}
 		provinces_to_highlight = {
+			province_id = 5044
 		}
 	}
 	tck_alakim_river = {

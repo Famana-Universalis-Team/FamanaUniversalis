@@ -1,0 +1,21 @@
+government = tribal
+add_government_reform = tribal_kingdom
+government_rank = 1
+mercantilism = 10
+technology_group = lathvy_tech_gr
+religion = lathvy
+primary_culture = Kolyan
+add_accepted_culture = Ora_Maldan
+capital = 6270
+religious_school = pextoglazian_school
+
+177.2.24 = {
+	monarch = {
+		name = "Sewa"
+		dynasty = "sa'Kolya"
+		adm = 0
+		dip = 2
+		mil = 5
+		birth_date = 154.12.16
+	}
+}

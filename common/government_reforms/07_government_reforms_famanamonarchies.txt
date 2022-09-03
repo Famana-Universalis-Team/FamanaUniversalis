@@ -130,6 +130,24 @@ oppian_state_reform = {
 	}
 }
 
+ordican_confederation_reform = {
+	icon = "ordica"
+	legacy_equivalent = despotic_monarchy
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	valid_for_nation_designer = yes
+	modifiers = {
+		tolerance_heathen = 3
+		global_manpower_modifier = -0.33
+		mercenary_cost = -0.25
+	}
+	potential = {
+		tag = ORC
+	}
+}
+
 oppian_empire_gov = {
 	icon = "feudal_theocracy"
 	allow_normal_conversion = no
