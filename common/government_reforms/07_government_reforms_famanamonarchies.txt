@@ -140,7 +140,7 @@ ordican_confederation_reform = {
 	valid_for_nation_designer = yes
 	modifiers = {
 		tolerance_heathen = 3
-		global_manpower_modifier = -0.33
+		global_manpower_modifier = -0.20
 		mercenary_cost = -0.25
 	}
 	potential = {
