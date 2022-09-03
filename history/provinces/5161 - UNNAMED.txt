@@ -18,5 +18,7 @@ trade_goods = copper
 base_manpower = 4
 capital = "Astifon"
  
-
-
+add_permanent_province_modifier = {
+	name = copper_mines_of_astifon
+	duration = -1
+}

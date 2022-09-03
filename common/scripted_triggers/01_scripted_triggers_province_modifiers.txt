@@ -163,6 +163,7 @@ province_with_special_goods_produced_trigger = {
 		has_province_modifier = fasalep_diamond_mines
 		has_province_modifier = gomic_breadbasket
 		has_province_modifier = slave_markets_of_ameleka
+		has_province_modifier = copper_mines_of_astifon
 	}
 }
 
@@ -190,6 +191,7 @@ province_without_special_goods_produced_trigger = {
 		has_province_modifier = fasalep_diamond_mines
 		has_province_modifier = gomic_breadbasket
 		has_province_modifier = slave_markets_of_ameleka
+		has_province_modifier = copper_mines_of_astifon
 	}
 }
 

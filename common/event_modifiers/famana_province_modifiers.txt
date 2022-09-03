@@ -307,6 +307,10 @@ slave_markets_of_ameleka = {
     trade_goods_size = 3
 }
 
+copper_mines_of_astifon = {
+    trade_goods_size = 1.5
+}
+
 growth_of_gadea = {
     local_build_cost = -0.25
     local_tax_modifier = 0.25
