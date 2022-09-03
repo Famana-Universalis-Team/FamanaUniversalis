@@ -25,78 +25,6 @@ on_startup = {
 		value = 0
 	}
 	set_variable = {
-		which = giruTowerFinished
-		value = 0
-	}
-	export_to_variable = {
-		which = religionVar
-		value = religion
-		who = ROOT
-	}
-
-	#set_variable = {
-		#which = MorXonReasonsPos
-		#value = 0
-	#}
-	#set_variable = {
-		#which = VinXonReasonsPos
-		#value = 0
-	#}
-	#set_variable = {
-		#which = DelkXonReasonsPos
-		#value = 0
-	#}
-	#set_variable = {
-		#which = ShirXonReasonsNeg
-		#value = 0
-	#}
-	#set_variable = {
-		#which = MorXonReasonsNeg
-		#value = 0
-	#}
-	#set_variable = {
-		#which = VinXonReasonsNeg
-		#value = 0
-	#}
-	#set_variable = {
-		#which = DelkXonReasonsNeg
-		#value = 0
-	#}
-	if = {
-		limit = {
-			tag = ORC
-		}
-		set_variable = {
-			which = OrdicanFuckups
-			value = 0
-		}
-	}
-	if = {
-		limit = {
-			has_reform = desert_tribe
-		}
-		set_variable = {
-			which = migrations
-			value = 0
-		}
-	}
-	#set_variable = {
-	#	which = otherGuyMil
-	#	value = 0
-	#}
-	#set_variable = {
-		#which = otherGuyAge
-		#value = 0
-	#}
-	#set_variable = {
-	#	which = otherGuyGender
-	#	value = 0
-	#}
-	#set_variable = {
-	#	which = currentRulerAge
-	#	value = 0
-	#}
-	set_variable = {
 		which = IDforAchievementCounters
 		value = 0
 	}
@@ -108,6 +36,94 @@ on_startup = {
 			}
 		}
 		set_global_flag = rastrayvar_control_flag
+		set_variable = {
+			which = giruTowerFinished
+			value = 0
+		}
+		export_to_variable = {
+			which = religionVar
+			value = religion
+			who = ROOT
+		}
+		if = {
+			limit = {
+				tag = ORC
+			}
+			set_variable = {
+				which = OrdicanFuckups
+				value = 0
+			}
+		}
+		if = {
+			limit = {
+				has_reform = desert_tribe
+			}
+			set_variable = {
+				which = migrations
+				value = 0
+			}
+		}
+		if = {
+			limit = {
+				tag = TCK
+				NOT = {
+					has_ruler_flag = MenselSar
+				}
+			}
+			set_ruler_flag = MenselSar
+			random_list = {
+				1 = {
+					set_country_flag = Tck_Beastmode_Ai
+				}
+				3 = {
+					#do nothing
+				}
+			}
+		}
+		#set_variable = {
+		#	which = MorXonReasonsPos
+		#	value = 0
+		#}
+		#set_variable = {
+		#	which = VinXonReasonsPos
+		#	value = 0
+		#}
+		#set_variable = {
+		#	which = DelkXonReasonsPos
+		#	value = 0
+		#}
+		#set_variable = {
+		#	which = ShirXonReasonsNeg
+		#	value = 0
+		#}
+		#set_variable = {
+		#	which = MorXonReasonsNeg
+		#	value = 0
+		#}
+		#set_variable = {
+		#	which = VinXonReasonsNeg
+		#	value = 0
+		#}
+		#set_variable = {
+		#	which = DelkXonReasonsNeg
+		#	value = 0
+		#}
+		#set_variable = {
+		#	which = otherGuyMil
+		#	value = 0
+		#}
+		#set_variable = {
+		#	which = otherGuyAge
+		#	value = 0
+		#}
+		#set_variable = {
+		#	which = otherGuyGender
+		#	value = 0
+		#}
+		#set_variable = {
+		#	which = currentRulerAge
+		#	value = 0
+		#}
 	}
 	every_country = {
 		limit = {
@@ -135,25 +151,7 @@ on_startup = {
 		    modifier = yom_hate_amatan
 		}
 	}
-	if = {
-		limit = {
-			tag = TCK
-			NOT = {
-				has_ruler_flag = MenselSar
-			}
-		}
-		set_ruler_flag = MenselSar
-		random_list = {
-			1 = {
-				set_country_flag = Tck_Beastmode_Ai
-			}
-			3 = {
-				#do nothing
-			}
-		}
-	}
 	events = {
-
 		#Used to verify the player's starting country for some achievements
 		achievement.4
 
@@ -179,11 +177,7 @@ on_startup = {
 		pextoglazia.43
 	}
 	events = { #After the others so it spawns on top
-		
 		gamesetup.1
-
-		#Settings launcher
-		#gamesetup.0
 	}
 	##################################################################### /FAMANA SETUP
 }
