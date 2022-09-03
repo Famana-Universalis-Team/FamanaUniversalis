@@ -1369,7 +1369,7 @@ merc_vordor_fians = {
 		}
 	}
 	modifier = {
-		local_friendly_movement_speed = 0.10
+		movement_speed = 0.10
 		shock_damage_received = -0.05
 	}
 }
