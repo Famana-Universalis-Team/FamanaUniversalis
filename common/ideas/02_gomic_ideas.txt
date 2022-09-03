@@ -1625,7 +1625,7 @@ AGX_ideas = {
 		trade_efficiency = 0.10
 	}
 	agx_ara = {
-		global_missionary_strength = 0.01
+		tolerance_own = 1
 	}
 	agx_royal = {
 		heir_chance = 0.25
