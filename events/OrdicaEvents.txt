@@ -402,6 +402,7 @@ country_event = {
 		6249 = {
 			add_base_manpower = 1
 			change_culture = Ora_Maldan
+			change_religion = maldan
 			add_claim = ORC
 			cede_province = ORL
 			add_core = ORL
@@ -411,7 +412,7 @@ country_event = {
 			add_base_tax = 2
 			add_base_production = 1
 			change_culture = Ora_Maldan
-			change_religion = ordic
+			change_religion = maldan
 			add_claim = ORC
 			cede_province = ORL
 			add_core = ORL
@@ -419,21 +420,25 @@ country_event = {
 		6251 = {
 			add_base_production = 1
 			change_culture = Ora_Maldan
+			change_religion = maldan
 			add_claim = ORC
 			cede_province = ORM
 			add_core = ORM
 		}
 		6252 = {
 			change_culture = Ora_Maldan
+			change_religion = maldan
 			add_claim = ORC
 			cede_province = ORM
 			add_core = ORM
 		}
 		6689 = {
 			change_culture = Ora_Maldan
+			change_religion = maldan
 		}
 		6690 = {
 			change_culture = Ora_Maldan
+			change_religion = maldan
 		}
 	}
 }

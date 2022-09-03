@@ -845,6 +845,7 @@ lathvy_group = {
 			bamali
 			ordic
 			lathvy
+			maldan
 		}
 		allowed_conversion = {
 			lathvy
@@ -960,6 +961,7 @@ lathvy_group = {
 			egr
 			bamali
 			ordic
+			maldan
 		}
 		
 	}
@@ -1877,6 +1879,8 @@ north_estali = {
 		heretic = { NULLIC }
 
 		harmonized_modifier = harmonized_naravami
+		
+		crusade_name = HOLY_WAR
 	}
 	ordic = { 
 		color = { 139 144 110 }
@@ -1905,6 +1909,29 @@ north_estali = {
 		heretic = { OGRACABA }
 
 		harmonized_modifier = harmonized_ordic
+		
+		crusade_name = HOLY_WAR
+	}
+	maldan = { 
+		color = { 186 57 253 }
+		icon = 26
+		country = {
+			movement_speed = 0.10
+			core_creation = -0.1
+		}
+		country_as_secondary = {
+			tolerance_heretic = 2
+			possible_adm_policy = 1
+		}
+		province = {
+			local_missionary_strength = 0.02
+		}
+
+		heretic = { PALDIK }
+
+		harmonized_modifier = harmonized_maldan
+		
+		crusade_name = HOLY_WAR
 	}
 	gotzli = {
 		color = { 85 81 86 }
@@ -1924,6 +1951,8 @@ north_estali = {
 		heretic = { UGRONIS }
 
 		harmonized_modifier = harmonized_gotzlic
+		
+		crusade_name = HOLY_WAR
 	}
 	maschi = {
 		color = { 102 42 72 }

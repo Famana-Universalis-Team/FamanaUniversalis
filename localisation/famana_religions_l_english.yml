@@ -622,6 +622,17 @@
  ordic_rebels_desc:0 "Religious fanatics tend to rise up in provinces controlled by nations of a different faith. They seek to spread their faith and smite all unbelievers."
  ordic_rebels_army:0 "$RELIGION$ Army"
  
+ maldan:0 "Maldan"
+ maldan_religion_desc:0 "The Maldan religion has many similarities with both Ordic and animist steppe traditions. What sets it apart, however, is that it is panentheist, believing that the god Maldan is a source of divine energy present everywhere."
+
+ maldan_rebels_demand:0 "Convert $COUNTRYNAME$"
+ maldan_rebels_demand_desc:0 "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
+ maldan_rebels_title:0 "Religious"
+ maldan_rebels_name:0 "$RELIGION$ Zealots"
+ maldan_rebels_desc:0 "Religious fanatics tend to rise up in provinces controlled by nations of a different faith. They seek to spread their faith and smite all unbelievers."
+ maldan_rebels_army:0 "$RELIGION$ Army"
+ PALDIK: "Paldik"
+ 
  gotzli:0 "Gotzli"
  gotzli_religion_desc:0 "A collection of ancient traditions and beliefs popular among the Gotzlic people." #not creative enough
 
