@@ -1072,6 +1072,9 @@ country_decisions = {
 					start_date = 212.6.6
 					NOT = { num_of_custom_nations = 1 }
 					tag = ORC
+					NOT = {
+						is_year = 223
+					}
 				}
 				has_country_flag = debug_achievements
 			}

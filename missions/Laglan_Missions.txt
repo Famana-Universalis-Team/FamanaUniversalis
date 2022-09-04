@@ -1248,7 +1248,10 @@ lag_5 = {
         icon = secure_the_republic
         required_missions = { }
         trigger = {
-            num_of_ports = 16
+            num_of_owned_provinces_with = {
+                value = 20
+                has_port = yes
+            }
             OR = {
                 dock = 10
                 drydock = 5

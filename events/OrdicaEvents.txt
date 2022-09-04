@@ -1189,7 +1189,11 @@ country_event = {
 			}
 			every_owned_province = {
 				limit = {
-					region = eastern_naravam_region
+					OR = {
+						region = eastern_naravam_region
+						region = western_naravam_region
+						region = gacil_superregion
+					}
 				}
 				add_core = KLV
 				cede_province = KLV

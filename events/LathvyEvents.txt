@@ -673,15 +673,15 @@ country_event = { #TRADITIONAL & RINI
 	}
 	
 	trigger = {
-		OR = {
-			religion = lathvy
-			AND = {
-				religion = rini
-				NOT = {
-					tag = NAF
-				}
-			}
-		}
+		#OR = {
+		#	religion = lathvy
+		#	AND = {
+		#		religion = rini
+		#		NOT = {
+		#			tag = NAF
+		#		}
+		#	}
+		#}
 		NOT = {
 			OR = {
 				religious_school = {

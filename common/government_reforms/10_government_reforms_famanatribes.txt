@@ -51,6 +51,7 @@ desert_tribe = {
 		global_tax_modifier = -0.20
 		production_efficiency = -0.5
 		cb_on_religious_enemies = yes
+		religious_unity = 1.0
 		#custom_tooltip = migrations_tooltip
 	}
 	ai = {

@@ -560,7 +560,7 @@ yom_raided_timer = {
 }
 
 emtik_rights = {
-    local_missionary_strength = -10.0
+    local_missionary_strength = -1.0
     local_unrest = -2
 }
 
@@ -838,7 +838,7 @@ van_est = {
 
 van_lathvy_autonomy = {
     local_unrest = -10
-    local_missionary_strength = -1
+    local_missionary_strength = -1.0
 }
 
 dorlemitz_modifier = {
