@@ -768,7 +768,7 @@ lathvy_group = {
 
 		country = {
 			discipline = 0.05
-			core_creation = -0.10
+			religious_unity = 0.50
 		}
 		
 		country_as_secondary = {
@@ -777,7 +777,7 @@ lathvy_group = {
 		}
 
 		province = {
-			local_autonomy = -0.05
+			local_autonomy = -0.025
 		}
 
 		heretic = {
