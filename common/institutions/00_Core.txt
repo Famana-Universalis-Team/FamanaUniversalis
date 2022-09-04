@@ -1636,7 +1636,7 @@ industrialization = {
 	}
 	
 	can_start = {
-		is_year = 1700
+		is_year = 550
 		is_in_capital_area = yes
 		is_island = no
 		is_state = yes
@@ -1648,15 +1648,16 @@ industrialization = {
 				tooltip = tooltip_has_seat_in_parliament
 				has_seat_in_parliament = yes
 			}
-			has_building = university
-			AND = {
-				continent = europe
+			has_port = yes
+			#has_building = university
+			#AND = {
+				#continent = europe
 				owner = {
 					ADM = 5
 					MIL = 5
 					DIP = 5
 				}
-			}
+			#}
 			
 		}
 	}
@@ -1987,7 +1988,7 @@ feudalism_two = {
 	}
 	
 	can_start = {
-		is_year = 1750
+		is_year = 600
 		is_in_capital_area = yes
 		is_island = no
 		is_state = yes

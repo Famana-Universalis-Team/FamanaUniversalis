@@ -106,6 +106,14 @@ lks_1 = {
             area_157 = {
                 add_permanent_claim = ROOT
             }
+            if = {
+                limit = {
+                    ai = yes
+                }
+            	add_adm_tech = 3
+                add_dip_tech = 3
+                add_mil_tech = 3
+            }
         }
         provinces_to_highlight = {
             owned_by = ROOT

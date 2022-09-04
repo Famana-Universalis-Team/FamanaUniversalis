@@ -2107,3 +2107,9 @@ orc_levvied_armies = {
     shock_damage_received = 0.10
     global_supply_limit_modifier = 0.35
 }
+
+qub_rise_of_qub = {
+    global_tax_income = 480
+    global_manpower = 40
+    horde_unity = 2
+}

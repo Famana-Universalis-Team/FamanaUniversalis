@@ -280,11 +280,12 @@ VAM_ideas = {
 QUB_ideas = {
     start = {
         may_establish_frontier = yes
-		local_unrest = -1
+		horde_unity = 1
+        legitimacy = 1
     }
     
     bonus = {
-        
+        global_unrest = -1
     }    
 
     trigger = {
@@ -299,7 +300,7 @@ QUB_ideas = {
 		core_creation = -0.1
     }
     qub_3 = {
-        cavalry_shock = 1
+        cavalry_fire = 1
     }
     qub_4 = {
         province_warscore_cost = -0.2

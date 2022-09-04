@@ -781,9 +781,9 @@ expansion_ideas = {
 	category = ADM
 	important = yes
 
-	trigger = {
-		always = no
-	}
+	#trigger = {
+	#	always = no
+	#}
 
 	bonus = {
  		min_autonomy_in_territories = -0.1

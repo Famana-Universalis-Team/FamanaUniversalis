@@ -682,6 +682,7 @@ country_event = { #TRADITIONAL & RINI
 		#		}
 		#	}
 		#}
+		religion_group = lathvy_group
 		NOT = {
 			OR = {
 				religious_school = {

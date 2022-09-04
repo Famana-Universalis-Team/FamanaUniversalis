@@ -4465,9 +4465,8 @@ on_colonist_boosting_colony = {
 					}
 					is_in_capital_area = yes
 					OR = {
-						continent = north_america
-						continent = south_america
-						continent = new_world
+						continent = makan
+						continent = hasmal
 					}
 					NOT = {
 						OR = {

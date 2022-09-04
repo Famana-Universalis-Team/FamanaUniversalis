@@ -42,3 +42,42 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = fce.2
+	title = fce.2.t
+	picture = EXPLORERS_eventPicture
+	desc = fce.2.d
+	hidden = yes
+	
+	trigger = {
+		NOT = {
+			OR = {
+				num_of_colonists = 1
+				tag = QUB
+			}
+		}
+		any_owned_province = {
+			is_colony = yes
+		}
+		ai = yes
+	}
+
+	immediate = {
+		every_owned_province = {
+			limit = {
+				is_colony = yes
+			}
+			cede_province = ---
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = fce.2.a
+		ai_chance = { factor = 1 }
+	}
+}
