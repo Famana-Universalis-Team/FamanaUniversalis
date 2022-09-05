@@ -1979,6 +1979,10 @@ country_decisions = {
 						}
 						religious_school = {
 							group = lathvy_group
+							school = resteman_school
+						}
+						religious_school = {
+							group = lathvy_group
 							school = kolyan_school
 						}
 					}
@@ -2072,6 +2076,10 @@ country_decisions = {
 							}
 							religious_school = {
 								group = lathvy_group
+								school = resteman_school
+							}
+							religious_school = {
+								group = lathvy_group
 								school = kolyan_school
 							}
 							religious_school = {
@@ -2106,6 +2114,10 @@ country_decisions = {
 							}
 							religious_school = {
 								group = lathvy_group
+								school = resteman_school
+							}
+							religious_school = {
+								group = lathvy_group
 								school = kolyan_school
 							}
 							religious_school = {
@@ -2137,6 +2149,10 @@ country_decisions = {
 							religious_school = {
 								group = lathvy_group
 								school = maxan_school
+							}
+							religious_school = {
+								group = lathvy_group
+								school = resteman_school
 							}
 							religious_school = {
 								group = lathvy_group
@@ -2178,6 +2194,10 @@ country_decisions = {
 							}
 							religious_school = {
 								group = lathvy_group
+								school = resteman_school
+							}
+							religious_school = {
+								group = lathvy_group
 								school = nafan_school
 							}
 							religious_school = {
@@ -2212,6 +2232,10 @@ country_decisions = {
 							}
 							religious_school = {
 								group = lathvy_group
+								school = resteman_school
+							}
+							religious_school = {
+								group = lathvy_group
 								school = maxan_school
 							}
 							religious_school = {
@@ -2243,6 +2267,48 @@ country_decisions = {
 							religious_school = {
 								group = lathvy_group
 								school = kolyan_school
+							}
+							religious_school = {
+								group = lathvy_group
+								school = resteman_school
+							}
+							religious_school = {
+								group = lathvy_group
+								school = nafan_school
+							}
+							religious_school = {
+								group = lathvy_group
+								school = maxan_school
+							}
+						}
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					religious_school = {
+						group = lathvy_group
+						school = resteman_school
+					}
+				}
+				NOT = {
+					any_country = {
+						OR = {
+							religious_school = {
+								group = lathvy_group
+								school = pextoglazian_school
+							}
+							religious_school = {
+								group = lathvy_group
+								school = walaran_school
+							}
+							religious_school = {
+								group = lathvy_group
+								school = kolyan_school
+							}
+							religious_school = {
+								group = lathvy_group
+								school = celzian_school
 							}
 							religious_school = {
 								group = lathvy_group

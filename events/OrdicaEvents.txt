@@ -2276,7 +2276,7 @@ country_event = {
 			every_owned_province = { #Kolya
 				limit = {
 					OR = {
-						superregion = central_estal_supperregion
+						superregion = central_estal_superregion
 						superregion = north_estal_superregion
 					}
 					NOT = {

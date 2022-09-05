@@ -157,6 +157,7 @@ holy_templars_reform = {
 		manpower_recovery_speed = 0.10
 		missionaries = 1
 		cb_on_religious_enemies = yes
+		tolerance_heathen = -4
 	}
 	different_religion_acceptance = -30
 	rulers_can_be_generals = yes

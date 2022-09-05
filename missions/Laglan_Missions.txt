@@ -430,12 +430,36 @@ lag_2 = {
         required_missions = {lag_expel_hasia lag_shores_of_the_olivinar }
         position = 8
         trigger = {
-
+            num_of_owned_provinces_with = {
+                value = 120
+                superregion = west_estal_superregion
+            }
+            army_size = 150
+            navy_size = 100
         }
         effect = {
-
+            change_adm = 1
+            if = {
+                limit = {
+                    NOT = {
+                        current_age = age_of_revolutions
+                    }
+                }
+                custom_tooltip = lagDominateWestal
+                hidden_effect = {
+                    add_country_modifier = {
+                        name = lag_epic_westal_modifier
+                        duration = -1
+                    }
+                }
+            }
         }
-        #provinces_to_highlight = {}
+        provinces_to_highlight = {
+            NOT = {
+                owned_by = ROOT
+            }
+            superregion = west_estal_superregion
+        }
     }
 
     lag_the_war_for_walara = {
@@ -570,12 +594,77 @@ lag_3 = {
         required_missions = { lag_deal_with_the_guilds lag_expand_the_inland_cities }
         position = 4
         trigger = {
-
+            OR = {
+                NOT = {
+                    any_owned_province = {
+                        region = laglon_region
+                        trade_goods = slaves
+                    }
+                }
+                AND = {
+                    5021 = {
+                        trade_goods = slaves
+                        base_production = 8
+                    }
+                    5024 = {
+                        trade_goods = slaves
+                        base_production = 8
+                    }
+                }
+            }
         }
         effect = {
-
+            custom_tooltip = lagSlaveTooltip
+            tooltip = {
+                add_country_modifier = {
+                    name = lag_abolished_slavery
+                    duration = 10950
+                }
+            }
+            custom_tooltip = lagSlaveTooltip2
+            tooltip = {
+                add_years_of_income	= 1.5
+            }
+            hidden_effect = {
+                if = {
+                    limit = {
+                        NOT = {
+                            any_owned_province = {
+                                region = laglon_region
+                                trade_goods = slaves
+                            }
+                        }
+                    }
+                    add_country_modifier = {
+                        name = lag_abolished_slavery
+                        duration = 10950
+                    }
+                }
+                else = {
+                    if = {
+                        limit = {
+                            AND = {
+                                5021 = {
+                                    trade_goods = slaves
+                                    base_production = 8
+                                }
+                                5024 = {
+                                    trade_goods = slaves
+                                    base_production = 8
+                                }
+                            }
+                        }
+                        add_years_of_income	= 1.5
+                    }
+                }
+            }
+            
         }
-        #provinces_to_highlight = {}
+        provinces_to_highlight = {
+            owned_by = ROOT
+            region = laglon_region
+            trade_goods = slaves
+        }
     }
 
     lag_claim_the_great_city = {
@@ -755,7 +844,10 @@ lag_3 = {
         required_missions = { lag_raid_on_pomlen }
         position = 14
         trigger = {
+            tag = RES
             is_defender_of_faith = yes
+            piety = 1
+            prestige = 100
         }
         effect = {
             country_event = {

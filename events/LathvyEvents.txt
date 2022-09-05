@@ -662,7 +662,7 @@ country_event = {
 }
 
 #choose school
-country_event = { #TRADITIONAL & RINI
+country_event = { #TRADITIONAL
 	id = lathvy.16
 	title = lathvy.16.t
 	desc = lathvy.16.desc
@@ -673,16 +673,7 @@ country_event = { #TRADITIONAL & RINI
 	}
 	
 	trigger = {
-		#OR = {
-		#	religion = lathvy
-		#	AND = {
-		#		religion = rini
-		#		NOT = {
-		#			tag = NAF
-		#		}
-		#	}
-		#}
-		religion_group = lathvy_group
+		religion = lathvy
 		NOT = {
 			OR = {
 				religious_school = {
@@ -703,6 +694,10 @@ country_event = { #TRADITIONAL & RINI
 				}
 				religious_school = {
 					group = lathvy_group
+					school = resteman_school
+				}
+				religious_school = {
+					group = lathvy_group
 					school = celzian_school
 				}
 				religious_school = {
@@ -712,10 +707,7 @@ country_event = { #TRADITIONAL & RINI
 			}
 		}
 		any_known_country = {
-			OR = {
-				religion = lathvy
-				religion = rini
-			}
+			religion_group = lathvy_group
 		}
 	}
 	
@@ -783,12 +775,12 @@ country_event = { #TRADITIONAL & RINI
 		name = lathvy.16.b
 		trigger = {
 			NOT = { has_global_flag = PomlenDestroyed }
-			any_known_country = {
-				religious_school = {
-					group = lathvy_group
-					school = pextoglazian_school
-				}
-			}
+			#any_known_country = {
+			#	religious_school = {
+			#		group = lathvy_group
+			#		school = pextoglazian_school
+			#	}
+			#}
 		}
 		ai_chance = { 
 			factor = 1
@@ -841,14 +833,14 @@ country_event = { #TRADITIONAL & RINI
 	}
 	option = { #maxan
 		name = lathvy.16.c
-		trigger = {
-			any_known_country = {
-				religious_school = {
-					group = lathvy_group
-					school = maxan_school
-				}
-			}
-		}
+		#trigger = {
+		#	any_known_country = {
+		#		religious_school = {
+		#			group = lathvy_group
+		#			school = maxan_school
+		#		}
+		#	}
+		#}
 		ai_chance = {
 			factor = 1
 			modifier = {
@@ -956,49 +948,251 @@ country_event = { #TRADITIONAL & RINI
 	}
 
 	option = { #Kolyan
-	name = lathvy.16.f
-	ai_chance = { 
-		factor = 2
-		modifier = {
-			factor = 0
-			NOT = {
-				capital_scope = {
-					OR = {
-						region = western_naravam_region
-						region = eastern_naravam_region
-						region = apilanya_region
-						region = voychonia_region
-						region = lukscha_region
-						region = gotzlic_region
+		name = lathvy.16.f
+		ai_chance = {
+			factor = 2
+			modifier = {
+				factor = 0
+				NOT = {
+					capital_scope = {
+						OR = {
+							superregion = north_estal_superregion
+							superregion = gacil_superregion
+						}
 					}
 				}
 			}
-		}
-		modifier = {
-			factor = 20
-			OR = {
-				primary_culture = Nirkifi
-				primary_culture = Rduma
-				primary_culture = Nirkifi
-				primary_culture = Burgavian
-				primary_culture = Shoowtan
-				primary_culture = Veberi
-				primary_culture = Rouragi
+			modifier = {
+				factor = 20
+				OR = {
+					primary_culture = Nirkifi
+					primary_culture = Rduma
+					primary_culture = Nirkifi
+					primary_culture = Burgavian
+					primary_culture = Shoowtan
+					primary_culture = Veberi
+					primary_culture = Rouragi
+				}
+			}
+			modifier = {
+				factor = 2
+				religion = rochoni
 			}
 		}
-		modifier = {
-			factor = 2
-			religion = rochoni
+		set_religious_school = {
+			group = lathvy_group
+			school = kolyan_school
+		}
+		trigger = {
+			has_global_flag = KolyaHappened
 		}
 	}
-	set_religious_school = {
-		group = lathvy_group
-		school = kolyan_school
-	}
-	trigger = {
-		has_global_flag = KolyaHappened
+
+	option = { #Resteman
+		name = lathvy.16.g
+		ai_chance = { 
+			factor = 0.25
+			modifier = {
+				factor = 3
+				capital_scope = {
+					superregion = west_estal_superregion
+				}
+			}
+			modifier = {
+				factor = 100
+				capital_scope = {
+					superregion = oppia_superregion
+				}
+			}
+			modifier = {
+				factor = 20
+				primary_culture = Feniki
+			}
+			modifier = {
+				factor = 10
+				tag = RES
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					is_rival = RES
+					is_enemy = RES
+				}
+			}
+		}
+		set_religious_school = {
+			group = lathvy_group
+			school = resteman_school
+		}
+		trigger = {
+			has_global_flag = RestemaHappened
+		}
 	}
 }
+
+#choose school
+country_event = { #ROCHONI
+	id = lathvy.24
+	title = lathvy.24.t
+	desc = lathvy.24.desc
+	picture = PRAYING_eventPicture
+	
+	mean_time_to_happen = {
+		days = 30
+	}
+	
+	trigger = {
+		religion = rochoni
+		NOT = {
+			OR = {
+				religious_school = {
+					group = lathvy_group
+					school = celzian_school
+				}
+				religious_school = {
+					group = lathvy_group
+					school = kolyan_school
+				}
+			}
+		}
+		any_known_country = {
+			religion_group = lathvy_group
+		}
+		OR = {
+			has_global_flag = CelzionHappened
+			has_global_flag = KolyaHappened
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = { #Celzian
+		name = lathvy.16.e
+		ai_chance = { 
+			factor = 1
+			modifier = {
+				factor = 2
+				capital_scope = {
+					superregion = west_estal_superregion
+				}
+			}
+			modifier = {
+				factor = 20
+				primary_culture = Celzian
+			}
+			modifier = {
+				factor = 10
+				tag = CEL
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					is_rival = CEL
+					is_enemy = CEL
+				}
+			}
+		}
+		set_religious_school = {
+			group = lathvy_group
+			school = celzian_school
+		}
+		trigger = {
+			has_global_flag = CelzionHappened
+		}
+	}
+
+	option = { #Kolyan
+		name = lathvy.16.f
+		ai_chance = {
+			factor = 2
+			#modifier = {
+			#	factor = 0
+			#	NOT = {
+			#		capital_scope = {
+			#			OR = {
+			#				superregion = north_estal_superregion
+			#				superregion = gacil_superregion
+			#			}
+			#		}
+			#	}
+			#}
+			modifier = {
+				factor = 20
+				OR = {
+					primary_culture = Nirkifi
+					primary_culture = Rduma
+					primary_culture = Nirkifi
+					primary_culture = Burgavian
+					primary_culture = Shoowtan
+					primary_culture = Veberi
+					primary_culture = Rouragi
+				}
+			}
+			#modifier = {
+			#	factor = 2
+			#	religion = rochoni
+			#}
+		}
+		set_religious_school = {
+			group = lathvy_group
+			school = kolyan_school
+		}
+		trigger = {
+			has_global_flag = KolyaHappened
+		}
+	}
+}
+
+#choose school
+country_event = { #RINI
+	id = lathvy.25
+	title = lathvy.25.t
+	desc = lathvy.25.desc
+	picture = PRAYING_eventPicture
+	
+	mean_time_to_happen = {
+		days = 30
+	}
+	
+	trigger = {
+		religion = rini
+		NOT = {
+			religious_school = {
+				group = lathvy_group
+				school = nafan_school
+			}
+		}
+		any_known_country = {
+			religion_group = lathvy_group
+		}
+		has_global_flag = NafaHappened
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = { #nafan
+		name = lathvy.16.a
+		trigger = {
+			has_global_flag = NafaHappened
+			#any_known_country = {
+			#	religious_school = {
+			#		group = lathvy_group
+			#		school = nafan_school
+			#	}
+			#}
+		}
+		ai_chance = { 
+			factor = 1
+		}
+		set_religious_school = {
+			group = lathvy_group
+			school = nafan_school
+		}
+	}
 }
 
 country_event = { #Destroy Pomlen

@@ -383,13 +383,20 @@
  friday_prayers_lathvy:0 "Friday Prayers"
 
  lathvy.16.t:0 "Our Position on the Lathvy Schism"
- lathvy.16.desc:0 "With our conversion, we must now choose a new path for the Lathvy faith."
+ lathvy.16.desc:0 "With our conversion to the Traditional Lathvy faith, we must now choose a new path for the Lathvy faith."
  lathvy.16.a:0 "We side with Syadon!"
  lathvy.16.b:0 "The traditionalists in Pomlen are right."
  lathvy.16.c:0 "Ara calls to us; we must liberate the world!"
  lathvy.16.d:0 "The folks in Walara have the right idea."
  lathvy.16.e:0 "The Council of Celzion is the only possible interpretation."
  lathvy.16.f:0 "The decision at Kolya seems to be the most logical."
+ lathvy.16.g:0 "The Feniki have got it figured out."
+
+ lathvy.24.t:0 "Our Position on the Lathvy Schism"
+ lathvy.24.desc:0 "With our conversion to the Rochoni faith, we must now choose a new path for the Lathvy faith."
+
+ lathvy.25.t:0 "Our Position on the Lathvy Schism"
+ lathvy.25.desc:0 "With our conversion to the Rini faith, we must now choose a new path for the Lathvy faith."
 
  pextoglazia.10.t:0 "The Question of New Pexamol"
  pextoglazia.10.d:0 "New Pexamol has always been one of our most rebellious provinces. Located on a remote island, it has developed a unique identity. With the collapse of our government, the inhabitants of the island want to now take it for themselves."
@@ -658,7 +665,7 @@
  kapolia.1.a:0 "Loot the city for all it's worth!"
 
  #Resteman Events
- restema.1.t:0 "Church Calls For End to Slavery"
+ restema.1.t:0 "The Church Calls For End to Slavery"
  restema.1.d:0 "Our priests call out for the centuries long practice of slavery to end in Restema. They claim that it stands in violation of Lathvy morality and threaten to denounce the government over the issue. In addition, our adoption of Feniki culture has moved us closer to the Satryans and Oekbians, many of whom are still enslaved in parts of our country. The abolition of slavery would hurt the economy and upset local nobility, but could very well be the right decision long-term."
  restema.1.a:0 "Ara spits on us! Let us free the slaves."
  restema.1.b:0 "Never!"
@@ -671,6 +678,11 @@
  restema.2.d:0 "Embrace Feniki identity."
  lag_get_culture_conv:0 "Feniki Supremacy"
  lag_get_culture_acc:0 "Oppian Harmony"
+
+ restema.4.t:0 "Seizure of Pomlen"
+ restema.4.desc:0 "[Root.GetAdjective] troops enter Pomlen unopposed. The garrison lay down their arms. As the banner of [Root.GetName] rises over the High Temple, the last vestige of Pextoglazia is erased. Our troops are eager to raid and plunder, and should we ravage the High Temple itself, we would gain access to both its literal wealth and wealth of knowledge. However, the High Priest has come to us with a plea: instead of raiding the temple, place it under the protection of the [Root.GetAdjective] [Root.Monarch.GetTitle]. The High Temple would receive some autonomy to act on its own, but would also endorse the rule of our state and send advisors to our court in [Root.Capital.GetName]."
+ restema.4.a:0 "Raid the temple!"
+ restema.4.b:0 "Leave it be."
  
  #Umzatian Events
  umzatia.1.t:0 "The Partitions of The Crown Kingdom"

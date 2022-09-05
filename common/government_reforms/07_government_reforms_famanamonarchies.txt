@@ -694,4 +694,7 @@ gotzlic_kingdom = {
 	potential = {
 		culture_group = Gotzlic
 	}
+	ai = {
+		factor = 1000
+	}
 }

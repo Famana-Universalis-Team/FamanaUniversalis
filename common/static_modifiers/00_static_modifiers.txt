@@ -1662,7 +1662,7 @@ shafii_scholar_modifier = {
 	religion = yes
 	is_scholar_modifier = yes # Tells the AI and will only show the alert if country has none
 	expire_message_type = "RELIGIOUS_SCHOLAR_EXPIRY"
-	merchants = 1
+	global_unrest = -2
 }
 
 tribal_scholar_modifier = {

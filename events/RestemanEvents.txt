@@ -126,6 +126,11 @@ country_event = { #Resteman Thought
 		ai_chance = {
 			factor = 1
 		}
+        set_global_flag = RestemaHappened
+        set_religious_school = {
+            group = lathvy_group
+            school = resteman_school
+        }
 	}
 }
 
@@ -173,7 +178,7 @@ country_event = { #Raid on the temple
 	}
 
     option = { #Leave it be
-		name = restema.4.a
+		name = restema.4.b
 		ai_chance = {
 			factor = 1
 		}
@@ -188,5 +193,34 @@ country_event = { #Raid on the temple
             }
         }
         #custom_tooltip = gain_access_to_pomlen_modifier
+	}
+}
+
+country_event = { #age modifier
+	id = restema.5
+	title = restema.5.t
+	desc = restema.5.desc
+	picture = ST_PETERS_CHURCH_eventPicture
+	fire_only_once = yes
+    hidden = yes
+    
+    trigger = {
+        has_country_modifier = lag_epic_westal_modifier
+        current_age	= age_of_revolutions
+    }
+
+    mean_time_to_happen = {
+        months = 1
+    }
+
+    immediate = {
+        remove_country_modifier = lag_epic_westal_modifier
+    }
+
+    option = {
+		name = restema.5.a
+		ai_chance = {
+			factor = 1
+		}
 	}
 }
