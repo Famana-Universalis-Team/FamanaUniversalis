@@ -1001,7 +1001,7 @@ country_event = {
 			}
 			6226 = {
 				remove_core = MLY
-				add_core = GLB
+				add_core = DNR
 			}
 			roltam_area = {
 				add_core = GLB
@@ -1014,6 +1014,9 @@ country_event = {
 			}
 			6209 = {
 				remove_core = GLB
+			}
+			6259 = {
+				add_core = ALR
 			}
 		}
 	}
@@ -2068,6 +2071,8 @@ country_event = {
 			release = SPT
 			release = FLB
 			release = ARO
+			release = DNR
+			release = ALR
 			release = GLB
 			release = NES
 			release = CEL
