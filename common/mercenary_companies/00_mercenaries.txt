@@ -1396,7 +1396,7 @@ merc_nabrozca_cingetoi = {
 # Berserkers (East Naravam)
 merc_berserkers_e_naravam = {
     regiments_per_development = 0.025
-    home_province = 6283
+    home_province = 6337
 	cavalry_weight = 0
 	cavalry_cap = 0
 	cost_modifier = 0.7
@@ -1417,7 +1417,7 @@ merc_berserkers_e_naravam = {
 # Berserkers (West Naravam)
 merc_berserkers_w_naravam = {
     regiments_per_development = 0.025
-    home_province = 6326
+    home_province = 6293
 	cavalry_weight = 0
 	cavalry_cap = 0
 	cost_modifier = 0.7
@@ -1438,7 +1438,7 @@ merc_berserkers_w_naravam = {
 # Berserkers (Vamanya)
 merc_berserkers_vamanya = {
     regiments_per_development = 0.025
-    home_province = 6368
+    home_province = 6361
 	cavalry_weight = 0
 	cavalry_cap = 0
 	cost_modifier = 0.7
