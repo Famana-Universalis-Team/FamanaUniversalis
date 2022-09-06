@@ -265,7 +265,7 @@ country_event = { #give heirs
 	}
 }
 
-country_event = {
+country_event = { #First expansion (mission fired)
 	id = lukscham.7
 	picture = PROTESTANT_CATHOLIC_DEBATE_eventPicture
 	title = lukscham.7.t

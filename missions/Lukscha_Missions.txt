@@ -137,7 +137,14 @@ lks_1 = {
                 NOT = {
                     has_country_modifier = lks_population_boom
                 }
-                
+                area_156 = {
+                    type = all
+                    country_or_non_sovereign_subject_holds = ROOT
+                }
+                area_157 = {
+                    type = all
+                    country_or_non_sovereign_subject_holds = ROOT
+                }
             }
         }
         effect = {
