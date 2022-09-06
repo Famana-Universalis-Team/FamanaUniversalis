@@ -146,3 +146,30 @@ estate_clans_respect_tradition = {
 		factor = 1
 	}
 }
+
+estate_church_raise_beserkers = {
+	icon = privilege_promote_purbias
+	max_absolutism = -5
+	loyalty = 0.05
+	influence = 0.10
+	is_valid = {
+		OR = {
+			religion = naravami
+			religion = ordic
+			religion = maldan
+		}
+	}
+	can_select = {
+	}
+	on_granted = {
+		set_country_flag = beserkers_flag
+		custom_tooltip = BeserkersTooltip
+	}
+	penalties = {
+	}
+	benefits = {
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}

@@ -1361,7 +1361,7 @@ merc_vordor_fians = {
 	cavalry_weight = 0.1
 	cavalry_cap = 4
 	cost_modifier = 0.5
-	sprites = { westerngfx_sprite_pack }
+	sprites = { northamericagfx_sprite_pack }
     trigger = {
 		OR = {
 			religion_group = north_estali
@@ -1381,7 +1381,7 @@ merc_nabrozca_cingetoi = {
 	cavalry_weight = 0.1
 	cavalry_cap = 4
 	cost_modifier = 0.35
-	sprites = { westerngfx_sprite_pack }
+	sprites = { northamericagfx_sprite_pack }
     trigger = {
 		OR = {
 			religion_group = north_estali
@@ -1393,3 +1393,65 @@ merc_nabrozca_cingetoi = {
 	}
 }
 
+# Berserkers (East Naravam)
+merc_beserkers_e_naravam = {
+    regiments_per_development = 0.025
+    home_province = 6293
+	cavalry_weight = 0
+	cavalry_cap = 0
+	cost_modifier = 0.7
+	sprites = { northamericagfx_sprite_pack }
+    trigger = {
+		custom_trigger_tooltip = {
+			tooltip = VamMustHavePrivilige
+			has_country_flag = beserkers_flag
+		}
+	}
+	modifier = {
+		shock_damage_received = -0.15
+		shock_damage = 0.33
+		discipline = 0.10
+	}
+}
+
+# Berserkers (West Naravam)
+merc_beserkers_w_naravam = {
+    regiments_per_development = 0.025
+    home_province = 6326
+	cavalry_weight = 0
+	cavalry_cap = 0
+	cost_modifier = 0.7
+	sprites = { northamericagfx_sprite_pack }
+    trigger = {
+		custom_trigger_tooltip = {
+			tooltip = VamMustHavePrivilige
+			has_country_flag = beserkers_flag
+		}
+	}
+	modifier = {
+		shock_damage_received = -0.15
+		shock_damage = 0.33
+		discipline = 0.10
+	}
+}
+
+# Berserkers (Vamanya)
+merc_beserkers_vamanya = {
+    regiments_per_development = 0.025
+    home_province = 6368
+	cavalry_weight = 0
+	cavalry_cap = 0
+	cost_modifier = 0.7
+	sprites = { northamericagfx_sprite_pack }
+    trigger = {
+		custom_trigger_tooltip = {
+			tooltip = VamMustHavePrivilige
+			has_country_flag = beserkers_flag
+		}
+	}
+	modifier = {
+		shock_damage_received = -0.15
+		shock_damage = 0.33
+		discipline = 0.10
+	}
+}
