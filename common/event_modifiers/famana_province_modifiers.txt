@@ -405,3 +405,16 @@ lag_fortified_highlands = {
     local_defensiveness = 0.10
     garrison_growth	= 0.25
 }
+
+rst_more_gold = {
+    local_gold_depletion_chance_modifier = -1.0
+}
+
+rst_new_capital = {
+    local_development_cost = -0.30
+    local_unrest = -5
+}
+
+rst_new_gold_mines = {
+    trade_goods_size = 1.0
+}

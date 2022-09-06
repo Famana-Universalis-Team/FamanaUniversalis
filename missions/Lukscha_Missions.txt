@@ -27,6 +27,12 @@ lks_1 = {
                 name = lks_reined_in_chiefs
                 duration = 5475
             }
+            capital_scope = {
+                add_institution_embracement = {
+                    which = feudalism
+                    value = 100
+                }
+            }
         }
         provinces_to_highlight = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
@@ -67,7 +73,12 @@ lks_1 = {
                 duration = 5475
             }
         }
-        #provinces_to_highlight = {}
+        provinces_to_highlight = {
+            owned_by = ROOT
+            NOT = {
+                has_seat_in_parliament = yes
+            }
+        }
     }
 
     lks_beyond_the_forest = {
@@ -148,10 +159,19 @@ lks_1 = {
             }
         }
         effect = {
-            
+            add_manpower = 15
+            country_event = {
+                id = lukscham.8
+            }
         }
         provinces_to_highlight = {
-            
+            NOT = {
+                country_or_non_sovereign_subject_holds = ROOT
+            }
+            OR = {
+                area = area_156
+                area = area_157
+            }
         }
     }
 
@@ -159,7 +179,19 @@ lks_1 = {
         icon = mission_amur_acquisition
         required_missions = { lks_conquer_rduma }
         trigger = {
-            
+            6532 = {
+                owned_by = ROOT
+            }
+            if = {
+                limit = {
+                    ai = yes
+                }
+                always = yes
+            }
+            else = {
+                army_size = 20
+                advisor	= commandant
+            }
         }
         effect = {
             add_country_modifier = {
@@ -172,9 +204,15 @@ lks_1 = {
             east_gotzlic_region = {
                 add_permanent_claim = ROOT
             }
+            brula_region = {
+                add_permanent_claim = ROOT
+            }
         }
         provinces_to_highlight = {
-            
+            NOT = {
+                owned_by = ROOT
+            }
+            province_id = 6532
         }
     }
 

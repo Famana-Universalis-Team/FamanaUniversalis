@@ -190,7 +190,8 @@ lukscha_tribe = {
 		may_recruit_female_generals = yes
 		female_advisor_chance = 0.60
 		monarch_lifespan = 0.15
-		ae_impact = -0.2
+		#ae_impact = -0.2
+		diplomatic_upkeep = -2
 	}
 
 	custom_attributes = {
