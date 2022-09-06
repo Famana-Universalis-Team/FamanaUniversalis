@@ -845,6 +845,7 @@ lag_3 = {
         position = 14
         trigger = {
             tag = RES
+            religion = lathvy
             is_defender_of_faith = yes
             piety = 1
             prestige = 100
@@ -1075,7 +1076,7 @@ lag_4 = {
             4982 = {
                 trade_share	= {
                     country = ROOT
-                    share = 99
+                    share = 95
                 }
             }
             if = {

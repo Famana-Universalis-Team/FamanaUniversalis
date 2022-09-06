@@ -126,10 +126,21 @@ country_event = { #Resteman Thought
 		ai_chance = {
 			factor = 1
 		}
+        custom_tooltip = UnlockResteman
         set_global_flag = RestemaHappened
         set_religious_school = {
             group = lathvy_group
             school = resteman_school
+        }
+	}
+
+    option = { #consider other options
+		name = restema.3.b
+		ai_chance = {
+			factor = 0
+		}
+        country_event = {
+            id = lathvy.16
         }
 	}
 }

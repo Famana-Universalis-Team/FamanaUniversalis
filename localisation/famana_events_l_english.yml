@@ -679,6 +679,12 @@
  lag_get_culture_conv:0 "Feniki Supremacy"
  lag_get_culture_acc:0 "Oppian Harmony"
 
+ restema.3.t:0 "The Council of [Root.Capital.GetName]"
+ restema.3.desc:0 "Restema has long been conflicted when it comes to religion. The Pextoglazian school seems too relaxed, and the Maxan school too vague and impersonal. Therefore, the [Root.Monarch.GetTitle] has decided to hold a theological council in [Root.Capital.GetName]. Our clergymen will try to discover the truth about Lathvy theology."
+ restema.3.a:0 "We shall forge our own path."
+ restema.3.b:0 "Invite foreign theologians to tell us more."
+ UnlockResteman:0 "Resteman Thought will be unlocked as a Religious School."
+
  restema.4.t:0 "Seizure of Pomlen"
  restema.4.desc:0 "[Root.GetAdjective] troops enter Pomlen unopposed. The garrison lay down their arms. As the banner of [Root.GetName] rises over the High Temple, the last vestige of Pextoglazia is erased. Our troops are eager to raid and plunder, and should we ravage the High Temple itself, we would gain access to both its literal wealth and wealth of knowledge. However, the High Priest has come to us with a plea: instead of raiding the temple, place it under the protection of the [Root.GetAdjective] [Root.Monarch.GetTitle]. The High Temple would receive some autonomy to act on its own, but would also endorse the rule of our state and send advisors to our court in [Root.Capital.GetName]."
  restema.4.a:0 "Raid the temple!"
