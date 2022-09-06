@@ -147,7 +147,7 @@ estate_clans_respect_tradition = {
 	}
 }
 
-estate_church_raise_beserkers = {
+estate_church_raise_berserkers = {
 	icon = privilege_promote_purbias
 	max_absolutism = -5
 	influence = 0.10
@@ -161,8 +161,8 @@ estate_church_raise_beserkers = {
 	can_select = {
 	}
 	on_granted = {
-		set_country_flag = beserkers_flag
-		custom_tooltip = BeserkersTooltip
+		set_country_flag = berserkers_flag
+		custom_tooltip = BerserkersTooltip
 	}
 	penalties = {
 	}

@@ -1394,7 +1394,7 @@ merc_nabrozca_cingetoi = {
 }
 
 # Berserkers (East Naravam)
-merc_beserkers_e_naravam = {
+merc_berserkers_e_naravam = {
     regiments_per_development = 0.025
     home_province = 6283
 	cavalry_weight = 0
@@ -1404,7 +1404,7 @@ merc_beserkers_e_naravam = {
     trigger = {
 		custom_trigger_tooltip = {
 			tooltip = VamMustHavePrivilige
-			has_country_flag = beserkers_flag
+			has_country_flag = berserkers_flag
 		}
 	}
 	modifier = {
@@ -1415,7 +1415,7 @@ merc_beserkers_e_naravam = {
 }
 
 # Berserkers (West Naravam)
-merc_beserkers_w_naravam = {
+merc_berserkers_w_naravam = {
     regiments_per_development = 0.025
     home_province = 6326
 	cavalry_weight = 0
@@ -1425,7 +1425,7 @@ merc_beserkers_w_naravam = {
     trigger = {
 		custom_trigger_tooltip = {
 			tooltip = VamMustHavePrivilige
-			has_country_flag = beserkers_flag
+			has_country_flag = berserkers_flag
 		}
 	}
 	modifier = {
@@ -1436,7 +1436,7 @@ merc_beserkers_w_naravam = {
 }
 
 # Berserkers (Vamanya)
-merc_beserkers_vamanya = {
+merc_berserkers_vamanya = {
     regiments_per_development = 0.025
     home_province = 6368
 	cavalry_weight = 0
@@ -1446,7 +1446,7 @@ merc_beserkers_vamanya = {
     trigger = {
 		custom_trigger_tooltip = {
 			tooltip = VamMustHavePrivilige
-			has_country_flag = beserkers_flag
+			has_country_flag = berserkers_flag
 		}
 	}
 	modifier = {
