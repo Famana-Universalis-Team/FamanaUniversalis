@@ -70,6 +70,23 @@ estate_church = {
 	}
 }
 
+estate_clans = {
+	modifier_definition = {
+		type = loyalty
+		key = clans_loyalty_modifier
+		trigger = {
+			has_estate = estate_clans
+		}
+	}
+	modifier_definition = {
+		type = influence
+		key = clans_loyalty_modifier
+		trigger = {
+			has_estate = estate_clans
+		}
+	}
+}
+
 estate_maratha = {
 	modifier_definition = {
 		type = loyalty
