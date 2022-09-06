@@ -64,7 +64,7 @@ umz_1 = {
 		 provinces_to_highlight = {
            OR = {
 		   area = nuti_area
-		   area = atamsu_area
+		   area = canin_area
 		  
 		   }
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
@@ -78,7 +78,7 @@ umz_1 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
         
-			atamsu_area = {
+			canin_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -236,7 +236,7 @@ umz_2 = {
         
        
         effect = {
-            fazalep_area  = {
+            fasalep_area  = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
@@ -264,14 +264,14 @@ umz_2 = {
         }
         
 		 provinces_to_highlight = {
-            area = fazalep_area
+            area = fasalep_area
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         
     
        
         trigger = {
-		fazalep_area = {
+		fasalep_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -280,7 +280,7 @@ umz_2 = {
        
         effect = {
           
-				fazalep_area = {
+				fasalep_area = {
 					
 					add_province_modifier = {
 						name = umz_develop_m
@@ -345,7 +345,7 @@ umz_2 = {
 				}
 				add_permanent_claim = ROOT
 			}
-			atamsu_area  = {
+			canin_area  = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
@@ -430,7 +430,7 @@ umz_3 = {
 		laglon_region = {
 			discover_country = ROOT
 		}
-		northern_umzat = {
+		zata_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
@@ -456,7 +456,7 @@ umz_3 = {
         }
         
 		provinces_to_highlight = {
-          area =  northern_umzat
+          area =  zata_area
 				  
 			
         }
@@ -464,7 +464,7 @@ umz_3 = {
     
        
         trigger = {
-		    northern_umzat = {
+		    zata_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -530,7 +530,7 @@ umz_3 = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			northern_umzat = {
+			zata_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -566,7 +566,7 @@ umz_3 = {
 				}
 			add_permanent_claim = ROOT
 			}
-			unnamed_area_14 = {
+			ratahja_area = {
 			limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
@@ -642,7 +642,7 @@ umz_3 = {
         }
         
 		provinces_to_highlight = {
-			area = unnamed_area_14
+			area = ratahja_area
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 				  
 			
@@ -653,7 +653,7 @@ umz_3 = {
         trigger = {
 			owns_all_provinces = {
 				OR = {
-					area = unnamed_area_14
+					area = ratahja_area
 					area = griglom_area
 					area = west_feniki
 				}
@@ -702,7 +702,7 @@ umz_3 = {
 			5020 = {
 				add_building = fort_15th
 			}
-			unnamed_area_15 = {
+			huparan_area = {
 				add_permanent_claim = ROOT
 			}
 			feyel_area = {

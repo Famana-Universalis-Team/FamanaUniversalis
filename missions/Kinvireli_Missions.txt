@@ -237,10 +237,10 @@ kin_3 = {
             mahansha_area = {
                 add_permanent_claim = ROOT
             }
-            unnamed_area_11 = {
+            west_zoblotra_area = {
                 add_permanent_claim = ROOT
             }
-            unnamed_area_12 = {
+            east_zoblotra_area = {
                 add_permanent_claim = ROOT
             }
             add_country_modifier = {
@@ -262,8 +262,8 @@ kin_3 = {
 
         provinces_to_highlight = {
 			OR = {
-                area = unnamed_area_11
-                area = unnamed_area_12
+                area = west_zoblotra_area
+                area = east_zoblotra_area
             }
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
@@ -272,8 +272,8 @@ kin_3 = {
             num_of_owned_provinces_with	= {
                 value = 5
                 OR = {
-                    area = unnamed_area_11
-                    area = unnamed_area_12
+                    area = west_zoblotra_area
+                    area = east_zoblotra_area
                 }
             }
         }

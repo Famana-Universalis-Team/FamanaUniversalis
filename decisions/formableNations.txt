@@ -38,7 +38,7 @@ country_decisions = {
 				is_city = yes
 				OR = {
 					area = gromash_area
-					area = arlen_area
+					area = neches_area
 					area = sosne_area
 				}
 			}
@@ -69,7 +69,7 @@ country_decisions = {
 				}
 				add_permanent_claim = ARL
 			}
-			arlen_area = {
+			neches_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
@@ -659,7 +659,7 @@ country_decisions = {
 				OR = {
 					area = heoki_area
 					area = dibata_area
-					area = unnamed_area_8
+					area = thalmor_area
 				}
 			}
 		}
@@ -683,7 +683,7 @@ country_decisions = {
 				}
 				set_government_rank = 2
 			}
-			unnamed_area_8 = {
+			thalmor_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
@@ -744,7 +744,7 @@ country_decisions = {
 				OR = {
 					area = elorak_area
 					area = zne_area
-					area = mesdool_area
+					area = viel_minstro_area
 				}
 			}
 		}
@@ -780,7 +780,7 @@ country_decisions = {
 				}
 				add_permanent_claim = OSS
 			}
-			mesdool_area = {
+			viel_minstro_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
@@ -980,7 +980,7 @@ country_decisions = {
 				}
 				add_permanent_claim = MSH
 			}
-			unnamed_area_21 = {
+			praman_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
@@ -992,7 +992,7 @@ country_decisions = {
 				}
 				add_permanent_claim = MSH
 			}
-			unnamed_area_20 = {
+			trilsekin_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
@@ -1222,7 +1222,7 @@ country_decisions = {
 				}
 				add_permanent_claim = DEL
 			}
-			unnamed_area_10 = {
+			hos_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
@@ -1665,13 +1665,13 @@ country_decisions = {
 				}
 				add_permanent_claim = JAS
 			}
-			unnamed_area_11 = {
+			west_zoblotra_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
 				add_permanent_claim = JAS
 			}
-			unnamed_area_12 = {
+			east_zoblotra_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
@@ -1963,7 +1963,7 @@ country_decisions = {
 				name = "centralization_modifier"
 				duration = 7300
 			}
-			unnamed_area_23 = {
+			reyel_area = {
 				limit = {
 					is_empty = yes
 				}
@@ -2785,7 +2785,7 @@ country_decisions = {
 				}
 				set_government_rank = 2
 			}
-			unnamed_pexto_4 = {
+			seaside_nevia_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}

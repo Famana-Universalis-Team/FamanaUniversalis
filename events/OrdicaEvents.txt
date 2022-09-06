@@ -61,13 +61,13 @@ country_event = { #ordican claims 90%
     option = {
 		name = ordica.3.a
         ai_chance = { factor = 1 }
-		unnamed_pexto_14 = {
+		west_yuvla_area = {
 			add_permanent_claim = ORC
 		}
-		unnamed_pexto_1 = {
+		ronpax_area = {
 			add_permanent_claim = ORC
 		}
-		mofemi_morsum_area = {
+		rondos_area = {
 			add_permanent_claim = ORC
 		}
 		5347 = {
@@ -948,7 +948,7 @@ country_event = {
 	immediate = {
 		hidden_effect = {
 			#respawn the tags cause for some reason they get deleted
-			unnamed_area_26 = {
+			dukula_area = {
 				add_core = DKL
 			}
 			5784 = {
@@ -1594,7 +1594,7 @@ country_event = {
 				}
 				add_core = LOM
 			}
-			unnamed_pexto_3 = {
+			affna_area = {
 				add_core = POM
 			}
 			pomlen_area = {
@@ -1606,10 +1606,10 @@ country_event = {
 			unnamed_pexto_2 = {
 				add_core = FST
 			}
-			unnamed_pexto_3 = {
+			affna_area = {
 				add_core = POM
 			}
-			unnamed_pexto_4 = {
+			seaside_nevia_area = {
 				add_core = REN
 			}
 			porlam_area = {
@@ -1623,7 +1623,7 @@ country_event = {
 				remove_core = REN
 				add_core = KRH
 			}
-			mofemi_morsum_area = {
+			rondos_area = {
 				add_core = RND
 				add_core = RNP
 			}
@@ -1631,7 +1631,7 @@ country_event = {
 				remove_core = RND
 				add_core = RNP
 			}
-			unnamed_pexto_1 = {
+			ronpax_area = {
 				add_core = RNP
 			}
 			5356 = {
@@ -2206,7 +2206,7 @@ country_event = {
 						}
 						NOT = {
 							OR = {
-								area = unnamed_area_24
+								area = east_yuvla_area
 								area = nabrosia_area
 								province_id = 5726
 								province_id = 5722
@@ -2233,7 +2233,7 @@ country_event = {
 			every_owned_province = { #Yuvla
 				limit = {
 					OR = {
-						area = unnamed_area_24
+						area = east_yuvla_area
 						region = walara_region
 						region = lomea_region
 						province_id = 6193

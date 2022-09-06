@@ -112,7 +112,7 @@ kap_4 = { #kinvirel - jasua region path
 			unnamed_area_31 = {
 				add_devastation = -100
 			}
-			unnamed_area_13 = {
+			minvir_area = {
 				add_permanent_claim = ROOT
 			}
 			kinvirel_area = {
@@ -130,14 +130,14 @@ kap_4 = { #kinvirel - jasua region path
 		
 		provinces_to_highlight = {
 			OR = {
-				area = unnamed_area_13
+				area = minvir_area
 				area = kinvirel_area
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		
 		trigger = {
-			unnamed_area_13 = {
+			minvir_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -203,10 +203,10 @@ kap_4 = { #kinvirel - jasua region path
     				siege = 2
 				}
 			}
-			unnamed_area_11 = {
+			west_zoblotra_area = {
 				add_permanent_claim = ROOT
 			}
-			unnamed_area_12 = {
+			east_zoblotra_area = {
 				add_permanent_claim = ROOT
 			}
 			shol_area = {

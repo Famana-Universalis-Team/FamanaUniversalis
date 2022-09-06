@@ -199,7 +199,7 @@ lag_1 = {
                 name = lag_access_northern_trade_routes
                 duration = -1
             }
-            unnamed_area_24 = {
+            east_yuvla_area = {
                 add_permanent_claim = ROOT
             }
         }
@@ -215,11 +215,11 @@ lag_1 = {
         required_missions = { lag_shores_of_the_olivinar lag_the_war_for_walara }
         position = 11
         trigger = {
-            unnamed_pexto_14 = {
+            west_yuvla_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
             }
-            unnamed_area_24 = {
+            east_yuvla_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
             }
@@ -278,8 +278,8 @@ lag_1 = {
         provinces_to_highlight = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
 			OR = {
-                area = unnamed_area_24
-                area = unnamed_pexto_14
+                area = east_yuvla_area
+                area = west_yuvla_area
                 province_id = 5753
                 province_id = 5289
             }
@@ -467,7 +467,7 @@ lag_2 = {
         required_missions = { lag_annex_tegaria }
         position = 10
         trigger = {
-            unnamed_pexto_11 = {
+            jinasa_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
             }
@@ -483,22 +483,22 @@ lag_2 = {
             hidden_effect = {
                 add_war_exhaustion = -20
             }
-            unnamed_pexto_11 = {
+            jinasa_area = {
                 add_province_modifier = {
                     name = lag_fortified_highlands
                     duration = -1
                 }
             }
-            unnamed_pexto_14 = {
+            west_yuvla_area = {
                 add_permanent_claim = ROOT
             }
-            unnamed_pexto_12 = {
+            pixrol_area = {
                 add_permanent_claim = ROOT
             }
         }
         provinces_to_highlight = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
-			area = unnamed_pexto_11
+			area = jinasa_area
         }
     }
 
@@ -507,11 +507,11 @@ lag_2 = {
         required_missions = { lag_the_war_for_walara lag_raid_on_pomlen }
         position = 13
         trigger = {
-            unnamed_pexto_12 = {
+            pixrol_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
             }
-            unnamed_pexto_4 = {
+            seaside_nevia_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
             }
@@ -528,8 +528,8 @@ lag_2 = {
                 country_or_non_sovereign_subject_holds = ROOT
             }
             OR = {
-                area = unnamed_pexto_12
-                area = unnamed_pexto_4
+                area = pixrol_area
+                area = seaside_nevia_area
             }
         }
     }
@@ -704,7 +704,7 @@ lag_3 = {
         required_missions = { lag_annex_tegaria }
         position = 10
         trigger = {
-            unnamed_pexto_7 = {
+            gineazia_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
             }
@@ -734,7 +734,7 @@ lag_3 = {
                 }
                 set_government_rank = 3
             }
-            unnamed_pexto_7 = {
+            gineazia_area = {
                 add_province_modifier = {
                     name = lag_a_glazian_welcome
                     duration = 3650
@@ -746,20 +746,20 @@ lag_3 = {
                     duration = 3650
                 }
             }
-            unnamed_pexto_5 = {
+            hilemo_area = {
                 add_permanent_claim = ROOT
             }
-            unnamed_pexto_9 = {
+            lomea_area = {
                 add_permanent_claim = ROOT
             }
-            unnamed_pexto_6 = {
+            hatu_area = {
                 add_permanent_claim = ROOT
             }
         }
         provinces_to_highlight = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
 			OR = {
-                area = unnamed_pexto_7
+                area = gineazia_area
                 area = maglazios_area
             }
         }
@@ -770,15 +770,15 @@ lag_3 = {
         required_missions = { lag_capture_gineazia }
         position = 11
         trigger = {
-            unnamed_pexto_5 = {
+            hilemo_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
             }
-            unnamed_pexto_9 = {
+            lomea_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
             }
-            unnamed_pexto_6 = {
+            hatu_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
             }
@@ -808,9 +808,9 @@ lag_3 = {
         provinces_to_highlight = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
 			OR = {
-                area = unnamed_pexto_5
-                area = unnamed_pexto_9
-                area = unnamed_pexto_6
+                area = hilemo_area
+                area = lomea_area
+                area = hatu_area
             }
         }
     }
@@ -1048,13 +1048,13 @@ lag_4 = {
                 add_base_production = 2
                 add_base_manpower = 2
             }
-            unnamed_area_17 = {
+            porero_area = {
                 add_prosperity = 100
             }
-            unnamed_area_18 = {
+            druviked_area = {
                 add_prosperity = 100
             }
-            unnamed_area_16 = {
+            esmekeed_area = {
                 add_prosperity = 100
             }
         }
@@ -1130,10 +1130,10 @@ lag_4 = {
             quanex_area = {
                 add_permanent_claim = ROOT
             }
-            western_core_area = {
+            imogua_area = {
                 add_permanent_claim = ROOT
             }
-            eastern_core_area = {
+            emintas_area = {
                 add_permanent_claim = ROOT
             }
         }
@@ -1147,7 +1147,7 @@ lag_4 = {
         position = 7
         required_missions = { }
         trigger = {
-            unnamed_pexto_10 = {
+            gegon_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
             }
@@ -1158,7 +1158,7 @@ lag_4 = {
                 name = lag_into_pexto
                 duration = 9125
             }
-            unnamed_pexto_8 = {
+            tegaria_area = {
                 add_permanent_claim = ROOT
             }
             if = {
@@ -1183,7 +1183,7 @@ lag_4 = {
         }
         provinces_to_highlight = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
-			area = unnamed_pexto_10
+			area = gegon_area
         }
     }
 
@@ -1192,7 +1192,7 @@ lag_4 = {
         position = 9
         required_missions = { lag_subjugate_cegon }
         trigger = {
-            unnamed_pexto_8 = {
+            tegaria_area = {
                 type = all
                 country_or_non_sovereign_subject_holds = ROOT
             }
@@ -1210,10 +1210,10 @@ lag_4 = {
             area_100 = {
                 add_permanent_claim = ROOT
             }
-            unnamed_pexto_11 = {
+            jinasa_area = {
                 add_permanent_claim = ROOT
             }
-            unnamed_pexto_7 = {
+            gineazia_area = {
                 add_permanent_claim = ROOT
             }
             maglazios_area = {
@@ -1222,7 +1222,7 @@ lag_4 = {
             gromash_area = {
                 add_permanent_claim = ROOT
             }
-            arlen_area = {
+            neches_area = {
                 add_permanent_claim = ROOT
             }
             arlentan_area = {
@@ -1232,14 +1232,14 @@ lag_4 = {
                 limit = {
                     tag = LAG
                 }
-                unnamed_area_23 = {
+                reyel_area = {
                     add_permanent_claim = ROOT
                 }
             }
         }
         provinces_to_highlight = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
-			area = unnamed_pexto_8
+			area = tegaria_area
         }
     }
 
@@ -1251,7 +1251,7 @@ lag_4 = {
             any_owned_province = {
                 OR = {
                     area = gromash_area
-                    area = arlen_area
+                    area = neches_area
                     area = arlentan_area
                 }
             }
@@ -1284,7 +1284,7 @@ lag_4 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
 			OR = {
                 area = gromash_area
-                area = arlen_area
+                area = neches_area
                 area = arlentan_area
             }
         }

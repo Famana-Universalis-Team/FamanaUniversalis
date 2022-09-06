@@ -14,7 +14,7 @@ pex_1 = {
         required_missions = { pex_integrate_the_walarans }
         position = 7
         trigger = {
-            unnamed_area_18 = {
+            druviked_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -49,7 +49,7 @@ pex_1 = {
             create_admiral = { tradition = 80 }
         }
         provinces_to_highlight = {
-            area = unnamed_area_18
+            area = druviked_area
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
     }
@@ -111,7 +111,7 @@ pex_1 = {
 			            	name = "centralization_modifier"
 			            	duration = 7300
 			            }
-			            unnamed_area_23 = {
+			            reyel_area = {
 				            limit = {
 					            is_empty = yes
 				            }
@@ -148,7 +148,7 @@ pex_1 = {
             }
             arlentan_area = { add_permanent_claim = ROOT }
             gromash_area = { add_permanent_claim = ROOT }
-            arlen_area = { add_permanent_claim = ROOT }
+            neches_area = { add_permanent_claim = ROOT }
         }
         provinces_to_highlight = {
             OR = {
@@ -166,7 +166,7 @@ pex_1 = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-            arlen_area = {
+            neches_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -218,7 +218,7 @@ pex_1 = {
         provinces_to_highlight = {
             OR = {
                 area = arlentan_area
-                area = arlen_area
+                area = neches_area
                 area = gromash_area
             }
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
@@ -678,15 +678,15 @@ pex_6 = { #Post-disaster missions
         required_missions = { pex_sway_the_inner_circle }
         position = 6
         trigger = {
-            unnamed_pexto_8 = {
+            tegaria_area = {
 				type = all
 				owned_by = ROOT
 			}
-            unnamed_pexto_5 = {
+            hilemo_area = {
 				type = all
 				owned_by = ROOT
 			}
-            unnamed_pexto_9 = {
+            lomea_area = {
 				type = all
 				owned_by = ROOT
 			}
@@ -736,15 +736,15 @@ pex_6 = { #Post-disaster missions
             mrug_area = { add_permanent_claim = ROOT }
             usul_area = { add_permanent_claim = ROOT }
             celzion_area = { add_permanent_claim = ROOT }
-            unnamed_area_18 = { add_permanent_claim = ROOT }
+            druviked_area = { add_permanent_claim = ROOT }
             riximi_area = { add_permanent_claim = ROOT }
             nopatle_area = { add_permanent_claim = ROOT }
         }
         provinces_to_highlight = {
             OR = {
-                area = unnamed_pexto_8
-                area = unnamed_pexto_5
-                area = unnamed_pexto_9
+                area = tegaria_area
+                area = hilemo_area
+                area = lomea_area
             }
         }
     }
@@ -771,11 +771,11 @@ pex_6 = { #Post-disaster missions
             create_general = {
                 tradition = 60
             }
-            unnamed_area_24 = { add_permanent_claim = ROOT }
-            unnamed_area_25 = { add_permanent_claim = ROOT }
+            east_yuvla_area = { add_permanent_claim = ROOT }
+            ordican_mountains_area = { add_permanent_claim = ROOT }
             abikuyra_area = { add_permanent_claim = ROOT }
             nonter_area = { add_permanent_claim = ROOT }
-            unnamed_area_26 = { add_permanent_claim = ROOT }
+            dukula_area = { add_permanent_claim = ROOT }
         }
         provinces_to_highlight = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
@@ -792,11 +792,11 @@ pex_6 = { #Post-disaster missions
         required_missions = { pex_the_northern_menace }
         position = 8
         trigger = {
-            unnamed_area_24 = {
+            east_yuvla_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-            unnamed_area_25 = {
+            ordican_mountains_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -808,7 +808,7 @@ pex_6 = { #Post-disaster missions
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-            unnamed_area_26 = {
+            dukula_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -825,11 +825,11 @@ pex_6 = { #Post-disaster missions
         provinces_to_highlight = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
 			OR = {
-                area = unnamed_area_24
-                area = unnamed_area_25
+                area = east_yuvla_area
+                area = ordican_mountains_area
                 area = abikuyra_area
                 area = nonter_area
-                area = unnamed_area_26
+                area = dukula_area
             }
         }
     }

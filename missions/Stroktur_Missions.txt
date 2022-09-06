@@ -1528,11 +1528,11 @@ nafa_1 = {
                         type = all
 				        country_or_non_sovereign_subject_holds = ROOT
                     }
-                    unnamed_pexto_1 = {
+                    ronpax_area = {
                         type = all
 				        country_or_non_sovereign_subject_holds = ROOT
                     }
-                    mofemi_morsum_area = {
+                    rondos_area = {
                         type = all
 				        country_or_non_sovereign_subject_holds = ROOT
                     }
@@ -1598,8 +1598,8 @@ nafa_1 = {
                     area = celzion_area
                     area = usul_area
                     area = mrug_area
-                    area = unnamed_pexto_1
-                    area = mofemi_morsum_area
+                    area = ronpax_area
+                    area = rondos_area
                 }
             }
         }
@@ -2339,7 +2339,7 @@ nafa_2 = {
                     is_empty = yes
                 }
 			}
-            unnamed_pexto_10 = {
+            gegon_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -2380,7 +2380,7 @@ nafa_2 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
             OR = {
                 region = laglon_region
-                area = unnamed_pexto_10
+                area = gegon_area
             }
             NOT = {
                 is_empty = yes
@@ -2393,7 +2393,7 @@ nafa_2 = {
         required_missions = { naf_defeat_restema }
         position = 12
         trigger = {
-            northern_umzat = {
+            zata_area = {
                 type = all
 				country_or_non_sovereign_subject_holds = ROOT
             }
@@ -2451,7 +2451,7 @@ nafa_2 = {
         provinces_to_highlight = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
             OR = {
-                area = northern_umzat
+                area = zata_area
                 area = olfemek_area
                 area = emzelom_area
                 province_id = 5257
@@ -3019,7 +3019,7 @@ nafa_3 = {
                 type = mission_rewards_power_projection
                 amount = 25
             }
-            unnamed_area_20 = { add_permanent_claim = ROOT }
+            trilsekin_area = { add_permanent_claim = ROOT }
             pexamol_area = { add_permanent_claim = ROOT }
             south_pextum_area = { add_permanent_claim = ROOT }
             5368 = { add_permanent_claim = ROOT }
@@ -3039,7 +3039,7 @@ nafa_3 = {
         required_missions = { naf_prepare_an_invasion_force }
         position = 6
         trigger = {
-            unnamed_area_20 = {
+            trilsekin_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -3063,7 +3063,7 @@ nafa_3 = {
         provinces_to_highlight = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
             OR = {
-                area = unnamed_area_20
+                area = trilsekin_area
                 area = pexamol_area
                 area = south_pextum_area
             }
@@ -3303,7 +3303,7 @@ nafa_3 = {
             laglon_region = {
 				add_permanent_claim = ROOT
 			}
-            unnamed_pexto_10 = {
+            gegon_area = {
                 add_permanent_claim = ROOT
             }
         }
@@ -3843,7 +3843,7 @@ nafa_4 = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-            lower_oppia_area = {
+            keplex_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -3855,7 +3855,7 @@ nafa_4 = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-            eastern_core_area = {
+            emintas_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -3863,7 +3863,7 @@ nafa_4 = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-            western_core_area = {
+            imogua_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -4099,10 +4099,10 @@ nafa_5 = {
 			shol_area = {
 				add_permanent_claim = ROOT
 			}
-			unnamed_area_11 = {
+			west_zoblotra_area = {
 				add_permanent_claim = ROOT
 			}
-			unnamed_area_12 = {
+			east_zoblotra_area = {
 				add_permanent_claim = ROOT
 			}
 			unnamed_area_48 = {
@@ -4585,7 +4585,7 @@ kalarga_2 = {
             unnamed_area_31 = {
                 add_permanent_claim = ROOT
             }
-            unnamed_area_13 = {
+            minvir_area = {
                 add_permanent_claim = ROOT
             }
             kinvirel_area = {

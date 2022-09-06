@@ -71,7 +71,7 @@ tck_slot_1 = {
             umzat_islands_area = {
             	discover_country = ROOT
             }
-			northern_umzat = {
+			zata_area = {
 				discover_country = ROOT
 			}
 			create_colony_mission_reward = { province = 5016 }
@@ -362,7 +362,7 @@ tck_slot_2 = {
 			arma_area = {
 				add_permanent_claim = ROOT
 			}
-			lower_oppia_area = {
+			keplex_area = {
 				add_permanent_claim = ROOT
 			}
 			hidden_effect = {
@@ -410,7 +410,7 @@ tck_slot_2 = {
 			effasha_area = {
 				add_permanent_claim = ROOT
 			}
-			fazalep_area = {
+			fasalep_area = {
 				add_permanent_claim = ROOT
 			}
 			add_country_modifier = {
@@ -528,7 +528,7 @@ tck_slot_2 = {
 			else = {
 				custom_tooltip = ElorakBreakaway
 				hidden_effect = {
-					mesdool_area = {
+					viel_minstro_area = {
 						limit = {
 							OR = {
 								owned_by = ROOT

@@ -3724,7 +3724,7 @@ on_province_religion_converted = {
 				culture = Oppio_Jasuan
 				AND = {
 					NOT = {
-						area = unnamed_area_11
+						area = west_zoblotra_area
 					}
 					culture = Zoblotran
 				}
@@ -3738,7 +3738,7 @@ on_province_religion_converted = {
 	}
 	if = {
 		limit = {
-			area = unnamed_area_11
+			area = west_zoblotra_area
 			owner = {
 				religion = tonmo
 			}

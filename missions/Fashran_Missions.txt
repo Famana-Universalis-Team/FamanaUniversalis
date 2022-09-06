@@ -879,7 +879,7 @@ fas_3 = {
 						type = all
 						country_or_non_sovereign_subject_holds = ROOT
 					}
-					unnamed_area_13 = {
+					minvir_area = {
 						type = all
 						country_or_non_sovereign_subject_holds = ROOT
 					}
@@ -934,7 +934,7 @@ fas_3 = {
 			OR = {
 				area = kinvirel_area
 				area = unnamed_area_31
-				area = unnamed_area_13
+				area = minvir_area
 			}
 		}
 	}

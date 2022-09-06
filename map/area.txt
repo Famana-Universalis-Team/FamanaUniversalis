@@ -138,11 +138,11 @@ quanex_area = {
 	5066 5065 5064 5063 5062
 }
 
-western_core_area = {
+imogua_area = {
 	5050 5051 5052 5060 5068
 }
 
-eastern_core_area = {
+emintas_area = {
 	5208 5067 5207
 }
 
@@ -170,11 +170,11 @@ effasha_area = {
 	5049 5055 5054 5056 5057
 }
 
-fazalep_area = {
+fasalep_area = {
 	5058 5059 5083 5082
 }
 
-lower_oppia_area = {
+keplex_area = {
 	5081 5076 5079
 }
 
@@ -194,11 +194,11 @@ lyposh_area = {
 	5089 5090 5091 5092 5093
 }
 
-atamsu_area = {
+canin_area = {
 	5548 5095 5096 5097
 }
 
-mesdool_area = {
+viel_minstro_area = {
 	5104 5101 5098
 }
 
@@ -214,7 +214,7 @@ sosne_area = {
 	5550 5110 5129
 }
 
-arlen_area = {
+neches_area = {
 	5126 5119 5131
 }
 
@@ -226,7 +226,7 @@ dibata_area = {
 	5117 5113 5114
 }
 
-unnamed_area_8 = {
+thalmor_area = {
 	5116 5115 5135
 }
 
@@ -274,7 +274,7 @@ houras_area = {
 	5167 5168 5175 5170 5171
 }
 
-unnamed_area_10 = {
+hos_area = {
 	5173 5176 5172 5818 5819
 }
 
@@ -290,11 +290,11 @@ mahansha_area = {
 	5183 5185 5186
 }
 
-unnamed_area_11 = {
+west_zoblotra_area = {
 	5184 5187 5192 5667 5791
 }
 
-unnamed_area_12 = {
+east_zoblotra_area = {
 	5191 5193 5792 5189
 }
 
@@ -306,7 +306,7 @@ kinvirel_area = {
 	5199 5196 5197
 }
 
-unnamed_area_13 = {
+minvir_area = {
 	5198 5200 5201 5202 5653
 }
 
@@ -318,23 +318,23 @@ pomlen_area = {
 	5203 5337 5316 5338 5342
 }
 
-unnamed_area_14 = {
+ratahja_area = {
 	5017 5018 5019 5020 5253
 }
 
-unnamed_area_15 = {
+huparan_area = {
 	5022 5023 5021 5024 5025
 }
 
-unnamed_area_16 = {
+esmekeed_area = {
 	5026 5027 5028 5029 5030
 }
 
-unnamed_area_17 = {
+porero_area = {
 	5033 5037 5036 5032 5038
 }
 
-unnamed_area_18 = {
+druviked_area = {
 	5031 5035 5034 5039
 }
 
@@ -394,7 +394,7 @@ elwait_area = {
 	5378 5377 5380 5811
 }
 
-unnamed_area_20 = {
+trilsekin_area = {
 	5382 5383 5384 5385 5381
 }
 
@@ -422,7 +422,7 @@ karmanon_area = {
 	5429 5432 5433 5421 5428
 }
 
-unnamed_area_21 = {
+praman_area = {
 	5424 5460 5461 5423 5823
 }
 
@@ -438,7 +438,7 @@ outer_moxon_area = {
 	5370 5369 5307 5366 5364
 }
 
-northern_umzat = {
+zata_area = {
 	5263 5264 5262 5259
 }
 
@@ -454,11 +454,11 @@ olfemek_area = {
 	5266 5261 5260
 }
 
-unnamed_area_23 = {
+reyel_area = {
 	5269 5270 5272 5271 5273
 }
 
-mofemi_morsum_area = {
+rondos_area = {
 	5354 5353 5357 5355 5352
 }
 
@@ -466,7 +466,7 @@ riximi_area = {
 	5562 5561 5559 5560 5793
 }
 
-unnamed_pexto_1 = {
+ronpax_area = {
 	5356 5351 5350 5348 5349
 }
 
@@ -474,19 +474,19 @@ unnamed_pexto_2 = {
 	5345 5340 5347 5346
 }
 
-unnamed_pexto_3 = {
+affna_area = {
 	5315 5332 5331 5330
 }
 
-unnamed_pexto_4 = {
+seaside_nevia_area = {
 	5341 5313 5312 5309
 }
 
-unnamed_pexto_5 = {
+hilemo_area = {
 	5311 5300 5301 5297
 }
 
-unnamed_pexto_6 = {
+hatu_area = {
 	5333 5334 5335 5319
 }
 
@@ -494,31 +494,31 @@ maglazios_area = {
 	5321 5320 5324 5336
 }
 
-unnamed_pexto_7 = {
+gineazia_area = {
 	5326 5327 5328 5325
 }
 
-unnamed_pexto_8 = {
+tegaria_area = {
 	5304 5303 5281 5280 5302
 }
 
-unnamed_pexto_9 = {
+lomea_area = {
 	5318 5317 5322 5329 5323
 }
 
-unnamed_pexto_10 = {
+gegon_area = {
 	5277 5275 5276 5278 5274
 }
 
-unnamed_pexto_11 = {
+jinasa_area = {
 	5282 5283 5286 5284 5288
 }
 
-unnamed_pexto_12 = {
+pixrol_area = {
 	5299 5298 5285 5289 5824
 }
 
-unnamed_pexto_14 = {
+west_yuvla_area = {
 	5294 5296 5295 5310
 }
 
@@ -526,19 +526,19 @@ hasia_area = {
 	5695 6390 6391 6389 6393
 }
 
-unnamed_area_24 = {
+east_yuvla_area = {
 	5703 5701 5700 5699 5704
 }
 
-unnamed_area_25 = {
+ordican_mountains_area = {
 	5706 5705 6196 6197 6198
 }
 
-unnamed_area_26 = {
+dukula_area = {
 	5607 5608 5697 5698
 }
 
-unnamed_area_27 = {
+elteyn_area = {
 	5637 5190 5596
 }
 

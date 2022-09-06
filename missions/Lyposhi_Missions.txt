@@ -24,7 +24,7 @@ lyp_1 = {
             goll_area = {
 				add_permanent_claim = ROOT
 			}
-            fazalep_area = {
+            fasalep_area = {
 				add_permanent_claim = ROOT
 			}
             ponaa_area = {
@@ -45,7 +45,7 @@ lyp_1 = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-            fazalep_area = {
+            fasalep_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -69,7 +69,7 @@ lyp_1 = {
             arma_area = {
 				add_permanent_claim = ROOT
 			}
-            lower_oppia_area = {
+            keplex_area = {
 				add_permanent_claim = ROOT
 			}
         }
@@ -77,7 +77,7 @@ lyp_1 = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
 			OR = {
                 area = goll_area
-                area = fazalep_area
+                area = fasalep_area
                 area = ponaa_area
             }
         }
@@ -99,7 +99,7 @@ lyp_1 = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-            lower_oppia_area = {
+            keplex_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -114,7 +114,7 @@ lyp_1 = {
                 type = mission_rewards_power_projection
                 amount = 25
             }
-            atamsu_area = {
+            canin_area = {
 				add_permanent_claim = ROOT
 			}
             nuti_area = {
@@ -127,7 +127,7 @@ lyp_1 = {
                 area = roplea_area
                 area = astom_area
                 area = arma_area
-                area = lower_oppia_area
+                area = keplex_area
             }
         }
     }
@@ -136,7 +136,7 @@ lyp_1 = {
         icon = mission_raid_on_genoa
         required_missions = { lyp_roplean_invasion }
         trigger = {
-            atamsu_area = {
+            canin_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -162,7 +162,7 @@ lyp_1 = {
         provinces_to_highlight = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
 			OR = {
-                area = atamsu_area
+                area = canin_area
                 area = nuti_area
             }
         }

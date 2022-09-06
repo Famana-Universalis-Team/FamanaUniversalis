@@ -39,7 +39,7 @@ merc_haoli_free_company = {
 				region = laglon_region
 			}
 			any_owned_province = {
-				area = unnamed_pexto_10
+				area = gegon_area
 			}
 			any_owned_province = {
 				region = west_estal_region
@@ -171,7 +171,7 @@ merc_knights_straits = {
 				region = ordica_region
 			}
 			any_owned_province = {
-				area = unnamed_pexto_4
+				area = seaside_nevia_area
 			}
 		}
 	}
@@ -197,10 +197,10 @@ merc_ordic_company = {
 				region = vordor_region
 			}
 			any_owned_province = {
-				area = unnamed_pexto_14
+				area = west_yuvla_area
 			}
 			any_owned_province = {
-				area = unnamed_pexto_12
+				area = pixrol_area
 			}
 		}	
 	}

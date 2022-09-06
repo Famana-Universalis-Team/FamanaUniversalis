@@ -352,7 +352,7 @@ antiash_1 = {
 			pyarxu_area = {
 				add_permanent_claim = ROOT
 			}
-			unnamed_area_21 = {
+			praman_area = {
 				add_permanent_claim = ROOT
 			}
 			abvori_area = {
@@ -381,7 +381,7 @@ antiash_1 = {
             antiash_jexus
 		}
 		trigger = {
-			unnamed_area_21 = {
+			praman_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -392,7 +392,7 @@ antiash_1 = {
         }
 		provinces_to_highlight = {
 			OR = {
-			area = unnamed_area_21
+			area = praman_area
 			area = pyarxu_area
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
@@ -736,7 +736,7 @@ antiash_3 = {
 			houras_area = {
 				discover_country = ROOT
 			}
-			unnamed_area_10 = {
+			hos_area = {
 				discover_country = ROOT
 			}
 			add_country_modifier = {
@@ -1096,7 +1096,7 @@ antiash_4 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		effect = {
-			unnamed_area_12 = {
+			east_zoblotra_area = {
 				add_permanent_claim = ROOT
 			}
 			unnamed_area_51 = { #:alien:
@@ -1111,7 +1111,7 @@ antiash_4 = {
 			kinvirel_area = {
 				add_permanent_claim = ROOT
 			}
-			unnamed_area_13 = {
+			minvir_area = {
 				add_permanent_claim = ROOT
 			}
 			unnamed_area_31 = {
@@ -1133,7 +1133,7 @@ antiash_4 = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			unnamed_area_13 = {
+			minvir_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -1145,7 +1145,7 @@ antiash_4 = {
 		provinces_to_highlight = {
 			OR = {
 			area = kinvirel_area
-			area = unnamed_area_13
+			area = minvir_area
 			area = unnamed_area_31
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
@@ -1292,7 +1292,7 @@ antiash_5 = {
 			mahansha_area = {
 				discover_country = ROOT
 			}
-			unnamed_area_11 = {
+			west_zoblotra_area = {
 				discover_country = ROOT
 			}
 			shol_area = {
@@ -1325,7 +1325,7 @@ antiash_5 = {
 			eastern_desert_region = {
 				add_permanent_claim = ROOT
 			}
-			unnamed_area_12 = {
+			east_zoblotra_area = {
 				discover_country = ROOT
 			}
 			jasua_region = {
@@ -1354,7 +1354,7 @@ antiash_5 = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			unnamed_area_12 = {
+			east_zoblotra_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -1370,7 +1370,7 @@ antiash_5 = {
 		provinces_to_highlight = {
 			OR = {
 				area = unnamed_area_50
-				area = unnamed_area_12
+				area = east_zoblotra_area
 				area = unnamed_area_51
 				area = unnamed_area_49
 			}

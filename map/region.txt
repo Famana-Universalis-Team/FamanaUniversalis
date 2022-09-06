@@ -206,11 +206,11 @@ upper_oppia_region = {
 		asetli_area
 		umzat_islands_area
 		east_umzatia
-		western_core_area
+		imogua_area
 		roplea_area
-		lower_oppia_area
+		keplex_area
 		arma_area
-		eastern_core_area
+		emintas_area
 		quanex_area
 		umzat_bay
 		goll_area
@@ -223,11 +223,11 @@ lower_oppia_region = {
 		ponaa_area
 		lyposh_area
 		nuti_area
-		atamsu_area
-		mesdool_area
+		canin_area
+		viel_minstro_area
 		elorak_area
-		fazalep_area
-		mesdool_area
+		fasalep_area
+		viel_minstro_area
 		astom_area
 	}
 }
@@ -235,9 +235,9 @@ lower_oppia_region = {
 arlenta_region = {
 	areas = {
 		gromash_area
-		arlen_area
+		neches_area
 		dibata_area
-		unnamed_area_8
+		thalmor_area
 		zne_area
 		sosne_area
 		heoki_area
@@ -263,7 +263,7 @@ south_xalia_region = {
 		tsaj_area
 		marn_area
 		houras_area
-		unnamed_area_10
+		hos_area
 		gadea_area
 	}
 }
@@ -290,10 +290,10 @@ eastern_desert_region = {
 	areas = {
 		hoxoi_area
 		mahansha_area
-		unnamed_area_11
+		west_zoblotra_area
 		ropinver_area
 		diam_area
-		unnamed_area_12
+		east_zoblotra_area
 		hoxona_area
 		shol_area
 	}
@@ -301,7 +301,7 @@ eastern_desert_region = {
 
 jasua_region = {
 	areas = {
-		unnamed_area_13
+		minvir_area
 		kinvirel_area
 		unnamed_area_31
 		unnamed_area_49
@@ -317,12 +317,12 @@ jasua_region = {
 
 laglon_region = {
 	areas = {
-		unnamed_area_23
-		unnamed_area_14
-		unnamed_area_15
-		unnamed_area_16
-		unnamed_area_17
-		unnamed_area_18
+		reyel_area
+		ratahja_area
+		huparan_area
+		esmekeed_area
+		porero_area
+		druviked_area
 		feyel_area
 	}
 }
@@ -330,7 +330,7 @@ laglon_region = {
 west_estal_region = {
 	areas = {
 		olfemek_area
-		northern_umzat
+		zata_area
 		west_feniki
 		revdirom_area
 		emzelom_area
@@ -369,11 +369,11 @@ vordor_region = {
 
 walara_region = {
 	areas = {
-		unnamed_pexto_14
-		unnamed_pexto_11
-		unnamed_pexto_12
-		unnamed_pexto_10
-		unnamed_pexto_5
+		west_yuvla_area
+		jinasa_area
+		pixrol_area
+		gegon_area
+		hilemo_area
 	}
 }
 
@@ -381,10 +381,10 @@ pextoglazia_region = {
 	areas = {
 		pomlen_area
 		unnamed_pexto_2
-		unnamed_pexto_1
-		mofemi_morsum_area
-		unnamed_pexto_3
-		unnamed_pexto_4
+		ronpax_area
+		rondos_area
+		affna_area
+		seaside_nevia_area
 		kimina_area
 		porlam_area
 	}
@@ -392,20 +392,20 @@ pextoglazia_region = {
 
 lomea_region = {
 	areas = {
-		unnamed_pexto_6
-		unnamed_pexto_7
-		unnamed_pexto_8
-		unnamed_pexto_9
+		hatu_area
+		gineazia_area
+		tegaria_area
+		lomea_area
 		maglazios_area
 	}
 }
 
 ordica_region = {
 	areas = {
-		unnamed_area_24
-		unnamed_area_26
-		unnamed_area_27
-		unnamed_area_25
+		east_yuvla_area
+		dukula_area
+		elteyn_area
+		ordican_mountains_area
 		unnamed_area_28
 		nabrosia_area
 		nonter_area
@@ -501,7 +501,7 @@ east_xalia_region = {
 		xon_area
 		vinsa_area
 		walamo_area
-		unnamed_area_21
+		praman_area
 		vinon_area
 	}
 }
@@ -519,7 +519,7 @@ north_xalia_region = {
 		vox_larm_area
 		pexamol_area
 		elwait_area
-		unnamed_area_20
+		trilsekin_area
 		pyarxu_area
 		south_pextum_area
 	}
