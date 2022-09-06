@@ -1406,6 +1406,9 @@ merc_berserkers_e_naravam = {
 			tooltip = VamMustHavePrivilige
 			has_country_flag = berserkers_flag
 		}
+		any_owned_province = {
+			region = eastern_naravam_region
+		}
 	}
 	modifier = {
 		shock_damage_received = -0.15
@@ -1427,6 +1430,9 @@ merc_berserkers_w_naravam = {
 			tooltip = VamMustHavePrivilige
 			has_country_flag = berserkers_flag
 		}
+		any_owned_province = {
+			region = western_naravam_region
+		}
 	}
 	modifier = {
 		shock_damage_received = -0.15
@@ -1447,6 +1453,9 @@ merc_berserkers_vamanya = {
 		custom_trigger_tooltip = {
 			tooltip = VamMustHavePrivilige
 			has_country_flag = berserkers_flag
+		}
+		any_owned_province = {
+			superregion = west_estal_superregion
 		}
 	}
 	modifier = {
