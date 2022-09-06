@@ -150,7 +150,6 @@ estate_clans_respect_tradition = {
 estate_church_raise_beserkers = {
 	icon = privilege_promote_purbias
 	max_absolutism = -5
-	loyalty = 0.05
 	influence = 0.10
 	is_valid = {
 		OR = {
