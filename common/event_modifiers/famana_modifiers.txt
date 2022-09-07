@@ -135,7 +135,7 @@ morian_fervor = {
 }
 
 kachik_religious_autonomy = {
-    local_missionary_strength = -0.05
+    local_missionary_strength = -1.0
     local_production_efficiency = 0.10
     local_manpower_modifier = 0.10
 }

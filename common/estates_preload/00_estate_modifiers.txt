@@ -80,9 +80,26 @@ estate_clans = {
 	}
 	modifier_definition = {
 		type = influence
-		key = clans_loyalty_modifier
+		key = clans_influence_modifier
 		trigger = {
 			has_estate = estate_clans
+		}
+	}
+}
+
+estate_gishelar = {
+	modifier_definition = {
+		type = loyalty
+		key = gishelar_loyalty_modifier
+		trigger = {
+			has_estate = estate_gishelar
+		}
+	}
+	modifier_definition = {
+		type = influence
+		key = gishelar_influence_modifier
+		trigger = {
+			has_estate = estate_gishelar
 		}
 	}
 }

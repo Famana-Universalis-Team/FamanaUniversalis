@@ -26,22 +26,27 @@ estate_gishelar = {
 		NOT = { has_reform = revolutionary_empire_reform }
 		#NOT = { technology_group = western } #?
 		religion_group = lathvy_group
+		capital_scope = {
+			continent = estal
+		}
 		any_owned_province = {
-			religion = tonmo
 			continent = antebar
+			religion = tonmo
 		}
 	}
 
 	# These scale with loyalty & power
 	country_modifier_happy = {
-		technology_cost = -0.1
+		cavalry_cost = -0.10
+		idea_cost = -0.05
 		tolerance_heathen = 2
 	}
 	country_modifier_neutral = {
 		tolerance_heathen = 2
 	}	
 	country_modifier_angry = {
-		technology_cost = 0.1
+		cavalry_cost = 0.10
+		idea_cost = 0.05
 		tolerance_heathen = -1
 		global_unrest = 2
 	}
@@ -55,10 +60,7 @@ estate_gishelar = {
 	influence_modifier = {
 		desc = EST_VAL_RELIGIOUS_MINORITY
 		trigger = {
-			any_owned_province = {
-				religion = tonmo
-				continent = antebar
-			}
+			always = yes
 		}
 		influence = 10		
 	}
@@ -66,10 +68,6 @@ estate_gishelar = {
 		desc = EST_VAL_RULED_BY_RELIGIOUS_MINORITY
 		trigger = {
 			NOT = { dominant_religion = ROOT }
-			any_owned_province = {
-				religion = tonmo
-				continent = antebar
-			}
 		}
 		influence = 20
 	}
@@ -119,13 +117,13 @@ estate_gishelar = {
 	}
 	
 	privileges = {
-		estate_dhimmi_land_rights
-		estate_dhimmi_lighter_dhimmi_taxes
-		estate_dhimmi_guaranteed_autonomy
-		estate_dhimmi_dhimmi_nobles
-		estate_dhimmi_manpower
-		estate_dhimmi_tolerance
-		estate_dhimmi_guarantee_of_traditions
+		estate_gishelar_land_rights
+		#estate_dhimmi_lighter_dhimmi_taxes
+		#estate_dhimmi_guaranteed_autonomy
+		#estate_dhimmi_dhimmi_nobles
+		#estate_dhimmi_manpower
+		#estate_dhimmi_tolerance
+		#estate_dhimmi_guarantee_of_traditions
 	}
 
 	agendas = {

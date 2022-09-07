@@ -46,13 +46,14 @@ estate_clans = {
 		clans_loyalty_modifier = 0.2
 	}
 
-	influence_modifier = {
-		desc = BASE_MODIFIER
-		trigger = {
-			always = yes
-		}
-		influence = 15
-	}
+	base_influence = 10
+	#influence_modifier = {
+	#	desc = BASE_MODIFIER
+	#	trigger = {
+	#		always = yes
+	#	}
+	#	influence = 10
+	#}
 
 	province_independence_weight = {
 		factor = 1

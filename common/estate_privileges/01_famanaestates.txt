@@ -47,7 +47,19 @@ estate_church_kachik_religious_rights = {
 	on_revoked_province = {
 		if = {
 			limit = {
-				culture = Kachik
+				has_province_modifier = kachik_religious_autonomy
+			}
+			remove_province_modifier = kachik_religious_autonomy
+		}
+	}
+	on_invalid = {
+		clr_country_flag = kachikreligiousrights
+		custom_tooltip = revokeKachikRelRights
+	}
+	on_invalid_province = {
+		if = {
+			limit = {
+				has_province_modifier = kachik_religious_autonomy
 			}
 			remove_province_modifier = kachik_religious_autonomy
 		}
@@ -108,13 +120,13 @@ estate_clans_promote_general = {
 estate_clans_self_governance = {
 	icon = privilege_grant_autonomy
 	max_absolutism = -10
-	influence = 0.10
+	influence = 0.20
 	loyalty = 0.1
 	can_select = {
-		reform_progress = 50
+		government_reform_progress = 50
 	}
 	on_granted = {
-		add_reform_progress = -50
+		change_government_reform_progress = -50
 	}
 	penalties = {
 		min_autonomy = 10
@@ -167,6 +179,26 @@ estate_church_raise_berserkers = {
 	penalties = {
 	}
 	benefits = {
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+estate_gishelar_land_rights = {
+	icon = privilege_grant_autonomy
+	land_share = 5
+	max_absolutism = -5
+	loyalty = 0.05
+	influence = 0.05
+	can_select = {
+	}
+	on_granted = {
+	}
+	penalties = {
+	}
+	benefits = {
+		governing_capacity = 100
 	}
 	ai_will_do = {
 		factor = 0
