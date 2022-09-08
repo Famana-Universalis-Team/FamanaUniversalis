@@ -1271,7 +1271,7 @@ country_event = { #Kashroon temple inscriptions
 	option = { 
 		name = maky.16.a #objectively a shit option the troll is absolute
 		add_country_modifier = {
-			name = "reconstructed_carvings" 
+			name = recontrusted_carvings
 			duration = -1
 		}
 	}
@@ -1279,7 +1279,7 @@ country_event = { #Kashroon temple inscriptions
 	option = { 
 		name = maky.16.b
 		add_country_modifier = {
-			name = "religious_carvings"
+			name = religious_carvings
 			duration = -1
 		}
 	}
@@ -1287,7 +1287,7 @@ country_event = { #Kashroon temple inscriptions
 	option = { 
 		name = maky.16.c
 		add_country_modifier = {
-			name = "patriotic_carvings"
+			name = patriotic_carvings
 			duration = -1
 		}
 	}
@@ -1295,7 +1295,7 @@ country_event = { #Kashroon temple inscriptions
 	option = { 
 		name = maky.16.d.o
 		add_country_modifier = {
-			name = "scientific_carvings"
+			name = scientific_carvings
 			duration = -1
 		}
 	}
@@ -1303,7 +1303,7 @@ country_event = { #Kashroon temple inscriptions
 	option = { 
 		name = maky.16.e
 		add_country_modifier = {
-			name = "prestigious_carvings"
+			name = prestigious_carvings
 			duration = -1
 		}
 	}

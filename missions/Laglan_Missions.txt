@@ -1276,7 +1276,7 @@ lag_4 = {
                     num_of_marines = 15
                 }
                 hidden_effect = {
-                    army_tradition = 20
+                    add_army_tradition = 20
                 }
             }
         }

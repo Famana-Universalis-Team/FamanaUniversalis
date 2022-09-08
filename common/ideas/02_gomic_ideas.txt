@@ -2982,7 +2982,7 @@ HLT_ideas = {
 	}
 	hlt_2 = {
 		global_missionary_strength = 0.02
-		missionary_maintenance = -0.25
+		missionary_maintenance_cost = -0.25
 	}
 	hlt_3 = {
 		global_tax_modifier = 0.15

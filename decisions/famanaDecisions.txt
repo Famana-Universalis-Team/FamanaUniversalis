@@ -607,127 +607,127 @@ country_decisions = {
 		}
     }
 
-    restore_xalian_diplomatically = {
-        potential = {
-            always = no
-            NOT = { has_global_flag = Council_of_Xon }
-            NOT = { has_global_flag = Xalian_religion_restored }
-            religious_ideas = 7 #completed religious ideas
-            NOT = { tag = GAX } #ga xal would mean you have united the peninsula
-            OR = {
-                AND = { #Check if the council is even valid in the first place.
-                    religion = shirian
-                    any_country = {
-                        OR = {
-                            religion = morian
-                            religion = vinian
-                            religion = delkian
-                        }
-                    }
-                }
-                AND = {
-                    religion = vinian
-                    any_country = {
-                        OR = {
-                            religion = morian
-                            religion = shirian
-                            religion = delkian
-                        }
-                    }
-                }
-                AND = {
-                    religion = delkian
-                    any_country = {
-                        OR = {
-                            religion = morian
-                            religion = vinian
-                            religion = shirian
-                        }
-                    }
-                }
-                AND = {
-                    religion = morian
-                    has_global_flag = MorianPolytheism #moria must first reintroduce the other gods before they elevate them
-                    any_country = {
-                        OR = {
-                            religion = delkian
-                            religion = vinian
-                            religion = shirian
-                        }
-                    }
-                }
-            }
-            if = {
-                limit = {
-                    OR = {
-                        has_dlc = "Rights of Man"
-                        has_dlc = "Emperor"
-                    }
-                }
-                is_great_power = yes
-            }
-		}
-		allow = {
-            custom_trigger_tooltip = {
-                tooltip = MOST_DEV_GA_XAL
-                NOT = {
-                    any_country = {
-                        AND = {
-                            total_development = ROOT #has more development than the player
-                            any_owned_province = {
-                                superregion = ga_xal_superregion #owns any provinces in ga xal. basically you need to become the sole superpower (and fashros probably needs to be dead)
-                            }
-                        }
-                    }
-                }
-            }
-            OR = {
-                AND = {
-                    religion = shirian #must be a religious authority
-                    owns_core_province = 5388
-                }
-                AND = {
-                    religion = morian
-                    owns_core_province = 5411
-                }
-                AND = {
-                    religion = vinian
-                    owns_core_province = 5458
-                }
-                AND = {
-                    religion = delkian
-                    owns_core_province = 5163
-                }
-            }
-            diplomatic_reputation = 3 #must be credible
-		}
-		effect = {
-            custom_tooltip = COUNCIL_OF_XON_REPRESENTATIVES
-            set_global_flag = Council_of_Xon
-            hidden_effect = {
-                #set_global_flag = Council_of_Xon
-                country_event = {
-                    id = gaxal.13
-                    days = 1
-                }
-                country_event = {
-                    id = gaxal.15
-                    days = 1
-                }
-            }
-		}
-		ai_will_do = {
-			factor = 1
-            modifier = {
-                factor = 0
-                OR = {
-                    NOT = { tag = MSH } #only moshiria and vinia ai will try to do it
-                    NOT = { tag = VIN }
-                    NOT = { is_year = 330 } #only once fashros dies do they try
-                }
-            }
-		}
-    }
+    #restore_xalian_diplomatically = {
+    #    potential = {
+    #        always = no
+    #        NOT = { has_global_flag = Council_of_Xon }
+    #        NOT = { has_global_flag = Xalian_religion_restored }
+    #        religious_ideas = 7 #completed religious ideas
+    #        NOT = { tag = GAX } #ga xal would mean you have united the peninsula
+    #        OR = {
+    #            AND = { #Check if the council is even valid in the first place.
+    #                religion = shirian
+    #                any_country = {
+    #                    OR = {
+    #                        religion = morian
+    #                        religion = vinian
+    #                        religion = delkian
+    #                    }
+    #                }
+    #            }
+    #            AND = {
+    #                religion = vinian
+    #                any_country = {
+    #                    OR = {
+    #                        religion = morian
+    #                        religion = shirian
+    #                        religion = delkian
+    #                    }
+    #                }
+    #            }
+    #            AND = {
+    #                religion = delkian
+    #                any_country = {
+    #                    OR = {
+    #                        religion = morian
+    #                        religion = vinian
+    #                        religion = shirian
+    #                    }
+    #                }
+    #            }
+    #            AND = {
+    #                religion = morian
+    #                has_global_flag = MorianPolytheism #moria must first reintroduce the other gods before they elevate them
+    #                any_country = {
+    #                    OR = {
+    #                        religion = delkian
+    #                        religion = vinian
+    #                        religion = shirian
+    #                    }
+    #                }
+    #            }
+    #        }
+    #        if = {
+    #            limit = {
+    #                OR = {
+    #                    has_dlc = "Rights of Man"
+    #                    has_dlc = "Emperor"
+    #                }
+    #            }
+    #            is_great_power = yes
+    #        }
+	#	}
+	#	allow = {
+    #       custom_trigger_tooltip = {
+    #            tooltip = MOST_DEV_GA_XAL
+    #            NOT = {
+    #                any_country = {
+    #                    AND = {
+    #                        total_development = ROOT #has more development than the player
+    #                        any_owned_province = {
+    #                            superregion = ga_xal_superregion #owns any provinces in ga xal. basically you need to become the sole superpower (and fashros probably needs to be dead)
+    #                        }
+    #                    }
+    #                }
+    #            }
+    #        }
+    #        OR = {
+    #            AND = {
+    #                religion = shirian #must be a religious authority
+    #                owns_core_province = 5388
+    #            }
+    #            AND = {
+    #                religion = morian
+    #                owns_core_province = 5411
+    #            }
+    #            AND = {
+    #                religion = vinian
+    #                owns_core_province = 5458
+    #            }
+    #            AND = {
+    #                religion = delkian
+    #                owns_core_province = 5163
+    #            }
+    #        }
+    #        diplomatic_reputation = 3 #must be credible
+	#	}
+	#	effect = {
+    #        custom_tooltip = COUNCIL_OF_XON_REPRESENTATIVES
+    #        set_global_flag = Council_of_Xon
+    #        hidden_effect = {
+    #            #set_global_flag = Council_of_Xon
+    #            country_event = {
+    #                id = gaxal.13
+    #                days = 1
+    #            }
+    #            country_event = {
+    #                id = gaxal.15
+    #                days = 1
+    #            }
+    #        }
+	#	}
+	#	ai_will_do = {
+	#		factor = 1
+    #        modifier = {
+    #            factor = 0
+    #            OR = {
+    #                NOT = { tag = MSH } #only moshiria and vinia ai will try to do it
+    #                NOT = { tag = VIN }
+    #                NOT = { is_year = 330 } #only once fashros dies do they try
+    #            }
+    #        }
+	#	}
+    #}
 
     destroy_the_colossus = {
         potential = {

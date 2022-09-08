@@ -3953,34 +3953,6 @@ country_event = { #kisholi death
     }
 }
 
-country_event = { #noreligion fix
-    id = tonxara.21
-    hidden = yes
-
-    trigger = {
-        religion = noreligion
-        NOT = {
-            has_country_flag = noreligionFlag
-        }
-    }
-
-    mean_time_to_happen = {
-        months = 1
-    }
-
-    immediate = {
-        set_country_flag = noreligionFlag
-        capital_scope = {
-            PREV = { change_religion = PREV }
-        }
-    }
-
-    option = {
-        name = tonxara.20.a
-        ai_chance = { factor = 1 }
-    }
-}
-
 country_event = { #Religious Falling Out
     id = tonxara.21
     title = tonxara.21.t
@@ -4071,5 +4043,33 @@ country_event = { #Religious Falling Out
                 }
             }
         }
+    }
+}
+
+country_event = { #noreligion fix
+    id = tonxara.22
+    hidden = yes
+
+    trigger = {
+        religion = noreligion
+        NOT = {
+            has_country_flag = noreligionFlag
+        }
+    }
+
+    mean_time_to_happen = {
+        months = 1
+    }
+
+    immediate = {
+        set_country_flag = noreligionFlag
+        capital_scope = {
+            PREV = { change_religion = PREV }
+        }
+    }
+
+    option = {
+        name = tonxara.22.a
+        ai_chance = { factor = 1 }
     }
 }

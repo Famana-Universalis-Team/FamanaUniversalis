@@ -30,6 +30,7 @@ rst_1 = {
                     duration = 14600
                 }
             }
+            set_country_flag = rostaCanGetEvent
         }
         provinces_to_highlight = {
             province_id = 6597
@@ -59,8 +60,20 @@ rst_1 = {
                 name = rst_rostan_invasion
                 duration = 3650
             }
-            country_event = {
-                id = gotzlica.10
+            if = {
+                limit = {
+                    NOT = {
+                        6587 = {
+                            country_or_non_sovereign_subject_holds = ROOT
+                        }
+                    }
+                    NOT = {
+                        has_country_flag = rostaGotEvent
+                    }
+                }
+                country_event = {
+                    id = gotzlica.10
+                }
             }
             rosta_area = {
                 add_permanent_claim = ROOT
@@ -120,6 +133,7 @@ rst_1 = {
             add_prestige = 20
             set_capital = 6587
             6587 = {
+                add_core = ROOT
                 add_province_modifier = {
                     name = rst_new_capital
                     duration = 9125

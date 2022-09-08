@@ -615,16 +615,25 @@ country_event = {
 	fire_only_once = yes
 
     trigger = {
-        owns = 6597
-        is_year = 300
-        NOT = {
-            OR = {
-                owns = 6596
-                owns = 6589
-                owns = 6579
-                owns = 6588
+        OR = {
+            has_country_flag = rostaCanGetEvent
+            AND = {
+                owns = 6597
+                is_year = 300
+                NOT = {
+                    OR = {
+                        owns = 6596
+                        owns = 6589
+                        owns = 6579
+                        owns = 6588
+                    }
+                }
             }
         }
+    }
+
+    immediate = {
+        set_country_flag = rostaGotEvent
     }
 
     mean_time_to_happen = {
