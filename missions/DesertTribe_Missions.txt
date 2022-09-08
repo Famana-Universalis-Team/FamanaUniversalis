@@ -128,11 +128,13 @@ desert_tribe_2 = {
 			}
         }
         effect = {
-			custom_tooltip = destr_debuff_counter
-			add_country_modifier = {
-				name = destr_development
-				duration = -1
-			}
+			#custom_tooltip = destr_debuff_counter
+			#add_country_modifier = {
+			#	name = destr_development
+			#	duration = -1
+			#}
+            add_treasury = 250
+            add_manpower = 10
         }
     }
 

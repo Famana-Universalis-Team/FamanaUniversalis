@@ -1080,6 +1080,7 @@ recent_migration = {
 }
 
 didnt_migrate = {
+    stability_cost_modifier = -0.10
 }
 
 nafan_fleet_power = {
@@ -1671,7 +1672,7 @@ destr_migtimer = {}
 
 destr_colonisation = {
     colonists = 1
-    global_colonial_growth = 25
+    global_colonial_growth = 40
     native_assimilation = 0.25
     native_uprising_chance = -0.50
     global_missionary_strength = 0.05

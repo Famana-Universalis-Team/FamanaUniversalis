@@ -127,6 +127,7 @@ country_event = {
 
 	option = { #Migrate to choice 1
 		name = bosisi.1.b
+		goto = migration_province_1
 		ai_chance = {
 			factor = 1
 			modifier = {
@@ -174,6 +175,7 @@ country_event = {
 	}
 	option = { #Migrate to choice 2
 		name = bosisi.1.c
+		goto = migration_province_2
 		ai_chance = {
 			factor = 1
 			modifier = {
@@ -221,6 +223,7 @@ country_event = {
 	}
 	option = { #Migrate to choice 3
 		name = bosisi.1.e
+		goto = migration_province_3
 		ai_chance = {
 			factor = 1
 			modifier = {

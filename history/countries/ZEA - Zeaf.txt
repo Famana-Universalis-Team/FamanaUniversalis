@@ -18,3 +18,16 @@ capital = 5162
 	}
 	add_ruler_personality = conqueror_personality
 }
+
+212.1.1 = {
+	leader = {
+		name = "Asghiado Zene"
+		type = general
+
+		fire = 2
+		shock = 2
+		manuever = 1
+		siege = 0
+		death_date = 221.1.1
+	}
+}
