@@ -1428,3 +1428,56 @@ country_event = { #kinvirel helvanists setup
         ai_chance = { factor = 1 }
     }
 }
+
+country_event = { #kalargan trolled
+	id = jasua.27
+	title = jasua.27.t
+	desc = jasua.27.d
+	picture = BATTLE_eventPicture
+	fire_only_once = yes
+
+	trigger = {
+		tag = KLG
+		government = monarchy
+		has_regency = no
+		has_heir = yes
+		heir_mil = 3
+		OR = {
+			heir_adm = 1
+			heir_dip = 1
+		}
+		is_year = 260
+		NOT = {
+			is_year = 290
+		}
+    }
+
+	mean_time_to_happen = {
+		months = 60
+	}
+
+	immediate = {
+		hidden_effect = {
+			#remove_heir = {}
+			add_manpower = -10
+		}
+	}
+
+    option = {
+        name = jasua.27.a
+        ai_chance = { factor = 1 }
+		add_stability = -1
+		random_owned_province = {
+			limit = {
+				region = stroktur_region
+			}
+			spawn_rebels = {
+    			type = pretender_rebels
+    			size = 3
+				should_take_capital = yes
+				use_heir_as_leader = yes
+				win = yes
+			}
+		}
+    }
+}

@@ -204,3 +204,79 @@ estate_gishelar_land_rights = {
 		factor = 0
 	}
 }
+
+estate_burghers_deforestation_permits = {
+	icon = privilege_dev_cost
+	max_absolutism = -10
+	influence = 0.1
+	loyalty = 0.05
+	is_valid = {
+		culture_group = Gotzlic
+		any_owned_province = {
+			OR = {
+				has_terrain = forest
+				has_terrain = woods
+			}
+		}
+	}
+	can_select = {
+		culture_group = Gotzlic
+		any_owned_province = {
+			OR = {
+				has_terrain = forest
+				has_terrain = woods
+			}
+		}
+	}
+	on_granted = {
+		add_prestige = -30
+		custom_tooltip = deforPermitsGtzAdd
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					OR = {
+						has_terrain = forest
+						has_terrain = woods
+					}
+					OR = {
+						region = gotzlic_region
+						region = east_gotzlic_region
+						region = south_gotzlic_region
+					}
+				}
+				add_province_modifier = {
+					name = gotzlic_deforestation_modifier
+					duration = -1
+				}
+			}
+		}
+	}
+	on_revoked = {
+		custom_tooltip = deforPermitsGtzRemove
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					has_province_modifier = gotzlic_deforestation_modifier
+				}
+				remove_province_modifier = gotzlic_deforestation_modifier
+			}
+		}
+	}
+	penalties = {
+	}
+	benefits = {
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 10
+			num_of_owned_provinces_with = {
+				value = 4
+				OR = {
+					has_terrain = woods
+					has_terrain = forest
+				}
+			}
+		}
+	}
+}

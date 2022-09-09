@@ -1399,7 +1399,7 @@ merc_berserkers_e_naravam = {
     home_province = 6293
 	cavalry_weight = 0
 	cavalry_cap = 0
-	cost_modifier = 0.7
+	cost_modifier = 0.6
 	sprites = { northamericagfx_sprite_pack }
     trigger = {
 		custom_trigger_tooltip = {
@@ -1423,7 +1423,7 @@ merc_berserkers_w_naravam = {
     home_province = 6337
 	cavalry_weight = 0
 	cavalry_cap = 0
-	cost_modifier = 0.7
+	cost_modifier = 0.6
 	sprites = { northamericagfx_sprite_pack }
     trigger = {
 		custom_trigger_tooltip = {
@@ -1447,7 +1447,7 @@ merc_berserkers_vamanya = {
     home_province = 6361
 	cavalry_weight = 0
 	cavalry_cap = 0
-	cost_modifier = 0.7
+	cost_modifier = 0.6
 	sprites = { northamericagfx_sprite_pack }
     trigger = {
 		custom_trigger_tooltip = {
@@ -1462,5 +1462,131 @@ merc_berserkers_vamanya = {
 		shock_damage_received = -0.15
 		shock_damage = 0.33
 		discipline = 0.10
+	}
+}
+
+# Berserkers (Nahallaia)
+merc_berserkers_nhl = {
+    regiments_per_development = 0.025
+    home_province = 6191
+	cavalry_weight = 0
+	cavalry_cap = 0
+	cost_modifier = 0.6
+	sprites = { northamericagfx_sprite_pack }
+    trigger = {
+		custom_trigger_tooltip = {
+			tooltip = VamMustHavePrivilige
+			has_country_flag = berserkers_flag
+		}
+		any_owned_province = {
+			superregion = west_estal_superregion
+		}
+	}
+	modifier = {
+		shock_damage_received = -0.15
+		shock_damage = 0.33
+		discipline = 0.10
+	}
+}
+
+# Berserkers (Ordica)
+merc_berserkers_orc = {
+    regiments_per_development = 0.025
+    home_province = 6214
+	cavalry_weight = 0
+	cavalry_cap = 0
+	cost_modifier = 0.6
+	sprites = { northamericagfx_sprite_pack }
+    trigger = {
+		custom_trigger_tooltip = {
+			tooltip = VamMustHavePrivilige
+			has_country_flag = berserkers_flag
+		}
+		any_owned_province = {
+			superregion = west_estal_superregion
+		}
+	}
+	modifier = {
+		shock_damage_received = -0.15
+		shock_damage = 0.33
+		discipline = 0.10
+	}
+}
+
+# Berserkers (Kolya)
+merc_berserkers_kly = {
+    regiments_per_development = 0.025
+    home_province = 6265
+	cavalry_weight = 0
+	cavalry_cap = 0
+	cost_modifier = 0.6
+	sprites = { northamericagfx_sprite_pack }
+    trigger = {
+		custom_trigger_tooltip = {
+			tooltip = VamMustHavePrivilige
+			has_country_flag = berserkers_flag
+		}
+		any_owned_province = {
+			region = apilanya_region
+		}
+	}
+	modifier = {
+		shock_damage_received = -0.15
+		shock_damage = 0.33
+		discipline = 0.10
+	}
+}
+
+# Berserkers (Maldik)
+merc_berserkers_mld = {
+    regiments_per_development = 0.025
+    home_province = 6714
+	cavalry_weight = 0
+	cavalry_cap = 0
+	cost_modifier = 0.6
+	sprites = { northamericagfx_sprite_pack }
+    trigger = {
+		custom_trigger_tooltip = {
+			tooltip = VamMustHavePrivilige
+			has_country_flag = berserkers_flag
+		}
+		any_owned_province = {
+			OR = {
+				region = pelig_region
+				region = west_emastalia_region
+				region = pextoglazia_region
+				region = east_ordica_region
+			}
+		}
+	}
+	modifier = {
+		shock_damage_received = -0.15
+		shock_damage = 0.33
+		discipline = 0.10
+	}
+}
+
+# Brulan Brawlers
+merc_brulan_brawlers = {
+    regiments_per_development = 0.03
+    home_province = 6473 # brula
+	cavalry_weight = 0.0
+	cavalry_cap = 0
+	sprites = { northamericagfx_sprite_pack }
+    trigger = {
+		OR = {
+			religion_group = north_estali
+			any_owned_province = {
+				OR = {
+					region = east_gotzlic_region
+					region = brula_region
+				}
+			}
+		}
+	}
+	modifier = {
+		shock_damage = 0.25
+		shock_damage_received = -0.10
+		land_morale = -0.10
 	}
 }

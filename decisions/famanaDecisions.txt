@@ -262,6 +262,13 @@ country_decisions = {
                     }
                 }
             }
+            #custom_trigger_tooltip = {
+            #    tooltip = canMigrateDesert
+            #    any_empty_neighbor_province = {
+			#	    has_discovered = ROOT
+			#	    NOT = { has_province_flag = chosen_migrate }
+			#    }
+            #}
 		}
 		effect = {
             country_event = {

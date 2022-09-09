@@ -418,3 +418,13 @@ rst_new_capital = {
 rst_new_gold_mines = {
     trade_goods_size = 1.0
 }
+
+gotzlic_deforestation_modifier = {
+    local_development_cost = -0.15
+}
+
+fas_noglebim_massacre = {
+    local_unrest = -100
+    local_missionary_strength = 0.10
+    local_autonomy = -0.25
+}

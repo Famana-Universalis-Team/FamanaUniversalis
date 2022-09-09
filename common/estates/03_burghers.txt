@@ -253,11 +253,12 @@ estate_burghers =
 
 	privileges = {
 		estate_burghers_land_rights
+		estate_burghers_deforestation_permits #Region specific
 		estate_burghers_land_of_commerce
 		estate_burghers_admirals
 		estate_burghers_patronage_of_the_arts
 		estate_burghers_commercial_board_of_advice
-		estate_burghers_new_world_charter
+		#estate_burghers_new_world_charter
 		estate_burghers_indebted_to_burghers
 		estate_burghers_free_enterprise
 		estate_burghers_the_great_privilege

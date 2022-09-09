@@ -392,7 +392,10 @@ naravami_clan_name = {
 	}
 
 	trigger = {
-		has_reform = naravami_tribe_reform
+		OR = {
+			has_reform = naravami_tribe_rdu_reform
+			has_reform = naravami_tribe_reform
+		}
 	}
 }
 

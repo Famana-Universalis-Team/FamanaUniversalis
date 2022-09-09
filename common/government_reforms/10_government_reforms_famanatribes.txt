@@ -48,6 +48,7 @@ desert_tribe = {
 		build_cost = 100
 		development_cost = 100
 		diplomatic_upkeep = -4
+		diplomatic_annexation_cost = 100
 		global_tax_modifier = -0.20
 		production_efficiency = -0.5
 		cb_on_religious_enemies = yes

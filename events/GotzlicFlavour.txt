@@ -1457,8 +1457,11 @@ country_event = {
 
     trigger = {
         controls = 6643
+        NOT = {
+            owns = 6643
+        }
         6643 = {
-            is_empty = no
+            is_owned_by = NEN
         }
         NOT = {
             tag = NEN

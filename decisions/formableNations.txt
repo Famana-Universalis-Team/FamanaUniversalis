@@ -2870,6 +2870,11 @@ country_decisions = {
 			hozy_area = {
 				add_core = HZY
 			}
+			hidden_effect = {
+				hozy_area = {
+					remove_claim = HZY
+				}
+			}
 			add_country_modifier = {
 				name = "centralization_modifier"
 				duration = 7300
@@ -2920,6 +2925,7 @@ country_decisions = {
 		effect = {
 			restore_country_name = yes
 			change_tag = GTZ
+			country_event = { id = ideagroups.1 } #Swap Ideas
 			if = {
 				limit = {
 					NOT = { government_rank = 3 }
@@ -2927,6 +2933,18 @@ country_decisions = {
 				set_government_rank = 3
 			}
 			gotzlic_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = GTZ
+			}
+			east_gotzlic_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = GTZ
+			}
+			south_gotzlic_region = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}

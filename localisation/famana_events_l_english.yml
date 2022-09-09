@@ -781,6 +781,10 @@
  jasua.24.d:0 "The Kachiks are revolting! The foremost Kachik tribe, the Kalargans, are massing troops outside the city of Kalarga, in what looks like the beginnings of a rebellion against Stroktur itself. We could try to negotiate a deal with them, but if we cannot, we will have to settle this dispute on the battlefield."
  jasua.24.a:0 "Kill the traitors!"
  jasua.24.b:0 "@KLG §YKalarga§! is the right path forward."
+
+ jasua.27.t:0 "[Root.Heir.GetName]'s Betrayal"
+ jasua.27.d:0 "The heir to the [Root.GetAdjective] throne has rebelled against us! Claiming the throne for themselves, [Root.Heir.GetName] is now illegally amassing an army in the countryside, a clear act of treason. Let the true [Root.Monarch.GetTitle] be decided on the battlefield."
+ jasua.27.a:0 "My own kin?"
  
  #Fashran events
  
@@ -1346,9 +1350,9 @@
  bosisi.1.d:0 "The Great Desert is one of the harshest environments known to man. The beating sun dries up every drop of water and cove of life. Despite this, we still live in our tribes. However, as water runs out, we must chase new lands and tap into new underwater reservoirs in a constant dance."
  bosisi.1.a:0 "We are staying here, no matter the cost."
  GREATDESERT_REFUSE_MIGRATE:0 "If, however, our capital doesn't have the Great Desert modifier, we will gain 1 random point of development."
- bosisi.1.b:0 "Hmm... Maybe [migration_province_1.GetName]"
- bosisi.1.c:0 "[migration_province_2.GetName] looks good"
- bosisi.1.e:0 "We should go towards [migration_province_3.GetName]"
+ bosisi.1.b:0 "Hmm... Maybe [migration_province_1.GetName]."
+ bosisi.1.c:0 "[migration_province_2.GetName] looks good."
+ bosisi.1.e:0 "We should go towards [migration_province_3.GetName]."
  DESERT_TRIBE:0 "Desert Tribe"
 
  naravam.4.t:0 "Lathvy Arrives in Naravam"
@@ -1811,6 +1815,12 @@
  fashros.37.t:0 "The Crota'tam is injured!"
  fashros.37.d:0 "While going into battle, the Crota'tam of Fashros was severly injured and almost killed. He was dragged away from the battlefield, and his life was saved, albeit at the cost of severe injuries. This has caused a drain in morale across Fashros, and the possibility of [FAS.GetRuler.GetTitle] [FAS.GetRuler.GetName] returning to the battlefield is highly unlikely."
  fashros.37.a:0 "Poor luck for us."
+
+ fashros.38.t:0 "The Noglebim Revolt"
+ fashros.38.d:0 "An envoy from Noglebim comes with ludicrous demands: the Tonxara is to remove its garrison from the region, as well as grant self-rule to the Noglebimi people. If not, the envoy states, Noglebim will be forced to take up arms against Fashros. Clearly, this proposal is an insult to our honor, but a massive revolt is not something we want to deal with right now."
+ fashros.38.a:0 "Insolence! Kill them all!"
+ fashros.38.b:0 "We don't have time for this."
+ fas_noglebim_massacre:0 "Noglebim Massacre"
 
  tonxara.21.t:0 "Abandoning our Past"
  tonxara.21.d:0 "Following the Tonmo Golden Age, the faith of the Ravsho Peoples was transformed from a collection of folksy steppe traditions and animist nonsense into a fully fludged world religion. Despite this, many still refuse to change their ways. Even during the days of the Fashran Tonxara, many Ravshos moved West into Kisholi, and more Jasuan culture spread East than vice versa. In pretty much every way, the Kisholi are the centre of the Tonmo World, and we should shake off the shackles of our cousins who wish to continue their traditions of immoral pillaging and looting."

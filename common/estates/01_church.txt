@@ -186,9 +186,9 @@ estate_church =
 	color = { 200 150 0 }
 
 	privileges = {
-		estate_church_raise_berserkers
-		estate_church_kachik_religious_rights
 		estate_church_land_rights
+		estate_church_kachik_religious_rights #Country specific
+		estate_church_raise_berserkers #Religion specific
 		estate_church_papal_emissary
 		estate_church_religious_state
 		estate_church_independent_inquisition
