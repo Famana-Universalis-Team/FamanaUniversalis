@@ -267,7 +267,7 @@ country_event = { #give heirs
 
 country_event = { #First expansion (mission fired)
 	id = lukscham.7
-	picture = PROTESTANT_CATHOLIC_DEBATE_eventPicture
+	picture = TRADEGOODS_eventPicture
 	title = lukscham.7.t
 	desc = lukscham.7.d
 	fire_only_once = yes
@@ -303,34 +303,35 @@ country_event = { #First expansion (mission fired)
     }
 }
 
-country_event = {
+country_event = { #Second expansion
 	id = lukscham.8
-	picture = PROTESTANT_CATHOLIC_DEBATE_eventPicture
+	picture = TRADEGOODS_eventPicture
 	title = lukscham.8.t
 	desc = lukscham.8.d
 	fire_only_once = yes
+	is_triggered_only = yes
 
-	trigger = {
-		tag = LKS
-		area_157 = {
-			type = all
-			owned_by = LKS
-		}
-		area_156 = {
-			type = all
-			owned_by = LKS
-		}
-	}
+	#trigger = {
+	#	tag = LKS
+	#	area_157 = {
+	#		type = all
+	#		owned_by = LKS
+	#	}
+	#	area_156 = {
+	#		type = all
+	#		owned_by = LKS
+	#	}
+	#}
 
-	mean_time_to_happen = {
-		months = 1
-	}
+	#mean_time_to_happen = {
+	#	months = 1
+	#}
 
-	immediate = {
-		hidden_effect = {
-
-		}
-	}
+	#immediate = {
+	#	hidden_effect = {
+	#
+	#	}
+	#}
 
 	option = {
         name = lukscham.8.a
@@ -350,60 +351,45 @@ country_event = {
     }
 }
 
-country_event = {
+country_event = { #Gotzlic attack
 	id = lukscham.9
-	picture = PROTESTANT_CATHOLIC_DEBATE_eventPicture
+	picture = GENERALS_DISCUSSING_eventPicture
 	title = lukscham.9.t
 	desc = lukscham.9.d
 	fire_only_once = yes
 
 	trigger = {
 		tag = LKS
-		OR = {
-			any_country = {
-        	    capital_scope = {
-        	        OR = {
-        	            region_for_scope_province = {
-        	                region = gotzlic_region
-        	            }
-        	            region_for_scope_province = {
-        	                region = east_gotzlic_region
-        	            }
-        	            region_for_scope_province = {
-        	                region = south_gotzlic_region
-        	            }
-        	        }
-        	    }
-        	    defensive_war_with = LKS
-        	}
-			any_country = {
-        	    capital_scope = {
-        	        OR = {
-        	            region_for_scope_province = {
-        	                region = gotzlic_region
-        	            }
-        	            region_for_scope_province = {
-        	                region = east_gotzlic_region
-        	            }
-        	            region_for_scope_province = {
-        	                region = south_gotzlic_region
-        	            }
-        	        }
-        	    }
-        	    offensive_war_with = LKS
-        	}
-		}
+		any_country = {
+            capital_scope = {
+                OR = {
+                    region_for_scope_province = {
+                        region = gotzlic_region
+                    }
+                    region_for_scope_province = {
+                        region = east_gotzlic_region
+                    }
+    	            region_for_scope_province = {
+    	                region = south_gotzlic_region
+    	            }
+    	        }
+    	    }
+			OR = {
+				defensive_war_with = LKS
+				offensive_war_with = LKS
+			}
+        }
 	}
 
 	mean_time_to_happen = {
-		months = 1
+		months = 4
 	}
 
-	immediate = {
-		hidden_effect = {
-
-		}
-	}
+	#immediate = {
+	#	hidden_effect = {
+	#
+	#	}
+	#}
 
 	option = {
         name = lukscham.9.a
@@ -427,9 +413,9 @@ country_event = {
     }
 }
 
-country_event = {
+country_event = { #Rduma if it didnt migrate
 	id = lukscham.10
-	picture = PROTESTANT_CATHOLIC_DEBATE_eventPicture
+	picture = VILLAGE_RAIDED_eventPicture
 	title = lukscham.10.t
 	desc = lukscham.10.d
 	fire_only_once = yes
@@ -448,14 +434,14 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 1
+		months = 10
 	}
 
-	immediate = {
-		hidden_effect = {
-
-		}
-	}
+	#immediate = {
+	#	hidden_effect = {
+	#
+	#	}
+	#}
 
 	option = {
         name = lukscham.10.a

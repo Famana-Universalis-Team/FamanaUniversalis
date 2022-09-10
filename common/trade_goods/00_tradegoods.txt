@@ -603,6 +603,8 @@ gold = {
 		modifier = {
 			factor = 0
 			is_random_new_world = no
+			#NOT = { region = western_naravam_region }
+			#NOT = { region = eastern_naravam_region }
 			NOT = { region = west_siberia_region }
 			NOT = { region = east_siberia_region }
 			NOT = { region = cascadia_region }
@@ -631,6 +633,8 @@ gold = {
 			factor = 0
 			is_random_new_world = yes
 			NOT = { continent = new_world }
+			#NOT = { region = western_naravam_region }
+			#NOT = { region = eastern_naravam_region }
 			NOT = { region = west_siberia_region }
 			NOT = { region = east_siberia_region }
 			NOT = { region = australia_region }

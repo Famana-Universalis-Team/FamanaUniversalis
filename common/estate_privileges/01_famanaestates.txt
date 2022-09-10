@@ -47,7 +47,19 @@ estate_church_kachik_religious_rights = {
 	on_revoked_province = {
 		if = {
 			limit = {
-				culture = Kachik
+				has_province_modifier = kachik_religious_autonomy
+			}
+			remove_province_modifier = kachik_religious_autonomy
+		}
+	}
+	on_invalid = {
+		clr_country_flag = kachikreligiousrights
+		custom_tooltip = revokeKachikRelRights
+	}
+	on_invalid_province = {
+		if = {
+			limit = {
+				has_province_modifier = kachik_religious_autonomy
 			}
 			remove_province_modifier = kachik_religious_autonomy
 		}
@@ -62,6 +74,209 @@ estate_church_kachik_religious_rights = {
 		modifier = {
 			factor = 10
 			has_estate_privilege = estate_church_kachik_religious_rights
+		}
+	}
+}
+
+estate_clans_land_rights = {
+	icon = privilege_grant_autonomy
+	land_share = 5
+	max_absolutism = -5
+	loyalty = 0.05
+	influence = 0.05
+	can_select = {
+	}
+	on_granted = {
+	}
+	penalties = {
+	}
+	benefits = {
+		governing_capacity = 100
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+estate_clans_promote_general = {
+	icon = privilege_promote_purbias
+	influence = 0.05
+	can_select = {
+		army_tradition = 11
+	}
+	on_granted = {
+		add_army_tradition = -10
+		create_general = { tradition = 75 }
+	}
+	penalties = {
+	}
+	benefits = {
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+estate_clans_self_governance = {
+	icon = privilege_grant_autonomy
+	max_absolutism = -10
+	influence = 0.20
+	loyalty = 0.1
+	can_select = {
+		government_reform_progress = 50
+	}
+	on_granted = {
+		change_government_reform_progress = -50
+	}
+	penalties = {
+		min_autonomy = 10
+	}
+	benefits = {
+		governing_capacity = 100
+		global_trade_goods_size_modifier  = 0.15
+		tolerance_heathen = 2
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+estate_clans_respect_tradition = {
+	icon = privilege_tolerance_heathen
+	max_absolutism = -10
+	loyalty = 0.10
+	influence = 0.10
+	can_select = {
+	}
+	on_granted = {
+	}
+	penalties = {
+	}
+	benefits = {
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+estate_church_raise_berserkers = {
+	icon = privilege_promote_purbias
+	max_absolutism = -5
+	influence = 0.10
+	is_valid = {
+		OR = {
+			religion = naravami
+			religion = ordic
+			religion = maldan
+		}
+	}
+	can_select = {
+	}
+	on_granted = {
+		set_country_flag = berserkers_flag
+		custom_tooltip = BerserkersTooltip
+	}
+	penalties = {
+	}
+	benefits = {
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+estate_gishelar_land_rights = {
+	icon = privilege_grant_autonomy
+	land_share = 5
+	max_absolutism = -5
+	loyalty = 0.05
+	influence = 0.05
+	can_select = {
+	}
+	on_granted = {
+	}
+	penalties = {
+	}
+	benefits = {
+		governing_capacity = 100
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+estate_burghers_deforestation_permits = {
+	icon = privilege_dev_cost
+	max_absolutism = -10
+	influence = 0.1
+	loyalty = 0.05
+	is_valid = {
+		culture_group = Gotzlic
+		any_owned_province = {
+			OR = {
+				has_terrain = forest
+				has_terrain = woods
+			}
+		}
+	}
+	can_select = {
+		culture_group = Gotzlic
+		any_owned_province = {
+			OR = {
+				has_terrain = forest
+				has_terrain = woods
+			}
+		}
+	}
+	on_granted = {
+		add_prestige = -30
+		custom_tooltip = deforPermitsGtzAdd
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					OR = {
+						has_terrain = forest
+						has_terrain = woods
+					}
+					OR = {
+						region = gotzlic_region
+						region = east_gotzlic_region
+						region = south_gotzlic_region
+					}
+				}
+				add_province_modifier = {
+					name = gotzlic_deforestation_modifier
+					duration = -1
+				}
+			}
+		}
+	}
+	on_revoked = {
+		custom_tooltip = deforPermitsGtzRemove
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					has_province_modifier = gotzlic_deforestation_modifier
+				}
+				remove_province_modifier = gotzlic_deforestation_modifier
+			}
+		}
+	}
+	penalties = {
+	}
+	benefits = {
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 10
+			num_of_owned_provinces_with = {
+				value = 4
+				OR = {
+					has_terrain = woods
+					has_terrain = forest
+				}
+			}
 		}
 	}
 }

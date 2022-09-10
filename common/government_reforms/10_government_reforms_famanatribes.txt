@@ -43,11 +43,12 @@ desert_tribe = {
 		global_missionary_strength = -0.10
 		trade_efficiency = 0.20
 		land_maintenance_modifier = -0.50
-		province_warscore_cost = 10
+		province_warscore_cost = 100
 		core_creation = 100
 		build_cost = 100
-		development_cost = 100
+		development_cost = 1
 		diplomatic_upkeep = -4
+		diplomatic_annexation_cost = 100
 		global_tax_modifier = -0.20
 		production_efficiency = -0.5
 		cb_on_religious_enemies = yes
@@ -190,7 +191,8 @@ lukscha_tribe = {
 		may_recruit_female_generals = yes
 		female_advisor_chance = 0.60
 		monarch_lifespan = 0.15
-		ae_impact = -0.2
+		#ae_impact = -0.2
+		diplomatic_upkeep = -2
 	}
 
 	custom_attributes = {

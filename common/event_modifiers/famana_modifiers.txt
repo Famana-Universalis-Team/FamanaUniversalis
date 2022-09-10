@@ -135,7 +135,7 @@ morian_fervor = {
 }
 
 kachik_religious_autonomy = {
-    local_missionary_strength = -0.05
+    local_missionary_strength = -1.0
     local_production_efficiency = 0.10
     local_manpower_modifier = 0.10
 }
@@ -1080,6 +1080,7 @@ recent_migration = {
 }
 
 didnt_migrate = {
+    stability_cost_modifier = -0.10
 }
 
 nafan_fleet_power = {
@@ -1671,7 +1672,7 @@ destr_migtimer = {}
 
 destr_colonisation = {
     colonists = 1
-    global_colonial_growth = 25
+    global_colonial_growth = 40
     native_assimilation = 0.25
     native_uprising_chance = -0.50
     global_missionary_strength = 0.05
@@ -1781,7 +1782,7 @@ scientific_carvings = {
 	technology_cost = -0.05
 }
 
-presitigous_carvings = {
+prestigious_carvings = {
 	prestige_decay = -0.02
 }
 
@@ -2122,4 +2123,24 @@ lag_abolished_slavery = {
 lag_epic_westal_modifier = {
     max_absolutism = 20
     land_forcelimit_modifier = 0.10
+}
+
+rst_gold_source = {
+    monthly_gold_inflation_modifier = -0.50
+}
+
+rst_rostan_invasion = {
+    land_morale = 0.15
+}
+
+rst_great_king_of_gotzlica = {
+    all_power_cost = -0.05
+    church_loyalty_modifier = 0.10
+    nobles_loyalty_modifier = 0.10
+    burghers_loyalty_modifier = 0.10
+}
+
+gotzlic_colonist_modifier = {
+    colonists = 2
+    global_colonial_growth = 10
 }

@@ -1583,11 +1583,12 @@ country_event = {
 
     trigger = {
         tag = FAS
-        YAB = {
-            ai = yes
-        }
         5644 = {
             controlled_by = FAS
+        }
+        exists = YAB
+        YAB = {
+            ai = yes
         }
     }
 
@@ -3119,6 +3120,89 @@ country_event = { #Croatian is injured
         add_country_modifier = {
             name = fas_croatian_injured
             duration = 1825
+        }
+    }
+}
+
+country_event = { #Noglebim revolt
+    id = fashros.38
+    title = fashros.38.t
+    desc = fashros.38.d
+    picture = IMPALED_SOLDIERS_eventPicture
+    fire_only_once = yes
+
+    trigger = {
+        tag = FAS
+        any_owned_province = {
+            area = unnamed_area_47
+            NOT = {
+                religion = tonmo
+            }
+        }
+    }
+
+    mean_time_to_happen = {
+        months = 100
+    }
+
+    option = {
+        name = fashros.38.a
+        ai_chance = {
+            factor = 7
+        }
+        random_owned_province = {
+            limit = {
+                area = unnamed_area_47
+                NOT = {
+                    religion = tonmo
+                }
+            }
+            spawn_rebels = {
+                type = nationalist_rebels
+                size = 1
+            }
+        }
+        random_owned_province = {
+            limit = {
+                area = unnamed_area_47
+                NOT = {
+                    religion = tonmo
+                }
+            }
+            spawn_rebels = {
+                type = nationalist_rebels
+                size = 1
+            }
+        }
+        random_owned_province = {
+            limit = {
+                area = unnamed_area_47
+                NOT = {
+                    religion = tonmo
+                }
+            }
+            spawn_rebels = {
+                type = nationalist_rebels
+                size = 2
+            }
+        }
+        unnamed_area_47 = {
+            add_devastation	= 75
+            add_province_modifier = {
+                name = fas_noglebim_massacre
+                duration = 3650
+            }
+        }
+    }
+
+    option = {
+        name = fashros.38.b
+        ai_chance = {
+            factor = 1
+        }
+        add_prestige = -10
+        unnamed_area_47 = {
+            add_local_autonomy = 50
         }
     }
 }

@@ -128,11 +128,19 @@ desert_tribe_2 = {
 			}
         }
         effect = {
-			custom_tooltip = destr_debuff_counter
-			add_country_modifier = {
-				name = destr_development
-				duration = -1
-			}
+			#custom_tooltip = destr_debuff_counter
+			#add_country_modifier = {
+			#	name = destr_development
+			#	duration = -1
+			#}
+            add_treasury = 250
+            add_manpower = 10
+            capital_scope = {
+                add_province_modifier = {
+                    name = destribe_dev_capital
+                    duration = -1
+                }
+            }
         }
     }
 
@@ -143,7 +151,10 @@ desert_tribe_2 = {
 			total_development = 20
         }
         effect = {
-			remove_country_modifier = destr_development
+			#remove_country_modifier = destr_development
+            every_owned_province = {
+                remove_province_modifier = destribe_dev_capital
+            }
 			add_government_reform = tribal_despotism
 			swap_non_generic_missions = yes
 			set_country_flag = desert_tribe_achievement # add some achievement here maybe idk

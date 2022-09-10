@@ -209,7 +209,7 @@ fluDoctors = {
 
 failedHarvest = {
     local_unrest = 3
-    development_cost = 0.20
+    local_development_cost = 0.20
 }
 
 edolyssaCare = {
@@ -404,4 +404,31 @@ lag_respected_beliefs = {
 lag_fortified_highlands = {
     local_defensiveness = 0.10
     garrison_growth	= 0.25
+}
+
+rst_more_gold = {
+    local_gold_depletion_chance_modifier = -1.0
+}
+
+rst_new_capital = {
+    local_development_cost = -0.25
+    local_unrest = -5
+}
+
+rst_new_gold_mines = {
+    trade_goods_size = 1.0
+}
+
+gotzlic_deforestation_modifier = {
+    local_development_cost = -0.15
+}
+
+fas_noglebim_massacre = {
+    local_unrest = -100
+    local_missionary_strength = 0.10
+    local_autonomy = -0.25
+}
+
+destribe_dev_capital = {
+    local_development_cost = -1
 }

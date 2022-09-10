@@ -615,8 +615,25 @@ country_event = {
 	fire_only_once = yes
 
     trigger = {
-        tag = RST
-        is_year = 300
+        OR = {
+            has_country_flag = rostaCanGetEvent
+            AND = {
+                owns = 6597
+                is_year = 300
+                NOT = {
+                    OR = {
+                        owns = 6596
+                        owns = 6589
+                        owns = 6579
+                        owns = 6588
+                    }
+                }
+            }
+        }
+    }
+
+    immediate = {
+        set_country_flag = rostaGotEvent
     }
 
     mean_time_to_happen = {
@@ -631,16 +648,19 @@ country_event = {
 				is_empty = yes
 			}
 			create_colony = 1000
-			cede_province = RST
-			add_core = RST
+			cede_province = ROOT
+			add_core = ROOT
 		}
-        nizoora_area = {
-            add_permanent_claim = RST
+        country_event = {
+            id = gotzlica.11
         }
-        hidden_effect = {
-            RST = {
-                country_event = {
-                    id = gotzlica.11
+        if = {
+            limit = {
+                tag = RST
+            }
+            hidden_effect = {
+                nizoora_area = {
+                    add_permanent_claim = ROOT
                 }
             }
         }
@@ -1437,8 +1457,11 @@ country_event = {
 
     trigger = {
         controls = 6643
+        NOT = {
+            owns = 6643
+        }
         6643 = {
-            is_empty = no
+            is_owned_by = NEN
         }
         NOT = {
             tag = NEN

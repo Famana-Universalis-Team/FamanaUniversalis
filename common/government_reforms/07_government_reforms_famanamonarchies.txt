@@ -142,6 +142,7 @@ ordican_confederation_reform = {
 		tolerance_heathen = 3
 		global_manpower_modifier = -0.25
 		mercenary_cost = -0.20
+		clans_influence_modifier = 0.05
 	}
 	potential = {
 		tag = ORC

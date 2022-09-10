@@ -316,9 +316,6 @@ country_event = {
     trigger = {
         religion = tonmo
     }
-	mean_time_to_happen = {
-		months = 5
-	}
 
     option = {
         name = tonmo.5.a
@@ -338,9 +335,6 @@ country_event = {
     trigger = {
         religion = tonmo
     }
-	mean_time_to_happen = {
-		months = 4
-	}
 
     option = {
         name = tonmo.6.a
@@ -374,9 +368,6 @@ country_event = {
         }
         religion = tonmo
     }
-	mean_time_to_happen = {
-		months = 8
-	}
 
     option = {
         name = tonmo.7.a #amimal blood
@@ -415,9 +406,6 @@ country_event = {
         dip = 1
         mil = 1
     }
-	mean_time_to_happen = {
-		months = 8
-	}
 
     immediate = {
         set_ruler_flag = purified
@@ -494,9 +482,6 @@ country_event = {
     trigger = {
         religion = tonmo
     }
-	mean_time_to_happen = {
-		months = 8
-	}
 
     option = {
         name = tonmo.10.a

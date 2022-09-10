@@ -19,16 +19,18 @@ country_event = {
 			if = { #1
 				limit = {
 					any_empty_neighbor_province = {
-						is_empty = yes
-						NOT = { has_province_flag = chosen_migarate }
+						#is_empty = yes
+						has_discovered = ROOT
+						NOT = { has_province_flag = chosen_migrate }
 					}
 				}
 				random_empty_neighbor_province = {
 					limit = {
-						NOT = { has_province_flag = chosen_migarate }
+						NOT = { has_province_flag = chosen_migrate }
+						has_discovered = ROOT
 					}
 					save_event_target_as = migration_province_1
-					set_province_flag = chosen_migarate
+					set_province_flag = chosen_migrate
 				}
 				ROOT = { set_country_flag = prov1 }
 			}
@@ -36,17 +38,19 @@ country_event = {
 				limit = {
 					any_empty_neighbor_province = {
 						AND = {
-							is_empty = yes
-							NOT = { has_province_flag = chosen_migarate }
+							#is_empty = yes
+							has_discovered = ROOT
+							NOT = { has_province_flag = chosen_migrate }
 						}
 					}
 				}
 				random_empty_neighbor_province = {
 					limit = {
-						NOT = { has_province_flag = chosen_migarate }
+						NOT = { has_province_flag = chosen_migrate }
+						has_discovered = ROOT
 					}
 					save_event_target_as = migration_province_2
-					set_province_flag = chosen_migarate
+					set_province_flag = chosen_migrate
 				}
 				ROOT = { set_country_flag = prov2 }
 			}
@@ -54,29 +58,31 @@ country_event = {
 				limit = {
 					any_empty_neighbor_province = {
 						AND = {
-							is_empty = yes
-							NOT = { has_province_flag = chosen_migarate }
+							#is_empty = yes
+							has_discovered = ROOT
+							NOT = { has_province_flag = chosen_migrate }
 						}
 					}
 				}
 				random_empty_neighbor_province = {
 					limit = {
-						NOT = { has_province_flag = chosen_migarate }
+						NOT = { has_province_flag = chosen_migrate }
+						has_discovered = ROOT
 					}
 					save_event_target_as = migration_province_3
-					set_province_flag = chosen_migarate
+					set_province_flag = chosen_migrate
 				}
 				ROOT = { set_country_flag = prov3 }
 			}
 		}
 		event_target:migration_province_1 = {
-			clr_province_flag = chosen_migarate
+			clr_province_flag = chosen_migrate
 		}
 		event_target:migration_province_2 = {
-			clr_province_flag = chosen_migarate
+			clr_province_flag = chosen_migrate
 		}
 		event_target:migration_province_3 = {
-			clr_province_flag = chosen_migarate
+			clr_province_flag = chosen_migrate
 		}
 	}
 
@@ -84,7 +90,16 @@ country_event = {
 		name = bosisi.1.a
 		ai_chance = { factor = 0 } #i doubt the ai will get this far down the tree
 		trigger = {
-			has_country_flag = allowed_to_not_migrate
+			OR = {
+				has_country_flag = allowed_to_not_migrate
+				NOT = {
+					OR = {
+						has_country_flag = prov1
+						has_country_flag = prov2
+						has_country_flag = prov3
+					}
+				}
+			}
 		}
 		if = {
 			limit = {
@@ -127,6 +142,7 @@ country_event = {
 
 	option = { #Migrate to choice 1
 		name = bosisi.1.b
+		goto = migration_province_1
 		ai_chance = {
 			factor = 1
 			modifier = {
@@ -174,6 +190,7 @@ country_event = {
 	}
 	option = { #Migrate to choice 2
 		name = bosisi.1.c
+		goto = migration_province_2
 		ai_chance = {
 			factor = 1
 			modifier = {
@@ -221,6 +238,7 @@ country_event = {
 	}
 	option = { #Migrate to choice 3
 		name = bosisi.1.e
+		goto = migration_province_3
 		ai_chance = {
 			factor = 1
 			modifier = {

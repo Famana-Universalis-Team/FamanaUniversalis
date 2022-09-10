@@ -796,19 +796,17 @@ maky_region = {
 	}
 }
 
-urobitman_region = {
+western_great_desert_region = {
 	areas = {
 		aqlqyl_area
-	}
-}
-
-amandar_region = {
-	areas ={
 		tretat_area
 		qalkabh_area
+		jiri_area
+		teshtelpos_area
+		bitaman_rim
+		bareq_area
 	}
 }
-
 
 
 

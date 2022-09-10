@@ -100,7 +100,9 @@ country_event = { #Cosmetic Rename
 
     option = { #Fenika
 		name = restema.2.d
-        primary_culture = Feniki
+        trigger = {
+            primary_culture = Feniki
+        }
 		ai_chance = {
 			factor = 0
 		}

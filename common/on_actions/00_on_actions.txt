@@ -53,6 +53,10 @@ on_startup = {
 				which = OrdicanFuckups
 				value = 0
 			}
+			change_estate_land_share = {
+				estate = estate_clans
+				share = 5.0
+			}
 		}
 		if = {
 			limit = {

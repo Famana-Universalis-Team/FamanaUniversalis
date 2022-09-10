@@ -1,187 +1,187 @@
-country_decisions = {
-	see_council = {
-		major = yes
-		potential = {
-			religion_group = xalian_group
-			has_global_flag = Council_of_Xon
-		}
-		allow = {
-			custom_trigger_tooltip = {
-				tooltip = SEE_COUNCIL
-			}
-			hidden_trigger = {
-				always = no
-			}
-		}
-		effect = {
-			custom_tooltip = SEE_COUNCIL
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	shirian_vote = {
-		major = yes
-		potential = {
-			religion_group = xalian_group
-			has_global_flag = Council_of_Xon
-		}
-		allow = {
-			custom_trigger_tooltip = {
-				tooltip = SHIR_REASONS
-			}
-			hidden_trigger = {
-				tag = event_target:shirian_representative
-			}
-		}
-		effect = {
-			if = {
-				limit = {
-					event_target:conductor_of_council_xon = {
-						has_country_flag = shirian_player_vote
-					}
-				}
-				clr_country_flag = shirian_player_vote
-				change_variable = {
-					which = ShirXonReasonsPos
-					value = -1000
-				}
-			}
-			else = {
-				event_target:conductor_of_council_xon = {
-					set_country_flag = shirian_player_vote
-				}
-				change_variable = {
-					which = ShirXonReasonsPos
-					value = 1000
-				}
-			}
-		}
-		ai_will_do = {
-			factor = 0
-		}
-	}
-	morian_vote = {
-		major = yes
-		potential = {
-			religion_group = xalian_group
-			has_global_flag = Council_of_Xon
-		}
-		allow = {
-			custom_trigger_tooltip = {
-				tooltip = MOR_REASONS
-			}
-			hidden_trigger = {
-				tag = event_target:morian_representative
-			}
-		}
-		effect = {
-			if = {
-				limit = {
-					event_target:conductor_of_council_xon = {
-						has_country_flag = morian_player_vote
-					}
-				}
-				clr_country_flag = morian_player_vote
-				change_variable = {
-					which = MorXonReasonsPos
-					value = -1000
-				}
-			}
-			else = {
-				event_target:conductor_of_council_xon = {
-					set_country_flag = morian_player_vote
-				}
-				change_variable = {
-					which = MorXonReasonsPos
-					value = 1000
-				}
-			}
-		}
-		ai_will_do = {
-			factor = 0
-		}
-	}
-	delkian_vote = {
-		major = yes
-		potential = {
-			religion_group = xalian_group
-			has_global_flag = Council_of_Xon
-		}
-		allow = {
-			custom_trigger_tooltip = {
-				tooltip = DELK_REASONS
-			}
-			hidden_trigger = {
-				tag = event_target:delkian_representative
-			}
-		}
-		effect = {
-			if = {
-				limit = {
-					event_target:conductor_of_council_xon = {
-						has_country_flag = delkian_player_vote
-					}
-				}
-				clr_country_flag = delkian_player_vote
-				change_variable = {
-					which = DelkXonReasonsPos
-					value = -1000
-				}
-			}
-			else = {
-				event_target:conductor_of_council_xon = {
-					set_country_flag = delkian_player_vote
-				}
-				change_variable = {
-					which = DelkXonReasonsPos
-					value = 1000
-				}
-			}
-		}
-		ai_will_do = {
-			factor = 0
-		}
-	}
-	vinian_vote = {
-		major = yes
-		potential = {
-			religion_group = xalian_group
-			has_global_flag = Council_of_Xon
-		}
-		allow = {
-			custom_trigger_tooltip = {
-				tooltip = VIN_REASONS
-			}
-			hidden_trigger = {
-				tag = event_target:vinian_representative
-			}
-		}
-		effect = {
-			if = {
-				limit = {
-					event_target:conductor_of_council_xon = {
-						has_country_flag = shirian_player_vote
-					}
-				}
-				clr_country_flag = vinian_player_vote
-				change_variable = {
-					which = VinXonReasonsPos
-					value = -1000
-				}
-			}
-			else = {
-				event_target:conductor_of_council_xon = {
-					set_country_flag = vinian_player_vote
-				}
-				change_variable = {
-					which = VinXonReasonsPos
-					value = 1000
-				}
-			}
-		}
-		ai_will_do = {
-			factor = 0
-		}
-	}
-}
+#country_decisions = {
+	#see_council = {
+	#	major = yes
+	#	potential = {
+	#		religion_group = xalian_group
+	#		has_global_flag = Council_of_Xon
+	#	}
+	#	allow = {
+	#		custom_trigger_tooltip = {
+	#			tooltip = SEE_COUNCIL
+	#		}
+	#		hidden_trigger = {
+	#			always = no
+	#		}
+	#	}
+	#	effect = {
+	#		custom_tooltip = SEE_COUNCIL
+	#	}
+	#	ai_will_do = {
+	#		factor = 1
+	#	}
+	#}
+	#shirian_vote = {
+	#	major = yes
+	#	potential = {
+	#		religion_group = xalian_group
+	#		has_global_flag = Council_of_Xon
+	#	}
+	#	allow = {
+	#		custom_trigger_tooltip = {
+	#			tooltip = SHIR_REASONS
+	#		}
+	#		hidden_trigger = {
+	#			tag = event_target:shirian_representative
+	#		}
+	#	}
+	#	effect = {
+	#		if = {
+	#			limit = {
+	#				event_target:conductor_of_council_xon = {
+	#					has_country_flag = shirian_player_vote
+	#				}
+	#			}
+	#			clr_country_flag = shirian_player_vote
+	#			change_variable = {
+	#				which = ShirXonReasonsPos
+	#				value = -1000
+	#			}
+	#		}
+	#		else = {
+	#			event_target:conductor_of_council_xon = {
+	#				set_country_flag = shirian_player_vote
+	#			}
+	#			change_variable = {
+	#				which = ShirXonReasonsPos
+	#				value = 1000
+	#			}
+	#		}
+	#	}
+	#	ai_will_do = {
+	#		factor = 0
+	#	}
+	#}
+	#morian_vote = {
+	#	major = yes
+	#	potential = {
+	#		religion_group = xalian_group
+	#		has_global_flag = Council_of_Xon
+	#	}
+	#	allow = {
+	#		custom_trigger_tooltip = {
+	#			tooltip = MOR_REASONS
+	#		}
+	#		hidden_trigger = {
+	#			tag = event_target:morian_representative
+	#		}
+	#	}
+	#	effect = {
+	#		if = {
+	#			limit = {
+	#				event_target:conductor_of_council_xon = {
+	#					has_country_flag = morian_player_vote
+	#				}
+	#			}
+	#			clr_country_flag = morian_player_vote
+	#			change_variable = {
+	#				which = MorXonReasonsPos
+	#				value = -1000
+	#			}
+	#		}
+	#		else = {
+	#			event_target:conductor_of_council_xon = {
+	#				set_country_flag = morian_player_vote
+	#			}
+	#			change_variable = {
+	#				which = MorXonReasonsPos
+	#				value = 1000
+	#			}
+	#		}
+	#	}
+	#	ai_will_do = {
+	#		factor = 0
+	#	}
+	#}
+	#delkian_vote = {
+	#	major = yes
+	#	potential = {
+	#		religion_group = xalian_group
+	#		has_global_flag = Council_of_Xon
+	#	}
+	#	allow = {
+	#		custom_trigger_tooltip = {
+	#			tooltip = DELK_REASONS
+	#		}
+	#		hidden_trigger = {
+	#			tag = event_target:delkian_representative
+	#		}
+	#	}
+	#	effect = {
+	#		if = {
+	#			limit = {
+	#				event_target:conductor_of_council_xon = {
+	#					has_country_flag = delkian_player_vote
+	#				}
+	#			}
+	#			clr_country_flag = delkian_player_vote
+	#			change_variable = {
+	#				which = DelkXonReasonsPos
+	#				value = -1000
+	#			}
+	#		}
+	#		else = {
+	#			event_target:conductor_of_council_xon = {
+	#				set_country_flag = delkian_player_vote
+	#			}
+	#			change_variable = {
+	#				which = DelkXonReasonsPos
+	#				value = 1000
+	#			}
+	#		}
+	#	}
+	#	ai_will_do = {
+	#		factor = 0
+	#	}
+	#}
+	#vinian_vote = {
+	#	major = yes
+	#	potential = {
+	#		religion_group = xalian_group
+	#		has_global_flag = Council_of_Xon
+	#	}
+	#	allow = {
+	#		custom_trigger_tooltip = {
+	#			tooltip = VIN_REASONS
+	#		}
+	#		hidden_trigger = {
+	#			tag = event_target:vinian_representative
+	#		}
+	#	}
+	#	effect = {
+	#		if = {
+	#			limit = {
+	#				event_target:conductor_of_council_xon = {
+	#					has_country_flag = shirian_player_vote
+	#				}
+	#			}
+	#			clr_country_flag = vinian_player_vote
+	#			change_variable = {
+	#				which = VinXonReasonsPos
+	#				value = -1000
+	#			}
+	#		}
+	#		else = {
+	#			event_target:conductor_of_council_xon = {
+	#				set_country_flag = vinian_player_vote
+	#			}
+	#			change_variable = {
+	#				which = VinXonReasonsPos
+	#				value = 1000
+	#			}
+	#		}
+	#	}
+	#	ai_will_do = {
+	#		factor = 0
+	#	}
+	#}
+#}

@@ -205,7 +205,7 @@ RDU_ideas = {
     }
     
     bonus = {
-        war_exhaustion = -0.05
+        colonists = 1
     }    
 
     trigger = {
@@ -313,5 +313,44 @@ QUB_ideas = {
     }
     qub_7 = {
 		years_of_nationalism = -5
+    }
+}
+
+GTZ_ideas = {
+    start = {
+        global_tax_modifier = 0.10
+        interest = -1
+    }
+    
+    bonus = {
+        global_trade_goods_size_modifier = 0.20
+    }    
+
+    trigger = {
+        tag = GTZ
+    }
+    free = yes
+    
+    gtz_1 = {
+        tolerance_heretic = 2
+    }
+    gtz_2 = {
+        land_morale = 0.15
+    }
+    gtz_3 = {
+		stability_cost_modifier = -0.10
+    }
+    gtz_4 = {
+        siege_ability = 0.10
+		fire_damage	= 0.05
+    }
+    gtz_5 = {
+		prestige = 1
+    }
+    gtz_6 = {
+        advisor_pool = 1
+    }
+    gtz_7 = {
+        num_accepted_cultures = 2
     }
 }

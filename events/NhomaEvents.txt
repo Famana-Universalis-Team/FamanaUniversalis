@@ -286,10 +286,12 @@ country_event = {
 
     option = { #horde
         name = nhoma.8.b
-        ai_chance = { factor = 1 }
-        modifier = {
-            factor = 0
-            tag = ANM
+        ai_chance = {
+            factor = 1
+            modifier = {
+                factor = 0
+                tag = ANM
+            }
         }
         change_government = tribal
         add_government_reform = steppe_horde
