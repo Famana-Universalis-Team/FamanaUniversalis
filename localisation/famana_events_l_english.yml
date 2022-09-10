@@ -1349,7 +1349,7 @@
  bosisi.1.t:0 "Migration in the Great Desert"
  bosisi.1.d:0 "The Great Desert is one of the harshest environments known to man. The beating sun dries up every drop of water and cove of life. Despite this, we still live in our tribes. However, as water runs out, we must chase new lands and tap into new underwater reservoirs in a constant dance."
  bosisi.1.a:0 "We are staying here, no matter the cost."
- GREATDESERT_REFUSE_MIGRATE:0 "If, however, our capital doesn't have the Great Desert modifier, we will gain 1 random point of development."
+ GREATDESERT_REFUSE_MIGRATE:0 "If [Root.Capital.GetName] does NOT have '§YThe Great Desert§!', [Root.Capital.GetName] will gain §G1§! random point of development."
  bosisi.1.b:0 "Hmm... Maybe [migration_province_1.GetName]."
  bosisi.1.c:0 "[migration_province_2.GetName] looks good."
  bosisi.1.e:0 "We should go towards [migration_province_3.GetName]."
