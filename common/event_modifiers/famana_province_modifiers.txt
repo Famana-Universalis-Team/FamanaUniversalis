@@ -428,3 +428,7 @@ fas_noglebim_massacre = {
     local_missionary_strength = 0.10
     local_autonomy = -0.25
 }
+
+destribe_dev_capital = {
+    local_development_cost = -1
+}
