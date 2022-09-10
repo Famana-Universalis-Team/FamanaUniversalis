@@ -209,7 +209,7 @@ fluDoctors = {
 
 failedHarvest = {
     local_unrest = 3
-    development_cost = 0.20
+    local_development_cost = 0.20
 }
 
 edolyssaCare = {
@@ -411,7 +411,7 @@ rst_more_gold = {
 }
 
 rst_new_capital = {
-    local_development_cost = -0.30
+    local_development_cost = -0.25
     local_unrest = -5
 }
 

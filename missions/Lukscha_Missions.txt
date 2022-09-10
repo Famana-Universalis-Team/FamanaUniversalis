@@ -179,8 +179,10 @@ lks_1 = {
         icon = mission_amur_acquisition
         required_missions = { lks_conquer_rduma }
         trigger = {
-            6532 = {
-                owned_by = ROOT
+            NOT = {
+                6532 = {
+                    is_empty = yes
+                }
             }
             if = {
                 limit = {
