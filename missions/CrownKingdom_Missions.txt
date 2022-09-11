@@ -278,7 +278,7 @@ tck_slot_1 = {
 			}
 			NOT = {
 				any_country = {
-					dynasty = "Accaci"
+					dynasty = "Accati"
 				}
 			}
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
@@ -1058,10 +1058,65 @@ tck_slot_3 = {
 		required_missions = { tck_towards_the_delta tck_provencial_governors }
 		position = 10
 		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 75
+				superregion = oppia_superregion
+			}
+			legitimacy = 100
         }
 		effect = {
+			country_event = {
+				id = oppia.34
+			}
+			every_subject_country = {
+				ROOT = {
+					inherit = PREV
+				}
+			}
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			restore_country_name = yes
+			change_tag = OPP
+			5066 = {
+				move_capital_effect = yes
+			}
+			add_government_reform = oppian_empire_gov
+			if = {
+				limit = {
+					NOT = { government_rank = 3 }
+				}
+				set_government_rank = 3
+			}
+			oppia_superregion = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					is_empty = no
+				}
+				add_core = OPP
+			}
+			oppia_superregion = {
+				limit = {
+					is_empty = yes
+				}
+				add_claim = OPP
+			}
+			laglon_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = OPP
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 100
+			set_capital = 5066
 		}
 		provinces_to_highlight = {
+			superregion = oppia_superregion
 		}
 	}
 	tck_oppian_hegemony = {
@@ -1069,10 +1124,49 @@ tck_slot_3 = {
 		required_missions = { tck_coronation }
 		position = 12
 		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = owns_oppia_tooltip
+				all_province = {
+					if = {
+						limit = {
+							superregion = oppia_superregion
+						}
+						OR = {
+							is_empty = yes
+							owned_by = ROOT
+						}
+					}
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = owns_laglon_tooltip
+				all_province = {
+					if = {
+						limit = {
+							region = laglon_region
+						}
+						OR = {
+							is_empty = yes
+							owned_by = ROOT
+						}
+					}
+				}
+			}
         }
 		effect = {
+			add_country_modifier = {
+				name = tck_oppian_hegemony
+				duration = -1
+			}
+			eastern_desert_region = {
+				add_permanent_claim = ROOT
+			}
 		}
 		provinces_to_highlight = {
+			OR = {
+				superregion = oppia_superregion
+				region = laglon_region
+			}
 		}
 	}
 }
@@ -1090,8 +1184,17 @@ tck_slot_4 = {
 		required_missions = { tck_build_up_river }
 		position = 3
 		trigger = {
+			has_mil_advisor_2 = yes
+			has_leader_with = {
+				total_pips = 6
+			}
         }
 		effect = {
+			add_country_modifier = {
+				duration = 36500
+				name = tck_crown_army
+			}
+			add_manpower = 10
 		}
 		provinces_to_highlight = {
 		}
@@ -1101,8 +1204,22 @@ tck_slot_4 = {
 		required_missions = { tck_crown_army }
 		position = 4
 		trigger = {
+			num_of_artillery = 10
+			has_leader_with = {
+				siege = 2
+			}
+			any_province = {
+				AND = {
+					sieged_by = ROOT
+					has_fort_building_trigger = yes
+				}
+			}
         }
 		effect = {
+			add_country_modifier = {
+				name = tck_oppiatis
+				duration = -1
+			}
 		}
 		provinces_to_highlight = {
 		}
@@ -1112,8 +1229,29 @@ tck_slot_4 = {
 		required_missions = { tck_oppian_siege_weaponry tck_rebuild_temples }
 		position = 5
 		trigger = {
+			land_forcelimit = 100
+			army_size_percentage = 0.75
+			artillery_fraction = 0.20
+			num_of_owned_provinces_with = {
+				value = 10
+				OR = {
+					has_building = barracks
+					has_building = training_fields
+					has_building = regimental_camp
+					has_building = conscription_center
+				}
+			}
         }
 		effect = {
+			create_general = {
+				tradition = 100
+			}
+			custom_tooltip = tck_oppian_legion
+			set_country_flag = TCK_legion
+			add_country_modifier = {
+				name = tck_new_model_army
+				duration = -1
+			}
 		}
 		provinces_to_highlight = {
 		}
@@ -1123,8 +1261,32 @@ tck_slot_4 = {
 		required_missions = { } #None
 		position = 6
 		trigger = {
+			num_of_allies = 3
+			diplomatic_reputation = 5
         }
 		effect = {
+			define_advisor = {
+				skill = 2
+				type = treasurer
+				discount = yes
+			}
+			every_country = {
+				limit = {
+					AND = {
+						NOT = { has_opinion = {
+							value = 10
+							who = ROOT
+						} }
+						capital_scope = {
+							superregion = oppia_superregion
+						}
+					}
+				}
+				add_opinion = {
+					who = ROOT
+					modifier = sar_diplomacy
+				}
+			}
 		}
 		provinces_to_highlight = {
 		}
@@ -1134,6 +1296,41 @@ tck_slot_4 = {
 		required_missions = { tck_finest_diplomats }
 		position = 8
 		trigger = {
+			if = {
+				limit = {
+					dynasty = "Sar"
+				}
+				AND = {
+					crown_land_share = 25
+					NOT = {
+						has_estate_privilege = estate_nobles_supremacy_over_crown
+					}
+					NOT = {
+						estate_influence = {
+							estate = estate_church
+							influence = 50
+						}
+					}
+					NOT = {
+						estate_influence = {
+							estate = estate_nobles
+							influence = 50
+						}
+					}
+					NOT = {
+						estate_influence = {
+							estate = estate_burghers
+							influence = 50
+						}
+					}
+				}
+			}
+			else = {
+				custom_trigger_tooltip = {
+					tooltip = FOCUS_BYPASSED
+					always = yes
+				}
+			}
         }
 		effect = {
 		}

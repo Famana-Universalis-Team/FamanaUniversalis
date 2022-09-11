@@ -94,3 +94,8 @@ looted_the_high_temple = {
 	opinion = -60
 	yearly_decay = 2
 }
+
+sar_diplomacy = {
+	opinion = 50
+	yearly_decay = 0.5
+}

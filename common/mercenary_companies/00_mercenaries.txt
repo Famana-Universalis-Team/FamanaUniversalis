@@ -1590,3 +1590,22 @@ merc_brulan_brawlers = {
 		land_morale = -0.10
 	}
 }
+
+# Oppian Legion
+merc_oppian_legion = {
+    regiments_per_development = 0.10
+    home_province = 5208 # brula
+	cavalry_weight = 0.10
+	cavalry_cap = 12
+	sprites = { muslimgfx_sprite_pack }
+    trigger = {
+		custom_trigger_tooltip = {
+			tooltip = tck_oppian_legion_req
+			has_country_flag = TCK_legion
+		}
+	}
+	modifier = {
+		shock_damage_received = -0.10
+		land_morale = 0.10
+	}
+}

@@ -2144,3 +2144,24 @@ gotzlic_colonist_modifier = {
     colonists = 2
     global_colonial_growth = 10
 }
+
+tck_oppian_hegemony = {
+    same_culture_advisor_cost = -0.10
+    manpower_in_true_faith_provinces = 0.15
+}
+
+tck_crown_army = {
+    land_forcelimit_modifier = 0.10
+    prestige_from_land = 0.25
+}
+
+tck_oppiatis = {
+    siege_ability = 0.10
+    leader_siege = 1
+    artillery_cost = -0.25
+}
+
+tck_new_model_army = {
+    mil_tech_cost_modifier = -0.10
+    drill_gain_modifier = 0.15
+}

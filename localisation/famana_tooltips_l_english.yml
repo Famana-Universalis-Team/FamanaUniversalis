@@ -433,3 +433,7 @@
  deforPermitsGtzAdd: "Every owned province in the §YWest Gotzlica§!, §YEast Gotzlica§! or §YSouth Gotzlica§! Regions with §YWoods§! or §YForest§! terrain gets '§YDeforestation Charter§!' until the end of the game, giving the following effects:\nLocal Development Cost: §G-15.0%§!"
  deforPermitsGtzRemove: "Remove '§YDeforestation Charter§!' from every owned province."
  tckAlakim: "Begins the §YDescending the Alakim§! event chain."
+ owns_oppia_tooltip: "§YOppia§! Subcontinent:\n  All colonised provinces are owned by §Y[Root.GetName]§!."
+ owns_laglon_tooltip: "§YLaglon§! Region:\n  All colonised provinces are owned by §Y[Root.GetName]§!."
+ tck_oppian_legion: "Unlocks the §YOppian Legion§! Mercenary Company."
+ tck_oppian_legion_req: "Completed Mission §YNew Model Army§!"
