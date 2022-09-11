@@ -1700,7 +1700,10 @@ country_decisions = {
 					#ironman = yes
 					start_date = 212.6.6
 					NOT = { num_of_custom_nations = 1 }
-					tag = LAG
+					OR = {
+						tag = LAG
+						was_tag = LAG
+					}
 				}
 				has_country_flag = debug_achievements
 			}

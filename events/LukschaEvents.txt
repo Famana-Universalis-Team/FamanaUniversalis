@@ -299,6 +299,44 @@ country_event = { #First expansion (mission fired)
 			}
 			cede_province = LKS
 			add_core = LKS
+			hidden_effect = {
+				random = {
+					chance = 50
+					add_base_tax = 1
+				}
+				random = {
+					chance = 50
+					add_base_production = 1
+				}
+				random = {
+					chance = 50
+					add_base_manpower = 1
+				}
+				random = {
+					chance = 5
+					change_trade_goods = silk
+				}
+				random = {
+					chance = 5
+					change_trade_goods = copper
+				}
+				random = {
+					chance = 8
+					change_trade_goods = incense
+				}
+				random = {
+					chance = 1
+					change_trade_goods = gold
+				}
+				random = {
+					chance = 4
+					change_trade_goods = gems
+				}
+				random = {
+					chance = 25
+					change_trade_goods = iron
+				}
+			}
 		}
     }
 }
@@ -347,6 +385,44 @@ country_event = { #Second expansion
 			}
 			cede_province = LKS
 			add_core = LKS
+			hidden_effect = {
+				random = {
+					chance = 50
+					add_base_tax = 1
+				}
+				random = {
+					chance = 50
+					add_base_production = 1
+				}
+				random = {
+					chance = 50
+					add_base_manpower = 1
+				}
+				random = {
+					chance = 5
+					change_trade_goods = silk
+				}
+				random = {
+					chance = 5
+					change_trade_goods = copper
+				}
+				random = {
+					chance = 8
+					change_trade_goods = incense
+				}
+				random = {
+					chance = 1
+					change_trade_goods = gold
+				}
+				random = {
+					chance = 4
+					change_trade_goods = gems
+				}
+				random = {
+					chance = 25
+					change_trade_goods = iron
+				}
+			}
 		}
     }
 }
@@ -409,6 +485,44 @@ country_event = { #Gotzlic attack
 			}
 			cede_province = LKS
 			add_core = LKS
+			hidden_effect = {
+				random = {
+					chance = 50
+					add_base_tax = 1
+				}
+				random = {
+					chance = 50
+					add_base_production = 1
+				}
+				random = {
+					chance = 50
+					add_base_manpower = 1
+				}
+				random = {
+					chance = 5
+					change_trade_goods = silk
+				}
+				random = {
+					chance = 5
+					change_trade_goods = copper
+				}
+				random = {
+					chance = 8
+					change_trade_goods = incense
+				}
+				random = {
+					chance = 1
+					change_trade_goods = gold
+				}
+				random = {
+					chance = 4
+					change_trade_goods = gems
+				}
+				random = {
+					chance = 25
+					change_trade_goods = iron
+				}
+			}
 		}
     }
 }
@@ -456,6 +570,44 @@ country_event = { #Rduma if it didnt migrate
 			}
 			cede_province = LKS
 			add_core = LKS
+			hidden_effect = {
+				random = {
+					chance = 50
+					add_base_tax = 1
+				}
+				random = {
+					chance = 50
+					add_base_production = 1
+				}
+				random = {
+					chance = 50
+					add_base_manpower = 1
+				}
+				random = {
+					chance = 5
+					change_trade_goods = silk
+				}
+				random = {
+					chance = 5
+					change_trade_goods = copper
+				}
+				random = {
+					chance = 8
+					change_trade_goods = incense
+				}
+				random = {
+					chance = 1
+					change_trade_goods = gold
+				}
+				random = {
+					chance = 4
+					change_trade_goods = gems
+				}
+				random = {
+					chance = 25
+					change_trade_goods = iron
+				}
+			}
 		}
     }
 }

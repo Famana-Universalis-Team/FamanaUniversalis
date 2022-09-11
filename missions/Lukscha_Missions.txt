@@ -108,6 +108,17 @@ lks_1 = {
                 name = lks_population_boom
                 duration = 5475
             }
+            custom_tooltip = lukschaGetDev
+            hidden_effect = {
+                every_owned_province = {
+                    limit = {
+                        region = lukscha_region
+                    }
+                    add_base_manpower = 1
+                    add_base_production = 1
+                    add_base_tax = 1
+                }
+            }
             country_event = {
                 id = lukscham.7
             }

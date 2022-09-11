@@ -1895,7 +1895,10 @@ country_decisions = {
 		potential = {
 			AND = {
 				NOT = { exists = RES }
-				culture = Feniki
+				OR = {
+					culture = Feniki
+					tag = LAG
+				}
 				was_never_end_game_tag_trigger = yes
 			}
 		}
@@ -1914,6 +1917,7 @@ country_decisions = {
 		allow = {
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
+			culture = Feniki
 			owns_core_province = 5274
 			owns_core_province = 5277
 			owns_core_province = 5028

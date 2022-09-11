@@ -1345,9 +1345,12 @@ lag_5 = {
                 value = 20
                 has_port = yes
             }
-            OR = {
-                dock = 10
-                drydock = 5
+            num_of_owned_provinces_with = {
+                value = 10
+                OR = {
+                    has_building = dock
+                    has_building = drydock
+                }
             }
         }
         effect = {
@@ -1441,7 +1444,7 @@ lag_5 = {
         required_missions = { lag_the_unsinkable_fleet }
         position = 6
         trigger = {
-            navy_tradition = 60
+            navy_tradition = 45
             num_of_admirals = 2
             advisor = naval_reformer
         }
