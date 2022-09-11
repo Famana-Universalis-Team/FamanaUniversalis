@@ -805,36 +805,30 @@ western_great_desert_region = {
 		teshtelpos_area
 		bitaman_rim
 		bareq_area
+		tamja_area
 	}
 }
 
+ekelo_region = {
+	areas = {
+		ekela_area
+		kloyo_area
+		tate_tame_area
+		kankra_area
+		narq_area
+		oblogia_area
+	}
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+thoron_region = {
+	areas = {
+		tamja_area
+		amandar_area
+		gidjifnor_area
+		vorast_area
+		kurkhan_area
+	}
+}
 
 
 

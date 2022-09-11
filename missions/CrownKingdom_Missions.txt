@@ -1016,13 +1016,33 @@ tck_slot_3 = {
 		required_missions = { tck_restore_elorak }
 		position = 8
 		trigger = {
+			5240 = {
+				OR = {
+					owned_by = ROOT
+					owner = {
+						is_subject_of = ROOT
+					}
+				}
+			}
+			has_leader_with = {
+				general = yes
+				manuever = 2
+				total_pips = 3
+			}
+			manpower = 1
+			years_of_income = 0.5
         }
 		effect = {
+			add_manpower = -1
+			add_years_of_income = -0.5
+			custom_tooltip = tckAlakim
+			set_country_flag = DescendingAlakim1
 		}
 		provinces_to_highlight = {
+			province_id = 5240
 		}
 	}
-	tck_sea_of_ejeko = {
+	tck_sea_of_ekelo = {
 		icon = mission_iberian_conquistador
 		required_missions = { tck_alakim_river }
 		position = 8

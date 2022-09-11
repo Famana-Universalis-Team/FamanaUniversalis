@@ -1362,4 +1362,259 @@ country_event = {
 	}
 }
 
+#Descending Alakim 1
+country_event = {
+	id = oppia.28
+	title = oppia.28.t
+	desc = oppia.28.d
+	picture = CONQUEST_eventPicture
+	fire_only_once = yes
+	
+	trigger = {
+		has_country_flag = DescendingAlakim1
+	}
+
+	mean_time_to_happen = {
+		years = 1
+	}
+
+	immediate = {
+	}
+	
+	option = {
+		name = oppia.28.a
+		ai_chance = {
+			factor = 1
+		}
+		5240 = {
+			owner = {
+				add_core = 7975
+				7975 = {
+					cede_province = PREV
+				}
+			}
+		}
+		7975 = {
+			set_local_autonomy = 100
+		}
+		clr_country_flag = DescendingAlakim1
+		set_country_flag = DescendingAlakim2
+	}
+}
+
+#Descending Alakim 2
+country_event = {
+	id = oppia.29
+	title = oppia.29.t
+	desc = oppia.29.d
+	picture = HUSSARS_eventPicture
+	fire_only_once = yes
+	
+	trigger = {
+		has_country_flag = DescendingAlakim2
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	immediate = {
+	}
+	
+	option = {
+		name = oppia.29.a
+		ai_chance = {
+			factor = 1
+		}
+		7975 = {
+			owner = {
+				add_core = 7974
+				7974 = {
+					cede_province = PREV
+				}
+				add_core = 7973
+				7973 = {
+					cede_province = PREV
+				}
+			}
+		}
+		7973 = {
+			set_local_autonomy = 100
+		}
+		7974 = {
+			set_local_autonomy = 100
+		}
+		7976 = {
+			discover_country = ROOT
+		}
+		clr_country_flag = DescendingAlakim2
+		set_country_flag = DescendingAlakim3
+	}
+}
+
+#Descending Alakim 3
+country_event = {
+	id = oppia.30
+	title = oppia.30.t
+	desc = oppia.30.d
+	picture = BORDER_TENSION_eventPicture
+	fire_only_once = yes
+	
+	trigger = {
+		has_country_flag = DescendingAlakim3
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	immediate = {
+	}
+	
+	option = {
+		name = oppia.30.a
+		ai_chance = {
+			factor = 1
+		}
+		7975 = {
+			owner = {
+				add_core = 7976
+				7976 = {
+					cede_province = PREV
+				}
+			}
+		}
+		7976 = {
+			set_local_autonomy = 100
+		}
+		add_years_of_income = 0.25
+		clr_country_flag = DescendingAlakim3
+		set_country_flag = DescendingAlakim4
+	}
+}
+
+#Descending Alakim 4
+country_event = {
+	id = oppia.31
+	title = oppia.31.t
+	desc = oppia.31.d
+	picture = EXPLORERS_eventPicture
+	fire_only_once = yes
+	
+	trigger = {
+		has_country_flag = DescendingAlakim4
+	}
+
+	mean_time_to_happen = {
+		years = 1
+	}
+
+	immediate = {
+	}
+	
+	option = {
+		name = oppia.31.a
+		ai_chance = {
+			factor = 1
+		}
+		7977 = {
+			discover_country = ROOT
+		}
+		7978 = {
+			discover_country = ROOT
+		}
+		8001 = {
+			discover_country = ROOT
+		}
+		add_years_of_income = 0.25
+		clr_country_flag = DescendingAlakim4
+		set_country_flag = DescendingAlakim5
+	}
+}
+
+#Descending Alakim 5
+country_event = {
+	id = oppia.32
+	title = oppia.32.t
+	desc = oppia.32.d
+	picture = EXPLORERS_eventPicture
+	fire_only_once = yes
+	
+	trigger = {
+		has_country_flag = DescendingAlakim5
+	}
+
+	mean_time_to_happen = {
+		years = 1
+	}
+
+	immediate = {
+	}
+	
+	option = {
+		name = oppia.32.a
+		ai_chance = {
+			factor = 1
+		}
+		tamja_area = {
+			discover_country = ROOT
+		}
+		qalkabh_area = {
+			discover_country = ROOT
+		}
+		vorast_area = {
+			discover_country = ROOT
+		}
+		amandar_area = {
+			discover_country = ROOT
+		}
+		gidjifnor_area = {
+			discover_country = ROOT
+		}
+		7648 = {
+			discover_country = ROOT
+		}
+		7649 = {
+			discover_country = ROOT
+		}
+		add_prestige = 10
+		clr_country_flag = DescendingAlakim5
+		set_country_flag = DescendingAlakim6
+	}
+}
+
+#Descending Alakim 6
+country_event = {
+	id = oppia.33
+	title = oppia.33.t
+	desc = oppia.33.d
+	picture = DIPLOMACY_SIGNING_eventPicture
+	fire_only_once = yes
+	major = yes
+	
+	trigger = {
+		has_country_flag = DescendingAlakim6
+	}
+
+	mean_time_to_happen = {
+		months = 2
+	}
+
+	immediate = {
+	}
+	
+	option = {
+		name = oppia.33.a
+		ai_chance = {
+			factor = 1
+		}
+		ekelo_region = {
+			discover_country = ROOT
+		}
+		add_prestige = 50
+		add_years_of_income = 1
+		clr_country_flag = DescendingAlakim6
+	}
+}
+
 #### / TCK MISSIONS
