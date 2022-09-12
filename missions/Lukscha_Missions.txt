@@ -20,6 +20,15 @@ lks_1 = {
                     is_empty = yes
                 }
             }
+            if = {
+                limit = {
+                    ai = no
+                }
+                num_of_estate_privileges = {
+	                estate = estate_clans
+	                value = 2
+                }
+            }
         }
         effect = {
             add_army_tradition = 25
