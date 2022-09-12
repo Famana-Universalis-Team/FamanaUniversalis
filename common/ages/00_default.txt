@@ -373,7 +373,13 @@ age_of_reformation = {
 
 		ab_rostan_morale = {
 			allow = {
-				tag = RST
+				OR = {
+					tag = RST
+					AND = {
+						tag = GTZ
+						was_tag = RST
+					}
+				}
 			}
 			modifier = {
 				land_morale = 0.25

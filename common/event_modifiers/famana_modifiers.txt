@@ -2165,3 +2165,7 @@ tck_new_model_army = {
     mil_tech_cost_modifier = -0.10
     drill_gain_modifier = 0.15
 }
+
+rdu_colonize = {
+    colonists = 1
+}

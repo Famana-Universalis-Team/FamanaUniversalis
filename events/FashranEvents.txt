@@ -794,6 +794,9 @@ country_event = { #Emtik provs lost, not needed to locallize
             tag = NHM
         }
 		has_global_flag = after_emtik_rights
+        NOT = {
+            has_country_flag = nhomaFormed
+        }
 		NOT = {
 			5692 = {
 				OR = {

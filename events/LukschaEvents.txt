@@ -343,7 +343,7 @@ country_event = { #First expansion (mission fired)
 
 country_event = { #Second expansion
 	id = lukscham.8
-	picture = TRADEGOODS_eventPicture
+	picture = CITY_DEVELOPMENT_eventPicture
 	title = lukscham.8.t
 	desc = lukscham.8.d
 	fire_only_once = yes

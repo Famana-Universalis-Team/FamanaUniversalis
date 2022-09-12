@@ -962,6 +962,14 @@ country_decisions = {
             NOT = {
                 has_country_flag = gotz_colonist_flag
             }
+            NOT = {
+                OR = {
+                    tag = LKS
+                    tag = VAN
+                    tag = RDU
+                    tag = QUB
+                }
+            }
 		}
 		allow = {
 			total_development = 300

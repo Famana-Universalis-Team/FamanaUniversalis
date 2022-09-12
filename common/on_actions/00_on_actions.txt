@@ -3974,6 +3974,16 @@ on_mercenary_recruited = {
 			ROOT = { NOT = { mercenary_company = merc_quanex_guard } }
 			ROOT = { NOT = { mercenary_company = merc_jzoets } }
 			ROOT = { NOT = { mercenary_company = merc_jzoets_buffed } }
+			ROOT = { NOT = { mercenary_company = merc_zeaf_skirmishers } }
+			ROOT = { NOT = { mercenary_company = merc_faris_cataphracts } }
+			ROOT = { NOT = { mercenary_company = merc_oppian_legion } }
+			ROOT = { NOT = { mercenary_company = merc_berserkers_e_naravam } }
+			ROOT = { NOT = { mercenary_company = merc_berserkers_w_naravam } }
+			ROOT = { NOT = { mercenary_company = merc_berserkers_vamanya } }
+			ROOT = { NOT = { mercenary_company = merc_berserkers_nhl } }
+			ROOT = { NOT = { mercenary_company = merc_berserkers_orc } }
+			ROOT = { NOT = { mercenary_company = merc_berserkers_kly } }
+			ROOT = { NOT = { mercenary_company = merc_berserkers_mld } }
 		}
 		FROM = {
 			add_army_professionalism = -0.05

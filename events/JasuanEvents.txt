@@ -463,14 +463,23 @@ country_event = {
 	id = jasua.8
 	title = jasua.8.t
 	desc = jasua.8.d
-	picture = BORDER_TENSION_eventPicture
-	fire_only_once = yes
-	major = yes
+	picture = EUROPEAN_REFUGEES_eventPicture
+	#fire_only_once = yes
+	#major = yes
 	
 	trigger = {
-		OR = {
-			tag = SKT
-			tag = NAF
+		capital_scope = {
+			OR = {
+				region = stroktur_region
+				region = east_xalia_region
+				region = moxon_region
+			}
+		}
+		NOT = {
+			has_country_flag = kin_exiles_happened
+		}
+		NOT = {
+			tag = FAS
 		}
 		5196 = {
 			owned_by = FAS
@@ -478,13 +487,18 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-        days = 1
+        months = 1
     }
+
+	immediate = {
+		set_country_flag = kin_exiles_happened
+	}
 
 	option = {
 		name = jasua.8.a
 		ai_chance = { factor = 1 }
-		add_manpower = 5
+		#add_manpower = 5
+		add_dip_power = 50
 		add_country_modifier = {
 			name = kinvirel_exiles
 			duration = 3650

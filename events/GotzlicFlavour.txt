@@ -619,6 +619,10 @@ country_event = {
             has_country_flag = rostaCanGetEvent
             AND = {
                 owns = 6597
+                owns = 6587
+            }
+            AND = {
+                owns = 6597
                 is_year = 300
                 NOT = {
                     OR = {
@@ -629,6 +633,9 @@ country_event = {
                     }
                 }
             }
+        }
+        rosta_area = {
+            is_empty = yes
         }
     }
 

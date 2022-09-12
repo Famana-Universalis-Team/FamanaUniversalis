@@ -1743,7 +1743,15 @@ country_decisions = {
 					#ironman = yes
 					start_date = 212.6.6
 					NOT = { num_of_custom_nations = 1 }
-					tag = NAF
+					OR = {
+						tag = NAF
+						AND = {
+							tag = SKT
+							NOT = {
+								is_year = 291
+							}
+						}
+					}
 				}
 				has_country_flag = debug_achievements
 			}

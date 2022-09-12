@@ -10,6 +10,9 @@ country_event = { #nhoma
 
     trigger = {
         tag = NHM
+        NOT = {
+            has_country_flag = nhomaFormed
+        }
     }
     option = {
         name = tonxara.1.a
@@ -282,6 +285,9 @@ country_event = { #Koff
 
     trigger = {
         tag = NHM
+        NOT = {
+            has_country_flag = nhomaFormed
+        }
         NOT = {
             exists = KFF
         }
@@ -3468,6 +3474,9 @@ country_event = {
 
     trigger = {
         tag = NHM
+        NOT = {
+            has_country_flag = nhomaFormed
+        }
         is_year = 330
         NOT = {
             has_country_flag = removedTonxaraGov
@@ -3886,6 +3895,9 @@ country_event = { #nhoma death
     trigger = {
         tag = NHM
         ai = yes
+        NOT = {
+            has_country_flag = nhomaFormed
+        }
         OR = {
             NOT = {
                 num_of_owned_provinces_with	= {

@@ -335,7 +335,7 @@ GTZ_ideas = {
         tolerance_heretic = 2
     }
     gtz_2 = {
-        land_morale = 0.15
+        discipline = 0.05
     }
     gtz_3 = {
 		stability_cost_modifier = -0.10
@@ -352,5 +352,45 @@ GTZ_ideas = {
     }
     gtz_7 = {
         num_accepted_cultures = 2
+    }
+}
+
+RST_ideas = {
+    start = {
+        hostile_attrition = 1
+		same_culture_advisor_cost = -0.20
+    }
+    
+    bonus = {
+        global_prov_trade_power_modifier = 0.10
+    }    
+
+    trigger = {
+        tag = RST
+    }
+    free = yes
+    
+    rst_1 = {
+        years_of_nationalism = -5
+    }
+    rst_2 = {
+        fire_damage = 0.10
+		mercenary_discipline = 0.05
+    }
+    rst_3 = {
+		infantry_cost = -0.10
+    }
+    rst_4 = {
+        innovativeness_gain = 0.25
+		technology_cost	= -0.05
+    }
+    rst_5 = {
+		leader_cost = -0.10
+    }
+    rst_6 = {
+        global_spy_defence = 0.5
+    }
+    rst_7 = {
+        build_cost = -0.10
     }
 }

@@ -532,6 +532,8 @@ was_never_end_game_tag_trigger = {	#Country Scope
 			NOT = { tag = JAS }
 			NOT = { was_tag = GTZ }
 			NOT = { tag = GTZ }
+			NOT = { was_tag = LKS }
+			NOT = { tag = LKS }
 			NOT = { was_tag = JFX }
 			NOT = { tag = JFX }
 			NOT = { was_tag = NHM }
