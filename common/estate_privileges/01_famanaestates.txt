@@ -102,7 +102,7 @@ estate_clans_promote_general = {
 	icon = privilege_promote_purbias
 	influence = 0.05
 	can_select = {
-		army_tradition = 11
+		army_tradition = 10
 	}
 	on_granted = {
 		add_army_tradition = -10
