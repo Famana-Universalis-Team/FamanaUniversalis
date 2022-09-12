@@ -2169,3 +2169,8 @@ tck_new_model_army = {
 rdu_colonize = {
     colonists = 1
 }
+
+pya_lathvy = {
+    tolerance_own = 1
+    tolerance_heathen = -1
+}

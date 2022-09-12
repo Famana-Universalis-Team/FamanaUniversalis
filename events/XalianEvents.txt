@@ -163,10 +163,57 @@ country_event = {
     }
 }
 
+#pyarxu lathvy
+country_event = {
+    id = gaxal.5
+    title = gaxal.5.t
+    desc = gaxal.5.d
+    picture = RELIGION_eventPicture
+    fire_only_once = yes
+
+    trigger = {
+        tag = PYA
+        is_year = 213
+        NOT = {
+            is_year = 220
+        }
+        capital_scope = {
+            religion = lathvy
+        }
+    }
+    mean_time_to_happen = {
+        months = 9
+    }
+
+    option = {
+        name = gaxal.5.a
+        ai_chance = { factor = 5 }
+        add_stability = -2
+        change_religion = lathvy
+        add_country_modifier = {
+			name = "famana_conversion_zeal"
+			duration = 3650
+		}
+        add_country_modifier = {
+            name = pya_lathvy
+            duration = -1
+        }
+    }
+
+    option = {
+        name = gaxal.5.b
+        ai_chance = { factor = 1 }
+        add_stability = 1
+        capital_scope = {
+            add_province_modifier = {
+                name = pya_convert
+                duration = 3650
+            }
+        }
+    }
+}
+
 # Purchase of Northern Lerush, Poxa
-
-namespace = gaxal
-
 country_event = {
     id = gaxal.7
     title = gaxal.7.t
