@@ -13,12 +13,7 @@ estate_clans = {
 		NOT = { has_reform = revolutionary_empire_reform }
 		OR = {
 			AND = {
-				OR = {
-					religion = naravami
-					religion = lukscha
-					religion = ordic
-					religion = maldan
-				}
+				religion_group = north_estali
 				NOT = {
 					government = tribal
 				}

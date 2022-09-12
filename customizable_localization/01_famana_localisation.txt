@@ -430,17 +430,17 @@ defined_text = {
     }
 }
 
-defined_text = {
-    name = GetGadean
-    random = no
-
-	text = {
-        trigger = {
-            has_global_flag = Gadea_Vassal_Swarm
-        }
-        localisation_key = GadeanVassalLocSwarm
-    }
-    text = {
-        localisation_key = NoTextDefinedLoc
-    }
-}
+#defined_text = {
+#    name = GetGadean
+#    random = no
+#
+#	text = {
+#        trigger = {
+#            has_country_flag = Gadea_Vassal_Swarm
+#        }
+#        localisation_key = GadeanVassalLocSwarm
+#    }
+#    text = {
+#        localisation_key = NoTextDefinedLoc
+#    }
+#}

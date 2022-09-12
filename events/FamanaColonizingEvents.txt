@@ -51,14 +51,12 @@ country_event = {
 	hidden = yes
 	
 	trigger = {
-		NOT = {
-			OR = {
-				num_of_colonists = 1
-				tag = QUB
-			}
-		}
 		any_owned_province = {
 			is_colony = yes
+			culture = Qubaran
+		}
+		NOT = {
+			tag = QUB
 		}
 		ai = yes
 	}
@@ -67,6 +65,7 @@ country_event = {
 		every_owned_province = {
 			limit = {
 				is_colony = yes
+				culture = Qubaran
 			}
 			cede_province = ---
 		}

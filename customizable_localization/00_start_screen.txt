@@ -268,6 +268,13 @@ defined_text = {
         }
     }
 
+    text = { #Great Desert
+        localisation_key = string_start_tag_great_desert
+        trigger = {
+            technology_group = great_desert_tech_gr
+        }
+    }
+
     text = { #Vanoma
         localisation_key = string_start_tag_vanoma
         trigger = {

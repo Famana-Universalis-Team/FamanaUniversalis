@@ -2196,7 +2196,7 @@ VNA_ideas = {
 		global_trade_goods_size_modifier = 0.10
     }
     vna_marines = {
-		land_forcelimit_modifier = 0.10
+		allowed_marine_fraction = 1.0
 		infantry_power = 0.05
     }
 }

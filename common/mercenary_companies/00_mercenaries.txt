@@ -1597,6 +1597,7 @@ merc_oppian_legion = {
     home_province = 5208 # brula
 	cavalry_weight = 0.10
 	cavalry_cap = 12
+	cost_modifier = 0.5
 	sprites = { muslimgfx_sprite_pack }
     trigger = {
 		custom_trigger_tooltip = {
@@ -1607,5 +1608,17 @@ merc_oppian_legion = {
 	modifier = {
 		shock_damage_received = -0.10
 		land_morale = 0.10
+	}
+}
+
+# Howlers of Oiko
+merc_howlers_of_oiko = {
+    regiments_per_development = 0.04
+    home_province = 6505 # oiko
+	cavalry_weight = 0.1
+	cavalry_cap = 2
+	sprites = { easterngfx_sprite_pack }
+    trigger = {
+		religion = maschi
 	}
 }

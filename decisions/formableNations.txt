@@ -2921,7 +2921,7 @@ country_decisions = {
 			owns_core_province = 6536
 			owns_core_province = 6597
 			num_of_owned_provinces_with = {
-				value = 50
+				value = 45
 				culture_group = Gotzlic
 			}
 			NOT = { is_tribal = yes }

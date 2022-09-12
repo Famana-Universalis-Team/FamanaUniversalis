@@ -1164,6 +1164,11 @@ lag_4 = {
             if = {
                 limit = {
                     is_year = 215
+                    PEX = {
+                        NOT = { has_country_flag = pextocivilwar }
+                        NOT = { has_country_flag = survived_fall }
+                        NOT = { has_country_flag = pex_collapse_prevented }
+                    }
                 }
                 custom_tooltip = lagIfCegon
                 if = {
