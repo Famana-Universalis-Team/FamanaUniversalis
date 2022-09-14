@@ -58,7 +58,7 @@ VAN_ideas = {
         technology_cost = -0.1
     }
     van_the_conscription_art = {
-        global_manpower_modifier = 0.25
+        manpower_in_own_culture_provinces = 0.25
     }
     van_modern_vanomatis = {
         artillery_power = 0.20

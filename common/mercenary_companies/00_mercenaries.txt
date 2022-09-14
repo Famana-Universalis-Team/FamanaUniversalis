@@ -480,6 +480,7 @@ merc_callan = {
 	}
 	modifier = {
 		shock_damage_received = 0.10
+		regiment_disembark_speed = 3.5
 	}
 }
 
@@ -1104,6 +1105,7 @@ merc_feniki_marines = {
 	modifier = {
 		fire_damage = 0.10
 		reinforce_speed = 1.0
+		regiment_disembark_speed = 1.5
 	}
 }
 # Ganushan Warriors

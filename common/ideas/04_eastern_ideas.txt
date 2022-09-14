@@ -56,7 +56,7 @@ FAS_ideas = {
     free = yes
     
     fas_the_sixteen_tribes = {
-        global_manpower_modifier = 0.20
+        manpower_in_culture_group_provinces = 0.20
     }
     fas_spread_the_word = {
         missionaries = 1

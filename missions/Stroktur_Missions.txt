@@ -2349,13 +2349,6 @@ nafa_2 = {
 			}
         }
         effect = {
-            add_country_modifier = {
-                name = naf_adopt_resteman_strategies
-                duration = 9125
-            }
-            add_navy_tradition = 30
-            custom_tooltip = getFenikiMercs
-			set_country_flag = feniki_merc_flag
             if = { 
 				limit = { has_had_golden_age = yes }
 				reset_golden_age = yes 
@@ -2377,6 +2370,13 @@ nafa_2 = {
 				}
 				custom_tooltip = fin_gain_golden_era_bonuses_tt
 			}
+            add_country_modifier = {
+                name = naf_adopt_resteman_strategies
+                duration = 9125
+            }
+            add_navy_tradition = 30
+            custom_tooltip = getFenikiMercs
+			set_country_flag = feniki_merc_flag
             #custom_tooltip = nafIfInGoldenEra
             #if = {
                 #limit = {
