@@ -111,7 +111,9 @@ gadea_1 = {
 			}
         }
 		effect = {
-			add_prestige = 10
+			add_prestige_or_monarch_power = {
+				amount = 10
+			}
 		}
 	}
 
@@ -565,7 +567,9 @@ gadea_3 = {
 				name = gadea_gadelis
 				duration = -1
 			}
-			add_prestige = 25
+			add_prestige_or_monarch_power = {
+				amount = 25
+			}
 		}
 	}
 
@@ -582,7 +586,9 @@ gadea_3 = {
 		effect = {
 			custom_tooltip = GADEA_EVERYONE_CB
 			set_global_flag = Gadean_Imperial_crusade
-			add_prestige = 50
+			add_prestige_or_monarch_power = {
+				amount = 50
+			}
 		}
 	}
 }
@@ -953,7 +959,9 @@ gadea_5 = {
 				discount = yes
 			}
 			change_government_reform_progress = 100
-			add_prestige = 50
+			add_prestige_or_monarch_power = {
+				amount = 50
+			}
 		}
 	}
 	gadea_enter_delkia = {

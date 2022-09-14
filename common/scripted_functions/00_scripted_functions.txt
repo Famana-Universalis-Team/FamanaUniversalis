@@ -54,10 +54,13 @@ can_add_province_to_hre = {
 	
 }
 
+#ROOT = province, FROM = country
 can_remove_province_from_hre = {
 	condition = {
 		potential = {
-			ai = yes
+			owner = {
+				ai = yes
+			}
 		}
 		allow = {
 			owner = {
@@ -460,6 +463,17 @@ is_possible_hre_province = {
 		}
 		allow = {
 			continent = europe
+		}
+	}
+}
+
+will_demand_annexation = {
+	condition = {
+		potential = {
+			is_elector = yes
+		}
+		allow = {
+			NOT = { hre_reform_passed = landfriede }
 		}
 	}
 }

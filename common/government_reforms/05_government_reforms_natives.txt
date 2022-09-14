@@ -10,6 +10,7 @@ native_basic_reform = {
 	custom_attributes = {
 		enables_plutocratic_idea_group = no
 		enables_aristocratic_idea_group = no
+		enables_divine_idea_group = no
 		enables_natives_idea_group = yes
 	}
 	modifiers = {
@@ -30,6 +31,7 @@ native_basic_reform = {
 		OR = {
 			technology_group = north_american
 			technology_group = south_american
+			technology_group = aboriginal_tech
 		}
 		NOT = { religion = nahuatl }
 		NOT = { religion = mesoamerican_religion }
@@ -39,6 +41,7 @@ native_basic_reform = {
 				continent = north_america
 				continent = south_america
 				continent = new_world
+				region = australia_region
 			}
 		}
 	}
@@ -51,9 +54,9 @@ native_chiefdom_reform = {
 	valid_for_nation_designer = yes
 	nation_designer_cost = 20
 
-	potential = {
-		NOT = { culture_group = Western_Estali }
-	}
+	#potential = {
+	#	NOT = { culture_group = Western_Estali }
+	#}
 
 	modifiers = {
 		tribal_development_growth = 0.02
@@ -69,9 +72,9 @@ native_federation_reform = {
 		global_manpower_modifier = 0.2
 	}
 
-	potential = {
-		NOT = { culture_group = Western_Estali }
-	}
+	#potential = {
+	#	NOT = { culture_group = Western_Estali }
+	#}
 }
 
 native_clan_council_reform = {
@@ -84,9 +87,9 @@ native_clan_council_reform = {
 		diplomats = 1
 	}
 
-	potential = {
-		NOT = { culture_group = Western_Estali }
-	}
+	#potential = {
+	#	NOT = { culture_group = Western_Estali }
+	#}
 }
 
 native_hereditary_reform = {
@@ -98,9 +101,9 @@ native_hereditary_reform = {
 		stability_cost_modifier = -0.33
 	}
 
-	potential = {
-		NOT = { culture_group = Western_Estali }
-	}
+	#potential = {
+	#	NOT = { culture_group = Western_Estali }
+	#}
 }
 
 native_martial_tradition_reform = {

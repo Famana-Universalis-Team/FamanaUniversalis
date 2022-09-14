@@ -1,4 +1,8 @@
 
+tomban_state = {}
+diocese = {}
+gadan_tributary_state = {}
+gadan_tributary_state_annexable = {}
 
 tomban_state = {
 	copy_from = default

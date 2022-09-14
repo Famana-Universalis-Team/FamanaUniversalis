@@ -288,6 +288,7 @@ nafan_gov = {
 
 	custom_attributes = {
 		locked_government_type = yes
+		no_stability_loss_on_monarch_death = yes
 	}
 
 	nation_designer_trigger = {

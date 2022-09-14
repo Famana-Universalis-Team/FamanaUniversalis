@@ -364,38 +364,38 @@ country_event = { #Kisholi nobles defect
     }
 }
 
-country_event = {
-    id = nafa.7
-    title = nafa.7.t
-    desc = nafa.7.d
-    picture = CONQUEST_eventPicture
-    fire_only_once = yes
-    hidden = yes
-
-    mean_time_to_happen = {
-        days = 1
-    }
-
-    trigger = {
-        tag = NAF
-        has_country_flag = nafa_extended_golden_age
-        NOT = {
-            in_golden_age = yes
-        }
-    }
-
-    immediate = {
-        add_country_modifier = {
-            name = fu_extended_golden_age
-            duration = 9125
-        }
-    }
-
-    option = {
-        name = nafa.7.a
-        ai_chance = { factor = 1 }
-    }
-}
+#country_event = {
+#    id = nafa.7
+#    title = nafa.7.t
+#    desc = nafa.7.d
+#    picture = CONQUEST_eventPicture
+#    fire_only_once = yes
+#    hidden = yes
+#
+#    mean_time_to_happen = {
+#        days = 1
+#    }
+#
+#    trigger = {
+#        tag = NAF
+#        has_country_flag = nafa_extended_golden_age
+#        NOT = {
+#            in_golden_age = yes
+#        }
+#    }
+#
+#    immediate = {
+#        add_country_modifier = {
+#            name = fu_extended_golden_age
+#            duration = 9125
+#        }
+#    }
+#
+#    option = {
+#        name = nafa.7.a
+#        ai_chance = { factor = 1 }
+#    }
+#}
 
 country_event = {
     id = nafa.8

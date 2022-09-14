@@ -516,7 +516,7 @@ umz_ref = {
 
 umz_breach = {
     artillery_fire = 1
-    artillery_bonus_vs_fort = 1
+    artillery_levels_available_vs_fort = 1
     siege_ability = 0.25
 }
 

@@ -60,7 +60,7 @@ country_event = {
 	title = burghers_estate_events.2.t
 	desc = burghers_estate_events.2.d
 	picture = BURGHER_ESTATE_eventPicture
-	
+	goto = robber_baron_province
 	trigger = {
 		has_estate = estate_burghers
 		has_estate = estate_nobles

@@ -89,7 +89,7 @@ pirate_ideas = {
 	trigger = {
 		OR = {
 			AND = {
-				has_reform = pirate_republic_reform
+				has_government_attribute = is_pirate_republic_reform
 				NOT = { culture_group = maghrebi }
 				NOT = { tag = TET }
 				NOT = { tag = SLE }

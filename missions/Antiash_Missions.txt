@@ -310,7 +310,9 @@ antiash_1 = {
 			province_id = 5156
 		}
 		effect = {
-			add_prestige = 25
+			add_prestige_or_monarch_power = {
+				amount = 25
+			}
 			add_country_modifier = {
 				name = antiash_kashroon_temple
 				duration = -1
@@ -1075,7 +1077,9 @@ antiash_4 = {
 			duration = -1
 			}
 			add_years_of_income  = 0.25
-			add_prestige = 15
+			add_prestige_or_monarch_power = {
+				amount = 15
+			}
 		}
 	}
 	antiash_invade = {

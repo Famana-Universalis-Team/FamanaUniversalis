@@ -33,7 +33,7 @@ estate_clans = {
 	}	
 	country_modifier_angry = {
 		manpower_recovery_speed = -0.1
-		unrest = 2
+		global_unrest = 2
 		global_autonomy = -0.05
 	}
 	land_ownership_modifier = {

@@ -549,82 +549,143 @@ country_event = {
 	}
 }
 
+# Banned Pilgrimages and Superstitious Practices
+country_event = {
+	id = devotion_events.16
+	title = devotion_events.16.t
+	desc = devotion_events.16.d
+	picture = RELIGION_eventPicture
+	
+	trigger = {
+		has_dlc = "Common Sense"
+		uses_devotion = yes
+		NOT = {
+			religion_group = muslim
+		}
+	}
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+		
+	option = {
+		name = devotion_events.16.a
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0.25
+				has_estate = estate_church
+				NOT = {
+					estate_loyalty = {
+						estate = estate_church
+						loyalty = 40
+					}
+				}
+			}
+		}
+		add_devotion = -10
+		add_estate_burghers_loyalty_effect = yes
+		reduce_estate_church_loyalty_effect = yes
+	}
+	option = {
+		name = devotion_events.16.b
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0.25
+				has_estate = estate_burghers
+				NOT = {
+					estate_loyalty = {
+						estate = estate_burghers
+						loyalty = 40
+					}
+				}
+			}
+		}
+		add_prestige = -10
+		reduce_estate_burghers_loyalty_effect = yes
+		add_estate_church_loyalty_effect = yes
+	}
+}
+
 # The Great Feud
-#province_event = {
-#	id = devotion_events.17
-#	title = devotion_events.17.t
-#	desc = devotion_events.17.d
-#	picture = COUNTRY_COLLAPSE_eventPicture
-#	
-#	trigger = {
-#		has_dlc = "Common Sense"
-#		OR = {
-#			unrest = 1
-#			local_autonomy = 20
-#		}
-#		has_influencing_fort = yes
-#		is_capital = no
-#		owner = {
-#			government = theocracy
-#		}
-#		
-#	}
-#	
-#	is_mtth_scaled_to_size = 1
-#	
-#	mean_time_to_happen = {
-#		months = 360
-#	}
-#		
-#	option = {
-#		name = devotion_events.17.a
-#		ai_chance = {
-#			factor = 50
-#			modifier = {
-#				factor = 0.25
-#				owner = {
-#					has_estate = estate_burghers
-#					NOT = {
-#						estate_loyalty = {
-#							estate = estate_burghers
-#							loyalty = 40
-#						}
-#					}
-#				}
-#			}
-#		}
-#		owner = {
-#			reduce_estate_burghers_loyalty_effect = yes
-#		}
-#		add_province_modifier = {
-#			name = add_unrest_5_modifier
-#			duration = 3650
-#		}			
-#	}
-#	option = {
-#		name = devotion_events.17.b
-#		ai_chance = {
-#			factor = 50
-#			modifier = {
-#				factor = 0.25
-#				owner = {
-#					has_estate = estate_church
-#					NOT = {
-#						estate_loyalty = {
-#							estate = estate_church
-#							loyalty = 40
-#						}
-#					}
-#				}
-#			}
-#		}
-#		add_local_autonomy = 10			
-#		owner = { add_devotion = -10 }
-#		owner = {
-#			reduce_estate_church_loyalty_effect = yes
-#		}
-#	}
-#}
+province_event = {
+	id = devotion_events.17
+	title = devotion_events.17.t
+	desc = devotion_events.17.d
+	picture = COUNTRY_COLLAPSE_eventPicture
+	
+	trigger = {
+		has_dlc = "Common Sense"
+		OR = {
+			unrest = 1
+			local_autonomy = 20
+		}
+		has_influencing_fort = yes
+		is_capital = no
+		owner = {
+			government = theocracy
+		}
+		
+	}
+	
+	is_mtth_scaled_to_size = 1
+	
+	mean_time_to_happen = {
+		months = 360
+	}
+		
+	option = {
+		name = devotion_events.17.a
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0.25
+				owner = {
+					has_estate = estate_burghers
+					NOT = {
+						estate_loyalty = {
+							estate = estate_burghers
+							loyalty = 40
+						}
+					}
+				}
+			}
+		}
+		owner = {
+			reduce_estate_burghers_loyalty_effect = yes
+		}
+		add_province_modifier = {
+			name = add_unrest_5_modifier
+			duration = 3650
+		}			
+	}
+	option = {
+		name = devotion_events.17.b
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0.25
+				owner = {
+					has_estate = estate_church
+					NOT = {
+						estate_loyalty = {
+							estate = estate_church
+							loyalty = 40
+						}
+					}
+				}
+			}
+		}
+		add_local_autonomy = 10			
+		owner = { add_devotion = -10 }
+		owner = {
+			reduce_estate_church_loyalty_effect = yes
+		}
+	}
+}
 
 # The Mad Seer
 country_event = {
@@ -731,43 +792,43 @@ province_event = {
 		months = 360
 	}
 		
-#	option = {
-#		name = devotion_events.20.a
-#		ai_chance = {
-#			factor = 50
-#			modifier = {
-#				factor = 0
-#				owner = {
-#					has_estate = estate_burghers
-#					NOT = {
-#						estate_loyalty = {
-#							estate = estate_burghers
-#							loyalty = 40
-#						}
-#					}
-#				}
-#			}
-#		}
-#		add_local_autonomy = -25
-#		owner = {
-#			reduce_estate_burghers_loyalty_effect = yes
-#		}
-#		add_province_modifier = {
-#			name = add_unrest_5_modifier
-#			duration = 3650
-#		}
-#	}
-#	option = {
-#		name = devotion_events.20.b
-#		ai_chance = {
-#			factor = 50
-#		}
-#		owner = {
-#			add_estate_burghers_loyalty_effect = yes
-#		}
-#		owner = { add_devotion = 10 }
-#	}
-#}
+	option = {
+		name = devotion_events.20.a
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				owner = {
+					has_estate = estate_burghers
+					NOT = {
+						estate_loyalty = {
+							estate = estate_burghers
+							loyalty = 40
+						}
+					}
+				}
+			}
+		}
+		add_local_autonomy = -25
+		owner = {
+			reduce_estate_burghers_loyalty_effect = yes
+		}
+		add_province_modifier = {
+			name = add_unrest_5_modifier
+			duration = 3650
+		}
+	}
+	option = {
+		name = devotion_events.20.b
+		ai_chance = {
+			factor = 50
+		}
+		owner = {
+			add_estate_burghers_loyalty_effect = yes
+		}
+		owner = { add_devotion = 10 }
+	}
+}
 
 # The Secularists Among Us
 country_event = {
@@ -783,6 +844,7 @@ country_event = {
 			devotion = 20
 		}
 		NOT = { has_ruler_flag = denied_secularists }
+		NOT = { has_reform = papacy_reform }
 	}
 	
 	

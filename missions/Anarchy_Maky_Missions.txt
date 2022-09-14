@@ -126,7 +126,9 @@ anarchy_3 = {
             }
         }
         effect = {
-            add_prestige = 25
+            add_prestige_or_monarch_power = {
+				amount = 25
+			}
             add_legitimacy = 25
             add_country_modifier = {
 				name = "mak_anarchy_ending"

@@ -70,7 +70,9 @@ delkia_fashros_missions = {
 			}
         }
 		effect = {
-			add_prestige = 10
+			add_prestige_or_monarch_power = {
+				amount = 10
+			}
 		}
 	}
 

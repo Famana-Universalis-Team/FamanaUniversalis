@@ -138,7 +138,9 @@ tck_slot_1 = {
 				}
 				discover_country = ROOT
 			}
-			add_prestige = 25
+			add_prestige_or_monarch_power = {
+				amount = 25
+			}
 			add_country_modifier = {
 				name = tck_new_lands
 				duration = 3650
@@ -287,7 +289,9 @@ tck_slot_1 = {
 			}
         }
 		effect = {
-			add_prestige = 20
+			add_prestige_or_monarch_power = {
+				amount = 20
+			}
 			add_country_modifier = {
 				name = tck_only_imperial_family
 				duration = 3650
@@ -624,7 +628,9 @@ tck_slot_2 = {
 			}
         }
 		effect = {
-			add_prestige = 20
+			add_prestige_or_monarch_power = {
+				amount = 20
+			}
 			country_event = {
 				id = oppia.24
 			}
@@ -1112,7 +1118,9 @@ tck_slot_3 = {
 				name = "centralization_modifier"
 				duration = 7300
 			}
-			add_prestige = 100
+			add_prestige_or_monarch_power = {
+				amount = 100
+			}
 			set_capital = 5066
 		}
 		provinces_to_highlight = {
