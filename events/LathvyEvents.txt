@@ -1598,6 +1598,7 @@ country_event = {
 	option = {
 		ai_chance = { factor = 2 }
 		name = lathvy.23.a #Des1
+		goto = Destination1
 		event_target:Destination1 = {
 			clr_province_flag = possible_hp_destination
 			every_province_in_state = {
@@ -1617,9 +1618,9 @@ country_event = {
 									religion_group = lathvy_group
 								}
 							}
-							add_country_modifier = {
-								name = pope_visit_lathvy
-								duration = 1825
+							country_event = {
+								id = lathvy.26
+								days = 30
 							}
 							add_opinion = {
 								who = ROOT
@@ -1634,6 +1635,7 @@ country_event = {
 	option = {
 		ai_chance = { factor = 1 }
 		name = lathvy.23.b #Des2
+		goto = Destination2
 		event_target:Destination2 = {
 			clr_province_flag = possible_hp_destination
 			every_province_in_state = {
@@ -1653,9 +1655,9 @@ country_event = {
 									religion_group = lathvy_group
 								}
 							}
-							add_country_modifier = {
-								name = pope_visit_lathvy
-								duration = 1825
+							country_event = {
+								id = lathvy.26
+								days = 30
 							}
 							add_opinion = {
 								who = ROOT
@@ -1665,6 +1667,25 @@ country_event = {
 					}
 				}
 			}
+		}
+	}
+}
+
+#High Priest Visits
+country_event = {
+	id = lathvy.26
+	title = lathvy.26.t
+	desc = lathvy.26.d
+	picture = POPE_PREACHING_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		ai_chance = { factor = 1 }
+		name = lathvy.26.a
+		add_country_modifier = {
+			name = pope_visit_lathvy
+			duration = 1825
 		}
 	}
 }

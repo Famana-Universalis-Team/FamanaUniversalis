@@ -107,13 +107,13 @@ country_event = { #nobles vs clergy
             estate = estate_nobles
             desc = NOBLES_PLEASED
             loyalty = 10
-            duration = -1
+            duration = 7300
         }
         add_estate_influence_modifier = {
             estate = estate_nobles
             desc = NOBLES_PLEASED_INFLUENCE
             influence = 10
-            duration = -1
+            duration = 7300
         }
         change_estate_land_share = {
             estate = estate_nobles
@@ -123,13 +123,13 @@ country_event = { #nobles vs clergy
             estate = estate_church
             desc = CHURCH_UNSUPPORTED
             loyalty = -10
-            duration = -1
+            duration = 7300
         }
         add_estate_influence_modifier = {
             estate = estate_church
             desc = CHURCH_UNSUPPORTED_INFLUENCE
             influence = -10
-            duration = -1
+            duration = 7300
         }
         change_estate_land_share = {
             estate = estate_church
@@ -145,13 +145,13 @@ country_event = { #nobles vs clergy
             estate = estate_church
             desc = CHURCH_PLEASED
             loyalty = 10
-            duration = -1
+            duration = 7300
         }
         add_estate_influence_modifier = {
             estate = estate_church
             desc = CHURCH_PLEASED_INFLUENCE
             influence = 10
-            duration = -1
+            duration = 7300
         }
         change_estate_land_share = {
             estate = estate_church
@@ -161,13 +161,13 @@ country_event = { #nobles vs clergy
             estate = estate_nobles
             desc = NOBLES_UNSUPPORTED
             loyalty = -10
-            duration = -1
+            duration = 7300
         }
         add_estate_influence_modifier = {
             estate = estate_nobles
             desc = NOBLES_UNSUPPORTED_INFLUENCE
             influence = -10
-            duration = -1
+            duration = 7300
         }
         change_estate_land_share = {
             estate = estate_nobles
