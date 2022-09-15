@@ -140,6 +140,8 @@ desert_tribe_2 = {
                     name = destribe_dev_capital
                     duration = -1
                 }
+                change_culture = ROOT
+                change_religion = ROOT
             }
         }
     }

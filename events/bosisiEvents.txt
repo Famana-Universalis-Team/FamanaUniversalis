@@ -295,8 +295,14 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		is_year = 249
 		tag = KKR
+		7239 = {
+			OR = {
+				is_empty = yes
+				owned_by = ROOT
+			}
+		}
+		is_year = 249
 	}
 	
 	mean_time_to_happen = {
@@ -327,11 +333,25 @@ country_event = {
 	option = {
 		name = bosisi.2.b
 		ai_chance = { factor = 1 }
-		7250 = {
-			create_revolt = 10
+		if = {
+			limit = {
+				7250 = {
+					owned_by = ROOT
+				}
+			}
+			7250 = {
+				create_revolt = 10
+			}
 		}
-		7251 = {
-			create_revolt = 5
+		if = {
+			limit = {
+				7251 = {
+					owned_by = ROOT
+				}
+			}
+			7251 = {
+				create_revolt = 5
+			}
 		}
 	}
 	
@@ -341,11 +361,25 @@ country_event = {
 			ai = no
 		}
 		name = bosisi.2.c
-		7250 = {
-			cede_province = ALU
+		if = {
+			limit = {
+				7250 = {
+					owned_by = ROOT
+				}
+			}
+			7250 = {
+				cede_province = ALU
+			}
 		}
-		7251 = {
-			cede_province = ALU
+		if = {
+			limit = {
+				7251 = {
+					owned_by = ROOT
+				}
+			}
+			7251 = {
+				cede_province = ALU
+			}
 		}
 		switch_tag = ALU
 		ALU = {

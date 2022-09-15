@@ -73,9 +73,6 @@ country_event = {
 	fire_only_once = yes
     is_triggered_only = yes
 
-    immediate = {
-    }
-
     option = {
         name = gotzlica.2.a
         ai_chance = {
@@ -185,25 +182,6 @@ country_event = {
                 }
             }
         }
-        6636 = {
-			limit = { 
-				is_empty = yes
-			}
-			create_colony = 1000
-			cede_province = LER
-			add_core = LER
-            random_list = {
-                33 = {
-                    add_base_tax = 1
-                }
-                33 = {
-                    add_base_production = 1
-                }
-                33 = {
-                    add_base_manpower = 1
-                }
-            }
-		}
     }
 }
 
@@ -225,25 +203,29 @@ country_event = {
         LER = {
             vassalize = EHZ
         }
-        6636 = {
-			limit = { 
-				is_empty = yes
-			}
-			create_colony = 1000
-			cede_province = LER
-			add_core = LER
-            random_list = {
-                33 = {
-                    add_base_tax = 1
-                }
-                33 = {
-                    add_base_production = 1
-                }
-                33 = {
-                    add_base_manpower = 1
+        if = {
+            limit = {
+                6636 = {
+                    is_empty = yes
                 }
             }
-		}
+            6636 = {
+                create_colony = 1000
+			    cede_province = LER
+			    add_core = LER
+                random_list = {
+                    33 = {
+                        add_base_tax = 1
+                    }
+                    33 = {
+                        add_base_production = 1
+                    }
+                    33 = {
+                        add_base_manpower = 1
+                    }
+                }
+            }
+        }
         add_prestige = 10
     }
 }
@@ -268,8 +250,8 @@ country_event = {
         is_year = 270
         LER = {
             OR = {
-                country_or_non_sovereign_subject_holds = 6547
-                country_or_non_sovereign_subject_holds = 6546
+                owns_or_subject_of = 6547
+                owns_or_subject_of = 6546
             }
         }
     }
@@ -303,6 +285,7 @@ country_event = {
     desc = gotzlica.6.desc
     picture = BATTLE_eventPicture
 	fire_only_once = yes
+    hidden = yes
 
     mean_time_to_happen = {
 		days = 1
@@ -496,44 +479,52 @@ country_event = {
             who = LER
             casus_belli = cb_super_badboy
         }
-        6634 = {
-			limit = { 
-				is_empty = yes
-			}
-			create_colony = 1000
-			cede_province = ZUB
-			add_core = ZUB
-            random_list = {
-                33 = {
-                    add_base_tax = 1
-                }
-                33 = {
-                    add_base_production = 1
-                }
-                33 = {
-                    add_base_manpower = 1
+        if = {
+            limit = {
+                6634 = {
+                    is_empty = yes
                 }
             }
-		}
-        6645 = {
-			limit = { 
-				is_empty = yes
-			}
-			create_colony = 1000
-			cede_province = ZUB
-			add_core = ZUB
-            random_list = {
-                33 = {
-                    add_base_tax = 1
-                }
-                33 = {
-                    add_base_production = 1
-                }
-                33 = {
-                    add_base_manpower = 1
+            6634 = {
+                create_colony = 1000
+			    cede_province = ZUB
+			    add_core = ZUB
+                random_list = {
+                    33 = {
+                        add_base_tax = 1
+                    }
+                    33 = {
+                        add_base_production = 1
+                    }
+                    33 = {
+                        add_base_manpower = 1
+                    }
                 }
             }
-		}
+        }
+        if = {
+            limit = {
+                6645 = {
+                    is_empty = yes
+                }
+            }
+            6645 = {
+                create_colony = 1000
+			    cede_province = ZUB
+			    add_core = ZUB
+                random_list = {
+                    33 = {
+                        add_base_tax = 1
+                    }
+                    33 = {
+                        add_base_production = 1
+                    }
+                    33 = {
+                        add_base_manpower = 1
+                    }
+                }
+            }
+        }
         set_country_flag = zubara_war
     }
 }
@@ -565,44 +556,52 @@ country_event = {
         EHZ = {
             change_religion = gotzli
         }
-        6634 = {
-			limit = { 
-				is_empty = yes
-			}
-			create_colony = 1000
-			cede_province = ZUB
-			add_core = ZUB
-            random_list = {
-                33 = {
-                    add_base_tax = 1
-                }
-                33 = {
-                    add_base_production = 1
-                }
-                33 = {
-                    add_base_manpower = 1
+        if = {
+            limit = {
+                6634 = {
+                    is_empty = yes
                 }
             }
-		}
-        6645 = {
-			limit = { 
-				is_empty = yes
-			}
-			create_colony = 1000
-			cede_province = ZUB
-			add_core = ZUB
-            random_list = {
-                33 = {
-                    add_base_tax = 1
-                }
-                33 = {
-                    add_base_production = 1
-                }
-                33 = {
-                    add_base_manpower = 1
+            6634 = {
+                create_colony = 1000
+			    cede_province = ZUB
+			    add_core = ZUB
+                random_list = {
+                    33 = {
+                        add_base_tax = 1
+                    }
+                    33 = {
+                        add_base_production = 1
+                    }
+                    33 = {
+                        add_base_manpower = 1
+                    }
                 }
             }
-		}
+        }
+        if = {
+            limit = {
+                6645 = {
+                    is_empty = yes
+                }
+            }
+            6645 = {
+                create_colony = 1000
+			    cede_province = ZUB
+			    add_core = ZUB
+                random_list = {
+                    33 = {
+                        add_base_tax = 1
+                    }
+                    33 = {
+                        add_base_production = 1
+                    }
+                    33 = {
+                        add_base_manpower = 1
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -658,8 +657,10 @@ country_event = {
 			cede_province = ROOT
 			add_core = ROOT
 		}
-        country_event = {
-            id = gotzlica.11
+        hidden_effect = {
+            country_event = {
+                id = gotzlica.11
+            }
         }
         if = {
             limit = {
@@ -919,11 +920,11 @@ country_event = {
 
     trigger = {
         tag = RST
-        is_year = 300
         nizoora_area = {
             type = all
             country_or_non_sovereign_subject_holds = ROOT
         }
+        is_year = 300
     }
 
     mean_time_to_happen = {
@@ -933,22 +934,30 @@ country_event = {
     option = {
         name = gotzlica.15.a
         ai_chance = { factor = 1 }
-        6580 = {
-			limit = { 
-				is_empty = yes
-			}
-			create_colony = 1000
-			cede_province = RST
-			add_core = RST
-		}
-        6592 = {
-			limit = { 
-				is_empty = yes
-			}
-			create_colony = 1000
-			cede_province = RST
-			add_core = RST
-		}
+        if = {
+            limit = {
+                6580 = {
+                    is_empty = yes
+                }
+            }
+            6580 = {
+                create_colony = 1000
+			    cede_province = RST
+			    add_core = RST
+            }
+        }
+        if = {
+            limit = {
+                6592 = {
+                    is_empty = yes
+                }
+            }
+            6592 = {
+                create_colony = 1000
+			    cede_province = RST
+			    add_core = RST
+            }
+        }
     }
 }
 
@@ -973,22 +982,30 @@ country_event = {
     option = {
         name = gotzlica.16.a
         ai_chance = { factor = 1 }
-        6538 = {
-			limit = { 
-				is_empty = yes
-			}
-			create_colony = 1000
-			cede_province = ROOT
-			add_core = ROOT
-		}
-        6541 = {
-			limit = { 
-				is_empty = yes
-			}
-			create_colony = 1000
-			cede_province = ROOT
-			add_core = ROOT
-		}
+        if = {
+            limit = {
+                6538 = {
+                    is_empty = yes
+                }
+            }
+            6538 = {
+                create_colony = 1000
+			    cede_province = ROOT
+			    add_core = ROOT
+            }
+        }
+        if = {
+            limit = {
+                6541 = {
+                    is_empty = yes
+                }
+            }
+            6541 = {
+                create_colony = 1000
+			    cede_province = ROOT
+			    add_core = ROOT
+            }
+        }
         #if = {
         #    limit = {
         #        OR = {
@@ -1021,70 +1038,102 @@ country_event = {
     option = {
         name = gotzlica.17.a
         ai_chance = { factor = 1 }
-        6590 = {
-			limit = { 
-				is_empty = yes
-			}
-			create_colony = 1000
-			cede_province = ROOT
-			add_core = ROOT
-		}
-        6591 = {
-			limit = { 
-				is_empty = yes
-			}
-			create_colony = 1000
-			cede_province = ROOT
-			add_core = ROOT
-		}
-        6592 = {
-			limit = { 
-				is_empty = yes
-			}
-			create_colony = 1000
-			cede_province = ROOT
-			add_core = ROOT
-		}
-        6593 = {
-			limit = { 
-				is_empty = yes
-			}
-			create_colony = 1000
-			cede_province = ROOT
-			add_core = ROOT
-		}
-        6635 = {
-			limit = { 
-				is_empty = yes
-			}
-			create_colony = 1000
-			cede_province = ROOT
-			add_core = ROOT
-		}
-        6636 = {
-			limit = { 
-				is_empty = yes
-			}
-			create_colony = 1000
-			cede_province = ROOT
-			add_core = ROOT
-		}
-        6637 = {
-			limit = { 
-				is_empty = yes
-			}
-			create_colony = 1000
-			cede_province = ROOT
-			add_core = ROOT
-		}
-        6638 = {
-			limit = { 
-				is_empty = yes
-			}
-			create_colony = 1000
-			cede_province = ROOT
-			add_core = ROOT
-		}
+        if = {
+            limit = {
+                6590 = {
+                    is_empty = yes
+                }
+            }
+            6590 = {
+                create_colony = 1000
+			    cede_province = ROOT
+			    add_core = ROOT
+            }
+        }
+        if = {
+            limit = {
+                6591 = {
+                    is_empty = yes
+                }
+            }
+            6591 = {
+                create_colony = 1000
+			    cede_province = ROOT
+			    add_core = ROOT
+            }
+        }
+        if = {
+            limit = {
+                6592 = {
+                    is_empty = yes
+                }
+            }
+            6592 = {
+                create_colony = 1000
+			    cede_province = ROOT
+			    add_core = ROOT
+            }
+        }
+        if = {
+            limit = {
+                6593 = {
+                    is_empty = yes
+                }
+            }
+            6593 = {
+                create_colony = 1000
+			    cede_province = ROOT
+			    add_core = ROOT
+            }
+        }
+        if = {
+            limit = {
+                6635 = {
+                    is_empty = yes
+                }
+            }
+            6635 = {
+                create_colony = 1000
+			    cede_province = ROOT
+			    add_core = ROOT
+            }
+        }
+        if = {
+            limit = {
+                6636 = {
+                    is_empty = yes
+                }
+            }
+            6636 = {
+                create_colony = 1000
+			    cede_province = ROOT
+			    add_core = ROOT
+            }
+        }
+        if = {
+            limit = {
+                6637 = {
+                    is_empty = yes
+                }
+            }
+            6637 = {
+                create_colony = 1000
+			    cede_province = ROOT
+			    add_core = ROOT
+            }
+        }
+        if = {
+            limit = {
+                6638 = {
+                    is_empty = yes
+                }
+            }
+            6638 = {
+                create_colony = 1000
+			    cede_province = ROOT
+			    add_core = ROOT
+            }
+        }
     }
 }
 
@@ -1163,12 +1212,16 @@ country_event = {
             cede_province = NEN
             add_core = NEN
         }
-        6636 = {
+        if = {
             limit = {
-                is_empty = yes
+                6636 = {
+                    is_empty = yes
+                }
             }
-            cede_province = NEN
-            add_core = NEN
+            6636 = {
+                cede_province = NET
+                add_core = NEN
+            }
         }
         6643 = {
             cede_province = ---
@@ -1391,66 +1444,92 @@ country_event = {
     option = {
         name = gotzlica.21.a
         ai_chance = { factor = 1 }
-        6566 = {
-			limit = { 
-				is_empty = yes
-			}
-			create_colony = 1000
-			cede_province = ROOT
-			add_core = ROOT
-		}
-        6568 = {
-			limit = { 
-				is_empty = yes
-			}
-			create_colony = 1000
-			cede_province = ROOT
-			add_core = ROOT
-		}
-        6633 = {
-			limit = { 
-				is_empty = yes
-			}
-			create_colony = 1000
-			cede_province = ROOT
-			add_core = ROOT
-            change_culture = Zubaran
-            change_religion = gotzli
-		}
-        6634 = {
-			limit = { 
-				is_empty = yes
-			}
-			create_colony = 1000
-			cede_province = ROOT
-			add_core = ROOT
-		}
-        6646 = {
-			limit = { 
-				is_empty = yes
-			}
-			create_colony = 1000
-			cede_province = ROOT
-			add_core = ROOT
-            change_culture = Zubaran
-            change_religion = gotzli
-		}
-        6538 = {
-			limit = { 
-				is_empty = yes
-			}
-			create_colony = 1000
-			cede_province = ROOT
-			add_core = ROOT
-		}
-        6541 = {
-			limit = { 
-				is_empty = yes
-			}
-			create_colony = 1000
-			cede_province = ROOT
-			add_core = ROOT
-		}
+        if = {
+            limit = {
+                6566 = {
+                    is_empty = yes
+                }
+            }
+            6566 = {
+                create_colony = 1000
+			    cede_province = ROOT
+			    add_core = ROOT
+            }
+        }
+        if = {
+            limit = {
+                6568 = {
+                    is_empty = yes
+                }
+            }
+            6568 = {
+                create_colony = 1000
+			    cede_province = ROOT
+			    add_core = ROOT
+            }
+        }
+        if = {
+            limit = {
+                6633 = {
+                    is_empty = yes
+                }
+            }
+            6633 = {
+                create_colony = 1000
+			    cede_province = ROOT
+			    add_core = ROOT
+            }
+        }
+        if = {
+            limit = {
+                6634 = {
+                    is_empty = yes
+                }
+            }
+            6634 = {
+                create_colony = 1000
+			    cede_province = ROOT
+			    add_core = ROOT
+            }
+        }
+        if = {
+            limit = {
+                6646 = {
+                    is_empty = yes
+                }
+            }
+            6646 = {
+                create_colony = 1000
+			    cede_province = ROOT
+			    add_core = ROOT
+                change_culture = Zubaran
+                change_religion = gotzli
+            }
+        }
+        if = {
+            limit = {
+                6538 = {
+                    is_empty = yes
+                }
+            }
+            6538 = {
+                create_colony = 1000
+			    cede_province = ROOT
+			    add_core = ROOT
+            }
+        }
+        if = {
+            limit = {
+                6541 = {
+                    is_empty = yes
+                }
+            }
+            6541 = {
+                create_colony = 1000
+			    cede_province = ROOT
+			    add_core = ROOT
+            }
+        }
     }
 }
 

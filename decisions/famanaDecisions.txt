@@ -292,6 +292,17 @@ country_decisions = {
 		}
 		ai_will_do = {
 			factor = 1
+            modifier = {
+                factor = 0
+                AND = {
+                    capital_scope = {
+				        NOT = { has_province_modifier = great_desert_modifier }
+			        }
+                    NOT = {
+                        mission_completed = destribe_leave_the_desert
+                    }
+                }
+            }
 		}
     }
 
