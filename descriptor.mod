@@ -1,4 +1,4 @@
-version="1.4.0"
+version="1.3.0"
 tags={
 	"Map"
 	"Balance"
@@ -31,5 +31,5 @@ replace_path="decisions"
 replace_path="common/rebel_types"
 replace_path="missions"
 picture="thumbnail.png"
-supported_version="1.34.2"
+supported_version="1.33.3"
 remote_file_id="2686279554"
