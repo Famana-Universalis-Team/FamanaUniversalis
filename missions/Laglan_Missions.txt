@@ -1492,12 +1492,20 @@ lag_5 = {
                 duration = 9125
             }
             custom_tooltip = lagGetCoastalClaims
-            hidden_effect = {
-                oppia_superregion = {
-                    limit = {
-                        has_port = yes
+            if = {
+                limit = {
+                    OR = {
+                        has_country_flag = Lag_Beastmode_Ai
+                        ai = no
                     }
-                    add_claim = ROOT
+                }
+                hidden_effect = {
+                    oppia_superregion = {
+                        limit = {
+                            has_port = yes
+                        }
+                        add_claim = ROOT
+                    }
                 }
             }
         }

@@ -203,6 +203,24 @@ crown_kingdom_reform = {
 	fixed_rank = 2
 }
 
+tck_sar_reform = {
+	icon = "crowncity"
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	maintain_dynasty = yes
+	modifiers = {
+		all_estate_influence_modifier = -0.10
+		all_estate_loyalty_equilibrium = 0.05
+		global_autonomy = -0.05
+	}
+	potential = {
+		OR = {
+			was_tag = TCK
+			tag = TCK
+		}
+	}
+}
+
 gov_tonxara = {
 	icon = "mamluk_government"
 	allow_normal_conversion = no

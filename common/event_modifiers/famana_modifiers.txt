@@ -2174,3 +2174,63 @@ pya_lathvy = {
     tolerance_own = 1
     tolerance_heathen = -1
 }
+
+tck_sar_virtue = {
+    yearly_corruption = -0.10
+}
+
+tck_centralising_empire = {
+    diplomatic_annexation_cost = -0.2
+}
+
+tck_provencial_governors = {
+    governing_capacity = 100
+}
+
+tck_benevolent_example = {
+    diplomatic_reputation = 1
+}
+
+tck_ruthless_example = {
+    global_unrest = -1
+}
+
+tck_orabus_last_stand = {
+    local_unrest = 2
+}
+
+tck_disgraced_alatan = {
+    dip_advisor_cost = 0.15
+}
+
+tck_coastal_city = {
+    development_cost = -0.05
+    trade_goods_size = 1
+}
+
+tck_reformation_decision = {
+    tolerance_own = 2
+    tolerance_heathen = 1
+    tolerance_heretic = -2
+}
+
+tck_military_focus = {
+    army_tradition_from_battle = 0.33
+    mil_tech_cost_modifier = -0.10
+}
+
+tck_educational_focus = {
+    advisor_pool = 1
+    adm_tech_cost_modifier = -0.10
+}
+
+tck_gates_of_the_gomic = {
+    trade_steering = 0.20
+    light_ship_cost = -0.1
+}
+
+tck_ravsho_cavalry_techniques = {
+    cavalry_shock = 0.10
+    cavalry_fire = -0.05
+    cavalry_cost = -0.10
+}
