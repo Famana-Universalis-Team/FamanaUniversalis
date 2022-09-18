@@ -1,4 +1,4 @@
-country_decisions = {
+country_decisions = { 
 
 	achievement_from_the_ashes = {
 		major = yes
@@ -2475,6 +2475,129 @@ country_decisions = {
 		effect = {
 			add_country_modifier = {
 				name = achievement_rekindling_the_past_modifier
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	achievement_soy_malding = {
+		major = yes
+		potential = {
+			OR = {
+				AND = {
+					ai = no
+					default_game_settings = yes
+					normal_or_historical_nations = yes
+					normal_province_values = yes
+					#ironman = yes
+					start_date = 212.6.6
+					NOT = { num_of_custom_nations = 1 }
+					tag = SOY
+				}
+				has_country_flag = debug_achievements
+			}
+			NOT = {
+				has_country_modifier = achievement_soy_malding_modifier
+			}
+		}
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = tooltipIronmanAch
+				ironman = yes
+			}
+			6262 = {
+				units_in_province = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = achievement_soy_malding_modifier
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	achievement_dakka_dakka = {
+		major = yes
+		potential = {
+			OR = {
+				AND = {
+					ai = no
+					default_game_settings = yes
+					normal_or_historical_nations = yes
+					normal_province_values = yes
+					#ironman = yes
+					start_date = 212.6.6
+					NOT = { num_of_custom_nations = 1 }
+					has_country_flag = berserkers_flag
+				}
+				has_country_flag = debug_achievements
+			}
+			NOT = {
+				has_country_modifier = achievement_dakka_dakka_modifier
+			}
+		}
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = tooltipIronmanAch
+				ironman = yes
+			}
+			custom_trigger_tooltip = {
+				tooltip = 4activeBerskers
+				check_variable = {
+					which = Berserker_count
+					value = 4
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = achievement_dakka_dakka_modifier
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	achievement_sangre_por_sangre = {
+		major = yes
+		potential = {
+			OR = {
+				AND = {
+					ai = no
+					default_game_settings = yes
+					normal_or_historical_nations = yes
+					normal_province_values = yes
+					#ironman = yes
+					start_date = 212.6.6
+					NOT = { num_of_custom_nations = 1 }
+					religion = maldan
+					culture_group = Maldik
+				}
+				has_country_flag = debug_achievements
+			}
+			NOT = {
+				has_country_modifier = achievement_sangre_por_sangre_modifier
+			}
+		}
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = tooltipIronmanAch
+				ironman = yes
+			}
+			owns_core_province = 5337
+		}
+		effect = {
+			add_country_modifier = {
+				name = achievement_sangre_por_sangre_modifier
 				duration = -1
 			}
 		}

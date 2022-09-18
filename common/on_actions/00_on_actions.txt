@@ -45,6 +45,10 @@ on_startup = {
 			value = religion
 			who = ROOT
 		}
+		set_variable = {
+			which = Berserker_count
+			value = 0
+		}
 		if = {
 			limit = {
 				tag = ORC
@@ -4196,6 +4200,21 @@ on_mercenary_recruited = {
 			FROM = {
 				add_army_professionalism = -0.05
 			}
+		}
+	}
+	if = {
+		limit = {
+			ROOT = { mercenary_company = merc_berserkers_e_naravam }
+			ROOT = { mercenary_company = merc_berserkers_w_naravam }
+			ROOT = { mercenary_company = merc_berserkers_vamanya }
+			ROOT = { mercenary_company = merc_berserkers_nhl }
+			ROOT = { mercenary_company = merc_berserkers_orc }
+			ROOT = { mercenary_company = merc_berserkers_kly }
+			ROOT = { mercenary_company = merc_berserkers_mld }
+		}
+		change_variable = {
+			which = Berserker_count
+			count = 1
 		}
 	}
 }

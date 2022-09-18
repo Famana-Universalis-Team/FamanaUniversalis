@@ -1452,10 +1452,9 @@ merc_nabrozca_cingetoi = {
 	}
 }
 
-# Berserkers (East Naravam)
+# Berserkers
 merc_berserkers_e_naravam = {
     regiments_per_development = 0.025
-    home_province = 6293
 	cavalry_weight = 0
 	cavalry_cap = 0
 	cost_modifier = 0.6
@@ -1477,10 +1476,9 @@ merc_berserkers_e_naravam = {
 	}
 }
 
-# Berserkers (West Naravam)
+# Berserkers
 merc_berserkers_w_naravam = {
     regiments_per_development = 0.025
-    home_province = 6337
 	cavalry_weight = 0
 	cavalry_cap = 0
 	cost_modifier = 0.6
@@ -1494,6 +1492,7 @@ merc_berserkers_w_naravam = {
 		any_owned_province = {
 			region = western_naravam_region
 		}
+		total_development = 200
 	}
 	modifier = {
 		shock_damage_received = -0.15
@@ -1502,10 +1501,9 @@ merc_berserkers_w_naravam = {
 	}
 }
 
-# Berserkers (Vamanya)
+# Berserkers
 merc_berserkers_vamanya = {
     regiments_per_development = 0.025
-    home_province = 6361
 	cavalry_weight = 0
 	cavalry_cap = 0
 	cost_modifier = 0.6
@@ -1519,6 +1517,7 @@ merc_berserkers_vamanya = {
 		any_owned_province = {
 			superregion = west_estal_superregion
 		}
+		total_development = 400
 	}
 	modifier = {
 		shock_damage_received = -0.15
@@ -1527,10 +1526,9 @@ merc_berserkers_vamanya = {
 	}
 }
 
-# Berserkers (Nahallaia)
+# Berserkers
 merc_berserkers_nhl = {
     regiments_per_development = 0.025
-    home_province = 6191
 	cavalry_weight = 0
 	cavalry_cap = 0
 	cost_modifier = 0.6
@@ -1544,6 +1542,7 @@ merc_berserkers_nhl = {
 		any_owned_province = {
 			superregion = west_estal_superregion
 		}
+		total_development = 600
 	}
 	modifier = {
 		shock_damage_received = -0.15
@@ -1552,10 +1551,9 @@ merc_berserkers_nhl = {
 	}
 }
 
-# Berserkers (Ordica)
+# Berserkers
 merc_berserkers_orc = {
     regiments_per_development = 0.025
-    home_province = 6214
 	cavalry_weight = 0
 	cavalry_cap = 0
 	cost_modifier = 0.6
@@ -1569,6 +1567,7 @@ merc_berserkers_orc = {
 		any_owned_province = {
 			superregion = west_estal_superregion
 		}
+		total_development = 700
 	}
 	modifier = {
 		shock_damage_received = -0.15
@@ -1577,10 +1576,9 @@ merc_berserkers_orc = {
 	}
 }
 
-# Berserkers (Kolya)
+# Berserkers
 merc_berserkers_kly = {
     regiments_per_development = 0.025
-    home_province = 6265
 	cavalry_weight = 0
 	cavalry_cap = 0
 	cost_modifier = 0.6
@@ -1600,12 +1598,12 @@ merc_berserkers_kly = {
 		shock_damage = 0.33
 		discipline = 0.10
 	}
+	total_development = 800
 }
 
-# Berserkers (Maldik)
+# Berserkers
 merc_berserkers_mld = {
     regiments_per_development = 0.025
-    home_province = 6714
 	cavalry_weight = 0
 	cavalry_cap = 0
 	cost_modifier = 0.6
@@ -1624,6 +1622,7 @@ merc_berserkers_mld = {
 				region = east_ordica_region
 			}
 		}
+		total_development = 1500
 	}
 	modifier = {
 		shock_damage_received = -0.15
@@ -1635,7 +1634,6 @@ merc_berserkers_mld = {
 # Brulan Brawlers
 merc_brulan_brawlers = {
     regiments_per_development = 0.03
-    home_province = 6473 # brula
 	cavalry_weight = 0.0
 	cavalry_cap = 0
 	sprites = { berserker_sprites }
