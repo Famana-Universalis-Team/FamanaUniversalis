@@ -1,0 +1,55 @@
+naf_sprites = {
+	# Tests against every tag in game
+	country_trigger = {
+		tag = NAF
+	}
+
+	sprite_infantry = {
+		0 = NAF_LEGIONARY
+		1 = NAF_LEGIONARY
+		2 = NAF_LEGIONARY
+		3 = NAF_LEGIONARY
+	}
+
+	sprite_cavalry = {
+		0 = westerngfx_CAVALRY_1
+		1 = westerngfx_CAVALRY_2
+		2 = westerngfx_CAVALRY_3
+		3 = westerngfx_CAVALRY_4
+	}
+	
+	sprite_artillery = {
+		0 = westerngfx_ARTILLERY_1
+		1 = westerngfx_ARTILLERY_2
+		2 = westerngfx_ARTILLERY_3
+		3 = westerngfx_ARTILLERY_4
+	}
+}
+
+berserker_sprites = {
+	# Tests against every tag in game
+	country_trigger = {
+
+	}
+
+	sprite_infantry = {
+		0 = ORC_Berserkers
+		1 = ORC_Berserkers
+		2 = ORC_Berserkers
+		3 = ORC_Berserkers
+	}
+
+	sprite_cavalry = {
+		0 = westerngfx_CAVALRY_1
+		1 = westerngfx_CAVALRY_2
+		2 = westerngfx_CAVALRY_3
+		3 = westerngfx_CAVALRY_4
+	}
+	
+	sprite_artillery = {
+		0 = westerngfx_ARTILLERY_1
+		1 = westerngfx_ARTILLERY_2
+		2 = westerngfx_ARTILLERY_3
+		3 = westerngfx_ARTILLERY_4
+	}
+}

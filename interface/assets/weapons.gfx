@@ -133,6 +133,13 @@ objectTypes = {
 	}
 
 	pdxmesh = {
+		name = "lathvy_shield"
+		file = "gfx/models/Units/lathvy_shield.mesh"			
+		
+		scale = 0.5
+	}
+
+	pdxmesh = {
 		name = "indian_generic_03_type1_rifle"
 		file = "gfx/models/Units/asian_spear.mesh"
 		
@@ -218,7 +225,7 @@ objectTypes = {
 		name = "AZT_01_shield"
 		file = "gfx/models/Units/AZT_01_shield.mesh"			
 		
-		scale = 0.5
+		scale = 0.75
 	}
 	
 	pdxmesh = {
