@@ -187,7 +187,7 @@ tck_slot_1 = {
 					owned_by = ROOT
 					has_building = marketplace
 					has_building = workshop
-					grown_by_development = 3
+					num_of_times_improved = 3
 				}
 			}
         }
@@ -241,7 +241,7 @@ tck_slot_1 = {
 				AND = {
 					owned_by = ROOT
 					has_building = manufactory
-					grown_by_development = 3
+					num_of_times_improved = 3
 				}
 			}
         }
@@ -793,7 +793,7 @@ tck_slot_3 = {
 			5062 = {
 				AND = {
 					has_building = fort_15th
-					grown_by_development = 5
+					num_of_times_improved = 5
 				}
 			}
 			legitimacy = 100
@@ -1459,18 +1459,18 @@ tck_slot_5 = {
 					has_terrain = farmlands
 					has_terrain = grasslands
 				}
-				grown_by_development = 5
+				num_of_times_improved = 5
 			}
         }
 		effect = {
 			5066 = {
-				add_prosperity = 20
+				add_prosperity = 50
 			}
 			5050 = {
-				add_prosperity = 20
+				add_prosperity = 50
 			}
 			5407 = {
-				add_prosperity = 20
+				add_prosperity = 50
 			}
 		}
 		provinces_to_highlight = {
