@@ -35,15 +35,14 @@ objectTypes = {
 
 	pdxmesh = {
 		name = "NAF_LEGIONARY"
-		file = "gfx/models/Units/western_generic_01_type1.mesh"		
+		file = "gfx/models/Units/western_generic_02_type1.mesh"		
 		
-
-
-		animation = { id = "attack"				type = "spear_shield_attack_animation" }
-		animation = { id = "idle"				type = "spear_shield_idle_animation" }
-		animation = { id = "walk"				type = "spear_shield_moving_animation" }
+		animation = { id = "attack"				type = "polearm_onehanded_attack_animation" }
+		animation = { id = "idle"				type = "polearm_onehanded_idle_animation" }
+		animation = { id = "walk"				type = "polearm_onehanded_moving_animation" }
 		animation = { id = "death"				type = "polearm_twohanded_death_animation" }
 		animation = { id = "retreat"			type = "polearm_twohanded_retreat_animation" }
+		
 		
 		animation = { id = "horse_attack"		type = "cavalry_rider_attack_animation" }		
 		animation = { id = "horse_idle"			type = "cavalry_rider_idle_animation" }
