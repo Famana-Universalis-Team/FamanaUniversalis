@@ -12,6 +12,7 @@ chigim =
 		    religion = eastern_oppian
 		    religion = reformed_oppian
 		}
+		NOT = { has_country_flag = OneGod }
 	}
 	sprite = 13
 	
@@ -38,11 +39,15 @@ hovaki =
 	improve_relation_modifier = 0.20
 	
 	allow = {
+		NOT = {
+			has_country_flag = ShelerekGod
+		}
 		OR = {
 			religion = western_oppian
 		    religion = eastern_oppian
 		    religion = reformed_oppian
 		}
+		NOT = { has_country_flag = OneGod }
 	}
 	sprite = 14
 	
@@ -70,6 +75,7 @@ jayla =
 		    religion = eastern_oppian
 		    religion = reformed_oppian
 		}
+		NOT = { has_country_flag = OneGod }
 	}
 	sprite = 15
 	
@@ -97,6 +103,7 @@ nima =
 		    religion = eastern_oppian
 		    religion = reformed_oppian
 		}
+		NOT = { has_country_flag = OneGod }
 	}
 	sprite = 16
 	
@@ -128,6 +135,8 @@ roh =
 		    religion = eastern_oppian
 		    religion = reformed_oppian
 		}
+		NOT = { has_country_flag = OneGod }
+		NOT = { has_country_flag = AraGod }
 	}
 	sprite = 17
 	
@@ -151,6 +160,103 @@ yorlox =
 		    religion = eastern_oppian
 		    religion = reformed_oppian
 		}
+		NOT = { has_country_flag = OneGod }
+	}
+	sprite = 18
+	
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			personality = ai_balanced
+		}
+		modifier = {
+			factor = 2
+			personality = ai_militarist
+		}
+		modifier = {
+			factor = 0.5
+			personality = ai_capitalist
+		}		
+	}	
+}
+
+shelerek =
+{
+	development_cost = -0.15
+	global_supply_limit_modifier = 0.10
+	
+	allow = {
+		OR = {
+			religion = western_oppian
+		    religion = eastern_oppian
+		    religion = reformed_oppian
+		}
+		has_country_flag = ShelerekGod
+	}
+	sprite = 18
+	
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			personality = ai_balanced
+		}
+		modifier = {
+			factor = 2
+			personality = ai_militarist
+		}
+		modifier = {
+			factor = 0.5
+			personality = ai_capitalist
+		}		
+	}	
+}
+
+ara_oppian =
+{
+	tolerance_heathen = 2
+	global_missionary_strength = 0.02
+	
+	allow = {
+		OR = {
+			religion = western_oppian
+		    religion = eastern_oppian
+		    religion = reformed_oppian
+		}
+		has_country_flag = AraGod
+	}
+	sprite = 18
+	
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			personality = ai_balanced
+		}
+		modifier = {
+			factor = 2
+			personality = ai_militarist
+		}
+		modifier = {
+			factor = 0.5
+			personality = ai_capitalist
+		}		
+	}	
+}
+
+jayla_monotheism =
+{
+	discipline = 0.10
+	ae_impact = -0.20
+	
+	allow = {
+		OR = {
+			religion = western_oppian
+		    religion = eastern_oppian
+		    religion = reformed_oppian
+		}
+		has_country_flag = OneGod
 	}
 	sprite = 18
 	

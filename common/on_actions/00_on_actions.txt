@@ -84,6 +84,19 @@ on_startup = {
 				}
 			}
 		}
+		if = {
+			limit = {
+				tag = TCK
+			}
+			random_list = {
+				1 = {
+					set_country_flag = Lag_Beastmode_Ai
+				}
+				3 = {
+					#do nothing
+				}
+			}
+		}
 		#set_variable = {
 		#	which = MorXonReasonsPos
 		#	value = 0

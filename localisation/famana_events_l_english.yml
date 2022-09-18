@@ -2007,7 +2007,7 @@
  oppia.25.a:0 "A fine addition to our collection."
 
  oppia.26.t:0 "Rediscovery of Galagum's Urn!"
- oppia.26.d:0 "We have finally been able to find Galagum's Urn in [relic_event_target.GetName]. This was the urn containing the ashes of legendary diplomat Galagum Accaci which went missing in the chaos of post-collapse Oppia. How it ended up here we can only speculate, but at last we can bring it home."
+ oppia.26.d:0 "We have finally been able to find Galagum's Urn in [relic_event_target.GetName]. This was the urn containing the ashes of legendary diplomat Galagum Accati which went missing in the chaos of post-collapse Oppia. How it ended up here we can only speculate, but at last we can bring it home."
  oppia.26.a:0 "A fine addition to our collection."
 
  oppia.27.t:0 "Rediscovery of the First Imperial Banner!"
@@ -2048,4 +2048,30 @@
 
  oppia.34.t:0 "The Coronation"
  oppia.34.d:0 "Oppia hasn't had an Emperor in centuries. Sure, there was the Crown King of Sar, but that wasn't the same, even though he wore the same robes and the same crown. But with the consolidation of the Oppian culture, at long last the Crown King can regain his long lost title. Today, in the Great Temple of Quanex, Crown [Root.Monarch.GetTitle] [Root.Monarch.GetName] was crowned Emperor of Oppia in a semi-religious, semi-military celebration. The Empire of Oppia has officially been restored, under the great diplomatic genius of the Sar."
- oppia.34.a:0 "Long Live Emperor [Root.GetName]!"
+ oppia.34.a:0 "Long Live Emperor [Root.Monarch.GetName]!"
+
+ oppia.35.t:0 "The last of the Accati!"
+ oppia.35.d:0 "The Accati have been long-time rivals of the Sar, and pretenders to our kingdom. They were a cadet branch of the Emintas dynasty that held the Crown during the early days of the Oppian Empire. While the Emintas died out, their legacy carried on via the Accati, who were given stewardship over the great city of Elorak. They have however always been problematic for the Sar, such as going against the idea of our claim to Oppia, and hiring mercenaries from Maky and the Great Desert to fight wars for them.\nIt appears their sly ways have caught up to them, since after the fall of Ossor, their dynasty was scattered. Some fled; others renounced their titles to become commoners. Recently, we have however captured the two last surviving members of the Accati still laying a claim to their familial name, and hence the entire Empire of Oppia. We shall:"
+ oppia.35.a:0 "Crucify them."
+ oppia.35.b:0 "Exile them from Oppia."
+
+ oppia.36.t:0 "The last of the Orabus!"
+ oppia.36.d:0 "During the old Imperial days, the Orabus were known as a powerful non-noble family, as well as mercenary dealers. Their role in Oppian History doesn't start until the Great Gomic War, when the Marshal Orabus allied himself with the Lathvy warmongers and led a revolt that created independent Arlenta, crowning himself as king. Not only did they try to pollute the pure Oppian bloodlines, but they stole the Crown of Emintas itself as we tried to deliver it to Quanex. Needless to say, not a lot of people stood up to the Orabus when Mensel Sar dissolved their kingdom by force.\nSince the fall of Arlenta, we have however been looking for what remains of their dynasty, should they try to rise up again. Informants have since pointed us to a castle in Z'ne, which had the last surviving members of the Orabus inside. After they refused to surrender, our legions lay siege, during which the pretenders commited suicide. Despite their unfortunate end, this pretender line is no more."
+ oppia.36.a:0 "Good Riddance."
+
+ oppia.37.t:0 "The Alatan issue"
+ oppia.37.d:0 "The Alatan have been a so-far loyal noble family in Upper Oppia, lording over Lesas and Imogua. Despite this, in our recent purge of pretenders, they have come under scrutiny. For one, they have been growing unreasonably powerful, and some Sar members fear that they could challenge our house. This is especially so as they are related to the Dominag dynasty of Oppia, the panultimate Oppian dynasty, and so they could bring this claim up to overthrow us. The issue is how we should deal with the Alatan, considering that so far we still have good relations."
+ oppia.37.a:0 "Disgrace them over some minor issue."
+ oppia.37.b:0 "Invite them to a suspicious dinner..."
+
+ oppia.38.t:0 "The Oppian Pantheon"
+ oppia.38.d:0 "The Oppian Pantheon has been worshipped for centuries now; yet, with the radical amount of reforms we are passing, some are questioning its structure.\nSome believe that Hovaki is overvalued. Shelerek, the God of Nature, is technically more powerful, yet he is rarely worshipped in comparison.\nOthers propose that the Lathvy God Ara is actually an incarnation of Roh, who has left Oppian lands to focus on foreign territory. If so, we should worship him under this new alias as to not cause his anger.\nFinally, some of the most radical factions have begun to worship only Jayla. While monotheism would betray the core of our religion, it does appear to be on the rise."
+ oppia.38.a:0 "Replace Hovaki with Shelerek"
+ oppia.38.b:0 "Rename Roh to Ara"
+ oppia.38.c:0 "Embrace monotheism"
+ oppia.38.e:0 "Leave things as they are."
+
+ oppia.39.t:0 "The Oppian Schools"
+ oppia.39.d:0 "With our focus on innovation, comes the question of what to do with our vast network of schools under construction. While undoubtedly it would benefit us to use them in schooling nobles for statehood, the army proposes another use to train our generals."
+ oppia.39.a:0 "They will be military schools."
+ oppia.39.b:0 "Let them stay as aristocratic schools."

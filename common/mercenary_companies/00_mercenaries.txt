@@ -1691,3 +1691,26 @@ merc_howlers_of_oiko = {
 		religion = maschi
 	}
 }
+
+#Ravsho Kheshig
+merc_ravsho_kheshig = {
+    regiments_per_development = 0.02 #small
+	cavalry_weight = 0.75
+	artillery_weight = 0
+	cavalry_cap = 16
+    home_province = 5076
+	cost_modifier = 0.45
+	sprites = { muslimgfx_sprite_pack }
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		custom_trigger_tooltip = {
+			tooltip = TckRavshoMercsReq
+			has_country_flag = tck_ravsho_mercs_flag
+		}
+	}
+	modifier = {
+		shock_damage_received = -0.35
+		land_morale = 0.10
+		discipline = 0.10
+	}
+}

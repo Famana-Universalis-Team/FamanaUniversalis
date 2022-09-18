@@ -1639,4 +1639,211 @@ country_event = {
 	}
 }
 
+#The end of the Accati
+country_event = {
+	id = oppia.35
+	title = oppia.35.t
+	desc = oppia.35.d
+	picture = BAD_WITH_MONARCH_eventPicture
+	fire_only_once = yes
+	
+	trigger = {
+		has_country_flag = hunting_down_pretenders
+		mission_completed = tck_take_out_accaci
+	}
+
+	mean_time_to_happen = {
+		months = 2
+	}
+	
+	option = {
+		name = oppia.35.b
+		ai_chance = {
+			factor = 1
+		}
+		set_country_flag = no_accati
+		add_country_modifier = {
+			name = tck_benevolent_example
+			duration = 3650
+		}
+	}
+
+	option = {
+		name = oppia.35.a
+		set_country_flag = no_accati
+		ai_chance = {
+			factor = 1
+		}
+		add_country_modifier = {
+			name = tck_ruthless_example
+			duration = 3650
+		}
+	}
+}
+
+#The end of the Orabus
+country_event = {
+	id = oppia.36
+	title = oppia.36.t
+	desc = oppia.36.d
+	picture = BAD_WITH_MONARCH_eventPicture
+	fire_only_once = yes
+	
+	trigger = {
+		has_country_flag = hunting_down_pretenders
+		mission_completed = tck_invade_arlenta
+		5134 = {
+			OR = {
+				owned_by = ROOT
+				owner = {
+					is_subject_of = ROOT
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	option = {
+		name = oppia.36.a
+		ai_chance = {
+			factor = 1
+		}
+		add_prestige = 5
+		5134 = {
+			add_province_modifier = {
+				name = tck_orabus_last_stand
+				duration = 3650
+			}
+		}
+		set_country_flag = no_orabus
+	}
+}
+
+#The end of the Alatan
+country_event = {
+	id = oppia.37
+	title = oppia.37.t
+	desc = oppia.37.d
+	picture = BAD_WITH_MONARCH_eventPicture
+	fire_only_once = yes
+	
+	trigger = {
+		has_country_flag = hunting_down_pretenders
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = {
+		name = oppia.37.a
+		ai_chance = {
+			factor = 1
+		}
+		set_country_flag = no_alatan
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = -10
+		}
+		random_province = {
+			limit = {
+				culture = Quanexite
+			}
+			noble_rebels = 2
+		}
+	}
+
+	option = {
+		name = oppia.37.b
+		set_country_flag = no_alatan
+		ai_chance = {
+			factor = 1
+		}
+		add_country_modifier = {
+			name = tck_disgraced_alatan
+			duration = 3650
+		}
+	}
+}
+
+#Religion trolling
+country_event = {
+	id = oppia.38
+	title = oppia.38.t
+	desc = oppia.38.d
+	picture = POPE_PREACHING_eventPicture
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = oppia.38.a
+		ai_chance = {
+			factor = 1
+		}
+		custom_tooltip = SHELEREK_RESTORED
+		set_country_flag = ShelerekGod
+	}
+
+	option = {
+		name = oppia.38.b
+		ai_chance = {
+			factor = 1
+		}
+		custom_tooltip = ARA_RESTORED
+		set_country_flag = AraGod
+	}
+
+	option = {
+		name = oppia.38.c
+		ai_chance = {
+			factor = 1
+		}
+		add_prestige = -20
+		custom_tooltip = MONOTHEISM_RESTORED
+		set_country_flag = OneGod
+	}
+
+	option = {
+		name = oppia.38.e
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+#Oppian Schools
+country_event = {
+	id = oppia.39
+	title = oppia.39.t
+	desc = oppia.39.d
+	picture = BIG_BOOK_eventPicture
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = oppia.39.a
+		ai_chance = {
+			factor = 1
+		}
+		add_country_modifier = {
+			name = tck_military_focus
+			duration = 9125
+		}
+	}
+
+	option = {
+		name = oppia.39.b
+		ai_chance = {
+			factor = 1
+		}
+		add_country_modifier = {
+			name = tck_educational_focus
+			duration = 9125
+		}
+	}
+}
+
 #### / TCK MISSIONS
