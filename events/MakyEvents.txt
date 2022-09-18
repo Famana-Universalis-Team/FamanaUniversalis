@@ -1246,11 +1246,9 @@ country_event = { #Vaximorian conversion
 				change_religion = vaximorian
 			}
 		}
-		every_country = {
+		every_known_country = {
 			limit = {
-				capital_scope = {
-					region = maky_region
-				}
+				religion = mak
 			}
 			add_opinion = {
 				who = ROOT
