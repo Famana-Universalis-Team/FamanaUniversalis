@@ -26,9 +26,12 @@ tck_slot_1 = {
 			}
         }
 		effect = {
-			add_casus_belli = {
-				target = UMZ
-				type = cb_restore_personal_union
+			custom_tooltip = tckPUCBumz
+			hidden_effect = {
+				add_casus_belli = {
+					target = UMZ
+					type = cb_restore_personal_union
+				}
 			}
 			goll_area = {
 				add_permanent_claim = ROOT
@@ -471,9 +474,12 @@ tck_slot_2 = {
 			}
         }
 		effect = {
-			add_casus_belli = {
-				target = NUT
-				type = cb_restore_personal_union
+			custom_tooltip = tckPUCBnut
+			hidden_effect = {
+				add_casus_belli = {
+					target = NUT
+					type = cb_restore_personal_union
+				}
 			}
 			add_country_modifier = {
 				name = tck_to_elorak
