@@ -2605,4 +2605,126 @@ country_decisions = {
 			factor = 1
 		}
 	}
+
+	achievement_the_hot_wind_blowing = {
+		major = yes
+		potential = {
+			OR = {
+				AND = {
+					ai = no
+					default_game_settings = yes
+					normal_or_historical_nations = yes
+					normal_province_values = yes
+					#ironman = yes
+					start_date = 212.6.6
+					NOT = { num_of_custom_nations = 1 }
+					tag = KKR
+				}
+				has_country_flag = debug_achievements
+			}
+			NOT = {
+				has_country_modifier = achievement_the_hot_wind_blowing_modifier
+			}
+		}
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = tooltipIronmanAch
+				ironman = yes
+			}
+			mission_completed = antiash_happy_tribes
+			mission_completed = antiash_xon
+			custom_trigger_tooltip = {
+				tooltip = FORMED_ANTIASH
+				has_global_flag = antiash_domain_proclaimed
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = achievement_the_hot_wind_blowing_modifier
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	achievement_povratak = {
+		major = yes
+		potential = {
+			OR = {
+				AND = {
+					ai = no
+					default_game_settings = yes
+					normal_or_historical_nations = yes
+					normal_province_values = yes
+					#ironman = yes
+					start_date = 212.6.6
+					NOT = { num_of_custom_nations = 1 }
+					tag = KLG
+				}
+				has_country_flag = debug_achievements
+			}
+			NOT = {
+				has_country_modifier = achievement_povratak_modifier
+			}
+		}
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = tooltipIronmanAch
+				ironman = yes
+			}
+			mission_completed = klg_great_kalarga
+		}
+		effect = {
+			add_country_modifier = {
+				name = achievement_povratak_modifier
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	achievement_gadan_games = {
+		major = yes
+		potential = {
+			OR = {
+				AND = {
+					ai = no
+					default_game_settings = yes
+					normal_or_historical_nations = yes
+					normal_province_values = yes
+					#ironman = yes
+					start_date = 212.6.6
+					NOT = { num_of_custom_nations = 1 }
+					was_tag = GDA
+				}
+				has_country_flag = debug_achievements
+			}
+			NOT = {
+				has_country_modifier = achievement_gadan_games_modifier
+			}
+		}
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = tooltipIronmanAch
+				ironman = yes
+			}
+			num_of_owned_provinces_with = {
+				value = 100
+				religion = gadan
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = achievement_gadan_games_modifier
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
 }
