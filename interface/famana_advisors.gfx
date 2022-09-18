@@ -2056,7 +2056,7 @@ spriteTypes = {
 
 
 	spriteType = {
-		name = "GFX_advisor_Makyan_C_artist"
+		name = "GFX_advisor_Makyna_artist"
 		texturefile = "gfx//interface//advisors//mak_advisors//muslim_artist.dds"
 		noOfFrames = 1
 		norefcount = yes
@@ -2065,7 +2065,7 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = "GFX_advisor_Makyan_C_philosopher"
+		name = "GFX_advisor_Makyna_philosopher"
 		texturefile = "gfx//interface//advisors//mak_advisors//muslim_philosopher.dds"
 		noOfFrames = 1
 		norefcount = yes
@@ -2074,7 +2074,7 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = "GFX_advisor_Makyan_C_natural_scientist"
+		name = "GFX_advisor_Makyna_natural_scientist"
 		texturefile = "gfx//interface//advisors//mak_advisors//muslim_natural_scientist.dds"
 		noOfFrames = 1
 		norefcount = yes
@@ -2083,7 +2083,7 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = "GFX_advisor_Makyan_C_theologian"
+		name = "GFX_advisor_Makyna_theologian"
 		texturefile = "gfx//interface//advisors//mak_advisors//muslim_theologian.dds"
 		noOfFrames = 1
 		norefcount = yes
@@ -2092,7 +2092,7 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = "GFX_advisor_Makyan_C_inquisitor"
+		name = "GFX_advisor_Makyna_inquisitor"
 		texturefile = "gfx//interface//advisors//mak_advisors//muslim_inquisitor.dds"
 		noOfFrames = 1
 		norefcount = yes
@@ -2101,7 +2101,7 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = "GFX_advisor_Makyan_C_master_of_mint"
+		name = "GFX_advisor_Makyna_master_of_mint"
 		texturefile = "gfx//interface//advisors//mak_advisors//muslim_master_of_mint.dds"
 		noOfFrames = 1
 		norefcount = yes
@@ -2110,7 +2110,7 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = "GFX_advisor_Makyan_C_treasurer"
+		name = "GFX_advisor_Makyna_treasurer"
 		texturefile = "gfx//interface//advisors//mak_advisors//muslim_treasurer.dds"
 		noOfFrames = 1
 		norefcount = yes
@@ -2119,7 +2119,7 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = "GFX_advisor_Makyan_C_statesman"
+		name = "GFX_advisor_Makyna_statesman"
 		texturefile = "gfx//interface//advisors//mak_advisors//muslim_statesman.dds"
 		noOfFrames = 1
 		norefcount = yes
@@ -2128,7 +2128,7 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = "GFX_advisor_Makyan_C_colonial_governor"
+		name = "GFX_advisor_Makyna_colonial_governor"
 		texturefile = "gfx//interface//advisors//mak_advisors//muslim_colonial_governor.dds"
 		noOfFrames = 1
 		norefcount = yes
@@ -2137,7 +2137,7 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = "GFX_advisor_Makyan_C_diplomat"
+		name = "GFX_advisor_Makyna_diplomat"
 		texturefile = "gfx//interface//advisors//mak_advisors//muslim_diplomat.dds"
 		noOfFrames = 1
 		norefcount = yes
@@ -2146,7 +2146,7 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = "GFX_advisor_Makyan_C_naval_reformer"
+		name = "GFX_advisor_Makyna_naval_reformer"
 		texturefile = "gfx//interface//advisors//mak_advisors//muslim_naval_reformer.dds"
 		noOfFrames = 1
 		norefcount = yes
@@ -2155,7 +2155,7 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = "GFX_advisor_Makyan_C_navigator"
+		name = "GFX_advisor_Makyna_navigator"
 		texturefile = "gfx//interface//advisors//mak_advisors//muslim_navigator.dds"
 		noOfFrames = 1
 		norefcount = yes
@@ -2164,7 +2164,7 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = "GFX_advisor_Makyan_C_trader"
+		name = "GFX_advisor_Makyna_trader"
 		texturefile = "gfx//interface//advisors//mak_advisors//muslim_trader.dds"
 		noOfFrames = 1
 		norefcount = yes
@@ -2173,7 +2173,7 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = "GFX_advisor_Makyan_C_spymaster"
+		name = "GFX_advisor_Makyna_spymaster"
 		texturefile = "gfx//interface//advisors//mak_advisors//muslim_spymaster.dds"
 		noOfFrames = 1
 		norefcount = yes
@@ -2182,7 +2182,7 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = "GFX_advisor_Makyan_C_grand_captain"
+		name = "GFX_advisor_Makyna_grand_captain"
 		texturefile = "gfx//interface//advisors//mak_advisors//muslim_grand_captain.dds"
 		noOfFrames = 1
 		norefcount = yes
@@ -2191,7 +2191,7 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = "GFX_advisor_Makyan_C_commandant"
+		name = "GFX_advisor_Makyna_commandant"
 		texturefile = "gfx//interface//advisors//mak_advisors//muslim_commandant.dds"
 		noOfFrames = 1
 		norefcount = yes
@@ -2200,7 +2200,7 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = "GFX_advisor_Makyan_C_army_organiser"
+		name = "GFX_advisor_Makyna_army_organiser"
 		texturefile = "gfx//interface//advisors//mak_advisors//muslim_army_organiser.dds"
 		noOfFrames = 1
 		norefcount = yes
@@ -2209,7 +2209,7 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = "GFX_advisor_Makyan_C_army_reformer"
+		name = "GFX_advisor_Makyna_army_reformer"
 		texturefile = "gfx//interface//advisors//mak_advisors//muslim_army_reformer.dds"
 		noOfFrames = 1
 		norefcount = yes
@@ -2218,7 +2218,7 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = "GFX_advisor_Makyan_C_recruitmaster"
+		name = "GFX_advisor_Makyna_recruitmaster"
 		texturefile = "gfx//interface//advisors//mak_advisors//muslim_recruitmaster.dds"
 		noOfFrames = 1
 		norefcount = yes
@@ -2227,7 +2227,7 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = "GFX_advisor_Makyan_C_fortification_expert"
+		name = "GFX_advisor_Makyna_fortification_expert"
 		texturefile = "gfx//interface//advisors//mak_advisors//muslim_fortification_expert.dds"
 		noOfFrames = 1
 		norefcount = yes
@@ -2236,7 +2236,7 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = "GFX_advisor_Makyan_C_quartermaster"
+		name = "GFX_advisor_Makyna_quartermaster"
 		texturefile = "gfx//interface//advisors//mak_advisors//muslim_quartermaster.dds"
 		noOfFrames = 1
 		norefcount = yes
@@ -2245,7 +2245,7 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = "GFX_advisor_Makyan_C_noAdvisorType"
+		name = "GFX_advisor_Makyna_noAdvisorType"
 		texturefile = "gfx//interface//advisors//mak_advisors//muslim_noAdvisorType.dds"
 		noOfFrames = 1
 		norefcount = yes
@@ -2254,7 +2254,7 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_advisor_Makyan_C_artist_female"
+		name = "GFX_advisor_Makyna_artist_female"
 		texturefile = "gfx//interface//advisors//mak_advisors//muslim_artist_female.dds"
 		noOfFrames = 1
 		norefcount = yes
@@ -2263,7 +2263,7 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = "GFX_advisor_Makyan_C_philosopher_female"
+		name = "GFX_advisor_Makyna_philosopher_female"
 		texturefile = "gfx//interface//advisors//mak_advisors//muslim_philosopher_female.dds"
 		noOfFrames = 1
 		norefcount = yes
@@ -2272,7 +2272,7 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = "GFX_advisor_Makyan_C_natural_scientist_female"
+		name = "GFX_advisor_Makyna_natural_scientist_female"
 		texturefile = "gfx//interface//advisors//mak_advisors//muslim_natural_scientist_female.dds"
 		noOfFrames = 1
 		norefcount = yes
@@ -2281,7 +2281,7 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = "GFX_advisor_Makyan_C_theologian_female"
+		name = "GFX_advisor_Makyna_theologian_female"
 		texturefile = "gfx//interface//advisors//mak_advisors//muslim_theologian_female.dds"
 		noOfFrames = 1
 		norefcount = yes
@@ -2290,7 +2290,7 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = "GFX_advisor_Makyan_C_inquisitor_female"
+		name = "GFX_advisor_Makyna_inquisitor_female"
 		texturefile = "gfx//interface//advisors//mak_advisors//muslim_inquisitor_female.dds"
 		noOfFrames = 1
 		norefcount = yes
@@ -2299,7 +2299,7 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = "GFX_advisor_Makyan_C_master_of_mint_female"
+		name = "GFX_advisor_Makyna_master_of_mint_female"
 		texturefile = "gfx//interface//advisors//mak_advisors//muslim_master_of_mint_female.dds"
 		noOfFrames = 1
 		norefcount = yes
@@ -2308,7 +2308,7 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = "GFX_advisor_Makyan_C_treasurer_female"
+		name = "GFX_advisor_Makyna_treasurer_female"
 		texturefile = "gfx//interface//advisors//mak_advisors//muslim_treasurer_female.dds"
 		noOfFrames = 1
 		norefcount = yes
@@ -2317,7 +2317,7 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = "GFX_advisor_Makyan_C_statesman_female"
+		name = "GFX_advisor_Makyna_statesman_female"
 		texturefile = "gfx//interface//advisors//mak_advisors//muslim_statesman_female.dds"
 		noOfFrames = 1
 		norefcount = yes
@@ -2326,7 +2326,7 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = "GFX_advisor_Makyan_C_colonial_governor_female"
+		name = "GFX_advisor_Makyna_colonial_governor_female"
 		texturefile = "gfx//interface//advisors//mak_advisors//muslim_colonial_governor_female.dds"
 		noOfFrames = 1
 		norefcount = yes
@@ -2335,7 +2335,7 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = "GFX_advisor_Makyan_C_diplomat_female"
+		name = "GFX_advisor_Makyna_diplomat_female"
 		texturefile = "gfx//interface//advisors//mak_advisors//muslim_diplomat_female.dds"
 		noOfFrames = 1
 		norefcount = yes
@@ -2344,7 +2344,7 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = "GFX_advisor_Makyan_C_naval_reformer_female"
+		name = "GFX_advisor_Makyna_naval_reformer_female"
 		texturefile = "gfx//interface//advisors//mak_advisors//muslim_naval_reformer_female.dds"
 		noOfFrames = 1
 		norefcount = yes
@@ -2353,7 +2353,7 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = "GFX_advisor_Makyan_C_navigator_female"
+		name = "GFX_advisor_Makyna_navigator_female"
 		texturefile = "gfx//interface//advisors//mak_advisors//muslim_navigator_female.dds"
 		noOfFrames = 1
 		norefcount = yes
@@ -2362,7 +2362,7 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = "GFX_advisor_Makyan_C_trader_female"
+		name = "GFX_advisor_Makyna_trader_female"
 		texturefile = "gfx//interface//advisors//mak_advisors//muslim_trader_female.dds"
 		noOfFrames = 1
 		norefcount = yes
@@ -2371,7 +2371,7 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = "GFX_advisor_Makyan_C_spymaster_female"
+		name = "GFX_advisor_Makyna_spymaster_female"
 		texturefile = "gfx//interface//advisors//mak_advisors//muslim_spymaster_female.dds"
 		noOfFrames = 1
 		norefcount = yes
@@ -2380,7 +2380,7 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = "GFX_advisor_Makyan_C_grand_captain_female"
+		name = "GFX_advisor_Makyna_grand_captain_female"
 		texturefile = "gfx//interface//advisors//mak_advisors//muslim_grand_captain_female.dds"
 		noOfFrames = 1
 		norefcount = yes
@@ -2389,7 +2389,7 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = "GFX_advisor_Makyan_C_commandant_female"
+		name = "GFX_advisor_Makyna_commandant_female"
 		texturefile = "gfx//interface//advisors//mak_advisors//muslim_commandant_female.dds"
 		noOfFrames = 1
 		norefcount = yes
@@ -2398,7 +2398,7 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = "GFX_advisor_Makyan_C_army_organiser_female"
+		name = "GFX_advisor_Makyna_army_organiser_female"
 		texturefile = "gfx//interface//advisors//mak_advisors//muslim_army_organiser_female.dds"
 		noOfFrames = 1
 		norefcount = yes
@@ -2407,7 +2407,7 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = "GFX_advisor_Makyan_C_army_reformer_female"
+		name = "GFX_advisor_Makyna_army_reformer_female"
 		texturefile = "gfx//interface//advisors//mak_advisors//muslim_army_reformer_female.dds"
 		noOfFrames = 1
 		norefcount = yes
@@ -2416,7 +2416,7 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = "GFX_advisor_Makyan_C_recruitmaster_female"
+		name = "GFX_advisor_Makyna_recruitmaster_female"
 		texturefile = "gfx//interface//advisors//mak_advisors//muslim_recruitmaster_female.dds"
 		noOfFrames = 1
 		norefcount = yes
@@ -2425,7 +2425,7 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = "GFX_advisor_Makyan_C_fortification_expert_female"
+		name = "GFX_advisor_Makyna_fortification_expert_female"
 		texturefile = "gfx//interface//advisors//mak_advisors//muslim_fortification_expert_female.dds"
 		noOfFrames = 1
 		norefcount = yes
@@ -2434,7 +2434,7 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = "GFX_advisor_Makyan_C_quartermaster_female"
+		name = "GFX_advisor_Makyna_quartermaster_female"
 		texturefile = "gfx//interface//advisors//mak_advisors//muslim_quartermaster_female.dds"
 		noOfFrames = 1
 		norefcount = yes
@@ -2443,7 +2443,7 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = "GFX_advisor_Makyan_C_noAdvisorType_female"
+		name = "GFX_advisor_Makyna_noAdvisorType_female"
 		texturefile = "gfx//interface//advisors//mak_advisors//muslim_noAdvisorType_female.dds"
 		noOfFrames = 1
 		norefcount = yes
