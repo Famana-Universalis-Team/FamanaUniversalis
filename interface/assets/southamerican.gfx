@@ -73,11 +73,11 @@ objectTypes = {
 		name = "south_american_generic_02_type1"
 		file = "gfx/models/Units/south_american_generic_02_type1.mesh"			
 
-		animation = { id = "idle"				type = "rifleman_idle_animation" }
-		animation = { id = "walk"				type = "rifleman_moving_animation" }
-		animation = { id = "attack"				type = "rifleman_attack_animation" }
+		animation = { id = "attack"				type = "spear_shield_attack_animation" }
+		animation = { id = "idle"				type = "spear_shield_idle_animation" }
+		animation = { id = "walk"				type = "spear_shield_moving_animation" }
 		animation = { id = "death"				type = "polearm_twohanded_death_animation" }
-		animation = { id = "retreat"			type = "rifleman_retreat_animation" }
+		animation = { id = "retreat"			type = "polearm_twohanded_retreat_animation" }
 		
 		animation = { id = "horse_attack"		type = "cavalry_rider_attack_animation" }		
 		animation = { id = "horse_idle"			type = "cavalry_rider_idle_animation" }
