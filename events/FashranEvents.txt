@@ -748,26 +748,25 @@ country_event = { #Emtik Rights
 		5692 = {
 			add_province_modifier = { 
 				name = emtik_rights
-				duration = 36500
+				duration = -1
 			}
 		}
 		5691 = {
 			add_province_modifier = { 
 				name = emtik_rights
-				duration = 36500
+				duration = -1
 			}
 		}
         5693 = {
 			add_province_modifier = { 
 				name = emtik_rights
-				duration = 36500
+				duration = -1
 			}
 		}
 		add_country_modifier = { 
 			name = fas_emtik_rights
 			duration = -1  
-		
-        }   
+        }
 		add_accepted_culture = Emtik
 		set_global_flag = after_emtik_rights
     }
