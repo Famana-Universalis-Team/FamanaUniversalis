@@ -8,7 +8,7 @@ tck_slot_1 = {
 	}
 	tck_restore_umzat = {
 		icon = mission_monarch_in_throne_room
-		required_missions = { tck_the_good_king }
+		required_missions = { tck_the_good_king } 
 		position = 2
 		trigger = {
 			army_size_percentage = 1
