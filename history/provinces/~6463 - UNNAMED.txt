@@ -1,7 +1,7 @@
 #Written with Eu4 Easy Province Creator by emiroercn
 #UNNAMED
 culture = Old_Gacin
-religion = animism
+religion = sotharyik
 hre = no
 base_tax = 1
 base_production = 1
@@ -11,7 +11,9 @@ add_core = DRK
 owner = DRK
 controller = DRK
 capital = "Nemudi"
- 
+discovered_by = naravami_tech_gr
+
+
 
 
 
