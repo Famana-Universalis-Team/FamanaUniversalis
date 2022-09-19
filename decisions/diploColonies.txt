@@ -1514,12 +1514,12 @@ country_decisions = {
 			province_id = 6465
 		}
 		allow = {
-			###is_free_or_tributary_trigger = yes
 			is_at_war = no
 			mil_power = 200
-			is_migratory_tribe = no
+			NOT = { has_reform = naravami_tribe_reform }
 		}
 		effect = {
+			add_mil_power = -200
 			6465 = {
 				create_colony_mission_reward_province = { country = ROOT }
 			}

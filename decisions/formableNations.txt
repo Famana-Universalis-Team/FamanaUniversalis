@@ -5275,7 +5275,7 @@ country_decisions = {
 		major = yes
 		potential = {
 			AND = {
-				culture = Old_Gacin
+				primary_culture = Old_Gacin
 				OR = {
 					was_tag = SVL
 					was_tag = GLJ
@@ -5283,6 +5283,12 @@ country_decisions = {
 					was_tag = SVN
 					was_tag = ROE
 					was_tag = DRK
+					tag = SVL
+					tag = GLJ
+					tag = ATH
+					tag = SVN
+					tag = ROE
+					tag = DRK
 				}
 			}
 		}
