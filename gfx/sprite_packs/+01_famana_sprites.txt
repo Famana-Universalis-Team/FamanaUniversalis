@@ -63,6 +63,33 @@ pexto_sprites = {
 	}
 }
 
+gacin_sprites = {
+	country_trigger = {
+		primary_culture = Old_Gacin
+	}
+
+	sprite_infantry = {
+		0 = inuitgfx_INFANTRY_1
+		1 = inuitgfx_INFANTRY_1
+		2 = inuitgfx_INFANTRY_2
+		3 = inuitgfx_INFANTRY_2
+	}
+
+	sprite_cavalry = {
+		0 = inuitgfx_CAVALRY_1
+		1 = inuitgfx_CAVALRY_1
+		2 = inuitgfx_CAVALRY_1
+		3 = inuitgfx_CAVALRY_1
+	}
+	
+	sprite_artillery = {
+		0 = inuitgfx_INFANTRY_1
+		1 = inuitgfx_INFANTRY_1
+		2 = inuitgfx_INFANTRY_1
+		3 = inuitgfx_INFANTRY_1
+	}
+}
+
 berserker_sprites = {
 	# Tests against every tag in game
 	country_trigger = {
