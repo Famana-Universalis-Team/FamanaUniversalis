@@ -157,7 +157,7 @@ country_event = {
         }
         custom_tooltip = rdum_migrate_tooltip
         grant_independence = yes
-        add_prestige = -10s
+        add_prestige = -10
         add_country_modifier = {
             name = rdum_dev
             duration = 1825
@@ -210,6 +210,10 @@ country_event = {
 			has_country_flag = has_had_naravam3
 		}
 	}
+
+    immediate = {
+        set_country_flag = has_had_naravam3
+    }
 	
 	mean_time_to_happen = {
 		months = 12
@@ -218,7 +222,7 @@ country_event = {
 	option = {
 		name = naravam.3.a
 		ai_chance = { factor = 1 }
-		set_country_flag = has_had_naravam3
+		#set_country_flag = has_had_naravam3
 		add_country_modifier = {
 			name = call_of_the_frontier_naravam
 			duration = 18250

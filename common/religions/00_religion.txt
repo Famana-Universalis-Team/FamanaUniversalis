@@ -888,6 +888,7 @@ lathvy_group = {
 			ordic
 			lathvy
 			maldan
+			sotharyik
 		}
 		allowed_conversion = {
 			lathvy
@@ -1004,6 +1005,7 @@ lathvy_group = {
 			bamali
 			ordic
 			maldan
+			sotharyik
 		}
 		
 	}
@@ -1240,7 +1242,7 @@ xalian_group = {
 		icon = 34
 		color = { 220 255 10 }
 		country = {
-			global_missionary_strength = 0.01
+			global_heathen_missionary_strength = 0.01
 			production_efficiency = 0.15
 		}
 		country_as_secondary = {
@@ -1967,6 +1969,27 @@ north_estali = {
 		heretic = { UGRONIS }
 
 		harmonized_modifier = harmonized_gotzlic
+		
+		crusade_name = HOLY_WAR
+	}
+	sotharyik = {
+		color = { 55 52 130 }
+		icon = 36
+		country = {
+			same_culture_advisor_cost = -0.20
+			relation_with_same_culture = 25
+		}
+		country_as_secondary = {
+			diplomatic_reputation = 1
+			global_autonomy = -0.025
+		}
+		province = {
+			local_missionary_strength = 0.02
+		}
+		
+		heretic = { LOST_SPIRIT }
+
+		harmonized_modifier = harmonized_sotharyik
 		
 		crusade_name = HOLY_WAR
 	}

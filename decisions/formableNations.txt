@@ -5277,12 +5277,6 @@ country_decisions = {
 			AND = {
 				primary_culture = Old_Gacin
 				OR = {
-					was_tag = SVL
-					was_tag = GLJ
-					was_tag = ATH
-					was_tag = SVN
-					was_tag = ROE
-					was_tag = DRK
 					tag = SVL
 					tag = GLJ
 					tag = ATH
@@ -5301,6 +5295,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			adm_tech = 20
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
 			owns_core_province = 6464
@@ -5310,7 +5305,6 @@ country_decisions = {
 				region = gacil_region
 			}
 			is_tribal = no
-			adm_tech = 20
 		}
 		effect = {
 			restore_country_name = yes
@@ -5333,6 +5327,12 @@ country_decisions = {
 					NOT = { government_rank = 2 }
 				}
 				set_government_rank = 2
+			}
+			gacil_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = GCL
 			}
 			add_country_modifier = {
 				name = "centralization_modifier"

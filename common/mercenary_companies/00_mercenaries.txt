@@ -1492,7 +1492,7 @@ merc_berserkers_w_naravam = {
 		any_owned_province = {
 			region = western_naravam_region
 		}
-		total_development = 200
+		total_development = 50
 	}
 	modifier = {
 		shock_damage_received = -0.15
@@ -1517,7 +1517,7 @@ merc_berserkers_vamanya = {
 		any_owned_province = {
 			superregion = west_estal_superregion
 		}
-		total_development = 400
+		total_development = 100
 	}
 	modifier = {
 		shock_damage_received = -0.15
@@ -1542,7 +1542,7 @@ merc_berserkers_nhl = {
 		any_owned_province = {
 			superregion = west_estal_superregion
 		}
-		total_development = 600
+		total_development = 250
 	}
 	modifier = {
 		shock_damage_received = -0.15
@@ -1567,7 +1567,7 @@ merc_berserkers_orc = {
 		any_owned_province = {
 			superregion = west_estal_superregion
 		}
-		total_development = 700
+		total_development = 500
 	}
 	modifier = {
 		shock_damage_received = -0.15
@@ -1598,7 +1598,7 @@ merc_berserkers_kly = {
 		shock_damage = 0.33
 		discipline = 0.10
 	}
-	total_development = 800
+	total_development = 1000
 }
 
 # Berserkers
@@ -1637,6 +1637,7 @@ merc_brulan_brawlers = {
 	cavalry_weight = 0.0
 	cavalry_cap = 0
 	sprites = { berserker_sprites }
+	home_province = 6473
     trigger = {
 		is_allowed_to_recruit_mercenaries = yes
 		OR = {

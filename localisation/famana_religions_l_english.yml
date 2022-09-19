@@ -632,6 +632,17 @@
  maldan_rebels_desc:0 "Religious fanatics tend to rise up in provinces controlled by nations of a different faith. They seek to spread their faith and smite all unbelievers."
  maldan_rebels_army:0 "$RELIGION$ Army"
  PALDIK: "Paldik"
+
+ sotharyik:0 "Sotharyik"
+ sotharyik_religion_desc:0 "The native peoples of Gacil have traditionally practiced Sotharyik, a perceived form of magic wherein shamans connect with animal spirits to increase their wisdom and strength."
+
+ sotharyik_rebels_demand:0 "Convert $COUNTRYNAME$"
+ sotharyik_rebels_demand_desc:0 "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
+ sotharyik_rebels_title:0 "Religious"
+ sotharyik_rebels_name:0 "$RELIGION$ Zealots"
+ sotharyik_rebels_desc:0 "Religious fanatics tend to rise up in provinces controlled by nations of a different faith. They seek to spread their faith and smite all unbelievers."
+ sotharyik_rebels_army:0 "$RELIGION$ Army"
+ LOST_SPIRIT: "Lost Spirit"
  
  gotzli:0 "Gotzli"
  gotzli_religion_desc:0 "A collection of ancient traditions and beliefs popular among the Gotzlic people." #not creative enough
