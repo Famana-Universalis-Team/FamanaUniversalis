@@ -1712,7 +1712,7 @@ nafa_1 = {
         }
         effect = {
             custom_tooltip = nafMercTC
-            set_country_flag = nafaGetMercantilism
+            set_country_flag = enable_mercantilism_on_upgrade_cot
             add_country_modifier = {
                 name = naf_greater_gomic_market
                 duration = 18250

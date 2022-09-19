@@ -58,12 +58,6 @@ insult_default11 = {
 	}
 }
 
-insult_default12 = {
-	trigger = {
-		always = yes
-	}
-}
-
 insult_default13 = {
 	trigger = {
 		always = yes
@@ -85,15 +79,6 @@ insult_default15 = {
 insult_no_army = {
 	trigger = {
 		NOT = { army_size = 1 }
-	}
-}
-
-insult_bookkeeping = {
-	trigger = {
-		FROM = {
-			trade_income_percentage = 0.33
-		}
-		NOT  = { trade_income_percentage = 0.33 }
 	}
 }
 
@@ -195,12 +180,6 @@ insult_against_sinner = {
 	trigger = {
 		ruler_has_personality = sinner_personality
 		has_consort = yes
-	}
-}
-
-insult_against_hre = {
-	trigger = {
-		is_emperor = yes
 	}
 }
 
@@ -309,5 +288,78 @@ insult_fas_gep = {
 	trigger = {
 		FROM = { tag = FAS }
 		tag = GEP
+	}
+}
+
+insult_bb_1 = {
+	trigger = {
+		NOT = {
+			total_development = 50
+		}
+	}
+}
+
+insult_bb_2 = {
+	trigger = {
+		has_consort = yes
+		has_heir = yes
+	}
+}
+
+insult_giru_tower = {
+	trigger = {
+		owns_core_province = 5450
+		has_global_flag = giru_tower_destroyed
+	}
+}
+
+insult_at_fashros = {
+	trigger = {
+		tag = FAS
+	}
+}
+
+insult_pomlem = {
+	trigger = {
+		any_owned_province = {
+			has_province_modifier = pomlen_high_priest
+		}
+		ROOT = {
+			NOT = {
+				religious_school = {
+					group = lathvy_group
+					school = pextoglazian_school
+				}
+			}
+		}
+	}
+}
+
+insult_at_confederation = {
+	trigger = {
+		OR = {
+			tag = PEX
+			tag = DOR
+			tag = event_target:leader_of_xolnomarka
+			tag = event_target:tombasor
+		}
+	}
+}
+
+insult_long_name = {
+	trigger = {
+		OR = {
+			culture_group = Ravsho
+			primary_culture = Lukschan
+		}
+	}
+}
+
+insult_lathvy = {
+	trigger = {
+		religion_group = lathvy_group
+		ROOT = {
+			NOT = { religion_group = lathvy_group }
+		}
 	}
 }
