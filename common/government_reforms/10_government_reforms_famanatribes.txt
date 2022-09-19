@@ -216,7 +216,7 @@ gacin_tribe = {
 	lock_level_when_selected = yes
 
 	modifiers = {
-		reform_progress_growth = -0.15
+		reform_progress_growth = -0.75
 		technology_cost = 0.25
 	}
 	
