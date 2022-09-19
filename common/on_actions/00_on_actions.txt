@@ -709,6 +709,30 @@ on_new_monarch = {
 	}
 	if = {
 		limit = {
+			AND = {
+				OR = {
+					primary_culture = Nirkifi
+					primary_culture = Rduma
+					primary_culture = Burgavian
+					primary_culture = Shoowtan
+					primary_culture = Veberi
+					primary_culture = Rouragi
+				}
+				has_country_modifier = call_of_the_frontier_naravam
+			}
+		}
+		set_ai_personality = {
+			personality = ai_colonialist
+			locked = yes
+		}
+		random_list = {
+			20 = { add_ruler_personality = conqueror_personality }
+			20 = { add_ruler_personality = pious_personality }
+			20 = { add_ruler_personality = zealot_personality }
+		}
+	}
+	if = {
+		limit = {
 			has_reform = lukscha_tribe
 		}
 		country_event = {
