@@ -5315,6 +5315,7 @@ country_decisions = {
 		effect = {
 			restore_country_name = yes
 			change_tag = GCL
+			change_technology_group = estali_tech_gr
 			#if = {
 				#limit = {
 					#AND = {

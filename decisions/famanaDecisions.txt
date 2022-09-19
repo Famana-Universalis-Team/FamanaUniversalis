@@ -471,7 +471,11 @@ country_decisions = {
                     tag = PEX
                     tag = GAX
                     tag = MKY
+                    tag = MOX
                 }
+            }
+            NOT = {
+                current_age = age_of_discovery
             }
 		}
 		allow = {
