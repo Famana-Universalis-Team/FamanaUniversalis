@@ -3174,25 +3174,19 @@ nafa_3 = {
 
     naf_dominate_jafxoi = {
         icon = mission_italian_condottiere
-        required_missions = { naf_xalian_integration naf_destroy_kisholi }
+        required_missions = { naf_xalian_integration }
         position = 8
         trigger = {
+            total_development = 1000
             OR = {
-                south_xalia_region = {
-                    type = all
-                    country_or_non_sovereign_subject_holds = ROOT
-                }
-                west_xalia_region = {
-                    type = all
-                    country_or_non_sovereign_subject_holds = ROOT
-                }
-                east_xalia_region = {
-                    type = all
-                    country_or_non_sovereign_subject_holds = ROOT
-                }
-                north_xalia_region = {
-                    type = all
-                    country_or_non_sovereign_subject_holds = ROOT
+                num_of_owned_provinces_with = {
+                    value = 50
+                    OR = {
+                        region = south_xalia_region
+                        region = west_xalia_region
+                        region = east_xalia_region
+                        region = north_xalia_region
+                    }
                 }
                 if = {
                     limit = {

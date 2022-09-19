@@ -132,6 +132,22 @@ country_event = {
                     total_development = 50
                 }
             }
+            modifier = {
+                factor = 2
+                NOT = {
+                    army_strength = {
+                    	who = NAF
+                    	value = 0.1
+                    }
+                }
+            }
+            modifier = {
+                factor = 1000
+                is_subject_of = NAF
+                NOT = {
+                    liberty_desire = 50
+                }
+            }
         }
         NAF = {
             inherit = ROOT
@@ -162,7 +178,7 @@ country_event = {
                 }
             }
             modifier = {
-                factor = 4
+                factor = 2
                 OR = {
                     tag = MOR
                     tag = DEL
@@ -171,7 +187,7 @@ country_event = {
                 }
             }
             modifier = {
-                factor = 2
+                factor = 2.5
                 total_development = 250
                 NOT = {
                     tag = JFX
@@ -189,7 +205,7 @@ country_event = {
                 government_rank = 3
             }
             modifier = {
-                factor = 2.5
+                factor = 2
                 government_rank = 2
             }
             modifier = {
@@ -200,7 +216,7 @@ country_event = {
                 }
             }
             modifier = {
-                factor = 10
+                factor = 5
                 num_of_owned_provinces_with = {
                     value = 10
                     NOT = {
@@ -210,30 +226,6 @@ country_event = {
                             region = east_xalia_region
                             region = north_xalia_region
                         }
-                    }
-                }
-            }
-            modifier = {
-                factor = 5
-                NAF = {
-                    NOT = {
-                        total_development = 1000
-                    }
-                }
-            }
-            modifier = {
-                factor = 10
-                NAF = {
-                    NOT = {
-                        total_development = 500
-                    }
-                }
-            }
-            modifier = {
-                factor = 1000
-                NAF = {
-                    NOT = {
-                        total_development = 250
                     }
                 }
             }
