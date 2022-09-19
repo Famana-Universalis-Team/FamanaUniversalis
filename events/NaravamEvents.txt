@@ -638,3 +638,87 @@ country_event = {
 		}
     }
 }
+
+#Discovery of Gacil
+country_event = {
+	id = naravam.13
+	title = naravam.13.t
+	picture = EXPLORERS_eventPicture
+	desc = naravam.13.d
+    fire_only_once = yes
+    major = yes
+
+    trigger = {
+        is_year = 570
+        owns_core_province = 6270 #kolya
+    }
+
+    mean_time_to_happen = {
+        months = 2
+    }
+
+    option = {
+		name = naravam.13.a
+		naravami_sea = {
+            discover_country = ROOT
+        }
+        4960 = {
+            discover_country = ROOT
+        }
+        7672 = {
+            discover_country = ROOT
+        }
+        7676 = {
+            discover_country = ROOT
+        }
+        7677 = {
+            discover_country = ROOT
+        }
+        7679 = {
+            discover_country = ROOT
+        }
+        gabero_area = {
+            discover_country = ROOT
+        }
+        6465 = {
+            discover_country = ROOT
+        }
+		custom_tooltip = INVADING_GACIL
+        set_global_flag = gacil_discovered
+    }
+}
+
+#Makes it easier for Naravam to cross
+country_event = {
+    id = naravam.14
+    title = naravam.14.t
+    picture = EXPLORERS_eventPicture
+    desc = naravam.14.d
+    fire_only_once = yes
+    major = yes
+    major_trigger = {
+        AND = {
+            capital_scope = {
+                superregion = north_estal_superregion
+            }
+            has_discovered = 6465
+        }
+    }
+
+    trigger = {
+        has_global_flag = gacil_discovered
+        owns_core_province = 6464
+    }
+
+    mean_time_to_happen = {
+        years = 10
+    }
+
+    option = {
+        name = naravam.14.a
+        DRK = {
+            cede_province = 6466
+            add_core = 6466
+        }
+    }
+}

@@ -345,23 +345,6 @@ trade_company_vamanya = {
 	}
 }
 
-trade_company_silvol = {
-	color = { 151 81 169 }
-	
-	provinces = {
-		6457 6458 6459 6461 6460 6463 6462 6464 6465 6466 7677 7676
-	}
-	
-	# Specific
-	# Generic
-	names = {
-		name = "TRADE_COMPANY_SILVOL_Root_Culture_GetName"
-	}
-	names = {
-		name = "TRADE_COMPANY_SILVOL_Trade_Company"
-	}
-}
-
 trade_company_shoowta = {
 	color = { 53 94 153 }
 	

@@ -2204,7 +2204,7 @@ tck_disgraced_alatan = {
 }
 
 tck_coastal_city = {
-    development_cost = -0.05
+    local_development_cost = -0.05
     trade_goods_size = 1
 }
 

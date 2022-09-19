@@ -1494,4 +1494,41 @@ country_decisions = {
 			factor = 1
 		}
 	}
+	invade_gacil = {
+		potential = {
+			has_global_flag = gacil_discovered
+			6465 = {
+				discovered_by = ROOT
+			}
+			6465 = {
+				is_empty = yes
+			}
+			capital_scope = {
+				superregion = north_estal_superregion
+			}
+		}
+		provinces_to_highlight = {
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			province_id = 6465
+		}
+		allow = {
+			###is_free_or_tributary_trigger = yes
+			is_at_war = no
+			mil_power = 200
+			is_migratory_tribe = no
+		}
+		effect = {
+			6465 = {
+				create_colony_mission_reward_province = { country = ROOT }
+			}
+			gabero_area = {
+				add_permanent_claim = ROOT
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
 }

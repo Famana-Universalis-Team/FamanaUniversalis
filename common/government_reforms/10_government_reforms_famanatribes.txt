@@ -203,3 +203,24 @@ lukscha_tribe = {
 		factor = 1
 	}
 }
+
+gacin_tribe = {
+	icon = "chieftain"
+	allow_normal_conversion = yes
+	potential = {
+		primary_culture = Old_Gacin
+	}
+
+	valid_for_nation_designer = yes
+	legacy_equivalent = tribal_federation_legacy
+	lock_level_when_selected = yes
+
+	modifiers = {
+		reform_progress_growth = -0.15
+		technology_cost = 0.25
+	}
+	
+	ai = {
+		factor = 1
+	}
+}

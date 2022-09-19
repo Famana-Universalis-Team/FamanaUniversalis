@@ -1603,6 +1603,7 @@ tck_slot_5 = {
 		required_missions = { tck_finest_diplomats }
 		position = 7
 		trigger = {
+			has_idea_group = innovativeness_ideas
 			innovativeness_ideas = 7
 			has_institution = renaissance
         }

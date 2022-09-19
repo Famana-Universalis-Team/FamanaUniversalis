@@ -2994,6 +2994,7 @@ country_decisions = {
 		effect = {
 			restore_country_name = yes
 			change_tag = NIR
+			change_technology_group = estali_tech_gr
 			
 			if = {
 				limit = {
@@ -3048,6 +3049,7 @@ country_decisions = {
 		effect = {
 			restore_country_name = yes
 			change_tag = BUV
+			change_technology_group = estali_tech_gr
 			
 			if = {
 				limit = {
@@ -3103,7 +3105,7 @@ country_decisions = {
 		effect = {
 			restore_country_name = yes
 			change_tag = VEB
-			
+			change_technology_group = estali_tech_gr
 			
 			if = {
 				limit = {
@@ -3170,6 +3172,7 @@ country_decisions = {
 		effect = {
 			restore_country_name = yes
 			change_tag = BUI
+			change_technology_group = estali_tech_gr
 			
 			if = {
 				limit = {
@@ -3258,6 +3261,7 @@ country_decisions = {
 				}
 				set_government_rank = 3
 			}
+			set_capital = 6300
 			if = {
 				limit = {
 					religion_group = lathvy_group
@@ -5256,6 +5260,122 @@ country_decisions = {
 				}
 				add_permanent_claim = NHM
 			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	gacil_nation = {
+		major = yes
+		potential = {
+			AND = {
+				culture = Old_Gacin
+				OR = {
+					was_tag = SVL
+					was_tag = GLJ
+					was_tag = ATH
+					was_tag = SVN
+					was_tag = ROE
+					was_tag = DRK
+				}
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				region = gacil_region
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+			}
+		}
+		allow = {
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			owns_core_province = 6464
+			owns_core_province = 6457
+			num_of_owned_provinces_with = {
+				value = 8
+				region = gacil_region
+			}
+			is_tribal = no
+			adm_tech = 20
+		}
+		effect = {
+			restore_country_name = yes
+			change_tag = GCL
+			#if = {
+				#limit = {
+					#AND = {
+						#has_custom_ideas = no
+						#NOT = {
+							#has_idea_group = ARL_ideas
+						#}
+					#}
+				#}
+				#country_event = { id = ideagroups.1 } #Swap Ideas
+			#}
+			set_capital = 6464
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	galsiog_nation = {
+		major = yes
+		potential = {
+			OR = {
+				is_colonial_nation = yes
+				is_former_colonial_nation = yes
+			}
+			capital_scope = {
+				region = gacil_region
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				region = gacil_region
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+			}
+		}
+		allow = {
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			is_former_colonial_nation = yes
+		}
+		effect = {
+			restore_country_name = yes
+			change_tag = GLS
+			#if = {
+				#limit = {
+					#AND = {
+						#has_custom_ideas = no
+						#NOT = {
+							#has_idea_group = ARL_ideas
+						#}
+					#}
+				#}
+				#country_event = { id = ideagroups.1 } #Swap Ideas
+			#}
 			add_country_modifier = {
 				name = "centralization_modifier"
 				duration = 7300

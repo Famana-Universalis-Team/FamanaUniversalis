@@ -1,0 +1,77 @@
+#Country Name: Please see filename.
+
+graphical_culture = easterngfx
+
+color = { 170 170 150 }
+
+historical_idea_groups = {
+	economic_ideas
+	defensive_ideas
+	diplomatic_ideas
+	offensive_ideas
+	innovativeness_ideas
+	quantity_ideas
+	administrative_ideas
+	religious_ideas
+}
+
+historical_units = {
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+	swiss_landsknechten
+	dutch_maurician
+	austrian_tercio
+	austrian_grenzer
+	austrian_hussar
+	austrian_white_coat
+	austrian_jaeger
+	mixed_order_infantry
+	open_order_cavalry
+	napoleonic_square
+	napoleonic_lancers
+}
+
+monarch_names = {
+	"Rikshish #0" = 1
+	"Áthyr #0" = 1
+	"Orthæni #0" = 1
+	"Wiðuk #0" = 1
+	"Astær #0" = 1
+	"Rayaðik #0" = 1
+	"Roþnýr #0" = 1
+	"Chæríst #0" = 1
+	"Visgáar #0" = 1
+	"Deemon #0" = -1
+	"Bæl #0" = -1
+	"Huttur #0" = -1
+	"Zoræsþer #0" = -1
+}
+
+leader_names = {
+	Surrsy
+	Ignor
+	Kensiðæn
+	Ýonsón
+	Sýwart
+	Ðat
+	Eðæter
+	Bárbáræ
+	Ðammersmiþ
+}
+
+ship_names = {
+	Butak
+	Delu
+	Zebran
+	Buterker
+	Dabodyi
+}
+
+army_names = {
+	"$PROVINCE$ Battalion" 
+}
+
+fleet_names = {
+	"Great Navy"
+}
