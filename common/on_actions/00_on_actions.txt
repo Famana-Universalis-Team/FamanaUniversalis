@@ -4291,7 +4291,7 @@ on_center_of_trade_upgrade = {
 	if = {
 		limit = {
 			owner = {
-				has_country_flag = nafaGetMercantilism
+				has_country_flag = enable_mercantilism_on_upgrade_cot
 			}
 		}
 		owner = {
