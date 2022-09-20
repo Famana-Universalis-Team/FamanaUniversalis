@@ -655,6 +655,13 @@ country_event = {
     trigger = {
         is_year = 570
         owns_core_province = 6270 #kolya
+		NOT = { 
+			OR = {
+				technology_group = naravami_tech_gr 
+				tag = NRV
+				tag = GCL
+			}
+		}
     }
 
     mean_time_to_happen = {
@@ -720,9 +727,7 @@ country_event = {
 
     option = {
         name = naravam.14.a
-        DRK = {
-            cede_province = 6466
-            add_core = 6466
-        }
+			cede_province = 6466
+			add_core = 6466
     }
 }

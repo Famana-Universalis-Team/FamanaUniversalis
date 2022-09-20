@@ -623,6 +623,9 @@ country_decisions = {
                 name = conversion_to_xalian
                 duration = 3650
             }
+			capital_scope = {
+				change_religion = xalian_religion
+			}
 		}
 		ai_will_do = {
 			factor = 0
