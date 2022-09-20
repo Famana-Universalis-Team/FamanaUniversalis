@@ -5000,24 +5000,22 @@ country_decisions = {
 	qubare_nation = {
 		major = yes
 		potential = {
-			AND = {
-				OR = {
-					tag = ZUB
-					AND = {
-						tag = ELQ
-						has_global_flag = qurak_happened
-					}
+			OR = {
+				tag = ZUB
+				AND = {
+					tag = ELQ
+					has_global_flag = qurak_happened
 				}
-				NOT = {
-					num_of_cities = 10
-				}
-				OR = {
-					owns_core_province = 6761
-					owns_core_province = 6762
-				}
-				NOT = { exists = QUB }
-				was_never_end_game_tag_trigger = yes
 			}
+			NOT = {
+				num_of_cities = 10
+			}
+			OR = {
+				owns_core_province = 6761
+				owns_core_province = 6762
+			}
+			NOT = { exists = QUB }
+			was_never_end_game_tag_trigger = yes
 		}
 		provinces_to_highlight = {
 			OR = {
@@ -5034,20 +5032,62 @@ country_decisions = {
 			adm_tech = 10
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
-			area_189 = {
-				type = all
-				owned_by = ROOT
+			if = {
+				limit = {
+					tag = ZUB
+				}
+				OR = {
+					ELQ = {
+						has_opinion = {
+							who = ROOT
+							value = 200
+						}
+					}
+					owns_core_province = 6762
+				}
+				area_189 = {
+					type = all
+					owned_by = ROOT
+				}
+				area_223 = {
+					type = all
+					owned_by = ROOT
+				}
 			}
-			area_223 = {
-				type = all
-				owned_by = ROOT
-			}
-			OR = {
+			if = {
+				limit = {
+					tag = ELQ
+				}
+				OR = {
+					ZUB = {
+						has_opinion = {
+							who = ROOT
+							value = 200
+						}
+					}
+					owns_core_province = 6761
+				}
 				owns_core_province = 6762
-				is_year = 360
+				owns_core_province = 6757
 			}
 		}
 		effect = {
+			if = {
+				limit = {
+					tag = ELQ
+				}
+				ELQ = {
+					inherit = ZUB
+				}
+			}
+			if = {
+				limit = {
+					tag = ZUB
+				}
+				ZUB = {
+					inherit = ELQ
+				}
+			}
 			restore_country_name = yes
 			change_tag = QUB
 			country_event = { id = ideagroups.1 } #Swap Ideas
@@ -5130,6 +5170,12 @@ country_decisions = {
 				change_culture = Qubaran
 			}
 			6762 = {
+				change_culture = Qubaran
+			}
+			6757 = {
+				change_culture = Qubaran
+			}
+			6765 = {
 				change_culture = Qubaran
 			}
 			if = {

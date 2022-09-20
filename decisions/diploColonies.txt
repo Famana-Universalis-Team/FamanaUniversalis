@@ -1531,4 +1531,42 @@ country_decisions = {
 			factor = 1
 		}
 	}
+	colonize_6757 = {
+		potential = {
+			tag = ELQ
+			6757 = {
+				is_empty = yes
+			}
+			has_global_flag = qurak_happened
+			has_global_flag = zubara_happened
+		}
+		provinces_to_highlight = {
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			province_id = 6757
+		}
+		allow = {
+			is_at_war = no
+			mil_power = 50
+			owns_core_province = 6762
+		}
+		effect = {
+			6757 = {
+				limit = {
+					is_empty = yes
+				}
+				cede_province = ROOT
+				change_religion	= ROOT
+				change_culture	= ROOT
+				add_core = ROOT
+				ROOT = {
+					add_mil_power = -25
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
 }
