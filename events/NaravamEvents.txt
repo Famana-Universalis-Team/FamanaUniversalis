@@ -726,7 +726,9 @@ country_event = {
 
     option = {
         name = naravam.14.a
-			cede_province = 6466
-			add_core = 6466
+        6466 = {
+            cede_province = ROOT
+        }
+        add_core = 6466
     }
 }

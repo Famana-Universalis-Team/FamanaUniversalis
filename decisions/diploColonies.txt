@@ -1517,6 +1517,9 @@ country_decisions = {
 			is_at_war = no
 			mil_power = 200
 			NOT = { has_reform = naravami_tribe_reform }
+			any_owned_province = {
+				port = yes
+			}
 		}
 		effect = {
 			add_mil_power = -200
