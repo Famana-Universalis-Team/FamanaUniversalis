@@ -445,7 +445,6 @@ country_event = {
 
     option = {
 		name = naravam.7.a
-		ai_chance = { factor = 20 }
         enable_religion = rochoni
         capital_scope = {
             change_religion = rochoni
