@@ -216,6 +216,10 @@ country_decisions = {
 			}
 			custom_tooltip = mergeVaximorDyrian
 			add_accepted_culture = Makyan_C
+			every_province = {
+				remove_core = VAX
+				remove_core = DYR
+			}
 		}
 		ai_will_do = {
 			factor = 1
