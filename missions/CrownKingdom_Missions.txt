@@ -835,9 +835,12 @@ tck_slot_3 = {
 		position = 3
 		trigger = {
 			is_year = 350
-			5015 = {
-				is_empty = yes
-				has_discovered = ROOT
+			OR = {
+				5015 = {
+					is_empty = yes
+					has_discovered = ROOT
+				}
+				owns_core_province = 5015
 			}
         }
 		effect = {
