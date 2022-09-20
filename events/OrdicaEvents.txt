@@ -1911,9 +1911,12 @@ country_event = {
 	trigger = {
 		tag = ORC
 		has_global_flag = OrdicaDisaster
-		check_variable = {
-			which = OrdicanFuckups
-			value = 3
+		OR = {
+			ai = yes
+			check_variable = {
+				which = OrdicanFuckups
+				value = 3
+			}
 		}
 	}
 
@@ -2037,7 +2040,7 @@ country_event = {
 		else = {
 			check_variable = {
 				which = OrdicanFuckups
-				value = 4
+				value = 3
 			}
 		}
 	}
@@ -2107,7 +2110,7 @@ country_event = {
 	hidden = yes
 
 	mean_time_to_happen = {
-		months = 30
+		months = 45
 	}
 
 	trigger = {
