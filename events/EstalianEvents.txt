@@ -542,6 +542,27 @@ country_event = {
 		ai_chance = { factor = 1 }
 		custom_tooltip = WEST_ESTAL_POPULATED
 		hidden_effect = {
+			5743 = {
+				limit = { 
+					is_empty = yes
+				}
+				cede_province = KPR
+				add_core = KPR
+			}
+			6427 = {
+				limit = { 
+					is_empty = yes
+				}
+				cede_province = KPR
+				add_core = KPR
+			}
+			6428 = {
+				limit = { 
+					is_empty = yes
+				}
+				cede_province = KPR
+				add_core = KPR
+			}
 			revdirom_area = {
 				limit = { 
 					is_empty = yes
@@ -562,6 +583,188 @@ country_event = {
 				}
 				cede_province = NBE
 				add_core = NBE
+			}
+			6439 = {
+				limit = { 
+					is_empty = yes
+				}
+				cede_province = ILO
+				add_core = ILO
+			}
+			6441 = {
+				limit = { 
+					is_empty = yes
+				}
+				cede_province = ILO
+				add_core = ILO
+			}
+			6440 = {
+				limit = { 
+					is_empty = yes
+				}
+				cede_province = ILO
+				add_core = ILO
+			}
+			6442 = {
+				limit = { 
+					is_empty = yes
+				}
+				cede_province = ILO
+				add_core = ILO
+			}
+			area_106 = {
+				limit = { 
+					is_empty = yes
+				}
+				cede_province = KEZ
+				add_core = KEZ
+			}
+			6446 = {
+				limit = { 
+					is_empty = yes
+				}
+				cede_province = JAL
+				add_core = JAL
+			}
+			fes_viom_area = {
+				limit = { 
+					is_empty = yes
+				}
+				cede_province = EQI
+				add_core = EQI
+			}
+			area_103 = {
+				limit = { 
+					is_empty = yes
+				}
+				cede_province = MID
+				add_core = MID
+			}
+			6416 = {
+				limit = { 
+					is_empty = yes
+				}
+				cede_province = EQI
+				add_core = EQI
+			}
+			6417 = {
+				limit = { 
+					is_empty = yes
+				}
+				cede_province = MID
+				add_core = MID
+			}
+			6418 = {
+				limit = { 
+					is_empty = yes
+				}
+				cede_province = EQI
+				add_core = EQI
+			}
+			area_102 = {
+				limit = { 
+					is_empty = yes
+				}
+				cede_province = LEE
+				add_core = LEE
+			}
+			6419 = {
+				limit = { 
+					is_empty = yes
+				}
+				cede_province = LEE
+				add_core = LEE
+			}
+			area_150 = {
+				limit = { 
+					is_empty = yes
+				}
+				cede_province = YUS
+				add_core = YUS
+			}
+			area_149 = {
+				limit = { 
+					is_empty = yes
+				}
+				cede_province = YUS
+				add_core = YUS
+			}
+			area_148 = {
+				limit = { 
+					is_empty = yes
+				}
+				cede_province = PEL
+				add_core = PEL
+			}
+			area_146 = {
+				limit = { 
+					is_empty = yes
+				}
+				cede_province = MER
+				add_core = MER
+			}
+			area_138 = {
+				limit = { 
+					is_empty = yes
+				}
+				cede_province = JAL
+				add_core = JAL
+			}
+			area_152 = {
+				limit = { 
+					is_empty = yes
+				}
+				cede_province = JAL
+				add_core = JAL
+			}
+			area_135 = {
+				limit = { 
+					is_empty = yes
+				}
+				cede_province = MOI
+				add_core = MOI
+			}
+			area_136 = {
+				limit = { 
+					is_empty = yes
+				}
+				cede_province = UFZ
+				add_core = UFZ
+			}
+			area_105 = {
+				limit = { 
+					is_empty = yes
+				}
+				cede_province = BER
+				add_core = BER
+			}
+			area_137 = {
+				limit = { 
+					is_empty = yes
+				}
+				cede_province = ANK
+				add_core = ANK
+			}
+			area_147 = {
+				limit = { 
+					is_empty = yes
+				}
+				cede_province = PEL
+				add_core = PEL
+			}
+			area_99 = {
+				limit = { 
+					is_empty = yes
+				}
+				cede_province = PEL
+				add_core = PEL
+			}
+			alo_tramo_area = {
+				limit = { 
+					is_empty = yes
+				}
+				cede_province = PEL
+				add_core = PEL
 			}
 		}
 	}
