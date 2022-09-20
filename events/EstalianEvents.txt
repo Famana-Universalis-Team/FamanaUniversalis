@@ -619,13 +619,6 @@ country_event = {
 				cede_province = KEZ
 				add_core = KEZ
 			}
-			6446 = {
-				limit = { 
-					is_empty = yes
-				}
-				cede_province = JAL
-				add_core = JAL
-			}
 			fes_viom_area = {
 				limit = { 
 					is_empty = yes
