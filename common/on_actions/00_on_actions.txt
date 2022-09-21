@@ -3980,6 +3980,16 @@ on_province_religion_converted = {
 		}
 		set_province_flag = ga_xal_lathvy_reconverted
 	}
+	if = {
+		limit = {
+			culture = Laglan
+			owner = {
+				religion = lathvy
+				has_global_flag = fenikiconvert
+			}
+		}
+		change_culture = Feniki
+	}
 }
 
 # province
