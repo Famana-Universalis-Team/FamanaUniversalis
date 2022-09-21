@@ -4070,6 +4070,27 @@ country_decisions = {
 			adm_tech = 5
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
+			if = {
+				limit = {
+					tag = NPT
+				}
+				RMX = {
+					OR = {
+						is_free_or_tributary_trigger = yes
+						is_subject_of = NPT
+					}
+					is_at_war = no
+				}
+			}
+			else = {
+				NPT = {
+					OR = {
+						is_free_or_tributary_trigger = yes
+						is_subject_of = RMX
+					}
+					is_at_war = no
+				}
+			}
 			RMX = {
 				reverse_has_opinion = {
 					who = NPT
