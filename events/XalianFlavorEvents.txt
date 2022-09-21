@@ -340,7 +340,12 @@ country_event = { #Fall of Shiraska Xon
 
 	trigger = {
 		owns_core_province = 5467
-		NOT = { tag = MSH }
+		NOT = {
+			OR = {
+				tag = MSH
+				was_tag = MSH
+			}
+		}
 	}
 
 	mean_time_to_happen = {
