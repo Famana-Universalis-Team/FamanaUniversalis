@@ -214,10 +214,7 @@ tck_sar_reform = {
 		global_autonomy = -0.05
 	}
 	potential = {
-		OR = {
-			was_tag = TCK
-			tag = TCK
-		}
+		mission_completed = tck_provencial_governors
 	}
 }
 

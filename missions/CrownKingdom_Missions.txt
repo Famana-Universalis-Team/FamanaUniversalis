@@ -109,16 +109,14 @@ tck_slot_1 = {
 				}
 				MRR = {
 					override_country_name = NEW_UMZAT
-					ROOT = {
-						create_subject = {
-							subject_type = client_march
-							subject = PREV
-						}
-					}
 				}
 				5016 = {
 					cede_province = MRR
 					add_core = MRR
+				}
+				create_subject = {
+					subject_type = client_march
+					subject = MRR
 				}
 				west_estal_region = {
 					limit = {
@@ -243,7 +241,7 @@ tck_slot_1 = {
 			5102 = {
 				AND = {
 					owned_by = ROOT
-					has_building = manufactory
+					has_building = farm_estate
 					num_of_times_improved = 3
 				}
 			}
@@ -565,10 +563,18 @@ tck_slot_2 = {
 				}
 				custom_tooltip = OssorShattered
 				hidden_effect = {
-					every_country = {
-						OSS = {
-							release = PREV
-						}
+					OSS = {
+						release = ZNE
+						release = GRO
+						release = NUS
+						release = ARL
+						release = DBT
+						release = GDS
+						release = VLM
+						release = NUT
+						release = DES
+						release = THA
+						release = FNC
 					}
 				}
 				OSS = {
@@ -1279,7 +1285,7 @@ tck_slot_4 = {
 		position = 6
 		trigger = {
 			num_of_allies = 3
-			diplomatic_reputation = 5
+			diplomatic_reputation = 4
         }
 		effect = {
 			define_advisor = {
