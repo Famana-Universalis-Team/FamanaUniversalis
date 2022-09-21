@@ -1948,7 +1948,6 @@ MSH_ideas = {
         global_trade_goods_size_modifier = 0.1
     }
     msh_swift_as_the_air = {
-        movement_speed = 0.10
         siege_ability = 0.10
     }
     msh_hanging_gardens_of_shiraska_xon = {
@@ -1956,7 +1955,6 @@ MSH_ideas = {
     }
     msh_xalian_heartland = {
         global_unrest = -2
-        global_autonomy = -0.05
     }
     msh_guardian_of_ga_xal = {
         manpower_recovery_speed = 0.15
