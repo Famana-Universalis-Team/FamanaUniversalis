@@ -313,6 +313,7 @@ country_event = {
 		hidden_effect = {
 			7239 = {
 				cede_province = ALU
+				add_core = ALU
 				change_culture = Ganush
 			}
 		}
