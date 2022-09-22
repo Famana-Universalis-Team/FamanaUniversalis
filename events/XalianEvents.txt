@@ -100,14 +100,36 @@ country_event = {
     }
     option = {
         name = gaxal.3.b
-        ai_chance = { factor = 1 }
+        ai_chance = {
+            factor = 1
+            modifier = {
+                factor = 3
+                OR = {
+                    is_rival = DEL
+                    DEL = {
+                        is_rival = MRN
+                    }
+                }
+            }
+        }
         5163 = {
             cede_province = XML
         }
     }
     option = {
         name = gaxal.3.c
-        ai_chance = { factor = 1 }
+        ai_chance = {
+            factor = 1
+            modifier = {
+                factor = 0
+                OR = {
+                    is_rival = DEL
+                    DEL = {
+                        is_rival = MRN
+                    }
+                }
+            }
+        }
         5163 = {
             cede_province = DEL
         }
