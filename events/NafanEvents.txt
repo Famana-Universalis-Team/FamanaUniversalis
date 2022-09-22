@@ -766,3 +766,124 @@ country_event = { #Colossus Destroyed
         }
     }
 }
+
+country_event = { #you shall NOT go into nhoma
+    id = nafa.16
+    title = nafa.16.t
+    desc = nafa.16.d
+    picture = EP_ISLAND_eventPicture
+    major = yes
+
+    trigger = {
+        tag = NAF
+        ai = yes
+        OR = {
+            if = {
+                limit = {
+                    exists = FSB
+                }
+                NOT = {
+                    border_distance = {
+                        who = FSB
+                        distance = 20
+                    }
+                }
+                NOT = {
+                    truce_with = FSB
+                }
+            }
+            if = {
+                limit = {
+                    exists = VET
+                }
+                NOT = {
+                    border_distance = {
+                        who = VET
+                        distance = 20
+                    }
+                }
+                NOT = {
+                    truce_with = VET
+                }
+            }
+            if = {
+                limit = {
+                    exists = KMI
+                }
+                NOT = {
+                    border_distance = {
+                        who = KMI
+                        distance = 20
+                    }
+                }
+                NOT = {
+                    truce_with = KMI
+                }
+            }
+            if = {
+                limit = {
+                    AND = {
+                        exists = NHM
+                        NHM = {
+                            has_country_flag = survivedTonxaraDisaster
+                        }
+                    }
+                }
+                NOT = {
+                    border_distance = {
+                        who = NHM
+                        distance = 20
+                    }
+                }
+                NOT = {
+                    truce_with = NHM
+                }
+            }
+        }
+    }
+
+    mean_time_to_happen = {
+        months = 1
+    }
+
+    option = {
+        name = nafa.16.a #we shall see about that
+        ai_chance = { factor = 1 }
+    }
+    option = {
+        name = nafa.16.b #nhoma shall not be invaded
+        ai_chance = { factor = 96 }
+        if = {
+            limit = {
+                exists = FSB
+            }
+            FSB = {
+                add_truce_with = NAF
+            }
+        }
+        if = {
+            limit = {
+                exists = VET
+            }
+            FSB = {
+                add_truce_with = VET
+            }
+        }
+        if = {
+            limit = {
+                exists = KMI
+            }
+            FSB = {
+                add_truce_with = KMI
+            }
+        }
+        if = {
+            limit = {
+                exists = NHM
+            }
+            FSB = {
+                add_truce_with = NHM
+            }
+        }
+    }
+}
