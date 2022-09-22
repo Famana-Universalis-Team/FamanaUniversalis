@@ -260,7 +260,7 @@ PYA_ideas = {
 	}
 	pya_claim = {
 		defensiveness = 0.10
-		diplomatic_reputation = 1
+		diplomats = 1
 	}
 	pya_amridav = {
 		land_forcelimit_modifier = 0.25
@@ -1740,8 +1740,7 @@ KIN_ideas = {
     free = yes
     
     kin_diverse_nation = {
-        tolerance_heathen = 1
-        tolerance_heretic = 1
+        tolerance_heathen = 2
     }
     kin_the_lone_republic = {
         republican_tradition = 0.33

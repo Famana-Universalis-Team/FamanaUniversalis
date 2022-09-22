@@ -1,0 +1,29 @@
+diocese_independence_mission = {
+	slot = 5
+	has_country_shield = no
+	
+	generic = yes
+	
+	potential = {
+		is_subject_of_type_with_overlord = {
+			who = PEX
+			type = diocese
+		}
+	}
+	diocese_gain_strength = {
+		icon = mission_european_church
+		required_missions = {  } #None
+		position = 2
+		trigger = {
+            capital_scope = {
+				development = 15
+			}
+			army_size = 10
+        }
+		effect = {
+			
+		}
+		#provinces_to_highlight = {
+		#}
+	}
+}
