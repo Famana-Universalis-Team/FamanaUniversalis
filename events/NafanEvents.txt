@@ -782,6 +782,9 @@ country_event = { #you shall NOT go into nhoma
                 limit = {
                     exists = FSB
                 }
+                FSB = {
+                    ai = yes
+                }
                 NOT = {
                     border_distance = {
                         who = FSB
@@ -796,6 +799,9 @@ country_event = { #you shall NOT go into nhoma
                 limit = {
                     exists = VET
                 }
+                VET = {
+                    ai = yes
+                }
                 NOT = {
                     border_distance = {
                         who = VET
@@ -809,6 +815,9 @@ country_event = { #you shall NOT go into nhoma
             if = {
                 limit = {
                     exists = KMI
+                }
+                KMI = {
+                    ai = yes
                 }
                 NOT = {
                     border_distance = {
@@ -828,6 +837,9 @@ country_event = { #you shall NOT go into nhoma
                             has_country_flag = survivedTonxaraDisaster
                         }
                     }
+                }
+                NHM = {
+                    ai = yes
                 }
                 NOT = {
                     border_distance = {
