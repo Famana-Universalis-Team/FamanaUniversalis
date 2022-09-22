@@ -772,7 +772,7 @@ country_event = { #you shall NOT go into nhoma
     title = nafa.16.t
     desc = nafa.16.d
     picture = EP_ISLAND_eventPicture
-    major = yes
+    hidden = yes
 
     trigger = {
         tag = NAF
