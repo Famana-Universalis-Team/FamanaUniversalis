@@ -321,6 +321,30 @@ desert_tribe_name = {
 	}
 }
 
+gacin_tribe_name = {
+	rank = {
+		1 = GACIN_TRIBE
+		2 = GACIN_TRIBE
+		3 = GACIN_TRIBE
+	}
+
+	ruler_male = {
+		1 = CHIEF
+		2 = CHIEF
+		3 = CHIEF
+	}
+
+	ruler_female = {
+		1 = CHIEF
+		2 = CHIEF
+		3 = CHIEF
+	}
+
+	trigger = {
+		has_reform = gacin_tribe
+	}
+}
+
 qanoyo_diarchy_name = {
 	rank = {
 		1 = DIARCHY

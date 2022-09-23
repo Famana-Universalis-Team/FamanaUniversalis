@@ -2234,3 +2234,8 @@ tck_ravsho_cavalry_techniques = {
     cavalry_fire = -0.05
     cavalry_cost = -0.10
 }
+
+diocese_diplomatic_outreach = {
+    diplomatic_upkeep = 1
+    diplomatic_reputation = 2
+}
