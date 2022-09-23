@@ -1404,7 +1404,7 @@ country_event = {
             unnamed_area_36 = { remove_claim = KSL }
             yenis_area = { remove_claim = KSL }
             ga_xal_superregion = { add_permanent_claim = JFX }
-            eastern_desert_region = { add_permanent_claim = JFX }
+            hoxoi_coast_region = { add_permanent_claim = JFX }
             nhoma_superregion = { add_permanent_claim = NHM }
             every_province = {
                 limit = {
@@ -1436,7 +1436,7 @@ country_event = {
                                 region = moxon_region
                                 region = south_xalia_region
                                 region = maky_region
-                                region = eastern_desert_region
+                                region = hoxoi_coast_region
                                 region = east_great_desert_region
                                 region = jasua_region
                                 region = kapolia_region
@@ -1467,7 +1467,7 @@ country_event = {
                             region = moxon_region
                             region = south_xalia_region
                             region = maky_region
-                            region = eastern_desert_region
+                            region = hoxoi_coast_region
                             region = east_great_desert_region
                         }
                     }
@@ -2604,7 +2604,7 @@ country_event = { #Kisholi
             unnamed_area_36 = { remove_claim = KSL }
             yenis_area = { remove_claim = KSL }
             ga_xal_superregion = { add_permanent_claim = JFX }
-            eastern_desert_region = { add_permanent_claim = JFX }
+            hoxoi_coast_region = { add_permanent_claim = JFX }
             nhoma_superregion = { add_permanent_claim = NHM }
             country_event = {
                 id = fashros.30
@@ -2678,7 +2678,7 @@ country_event = { #Jafxoi
             unnamed_area_36 = { remove_claim = KSL }
             yenis_area = { remove_claim = KSL }
             ga_xal_superregion = { add_permanent_claim = JFX }
-            eastern_desert_region = { add_permanent_claim = JFX }
+            hoxoi_coast_region = { add_permanent_claim = JFX }
             nhoma_superregion = { add_permanent_claim = NHM }
             country_event = {
                 id = fashros.30
@@ -2752,7 +2752,7 @@ country_event = { #Nhoma
             unnamed_area_36 = { remove_claim = KSL }
             yenis_area = { remove_claim = KSL }
             ga_xal_superregion = { add_permanent_claim = JFX }
-            eastern_desert_region = { add_permanent_claim = JFX }
+            hoxoi_coast_region = { add_permanent_claim = JFX }
             nhoma_superregion = { add_permanent_claim = NHM }
             country_event = {
                 id = fashros.30
@@ -2826,7 +2826,7 @@ country_event = { #Hoyros
             unnamed_area_36 = { remove_claim = KSL }
             yenis_area = { remove_claim = KSL }
             ga_xal_superregion = { add_permanent_claim = JFX }
-            eastern_desert_region = { add_permanent_claim = JFX }
+            hoxoi_coast_region = { add_permanent_claim = JFX }
             nhoma_superregion = { add_permanent_claim = NHM }
             country_event = {
                 id = fashros.30

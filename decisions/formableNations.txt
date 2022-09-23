@@ -612,7 +612,7 @@ country_decisions = {
 				}
 				add_permanent_claim = OPP
 			}
-			eastern_desert_region = {
+			hoxoi_coast_region = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
@@ -1870,7 +1870,7 @@ country_decisions = {
 				name = "centralization_modifier"
 				duration = 7300
 			}
-			eastern_desert_region = {
+			hoxoi_coast_region = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}

@@ -128,12 +128,14 @@ xalian_fashros_missions = {
 		required_missions = { xalian_find_converts }
 		trigger = {
 			NOT = {
-				any_province = {
-					AND = {
-						OR = {
-							superregion = ga_xal_superregion
-							region = eastern_desert_region #hoxoi
+				OR = {
+					ga_xal_superregion = {
+						custom_trigger_tooltip = {
+							tooltip = rel_in_province_tonmo
+							religion = tonmo
 						}
+					}
+					hoxoi_coast_region = {
 						custom_trigger_tooltip = {
 							tooltip = rel_in_province_tonmo
 							religion = tonmo

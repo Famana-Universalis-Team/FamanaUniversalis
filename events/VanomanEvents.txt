@@ -381,7 +381,7 @@ country_event = { #Hoxoi
                 chance = 1
                 set_country_flag = vanomaExpeditionFailed
             }
-            eastern_desert_region = {
+            hoxoi_coast_region = {
                 discover_country = ROOT
             }
             east_gomic = {

@@ -580,6 +580,7 @@ bureaucratic_monarchy = {
 		nobles_influence_modifier = 0.05
 		state_maintenance_modifier = -0.10
 		innovativeness_gain = 0.10
+		yearly_corruption = -0.025
 	}
 	
 	ai = {

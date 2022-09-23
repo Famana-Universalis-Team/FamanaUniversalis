@@ -1090,13 +1090,13 @@ antiash_4 = {
 			antiash_delkian
 		}
 		trigger = {
-			eastern_desert_region = {
+			hoxoi_coast_region = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		provinces_to_highlight = {
-			region = eastern_desert_region
+			region = hoxoi_coast_region
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		effect = {
@@ -1326,7 +1326,7 @@ antiash_5 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		effect = {
-			eastern_desert_region = {
+			hoxoi_coast_region = {
 				add_permanent_claim = ROOT
 			}
 			east_zoblotra_area = {

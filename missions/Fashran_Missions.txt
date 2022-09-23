@@ -623,7 +623,7 @@ fas_2 = {
 		trigger = {
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				value = 25
-				region = eastern_desert_region
+				region = hoxoi_coast_region
 			}
 		}
 		effect = {
@@ -646,7 +646,7 @@ fas_2 = {
 		}
 		provinces_to_highlight = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
-			region = eastern_desert_region
+			region = hoxoi_coast_region
 			NOT = {
 				is_empty = yes
 			}
@@ -789,7 +789,7 @@ fas_3 = {
 			stroktur_region = {
 				discover_country = ROOT
 			}
-			eastern_desert_region = {
+			hoxoi_coast_region = {
 				discover_country = ROOT
 			}
 			nozumol_region = {
@@ -896,7 +896,7 @@ fas_3 = {
 			add_prestige_or_monarch_power = {
 				amount = 25
 			}
-			eastern_desert_region = {
+			hoxoi_coast_region = {
 				add_permanent_claim = ROOT
 			}
 			kapolia_region = {
@@ -1410,7 +1410,7 @@ fas_5 = {
 				OR = {
 					region = bamali_gulf_region
 					region = jasua_region
-					region = eastern_desert_region
+					region = hoxoi_coast_region
 					area = pasba_area
 					area = yatia_area
 					area = unnamed_area_40
@@ -1447,7 +1447,7 @@ fas_5 = {
 			OR = {
 				region = bamali_gulf_region
 				region = jasua_region
-				region = eastern_desert_region
+				region = hoxoi_coast_region
 				area = pasba_area
 				area = yatia_area
 				area = unnamed_area_40

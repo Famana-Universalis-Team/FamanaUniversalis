@@ -1284,7 +1284,7 @@ nafa_1 = {
                     }
                     add_permanent_claim = ROOT
                 }
-                eastern_desert_region = {
+                hoxoi_coast_region = {
                     limit = {
                         has_port = yes
                         development = 15
@@ -4190,7 +4190,7 @@ nafa_5 = {
                 estate = estate_church
                 loyalty = 10
             }
-            eastern_desert_region = { add_permanent_claim = ROOT }
+            hoxoi_coast_region = { add_permanent_claim = ROOT }
         }
         provinces_to_highlight = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
@@ -4218,7 +4218,7 @@ nafa_5 = {
                     num_of_rebel_armies = 1
                 }
             }
-            eastern_desert_region = {
+            hoxoi_coast_region = {
                 type = all
 			    country_or_non_sovereign_subject_holds = ROOT
             }
@@ -4246,7 +4246,7 @@ nafa_5 = {
         }
         provinces_to_highlight = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
-            region = eastern_desert_region
+            region = hoxoi_coast_region
         }
     }
 

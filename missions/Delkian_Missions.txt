@@ -111,7 +111,7 @@ delkia_fashros_missions = {
 					AND = {
 						OR = {
 							superregion = ga_xal_superregion
-							region = eastern_desert_region #hoxoi
+							region = hoxoi_coast_region #hoxoi
 						}
 						custom_trigger_tooltip = {
 							tooltip = rel_in_province_tonmo

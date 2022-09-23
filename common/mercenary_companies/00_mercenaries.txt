@@ -495,7 +495,7 @@ merc_diam = {
     trigger = {
 		is_allowed_to_recruit_mercenaries = yes
 		any_owned_province = {
-			region = eastern_desert_region
+			region = hoxoi_coast_region
 		}
 	}
 	modifier = {
@@ -714,7 +714,7 @@ merc_shining_spears = {
 				superregion = ga_xal_superregion
 			}
 			any_owned_province = {
-				region = eastern_desert_region
+				region = hoxoi_coast_region
 			}
 		
 	}	
