@@ -1,8 +1,8 @@
 diocese_independence_mission = {
-	slot = 5
-	has_country_shield = no
+	slot = 1
+	has_country_shield = yes
 	
-	generic = yes
+	generic = no
 	
 	potential = {
 		is_subject_of_type_with_overlord = {
@@ -11,14 +11,53 @@ diocese_independence_mission = {
 		}
 	}
 	diocese_gain_strength = {
-		icon = mission_european_church
+		icon = mission_rb_scottish_conquer_london
 		required_missions = {  } #None
-		position = 2
+		position = 1
 		trigger = {
             capital_scope = {
 				development = 15
 			}
 			army_size = 10
+        }
+		effect = {
+			
+		}
+		#provinces_to_highlight = {
+		#}
+	}
+	diocese_gather_support = {
+		icon = mission_spread_the_reformation
+		required_missions = { diocese_gain_strength }
+		position = 2
+		trigger = {
+            
+        }
+		effect = {
+			
+		}
+		#provinces_to_highlight = {
+		#}
+	}
+	diocese_declare_independence = {
+		icon = mission_fire_of_london
+		required_missions = { diocese_gather_support }
+		position = 3
+		trigger = {
+            
+        }
+		effect = {
+			
+		}
+		#provinces_to_highlight = {
+		#}
+	}
+	diocese_liberty = {
+		icon = mission_teutonic_lancer
+		required_missions = { diocese_declare_independence }
+		position = 4
+		trigger = {
+            
         }
 		effect = {
 			

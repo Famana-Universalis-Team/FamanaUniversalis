@@ -1996,6 +1996,7 @@ country_decisions = {
 
 
 	reform_pexto_decision = {
+		major = yes
 		potential = {
 			OR = {
 				AND = {

@@ -609,9 +609,11 @@ exploration_ideas = {
 	category = DIP
 	important = yes
 
-	#trigger = {
-	#	always = no
-	#}
+	trigger = {
+		NOT = {
+			government = native
+		}
+	}
 
 	bonus = {
 		cb_on_primitives = yes

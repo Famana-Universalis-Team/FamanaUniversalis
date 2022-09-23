@@ -1977,7 +1977,8 @@ north_estali = {
 		icon = 36
 		country = {
 			same_culture_advisor_cost = -0.20
-			relation_with_same_culture = 25
+			global_unrest = -1
+			#relation_with_same_culture = 25
 		}
 		country_as_secondary = {
 			diplomatic_reputation = 1
