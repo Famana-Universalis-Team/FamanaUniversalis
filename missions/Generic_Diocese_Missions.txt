@@ -27,14 +27,20 @@ diocese_independence_mission = {
 				duration = 7300
 			}
 			add_prestige = 10
+			every_known_country = {
+				limit = {
+					is_rival = PEX
+				}
+				add_opinion = {
+    				who = ROOT
+    				modifier = diocese_opinion_rival
+				}
+			}
 		}
 		provinces_to_highlight = {
 			owned_by = ROOT
-			capital_scope = {
-				NOT = {
-					development = 15
-				}
-			}
+			is_capital_of = ROOT
+			NOT = { development = 15 }
 		}
 	}
 	diocese_gather_support = {
@@ -44,11 +50,11 @@ diocese_independence_mission = {
 		trigger = {
 			estate_loyalty = {
     			estate = estate_nobles
-    			loyalty = 60
+    			loyalty = 65
 			}
 			estate_loyalty = {
     			estate = estate_church
-    			loyalty = 60
+    			loyalty = 65
 			}
             liberty_desire = 100
 			OR = {
@@ -59,7 +65,8 @@ diocese_independence_mission = {
 			}
         }
 		effect = {
-			
+			custom_tooltip = dioceseGetBeshzies
+			custom_tooltip = something_more
 		}
 		#provinces_to_highlight = {
 		#}
@@ -69,10 +76,14 @@ diocese_independence_mission = {
 		required_missions = { diocese_gather_support }
 		position = 3
 		trigger = {
-            
+            offensive_war_with = PEX
+			is_free_or_tributary_trigger = yes
         }
 		effect = {
-			
+			add_country_modifier = {
+				name = diocese_fight_for_liberty
+				duration = 3650
+			}
 		}
 		#provinces_to_highlight = {
 		#}

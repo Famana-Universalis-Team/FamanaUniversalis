@@ -99,3 +99,8 @@ sar_diplomacy = {
 	opinion = 50
 	yearly_decay = 0.5
 }
+
+diocese_opinion_rival = {
+	opinion = 50
+	yearly_decay = 1
+}
