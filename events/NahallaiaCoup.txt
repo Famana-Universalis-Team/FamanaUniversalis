@@ -158,14 +158,25 @@ country_event = {
     option = {
 		name = nahallaia.3.a
         ai_chance = { factor = 1 }
-        NHL = {
-            every_owned_province = {
-                limit = {
-                    culture = Tolan
-                }
-                cede_province = ALT
-			    add_core = ALT
+        bortur_area = {
+            limit = {
+                owned_by = NHL
             }
+            cede_province = ALT
+            add_core = ALT
+        }
+        if = {
+            limit = {
+                6194 = {
+                    owned_by = NHL
+                }
+            }
+            6194 = {
+                cede_province = ALT
+                add_core = ALT
+            }
+        }
+        NHL = {
             white_peace = ALT
         }
         clr_country_flag = nahallaian_coup

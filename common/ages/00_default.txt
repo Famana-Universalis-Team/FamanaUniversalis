@@ -162,7 +162,10 @@ age_of_discovery = {
 		
 		ab_fashros_raze = {
 			allow = {
-				tag = FAS
+				OR = {
+					tag = FAS
+					was_tag = FAS
+				}
 			}
 			modifier = {
 				raze_power_gain = 0.33
@@ -176,10 +179,7 @@ age_of_discovery = {
 			allow = {
 				OR = {
 					tag = RKL
-					AND = {
-						tag = HVK
-						was_tag = RKL
-					}
+					was_tag = RKL
 				}
 			}
 			modifier = {
@@ -194,10 +194,7 @@ age_of_discovery = {
 			allow = {
 				OR = {
 					tag = MSH
-					AND = {
-						tag = GAX
-						was_tag = MSH
-					}
+					was_tag = MSH
 				}
 			}
 			modifier = {
@@ -210,7 +207,10 @@ age_of_discovery = {
 
 		ab_ordican_conquest = {
 			allow = {
-				tag = ORC
+				OR = {
+					tag = ORC
+					was_tag = ORC
+				}
 			}
 			modifier = {
 				core_creation = -0.2
@@ -307,10 +307,8 @@ age_of_reformation = {
 		}
 
 		ab_extensive_claims_famana = {
-			rule = {
-				can_chain_claim = yes
-			}
 			modifier = {
+				can_chain_claim = yes
 				fabricate_claims_cost = -0.50
 			}
 			ai_will_do = {
@@ -375,10 +373,7 @@ age_of_reformation = {
 			allow = {
 				OR = {
 					tag = RST
-					AND = {
-						tag = GTZ
-						was_tag = RST
-					}
+					was_tag = RST
 				}
 			}
 			modifier = {
@@ -391,7 +386,10 @@ age_of_reformation = {
 		
 		ab_geopyopian_prosperity = {
 			allow = {
-				tag = GEP
+				OR = {
+					tag = GEP
+					was_tag = GEP
+				}
 			}
 			modifier = {
 				global_tax_modifier = 0.33
@@ -403,7 +401,10 @@ age_of_reformation = {
 		
 		ab_nafan_expansion = {
 			allow = {
-				tag = NAF
+				OR = {
+					tag = NAF
+					was_tag = NAF
+				}
 			}
 			modifier = {
 				administrative_efficiency = 0.10
@@ -415,7 +416,10 @@ age_of_reformation = {
 		
 		ab_resteman_trade = {
 			allow = {
-				tag = RES
+				OR = {
+					tag = RES
+					was_tag = RES
+				}
 			}
 			modifier = {
 				global_trade_power = 0.5
@@ -710,7 +714,7 @@ age_of_revolutions = {
 
 		
 		ab_force_march = {
-			rule = {
+			modifier = {
 				force_march_free = yes
 			}
 			ai_will_do = {
@@ -726,7 +730,7 @@ age_of_revolutions = {
 			}
 		}
 		ab_no_distance_for_core = {
-			rule = {
+			modifier = {
 				ignore_coring_distance = yes
 			}
 			ai_will_do = {

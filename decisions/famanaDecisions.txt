@@ -626,6 +626,20 @@ country_decisions = {
 			capital_scope = {
 				change_religion = xalian_religion
 			}
+            hidden_effect = {
+				every_owned_province = {
+					limit = {
+						OR = {
+                            religion = morian
+                            religion = delkian
+                            religion = shirian
+                            religion = vinian
+                        }
+                        has_province_modifier = religious_zeal_at_conv
+					}
+					remove_province_modifier = religious_zeal_at_conv
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 0
@@ -979,6 +993,9 @@ country_decisions = {
             culture_group = Gotzlic
             NOT = {
                 has_country_flag = gotz_colonist_flag
+            }
+            NOT = {
+                has_country_flag = zubaraMigratedFlag
             }
             NOT = {
                 OR = {

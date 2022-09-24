@@ -217,12 +217,24 @@ country_event = {
 		6761 = {
 			is_empty = yes
 		}
+		NOT = {
+			any_owned_province = {
+				NOT = {
+					OR = {
+						region = gotzlic_region
+						region = east_gotzlic_region
+						region = south_gotzlic_region
+					}
+				}
+			}
+		}
 	}
 	
 	option = {
 		name = estal.3.a
 		ai_chance = { factor = 12 }
 		hidden_effect = {
+			set_country_flag = zubaraMigratedFlag
 			every_known_country = {
 				white_peace = ROOT
 			}
@@ -359,6 +371,116 @@ country_event = {
 				}
 				remove_core = ZUB
 			}
+			if = {
+				limit = {
+					6655 = {
+						owned_by = ZUB
+					}
+				}
+				6655 = {
+					cede_province = ---
+				}
+			}
+			if = {
+				limit = {
+					6653 = {
+						owned_by = ZUB
+					}
+				}
+				6653 = {
+					cede_province = ---
+				}
+			}
+			if = {
+				limit = {
+					6651 = {
+						owned_by = ZUB
+					}
+				}
+				6651 = {
+					cede_province = ---
+				}
+			}
+			if = {
+				limit = {
+					6652 = {
+						owned_by = ZUB
+					}
+				}
+				6652 = {
+					cede_province = ---
+				}
+			}
+			if = {
+				limit = {
+					6654 = {
+						owned_by = ZUB
+					}
+				}
+				6654 = {
+					cede_province = ---
+				}
+			}
+			if = {
+				limit = {
+					6650 = {
+						owned_by = ZUB
+					}
+				}
+				6650 = {
+					cede_province = ---
+				}
+			}
+			if = {
+				limit = {
+					6649 = {
+						owned_by = ZUB
+					}
+				}
+				6649 = {
+					cede_province = ---
+				}
+			}
+			if = {
+				limit = {
+					6647 = {
+						owned_by = ZUB
+					}
+				}
+				6647 = {
+					cede_province = ---
+				}
+			}
+			if = {
+				limit = {
+					6648 = {
+						owned_by = ZUB
+					}
+				}
+				6648 = {
+					cede_province = ---
+				}
+			}
+			if = {
+				limit = {
+					6646 = {
+						owned_by = ZUB
+					}
+				}
+				6646 = {
+					cede_province = ---
+				}
+			}
+			if = {
+				limit = {
+					6633 = {
+						owned_by = ZUB
+					}
+				}
+				6633 = {
+					cede_province = ---
+				}
+			}
 			set_global_flag = zubara_happened #a little tool that will help us later
 			6584 = {
 			   	owner = {
@@ -397,36 +519,6 @@ country_event = {
 					value = -50
 					mutual = yes
 				}
-			}
-			country_event = { 
-			   id = estal.7
-			}
-			country_event = { 
-			   id = estal.7
-			}
-			country_event = { 
-			   id = estal.7
-			}
-			country_event = { 
-			   id = estal.7
-			}
-			country_event = { 
-			   id = estal.7
-			}
-			country_event = { 
-			   id = estal.7
-			}
-			country_event = { 
-			   id = estal.7
-			}
-			country_event = { 
-			   id = estal.7
-			}
-			country_event = { 
-			   id = estal.7
-			}
-			country_event = { 
-			   id = estal.7
 			}
 		}
 		custom_tooltip = zub_migrate_tooltip
@@ -780,36 +872,4 @@ country_event = {
 			}
 		}
 	}
-}
-
-#data overflow
-country_event = {
-	id = estal.7
-	title = estal.7.t
-	desc = estal.7.d
-	picture = LAND_MILITARY_eventPicture
-	fire_only_once = yes 
-	is_triggered_only = yes
-	hidden = yes
-	
-	immediate = {
-		hidden_effect = {
-			every_owned_province = {
-				limit = {
-					NOT = { 
-						OR = {
-							region = voychonia_region
-						}
-					}
-				}
-				cede_province = ---
-			}
-		}
-	}
-	
-	option = {
-		name = estal.7.a
-		ai_chance = { factor = 12 }
-	}
-		
 }

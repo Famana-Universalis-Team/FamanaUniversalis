@@ -160,6 +160,7 @@ country_event = { #Celebrations of Our God
 	is_triggered_only = yes
 	trigger = {
 		religion_group = xalian_group
+		NOT = { religion = xalian_religion }
 	}
 
 	option = {
