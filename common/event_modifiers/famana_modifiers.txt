@@ -2242,6 +2242,6 @@ diocese_diplomatic_outreach = {
 
 diocese_fight_for_liberty = {
     land_morale = 0.10
-    war_exhaustion = -0.25
-    land_forcelimit_modifier = 0.20
+    war_exhaustion = -0.20
+    land_forcelimit_modifier = 0.50
 }

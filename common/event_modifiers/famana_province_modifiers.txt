@@ -436,3 +436,8 @@ destribe_dev_capital = {
 pya_convert = {
     local_missionary_strength = 0.10
 }
+
+diocese_lometzel = {
+    local_development_cost = -0.20
+    allowed_num_of_manufactories = 1
+}

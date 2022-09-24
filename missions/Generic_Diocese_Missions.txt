@@ -66,7 +66,7 @@ diocese_independence_mission = {
         }
 		effect = {
 			custom_tooltip = dioceseGetBeshzies
-			custom_tooltip = something_more
+			add_manpower = 10
 		}
 		#provinces_to_highlight = {
 		#}
@@ -93,10 +93,51 @@ diocese_independence_mission = {
 		required_missions = { diocese_declare_independence }
 		position = 4
 		trigger = {
-            
+			grown_by_development = 25
+            is_free_or_tributary_trigger = yes
+			custom_trigger_tooltip = {
+				tooltip = dioceseReformedNation
+				NOT = {
+					OR = {
+						tag = PLY
+						tag = PPX
+						tag = PNV
+						tag = PJS
+						tag = PHL
+						tag = PLM
+						tag = PCG
+						tag = PTG
+					}
+				}
+			}
         }
 		effect = {
-			
+			change_adm = 1
+			change_dip = 1
+			change_mil = 1
+			add_legitimacy = 25
+			add_devotion = 25
+			add_republican_tradition = 10
+			if = {
+				limit = {
+					OR = {
+						tag = PLM
+						tag = LOM
+					}
+					capital	= 5317
+				}
+				5317 = {
+					change_province_name = "Lometzel"
+					hidden_effect = {
+						rename_capital = "Lometzel"
+					}
+					add_province_modifier = {
+						name = diocese_lometzel
+						duration = -1
+					}
+					change_trade_goods = cloth
+				}
+			}
 		}
 		#provinces_to_highlight = {
 		#}

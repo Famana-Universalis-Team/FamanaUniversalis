@@ -34,7 +34,11 @@ on_startup = {
 			NOT = {
 				is_year = 213
 			}
+			NOT = {
+				has_global_flag = did_startup_flag
+			}
 		}
+		set_global_flag = did_startup_flag
 		set_global_flag = rastrayvar_control_flag
 		set_variable = {
 			which = giruTowerFinished

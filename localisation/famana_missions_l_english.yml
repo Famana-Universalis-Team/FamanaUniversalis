@@ -1305,12 +1305,15 @@
 
  #Diocese Missions
  diocese_gain_strength_title:0 "Gain Strength"
- diocese_gain_strength_desc:0 ""
+ diocese_gain_strength_desc:0 "If we wish to ever be more than Pomlen's petty pawn, we must first consolidate what power we can. Our little diocese must be stronger than any other."
  diocese_gather_support_title:0 "Gather Support"
- diocese_gather_support_desc:0 ""
+ diocese_gather_support_desc:0 "Unfortunately, it would be impossible for us to break the yoke of the Pextans on our own. We need help, either from our fellow Bishops, or perhaps from beyond Pextoglazia altogether..."
  diocese_declare_independence_title:0 "Declare Independence"
- diocese_declare_independence_desc:0 ""
- diocese_liberty_title:0 "[Root.GetAdjective] Liberty"
- diocese_liberty_desc:0 ""
+ diocese_declare_independence_desc:0 "The day has arrived. We have grown in strength, and secured allies that will help us defeat the Holy King in battle. By the grace of Ara, we shall prevail!"
+ diocese_liberty_title:0 "[Root.Culture.GetName] Liberty"
+ diocese_liberty_desc:0 "[Root.GetName] is free at last! No longer will we have to kowtow to Pomlen's authority. Instead, we shall forge our own destiny."
  #Diocese Rewards
  diocese_opinion_rival:0 "Opposing Pextoglazia"
+ diocese_lometzel:0 "City of Lometzel"
+ diocese_diplomatic_outreach:0 "Diplomatic Outreach"
+ diocese_fight_for_liberty:0 "Fight For Liberty"
