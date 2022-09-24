@@ -162,6 +162,7 @@ country_event = {
 	trigger = {
 		uses_piety = yes
 		has_heir = yes
+		heir_age = 15
 	}
 
 	immediate = {

@@ -732,3 +732,41 @@ country_event = {
         add_core = 6466
     }
 }
+
+#Rochoni reformation ends
+country_event = {
+	id = naravam.15
+	title = naravam.15.t
+	picture = BIG_BOOK_eventPicture
+	desc = naravam.15.d
+    fire_only_once = yes
+    major = yes
+	
+	trigger = {
+        capital_scope = {
+            OR = {
+                region = eastern_naravam_region
+                region = western_naravam_region
+                region = apilanya_region
+            }
+        }
+        religion = rochoni
+        is_year = 550
+	}
+	
+	mean_time_to_happen = {
+		months = 240
+	}
+
+    option = {
+		name = naravam.15.a
+        custom_tooltip = rochoniReformationOver
+        every_province = {
+            limit = {
+                is_reformation_center = yes
+                religion = rochoni
+            }
+            remove_reform_center = rochoni
+        }
+	}
+}
