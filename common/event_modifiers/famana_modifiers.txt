@@ -2245,3 +2245,8 @@ diocese_fight_for_liberty = {
     war_exhaustion = -0.20
     land_forcelimit_modifier = 0.50
 }
+
+naf_adopt_oppian_institutions = {
+    min_autonomy_in_territories = -0.1
+    governing_capacity = 250
+}

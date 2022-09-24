@@ -3361,6 +3361,10 @@ nafa_3 = {
         effect = {
             #nutiaRopleaVassalFlag (Use this)
             custom_tooltip = ifNutiaHelpedUsGainControlThenDiploBonus
+            add_country_modifier = {
+                name = naf_adopt_oppian_institutions
+                duration = -1
+            }
         }
         #provinces_to_highlight = {}
     }
