@@ -2917,40 +2917,52 @@ nafa_3 = {
                 limit = {
                     exists = TYD
                 }
-                add_casus_belli = {
-                    target = TYD
-                    type = cb_vassalize_mission
-                    months = 300
+                custom_tooltip = addSubjCbTYD
+                hidden_effect = {
+                    add_casus_belli = {
+                        target = TYD
+                        type = cb_vassalize_mission
+                        months = 300
+                    }
                 }
             }
             if = {
                 limit = {
                     exists = VAV
                 }
-                add_casus_belli = {
-                    target = VAV
-                    type = cb_vassalize_mission
-                    months = 300
+                custom_tooltip = addSubjCbVAV
+                hidden_effect = {
+                    add_casus_belli = {
+                        target = VAV
+                        type = cb_vassalize_mission
+                        months = 300
+                    }
                 }
             }
             if = {
                 limit = {
                     exists = INI
                 }
-                add_casus_belli = {
-                    target = INI
-                    type = cb_vassalize_mission
-                    months = 300
+                custom_tooltip = addSubjCbINI
+                hidden_effect = {
+                    add_casus_belli = {
+                        target = INI
+                        type = cb_vassalize_mission
+                        months = 300
+                    }
                 }
             }
             if = {
                 limit = {
                     exists = PXA
                 }
-                add_casus_belli = {
-                    target = PXA
-                    type = cb_vassalize_mission
-                    months = 300
+                custom_tooltip = addSubjCbPXA
+                hidden_effect = {
+                    add_casus_belli = {
+                        target = PXA
+                        type = cb_vassalize_mission
+                        months = 300
+                    }
                 }
             }
             elwait_area = { add_permanent_claim = ROOT }
