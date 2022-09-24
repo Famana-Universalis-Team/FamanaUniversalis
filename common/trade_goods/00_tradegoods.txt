@@ -828,7 +828,7 @@ slaves = {
 ivory = {
 	color = { 0.75 0.7 0.63 }
 	modifier = {
-		infantry_power = 0.05
+		diplomatic_reputation = 2
 	}
 	province = {
 		local_state_maintenance_modifier = -0.2
