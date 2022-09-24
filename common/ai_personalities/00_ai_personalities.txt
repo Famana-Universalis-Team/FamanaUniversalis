@@ -61,31 +61,6 @@ ai_capitalist = {
 			has_government_attribute = is_merchant_republic
 		}	
 		modifier = {
-			factor = 3
-			tag = PAP
-		}
-		modifier = {
-			factor = 1.5
-			tag = MNG
-		}
-		modifier = {
-			factor = 1.5
-			tag = KOR
-		}		
-		modifier = {
-			factor = 100
-			tag = MAM
-			luck = no
-		}	
-		modifier = {
-			factor = 3
-			OR = {
-				tag = ARA
-				tag = CAS
-			}
-			NOT = { is_year = 1500 }
-		}
-		modifier = {
 			factor = 5
 			has_reform = free_city
 		}

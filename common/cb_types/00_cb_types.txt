@@ -422,12 +422,6 @@ cb_independence_war = {
 				NOT = { has_reform = daimyo }
 				NOT = {
 					AND = {
-						tag = SOO
-						has_government_attribute = is_pirate_republic_reform
-					}
-				}
-				NOT = {
-					AND = {
 						has_country_flag = ikko_ikki_peasants_flag
 						OR = {
 							has_reform = leading_clergy_reform
@@ -529,10 +523,6 @@ cb_daimyo_annex = {
 		OR = {
 			has_reform = daimyo
 			AND = {
-				tag = SOO
-				has_government_attribute = is_pirate_republic_reform
-			}
-			AND = {
 				has_country_flag = ikko_ikki_peasants_flag
 				OR = {
 					has_reform = leading_clergy_reform
@@ -561,10 +551,6 @@ cb_independent_daimyo_annex = {
 		OR = {
 			has_reform = indep_daimyo
 			AND = {
-				tag = SOO
-				has_government_attribute = is_pirate_republic_reform
-			}
-			AND = {
 				has_country_flag = ikko_ikki_peasants_flag
 				OR = {
 					has_reform = leading_clergy_reform
@@ -588,10 +574,6 @@ cb_shogun_annex = {
 		from = {
 			OR = {
 				has_reform = daimyo
-				AND = {
-					tag = SOO
-					has_government_attribute = is_pirate_republic_reform
-				}
 				AND = {
 					has_country_flag = ikko_ikki_peasants_flag
 					OR = {
@@ -620,10 +602,6 @@ cb_sengoku = {
 		OR = {
 			has_reform = daimyo
 			AND = {
-				tag = SOO
-				has_government_attribute = is_pirate_republic_reform
-			}
-			AND = {
 				has_country_flag = ikko_ikki_peasants_flag
 				OR = {
 					has_reform = leading_clergy_reform
@@ -637,10 +615,6 @@ cb_sengoku = {
 		from = {
 			OR = {
 				has_reform = daimyo
-				AND = {
-					tag = SOO
-					has_government_attribute = is_pirate_republic_reform
-				}
 				AND = {
 					has_country_flag = ikko_ikki_peasants_flag
 					OR = {
@@ -745,14 +719,10 @@ cb_crusade = {
 			}
 			AND = {
 				FROM = {
-					NOT = {
-						religion_group = muslim 
-					}
 					any_owned_province = {
 						has_province_flag = jihad_target_province_flag
 					}
 				}
-				religion_group = muslim
 				has_global_flag = active_jihad
 				OR = {
 					has_country_flag = jihad_caller

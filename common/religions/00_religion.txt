@@ -492,6 +492,8 @@ christian = {
 
 pagan = {
 
+	crusade_name = HOLY_WAR
+
 	flags_with_emblem_percentage = 10
 	flag_emblem_index_range = { 83 96 }
 
@@ -532,7 +534,6 @@ pagan = {
 
 		harmonized_modifier = harmonized_sotharyik
 		
-		crusade_name = HOLY_WAR
 	}
 	druidic = {
 		color = { 100 255 100 }
@@ -551,7 +552,6 @@ pagan = {
 		
 		heretic = { SNAKE_CLAN }
 		
-		crusade_name = HOLY_WAR
 	}
 
 	harmonized_modifier = harmonized_pagan

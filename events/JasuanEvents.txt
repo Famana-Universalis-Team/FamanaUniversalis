@@ -1283,6 +1283,11 @@ country_event = {
 			set_country_flag = borlebinMigrated
 		}
 	}
+
+	option = {
+		name = jasua.24.a
+		ai_chance = { factor = 10 }
+	}
 }
 
 country_event = { #Kalargan uprising
