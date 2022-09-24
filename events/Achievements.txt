@@ -49,7 +49,7 @@ country_event = {
 		name = achievement.1.a
 		ai_chance = { factor = 1 }
 		hidden_effect = {
-			captial_scope = {
+			capital_scope = {
 				cede_province = ---
 				remove_core = ROOT
 			}

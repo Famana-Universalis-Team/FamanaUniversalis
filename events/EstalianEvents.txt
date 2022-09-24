@@ -640,8 +640,8 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		is_year = 450
 		owns_core_province = 5017
+		is_year = 450
 	}
 	
 	mean_time_to_happen = {
@@ -653,26 +653,38 @@ country_event = {
 		ai_chance = { factor = 1 }
 		custom_tooltip = WEST_ESTAL_POPULATED
 		hidden_effect = {
-			5743 = {
-				limit = { 
-					is_empty = yes
+			if = {
+				limit = {
+					5743 = {
+						is_empty = yes
+					}
 				}
-				cede_province = KPR
-				add_core = KPR
+				5743 = {
+					cede_province = KPR
+					add_core = KPR
+				}
 			}
-			6427 = {
-				limit = { 
-					is_empty = yes
+			if = {
+				limit = {
+					6427 = {
+						is_empty = yes
+					}
 				}
-				cede_province = KPR
-				add_core = KPR
+				6427 = {
+					cede_province = KPR
+					add_core = KPR
+				}
 			}
-			6428 = {
-				limit = { 
-					is_empty = yes
+			if = {
+				limit = {
+					6428 = {
+						is_empty = yes
+					}
 				}
-				cede_province = KPR
-				add_core = KPR
+				6428 = {
+					cede_province = KPR
+					add_core = KPR
+				}
 			}
 			revdirom_area = {
 				limit = { 
@@ -695,33 +707,49 @@ country_event = {
 				cede_province = NBE
 				add_core = NBE
 			}
-			6439 = {
-				limit = { 
-					is_empty = yes
+			if = {
+				limit = {
+					6439 = {
+						is_empty = yes
+					}
 				}
-				cede_province = ILO
-				add_core = ILO
+				6439 = {
+					cede_province = ILO
+					add_core = ILO
+				}
 			}
-			6441 = {
-				limit = { 
-					is_empty = yes
+			if = {
+				limit = {
+					6441 = {
+						is_empty = yes
+					}
 				}
-				cede_province = ILO
-				add_core = ILO
+				6441 = {
+					cede_province = ILO
+					add_core = ILO
+				}
 			}
-			6440 = {
-				limit = { 
-					is_empty = yes
+			if = {
+				limit = {
+					6440 = {
+						is_empty = yes
+					}
 				}
-				cede_province = ILO
-				add_core = ILO
+				6440 = {
+					cede_province = ILO
+					add_core = ILO
+				}
 			}
-			6442 = {
-				limit = { 
-					is_empty = yes
+			if = {
+				limit = {
+					6442 = {
+						is_empty = yes
+					}
 				}
-				cede_province = ILO
-				add_core = ILO
+				6442 = {
+					cede_province = ILO
+					add_core = ILO
+				}
 			}
 			area_106 = {
 				limit = { 
@@ -744,26 +772,38 @@ country_event = {
 				cede_province = MID
 				add_core = MID
 			}
-			6416 = {
-				limit = { 
-					is_empty = yes
+			if = {
+				limit = {
+					6416 = {
+						is_empty = yes
+					}
 				}
-				cede_province = EQI
-				add_core = EQI
+				6416 = {
+					cede_province = EQI
+					add_core = EQI
+				}
 			}
-			6417 = {
-				limit = { 
-					is_empty = yes
+			if = {
+				limit = {
+					6417 = {
+						is_empty = yes
+					}
 				}
-				cede_province = MID
-				add_core = MID
+				6417 = {
+					cede_province = MID
+					add_core = MID
+				}
 			}
-			6418 = {
-				limit = { 
-					is_empty = yes
+			if = {
+				limit = {
+					6418 = {
+						is_empty = yes
+					}
 				}
-				cede_province = EQI
-				add_core = EQI
+				6418 = {
+					cede_province = EQI
+					add_core = EQI
+				}
 			}
 			area_102 = {
 				limit = { 

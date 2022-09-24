@@ -1219,7 +1219,7 @@ country_event = {
                 }
             }
             6636 = {
-                cede_province = NET
+                cede_province = NEN
                 add_core = NEN
             }
         }
@@ -1546,8 +1546,8 @@ country_event = {
         NOT = {
             owns = 6643
         }
-        6643 = {
-            is_owned_by = NEN
+        NEN = {
+            owns = 6643
         }
         NOT = {
             tag = NEN
