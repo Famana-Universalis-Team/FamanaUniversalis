@@ -1,5 +1,6 @@
 
-
+namespace = pirates
+normal_or_historical_nations = yes
 
 # [Root.Monarch.GetName] is now a legendary pirate!
 country_event = {

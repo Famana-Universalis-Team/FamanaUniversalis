@@ -1497,9 +1497,7 @@ country_decisions = {
 	invade_gacil = {
 		potential = {
 			has_global_flag = gacil_discovered
-			6465 = {
-				discovered_by = ROOT
-			}
+			has_discovered = 6465
 			6465 = {
 				is_empty = yes
 			}
@@ -1518,7 +1516,7 @@ country_decisions = {
 			mil_power = 200
 			NOT = { has_reform = naravami_tribe_reform }
 			any_owned_province = {
-				port = yes
+				has_port = yes
 			}
 		}
 		effect = {
@@ -1556,9 +1554,6 @@ country_decisions = {
 		}
 		effect = {
 			6757 = {
-				limit = {
-					is_empty = yes
-				}
 				cede_province = ROOT
 				change_religion	= ROOT
 				change_culture	= ROOT

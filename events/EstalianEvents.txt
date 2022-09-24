@@ -812,12 +812,16 @@ country_event = {
 				cede_province = LEE
 				add_core = LEE
 			}
-			6419 = {
-				limit = { 
-					is_empty = yes
+			if = {
+				limit = {
+					6419 = {
+						is_empty = yes
+					}
 				}
-				cede_province = LEE
-				add_core = LEE
+				6419 = {
+					cede_province = LEE
+					add_core = LEE
+				}
 			}
 			area_150 = {
 				limit = { 

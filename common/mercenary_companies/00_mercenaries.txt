@@ -1592,13 +1592,13 @@ merc_berserkers_kly = {
 		any_owned_province = {
 			region = apilanya_region
 		}
+		total_development = 1000
 	}
 	modifier = {
 		shock_damage_received = -0.15
 		shock_damage = 0.33
 		discipline = 0.10
 	}
-	total_development = 1000
 }
 
 # Berserkers

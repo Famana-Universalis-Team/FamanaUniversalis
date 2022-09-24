@@ -532,11 +532,11 @@ pagan = {
 		
 		heretic = { LOST_SPIRIT }
 
-		harmonized_modifier = harmonized_sotharyik
+		#harmonized_modifier = harmonized_sotharyik
 		
 	}
 	druidic = {
-		color = { 100 255 100 }
+		color = { 60 145 110 }
 		icon = 37
 		country = {
 			mercenary_cost = -0.10
