@@ -512,6 +512,47 @@ pagan = {
 		
 		heretic = { SNAKE_CLAN }
 	}
+	sotharyik = {
+		color = { 55 52 130 }
+		icon = 36
+		country = {
+			same_culture_advisor_cost = -0.20
+			global_unrest = -1
+			#relation_with_same_culture = 25
+		}
+		country_as_secondary = {
+			diplomatic_reputation = 1
+			global_autonomy = -0.025
+		}
+		province = {
+			local_missionary_strength = 0.02
+		}
+		
+		heretic = { LOST_SPIRIT }
+
+		harmonized_modifier = harmonized_sotharyik
+		
+		crusade_name = HOLY_WAR
+	}
+	druidic = {
+		color = { 100 255 100 }
+		icon = 37
+		country = {
+			mercenary_cost = -0.10
+			tolerance_own = 2
+		}
+		country_as_secondary = {
+			mercenary_cost = -0.10
+			tolerance_own = 2
+		}
+		province = {
+			local_missionary_strength = 0.02
+		}
+		
+		heretic = { SNAKE_CLAN }
+		
+		crusade_name = HOLY_WAR
+	}
 
 	harmonized_modifier = harmonized_pagan
 }
@@ -1972,28 +2013,6 @@ north_estali = {
 		
 		crusade_name = HOLY_WAR
 	}
-	sotharyik = {
-		color = { 55 52 130 }
-		icon = 36
-		country = {
-			same_culture_advisor_cost = -0.20
-			global_unrest = -1
-			#relation_with_same_culture = 25
-		}
-		country_as_secondary = {
-			diplomatic_reputation = 1
-			global_autonomy = -0.025
-		}
-		province = {
-			local_missionary_strength = 0.02
-		}
-		
-		heretic = { LOST_SPIRIT }
-
-		harmonized_modifier = harmonized_sotharyik
-		
-		crusade_name = HOLY_WAR
-	}
 	maschi = {
 		color = { 102 42 72 }
 		icon = 31
@@ -2052,7 +2071,7 @@ antestal_yomtanian_group = {
 	flags_with_emblem_percentage = 33 #############fix
 	hasian_faith = {
 		center_of_religion = 5695
-		icon = 1 #############fix
+		icon = 38
 		color = { 72 132 177 }
 		
 		country = {

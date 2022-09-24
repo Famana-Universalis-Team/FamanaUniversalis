@@ -30,6 +30,7 @@ country_decisions = {
         potential = {
             OR = {
                 religion = animism
+                religion = druidic
                 religion_group = north_estali
             }
             any_owned_province = {
@@ -79,6 +80,7 @@ country_decisions = {
             OR = {
                 religion = animism
                 religion_group = north_estali
+                religion = lathvy
             }
             any_owned_province = {
                 religion = rochoni
@@ -113,6 +115,14 @@ country_decisions = {
             modifier = {
                 factor = 0
                 religion = maschi
+            }
+            modifier = {
+                factor = 0
+                NOT = {
+                    capital_scope = {
+                        superregion = north_estal_superregion
+                    }
+                }
             }
         }
     }
