@@ -241,6 +241,29 @@ cb_trade_conflict = {
 	}
 }
 
+cb_trade_conflict_triggered = {
+	valid_for_subject = no
+
+	is_triggered_only = yes
+	months = 24
+
+	war_goal = blockade_ports_mutual
+
+	attacker_disabled_po = {
+		po_demand_provinces
+		po_revoke_cores
+		po_release_vassals
+		po_release_annexed
+		po_return_cores
+		po_become_vassal
+		po_subjugate_vassal
+		po_form_personal_union
+		po_become_tributary_state
+		po_subjugate_tributary_state
+		po_transfer_vassals
+	}
+}
+
 cb_trade_league_conflict = {
 	valid_for_subject = no
 
@@ -400,12 +423,7 @@ cb_independence_war = {
 				NOT = {
 					AND = {
 						tag = SOO
-						OR = {
-							has_reform = pirate_republic_reform
-							has_reform = pirate_king_reform
-							has_reform = war_against_the_world_doctrine_reform
-							has_reform = black_market_consortium_reform
-						}
+						has_government_attribute = is_pirate_republic_reform
 					}
 				}
 				NOT = {
@@ -512,12 +530,7 @@ cb_daimyo_annex = {
 			has_reform = daimyo
 			AND = {
 				tag = SOO
-				OR = {
-					has_reform = pirate_republic_reform
-					has_reform = pirate_king_reform
-					has_reform = war_against_the_world_doctrine_reform
-					has_reform = black_market_consortium_reform
-				}
+				has_government_attribute = is_pirate_republic_reform
 			}
 			AND = {
 				has_country_flag = ikko_ikki_peasants_flag
@@ -549,12 +562,7 @@ cb_independent_daimyo_annex = {
 			has_reform = indep_daimyo
 			AND = {
 				tag = SOO
-				OR = {
-					has_reform = pirate_republic_reform
-					has_reform = pirate_king_reform
-					has_reform = war_against_the_world_doctrine_reform
-					has_reform = black_market_consortium_reform
-				}
+				has_government_attribute = is_pirate_republic_reform
 			}
 			AND = {
 				has_country_flag = ikko_ikki_peasants_flag
@@ -582,12 +590,7 @@ cb_shogun_annex = {
 				has_reform = daimyo
 				AND = {
 					tag = SOO
-					OR = {
-						has_reform = pirate_republic_reform
-						has_reform = pirate_king_reform
-						has_reform = war_against_the_world_doctrine_reform
-						has_reform = black_market_consortium_reform
-					}
+					has_government_attribute = is_pirate_republic_reform
 				}
 				AND = {
 					has_country_flag = ikko_ikki_peasants_flag
@@ -618,12 +621,7 @@ cb_sengoku = {
 			has_reform = daimyo
 			AND = {
 				tag = SOO
-				OR = {
-					has_reform = pirate_republic_reform
-					has_reform = pirate_king_reform
-					has_reform = war_against_the_world_doctrine_reform
-					has_reform = black_market_consortium_reform
-				}
+				has_government_attribute = is_pirate_republic_reform
 			}
 			AND = {
 				has_country_flag = ikko_ikki_peasants_flag
@@ -641,12 +639,7 @@ cb_sengoku = {
 				has_reform = daimyo
 				AND = {
 					tag = SOO
-					OR = {
-						has_reform = pirate_republic_reform
-						has_reform = pirate_king_reform
-						has_reform = war_against_the_world_doctrine_reform
-						has_reform = black_market_consortium_reform
-					}
+					has_government_attribute = is_pirate_republic_reform
 				}
 				AND = {
 					has_country_flag = ikko_ikki_peasants_flag
@@ -957,6 +950,24 @@ cb_imperial_ban = {
 	war_goal = take_province_ban
 }
 
+cb_imperial_ban_incident = {
+	valid_for_subject = no
+
+	prerequisites = {
+		is_emperor = yes
+		is_imperial_ban_allowed = yes
+		FROM = {
+			capital_scope = { is_part_of_hre = no }
+			any_owned_province = {
+				is_part_of_hre = yes
+			}
+		}
+		is_revolutionary = no
+	}
+
+	war_goal = take_capital_ban
+}
+
 # Liberate Elector
 cb_liberate_elector = {
 	valid_for_subject = no
@@ -1169,6 +1180,20 @@ cb_spread_the_revolution = {
 	}
 
 	war_goal = superiority_revolution
+}
+
+cb_annex_the_revolution = {
+	valid_for_subject = no
+
+	prerequisites = {
+		is_revolutionary = yes
+		FROM = {
+			NOT = { is_subject_of = ROOT }
+			is_revolutionary = yes
+		}
+	}
+
+	war_goal = superiority_annex_revolution
 }
 
 cb_religious_league = {
@@ -1484,6 +1509,20 @@ cb_world_crusade = {
 
 	war_goal = superiority_world_crusade
 }
+# Force religion on Heathens
+cb_war_against_heresy = {
+	valid_for_subject = no
+
+	prerequisites = {
+		has_country_flag = war_against_heresy_flag
+		religion_group = FROM
+		NOT = { religion = FROM }
+		NOT = {	has_matching_religion = FROM }
+		is_revolutionary = no
+	}
+
+	war_goal = superiority_world_crusade
+}
 
 # CB for Majapahit
 cb_vassalize_majapahit = {
@@ -1639,4 +1678,21 @@ cb_push_back_colonizers = {
 	}
 
 	war_goal = push_back_colonizers
+}
+# CB for enforcing becoming an elector
+cb_enforce_electorate_right = {
+	valid_for_subject = no
+	prerequisites = {
+		is_part_of_hre = yes
+		is_elector = no
+		is_emperor = no
+		any_subject_country = {
+			is_elector = yes
+		}
+		FROM = {
+			is_emperor = yes
+		}
+	}
+
+	war_goal = war_goal_usurp_electorate
 }
