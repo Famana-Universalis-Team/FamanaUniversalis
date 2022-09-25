@@ -17,7 +17,21 @@ country_event = {
         NOT = {
             has_global_flag = leronya_gone
         }
-        is_year = 240
+        exists = EHZ
+        EHZ = {
+            NOT = {
+                is_subject_of = LER
+            }
+        }
+        #if = {
+        #    limit = {
+        #        ai = yes
+        #    }
+        is_year = 213
+        #}
+        #else = {
+        #    is_year = 213
+        #}
     }
 
     immediate = {
@@ -247,7 +261,20 @@ country_event = {
         NOT = {
             has_global_flag = leronya_gone
         }
-        is_year = 270
+        EHZ = {
+            is_subject_of = LER
+        }
+        #if = {
+        #    limit = {
+        #        LER = {
+        #            ai = yes
+        #        }
+        #    }
+        is_year = 225
+        #}
+        #else = {
+        #    is_year = 225
+        #}
         LER = {
             OR = {
                 owns_or_subject_of = 6547
@@ -296,7 +323,7 @@ country_event = {
         NOT = {
             exists = LER
         }
-        is_year = 245
+        is_year = 215
     }
 
     immediate = {
@@ -924,7 +951,13 @@ country_event = {
             type = all
             country_or_non_sovereign_subject_holds = ROOT
         }
-        is_year = 300
+        6580 = {
+            is_empty = yes
+        }
+        6592 = {
+            is_empty = yes
+        }
+        is_year = 280
     }
 
     mean_time_to_happen = {
@@ -1204,10 +1237,18 @@ country_event = {
 
     option = {
         name = gotzlica.19.a #give nenki their place by the lake
-        ai_chance = { factor = 1 }
-        every_owned_province = {
+        ai_chance = {
+            factor = 1
+            modifier = {
+                factor = 0
+                capital_scope = {
+                    area = dethoni_area
+                }
+            }
+        }
+        dethoni_area = {
             limit = {
-                area = dethoni_area
+                owned_by = ROOT
             }
             cede_province = NEN
             add_core = NEN
@@ -1299,7 +1340,7 @@ country_event = {
     option = {
         name = gotzlica.19.b #refuse and go to war
         ai_chance = {
-            factor = 1
+            factor = 2
         }
         NEN = {
             declare_war_with_cb = {
@@ -1540,6 +1581,7 @@ country_event = {
     desc = gotzlica.22.desc
     picture = BATTLE_eventPicture
 	fire_only_once = yes
+    major = yes
 
     trigger = {
         controls = 6643

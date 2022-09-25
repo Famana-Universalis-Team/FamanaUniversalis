@@ -481,6 +481,26 @@ country_event = {
 					cede_province = ---
 				}
 			}
+			if = {
+				limit = {
+					6634 = {
+						owned_by = ZUB
+					}
+				}
+				6634 = {
+					cede_province = ---
+				}
+			}
+			if = {
+				limit = {
+					6645 = {
+						owned_by = ZUB
+					}
+				}
+				6645 = {
+					cede_province = ---
+				}
+			}
 			set_global_flag = zubara_happened #a little tool that will help us later
 			6584 = {
 			   	owner = {
