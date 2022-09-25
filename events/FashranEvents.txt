@@ -1788,7 +1788,7 @@ country_event = {
             superregion = ga_xal_superregion
         }
         any_province = {
-			owned_by = FAS
+			controlled_by = FAS
 		    region = south_xalia_region
 		}
         NOT = { has_global_flag = tonmo_xal_invasion }
