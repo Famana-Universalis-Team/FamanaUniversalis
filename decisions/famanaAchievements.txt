@@ -509,61 +509,9 @@ country_decisions = {
 			}
 			was_tag = NAK
 			tag = ARS
-			aresia_region = {
+			jasua_superregion = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			jasua_region = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			unnamed_area_39 = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			unnamed_area_44 = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			unnamed_area_45 = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			unnamed_area_35 = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			unnamed_area_48 = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			unnamed_area_33 = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			unnamed_area_56 = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			unnamed_area_32 = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			unnamed_area_52 = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			unnamed_area_30 = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			geccis_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			unnamed_area_29 = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				owned_by = ROOT
 			}
 		}
 		effect = {

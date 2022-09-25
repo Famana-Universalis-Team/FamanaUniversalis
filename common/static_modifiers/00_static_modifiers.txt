@@ -1101,7 +1101,8 @@ prestige = {
 	dhimmi_loyalty_modifier = 0.05
 	jains_loyalty_modifier = 0.05
 	rajput_loyalty_modifier = 0.05
-
+	clans_loyalty_modifier = 0.05 #modded estate
+	gishelar_loyalty_modifier = 0.05 #modded estate
 }
 
 no_debate_in_parliament = {

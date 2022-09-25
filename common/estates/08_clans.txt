@@ -41,13 +41,17 @@ estate_clans = {
 	}
 
 	base_influence = 10
-	#influence_modifier = {
-	#	desc = BASE_MODIFIER
-	#	trigger = {
-	#		always = yes
-	#	}
-	#	influence = 10
-	#}
+
+	influence_modifier = {	
+		desc = CLANS_RELIGION
+		trigger = {
+			NOT = { has_reform = free_city }
+			any_owned_province = {
+				province_has_center_of_trade_of_level = 1
+			}
+		}
+		influence = 5
+	}
 
 	province_independence_weight = {
 		factor = 1

@@ -12,19 +12,20 @@ historical_rival = YAB
 historical_rival = BLK
 historical_rival = BMF
 historical_rival = KIN
+historical_rival = HLK
 religious_school = tribal_school
 
 208.2.11 = { #change to 200 or smth
 	monarch = {
-		name = "Aštrazna"
-		dynasty = "Kañy"
+		name = "Aï¿½trazna"
+		dynasty = "Kaï¿½y"
 		birth_date = 188.3.9
 		adm = 5
 		dip = 4
 		mil = 6
 	}
 	leader = {
-		name = "Ašily Aiša"
+		name = "Aï¿½ily Aiï¿½a"
 		type = general
 		fire = 3
 		shock = 4
