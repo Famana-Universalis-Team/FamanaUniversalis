@@ -660,6 +660,9 @@ tributary_state = {
 				NOT = { 
 					is_subject_of_type = tributary_state
 				}
+				NOT = {
+					has_reform = nomadic_tonxara_gov
+				}
 				OR = {
 					has_reform = celestial_empire
 					has_government_attribute = has_tributaries
