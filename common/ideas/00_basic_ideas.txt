@@ -908,6 +908,7 @@ humanist_ideas = {
 		yearly_harmony = 0.25  # Used if religion uses harmony (confucianism)
 		brahmins_muslim_loyalty_modifier = 0.1
 		dhimmi_loyalty_modifier = 0.1
+		gishelar_loyalty_modifier = 0.1
 	}
 
 	tolerance_idea = {
@@ -916,6 +917,7 @@ humanist_ideas = {
 	local_traditions = {
 		global_unrest = -2
 		harmonization_speed = 0.25
+		clans_loyalty_modifier = 0.1
 	}
 	ecumenism = {
 		tolerance_heretic = 2

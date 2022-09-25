@@ -45,10 +45,17 @@ estate_clans = {
 	influence_modifier = {	
 		desc = CLANS_RELIGION
 		trigger = {
-			NOT = { has_reform = free_city }
-			any_owned_province = {
-				province_has_center_of_trade_of_level = 1
+			NOT = {
+				religious_unity = 0.80
 			}
+		}
+		influence = 10
+	}
+
+	influence_modifier = {	
+		desc = CLANS_AUTONOMY
+		trigger = {
+			average_home_autonomy = 25
 		}
 		influence = 5
 	}

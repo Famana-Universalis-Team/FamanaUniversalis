@@ -942,11 +942,12 @@ country_event = {
 
     trigger = {
         technology_group = east_gomic_tech_gr
-        any_province = {
-			owned_by = FAS
-		    has_discovered = ROOT
-		}
-        NOT = { has_global_flag = tonmo_invasion }
+        FAS = {
+            any_owned_province = {
+                has_discovered = ROOT
+            }
+        }
+        #NOT = { has_global_flag = tonmo_invasion }
     }
 
     mean_time_to_happen = {
@@ -956,7 +957,7 @@ country_event = {
     option = {
         name = fashros.14.a
         ai_chance = { factor = 1 }
-        set_global_flag = tonmo_invasion
+        #set_global_flag = tonmo_invasion
         custom_tooltip = fashros_discovery
     }
 }
@@ -1780,18 +1781,17 @@ country_event = {
     fire_only_once = yes
 
     trigger = {
-        is_year = 250
-        NOT = {
-            is_year = 330
-        }
-        any_owned_province = {
+        #is_year = 250
+        #NOT = {
+        #    is_year = 330
+        #}
+        capital_scope = {
             superregion = ga_xal_superregion
         }
-        any_province = {
+        south_xalia_region = {
 			controlled_by = FAS
-		    region = south_xalia_region
 		}
-        NOT = { has_global_flag = tonmo_xal_invasion }
+        #NOT = { has_global_flag = tonmo_xal_invasion }
     }
 
     mean_time_to_happen = {
@@ -1801,7 +1801,7 @@ country_event = {
     option = {
         name = fashros.23.a
         ai_chance = { factor = 1 }
-        set_global_flag = tonmo_xal_invasion
+        #set_global_flag = tonmo_xal_invasion
         custom_tooltip = fashros_ga_xal_invasion_tt
     }
 }
