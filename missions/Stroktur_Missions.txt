@@ -309,6 +309,19 @@ eclipse_5 = {
                     duration = 3650
                 }
             }
+            if = {
+                limit = {
+                    NOT = {
+                        OR = {
+                            tag = KLG
+                            tag = NAF
+                            has_country_flag = klgRevoltHappened
+                            is_year = 285
+                        }
+                    }
+                }
+                custom_tooltip = sktKlgLonger
+            }
         }
         provinces_to_highlight = {
             OR = {

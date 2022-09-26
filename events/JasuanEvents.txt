@@ -1308,6 +1308,10 @@ country_event = { #Kalargan uprising
 		}
 	}
 
+	immediate = {
+		set_country_flag = klgRevoltHappened
+	}
+
 	mean_time_to_happen = {
 		months = 144
 		modifier = {

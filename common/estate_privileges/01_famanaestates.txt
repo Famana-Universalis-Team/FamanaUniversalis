@@ -481,9 +481,9 @@ estate_gishelar_land_rights = {
 
 estate_burghers_deforestation_permits = {
 	icon = privilege_dev_cost
-	max_absolutism = -10
 	influence = 0.1
 	loyalty = 0.05
+	land_share = 10
 	is_valid = {
 		culture_group = Gotzlic
 		any_owned_province = {
@@ -503,7 +503,7 @@ estate_burghers_deforestation_permits = {
 		}
 	}
 	on_granted = {
-		add_prestige = -30
+		add_prestige = -25
 		custom_tooltip = deforPermitsGtzAdd
 		hidden_effect = {
 			every_owned_province = {
@@ -552,5 +552,59 @@ estate_burghers_deforestation_permits = {
 				}
 			}
 		}
+	}
+}
+
+estate_nobles_unending_crusade = {
+	icon = privilege_recruit_inouisitor
+	max_absolutism = -5
+	is_valid = {
+		OR = {
+			religion = rini
+			religious_school = {
+				group = lathvy_group
+				school = nafan_school
+			}
+			religious_school = {
+				group = lathvy_group
+				school = maxan_school
+			}
+		}
+	}
+	can_select = {
+		mil = 3
+	}
+	on_granted = {
+		custom_tooltip = estate_nobles_unending_crusade_effect_tooltip
+	}
+	on_revoked = {
+		custom_tooltip = estate_nobles_unending_crusade_effect_tooltip
+	}
+	conditional_modifier = {
+		trigger = {
+			is_at_war = yes
+		}
+		modifier = {
+			monthly_mil = 1
+		}
+	}
+	conditional_modifier = {
+		trigger = {
+			NOT = {
+				is_at_war = yes
+			}
+		}
+		modifier = {
+			monthly_mil = -1
+		}
+		is_bad = yes
+	}
+	benefits = {
+		army_tradition_decay = -0.01
+	}
+	penalties = {
+	}
+	ai_will_do = {
+		factor = 0
 	}
 }
