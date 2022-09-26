@@ -5,7 +5,7 @@ country_event = {
     id = gotzlica.1
     title = gotzlica.1.t
     desc = gotzlica.1.desc
-    picture = BATTLE_eventPicture
+    picture = DIPLOMACY_eventPicture
 	fire_only_once = yes
 
     mean_time_to_happen = {
@@ -83,7 +83,7 @@ country_event = {
     id = gotzlica.2
     title = gotzlica.2.t
     desc = gotzlica.2.desc
-    picture = BATTLE_eventPicture
+    picture = COURT_eventPicture
 	fire_only_once = yes
     is_triggered_only = yes
 
@@ -148,7 +148,7 @@ country_event = {
     id = gotzlica.3
     title = gotzlica.3.t
     desc = gotzlica.3.desc
-    picture = BATTLE_eventPicture
+    picture = BAD_WITH_MONARCH_eventPicture
 	fire_only_once = yes
     is_triggered_only = yes
 
@@ -204,7 +204,7 @@ country_event = {
     id = gotzlica.4
     title = gotzlica.4.t
     desc = gotzlica.4.desc
-    picture = BATTLE_eventPicture
+    picture = GOOD_WITH_MONARCH_eventPicture
 	fire_only_once = yes
     is_triggered_only = yes
 
@@ -249,7 +249,7 @@ country_event = {
     id = gotzlica.5
     title = gotzlica.5.t
     desc = gotzlica.5.desc
-    picture = BATTLE_eventPicture
+    picture = LAND_MILITARY_eventPicture
 	fire_only_once = yes
 
     mean_time_to_happen = {
@@ -341,7 +341,7 @@ country_event = {
     id = gotzlica.7
     title = gotzlica.7.t
     desc = gotzlica.7.desc
-    picture = BATTLE_eventPicture
+    picture = ACCUSATION_eventPicture
 	fire_only_once = yes
     is_triggered_only = yes
 
@@ -407,7 +407,7 @@ country_event = {
     id = gotzlica.8
     title = gotzlica.8.t
     desc = gotzlica.8.desc
-    picture = BATTLE_eventPicture
+    picture = WAR_OF_THE_ROSES_eventPicture
 	fire_only_once = yes
     is_triggered_only = yes
 
@@ -561,7 +561,7 @@ country_event = {
     id = gotzlica.9
     title = gotzlica.9.t
     desc = gotzlica.9.desc
-    picture = BATTLE_eventPicture
+    picture = GOOD_WITH_MONARCH_eventPicture
 	fire_only_once = yes
     is_triggered_only = yes
 
@@ -637,7 +637,7 @@ country_event = {
     id = gotzlica.10
     title = gotzlica.10.t
     desc = gotzlica.10.desc
-    picture = BATTLE_eventPicture
+    picture = TRADEGOODS_eventPicture
 	fire_only_once = yes
 
     trigger = {
@@ -942,7 +942,7 @@ country_event = {
     id = gotzlica.15
     title = gotzlica.15.t
     desc = gotzlica.15.desc
-    picture = BATTLE_eventPicture
+    picture = TRADEGOODS_eventPicture
 	fire_only_once = yes
 
     trigger = {
@@ -999,7 +999,7 @@ country_event = {
     id = gotzlica.16
     title = gotzlica.16.t
     desc = gotzlica.16.desc
-    picture = BATTLE_eventPicture
+    picture = TRADEGOODS_eventPicture
 	fire_only_once = yes
 
     trigger = {
@@ -1064,7 +1064,7 @@ country_event = {
     id = gotzlica.17
     title = gotzlica.17.t
     desc = gotzlica.17.desc
-    picture = BATTLE_eventPicture
+    picture = TRADEGOODS_eventPicture
 	fire_only_once = yes
     is_triggered_only = yes
 
@@ -1175,7 +1175,7 @@ country_event = {
     id = gotzlica.18
     title = gotzlica.18.t
     desc = gotzlica.18.desc
-    picture = BATTLE_eventPicture
+    picture = FARMING_eventPicture
 	fire_only_once = yes
 
     mean_time_to_happen = {
@@ -1227,7 +1227,7 @@ country_event = {
     id = gotzlica.19
     title = gotzlica.19.t
     desc = gotzlica.19.desc
-    picture = BATTLE_eventPicture
+    picture = BORDER_TENSION_eventPicture
 	fire_only_once = yes
     is_triggered_only = yes
     major = yes
@@ -1357,7 +1357,7 @@ country_event = {
     id = gotzlica.20
     title = gotzlica.20.t
     desc = gotzlica.20.desc
-    picture = BATTLE_eventPicture
+    picture = MILITARY_CAMP_eventPicture
 	fire_only_once = yes
 
     trigger = {
@@ -1478,7 +1478,7 @@ country_event = {
     id = gotzlica.21
     title = gotzlica.21.t
     desc = gotzlica.21.desc
-    picture = BATTLE_eventPicture
+    picture = TRADEGOODS_eventPicture
 	fire_only_once = yes
     is_triggered_only = yes
 
@@ -1579,7 +1579,7 @@ country_event = {
     id = gotzlica.22
     title = gotzlica.22.t
     desc = gotzlica.22.desc
-    picture = BATTLE_eventPicture
+    picture = SIEGE_eventPicture
 	fire_only_once = yes
     major = yes
 
