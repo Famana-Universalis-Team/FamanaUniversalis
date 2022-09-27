@@ -2174,6 +2174,7 @@ rdu_colonize = {
 pya_lathvy = {
     tolerance_own = 1
     tolerance_heathen = -1
+    religion = yes
 }
 
 tck_sar_virtue = {
@@ -2250,8 +2251,13 @@ diocese_fight_for_liberty = {
 naf_adopt_oppian_institutions = {
     min_autonomy_in_territories = -0.1
     governing_capacity = 250
+    max_absolutism = 10
 }
 
 naf_kisholi_cav = {
     cavalry_shock = 0.25
+}
+
+naf_nutrop_dip = {
+    diplomats = 1
 }

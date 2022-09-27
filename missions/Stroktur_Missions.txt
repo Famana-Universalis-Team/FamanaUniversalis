@@ -1491,6 +1491,9 @@ nafa_1 = {
             mrug_area = {
                 add_permanent_claim = ROOT
             }
+            east_yuvla_area = {
+                add_permanent_claim = ROOT
+            }
         }
         provinces_to_highlight = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
@@ -1590,6 +1593,9 @@ nafa_1 = {
                 }
             }
             add_mil_power = 250
+            #pextoglazia_region = {
+            #    add_permanent_claim = ROOT
+            #}
         }
         provinces_to_highlight = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
@@ -1635,13 +1641,42 @@ nafa_1 = {
                 type = all
 			    country_or_non_sovereign_subject_holds = ROOT
             }
+            walara_region = {
+                type = all
+			    country_or_non_sovereign_subject_holds = ROOT
+            }
+            lomea_region = {
+                type = all
+			    country_or_non_sovereign_subject_holds = ROOT
+            }
         }
         effect = {
-            
+            pextoglazia_region = {
+                add_province_modifier = {
+                    name = naf_pexto
+                    duration = -1
+                }
+            }
+            walara_region = {
+                add_province_modifier = {
+                    name = naf_walara
+                    duration = -1
+                }
+            }
+            lomea_region = {
+                add_province_modifier = {
+                    name = naf_lomea
+                    duration = -1
+                }
+            }
         }
         provinces_to_highlight = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
-            region = pextoglazia_region
+            OR = {
+                region = pextoglazia_region
+                region = walara_region
+                region = lomea_region
+            }
         }
     }
 
@@ -2483,9 +2518,9 @@ nafa_2 = {
             custom_tooltip = nafUnlockConqDecision
             set_country_flag = naf_conq_decision_flag
             set_country_flag = naf_conq_temp
-            porlodya_region = {
-                add_permanent_claim = ROOT
-            }
+            #porlodya_region = {
+            #    add_permanent_claim = ROOT
+            #}
             napora_region = {
                 add_permanent_claim = ROOT
             }
@@ -3383,11 +3418,32 @@ nafa_3 = {
         required_missions = { naf_intervene_in_oppia }
         position = 12
         trigger = {
-            
+            great_power_rank = 1
+            courthouse = 75
+            OR = {
+                crown_land_share = 99
+                absolutism = 80
+            }
         }
         effect = {
-            #nutiaRopleaVassalFlag (Use this)
             custom_tooltip = ifNutiaHelpedUsGainControlThenDiploBonus
+            tooltip = {
+                add_country_modifier = {
+                    name = naf_nutrop_dip
+                    duration = -1
+                }
+            }
+            hidden_effect = {
+                if = {
+                    limit = {
+                        has_country_flag = naf_got_rop_or_nut
+                    }
+                    add_country_modifier = {
+                        name = naf_nutrop_dip
+                        duration = -1
+                    }
+                }
+            }
             add_country_modifier = {
                 name = naf_adopt_oppian_institutions
                 duration = -1

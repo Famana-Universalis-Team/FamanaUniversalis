@@ -900,3 +900,32 @@ country_event = { #you shall NOT go into nhoma
         }
     }
 }
+
+country_event = { #Roplea or nafa vassal
+    id = nafa.17
+    fire_only_once = yes
+    hidden = yes
+
+    trigger = {
+        OR = {
+            tag = NUT
+            tag = ROP
+        }
+        is_subject_of = NAF
+    }
+
+    mean_time_to_happen = {
+        days = 1
+    }
+
+    immediate = {
+        NAF = {
+            set_country_flag = naf_got_rop_or_nut
+        }
+    }
+
+    option = {
+        name = nafa.17.a
+        ai_chance = { factor = 1 }
+    }
+}

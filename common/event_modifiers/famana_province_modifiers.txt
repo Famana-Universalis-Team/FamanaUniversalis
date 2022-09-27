@@ -457,3 +457,15 @@ estate_gishelar_guaranteed_autonomy_mod = {
     local_religious_unity_contribution = -1.0
     religion = yes
 }
+
+naf_pexto = {
+    local_tax_modifier = 0.15
+}
+
+naf_walara = {
+    local_manpower_modifier = 0.25
+}
+
+naf_lomea = {
+    province_trade_power_modifier = 0.5
+}
