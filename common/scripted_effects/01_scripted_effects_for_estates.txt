@@ -913,6 +913,68 @@ on_province_owner_change_estate_privileges_effect = {
 		}
 		remove_province_modifier = estate_cossacks_prime_herding_rights_mod
 	}
+	################# FAMANA
+	if = {
+		limit = {
+			owner = {
+				has_estate_privilege = estate_burghers_deforestation_permits
+			}
+			OR = {
+				has_terrain = forest
+				has_terrain = woods
+			}
+			OR = {
+				region = gotzlic_region
+				region = east_gotzlic_region
+				region = south_gotzlic_region
+			}
+		}
+		add_province_modifier = {
+			name = gotzlic_deforestation_modifier
+			duration = -1
+		}
+	}
+	# gishelar below
+	if = {
+		limit = {
+			owner = {
+				has_estate_privilege = estate_gishelar_lighter_gishelar_taxes
+			}
+			continent = antebar
+			religion = tonmo
+		}
+		add_province_modifier = {
+			name = estate_gishelar_lighter_gishelar_taxes_privilege_mod
+			duration = -1
+		}
+	}
+	if = {
+		limit = {
+			owner = {
+				has_estate_privilege = estate_gishelar_manpower
+			}
+			continent = antebar
+			religion = tonmo
+		}
+		add_province_modifier = {
+			name = estate_gishelar_manpower_mod
+			duration = -1
+		}
+	}
+	if = {
+		limit = {
+			owner = {
+				has_country_flag = gishelar_tolerates_wrong_religion
+			}
+			continent = antebar
+			religion = tonmo
+		}
+		add_province_modifier = {
+			name = estate_gishelar_guaranteed_autonomy_mod
+			duration = -1
+		}
+	}
+	#################
 	if = {
 		limit = {
 			owner = {

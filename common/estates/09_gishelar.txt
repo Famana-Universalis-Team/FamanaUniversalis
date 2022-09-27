@@ -118,6 +118,13 @@ estate_gishelar = {
 	
 	privileges = {
 		estate_gishelar_land_rights
+		estate_gishelar_grant_liberties
+		estate_gishelar_lighter_gishelar_taxes
+		estate_gishelar_guaranteed_autonomy
+		estate_gishelar_gishelar_nobles
+		estate_gishelar_manpower
+		estate_gishelar_tolerance
+		estate_gishelar_tonmo_scholars_in_court
 		#estate_dhimmi_lighter_dhimmi_taxes
 		#estate_dhimmi_guaranteed_autonomy
 		#estate_dhimmi_dhimmi_nobles
@@ -127,15 +134,15 @@ estate_gishelar = {
 	}
 
 	agendas = {
-		estate_dhimmi_develop_x
-		estate_dhimmi_build_temple_in_y
-		estate_dhimmi_build_university_in_y
-		estate_dhimmi_stop_converting_province_x
-		estate_dhimmi_increase_autonomy_in_province_x
-		estate_dhimmi_three_privileges
-		estate_dhimmi_relations_with_X
-		estate_dhimmi_hire_advisor
-		estate_dhimmi_fire_advisor
+		#estate_dhimmi_develop_x
+		#estate_dhimmi_build_temple_in_y
+		#estate_dhimmi_build_university_in_y
+		#estate_dhimmi_stop_converting_province_x
+		#estate_dhimmi_increase_autonomy_in_province_x
+		#estate_dhimmi_three_privileges
+		#estate_dhimmi_relations_with_X
+		#estate_dhimmi_hire_advisor
+		#estate_dhimmi_fire_advisor
 	}
 
 	color = { 100 125 150 }

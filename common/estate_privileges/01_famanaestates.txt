@@ -494,7 +494,6 @@ estate_burghers_deforestation_permits = {
 		}
 	}
 	can_select = {
-		culture_group = Gotzlic
 		any_owned_province = {
 			OR = {
 				has_terrain = forest
@@ -600,6 +599,327 @@ estate_nobles_unending_crusade = {
 		is_bad = yes
 	}
 	penalties = {
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+estate_gishelar_tolerance = {
+	icon = privilege_promoto_dhimmi_nobles
+	max_absolutism = -5
+	influence = 0.1
+	is_valid = {
+		any_owned_province = {
+			continent = antebar
+			religion = tonmo
+		}
+		NOT = { has_estate_privilege = estate_burghers_enforced_interfaith_dialogue }
+		#NOT = { has_unlocked_estate_privilege = { estate_privilege = estate_dhimmi_guarantee_of_traditions } }
+	}
+	can_select = {
+		NOT = { has_estate_privilege = estate_church_enforced_one_faith }
+	}
+	penalties = {
+		church_loyalty_modifier = -0.05
+	}
+	benefits = {
+		tolerance_heathen = 2
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 10
+			num_of_owned_provinces_with = {
+				continent = antebar
+				religion = tonmo
+				is_state_core = root
+				value = 15
+			}
+		}
+		modifier = {
+			factor = 0.5
+			estate_influence = {
+				estate = estate_church
+				influence = 75
+			}
+		}
+		modifier = {
+			factor = 0.8
+			is_absolutism_active = yes
+		}
+	}
+}
+
+estate_gishelar_lighter_gishelar_taxes = {
+	icon = privilege_lighten_dhimmi_tax_burden
+	max_absolutism = -5
+	influence = 0.05
+	is_valid = {
+		any_owned_province = {
+			continent = antebar
+			religion = tonmo
+		}
+	}
+	on_granted = {
+		custom_tooltip = estate_gishelar_lighter_gishelar_taxes_effect_tooltip
+	}
+	on_granted_province = {
+		if = {
+			limit = {
+				continent = antebar
+				religion = tonmo
+			}
+			add_province_modifier = {
+				name = estate_gishelar_lighter_gishelar_taxes_privilege_mod
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_province_modifier = estate_gishelar_lighter_gishelar_taxes_privilege_mod
+			}
+			remove_province_modifier = estate_gishelar_lighter_gishelar_taxes_privilege_mod
+		}
+	}
+	on_revoked = {
+		custom_tooltip = estate_gishelar_lighter_gishelar_taxes_revoke_effect_tooltip
+	}
+	on_revoked_province = {
+		if = {
+			limit = {
+				has_province_modifier = estate_gishelar_lighter_gishelar_taxes_privilege_mod
+			}
+			remove_province_modifier = estate_gishelar_lighter_gishelar_taxes_privilege_mod
+		}
+	}
+	on_invalid = {
+		custom_tooltip = estate_dhimmi_lighter_dhimmi_taxes_revoke_effect_tooltip
+	}
+	on_invalid_province = {
+		if = {
+			limit = {
+				has_province_modifier = estate_dhimmi_lighter_dhimmi_taxes_privilege_mod
+			}
+			remove_province_modifier = estate_dhimmi_lighter_dhimmi_taxes_privilege_mod
+		}
+	}
+	penalties = {
+	}
+	benefits = {
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+estate_gishelar_grant_liberties = {
+	icon = privilege_tolerance_heathen
+	max_absolutism = -10
+	influence = 0.1
+	loyalty = 0.1
+	is_valid = {
+	}
+	penalties = {
+	}
+	benefits = {
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+estate_gishelar_gishelar_nobles = {
+	icon = privilege_promoto_dhimmi_nobles
+	max_absolutism = -5
+	loyalty = 0.1
+	influence = 0.1
+	penalties = {
+		church_loyalty_modifier = -0.05
+		nobles_loyalty_modifier = -0.05
+	}
+	benefits = {
+		free_leader_pool = 1
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+estate_gishelar_manpower = {
+	icon = privilege_demand_more_troops
+	land_share = 5
+	max_absolutism = -5
+	loyalty = -0.05
+	influence = 0.05
+	is_valid = {
+		any_owned_province = {
+			religion = tonmo
+			continent = antebar
+		}
+	}
+	can_select = {
+	}
+	on_granted = {
+		custom_tooltip = estate_gishelar_manpower_effect_tooltip
+	}
+	on_granted_province = {
+		if = {
+			limit = {
+				religion = tonmo
+				continent = antebar
+			}
+			add_province_modifier = {
+				name = estate_gishelar_manpower_mod
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_province_modifier = estate_gishelar_manpower_mod
+			}
+			remove_province_modifier = estate_gishelar_manpower_mod
+		}
+	}
+	on_revoked = {
+		custom_tooltip = estate_gishelar_manpower_revoke_effect_tooltip
+	}
+	on_revoked_province = {
+		if = {
+			limit = {
+				has_province_modifier = estate_gishelar_manpower_mod
+			}
+			remove_province_modifier = estate_gishelar_manpower_mod
+		}
+	}
+	on_invalid = {
+		custom_tooltip = estate_gishelar_manpower_revoke_effect_tooltip
+	}
+	on_invalid_province = {
+		if = {
+			limit = {
+				has_province_modifier = estate_gishelar_manpower_mod
+			}
+			remove_province_modifier = estate_gishelar_manpower_mod
+		}
+	}
+	penalties = {
+	}
+	benefits = {
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+estate_gishelar_guaranteed_autonomy = {
+	icon = privilege_grant_autonomy
+	max_absolutism = -5
+	loyalty = 0.2
+	influence = 0.05
+	is_valid = {
+		any_owned_province = {
+			continent = antebar
+			religion = tonmo
+		}
+		#NOT = { has_unlocked_estate_privilege = { estate_privilege = estate_gishelar_guarantee_of_traditions } }
+	}
+	on_granted = {
+		custom_tooltip = estate_gishelar_guaranteed_autonomy_effect_tooltip
+		hidden_effect = {
+			set_country_flag = gishelar_tolerates_wrong_religion
+		}
+	}
+	on_granted_province = {
+		if = {
+			limit = {
+				continent = antebar
+				religion = tonmo
+			}
+			add_province_modifier = {
+				name = estate_gishelar_guaranteed_autonomy_mod
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_province_modifier = estate_gishelar_guaranteed_autonomy_mod
+			}
+			remove_province_modifier = estate_gishelar_guaranteed_autonomy_mod
+		}
+	}
+	on_revoked = {
+		custom_tooltip = estate_gishelar_guaranteed_autonomy_revoke_effect_tooltip
+		hidden_effect = {
+			clr_country_flag = gishelar_tolerates_wrong_religion
+		}
+	}
+	on_revoked_province = {
+		if = {
+			limit = {
+				has_province_modifier = estate_gishelar_guaranteed_autonomy_mod
+			}
+			remove_province_modifier = estate_gishelar_guaranteed_autonomy_mod
+		}
+	}
+	on_invalid = {
+		custom_tooltip = estate_gishelar_guaranteed_autonomy_revoke_effect_tooltip
+		hidden_effect = {
+			clr_country_flag = gishelar_tolerates_wrong_religion
+		}
+	}
+	on_invalid_province = {
+		if = {
+			limit = {
+				has_province_modifier = estate_gishelar_guaranteed_autonomy_mod
+			}
+			remove_province_modifier = estate_gishelar_guaranteed_autonomy_mod
+		}
+	}
+	penalties = {
+	}
+	benefits = {
+	}
+	#conditional_modifier = {
+	#	trigger = { has_government_attribute = free_guarantee_gishelar_autonomy }
+	#	modifier = {
+	#		max_absolutism = 5
+	#		gishelar_influence_modifier = -0.05
+	#	}
+	#}
+	ai_will_do = {
+		factor = 1000
+		modifier = {
+			factor = 0
+			NOT = {
+				any_owned_province = {
+					continent = antebar
+					religion = tonmo
+				}
+			}
+		}
+		modifier = {
+			factor = 0
+			is_subject = yes
+			overlord = {
+				religion = ROOT
+				has_idea_group = religious_ideas
+			}
+		}
+	}
+}
+
+estate_gishelar_tonmo_scholars_in_court = {
+	icon = privilege_recruit_minister
+	max_absolutism = -10
+	loyalty = 0.1
+	influence = 0.25
+	penalties = {
+		church_loyalty_modifier = -0.20
+	}
+	benefits = {
+		all_power_cost = -0.05
+		adm_advisor_cost = -0.1
 	}
 	ai_will_do = {
 		factor = 0

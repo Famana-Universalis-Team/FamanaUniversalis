@@ -138,6 +138,7 @@ kachik_religious_autonomy = {
     local_missionary_strength = -1.0
     local_production_efficiency = 0.10
     local_manpower_modifier = 0.10
+    religion = yes
 }
 
 huparan_shipyard = {
@@ -2249,4 +2250,8 @@ diocese_fight_for_liberty = {
 naf_adopt_oppian_institutions = {
     min_autonomy_in_territories = -0.1
     governing_capacity = 250
+}
+
+naf_kisholi_cav = {
+    cavalry_shock = 0.25
 }

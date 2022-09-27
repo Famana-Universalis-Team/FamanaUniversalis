@@ -437,7 +437,7 @@
  owns_laglon_tooltip: "§YLaglon§! Region:\n  All colonised provinces are owned by §Y[Root.GetName]§!."
  tck_oppian_legion: "Unlocks the §YOppian Legion§! Mercenary Company."
  tck_oppian_legion_req: "Completed Mission §YNew Model Army§!"
- lukschaGetDev: "Every owned province in the §YLukscham§! Region gets §G1§! Base Tax, §G1§! Base Production and §G1§! Base Manpower."
+ lukschaGetDev: "Every owned province in the §YLukscham§! Region will gain §G1§! Base Tax, §G1§! Base Production and §G1§! Base Manpower."
  NO_ACCATI: "The house of §YAccati§! has been neutralised."
  NO_ORABUS: "The house of §YOrabus§! has been neutralised."
  NO_ALATAN: "The house of §YAlatan§! has been neutralised."
@@ -465,3 +465,4 @@
  addSubjCbPXA: "§Y[Root.GetName]§! gain §YSubjugation§! Casus Belli on @PXA §YPoxa§!."
  sktKlgLonger: "'§YThe Kalargan Revolt§!' will be less likely to happen."
  estate_nobles_unending_crusade_effect_tooltip: "Monthly Military Power: §G+1§! when at war.\n\nMonthly Military Power: §R-1§! when at peace.\n\n§YOnly one of the modifiers is active at a time.§!"
+ naf_gishelar_dev: "Every owned §YTonmo§! province in §YAntebar§! will gain §G1§! Base Manpower."

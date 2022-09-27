@@ -4298,10 +4298,43 @@ nafa_5 = {
         required_missions = { naf_consolidate_jasua }
         position = 10
         trigger = {
-            
+            has_estate_privilege = estate_gishelar_guaranteed_autonomy
+            num_of_estate_privileges = {
+	            estate = estate_gishelar
+	            value = 3
+            }
+            estate_loyalty = {
+                estate = estate_gishelar
+                loyalty = 70
+            }
         }
         effect = {
-            
+            add_country_modifier = {
+                name = naf_kisholi_cav
+                duration = -1
+            }
+            custom_tooltip = naf_gishelar_dev
+            hidden_effect = {
+                every_owned_province = {
+                    limit = {
+                        religion = tonmo
+                        continent = antebar
+                    }
+                    add_base_manpower = 1
+                }
+            }
+            random_owned_province = {
+                limit = {
+                    superregion = jasua_superregion
+                    religion = tonmo
+                }
+                add_unit_construction = {
+    				type = cavalry
+    				amount = 20
+    				speed = 0
+    				cost = 0
+				}
+            }
         }
         #provinces_to_highlight = {}
     }
