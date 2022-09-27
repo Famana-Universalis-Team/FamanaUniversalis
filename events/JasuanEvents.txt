@@ -1090,17 +1090,16 @@ country_event = { #Anti-Biliku-exploit event
 		if = {
 			limit = {
 				any_owned_province = {
-					OR = {
-						is_core = BLK
-					}
-				}
-			}
-			every_owned_province = {
-				limit = {
 					is_core = BLK
 				}
-				cede_province = BLK
 			}
+			release = BLK
+			#every_owned_province = {
+			#	limit = {
+			#		is_core = BLK
+			#	}
+			#	cede_province = BLK
+			#}
 		}
 	}
 }

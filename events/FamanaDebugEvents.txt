@@ -113,3 +113,20 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = fdebug.2
+	title = fdebug.2.t
+	picture = BATTLE_eventPicture
+	desc = fdebug.2.desc
+	is_triggered_only = yes
+
+	option = {
+		name = fdebug.2.a
+		ai_chance = { factor = 1 }
+		every_owned_province = {
+			cede_province = SOY
+			add_core = SOY
+		}
+	}
+}

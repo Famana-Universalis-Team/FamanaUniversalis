@@ -2222,9 +2222,10 @@ country_event = {
 							}
 						}
 					}
-					cede_province = ORS
+					#cede_province = ORS
 					add_core = ORS
 				}
+				release = ORS
 				NAF = {
 					declare_war_with_cb = {
     					who = ORS
@@ -2248,9 +2249,10 @@ country_event = {
 						province_id = 6193
 					}
 				}
-				cede_province = YUV
+				#cede_province = YUV
 				add_core = YUV
 			}
+			release = YUV
 			every_owned_province = { #Vamanya
 				limit = {
 					OR = {
@@ -2268,9 +2270,10 @@ country_event = {
 						province_id = 6193
 					}
 				}
-				cede_province = VAM
+				#cede_province = VAM
 				add_core = VAM
 			}
+			release = VAM
 			every_owned_province = { #Kletvar
 				limit = {
 					OR = {
@@ -2279,9 +2282,10 @@ country_event = {
 						region = gacil_superregion
 					}
 				}
-				cede_province = KLV
+				#cede_province = KLV
 				add_core = KLV
 			}
+			release = KLV
 			every_owned_province = { #Kolya
 				limit = {
 					OR = {
@@ -2297,9 +2301,10 @@ country_event = {
 						}
 					}
 				}
-				cede_province = KLY
+				#cede_province = KLY
 				add_core = KLY
 			}
+			release = KLY
 			every_province = {
 				limit = {
 					NOT = {
@@ -2354,7 +2359,10 @@ country_event = {
 	fire_only_once = yes
 
 	immediate = {
-		every_owned_province = {
+		every_province = {
+			limit = {
+				owned_by = ROOT
+			}
 			cede_province = ORS
 		}
 	}
