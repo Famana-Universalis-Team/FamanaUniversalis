@@ -585,7 +585,7 @@ estate_nobles_unending_crusade = {
 			is_at_war = yes
 		}
 		modifier = {
-			monthly_mil = 1
+			country_military_power = 1
 		}
 	}
 	conditional_modifier = {
@@ -595,12 +595,9 @@ estate_nobles_unending_crusade = {
 			}
 		}
 		modifier = {
-			monthly_mil = -1
+			country_military_power = -1
 		}
 		is_bad = yes
-	}
-	benefits = {
-		army_tradition_decay = -0.01
 	}
 	penalties = {
 	}

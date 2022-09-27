@@ -1690,3 +1690,51 @@ country_event = {
 		}
 	}
 }
+
+#owns hasia
+country_event = {
+	id = lathvy.27
+	title = lathvy.27.t
+	desc = lathvy.27.d
+	picture = SIEGE_eventPicture
+	fire_only_once = yes
+	
+	trigger = {
+		religion_group = lathvy_group
+		owns = 5695
+		NOT = {
+			OR = {
+				tag = UMZ
+				tag = NAF
+				tag = LAG
+				tag = RES
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 7
+	}
+
+	option = {
+		ai_chance = { factor = 1 }
+		name = lathvy.27.a
+		5695 = {
+			change_culture = ROOT
+			change_religion = ROOT
+			add_core = ROOT
+			add_base_tax = -3
+			add_base_production = -3
+			add_base_manpower = -3
+		}
+	}
+
+	option = {
+		ai_chance = { factor = 0 }
+		name = lathvy.27.b
+		add_prestige = -25
+		5695 = {
+			add_devastation	= -50
+		}
+	}
+}

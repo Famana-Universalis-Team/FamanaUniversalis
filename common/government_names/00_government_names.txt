@@ -3,6 +3,42 @@
 
 #Heir and consort titles are generally kept simple for clarity unless there is something special in particular that can be used.
 
+rin_order_name = {
+	rank = {
+		1 = ORDER
+		2 = ORDER
+		3 = ORDER
+	}
+
+	ruler_male = {
+		1 = BISHOP
+		2 = ARCHBISHOP
+		3 = PATRIARCH
+	}
+
+	ruler_female = {
+		1 = BISHOP_fem
+		2 = ARCHBISHOP_fem
+		3 = MATRIARCH
+	}
+	
+	heir_male = {
+		1 = HEIR
+		2 = HEIR
+		3 = HEIR
+	}
+
+	heir_female = {
+		1 = HEIR_fem
+		2 = HEIR_fem
+		3 = HEIR_fem
+	}
+
+	trigger = {
+		has_reform = rin_order_gov
+	}
+}
+
 oppia_konusate_reform = {
 	rank = {
 		1 = KONUSATE

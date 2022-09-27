@@ -158,6 +158,10 @@ eclipse_3 = {
                         }
                     }
                     tag = KLG
+                    hidden_trigger = {
+                        tag = NAF
+                        is_year = 292
+                    }
                 }
             #}
         }
@@ -2514,18 +2518,28 @@ nafa_2 = {
             }
         }
         effect = {
-            5695 = {
-				change_culture = ROOT
-				change_religion = ROOT
-				add_core = ROOT
-				add_base_tax = -8
-				add_base_production = -8
-				add_base_manpower = -8
+            if = {
+				limit = {
+					5695 = {
+						culture = Hasian
+					}
+				}
+				5695 = {
+					change_culture = ROOT
+					change_religion = ROOT
+					add_core = ROOT
+					add_base_tax = -8
+					add_base_production = -8
+					add_base_manpower = -8
+				}
+				custom_tooltip = ADD_AN_EVENT_HERE
+                #country_event = {
+                #    id = 
+                #}
 			}
-            custom_tooltip = ADD_AN_EVENT_HERE
-            #country_event = {
-            #    id = 
-            #}
+			else = {
+				add_treasury = 250
+			}
         }
         provinces_to_highlight = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }

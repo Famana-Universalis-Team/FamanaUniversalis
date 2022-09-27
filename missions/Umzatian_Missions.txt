@@ -1017,19 +1017,28 @@ umz_4 = {
         
        
         effect = {
-			5695 = {
-				change_culture = ROOT
-				change_religion = ROOT
-				add_core = ROOT
-				add_base_tax = -3
-				add_base_production = -3
-				add_base_manpower = -3
+			if = {
+				limit = {
+					5695 = {
+						culture = Hasian
+					}
+				}
+				5695 = {
+					change_culture = ROOT
+					change_religion = ROOT
+					add_core = ROOT
+					add_base_tax = -3
+					add_base_production = -3
+					add_base_manpower = -3
+				}
+				add_country_modifier = { 
+					name = umz_crushed
+					duration = -1
+				}
 			}
-			add_country_modifier = { 
-				name = umz_crushed
-				duration = -1
+			else = {
+				add_treasury = 250
 			}
-			
        
         }
 	

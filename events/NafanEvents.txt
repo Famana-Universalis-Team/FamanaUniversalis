@@ -36,6 +36,7 @@ country_event = {
         NOT = {
             has_country_flag = nafaWaitingForHeir
         }
+        has_reform = nafan_gov
     }
 
     immediate = {

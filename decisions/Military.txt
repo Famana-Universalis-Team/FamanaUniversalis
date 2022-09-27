@@ -30,6 +30,8 @@ country_decisions = {
 			has_dlc = "Cradle of Civilization"
 			NOT = { has_country_modifier = gunpowder_core }
 			NOT = { mil_tech = 19 }
+			mil_tech = 3
+			has_institution = feudalism
 		}
 		allow = {
 			mil_tech = 6

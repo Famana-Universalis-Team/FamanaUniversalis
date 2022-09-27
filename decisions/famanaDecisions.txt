@@ -168,33 +168,58 @@ country_decisions = {
 	}
     nafa_rini = {
 		potential = {
-			tag = NAF
-            religion = lathvy
+            OR = {
+                AND = {
+                    tag = NAF
+                    religion = lathvy
+                }
+                AND  = {
+                    religious_school = {
+						group = lathvy_group
+						school = nafan_school
+					}
+                    any_owned_province = {
+                        superregion = west_estal_superregion
+                    }
+                }
+            }
             has_idea_group = religious_ideas
 			NOT = {
 				has_country_flag = nafa_rini_flag
 			}
+            NOT = { has_country_modifier = yomtanian_nation }
 		}
 		allow = {
 			is_at_war = no
+            owns_core_province = 5695
+            owns_core_province = 6390
 			piety = 1.0
-            full_idea_group	= religious_ideas
-            religious_school = {
-                group = lathvy_group
-                school = nafan_school
-            }
-            num_of_owned_provinces_with	= {
-                value = 10
-                religion = lathvy
-                superregion = west_estal_superregion
+            if = {
+                limit = {
+                    tag = NAF
+                }
+                religious_school = {
+					group = lathvy_group
+					school = nafan_school
+				}
+                num_of_owned_provinces_with	= {
+                    value = 25
+                    religion = lathvy
+                    superregion = west_estal_superregion
+                }
             }
 		}
 		effect = {
 			set_country_flag = nafa_rini_flag
             change_religion = rini
-            add_country_modifier = {
-                name = naf_rini_elite
-                duration = -1
+            if = {
+                limit = {
+                    tag = NAF
+                }
+                add_country_modifier = {
+                    name = naf_rini_elite
+                    duration = -1
+                }
             }
             add_country_modifier = {
 			    name = "conversion_zeal"
@@ -210,6 +235,15 @@ country_decisions = {
                     current_age = age_of_absolutism
                 }
             }
+		}
+        provinces_to_highlight = {
+			OR = {
+                province_id = 5695
+                province_id = 6390
+            }
+			OR = {
+				NOT = { owned_by = ROOT }
+			}
 		}
 	}
 
