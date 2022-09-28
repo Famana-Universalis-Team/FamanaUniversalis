@@ -243,6 +243,10 @@ country_decisions = {
                     current_age = age_of_absolutism
                 }
             }
+            modifier = {
+                factor = 0
+                tag = NAF
+            }
 		}
         provinces_to_highlight = {
 			OR = {
