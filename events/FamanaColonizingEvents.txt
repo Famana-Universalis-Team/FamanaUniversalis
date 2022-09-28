@@ -54,6 +54,9 @@ country_event = {
 		any_owned_province = {
 			is_colony = yes
 			culture = Qubaran
+			NOT = {
+				has_colonist = yes
+			}
 		}
 		NOT = {
 			tag = QUB

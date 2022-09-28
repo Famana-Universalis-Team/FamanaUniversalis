@@ -38,7 +38,7 @@ desert_tribe = {
 
 	modifiers = {
 		may_perform_slave_raid_on_same_religion = yes 	
-		reform_progress_growth = -1
+		reform_progress_growth = -10
 		global_unrest = -5
 		global_missionary_strength = -0.10
 		trade_efficiency = 0.20

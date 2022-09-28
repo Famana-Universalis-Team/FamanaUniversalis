@@ -5,6 +5,7 @@ country_event = {
 	title = estal.1.t
 	desc = estal.1.d
 	picture = VILLAGE_BURNING_eventPicture
+	goto = prov_raided_yoms
 	
 	trigger = {
         OR = {
@@ -77,7 +78,7 @@ country_event = {
 			}
 		}
 		add_years_of_income = -0.25
-		goto = prov_raided_yoms
+		#goto = prov_raided_yoms
 	}
 	option = {
 		name = estal.1.b
@@ -87,7 +88,7 @@ country_event = {
             add_local_autonomy = 15
 		    add_devastation = 10
 		}
-		goto = prov_raided_yoms
+		#goto = prov_raided_yoms
 	}
 }
 

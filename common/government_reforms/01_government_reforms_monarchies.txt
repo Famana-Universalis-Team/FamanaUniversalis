@@ -3833,8 +3833,8 @@ the_social_contract_reform = {
 	#	}
 	#}
 	modifiers = {
-		no_religion_penalty = yes
-		religious_unity = 0.25
+		#no_religion_penalty = yes
+		religious_unity = 0.33
 	}
 	ai = {
 		factor = 1

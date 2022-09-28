@@ -3742,23 +3742,21 @@ on_lose_great_power_status = {
 # province
 on_province_religion_converted = {
 	on_province_religion_converted_estate_privileges_effect = yes
-	if = {
-		limit = {
-			#OR = {
-			culture_group = Yomtanian
-			#}
-			owner = {
-				NOT = {
-					has_country_modifier = yomtanian_nation
-				}
-			}
-		}
-		change_culture = ROOT
-		add_devastation	= 50
-		add_base_manpower = -1
-		add_base_tax = -1
-		add_base_production = -1
-	}
+	#if = {
+	#	limit = {
+	#		owner = {
+	#			NOT = {
+	#				culture_group = Yomtanian
+	#			}
+	#		}
+	#		culture_group = Yomtanian
+	#	}
+	#	change_culture = ROOT
+	#	add_devastation	= 50
+	#	add_base_manpower = -1
+	#	add_base_tax = -1
+	#	add_base_production = -1
+	#}
 	if = {
 		limit = {
 			has_province_modifier = kachik_religious_autonomy
@@ -4016,8 +4014,8 @@ on_province_religion_converted = {
 # province
 on_province_culture_converted = {
 	on_province_culture_converted_estate_privilges_effect = yes
-	judaism_on_province_culture_converted_effect = yes
-	kongo_on_province_change_culture_or_change_owner_effect = yes
+	#judaism_on_province_culture_converted_effect = yes
+	#kongo_on_province_change_culture_or_change_owner_effect = yes
 }
 
 # THIS = Province, FROM = Country who Propogated
