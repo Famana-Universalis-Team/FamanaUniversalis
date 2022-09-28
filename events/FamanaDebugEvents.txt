@@ -124,7 +124,14 @@ country_event = {
 	option = {
 		name = fdebug.2.a
 		ai_chance = { factor = 1 }
-		every_owned_province = {
+		#every_owned_province = {
+		#	cede_province = SOY
+		#	add_core = SOY
+		#}
+		every_province = {
+			limit = {
+				owned_by = ROOT
+			}
 			cede_province = SOY
 			add_core = SOY
 		}

@@ -3541,8 +3541,9 @@ country_decisions = {
 			add_prestige = -100
 			hidden_effect = {
 				swap_non_generic_missions = yes
-				every_owned_province = {
+				every_province = {
 					limit = {
+						owned_by = ROOT
 						NOT = {
 							province_id = 5496
 						}

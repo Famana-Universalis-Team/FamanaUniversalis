@@ -616,8 +616,9 @@ country_event = {
 		name = pextoglazia.17.a
 		ai_chance = { factor = 5 }
 		hidden_effect = {
-			every_owned_province = {
+			every_province = {
 				limit = {
+					owned_by = ROOT
 					region = moxon_region
 				}
 				cede_province = MOX
@@ -1684,7 +1685,10 @@ country_event = { #country clone event fix
 				exists = PLM
 			}
 			PLM = {
-				every_owned_province = {
+				every_province = {
+					limit = {
+						owned_by = PLM
+					}
 					cede_province = LOM
 				}
 			}
@@ -1695,7 +1699,10 @@ country_event = { #country clone event fix
 				exists = PTG
 			}
 			PTG = {
-				every_owned_province = {
+				every_province = {
+					limit = {
+						owned_by = PTG
+					}
 					cede_province = TER
 				}
 			}
@@ -1706,7 +1713,10 @@ country_event = { #country clone event fix
 				exists = PHL
 			}
 			PHL = {
-				every_owned_province = {
+				every_province = {
+					limit = {
+						owned_by = PHL
+					}
 					cede_province = HIL
 				}
 			}
@@ -1717,7 +1727,10 @@ country_event = { #country clone event fix
 				exists = PCG
 			}
 			PCG = {
-				every_owned_province = {
+				every_province = {
+					limit = {
+						owned_by = PCG
+					}
 					cede_province = CEG
 				}
 			}
@@ -1728,7 +1741,10 @@ country_event = { #country clone event fix
 				exists = PJS
 			}
 			PJS = {
-				every_owned_province = {
+				every_province = {
+					limit = {
+						owned_by = PJS
+					}
 					cede_province = JNS
 				}
 			}
@@ -1739,7 +1755,10 @@ country_event = { #country clone event fix
 				exists = PPX
 			}
 			PPX = {
-				every_owned_province = {
+				every_province = {
+					limit = {
+						owned_by = PPX
+					}
 					cede_province = PIX
 				}
 			}
@@ -1750,7 +1769,10 @@ country_event = { #country clone event fix
 				exists = PLY
 			}
 			PLY = {
-				every_owned_province = {
+				every_province = {
+					limit = {
+						owned_by = PLY
+					}
 					cede_province = LAY
 				}
 			}
@@ -1761,7 +1783,10 @@ country_event = { #country clone event fix
 				exists = PNV
 			}
 			PNV = {
-				every_owned_province = {
+				every_province = {
+					limit = {
+						owned_by = PNV
+					}
 					cede_province = NVI
 				}
 			}

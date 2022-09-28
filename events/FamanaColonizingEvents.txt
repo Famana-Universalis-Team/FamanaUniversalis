@@ -62,8 +62,9 @@ country_event = {
 	}
 
 	immediate = {
-		every_owned_province = {
+		every_province = {
 			limit = {
+				owned_by = ROOT
 				is_colony = yes
 				culture = Qubaran
 			}

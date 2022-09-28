@@ -1180,8 +1180,9 @@ country_event = {
 	
 	immediate = {
 		hidden_effect = {
-			every_owned_province = {
+			every_province = {
 				limit = {
+					owned_by = ROOT
 					region = apilanya_region
 				}
 				add_core = KLY
@@ -1190,8 +1191,9 @@ country_event = {
 					infantry = PREV
 				}
 			}
-			every_owned_province = {
+			every_province = {
 				limit = {
+					owned_by = ROOT
 					OR = {
 						region = eastern_naravam_region
 						region = western_naravam_region
@@ -1279,8 +1281,9 @@ country_event = {
 
 	immediate = {
 		hidden_effect = {
-			every_owned_province = {
+			every_province = {
 				limit = {
+					owned_by = ROOT
 					OR = {
 						region = napora_region
 						region = west_ordica_region
@@ -1517,8 +1520,9 @@ country_event = {
 
 	immediate = {
 		hidden_effect = {
-			every_owned_province = {
+			every_province = {
 				limit = {
+					owned_by = ROOT
 					OR = {
 						region = walara_region
 						culture = Yuvlan
