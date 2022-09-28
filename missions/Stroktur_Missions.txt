@@ -723,6 +723,9 @@ stroktur_mox = {
         icon = mission_autocratic_rule
         required_missions = { stroktur_return_to_lerush }
         trigger = {
+            NOT = {
+                exists = MOX
+            }
             moxon_region = {
                 type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -919,6 +922,9 @@ stroktur_est = {
         icon = mission_invade_the_deccan_dlh
         required_missions = { stroktur_emastalian_invasion }
         trigger = {
+            NOT = {
+                exists = EST
+            }
             west_emastalia_region = {
                 type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -5210,7 +5216,9 @@ kalarga_5 = {
                 name = klg_into_the_woods_modifier
                 duration = -1
             }
-            
+            add_legitimacy = 20
+            add_devotion = 20
+            add_republican_tradition = 10
         }
         provinces_to_highlight = {
             region = gorfrek_region

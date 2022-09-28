@@ -397,7 +397,7 @@ country_event = {
 
 	option = {
 		name = jasua.7.a
-		ai_chance = { factor = 1 }
+		ai_chance = { factor = 15 }
 		change_tag = NAF
 		set_country_flag = getNafanMissions
 		country_event = { id = ideagroups.1 } #Swap Ideas
@@ -453,7 +453,7 @@ country_event = {
 	}
 	option = {
 		name = jasua.7.b
-		ai_chance = { factor = 0 }
+		ai_chance = { factor = 1 }
 		add_stability = -2
 		set_country_flag = getStrokturMissions
 	}
