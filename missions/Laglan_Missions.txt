@@ -16,7 +16,12 @@ lag_1 = {
         icon = mission_ottoman_harem
         required_missions = { }
         trigger = {
-            philosopher = 2
+            if = {
+                limit = {
+                    ai = no
+                }
+                philosopher = 2
+            }
             culture_group = Western_Estali
             laglon_region = {
                 type = all

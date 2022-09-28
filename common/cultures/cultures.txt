@@ -1079,6 +1079,9 @@ Hoxoi = {
 #############################
 Epilany = {
 	Kolyan = {
+		province = {
+			local_culture_conversion_cost = 0.50
+		}
 		primary = KLY
 		male_names = {
             Fesperim Korarim Deror Iotan Karuy Ilipim Sowar Orakim Niara Fondian Sewa Uniar Dangal
@@ -1425,6 +1428,9 @@ Komelwaiti = {
 
 #############################
 Naravami_C = {
+	province = {
+		local_culture_conversion_cost = 0.50
+	}
 	Rduma = {
 		primary = RDU
 		male_names = {

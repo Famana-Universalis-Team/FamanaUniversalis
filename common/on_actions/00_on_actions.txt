@@ -3744,6 +3744,23 @@ on_province_religion_converted = {
 	on_province_religion_converted_estate_privileges_effect = yes
 	if = {
 		limit = {
+			#OR = {
+			culture_group = Yomtanian
+			#}
+			owner = {
+				NOT = {
+					has_country_modifier = yomtanian_nation
+				}
+			}
+		}
+		change_culture = ROOT
+		add_devastation	= 50
+		add_base_manpower = -1
+		add_base_tax = -1
+		add_base_production = -1
+	}
+	if = {
+		limit = {
 			has_province_modifier = kachik_religious_autonomy
 		}
 		remove_province_modifier = kachik_religious_autonomy
