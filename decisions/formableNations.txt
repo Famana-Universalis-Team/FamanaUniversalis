@@ -5063,6 +5063,12 @@ country_decisions = {
 			is_at_war = no
 			if = {
 				limit = {
+					ai = yes
+				}
+				is_year = 450
+			}
+			if = {
+				limit = {
 					tag = ZUB
 				}
 				OR = {
