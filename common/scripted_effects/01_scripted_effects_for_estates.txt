@@ -545,6 +545,92 @@ on_annexed_estate_privileges_effect = {
 }
 
 on_province_religion_converted_estate_privileges_effect = {
+	#FAMANA
+	if = {
+		limit = {
+			owner = {
+				has_estate_privilege = estate_gishelar_lighter_gishelar_taxes
+			}
+		}
+		if = {
+			limit = {
+				continent = antebar
+				religion = tonmo
+				NOT = { has_province_modifier = estate_gishelar_lighter_gishelar_taxes_privilege_mod }
+			}
+			add_province_modifier = {
+				name = estate_gishelar_lighter_gishelar_taxes_privilege_mod
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = {
+					continent = antebar
+					religion = tonmo
+				}
+				has_province_modifier = estate_gishelar_lighter_gishelar_taxes_privilege_mod
+			}
+			remove_province_modifier = estate_gishelar_lighter_gishelar_taxes_privilege_mod
+		}
+	}#
+	if = {
+		limit = {
+			owner = {
+				has_estate_privilege = estate_gishelar_manpower
+			}
+		}
+		if = {
+			limit = {
+				continent = antebar
+				religion = tonmo
+				NOT = { has_province_modifier = estate_gishelar_manpower_mod }
+			}
+			add_province_modifier = {
+				name = estate_gishelar_manpower_mod
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = {
+					continent = antebar
+					religion = tonmo
+				}
+				has_province_modifier = estate_gishelar_manpower_mod
+			}
+			remove_province_modifier = estate_gishelar_manpower_mod
+		}
+	}
+	if = {
+		limit = {
+			owner = {
+				has_country_flag = gishelar_tolerates_wrong_religion
+			}
+		}
+		if = {
+			limit = {
+				continent = antebar
+				religion = tonmo
+				NOT = { has_province_modifier = estate_gishelar_guaranteed_autonomy_mod }
+			}
+			add_province_modifier = {
+				name = estate_gishelar_guaranteed_autonomy_mod
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = {
+					continent = antebar
+					religion = tonmo
+				}
+				has_province_modifier = estate_gishelar_guaranteed_autonomy_mod
+			}
+			remove_province_modifier = estate_gishelar_guaranteed_autonomy_mod
+		}
+	}
+	#FAMANA
 	if = {
 		limit = {
 			owner = {

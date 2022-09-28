@@ -4792,6 +4792,8 @@ estate_nobles_supremacy_over_crown = {
 		jains_loyalty_modifier = 0.1
 		vaisyas_loyalty_modifier = 0.1
 		nomadic_tribes_loyalty_modifier = 0.1
+		gishelar_loyalty_modifier = 0.1
+		clans_loyalty_modifier = 0.1
 		burghers_influence_modifier = 0.1
 		church_influence_modifier = 0.1
 		dhimmi_influence_modifier = 0.1
@@ -4804,6 +4806,8 @@ estate_nobles_supremacy_over_crown = {
 		jains_influence_modifier = 0.1
 		vaisyas_influence_modifier = 0.1
 		nomadic_tribes_influence_modifier = 0.1
+		gishelar_influence_modifier = 0.1
+		clans_influence_modifier = 0.1
 	}
 	mechanics = {
 		can_give_agendas_without_interaction
@@ -4836,6 +4840,8 @@ estate_brahmins_supremacy_over_crown = {
 		jains_loyalty_modifier = 0.1
 		vaisyas_loyalty_modifier = 0.1
 		nomadic_tribes_loyalty_modifier = 0.1
+		clans_loyalty_modifier = 0.1
+		gishelar_loyalty_modifier = 0.1
 		burghers_influence_modifier = 0.1
 		church_influence_modifier = 0.1
 		dhimmi_influence_modifier = 0.1
@@ -4846,6 +4852,8 @@ estate_brahmins_supremacy_over_crown = {
 		jains_influence_modifier = 0.1
 		vaisyas_influence_modifier = 0.1
 		nomadic_tribes_influence_modifier = 0.1
+		gishelar_influence_modifier = 0.1
+		clans_influence_modifier = 0.1
 	}
 	mechanics = {
 		can_give_agendas_without_interaction

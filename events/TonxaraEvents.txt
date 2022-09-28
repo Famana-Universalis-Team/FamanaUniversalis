@@ -3497,14 +3497,14 @@ country_event = {
 
     option = { #Give up tonxara
         name = tonxara.12.a
-        ai_chance = { factor = 3 }
+        ai_chance = { factor = 1 }
         remove_government_reform = gov_tonxara
         add_government_reform = autocracy_reform
     }
 
     option = { #Keep tonxara
         name = tonxara.12.b
-        ai_chance = { factor = 1 }
+        ai_chance = { factor = 3 }
         add_legitimacy = -25
         add_ruler_modifier = {
             name = nhm_fake_tonxara

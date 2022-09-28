@@ -191,8 +191,6 @@ country_decisions = {
 		}
 		allow = {
 			is_at_war = no
-            owns_core_province = 5695
-            owns_core_province = 6390
 			piety = 1.0
             if = {
                 limit = {
@@ -202,11 +200,21 @@ country_decisions = {
 					group = lathvy_group
 					school = nafan_school
 				}
-                num_of_owned_provinces_with	= {
-                    value = 25
-                    religion = lathvy
-                    superregion = west_estal_superregion
+                OR = {
+                    num_of_owned_provinces_with	= {
+                        value = 25
+                        religion = lathvy
+                        superregion = west_estal_superregion
+                    }
+                    AND = {
+                        owns_core_province = 5695
+                        owns_core_province = 6390
+                    }
                 }
+            }
+            else = {
+                owns_core_province = 5695
+                owns_core_province = 6390
             }
 		}
 		effect = {
