@@ -1165,7 +1165,7 @@ naf_oppia_trollage = {
 
 naf_sweeping_estal = {
     province_warscore_cost = -0.10
-    cavalry_fire = 1
+    cavalry_shock = 1
     stability_cost_to_declare_war = -2
 }
 
@@ -2255,7 +2255,7 @@ naf_adopt_oppian_institutions = {
 }
 
 naf_kisholi_cav = {
-    cavalry_shock = 0.25
+    cavalry_fire = 0.25
 }
 
 naf_nutrop_dip = {

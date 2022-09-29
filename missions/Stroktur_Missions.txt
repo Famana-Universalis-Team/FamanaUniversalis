@@ -1730,23 +1730,26 @@ nafa_1 = {
         position = 15
         trigger = {
             num_of_owned_provinces_with = {
-                value = 200
+                value = 350
                 religion = ROOT
             }
             religious_school = {
                 group = lathvy_group
                 school = nafan_school
             }
-            NOT = {
-                any_other_great_power = {
-                    OR = {
-                        religion = rochoni
-                        AND = {
-                            religion = lathvy
-                            NOT = {
-                                religious_school = {
-                                    group = lathvy_group
-                                    school = nafan_school
+            custom_trigger_tooltip = {
+                tooltip = nafaGPreligion
+                NOT = {
+                    any_other_great_power = {
+                        OR = {
+                            religion = rochoni
+                            AND = {
+                                religion = lathvy
+                                NOT = {
+                                    religious_school = {
+                                        group = lathvy_group
+                                        school = nafan_school
+                                    }
                                 }
                             }
                         }
@@ -1755,6 +1758,9 @@ nafa_1 = {
             }
         }
         effect = {
+            add_prestige_or_monarch_power = {
+				amount = 100
+			}
             custom_tooltip = nafaChangeAllIntoNafanSchool
             hidden_effect = {
                 every_known_country = {
@@ -2568,6 +2574,7 @@ nafa_2 = {
             #}
             napora_region = {
                 add_permanent_claim = ROOT
+                discover_country = ROOT
             }
         }
         provinces_to_highlight = {
