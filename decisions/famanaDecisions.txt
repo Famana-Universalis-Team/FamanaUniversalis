@@ -172,8 +172,10 @@ country_decisions = {
                 AND = {
                     tag = NAF
                     religion = lathvy
+                    mission_completed = naf_establish_the_rini_order
                 }
                 AND  = {
+                    religion = lathvy
                     religious_school = {
 						group = lathvy_group
 						school = nafan_school
@@ -185,13 +187,14 @@ country_decisions = {
             }
             has_idea_group = religious_ideas
 			NOT = {
-				has_country_flag = nafa_rini_flag
+				has_country_flag = nafa_went_rini
 			}
             NOT = { has_country_modifier = yomtanian_nation }
 		}
 		allow = {
 			is_at_war = no
 			piety = 1.0
+            full_idea_group	= religious_ideas
             if = {
                 limit = {
                     tag = NAF
@@ -218,7 +221,7 @@ country_decisions = {
             }
 		}
 		effect = {
-			set_country_flag = nafa_rini_flag
+			set_country_flag = nafa_went_rini
             change_religion = rini
             if = {
                 limit = {
@@ -227,6 +230,16 @@ country_decisions = {
                 add_country_modifier = {
                     name = naf_rini_elite
                     duration = -1
+                }
+                custom_tooltip = nafRemoveRinFort
+                hidden_effect = {
+                    clr_country_flag = naf_rini_flag
+                    every_owned_province = {
+                        limit = {
+                            has_province_modifier = naf_rini_fort
+                        }
+                        remove_province_modifier = naf_rini_fort
+                    }
                 }
             }
             add_country_modifier = {

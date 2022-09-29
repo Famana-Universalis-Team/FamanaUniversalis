@@ -2261,3 +2261,12 @@ naf_kisholi_cav = {
 naf_nutrop_dip = {
     diplomats = 1
 }
+
+test_mod_1 = {
+    global_colonial_growth = -250
+}
+
+naf_trolled_hasia = {
+    tolerance_own = 1
+    prestige_decay = -0.01
+}

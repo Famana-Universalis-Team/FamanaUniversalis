@@ -929,3 +929,137 @@ country_event = { #Roplea or nafa vassal
         ai_chance = { factor = 1 }
     }
 }
+
+country_event = { #Hasia
+    id = nafa.18
+    title = nafa.18.t
+    desc = nafa.18.d
+    picture = EP_ISLAND_eventPicture
+    fire_only_once = yes
+    is_triggered_only = yes
+
+    option = { #Destroy Hasia
+        name = nafa.18.a
+        ai_chance = { factor = 1 }
+        5695 = {
+            add_devastation = 100
+        }
+        add_country_modifier = {
+            name = naf_trolled_hasia
+            duration = 18250
+        }
+        add_army_tradition = 20
+    }
+    option = { #Make it a fortress
+        name = nafa.18.b
+        ai_chance = { factor = 1 }
+        5695 = {
+            change_province_name = "Rin"
+            hidden_effect = {
+                rename_capital = "Rin"
+            }
+            add_province_modifier = {
+                name = naf_hasian_fort
+                duration = -1
+            }
+            add_base_tax = 3
+			add_base_production = 3
+			add_base_manpower = 3
+            add_latest_building = { builder = ROOT fort = yes }
+        }
+    }
+}
+
+country_event = { #Rini fix
+    id = nafa.19
+    hidden = yes
+
+    trigger = {
+        tag = NAF
+        has_country_flag = naf_rini_flag
+        OR = {
+            any_owned_province = {
+                has_province_modifier = naf_rini_fort
+                is_capital = no
+                OR = {
+                    NOT = { has_fort_building_trigger = yes }
+                    NOT = { religion = rini }
+                }
+            }
+            any_owned_province = {
+                NOT = { has_province_modifier = naf_rini_fort }
+                is_capital = no
+                has_fort_building_trigger = yes
+                religion_group = lathvy_group
+            }
+        }
+    }
+
+    mean_time_to_happen = {
+        months = 1
+    }
+
+    immediate = {
+        every_owned_province = {
+            limit = {
+                has_province_modifier = naf_rini_fort
+                is_capital = no
+                OR = {
+                    NOT = { has_fort_building_trigger = yes }
+                    NOT = { religion = rini }
+                }
+            }
+            remove_province_modifier = naf_rini_fort
+        }
+        every_owned_province = {
+            limit = {
+                NOT = { has_province_modifier = naf_rini_fort }
+                is_capital = no
+                has_fort_building_trigger = yes
+                religion_group = lathvy_group
+            }
+            change_religion = rini
+            add_province_modifier = {
+                name = naf_rini_fort
+                duration = -1
+            }
+        }
+    }
+
+    option = {
+        name = nafa.19.a
+        ai_chance = { factor = 1 }
+    }
+}
+
+country_event = { #Rini fix another
+    id = nafa.20
+    fire_only_once = yes
+    hidden = yes
+
+    trigger = {
+        tag = NAF
+        religion = rini
+        has_country_flag = naf_rini_flag
+    }
+
+    mean_time_to_happen = {
+        days = 1
+    }
+
+    immediate = {
+        clr_country_flag = naf_rini_flag
+        set_country_flag = nafa_went_rini
+        every_owned_province = {
+            limit = {
+                has_province_modifier = naf_rini_fort
+            }
+            remove_province_modifier = naf_rini_fort
+        }
+    }
+
+    option = {
+        name = nafa.20.a
+        ai_chance = { factor = 1 }
+    }
+}

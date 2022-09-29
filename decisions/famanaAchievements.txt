@@ -107,12 +107,7 @@ country_decisions = {
 			}
 			num_of_owned_provinces_with = {
 				value = 50
-				OR = {
-					has_building = fort_15th
-					has_building = fort_16th
-					has_building = fort_17th
-					has_building = fort_18th
-				}
+				has_fort_building_trigger = yes
 		    }
 		}
 		effect = {

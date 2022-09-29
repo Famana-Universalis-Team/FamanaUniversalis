@@ -65,12 +65,7 @@ kap_4 = { #kinvirel - jasua region path
 					area = unnamed_area_32
 					area = unnamed_area_56
 				}
-				OR = {
-					has_building = fort_15th
-					has_building = fort_16th
-					has_building = fort_17th
-					has_building = fort_18th
-				}
+				has_fort_building_trigger = yes
 			}
 		}
 		effect = {

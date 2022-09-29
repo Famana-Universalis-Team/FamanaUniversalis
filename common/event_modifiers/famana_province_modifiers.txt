@@ -471,3 +471,17 @@ naf_walara = {
 naf_lomea = {
     province_trade_power_modifier = 0.5
 }
+
+naf_hasian_fort = {
+    defensiveness = 0.25
+    hostile_fleet_attrition = 2
+    local_ship_repair = 2.5
+    local_own_coast_naval_combat_bonus = 1
+}
+
+naf_rini_fort = {
+    defensiveness = 0.10
+    local_missionary_strength = -1
+    local_unrest = -10
+    religion = yes
+}

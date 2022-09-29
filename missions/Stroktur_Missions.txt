@@ -2559,6 +2559,9 @@ nafa_2 = {
             }
         }
         effect = {
+            country_event = {
+                id = nafa.18
+            }
             if = {
 				limit = {
 					5695 = {
@@ -2573,10 +2576,6 @@ nafa_2 = {
 					add_base_production = -8
 					add_base_manpower = -8
 				}
-				custom_tooltip = ADD_AN_EVENT_HERE
-                #country_event = {
-                #    id = 
-                #}
 			}
 			else = {
 				add_treasury = 250
@@ -3062,12 +3061,7 @@ nafa_3 = {
                     NOT = {
                         any_province = {
                             area = elwait_area
-                            OR = {
-                                has_building = fort_15th
-                                has_building = fort_16th
-                                has_building = fort_17th
-                                has_building = fort_18th
-                            }
+                            has_fort_building_trigger = yes
                         }
                     }
                 }
@@ -3463,10 +3457,30 @@ nafa_3 = {
         required_missions = { }
         position = 13
         trigger = {
-            
+            num_of_streltsy	= 100
         }
         effect = {
-            
+            custom_tooltip = nafaRinDecision
+            custom_tooltip = nafaRiniEvents
+            custom_tooltip = nafaRiniForts
+            hidden_effect = {
+                set_country_flag = naf_rini_flag
+                every_owned_province = {
+                    limit = {
+                        has_fort_building_trigger = yes
+                        religion_group = lathvy_group
+                        NOT = {
+                            is_capital = yes
+                        }
+                    }
+                    change_religion = rini
+                    add_province_modifier = {
+                        name = naf_rini_fort
+                        duration = -1
+                    }
+                }
+            }
+            #add_country_modifier = {}
         }
         #provinces_to_highlight = {}
     }
@@ -3924,22 +3938,12 @@ nafa_4 = {
             5826 = {
                 owned_by = NAF
                 is_core = NAF
-                OR = {
-                    has_building = fort_15th
-                    has_building = fort_16th
-                    has_building = fort_17th
-                    has_building = fort_18th
-                }
+                has_fort_building_trigger = yes
             }
             5894 = {
                 owned_by = NAF
                 is_core = NAF
-                OR = {
-                    has_building = fort_15th
-                    has_building = fort_16th
-                    has_building = fort_17th
-                    has_building = fort_18th
-                }
+                has_fort_building_trigger = yes
             }
         }
         effect = {

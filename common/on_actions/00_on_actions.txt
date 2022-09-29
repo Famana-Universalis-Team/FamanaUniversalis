@@ -4009,6 +4009,23 @@ on_province_religion_converted = {
 		}
 		change_culture = Feniki
 	}
+	if = {
+		limit = {
+			owner = {
+				has_country_flag = naf_rini_flag
+				religion_group = lathvy_group
+			}
+			has_fort_building_trigger = yes
+			NOT = {
+				religion_group = lathvy_group
+			}
+		}
+		change_religion = rini
+    	add_province_modifier = {
+           	name = naf_rini_fort
+    		duration = -1
+        }
+	}
 }
 
 # province
@@ -4039,6 +4056,31 @@ on_province_owner_change = {
 			name = estate_burghers_control_over_gold_mine
 			duration = -1
 		}
+	}
+	if = {
+		limit = {
+			owner = {
+				has_country_flag = naf_rini_flag
+			}
+			has_fort_building_trigger = yes
+			religion_group = lathvy_group
+		}
+		change_religion = rini
+        add_province_modifier = {
+            name = naf_rini_fort
+            duration = -1
+        }
+	}
+	if = {
+		limit = {
+			owner = {
+				NOT = {
+					has_country_flag = naf_rini_flag
+				}
+			}
+			has_province_modifier = naf_rini_fort
+		}
+        remove_province_modifier = naf_rini_fort
 	}
 }
 

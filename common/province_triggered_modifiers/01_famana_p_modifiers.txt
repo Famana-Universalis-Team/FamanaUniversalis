@@ -306,12 +306,7 @@ naf_hartimatul_stronghold = {
 	}
 	
 	trigger = {
-		OR = {
-			has_building = fort_15th
-			has_building = fort_16th
-			has_building = fort_17th
-			has_building = fort_18th
-		}
+		has_fort_building_trigger = yes
 	}
 
     hostile_disembark_speed = 2.5
