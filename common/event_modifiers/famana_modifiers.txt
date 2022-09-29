@@ -2270,3 +2270,15 @@ naf_trolled_hasia = {
     tolerance_own = 1
     prestige_decay = -0.01
 }
+
+naf_rini_order_country = {
+    stability_cost_modifier = -0.10
+    land_forcelimit = 40
+    reinforce_cost_modifier = -0.10
+    land_morale = 0.05
+}
+
+naf_the_two_syadonas = {
+    envoy_travel_time = -0.15
+    movement_speed = 0.05
+}

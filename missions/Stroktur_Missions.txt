@@ -1729,12 +1729,51 @@ nafa_1 = {
         required_missions = { naf_burn_the_temple }
         position = 15
         trigger = {
-            
+            num_of_owned_provinces_with = {
+                value = 200
+                religion = ROOT
+            }
+            religious_school = {
+                group = lathvy_group
+                school = nafan_school
+            }
+            NOT = {
+                any_other_great_power = {
+                    OR = {
+                        religion = rochoni
+                        AND = {
+                            religion = lathvy
+                            NOT = {
+                                religious_school = {
+                                    group = lathvy_group
+                                    school = nafan_school
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
         effect = {
-            
+            custom_tooltip = nafaChangeAllIntoNafanSchool
+            hidden_effect = {
+                every_known_country = {
+                    limit = {
+                        religion = lathvy
+                    }
+                    set_religious_school = {
+                        group = lathvy_group
+                        school = nafan_school
+                    }
+                }
+            }
         }
-        #provinces_to_highlight = {}
+        provinces_to_highlight = {
+            owned_by = ROOT
+            NOT = {
+                religion = ROOT
+            }
+        }
     }
 
     naf_link_gomic_infrastructure = {
@@ -2592,12 +2631,35 @@ nafa_2 = {
         required_missions = { naf_conquest_of_hasia naf_establish_the_rini_order }
         position = 14
         trigger = {
-            
+            6390 = {
+                owned_by = ROOT
+                is_core = ROOT
+                development	= 16
+                has_fort_building_trigger = yes
+            }
         }
         effect = {
-            
+            add_country_modifier = {
+                name = naf_the_two_syadonas
+                duration = -1
+            }
+            6390 = {
+                change_province_name = "New Syadona"
+                hidden_effect = {
+                    rename_capital = "New Syadona"
+                }
+                #add_core = RIN
+                center_of_trade	= 1
+                add_province_modifier = {
+                    name = naf_new_syadona
+                    duration = -1
+                }
+            }
         }
-        #provinces_to_highlight = {}
+        provinces_to_highlight = {
+            NOT = { country_or_non_sovereign_subject_holds = ROOT }
+            province_id = 6390
+        }
     }
 
     naf_gomic_unity = {
@@ -3457,30 +3519,41 @@ nafa_3 = {
         required_missions = { }
         position = 13
         trigger = {
-            num_of_streltsy	= 100
+            army_tradition = 90
+            num_of_streltsy	= 80
+            mil	= 6
+            has_estate_privilege = estate_nobles_unending_crusade
         }
         effect = {
+            add_country_modifier = {
+                name = naf_rini_order_country
+                duration = -1
+            }
             custom_tooltip = nafaRinDecision
             custom_tooltip = nafaRiniEvents
-            custom_tooltip = nafaRiniForts
-            hidden_effect = {
-                set_country_flag = naf_rini_flag
-                every_owned_province = {
-                    limit = {
-                        has_fort_building_trigger = yes
-                        religion_group = lathvy_group
-                        NOT = {
-                            is_capital = yes
+            if = {
+                limit = {
+                    religion = lathvy
+                }
+                custom_tooltip = nafaRiniForts
+                hidden_effect = {
+                    set_country_flag = naf_rini_flag
+                    every_owned_province = {
+                        limit = {
+                            has_fort_building_trigger = yes
+                            religion_group = lathvy_group
+                            NOT = {
+                                is_capital = yes
+                            }
                         }
-                    }
-                    change_religion = rini
-                    add_province_modifier = {
-                        name = naf_rini_fort
-                        duration = -1
+                        change_religion = rini
+                        add_province_modifier = {
+                            name = naf_rini_fort
+                            duration = -1
+                        }
                     }
                 }
             }
-            #add_country_modifier = {}
         }
         #provinces_to_highlight = {}
     }

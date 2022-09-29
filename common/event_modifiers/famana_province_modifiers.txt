@@ -485,3 +485,9 @@ naf_rini_fort = {
     local_unrest = -10
     religion = yes
 }
+
+naf_new_syadona = {
+    local_development_cost = -0.33
+    supply_limit_modifier = 0.75
+    local_friendly_movement_speed = 0.25
+}
