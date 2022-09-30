@@ -1717,7 +1717,7 @@ country_event = {
 	trigger = {
         tag = NAF
         has_country_flag = naf_rini_event_1
-        overextension_percentage = 1.25
+        overextension_percentage = 1.1
 	}
 	
 	mean_time_to_happen = {
@@ -1958,11 +1958,24 @@ country_event = {
         remove_country_modifier = naf_high_desertion
         remove_country_modifier = naf_rini_mil_admin
         remove_country_modifier = naf_rini_court
-        every_owned_province = {
+        if = {
             limit = {
                 religion = rini
             }
-            change_religion = ROOT
+            change_religion = lathvy
+        }
+        if = {
+            limit = {
+                any_owned_province = {
+                    religion = rini
+                }
+            }
+            every_owned_province = {
+                limit = {
+                    religion = rini
+                }
+                change_religion = ROOT
+            }
         }
         every_owned_province = {
             limit = {
