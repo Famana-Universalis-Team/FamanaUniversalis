@@ -221,18 +221,27 @@ country_event = {
             add_stability = 1
         }
         unnamed_area_42 = {
+            limit = {
+                is_empty = yes
+            }
             cede_province = ROOT
             add_core = ROOT
             change_culture = ROOT
             change_religion	= ROOT
         }
         mori_area = {
+            limit = {
+                is_empty = yes
+            }
             cede_province = ROOT
             add_core = ROOT
             change_culture = ROOT
             change_religion	= ROOT
         }
         5989 = {
+            limit = {
+                is_empty = yes
+            }
             cede_province = ROOT
             add_core = ROOT
             change_culture = ROOT

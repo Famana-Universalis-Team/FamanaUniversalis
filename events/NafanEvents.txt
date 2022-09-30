@@ -1063,3 +1063,561 @@ country_event = { #Rini fix another
         ai_chance = { factor = 1 }
     }
 }
+
+country_event = { #settle east estal
+    id = nafa.21
+    title = nafa.21.t
+    desc = nafa.21.d
+    picture = CITY_DEVELOPMENT_eventPicture
+    fire_only_once = yes
+    is_triggered_only = yes
+
+    option = {
+        name = nafa.21.a
+        ai_chance = { factor = 1 }
+        custom_tooltip = nafSettleEstalTooltip
+        hidden_effect = {
+            gorfrek_region = {
+                limit = {
+                    is_empty = yes
+                }
+                cede_province = ROOT
+                add_core = ROOT
+                add_local_autonomy = 100
+                add_province_modifier = {
+                    name = naf_forest_frontier
+                    duration = 18250
+                }
+                random = {
+					chance = 50
+					add_base_tax = 1
+				}
+				random = {
+					chance = 50
+					add_base_production = 1
+				}
+				random = {
+					chance = 50
+					add_base_manpower = 1
+				}
+                random = {
+					chance = 10
+					add_base_tax = 1
+				}
+				random = {
+					chance = 10
+					add_base_production = 1
+				}
+				random = {
+					chance = 10
+					add_base_manpower = 1
+				}
+                random = {
+					chance = 20
+					change_trade_goods = iron
+				}
+                random = {
+					chance = 10
+					change_trade_goods = copper
+				}
+                random = {
+					chance = 5
+					change_trade_goods = gems
+				}
+                random = {
+					chance = 5
+					change_trade_goods = dyes
+				}
+                random = {
+					chance = 5
+					change_trade_goods = cloth
+				}
+                random = {
+					chance = 20
+					change_religion = ROOT
+				}
+                random = {
+					chance = 5
+					change_culture = ROOT
+				}
+            }
+            borlebin_area = {
+                limit = {
+                    is_empty = yes
+                }
+                cede_province = ROOT
+                add_core = ROOT
+                add_local_autonomy = 100
+                add_province_modifier = {
+                    name = naf_forest_frontier
+                    duration = 18250
+                }
+                random = {
+					chance = 50
+					add_base_tax = 1
+				}
+				random = {
+					chance = 50
+					add_base_production = 1
+				}
+				random = {
+					chance = 50
+					add_base_manpower = 1
+				}
+                random = {
+					chance = 10
+					add_base_tax = 1
+				}
+				random = {
+					chance = 10
+					add_base_production = 1
+				}
+				random = {
+					chance = 10
+					add_base_manpower = 1
+				}
+                random = {
+					chance = 20
+					change_trade_goods = iron
+				}
+                random = {
+					chance = 10
+					change_trade_goods = copper
+				}
+                random = {
+					chance = 5
+					change_trade_goods = gems
+				}
+                random = {
+					chance = 5
+					change_trade_goods = dyes
+				}
+                random = {
+					chance = 5
+					change_trade_goods = cloth
+				}
+            }
+            area_60 = {
+                limit = {
+                    is_empty = yes
+                }
+                cede_province = ROOT
+                add_core = ROOT
+                add_local_autonomy = 100
+                add_province_modifier = {
+                    name = naf_forest_frontier
+                    duration = 18250
+                }
+                random = {
+					chance = 50
+					add_base_tax = 1
+				}
+				random = {
+					chance = 50
+					add_base_production = 1
+				}
+				random = {
+					chance = 50
+					add_base_manpower = 1
+				}
+                random = {
+					chance = 10
+					add_base_tax = 1
+				}
+				random = {
+					chance = 10
+					add_base_production = 1
+				}
+				random = {
+					chance = 10
+					add_base_manpower = 1
+				}
+                random = {
+					chance = 20
+					change_trade_goods = iron
+				}
+                random = {
+					chance = 10
+					change_trade_goods = copper
+				}
+                random = {
+					chance = 5
+					change_trade_goods = gems
+				}
+                random = {
+					chance = 5
+					change_trade_goods = dyes
+				}
+                random = {
+					chance = 5
+					change_trade_goods = cloth
+				}
+            }
+            6851 = {
+                add_base_manpower = 1
+                add_base_production = 1
+                add_base_tax = 1
+            }
+            6815 = {
+                add_base_manpower = 2
+                add_base_production = 2
+                add_base_tax = 2
+            }
+            vanoma_region = {
+                add_core = GOR
+            }
+            stroktur_region = {
+                add_core = GOR
+            }
+            affan_area = {
+                add_core = GOR
+            }
+            oearan_area = {
+                add_core = GOR
+            }
+            nikat_area = {
+                add_core = GOR
+            }
+            nakoa_area = {
+                add_core = GOR
+            }
+            jiat_area = {
+                add_core = GOR
+            }
+            govrrol_area = {
+                add_core = GOR
+            }
+            north_nakoa_area = {
+                add_core = GOR
+            }
+            jassine_area = {
+                add_core = GOR
+            }
+            area_63 = {
+                add_core = GOR
+            }
+            area_64 = {
+                add_core = GOR
+            }
+            area_66 = {
+                add_core = GOR
+            }
+		    area_67 = {
+                add_core = GOR
+            }
+		    area_68 = {
+                add_core = GOR
+            }
+		    area_69 = {
+                add_core = GOR
+            }
+		    area_70 = {
+                add_core = GOR
+            }
+		    area_71 = {
+                add_core = GOR
+            }
+		    area_72 = {
+                add_core = GOR
+            }
+		    area_73 = {
+                add_core = GOR
+            }
+            6842 = {
+                add_core = GOR
+            }
+            5521 = {
+                add_core = GOR
+            }
+            random_owned_province = {
+                limit = {
+                    region = gorfrek_region
+                }
+                spawn_rebels = {
+                    type = particularist_rebels
+                    size = 3
+                }
+            }
+            random_owned_province = {
+                limit = {
+                    region = gorfrek_region
+                }
+                spawn_rebels = {
+                    type = particularist_rebels
+                    size = 2
+                }
+            }
+            random_owned_province = {
+                limit = {
+                    region = gorfrek_region
+                }
+                spawn_rebels = {
+                    type = particularist_rebels
+                    size = 2
+                }
+            }
+            random_owned_province = {
+                limit = {
+                    region = gorfrek_region
+                }
+                spawn_rebels = {
+                    type = particularist_rebels
+                    size = 1
+                }
+            }
+            random_owned_province = {
+                limit = {
+                    region = gorfrek_region
+                }
+                spawn_rebels = {
+                    type = particularist_rebels
+                    size = 1
+                }
+            }
+        }
+        add_mil_power = -100
+    }
+}
+
+country_event = { #Harmonic
+    id = nafa.22
+    title = nafa.22.t
+    desc = nafa.22.d
+    picture = ORTHODOX_eventPicture
+    fire_only_once = yes
+    major = yes
+
+    trigger = {
+        capital_scope = {
+            OR = {
+                superregion = central_estal_superregion
+                superregion = jasua_superregion
+            }
+        }
+        religion = lathvy
+        has_global_flag = harmonic_event_ready
+        is_year = 430
+    }
+
+    mean_time_to_happen = {
+        months = 960
+        modifier = {
+            factor = 0.5
+            tag = NAF
+        }
+        modifier = {
+            factor = 0.05
+            tag = GOR
+        }
+    }
+
+    immediate = {
+        set_global_flag = HarmonicReformation
+    }
+
+    option = { #Let us embrace the true faith
+        name = nafa.22.a
+        ai_chance = {
+            factor = 1
+        }
+        trigger = {
+            OR = {
+                tag = NAF
+                tag = GOR
+            }
+        }
+        if = {
+            limit = {
+                tag = GOR
+            }
+            add_stability = -1
+        }
+        else = {
+            add_stability = -3
+            add_prestige = -100
+        }
+
+        enable_religion = harmonic
+        capital_scope = {
+            change_religion = harmonic
+            add_reform_center = harmonic
+            add_province_modifier = {
+		    	name = religious_zeal_at_conv
+		    	duration = 10950
+		    }
+        }
+        
+        change_religion = harmonic
+        add_country_modifier = {
+			name = "conversion_zeal"
+			duration = 3650
+		}
+    }
+    option = { #An interesting development
+        name = nafa.22.b
+        ai_chance = {
+            factor = 10
+            modifier = {
+                factor = 0
+                tag = GOR
+            }
+        }
+
+
+
+
+
+
+        enable_religion = harmonic
+        if = {
+            limit = {
+                tag = NAF
+            }
+            6815 = {
+                change_religion = harmonic
+                add_reform_center = harmonic
+                add_province_modifier = {
+				    name = religious_zeal_at_conv
+				    duration = 10950
+			    }
+            }
+            hidden_effect = {
+                random_owned_province = {
+                    limit = {
+                        region = gorfrek_region
+                        religion = lathvy
+                    }
+                    change_religion = harmonic
+                    add_province_modifier = {
+				        name = religious_zeal_at_conv
+				        duration = 10950
+			        }
+                }
+                random_owned_province = {
+                    limit = {
+                        region = gorfrek_region
+                        religion = lathvy
+                    }
+                    change_religion = harmonic
+                    add_province_modifier = {
+				        name = religious_zeal_at_conv
+				        duration = 10950
+			        }
+                }
+                random_owned_province = {
+                    limit = {
+                        region = gorfrek_region
+                        religion = lathvy
+                    }
+                    change_religion = harmonic
+                    add_province_modifier = {
+				        name = religious_zeal_at_conv
+				        duration = 10950
+			        }
+                }
+                random_owned_province = {
+                    limit = {
+                        region = gorfrek_region
+                        religion = lathvy
+                    }
+                    change_religion = harmonic
+                    add_province_modifier = {
+				        name = religious_zeal_at_conv
+				        duration = 10950
+			        }
+                }
+                random_owned_province = {
+                    limit = {
+                        region = gorfrek_region
+                        religion = lathvy
+                    }
+                    change_religion = harmonic
+                    add_province_modifier = {
+				        name = religious_zeal_at_conv
+				        duration = 10950
+			        }
+                }
+                random_owned_province = {
+                    limit = {
+                        region = gorfrek_region
+                        religion = lathvy
+                    }
+                    change_religion = harmonic
+                    add_province_modifier = {
+				        name = religious_zeal_at_conv
+				        duration = 10950
+			        }
+                }
+                random_owned_province = {
+                    limit = {
+                        region = gorfrek_region
+                        religion = lathvy
+                    }
+                    change_religion = harmonic
+                    add_province_modifier = {
+				        name = religious_zeal_at_conv
+				        duration = 10950
+			        }
+                }
+                random_owned_province = {
+                    limit = {
+                        region = gorfrek_region
+                        religion = lathvy
+                    }
+                    change_religion = harmonic
+                    add_province_modifier = {
+				        name = religious_zeal_at_conv
+				        duration = 10950
+			        }
+                }
+            }
+        }
+        else = {
+            capital_scope = {
+                change_religion = harmonic
+                add_reform_center = harmonic
+                add_province_modifier = {
+			    	name = religious_zeal_at_conv
+			    	duration = 10950
+			    }
+            }
+        }
+    }
+}
+
+#End of the Harmonic Reformation
+country_event = {
+	id = nafa.23
+	title = nafa.23.t
+	picture = BIG_BOOK_eventPicture
+	desc = nafa.23.d
+    fire_only_once = yes
+    major = yes
+	
+	trigger = {
+        capital_scope = {
+            OR = {
+                superregion = central_estal_superregion
+                superregion = jasua_superregion
+            }
+        }
+        religion = harmonic
+        is_year = 580
+	}
+	
+	mean_time_to_happen = {
+		months = 240
+	}
+
+    option = {
+		name = nafa.23.a
+        custom_tooltip = harmonicReformationOver
+        every_province = {
+            limit = {
+                is_reformation_center = yes
+                religion = harmonic
+            }
+            remove_reform_center = harmonic
+        }
+	}
+}

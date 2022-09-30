@@ -270,11 +270,11 @@ south_xalia_region = {
 
 gorfrek_region = {
 	areas = {
-		area_61
-		area_62
+		area_61 #
+		area_62 #
 		area_63
 		area_64
-		area_65
+		area_65 #
 		area_66
 		area_67
 		area_68
@@ -480,7 +480,7 @@ napora_region = {
 
 kapolia_region = {
 	areas = {
-		unnamed_area_29
+		affan_area
 		unnamed_area_30
 		unnamed_area_33
 		unnamed_area_32
@@ -668,7 +668,7 @@ vanoma_region = {
 		unnamed_area_42
 		unnamed_area_41
 		area_109
-		borlebim_area
+		borlebin_area
 		lefim_area
 		mori_area
 		area_74

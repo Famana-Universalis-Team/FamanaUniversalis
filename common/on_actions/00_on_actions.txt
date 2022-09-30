@@ -449,15 +449,39 @@ on_battle_won_unit = {
 on_battle_lost_unit = {
 	if = {
 		limit = {
-			AND = {
-				ai = yes
+			unit_owner = {
 				tag = FAS
-				is_ruler_commanding_unit = yes
+			}
+			is_ruler_commanding_unit = yes
+		}
+		if = {
+			limit = {
+				FAS = {
+					ai = yes
+				}
+			}
+			FAS = {
+				add_stability = -1
+				add_war_exhaustion = 5
+				add_prestige = -25
 			}
 		}
-		add_stability = -3
-		add_war_exhaustion = 5
-		add_prestige = -25
+		if = {
+			limit = {
+				FAS = {
+					is_at_war = yes
+        			has_regency = no
+				}
+			}
+			FAS = {
+				random = {
+					chance = 10
+					country_event = {
+						id = fashros.37
+					}
+				}
+			}
+		}
 	}
 }
 

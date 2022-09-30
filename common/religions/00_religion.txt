@@ -884,6 +884,12 @@ lathvy_group = {
 		declare_war_in_regency = yes
 		on_convert = {
 			change_religion = rini
+			add_prestige = -100
+			add_stability = -2
+			add_country_modifier = {
+				name = "conversion_zeal"
+				duration = 3650
+			}
 		}
 		date = 450.1.1
 	}
@@ -936,6 +942,12 @@ lathvy_group = {
 		}
 		on_convert = {
 			change_religion = rochoni
+			add_prestige = -100
+			add_stability = -2
+			add_country_modifier = {
+				name = "conversion_zeal"
+				duration = 3650
+			}
 			if = {
 				limit = {
 					NOT = {
@@ -991,10 +1003,61 @@ lathvy_group = {
 		heretic = {
 			ULTRA_ASCETIC TRADITIONALIST SYNCRETIST
 		}
+		will_get_center = { #Refered to even for initial CoR Spawn
+		    any_owned_province = {
+			    can_have_center_of_reformation_trigger = {
+				    RELIGION = rochoni
+			    }
+		    }
+	    }
+		allowed_center_conversion = {
+			lathvy
+			aresian
+			va
+			animism
+			gotzli
+		}
 		on_convert = {
 			change_religion = harmonic
+			add_prestige = -100
+			add_stability = -2
+			add_country_modifier = {
+				name = "conversion_zeal"
+				duration = 3650
+			}
+			if = {
+				limit = {
+					NOT = {
+						calc_true_if = {
+							all_province = {
+								religion = harmonic
+								is_reformation_center = yes
+							}
+							amount = 3
+						}
+					}
+				}
+				hidden_effect = {
+					random_owned_province = {
+						limit = {
+							AND = {
+								can_have_center_of_reformation_trigger = {
+									RELIGION = harmonic
+								}
+							}
+							OR = {
+								superregion = central_estal_superregion
+								superregion = jasua_superregion
+							}
+						}
+						change_religion = harmonic
+						add_reform_center = harmonic
+					}
+				}
+				custom_tooltip = CENTER_OF_REFORMATION_POSSIBLE
+			}
 		}
-		date = 500.1.1
+		date = 430.1.1
 	}
 
 	lathvy = {

@@ -491,3 +491,8 @@ naf_new_syadona = {
     supply_limit_modifier = 0.75
     local_friendly_movement_speed = 0.25
 }
+
+naf_forest_frontier = {
+    local_development_cost = -0.15
+    culture_conversion_cost = -0.25
+}

@@ -1829,7 +1829,7 @@
  vanoma.14.c:0"[Root.heir1.GetName]."
 
  fashros.37.t:0 "The Crota'tam is injured!"
- fashros.37.d:0 "While going into battle, the Crota'tam of Fashros was severly injured and almost killed. He was dragged away from the battlefield, and his life was saved, albeit at the cost of severe injuries. This has caused a drain in morale across Fashros, and the possibility of [FAS.GetRuler.GetTitle] [FAS.GetRuler.GetName] returning to the battlefield is highly unlikely."
+ fashros.37.d:0 "While going into battle, the Crota'tam of Fashros was severly injured and almost killed. He was dragged away from the battlefield, and his life was saved, albeit at the cost of severe injuries. This has caused a drain in morale across Fashros, and the possibility of [FAS.Monarch.GetTitle] [FAS.Monarch.GetName] returning to the battlefield is highly unlikely."
  fashros.37.a:0 "Poor luck for us."
 
  fashros.38.t:0 "The Noglebim Revolt"
@@ -1850,6 +1850,19 @@
  nafa.18.d:0 "The vile menace that was Hasia has finally been vanquished. According to the clergy, the greatest concentration of Loys' power in all of Estal has now been wiped off the face of Famana. After having razed the city, we are now left with the question of what to do with it. Some suggest a complete demolition of Has, while others point out that the Yomtanian architecture could be put to new use."
  nafa.18.a:0 "Destroy the city."
  nafa.18.b:0 "Make it a military outpost."
+
+ nafa.21.t:0 "Settling of Eastern Estal"
+ nafa.21.d:0 "Having seized control of Aresia and Vanoma, the Nafan Empire is now turning its gaze toward the Dorshelan Forest that occupies the watershed of the Emila river. Settling the forest will be difficult, as many native tribes already occupy the region and are sure to resist a Nafan invasion. However, [Root.Monarch.GetTitle] [Root.Monarch.GetName] beleives the cost will be worth it."
+ nafa.21.a:0 "Nafa will grow larger!"
+
+ nafa.22.t:0 "The Advent of Harmonicism"
+ nafa.22.d:0 "Lathvy priests in Eastern Estal have been thinking... and they have come up with a radical new sect of Lathvy. Calling themselves the Harmonicists, they beleive that Ara and Loys are equals and should be worshipped side by side. Claiming that the battle between Ara and Loys is far too complicated for us mortals to understand, much like the Rochoni sect, they are able to justify the heretical notion of worshipping Loys. Additionally, it is a highly strict and ascetic interpretation of Lathvy. This strange, yet compelling, blend of ideas will surely find many followers... so perhaps we should be the first?"
+ nafa.22.a:0 "Let us embrace the truth."
+ nafa.22.b:0 "An interesting development."
+
+ nafa.23.t:0 "End of the Harmonic Reformation"
+ nafa.23.d:0 "For over a century, tireless Harmonic missionaries have visited every corner of Estal, seeking to spread the true interpretation of Lathvy. Now, as the Harmonic priests grow more wary of outside influences, the missionary journeys seem to be coming to a close. This is the end of the Harmonic Reformation."
+ nafa.23.a:0 "At least we know the truth."
  
  naravam.9.t:0 "Expedition to find the Gods"
  naravam.9.d:0 "Aware of the foreign Lathvy beliefs gaining popularity among the Estali people a group of eccentric shamans have come up with an initiative to send an expedition past the mountains, into the mysterious lands of the Gods, and prove once and for all that our faith is true."
@@ -2094,7 +2107,7 @@
  naravam.14.d:0 "With the rising presence of foreign merchants, explorers and missionaries around the coast of Gacil, some seek protection from greater forces. In particular, the tribe of Pipik'a on the island of Praluns has chosen to join the mainlanders."
  naravam.14.a:0 "Strength in numbers...?"
 
- naravam.15.t:0 "The End of the Rochoni Reformation"
+ naravam.15.t:0 "End of the Rochoni Reformation"
  naravam.15.d:0 "Over a century ago, the Lathvy scholars of the north began to wonder, is what the clergymen of the Gomic say true? They knew that the answer was no, that we had been deceived. Ara's battle is one we cannot hope to ever influence, and trying to help Ara would be a fruitless endeavor. This is the truth, this is what we have been preaching ever since. Rochoni missionaries have travelled all over Estal to spread the truth, but now they are exhausted. Many have embraced our teachings, and the idea of more expeditions seems a bit futile at this point. Perhaps it is time to declare the Reformation officialy over."
  naravam.15.a:0 "Now the truth is out there."
 

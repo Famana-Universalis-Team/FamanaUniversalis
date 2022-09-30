@@ -394,3 +394,45 @@ RST_ideas = {
         build_cost = -0.10
     }
 }
+
+GOR_ideas = {
+    start = {
+		prestige_decay = -0.01
+		adm_tech_cost_modifier = -0.10
+    }
+    
+    bonus = {
+        land_forcelimit_modifier = 0.10
+    }    
+
+    trigger = {
+        tag = GOR
+    }
+    free = yes
+    
+    gor_1 = {
+        female_advisor_chance = 0.50
+		may_recruit_female_generals = yes
+		global_unrest = -1.5
+    }
+    gor_2 = {
+        num_accepted_cultures = 4
+    }
+    gor_3 = {
+		free_leader_pool = 1
+		discipline = 0.05
+    }
+    gor_4 = {
+        global_institution_spread = 0.25
+    }
+    gor_5 = {
+		global_manpower_modifier = 0.25
+		drill_gain_modifier = 0.20
+    }
+    gor_6 = {
+        tolerance_heretic = 3
+    }
+    gor_7 = {
+        land_morale = 0.20
+    }
+}

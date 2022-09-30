@@ -61,7 +61,7 @@ van_1 = {
             }
         }
         effect = {
-            borlebim_area = {
+            borlebin_area = {
                 cede_province = ROOT
                 add_core = ROOT
                 change_culture = ROOT
@@ -74,7 +74,7 @@ van_1 = {
         }
         provinces_to_highlight = {
             OR = {
-				area = borlebim_area
+				area = borlebin_area
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }

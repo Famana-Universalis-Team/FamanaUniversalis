@@ -3947,6 +3947,10 @@ nafa_4 = {
         required_missions = { naf_aresian_incursion }
         position = 9
         trigger = {
+            gorfrek_region = {
+                type = all
+                has_discovered = ROOT
+            }
             vanoma_region = {
 				type = all
                 OR = {
@@ -3982,7 +3986,12 @@ nafa_4 = {
                 name = naf_get_vanoman_tech
                 duration = 9125
             }
-            custom_tooltip = addHarmonicEventandSettlingOfEasternEstal
+            country_event = {
+                id = nafa.21
+                days = 30
+            }
+            set_global_flag = harmonic_event_ready
+            custom_tooltip = nafaHarmonicEventCanFire
         }
         provinces_to_highlight = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
@@ -4771,7 +4780,7 @@ kalarga_2 = {
                 amount = 25
             }
 
-            unnamed_area_29 = {
+            affan_area = {
                 add_permanent_claim = ROOT
             }
             geccis_area = {
@@ -4797,7 +4806,7 @@ kalarga_2 = {
         required_missions = { klg_seize_trade_routes }
         position = 8
         trigger = {
-            unnamed_area_29 = {
+            affan_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -4838,7 +4847,7 @@ kalarga_2 = {
         provinces_to_highlight = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
             OR = {
-                area = unnamed_area_29
+                area = affan_area
                 area = geccis_area
                 area = unnamed_area_30
                 area = unnamed_area_32

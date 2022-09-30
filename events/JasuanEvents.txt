@@ -89,7 +89,7 @@ country_event = {
 				add_core = FAS
 			}
 		}
-		borlebim_area = {
+		borlebin_area = {
 			limit = { 
 				is_empty = yes
 			}
@@ -1257,7 +1257,7 @@ country_event = {
 		FAS = {
 			inherit = BLK
 		}
-		borlebim_area = {
+		borlebin_area = {
 			limit = { 
 				is_empty = yes
 			}

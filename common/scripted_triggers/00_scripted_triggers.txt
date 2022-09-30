@@ -554,6 +554,8 @@ was_never_end_game_tag_trigger = {	#Country Scope
 			NOT = { tag = YAV }
 			NOT = { was_tag = HLT }
 			NOT = { tag = HLT }
+			NOT = { was_tag = GOR }
+			NOT = { tag = GOR }
 		}
 	}
 }
@@ -2043,7 +2045,7 @@ has_not_free_mercs_trait = {
 # merc_reislaufer
 ##########################################################
 # When adding a new merc company then make sure that a unlock_$merc_company$_tt is defined in the localization
-# For localization purposes use the following line: "Has unlocked the §Y$merc_company$§! mercenary company."
+# For localization purposes use the following line: "Has unlocked the ï¿½Y$merc_company$ï¿½! mercenary company."
 
 has_unlocked_estate_privilege = {
 	has_country_flag = unlocked_privilege_$estate_privilege$
@@ -2060,7 +2062,7 @@ has_unlocked_merc_company = {
 # Supports following merc companies
 ##########################################################
 # When adding a new merc company then make sure that a unlock_$merc_company$_tt is defined in the localization
-# For localization purposes use the following line: "The §Y$merc_company$§! mercenary company has been globally unlocked."
+# For localization purposes use the following line: "The ï¿½Y$merc_company$ï¿½! mercenary company has been globally unlocked."
 has_globally_unlocked_merc_company = {
 	custom_trigger_tooltip = {
 		tooltip = has_globally_unlocked_$merc_company$
@@ -2966,7 +2968,7 @@ has_points_for_livonian_monarchy = {
 	has_points_for_$government_reform$ = yes
 }
 
-#Tooltip example: "Has passed at least §Y6§! issues in the parliament (§Y[Root.GetNumOfIssuesPassed]§!/§Y6§!)."
+#Tooltip example: "Has passed at least ï¿½Y6ï¿½! issues in the parliament (ï¿½Y[Root.GetNumOfIssuesPassed]ï¿½!/ï¿½Y6ï¿½!)."
 num_of_issues_passed = {
 	if = {
 		limit = {

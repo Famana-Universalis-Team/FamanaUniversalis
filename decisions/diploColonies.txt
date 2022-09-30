@@ -2,7 +2,7 @@ country_decisions = {
 
 	colonize_borlebin = {
 		potential = {
-			borlebim_area = {
+			borlebin_area = {
 				is_empty = yes
 			}
 			dip_tech = 6
@@ -27,7 +27,7 @@ country_decisions = {
 			}
 		}
 		provinces_to_highlight = {
-			area = borlebim_area
+			area = borlebin_area
 		}
 		allow = {
 			dip_tech = 9
@@ -36,7 +36,7 @@ country_decisions = {
 			mil_power = 100
 		}
 		effect = {
-			borlebim_area = {
+			borlebin_area = {
 				limit = {
 					is_empty = yes
 				}
