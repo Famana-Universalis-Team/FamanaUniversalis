@@ -189,6 +189,9 @@ country_decisions = {
 			NOT = {
 				has_country_flag = nafa_went_rini
 			}
+            NOT = {
+                has_country_flag = cant_go_rini
+            }
             NOT = { has_country_modifier = yomtanian_nation }
 		}
 		allow = {

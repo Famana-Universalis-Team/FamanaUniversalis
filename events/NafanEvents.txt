@@ -1395,18 +1395,23 @@ country_event = { #Harmonic
             }
         }
         religion = lathvy
-        has_global_flag = harmonic_event_ready
-        is_year = 430
+        OR = {
+            AND = {
+                has_global_flag = harmonic_event_ready
+                is_year = 430
+            }
+            is_year = 480
+        }
     }
 
     mean_time_to_happen = {
-        months = 960
+        months = 480
         modifier = {
             factor = 0.5
             tag = NAF
         }
         modifier = {
-            factor = 0.05
+            factor = 0.1
             tag = GOR
         }
     }
@@ -1486,7 +1491,11 @@ country_event = { #Harmonic
                     limit = {
                         region = gorfrek_region
                         religion = lathvy
+                        NOT = {
+                            has_province_flag = naf_is_harmonic_prov
+                        }
                     }
+                    set_province_flag = naf_is_harmonic_prov
                     change_religion = harmonic
                     add_province_modifier = {
 				        name = religious_zeal_at_conv
@@ -1497,7 +1506,11 @@ country_event = { #Harmonic
                     limit = {
                         region = gorfrek_region
                         religion = lathvy
+                        NOT = {
+                            has_province_flag = naf_is_harmonic_prov
+                        }
                     }
+                    set_province_flag = naf_is_harmonic_prov
                     change_religion = harmonic
                     add_province_modifier = {
 				        name = religious_zeal_at_conv
@@ -1508,7 +1521,11 @@ country_event = { #Harmonic
                     limit = {
                         region = gorfrek_region
                         religion = lathvy
+                        NOT = {
+                            has_province_flag = naf_is_harmonic_prov
+                        }
                     }
+                    set_province_flag = naf_is_harmonic_prov
                     change_religion = harmonic
                     add_province_modifier = {
 				        name = religious_zeal_at_conv
@@ -1519,7 +1536,11 @@ country_event = { #Harmonic
                     limit = {
                         region = gorfrek_region
                         religion = lathvy
+                        NOT = {
+                            has_province_flag = naf_is_harmonic_prov
+                        }
                     }
+                    set_province_flag = naf_is_harmonic_prov
                     change_religion = harmonic
                     add_province_modifier = {
 				        name = religious_zeal_at_conv
@@ -1530,7 +1551,11 @@ country_event = { #Harmonic
                     limit = {
                         region = gorfrek_region
                         religion = lathvy
+                        NOT = {
+                            has_province_flag = naf_is_harmonic_prov
+                        }
                     }
+                    set_province_flag = naf_is_harmonic_prov
                     change_religion = harmonic
                     add_province_modifier = {
 				        name = religious_zeal_at_conv
@@ -1541,7 +1566,11 @@ country_event = { #Harmonic
                     limit = {
                         region = gorfrek_region
                         religion = lathvy
+                        NOT = {
+                            has_province_flag = naf_is_harmonic_prov
+                        }
                     }
+                    set_province_flag = naf_is_harmonic_prov
                     change_religion = harmonic
                     add_province_modifier = {
 				        name = religious_zeal_at_conv
@@ -1552,7 +1581,11 @@ country_event = { #Harmonic
                     limit = {
                         region = gorfrek_region
                         religion = lathvy
+                        NOT = {
+                            has_province_flag = naf_is_harmonic_prov
+                        }
                     }
+                    set_province_flag = naf_is_harmonic_prov
                     change_religion = harmonic
                     add_province_modifier = {
 				        name = religious_zeal_at_conv
@@ -1563,7 +1596,11 @@ country_event = { #Harmonic
                     limit = {
                         region = gorfrek_region
                         religion = lathvy
+                        NOT = {
+                            has_province_flag = naf_is_harmonic_prov
+                        }
                     }
+                    set_province_flag = naf_is_harmonic_prov
                     change_religion = harmonic
                     add_province_modifier = {
 				        name = religious_zeal_at_conv
@@ -1618,6 +1655,319 @@ country_event = {
                 religion = harmonic
             }
             remove_reform_center = harmonic
+        }
+	}
+}
+
+#Rini growing in the legions
+country_event = {
+	id = nafa.24
+	title = nafa.24.t
+	picture = MILITARY_CAMP_eventPicture
+	desc = nafa.24.d
+    fire_only_once = yes
+	
+	trigger = {
+        tag = NAF
+        has_country_flag = naf_rini_flag
+        num_of_streltsy	= 80
+        num_of_owned_provinces_with = {
+            value = 10
+            religion = rini
+        }
+	}
+	
+	mean_time_to_happen = {
+		months = 156
+	}
+
+    immediate = {
+        set_country_flag = naf_rini_event_1
+    }
+
+    option = { #Rin
+		name = nafa.24.a
+        ai_chance = { factor = 1 }
+        add_country_modifier = {
+            name = naf_rini_army
+            duration = 9125
+        }
+        custom_tooltip = nafaBeginRinChain
+	}
+    option = {
+		name = nafa.24.b
+        ai_chance = { factor = 1 }
+        add_stability = -1
+        add_country_modifier = {
+            name = naf_high_desertion
+            duration = 3650
+        }
+        clr_country_flag = naf_rini_event_1
+	}
+}
+
+#Rin order military administration
+country_event = {
+	id = nafa.25
+	title = nafa.25.t
+	picture = CONQUEST_eventPicture
+	desc = nafa.25.d
+    fire_only_once = yes
+	
+	trigger = {
+        tag = NAF
+        has_country_flag = naf_rini_event_1
+        overextension_percentage = 1.25
+	}
+	
+	mean_time_to_happen = {
+		months = 8
+	}
+
+    immediate = {
+        set_country_flag = naf_rini_event_2
+        clr_country_flag = naf_rini_event_1
+    }
+
+    option = { #Rin
+		name = nafa.25.a
+        ai_chance = { factor = 1 }
+        add_country_modifier = {
+            name = naf_rini_mil_admin
+            duration = 7300
+        }
+        add_prestige = -10
+	}
+    option = {
+		name = nafa.25.b
+        ai_chance = { factor = 1 }
+        add_war_exhaustion = 5
+        custom_tooltip = nafaEndRinChain
+        clr_country_flag = naf_rini_event_2
+	}
+}
+
+#Rin order in the courts
+country_event = {
+	id = nafa.26
+	title = nafa.26.t
+	picture = COURT_eventPicture
+	desc = nafa.26.d
+    fire_only_once = yes
+	
+	trigger = {
+        tag = NAF
+        has_country_flag = naf_rini_event_2
+        has_mil_advisor_3 = yes
+	}
+	
+	mean_time_to_happen = {
+		months = 60
+	}
+
+    immediate = {
+        set_country_flag = naf_rini_event_3
+        clr_country_flag = naf_rini_event_2
+    }
+
+    option = { #Rin
+		name = nafa.26.a
+        ai_chance = { factor = 1 }
+        add_country_modifier = {
+            name = naf_rini_court
+            duration = 3650
+        }
+	}
+    option = {
+		name = nafa.26.b
+        ai_chance = { factor = 1 }
+        change_mil = -1
+        add_prestige = 10
+        custom_tooltip = nafaEndRinChain
+        clr_country_flag = naf_rini_event_3
+	}
+}
+
+#Revolt of the four generals
+country_event = {
+	id = nafa.27
+	title = nafa.27.t
+	picture = CIVIL_WAR_eventPicture
+	desc = nafa.27.d
+    fire_only_once = yes
+	
+	trigger = {
+        tag = NAF
+        has_country_flag = naf_rini_event_3
+	}
+	
+	mean_time_to_happen = {
+		months = 100
+	}
+
+    immediate = {
+        clr_country_flag = naf_rini_event_3
+    }
+
+    option = { #Rin
+		name = nafa.27.a
+        ai_chance = { factor = 1 }
+        set_country_flag = naf_ditched_syadon
+        add_stability = -5
+        kill_ruler = yes
+        remove_consort = yes
+        if = {
+            limit = {
+                has_heir = yes
+            }
+            kill_heir = { allow_new_heir = no }
+        }
+        define_ruler = {
+            culture = ROOT
+            religion = ROOT
+        }
+        add_government_reform = imperial_rini_stratocracy
+        custom_tooltip = nafaEndRinChain
+	}
+    option = {
+		name = nafa.27.b
+        ai_chance = { factor = 1 }
+        set_country_flag = naf_fighting_the_rinis
+        add_stability = -1
+        add_country_modifier = {
+            name = naf_coup_ongoing
+            duration = 3650
+        }
+        random = {
+            chance = 50
+            kill_ruler = yes
+        }
+        random_owned_province = {
+            limit = {
+                region = stroktur_region
+                NOT = {
+                    has_province_flag = naf_spawned_4_general
+                }
+            }
+            set_province_flag = naf_spawned_4_general
+            spawn_rebels = {
+                type = noble_rebels
+                size = 3
+                religion = rini
+                win = yes
+                should_take_capital = yes
+            }
+        }
+        random_owned_province = {
+            limit = {
+                region = stroktur_region
+                NOT = {
+                    has_province_flag = naf_spawned_4_general
+                }
+            }
+            set_province_flag = naf_spawned_4_general
+            spawn_rebels = {
+                type = noble_rebels
+                size = 3
+                religion = rini
+                win = yes
+                should_take_capital = yes
+            }
+        }
+        random_owned_province = {
+            limit = {
+                region = stroktur_region
+                NOT = {
+                    has_province_flag = naf_spawned_4_general
+                }
+            }
+            set_province_flag = naf_spawned_4_general
+            spawn_rebels = {
+                type = noble_rebels
+                size = 3
+                religion = rini
+                win = yes
+                should_take_capital = yes
+            }
+        }
+        random_owned_province = {
+            limit = {
+                region = stroktur_region
+                NOT = {
+                    has_province_flag = naf_spawned_4_general
+                }
+            }
+            set_province_flag = naf_spawned_4_general
+            spawn_rebels = {
+                type = noble_rebels
+                size = 3
+                religion = rini
+                win = yes
+                should_take_capital = yes
+            }
+        }
+        #custom_tooltip = nafaEndRinChain
+	}
+}
+
+#Rin order defeated
+country_event = {
+	id = nafa.28
+	title = nafa.28.t
+	picture = IMPALED_SOLDIERS_eventPicture
+	desc = nafa.28.d
+    fire_only_once = yes
+	
+	trigger = {
+        tag = NAF
+        has_country_flag = naf_fighting_the_rinis
+        NOT = {
+            has_country_modifier = naf_coup_ongoing
+        }
+        NOT = { num_of_rebel_controlled_provinces = 1 }
+		NOT = { num_of_rebel_armies = 1 }
+        stability = 1
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+
+    immediate = {
+        clr_country_flag = naf_rini_flag
+        clr_country_flag = nafa_went_rini
+        clr_country_flag = naf_fighting_the_rinis
+        set_country_flag = cant_go_rini
+    }
+
+    option = {
+		name = nafa.28.a
+        ai_chance = { factor = 1 }
+        add_country_modifier = {
+            name = naf_consolidated_rule
+            duration = -1
+        }
+        add_country_modifier = {
+            name = naf_purging_rini
+            duration = 3650
+        }
+        remove_country_modifier = naf_rini_elite
+        remove_country_modifier = naf_rini_order_country
+        remove_country_modifier = naf_rini_army
+        remove_country_modifier = naf_high_desertion
+        remove_country_modifier = naf_rini_mil_admin
+        remove_country_modifier = naf_rini_court
+        every_owned_province = {
+            limit = {
+                religion = rini
+            }
+            change_religion = ROOT
+        }
+        every_owned_province = {
+            limit = {
+                has_province_modifier = naf_rini_fort
+            }
+            remove_province_modifier = naf_rini_fort
         }
 	}
 }

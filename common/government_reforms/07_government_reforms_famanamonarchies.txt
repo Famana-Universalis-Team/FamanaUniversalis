@@ -295,6 +295,9 @@ nafan_gov = {
 	maintain_dynasty = yes
 	potential = {
 		tag = NAF
+		NOT = {
+			has_country_flag = naf_ditched_syadon
+		}
 	}
 	fixed_rank = 3
 	legacy_equivalent = tsardom_legacy
@@ -723,7 +726,7 @@ imperial_rini_stratocracy = {
 	allow_normal_conversion = yes
 	potential = {
 		tag = NAF
-		has_country_flag = naf_rini_rule
+		has_country_flag = naf_ditched_syadon
 	}
 	valid_for_nation_designer = yes
 	nation_designer_cost = 100
@@ -739,5 +742,11 @@ imperial_rini_stratocracy = {
 	conditional = {
 		allow = { has_dlc = "Rights of Man" }
 		militarised_society = yes
+	}
+
+	custom_attributes = {
+		royal_marriage = no
+		queen = no
+		republican_name = yes
 	}
 }
