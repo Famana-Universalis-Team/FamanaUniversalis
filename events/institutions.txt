@@ -209,6 +209,7 @@ country_event = {
 		hidden_effect = {
 			from = { save_event_target_as = institution_origin }
 		}
+		set_country_flag = spawned_tonmo_numerals_flag
 	}
 
 	option = {

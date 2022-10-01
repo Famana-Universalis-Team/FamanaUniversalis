@@ -302,40 +302,100 @@
  achievement_rekindling_the_past_title:0 "£adm£Achievement - §YRekindling the Past§!"
  achievement_rekindling_the_past_desc:0 "§YRekindling the Past§!\n\nAs a Pawani nation, relight the Pyramids of Pextum."
  achievement_rekindling_the_past_modifier:0 "§TAchievement - Rekindling the Past§!"
- achievement_rekindling_the_past_desc:0 "As a Pawani nation, relight the Pyramids of Pextum."
+ achievement_rekindling_the_past_modifier_desc:0 "As a Pawani nation, relight the Pyramids of Pextum."
 
  #Soy Malding
  achievement_soy_malding_title:0 "£adm£Achievement - §YSoy Malding§!"
  achievement_soy_malding_desc:0 "§YSoy Malding§!\n\nAs Soy, station a unit in Pechiadh."
  achievement_soy_malding_modifier:0 "§TAchievement - Soy Malding§!"
- achievement_soy_malding_desc:0 "As Soy, station a unit in Pechiadh."
+ achievement_soy_malding_modifier_desc:0 "As Soy, station a unit in Pechiadh."
 
  #Dakka dakka
  achievement_dakka_dakka_title:0 "£adm£Achievement - §YDakka Dakka§!"
  achievement_dakka_dakka_desc:0 "§YDakka Dakka§!\n\nRaise 4 Berserker Companies"
  achievement_dakka_dakka_modifier:0 "§TAchievement - Dakka Dakka§!"
- achievement_dakka_dakka_desc:0 "Raise 4 Berserker Companies"
+ achievement_dakka_dakka_modifier_desc:0 "Raise 4 Berserker Companies"
 
  #Sangre por Sangre
  achievement_sangre_por_sangre_title:0 "£adm£Achievement - §YSangre por Sangre§!"
  achievement_sangre_por_sangre_desc:0 "§YSangre por Sangre§!\n\nAs a Maldik nation following the ancestral religion, own Pomlen"
  achievement_sangre_por_sangre_modifier:0 "§TAchievement - Sangre por Sangre§!"
- achievement_sangre_por_sangre_desc:0 "As a Maldik nation following the ancestral religion, own Pomlen"
+ achievement_sangre_por_sangre_modifier_desc:0 "As a Maldik nation following the ancestral religion, own Pomlen"
 
  #Hot Wind Blowing
  achievement_the_hot_wind_blowing_title:0 "£adm£Achievement - §YThe Hot Wind Blowing§!"
  achievement_the_hot_wind_blowing_desc:0 "§YThe Hot Wind Blowing§!\n\nAs Kurkar, unite Antiash; hold the Great Meeting and conquer Xon."
  achievement_the_hot_wind_blowing_modifier:0 "§TAchievement - The Hot Wind Blowing§!"
- achievement_the_hot_wind_blowing_desc:0 "As Kurkar, unite Antiash; hold the Great Meeting and conquer Xon."
+ achievement_the_hot_wind_blowing_modifier_desc:0 "As Kurkar, unite Antiash; hold the Great Meeting and conquer Xon."
 
  #Povratak
  achievement_povratak_title:0 "£adm£Achievement - §YPovratak§!"
  achievement_povratak_desc:0 "§YPovratak§!\n\nFinish the Kalargan Mission Tree."
  achievement_povratak_modifier:0 "§TAchievement - Povratak§!"
- achievement_povratak_desc:0 "Finish the Kalargan Mission Tree."
+ achievement_povratak_modifier_desc:0 "Finish the Kalargan Mission Tree."
 
  #Gadan Games
  achievement_gadan_games_title:0 "£adm£Achievement - §YGadan Games§!"
  achievement_gadan_games_desc:0 "§YGadan Games§!\n\nStarting as Gadea, own 100 Gadan provinces."
  achievement_gadan_games_modifier:0 "§TAchievement - Gadan Games§!"
- achievement_gadan_games_desc:0 "Starting as Gadea, own 100 Gadan provinces."
+ achievement_gadan_games_modifier_desc:0 "Starting as Gadea, own 100 Gadan provinces."
+
+ #Bnafa
+ achievement_bnafa_title:0 "£adm£Achievement - §YBnafa§!"
+ achievement_bnafa_desc:0 "§YBnafa§!\n\nAs Bafa, own and core the Stroktur region before the Eclipse."
+ achievement_bnafa_modifier:0 "§TAchievement - Bnafa§!"
+ achievement_bnafa_modifier_desc:0 "As Bafa, own and core the Stroktur region before the Eclipse."
+
+ #Have Some Maners!
+ achievement_have_some_maners_title:0 "£adm£Achievement - §YHave Some Maners!§!"
+ achievement_have_some_maners_desc:0 "§YHave Some Maners!§!\n\nStarting as Maner, get 10 diplomatic reputation."
+ achievement_have_some_maners_modifier:0 "§TAchievement - Have Some Maners!§!"
+ achievement_have_some_maners_modifier_desc:0 "Starting as Maner, get 10 diplomatic reputation."
+
+ #Desmos
+ achievement_desmos_title:0 "£adm£Achievement - §YDesmos§!"
+ achievement_desmos_desc:0 "§YDesmos§!\n\nStarting as Deshmoz, spawn Tonmo Numerals."
+ achievement_desmos_modifier:0 "§TAchievement - Desmos§!"
+ achievement_desmos_modifier_desc:0 "Starting as Deshmoz, spawn Tonmo Numerals."
+
+ #Boss-isi
+ achievement_boss_isi_title:0 "£adm£Achievement - §YBoss-isi§!"
+ achievement_boss_isi_desc:0 "§YBoss-isi§!\n\nAs Alu-Tokum, own 100 Bosisi provinces."
+ achievement_boss_isi_modifier:0 "§TAchievement - Boss-isi§!"
+ achievement_boss_isi_modifier_desc:0 "As Alu-Tokum, own 100 Bosisi provinces."
+
+ #Northern Pagans
+ achievement_northern_pagans_title:0 "£adm£Achievement - §YNorthern Pagans§!"
+ achievement_northern_pagans_desc:0 "§YNorthern Pagans§!\n\nAs Lukscham, harmonize Gotzli and Torviya."
+ achievement_northern_pagans_modifier:0 "§TAchievement - Northern Pagans§!"
+ achievement_northern_pagans_modifier_desc:0 "As Lukscham, harmonize Gotzli and Torviya."
+
+ #There and Back Again
+ achievement_there_and_back_again_title:0 "£adm£Achievement - §YThere and Back Again§!"
+ achievement_there_and_back_again_desc:0 "§YThere and Back Again§!\n\nAs Stroktur, form Moxon."
+ achievement_there_and_back_again_modifier:0 "§TAchievement - There and Back Again§!"
+ achievement_there_and_back_again_modifier_desc:0 "As Stroktur, form Moxon."
+
+ #Home, Sweet Home
+ achievement_home_sweet_home_title:0 "£adm£Achievement - §YHome, Sweet Home§!"
+ achievement_home_sweet_home_desc:0 "§YHome, Sweet Home§!\n\nAs Kalarga, convert the entire Moxon region to Kachik culture."
+ achievement_home_sweet_home_modifier:0 "§TAchievement - Home, Sweet Home§!"
+ achievement_home_sweet_home_modifier_desc:0 "As Kalarga, convert the entire Moxon region to Kachik culture."
+
+ #Northern Coast Helvania
+ achievement_northern_coast_helvania_title:0 "£adm£Achievement - §YNorthern Coast Helvania§!"
+ achievement_northern_coast_helvania_desc:0 "§YNorthern Coast Helvania§!\n\nForm Emastaly, become a republic and own at least 100 provinces in Estal."
+ achievement_northern_coast_helvania_modifier:0 "§TAchievement - Northern Coast Helvania§!"
+ achievement_northern_coast_helvania_modifier_desc:0 "Form Emastaly, become a republic and own at least 100 provinces in Estal."
+
+ #Destroyer of Empires
+ achievement_destroyer_of_empires_title:0 "£adm£Achievement - §YDestroyer of Empires§!"
+ achievement_destroyer_of_empires_desc:0 "§YDestroyer of Empires§!\n\nAs Kolya, have 100% warscore against Nafa."
+ achievement_destroyer_of_empires_modifier:0 "§TAchievement - Destroyer of Empires§!"
+ achievement_destroyer_of_empires_modifier_desc:0 "As Kolya, have 100% warscore against Nafa."
+
+ #Gelzani Glory
+ achievement_gelzani_glory_title:0 "£adm£Achievement - §YGelzani Glory§!"
+ achievement_gelzani_glory_desc:0 "§YGelzani Glory§!\n\nStarting as a Pextoglazian diocese, form the Gelzani Order."
+ achievement_gelzani_glory_modifier:0 "§TAchievement - Gelzani Glory§!"
+ achievement_gelzani_glory_modifier_desc:0 "Starting as a Pextoglazian diocese, form the Gelzani Order."

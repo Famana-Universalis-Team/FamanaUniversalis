@@ -1699,7 +1699,7 @@ country_decisions = {
 				}
 				add_permanent_claim = JAS
 			}
-			unnamed_area_39 = {
+			bamal_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
@@ -2198,7 +2198,7 @@ country_decisions = {
 				}
 				set_government_rank = 2
 			}
-			unnamed_area_39 = {
+			bamal_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
@@ -4663,6 +4663,7 @@ country_decisions = {
 			}
 			add_prestige = 25
 			set_global_flag = antiash_domain_proclaimed
+			set_country_flag = formed_antiash_domain
 		}
 	}
 	lukscha_nation = {

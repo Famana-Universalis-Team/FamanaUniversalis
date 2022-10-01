@@ -347,7 +347,7 @@ kin_3 = {
                 area = unnamed_area_45
                 area = unnamed_area_48
                 area = unnamed_area_35
-                area = unnamed_area_39
+                area = bamal_area
             }
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
@@ -368,7 +368,7 @@ kin_3 = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-            unnamed_area_39 = {
+            bamal_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
                 NOT = { unrest = 0 }
@@ -563,7 +563,7 @@ kin_4 = {
             unnamed_area_35 = {
                 add_permanent_claim = ROOT
             }
-            unnamed_area_39 = {
+            bamal_area = {
                 add_permanent_claim = ROOT
             }
             unnamed_area_33 = {

@@ -75,6 +75,19 @@ country_decisions = {
 		ai_will_do = {
 			factor = 1
 		}
+		provinces_to_highlight = {
+			OR = {
+				region = south_xalia_region
+				region = east_xalia_region
+				region = north_xalia_region
+				region = west_xalia_region
+			}
+			OR = {
+				NOT = {
+					religion = morian
+				}
+			}
+		}
 	}
 
 	achievement_servant_of_delk = {
@@ -229,6 +242,18 @@ country_decisions = {
 		ai_will_do = {
 			factor = 1
 		}
+		provinces_to_highlight = {
+			OR = {
+				region = south_xalia_region
+				region = east_xalia_region
+				region = north_xalia_region
+				region = west_xalia_region
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				is_city = no
+			}
+		}
 	}
 	achievement_for_the_clouds = {
 		major = yes
@@ -378,6 +403,13 @@ country_decisions = {
 		ai_will_do = {
 			factor = 1
 		}
+		provinces_to_highlight = {
+			region = maky_region
+			OR = {
+				NOT = { owned_by = ROOT }
+				is_city = no
+			}
+		}
 	}
 	achievement_get_rial = {
 		major = yes
@@ -423,6 +455,13 @@ country_decisions = {
 		ai_will_do = {
 			factor = 1
 		}
+		provinces_to_highlight = {
+			province_id = 5041
+			OR = {
+				NOT = { owned_by = ROOT }
+				is_city = no
+			}
+		}
 	}
 	achievement_tee_spilled = {
 		major = yes
@@ -449,7 +488,7 @@ country_decisions = {
 				tooltip = tooltipIronmanAch
 				ironman = yes
 			}
-			unnamed_area_39 = {
+			bamal_area = {
 				type = all
 				controlled_by = ROOT
 				devastation	= 100
@@ -469,6 +508,11 @@ country_decisions = {
 		}
 		ai_will_do = {
 			factor = 1
+		}
+		provinces_to_highlight = {
+			area = bamal_area
+			NOT = { controlled_by = ROOT }
+			NOT = { devastation = 100 }
 		}
 	}
 	achievement_sweet_revenge = {
@@ -523,6 +567,13 @@ country_decisions = {
 		}
 		ai_will_do = {
 			factor = 1
+		}
+		provinces_to_highlight = {
+			superregion = jasua_superregion
+			OR = {
+				NOT = { owned_by = ROOT }
+				is_city = no
+			}
 		}
 	}
 	achievement_holk_smash = {
@@ -667,6 +718,17 @@ country_decisions = {
 		ai_will_do = {
 			factor = 1
 		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 5203
+				region = western_naravam_region
+				region = eastern_naravam_region
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				is_city = no
+			}
+		}
 	}
 	achievement_back_with_a_vengeance = {
 		major = yes
@@ -776,6 +838,10 @@ country_decisions = {
 		ai_will_do = {
 			factor = 1
 		}
+		provinces_to_highlight = {
+			region = stroktur_region
+			culture = Kachik
+		}
 	}
 	achievement_znestal = {
 		major = yes
@@ -825,6 +891,13 @@ country_decisions = {
 		ai_will_do = {
 			factor = 1
 		}
+		provinces_to_highlight = {
+			continent = estal
+			OR = {
+				NOT = { owned_by = ROOT }
+				is_city = no
+			}
+		}
 	}
 	achievement_nobody_lives_forever = {
 		major = yes
@@ -871,6 +944,16 @@ country_decisions = {
 		}
 		ai_will_do = {
 			factor = 1
+		}
+		provinces_to_highlight = {
+			region = jasua_region
+			OR = {
+				NOT = { owned_by = ROOT }
+				is_city = no
+				NOT = {
+					religion = tonmo
+				}
+			}
 		}
 	}
 	achievement_never_trust_an_oppian = {
@@ -1001,6 +1084,20 @@ country_decisions = {
 		ai_will_do = {
 			factor = 1
 		}
+		provinces_to_highlight = {
+			OR = {
+				region = lomea_region
+				region = pextoglazia_region
+				region = walara_region
+				superregion = oppia_superregion
+				superregion = ga_xal_superregion
+				region = laglon_region
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				is_city = no
+			}
+		}
 	}
 	achievement_the_true_lathvyite = {
 		major = yes
@@ -1052,6 +1149,12 @@ country_decisions = {
 		}
 		ai_will_do = {
 			factor = 1
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 5337
+				owned_by = PEX
+			}
 		}
 	}
 	achievement_yabonian_spies = {
@@ -1141,18 +1244,22 @@ country_decisions = {
 			south_xalia_region = {
 				type = all
 				owned_by = ROOT
+				is_core = ROOT
 			}
 			east_xalia_region = {
 				type = all
 				owned_by = ROOT
+				is_core = ROOT
 			}
 			north_xalia_region = {
 				type = all
 				owned_by = ROOT
+				is_core = ROOT
 			}
 			west_xalia_region = {
 				type = all
 				owned_by = ROOT
+				is_core = ROOT
 			}
 		}
 		effect = {
@@ -1169,6 +1276,21 @@ country_decisions = {
 		}
 		ai_will_do = {
 			factor = 1
+		}
+		provinces_to_highlight = {
+			OR = {
+				region = south_xalia_region
+				region = north_xalia_region
+				region = east_xalia_region
+				region = west_xalia_region
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				is_city = no
+				NOT = {
+					is_core = ROOT
+				}
+			}
 		}
 	}
 	achievement_crusader = {
@@ -1225,6 +1347,13 @@ country_decisions = {
 		ai_will_do = {
 			factor = 1
 		}
+		provinces_to_highlight = {
+			province_id = 5949
+			OR = {
+				NOT = { owned_by = ROOT }
+				is_city = no
+			}
+		}
 	}
 	achievement_never_trust_a_jasuan = {
 		major = yes
@@ -1278,6 +1407,17 @@ country_decisions = {
 		}
 		ai_will_do = {
 			factor = 1
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 5388
+				province_id = 5337
+				province_id = 5066
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				is_city = no
+			}
 		}
 	}
 	achievement_warrior_spirit = {
@@ -1445,6 +1585,16 @@ country_decisions = {
 		ai_will_do = {
 			factor = 1
 		}
+		provinces_to_highlight = {
+			OR = {
+				area = nuzoto_area
+				area = toza_area
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				is_city = no
+			}
+		}
 	}
 	achievement_et_tu_karse = {
 		major = yes
@@ -1495,8 +1645,11 @@ country_decisions = {
 		ai_will_do = {
 			factor = 1
 		}
+		provinces_to_highlight = {
+			province_id = 5140
+		}
 	}
-	achievement_et_tu_karse = {
+	achievement_jexus_christo = {
 		major = yes
 		potential = {
 			OR = {
@@ -1538,6 +1691,13 @@ country_decisions = {
 		}
 		ai_will_do = {
 			factor = 1
+		}
+		provinces_to_highlight = {
+			province_id = 5100
+			OR = {
+				NOT = { owned_by = ROOT }
+				is_city = no
+			}
 		}
 	}
 	achievement_the_elwaiting_game = {
@@ -1856,6 +2016,13 @@ country_decisions = {
 						was_tag = BRY
 						was_tag = BRM
 						was_tag = BOR
+						tag = RME
+						tag = BRO
+						tag = VRI
+						tag = YON
+						tag = BRY
+						tag = BRM
+						tag = BOR
 					}
 					has_country_flag = startedLegitAch
 				}
@@ -2349,6 +2516,12 @@ country_decisions = {
 						was_tag = GRL
 						was_tag = RHJ
 						was_tag = MPL
+						tag = ROL
+						tag = OLF
+						tag = ZTT
+						tag = GRL
+						tag = RHJ
+						tag = MPL
 						#AND = {
 						#	was_tag = EQI
 						#	tag = MRR
@@ -2402,7 +2575,7 @@ country_decisions = {
 					#ironman = yes
 					start_date = 212.6.6
 					NOT = { num_of_custom_nations = 1 }
-					religion = Pawani
+					religion = pawani
 					has_dlc = "Leviathan"
 				}
 				has_country_flag = debug_achievements
@@ -2584,7 +2757,7 @@ country_decisions = {
 			mission_completed = antiash_xon
 			custom_trigger_tooltip = {
 				tooltip = FORMED_ANTIASH
-				has_global_flag = antiash_domain_proclaimed
+				has_country_flag = formed_antiash_domain
 			}
 		}
 		effect = {
@@ -2648,7 +2821,10 @@ country_decisions = {
 					#ironman = yes
 					start_date = 212.6.6
 					NOT = { num_of_custom_nations = 1 }
-					was_tag = GDA
+					OR = {
+						tag = GDA
+						was_tag = GDA
+					}
 				}
 				has_country_flag = debug_achievements
 			}
@@ -2669,6 +2845,451 @@ country_decisions = {
 		effect = {
 			add_country_modifier = {
 				name = achievement_gadan_games_modifier
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	achievement_bnafa = {
+		major = yes
+		potential = {
+			OR = {
+				AND = {
+					ai = no
+					default_game_settings = yes
+					normal_or_historical_nations = yes
+					normal_province_values = yes
+					#ironman = yes
+					start_date = 212.6.6
+					NOT = { num_of_custom_nations = 1 }
+					tag = BAF
+				}
+				has_country_flag = debug_achievements
+			}
+			NOT = {
+				has_country_modifier = achievement_bnafa_modifier
+			}
+		}
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = tooltipIronmanAch
+				ironman = yes
+			}
+			stroktur_region = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = achievement_bnafa_modifier
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	achievement_have_some_maners = {
+		major = yes
+		potential = {
+			OR = {
+				AND = {
+					ai = no
+					default_game_settings = yes
+					normal_or_historical_nations = yes
+					normal_province_values = yes
+					#ironman = yes
+					start_date = 212.6.6
+					NOT = { num_of_custom_nations = 1 }
+					OR = {
+						tag = MNR
+						was_tag = MNR
+					}
+				}
+				has_country_flag = debug_achievements
+			}
+			NOT = {
+				has_country_modifier = achievement_have_some_maners_modifier
+			}
+		}
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = tooltipIronmanAch
+				ironman = yes
+			}
+			diplomatic_reputation = 10
+		}
+		effect = {
+			add_country_modifier = {
+				name = achievement_have_some_maners_modifier
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	achievement_desmos = {
+		major = yes
+		potential = {
+			OR = {
+				AND = {
+					ai = no
+					default_game_settings = yes
+					normal_or_historical_nations = yes
+					normal_province_values = yes
+					#ironman = yes
+					start_date = 212.6.6
+					NOT = { num_of_custom_nations = 1 }
+					OR = {
+						tag = DES
+						was_tag = DES
+					}
+				}
+				has_country_flag = debug_achievements
+			}
+			NOT = {
+				has_country_modifier = achievement_desmos_modifier
+			}
+		}
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = tooltipIronmanAch
+				ironman = yes
+			}
+			custom_trigger_tooltip = {
+				tooltip = spawnedTonmoNumTT
+				has_country_flag = spawned_tonmo_numerals_flag
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = achievement_desmos_modifier
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	achievement_boss_isi = {
+		major = yes
+		potential = {
+			OR = {
+				AND = {
+					ai = no
+					default_game_settings = yes
+					normal_or_historical_nations = yes
+					normal_province_values = yes
+					#ironman = yes
+					start_date = 212.6.6
+					NOT = { num_of_custom_nations = 1 }
+					OR = {
+						tag = ATM
+						tag = ALU
+						tag = TKM
+					}
+				}
+				has_country_flag = debug_achievements
+			}
+			NOT = {
+				has_country_modifier = achievement_boss_isi_modifier
+			}
+		}
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = tooltipIronmanAch
+				ironman = yes
+			}
+			tag = ATM
+			num_of_owned_provinces_with = {
+				value = 100
+				religion = bosisi
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = achievement_boss_isi_modifier
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	achievement_northern_pagans = {
+		major = yes
+		potential = {
+			OR = {
+				AND = {
+					ai = no
+					default_game_settings = yes
+					normal_or_historical_nations = yes
+					normal_province_values = yes
+					#ironman = yes
+					start_date = 212.6.6
+					NOT = { num_of_custom_nations = 1 }
+					culture_group = Lukscho_Brulic
+				}
+				has_country_flag = debug_achievements
+			}
+			NOT = {
+				has_country_modifier = achievement_northern_pagans_modifier
+			}
+		}
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = tooltipIronmanAch
+				ironman = yes
+			}
+			tag = LKS
+			has_harmonized_with	= naravami
+			has_harmonized_with	= gotzli
+		}
+		effect = {
+			add_country_modifier = {
+				name = achievement_northern_pagans_modifier
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	achievement_there_and_back_again = {
+		major = yes
+		potential = {
+			OR = {
+				AND = {
+					ai = no
+					default_game_settings = yes
+					normal_or_historical_nations = yes
+					normal_province_values = yes
+					#ironman = yes
+					start_date = 212.6.6
+					NOT = { num_of_custom_nations = 1 }
+					tag = SKT
+					primary_culture = Bohoran
+				}
+				has_country_flag = debug_achievements
+			}
+			NOT = {
+				has_country_modifier = achievement_there_and_back_again_modifier
+			}
+		}
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = tooltipIronmanAch
+				ironman = yes
+			}
+			tag = MOX
+		}
+		effect = {
+			add_country_modifier = {
+				name = achievement_there_and_back_again_modifier
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	achievement_home_sweet_home = {
+		major = yes
+		potential = {
+			OR = {
+				AND = {
+					ai = no
+					default_game_settings = yes
+					normal_or_historical_nations = yes
+					normal_province_values = yes
+					#ironman = yes
+					start_date = 212.6.6
+					NOT = { num_of_custom_nations = 1 }
+					tag = KLG
+				}
+				has_country_flag = debug_achievements
+			}
+			NOT = {
+				has_country_modifier = achievement_home_sweet_home_modifier
+			}
+		}
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = tooltipIronmanAch
+				ironman = yes
+			}
+			moxon_region = {
+				type = all
+				culture = Kachik
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = achievement_home_sweet_home_modifier
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	achievement_northern_coast_helvania = {
+		major = yes
+		potential = {
+			OR = {
+				AND = {
+					ai = no
+					default_game_settings = yes
+					normal_or_historical_nations = yes
+					normal_province_values = yes
+					#ironman = yes
+					start_date = 212.6.6
+					NOT = { num_of_custom_nations = 1 }
+					OR = {
+						AND = {
+							tag = SKT
+							mission_completed = eclipse_the_eclipse
+							primary_culture = Bohoran_E
+						}
+						AND = {
+							culture_group = Emastalian
+							NOT = { tag = SKT }
+						}
+						primary_culture = Maxan_East_Emastalian
+						primary_culture = Maxan_West_Emastalian
+					}
+				}
+				has_country_flag = debug_achievements
+			}
+			NOT = {
+				has_country_modifier = achievement_northern_coast_helvania_modifier
+			}
+		}
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = tooltipIronmanAch
+				ironman = yes
+			}
+			tag = EST
+			government = republic
+			num_of_owned_provinces_with = {
+				value = 100
+				continent = estal
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = achievement_northern_coast_helvania_modifier
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	achievement_destroyer_of_empires = {
+		major = yes
+		potential = {
+			OR = {
+				AND = {
+					ai = no
+					default_game_settings = yes
+					normal_or_historical_nations = yes
+					normal_province_values = yes
+					#ironman = yes
+					start_date = 212.6.6
+					NOT = { num_of_custom_nations = 1 }
+					tag = KLY
+				}
+				has_country_flag = debug_achievements
+			}
+			NOT = {
+				has_country_modifier = achievement_destroyer_of_empires_modifier
+			}
+		}
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = tooltipIronmanAch
+				ironman = yes
+			}
+			war_score_against = {
+				who = NAF
+				value = 100
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = achievement_destroyer_of_empires_modifier
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	achievement_gelzani_glory = {
+		major = yes
+		potential = {
+			OR = {
+				AND = {
+					ai = no
+					default_game_settings = yes
+					normal_or_historical_nations = yes
+					normal_province_values = yes
+					#ironman = yes
+					start_date = 212.6.6
+					NOT = { num_of_custom_nations = 1 }
+					OR = {
+						was_tag = PJS
+						was_tag = PLY
+						was_tag = PPX
+						was_tag = PNV
+						was_tag = PHL
+						was_tag = PLM
+						was_tag = PCG
+						was_tag = PTG
+						tag = PJS
+						tag = PLY
+						tag = PPX
+						tag = PNV
+						tag = PHL
+						tag = PLM
+						tag = PCG
+						tag = PTG
+					}
+					government = theocracy
+				}
+				has_country_flag = debug_achievements
+			}
+			NOT = {
+				has_country_modifier = achievement_gelzani_glory_modifier
+			}
+		}
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = tooltipIronmanAch
+				ironman = yes
+			}
+			tag = HLT
+		}
+		effect = {
+			add_country_modifier = {
+				name = achievement_gelzani_glory_modifier
 				duration = -1
 			}
 		}
