@@ -1,11 +1,13 @@
 discovered_by = east_gomic_tech_gr
-discovered_by = north_gomic_tech_gr
+discovered_by = lathvy_tech_gr
 discovered_by = west_gomic_tech_gr
 culture = Mikledonian
 religion = lathvy
 owner = KAP
+is_city = yes
 controller = KAP
 add_core = KAP
+add_core = AEL
 
 ###
 
@@ -16,6 +18,6 @@ base_production = 5
 trade_goods = paper
 base_manpower = 5
 capital = "Aelbitrago"
-is_city = yes
-extra_cost = 1
+ 
+
 

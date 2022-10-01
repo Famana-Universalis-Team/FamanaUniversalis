@@ -1,3 +1,48 @@
+kap_piety_mission = {
+	slot = 4
+	has_country_shield = no
+	
+	generic = no
+	
+	potential = {
+		tag = KAP
+	}
+	kap_pick_a_side = {
+		icon = mission_european_church
+		required_missions = {  } #None
+		position = 1
+		trigger = {
+            religion_group = lathvy_group
+			OR = {
+				piety = 1
+				NOT = {
+					piety = -0.99
+				}
+			}
+        }
+		effect = {
+			if = {
+				limit = {
+					piety = 0
+				}
+				add_stability = 1
+				add_country_modifier = {
+					name = lathvy_good_boy
+					duration = 9125
+				}
+			}
+			else = {
+				add_mil_power = 75
+				add_country_modifier = {
+					name = lathvy_bad_boy
+					duration = 9125
+				}
+			}
+		}
+		#provinces_to_highlight = {
+		#}
+	}
+}
 
 kap_4 = { #kinvirel - jasua region path
 	slot = 4
@@ -20,21 +65,16 @@ kap_4 = { #kinvirel - jasua region path
 					area = unnamed_area_32
 					area = unnamed_area_56
 				}
-				OR = {
-					has_building = fort_15th
-					has_building = fort_16th
-					has_building = fort_17th
-					has_building = fort_18th
-				}
+				has_fort_building_trigger = yes
 			}
 		}
 		effect = {
-			unnamed_area_31 = {
-				add_permanent_claim = ROOT
-			}
 			add_country_modifier = {
 				name = kap_kinvirel_invasion
 				duration = 3650
+			}
+			unnamed_area_31 = {
+				add_permanent_claim = ROOT
 			}
 		}
     }
@@ -55,7 +95,19 @@ kap_4 = { #kinvirel - jasua region path
 			}
 		}
 		effect = {
-			unnamed_area_13 = {
+			if = {
+				limit = {
+					exists = KIN
+				}
+				add_historical_rival = KIN
+				KIN = {
+					add_historical_rival = ROOT
+				}
+			}
+			unnamed_area_31 = {
+				add_devastation = -100
+			}
+			minvir_area = {
 				add_permanent_claim = ROOT
 			}
 			kinvirel_area = {
@@ -73,14 +125,14 @@ kap_4 = { #kinvirel - jasua region path
 		
 		provinces_to_highlight = {
 			OR = {
-				area = unnamed_area_13
+				area = minvir_area
 				area = kinvirel_area
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		
 		trigger = {
-			unnamed_area_13 = {
+			minvir_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -133,18 +185,6 @@ kap_4 = { #kinvirel - jasua region path
 			}
 		}
 		effect = {
-			unnamed_area_11 = {
-				add_permanent_claim = ROOT
-			}
-			unnamed_area_12 = {
-				add_permanent_claim = ROOT
-			}
-			shol_area = {
-				add_permanent_claim = ROOT
-			}
-			mahansha_area = {
-				add_permanent_claim = ROOT
-			}
 			if = {
 				limit = {
 					NOT = {
@@ -157,6 +197,18 @@ kap_4 = { #kinvirel - jasua region path
     				manuever = 5
     				siege = 2
 				}
+			}
+			west_zoblotra_area = {
+				add_permanent_claim = ROOT
+			}
+			east_zoblotra_area = {
+				add_permanent_claim = ROOT
+			}
+			shol_area = {
+				add_permanent_claim = ROOT
+			}
+			mahansha_area = {
+				add_permanent_claim = ROOT
 			}
 		}
     }
@@ -171,64 +223,6 @@ kap_5 = { #kinvirel - jasua region path
 		tag = KAP
 	}
 	has_country_shield = yes
-
-	kap_nafa = {
-		position = 1
-		icon = subiaco_press
-		required_missions = {}
-		provinces_to_highlight = {
-			OR = {
-				area = bohora_area
-				area = kachik_area
-			}
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
-		}
-		
-		trigger = {
-			OR = {
-				exists = NAF
-				AND = {
-					bohora_area = {
-						type = all
-						country_or_non_sovereign_subject_holds = ROOT
-					}
-					kachik_area = {
-						type = all
-						country_or_non_sovereign_subject_holds = ROOT
-					}
-					current_age	= age_of_reformation
-				}
-			}
-		}
-		effect = {
-			country_event = {
-				id = jasuaE.12
-				days = 30
-			}
-			if = {
-				limit = {
-					NOT = {
-						AND = {
-							bohora_area = {
-								type = all
-								country_or_non_sovereign_subject_holds = ROOT
-							}
-							kachik_area = {
-								type = all
-								country_or_non_sovereign_subject_holds = ROOT
-							}
-						}
-					}
-				}
-				bohora_area  = {
-					add_permanent_claim = ROOT
-				}
-				kachik_area  = {
-					add_permanent_claim = ROOT
-				}
-			}
-		}
-	}
 	
 	kap_hartimatul = {
 		position = 4
@@ -242,7 +236,7 @@ kap_5 = { #kinvirel - jasua region path
 		
 		trigger = {
 			5496 = {
-				owned_by = ROOT
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		effect = {
@@ -281,10 +275,11 @@ kap_2 = {
 			owns_core_province = 5503
 		}
 		effect = {
+			custom_tooltip = getIakperkoMercs
+			set_country_flag = iakperko_merc_flag
 			unnamed_area_40 = {
 				add_permanent_claim = ROOT
 			}
-			
 			yatia_area = {
 				add_permanent_claim = ROOT
 			}
@@ -317,6 +312,7 @@ kap_2 = {
         }
 		
 		effect = {
+			add_yearly_manpower = 2.5
 			verko_area = {
 				add_permanent_claim = ROOT
 			}
@@ -361,6 +357,7 @@ kap_2 = {
         }
 		
 		effect = {
+			add_adm_power = 100
 			nakoa_area = {
 				add_permanent_claim = ROOT
 			}
@@ -396,7 +393,7 @@ kap_2 = {
 		
 		effect = {
 			country_event = {
-				id = FlavorKAP.1
+				id = kapolia.1
 			}
 		}
 	}
@@ -429,6 +426,48 @@ kap_1 = {
 		tag = KAP
 	}
 	has_country_shield = yes
+
+	kap_nafa = {
+		position = 1
+		icon = subiaco_press
+		required_missions = {}
+		provinces_to_highlight = {
+			region = stroktur_region
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			OR = {
+				exists = NAF
+				AND = {
+					stroktur_region = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					current_age	= age_of_reformation
+				}
+			}
+		}
+		effect = {
+			country_event = {
+				id = jasua.12
+				days = 30
+			}
+			if = {
+				limit = {
+					NOT = {
+						stroktur_region = {
+							type = all
+							country_or_non_sovereign_subject_holds = ROOT
+						}
+					}
+				}
+				stroktur_region  = {
+					add_permanent_claim = ROOT
+				}
+			}
+		}
+	}
 
 	kap_seize_pasba = {
 		position = 3
@@ -481,15 +520,15 @@ kap_3 = {
 	    }
 	}
 	effect = {
+		add_country_modifier = {
+			name = kap_push_the_frontier
+			duration = 3650
+		}
 		unnamed_area_44 = {
 			add_permanent_claim = ROOT 
 		}
 		unnamed_area_34 = {
 			add_permanent_claim = ROOT
-		}
-		add_country_modifier = {
-			name = kap_push_the_frontier
-			duration = 3650
 		}
     }
 }
@@ -517,10 +556,18 @@ kap_3 = {
         }
 		
 		effect = {
+			define_advisor = {
+				type = commandant
+				skill = 3
+				discount = yes
+				culture = Yabonian
+				religion = lathvy
+				location = 5663
+			}
 			unnamed_area_45 = {
 				add_permanent_claim = ROOT
 			}
-			unnamed_area_39 = {
+			bamal_area = {
 				add_permanent_claim = ROOT
 			}
 		}
@@ -531,7 +578,7 @@ kap_3 = {
 		required_missions = { kap_the_frontier }
 		provinces_to_highlight = {
 			OR = {
-				area = unnamed_area_39
+				area = bamal_area
 				area = unnamed_area_45
 			}	
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
@@ -542,13 +589,17 @@ kap_3 = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 		    }
-			unnamed_area_39 = {
+			bamal_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
         }
 		
 		effect = {
+			add_country_modifier = {
+				name = rule_of_the_bamals
+				duration = -1
+			}
 			unnamed_area_47 = {
 				add_permanent_claim = ROOT
 			}
@@ -560,10 +611,6 @@ kap_3 = {
 			}
 			unnamed_area_35 = {
 				add_permanent_claim = ROOT
-			}
-			add_country_modifier = {
-				name = rule_of_the_bamals
-				duration = -1
 			}
 		}
 	}
@@ -600,6 +647,7 @@ kap_3 = {
 			}
 		}
 		effect = {
+			change_mil = 1
 			unnamed_area_49 = {
 				add_permanent_claim = ROOT
 			}

@@ -196,7 +196,7 @@ urbaxan_rebels = {
 		}
 		if = {
 			limit = {
-				NOT = { religion_group = urbaxan }
+				NOT = { religion_group = Agmagozi }
 			}
 			add_prestige = -50
 			every_owned_province = {

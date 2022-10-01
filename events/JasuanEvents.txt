@@ -1,11 +1,11 @@
 
-namespace = jasuaE
+namespace = jasua
 
 country_event = {
-	id = jasuaE.1
-	title = jasuaE.1.t
+	id = jasua.1
+	title = jasua.1.t
 	picture = FARMING_eventPicture
-	desc = jasuaE.1.d
+	desc = jasua.1.d
 
 	fire_only_once = yes
 	
@@ -13,16 +13,15 @@ country_event = {
 		tag = FAS
 		is_year = 225
 		OR = {
-			FAS = {
-				controls = 5683
+			BLK = {
+				capital_scope = {
+					controlled_by = FAS
+				}
 			}
 			war_score_against = {
 				who = BLK
 				value = 90
 			}
-		}
-		BLK = {
-			owns = 5683 
 		}
 		OR = {
 			5729 = {
@@ -32,6 +31,9 @@ country_event = {
 				is_empty = yes
 			}
 			5627 = {
+				is_empty = yes
+			}
+			5617 = {
 				is_empty = yes
 			}
 		}
@@ -44,13 +46,22 @@ country_event = {
 		hidden_effect = {
 			BLK = {
 				country_event = {
-					id = jasuaE.17
+					id = jasua.17
 					days = 30
 				}
 				set_country_flag = borlebinMigrated
 			}
-			white_peace	= NAK
-			white_peace	= KAP
+			every_country = {
+				limit = {
+					AND = {
+						defensive_war_with = FAS
+					}
+					NOT = {
+						tag = BLK
+					}
+				}
+				white_peace	= FAS
+			}
 		}
 	}
 	
@@ -59,7 +70,7 @@ country_event = {
 	}
 
 	option = {
-		name = jasuaE.1.a
+		name = jasua.1.a
 		ai_chance = { factor = 100 }
 		FAS = {
 			unnamed_area_36 = {
@@ -78,7 +89,7 @@ country_event = {
 				add_core = FAS
 			}
 		}
-		borlebim_area = {
+		borlebin_area = {
 			limit = { 
 				is_empty = yes
 			}
@@ -94,14 +105,22 @@ country_event = {
 		BLK = {
 			override_country_name = Borlebin
 			change_religion = bilik
+			add_historical_friend = NAK
+			add_historical_friend = VAN
+		}
+		VAN = {
+			add_historical_friend = BLK
+		}
+		NAK = {
+			add_historical_friend = BLK
 		}
 	}
 }
 
 country_event = {
-	id = jasuaE.2
-	title = jasuaE.2.t
-	desc = jasuaE.2.d
+	id = jasua.2
+	title = jasua.2.t
+	desc = jasua.2.d
 	picture = REFORM_eventPicture
 	fire_only_once = yes
 
@@ -114,10 +133,15 @@ country_event = {
 		months = 200
 	}
 
-	option = {
-		name = jasuaE.2.a
-		ai_chance = { factor = 12 }
-		ai_chance = { factor = 8 }
+	option = { #Go lathvy
+		name = jasua.2.a
+		ai_chance = {
+			factor = 5
+			modifier = {
+				factor = 2
+				has_matching_religion = lathvy
+			}
+		}
 		add_prestige = 20
 		add_stability = -1
 		add_country_modifier = {
@@ -129,8 +153,9 @@ country_event = {
 			set_country_flag = lathvy_question_flag
 		}
 	}
-	option = {
-		name = jasuaE.2.b
+	option = { #Dont
+		name = jasua.2.b
+		ai_chance = { factor = 2 }
 		hidden_effect = {
 			set_country_flag = lathvy_question_flag
 		}
@@ -139,16 +164,13 @@ country_event = {
 			name = "outdated_heretic"
 			duration = 1825
 		}
-		
-		ai_chance = { factor = 1 }
-		ai_chance = { factor = 2 }
 	}
 }
 
 country_event = {
-	id = jasuaE.3
-	title = jasuaE.3.t
-	desc = jasuaE.3.d
+	id = jasua.3
+	title = jasua.3.t
+	desc = jasua.3.d
 	picture = BORDER_TENSION_eventPicture
 	fire_only_once = yes
 
@@ -161,7 +183,7 @@ country_event = {
 	immediate = {
 	}
 	option = {
-		name = jasuaE.3.a
+		name = jasua.3.a
 		ai_chance = { factor = 8 }
 		add_prestige = -20
 		add_stability = -1
@@ -174,9 +196,9 @@ country_event = {
 
 #stroktur becomes a republic
 country_event = {
-	id = jasuaE.4
-	title = jasuaE.4.t
-	desc = jasuaE.4.d
+	id = jasua.4
+	title = jasua.4.t
+	desc = jasua.4.d
 	picture = REFORM_eventPicture
 	fire_only_once = yes
 
@@ -188,14 +210,15 @@ country_event = {
 		months = 5
 	}
 	option = {
-		name = jasuaE.4.a
+		name = jasua.4.a
 		ai_chance = { factor = 1 }
 		add_prestige = 20
 		change_government = republic
+		add_government_reform = oligarchy_reform
 		set_country_flag = stroktur_republic
 	}
 	option = {
-		name = jasuaE.4.b
+		name = jasua.4.b
 		ai_chance = { factor = 0 }
 		add_prestige = -10
 		add_stability = -1
@@ -204,13 +227,14 @@ country_event = {
 
 #eclipse controller
 country_event = {
-	id = jasuaE.5
+	id = jasua.5
 	hidden = yes
 	fire_only_once = yes
 
 	trigger = {
-		is_year = 291
 		owns = 5493
+		is_year = 291
+		NOT = { is_year = 292 }
 	}
 	
 	mean_time_to_happen = {
@@ -231,10 +255,11 @@ country_event = {
 				}
 			}
 			country_event = {
-				id = jasuaE.6
+				id = jasua.6
 				days = 1
 			}
 		}
+		# KALARGA->NAFA HAS BEEN REMOVED.
 		#First, check if Kalarga exists. Kalarga gets priority for Nafa.
 		KLG = {
 			if = {
@@ -242,7 +267,7 @@ country_event = {
 					exists = yes
 				}
 				country_event = {
-					id = jasuaE.14
+					id = jasua.14
 					days = 1
 				}
 			}
@@ -256,7 +281,7 @@ country_event = {
 					has_country_flag = stroktur_republic
 				}
 				country_event = {
-					id = jasuaE.7
+					id = jasua.7
 					days = 1
 				}
 			}
@@ -269,13 +294,13 @@ country_event = {
 					}
 				}
 				country_event = {
-					id = jasuaE.13
+					id = jasua.13
 					days = 1
 				}
 			}
 			else = {
 				country_event = {
-					id = jasuaE.6
+					id = jasua.6
 					days = 1
 				}
 			}
@@ -288,7 +313,7 @@ country_event = {
 					NOT = { exists = NAF }
 				}
 				country_event = {
-					id = jasuaE.15
+					id = jasua.15
 					days = 1
 				}
 			}
@@ -301,7 +326,7 @@ country_event = {
 					NOT = { exists = NAF }
 				}
 				country_event = {
-					id = jasuaE.15
+					id = jasua.15
 					days = 1
 				}
 			}
@@ -318,7 +343,7 @@ country_event = {
 			5488 = {
 				owner = {
 					country_event = {
-						id = jasuaE.16
+						id = jasua.16
 						days = 1
 					}
 				}
@@ -331,9 +356,9 @@ country_event = {
 
 #eclipse
 country_event = {
-	id = jasuaE.6
-	title = jasuaE.6.t
-	desc = jasuaE.6.d
+	id = jasua.6
+	title = jasua.6.t
+	desc = jasua.6.d
 	picture = ECLIPSE_eventPicture
 	is_triggered_only = yes
 
@@ -341,7 +366,7 @@ country_event = {
 		trigger = {
 			NOT = { religion = mak }
 		}
-		name = jasuaE.6.a
+		name = jasua.6.a
 		ai_chance = { factor = 1 }
 		add_stability = 1
 	}
@@ -349,7 +374,7 @@ country_event = {
 		trigger = {
 			religion = mak
 		}
-		name = jasuaE.6.b
+		name = jasua.6.b
 		ai_chance = { factor = 1 }
 		add_stability = -1
 	}
@@ -357,17 +382,24 @@ country_event = {
 
 #nafa (republic of bohora)
 country_event = {
-	id = jasuaE.7
-	title = jasuaE.7.t
-	desc = jasuaE.7.d
+	id = jasua.7
+	title = jasua.7.t
+	desc = jasua.7.d
 	picture = ECLIPSE_eventPicture
 	is_triggered_only = yes
 	major = yes
 
+	trigger = {
+		NOT = {
+			exists = NAF
+		}
+	}
+
 	option = {
-		name = jasuaE.7.a
-		ai_chance = { factor = 1 }
+		name = jasua.7.a
+		ai_chance = { factor = 15 }
 		change_tag = NAF
+		set_country_flag = getNafanMissions
 		country_event = { id = ideagroups.1 } #Swap Ideas
 		add_stability = 1
 		change_government = monarchy
@@ -381,6 +413,7 @@ country_event = {
 		}
 		add_prestige = 25
 		kill_ruler = yes
+		kill_heir = {}
 		define_ruler = {
 			name = "Syadon I"
 			dynasty = "Noy"
@@ -391,16 +424,16 @@ country_event = {
 			mil = 6
 		}
 		define_ruler_to_general = {
-			fire = 6
+			fire = 5
 			shock = 6
 			manuever = 6
-			siege = 6
+			siege = 5
 		}
+		add_ruler_personality = conqueror_personality
 		if = {
 			limit = {
 				ai = yes
 			}
-			add_ruler_personality = conqueror_personality
 			set_ai_personality = {
 				personality = ai_militarist
 				locked = yes
@@ -419,39 +452,54 @@ country_event = {
 		add_permanent_claim = 5584
 	}
 	option = {
-		name = jasuaE.7.b
-		ai_chance = { factor = 0 }
+		name = jasua.7.b
+		ai_chance = { factor = 1 }
 		add_stability = -2
+		set_country_flag = getStrokturMissions
 	}
 }
 
 #Kinvirel Exiles
 country_event = {
-	id = jasuaE.8
-	title = jasuaE.8.t
-	desc = jasuaE.8.d
-	picture = BORDER_TENSION_eventPicture
-	fire_only_once = yes
-	major = yes
+	id = jasua.8
+	title = jasua.8.t
+	desc = jasua.8.d
+	picture = EUROPEAN_REFUGEES_eventPicture
+	#fire_only_once = yes
+	#major = yes
 	
 	trigger = {
+		capital_scope = {
+			OR = {
+				region = stroktur_region
+				region = east_xalia_region
+				region = moxon_region
+			}
+		}
+		NOT = {
+			has_country_flag = kin_exiles_happened
+		}
+		NOT = {
+			tag = FAS
+		}
 		5196 = {
 			owned_by = FAS
-		}
-		OR = {
-			tag = SKT
-			tag = NAF
 		}
 	}
 
 	mean_time_to_happen = {
-        days = 1
+        months = 1
     }
 
+	immediate = {
+		set_country_flag = kin_exiles_happened
+	}
+
 	option = {
-		name = jasuaE.8.a
+		name = jasua.8.a
 		ai_chance = { factor = 1 }
-		add_manpower = 5
+		#add_manpower = 5
+		add_dip_power = 50
 		add_country_modifier = {
 			name = kinvirel_exiles
 			duration = 3650
@@ -461,9 +509,9 @@ country_event = {
 
 #This event stops fashros from attacking Aresia too early
 country_event = {
-	id = jasuaE.9
-	title = jasuaE.9.t
-	desc = jasuaE.9.d
+	id = jasua.9
+	title = jasua.9.t
+	desc = jasua.9.d
 	picture = BORDER_TENSION_eventPicture
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -473,47 +521,81 @@ country_event = {
     }
 
 	option = {
-		name = jasuaE.9.a
+		name = jasua.9.a
 		ai_chance = { factor = 1 }
 		remove_historical_friend = NAK
 		add_historical_rival = NAK
+		NAK = {
+			remove_historical_friend = BLK
+			add_historical_rival = BLK
+		}
+		add_trust = {
+    		who = NAK
+    		value = -25
+    		mutual = yes
+		}
 		add_country_modifier = {
 			name = bilik_isolation
-			duration = 9000
+			duration = 9125
 		}
 	}
 }
 
 #Kalarga
 country_event = {
-	id = jasuaE.10
-	title = jasuaE.10.t
-	desc = jasuaE.10.d
+	id = jasua.10
+	title = jasua.10.t
+	desc = jasua.10.d
 	picture = REFORM_eventPicture
 	fire_only_once = yes
 	is_triggered_only = yes
 	major = yes
 
 	option = {
-		name = jasuaE.10.a
-		ai_chance = { factor = 1 }
-		every_core_province = {
-			if = {
-				limit = {
-					culture = Bohoran
-					owned_by = ROOT
-				}
-				change_culture = Kachik
+		name = jasua.10.a
+		ai_chance = { factor = 3 }
+		every_owned_province = {
+			limit = {
+				culture = Bohoran
+				is_core = ROOT
 			}
+			change_culture = Kachik
+			remove_core = SKT
+			add_base_tax = -2
+			add_base_production = -2
+			add_base_manpower = -2
+		}
+		add_stability = 1
+	}
+
+	option = {
+		name = jasua.10.b
+		ai_chance = { factor = 5 }
+		add_prestige = 10
+		if = {
+			limit = {
+				any_owned_province = {
+					culture = Bohoran
+				}
+			}
+			add_accepted_culture = Bohoran
+		}
+		if = {
+			limit = {
+				any_owned_province = {
+					culture = Bohoran_E
+				}
+			}
+			add_accepted_culture = Bohoran_E
 		}
 	}
 }
 
 #Nafa-fashros truce
 country_event = {
-	id = jasuaE.11
-	title = jasuaE.11.t
-	desc = jasuaE.11.d
+	id = jasua.11
+	title = jasua.11.t
+	desc = jasua.11.d
 	picture = REFORM_eventPicture
 	fire_only_once = yes
 	hidden = yes
@@ -530,9 +612,15 @@ country_event = {
 		OR = {
 			SKT = {
 				ai = yes
+				NOT = {
+					total_development = 500
+				}
 			}
 			NAF = {
 				ai = yes
+				NOT = {
+					total_development = 500
+				}
 			}
 		}
 		NOT = {
@@ -552,7 +640,7 @@ country_event = {
 	}
 
 	option = {
-		name = jasuaE.11.a
+		name = jasua.11.a
 		ai_chance = { factor = 1 }
 		if = {
 			limit = {
@@ -572,16 +660,16 @@ country_event = {
 
 #Kapolia nafan thing
 country_event = {
-	id = jasuaE.12
-	title = jasuaE.12.t
-	desc = jasuaE.12.d
+	id = jasua.12
+	title = jasua.12.t
+	desc = jasua.12.d
 	picture = POPE_PREACHING_eventPicture
 	fire_only_once = yes
 	is_triggered_only = yes
 
 
 	option = {
-		name = jasuaE.12.b
+		name = jasua.12.a
 		ai_chance = {
 			factor = 2
 		}
@@ -591,7 +679,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = jasuaE.12.a
+		name = jasua.12.b
 		ai_chance = {
 			factor = 1
 			modifier = {
@@ -608,17 +696,24 @@ country_event = {
 
 #nafa (kingdom of bohora)
 country_event = {
-	id = jasuaE.13
-	title = jasuaE.13.t
-	desc = jasuaE.13.d
+	id = jasua.13
+	title = jasua.13.t
+	desc = jasua.13.d
 	picture = ECLIPSE_eventPicture
 	is_triggered_only = yes
 	major = yes
+
+	trigger = {
+		NOT = {
+			exists = NAF
+		}
+	}
 	
 	option = {
-		name = jasuaE.13.a
+		name = jasua.13.a
 		ai_chance = { factor = 1 }
 		change_tag = NAF
+		set_country_flag = getNafanMissions
 		country_event = { id = ideagroups.1 } #Swap Ideas
 		add_stability = 1
 		change_government = monarchy
@@ -632,6 +727,7 @@ country_event = {
 		}
 		add_prestige = 25
 		kill_ruler = yes
+		kill_heir = {}
 		define_ruler = {
 			name = "Syadon I"
 			dynasty = "Noy"
@@ -642,11 +738,12 @@ country_event = {
 			mil = 6
 		}
 		define_ruler_to_general = {
-			fire = 6
+			fire = 5
 			shock = 6
 			manuever = 6
-			siege = 6
+			siege = 5
 		}
+		add_ruler_personality = conqueror_personality
 		if = {
 			limit = {
 				ai = yes
@@ -670,7 +767,7 @@ country_event = {
 		add_permanent_claim = 5584
 	}
 	option = {
-		name = jasuaE.13.b
+		name = jasua.13.b
 		ai_chance = { factor = 0 }
 		add_stability = -2
 		random_owned_province = {
@@ -681,22 +778,35 @@ country_event = {
 				leader_dynasty = "Noy"
 			}
 		}
+		set_country_flag = getStrokturMissions
 	}
 }
 
 #nafa (kalarga)
 country_event = {
-	id = jasuaE.14
-	title = jasuaE.14.t
-	desc = jasuaE.14.d
+	id = jasua.14
+	title = jasua.14.t
+	desc = jasua.14.d
 	picture = ECLIPSE_eventPicture
 	is_triggered_only = yes
 	major = yes
+
+	trigger = {
+		NOT = {
+			exists = NAF
+		}
+	}
 	
 	option = {
-		name = jasuaE.14.a
+		name = jasua.14.a
 		ai_chance = { factor = 1 }
+		trigger = {
+			NOT = {
+				mission_completed = eclipse_the_eclipse
+			}
+		}
 		change_tag = NAF
+		set_country_flag = getNafanMissions
 		country_event = { id = ideagroups.1 } #Swap Ideas
 		add_stability = 1
 		change_government = monarchy
@@ -710,6 +820,7 @@ country_event = {
 		}
 		add_prestige = 25
 		kill_ruler = yes
+		kill_heir = {}
 		define_ruler = {
 			name = "Syadon I"
 			dynasty = "Noy"
@@ -720,11 +831,12 @@ country_event = {
 			mil = 6
 		}
 		define_ruler_to_general = {
-			fire = 6
+			fire = 5
 			shock = 6
 			manuever = 6
-			siege = 6
+			siege = 5
 		}
+		add_ruler_personality = conqueror_personality
 		if = {
 			limit = {
 				ai = yes
@@ -748,7 +860,7 @@ country_event = {
 		add_permanent_claim = 5584
 	}
 	option = {
-		name = jasuaE.14.b
+		name = jasua.14.b
 		ai_chance = { factor = 1 }
 		add_stability = -2
 		random_owned_province = {
@@ -759,22 +871,31 @@ country_event = {
 				leader_dynasty = "Noy"
 			}
 		}
+		#set_country_flag = getKalarganMissions
+		set_country_flag = getKalarganMissionsCounter
 	}
 }
 
 #nafa (yallwaka or rachik)
 country_event = {
-	id = jasuaE.15
-	title = jasuaE.15.t
-	desc = jasuaE.15.d
+	id = jasua.15
+	title = jasua.15.t
+	desc = jasua.15.d
 	picture = ECLIPSE_eventPicture
 	is_triggered_only = yes
 	major = yes
+
+	trigger = {
+		NOT = {
+			exists = NAF
+		}
+	}
 	
 	option = {
-		name = jasuaE.15.a
+		name = jasua.15.a
 		ai_chance = { factor = 1 }
 		change_tag = NAF
+		set_country_flag = getNafanMissions
 		country_event = { id = ideagroups.1 } #Swap Ideas
 		add_stability = 1
 		change_religion = lathvy
@@ -789,6 +910,7 @@ country_event = {
 		}
 		add_prestige = 25
 		kill_ruler = yes
+		kill_heir = {}
 		define_ruler = {
 			name = "Syadon I"
 			dynasty = "Noy"
@@ -799,11 +921,12 @@ country_event = {
 			mil = 6
 		}
 		define_ruler_to_general = {
-			fire = 6
+			fire = 5
 			shock = 6
 			manuever = 6
-			siege = 6
+			siege = 5
 		}
+		add_ruler_personality = conqueror_personality
 		if = {
 			limit = {
 				ai = yes
@@ -825,11 +948,10 @@ country_event = {
 		add_permanent_claim = 5482
 		add_permanent_claim = 5583
 		add_permanent_claim = 5584
-		add_permanent_claim = bohora_area
-		add_permanent_claim = kachik_area
+		add_permanent_claim = stroktur_region
 	}
 	option = {
-		name = jasuaE.15.b
+		name = jasua.15.b
 		ai_chance = { factor = 0 }
 		add_stability = -2
 		random_owned_province = {
@@ -840,14 +962,15 @@ country_event = {
 				leader_dynasty = "Noy"
 			}
 		}
+		set_country_flag = getKalarganMissions
 	}
 }
 
 #nafa (spawn if occupied)
 country_event = {
-	id = jasuaE.16
-	title = jasuaE.16.t
-	desc = jasuaE.16.d
+	id = jasua.16
+	title = jasua.16.t
+	desc = jasua.16.d
 	picture = ECLIPSE_eventPicture
 	is_triggered_only = yes
 	major = yes
@@ -857,14 +980,20 @@ country_event = {
 			kachik_area = {
 				add_core = NAF
 			}
+			leta_area = {
+				add_core = NAF
+			}
 		}
 	}
 	
 	option = {
-		name = jasuaE.16.a
+		name = jasua.16.a
 		ai_chance = { factor = 1 }
 		set_global_flag = NafanRevolt
 		kachik_area = {
+			add_core = NAF
+		}
+		leta_area = {
 			add_core = NAF
 		}
 		5488 = {
@@ -904,15 +1033,15 @@ country_event = {
 
 #Biliku migration
 country_event = {
-	id = jasuaE.17
-	title = jasuaE.17.t
-	desc = jasuaE.17.d
+	id = jasua.17
+	title = jasua.17.t
+	desc = jasua.17.d
 	picture = SMUGGLERS_eventPicture
 	is_triggered_only = yes
 	major = yes
 
 	option = {
-		name = jasuaE.17.a
+		name = jasua.17.a
 		ai_chance = { factor = 1 }
 
 		add_country_modifier = {
@@ -924,9 +1053,9 @@ country_event = {
 }
 
 country_event = { #Anti-Biliku-exploit event
-	id = jasuaE.18
-	title = jasuaE.18.t
-	desc = jasuaE.18.d
+	id = jasua.18
+	title = jasua.18.t
+	desc = jasua.18.d
 	picture = SIEGE_eventPicture
 
 	trigger = {
@@ -945,7 +1074,7 @@ country_event = { #Anti-Biliku-exploit event
 	}
 
 	option = {
-		name = jasuaE.18.a
+		name = jasua.18.a
 		ai_chance = { factor = 1 }
 		if = {
 			limit = {
@@ -961,25 +1090,24 @@ country_event = { #Anti-Biliku-exploit event
 		if = {
 			limit = {
 				any_owned_province = {
-					OR = {
-						is_core = BLK
-					}
-				}
-			}
-			every_owned_province = {
-				limit = {
 					is_core = BLK
 				}
-				cede_province = BLK
 			}
+			release = BLK
+			#every_owned_province = {
+			#	limit = {
+			#		is_core = BLK
+			#	}
+			#	cede_province = BLK
+			#}
 		}
 	}
 }
 
 country_event = { #nafan fashran peace
-	id = jasuaE.19
-	title = jasuaE.19.t
-	desc = jasuaE.19.d
+	id = jasua.19
+	title = jasua.19.t
+	desc = jasua.19.d
 	picture = SIEGE_eventPicture
 	hidden = yes
 
@@ -996,7 +1124,7 @@ country_event = { #nafan fashran peace
 	}
 
 	option = {
-		name = jasuaE.19.a
+		name = jasua.19.a
 		ai_chance = { factor = 1 }
 		if = {
 			limit = {
@@ -1013,66 +1141,9 @@ country_event = { #nafan fashran peace
 	}
 }
 
-country_event = {
-	id = jasuaE.20
-	title = jasuaE.20.t
-	desc = jasuaE.20.d
-	picture = SIEGE_eventPicture
-	hidden = yes
-	fire_only_once = yes
-
-	trigger = {
-		is_year = 225
-		tag = BLK
-		is_subject_of = FAS
-		BLK = {
-			ai = yes
-		}
-		FAS = {
-			ai = yes
-		}
-		NOT = {
-			total_development = 200
-		}
-	}
-
-	immediate = {
-		every_owned_province = {
-			add_core = FAS
-		}
-		FAS = {
-			inherit = BLK
-		}
-		borlebim_area = {
-			limit = { 
-				is_empty = yes
-			}
-			create_colony = 1000
-			cede_province = BLK
-			add_core = BLK
-			change_culture = Bilik_C
-			change_religion = bilik
-			add_base_tax = 1
-			add_base_production = 1
-			add_base_manpower = 1
-		}
-		BLK = {
-			override_country_name = Borlebin
-			change_religion = bilik
-		}
-		BLK = {
-			country_event = {
-				id = jasuaE.17
-				days = 30
-			}
-			set_country_flag = borlebinMigrated
-		}
-	}
-
-
 #nafa (spawn if occupied)
 country_event = {
-	id = jasuaE.21
+	id = jasua.20
 	hidden = yes
 
 	mean_time_to_happen = {
@@ -1082,10 +1153,14 @@ country_event = {
 	trigger = {
 		tag = RCK
 		has_global_flag = NafanRevolt
+		NOT = {
+			exists = NAF
+		}
 	}
 
 	immediate = {
 		change_tag = NAF
+		set_country_flag = getNafanMissions
 		country_event = { id = ideagroups.1 } #Swap Ideas
 		add_stability = 1
 		change_religion = lathvy
@@ -1100,6 +1175,7 @@ country_event = {
 		}
 		add_prestige = 25
 		kill_ruler = yes
+		kill_heir = {}
 		define_ruler = {
 			name = "Syadon I"
 			dynasty = "Noy"
@@ -1110,11 +1186,12 @@ country_event = {
 			mil = 6
 		}
 		define_ruler_to_general = {
-			fire = 6
+			fire = 5
 			shock = 6
 			manuever = 6
-			siege = 6
+			siege = 5
 		}
+		add_ruler_personality = conqueror_personality
 		if = {
 			limit = {
 				ai = yes
@@ -1136,12 +1213,294 @@ country_event = {
 		add_permanent_claim = 5482
 		add_permanent_claim = 5583
 		add_permanent_claim = 5584
-		add_permanent_claim = bohora_area
-		add_permanent_claim = kachik_area
+		add_permanent_claim = stroktur_region
 	}
 
 	option = {
-		name = jasuaE.20.a
+		name = jasua.20.a
 		ai_chance = { factor = 1 }
+		set_country_flag = getKalarganMissions
 	}
+}
+
+country_event = {
+	id = jasua.23
+	title = jasua.23.t
+	desc = jasua.23.d
+	picture = SIEGE_eventPicture
+	hidden = yes
+	fire_only_once = yes
+
+	trigger = {
+		tag = BLK
+		is_year = 225
+		is_subject_of = FAS
+		BLK = {
+			ai = yes
+		}
+		FAS = {
+			ai = yes
+		}
+		NOT = {
+			total_development = 200
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		every_owned_province = {
+			add_core = FAS
+		}
+		FAS = {
+			inherit = BLK
+		}
+		borlebin_area = {
+			limit = { 
+				is_empty = yes
+			}
+			create_colony = 1000
+			cede_province = BLK
+			add_core = BLK
+			change_culture = Bilik_C
+			change_religion = bilik
+			add_base_tax = 1
+			add_base_production = 1
+			add_base_manpower = 1
+		}
+		BLK = {
+			override_country_name = Borlebin
+			change_religion = bilik
+		}
+		BLK = {
+			country_event = {
+				id = jasua.17
+				days = 30
+			}
+			set_country_flag = borlebinMigrated
+		}
+	}
+
+	option = {
+		name = jasua.24.a
+		ai_chance = { factor = 10 }
+	}
+}
+
+country_event = { #Kalargan uprising
+	id = jasua.24
+	title = jasua.24.t
+	desc = jasua.24.d
+	picture = BATTLE_eventPicture
+	fire_only_once = yes
+
+	trigger = {
+		tag = SKT
+		any_owned_province = {
+			culture = Kachik
+		}
+		owns = 5488
+		NOT = {
+			is_year = 285
+		}
+	}
+
+	immediate = {
+		set_country_flag = klgRevoltHappened
+	}
+
+	mean_time_to_happen = {
+		months = 144
+		modifier = {
+			factor = 2.5
+			mission_completed = eclipse_healing_the_rift
+		}
+	}
+
+	option = { #Fight the rebels
+		name = jasua.24.a
+		ai_chance = { factor = 10 }
+		highlight = yes
+		5488 = {
+			spawn_rebels = {
+				size = 1
+				type = nationalist_rebels
+			}
+		}
+		add_stability = -1
+	}
+
+	option = { #Go kalarga
+		name = jasua.24.b
+		ai_chance = { factor = 1 }
+		if = {
+			limit = {
+				AND = {
+					has_custom_ideas = no
+					NOT = {
+						has_idea_group = Kachik_ideas
+					}
+				}
+			}
+			country_event = { id = ideagroups.1 } #Swap Ideas
+		}
+		restore_country_name = yes
+		change_tag = KLG
+		5488 = {
+			move_capital_effect = yes
+		}
+		stroktur_region = {
+			add_core = KLG
+		}
+		if = {
+			limit = {
+				NOT = { government_rank = 2 }
+			}
+			set_government_rank = 2
+		}
+		add_country_modifier = {
+			name = "centralization_modifier"
+			duration = 7300
+		}
+		hidden_effect = {
+			every_owned_province = {
+				remove_core = YLL
+				remove_core = RCK
+			}
+			kill_ruler = yes
+			kill_heir = {}
+			remove_consort = yes
+		}
+		change_primary_culture = Kachik
+		if = {
+			limit = {
+				any_owned_province = {
+					culture = Bohoran
+				}
+			}
+			add_accepted_culture = Bohoran
+		}
+		if = {
+			limit = {
+				any_owned_province = {
+					culture = Bohoran_E
+				}
+			}
+			add_accepted_culture = Bohoran_E
+		}
+		if = {
+			limit = {
+				NOT = { government = monarchy }
+			}
+			change_government = monarchy
+			add_government_reform = autocracy_reform
+		}
+		add_prestige = -50
+		add_legitimacy = -25
+		set_country_flag = getKalarganMissions
+	}
+}
+
+country_event = { #bruh
+	id = jasua.25
+	title = jasua.25.t
+	desc = jasua.25.d
+	picture = BATTLE_eventPicture
+	fire_only_once = yes
+	hidden = yes
+	is_triggered_only = yes
+
+	trigger = {
+		tag = SKT
+        NOT = { is_year = 213 }
+		dynasty = "Noy"
+    }
+
+	immediate = {
+        set_dynasty	= "Manu"
+    }
+
+    option = {
+        name = jasua.25.a
+        ai_chance = { factor = 1 }
+    }
+}
+
+country_event = { #kinvirel helvanists setup
+	id = jasua.26
+	title = jasua.26.t
+	desc = jasua.26.d
+	picture = BATTLE_eventPicture
+	fire_only_once = yes
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		tag = KIN
+        NOT = { is_year = 213 }
+    }
+
+	immediate = {
+		change_statists_vs_orangists = -0.33
+	}
+
+    option = {
+        name = jasua.26.a
+        ai_chance = { factor = 1 }
+    }
+}
+
+country_event = { #kalargan trolled
+	id = jasua.27
+	title = jasua.27.t
+	desc = jasua.27.d
+	picture = BATTLE_eventPicture
+	fire_only_once = yes
+
+	trigger = {
+		tag = KLG
+		government = monarchy
+		has_regency = no
+		has_heir = yes
+		heir_mil = 3
+		OR = {
+			heir_adm = 1
+			heir_dip = 1
+		}
+		is_year = 260
+		NOT = {
+			is_year = 290
+		}
+    }
+
+	mean_time_to_happen = {
+		months = 60
+	}
+
+	immediate = {
+		hidden_effect = {
+			#remove_heir = {}
+			add_manpower = -10
+		}
+	}
+
+    option = {
+        name = jasua.27.a
+        ai_chance = { factor = 1 }
+		add_stability = -1
+		random_owned_province = {
+			limit = {
+				region = stroktur_region
+			}
+			spawn_rebels = {
+    			type = pretender_rebels
+    			size = 3
+				should_take_capital = yes
+				use_heir_as_leader = yes
+				win = yes
+			}
+		}
+    }
 }

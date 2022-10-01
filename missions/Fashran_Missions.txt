@@ -14,9 +14,17 @@ fas_1 = {
 		trigger = {
 			at_war_with_religious_enemy = yes
 			army_size_percentage = 1.0
-			custom_trigger_tooltip = {
-				tooltip = RAISED_TONMO_HORDE_TOOLTIP
-				has_country_flag = tonmo_raised_horde_flag
+			if = {
+				limit = {
+					has_dlc = "Rule Britannia"
+				}
+				custom_trigger_tooltip = {
+					tooltip = RAISED_TONMO_HORDE_TOOLTIP
+					has_country_flag = tonmo_raised_horde_flag
+				}
+			}
+			else = {
+				num_of_cavalry = 80
 			}
 		}
 		effect = {
@@ -42,7 +50,7 @@ fas_1 = {
 					ROOT = {
 						any_owned_province = {
 							AND = {
-								superregion = tonmo_supperregion
+								superregion = nhoma_superregion
 								religion = tonmo
 								unrest = 0
 							}
@@ -75,7 +83,7 @@ fas_1 = {
 			}
 		}
 		provinces_to_highlight = {
-			superregion = tonmo_supperregion
+			superregion = nhoma_superregion
 			religion = tonmo
 		}
 	}
@@ -113,7 +121,7 @@ fas_1 = {
 		trigger = {
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				value = 20
-				region = bamal_gulf_region
+				region = bamali_gulf_region
 			}
 		}
 		effect = {
@@ -121,8 +129,10 @@ fas_1 = {
 			yatia_area = { add_permanent_claim = ROOT }
 			unnamed_area_40 = { add_permanent_claim = ROOT }
 			verko_area = { add_permanent_claim = ROOT }
-			oearan_area = { add_permanent_claim = ROOT }
-			nikat_area = { add_permanent_claim = ROOT }
+			north_nakoa_area = { add_permanent_claim = ROOT }
+			nakoa_area = { add_permanent_claim = ROOT }
+			5524 = { add_permanent_claim = ROOT }
+			5520 = { add_permanent_claim = ROOT }
 			add_country_modifier = {
 				name = fas_ravsho_migrations
 				duration = 9125
@@ -130,7 +140,7 @@ fas_1 = {
 		}
 		provinces_to_highlight = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
-			region = bamal_gulf_region
+			region = bamali_gulf_region
 		}
 	}
 
@@ -154,12 +164,18 @@ fas_1 = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			oearan_area = {
+			north_nakoa_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			nikat_area = {
+			nakoa_area = {
 				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			5524 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			5520 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
@@ -174,8 +190,10 @@ fas_1 = {
 				area = yatia_area
 				area = unnamed_area_40
 				area = verko_area
-				area = oearan_area
-				area = nikat_area
+				area = north_nakoa_area
+				area = nakoa_area
+				province_id = 5520
+				province_id = 5524
 			}
 		}
 	}
@@ -184,11 +202,11 @@ fas_1 = {
 		icon = mission_conquer_novgorod
 		required_missions = {fas_into_aresia}
 		trigger = {
-			nakoa_area = {
+			nikat_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			north_nakoa_area = {
+			oearan_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -206,7 +224,7 @@ fas_1 = {
 			}
 		}
 		effect = {
-			borlebim_area = {
+			borlebin_area = {
 				add_claim = ROOT
 			}
 			add_country_modifier = {
@@ -219,18 +237,21 @@ fas_1 = {
 						alliance_with = VAN
 					}
 				}
-				add_casus_belli = {
-					target = VAN
-					type = cb_vassalize_mission
-					months = 300
+				custom_tooltip = SubjugateVanomaTooltip
+				hidden_effect = {
+					add_casus_belli = {
+						target = VAN
+						type = cb_vassalize_mission
+						months = 300
+					}
 				}
 			}
 		}
 		provinces_to_highlight = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 			OR = {
-				area = nakoa_area
-				area = north_nakoa_area
+				area = nikat_area
+				area = oearan_area
 				area = govrrol_area
 				area = jassine_area
 				area = jiat_area
@@ -273,11 +294,12 @@ fas_1 = {
 		required_missions = {fas_montavas_treasure}
 		trigger = {
 			OR = {
-				owns_all_provinces = {
-					region = vanoma_region
-					NOT = {
-						is_empty = yes
-					}
+				vanoma_region = {
+					type = all
+                	OR = {
+                	    country_or_non_sovereign_subject_holds = ROOT
+                	    is_empty = yes
+                	}
 				}
 				AND = {
 					alliance_with = VAN
@@ -297,9 +319,10 @@ fas_1 = {
 		effect = {
 			if = {
 				limit = {
-					owns_all_provinces = {
-						region = vanoma_region
-						NOT = {
+					vanoma_region = {
+						type = all
+						OR = {
+							owned_by = ROOT
 							is_empty = yes
 						}
 					}
@@ -307,7 +330,10 @@ fas_1 = {
 				add_treasury = 750
 			}
 			else = {
-				create_march = VAN
+				hidden_effect = {
+					create_march = VAN
+				}
+				custom_tooltip = fasMakeVanMarch
 			}
 		}
 		provinces_to_highlight = {
@@ -326,7 +352,7 @@ fas_1 = {
 		trigger = {
 			num_of_owned_provinces_with	= {
 				value = 20
-				superregion	= tonmo_supperregion
+				superregion	= nhoma_superregion
 				development	= 10
 			}
 		}
@@ -387,7 +413,7 @@ fas_1 = {
 		required_missions = {fas_great_cities_of_the_east}
 		trigger = {
 			owns_all_provinces = {
-				superregion = tonmo_supperregion
+				superregion = nhoma_superregion
 				NOT = {
 					is_empty = yes
 				}
@@ -397,7 +423,7 @@ fas_1 = {
 			}
 			num_of_owned_provinces_with = {
     			value = 125
-    			superregion = tonmo_supperregion
+    			superregion = nhoma_superregion
     			religion = tonmo
 			}
 			adm_power = 100
@@ -407,7 +433,7 @@ fas_1 = {
 			hidden_effect = {
 				every_owned_province = {
 					limit = {
-						superregion = tonmo_supperregion
+						superregion = nhoma_superregion
 					}
 					add_province_modifier = {
 						name = fas_local_rule
@@ -419,7 +445,7 @@ fas_1 = {
 		}
 		provinces_to_highlight = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
-				superregion = tonmo_supperregion
+				superregion = nhoma_superregion
 			NOT = {
 				is_empty = yes
 			}
@@ -475,7 +501,7 @@ fas_2 = {
 			}
 		}
 		effect = {
-			bamal_gulf_region = { add_permanent_claim = ROOT }
+			bamali_gulf_region = { add_permanent_claim = ROOT }
 			add_ruler_modifier = {
 				name = fas_horde_arrives
 				duration = -1
@@ -500,6 +526,9 @@ fas_2 = {
 			}
 		}
 		effect = {
+			yabonia_area = { add_permanent_claim = ROOT }
+			unnamed_area_47 = { add_permanent_claim = ROOT }
+			unnamed_area_34 = { add_permanent_claim = ROOT }
 			5644 = {
 				add_devastation	= 100
 				add_base_tax = -2
@@ -507,9 +536,6 @@ fas_2 = {
 				add_base_manpower = -2
 			}
 			add_years_of_income	= 0.5
-			yabonia_area = { add_permanent_claim = ROOT }
-			unnamed_area_47 = { add_permanent_claim = ROOT }
-			unnamed_area_34 = { add_permanent_claim = ROOT }
 		}
 		provinces_to_highlight = {
 			province_id = 5644
@@ -520,17 +546,37 @@ fas_2 = {
 		icon = take_the_littoral
 		required_missions = {fas_raid_jimkalin fas_conquer_bamal}
 		trigger = {
-			yabonia_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+			if = {
+				limit = {
+					ai = no
+				}
+				yabonia_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				unnamed_area_47 = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				unnamed_area_34 = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
 			}
-			unnamed_area_47 = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			unnamed_area_34 = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+			if = {
+				limit = {
+					ai = yes
+				}
+				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+					value = 10
+					region = jasua_region
+				}
+				OR = {
+					owns_core_province = 5644
+					NOT = {
+						exists = YAB
+					}
+				}
 			}
 		}
 		effect = {
@@ -552,6 +598,13 @@ fas_2 = {
             	}
 			}
 			custom_tooltip = FAS_ECO_TOOLTIP
+			add_country_modifier = {
+				name = fas_more_cav
+				duration = -1
+			}
+			country_event = {
+				id = fashros.20
+			}
 		}
 		provinces_to_highlight = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
@@ -568,31 +621,32 @@ fas_2 = {
 		required_missions = {fas_pillage_kinvirel}
 		position = 9
 		trigger = {
-			owns_all_provinces = {
-				region = eastern_desert_region
-				NOT = {
-					is_empty = yes
-				}
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 25
+				region = hoxoi_coast_region
 			}
 		}
 		effect = {
 			change_mil = 1
-			hidden_effect = {
-                set_country_flag = fas_bold_fighter_chance
-            }
+			#hidden_effect = {
+            #    set_country_flag = fas_bold_fighter_chance
+            #}
             custom_tooltip = fas_bold_fighter_personality
 			south_xalia_region = { add_permanent_claim = ROOT }
-			moria_region = { add_permanent_claim = ROOT }
+			west_xalia_region = { add_permanent_claim = ROOT }
 			east_xalia_region = { add_permanent_claim = ROOT }
 			north_xalia_region = { add_permanent_claim = ROOT }
 			moxon_region = { add_permanent_claim = ROOT }
 			ga_xal_superregion = {
 				discover_country = FAS
 			}
+			country_event = {
+				id = fashros.21
+			}
 		}
 		provinces_to_highlight = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
-			region = eastern_desert_region
+			region = hoxoi_coast_region
 			NOT = {
 				is_empty = yes
 			}
@@ -723,7 +777,7 @@ fas_3 = {
 			jasua_region = {
 				discover_country = ROOT
 			}
-			bamal_gulf_region = {
+			bamali_gulf_region = {
 				discover_country = ROOT
 			}
 			aresia_region = {
@@ -732,7 +786,10 @@ fas_3 = {
 			kapolia_region = {
 				discover_country = ROOT
 			}
-			eastern_desert_region = {
+			stroktur_region = {
+				discover_country = ROOT
+			}
+			hoxoi_coast_region = {
 				discover_country = ROOT
 			}
 			nozumol_region = {
@@ -781,10 +838,21 @@ fas_3 = {
 			}
 		}
 		effect = {
+			if = {
+                limit = {
+                    NOT = {
+                        5683 = {
+                            province_has_center_of_trade_of_level = 3
+                        }
+                    }
+                }
+                5683 = {
+                    add_center_of_trade_level = 1
+                }
+            }
 			5683 = {
-				add_center_of_trade_level = 1
 				add_unit_construction = {
-    			type = light_ship
+    				type = light_ship
     				amount = 10
     				speed = 0.1
     				cost = 0
@@ -801,28 +869,52 @@ fas_3 = {
 		required_missions = {fas_defeat_yabonia}
 		position = 8
 		trigger = {
-			kinvirel_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			unnamed_area_31 = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			unnamed_area_13 = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+			OR = {
+				AND = {
+					kinvirel_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					unnamed_area_31 = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					minvir_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+				}
+				AND = {
+					NOT = {
+						exists = KIN
+					}
+					owns_core_province = 5196
+				}
 			}
 		}
 		effect = {
-			add_prestige = 25
-			eastern_desert_region = {
+			add_prestige_or_monarch_power = {
+				amount = 25
+			}
+			hoxoi_coast_region = {
 				add_permanent_claim = ROOT
 			}
 			kapolia_region = {
 				add_permanent_claim = ROOT
 			}
+			stroktur_region = {
+				add_permanent_claim = ROOT
+			}
 			east_gomic = {
+				discover_country = FAS
+			}
+			5003 = {
+				discover_country = FAS
+			}
+			5004 = {
+				discover_country = FAS
+			}
+			5005 = {
 				discover_country = FAS
 			}
 			add_country_modifier = {
@@ -844,7 +936,7 @@ fas_3 = {
 			OR = {
 				area = kinvirel_area
 				area = unnamed_area_31
-				area = unnamed_area_13
+				area = minvir_area
 			}
 		}
 	}
@@ -859,7 +951,7 @@ fas_3 = {
 		effect = {
 			define_advisor = {
 				type = philosopher
-				skill = 2
+				skill = 3
 				discount = yes
 				culture = Tyman
 				religion = Tonmo
@@ -997,7 +1089,7 @@ fas_4 = {
 				}
 			}
 			else = {
-				navy_tradition = 40
+				navy_tradition = 30
 			}
 			num_of_galley = 15
 		}
@@ -1105,8 +1197,15 @@ fas_4 = {
 				region = kapolia_region
 			}
 			owns_core_province = 5481
-			NOT = {
-				exists = KAP
+			if = {
+				limit = {
+					ai = no
+				}
+				AND = {
+					NOT = {
+						exists = KAP
+					}
+				}
 			}
 		}
 		effect = {
@@ -1116,9 +1215,15 @@ fas_4 = {
 			}
 			emastalia_region = {
 				add_claim = ROOT
+				discover_country = ROOT
 			}
 			west_emastalia_region = {
 				add_claim = ROOT
+				discover_country = ROOT
+			}
+			stroktur_region = {
+				add_claim = ROOT
+				discover_country = ROOT
 			}
 		}
 		provinces_to_highlight = {
@@ -1132,17 +1237,26 @@ fas_4 = {
 		required_missions = {fas_crush_kapolia}
 		position = 11
 		trigger = {
-			owns_all_provinces = {
-				region = emastalia_region
-				NOT = {
-					is_empty = yes
-				}
+			emastalia_region = {
+				type = all
+                OR = {
+                    country_or_non_sovereign_subject_holds = ROOT
+                    is_empty = yes
+                }
 			}
-			owns_all_provinces = {
-				region = west_emastalia_region
-				NOT = {
-					is_empty = yes
-				}
+			west_emastalia_region = {
+				type = all
+                OR = {
+                    country_or_non_sovereign_subject_holds = ROOT
+                    is_empty = yes
+                }
+			}
+			stroktur_region = {
+				type = all
+                OR = {
+                    country_or_non_sovereign_subject_holds = ROOT
+                    is_empty = yes
+                }
 			}
 		}
 		effect = {
@@ -1157,6 +1271,7 @@ fas_4 = {
 				OR = {
 					region = emastalia_region
 					region = west_emastalia_region
+					region = stroktur_region
 				}
 				NOT = {
 					is_empty = yes
@@ -1293,21 +1408,13 @@ fas_5 = {
 		trigger = {
 			owns_all_provinces = {
 				OR = {
-					region = bamal_gulf_region
+					region = bamali_gulf_region
 					region = jasua_region
-					region = eastern_desert_region
+					region = hoxoi_coast_region
 					area = pasba_area
 					area = yatia_area
 					area = unnamed_area_40
-					AND = {
-						region = kapolia_region
-						NOT = {
-							OR = {
-								area = bohora_area
-								area = kachik_area
-							}
-						}
-					}
+					region = kapolia_region
 				}
 				NOT = {
 					is_empty = yes
@@ -1338,21 +1445,13 @@ fas_5 = {
 		provinces_to_highlight = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 			OR = {
-				region = bamal_gulf_region
+				region = bamali_gulf_region
 				region = jasua_region
-				region = eastern_desert_region
+				region = hoxoi_coast_region
 				area = pasba_area
 				area = yatia_area
 				area = unnamed_area_40
-				AND = {
-					region = kapolia_region
-					NOT = {
-						OR = {
-							area = bohora_area
-							area = kachik_area
-						}
-					}
-				}
+				region = kapolia_region
 			}
 			NOT = {
 				is_empty = yes

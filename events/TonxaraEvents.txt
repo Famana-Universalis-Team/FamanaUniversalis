@@ -10,6 +10,9 @@ country_event = { #nhoma
 
     trigger = {
         tag = NHM
+        NOT = {
+            has_country_flag = nhomaFormed
+        }
     }
     option = {
         name = tonxara.1.a
@@ -47,6 +50,9 @@ country_event = { #kisholi
 
     trigger = {
         tag = KSL
+        NOT = {
+            has_country_flag = formedKisholiDecision
+        }
     }
     option = {
         name = tonxara.2.a
@@ -155,16 +161,14 @@ country_event = { #Rise of Nafa
     title = tonxara.5.t
     picture = COUNTRY_COLLAPSE_eventPicture
     desc = tonxara.5.d
+    fire_only_once = yes
 
     mean_time_to_happen = {
         days = 1
     }
 
     trigger = {
-        OR = {
-            tag = KSL
-            tag = NHM #theres a bug where nhoma gets emastalia
-        }
+        tag = KSL
         NOT = { has_country_flag = Nafa_Unleashed }
         any_owned_province = {
             is_core = NAF
@@ -223,7 +227,13 @@ country_event = { #disaster start event
 
     option = {
         name = tonxara.6.a
-        ai_chance = { factor = 1 }
+        ai_chance = {
+            factor = 6
+            modifier = {
+                factor = 0
+                has_global_flag = TonxaraDies
+            }
+        }
         custom_tooltip = tonxara_disaster_fight_tt
         add_stability = -5
         add_legitimacy = -15
@@ -246,8 +256,14 @@ country_event = { #disaster start event
     }
     option = { #Kill your country and play a releasable
         name = tonxara.6.b
-        ai_chance = { factor = 0 }
-        custom_tooltip = tonxara_you_should_release_yourself_NOW_tooltip
+        ai_chance = {
+            factor = 1
+            modifier = {
+                factor = 0
+                has_global_flag = TonxaraFight
+            }
+        }
+        custom_tooltip = tonxara_you_should_release_yourself_NOW_tooltip #lmao
         hidden_effect = {
             country_event = {
                 id = tonxara.9 #Event that lets you pick releasable, alternatively lets you go back.
@@ -270,6 +286,9 @@ country_event = { #Koff
     trigger = {
         tag = NHM
         NOT = {
+            has_country_flag = nhomaFormed
+        }
+        NOT = {
             exists = KFF
         }
     }
@@ -282,7 +301,7 @@ country_event = { #Koff
                 add_base_manpower = 1
             }
             KFF = {
-                change_religion	= tonmo
+                #change_religion = tonmo
                 create_general = {
                     tradition = 100
                 }
@@ -339,7 +358,7 @@ country_event = { #tonxara.9, this event will let you pick your new country or g
 
     option = {
         name = tonxara.9.a
-        ai_chance = { factor = 1 }
+        ai_chance = { factor = 0 }
         highlight = yes
         country_event = {
             id = tonxara.6 #Go back
@@ -348,7 +367,7 @@ country_event = { #tonxara.9, this event will let you pick your new country or g
 
     option = { #Fisbiklu
         name = tonxara.9.b
-        ai_chance = { factor = 0 }
+        ai_chance = { factor = 1 }
 
         trigger = {
             any_owned_province = {
@@ -435,7 +454,7 @@ country_event = { #tonxara.9, this event will let you pick your new country or g
 
     option = { #Amaxras
         name = tonxara.9.c
-        ai_chance = { factor = 0 }
+        ai_chance = { factor = 1 }
 
         trigger = {
             any_owned_province = {
@@ -522,7 +541,7 @@ country_event = { #tonxara.9, this event will let you pick your new country or g
 
     option = { #Degzool
         name = tonxara.9.d
-        ai_chance = { factor = 0 }
+        ai_chance = { factor = 1 }
 
         trigger = {
             any_owned_province = {
@@ -609,7 +628,7 @@ country_event = { #tonxara.9, this event will let you pick your new country or g
 
     option = { #Legenia
         name = tonxara.9.e
-        ai_chance = { factor = 0 }
+        ai_chance = { factor = 1 }
 
         trigger = {
             any_owned_province = {
@@ -696,7 +715,7 @@ country_event = { #tonxara.9, this event will let you pick your new country or g
 
     option = { #Gatria
         name = tonxara.9.f
-        ai_chance = { factor = 0 }
+        ai_chance = { factor = 1 }
 
         trigger = {
             any_owned_province = {
@@ -783,7 +802,7 @@ country_event = { #tonxara.9, this event will let you pick your new country or g
 
     option = { #Zablata
         name = tonxara.9.g
-        ai_chance = { factor = 0 }
+        ai_chance = { factor = 1 }
 
         trigger = {
             any_owned_province = {
@@ -870,7 +889,7 @@ country_event = { #tonxara.9, this event will let you pick your new country or g
 
     option = { #Jimkalin
         name = tonxara.9.h
-        ai_chance = { factor = 0 }
+        ai_chance = { factor = 1 }
 
         trigger = {
             any_owned_province = {
@@ -957,7 +976,7 @@ country_event = { #tonxara.9, this event will let you pick your new country or g
 
     option = { #Ufela
         name = tonxara.9.i
-        ai_chance = { factor = 0 }
+        ai_chance = { factor = 1 }
 
         trigger = {
             any_owned_province = {
@@ -1042,9 +1061,183 @@ country_event = { #tonxara.9, this event will let you pick your new country or g
         }
     }
 
+    option = { #Edesul
+        name = tonxara.9.ed
+        ai_chance = { factor = 1 }
+
+        trigger = {
+            any_owned_province = {
+                is_core	= EDS
+            }
+            NOT = {
+                exists = EDS
+            }
+        }
+
+        hidden_effect = {
+            ROOT = {
+                country_event = {
+                    id = tonxara.10 #you should kill yourself NOW!
+                    days = 1
+                }
+                release_all_subjects = yes
+            }
+            every_province = {
+                remove_core = ROOT
+            }
+        }
+
+        release = EDS
+        switch_tag = EDS
+
+        hidden_effect = {
+            EDS = {
+                set_country_flag = givenBonusTonmo
+                capital_scope = {
+                    ROOT = {
+                        infantry = PREV
+                        infantry = PREV
+                        infantry = PREV
+                        cavalry = PREV
+                        cavalry = PREV
+                    }
+                }
+                add_adm_power = 100
+                add_dip_power = 100
+                add_mil_power = 100
+                add_manpower = 5
+            }
+            if = {
+                limit = {
+                    EDS = {
+                        total_development = 100
+                    }
+                }
+                EDS = {
+                    capital_scope = {
+                        ROOT = {
+                            infantry = PREV
+                            infantry = PREV
+                            infantry = PREV
+                            cavalry = PREV
+                            cavalry = PREV
+                        }
+                    }
+                    add_manpower = 5
+                }
+            }
+            if = {
+                limit = {
+                    EDS = {
+                        total_development = 150
+                    }
+                }
+                EDS = {
+                    capital_scope = {
+                        ROOT = {
+                            infantry = PREV
+                            infantry = PREV
+                            infantry = PREV
+                            cavalry = PREV
+                            cavalry = PREV
+                        }
+                    }
+                    add_manpower = 5
+                }
+            }
+        }
+    }
+
+    option = { #Yati
+        name = tonxara.9.yt
+        ai_chance = { factor = 1 }
+
+        trigger = {
+            any_owned_province = {
+                is_core	= YIT
+            }
+            NOT = {
+                exists = YIT
+            }
+        }
+
+        hidden_effect = {
+            ROOT = {
+                country_event = {
+                    id = tonxara.10 #you should kill yourself NOW!
+                    days = 1
+                }
+                release_all_subjects = yes
+            }
+            every_province = {
+                remove_core = ROOT
+            }
+        }
+
+        release = YIT
+        switch_tag = YIT
+
+        hidden_effect = {
+            YIT = {
+                set_country_flag = givenBonusTonmo
+                capital_scope = {
+                    ROOT = {
+                        infantry = PREV
+                        infantry = PREV
+                        infantry = PREV
+                        cavalry = PREV
+                        cavalry = PREV
+                    }
+                }
+                add_adm_power = 100
+                add_dip_power = 100
+                add_mil_power = 100
+                add_manpower = 5
+            }
+            if = {
+                limit = {
+                    YIT = {
+                        total_development = 100
+                    }
+                }
+                YIT = {
+                    capital_scope = {
+                        ROOT = {
+                            infantry = PREV
+                            infantry = PREV
+                            infantry = PREV
+                            cavalry = PREV
+                            cavalry = PREV
+                        }
+                    }
+                    add_manpower = 5
+                }
+            }
+            if = {
+                limit = {
+                    YIT = {
+                        total_development = 150
+                    }
+                }
+                YIT = {
+                    capital_scope = {
+                        ROOT = {
+                            infantry = PREV
+                            infantry = PREV
+                            infantry = PREV
+                            cavalry = PREV
+                            cavalry = PREV
+                        }
+                    }
+                    add_manpower = 5
+                }
+            }
+        }
+    }
+
     option = { #Rumay
         name = tonxara.9.j
-        ai_chance = { factor = 0 }
+        ai_chance = { factor = 1 }
 
         trigger = {
             any_owned_province = {
@@ -1131,7 +1324,7 @@ country_event = { #tonxara.9, this event will let you pick your new country or g
 
     option = { #Miwle
         name = tonxara.9.k
-        ai_chance = { factor = 0 }
+        ai_chance = { factor = 1 }
 
         trigger = {
             any_owned_province = {
@@ -1218,7 +1411,7 @@ country_event = { #tonxara.9, this event will let you pick your new country or g
 
     option = { #Va Emtik
         name = tonxara.9.l
-        ai_chance = { factor = 0 }
+        ai_chance = { factor = 1 }
 
         trigger = {
             any_owned_province = {
@@ -1305,7 +1498,7 @@ country_event = { #tonxara.9, this event will let you pick your new country or g
 
     option = { #Igam
         name = tonxara.9.m
-        ai_chance = { factor = 0 }
+        ai_chance = { factor = 1 }
 
         trigger = {
             any_owned_province = {
@@ -1392,7 +1585,7 @@ country_event = { #tonxara.9, this event will let you pick your new country or g
 
     option = { #Ovmaz
         name = tonxara.9.n
-        ai_chance = { factor = 0 }
+        ai_chance = { factor = 1 }
 
         trigger = {
             any_owned_province = {
@@ -1479,7 +1672,7 @@ country_event = { #tonxara.9, this event will let you pick your new country or g
 
     option = { #Koff
         name = tonxara.9.o
-        ai_chance = { factor = 0 }
+        ai_chance = { factor = 1 }
 
         trigger = {
             any_owned_province = {
@@ -1566,7 +1759,7 @@ country_event = { #tonxara.9, this event will let you pick your new country or g
 
     option = { #Lamyr
         name = tonxara.9.q
-        ai_chance = { factor = 0 }
+        ai_chance = { factor = 1 }
 
         trigger = {
             any_owned_province = {
@@ -1653,7 +1846,7 @@ country_event = { #tonxara.9, this event will let you pick your new country or g
 
     option = { #Zormia
         name = tonxara.9.r
-        ai_chance = { factor = 0 }
+        ai_chance = { factor = 1 }
 
         trigger = {
             any_owned_province = {
@@ -1740,7 +1933,7 @@ country_event = { #tonxara.9, this event will let you pick your new country or g
 
     option = { #Anmoea
         name = tonxara.9.s
-        ai_chance = { factor = 0 }
+        ai_chance = { factor = 1 }
 
         trigger = {
             any_owned_province = {
@@ -1827,7 +2020,7 @@ country_event = { #tonxara.9, this event will let you pick your new country or g
 
     option = { #Atrampefa
         name = tonxara.9.t
-        ai_chance = { factor = 0 }
+        ai_chance = { factor = 1 }
 
         trigger = {
             any_owned_province = {
@@ -1914,7 +2107,7 @@ country_event = { #tonxara.9, this event will let you pick your new country or g
 
     option = { #Selka
         name = tonxara.9.u
-        ai_chance = { factor = 0 }
+        ai_chance = { factor = 1 }
 
         trigger = {
             any_owned_province = {
@@ -2001,7 +2194,7 @@ country_event = { #tonxara.9, this event will let you pick your new country or g
 
     option = { #Tyma
         name = tonxara.9.v
-        ai_chance = { factor = 0 }
+        ai_chance = { factor = 1 }
 
         trigger = {
             any_owned_province = {
@@ -2088,7 +2281,7 @@ country_event = { #tonxara.9, this event will let you pick your new country or g
 
     option = { #Fuka Bastrania
         name = tonxara.9.w
-        ai_chance = { factor = 0 }
+        ai_chance = { factor = 1 }
 
         trigger = {
             any_owned_province = {
@@ -2175,7 +2368,7 @@ country_event = { #tonxara.9, this event will let you pick your new country or g
 
     option = { #Jimbalak
         name = tonxara.9.x
-        ai_chance = { factor = 0 }
+        ai_chance = { factor = 1 }
 
         trigger = {
             any_owned_province = {
@@ -2262,7 +2455,7 @@ country_event = { #tonxara.9, this event will let you pick your new country or g
 
     option = { #Bastrania
         name = tonxara.9.y
-        ai_chance = { factor = 0 }
+        ai_chance = { factor = 1 }
 
         trigger = {
             any_owned_province = {
@@ -2349,7 +2542,7 @@ country_event = { #tonxara.9, this event will let you pick your new country or g
 
     option = { #Khim
         name = tonxara.9.z
-        ai_chance = { factor = 0 }
+        ai_chance = { factor = 1 }
 
         trigger = {
             any_owned_province = {
@@ -2436,7 +2629,7 @@ country_event = { #tonxara.9, this event will let you pick your new country or g
 
     option = { #Hoxoi
         name = tonxara.9.za
-        ai_chance = { factor = 0 }
+        ai_chance = { factor = 1 }
 
         trigger = {
             any_owned_province = {
@@ -2523,7 +2716,7 @@ country_event = { #tonxara.9, this event will let you pick your new country or g
 
     option = { #Kel
         name = tonxara.9.zb
-        ai_chance = { factor = 0 }
+        ai_chance = { factor = 1 }
 
         trigger = {
             any_owned_province = {
@@ -2610,7 +2803,7 @@ country_event = { #tonxara.9, this event will let you pick your new country or g
 
     option = { #Yarfoo
         name = tonxara.9.zc
-        ai_chance = { factor = 0 }
+        ai_chance = { factor = 1 }
 
         trigger = {
             any_owned_province = {
@@ -2697,7 +2890,7 @@ country_event = { #tonxara.9, this event will let you pick your new country or g
 
     option = { #Semoea
         name = tonxara.9.zd
-        ai_chance = { factor = 0 }
+        ai_chance = { factor = 1 }
 
         trigger = {
             any_owned_province = {
@@ -2784,7 +2977,7 @@ country_event = { #tonxara.9, this event will let you pick your new country or g
 
     option = { #Bluec
         name = tonxara.9.ze
-        ai_chance = { factor = 0 }
+        ai_chance = { factor = 1 }
 
         trigger = {
             any_owned_province = {
@@ -2871,7 +3064,7 @@ country_event = { #tonxara.9, this event will let you pick your new country or g
 
     option = { #Ipak
         name = tonxara.9.zf
-        ai_chance = { factor = 0 }
+        ai_chance = { factor = 1 }
 
         trigger = {
             any_owned_province = {
@@ -2958,7 +3151,7 @@ country_event = { #tonxara.9, this event will let you pick your new country or g
 
     option = { #Merkomm
         name = tonxara.9.zg
-        ai_chance = { factor = 0 }
+        ai_chance = { factor = 1 }
 
         trigger = {
             any_owned_province = {
@@ -3078,6 +3271,16 @@ country_event = { #kill tonxara
         release = BAS #
         release = KMI #
         release = HOX #
+        release = EDS #
+        release = YIT #
+        release = LCT #
+        release = NIK #
+        release = OER #
+        release = MOY #
+        release = SZI #
+        release = NAK #
+        release = BLK #
+        release = VAN #
         ################## releasables (these can also be played)
         #release = KLL #
         #release = YBM #
@@ -3132,6 +3335,11 @@ country_event = { #kill tonxara
             }
         }
     }
+
+    option = {
+        name = troll
+        ai_chance = { factor = 1 }
+    }
 }
 
 country_event = { #Bonus for others
@@ -3146,13 +3354,6 @@ country_event = { #Bonus for others
     }
 
     trigger = {
-        NOT = {
-            is_year = 360
-        }
-        NOT = {
-            has_country_flag = givenBonusTonmo
-        }
-        ai = yes
         OR = {
             tag = FSB 
             tag = AMX 
@@ -3185,7 +3386,17 @@ country_event = { #Bonus for others
             tag = BLU 
             tag = IPK 
             tag = MMM 
+            tag = EDS
+            tag = YIT
         }
+        is_year = 320
+        NOT = {
+            is_year = 360
+        }
+        NOT = {
+            has_country_flag = givenBonusTonmo
+        }
+        ai = yes
     }
 
     immediate = {
@@ -3263,6 +3474,9 @@ country_event = {
 
     trigger = {
         tag = NHM
+        NOT = {
+            has_country_flag = nhomaFormed
+        }
         is_year = 330
         NOT = {
             has_country_flag = removedTonxaraGov
@@ -3283,14 +3497,14 @@ country_event = {
 
     option = { #Give up tonxara
         name = tonxara.12.a
-        ai_chance = { factor = 3 }
+        ai_chance = { factor = 1 }
         remove_government_reform = gov_tonxara
         add_government_reform = autocracy_reform
     }
 
     option = { #Keep tonxara
         name = tonxara.12.b
-        ai_chance = { factor = 1 }
+        ai_chance = { factor = 3 }
         add_legitimacy = -25
         add_ruler_modifier = {
             name = nhm_fake_tonxara
@@ -3499,11 +3713,14 @@ country_event = {
     hidden = yes
 
     trigger = {
+        OR = {
+            tag = NHM
+            tag = JFX
+            tag = KSL
+            tag = HOY
+        }
         NOT = {
-            num_of_owned_provinces_with	= {
-                value = 15
-                is_core = ROOT
-            }
+            num_of_cities = 15
         }
         has_disaster = tonxara_disaster
     }
@@ -3534,6 +3751,16 @@ country_event = {
         release = BAS #
         release = KMI #
         release = HOX #
+        release = EDS #
+        release = YIT #
+        release = LCT #
+        release = NIK #
+        release = OER #
+        release = MOY #
+        release = SZI #
+        release = NAK #
+        release = BLK #
+        release = VAN # 
         ################## releasables (these can also be played)
         #release = KLL #
         #release = YBM #
@@ -3669,9 +3896,18 @@ country_event = { #nhoma death
         tag = NHM
         ai = yes
         NOT = {
-            num_of_owned_provinces_with	= {
-                value = 50
-                superregion = tonmo_supperregion
+            has_country_flag = nhomaFormed
+        }
+        OR = {
+            NOT = {
+                num_of_owned_provinces_with	= {
+                    value = 100
+                    superregion = nhoma_superregion
+                }
+            }
+            had_country_flag = {
+                flag = tonxaraDisasterHappened
+                days = 7300
             }
         }
     }
@@ -3687,6 +3923,165 @@ country_event = { #nhoma death
 
     option = {
         name = tonxara.19.a
+        ai_chance = { factor = 1 }
+    }
+}
+
+country_event = { #kisholi death
+    id = tonxara.20
+    title = tonxara.20.t
+    picture = WAR_OF_THE_ROSES_eventPicture
+    desc = tonxara.20.d
+    hidden = yes
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        months = 1
+    }
+
+    trigger = {
+        tag = KSL
+        ai = yes
+        NOT = {
+            num_of_owned_provinces_with	= {
+                value = 15
+                superregion = jasua_superregion
+            }
+        }
+    }
+
+    immediate = {
+        country_event = {
+            id = tonxara.10
+        }
+        every_province = {
+            remove_core = KSL
+        }
+    }
+
+    option = {
+        name = tonxara.20.a
+        ai_chance = { factor = 1 }
+    }
+}
+
+country_event = { #Religious Falling Out
+    id = tonxara.21
+    title = tonxara.21.t
+    picture = PROTESTANT_CATHOLIC_DEBATE_eventPicture
+    desc = tonxara.21.d
+    fire_only_once = yes
+
+    trigger = {
+        has_dlc = "Cradle of Civilisation"
+        has_global_flag = TonmoGoldenAge
+        FAS = { exists = no }
+        religion = tonmo
+        capital_scope = {
+            superregion = jasua_superregion
+        }
+    }
+
+    mean_time_to_happen = {
+        years = 5
+    }
+
+    immediate = {
+    }
+
+    option = {
+        name = tonxara.21.a
+        ai_chance = { factor = 1 }
+        custom_tooltip = TONMO_SCHOOLS_SCHISM
+        hidden_effect = {
+            random_country = { #Tribal is hated by Liturgical
+                limit = {
+                    religious_school = {
+                        group = tonmo_group
+                        school = tribal_school
+                    }
+                }
+                random_country = {
+                    limit = {
+                        religious_school = {
+                            group = tonmo_group
+                            school = liturgical_school
+                        }
+                    }
+                    set_school_opinion = {
+                        who = PREV
+                        opinion = -1
+                    }
+                }
+            }
+            random_country = { #Tribal is hated by Evangelical
+                limit = {
+                    religious_school = {
+                        group = tonmo_group
+                        school = tribal_school
+                    }
+                }
+                random_country = {
+                    limit = {
+                        religious_school = {
+                            group = tonmo_group
+                            school = evangelical_school
+                        }
+                    }
+                    set_school_opinion = {
+                        who = PREV
+                        opinion = -1
+                    }
+                }
+            }
+            random_country = { #Evangelical is liked by Liturgical
+                limit = {
+                    religious_school = {
+                        group = tonmo_group
+                        school = evangelical_school
+                    }
+                }
+                random_country = {
+                    limit = {
+                        religious_school = {
+                            group = tonmo_group
+                            school = liturgical_school
+                        }
+                    }
+                    set_school_opinion = {
+                        who = PREV
+                        opinion = 1
+                    }
+                }
+            }
+        }
+    }
+}
+
+country_event = { #noreligion fix
+    id = tonxara.22
+    hidden = yes
+
+    trigger = {
+        religion = noreligion
+        NOT = {
+            has_country_flag = noreligionFlag
+        }
+    }
+
+    mean_time_to_happen = {
+        months = 1
+    }
+
+    immediate = {
+        set_country_flag = noreligionFlag
+        capital_scope = {
+            PREV = { change_religion = PREV }
+        }
+    }
+
+    option = {
+        name = tonxara.22.a
         ai_chance = { factor = 1 }
     }
 }

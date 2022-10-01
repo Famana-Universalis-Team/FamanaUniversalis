@@ -1,8 +1,9 @@
-discovered_by = north_gomic_tech_gr
+discovered_by = lathvy_tech_gr
 discovered_by = west_gomic_tech_gr
 culture = Ordican
 religion = lathvy
 owner = ORC
+is_city = yes
 controller = ORC
 add_core = ORC
 add_core = NAB
@@ -16,6 +17,6 @@ base_production = 4
 trade_goods = naval_supplies
 base_manpower = 2
 capital = "Dukul"
-is_city = no
-extra_cost = 1
+ 
+
 

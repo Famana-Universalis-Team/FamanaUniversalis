@@ -3,14 +3,17 @@ bookmark = {
     desc = "FAMANA_NARAVAM_BOOKMARK_DESC"
     date = 212.6.6
     
-    center = 6282
+    center = 6649
     
-    country = RDU
-	country = DAS
-    country = SHW
-    country = HUT
-    country = HRI
-    country = LIH
-    country = ZUB
+    country = RST
+    country = ZOK
     country = LER
+    country = ZUB
+    country = RDU
+    country = SHW
+	country = DAS
+    country = LIH
+
+    easy_country = ZOK
+    easy_country = RST
 }

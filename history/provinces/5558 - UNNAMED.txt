@@ -1,9 +1,10 @@
 discovered_by = east_gomic_tech_gr
-discovered_by = north_gomic_tech_gr
+discovered_by = lathvy_tech_gr
 discovered_by = west_gomic_tech_gr
 culture = Sixany
 religion = vinian
 owner = SIX
+is_city = yes
 controller = SIX
 add_core = SIX
 add_core = VNN
@@ -17,9 +18,9 @@ base_production = 6
 trade_goods = wine
 base_manpower = 4
 capital = "Sostus"
-is_city = yes
+ 
 
-extra_cost = 1
+
 
 fort_15th = yes
 center_of_trade = 1

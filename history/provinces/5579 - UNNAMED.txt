@@ -1,9 +1,10 @@
 discovered_by = east_gomic_tech_gr
-discovered_by = north_gomic_tech_gr
+discovered_by = lathvy_tech_gr
 discovered_by = west_gomic_tech_gr
-culture = East_Emastalian
+culture = Maxan_East_Emastalian
 religion = lathvy
 owner = INI
+is_city = yes
 controller = INI
 add_core = INI
 
@@ -16,6 +17,6 @@ base_production = 3
 trade_goods = fish
 base_manpower = 2
 capital = "Ini"
-is_city = yes
-extra_cost = 1
+ 
+
 

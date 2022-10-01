@@ -1,4 +1,108 @@
+####################################################### Generic Reforms
 
+#Tier 1 Power Structure
+aristocracy_reform = {
+	icon = "nobleman"
+	allow_normal_conversion = yes
+	legacy_equivalent = feudal_monarchy
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	modifiers = {
+		land_forcelimit_modifier = 0.05
+		nobles_influence_modifier = 0.05
+	}
+	ai = {
+		factor = 0.5 #generic
+	}
+}
+
+#Tier 5 Army Focus
+army_focus_cav_armies = {
+	icon = "army_focus_cav_armies"
+	allow_normal_conversion = yes
+	modifiers = {
+		cav_to_inf_ratio = 0.15
+		cavalry_power = 0.05
+	}
+	ai = {
+		factor = 1
+		#modifier = {
+		#	factor = 2
+		#
+		#}
+	}
+}
+army_focus_mercenaries = {
+	icon = "army_focus_mercenaries"
+	allow_normal_conversion = yes
+	modifiers = {
+		mercenary_discipline = 0.05
+		merc_maintenance_modifier = -0.10
+	}
+	ai = {
+		factor = 1
+		#modifier = {
+		#	factor = 2
+		#
+		#}
+	}
+}
+army_focus_legions = {
+	icon = "army_focus_legions"
+	allow_normal_conversion = yes
+	modifiers = {
+		army_tradition = 0.33
+		drill_decay_modifier = -0.25
+	}
+	ai = {
+		factor = 1
+		#modifier = {
+		#	factor = 2
+		#
+		#}
+	}
+}
+
+army_focus_skirmishers = {
+	icon = "army_focus_skirmishers"
+	allow_normal_conversion = yes
+	modifiers = {
+		global_regiment_cost = -0.10
+		movement_speed = 0.05
+	}
+	ai = {
+		factor = 1
+		#modifier = {
+		#	factor = 2
+		#
+		#}
+	}
+}
+
+res_naval_support_doctrine = {
+	icon = "church_and_state_reform"
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			tag = LAG
+			tag = RES
+		}
+		mission_completed = lag_into_the_fray
+	}
+	modifiers = {
+		global_naval_barrage_cost = -0.75
+		siege_blockade_progress = 1
+	}
+	ai = {
+		factor = 1
+		#modifier = {
+		#	factor = 2
+		#
+		#}
+	}
+}
+
+#######################################################
 
 oppian_state_reform = {
 	icon = "oppian"
@@ -17,6 +121,31 @@ oppian_state_reform = {
 				tag = TCK
 			}
 		}
+	}
+	conditional = {
+		allow = { has_dlc = "Cradle of Civilization" }
+		government_abilities = {
+			iqta_mechanic
+		}
+	}
+}
+
+ordican_confederation_reform = {
+	icon = "Ordica"
+	legacy_equivalent = despotic_monarchy
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	valid_for_nation_designer = yes
+	modifiers = {
+		tolerance_heathen = 3
+		global_manpower_modifier = -0.25
+		mercenary_cost = -0.20
+		clans_influence_modifier = 0.05
+	}
+	potential = {
+		tag = ORC
 	}
 }
 
@@ -47,6 +176,7 @@ oppian_empire_gov = {
 		allow = { has_dlc = "Rights of Man" }
 		has_harem = yes
 	}
+	fixed_rank = 3
 }
 
 crown_kingdom_reform = {
@@ -54,6 +184,7 @@ crown_kingdom_reform = {
 	allow_normal_conversion = no
 	lock_level_when_selected = yes
 	legacy_equivalent = despotic_monarchy
+	maintain_dynasty = yes
 	valid_for_nation_designer = yes
 	nation_designer_cost = 0
 	modifiers = {
@@ -70,6 +201,21 @@ crown_kingdom_reform = {
 		locked_government_type = yes
 	}
 	fixed_rank = 2
+}
+
+tck_sar_reform = {
+	icon = "crowncity"
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	maintain_dynasty = yes
+	modifiers = {
+		all_estate_influence_modifier = -0.10
+		all_estate_loyalty_equilibrium = 0.05
+		global_autonomy = -0.05
+	}
+	potential = {
+		mission_completed = tck_provencial_governors
+	}
 }
 
 gov_tonxara = {
@@ -146,8 +292,12 @@ nafan_gov = {
 	icon = "nafanempire"
 	allow_normal_conversion = no
 	lock_level_when_selected = yes
+	maintain_dynasty = yes
 	potential = {
 		tag = NAF
+		NOT = {
+			has_country_flag = naf_ditched_syadon
+		}
 	}
 	fixed_rank = 3
 	legacy_equivalent = tsardom_legacy
@@ -156,6 +306,7 @@ nafan_gov = {
 
 	custom_attributes = {
 		locked_government_type = yes
+		no_stability_loss_on_monarch_death = yes
 	}
 
 	nation_designer_trigger = {
@@ -166,6 +317,8 @@ nafan_gov = {
 		monarch_admin_power = 2
 		governing_capacity = 250
 		church_loyalty_modifier = 0.1
+		gishelar_influence_modifier = 0.1
+		heir_chance	= -2
 	}
 
 	conditional = {
@@ -184,7 +337,7 @@ emmi = {
 		has_reform = emmi
 		OR = {
 			culture_group = Ravsho
-			primary_culture = Kisholian
+			primary_culture = Yavonian
 			primary_culture = Legeni
 		}
 	}
@@ -243,7 +396,7 @@ nomadic_tonxara_gov = {
 	legacy_equivalent = steppe_horde_legacy
 	nomad = yes
 	raze_province = yes
-	valid_for_nation_designer = no
+	valid_for_nation_designer = yes
 	nation_designer_cost = 0
 	nation_designer_trigger = {
 		technology_group = north_antebari_tech_gr
@@ -265,7 +418,7 @@ nomadic_tonxara_gov = {
 		loot_amount = 0.50
 		global_institution_spread = -0.15
 		reinforce_cost_modifier = -0.65
-		cav_to_inf_ratio = 0.25
+		cav_to_inf_ratio = 0.50
 		movement_speed = 0.2
 		years_of_nationalism = -5
 		global_missionary_strength = 0.02
@@ -282,10 +435,10 @@ geq_reform = {
 	icon = "elective_monarchy"
 	allow_normal_conversion = no
 	potential = {
-		tag = VAN
+		has_reform = geq_reform
 	}
 	fixed_rank = 2
-	valid_for_nation_designer = no
+	valid_for_nation_designer = yes
 
 	custom_attributes = {
 		locked_government_type = yes
@@ -307,12 +460,40 @@ geq_reform = {
 	}
 }
 
+resteman_thalassocracy = {
+	icon = "merchant_ship"
+	allow_normal_conversion = no
+	potential = {
+		tag = RES
+	}
+	valid_for_nation_designer = yes
+	custom_attributes = {
+		locked_government_type = yes
+		enables_plutocratic_idea_group = yes
+		enables_aristocratic_idea_group = no
+	}
+
+	legacy_equivalent = despotic_monarchy
+	can_change_primary_culture = no
+
+	modifiers = {
+		global_sailors_modifier = 0.25
+		naval_morale = 0.1
+		navy_tradition_decay = -0.01
+		global_institution_spread = 0.20
+	}
+	ai = {
+		factor = 1000
+	}
+}
+
 nokadi_reform = {
 	icon = "sakdina_system_reform"
 	potential = {
 		tag = NKM
+		dynasty = "Nokadi"
 	}
-	valid_for_nation_designer = no
+	valid_for_nation_designer = yes
 
 	custom_attributes = {
 		enables_aristocratic_idea_group = yes
@@ -329,5 +510,243 @@ nokadi_reform = {
 	}
 	ai = {
 		factor = 1000
+	}
+}
+antiash_domain_gov = {
+	icon = "noble_muslim"
+	allow_normal_conversion = no
+	potential = {
+		has_reform = antiash_domain_gov 
+		culture_group = Antiash
+	}
+	valid_for_nation_designer = no
+	raze_province = yes
+	can_change_primary_culture = no
+	lock_level_when_selected = yes
+	valid_for_nation_designer = yes
+	custom_attributes = {
+		enables_horde_idea_group = yes
+		enables_aristocratic_idea_group = no
+	}
+	modifiers = {
+		legitimacy = 1
+		tolerance_own = 1
+		governing_capacity_modifier = 0.20
+		core_creation = -0.15
+	}
+}
+four_tribe_rule_m = {
+	icon = "native_clan_council_reform"
+	allow_normal_conversion = no
+	valid_for_nation_designer = yes
+	potential = {
+		has_reform = four_tribe_rule_m
+	}
+
+	heir = no
+	
+	modifiers = {
+		num_accepted_cultures = 2
+		promote_culture_cost = -0.50
+		global_autonomy = -0.05
+	}
+	
+	ai = {
+		factor = 1
+	}
+}
+
+bureaucratic_monarchy = {
+	icon = "burmonarchy"
+	allow_normal_conversion = yes
+	valid_for_nation_designer = yes
+	potential = {
+		AND = {
+			OR = {
+				government_rank = 2
+				government_rank = 3
+			}
+			OR = {
+				religion_group = xalian_group
+				religion = gadan
+				religion = pawani
+				AND = {
+					religion = lathvy
+					capital_scope = {
+						superregion = ga_xal_superregion
+					}
+				}
+			}
+		}
+	}
+	modifiers = {
+		burghers_influence_modifier = 0.10
+		nobles_influence_modifier = 0.05
+		state_maintenance_modifier = -0.10
+		innovativeness_gain = 0.10
+		yearly_corruption = -0.025
+	}
+	
+	ai = {
+		factor = 1
+	}
+}
+
+zeaf_tribe = {
+	icon = "zeaf"
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	valid_for_nation_designer = yes
+	potential = {
+		tag = ZEA
+	}
+	maintain_dynasty = yes
+	modifiers = {
+		leader_cost = -0.10
+		global_regiment_cost = -0.10
+		global_unrest = -1
+	}
+	
+	ai = {
+		factor = 1
+	}
+}
+
+pyarxan_stratocracy = {
+	icon = "regionally_elected_commanders"
+	allow_normal_conversion = no
+	valid_for_nation_designer = yes
+	potential = {
+		OR = {
+			tag = PXS
+			tag = PYA
+		}
+	}
+	legacy_equivalent = despotic_monarchy
+	modifiers = {
+		mil_advisor_cost = -0.1
+		war_exhaustion = -0.05
+		free_leader_pool = 1
+		nobles_influence_modifier = 0.15
+		church_influence_modifier = -0.05
+	}
+	ai = {
+		factor = 1000
+	}
+}
+
+ordican_senate = {
+	icon = "ordican_senate"
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	valid_for_nation_designer = yes
+	potential = {
+		AND = {
+			OR = {
+				tag = ORC
+				tag = ORS
+			}
+			OR = {
+				has_global_flag = OrdicaDisaster
+				has_global_flag = survivedOrdicanCrisis
+			}
+		}
+	}
+	custom_attributes = {
+		has_parliament = yes
+		blocked_call_diet = yes
+	}
+	modifiers = {
+		global_institution_spread = 0.1
+		church_influence_modifier = 0.1
+		nobles_influence_modifier = 0.1
+		burghers_influence_modifier = 0.1
+	}
+}
+
+kachik_monarchy = {
+	icon = "shogunate"
+	allow_normal_conversion = no
+	valid_for_nation_designer = yes
+	potential = {
+		has_reform = kachik_monarchy
+	}
+	legacy_equivalent = despotic_monarchy
+	can_change_primary_culture = no
+	modifiers = {
+		global_unrest = -1
+		unjustified_demands	= -0.15
+		nobles_influence_modifier = 0.10
+	}
+}
+
+vanoman_elective_monarchy = {
+	icon = "ordican_senate"
+	allow_normal_conversion = no
+	valid_for_nation_designer = yes
+	potential = {
+		tag = VAN
+	}
+	legacy_equivalent = despotic_monarchy
+	can_change_primary_culture = no
+	modifiers = {
+		legitimacy = 1
+		max_absolutism = -30
+		prestige_decay = -0.02
+	}
+	custom_attributes = {
+		has_parliament = yes
+		heir = no
+		royal_marriage = no
+		blocked_call_diet = yes
+	}
+}
+
+gotzlic_kingdom = {
+	icon = "landscape"
+	legacy_equivalent = despotic_monarchy
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	maintain_dynasty = yes
+	modifiers = {
+		monarch_military_power = 1
+		prestige_decay = -0.01
+		nobles_influence_modifier = 0.20
+	}
+	potential = {
+		culture_group = Gotzlic
+	}
+	ai = {
+		factor = 1000
+	}
+}
+
+imperial_rini_stratocracy = {
+	icon = "black_market_consortium"
+	allow_normal_conversion = yes
+	potential = {
+		tag = NAF
+		has_country_flag = naf_ditched_syadon
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 100
+	legacy_equivalent = despotic_monarchy
+
+	modifiers = {
+		max_absolutism = 20
+		monarch_military_power = 3
+		nobles_loyalty_modifier = 0.1
+		governing_capacity_modifier = -0.25
+	}
+
+	conditional = {
+		allow = { has_dlc = "Rights of Man" }
+		militarised_society = yes
+	}
+
+	custom_attributes = {
+		royal_marriage = no
+		queen = no
+		#republican_name = yes
 	}
 }

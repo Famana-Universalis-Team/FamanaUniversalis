@@ -1,9 +1,10 @@
 discovered_by = east_gomic_tech_gr
-discovered_by = north_gomic_tech_gr
+discovered_by = lathvy_tech_gr
 discovered_by = west_gomic_tech_gr
 culture = Yatian
 religion = aresian
 owner = YTI
+is_city = yes
 controller = YTI
 add_core = YTI
 
@@ -16,7 +17,7 @@ base_production = 5
 trade_goods = paper
 base_manpower = 4
 capital = "The Lavon"
-is_city = yes
+ 
 extra_cost = 4
 fort_15th = yes
 

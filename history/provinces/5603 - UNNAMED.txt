@@ -1,10 +1,11 @@
-discovered_by = gotzlic_tech_gr
+discovered_by = estali_tech_gr
 discovered_by = east_gomic_tech_gr
-discovered_by = north_gomic_tech_gr
+discovered_by = lathvy_tech_gr
 discovered_by = west_gomic_tech_gr
 culture = Holk
 religion = bamali
 owner = YAB
+is_city = yes
 controller = YAB
 add_core = YAB
 add_core = HLK
@@ -18,5 +19,16 @@ base_production = 3
 trade_goods = salt
 base_manpower = 2
 capital = "Degzool"
-is_city = no
-extra_cost = 1
+ 
+
+
+212.6.7 = {
+owner = HLK
+is_city = yes
+controller = HLK
+add_core = HLK
+remove_core = YAB
+#culture = 
+#religion = 
+#trade_goods = 
+}

@@ -1,8 +1,9 @@
-discovered_by = gotzlic_tech_gr
+discovered_by = estali_tech_gr
 discovered_by = naravami_tech_gr
 culture = Hozyan
 religion = gotzli
 owner = EHZ
+is_city = yes
 controller = EHZ
 add_core = EHZ
 
@@ -14,9 +15,9 @@ base_tax = 4
 base_production = 3
 trade_goods = fish
 base_manpower = 3
-capital = "UNNAMED"
-is_city = no
-extra_cost = 1
+capital = "Egili"
+ 
+
 
 
 

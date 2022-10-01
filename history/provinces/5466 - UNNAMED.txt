@@ -1,9 +1,10 @@
 discovered_by = east_gomic_tech_gr
-discovered_by = north_gomic_tech_gr
+discovered_by = lathvy_tech_gr
 discovered_by = west_gomic_tech_gr
 culture = Neo_Xalnish
 religion = shirian
 owner = MSH
+is_city = yes
 controller = MSH
 add_core = MSH
 
@@ -16,6 +17,6 @@ base_production = 2
 trade_goods = paper
 base_manpower = 2
 capital = "Shirvam"
-is_city = no
-extra_cost = 1
+ 
+
 

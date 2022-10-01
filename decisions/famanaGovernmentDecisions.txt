@@ -27,10 +27,10 @@ country_decisions = {
 		potential = {
 			OR = {
 				culture_group = Ravsho
-				primary_culture = Kisholian
+				primary_culture = Yavonian
 			}
 			culture_group = Ravsho
-			primary_culture = Kisholian
+			primary_culture = Yavonian
 			NOT = { tag = ANM }
 			NOT = { has_reform = emmi }
 			NOT = { has_reform = gov_tonxara }
@@ -64,8 +64,8 @@ country_decisions = {
 		
 		allow = {
 			is_free_or_tributary_trigger = yes
-			prestige = 100
-			stability = 3
+			prestige = 50
+			stability = 2
 			church_power = 100
 			treasury = 500
 		}
@@ -97,13 +97,13 @@ country_decisions = {
                 }
             }
 			NOT = { has_reform = geq_reform }
-			NOT = {
-				alliance_with = FAS
-			}
         }
         allow = {
             is_free_or_tributary_trigger = yes
 			dip = 2
+			NOT = {
+				alliance_with = FAS
+			}
         }
         effect = {
             add_government_reform = geq_reform

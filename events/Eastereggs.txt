@@ -9,12 +9,12 @@ country_event = {
 	picture = EP_MOAIS_eventPicture
 
 	trigger = {
-		tag = NPX
 		is_year = 305
+		tag = NPX
 	}
 	
 	mean_time_to_happen = {
-		days = 365
+		months = 12
 	}
 
 	option = {
@@ -35,10 +35,15 @@ country_event = {
 
 	trigger = {
 		always = yes
+		NOT = { has_global_flag = comet_crashed }
 	}
 
 	mean_time_to_happen = {
-		days = 7200000
+		months = 240000
+	}
+
+	immediate = {
+		set_global_flag = comet_crashed
 	}
 
 	option = {
@@ -67,12 +72,13 @@ country_event = {
 	id = eastereggs.3
 	title = eastereggs.3.t
 	desc = eastereggs.3.d
-	picture = ARTWORK_eventPicture
+	picture = EP_MOAIS_eventPicture
 	fire_only_once = yes
+	goto = 5203
 	
 	trigger = {
-		owns_core_province = 5203
 		is_year = 250
+		owns_core_province = 5203
 	}
 
 	mean_time_to_happen = {
@@ -130,5 +136,125 @@ country_event = {
 			name = insanity_of_oforog
 			duration = -1
 		}
+		set_country_flag = insanityOfOforog
+	}
+}
+
+#Dan Tzu
+country_event = {
+	id = eastereggs.5
+	title = eastereggs.5.t
+	desc = eastereggs.5.d
+	picture = GENERALS_DISCUSSING_eventPicture
+	fire_only_once = yes
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = eastereggs.5.a
+		ai_chance = { factor = 5 }
+		set_country_flag = wonDanTzuBattle
+	}
+}
+
+#BURY THE LIGHT DEEP WITHINNNNNNN
+country_event = {
+	id = eastereggs.6
+	title = eastereggs.6.t
+	desc = eastereggs.6.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	fire_only_once = yes
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = eastereggs.6.a
+		ai_chance = { factor = 5 }
+	}
+}
+
+#Pawani Cultists
+country_event = {
+	id = eastereggs.7
+	title = eastereggs.7.t
+	desc = eastereggs.7.d
+	picture = RELIGIOUS_TURMOIL_eventPicture
+	fire_only_once = yes
+	goto = 5203
+
+	trigger = {
+		owns = 5203
+		religion_group = lathvy_group
+		NOT = {
+			OR = {
+				tag = NPX
+				religion = pawani
+			}
+		}
+		5203 = {
+			religion_group = lathvy_group
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 8000
+	}
+
+	immediate = {
+		hidden_effect = {
+			5203 = {
+				change_religion = pawani
+			}
+		}
+	}
+
+	option = { #Crack down
+		name = eastereggs.7.a
+		ai_chance = { factor = 10 }
+		trigger = {
+			NOT = {
+				has_idea_group = humanist_ideas
+			}
+		}
+		5203 = {
+			add_province_modifier = {
+				name = npx_pawani_crackdown
+				duration = 3650
+			}
+		}
+	}
+
+	option = { #Tolerate
+		name = eastereggs.7.b
+		ai_chance = { factor = 1 }
+		5203 = {
+			add_province_modifier = {
+				name = npx_pawani_tolerance
+				duration = 9125
+			}
+		}
+	}
+}
+
+#bri ish
+country_event = {
+	id = eastereggs.8
+	title = eastereggs.8.t
+	desc = eastereggs.8.d
+	picture = RELIGIOUS_TURMOIL_eventPicture
+	fire_only_once = yes
+
+	trigger = {
+		tag = GCL
+	}
+
+	mean_time_to_happen = {
+		days = 10
+	}
+
+	option = {
+		name = eastereggs.8.a
+		ai_chance = { factor = 5 }
+		add_prestige = -10
 	}
 }

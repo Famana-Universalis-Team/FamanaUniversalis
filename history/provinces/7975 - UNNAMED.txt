@@ -7,8 +7,8 @@ base_tax = 1
 base_production = 1
 base_manpower = 1
 capital = "Tretat"
-is_city = yes
-extra_cost = 1
+ 
+
 
 
 
@@ -17,7 +17,9 @@ extra_cost = 1
 
 discovered_by = west_gomic_tech_gr
 
-
+native_size = 10
+native_ferocity = 4
+native_hostileness = 4
 
 
 

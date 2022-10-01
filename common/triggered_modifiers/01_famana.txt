@@ -11,20 +11,21 @@ gomic_religious_unity = {
                 current_age = age_of_reformation
             }
             OR = {
-			religion = western_oppian
-			religion = eastern_oppian
-			religion = reformed_oppian
-			religion = shirian
-			religion = delkian
-			religion = vinian
-			religion = egr
-			religion = bamali
-			religion = aresian
-			religion = bilik
-			religion = gadan
-            religion = mak
-            religion = pawani
-		}
+			    religion = western_oppian
+			    religion = eastern_oppian
+			    religion = reformed_oppian
+			    religion = shirian
+			    religion = delkian
+			    religion = vinian
+			    religion = egr
+			    religion = bamali
+			    religion = aresian
+			    religion = bilik
+			    religion = gadan
+                religion = mak
+                religion = vaximorian
+                religion = pawani
+		    }
         }
 	}
 
@@ -70,11 +71,12 @@ yomtanian_nation = {
         culture_group = Yomtanian
     }
     
-    technology_cost = 0.10
-    infantry_power = 0.50
-    cavalry_power = -1.00
-    reinforce_speed = -0.20
-    infantry_cost = 0.50
+    #technology_cost = 0.10
+    #infantry_power = 0.50
+    #cavalry_power = -1.00
+    #reinforce_speed = -0.20
+    #infantry_cost = 0.50
+    #relation_with_other_culture = -1000
 }
 
 tonmo_reformed_modifier = {
@@ -101,7 +103,7 @@ fashros_tech_support_modifier = {
     trigger = {
         alliance_with = VAN
     }
-    desc = fashros_tech_support_modifier_desc
+    #desc = fashros_tech_support_modifier_desc
     global_institution_spread = 0.25
     technology_cost = -0.05
     diplomatic_upkeep = 1
@@ -120,12 +122,66 @@ ai_fashros_buff = {
     land_maintenance_modifier = -0.25
     interest = -2
     core_creation = -0.15
-    administrative_efficiency = 0.10
+    administrative_efficiency = 0.15
     diplomatic_upkeep = -4
     monarch_admin_power = 1
     monarch_diplomatic_power = 1
     monarch_military_power = 1
     diplomatic_reputation = 2
+    missionary_maintenance_cost = -0.75
+    governing_capacity = 250
+    ae_impact = -0.25
+    culture_conversion_cost = 100
+}
+
+naf_xolnomarkan_invasion_buff = {
+    potential = {
+        tag = NAF
+    }
+    trigger = {
+        has_country_modifier = nafa_invading_xal
+        any_known_country = {
+            capital_scope = {
+                superregion = ga_xal_superregion
+            }
+            war_with = ROOT
+        }
+    }
+    land_morale = 0.20
+    reinforce_speed = 0.10
+    siege_ability = 0.25
+}
+
+naf_nhoma_defense = {
+    potential = {
+        tag = NAF
+    }
+    trigger = {
+        mission_completed = naf_fortify_gatria
+        NOT = {
+            any_owned_province = {
+                superregion = nhoma_superregion
+            }
+        }
+    }
+    army_tradition_decay = -0.01
+    shock_damage_received = -0.10
+}
+
+released_tck_modifier = {
+    potential = {
+        has_country_flag = released_TCK_flag
+        NOT = { tag = OPP }
+    }
+    trigger = {
+        TCK = {
+            is_subject_of = ROOT
+        }
+    }
+    diplomatic_upkeep = 1
+    administrative_efficiency = 0.05
+    governing_capacity_modifier = 0.1
+    prestige_decay = -0.01
 }
 
 ################################ AGES
@@ -137,7 +193,7 @@ age_1_trig_modifier = { #despair
     trigger = {
         always = yes
     }
-    development_cost = 0.20
+    development_cost = 0.25
     ae_impact = 0.10
     envoy_travel_time = 0.25
     land_forcelimit_modifier = -0.10
@@ -151,7 +207,7 @@ age_2_trig_modifier = { #eclipse
     trigger = {
         always = yes
     }
-    development_cost = 0.10
+    development_cost = 0.15
     envoy_travel_time = 0.10
     global_missionary_strength = 0.01
     tolerance_heathen = -1
@@ -174,7 +230,7 @@ age_3_trig_modifier = { #titans
     global_institution_spread = 0.1
     land_forcelimit_modifier = 0.10
     governing_capacity_modifier = 0.25
-    development_cost = 0.05
+    development_cost = 0.10
 }
 
 age_4_trig_modifier = { #old legends
@@ -184,7 +240,6 @@ age_4_trig_modifier = { #old legends
     trigger = {
         always = yes
     }
-    development_cost = -0.05
     all_power_cost = 0.05
     max_absolutism = -10
     governing_capacity_modifier = -0.15

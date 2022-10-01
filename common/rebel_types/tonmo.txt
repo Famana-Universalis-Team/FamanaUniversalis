@@ -196,7 +196,7 @@ tonmo_rebels = {
 		}
 		if = {
 			limit = {
-				NOT = { religion_group = tonmo }
+				NOT = { religion_group = tonmo_group }
 			}
 			add_prestige = -50
 			every_owned_province = {

@@ -29,7 +29,7 @@ country_decisions = {
 		}
 		effect = {
 			set_country_flag = syadona_city
-			vava_area = {
+			tyarda_area = {
 				limit = {
 					is_empty = yes
 				}
@@ -48,6 +48,16 @@ country_decisions = {
 				add_base_manpower = 3
 				add_base_tax = 3
 				add_base_production = 3
+			}
+			if = {
+				limit = {
+					5584 = {
+						owned_by = NAF
+					}
+				}
+				5584 = {
+					change_culture = Kachik
+				}
 			}
 			NAF = {
 				set_capital = 5583

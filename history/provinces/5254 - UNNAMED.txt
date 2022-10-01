@@ -1,14 +1,15 @@
 add_core = MPL
 owner = MPL
+is_city = yes
 controller = MPL
 culture = Mirrisan
-discovered_by = estal_tribal_tech_gr
-religion = animism
+discovered_by = west_estali_tech_gr
+religion = druidic
 hre = no
 base_tax = 1
 base_production = 1
 trade_goods = fish
 base_manpower = 2
 capital = "Nancephone"
-is_city = no
-extra_cost = 1
+ 
+#extra_cost = 1

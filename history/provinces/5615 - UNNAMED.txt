@@ -1,9 +1,10 @@
 discovered_by = east_gomic_tech_gr
-discovered_by = north_gomic_tech_gr
+discovered_by = lathvy_tech_gr
 discovered_by = west_gomic_tech_gr
 culture = Oppio_Jasuan
 religion = eastern_oppian
 owner = YAB
+is_city = yes
 controller = YAB
 add_core = YAB
 add_core = BAL
@@ -16,5 +17,16 @@ base_production = 1
 trade_goods = livestock
 base_manpower = 1
 capital = "Montqo"
-is_city = no
-extra_cost = 1
+ 
+
+
+212.6.7 = {
+owner = BAL
+is_city = yes
+controller = BAL
+add_core = BAL
+remove_core = YAB
+#culture = 
+#religion = 
+#trade_goods = 
+}

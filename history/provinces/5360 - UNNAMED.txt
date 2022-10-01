@@ -1,21 +1,22 @@
 discovered_by = east_gomic_tech_gr
-discovered_by = north_gomic_tech_gr
+discovered_by = lathvy_tech_gr
 discovered_by = west_gomic_tech_gr
 culture = Lerushian
 religion = lathvy
 owner = AGX
+is_city = yes
 controller = AGX
 add_core = AGX
-
+add_core = MLP
 ###
 
 hre = no
 
 base_tax = 4
 base_production = 5
-trade_goods = fish
+trade_goods = wine
 base_manpower = 4
 capital = "Maliponaxtes"
-is_city = yes
-extra_cost = 1
+ 
+
 

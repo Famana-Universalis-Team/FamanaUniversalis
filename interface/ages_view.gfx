@@ -178,7 +178,7 @@ spriteTypes = {
 	
 
 
-	# Age of Discovery Objectives
+	# Age of Despair Objectives
 	spriteType = {
 		name = "GFX_obj_ahead_of_tech"
 		texturefile = "gfx/interface/ages/obj_universities.dds"
@@ -221,7 +221,7 @@ spriteTypes = {
 
 
 
-	# Age of Reformation Objectives
+	# Age of the Eclipse Objectives
 	spriteType = {
 		name = "GFX_obj_tradecenters"
 		texturefile = "gfx/interface/ages/obj_5_centers_of_trade.dds"
@@ -259,7 +259,7 @@ spriteTypes = {
 	
 
 
-	# Age of Absolutism Objectives
+	# Age of Titans Objectives
 	spriteType = {
 		name = "GFX_obj_3_trade_companies"
 		texturefile = "gfx/interface/ages/obj_3_trade_companies.dds"
@@ -297,7 +297,7 @@ spriteTypes = {
 	
 	
 	
-	# Age of Revolutions Objectives
+	# The Old Legends Objectives
 	spriteType = {
 		name = "GFX_obj_parliament"
 		texturefile = "gfx/interface/ages/obj_parliament.dds"
@@ -365,7 +365,7 @@ spriteTypes = {
 
 	
 	
-	# Age of Discovery Abilities
+	# Age of Despair Abilities
 	spriteType = {
 		name = "GFX_ab_roklot_warriors"
 		texturefile = "gfx/interface/ages/ab_roklot_warriors.dds"
@@ -410,7 +410,7 @@ spriteTypes = {
 	
 	
 	
-	# Age of Reformation Abilities
+	# Age of the Eclipse Abilities
 	spriteType = {
 		name = "GFX_ab_rostan_morale"
 		texturefile = "gfx/interface/ages/ab_rostan_morale.dds"
@@ -467,7 +467,7 @@ spriteTypes = {
 	
 
 	
-	# Age of Absolutism Abilities
+	# Age of Titans Abilities
 	spriteType = {
 		name = "GFX_ab_allow_edict_of_absolutism"
 		texturefile = "gfx/interface/ages/ab_allow_edict_of_absolutism.dds"
@@ -525,7 +525,7 @@ spriteTypes = {
 	
 
 	
-	# Age of Revolutions Abilities
+	# The Old Legends Abilities
 	spriteType = {
 		name = "GFX_ab_allow_anti_revolutionary_zeal"
 		texturefile = "gfx/interface/ages/ab_allow_anti_revolutionary_zeal.dds"

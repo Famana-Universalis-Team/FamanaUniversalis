@@ -1,0 +1,19 @@
+government = tribal
+add_government_reform = gacin_tribe
+government_rank = 1
+mercantilism = 5
+technology_group = naravami_tech_gr
+religion = sotharyik
+primary_culture = Old_Gacin
+capital = 6461
+
+200.1.1 = {
+	monarch = {
+		name = "Wiðuk"
+		dynasty = "Filip"
+		birth_date = 169.12.12
+		adm = 3
+		dip = 3
+		mil = 1
+	}
+}

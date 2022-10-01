@@ -1,4 +1,4 @@
-# Pexamolite Paladins
+# Pexamolite Falxmen
 merc_pexamolite_paladins = {
     regiments_per_development = 0.05
     home_province = 5203 # new paxamol
@@ -6,6 +6,7 @@ merc_pexamolite_paladins = {
 	cavalry_cap = 4
 	sprites = { westerngfx_sprite_pack }
     trigger = {
+		is_allowed_to_recruit_mercenaries = yes
 		OR = {
 			any_owned_province = {
 				region = pextoglazia_region
@@ -20,7 +21,7 @@ merc_pexamolite_paladins = {
 				region = north_xalia_region
 			}
 			any_owned_province = {
-				region = moria_region
+				region = west_xalia_region
 			}
 		}
 	}
@@ -34,12 +35,13 @@ merc_haoli_free_company = {
 	cavalry_cap = 4
 	sprites = { westerngfx_sprite_pack }
 	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
 		OR = {
 			any_owned_province = {
 				region = laglon_region
 			}
 			any_owned_province = {
-				area = unnamed_pexto_10
+				area = gegon_area
 			}
 			any_owned_province = {
 				region = west_estal_region
@@ -61,15 +63,16 @@ merc_haoli_free_company = {
 	modifier = { }
 }
 
-# Jzoets
+# Jzoet
 merc_jzoets = {
     regiments_per_development = 0.01
     home_province = 5491 # yallwaka
 	cost_modifier = 0.1
-	cavalry_weight = 0.1
-	cavalry_cap = 4
+	cavalry_weight = 0
+	cavalry_cap = 0
 	sprites = { westerngfx_sprite_pack }
 	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
 		has_country_modifier = jzoet_help
 	}
 	modifier = {
@@ -78,12 +81,31 @@ merc_jzoets = {
 	}
 }
 
+# Buffed Jzoet
+merc_jzoets_buffed = {
+    regiments_per_development = 0.04
+    home_province = 5491 # yallwaka
+	cost_modifier = 0.05
+	cavalry_weight = 0
+	cavalry_cap = 0
+	sprites = { westerngfx_sprite_pack }
+	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		has_country_modifier = integrated_jzoet
+	}
+	modifier = {
+		infantry_power = 0.10
+		shock_damage = 0.10
+	}
+}
+
 # Jabuskay Band
 merc_jabuskay_band = {
     regiments_per_development = 0.05
     home_province = 5141 # Jabuskay
-	sprites = { westerngfx_sprite_pack }
+	sprites = { muslimgfx_sprite_pack }
 	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
 		OR = {
 			any_owned_province = {
 				region = maky_region
@@ -98,7 +120,7 @@ merc_jabuskay_band = {
 				region = south_xalia_region
 			}
 			any_owned_province = {
-				region = moria_region
+				region = west_xalia_region
 			}
 		}	
 	}
@@ -113,8 +135,9 @@ merc_free_vanomans = {
 	cavalry_weight = 0.4
     home_province = 5691 # somewhere in emtik
 	cost_modifier = 0.75
-	sprites = { westerngfx_sprite_pack }
+	sprites = { easterngfx_sprite_pack }
 	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
 		AND = {
 			5691 = { culture = Emtik  }
 			OR = {
@@ -122,7 +145,7 @@ merc_free_vanomans = {
 					region = nozumol_region
 				}
 				any_owned_province = {
-					region = bamal_gulf_region
+					region = bamali_gulf_region
 				}
 				any_owned_province = {
 					region = vanoma_region
@@ -146,6 +169,7 @@ merc_knights_straits = {
     home_province = 5294 # Ezoo
 	sprites = { westerngfx_sprite_pack }
 	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
 		OR = {
 			any_owned_province = {
 				region = walara_region
@@ -154,7 +178,7 @@ merc_knights_straits = {
 				region = ordica_region
 			}
 			any_owned_province = {
-				area = unnamed_pexto_4
+				area = seaside_nevia_area
 			}
 		}
 	}
@@ -169,6 +193,7 @@ merc_ordic_company = {
     home_province = 6220 # somewhere in central ordica
 	sprites = { westerngfx_sprite_pack }
 	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
 		OR = {
 			any_owned_province = {
 				region = pextoglazia_region
@@ -180,10 +205,10 @@ merc_ordic_company = {
 				region = vordor_region
 			}
 			any_owned_province = {
-				area = unnamed_pexto_14
+				area = west_yuvla_area
 			}
 			any_owned_province = {
-				area = unnamed_pexto_12
+				area = pixrol_area
 			}
 		}	
 	}
@@ -199,8 +224,9 @@ merc_sorlasti = {
 	artillery_weight = 0.3
 	cavalry_cap = 4
     home_province = 5509
-	sprites = { westerngfx_sprite_pack }
+	sprites = { easterngfx_sprite_pack }
     trigger = {
+		is_allowed_to_recruit_mercenaries = yes
 		any_owned_province = {
 			OR = {
 				area = unnamed_area_40
@@ -223,6 +249,7 @@ merc_karsi = {
     cost_modifier = 0.75
 	sprites = { muslimgfx_sprite_pack }
     trigger = {
+		is_allowed_to_recruit_mercenaries = yes
 		capital_scope = {
 			OR = {
 				region = maky_region
@@ -246,6 +273,7 @@ merc_hasian = {
     cost_modifier = 1.5
 	sprites = { westerngfx_sprite_pack }
     trigger = {
+		is_allowed_to_recruit_mercenaries = yes
 		AND = {
 			5695 = {
 				culture = Hasian
@@ -270,8 +298,9 @@ merc_hasian = {
 		}
 	}
 	modifier = {
-		infantry_power = 0.50
-		reinforce_speed = -0.20
+		#infantry_power = 0.50
+		infantry_shock = 1.5
+		reinforce_speed = -0.50
 	}
 }
 
@@ -282,8 +311,9 @@ merc_darlaqids = {
 	artillery_weight = 0.3
 	cavalry_cap = 6
     home_province = 5128
-	sprites = { westerngfx_sprite_pack }
+	sprites = { muslimgfx_sprite_pack }
     trigger = {
+		is_allowed_to_recruit_mercenaries = yes
 		any_owned_province = {
 			region = arlenta_region
 		}
@@ -303,6 +333,7 @@ merc_komi_company = {
 	cost_modifier = 1.25
 	sprites = { westerngfx_sprite_pack }
     trigger = {
+		is_allowed_to_recruit_mercenaries = yes
 		capital_scope = {
 			OR = {
 				region = east_xalia_region
@@ -324,6 +355,7 @@ merc_nevian_company = {
     home_province = 5339
 	sprites = { westerngfx_sprite_pack }
     trigger = {
+		is_allowed_to_recruit_mercenaries = yes
 		any_owned_province = {
 			OR = {
 				region = pextoglazia_region
@@ -346,8 +378,9 @@ merc_quanex_guard = {
 	cavalry_cap = 4
     home_province = 5066
 	cost_modifier = 0.5
-	sprites = { westerngfx_sprite_pack }
+	sprites = { muslimgfx_sprite_pack }
     trigger = {
+		is_allowed_to_recruit_mercenaries = yes
 		AND = {
 			5066 = {
 				culture = Quanexite
@@ -372,8 +405,9 @@ merc_ndc = {
 	cavalry_cap = 4
     home_province = 8618
 	cost_modifier = 1.5
-	sprites = { westerngfx_sprite_pack }
+	sprites = { indiangfx_sprite_pack }
     trigger = {
+		is_allowed_to_recruit_mercenaries = yes
 		capital_scope = {
 			region = vishma_region
 		}
@@ -389,8 +423,9 @@ merc_gau_marauders = {
 	cavalry_weight = 0.45
     home_province = 5639
 	cost_modifier = 0.75
-	sprites = { westerngfx_sprite_pack }
+	sprites = { muslimgfx_sprite_pack }
     trigger = {
+		is_allowed_to_recruit_mercenaries = yes
 		any_owned_province = {
 			superregion = jasua_superregion
 		}
@@ -410,6 +445,7 @@ merc_morsum = {
     home_province = 5411
 	sprites = { westerngfx_sprite_pack }
     trigger = {
+		is_allowed_to_recruit_mercenaries = yes
 		any_owned_province = {
 			superregion = ga_xal_superregion
 		}
@@ -423,13 +459,14 @@ merc_morsum = {
 # Callan Marines
 merc_callan = {
     regiments_per_development = 0.025
-	cavalry_weight = 0.1
+	cavalry_weight = 0
 	artillery_weight = 0.3
-	cavalry_cap = 4
+	cavalry_cap = 0
     home_province = 5459
 	cost_modifier = 0.5
 	sprites = { westerngfx_sprite_pack }
     trigger = {
+		is_allowed_to_recruit_mercenaries = yes
 		AND = {
 			OR = {
 				ROOT = {
@@ -443,6 +480,7 @@ merc_callan = {
 	}
 	modifier = {
 		shock_damage_received = 0.10
+		regiment_disembark_speed = 3.5
 	}
 }
 
@@ -453,10 +491,11 @@ merc_diam = {
 	artillery_weight = 0.3
 	cavalry_cap = 2
     home_province = 5188
-	sprites = { westerngfx_sprite_pack }
+	sprites = { muslimgfx_sprite_pack }
     trigger = {
+		is_allowed_to_recruit_mercenaries = yes
 		any_owned_province = {
-			region = eastern_desert_region
+			region = hoxoi_coast_region
 		}
 	}
 	modifier = {
@@ -468,8 +507,9 @@ merc_ked_highlanders = {
 	cavalry_weight = 0.1
 	artillery_weight = 0.3
     home_province = 5529
-	sprites = { westerngfx_sprite_pack }
+	sprites = { easterngfx_sprite_pack }
     trigger = {
+		is_allowed_to_recruit_mercenaries = yes
 		OR = { 
 			any_owned_province = {
 			region = aresia_region
@@ -488,8 +528,9 @@ merc_nik_legion = {
 	cavalry_weight = 0.1
 	artillery_weight = 0.3
     home_province = 5661
-	sprites = { westerngfx_sprite_pack }
+	sprites = { easterngfx_sprite_pack }
     trigger = {
+		is_allowed_to_recruit_mercenaries = yes
 		OR = { 
 		any_owned_province = {
 			region = aresia_region
@@ -511,8 +552,9 @@ merc_ghaloyan_company = {
 	cavalry_weight = 0.1
 	artillery_weight = 0.3
     home_province = 5600
-	sprites = { westerngfx_sprite_pack }
+	sprites = { easterngfx_sprite_pack }
     trigger = {
+		is_allowed_to_recruit_mercenaries = yes
 		any_owned_province = {
 			superregion = jasua_superregion
 		}
@@ -532,6 +574,7 @@ merc_maru_soldiers = {
     home_province = 5484 
 	sprites = { westerngfx_sprite_pack }
     trigger = {
+		is_allowed_to_recruit_mercenaries = yes
 	OR = { 
 		any_owned_province = {
 			superregion = jasua_superregion
@@ -555,17 +598,24 @@ merc_durran_company = {
     home_province = 5566
 	sprites = { westerngfx_sprite_pack }
     trigger = {
-	OR = { 
-	any_owned_province = {
-			region = pextoglazia_region
-		}
-		any_owned_province = {
-			region = kapolia_region
-		}
-		any_owned_province = {
-			region = emastalia_region
-		}
-	}	
+		is_allowed_to_recruit_mercenaries = yes
+		OR = { 
+			any_owned_province = {
+				region = pextoglazia_region
+			}
+			any_owned_province = {
+				region = kapolia_region
+			}
+			any_owned_province = {
+				region = stroktur_region
+			}
+			any_owned_province = {
+				region = emastalia_region
+			}
+			any_owned_province = {
+				region = west_emastalia_region
+			}
+		}	
 	}
 	modifier = {
 	
@@ -582,18 +632,24 @@ merc_unsets_volunteers = {
 	cost_modifier = 0.75
 	sprites = { westerngfx_sprite_pack }
     trigger = {
-	OR = { 
-	any_owned_province = {
-			region = pextoglazia_region
-		}
-		any_owned_province = {
-			region = kapolia_region
-		}
-		any_owned_province = {
-			region = emastalia_region
-		}
-		
-	}	
+		is_allowed_to_recruit_mercenaries = yes
+		OR = { 
+			any_owned_province = {
+				region = pextoglazia_region
+			}
+			any_owned_province = {
+				region = kapolia_region
+			}
+			any_owned_province = {
+				region = stroktur_region
+			}
+			any_owned_province = {
+				region = emastalia_region
+			}
+			any_owned_province = {
+				region = west_emastalia_region
+			}
+		}	
 	}
 	modifier = {
 	
@@ -609,6 +665,7 @@ merc_teserran_order = {
     home_province = 5515
 	sprites = { westerngfx_sprite_pack }
     trigger = {
+		is_allowed_to_recruit_mercenaries = yes
 		any_owned_province = {
 			superregion = jasua_superregion
 		}
@@ -629,6 +686,7 @@ merc_nimos_warriors = {
     home_province = 5391
 	sprites = { westerngfx_sprite_pack }
     trigger = {
+		is_allowed_to_recruit_mercenaries = yes
 		any_owned_province = {
 				superregion = ga_xal_superregion
 			}
@@ -650,12 +708,13 @@ merc_shining_spears = {
     home_province = 5170
 	sprites = { westerngfx_sprite_pack }
     trigger = {
+		is_allowed_to_recruit_mercenaries = yes
 		OR = { 
 		any_owned_province = {
 				superregion = ga_xal_superregion
 			}
 			any_owned_province = {
-				region = eastern_desert_region
+				region = hoxoi_coast_region
 			}
 		
 	}	
@@ -675,12 +734,16 @@ merc_iimksan_dool = {
     home_province = 5307
 	sprites = { westerngfx_sprite_pack }
     trigger = {
+		is_allowed_to_recruit_mercenaries = yes
 	OR = { 
 	any_owned_province = {
 				superregion = ga_xal_superregion
 			}
 			any_owned_province = {
 				region = kapolia_region
+			}
+			any_owned_province = {
+				region = stroktur_region
 			}
 		
 		
@@ -700,6 +763,7 @@ merc_mea_dizz = {
     home_province = 5034
 	sprites = { westerngfx_sprite_pack }
     trigger = {
+		is_allowed_to_recruit_mercenaries = yes
 		OR = { 
 		any_owned_province = {
 				region = laglon_region
@@ -727,6 +791,7 @@ merc_negolai_army = {
     home_province = 5716
 	sprites = { westerngfx_sprite_pack }
     trigger = {
+		is_allowed_to_recruit_mercenaries = yes
 		OR = { 
 		any_owned_province = {
 				region = ordica_region
@@ -750,8 +815,9 @@ merc_vesberir_company = {
 	artillery_weight = 0.3
 	cost_modifier = 1.2
     home_province = 5086
-	sprites = { westerngfx_sprite_pack }
+	sprites = { muslimgfx_sprite_pack }
     trigger = {
+		is_allowed_to_recruit_mercenaries = yes
 		any_owned_province = {
 				superregion = oppia_superregion
 			}
@@ -772,8 +838,9 @@ merc_umzat_company = {
 	artillery_weight = 0.3
 	cost_modifier = 1.2
     home_province = 5044
-	sprites = { westerngfx_sprite_pack }
+	sprites = { muslimgfx_sprite_pack }
     trigger = {
+		is_allowed_to_recruit_mercenaries = yes
 		any_owned_province = {
 				superregion = oppia_superregion
 			}
@@ -794,8 +861,9 @@ merc_effashan_riders = {
 	artillery_weight = 0.3
 	cost_modifier = 1.2
     home_province = 5057
-	sprites = { westerngfx_sprite_pack }
+	sprites = { muslimgfx_sprite_pack }
     trigger = {
+		is_allowed_to_recruit_mercenaries = yes
 		any_owned_province = {
 				superregion = oppia_superregion
 			}
@@ -818,6 +886,7 @@ merc_drollo_drollers = {
 	cavalry_cap = 4
 	sprites = { indiangfx_sprite_pack }
     trigger = {
+		is_allowed_to_recruit_mercenaries = yes
 		owns_core_province = 7322
 		NOT = {
 			tag = DOR
@@ -837,6 +906,7 @@ merc_kolya_duras = {
 	cavalry_cap = 4
 	sprites = { westerngfx_sprite_pack }
     trigger = {
+		is_allowed_to_recruit_mercenaries = yes
 		any_owned_province = {
 			OR = {
 				region = apilanya_region
@@ -856,8 +926,9 @@ merc_untrar_battalion = {
     home_province = 6300 #Untrar
 	cavalry_weight = 0.2
 	cavalry_cap = 4
-	sprites = { westerngfx_sprite_pack }
+	sprites = { easterngfx_sprite_pack }
     trigger = {
+		is_allowed_to_recruit_mercenaries = yes
 		any_owned_province = {
 			OR = {
 				region = apilanya_region
@@ -867,7 +938,7 @@ merc_untrar_battalion = {
 		}
 	}
 	modifier = {
-		infantry_shock = 1
+		infantry_shock = 0.25
 		movement_speed = -0.20
 	}
 }
@@ -879,6 +950,7 @@ merc_borturi_barbarians = {
     home_province = 6181 #Somewhere in bortur
 	sprites = { westerngfx_sprite_pack }
 	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
 		OR = {
 			any_owned_province = {
 				region = west_ordica_region
@@ -907,6 +979,7 @@ merc_thalmorian_company = {
     home_province = 5116 #Thalmor
 	sprites = { muslimgfx_sprite_pack }
 	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
 		5116 = {
 			culture = Thalmorian
 		}
@@ -935,8 +1008,9 @@ merc_irfan_pirates = {
     regiments_per_development = 0.05
     home_province = 5889 #irfa
 	cavalry_weight = 0
-	sprites = { westerngfx_sprite_pack }
+	sprites = { easterngfx_sprite_pack }
     trigger = {
+		is_allowed_to_recruit_mercenaries = yes
 		5889 = {
 			owned_by = IRF
 		}
@@ -968,6 +1042,7 @@ merc_spirit_warriors = {
     home_province = 5842 #Nozumol
 	sprites = { asianfx_sprite_pack }
 	trigger = {
+		is_allowed_to_recruit_mercenaries = yes
 		5842 = {
 			religion = washoom
 		}
@@ -981,6 +1056,683 @@ merc_spirit_warriors = {
 		}
 	}
 	modifier = {
+		infantry_power = 0.10
+	}
+}
+
+# Iakperko Guard
+merc_iakperko_guard = {
+    regiments_per_development = 0.05
+    home_province = 5503 #Iakperko
+	cavalry_weight = 0.2
+	cavalry_cap = 4
+	cost_modifier = 0.5
+	sprites = { easterngfx_sprite_pack }
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		custom_trigger_tooltip = {
+			tooltip = iakperkoGuardTooltip
+			has_country_flag = iakperko_merc_flag
+		}
+	}
+	modifier = {
+		land_morale = 0.20
+	}
+}
+
+# Feniki Marines
+merc_feniki_marines = {
+    regiments_per_development = 0.03
+	cavalry_weight = 0
+	artillery_weight = 0.3
+	cavalry_cap = 0
+    home_province = 5028
+	cost_modifier = 0.33
+	sprites = { westerngfx_sprite_pack }
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		OR = {
+			custom_trigger_tooltip = {
+				tooltip = FenikiMarinesTooltip
+				has_country_flag = feniki_merc_flag
+			}
+			custom_trigger_tooltip = {
+				tooltip = lagFenikiTooltipMerc
+				has_country_flag = lagCanGetFenikiMarines
+			}
+		}
+	}
+	modifier = {
+		fire_damage = 0.10
+		reinforce_speed = 1.0
+		regiment_disembark_speed = 1.5
+	}
+}
+# Ganushan Warriors
+merc_ganushan_warriors = {
+    regiments_per_development = 0.03
+	cavalry_weight = 0.6
+    home_province = 7250
+	sprites = { muslimgfx_sprite_pack }
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		any_owned_province = {
+				region = east_great_desert_region
+		}
+	}
+	modifier = {
+		land_morale = 0.15
+	}
+}
+# Zeaf Skirmishers
+merc_zeaf_skirmishers = {
+    regiments_per_development = 0.03
+	cavalry_weight = 0.4 # smth like 12 inf 8 cav
+	artillery_weight = 0
+	cavalry_cap = 8
+    home_province = 5162
+	cost_modifier = 0.33
+	sprites = { muslimgfx_sprite_pack }
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		OR = {
+			if = {
+				limit = {
+					exists = MSD
+					NOT = {
+						exists = ZEA
+					}
+				}
+				AND = {
+					custom_trigger_tooltip = {
+						tooltip = Masidon2MercsTooltip
+						MSD = {
+							has_country_flag = zeaf_merc_flag
+						}
+					}
+					OR = {
+						tag = MSD
+						any_ally = {
+							tag = MSD
+						}
+					}
+				}
+			}
+			else = {
+				AND = {
+					custom_trigger_tooltip = {
+						tooltip = Zeaf2MercsTooltip
+						ZEA = {
+							has_country_flag = zeaf_merc_flag
+						}
+					}
+					OR = {
+						tag = ZEA
+						any_ally = {
+							tag = ZEA
+						}
+					}
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = ZeafSkirmishersTooltip
+				has_country_flag = zeaf_merc_flag
+			}
+		}
+	}
+	modifier = {
+		shock_damage = 0.10
+		movement_speed = 0.10
+	}
+}
+
+# Kyny Band
+merc_kyny_band = { #Light cavalry
+    regiments_per_development = 0.02 #small
+	cavalry_weight = 0.6
+	artillery_weight = 0
+	cavalry_cap = 12
+    home_province = 5167 #Houraska Xon, where I imagine the Jafxoi capital to likely be since they never get to Xon
+	cost_modifier = 0.33
+	sprites = { muslimgfx_sprite_pack }
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		custom_trigger_tooltip = {
+			tooltip = RavshoMercsTooltip
+			has_country_flag = ravsho_merc_flag
+		}
+	}
+	modifier = {
+		movement_speed = 0.15
+		cavalry_flanking = 0.10
+	}
+}
+# Cilrizi Khesig
+merc_cilrizi_khesig = { #Heavy Infantry
+    regiments_per_development = 0.015 #small
+	cavalry_weight = 0
+	artillery_weight = 0
+	cavalry_cap = 0
+    home_province = 5167 #Houraska Xon, where I imagine the Jafxoi capital to likely be since they never get to Xon
+	cost_modifier = 0.50
+	sprites = { muslimgfx_sprite_pack }
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		custom_trigger_tooltip = {
+			tooltip = RavshoMercsTooltip
+			has_country_flag = ravsho_merc_flag
+		}
+	}
+	modifier = {
+		shock_damage_received = -0.35
+		land_morale = 0.10
+		discipline = 0.05
+	}
+}
+# Tsarkan Horse Archers
+merc_tsarkan_archers = { #Heavy Cavalry
+    regiments_per_development = 0.02 #small
+	cavalry_weight = 0.6
+	artillery_weight = 0
+	cavalry_cap = 12
+    home_province = 5167 #Houraska Xon, where I imagine the Jafxoi capital to likely be since they never get to Xon
+	cost_modifier = 0.60
+	sprites = { muslimgfx_sprite_pack }
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		custom_trigger_tooltip = {
+			tooltip = RavshoMercsTooltip
+			has_country_flag = ravsho_merc_flag
+		}
+	}
+	modifier = {
+		cavalry_power = 0.15
+		leader_land_manuever = 6
+	}
+}
+# Faris Cataphracts
+merc_faris_cataphracts = {
+    regiments_per_development = 0.025
+	cavalry_weight = 0.4
+	artillery_weight = 0
+	cavalry_cap = 8
+    home_province = 5162
+	cost_modifier = 0.65
+	sprites = { muslimgfx_sprite_pack }
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		if = {
+			limit = {
+				exists = MSD
+				NOT = {
+					exists = ZEA
+				}
+			}
+			AND = {
+				custom_trigger_tooltip = {
+					tooltip = Masidon2MercsTooltip
+					MSD = {
+						has_country_flag = zeaf_merc_flag
+					}
+				}
+				OR = {
+					tag = MSD
+					any_ally = {
+						tag = MSD
+					}
+				}
+			}
+		}
+		else = {
+			AND = {
+				custom_trigger_tooltip = {
+					tooltip = Zeaf2MercsTooltip
+					ZEA = {
+						has_country_flag = zeaf_merc_flag
+					}
+				}
+				OR = {
+					tag = ZEA
+					any_ally = {
+						tag = ZEA
+					}
+				}
+			}
+		}
+	}
+	modifier = {
+		shock_damage = 0.15
+		shock_damage_received = -0.25
+		discipline = 0.10
+	}
+}
+
+# Poguri Tribe
+merc_tribe_of_poguri = {
+    regiments_per_development = 0.05
+    home_province = 6026 # poguri
+	cavalry_weight = 0.4
+	cavalry_cap = 8
+	sprites = { asiangfx_sprite_pack }
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		any_owned_province = {
+			region = selka_region
+		}
+	}
+	modifier = {
+		shock_damage = 0.10
+	}
+}
+
+# Lashran Raiders
+merc_lashran_raiders = {
+    regiments_per_development = 0.03
+    home_province = 5945 # myaena
+	cavalry_weight = 0.5
+	cavalry_cap = 16
+	sprites = { asiangfx_sprite_pack }
+	cost_modifier = 0.35
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		any_owned_province = {
+			region = nhoma_region
+		}
+		religion = tonmo
+	}
+	modifier = {
+		discipline = -0.075
+		cavalry_power = 0.20
+	}
+}
+
+# Halonsi Tribesmen
+merc_halonsi_tribesmen = {
+    regiments_per_development = 0.025
+    home_province = 6420 # halons
+	cavalry_weight = 0
+	sprites = { northamericagfx_sprite_pack }
+	cost_modifier = 0.9
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		any_owned_province = {
+			superregion = west_estal_superregion
+		}
+		NOT = {
+			religion_group = lathvy_group
+		}
+	}
+	modifier = {
+		land_morale = 0.10
+	}
+}
+
+# Hozyan Bandits
+merc_hozyan_bandits = {
+    regiments_per_development = 0.04
+    home_province = 6549 # east hozy
+	cavalry_weight = 0.2
+	cavalry_cap = 4
+	sprites = { easterngfx_sprite_pack }
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		OR = {
+			any_owned_province = {
+				region = gotzlic_region
+			}
+			any_owned_province = {
+				region = east_gotzlic_region
+			}
+			any_owned_province = {
+				region = south_gotzlic_region
+			}
+		}
+	}
+	modifier = {
+		movement_speed = 0.10
+		discipline = -0.05
+	}
+}
+
+# Krok Company
+merc_krok_company = {
+    regiments_per_development = 0.05
+    home_province = 5299 # krok
+	cavalry_weight = 0.2
+	cavalry_cap = 4
+	cost_modifier = 0.5
+	sprites = { westerngfx_sprite_pack }
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		mission_completed = lag_invade_the_north
+	}
+	modifier = {
+		fire_damage = 0.20
+	}
+}
+
+# vordor fians
+merc_vordor_fians = {
+    regiments_per_development = 0.05
+    home_province = 5716 
+	cavalry_weight = 0.1
+	cavalry_cap = 4
+	cost_modifier = 0.5
+	sprites = { berserker_sprites }
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		OR = {
+			religion_group = north_estali
+			has_country_modifier = orc_levvied_armies
+		}
+	}
+	modifier = {
+		movement_speed = 0.10
+		shock_damage_received = -0.05
+	}
+}
+
+# nabrozca cingetoi
+merc_nabrozca_cingetoi = {
+    regiments_per_development = 0.05
+    home_province = 5725
+	cavalry_weight = 0.1
+	cavalry_cap = 4
+	cost_modifier = 0.35
+	sprites = { berserker_sprites }
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		OR = {
+			religion_group = north_estali
+			has_country_modifier = orc_levvied_armies
+		}
+	}
+	modifier = {
+		shock_damage_received = -0.10
+	}
+}
+
+# Berserkers
+merc_berserkers_e_naravam = {
+    regiments_per_development = 0.025
+	cavalry_weight = 0
+	cavalry_cap = 0
+	cost_modifier = 0.6
+	sprites = { berserker_sprites }
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		custom_trigger_tooltip = {
+			tooltip = VamMustHavePrivilige
+			has_country_flag = berserkers_flag
+		}
+		any_owned_province = {
+			region = eastern_naravam_region
+		}
+	}
+	modifier = {
+		shock_damage_received = -0.15
+		shock_damage = 0.33
+		discipline = 0.10
+	}
+}
+
+# Berserkers
+merc_berserkers_w_naravam = {
+    regiments_per_development = 0.025
+	cavalry_weight = 0
+	cavalry_cap = 0
+	cost_modifier = 0.6
+	sprites = { berserker_sprites }
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		custom_trigger_tooltip = {
+			tooltip = VamMustHavePrivilige
+			has_country_flag = berserkers_flag
+		}
+		any_owned_province = {
+			region = western_naravam_region
+		}
+		total_development = 50
+	}
+	modifier = {
+		shock_damage_received = -0.15
+		shock_damage = 0.33
+		discipline = 0.10
+	}
+}
+
+# Berserkers
+merc_berserkers_vamanya = {
+    regiments_per_development = 0.025
+	cavalry_weight = 0
+	cavalry_cap = 0
+	cost_modifier = 0.6
+	sprites = { berserker_sprites }
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		custom_trigger_tooltip = {
+			tooltip = VamMustHavePrivilige
+			has_country_flag = berserkers_flag
+		}
+		any_owned_province = {
+			superregion = west_estal_superregion
+		}
+		total_development = 100
+	}
+	modifier = {
+		shock_damage_received = -0.15
+		shock_damage = 0.33
+		discipline = 0.10
+	}
+}
+
+# Berserkers
+merc_berserkers_nhl = {
+    regiments_per_development = 0.025
+	cavalry_weight = 0
+	cavalry_cap = 0
+	cost_modifier = 0.6
+	sprites = { berserker_sprites }
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		custom_trigger_tooltip = {
+			tooltip = VamMustHavePrivilige
+			has_country_flag = berserkers_flag
+		}
+		any_owned_province = {
+			superregion = west_estal_superregion
+		}
+		total_development = 250
+	}
+	modifier = {
+		shock_damage_received = -0.15
+		shock_damage = 0.33
+		discipline = 0.10
+	}
+}
+
+# Berserkers
+merc_berserkers_orc = {
+    regiments_per_development = 0.025
+	cavalry_weight = 0
+	cavalry_cap = 0
+	cost_modifier = 0.6
+	sprites = { berserker_sprites }
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		custom_trigger_tooltip = {
+			tooltip = VamMustHavePrivilige
+			has_country_flag = berserkers_flag
+		}
+		any_owned_province = {
+			superregion = west_estal_superregion
+		}
+		total_development = 500
+	}
+	modifier = {
+		shock_damage_received = -0.15
+		shock_damage = 0.33
+		discipline = 0.10
+	}
+}
+
+# Berserkers
+merc_berserkers_kly = {
+    regiments_per_development = 0.025
+	cavalry_weight = 0
+	cavalry_cap = 0
+	cost_modifier = 0.6
+	sprites = { berserker_sprites }
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		custom_trigger_tooltip = {
+			tooltip = VamMustHavePrivilige
+			has_country_flag = berserkers_flag
+		}
+		any_owned_province = {
+			region = apilanya_region
+		}
+		total_development = 1000
+	}
+	modifier = {
+		shock_damage_received = -0.15
+		shock_damage = 0.33
+		discipline = 0.10
+	}
+}
+
+# Berserkers
+merc_berserkers_mld = {
+    regiments_per_development = 0.025
+	cavalry_weight = 0
+	cavalry_cap = 0
+	cost_modifier = 0.6
+	sprites = { berserker_sprites }
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		custom_trigger_tooltip = {
+			tooltip = VamMustHavePrivilige
+			has_country_flag = berserkers_flag
+		}
+		any_owned_province = {
+			OR = {
+				region = pelig_region
+				region = west_emastalia_region
+				region = pextoglazia_region
+				region = east_ordica_region
+			}
+		}
+		total_development = 1500
+	}
+	modifier = {
+		shock_damage_received = -0.15
+		shock_damage = 0.33
+		discipline = 0.10
+	}
+}
+
+# Brulan Brawlers
+merc_brulan_brawlers = {
+    regiments_per_development = 0.03
+	cavalry_weight = 0.0
+	cavalry_cap = 0
+	sprites = { berserker_sprites }
+	home_province = 6473
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		OR = {
+			religion_group = north_estali
+			any_owned_province = {
+				OR = {
+					region = east_gotzlic_region
+					region = brula_region
+				}
+			}
+		}
+	}
+	modifier = {
+		shock_damage = 0.25
+		shock_damage_received = -0.10
+		land_morale = -0.10
+	}
+}
+
+# Oppian Legion
+merc_oppian_legion = {
+    regiments_per_development = 0.10
+    home_province = 5208 # brula
+	cavalry_weight = 0.10
+	cavalry_cap = 12
+	cost_modifier = 0.5
+	sprites = { muslimgfx_sprite_pack }
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		custom_trigger_tooltip = {
+			tooltip = tck_oppian_legion_req
+			has_country_flag = TCK_legion
+		}
+	}
+	modifier = {
+		shock_damage_received = -0.10
+		land_morale = 0.10
+	}
+}
+
+# Howlers of Oiko
+merc_howlers_of_oiko = {
+    regiments_per_development = 0.04
+    home_province = 6505 # oiko
+	cavalry_weight = 0.1
+	cavalry_cap = 2
+	sprites = { easterngfx_sprite_pack }
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		religion = maschi
+	}
+}
+
+#Ravsho Kheshig
+merc_ravsho_kheshig = {
+    regiments_per_development = 0.02 #small
+	cavalry_weight = 0.75
+	artillery_weight = 0
+	cavalry_cap = 16
+    home_province = 5076
+	cost_modifier = 0.45
+	sprites = { muslimgfx_sprite_pack }
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		custom_trigger_tooltip = {
+			tooltip = TckRavshoMercsReq
+			has_country_flag = tck_ravsho_mercs_flag
+		}
+	}
+	modifier = {
+		shock_damage_received = -0.35
+		land_morale = 0.10
+		discipline = 0.10
+	}
+}
+
+#Beshzies Order
+merc_beshzies_order = {
+    regiments_per_development = 0.08
+	cavalry_weight = 0.2
+	cavalry_cap = 2
+    home_province = 5320
+	cost_modifier = 0.10
+	sprites = { westerngfx_sprite_pack }
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		mission_completed = diocese_gather_support
+		offensive_war_with = PEX
+		PEX = {
+			num_of_cities = 15
+		}
+		current_age = age_of_discovery
+	}
+	modifier = {
+		reinforce_speed = 0.15
 		infantry_power = 0.10
 	}
 }

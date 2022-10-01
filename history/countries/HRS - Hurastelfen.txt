@@ -1,0 +1,22 @@
+government = tribal
+add_government_reform = lukscha_tribe
+government_rank = 1
+mercantilism = 10
+technology_group = estali_tech_gr
+religion = maschi
+primary_culture = Lukschan
+#historical_rival = 
+#historical_friend = 
+capital = 6497
+
+200.1.1 = {
+	monarch = {
+		female = yes
+		name = "Cerkieni"
+		dynasty = "Byuv"
+		birth_date = 171.12.12
+		adm = 0
+		dip = 0
+		mil = 4
+	}
+}

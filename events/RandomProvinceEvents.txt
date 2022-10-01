@@ -900,6 +900,7 @@ province_event = {
 			NOT = { owned_by = ROOT }
 			NOT = { is_core = ROOT }
 			NOT = { is_claim = ROOT }
+			culture_group = ROOT
 			owner = {
 				NOT = { primary_culture = ROOT }
 				NOT = { accepted_culture = ROOT }
@@ -952,6 +953,7 @@ province_event = {
 					NOT = { owned_by = ROOT }
 					NOT = { is_core = ROOT }
 					NOT = { is_claim = ROOT }
+					culture_group = ROOT
 					owner = {
 						NOT = { primary_culture = ROOT }
 						NOT = { accepted_culture = ROOT }

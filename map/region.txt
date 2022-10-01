@@ -151,8 +151,8 @@ apilanya_region = {
 		area_162
 		area_161
 		area_183
-		area_163
 		feemk_area
+		area_219
 	}
 }
 
@@ -162,8 +162,6 @@ gotzlic_region = {
 		bojj_area
 		sovi_area
 		hozy_area
-		area_185
-		area_189
 		area_192
 		area_191
 		area_188
@@ -172,6 +170,9 @@ gotzlic_region = {
 		area_180
 		area_190
 		area_184
+		area_163
+		area_245
+		new_zubaran_area
 	}
 }
 
@@ -196,6 +197,7 @@ brula_region = {
 		area_134
 		area_107
 		area_170
+		area_246
 	}
 }
 
@@ -204,11 +206,11 @@ upper_oppia_region = {
 		asetli_area
 		umzat_islands_area
 		east_umzatia
-		western_core_area
+		imogua_area
 		roplea_area
-		lower_oppia_area
+		keplex_area
 		arma_area
-		eastern_core_area
+		emintas_area
 		quanex_area
 		umzat_bay
 		goll_area
@@ -221,11 +223,11 @@ lower_oppia_region = {
 		ponaa_area
 		lyposh_area
 		nuti_area
-		atamsu_area
-		mesdool_area
+		canin_area
+		viel_minstro_area
 		elorak_area
-		fazalep_area
-		mesdool_area
+		fasalep_area
+		viel_minstro_area
 		astom_area
 	}
 }
@@ -233,9 +235,9 @@ lower_oppia_region = {
 arlenta_region = {
 	areas = {
 		gromash_area
-		arlen_area
-		unnamed_area_7
-		unnamed_area_8
+		neches_area
+		dibata_area
+		thalmor_area
 		zne_area
 		sosne_area
 		heoki_area
@@ -243,14 +245,15 @@ arlenta_region = {
 	}
 }
 
-maky_region = {
+zilas_region = {
 	areas = {
-		vaximor_area
-		makykay_area
-		okus_area
-		bava_area
-		rishtokay_area
-		marii_area
+		area_196
+		area_197
+		area_198
+		area_199
+		area_200
+		area_201
+		area_202
 	}
 }
 
@@ -260,30 +263,37 @@ south_xalia_region = {
 		tsaj_area
 		marn_area
 		houras_area
-		unnamed_area_10
-		unnamed_area_9
+		hos_area
+		gadea_area
 	}
 }
 
-upper_makyna_region = {
+gorfrek_region = {
 	areas = {
-		kars_area
-		umber_area
-		area_207
-		area_208
-		area_209
-		area_210
+		area_61 #
+		area_62 #
+		area_63
+		area_64
+		area_65 #
+		area_66
+		area_67
+		area_68
+		area_69
+		area_70
+		area_71
+		area_72
+		area_73
 	}
 }
 
-eastern_desert_region = {
+hoxoi_coast_region = {
 	areas = {
 		hoxoi_area
 		mahansha_area
-		unnamed_area_11
+		west_zoblotra_area
 		ropinver_area
 		diam_area
-		unnamed_area_12
+		east_zoblotra_area
 		hoxona_area
 		shol_area
 	}
@@ -291,7 +301,7 @@ eastern_desert_region = {
 
 jasua_region = {
 	areas = {
-		unnamed_area_13
+		minvir_area
 		kinvirel_area
 		unnamed_area_31
 		unnamed_area_49
@@ -307,20 +317,20 @@ jasua_region = {
 
 laglon_region = {
 	areas = {
-		unnamed_area_23
-		unnamed_area_14
-		unnamed_area_15
-		unnamed_area_16
-		unnamed_area_17
-		unnamed_area_18
+		reyel_area
+		ratahja_area
+		huparan_area
+		esmekeed_area
+		porero_area
+		druviked_area
 		feyel_area
 	}
 }
 
 west_estal_region = {
 	areas = {
-		unnamed_area_22
-		northern_umzat
+		olfemek_area
+		zata_area
 		west_feniki
 		revdirom_area
 		emzelom_area
@@ -332,37 +342,38 @@ west_estal_region = {
 	}
 }
 
-napora_region = {
+west_emastalia_region = {
 	areas = {
-		area_150
-		area_137
-		hasia_area
-		area_138
-		area_152
-		area_139
-		area_164
+		riximi_area
+		nopatle_area
+		real_durra_area
+		durra_area
+		unsets_area
+		unnamed_area_53
+		area_56
 	}
 }
 
-porlodya_region = {
+vordor_region = {
 	areas = {
-		area_149
-		area_136
-		area_105
-		area_135
-		area_148
-		area_106
-		area_100
+		holy_bridge_area
+		vordor_area
+		nagolai_area
+		area_98
+		area_140
+		area_141
+		area_153
+		area_154
 	}
 }
 
 walara_region = {
 	areas = {
-		unnamed_pexto_14
-		unnamed_pexto_11
-		unnamed_pexto_12
-		unnamed_pexto_10
-		unnamed_pexto_5
+		west_yuvla_area
+		jinasa_area
+		pixrol_area
+		gegon_area
+		hilemo_area
 	}
 }
 
@@ -370,10 +381,10 @@ pextoglazia_region = {
 	areas = {
 		pomlen_area
 		unnamed_pexto_2
-		unnamed_pexto_1
-		mofemi_morsum_area
-		unnamed_pexto_3
-		unnamed_pexto_4
+		ronpax_area
+		rondos_area
+		affna_area
+		seaside_nevia_area
 		kimina_area
 		porlam_area
 	}
@@ -381,20 +392,20 @@ pextoglazia_region = {
 
 lomea_region = {
 	areas = {
-		unnamed_pexto_6
-		unnamed_pexto_7
-		unnamed_pexto_8
-		unnamed_pexto_9
+		hatu_area
+		gineazia_area
+		tegaria_area
+		lomea_area
 		maglazios_area
 	}
 }
 
 ordica_region = {
 	areas = {
-		unnamed_area_24
-		unnamed_area_26
-		unnamed_area_27
-		unnamed_area_25
+		east_yuvla_area
+		dukula_area
+		elteyn_area
+		ordican_mountains_area
 		unnamed_area_28
 		nabrosia_area
 		nonter_area
@@ -432,47 +443,44 @@ west_ordica_region = {
 	}
 }
 
-vordor_region = {
+porlodya_region = {
 	areas = {
-		holy_bridge_area
-		vordor_area
-		nagolai_area
-		area_98
-		area_140
-		area_141
-		area_153
-		area_154
+		area_149
+		area_136
+		area_105
+		area_135
+		area_148
+		area_106
+		area_100
 	}
 }
 
 emastalia_region = {
 	areas = {
 		poxa_area
-		vava_area
+		tyarda_area
 		unnamed_area_54
 		unnamed_area_55
-		real_vava_area
+		vava_area
 		morla_area
 	}
 }
 
-west_emastalia_region = {
+napora_region = {
 	areas = {
-		riximi_area
-		nopatle_area
-		real_durra_area
-		durra_area
-		unsets_area
-		unnamed_area_53
-		area_56
+		area_150
+		area_137
+		hasia_area
+		area_138
+		area_152
+		area_139
+		area_164
 	}
 }
 
 kapolia_region = {
 	areas = {
-		kachik_area
-		bohora_area
-		unnamed_area_29
+		affan_area
 		unnamed_area_30
 		unnamed_area_33
 		unnamed_area_32
@@ -493,20 +501,15 @@ east_xalia_region = {
 		xon_area
 		vinsa_area
 		walamo_area
-		unnamed_area_21
-		vau_area
+		praman_area
 		vinon_area
 	}
 }
 
-moria_region = {
+gacil_region = {
 	areas = {
-		jexus_area
-		karmanon_area
-		morsum_area
-		vesuxa_area
-		glazia_area
-		abvori_area
+		gabero_area
+		tirix_area
 	}
 }
 
@@ -516,9 +519,8 @@ north_xalia_region = {
 		vox_larm_area
 		pexamol_area
 		elwait_area
-		unnamed_area_20
+		trilsekin_area
 		pyarxu_area
-		megloa_area
 		south_pextum_area
 	}
 }
@@ -526,7 +528,7 @@ north_xalia_region = {
 moxon_region = {
 	areas = {
 		agixion_area
-		lesser_moxon_area
+		xofka_area
 		outer_moxon_area
 		rozvos_area
 		meaprin_area
@@ -549,35 +551,26 @@ aresia_region = {
 	}
 }
 
-vanoma_region = {
+west_xalia_region = {
 	areas = {
-		unnamed_area_43
-		unnamed_area_42
-		unnamed_area_41
-		borlebim_area
-		lefim_area
-		mori_area
-		area_74
-		area_75
-		area_60
+		jexus_area
+		karmanon_area
+		morsum_area
+		mariana_area
+		vesuxa_area
+		glazia_area
+		abvori_area
 	}
 }
 
-gorfrek_region = {
+upper_makyna_region = {
 	areas = {
-		area_61
-		area_62
-		area_63
-		area_64
-		area_65
-		area_66
-		area_67
-		area_68
-		area_69
-		area_70
-		area_71
-		area_72
-		area_73
+		kars_area
+		umber_area
+		area_207
+		area_208
+		area_209
+		area_210
 	}
 }
 
@@ -630,6 +623,33 @@ nozumol_region = {
 	}
 }
 
+bamali_gulf_region = {
+	areas = {
+		unnamed_area_37
+		unnamed_area_36
+		unnamed_area_35
+		bamal_area
+		unnamed_area_48
+		unnamed_area_45
+		unnamed_area_44
+		yenis_area
+	}
+}
+
+northern_desert_region = {
+	areas = {
+		vadorvador_area
+		the_edge_area
+		khazatraal_area
+		yakven_area
+		ufulk_area
+		milk_road_area
+		porcelain_path
+		iverum_area
+		haljo_area
+	}
+}
+
 nheomyr_region = {
 	areas = {
 		fuka_area
@@ -642,33 +662,18 @@ nheomyr_region = {
 	}
 }
 
-northern_desert_region = {
+vanoma_region = {
 	areas = {
-		vadorvador_area
-		the_edge_area
-		khazatraal_area
-		yakven_area
-		ufulk_area
-	}
-}
-
-bamal_gulf_region = {
-	areas = {
-		unnamed_area_37
-		unnamed_area_36
-		unnamed_area_35
-		unnamed_area_39
-		unnamed_area_48
-		unnamed_area_45
-		unnamed_area_44
-		yenis_area
-	}
-}
-
-gacil_region = {
-	areas = {
-		gabero_area
-		tirix_area
+		unnamed_area_43
+		unnamed_area_42
+		unnamed_area_41
+		area_109
+		borlebin_area
+		lefim_area
+		mori_area
+		area_74
+		area_75
+		area_60
 	}
 }
 
@@ -677,7 +682,6 @@ east_gotzlic_region = {
 		area_158
 		nenki_area
 		area_159
-		area_160
 		dethoni_area
 		nizoora_area
 		rosta_area
@@ -697,9 +701,9 @@ south_gotzlic_region = {
 		area_182
 		area_176
 		area_175
-		area_109
 		area_108
 		area_110
+		area_160
 	}
 }
 
@@ -720,7 +724,6 @@ pelig_region = {
 
 voychonia_region = {
 	areas = {
-		area_219
 		area_223
 		area_221
 		area_225
@@ -728,6 +731,8 @@ voychonia_region = {
 		area_230
 		area_228
 		area_166
+		area_189
+		area_185
 		area_165
 		area_227
 		area_229
@@ -772,5 +777,549 @@ northwest_bhilis_region = {
 	areas = {
 		channel_islands_area
 		area_205
+	}
+}
+
+stroktur_region = {
+	areas = {
+		bohora_area
+		kachik_area
+		maru_area
+		leta_area
+	}
+}
+
+maky_region = {
+	areas = {
+		vaximor_area
+		makykay_area
+		okus_area
+		bava_area
+		rishtokay_area
+		marii_area
+	}
+}
+
+western_great_desert_region = {
+	areas = {
+		aqlqyl_area
+		tretat_area
+		qalkabh_area
+		jiri_area
+		teshtelpos_area
+		bitaman_rim
+		bareq_area
+		tamja_area
+	}
+}
+
+ekelo_region = {
+	areas = {
+		ekela_area
+		kloyo_area
+		tate_tame_area
+		kankra_area
+		narq_area
+		oblogia_area
+	}
+}
+
+thoron_region = {
+	areas = {
+		tamja_area
+		amandar_area
+		gidjifnor_area
+		vorast_area
+		kurkhan_area
+	}
+}
+
+
+
+# A province can only belong to one region!
+
+
+########################################
+# EUROPE                               #
+########################################
+
+france_region = {
+}
+
+scandinavia_region = {
+	areas = {
+	}
+}
+
+
+low_countries_region = {
+	areas = {
+	}
+
+}
+
+italy_region = {
+	areas = {
+	}
+}
+
+
+north_german_region = {
+	areas = {
+	}
+}
+
+
+
+
+south_german_region = {
+	areas = {
+	}
+}
+
+russia_region = {
+	areas = {
+	}
+}
+
+
+ural_region = {
+	areas = {
+	}
+}
+
+iberia_region = {
+	areas = {
+	}
+}
+
+
+
+british_isles_region = {
+	areas = {
+	}
+}
+
+baltic_region = {
+	areas = {
+	}
+}
+
+poland_region = {
+	areas = {
+	}
+}
+
+ruthenia_region = {
+	areas = {
+	}
+}
+
+crimea_region = {
+	areas = {
+	}
+}
+
+balkan_region = {
+	areas = {
+	}
+}
+
+carpathia_region = {
+	areas = {
+	}
+}
+
+egypt_region = {
+	areas = {
+	}
+}
+
+maghreb_region = {
+	areas = {
+	}
+}
+
+mashriq_region = {
+	areas = {
+	}
+}
+
+anatolia_region = {
+	areas = {
+	}
+}
+
+persia_region = {
+	areas = {
+	}
+}
+
+khorasan_region = {
+	areas = {
+	}
+}
+
+
+caucasia_region = {
+	areas = {
+	}
+}
+
+arabia_region = {
+	areas = {
+	}
+}
+
+niger_region = {
+	areas = {
+	}
+}
+
+guinea_region = {
+	areas = {
+	}
+}
+
+
+sahel_region = {
+	areas = {
+	}
+}
+
+horn_of_africa_region = {
+	areas = {
+	}
+}
+
+east_africa_region = {
+	areas = {
+	}
+}
+
+central_africa_region = {
+	areas = {
+	}
+}
+
+kongo_region = {
+	areas = {
+	}
+}
+
+central_asia_region = {
+	areas = {
+	}
+}
+
+south_africa_region = {
+	areas = {
+	}
+}
+
+west_siberia_region = {
+	areas = {
+	}
+}
+
+east_siberia_region = {
+	areas = {
+	}
+}
+
+mongolia_region = {
+	areas = {
+	}
+}
+
+manchuria_region = {
+	areas = {
+	}
+}
+
+korea_region = {
+	areas = {
+	}
+}
+
+tibet_region = {
+	areas = {
+	}
+}
+
+hindusthan_region = {
+	areas = {
+	}
+}
+
+bengal_region = {
+	areas = {
+	}
+}
+
+west_india_region = {
+	areas = {
+	}
+}
+
+deccan_region = {
+	areas = {
+	}
+}
+
+coromandel_region = {
+	areas = {
+	}
+}
+
+
+burma_region = {
+	areas = {
+	}
+}
+
+japan_region = {
+	areas = {
+	}
+}
+
+australia_region = {
+	areas = {
+	}
+}
+
+
+south_china_region = {
+	areas = {
+	}
+}
+
+xinan_region = {
+	areas = {
+	}
+}
+
+north_china_region = {
+	
+	areas = {
+	}
+}
+
+brazil_region = {
+	
+	areas = {
+	}
+}
+
+la_plata_region = {
+
+	areas = {
+	}
+}
+
+
+colombia_region = {
+	areas = {
+	}
+}
+
+peru_region = {
+	areas = {
+	}
+}
+
+upper_peru_region = {
+	areas = {
+	}
+}
+
+malaya_region = {	#Western Indonesia Malaya.
+	areas = {
+	}
+}
+
+
+moluccas_region = {
+	areas = {
+	}
+}
+
+
+
+indonesia_region = { #Eastern Indonesian/Malayan Islands.
+	areas = {
+	}
+}
+
+
+oceanea_region = {
+	areas = {
+	}
+}
+
+indo_china_region = {
+	areas = {
+	}
+}
+
+canada_region = {
+	areas = {
+	}
+}
+
+great_lakes_region = {
+	areas = {
+	}
+}
+
+northeast_america_region = {
+	areas = {
+	}
+}
+
+southeast_america_region =  {
+	areas = {
+	}
+}
+
+mississippi_region = {
+	areas = {
+	}
+}
+
+great_plains_region = {
+	areas = {
+	}
+}
+
+california_region = {
+	areas = {
+	}
+}
+
+cascadia_region = {
+	areas = {
+	}
+}
+
+hudson_bay_region = {
+	areas = {
+	}
+}
+
+mexico_region = {
+	areas = {
+	}
+}
+
+rio_grande_region = {
+	areas = {
+	}
+}
+
+central_america_region = {
+	areas = {
+	}
+}
+
+carribeans_region = {
+	areas = {
+	}
+}
+
+#Sea Regions
+baltic_sea_region = {
+	areas = {
+	}
+}
+
+north_atlantic_region = {
+	areas = {
+	}
+}
+
+american_east_coast_region = {
+	areas = {
+	}
+}
+
+mediterrenean_region = {
+	areas = {
+	}
+}
+
+caribbean_sea_region = {
+	areas = {
+	}
+}
+
+
+west_african_sea_region = {
+	areas = {
+	}
+}
+
+west_indian_ocean_region = {
+	areas = {
+	}
+}
+
+arabian_sea_region = {
+	areas = {
+	}
+}
+
+east_indian_ocean_region = {
+	areas = {
+	}
+}
+
+south_indian_ocean_region = {
+	areas = {
+	}
+}
+
+south_china_sea_region = {
+	areas = {
+	}
+}
+
+east_china_sea_region = {
+	areas = {
+	}
+}
+
+north_west_pacific_region = {
+	areas = {
+	}
+}
+
+south_west_pacific_region = {
+	areas = {
+	}
+}
+
+south_east_pacific_region = {
+	areas = {
+	}
+}
+
+north_east_pacific_region = {
+	areas = {
+	}
+}
+
+pacific_south_america_region = {
+	areas = {
+	}
+}
+
+atlantic_south_america_region = {
+	areas = {
+	}
+}
+
+south_atlantic_region = {
+	areas = {
 	}
 }

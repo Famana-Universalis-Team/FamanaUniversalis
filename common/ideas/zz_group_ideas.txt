@@ -1,0 +1,305 @@
+# These ideas are loaded after all country ideas, but before default idea.
+
+client_ideas = {
+	start = {
+		land_morale = 0.1
+		core_creation = -0.10
+	}
+	
+	bonus = {
+		build_cost = -0.1
+	}
+	
+	trigger = {
+		is_client_nation = yes
+	}
+	free = yes
+		
+	client_self_rule = {
+		global_unrest = -2
+	}
+	foreign_tax_collectors = {	
+		global_tax_modifier = 0.10
+	}
+	fortified_borders = {
+		defensiveness = 0.15
+	}
+	magnate_landowners = {
+		production_efficiency = 0.1
+	}	
+	mercantile_privileges = {
+		global_prov_trade_power_modifier = 0.15
+	}
+	mercenary_recruitment_center = {
+		merc_maintenance_modifier = -0.15
+	}	
+	foreign_advisors_client = {
+		advisor_pool = 1
+	}
+}
+
+
+colonial_ideas = {
+	start = {
+		development_cost = -0.1
+		no_religion_penalty = yes
+	}
+	
+	bonus = {
+		land_morale = 0.10
+	}
+	
+	trigger = {
+		is_colonial_nation = yes
+	}
+	free = yes
+	
+	founding_fathers = {
+		republican_tradition = 0.5
+	}
+	continental_trade = {
+		global_prov_trade_power_modifier = 0.25
+	}
+	manufacturing_center = {
+		build_cost = -0.1
+	}
+	free_thinkers = {
+		idea_cost = -0.1
+	}
+	colonial_militia = {
+		global_regiment_cost = -0.1
+	}
+	new_frontiers = {
+		auto_explore_adjacent_to_colony = yes
+		global_colonial_growth = 20
+	}
+	liberty_heroes = {
+		free_leader_pool = 1
+	}
+}
+
+pirate_ideas = {
+	start = {
+		navy_tradition = 1
+		free_leader_pool = 1
+	}
+	bonus = {
+		unjustified_demands = -0.25
+	}
+	trigger = {
+		OR = {
+			AND = {
+				has_government_attribute = is_pirate_republic_reform
+				NOT = { culture_group = maghrebi }
+				NOT = { tag = TET }
+				NOT = { tag = SLE }
+			}
+			tag = NSS
+			tag = PRY
+			tag = TOR
+			tag = LIB
+		}
+	}
+	free = yes
+	
+	pirates_religious_apathy = {
+		no_religion_penalty = yes
+	}	
+	pirates_plunder = {
+		loot_amount = 0.25
+	}
+	pirates_bucanneers_ideas = {	
+		infantry_cost = -0.1
+	}
+	pirates_sail_in_consort = {
+		global_naval_engagement_modifier = 0.2
+	}
+	pirates_elected_quartermasters = {
+		global_unrest = -2
+		naval_morale = 0.1
+	}
+	pirate_bays = {
+		own_coast_naval_combat_bonus = 1
+	}
+	pirate_life_of_liberty = {
+		rebel_support_efficiency = 0.25
+		sailors_recovery_speed = 0.1
+	}
+}
+
+horde_ideas = {
+	start = {
+		ae_impact = -0.10
+		years_of_nationalism = -5
+	}
+	
+	bonus = {
+		stability_cost_modifier = -0.10
+	}
+	
+	trigger = {
+		has_reform = steppe_horde
+	}
+	free = yes
+	
+	life_of_steppe_warrior = {
+		#land_attrition = -0.20 (effect taken in OIR_ideas)
+	}
+	traditions_of_the_great_khan = {
+		cavalry_power = 0.20
+	}
+	horse_supplies = {
+		land_maintenance_modifier = -0.05
+	}
+	steppe_leaders = {
+		leader_land_shock = 1
+	}
+	tradition_of_conquest = {
+		#core_creation = -0.25 (effect taken in CHG_ideas)
+	}
+	logistics_of_khan = {
+		#manpower_recovery_speed = 0.2 (effect taken in GLH_ideas)
+	}
+	glory_of_conquest = {
+		#global_manpower_modifier = 0.25 (effect taken in OIR_ideas)
+	}
+}
+
+
+theocracy_ideas = {
+	start = {
+		manpower_recovery_speed = 0.15
+		missionaries = 1
+	}
+	
+	bonus = {
+		culture_conversion_cost = -0.1
+	}
+	
+	trigger = {
+		government = theocracy
+		religion_group = christian
+	}
+	free = yes
+	
+	holy_order = {
+		discipline = 0.05
+	}
+	church_administration = {
+		stability_cost_modifier = -0.10
+		core_creation = -0.10
+	}
+	true_defender_of_the_faith = {
+		defensiveness = 0.25
+	}
+	no_witches = {
+		global_missionary_strength = 0.02
+	}
+	onward_christian_soldiers = {
+		global_garrison_growth = 0.1
+		garrison_size = 0.1
+	}
+	turn_the_other_cheek = {
+		hostile_attrition = 1
+	}
+	render_unto_ceasar = {
+		global_tax_modifier = 0.10
+	}
+}
+
+
+native_ideas = {
+	start = {
+		manpower_recovery_speed = 0.15
+		prestige_from_land = 1.0
+	}
+	
+	bonus = {
+		diplomatic_upkeep = 1
+	}
+	
+	trigger = {
+		government = native
+		NOT = { primary_culture = tupinamba }
+		NOT = { primary_culture = guajiro }
+		NOT = { 
+			capital_scope = {
+				OR = {
+					superregion = north_america_superregion
+					region = california_region
+					region = rio_grande_region
+				}
+			}
+		}
+	}
+	free = yes
+	
+	
+	counting_coups = {
+		land_morale = 0.1
+	}
+	storytelling_tradition = {
+		idea_cost = -0.1
+	}
+	clan_mothers = {
+		production_efficiency = 0.1
+	}
+	adopt_clan_totems = {
+		stability_cost_modifier = -0.1
+	}
+	the_little_war = {
+		global_unrest = -2
+	}
+	war_and_peace_chiefs = {
+		global_manpower_modifier = 0.20
+	}
+	great_winter_hunts = {
+		global_colonial_growth = 25
+	}
+}
+generic_federation_ideas = {
+	start = {
+		core_creation = -0.10
+		development_cost = -0.1
+	}
+	
+	bonus = {
+		diplomatic_reputation = 1
+	}
+	
+	trigger = { 
+		is_federation_nation = yes
+		NOT = {
+			primary_culture = iroquois
+			primary_culture = creek
+			primary_culture = algonquin
+			primary_culture = dakota
+		}
+	}
+	free = yes
+	
+	fed_council_of_elders = {
+		global_manpower_modifier = 0.20
+	}
+	fed_great_chief = {
+		heir_chance = 0.5
+		global_unrest = -2
+	}
+	fed_petroglyphs = {
+		tolerance_own = 2
+	}
+	fed_sign_language = {
+		idea_cost = -0.1
+		culture_conversion_cost = -0.1
+	}
+	fed_gender_parity = {
+		stability_cost_modifier = -0.1
+		female_advisor_chance = 0.5
+	}
+	fed_little_brother_of_war = {
+		prestige_from_land = 1.0
+	}
+	fed_sunrise_invasion = {
+		global_colonial_growth = 30
+	}
+}

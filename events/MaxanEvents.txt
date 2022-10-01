@@ -1,0 +1,509 @@
+namespace = moxon
+#Bohoran culture shift
+country_event = {
+	id = moxon.1
+	title = moxon.1.t
+	desc = moxon.1.d
+	picture = REFORM_eventPicture
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = SKT
+			NOT = {
+				culture_group = Maxan
+			}
+		}
+		any_owned_province = {
+			culture = Bohoran
+		}
+		is_year = 245
+		has_global_flag = goForMaxanShift
+	}
+
+	mean_time_to_happen = {
+		months = 30
+	}
+	
+	option = {
+		name = moxon.1.a
+		ai_chance = { factor = 8 }
+		set_country_flag = sktWentEmastalian
+		custom_tooltip = BohoranCultureGroupChange
+		hidden_effect = {
+			every_country = {
+				limit = {
+					primary_culture = Bohoran
+				}
+				change_primary_culture = Bohoran_E
+			}
+			every_country = {
+				limit = {
+					accepted_culture = Bohoran
+				}
+				add_accepted_culture = Bohoran_E
+				remove_accepted_culture	= Bohoran
+			}
+			every_province = {
+				limit = { culture = Bohoran }
+				change_culture = Bohoran_E
+			}
+			if = {
+				limit = { primary_culture = Bohoran }
+				change_primary_culture = Bohoran_E
+			}
+			if = {
+				limit = {
+					accepted_culture = Bohoran
+				}
+				add_accepted_culture = Bohoran_E
+				remove_accepted_culture	= Bohoran
+			}
+			if = {
+				limit = {
+					ruler_culture = Bohoran
+				}
+				set_ruler_culture = Bohoran_E
+			}
+			if = {
+				limit = {
+					consort_culture = Bohoran
+				}
+				set_consort_culture = Bohoran_E
+			}
+			if = {
+				limit = {
+					heir_culture = Bohoran
+				}
+				set_heir_culture = Bohoran_E
+			}
+		}
+	}
+	
+	option = {
+		name = moxon.1.b
+		ai_chance = { factor = 2 }
+		set_country_flag = sktWentMaxan
+		add_dip_power = -50
+		5361 = {
+			add_trade_modifier = {
+            	who = ROOT
+            	duration = 3650
+            	power = 25
+            	key = maxan_focus
+			}
+		}
+	}
+}
+
+country_event = {
+	id = moxon.2
+	title = moxon.2.t
+	desc = moxon.2.d
+	picture = REFORM_eventPicture
+	fire_only_once = yes
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = moxon.2.a
+		ai_chance = {
+			factor = 1000
+			modifier = {
+				factor = 0
+				any_country = {
+					has_country_flag = maxan_event_here
+				}
+			}
+		}
+		custom_tooltip = emastalianShiftTooltip
+		hidden_effect = {
+			every_province = {
+				limit = { culture = Maxan_West_Emastalian }
+				change_culture = West_Emastalian
+			}
+        	every_province = {
+				limit = { culture = Maxan_East_Emastalian }
+				change_culture = East_Emastalian
+			}
+
+			if = {
+				limit = {
+					primary_culture = Maxan_West_Emastalian
+				}
+				change_primary_culture = West_Emastalian
+				set_ruler_culture = West_Emastalian
+			}
+
+			if = {
+				limit = {
+					OR = {
+						primary_culture = Maxan_West_Emastalian
+						primary_culture = West_Emastalian
+					}
+					has_consort = yes
+				}
+				set_consort_culture = West_Emastalian
+			}
+
+			if = {
+				limit = {
+					OR = {
+						primary_culture = Maxan_West_Emastalian
+						primary_culture = West_Emastalian
+					}
+					has_heir = yes
+				}
+				set_heir_culture = West_Emastalian
+			}
+
+        	if = {
+				limit = {
+					primary_culture = Maxan_East_Emastalian
+				}
+				set_ruler_culture = East_Emastalian
+				change_primary_culture = East_Emastalian
+			}
+
+			if = {
+				limit = {
+					OR = {
+						primary_culture = Maxan_East_Emastalian
+						primary_culture = East_Emastalian
+					}
+					has_consort = yes
+				}
+				set_consort_culture = Maxan_East_Emastalian
+			}
+
+			if = {
+				limit = {
+					OR = {
+						primary_culture = Maxan_East_Emastalian
+						primary_culture = East_Emastalian
+					}
+					has_heir = yes
+				}
+				set_heir_culture = Maxan_East_Emastalian
+			}
+
+			if = {
+				limit = {
+					accepted_culture = Maxan_West_Emastalian
+				}
+				add_accepted_culture = West_Emastalian
+				remove_accepted_culture	= Maxan_West_Emastalian
+			}
+        	if = {
+				limit = {
+					accepted_culture = Maxan_East_Emastalian
+				}
+				add_accepted_culture = East_Emastalian
+				remove_accepted_culture	= Maxan_East_Emastalian
+			}
+			every_country = {
+				limit = {
+					primary_culture = Maxan_West_Emastalian
+				}
+				set_ruler_culture = West_Emastalian
+				change_primary_culture = West_Emastalian
+			}
+			every_country = {
+				limit = {
+					accepted_culture = Maxan_West_Emastalian
+				}
+				add_accepted_culture = West_Emastalian
+				remove_accepted_culture	= Maxan_West_Emastalian
+			}
+            every_country = {
+				limit = {
+					primary_culture = Maxan_East_Emastalian
+				}
+				set_ruler_culture = East_Emastalian
+				change_primary_culture = East_Emastalian
+			}
+			every_country = {
+				limit = {
+					accepted_culture = Maxan_East_Emastalian
+				}
+				add_accepted_culture = East_Emastalian
+				remove_accepted_culture	= Maxan_East_Emastalian
+			}
+	
+			every_country = {
+				limit = {
+					OR = {
+						primary_culture = Maxan_West_Emastalian
+						primary_culture = West_Emastalian
+					}
+					has_consort = yes
+				}
+				set_consort_culture = West_Emastalian
+			}
+			
+			every_country = {
+				limit = {
+					OR = {
+						primary_culture = Maxan_West_Emastalian
+						primary_culture = West_Emastalian
+					}
+					has_heir = yes
+				}
+				set_heir_culture = West_Emastalian
+			}
+	
+			every_country = {
+				limit = {
+					OR = {
+						primary_culture = Maxan_East_Emastalian
+						primary_culture = East_Emastalian
+					}
+					has_consort = yes
+				}
+				set_consort_culture = Maxan_East_Emastalian
+			}
+	
+			every_country = {
+				limit = {
+					OR = {
+						primary_culture = Maxan_East_Emastalian
+						primary_culture = East_Emastalian
+					}
+					has_heir = yes
+				}
+				set_heir_culture = Maxan_East_Emastalian
+			}
+		}
+	}
+
+	option = {
+		name = moxon.2.b
+		ai_chance = { factor = 1 }
+		trigger = {
+			AND = {
+				ai = yes
+				any_country = {
+					has_country_flag = maxan_event_here
+				}
+			}
+		}
+	}
+
+}
+
+country_event = {
+	id = moxon.3
+	title = moxon.3.t
+	desc = moxon.3.d
+	picture = REFORM_eventPicture
+	fire_only_once = yes
+    hidden = yes
+
+	trigger = {
+		exists = MOX
+		is_year = 270
+		MOX = {
+			any_owned_province = {
+				OR = {
+					region_for_scope_province= {
+						region = stroktur_region
+					}
+					region_for_scope_province= {
+						region = emastalia_region
+					}
+					region_for_scope_province= {
+						region = west_emastalia_region
+					}
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = moxon.3.a
+		ai_chance = { factor = 1 }
+		MOX = {
+            set_country_flag = moxon_presence
+        }
+	}
+
+}
+
+#Control event for 2
+country_event = {
+	id = moxon.4
+	title = moxon.4.t
+	desc = moxon.4.d
+	picture = REFORM_eventPicture
+	fire_only_once = yes
+	hidden = yes
+
+	trigger = {
+		OR = {
+            primary_culture = Maxan_West_Emastalian
+            primary_culture = Maxan_East_Emastalian
+        }
+		is_year = 240
+        NOT = {
+            MOX = {
+                has_country_flag = moxon_presence
+            }
+        }
+		any_owned_province = {
+			OR = {
+                culture = Maxan_West_Emastalian
+                culture = Maxan_East_Emastalian
+            }
+		}
+        NOT = {
+			MOX = {
+				any_owned_province = {
+					OR = {
+						region_for_scope_province= {
+							region = stroktur_region
+						}
+						region_for_scope_province= {
+							region = emastalia_region
+						}
+						region_for_scope_province= {
+							region = west_emastalia_region
+						}
+					}
+				}
+			}
+        }
+	}
+
+	mean_time_to_happen = {
+		months = 30
+	}
+
+	immediate = {
+		set_global_flag = goForMaxanShift
+	    every_country = {
+	        limit = {
+				ai = no
+	        	capital_scope = {
+					region_for_scope_province = {
+						OR = {
+							region = emastalia_region
+	        	        	region = west_emastalia_region
+						}
+					}
+	        	}
+			}
+			country_event = {
+	            id = moxon.2
+	        }
+			set_country_flag = maxan_event_here
+	    }
+	    random_country = {
+	        limit = {
+	            capital_scope = {
+	                region_for_scope_province = {
+						OR = {
+							region = emastalia_region
+	                    	region = west_emastalia_region
+						}
+					}
+	            }
+	        }
+	        country_event = {
+	            id = moxon.2
+	        }
+	    }
+	}
+
+	option = {
+		name = moxon.4.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+#Kachik->Emastalian
+country_event = {
+	id = moxon.5
+	title = moxon.5.t
+	desc = moxon.5.d
+	picture = REFORM_eventPicture
+	fire_only_once = yes
+	major = yes
+
+	trigger = {
+		owns = 5492
+		NOT = {
+			OR = {
+				exists = NAF
+				exists = KLG
+			}
+		}
+		NOT = {
+			OR = {
+				current_age	= age_of_discovery
+				current_age	= age_of_reformation
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 360
+	}
+	
+	option = {
+		name = moxon.5.a
+		ai_chance = { factor = 1 }
+		custom_tooltip = kachikBecomeEmastalian
+		hidden_effect = {
+			every_country = {
+				limit = {
+					primary_culture = Kachik
+				}
+				change_primary_culture = Bohoran_E
+			}
+			every_country = {
+				limit = {
+					accepted_culture = Kachik
+				}
+				add_accepted_culture = Bohoran_E
+				remove_accepted_culture	= Kachik
+			}
+			every_province = {
+				limit = { culture = Kachik }
+				change_culture = Bohoran_E
+			}
+			if = {
+				limit = { primary_culture = Kachik }
+				change_primary_culture = Bohoran_E
+			}
+			if = {
+				limit = {
+					accepted_culture = Kachik
+				}
+				add_accepted_culture = Bohoran_E
+				remove_accepted_culture	= Kachik
+			}
+			if = {
+				limit = {
+					ruler_culture = Kachik
+				}
+				set_ruler_culture = Bohoran_E
+			}
+			if = {
+				limit = {
+					consort_culture = Kachik
+				}
+				set_consort_culture = Bohoran_E
+			}
+			if = {
+				limit = {
+					heir_culture = Kachik
+				}
+				set_heir_culture = Bohoran_E
+			}
+		}
+	}
+}

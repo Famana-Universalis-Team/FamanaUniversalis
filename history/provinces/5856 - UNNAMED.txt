@@ -7,13 +7,14 @@ base_tax = 1
 base_production = 1
 base_manpower = 1
 # livestock
+is_city = no
 native_size = 5
 native_ferocity = 5
 native_hostileness = 5
 capital = "Paku"
-is_city = no
+ 
 
-discovered_by = geopyopian_tech_gr
+discovered_by = washoom_tech_gr
 discovered_by = north_antebari_tech_gr
 
 

@@ -5,7 +5,8 @@ mercantilism = 10
 technology_group = east_gomic_tech_gr
 religion = eastern_oppian
 primary_culture = Blastan
-capital = 5509	# change to real capital
+capital = 5509	
+add_army_professionalism = 0.15
 
 200.1.1 = { #change to 200 or smth
 	monarch = {

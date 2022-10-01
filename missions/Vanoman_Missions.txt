@@ -19,7 +19,7 @@ van_1 = {
         }
         effect = {
             add_splendor = 250
-            add_stability = 1
+            add_stability_or_adm_power = yes
         }
         provinces_to_highlight = {
             province_id = 5669
@@ -30,7 +30,7 @@ van_1 = {
         icon = mission_early_modern_university
         required_missions = { van_develop_montava }
         trigger = {
-            innovativeness = 30
+            innovativeness = 25
         }
         effect = {
             add_adm_tech = 1
@@ -61,16 +61,20 @@ van_1 = {
             }
         }
         effect = {
-            borlebim_area = {
+            borlebin_area = {
                 cede_province = ROOT
                 add_core = ROOT
                 change_culture = ROOT
                 change_religion	= ROOT
             }
+            add_country_modifier = {
+                name = vanoman_settlement_modifier
+                duration = 9125
+            }
         }
         provinces_to_highlight = {
             OR = {
-				area = borlebim_area
+				area = borlebin_area
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }

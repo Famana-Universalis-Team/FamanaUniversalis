@@ -1,5 +1,5 @@
 discovered_by = east_gomic_tech_gr
-discovered_by = north_gomic_tech_gr
+discovered_by = lathvy_tech_gr
 
 discovered_by = west_gomic_tech_gr
 #Written with Eu4 Easy Province Creator by emiroercn
@@ -14,9 +14,21 @@ base_production = 3
 trade_goods = glass
 base_manpower = 3
 capital = "Sapar"
-is_city = yes
-extra_cost = 1
+ 
+
 
 owner = GRO
+is_city = yes
 controller = GRO
 add_core = GRO
+
+212.6.7 = {
+owner = NUS
+is_city = yes
+controller = NUS
+add_core = NUS
+remove_core = GRO
+#culture = 
+#religion = 
+#trade_goods = 
+}

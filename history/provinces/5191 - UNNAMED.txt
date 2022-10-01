@@ -1,9 +1,10 @@
 discovered_by = east_gomic_tech_gr
-discovered_by = north_gomic_tech_gr
+discovered_by = lathvy_tech_gr
 discovered_by = west_gomic_tech_gr
 culture = Oppio_Jasuan
 religion = eastern_oppian
 owner = JTA
+is_city = yes
 controller = JTA
 add_core = JTA
 
@@ -16,6 +17,6 @@ base_production = 5
 trade_goods = incense
 base_manpower = 4
 capital = "Jeta"
-is_city = yes
-extra_cost = 1
+ 
+
 

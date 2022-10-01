@@ -1,8 +1,9 @@
-discovered_by = gotzlic_tech_gr
+discovered_by = estali_tech_gr
 discovered_by = naravami_tech_gr
 culture = Leronyan
 religion = gotzli
 owner = LER
+is_city = yes
 controller = LER
 add_core = LER
 add_core = MIZ
@@ -15,9 +16,9 @@ base_tax = 3
 base_production = 2
 trade_goods = copper
 base_manpower = 2
-capital = "UNNAMED"
-is_city = no
-extra_cost = 1
+capital = "Onis"
+ 
+
 
 
 

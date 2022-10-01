@@ -1,8 +1,9 @@
-discovered_by = gotzlic_tech_gr
+discovered_by = estali_tech_gr
 discovered_by = naravami_tech_gr
 culture = Hozyan
 religion = gotzli
 owner = WHZ
+is_city = yes
 controller = WHZ
 add_core = WHZ
 
@@ -14,9 +15,9 @@ base_tax = 3
 base_production = 2
 trade_goods = fur
 base_manpower = 2
-capital = "UNNAMED"
-is_city = no
-extra_cost = 1
+capital = "Honjis"
+ 
+
 
 
 

@@ -5,8 +5,9 @@ mercantilism = 10
 technology_group = west_gomic_tech_gr
 religion = lathvy
 primary_culture = Neo_Xalnish
-capital = 5384	# change to real capital
+capital = 5384	
 religious_school = maxan_school
+add_army_professionalism = 0.05
 
 200.1.1 = { #change to 200 or smth
 	monarch = {

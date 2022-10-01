@@ -3,6 +3,7 @@
 add_core = QAN
 add_core = DOR
 owner = DOR
+is_city = yes
 controller = DOR
 culture = Qanoyan_C
 religion = dorroman
@@ -13,7 +14,7 @@ trade_goods = cloth
 base_manpower = 10
 center_of_trade = 2
 capital = "UNNAMED"
-is_city = yes
+ 
 discovered_by = qamoni_tech_gr
 
 

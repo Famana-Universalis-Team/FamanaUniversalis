@@ -1,0 +1,791 @@
+namespace = xalflavor_other
+#Arism
+country_event = {
+	id = xalflavor_other.1
+	title = xalflavor_other.1.t
+	desc = xalflavor_other.1.d
+	picture = RELIGION_eventPicture
+
+	trigger = {
+		religion = morian
+		is_year = 225
+		NOT = {
+			is_year = 280
+		}
+		NOT = {
+			has_country_flag = has_had_arism
+		}
+	}
+	mean_time_to_happen = {
+		months = 24
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = has_had_arism
+		}
+	}
+
+	option = {
+		name = xalflavor_other.1.a
+		ai_chance = { factor = 70 }
+		every_known_country = {
+			limit = {
+				religion = lathvy
+				capital_scope = {
+					superregion = ga_xal_superregion
+  		  		}
+   		   	}
+   		 	add_opinion = {
+				who = ROOT
+	  			modifier = antiarist_opinion
+			}
+		}
+		add_country_modifier = {
+			name = antiarist_modifier
+			duration = 3650
+  		}
+	}
+
+	option = {
+		name = xalflavor_other.1.b
+		ai_chance = { factor = 30 }
+		every_known_country = {
+			limit = {
+				religion_group = lathvy_group
+				capital_scope = {
+					superregion = ga_xal_superregion
+				}
+			}
+			add_opinion = {
+   				who = ROOT
+				modifier = arist_opinion
+			}
+		}
+		add_country_modifier = {
+			name = arist_modifier
+			duration = 3650
+		}
+	}
+}
+#Beaunty of Delk
+country_event = {
+	id = xalflavor_other.2
+	title = xalflavor_other.2.t
+	desc = xalflavor_other.2.d
+	picture = MERCHANTS_TALKING_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		religion = delkian
+	}
+	mean_time_to_happen = {
+		months = 96
+	}
+
+	option = {
+		name = xalflavor_other.2.a
+		ai_chance = { factor = 50 }
+		add_estate_loyalty = {
+			estate = estate_church
+			loyalty = 5
+		}
+		random_owned_province = {
+			limit = {
+				NOT = {
+					has_building = temple
+				}
+				NOT = { has_building = cathedral }
+				num_free_building_slots = 1
+			}
+			add_building = temple
+		}
+	}
+	option = {
+		name = xalflavor_other.2.b
+		ai_chance = { factor = 50 }
+		add_years_of_income = 1.25
+	}
+}
+
+#Rastrayvarism
+country_event = {
+	id = xalflavor_other.3
+	title = xalflavor_other.3.t
+	desc = xalflavor_other.3.d
+	picture = RELIGIOUS_TURMOIL_eventPicture
+
+	trigger = {
+		religion = shirian
+		is_year = 230
+		NOT = {
+			is_year = 245
+		}
+		NOT = {
+			has_country_flag = has_had_rastrayvarism
+		}
+	}
+	mean_time_to_happen = {
+		years = 6
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = has_had_rastrayvarism
+		}
+	}
+
+	option = {
+		name = xalflavor_other.3.a
+		ai_chance = { factor = 70 }
+		add_stability = 1
+		add_years_of_income = -0.5
+	}
+
+	option = {
+		name = xalflavor_other.3.b
+		ai_chance = { factor = 30 }
+		add_country_modifier = {
+			name = rastrayvarists_supported
+			duration = 1825
+		}
+	}
+}
+
+#Rastrayvar control
+country_event = {
+	id = xalflavor_other.4
+	title = xalflavor_other.4.t
+	desc = xalflavor_other.4.d
+	picture = FAMINE_eventPicture
+	hidden = yes
+
+	trigger = {
+		owns = 5377
+		had_global_flag	= {
+			flag = rastrayvar_control_flag
+			days = 1825
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 1020
+	}
+
+	immediate = {
+		hidden_effect = {
+			clr_global_flag	= rastrayvar_control_flag
+			random_country = {
+				country_event = {
+					id = xalflavor_other.5
+					days = 30
+				}
+			}
+			random_country = {
+				limit = {
+					any_owned_province = {
+						OR = {
+							region = north_xalia_region
+							region = moxon_region
+							area = glazia_area
+						}
+					}
+				}
+				country_event = {
+					id = xalflavor_other.7
+					days = 1
+				}
+			}
+			every_country = {
+				limit = {
+					any_owned_province = {
+						OR = {
+							region = north_xalia_region
+							region = moxon_region
+							area = glazia_area
+						}
+					}
+				}
+				country_event = {
+					id = xalflavor_other.6
+				}
+				if = {
+					limit = {
+						has_ruler = "Vergil"
+					}
+					country_event = {
+						id = eastereggs.6
+					}
+				}
+			}
+		}
+	}
+
+	option = {
+		name = xalflavor_other.4.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+#Rastrayvar control 2
+country_event = {
+	id = xalflavor_other.5
+	title = xalflavor_other.5.t
+	desc = xalflavor_other.5.d
+	picture = FAMINE_eventPicture
+	hidden = yes
+	is_triggered_only = yes
+
+	immediate = {
+		set_global_flag = rastrayvar_control_flag
+	}
+
+	option = {
+		name = xalflavor_other.5.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+#Actual rastrayvar event
+country_event = {
+	id = xalflavor_other.6
+	title = xalflavor_other.6.t
+	desc = xalflavor_other.6.d
+	picture = FAMINE_eventPicture
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					OR = {
+						region = north_xalia_region
+						region = moxon_region
+						area = glazia_area
+					}
+				}
+				add_devastation	= 15
+				cancel_construction = yes
+			}
+		}
+	}
+
+	option = {
+		name = xalflavor_other.6.a
+		ai_chance = { factor = 1 }
+		every_owned_province = {
+			limit = {
+				OR = {
+					region = north_xalia_region
+					region = moxon_region
+					area = glazia_area
+				}
+			}
+			add_province_modifier = {
+				name = rastrayvar_recovery_province_modifier
+				duration = 1825
+			}
+		}
+		if = {
+			limit = {
+				capital_scope = {
+					superregion = ga_xal_superregion
+				}
+			}
+			add_stability = -1
+		}
+	}
+}
+
+country_event = {
+	id = xalflavor_other.7
+	title = xalflavor_other.7.t
+	desc = xalflavor_other.7.d
+	picture = FAMINE_eventPicture
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = xalflavor_other.7.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+# GADAN MISSION EVENTS
+
+country_event = {
+	id = xalflavor_other.8
+	title = xalflavor_other.8.t
+	desc = xalflavor_other.8.d
+	picture = RELIGION_eventPicture
+	is_triggered_only = yes
+
+	immediate = {
+	}
+
+	option = {
+		name = xalflavor_other.8.a #agree
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 1
+				NOT = {
+					has_opinion = {
+						who = GDA
+						value = 0
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				development_in_provinces = {
+					value = 20
+				}
+			}
+		}
+		GDA = {
+			country_event = {
+				id = xalflavor_other.9
+			}
+		}
+		GDL = {
+			country_event = {
+				id = xalflavor_other.9
+			}
+		}
+	}
+
+	option = {
+		name = xalflavor_other.8.b #disagree
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 1
+				has_opinion = {
+					who = GDA
+					value = 0
+				}
+			}
+		}
+		GDA = {
+			country_event = {
+				id = xalflavor_other.10
+			}
+		}
+		GDL = {
+			country_event = {
+				id = xalflavor_other.10
+			}
+		}
+	}
+}
+
+country_event = { #yes
+	id = xalflavor_other.9
+	title = xalflavor_other.9.t
+	desc = xalflavor_other.9.d
+	picture = RELIGIOUS_CONVERSION_eventPicture
+	is_triggered_only = yes
+
+	immediate = {
+
+	}
+
+	option = {
+		name = xalflavor_other.9.a
+		ai_chance = { factor = 1 }
+		create_subject = {
+			subject_type = gadan_tributary_state
+			subject = FROM
+		}
+	}
+}
+
+country_event = { #no
+	id = xalflavor_other.10
+	title = xalflavor_other.10.t
+	desc = xalflavor_other.10.d
+	picture = RELIGIOUS_TURMOIL_eventPicture
+	is_triggered_only = yes
+
+	immediate = {
+		
+	}
+
+	option = {
+		name = xalflavor_other.10.a
+		ai_chance = { factor = 1 }
+		add_casus_belli = {
+			target = FROM
+			type = cb_vassalize_mission
+			months = 180
+		}
+	}
+}
+
+country_event = { #if gadan converts away
+	id = xalflavor_other.11
+	title = xalflavor_other.11.t
+	desc = xalflavor_other.11.d
+	picture = RELIGIOUS_TURMOIL_eventPicture
+
+	trigger = {
+		OR = {
+			tag = GDA
+			tag = GDL
+		}
+		NOT = { religion = gadan }
+	}
+
+	immediate = {
+
+	}
+
+	option = {
+		name = xalflavor_other.11.a
+		ai_chance = { factor = 1 }
+		clr_global_flag = Gadea_Vassal_Swarm
+		release_all_subjects = yes
+		swap_non_generic_missions = yes
+	}
+}
+
+country_event = { #become vassal
+	id = xalflavor_other.12
+	title = xalflavor_other.12.t
+	desc = xalflavor_other.12.d
+	picture = RELIGIOUS_CONVERSION_eventPicture
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	trigger = {
+		religion = gadan
+		NOT = {
+			is_subject = yes
+		}
+		NOT = {
+			OR = {
+				tag = GDA
+				tag = GDL
+			}
+		}
+		has_global_flag = Gadea_Vassal_Swarm
+	}
+
+	immediate = {
+		
+	}
+
+	option = {
+		name = xalflavor_other.12.a
+		ai_chance = { factor = 1 }
+		if = {
+			limit = {
+				has_global_flag = Gadea_Vassal_Swarm_Annexable
+			}
+			if = {
+				limit = {
+					NOT = { has_global_flag = GadelisFlag }
+				}
+				GDA = {
+					create_subject = {
+						subject_type = gadan_tributary_state_annexable
+						subject = ROOT
+					}
+					country_event = {
+						id = xalflavor_other.15
+					}
+				}
+			}
+			else = {
+				GDL = {
+					create_subject = {
+						subject_type = gadan_tributary_state_annexable
+						subject = ROOT
+					}
+					country_event = {
+						id = xalflavor_other.15
+					}
+				}
+			}
+		}
+		else = {
+			if = {
+				limit = {
+					NOT = { has_global_flag = GadelisFlag }
+				}
+				GDA = {
+					create_subject = {
+						subject_type = gadan_tributary_state
+						subject = ROOT
+					}
+					country_event = {
+						id = xalflavor_other.14
+					}
+				}
+			}
+			else = {
+				GDL = {
+					create_subject = {
+						subject_type = gadan_tributary_state
+						subject = ROOT
+					}
+					country_event = {
+						id = xalflavor_other.14
+					}
+				}	
+			}
+		}
+		if = {
+			limit = {
+				AND = {
+					has_global_flag = Gadea_Vassal_Swarm_Maky
+					capital_scope = {
+						region = maky_region
+					}
+				}
+			}
+			if = {
+				limit = {
+					NOT = { has_global_flag = GadelisFlag }
+				}
+				GDA = {
+					create_subject = {
+						subject_type = gadan_tributary_state_annexable
+						subject = ROOT
+					}
+					country_event = {
+						id = xalflavor_other.15
+					}
+				}
+			}
+			else = {
+				GDL = {
+					create_subject = {
+						subject_type = gadan_tributary_state_annexable
+						subject = ROOT
+					}
+					country_event = {
+						id = xalflavor_other.15
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				AND = {
+					has_global_flag = Gadea_Vassal_Swarm_Gadan
+					capital_scope = {
+						OR = {
+							area = morsum_area
+							area = mariana_area
+							area = tsaj_area
+							area = zeaf_area
+							area = bava_area
+							area = gadea_area
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					NOT = { has_global_flag = GadelisFlag }
+				}
+				GDA = {
+					create_subject = {
+						subject_type = gadan_tributary_state_annexable
+						subject = ROOT
+					}
+					country_event = {
+						id = xalflavor_other.15
+					}
+				}
+			}
+			else = {
+				GDL = {
+					create_subject = {
+						subject_type = gadan_tributary_state_annexable
+						subject = ROOT
+					}
+					country_event = {
+						id = xalflavor_other.15
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = { #unbecome vassal
+	id = xalflavor_other.13
+	title = xalflavor_other.13.t
+	desc = xalflavor_other.13.d
+	picture = RELIGIOUS_CONVERSION_eventPicture
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	trigger = {
+		NOT = { religion = gadan }
+		OR = {
+			is_subject_of_type = gadan_tributary_state
+			is_subject_of_type = gadan_tributary_state_annexable
+		}
+	}
+
+	option = {
+		name = xalflavor_other.13.a
+		ai_chance = { factor = 1 }
+		grant_independence = yes
+	}
+}
+
+country_event = { #learning of new trib
+	id = xalflavor_other.14
+	title = xalflavor_other.14.t
+	desc = xalflavor_other.14.d
+	picture = RELIGIOUS_CONVERSION_eventPicture
+	is_triggered_only = yes
+
+	immediate = {
+		
+	}
+
+	option = {
+		name = xalflavor_other.14.a
+		ai_chance = { factor = 1 }
+		custom_tooltip = Gadea_new_trib
+	}
+}
+
+country_event = { #learning of new vassal
+	id = xalflavor_other.15
+	title = xalflavor_other.14.t #intentional
+	desc = xalflavor_other.14.d
+	picture = RELIGIOUS_CONVERSION_eventPicture
+	is_triggered_only = yes
+
+	immediate = {
+		
+	}
+
+	option = {
+		name = xalflavor_other.14.a
+		ai_chance = { factor = 1 }
+		custom_tooltip = Gadea_new_vassal
+	}
+}
+
+country_event = { #learning of vassal leaving
+	id = xalflavor_other.16
+	title = xalflavor_other.16.t
+	desc = xalflavor_other.16.d
+	picture = RELIGIOUS_TURMOIL_eventPicture
+	is_triggered_only = yes
+
+	immediate = {
+		
+	}
+
+	option = {
+		name = xalflavor_other.16.a
+		ai_chance = { factor = 1 }
+		custom_tooltip = Gadea_leaves
+	}
+}
+
+country_event = { #if gadea dies
+	id = xalflavor_other.17
+	hidden = yes
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			GDA = {
+				exists = no
+			}
+			GDL = {
+				exists = no
+			}
+		}
+	}
+
+	immediate = {
+		every_known_country = {
+			limit = {
+				OR = {
+					is_subject_of_type = gadan_tributary_state
+					is_subject_of_type = gadan_tributary_state_annexable
+				}
+			}
+			release = THIS
+		}
+	}
+
+	option = {
+		name = xalflavor_other.16.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = { #Warning of Gadea
+	id = xalflavor_other.18
+	title = xalflavor_other.18.t
+	desc = xalflavor_other.18.d
+	picture = RELIGIOUS_TURMOIL_eventPicture
+	is_triggered_only = yes
+
+	immediate = {
+		
+	}
+
+	option = {
+		name = xalflavor_other.18.a
+		ai_chance = { factor = 1 }
+		custom_tooltip = GadeaWarning
+	}
+}
+
+country_event = { #gain cb
+	id = xalflavor_other.19
+	hidden = yes
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	trigger = {
+		has_global_flag = Gadean_Imperial_crusade
+		NOT = {
+			GDA = {
+				has_casus_belli = {
+					type = cb_convert_gadan
+					target = ROOT
+				}
+			}
+		}
+		GDA = {
+			knows_country = ROOT
+		}
+	}
+
+	immediate = {
+		ROOT = {
+			reverse_add_casus_belli = {
+				type = cb_convert_gadan
+				target = GDL
+			}
+		}
+	}
+
+	option = {
+		name = xalflavor_other.18.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+# / GADAN MISSION EVENTS Gadean_Imperial_crusade

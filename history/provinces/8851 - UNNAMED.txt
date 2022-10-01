@@ -1,0 +1,22 @@
+discovered_by = estali_tech_gr
+discovered_by = east_gomic_tech_gr
+discovered_by = lathvy_tech_gr
+discovered_by = west_gomic_tech_gr
+culture = Bohoran
+religion = lathvy
+owner = SKT
+is_city = yes
+controller = SKT
+add_core = SKT
+
+###
+
+hre = no
+
+base_tax = 2
+base_production = 3
+trade_goods = grain
+base_manpower = 2
+capital = "Mogolo"
+ 
+center_of_trade = 1

@@ -1,9 +1,10 @@
 discovered_by = east_gomic_tech_gr
-discovered_by = north_gomic_tech_gr
+discovered_by = lathvy_tech_gr
 discovered_by = west_gomic_tech_gr
 culture = Sixany
 religion = vinian
 owner = SIX
+is_city = yes
 controller = SIX
 add_core = SIX
 
@@ -16,7 +17,7 @@ base_production = 6
 trade_goods = naval_supplies
 base_manpower = 7
 capital = "Sixan"
-is_city = yes
+ 
 
 extra_cost = 10
 add_province_triggered_modifier = sixan_center_fake

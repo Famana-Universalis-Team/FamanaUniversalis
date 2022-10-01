@@ -1,7 +1,8 @@
-discovered_by = gotzlic_tech_gr
-discovered_by = north_gomic_tech_gr
+discovered_by = estali_tech_gr
+discovered_by = lathvy_tech_gr
 add_core = MLD
 owner = MLD
+is_city = yes
 controller = MLD
 culture = Maldikian
 religion = lathvy
@@ -11,7 +12,7 @@ base_production = 4
 trade_goods = grain
 base_manpower = 2
 capital = "Pechiadh"
-is_city = yes
+ 
 
 
 

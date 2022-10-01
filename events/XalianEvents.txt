@@ -11,8 +11,8 @@ country_event = {
     fire_only_once = yes
 
     trigger = {
-        is_year = 220
         tag = AGX
+        is_year = 220
         is_great_power = no
         owns = 5371
         NOT = {
@@ -82,8 +82,8 @@ country_event = {
     fire_only_once = yes
 
     trigger = {
-        is_year = 220
         tag = MRN
+        is_year = 220
         owns = 5163
     }
     mean_time_to_happen = {
@@ -100,14 +100,36 @@ country_event = {
     }
     option = {
         name = gaxal.3.b
-        ai_chance = { factor = 1 }
+        ai_chance = {
+            factor = 1
+            modifier = {
+                factor = 3
+                OR = {
+                    is_rival = DEL
+                    DEL = {
+                        is_rival = MRN
+                    }
+                }
+            }
+        }
         5163 = {
             cede_province = XML
         }
     }
     option = {
         name = gaxal.3.c
-        ai_chance = { factor = 1 }
+        ai_chance = {
+            factor = 1
+            modifier = {
+                factor = 0
+                OR = {
+                    is_rival = DEL
+                    DEL = {
+                        is_rival = MRN
+                    }
+                }
+            }
+        }
         5163 = {
             cede_province = DEL
         }
@@ -134,33 +156,86 @@ country_event = {
     option = {
         name = gaxal.4.a
         ai_chance = { factor = 1 }
-        every_owned_province = {
-            limit = {
-                religion = morian
-            }
-            add_local_autonomy = 25
-            add_province_modifier = {
-                name = "morian_fervor"
-                duration = 3650
+        custom_tooltip = gaxal4aTT
+        hidden_effect = {
+            every_owned_province = {
+                limit = {
+                    religion = morian
+                }
+                add_local_autonomy = 25
+                add_province_modifier = {
+                    name = "morian_fervor"
+                    duration = 3650
+                }
             }
         }
     }
     option = {
         name = gaxal.4.b
         ai_chance = { factor = 1 }
-        every_owned_province = {
-            limit = {
-                religion = morian
+        custom_tooltip = gaxal4bTT
+        hidden_effect = {
+            every_owned_province = {
+                limit = {
+                    religion = morian
+                }
+                add_unrest = 12
             }
-            add_unrest = 12
+        }
+    }
+}
+
+#pyarxu lathvy
+country_event = {
+    id = gaxal.5
+    title = gaxal.5.t
+    desc = gaxal.5.d
+    picture = RELIGION_eventPicture
+    fire_only_once = yes
+
+    trigger = {
+        tag = PYA
+        is_year = 213
+        NOT = {
+            is_year = 220
+        }
+        capital_scope = {
+            religion = lathvy
+        }
+    }
+    mean_time_to_happen = {
+        months = 9
+    }
+
+    option = {
+        name = gaxal.5.a
+        ai_chance = { factor = 5 }
+        add_stability = -2
+        change_religion = lathvy
+        add_country_modifier = {
+			name = "famana_conversion_zeal"
+			duration = 3650
+		}
+        add_country_modifier = {
+            name = pya_lathvy
+            duration = -1
+        }
+    }
+
+    option = {
+        name = gaxal.5.b
+        ai_chance = { factor = 1 }
+        add_stability = 1
+        capital_scope = {
+            add_province_modifier = {
+                name = pya_convert
+                duration = 3650
+            }
         }
     }
 }
 
 # Purchase of Northern Lerush, Poxa
-
-namespace = gaxal
-
 country_event = {
     id = gaxal.7
     title = gaxal.7.t
@@ -170,8 +245,8 @@ country_event = {
     fire_only_once = yes
 
     trigger = {
-        is_year = 230
         tag = PXA
+        is_year = 230
         is_great_power = no
         exists = AGX
         AND = {
@@ -263,3 +338,599 @@ country_event = {
 		override_country_name = Trilsekin
     }
 }
+
+country_event = { #maner pirates
+    id = gaxal.10
+    title = gaxal.10.t
+    desc = gaxal.10.d
+    picture = BUCCANEERS_eventPicture
+
+    fire_only_once = yes
+
+    trigger = { 
+        tag = MNR
+    }
+    mean_time_to_happen = {
+        months = 8
+    }
+
+    immediate = {
+        if = {
+            limit = {
+                has_consort = yes
+            }
+            remove_consort = yes
+        }
+    }
+
+    option = { #go pirate
+        name = gaxal.10.a
+        ai_chance = { factor = 3 }
+        kill_ruler = yes
+        if = {
+            limit = {
+                has_heir = yes
+            }
+            kill_heir = {}
+        }
+		change_government = republic
+        add_government_reform = pirate_republic_reform
+    }
+
+    option = { #dont
+        name = gaxal.10.b
+        ai_chance = { factor = 2 }
+        add_stability = -1
+        kill_ruler = yes
+        if = {
+            limit = {
+                has_heir = yes
+            }
+            kill_heir = {}
+        }
+		change_government = republic
+        add_government_reform = merchants_reform
+    }
+}
+
+country_event = { #giru tower completed
+    id = gaxal.11
+    title = gaxal.11.t
+    desc = gaxal.11.d
+    picture = SHWEDAGON_PAGON_eventPicture
+
+    fire_only_once = yes
+
+    trigger = { 
+        owns_core_province = 5450
+        is_year = 260
+        NOT = {
+            has_great_project = {
+                type = giru_tower
+                tier = 3
+            }
+        }
+        has_dlc = "Leviathan"
+    }
+    mean_time_to_happen = {
+        months = 24
+    }
+
+    option = { #shame on you
+        name = gaxal.11.a
+        ai_chance = { factor = 3 }
+        add_prestige = -20
+        5450 = {
+            add_great_project_tier = {
+                type = giru_tower
+                tier = 1
+            }
+            hidden_effect = {
+                add_great_project_tier = {
+                    type = giru_tower
+                    tier = 1
+                }
+            }
+        }
+    }
+}
+
+country_event = { #giru tower destroyed
+    id = gaxal.12
+    title = gaxal.12.t
+    desc = gaxal.12.d
+    picture = CHURCH_ESTATE_UPSET_eventPicture
+    major = yes
+
+    fire_only_once = yes
+
+    trigger = { 
+        owns_core_province = 5450
+        is_year = 290
+        has_great_project = {
+            type = giru_tower
+            tier = 3
+        }
+        has_dlc = "Leviathan"
+    }
+    mean_time_to_happen = {
+        months = 240
+    }
+
+    option = { #trolled
+        name = gaxal.12.a
+        ai_chance = { factor = 3 }
+        add_prestige = -10
+        5450 = {
+            destroy_great_project = {
+                type = giru_tower
+            }        
+        }
+        set_global_flag = giru_tower_destroyed
+    }
+}
+
+## COUNCIL OF XON EVENT CHAIN
+#
+#country_event = {
+#    id = gaxal.13
+#    hidden = yes
+#
+#    trigger = { 
+#        ## Copied trigger from Council of Xon decision.
+#        always = no
+#        ai = no
+#        NOT = { has_global_flag = Council_of_Xon }
+#        NOT = { has_global_flag = Xalian_religion_restored }
+#        religious_ideas = 7 #completed religious ideas
+#        NOT = { tag = GAX } #ga xal would mean you have united the peninsula
+#        OR = {
+#            AND = { #Check if the council is even valid in the first place.
+#                religion = shirian
+#                any_country = {
+#                    OR = {
+#                        religion = morian
+#                        religion = vinian
+#                        religion = delkian
+#                    }
+#                }
+#            }
+#            AND = {
+#                religion = vinian
+#                any_country = {
+#                    OR = {
+#                        religion = morian
+#                        religion = shirian
+#                        religion = delkian
+#                    }
+#                }
+#            }
+#            AND = {
+#                religion = delkian
+#                any_country = {
+#                    OR = {
+#                        religion = morian
+#                        religion = vinian
+#                        religion = shirian
+#                    }
+#                }
+#            }
+#            AND = {
+#                religion = morian
+#                has_global_flag = MorianPolytheism #moria must first reintroduce the other gods before they elevate them
+#                any_country = {
+#                    OR = {
+#                        religion = delkian
+#                        religion = vinian
+#                        religion = shirian
+#                    }
+#                }
+#            }
+#        }
+#        if = {
+#            limit = {
+#                OR = {
+#                    has_dlc = "Rights of Man"
+#                    has_dlc = "Emperor"
+#                }
+#            }
+#            is_great_power = yes
+#        }
+#    }
+#
+#    mean_time_to_happen = {
+#        months = 1
+#    }
+#
+#    immediate = {
+#        #update event targets
+#
+#        if = { #player
+#            limit = {
+#                ai = no
+#                religion = shirian
+#            }
+#            clr_global_flag = noShirianRepresentative
+#            save_global_event_target_as = shirian_representative #player
+#        }
+#        else_if = { #owner of holy city
+#            limit = {
+#                any_known_country = {
+#                    owns = 5388
+#                    religion = shirian
+#                }
+#            }
+#            clr_global_flag = noShirianRepresentative
+#            5388 = {
+#                owner = {
+#                    save_global_event_target_as = shirian_representative
+#                }
+#            }
+#        }
+#        else_if = { #nation of religion
+#            limit = {
+#                any_country = {
+#                    religion = shirian
+#                }
+#            }
+#            clr_global_flag = noShirianRepresentative
+#            random_known_country = {
+#                limit = {
+#                    AND = {
+#                        NOT = {
+#                            any_country = {
+#                                AND = {
+#                                    total_development = PREV #makes sure most developed country of shirian
+#                                    religion = shirian
+#                                }
+#                            }
+#                        }
+#                        religion = shirian
+#                    }
+#                }
+#                save_global_event_target_as = shirian_representative
+#            }
+#        }
+#        else = {
+#            set_global_flag = noShirianRepresentative
+#        }
+#
+#
+#
+#        if = { #player
+#            limit = {
+#                ai = no
+#                religion = delkian
+#            }
+#            clr_global_flag = noDelkianRepresentative
+#            save_global_event_target_as = delkian_representative #player
+#        }
+#        else_if = { #owner of holy city
+#            limit = {
+#                any_known_country = {
+#                    owns = 5163
+#                    religion = delkian
+#                }
+#            }
+#            clr_global_flag = noDelkianRepresentative
+#            5163 = {
+#                owner = {
+#                    save_global_event_target_as = delkian_representative
+#                }
+#            }
+#        }
+#        else_if = { #nation of religion
+#            limit = {
+#                any_country = {
+#                    religion = delkian
+#                }
+#            }
+#            clr_global_flag = noDelkianRepresentative
+#            random_known_country = {
+#                limit = {
+#                    AND = {
+#                        NOT = {
+#                            any_country = {
+#                                AND = {
+#                                    total_development = PREV #makes sure most developed country of shirian
+#                                    religion = delkian
+#                                }
+#                            }
+#                        }
+#                        religion = delkian
+#                    }
+#                }
+#                save_global_event_target_as = delkian_representative
+#            }
+#        }
+#        else = {
+#            set_global_flag = noDelkianRepresentative
+#        }
+#
+#        if = { #player
+#            limit = {
+#                ai = no
+#                religion = morian
+#            }
+#            clr_global_flag = noMorianRepresentative
+#            save_global_event_target_as = morian_representative #player
+#        }
+#        else_if = { #owner of holy city
+#            limit = {
+#                any_known_country = {
+#                    owns = 5411
+#                    religion = morian
+#                }
+#            }
+#            clr_global_flag = noMorianRepresentative
+#            5411 = {
+#                owner = {
+#                    save_global_event_target_as = morian_representative
+#                }
+#            }
+#        }
+#        else_if = { #nation of religion
+#            limit = {
+#                any_country = {
+#                    religion = morian
+#                }
+#            }
+#            clr_global_flag = noMorianRepresentative
+#            random_known_country = {
+#                limit = {
+#                    AND = {
+#                        NOT = {
+#                            any_country = {
+#                                AND = {
+#                                    total_development = PREV #makes sure most developed country of shirian
+#                                    religion = morian
+#                                }
+#                            }
+#                        }
+#                        religion = morian
+#                    }
+#                }
+#                save_global_event_target_as = morian_representative
+#            }
+#        }
+#        else = {
+#            set_global_flag = noMorianRepresentative
+#        }
+#
+#        if = { #player
+#            limit = {
+#                ai = no
+#                religion = vinian
+#            }
+#            clr_global_flag = noVinianRepresentative
+#            save_global_event_target_as = vinian_representative #player
+#        }
+#        else_if = { #owner of holy city
+#            limit = {
+#                any_known_country = {
+#                    owns = 5458
+#                    religion = vinian
+#                }
+#            }
+#            clr_global_flag = noVinianRepresentative
+#            5458 = {
+#                owner = {
+#                    save_global_event_target_as = vinian_representative
+#                }
+#            }
+#        }
+#        else_if = { #nation of religion
+#            limit = {
+#                any_country = {
+#                    religion = vinian
+#                }
+#            }
+#            clr_global_flag = noVinianRepresentative
+#            random_known_country = {
+#                limit = {
+#                    AND = {
+#                        NOT = {
+#                            any_country = {
+#                                AND = {
+#                                    total_development = PREV #makes sure most developed country of shirian
+#                                    religion = vinian
+#                                }
+#                            }
+#                        }
+#                        religion = vinian
+#                    }
+#                }
+#                save_global_event_target_as = vinian_representative
+#            }
+#        }
+#        else = {
+#            set_global_flag = noVinianRepresentative
+#        }
+#    }
+#
+#    option = {
+#        name = gaxal.12.a
+#        ai_chance = { factor = 3 }
+#    }
+#}
+#
+#country_event = { #update checkmarks during council
+#    id = gaxal.14
+#    hidden = yes
+#
+#    fire_only_once = yes
+#
+#    trigger = { 
+#        has_global_flag = Council_of_Xon
+#    }
+#    mean_time_to_happen = {
+#        days = 30
+#    }
+#
+#    immediate = {
+#        if = {
+#            limit = {
+#                AND = {
+#                    check_variable = { # Check if top > bottom
+#                        which = ShirXonReasonsPos
+#                        which = ShirXonReasonsNeg
+#                    }
+#                }
+#            }
+#            set_global_flag = ShirAgrees
+#        }
+#        else = {
+#            clr_global_flag = ShirAgrees
+#        }
+#
+#        if = {
+#            limit = {
+#                AND = {
+#                    check_variable = { # Check if top > bottom
+#                        which = MorXonReasonsPos
+#                        which = MorXonReasonsNeg
+#                    }
+#                }
+#            }
+#            set_global_flag = MorAgrees
+#        }
+#        else = {
+#            clr_global_flag = MorAgrees
+#        }
+#
+#        if = {
+#            limit = {
+#                AND = {
+#                    check_variable = { # Check if top > bottom
+#                        which = VinXonReasonsPos
+#                        which = VinXonReasonsNeg
+#                    }
+#                }
+#            }
+#            set_global_flag = VinAgrees
+#        }
+#        else = {
+#            clr_global_flag = VinAgrees
+#        }
+#
+#        if = {
+#            limit = {
+#                AND = {
+#                    check_variable = { # Check if top > bottom
+#                        which = DelkXonReasonsPos
+#                        which = DelkXonReasonsNeg
+#                    }
+#                }
+#            }
+#            set_global_flag = DelkAgrees
+#        }
+#        else = {
+#            clr_global_flag = DelkAgrees
+#        }
+#
+#        if = {
+#            limit = {
+#                NOT = {
+#                    has_global_flag = MorianPolytheism
+#                }
+#            }
+#            if = {
+#                limit = {
+#                    NOT = { has_country_flag = morian_monotheism_cox }
+#                }
+#                set_country_flag = morian_monotheism_cox
+#                set_variable = {
+#                    which = MorXonReasonsNeg
+#                    value = 100
+#                }
+#            }
+#        }
+#        else = {
+#
+#        }
+#
+#    }
+#    option = { #trolled
+#        name = gaxal.12.a
+#        ai_chance = { factor = 3 }
+#    }
+#}
+#
+#country_event = { #ladies and gentlemen, please welcome: the outbreak!
+#    id = gaxal.15
+#    title = gaxal.15.t
+#    desc = gaxal.15.d
+#    picture = AULIC_COUNCIL_eventPicture
+#    major = yes
+#    is_triggered_only = yes
+#    major_trigger = {
+#        OR = {
+#            religion_group = xalian_group
+#            capital_scope = {
+#                superregion = ga_xal_superregion
+#            }
+#        }
+#    }
+#
+#    immediate = {
+#        ROOT = {
+#            save_global_event_target_as = conductor_of_council_xon
+#            if = { #lets start with the underlying factors
+#                limit = {
+#                    religion = morian
+#                }
+#                set_country_flag = player_is_mor
+#                set_variable = {
+#                    which = MorXonReasonsPos
+#                    value = 1000
+#                }
+#            }
+#            if = { #lets start with the underlying factors
+#                limit = {
+#                    religion = delkian
+#                }
+#                set_country_flag = player_is_delk
+#                set_variable = {
+#                    which = DelkXonReasonsPos
+#                    value = 1000
+#                }
+#        }
+#            if = { #lets start with the underlying factors
+#                limit = {
+#                    religion = vinian
+#                }
+#                set_country_flag = shirian_brotherhood
+#                set_variable = {
+#                    which = ShirXonReasonsPos
+#                    value = 25
+#                }
+#                set_country_flag = player_is_vin
+#                set_variable = {
+#                    which = VinXonReasonsPos
+#                    value = 1000
+#                }
+#            }
+#            if = {
+#                limit = {
+#                    religion = shirian
+#                }
+#                set_country_flag = shirian_brotherhood
+#                set_variable = {
+#                    which = VinXonReasonsPos
+#                    value = 25
+#                }
+#                set_country_flag = player_is_shir
+#                set_variable = {
+#                    which = ShirXonReasonsPos
+#                    value = 1000
+#                }
+#            }
+#        }
+#    }
+#
+#    option = { #trolled
+#        name = gaxal.12.a
+#        ai_chance = { factor = 3 }
+#        custom_tooltip = COUNCIL_XON_START
+#    }
+#}

@@ -12,3 +12,436 @@ defined_text = {
         localisation_key = eastOppianCulture
     }
 }
+
+defined_text = {
+    name = OurGod
+	random = no
+
+	text = {
+        localisation_key = VinGod
+        trigger = {
+			religion = vinian
+        }
+    }
+    text = {
+        localisation_key = DelkGod
+        trigger = {
+			religion = delkian
+        }
+    }
+    text = {
+        localisation_key = ShirGod
+        trigger = {
+			religion = shirian
+        }
+    }
+    text = {
+        localisation_key = MorGod
+        trigger = {
+			religion = morian
+        }
+    }
+    text = {
+        localisation_key = ErrorGod
+        trigger = {
+			NOT = {
+                religion_group = xalian_group
+            }
+        }
+    }
+}
+
+defined_text = {
+    name = GetMinkoo
+	random = no
+
+	text = {
+        localisation_key = Minkoo #Ga Xal, Moxon, Maky, Emastalia, Bohora
+        trigger = {
+            OR = {
+                culture_group = Maxan
+                culture_group = Emastalian
+                culture_group = Makyna
+                culture_group = Xalian
+                culture_group = Komelwaiti
+            }
+        }
+    }
+    text = {
+        localisation_key = Foversia #Jasua
+        trigger = {
+			OR = {
+                culture_group = Jasuan
+                culture_group = North_West_Antebari
+                culture_group = Aresian_C
+            }
+        }
+    }
+    text = {
+        localisation_key = Syadonesh #Nafa
+        trigger = {
+			OR = {
+                culture_group = Pustian
+            }
+        }
+    }
+    text = {
+        localisation_key = Karath #Fashros, Kisholi
+        trigger = {
+			culture_group = Ravsho
+            culture_group = Kisholi
+        }
+    }
+    text = {
+        localisation_key = Quinax #Oppia
+        trigger = {
+			culture_group = Oppian
+            culture_group = Hoxoi
+        }
+    }
+    text = {
+        localisation_key = Ranadezh #North Estal
+        trigger = {
+			culture_group = Gotzlic
+            culture_group = South_Gotzlic
+            culture_group = Naravami_C
+            culture_group = Ordic_C
+            culture_group = Lukscho_Brulic
+            culture_group = Barits
+            culture_group = Voychon
+            culture_group = Pextoglazian
+        }
+    }
+    text = {
+        localisation_key = Hromur #Geopyopia
+        trigger = {
+			capital_scope = {
+                culture_group = Geopyopian
+            }
+        }
+    }
+    text = {
+        localisation_key = ShiNazh #Agmagoz
+        trigger = {
+			capital_scope = {
+                continent = Antebar
+            }
+        }
+    }
+    text = {
+        localisation_key = Sichu #Vanoma
+        trigger = {
+			culture = Vanoman
+        }
+    }
+    text = {
+        localisation_key = Talilhth #Other
+    }
+}
+
+defined_text = {
+    name = NafaTCKLocalisation
+	random = no
+
+	text = {
+        localisation_key = nafSpareTCK
+        trigger = {
+			TCK = {
+                is_subject_of = ROOT
+            }
+        }
+    }
+}
+
+defined_text = {
+    name = OrdicaOrOrdisa
+	random = no
+
+	text = {
+        localisation_key = OrdisaName
+        trigger = {
+			exists = ORS
+            NOT = { exists = ORC }
+        }
+    }
+    text = {
+        localisation_key = OrdicaName
+        trigger = {
+			exists = ORC
+            NOT = { exists = ORS }
+        }
+    }
+}
+
+defined_text = {
+    name = OurDeity
+	random = no
+
+	text = {
+        localisation_key = DelkGod #specifically for disease scenario cause Delk has an avatar associated with disease. If you're using this in a different context, maybe add in the other xalian gods as loc triggers too
+        trigger = {
+			AND = {
+                religion_group = xalian_group
+                OR = {
+                    NOT = { religion = morian }
+                    has_global_flag = MorianPolytheism
+                }
+            }
+        }
+    }
+    text = {
+        localisation_key = MorGod
+        trigger = {
+			religion = morian #if polytheism is enabled it will fire the above trigger anws so no need for 2 checks
+        }
+    }
+    text = {
+        localisation_key = AraGod
+        trigger = {
+			religion_group = lathvy_group
+        }
+    }
+
+    text = {
+        localisation_key = GaaraGod
+        trigger = {
+			religion_group = tonmo_group
+        }
+    }
+
+    text = {
+        localisation_key = UmGod
+        trigger = {
+			OR = {
+                religion = mak
+                religion = vaximorian
+            }
+        }
+    }
+
+    text = {
+        localisation_key = AncestorsGod
+        trigger = {
+			religion_group = gadan_group
+        }
+    }
+
+    text = {
+        localisation_key = SpiritsGod
+        trigger = {
+			OR = {
+                religion_group = north_estali
+                religion_group = washoom_group
+                religion = animism
+                religion = pawani
+                religion = druidic
+            }
+        }
+    }
+
+    text = {
+        localisation_key = PhasmaGod
+        trigger = {
+			religion = aresian
+        }
+    }
+
+    text = {
+        localisation_key = YorloxGod
+        trigger = {
+			religion_group = oppian_group
+        }
+    }
+
+    text = {
+        localisation_key = GodsGod
+    }
+}
+
+defined_text = {
+    name = RandomXalGod
+
+	text = {
+        localisation_key = VinGod
+    }
+    text = {
+        localisation_key = DelkGod
+    }
+    text = {
+        localisation_key = ShirGod
+    }
+    text = {
+        localisation_key = MorGod
+    }
+    text = {
+        localisation_key = ErrorGod
+        trigger = {
+			NOT = {
+                religion_group = xalian_group
+            }
+        }
+    }
+}
+
+defined_text = {
+    name = ShirianAuthority
+    random = no
+
+    text = {
+        localisation_key = YouShirInvited
+        trigger = { #basically these mean that the player is going to be there
+            ai = no
+            religion = shirian
+        }
+    }
+	text = {
+        localisation_key = CapitalShirInvited
+        trigger = {
+            any_known_country = {
+                AND = {
+                    religion = shirian
+                    owns_core_province = 5388 #xon
+                }
+            }
+        }
+    }
+    text = {
+        localisation_key = NationShirInvited
+        trigger = {
+            any_known_country = {
+                religion = shirian
+            }
+        }
+    }
+    text = {
+        localisation_key = BishopsShirInvited
+    }
+}
+
+defined_text = {
+    name = DelkianAuthority
+    random = no
+
+    text = {
+        localisation_key = YouDelkInvited
+        trigger = { #basically these mean that the player is going to be there
+            ai = no
+            religion = delkian
+        }
+    }
+	text = {
+        localisation_key = CapitalDelkInvited
+        trigger = {
+            any_known_country = {
+                AND = {
+                    religion = delkian
+                    owns_core_province = 5388 #xon
+                }
+            }
+        }
+    }
+    text = {
+        localisation_key = NationDelkInvited
+        trigger = {
+            any_known_country = {
+                religion = delkian
+            }
+        }
+    }
+    text = {
+        localisation_key = BishopsDelkInvited
+    }
+}
+
+defined_text = {
+    name = MorianAuthority
+    random = no
+
+    text = {
+        localisation_key = YouMorInvited
+        trigger = { #basically these mean that the player is going to be there
+            ai = no
+            religion = morian
+        }
+    }
+	text = {
+        localisation_key = CapitalMorInvited
+        trigger = {
+            any_known_country = {
+                AND = {
+                    religion = morian
+                    owns_core_province = 5388 #xon
+                }
+            }
+        }
+    }
+    text = {
+        localisation_key = NationMorInvited
+        trigger = {
+            any_known_country = {
+                religion = morian
+            }
+        }
+    }
+    text = {
+        localisation_key = BishopsMorInvited
+    }
+}
+
+defined_text = {
+    name = VinianAuthority
+    random = no
+
+    text = {
+        localisation_key = YouVinInvited
+        trigger = { #basically these mean that the player is going to be there
+            ai = no
+            religion = vinian
+        }
+    }
+	text = {
+        localisation_key = CapitalVinInvited
+        trigger = {
+            any_known_country = {
+                AND = {
+                    religion = vinian
+                    owns_core_province = 5388 #xon
+                }
+            }
+        }
+    }
+    text = {
+        localisation_key = NationVinInvited
+        trigger = {
+            any_known_country = {
+                religion = vinian
+            }
+        }
+    }
+    text = {
+        localisation_key = BishopsVinInvited
+    }
+}
+
+defined_text = {
+    name = StiilDanil
+
+	text = {
+        localisation_key = StiilDanilName
+    }
+}
+
+#defined_text = {
+#    name = GetGadean
+#    random = no
+#
+#	text = {
+#        trigger = {
+#            has_country_flag = Gadea_Vassal_Swarm
+#        }
+#        localisation_key = GadeanVassalLocSwarm
+#    }
+#    text = {
+#        localisation_key = NoTextDefinedLoc
+#    }
+#}

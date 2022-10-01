@@ -1,5 +1,5 @@
 discovered_by = east_gomic_tech_gr
-discovered_by = north_gomic_tech_gr
+discovered_by = lathvy_tech_gr
 discovered_by = west_gomic_tech_gr
 #Written with Eu4 Easy Province Creator by emiroercn
 #UNNAMED
@@ -13,12 +13,23 @@ base_production = 7
 trade_goods = wool
 base_manpower = 5
 capital = "Dibata"
-is_city = yes
-extra_cost = 1
+ 
 center_of_trade = 1
 
 
 owner = DES
+is_city = yes
 controller = DES
 add_core = DES
 add_core = DBT
+
+212.6.7 = {
+owner = DBT
+is_city = yes
+controller = DBT
+add_core = DBT
+remove_core = DES
+#culture = 
+#religion = 
+#trade_goods = 
+}

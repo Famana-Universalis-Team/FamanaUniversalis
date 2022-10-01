@@ -1,9 +1,10 @@
 discovered_by = east_gomic_tech_gr
-discovered_by = north_gomic_tech_gr
+discovered_by = lathvy_tech_gr
 discovered_by = west_gomic_tech_gr
 culture = Walaran
 religion = lathvy
 owner = PHL
+is_city = yes
 controller = PHL
 add_core = PHL
 
@@ -16,6 +17,6 @@ base_production = 3
 trade_goods = wool
 base_manpower = 2
 capital = "Lisonare"
-is_city = no
-extra_cost = 1
+ 
+
 

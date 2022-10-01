@@ -1,9 +1,10 @@
 discovered_by = east_gomic_tech_gr
-discovered_by = north_gomic_tech_gr
+discovered_by = lathvy_tech_gr
 discovered_by = west_gomic_tech_gr
 culture = Zoblotran
 religion = eastern_oppian
 owner = ZBL
+is_city = yes
 controller = ZBL
 add_core = ZBL
 
@@ -16,8 +17,7 @@ base_production = 3
 trade_goods = grain
 base_manpower = 3
 capital = "Legend"
-is_city = no
+ 
 
-extra_cost = 1
 center_of_trade = 1
 

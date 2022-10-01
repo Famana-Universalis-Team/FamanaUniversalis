@@ -1,6 +1,6 @@
 #Country Name: Please see filename.
 
-graphical_culture = westerngfx
+graphical_culture = muslimgfx
 
 color = { 60  57  112 }
 
@@ -33,37 +33,68 @@ historical_units = {
 }
 
 monarch_names = {
-	"Alletan #0" = 1
-	"Dif #0" = 1
-	"Galvis #0" = 1
-	"Rannos #0" = 1
-	"Vanii #0" = 1
-	"Yoms #0" = 1
-	"Gamletan #0" = 1
-	"Aytrus #0" = 1
-	"Gamefan #0" = 1
-	"Galif #0" = 1
-	"Sus #0" = 1
-	"Alcuge #0" = 1
-	"Soufi #0" = -1
-	"Mazia #0" = -1
-	"Zoi #0" = -1
-	"Messia #0" = -1
+	"Galaag #0" = 1
+	"Anasloo #0" = 1
+	"Ombaa #0" = 1
+	"Dagól #0" = 1
+	"Yalu #0" = 1
+	"Laugye #0" = 1
+	"Baade #0" = 1
+	"Abedónbo #0" = 1
+	"Baade #0" = 1
+	"Doobe #0" = 1
+	"Flyane #0" = 1
+	"Asgyiado #0" = 1
+	"Niado #0" = 1
+	"Ódo #0" = 1
+	"Ndaalma #0" = 1
+	"Eesju #0" = 1
+	"Foombol #0" = 1
+	"Boovu #0" = 1
+	"Yooleb #0" = 1
+	"Ódyu #0" = 1
+	"Maugja #0" = 1
+	"Fiaved #0" = 1
+	"Doolsed #0" = 1
+	"Oogud #0" = 1
+	"Goobnu #0" = 1
+	"Laado #0" = 1
+	"Fóled #0" = 1
+	"Soongo #0" = 1
+	"Loleeb #0" = 1
+	"Muybooda #0" = 1
+	"Oleebe #0" = 1
+	"Elaabmo #0" = 1
+	"Aagam #0" = 1
+	"Ódsube #0" = 1
+	"Dsómu #0" = 1
+	"Lliavo #0" = 1
+
+	"Byauqob #0" = -1
+	"Vdoosa #0" = -1
+	"Beelu #0" = -1
+	"Amqediamo #0" = -1
+	"Dooqe #0" = -1
+	"Geeja #0" = -1
+	"Veefa #0" = -1
+	"Soofi #0" = -1
 }
 
 leader_names = {
-	Alletan
-	Dif
-	Galvis
-	Rannos
-	Vanii
-	Yoms
-	Gamletan
-	Aytrus
-	Gamefan
-	Galif
-	Sus
-	Alcuge
+	Seqovbaam
+	Momuqnóf
+	Yandó
+	Accaci
+	Sar
+	Maasbob
+	Eeba
+	Dyaul
+	Laabe
+	Gojodoolo
+	Neyólbo
+	Ódlud
+	Lunoovda
+	Faudud
 }
 
 ship_names = {

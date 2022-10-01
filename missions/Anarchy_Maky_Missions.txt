@@ -83,7 +83,7 @@ anarchy_3 = {
 		}
         effect = {
             change_government_reform_progress = 15
-            add_stability = 1
+            add_stability_or_adm_power = yes
             add_country_modifier = {
 				name = "mak_authority"
 				duration = 3650
@@ -96,7 +96,7 @@ anarchy_3 = {
         required_missions = { anarchy_unite_neighboring_cities }
         trigger = {
             NOT = {
-                average_autonomy = 5
+                average_autonomy = 10
             }
             NOT = {
                 unrest = 0
@@ -126,7 +126,9 @@ anarchy_3 = {
             }
         }
         effect = {
-            add_prestige = 25
+            add_prestige_or_monarch_power = {
+				amount = 25
+			}
             add_legitimacy = 25
             add_country_modifier = {
 				name = "mak_anarchy_ending"

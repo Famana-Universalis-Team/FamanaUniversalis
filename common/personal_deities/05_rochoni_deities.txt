@@ -1,0 +1,116 @@
+# Do not change tags in here without changing every other reference to them.
+# If adding new dieties, make sure they are uniquely named.
+
+# Will appear over time
+
+rochoni_saint_1 = { #Qubare resisting saint
+	tolerance_own = 1
+	diplomatic_reputation = 3
+	
+	allow = {
+		religion = rochoni
+		#has_country_flag = rochoniSaintFlag1
+	}
+	sprite = 8
+	
+	ai_will_do = {
+		factor = 1
+		
+	}
+}
+
+rochoni_saint_2 = { #Episoli saint
+	ae_impact = -0.15
+	land_morale = 0.05
+	
+	allow = {
+		religion = rochoni
+		#has_country_flag = rochoniSaintFlag2
+	}
+	sprite = 8
+	
+	ai_will_do = {
+		factor = 1
+		
+	}
+}
+
+rochoni_saint_3 = { #founder of the organized rochoni church
+	development_cost = -0.075
+	inflation_action_cost = -0.25
+	
+	allow = {
+		religion = rochoni
+		#has_country_flag = rochoniSaintFlag3
+	}
+	sprite = 8
+	
+	ai_will_do = {
+		factor = 1
+		
+	}
+}
+
+rochoni_saint_4 = { #naravami missionary
+	culture_conversion_cost = -0.25
+	trade_efficiency = 0.1
+	
+	allow = {
+		religion = rochoni
+		#has_country_flag = rochoniSaintFlag4
+	}
+	sprite = 8
+	
+	ai_will_do = {
+		factor = 1
+		
+	}
+}
+
+rochoni_saint_5 = { #feudalism related
+	vassal_forcelimit_bonus = 0.5
+	province_warscore_cost = -0.15
+	
+	allow = {
+		religion = rochoni
+		#has_country_flag = rochoniSaintFlag5
+	}
+	sprite = 8
+	
+	ai_will_do = {
+		factor = 1
+		
+	}
+}
+
+rochoni_saint_6 = { #theologian/Philosopher
+	idea_cost = -0.10
+	innovativeness_gain = 0.33
+	
+	allow = {
+		religion = rochoni
+		#has_country_flag = rochoniSaintFlag6
+	}
+	sprite = 8
+	
+	ai_will_do = {
+		factor = 1
+		
+	}
+}
+
+rochoni_saint_7 = { #gotzlic missionary
+	manpower_recovery_speed	= 0.20
+	state_maintenance_modifier = -0.25
+	
+	allow = {
+		religion = rochoni
+		#has_country_flag = rochoniSaintFlag7
+	}
+	sprite = 8
+	
+	ai_will_do = {
+		factor = 1
+		
+	}
+}

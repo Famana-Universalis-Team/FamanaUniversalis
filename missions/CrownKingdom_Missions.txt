@@ -1,0 +1,1740 @@
+tck_slot_1 = {
+	slot = 1
+	has_country_shield = yes
+	ai = yes
+
+	potential = {
+		tag = TCK
+	}
+	tck_restore_umzat = {
+		icon = mission_monarch_in_throne_room
+		required_missions = { tck_the_good_king } 
+		position = 2
+		trigger = {
+			army_size_percentage = 1
+			has_mil_advisor = yes
+			UMZ = {
+				NOT = { alliance_with = TCK }
+			}
+			if = {
+				limit = {
+					ai = yes
+				}
+				hidden_trigger = {
+					has_country_flag = Tck_Beastmode_Ai
+				}
+			}
+        }
+		effect = {
+			custom_tooltip = tckPUCBumz
+			hidden_effect = {
+				add_casus_belli = {
+					target = UMZ
+					type = cb_restore_personal_union
+				}
+			}
+			goll_area = {
+				add_permanent_claim = ROOT
+			}
+		}
+		provinces_to_highlight = {
+		}
+	}
+	tck_umzatian_shipyards = {
+		icon = mission_galleys_in_port
+		required_missions = { tck_restore_umzat }
+		position = 3
+		trigger = {
+			OR = {
+				owns_core_province = 5044
+				UMZ = {
+					AND = {
+						is_subject_of = ROOT
+						ai_attitude = {
+							who = ROOT
+							attitude = attitude_loyal
+						}
+					}
+				}
+			}
+			years_of_income = 0.5
+        }
+		effect = {
+			add_years_of_income = -0.5
+			5044 = {
+				add_building = dock
+				add_building = shipyard
+			}
+			country_event = {
+				id = oppia.22
+			}
+			gomic_exit = {
+            	discover_country = ROOT
+            }
+            umzat_islands_area = {
+            	discover_country = ROOT
+            }
+			zata_area = {
+				discover_country = ROOT
+			}
+			create_colony_mission_reward = { province = 5016 }
+			hidden_effect = {
+				5016 = {
+					change_culture = ROOT
+					change_religion = ROOT
+				}
+			}
+		}
+		provinces_to_highlight = {
+			province_id = 5044
+		}
+	}
+	tck_new_umzat = {
+		icon = mission_iberian_conquistador
+		required_missions = { tck_umzatian_shipyards }
+		position = 4
+		trigger = {
+			owns_core_province = 5016
+			navy_size_percentage = 0.75
+			5044 = {
+				is_strongest_trade_power = ROOT
+			}
+        }
+		effect = {
+			if = {
+				limit = {
+					MRR = {
+						exists = no
+					}
+				}
+				MRR = {
+					override_country_name = NEW_UMZAT
+				}
+				5016 = {
+					cede_province = MRR
+					add_core = MRR
+				}
+				create_subject = {
+					subject_type = client_march
+					subject = MRR
+				}
+				west_estal_region = {
+					limit = {
+						is_empty = no
+					}
+					add_claim = MRR
+				}
+			}
+			else = {
+				west_estal_region = {
+					limit = {
+						is_empty = no
+					}
+					add_claim = ROOT
+				}
+			}
+			west_estal_region = {
+				limit = {
+					is_empty = no
+				}
+				discover_country = ROOT
+			}
+			add_prestige_or_monarch_power = {
+				amount = 25
+			}
+			add_country_modifier = {
+				name = tck_new_lands
+				duration = 3650
+			}
+		}
+		provinces_to_highlight = {
+			province_id = 5016
+		}
+	}
+	tck_carvel_shipbuilding = {
+		icon = mission_establish_high_seas_navy
+		required_missions = { tck_new_umzat }
+		position = 5
+		trigger = {
+			dip_tech = 10
+			OR = {
+				advisor = naval_reformer
+				advisor = army_reformer
+			}
+			num_of_owned_provinces_with = {
+				value = 5
+				has_building = shipyard
+			}
+        }
+		effect = {
+			random_owned_province = {
+				limit = { has_port = yes }
+				heavy_ship = ROOT
+			}
+			add_navy_tradition = 10
+			add_country_modifier = {
+				name = tck_carvel_shipbuilding
+				duration = -1
+			}
+		}
+	}
+	tck_mines_of_fasalep = {
+		icon = mission_sw_torquoise_mining
+		required_missions = { tck_cross_mountains }
+		position = 6
+		trigger = {
+			5059 = {
+				AND = {
+					owned_by = ROOT
+					has_building = marketplace
+					has_building = workshop
+					num_of_times_improved = 3
+				}
+			}
+        }
+		effect = {
+			5059 = {
+				add_province_modifier = {
+					name = tck_fasalep_mines
+					duration = -1
+				}
+				add_base_production = 1
+			}
+			5047 = {
+				change_trade_goods = iron
+				add_base_production = 1
+			}
+			if = {
+				limit = {
+					owns = 5083
+				}
+				5083 = {
+					add_base_production = 1
+				}
+			}
+			if = {
+				limit = {
+					owns = 5084
+				}
+				5084 = {
+					add_base_production = 1
+				}
+			}
+			if = {
+				limit = {
+					owns = 5056
+				}
+				5056 = {
+					add_base_production = 1
+				}
+			}
+		}
+		provinces_to_highlight = {
+			province_id = 5059
+		}
+	}
+	tck_vielan_vinyards = {
+		icon = mak_countryside
+		required_missions = { tck_restore_nutia }
+		position = 7
+		trigger = {
+			5102 = {
+				AND = {
+					owned_by = ROOT
+					has_building = farm_estate
+					num_of_times_improved = 3
+				}
+			}
+        }
+		effect = {
+			5102 = {
+				add_province_modifier = {
+					name = tck_vielan_vinyards
+					duration = -1
+				}
+				add_base_production = 1
+			}
+			if = {
+				limit = {
+					owns = 5103
+				}
+				5103 = {
+					add_base_production = 1
+				}
+			}
+			add_country_modifier = {
+				name = tck_wine_courtroom
+				duration = 5475
+			}
+		}
+		provinces_to_highlight = {
+			province_id = 5102
+		}
+	}
+	tck_take_out_accaci = {
+		icon = mission_noble_council
+		required_missions = { tck_restore_elorak }
+		position = 8
+		trigger = {
+			OSS = {
+				exists = no
+			}
+			NOT = {
+				any_country = {
+					dynasty = "Accati"
+				}
+			}
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 10
+				culture = Ossori
+			}
+        }
+		effect = {
+			add_prestige_or_monarch_power = {
+				amount = 20
+			}
+			add_country_modifier = {
+				name = tck_only_imperial_family
+				duration = 3650
+			}
+		}
+	}
+	tck_reclaim_artefacts = {
+		icon = mission_empire
+		required_missions = { tck_invade_arlenta }
+		position = 9
+		trigger = {
+			prestige = 50
+			has_adm_advisor = yes
+        }
+		effect = {
+			custom_tooltip = ArtefactsSearch
+			set_country_flag = TCKsearchingforartefacts
+		}
+	}
+	tck_qamon_mercenaries = {
+		icon = mission_indian_stateman
+		required_missions = { } #None
+		position = 10
+		trigger = {
+			always = no
+        }
+		effect = {
+			custom_tooltip = naf_agm_unfinished_tooltip
+		}
+	}
+	tck_bite_giants = {
+		icon = mission_indian_soldier_elephant
+		required_missions = { tck_qamon_mercenaries }
+		position = 11
+		trigger = {
+			always = no
+        }
+		effect = {
+			custom_tooltip = naf_agm_unfinished_tooltip
+		}
+	}
+}
+
+tck_slot_2 = {
+	slot = 2
+	has_country_shield = yes
+	ai = yes
+
+	potential = {
+		tag = TCK
+	}
+	tck_reclaim_minor_darlates = {
+		icon = mission_conquer_50_development
+		required_missions = { tck_restore_umzat }
+		position = 3
+		trigger = {
+			AND = {
+				owns_core_province = 5072
+				owns_core_province = 5069
+			}
+			5066 = {
+				trade_share = {
+					country = ROOT
+					share = 60
+				}
+			}
+        }
+		effect = {
+			roplea_area = {
+				add_permanent_claim = ROOT
+			}
+			arma_area = {
+				add_permanent_claim = ROOT
+			}
+			keplex_area = {
+				add_permanent_claim = ROOT
+			}
+			hidden_effect = {
+				upper_oppia_region = { #cores every uncored province in the region
+					limit = {
+						AND = {
+							owned_by = ROOT
+							NOT = { is_core = ROOT }
+						}
+					}
+					add_core = ROOT
+				}
+			}
+			custom_tooltip = tckCoreUpperOppia
+			change_government_reform_progress = 50
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 5072
+				province_id = 5069
+			}
+		}
+	}
+
+	tck_cross_mountains = {
+		icon = mission_sw_against_the_desert
+		required_missions = { tck_reclaim_minor_darlates }
+		position = 5
+		trigger = {
+			owns_core_province = 5047
+			owns_core_province = 5073
+			total_development = 200
+			num_of_cavalry = 6
+        }
+		effect = {
+			astom_area = {
+				add_permanent_claim = ROOT
+			}
+			ponaa_area = {
+				add_permanent_claim = ROOT
+			}
+			lyposh_area = {
+				add_permanent_claim = ROOT
+			}
+			effasha_area = {
+				add_permanent_claim = ROOT
+			}
+			fasalep_area = {
+				add_permanent_claim = ROOT
+			}
+			add_country_modifier = {
+				name = tck_oppian_flatlands
+				duration = 5475
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 5047
+				province_id = 5073
+			}
+		}
+	}
+
+	tck_restore_nutia = {
+		icon = mission_monarch_in_throne_room
+		required_missions = { tck_cross_mountains }
+		position = 6
+		trigger = {
+			owns_core_province = 5081
+			owns_core_province = 5088
+			5066 = {
+				trade_share = {
+					country = ROOT
+					share = 80
+				}
+			}
+			if = {
+				limit = {
+					NUT = {
+						exists = yes
+					}
+				}
+				NUT = {
+					has_spy_network_from = {
+						who = ROOT
+						value = 40
+					}
+				}
+			}
+			if = {
+				limit = {
+					OSS = {
+						alliance_with = NUT
+					}
+				}
+				OSS = {
+					has_spy_network_from = {
+						who = ROOT
+						value = 40
+					}
+				}
+			}
+        }
+		effect = {
+			custom_tooltip = tckPUCBnut
+			hidden_effect = {
+				add_casus_belli = {
+					target = NUT
+					type = cb_restore_personal_union
+				}
+			}
+			add_country_modifier = {
+				name = tck_to_elorak
+				duration = 3650
+			}
+			hidden_effect = {
+				OSS = {
+					country_event = {
+						id = oppia.23
+					}
+				}
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 5081
+				province_id = 5088
+			}
+		}
+	}
+
+	tck_restore_elorak = {
+		icon = mission_crusade_for_varna
+		required_missions = { tck_restore_nutia }
+		position = 7
+		trigger = {
+			OR = {
+				owns_core_province = 5103
+				NUT = {
+					is_subject_of = ROOT
+				}
+			}
+			OR = {
+				AND = {
+					is_in_war = {
+						war_score = 50
+						defender_leader = OSS
+						attacker_leader = ROOT
+					}
+					controls = 5106
+				}
+				OSS = {
+					NOT = { owns_core_province = 5106 }
+				}
+			}
+        }
+		effect = {
+			if = {
+				limit = {
+					OSS = {
+						NOT = { owns_core_province = 5106 }
+					}
+				}
+				custom_tooltip = FOCUS_BYPASSED
+			}
+			else = {
+				custom_tooltip = ElorakBreakaway
+				hidden_effect = {
+					viel_minstro_area = {
+						limit = {
+							OR = {
+								owned_by = ROOT
+								controlled_by = ROOT
+							}
+						}
+						cede_province = ELR
+						add_core = ELR
+					}
+					elorak_area = {
+						limit = {
+							OR = {
+								owned_by = ROOT
+								controlled_by = ROOT
+							}
+						}
+						cede_province = ELR
+						add_core = ELR
+					}
+				}
+				create_subject = {
+					who = ELR
+					subject_type = personal_union
+				}
+				custom_tooltip = OssorShattered
+				hidden_effect = {
+					OSS = {
+						release = ZNE
+						release = GRO
+						release = NUS
+						release = ARL
+						release = DBT
+						release = GDS
+						release = VLM
+						release = NUT
+						release = DES
+						release = THA
+						release = FNC
+					}
+				}
+				OSS = {
+					add_country_modifier = {
+						name = tck_shattered_ossor
+						duration = 3650
+					}
+				}
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 5103
+				province_id = 5106
+			}
+		}
+	}
+
+	tck_invade_arlenta = {
+		icon = mission_chinese_general_riding
+		required_missions = { tck_restore_elorak }
+		position = 8
+		trigger = {
+			5124 = {
+				OR = {
+					owned_by = ROOT
+					owner = {
+						is_subject_of = ROOT
+					}
+				}
+			}
+			5123 = {
+				OR = {
+					owned_by = ROOT
+					owner = {
+						is_subject_of = ROOT
+					}
+				}
+			}
+			5121 = {
+				OR = {
+					owned_by = ROOT
+					owner = {
+						is_subject_of = ROOT
+					}
+				}
+			}
+			5119 = {
+				OR = {
+					owned_by = ROOT
+					owner = {
+						is_subject_of = ROOT
+					}
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = tckArlentaCulture
+				NOT = {
+					any_country = {
+						primary_culture = Arlentan
+					}
+				}
+			}
+        }
+		effect = {
+			add_prestige_or_monarch_power = {
+				amount = 20
+			}
+			country_event = {
+				id = oppia.24
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 5124
+				province_id = 5123
+				province_id = 5121
+				province_id = 5119
+			}
+		}
+	}
+
+	tck_towards_the_delta = {
+		icon = mission_persian_soldiers
+		required_missions = { tck_invade_arlenta }
+		position = 9
+		trigger = {
+			heoki_area = {
+				OR = {
+					owned_by = ROOT
+					owner = {
+						is_subject_of = ROOT
+					}
+				}
+			}
+			dibata_area = {
+				OR = {
+					owned_by = ROOT
+					owner = {
+						is_subject_of = ROOT
+					}
+				}
+			}
+			num_of_transport = 25
+        }
+		effect = {
+			vaximor_area = {
+				add_permanent_claim = ROOT
+			}
+			rishtokay_area =  {
+				add_permanent_claim = ROOT
+			}
+			makykay_area = {
+				add_permanent_claim = ROOT
+			}
+			add_country_modifier = {
+				name = tck_oppia_united
+				duration = -1
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = heoki_area
+				area = dibata_area
+			}
+		}
+	}
+
+	tck_take_back_laglon = {
+		icon = mission_sea_battles
+		required_missions = { tck_towards_the_delta }
+		position = 11
+		trigger = {
+			if = {
+				limit = {
+					RES = {
+						exists = yes
+					}
+				}
+				navy_size = RES
+				has_spy_network_in = {
+					who = RES
+					value = 25
+				}
+			}
+			else_if = {
+				limit = {
+					LAG = {
+						exists = yes
+					}
+				}
+				navy_size = LAG
+				has_spy_network_in = {
+					who = LAG
+					value = 25
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						has_dlc = "Wealth of Nations"
+						has_dlc = "Mare Nostrum"
+						has_dlc = "Golden Century"
+					}
+				}
+				5022 = {
+					has_privateer_share_in_trade_node = {
+						who = ROOT
+						share = 0.15
+					}
+				}
+			}
+        }
+		effect = {
+			laglon_region = {
+				add_permanent_claim = ROOT
+			}
+			if = {
+				limit = {
+					has_global_flag = fenikiconvert
+				}
+				add_country_modifier = {
+					name = tck_restore_laglan_rule
+					duration = 7300
+				}
+			}
+			add_country_modifier = {
+				name = tck_compete_with_thalassocracy
+				duration = 3650
+			}
+		}
+		provinces_to_highlight = {
+			province_id = 4982
+		}
+	}
+}
+
+tck_slot_3 = {
+	slot = 3
+	has_country_shield = yes
+	ai = yes
+
+	potential = {
+		tag = TCK
+	}
+	tck_the_good_king = {
+		icon = persian_king
+		required_missions = {  } #None
+		position = 1
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = MenselSarDead
+				has_country_flag = SarDead
+			}
+        }
+		effect = {
+			add_country_modifier = {
+				name = tck_mourning_mensel
+				duration = 3650
+			}
+		}
+	}
+	tck_the_sar_dynasty = {
+		icon = mission_feast
+		required_missions = { tck_the_good_king }
+		position = 2
+		trigger = {
+			5062 = {
+				AND = {
+					has_building = fort_15th
+					num_of_times_improved = 5
+				}
+			}
+			legitimacy = 100
+        }
+		effect = {
+			custom_tooltip = SarDynastyModifierTooltip
+			hidden_effect = {
+				add_country_modifier = {
+					name = tck_sar_dynasty
+					duration = -1
+				}
+			}
+			define_advisor = {
+				type = diplomat
+				skill = 2
+				name = "Galivicus Sar"
+				discount = yes
+			}
+			5062 = {
+				add_province_modifier = {
+					name = tck_sar_development
+					duration = 7300
+				}
+			}
+		}
+		provinces_to_highlight = {
+			province_id = 5062
+		}
+	}
+	tck_jol_cema = {
+		icon = mission_invade_island
+		required_missions = {  } #None
+		position = 3
+		trigger = {
+			is_year = 350
+			OR = {
+				5015 = {
+					is_empty = yes
+					has_discovered = ROOT
+				}
+				owns_core_province = 5015
+			}
+        }
+		effect = {
+			create_colony_mission_reward = { province = 5015 }
+			5015 = {
+				add_base_manpower = 1
+				add_base_production = 1
+				add_base_tax = 1
+			}
+			hidden_effect = {
+				5015 = {
+					change_culture = ROOT
+					change_religion = ROOT
+				}
+			}
+		}
+		provinces_to_highlight = {
+			province_id = 5015
+		}
+	}
+	tck_desert_infrastructure = {
+		icon = mission_sw_yucca_plants
+		required_missions = { tck_cross_mountains }
+		position = 6
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 5
+				grown_by_development = 3
+				region = lower_oppia_region
+			}
+			num_of_owned_provinces_with = {
+				value = 2
+				has_building = courthouse
+				region = lower_oppia_region
+			}
+        }
+		effect = {
+			set_country_flag = TCKdesert_modernised
+			custom_tooltip = ColonisteAlqyl
+			5049 = {
+				if = {
+					limit = {
+						OR = {
+							owned_by = ROOT
+							owner = {
+								is_subject_of = ROOT
+							}
+						}
+					}
+					add_province_modifier = {
+						name = tck_desert_cities
+						duration = -1
+					}
+				}
+			}
+			5056 = {
+				if = {
+					limit = {
+						OR = {
+							owned_by = ROOT
+							owner = {
+								is_subject_of = ROOT
+							}
+						}
+					}
+					add_province_modifier = {
+						name = tck_desert_cities
+						duration = -1
+					}
+				}
+			}
+			5230 = {
+				if = {
+					limit = {
+						OR = {
+							owned_by = ROOT
+							owner = {
+								is_subject_of = ROOT
+							}
+						}
+					}
+					add_province_modifier = {
+						name = tck_desert_cities
+						duration = -1
+					}
+				}
+			}
+			5049 = {
+				if = {
+					limit = {
+						OR = {
+							owned_by = ROOT
+							owner = {
+								is_subject_of = ROOT
+							}
+						}
+					}
+					add_province_modifier = {
+						name = tck_desert_cities
+						duration = -1
+					}
+				}
+			}
+			5099 = {
+				if = {
+					limit = {
+						OR = {
+							owned_by = ROOT
+							owner = {
+								is_subject_of = ROOT
+							}
+						}
+					}
+					add_province_modifier = {
+						name = tck_desert_cities
+						duration = -1
+					}
+				}
+			}
+			5091 = {
+				if = {
+					limit = {
+						OR = {
+							owned_by = ROOT
+							owner = {
+								is_subject_of = ROOT
+							}
+						}
+					}
+					add_province_modifier = {
+						name = tck_desert_cities
+						duration = -1
+					}
+				}
+			}
+			5059 = {
+				if = {
+					limit = {
+						OR = {
+							owned_by = ROOT
+							owner = {
+								is_subject_of = ROOT
+							}
+						}
+					}
+					add_province_modifier = {
+						name = tck_desert_cities
+						duration = -1
+					}
+				}
+			}
+		}
+		provinces_to_highlight = {
+			region = lower_oppia_region
+		}
+	}
+	tck_eastern_coast = {
+		icon = mak_peace
+		required_missions = { tck_desert_infrastructure }
+		position = 7
+		trigger = {
+			OR = {
+				owns_core_province = 5044
+				UMZ = {
+					AND = {
+						is_subject_of = ROOT
+						ai_attitude = {
+							who = ROOT
+							attitude = attitude_loyal
+						}
+					}
+				}
+			}
+			num_of_transport = 30
+			dip_power = 100
+        }
+		effect = {
+			add_dip_power = -100
+			set_country_flag = TCKeast_coast
+			custom_tooltip = Colonise_Yarong
+		}
+		provinces_to_highlight = {
+			province_id = 5044
+		}
+	}
+	tck_alakim_river = {
+		icon = mission_ne_birch_bark_canoes
+		required_missions = { tck_restore_elorak }
+		position = 8
+		trigger = {
+			5240 = {
+				OR = {
+					owned_by = ROOT
+					owner = {
+						is_subject_of = ROOT
+					}
+				}
+			}
+			has_leader_with = {
+				general = yes
+				manuever = 2
+				total_pips = 3
+			}
+			manpower = 1
+			years_of_income = 0.5
+        }
+		effect = {
+			add_manpower = -1
+			add_years_of_income = -0.5
+			custom_tooltip = tckAlakim
+			set_country_flag = DescendingAlakim1
+		}
+		provinces_to_highlight = {
+			province_id = 5240
+		}
+	}
+	tck_sea_of_ekelo = {
+		icon = mission_iberian_conquistador
+		required_missions = { tck_alakim_river }
+		position = 8
+		trigger = {
+			always = no
+        }
+		effect = {
+			custom_tooltip = naf_agm_unfinished_tooltip
+		}
+	}
+	tck_coronation = {
+		icon = mission_empire
+		required_missions = { tck_towards_the_delta tck_provencial_governors }
+		position = 10
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 75
+				superregion = oppia_superregion
+			}
+			legitimacy = 100
+        }
+		effect = {
+			country_event = {
+				id = oppia.34
+			}
+			every_subject_country = {
+				ROOT = {
+					inherit = PREV
+				}
+			}
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			restore_country_name = yes
+			change_tag = OPP
+			5066 = {
+				move_capital_effect = yes
+			}
+			add_government_reform = oppian_empire_gov
+			if = {
+				limit = {
+					NOT = { government_rank = 3 }
+				}
+				set_government_rank = 3
+			}
+			oppia_superregion = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					is_empty = no
+				}
+				add_core = OPP
+			}
+			oppia_superregion = {
+				limit = {
+					is_empty = yes
+				}
+				add_claim = OPP
+			}
+			laglon_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = OPP
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige_or_monarch_power = {
+				amount = 100
+			}
+			set_capital = 5066
+		}
+		provinces_to_highlight = {
+			superregion = oppia_superregion
+		}
+	}
+	tck_oppian_hegemony = {
+		icon = mission_unite_home_region
+		required_missions = { tck_coronation }
+		position = 12
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = owns_oppia_tooltip
+				all_province = {
+					if = {
+						limit = {
+							superregion = oppia_superregion
+						}
+						OR = {
+							is_empty = yes
+							owned_by = ROOT
+						}
+					}
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = owns_laglon_tooltip
+				all_province = {
+					if = {
+						limit = {
+							region = laglon_region
+						}
+						OR = {
+							is_empty = yes
+							owned_by = ROOT
+						}
+					}
+				}
+			}
+        }
+		effect = {
+			add_country_modifier = {
+				name = tck_oppian_hegemony
+				duration = -1
+			}
+			hoxoi_coast_region = {
+				add_permanent_claim = ROOT
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				superregion = oppia_superregion
+				region = laglon_region
+			}
+		}
+	}
+}
+
+tck_slot_4 = {
+	slot = 4
+	has_country_shield = yes
+	ai = yes
+
+	potential = {
+		tag = TCK
+	}
+	tck_crown_army = {
+		icon = mission_phalanx
+		required_missions = { tck_build_up_river }
+		position = 3
+		trigger = {
+			has_mil_advisor_2 = yes
+			has_leader_with = {
+				total_pips = 6
+			}
+        }
+		effect = {
+			add_country_modifier = {
+				duration = 36500
+				name = tck_crown_army
+			}
+			add_manpower = 10
+		}
+		provinces_to_highlight = {
+		}
+	}
+	tck_oppian_siege_weaponry = {
+		icon = mission_ballista
+		required_missions = { tck_crown_army }
+		position = 4
+		trigger = {
+			num_of_artillery = 10
+			has_leader_with = {
+				siege = 2
+			}
+			any_province = {
+				AND = {
+					sieged_by = ROOT
+					has_fort_building_trigger = yes
+				}
+			}
+        }
+		effect = {
+			add_country_modifier = {
+				name = tck_oppiatis
+				duration = -1
+			}
+		}
+		provinces_to_highlight = {
+		}
+	}
+	tck_new_model_army = {
+		icon = mission_assemble_an_army
+		required_missions = { tck_oppian_siege_weaponry tck_rebuild_temples }
+		position = 5
+		trigger = {
+			land_forcelimit = 100
+			army_size_percentage = 0.75
+			artillery_fraction = 0.20
+			num_of_owned_provinces_with = {
+				value = 10
+				OR = {
+					has_building = barracks
+					has_building = training_fields
+					has_building = regimental_camp
+					has_building = conscription_center
+				}
+			}
+        }
+		effect = {
+			create_general = {
+				tradition = 100
+			}
+			custom_tooltip = tck_oppian_legion
+			set_country_flag = TCK_legion
+			add_country_modifier = {
+				name = tck_new_model_army
+				duration = -1
+			}
+		}
+		provinces_to_highlight = {
+		}
+	}
+	tck_finest_diplomats = {
+		icon = mission_alliances
+		required_missions = { } #None
+		position = 6
+		trigger = {
+			num_of_allies = 3
+			diplomatic_reputation = 4
+        }
+		effect = {
+			define_advisor = {
+				skill = 2
+				type = treasurer
+				discount = yes
+			}
+			every_country = {
+				limit = {
+					AND = {
+						NOT = { has_opinion = {
+							value = 10
+							who = ROOT
+						} }
+						capital_scope = {
+							superregion = oppia_superregion
+						}
+					}
+				}
+				add_opinion = {
+					who = ROOT
+					modifier = sar_diplomacy
+				}
+			}
+		}
+		provinces_to_highlight = {
+		}
+	}
+	tck_sar_power = {
+		icon = great_castle
+		required_missions = { tck_finest_diplomats }
+		position = 8
+		trigger = {
+			if = {
+				limit = {
+					dynasty = "Sar"
+				}
+				AND = {
+					crown_land_share = 25
+					NOT = {
+						has_estate_privilege = estate_nobles_supremacy_over_crown
+					}
+					NOT = {
+						estate_influence = {
+							estate = estate_church
+							influence = 50
+						}
+					}
+					NOT = {
+						estate_influence = {
+							estate = estate_nobles
+							influence = 50
+						}
+					}
+					NOT = {
+						estate_influence = {
+							estate = estate_burghers
+							influence = 50
+						}
+					}
+				}
+			}
+			else = {
+				custom_trigger_tooltip = {
+					tooltip = FOCUS_BYPASSED
+					always = yes
+				}
+			}
+        }
+		effect = {
+			if = {
+				limit = {
+					dynasty = "Sar"
+				}
+				add_country_modifier = {
+					name = tck_sar_virtue
+					duration = 5475
+				}
+			}
+			else = {
+				custom_tooltip = FOCUS_BYPASSED
+			}
+		}
+		provinces_to_highlight = {
+		}
+	}
+	tck_provencial_governors = {
+		icon = mission_asian_trader
+		required_missions = { tck_sar_power }
+		position = 9
+		trigger = {
+			all_subject_country = {
+				has_opinion = {
+					who = ROOT
+					value = 50
+				}
+			}
+			estate_loyalty = {
+				estate = estate_nobles
+				loyalty = 60
+			}
+        }
+		effect = {
+			add_country_modifier = {
+				name = tck_centralising_empire
+				duration = 7300
+			}
+			add_country_modifier = {
+				name = tck_provencial_governors
+				duration = -1
+			}
+			set_country_flag = hunting_down_pretenders
+		}
+		provinces_to_highlight = {
+		}
+	}
+	tck_wipe_out_pretenders = {
+		icon = mission_impaled_soldies
+		required_missions = { tck_provencial_governors }
+		position = 11
+		trigger = {
+			if = {
+				limit = {
+					dynasty = "Sar"
+				}
+				AND = {
+					mission_completed = tck_take_out_accaci
+					custom_trigger_tooltip = {
+						tooltip = NO_ACCATI
+						has_country_flag = no_accati
+					}
+					custom_trigger_tooltip = {
+						tooltip = NO_ORABUS
+						has_country_flag = no_orabus
+					}
+					custom_trigger_tooltip = {
+						tooltip = NO_ALATAN
+						has_country_flag = no_alatan
+					}
+				}
+			}
+			else = {
+				custom_trigger_tooltip = {
+					tooltip = FOCUS_BYPASSED
+					always = yes
+				}
+			}
+        }
+		effect = {
+			if = {
+				limit = {
+					dynasty = "Sar"
+				}
+				add_government_reform = tck_sar_reform
+			}
+			else = {
+				custom_tooltip = FOCUS_BYPASSED
+			}
+		}
+		provinces_to_highlight = {
+		}
+	}
+}
+
+tck_slot_5 = {
+	slot = 5
+	has_country_shield = yes
+	ai = yes
+
+	potential = {
+		tag = TCK
+	}
+	tck_build_up_river = {
+		icon = mission_colonial
+		required_missions = { tck_the_good_king }
+		position = 2
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 5
+				OR = {
+					area = imogua_area
+					area = emintas_area
+					area = roplea_area
+				}
+				OR = {
+					has_terrain = farmlands
+					has_terrain = grasslands
+				}
+				num_of_times_improved = 5
+			}
+        }
+		effect = {
+			5066 = {
+				add_prosperity = 50
+			}
+			5050 = {
+				add_prosperity = 50
+			}
+			5407 = {
+				add_prosperity = 50
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = imogua_area
+				area = emintas_area
+				area = roplea_area
+			}
+		}
+	}
+	tck_flood_barriers = {
+		icon = mission_hanseatic_city
+		required_missions = { tck_build_up_river }
+		position = 3
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 5
+				has_building = coastal_defence
+			}
+			5066 = {
+				has_building = fort_15th
+			}
+			num_mothballed_forts = 0
+        }
+		effect = {
+			add_years_of_owned_provinces_production_income = {
+                years = 10
+                trigger = {
+                    trade_goods = fish
+                }
+                custom_tooltip = LAG_GET_A_LOT_OF_FISH
+            }
+			5066 = {
+				add_province_modifier = {
+					name = tck_coastal_city
+					duration = 3650
+				}
+			}
+			5050 = {
+				add_province_modifier = {
+					name = tck_coastal_city
+					duration = 3650
+				}
+			}
+		}
+		provinces_to_highlight = {
+		}
+	}
+	tck_rebuild_temples = {
+		icon = mission_european_church
+		required_missions = { tck_flood_barriers }
+		position = 4
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 5
+				has_building = temple
+			}
+			has_estate_privilege = estate_church_one_faith_one_culture
+        }
+		effect = {
+			custom_tooltip = TAX_IN_TEMPLES
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						has_building = temple
+					}
+					add_base_tax = 2
+				}
+			}
+		}
+		provinces_to_highlight = {
+		}
+	}
+	tck_oppian_schism = {
+		icon = pex_oppia_mission
+		required_missions = { tck_rebuild_temples }
+		position = 5
+		trigger = {
+			current_age = age_of_reformation # eclipse age - no more reform centres
+			OR = {
+				AND = {
+					religion = western_oppian
+					NOT = { any_owned_province = {
+						religion = reformed_oppian
+					} }
+				}
+				AND = {
+					religion = reformed_oppian
+					NOT = { any_owned_province = {
+						religion = western_oppian
+					} }
+				}
+			}
+        }
+		effect = {
+			add_country_modifier = {
+				name = tck_reformation_decision
+				duration = 5475
+			}
+		}
+		provinces_to_highlight = {
+		}
+	}
+	tck_reconcile_religion = {
+		icon = mission_religious
+		required_missions = { tck_oppian_schism }
+		position = 6
+		trigger = {
+			religious_unity = 1
+			has_estate_privilege = estate_church_clerical_oversight
+			government_reform_progress = 100
+        }
+		effect = {
+			change_government_reform_progress = -100
+			country_event = {
+				id = oppia.38
+			}
+		}
+		provinces_to_highlight = {
+		}
+	}
+	tck_oppian_schools = {
+		icon = mission_scholar_officials
+		required_missions = { tck_finest_diplomats }
+		position = 7
+		trigger = {
+			has_idea_group = innovativeness_ideas
+			innovativeness_ideas = 7
+			has_institution = renaissance
+        }
+		effect = {
+			country_event = {
+				id = oppia.39
+			}
+		}
+		provinces_to_highlight = {
+		}
+	}
+	tck_oppian_economics = {
+		icon = mission_dominate_home_trade_node
+		required_missions = { tck_oppian_schools }
+		position = 8
+		trigger = {
+			5044 = {
+				is_strongest_trade_power = ROOT
+			}
+			5059 = {
+				is_strongest_trade_power = ROOT
+			}
+			5066 = {
+				is_strongest_trade_power = ROOT
+			}
+			mercantilism = 15
+			NOT = { inflation = 0.1 }
+        }
+		effect = {
+			add_years_of_owned_provinces_production_income = {
+                years = 15
+                trigger = {
+                    trade_goods = grain
+                }
+                custom_tooltip = TCK_GET_GRAIN_MOMEY
+            }
+			add_years_of_owned_provinces_production_income = {
+                years = 10
+                trigger = {
+                    trade_goods = cloth
+                }
+                custom_tooltip = TCK_GET_CLOTH_MOMEY
+            }
+		}
+		provinces_to_highlight = {
+		}
+	}
+	tck_gates_of_gomic = {
+		icon = mission_establish_high_seas_navy
+		required_missions = { tck_oppian_economics }
+		position = 9
+		trigger = {
+			owns_core_province = 5044
+			owns_core_province = 5545
+			owns_core_province = 5015
+			owns_core_province = 5014
+			owns_core_province = 5013
+			owns_core_province = 5264
+        }
+		effect = {
+			add_country_modifier = {
+				name = tck_gates_of_the_gomic
+				duration = 9125
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 5044
+				province_id = 5545
+				province_id = 5015
+				province_id = 5014
+				province_id = 5013
+				province_id = 5264
+			}
+		}
+	}
+	tck_ravsho_mercs = {
+		icon = mission_non-western_cavalry_raid
+		required_missions = { } #None
+		position = 10
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = TCK_SILLY_DEVS
+				any_country = {
+					AND = {
+						capital_scope = {
+							is_overseas = no
+						}
+						religion = tonmo
+						has_opinion = {
+							who = ROOT
+							value = 50
+						}
+						NOT = {
+							tag = FAS
+						}
+					}
+				}
+			}
+        }
+		effect = {
+			custom_tooltip = TckRavshoMercs
+			set_country_flag = tck_ravsho_mercs_flag
+		}
+		provinces_to_highlight = {
+		}
+	}
+	tck_revolutionised_cav = {
+		icon = mission_cossack_cavalry
+		required_missions = { tck_ravsho_mercs }
+		position = 11
+		trigger = {
+			cavalry_fraction = 0.20
+			has_reform = army_focus_cav_armies
+        }
+		effect = {
+			add_country_modifier = {
+				name = tck_ravsho_cavalry_techniques
+				duration = 9125
+			}
+		}
+		provinces_to_highlight = {
+		}
+	}
+}

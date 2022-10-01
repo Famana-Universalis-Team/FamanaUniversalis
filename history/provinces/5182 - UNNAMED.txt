@@ -1,9 +1,10 @@
 discovered_by = east_gomic_tech_gr
-discovered_by = north_gomic_tech_gr
+discovered_by = lathvy_tech_gr
 discovered_by = west_gomic_tech_gr
 culture = Mahanshan
 religion = eastern_oppian
 owner = DIM
+is_city = yes
 controller = DIM
 add_core = DIM
 add_core = MHN
@@ -17,6 +18,6 @@ base_production = 1
 trade_goods = coffee
 base_manpower = 2
 capital = "Eniogh"
-is_city = no
-extra_cost = 1
+ 
+
 

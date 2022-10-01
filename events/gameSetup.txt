@@ -1,0 +1,646 @@
+	namespace = gamesetup
+
+#Settings launcher
+#country_event = {
+#	id = gamesetup.0
+#	hidden = yes
+#	fire_only_once = yes
+#	is_triggered_only = yes
+#
+#	trigger = {
+#		ai = no
+#	}
+#
+#	immediate = {
+#		country_event = {
+#			id = gamesetup.1
+#		}
+#	}
+#}
+
+#Settings
+country_event = {
+    id = gamesetup.1
+    title = gamesetup.1.t
+    picture = INVENTION_eventPicture
+    desc = gamesetup.1.d
+    #major = yes
+    is_triggered_only = yes
+
+	trigger = {
+		NOT = { has_global_flag = game_is_setup }
+		NOT = { has_country_flag = dismissedStartup }
+		ai = no
+		NOT = { is_year = 213 }
+	}
+	option = { #CONFIRM
+		name = gamesetup.1.a
+		ai_chance = { factor = 0 }
+		trigger = {
+			OR = {
+				has_country_flag = countryPextoglaziaSurvive
+				has_country_flag = countryPextoglaziaDies
+				has_country_flag = countryPextoglaziaDevolves
+				has_country_flag = countryOrdicaCollapse
+				has_country_flag = countryOrdicaReform
+				has_country_flag = countryOrdicaDecay
+				has_country_flag = countryTonxaraFight
+				has_country_flag = countryTonxaraDies
+				has_country_flag = countryYomtanianAhistorical
+				has_country_flag = countryTombaExists
+			}
+		}
+        #highlight = yes
+        custom_tooltip = DontChange
+		if = {
+			limit = {
+				NOT = { has_global_flag = game_is_setup }
+			}
+			if = {
+				limit = {
+					has_country_flag = countryPextoglaziaDefault
+				}
+				set_global_flag = PextoglaziaDefault
+				clr_global_flag = PextoglaziaSurvive
+				clr_global_flag = PextoglaziaDies
+				clr_global_flag = PextoglaziaDevolves
+			}
+			if = {
+				limit = {
+					has_country_flag = countryPextoglaziaSurvive
+				}
+				set_global_flag = PextoglaziaSurvive
+				clr_global_flag = PextoglaziaDefault
+				clr_global_flag = PextoglaziaDies
+				clr_global_flag = PextoglaziaDevolves
+			}
+			if = {
+				limit = {
+					has_country_flag = countryPextoglaziaDies
+				}
+				set_global_flag = PextoglaziaDies
+				clr_global_flag = PextoglaziaDefault
+				clr_global_flag = PextoglaziaSurvive
+				clr_global_flag = PextoglaziaDevolves
+			}
+			if = {
+				limit = {
+					has_country_flag = countryPextoglaziaDevolves
+				}
+				set_global_flag = PextoglaziaDevolves
+				clr_global_flag = PextoglaziaDefault
+				clr_global_flag = PextoglaziaSurvive
+				clr_global_flag = PextoglaziaDies
+			}
+			if = {
+				limit = {
+					has_country_flag = countryOrdicaDefault
+				}
+				set_global_flag = OrdicaDefault
+				clr_global_flag = OrdicaCollapse
+				clr_global_flag = OrdicaReform
+				clr_global_flag = OrdicaDecay
+			}
+			if = {
+				limit = {
+					has_country_flag = countryOrdicaCollapse
+				}
+				set_global_flag = OrdicaCollapse
+				clr_global_flag = OrdicaDefault
+				clr_global_flag = OrdicaReform
+				clr_global_flag = OrdicaDecay
+			}
+			if = {
+				limit = {
+					has_country_flag = countryOrdicaReform
+				}
+				set_global_flag = OrdicaReform
+				clr_global_flag = OrdicaDefault
+				clr_global_flag = OrdicaCollapse
+				clr_global_flag = OrdicaDecay
+			}
+			if = {
+				limit = {
+					has_country_flag = countryOrdicaDecay
+				}
+				set_global_flag = OrdicaDecay
+				clr_global_flag = OrdicaDefault
+				clr_global_flag = OrdicaCollapse
+				clr_global_flag = OrdicaReform
+			}
+			if = {
+				limit = {
+					has_country_flag = countryTonxaraDefault
+				}
+				set_global_flag = TonxaraDefault
+				clr_global_flag = TonxaraFight
+				clr_global_flag = TonxaraDies
+			}
+			if = {
+				limit = {
+					has_country_flag = countryTonxaraFight
+				}
+				set_global_flag = TonxaraFight
+				clr_global_flag = TonxaraDefault
+				clr_global_flag = TonxaraDies
+			}
+			if = {
+				limit = {
+					has_country_flag = countryTonxaraDies
+				}
+				set_global_flag = TonxaraDies
+				clr_global_flag = TonxaraDefault
+				clr_global_flag = TonxaraFight
+			}
+			if = {
+				limit = {
+					has_country_flag = countryYomtanianDefault
+				}
+				set_global_flag = YomtanianDefault
+				clr_global_flag = YomtanianAhistorical
+			}
+			if = {
+				limit = {
+					has_country_flag = countryYomtanianAhistorical
+				}
+				set_global_flag = YomtanianAhistorical
+				clr_global_flag = YomtanianDefault
+			}
+			if = {
+				limit = {
+					has_country_flag = countryTombaDeleted
+				}
+				set_global_flag = TombaDeleted
+				clr_global_flag = TombaExists
+			}
+			if = {
+				limit = {
+					has_country_flag = countryTombaExists
+				}
+				set_global_flag = TombaExists
+				clr_global_flag = TombaDeleted
+			}
+		}
+		set_global_flag = game_is_setup
+		hidden_effect = {
+			country_event = {
+				id = gamesetup.7
+			}
+		}
+	}
+	option = { #IGNORE
+		name = gamesetup.1.aa
+		ai_chance = { factor = 10 }
+		highlight = yes
+		custom_tooltip = ignore_gamesetup_tt
+		set_country_flag = dismissedStartup
+		clr_country_flag = countryPextoglaziaDefault
+		clr_country_flag = countryPextoglaziaSurvive
+		clr_country_flag = countryPextoglaziaDies
+		clr_country_flag = countryPextoglaziaDevolves
+		clr_country_flag = countryOrdicaDefault
+		clr_country_flag = countryOrdicaCollapse
+		clr_country_flag = countryOrdicaReform
+		clr_country_flag = countryOrdicaDecay
+		clr_country_flag = countryTonxaraDefault
+		clr_country_flag = countryTonxaraFight
+		clr_country_flag = countryTonxaraDies
+		clr_country_flag = countryYomtanianDefault
+		clr_country_flag = countryYomtanianAhistorical
+		clr_country_flag = countryTombaDeleted
+		clr_country_flag = countryTombaExists
+	}
+    option = { #Pextoglazia Settings
+		name = gamesetup.1.b
+		ai_chance = { factor = 0 }
+        country_event = {
+			id = gamesetup.2
+		}
+	}
+	option = { #Ordica Settings
+		name = gamesetup.1.c
+		ai_chance = { factor = 0 }
+		country_event = {
+			id = gamesetup.3
+		}
+
+		trigger = { #Add functionality
+			always = no
+		}
+	}
+	option = { #Tonxara Settings
+		name = gamesetup.1.e
+		ai_chance = { factor = 0 }
+		country_event = {
+			id = gamesetup.4
+		}
+	}
+	option = { #Yomtanian Settings
+		name = gamesetup.1.f
+		ai_chance = { factor = 0 }
+		country_event = {
+			id = gamesetup.5
+		}
+
+		trigger = { #Add functionality
+			always = no
+		}
+	}
+	option = { #Tomba settings
+		name = gamesetup.1.g
+		ai_chance = { factor = 0 }
+		country_event = {
+			id = gamesetup.6
+		}
+	}
+}
+
+#Pextoglazia settings
+country_event = {
+    id = gamesetup.2
+    title = gamesetup.2.t
+    picture = INVENTION_eventPicture
+    desc = gamesetup.2.d
+    is_triggered_only = yes
+
+	trigger = {
+		ai = no
+	}
+
+	option = {
+		name = gamesetup.2.a ## Implemented
+		ai_chance = { factor = 1 }
+		highlight = yes
+        custom_tooltip = PextoglaziaDefault
+		set_country_flag = countryPextoglaziaDefault
+		clr_country_flag = countryPextoglaziaSurvive
+		clr_country_flag = countryPextoglaziaDies
+		clr_country_flag = countryPextoglaziaDevolves
+		hidden_effect = {
+			country_event = {
+				id = gamesetup.1
+			}
+		}
+	}
+    option = {
+		name = gamesetup.2.b ## Implemented
+		ai_chance = { factor = 1 }
+        custom_tooltip = PextoglaziaSurvive
+		set_country_flag = countryPextoglaziaSurvive
+		clr_country_flag = countryPextoglaziaDefault
+		clr_country_flag = countryPextoglaziaDies
+		clr_country_flag = countryPextoglaziaDevolves
+		hidden_effect = {
+			country_event = {
+				id = gamesetup.1
+			}
+		}
+	}
+	option = {
+		name = gamesetup.2.c ## Implemented
+		ai_chance = { factor = 1 }
+        custom_tooltip = PextoglaziaCollapse
+		set_country_flag = countryPextoglaziaDies
+		clr_country_flag = countryPextoglaziaDefault
+		clr_country_flag = countryPextoglaziaSurvive
+		clr_country_flag = countryPextoglaziaDevolves
+		hidden_effect = {
+			country_event = {
+				id = gamesetup.1
+			}
+		}
+	}
+	option = {
+		name = gamesetup.2.e
+		ai_chance = { factor = 1 }
+        custom_tooltip = PextoglaziaMessyCollapse
+		set_country_flag = countryPextoglaziaDevolves
+		clr_country_flag = countryPextoglaziaDefault
+		clr_country_flag = countryPextoglaziaDies
+		clr_country_flag = countryPextoglaziaSurvive
+		hidden_effect = {
+			country_event = {
+				id = gamesetup.1
+			}
+		}
+
+		trigger = { #Add functionality
+			always = no
+		}
+	}
+}
+
+#Ordica settings
+country_event = {
+    id = gamesetup.3
+    title = gamesetup.3.t
+    picture = INVENTION_eventPicture
+    desc = gamesetup.3.d
+    is_triggered_only = yes
+
+	trigger = {
+		ai = no
+	}
+
+	option = {
+		name = gamesetup.3.a
+		ai_chance = { factor = 1 }
+		highlight = yes
+        custom_tooltip = OrdicaDefault
+		set_country_flag = countryOrdicaDefault
+		clr_country_flag = countryOrdicaCollapse
+		clr_country_flag = countryOrdicaReform
+		clr_country_flag = countryOrdicaDecay
+		hidden_effect = {
+			country_event = {
+				id = gamesetup.1
+			}
+		}
+	}
+    option = {
+		name = gamesetup.3.b
+		ai_chance = { factor = 1 }
+        custom_tooltip = OrdicaCollapse
+		set_country_flag = countryOrdicaCollapse
+		clr_country_flag = countryOrdicaDefault
+		clr_country_flag = countryOrdicaReform
+		clr_country_flag = countryOrdicaDecay
+		hidden_effect = {
+			country_event = {
+				id = gamesetup.1
+			}
+		}
+	}
+	option = {
+		name = gamesetup.3.c
+		ai_chance = { factor = 1 }
+        custom_tooltip = OrdicaReform
+		set_country_flag = countryOrdicaReform
+		clr_country_flag = countryOrdicaDefault
+		clr_country_flag = countryOrdicaCollapse
+		clr_country_flag = countryOrdicaDecay
+		hidden_effect = {
+			country_event = {
+				id = gamesetup.1
+			}
+		}
+	}
+	option = {
+		name = gamesetup.3.e
+		ai_chance = { factor = 1 }
+        custom_tooltip = OrdicaDecay
+		set_country_flag = countryOrdicaDecay
+		clr_country_flag = countryOrdicaDefault
+		clr_country_flag = countryOrdicaReform
+		clr_country_flag = countryOrdicaCollapse
+		hidden_effect = {
+			country_event = {
+				id = gamesetup.1
+			}
+		}
+	}
+}
+
+#Fashros settings
+country_event = {
+    id = gamesetup.4
+    title = gamesetup.4.t
+    picture = INVENTION_eventPicture
+    desc = gamesetup.4.d
+    is_triggered_only = yes
+
+	trigger = {
+		ai = no
+	}
+
+	option = {
+		name = gamesetup.4.a ## Implemented
+		ai_chance = { factor = 1 }
+		highlight = yes
+        custom_tooltip = TonxaraDefault
+		set_country_flag = countryTonxaraDefault
+		clr_country_flag = countryTonxaraFight
+		clr_country_flag = countryTonxaraDies
+		hidden_effect = {
+			country_event = {
+				id = gamesetup.1
+			}
+		}
+	}
+    option = {
+		name = gamesetup.4.b ## Implemented
+		ai_chance = { factor = 1 }
+        custom_tooltip = TonxaraSurvive
+		set_country_flag = countryTonxaraFight
+		clr_country_flag = countryTonxaraDies
+		clr_country_flag = countryTonxaraDefault
+		hidden_effect = {
+			country_event = {
+				id = gamesetup.1
+			}
+		}
+	}
+	option = {
+		name = gamesetup.4.c ## Implemented
+		ai_chance = { factor = 1 }
+        custom_tooltip = TonxaraCollapse
+		set_country_flag = countryTonxaraDies
+		clr_country_flag = countryTonxaraDefault
+		clr_country_flag = countryTonxaraFight
+		hidden_effect = {
+			country_event = {
+				id = gamesetup.1
+			}
+		}
+	}
+}
+
+#Yomtanians settings
+country_event = {
+    id = gamesetup.5
+    title = gamesetup.5.t
+    picture = INVENTION_eventPicture
+    desc = gamesetup.5.d
+    is_triggered_only = yes
+
+	trigger = {
+		ai = no
+	}
+
+	option = {
+		name = gamesetup.5.a
+		ai_chance = { factor = 1 }
+		highlight = yes
+        custom_tooltip = yom_historical
+		set_country_flag = countryYomtanianDefault
+		clr_country_flag = countryYomtanianAhistorical
+		hidden_effect = {
+			country_event = {
+				id = gamesetup.1
+			}
+		}
+	}
+    option = {
+		name = gamesetup.5.b
+		ai_chance = { factor = 1 }
+        custom_tooltip = yom_ahistorical
+		set_country_flag = countryYomtanianAhistorical
+		clr_country_flag = countryYomtanianDefault
+		hidden_effect = {
+			country_event = {
+				id = gamesetup.1
+			}
+		}
+	}
+}
+
+#make sure only the host gets it -
+#currently doesnt work as a random player gets it instead.
+#country_event = {
+#   id = gamesetup.6
+#	hidden = yes
+#	fire_only_once = yes
+#   is_triggered_only = yes
+#
+#	trigger = {
+#		NOT = { has_global_flag = game_is_setup }
+#		ai = no
+#	}
+#	immediate = {
+#		country_event = {
+#			id = gamesetup.1
+#		}
+#	}
+#
+#	option = {
+#		name = gamesetup.5.a
+#		ai_chance = { factor = 1 }
+#	}
+#}
+
+#Tomba settings
+country_event = {
+    id = gamesetup.6
+    title = gamesetup.6.t
+    picture = INVENTION_eventPicture
+    desc = gamesetup.6.d
+    is_triggered_only = yes
+
+	trigger = {
+		ai = no
+	}
+
+	option = { #Disable
+		name = gamesetup.6.a
+		ai_chance = { factor = 1 }
+		highlight = yes
+        custom_tooltip = tomba_delete
+		set_country_flag = countryTombaDeleted
+		clr_country_flag = countryTombaExists
+		hidden_effect = {
+			country_event = {
+				id = gamesetup.1
+			}
+		}
+	}
+    option = { #Enable
+		name = gamesetup.6.b
+		ai_chance = { factor = 1 }
+        custom_tooltip = tomba_keep_debug
+		set_country_flag = countryTombaExists
+		clr_country_flag = countryTombaDeleted
+		hidden_effect = {
+			country_event = {
+				id = gamesetup.1
+			}
+		}
+	}
+}
+
+#Confirmation notification event
+country_event = {
+    id = gamesetup.7
+    title = gamesetup.7.t
+    picture = INVENTION_eventPicture
+    desc = gamesetup.7.d
+    is_triggered_only = yes
+	major = yes
+
+	immediate = {
+		clr_country_flag = countryPextoglaziaDefault
+		clr_country_flag = countryPextoglaziaSurvive
+		clr_country_flag = countryPextoglaziaDies
+		clr_country_flag = countryPextoglaziaDevolves
+		clr_country_flag = countryOrdicaDefault
+		clr_country_flag = countryOrdicaCollapse
+		clr_country_flag = countryOrdicaReform
+		clr_country_flag = countryOrdicaDecay
+		clr_country_flag = countryTonxaraDefault
+		clr_country_flag = countryTonxaraFight
+		clr_country_flag = countryTonxaraDies
+		clr_country_flag = countryYomtanianDefault
+		clr_country_flag = countryYomtanianAhistorical
+		clr_country_flag = countryTombaDeleted
+		clr_country_flag = countryTombaExists
+		hidden_effect = {
+			if = { #DELETE TOMBA
+				limit = {
+					has_global_flag = TombaDeleted
+				}
+				every_province = {
+					limit = {
+						religion = tombasa
+					}
+					cede_province = ---
+				}
+			}
+		}
+	}
+
+	option = {
+		name = gamesetup.7.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+#
+country_event = {
+    id = gamesetup.8
+	hidden = yes
+    fire_only_once = yes
+
+	trigger = {
+		owns = 7611
+		NOT = {
+			has_global_flag = game_is_setup
+		}
+		is_year = 213
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		set_global_flag = game_is_setup
+		
+		hidden_effect = {
+			if = { #DELETE TOMBA
+				limit = {
+					has_global_flag = TombaDeleted
+				}
+				every_province = {
+					limit = {
+						religion = tombasa
+					}
+					cede_province = ---
+				}
+			}
+		}
+	}
+
+	option = {
+		name = gamesetup.8.a
+		ai_chance = { factor = 1 }
+	}
+}

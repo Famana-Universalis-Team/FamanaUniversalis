@@ -130,7 +130,7 @@ kin_2 = {
                 estate = estate_church
                 loyalty = 15
             }
-            add_stability = 1
+            add_stability_or_adm_power = yes
         }
     }
 
@@ -237,11 +237,21 @@ kin_3 = {
             mahansha_area = {
                 add_permanent_claim = ROOT
             }
-            unnamed_area_11 = {
+            west_zoblotra_area = {
                 add_permanent_claim = ROOT
             }
-            unnamed_area_12 = {
+            east_zoblotra_area = {
                 add_permanent_claim = ROOT
+            }
+            add_country_modifier = {
+                name = kin_expelled_oppians
+                duration = 7300
+            }
+            shol_area = {
+                add_province_modifier = {
+                    name = kin_rejasuofication
+                    duration = -1
+                }
             }
         }
     }
@@ -252,8 +262,8 @@ kin_3 = {
 
         provinces_to_highlight = {
 			OR = {
-                area = unnamed_area_11
-                area = unnamed_area_12
+                area = west_zoblotra_area
+                area = east_zoblotra_area
             }
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
@@ -262,14 +272,18 @@ kin_3 = {
             num_of_owned_provinces_with	= {
                 value = 5
                 OR = {
-                    area = unnamed_area_11
-                    area = unnamed_area_12
+                    area = west_zoblotra_area
+                    area = east_zoblotra_area
                 }
             }
         }
         effect = {
-            eastern_desert_region = {
+            hoxoi_coast_region = {
                 add_permanent_claim = ROOT
+            }
+            add_country_modifier = {
+                name = kin_taking_back_whats_ours
+                duration = -1
             }
         }
     }
@@ -333,7 +347,7 @@ kin_3 = {
                 area = unnamed_area_45
                 area = unnamed_area_48
                 area = unnamed_area_35
-                area = unnamed_area_39
+                area = bamal_area
             }
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
@@ -354,17 +368,68 @@ kin_3 = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-            unnamed_area_39 = {
+            bamal_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
                 NOT = { unrest = 0 }
 			}
         }
         effect = {
-            add_casus_belli	= {
-                target = BLK
-                type = cb_vassalize_mission
-                months = 120
+            if = {
+                limit = {
+                    exists = BLK
+                }
+                custom_tooltip = kinBLKsubj
+                hidden_effect = {
+                    add_casus_belli	= {
+                        target = BLK
+                        type = cb_vassalize_mission
+                        months = 120
+                    }
+                }
+            }
+            else = {
+                unnamed_area_37 = { add_permanent_claim = ROOT }
+			    yenis_area = { add_permanent_claim = ROOT }
+			    unnamed_area_36 = { add_permanent_claim = ROOT }
+            }
+            bamali_gulf_region = {
+                add_province_modifier = {
+                    name = kin_integrated_bamalis
+                    duration = -1
+                }
+            }
+            hidden_effect = {
+                unnamed_area_37 = {
+                    if = {
+                        limit = {
+                            NOT = {
+                                owned_by = ROOT
+                            }
+                        }
+                        remove_province_modifier = kin_integrated_bamalis
+                    }
+                }
+			    yenis_area = {
+                    if = {
+                        limit = {
+                            NOT = {
+                                owned_by = ROOT
+                            }
+                        }
+                        remove_province_modifier = kin_integrated_bamalis
+                    }
+                }
+			    unnamed_area_36 = {
+                    if = {
+                        limit = {
+                            NOT = {
+                                owned_by = ROOT
+                            }
+                        }
+                        remove_province_modifier = kin_integrated_bamalis
+                    }
+                }
             }
         }
     }
@@ -460,6 +525,14 @@ kin_4 = {
             jasua_region = {
                 add_permanent_claim = ROOT
             }
+            5644 = {
+                add_trade_modifier = {
+                    who = ROOT
+                    duration = 9125
+                    power = 50
+                    key = kin_merchant_jmk
+                }
+            }
         }
     }
     
@@ -490,7 +563,7 @@ kin_4 = {
             unnamed_area_35 = {
                 add_permanent_claim = ROOT
             }
-            unnamed_area_39 = {
+            bamal_area = {
                 add_permanent_claim = ROOT
             }
             unnamed_area_33 = {
@@ -511,8 +584,12 @@ kin_4 = {
             unnamed_area_30 = {
                 add_permanent_claim = ROOT
             }
-            unnamed_area_29 = {
+            affan_area = {
                 add_permanent_claim = ROOT
+            }
+            add_power_projection = {
+                type = mission_rewards_power_projection
+                amount = 25
             }
         }
     }
@@ -520,49 +597,15 @@ kin_4 = {
         icon = mission_conquer_maharashtra
         required_missions = { kin_destruction_of_yabonia }
         provinces_to_highlight = {
-			OR = {
-                area = unnamed_area_33
-                area = unnamed_area_56
-                area = unnamed_area_32
-                area = unnamed_area_30
-                area = geccis_area
-                area = unnamed_area_29
-                area = unnamed_area_52
-            }
+			region = kapolia_region
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
         trigger = {
             OR = {
-                AND = {
-                    unnamed_area_33 = {
-				        type = all
-				        country_or_non_sovereign_subject_holds = ROOT
-			        }
-                    unnamed_area_56 = {
-				        type = all
-				        country_or_non_sovereign_subject_holds = ROOT
-			        }
-                    unnamed_area_32 = {
-				        type = all
-				        country_or_non_sovereign_subject_holds = ROOT
-			        }
-                    unnamed_area_30 = {
-				        type = all
-				        country_or_non_sovereign_subject_holds = ROOT
-			        }
-                    geccis_area = {
-				        type = all
-				        country_or_non_sovereign_subject_holds = ROOT
-			        }
-                    unnamed_area_29 = {
-				        type = all
-				        country_or_non_sovereign_subject_holds = ROOT
-			        }
-                    unnamed_area_52 = {
-				        type = all
-				        country_or_non_sovereign_subject_holds = ROOT
-			        }
-                }
+                kapolia_region = {
+				    type = all
+				    country_or_non_sovereign_subject_holds = ROOT
+			    }
                 AND = {
                     army_strength = {
                         who = KAP
@@ -613,40 +656,13 @@ kin_4 = {
                 if = {
                     limit = {
                         AND = {
-                            unnamed_area_33 = {
+                            kapolia_region = {
 				                type = all
 				                country_or_non_sovereign_subject_holds = ROOT
 			                }
-                            unnamed_area_56 = {
-	    			            type = all
-		    		            country_or_non_sovereign_subject_holds = ROOT
-			                }
-                            unnamed_area_32 = {
-				                type = all
-				                country_or_non_sovereign_subject_holds = ROOT
-    			            }
-                            unnamed_area_30 = {
-		    		            type = all
-			    	            country_or_non_sovereign_subject_holds = ROOT
-			                }
-                            geccis_area = {
-				                type = all
-				                country_or_non_sovereign_subject_holds = ROOT
-    			            }
-                            unnamed_area_29 = {
-		    		            type = all
-			    	            country_or_non_sovereign_subject_holds = ROOT
-			                }
-                            unnamed_area_52 = {
-				                type = all
-				                country_or_non_sovereign_subject_holds = ROOT
-    			            }
                         }
                     }
-                    bohora_area = {
-                        add_permanent_claim = ROOT
-                    }
-                    kachik_area = {
+                    stroktur_region = {
                         add_permanent_claim = ROOT
                     }
                 }
@@ -672,6 +688,7 @@ kin_5 = {
     kin_pearl_of_jasua = {
         icon = reform_the_monte
         required_missions = { }
+        position = 4
         provinces_to_highlight = {
             province_id = 5196
         }
@@ -759,8 +776,20 @@ kin_6 = {
             }
         }
         effect = {
-            5496 = {
-                add_center_of_trade_level = 1
+            if = {
+                limit = {
+                    NOT = {
+                        5496 = {
+                            province_has_center_of_trade_of_level = 3
+                        }
+                    }
+                }
+                5496 = {
+                    add_center_of_trade_level = 1
+                }
+            }
+            else = {
+                add_mercantilism = 3
             }
             moxon_region = {
                 add_permanent_claim = ROOT

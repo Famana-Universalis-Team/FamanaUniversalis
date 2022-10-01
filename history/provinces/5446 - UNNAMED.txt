@@ -1,9 +1,10 @@
 discovered_by = east_gomic_tech_gr
-discovered_by = north_gomic_tech_gr
+discovered_by = lathvy_tech_gr
 discovered_by = west_gomic_tech_gr
 culture = Sixany
 religion = shirian
 owner = SIX
+is_city = yes
 controller = SIX
 add_core = SIX
 add_core = VIN
@@ -17,5 +18,5 @@ base_production = 4
 trade_goods = wine
 base_manpower = 3
 capital = "Hwggs"
-is_city = no
-extra_cost = 1
+ 
+

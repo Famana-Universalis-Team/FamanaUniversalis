@@ -152,7 +152,7 @@ age_of_discovery = {
 		}
 		
 		ab_attack_bonus_in_capital_terrain = {
-			rule = {
+			modifier = {
 				attack_bonus_in_capital_terrain = yes
 			}
 			ai_will_do = {
@@ -162,7 +162,10 @@ age_of_discovery = {
 		
 		ab_fashros_raze = {
 			allow = {
-				tag = FAS
+				OR = {
+					tag = FAS
+					was_tag = FAS
+				}
 			}
 			modifier = {
 				raze_power_gain = 0.33
@@ -174,7 +177,10 @@ age_of_discovery = {
 		
 		ab_roklot_warriors = {
 			allow = {
-				tag = RKL
+				OR = {
+					tag = RKL
+					was_tag = RKL
+				}
 			}
 			modifier = {
 				infantry_power = 0.2
@@ -186,7 +192,10 @@ age_of_discovery = {
 
 		ab_moshirian_diplomacy = {
 			allow = {
-				tag = MSH
+				OR = {
+					tag = MSH
+					was_tag = MSH
+				}
 			}
 			modifier = {
 				diplomatic_reputation = 5
@@ -198,7 +207,10 @@ age_of_discovery = {
 
 		ab_ordican_conquest = {
 			allow = {
-				tag = ORC
+				OR = {
+					tag = ORC
+					was_tag = ORC
+				}
 			}
 			modifier = {
 				core_creation = -0.2
@@ -276,7 +288,7 @@ age_of_reformation = {
 		#maybe replace due to dlc
 		ab_great_leader = {
 			effect = {
-				create_general = { tradition = 80 }
+				create_general = { tradition = 100 }
 			}
 			ai_will_do = {
 				factor = 10
@@ -295,10 +307,8 @@ age_of_reformation = {
 		}
 
 		ab_extensive_claims_famana = {
-			rule = {
-				can_chain_claim = yes
-			}
 			modifier = {
+				can_chain_claim = yes
 				fabricate_claims_cost = -0.50
 			}
 			ai_will_do = {
@@ -361,7 +371,10 @@ age_of_reformation = {
 
 		ab_rostan_morale = {
 			allow = {
-				tag = RST
+				OR = {
+					tag = RST
+					was_tag = RST
+				}
 			}
 			modifier = {
 				land_morale = 0.25
@@ -373,7 +386,10 @@ age_of_reformation = {
 		
 		ab_geopyopian_prosperity = {
 			allow = {
-				tag = GEP
+				OR = {
+					tag = GEP
+					was_tag = GEP
+				}
 			}
 			modifier = {
 				global_tax_modifier = 0.33
@@ -385,7 +401,10 @@ age_of_reformation = {
 		
 		ab_nafan_expansion = {
 			allow = {
-				tag = NAF
+				OR = {
+					tag = NAF
+					was_tag = NAF
+				}
 			}
 			modifier = {
 				administrative_efficiency = 0.10
@@ -397,7 +416,10 @@ age_of_reformation = {
 		
 		ab_resteman_trade = {
 			allow = {
-				tag = RES
+				OR = {
+					tag = RES
+					was_tag = RES
+				}
 			}
 			modifier = {
 				global_trade_power = 0.5
@@ -418,7 +440,7 @@ age_of_absolutism = {
 	
 	can_start = {
 		any_country = {
-			adm_tech = 18
+			adm_tech = 19
 		}
 	}
 	
@@ -552,7 +574,7 @@ age_of_absolutism = {
 	
 		ab_france_fire_damage = {
 			allow = {
-				tag = FRA
+				always = no
 			}
 			modifier = {
 				fire_damage = 0.2
@@ -563,7 +585,7 @@ age_of_absolutism = {
 		}
 		ab_dutch_anti_corruption = {
 			allow = {
-				tag = NED
+				always = no
 			}
 			modifier = {
 				yearly_corruption = -0.2
@@ -574,10 +596,7 @@ age_of_absolutism = {
 		}	
 		ab_sweden_manpower = {
 			allow = {
-				OR = {
-					tag = SWE
-					tag = SCA
-				}
+				always = no
 			}
 			modifier = {
 				manpower_recovery_speed = 0.35
@@ -589,10 +608,7 @@ age_of_absolutism = {
 
 		ab_manchu_banner = {
 			allow = {
-				OR = {
-					tag = MCH
-					tag = QNG
-				}
+				always = no
 			}
 			modifier = {
 				amount_of_banners = 0.5
@@ -609,7 +625,7 @@ age_of_revolutions = {
 	
 	can_start = {
 		any_country = {
-			mil_tech = 25
+			mil_tech = 26
 		}
 	}
 	
@@ -688,17 +704,17 @@ age_of_revolutions = {
 
 		ab_napoleonic_warfare = {
 			modifier = {
-				artillery_bonus_vs_fort = 3
+				artillery_levels_available_vs_fort = 3
 			}
 			ai_will_do = {
-				factor = 10
+				factor = 15
 			}
 		}
 		
 
 		
 		ab_force_march = {
-			rule = {
+			modifier = {
 				force_march_free = yes
 			}
 			ai_will_do = {
@@ -714,11 +730,21 @@ age_of_revolutions = {
 			}
 		}
 		ab_no_distance_for_core = {
-			rule = {
+			modifier = {
 				ignore_coring_distance = yes
 			}
 			ai_will_do = {
-				factor = 10
+				factor = 15
+				modifier = {
+					# AI peace code relies on being limited by coring range, or it will create crazy border gore where it can't reach its new lands
+					factor = 0
+					OR = {
+						is_subject = no
+						overlord = {
+							ai = yes
+						}
+					}
+				}
 			}
 		}
 		
@@ -727,7 +753,7 @@ age_of_revolutions = {
 				backrow_artillery_damage = 0.20
 			}
 			ai_will_do = {
-				factor = 10
+				factor = 15
 			}
 		}
 		ab_same_contine_lib_desire = {
@@ -749,10 +775,7 @@ age_of_revolutions = {
 		}
 		ab_pru_military = {
 			allow = {
-				OR = {
-					tag = PRU
-					tag = GER
-				}
+				always = no
 			}
 			modifier = {
 				fire_damage_received = -0.2
@@ -763,7 +786,7 @@ age_of_revolutions = {
 		}
 		ab_gbr_fleet = {
 			allow = {
-				tag = GBR
+				always = no
 			}
 			modifier = {
 				naval_maintenance_modifier = -0.33
@@ -774,7 +797,7 @@ age_of_revolutions = {
 		}
 		ab_russia_boost = {
 			allow = {
-				tag = RUS
+				always = no
 			}
 			modifier = {
 				governing_capacity_modifier = 0.33
@@ -785,10 +808,7 @@ age_of_revolutions = {
 		}
 		ab_austria_rep = {
 			allow = {
-				OR = {
-					tag = HAB
-					tag = HLR
-				}
+				always = no
 			}
 			modifier = {
 				diplomatic_reputation = 5

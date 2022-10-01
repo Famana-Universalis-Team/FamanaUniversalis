@@ -296,3 +296,21 @@ zosa_high_priest = {
 	on_deactivation = {
 	}
 }
+
+naf_hartimatul_stronghold = {
+	potential = {
+		normal_or_historical_nations = yes
+		controller = {
+			has_country_flag = nafaOwnsHartimatul
+		}
+	}
+	
+	trigger = {
+		has_fort_building_trigger = yes
+	}
+
+    hostile_disembark_speed = 2.5
+    hostile_fleet_attrition = 2
+    local_defensiveness = 0.25
+    supply_limit_modifier = 0.20
+}

@@ -1,4 +1,4 @@
-discovered_by = north_gomic_tech_gr
+discovered_by = lathvy_tech_gr
 #Written with Eu4 Easy Province Creator by emiroercn
 #Almuz
 culture = Vordori
@@ -8,11 +8,12 @@ add_core = VOR
 base_tax = 1
 base_production = 1
 base_manpower = 2
-native_size = 30
-native_ferocity = 1
-native_hostileness = 1
-capital = "Vanam"
 is_city = no
-extra_cost = 1
+native_size = 30
+native_ferocity = 6
+native_hostileness = 5
+capital = "Vanam"
+ 
 
-discovered_by = estal_tribal_tech_gr
+
+discovered_by = west_estali_tech_gr

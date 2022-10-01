@@ -1,9 +1,10 @@
 discovered_by = east_gomic_tech_gr
-discovered_by = north_gomic_tech_gr
+discovered_by = lathvy_tech_gr
 discovered_by = west_gomic_tech_gr
-culture = West_Emastalian
+culture = Maxan_West_Emastalian
 religion = lathvy
 owner = HIT
+is_city = yes
 controller = HIT
 add_core = HIT
 
@@ -16,6 +17,6 @@ base_production = 5
 trade_goods = glass
 base_manpower = 4
 capital = "Hitea"
-is_city = yes
-extra_cost = 1
+ 
+
 

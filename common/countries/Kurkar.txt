@@ -1,6 +1,6 @@
 #Country Name: Please see filename.
 
-graphical_culture = northamericagfx
+graphical_culture = muslimgfx
 
 color = { 77  127  69 }
 
@@ -39,6 +39,18 @@ monarch_names = {
 	"Qayam #0" = 1
 	"Umea #0" = 1
 	"Hovakar #0" = 1
+	"Kulut #0" = 1
+	"Atya #0" = 1
+	"Aghad #0" = 1
+	"Usalaq #0" = 1
+	"Kirud #0" = 1
+	"Hujullad #0" = 1
+	"Aluwuh #0" = 1
+	"Ashadhi #0" = 1
+	"Akrifl #0" = 1
+	"Ma'Awar #0" = 1
+	"Qadkhit #0" = 1
+	"Qaqal #0" = 1
 	"Kandar #0" = -1
 	"Oala #0" = -1
 	"Palana #0" = -1
@@ -51,6 +63,18 @@ leader_names = {
 	Qayam
 	Umea
 	Hovakar
+	Kulut 
+	Atya 
+	Aghad 
+	Usalaq 
+	Kirud 
+	Hujullad 
+	Aluwuh 
+	Ashadhi 
+	Akrifl 
+	"Ma'Awar" 
+	Qadkhit 
+	Qaqal
 }
 
 ship_names = {

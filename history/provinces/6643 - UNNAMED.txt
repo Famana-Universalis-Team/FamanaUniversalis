@@ -1,7 +1,8 @@
-discovered_by = gotzlic_tech_gr
+discovered_by = estali_tech_gr
 culture = Nenki
 religion = gotzli
 owner = NEN
+is_city = yes
 controller = NEN
 add_core = NEN
 
@@ -14,8 +15,7 @@ base_production = 1
 trade_goods = fur
 base_manpower = 2
 capital = "Nenki"
-is_city = no
-extra_cost = 1
+ 
 center_of_trade = 1
 
 

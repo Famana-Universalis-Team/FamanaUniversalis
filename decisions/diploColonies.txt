@@ -2,7 +2,7 @@ country_decisions = {
 
 	colonize_borlebin = {
 		potential = {
-			borlebim_area = {
+			borlebin_area = {
 				is_empty = yes
 			}
 			dip_tech = 6
@@ -27,7 +27,7 @@ country_decisions = {
 			}
 		}
 		provinces_to_highlight = {
-			area = borlebim_area
+			area = borlebin_area
 		}
 		allow = {
 			dip_tech = 9
@@ -36,7 +36,7 @@ country_decisions = {
 			mil_power = 100
 		}
 		effect = {
-			borlebim_area = {
+			borlebin_area = {
 				limit = {
 					is_empty = yes
 				}
@@ -105,9 +105,9 @@ country_decisions = {
 			factor = 1
 		}
 	}
-	conquer_unnamed_area_23 = {
+	conquer_reyel_area = {
 		potential = {
-			unnamed_area_23 = {
+			reyel_area = {
 				is_empty = yes
 			}
 			dip_tech = 8
@@ -127,7 +127,7 @@ country_decisions = {
 		}
 		provinces_to_highlight = {
 			OR = {
-				area = unnamed_area_23
+				area = reyel_area
 			}
 			OR = {
 				NOT = { owned_by = ROOT }
@@ -141,7 +141,7 @@ country_decisions = {
 			mil_power = 125
 		}
 		effect = {
-			unnamed_area_23 = {
+			reyel_area = {
 				limit = {
 					is_empty = yes
 				}
@@ -206,7 +206,7 @@ country_decisions = {
 	}
 	conquer_east_yuvla = {
 		potential = {
-			unnamed_area_24 = {
+			east_yuvla_area = {
 				is_empty = yes
 			}
 			dip_tech = 1
@@ -216,7 +216,7 @@ country_decisions = {
 		}
 		provinces_to_highlight = {
 			OR = {
-				area = unnamed_area_24
+				area = east_yuvla_area
 			}
 			OR = {
 				NOT = { owned_by = ROOT }
@@ -230,7 +230,7 @@ country_decisions = {
 			mil_power = 50
 		}
 		effect = {
-			unnamed_area_24 = {
+			east_yuvla_area = {
 				limit = {
 					is_empty = yes
 				}
@@ -563,7 +563,7 @@ country_decisions = {
 	}
 	conquer_vava = { #this is literally tyarda which amongoloid named this vava area what the fuck is wrong with you
 		potential = {
-			vava_area = {
+			tyarda_area = {
 				is_empty = yes
 			}
 			dip_tech = 6
@@ -577,7 +577,7 @@ country_decisions = {
 		}
 		provinces_to_highlight = {
 			OR = {
-				area = vava_area
+				area = tyarda_area
 			}
 			OR = {
 				NOT = { owned_by = ROOT }
@@ -591,7 +591,7 @@ country_decisions = {
 			mil_power = 25
 		}
 		effect = {
-			vava_area = {
+			tyarda_area = {
 				limit = {
 					is_empty = yes
 				}
@@ -1053,6 +1053,10 @@ country_decisions = {
 			capital_scope = {
 			region = nhoma_region
 			}
+			NOT = {
+				tag = NHM
+				ai = yes
+			}
 		}
 		provinces_to_highlight = {
 			OR = {
@@ -1093,6 +1097,10 @@ country_decisions = {
 			}
 			capital_scope = {
 			region = nhoma_region
+			}
+			NOT = {
+				tag = NHM
+				ai = yes
 			}
 		}
 		provinces_to_highlight = {
@@ -1152,6 +1160,10 @@ country_decisions = {
 			capital_scope = {
 			region = nhoma_region
 			}
+			NOT = {
+				tag = NHM
+				ai = yes
+			}
 		}
 		provinces_to_highlight = {
 			OR = {
@@ -1200,6 +1212,10 @@ country_decisions = {
 			capital_scope = {
 			region = nhoma_region
 			}
+			NOT = {
+				tag = NHM
+				ai = yes
+			}
 		}
 		provinces_to_highlight = {
 			OR = {
@@ -1247,6 +1263,10 @@ country_decisions = {
 			capital_scope = {
 			region = nhoma_region
 			}
+			NOT = {
+				tag = NHM
+				ai = yes
+			}
 		}
 		provinces_to_highlight = {
 			OR = {
@@ -1289,6 +1309,10 @@ country_decisions = {
 			capital_scope = {
 				region = nhoma_region
 			}
+			NOT = {
+				tag = NHM
+				ai = yes
+			}
 		}
 		provinces_to_highlight = {
 			OR = {
@@ -1309,6 +1333,234 @@ country_decisions = {
 			}
 			ROOT = {
 				add_mil_power = -10
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	colonize_alqyl = {
+		potential = {
+			OR = {
+				has_country_flag = TCKdesert_modernised
+				overlord = {
+					has_country_flag = TCKdesert_modernised
+				}
+			}
+			OR = {
+				7979 = {
+					is_empty = yes
+				}
+				7980 = {
+					is_empty = yes
+				}
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 7979
+				province_id = 7980
+			}
+		}
+		allow = {
+			dip_tech = 10
+			###is_free_or_tributary_trigger = yes
+			is_at_war = no
+			mil_power = 100
+			AND = {
+				owns_core_province = 5091
+				owns_core_province = 5093
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					7979 = {
+						is_empty = yes
+					}
+				}
+				7979 = {
+					cede_province = ROOT
+					change_religion	= ROOT
+					change_culture = ROOT
+					ROOT = {
+						add_mil_power = -50
+					}
+				}
+			}
+			if = {
+				limit = {
+					7980 = {
+						is_empty = yes
+					}
+				}
+				7980 = {
+					cede_province = ROOT
+					change_religion	= ROOT
+					change_culture = ROOT
+					ROOT = {
+						add_mil_power = -50
+					}
+				}
+			}
+			add_mil_power = -50
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	colonize_asetli = {
+		potential = {
+			OR = {
+				has_country_flag = TCKeast_coast
+				overlord = {
+					has_country_flag = TCKeast_coast
+				}
+			}
+			#OR = {
+
+			#}
+			asetli_area = {
+				is_empty = yes
+			}
+		}
+		provinces_to_highlight = {
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			area = asetli_area
+		}
+		allow = {
+			dip_tech = 12
+			###is_free_or_tributary_trigger = yes
+			is_at_war = no
+			mil_power = 200
+			owns_core_province = 5040
+		}
+		effect = {
+			asetli_area = {
+				limit = {
+					is_empty = yes
+				}
+				cede_province = ROOT
+				change_religion	= ROOT
+				ROOT = {
+					add_mil_power = -50
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	colonize_yarong = {
+		potential = {
+			OR = {
+				has_country_flag = TCKeast_coast
+				overlord = {
+					has_country_flag = TCKeast_coast
+				}
+			}
+			area_196 = {
+				is_empty = yes
+			}
+		}
+		provinces_to_highlight = {
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			area = area_196
+		}
+		allow = {
+			dip_tech = 15
+			###is_free_or_tributary_trigger = yes
+			is_at_war = no
+			mil_power = 200
+			owns_core_province = 5545
+		}
+		effect = {
+			area_196 = {
+				limit = {
+					is_empty = yes
+				}
+				cede_province = ROOT
+				change_religion	= ROOT
+				ROOT = {
+					add_mil_power = -50
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	invade_gacil = {
+		potential = {
+			has_global_flag = gacil_discovered
+			has_discovered = 6465
+			6465 = {
+				is_empty = yes
+			}
+			capital_scope = {
+				superregion = north_estal_superregion
+			}
+		}
+		provinces_to_highlight = {
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			province_id = 6465
+		}
+		allow = {
+			is_at_war = no
+			mil_power = 200
+			NOT = { has_reform = naravami_tribe_reform }
+			any_owned_province = {
+				has_port = yes
+			}
+		}
+		effect = {
+			add_mil_power = -200
+			6465 = {
+				create_colony_mission_reward_province = { country = ROOT }
+			}
+			gabero_area = {
+				add_permanent_claim = ROOT
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	colonize_6757 = {
+		potential = {
+			tag = ELQ
+			6757 = {
+				is_empty = yes
+			}
+			has_global_flag = qurak_happened
+			has_global_flag = zubara_happened
+		}
+		provinces_to_highlight = {
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			province_id = 6757
+		}
+		allow = {
+			is_at_war = no
+			mil_power = 50
+			owns_core_province = 6762
+		}
+		effect = {
+			6757 = {
+				cede_province = ROOT
+				change_religion	= ROOT
+				change_culture	= ROOT
+				add_core = ROOT
+				ROOT = {
+					add_mil_power = -25
+				}
 			}
 		}
 		ai_will_do = {

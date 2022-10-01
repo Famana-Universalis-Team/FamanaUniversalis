@@ -1,5 +1,6 @@
 add_core = TCS
 owner = TCS
+is_city = yes
 controller = TCS
 culture = Liblatoman
 religion = tombasa
@@ -9,7 +10,7 @@ base_production = 1
 trade_goods = grain
 base_manpower = 1
 capital = "UNNAMED"
-is_city = yes
+ 
 discovered_by = tomban_tech_gr
 
 

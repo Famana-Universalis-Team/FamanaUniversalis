@@ -1,9 +1,10 @@
-discovered_by = gotzlic_tech_gr
+discovered_by = estali_tech_gr
 discovered_by = east_gomic_tech_gr
-discovered_by = north_gomic_tech_gr
+discovered_by = lathvy_tech_gr
 culture = Vanoman
 religion = va
 owner = VAN
+is_city = yes
 controller = VAN
 add_core = VAN
 
@@ -16,6 +17,6 @@ base_production = 3
 trade_goods = paper
 base_manpower = 4
 capital = "Lefim"
-is_city = yes
-extra_cost = 1
+ 
+
 

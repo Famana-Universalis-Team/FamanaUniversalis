@@ -2,18 +2,19 @@
 #UNNAMED
 add_core = FAS
 owner = FAS
+is_city = yes
 controller = FAS
 culture = Forlimlan
-religion = tonmo
+religion = washoom
 hre = no
 base_tax = 2
 base_production = 1
 trade_goods = fish
 base_manpower = 1
 capital = "Yost Cha"
-is_city = yes
+ 
 
-discovered_by = geopyopian_tech_gr
+discovered_by = washoom_tech_gr
 discovered_by = north_antebari_tech_gr
 
 

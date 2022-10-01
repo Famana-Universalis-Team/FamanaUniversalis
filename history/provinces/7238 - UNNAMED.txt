@@ -1,19 +1,18 @@
 #Written with Eu4 Easy Province Creator by emiroercn
 #UNNAMED
-culture = Antiari
+culture = Gan
 religion = bosisi
 hre = no
 base_tax = 1
 base_production = 1
 base_manpower = 1
-native_size = 30
-native_ferocity = 1
-native_hostileness = 1
-capital = "UNNAMED"
 is_city = no
+native_size = 30
+native_ferocity = 6
+native_hostileness = 5
+capital = "Emaril"
+ 
 discovered_by = great_desert_tech_gr
-
-discovered_by = west_gomic_tech_gr
 
 
 

@@ -1,8 +1,9 @@
-discovered_by = gotzlic_tech_gr
+discovered_by = estali_tech_gr
 discovered_by = naravami_tech_gr
 culture = Hozyan
 religion = gotzli
 owner = EHZ
+is_city = yes
 controller = EHZ
 add_core = EHZ
 
@@ -15,12 +16,11 @@ base_production = 6
 trade_goods = iron
 base_manpower = 4
 capital = "Zmats"
-is_city = no
-extra_cost = 1
+ 
 center_of_trade = 1
 
 
-
+extra_cost = 6
 
 
 

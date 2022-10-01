@@ -1,5 +1,5 @@
 government = monarchy
-add_government_reform = autocracy_reform
+add_government_reform = aristocracy_reform
 government_rank = 2
 mercantilism = 10
 technology_group = east_gomic_tech_gr
@@ -7,9 +7,14 @@ religion = egr
 primary_culture = Yabonian
 add_accepted_culture = Oppio_Jasuan
 add_accepted_culture = Geteri
-capital = 5644	# change to real capital
+capital = 5644	
 secondary_religion = bamali
 historical_rival = FAS
+historical_rival = YTI
+historical_rival = BLK
+historical_rival = BMF
+historical_rival = MHN
+historical_rival = NAK
 
 200.1.1 = { #change to 200 or smth
 	monarch = {

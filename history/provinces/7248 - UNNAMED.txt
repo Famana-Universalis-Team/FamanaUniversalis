@@ -2,6 +2,7 @@
 #UNNAMED
 add_core = KKR
 owner = KKR
+is_city = yes
 controller = KKR
 culture = Manthwar
 religion = bosisi
@@ -10,13 +11,9 @@ base_tax = 1
 base_production = 1
 trade_goods = salt
 base_manpower = 2
-capital = "UNNAMED"
-is_city = yes
+capital = "Umab"
+ 
 discovered_by = great_desert_tech_gr
-
-discovered_by = west_gomic_tech_gr
-
-
 
 
 

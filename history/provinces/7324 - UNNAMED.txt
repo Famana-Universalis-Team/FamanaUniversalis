@@ -3,6 +3,7 @@
 add_core = QAN
 add_core = DOR
 owner = DOR
+is_city = yes
 controller = DOR
 culture = Odrabai
 religion = dorroman
@@ -12,7 +13,7 @@ base_production = 1
 trade_goods = grain
 base_manpower = 1
 capital = "UNNAMED"
-is_city = yes
+ 
 discovered_by = qamoni_tech_gr
 
 

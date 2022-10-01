@@ -1,0 +1,54 @@
+ordican_crisis= {
+	potential = {
+        tag = ORC
+		OR = {
+            current_age = age_of_reformation
+            current_age = age_of_absolutism
+        }
+        NOT = { has_global_flag = survivedOrdicanCrisis }
+	}
+	can_start = {
+        has_any_disaster = no
+        current_age = age_of_absolutism
+    }
+	progress = {
+        modifier = {
+            factor = 0.15
+            is_year = 400
+        }
+        modifier = {
+            factor = 0.20
+            custom_trigger_tooltip = {
+                tooltip = rochoniReformationHappenedTooltip
+                has_global_flag = RochoniReformation
+            }
+        }
+    }
+
+	can_stop = { has_any_disaster = yes }
+
+	can_end = {
+        custom_trigger_tooltip = {
+            tooltip = OrdicanDisasterEndedTT
+            has_country_flag = OrdicanDisasterEnded
+        }
+    }
+
+	on_start = ordica.12
+    on_end = ordica.13
+
+    on_monthly = {
+        events = {
+        }
+        random_events = {
+        }
+    }
+
+	modifier = {
+        legitimacy = -1
+        governing_capacity_modifier = -0.33
+        army_tradition_decay = 0.05
+        land_morale = -0.15
+        defensiveness = -0.20
+	}
+}

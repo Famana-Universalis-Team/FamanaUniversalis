@@ -603,6 +603,8 @@ gold = {
 		modifier = {
 			factor = 0
 			is_random_new_world = no
+			#NOT = { region = western_naravam_region }
+			#NOT = { region = eastern_naravam_region }
 			NOT = { region = west_siberia_region }
 			NOT = { region = east_siberia_region }
 			NOT = { region = cascadia_region }
@@ -631,6 +633,8 @@ gold = {
 			factor = 0
 			is_random_new_world = yes
 			NOT = { continent = new_world }
+			#NOT = { region = western_naravam_region }
+			#NOT = { region = eastern_naravam_region }
 			NOT = { region = west_siberia_region }
 			NOT = { region = east_siberia_region }
 			NOT = { region = australia_region }
@@ -771,7 +775,7 @@ iron = {
 slaves = {
 	color = { 0.0 0.0 0.0 }
 	modifier = {
-		global_tariffs = 0.25
+		global_trade_goods_size_modifier = 0.05
 	}
 	province = {
 		local_missionary_strength = 0.01
@@ -838,33 +842,41 @@ ivory = {
 		}
 		modifier = {
 			factor = 0
-			NOT = { continent = asia }
-			NOT = { continent = africa }
-			NOT = { area = subarctic_islands_area }
-			NOT = { area = greenland_area }
-		}
-		modifier = {
-			factor = 0
-			NOT = { has_terrain = jungle }
-			NOT = { has_terrain = savannah }
-			NOT = { has_terrain = glacier }
-		}
-		modifier = {
-			factor = 0
-			OR = {
-				region = west_siberia_region
-				region = east_siberia_region
-				region = manchuria_region
-				region = central_asia_region
-				region = south_africa_region
+			NOT = { 
+				OR = {
+					continent = estal 
+					continent = antebar 
+				}
 			}
 		}
 		modifier = {
-			factor = 0.5
-			region = malaya_region
-			region = moluccas_region
-			region = indonesia_region
+			factor = 0
+			NOT = {
+				OR = { 
+				has_terrain = jungle 
+				has_terrain = savannah
+				has_terrain = glacier 
+				region = napora_region 
+				region = vordor_region 
+				}
+			}
 		}
+		#modifier = {
+			#factor = 0
+			#OR = {
+				#region = west_siberia_region
+				#region = east_siberia_region
+				#region = manchuria_region
+				#region = central_asia_region
+				#region = south_africa_region
+			#}
+		#}
+		#modifier = {
+			#factor = 0.5
+			#region = malaya_region
+			#region = moluccas_region
+			#region = indonesia_region
+		#}
 		modifier = {
 			factor = 1.25
 			OR = {

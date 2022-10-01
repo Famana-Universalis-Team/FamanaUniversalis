@@ -1,13 +1,14 @@
 add_core = GRL
 owner = GRL
+is_city = yes
 controller = GRL
-culture = Mirrisan  discovered_by = estal_tribal_tech_gr
-religion = animism
+culture = Mirrisan  discovered_by = west_estali_tech_gr
+religion = druidic
 hre = no
 base_tax = 2
 base_production = 1
 trade_goods = grain
 base_manpower = 2
 capital = "Mahalastara"
-is_city = no
-extra_cost = 1
+
+#extra_cost = 1

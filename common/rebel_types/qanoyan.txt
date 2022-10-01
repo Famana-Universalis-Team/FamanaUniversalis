@@ -196,7 +196,7 @@ qanoyan_rebels = {
 		}
 		if = {
 			limit = {
-				NOT = { religion_group = qanoyan }
+				NOT = { religion_group = Agmagozi }
 			}
 			add_prestige = -50
 			every_owned_province = {

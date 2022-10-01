@@ -5,6 +5,7 @@ country_event = {
 	title = estal.1.t
 	desc = estal.1.d
 	picture = VILLAGE_BURNING_eventPicture
+	goto = prov_raided_yoms
 	
 	trigger = {
         OR = {
@@ -27,13 +28,13 @@ country_event = {
 				area = area_136
 				area = area_105 
 				area = feyel_area
-				area = unnamed_area_14
+				area = ratahja_area
 			}
         }
 	}
 	
 	mean_time_to_happen = {
-		months = 30
+		months = 100
 	}
 
 	immediate = {
@@ -54,7 +55,7 @@ country_event = {
 					    area = area_136
 					    area = area_105 
 					    area = feyel_area
-					    area = unnamed_area_14
+					    area = ratahja_area
 					}
 				}
 				add_devastation = 15
@@ -77,7 +78,7 @@ country_event = {
 			}
 		}
 		add_years_of_income = -0.25
-		goto = prov_raided_yoms
+		#goto = prov_raided_yoms
 	}
 	option = {
 		name = estal.1.b
@@ -87,7 +88,7 @@ country_event = {
             add_local_autonomy = 15
 		    add_devastation = 10
 		}
-		goto = prov_raided_yoms
+		#goto = prov_raided_yoms
 	}
 }
 
@@ -98,24 +99,26 @@ country_event = { #lathvy conversion
 	picture = PRAYING_eventPicture
 	
 	trigger = {
-		NOT = { has_country_flag = lathvy_convert_fired }
-		NOT = { has_country_modifier = yomtanian_nation }
-        OR = {
+		OR = {
 			religion_group = north_estali
 			religion = animism
 		}
 		is_year = 350
-		any_known_country = {
-			religion_group = lathvy
+		has_global_flag = LathvyConversionsStarted
+		NOT = { religion = maschi }
+		NOT = {
+			government = native
+		}
+		NOT = { has_country_flag = lathvy_convert_fired }
+		NOT = { has_country_modifier = yomtanian_nation }
+		NOT = {
+			tag = RDU
 		}
 		capital_scope = {
 			continent = estal
 		}
-		NOT = {
-			government = native
-		}
-		NOT = {
-			tag = RDU
+		any_known_country = {
+			religion_group = lathvy_group
 		}
 	}
 	
@@ -151,7 +154,17 @@ country_event = { #lathvy conversion
 
 	option = { #Stay pagan
 		name = estal.2.b
-		ai_chance = { factor = 1 }
+		ai_chance = { 
+			factor = 1
+			modifier = {
+				factor = 20
+				capital_scope = {
+					region = lukscha_region
+					region = east_gotzlic_region
+					region = gotzlic_region
+				}
+			}
+		}
 		add_country_modifier = {
 			name = rejected_lathvy
 			duration = 5475
@@ -168,20 +181,52 @@ country_event = {
 	picture = LAND_MILITARY_eventPicture
 	fire_only_once = yes 
 	major = yes
+
+	mean_time_to_happen = {
+		days = 1
+	}
 	
 	trigger = {
 		tag = ZUB
-		any_enemy_country = {
-			war_score_against = {
-				who = ZUB
-				value = 70
-			}
-		}
 		NOT = {
 			OR = {
 				owns_core_province = 6536
 				owns_core_province = 6587
 				owns_core_province = 6584
+			}
+		}
+		OR = {
+			any_known_country = {
+				war_score_against = {
+					who = ZUB
+					value = 60
+				}
+			}
+			any_known_country = {
+				NOT = {
+					tag = ZUB
+				}
+				controls = 6649
+			}
+			any_known_country = {
+				NOT = {
+					tag = ZUB
+				}
+				owns_core_province = 6649
+			}
+		}
+		6761 = {
+			is_empty = yes
+		}
+		NOT = {
+			any_owned_province = {
+				NOT = {
+					OR = {
+						region = gotzlic_region
+						region = east_gotzlic_region
+						region = south_gotzlic_region
+					}
+				}
 			}
 		}
 	}
@@ -190,6 +235,7 @@ country_event = {
 		name = estal.3.a
 		ai_chance = { factor = 12 }
 		hidden_effect = {
+			set_country_flag = zubaraMigratedFlag
 			every_known_country = {
 				white_peace = ROOT
 			}
@@ -204,6 +250,9 @@ country_event = {
 					add_core = ROOT
 					change_culture = ROOT
 					change_religion = ROOT
+					add_base_tax = 1
+					add_base_production = 1
+					add_base_manpower = 1
 				}
 			}
 			if = {
@@ -217,6 +266,9 @@ country_event = {
 					add_core = ROOT
 					change_culture = ROOT
 					change_religion = ROOT
+					add_base_tax = 1
+					add_base_production = 1
+					add_base_manpower = 1
 				}
 			}
 			if = {
@@ -230,6 +282,9 @@ country_event = {
 					add_core = ROOT
 					change_culture = ROOT
 					change_religion = ROOT
+					add_base_tax = 1
+					add_base_production = 1
+					add_base_manpower = 1
 				}
 			}
 			if = {
@@ -243,6 +298,9 @@ country_event = {
 					add_core = ROOT
 					change_culture = ROOT
 					change_religion = ROOT
+					add_base_tax = 1
+					add_base_production = 1
+					add_base_manpower = 1
 				}
 			}
 			if = {
@@ -256,6 +314,9 @@ country_event = {
 					add_core = ROOT
 					change_culture = ROOT
 					change_religion = ROOT
+					add_base_tax = 1
+					add_base_production = 1
+					add_base_manpower = 1
 				}
 			}
 			if = {
@@ -269,7 +330,26 @@ country_event = {
 					add_core = ROOT
 					change_culture = ROOT
 					change_religion = ROOT
+					add_base_tax = 1
+					add_base_production = 1
+					add_base_manpower = 1
 				}
+			}
+			6768 = {
+				change_culture = Zubaran
+				change_religion = ROOT
+			}
+			6673 = {
+				change_culture = Zubaran
+				change_religion = ROOT
+			}
+			6749 = {
+				change_culture = Zubaran
+				change_religion = ROOT
+			}
+			6671 = {
+				change_culture = Zubaran
+				change_religion = ROOT
 			}
 			set_capital = 6761
 			release = HZY
@@ -281,37 +361,193 @@ country_event = {
 			release = RST
 			release = BIO
 			release = MIZ
-			every_owned_province = {
-				limit = {
-					NOT = { 
-						OR = {
-							area = area_223 
-							area = area_221
-							area = area_231
-						}
-					}
-				}
-				cede_province = ---
-			}
 			every_province = {
 				limit = {
 					NOT = { 
 						OR = {
-							area = area_223
-							area = area_221
-							area = area_231
+							area = area_223 
+							area = area_189
 						}
 					}
 				}
 				remove_core = ZUB
 			}
+			if = {
+				limit = {
+					6655 = {
+						owned_by = ZUB
+					}
+				}
+				6655 = {
+					cede_province = ---
+				}
+			}
+			if = {
+				limit = {
+					6653 = {
+						owned_by = ZUB
+					}
+				}
+				6653 = {
+					cede_province = ---
+				}
+			}
+			if = {
+				limit = {
+					6651 = {
+						owned_by = ZUB
+					}
+				}
+				6651 = {
+					cede_province = ---
+				}
+			}
+			if = {
+				limit = {
+					6652 = {
+						owned_by = ZUB
+					}
+				}
+				6652 = {
+					cede_province = ---
+				}
+			}
+			if = {
+				limit = {
+					6654 = {
+						owned_by = ZUB
+					}
+				}
+				6654 = {
+					cede_province = ---
+				}
+			}
+			if = {
+				limit = {
+					6650 = {
+						owned_by = ZUB
+					}
+				}
+				6650 = {
+					cede_province = ---
+				}
+			}
+			if = {
+				limit = {
+					6649 = {
+						owned_by = ZUB
+					}
+				}
+				6649 = {
+					cede_province = ---
+				}
+			}
+			if = {
+				limit = {
+					6647 = {
+						owned_by = ZUB
+					}
+				}
+				6647 = {
+					cede_province = ---
+				}
+			}
+			if = {
+				limit = {
+					6648 = {
+						owned_by = ZUB
+					}
+				}
+				6648 = {
+					cede_province = ---
+				}
+			}
+			if = {
+				limit = {
+					6646 = {
+						owned_by = ZUB
+					}
+				}
+				6646 = {
+					cede_province = ---
+				}
+			}
+			if = {
+				limit = {
+					6633 = {
+						owned_by = ZUB
+					}
+				}
+				6633 = {
+					cede_province = ---
+				}
+			}
+			if = {
+				limit = {
+					6634 = {
+						owned_by = ZUB
+					}
+				}
+				6634 = {
+					cede_province = ---
+				}
+			}
+			if = {
+				limit = {
+					6645 = {
+						owned_by = ZUB
+					}
+				}
+				6645 = {
+					cede_province = ---
+				}
+			}
 			set_global_flag = zubara_happened #a little tool that will help us later
+			6584 = {
+			   	owner = {
+					country_event = {
+						id = gotzlica.17
+						days = 7
+					}
+			   	}
+			}
+			6548 = {
+			   	owner = {
+					country_event = {
+						id = gotzlica.21
+						days = 7
+					}
+			   	}
+			}
+			every_country = {
+				limit = {
+					capital_scope = {
+						OR = {
+							region_for_scope_province = {
+								region = gotzlic_region
+							}
+							region_for_scope_province = {
+								region = east_gotzlic_region
+							}
+							region_for_scope_province = {
+								region = south_gotzlic_region
+							}
+						}
+					}
+				}
+				add_trust = {
+					who = ZUB
+					value = -50
+					mutual = yes
+				}
+			}
 		}
 		custom_tooltip = zub_migrate_tooltip
 	}
 		
 	option = {
 		name = estal.3.b
+		ai_chance = { factor = 0 }
 		add_prestige = 10
 		add_country_modifier = {
 			name = zub_humil
@@ -331,26 +567,41 @@ country_event = {
 	hidden = yes
 	
 	trigger = {
+		any_owned_province = {
+            region = emastalia_region
+        }
 		NOT = { 
 			exists = ELQ
 		}
 		6762 = {
 			is_empty = yes
 		}
-		any_owned_province = {
-            region = emastalia_region
-        }
 	}
 	
 	mean_time_to_happen = {
-		months = 12
+		days = 1
 	}
 	
 	immediate = {
 		6762 = {
 			cede_province = ELQ
             add_core = ELQ
-            change_culture = East_Emastalian
+			if = {
+				limit = {
+					ELQ = {
+						primary_culture = Maxan_East_Emastalian
+					}
+				}
+				change_culture = Maxan_East_Emastalian
+			}
+			if = {
+				limit = {
+					ELQ = {
+						primary_culture = East_Emastalian
+					}
+				}
+				change_culture = East_Emastalian
+			}
             change_religion = lathvy 
 		}
 		emastalia_region = {
@@ -370,5 +621,320 @@ country_event = {
 	}
 	option = {
 		name = estal.4.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+#Pramtea fix
+country_event = {
+	id = estal.5
+	fire_only_once = yes
+	hidden = yes
+	
+	trigger = {
+		tag = PRT
+		NOT = {
+			has_reform = ora_confederation
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		change_government = tribal
+		add_government_reform = ora_confederation
+	}
+	option = {
+		name = estal.5.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+#Rise of the Natives
+country_event = {
+	id = estal.6
+	title = estal.6.t
+	desc = estal.6.d
+	picture = NATIVES_eventPicture
+	fire_only_once = yes
+	
+	trigger = {
+		owns_core_province = 5017
+		is_year = 450
+	}
+	
+	mean_time_to_happen = {
+		months = 6
+	}
+	
+	option = {
+		name = estal.6.a
+		ai_chance = { factor = 1 }
+		custom_tooltip = WEST_ESTAL_POPULATED
+		hidden_effect = {
+			if = {
+				limit = {
+					5743 = {
+						is_empty = yes
+					}
+				}
+				5743 = {
+					cede_province = KPR
+					add_core = KPR
+				}
+			}
+			if = {
+				limit = {
+					6427 = {
+						is_empty = yes
+					}
+				}
+				6427 = {
+					cede_province = KPR
+					add_core = KPR
+				}
+			}
+			if = {
+				limit = {
+					6428 = {
+						is_empty = yes
+					}
+				}
+				6428 = {
+					cede_province = KPR
+					add_core = KPR
+				}
+			}
+			revdirom_area = {
+				limit = { 
+					is_empty = yes
+				}
+				cede_province = NBE
+				add_core = NBE
+			}
+			west_feniki = {
+				limit = { 
+					is_empty = yes
+				}
+				cede_province = NBE
+				add_core = NBE
+			}
+			griglom_area = {
+				limit = { 
+					is_empty = yes
+				}
+				cede_province = NBE
+				add_core = NBE
+			}
+			if = {
+				limit = {
+					6439 = {
+						is_empty = yes
+					}
+				}
+				6439 = {
+					cede_province = ILO
+					add_core = ILO
+				}
+			}
+			if = {
+				limit = {
+					6441 = {
+						is_empty = yes
+					}
+				}
+				6441 = {
+					cede_province = ILO
+					add_core = ILO
+				}
+			}
+			if = {
+				limit = {
+					6440 = {
+						is_empty = yes
+					}
+				}
+				6440 = {
+					cede_province = ILO
+					add_core = ILO
+				}
+			}
+			if = {
+				limit = {
+					6442 = {
+						is_empty = yes
+					}
+				}
+				6442 = {
+					cede_province = ILO
+					add_core = ILO
+				}
+			}
+			area_106 = {
+				limit = { 
+					is_empty = yes
+				}
+				cede_province = KEZ
+				add_core = KEZ
+			}
+			fes_viom_area = {
+				limit = { 
+					is_empty = yes
+				}
+				cede_province = EQI
+				add_core = EQI
+			}
+			area_103 = {
+				limit = { 
+					is_empty = yes
+				}
+				cede_province = MID
+				add_core = MID
+			}
+			if = {
+				limit = {
+					6416 = {
+						is_empty = yes
+					}
+				}
+				6416 = {
+					cede_province = EQI
+					add_core = EQI
+				}
+			}
+			if = {
+				limit = {
+					6417 = {
+						is_empty = yes
+					}
+				}
+				6417 = {
+					cede_province = MID
+					add_core = MID
+				}
+			}
+			if = {
+				limit = {
+					6418 = {
+						is_empty = yes
+					}
+				}
+				6418 = {
+					cede_province = EQI
+					add_core = EQI
+				}
+			}
+			area_102 = {
+				limit = { 
+					is_empty = yes
+				}
+				cede_province = LEE
+				add_core = LEE
+			}
+			if = {
+				limit = {
+					6419 = {
+						is_empty = yes
+					}
+				}
+				6419 = {
+					cede_province = LEE
+					add_core = LEE
+				}
+			}
+			area_150 = {
+				limit = { 
+					is_empty = yes
+				}
+				cede_province = YUS
+				add_core = YUS
+			}
+			area_149 = {
+				limit = { 
+					is_empty = yes
+				}
+				cede_province = YUS
+				add_core = YUS
+			}
+			area_148 = {
+				limit = { 
+					is_empty = yes
+				}
+				cede_province = PEL
+				add_core = PEL
+			}
+			area_146 = {
+				limit = { 
+					is_empty = yes
+				}
+				cede_province = MER
+				add_core = MER
+			}
+			area_138 = {
+				limit = { 
+					is_empty = yes
+				}
+				cede_province = JAL
+				add_core = JAL
+			}
+			area_152 = {
+				limit = { 
+					is_empty = yes
+				}
+				cede_province = JAL
+				add_core = JAL
+			}
+			area_135 = {
+				limit = { 
+					is_empty = yes
+				}
+				cede_province = MOI
+				add_core = MOI
+			}
+			area_136 = {
+				limit = { 
+					is_empty = yes
+				}
+				cede_province = UFZ
+				add_core = UFZ
+			}
+			area_105 = {
+				limit = { 
+					is_empty = yes
+				}
+				cede_province = BER
+				add_core = BER
+			}
+			area_137 = {
+				limit = { 
+					is_empty = yes
+				}
+				cede_province = ANK
+				add_core = ANK
+			}
+			area_147 = {
+				limit = { 
+					is_empty = yes
+				}
+				cede_province = PEL
+				add_core = PEL
+			}
+			area_99 = {
+				limit = { 
+					is_empty = yes
+				}
+				cede_province = PEL
+				add_core = PEL
+			}
+			alo_tramo_area = {
+				limit = { 
+					is_empty = yes
+				}
+				cede_province = PEL
+				add_core = PEL
+			}
+		}
 	}
 }

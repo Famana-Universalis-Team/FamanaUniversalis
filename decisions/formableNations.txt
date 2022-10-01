@@ -38,7 +38,7 @@ country_decisions = {
 				is_city = yes
 				OR = {
 					area = gromash_area
-					area = arlen_area
+					area = neches_area
 					area = sosne_area
 				}
 			}
@@ -69,7 +69,7 @@ country_decisions = {
 				}
 				add_permanent_claim = ARL
 			}
-			arlen_area = {
+			neches_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
@@ -138,6 +138,45 @@ country_decisions = {
 			}
 		}
 		effect = {
+			hidden_effect = {
+				change_primary_culture = Vaxidarian
+				remove_accepted_culture = Vaximor
+				remove_accepted_culture = Dyrian
+				DYR = {
+					every_owned_province = {
+						limit = {
+							OR = {
+								culture = Vaximor
+								culture = Dyrian
+							}
+						}
+						change_culture = Vaxidarian
+					}
+				}
+				VAX = {
+					every_owned_province = {
+						limit = {
+							OR = {
+								culture = Vaximor
+								culture = Dyrian
+							}
+						}
+						change_culture = Vaxidarian
+					}
+				}
+				every_owned_province = {
+					limit = {
+						OR = {
+							culture = Vaximor
+							culture = Dyrian
+						}
+					}
+					change_culture = Vaxidarian
+				}
+				set_ruler_culture = Vaxidarian
+				set_heir_culture = Vaxidarian
+				set_consort_culture	= Vaxidarian
+			}
 			restore_country_name = yes
 			change_tag = VDY
 			if = {
@@ -159,6 +198,12 @@ country_decisions = {
 			}
 			add_core = 5139
 			add_core = 5138
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
 			add_country_modifier = {
 				name = "centralization_modifier"
 				duration = 7300
@@ -168,6 +213,12 @@ country_decisions = {
 			add_historical_friend = MSH
 			MSH = {
 				add_historical_friend = VDY
+			}
+			custom_tooltip = mergeVaximorDyrian
+			add_accepted_culture = Makyan_C
+			maky_region = {
+				remove_core = VAX
+				remove_core = DYR
 			}
 		}
 		ai_will_do = {
@@ -188,6 +239,8 @@ country_decisions = {
 						tag = VAX
 						tag = DYR
 						tag = VDY
+						tag = GDA
+						tag = ZEA
 					}
 				}
 				religion = mak
@@ -238,9 +291,6 @@ country_decisions = {
 			5140 = {
 				move_capital_effect = yes
 			}
-			add_core = {
-				region = maky_region
-			}
 			okus_area = {
 				limit = {
 					is_empty = yes
@@ -266,7 +316,7 @@ country_decisions = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
-				add_permanent_claim = MKY
+				add_core = MKY
 			}
 			5136 = {
 				add_permanent_claim = MKY
@@ -276,9 +326,9 @@ country_decisions = {
 			}
 			if = {
 				limit = {
-					NOT = { government_rank = 3 }
+					NOT = { government_rank = 2 }
 				}
-				set_government_rank = 3
+				set_government_rank = 2
 			}
 			add_country_modifier = {
 				name = "centralization_modifier"
@@ -364,7 +414,7 @@ country_decisions = {
 				OR = {
 					religion = western_oppian
 					religion = reformed_oppian
-					religion = lathvy
+					religion_group = lathvy_group
 				}
 				NOT = { exists = OPP }
 				was_never_end_game_tag_trigger = yes
@@ -469,7 +519,7 @@ country_decisions = {
 				OR = {
 					religion = eastern_oppian
 					religion = reformed_oppian
-					religion = lathvy
+					religion_group = lathvy_group
 				}
 				NOT = { exists = OPP }
 				was_never_end_game_tag_trigger = yes
@@ -528,11 +578,7 @@ country_decisions = {
 			hidden_effect = {
 				every_owned_province = {
 					limit = {
-						OR = {
-							culture = Hoxan
-							culture = Blastan
-							culture = Zoblotran
-						}
+						culture_group = Hoxoi
 					}
 					change_culture = Neo_Oppian
 				}
@@ -566,7 +612,7 @@ country_decisions = {
 				}
 				add_permanent_claim = OPP
 			}
-			eastern_desert_region = {
+			hoxoi_coast_region = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
@@ -616,8 +662,8 @@ country_decisions = {
 				is_city = yes
 				OR = {
 					area = heoki_area
-					area = unnamed_area_7
-					area = unnamed_area_8
+					area = dibata_area
+					area = thalmor_area
 				}
 			}
 		}
@@ -641,7 +687,7 @@ country_decisions = {
 				}
 				set_government_rank = 2
 			}
-			unnamed_area_8 = {
+			thalmor_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
@@ -653,7 +699,7 @@ country_decisions = {
 				}
 				add_permanent_claim = DES
 			}
-			unnamed_area_7 = {
+			dibata_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
@@ -702,7 +748,7 @@ country_decisions = {
 				OR = {
 					area = elorak_area
 					area = zne_area
-					area = mesdool_area
+					area = viel_minstro_area
 				}
 			}
 		}
@@ -738,7 +784,7 @@ country_decisions = {
 				}
 				add_permanent_claim = OSS
 			}
-			mesdool_area = {
+			viel_minstro_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
@@ -764,10 +810,12 @@ country_decisions = {
 		}
 		provinces_to_highlight = {
 			OR = {
-				province_id = 5450
-				province_id = 5442
 				province_id = 5411
+				province_id = 5442
+				province_id = 5434
 				province_id = 5441
+				province_id = 5431
+				province_id = 5439
 			}
 			OR = {
 				NOT = { owned_by = ROOT }
@@ -778,25 +826,47 @@ country_decisions = {
 			adm_tech = 5
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
-			owns_core_province = 5416
 			owns_core_province = 5411
-			owns_core_province = 5441
 			owns_core_province = 5442
+			owns_core_province = 5434
+			owns_core_province = 5441
+			owns_core_province = 5431
+			owns_core_province = 5439
 			num_of_owned_provinces_with = {
-				value = 3
+				value = 10
 				is_city = yes
-				region = moria_region
+				region = west_xalia_region
 		    }
+			#army_size = 20
 		}
 		effect = {
 			restore_country_name = yes
 			override_country_name = GOLDEN_MEA
 			set_country_flag = golden_mea_formed
+			custom_tooltip = aleMeaBuffIdeas
+			hidden_effect = { swap_free_idea_group = yes }
 			if = {
 				limit = {
-					government_rank = 1
+					NOT = {
+						government_rank = 2
+					}
 				}
 				set_government_rank = 2
+			}
+			if = {
+				limit = {
+					government = monarchy
+					NOT = {
+						has_reform = bureaucratic_monarchy
+					}
+				}
+				add_government_reform = bureaucratic_monarchy
+			}
+			west_xalia_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ALM
 			}
 			add_prestige = 25
 		}
@@ -819,13 +889,17 @@ country_decisions = {
 				}
 				NOT = { has_country_flag = shiria_formed }
 				was_never_end_game_tag_trigger = yes
+				NOT = { has_country_flag = golden_mea_formed }
+				NOT = { tag = VNA }
+				NOT = { tag = MOR }
+				NOT = { tag = DEL }
 			}
 		}
 		provinces_to_highlight = {
 			OR = {
-				province_id = 5399
-				province_id = 5388
 				province_id = 5404
+				province_id = 5388
+				province_id = 5399
 			}
 			OR = {
 				NOT = { owned_by = ROOT }
@@ -866,6 +940,14 @@ country_decisions = {
 				}
 				country_event = { id = ideagroups.1 } #Swap Ideas
 			}
+			if = {
+				limit = {
+					NOT = {
+						tag = MSH
+					}
+				}
+				swap_non_generic_missions = yes
+			}
 			oxaled_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
@@ -896,19 +978,13 @@ country_decisions = {
 				}
 				add_permanent_claim = MSH
 			}
-			vau_area = {
-				limit = {
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = MSH
-			}
 			karmanon_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
 				add_permanent_claim = MSH
 			}
-			unnamed_area_21 = {
+			praman_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
@@ -920,7 +996,7 @@ country_decisions = {
 				}
 				add_permanent_claim = MSH
 			}
-			unnamed_area_20 = {
+			trilsekin_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
@@ -936,9 +1012,20 @@ country_decisions = {
 			set_country_flag = shiria_formed
 			if = {
 				limit = {
-					government_rank = 1
+					NOT = {
+						government_rank = 2
+					}
 				}
 				set_government_rank = 2
+			}
+			if = {
+				limit = {
+					government = monarchy
+					NOT = {
+						has_reform = bureaucratic_monarchy
+					}
+				}
+				add_government_reform = bureaucratic_monarchy
 			}
 			add_prestige = 25
 		}
@@ -955,6 +1042,10 @@ country_decisions = {
 				culture_group = Xalian
 				religion = vinian
 				was_never_end_game_tag_trigger = yes
+				NOT = { has_country_flag = golden_mea_formed }
+				NOT = { tag = MSH }
+				NOT = { tag = MOR }
+				NOT = { tag = DEL }
 			}
 		}
 		provinces_to_highlight = {
@@ -986,7 +1077,9 @@ country_decisions = {
 			restore_country_name = yes
 			if = {
 				limit = {
-					government_rank = 1
+					NOT = {
+						government_rank = 2
+					}
 				}
 				set_government_rank = 2
 			}
@@ -1043,6 +1136,15 @@ country_decisions = {
 				}
 				add_permanent_claim = VNA
 			}
+			if = {
+				limit = {
+					government = monarchy
+					NOT = {
+						has_reform = bureaucratic_monarchy
+					}
+				}
+				add_government_reform = bureaucratic_monarchy
+			}
 			add_country_modifier = {
 				name = "centralization_modifier"
 				duration = 7300
@@ -1062,6 +1164,10 @@ country_decisions = {
 				culture_group = Xalian
 				religion = delkian
 				was_never_end_game_tag_trigger = yes
+				NOT = { has_country_flag = golden_mea_formed }
+				NOT = { tag = MSH }
+				NOT = { tag = MOR }
+				NOT = { tag = VNA }
 			}
 		}
 		provinces_to_highlight = {
@@ -1089,7 +1195,9 @@ country_decisions = {
 			restore_country_name = yes
 			if = {
 				limit = {
-					government_rank = 1
+					NOT = {
+						government_rank = 2
+					}
 				}
 				set_government_rank = 2
 			}
@@ -1118,11 +1226,20 @@ country_decisions = {
 				}
 				add_permanent_claim = DEL
 			}
-			unnamed_area_10 = {
+			hos_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
 				add_permanent_claim = DEL
+			}
+			if = {
+				limit = {
+					government = monarchy
+					NOT = {
+						has_reform = bureaucratic_monarchy
+					}
+				}
+				add_government_reform = bureaucratic_monarchy
 			}
 			add_country_modifier = {
 				name = "centralization_modifier"
@@ -1143,6 +1260,10 @@ country_decisions = {
 				culture_group = Xalian
 				religion = morian
 				was_never_end_game_tag_trigger = yes
+				NOT = { has_country_flag = golden_mea_formed }
+				NOT = { tag = MSH }
+				NOT = { tag = VNA }
+				NOT = { tag = DEL }
 			}
 		}
 		provinces_to_highlight = {
@@ -1185,17 +1306,28 @@ country_decisions = {
 			restore_country_name = yes
 			if = {
 				limit = {
-					government_rank = 1
+					NOT = {
+						government_rank = 2
+					}
 				}
 				set_government_rank = 2
 			}
-			moria_region = {
+			west_xalia_region = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
 				add_permanent_claim = MOR
 			}
 			change_tag = MOR
+			if = {
+				limit = {
+					government = monarchy
+					NOT = {
+						has_reform = bureaucratic_monarchy
+					}
+				}
+				add_government_reform = bureaucratic_monarchy
+			}
 			add_country_modifier = {
 				name = "centralization_modifier"
 				duration = 7300
@@ -1213,7 +1345,10 @@ country_decisions = {
 			AND = {
 				NOT = { exists = MOX }
 				NOT = { tag = SKT }
-				culture_group = Maxan
+				OR = {
+					primary_culture = Lerushian
+					primary_culture = Xofkan
+				}
 				was_never_end_game_tag_trigger = yes
 			}
 		}
@@ -1245,7 +1380,9 @@ country_decisions = {
 			restore_country_name = yes
 			if = {
 				limit = {
-					government_rank = 1
+					NOT = {
+						government_rank = 2
+					}
 				}
 				set_government_rank = 2
 			}
@@ -1279,15 +1416,18 @@ country_decisions = {
 		potential = {
 			AND = {
 				NOT = { exists = GAX }
+				NOT = {
+					AND = {
+						tag = PYA
+						religion_group = lathvy_group
+					}
+				}
 				culture_group = Xalian
 				was_never_end_game_tag_trigger = yes
 				OR = {
-					religion = morian
-					religion = shirian
+					religion_group = xalian_group
 					religion = gadan
-					religion = vinian
-					religion = delkian
-					religion = lathvy
+					religion_group = lathvy_group
 				}
 			}
 		}
@@ -1300,6 +1440,8 @@ country_decisions = {
 				province_id = 5388
 				province_id = 5450
 				province_id = 5399
+				province_id = 5467
+				province_id = 5167
 			}
 			OR = {
 				NOT = { owned_by = ROOT }
@@ -1316,6 +1458,10 @@ country_decisions = {
 			owns_core_province = 5388 #xon
 			owns_core_province = 5450 #jexus
 			owns_core_province = 5399 #oxaled
+			OR = {
+				owns_core_province = 5467 #shiraska xon
+				owns_core_province = 5167 #houraska xon
+			}
 			num_of_owned_provinces_with = {
 				value = 40
 				superregion = ga_xal_superregion
@@ -1359,11 +1505,20 @@ country_decisions = {
 				}
 				add_permanent_claim = GAX
 			}
-			moria_region = {
+			west_xalia_region = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
 				add_permanent_claim = GAX
+			}
+			if = {
+				limit = {
+					government = monarchy
+					NOT = {
+						has_reform = bureaucratic_monarchy
+					}
+				}
+				add_government_reform = bureaucratic_monarchy
 			}
 			add_prestige = 25
 		}
@@ -1399,7 +1554,7 @@ country_decisions = {
 			owns_core_province = 5527
 			owns_core_province = 5519
 			num_of_owned_provinces_with = {
-				value = 20
+				value = 25
 				region = aresia_region
 		    }
 		}
@@ -1496,31 +1651,31 @@ country_decisions = {
 				}
 				add_permanent_claim = JAS
 			}
+			kapolia_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = JAS
+			}
 			mahansha_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
 				add_permanent_claim = JAS
 			}
-			unnamed_area_12 = {
+			shol_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
 				add_permanent_claim = JAS
 			}
-			unnamed_area_11 = {
+			west_zoblotra_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
 				add_permanent_claim = JAS
 			}
-			unnamed_area_44 = {
-				limit = {
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = JAS
-			}
-			unnamed_area_45 = {
+			east_zoblotra_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
@@ -1538,66 +1693,31 @@ country_decisions = {
 				}
 				add_permanent_claim = JAS
 			}
+			unnamed_area_45 = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = JAS
+			}
+			bamal_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = JAS
+			}
+			unnamed_area_44 = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = JAS
+			}
 			unnamed_area_40 = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
 				add_permanent_claim = JAS
 			}
-			unnamed_area_56 = {
-				limit = {
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = JAS
-			}
-			unnamed_area_33 = {
-				limit = {
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = JAS
-			}
-			unnamed_area_32 = {
-				limit = {
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = JAS
-			}
-			unnamed_area_52 = {
-				limit = {
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = JAS
-			}
-			unnamed_area_30 = {
-				limit = {
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = JAS
-			}
-			unnamed_area_29 = {
-				limit = {
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = JAS
-			}
-			unnamed_area_39 = {
-				limit = {
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = JAS
-			}
-			geccis_area = {
-				limit = {
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = JAS
-			}
-			shol_area = {
-				limit = {
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = JAS
-			}
+
 			add_prestige = 25
 		}
 		ai_will_do = {
@@ -1610,22 +1730,22 @@ country_decisions = {
 		potential = {
 			AND = {
 				NOT = { exists = EST }
-				culture_group = Emastalian
+				NOT = { tag = SKT }
+				OR = {
+					culture_group = Emastalian
+					primary_culture = Maxan_West_Emastalian
+					primary_culture = Maxan_East_Emastalian
+				}
 				was_never_end_game_tag_trigger = yes
 			}
 		}
 		provinces_to_highlight = {
 			OR = {
-				province_id = 5561
-				province_id = 5563
-				province_id = 5566
-				province_id = 5567
-				province_id = 5568
-				province_id = 5570
 				province_id = 5572
 				province_id = 5575
 				province_id = 5581
 				province_id = 5583
+				province_id = 5566
 			}
 			OR = {
 				NOT = { owned_by = ROOT }
@@ -1636,17 +1756,21 @@ country_decisions = {
 			adm_tech = 10
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
-			owns_core_province = 5561
-			owns_core_province = 5563
-			owns_core_province = 5566
-			owns_core_province = 5567
-			owns_core_province = 5568
-			owns_core_province = 5568
-			owns_core_province = 5570
 			owns_core_province = 5572
 			owns_core_province = 5575
 			owns_core_province = 5581
-			owns_core_province = 5583
+			OR = {
+				owns_core_province = 5583
+				owns_core_province = 5566
+			}
+			num_of_owned_provinces_with = {
+				value = 25
+				is_core = ROOT
+				OR = {
+					region = emastalia_region
+					region = west_emastalia_region
+				}
+			}
 		}
 		effect = {
 			if = {
@@ -1693,6 +1817,7 @@ country_decisions = {
 				was_never_end_game_tag_trigger = yes
 				NOT = { religion = tonmo }
 			}
+			religion_group = oppian_group
 		}
 		provinces_to_highlight = {
 			OR = {
@@ -1707,7 +1832,7 @@ country_decisions = {
 			}
 		}
 		allow = {
-			adm_tech = 10
+			adm_tech = 5
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
 			owns_core_province = 5177
@@ -1728,12 +1853,24 @@ country_decisions = {
 				}
 				set_government_rank = 2
 			}
+			if = {
+				limit = {
+					primary_culture = Hoxan
+				}
+				add_accepted_culture = Mahanshan
+			}
+			if = {
+				limit = {
+					primary_culture = Mahanshan
+				}
+				add_accepted_culture = Hoxan
+			}
 			change_tag = HVK
 			add_country_modifier = {
 				name = "centralization_modifier"
 				duration = 7300
 			}
-			eastern_desert_region = {
+			hoxoi_coast_region = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
@@ -1741,7 +1878,9 @@ country_decisions = {
 			}
 			if = {
 				limit = {
-					is_empty = yes
+					5184 = {
+						is_empty = yes
+					}
 				}
 				5184 = {
 					cede_province = HVK
@@ -1760,7 +1899,10 @@ country_decisions = {
 		potential = {
 			AND = {
 				NOT = { exists = RES }
-				culture = Feniki
+				OR = {
+					culture = Feniki
+					tag = LAG
+				}
 				was_never_end_game_tag_trigger = yes
 			}
 		}
@@ -1779,6 +1921,7 @@ country_decisions = {
 		allow = {
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
+			culture = Feniki
 			owns_core_province = 5274
 			owns_core_province = 5277
 			owns_core_province = 5028
@@ -1786,7 +1929,14 @@ country_decisions = {
 		}
 		effect = {
 			if = {
-				limit = { has_custom_ideas = no }
+				limit = {
+					AND = {
+						has_custom_ideas = no
+						NOT = {
+							has_idea_group = RES_ideas
+						}
+					}
+				}
 				country_event = { id = ideagroups.1 } #Swap Ideas
 			}
 			set_capital = 5028
@@ -1798,13 +1948,30 @@ country_decisions = {
 				set_government_rank = 2
 			}
 			change_tag = RES
-			change_technology_group	= north_gomic_tech_gr
-			change_unit_type = north_gomic_tech_gr
+			change_technology_group	= lathvy_tech_gr
+			change_unit_type = lathvy_tech_gr
+			hidden_effect = {
+				change_graphical_culture = westerngfx
+			}
+			if = {
+				limit = {
+					government = monarchy
+				}
+				add_government_reform = resteman_thalassocracy
+			}
+			if = {
+				limit = {
+					NOT = {
+						tag = LAG
+					}
+				}
+				swap_non_generic_missions = yes
+			}
 			add_country_modifier = {
 				name = "centralization_modifier"
 				duration = 7300
 			}
-			unnamed_area_23 = {
+			reyel_area = {
 				limit = {
 					is_empty = yes
 				}
@@ -1829,20 +1996,47 @@ country_decisions = {
 
 
 	reform_pexto_decision = {
+		major = yes
 		potential = {
 			OR = {
-				tag=PLM
-				tag=PPX
-				tag=PTG
-				tag=PCG
-				tag=PHL
-				tag=PLY
-				tag=PJS
-				tag=PNV
+				AND = {
+					tag = PLM
+					NOT = { exists = LOM }
+				}
+				AND = {
+					tag = PTG
+					NOT = { exists = TER }
+				}
+				AND = {
+					tag = PCG
+					NOT = { exists = CEG }
+				}
+				AND = {
+					tag = PHL
+					NOT = { exists = HIL }
+				}
+				AND = {
+					tag = PJS
+					NOT = { exists = JNS }
+				}
+				AND = {
+					tag = PNV
+					NOT = { exists = NVI }
+				}
+				AND = {
+					tag = PPX
+					NOT = { exists = PIX }
+				}
+				AND = {
+					tag = PLY
+					NOT = { exists = LAY }
+				}
 			}
 		}
 		allow = {
-			is_free_or_tributary_trigger = yes
+			NOT = {
+				is_subject_of = PEX
+			}
 			is_at_war = no
 		}
 		effect = {
@@ -1896,6 +2090,14 @@ country_decisions = {
 						remove_claim = PNV
 					}
 				}
+				if = {
+					limit = {
+						NOT = {
+							government_rank = 2
+						}
+					}
+					set_government_rank = 2
+				}
 			}
 			if = {
 				limit = {
@@ -1915,7 +2117,7 @@ country_decisions = {
 							limit = {
 								ai = yes
 							}
-							add_ruler_personality = conquerer_personality
+							add_ruler_personality = conqueror_personality
 							set_ai_personality = {
 								personality = ai_militarist
 								locked = yes
@@ -1990,11 +2192,13 @@ country_decisions = {
 			set_country_flag = bamal_formed
 			if = {
 				limit = {
-					government_rank = 1
+					NOT = {
+						government_rank = 2
+					}
 				}
 				set_government_rank = 2
 			}
-			unnamed_area_39 = {
+			bamal_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
@@ -2104,7 +2308,7 @@ country_decisions = {
 			add_prestige = 25
 			country_event = {
 				days = 1
-				id = pexto.34
+				id = pextoglazia.34
 			}
 		}
 		ai_will_do = {
@@ -2165,7 +2369,7 @@ country_decisions = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
-				add_permanent_claim = ROOT
+				add_permanent_claim = ENN
 			}
 			ennam_area = {
 				limit = {
@@ -2232,10 +2436,13 @@ country_decisions = {
 			}
 			if = {
 				limit = {
-					religion = lathvy
+					religion_group = lathvy_group
 				}
-				change_technology_group	= north_gomic_tech_gr
-				change_unit_type = north_gomic_tech_gr
+				change_technology_group	= lathvy_tech_gr
+				change_unit_type = lathvy_tech_gr
+				hidden_effect = {
+					change_graphical_culture = westerngfx
+				}
 			}
 			vordor_region = {
 				limit = {
@@ -2501,10 +2708,13 @@ country_decisions = {
 			}
 			if = {
 				limit = {
-					religion = lathvy
+					religion_group = lathvy_group
 				}
-				change_technology_group	= north_gomic_tech_gr
-				change_unit_type = north_gomic_tech_gr
+				change_technology_group	= lathvy_tech_gr
+				change_unit_type = lathvy_tech_gr
+				hidden_effect = {
+					change_graphical_culture = westerngfx
+				}
 			}
 			if = {
 				limit = {
@@ -2584,7 +2794,7 @@ country_decisions = {
 				}
 				set_government_rank = 2
 			}
-			unnamed_pexto_4 = {
+			seaside_nevia_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
@@ -2647,11 +2857,11 @@ country_decisions = {
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
 			OR = {
-				owns_core_province = 6546
 				owns_core_province = 6547
 				owns_core_province = 6548
 				owns_core_province = 6549
 			}
+			owns_core_province = 6546
 			OR = {
 				NOT = { exists = WHZ }
 				NOT = { exists = EHZ }
@@ -2669,6 +2879,11 @@ country_decisions = {
 			hozy_area = {
 				add_core = HZY
 			}
+			hidden_effect = {
+				hozy_area = {
+					remove_claim = HZY
+				}
+			}
 			add_country_modifier = {
 				name = "centralization_modifier"
 				duration = 7300
@@ -2684,7 +2899,7 @@ country_decisions = {
 		major = yes
 		potential = {
 			AND = {
-				NOT = { exists = MRR }
+				NOT = { exists = GTZ }
 				culture_group = Gotzlic
 				was_never_end_game_tag_trigger = yes
 			}
@@ -2702,7 +2917,7 @@ country_decisions = {
 			}
 		}
 		allow = {
-			adm_tech = 20
+			adm_tech = 15
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
 			owns_core_province = 6546
@@ -2711,13 +2926,15 @@ country_decisions = {
 			owns_core_province = 6536
 			owns_core_province = 6597
 			num_of_owned_provinces_with = {
-				value = 50
+				value = 45
 				culture_group = Gotzlic
 			}
+			NOT = { is_tribal = yes }
 		}
 		effect = {
 			restore_country_name = yes
 			change_tag = GTZ
+			country_event = { id = ideagroups.1 } #Swap Ideas
 			if = {
 				limit = {
 					NOT = { government_rank = 3 }
@@ -2725,6 +2942,18 @@ country_decisions = {
 				set_government_rank = 3
 			}
 			gotzlic_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = GTZ
+			}
+			east_gotzlic_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = GTZ
+			}
+			south_gotzlic_region = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
@@ -2765,10 +2994,12 @@ country_decisions = {
 				value = 10
 				culture = Nirkifi
 			}
+			NOT = { government = native }
 		}
 		effect = {
 			restore_country_name = yes
 			change_tag = NIR
+			change_technology_group = estali_tech_gr
 			
 			if = {
 				limit = {
@@ -2781,6 +3012,12 @@ country_decisions = {
 				duration = 7300
 			}
 			add_prestige = 25
+			every_province = {
+				limit = {
+					culture = Nirkifi
+				}
+				add_core = ROOT
+			}
 		}
 		ai_will_do = {
 			factor = 1
@@ -2812,10 +3049,12 @@ country_decisions = {
 				value = 10
 				culture = Burgavian
 			}
+			NOT = { government = native }
 		}
 		effect = {
 			restore_country_name = yes
 			change_tag = BUV
+			change_technology_group = estali_tech_gr
 			
 			if = {
 				limit = {
@@ -2828,6 +3067,12 @@ country_decisions = {
 				duration = 7300
 			}
 			add_prestige = 25
+			every_province = {
+				limit = {
+					culture = Burgavian
+				}
+				add_core = ROOT
+			}
 		}
 		ai_will_do = {
 			factor = 1
@@ -2851,6 +3096,7 @@ country_decisions = {
 			OR = {
 				NOT = { owned_by = ROOT }
 			}
+			NOT = { government = native }
 		}
 		allow = {
 			is_free_or_tributary_trigger = yes
@@ -2864,7 +3110,7 @@ country_decisions = {
 		effect = {
 			restore_country_name = yes
 			change_tag = VEB
-			
+			change_technology_group = estali_tech_gr
 			
 			if = {
 				limit = {
@@ -2877,6 +3123,12 @@ country_decisions = {
 				duration = 7300
 			}
 			add_prestige = 25
+			every_province = {
+				limit = {
+					culture = Rouragi
+				}
+				add_core = ROOT
+			}
 		}
 		ai_will_do = {
 			factor = 1
@@ -2920,11 +3172,12 @@ country_decisions = {
 				owns_core_province = 6334
 				owns_core_province = 6328
 				owns_core_province = 6323
-			
+			NOT = { government = native }			
 		}
 		effect = {
 			restore_country_name = yes
 			change_tag = BUI
+			change_technology_group = estali_tech_gr
 			
 			if = {
 				limit = {
@@ -2937,6 +3190,12 @@ country_decisions = {
 				duration = 7300
 			}
 			add_prestige = 25
+			every_province = {
+				limit = {
+					culture = Nirkifi
+				}
+				add_core = ROOT
+			}
 		}
 		ai_will_do = {
 			factor = 1
@@ -2948,12 +3207,6 @@ country_decisions = {
 		major = yes
 		potential = {
 			NOT = { exists = NRV }
-			NOT = {
-				OR = {
-					government = tribal
-					government = native
-				}
-			}
 			culture_group = Naravami_C
 			was_never_end_game_tag_trigger = yes
 		}
@@ -2974,9 +3227,15 @@ country_decisions = {
 			}
 		}
 		allow = {
-			adm_tech = 20
+			adm_tech = 15
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
+			NOT = {
+				OR = {
+					government = tribal
+					government = native
+				}
+			}
 			AND = {
 				owns_core_province = 6285
 				owns_core_province = 6286
@@ -3007,12 +3266,16 @@ country_decisions = {
 				}
 				set_government_rank = 3
 			}
+			set_capital = 6300
 			if = {
 				limit = {
-					religion = lathvy
+					religion_group = lathvy_group
 				}
-				change_technology_group	= gotzlic_tech_gr
-				change_unit_type = gotzlic_tech_gr
+				change_technology_group	= estali_tech_gr
+				change_unit_type = estali_tech_gr
+				hidden_effect = {
+					change_graphical_culture = easterngfx
+				}
 			}
 			set_capital	= 6300
 			western_naravam_region = {
@@ -3092,9 +3355,20 @@ country_decisions = {
 				remove_core = ROOT
 			}
 			
-			change_technology_group	= north_gomic_tech_gr
-			change_unit_type = north_gomic_tech_gr
+			change_technology_group	= lathvy_tech_gr
+			change_unit_type = lathvy_tech_gr
+			hidden_effect = {
+				change_graphical_culture = westerngfx
+			}
 			change_primary_culture = Mirrisan
+			if = {
+				limit = {
+					any_owned_province = {
+						culture = Umzatian
+					}
+				}
+				add_accepted_culture = Umzatian
+			}
 			if = {
 				limit = {
 					NOT = { government_rank = 2 }
@@ -3267,8 +3541,9 @@ country_decisions = {
 			add_prestige = -100
 			hidden_effect = {
 				swap_non_generic_missions = yes
-				every_owned_province = {
+				every_province = {
 					limit = {
+						owned_by = ROOT
 						NOT = {
 							province_id = 5496
 						}
@@ -3300,6 +3575,12 @@ country_decisions = {
 		major = yes
 		potential = {
 			AND = {
+				NOT = {
+					OR = {
+						tag = GDA
+						tag = GDL
+					}
+				}
 				OR = {
 					culture = Makyan_C
 					culture = Okus
@@ -3307,12 +3588,10 @@ country_decisions = {
 				}
 				OR = {
 					religion = gadan
-					religion = reformed_oppian
-					religion = western_oppian
-					religion = eastern_oppian
+					religion_group = oppian_group
 					religion = animism
 					religion = bosisi
-					religion = lathvy
+					religion_group = lathvy_group
 				}
 				NOT = { exists = MKY }
 				NOT = { exists = MSD }
@@ -3345,79 +3624,14 @@ country_decisions = {
 			owns_core_province = 5140
 			owns_core_province = 5143
 			owns_core_province = 5137
-			if = {
-				limit = {
-					religion = gadan
-				}
-				num_of_owned_provinces_with = {
-					value = 10
-					religion = gadan
-					region = maky_region
-				}
-			}
-			else_if = {
-				limit = {
-					religion = reformed_oppian
-				}
-				num_of_owned_provinces_with = {
-					value = 10
-					religion = reformed_oppian
-					region = maky_region
-				}
-			}
-			else_if = {
-				limit = {
-					religion = western_oppian
-				}
-				num_of_owned_provinces_with = {
-					value = 10
-					religion = western_oppian
-					region = maky_region
-				}
-			}
-			else_if = {
-				limit = {
-					religion = eastern_oppian
-				}
-				num_of_owned_provinces_with = {
-					value = 10
-					religion = eastern_oppian
-					region = maky_region
-				}
-			}
-			else_if = {
-				limit = {
-					religion = animism
-				}
-				num_of_owned_provinces_with = {
-					value = 10
-					religion = animism
-					region = maky_region
-				}
-			}
-			else_if = {
-				limit = {
-					religion = bosisi
-				}
-				num_of_owned_provinces_with = {
-					value = 10
-					religion = bosisi
-					region = maky_region
-				}
-			}
-			else_if = {
-				limit = {
-					religion = lathvy
-				}
-				num_of_owned_provinces_with = {
-					value = 10
-					religion = lathvy
-					region = maky_region
-				}
+			num_of_owned_provinces_with = {
+				value = 10
+				religion = ROOT
+				region = maky_region
 			}
 		}
 		effect = {
-			change_primary_culture = Okus
+			#change_primary_culture = Okus
 			if = {
 				limit = { has_custom_ideas = no }
 				country_event = { id = ideagroups.1 } #Swap Ideas
@@ -3426,9 +3640,6 @@ country_decisions = {
 			change_tag = MSD
 			5142 = {
 				move_capital_effect = yes
-			}
-			add_core = {
-				region = maky_region
 			}
 			okus_area = {
 				limit = {
@@ -3455,7 +3666,7 @@ country_decisions = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
-				add_permanent_claim = MSD
+				add_core = MSD
 			}
 			5136 = {
 				add_permanent_claim = MSD
@@ -3465,9 +3676,9 @@ country_decisions = {
 			}
 			if = {
 				limit = {
-					NOT = { government_rank = 3 }
+					NOT = { government_rank = 2 }
 				}
-				set_government_rank = 3
+				set_government_rank = 2
 			}
 			add_country_modifier = {
 				name = "centralization_modifier"
@@ -3485,10 +3696,15 @@ country_decisions = {
 		major = yes
 		potential = {
 			AND = {
+				primary_culture = Kachik
 				OR = {
 					tag = RCK
 					tag = YLL
+					religion = animism
+					religion_group = north_estali
 				}
+				NOT = { tag = KAP }
+				NOT = { tag = SKT }
 				NOT = { exists = NAF }
 				NOT = { exists = KLG }
 				was_never_end_game_tag_trigger = yes
@@ -3511,34 +3727,29 @@ country_decisions = {
 			owns_core_province = 5488
 			num_of_owned_provinces_with = {
 				value = 8
-				region = kapolia_region
+				region = stroktur_region
+			}
+			NOT = {
+				num_of_cities = 26
 			}
 		}
 		effect = {
+			set_country_flag = getKalarganMissions
+			set_country_flag = getKalarganMissionsCounter
 			if = {
-				limit = {
-					AND = {
-						has_custom_ideas = no
-						NOT = {
-							has_idea_group = Kachik_ideas
-						}
-					}
-				}
+				limit = { has_custom_ideas = no }
 				country_event = { id = ideagroups.1 } #Swap Ideas
 			}
 			restore_country_name = yes
 			change_tag = KLG
 			country_event = {
-				id = jasuaE.10
+				id = jasua.10
 				days = 1
 			}
 			5488 = {
 				move_capital_effect = yes
 			}
-			kachik_area = {
-				add_core = KLG
-			}
-			bohora_area = {
+			stroktur_region = {
 				add_core = KLG
 			}
 			if = {
@@ -3551,8 +3762,8 @@ country_decisions = {
 				name = "centralization_modifier"
 				duration = 7300
 			}
-			add_prestige = 10
-			#swap_non_generic_missions = yes
+			swap_non_generic_missions = yes
+			add_prestige = 25
 		}
 		ai_will_do = {
 			factor = 1
@@ -3635,7 +3846,7 @@ country_decisions = {
 						NOT = {
 							num_of_owned_provinces_with = {
 								value = 5
-								superregion = tonmo_supperregion
+								superregion = nhoma_superregion
 							}
 						}
 					}
@@ -3686,7 +3897,7 @@ country_decisions = {
 			owns_core_province = 5871
 			num_of_owned_provinces_with = {
 				value = 26
-				superregion = tonmo_supperregion
+				superregion = nhoma_superregion
 			}
 			adm_tech = 10
 			is_free_or_tributary_trigger = yes
@@ -3761,7 +3972,9 @@ country_decisions = {
 				}
 				add_permanent_claim = OPP
 			}
-			add_prestige = 100
+			add_prestige_or_monarch_power = {
+				amount = 100
+			}
 		}
 		ai_will_do = {
 			factor = 1
@@ -3861,6 +4074,27 @@ country_decisions = {
 			adm_tech = 5
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
+			if = {
+				limit = {
+					tag = NPT
+				}
+				RMX = {
+					OR = {
+						is_free_or_tributary_trigger = yes
+						is_subject_of = NPT
+					}
+					is_at_war = no
+				}
+			}
+			else = {
+				NPT = {
+					OR = {
+						is_free_or_tributary_trigger = yes
+						is_subject_of = RMX
+					}
+					is_at_war = no
+				}
+			}
 			RMX = {
 				reverse_has_opinion = {
 					who = NPT
@@ -3986,7 +4220,7 @@ country_decisions = {
 			is_at_war = no
 			area_128 = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT	
+				owned_by = ROOT
 			}
 		}
 		effect = {
@@ -4111,76 +4345,6 @@ country_decisions = {
 		}
 	}
 
-	ordican_empire_decision = {
-		major = yes
-		potential = {
-			tag = ORC
-			NOT = { has_country_flag = Ordican_Empire }
-		}
-		provinces_to_highlight = {
-			AND = { 
-					superregion = west_estal_superregion
-					NOT = { owned_by = ROOT }
-			}
-			
-		}
-		allow = {
-			is_free_or_tributary_trigger = yes
-			is_at_war = no
-			government_rank = 3
-			owns_core_province = 5357
-			owns_core_province = 6184
-			num_of_owned_provinces_with = {
-				value = 100
-				superregion = west_estal_superregion
-			}
-		}
-		effect = {
-			clear_saved_name = yes
-			override_country_name = ORDICAN_EMPIRE_NAME
-			set_country_flag = Ordican_Empire
-			add_prestige = 25
-			add_country_modifier = {
-				name = orc_empire
-				duration = -1
-			}
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	ordisan_nation_decision = {
-		major = yes
-		potential = {
-			tag = ORC
-			is_year = 400
-		}
-		allow = {
-			is_free_or_tributary_trigger = yes
-			is_at_war = no
-			adm_tech = 18
-		}
-		effect = {
-			change_tag = ORS
-			add_country_modifier = {
-				name = "centralization_modifier"
-				duration = 7300
-			}
-			clear_saved_name = yes
-			if = {
-				limit = {
-					has_country_flag = Ordican_Empire
-				}
-				override_country_name = ORDISAN_EMPIRE_NAME
-			}
-			add_prestige = 25
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
 	biliku_reform_from_borlebin = {
 		major = yes
 		potential = {
@@ -4215,7 +4379,9 @@ country_decisions = {
 			set_capital = 5683
 			if = {
 				limit = {
-					government_rank = 1
+					NOT = {
+						government_rank = 2
+					}
 				}
 				set_government_rank = 2
 			}
@@ -4301,6 +4467,7 @@ country_decisions = {
 			if = {
 				limit = {
 					government = monarchy
+					religion_group = tonmo_group
 				}
 				add_government_reform = gov_tonxara
 			}
@@ -4314,10 +4481,995 @@ country_decisions = {
 				}
 				add_permanent_claim = ROOT
 			}
+			swap_non_generic_missions = yes
 			add_prestige = 25
 			hidden_effect = {
 				set_country_flag = formedKisholiDecision
 			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	form_alutokum_diplomatically = {
+		major = yes
+		potential = {
+			AND = {
+				OR = {
+					tag = TKM
+					tag = ALU
+				}
+				NOT = { exists = ATM }
+				exists = TKM
+				exists = ALU
+				was_never_end_game_tag_trigger = yes
+				TKM = { has_country_flag = tkm_migrated }
+			}
+		}
+		allow = {
+			TKM = {
+				is_free_or_tributary_trigger = yes
+				is_at_war = no
+				adm_tech = 10
+				alliance_with = ALU
+				has_opinion = {
+					who = ALU
+					value = 150
+				}
+			}
+			ALU = {
+				is_free_or_tributary_trigger = yes
+				is_at_war = no
+				adm_tech = 10
+				owns_core_province = 7250
+				alliance_with = TKM
+				has_opinion = {
+					who = TKM
+					value = 150
+				}
+			}
+		}
+		effect = {
+			if = {
+				limit = { tag = TKM }
+				inherit = ALU
+				add_accepted_culture = Ganush
+			}
+			if = {
+				limit = { tag = ALU }
+				inherit = TKM
+				add_accepted_culture = Okus
+			}
+			if = {
+				limit = {
+					NOT = {
+						religion = bosisi
+					}
+				}
+				change_religion = bosisi
+			}
+			if = {
+				limit = {
+					government = tribal
+				}
+				add_government_reform = antiash_federation
+			}
+			restore_country_name = yes
+			change_tag = ATM
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			country_event = { id = ideagroups.1 } #Swap Ideas
+			swap_non_generic_missions = yes
+			add_prestige = 25
+		}
+	}
+	
+	form_alutokum_militarily = {
+		major = yes
+		potential = {
+			OR = {
+				tag = TKM	
+				tag = ALU
+			}
+			NOT = { exists = ATM }
+			was_never_end_game_tag_trigger = yes
+		}
+		provinces_to_highlight = {
+			OR = { area = area_237 }
+			OR = {
+				NOT = { owned_by = ROOT }
+				is_city = no
+			}
+		}
+		allow = {
+			area_237 = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			adm_tech = 10
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+		}
+		effect = {
+			if = {
+				limit = { tag = ALU }
+				add_accepted_culture = Okus
+			}
+			restore_country_name = yes
+			change_tag = ATM
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			country_event = { id = ideagroups.1 } #Swap Ideas
+			if = {
+				limit = {
+					NOT = {
+						religion = bosisi
+					}
+				}
+				change_religion = bosisi
+			}
+			if = {
+				limit = { tag = TKM }
+				add_accepted_culture = Ganush
+				change_religion = bosisi
+			}
+			if = {
+				limit = {
+					government = tribal
+				}
+				add_government_reform = antiash_federation
+			}
+			swap_non_generic_missions = yes
+			add_prestige = 25
+		}
+	}	
+	proclaim_the_antiash_domain = {
+		major = yes
+		potential = {
+			culture_group = Antiash
+			NOT = { 
+				has_global_flag = antiash_domain_proclaimed
+			}
+		}
+		allow = {
+			adm_tech = 10
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			total_development = 450
+		}
+		effect = {
+			override_country_name = ANTIASH_DOMAIN
+			if = {
+				limit = { 
+					NOT = { government = monarchy }
+				}
+				change_government = monarchy
+			}
+			add_government_reform = antiash_domain_gov
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			if = {
+				limit = {
+					NOT = { government_rank = 3 }
+				}
+				set_government_rank = 3
+			}
+			add_prestige = 25
+			set_global_flag = antiash_domain_proclaimed
+			set_country_flag = formed_antiash_domain
+		}
+	}
+	lukscha_nation = {
+		major = yes
+		potential = {
+			AND = {
+				NOT = { exists = LKS }
+				primary_culture = Lukschan
+				was_never_end_game_tag_trigger = yes
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 6499
+				province_id = 6498
+				province_id = 6503
+				province_id = 6504
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				is_city = no
+			}
+		}
+		allow = {
+			adm_tech = 5
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			owns_core_province = 6499
+			owns_core_province = 6498
+			owns_core_province = 6503
+			owns_core_province = 6504
+			num_of_owned_provinces_with = {
+				value = 7
+				region = lukscha_region
+		    }
+		}
+		effect = {
+			if = {
+				limit = {
+					AND = {
+						has_custom_ideas = no
+						NOT = {
+							has_idea_group = Lukscha_ideas
+						}
+					}
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			restore_country_name = yes
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
+			change_tag = LKS
+			6499 = {
+				move_capital_effect = yes
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			swap_non_generic_missions = yes
+			lukscha_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = LKS
+			}
+			add_prestige = 25
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	pyarxinisan_nation = {
+		major = yes
+		potential = {
+			AND = {
+				NOT = { exists = PXS }
+				tag = PYA
+				was_never_end_game_tag_trigger = yes
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 5404
+				province_id = 5386
+				province_id = 5388
+				province_id = 5384
+				province_id = 5431
+				province_id = 5467
+				province_id = 5396
+				province_id = 5377
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				is_city = no
+			}
+		}
+		allow = {
+			adm_tech = 10
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			religion_group = lathvy_group
+			owns_core_province = 5404
+			owns_core_province = 5386
+			owns_core_province = 5388
+			owns_core_province = 5384
+			owns_core_province = 5431
+			owns_core_province = 5467
+			owns_core_province = 5396
+			owns_core_province = 5377
+			num_of_owned_provinces_with = {
+				value = 30
+				superregion = ga_xal_superregion
+		    }
+		}
+		effect = {
+			#if = {
+			#	limit = { has_custom_ideas = no }
+			#	country_event = { id = ideagroups.1 } #Swap Ideas
+			#}
+			restore_country_name = yes
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
+			change_tag = PXS
+			5404 = {
+				move_capital_effect = yes
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			east_xalia_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = PXS
+			}
+			north_xalia_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = PXS
+			}
+			west_xalia_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = PXS
+			}
+			add_prestige = 25
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	yavonia_nation = {
+		major = yes
+		potential = {
+			AND = {
+				culture = Yavonian
+				NOT = { exists = YAV }
+				was_never_end_game_tag_trigger = yes
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 5644
+				province_id = 5648 
+				province_id = 5599
+				province_id = 5680
+				province_id = 5609
+				province_id = 5616
+				province_id = 5791
+				province_id = 5197
+				province_id = 5656
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				is_city = no
+			}
+		}
+		allow = {
+			adm_tech = 20
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			owns_core_province = 5644
+			owns_core_province = 5648 
+			owns_core_province = 5599
+			owns_core_province = 5680
+			owns_core_province = 5609
+			owns_core_province = 5616
+			owns_core_province = 5791
+			owns_core_province = 5197
+			owns_core_province = 5656
+		}
+		effect = {
+			restore_country_name = yes
+			change_tag = YAV
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			if = {
+				limit = {
+					NOT = { government_rank = 3 }
+				}
+				set_government_rank = 3
+			}
+			if = {
+				limit = {
+					government = monarchy
+					religion_group = tonmo_group
+				}
+				add_government_reform = gov_tonxara
+			}
+			jasua_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = YAV
+			}
+			bamali_gulf_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = YAV
+			}
+			set_capital = 5648
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	holy_templar_nation = {
+		major = yes
+		potential = {
+			culture_group = Pextoglazian
+			government = theocracy
+			government_rank = 2
+			OR = {
+				religious_school = {
+					group = lathvy_group
+					school = pextoglazian_school
+				}
+				religious_school = {
+					group = lathvy_group
+					school = walaran_school
+				}
+			}
+			NOT = { exists = HLT }
+			was_never_end_game_tag_trigger = yes
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 5337
+				province_id = 5285
+				province_id = 5321
+				province_id = 5301
+				province_id = 5312
+				province_id = 5298
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				is_city = no
+			}
+		}
+		allow = {
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			OR = {
+				NOT = { exists = POM }
+				tag = POM
+			}
+			OR = {
+				NOT = { exists = WLR }
+				tag = WLR
+			}
+			owns_core_province = 5337
+			owns_core_province = 5285
+			owns_core_province = 5321
+			owns_core_province = 5301
+			owns_core_province = 5312
+			owns_core_province = 5298
+			num_of_owned_provinces_with = {
+				value = 30
+				OR = {
+					region = pextoglazia_region
+					region = lomea_region
+					region = walara_region
+				}
+			}
+		}
+		effect = {
+			restore_country_name = yes
+			change_tag = HLT
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			if = {
+				limit = {
+					NOT = { government_rank = 3 }
+				}
+				set_government_rank = 3
+			}
+			add_government_reform = holy_templars_reform
+			pextoglazia_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = HLT
+			}
+			lomea_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = HLT
+			}
+			walara_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = HLT
+			}
+			if = {
+				limit = {
+					religious_school = {
+						group = lathvy_group
+						school = pextoglazian_school
+					}
+				}
+				set_capital = 5337
+			}
+			else = {
+				set_capital = 5285
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	qubare_nation = {
+		major = yes
+		potential = {
+			OR = {
+				tag = ZUB
+				AND = {
+					tag = ELQ
+					has_global_flag = qurak_happened
+				}
+			}
+			NOT = {
+				num_of_cities = 10
+			}
+			OR = {
+				owns_core_province = 6761
+				owns_core_province = 6762
+			}
+			NOT = { exists = QUB }
+			was_never_end_game_tag_trigger = yes
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 6762
+				area = area_189
+				area = area_223
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				is_city = no
+			}
+		}
+		allow = {
+			adm_tech = 10
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			if = {
+				limit = {
+					ai = yes
+				}
+				is_year = 450
+			}
+			if = {
+				limit = {
+					tag = ZUB
+				}
+				OR = {
+					ELQ = {
+						has_opinion = {
+							who = ROOT
+							value = 200
+						}
+					}
+					owns_core_province = 6762
+				}
+				area_189 = {
+					type = all
+					owned_by = ROOT
+				}
+				area_223 = {
+					type = all
+					owned_by = ROOT
+				}
+			}
+			if = {
+				limit = {
+					tag = ELQ
+				}
+				OR = {
+					ZUB = {
+						has_opinion = {
+							who = ROOT
+							value = 200
+						}
+					}
+					owns_core_province = 6761
+				}
+				owns_core_province = 6762
+				owns_core_province = 6757
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					tag = ELQ
+				}
+				ELQ = {
+					inherit = ZUB
+				}
+			}
+			if = {
+				limit = {
+					tag = ZUB
+				}
+				ZUB = {
+					inherit = ELQ
+				}
+			}
+			restore_country_name = yes
+			change_tag = QUB
+			country_event = { id = ideagroups.1 } #Swap Ideas
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
+			change_primary_culture = Qubaran
+			change_government = tribal
+			add_government_reform = steppe_horde
+			if = {
+				limit = {
+					6757 = {
+						is_empty = yes
+					}
+				}
+				6757 = {
+					cede_province = ROOT
+					add_core = ROOT
+				}
+			}
+			if = {
+				limit = {
+					6762 = {
+						is_empty = yes
+					}
+				}
+				6762 = {
+					cede_province = ROOT
+					add_core = ROOT
+				}
+			}
+			if = {
+				limit = {
+					6765 = {
+						is_empty = yes
+					}
+				}
+				6765 = {
+					cede_province = ROOT
+					add_core = ROOT
+				}
+			}
+			voychonia_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = QUB
+			}
+			apilanya_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = QUB
+			}
+			gotzlic_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = QUB
+			}
+			east_gotzlic_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = QUB
+			}
+			south_gotzlic_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = QUB
+			}
+			area_223 = {
+				change_culture = Qubaran
+			}
+			area_189 = {
+				change_culture = Qubaran
+			}
+			6762 = {
+				change_culture = Qubaran
+			}
+			6757 = {
+				change_culture = Qubaran
+			}
+			6765 = {
+				change_culture = Qubaran
+			}
+			if = {
+				limit = {
+					ai = yes
+				}
+				add_country_modifier = {
+					name = qub_rise_of_qub
+					duration = 36500
+				}
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	nhoma_nation = {
+		major = yes
+		potential = {
+			AND = {
+				culture_group = Ravsho
+				NOT = { exists = NHM }
+				NOT = { exists = FAS }
+				was_never_end_game_tag_trigger = yes
+			}
+			#current_age = age_of_reformation
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 5949
+				province_id = 5963
+				province_id = 5957
+				province_id = 5968
+				province_id = 6056
+				province_id = 6026
+				province_id = 5872
+				province_id = 5870
+				province_id = 5840
+				province_id = 5899
+				province_id = 5838
+				province_id = 5945
+				province_id = 5690
+				province_id = 5692
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				is_city = no
+			}
+		}
+		allow = {
+			adm_tech = 10
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			#current_age = age_of_reformation
+			num_of_owned_provinces_with = {
+				value = 100
+				superregion = nhoma_superregion
+			}
+			owns_core_province = 5949
+			owns_core_province = 5963
+			owns_core_province = 5957
+			owns_core_province = 5968
+			owns_core_province = 6056
+			owns_core_province = 6026
+			owns_core_province = 5872
+			owns_core_province = 5870
+			owns_core_province = 5840
+			owns_core_province = 5899
+			owns_core_province = 5838
+			owns_core_province = 5945
+			owns_core_province = 5690
+			owns_core_province = 5692
+		}
+		effect = {
+			set_country_flag = nhomaFormed
+			restore_country_name = yes
+			change_tag = NHM
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			if = {
+				limit = {
+					NOT = { government_rank = 3 }
+				}
+				set_government_rank = 3
+			}
+			if = {
+				limit = {
+					government = monarchy
+					religion_group = tonmo_group
+				}
+				add_government_reform = gov_tonxara
+			}
+			nhoma_superregion = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = NHM
+			}
+			unnamed_area_37 = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = NHM
+			}
+			unnamed_area_36 = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = NHM
+			}
+			yenis_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = NHM
+			}
+			ufulk_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = NHM
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	gacil_nation = {
+		major = yes
+		potential = {
+			AND = {
+				primary_culture = Old_Gacin
+				OR = {
+					tag = SVL
+					tag = GLJ
+					tag = ATH
+					tag = SVN
+					tag = ROE
+					tag = DRK
+				}
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				region = gacil_region
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+			}
+		}
+		allow = {
+			adm_tech = 20
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			owns_core_province = 6464
+			owns_core_province = 6457
+			num_of_owned_provinces_with = {
+				value = 8
+				region = gacil_region
+			}
+			is_tribal = no
+		}
+		effect = {
+			restore_country_name = yes
+			change_tag = GCL
+			change_technology_group = estali_tech_gr
+			#if = {
+				#limit = {
+					#AND = {
+						#has_custom_ideas = no
+						#NOT = {
+							#has_idea_group = ARL_ideas
+						#}
+					#}
+				#}
+				#country_event = { id = ideagroups.1 } #Swap Ideas
+			#}
+			set_capital = 6464
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
+			gacil_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = GCL
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	galsiog_nation = {
+		major = yes
+		potential = {
+			OR = {
+				is_colonial_nation = yes
+				is_former_colonial_nation = yes
+			}
+			capital_scope = {
+				region = gacil_region
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				region = gacil_region
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+			}
+		}
+		allow = {
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			is_former_colonial_nation = yes
+		}
+		effect = {
+			restore_country_name = yes
+			change_tag = GLS
+			#if = {
+				#limit = {
+					#AND = {
+						#has_custom_ideas = no
+						#NOT = {
+							#has_idea_group = ARL_ideas
+						#}
+					#}
+				#}
+				#country_event = { id = ideagroups.1 } #Swap Ideas
+			#}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
 		}
 		ai_will_do = {
 			factor = 1

@@ -1,0 +1,122 @@
+namespace = soy
+
+#Ajetaz the Great
+country_event = {
+    id = soy.1
+    title = soy.1.t
+    picture = GOOD_WITH_MONARCH_eventPicture
+    desc = soy.1.d
+    fire_only_once = yes
+
+	trigger = {
+		tag = SOY
+		has_reform = desert_tribe
+	}
+
+	mean_time_to_happen = {
+		months = 96
+	}
+
+	immediate = {
+		set_country_flag = gotAjetazEvent
+	}
+
+	option = {
+		name = soy.1.a
+		ai_chance = { factor = 1 }
+		add_stability = 1
+		define_heir = {
+    		name = "Ajetaz 'the Great'"
+    		dynasty = "Vilzon"
+    		adm = 6
+    		dip = 6
+    		mil = 5
+    		age = 11
+    		claim = 100
+		}
+	}
+}
+
+#Ajetaz the Great 2
+country_event = {
+    id = soy.2
+    title = soy.2.t
+    picture = COURT_eventPicture
+    desc = soy.2.desc
+    fire_only_once = yes
+
+	trigger = {
+		tag = SOY
+		has_heir = "Ajetaz 'the Great'"
+		has_country_flag = gotAjetazEvent
+	}
+
+	mean_time_to_happen = {
+		months = 24
+	}
+
+	option = {
+		name = soy.2.a
+		ai_chance = { factor = 1 }
+		add_treasury = -10
+		add_country_modifier = {
+			name = soy_lib_1
+			duration = 18250
+		}
+		add_heir_personality = scholar_personality
+	}
+	option = {
+		name = soy.2.b
+		ai_chance = { factor = 1 }
+		add_treasury = -10
+		add_country_modifier = {
+			name = soy_lib_2
+			duration = 18250
+		}
+		add_heir_personality = martial_educator_personality
+	}
+	option = {
+		name = soy.2.c
+		ai_chance = { factor = 1 }
+		add_treasury = -10
+		add_country_modifier = {
+			name = soy_lib_3
+			duration = 18250
+		}
+		add_heir_personality = zealot_personality
+	}
+	option = {
+		name = soy.2.d
+		ai_chance = { factor = 1 }
+		add_heir_personality = free_thinker_personality
+	}
+}
+
+#Ajetaz the Great 2
+country_event = {
+    id = soy.3
+    title = soy.3.t
+    picture = COURT_eventPicture
+    desc = soy.3.desc
+    fire_only_once = yes
+
+	trigger = {
+		tag = SOY
+		has_ruler = "Ajetaz 'the Great'"
+		has_country_flag = gotAjetazEvent
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = soy.3.a
+		ai_chance = { factor = 1 }
+		add_stability = 1
+		add_ruler_modifier = {
+			name = soy_ajetaz
+			duration = -1
+		}
+	}
+}

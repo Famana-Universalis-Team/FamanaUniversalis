@@ -2,6 +2,7 @@
 #UNNAMED
 add_core = NRQ
 owner = NRQ
+is_city = yes
 controller = NRQ
 culture = Oblokelan
 religion = qamon
@@ -11,7 +12,7 @@ base_production = 3
 trade_goods = incense
 base_manpower = 2
 capital = "UNNAMED"
-is_city = yes
+ 
 discovered_by = qamoni_tech_gr
 
 

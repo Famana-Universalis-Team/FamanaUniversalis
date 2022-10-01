@@ -5,8 +5,21 @@ hre = no
 base_tax = 1
 base_production = 1
 base_manpower = 1
-native_size = 5
-native_ferocity = 1
-native_hostileness = 1
-capital = "Tyranlan"
 is_city = no
+native_size = 5
+native_ferocity = 6
+native_hostileness = 5
+capital = "Tyranlan"
+ 
+
+212.6.7 = {
+owner = FSB
+is_city = yes
+controller = FSB
+add_core = FSB
+#remove_core = 
+culture = Fisbiklan
+religion = tonmo
+trade_goods = livestock
+discovered_by = north_antebari_tech_gr
+}

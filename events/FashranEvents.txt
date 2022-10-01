@@ -243,19 +243,18 @@ country_event = { #Nozumol
 	}
 
     trigger = {
-        AND = {
-            nuzoto_area = {
-                type = all
-                AND = {
-                    owned_by = ROOT
-                    religion = tonmo
-                }
-            }
-            toza_area = {
-                type = all
+        tag = FAS
+        nuzoto_area = {
+            type = all
+            AND = {
                 owned_by = ROOT
                 religion = tonmo
             }
+        }
+        toza_area = {
+            type = all
+            owned_by = ROOT
+            religion = tonmo
         }
     }
 
@@ -488,7 +487,7 @@ country_event = { #Westward Expansion 3
 
             BLK = {
                 country_event = {
-                    id = jasuaE.9
+                    id = jasua.9
                     days = 5
                 }
             }
@@ -612,7 +611,6 @@ country_event = { #Southward Expansion (NOT MISSION)
 
     trigger = {
         tag = FAS
-        is_year = 260
         owns_core_province = 5650
         owns_core_province = 5603
         owns_core_province = 5685
@@ -669,7 +667,7 @@ country_event = { #Southward Expansion (NOT MISSION)
                     add_core = ROOT
                     cede_province = ROOT
                     change_religion = tonmo
-                    change_culture = Kisholian
+                    change_culture = Yavonian
                 }
             }
             west_jimbalak_area = {
@@ -715,7 +713,7 @@ country_event = { #Southward Expansion (NOT MISSION)
                 add_core = ROOT
                 cede_province = ROOT
                 change_religion = tonmo
-                change_culture = Kisholian
+                change_culture = Yavonian
             }
         }
     }
@@ -750,26 +748,25 @@ country_event = { #Emtik Rights
 		5692 = {
 			add_province_modifier = { 
 				name = emtik_rights
-				duration = 36500
+				duration = -1
 			}
 		}
 		5691 = {
 			add_province_modifier = { 
 				name = emtik_rights
-				duration = 36500
+				duration = -1
 			}
 		}
         5693 = {
 			add_province_modifier = { 
 				name = emtik_rights
-				duration = 36500
+				duration = -1
 			}
 		}
 		add_country_modifier = { 
 			name = fas_emtik_rights
 			duration = -1  
-		
-        }   
+        }
 		add_accepted_culture = Emtik
 		set_global_flag = after_emtik_rights
     }
@@ -796,6 +793,9 @@ country_event = { #Emtik provs lost, not needed to locallize
             tag = NHM
         }
 		has_global_flag = after_emtik_rights
+        NOT = {
+            has_country_flag = nhomaFormed
+        }
 		NOT = {
 			5692 = {
 				OR = {
@@ -942,11 +942,12 @@ country_event = {
 
     trigger = {
         technology_group = east_gomic_tech_gr
-        any_province = {
-			owned_by = FAS
-		    has_discovered = ROOT
-		}
-        NOT = { has_global_flag = tonmo_invasion }
+        FAS = {
+            any_owned_province = {
+                has_discovered = ROOT
+            }
+        }
+        #NOT = { has_global_flag = tonmo_invasion }
     }
 
     mean_time_to_happen = {
@@ -956,7 +957,7 @@ country_event = {
     option = {
         name = fashros.14.a
         ai_chance = { factor = 1 }
-        set_global_flag = tonmo_invasion
+        #set_global_flag = tonmo_invasion
         custom_tooltip = fashros_discovery
     }
 }
@@ -970,8 +971,8 @@ country_event = {
     fire_only_once = yes
 
     trigger = {
-        is_year = 298
         tag = FAS
+        is_year = 298
     }
 
     mean_time_to_happen = {
@@ -1006,12 +1007,10 @@ country_event = {
     major = yes
 
     trigger = {
-        AND = {
-            is_year = 320
-            tag = FAS
-            NOT = {
-                has_country_modifier = fashros_decay
-            }
+        tag = FAS
+        is_year = 320
+        NOT = {
+            has_country_modifier = fashros_decay
         }
     }
 
@@ -1041,7 +1040,7 @@ country_event = {
             every_owned_province = {
                 limit = {
                     superregion = jasua_superregion
-                    superregion = tonmo_supperregion
+                    superregion = nhoma_superregion
                 }
                 every_country = {
                     limit = {
@@ -1095,8 +1094,10 @@ country_event = {
                             area = hoxoi_area
                             area = ropinver_area
                             area = diam_area
-                            area = unnamed_area_11
+                            area = west_zoblotra_area
                             area = mahansha_area
+                            area = area_244
+                            area = area_243
                         }
                     }
                     add_core = JFX
@@ -1105,7 +1106,7 @@ country_event = {
                     limit = {
                         OR = {
                             superregion = jasua_superregion
-                            superregion = central_estal_supperregion
+                            superregion = central_estal_superregion
                             superregion = great_desert_superregion
                             superregion = north_estal_superregion
                         }
@@ -1207,7 +1208,7 @@ country_event = {
     }
 }
 
-#And finally, bye bye.
+#And finally, bye bye. FUCK THIS EVENT
 country_event = {
     id = fashros.17
     title = fashros.17.t
@@ -1217,12 +1218,10 @@ country_event = {
     major = yes
 
     trigger = {
-        AND = {
-            is_year = 322
-            tag = FAS
-            NOT = {
-                has_country_modifier = fashros_decay
-            }
+        tag = FAS
+        is_year = 322
+        NOT = {
+            has_country_modifier = fashros_decay
         }
     }
 
@@ -1233,18 +1232,54 @@ country_event = {
     immediate = {
         hidden_effect = {
             every_owned_province = {
-                limit = {
-                    NOT = {
+                if = {
+                    limit = {
                         OR = {
-                            is_core = KSL
-                            is_core = NHM
-                            is_core = HOY
-                            is_core = JFX
+                            superregion = west_estal_superregion
+                            superregion = ga_xal_superregion
+                            superregion = oppia_superregion
+                            superregion = saka_superregion
+                            area = hoxona_area
+                            area = hoxoi_area
+                            area = ropinver_area
+                            area = diam_area
+                            area = west_zoblotra_area
+                            area = mahansha_area
+                            area = area_244
+                            area = area_243
                         }
                     }
+                    add_core = JFX
+                    remove_core = FAS
                 }
-                add_core = NHM
-                remove_core = FAS
+                else_if = {
+                    limit = {
+                        OR = {
+                            superregion = jasua_superregion
+                            superregion = central_estal_superregion
+                            superregion = great_desert_superregion
+                            superregion = north_estal_superregion
+                        }
+                    }
+                    add_core = KSL
+                    remove_core = FAS
+                }
+                else = {
+                    add_core = NHM
+                    remove_core = FAS
+                } #There is also a fourth Tonxara for Geopyopia called the Hoyros Tonxara, but they dont have a superregion yet
+                if = {
+                    limit = {
+                        OR = {
+                            area = ufulk_area
+                            area = unnamed_area_37
+                            area = unnamed_area_36
+                            area = yenis_area
+                        }
+                    }
+                    remove_core = KSL
+                    add_core = NHM
+                }
             }
         }
     }
@@ -1366,8 +1401,12 @@ country_event = {
             release = JFX
             release = HOY
             jasua_superregion = { add_permanent_claim = KSL }
+            unnamed_area_37 = { remove_claim = KSL }
+            unnamed_area_36 = { remove_claim = KSL }
+            yenis_area = { remove_claim = KSL }
             ga_xal_superregion = { add_permanent_claim = JFX }
-            tonmo_supperregion = { add_permanent_claim = NHM }
+            hoxoi_coast_region = { add_permanent_claim = JFX }
+            nhoma_superregion = { add_permanent_claim = NHM }
             every_province = {
                 limit = {
                     OR = {
@@ -1389,8 +1428,74 @@ country_event = {
                             is_core = HOY
                         }
                     }
+                    NOT = {
+                        region_for_scope_province = {
+                            OR = {
+                                region = east_xalia_region
+                                region = west_xalia_region
+                                region = north_xalia_region
+                                region = moxon_region
+                                region = south_xalia_region
+                                region = maky_region
+                                region = hoxoi_coast_region
+                                region = east_great_desert_region
+                                region = jasua_region
+                                region = kapolia_region
+                                region = stroktur_region
+                                region = vanoma_region
+                                region = aresia_region
+                            }
+                        }
+                    }
                 }
                 cede_province = NHM
+            }
+            every_province = {
+                limit = {
+                    owned_by = FAS
+                    NOT = {
+                        OR = {
+                            is_core = KSL
+                            is_core = JFX
+                            is_core = HOY
+                        }
+                    }
+                    region_for_scope_province = {
+                        OR = {
+                            region = east_xalia_region
+                            region = west_xalia_region
+                            region = north_xalia_region
+                            region = moxon_region
+                            region = south_xalia_region
+                            region = maky_region
+                            region = hoxoi_coast_region
+                            region = east_great_desert_region
+                        }
+                    }
+                }
+                cede_province = JFX
+            }
+            every_province = {
+                limit = {
+                    owned_by = FAS
+                    NOT = {
+                        OR = {
+                            is_core = KSL
+                            is_core = JFX
+                            is_core = HOY
+                        }
+                    }
+                    region_for_scope_province = {
+                        OR = {
+                            region = jasua_region
+                            region = kapolia_region
+                            region = stroktur_region
+                            region = vanoma_region
+                            region = aresia_region
+                        }
+                    }
+                }
+                cede_province = KSL
             }
             KSL = {
                 add_government_reform = gov_tonxara
@@ -1419,9 +1524,17 @@ country_event = {
 
     trigger = {
         tag = FAS
-        exists = NAK
-        NAK = {
-            ai = yes
+        OR = {
+            exists = NAK
+            exists = ARS
+        }
+        OR = {
+            NAK = {
+                ai = yes
+            }
+            ARS = {
+                ai = yes
+            }
         }
         5536 = {
             controlled_by = FAS
@@ -1437,11 +1550,27 @@ country_event = {
         ai_chance = { factor = 1 }
         custom_tooltip = nakoa_collapsed
         hidden_effect = {
-            NAK = {
-                release = RET
-                release = JIT
-                release = KE0
-                release = GOV
+            if = {
+                limit = {
+                    exists = NAK
+                }
+                NAK = {
+                    release = RET
+                    release = JIT
+                    release = KE0
+                    release = GOV
+                }
+            }
+            if = {
+                limit = {
+                    exists = ARS
+                }
+                ARS = {
+                    release = RET
+                    release = JIT
+                    release = KE0
+                    release = GOV
+                }
             }
         }
     }
@@ -1457,11 +1586,12 @@ country_event = {
 
     trigger = {
         tag = FAS
-        YAB = {
-            ai = yes
-        }
         5644 = {
             controlled_by = FAS
+        }
+        exists = YAB
+        YAB = {
+            ai = yes
         }
     }
 
@@ -1495,24 +1625,27 @@ country_event = {
     picture = HORDE_ON_HORSEBACK_eventPicture
     desc = fashros.20.d
     fire_only_once = yes
+    is_triggered_only = yes
 
-    trigger = {
-        is_year = 282
-        tag = FAS
-    }
+    #trigger = {
+    #    is_year = 282
+    #    tag = FAS
+    #}
     option = {
         name = fashros.20.a
         ai_chance = { factor = 1 }
         add_country_modifier = {
             name = fashran_conquest_boost
-            duration = 1825
+            duration = 3650
         }
-        add_claim = 5196
-        add_claim = 5185
 
         if = {
             limit = {
                 ai = yes
+            }
+            add_country_modifier = {
+                name = fashran_conquest_boost_AI
+                duration = 3650
             }
             every_country = {
                 limit = {
@@ -1524,7 +1657,7 @@ country_event = {
                 ROOT = {
                     set_ai_attitude = {
                         attitude = attitude_hostile
-                        who = PREV
+                        who = FAS
                         locked = yes
                     }
                 }
@@ -1532,6 +1665,7 @@ country_event = {
         }
     }
 }
+
 #into ga xal
 country_event = {
     id = fashros.21
@@ -1539,32 +1673,35 @@ country_event = {
     picture = HORDE_ON_HORSEBACK_eventPicture
     desc = fashros.21.d
     fire_only_once = yes
+    is_triggered_only = yes
 
-    trigger = {
-        is_year = 310
-        tag = FAS
-		any_owned_province = {
-			OR = {
-				area = ropinver_area
-				area = hoxoi_area
-				area = hoxona_area
-				superregion = ga_xal_superregion
-			}
-		}
-    }
+    #trigger = {
+    #    is_year = 310
+    #    tag = FAS
+	#	any_owned_province = {
+	#		OR = {
+	#			area = ropinver_area
+	#			area = hoxoi_area
+	#			area = hoxona_area
+	#			superregion = ga_xal_superregion
+	#		}
+	#	}
+    #}
     option = {
         name = fashros.21.a
         ai_chance = { factor = 1 }
         add_country_modifier = {
             name = fashran_conquest_boost
-            duration = 1825
+            duration = 5475
         }
-        add_claim = 5163
-        add_claim = 5388
 
         if = {
             limit = {
                 ai = yes
+            }
+            add_country_modifier = {
+                name = fashran_conquest_boost_AI
+                duration = 3650
             }
             every_country = {
                 limit = {
@@ -1576,7 +1713,7 @@ country_event = {
                 ROOT = {
                     set_ai_attitude = {
                         attitude = attitude_hostile
-                        who = PREV
+                        who = FAS
                         locked = yes
                     }
                 }
@@ -1588,7 +1725,7 @@ country_event = {
 #spawn in the troops for the tonxaras
 country_event = {
     id = fashros.22
-    hidden=yes
+    hidden = yes
     is_triggered_only = yes
 
     immediate = {
@@ -1644,14 +1781,17 @@ country_event = {
     fire_only_once = yes
 
     trigger = {
-        any_owned_province = {
+        #is_year = 250
+        #NOT = {
+        #    is_year = 330
+        #}
+        capital_scope = {
             superregion = ga_xal_superregion
         }
-        any_province = {
-			owned_by = FAS
-		    region = south_xalia_region
+        south_xalia_region = {
+			controlled_by = FAS
 		}
-        NOT = { has_global_flag = tonmo_xal_invasion }
+        #NOT = { has_global_flag = tonmo_xal_invasion }
     }
 
     mean_time_to_happen = {
@@ -1661,7 +1801,7 @@ country_event = {
     option = {
         name = fashros.23.a
         ai_chance = { factor = 1 }
-        set_global_flag = tonmo_xal_invasion
+        #set_global_flag = tonmo_xal_invasion
         custom_tooltip = fashros_ga_xal_invasion_tt
     }
 }
@@ -1674,8 +1814,8 @@ country_event = { #Event that spawns cores for releasables
     fire_only_once = yes
 
     trigger = {
-        is_year = 320
         tag = FAS
+        is_year = 320
     }
     
     mean_time_to_happen = {
@@ -2235,10 +2375,78 @@ country_event = { #Event that spawns cores for releasables
                         province_id = 5505
                         province_id = 5665
                         province_id = 5510
-                        province_id = 5509
                     }
                 }
                 add_core = UFE
+            }
+            every_owned_province = {
+                limit = {
+                    OR = {
+                        province_id = 5506
+                        province_id = 5507
+                        province_id = 5503
+                        province_id = 5604
+                        province_id = 5519
+                        province_id = 5509
+                    }
+                }
+                add_core = YIT
+            }
+            every_owned_province = {
+                limit = {
+                    OR = {
+                        province_id = 5499
+                        province_id = 5502
+                        province_id = 5480
+                        province_id = 5820
+                        province_id = 5479
+                        province_id = 5478
+                        province_id = 5482
+                        province_id = 5483
+                    }
+                }
+                add_core = EDS
+            }
+            every_owned_province = {
+                limit = {
+                    OR = {
+                        NOT = {
+                            culture = Nakoan
+                        }
+                        province_id = 5527
+                    }
+                }
+                remove_core = NAK
+            }
+            every_owned_province = {
+                limit = {
+                    culture = Nakoan
+                    NOT = {
+                        province_id = 5527
+                    }
+                }
+                add_core = NAK
+            }
+            if = {
+                limit = {
+                    any_owned_province = {
+                        is_core = ARS
+                    }
+                }
+                every_owned_province = {
+                    remove_core = ARS
+                }
+            }
+            every_owned_province = {
+                limit = {
+                    region = aresia_region
+                }
+                remove_core = SZI
+                remove_core = MOY
+                remove_core = OER
+                remove_core = NIK
+                remove_core = LCT
+                remove_core = VRK
             }
         }
     }
@@ -2257,42 +2465,86 @@ country_event = { #Event that spawns cores for releasables
                 }
                 add_local_autonomy = 50
             }
+            every_owned_province = {
+                limit = {
+                    OR = {
+                        province_id = 5521
+                        province_id = 5606
+                        province_id = 5522
+                        province_id = 5523
+                    }
+                }
+                add_core = OER
+            }
+            every_owned_province = {
+                limit = {
+                    OR = {
+                        province_id = 5520
+                    }
+                }
+                add_core = SZI
+            }
+            every_owned_province = {
+                limit = {
+                    OR = {
+                        province_id = 5524
+                    }
+                }
+                add_core = MOY
+            }
+            every_owned_province = {
+                limit = {
+                    OR = {
+                        province_id = 5526
+                        province_id = 5527
+                    }
+                }
+                add_core = NIK
+            }
+            every_owned_province = {
+                limit = {
+                    OR = {
+                        province_id = 5525
+                    }
+                }
+                add_core = LCT
+            }
         }
     }
 }
 
-country_event = { #AI event to annex nozumol
-    id = fashros.25
-    title = fashros.25.t
-    desc = fashros.25.d
-    picture = INVENTION_eventPicture
-	hidden = yes
-	fire_only_once = yes
-    trigger = {
-        tag = FAS
-        NOT = {
-           is_year = 250
-        }
-        NOZ = {
-            is_subject_of = FAS
-        }
-	}
-
-    option = {
-        name = fashros.25.a
-        ai_chance = {
-            factor = 1
-        }
-		nuzoto_area = {
-            limit = { owned_by = NOZ }
-            cede_province = FAS
-        }
-        toza_area = {
-            limit = { owned_by = NOZ }
-            cede_province = FAS
-        }
-    }
-}
+#country_event = { #AI event to annex nozumol
+#    id = fashros.25
+#    title = fashros.25.t
+#    desc = fashros.25.d
+#    picture = INVENTION_eventPicture
+#	hidden = yes
+#	fire_only_once = yes
+#    trigger = {
+#        tag = FAS
+#        NOT = {
+#           is_year = 250
+#        }
+#        NOZ = {
+#            is_subject_of = FAS
+#        }
+#	}
+#
+#    option = {
+#        name = fashros.25.a
+#        ai_chance = {
+#            factor = 1
+#        }
+#		nuzoto_area = {
+#            limit = { owned_by = NOZ }
+#            cede_province = FAS
+#        }
+#        toza_area = {
+#            limit = { owned_by = NOZ }
+#            cede_province = FAS
+#        }
+#    }
+#}
 
 country_event = { #Kisholi
     id = fashros.26
@@ -2348,8 +2600,12 @@ country_event = { #Kisholi
             }
             change_graphical_culture = easterngfx
             jasua_superregion = { add_permanent_claim = KSL }
+            unnamed_area_37 = { remove_claim = KSL }
+            unnamed_area_36 = { remove_claim = KSL }
+            yenis_area = { remove_claim = KSL }
             ga_xal_superregion = { add_permanent_claim = JFX }
-            tonmo_supperregion = { add_permanent_claim = NHM }
+            hoxoi_coast_region = { add_permanent_claim = JFX }
+            nhoma_superregion = { add_permanent_claim = NHM }
             country_event = {
                 id = fashros.30
                 days = 1
@@ -2418,8 +2674,12 @@ country_event = { #Jafxoi
                 add_government_reform = gov_tonxara
             }
             jasua_superregion = { add_permanent_claim = KSL }
+            unnamed_area_37 = { remove_claim = KSL }
+            unnamed_area_36 = { remove_claim = KSL }
+            yenis_area = { remove_claim = KSL }
             ga_xal_superregion = { add_permanent_claim = JFX }
-            tonmo_supperregion = { add_permanent_claim = NHM }
+            hoxoi_coast_region = { add_permanent_claim = JFX }
+            nhoma_superregion = { add_permanent_claim = NHM }
             country_event = {
                 id = fashros.30
                 days = 1
@@ -2488,8 +2748,12 @@ country_event = { #Nhoma
                 add_government_reform = gov_tonxara
             }
             jasua_superregion = { add_permanent_claim = KSL }
+            unnamed_area_37 = { remove_claim = KSL }
+            unnamed_area_36 = { remove_claim = KSL }
+            yenis_area = { remove_claim = KSL }
             ga_xal_superregion = { add_permanent_claim = JFX }
-            tonmo_supperregion = { add_permanent_claim = NHM }
+            hoxoi_coast_region = { add_permanent_claim = JFX }
+            nhoma_superregion = { add_permanent_claim = NHM }
             country_event = {
                 id = fashros.30
                 days = 1
@@ -2558,8 +2822,12 @@ country_event = { #Hoyros
                 add_government_reform = gov_tonxara
             }
             jasua_superregion = { add_permanent_claim = KSL }
+            unnamed_area_37 = { remove_claim = KSL }
+            unnamed_area_36 = { remove_claim = KSL }
+            yenis_area = { remove_claim = KSL }
             ga_xal_superregion = { add_permanent_claim = JFX }
-            tonmo_supperregion = { add_permanent_claim = NHM }
+            hoxoi_coast_region = { add_permanent_claim = JFX }
+            nhoma_superregion = { add_permanent_claim = NHM }
             country_event = {
                 id = fashros.30
                 days = 1
@@ -2630,9 +2898,10 @@ country_event = { #Aresian religious resistance
 
     trigger = {
         religion = aresian
+        is_year = 230
         FAS = {
             num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-                value = 10
+                value = 1
                 region = aresia_region
             }
         }
@@ -2651,7 +2920,9 @@ country_event = { #Aresian religious resistance
         hidden_effect = {
             set_global_flag = aresiaResistingTonmo
         }
-        add_stability = -1
+        FAS = {
+            add_stability = -1
+        }
     }
 }
 
@@ -2665,6 +2936,7 @@ country_event = { #Vanoman religious resistance
 
     trigger = {
         tag = VAN
+        is_year = 230
         FAS = {
             num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
                 value = 2
@@ -2718,10 +2990,10 @@ country_event = { #ugh
                 OR = {
                     AND = {
                         culture = Bilik_C
-                        continent = estal
+                        region = vanoma_region
                     }
                     culture = Nakoan
-                    culture = Verkan
+                    culture = Middle_Aresian
                     culture = Vanoman
                     province_id = 5693
                 }
@@ -2754,8 +3026,16 @@ country_event = { #ugh 2
     }
 
     trigger = {
+        is_year = 325
         NOT = {
             exists = FAS
+        }
+        KSL = {
+            NOT = {
+                any_owned_province = {
+                    religion = aresian
+                }
+            }
         }
     }
 
@@ -2769,6 +3049,162 @@ country_event = { #ugh 2
         name = fashros.34.a
         ai_chance = {
             factor = 1
+        }
+    }
+}
+
+country_event = { #The Tonmo Golden Age
+    id = fashros.36
+    title = fashros.36.t
+    desc = fashros.36.d
+    picture = WESTERNISATION_eventPicture
+    major = yes
+    fire_only_once = yes
+
+    trigger = {
+        has_institution = new_world_i
+        tag = FAS
+        owns_core_province = 5644 #jimkalin
+    }
+
+    mean_time_to_happen = {
+        months = 12
+    }
+
+    option = {
+        name = fashros.36.a
+        ai_chance = {
+            factor = 1
+        }
+        add_prestige = 20
+        custom_tooltip = liturgical_tonmo_enabled
+        custom_tooltip = evangelical_tonmo_enabled
+        set_global_flag = TonmoGoldenAge
+    }
+}
+
+
+country_event = { #Croatian is injured
+    id = fashros.37
+    title = fashros.37.t
+    desc = fashros.37.d
+    picture = IMPALED_SOLDIERS_eventPicture
+    major = yes
+    major_trigger = {
+        OR = { #only people who will care can hear about it
+            capital_scope = {
+                superregion = jasua_superregion
+            }
+            war_with = FAS
+            is_neighbor_of = FAS
+        }
+    }
+    fire_only_once = yes
+    is_triggered_only = yes
+
+    option = {
+        name = fashros.37.a
+        ai_chance = {
+            factor = 1
+        }
+        set_ruler_flag = purified
+        random_list = {
+            1 = {
+                change_dip = -1
+            }
+            1 = {
+                change_mil = -1
+            }
+            1 = {
+                change_adm = -1
+            }
+        }
+        add_country_modifier = {
+            name = fas_croatian_injured
+            duration = 1825
+        }
+    }
+}
+
+country_event = { #Noglebim revolt
+    id = fashros.38
+    title = fashros.38.t
+    desc = fashros.38.d
+    picture = IMPALED_SOLDIERS_eventPicture
+    fire_only_once = yes
+
+    trigger = {
+        tag = FAS
+        any_owned_province = {
+            area = unnamed_area_47
+            NOT = {
+                religion = tonmo
+            }
+        }
+    }
+
+    mean_time_to_happen = {
+        months = 100
+    }
+
+    option = {
+        name = fashros.38.a
+        ai_chance = {
+            factor = 7
+        }
+        random_owned_province = {
+            limit = {
+                area = unnamed_area_47
+                NOT = {
+                    religion = tonmo
+                }
+            }
+            spawn_rebels = {
+                type = nationalist_rebels
+                size = 1
+            }
+        }
+        random_owned_province = {
+            limit = {
+                area = unnamed_area_47
+                NOT = {
+                    religion = tonmo
+                }
+            }
+            spawn_rebels = {
+                type = nationalist_rebels
+                size = 1
+            }
+        }
+        random_owned_province = {
+            limit = {
+                area = unnamed_area_47
+                NOT = {
+                    religion = tonmo
+                }
+            }
+            spawn_rebels = {
+                type = nationalist_rebels
+                size = 2
+            }
+        }
+        unnamed_area_47 = {
+            add_devastation	= 75
+            add_province_modifier = {
+                name = fas_noglebim_massacre
+                duration = 3650
+            }
+        }
+    }
+
+    option = {
+        name = fashros.38.b
+        ai_chance = {
+            factor = 1
+        }
+        add_prestige = -10
+        unnamed_area_47 = {
+            add_local_autonomy = 50
         }
     }
 }

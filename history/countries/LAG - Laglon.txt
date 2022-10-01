@@ -5,7 +5,7 @@ mercantilism = 20
 technology_group = west_gomic_tech_gr
 religion = western_oppian
 primary_culture = Laglan
-capital = 5039	# change to real capital
+capital = 5039	
 historical_rival = TCK
 historical_friend = KEP
 
@@ -18,6 +18,8 @@ historical_friend = KEP
 		dynasty = "Kilia"
 		birth_date = 180.5.14
 	}
+	add_ruler_personality = benevolent_personality
+	add_ruler_personality = free_thinker_personality
 }
 
 201.1.1 = { 

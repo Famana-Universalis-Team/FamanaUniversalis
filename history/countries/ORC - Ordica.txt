@@ -1,14 +1,14 @@
 government = monarchy
-add_government_reform = autocracy_reform
+add_government_reform = ordican_confederation_reform
 government_rank = 2
 mercantilism = 10
-technology_group = north_gomic_tech_gr
+technology_group = lathvy_tech_gr
 religion = lathvy
 primary_culture = Ordican
-add_accepted_culture = East_Ordican
+add_accepted_culture = Celzian
 add_accepted_culture = Yuvlan
 add_accepted_culture = Dlosnim
-capital = 5725	# change to real capital
+capital = 5725	
 historical_rival = PEX
 historical_friend = HIT
 religious_school = pextoglazian_school
@@ -22,6 +22,8 @@ religious_school = pextoglazian_school
 		mil = 4
 		birth_date = 179.2.16
 	}
+	add_ruler_personality = calm_personality
+	add_ruler_personality = expansionist_personality
 }
 
 208.5.3 = {
@@ -49,4 +51,5 @@ religious_school = pextoglazian_school
 		dip = 3
 		mil = 4
 	}
+	add_heir_personality = kind_hearted_personality
 }

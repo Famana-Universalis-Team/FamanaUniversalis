@@ -1,9 +1,10 @@
-discovered_by = north_gomic_tech_gr
+discovered_by = lathvy_tech_gr
 discovered_by = west_gomic_tech_gr
 #Written with Eu4 Easy Province Creator by emiroercn
 #UNNAMED
 add_core = ALT
 owner = ALT
+is_city = yes
 controller = ALT
 culture = Tolan
 religion = lathvy
@@ -13,10 +14,10 @@ base_production = 5
 trade_goods = livestock
 base_manpower = 4
 capital = "Alo Tramo"
-is_city = yes
+ 
 center_of_trade = 1
 
-discovered_by = estal_tribal_tech_gr
+discovered_by = west_estali_tech_gr
 
 
 

@@ -10,9 +10,8 @@ country_event = {
     hidden = yes
 
     trigger = {
-        RDU = {
-            is_subject_of = ORC
-        }
+        tag = RDU
+        is_subject_of = ORC
     }
 	mean_time_to_happen = {
 		days = 1
@@ -41,31 +40,29 @@ country_event = {
     major = yes
 
     trigger = {
-        AND = {
-            tag = RDU
-            is_year = 280
-            NOT = {
-                is_year = 350
-            }
-            liberty_desire = 20
-            RDU = {
-                AND = {
-                    is_subject_of = ORC
-                    owns_all_provinces = {
-                        OR = {
-                            area = nere_area
-                            area = kletvar_area
-                            area = area_57
-                            area = feemk_area
-                        }
-                        NOT = {
-                            any_owned_province = {
-                                NOT = {
-                                    area = nere_area
-                                    area = kletvar_area
-                                    area = area_57
-                                    area = feemk_area
-                                }
+        tag = RDU
+        is_year = 280
+        NOT = {
+            is_year = 350
+        }
+        liberty_desire = 20
+        RDU = {
+            AND = {
+                is_subject_of = ORC
+                owns_all_provinces = {
+                    OR = {
+                        area = nere_area
+                        area = kletvar_area
+                        area = area_57
+                        area = feemk_area
+                    }
+                    NOT = {
+                        any_owned_province = {
+                            NOT = {
+                                area = nere_area
+                                area = kletvar_area
+                                area = area_57
+                                area = feemk_area
                             }
                         }
                     }
@@ -81,10 +78,36 @@ country_event = {
     option = {
         name = naravam.2.a
         ai_chance = { factor = 80 }
+        trigger = {
+            OR = {
+                area_156 = {
+                    is_empty = yes
+                }
+                area_157 = {
+                    is_empty = yes
+                }
+            }
+        }
+        goto = 6485
         hidden_effect = {
-            feemk_area = {
-                cede_province = ORC
-                remove_core = RDU
+            if = {
+                limit = {
+                    exists = KLY
+                    KLY = {
+                        is_subject_of = ORC
+                    }
+                }
+                feemk_area = {
+                    cede_province = KLY
+                    remove_core = RDU
+                }
+            }
+            else = {
+                feemk_area = {
+                    cede_province = ORC
+                    add_core = KLY
+                    remove_core = RDU
+                }
             }
             nere_area = {
                 cede_province = ---
@@ -134,15 +157,19 @@ country_event = {
         }
         custom_tooltip = rdum_migrate_tooltip
         grant_independence = yes
-        add_prestige = -10s
+        add_prestige = -10
         add_country_modifier = {
             name = rdum_dev
-            duration = 3650
+            duration = 1825
         }
+        add_country_modifier = {
+            name = rdu_colonize
+            duration = -1
+        }
+        create_conquistador = { tradition = 20 }
         add_adm_power = 150
         add_dip_power = 150
         add_mil_power = 150
-	goto = 6482
     }
 
     option = {
@@ -162,24 +189,31 @@ country_event = {
 	picture = TRADE_GOODS_FURS_FISH_AND_SALT_eventPicture
 	desc = naravam.3.d
 	
-	trigger = { 
-		AND = {
-			NOT = {
-                tag = RDU
+	trigger = {
+        culture_group = Naravami_C
+        NOT = {
+            tag = RDU
+        }
+        is_year = 300
+		NOT = {
+			is_year = 400
+		}
+        if = {
+            limit = {
+                has_dlc = "Conquest of Paradise"
             }
             NOT = {
                 government = native
             }
-            is_year = 300
-			NOT = {
-				is_year = 400
-			}
-			culture_group = Naravami_C
-			NOT = {
-				has_country_flag = has_had_naravam3
-			}
+        }
+		NOT = {
+			has_country_flag = has_had_naravam3
 		}
 	}
+
+    immediate = {
+        set_country_flag = has_had_naravam3
+    }
 	
 	mean_time_to_happen = {
 		months = 12
@@ -188,10 +222,552 @@ country_event = {
 	option = {
 		name = naravam.3.a
 		ai_chance = { factor = 1 }
-		set_country_flag = has_had_naravam3
+		#set_country_flag = has_had_naravam3
 		add_country_modifier = {
 			name = call_of_the_frontier_naravam
 			duration = 18250
 		}
+        hidden_effect = {
+            if = {
+                limit = {
+                    primary_culture = Nirkifi
+                }
+                every_province = {
+                    limit = {
+                        culture = Nirkifi
+                    }
+                    add_permanent_claim = ROOT
+                }
+            }
+            if = {
+                limit = {
+                    primary_culture = Rduma
+                }
+                every_province = {
+                    limit = {
+                        culture = Rduma
+                    }
+                    add_permanent_claim = ROOT
+                }
+            }
+            if = {
+                limit = {
+                    primary_culture = Burgavian
+                }
+                every_province = {
+                    limit = {
+                        culture = Burgavian
+                    }
+                    add_permanent_claim = ROOT
+                }
+            }
+            if = {
+                limit = {
+                    primary_culture = Shoowtan
+                }
+                every_province = {
+                    limit = {
+                        culture = Shoowtan
+                    }
+                    add_permanent_claim = ROOT
+                }
+            }
+            if = {
+                limit = {
+                    primary_culture = Rouragi
+                }
+                every_province = {
+                    limit = {
+                        culture = Rouragi
+                    }
+                    add_permanent_claim = ROOT
+                }
+            }
+            if = {
+                limit = {
+                    primary_culture = Lihisian
+                }
+                every_province = {
+                    limit = {
+                        culture = Lihisian
+                    }
+                    add_permanent_claim = ROOT
+                }
+            }
+        }
+    }
+}
+
+#Start of lathvy conversions in Naravam
+country_event = {
+	id = naravam.4
+	title = naravam.4.t
+	picture = RELIGIOUS_CONVERSION_eventPicture
+	desc = naravam.4.d
+    major = yes
+    fire_only_once = yes
+	
+	trigger = {
+        capital_scope = {
+            region = eastern_naravam_region
+        }
+        is_year = 350
+        any_known_country = {
+			religion_group = lathvy_group
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = naravam.4.a
+		ai_chance = { factor = 1 }
+        capital_scope = {
+            change_religion = lathvy
+            add_reform_center = lathvy
+            add_province_modifier = {
+				name = religious_zeal_at_conv
+				duration = 10950
+			}
+        }
+        set_global_flag = LathvyConversionsStarted
+        every_country = {
+            limit = {
+                religion = naravami
+            }
+            add_opinion = {
+                who = ORC
+                modifier = lathvy_spreading
+            }
+        }
+	}
+}
+
+#Bishops in Kolya
+country_event = {
+	id = naravam.5
+	title = naravam.5.t
+	picture = JESUTIS_IN_BRAZIL_eventPicture
+	desc = naravam.5.d
+    major = yes
+    fire_only_once = yes
+	
+	trigger = {
+        capital_scope = {
+            region = eastern_naravam_region
+        }
+        religion = lathvy
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = naravam.5.a
+		ai_chance = { factor = 1 }
+        set_global_flag = KolyaHappened
+        custom_tooltip = KolyaUnlocked
+	}
+}
+
+#Kolya conversion
+country_event = {
+	id = naravam.6
+	title = naravam.6.t
+	picture = JESUTIS_IN_BRAZIL_eventPicture
+	desc = naravam.6.d
+	
+	trigger = {
+        has_global_flag = KolyaHappened
+        capital_scope = {
+            OR = {
+                region = eastern_naravam_region
+                region = western_naravam_region
+                region = apilanya_region
+            }
+        }
+        religion = lathvy
+        NOT = {
+            religious_school = {
+                group = lathvy_group
+                school = kolyan_school
+            }
+        }
+	}
+	
+	mean_time_to_happen = {
+		months = 5
+	}
+
+    option = {
+		name = naravam.6.a
+		ai_chance = { factor = 20 }
+        set_religious_school = {
+            group = lathvy_group
+            school = kolyan_school
+        }
+	}
+
+	option = {
+		name = naravam.6.b
+		ai_chance = { factor = 1 }
+        set_country_flag = refused_conversion
+        add_prestige = -10
+	}
+}
+
+#Rochoni reformation
+country_event = {
+	id = naravam.7
+	title = naravam.7.t
+	picture = JESUTIS_IN_BRAZIL_eventPicture
+	desc = naravam.7.d
+    fire_only_once = yes
+    major = yes
+	
+	trigger = {
+        capital_scope = {
+            OR = {
+                region = eastern_naravam_region
+                region = western_naravam_region
+                region = apilanya_region
+            }
+        }
+        religion = lathvy
+        current_age = age_of_absolutism
+	}
+	
+	mean_time_to_happen = {
+		months = 5
+	}
+
+    option = {
+		name = naravam.7.a
+        enable_religion = rochoni
+        capital_scope = {
+            change_religion = rochoni
+            add_reform_center = rochoni
+            add_province_modifier = {
+				name = religious_zeal_at_conv
+				duration = 10950
+			}
+        }
+        set_global_flag = RochoniReformation
+        every_province = {
+            limit = {
+                AND = {
+                    region = eastern_naravam_region
+                    religion = lathvy
+                }
+            }
+            remove_reform_center = lathvy
+        }
+	}
+}
+
+#the ai never colonises these provinces grrr
+country_event = {
+	id = naravam.8
+	title = naravam.8.t
+	picture = FARMING_eventPicture
+	desc = naravam.8.d
+    fire_only_once = yes
+	
+	trigger = {
+        owns_core_province = 6289
+        current_age = age_of_absolutism
+        6286 = {
+            is_empty = yes
+        }
+        6285 = {
+            is_empty = yes
+        }
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+	}
+
+    option = {
+		name = naravam.8.a
+		ai_chance = { factor = 20 }
+        6286 = {
+            add_core = ROOT
+            cede_province = ROOT
+        }
+        6285 = {
+            add_core = ROOT
+            cede_province = ROOT
+        }
+    }
+}
+
+#expedition to find the ice gods - 1
+country_event = {
+	id = naravam.9
+	title = naravam.9.t
+	picture = STREET_SPEECH_eventPicture
+	desc = naravam.9.d
+    fire_only_once = yes
+	
+	trigger = {
+        religion = naravami
+		is_year = 350
+	}
+	
+	mean_time_to_happen = {
+		months = 65
+	}
+
+    option = {
+		name = naravam.9.a
+		add_adm_power = -15
+        custom_tooltip = nrvGoExp
+		hidden_effect = {
+			random_list = {
+				1 = {
+					country_event = { 
+						id = naravam.9
+						days = 100
+						random = 265
+					}
+				}
+				1 = {
+					country_event = { 
+						id = naravam.10
+						days = 100
+						random = 265
+					}
+				}
+				1 = {
+					country_event = { 
+						id = naravam.11
+						days = 100
+						random = 265
+					}
+				}
+			}
+		}
+    }
+	
+	option = {
+		name = naravam.9.b
+        add_prestige = 5
+    }
+	
+	option = {
+		name = naravam.9.c
+		add_prestige = -15
+		change_religion = lathvy
+    }
+}
+
+#expedition to find the ice gods - 2 - they do not return
+country_event = {
+	id = naravam.10
+	title = naravam.10.t
+	picture = NATIVES_eventPicture
+	desc = naravam.10.d
+    fire_only_once = yes
+	is_triggered_only = yes
+
+    option = {
+		name = naravam.10.a
+		add_stability = -1
+    }	
+	
+	option = {
+		name = naravam.10.b
+		add_dip_power = -75
+		add_legitimacy = -10
+    }
+}
+
+#expedition to find the ice gods - 2 - they do not find the gods
+country_event = {
+	id = naravam.11
+	title = naravam.11.t
+	picture = WOUNDED_SOLDIERS_eventPicture
+	desc = naravam.11.d
+    fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = naravam.11.a
+		add_treasury = 35
+		add_country_modifier = {
+			name = nrv_religion_questioned
+			duration = 1600
+		}
+    }
+	
+	option = {
+		name = naravam.11.b
+		add_treasury = 35
+		add_years_of_income = -0.25
+		add_legitimacy = -10
+    }
+	
+}
+
+#expedition to find the ice gods - 2 - they find the gods
+country_event = {
+	id = naravam.12
+	title = naravam.12.t
+	picture = EXPLORERS_eventPicture
+	desc = naravam.12.d
+    fire_only_once = yes
+	is_triggered_only = yes
+
+    option = {
+		name = naravam.12.a
+		add_stability = 1
+		add_country_modifier = {
+			name = nrv_religion_confirmed
+			duration = 3600
+		}
+    }	
+	
+	option = {
+		name = naravam.12.b
+		add_years_of_income = -0.5
+		add_prestige = 50
+		add_stability = 1
+		add_country_modifier = {
+			name = nrv_religion_confirmed
+			duration = 3600
+		}
+    }
+}
+
+#Discovery of Gacil
+country_event = {
+	id = naravam.13
+	title = naravam.13.t
+	picture = EXPLORERS_eventPicture
+	desc = naravam.13.d
+    fire_only_once = yes
+    major = yes
+
+    trigger = {
+        is_year = 570
+        owns_core_province = 6270 #kolya
+		NOT = { 
+			OR = {
+				technology_group = naravami_tech_gr 
+				tag = NRV
+				tag = GCL
+			}
+		}
+    }
+
+    mean_time_to_happen = {
+        months = 2
+    }
+
+    option = {
+		name = naravam.13.a
+		naravami_sea = {
+            discover_country = ROOT
+        }
+        4960 = {
+            discover_country = ROOT
+        }
+        7672 = {
+            discover_country = ROOT
+        }
+        7676 = {
+            discover_country = ROOT
+        }
+        7677 = {
+            discover_country = ROOT
+        }
+        7679 = {
+            discover_country = ROOT
+        }
+        gabero_area = {
+            discover_country = ROOT
+        }
+        6465 = {
+            discover_country = ROOT
+        }
+		custom_tooltip = INVADING_GACIL
+        set_global_flag = gacil_discovered
+    }
+}
+
+#Makes it easier for Naravam to cross
+country_event = {
+    id = naravam.14
+    title = naravam.14.t
+    picture = EXPLORERS_eventPicture
+    desc = naravam.14.d
+    fire_only_once = yes
+    major = yes
+    major_trigger = {
+        AND = {
+            capital_scope = {
+                superregion = north_estal_superregion
+            }
+            has_discovered = 6465
+        }
+    }
+
+    trigger = {
+        has_global_flag = gacil_discovered
+        owns_core_province = 6464
+    }
+
+    mean_time_to_happen = {
+        years = 10
+    }
+
+    option = {
+        name = naravam.14.a
+        6466 = {
+            cede_province = ROOT
+        }
+        add_core = 6466
+    }
+}
+
+#Rochoni reformation ends
+country_event = {
+	id = naravam.15
+	title = naravam.15.t
+	picture = BIG_BOOK_eventPicture
+	desc = naravam.15.d
+    fire_only_once = yes
+    major = yes
+	
+	trigger = {
+        capital_scope = {
+            OR = {
+                region = eastern_naravam_region
+                region = western_naravam_region
+                region = apilanya_region
+            }
+        }
+        religion = rochoni
+        is_year = 550
+	}
+	
+	mean_time_to_happen = {
+		months = 240
+	}
+
+    option = {
+		name = naravam.15.a
+        custom_tooltip = rochoniReformationOver
+        every_province = {
+            limit = {
+                is_reformation_center = yes
+                religion = rochoni
+            }
+            remove_reform_center = rochoni
+        }
 	}
 }

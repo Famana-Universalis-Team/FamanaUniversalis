@@ -10,11 +10,19 @@ legions_of_truth = {
 	is_blessing = yes
 
 	modifier = {
-		land_morale = 0.10
+		land_morale = 0.05
 	}
 }
 
 believe_on_the_one_true_god = {
+	is_blessing = yes
+
+	modifier = {
+		global_heretic_missionary_strength = 0.02
+	}
+}
+
+believe_on_the_four_true_gods = {
 	is_blessing = yes
 
 	modifier = {
@@ -42,7 +50,7 @@ followers_of_shir = {
 	is_blessing = yes
 
 	modifier = {
-		idea_cost = -0.1 
+		idea_cost = -0.10
 	}
 }
 
@@ -51,5 +59,13 @@ followers_of_mor = {
 
 	modifier = {
 		recover_army_morale_speed = 0.10
+	}
+}
+
+followers_of_the_four_gods = {
+	is_blessing = yes
+
+	modifier = {
+		technology_cost = -0.1
 	}
 }

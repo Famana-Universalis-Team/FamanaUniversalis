@@ -138,11 +138,11 @@ quanex_area = {
 	5066 5065 5064 5063 5062
 }
 
-western_core_area = {
+imogua_area = {
 	5050 5051 5052 5060 5068
 }
 
-eastern_core_area = {
+emintas_area = {
 	5208 5067 5207
 }
 
@@ -170,11 +170,11 @@ effasha_area = {
 	5049 5055 5054 5056 5057
 }
 
-fazalep_area = {
+fasalep_area = {
 	5058 5059 5083 5082
 }
 
-lower_oppia_area = {
+keplex_area = {
 	5081 5076 5079
 }
 
@@ -194,11 +194,11 @@ lyposh_area = {
 	5089 5090 5091 5092 5093
 }
 
-atamsu_area = {
+canin_area = {
 	5548 5095 5096 5097
 }
 
-mesdool_area = {
+viel_minstro_area = {
 	5104 5101 5098
 }
 
@@ -214,7 +214,7 @@ sosne_area = {
 	5550 5110 5129
 }
 
-arlen_area = {
+neches_area = {
 	5126 5119 5131
 }
 
@@ -222,11 +222,11 @@ zne_area = {
 	5134 5112 5130 5109 5111
 }
 
-unnamed_area_7 = {
+dibata_area = {
 	5117 5113 5114
 }
 
-unnamed_area_8 = {
+thalmor_area = {
 	5116 5115 5135
 }
 
@@ -250,7 +250,7 @@ kars_area = {
 	5812 5813 5814 5815 7984
 }
 
-unnamed_area_9 = {
+gadea_area = {
 	5156 5290 5155
 }
 
@@ -274,7 +274,7 @@ houras_area = {
 	5167 5168 5175 5170 5171
 }
 
-unnamed_area_10 = {
+hos_area = {
 	5173 5176 5172 5818 5819
 }
 
@@ -290,11 +290,11 @@ mahansha_area = {
 	5183 5185 5186
 }
 
-unnamed_area_11 = {
+west_zoblotra_area = {
 	5184 5187 5192 5667 5791
 }
 
-unnamed_area_12 = {
+east_zoblotra_area = {
 	5191 5193 5792 5189
 }
 
@@ -306,7 +306,7 @@ kinvirel_area = {
 	5199 5196 5197
 }
 
-unnamed_area_13 = {
+minvir_area = {
 	5198 5200 5201 5202 5653
 }
 
@@ -318,23 +318,23 @@ pomlen_area = {
 	5203 5337 5316 5338 5342
 }
 
-unnamed_area_14 = {
+ratahja_area = {
 	5017 5018 5019 5020 5253
 }
 
-unnamed_area_15 = {
+huparan_area = {
 	5022 5023 5021 5024 5025
 }
 
-unnamed_area_16 = {
+esmekeed_area = {
 	5026 5027 5028 5029 5030
 }
 
-unnamed_area_17 = {
+porero_area = {
 	5033 5037 5036 5032 5038
 }
 
-unnamed_area_18 = {
+druviked_area = {
 	5031 5035 5034 5039
 }
 
@@ -347,7 +347,7 @@ sixan_area = {
 }
 
 calla_area = {
-	5459 5449 5448
+	5459 5449 5448 5447
 }
 
 sostus_area = {
@@ -359,7 +359,11 @@ marnet_area = {
 }
 
 morsum_area = {
-	5409 5408 5410 5411 5407
+	5411 5407 8857
+}
+
+mariana_area = {
+	5409 5408 5410
 }
 
 vesuxa_area = {
@@ -375,7 +379,7 @@ glazia_area = {
 }
 
 pawan_area = {
-	5439 5397 5395
+	5439 5397 5396 5393 5287
 }
 
 vox_larm_area = {
@@ -383,14 +387,14 @@ vox_larm_area = {
 }
 
 pexamol_area = {
-	5553 5552 5577
+	5553 5552 5577 5379
 }
 
 elwait_area = {
-	5379 5378 5377 5380 5811
+	5378 5377 5380 5811
 }
 
-unnamed_area_20 = {
+trilsekin_area = {
 	5382 5383 5384 5385 5381
 }
 
@@ -399,30 +403,30 @@ pyarxu_area = {
 }
 
 xon_area = {
-	5388 5389 5387 5402 5401
+	5388 5389 5387
 }
 
 oxaled_area = {
-	5399 5465 5447 5398 5400
+	5399 5465 5398 5400 5401
 }
 
 vinon_area = {
-	5463 5468 5462 5464
+	5463 5468 5462 5464 5402
 }
 
 walamo_area = {
-	5443 5444 5467
+	5443 5444 5467 5422 5466
 }
 
 karmanon_area = {
-	5429 5428 5432 5433
+	5429 5432 5433 5421 5428
 }
 
-unnamed_area_21 = {
-	5423 5424 5460 5461 5823
+praman_area = {
+	5424 5460 5461 5423 5823
 }
 
-lesser_moxon_area = {
+xofka_area = {
 	5374 5376 5375 5239
 }
 
@@ -434,7 +438,7 @@ outer_moxon_area = {
 	5370 5369 5307 5366 5364
 }
 
-northern_umzat = {
+zata_area = {
 	5263 5264 5262 5259
 }
 
@@ -446,15 +450,15 @@ revdirom_area = {
 	5158 5743 5611
 }
 
-unnamed_area_22 = {
+olfemek_area = {
 	5266 5261 5260
 }
 
-unnamed_area_23 = {
+reyel_area = {
 	5269 5270 5272 5271 5273
 }
 
-mofemi_morsum_area = {
+rondos_area = {
 	5354 5353 5357 5355 5352
 }
 
@@ -462,7 +466,7 @@ riximi_area = {
 	5562 5561 5559 5560 5793
 }
 
-unnamed_pexto_1 = {
+ronpax_area = {
 	5356 5351 5350 5348 5349
 }
 
@@ -470,19 +474,19 @@ unnamed_pexto_2 = {
 	5345 5340 5347 5346
 }
 
-unnamed_pexto_3 = {
+affna_area = {
 	5315 5332 5331 5330
 }
 
-unnamed_pexto_4 = {
+seaside_nevia_area = {
 	5341 5313 5312 5309
 }
 
-unnamed_pexto_5 = {
+hilemo_area = {
 	5311 5300 5301 5297
 }
 
-unnamed_pexto_6 = {
+hatu_area = {
 	5333 5334 5335 5319
 }
 
@@ -490,31 +494,31 @@ maglazios_area = {
 	5321 5320 5324 5336
 }
 
-unnamed_pexto_7 = {
+gineazia_area = {
 	5326 5327 5328 5325
 }
 
-unnamed_pexto_8 = {
+tegaria_area = {
 	5304 5303 5281 5280 5302
 }
 
-unnamed_pexto_9 = {
+lomea_area = {
 	5318 5317 5322 5329 5323
 }
 
-unnamed_pexto_10 = {
+gegon_area = {
 	5277 5275 5276 5278 5274
 }
 
-unnamed_pexto_11 = {
+jinasa_area = {
 	5282 5283 5286 5284 5288
 }
 
-unnamed_pexto_12 = {
+pixrol_area = {
 	5299 5298 5285 5289 5824
 }
 
-unnamed_pexto_14 = {
+west_yuvla_area = {
 	5294 5296 5295 5310
 }
 
@@ -522,19 +526,19 @@ hasia_area = {
 	5695 6390 6391 6389 6393
 }
 
-unnamed_area_24 = {
+east_yuvla_area = {
 	5703 5701 5700 5699 5704
 }
 
-unnamed_area_25 = {
+ordican_mountains_area = {
 	5706 5705 6196 6197 6198
 }
 
-unnamed_area_26 = {
+dukula_area = {
 	5607 5608 5697 5698
 }
 
-unnamed_area_27 = {
+elteyn_area = {
 	5637 5190 5596
 }
 
@@ -594,19 +598,19 @@ poxa_area = {
 	5575 5576 5578
 }
 
-vava_area = {
+tyarda_area = {
 	5582 5583 5584
 }
 
 kachik_area = {
-	5492 5490 5491 5488 5489
+	5491 5489 5488 5486 8850
 }
 
 bohora_area = {
-	5493 5487 5486 5485 5484
+	5493 5487 8851
 }
 
-unnamed_area_29 = {
+affan_area = {
 	5482 5483 5478 5479 5820
 }
 
@@ -650,7 +654,7 @@ unnamed_area_38 = {
 	5692 5691 5693 5825 5867 
 }
 
-unnamed_area_39 = {
+bamal_area = {
 	5516 5515 5514 5513
 }
 
@@ -682,7 +686,7 @@ north_nakoa_area = {
 	5541 5540 5605
 }
 
-borlebim_area = {
+borlebin_area = {
 	5727 5729 5617 5627 
 }
 
@@ -833,10 +837,10 @@ nhoma_area_6 = {
 ############################# DEBUG
 
 debug_area_1 = {
-	7192  7191  7190  7189  7188  7187  7186  7185  7184  7183  7182  7181  7180  7179  7178  7177  7176  7175  7174  7173  7172  7171  7170  7169  7168  7167  7165  7164  7163  7162  7161  7160  7159  7158  7157  7156  7155  7154  7153  7152  7151  7150  7149  7148  7147  7146  7145  7144  7143  7142  7141  7140  7139  7138  7137  7136  7135  7134  7133  7132  7131  7130  7129  7128  7127  7126  7125  7124  7123  7122  7121  7120  7119  7118  7117  7116  7115  7114  7113  7112  7111  7110  7109  7108  7107  7106  7105  7104  7103  7102  7101  7100  7099  7098  7097  7096  7095  7094  7093  7092  7091  7090  7089  7088  7087  7086  7085  7084  7083  7082  7081  7080  7079  7078  7077  7076  7075  7074  7073  7072  7071  7070  7069  7068  7067  7066  7065  7064  7063  7062  7061  7060  7059  7058  7057  7056  7055  7054  7053  7052  7051  7050  7049  7048  7047  7046  7045  7044  7043  7042  7041  7040  7039  7038  7037  7036  7035  7034  7033  7032  7031  7030  7029  7028  7027  7026  7025  7024  7023  7022  7021  7020  7019  7018  7017  7016  7001  7000  6999  6998  6997  6996  6995  6994  6993  6992  6991  6990  6989  6988  6987  6986  6985  6984  6983  6982  6981  6980  6979  6978  6977  6976  6975  6974  6973  6972  6971  6970  6969  6968  6967  6966  6965  6964  6963  6962  6961  6960  6959  6958  6957  6956  6955  6954  6953  6952  6951  6950  6949  6948  6947  6946  6945  6944  6943  6942  6941  6940  6939  6938  6937  6936  6935  6934  6933  6932  6931  6930  6929  6928  6927  6926  6925  6924  6923  6922  6921  6920  6919  6918  6917  6916  6915  6914  6913  6912  6911  6910  6909  6908  6907  6906  6905  6904  6903  6902  6901  6900  6899  6898  6897  6896  6895  6894  6893  6892  6891  6890  6889  6888  6887  6886  6885  6884  6883  6882  6881  6880  6879  6878  6877  6876  6875  6874  6873  6872
-	6552  6010  6567  6022  6513  6537  6510  5610  5630  5632  5640  5635  5649  5614  5646  6443  6129  6131  6560  6837  5912  5651  5662  5675  5641  7194  7199  7195  7197  7196
+	7192  7191  7190  7189  7188  7187  7186  7185  7184  7183  7182  7181  7180  7179  7178  7177  7176  7175  7174  7173  7172  7171  7170  7169  7168  7167  7165  7164  7163  7162  7161  7160  7159  7158  7157  7156  7155  7154  7153  7152  7151  7150  7149  7148  7147  7146  7145  7144  7143  7142  7141  7140  7139  7138  7137  7136  7135  7134  7133  7132  7131  7130  7129  7128  7127  7126  7125  7124  7123  7122  7121  7120  7119  7118  7117  7116  7115  7114  7113  7112  7111  7110  7109  7108  7107  7106  7105  7104  7103  7102  7101  7100  7099  7098  7097  7096  7095  7094  7093  7092  7091  7090  7089  7088  7087  7086  7085  7084  7083  7082  7081  7080  7079  7078  7077  7076  7075  7074  7073  7072  7071  7070  7069  7068  7067  7066  7065  7064  7063  7062  7061  7060  7059  7058  7057  7056  7055  7054  7053  7052  7051  7050  7049  7048  7047  7046  7045  7044  7043  7042  7041  7040  7039  7038  7037  7036  7035  7034  7033  7032  7031  7030  7029  7028  7027  7026  7025  7024  7023  7022  7021  7020  7019  7018  7017  7016  7001  7000  6999  6998  6997  6996  6995  6994  6993  6992  6991  6990  6989  6988  6987  6986  6985  6984  6983  6982  6981  6980  6979  6978  6977  6976  6975  6974  6973  6972  6971  6970  6969  6968  6967  6966  6965  6964  6963  6962  6961  6960  6959  6958  6957  6956  6955  6954  6953  6952  6951  6950  6949  6948  6947  6946  6945  6944  6943  6942  6941  6940  6939  6938  6937  6936  6935  6934  6933  6932  6931  6930  6929  6928  6927  6926  6925  6924  6923  6922  6921  6920  6919  6918  6917  6916  6915  6914  6913  6912  6911  6910  6909  6908  6907  6906  6905  6904  6903  6902  6901  6900  6895  6894  6893  6892  6891  6890  6889  6888  6887  6885  6883
+	6552  6010  6567  6022  6513  6537  6510  5610  5630  5632  5640  5635  5649  5614  5646  6443  6129  6131  6560  6837  5912  5651  5662  5675  5641  7194  7199  7195  7197  7196  8077  8078  8079  8080  8081  8082  8083  8084  8085  8086  8087  8088  8089  8090  8091  8092  8093  8094  8095  8096
 	7504  7503  7502  7501  7500  7499  7498  7497  7496  7495  7494  7493  7492  7491  7490  7489  7488  7487  7486  7485  7484  7483  7482  7481  7480  7479  7478  7477  7476  7475  7474  7473  7472  7471  7470  7469  7468  7467  7466  7465  7464  7463  7462  7461  7460  7459  7458  7457  7456  7455  7454  7453  7452  7451  7450  7449  7448  7447  7446  7445  7444  7443  7442  7441  7440  7439  7438  7437  7436  7435  7434  7433  7432  7431  7430  7429  7428  7427  7426  7425  7424  7423  7422  7421  7420  7419  7418  7417  7416  7415  7414  7413  7412  7411  7410  7409  7408  7407  7406  7405  7404  7403  7402  7401  7400  7399  7398  7397  7396  7395  7394  7393  7392  7391  7390  7389  7388  7387  7386  7385  7384  7383  7382  7381  7380  7379  7378  7377  7376  7375  7374  7373  7372  7371  7370  7369  7368  7367  7366  7365  7364  7363  7362  7361  7360  7359  7358  7357  7356  7355  7354  7353  7352  7351  7350  7349  7348  7347  7346  7345  7344  7343  7342  7341  7340  7339  7338  7337  7336  7335  7334  7333  7332  7331  7330  7329  7328  7327  7326  7325  7324  7323  7322  7321  7320  7319  7318  7317  7316  7315  7314  7313  7312  7311  7310  7309  7308  7307  7306  7305  7304  7303  7302  7301  7300  7299  7298  7297  7296  7295  7294  7293  7292  7291  7290  7289  7288  7287  7286  7285  7284  7283  7282  7281  7280  7279  7278  7277  7276  7275  7274  7273  7272  7271  7270  7269  7268  7267  7266  7265  7264  7263  7262  7261  7260  7259  7258  7257  7256  7255  7254  7253  7252  7251  7250  7249  7248  7247  7246  7245  7244  7243  7241  7240  7239  7238  7237  7236  7235  7234  7233  7232  7231  7230  7229
-	8000  7999  7998  7997  7996  7995  7994  7993  7992  7991  7990  7983  7982  7978  7977  7976  7972  7971  7970  7969  7968  7967  7966  7965  7964  7963  7962  7961  7960  7959  7958  7957  7956  7955  7950  7949  7948  7947  7946  7945  7944  7943  7942  7941  7940  7939  7938  7937  7936  7935  7934  7933  7932  7931  7930  7929  7928  7927  7926  7925  7924  7923  7922  7921  7920  7919  7918  7917  7916  7915  7914  7913  7912  7911  7910  7909  7908  7907  7906  7905  7904  7903  7902  7901  7900  7899  7898  7897  7896  7895  7894  7893  7892  7891  7890  7889  7888  7887  7886  7885  7884  7883  7882  7881  7880  7879  7878  7877  7876  7875  7874  7873  7872  7871  7870  7869  7868  7867  7866  7865  7864  7863  7862  7861  7860  7859  7858  7857  7856  7855  7854  7853  7852  7851  7850  7849  7848  7628  7627  7626  7625  7624  7623  7622  7621  7620  7619  7618  7617  7616  7615  7614  7613  7612  7611  7610  7609  7608  7607  7606  7605  7604  7603  7602  7601  7600  7599  7598  7597  7596  7595  7594  7593  7592  7591  7590  7589  7588  7587  7586  7585  7584  7583  7582  7581  7580  7579  7578  7577  7576  7575  7574  7573  7572  7571  7570  7569  7568  7567  7566  7565  7564  7563  7562  7561  7560  7559  7558  7557  7556  7555  7554  7553  7552  7551  7550  7549  7548  7547  7546  7545  7544  7543  7542  7541  7540  7539  7538  7537  7536  7535  7534  7533  7532  7531  7530  7529  7528  7527  7526  7525  7524  7523  7522  7521  7520  7519  7518  7517  7516  7515  7514  7513  7512  7511  7510  7509  7508  7507  7506  7505
+	8000  7999  7998  7997  7996  7995  7983  7982  7978  7977  7976  7972  7971  7970  7969  7968  7967  7966  7965  7964  7963  7962  7961  7960  7959  7958  7957  7956  7955  7950  7949  7948  7947  7946  7945  7944  7943  7942  7941  7940  7939  7938  7937  7936  7935  7934  7933  7932  7931  7930  7929  7928  7927  7926  7925  7924  7923  7922  7921  7920  7919  7918  7917  7916  7915  7914  7913  7912  7911  7910  7909  7908  7907  7906  7905  7904  7903  7902  7901  7900  7899  7898  7897  7896  7895  7894  7893  7892  7891  7890  7889  7888  7887  7886  7885  7884  7883  7882  7881  7880  7879  7878  7877  7876  7875  7874  7873  7872  7871  7870  7869  7868  7867  7866  7865  7864  7863  7862  7861  7860  7859  7858  7857  7856  7855  7854  7853  7852  7851  7850  7849  7848  7628  7627  7626  7625  7624  7623  7622  7621  7620  7619  7618  7617  7616  7615  7614  7613  7612  7611  7610  7609  7608  7607  7606  7605  7604  7603  7602  7601  7600  7599  7598  7597  7596  7595  7594  7593  7592  7591  7590  7589  7588  7587  7586  7585  7584  7583  7582  7581  7580  7579  7578  7577  7576  7575  7574  7573  7572  7571  7570  7569  7568  7567  7566  7565  7564  7563  7562  7561  7560  7559  7558  7557  7556  7555  7554  7553  7552  7551  7550  7549  7548  7547  7546  7545  7544  7543  7542  7541  7540  7539  7538  7537  7536  7535  7534  7533  7532  7531  7530  7529  7528  7527  7526  7525  7524  7523  7522  7521  7520  7519  7518  7517  7516  7515  7514  7513  7512  7511  7510  7509  7508  7507  7506  7505
 }
 
 ################################################
@@ -889,16 +893,11 @@ rishtokay_area = {
 	5143 5145 5146 5549
 }
 
-megloa_area = {
-	5396 5393 5287
-}
-
 south_pextum_area = {
-	5394 5391 5390
+	5394 5391 5390 5395
 }
 
 vau_area = {
-	5422 5466 5421
 }
 
 abvori_area = {
@@ -948,7 +947,7 @@ yenis_area = {
 	5686 5685 5687 5688
 }
 
-real_vava_area = {
+vava_area = {
 	5579 5580 5581
 }
 
@@ -973,7 +972,7 @@ alo_tramo_area = {
 }
 
 hozy_area = {
-	6536 6546 6547 6548 6549
+	6546 6547 6548 6549
 }
 
 kasmel_area = {
@@ -981,15 +980,15 @@ kasmel_area = {
 }
 
 nenki_area = {
-	6643 6644 6645 6640 6639
+	6643 6644 6639 6642 6640
 }
 
 dethoni_area = {
-	6569 6584 6583 6585
+	6569 6584 6585 6636
 }
 
 nizoora_area = {
-	6587 6586 6582
+	6587 6586 6582 6583
 }
 
 rosta_area = {
@@ -997,15 +996,19 @@ rosta_area = {
 }
 
 sovi_area = {
-	6633 6646 6647
+	6633 6646 6634 6568 6566
 }
 
 bojj_area = {
-	6648 6650 6649 6654
+	6648 6650 6649 6645
 }
 
 garirol_area = {
-	6651 6652 6653 6655
+	6653 6655 6654
+}
+
+new_zubaran_area = {
+	6651 6652 6647
 }
 
 nere_area = {
@@ -1137,11 +1140,11 @@ area_66 = {
 }
 
 area_67 = {
-	6806 6807 6808
+	6806 6805 6804
 }
 
 area_68 = {
-	6817 6843 6804
+	6817 6843 6807 6808
 }
 
 area_69 = {
@@ -1165,11 +1168,11 @@ area_73 = {
 }
 
 area_74 = {
-	6612 6611 6609 6608
+	6613 6614 6615
 }
 
 area_75 = {
-	6606 6607 6605
+	6606 6607 6605 6608 6604
 }
 
 area_76 = {
@@ -1301,15 +1304,15 @@ area_107 = {
 }
 
 area_108 = {
-	6604 6603 6602 6601
+	6603 6602 6601 6619 6618
 }
 
 area_109 = {
-	6613 6614 6615 6610
+	6610 6612 6611 6609
 }
 
 area_110 = {
-	6616 6617 6619 6618
+	
 }
 
 area_111 = {
@@ -1321,7 +1324,7 @@ area_112 = {
 }
 
 area_113 = {
-	5963 5965 5966 5976 5975
+	5963 5965 5966
 }
 
 area_114 = {
@@ -1349,7 +1352,7 @@ area_119 = {
 }
 
 area_120 = {
-	5981 5980 5993
+	5981 5980 5993 5975 5976
 }
 
 area_121 = {
@@ -1497,35 +1500,35 @@ area_155 = {
 }
 
 area_156 = {
-	6493 6487 6486 6485 6484
+	6493 6487 6486 6485
 }
 
 area_157 = {
-	6478 6479 6480
+	6478 6479 6480 6484
 }
 
 area_158 = {
-	6634 6635 6636
+	6635 6638 6637
 }
 
 area_159 = {
-	6638 6637 6590 6591 6592
+	6590 6591 6592 6593
 }
 
 area_160 = {
-	6628 6594 6595 6593
+	6623 6616 6617
 }
 
 area_161 = {
-	6682 6683 6680 6681 6687
+	6680 6681 6679 6678
 }
 
 area_162 = {
-	6684 6685 6686
+	6684 6685 6686 6687 6683
 }
 
 area_163 = {
-	6678 6679 6677 6676 6675
+	6677 6676 6675
 }
 
 area_164 = {
@@ -1533,51 +1536,51 @@ area_164 = {
 }
 
 area_165 = {
-	6797 6796 6798 6792
+	6797 6796 6854
 }
 
 area_166 = {
-	6854 6748 6745
+	6748 6745 6773 6774 6729
 }
 
 area_167 = {
-	6729 6728 6727 6722
+	6728 6727 6722
 }
 
 area_168 = {
-	6736 6734 6733 6732 6735
+	6734 6733 6732 6723
 }
 
 area_169 = {
-	6737 6756 6755
+	6737 6756 6755 6735 6736
 }
 
 area_170 = {
-	6481 6482 6476 6475 6474
+	6481 6482 6476
 }
 
 area_171 = {
-	6577 6575 6576
+	6577 6575 6576 6581 6580
 }
 
 area_172 = {
-	6581 6580 6578 6572
+	6578 6572 6571
 }
 
 area_173 = {
-	6574 6483 6573 6570
+	6574 6573 6570
 }
 
 area_174 = {
-	6571 6599 6600
+	6599 6600 6594	
 }
 
 area_175 = {
-	6598 6620 6621 6622
+	6598 6620 6621 6622 6595
 }
 
 area_176 = {
-	6623 6624 6625 6626
+	6624 6625 6626
 }
 
 area_177 = {
@@ -1593,7 +1596,7 @@ area_179 = {
 }
 
 area_180 = {
-	6563 6674 6672 6673
+	6674 6672 6673
 }
 
 area_181 = {
@@ -1601,51 +1604,51 @@ area_181 = {
 }
 
 area_182 = {
-	6631 6627 6641 6642
+	6631 6627 6641 6628
 }
 
 area_183 = {
-	6754 6753 6752 6751 6750
+	6754 6753 6752
 }
 
 area_184 = {
-	6558 6559 6557 6556
+	6558 6559 6557
 }
 
 area_185 = {
-	6668 6669 6670
+	6669 6670 6768 6671
 }
 
 area_186 = {
-	6664 6665 6666 6667
+	6665 6666 6667 6664 6668
 }
 
 area_187 = {
-	6538 6535 6534 6528
+	6538 6536 6535 6541
 }
 
 area_188 = {
-	6541 6540 6539
+	6540 6534 6528
 }
 
 area_189 = {
-	6568 6566 6565
+	6760 6759 6758
 }
 
 area_190 = {
-	6564 6562 6561 6555
+	6563 6562 6561 6555
 }
 
 area_191 = {
-	6543 6542 6544
+	6543 6542 6544 6556	
 }
 
 area_192 = {
-	6553 6551 6554 6550 6545
+	6553 6551 6554 6565 6564
 }
 
 area_193 = {
-	6663 6660 6659
+	6663 6660 6659 6658
 }
 
 area_194 = {
@@ -1653,7 +1656,7 @@ area_194 = {
 }
 
 area_195 = {
-	6661 6656 6658 6657 6662
+	6656 6657 6662 6787
 }
 
 area_196 = {
@@ -1737,59 +1740,59 @@ area_214 = {
 }
 
 area_215 = {
-	6708 6709 6710 6711
+	6708 6709 6710
 }
 
 area_216 = {
-	6707 6714 6712 6715 6713
+	6707 6714 6712
 }
 
 area_217 = {
-	6716 6717 6723
+	6716 6717 6711
 }
 
 area_218 = {
-	6720 6719 6721 6718
+	6720 6719 6715 6713
 }
 
 area_219 = {
-	6738 6739 6741 6740
+	6738 6739 6741 6726 6742
 }
 
 area_220 = {
-	6805 6789 6790 6791
+	6790 6791 6793 6789
 }
 
 area_221 = {
-	6749 6671 6760 6766
+	6749 6751 6750
 }
 
 area_222 = {
-	6724 6725 6726 6742 6743
+	6724 6725 6721 6718
 }
 
 area_223 = {
-	6758 6757 6759 6761
+	6761 6766 6767
 }
 
 area_224 = {
-	6788 6784 6777 6779 6786
+	6788 6777 6779 6661
 }
 
 area_225 = {
-	6787 6778 6782 6780 6768
+	6778 6782 6780 6781
 }
 
 area_226 = {
-	6785 6783 6781
+	6785 6783 6786 6784 6770
 }
 
 area_227 = {
-	6793 6794 6795 6774
+	6794 6795 6798 6792
 }
 
 area_228 = {
-	6773 6744 6763
+	6744 6763 6743
 }
 
 area_229 = {
@@ -1797,11 +1800,11 @@ area_229 = {
 }
 
 area_230 = {
-	6762 6765 6764
+	6762 6757 6740
 }
 
 area_231 = {
-	6770 6769 6767
+	6769 6764 6682 8859 6765
 }
 
 irfa_area = {
@@ -1864,6 +1867,14 @@ area_244 = {
 	7955 7954 7953 7952
 }
 
+area_245 = {
+	6539 6550 6545
+}
+
+area_246 = {
+	6475 6474 6483
+}
+
 south_onobya_area = {
 	6082 5932 6081 5922 5923
 }
@@ -1871,3 +1882,1255 @@ south_onobya_area = {
 rubama_area = {
 	5916 6076 6077 6078 6079
 }
+
+maru_area = {
+	5484 5485 8849
+}
+
+leta_area = {
+	5492 8852 5490
+}
+
+tretat_area = {
+	7975 7974 7973 7976
+}
+
+tretat_area = {
+	7975 7974 7973 7976
+}
+
+qalkabh_area = {
+	7977 7978 8001 8003
+}
+
+aqlqyl_area = {
+	7979 7980 7983 7982 7981
+}
+
+jiri_area = {
+	7951 7992 7989 7990
+}
+
+teshtelpos_area = {
+	7994 7993 7991
+}
+
+bitaman_rim = {
+	8022 8023 8025
+}
+
+bareq_area = {
+	8024 8026 8027
+}
+
+tamja_area = {
+	8002 7999 7998 8000
+}
+
+amandar_area = {
+	8008 8009 7229 7230
+}
+
+gidjifnor_area = {
+	8004 8005 8006 8007
+}
+
+vorast_area = {
+	8010 8011 8012 8013 8016
+}
+
+kurkhan_area = {
+	7260 7259 7258 7257 7231
+}
+
+ekela_area = {
+	7281 7283 7284 7282
+}
+
+kloyo_area = {
+	7997 7280 7279 7996 7278
+}
+
+tate_tame_area = {
+	7277 7276 7275 7274 7270
+}
+
+kankra_area = {
+	7273 7272 7271 7266 7265
+}
+
+narq_area = {
+	7268 7267 7264 7269
+}
+
+oblogia_area = {
+	7261 7263 7262
+}
+
+milk_road_area = {
+	6872 6873 6874 6879 6878 
+}
+
+porcelain_path = {
+	6875 6876 6877 6881
+}
+
+iverum_area = {
+	6884 6886 6898
+}
+
+haljo_area = {
+	6882 6899 6897 6896 6880
+}
+
+
+
+
+		brittany_area = {}
+		normandy_area = {}
+		provence_area = {}
+		guyenne_area = {}
+		languedoc_area = {}
+		massif_central_area = {}
+		savoy_dauphine_area = {}
+		lorraine_area = {}
+		picardy_area = {}
+		champagne_area = {}
+		ile_de_france_area = {}
+		loire_area = {}
+		bourgogne_area = {}
+		west_burgundy_area = {}
+		pyrenees_area = {}
+		poitou_area = {}
+		orleans_area = {}
+		svealand_area = {}
+		norrland_area = {}
+		gotaland_area = {}
+		skaneland_area = {}
+		jutland_area = {}
+		denmark_area = {}
+		finland_area = {}
+		northern_norway = {}
+		eastern_norway = {}
+		western_norway = {}
+		bothnia_area = {}
+		subarctic_islands_area = {}
+		laponia_area = {}
+		vastra_gotaland_area = {}
+		ostra_svealand_area = {}
+		wallonia_area = {}
+		flanders_area = {}
+		holland_area = {}
+		frisia_area = {}
+		brabant_area = {}
+		north_brabant_area = {}
+		venetia_area = {}
+		lombardy_area = {}
+		piedmont_area = {}
+		tuscany_area = {}
+		liguria_area = {}
+		corsica_sardinia_area = {}
+		sicily_area = {}
+		naples_area = {}
+		calabria_area = {}
+		apulia_area = {}
+		emilia_romagna_area = {}
+		central_italy_area = {}
+		lazio_area = {}
+		po_valley_area = {}
+		western_sicily_area = {}
+		erzgebirge_area = {}
+		south_saxony_area = {}
+		northern_saxony_area = {}
+		thuringia_area = {}
+		neumark_area = {}
+		mittelmark_area = {}
+		vorpommern_area = {}
+		bohemia_area = {}
+		moravia_area = {}
+		hinter_pommern_area = {}
+		north_rhine_area = {}
+		lower_rhineland_area = {}
+		westphalia_area = {}
+		north_westphalia_area = {}
+		hesse_area = {}
+		lower_saxony_area = {}
+		weser_area = {}
+		holstein_area = {}
+		mecklenburg_area = {}
+		braunschweig_area = {}
+		lusatia_area = {}
+		tirol_area = {}
+		austria_proper_area = {}
+		inner_austria_area = {}
+		carinthia_area = {}
+		switzerland_area = {}
+		lower_bavaria_area = {}
+		upper_bavaria_area = {}
+		east_bavaria_area = {}
+		franconia_area = {}
+		upper_franconia_area = {}
+		lower_swabia_area = {}
+		upper_swabia_area = {}
+		upper_rhineland_area = {}
+		romandie_area = {}
+		palatinate_area = {}
+		alsace_area = {}
+		moscow_area = {}
+		suzdal_area = {}
+		novgorod_area = {}
+		pskov_area = {}
+		beloozero_area = {}
+		pomor_area = {}
+		karelia_area = {}
+		ryazan_area = {}
+		tambov_area = {}
+		north_karelia = {}
+		tver_area = {}
+		yaroslavl_area = {}
+		vladimir_area = {}
+		oka_area = {}
+		arkhangelsk_area = {}
+		vologda_area = {}
+		ural_area = {}
+		perm_area = {}
+		kazan_area = {}
+		galich_area = {}
+		saratov_area = {}
+		kama_area = {}
+		bashkiria_area = {}
+		samara_area = {}
+		volga_area = {}
+		aragon_area = {}
+		catalonia_area = {}
+		valencia_area = {}
+		lower_andalucia_area = {}
+		upper_andalucia_area = {}
+		castille_area = {}
+		toledo_area = {}
+		asturias_area = {}
+		leon_area = {}
+		alentejo_area = {}
+		beieras_area = {}
+		basque_country = {}
+		galicia_area = {}
+		baleares_area = {}
+		extremadura_area = {}
+		east_midlands_area = {}
+		west_midlands_area = {}
+		yorkshire_area = {}
+		scottish_marches_area = {}
+		wessex_area = {}
+		home_counties_area = {}
+		east_anglia_area = {}
+		wales_area = {}
+		lowlands_area = {}
+		highlands_area = {}
+		kingdom_of_the_isles_area = {}
+		munster_area = {}
+		connacht_area = {}
+		leinster_area = {}
+		ulster_area = {}
+		lithuania_area = {}
+		livonia_area = {}
+		estonia_ingria_area = {}
+		curonia_area = {}
+		west_prussia_area = {}
+		east_prussia_area = {}
+		samogitia_area = {}
+		wielkopolska_area = {}
+		malopolska_area = {}
+		red_ruthenia_area = {}
+		mazovia_area = {}
+		silesia_area = {}
+		central_poland_area = {}
+		sandomierz_area = {}
+		kuyavia_area = {}
+		west_dniepr_area = {}
+		east_dniepr_area = {}
+		sloboda_ukraine_area = {}
+		white_ruthenia_area = {}
+		podolia_volhynia_area = {}
+		pripyat_area = {}
+		smolensk_area = {}
+		minsk_area = {}
+		podlasie_area = {}
+		volhynia_area = {}
+		chernigov_area = {}
+		crimea_area = {}
+		lower_don_area = {}
+		astrakhan_area = {}
+		zaporizhia_area = {}
+		yedisan_area = {}
+		azov_area = {}
+		croatia_area = {}
+		east_adriatic_coast_area = {}
+		bosnia_area = {}
+		serbia_area = {}
+		rascia_area = {}
+		bulgaria_area = {}
+		macedonia_area = {}
+		northern_greece_area = {}
+		morea_area = {}
+		thrace_area = {}
+		albania_area = {}
+		silistria_area = {}
+		slavonia_area = {}
+		transdanubia_area = {}
+		alfold_area = {}
+		slovakia_area = {}
+		transylvania_area = {}
+		southern_transylvania_area = {}
+		wallachia_area = {}
+		moldavia_area = {}
+		lower_nubia_area = {}
+		cyrenaica_area = {}
+		gulf_of_arabia_area = {}
+		al_wahat_area = {}
+		delta_area = {}
+		bahari_area = {}
+		vostani_area = {}
+		said_area = {}
+		fezzan_area = {}
+		tunisia_area = {}
+		djerba_area = {}
+		kabylia_area = {}
+		algiers_area = {}
+		hautes_plaines_area = {}
+		north_saharan_area = {}
+		tafilalt_area = {}
+		sus_area = {}
+		marrekesh_area = {}
+		ouled_nail_area = {}
+		#fez_area = {}
+		northern_morocco_area = {}
+		southern_morocco_area = {}
+		western_morocco_area = {}
+		tripolitania_area = {}
+		barbary_coast_area = {}
+		macaronesia_area = {}
+		syria_area = {}
+		palestine_area = {}
+		al_jazira_area = {}
+		iraq_arabi_area = {}
+		basra_area = {}
+		trans_jordan_area = {}
+		syrian_desert_area = {}
+		aleppo_area = {}
+		hudavendigar_area = {}
+		aydin_area = {}
+		karaman_area = {}
+		rum_area = {}
+		kastamonu_area = {}
+		erzurum_area = {}
+		north_kurdistan_area = {}
+		dulkadir_area = {}
+		cukurova_area = {}
+		ankara_area = {}
+		aegean_archipelago_area = {}
+		germiyan_area = {}
+		luristan_area = {}
+		farsistan_area = {}
+		iraq_e_ajam_area = {}
+		tabarestan_area = {}
+		azerbaijan_area = {}
+		isfahan_area = {}
+		kerman_area = {}
+		persian_gulf_coast = {}
+		tabriz_area = {}
+		khuzestan_area = {}
+		shahrizor_area = {}
+		mogostan_area = {}
+		merv_area = {}
+		balkh_area = {}
+		kabulistan_area = {}
+		ghor_area = {}
+		sistan_area = {}
+		makran_area = {}
+		kalat_area = {}
+		birjand_area = {}
+		herat_area = {}
+		mashhad_area = {}
+		circassia_area = {}
+		shirvan_area = {}
+		armenia_area = {}
+		dagestan_area = {}
+		imereti_area = {}
+		samtskhe_area = {}
+		kartli_kakheti_area = {}
+		tabuk_area = {}
+		medina_area = {}
+		mecca_area = {}
+		asir_area = {}
+		tihama_al_yemen_area = {}
+		upper_yemen_area = {}
+		yemen_area = {}
+		mahra_area = {}
+		hadramut_area = {}
+		bahrain_area = {}
+		oman_area = {}
+		pirate_coast_area = {}
+		dhofar_area = {}
+		mascat_area = {}
+		qasim_area = {}
+		yamamah_area = {}
+		nafud_area = {}
+		adamawa_plateau_area = {}
+		lower_niger_area = {}
+		hausa_area = {}
+		katsina_area = {}
+		zazzau_area = {}
+		upper_volta_area = {}
+		atacora_oueme_area = {}
+		lower_volta_area = {}
+		kong_area = {}
+		massina_area = {}
+		manding_area = {}
+		tekrur_area = {}
+		jenne_area = {}
+		benin_area = {}
+		cap_verde_area = {}
+		guinea_coast_area = {}
+		gulf_of_guinea_area = {}
+		futa_jallon_area = {}
+		west_africa_coast_area = {}
+		jolof_area = {}
+		sao_tome_area = {}
+		darfur_central_sahara_area = {}
+		kanem_area = {}
+		bornu_area = {}
+		azbin_area = {}
+		kurdufan_area = {}
+		western_sahara_area = {}
+		dendi_area = {}
+		baghena_area = {}
+		niger_bend_area = {}
+		east_azbin_area = {}
+		ajuuran_area = {}
+		southern_ethiopia_area = {}
+		central_ethiopia_area = {}
+		ifat_area = {}
+		tigray_area = {}
+		somaliland_area = {}
+		ogaden_area = {}
+		majarteen_area = {}
+		mogadishu_area = {}
+		red_sea_coast_area = {}
+		upper_nubia_area = {}
+		sennar_area = {}
+		dongola_area = {}
+		hadiya_area = {}
+		damot_area = {}
+		aussa_area = {}
+		shewa_area = {}
+		northern_swahili_coast_area = {}
+		central_swahili_coast_area = {}
+		mozambique_area = {}
+		lower_zambezi_area = {}
+		upper_zambezi_area = {}
+		ruvuma_area = {}
+		ngonde_area = {}
+		mascarenes_area = {}
+		madagascar_highlands_area = {}
+		betsimasaraka_area = {}
+		sakalava_area = {}
+		southern_madagascar = {}
+		uticulo_makuana_area = {}
+		jubba_area = {}
+		shire_area = {}
+		mombasa_area = {}
+		buha_area = {}
+		katanga_area = {}
+		zambia_area = {}
+		luba_area = {}
+		sankuru_area = {}
+		tanzania_area = {}
+		kenya_area = {}
+		buzinza_area = {}
+		uganda_area = {}
+		rwanda_area = {}
+		chokwe_area = {}
+		bunyoro_area = {}
+		coastal_kongo = {}
+		kongo_area = {}
+		angola_namibia_area = {}
+		matamba_area = {}
+		lower_kasai = {}
+		kasai_area = {}
+		nogai_area = {}
+		transcaspia_area = {}
+		transoxiana_area = {}
+		kazakhstan_area = {}
+		balchasj_area = {}
+		khiva_area = {}
+		ferghana_area = {}
+		jetysuu_area = {}
+		arys_area = {}
+		lower_yik_area = {}
+		syr_darya_area = {}
+		kashgaria_area = {}
+		tarim_basin_area = {}
+		shanshan_area = {}
+		kyzylkum_area = {}
+		termez_area = {}
+		south_african_plateau_area = {}
+		cape_of_good_hope_area = {}
+		zimbabwe_area = {}
+		quelimane_area = {}
+		butua_area = {}
+		limpopo_area = {}
+		transvaal_area = {}
+
+
+		yrtesh_area = {}
+		ob_area = {}
+		central_siberia_area = {}
+		tunguska_area = {}
+		irkutsk_area = {}
+		ishim_area = {}
+		kara_area = {}
+		aqmola_area = {}
+
+		yakutia_area = {}
+		sakha_area = {}
+		okhotsk_area = {}
+		kamchatka_area = {}
+		buryatia_area = {}
+		kolyma_area = {}
+
+
+		outer_mongolia_area = {}
+		inner_mongolia_area = {}
+		ordos_area = {}
+		zungaria_area = {}
+		north_zungaria = {}
+		altai_sayan_area = {}
+		eastern_mongolia = {}
+		central_mongolia_area = {}
+		uliastai_area = {}
+		turpan_kumul_area = {}
+		tannu_uriankhai_area = {}
+		xilin_gol_area = {}
+		chahar_area = {}
+		cicigar_area = {}
+
+
+		heilongjiang_area = {}
+		east_heilongjiang_area = {}
+		jilin_area = {}
+		central_jilin_area = {}
+		ilan_hala_area = {}
+		liaoning_area = {}
+		ningguta_area = {}
+		central_heilongjiang_area = {}
+		sakhalin_area = {}
+		furdan_area = {}
+
+
+		pyongan_area = {}
+		hamgyeong_area = {}
+		western_korea_area = {}
+		eastern_korea_area = {}
+		south_korea_area = {}
+
+
+		utsang_area = {}
+		tsang_area = {}
+		amdo_area = {}
+		kham_area = {}
+		bhutan_area = {}
+		ngari_area = {}
+
+
+		bihar_area = {}
+		oudh_area = {}
+		purvanchal_area = {}
+		nepal_area = {}
+		himalayan_hills_area = {}
+		lower_doab_area = {}
+		upper_doab_area = {}
+		sirhind_area = {}
+		lahore_area = {}
+		multan_area = {}
+		kashmir_area = {}
+		mithila_area = {}
+		baghelkhand_area = {}
+		gird_area = {}
+		katehar_area = {}
+		baisi_rajya_area = {}
+		bundelkhand_area = {}
+		sind_sagar_area = {}
+
+
+		gaur_area = {}
+		west_bengal_area = {}
+		north_bengal_area = {}
+		east_bengal_area = {}
+		naga_hills_area = {}
+		jharkhand_area = {}
+		orissa_area = {}
+		garjat_area = {}
+		assam_area = {}
+		upper_mahanadi_area = {}
+		tripura_area = {}
+
+		marwar_area = {}
+		mewar_area = {}
+		jaipur_area = {}
+		malwa_area = {}
+		saurashtra_area = {}
+		tapti_area = {}
+		sindh_area = {}
+		northern_sindh_area = {}
+		khandesh_area = {}
+		ahmedabad_area = {}
+		patan_area = {}
+		jangladesh_area = {}
+
+		gondwana_area = {}
+		telingana_area = {}
+		maidan_area = {}
+		desh_area = {}
+		rayalaseema_area = {}
+		mysore_area = {}
+		kanara_area = {}
+		konkan_area = {}
+		malabar_area = {}
+		raichur_doab_area = {}
+		golconda_area = {}
+		berar_area = {}
+		ahmednagar_area = {}
+
+
+
+		andhra_area = {}
+		madura_area = {}
+		lanka_area = {}
+		south_lanka_area = {}
+		tanjore_area = {}
+		kongu_area = {}
+		south_carnatic_area = {}
+		north_carnatic_area = {}
+
+
+
+
+		kachin_area = {}
+		upper_burma_area = {}
+		lower_burma_area = {}
+		shan_hill_area = {}
+		karenni_area = {}
+		arakan_area = {}
+		central_burma_area = {}
+		chindwin_area = {}
+
+
+		hokkaido_area = {}
+		hokuriku_area = {}
+		kanto_area = {}
+		eastern_kanto_area = {}
+		kyushu_area = {}
+		chubu_area = {}
+		eastern_chubu_area = {}
+		kinai_area = {}
+		thohoku_area = {}
+		saigoku_area = {}
+		sanindo_area = {}
+		shikoku_area = {}
+		northern_kyushu = {}
+
+
+
+
+		western_australia_area = {}
+		northern_australia_area = {}
+		eastern_australia_area = {}
+		southern_australia_area = {}
+		top_end_area = {}
+		murray_river_area = {}
+		illawara_area = {}
+		north_queensland_area = {}
+		south_queensland_area = {}
+		pilbara_area = {}
+		tasmania_area = {}
+
+
+
+
+		guangdong_area = {}
+		west_guangdong_area = {}
+		fujian_area = {}
+		jiangxi_area = {}
+		huguang_area = {}
+		zhejiang_area = {}
+		south_anhui_area = {}
+		taiwan_area = {}
+		south_jiangsu_area = {}
+		hunan_area = {}
+		guangxi_area = {}
+
+
+		sichuan_area = {}
+		yun_gui_area = {}
+		chuannan_area = {}
+		yun_gui_borderland_area = {}
+		chuanbei_area = {}
+
+		hebei_area = {}
+		south_hebei_area = {}
+		shandong_area = {}
+		henan_area = {}
+		shanxi_area = {}
+		gansu_area = {}
+		shaanxi_area = {}
+		north_henan_area = {}
+		west_gansu_area = {}
+		jiangsu_area = {}
+		anhui_area = {}
+
+
+		rio_grande_do_sol_area = {}
+		minas_gerais_area = {}
+		goias_area = {}
+		mato_grosso_area = {}
+		sao_paolo_area = {}
+		rio_de_janeiro_area = {}
+		bahia_area = {}
+		pernambuco_area = {}
+		sao_francisco_area = {}
+		maranhao_area = {}
+		grao_para_area = {}
+		amazon_area = {}
+		diamantina_area = {}
+		pontal_area = {}
+		ofaie_area = {}
+		piaui_area = {}
+		amapa_area = {}
+		guapore_area = {}
+		ceara_area = {}
+		west_sao_paolo_area = {}
+
+
+		nehuenken_area = {}
+		patagonia_area = {}
+		cuyo_area = {}
+		southern_pampas_area = {}
+		buenos_aires_area = {}
+		banda_oriental_area = {}
+		south_atlantic_islands_area = {}
+		southern_chile_area = {}
+		central_chile_area = {}
+		misiones_area = {}
+		patagonian_andes = {}
+		bahia_blanca_area = {}
+
+
+
+		upper_guyana_area = {}
+		guyana_area = {}
+		suriname_area = {}
+		venezuela_area = {}
+		eastern_llanos = {}
+		western_llanos = {}
+		coquivacoa_area = {}
+		bogota_area = {}
+		popayan_area = {}
+		panama_area = {}
+		maracaibo_area = {}
+		central_llanos_area = {}
+		cordillera_occidental_area = {}
+		colombian_amazonas_area = {}
+
+
+		kuntisuyu_area = {}
+		chimor_area = {}
+		ucayali_area = {}
+		cajamarca_area = {}
+		huanuco_area = {}
+		antisuyu_area = {}
+		quito_area = {}
+		iquitos_area = {}
+		peruan_coast = {}
+
+
+		beni_area = {}
+		upper_peru = {}
+		tucuman_area = {}
+		chaco_area = {}
+		paraguay_area = {}
+		northern_chile_area = {}
+		potosi_area = {}
+		jujuy_area = {}
+		moxos_area = {}
+
+
+		north_sumatra_area = {}
+		central_sumatra_area = {}
+		south_sumatra_area = {}
+		jambi_area = {}
+		tenasserim_area = {}
+		malaya_area = {}
+		johor_area = {}
+		north_malaya_area = {}
+		north_tenasserim_area = {}
+		malacca_area = {}
+		batak_area = {}
+		minangkabau_area = {}
+		indian_ocean_islands_area = {}
+
+
+
+		molluca_area = {}
+		sulawesi_area = {}
+		luzon_area = {}
+		southern_luzon_area = {}
+		mindanao_area = {}
+		west_mindanao_area = {}
+		visayas_area = {}
+		palawan_area = {}
+		papua_area = {}
+		vogelkop_area = {}
+		timor_area = {}
+		south_sulawesi_area = {}
+		makassar_area = {}
+		spice_islands_area = {}
+
+
+
+
+		kutai_area = {}
+		brunei_area = {}
+		kalimantan_area = {}
+		banjar_area = {}
+		sabah_area = {}
+		east_java_area = {}
+		central_java_area = {}
+		west_java_area = {}
+		lesser_sunda_islands_area = {}
+		indonesian_islands_area = {}
+		surabaya_area = {}
+		banten_area = {}
+
+
+
+		polynesia_area = {}
+		micronesia_area = {}
+		west_micronesia_area = {}
+		melanesia_area = {}
+		fiji_area = {}
+		te_ika_a_maui_hauauru_area = {}
+		te_ika_a_maui_waho_area = {}
+		te_waipounamu_area = {}
+		northern_polynesia_area = {}
+		eastern_polynesia_area = {}
+
+		vietnam_area = {}
+		north_laos_area = {}
+		central_thai_area = {}
+		northern_thai_area = {}
+		cambodia_area = {}
+		mekong_area = {}
+		angkor_area = {}
+		champa_area = {}
+		khorat_area = {}
+		tay_nguyen_area = {}
+		red_river_delta_area = {}
+		sukhothai_area = {}
+		champasak_area = {}
+		vientiane_area = {}
+
+
+		upper_acadia_area = {}
+		lower_acadia_area = {}
+		newfoundland_area = {}
+		labrador_area = {}
+		cote_nord_area = {}
+		notre_dame_mountains_area = {}
+		lower_canada_area = {}
+		upper_canada_area = {}
+		laurentian_area = {}
+		huronia_area = {}
+		upper_ontario_area = {}
+		greenland_area = {}
+		st_john_valley_area = {}
+		trois_rivieres_area = {}
+		ottawa_valley_area = {}
+
+
+		ohio_country_area = {}
+		illinois_country_area = {}
+		michigan_area = {}
+		miami_river_area = {}
+		lake_superior_area = {} 
+		wisconsin_area = {}
+		southern_illinois_area = {}
+
+
+		great_woods_area = {}
+		massachusetts_bay_area = {}
+		connecticut_valley_area = {}
+		hudson_valley_area = {}
+		delaware_valley_area = {}
+		iroquoisia_area = {}
+		south_iroquoisia_area = {}
+		susquehanna_area = {}
+		maine_area = {}
+		maryland_area = {}
+		eastern_maine_area = {}
+		new_york_area = {}
+		westsylvania_area = {}
+
+
+
+		chesapeake_area = {}
+		great_valley_area = {}
+		piedmont_north_america_area = {}
+		american_georgia_area = {} 
+		florida_area = {}
+		carolinas_area = {}
+		south_appalachia_area = {}
+		south_carolina_area = {}
+		upper_american_georgia_area = {}
+		north_florida_area = {}
+		south_carolina_piedmont_area = {}
+
+
+		lower_louisiana_area = {}
+		west_florida_area = {}
+		upper_louisiana_area = {}
+		alabama_area = {}
+		kentucky_area = {}
+		mississippi_area = {}
+		appalachia_area = {}
+		choctaw_area = {}
+		mississippi_plain_area = {}
+		western_kentucky_area = {}
+		ozarks_area = {}
+
+		central_plains_area = {}
+		lower_plains_area = {}
+		high_plains_area = {}
+		dakota_area = {}
+		south_dakota_area = {}
+		upper_missouri_area = {}
+		badlands_area = {}
+		iowa_area = {}
+		minnessota_area = {}
+		kansas_area = {}
+
+		california_area = {}
+		baja_california_area = {}
+		arizona_area = {}
+		colorado_plateau_area = {}
+		new_mexico_area = {}
+		central_valley_area = {}
+		apacheria_area = {}
+		northern_california_area = {}
+		sonora_area = {}
+
+
+		oregon_area = {}
+		columbia_river_area = {}
+		snake_river_area = {}
+		salish_sea_area = {}
+		interior_plateau_area = {}
+		hecate_strait_area = {}
+		alaska_area = {}
+		straits_of_georgia_area = {}
+		east_alaska_area = {}
+
+
+		james_bay_area = {}
+		hudson_bay_area = {}
+		red_river_area = {}
+		saskatchewan_area = {}
+		prairies_area = {}
+		athabasca_area = {}
+		inner_ontario_area = {}
+		assiniboia_area = {}
+		manitoba_area = {}
+
+
+		eastern_mexico_area = {}
+		mexico_area = {}
+		michoacan_area = {}
+		guerrero_area = {}
+		oaxaca_area = {}
+		durango_area = {}
+		jalisco_area = {}
+		gran_chichimeca_area = {}
+		nayarit_area = {}
+		zacatecas_area = {}
+		tierra_caliente_area = {}
+		puebla_area = {}
+		huasteca_area = {}
+		mixteca_area = {}
+		guanajuato_area = {}
+
+
+		rio_grande_area = {}
+		northeast_mexico_area = {}
+		texas_area = {}
+		coastal_prarie_area = {}
+		pecos_area = {}
+		llano_estacado_area = {}
+		chihuahua_area = {}
+		texas_plains_area = {}
+
+
+		guatemala_area = {}
+		honduras_area = {}
+		nicaragua_area = {}
+		yucatan_area = {}
+		east_yucatan_area = {}
+		chiapas_area = {}
+		guatemala_lowlands_area = {}
+		costa_rica_area = {}
+		campeche_area = {}
+
+
+		cuba_area = {}
+		east_cuba_area = {}
+		hispaniola_area = {}
+		dominica_area = {}
+		greater_antilles_area = {}
+		leeward_islands_area = {
+			
+		}
+		windward_islands_area = {
+			
+		}
+		lucayan_area = {
+			
+		}
+
+
+
+		baltic_area = {
+			
+		}
+		kattegat_area = {
+			
+		}
+
+
+
+		north_sea_area = {
+			
+		}
+		norwegian_sea_area = {
+			
+		}
+		white_sea_area = {
+			
+		}
+		celtic_sea_area = {
+			
+		}
+		english_channel_area = {
+			
+		}
+		bay_of_biscay_area = {
+			
+		}
+		north_atlantic_area = {
+			
+		}
+		denmark_strait_area = {
+			
+		}
+
+
+
+		sea_of_labrador_area = {
+			
+		}
+		hudson_bay_sea_area = {
+			
+		}
+		gulf_of_st_lawrence_area = {
+			
+		}
+		gulf_stream_area = {
+			
+		}
+
+
+
+		eastern_mediterrenean_area = {
+			
+		}
+		western_mediterrenean_area = {
+			
+		}
+		black_sea_area = {
+			
+		}
+
+
+
+
+		bahama_channel_area = {
+			
+		}
+		coast_of_guyana_area = {
+			
+		}
+		caribbean_sea_area = {
+			
+		}
+		gulf_of_mexico_area = {
+			
+		}
+		sargasso_sea_area = {
+			
+		}
+
+
+
+
+
+		west_african_coast_sea_area = {
+			
+		}
+		gulf_of_guinea_sea_area = {
+			
+		}
+
+
+
+		western_indian_ocean_area = {
+			
+		}
+		swahili_coast_sea_area = {
+			
+		}
+
+
+		arabian_sea_area = {
+			
+		}
+		persian_gulf_area = {
+			
+		}
+		red_sea_area = {
+			
+		}
+
+
+
+		eastern_indian_ocean_area = {
+			
+		}
+		bay_of_bengal_area = {
+			
+		}
+		andaman_sea_area = {
+			
+		}
+
+
+		south_indian_ocean_area = {
+			
+		}
+
+
+
+		java_sea_area = {
+			
+		}
+		south_china_sea_area = {
+			
+		}
+		celebes_sea_area = {
+			
+		}
+		banda_arafura_seas_area = {
+			
+		}
+
+
+
+		east_china_sea_area = {
+			
+		}
+		philipine_sea_area = {
+			
+		}
+		sea_of_japan_area = {
+			
+		}
+		sea_of_okhotsk_area = {
+			
+		}
+
+
+		east_pacific_ocean_area = {
+			
+		}
+
+
+
+		coral_sea_area = {
+			
+		}
+		tasman_sea_area = {
+			
+		}
+		great_australian_bight_area = {
+			
+		}
+
+
+
+
+		south_pacific_area = {
+			
+		}
+		polynesian_triangle_area = {
+			
+		}
+
+
+
+		north_pacific_area = {
+			
+		}
+		north_pacific_coast_area = {
+			
+		}
+		berring_sea_area = {
+			
+		}
+		gulf_of_alaska_area = {
+			
+		}
+
+
+		chilean_sea_area = {
+			
+		}
+		sea_of_grau_area = {
+			
+		}
+		gulf_of_panama_area = {
+			
+		}
+
+
+		coast_of_brazil_sea_area = {
+			
+		}
+		argentine_sea_area = {
+			
+		}
+
+		south_atlantic_area = {
+			
+		}
+		skeleton_coast_area = {
+			
+		}
+		cape_of_storms_area = {
+			
+		}

@@ -1,0 +1,289 @@
+
+rst_1 = {
+    slot = 1
+    generic = no
+    ai = yes
+    potential = {
+        NOT = { map_setup = map_setup_random }
+		tag = RST
+    }
+    has_country_shield = yes
+
+    rst_gold_in_rosta = {
+        icon = mission_zambezi_gold
+        required_missions = { }
+        trigger = {
+            6597 = {
+                development = 24
+            }
+            advisor = master_of_mint
+            advisor = trader
+        }
+        effect = {
+            add_country_modifier = {
+                name = rst_gold_source
+                duration = -1
+            }
+            6597 = {
+                add_province_modifier = {
+                    name = rst_more_gold
+                    duration = 14600
+                }
+            }
+            set_country_flag = rostaCanGetEvent
+        }
+        provinces_to_highlight = {
+            province_id = 6597
+        }
+    }
+
+    rst_reach_gotzlica = {
+        icon = mission_advance_to_the_dnieper
+        required_missions = { rst_gold_in_rosta }
+        trigger = {
+            OR = {
+                6587 = {
+                    owner = {
+                        has_spy_network_from = {
+                            who = ROOT
+                            value = 80
+                        }
+                    }
+                }
+                6587 = {
+                    country_or_non_sovereign_subject_holds = ROOT
+                }
+            }
+        }
+        effect = {
+            add_country_modifier = {
+                name = rst_rostan_invasion
+                duration = 3650
+            }
+            if = {
+                limit = {
+                    NOT = {
+                        6587 = {
+                            country_or_non_sovereign_subject_holds = ROOT
+                        }
+                    }
+                    NOT = {
+                        has_country_flag = rostaGotEvent
+                    }
+                }
+                country_event = {
+                    id = gotzlica.10
+                }
+            }
+            rosta_area = {
+                add_permanent_claim = ROOT
+            }
+            area_159 = {
+                add_permanent_claim = ROOT
+            }
+            nizoora_area = {
+                add_permanent_claim = ROOT
+            }
+            dethoni_area = {
+                add_permanent_claim = ROOT
+            }
+        }
+        provinces_to_highlight = {
+            NOT = {
+                country_or_non_sovereign_subject_holds = ROOT
+            }
+            province_id = 6587
+        }
+    }
+
+    rst_conquer_leronya = {
+        icon = mission_extent_yasak_to_the_east
+        required_missions = { rst_reach_gotzlica }
+        trigger = {
+            rosta_area = {
+                type = all
+                OR = {
+                    country_or_non_sovereign_subject_holds = ROOT
+                    is_empty = yes
+                }
+            }
+            area_159 = {
+                type = all
+                OR = {
+                    country_or_non_sovereign_subject_holds = ROOT
+                    is_empty = yes
+                }
+            }
+            nizoora_area = {
+                type = all
+                OR = {
+                    country_or_non_sovereign_subject_holds = ROOT
+                    is_empty = yes
+                }
+            }
+            dethoni_area = {
+                type = all
+                OR = {
+                    country_or_non_sovereign_subject_holds = ROOT
+                    is_empty = yes
+                }
+            }
+        }
+        effect = {
+            add_prestige_or_monarch_power = {
+				amount = 20
+			}
+            set_capital = 6587
+            6587 = {
+                add_core = ROOT
+                add_province_modifier = {
+                    name = rst_new_capital
+                    duration = 9125
+                }
+            }
+            area_158 = {
+                add_permanent_claim = ROOT
+            }
+            hozy_area = {
+                add_permanent_claim = ROOT
+            }
+            sovi_area = {
+                add_permanent_claim = ROOT
+            }
+            area_187 = {
+                add_permanent_claim = ROOT
+            }
+        }
+        provinces_to_highlight = {
+            NOT = {
+                country_or_non_sovereign_subject_holds = ROOT
+            }
+            NOT = {
+                is_empty = yes
+            }
+            OR = {
+                area = rosta_area
+                area = area_159
+                area = nizoora_area
+                area = dethoni_area
+            }
+        }
+    }
+
+    rst_unite_the_gotzlics = {
+        icon = mission_novgorod_the_great
+        required_missions = { rst_conquer_leronya }
+        trigger = {
+            area_158 = {
+                type = all
+                OR = {
+                    country_or_non_sovereign_subject_holds = ROOT
+                    is_empty = yes
+                }
+            }
+            hozy_area = {
+                type = all
+                OR = {
+                    country_or_non_sovereign_subject_holds = ROOT
+                    is_empty = yes
+                }
+            }
+            sovi_area = {
+                type = all
+                OR = {
+                    country_or_non_sovereign_subject_holds = ROOT
+                    is_empty = yes
+                }
+            }
+            area_187 = {
+                type = all
+                OR = {
+                    country_or_non_sovereign_subject_holds = ROOT
+                    is_empty = yes
+                }
+            }
+        }
+        effect = {
+            add_stability_or_adm_power = yes
+            add_ruler_modifier = {
+                name = rst_great_king_of_gotzlica
+                duration = -1
+            }
+            change_mil = 1
+            if = {
+                limit = {
+                    NOT = {
+                        government_rank = 2
+                    }
+                }
+                set_government_rank = 2
+            }
+        }
+        provinces_to_highlight = {
+            NOT = {
+                country_or_non_sovereign_subject_holds = ROOT
+            }
+            NOT = {
+                is_empty = yes
+            }
+            OR = {
+                area = area_158
+                area = hozy_area
+                area = sovi_area
+                area = area_187
+            }
+        }
+    }
+
+    rst_prospect_for_gold = {
+        icon = mission_entrepot_of_india
+        required_missions = { rst_unite_the_gotzlics }
+        trigger = {
+            natural_scientist = 3
+            num_of_owned_provinces_with = {
+                value = 5
+                OR = {
+                    region = gotzlic_region
+                    region = east_gotzlic_region
+                }
+                NOT = {
+                    trade_goods = gold
+                }
+                base_production = 8
+            }
+        }
+        effect = {
+            custom_tooltip = rstGetMoreGold
+            hidden_effect = {
+                random_owned_province = {
+                    limit = {
+                        OR = {
+                            region = gotzlic_region
+                            region = east_gotzlic_region
+                        }
+                        base_production = 8
+                        NOT = { trade_goods = gold }
+                    }
+                    change_trade_goods = gold
+                    add_province_modifier = {
+                        name = rst_new_gold_mines
+                        duration = 7300
+                    }
+                }
+            }
+        }
+        provinces_to_highlight = {
+            owned_by = ROOT
+            OR = {
+                region = gotzlic_region
+                region = east_gotzlic_region
+            }
+            NOT = {
+                OR = {
+                    base_production = 8
+                    trade_goods = gold
+                }
+            }
+        }
+    }
+}

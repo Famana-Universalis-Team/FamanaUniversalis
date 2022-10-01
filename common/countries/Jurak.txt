@@ -1,0 +1,80 @@
+#Country Name: Please see filename.
+
+graphical_culture = easterngfx
+
+color = { 84 125 196 }
+
+historical_idea_groups = {
+	economic_ideas
+	defensive_ideas
+	diplomatic_ideas
+	offensive_ideas
+	innovativeness_ideas
+	quantity_ideas
+	administrative_ideas
+	religious_ideas
+}
+
+historical_units = {
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+	swiss_landsknechten
+	dutch_maurician
+	austrian_tercio
+	austrian_grenzer
+	austrian_hussar
+	austrian_white_coat
+	austrian_jaeger
+	mixed_order_infantry
+	open_order_cavalry
+	napoleonic_square
+	napoleonic_lancers
+}
+
+monarch_names = {
+	"Cerkieni #0" = 1
+	"Thouus #0" = 1
+	"Gasroon #0" = 1
+	"Ursoo #0" = 1
+	"Foranrt #0" = 1
+	"Irusuas #0" = 1
+	"Hozendwhi #0" = 1
+	"Palelpanetl #0" = 1
+	"Chyshyus #0" = 1
+	"Rusraimel #0" = 1
+	"Umalminothus #0" = 1
+	"Arseyagien #0" = 1
+	"Ovvrona #0" = 1
+	"Agmita #0" = -1
+	"Joo #0" = -1
+	"Maul #0" = -1
+	"Ghenepes #0" = -1
+	"Anma #0" = -1
+}
+
+leader_names = {
+	Lukul
+	"Ve Oiko"
+	"Ve Thaon"
+	Byuv
+	Anekssys
+	Eyhra 
+}
+
+ship_names = {
+	Kurut
+	Bevvodna
+	Uirusvud
+	Kerpin
+	Tukralin
+	Porat
+}
+
+army_names = {
+	"Detom bi $PROVINCE$" 
+}
+
+fleet_names = {
+	"Grand Navy"
+}

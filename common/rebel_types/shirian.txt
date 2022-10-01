@@ -196,7 +196,7 @@ shirian_rebels = {
 		}
 		if = {
 			limit = {
-				NOT = { religion_group = shirian }
+				NOT = { religion_group = xalian_group }
 			}
 			add_prestige = -50
 			every_owned_province = {

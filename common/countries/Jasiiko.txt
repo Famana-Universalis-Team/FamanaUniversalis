@@ -2,7 +2,7 @@
 
 graphical_culture = muslimgfx
 
-color = { 210  172  79 }
+color = { 255  190  110 }
 
 historical_idea_groups = {
 	economic_ideas
@@ -36,40 +36,68 @@ historical_units = {
 }
 
 monarch_names = {
-	"Orro #0" = 1
-	"Heum #0" = 1
-	"Fellares #0" = 1
-	"Kanunin #0" = 1
-	"Yamoszy #0" = 1
-	"Unahtare #0" = 1
-	"Eyath #0" = 1
-	"Ayorn #0" = 1
-	"Beroge #0" = 1
-	"Anel #0" = 1
-	"Horfi #0" = 1
-	"Paro #0" = 1
-	"Jekelekim #0" = 1
-	"Fovers #0" = 1
-	"Maro #0" = -1
-	"Yuni #0" = -1
-	"Delan #0" = -1
+	"Galag #0" = 1
+	"Anaslo #0" = 1
+	"Olba #0" = 1
+	"Dagól #0" = 1
+	"Yalu #0" = 1
+	"Laugye #0" = 1
+	"Bade #0" = 1
+	"Abedónbo #0" = 1
+	"Bade #0" = 1
+	"Dobe #0" = 1
+	"Flyane #0" = 1
+	"Asgyiado #0" = 1
+	"Niado #0" = 1
+	"Ódo #0" = 1
+	"Ndalla #0" = 1
+	"Esju #0" = 1
+	"Folbol #0" = 1
+	"Bovu #0" = 1
+	"Yoleb #0" = 1
+	"Ódyu #0" = 1
+	"Laugja #0" = 1
+	"Fiaved #0" = 1
+	"Dolsed #0" = 1
+	"Ogud #0" = 1
+	"Gobnu #0" = 1
+	"Lado #0" = 1
+	"Fóled #0" = 1
+	"Songo #0" = 1
+	"Lolebu #0" = 1
+	"Luyboda #0" = 1
+	"Olebe #0" = 1
+	"Elablo #0" = 1
+	"Agal #0" = 1
+	"Ódsube #0" = 1
+	"Dsólu #0" = 1
+	"Lliavo #0" = 1
+
+	"Byauthob #0" = -1
+	"Vdosa #0" = -1
+	"Belu #0" = -1
+	"Althedialo #0" = -1
+	"Dothe #0" = -1
+	"Geja #0" = -1
+	"Vefa #0" = -1
+	"Sofi #0" = -1
 }
 
 leader_names = {
-	Orro
-	Heum
-	Fellares
-	Kanunin
-	Yamoszy
-	Unahtare
-	Eyath
-	Ayorn
-	Beroge
-	Anel
-	Horfi
-	Paro
-	Jekelekim
-	Fovers
+	Sethovbal
+	Loluthnóf
+	Yandó
+	Accaci
+	Sal
+	Lasbob
+	Eba
+	Dyaul
+	Labe
+	Gojodolo
+	Neyólbo
+	Ódlud
+	Lunovda
+	Faudud
 }
 
 ship_names = {

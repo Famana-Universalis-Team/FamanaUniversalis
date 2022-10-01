@@ -1,15 +1,16 @@
 # No previous file for PROV5904
 religion = washoom
 culture = Ayyuntud
-discovered_by = geopyopian_tech_gr
+discovered_by = washoom_tech_gr
 discovered_by = north_antebari_tech_gr
 
 hre = no
 base_tax = 1
 base_production = 1
 base_manpower = 1
-native_size = 2
-native_ferocity = 1
-native_hostileness = 1
-capital = "UNNAMED"
 is_city = no
+native_size = 25
+native_ferocity = 6
+native_hostileness = 5
+capital = "UNNAMED"
+ 

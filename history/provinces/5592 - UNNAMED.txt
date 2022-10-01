@@ -1,9 +1,10 @@
 discovered_by = east_gomic_tech_gr
-discovered_by = north_gomic_tech_gr
+discovered_by = lathvy_tech_gr
 discovered_by = west_gomic_tech_gr
 culture = Oppio_Jasuan
 religion = eastern_oppian
 owner = YAB
+is_city = yes
 controller = YAB
 add_core = YAB
 add_core = JII
@@ -17,5 +18,16 @@ base_production = 3
 trade_goods = grain
 base_manpower = 2
 capital = "Karob"
-is_city = no
-extra_cost = 1
+ 
+
+
+212.6.7 = {
+owner = JII
+is_city = yes
+controller = JII
+add_core = JII
+remove_core = YAB
+#culture = 
+#religion = 
+#trade_goods = 
+}

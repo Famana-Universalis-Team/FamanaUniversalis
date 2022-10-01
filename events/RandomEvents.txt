@@ -1611,6 +1611,12 @@ country_event = {
 		trigger = { ruler_has_personality = naive_personality }
 		add_prestige = -10
 	}
+	option = {
+		name = "personality_options.5045.b"		# Overhaul the governmental policies.
+		highlight = yes
+		trigger = { ruler_has_personality = reformist_personality }
+		add_adm_power = -15
+	}
 }
 
 #########################################################
@@ -2007,6 +2013,12 @@ country_event = {
 				no_defined_leader = yes
 			}
 		}
+	}
+	option = {
+		name = "personality_options.5051.d"		# Establish new reforms for the peasants
+		highlight = yes
+		trigger = { ruler_has_personality = reformist_personality }
+		add_adm_power = -25
 	}
 }
 
@@ -2619,12 +2631,30 @@ country_event = {
 		}
 		highlight = yes
 		trigger = {
-			ruler_has_personality_ancestor = { key = scholar }
+			AND = {
+				ruler_has_personality_ancestor = { key = scholar }
+				NOT = {
+					OR = {
+						religion = vaximorian
+						religion = pawani
+						religion = mak
+					}
+				}
+			}
 		}
 		add_adm_power = 20
 	}
 	
 	option = {
+		trigger = {
+			NOT = {
+				OR = {
+					religion = vaximorian
+					religion = pawani
+					religion = mak
+				}
+			}
+		}
 		name = "EVTOPTA5060"		# It's an omen
 		if = {
 			limit = { NOT = { stability = -2 } }
@@ -2636,6 +2666,15 @@ country_event = {
 		}
 	}
 	option = {
+		trigger = {
+			NOT = {
+				OR = {
+					religion = vaximorian
+					religion = pawani
+					religion = mak
+				}
+			}
+		}
 		name = "EVTOPTB5060"		# The end is nigh!
 		if = {
 			limit = { NOT = { stability = -2 } }
@@ -2647,6 +2686,15 @@ country_event = {
 		}
 	}
 	option = {
+		trigger = {
+			NOT = {
+				OR = {
+					religion = vaximorian
+					religion = pawani
+					religion = mak
+				}
+			}
+		}
 		name = "EVTOPTC5060"		# The economy, fools!
 		if = {
 			limit = { NOT = { stability = -2 } }
@@ -2658,6 +2706,15 @@ country_event = {
 		}
 	}
 	option = {
+		trigger = {
+			NOT = {
+				OR = {
+					religion = vaximorian
+					religion = pawani
+					religion = mak
+				}
+			}
+		}
 		name = "EVTOPTE5060"		# I wish I lived in more enlightened times.
 		if = {
 			limit = { NOT = { stability = -2 } }
@@ -2671,7 +2728,16 @@ country_event = {
 	option = {
 		name = "EVTOPTF5060"		# Sacrifice a human heart to appease the comet!
 		trigger = {
-			religion_group = pagan
+			AND = {
+				religion_group = pagan
+				NOT = {
+					OR = {
+						religion = vaximorian
+						religion = pawani
+						religion = mak
+					}
+				}
+			}
 		}
 		if = {
 			limit = { NOT = { stability = -2 } }
@@ -2683,6 +2749,9 @@ country_event = {
 		}
 	}
 	option = {
+		trigger = {
+
+		}
 		name = "EVTOPTG5060"		# If only we had comet sense!
 		if = {
 			limit = { NOT = { stability = -2 } }
@@ -2696,7 +2765,16 @@ country_event = {
 	option = {
 		name = "EVTOPTH5060"		# Oh comet, devil's kith and kin...
 		trigger = {
-			NOT = { religion_group = pagan }
+			AND = {
+				NOT = { religion_group = pagan }
+				NOT = {
+					OR = {
+						religion = vaximorian
+						religion = pawani
+						religion = mak
+					}
+				}
+			}
 		}		
 		if = {
 			limit = { NOT = { stability = -2 } }
@@ -2708,34 +2786,15 @@ country_event = {
 		}
 	}		
 	option = {
-		name = "EVTOPTI5060"		# What a great start into the new year
 		trigger = {
-			NOT = { is_year = 1445 }
+			NOT = {
+				OR = {
+					religion = vaximorian
+					religion = pawani
+					religion = mak
+				}
+			}
 		}
-		if = {
-			limit = { NOT = { stability = -2 } }
-			add_adm_power = -100
-		}		
-		if = {
-			limit = { stability = -2 }
-			add_stability = -1
-		}
-	}	
-	option = {
-		name = "EVTOPTJ5060"		# That's now Victoria's problem, not mine
-		trigger = {
-			is_year = 1810
-		}
-		if = {
-			limit = { NOT = { stability = -2 } }
-			add_adm_power = -100
-		}		
-		if = {
-			limit = { stability = -2 }
-			add_stability = -1
-		}
-	}	
-	option = {
 		name = "EVTOPTK5060"		# That's it. I'm dead
 		if = {
 			limit = { NOT = { stability = -2 } }
@@ -2745,7 +2804,43 @@ country_event = {
 			limit = { stability = -2 }
 			add_stability = -1
 		}
-	}		
+	}
+	option = {						# Um has a new servant 
+		trigger = {
+			religion = mak
+		}
+		name = "CometMakResponse"
+		add_fervor = 30
+	}
+	option = {						# Reminder of our science
+		trigger = {
+			religion = pawani
+		}
+		name = "CometPawaniResponse"
+		if = {
+			limit = {
+				has_dlc = "Rule Britannia"
+			}
+			change_innovativeness = 2
+		}
+		else = {
+			add_dip_power = 100
+		}
+	}
+	option = {						# Panic over new celestial body
+		trigger = {
+			religion = vaximorian
+		}
+		name = "CometVaximorianResponse"
+		if = {
+			limit = { NOT = { stability = -2 } }
+			add_adm_power = -100
+		}		
+		if = {
+			limit = { stability = -2 }
+			add_stability = -1
+		}
+	}
 }
 
 #########################################################
@@ -3533,6 +3628,18 @@ country_event = {
 		}
 	}
 
+	immediate = {
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					is_city = yes
+					culture_group = root
+				}
+				save_event_target_as = cantonments_province
+			}
+		}
+	}
+
 	option = {
 		name = "EVTOPTA5074"		# Draft citizens
 		ai_chance = {
@@ -3542,11 +3649,7 @@ country_event = {
 				NOT = { treasury = 200 }
 			}
 		}
-		random_owned_province = {
-			limit = {
-				is_city = yes
-				culture_group = root
-			}
+		event_target:cantonments_province = {
 			add_base_manpower = 1
 		}
 	}
@@ -3560,11 +3663,7 @@ country_event = {
 			}
 		}
 		add_treasury = -60
-		random_owned_province = {
-			limit = {
-				is_city = yes
-				culture_group = root
-			}
+		event_target:cantonments_province = {
 			add_base_manpower = 2
 		}
 	}
@@ -5055,6 +5154,7 @@ country_event = {
 		add_years_of_income = 0.2
 		add_corruption = 0.5
 		random_country = {
+			limit = { is_elector = yes }
 			add_opinion = { who = ROOT modifier = opinion_accepted_bribe }
 		}
 	}
@@ -5063,6 +5163,7 @@ country_event = {
 		ai_chance = { factor = 30 }
 		add_prestige = 10
 		random_country = {
+			limit = { is_elector = yes }
 			add_opinion = { who = ROOT modifier = opinion_declined_bribe }
 		}
 	}
@@ -5497,6 +5598,17 @@ country_event = {
 		add_dip_power = -35
 		add_mil_power = -35
 	}
+	option = {
+		name = "personality_options.6003.a"		# Establish minor represantive institutions.
+		trigger = {
+			ruler_has_personality_ancestor = {
+				key = reformist
+			}
+		}
+		highlight = yes
+		ai_chance = { factor = 100 }
+		change_government_reform_progress = 15
+	}
 }
 
 #########################################################
@@ -5550,112 +5662,6 @@ country_event = {
 	}
 }
 
-
-#########################################################
-#	City-state wants independence back					#
-#########################################################
-
-# Genoa
-country_event = {
-	id = 6005
-	title = "EVTNAME6005"
-	desc = "EVTDESC6005"
-	picture = ANGRY_MOB_eventPicture
-	goto = 101
-
-	is_triggered_only = yes
-
-	trigger = {
-		always = no
-		NOT = { exists = GEN }
-		owns = 101
-		is_year = 1700
-	}
-
-	mean_time_to_happen = {
-		days = 1
-		
-		modifier = {
-			factor = 2.0
-			NOT = { stability = 0 }
-		}
-		modifier = {
-			factor = 0.5
-			luck = yes
-		}
-		modifier = {
-			factor = 0.66
-			stability = 3 
-		}
-	}
-
-	option = {
-		name = "EVTOPTA6005"		# Nah...
-		ai_chance = { factor = 60 }
-		101 = {
-			nationalist_rebels = 1
-		}
-	}
-	option = {
-		name = "EVTOPTB6005"		# We'll consider it
-		ai_chance = { factor = 40 }
-		GEN = {
-			add_core = 101
-		}
-		remove_core = 101
-	}
-}
-
-# Venice
-country_event = {
-	id = 6006
-	title = "EVTNAME6006"
-	desc = "EVTDESC6006"
-	picture = ANGRY_MOB_eventPicture
-	goto = 112
-
-	is_triggered_only = yes
-
-	trigger = {
-		always = no
-		NOT = { exists = VEN }
-		is_year = 1700
-		owns = 112
-	}
-
-	mean_time_to_happen = {
-		days = 1
-		
-		modifier = {
-			factor = 2.0
-			NOT = { stability = 0 }
-		}
-		modifier = {
-			factor = 0.5
-			luck = yes
-		}
-		modifier = {
-			factor = 0.66
-			stability = 3
-		}
-	}
-
-	option = {
-		name = "EVTOPTA6006"		# Nah...
-		ai_chance = { factor = 70 }
-		112 = {
-			nationalist_rebels = 1
-		}
-	}
-	option = {
-		name = "EVTOPTB6006"		# We'll consider it
-		ai_chance = { factor = 30 }
-		VEN = {
-			add_core = 112
-		}
-		remove_core = 112
-	}
-}
 
 
 #########################################################
@@ -6160,6 +6166,20 @@ country_event = {
 			}
 		}
 		add_inflation = 3
+	}
+	option = {
+		name = "personality_options.712.a"
+		trigger = {
+			ruler_has_personality_ancestor = {
+				key = reformist
+			}
+		}
+		highlight = yes
+		ai_chance = {
+			factor = 100
+		}
+		add_inflation = -3
+		adm_power_cost = 50
 	}
 }
 
@@ -9712,73 +9732,6 @@ country_event = {
 	}
 }
 
-# Sweating Sickness
-country_event = {
-	id = 877
-	title = "EVTNAME877"
-	desc = "EVTDESC877"
-	picture = PLAGUE_eventPicture
-
-	is_triggered_only = yes
-
-	goto = capital
-	
-	trigger = {
-		is_year = 1480
-		capital_scope = {
-			continent = europe
-		}
-		NOT = { adm_tech = 20 }
-		NOT = { has_country_flag = has_competent_doctors }
-	}
-	
-	mean_time_to_happen = {
-		days = 1
-	}
-
-	immediate = {
-		hidden_effect = {
-			capital_scope = { save_event_target_as = capital }
-		}
-	}
-	
-	option = {
-		name = "EVTOPTA877"
-		ai_chance = {
-			factor = 33
-			modifier = {
-				factor = 0.5
-				NOT = { stability = 1 }
-			}
-		}
-		if = {
-			limit = { NOT = { stability = -2 } }
-			add_adm_power = -100
-		}		
-		if = {
-			limit = { stability = -2 }
-			add_stability = -1
-		}
-	}
-	option = {
-		name = "EVTOPTB877"
-		ai_chance = {
-			factor = 33
-			modifier = {
-				factor = 0.5
-				NOT = { years_of_income = 0.6 }
-			}
-		}
-		add_years_of_income = -0.50
-	}	
-	option = {
-		name = "EVTOPTC877"
-		ai_chance = {
-			factor = 33
-		}
-		add_dip_power = -100
-	}	
-}
 
 # Disagreeing Advisor
 country_event = {
@@ -10817,6 +10770,69 @@ country_event = {
 		}
 		desc = "random_event.EVTDESC2C"
 	}
+	desc = { # Platinean
+		trigger = {
+			culture_group = iberian
+			NOT = { primary_culture = portugese }
+			NOT = { primary_culture = brazilian }
+			any_owned_province = {
+				continent = south_america
+				OR = {
+					culture = leonese
+					culture = castillian
+					culture = aragonese
+					culture = catalan
+					culture = galician
+					culture = andalucian
+					culture = basque
+				}
+			}
+		}
+		desc = "random_event.EVTDESC2D"
+	}
+	desc = { # Quebecois
+		trigger = {
+			culture_group = french
+			NOT = { primary_culture = quebecois }
+			NOT = { primary_culture = louisianans }
+			any_owned_province = {
+				OR = {
+					colonial_region = colonial_alaska
+					colonial_region = colonial_canada
+					region = northeast_america_region
+				}
+				OR = {
+					culture = cosmopolitan_french
+					culture = occitain
+					culture = normand
+					culture = gascon
+					culture = burgundian
+				}
+			}
+		}
+		desc = "random_event.EVTDESC2E"
+	}
+	desc = { # Louisianans
+		trigger = {
+			culture_group = french
+			NOT = { primary_culture = quebecois }
+			NOT = { primary_culture = louisianans }
+			any_owned_province = {
+				NOT = { colonial_region = colonial_alaska }
+				NOT = { colonial_region = colonial_canada }
+				NOT = { region = northeast_america_region }
+				continent = north_america
+				OR = {
+					culture = cosmopolitan_french
+					culture = occitain
+					culture = normand
+					culture = gascon
+					culture = burgundian
+				}
+			}
+		}
+		desc = "random_event.EVTDESC2F"
+	}
 	picture = COLONIZATION_eventPicture
 	
 	is_triggered_only = yes
@@ -10867,6 +10883,62 @@ country_event = {
 						culture = galician
 						culture = andalucian
 						culture = basque
+					}
+				}
+			}
+			# Eligible for Platinean culture
+			AND = {
+				culture_group = iberian
+				NOT = { primary_culture = portugese }
+				any_owned_province = {
+					continent = south_america
+					OR = {
+						culture = leonese
+						culture = castillian
+						culture = aragonese
+						culture = catalan
+						culture = galician
+						culture = andalucian
+						culture = basque
+					}
+				}
+			}
+			# Eligible for Quebecois culture
+			AND = {
+				culture_group = french
+				NOT = { primary_culture = quebecois }
+				NOT = { primary_culture = louisianans }
+				any_owned_province = {
+					OR = {
+						colonial_region = colonial_alaska
+						colonial_region = colonial_canada
+						region = northeast_america_region
+					}
+					OR = {
+						culture = cosmopolitan_french
+						culture = occitain
+						culture = normand
+						culture = gascon
+						culture = burgundian
+					}
+				}
+			}
+			# Eligible for Louisianans culture
+			AND = {
+				culture_group = french
+				NOT = { primary_culture = quebecois }
+				NOT = { primary_culture = louisianans }
+				any_owned_province = {
+					NOT = { colonial_region = colonial_alaska }
+					NOT = { colonial_region = colonial_canada }
+					NOT = { region = northeast_america_region }
+					continent = north_america
+					OR = {
+						culture = cosmopolitan_french
+						culture = occitain
+						culture = normand
+						culture = gascon
+						culture = burgundian
 					}
 				}
 			}
@@ -10954,6 +11026,113 @@ country_event = {
 					save_event_target_as = mexican_province
 				}
 			}
+			if = {
+				limit = {
+					culture_group = iberian
+					NOT = { primary_culture = portugese }
+					any_owned_province = {
+						continent = south_america
+						OR = {
+							culture = leonese
+							culture = castillian
+							culture = aragonese
+							culture = catalan
+							culture = galician
+							culture = andalucian
+							culture = basque
+						}
+					}
+				}
+				random_owned_province = {
+					limit = {
+						continent = south_america
+						OR = {
+							culture = leonese
+							culture = castillian
+							culture = aragonese
+							culture = catalan
+							culture = galician
+							culture = andalucian
+							culture = basque
+						}
+					}
+					save_event_target_as = platinean_province
+				}
+			}
+			if = {
+				limit = {
+					culture_group = french
+					NOT = { primary_culture = quebecois }
+					NOT = { primary_culture = louisianans }
+					any_owned_province = {
+						OR = {
+							colonial_region = colonial_alaska
+							colonial_region = colonial_canada
+							region = northeast_america_region
+						}
+						OR = {
+							culture = cosmopolitan_french
+							culture = occitain
+							culture = normand
+							culture = gascon
+							culture = burgundian
+						}
+					}
+				}
+				random_owned_province = {
+					limit = {
+						OR = {
+							colonial_region = colonial_alaska
+							colonial_region = colonial_canada
+							region = northeast_america_region
+						}
+						OR = {
+							culture = cosmopolitan_french
+							culture = occitain
+							culture = normand
+							culture = gascon
+							culture = burgundian
+						}
+					}
+					save_event_target_as = quebecois_province
+				}
+			}
+			if = {
+				limit = {
+					culture_group = french
+					NOT = { primary_culture = quebecois }
+					NOT = { primary_culture = louisianans }
+					any_owned_province = {
+						NOT = { colonial_region = colonial_alaska }
+						NOT = { colonial_region = colonial_canada }
+						NOT = { region = northeast_america_region }
+						continent = north_america
+						OR = {
+							culture = cosmopolitan_french
+							culture = occitain
+							culture = normand
+							culture = gascon
+							culture = burgundian
+						}
+					}
+				}
+				random_owned_province = {
+					limit = {
+						NOT = { colonial_region = colonial_alaska }
+						NOT = { colonial_region = colonial_canada }
+						NOT = { region = northeast_america_region }
+						continent = north_america
+						OR = {
+							culture = cosmopolitan_french
+							culture = occitain
+							culture = normand
+							culture = gascon
+							culture = burgundian
+						}
+					}
+					save_event_target_as = louisianans_province
+				}
+			}
 		}
 	}
 	option = { # Become American
@@ -11037,6 +11216,18 @@ country_event = {
 	}
 	option = { # Become Mexican
 		trigger = {
+			any_owned_province = {
+				continent = north_america
+				OR = {
+					culture = leonese
+					culture = castillian
+					culture = aragonese
+					culture = catalan
+					culture = galician
+					culture = andalucian
+					culture = basque
+				}
+			}
 			culture_group = iberian
 			NOT = { primary_culture = portugese }
 			NOT = { primary_culture = brazilian }
@@ -11071,6 +11262,18 @@ country_event = {
 	}
 	option = { # Resist cultural change
 		trigger = {
+			any_owned_province = {
+				continent = north_america
+				OR = {
+					culture = leonese
+					culture = castillian
+					culture = aragonese
+					culture = catalan
+					culture = galician
+					culture = andalucian
+					culture = basque
+				}
+			}
 			culture_group = iberian
 			NOT = { primary_culture = portugese }
 			NOT = { primary_culture = brazilian }
@@ -11081,6 +11284,221 @@ country_event = {
 		name = "random_event.EVTOPTB2"
 		event_target:mexican_province = {
 			change_culture = mexican
+		}
+		set_country_flag = rejected_new_colonial_culture
+	}
+	option = { # Become Platinean
+		trigger = {
+			any_owned_province = {
+				continent = south_america
+				OR = {
+					culture = leonese
+					culture = castillian
+					culture = aragonese
+					culture = catalan
+					culture = galician
+					culture = andalucian
+					culture = basque
+				}
+			}
+			culture_group = iberian
+			NOT = { primary_culture = portugese }
+			NOT = { primary_culture = brazilian }
+		}
+		name = "random_event.EVTOPTF2"
+		if = {
+			limit = {
+				NOT = {
+					primary_culture = platinean
+				}
+			}
+			change_primary_culture = platinean
+		}
+		event_target:platinean_province = {
+			area = {
+				limit = {
+					owned_by = ROOT
+					OR = {
+						culture = leonese
+						culture = castillian
+						culture = aragonese
+						culture = catalan
+						culture = galician
+						culture = andalucian
+						culture = basque
+					}
+				}
+				change_culture = platinean
+			}
+		}
+		set_country_flag = embraced_new_colonial_culture
+	}
+	option = { # Resist cultural change
+		trigger = {
+			any_owned_province = {
+				continent = south_america
+				OR = {
+					culture = leonese
+					culture = castillian
+					culture = aragonese
+					culture = catalan
+					culture = galician
+					culture = andalucian
+					culture = basque
+				}
+			}
+			culture_group = iberian
+			NOT = { primary_culture = portugese }
+			NOT = { primary_culture = brazilian }
+			ai = no
+			NOT = { has_country_flag = embraced_new_colonial_culture }
+			NOT = { primary_culture = platinean }
+		}
+		name = "random_event.EVTOPTB2"
+		event_target:platinean_province = {
+			change_culture = platinean
+		}
+		set_country_flag = rejected_new_colonial_culture
+	}
+	option = { # Become Quebecois
+		trigger = {
+			culture_group = french
+			any_owned_province = {
+				OR = {
+					colonial_region = colonial_alaska
+					colonial_region = colonial_canada
+					region = northeast_america_region
+				}
+				OR = {
+					culture = cosmopolitan_french
+					culture = occitain
+					culture = normand
+					culture = gascon
+					culture = burgundian
+				}
+			}
+		}
+		name = "random_event.EVTOPTG2"
+		if = {
+			limit = {
+				NOT = {
+					primary_culture = quebecois
+				}
+			}
+			change_primary_culture = quebecois
+		}
+		event_target:quebecois_province = {
+			area = {
+				limit = {
+					owned_by = ROOT
+					OR = {
+						culture = cosmopolitan_french
+						culture = occitain
+						culture = normand
+						culture = gascon
+						culture = burgundian
+					}
+				}
+				change_culture = quebecois
+			}
+		}
+		set_country_flag = embraced_new_colonial_culture
+	}
+	option = { # Resist cultural change
+		trigger = {
+			culture_group = french
+			any_owned_province = {
+				OR = {
+					colonial_region = colonial_alaska
+					colonial_region = colonial_canada
+					region = northeast_america_region
+				}
+				OR = {
+					culture = cosmopolitan_french
+					culture = occitain
+					culture = normand
+					culture = gascon
+					culture = burgundian
+				}
+			}
+			ai = no
+			NOT = { has_country_flag = embraced_new_colonial_culture }
+			NOT = { primary_culture = quebecois }
+		}
+		name = "random_event.EVTOPTB2"
+		event_target:quebecois_province = {
+			change_culture = quebecois
+		}
+		set_country_flag = rejected_new_colonial_culture
+	}
+	option = { # Become Louisianans
+		trigger = {
+			culture_group = french
+			any_owned_province = {
+				NOT = { colonial_region = colonial_alaska }
+				NOT = { colonial_region = colonial_canada }
+				NOT = { region = northeast_america_region }
+				continent = north_america
+				OR = {
+					culture = cosmopolitan_french
+					culture = occitain
+					culture = normand
+					culture = gascon
+					culture = burgundian
+				}
+			}
+		}
+		name = "random_event.EVTOPTH2"
+		if = {
+			limit = {
+				NOT = {
+					primary_culture = louisianans
+				}
+			}
+			change_primary_culture = louisianans
+		}
+		event_target:louisianans_province = {
+			area = {
+				limit = {
+					owned_by = ROOT
+					OR = {
+						culture = leonese
+						culture = castillian
+						culture = aragonese
+						culture = catalan
+						culture = galician
+						culture = andalucian
+						culture = basque
+					}
+				}
+				change_culture = louisianans
+			}
+		}
+		set_country_flag = embraced_new_colonial_culture
+	}
+	option = { # Resist cultural change
+		trigger = {
+			culture_group = french
+			any_owned_province = {
+				NOT = { colonial_region = colonial_alaska }
+				NOT = { colonial_region = colonial_canada }
+				NOT = { region = northeast_america_region }
+				continent = north_america
+				OR = {
+					culture = cosmopolitan_french
+					culture = occitain
+					culture = normand
+					culture = gascon
+					culture = burgundian
+				}
+			}
+			ai = no
+			NOT = { has_country_flag = embraced_new_colonial_culture }
+			NOT = { primary_culture = louisianans }
+		}
+		name = "random_event.EVTOPTB2"
+		event_target:louisianans_province = {
+			change_culture = louisianans
 		}
 		set_country_flag = rejected_new_colonial_culture
 	}
@@ -11338,6 +11756,7 @@ country_event = {
 	title = "random_event.EVTNAME7"
 	desc = "random_event.EVTDESC7"
 	picture = SHIP_SAILING_eventPicture
+	goto = flagship_province
 	
 	is_triggered_only = yes
 	
@@ -11357,6 +11776,17 @@ country_event = {
 		days = 1
 	}
 	
+	immediate = {
+		random_owned_province = {
+			limit = {
+				has_port = yes
+				is_core = ROOT
+				controlled_by = ROOT
+			}
+			save_event_target_as = flagship_province
+		}
+	}
+
 	option = {
 		name = "random_event.EVTOPTA7"
 		ai_chance = {
@@ -11368,12 +11798,7 @@ country_event = {
 		}
 		add_treasury = -50
 		add_prestige = 5
-		random_owned_province = {
-			limit = {
-				has_port = yes
-				is_core = ROOT
-				controlled_by = ROOT
-			}
+		event_target:flagship_province = {
 			heavy_ship = ROOT
 		}
 	}
@@ -11388,12 +11813,7 @@ country_event = {
 		}
 		add_treasury = -20
 		add_prestige = 2
-		random_owned_province = {
-			limit = {
-				has_port = yes
-				is_core = ROOT
-				controlled_by = ROOT
-			}
+		event_target:flagship_province = {
 			light_ship = ROOT
 		}
 	}
@@ -11404,12 +11824,7 @@ country_event = {
 		}
 		add_treasury = -10
 		add_prestige = 1
-		random_owned_province = {
-			limit = {
-				has_port = yes
-				is_core = ROOT
-				controlled_by = ROOT
-			}
+		event_target:flagship_province = {
 			galley = ROOT
 		}
 	}
@@ -11797,6 +12212,7 @@ country_event = {
 			culture_group = central_indic
 		}
 		NOT = { primary_culture = tibetan }
+		NOT = { primary_culture = tibetan_new }
 		NOT = {
 			stability = 3
 		}
@@ -12300,192 +12716,6 @@ province_event = {
 		name = "random_event.EVTOPTB22" # We can't trust these people! Keep them in prison over here
 		owner = {
 			add_adm_power = -10
-		}
-	}
-}
-
-# Influenza!
-province_event = {
-	id = random_event.23
-	title = "random_event.EVTNAME23"
-	desc = "random_event.EVTDESC23"
-	picture = PLAGUE_eventPicture
-	goto = root
-	
-	trigger = {
-		has_port = yes
-		is_capital = no
-		OR = {
-			NOT = { has_province_flag = province_had_influenza }
-			had_province_flag = { flag = province_had_influenza days = 10950 }
-		}
-		owner = {
-			primitives = no
-			NOT = { has_country_flag = has_competent_doctors }
-			any_known_country = {
-				NOT = {
-					OR = { 
-						capital_scope = { continent = north_america }
-						capital_scope = { continent = south_america } 
-					}
-				}
-			}
-		}	
-	}
-	
-	is_mtth_scaled_to_size = 1
-	
-	mean_time_to_happen = {
-		months = 600
-		modifier = {
-			factor = 0.9
-			has_terrain = marsh
-		}
-	}
-	
-	immediate = {
-		set_province_flag = province_had_influenza
-	}
-
-	option = {
-		name = "random_event.EVTOPTA23" # Quarantine the port and let them die!
-		ai_chance = {
-			factor = 50
-		}
-		owner = { add_adm_power = -50 }
-		add_province_modifier = {
-			name = "quarantined_influenza"
-			duration = 3650
-		}
-	}
-	option = {
-		name = "random_event.EVTOPTB23" # This is not the first flu in our country, I don't care!
-		ai_chance = {
-			factor = 50
-			modifier = {
-				factor = 0
-				calc_true_if = {
-					all_neighbor_province = {
-						owned_by = ROOT
-						development = 12
-					}
-					amount = 3
-				}
-			}
-		}
-		add_province_modifier = {
-			name = "influenza"
-			duration = 3650
-		}
-		if = {
-			limit = {
-				any_neighbor_province = {
-					NOT = { has_province_modifier = quarantined_influenza }
-					NOT = { has_province_modifier = influenza }
-					NOT = { has_province_flag = province_had_influenza }
-				}
-			}
-			custom_tooltip = random_events.23.b.tt
-		}
-	}
-}
-
-# Influenza Spreads
-province_event = {
-	id = random_event.24
-	title = "random_event.EVTNAME24"
-	desc = "random_event.EVTDESC24"
-	picture = PLAGUE_eventPicture
-	goto = root
-	
-	trigger = {
-		development = 8
-		OR = {
-			NOT = { has_province_flag = province_had_influenza }
-			had_province_flag = { flag = province_had_influenza days = 10950 }
-		}
-		owner = {
-			primitives = no
-		}
-		any_neighbor_province = {
-			has_province_modifier = influenza
-		}
-		NOT = { has_province_modifier = quarantined_influenza }
-	}
-	
-	mean_time_to_happen = {
-		months = 120
-	}
-	
-	immediate = {
-		set_province_flag = province_had_influenza
-	}
-	
-	option = {
-		name = "random_event.EVTOPTA24" # Quarantine the province!
-		ai_chance = {
-			factor = 50
-		}
-		add_province_modifier = {
-			name = "quarantined_influenza"
-			duration = 3650
-		}
-		every_neighbor_province = {
-			limit = {
-				owned_by = ROOT
-				NOT = { has_province_modifier = quarantined_influenza }
-			}
-			add_province_modifier = {
-				name = "quarantined_influenza"
-				duration = 3650
-			}
-		}
-		owner = {
-			if = {
-				limit = {
-					any_owned_province = { has_province_modifier = influenza }
-				}
-				every_owned_province = {
-					limit = {
-						has_province_modifier = influenza
-					}
-					remove_province_modifier = influenza
-					add_province_modifier = {
-						name = "quarantined_influenza"
-						duration = 3650
-					}
-				}
-			}
-		}
-	}
-	option = {
-		name = "random_event.EVTOPTB24" # It will soon go away
-		ai_chance = {
-			factor = 50
-			modifier = {
-				factor = 0
-				calc_true_if = {
-					all_neighbor_province = {
-						owned_by = ROOT
-						development = 12
-					}
-					amount = 3
-				}
-			}
-		}
-		add_province_modifier = {
-			name = "influenza"
-			duration = 3650
-		}
-		if = {
-			limit = {
-				any_neighbor_province = {
-					NOT = { has_province_modifier = quarantined_influenza }
-					NOT = { has_province_modifier = influenza }
-					NOT = { has_province_flag = province_had_influenza }
-				}
-			}
-			custom_tooltip = random_events.23.b.tt
 		}
 	}
 }
@@ -13347,66 +13577,6 @@ country_event = {
 }
 
 
-
-country_event = {
-	id = 5026
-	title = "EVTNAME5026"
-	desc = "EVTDESC5026"
-	picture = PLAGUE_eventPicture
-	goto = plague_province
-
-	trigger = {
-		grain = 1
-		num_of_cities = 2
-		any_owned_province = {
-			trade_goods = grain
-			is_capital = no
-		}
-	}
-
-	immediate = {
-		hidden_effect = {
-			random_owned_province = {
-				limit = {
-					trade_goods = grain
-					is_capital = no
-				}
-				save_event_target_as = plague_province
-			}
-		}
-	}
-
-	is_triggered_only = yes
-
-	mean_time_to_happen = {
-		days = 1
-	}
-
-	option = {
-		name = "EVTOPTA5026"		# We have to do something!
-		ai_chance = {
-			factor = 55
-			modifier = {
-				factor = 0.5
-				NOT = { years_of_income = 0.2 }
-			}
-		}
-		add_years_of_income = -0.10
-	}
-	option = {
-		name = "EVTOPTB5026"		# There is nothing we can do.
-		ai_chance = {
-			factor = 45
-		}
-		event_target:plague_province = {
-			add_local_autonomy = 25
-			add_province_modifier = {
-				name = "plague"
-				duration = 1095
-			}
-		}				
-	}
-}
 
 country_event = {
 	id = 5037

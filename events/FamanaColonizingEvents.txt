@@ -6,27 +6,25 @@ country_event = {
 	picture = EXPLORERS_eventPicture
 	desc = fce.1.d
 	
-	trigger = { 
-		AND = {
-			is_year = 220
-			NOT = {
-				AND = {
-					tag = INI
-					NOT = {
-						num_of_owned_provinces_with	= {
-							value = 2
-							region = emastalia_region
-						}
+	trigger = {
+		culture_group = Emastalian
+		NOT = {
+			AND = {
+				tag = INI
+				NOT = {
+					num_of_owned_provinces_with	= {
+						value = 2
+						region = emastalia_region
 					}
 				}
 			}
-			NOT = {
-				is_year = 250
-			}
-			culture_group = Emastalian
-			NOT = {
-				has_country_flag = has_had_fce1
-			}
+		}
+		is_year = 220
+		NOT = {
+			is_year = 250
+		}
+		NOT = {
+			has_country_flag = has_had_fce1
 		}
 	}
 	
@@ -42,5 +40,47 @@ country_event = {
 			name = call_of_the_frontier
 			duration = 9125
 		}
+	}
+}
+
+country_event = {
+	id = fce.2
+	title = fce.2.t
+	picture = EXPLORERS_eventPicture
+	desc = fce.2.d
+	hidden = yes
+	
+	trigger = {
+		any_owned_province = {
+			is_colony = yes
+			culture = Qubaran
+			NOT = {
+				has_colonist = yes
+			}
+		}
+		NOT = {
+			tag = QUB
+		}
+		ai = yes
+	}
+
+	immediate = {
+		every_province = {
+			limit = {
+				owned_by = ROOT
+				is_colony = yes
+				culture = Qubaran
+			}
+			cede_province = ---
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = fce.2.a
+		ai_chance = { factor = 1 }
 	}
 }

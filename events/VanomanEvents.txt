@@ -9,7 +9,7 @@ country_event = {
 	fire_only_once = yes
 
     trigger = {
-		owns = 5693
+        owns = 5693
         is_year = 300
         5889 = {
             is_empty = yes
@@ -45,13 +45,33 @@ country_event = {
             cede_province = IRF
             add_core = IRF
             change_culture = Emtik
-            change_religion	= va
             add_base_tax = 1
             add_base_production = 1
             add_base_manpower = 1
         }
         IRF = {
             add_truce_with = ROOT
+        }
+        if = {
+            limit = {
+                5693 = {
+                    religion = va
+                }
+            }
+            5889 = {
+                change_religion = va
+            }
+            IRF = {
+                change_religion = va
+            }
+        }
+        else = {
+            5889 = {
+                change_religion = ROOT
+            }
+            IRF = {
+                change_religion = ROOT
+            }
         }
     }
 }
@@ -201,18 +221,27 @@ country_event = {
             add_stability = 1
         }
         unnamed_area_42 = {
+            limit = {
+                is_empty = yes
+            }
             cede_province = ROOT
             add_core = ROOT
             change_culture = ROOT
             change_religion	= ROOT
         }
         mori_area = {
+            limit = {
+                is_empty = yes
+            }
             cede_province = ROOT
             add_core = ROOT
             change_culture = ROOT
             change_religion	= ROOT
         }
         5989 = {
+            limit = {
+                is_empty = yes
+            }
             cede_province = ROOT
             add_core = ROOT
             change_culture = ROOT
@@ -306,7 +335,10 @@ country_event = { #Jasua
             kapolia_region = {
                 discover_country = ROOT
             }
-            bamal_gulf_region = {
+            stroktur_region = {
+                discover_country = ROOT
+            }
+            bamali_gulf_region = {
                 discover_country = ROOT
             }
         }
@@ -358,7 +390,7 @@ country_event = { #Hoxoi
                 chance = 1
                 set_country_flag = vanomaExpeditionFailed
             }
-            eastern_desert_region = {
+            hoxoi_coast_region = {
                 discover_country = ROOT
             }
             east_gomic = {
@@ -411,7 +443,7 @@ country_event = { #Ga Xal
             north_xalia_region = {
                 discover_country = ROOT
             }
-            moria_region = {
+            west_xalia_region = {
                 discover_country = ROOT
             }
         }
@@ -706,7 +738,7 @@ country_event = { #Lathvy
     }
 
     mean_time_to_happen = {
-        months = 120
+        months = 360
     }
 
     option = { #Go lathvy
@@ -721,7 +753,7 @@ country_event = { #Lathvy
     }
     option = { #Stay va
         name = vanoma.13.b
-        ai_chance = { factor = 2 }
+        ai_chance = { factor = 3 }
         random_owned_province = {
             limit = {
                 region = vanoma_region
@@ -735,7 +767,7 @@ country_event = { #Lathvy
     }
     option = { #Acceptance
         name = vanoma.13.c
-        ai_chance = { factor = 1 }
+        ai_chance = { factor = 2 }
         hidden_effect = {
             every_owned_province = {
                 limit = {
@@ -749,5 +781,60 @@ country_event = { #Lathvy
             }
         }
         custom_tooltip = vanoma_accept_lathvy
+    }
+}
+
+country_event = { #Pick New king
+    id = vanoma.14
+    title = vanoma.14.t
+    desc = vanoma.14.d
+    picture = NUSANTARA_THRONE_eventPicture
+
+    is_triggered_only = yes
+
+    immediate = {
+		set_saved_name = {
+			key = heir1
+			type = advisor
+			scope = ROOT
+		}
+		set_saved_name = {
+			key = heir2
+			type = advisor
+			scope = ROOT
+		}
+		set_saved_name = {
+			key = heir3
+			type = advisor
+			scope = ROOT
+		}
+	}
+
+	option = {
+        name = vanoma.14.a
+        ai_chance = { factor = 1 }
+		define_ruler = {
+			name = heir3
+			claim = 100
+		}
+        set_country_flag = dead_ruler
+    }
+	option = {
+        name = vanoma.14.b
+        ai_chance = { factor = 1 }
+		define_ruler = {
+			name = heir2
+			claim = 100
+		}
+        set_country_flag = dead_ruler
+    }
+	option = {
+        name = vanoma.14.c
+        ai_chance = { factor = 1 }
+		define_ruler = {
+			name = heir1
+			claim = 100
+		}
+        set_country_flag = dead_ruler
     }
 }

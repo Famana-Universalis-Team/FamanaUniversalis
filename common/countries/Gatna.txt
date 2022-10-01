@@ -1,6 +1,6 @@
 #Country Name: Please see filename.
 
-graphical_culture = easterngfx
+graphical_culture = muslimgfx
 
 color = { 137 129 71 }
 
@@ -33,56 +33,84 @@ historical_units = {
 }
 
 monarch_names = {
-	"Ogro #0" = 2
-	"Yegum #0" = 1
-	"Fell #0" = 2
-	"Kanuni #0" = 1
-	"Yamoz #0" = 1
-	"Unahar #0" = 1
-	"Jada'ash #0" = 2
-	"Vande #0" = 1
-	"Yehum #0" = 1
-	"Eyath #0" = 1
-	"Ayon #0" = 1
-	"Beroge #0" = 1
-	"Anel #0" = 1
-	"Sdaz #0" = 1
-	"Horfi #0" = 1
-	"B'enn #0" = 1
-	"Po #0" = 1
-	"Hog #0" = 1
-	"Paro #0" = 1
-	"Jekelek #0" = 1
-	"Verakol #0" = 1
-	"Womo #0" = -1
-	"Kanuni #0" = -1
-	"Maro #0" = -1
-	"Yuni #0" = -1
-	"Ezeldi #0" = -1
+	"Zavum #0" = 1
+	"Pras #0" = 1
+	"Evipsem #0" = 1
+	"Poinep #0" = 1
+	"Ezse #0" = 1
+	"Içamisu #0" = 1
+	"Elinze #0" = 1
+	"Fiña #0" = 1
+	"Soiçus #0" = 1
+	"Upaz #0" = 1
+	"Pypai #0" = 1
+	"Aszav #0" = 1
+	"Kizi #0" = 1
+	"Uko #0" = 1
+	"Koiçi #0" = 1
+	"Ozuç #0" = 1
+	"Uçiç #0" = 1
+	"Eçote #0" = 1
+	"Unezan #0" = 1
+	"Azüsav #0" = 1
+	"Polkoi #0" = 1
+	"Apoko #0" = 1
+	"Aküçor #0" = 1
+	"Ekupo #0" = 1
+	"Asusove #0" = 1
+	"Satap  #0" = 1
+	"Haçü #0" = 1
+	"Çü #0" = 1
+	"Fovers #0" = 1
+	"Opama #0" = 1
+	"Okro #0" = 1
+	"Plakil #0" = 1
+	"Horfy #0" = 1
+
+	"Sumkyi #0" = -1
+	"Kuvi #0" = -1
+	"Izeñozi #0" = -1
+	"Pemaiz #0" = -1
+	"Fophi #0" = -1
+	"Ekopsu #0" = -1
+	"Sumu #0" = -1
+	"Açea #0" = -1
 }
 
 leader_names = {
-	Ogro
-	Yegum
-	Fella
-	Kanuni
-	Yamoz
-	Unahar
-	Jada'ash
-	Vande
-	Yehum
-	Eyath
-	Ayon
-	Beroge
-	Anel
-	Sdaz
-	Horfi
-	B'enn
-	Po
-	Hog
-	Paro
-	Jekelek
-	Verakol
+	Zavum
+	Pras
+	Evipsem
+	Poinep
+	Ezse
+	Içamisu
+	Elinze
+	Fiña
+	Soiçus
+	Upaz
+	Pypai
+	Aszav
+	Kizi
+	Uko
+	Koiçi
+	Ozuç
+	Uçiç
+	Eçote
+	Unezan
+	Azüsav
+	Polkoi
+	Apoko
+	Aküçor
+	Ekupo
+	Asusove
+	Satap 
+	Haçü
+	Çü
+	Fovers
+	Opama
+	Okro
+	Plakil
+	Horfy
 }
 
 ship_names = {

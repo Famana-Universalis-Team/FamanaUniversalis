@@ -1,8 +1,8 @@
 government = monarchy
-add_government_reform = autocracy_reform
+add_government_reform = aristocracy_reform
 government_rank = 1
 mercantilism = 10
-technology_group = north_gomic_tech_gr
+technology_group = lathvy_tech_gr
 religion = ordic
 primary_culture = Tolan
 historical_rival = NHL
@@ -13,8 +13,8 @@ capital = 6174	# fake
 		name = "Usee"
 		dynasty = "Rospat"
 		birth_date = 195.7.19
-		adm = 1
-		dip = 2
-		mil = 2
+		adm = 3
+		dip = 0
+		mil = 4
 	}
 }

@@ -1,9 +1,10 @@
 discovered_by = east_gomic_tech_gr
-discovered_by = north_gomic_tech_gr
+discovered_by = lathvy_tech_gr
 discovered_by = west_gomic_tech_gr
-culture = West_Emastalian
+culture = Maxan_West_Emastalian
 religion = lathvy
 owner = MRL
+is_city = yes
 controller = MRL
 add_core = MRL
 
@@ -16,6 +17,6 @@ base_production = 4
 trade_goods = copper
 base_manpower = 3
 capital = "Morla"
-is_city = yes
-extra_cost = 1
+ 
+
 

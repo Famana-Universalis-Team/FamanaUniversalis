@@ -5,8 +5,20 @@ hre = no
 base_tax = 1
 base_production = 1
 base_manpower = 1
-native_size = 1
-native_ferocity = 1
-native_hostileness = 1
-capital = "Yaumenne"
 is_city = no
+native_size = 1
+native_ferocity = 6
+native_hostileness = 5
+capital = "Yaumenne"
+ 
+
+212.6.7 = {
+owner = YAB
+is_city = yes
+controller = YAB
+add_core = YAB
+#remove_core = 
+culture = Yabonian
+religion = bamali
+trade_goods = wool
+}

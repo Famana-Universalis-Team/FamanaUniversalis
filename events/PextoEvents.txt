@@ -1,10 +1,10 @@
-namespace = pexto
+namespace = pextoglazia
 
 #Pextoglazian Civil War
 country_event = {
-    id = pexto.1
-    title = pexto.1.t
-    desc = pexto.1.d
+    id = pextoglazia.1
+    title = pextoglazia.1.t
+    desc = pextoglazia.1.d
     picture = BATTLE_eventPicture
 	major = yes
 	is_triggered_only = yes
@@ -21,7 +21,7 @@ country_event = {
 
     option = {
 		add_war_exhaustion = 4
-        name = pexto.1.b
+        name = pextoglazia.1.b
         ai_chance = { factor = 1 }
 		add_stability = -3
 		add_estate_loyalty = {
@@ -46,7 +46,7 @@ country_event = {
     }
     option = {
 		add_war_exhaustion = 4
-        name = pexto.1.a
+        name = pextoglazia.1.a
         ai_chance = { factor = 1 }
 		add_stability = -3
 		add_estate_loyalty = {
@@ -73,7 +73,7 @@ country_event = {
 
 #pexto stabilised
 country_event = {
-    id = pexto.2
+    id = pextoglazia.2
     hidden = yes
 	is_triggered_only = yes
 
@@ -88,16 +88,16 @@ country_event = {
 		}
 	}
     option = {
-        name = pexto.2.a
+        name = pextoglazia.2.a
         ai_chance = { factor = 1 }
     }
 }
 
 #particularists
 country_event = {
-    id = pexto.4
-    title = pexto.4.t
-    desc = pexto.4.d
+    id = pextoglazia.4
+    title = pextoglazia.4.t
+    desc = pextoglazia.4.d
     picture = RELIGIOUS_TURMOIL_eventPicture
 	trigger = {
 		tag = PEX
@@ -122,16 +122,16 @@ country_event = {
 	}
 
     option = {
-        name = pexto.4.a
+        name = pextoglazia.4.a
         ai_chance = { factor = 1 }
     }
 }
 
 #Second Wave of unrest (pomlen revolutionaries)
 country_event = {
-    id = pexto.5
-    title = pexto.5.t
-    desc = pexto.5.d
+    id = pextoglazia.5
+    title = pextoglazia.5.t
+    desc = pextoglazia.5.d
     picture = RELIGIOUS_TURMOIL_eventPicture
 	trigger = {
 		tag = PEX
@@ -150,16 +150,16 @@ country_event = {
 			add_war_exhaustion = 3
 			#spawn rebels. only works through events like this for some reason
 			country_event = { 
-				id = pexto.7
+				id = pextoglazia.7
 			}
 			country_event = { 
-				id = pexto.7
+				id = pextoglazia.7
 			}
 			country_event = { 
-				id = pexto.8
+				id = pextoglazia.8
 			}
 			country_event = { 
-				id = pexto.9
+				id = pextoglazia.9
 			}
 			log = "fired civil war"
 			set_country_flag = second_wave_unrest
@@ -167,16 +167,16 @@ country_event = {
 	}
 
     option = {
-        name = pexto.5.a
+        name = pextoglazia.5.a
         ai_chance = { factor = 1 }
     }
 }
 
 #war fatigue
 country_event = {
-    id = pexto.6
-    title = pexto.6.t
-    desc = pexto.6.d
+    id = pextoglazia.6
+    title = pextoglazia.6.t
+    desc = pextoglazia.6.d
     picture = RELIGIOUS_TURMOIL_eventPicture
 	trigger = {
 		tag = PEX
@@ -191,7 +191,7 @@ country_event = {
 	}
 
     option = {
-        name = pexto.6.a
+        name = pextoglazia.6.a
         ai_chance = { factor = 1 }
 		add_war_exhaustion = 4
 		add_devotion = -20
@@ -200,7 +200,7 @@ country_event = {
 }
 
 country_event = {
-    id = pexto.7
+    id = pextoglazia.7
     hidden = yes
 	is_triggered_only = yes
 
@@ -219,13 +219,13 @@ country_event = {
 	}
 
     option = {
-		name = pexto.7.a
+		name = pextoglazia.7.a
         ai_chance = { factor = 1 }
     }
 }
 
 country_event = {
-    id = pexto.8
+    id = pextoglazia.8
     hidden = yes
 	is_triggered_only = yes
 
@@ -247,13 +247,13 @@ country_event = {
 	}
 
     option = {
-		name = pexto.8.a
+		name = pextoglazia.8.a
         ai_chance = { factor = 1 }
     }
 }
 
 country_event = {
-    id = pexto.9
+    id = pextoglazia.9
     hidden = yes
 	is_triggered_only = yes
 
@@ -283,17 +283,17 @@ country_event = {
 	}
 
     option = {
-		name = pexto.9.a
+		name = pextoglazia.9.a
         ai_chance = { factor = 1 }
     }
 }
 
 #surrender New Pexamol
 country_event = {
-    id = pexto.10
-    title = pexto.10.t
-    desc = pexto.10.d
-    picture = ECONOMY_eventPicture
+    id = pextoglazia.10
+    title = pextoglazia.10.t
+    desc = pextoglazia.10.d
+    picture = EP_MOAIS_eventPicture
 	trigger = {
 		AND = {
 			tag = PEX
@@ -307,7 +307,7 @@ country_event = {
 	}
 
     option = {
-		name = pexto.10.a
+		name = pextoglazia.10.a
         ai_chance = { factor = 1 }
 		5203 = {
 			spawn_rebels = {
@@ -319,7 +319,7 @@ country_event = {
 		set_country_flag = npNotSold
     }
 	option = {
-		name = pexto.10.b
+		name = pextoglazia.10.b
         ai_chance = { factor = 1 }
 		5203 = {
 			cede_province = NPX
@@ -329,7 +329,7 @@ country_event = {
 	option = {
 		trigger = {
 			NOT = {
-				AND = {
+				OR = {
 					has_global_flag = newpexamoldeal
 					5561 = {
 						owned_by = PEX
@@ -337,14 +337,15 @@ country_event = {
 				}
 			}
 		}
-		name = pexto.10.c
+		name = pextoglazia.10.c
         ai_chance = { factor = 4 }
 		set_global_flag = newpexamoldeal
 		set_country_flag = npNotSold
 		5561 = {
 			owner = {
 				country_event = {
-					id = pexto.11
+					id = pextoglazia.11
+					days = 1
 				}
 			}
 		}
@@ -353,28 +354,28 @@ country_event = {
 
 #surrender New Pexamol
 country_event = {
-    id = pexto.11
-    title = pexto.11.t
-    desc = pexto.11.d
+    id = pextoglazia.11
+    title = pextoglazia.11.t
+    desc = pextoglazia.11.d
     picture = ECONOMY_eventPicture
 	is_triggered_only = yes
 
     option = {
-		name = pexto.11.a
+		name = pextoglazia.11.a
         ai_chance = { factor = 1 }
 		PEX = {
 			clr_country_flag = npNotSold
 			country_event = {
-				id = pexto.10
+				id = pextoglazia.10
 				days = 1
 			}
 		}
     }
 	option = {
-		name = pexto.11.b
+		name = pextoglazia.11.b
 		PEX = {
 			country_event = {
-				id = pexto.12
+				id = pextoglazia.12
 			}
 		}
 		add_treasury = -150
@@ -389,16 +390,16 @@ country_event = {
 }
 
 country_event = {
-    id = pexto.12
-    title = pexto.12.t
-    desc = pexto.12.d
+    id = pextoglazia.12
+    title = pextoglazia.12.t
+    desc = pextoglazia.12.d
     picture = ECONOMY_eventPicture
 	is_triggered_only = yes
 	immediate = {
 	}
 
     option = {
-		name = pexto.12.a
+		name = pextoglazia.12.a
         ai_chance = { factor = 1 }
 		add_treasury = 150
 		5561 = {
@@ -412,15 +413,13 @@ country_event = {
 }
 
 country_event = { #Vassals go disloyal 95%
-    id = pexto.13
-    title = pexto.13.t
-    desc = pexto.13.d
+    id = pextoglazia.13
+    title = pextoglazia.13.t
+    desc = pextoglazia.13.d
     picture = BATTLE_eventPicture
 	trigger = {
-		AND = {
-			tag = PEX
-			has_country_flag = pextocivilwar
-		}
+		tag = PEX
+		has_country_flag = pextocivilwar
 	}
 
 	mean_time_to_happen = {
@@ -432,14 +431,14 @@ country_event = { #Vassals go disloyal 95%
 	immediate = {
 		hidden_effect = { 
 			set_variable = {
-				which = pextoDisloyal
+				which = pex_disasterloyal
 				value = 7.0
 			}
 		}
 	}
 
     option = {
-        name = pexto.13.a
+        name = pextoglazia.13.a
         ai_chance = { factor = 10 }
 		every_subject_country = {
 			add_liberty_desire = 75
@@ -451,16 +450,16 @@ country_event = { #Vassals go disloyal 95%
 		}
     }
     option = {
-        name = pexto.13.b
+        name = pextoglazia.13.b
         ai_chance = { factor = 1 }
 		release_all_subjects = yes
 	}
 }
 
 country_event = { #bye bye pexto
-    id = pexto.14
-    title = pexto.14.t
-    desc = pexto.14.d
+    id = pextoglazia.14
+    title = pextoglazia.14.t
+    desc = pextoglazia.14.d
     picture = LAND_MILITARY_eventPicture
 
 	trigger = {
@@ -477,7 +476,7 @@ country_event = { #bye bye pexto
 	}
 
     option = {
-		name = pexto.14.a
+		name = pextoglazia.14.a
         ai_chance = { factor = 1 }
 		ROOT = {
 			release_all_subjects = yes
@@ -518,9 +517,9 @@ country_event = { #bye bye pexto
 }
 
 country_event = { #DIE ALREADY
-    id = pexto.15
-    title = pexto.15.t
-    desc = pexto.15.d
+    id = pextoglazia.15
+    title = pextoglazia.15.t
+    desc = pextoglazia.15.d
     picture = RELIGIOUS_TURMOIL_eventPicture
 	trigger = {
 		tag = PEX
@@ -538,27 +537,27 @@ country_event = { #DIE ALREADY
 			add_stability = -5
 			#spawn rebels. only works through events like this for some reason
 			country_event = { 
-				id = pexto.7
+				id = pextoglazia.7
 			}
 			country_event = { 
-				id = pexto.7
+				id = pextoglazia.7
 			}
 			country_event = { 
-				id = pexto.8
+				id = pextoglazia.8
 			}
 			country_event = { 
-				id = pexto.9
+				id = pextoglazia.9
 			}
 			PEX = {
 				release_all_subjects = yes
 			}
 			
-			log = "trolloglazia"
+			log = "Killed Pextoglazia"
 		}
 	}
 
     option = {
-        name = pexto.15.a
+        name = pextoglazia.15.a
         ai_chance = { factor = 1 }
 		add_prestige = -100
 		if = {
@@ -573,16 +572,16 @@ country_event = { #DIE ALREADY
 }
 
 country_event = {
-	id = pexto.16
-	title = pexto.16.t
-	desc = pexto.16.d
+	id = pextoglazia.16
+	title = pextoglazia.16.t
+	desc = pextoglazia.16.d
 	picture = REFORM_eventPicture
 	fire_only_once = yes
 
 	is_triggered_only = yes
 
 	option = {
-		name = pexto.16.a
+		name = pextoglazia.16.a
 		ai_chance = { factor = 0 }
 		add_stability = -2
 		add_country_modifier = {
@@ -592,7 +591,7 @@ country_event = {
 		change_religion = pawani
 	}
 	option = {
-		name = pexto.16.b
+		name = pextoglazia.16.b
 		ai_chance = { factor = 1 }
 		add_prestige = 10
 		every_owned_province = {
@@ -605,20 +604,21 @@ country_event = {
 }
 
 country_event = {
-	id = pexto.17
-	title = pexto.17.t
-	desc = pexto.17.d
+	id = pextoglazia.17
+	title = pextoglazia.17.t
+	desc = pextoglazia.17.d
 	picture = POPE_PREACHING_eventPicture
 	fire_only_once = yes
 
 	is_triggered_only = yes
 
 	option = {
-		name = pexto.17.a
+		name = pextoglazia.17.a
 		ai_chance = { factor = 5 }
 		hidden_effect = {
-			every_owned_province = {
+			every_province = {
 				limit = {
+					owned_by = ROOT
 					region = moxon_region
 				}
 				cede_province = MOX
@@ -643,7 +643,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = pexto.17.b
+		name = pextoglazia.17.b
 		ai_chance = { factor = 3 }
 		define_advisor = {
 			type = inquisitor
@@ -657,16 +657,16 @@ country_event = {
 
 #Nevian Divorce
 country_event = {
-	id = pexto.18
-	title = pexto.18.t
-	desc = pexto.18.d
+	id = pextoglazia.18
+	title = pextoglazia.18.t
+	desc = pextoglazia.18.d
 	picture = CIVIL_WAR_eventPicture
 	fire_only_once = yes
 	major = yes
 
 	trigger = {
-		ai = yes
 		tag = NVI
+		ai = yes
 		NOT = { has_country_flag = nevia_formed }
 	}
 
@@ -675,7 +675,7 @@ country_event = {
 	}
 
 	option = {
-		name = pexto.18.a
+		name = pextoglazia.18.a
 		ai_chance = { factor = 5 }
 		release = KRH
 		release = FST
@@ -695,15 +695,15 @@ country_event = {
 
 #Nevian War
 country_event = {
-	id = pexto.19
-	title = pexto.19.t
-	desc = pexto.19.d
+	id = pextoglazia.19
+	title = pextoglazia.19.t
+	desc = pextoglazia.19.d
 	picture = CIVIL_WAR_eventPicture
 	fire_only_once = yes
 
 	trigger = {
-		ai = no
 		tag = NVI
+		ai = no
 		NOT = { has_country_flag = nevia_formed }
 	}
 
@@ -712,7 +712,7 @@ country_event = {
 	}
 
 	option = {
-		name = pexto.19.a
+		name = pextoglazia.19.a
 		ai_chance = { factor = 5 }
 		5312 = {
 			if = {
@@ -774,9 +774,9 @@ country_event = {
 
 #Lasdy issue - Event 1 (Pixrol is angry)
 country_event = {
-	id = pexto.20
-	title = pexto.20.t
-	desc = pexto.20.d
+	id = pextoglazia.20
+	title = pextoglazia.20.t
+	desc = pextoglazia.20.d
 	picture = CONQUEST_eventPicture
 	fire_only_once = yes
 
@@ -791,7 +791,7 @@ country_event = {
 	}
 
 	option = { #Seek Pextoglazian support
-		name = pexto.20.a
+		name = pextoglazia.20.a
 		ai_chance = { factor = 5 }
 		5309 = {
 			add_unrest = 10
@@ -800,18 +800,18 @@ country_event = {
 		PNV = {
 			country_event = {
 				days = 1
-				id = pexto.22
+				id = pextoglazia.22
 			}
 		}
 		PEX = {
 			country_event = {
 				days = 30
-				id = pexto.23
+				id = pextoglazia.23
 			}
 		}
 	}
 	option = {
-		name = pexto.20.b #Give up
+		name = pextoglazia.20.b #Give up
 		ai_chance = { factor = 1 }
 		5309 = {
 			cede_province = PNV
@@ -819,7 +819,7 @@ country_event = {
 		PNV = {
 			country_event = {
 				days = 1
-				id = pexto.21
+				id = pextoglazia.21
 			}
 		}
 	}
@@ -827,15 +827,15 @@ country_event = {
 
 #Lasdy issue - Event 2 (Nevian response if ceded)
 country_event = {
-	id = pexto.21
-	title = pexto.21.t
-	desc = pexto.21.d
+	id = pextoglazia.21
+	title = pextoglazia.21.t
+	desc = pextoglazia.21.d
 	picture = CONQUEST_eventPicture
 	fire_only_once = yes
 	is_triggered_only = yes
 
 	option = {
-		name = pexto.21.a
+		name = pextoglazia.21.a
 		ai_chance = { factor = 1 }
 		5309 = {
 			cede_province = PNV #for tooltip's sake
@@ -853,58 +853,61 @@ country_event = {
 
 #Lasdy issue - Event 3 (Nevian response if contested)
 country_event = {
-	id = pexto.22
-	title = pexto.22.t
-	desc = pexto.22.d
+	id = pextoglazia.22
+	title = pextoglazia.22.t
+	desc = pextoglazia.22.d
 	picture = ACCUSATION_eventPicture
 	fire_only_once = yes
 	is_triggered_only = yes
 
 	option = {
-		name = pexto.22.a
+		name = pextoglazia.22.a
 		ai_chance = { factor = 1 }
 		add_historical_rival = PPX
+		PPX = {
+			add_historical_rival = ROOT
+		}
 	}
 }
 
 #Lasdy issue - Event 4 (Pextoglazia chooses the trial)
 country_event = {
-	id = pexto.23
-	title = pexto.23.t
-	desc = pexto.23.d
+	id = pextoglazia.23
+	title = pextoglazia.23.t
+	desc = pextoglazia.23.d
 	picture = ACCUSATION_eventPicture
 	fire_only_once = yes
 	is_triggered_only = yes
 
 	option = { #Trial by ordeal
-		name = pexto.23.a
+		name = pextoglazia.23.a
 		ai_chance = { factor = 7 }
 		PPX = {
 			country_event = {
 				days = 1
-				id = pexto.27
+				id = pextoglazia.27
 			}
 		}
 		PNV = {
 			country_event = {
 				days = 1
-				id = pexto.27
+				id = pextoglazia.27
 			}
 		}
 		random_list = {
 			1 = { #Nevia wins the trial
-				PNV = {
+				PEX = {
 					country_event = {
 						days = 10
-						id = pexto.28
+						id = pextoglazia.28
 					}
 				}
 			}
 			1 = { #Pixrol wins the trial
-				PNV = {
+				PEX = {
 					country_event = {
 						days = 10
-						id = pexto.29
+						id = pextoglazia.29
 					}
 				}
 			}
@@ -912,7 +915,7 @@ country_event = {
 
 	}
 	option = { #Nevia's by right
-		name = pexto.23.b
+		name = pextoglazia.23.b
 		ai_chance = { factor = 1 }
 		5309 = {
 			cede_province = PNV
@@ -920,19 +923,19 @@ country_event = {
 		PNV = {
 			country_event = {
 				days = 1
-				id = pexto.24
+				id = pextoglazia.24
 			}
 		}
 		PPX = {
 			country_event = {
 				days = 1
-				id = pexto.25
+				id = pextoglazia.25
 			}
 		}
 
 	}
 	option = { #Pixrol's by right
-		name = pexto.23.c
+		name = pextoglazia.23.c
 		ai_chance = { factor = 1 }
 		5309 = {
 			cede_province = PPX
@@ -940,19 +943,19 @@ country_event = {
 		PPX = {
 			country_event = {
 				days = 1
-				id = pexto.24
+				id = pextoglazia.24
 			}
 		}
 		PNV = {
 			country_event = {
 				days = 1
-				id = pexto.25
+				id = pextoglazia.25
 			}
 		}
 
 	}
 	option = { #Let them fight it out
-		name = pexto.23.d
+		name = pextoglazia.23.e
 		ai_chance = { factor = 1 }
 		5309 = {
 			add_nationalism = 10
@@ -967,13 +970,13 @@ country_event = {
 		PPX = {
 			country_event = {
 				days = 1
-				id = pexto.26
+				id = pextoglazia.26
 			}
 		}
 		PNV = {
 			country_event = {
 				days = 1
-				id = pexto.26
+				id = pextoglazia.26
 			}
 		}
 	}
@@ -981,15 +984,15 @@ country_event = {
 
 #Lasdy issue - Event 5 (Pextoglazia supports our claim)
 country_event = {
-	id = pexto.24
-	title = pexto.24.t
-	desc = pexto.24.d
+	id = pextoglazia.24
+	title = pextoglazia.24.t
+	desc = pextoglazia.24.d
 	picture = DEBATE_REPUBLICAN_eventPicture
 	fire_only_once = yes
 	is_triggered_only = yes
 
 	option = {
-		name = pexto.24.a
+		name = pextoglazia.24.a
 		ai_chance = { factor = 1 }
 		5309 = {
 			cede_province = root
@@ -1001,15 +1004,15 @@ country_event = {
 
 #Lasdy issue - Event 6 (Pextoglazia doesn't support our claim)
 country_event = {
-	id = pexto.25
-	title = pexto.25.t
-	desc = pexto.25.d
+	id = pextoglazia.25
+	title = pextoglazia.25.t
+	desc = pextoglazia.25.d
 	picture = DEBATE_REPUBLICAN_eventPicture
 	fire_only_once = yes
 	is_triggered_only = yes
 
 	option = {
-		name = pexto.25.a
+		name = pextoglazia.25.a
 		ai_chance = { factor = 1 }
 		add_devotion = -10
 		add_liberty_desire = 10
@@ -1018,14 +1021,14 @@ country_event = {
 
 #Lasdy issue - Event 7 (Pextoglazia is a pussy and supports neither side)
 country_event = {
-	id = pexto.26
-	title = pexto.26.t
-	desc = pexto.26.d
+	id = pextoglazia.26
+	title = pextoglazia.26.t
+	desc = pextoglazia.26.d
 	picture = ANGRY_MOB_eventPicture
 	is_triggered_only = yes
 
 	option = {
-		name = pexto.26.a
+		name = pextoglazia.26.a
 		ai_chance = { factor = 1 }
 		add_liberty_desire = 25
 	}
@@ -1033,39 +1036,39 @@ country_event = {
 
 #Lasdy issue - Event 8 (Trial by Ordeal)
 country_event = {
-	id = pexto.27
-	title = pexto.27.t
-	desc = pexto.27.d
+	id = pextoglazia.27
+	title = pextoglazia.27.t
+	desc = pextoglazia.27.d
 	picture = RELIGION_eventPicture
 	is_triggered_only = yes
 
 	option = {
-		name = pexto.27.a
+		name = pextoglazia.27.a
 		ai_chance = { factor = 1 }
 	}
 }
 
 #Lasdy issue - Event 9 (Nevia wins)
 country_event = {
-	id = pexto.28
-	title = pexto.28.t
-	desc = pexto.28.d
+	id = pextoglazia.28
+	title = pextoglazia.28.t
+	desc = pextoglazia.28.d
 	picture = POPE_PREACHING_eventPicture
 	is_triggered_only = yes
 
 	option = {
-		name = pexto.28.a
+		name = pextoglazia.28.a
 		ai_chance = { factor = 1 }
 		PNV = {
 			country_event = {
 				days = 1
-				id = pexto.30
+				id = pextoglazia.30
 			}
 		}
 		PPX = {
 			country_event = {
 				days = 1
-				id = pexto.31
+				id = pextoglazia.31
 			}
 		}
 	}
@@ -1073,25 +1076,25 @@ country_event = {
 
 #Lasdy issue - Event 10 (Pixrol wins)
 country_event = {
-	id = pexto.29
-	title = pexto.29.t
-	desc = pexto.29.d
+	id = pextoglazia.29
+	title = pextoglazia.29.t
+	desc = pextoglazia.29.d
 	picture = POPE_PREACHING_eventPicture
 	is_triggered_only = yes
 
 	option = {
-		name = pexto.29.a
+		name = pextoglazia.29.a
 		ai_chance = { factor = 1 }
 		PNV = {
 			country_event = {
 				days = 1
-				id = pexto.31
+				id = pextoglazia.31
 			}
 		}
 		PPX = {
 			country_event = {
 				days = 1
-				id = pexto.30
+				id = pextoglazia.30
 			}
 		}
 	}
@@ -1099,14 +1102,14 @@ country_event = {
 
 #Lasdy issue - Event 11 (We won)
 country_event = {
-	id = pexto.30
-	title = pexto.30.t
-	desc = pexto.30.d
+	id = pextoglazia.30
+	title = pextoglazia.30.t
+	desc = pextoglazia.30.d
 	picture = POPE_PREACHING_eventPicture
 	is_triggered_only = yes
 
 	option = {
-		name = pexto.30.a
+		name = pextoglazia.30.a
 		ai_chance = { factor = 1 }
 		add_devotion = 10
 		add_piety = 0.2
@@ -1119,20 +1122,20 @@ country_event = {
 
 #Lasdy issue - Event 12 (We lost)
 country_event = {
-	id = pexto.31
-	title = pexto.31.t
-	desc = pexto.31.d
+	id = pextoglazia.31
+	title = pextoglazia.31.t
+	desc = pextoglazia.31.d
 	picture = POPE_PREACHING_eventPicture
 	is_triggered_only = yes
 
 	option = {
-		name = pexto.31.a
+		name = pextoglazia.31.a
 		ai_chance = { factor = 1 }
 		add_devotion = 10
 	}
 
 	option = {
-		name = pexto.31.b
+		name = pextoglazia.31.b
 		ai_chance = { factor = 1 }
 		add_piety = -0.2
 		add_prestige = -10
@@ -1142,9 +1145,9 @@ country_event = {
 
 #Walara is formed
 country_event = {
-	id = pexto.32
-	title = pexto.32.t
-	desc = pexto.32.d
+	id = pextoglazia.32
+	title = pextoglazia.32.t
+	desc = pextoglazia.32.d
 	picture = DIPLOMACY_eventPicture
 	fire_only_once = yes
 
@@ -1153,72 +1156,72 @@ country_event = {
 	}
 
 	trigger = {
+		tag = PIX
 		exists = JNS
 		exists = PIX
-		tag = PIX
 	}
 
 	option = { #Yes Walara
-		name = pexto.32.a
+		name = pextoglazia.32.a
 		ai_chance = { factor = 3 }
 		JNS = {
 			country_event = {
 				days = 1
-				id = pexto.33
+				id = pextoglazia.33
 			}
 		}
 	}
 
 	option = { #No Walara???
-		name = pexto.32.b
+		name = pextoglazia.32.b
 		ai_chance = { factor = 1 }
 	}
 }
 
 country_event = {
-	id = pexto.33
-	title = pexto.33.t
-	desc = pexto.33.d
+	id = pextoglazia.33
+	title = pextoglazia.33.t
+	desc = pextoglazia.33.d
 	picture = DIPLOMACY_eventPicture
 	fire_only_once = yes
 	is_triggered_only = yes
 
 	option = { #Yes
-		name = pexto.32.a
+		name = pextoglazia.32.a
 		ai_chance = { factor = 1 }
 		PIX = {
 			country_event = {
 				days = 1
-				id = pexto.34
+				id = pextoglazia.34
 			}
 		}
 		custom_tooltip = END_GAME_ANNEX
 	}
 
 	option = { #No
-		name = pexto.32.b
+		name = pextoglazia.32.b
 		highlight = yes
 		ai_chance = { factor = 0 }
 		PIX = {
 			country_event = {
 				days = 1
-				id = pexto.35
+				id = pextoglazia.35
 			}
 		}
 	}
 }
 
 country_event = {
-	id = pexto.34
-	title = pexto.34.t
-	desc = pexto.34.d
+	id = pextoglazia.34
+	title = pextoglazia.34.t
+	desc = pextoglazia.34.d
 	picture = GOOD_WITH_MONARCH_eventPicture
 	major = yes
 	fire_only_once = yes
 	is_triggered_only = yes
 
 	option = { #Theocratic Walara
-		name = pexto.34.a
+		name = pextoglazia.34.a
 		ai_chance = { factor = 2 }
 		inherit = JNS
 
@@ -1256,7 +1259,7 @@ country_event = {
 	}
 
 	option = { #Monarchy Walara
-		name = pexto.34.b
+		name = pextoglazia.34.b
 		ai_chance = { factor = 2 }
 		inherit = JNS
 
@@ -1294,7 +1297,7 @@ country_event = {
 	}
 
 	option = { #HM Walara
-		name = pexto.34.c
+		name = pextoglazia.34.c
 		ai_chance = { factor = 4 }
 		inherit = JNS
 
@@ -1333,23 +1336,23 @@ country_event = {
 }
 
 country_event = {
-	id = pexto.35
-	title = pexto.35.t
-	desc = pexto.35.d
+	id = pextoglazia.35
+	title = pextoglazia.35.t
+	desc = pextoglazia.35.d
 	picture = BAD_WITH_MONARCH_eventPicture
 	fire_only_once = yes
 	is_triggered_only = yes
 
 	option = {
-		name = pexto.35.a
+		name = pextoglazia.35.a
 		ai_chance = { factor = 2 }
 	}
 }
 
 country_event = {
-	id = pexto.36
-	title = pexto.36.t
-	desc = pexto.36.d
+	id = pextoglazia.36
+	title = pextoglazia.36.t
+	desc = pextoglazia.36.d
 	picture = POPE_PREACHING_eventPicture
 	fire_only_once = yes
 	major = yes
@@ -1370,14 +1373,14 @@ country_event = {
 			school = walaran_school
 		}
 		add_prestige = 20
-		name = pexto.36.a
+		name = pextoglazia.36.a
 		ai_chance = { factor = 2 }
 	}
 }
 
 #secretly make pomlen a high bishophric if its not one yet
 country_event = {
-	id = pexto.37
+	id = pextoglazia.37
 	fire_only_once = yes
 	hidden = yes
 
@@ -1395,22 +1398,22 @@ country_event = {
 	option = {
 		change_government = theocracy
 		add_government_reform = high_bishophric_reform
-		name = pexto.37.a
+		name = pextoglazia.37.a
 		ai_chance = { factor = 2 }
 	}
 }
 
 #Get rid of stolen dioceses
 country_event = {
-	id = pexto.38
+	id = pextoglazia.38
 	hidden = yes
 	fire_only_once = yes
 
 	trigger = {
+		diocese = 1
 		NOT = {
 			tag = PEX
 		}
-		diocese = 1
 	}
 
 	immediate = {
@@ -1423,14 +1426,14 @@ country_event = {
 	}
 
 	option = {
-		name = pexto.38.a
+		name = pextoglazia.38.a
 		ai_chance = { factor = 1 }
 	}
 }
 
 #Kill pomlen rebels
 country_event = {
-	id = pexto.39
+	id = pextoglazia.39
 	hidden = yes
 	fire_only_once = yes
 
@@ -1454,13 +1457,13 @@ country_event = {
 	}
 
 	option = {
-		name = pexto.39.a
+		name = pextoglazia.39.a
 		ai_chance = { factor = 1 }
 	}
 }
 
 country_event = { #pexto save launch event
-	id = pexto.40
+	id = pextoglazia.40
 	hidden = yes
 	fire_only_once = yes
 
@@ -1471,6 +1474,9 @@ country_event = { #pexto save launch event
 		NOT = { has_country_flag = pextocivilwar }
         NOT = { has_country_flag = survived_fall }
         NOT = { has_country_flag = pex_collapse_prevented }
+		NOT = { has_global_flag = PextoglaziaDies }
+		NOT = { has_global_flag = PextoglaziaDevolves }
+		NOT = { has_global_flag = PextoglaziaSurvive }
 		NOT = {
 			is_year = 250
 		}
@@ -1482,24 +1488,57 @@ country_event = { #pexto save launch event
 	}
 
 	immediate = {
-		random = {
-			chance = 20
-			country_event = {
-				id = pexto.41
+		if = {
+			limit = {
+				OR = {
+					PNV = {
+						ai = no
+					}
+					PPX = {
+						ai = no
+					}
+					PLM = {
+						ai = no
+					}
+					PTG = {
+						ai = no
+					}
+					PCG = {
+						ai = no
+					}
+					PHL = {
+						ai = no
+					}
+					PJS = {
+						ai = no
+					}
+					PLY = {
+						ai = no
+					}
+				}
+			}
+			add_adm_power = 1 ##Do nothing
+		}
+		else = {
+			random = {
+				chance = 8
+				country_event = {
+					id = pextoglazia.41
+				}
 			}
 		}
 	}
 
 	option = {
-		name = pexto.40.a
+		name = pextoglazia.40.a
 		ai_chance = { factor = 1 }
 	}
 }
 
 country_event = { #Disaster averted
-	id = pexto.41
-	title = pexto.41.t
-	desc = pexto.41.d
+	id = pextoglazia.41
+	title = pextoglazia.41.t
+	desc = pextoglazia.41.d
 	picture = BAD_WITH_MONARCH_eventPicture
 	is_triggered_only = yes
 	major = yes
@@ -1534,7 +1573,7 @@ country_event = { #Disaster averted
 	}
 
 	option = {
-		name = pexto.41.a
+		name = pextoglazia.41.a
 		ai_chance = { factor = 1 }
 		add_years_of_income	= -0.75
 		add_adm_power = -100
@@ -1546,4 +1585,433 @@ country_event = { #Disaster averted
 			duration = 5475
 		}
 	}
+}
+
+country_event = { #Railroad pexto save
+	id = pextoglazia.42
+	hidden = yes
+	fire_only_once = yes
+
+	trigger = {
+		tag = PEX
+		ai = yes
+		was_player = no
+		is_year = 220
+		has_global_flag = PextoglaziaSurvive
+	}
+	
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	immediate = {
+		country_event = {
+			id = pextoglazia.41
+		}
+	}
+
+	option = {
+		name = pextoglazia.40.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = { #country clone event fix (startup)
+	id = pextoglazia.43
+    hidden = yes
+    is_triggered_only = yes
+
+	trigger = {
+		OR = {
+			tag = PLM
+			tag = PTG
+			tag = PHL
+			tag = PCG
+			tag = PJS
+			tag = PPX
+			tag = PLY
+			tag = PNV
+		}
+		NOT = { has_country_flag = isPextoDiocese }
+		NOT = { is_year = 213 }
+	}
+
+	immediate = {
+        set_country_flag = isPextoDiocese
+    }
+
+    option = {
+        name = pextoglazia.43.a
+        ai_chance = { factor = 1 }
+    }
+}
+
+country_event = { #country clone event fix
+	id = pextoglazia.44
+    hidden = yes
+
+	trigger = {
+		has_country_flag = isPextoDiocese
+		OR = {
+			tag = LOM
+			tag = TER
+			tag = CEG
+			tag = JNS
+			tag = HIL
+			tag = PIX
+			tag = NVI
+			tag = LAY
+		}
+		OR = {
+			exists = PLM
+			exists = PTG
+			exists = PCG
+			exists = PJS
+			exists = PHL
+			exists = PPX
+			exists = PNV
+			exists = PLY
+		}
+	}
+
+	#mean_time_to_happen = {
+	#	months = 1
+	#}
+
+	immediate = {
+        if = {
+			limit = {
+				tag = LOM
+				exists = PLM
+			}
+			PLM = {
+				every_province = {
+					limit = {
+						owned_by = PLM
+					}
+					cede_province = LOM
+				}
+			}
+		}
+		if = {
+			limit = {
+				tag = TER
+				exists = PTG
+			}
+			PTG = {
+				every_province = {
+					limit = {
+						owned_by = PTG
+					}
+					cede_province = TER
+				}
+			}
+		}
+		if = {
+			limit = {
+				tag = HIL
+				exists = PHL
+			}
+			PHL = {
+				every_province = {
+					limit = {
+						owned_by = PHL
+					}
+					cede_province = HIL
+				}
+			}
+		}
+		if = {
+			limit = {
+				tag = CEG
+				exists = PCG
+			}
+			PCG = {
+				every_province = {
+					limit = {
+						owned_by = PCG
+					}
+					cede_province = CEG
+				}
+			}
+		}
+		if = {
+			limit = {
+				tag = JNS
+				exists = PJS
+			}
+			PJS = {
+				every_province = {
+					limit = {
+						owned_by = PJS
+					}
+					cede_province = JNS
+				}
+			}
+		}
+		if = {
+			limit = {
+				tag = PIX
+				exists = PPX
+			}
+			PPX = {
+				every_province = {
+					limit = {
+						owned_by = PPX
+					}
+					cede_province = PIX
+				}
+			}
+		}
+		if = {
+			limit = {
+				tag = LAY
+				exists = PLY
+			}
+			PLY = {
+				every_province = {
+					limit = {
+						owned_by = PLY
+					}
+					cede_province = LAY
+				}
+			}
+		}
+		if = {
+			limit = {
+				tag = NVI
+				exists = PNV
+			}
+			PNV = {
+				every_province = {
+					limit = {
+						owned_by = PNV
+					}
+					cede_province = NVI
+				}
+			}
+		}
+    }
+
+    option = {
+        name = pextoglazia.44.a
+        ai_chance = { factor = 1 }
+    }
+}
+
+country_event = { #delete pex cores
+	id = pextoglazia.45
+    hidden = yes
+    fire_only_once = yes
+
+	trigger = {
+		owns = 5337
+		NOT = { exists = PEX }
+	}
+
+	immediate = {
+		every_province = {
+			limit = {
+				OR = {
+					is_permanent_claim = PEX
+					is_claim = PEX
+					is_core = PEX
+				}
+			}
+			remove_claim = PEX
+			remove_core = PEX
+		}
+    }
+
+    option = {
+        name = pextoglazia.45.a
+        ai_chance = { factor = 1 }
+    }
+}
+
+country_event = { #Glazians settle in new pexamol
+	id = pextoglazia.46
+	title = pextoglazia.46.t
+	desc = pextoglazia.46.desc
+	picture = EUROPEAN_REFUGEES_eventPicture
+	fire_only_once = yes
+
+	trigger = {
+		owns_core_province = 5203
+		NOT = { exists = PEX }
+		NOT = { 5203 = { culture = Glazian } }
+		NOT = { primary_culture = Glazian }
+		is_year = 240
+		NOT = { is_year = 300 }
+	}
+
+	mean_time_to_happen = {
+		months = 36
+	}
+
+	option = { #New Pexamol 1: Allow them to stay
+        name = pextoglazia.46.a
+        ai_chance = {
+			factor = 10 
+			modifier = {
+				factor = 0.5
+				NOT = { num_of_cities = 2 }
+			}
+		}
+		trigger = {
+			tag = NPX
+		}
+		add_prestige = -10
+		5203 = {
+			add_base_tax = 1
+			add_province_modifier = {
+				name = npx_recent_smaller_glazian_settlement
+				duration = 7300
+			}
+		}
+		hidden_effect = {
+			random_province	= {
+				limit = {
+					culture = Glazian
+					region = lomea_region
+				}
+				add_base_tax = -1
+			}
+		}
+    }
+
+	option = { #New Pexamol 2: Embrace Glazian culture
+        name = pextoglazia.46.b
+        ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0.1
+				NOT = { num_of_cities = 2 }
+			}
+			modifier = {
+				factor = 5
+				any_owned_province = { culture = Glazian }
+			}
+		}
+		trigger = {
+			tag = NPX
+		}
+		add_prestige = -25
+		change_primary_culture = Glazian
+		5203 = {
+			add_base_tax = 1
+			add_base_production = 1
+			add_base_manpower = 1
+			change_culture = Glazian
+			add_province_modifier = {
+				name = npx_recent_glazian_settlement
+				duration = 7300
+			}
+		}
+		hidden_effect = {
+			random_province	= {
+				limit = {
+					culture = Glazian
+					region = lomea_region
+				}
+				add_base_tax = -1
+			}
+			random_province	= {
+				limit = {
+					culture = Glazian
+					region = lomea_region
+				}
+				add_base_production = -1
+			}
+			random_province	= {
+				limit = {
+					culture = Glazian
+					region = lomea_region
+				}
+				add_base_manpower = -1
+			}
+		}
+    }
+
+	option = { #New Pexamol 3: Kick them out
+        name = pextoglazia.46.c
+        ai_chance = { factor = 2 }
+		trigger = {
+			tag = NPX
+		}
+		add_stability = -1
+		5203 = {
+			add_province_modifier = {
+				name = npx_kicked_out_glazians
+				duration = 1825
+			}
+		}
+    }
+
+	option = { #Let them stay
+        name = pextoglazia.46.d
+        ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 100
+				primary_culture = Glazian
+			}
+		}
+		trigger = {
+			NOT = { tag = NPX }
+		}
+		5203 = {
+			add_base_tax = 1
+			add_base_production = 1
+			add_base_manpower = 1
+			change_culture = Glazian
+			add_province_modifier = {
+				name = npx_recent_glazian_settlement
+				duration = 7300
+			}
+		}
+		hidden_effect = {
+			random_province	= {
+				limit = {
+					culture = Glazian
+					region = lomea_region
+				}
+				add_base_tax = -1
+			}
+			random_province	= {
+				limit = {
+					culture = Glazian
+					region = lomea_region
+				}
+				add_base_production = -1
+			}
+			random_province	= {
+				limit = {
+					culture = Glazian
+					region = lomea_region
+				}
+				add_base_manpower = -1
+			}
+		}
+    }
+
+	option = { #Kick them out
+        name = pextoglazia.46.e
+        ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 10
+				tag = POM
+			}
+		}
+		trigger = {
+			NOT = { tag = NPX }
+		}
+		5203 = {
+			add_province_modifier = {
+				name = npx_kicked_out_glazians
+				duration = 1825
+			}
+		}
+    }
 }

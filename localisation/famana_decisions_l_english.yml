@@ -1,6 +1,6 @@
 ﻿l_english:
   become_emmi_title:0 "Become an Em'mi"   
-  become_emmi_desc:0 "The time has come to introduce a more sophisticated form of government."
+  become_emmi_desc:0 "We are not a nation of nomadic raiders anymore. The time has come to introduce a more sophisticated form of government, while still maintaining our heritage."
   become_emmi_an_title:0 "Become an Em'mi"   
   become_emmi_an_desc:0 "The time has come to abandon the shores and focus on the land."
 
@@ -14,15 +14,15 @@
   abolish_sifa_desc:0 "A fundamental part of the Oppian religion is Sifa, a kind of spiritual energy everyone is born with and can never change. This belief has held back Oppian society since its inception, limiting social mobility and giving the nobility an excuse to oppress the peasants. As a bastion of the Reformed Oppian faith, we ought to end this regressive institution if we are able to do so."
 
   convert_to_lathvy_title:0 "Convert to Lathvy"
-  convert_to_lathvy_desc:0 "A foreign faith spreads throughout our lands. Its adherents speak of two gods locked in an eternal battle of good against evil. This new religion presents an opportunity for us to truly abandon our old tribal customs. Perhaps lathvy is right for us?"
+  convert_to_lathvy_desc:0 "A foreign faith spreads throughout our lands. Its adherents speak of two gods locked in an eternal battle of good against evil. This new religion presents an opportunity for us to truly abandon our old tribal customs. Perhaps Lathvy is right for us?"
   convert_to_rochoni_title:0 "Convert to Rochoni Lathvy"
-  convert_to_rochoni_desc:0 "A foreign faith spreads throughout our lands. Its adherents speak of two gods locked in an eternal battle of good against evil. This new religion presents an opportunity for us to truly abandon our old tribal customs. Perhaps lathvy is right for us?"
+  convert_to_rochoni_desc:0 "A foreign faith spreads throughout our lands. Its adherents speak of two gods locked in an eternal battle of good against evil. This new religion presents an opportunity for us to truly abandon our old tribal customs. Perhaps Lathvy is right for us?"
 
   ximal_capital_title:0 "Move Capital to Ximal"
   ximal_capital_desc:0 "At last, Ximal is in our hands. It is time to formally proclaim the city as our capital once more!"
 
   nafa_rini_title:0 "Adopt the Rini faith"
-  nafa_rini_desc:0 "As the true guardian of the lathvy faith, we ought to spread the faith everywhere we can. A new lathvy sect is calling for a crusade against all heathens who seek to aid Loys in his evil battle... perhaps this is just what we need."
+  nafa_rini_desc:0 "As the true guardian of the Lathvy faith, we ought to spread the faith everywhere we can. A new Lathvy sect is calling for a crusade against all heathens who seek to aid Loys in his evil battle... perhaps this is just what we need."
 
   syadona_capital_title:0 "Move Capital to Syadona"
   syadona_capital_desc:0 "Tyarda is a good location for our new capital. It has all the natural advantages, and by conquest, we shall make it our citadel!"
@@ -66,15 +66,70 @@
   conquer_vava_desc:0 "You need §YDiplomatic Technology 9§! to colonize this province."
   colonize_borlebin_title:0 "§YColonize Borlebin§!"
   colonize_borlebin_desc:0 "You need §YDiplomatic Technology 9§! to colonize these provinces."
-  conquer_unnamed_area_23_title:0 "§YColonize Reyel§!"
-  conquer_unnamed_area_23_desc:0 "You need §YDiplomatic Technology 11§! to colonize these provinces."
+  conquer_reyel_area_title:0 "§YColonize Reyel§!"
+  conquer_reyel_area_desc:0 "You need §YDiplomatic Technology 11§! to colonize these provinces."
   conquer_nuros_title:0 "§YColonize Nuros§!"
   conquer_nuros_desc:0 "You need §YDiplomatic Technology 9§! to colonize these provinces or §YDiplomatic Technology 11§! if §YRestema§! does not exist."
   conquer_5184_title:0 "§YColonize Nirloz§!"
-  conquer_5184_desc:0 "You need §YDiplomatic Technology 11§! to colonize this provinces."
-  conquer_area_232_title:0 "Colonize Upper Bizugu"
-  conquer_5913_title:0 "Colonize Oynir"
-  conquer_6076_6077:0 "Colonize Nonko"
-  conquer_5935_5934_title:0 "Colonize Tirbit"
-  conquer_5933_title:0 "Colonize Quanaritte"
-  conquer_5932_title:0 "Colonize Jarram"
+  conquer_5184_desc:0 "You need §YDiplomatic Technology 11§! to colonize this province."
+  conquer_area_232_title:0 "§YColonize Upper Bizugu§!"
+  conquer_5913_title:0 "§YColonize Oynir§!"
+  conquer_6076_6077:0 "§YColonize Nonko§!"
+  conquer_5935_5934_title:0 "§YColonize Tirbit§!"
+  conquer_5933_title:0 "§YColonize Quanaritte§!"
+  conquer_5932_title:0 "§YColonize Jarram§!"
+  colonize_okus_title:0 "§YColonize Okus§!"
+  colonize_okus_desc:0 "You need §YDiplomatic Technology 18§! to colonize this province."
+
+  jexus_become_morian_title:0 "Convert to Morian"
+  jexus_become_morian_desc:0 "Jexus was once the Morian capital. With our conquest of Morsum, the Morian Holy City purposefully built as a centre of Mor worship, we may need to reconsider our allegiance to the previous Gods."
+  reform_morian_religion_title:0 "Reintroduce Polytheism"
+  reform_morian_religion_desc:0 "For long now, the Morians have been an exclusively monotheistic people. However, we now control the three most important Morian temples. We have the ability to call a council of Morian ministers and alchemists to reconsider our belief in Him as the only God."
+
+  naf_encourage_exploration_title:0 "Encourage Exploration"
+  naf_encourage_exploration_desc:0 "To find out more about the world in which we live, we must recruit a great explorer to map out new territories for us."
+
+  release_tck_decision_title:0 "Release the Crown City"
+  release_tck_decision_desc:0 "The Crown of Emintas, an almost holy artifact for the Oppians, may lend us some legitimacy if we were to make the King of Quanex our crown bearer. In addition, the Sar dynasty are known for their diplomatic and adminsitrative prowess. If we could utilize their skills, it would greatly benefit our realm, and giving them some degree of freedom could help a lot."
+
+  relight_pawani_pyramids_decision_title:0 "Relight the Pawani Pyramids"
+  relight_pawani_pyramids_decision_desc:0 "The city of Pexamol was the ancient centre of the Pawani faith. Now that we have taken it back, we turn towards the ancient temples and pyramids that litter the city, long thrown into disarray by years of Xalian rule. In the past, they were used for many religious services, such as creating massive bonfires on their tips to ward off evil spirits, and to catalogue the movements of the heavens. We can finally restore these old functions."
+
+  restore_xalian_military_title:0 "£mil£ Restore the Xalian Religion by Force"
+  restore_xalian_military_desc:0 "The Xalian People have long been divided by a pointless schism. There is too much infighting over this God and that God, and we've completely lost track of who we are. We have also disgraced our religion with our own personal interests, promoting the Gods we want instead of seeing the Universe as it is. It is time we finally settle this pointless matter, and return to a state of brotherhood, celebrating all four Gods equally."
+
+  destroy_the_colossus_title:0 "Destroy the Colossus"
+  destroy_the_colossus_desc:0 "The Colossus of Agixion is an eyesore! It celebrates Agixader, the legendary founder of Moxon, but doesn't acknowledge his crimes against the Archipelago Kalargans... actually, nowhere are Moxon's crimes against Archipelago Kalargans shown! This is a travesty!"
+  
+  hold_a_holy_hunt_title:0 "Organise a Holy Hunt"
+  hold_a_holy_hunt_desc:0 "The [Root.Monarch.GetTitle] will organise a sacred hunt where killed animals are sacrificed to the Gods to please them. This will bring prosperity and peace to our people."
+  
+  perform_human_sacrifices_title:0 "Perform Human Sacrifices"
+  perform_human_sacrifices_desc:0 "The Sun glares upon us. Watching, watching, always watching. Who knows what it could do if we were to upset it? Best to give it an offering just in case. Our slaves will do, they are expendable."
+  
+  perform_enemy_sacrifices_title:0 "Sacrifice Captured Enemies"
+  perform_enemy_sacrifices_desc:0 "In wartime, we must perform sacrifices if we want the favor of the gods. Giving captured enemy soldiers to the gods will certainly earn us their favor!"
+
+ tck_search_blade_of_astom_title:0 "Search for the Blade of Astom"
+ tck_search_blade_of_astom_desc:0 "The Blade of Astom was a crucial artefact of the Oppian Empire. It was wielded by the Oppian Emperor itself. It got its name from the Astom people, from which the City would be derived, where it was said to have been given to the Emperor as a gift. Although there are many legends about its supposedly magical powers, it is still just a sword; albeit, one that could give us immense military inspiration should we proclaim ourselves its owner."
+
+ tck_search_galagums_urn_title:0 "Search for Galagum's Urn"
+ tck_search_galagums_urn_desc:0 "Galagum Accatis was one of the most famous diplomats and generals of the Oppian Empire. Although he came from our rival family - the Accatis - we still cannot deny his excellance. It was he who famously led campaigns against many of the natives of the Oppian Empire, but that was not his most famous feat. No, he is nowadays best known for his invasion of Maky as well as his negotiations that eventually led to the King of Maky swearing himself an Oppian Subject. When he died, he was cremated and his ashes were put in an Urn in Quanex - which just so happened to disappear in the messy collapse of Oppia. Hunting his ashes down will allow us to both assert our final dominance over the last living Accatis nowadays, and compare him to our own diplomatic genius, Mensel Sar."
+
+ tck_search_imperial_standard_title:0 "Search for the First Imperial Standard"
+ tck_search_imperial_standard_desc:0 "The First Imperial Standard was created when the warring Oppian City States officially united under the then Oppian Confederation, ruled by the Oppian Emperor. Over time, as Oppia Expanded, the confederation lost their power and the Emperor gained more control over the Empire, but throughout Oppia's entire history, one iconic flag was flown. The first design of this flag was on show at the Imperial Palace of Quanex, but must've been stolen following the collapse of the Oppian Empire. This is unnacceptable. If we manage to find it again, we will be able to compare our modern state to the same expansionist history as the Oppian Empire."
+
+ colonize_alqyl_title:0 "§YColonize Aqlyl§!"
+ colonize_alqyl_desc:0 "You need §YDiplomatic Technology 10§! to colonize this province."
+ colonize_asetli_title:0 "§YColonize Asetli§!"
+ colonize_asetli_desc:0 "You need §YDiplomatic Technology 12§! to colonize this province."
+ colonize_yarong_title:0 "§YColonize Yarong§!"
+ colonize_yarong_desc:0 "You need §YDiplomatic Technology 15§! to colonize this province."
+ invade_gacil_title:0 "§YColonize Gacil§!"
+ invade_gacil_desc:0 ""
+
+ gotzlic_colonist_decision_title:0 "Establish Frontier Settlements"
+ gotzlic_colonist_decision_desc:0 "We control only a fraction of Gotzlica. Most of our people live out in the wilderness, not tethered to any state. It is time for that to change."
+
+ nafa_astronomers_title:0 "Establish the Syadona Astronomers Society"
+ nafa_astronomers_desc:0 "Nafan philosophy has come a long way, but we still do not fully understand the physical world around us. The Eclipse allowed for the rise of our country, but we do not know what it all meant. What is Ara trying to tell us?"

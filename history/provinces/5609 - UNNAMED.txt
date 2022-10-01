@@ -1,9 +1,10 @@
 discovered_by = east_gomic_tech_gr
-discovered_by = north_gomic_tech_gr
+discovered_by = lathvy_tech_gr
 discovered_by = west_gomic_tech_gr
 culture = Geteri
 religion = bamali
 owner = YAB
+is_city = yes
 controller = YAB
 add_core = YAB
 add_core = GET
@@ -17,6 +18,16 @@ base_production = 1
 trade_goods = salt
 base_manpower = 1
 capital = "Rasimol"
-is_city = no
-extra_cost = 1
+ 
 
+
+212.6.7 = {
+owner = GET
+is_city = yes
+controller = GET
+add_core = GET
+remove_core = YAB
+#culture = 
+#religion = 
+#trade_goods = 
+}

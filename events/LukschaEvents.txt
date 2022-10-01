@@ -1,0 +1,613 @@
+namespace = lukscham
+
+country_event = { #ai lukscham
+	id = lukscham.1
+	hidden = yes
+	fire_only_once = yes
+
+	trigger = {
+		#any_owned_province = {
+		#	region = lukscha_region
+		#}
+		owns = 6499
+		NOT = {exists = LKS}
+		ai = yes
+		is_year = 310
+		NOT = {
+			has_global_flag = notAIlukscham
+		}
+		area_76 = {
+			type = all
+			owner = {
+				primary_culture = Lukschan
+				ai = yes
+			}
+		}
+		area_77 = {
+			type = all
+			owner = {
+				primary_culture = Lukschan
+				ai = yes
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 240
+		#months = 1
+	}
+	
+	immediate = {
+		area_76 = {
+			cede_province = LKS
+			add_core = LKS
+		}
+		area_77 = {
+			cede_province = LKS
+			add_core = LKS
+		}
+		LKS = {
+			set_capital	= 6499
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			lukscha_region = {
+				limit = {
+					NOT = {
+						owned_by = LKS
+					}
+					is_empty = yes
+				}
+				add_permanent_claim = LKS
+			}
+			lukscha_region = {
+				limit = {
+					NOT = {
+						OR = {
+							owned_by = LKS
+							is_empty = yes
+						}
+					}
+				}
+				add_core = LKS
+			}
+			add_prestige = 25
+			add_treasury = 1000
+			add_manpower = 50
+			country_event = {
+				id = lukscham.2
+			}
+			add_country_modifier = {
+				name = lukscha_ai_unif
+				duration = 9125
+			}
+		}
+	}
+	option = {
+        name = lukscham.1.a
+        ai_chance = { factor = 1 }
+    }
+}
+
+country_event = {
+	id = lukscham.2
+	hidden = yes
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	immediate = {
+		capital_scope = {
+    		ROOT = {
+        		infantry = PREV
+				infantry = PREV
+				infantry = PREV
+				infantry = PREV
+				infantry = PREV
+				infantry = PREV
+				infantry = PREV
+				infantry = PREV
+    		}
+		}
+	}
+
+	option = {
+        name = lukscham.2.a
+        ai_chance = { factor = 1 }
+    }
+}
+
+country_event = {
+	id = lukscham.3
+	hidden = yes
+	fire_only_once = yes
+	
+	trigger = {
+		primary_culture = Lukschan
+		NOT = {ai = yes}
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	immediate = {
+		set_global_flag = notAIlukscham
+	}
+
+	option = {
+        name = lukscham.3.a
+        ai_chance = { factor = 1 }
+    }
+}
+
+country_event = {
+	id = lukscham.4
+	picture = NUSANTARA_QUEEN_eventPicture
+	picture = FEMALES_eventpicture
+	title = lukscham.4.t
+	desc = lukscham.4.d
+	is_triggered_only = yes
+
+	immediate = {
+		set_saved_name = {
+			key = heir1
+			type = advisor
+			scope = ROOT
+		}
+		set_saved_name = {
+			key = heir2
+			type = advisor
+			scope = ROOT
+		}
+		set_saved_name = {
+			key = heir3
+			type = advisor
+			scope = ROOT
+		}
+	}
+
+	option = {
+        name = lukscham.4.a
+        ai_chance = { factor = 1 }
+		hidden_effect = {
+			kill_heir = {
+				allow_new_heir = no
+			}
+		}
+		define_heir = {
+			name = heir3
+			claim = 100
+			age = 3
+			female = yes
+		}
+    }
+	option = {
+        name = lukscham.4.b
+        ai_chance = { factor = 1 }
+		hidden_effect = {
+			kill_heir = {
+				allow_new_heir = no
+			}
+		}
+		define_heir = {
+			name = heir2
+			claim = 100
+			age = 3
+			female = yes
+		}
+    }
+	option = {
+        name = lukscham.4.c
+        ai_chance = { factor = 1 }
+		hidden_effect = {
+			kill_heir = {
+				allow_new_heir = no
+			}
+		}
+		define_heir = {
+			name = heir1
+			claim = 100
+			age = 3
+			female = yes
+		}
+    }
+}
+
+country_event = {
+	id = lukscham.5
+	picture = PROTESTANT_CATHOLIC_DEBATE_eventPicture
+	title = lukscham.5.t
+	desc = lukscham.5.d
+	fire_only_once = yes
+
+	trigger = {
+		tag = LKS
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	#immediate = {
+	#}
+
+	option = {
+        name = lukscham.5.a
+        ai_chance = { factor = 1 }
+		remove_government_reform = lukscha_tribe
+		change_government = republic
+		add_government_reform = lukscha_forum
+    }
+}
+
+country_event = { #give heirs
+	id = lukscham.6
+	hidden = yes
+
+	trigger = {
+		has_reform = lukscha_tribe
+		NOT = { has_heir = yes }
+	}
+
+	mean_time_to_happen = {
+		days = 30
+	}
+
+	immediate = {
+		country_event = {
+			id = lukscham.4
+		}
+	}
+
+	option = {
+		name = troll
+	}
+}
+
+country_event = { #First expansion (mission fired)
+	id = lukscham.7
+	picture = TRADEGOODS_eventPicture
+	title = lukscham.7.t
+	desc = lukscham.7.d
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = reached_rduma
+		}
+	}
+
+	option = {
+        name = lukscham.7.a
+        ai_chance = { factor = 1 }
+		every_province = {
+			limit = {
+				is_empty = yes
+				OR = {
+					area = area_80
+					area = area_79
+					area = area_76
+					area = area_77
+					area = area_78
+					area = area_83
+					area = area_155
+					province_id = 6520
+					province_id = 6525
+				}
+			}
+			cede_province = LKS
+			add_core = LKS
+			hidden_effect = {
+				random = {
+					chance = 50
+					add_base_tax = 1
+				}
+				random = {
+					chance = 50
+					add_base_production = 1
+				}
+				random = {
+					chance = 50
+					add_base_manpower = 1
+				}
+				random = {
+					chance = 5
+					change_trade_goods = silk
+				}
+				random = {
+					chance = 5
+					change_trade_goods = copper
+				}
+				random = {
+					chance = 8
+					change_trade_goods = incense
+				}
+				random = {
+					chance = 1
+					change_trade_goods = gold
+				}
+				random = {
+					chance = 4
+					change_trade_goods = gems
+				}
+				random = {
+					chance = 25
+					change_trade_goods = iron
+				}
+			}
+		}
+    }
+}
+
+country_event = { #Second expansion
+	id = lukscham.8
+	picture = CITY_DEVELOPMENT_eventPicture
+	title = lukscham.8.t
+	desc = lukscham.8.d
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	#trigger = {
+	#	tag = LKS
+	#	area_157 = {
+	#		type = all
+	#		owned_by = LKS
+	#	}
+	#	area_156 = {
+	#		type = all
+	#		owned_by = LKS
+	#	}
+	#}
+
+	#mean_time_to_happen = {
+	#	months = 1
+	#}
+
+	#immediate = {
+	#	hidden_effect = {
+	#
+	#	}
+	#}
+
+	option = {
+        name = lukscham.8.a
+        ai_chance = { factor = 1 }
+		every_province = {
+			limit = {
+				is_empty = yes
+				OR = {
+					area = area_81
+					area = area_181
+					province_id = 6521
+				}
+			}
+			cede_province = LKS
+			add_core = LKS
+			hidden_effect = {
+				random = {
+					chance = 50
+					add_base_tax = 1
+				}
+				random = {
+					chance = 50
+					add_base_production = 1
+				}
+				random = {
+					chance = 50
+					add_base_manpower = 1
+				}
+				random = {
+					chance = 5
+					change_trade_goods = silk
+				}
+				random = {
+					chance = 5
+					change_trade_goods = copper
+				}
+				random = {
+					chance = 8
+					change_trade_goods = incense
+				}
+				random = {
+					chance = 1
+					change_trade_goods = gold
+				}
+				random = {
+					chance = 4
+					change_trade_goods = gems
+				}
+				random = {
+					chance = 25
+					change_trade_goods = iron
+				}
+			}
+		}
+    }
+}
+
+country_event = { #Gotzlic attack
+	id = lukscham.9
+	picture = GENERALS_DISCUSSING_eventPicture
+	title = lukscham.9.t
+	desc = lukscham.9.d
+	fire_only_once = yes
+
+	trigger = {
+		tag = LKS
+		any_country = {
+            capital_scope = {
+                OR = {
+                    region_for_scope_province = {
+                        region = gotzlic_region
+                    }
+                    region_for_scope_province = {
+                        region = east_gotzlic_region
+                    }
+    	            region_for_scope_province = {
+    	                region = south_gotzlic_region
+    	            }
+    	        }
+    	    }
+			OR = {
+				defensive_war_with = LKS
+				offensive_war_with = LKS
+			}
+        }
+	}
+
+	mean_time_to_happen = {
+		months = 4
+	}
+
+	#immediate = {
+	#	hidden_effect = {
+	#
+	#	}
+	#}
+
+	option = {
+        name = lukscham.9.a
+        ai_chance = { factor = 1 }
+		every_province = {
+			limit = {
+				is_empty = yes
+				OR = {
+					area = area_82
+					area = area_170
+					area = area_171
+					area = area_157
+					area = area_188
+					area = area_187
+					province_id = 6521
+				}
+			}
+			cede_province = LKS
+			add_core = LKS
+			hidden_effect = {
+				random = {
+					chance = 50
+					add_base_tax = 1
+				}
+				random = {
+					chance = 50
+					add_base_production = 1
+				}
+				random = {
+					chance = 50
+					add_base_manpower = 1
+				}
+				random = {
+					chance = 5
+					change_trade_goods = silk
+				}
+				random = {
+					chance = 5
+					change_trade_goods = copper
+				}
+				random = {
+					chance = 8
+					change_trade_goods = incense
+				}
+				random = {
+					chance = 1
+					change_trade_goods = gold
+				}
+				random = {
+					chance = 4
+					change_trade_goods = gems
+				}
+				random = {
+					chance = 25
+					change_trade_goods = iron
+				}
+			}
+		}
+    }
+}
+
+country_event = { #Rduma if it didnt migrate
+	id = lukscham.10
+	picture = VILLAGE_RAIDED_eventPicture
+	title = lukscham.10.t
+	desc = lukscham.10.d
+	fire_only_once = yes
+
+	trigger = {
+		tag = LKS
+		has_country_flag = reached_rduma
+		area_156 = {
+			type = all
+			is_empty = yes
+		}
+		area_157 = {
+			type = all
+			is_empty = yes
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 10
+	}
+
+	#immediate = {
+	#	hidden_effect = {
+	#
+	#	}
+	#}
+
+	option = {
+        name = lukscham.10.a
+        ai_chance = { factor = 1 }
+		every_province = {
+			limit = {
+				is_empty = yes
+				OR = {
+					area = area_156
+					area = area_157
+				}
+			}
+			cede_province = LKS
+			add_core = LKS
+			hidden_effect = {
+				random = {
+					chance = 50
+					add_base_tax = 1
+				}
+				random = {
+					chance = 50
+					add_base_production = 1
+				}
+				random = {
+					chance = 50
+					add_base_manpower = 1
+				}
+				random = {
+					chance = 5
+					change_trade_goods = silk
+				}
+				random = {
+					chance = 5
+					change_trade_goods = copper
+				}
+				random = {
+					chance = 8
+					change_trade_goods = incense
+				}
+				random = {
+					chance = 1
+					change_trade_goods = gold
+				}
+				random = {
+					chance = 4
+					change_trade_goods = gems
+				}
+				random = {
+					chance = 25
+					change_trade_goods = iron
+				}
+			}
+		}
+    }
+}

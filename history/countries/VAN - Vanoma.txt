@@ -1,14 +1,15 @@
 government = monarchy
-add_government_reform = autocracy_reform
+add_government_reform = vanoman_elective_monarchy
 government_rank = 2
 mercantilism = 15
-technology_group = gotzlic_tech_gr
+technology_group = estali_tech_gr
 religion = va
 primary_culture = Vanoman
 add_accepted_culture = Emtik
 historical_friend = NAK
-historical_friend = VAN
-capital = 5669	# change to real capital
+historical_friend = BLK
+historical_friend = BMF
+capital = 5669	
 
 200.1.1 = { #change to 200 or smth
 	monarch = {
@@ -21,16 +22,16 @@ capital = 5669	# change to real capital
 	}
 }
 
-201.1.1 = { 
-	heir = {
-		name = "Somin"
-		monarch_name = "Somin"
-		dynasty = "Autu"
-		birth_date = 201.10.3
-		death_date = 271.2.4
-		claim = 95
-		adm = 1
-		dip = 5
-		mil = 4
-	}
-}
+#201.10.3 = { 
+#	heir = {
+#		name = "Somin"
+#		monarch_name = "Somin"
+#		dynasty = "Autu"
+#		birth_date = 201.10.3
+#		death_date = 271.2.4
+#		claim = 95
+#		adm = 1
+#		dip = 5
+#		mil = 4
+#	}
+#}

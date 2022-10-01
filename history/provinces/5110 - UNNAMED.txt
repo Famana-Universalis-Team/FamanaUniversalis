@@ -1,5 +1,5 @@
 discovered_by = east_gomic_tech_gr
-discovered_by = north_gomic_tech_gr
+discovered_by = lathvy_tech_gr
 discovered_by = west_gomic_tech_gr
 #Written with Eu4 Easy Province Creator by emiroercn
 #UNNAMED
@@ -10,13 +10,25 @@ hre = no
 
 base_tax = 3
 base_production = 3
-trade_goods = grain
+trade_goods = fish
 base_manpower = 2
 capital = "Algog "
-is_city = no
-extra_cost = 1
+ 
+
   
 
 owner = OSS
+is_city = yes
 controller = OSS
 add_core = OSS
+
+212.6.7 = {
+owner = NUS
+is_city = yes
+controller = NUS
+add_core = NUS
+remove_core = OSS
+#culture = 
+#religion = 
+#trade_goods = 
+}

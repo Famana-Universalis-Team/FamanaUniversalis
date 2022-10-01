@@ -1,0 +1,46 @@
+namespace = kapolia
+
+country_event = {
+	id = kapolia.1
+	title = kapolia.1.t
+	desc = kapolia.1.d
+	picture = VILLAGE_BURNING_eventPicture
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = kapolia.1.a #Burn Arrol To The Ground!
+		5481 = {
+			if = {
+				limit = { NOT = { province_has_center_of_trade_of_level = 3 } }
+				add_center_of_trade_level = 1
+			}
+			else = {
+				add_base_production = 3
+				add_base_manpower = 3
+				add_base_tax = 3
+			}
+			add_prosperity = 100
+		}	
+		5536 = {
+			if = {
+				limit = { province_has_center_of_trade_of_level = 2 }
+				add_center_of_trade_level = -1
+			}
+			else = {
+				add_devastation = 100
+				add_base_production = -3
+				add_base_manpower = -3
+				add_base_tax = -3 
+			}
+			
+		}
+		add_treasury = 250
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+}

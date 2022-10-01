@@ -1,10 +1,11 @@
-discovered_by = gotzlic_tech_gr
+discovered_by = estali_tech_gr
 discovered_by = east_gomic_tech_gr
-discovered_by = north_gomic_tech_gr
+discovered_by = lathvy_tech_gr
 discovered_by = west_gomic_tech_gr
 culture = Bamali_C
 religion = bamali
 owner = PAS
+is_city = yes
 controller = PAS
 add_core = PAS
 add_core = BMF
@@ -18,8 +19,8 @@ base_production = 3
 trade_goods = naval_supplies
 base_manpower = 3
 capital = "Feupansh"
-is_city = no
-extra_cost = 1
+ 
+
 fort_15th = yes
 
 

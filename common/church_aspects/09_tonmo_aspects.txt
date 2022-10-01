@@ -1,6 +1,6 @@
 call_chiefs_aspect = {
 	sprite = "GFX_call_chiefs_icon"
-	cost = 200
+	cost = 150
 	trigger = {
 		is_at_war = yes
 	}
@@ -23,6 +23,9 @@ recruit_warlord_aspect = {
 	cost = 100
 	effect = {
 		create_general = { tradition = 40 }
+		hidden_effect = {
+			add_army_professionalism = 0.01
+		}
 	}
 	ai_will_do = {
 		factor = 2
@@ -57,7 +60,7 @@ hold_war_ceremonies_aspect = {
 
 raise_horde_aspect = {
 	sprite = "GFX_raise_horde_icon"
-	cost = 100
+	cost = 150
 	trigger = {
 		NOT = { manpower_percentage	= 0.90 }
 	}

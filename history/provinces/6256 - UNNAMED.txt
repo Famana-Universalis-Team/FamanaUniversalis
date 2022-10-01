@@ -1,17 +1,18 @@
-discovered_by = gotzlic_tech_gr
-discovered_by = north_gomic_tech_gr
+discovered_by = estali_tech_gr
+discovered_by = lathvy_tech_gr
 add_core = MLD
 owner = MLD
+is_city = yes
 controller = MLD
 culture = Maldikian
-religion = lathvy
+religion = maldan
 hre = no
 base_tax = 1
 base_production = 1
 trade_goods = naval_supplies
 base_manpower = 1
 capital = "Beuzien"
-is_city = yes
+ 
 
 
 

@@ -2,6 +2,7 @@
 #UNNAMED
 add_core = KKR
 owner = KKR
+is_city = yes
 controller = KKR
 culture = Kurkari
 religion = bosisi
@@ -11,11 +12,9 @@ base_production = 4
 trade_goods = coffee
 base_manpower = 3
 capital = "Govat"
-is_city = yes
+ 
 center_of_trade = 1
 discovered_by = great_desert_tech_gr
-
-discovered_by = west_gomic_tech_gr
 
 
 

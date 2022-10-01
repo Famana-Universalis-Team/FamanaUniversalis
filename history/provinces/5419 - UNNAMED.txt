@@ -1,9 +1,10 @@
 discovered_by = east_gomic_tech_gr
-discovered_by = north_gomic_tech_gr
+discovered_by = lathvy_tech_gr
 discovered_by = west_gomic_tech_gr
 culture = Sixany
 religion = vinian
 owner = MRN
+is_city = yes
 controller = MRN
 add_core = MRN
 add_core = GMX
@@ -18,5 +19,5 @@ base_production = 5
 trade_goods = incense
 base_manpower = 3
 capital = "Ragor"
-is_city = no
-extra_cost = 1
+ 
+

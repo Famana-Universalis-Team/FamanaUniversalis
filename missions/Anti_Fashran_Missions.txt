@@ -1,0 +1,114 @@
+anti_fashran_coalition_branch = {
+	slot = 5
+	has_country_shield = no
+	
+	generic = yes
+	
+	potential = {
+		capital_scope = {
+			superregion = jasua_superregion
+		}
+		NOT = { religion = tonmo }
+	}
+	af_anti_fashran_coalition = {
+		icon = mission_friends_or_enemies
+		required_missions = {  } #None
+		trigger = {
+            5857 = {
+				owned_by = FAS
+			}
+			num_of_allies = 4
+			advisor	= statesman
+        }
+		effect = {
+			add_country_modifier = {
+				name = af_coalition_modifier
+				duration = 7300
+			}
+			custom_tooltip = antiFashrosJasuaTooltip
+			hidden_effect = {
+				every_known_country	= {
+					limit = {
+						capital_scope = {
+							superregion = jasua_superregion
+						}
+						NOT = {
+							tag = FAS
+						}
+					}
+					add_opinion = {
+						who = ROOT
+						modifier = protecting_jasua_opinion
+					}
+				}
+			}
+		}
+		provinces_to_highlight = {
+			province_id = 5857
+		}
+	}
+	af_defender_of_jasua = {
+		icon = mission_fortify_mandu
+		required_missions = {  } #None
+		trigger = {
+            grown_by_development = 200
+			fort_15th = 3
+			FAS = {
+				has_casus_belli = {
+					type = cb_fashros
+					target = ROOT
+				}
+			}
+        }
+		effect = {
+			add_country_modifier = {
+				name = af_defender_of_jasua_modifier
+				duration = 9125
+			}
+			add_army_tradition = 20
+		}
+		#provinces_to_highlight = {}
+	}
+	af_rout_the_horde = {
+		icon = mission_abu_saids_dream
+		required_missions = { af_defender_of_jasua } #None
+		trigger = {
+			war_score_against = {
+				who = FAS
+				value = 50
+			}
+			army_size = 40
+        }
+		effect = {
+			add_prestige = 25
+			if = {
+				limit = {
+					NOT = {
+						FAS = {
+							has_country_flag = trolledFashrosFlag
+						}
+					}
+				}
+				FAS = {
+					set_country_flag = trolledFashrosFlag
+					add_country_modifier = {
+						name = fashros_trolled_severely
+						duration = 5475
+					}
+				}
+			}
+			custom_tooltip = routTheHordeTooltip
+			hidden_effect = {
+				FAS = {
+					every_owned_province = {
+						limit = {
+							superregion = jasua_superregion
+						}
+						add_claim = ROOT
+					}
+				}
+			}
+		}
+		#provinces_to_highlight = {}
+	}
+}

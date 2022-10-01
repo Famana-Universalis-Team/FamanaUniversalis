@@ -1,9 +1,10 @@
 discovered_by = east_gomic_tech_gr
-discovered_by = north_gomic_tech_gr
+discovered_by = lathvy_tech_gr
 discovered_by = west_gomic_tech_gr
 culture = Delkian_C
 religion = delkian
 owner = DEL
+is_city = yes
 controller = DEL
 add_core = DEL
 
@@ -16,6 +17,6 @@ base_production = 3
 trade_goods = salt
 base_manpower = 2
 capital = "Hos"
-is_city = no
-extra_cost = 1
+ 
+
 

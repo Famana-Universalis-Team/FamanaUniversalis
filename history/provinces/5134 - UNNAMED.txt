@@ -1,5 +1,5 @@
 discovered_by = east_gomic_tech_gr
-discovered_by = north_gomic_tech_gr
+discovered_by = lathvy_tech_gr
 discovered_by = west_gomic_tech_gr
 #Written with Eu4 Easy Province Creator by emiroercn
 #UNNAMED
@@ -10,14 +10,26 @@ hre = no
 
 base_tax = 2
 base_production = 3
-trade_goods = grain
+trade_goods = iron
 base_manpower = 1
 capital = "Sestu"
-is_city = yes
-extra_cost = 1
+ 
+
 fort_15th = yes
 
 owner = OSS
+is_city = yes
 controller = OSS
 add_core = OSS
 add_core = ZNE
+
+212.6.7 = {
+owner = ZNE
+is_city = yes
+controller = ZNE
+add_core = ZNE
+remove_core = OSS
+#culture = 
+#religion = 
+#trade_goods = 
+}

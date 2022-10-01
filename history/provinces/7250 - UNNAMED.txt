@@ -3,6 +3,7 @@
 add_core = KKR
 add_core = ALU
 owner = KKR
+is_city = yes
 controller = KKR
 culture = Ganush
 religion = bosisi
@@ -12,10 +13,8 @@ base_production = 1
 trade_goods = livestock
 base_manpower = 2
 capital = "Tabratom"
-is_city = yes
+ 
 discovered_by = great_desert_tech_gr
-
-discovered_by = west_gomic_tech_gr
 
 
 

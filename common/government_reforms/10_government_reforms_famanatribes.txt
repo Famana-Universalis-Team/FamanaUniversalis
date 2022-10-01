@@ -14,31 +14,214 @@ naravami_tribe_rdu_reform = {
 }
 
 desert_tribe = {
+	allow_normal_conversion = yes
 	icon = "deserttribe"
 	potential = { 
 		OR = {
-			religion = bosisi
-			religion = animism
+			culture_group = Central_Great_Desert
+			culture_group = Antiash
+		}
+		NOT = {
+			num_of_owned_provinces_with	= {
+				value = 2
+				is_core = ROOT
+			}
 		}
 	}
-	allow_normal_conversion = no
+	lock_level_when_selected = yes
 
 	raze_province = yes
 	valid_for_nation_designer = yes
 	nation_designer_cost = 20
 
+	fixed_rank = 1
+
 	modifiers = {
 		may_perform_slave_raid_on_same_religion = yes 	
-		reform_progress_growth = -1
+		reform_progress_growth = -10
 		global_unrest = -5
 		global_missionary_strength = -0.10
 		trade_efficiency = 0.20
 		land_maintenance_modifier = -0.50
-		province_warscore_cost = 10
-		core_creation = 10
+		province_warscore_cost = 100
+		core_creation = 100
+		build_cost = 100
+		development_cost = 1
 		diplomatic_upkeep = -4
-		global_tax_modifier = 0.30
+		diplomatic_annexation_cost = 100
+		global_tax_modifier = -0.20
+		production_efficiency = -0.5
 		cb_on_religious_enemies = yes
+		religious_unity = 1.0
 		#custom_tooltip = migrations_tooltip
+	}
+	ai = {
+		factor = 0
+	}
+}
+
+antiash_federation = {
+	icon = "siddhi_recruitment"
+	allow_normal_conversion = yes
+	potential = {
+		has_reform = antiash_federation
+	}
+
+	valid_for_nation_designer = yes
+	nation_designer_cost = 20
+	legacy_equivalent = tribal_federation_legacy
+
+	lock_level_when_selected = yes
+	raze_province = yes
+
+	modifiers = {
+		num_accepted_cultures = 2
+		promote_culture_cost = -0.50
+		global_autonomy = 0.05
+		heir_chance = -0.5
+	}
+
+	conditional = {
+		allow = { has_dlc = "Cradle of Civilization" }
+		government_abilities = {
+			tribal_federation_mechanic
+		}
+	}
+	ai = {
+		factor = 1
+	}
+}
+
+four_tribe_rule = {
+	icon = "native_clan_council_reform"
+	allow_normal_conversion = no
+	potential = {
+		has_reform = four_tribe_rule
+	}
+
+	valid_for_nation_designer = yes
+	legacy_equivalent = tribal_federation_legacy
+	heir = no
+	lock_level_when_selected = yes
+	raze_province = yes
+
+	modifiers = {
+		num_accepted_cultures = 2
+		yearly_tribal_allegiance = 0.25
+		global_autonomy = -0.05
+	}
+	
+	conditional = {
+		allow = { has_dlc = "Cradle of Civilization" }
+		government_abilities = {
+			tribal_federation_mechanic
+		}
+	}
+	
+	ai = {
+		factor = 1
+	}
+}
+
+tribal_ora = {
+	icon = "ora"
+	allow_normal_conversion = yes
+	potential = {
+		primary_culture = Ora_Maldan
+	}
+
+	valid_for_nation_designer = yes
+	legacy_equivalent = tribal_federation_legacy
+	lock_level_when_selected = yes
+
+	modifiers = {
+		may_recruit_female_generals = yes
+		manpower_in_true_faith_provinces= 0.10
+		hostile_attrition = 1
+	}
+	
+	ai = {
+		factor = 1
+	}
+}
+
+ora_confederation = {
+	icon = "ora"
+	allow_normal_conversion = yes
+	potential = {
+		primary_culture = Ora_Maldan
+	}
+
+	valid_for_nation_designer = yes
+	legacy_equivalent = tribal_federation_legacy
+	lock_level_when_selected = yes
+
+	modifiers = {
+		may_recruit_female_generals = yes
+		manpower_in_true_faith_provinces= 0.10
+		hostile_attrition = 1
+		administrative_efficiency = 0.1
+		general_cost = -0.15
+	}
+
+	custom_attributes = {
+		heir = no
+		royal_marriage = no
+	}
+	
+	ai = {
+		factor = 1
+	}
+}
+
+lukscha_tribe = {
+	icon = "lukscha_tribe"
+	allow_normal_conversion = yes
+	potential = {
+		AND = {
+			primary_culture = Lukschan
+			religion = maschi
+		}
+	}
+	valid_for_nation_designer = yes
+	legacy_equivalent = tribal_federation_legacy
+	lock_level_when_selected = yes
+
+	modifiers = {
+		may_recruit_female_generals = yes
+		female_advisor_chance = 0.60
+		monarch_lifespan = 0.15
+		#ae_impact = -0.2
+		diplomatic_upkeep = -2
+	}
+
+	custom_attributes = {
+		royal_marriage = no
+	}
+	
+	ai = {
+		factor = 1
+	}
+}
+
+gacin_tribe = {
+	icon = "chieftain"
+	allow_normal_conversion = yes
+	potential = {
+		primary_culture = Old_Gacin
+	}
+
+	valid_for_nation_designer = yes
+	legacy_equivalent = tribal_federation_legacy
+	lock_level_when_selected = yes
+
+	modifiers = {
+		reform_progress_growth = -0.75
+		technology_cost = 0.25
+		relation_with_same_culture = 25
+	}
+	
+	ai = {
+		factor = 1
 	}
 }

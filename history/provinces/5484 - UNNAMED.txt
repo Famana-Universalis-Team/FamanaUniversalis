@@ -1,10 +1,11 @@
-discovered_by = gotzlic_tech_gr
+discovered_by = estali_tech_gr
 discovered_by = east_gomic_tech_gr
-discovered_by = north_gomic_tech_gr
+discovered_by = lathvy_tech_gr
 discovered_by = west_gomic_tech_gr
 culture = Bohoran
 religion = lathvy
 owner = SKT
+is_city = yes
 controller = SKT
 add_core = SKT
 
@@ -14,8 +15,8 @@ hre = no
 
 base_tax = 3
 base_production = 2
-trade_goods = fish
+trade_goods = grain
 base_manpower = 4
 capital = "Maru"
-is_city = no
-extra_cost = 1
+ 
+

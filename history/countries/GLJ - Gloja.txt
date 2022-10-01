@@ -1,0 +1,18 @@
+government = tribal
+add_government_reform = gacin_tribe
+government_rank = 1
+mercantilism = 5
+technology_group = naravami_tech_gr
+religion = sotharyik
+primary_culture = Old_Gacin
+capital = 6458
+
+200.1.1 = {
+	monarch = {
+		name = "Astær"
+		birth_date = 180.12.12
+		adm = 3
+		dip = 4
+		mil = 4
+	}
+}

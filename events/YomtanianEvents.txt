@@ -46,7 +46,9 @@ country_event = {
 
 	trigger = {
 		NOT = { is_year = 213 }
-		NOT = { has_country_modifier = yom_invasion_1 }
+		NOT = {
+			has_country_flag = hadYomStartupFlag
+		}
 		OR = {
 			tag = VAN
 			tag = SIX
@@ -106,6 +108,7 @@ country_event = {
 	}
 
 	immediate = {
+		set_country_flag = hadYomStartupFlag
 		hidden_effect = {
 		if = {
 			limit = {
@@ -196,7 +199,7 @@ country_event = {
 
 	option = {
 		name = yomtanian.2.a
-		set_country_flag = ravaged
+		#set_country_flag = ravaged
 		if = {
 			limit = {
 				OR = {

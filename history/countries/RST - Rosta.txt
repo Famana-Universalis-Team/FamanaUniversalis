@@ -1,19 +1,19 @@
 government = monarchy
-add_government_reform = autocracy_reform
+add_government_reform = gotzlic_kingdom
 government_rank = 1
 mercantilism = 10
-technology_group = gotzlic_tech_gr
+technology_group = estali_tech_gr
 religion = gotzli
 primary_culture = Rostan
-capital = 6597	# change to real capital
+capital = 6597	
 
 200.1.1 = { #change to 200 or smth
 	monarch = {
 		name = "Frifmel"
 		dynasty = "Rostan"
-		birth_date = 199.12.12
+		birth_date = 173.12.12
 		adm = 3
 		dip = 3
-		mil = 3
+		mil = 0
 	}
 }

@@ -13,18 +13,19 @@ oppia_superregion = {
 ga_xal_superregion = {
 	maky_region
 	south_xalia_region
-	moria_region
+	west_xalia_region
 	east_xalia_region
 	moxon_region
 	north_xalia_region
 }
 
 jasua_superregion = {
-	eastern_desert_region
+	hoxoi_coast_region
 	jasua_region
 	kapolia_region
 	aresia_region
-	bamal_gulf_region
+	bamali_gulf_region
+	stroktur_region
 }
 
 west_estal_superregion = {
@@ -41,14 +42,14 @@ west_estal_superregion = {
 	napora_region
 }
 
-tonmo_supperregion = {
+nhoma_superregion = {
 	nozumol_region
 	nhoma_region
 	selka_region
 	nheomyr_region
 }
 
-central_estal_supperregion = {
+central_estal_superregion = {
 	emastalia_region
 	vanoma_region
 	west_emastalia_region
@@ -76,10 +77,152 @@ great_desert_superregion = {
 	upper_makyna_region
 	northern_desert_region
 	east_great_desert_region
+	western_great_desert_region
 }
 
 bhillis_fashrana_superregion = {
 	onobya_region
 	bizugu_region
 	northwest_bhilis_region
+}
+
+saka_superregion = {
+	zilas_region
+	thoron_region
+}
+
+qamon_superregion = {
+	ekelo_region
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# A region can only belong to one super region.
+
+india_superregion = {
+}
+
+east_indies_superregion = {
+}
+
+oceania_superregion = {
+}
+
+china_superregion = {
+
+}
+
+europe_superregion = { #Western Europe
+}
+
+eastern_europe_superregion = {
+
+}
+
+tartary_superregion = {
+
+}
+
+far_east_superregion = {
+	
+}
+
+africa_superregion = {
+
+}
+
+southern_africa_superregion = {
+
+}
+
+south_america_superregion = { # amazonia
+
+}
+
+andes_superregion = {
+
+}
+
+north_america_superregion = {
+
+}
+
+central_america_superregion = {
+
+}
+
+near_east_superregion = {
+
+}
+
+persia_superregion = {
+
+}
+
+new_world_superregion = {
+}
+
+# Sea super regions are used by AI to plan naval bases (it wants at least one fleet in each it has non-home presence if possible).
+
+west_american_sea_superregion = {
+
+}
+
+east_american_sea_superregion = {
+
+}
+
+north_european_sea_superregion = {
+
+}
+
+south_european_sea_superregion = {
+
+}
+
+west_african_sea_superregion = {
+
+}
+
+east_african_sea_superregion = {
+
+}
+
+indian_pacific_sea_superregion = {
+
+}
+
+north_pacific_sea_superregion = {
+
 }

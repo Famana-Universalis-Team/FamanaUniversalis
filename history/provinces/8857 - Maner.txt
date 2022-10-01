@@ -1,0 +1,18 @@
+#Written with Eu4 Easy Province Creator by emiroercn
+#Maner
+add_core = MNR
+owner = MNR
+is_city = yes
+controller = MNR
+culture = Morian_C
+religion = morian
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = fish
+base_manpower = 2
+capital = "Maner"
+ 
+discovered_by = east_gomic_tech_gr
+discovered_by = lathvy_tech_gr
+discovered_by = west_gomic_tech_gr

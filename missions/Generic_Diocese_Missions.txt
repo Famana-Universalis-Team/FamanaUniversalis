@@ -1,0 +1,145 @@
+diocese_independence_mission = {
+	slot = 1
+	has_country_shield = yes
+	
+	generic = no
+	
+	potential = {
+		is_subject_of_type_with_overlord = {
+			who = PEX
+			type = diocese
+		}
+	}
+	diocese_gain_strength = {
+		icon = mission_rb_scottish_conquer_london
+		required_missions = {  } #None
+		position = 1
+		trigger = {
+            capital_scope = {
+				development = 15
+			}
+			army_size = 10
+			mil_tech = 4
+        }
+		effect = {
+			add_country_modifier = {
+				name = diocese_diplomatic_outreach
+				duration = 7300
+			}
+			add_prestige = 10
+			every_known_country = {
+				limit = {
+					is_rival = PEX
+				}
+				add_opinion = {
+    				who = ROOT
+    				modifier = diocese_opinion_rival
+				}
+			}
+		}
+		provinces_to_highlight = {
+			owned_by = ROOT
+			is_capital_of = ROOT
+			NOT = { development = 15 }
+		}
+	}
+	diocese_gather_support = {
+		icon = mission_spread_the_reformation
+		required_missions = { diocese_gain_strength }
+		position = 2
+		trigger = {
+			estate_loyalty = {
+    			estate = estate_nobles
+    			loyalty = 65
+			}
+			estate_loyalty = {
+    			estate = estate_church
+    			loyalty = 65
+			}
+            liberty_desire = 100
+			OR = {
+				num_of_allies = 4
+				ORC = {
+					is_supporting_independence_of = ROOT
+				}
+			}
+        }
+		effect = {
+			custom_tooltip = dioceseGetBeshzies
+			add_manpower = 10
+		}
+		#provinces_to_highlight = {
+		#}
+	}
+	diocese_declare_independence = {
+		icon = mission_fire_of_london
+		required_missions = { diocese_gather_support }
+		position = 3
+		trigger = {
+            offensive_war_with = PEX
+			is_free_or_tributary_trigger = yes
+        }
+		effect = {
+			add_country_modifier = {
+				name = diocese_fight_for_liberty
+				duration = 3650
+			}
+		}
+		#provinces_to_highlight = {
+		#}
+	}
+	diocese_liberty = {
+		icon = mission_teutonic_lancer
+		required_missions = { diocese_declare_independence }
+		position = 4
+		trigger = {
+			grown_by_development = 25
+            is_free_or_tributary_trigger = yes
+			custom_trigger_tooltip = {
+				tooltip = dioceseReformedNation
+				NOT = {
+					OR = {
+						tag = PLY
+						tag = PPX
+						tag = PNV
+						tag = PJS
+						tag = PHL
+						tag = PLM
+						tag = PCG
+						tag = PTG
+					}
+				}
+			}
+        }
+		effect = {
+			change_adm = 1
+			change_dip = 1
+			change_mil = 1
+			add_legitimacy = 25
+			add_devotion = 25
+			add_republican_tradition = 10
+			if = {
+				limit = {
+					OR = {
+						tag = PLM
+						tag = LOM
+					}
+					capital	= 5317
+				}
+				5317 = {
+					change_province_name = "Lometzel"
+					hidden_effect = {
+						rename_capital = "Lometzel"
+					}
+					add_province_modifier = {
+						name = diocese_lometzel
+						duration = -1
+					}
+					change_trade_goods = cloth
+				}
+			}
+		}
+		#provinces_to_highlight = {
+		#}
+	}
+}

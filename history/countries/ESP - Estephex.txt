@@ -1,11 +1,11 @@
 government = monarchy
-add_government_reform = autocracy_reform
+add_government_reform = plutocratic_reform
 government_rank = 1
 mercantilism = 10
 technology_group = west_gomic_tech_gr
 religion = gadan
 primary_culture = Opmaki
-capital = 5407	# change to real capital
+capital = 5407	
 
 200.1.1 = { #change to 200 or smth
 	monarch = {

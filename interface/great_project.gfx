@@ -448,11 +448,6 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_great_project_porcelain_tower_nanjing"	
-		texturefile = "gfx//interface//great_projects//great_project_porcelain_tower_nanjing.dds"
-	}
-
-	spriteType = {
 		name = "GFX_great_project_qhapaq_nam"	
 		texturefile = "gfx//interface//great_projects//great_project_qhapaq_nam.dds"
 	}
@@ -547,6 +542,48 @@ spriteTypes = {
 		texturefile = "gfx//interface//great_projects//great_project_zacatecas_mine_city.dds"
 	}
 
+	### 1.34 MONUMENTS
+
+	spriteType = {
+		name = "GFX_great_project_falun_copper_mine"	
+		texturefile = "gfx//interface//great_projects//great_project_falun_copper_mine.dds"
+	}
+
+	spriteType = {
+		name = "GFX_great_project_kronborg"	
+		texturefile = "gfx//interface//great_projects//great_project_kronborg.dds"
+	}
+
+	spriteType = {
+		name = "GFX_great_project_visby_city"	
+		texturefile = "gfx//interface//great_projects//great_project_visby_city.dds"
+	}
+
+	spriteType = {
+		name = "GFX_great_project_trakai_castle"	
+		texturefile = "gfx//interface//great_projects//great_project_trakai_castle.dds"
+	}
+
+	spriteType = {
+		name = "GFX_great_project_salvador_da_bahia"	
+		texturefile = "gfx//interface//great_projects//great_project_salvador_da_bahia.dds"
+	}
+
+	spriteType = {
+		name = "GFX_great_project_mbanza_kongo"	
+		texturefile = "gfx//interface//great_projects//great_project_mbanza_kongo.dds"
+	}
+
+	spriteType = {
+		name = "GFX_great_project_harar_jugol"	
+		texturefile = "gfx//interface//great_projects//great_project_harar_jugol.dds"
+	}
+
+	spriteType = {
+		name = "GFX_great_project_dujiangyan"	
+		texturefile = "gfx//interface//great_projects//great_project_dujiangyan.dds"
+	}
+
 	#Famana
 	spriteType = {
 		name = "GFX_great_project_kashroon_temple"	
@@ -563,4 +600,58 @@ spriteTypes = {
 		texturefile = "gfx//interface//great_projects//famana_great_projects//great_project_walls_of_quanex.dds"
 	}
 
+	spriteType = {
+		name = "GFX_great_project_grand_nik_shipyards"	
+		texturefile = "gfx//interface//great_projects//famana_great_projects//great_project_grand_nik_shipyards.dds"
+	}
+
+	spriteType = {
+		name = "GFX_great_project_city_of_xon"	
+		texturefile = "gfx//interface//great_projects//famana_great_projects//great_project_city_of_xon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_great_project_agixion_colossus"	
+		texturefile = "gfx//interface//great_projects//famana_great_projects//great_project_agixion_colossus.dds"
+	}
+
+	spriteType = {
+		name = "GFX_great_project_fovers_bathhouse"	
+		texturefile = "gfx//interface//great_projects//famana_great_projects//great_project_fovers_bathhouse.dds"
+	}
+
+	spriteType = {
+		name = "GFX_great_project_gardens_of_shiraska_xon"	
+		texturefile = "gfx//interface//great_projects//famana_great_projects//great_project_gardens_of_shiraska_xon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_great_project_pomlen_temple"	
+		texturefile = "gfx//interface//great_projects//famana_great_projects//great_project_pomlen_temple.dds"
+	}
+
+	spriteType = {
+		name = "GFX_great_project_giru_tower"	
+		texturefile = "gfx//interface//great_projects//great_project_porcelain_tower_nanjing.dds"
+	}
+
+	spriteType = {
+		name = "GFX_great_project_site_at_kyny"	
+		texturefile = "gfx//interface//great_projects//famana_great_projects//great_project_site_at_kyny.dds"
+	}
+
+	spriteType = {
+		name = "GFX_great_project_mea_dizz_castle"	
+		texturefile = "gfx//interface//great_projects//famana_great_projects//great_project_mea_dizz_castle.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_great_project_atisha_irrigation_systems"	
+		texturefile = "gfx//interface//great_projects//famana_great_projects//great_project_atisha_irrigation_systems.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_great_project_saplangard_palace"	
+		texturefile = "gfx//interface//great_projects//famana_great_projects//great_project_saplangard_palace.dds"
+	}
 }

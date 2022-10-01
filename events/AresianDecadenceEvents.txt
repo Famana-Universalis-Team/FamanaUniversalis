@@ -8,9 +8,9 @@ country_event = {
     picture = COUNTRY_COLLAPSE_eventPicture
 
     trigger = {
+		NOT = { is_year = 250 }
         religion = aresian
         NOT = { has_country_flag = had_aresian_decadence_event }
-		NOT = { is_year = 250 }
     }
     mean_time_to_happen = {
         months = 1

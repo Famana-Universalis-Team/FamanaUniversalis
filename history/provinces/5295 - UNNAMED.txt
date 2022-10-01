@@ -1,9 +1,10 @@
 discovered_by = east_gomic_tech_gr
-discovered_by = north_gomic_tech_gr
+discovered_by = lathvy_tech_gr
 discovered_by = west_gomic_tech_gr
 culture = Walaran
 religion = lathvy
 owner = PLY
+is_city = yes
 controller = PLY
 add_core = PLY
 add_core = YUV
@@ -17,6 +18,6 @@ base_production = 3
 trade_goods = grain
 base_manpower = 2
 capital = "Fonzitt"
-is_city = no
-extra_cost = 1
+ 
+
 

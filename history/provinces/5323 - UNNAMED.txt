@@ -1,9 +1,10 @@
 discovered_by = east_gomic_tech_gr
-discovered_by = north_gomic_tech_gr
+discovered_by = lathvy_tech_gr
 discovered_by = west_gomic_tech_gr
 culture = Glazian
 religion = lathvy
 owner = PLM
+is_city = yes
 controller = PLM
 add_core = PLM
 add_core = PLK
@@ -17,6 +18,7 @@ base_production = 3
 trade_goods = salt
 base_manpower = 2
 capital = "Pealka"
-is_city = no
-extra_cost = 1
+ 
+
+
 add_local_autonomy = 15

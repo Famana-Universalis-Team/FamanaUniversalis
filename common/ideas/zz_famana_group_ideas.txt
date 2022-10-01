@@ -34,7 +34,7 @@ KSL_ideas = {
 		siege_ability = 0.15
     }
     ksl_wapur = {
-		trade_goods_size_modifier = 0.10
+		global_trade_goods_size_modifier = 0.10
     }
     ksl_acceptance = {
 		years_of_nationalism = -5
@@ -53,7 +53,11 @@ Emastalian_ideas = {
 	}
 
 	trigger = {
-		culture_group = Emastalian
+		OR = {
+			culture_group = Emastalian
+			primary_culture = Maxan_East_Emastalian
+			primary_culture = Maxan_West_Emastalian
+		}
 	}
 	free = yes
 	
@@ -461,7 +465,7 @@ naravami_ideas = {
         trade_efficiency = 0.1
     }
     narv_amber_industry = {
-        trade_goods_size_modifier = 0.10
+        global_trade_goods_size_modifier = 0.10
     }
     narv_efficent_society = {
        max_absolutism = 10 
@@ -557,7 +561,7 @@ Vishman_ideas = {
     }
 
     bonus = {
-        trade_goods_size_modifier = 0.10
+        global_trade_goods_size_modifier = 0.10
     }
 
     trigger = {
@@ -586,5 +590,83 @@ Vishman_ideas = {
     }
     Vishman_7 = {
 		burghers_loyalty_modifier = 0.05
+    }
+}
+
+Antiash_ideas = {
+    start = {
+		loot_amount = 0.50
+		war_exhaustion = -0.10
+    }
+
+    bonus = {
+		global_manpower_modifier = 0.10
+    }
+
+    trigger = {
+		technology_group = great_desert_tech_gr
+    }
+    free = yes
+
+    Antiash_1 = {
+		land_attrition = -0.25
+		cavalry_flanking = 0.50
+    }
+    Antiash_2 = {
+		heir_chance = 0.5
+    }
+    Antiash_3 = {
+        global_regiment_recruit_speed = -0.10
+    }
+    Antiash_4 = {
+		mil_tech_cost_modifier = -0.1	
+    }
+    Antiash_5 = {
+        all_power_cost = -0.025
+    }
+    Antiash_6 = {
+		cav_to_inf_ratio = 0.25
+		cavalry_power = 0.10
+    }
+    Antiash_7 = {
+		harsh_treatment_cost = -0.25
+    }
+}
+
+Gacin_ideas = {
+    start = {
+        improve_relation_modifier = 0.10
+		legitimacy = 1
+    }
+
+    bonus = {
+        production_efficiency = 0.10
+    }
+
+    trigger = {
+        culture_group = Gacin_g
+    }
+    free = yes
+
+    Gacin_1 = {
+		naval_morale = 0.10
+    }
+    Gacin_2 = {
+		stability_cost_modifier = -0.20
+    }
+    Gacin_3 = {
+        naval_forcelimit_modifier = 0.15
+    }
+    Gacin_4 = {
+		army_tradition_from_battle = 1.0
+    }
+    Gacin_5 = {
+        hostile_attrition = 1
+    }
+    Gacin_6 = {
+		defensiveness = 0.25
+    }
+    Gacin_7 = {
+		global_sailors_modifier = 0.33
     }
 }

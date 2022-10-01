@@ -59,8 +59,11 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		is_year = 270
 		owns = 5149
+		5812 = {
+			is_empty = yes
+		}
+		is_year = 270
 	}
 
 	mean_time_to_happen = {
@@ -90,6 +93,35 @@ country_event = {
 			}
 		}
 	}
+	option = {
+		highlight = yes
+		trigger = {
+		ai = no
+		}
+		name = maky.4.b
+		
+			5150 = {
+				cede_province = ROOT
+				add_core = ROOT
+			}
+			5813 = {
+				cede_province = TKM
+				add_core = LVY
+				add_core = TKM
+				hidden_effect = {
+					add_base_manpower = 1
+				}
+			}
+			5812 = {
+				cede_province = TKM
+				add_core = TKM
+				hidden_effect = {
+					add_base_manpower = 1
+				}
+			}
+		
+		switch_tag = TKM
+	}	
 }
 
 #makykay
@@ -104,6 +136,7 @@ country_event = {
 		OR = {
 			tag = VDY
 			tag = MKY
+			tag = MSD
 		}
 		has_country_flag = maky_rebuilding
 		owns_core_province = 5140
@@ -111,6 +144,10 @@ country_event = {
 
 	mean_time_to_happen = {
 		months = 12
+	}
+
+	immediate = {
+		set_country_flag = makykay_repaired
 	}
 
 	option = {
@@ -133,7 +170,7 @@ country_event = {
 				add_base_tax = 1
 			}
 			set_province_flag = province_rebuilt
-			set_country_flag = makykay_repaired
+			#set_country_flag = makykay_repaired
 		}
 	}
 	option = {
@@ -156,7 +193,7 @@ country_event = {
 				add_base_production = 1
 			}
 			set_province_flag = province_rebuilt
-			set_country_flag = makykay_repaired
+			#set_country_flag = makykay_repaired
 		}
 	}
 	option = {
@@ -179,7 +216,7 @@ country_event = {
 				add_base_manpower = 1
 			}
 			set_province_flag = province_rebuilt
-			set_country_flag = makykay_repaired
+			#set_country_flag = makykay_repaired
 		}
 	}
 }
@@ -196,6 +233,7 @@ country_event = {
 		OR = {
 			tag = VDY
 			tag = MKY
+			tag = MSD
 		}
 		has_country_flag = makykay_repaired
 		owns_core_province = 5138
@@ -203,6 +241,10 @@ country_event = {
 
 	mean_time_to_happen = {
 		months = 18
+	}
+
+	immediate = {
+		set_country_flag = vaximor_repaired
 	}
 
 	option = {
@@ -225,7 +267,7 @@ country_event = {
 				add_base_tax = 1
 			}
 			set_province_flag = province_rebuilt
-			set_country_flag = vaximor_repaired
+			#set_country_flag = vaximor_repaired
 		}
 	}
 	option = {
@@ -248,7 +290,7 @@ country_event = {
 				add_base_production = 1
 			}
 			set_province_flag = province_rebuilt
-			set_country_flag = vaximor_repaired
+			#set_country_flag = vaximor_repaired
 		}
 	}
 	option = {
@@ -271,7 +313,7 @@ country_event = {
 				add_base_manpower = 1
 			}
 			set_province_flag = province_rebuilt
-			set_country_flag = vaximor_repaired
+			#set_country_flag = vaximor_repaired
 		}
 	}
 }
@@ -288,6 +330,7 @@ country_event = {
 		OR = {
 			tag = VDY
 			tag = MKY
+			tag = MSD
 		}
 		has_country_flag = makykay_repaired
 		owns_core_province = 5153
@@ -295,6 +338,10 @@ country_event = {
 
 	mean_time_to_happen = {
 		months = 27
+	}
+
+	immediate = {
+		set_country_flag = jagama_repaired
 	}
 
 	option = {
@@ -317,7 +364,7 @@ country_event = {
 				add_base_tax = 1
 			}
 			set_province_flag = province_rebuilt
-			set_country_flag = jagama_repaired
+			#set_country_flag = jagama_repaired
 		}
 	}
 	option = {
@@ -340,7 +387,7 @@ country_event = {
 				add_base_production = 1
 			}
 			set_province_flag = province_rebuilt
-			set_country_flag = jagama_repaired
+			#set_country_flag = jagama_repaired
 		}
 	}
 	option = {
@@ -363,7 +410,7 @@ country_event = {
 				add_base_manpower = 1
 			}
 			set_province_flag = province_rebuilt
-			set_country_flag = jagama_repaired
+			#set_country_flag = jagama_repaired
 		}
 	}
 }
@@ -380,6 +427,7 @@ country_event = {
 		OR = {
 			tag = VDY
 			tag = MKY
+			tag = MSD
 		}
 		has_country_flag = makykay_repaired
 		owns_core_province = 5143
@@ -387,6 +435,10 @@ country_event = {
 
 	mean_time_to_happen = {
 		months = 27
+	}
+
+	immediate = {
+		set_country_flag = rishtokay_repaired
 	}
 
 	option = {
@@ -409,7 +461,7 @@ country_event = {
 				add_base_tax = 1
 			}
 			set_province_flag = province_rebuilt
-			set_country_flag = rishtokay_repaired
+			#set_country_flag = rishtokay_repaired
 		}
 	}
 	option = {
@@ -432,7 +484,7 @@ country_event = {
 				add_base_production = 1
 			}
 			set_province_flag = province_rebuilt
-			set_country_flag = rishtokay_repaired
+			#set_country_flag = rishtokay_repaired
 		}
 	}
 	option = {
@@ -455,7 +507,7 @@ country_event = {
 				add_base_manpower = 1
 			}
 			set_province_flag = province_rebuilt
-			set_country_flag = rishtokay_repaired
+			#set_country_flag = rishtokay_repaired
 		}
 	}
 }
@@ -472,6 +524,7 @@ country_event = {
 		OR = {
 			tag = VDY
 			tag = MKY
+			tag = MSD
 		}
 		has_country_flag = makykay_repaired
 		owns_core_province = 5139
@@ -479,6 +532,10 @@ country_event = {
 
 	mean_time_to_happen = {
 		months = 24
+	}
+
+	immediate = {
+		set_country_flag = dyri_repaired
 	}
 
 	option = {
@@ -501,7 +558,7 @@ country_event = {
 				add_base_tax = 1
 			}
 			set_province_flag = province_rebuilt
-			set_country_flag = dyri_repaired
+			#set_country_flag = dyri_repaired
 		}
 	}
 	option = {
@@ -524,7 +581,7 @@ country_event = {
 				add_base_production = 1
 			}
 			set_province_flag = province_rebuilt
-			set_country_flag = dyri_repaired
+			#set_country_flag = dyri_repaired
 		}
 	}
 	option = {
@@ -547,7 +604,7 @@ country_event = {
 				add_base_manpower = 1
 			}
 			set_province_flag = province_rebuilt
-			set_country_flag = dyri_repaired
+			#set_country_flag = dyri_repaired
 		}
 	}
 }
@@ -563,6 +620,7 @@ country_event = {
 		OR = {
 			tag = VDY
 			tag = MKY
+			tag = MSD
 		}
 		has_country_flag = maky_rebuilding
 		has_country_flag = dyri_repaired
@@ -728,6 +786,7 @@ country_event = {
 		OR = {
 			tag = VDY
 			tag = MKY
+			tag = MSD
 		}
 		has_country_flag = maky_rebuilding
 		has_country_flag = dyri_repaired
@@ -875,16 +934,21 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		has_country_flag = makykay_repaired
 		OR = {
 			tag = VDY
 			tag = MKY
+			tag = MSD
 		}
+		has_country_flag = makykay_repaired
 		owns_core_province = 5142
 	}
 
 	mean_time_to_happen = {
 		months = 30
+	}
+
+	immediate = {
+		set_country_flag = okus_repaired
 	}
 
 	option = {
@@ -913,7 +977,7 @@ country_event = {
 				80 = { }
 			}
 			set_province_flag = province_rebuilt
-			set_country_flag = okus_repaired
+			#set_country_flag = okus_repaired
 		}
 	}
 	option = {
@@ -942,7 +1006,7 @@ country_event = {
 				80 = { }
 			}
 			set_province_flag = province_rebuilt
-			set_country_flag = okus_repaired
+			#set_country_flag = okus_repaired
 		}
 	}
 	option = {
@@ -971,7 +1035,7 @@ country_event = {
 				80 = { }
 			}
 			set_province_flag = province_rebuilt
-			set_country_flag = okus_repaired
+			#set_country_flag = okus_repaired
 		}
 	}
 }
@@ -990,6 +1054,7 @@ country_event = {
 		OR = {
 			tag = VDY
 			tag = MKY
+			tag = MSD
 		}
 		has_country_flag = maky_rebuilding
 		has_country_flag = dyri_repaired
@@ -997,6 +1062,10 @@ country_event = {
 		has_country_flag = jagama_repaired
 		has_country_flag = rishtokay_repaired
 		has_country_flag = okus_repaired
+		maky_region = {
+			type = all
+			owned_by = ROOT
+		}
 		NOT = {
 			any_owned_province = {
 				AND = {
@@ -1055,8 +1124,9 @@ country_event = {
 	major = yes
 	
 	trigger = {
-		is_year = 330
 		tag = TKM
+		is_year = 330
+		is_free_or_tributary_trigger = yes
 		NOT = {
 			total_development = 100
 		}
@@ -1097,6 +1167,7 @@ country_event = {
 				change_culture = ROOT
 				change_religion = ROOT
 			}
+			set_capital = 7240
 			5812 = {
 				cede_province = ---
                 remove_core = ROOT
@@ -1118,9 +1189,13 @@ country_event = {
 				}
 				remove_core = ROOT
 			}
-		}
-		every_known_country = {
-			white_peace = ROOT
+			set_country_flag = tkm_migrated
+			custom_tooltip = tokumEndWars
+			hidden_effect = {
+				every_known_country = {
+					white_peace = ROOT
+				}
+			}
 		}
 		custom_tooltip = tkm_migrate_tooltip
 	}
@@ -1130,4 +1205,105 @@ country_event = {
 		ai_chance = { factor = 0 }
 		add_prestige = 5
 	}
+}	
+
+country_event = { #Vaximorian conversion
+	id = maky.15
+	title = maky.15.t
+	desc = maky.15.d
+	picture = PRAYING_eventPicture
+	fire_only_once = yes
+	
+	trigger = {
+		tag = VAX
+		is_year = 212
+		NOT = {
+			is_year = 220
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 36
+	}
+	
+	option = { #Submit to mak
+		name = maky.15.a
+		ai_chance = { factor = 20 }
+		add_prestige = -20
+		add_republican_tradition = -5
+	}
+	
+	option = { #Return to our roots
+		name = maky.15.b 
+		ai_chance = { factor = 1 }
+		add_stability = -1
+		change_religion = vaximorian
+		if = {
+			limit = {
+				owns = 5138
+			}
+			5138 = {
+				change_religion = vaximorian
+			}
+		}
+		every_known_country = {
+			limit = {
+				religion = mak
+			}
+			add_opinion = {
+				who = ROOT
+				modifier = abandoned_mak_vaximor
+			}
+		}
+	}
+}
+
+country_event = { #Kashroon temple inscriptions
+	id = maky.16
+	title = maky.16.t
+	desc = maky.16.d
+	picture = SHWEDAGON_PAGON_eventPicture
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = { 
+		name = maky.16.a #objectively a shit option the troll is absolute
+		add_country_modifier = {
+			name = recontrusted_carvings
+			duration = -1
+		}
+	}
+	
+	option = { 
+		name = maky.16.b
+		add_country_modifier = {
+			name = religious_carvings
+			duration = -1
+		}
+	}
+	
+	option = { 
+		name = maky.16.c
+		add_country_modifier = {
+			name = patriotic_carvings
+			duration = -1
+		}
+	}
+	
+	option = { 
+		name = maky.16.d.o
+		add_country_modifier = {
+			name = scientific_carvings
+			duration = -1
+		}
+	}
+	
+	option = { 
+		name = maky.16.e
+		add_country_modifier = {
+			name = prestigious_carvings
+			duration = -1
+		}
+	}
+	
 }	

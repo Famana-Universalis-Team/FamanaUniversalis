@@ -72,7 +72,7 @@ province_event = { #Random coastal xalian provinces / provinces adjacent to lath
 		superregion = ga_xal_superregion
 		NOT = { religion = tonmo }
 		NOT = { religion = lathvy }
-		NOT = { has_province_modifier = ga_xal_lathvy_reconverted }
+		NOT = { has_province_flag = ga_xal_lathvy_reconverted }
 		any_neighbor_province = {
 			OR = {
 				is_sea = yes

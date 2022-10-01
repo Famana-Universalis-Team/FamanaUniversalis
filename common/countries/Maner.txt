@@ -1,0 +1,134 @@
+#Country Name: Please see filename.
+
+graphical_culture = westerngfx
+
+color = { 130 121 120 }
+
+historical_idea_groups = {
+	economic_ideas
+	defensive_ideas
+	diplomatic_ideas
+	offensive_ideas
+	innovativeness_ideas 
+	quantity_ideas
+	administrative_ideas
+	religious_ideas
+}
+
+historical_units = {
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+	swiss_landsknechten
+	dutch_maurician
+	austrian_tercio
+	austrian_grenzer
+	austrian_hussar
+	austrian_white_coat
+	austrian_jaeger
+	mixed_order_infantry
+	open_order_cavalry
+	napoleonic_square
+	napoleonic_lancers
+}
+
+monarch_names = {
+	"Aysin #0" = 1
+	"Kigivo #0" = 1
+	"Oviv #0" = 1
+	"Avkakoci #0" = 1
+	"Beige #0" = 1
+	"Dirazpö #0" = 1
+	"Avbube #0" = 1
+	"Akez #0" = 1
+	"Pevenodo #0" = 1
+	"Kerde #0" = 1
+	"Uwis #0" = 1
+	"Cirti #0" = 1
+	"Oza #0" = 1
+	"Cizon #0" = 1
+	"Iwavay #0" = 1
+	"Tizay #0" = 1
+	"Evgirimo #0" = 1
+	"Parimay #0" = 1
+	"Ocandez #0" = 1
+	"Dasim #0" = 1
+	"Koder #0" = 1
+	"Caco #0" = 1
+	"Dasös #0" = 1
+	"Asimaba #0" = 1
+	"Bewovir #0" = 1
+	"Tayceda #0" = 1
+	"Goverei #0" = 1
+	"Bando #0" = 1
+	"Pizkom #0" = 1
+	"Dovez #0" = 1
+	"Ederivdo #0" = 1
+	"Agari #0" = 1
+	"Köcemi #0" = 1
+	"Tevo #0" = 1
+	"Cesi #0" = 1
+	"Dosei #0" = 1
+	"Amcar #0" = 1
+	"Urez #0" = 1
+	"Dimo #0" = 1
+	"Cakivo #0" = 1
+	"Coske #0" = 1
+
+	"Junes #0" = -1
+	"Covini #0" = -1
+	"Öpova #0" = -1
+	"Evo #0" = -1
+	"Baca #0" = -1
+	"Öpora #0" = -1
+	"Bivi #0" = -1
+	"Ovi #0" = -1
+	"Ini #0" = -1
+	"Asbe #0" = -1
+	"Adiv #0" = -1
+	"Gei #0" = -1
+}
+
+leader_names = {
+	Era
+	Rubli
+	Anhar
+	Tilaf
+	Galali
+	Polank
+	Katanas
+	Kalana
+	Thvat
+	Jadrtank
+	Sikero
+	Kamumba
+	Daseireki
+	Pebev
+	Ocöv
+	Damakaw
+	Aygivu
+	Ampirö
+	Ocandez
+	Ikiwo
+}
+
+ship_names = {
+	Lypona
+	Yadosha
+	Meria
+	Dirice
+	Manole
+	Han
+	Ara
+}
+
+army_names = {
+	"Morcan y $PROVINCE$" 
+}
+
+fleet_names = {
+	"Everlasting Armada"
+	"Vin's Legacy"
+	"Grand Navy"
+	"Victorious Fleet"
+}

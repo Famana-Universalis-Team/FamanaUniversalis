@@ -17,4 +17,487 @@ rastrayvar_recovery_province_modifier = {
 aresian_resistance_modifier = {
     local_missionary_strength = -1.0
     local_missionary_maintenance_cost = 1.0
+    religion = yes
+}
+
+kalargan_gold_modifier = {
+    local_gold_depletion_chance_modifier = -0.33
+}
+
+bohora_trade_hub = {
+    province_trade_power_modifier = 0.20
+    local_sailors_modifier = 0.50
+}
+
+skt_cultural_harmony_local = {
+    local_state_maintenance_modifier = -0.25
+    local_unrest = -1
+}
+
+nafa_epic_trade = {
+    province_trade_power_value = 10
+}
+
+emastalian_golden_age_modifier = {
+    local_institution_spread = 0.25
+    trade_goods_size_modifier = 0.50
+    local_development_cost = -0.15
+}
+
+naf_fortified_gatra_bonus = {
+    local_defensiveness = 0.25
+    local_hostile_movement_speed = -0.2
+    local_manpower_modifier = 0.50
+}
+
+orc_pextans_angry = {
+    local_unrest = 2
+    local_autonomy = 0.05
+    local_years_of_nationalism = 5
+    local_manpower_modifier = -0.25
+}
+
+kin_integrated_bamalis = {
+    local_autonomy = -0.05
+    local_governing_cost = -0.50
+    local_manpower_modifier = 0.10
+}
+
+kin_rejasuofication = {
+    local_culture_conversion_cost = -0.20
+    local_missionary_strength = 0.02
+}
+
+naf_embracing_lathvy_beliefs = {
+    local_missionary_strength = 0.05
+    local_tax_modifier = 0.10
+    local_autonomy = -0.10
+}
+
+naf_tight_grip = {
+    local_governing_cost = -0.50
+    local_unrest = -2
+}
+
+npx_kicked_out_glazians = {
+    local_unrest = 10
+}
+
+npx_recent_glazian_settlement = {
+    local_development_cost = -0.10
+    trade_goods_size_modifier = 0.25
+}
+
+npx_recent_smaller_glazian_settlement = {
+    local_development_cost = -0.10
+}
+
+naf_imperial_hospital = {
+    local_manpower_modifier = 0.25
+    local_sailors_modifier = 0.25
+    supply_limit_modifier = 0.10
+    local_monthly_devastation = -0.10
+}
+
+naf_benefits_of_edolyssa = {
+    local_development_cost = -0.10
+    local_friendly_movement_speed = 0.15
+}
+
+naf_defense_fashros = {
+    local_defensiveness = 0.33
+    garrison_growth	= 0.50
+    local_hostile_attrition = 2
+}
+
+naf_reconvert_jasua = {
+    local_missionary_strength = 0.03
+    religion = yes
+}
+
+orc_pex_unrest = {
+    local_unrest = 10
+}
+
+naf_pacified_oppia = {
+    local_unrest = -2
+    local_missionary_maintenance_cost = -0.33
+}
+
+skt_bohoran_resettlement = {
+    local_development_cost = -0.15
+}
+
+klg_return_to_the_homeland = {
+    local_culture_conversion_cost = -0.15
+    local_unrest = 2.5
+    local_autonomy = -0.05
+}
+
+klg_deep_mining = {
+    local_development_cost = -0.33
+    local_gold_depletion_chance_modifier = -1.0
+    trade_goods_size = 3.0
+}
+
+klg_reclaimed_coast = {
+    local_sailors_modifier = 0.50
+    local_production_efficiency = 0.1
+}
+
+the_alymin_modifier = {
+    trade_goods_size_modifier = 0.1
+}
+
+recent_maskrana_outbreak = {
+    local_unrest = 1
+}
+
+recent_pesthi_outbreak = {
+    local_unrest = 1
+}
+
+recent_sandpox_outbreak = {
+    local_unrest = 1
+}
+
+recent_influenza_outbreak = {
+    local_unrest = 1
+}
+
+recent_blight_outbreak = {
+    local_unrest = 1
+}
+
+recent_disease = {}
+
+totalQuarantine = {
+    local_production_efficiency = -0.5
+    local_tax_modifier = -0.5
+    local_manpower_modifier = -1
+    local_unrest = 5
+}
+
+local_doctors = {
+    local_production_efficiency = -0.25
+    local_tax_modifier = -0.25
+    local_manpower_modifier = -0.5
+}
+
+nothingDone = {
+    local_production_efficiency = -0.10
+    local_tax_modifier = -0.10
+    local_manpower_modifier = -0.5
+    trade_goods_size_modifier = -0.10
+}
+
+noHarvest = {
+    local_production_efficiency = -1
+    trade_goods_size_modifier = -1
+}
+
+fluQuarantine = {
+    local_production_efficiency = -0.25
+    local_tax_modifier = -0.25
+    local_manpower_modifier = -0.5
+}
+
+fluDoctors = {
+    local_production_efficiency = -0.1
+    local_tax_modifier = -0.1
+    local_manpower_modifier = -0.1
+    local_unrest = -2
+}
+
+failedHarvest = {
+    local_unrest = 3
+    local_development_cost = 0.20
+}
+
+edolyssaCare = {
+    local_production_efficiency = -0.10
+    local_tax_modifier = -0.10
+    local_manpower_modifier = -0.25
+}
+
+edolyssaQuarantine = {
+    local_production_efficiency = -0.25
+    local_tax_modifier = -0.25
+    local_manpower_modifier = -1
+    local_unrest = 5
+}
+
+edolyssaFluQuarantine = {
+    local_production_efficiency = -0.30
+    local_tax_modifier = -0.30
+    local_manpower_modifier = -0.5
+    local_unrest = 1
+}
+
+edolyssaFluDoctors = {
+    local_production_efficiency = -0.15
+    local_tax_modifier = -0.15
+    local_manpower_modifier = -0.15
+    local_unrest = 1
+}
+
+fieldsBurnt = {
+    local_unrest = 5
+    local_autonomy = 0.05
+    local_tax_modifier = -0.1
+}
+
+
+klg_developed_stroktur = {
+    allowed_num_of_buildings = 1
+    local_prosperity_growth	= 0.50
+}
+
+klg_more_glass = {
+    trade_goods_size = 2
+}
+
+maskrana_outbreak = {
+    local_unrest = 2
+    local_production_efficiency = -0.25
+    local_tax_modifier = -0.25
+    local_manpower_modifier = -0.5
+}
+
+peshti_outbreak = {
+    local_unrest = 2
+    local_production_efficiency = -0.25
+    local_tax_modifier = -0.25
+    local_manpower_modifier = -0.5
+}
+
+sandpox_outbreak = {
+    local_unrest = 2
+    local_production_efficiency = -0.25
+    local_tax_modifier = -0.25
+    local_manpower_modifier = -0.5
+}
+
+npx_pawani_crackdown = {
+    local_unrest = 15
+    local_missionary_strength = 0.02
+}
+
+npx_pawani_tolerance = {
+    local_unrest = -2
+    local_missionary_strength = -0.10
+}
+
+klg_stil_daniil = {
+    local_unrest = -2
+    local_tax_modifier = 0.15
+}
+
+recently_visited_lathvy = {
+    
+}
+
+fasalep_diamond_mines = {
+    trade_goods_size = 4
+}
+
+gomic_breadbasket = {
+    trade_goods_size = 2
+}
+
+slave_markets_of_ameleka = {
+    trade_goods_size = 3
+}
+
+copper_mines_of_astifon = {
+    trade_goods_size = 1.5
+}
+
+growth_of_gadea = {
+    local_build_cost = -0.25
+    local_tax_modifier = 0.25
+    trade_goods_size_modifier = 0.1
+}
+
+zea_holy_city = {
+    local_build_cost = -0.25
+    local_tax_modifier = 0.10
+}
+
+zea_owner_of_gadea = {
+    local_build_cost = -0.33
+    trade_goods_size_modifier = 0.15
+}
+
+lag_more_fish = {
+    trade_goods_size = 1
+}
+
+tck_less_fish = {
+    trade_goods_size = -1
+    local_unrest = 1
+}
+
+tck_sar_development = {
+    trade_goods_size = 1
+    local_production_efficiency = 0.10
+}
+
+lag_quanex = {
+    local_unrest = -5
+    local_defensiveness = 0.20
+}
+
+tck_new_administration = {
+    local_unrest = 2
+    trade_goods_size = -1
+}
+
+tck_punished = {
+    local_unrest = -5
+    local_tax_modifier = 0.15
+    local_production_efficiency = -0.25
+}
+
+tck_fasalep_mines = {
+    trade_goods_size = 1
+    local_production_efficiency = 0.10
+}
+
+tck_vielan_vinyards = {
+    trade_goods_size = 1
+    local_production_efficiency = 0.10
+}
+
+lag_a_glazian_welcome = {
+    local_core_creation = -0.25
+    local_unrest = -3
+}
+
+tck_desert_cities = {
+    supply_limit_modifier = 0.10
+    province_trade_power_modifier = 0.10
+}
+lag_esmekeed = {
+    local_development_cost = -0.25
+    local_production_efficiency = 0.20
+    allowed_num_of_buildings = 1
+}
+
+lag_convert_to_feniki = {
+    local_unrest = 10
+    local_missionary_strength = 0.03
+}
+
+lag_develop_the_interior = {
+    local_development_cost = -0.25
+    local_build_cost = -0.20
+}
+
+lag_channel_toll = {
+    province_trade_power_value = 20
+}
+
+lag_respected_beliefs = {
+    min_local_autonomy = 50
+    #local_unrest = -10
+}
+
+lag_fortified_highlands = {
+    local_defensiveness = 0.10
+    garrison_growth	= 0.25
+}
+
+rst_more_gold = {
+    local_gold_depletion_chance_modifier = -1.0
+}
+
+rst_new_capital = {
+    local_development_cost = -0.25
+    local_unrest = -5
+}
+
+rst_new_gold_mines = {
+    trade_goods_size = 1.0
+}
+
+gotzlic_deforestation_modifier = {
+    local_development_cost = -0.15
+}
+
+fas_noglebim_massacre = {
+    local_unrest = -100
+    local_missionary_strength = 0.10
+    local_autonomy = -0.25
+}
+
+destribe_dev_capital = {
+    local_development_cost = -1
+}
+
+pya_convert = {
+    local_missionary_strength = 0.10
+}
+
+diocese_lometzel = {
+    local_development_cost = -0.20
+    allowed_num_of_manufactories = 1
+}
+
+estate_gishelar_lighter_gishelar_taxes_privilege_mod = {
+    local_tax_modifier = 0.15
+    religion = yes
+}
+
+estate_gishelar_manpower_mod = {
+    local_manpower_modifier = 0.30
+    religion = yes
+}
+
+estate_gishelar_guaranteed_autonomy_mod = {
+    local_missionary_strength = -1.0
+    local_religious_unity_contribution = -1.0
+    religion = yes
+}
+
+naf_pexto = {
+    local_tax_modifier = 0.15
+}
+
+naf_walara = {
+    local_manpower_modifier = 0.25
+}
+
+naf_lomea = {
+    province_trade_power_modifier = 0.5
+}
+
+naf_hasian_fort = {
+    defensiveness = 0.25
+    hostile_fleet_attrition = 2
+    local_ship_repair = 2.5
+    local_own_coast_naval_combat_bonus = 1
+}
+
+naf_rini_fort = {
+    defensiveness = 0.10
+    local_missionary_strength = -1
+    local_unrest = -10
+    religion = yes
+}
+
+naf_new_syadona = {
+    local_development_cost = -0.33
+    supply_limit_modifier = 0.75
+    local_friendly_movement_speed = 0.25
+}
+
+naf_forest_frontier = {
+    local_development_cost = -0.15
+    culture_conversion_cost = -0.25
+}
+
+naf_syadona_astro_mod = {
+    local_production_efficiency = -0.10
+    idea_cost = -0.05
 }

@@ -1,11 +1,12 @@
-discovered_by = gotzlic_tech_gr
+discovered_by = estali_tech_gr
 discovered_by = east_gomic_tech_gr
-discovered_by = north_gomic_tech_gr
+discovered_by = lathvy_tech_gr
 discovered_by = west_gomic_tech_gr
-discovered_by = geopyopian_tech_gr
+discovered_by = washoom_tech_gr
 culture = Bilik_C
 religion = bilik
 owner = BLK
+is_city = yes
 controller = BLK
 add_core = BLK
 
@@ -18,6 +19,17 @@ base_production = 3
 trade_goods = grain
 base_manpower = 4
 capital = "Qiso A"
-is_city = no
-extra_cost = 1
+ 
 
+
+
+212.6.7 = {
+owner = FSB
+is_city = yes
+controller = FSB
+add_core = FSB
+remove_core = BLK
+culture = Fisbiklan
+religion = tonmo
+discovered_by = north_antebari_tech_gr
+}

@@ -22,7 +22,7 @@ historical_units = {
 	swiss_landsknechten
 	dutch_maurician
 	austrian_tercio
-	austrian_grenzer
+	austrian_grenzer 
 	austrian_hussar
 	austrian_white_coat
 	austrian_jaeger
@@ -32,164 +32,105 @@ historical_units = {
 	napoleonic_lancers
 }
 
+
 monarch_names = {
-	"Ravshara #0" = 1
-	"Lanreisseir #0" = 1
-	"Unia #0" = 1
-	"Gaara #0" = 1
-	"Yharinel #0" = 1
-	"Axilea #0" = 1
-	"Ogro #0" = 1
-	"Astrazna #0" = 1
-	"Axiaraniro #0" = 1
-	"Raravshara #0" = 1
-	"Unrara #0" = 1
-	"Dari #0" = -1
-	"Konu #0" = 1
-	"Cecor #0" = 1
-	"Xeb #0" = 1
-	"Mugch #0" = 1
-	"Otlabusubs #0" = 1
-	"Abusubs #0" = 1
-	"Xot #0" = 1
-	"Ortachercha #0" = 1
-	"Gotugdinx #0" = 1
-	"Ortushimnen #0" = 1
-	"Ortufun #0" = 1
-	"Bluxnach #0" = 1
-	"Bimo #0" = 1
-	"Cecobtu #0" = 1
-	"Ceyoye #0" = 1
-	"Chicumdo #0" = 1
-	"Chubeshamch #0" = 1
-	"Achercha #0" = 1
-	"Conx #0" = 1
-	"Dokt #0" = 1
-	"Elgu #0" = 1
-	"Durcho #0" = 1
-	"Gegcnegl #0" = 1
-	"Gongin #0" = 1
-	"Kadomdum #0" = 1
-	"Komsurlegch #0" = 1
-	"Ntonagalch #0" = 1
-	"Obcoxult #0" = 1
-	"Sarxo #0" = 1
-	"Segchal #0" = 1
-	"Shimu #0" = -1
-	"Shumch #0" = -1
-	"Shuror #0" = -1
-	"Tedibs #0" = -1
-	"Tabch #0" = -1
-	"Sogt #0" = -1
-	"Togtulttara #0" = -1
-	"Unx #0" = -1
-	"Xerd #0" = 1
-	"Xigchun #0" = 1
-	"Xodurxidrimi #0" = 1
-	"Yoyebodabr #0" = 1
-	"Imrug #0" = -1
-	"Csongzu #0" = -1
-	"Balcsagy #0" = -1
-	"Bomsalgirucsurja #0" = -1
-	"Dimset #0" = -1
-	"Gyog #0" = -1
-	"Hersarag #0" = 1
-	"Nyucsum #0" = -1
-	"Opvidel #0" = 1
-	"Oneans #0" = 1
-	"Kulgy #0" = 1
-	"Jartel  #0" = -1
-	"Hunnos #0" = -1
-	"Nogwaagy #0" = -1
-	"Oytiyde #0" = -1
-	"Vasigat #0" = -1
-	"Niruna #0" = 1
-	"Daar #0" = 1
-	"Soxiro #0" = 1
-	"Maa #0" = 1
-	"Enrogier #0" = 1
-	"Varli #0" = -1
-	"Bujun #0" = -1
-	"Tirin #0" = -1
+	"N?zvouj? #0" = 1
+	"Vukoufon #0" = 1
+	"Fikhen #0" = 1
+	"Lelpa #0" = 1
+	"Fousokis #0" = 1
+	"Lazevy #0" = 1
+	"Pravet #0" = 1
+	"Fy?fen #0" = 1
+	"Anyjaz #0" = 1
+	"Ke?y #0" = 1
+	"Povu #0" = 1
+	"Viqhok #0" = 1
+	"Oplu?o #0" = 1
+	"Vatah #0" = 1
+	"Vefik #0" = 1
+	"Lupo #0" = 1
+	"H?puluz #0" = 1
+	"Vaza #0" = 1
+	"Sleve #0" = 1
+	"Ikou?ozum #0" = 1
+	"Meqhaz #0" = 1
+	"Trivopt?m #0" = 1
+	"Tosou? #0" = 1
+	"Mup? #0" = 1
+	"Iv?mof #0" = 1
+	"Qh??f? #0" = 1
+	"Miqya #0" = 1
+	"Pref #0" = 1
+	"?aini #0" = 1
+	"?laf #0" = 1
+	"Miptus #0" = 1
+	"Slukhri #0" = 1
+	"Qhilyj #0" = 1
+	"Maje #0" = 1
+	"Nyhsfa #0" = 1
+	"Naq'he #0" = 1
+	"Lapnai #0" = 1
+	"Oup? #0" = 1
+	"N?zovit #0" = 1
+	"?on?u #0" = 1
+	"?ilzri #0" = 1
+	"Epy #0" = -1
+	"Uvo #0" = -1
+	"Viqyly #0" = -1
+	"H?qu? #0" = -1
+	"?nu #0" = -1
+	"Aset #0" = -1
+	"Ovo #0" = -1
+	"Ve'in #0" = -1
+	"Iseqhly #0" = -1
+	"Qhousoqh? #0" = -1
+	"Zohi #0" = -1
+	"Ysa #0" = -1
 }
 
 leader_names = {
-	Ravshara
-	Lanreisseir
-	Unia
-	Gaara
-	Yharinel
-	Axilea
-	Ogro
-	Astrazna
-	Axiaraniro
-	Raravshara
-	Unrara
-	Konu 
-	Cecor
-	Xeb
-	Mugch
-	Otlabusubs
-	Abusubs
-	Xot
-	Ortachercha
-	Gotugdinx
-	Ortushimnen
-	Ortufun
-	Bluxnach
-	Bodbur
-	Bimo
-	Cecobtu
-	Ceyoye
-	Chicumdo	
-	Chubeshamch
-	Achercha
-	Conx
-	Dokt
-	Elgu
-	Durcho
-	Gegcnegl
-	Gongin
-	Kadomdum
-	Komsurlegch
-	Ntonagalch
-	Obcoxult
-	Sarxo
-	Segchal
-	Shimu
-	Shumch
-	Shuror
-	Tedibs
-	Tabch
-	Sogt
-	Togtultto
-	Unx
-	Xek
-	Xerd
-	Xigchun
-	Xodurxidrimi
-	Yoyebodable
-	Bonaany
-	Csongzu
-	Balcsagy
-	Bomsalgirucsurja
-	Dimset
-	Gyog
-	Hersarag
-	Nyucsum
-	Opvij
-	Oneans
-	Kulgy
-	Jartel
-	Hunnos
-	Nogwaagy
-	Oytiyde
-	Vasigat
-	Niruna
-	Daar 
-	Soxiro 
-	Maa 
-	Enrogier
+	N?zvouj?
+	Vukoufon
+	Fikhen
+	Lelpa
+	Fousokis
+	Lazevy
+	Pravet
+	Fy?fen
+	Anyjaz
+	Ke?y
+	Povu
+	Viqhok
+	Oplu?o
+	Vatah
+	Vefik
+	Lupo
+	H?puluz
+	Vaza
+	Sleve
+	Ikou?ozum
+	Meqhaz
+	Trivopt?m
+	Tosou?
+	Mup?
+	Iv?mof
+	Qh??f?
+	Miqya
+	Pref
+	?aini
+	?laf
+	Miptus
+	Slukhri
+	Qhilyj
+	Maje
+	Nyhsfa
+	"Naq'he"
+	Lapnai
+	Oup?
+	N?zovit
+	?on?u
+	?ilzri
 }
 
 ship_names = {

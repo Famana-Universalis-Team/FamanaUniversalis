@@ -196,7 +196,7 @@ vaximorian_rebels = {
 		}
 		if = {
 			limit = {
-				NOT = { religion_group = vaximorian }
+				NOT = { religion_group = gomic_pagan_group }
 			}
 			add_prestige = -50
 			every_owned_province = {

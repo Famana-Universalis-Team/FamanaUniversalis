@@ -118,8 +118,8 @@ PEX_ideas = {
 
 ORC_ideas = {
 	start = {
-		infantry_power = 0.20
-		diplomatic_reputation = 1
+		infantry_power = 0.15
+		colonists = 1
 	}
 	
 	bonus = {
@@ -137,21 +137,62 @@ ORC_ideas = {
 	orc_academy = {
 		leader_land_shock = 1
 	}
-	orc_kuda = {
-		war_exhaustion_cost = -0.10
-		state_maintenance_modifier = -0.10
+	orc_enforce = {
+		global_own_trade_power = 0.10
+		global_colonial_growth = 15
 	}
 	orc_maldiks = {
 		reduced_liberty_desire = 20
 		diplomatic_annexation_cost = -0.10
 	}
 	orc_great = {
-		idea_cost = -0.1
+		governing_capacity_modifier = 0.10
 	}
-	orc_enforce = {
-		global_own_trade_power = 0.25
+	orc_kuda = {
+		war_exhaustion_cost = -0.10
+		state_maintenance_modifier = -0.10
 	}
 	orc_train = {
+		fire_damage_received = -0.10
+	}
+}
+
+ORS_ideas = {
+	start = {
+		global_trade_goods_size_modifier = 0.10
+		land_forcelimit_modifier = 0.10
+	}
+	
+	bonus = {
+		trade_efficiency = 0.1
+	}
+
+	trigger = {
+		tag = ORS
+	}
+	free = yes
+	
+	ors_1 = {
+		legitimacy = 1
+	}
+	ors_2 = {
+		leader_land_shock = 1
+	}
+	ors_3 = {
+		global_own_trade_power = 0.25
+	}
+	ors_4 = {
+		merc_maintenance_modifier = -0.20
+		global_regiment_cost = -0.10
+	}
+	ors_5 = {
+		navy_tradition = 1
+	}
+	ors_6 = {
+		defensiveness = 0.10
+		war_exhaustion = -0.05
+	}
+	ors_7 = {
 		fire_damage_received = -0.10
 	}
 }
@@ -207,7 +248,10 @@ PYA_ideas = {
 	}	
 
 	trigger = {
-		tag = PYA
+		OR = {
+			tag = PYA
+			tag = PXS
+		}
 	}
 	free = yes
 	
@@ -216,7 +260,7 @@ PYA_ideas = {
 	}
 	pya_claim = {
 		defensiveness = 0.10
-		diplomatic_reputation = 1
+		diplomats = 1
 	}
 	pya_amridav = {
 		land_forcelimit_modifier = 0.25
@@ -259,7 +303,7 @@ REL_ideas = {
 		own_coast_naval_combat_bonus = 1
 	}
 	rel_four = {
-		trade_goods_size_modifier = 0.10
+		global_trade_goods_size_modifier = 0.10
 	}
 	rel_navy = {
 		galley_power = 0.10
@@ -478,7 +522,7 @@ YTI_ideas = {
 RPI_ideas = {
 	start = {
 		diplomatic_reputation = 1
-		trade_goods_size_modifier = 0.10
+		global_trade_goods_size_modifier = 0.10
 	}
 	
 	bonus = {
@@ -643,7 +687,10 @@ RES_ideas = {
 	}	
 
 	trigger = {
-		tag = RES
+		OR = {
+			tag = RES
+			culture = Feniki
+		}
 	}
 	free = yes
 	
@@ -663,13 +710,14 @@ RES_ideas = {
 	}
 	res_great = {
 		naval_forcelimit_modifier = 0.33
+		allowed_marine_fraction = 0.25
 	}
 	res_rule = {
-		diplomatic_upkeep = 1
 		liberty_desire_from_subject_development = -0.05
+		envoy_travel_time = -0.25
 	}
 	res_spies = {
-		spy_offence = 0.25
+		spy_offence = 0.20
 	}
 }
 
@@ -819,7 +867,7 @@ ARS_ideas = {
 		global_own_trade_power = 0.15
 	}
 	ars_improve = {
-		trade_goods_size_modifier = 0.15
+		global_trade_goods_size_modifier = 0.15
 	}
 	ars_yambri = {
 		num_accepted_cultures = 2
@@ -863,10 +911,9 @@ NPX_ideas = {
 		development_cost = -0.10
 	}
 	npx_captured = {
-		trade_goods_size_modifier = 0.15
+		global_trade_goods_size_modifier = 0.15
 	}
 	npx_arm = {
-		artillery_fire = 1
 		privateer_efficiency = 0.2
 	}
 }
@@ -939,7 +986,7 @@ OPP_ideas = {
 		manpower_recovery_speed = 0.20
 	}
 	opp_council = {
-		advisor_cost = -0.20
+		advisor_cost = -0.10
 		global_unrest = -1
 	}
 	opp_heartlands = {
@@ -1089,6 +1136,7 @@ OKU_ideas = {
 	
 	bonus = {
 		republican_tradition = 0.5
+		legitimacy = 1
 	}	
 
 	trigger = {
@@ -1346,7 +1394,7 @@ UMZ_ideas = {
         galley_power = 0.2
     }
     umz_fishing = {
-        trade_goods_size_modifier = 0.10
+        global_trade_goods_size_modifier = 0.10
     }
     umz_inland = {
         global_manpower_modifier = 0.1
@@ -1431,7 +1479,7 @@ ROP_ideas = {
 		stability_cost_modifier = -0.10
 	}
 	rop_breadbasket = {
-		trade_goods_size_modifier = 0.10
+		global_trade_goods_size_modifier = 0.10
 	}
 }
 
@@ -1455,8 +1503,7 @@ LYP_ideas = {
 		manpower_recovery_speed = 0.10
 	}
 	lyp_reformation = {
-		tolerance_own = 2
-		prestige = 0.5
+		tolerance_own = 1
 		global_heretic_missionary_strength = 0.02
 	}
 	lyp_spies = {
@@ -1471,7 +1518,7 @@ LYP_ideas = {
 		defensiveness = 0.20
 	}
 	lyp_path = {
-		diplomatic_upkeep = 2
+		diplomatic_upkeep = 1
 	}
 	lyp_heart = {
 		global_own_trade_power = 0.15
@@ -1521,7 +1568,7 @@ PON_ideas = {
 
 XON_ideas = {
 	start = {
-		trade_goods_size_modifier = 0.10
+		global_trade_goods_size_modifier = 0.10
 		defensiveness = 0.20
 	}
 	
@@ -1578,7 +1625,7 @@ AGX_ideas = {
 		trade_efficiency = 0.10
 	}
 	agx_ara = {
-		global_missionary_strength = 0.01
+		tolerance_own = 1
 	}
 	agx_royal = {
 		heir_chance = 0.25
@@ -1641,7 +1688,7 @@ XOF_ideas = {
 NAK_ideas = {
     start = {
         manpower_recovery_speed = 0.15
-        trade_goods_size_modifier = 0.10
+        global_trade_goods_size_modifier = 0.10
     }
     
     bonus = {
@@ -1693,8 +1740,7 @@ KIN_ideas = {
     free = yes
     
     kin_diverse_nation = {
-        tolerance_heathen = 1
-        tolerance_heretic = 1
+        tolerance_heathen = 2
     }
     kin_the_lone_republic = {
         republican_tradition = 0.33
@@ -1901,7 +1947,6 @@ MSH_ideas = {
         global_trade_goods_size_modifier = 0.1
     }
     msh_swift_as_the_air = {
-        movement_speed = 0.10
         siege_ability = 0.10
     }
     msh_hanging_gardens_of_shiraska_xon = {
@@ -1909,7 +1954,6 @@ MSH_ideas = {
     }
     msh_xalian_heartland = {
         global_unrest = -2
-        global_autonomy = -0.05
     }
     msh_guardian_of_ga_xal = {
         manpower_recovery_speed = 0.15
@@ -1949,7 +1993,7 @@ NKM_ideas = {
         global_ship_cost = -0.1
     }
     nkm_noka_battlecry = {
-        shock_damage = 0.05
+        shock_damage = 0.10
     }
     nkm_shirian_culture = {
         global_unrest = -1
@@ -2062,6 +2106,7 @@ GAX_ideas = {
     }
     gax_test = {
         defensiveness = 0.20
+		land_forcelimit_modifier = 0.10
     }
     gax_new = {
 		naval_morale = 0.10
@@ -2070,7 +2115,7 @@ GAX_ideas = {
 		trade_efficiency = 0.10
     }
     gax_ren = {
-        production_efficiency = 0.10
+        global_allowed_num_of_buildings = 1
     }
 }
 
@@ -2146,10 +2191,10 @@ VNA_ideas = {
 		sunk_ship_morale_hit_recieved = -0.20
     }
     vna_new = {
-		trade_goods_size_modifier = 0.10
+		global_trade_goods_size_modifier = 0.20
     }
     vna_marines = {
-		land_forcelimit_modifier = 0.10
+		allowed_marine_fraction = 1.0
 		infantry_power = 0.05
     }
 }
@@ -2570,6 +2615,7 @@ CLL_ideas = {
 	}
 	cll_2 = {
 		army_tradition = 1
+		land_morale = 0.10
 	}
 	cll_3 = {
 		monarch_admin_power = 1
@@ -2586,5 +2632,369 @@ CLL_ideas = {
 	}
 	cll_7 = {
 		merc_maintenance_modifier = -0.15
+	}
+}
+
+ATM_ideas = {
+	start = {
+		idea_cost = -0.1
+		cavalry_power = 0.20
+	}
+	
+	bonus = {
+		administrative_efficiency = 0.05
+	}
+
+	trigger = {
+		tag = ATM
+	}
+	free = yes
+	
+	atm_1 = {
+		manpower_recovery_speed = 0.10
+	}
+	atm_2 = {
+		core_creation = -0.1
+	}
+	atm_3 = {
+		discipline = 0.05
+	}
+	atm_4 = {
+		global_colonial_growth = 25
+	}
+	atm_5 = {
+		prestige_from_land = 0.50
+		free_leader_pool = 1
+	}
+	atm_6 = {
+		merchants = 1
+	}
+	atm_7 = {
+		governing_capacity_modifier = 0.1
+	}
+}
+
+FAZ_ideas = {
+	start = {
+		merchants = 1
+		autonomy_change_time = -0.5
+	}
+	
+	bonus = {
+		build_cost = -0.1
+	}
+
+	trigger = {
+		tag = FAZ
+	}
+	free = yes
+	
+	faz_1 = {
+		production_efficiency = 0.10
+	}
+	faz_2 = {
+		yearly_army_professionalism = 0.005
+	}
+	faz_3 = {
+		adm_advisor_cost = -0.20
+	}
+	faz_4 = {
+		reinforce_speed = 0.10
+		envoy_travel_time = -0.25
+	}
+	faz_5 = {
+		land_maintenance_modifier = -0.10
+	}
+	faz_6 = {
+		mercantilism_cost = -0.1
+		trade_steering = 0.2
+	}
+	faz_7 = {
+		interest = -1
+	}
+}
+
+SOY_ideas = {
+	start = {
+		land_morale = 0.10
+		prestige_from_land = 1.00
+	}
+	
+	bonus = {
+		global_colonial_growth = 30
+	}
+
+	trigger = {
+		tag = SOY
+	}
+	free = yes
+	
+	soy_1 = {
+		legitimacy = 1.0
+		move_capital_cost_modifier = -0.5
+	}
+	soy_2 = {
+		diplomats = 1
+		rival_change_cost = -0.5
+	}
+	soy_3 = {
+		global_trade_goods_size_modifier = 0.10
+		enemy_core_creation = 0.5
+	}
+	soy_4 = {
+		tolerance_own = 3
+		naval_morale = 0.20
+	}
+	soy_5 = {
+		leader_land_manuever = 2
+		movement_speed = 0.15
+	}
+	soy_6 = {
+		leader_land_shock = 1
+		culture_conversion_cost = -0.25
+	}
+	soy_7 = {
+		justify_trade_conflict_cost = -1.0
+		caravan_power = 0.10
+	}
+}
+
+KLG_ideas = {
+	start = {
+		fire_damage_received = -0.10
+		hostile_attrition = 1
+	}
+	
+	bonus = {
+		leader_land_fire = 1
+	}
+
+	trigger = {
+		tag = KLG
+	}
+	free = yes
+	
+	klg_1 = {
+		land_morale = 0.05
+		army_tradition = 1.0
+	}
+	klg_2 = {
+		leader_land_shock = 1
+	}
+	klg_3 = {
+		global_trade_power = 0.10
+	}
+	klg_4 = {
+		culture_conversion_cost = -0.20
+		may_explore = yes
+	}
+	klg_5 = {
+		may_perform_slave_raid = yes
+	}
+	klg_6 = {
+		technology_cost = -0.05
+	}
+	klg_7 = {
+		leader_naval_fire = 1
+	}
+}
+
+MNR_ideas = {
+	start = {
+		no_religion_penalty = yes
+		global_sailors_modifier = 0.25
+	}
+	
+	bonus = {
+		unjustified_demands = -0.1
+	}
+
+	trigger = {
+		tag = MNR
+	}
+	free = yes
+	
+	mnr_1 = {
+		galley_power = 0.15
+		global_ship_repair = 0.1
+	}
+	mnr_2 = {
+		naval_morale = 0.1
+	}
+	mnr_3 = {
+		global_trade_power = 0.1
+	}
+	mnr_4 = {
+		embargo_efficiency = 0.25
+		power_projection_from_insults = 0.50
+	}
+	mnr_5 = {
+		recover_navy_morale_speed = 0.25
+	}
+	mnr_6 = {
+		ship_durability	= 0.05
+	}
+	mnr_7 = {
+		mercenary_cost = -0.20
+		leader_cost = -0.10
+	}
+}
+
+MAA_ideas = {
+	start = {
+		defensiveness = 0.10
+		diplomatic_upkeep = 1
+	}
+	
+	bonus = {
+		adm_advisor_cost = -0.20
+	}
+
+	trigger = {
+		tag = MAA
+	}
+	free = yes
+	
+	maa_1 = {
+		global_trade_goods_size_modifier = 0.10
+	}
+	maa_2 = {
+		garrison_size = 0.25
+	}
+	maa_3 = {
+		loot_amount = 0.50
+		available_province_loot	= 0.25
+	}
+	maa_4 = {
+		diplomatic_reputation = 2
+	}
+	maa_5 = {
+		development_cost = -0.05
+		build_cost = -0.05
+	}
+	maa_6 = {
+		tolerance_own = 1
+	}
+	maa_7 = {
+		diplomats = 1
+	}
+}
+
+HLK_ideas = {
+	start = {
+		diplomats = 1
+		enemy_core_creation	= 1.0
+	}
+	
+	bonus = {
+		leader_land_fire = 1
+	}
+
+	trigger = {
+		tag = HLK
+	}
+	free = yes
+	
+	hlk_1 = {
+		land_forcelimit_modifier = 0.10
+	}
+	hlk_2 = {
+		improve_relation_modifier = 0.10
+		diplomatic_reputation = 1
+	}
+	hlk_3 = {
+		artillery_power	= 0.15
+	}
+	hlk_4 = {
+		artillery_cost = -0.10
+	}
+	hlk_5 = {
+		vassal_forcelimit_bonus = 0.33
+		diplomatic_annexation_cost = -0.10
+	}
+	hlk_6 = {
+		backrow_artillery_damage = 0.10
+	}
+	hlk_7 = {
+		fire_damage = 0.10
+	}
+}
+
+YTB_ideas = {
+	start = {
+		discipline = 0.05
+		defensiveness = 0.15
+	}
+	
+	bonus = {
+		warscore_cost_vs_other_religion = -0.10
+	}
+
+	trigger = {
+		tag = YTB
+	}
+	free = yes
+	
+	ytb_1 = {
+		religious_unity = 0.25
+	}
+	ytb_2 = {
+		land_forcelimit_modifier = 0.20
+	}
+	ytb_3 = {
+		hostile_attrition = 1
+	}
+	ytb_4 = {
+		shock_damage_received = -0.10
+		fort_maintenance_modifier = -0.20
+	}
+	ytb_5 = {
+		global_garrison_growth = 0.10
+		enemy_core_creation = 0.50
+	}
+	ytb_6 = {
+		merchants = 1
+	}
+	ytb_7 = {
+		culture_conversion_cost = -0.20
+	}
+}
+
+HLT_ideas = {
+	start = {
+		siege_ability = 0.15
+		warscore_cost_vs_other_religion = -0.10
+	}
+	
+	bonus = {
+		leader_land_shock = 1
+	}
+
+	trigger = {
+		tag = HLT
+	}
+	free = yes
+	
+	hlt_1 = {
+		devotion = 1
+	}
+	hlt_2 = {
+		global_missionary_strength = 0.02
+		missionary_maintenance_cost = -0.25
+	}
+	hlt_3 = {
+		global_tax_modifier = 0.15
+	}
+	hlt_4 = {
+		build_cost = -0.10
+	}
+	hlt_5 = {
+		discipline = 0.05
+	}
+	hlt_6 = {
+		ae_impact = -0.10	
+	}
+	hlt_7 = {
+		tolerance_own = 2
 	}
 }

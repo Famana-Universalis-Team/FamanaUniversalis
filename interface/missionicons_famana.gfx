@@ -1,50 +1,90 @@
 	### Famana Mission Icons ###	
 	
 spriteTypes = {
+
+	spriteType = {
+		name = "mission_feast"
+		texturefile = "gfx//interface//missions//famana_missions//mission_feast.dds"
+	}
+
+	spriteType = {
+		name = "mission_ballista"
+		texturefile = "gfx//interface//missions//famana_missions//mission_ballista.dds"
+	}
+
+	spriteType = {
+		name = "mission_phalanx"
+		texturefile = "gfx//interface//missions//famana_missions//mission_phalanx.dds"
+	}
+
+	spriteType = {
+		name = "persian_king"
+		texturefile = "gfx//interface//missions//famana_missions//persian_king.dds"
+	}
+
+	spriteType = {
+		name = "great_castle"
+		texturefile = "gfx//interface//missions//famana_missions//great_castle.dds"
+	}
 	
-			spriteType = {
+	spriteType = {
 		name = "fashros_mission_city"
 		texturefile = "gfx//interface//missions//famana_missions//fashros_mission_city.dds"
 	}
 	
-			spriteType = {
+	spriteType = {
 		name = "defeating_ordica"
 		texturefile = "gfx//interface//missions//famana_missions//defeating_ordica.dds"
 	}
 	
-			spriteType = {
+	spriteType = {
 		name = "pex_oppia_mission"
 		texturefile = "gfx//interface//missions//famana_missions//pex_oppia_mission.dds"
 	}
 	
-			spriteType = {
+	spriteType = {
 		name = "pex_lathvy_empire_mission"
 		texturefile = "gfx//interface//missions//famana_missions//pex_lathvy_empire_mission.dds"
 	}
+	
+	spriteType = {
+		name = "klg_fire"
+		texturefile = "gfx//interface//missions//famana_missions//klg_fire.dds"
+	}
 
-			spriteType = {
+	spriteType = {
 		name = "control_unrest"
 		texturefile = "gfx//interface//missions//famana_missions//control_unrest.dds"
 	}
 
-			spriteType = {
+	spriteType = {
 		name = "mak_anarchy_end"
 		texturefile = "gfx//interface//missions//famana_missions//mak_anarchy_end.dds"
 	}
 
-			spriteType = {
+	spriteType = {
 		name = "mak_countryside"
 		texturefile = "gfx//interface//missions//famana_missions//mak_countryside.dds"
 	}
 
-			spriteType = {
+	spriteType = {
 		name = "mak_levies"
 		texturefile = "gfx//interface//missions//famana_missions//mak_levies.dds"
 	}
 
-			spriteType = {
+	spriteType = {
 		name = "mak_peace"
 		texturefile = "gfx//interface//missions//famana_missions//mak_peace.dds"
+	}
+	
+	spriteType = {
+		name = "naf_eclipse_icon"
+		texturefile = "gfx//interface//missions//famana_missions//naf_eclipse_icon.dds"
+	}
+	
+	spriteType = {
+		name = "lks_moon_icon"
+		texturefile = "gfx//interface//missions//famana_missions//lks_moon_icon.dds"
 	}
 	
 }

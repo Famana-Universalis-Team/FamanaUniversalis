@@ -1,0 +1,287 @@
+
+lks_1 = {
+    slot = 1
+    generic = no
+    ai = yes
+    potential = {
+        NOT = { map_setup = map_setup_random }
+		tag = LKS
+    }
+    has_country_shield = yes
+
+    lks_rein_in_the_chiefs = {
+        icon = mission_protect_white_sea_trade
+        required_missions = { }
+        trigger = {
+            lukscha_region = {
+                type = all
+                OR = {
+                    owned_by = ROOT
+                    is_empty = yes
+                }
+            }
+            if = {
+                limit = {
+                    ai = no
+                }
+                num_of_estate_privileges = {
+	                estate = estate_clans
+	                value = 2
+                }
+            }
+        }
+        effect = {
+            add_army_tradition = 25
+            add_country_modifier = {
+                name = lks_reined_in_chiefs
+                duration = 5475
+            }
+            capital_scope = {
+                add_institution_embracement = {
+                    which = feudalism
+                    value = 100
+                }
+            }
+        }
+        provinces_to_highlight = {
+            NOT = { country_or_non_sovereign_subject_holds = ROOT }
+            NOT = { is_empty = yes }
+			region = lukscha_region
+        }
+    }
+
+    lks_ensure_unity = {
+        icon = mission_rb_settle_the_north
+        required_missions = { lks_rein_in_the_chiefs }
+        trigger = {
+            if = {
+                limit = {
+                    ai = yes
+                }
+                always = yes
+            }
+            else = {
+                num_of_owned_provinces_with = {
+                    value = 5
+                    has_seat_in_parliament = yes
+                }
+                estate_loyalty = {
+                    estate = estate_church
+                    loyalty = 65
+                }
+            }
+        }
+        effect = {
+            add_adm_power = 250
+            add_country_modifier = {
+                name = lks_the_first_forum
+                duration = 18250
+            }
+            add_country_modifier = {
+                name = lks_internal_growth
+                duration = 5475
+            }
+        }
+        provinces_to_highlight = {
+            owned_by = ROOT
+            NOT = {
+                has_seat_in_parliament = yes
+            }
+        }
+    }
+
+    lks_beyond_the_forest = {
+        icon = lks_moon_icon
+        required_missions = { lks_ensure_unity }
+        trigger = {
+            if = {
+                limit = {
+                    ai = yes
+                }
+                is_year = 390
+            }
+            else = {
+                NOT = {
+                    has_country_modifier = lks_internal_growth
+                }
+                num_of_owned_provinces_with = {
+                    value = 10
+                    region = lukscha_region
+                    development = 8
+                }
+                num_of_generals = 1
+            }
+        }
+        effect = {
+            add_country_modifier = {
+                name = lks_population_boom
+                duration = 5475
+            }
+            custom_tooltip = lukschaGetDev
+            hidden_effect = {
+                every_owned_province = {
+                    limit = {
+                        region = lukscha_region
+                    }
+                    add_base_manpower = 1
+                    add_base_production = 1
+                    add_base_tax = 1
+                }
+            }
+            country_event = {
+                id = lukscham.7
+            }
+            area_156 = {
+                add_permanent_claim = ROOT
+            }
+            area_157 = {
+                add_permanent_claim = ROOT
+            }
+            if = {
+                limit = {
+                    ai = yes
+                }
+            	add_adm_tech = 3
+                add_dip_tech = 3
+                add_mil_tech = 3
+            }
+        }
+        provinces_to_highlight = {
+            owned_by = ROOT
+            NOT = { development = 10 }
+            NOT = { is_empty = yes }
+			region = lukscha_region
+        }
+    }
+
+    lks_conquer_rduma = {
+        icon = mission_rb_into_ireland
+        required_missions = { lks_beyond_the_forest }
+        trigger = {
+            if = {
+                limit = {
+                    ai = yes
+                }
+                is_year = 400
+            }
+            else = {
+                NOT = {
+                    has_country_modifier = lks_population_boom
+                }
+                area_156 = {
+                    type = all
+                    country_or_non_sovereign_subject_holds = ROOT
+                }
+                area_157 = {
+                    type = all
+                    country_or_non_sovereign_subject_holds = ROOT
+                }
+            }
+        }
+        effect = {
+            add_manpower = 15
+            country_event = {
+                id = lukscham.8
+            }
+        }
+        provinces_to_highlight = {
+            NOT = {
+                country_or_non_sovereign_subject_holds = ROOT
+            }
+            OR = {
+                area = area_156
+                area = area_157
+            }
+        }
+    }
+
+    lks_in_search_of_loot = {
+        icon = mission_amur_acquisition
+        required_missions = { lks_conquer_rduma }
+        trigger = {
+            NOT = {
+                6532 = {
+                    is_empty = yes
+                }
+            }
+            if = {
+                limit = {
+                    ai = yes
+                }
+                always = yes
+            }
+            else = {
+                army_size = 20
+                advisor	= commandant
+            }
+        }
+        effect = {
+            add_country_modifier = {
+                name = lks_into_gotzlica
+                duration = 9125
+            }
+            gotzlic_region = {
+                add_permanent_claim = ROOT
+            }
+            east_gotzlic_region = {
+                add_permanent_claim = ROOT
+            }
+            brula_region = {
+                add_permanent_claim = ROOT
+            }
+        }
+        provinces_to_highlight = {
+            NOT = {
+                owned_by = ROOT
+            }
+            province_id = 6532
+        }
+    }
+
+    lks_dominion_over_gotzlica = {
+        icon = mission_advance_to_the_dnieper
+        required_missions = { lks_in_search_of_loot }
+        trigger = {
+            gotzlic_region = {
+                type = all
+                OR = {
+                    country_or_non_sovereign_subject_holds = ROOT
+                    is_empty = yes
+                }
+            }
+            east_gotzlic_region = {
+                type = all
+                OR = {
+                    country_or_non_sovereign_subject_holds = ROOT
+                    is_empty = yes
+                    province_id = 6643
+                }
+            }
+        }
+        effect = {
+            if = {
+                limit = {
+                    NOT = {
+                        government_rank = 3
+                    }
+                }
+                set_government_rank = 3
+            }
+            add_army_professionalism = 0.05
+            add_treasury = 750
+            add_country_modifier = {
+                name = lks_tiger_of_the_north
+                duration = -1
+            }
+        }
+        provinces_to_highlight = {
+            NOT = { country_or_non_sovereign_subject_holds = ROOT }
+            NOT = { is_empty = yes }
+            NOT = { province_id = 6643 }
+            OR = {
+                region = gotzlic_region
+                region = east_gotzlic_region
+            }
+        }
+    }
+}

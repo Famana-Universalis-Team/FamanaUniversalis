@@ -73,14 +73,14 @@ Nevian_ideas = {
 		artillery_power = 0.15
 	}
 	Nevian_jom = {
-		trade_goods_size_modifier = 0.10
+		global_trade_goods_size_modifier = 0.10
 	}
 }
 
 Ekelan_ideas = {
 	start = {
-		land_morale = 0.10
-		capture_ship_chance = 0.25
+		land_morale = 0.15
+		inflation_reduction = 0.1
 	}
 	
 	bonus = {
@@ -96,24 +96,24 @@ Ekelan_ideas = {
 	free = yes
 	
 	Ekelan_resist = {
-		defensiveness = 0.15
+		fort_maintenance_modifier = -0.20
 	}
 	Ekelan_jungle = {
-		hostile_attrition = 1
+		defensiveness = 0.15
 	}
 	Ekelan_trad = {
-		global_unrest = -1
-		religious_unity = 0.15
+		hostile_attrition = 1
 	}
 	Ekelan_sea = {
 		navy_tradition = 1
-		global_ship_cost = -0.10
+		ship_durability = 0.05
 	}
 	Ekelan_diplo = {
 		diplomatic_upkeep = 1
 	}
 	Ekelan_gods = {
-		legitimacy = 1
+		tolerance_own = 1
+		legitimacy = 0.5
 	}
 	Ekelan_royal = {
 		advisor_pool = 1
@@ -178,7 +178,7 @@ Alavyas_ideas = {
 		idea_cost = -0.05
 	}
 	Alavyas_delta = {
-		trade_goods_size_modifier = 0.10
+		global_trade_goods_size_modifier = 0.10
 	}
 	Alavyas_nilifo = {
 		global_ship_cost = -0.33
@@ -285,7 +285,11 @@ Hozyan_ideas = {
 	}	
 
 	trigger = {
-		primary_culture = Hozyan
+		OR = {
+			tag = HZY
+			tag = EHZ
+			tag = WHZ
+		}
 	}
 	free = yes
 	
@@ -438,7 +442,7 @@ DES_ideas = {
 	}
 	
 	bonus = {
-		trade_goods_size_modifier = 0.10
+		global_trade_goods_size_modifier = 0.10
 	}	
 
 	trigger = {
@@ -508,7 +512,7 @@ Morian_ideas = {
 		ae_impact = -0.10
 	}
 	Morian_one = {
-		global_missionary_strength = 0.02
+		global_missionary_strength = 0.01
 	}
 	Morian_jeruix = {
 		global_tax_modifier = 0.10
@@ -540,7 +544,7 @@ DEL_ideas = {
 		yearly_corruption = -0.1
 	}
 	del_farming_mastery = {
-		trade_goods_size_modifier = 0.15
+		global_trade_goods_size_modifier = 0.15
 	}
 	del_natural_harmony = {
 		stability_cost_modifier = -0.1
@@ -689,6 +693,7 @@ Maxan_ideas = {
 		OR = {
 			primary_culture = Lerushian
 			primary_culture = Xofkan
+			primary_culture = Amaxran
 		}
 	}
 	free = yes
@@ -783,7 +788,7 @@ Kachik_ideas = {
 		movement_speed = 0.10
 	}
 	Kachik_3 = {
-		gold_depletion_chance_modifier = -0.75
+		gold_depletion_chance_modifier = -0.50
 		global_tax_modifier	= 0.05
 	}
 	Kachik_4 = {
@@ -799,5 +804,45 @@ Kachik_ideas = {
 	}
 	Kachik_7 = {
 		vassal_income = 0.25
+	}
+}
+
+Lukscha_ideas = {
+	start = {
+		loot_amount = 0.50
+		leader_land_shock = 1
+	}
+	
+	bonus = {
+		global_unrest = -1
+	}
+
+	trigger = {
+		primary_culture = Lukschan
+	}
+	free = yes
+	
+	Lukscha_1 = {
+		shock_damage = 0.10
+	}
+	Lukscha_2 = {
+		land_morale = 0.05
+		siege_ability = 0.10
+	}
+	Lukscha_3 = {
+		unjustified_demands = -0.20
+	}
+	Lukscha_4 = {
+		manpower_recovery_speed = 0.15
+	}
+	Lukscha_5 = {
+		possible_policy = 1
+		tolerance_heretic = 3
+	}
+	Lukscha_6 = {
+		land_attrition = -0.10
+	}
+	Lukscha_7 = {
+		prestige_decay = -0.01
 	}
 }

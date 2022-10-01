@@ -1,0 +1,556 @@
+defined_text = {
+    name = achievementTitle
+	random = no
+
+	text = {
+        localisation_key = FromtheAshesT
+        trigger = {
+			check_variable = {
+				which = achievementID
+				value = 1
+			}
+        }
+    }
+	text = {
+        localisation_key = ServantOfDelkT
+        trigger = {
+			check_variable = {
+				which = achievementID
+				value = 2
+			}
+        }
+    }
+	text = {
+        localisation_key = DiasporaT
+        trigger = {
+			check_variable = {
+				which = achievementID
+				value = 3
+			}
+        }
+    }
+	text = {
+        localisation_key = RelentlessPushWestT
+        trigger = {
+			check_variable = {
+				which = achievementID
+				value = 4
+			}
+        }
+    }
+	text = {
+        localisation_key = ForTheCloudsT
+        trigger = {
+			check_variable = {
+				which = achievementID
+				value = 5
+			}
+        }
+    }
+	text = {
+        localisation_key = BadBoyT
+        trigger = {
+			check_variable = {
+				which = achievementIDT
+				value = 6
+			}
+        }
+    }
+	text = {
+        localisation_key = IGoYesForeverT
+        trigger = {
+			check_variable = {
+				which = achievementID
+				value = 7
+			}
+        }
+    }
+	text = {
+        localisation_key = GetRialT
+        trigger = {
+			check_variable = {
+				which = achievementID
+				value = 8
+			}
+        }
+    }
+	text = {
+        localisation_key = TeeSpilledT
+        trigger = {
+			check_variable = {
+				which = achievementID
+				value = 9
+			}
+        }
+    }
+	text = {
+        localisation_key = SweetRevengeT
+        trigger = {
+			check_variable = {
+				which = achievementID
+				value = 10
+			}
+        }
+    }
+	text = {
+        localisation_key = HolkSmashT
+        trigger = {
+			check_variable = {
+				which = achievementID
+				value = 11
+			}
+        }
+    }
+	text = {
+        localisation_key = MaldingT
+        trigger = {
+			check_variable = {
+				which = achievementID
+				value = 12
+			}
+        }
+    }
+	text = {
+        localisation_key = 1984T
+        trigger = {
+			check_variable = {
+				which = achievementID
+				value = 13
+			}
+        }
+    }
+	text = {
+        localisation_key = BackWithAVengeanceT
+        trigger = {
+			check_variable = {
+				which = achievementID
+				value = 14
+			}
+        }
+    }
+	text = {
+        localisation_key = BloodRedMoonT
+        trigger = {
+			check_variable = {
+				which = achievementID
+				value = 15
+			}
+        }
+    }
+	text = {
+        localisation_key = ZnestalT
+        trigger = {
+			check_variable = {
+				which = achievementID
+				value = 16
+			}
+        }
+    }
+	text = {
+        localisation_key = NobodyLivesForeverT
+        trigger = {
+			check_variable = {
+				which = achievementID
+				value = 17
+			}
+        }
+    }
+	text = {
+        localisation_key = MajestazDreamT
+        trigger = {
+			check_variable = {
+				which = achievementID
+				value = 18
+			}
+        }
+    }
+	text = {
+        localisation_key = TrueLathviteT
+        trigger = {
+			check_variable = {
+				which = achievementID
+				value = 19
+			}
+        }
+    }
+	text = {
+        localisation_key = YabonianSpiesT
+        trigger = {
+			check_variable = {
+				which = achievementID
+				value = 20
+			}
+        }
+    }
+	text = {
+        localisation_key = CrusaderT
+        trigger = {
+			check_variable = {
+				which = achievementID
+				value = 21
+			}
+        }
+    }
+	text = {
+        localisation_key = ThirdTimesTheCharmT
+        trigger = {
+			check_variable = {
+				which = achievementID
+				value = 22
+			}
+        }
+    }
+	text = {
+        localisation_key = NeverTrustAnOppianT
+        trigger = {
+			check_variable = {
+				which = achievementID
+				value = 23
+			}
+        }
+    }
+	text = {
+        localisation_key = NeverTrustAJasuanT
+        trigger = {
+			check_variable = {
+				which = achievementID
+				value = 24
+			}
+        }
+    }
+	text = {
+        localisation_key = WarriorSpiritT
+        trigger = {
+			check_variable = {
+				which = achievementID
+				value = 25
+			}
+        }
+    }
+	text = {
+        localisation_key = MotherAnarchyLovesHerSonsT
+        trigger = {
+			check_variable = {
+				which = achievementID
+				value = 26
+			}
+        }
+    }
+	text = {
+        localisation_key = MissionImpozumolT
+        trigger = {
+			check_variable = {
+				which = achievementID
+				value = 27
+			}
+        }
+    }
+	text = {
+        localisation_key = EtTuKarseT
+        trigger = {
+			check_variable = {
+				which = achievementID
+				value = 28
+			}
+        }
+    }
+	text = {
+        localisation_key = JexusChristoT
+        trigger = {
+			check_variable = {
+				which = achievementID
+				value = 29
+			}
+        }
+    }
+	text = {
+        localisation_key = ElwaitingGameT
+        trigger = {
+			check_variable = {
+				which = achievementID
+				value = 30
+			}
+        }
+    }
+}
+
+
+
+
+
+
+defined_text = {
+    name = achievementDesc
+	random = no
+
+	text = {
+        localisation_key = FromtheAshesD
+        trigger = {
+			check_variable = {
+				which = achievementID
+				value = 1
+			}
+        }
+    }
+	text = {
+        localisation_key = ServantOfDelkD
+        trigger = {
+			check_variable = {
+				which = achievementID
+				value = 2
+			}
+        }
+    }
+	text = {
+        localisation_key = DiasporaD
+        trigger = {
+			check_variable = {
+				which = achievementID
+				value = 3
+			}
+        }
+    }
+	text = {
+        localisation_key = RelentlessPushWestD
+        trigger = {
+			check_variable = {
+				which = achievementID
+				value = 4
+			}
+        }
+    }
+	text = {
+        localisation_key = ForTheCloudsD
+        trigger = {
+			check_variable = {
+				which = achievementID
+				value = 5
+			}
+        }
+    }
+	text = {
+        localisation_key = BadBoyD
+        trigger = {
+			check_variable = {
+				which = achievementIDT
+				value = 6
+			}
+        }
+    }
+	text = {
+        localisation_key = IGoYesForeverD
+        trigger = {
+			check_variable = {
+				which = achievementID
+				value = 7
+			}
+        }
+    }
+	text = {
+        localisation_key = GetRialD
+        trigger = {
+			check_variable = {
+				which = achievementID
+				value = 8
+			}
+        }
+    }
+	text = {
+        localisation_key = TeeSpilledD
+        trigger = {
+			check_variable = {
+				which = achievementID
+				value = 9
+			}
+        }
+    }
+	text = {
+        localisation_key = SweetRevengeD
+        trigger = {
+			check_variable = {
+				which = achievementID
+				value = 10
+			}
+        }
+    }
+	text = {
+        localisation_key = HolkSmashD
+        trigger = {
+			check_variable = {
+				which = achievementID
+				value = 11
+			}
+        }
+    }
+	text = {
+        localisation_key = MaldingD
+        trigger = {
+			check_variable = {
+				which = achievementID
+				value = 12
+			}
+        }
+    }
+	text = {
+        localisation_key = 1984D
+        trigger = {
+			check_variable = {
+				which = achievementID
+				value = 13
+			}
+        }
+    }
+	text = {
+        localisation_key = BackWithAVengeanceD
+        trigger = {
+			check_variable = {
+				which = achievementID
+				value = 14
+			}
+        }
+    }
+	text = {
+        localisation_key = BloodRedMoonD
+        trigger = {
+			check_variable = {
+				which = achievementID
+				value = 15
+			}
+        }
+    }
+	text = {
+        localisation_key = ZnestalD
+        trigger = {
+			check_variable = {
+				which = achievementID
+				value = 16
+			}
+        }
+    }
+	text = {
+        localisation_key = NobodyLivesForeverD
+        trigger = {
+			check_variable = {
+				which = achievementID
+				value = 17
+			}
+        }
+    }
+	text = {
+        localisation_key = MajestazDreamD
+        trigger = {
+			check_variable = {
+				which = achievementID
+				value = 18
+			}
+        }
+    }
+	text = {
+        localisation_key = TrueLathviteD
+        trigger = {
+			check_variable = {
+				which = achievementID
+				value = 19
+			}
+        }
+    }
+	text = {
+        localisation_key = YabonianSpiesD
+        trigger = {
+			check_variable = {
+				which = achievementID
+				value = 20
+			}
+        }
+    }
+	text = {
+        localisation_key = CrusaderD
+        trigger = {
+			check_variable = {
+				which = achievementID
+				value = 21
+			}
+        }
+    }
+	text = {
+        localisation_key = ThirdTimesTheCharmD
+        trigger = {
+			check_variable = {
+				which = achievementID
+				value = 22
+			}
+        }
+    }
+	text = {
+        localisation_key = NeverTrustAnOppianD
+        trigger = {
+			check_variable = {
+				which = achievementID
+				value = 23
+			}
+        }
+    }
+	text = {
+        localisation_key = NeverTrustAJasuanD
+        trigger = {
+			check_variable = {
+				which = achievementID
+				value = 24
+			}
+        }
+    }
+	text = {
+        localisation_key = WarriorSpiritD
+        trigger = {
+			check_variable = {
+				which = achievementID
+				value = 25
+			}
+        }
+    }
+	text = {
+        localisation_key = MotherAnarchyLovesHerSonsD
+        trigger = {
+			check_variable = {
+				which = achievementID
+				value = 26
+			}
+        }
+    }
+	text = {
+        localisation_key = MissionImpozumolD
+        trigger = {
+			check_variable = {
+				which = achievementID
+				value = 27
+			}
+        }
+    }
+	text = {
+        localisation_key = EtTuKarseD
+        trigger = {
+			check_variable = {
+				which = achievementID
+				value = 28
+			}
+        }
+    }
+	text = {
+        localisation_key = JexusChristoD
+        trigger = {
+			check_variable = {
+				which = achievementID
+				value = 29
+			}
+        }
+    }
+	text = {
+        localisation_key = ElwaitingGameD
+        trigger = {
+			check_variable = {
+				which = achievementID
+				value = 30
+			}
+        }
+    }
+}

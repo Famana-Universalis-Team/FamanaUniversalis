@@ -74,7 +74,7 @@ west_estali_tribe_reform = {
 
 	modifiers = {
 		hostile_attrition = 1
-		reform_progress_growth = -0.25
+		reform_progress_growth = -0.15
 		add_tribal_land_cost = 10.0
 		migration_cost = 0.50
 	}

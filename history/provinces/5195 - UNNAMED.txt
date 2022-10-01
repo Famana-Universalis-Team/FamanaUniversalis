@@ -1,11 +1,13 @@
 discovered_by = east_gomic_tech_gr
-discovered_by = north_gomic_tech_gr
+discovered_by = lathvy_tech_gr
 discovered_by = west_gomic_tech_gr
 culture = Mahanshan
 religion = eastern_oppian
 owner = MHN
+is_city = yes
 controller = MHN
 add_core = MHN
+add_core = HSL
 
 ###
 
@@ -16,6 +18,6 @@ base_production = 3
 trade_goods = paper
 base_manpower = 4
 capital = "Shol"
-is_city = yes
-extra_cost = 1
+ 
+
 

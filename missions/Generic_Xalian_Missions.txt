@@ -1,5 +1,6 @@
 xalian_religious_missions = {
 	slot = 5
+	has_country_shield = no
 	
 	generic = yes
 	
@@ -9,11 +10,20 @@ xalian_religious_missions = {
 	xalian_unite_the_faiths = {
 		icon = mission_hands_praying
 		required_missions = {  } #None
+		position = 1
 		trigger = {
             AND = {
                 religion_group = xalian_group
-                religious_unity	= 0.75
-                num_of_active_blessings	= 4
+				if = {
+					limit = {
+						has_dlc = "Rights of Man"
+					}
+					religious_unity	= 0.75
+                	num_of_active_blessings	= 4
+				}
+				else = {
+					religious_unity = 1.0
+				}
                 owns_core_province = 5388
                 owns_core_province = 5458
                 owns_core_province = 5163
@@ -42,6 +52,107 @@ xalian_religious_missions = {
 				province_id = 5163
 				province_id = 5411
 				province_id = 5388
+			}
+		}
+	}
+}
+
+xalian_fashros_missions = {
+	slot = 5
+	has_country_shield = no
+	
+	generic = yes
+	
+	potential = {
+		capital_scope = {
+			OR = {
+				region = south_xalia_region
+				region = east_xalia_region
+				region = west_xalia_region
+				region = north_xalia_region
+			}
+		}
+		NOT = {
+			OR = {
+				tag = GDL
+				tag = GDA
+				#tag = ZEA
+			}
+		}
+	}
+
+	xalian_survive_the_invasions = {
+		position = 2
+		icon = mission_chinese_general_riding
+		required_missions = { }
+		trigger = {
+			NOT = {
+				FAS = {
+					exists = yes
+				}
+			}
+        }
+		effect = {
+			add_prestige = 10
+		}
+	}
+
+	xalian_find_converts = {
+		position = 3
+		icon = mission_cossack_cavalry
+		required_missions = { xalian_survive_the_invasions }
+		trigger = {
+			OR = {
+				religious_ideas = 7
+				is_defender_of_faith = yes
+			}
+			any_owned_province = {
+				AND = {
+					custom_trigger_tooltip = {
+						tooltip = rel_in_province_tonmo
+						religion = tonmo
+					}
+					has_missionary = yes
+				}
+			}
+        }
+		effect = {
+			custom_tooltip = getRavshoMercs
+			set_country_flag = ravsho_merc_flag
+		}
+	}
+
+	xalian_expel_tonmo = {
+		position = 4
+		icon = mission_crusade_for_varna
+		required_missions = { xalian_find_converts }
+		trigger = {
+			NOT = {
+				OR = {
+					ga_xal_superregion = {
+						custom_trigger_tooltip = {
+							tooltip = rel_in_province_tonmo
+							religion = tonmo
+						}
+					}
+					hoxoi_coast_region = {
+						custom_trigger_tooltip = {
+							tooltip = rel_in_province_tonmo
+							religion = tonmo
+						}
+					}
+				}
+			}
+        }
+		effect = {
+			add_country_modifier = {
+				name = gadea_tonmo_defeated
+				duration = 9125
+			}
+			define_advisor = {
+				type = theologian
+				skill = 3
+				discount = yes
 			}
 		}
 	}

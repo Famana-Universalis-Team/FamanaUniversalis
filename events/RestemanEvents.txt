@@ -52,3 +52,188 @@ country_event = {
         }
 	}
 }
+
+country_event = { #Cosmetic Rename
+	id = restema.2
+	title = restema.2.t
+	desc = restema.2.desc
+	picture = FEAST_eventPicture
+	fire_only_once = yes
+    is_triggered_only = yes
+
+	option = { #Restema
+		name = restema.2.a
+		ai_chance = {
+			factor = 1
+		}
+        add_prestige = 25
+	}
+
+    option = { #Resteman Empire
+		name = restema.2.b
+        trigger = {
+            government_rank = 3
+        }
+		ai_chance = {
+			factor = 0
+		}
+        override_country_name = RESTEMAN_EMPIRE
+        add_prestige = 25
+	}
+
+    option = { #Aesoppia
+		name = restema.2.c
+        trigger = {
+            any_owned_province = {
+                superregion = oppia_superregion
+            }
+        }
+		ai_chance = {
+			factor = 0
+		}
+        override_country_name = AESOPPIA
+        add_country_modifier = {
+            name = lag_get_culture_acc
+            duration = -1
+        }
+	}
+
+    option = { #Fenika
+		name = restema.2.d
+        trigger = {
+            primary_culture = Feniki
+        }
+		ai_chance = {
+			factor = 0
+		}
+        override_country_name = FENIKA
+        add_country_modifier = {
+            name = lag_get_culture_conv
+            duration = -1
+        }
+	}
+}
+
+country_event = { #Resteman Thought
+	id = restema.3
+	title = restema.3.t
+	desc = restema.3.desc
+	picture = BIG_BOOK_eventPicture
+	fire_only_once = yes
+    is_triggered_only = yes
+    # an option that keeps you as pextoglazian thoughts and gives you some good bonuses for that, another one that makes you resteman thought and converts all pextoglazian thought havers to it as well
+
+    option = {
+		name = restema.3.a
+		ai_chance = {
+			factor = 1
+		}
+        custom_tooltip = UnlockResteman
+        set_global_flag = RestemaHappened
+        set_religious_school = {
+            group = lathvy_group
+            school = resteman_school
+        }
+	}
+
+    option = { #consider other options
+		name = restema.3.b
+		ai_chance = {
+			factor = 0
+		}
+        country_event = {
+            id = lathvy.16
+        }
+	}
+}
+
+country_event = { #Raid on the temple
+	id = restema.4
+	title = restema.4.t
+	desc = restema.4.desc
+	picture = ST_PETERS_CHURCH_eventPicture
+	fire_only_once = yes
+    is_triggered_only = yes
+    goto = 5337
+
+    option = { #Raid the temple
+		name = restema.4.a
+		ai_chance = {
+			factor = 2
+		}
+        5337 = {
+            add_devastation	= 25
+            add_base_tax = -1
+            add_base_production = -1
+            add_base_manpower = -1
+        }
+        add_treasury = 500
+        add_country_modifier = {
+            name = lag_stolen_artifacts
+            duration = 3650
+        }
+        add_prestige = -10
+        custom_tooltip = lagTrollOpinion
+        hidden_effect = {
+            every_known_country = {
+                limit = {
+                    religious_school = {
+						group = lathvy_group
+						school = pextoglazian_school
+					}
+                }
+                add_opinion	= {
+                    who = ROOT
+                    modifier = looted_the_high_temple
+                }
+            }
+        }
+	}
+
+    option = { #Leave it be
+		name = restema.4.b
+		ai_chance = {
+			factor = 1
+		}
+        add_country_modifier = {
+            name = lag_religious_acceptance
+            duration = -1
+        }
+        5337 = {
+            add_province_modifier = {
+                name = lag_respected_beliefs
+                duration = -1
+            }
+        }
+        #custom_tooltip = gain_access_to_pomlen_modifier
+	}
+}
+
+country_event = { #age modifier
+	id = restema.5
+	title = restema.5.t
+	desc = restema.5.desc
+	picture = ST_PETERS_CHURCH_eventPicture
+	fire_only_once = yes
+    hidden = yes
+    
+    trigger = {
+        has_country_modifier = lag_epic_westal_modifier
+        current_age	= age_of_revolutions
+    }
+
+    mean_time_to_happen = {
+        months = 1
+    }
+
+    immediate = {
+        remove_country_modifier = lag_epic_westal_modifier
+    }
+
+    option = {
+		name = restema.5.a
+		ai_chance = {
+			factor = 1
+		}
+	}
+}

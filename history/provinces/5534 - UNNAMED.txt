@@ -1,10 +1,11 @@
-discovered_by = gotzlic_tech_gr
+discovered_by = estali_tech_gr
 discovered_by = east_gomic_tech_gr
-discovered_by = north_gomic_tech_gr
+discovered_by = lathvy_tech_gr
 discovered_by = west_gomic_tech_gr
 culture = Nakoan
 religion = aresian
 owner = NAK
+is_city = yes
 controller = NAK
 add_core = NAK
 
@@ -17,6 +18,6 @@ base_production = 3
 trade_goods = salt
 base_manpower = 3
 capital = "Aotory"
-is_city = yes
-extra_cost = 1
+ 
+
 

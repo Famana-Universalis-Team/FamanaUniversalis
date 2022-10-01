@@ -1,9 +1,10 @@
 discovered_by = east_gomic_tech_gr
-discovered_by = north_gomic_tech_gr
+discovered_by = lathvy_tech_gr
 discovered_by = west_gomic_tech_gr
 culture = Neo_Xalnish
 religion = shirian
 owner = PYA
+is_city = yes
 controller = PYA
 add_core = PYA
 
@@ -16,5 +17,5 @@ base_production = 3
 trade_goods = grain
 base_manpower = 2
 capital = "Tiji"
-is_city = no
-extra_cost = 1
+ 
+

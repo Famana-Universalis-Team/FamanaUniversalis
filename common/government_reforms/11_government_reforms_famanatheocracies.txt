@@ -13,9 +13,10 @@ diocese_reform = {
 		}
 	}
 	allow_normal_conversion = no
+	lock_level_when_selected = yes
 	legacy_equivalent = theocratic_government
 	icon = "holy_state_reform"
-	valid_for_nation_designer = no
+	valid_for_nation_designer = yes
 	modifiers = {
 		tolerance_own = 2
 		prestige_decay = 0.02
@@ -88,7 +89,7 @@ holy_monarchy_reform_2 = {
 
 high_bishophric_reform = {
 	icon = "highbishophric"
-	allow_normal_conversion = yes
+	allow_normal_conversion = no
 	lock_level_when_selected = yes
 	legacy_equivalent = theocratic_government
 	valid_for_nation_designer = yes
@@ -142,12 +143,45 @@ high_bishophric_reform = {
 	}
 }
 
+holy_templars_reform = {
+	icon = "three_classes_reform"
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	legacy_equivalent = theocratic_government
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	allow_convert = no
+	modifiers = {
+		church_influence_modifier = 0.2
+		land_morale = 0.10
+		manpower_recovery_speed = 0.10
+		missionaries = 1
+		cb_on_religious_enemies = yes
+		tolerance_heathen = -4
+	}
+	different_religion_acceptance = -30
+	rulers_can_be_generals = yes
+	heirs_can_be_generals = yes
+	potential = {
+		tag = HLT
+		religion = lathvy
+	}
+	custom_attributes = {
+		locked_government_type = yes
+		enables_divine_idea_group = yes
+	}
+	fixed_rank = 3
+	ai = {
+		factor = 1000
+	}
+}
+
 corrupt_monarchy_reform = {
 	icon = "shatteredpextoglazia"
 	allow_normal_conversion = no
 	lock_level_when_selected = yes
 	legacy_equivalent = theocratic_government
-	valid_for_nation_designer = yes
+	valid_for_nation_designer = no
 	nation_designer_cost = 0
 	modifiers = {
 		governing_capacity_modifier = -0.2
@@ -168,4 +202,74 @@ corrupt_monarchy_reform = {
 		enables_divine_idea_group = yes
 	}
 	fixed_rank = 2
+}
+
+gadea_reform = {
+	icon = "gadea"
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	legacy_equivalent = theocratic_government
+	valid_for_nation_designer = yes
+	nation_designer_cost = 50
+	start_territory_to_estates = 0.1
+	republican_name = yes
+	modifiers = {
+		tolerance_heathen = -4
+		tolerance_own = 3
+		global_missionary_strength = 0.02
+		global_trade_goods_size_modifier = 0.10
+	}
+	potential = {
+		OR = {
+			tag = GDA
+			tag = GDL
+		}
+	}
+	custom_attributes = {
+		locked_government_type = yes
+		enables_divine_idea_group = yes
+	}
+}
+
+rin_order_gov = {
+	icon = "kingdom_of_god"
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	legacy_equivalent = theocratic_government
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	allow_convert = no
+	modifiers = {
+		church_influence_modifier = 0.2
+		governing_capacity_modifier = -0.50
+		land_forcelimit_modifier = 0.25
+		cb_on_religious_enemies = yes
+		tolerance_heathen = -2
+		tolerance_heretic = -4
+	}
+	different_religion_acceptance = -30
+	rulers_can_be_generals = yes
+	heirs_can_be_generals = yes
+	potential = {
+		#tag = RIN
+		religion = rini
+		owns = 5695
+		NOT = {
+			OR = {
+				tag = NAF
+				has_country_modifier = yomtanian_nation
+			}
+		}
+	}
+	custom_attributes = {
+		locked_government_type = yes
+		enables_divine_idea_group = yes
+	}
+	conditional = {
+		allow = { has_dlc = "Rights of Man" }
+		militarised_society = yes
+	}
+	ai = {
+		factor = 1000
+	}
 }

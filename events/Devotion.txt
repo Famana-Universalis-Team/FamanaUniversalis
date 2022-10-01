@@ -549,6 +549,67 @@ country_event = {
 	}
 }
 
+# Banned Pilgrimages and Superstitious Practices
+country_event = {
+	id = devotion_events.16
+	title = devotion_events.16.t
+	desc = devotion_events.16.d
+	picture = RELIGION_eventPicture
+	
+	trigger = {
+		has_dlc = "Common Sense"
+		uses_devotion = yes
+		NOT = {
+			religion_group = muslim
+		}
+	}
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+		
+	option = {
+		name = devotion_events.16.a
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0.25
+				has_estate = estate_church
+				NOT = {
+					estate_loyalty = {
+						estate = estate_church
+						loyalty = 40
+					}
+				}
+			}
+		}
+		add_devotion = -10
+		add_estate_burghers_loyalty_effect = yes
+		reduce_estate_church_loyalty_effect = yes
+	}
+	option = {
+		name = devotion_events.16.b
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0.25
+				has_estate = estate_burghers
+				NOT = {
+					estate_loyalty = {
+						estate = estate_burghers
+						loyalty = 40
+					}
+				}
+			}
+		}
+		add_prestige = -10
+		reduce_estate_burghers_loyalty_effect = yes
+		add_estate_church_loyalty_effect = yes
+	}
+}
+
 # The Great Feud
 province_event = {
 	id = devotion_events.17

@@ -1,39 +1,39 @@
 namespace = tomba
 
 #annex everyone to libla
-country_event = {
-	id = tomba.1
-	title = tomba.1.t
-	desc = tomba.1.d
-	picture = MILITARY_CAMP_eventPicture
-	fire_only_once = yes
-
-	is_triggered_only = yes
-
-	trigger = {
-		NOT = { is_year = 213 }
-		tag = TLB
-	}
-
-	option = {
-		name = tomba.1.a
-		ai_chance = { factor = 1 }
-		highlight = yes
-		every_province = {
-			limit = {
-				religion = tombasa
-			}
-			cede_province = ---
-		}
-	}
-
-	option = {
-		name = tomba.1.b
-		ai_chance = { factor = 0 }
-		trigger = {
-			NOT = {
-				ironman = yes
-			}
-		}
-	}
-}
+#country_event = {
+#	id = tomba.1
+#	title = tomba.1.t
+#	desc = tomba.1.d
+#	picture = MILITARY_CAMP_eventPicture
+#	fire_only_once = yes
+#
+#	is_triggered_only = yes
+#
+#	trigger = {
+#		tag = TLB
+#		NOT = { is_year = 213 }
+#	}
+#
+#	option = {
+#		name = tomba.1.a
+#		ai_chance = { factor = 1 }
+#		highlight = yes
+#		every_province = {
+#			limit = {
+#				religion = tombasa
+#			}
+#			cede_province = ---
+#		}
+#	}
+#
+#	option = {
+#		name = tomba.1.b
+#		ai_chance = { factor = 0 }
+#		trigger = {
+#			NOT = {
+#				ironman = yes
+#			}
+#		}
+#	}
+#}

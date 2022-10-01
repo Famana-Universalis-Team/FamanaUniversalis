@@ -1,9 +1,10 @@
 discovered_by = east_gomic_tech_gr
-discovered_by = north_gomic_tech_gr
+discovered_by = lathvy_tech_gr
 discovered_by = west_gomic_tech_gr
 culture = Yabonian
 religion = bamali
 owner = YAB
+is_city = yes
 controller = YAB
 add_core = YAB
 
@@ -16,7 +17,7 @@ base_production = 5
 trade_goods = iron
 base_manpower = 4
 capital = "Yavon"
-is_city = no
+ 
 fort_15th = yes
-extra_cost = 1
+
 

@@ -3,26 +3,26 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_icon_religion"
 		texturefile = "gfx//interface//icon_religion.dds"
-		noOfFrames = 34
+		noOfFrames = 38
 		
 	}
 
 	spriteType = {
 		name = "GFX_province_view_religion"
 		texturefile = "gfx/interface/province_view_religion.tga"
-		noOfFrames = 34
+		noOfFrames = 38
 		loadType = "INGAME"
 	}
 	spriteType = {
 		name = "GFX_country_icon_religion"
 		texturefile = "gfx//interface//country_icon_religion.dds"
-		noOfFrames = 34
+		noOfFrames = 38
 	}
 
 	spriteType = {
 		name = "GFX_icon_religion_small"
 		texturefile = "gfx//interface//icon_religion_small.dds"
-		noOfFrames = 34
+		noOfFrames = 38
 		loadType = "INGAME"
 	}
 
@@ -187,6 +187,11 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_jewish_aspects_icon"
+		texturefile = "gfx/interface/jewish_aspects_icon.dds"
+	}
+
+	spriteType = {
 		name = "GFX_hussite_aspects_icon"
 		texturefile = "gfx/interface/hussite_aspects_icon.dds"
 	}
@@ -196,55 +201,55 @@ spriteTypes = {
 		texturefile = "gfx/interface/protestant_aspects_icon_slot.dds"
 	}		
 	
-		spriteType = {
+	spriteType = {
 		name = "GFX_anglican_aspects_icon"
 		texturefile = "gfx/interface/anglican_aspects_icon.dds"
 	}	
 	
-			spriteType = {
+	spriteType = {
 		name = "GFX_divorce_consort_icon"
 		texturefile = "gfx/interface/divorce_consort_icon.dds"
 	}	
 	
-				spriteType = {
+	spriteType = {
 		name = "GFX_marry_local_suitor_icon"
 		texturefile = "gfx/interface/marry_local_suitor_icon.dds"
 	}	
 	
-				spriteType = {
+	spriteType = {
 		name = "GFX_dissolve_monasteries_icon"
 		texturefile = "gfx/interface/dissolve_monasteries_icon.dds"
 	}	
-				spriteType = {
+	spriteType = {
 		name = "GFX_call_chiefs_icon"
 		texturefile = "gfx/interface/call_chiefs_icon.dds"
 	}	
-				spriteType = {
+	spriteType = {
 		name = "GFX_recruit_warlord_icon"
 		texturefile = "gfx/interface/recruit_warlord_icon.dds"
 	}	
-				spriteType = {
+	spriteType = {
 		name = "GFX_hold_war_ceremonies_icon"
 		texturefile = "gfx/interface/hold_war_ceremonies_icon.dds"
 	}	
-				spriteType = {
+	spriteType = {
 		name = "GFX_spread_tonmo_icon"
 		texturefile = "gfx/interface/spread_tonmo_icon.dds"
 	}	
-				spriteType = {
+	spriteType = {
 		name = "GFX_raise_horde_icon"
 		texturefile = "gfx/interface/raise_horde_icon.dds"
 	}	
 	
-				spriteType = {
+	spriteType = {
 		name = "GFX_grant_monopoly_icon"
 		texturefile = "gfx/interface/grant_monopoly_icon.dds"
 	}	
 	
-				spriteType = {
+	spriteType = {
 		name = "GFX_progress_of_the_supreme_governor_icon"
 		texturefile = "gfx/interface/progress_of_the_supreme_governor_icon.dds"
-	}	
+	}
 	
 		spriteType = {
 		name = "GFX_low_harmony"
@@ -447,6 +452,21 @@ spriteTypes = {
 		name = "GFX_incident_icons"
 		texturefile = "gfx/interface/incident_icons.dds"
 		noOfFrames = 8
+	}
+	
+	spriteType = {
+		name = "GFX_icon_tonmo_school_tribal"
+		texturefile = "gfx/interface/icon_tonmo_school_tribal.dds"
+	}
+
+	spriteType = {
+		name = "GFX_icon_tonmo_school_liturgical"
+		texturefile = "gfx/interface/icon_tonmo_school_liturgical.dds"
+	}
+
+	spriteType = {
+		name = "GFX_icon_tonmo_school_evangelical"
+		texturefile = "gfx/interface/icon_tonmo_school_evangelical.dds"
 	}
 
 	spriteType = {
@@ -728,6 +748,29 @@ spriteTypes = {
 		name = "GFX_sikh_bg"
 		texturefile = "gfx/interface/sikh_religion_view_bg.dds"
 	}
+
+	### LON / 1.34 
+
+	spriteType = {
+		name = "GFX_innovativeness_aspect"
+		texturefile = "gfx/interface/church_aspects_anglicanism/innovativeness_aspect_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_expel_heretics_aspect"
+		texturefile = "gfx/interface/church_aspects_anglicanism/expel_heretics_aspect_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_diplomats_of_the_reformation_aspect"
+		texturefile = "gfx/interface/church_aspects_anglicanism/diplomats_of_the_reformation_aspect_icon.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_icons_of_the_church_icon"
+		texturefile = "gfx/interface/church_aspects_anglicanism/icons_of_the_church_icon.dds"
+	}
+
 }	
 
 

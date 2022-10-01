@@ -74,6 +74,11 @@ sound = {
 }
 
 sound = {
+	name = religion_xalian_religion
+	file = "tab_religion_Xalian_Religion.wav"
+}
+
+sound = {
 	name = start_convert_tonmo
 	file = "start_conversion_Tonmo.wav"
 }
@@ -96,4 +101,9 @@ sound = {
 sound = {
 	name = start_convert_shirian
 	file = "start_conversion_Shirian.wav"
+}
+
+sound = {
+	name = start_convert_xalian_religion
+	file = "start_conversion_Xalian_Religion.wav"
 }

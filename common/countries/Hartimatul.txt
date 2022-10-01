@@ -36,61 +36,141 @@ historical_units = {
 }
 
 monarch_names = {
-	"Orro #0" = 1
-	"Heum #0" = 1
-	"Fellares #0" = 1
-	"Kanunin #0" = 1
-	"Yamoszy #0" = 1
-	"Unahtare #0" = 1
-	"Eyath #0" = 1
-	"Ayorn #0" = 1
-	"Beroge #0" = 1
-	"Anel #0" = 1
-	"Horfi #0" = 1
+	"Dymio #0" = 3
+	"Agixadar #0" = 3
+	"Ratonasha #0" = 1
+	"Tormi #0" = 3
+	"Dorren #0" = 2
+	"Giu #0" = 1
+	"Tamar #0" = 1
 	"Paro #0" = 1
-	"Jekelekim #0" = 1
-	"Fovers #0" = 1
-	"Makei #0" = 1
-	"Astrazna #0" = 1
-	"Maro #0" = -1
-	"Yuni #0" = -1
-	"Delan #0" = -1
-	"Ezeldi #0" = -1
+	"Bamal #0" = 1
+	"Dorron #0" = 2
+	"Nokhes #0" = 2
+	"Amilian #0" = 1
+	"Camiclar #0" = 1
+	"Relambi #0" = 1
+	"Melze #0" = 1
+	"Yenat #0" = 1
+	"Zandar #0" = 1
+	"Ratelar #0" = 1
+	"Lunpikisa #0" = 1
+	"Sonon #0" = 1
+	"Tamander #0" = 1
+	"Lokis #0" = 1
+	"Lemi #0" = 1
+	"Romal #0" = 1
+	"Ifrel #0" = 1
+	"Asifsya #0" = 1
+	"Malav #0" = 1
+	"Zemei #0" = -1
+	"Loqa #0" = -1
+	"Talova #0" = -1
+	"Pinar #0" = -1
+	"Edla #0" = -1
+	"Bruri #0" = -1
+	"Nabu #0" = -1
+	"Meira #0" = -1
+	"Nan #0" = 1
+	"Runor #0" = 1
+	"Rak #0" = 1
+	"Zyç #0" = 1
+	"Çony #0" = 3
+	"Kulai #0" = 1
+	"Nena #0" = 1
+	"Papaid #0" = 1
+	"Nykabum #0" = 1
+	"Çysas #0" = 1
+	"Aimakat #0" = 1
+	"Rima #0" = 1
+	"Bydug #0" = 1
+	"Çutyonob #0" = 1
+	"Coz #0" = 1
+	"Zakrag #0" = 1
+	"Okon #0" = 1
+	"Ciz #0" = -1
+	"Tuduçad #0" = -1
+	"Cig #0" = -1
+	"Rotyu #0" = -1
+	"Dec #0" = -1
+	"Gir #0" = -1
+	"Okylirei #0" = -1
+	"Bura #0" = -1
+	"Kiz #0" = -1
+	"Sarni #0" = -1
+	"Pek #0" = -1
+	"Çit #0" = -1
 }
 
 leader_names = {
-	Orro
-	Heum
-	Fellares
-	Kanunin
-	Yamoszy
-	Unahtare
-	Eyath
-	Ayorn
-	Beroge
-	Anel
-	Horfi
-	Paro
-	Jekelekim
-	Fovers
-	Makei
-	Astrazna
+	Ratonasha
+	Loviaz
+	Lekaux
+	Jantada
+	Jakar
+	Deli
+	Dijo
+	Nedu
+	Wamadera
+	Manu
+	Kanaz
+	Sunek
+	Uchlir
+	Dramra
+	Mibsko
+	Bohika
+	Teitu
+	Byobup
+	Eigin
+	Zep
+	Imyba
+	Tatuzro
+	Bukym
+	Oçnog
+	Osy
+	Tig
+	Zir
+	Kersa
+	Anenry
+	Nupem
+	Etrit
+	Cor
+	Aitnut
+	Zicas
+	Bunyz
+	Basy
+	Zab
+	Bony
+	Yuksom
+	Eiçu
+	Ecotonair
+	Ikug
+	Cynap
+	Ainezod
+	Pyk
+	Çyd
+	Caçec
+	Domo
+	Kyp
+	Ebid
 }
 
 ship_names = {
-	Omadid
-	Chaungs
-	Hartitis
-	Bavatis
+	Lypona
+	Yadosha
+	Amelaka
+	Dirice
+	Manole
+	Tomba
 }
 
 army_names = {
-	"Rananzha $PROVINCE$" 
+	"Fyata $PROVINCE$" 
 }
 
 fleet_names = {
-	"Blue Navy"
-	"Red Navy"
-	"Black Navy"
-	"White Navy"
+	"Everlasting Armada"
+	"Vin's Legacy"
+	"Grand Navy"
+	"Victorious Fleet"
 }

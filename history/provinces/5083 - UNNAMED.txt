@@ -1,5 +1,5 @@
 discovered_by = east_gomic_tech_gr
-discovered_by = north_gomic_tech_gr
+discovered_by = lathvy_tech_gr
 discovered_by = west_gomic_tech_gr
 #Written with Eu4 Easy Province Creator by emiroercn
 #UNNAMED
@@ -10,13 +10,14 @@ hre = no
 
 base_tax = 2
 base_production = 3
-trade_goods = fur
+trade_goods = copper
 base_manpower = 4
 capital = "Souta"
-is_city = yes
-extra_cost = 1
+ 
+
   
 
 owner = FAZ
+is_city = yes
 controller = FAZ
 add_core = FAZ

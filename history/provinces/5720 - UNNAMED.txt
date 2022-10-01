@@ -1,7 +1,8 @@
-discovered_by = north_gomic_tech_gr
+discovered_by = lathvy_tech_gr
 culture = Ordican
 religion = lathvy
 owner = ORC
+is_city = yes
 controller = ORC
 add_core = ORC
 add_core = NAB
@@ -15,10 +16,9 @@ base_production = 3
 trade_goods = fish
 base_manpower = 2
 capital = "Qeydod"
-is_city = no
-extra_cost = 1
+ 
 center_of_trade = 1
 
 
-discovered_by = estal_tribal_tech_gr
+discovered_by = west_estali_tech_gr
 discovered_by = naravami_tech_gr

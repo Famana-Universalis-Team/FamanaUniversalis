@@ -1,0 +1,22 @@
+government = tribal
+add_government_reform = lukscha_tribe
+government_rank = 1
+mercantilism = 10
+technology_group = estali_tech_gr
+religion = maschi
+primary_culture = Lukschan
+#historical_rival = 
+#historical_friend = 
+capital = 6518
+
+200.1.1 = {
+	monarch = {
+		female = yes
+		name = "Rusraimel"
+		dynasty = "Ve Oiko"
+		birth_date = 156.12.12
+		adm = 1
+		dip = 4
+		mil = 3
+	}
+}

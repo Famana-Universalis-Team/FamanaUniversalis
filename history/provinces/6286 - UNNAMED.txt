@@ -2,6 +2,7 @@
 #UNNAMED
 add_core = RDU
 owner = RDU
+is_city = yes
 controller = RDU
 culture = Rduma
 religion = naravami
@@ -11,11 +12,11 @@ base_production = 1
 trade_goods = naval_supplies
 base_manpower = 1
 capital = "Yovk"
-is_city = yes
+ 
 center_of_trade = 1
 
 discovered_by = naravami_tech_gr
-discovered_by = gotzlic_tech_gr
+discovered_by = estali_tech_gr
 
 
 

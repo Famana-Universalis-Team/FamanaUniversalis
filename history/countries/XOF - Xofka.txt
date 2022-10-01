@@ -1,5 +1,5 @@
-government = monarchy
-add_government_reform = plutocratic_reform
+government = republic
+add_government_reform = signoria_reform
 government_rank = 1
 mercantilism = 15
 technology_group = west_gomic_tech_gr
@@ -17,19 +17,5 @@ religious_school = pextoglazian_school
 		adm = 4
 		dip = 4
 		mil = 4
-	}
-}
-
-211.6.6 = { 
-	heir = {
-		name = "Relambi"
-		monarch_name = "Relambi"
-		dynasty = "Sunek"
-		birth_date = 211.5.16
-		death_date = 253.4.12
-		claim = 95
-		adm = 2
-		dip = 4
-		mil = 3
 	}
 }

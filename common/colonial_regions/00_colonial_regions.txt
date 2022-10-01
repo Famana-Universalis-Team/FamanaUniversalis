@@ -1,0 +1,39 @@
+# Gacil
+colonial_gacil = {
+	color = { 45 100 145 }
+
+	# Random New World
+	tax_income = 0
+	native_size = 8
+	native_ferocity = 1
+	native_hostileness = 4
+
+	trade_goods = {
+		fur = 10
+		fish = 3
+		naval_supplies = 2
+	}
+
+	culture = {
+		Old_Gacin = 10
+	}
+
+	religion = {
+		animism = 10
+	}
+
+	provinces = {
+		6457 6458 6459 6461 6460 6463 6462 6464 6465 6466 7677 7676
+	}
+
+	# Specific
+	names = {
+		trigger = {
+			culture_group = Epilany
+		}
+		name = "COLONIAL_GACIL_Galsiog"
+	}
+	names = {
+		name = "COLONIAL_GACIL_Gacil"
+	}
+}

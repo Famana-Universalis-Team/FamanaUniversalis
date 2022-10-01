@@ -1,11 +1,11 @@
 government = monarchy
-add_government_reform = autocracy_reform
+add_government_reform = pyarxan_stratocracy
 government_rank = 1
 mercantilism = 10
 technology_group = west_gomic_tech_gr
 religion = shirian
 primary_culture = Neo_Xalnish
-capital = 5404	# change to real capital
+capital = 5404	
 
 200.1.1 = { #change to 200 or smth
 	monarch = {

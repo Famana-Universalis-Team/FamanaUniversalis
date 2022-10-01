@@ -41,7 +41,7 @@ KLY_ideas = {
 
 VAN_ideas = {
     start = {
-        trade_goods_size_modifier = 0.10
+        global_trade_goods_size_modifier = 0.10
         development_cost = -0.1
     }
     
@@ -58,7 +58,7 @@ VAN_ideas = {
         technology_cost = -0.1
     }
     van_the_conscription_art = {
-        global_manpower_modifier = 0.25
+        manpower_in_own_culture_provinces = 0.25
     }
     van_modern_vanomatis = {
         artillery_power = 0.20
@@ -205,7 +205,7 @@ RDU_ideas = {
     }
     
     bonus = {
-        war_exhaustion = -0.05
+        colonists = 1
     }    
 
     trigger = {
@@ -236,5 +236,203 @@ RDU_ideas = {
     rdu_uma = {
 		reinforce_speed = 0.05
 		army_tradition = 0.5
+    }
+}
+
+VAM_ideas = {
+    start = {
+        naval_forcelimit_modifier = 0.1
+		land_attrition = -0.15
+    }
+    
+    bonus = {
+        discipline = 0.05
+    }    
+
+    trigger = {
+        tag = VAM
+    }
+    free = yes
+    
+    vam_1 = {
+		fabricate_claims_cost = -0.2
+    }
+    vam_2 = {
+		build_cost = -0.15
+    }
+    vam_3 = {
+        shock_damage = 0.10
+    }
+    vam_4 = {
+        global_ship_trade_power = 0.2
+    }
+    vam_5 = {
+		defensiveness = 0.1
+    }
+    vam_6 = {
+		heavy_ship_power = 0.20
+    }
+    vam_7 = {
+		global_tax_modifier = 0.1
+    }
+}
+
+QUB_ideas = {
+    start = {
+        may_establish_frontier = yes
+		horde_unity = 1
+        legitimacy = 1
+    }
+    
+    bonus = {
+        global_unrest = -1
+    }    
+
+    trigger = {
+        tag = QUB
+    }
+    free = yes
+    
+    qub_1 = {
+		cavalry_cost = -0.10
+    }
+    qub_2 = {
+		core_creation = -0.1
+    }
+    qub_3 = {
+        cavalry_fire = 1
+    }
+    qub_4 = {
+        province_warscore_cost = -0.2
+    }
+    qub_5 = {
+		num_accepted_cultures = 1
+    }
+    qub_6 = {
+		free_mil_policy = 1
+    }
+    qub_7 = {
+		years_of_nationalism = -5
+    }
+}
+
+GTZ_ideas = {
+    start = {
+        global_tax_modifier = 0.10
+        interest = -1
+    }
+    
+    bonus = {
+        global_trade_goods_size_modifier = 0.20
+    }    
+
+    trigger = {
+        tag = GTZ
+    }
+    free = yes
+    
+    gtz_1 = {
+        tolerance_heretic = 2
+    }
+    gtz_2 = {
+        discipline = 0.05
+    }
+    gtz_3 = {
+		stability_cost_modifier = -0.10
+    }
+    gtz_4 = {
+        siege_ability = 0.10
+		fire_damage	= 0.05
+    }
+    gtz_5 = {
+		prestige = 1
+    }
+    gtz_6 = {
+        advisor_pool = 1
+    }
+    gtz_7 = {
+        num_accepted_cultures = 2
+    }
+}
+
+RST_ideas = {
+    start = {
+        hostile_attrition = 1
+		same_culture_advisor_cost = -0.20
+    }
+    
+    bonus = {
+        global_prov_trade_power_modifier = 0.10
+    }    
+
+    trigger = {
+        tag = RST
+    }
+    free = yes
+    
+    rst_1 = {
+        years_of_nationalism = -5
+    }
+    rst_2 = {
+        fire_damage = 0.10
+		mercenary_discipline = 0.05
+    }
+    rst_3 = {
+		infantry_cost = -0.10
+    }
+    rst_4 = {
+        innovativeness_gain = 0.25
+		technology_cost	= -0.05
+    }
+    rst_5 = {
+		leader_cost = -0.10
+    }
+    rst_6 = {
+        global_spy_defence = 0.5
+    }
+    rst_7 = {
+        build_cost = -0.10
+    }
+}
+
+GOR_ideas = {
+    start = {
+		prestige_decay = -0.01
+		adm_tech_cost_modifier = -0.10
+    }
+    
+    bonus = {
+        land_forcelimit_modifier = 0.10
+    }    
+
+    trigger = {
+        tag = GOR
+    }
+    free = yes
+    
+    gor_1 = {
+        female_advisor_chance = 0.50
+		may_recruit_female_generals = yes
+		global_unrest = -1.5
+    }
+    gor_2 = {
+        num_accepted_cultures = 4
+    }
+    gor_3 = {
+		free_leader_pool = 1
+		discipline = 0.05
+    }
+    gor_4 = {
+        global_institution_spread = 0.25
+    }
+    gor_5 = {
+		global_manpower_modifier = 0.25
+		drill_gain_modifier = 0.20
+    }
+    gor_6 = {
+        tolerance_heretic = 3
+    }
+    gor_7 = {
+        land_morale = 0.20
     }
 }

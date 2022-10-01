@@ -26,7 +26,7 @@ umz_1 = {
     
        
         trigger = {
-		effasha_area = {
+			effasha_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -64,7 +64,7 @@ umz_1 = {
 		 provinces_to_highlight = {
            OR = {
 		   area = nuti_area
-		   area = atamsu_area
+		   area = canin_area
 		  
 		   }
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
@@ -78,7 +78,7 @@ umz_1 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
         
-			atamsu_area = {
+			canin_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -170,6 +170,9 @@ umz_2 = {
            if = {
 				limit = {
 					exists = RIA
+					RIA = {
+						ai = yes
+					}
 					NOT = {
 						OR = {
 							is_rival = RIA
@@ -179,21 +182,37 @@ umz_2 = {
 				}
 				vassalize = RIA
 			}
-	    else = {
-				5041 = {     
-					add_unit_construction = {
-						type = light_ship
-						amount = 5
-						speed = 0.25
-						cost = 0
+			else = {
+				if = {
+					limit = {
+						exists = RIA
+						NOT = {
+							OR = {
+								is_rival = RIA
+								is_enemy = RIA
+							}
+						}
+					}
+					5041 = {
+						add_core = ROOT
+					}
+				}
+				else = {
+					5041 = {     
+						add_unit_construction = {
+							type = light_ship
+							amount = 5
+							speed = 0.25
+							cost = 0
+						}
+					}
+					add_country_modifier = { #yeah uhhh I'm not making this a trade modifier
+						name = umz_trade_domination
+						duration = 9125 
 					}
 				}
 			}
-			add_country_modifier = { #yeah uhhh I'm not making this a trade modifier
-				name = umz_trade_domination
-				duration = 9125 
-			}
-        }
+		}
     }
 	UMZ_strenghten = {
         icon = mission_egyptian_mamluk_soldier
@@ -217,7 +236,7 @@ umz_2 = {
         
        
         effect = {
-            fazalep_area  = {
+            fasalep_area  = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
@@ -245,14 +264,14 @@ umz_2 = {
         }
         
 		 provinces_to_highlight = {
-            area = fazalep_area
+            area = fasalep_area
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
         
     
        
         trigger = {
-		fazalep_area = {
+		fasalep_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -261,7 +280,7 @@ umz_2 = {
        
         effect = {
           
-				fazalep_area = {
+				fasalep_area = {
 					
 					add_province_modifier = {
 						name = umz_develop_m
@@ -326,7 +345,7 @@ umz_2 = {
 				}
 				add_permanent_claim = ROOT
 			}
-			atamsu_area  = {
+			canin_area  = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
@@ -411,7 +430,7 @@ umz_3 = {
 		laglon_region = {
 			discover_country = ROOT
 		}
-		northern_umzat = {
+		zata_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
@@ -437,7 +456,7 @@ umz_3 = {
         }
         
 		provinces_to_highlight = {
-          area =  northern_umzat
+          area =  zata_area
 				  
 			
         }
@@ -445,7 +464,7 @@ umz_3 = {
     
        
         trigger = {
-		    northern_umzat = {
+		    zata_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -454,7 +473,7 @@ umz_3 = {
         
        
         effect = {
-			unnamed_area_22 = {
+			olfemek_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
@@ -468,38 +487,16 @@ umz_3 = {
 				}
 				add_permanent_claim = ROOT
 			}
-			west_feniki = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
 			5257 = {
 				add_permanent_claim = ROOT
 			}
-			if = {
-				limit = {
-					5253 = {
-						is_empty = yes
-					}
-				}
-				5253 = {
-					add_core = ROOT
-					cede_province = ROOT
-				}
+			5256 = {
+				add_permanent_claim = ROOT
 			}
-			if = {
-				limit = {
-					5694 = {
-						is_empty = yes
-					}
-				}
-				5694 = {
-					add_core = ROOT
-					cede_province = ROOT
-				}
+			5254 = {
+				add_permanent_claim = ROOT
 			}
+			create_conquistador = { tradition = 60 }
 		}
     }
 	UMZ_new = {
@@ -514,16 +511,18 @@ umz_3 = {
         }
         
 		provinces_to_highlight = {
-          OR = {  area = unnamed_area_22
+          OR = {  area = olfemek_area
 				  area =  emzelom_area
 				  province_id = 5257
+				  province_id = 5256
+				  province_id = 5254
 				}
         }
        
     
        
         trigger = {
-		    unnamed_area_22 = {
+		    olfemek_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -531,11 +530,13 @@ umz_3 = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			northern_umzat = {
+			zata_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 			owns_core_province = 5257
+			owns_core_province = 5256
+			owns_core_province = 5254
 			5264 = { 
 			has_owner_religion = yes 
 			}
@@ -565,12 +566,34 @@ umz_3 = {
 				}
 			add_permanent_claim = ROOT
 			}
-			unnamed_area_14 = {
+			ratahja_area = {
 			limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
 				}
 			add_permanent_claim = ROOT
+			}
+			if = {
+				limit = {
+					5253 = {
+						is_empty = yes
+					}
+				}
+				5253 = {
+					add_core = ROOT
+					cede_province = ROOT
+				}
+			}
+			if = {
+				limit = {
+					5694 = {
+						is_empty = yes
+					}
+				}
+				5694 = {
+					add_core = ROOT
+					cede_province = ROOT
+				}
 			}
 			if = {   
 			     limit = { accepted_culture = Mirrisan }
@@ -601,13 +624,11 @@ umz_3 = {
 			
 				}
 			}
-			
-			
-       
+			add_country_modifier = { 
+			    name = umz_colonist
+			    duration = -1
+			}
        }
-	
-	
-  
     }
 	UMZ_laglon = {
         icon = mission_great_wall
@@ -621,7 +642,7 @@ umz_3 = {
         }
         
 		provinces_to_highlight = {
-			area = unnamed_area_14
+			area = ratahja_area
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 				  
 			
@@ -632,7 +653,7 @@ umz_3 = {
         trigger = {
 			owns_all_provinces = {
 				OR = {
-					area = unnamed_area_14
+					area = ratahja_area
 					area = griglom_area
 					area = west_feniki
 				}
@@ -655,13 +676,33 @@ umz_3 = {
 				change_culture = ROOT
 				change_religion = ROOT
 			}
+			west_feniki = {
+				limit = { 
+					is_empty = yes
+				}
+				create_colony = 1000
+				cede_province = ROOT
+				add_core = ROOT
+				change_culture = ROOT
+				change_religion = ROOT
+			}
+			griglom_area = {
+				limit = { 
+					is_empty = yes
+				}
+				create_colony = 1000
+				cede_province = ROOT
+				add_core = ROOT
+				change_culture = ROOT
+				change_religion = ROOT
+			}
 			porlodya_region = {
 				discover_country = ROOT
 			}
 			5020 = {
 				add_building = fort_15th
 			}
-			unnamed_area_15 = {
+			huparan_area = {
 				add_permanent_claim = ROOT
 			}
 			feyel_area = {
@@ -891,7 +932,7 @@ umz_4 = {
        }
 	
 	}
-	UMZ_eqiso = {
+	UMZ_equiso = {
         icon = mission_landsknecht_soldier
          position = 5     
       
@@ -926,7 +967,6 @@ umz_4 = {
 				limit = {
 					is_empty = yes
 				}
-				create_colony = 1000
 				cede_province = ROOT
 				add_core = ROOT
 				change_culture = ROOT
@@ -957,7 +997,7 @@ umz_4 = {
         
        
         required_missions = {
-            UMZ_eqiso
+            UMZ_equiso
 		
         }
         
@@ -977,19 +1017,28 @@ umz_4 = {
         
        
         effect = {
-			5695 = {
-				change_culture = ROOT
-				change_religion = ROOT
-				add_core = ROOT
-				add_base_tax = -3
-				add_base_production = -3
-				add_base_manpower = -3
+			if = {
+				limit = {
+					5695 = {
+						culture = Hasian
+					}
+				}
+				5695 = {
+					change_culture = ROOT
+					change_religion = ROOT
+					add_core = ROOT
+					add_base_tax = -3
+					add_base_production = -3
+					add_base_manpower = -3
+				}
+				add_country_modifier = { 
+					name = umz_crushed
+					duration = -1
+				}
 			}
-			add_country_modifier = { 
-				name = umz_crushed
-				duration = -1
+			else = {
+				add_treasury = 250
 			}
-			
        
         }
 	
@@ -1071,7 +1120,7 @@ umz_5 = {
 			has_spy_network_in = {
 				who = TCK
 				value = 35
-				}
+			}
 			spymaster = 1
 			NOT = { 
 				alliance_with = TCK
@@ -1094,6 +1143,11 @@ umz_5 = {
 				}
 			}
 			create_march = IMG
+			hidden_effect = {
+				IMG = {
+					change_religion = ROOT
+				}
+			}
 			add_spy_network_in = {
 				who = TCK
 				value = -35
@@ -1180,6 +1234,11 @@ umz_5 = {
 						
 		   }
 		  create_march = QUA
+			hidden_effect = {
+				QUA = {
+				change_religion = ROOT
+				}
+			}
 		  5072 = { 
 				custom_tooltip = umz_tck_partition_tooltip	
 				owner = { 

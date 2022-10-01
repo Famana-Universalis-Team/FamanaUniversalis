@@ -121,8 +121,8 @@ desert_empire = {
 }
 
 restema_culture = {
-	num_accepted_cultures = 3
-    culture_conversion_cost = -0.25
+	num_accepted_cultures = 2
+    culture_conversion_cost = -0.15
 }
 
 debug_kill = {
@@ -135,21 +135,15 @@ morian_fervor = {
 }
 
 kachik_religious_autonomy = {
-    local_missionary_strength = -0.05
+    local_missionary_strength = -1.0
     local_production_efficiency = 0.10
     local_manpower_modifier = 0.10
+    religion = yes
 }
 
 huparan_shipyard = {
     naval_forcelimit_modifier = 0.1
     ship_durability = 0.10
-}
-
-jzoet_help = {
-    land_forcelimit_modifier = 0.10
-    global_manpower_modifier = 0.10
-    harsh_treatment_cost = -0.2
-    infantry_power = 0.10
 }
 
 collapsing_empire = {
@@ -216,7 +210,7 @@ rdum_fight = {
 }
 
 rdum_dev = {
-    development_cost = -0.33
+    development_cost = -0.75
 }
 
 geop_kneecapping = {
@@ -462,74 +456,74 @@ umz_ready_navy = {
 }
 
 umz_high_development = {
-global_tax_modifier = 0.05
-production_efficiency = 0.05
+    global_tax_modifier = 0.05
+    production_efficiency = 0.05
 }
 
 umz_develop_m = {
-local_development_cost = -0.15
-local_defensiveness = 0.3
+    local_development_cost = -0.15
+    local_defensiveness = 0.3
 }
 
 umz_develop_s = {
-local_development_cost = -0.15
-local_manpower_modifier = 0.25
+    local_development_cost = -0.15
+    local_manpower_modifier = 0.25
 }
 
 umz_desert_cavalry = {
-cavalry_cost = -0.10
-cavalry_power = 0.15
+    cavalry_cost = -0.10
+    cavalry_power = 0.15
 }
 
 umz_cut_off = {
-global_trade_power = -0.25
-global_institution_spread = -0.25
-global_unrest = 2
+    global_trade_power = -0.25
+    global_institution_spread = -0.25
+    global_unrest = 2
 }
 
 umz_colonization = {
-local_institution_spread = 0.25
-local_missionary_strength = 0.03
-trade_goods_size = 0.3
+    local_institution_spread = 0.25
+    local_missionary_strength = 0.03
+    trade_goods_size = 0.3
 }
 
 umz_chaos = {
-global_unrest = 3
-stability_cost_modifier = 0.1
-global_autonomy = 0.05
+    global_unrest = 3
+    stability_cost_modifier = 0.1
+    global_autonomy = 0.05
 }
 
 umz_war_enthusiasm = {
-land_morale = 0.15
-manpower_recovery_speed = 0.33
+    land_morale = 0.15
+    manpower_recovery_speed = 0.33
 }
 
 umz_vassals = {
-diplomatic_upkeep = 2
-reduced_liberty_desire = 25
+    diplomatic_upkeep = 2
+    reduced_liberty_desire = 25
 }
 
 umz_inf = {
-local_friendly_movement_speed = 0.15
-province_trade_power_modifier = 0.1
-local_unrest = -2
+    local_friendly_movement_speed = 0.15
+    province_trade_power_modifier = 0.1
+    local_unrest = -2
 }
 
 umz_ref = {
-free_policy = 1
-max_absolutism = 15
-state_maintenance_modifier = -0.25
+    free_policy = 1
+    max_absolutism = 15
+    state_maintenance_modifier = -0.25
 }
 
 umz_breach = {
-artillery_fire = 1
-artillery_bonus_vs_fort = 1
-siege_ability = 0.25
+    artillery_fire = 1
+    artillery_levels_available_vs_fort = 1
+    siege_ability = 0.25
 }
 
 umz_crushed = {
-siege_ability = 0.15
-diplomatic_reputation = 1
+    siege_ability = 0.15
+    diplomatic_reputation = 1
 }
 
 
@@ -567,7 +561,7 @@ yom_raided_timer = {
 }
 
 emtik_rights = {
-    local_missionary_strength = -10.0
+    local_missionary_strength = -1.0
     local_unrest = -2
 }
 
@@ -670,13 +664,18 @@ mak_autonomy = {
 }
 
 tonxara_bonus_modifier = {
-    global_unrest = -2
-    stability_cost_modifier = -0.1
+    global_unrest = -3
+    stability_cost_modifier = -0.20
+    manpower_recovery_speed = 0.10
     religious_unity = 0.25
 }
 
 fashran_conquest_boost = {
     warscore_cost_vs_other_religion = -0.10
+}
+
+fashran_conquest_boost_AI = {
+    warscore_cost_vs_other_religion = -0.15
 }
 
 mak_anarchy_ending = {
@@ -840,7 +839,7 @@ van_est = {
 
 van_lathvy_autonomy = {
     local_unrest = -10
-    local_missionary_strength = -1
+    local_missionary_strength = -1.0
 }
 
 dorlemitz_modifier = {
@@ -884,4 +883,1487 @@ insanity_of_oforog = {
     land_morale = -0.05
     naval_morale = -0.05
     advisor_cost = 0.15
+}
+
+vanoman_settlement_modifier = {
+    development_cost = -0.05
+    institution_spread_from_true_faith = 0.20
+}
+
+antiash_raid_receiver = {
+    development_cost = -0.15
+	local_prosperity_growth = 0.2
+}
+
+antiash_raid_victim = {
+    local_monthly_devastation = 0.3
+	local_tax_modifier = 0.3
+}
+
+antiash_production = {
+    local_production_efficiency = 0.10
+}
+
+antiash_nostalgic_journey = {
+	global_unrest = -3
+	global_manpower_modifier = 0.10
+}
+
+antiash_entering_ga_xal = {
+	loot_amount = 0.15
+	raze_power_gain = 0.15
+}
+
+antiash_dominating_the_region = {
+	ae_impact = -0.15
+	core_creation = -0.15
+}
+
+antiash_new_fortifications = {
+	local_defensiveness = 0.2
+	local_hostile_movement_speed = -0.5
+}
+
+antiash_invasion = {
+	province_warscore_cost = -0.2
+	movement_speed = 0.15
+}
+
+antiash_kinvireli_trade = {
+	trade_efficiency = 0.15
+	global_institution_spread = 0.2
+}
+
+antiash_pirates = {
+	may_perform_slave_raid = yes
+	naval_morale = 0.1
+}
+
+antiash_m_privileges = {
+	local_sailors_modifier = 0.25
+	local_ship_cost = -0.5
+	min_local_autonomy = 20
+}
+
+antiash_dorroman_trade = {
+	tax_income = 10
+}
+
+antiash_dorroman_tech = {
+	technology_cost = -0.1
+	idea_cost = -0.1
+	global_institution_spread = 0.1
+	monthly_reform_progress_modifier = 0.1
+}
+
+antiash_dorroman_lessons = {
+	all_power_cost = -0.05
+}
+
+antiash_forgave = {
+	local_unrest = -3
+	local_autonomy = -0.05
+}
+
+antiash_recruitment = {
+	local_manpower_modifier = 0.25
+	regiment_recruit_speed = -0.25
+}
+
+antiash_xalian_mercenaries = {
+	mercenary_discipline = 0.10
+	mercenary_cost = -0.10
+}
+
+antiash_took_xon = {
+	prestige_decay = -0.03
+	free_adm_policy = 1
+	global_autonomy = -0.03
+}
+
+antiash_cultural = {
+	idea_cost = -0.05
+	prestige = 0.5
+	advisor_pool = 1
+}
+
+antiash_architect = {
+	allowed_num_of_buildings = 1
+	local_development_cost = -0.25
+	institution_growth = 2
+}
+
+antiash_reformed_bosisi = {
+	missionaries = 1
+	tolerance_own = 1
+	stability_cost_modifier = -0.10
+}
+
+antiash_prophet = {
+	missionaries = 1
+	warscore_cost_vs_other_religion = -0.15
+	cb_on_religious_enemies = yes
+	monarch_lifespan = 0.2
+	church_loyalty_modifier = 0.15
+	church_influence_modifier = 0.15
+}
+
+antiash_restore_kashroon = {
+	great_project_upgrade_cost = -0.25
+}
+
+antiash_kashroon_temple = {
+	global_missionary_strength = 0.02
+	religious_unity = 0.25
+	tolerance_heathen = 1
+}
+
+antiash_happy_ganush = {
+	local_unrest = -1
+	local_regiment_cost = -0.25
+	local_manpower_modifier = 0.25
+}
+
+antiash_happy_manthwar = {
+	local_unrest = -1
+	local_production_efficiency = 0.1
+	trade_value_modifier = 0.1
+}
+
+antiash_happy_kurkari = {
+	local_unrest = -1
+	local_tax_modifier = 0.25
+}
+
+antiash_happy_ashdamir = {
+	local_unrest = -1
+	local_governing_cost = -0.5
+}
+
+antiash_settlers = {
+	global_colonial_growth = 75
+	colonists = 2
+}
+
+kalargan_gold_country = {
+    monthly_gold_inflation_modifier = -0.50
+    development_cost = -0.05
+    manpower_recovery_speed = 0.10
+}
+
+skt_cultural_harmony = {
+    all_estate_loyalty_equilibrium = 0.1
+}
+
+integrated_jzoet = {
+    reinforce_speed = 0.10
+    mercenary_discipline = 0.05
+    global_spy_defence = 0.25
+    land_forcelimit_modifier = 0.10
+    global_manpower_modifier = 0.05
+    harsh_treatment_cost = -0.2
+}
+
+jzoet_help = {
+    land_forcelimit_modifier = 0.10
+    global_manpower_modifier = 0.05
+    harsh_treatment_cost = -0.2
+}
+
+syadons_conquests = {
+    years_of_nationalism = -5
+    land_maintenance_modifier = -0.20
+}
+
+recent_migration = {
+    global_tax_modifier = 0.5
+    production_efficiency = 0.5
+}
+
+didnt_migrate = {
+    stability_cost_modifier = -0.10
+}
+
+nafan_fleet_power = {
+    naval_morale = 0.15
+    sailors_recovery_speed = 0.1
+}
+
+nafa_preparing_gaxal = {
+    global_regiment_cost = -0.10
+    manpower_recovery_speed = 0.10
+    fort_maintenance_modifier = -0.20
+    leader_cost = -0.10
+}
+
+nafa_invading_xal =  {}
+
+nafa_trolled_moxon = {
+    prestige_decay = -0.01
+    tolerance_own = 1
+}
+
+nafaBiggerNavy = {
+    global_naval_barrage_cost = -0.50
+    disengagement_chance = 0.20
+    blockade_efficiency = 0.33
+}
+
+nafaBigNavy = {
+    navy_tradition_decay = -0.01
+    naval_maintenance_modifier = -0.15
+}
+
+nafa_trade_epic = {
+    global_trade_power = 0.1
+    global_ship_trade_power = 0.25
+}
+
+nafaHartimatulModifierTest = {
+    hostile_disembark_speed = 2.5
+    hostile_fleet_attrition = 2
+    local_defensiveness = 0.25
+    supply_limit_modifier = 0.20
+}
+
+fas_more_cav = {
+    cavalry_power = 0.10
+    movement_speed = 0.05
+}
+
+jexus_converted = {
+    tolerance_heretic = -2
+}
+
+morian_reformed = {
+    infantry_power = -0.10
+    tolerance_heretic = 2
+    diplomatic_reputation = 2
+}
+
+naf_legions = {
+    yearly_army_professionalism = 0.005
+    drill_gain_modifier = 0.25
+}
+
+naf_integrate_xal_b = {
+    all_power_cost = -0.05
+    yearly_corruption = -0.05
+    advisor_pool = 1
+}
+
+naf_desperate_struggle = {
+    land_morale = -0.10
+    naval_morale = -0.10
+    global_trade_power = -0.20
+}
+
+naf_oppia_trollage = {
+    diplomatic_reputation = 1
+    diplomatic_annexation_cost = -0.25
+}
+
+naf_sweeping_estal = {
+    province_warscore_cost = -0.10
+    cavalry_shock = 1
+    stability_cost_to_declare_war = -2
+}
+
+orc_disaster_modifier = {
+    war_exhaustion = 0.10
+}
+
+orc_no_taxes = {
+    global_tax_modifier = -0.20
+    trade_efficiency = -0.10
+    production_efficiency = -0.10
+}
+
+orc_poor_taxes = {
+    global_tax_modifier = -0.10
+    trade_efficiency = -0.05
+    production_efficiency = -0.05
+    nobles_loyalty_modifier = -0.10
+    burghers_loyalty_modifier = -0.10
+}
+
+orc_no_manpower = {
+    war_exhaustion = 0.05
+    land_forcelimit_modifier = -0.10
+    manpower_recovery_speed = -0.20
+    global_manpower_modifier = -0.20
+    mercenary_manpower = -0.50
+}
+
+orc_forced_draft = {
+    war_exhaustion = 0.10
+    church_loyalty_modifier = -0.10
+    manpower_recovery_speed = -0.10
+    global_manpower_modifier = -0.10
+    land_maintenance_modifier = 0.10
+    discipline = -0.05
+    mercenary_manpower = -0.50
+}
+
+orc_forced_levvy = {
+    nobles_loyalty_modifier = -0.10
+    burghers_loyalty_modifier = -0.10
+    movement_speed = -0.10
+    land_morale = -0.10
+}
+
+orc_no_ships = {
+    navy_tradition_decay = 0.10
+    global_ship_cost = 0.20
+    global_sailors_modifier = -0.50
+}
+
+orc_bail_out_ships = {
+    global_ship_cost = 0.20
+    naval_maintenance_modifier = 0.10
+}
+
+orc_decentralisation = {
+    global_autonomy = 0.05
+}
+
+orc_overextension_decreased = {
+    global_unrest = -2
+}
+
+umz_colonist = {
+    colonists = 1
+}
+
+tonmo_bad_blood = {
+    cavalry_cost = 0.15
+    production_efficiency = -0.10
+}
+
+tonmo_evil_weather = {
+    infantry_cost  = 0.15
+    global_tax_modifier = -0.10
+}
+
+tonmo_no_doctors = {
+    recover_army_morale_speed = -0.10
+    reinforce_speed = -0.10
+}
+
+lukscha_ai_unif = {
+    diplomatic_upkeep = -4
+    discipline = 0.25
+    land_forcelimit_modifier = 2.5
+    global_tax_modifier = 10.0
+}
+
+af_coalition_modifier = {
+    land_morale = 0.10
+    diplomatic_reputation = 2
+}
+
+af_defender_of_jasua_modifier = {
+    ae_impact = -0.10
+    defensiveness = 0.20
+}
+
+fashros_trolled_severely = {
+    shock_damage_received = 0.33
+    war_exhaustion = 0.10
+}
+
+del_conqueror_of_oppians = {
+    core_creation = -0.10
+}
+
+kin_expelled_oppians = {
+    unjustified_demands = -0.25
+    warscore_cost_vs_other_religion	= -0.10
+    naval_morale = 0.10
+}
+
+kin_taking_back_whats_ours = {
+    culture_conversion_cost = -0.15
+}
+
+naf_estali_frontier = {
+    colonists = 1
+}
+
+naf_adopt_resteman_strategies = {
+    leader_naval_fire = 1
+    leader_naval_shock = 1
+    leader_naval_manuever = 1
+}
+
+fu_extended_golden_age = {
+    land_morale = 0.10
+    naval_morale = 0.10
+    all_power_cost = -0.10
+    global_trade_goods_size_modifier = 0.10
+    max_absolutism = 5
+    max_revolutionary_zeal = 10
+}
+
+naf_colonial_ventures = {
+    colonists = 1
+    native_uprising_chance = -0.25
+}
+
+naf_rini_elite = {
+    religious_unity = 0.25
+    tolerance_heretic = 3
+}
+
+nafa_decision_cooldown = {}
+
+orc_vassal_acceptance = {
+    num_accepted_cultures = 3
+    global_autonomy = 0.025
+}
+
+orc_ordicization = {
+    culture_conversion_cost = -0.25
+    global_unrest = 1
+}
+
+naf_settle_malpix = {
+    colonists = 1
+    global_colonial_growth = 40
+}
+
+naf_cutting_edge = {
+    prestige = 1
+    production_efficiency = 0.10
+}
+
+naf_great_innovator = {
+    embracement_cost = -0.33
+    advisor_pool = 2
+}
+
+naf_armytradmerchant_cooldown = {}
+
+naf_greater_gomic_market = {
+    trade_efficiency = 0.15
+    global_autonomy = -0.025
+}
+
+naf_get_vanoman_tech = {
+    technology_cost = -0.05
+    artillery_cost = -0.10
+}
+
+naf_verakols_ideas = {
+    cavalry_power = 0.10
+    movement_speed = 0.05
+}
+
+naf_into_jasua = {
+    core_creation = -0.10
+}
+
+naf_pacified_kisholi = {
+    num_accepted_cultures = 3
+    promote_culture_cost = -0.25
+}
+
+naf_sar_insanity = {
+    all_power_cost = 0.25
+    land_morale = -0.10
+    naval_morale = -0.10
+    advisor_cost = 0.20
+    stability_cost_modifier = 0.25
+}
+
+naf_troll_ordica = {
+    spy_offence = 0.33
+}
+
+lyp_united_the_south = {
+    manpower_in_true_faith_provinces = 0.33
+}
+
+lyp_nutian_architecture = {
+    build_cost = -0.10
+    build_time = -0.10
+}
+
+lyp_prosperity_in_oppia = {
+    development_cost = -0.10
+    global_prosperity_growth = 0.25
+}
+
+skt_shifting_identity = {
+    global_autonomy = -0.05
+    prestige = 1
+}
+
+skt_est_influence = {
+    improve_relation_modifier = 0.20
+}
+
+skt_unite_est = {
+    ae_impact = -0.10
+    years_of_nationalism = -5
+}
+
+skt_new_trade_networks = {
+    merchants = 1
+}
+
+antiash_cav_ratio = {
+    cav_to_inf_ratio = 1.0
+}
+
+skt_tradpilled = {
+    legitimacy = 1
+}
+
+skt_claimant_moxon = {
+    ae_impact = -0.10
+    naval_morale = 0.10
+}
+
+
+pawani_lit_pyramids = {
+    global_unrest = -1
+    global_missionary_strength = 0.01
+}
+
+klg_reformed_army = {
+    drill_gain_modifier	= 0.50
+	reinforce_cost_modifier = -0.20
+    discipline = 0.05
+}
+
+klg_leaders_better = {
+    free_leader_pool = 1
+    army_tradition_from_battle = 0.5
+}
+
+klg_get_cav = {
+    cavalry_power = 0.10
+    cav_to_inf_ratio = 0.15
+}
+
+klg_new_kachik_state = {
+    core_creation = -0.10
+    shock_damage = 0.15
+}
+
+klg_father_of_kalarga = {
+    all_power_cost = -0.05
+    prestige = 1
+    monthly_reform_progress_modifier = 0.1
+}
+
+klg_settle_moxon = {
+    development_cost = -0.20
+    harsh_treatment_cost = -0.33
+}
+
+klg_great_kalargan_empire = {
+    production_efficiency = 0.15
+    global_institution_spread = 0.25
+    trade_steering = 0.33
+    monthly_gold_inflation_modifier	= -0.25
+}
+
+nhoma_centralize = {
+    land_forcelimit_modifier = 0.10
+    development_cost = -0.10
+}
+
+nhoma_go_horde = {
+    ae_impact = 0.50
+    global_tax_modifier = -0.20
+    diplomatic_reputation = -1
+}
+
+lathvy_coffee_legal = {
+    technology_cost = -0.05
+}
+
+first_prayer_books = {
+    tolerance_own = 3
+    global_missionary_strength = 0.02
+}
+
+
+klg_construction = {
+    build_cost = -0.20
+}
+
+klg_seafarers = {
+    naval_tradition_from_battle = 1.0
+    sailors_recovery_speed = 0.1
+}
+
+klg_kalargan_fire = {
+    leader_naval_fire = 1
+    galley_power = 0.20
+}
+
+klg_marines = {
+    allowed_marine_fraction = 0.25
+}
+
+klg_warriors = {
+    global_manpower_modifier = 0.15
+    army_tradition = 0.5
+}
+
+klg_artisans = {
+    global_trade_goods_size_modifier = 0.10
+    global_tax_modifier = 0.10
+}
+
+klg_old_places = {
+    idea_cost = -0.10
+}
+
+klg_colony_rush = {
+	global_colonial_growth = 50
+    native_assimilation = 0.25
+}
+
+klg_into_the_woods_modifier = {
+    colonists = 1
+    native_uprising_chance = -0.50
+}
+
+klg_rule_the_interior = {
+    colonists = 1
+}
+
+klg_disrupted_jasuan_trade = {
+    global_trade_power = 0.10
+}
+
+klg_defeated_kapolia = {
+    province_warscore_cost = -0.15
+    naval_morale = 0.10
+}
+
+klg_epic_navy = {
+    trade_efficiency = 0.10
+    naval_maintenance_modifier = -0.25
+}
+
+conversion_to_xalian = {
+    global_heretic_missionary_strength = 0.05
+    tolerance_heretic = -2
+}
+
+fas_croatian_injured = {
+    land_morale = -0.10
+}
+
+agx_new_leadership = {
+    land_morale = 0.10
+    naval_morale = 0.10
+}
+
+agx_united_moxon = {
+    development_cost = -0.10
+    prestige = 1
+}
+
+nrv_religion_questioned = {
+	global_missionary_strength = -0.01
+	church_influence_modifier = -0.1
+	global_religious_conversion_resistance = -0.1
+}
+
+nrv_religion_confirmed = {
+	global_missionary_strength = 0.01
+	church_influence_modifier = 0.1
+	tolerance_own = 1
+	global_religious_conversion_resistance = 1
+}
+
+freedom_of_speech_lathvy = {
+    global_unrest = -1
+    idea_cost = -0.10
+}
+
+pope_visit_lathvy = {
+    tolerance_heathen = 2
+}
+
+recent_holy_hunt = {
+
+}
+
+recent_human_sacrifice = {
+
+}
+
+human_sacrifices = {
+	all_power_cost = -0.05
+	global_unrest = 1
+}
+
+enemy_sacrifices = {
+	land_morale = 0.05
+	all_power_cost = -0.05
+	diplomatic_reputation = -1
+}
+
+holy_hunt_effects = {
+	global_unrest = -2
+	prestige = 1
+	church_power_modifier = 0.05
+}
+
+lks_the_first_forum = {
+    republican_tradition = 0.50
+    global_unrest = -3
+}
+
+lks_internal_growth = {
+    development_cost = -0.1
+    production_efficiency = 0.10
+}
+
+lks_reined_in_chiefs = {
+    global_tax_modifier = 0.20
+    global_autonomy = -0.05
+}
+
+lks_population_boom = {
+    manpower_recovery_speed = 0.10
+    global_trade_goods_size_modifier = 0.15
+}
+
+lks_into_gotzlica = {
+    infantry_power = 0.15
+    reinforce_speed = 0.20
+}
+
+orc_foreign_scholars = {
+    global_institution_spread = 0.1
+    technology_cost = -0.1
+}
+
+orc_internal_scholars = {
+    innovativeness_gain = 0.5
+    free_policy = 1
+    idea_cost = -0.1
+}
+
+orc_religious_debate = {
+    global_missionary_strength = -0.01
+    global_heretic_missionary_strength = -0.03
+    tolerance_heretic = 3
+}
+
+orc_one_faith = {
+    global_missionary_strength = 0.02
+    monthly_piety = 0.01
+}
+
+destr_encourage_settlement = {
+    global_tax_modifier = 0.25
+    global_trade_power = 0.25
+}
+
+destr_migtimer = {}
+
+destr_colonisation = {
+    colonists = 1
+    global_colonial_growth = 40
+    native_assimilation = 0.25
+    native_uprising_chance = -0.50
+    global_missionary_strength = 0.05
+}
+
+destr_development = {
+    core_creation = -100
+    build_cost = -100
+    development_cost = -100
+    diplomatic_upkeep = 2
+}
+
+destr_army = {
+    movement_speed = 0.10
+    reinforce_speed = 0.10
+    manpower_recovery_speed = 0.10
+}
+
+destr_nationhood = {
+    technology_cost = -0.1
+    development_cost = -0.1
+    army_tradition = 1
+}
+
+soy_lib_1 = {
+    technology_cost = -0.10
+    idea_cost = -0.10
+}
+
+soy_lib_2 = {
+    leader_land_shock = 1
+    shock_damage = 0.10
+}
+
+soy_lib_3 = {
+    idea_cost = -0.05
+    tolerance_own = 2
+    missionaries = 1
+}
+
+gadea_diplomacy = {
+    diplomatic_reputation = 2
+    relation_with_same_culture = 10
+}
+
+gadea_naval = {
+    global_ship_cost = -0.1
+    naval_forcelimit_modifier = 0.25
+    blockade_efficiency = 0.1
+}
+
+gadea_fortifications = {
+    fort_maintenance_modifier = -0.15
+}
+
+gadean_army = {
+    land_forcelimit_modifier = 0.10
+    land_maintenance_modifier = -0.10
+    shock_damage = 0.10
+}
+
+gadea_trade = {
+    trade_steering = 0.15
+    trade_efficiency = 0.10
+}
+
+gadea_mass_construction = {
+    global_autonomy = -0.05
+    global_prosperity_growth = 0.1
+}
+
+gadea_conquest_of_maky = {
+    reduced_liberty_desire = 15
+    diplomatic_annexation_cost = -0.25
+}
+
+gadea_subject_manpwoer = {
+    manpower_recovery_speed = 0.10
+    manpower_in_true_faith_provinces= 0.25
+}
+
+gadea_rapid_expansion = {
+    core_creation = -0.15
+    reduced_liberty_desire = 5
+}
+
+gadea_gadelis = {
+    reduced_liberty_desire = 10
+    diplomatic_annexation_cost = -0.10
+    global_missionary_strength = 0.02
+    ae_impact = -0.33
+}
+
+recontrusted_carvings = {
+	range = 0.25
+}
+
+religious_carvings = {
+	tolerance_own = 1
+}
+
+patriotic_carvings = {
+	core_creation = -0.05
+}
+
+scientific_carvings = {
+	technology_cost = -0.05
+}
+
+prestigious_carvings = {
+	prestige_decay = -0.02
+}
+
+gadea_opmaki_resurgance = {
+	culture_conversion_cost = -0.33
+    missionary_maintenance_cost = -0.20
+    same_culture_advisor_cost = -0.15
+}
+
+gadea_zeafs = {
+	cav_to_inf_ratio = 0.33
+    cavalry_cost = -0.20
+}
+
+gadea_tonmo_defeated = {
+    warscore_cost_vs_other_religion = -0.10
+    culture_conversion_cost = -0.10
+}
+
+soy_ajetaz = {
+    global_unrest = -2
+    tolerance_own = 1
+    land_morale = 0.15
+    monarch_lifespan = 0.25
+}
+
+lathvy_good_boy = {
+    prestige = 1.0
+    global_missionary_strength = 0.01
+}
+
+lathvy_bad_boy = {
+    manpower_recovery_speed = 0.10
+    global_unrest = -1
+}
+
+recent_disease_trve = {
+}
+
+lag_shipbuilding = {
+	global_ship_cost = -0.25
+    global_ship_recruit_speed = -0.5
+}
+
+zea_raise_banners = {
+    mercenary_cost = -0.10
+    infantry_cost = -0.10
+    land_morale = 0.05
+}
+
+zea_conquest_of_maky = {
+    core_creation = -0.1
+    state_maintenance_modifier = -0.33
+}
+
+zea_holy_cities = {
+    culture_conversion_cost = -0.25
+    global_missionary_strength = 0.01
+}
+
+zea_tribal_masidon = {
+    defensiveness = 0.10
+    recover_army_morale_speed = 0.10
+}
+
+zea_integrate_tribes = {
+    manpower_in_true_faith_provinces= 0.10
+    tolerance_own = 2
+}
+
+zea_mountain_warfare = {
+    leader_siege = 1
+    global_supply_limit_modifier = 0.10
+}
+
+zea_anti_xalian_diplomacy = {
+    tolerance_heathen = -2
+    manpower_in_true_faith_provinces= 0.05
+}
+
+zea_rebuilding = {
+    development_cost = -0.10
+    build_time = -0.33
+}
+
+lag_royal_trade = {
+    trade_efficiency = 0.15
+}
+
+lag_into_pexto = {
+    ae_impact = -0.10
+    province_warscore_cost = -0.10
+}
+
+lag_into_oppia = {
+    naval_morale = 0.10
+    land_morale = 0.10
+}
+
+lag_oppian_friend = {
+    diplomats = 1
+    improve_relation_modifier = 0.20
+}
+
+tck_gave_up_fishermen = {
+    trade_efficiency = -0.10
+}
+
+tck_contesting_laglon = {
+    trade_steering = 0.10
+    light_ship_power = 0.10
+}
+
+tck_mourning_mensel = {
+    prestige_decay = -0.05
+    legitimacy = 1
+}
+
+tck_sar_dynasty = {
+    monarch_diplomatic_power = 1
+    monarch_lifespan = 0.15
+    heir_chance = 0.10
+}
+
+lag_tame_the_coast = {
+    global_trade_goods_size_modifier = 0.20
+}
+
+lag_massive_navy = {
+    ship_durability = 0.10
+    own_coast_naval_combat_bonus = 1.0
+}
+
+lag_troll_tck = {
+    naval_forcelimit_modifier = -0.50
+    global_trade_power = -0.25
+}
+
+lag_get_culture_conv = {
+    culture_conversion_cost = -0.10
+}
+
+lag_get_culture_acc = {
+    num_accepted_cultures = 1
+}
+
+lag_humiliated = {
+    prestige_decay = 0.01
+}
+
+lag_oppian_intervention = {
+    global_trade_power = 0.15
+}
+
+tck_merc_navy = {
+    global_ship_cost = -0.15
+    privateer_efficiency = 0.2
+    admiral_cost = -0.1
+}
+
+tck_trader_navy = {
+    light_ship_power = 0.20
+    trade_efficiency = 0.10
+    galley_power = -0.10
+    transport_cost = 0.10
+}
+
+tck_military_navy = {
+    galley_power = 0.10
+    heavy_ship_power = 0.10
+}
+
+tck_new_lands = {
+    trade_steering = 0.10
+    global_autonomy = -0.05
+}
+
+tck_carvel_shipbuilding = {
+    ship_durability = 0.25
+    heavy_ship_power = 0.10
+}
+
+tck_oppian_flatlands = {
+    global_supply_limit_modifier = 0.20
+}
+
+tck_to_elorak = {
+    siege_blockade_progress = 1
+    land_morale = 0.10
+}
+
+tck_shattered_ossor = {
+    land_morale = -0.25
+    global_unrest = 2
+}
+
+tck_rule_by_example = {
+    global_unrest = -2
+}
+
+tck_oppia_united = {
+    num_accepted_cultures = 3
+}
+
+tck_restore_laglan_rule = {
+    global_missionary_strength = 0.02
+    culture_conversion_cost = -0.33
+}
+
+tck_compete_with_thalassocracy = {
+    galley_power = 0.10
+    transport_power = 0.10
+    allowed_marine_fraction = 0.1
+}
+
+tck_wine_courtroom = {
+    advisor_cost = -0.10
+    prestige_decay = -0.05
+    heir_chance = 0.10
+}
+
+tck_only_imperial_family = {
+    legitimacy = 1
+}
+
+tck_sword_of_astom = {
+    discipline = 0.05
+    war_exhaustion = -0.10
+    mercenary_cost = 0.10
+}
+
+tck_gallagums_urn = {
+    diplomatic_reputation = 2
+    province_warscore_cost = -0.10
+    ae_impact = 0.15
+}
+
+tck_imperial_standard = {
+    governing_capacity_modifier = 0.25
+    core_creation = -0.10
+    global_unrest = 2
+}
+
+lag_seizeure_of_maglazios = {
+    monthly_piety = 0.005
+    technology_cost = -0.05
+}
+
+lag_enlisting_locals = {
+    manpower_recovery_speed = 0.10
+}
+
+lag_butcher_of_glazia = {
+    discipline = 0.10
+}
+
+lag_forest_pioneers = {
+    colonists = 1
+    global_colonial_growth = 10
+}
+
+lag_united_we_stand = {
+    free_adm_policy = 1
+    war_exhaustion = -0.05
+}
+
+lag_laglan_plains = {
+    production_efficiency = 0.10
+}
+
+lks_tiger_of_the_north = {
+    colonists = 1
+    global_colonial_growth = 35
+    global_manpower_modifier = 0.20
+}
+
+lag_colony_rush = {
+	global_colonial_growth = 45
+    native_assimilation = 0.25
+}
+
+lag_new_lathvy_doctrine = {
+    tolerance_own = 2.0
+}
+
+lag_further_our_reach = {
+    range = 0.25
+    envoy_travel_time = -0.15
+}
+
+lag_access_northern_trade_routes = {
+    global_ship_trade_power = 0.10
+}
+
+lag_stolen_artifacts = {
+    idea_cost = -0.075
+    adm_tech_cost_modifier = -0.25
+}
+
+lag_religious_acceptance = {
+    advisor_pool = 1
+    tolerance_heretic = 2
+    prestige = 0.5
+}
+
+lag_control_the_mountain_passes = {
+    global_supply_limit_modifier = 0.20
+    land_attrition = -0.10
+}
+
+orc_religious_intolerance = {
+    global_missionary_strength = -0.02
+    tolerance_heathen = 1
+}
+
+orc_disjointed_economy = {
+    global_tax_modifier = -0.15
+    trade_efficiency = -0.10
+}
+
+orc_levvied_armies = {
+    land_forcelimit_modifier = -0.10
+    shock_damage_received = 0.10
+    global_supply_limit_modifier = 0.35
+}
+
+qub_rise_of_qub = {
+    global_tax_income = 480
+    global_manpower = 40
+    horde_unity = 2
+}
+
+lag_abolished_slavery = {
+    diplomatic_reputation = 1.5
+    church_loyalty_modifier = 0.10
+}
+
+lag_epic_westal_modifier = {
+    max_absolutism = 20
+    land_forcelimit_modifier = 0.10
+}
+
+rst_gold_source = {
+    monthly_gold_inflation_modifier = -0.50
+}
+
+rst_rostan_invasion = {
+    land_morale = 0.15
+}
+
+rst_great_king_of_gotzlica = {
+    all_power_cost = -0.05
+    church_loyalty_modifier = 0.10
+    nobles_loyalty_modifier = 0.10
+    burghers_loyalty_modifier = 0.10
+}
+
+gotzlic_colonist_modifier = {
+    colonists = 2
+    global_colonial_growth = 10
+}
+
+tck_oppian_hegemony = {
+    same_culture_advisor_cost = -0.10
+    manpower_in_true_faith_provinces = 0.15
+}
+
+tck_crown_army = {
+    land_forcelimit_modifier = 0.10
+    prestige_from_land = 0.25
+}
+
+tck_oppiatis = {
+    siege_ability = 0.10
+    leader_siege = 1
+    artillery_cost = -0.25
+}
+
+tck_new_model_army = {
+    mil_tech_cost_modifier = -0.10
+    drill_gain_modifier = 0.15
+}
+
+rdu_colonize = {
+    colonists = 1
+}
+
+pya_lathvy = {
+    tolerance_own = 1
+    tolerance_heathen = -1
+    religion = yes
+}
+
+tck_sar_virtue = {
+    yearly_corruption = -0.10
+}
+
+tck_centralising_empire = {
+    diplomatic_annexation_cost = -0.2
+}
+
+tck_provencial_governors = {
+    governing_capacity = 100
+}
+
+tck_benevolent_example = {
+    diplomatic_reputation = 1
+}
+
+tck_ruthless_example = {
+    global_unrest = -1
+}
+
+tck_orabus_last_stand = {
+    local_unrest = 2
+}
+
+tck_disgraced_alatan = {
+    dip_advisor_cost = 0.15
+}
+
+tck_coastal_city = {
+    local_development_cost = -0.05
+    trade_goods_size = 1
+}
+
+tck_reformation_decision = {
+    tolerance_own = 2
+    tolerance_heathen = 1
+    tolerance_heretic = -2
+}
+
+tck_military_focus = {
+    army_tradition_from_battle = 0.33
+    mil_tech_cost_modifier = -0.10
+}
+
+tck_educational_focus = {
+    advisor_pool = 1
+    adm_tech_cost_modifier = -0.10
+}
+
+tck_gates_of_the_gomic = {
+    trade_steering = 0.20
+    light_ship_cost = -0.1
+}
+
+tck_ravsho_cavalry_techniques = {
+    cavalry_shock = 0.10
+    cavalry_fire = -0.05
+    cavalry_cost = -0.10
+}
+
+diocese_diplomatic_outreach = {
+    diplomatic_upkeep = 1
+    diplomatic_reputation = 2
+}
+
+diocese_fight_for_liberty = {
+    land_morale = 0.10
+    war_exhaustion = -0.20
+    land_forcelimit_modifier = 0.50
+}
+
+naf_adopt_oppian_institutions = {
+    min_autonomy_in_territories = -0.1
+    governing_capacity = 250
+    max_absolutism = 10
+}
+
+naf_kisholi_cav = {
+    cavalry_fire = 0.25
+}
+
+naf_nutrop_dip = {
+    diplomats = 1
+}
+
+test_mod_1 = {
+    global_colonial_growth = -250
+}
+
+naf_trolled_hasia = {
+    tolerance_own = 1
+    prestige_decay = -0.01
+}
+
+naf_rini_order_country = {
+    stability_cost_modifier = -0.10
+    land_forcelimit = 40
+    reinforce_cost_modifier = -0.10
+    land_morale = 0.05
+}
+
+naf_the_two_syadonas = {
+    envoy_travel_time = -0.15
+    movement_speed = 0.05
+}
+
+naf_rini_army = {
+    shock_damage = 0.10
+    shock_damage_received = -0.10
+    tolerance_own = -3
+}
+
+naf_high_desertion = {
+    land_attrition = 0.25
+    discipline = -0.025
+}
+
+naf_rini_mil_admin = {
+    core_creation = -0.05
+    global_unrest = -1
+    all_estate_loyalty_equilibrium = -0.10
+}
+
+naf_rini_court = {
+    advisor_pool = -1
+    advisor_cost = 0.25
+    mil_advisor_cost = -0.50
+}
+
+naf_coup_ongoing = {
+    global_unrest = 10
+    free_leader_pool = -2
+    manpower_recovery_speed = -0.50
+    land_forcelimit_modifier = -0.25
+}
+
+naf_consolidated_rule = {
+    stability_cost_modifier = -0.25
+    monarch_military_power = 1
+    governing_capacity_modifier = 0.20
+    max_absolutism = 25
+}
+
+naf_purging_rini = {
+    army_tradition = -5
+    mil_advisor_cost = 0.5
+    infantry_power = -0.10
+}
+
+naf_the_wise_emperor = {
+    prestige = 1
+    church_loyalty_modifier = 0.10
+}
+
+naf_greatest_thinkers = {
+    adm_advisor_cost = -0.25
+}
+
+naf_truth_no_nafer = {
+    tolerance_heretic = 6
+    technology_cost = -0.10
+}
+
+naf_truth_doubt = {
+    tolerance_own = -2
+    tolerance_heathen = 5
+    years_of_nationalism = -5
+}
+
+naf_truth_reject = {
+    adm_tech_cost_modifier = 0.10
+    tolerance_own = 3
+    church_loyalty_modifier = 0.15
+}
+
+naf_world_illusion = {
+    monarch_admin_power = 1
+    idea_cost = -0.10
+}
+
+debug_build_fast = {
+    build_time = -1
+    build_cost = -1
+}
+
+naf_the_truth_mod = {
+    global_missionary_strength = 0.03
+    administrative_efficiency = 0.05
+    warscore_cost_vs_other_religion = -0.10
 }

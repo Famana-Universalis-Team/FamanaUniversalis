@@ -6,12 +6,13 @@ hre = no
 base_tax = 1
 base_production = 1
 base_manpower = 1
-native_size = 20
-native_ferocity = no
-native_hostileness = 1
-capital = "UNNAMED"
 is_city = no
-extra_cost = 10
+native_size = 1
+native_ferocity = 4
+native_hostileness = 4
+capital = "Jhenlap"
+ 
+#
 discovered_by = great_desert_tech_gr
 
 add_permanent_province_modifier = {

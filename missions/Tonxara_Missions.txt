@@ -153,8 +153,8 @@ tonxara_1 = {
 				tooltip = tonxara_supr_tt
 				NOT = {
 					any_owned_province = {
+						is_state_core = ROOT
 						NOT = {
-							is_state_core = yes
 							religion = tonmo
 						}
 					}
@@ -162,7 +162,9 @@ tonxara_1 = {
 			}
 		}
 		effect = {
-			add_prestige = 20
+			add_prestige_or_monarch_power = {
+				amount = 20
+			}
 			define_advisor = {
 				type = philosopher
 				skill = 3

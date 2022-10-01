@@ -1,9 +1,9 @@
-namespace = pextodis
+namespace = pex_disaster
 
 country_event = { #25%
-    id = pextodis.1
-    title = pextodis.1.t
-    desc = pextodis.1.d
+    id = pex_disaster.1
+    title = pex_disaster.1.t
+    desc = pex_disaster.1.d
     picture = SIEGE_eventPicture
     fire_only_once = yes
     major = yes
@@ -19,7 +19,7 @@ country_event = { #25%
 	}
 
     option = {
-		name = pextodis.1.a
+		name = pex_disaster.1.a
         ai_chance = { factor = 1 }
 		add_country_modifier = { 
     		name = inner_turmoil_25
@@ -29,9 +29,9 @@ country_event = { #25%
 }
 
 country_event = { #75%
-    id = pextodis.2
-    title = pextodis.2.t
-    desc = pextodis.2.d
+    id = pex_disaster.2
+    title = pex_disaster.2.t
+    desc = pex_disaster.2.d
     picture = REVOLUTION_eventPicture
     fire_only_once = yes
     major = yes
@@ -47,7 +47,7 @@ country_event = { #75%
 	}
 
     option = {
-		name = pextodis.2.a
+		name = pex_disaster.2.a
         ai_chance = { factor = 1 }
 		add_country_modifier = { 
     		name = inner_turmoil_75
@@ -58,19 +58,19 @@ country_event = { #75%
 }
 
 country_event = { #cities demand more autonomy
-    id = pextodis.4
-    title = pextodis.4.t
-    desc = pextodis.4.d
+    id = pex_disaster.4
+    title = pex_disaster.4.t
+    desc = pex_disaster.4.d
     picture = CITY_VIEW_eventPicture
     fire_only_once = yes
 	is_triggered_only = yes
 
     immediate = {
-        set_country_flag = had_pextodis_4
+        set_country_flag = had_pex_disaster_4
     }
 
     option = {
-		name = pextodis.4.a
+		name = pex_disaster.4.a
         ai_chance = { factor = 0 }
         add_country_modifier = { 
     		name = pexto_granted_city_rights
@@ -83,37 +83,37 @@ country_event = { #cities demand more autonomy
     }
 
 	option = {
-		name = pextodis.4.b
+		name = pex_disaster.4.b
         ai_chance = { factor = 1 }
     }
 }
 
 country_event = { #nobles vs clergy
-    id = pextodis.5
-    title = pextodis.5.t
-    desc = pextodis.5.d
+    id = pex_disaster.5
+    title = pex_disaster.5.t
+    desc = pex_disaster.5.d
     picture = DEBATE_REPUBLICAN_eventPicture
     fire_only_once = yes
 	is_triggered_only = yes
 
     immediate = {
-        set_country_flag = had_pextodis_5
+        set_country_flag = had_pex_disaster_5
     }
 
     option = {
-		name = pextodis.5.a
+		name = pex_disaster.5.a
         ai_chance = { factor = 1 }
         add_estate_loyalty_modifier = {
             estate = estate_nobles
             desc = NOBLES_PLEASED
             loyalty = 10
-            duration = -1
+            duration = 7300
         }
         add_estate_influence_modifier = {
             estate = estate_nobles
             desc = NOBLES_PLEASED_INFLUENCE
             influence = 10
-            duration = -1
+            duration = 7300
         }
         change_estate_land_share = {
             estate = estate_nobles
@@ -123,13 +123,13 @@ country_event = { #nobles vs clergy
             estate = estate_church
             desc = CHURCH_UNSUPPORTED
             loyalty = -10
-            duration = -1
+            duration = 7300
         }
         add_estate_influence_modifier = {
             estate = estate_church
             desc = CHURCH_UNSUPPORTED_INFLUENCE
             influence = -10
-            duration = -1
+            duration = 7300
         }
         change_estate_land_share = {
             estate = estate_church
@@ -139,19 +139,19 @@ country_event = { #nobles vs clergy
     }
 
 	option = {
-		name = pextodis.5.b
+		name = pex_disaster.5.b
         ai_chance = { factor = 1 }
 		add_estate_loyalty_modifier = {
             estate = estate_church
             desc = CHURCH_PLEASED
             loyalty = 10
-            duration = -1
+            duration = 7300
         }
         add_estate_influence_modifier = {
             estate = estate_church
             desc = CHURCH_PLEASED_INFLUENCE
             influence = 10
-            duration = -1
+            duration = 7300
         }
         change_estate_land_share = {
             estate = estate_church
@@ -161,13 +161,13 @@ country_event = { #nobles vs clergy
             estate = estate_nobles
             desc = NOBLES_UNSUPPORTED
             loyalty = -10
-            duration = -1
+            duration = 7300
         }
         add_estate_influence_modifier = {
             estate = estate_nobles
             desc = NOBLES_UNSUPPORTED_INFLUENCE
             influence = -10
-            duration = -1
+            duration = 7300
         }
         change_estate_land_share = {
             estate = estate_nobles
@@ -178,19 +178,19 @@ country_event = { #nobles vs clergy
 }
 
 country_event = { #glazian vs pextan incident
-    id = pextodis.6
-    title = pextodis.6.t
-    desc = pextodis.6.d
+    id = pex_disaster.6
+    title = pex_disaster.6.t
+    desc = pex_disaster.6.d
     picture = BORDER_TENSION_eventPicture
     fire_only_once = yes
 	is_triggered_only = yes
 
     immediate = {
-        set_country_flag = had_pextodis_6
+        set_country_flag = had_pex_disaster_6
     }
 
     option = {
-		name = pextodis.6.a
+		name = pex_disaster.6.a
         ai_chance = { factor = 0 }
         add_country_modifier = { 
             name = pexto_purge_advisors
@@ -212,7 +212,7 @@ country_event = { #glazian vs pextan incident
     }
 
 	option = { 
-		name = pextodis.6.b
+		name = pex_disaster.6.b
         ai_chance = { factor = 1 }
         add_stability = -1
         every_owned_province = {
@@ -225,19 +225,19 @@ country_event = { #glazian vs pextan incident
 }
 
 country_event = { #minorities event
-    id = pextodis.7
-    title = pextodis.7.t
-    desc = pextodis.7.d
+    id = pex_disaster.7
+    title = pex_disaster.7.t
+    desc = pex_disaster.7.d
     picture = ANGRY_MOB_eventPicture
     fire_only_once = yes
 	is_triggered_only = yes
 
     immediate = {
-        set_country_flag = had_pextodis_7
+        set_country_flag = had_pex_disaster_7
     }
 
     option = {
-		name = pextodis.7.a
+		name = pex_disaster.7.a
         ai_chance = { factor = 0 }
         every_owned_province = {
             limit = {
@@ -254,7 +254,7 @@ country_event = { #minorities event
     }
 
 	option = {
-		name = pextodis.7.b
+		name = pex_disaster.7.b
         ai_chance = { factor = 1 }
         add_disaster_progress = {
             disaster = collapse_of_pextoglazia
@@ -264,19 +264,19 @@ country_event = { #minorities event
 }
 
 country_event = { #corrupt court
-    id = pextodis.8
-    title = pextodis.8.t
-    desc = pextodis.8.d
+    id = pex_disaster.8
+    title = pex_disaster.8.t
+    desc = pex_disaster.8.d
     picture = ACCUSATION_eventPicture
     fire_only_once = yes
 	is_triggered_only = yes
 
     immediate = {
-        set_country_flag = had_pextodis_8
+        set_country_flag = had_pex_disaster_8
     }
 
     option = {
-		name = pextodis.8.a
+		name = pex_disaster.8.a
         ai_chance = { factor = 0 }
         trigger = { has_advisor = yes }
         add_disaster_progress = {
@@ -293,7 +293,7 @@ country_event = { #corrupt court
     }
 
     option = {
-		name = pextodis.8.b
+		name = pex_disaster.8.b
         ai_chance = { factor = 0 }
         trigger = { NOT = { has_advisor = yes} }
         add_disaster_progress = {
@@ -307,33 +307,33 @@ country_event = { #corrupt court
     }
 
 	option = { 
-		name = pextodis.8.c
+		name = pex_disaster.8.c
         ai_chance = { factor = 1 }
         add_corruption = 2
     }
 }
 
 country_event = { #problems with banditry , #set up bounties and hunt them down
-    id = pextodis.9
-    title = pextodis.9.t
-    desc = pextodis.9.d
+    id = pex_disaster.9
+    title = pex_disaster.9.t
+    desc = pex_disaster.9.d
     picture = SCOTTISH_MERCENARIES_eventPicture
     fire_only_once = yes
 	is_triggered_only = yes
 
     immediate = {
-        set_country_flag = had_pextodis_9
+        set_country_flag = had_pex_disaster_9
     }
 
     option = {
-		name = pextodis.9.a
+		name = pex_disaster.9.a
         ai_chance = { factor = 0 }
         add_years_of_income = -0.5
         add_yearly_manpower = -2
     }
 
 	option = { 
-		name = pextodis.9.b
+		name = pex_disaster.9.b
         ai_chance = { factor = 1 }
         add_disaster_progress = {
             disaster = collapse_of_pextoglazia
@@ -343,19 +343,19 @@ country_event = { #problems with banditry , #set up bounties and hunt them down
 }
 
 country_event = { #diocese demands
-    id = pextodis.10
-    title = pextodis.10.t
-    desc = pextodis.10.d
+    id = pex_disaster.10
+    title = pex_disaster.10.t
+    desc = pex_disaster.10.d
     picture = SEJM_eventPicture
     fire_only_once = yes
 	is_triggered_only = yes
 
     immediate = {
-        set_country_flag = had_pextodis_10
+        set_country_flag = had_pex_disaster_10
     }
 
     option = {
-		name = pextodis.10.a
+		name = pex_disaster.10.a
         ai_chance = { factor = 0 }
         add_country_modifier = { 
             name = pexto_vassal_priviliges
@@ -368,7 +368,7 @@ country_event = { #diocese demands
     }
 
 	option = { 
-		name = pextodis.10.b
+		name = pex_disaster.10.b
         ai_chance = { factor = 1 }
         every_subject_country = {
 			add_liberty_desire = 15
@@ -382,19 +382,19 @@ country_event = { #diocese demands
 }
 
 country_event = { #cowardice
-    id = pextodis.11
-    title = pextodis.11.t
-    desc = pextodis.11.d
+    id = pex_disaster.11
+    title = pex_disaster.11.t
+    desc = pex_disaster.11.d
     picture = WOUNDED_SOLDIERS_eventPicture
     fire_only_once = yes
 	is_triggered_only = yes
 
     immediate = {
-        set_country_flag = had_pextodis_11
+        set_country_flag = had_pex_disaster_11
     }
 
     option = { #conscription
-		name = pextodis.11.a 
+		name = pex_disaster.11.a 
         ai_chance = { factor = 0 }
         add_years_of_income = -0.5
         add_army_professionalism = -0.05
@@ -405,7 +405,7 @@ country_event = { #cowardice
     }
 
 	option = { 
-		name = pextodis.11.b
+		name = pex_disaster.11.b
         ai_chance = { factor = 1 }
         add_country_modifier = { 
             name = pexto_cowardice
@@ -415,9 +415,9 @@ country_event = { #cowardice
 }
 
 country_event = { #start
-    id = pextodis.12
-    title = pextodis.12.t
-    desc = pextodis.12.d
+    id = pex_disaster.12
+    title = pex_disaster.12.t
+    desc = pex_disaster.12.d
     picture = COUNTRY_COLLAPSE_eventPicture
     fire_only_once = yes
     major = yes
@@ -433,7 +433,7 @@ country_event = { #start
 	}
 
     option = {
-		name = pextodis.12.a
+		name = pex_disaster.12.a
         ai_chance = { factor = 1 }
 		custom_tooltip = pexto_start_tooltip
     }

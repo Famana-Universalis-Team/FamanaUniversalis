@@ -1,9 +1,10 @@
 discovered_by = east_gomic_tech_gr
-discovered_by = north_gomic_tech_gr
+discovered_by = lathvy_tech_gr
 discovered_by = west_gomic_tech_gr
 culture = Pawani_C
 religion = pawani
 owner = NKM
+is_city = yes
 controller = NKM
 add_core = NKM
 add_core = ELI
@@ -17,6 +18,6 @@ base_production = 3
 trade_goods = naval_supplies
 base_manpower = 3
 capital = "Brustomu"
-is_city = yes
-extra_cost = 1
+ 
+
 

@@ -1,0 +1,1621 @@
+namespace = gotzlica
+
+#Leronya demands subjugation
+country_event = {
+    id = gotzlica.1
+    title = gotzlica.1.t
+    desc = gotzlica.1.desc
+    picture = DIPLOMACY_eventPicture
+	fire_only_once = yes
+
+    mean_time_to_happen = {
+		months = 60
+	}
+
+    trigger = {
+        tag = LER
+        NOT = {
+            has_global_flag = leronya_gone
+        }
+        exists = EHZ
+        EHZ = {
+            NOT = {
+                is_subject_of = LER
+            }
+        }
+        #if = {
+        #    limit = {
+        #        ai = yes
+        #    }
+        is_year = 213
+        #}
+        #else = {
+        #    is_year = 213
+        #}
+    }
+
+    immediate = {
+    }
+
+    option = {
+        name = gotzlica.1.a
+        ai_chance = { factor = 8 }
+        EHZ = {
+            country_event = { 
+                id = gotzlica.2
+                days = 7
+            }
+        }
+        add_historical_rival = ZUB
+        ZUB = {
+            add_historical_rival = LER
+        }
+    }
+    option = {
+        name = gotzlica.1.b
+        ai_chance = { factor = 2 }
+        every_country = {
+            limit = {
+                capital_scope = {
+                    OR = {
+                        region_for_scope_province = {
+                            region = gotzlic_region
+                        }
+                        region_for_scope_province = {
+                            region = east_gotzlic_region
+                        }
+                        region_for_scope_province = {
+                            region = south_gotzlic_region
+                        }
+                    }
+                }
+            }
+            add_opinion = {
+                who = LER
+                modifier = good_chungus_leronya
+            }
+        }
+    }
+}
+
+#EHZ response
+country_event = {
+    id = gotzlica.2
+    title = gotzlica.2.t
+    desc = gotzlica.2.desc
+    picture = COURT_eventPicture
+	fire_only_once = yes
+    is_triggered_only = yes
+
+    option = {
+        name = gotzlica.2.a
+        ai_chance = {
+            factor = 2
+            modifier = {
+				factor = 4
+				army_strength = {
+                	who = LER
+                	value = 0.8
+                }
+			}
+            modifier = {
+				factor = 8
+				army_strength = {
+                	who = LER
+                	value = 1
+                }
+			}
+        }
+        LER = {
+            country_event = { 
+                id = gotzlica.3
+                days = 7
+            }
+        }
+    }
+    option = {
+        name = gotzlica.2.b
+        ai_chance = {
+            factor = 8
+            modifier = {
+				factor = 16
+				army_strength = {
+                	who = LER
+                	value = 0.5
+                }
+			}
+            modifier = {
+				factor = 1000
+				NOT = {
+                    army_strength = {
+                    	who = LER
+                    	value = 0.5
+                    }
+                }
+			}
+        }
+        LER = {
+            country_event = { 
+                id = gotzlica.4
+                days = 7
+            }
+        }
+    }
+}
+
+#LER declares war or backs off
+country_event = {
+    id = gotzlica.3
+    title = gotzlica.3.t
+    desc = gotzlica.3.desc
+    picture = BAD_WITH_MONARCH_eventPicture
+	fire_only_once = yes
+    is_triggered_only = yes
+
+    immediate = {
+    }
+
+    option = {
+        name = gotzlica.3.a
+        ai_chance = { factor = 1 }
+        add_prestige = -10
+        add_legitimacy = -10
+    }
+    option = {
+        name = gotzlica.3.b
+        ai_chance = { factor = 9 }
+        EHZ = {
+            every_owned_province = {
+                add_claim = LER
+            }
+        }
+        declare_war_with_cb = {
+            who = EHZ
+            casus_belli = cb_vassalize_mission
+        }
+        if = {
+            limit = {
+                6636 = {
+                    is_empty = yes
+                }
+            }
+            6636 = {
+                create_colony = 1000
+			    cede_province = LER
+			    add_core = LER
+                random_list = {
+                    33 = {
+                        add_base_tax = 1
+                    }
+                    33 = {
+                        add_base_production = 1
+                    }
+                    33 = {
+                        add_base_manpower = 1
+                    }
+                }
+            }
+        }
+    }
+}
+
+#LER EHZ accepted subjugate
+country_event = {
+    id = gotzlica.4
+    title = gotzlica.4.t
+    desc = gotzlica.4.desc
+    picture = GOOD_WITH_MONARCH_eventPicture
+	fire_only_once = yes
+    is_triggered_only = yes
+
+    immediate = {
+    }
+
+    option = {
+        name = gotzlica.4.a
+        ai_chance = { factor = 1 }
+        LER = {
+            vassalize = EHZ
+        }
+        if = {
+            limit = {
+                6636 = {
+                    is_empty = yes
+                }
+            }
+            6636 = {
+                create_colony = 1000
+			    cede_province = LER
+			    add_core = LER
+                random_list = {
+                    33 = {
+                        add_base_tax = 1
+                    }
+                    33 = {
+                        add_base_production = 1
+                    }
+                    33 = {
+                        add_base_manpower = 1
+                    }
+                }
+            }
+        }
+        add_prestige = 10
+    }
+}
+
+#Zubara demands hozy freedom
+country_event = {
+    id = gotzlica.5
+    title = gotzlica.5.t
+    desc = gotzlica.5.desc
+    picture = LAND_MILITARY_eventPicture
+	fire_only_once = yes
+
+    mean_time_to_happen = {
+		months = 30
+	}
+
+    trigger = {
+        tag = ZUB
+        NOT = {
+            has_global_flag = leronya_gone
+        }
+        EHZ = {
+            is_subject_of = LER
+        }
+        #if = {
+        #    limit = {
+        #        LER = {
+        #            ai = yes
+        #        }
+        #    }
+        is_year = 225
+        #}
+        #else = {
+        #    is_year = 225
+        #}
+        LER = {
+            OR = {
+                owns_or_subject_of = 6547
+                owns_or_subject_of = 6546
+            }
+        }
+    }
+
+    immediate = {
+    }
+
+    option = {
+        name = gotzlica.5.a
+        ai_chance = { factor = 1 }
+        LER = {
+            country_event = { 
+                id = gotzlica.7
+                days = 7
+            }
+        }
+    }
+
+    option = {
+        name = gotzlica.5.b
+        ai_chance = { factor = 0 }
+        add_prestige = -10
+    }
+
+}
+
+#optimizing event
+country_event = {
+    id = gotzlica.6
+    title = gotzlica.6.t
+    desc = gotzlica.6.desc
+    picture = BATTLE_eventPicture
+	fire_only_once = yes
+    hidden = yes
+
+    mean_time_to_happen = {
+		days = 1
+	}
+
+    trigger = {
+        religion = gotzli
+        NOT = {
+            exists = LER
+        }
+        is_year = 215
+    }
+
+    immediate = {
+        set_global_flag = leronya_gone
+    }
+
+    option = {
+        name = gotzlica.6.a
+        ai_chance = { factor = 1 }
+    }
+}
+
+#Leronya answers
+country_event = {
+    id = gotzlica.7
+    title = gotzlica.7.t
+    desc = gotzlica.7.desc
+    picture = ACCUSATION_eventPicture
+	fire_only_once = yes
+    is_triggered_only = yes
+
+    immediate = {
+    }
+
+    option = {
+        name = gotzlica.7.a
+        ai_chance = {
+            factor = 8
+            modifier = {
+				factor = 4
+				army_strength = {
+                	who = ZUB
+                	value = 0.8
+                }
+			}
+            modifier = {
+				factor = 8
+				army_strength = {
+                	who = LER
+                	value = 0.5
+                }
+			}
+        }
+        ZUB = {
+            country_event = { 
+                id = gotzlica.8
+                days = 7
+            }
+        }
+    }
+    option = {
+        name = gotzlica.7.b
+        ai_chance = {
+            factor = 2
+            modifier = {
+				factor = 1
+				army_strength = {
+                	who = ZUB
+                	value = 1
+                }
+			}
+            modifier = {
+				factor = 0
+				army_strength = {
+                	who = LER
+                	value = 1.5
+                }
+			}
+        }
+        ZUB = {
+            country_event = { 
+                id = gotzlica.9
+                days = 7
+            }
+        }
+    }
+}
+
+#Leronya denies
+country_event = {
+    id = gotzlica.8
+    title = gotzlica.8.t
+    desc = gotzlica.8.desc
+    picture = WAR_OF_THE_ROSES_eventPicture
+	fire_only_once = yes
+    is_triggered_only = yes
+
+    immediate = {
+    }
+
+    option = { #pussy
+        name = gotzlica.8.a
+        ai_chance = { factor = 1 }
+        add_legitimacy = -10
+        if = {
+            limit = {
+                exists = NEN
+            }
+            NEN = {
+                add_trust = {
+                    who = ZUB
+                    value = -20
+                }
+            }
+        }
+        if = {
+            limit = {
+                exists = RST
+            }
+            RST = {
+                add_trust = {
+                    who = ZUB
+                    value = -20
+                }
+            }
+        }
+        if = {
+            limit = {
+                exists = WHZ
+            }
+            WHZ = {
+                add_trust = {
+                    who = ZUB
+                    value = -20
+                }
+            }
+        }
+        if = {
+            limit = {
+                exists = TOI
+            }
+            TOI = {
+                add_trust = {
+                    who = ZUB
+                    value = -20
+                }
+            }
+        }
+        add_trust = {
+            who = LER
+            value = -50
+            mutual = yes
+        }
+    }
+
+    option = { #war time
+        name = gotzlica.8.b
+        ai_chance = { factor = 9 }
+        6546 = {
+            add_core = WHZ
+        }
+        6547 = {
+            add_claim = ZUB
+        }
+        dethoni_area = {
+            add_claim = NEN
+        }
+        form_coalition_against = LER
+        WHZ = {
+            if = {
+                limit = {
+                    NOT = {
+                        alliance_with = LER
+                    }
+                }
+                form_coalition_against = LER
+            }
+        }
+        NEN = {
+            if = {
+                limit = {
+                    NOT = {
+                        alliance_with = LER
+                    }
+                }
+                form_coalition_against = LER
+            }
+        }
+        declare_war_with_cb = {
+            who = LER
+            casus_belli = cb_super_badboy
+        }
+        if = {
+            limit = {
+                6634 = {
+                    is_empty = yes
+                }
+            }
+            6634 = {
+                create_colony = 1000
+			    cede_province = ZUB
+			    add_core = ZUB
+                random_list = {
+                    33 = {
+                        add_base_tax = 1
+                    }
+                    33 = {
+                        add_base_production = 1
+                    }
+                    33 = {
+                        add_base_manpower = 1
+                    }
+                }
+            }
+        }
+        if = {
+            limit = {
+                6645 = {
+                    is_empty = yes
+                }
+            }
+            6645 = {
+                create_colony = 1000
+			    cede_province = ZUB
+			    add_core = ZUB
+                random_list = {
+                    33 = {
+                        add_base_tax = 1
+                    }
+                    33 = {
+                        add_base_production = 1
+                    }
+                    33 = {
+                        add_base_manpower = 1
+                    }
+                }
+            }
+        }
+        set_country_flag = zubara_war
+    }
+}
+
+#Leronya accepts
+country_event = {
+    id = gotzlica.9
+    title = gotzlica.9.t
+    desc = gotzlica.9.desc
+    picture = GOOD_WITH_MONARCH_eventPicture
+	fire_only_once = yes
+    is_triggered_only = yes
+
+    immediate = {
+    }
+
+    option = {
+        name = gotzlica.9.a
+        ai_chance = { factor = 8 }
+        add_prestige = 10
+        add_legitimacy = 10
+        LER = {
+            release = EHZ
+        }
+        EHZ = {
+            grant_independence = yes
+        }
+        create_guarantee = EHZ
+        EHZ = {
+            change_religion = gotzli
+        }
+        if = {
+            limit = {
+                6634 = {
+                    is_empty = yes
+                }
+            }
+            6634 = {
+                create_colony = 1000
+			    cede_province = ZUB
+			    add_core = ZUB
+                random_list = {
+                    33 = {
+                        add_base_tax = 1
+                    }
+                    33 = {
+                        add_base_production = 1
+                    }
+                    33 = {
+                        add_base_manpower = 1
+                    }
+                }
+            }
+        }
+        if = {
+            limit = {
+                6645 = {
+                    is_empty = yes
+                }
+            }
+            6645 = {
+                create_colony = 1000
+			    cede_province = ZUB
+			    add_core = ZUB
+                random_list = {
+                    33 = {
+                        add_base_tax = 1
+                    }
+                    33 = {
+                        add_base_production = 1
+                    }
+                    33 = {
+                        add_base_manpower = 1
+                    }
+                }
+            }
+        }
+    }
+}
+
+#Rastan expansion
+country_event = {
+    id = gotzlica.10
+    title = gotzlica.10.t
+    desc = gotzlica.10.desc
+    picture = TRADEGOODS_eventPicture
+	fire_only_once = yes
+
+    trigger = {
+        OR = {
+            has_country_flag = rostaCanGetEvent
+            AND = {
+                owns = 6597
+                owns = 6587
+            }
+            AND = {
+                owns = 6597
+                is_year = 300
+                NOT = {
+                    OR = {
+                        owns = 6596
+                        owns = 6589
+                        owns = 6579
+                        owns = 6588
+                    }
+                }
+            }
+        }
+        rosta_area = {
+            is_empty = yes
+        }
+    }
+
+    immediate = {
+        set_country_flag = rostaGotEvent
+    }
+
+    mean_time_to_happen = {
+        months = 24
+    }
+
+    option = {
+        name = gotzlica.10.a
+        ai_chance = { factor = 1 }
+        rosta_area = {
+			limit = { 
+				is_empty = yes
+			}
+			create_colony = 1000
+			cede_province = ROOT
+			add_core = ROOT
+		}
+        hidden_effect = {
+            country_event = {
+                id = gotzlica.11
+            }
+        }
+        if = {
+            limit = {
+                tag = RST
+            }
+            hidden_effect = {
+                nizoora_area = {
+                    add_permanent_claim = ROOT
+                }
+            }
+        }
+    }
+}
+
+#rosta dev event
+country_event = {
+    id = gotzlica.11
+    title = gotzlica.11.t
+    desc = gotzlica.11.desc
+    picture = BATTLE_eventPicture
+	is_triggered_only = yes
+    hidden = yes
+
+    immediate = {
+        6596 = {
+            random_list = {
+                15 = {
+                    add_base_tax = 1
+                }
+                15 = {
+                    add_base_production = 1
+                }
+                15 = {
+                    add_base_manpower = 1
+                }
+                10 = {
+                    add_base_tax = 1
+                    add_base_production = 1
+                }
+                10 = {
+                    add_base_production = 1
+                    add_base_manpower = 1
+                }
+                10 = {
+                    add_base_manpower = 1
+                    add_base_tax = 1
+                }
+                5 = {
+                    add_base_tax = 2
+                }
+                5 = {
+                    add_base_production = 2
+                }
+                5 = {
+                    add_base_manpower = 2
+                }
+                10 = {
+                    
+                }
+            }
+        }
+        RST = {
+            country_event = {
+                id = gotzlica.12
+            }
+        }
+    }
+
+    option = {
+        name = gotzlica.11.a
+        ai_chance = { factor = 1 }
+    }
+}
+
+#rosta dev event 2
+country_event = {
+    id = gotzlica.12
+    title = gotzlica.12.t
+    desc = gotzlica.12.desc
+    picture = BATTLE_eventPicture
+	is_triggered_only = yes
+    hidden = yes
+
+    immediate = {
+        6579 = {
+            random_list = {
+                15 = {
+                    add_base_tax = 1
+                }
+                15 = {
+                    add_base_production = 1
+                }
+                15 = {
+                    add_base_manpower = 1
+                }
+                10 = {
+                    add_base_tax = 1
+                    add_base_production = 1
+                }
+                10 = {
+                    add_base_production = 1
+                    add_base_manpower = 1
+                }
+                10 = {
+                    add_base_manpower = 1
+                    add_base_tax = 1
+                }
+                5 = {
+                    add_base_tax = 2
+                }
+                5 = {
+                    add_base_production = 2
+                }
+                5 = {
+                    add_base_manpower = 2
+                }
+                10 = {
+                    
+                }
+            }
+        }
+        RST = {
+            country_event = {
+                id = gotzlica.13
+            }
+        }
+    }
+
+    option = {
+        name = gotzlica.12.a
+        ai_chance = { factor = 1 }
+    }
+}
+
+#rosta dev event 3
+country_event = {
+    id = gotzlica.13
+    title = gotzlica.13.t
+    desc = gotzlica.13.desc
+    picture = BATTLE_eventPicture
+	is_triggered_only = yes
+    hidden = yes
+
+    immediate = {
+        6588 = {
+            random_list = {
+                15 = {
+                    add_base_tax = 1
+                }
+                15 = {
+                    add_base_production = 1
+                }
+                15 = {
+                    add_base_manpower = 1
+                }
+                10 = {
+                    add_base_tax = 1
+                    add_base_production = 1
+                }
+                10 = {
+                    add_base_production = 1
+                    add_base_manpower = 1
+                }
+                10 = {
+                    add_base_manpower = 1
+                    add_base_tax = 1
+                }
+                5 = {
+                    add_base_tax = 2
+                }
+                5 = {
+                    add_base_production = 2
+                }
+                5 = {
+                    add_base_manpower = 2
+                }
+                10 = {
+                    
+                }
+            }
+        }
+        RST = {
+            country_event = {
+                id = gotzlica.14
+            }
+        }
+    }
+
+    option = {
+        name = gotzlica.13.a
+        ai_chance = { factor = 1 }
+    }
+}
+
+#rosta dev event 4
+country_event = {
+    id = gotzlica.14
+    title = gotzlica.14.t
+    desc = gotzlica.14.desc
+    picture = BATTLE_eventPicture
+	is_triggered_only = yes
+    hidden = yes
+
+    immediate = {
+        6589 = {
+            random_list = {
+                15 = {
+                    add_base_tax = 1
+                }
+                15 = {
+                    add_base_production = 1
+                }
+                15 = {
+                    add_base_manpower = 1
+                }
+                10 = {
+                    add_base_tax = 1
+                    add_base_production = 1
+                }
+                10 = {
+                    add_base_production = 1
+                    add_base_manpower = 1
+                }
+                10 = {
+                    add_base_manpower = 1
+                    add_base_tax = 1
+                }
+                5 = {
+                    add_base_tax = 2
+                }
+                5 = {
+                    add_base_production = 2
+                }
+                5 = {
+                    add_base_manpower = 2
+                }
+                10 = {
+                    
+                }
+            }
+        }
+    }
+
+    option = {
+        name = gotzlica.14.a
+        ai_chance = { factor = 1 }
+    }
+}
+
+#Rasta owns nizoora
+country_event = {
+    id = gotzlica.15
+    title = gotzlica.15.t
+    desc = gotzlica.15.desc
+    picture = TRADEGOODS_eventPicture
+	fire_only_once = yes
+
+    trigger = {
+        tag = RST
+        nizoora_area = {
+            type = all
+            country_or_non_sovereign_subject_holds = ROOT
+        }
+        6580 = {
+            is_empty = yes
+        }
+        6592 = {
+            is_empty = yes
+        }
+        is_year = 280
+    }
+
+    mean_time_to_happen = {
+        months = 1
+    }
+
+    option = {
+        name = gotzlica.15.a
+        ai_chance = { factor = 1 }
+        if = {
+            limit = {
+                6580 = {
+                    is_empty = yes
+                }
+            }
+            6580 = {
+                create_colony = 1000
+			    cede_province = RST
+			    add_core = RST
+            }
+        }
+        if = {
+            limit = {
+                6592 = {
+                    is_empty = yes
+                }
+            }
+            6592 = {
+                create_colony = 1000
+			    cede_province = RST
+			    add_core = RST
+            }
+        }
+    }
+}
+
+#Hozyan expansion
+country_event = {
+    id = gotzlica.16
+    title = gotzlica.16.t
+    desc = gotzlica.16.desc
+    picture = TRADEGOODS_eventPicture
+	fire_only_once = yes
+
+    trigger = {
+        owns = 6546
+        owns = 6549
+        is_year = 300
+    }
+
+    mean_time_to_happen = {
+        months = 30
+    }
+
+    option = {
+        name = gotzlica.16.a
+        ai_chance = { factor = 1 }
+        if = {
+            limit = {
+                6538 = {
+                    is_empty = yes
+                }
+            }
+            6538 = {
+                create_colony = 1000
+			    cede_province = ROOT
+			    add_core = ROOT
+            }
+        }
+        if = {
+            limit = {
+                6541 = {
+                    is_empty = yes
+                }
+            }
+            6541 = {
+                create_colony = 1000
+			    cede_province = ROOT
+			    add_core = ROOT
+            }
+        }
+        #if = {
+        #    limit = {
+        #        OR = {
+        #            tag = EHZ
+        #            tag = WHZ
+        #            tag = HZY
+        #        }
+        #    }
+        #    override_country_name = Hozi
+        #}
+        remove_historical_friend = ZUB
+        ZUB = {
+            remove_historical_friend = WHZ
+        }
+        WHZ = {
+            remove_historical_friend = ZUB
+        }
+    }
+}
+
+#East big expansion
+country_event = {
+    id = gotzlica.17
+    title = gotzlica.17.t
+    desc = gotzlica.17.desc
+    picture = TRADEGOODS_eventPicture
+	fire_only_once = yes
+    is_triggered_only = yes
+
+    option = {
+        name = gotzlica.17.a
+        ai_chance = { factor = 1 }
+        if = {
+            limit = {
+                6590 = {
+                    is_empty = yes
+                }
+            }
+            6590 = {
+                create_colony = 1000
+			    cede_province = ROOT
+			    add_core = ROOT
+            }
+        }
+        if = {
+            limit = {
+                6591 = {
+                    is_empty = yes
+                }
+            }
+            6591 = {
+                create_colony = 1000
+			    cede_province = ROOT
+			    add_core = ROOT
+            }
+        }
+        if = {
+            limit = {
+                6592 = {
+                    is_empty = yes
+                }
+            }
+            6592 = {
+                create_colony = 1000
+			    cede_province = ROOT
+			    add_core = ROOT
+            }
+        }
+        if = {
+            limit = {
+                6593 = {
+                    is_empty = yes
+                }
+            }
+            6593 = {
+                create_colony = 1000
+			    cede_province = ROOT
+			    add_core = ROOT
+            }
+        }
+        if = {
+            limit = {
+                6635 = {
+                    is_empty = yes
+                }
+            }
+            6635 = {
+                create_colony = 1000
+			    cede_province = ROOT
+			    add_core = ROOT
+            }
+        }
+        if = {
+            limit = {
+                6636 = {
+                    is_empty = yes
+                }
+            }
+            6636 = {
+                create_colony = 1000
+			    cede_province = ROOT
+			    add_core = ROOT
+            }
+        }
+        if = {
+            limit = {
+                6637 = {
+                    is_empty = yes
+                }
+            }
+            6637 = {
+                create_colony = 1000
+			    cede_province = ROOT
+			    add_core = ROOT
+            }
+        }
+        if = {
+            limit = {
+                6638 = {
+                    is_empty = yes
+                }
+            }
+            6638 = {
+                create_colony = 1000
+			    cede_province = ROOT
+			    add_core = ROOT
+            }
+        }
+    }
+}
+
+#Nenki migrates to the lakes
+country_event = {
+    id = gotzlica.18
+    title = gotzlica.18.t
+    desc = gotzlica.18.desc
+    picture = FARMING_eventPicture
+	fire_only_once = yes
+
+    mean_time_to_happen = {
+		months = 30
+        modifier = {
+	    	factor = 0.1
+	    	ZUB = {
+                offensive_war_with = LER
+            }
+	    }
+	}
+
+    trigger = {
+        tag = NEN
+        OR = {
+            is_year = 270
+            ZUB = {
+                offensive_war_with = LER
+            }
+        }
+    }
+
+    immediate = {
+    }
+
+    option = {
+        name = gotzlica.18.a
+        ai_chance = { factor = 1 }
+        dethoni_area = {
+            add_permanent_claim = NEN
+        }
+        6584 = {
+            owner = {
+                country_event = {
+                    id = gotzlica.19
+                    days = 7
+                }
+            }
+        }
+    }
+    option = { #skm is a pussy
+        name = gotzlica.18.b
+        ai_chance = { factor = 0 }
+    }
+}
+
+#response to nenki demands
+country_event = {
+    id = gotzlica.19
+    title = gotzlica.19.t
+    desc = gotzlica.19.desc
+    picture = BORDER_TENSION_eventPicture
+	fire_only_once = yes
+    is_triggered_only = yes
+    major = yes
+
+    immediate = {
+    }
+
+    option = {
+        name = gotzlica.19.a #give nenki their place by the lake
+        ai_chance = {
+            factor = 1
+            modifier = {
+                factor = 0
+                capital_scope = {
+                    area = dethoni_area
+                }
+            }
+        }
+        dethoni_area = {
+            limit = {
+                owned_by = ROOT
+            }
+            cede_province = NEN
+            add_core = NEN
+        }
+        if = {
+            limit = {
+                6636 = {
+                    is_empty = yes
+                }
+            }
+            6636 = {
+                cede_province = NEN
+                add_core = NEN
+            }
+        }
+        6643 = {
+            cede_province = ---
+            remove_core = NEN
+        }
+        6569 = {
+            change_culture = Nenki
+            random_list = {
+                6 = {
+                    add_base_tax = 1
+                    add_base_production = 1
+                }
+                6 = {
+                    add_base_production = 1
+                    add_base_manpower = 1
+                }
+                6 = {
+                    add_base_manpower = 1
+                    add_base_tax = 1
+                }
+                6 = {
+                    add_base_tax = 2
+                }
+                6 = {
+                    add_base_production = 2
+                }
+                6 = {
+                    add_base_manpower = 2
+                }
+                6 = {
+                    add_base_tax = 2
+                    add_base_production = 1
+                }
+                6 = {
+                    add_base_tax = 1
+                    add_base_production = 2
+                }
+                6 = {
+                    add_base_production = 2
+                    add_base_manpower = 1
+                }
+                6 = {
+                    add_base_production = 1
+                    add_base_manpower = 2
+                }
+                6 = {
+                    add_base_manpower = 2
+                    add_base_tax = 1
+                }
+                6 = {
+                    add_base_manpower = 1
+                    add_base_tax = 2
+                }
+                6 = {
+                    add_base_tax = 3
+                }
+                6 = {
+                    add_base_production = 3
+                }
+                6 = {
+                    add_base_manpower = 3
+                }
+                6 = {
+                    add_base_tax = 1
+                    add_base_production = 1
+                    add_base_tax = 1
+                }
+            }
+        }
+        NEN = {
+            set_capital = 6569
+            set_country_flag = nenki_trolled_dethoni
+        }
+    }
+    option = {
+        name = gotzlica.19.b #refuse and go to war
+        ai_chance = {
+            factor = 2
+        }
+        NEN = {
+            declare_war_with_cb = {
+                who = ROOT
+                casus_belli = cb_conquest
+                war_goal_province = 6584
+            }
+        }
+    }
+}
+
+#nenki wins war
+country_event = {
+    id = gotzlica.20
+    title = gotzlica.20.t
+    desc = gotzlica.20.desc
+    picture = MILITARY_CAMP_eventPicture
+	fire_only_once = yes
+
+    trigger = {
+        tag = NEN
+        NOT = {
+            has_country_flag = nenki_trolled_dethoni
+        }
+        OR = {
+            NEN = {
+                controls = 6569
+                controls = 6584
+                controls = 6585
+            }
+            ZUB = {
+                has_won_war_against = {
+                	who = LER
+                	max_years_since = 1
+                }
+            }
+        }
+    }
+
+    mean_time_to_happen = {
+        days = 1
+    }
+
+    immediate = {
+        every_known_country	 = {
+            limit = {
+                OR = {
+                    offensive_war_with = NEN
+                    defensive_war_with = NEN
+                }
+            }
+            white_peace = NEN
+        }
+    }
+
+    option = {
+        name = gotzlica.20.a #let us migrate
+        ai_chance = { factor = 1 }
+        every_province = {
+            limit = {
+                area = dethoni_area
+            }
+            cede_province = NEN
+            add_core = NEN
+        }
+        6569 = {
+            change_culture = Nenki
+            random_list = {
+                6 = {
+                    add_base_tax = 1
+                    add_base_production = 1
+                }
+                6 = {
+                    add_base_production = 1
+                    add_base_manpower = 1
+                }
+                6 = {
+                    add_base_manpower = 1
+                    add_base_tax = 1
+                }
+                6 = {
+                    add_base_tax = 2
+                }
+                6 = {
+                    add_base_production = 2
+                }
+                6 = {
+                    add_base_manpower = 2
+                }
+                6 = {
+                    add_base_tax = 2
+                    add_base_production = 1
+                }
+                6 = {
+                    add_base_tax = 1
+                    add_base_production = 2
+                }
+                6 = {
+                    add_base_production = 2
+                    add_base_manpower = 1
+                }
+                6 = {
+                    add_base_production = 1
+                    add_base_manpower = 2
+                }
+                6 = {
+                    add_base_manpower = 2
+                    add_base_tax = 1
+                }
+                6 = {
+                    add_base_manpower = 1
+                    add_base_tax = 2
+                }
+                6 = {
+                    add_base_tax = 3
+                }
+                6 = {
+                    add_base_production = 3
+                }
+                6 = {
+                    add_base_manpower = 3
+                }
+            }
+        }
+        set_capital = 6569
+        6643 = {
+            cede_province = ---
+            remove_core = NEN
+        }
+    }
+}
+
+#West big expansion
+country_event = {
+    id = gotzlica.21
+    title = gotzlica.21.t
+    desc = gotzlica.21.desc
+    picture = TRADEGOODS_eventPicture
+	fire_only_once = yes
+    is_triggered_only = yes
+
+    option = {
+        name = gotzlica.21.a
+        ai_chance = { factor = 1 }
+        if = {
+            limit = {
+                6566 = {
+                    is_empty = yes
+                }
+            }
+            6566 = {
+                create_colony = 1000
+			    cede_province = ROOT
+			    add_core = ROOT
+            }
+        }
+        if = {
+            limit = {
+                6568 = {
+                    is_empty = yes
+                }
+            }
+            6568 = {
+                create_colony = 1000
+			    cede_province = ROOT
+			    add_core = ROOT
+            }
+        }
+        if = {
+            limit = {
+                6633 = {
+                    is_empty = yes
+                }
+            }
+            6633 = {
+                create_colony = 1000
+			    cede_province = ROOT
+			    add_core = ROOT
+            }
+        }
+        if = {
+            limit = {
+                6634 = {
+                    is_empty = yes
+                }
+            }
+            6634 = {
+                create_colony = 1000
+			    cede_province = ROOT
+			    add_core = ROOT
+            }
+        }
+        if = {
+            limit = {
+                6646 = {
+                    is_empty = yes
+                }
+            }
+            6646 = {
+                create_colony = 1000
+			    cede_province = ROOT
+			    add_core = ROOT
+                change_culture = Zubaran
+                change_religion = gotzli
+            }
+        }
+        if = {
+            limit = {
+                6538 = {
+                    is_empty = yes
+                }
+            }
+            6538 = {
+                create_colony = 1000
+			    cede_province = ROOT
+			    add_core = ROOT
+            }
+        }
+        if = {
+            limit = {
+                6541 = {
+                    is_empty = yes
+                }
+            }
+            6541 = {
+                create_colony = 1000
+			    cede_province = ROOT
+			    add_core = ROOT
+            }
+        }
+    }
+}
+
+#nenki loses war
+country_event = {
+    id = gotzlica.22
+    title = gotzlica.22.t
+    desc = gotzlica.22.desc
+    picture = SIEGE_eventPicture
+	fire_only_once = yes
+    major = yes
+
+    trigger = {
+        controls = 6643
+        NOT = {
+            owns = 6643
+        }
+        NEN = {
+            owns = 6643
+        }
+        NOT = {
+            tag = NEN
+        }
+    }
+
+    mean_time_to_happen = {
+        days = 1
+    }
+
+    option = {
+        name = gotzlica.22.a #the destruction of nenki
+        ai_chance = { factor = 1 }
+        6643 = {
+            cede_province = ---
+            remove_core = NEN
+            set_base_tax = 1
+            set_base_production = 1
+            set_base_manpower = 1
+        }
+        capital_scope = {
+            add_base_tax = 1
+            add_base_production = 1
+            add_base_manpower = 1
+        }
+        add_treasury = 150
+        add_prestige = 10
+    }
+}

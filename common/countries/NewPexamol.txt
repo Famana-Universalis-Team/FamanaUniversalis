@@ -33,12 +33,20 @@ historical_units = {
 }
 
 monarch_names = {
-	"Eyath #0" = 1
-	"Majestaz #0" = -1
+	"Eyath #0" = 3
+	"Majestaz #0" = 1
+	"Mayestaz #0" = 1
+	"Ranyaf #0" = 1
+	"Adaro #0" = -1
+	"Conlori #0" = -1
+	"Riani #0" = -1
 }
 
 leader_names = {
 	Eyath
+	Mayestaz
+	Majestaz
+	Ranyaf
 }
 
 ship_names = {

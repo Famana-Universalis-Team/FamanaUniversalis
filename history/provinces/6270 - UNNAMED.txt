@@ -1,7 +1,8 @@
-discovered_by = gotzlic_tech_gr
-discovered_by = north_gomic_tech_gr
+discovered_by = estali_tech_gr
+discovered_by = lathvy_tech_gr
 add_core = KLY
 owner = KLY
+is_city = yes
 controller = KLY
 culture = Kolyan
 religion = lathvy
@@ -11,14 +12,14 @@ base_production = 4
 trade_goods = silk
 base_manpower = 2
 capital = "Kolya"
-is_city = yes
+ 
 discovered_by = naravami_tech_gr
 add_permanent_province_modifier = {
 	name = river_estuary_modifier
 	duration = -1
 }
 center_of_trade = 2
-
+extra_cost = 10
 
 
 

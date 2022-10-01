@@ -2,6 +2,7 @@
 #UNNAMED
 add_core = FAS
 owner = FAS
+is_city = yes
 controller = FAS
 culture = Tyman
 religion = tonmo
@@ -11,7 +12,7 @@ base_production = 1
 trade_goods = fur
 base_manpower = 1
 capital = "Udirmur"
-is_city = yes
+ 
 
 discovered_by = north_antebari_tech_gr
 

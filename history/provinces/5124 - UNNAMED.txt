@@ -1,5 +1,5 @@
 discovered_by = east_gomic_tech_gr
-discovered_by = north_gomic_tech_gr
+discovered_by = lathvy_tech_gr
 discovered_by = west_gomic_tech_gr
 #Written with Eu4 Easy Province Creator by emiroercn
 #UNNAMED
@@ -13,9 +13,10 @@ base_production = 6
 trade_goods = wine
 base_manpower = 4
 capital = "Nusa"
-is_city = yes
-extra_cost = 1
+ 
+
 
 owner = NUS
+is_city = yes
 controller = NUS
 add_core = NUS

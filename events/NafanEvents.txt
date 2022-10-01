@@ -21,3 +21,2125 @@ country_event = {
         custom_tooltip = nafa_jzoet_tt
     }
 }
+
+country_event = {
+    id = nafa.2
+    title = nafa.2.t
+    desc = nafa.2.d
+    picture = COURT_eventPicture
+
+    trigger = {
+        tag = NAF
+        NOT = {
+            has_heir = yes
+        }
+        NOT = {
+            has_country_flag = nafaWaitingForHeir
+        }
+        has_reform = nafan_gov
+    }
+
+    immediate = {
+        set_country_flag = nafaWaitingForHeir
+    }
+
+    mean_time_to_happen = {
+        months = 6
+    }
+
+    option = {
+        name = nafa.2.a
+        ai_chance = { factor = 1 }
+        define_heir	= {
+            name = "Syadon"
+            dynasty = "Noy"
+            claim = 100
+            male = yes
+            culture = ROOT
+            religion = ROOT
+        }
+        hidden_effect = {
+            clr_country_flag = nafaWaitingForHeir
+        }
+    }
+}
+
+country_event = {
+    id = nafa.3
+    title = nafa.3.t
+    desc = nafa.3.d
+    picture = CITY_VIEW_eventPicture
+    is_triggered_only = yes
+
+    option = {
+        name = nafa.3.a
+        ai_chance = { factor = 1 }
+        add_ruler_modifier = {
+            name = syadons_conquests
+            duration = -1
+        }
+        add_yearly_manpower = 1.5
+    }
+}
+
+country_event = {
+    id = nafa.4
+    title = nafa.4.t
+    desc = nafa.4.d
+    picture = MILITARY_CAMP_eventPicture
+    is_triggered_only = yes
+    major = yes
+
+    option = { #Accept
+        name = nafa.4.a
+        ai_chance = {
+            factor = 4
+            modifier = {
+                factor = 10
+                tag = JFX
+                has_disaster = tonxara_disaster
+            }
+            modifier = {
+                factor = 4
+                tag = JFX
+                has_disaster_progress = {
+                    disaster = tonxara_disaster
+                    value = 50
+                }
+            }
+            modifier = {
+                factor = 2
+                NOT = {
+                    border_distance = {
+                        who = NAF
+                        distance = 50
+                    }
+                }
+            }
+            modifier = {
+                factor = 2
+                religion_group = lathvy_group
+            }
+            modifier = {
+                factor = 4
+                religious_school = {
+                    group = lathvy_group
+                    school = nafan_school
+                }
+            }
+            modifier = {
+                factor = 2.5
+                NOT = {
+                    total_development = 50
+                }
+            }
+            modifier = {
+                factor = 2
+                NOT = {
+                    army_strength = {
+                    	who = NAF
+                    	value = 0.1
+                    }
+                }
+            }
+            modifier = {
+                factor = 1000
+                is_subject_of = NAF
+                NOT = {
+                    liberty_desire = 50
+                }
+            }
+        }
+        NAF = {
+            inherit = ROOT
+        }
+    }
+
+    option = { #Decline
+        name = nafa.4.b
+        ai_chance = {
+            factor = 1
+            modifier = {
+                factor = 1000
+                OR = {
+                    tag = GAX
+                    tag = PXS
+                    AND = {
+                        tag = JFX
+                        NOT = {
+                            OR = {
+                                has_disaster_progress = {
+                                    disaster = tonxara_disaster
+                                    value = 50
+                                }
+                                has_disaster = tonxara_disaster
+                            }
+                        }
+                    }
+                }
+            }
+            modifier = {
+                factor = 2
+                OR = {
+                    tag = MOR
+                    tag = DEL
+                    tag = MSH
+                    tag = VNA
+                }
+            }
+            modifier = {
+                factor = 2.5
+                total_development = 250
+                NOT = {
+                    tag = JFX
+                }
+            }
+            modifier = {
+                factor = 10
+                total_development = 500
+                NOT = {
+                    tag = JFX
+                }
+            }
+            modifier = {
+                factor = 1000
+                government_rank = 3
+            }
+            modifier = {
+                factor = 2
+                government_rank = 2
+            }
+            modifier = {
+                factor = 10
+                OR = {
+                    is_rival = NAF
+                    is_enemy = NAF
+                }
+            }
+            modifier = {
+                factor = 5
+                num_of_owned_provinces_with = {
+                    value = 10
+                    NOT = {
+                        OR = {
+                            region = south_xalia_region
+                            region = west_xalia_region
+                            region = east_xalia_region
+                            region = north_xalia_region
+                        }
+                    }
+                }
+            }
+        }
+        custom_tooltip = NafaGetCoresOnOurLand
+        hidden_effect = {
+            every_owned_province = {
+                limit = {
+                    OR = {
+                        region = south_xalia_region
+                        region = west_xalia_region
+                        region = east_xalia_region
+                        region = north_xalia_region
+                    }
+                }
+                remove_claim = NAF
+                add_core = NAF
+            }
+        }
+        add_country_modifier = {
+            name = naf_desperate_struggle
+            duration = 9125
+        }
+    }
+}
+
+country_event = { #subject get cores
+    id = nafa.5
+    title = nafa.5.t
+    desc = nafa.5.d
+    picture = CITY_VIEW_eventPicture
+    fire_only_once = yes
+    hidden = yes
+
+    mean_time_to_happen = {
+        months = 1
+    }
+
+    trigger = {
+        is_subject_of = NAF
+        NAF = {
+            has_country_flag = nafaOppianVassalFlag
+        }
+        any_owned_province = {
+            OR = {
+                region = upper_oppia_region
+                region = lower_oppia_region
+            }
+        }
+        is_year = 290
+    }
+
+    immediate = {
+        every_province = {
+            limit = {
+                OR = {
+                    region = upper_oppia_region
+                    region = lower_oppia_region
+                }
+                NOT = {
+                    owned_by = NAF
+                }
+            }
+            add_core = ROOT
+        }
+        if = {
+            limit = {
+                OR = {
+                    tag = NUT
+                    tag = ROP
+                }
+            }
+            NAF = {
+                set_country_flag = nutiaRopleaVassalFlag
+            }
+        }
+    }
+
+    option = {
+        name = nafa.5.a
+        ai_chance = { factor = 1 }
+    }
+}
+
+country_event = { #Kisholi nobles defect
+    id = nafa.6
+    title = nafa.6.t
+    desc = nafa.6.d
+    picture = CONQUEST_eventPicture
+
+    mean_time_to_happen = {
+        months = 6
+    }
+
+    trigger = {
+        tag = NAF
+        has_country_flag = naf_allow_annex_kisholi
+        offensive_war_with = KSL
+        KSL = {
+            ai = yes
+        }
+        any_province = {
+            owned_by = KSL
+            controlled_by = ROOT
+        }
+        current_age = age_of_reformation
+    }
+
+    option = {
+        name = nafa.6.a
+        ai_chance = { factor = 1 }
+
+        every_province = {
+            limit = {
+                superregion = jasua_superregion
+                owned_by = KSL
+                controlled_by = ROOT
+            }
+            cede_province = ROOT
+            add_core = ROOT
+            remove_core = KSL
+            hidden_effect = {
+                NAF = {
+                    add_manpower = 0.5
+                }
+            }
+        }
+    }
+}
+
+#country_event = {
+#    id = nafa.7
+#    title = nafa.7.t
+#    desc = nafa.7.d
+#    picture = CONQUEST_eventPicture
+#    fire_only_once = yes
+#    hidden = yes
+#
+#    mean_time_to_happen = {
+#        days = 1
+#    }
+#
+#    trigger = {
+#        tag = NAF
+#        has_country_flag = nafa_extended_golden_age
+#        NOT = {
+#            in_golden_age = yes
+#        }
+#    }
+#
+#    immediate = {
+#        add_country_modifier = {
+#            name = fu_extended_golden_age
+#            duration = 9125
+#        }
+#    }
+#
+#    option = {
+#        name = nafa.7.a
+#        ai_chance = { factor = 1 }
+#    }
+#}
+
+country_event = {
+    id = nafa.8
+    hidden = yes
+
+    trigger = {
+        tag = NAF
+        has_country_flag = naf_army_merchant_flag
+        NOT = { has_country_modifier = naf_armytradmerchant_cooldown }
+    }
+
+    mean_time_to_happen = {
+        days = 1
+    }
+
+    immediate = {
+        add_country_modifier = {
+            name = naf_armytradmerchant_cooldown
+            hidden = yes
+            duration = 365
+        }
+        if = {
+            limit = {
+                5002 = {
+                    has_merchant = PREV
+                }
+            }
+            add_army_tradition = 0.1
+        }
+        if = {
+            limit = {
+                4997 = {
+                    has_merchant = PREV
+                }
+            }
+            add_army_tradition = 0.1
+        }
+        if = {
+            limit = {
+                5321 = {
+                    has_merchant = PREV
+                }
+            }
+            add_army_tradition = 0.1
+        }
+        if = {
+            limit = {
+                4982 = {
+                    has_merchant = PREV
+                }
+            }
+            add_army_tradition = 0.1
+        }
+        if = {
+            limit = {
+                5218 = {
+                    has_merchant = PREV
+                }
+            }
+            add_army_tradition = 0.1
+        }
+        if = {
+            limit = {
+                4981 = {
+                    has_merchant = PREV
+                }
+            }
+            add_army_tradition = 0.1
+        }
+        if = {
+            limit = {
+                5066 = {
+                    has_merchant = PREV
+                }
+            }
+            add_army_tradition = 0.1
+        }
+        if = {
+            limit = {
+                5103 = {
+                    has_merchant = PREV
+                }
+            }
+            add_army_tradition = 0.1
+        }
+        if = {
+            limit = {
+                5121 = {
+                    has_merchant = PREV
+                }
+            }
+            add_army_tradition = 0.1
+        }
+        if = {
+            limit = {
+                5140 = {
+                    has_merchant = PREV
+                }
+            }
+            add_army_tradition = 0.1
+        }
+        if = {
+            limit = {
+                5442 = {
+                    has_merchant = PREV
+                }
+            }
+            add_army_tradition = 0.1
+        }
+        if = {
+            limit = {
+                5552 = {
+                    has_merchant = PREV
+                }
+            }
+            add_army_tradition = 0.1
+        }
+        if = {
+            limit = {
+                5388 = {
+                    has_merchant = PREV
+                }
+            }
+            add_army_tradition = 0.1
+        }
+        if = {
+            limit = {
+                5361 = {
+                    has_merchant = PREV
+                }
+            }
+            add_army_tradition = 0.1
+        }
+        if = {
+            limit = {
+                5167 = {
+                    has_merchant = PREV
+                }
+            }
+            add_army_tradition = 0.1
+        }
+        if = {
+            limit = {
+                5196 = {
+                    has_merchant = PREV
+                }
+            }
+            add_army_tradition = 0.1
+        }
+        if = {
+            limit = {
+                5481 = {
+                    has_merchant = PREV
+                }
+            }
+            add_army_tradition = 0.1
+        }
+    }
+
+    option = {
+        name = nafa.8.a
+        ai_chance = { factor = 1 }
+    }
+}
+
+country_event = { #Defecting kisholi general
+    id = nafa.9
+    title = nafa.9.t
+    desc = nafa.9.d
+    picture = ADVISOR_eventPicture
+    fire_only_once = yes
+    is_triggered_only = yes
+
+    option = {
+        name = nafa.9.a
+        ai_chance = { factor = 1 }
+        define_general = {
+            shock = 4
+            fire = 4
+            manuever = 5
+            siege = 0
+            trait = born_to_the_saddle_personality
+            name = "Verakol Ranazha"
+        }
+        add_country_modifier = {
+            name = naf_verakols_ideas
+            duration = 3650
+        }
+        add_treasury = -100
+    }
+
+    option = {
+        name = nafa.9.b
+        ai_chance = { factor = 0 }
+    }
+}
+
+country_event = { #Sar whispers
+    id = nafa.10
+    title = nafa.10.t
+    desc = nafa.10.d
+    picture = BAD_WITH_MONARCH_eventPicture
+    fire_only_once = yes
+
+    trigger = {
+        tag = NAF
+        TCK = {
+            is_subject_of = NAF
+            dynasty	= "Sar"
+        }
+        at_war_with_religious_enemy = yes
+        current_age = age_of_absolutism
+    }
+
+    mean_time_to_happen = {
+        months = 60
+    }
+
+    option = {
+        name = nafa.10.a
+        ai_chance = { factor = 1 }
+        add_ruler_modifier = {
+            name = naf_sar_insanity
+            duration = -1
+        }
+    }
+}
+
+country_event = {
+    id = nafa.11
+    hidden = yes
+    fire_only_once = yes
+
+    trigger = {
+        tag = NAF
+        #ai = yes
+        NOT = {
+            mission_completed = eclipse_the_eclipse
+        }
+        is_year = 300
+    }
+
+    mean_time_to_happen = {
+        months = 24
+    }
+
+    immediate = {
+        complete_mission = eclipse_the_eclipse
+        set_country_flag = getNafanMissions
+        swap_non_generic_missions = yes
+    }
+
+    option = {
+        name = nafa.11.a
+        ai_chance = { factor = 1 }
+    }
+}
+
+country_event = {
+    id = nafa.12
+    hidden = yes
+    fire_only_once = yes
+
+    trigger = {
+        tag = KLG
+        #ai = yes
+        NOT = {
+            mission_completed = eclipse_the_eclipse
+        }
+        is_year = 300
+    }
+
+    mean_time_to_happen = {
+        months = 24
+    }
+
+    immediate = {
+        complete_mission = eclipse_the_eclipse
+        set_country_flag = getKalarganMissions
+        swap_non_generic_missions = yes
+    }
+
+    option = {
+        name = nafa.12.a
+        ai_chance = { factor = 1 }
+    }
+}
+
+country_event = { #Kalargan gov
+    id = nafa.13
+    title = nafa.13.t
+    desc = nafa.13.d
+    picture = GOOD_WITH_MONARCH_eventPicture
+    fire_only_once = yes
+    is_triggered_only = yes
+
+    option = { #Republic
+        name = nafa.13.a
+        ai_chance = { factor = 1 }
+        change_government = republic
+        add_government_reform = kachik_republic
+        add_prestige = -10
+    }
+
+    option = { #Monarchy
+        name = nafa.13.b
+        ai_chance = { factor = 1 }
+        add_government_reform = kachik_monarchy
+        add_legitimacy = -20
+        change_government_reform_progress = -50
+    }
+}
+
+country_event = { #Kalargan culture
+    id = nafa.14
+    title = nafa.14.t
+    desc = nafa.14.d
+    picture = REFORM_eventPicture
+    fire_only_once = yes
+    is_triggered_only = yes
+
+    option = { #Warriors
+        name = nafa.14.a
+        ai_chance = { factor = 1 }
+        add_country_modifier = {
+            name = klg_warriors
+            duration = 12775
+        }
+        add_estate_loyalty = {
+            estate = estate_nobles
+            loyalty = 25
+        }
+        add_estate_loyalty = {
+            estate = estate_burghers
+            loyalty = -10
+        }
+    }
+
+    option = { #Peaceful
+        name = nafa.14.b
+        ai_chance = { factor = 1 }
+        add_country_modifier = {
+            name = klg_artisans
+            duration = 12775
+        }
+        add_estate_loyalty = {
+            estate = estate_burghers
+            loyalty = 25
+        }
+        add_estate_loyalty = {
+            estate = estate_nobles
+            loyalty = -10
+        }
+    }
+}
+
+country_event = { #Colossus Destroyed
+    id = nafa.15
+    title = nafa.15.t
+    desc = nafa.15.d
+    picture = EP_ISLAND_eventPicture
+    fire_only_once = yes
+    is_triggered_only = yes
+
+    option = {
+        name = nafa.15.a
+        ai_chance = { factor = 1 }
+        5361 = {
+            destroy_great_project = {
+                type = agixion_colossus
+            }
+            add_province_modifier = {
+                name = klg_stil_daniil
+                duration = -1
+            }
+        }
+    }
+}
+
+country_event = { #you shall NOT go into nhoma
+    id = nafa.16
+    title = nafa.16.t
+    desc = nafa.16.d
+    picture = EP_ISLAND_eventPicture
+    hidden = yes
+
+    trigger = {
+        tag = NAF
+        ai = yes
+        OR = {
+            if = {
+                limit = {
+                    exists = FSB
+                }
+                FSB = {
+                    ai = yes
+                }
+                NOT = {
+                    border_distance = {
+                        who = FSB
+                        distance = 20
+                    }
+                }
+                NOT = {
+                    truce_with = FSB
+                }
+            }
+            if = {
+                limit = {
+                    exists = VET
+                }
+                VET = {
+                    ai = yes
+                }
+                NOT = {
+                    border_distance = {
+                        who = VET
+                        distance = 20
+                    }
+                }
+                NOT = {
+                    truce_with = VET
+                }
+            }
+            if = {
+                limit = {
+                    exists = KMI
+                }
+                KMI = {
+                    ai = yes
+                }
+                NOT = {
+                    border_distance = {
+                        who = KMI
+                        distance = 20
+                    }
+                }
+                NOT = {
+                    truce_with = KMI
+                }
+            }
+            if = {
+                limit = {
+                    AND = {
+                        exists = NHM
+                        NHM = {
+                            has_country_flag = survivedTonxaraDisaster
+                        }
+                    }
+                }
+                NHM = {
+                    ai = yes
+                }
+                NOT = {
+                    border_distance = {
+                        who = NHM
+                        distance = 20
+                    }
+                }
+                NOT = {
+                    truce_with = NHM
+                }
+            }
+        }
+    }
+
+    mean_time_to_happen = {
+        months = 1
+    }
+
+    option = {
+        name = nafa.16.a #we shall see about that
+        ai_chance = { factor = 1 }
+    }
+    option = {
+        name = nafa.16.b #nhoma shall not be invaded
+        ai_chance = { factor = 96 }
+        if = {
+            limit = {
+                exists = FSB
+            }
+            FSB = {
+                add_truce_with = NAF
+            }
+        }
+        if = {
+            limit = {
+                exists = VET
+            }
+            FSB = {
+                add_truce_with = VET
+            }
+        }
+        if = {
+            limit = {
+                exists = KMI
+            }
+            FSB = {
+                add_truce_with = KMI
+            }
+        }
+        if = {
+            limit = {
+                exists = NHM
+            }
+            FSB = {
+                add_truce_with = NHM
+            }
+        }
+    }
+}
+
+country_event = { #Roplea or nafa vassal
+    id = nafa.17
+    fire_only_once = yes
+    hidden = yes
+
+    trigger = {
+        OR = {
+            tag = NUT
+            tag = ROP
+        }
+        is_subject_of = NAF
+    }
+
+    mean_time_to_happen = {
+        days = 1
+    }
+
+    immediate = {
+        NAF = {
+            set_country_flag = naf_got_rop_or_nut
+        }
+    }
+
+    option = {
+        name = nafa.17.a
+        ai_chance = { factor = 1 }
+    }
+}
+
+country_event = { #Hasia
+    id = nafa.18
+    title = nafa.18.t
+    desc = nafa.18.d
+    picture = EP_ISLAND_eventPicture
+    fire_only_once = yes
+    is_triggered_only = yes
+
+    option = { #Destroy Hasia
+        name = nafa.18.a
+        ai_chance = { factor = 1 }
+        5695 = {
+            add_devastation = 100
+        }
+        add_country_modifier = {
+            name = naf_trolled_hasia
+            duration = 18250
+        }
+        add_army_tradition = 20
+    }
+    option = { #Make it a fortress
+        name = nafa.18.b
+        ai_chance = { factor = 1 }
+        5695 = {
+            change_province_name = "Rin"
+            hidden_effect = {
+                rename_capital = "Rin"
+            }
+            add_province_modifier = {
+                name = naf_hasian_fort
+                duration = -1
+            }
+            add_base_tax = 3
+			add_base_production = 3
+			add_base_manpower = 3
+            add_latest_building = { builder = ROOT fort = yes }
+        }
+    }
+}
+
+country_event = { #Rini fix
+    id = nafa.19
+    hidden = yes
+
+    trigger = {
+        tag = NAF
+        has_country_flag = naf_rini_flag
+        OR = {
+            any_owned_province = {
+                has_province_modifier = naf_rini_fort
+                is_capital = no
+                OR = {
+                    NOT = { has_fort_building_trigger = yes }
+                    NOT = { religion = rini }
+                }
+            }
+            any_owned_province = {
+                NOT = { has_province_modifier = naf_rini_fort }
+                is_capital = no
+                has_fort_building_trigger = yes
+                religion_group = lathvy_group
+            }
+        }
+    }
+
+    mean_time_to_happen = {
+        months = 1
+    }
+
+    immediate = {
+        every_owned_province = {
+            limit = {
+                has_province_modifier = naf_rini_fort
+                is_capital = no
+                OR = {
+                    NOT = { has_fort_building_trigger = yes }
+                    NOT = { religion = rini }
+                }
+            }
+            remove_province_modifier = naf_rini_fort
+        }
+        every_owned_province = {
+            limit = {
+                NOT = { has_province_modifier = naf_rini_fort }
+                is_capital = no
+                has_fort_building_trigger = yes
+                religion_group = lathvy_group
+            }
+            change_religion = rini
+            add_province_modifier = {
+                name = naf_rini_fort
+                duration = -1
+            }
+        }
+    }
+
+    option = {
+        name = nafa.19.a
+        ai_chance = { factor = 1 }
+    }
+}
+
+country_event = { #Rini fix another
+    id = nafa.20
+    fire_only_once = yes
+    hidden = yes
+
+    trigger = {
+        tag = NAF
+        religion = rini
+        has_country_flag = naf_rini_flag
+    }
+
+    mean_time_to_happen = {
+        days = 1
+    }
+
+    immediate = {
+        clr_country_flag = naf_rini_flag
+        set_country_flag = nafa_went_rini
+        every_owned_province = {
+            limit = {
+                has_province_modifier = naf_rini_fort
+            }
+            remove_province_modifier = naf_rini_fort
+        }
+    }
+
+    option = {
+        name = nafa.20.a
+        ai_chance = { factor = 1 }
+    }
+}
+
+country_event = { #settle east estal
+    id = nafa.21
+    title = nafa.21.t
+    desc = nafa.21.d
+    picture = CITY_DEVELOPMENT_eventPicture
+    fire_only_once = yes
+    is_triggered_only = yes
+
+    option = {
+        name = nafa.21.a
+        ai_chance = { factor = 1 }
+        custom_tooltip = nafSettleEstalTooltip
+        hidden_effect = {
+            gorfrek_region = {
+                limit = {
+                    is_empty = yes
+                }
+                cede_province = ROOT
+                add_core = ROOT
+                add_local_autonomy = 100
+                add_province_modifier = {
+                    name = naf_forest_frontier
+                    duration = 18250
+                }
+                random = {
+					chance = 50
+					add_base_tax = 1
+				}
+				random = {
+					chance = 50
+					add_base_production = 1
+				}
+				random = {
+					chance = 50
+					add_base_manpower = 1
+				}
+                random = {
+					chance = 10
+					add_base_tax = 1
+				}
+				random = {
+					chance = 10
+					add_base_production = 1
+				}
+				random = {
+					chance = 10
+					add_base_manpower = 1
+				}
+                random = {
+					chance = 20
+					change_trade_goods = iron
+				}
+                random = {
+					chance = 10
+					change_trade_goods = copper
+				}
+                random = {
+					chance = 5
+					change_trade_goods = gems
+				}
+                random = {
+					chance = 5
+					change_trade_goods = dyes
+				}
+                random = {
+					chance = 5
+					change_trade_goods = cloth
+				}
+                random = {
+					chance = 20
+					change_religion = ROOT
+				}
+                random = {
+					chance = 5
+					change_culture = ROOT
+				}
+            }
+            borlebin_area = {
+                limit = {
+                    is_empty = yes
+                }
+                cede_province = ROOT
+                add_core = ROOT
+                add_local_autonomy = 100
+                add_province_modifier = {
+                    name = naf_forest_frontier
+                    duration = 18250
+                }
+                random = {
+					chance = 50
+					add_base_tax = 1
+				}
+				random = {
+					chance = 50
+					add_base_production = 1
+				}
+				random = {
+					chance = 50
+					add_base_manpower = 1
+				}
+                random = {
+					chance = 10
+					add_base_tax = 1
+				}
+				random = {
+					chance = 10
+					add_base_production = 1
+				}
+				random = {
+					chance = 10
+					add_base_manpower = 1
+				}
+                random = {
+					chance = 20
+					change_trade_goods = iron
+				}
+                random = {
+					chance = 10
+					change_trade_goods = copper
+				}
+                random = {
+					chance = 5
+					change_trade_goods = gems
+				}
+                random = {
+					chance = 5
+					change_trade_goods = dyes
+				}
+                random = {
+					chance = 5
+					change_trade_goods = cloth
+				}
+            }
+            area_60 = {
+                limit = {
+                    is_empty = yes
+                }
+                cede_province = ROOT
+                add_core = ROOT
+                add_local_autonomy = 100
+                add_province_modifier = {
+                    name = naf_forest_frontier
+                    duration = 18250
+                }
+                random = {
+					chance = 50
+					add_base_tax = 1
+				}
+				random = {
+					chance = 50
+					add_base_production = 1
+				}
+				random = {
+					chance = 50
+					add_base_manpower = 1
+				}
+                random = {
+					chance = 10
+					add_base_tax = 1
+				}
+				random = {
+					chance = 10
+					add_base_production = 1
+				}
+				random = {
+					chance = 10
+					add_base_manpower = 1
+				}
+                random = {
+					chance = 20
+					change_trade_goods = iron
+				}
+                random = {
+					chance = 10
+					change_trade_goods = copper
+				}
+                random = {
+					chance = 5
+					change_trade_goods = gems
+				}
+                random = {
+					chance = 5
+					change_trade_goods = dyes
+				}
+                random = {
+					chance = 5
+					change_trade_goods = cloth
+				}
+            }
+            6851 = {
+                add_base_manpower = 1
+                add_base_production = 1
+                add_base_tax = 1
+            }
+            6815 = {
+                add_base_manpower = 2
+                add_base_production = 2
+                add_base_tax = 2
+            }
+            vanoma_region = {
+                add_core = GOR
+            }
+            stroktur_region = {
+                add_core = GOR
+            }
+            affan_area = {
+                add_core = GOR
+            }
+            oearan_area = {
+                add_core = GOR
+            }
+            nikat_area = {
+                add_core = GOR
+            }
+            nakoa_area = {
+                add_core = GOR
+            }
+            jiat_area = {
+                add_core = GOR
+            }
+            govrrol_area = {
+                add_core = GOR
+            }
+            north_nakoa_area = {
+                add_core = GOR
+            }
+            jassine_area = {
+                add_core = GOR
+            }
+            area_63 = {
+                add_core = GOR
+            }
+            area_64 = {
+                add_core = GOR
+            }
+            area_66 = {
+                add_core = GOR
+            }
+		    area_67 = {
+                add_core = GOR
+            }
+		    area_68 = {
+                add_core = GOR
+            }
+		    area_69 = {
+                add_core = GOR
+            }
+		    area_70 = {
+                add_core = GOR
+            }
+		    area_71 = {
+                add_core = GOR
+            }
+		    area_72 = {
+                add_core = GOR
+            }
+		    area_73 = {
+                add_core = GOR
+            }
+            6842 = {
+                add_core = GOR
+            }
+            5521 = {
+                add_core = GOR
+            }
+            random_owned_province = {
+                limit = {
+                    region = gorfrek_region
+                }
+                spawn_rebels = {
+                    type = particularist_rebels
+                    size = 3
+                }
+            }
+            random_owned_province = {
+                limit = {
+                    region = gorfrek_region
+                }
+                spawn_rebels = {
+                    type = particularist_rebels
+                    size = 2
+                }
+            }
+            random_owned_province = {
+                limit = {
+                    region = gorfrek_region
+                }
+                spawn_rebels = {
+                    type = particularist_rebels
+                    size = 2
+                }
+            }
+            random_owned_province = {
+                limit = {
+                    region = gorfrek_region
+                }
+                spawn_rebels = {
+                    type = particularist_rebels
+                    size = 1
+                }
+            }
+            random_owned_province = {
+                limit = {
+                    region = gorfrek_region
+                }
+                spawn_rebels = {
+                    type = particularist_rebels
+                    size = 1
+                }
+            }
+        }
+        add_mil_power = -100
+    }
+}
+
+country_event = { #Harmonic
+    id = nafa.22
+    title = nafa.22.t
+    desc = nafa.22.d
+    picture = ORTHODOX_eventPicture
+    fire_only_once = yes
+    major = yes
+
+    trigger = {
+        capital_scope = {
+            OR = {
+                superregion = central_estal_superregion
+                superregion = jasua_superregion
+            }
+        }
+        religion = lathvy
+        OR = {
+            AND = {
+                has_global_flag = harmonic_event_ready
+                is_year = 430
+            }
+            is_year = 480
+        }
+    }
+
+    mean_time_to_happen = {
+        months = 480
+        modifier = {
+            factor = 0.5
+            tag = NAF
+        }
+        modifier = {
+            factor = 0.1
+            tag = GOR
+        }
+    }
+
+    immediate = {
+        set_global_flag = HarmonicReformation
+    }
+
+    option = { #Let us embrace the true faith
+        name = nafa.22.a
+        ai_chance = {
+            factor = 1
+        }
+        trigger = {
+            OR = {
+                tag = NAF
+                tag = GOR
+            }
+        }
+        if = {
+            limit = {
+                tag = GOR
+            }
+            add_stability = -1
+        }
+        else = {
+            add_stability = -3
+            add_prestige = -100
+        }
+
+        enable_religion = harmonic
+        capital_scope = {
+            change_religion = harmonic
+            add_reform_center = harmonic
+            add_province_modifier = {
+		    	name = religious_zeal_at_conv
+		    	duration = 10950
+		    }
+        }
+        
+        change_religion = harmonic
+        add_country_modifier = {
+			name = "conversion_zeal"
+			duration = 3650
+		}
+    }
+    option = { #An interesting development
+        name = nafa.22.b
+        ai_chance = {
+            factor = 10
+            modifier = {
+                factor = 0
+                tag = GOR
+            }
+        }
+
+
+
+
+
+
+        enable_religion = harmonic
+        if = {
+            limit = {
+                tag = NAF
+            }
+            6815 = {
+                change_religion = harmonic
+                add_reform_center = harmonic
+                add_province_modifier = {
+				    name = religious_zeal_at_conv
+				    duration = 10950
+			    }
+            }
+            hidden_effect = {
+                random_owned_province = {
+                    limit = {
+                        region = gorfrek_region
+                        religion = lathvy
+                        NOT = {
+                            has_province_flag = naf_is_harmonic_prov
+                        }
+                    }
+                    set_province_flag = naf_is_harmonic_prov
+                    change_religion = harmonic
+                    add_province_modifier = {
+				        name = religious_zeal_at_conv
+				        duration = 10950
+			        }
+                }
+                random_owned_province = {
+                    limit = {
+                        region = gorfrek_region
+                        religion = lathvy
+                        NOT = {
+                            has_province_flag = naf_is_harmonic_prov
+                        }
+                    }
+                    set_province_flag = naf_is_harmonic_prov
+                    change_religion = harmonic
+                    add_province_modifier = {
+				        name = religious_zeal_at_conv
+				        duration = 10950
+			        }
+                }
+                random_owned_province = {
+                    limit = {
+                        region = gorfrek_region
+                        religion = lathvy
+                        NOT = {
+                            has_province_flag = naf_is_harmonic_prov
+                        }
+                    }
+                    set_province_flag = naf_is_harmonic_prov
+                    change_religion = harmonic
+                    add_province_modifier = {
+				        name = religious_zeal_at_conv
+				        duration = 10950
+			        }
+                }
+                random_owned_province = {
+                    limit = {
+                        region = gorfrek_region
+                        religion = lathvy
+                        NOT = {
+                            has_province_flag = naf_is_harmonic_prov
+                        }
+                    }
+                    set_province_flag = naf_is_harmonic_prov
+                    change_religion = harmonic
+                    add_province_modifier = {
+				        name = religious_zeal_at_conv
+				        duration = 10950
+			        }
+                }
+                random_owned_province = {
+                    limit = {
+                        region = gorfrek_region
+                        religion = lathvy
+                        NOT = {
+                            has_province_flag = naf_is_harmonic_prov
+                        }
+                    }
+                    set_province_flag = naf_is_harmonic_prov
+                    change_religion = harmonic
+                    add_province_modifier = {
+				        name = religious_zeal_at_conv
+				        duration = 10950
+			        }
+                }
+                random_owned_province = {
+                    limit = {
+                        region = gorfrek_region
+                        religion = lathvy
+                        NOT = {
+                            has_province_flag = naf_is_harmonic_prov
+                        }
+                    }
+                    set_province_flag = naf_is_harmonic_prov
+                    change_religion = harmonic
+                    add_province_modifier = {
+				        name = religious_zeal_at_conv
+				        duration = 10950
+			        }
+                }
+                random_owned_province = {
+                    limit = {
+                        region = gorfrek_region
+                        religion = lathvy
+                        NOT = {
+                            has_province_flag = naf_is_harmonic_prov
+                        }
+                    }
+                    set_province_flag = naf_is_harmonic_prov
+                    change_religion = harmonic
+                    add_province_modifier = {
+				        name = religious_zeal_at_conv
+				        duration = 10950
+			        }
+                }
+                random_owned_province = {
+                    limit = {
+                        region = gorfrek_region
+                        religion = lathvy
+                        NOT = {
+                            has_province_flag = naf_is_harmonic_prov
+                        }
+                    }
+                    set_province_flag = naf_is_harmonic_prov
+                    change_religion = harmonic
+                    add_province_modifier = {
+				        name = religious_zeal_at_conv
+				        duration = 10950
+			        }
+                }
+            }
+        }
+        else = {
+            capital_scope = {
+                change_religion = harmonic
+                add_reform_center = harmonic
+                add_province_modifier = {
+			    	name = religious_zeal_at_conv
+			    	duration = 10950
+			    }
+            }
+        }
+    }
+}
+
+#End of the Harmonic Reformation
+country_event = {
+	id = nafa.23
+	title = nafa.23.t
+	picture = BIG_BOOK_eventPicture
+	desc = nafa.23.d
+    fire_only_once = yes
+    major = yes
+	
+	trigger = {
+        capital_scope = {
+            OR = {
+                superregion = central_estal_superregion
+                superregion = jasua_superregion
+            }
+        }
+        religion = harmonic
+        is_year = 580
+	}
+	
+	mean_time_to_happen = {
+		months = 240
+	}
+
+    option = {
+		name = nafa.23.a
+        custom_tooltip = harmonicReformationOver
+        every_province = {
+            limit = {
+                is_reformation_center = yes
+                religion = harmonic
+            }
+            remove_reform_center = harmonic
+        }
+	}
+}
+
+#Rini growing in the legions
+country_event = {
+	id = nafa.24
+	title = nafa.24.t
+	picture = MILITARY_CAMP_eventPicture
+	desc = nafa.24.d
+    fire_only_once = yes
+	
+	trigger = {
+        tag = NAF
+        has_country_flag = naf_rini_flag
+        num_of_streltsy	= 80
+        num_of_owned_provinces_with = {
+            value = 10
+            religion = rini
+        }
+	}
+	
+	mean_time_to_happen = {
+		months = 156
+	}
+
+    immediate = {
+        set_country_flag = naf_rini_event_1
+    }
+
+    option = { #Rin
+		name = nafa.24.a
+        ai_chance = { factor = 1 }
+        add_country_modifier = {
+            name = naf_rini_army
+            duration = 9125
+        }
+        custom_tooltip = nafaBeginRinChain
+	}
+    option = {
+		name = nafa.24.b
+        ai_chance = { factor = 1 }
+        add_stability = -1
+        add_country_modifier = {
+            name = naf_high_desertion
+            duration = 3650
+        }
+        clr_country_flag = naf_rini_event_1
+	}
+}
+
+#Rin order military administration
+country_event = {
+	id = nafa.25
+	title = nafa.25.t
+	picture = CONQUEST_eventPicture
+	desc = nafa.25.d
+    fire_only_once = yes
+	
+	trigger = {
+        tag = NAF
+        has_country_flag = naf_rini_event_1
+        overextension_percentage = 1.1
+	}
+	
+	mean_time_to_happen = {
+		months = 8
+	}
+
+    immediate = {
+        set_country_flag = naf_rini_event_2
+        clr_country_flag = naf_rini_event_1
+    }
+
+    option = { #Rin
+		name = nafa.25.a
+        ai_chance = { factor = 1 }
+        add_country_modifier = {
+            name = naf_rini_mil_admin
+            duration = 7300
+        }
+        add_prestige = -10
+	}
+    option = {
+		name = nafa.25.b
+        ai_chance = { factor = 1 }
+        add_war_exhaustion = 5
+        custom_tooltip = nafaEndRinChain
+        clr_country_flag = naf_rini_event_2
+	}
+}
+
+#Rin order in the courts
+country_event = {
+	id = nafa.26
+	title = nafa.26.t
+	picture = COURT_eventPicture
+	desc = nafa.26.d
+    fire_only_once = yes
+	
+	trigger = {
+        tag = NAF
+        has_country_flag = naf_rini_event_2
+        has_mil_advisor_3 = yes
+	}
+	
+	mean_time_to_happen = {
+		months = 60
+	}
+
+    immediate = {
+        set_country_flag = naf_rini_event_3
+        clr_country_flag = naf_rini_event_2
+    }
+
+    option = { #Rin
+		name = nafa.26.a
+        ai_chance = { factor = 1 }
+        add_country_modifier = {
+            name = naf_rini_court
+            duration = 3650
+        }
+	}
+    option = {
+		name = nafa.26.b
+        ai_chance = { factor = 1 }
+        change_mil = -1
+        add_prestige = 10
+        custom_tooltip = nafaEndRinChain
+        clr_country_flag = naf_rini_event_3
+	}
+}
+
+#Revolt of the four generals
+country_event = {
+	id = nafa.27
+	title = nafa.27.t
+	picture = CIVIL_WAR_eventPicture
+	desc = nafa.27.d
+    fire_only_once = yes
+	
+	trigger = {
+        tag = NAF
+        has_country_flag = naf_rini_event_3
+	}
+	
+	mean_time_to_happen = {
+		months = 100
+	}
+
+    immediate = {
+        clr_country_flag = naf_rini_event_3
+    }
+
+    option = { #Rin
+		name = nafa.27.a
+        ai_chance = { factor = 1 }
+        set_country_flag = naf_ditched_syadon
+        add_stability = -5
+        kill_ruler = yes
+        remove_consort = yes
+        if = {
+            limit = {
+                has_heir = yes
+            }
+            kill_heir = { allow_new_heir = no }
+        }
+        define_ruler = {
+            culture = ROOT
+            religion = ROOT
+            dynasty = "Avazesy"
+        }
+        add_government_reform = imperial_rini_stratocracy
+        custom_tooltip = nafaEndRinChain
+	}
+    option = {
+		name = nafa.27.b
+        ai_chance = { factor = 1 }
+        set_country_flag = naf_fighting_the_rinis
+        add_stability = -1
+        add_country_modifier = {
+            name = naf_coup_ongoing
+            duration = 3650
+        }
+        random = {
+            chance = 50
+            kill_ruler = yes
+        }
+        random_owned_province = {
+            limit = {
+                region = stroktur_region
+                NOT = {
+                    has_province_flag = naf_spawned_4_general
+                }
+            }
+            set_province_flag = naf_spawned_4_general
+            spawn_rebels = {
+                type = noble_rebels
+                size = 3
+                religion = rini
+                win = yes
+                should_take_capital = yes
+            }
+        }
+        random_owned_province = {
+            limit = {
+                region = stroktur_region
+                NOT = {
+                    has_province_flag = naf_spawned_4_general
+                }
+            }
+            set_province_flag = naf_spawned_4_general
+            spawn_rebels = {
+                type = noble_rebels
+                size = 3
+                religion = rini
+                win = yes
+                should_take_capital = yes
+            }
+        }
+        random_owned_province = {
+            limit = {
+                region = stroktur_region
+                NOT = {
+                    has_province_flag = naf_spawned_4_general
+                }
+            }
+            set_province_flag = naf_spawned_4_general
+            spawn_rebels = {
+                type = noble_rebels
+                size = 3
+                religion = rini
+                win = yes
+                should_take_capital = yes
+            }
+        }
+        random_owned_province = {
+            limit = {
+                region = stroktur_region
+                NOT = {
+                    has_province_flag = naf_spawned_4_general
+                }
+            }
+            set_province_flag = naf_spawned_4_general
+            spawn_rebels = {
+                type = noble_rebels
+                size = 3
+                religion = rini
+                win = yes
+                should_take_capital = yes
+            }
+        }
+        #custom_tooltip = nafaEndRinChain
+	}
+}
+
+#Rin order defeated
+country_event = {
+	id = nafa.28
+	title = nafa.28.t
+	picture = IMPALED_SOLDIERS_eventPicture
+	desc = nafa.28.d
+    fire_only_once = yes
+	
+	trigger = {
+        tag = NAF
+        has_country_flag = naf_fighting_the_rinis
+        NOT = {
+            has_country_modifier = naf_coup_ongoing
+        }
+        NOT = { num_of_rebel_controlled_provinces = 1 }
+		NOT = { num_of_rebel_armies = 1 }
+        stability = 1
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+
+    immediate = {
+        clr_country_flag = naf_rini_flag
+        clr_country_flag = nafa_went_rini
+        clr_country_flag = naf_fighting_the_rinis
+        set_country_flag = cant_go_rini
+    }
+
+    option = {
+		name = nafa.28.a
+        ai_chance = { factor = 1 }
+        add_country_modifier = {
+            name = naf_consolidated_rule
+            duration = -1
+        }
+        add_country_modifier = {
+            name = naf_purging_rini
+            duration = 3650
+        }
+        remove_country_modifier = naf_rini_elite
+        remove_country_modifier = naf_rini_order_country
+        remove_country_modifier = naf_rini_army
+        remove_country_modifier = naf_high_desertion
+        remove_country_modifier = naf_rini_mil_admin
+        remove_country_modifier = naf_rini_court
+        if = {
+            limit = {
+                religion = rini
+            }
+            change_religion = lathvy
+        }
+        if = {
+            limit = {
+                any_owned_province = {
+                    religion = rini
+                }
+            }
+            every_owned_province = {
+                limit = {
+                    religion = rini
+                }
+                change_religion = ROOT
+            }
+        }
+        every_owned_province = {
+            limit = {
+                has_province_modifier = naf_rini_fort
+            }
+            remove_province_modifier = naf_rini_fort
+        }
+	}
+}
+
+#Truth of the eclipse 1
+country_event = {
+	id = nafa.29
+	title = nafa.29.t
+	picture = INVENTION_eventPicture
+	desc = nafa.29.d
+    fire_only_once = yes
+	
+	trigger = {
+        tag = NAF
+        has_country_flag = naf_cleared_for_truth_event_1
+	}
+	
+	mean_time_to_happen = {
+		months = 50
+	}
+
+    immediate = {
+        clr_country_flag = naf_cleared_for_truth_event_1
+        set_country_flag = naf_cleared_for_truth_event_2
+    }
+
+    option = { #Continue
+		name = nafa.29.a
+        ai_chance = { factor = 1 }
+        custom_tooltip = nafContTruthChain
+	}
+
+    option = { #Stop
+		name = nafa.29.b
+        ai_chance = { factor = 0 }
+        add_stability_or_adm_power = yes
+        clr_country_flag = naf_cleared_for_truth_event_2
+        custom_tooltip = nafEndTruthChain
+	}
+}
+
+#Truth of the eclipse 2
+country_event = {
+	id = nafa.30
+	title = nafa.30.t
+	picture = ECONOMY_eventPicture.dds
+	desc = nafa.30.d
+    #fire_only_once = yes
+	
+	trigger = {
+        tag = NAF
+        has_country_flag = naf_cleared_for_truth_event_2
+	}
+	
+	mean_time_to_happen = {
+		months = 6
+	}
+
+    immediate = {
+        clr_country_flag = naf_cleared_for_truth_event_2
+    }
+
+    option = { #Continue
+		name = nafa.30.a
+        ai_chance = { factor = 1 }
+        add_treasury = -500
+        custom_tooltip = nafContTruthChain
+        hidden_effect = {
+            random_list = {
+			    25 = {
+			    	set_country_flag = naf_cleared_for_truth_event_3
+			    }
+			    75 = {
+			    	set_country_flag = naf_cleared_for_truth_event_2
+			    }
+		    }
+        }
+	}
+
+    option = { #Stop
+		name = nafa.30.b
+        ai_chance = { factor = 0 }
+
+        custom_tooltip = nafEndTruthChain
+	}
+}
+
+#Truth of the eclipse 3
+country_event = {
+	id = nafa.31
+	title = nafa.31.t
+	picture = ECLIPSE_eventPicture
+	desc = nafa.31.d
+    fire_only_once = yes
+    major = yes
+    major_trigger = {
+        religion_group = lathvy_group
+    }
+	
+	trigger = {
+        tag = NAF
+        has_country_flag = naf_cleared_for_truth_event_3
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+	}
+
+    immediate = {
+        clr_country_flag = naf_cleared_for_truth_event_3
+        set_country_flag = naf_had_truth_event
+    }
+
+    option = { #The world is an illusion
+		name = nafa.31.a
+        ai_chance = { factor = 1 }
+        add_country_modifier = {
+            name = naf_world_illusion
+            duration = -1
+        }
+        custom_tooltip = nafEndTruthChain
+	}
+
+    option = { #The gods are too powerful for us to help them
+		name = nafa.31.b
+        ai_chance = { factor = 1 }
+        trigger = {
+            religion = lathvy
+        }
+        set_country_flag = no_nafer_flag
+        country_event = {
+            id = lathvy.16
+        }
+        add_country_modifier = {
+            name = naf_truth_no_nafer
+            duration = -1
+        }
+        custom_tooltip = nafEndTruthChain
+	}
+
+    option = { #Perhaps we can't be too sure about our faith
+		name = nafa.31.c
+        ai_chance = { factor = 1 }
+        add_country_modifier = {
+            name = naf_truth_doubt
+            duration = -1
+        }
+        custom_tooltip = nafEndTruthChain
+	}
+
+    option = { #Reject findings
+		name = nafa.31.e
+        ai_chance = { factor = 1 }
+        add_country_modifier = {
+            name = naf_truth_reject
+            duration = -1
+        }
+        add_prestige = -10
+        custom_tooltip = nafEndTruthChain
+	}
+}

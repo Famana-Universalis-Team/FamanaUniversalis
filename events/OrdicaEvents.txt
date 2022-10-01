@@ -61,13 +61,13 @@ country_event = { #ordican claims 90%
     option = {
 		name = ordica.3.a
         ai_chance = { factor = 1 }
-		unnamed_pexto_14 = {
+		west_yuvla_area = {
 			add_permanent_claim = ORC
 		}
-		unnamed_pexto_1 = {
+		ronpax_area = {
 			add_permanent_claim = ORC
 		}
-		mofemi_morsum_area = {
+		rondos_area = {
 			add_permanent_claim = ORC
 		}
 		5347 = {
@@ -105,15 +105,15 @@ country_event = {
 	picture = RELIGION_eventPicture
 
 	trigger = {
-		NOT = { has_country_flag = got_chance_to_switch_celzion }
-		has_global_flag = CelzionHappened
-		religion = lathvy
 		capital_scope = {
 			OR = {
 				superregion = west_estal_superregion
 				region = west_emastalia_region
 			}
 		}
+		has_global_flag = CelzionHappened
+		religion = lathvy
+		NOT = { has_country_flag = got_chance_to_switch_celzion }
 		OR = {
 			religious_school = {
 				group = lathvy_group
@@ -220,8 +220,8 @@ country_event = {
 
 	trigger = {
 		owns_core_province = 6236
-		religion = lathvy
 		is_year = 326
+		religion = lathvy
 		NOT = { exists = PEX }
 	}
 
@@ -264,7 +264,7 @@ country_event = { #Dorlem's Tactics / Dorlemitz
 	}
 
 	option = {
-		name = ordica.6.a
+		name = ordica.7.a
 		ai_chance = { factor = 1 }
 		define_general = {
 			shock = 4
@@ -304,7 +304,7 @@ country_event = {
 					limit = {
 						OR = { 
 						culture = Dlosnim 
-						culture = East_Ordican 
+						culture = Celzian 
 						}
 						owned_by = ROOT
 					}
@@ -366,5 +366,2081 @@ country_event = {
 			add_base_manpower = 2
 			}
 		}
+	}
+}
+
+#Maldan Migration
+country_event = {
+	id = ordica.9
+	title = ordica.9.t
+	desc = ordica.9.d
+	picture = NATIVES_eventPicture
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	trigger = {
+		tag = ORC
+		is_year = 223
+	}
+
+	option = {
+		add_casus_belli = {
+			target = ORL
+			type = cb_vassalize_mission
+			months = 120
+		}
+		add_casus_belli = {
+			target = ORM
+			type = cb_vassalize_mission
+			months = 120
+		}
+		name = ordica.9.a
+		ai_chance = { factor = 5 }
+		6249 = {
+			add_base_manpower = 1
+			change_culture = Ora_Maldan
+			change_religion = maldan
+			add_claim = ORC
+			cede_province = ORL
+			add_core = ORL
+		}
+		6250 = {
+			add_base_manpower = 1
+			add_base_tax = 2
+			add_base_production = 1
+			change_culture = Ora_Maldan
+			change_religion = maldan
+			add_claim = ORC
+			cede_province = ORL
+			add_core = ORL
+		}
+		6251 = {
+			add_base_production = 1
+			change_culture = Ora_Maldan
+			change_religion = maldan
+			add_claim = ORC
+			cede_province = ORM
+			add_core = ORM
+		}
+		6252 = {
+			change_culture = Ora_Maldan
+			change_religion = maldan
+			add_claim = ORC
+			cede_province = ORM
+			add_core = ORM
+		}
+		6689 = {
+			change_culture = Ora_Maldan
+			change_religion = maldan
+		}
+		6690 = {
+			change_culture = Ora_Maldan
+			change_religion = maldan
+		}
+	}
+}
+
+#War of the Confederation
+country_event = {
+	id = ordica.10
+	title = ordica.10.t
+	desc = ordica.10.d
+	picture = REVOLT_HUNGARIAN_eventPicture
+	fire_only_once = yes
+
+	trigger = {
+		tag = ORC
+		is_year = 330
+		owns_core_province = 6250
+		owns_core_province = 6253
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	immediate = {
+		hidden_effect = {
+			denire_area = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_core = PRT
+				cede_province = PRT
+				PRT = {
+					infantry = PREV
+				}
+			}
+			area_177 = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_core = PRT
+				cede_province = PRT
+				PRT = {
+					infantry = PREV
+				}
+			}
+			area_104 = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_core = PRT
+				cede_province = PRT
+				PRT = {
+					infantry = PREV
+				}
+			}
+			random_owned_province = {
+				limit = {
+					region = apilanya_region
+				}
+				create_revolt = 1
+			}
+			random_owned_province = {
+				limit = {
+					region = apilanya_region
+				}
+				create_revolt = 1
+			}
+		}
+	}
+
+	option = {
+		name = ordica.10.a
+		ai_chance = { factor = 1 }
+		declare_war_with_cb = {
+			who = PRT
+			casus_belli = cb_vassalize_mission
+		}
+	}
+}
+
+#Vamanyan cores
+province_event = {
+	id = ordica.11
+	hidden = yes
+
+	trigger = {
+		owned_by = ORC
+		is_year = 320
+		OR = {
+			region = napora_region
+			region = vordor_region
+			region = west_ordica_region
+		}
+		NOT = {
+			is_core = VAM
+		}
+		NOT = {
+			has_global_flag = OrdicaDisaster
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		add_core = VAM
+	}
+
+	option = {
+		name = ordica.10.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+#Start of the Ordican Crisis
+country_event = {
+	id = ordica.12
+	title = ordica.12.t
+	desc = ordica.12.d
+	picture = NUSANTARA_THRONE_eventPicture
+	fire_only_once = yes
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = ordica.12.a
+		ai_chance = { factor = 1 }
+		add_country_modifier = {
+			name = orc_disaster_modifier
+			duration = 1200
+		}
+		set_global_flag = OrdicaDisaster
+		random_owned_province = {
+			nationalist_rebels = 2
+		}
+		random_owned_province = {
+			nationalist_rebels = 2
+		}
+		random_owned_province = {
+			nationalist_rebels = 2
+		}
+		hidden_effect = {
+			every_ally = {
+				add_trust = {
+					who = ORC
+					value = -25
+					mutual = yes
+				}
+				add_opinion = {
+					who = ORC
+					modifier = bad_xalnish_diplomats
+				}
+			}
+		}
+	}
+}
+
+#End of the Ordican Crisis
+country_event = {
+	id = ordica.13
+	title = ordica.13.t
+	desc = ordica.13.d
+	picture = BIG_BOOK_eventPicture
+	fire_only_once = yes
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = ordica.13.a
+		ai_chance = { factor = 1 }
+		add_stability = 1
+		add_prestige = 20
+		clr_global_flag = OrdicaDisaster
+		set_global_flag = survivedOrdicanCrisis
+		remove_country_modifier = orc_no_taxes
+		remove_country_modifier = orc_poor_taxes
+		remove_country_modifier = war_exhaustion
+		remove_country_modifier = orc_forced_draft
+		remove_country_modifier = orc_forced_levvy
+		remove_country_modifier = orc_bail_out_ships
+		remove_country_modifier = orc_no_ships
+	}
+}
+
+#Nobles aren't paying Taxes
+country_event = {
+	id = ordica.14
+	title = ordica.14.t
+	desc = ordica.14.d
+	picture = NOBLE_ESTATE_DEMANDS_eventPicture
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	trigger = {
+		tag = ORC
+		has_global_flag = OrdicaDisaster
+	}
+
+	option = { #taxation is theft!!!! :soy:
+		name = ordica.14.a
+		ai_chance = { factor = 1 }
+		add_years_of_income = -0.33
+		add_country_modifier = {
+			name = orc_no_taxes
+			duration = -1
+		}
+		set_country_flag = allowedNoblesNoTaxes
+	}
+	option = { #lmao gun them down
+		name = ordica.14.b
+		ai_chance = { factor = 1 }
+		add_country_modifier = {
+			name = orc_poor_taxes
+			duration = -1
+		}
+		random_owned_province = {
+			particularist_rebels = 2
+		}
+		random_owned_province = {
+			particularist_rebels = 2
+		}
+		random_owned_province = {
+			particularist_rebels = 2
+		}
+		set_country_flag = pissedoffnobles
+		hidden_effect = {
+			change_variable = {
+				which = OrdicanFuckups
+				value = 1
+			}
+		}
+	}
+}
+
+#Nobles aren't providing levies
+country_event = {
+	id = ordica.15
+	title = ordica.15.t
+	desc = ordica.15.d
+	picture = WOUNDED_SOLDIERS_eventPicture
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 8
+	}
+
+	trigger = {
+		tag = ORC
+		has_global_flag = OrdicaDisaster
+	}
+
+	option = {
+		name = ordica.15.a
+		ai_chance = { factor = 1 }
+		add_country_modifier = {
+			name = orc_no_manpower
+			duration = -1
+		}
+		set_country_flag = didntPushNobles
+	}
+	option = {
+		name = ordica.15.b
+		ai_chance = { factor = 1 }
+		add_country_modifier = {
+			name = orc_forced_draft
+			duration = -1
+		}
+		set_country_flag = didntPushNobles
+		random_owned_province = {
+			limit = {
+				region = ordica_region
+			}
+			spawn_rebels = {
+				type = leadered_peasant_rebels
+				size = 2
+			}
+		}
+		random_owned_province = {
+			limit = {
+				region = ordica_region
+			}
+			spawn_rebels = {
+				type = leadered_peasant_rebels
+				size = 2
+			}
+		}
+		hidden_effect = {
+			change_variable = {
+				which = OrdicanFuckups
+				value = 1
+			}
+		}
+	}
+	option = {
+		name = ordica.15.c
+		ai_chance = { factor = 1 }
+		add_country_modifier = {
+			name = orc_forced_levvy
+			duration = -1
+		}
+		random_owned_province = {
+			noble_rebels = 2
+		}
+		random_owned_province = {
+			noble_rebels = 2
+		}
+		random_owned_province = {
+			noble_rebels = 2
+		}
+		hidden_effect = {
+			change_variable = {
+				which = OrdicanFuckups
+				value = 1
+			}
+		}
+	}
+}
+
+#Shipbuilders go on strike
+country_event = {
+	id = ordica.16
+	title = ordica.16.t
+	desc = ordica.16.d
+	picture = SHIP_SAILING_eventPicture
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 3
+	}
+
+	trigger = {
+		tag = ORC
+		has_global_flag = OrdicaDisaster
+		OR = {
+			has_country_flag = pissedoffnobles
+			has_country_flag = allowedNoblesNoTaxes
+		}
+	}
+
+	option = {
+		name = ordica.16.a
+		ai_chance = { factor = 1 }
+		add_country_modifier = {
+			name = orc_no_ships
+			duration = -1
+		}
+		set_country_flag = dockyardStrike
+	}
+	option = {
+		name = ordica.16.b
+		ai_chance = { factor = 1 }
+		add_country_modifier = {
+			name = orc_bail_out_ships
+			duration = -1
+		}
+		add_years_of_income = -0.10
+	}
+}
+
+#Nobles demand representation+autonomy
+country_event = {
+	id = ordica.17
+	title = ordica.17.t
+	desc = ordica.17.d
+	picture = CHURCH_ESTATE_UPSET_eventPicture
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 8
+	}
+
+	trigger = {
+		tag = ORC
+		has_global_flag = OrdicaDisaster
+		OR = {
+			has_country_flag = allowedNoblesNoTaxes
+			has_country_flag = didntPushNobles
+		}
+	}
+
+	option = {
+		name = ordica.17.a
+		custom_tooltip = RequirementForOrdisa
+		set_country_flag = NoblesHappy
+		ai_chance = { factor = 3 }
+		add_government_reform = ordican_senate
+		hidden_effect = {
+			walara_region = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_core = YUV
+			}
+			5706 = {
+				add_core = KAM
+			}
+			6196 = {
+				add_core = KAM
+			}
+			6197 = {
+				add_core = KAM
+			}
+			6198 = {
+				add_core = NES
+			}
+			6203 = {
+				add_core = NES
+			}
+			6240 = {
+				add_core = NES
+			}
+			6243 = {
+				add_core = NES
+			}
+			6244 = {
+				add_core = NOX
+			}
+			6241 = {
+				add_core = YVR
+			}
+			6242 = {
+				add_core = YVR
+			}
+			5348 = {
+				add_core = YVR
+			}
+			release = NES
+			release = YUV
+			release = YVR
+			release = NOX
+			release = KAM
+		}
+		create_subject = {
+			subject_type = march
+			subject = YUV
+		}
+		create_subject = {
+			subject_type = march
+			subject = NES
+		}
+		create_subject = {
+			subject_type = march
+			subject = NOX
+		}
+		create_subject = {
+			subject_type = march
+			subject = YVR
+		}
+		create_subject = {
+			subject_type = march
+			subject = KAM
+		}
+		add_country_modifier = {
+			name = orc_decentralisation
+			duration = 3650
+		}
+	}
+	option = {
+		name = ordica.17.b
+		ai_chance = { factor = 1 }
+		random_owned_province = {
+			noble_rebels = 2
+		}
+		random_owned_province = {
+			noble_rebels = 2
+		}
+		random_owned_province = {
+			noble_rebels = 2
+		}
+		random_owned_province = {
+			noble_rebels = 2
+		}
+		random_owned_province = {
+			noble_rebels = 2
+		}
+		set_country_flag = noblesNoAutonomy
+		hidden_effect = {
+			change_variable = {
+				which = OrdicanFuckups
+				value = 1
+			}
+		}
+	}
+}
+
+#Chiefs revolt - Main Ordica
+country_event = {
+	id = ordica.18
+	title = ordica.18.t
+	desc = ordica.18.d
+	picture = VILLAGE_RAIDED_eventPicture
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	trigger = {
+		tag = ORC
+		has_global_flag = OrdicaDisaster
+	}
+
+	immediate = {
+		hidden_effect = {
+			#respawn the tags cause for some reason they get deleted
+			dukula_area = {
+				add_core = DKL
+			}
+			5784 = {
+				add_core = DKL
+			}
+			5618 = {
+				add_core = DKL
+			}
+			5626 = {
+				add_core = DKL
+			}
+			5705 = {
+				add_core = SPT
+			}
+			5500 = {
+				add_core = SPT
+			}
+			6199 = {
+				add_core = SPT
+			}
+			5190 = {
+				add_core = SPT
+			}
+			6200 = {
+				add_core = SPT
+			}
+			6206 = {
+				add_core = SPT
+			}
+			6201 = {
+				add_core = ARO
+			}
+			6202 = {
+				add_core = ARO
+			}
+			6212 = {
+				add_core = ARO
+			}
+			6205 = {
+				add_core = ARO
+			}
+			6204 = {
+				add_core = ARO
+			}
+			garex_area = {
+				add_core = MLY
+			}
+			veclla_area = {
+				add_core = MLY
+			}
+			6226 = {
+				remove_core = MLY
+				add_core = DNR
+			}
+			roltam_area = {
+				add_core = GLB
+			}
+			6215 = {
+				remove_core = GLB
+			}
+			darz_area = {
+				add_core = GLB
+			}
+			6209 = {
+				remove_core = GLB
+			}
+			6259 = {
+				add_core = ALR
+			}
+		}
+	}
+
+	option = {
+		name = ordica.18.a
+		ai_chance = { factor = 1 }
+		random_owned_province = {
+			limit = {
+				OR = {
+					region = ordica_region
+					region = east_ordica_region
+				}
+			}
+			nationalist_rebels = 1
+		}
+		random_owned_province = {
+			limit = {
+				OR = {
+					region = ordica_region
+					region = east_ordica_region
+				}
+			}
+			nationalist_rebels = 1
+		}
+		random_owned_province = {
+			limit = {
+				OR = {
+					region = ordica_region
+					region = east_ordica_region
+				}
+			}
+			nationalist_rebels = 1
+		}
+		random_owned_province = {
+			limit = {
+				OR = {
+					region = ordica_region
+					region = east_ordica_region
+				}
+			}
+			nationalist_rebels = 1
+		}
+	}
+}
+
+#Pramtea revolts
+country_event = {
+	id = ordica.19
+	title = ordica.19.t
+	desc = ordica.19.d
+	picture = CIVIL_WAR_eventPicture
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	trigger = {
+		tag = ORC
+		has_global_flag = OrdicaDisaster
+	}
+
+	immediate = {
+		hidden_effect = {
+			denire_area = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_core = PRT
+				cede_province = PRT
+				PRT = {
+					infantry = PREV
+				}
+			}
+			area_177 = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_core = PRT
+				cede_province = PRT
+				PRT = {
+					infantry = PREV
+				}
+			}
+			area_104 = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_core = PRT
+				cede_province = PRT
+				PRT = {
+					infantry = PREV
+				}
+			}
+			PRT = {
+				change_religion = rochoni
+			}
+			random_owned_province = {
+				limit = {
+					region = apilanya_region
+				}
+				create_revolt = 1
+			}
+			random_owned_province = {
+				limit = {
+					region = apilanya_region
+				}
+				create_revolt = 1
+			}
+			6250 = {
+				add_building = fort_15th
+			}
+		}
+	}
+
+	option = {
+		name = ordica.19.a #fight
+		ai_chance = { factor = 1 }
+		declare_war_with_cb = {
+			who = PRT
+			casus_belli = cb_vassalize_mission
+		}
+		set_country_flag = pramteaIndependent
+	}
+
+	option = {
+		name = ordica.19.b #let them go
+		ai_chance = { factor = 3 }
+		add_truce_with = PRT
+		set_country_flag = pramteaIndependent
+		PRT = {
+			every_owned_province = {
+				limit = {
+					is_core = ORC
+				}
+				remove_core = ORC
+				add_claim = ORC
+			}
+		}
+	}
+}
+
+#Kolyan independence
+country_event = {
+	id = ordica.20
+	title = ordica.20.t
+	desc = ordica.20.d
+	picture = REVOLUTION_eventPicture
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 2
+	}
+
+	trigger = {
+		tag = ORC
+		has_global_flag = OrdicaDisaster
+		has_country_flag = pramteaIndependent
+	}
+	
+	immediate = {
+		hidden_effect = {
+			every_province = {
+				limit = {
+					owned_by = ROOT
+					region = apilanya_region
+				}
+				add_core = KLY
+				cede_province = KLY
+				KLY = {
+					infantry = PREV
+				}
+			}
+			every_province = {
+				limit = {
+					owned_by = ROOT
+					OR = {
+						region = eastern_naravam_region
+						region = western_naravam_region
+						region = gacil_superregion
+					}
+				}
+				add_core = KLV
+				cede_province = KLV
+				KLV = {
+					infantry = PREV
+				}
+			}
+			KLV = {
+				change_religion = rochoni
+			}
+			KLY = {
+				change_religion = rochoni
+			}
+			6261 = {
+				add_building = fort_15th
+			}
+			6270 = {
+				add_building = fort_15th
+			}
+		}
+	}
+
+	option = {
+		name = ordica.20.a
+		ai_chance = { factor = 1 }
+		declare_war_with_cb = {
+			who = KLY
+			casus_belli = cb_vassalize_mission
+		}
+		declare_war_with_cb = {
+			who = KLV
+			casus_belli = cb_vassalize_mission
+		}
+	}
+	option = {
+		name = ordica.20.b
+		ai_chance = { factor = 4 }
+		white_peace = PRT
+		add_truce_with = PRT
+		add_truce_with = KLY
+		add_truce_with = KLV
+		KLY = {
+			every_owned_province = {
+				limit = {
+					is_core = ORC
+				}
+				remove_core = ORC
+				add_claim = ORC
+			}
+		}
+		KLV = {
+			every_owned_province = {
+				limit = {
+					is_core = ORC
+				}
+				remove_core = ORC
+				add_claim = ORC
+			}
+		}
+	}
+}
+
+#Vamanyan independence
+country_event = {
+	id = ordica.21
+	title = ordica.21.t
+	desc = ordica.21.d
+	picture = REVOLUTION_eventPicture
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	trigger = {
+		tag = ORC
+		has_global_flag = OrdicaDisaster
+		has_country_flag = pramteaIndependent
+	}
+
+	immediate = {
+		hidden_effect = {
+			every_province = {
+				limit = {
+					owned_by = ROOT
+					OR = {
+						region = napora_region
+						region = west_ordica_region
+						region = vordor_region
+					}
+				}
+				add_core = VAM
+				cede_province = VAM
+				VAM = {
+					infantry = PREV
+				}
+			}
+			5716 = {
+				add_building = fort_16th
+			}
+		}
+	}
+
+	option = {
+		name = ordica.21.a
+		ai_chance = { factor = 1 }
+		declare_war_with_cb = {
+			who = VAM
+			casus_belli = cb_vassalize_mission
+		}
+	}
+	option = { #leave it be
+		name = ordica.21.b
+		ai_chance = { factor = 2 }
+		add_truce_with = VAM
+		VAM = {
+			every_owned_province = {
+				limit = {
+					is_core = ORC
+				}
+				remove_core = ORC
+				add_claim = ORC
+			}
+		}
+	}
+}
+
+#Fate of Pramtea
+country_event = {
+	id = ordica.22
+	title = ordica.22.t
+	desc = ordica.22.d
+	picture = CONQUEST_eventPicture
+	fire_only_once = yes
+	major = yes
+
+	mean_time_to_happen = {
+		months = 8
+	}
+
+	trigger = {
+		tag = PRT
+		is_vassal = no
+		exists = KLY
+		is_at_war = no
+	}
+
+	option = {
+		name = ordica.22.a
+		ai_chance = { factor = 9 }
+		KLY = {
+			create_subject = {
+				subject_type = personal_union
+				subject = PRT
+			}
+		}
+	}
+	option = {
+		name = ordica.22.b
+		ai_chance = { factor = 1 }
+		denire_area = {
+			add_core = ORA
+			cede_province = ORA
+		}
+		area_104 = {
+			add_core = ORL
+			cede_province = ORL
+		}
+		area_177 = {
+			add_core = ORM
+			cede_province = ORM
+		}
+		ORA = {
+			change_religion = rochoni
+		}
+		ORL = {
+			change_religion = rochoni
+		}
+		ORM = {
+			change_religion = rochoni
+		}
+	}
+}
+ 
+#Tullisi Pirates
+country_event = {
+	id = ordica.23
+	title = ordica.23.t
+	desc = ordica.23.d
+	picture = CARIBBEAN_PIRATE_FORT_eventPicture
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	trigger = {
+		tag = ORC
+		has_global_flag = OrdicaDisaster
+		has_country_flag = dockyardStrike
+		owns = 5719
+	}
+
+	immediate = {
+		hidden_effect = {
+			5719 = {
+				add_core = TUL
+				add_unrest = 4
+			}
+		}
+	}
+
+	option = {
+		name = ordica.23.a
+		ai_chance = { factor = 3 }
+		5719 = {
+			nationalist_rebels = 2
+		}
+	}
+	option = {
+		name = ordica.23.b
+		ai_chance = { factor = 1 }
+		5719 = {
+			cede_province = TUL
+		}
+		add_truce_with = TUL
+	}
+	option = {
+		name = ordica.23.c
+		ai_chance = { factor = 0 }
+		5719 = {
+			cede_province = TUL
+		}
+		add_truce_with = TUL
+		switch_tag = TUL
+	}
+}
+
+#Bafan Pirates
+country_event = {
+	id = ordica.24
+	title = ordica.24.t
+	desc = ordica.24.d
+	picture = CARIBBEAN_PIRATE_FORT_eventPicture
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	trigger = {
+		tag = ORC
+		has_global_flag = OrdicaDisaster
+		has_country_flag = dockyardStrike
+		owns = 5699
+	}
+
+	immediate = {
+		hidden_effect = {
+			5699 = {
+				add_core = BAF
+				add_unrest = 4
+			}
+		}
+		set_global_flag = bafaPirateFlag
+	}
+
+	option = {
+		name = ordica.24.a
+		ai_chance = { factor = 3 }
+		5699 = {
+			nationalist_rebels = 2
+		}
+	}
+	option = {
+		name = ordica.24.b
+		ai_chance = { factor = 1 }
+		5699 = {
+			cede_province = BAF
+		}
+		add_truce_with = BAF
+	}
+	option = {
+		name = ordica.24.c
+		ai_chance = { factor = 0 }
+		5699 = {
+			cede_province = BAF
+		}
+		add_truce_with = BAF
+		switch_tag = BAF
+	}
+}
+
+#Yuvlar indepndence
+country_event = {
+	id = ordica.25
+	title = ordica.25.t
+	desc = ordica.25.d
+	picture = REVOLUTION_eventPicture
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 8
+	}
+
+	trigger = {
+		tag = ORC
+		has_global_flag = OrdicaDisaster
+		OR = {
+			NOT = {
+				OR = {
+					has_country_flag = allowedNoblesNoTaxes
+					has_country_flag = didntPushNobles
+				}
+			}
+			has_country_flag = noblesNoAutonomy
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			every_province = {
+				limit = {
+					owned_by = ROOT
+					OR = {
+						region = walara_region
+						culture = Yuvlan
+					}
+				}
+				add_core = YUV
+				cede_province = YUV
+				YUV = {
+					infantry = PREV
+				}
+			}
+			5294 = {
+				add_building = fort_16th
+			}
+		}
+	}
+
+	option = {
+		name = ordica.25.a
+		ai_chance = { factor = 1 }
+		declare_war_with_cb = {
+			who = YUV
+			casus_belli = cb_vassalize_mission
+		}
+	}
+	option = { #leave it be
+		name = ordica.25.b
+		ai_chance = { factor = 1 }
+		add_truce_with = YUV
+		YUV = {
+			every_owned_province = {
+				limit = {
+					is_core = ORC
+				}
+				remove_core = ORC
+				add_claim = ORC
+			}
+		}
+	}
+}
+
+#Pextans get pissy
+country_event = {
+	id = ordica.26
+	title = ordica.26.t
+	desc = ordica.26.d
+	picture = DEBATE_REPUBLICAN_eventPicture
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 16
+	}
+
+	trigger = {
+		tag = ORC
+		has_global_flag = OrdicaDisaster
+		any_owned_province = {
+			region = pextoglazia_region
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					region = pextoglazia_region
+				}
+				add_province_modifier = {
+					name = orc_pex_unrest
+					duration = 7300
+				}
+			}
+			every_owned_province = {
+				limit = {
+					culture = Glasian
+				}
+				add_core = LOM
+			}
+			affna_area = {
+				add_core = POM
+			}
+			pomlen_area = {
+				add_core = POM
+			}
+			kimina_area = {
+				add_core = POM
+			}
+			unnamed_pexto_2 = {
+				add_core = FST
+			}
+			affna_area = {
+				add_core = POM
+			}
+			seaside_nevia_area = {
+				add_core = REN
+			}
+			porlam_area = {
+				add_core = KRH
+			}
+			5339 = {
+				remove_core = KRH
+				add_core = REN
+			}
+			5309 = {
+				remove_core = REN
+				add_core = KRH
+			}
+			rondos_area = {
+				add_core = RND
+				add_core = RNP
+			}
+			5352 = {
+				remove_core = RND
+				add_core = RNP
+			}
+			ronpax_area = {
+				add_core = RNP
+			}
+			5356 = {
+				add_core = RND
+			}
+		}
+	}
+
+	option = {
+		name = ordica.26.a
+		ai_chance = { factor = 3 }
+		random_owned_province = {
+			limit = {
+				region = pextoglazia_region
+			}
+			nationalist_rebels = 3
+		}
+		random_owned_province = {
+			limit = {
+				region = pextoglazia_region
+			}
+			nationalist_rebels = 3
+		}
+		random_owned_province = {
+			limit = {
+				region = pextoglazia_region
+			}
+			nationalist_rebels = 3
+		}
+		custom_tooltip = orcPextansMad
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					region = pextoglazia_region
+				}
+				add_province_modifier = {
+					name = orc_pextans_angry
+					duration = 3650
+				}
+			}
+		}
+		hidden_effect = {
+			change_variable = {
+				which = OrdicanFuckups
+				value = 1
+			}
+		}
+	}
+	option = {
+		name = ordica.26.b
+		ai_chance = { factor = 1 }
+		release = LOM
+		release = KRH
+		release = ROL
+		release = FST
+		release = POM
+		release = RND
+		release = RNP
+		add_country_modifier = {
+			name = orc_overextension_decreased
+			duration = 3650
+		}
+	}
+}
+
+#Scholars are angry
+country_event = {
+	id = ordica.27
+	title = ordica.27.t
+	desc = ordica.27.d
+	picture = STREET_SPEECH_eventPicture
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 10
+	}
+
+	trigger = {
+		tag = ORC
+		has_global_flag = OrdicaDisaster
+	}
+
+	option = {
+		name = ordica.27.a #Placate foreign scholars
+		ai_chance = { factor = 4 }
+		custom_tooltip = RequirementForOrdisa
+		add_country_modifier = {
+			name = orc_foreign_scholars
+			duration = 3650
+		}
+		set_country_flag = orc_invited_foreingers
+	}
+
+	option = {
+		name = ordica.27.b #Isolationism
+		ai_chance = { factor = 1 }
+		add_country_modifier = {
+			name = orc_internal_scholars
+			duration = 3650
+		}
+		hidden_effect = {
+			change_variable = {
+				which = OrdicanFuckups
+				value = 1
+			}
+		}
+	}
+}
+
+#Religious schism
+country_event = {
+	id = ordica.28
+	title = ordica.15.t
+	desc = ordica.15.d
+	picture = RELIGION_eventPicture
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	trigger = {
+		tag = ORC
+		has_global_flag = OrdicaDisaster
+	}
+
+	option = {
+		name = ordica.28.a #Encourage religious debate
+		ai_chance = { factor = 4 }
+		custom_tooltip = RequirementForOrdisa
+		add_piety = -0.1
+		add_country_modifier = {
+			name = orc_religious_debate
+			duration = 3650
+		}
+		set_country_flag = orc_religious_tolerance
+	}
+
+	option = {
+		name = ordica.28.b #Burn everything
+		ai_chance = { factor = 1 }
+		add_country_modifier = {
+			name = orc_one_faith
+			duration = 1825
+		}
+		hidden_effect = {
+			change_variable = {
+				which = OrdicanFuckups
+				value = 1
+			}
+		}
+	}
+}
+
+#Ro-troll-ni
+country_event = {
+	id = ordica.29
+	title = ordica.29.t
+	desc = ordica.29.d
+	picture = RELIGIOUS_CONVERSION_eventPicture
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 8
+	}
+
+	trigger = {
+		tag = ORC
+		has_global_flag = OrdicaDisaster
+		any_owned_Province = {
+			OR = {
+				area = garex_area
+				area = veclla_area
+				area = roltam_area
+				area = loqass_area
+				area = darz_area
+			}
+		}
+		has_global_flag = RochoniReformation
+	}
+
+	option = {
+		name = ordica.29.a #aaaaaaaaaaaaaaaaaaaaaaa
+		ai_chance = { factor = 1 }
+		every_owned_province = {
+			limit = {
+				AND = {
+					OR = {
+						area = garex_area
+						area = veclla_area
+						area = roltam_area
+						area = loqass_area
+						area = darz_area
+					}
+					religion = lathvy
+				}
+			}
+			change_religion = rochoni
+		}
+		set_country_flag = rochoni_pest
+	}
+}
+
+#Religious rebels
+country_event = {
+	id = ordica.30
+	title = ordica.30.t
+	desc = ordica.30.d
+	picture = RELIGIOUS_TURMOIL_eventPicture
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 2
+	}
+
+	trigger = {
+		tag = ORC
+		has_global_flag = OrdicaDisaster
+		has_country_flag = rochoni_pest
+		religion = lathvy
+	}
+
+	option = {
+		name = ordica.30.a
+		ai_chance = { factor = 1 }
+		random_owned_province = {
+			limit = {
+				religion = rochoni
+			}
+			spawn_rebels = {
+				type = rochoni_rebels
+				size = 2
+			}
+		}
+		random_owned_province = {
+			limit = {
+				religion = rochoni
+			}
+			spawn_rebels = {
+				type = rochoni_rebels
+				size = 1
+			}
+		}
+		random_owned_province = {
+			limit = {
+				religion = rochoni
+			}
+			spawn_rebels = {
+				type = rochoni_rebels
+				size = 1
+			}
+		}
+	}
+
+	option = {
+		name = ordica.30.b
+		ai_chance = { factor = 0 }
+		change_religion = rochoni
+	}
+}
+
+#Everyone is angry if you keep trying to use force
+country_event = {
+	id = ordica.31
+	title = ordica.31.t
+	desc = ordica.31.d
+	picture = WOUNDED_SOLDIERS_eventPicture
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 8
+	}
+
+	trigger = {
+		tag = ORC
+		has_global_flag = OrdicaDisaster
+		OR = {
+			ai = yes
+			check_variable = {
+				which = OrdicanFuckups
+				value = 3
+			}
+		}
+	}
+
+	option = {
+		name = ordica.31.a
+		ai_chance = { factor = 1 }
+		add_war_exhaustion = 2
+	}
+	option = {
+		name = ordica.31.b
+		ai_chance = { factor = 3 }
+		hidden_effect = {
+			change_variable = {
+				which = OrdicanFuckups
+				value = 1
+			}
+		}
+		add_stability = -1
+	}
+}
+
+#Ordisa - Nobles get representation, Scholarly enlightenment, Religious reform
+country_event = {
+	id = ordica.32
+	title = ordica.32.t
+	desc = ordica.32.d
+	picture = SEJM_eventPicture
+	fire_only_once = yes
+	major = yes
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	trigger = {
+		tag = ORC
+		has_global_flag = OrdicaDisaster
+		AND = {
+			has_country_flag = NoblesHappy
+			has_country_flag = orc_religious_tolerance
+			has_country_flag = orc_invited_foreingers
+		}
+	}
+
+	option = {
+		name = ordica.32.a
+		ai_chance = { factor = 1 }
+		restore_country_name = yes
+		change_tag = ORS
+		if = {
+			limit = {
+				AND = {
+					has_custom_ideas = no
+					NOT = {
+						has_idea_group = ORS_ideas
+					}
+				}
+			}
+			country_event = { id = ideagroups.1 } #Swap Ideas
+		}
+		if = {
+			limit = {
+				NOT = { government_rank = 3 }
+			}
+			set_government_rank = 3
+		}
+		country_event = {
+			id = ordica.13
+		}
+	}
+}
+
+#Maldans run off into the steppe - Qubare if no Zubara  ##### REMEMBER TO DO THIS EVENT LATER
+country_event = {
+	id = ordica.33
+	title = ordica.33.t
+	desc = ordica.33.d
+	picture = WOUNDED_SOLDIERS_eventPicture ####	REMIND ME TO DO THIS ONE
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 8
+	}
+
+	trigger = {
+		always = no
+		tag = ORC
+		has_global_flag = OrdicaDisaster
+	}
+
+	option = {
+		name = ordica.33.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+#Total collapse if you keep failing
+country_event = {
+	id = ordica.34
+	title = ordica.34.t
+	desc = ordica.34.d
+	picture = REVOLUTION_eventPicture
+	fire_only_once = yes
+	major = yes
+
+	mean_time_to_happen = {
+		months = 5
+	}
+
+	trigger = {
+		tag = ORC
+		has_global_flag = OrdicaDisaster
+		if = {
+			limit = {
+				ai = no
+			}
+			check_variable = {
+				which = OrdicanFuckups
+				value = 6
+			}
+		}
+		else = {
+			check_variable = {
+				which = OrdicanFuckups
+				value = 3
+			}
+		}
+	}
+
+	option = {
+		name = ordica.34.a
+		ai_chance = { factor = 1 }
+		custom_tooltip = ORC_COLLAPSE
+		hidden_effect = {
+			release_all_subjects = yes
+			release = VOR
+			release = NAB
+			release = PRT
+			release = KLY
+			release = VAM
+			release = DKL
+			release = YUV
+			release = JNS
+			release = PIX
+			release = WLR
+			release = LAY
+			release = ROL
+			release = FST
+			release = KRH
+			release = POM
+			release = GNZ
+			release = NPX
+			release = RND
+			release = RNP
+			release = KAM
+			release = SPT
+			release = FLB
+			release = ARO
+			release = DNR
+			release = ALR
+			release = GLB
+			release = NES
+			release = CEL
+			release = YVR
+			release = NOX
+			release = MLY
+			release = MLD
+			release = RDU
+			release = RMX
+			release = DRA
+			release = BAF
+			release = TUL
+			5725 = {
+				owner = {
+					inherit = ROOT
+				}
+			}
+			every_province = {
+				limit = {
+					is_core = ROOT
+				}
+				remove_core = ROOT
+			}
+		}
+	}
+}
+
+#End of the disaster after ~3 years
+country_event = {
+	id = ordica.35
+	fire_only_once = yes
+	hidden = yes
+
+	mean_time_to_happen = {
+		months = 45
+	}
+
+	trigger = {
+		tag = ORC
+		has_global_flag = OrdicaDisaster
+	}
+
+	immediate = {
+		country_event = {
+			id = ordica.13
+		}
+	}
+
+	option = {
+		name = ordica.35.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+#Acceptance of kolyan and maldik
+country_event = {
+	id = ordica.36
+	title = ordica.36.t
+	desc = ordica.36.d
+	picture = ANGRY_MOB_eventPicture
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 15
+	}
+
+	trigger = {
+		tag = ORC
+		owns_core_province = 6262
+		owns_core_province = 6270
+		NOT = {
+			OR = {
+				exists = KLY
+				exists = MLD
+			}
+		}
+	}
+
+	option = { #Accept
+		name = ordica.36.a
+		ai_chance = { factor = 1 }
+		add_country_modifier = {
+			name = orc_vassal_acceptance
+			duration = -1
+		}
+		add_accepted_culture = Kolyan
+		add_accepted_culture = Maldikian
+		add_accepted_culture = Ora_Maldan
+	}
+
+	option = { #Culture conversion cost
+		name = ordica.36.b
+		ai_chance = { factor = 0 }
+		add_country_modifier = {
+			name = orc_ordicization
+			duration = 9125
+		}
+	}
+}
+
+#Nafan trollage
+country_event = {
+	id = ordica.37
+	title = ordica.37.t
+	desc = ordica.37.d
+	picture = BANKRUPTCY_eventPicture
+	fire_only_once = yes
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = ordica.37.a
+		ai_chance = { factor = 1 }
+		custom_tooltip = orcDestroyEmpire
+		hidden_effect = {
+			every_subject_country = {
+				grant_independence = yes
+			}
+			if = {
+				limit = {
+					tag = ORC
+				}
+				every_province = {
+					remove_core = ORC
+					remove_claim = ORC
+				}
+				every_owned_province = { #Ordisa
+					limit = {
+						OR = {
+							region = ordica_region
+							region = east_ordica_region
+							region = pextoglazia_region
+							region = pelig_region
+							region = west_emastalia_region
+							province_id = 5719
+						}
+						NOT = {
+							OR = {
+								area = east_yuvla_area
+								area = nabrosia_area
+								province_id = 5726
+								province_id = 5722
+							}
+						}
+					}
+					#cede_province = ORS
+					add_core = ORS
+				}
+				release = ORS
+				NAF = {
+					declare_war_with_cb = {
+    					who = ORS
+    					casus_belli = cb_annex
+						war_goal_province = 5190
+					}
+				}
+				ORS = {
+					every_owned_province = {
+						change_controller = NAF
+					}
+				}
+			}
+
+			every_owned_province = { #Yuvla
+				limit = {
+					OR = {
+						area = east_yuvla_area
+						region = walara_region
+						region = lomea_region
+						province_id = 6193
+					}
+				}
+				#cede_province = YUV
+				add_core = YUV
+			}
+			release = YUV
+			every_owned_province = { #Vamanya
+				limit = {
+					OR = {
+						region = vordor_region
+						region = west_ordica_region
+						region = napora_region
+						region = porlodya_region
+						region = west_estal_region
+						region = laglon_region
+						province_id = 5726
+						province_id = 5722
+						area = nabrosia_area
+					}
+					NOT = {
+						province_id = 6193
+					}
+				}
+				#cede_province = VAM
+				add_core = VAM
+			}
+			release = VAM
+			every_owned_province = { #Kletvar
+				limit = {
+					OR = {
+						region = western_naravam_region
+						region = eastern_naravam_region
+						region = gacil_superregion
+					}
+				}
+				#cede_province = KLV
+				add_core = KLV
+			}
+			release = KLV
+			every_owned_province = { #Kolya
+				limit = {
+					OR = {
+						superregion = central_estal_superregion
+						superregion = north_estal_superregion
+					}
+					NOT = {
+						OR = {
+							region = western_naravam_region
+							region = eastern_naravam_region
+							region = pelig_region
+							region = west_emastalia_region
+						}
+					}
+				}
+				#cede_province = KLY
+				add_core = KLY
+			}
+			release = KLY
+			every_province = {
+				limit = {
+					NOT = {
+						owned_by = ORS
+					}
+				}
+				remove_core = ORS
+				remove_claim = ORS
+			}
+			NAF = {
+				vassalize = YUV
+			}
+			country_event = {
+				id = ordica.39
+				days = 1
+			}
+		}
+	}
+}
+
+#Bafa
+country_event = {
+	id = ordica.38
+	hidden = yes
+	fire_only_once = yes
+
+	trigger = {
+		tag = BAF
+		has_global_flag = bafaPirateFlag
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		change_government = republic
+		add_government_reform = pirate_republic_reform
+		change_religion = lathvy
+	}
+
+	option = {
+		name = ordica.38.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = {
+	id = ordica.39
+	hidden = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		every_province = {
+			limit = {
+				owned_by = ROOT
+			}
+			cede_province = ORS
+		}
+	}
+
+	option = {
+		name = ordica.39.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+#Ordican Debuffs
+country_event = {
+	id = ordica.40
+	title = ordica.40.t
+	desc = ordica.40.d
+	picture = NUSANTARA_THRONE_eventPicture
+	fire_only_once = yes
+	major = yes
+	major_trigger = {
+		capital_scope = {
+			region = west_estal_region
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	trigger = {
+		tag = ORC
+	}
+
+	option = {
+		name = ordica.40.a
+		ai_chance = { factor = 1 }
+		custom_tooltip = OrdisaCrisisandMissions
+		add_country_modifier = {
+			name = orc_religious_intolerance
+			duration = -1
+		}
+		add_country_modifier = {
+			name = orc_disjointed_economy
+			duration = -1
+		}
+		add_country_modifier = {
+			name = orc_levvied_armies
+			duration = -1
+		}
+		custom_tooltip = OrdcaDebuffaExplain
+	}
+}
+
+#DEBUG - immediately backpedal and delete the modifiers cause the ordican mission tree doesnt exist
+country_event = {
+	id = ordica.41
+	title = ordica.41.t
+	desc = ordica.41.d
+	picture = NUSANTARA_THRONE_eventPicture
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	trigger = {
+		tag = ORC
+		has_country_modifier = orc_religious_intolerance
+	}
+
+	option = {
+		name = ordica.41.a
+		ai_chance = { factor = 1 }
+		remove_country_modifier = orc_religious_intolerance
+		remove_country_modifier = orc_disjointed_economy
+		remove_country_modifier = orc_levvied_armies
 	}
 }

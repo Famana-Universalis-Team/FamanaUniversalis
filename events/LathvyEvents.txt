@@ -1,9 +1,9 @@
-namespace = lathvy_piety
+namespace = lathvy
 #Vitrages
 country_event = {
-	id = lathvy_piety.1
-	title = lathvy_piety.1.t
-	desc = lathvy_piety.1.d
+	id = lathvy.1
+	title = lathvy.1.t
+	desc = lathvy.1.d
 	picture = ORTHODOX_eventPicture
 	
 	is_triggered_only = yes
@@ -21,13 +21,13 @@ country_event = {
 	
 	option = {
 		ai_chance = { factor = 60 }
-		name = lathvy_piety.1.a #leavefire
+		name = lathvy.1.a #leavefire
 		add_piety = 0.10
 		add_country_modifier = { name = lathvy_fire_pits duration = 540 }
 		}
 	option = {
 		ai_chance = { factor = 40 }
-		name = lathvy_piety.1.b #allowvitrages
+		name = lathvy.1.b #allowvitrages
 		add_piety = -0.10
 		add_prestige = 15
 	}
@@ -35,15 +35,15 @@ country_event = {
 
 #LostYomtanians
 country_event = {
-	id = lathvy_piety.2
-	title = lathvy_piety.2.t
-	desc = lathvy_piety.2.d
+	id = lathvy.2
+	title = lathvy.2.t
+	desc = lathvy.2.d
 	picture = ANGRY_MOB_eventPicture
 	
 	is_triggered_only = yes
 
 	trigger = {
-		 uses_piety = yes  
+		uses_piety = yes  
 	}
 	
 	mean_time_to_happen = {
@@ -55,7 +55,7 @@ country_event = {
 	
 	option = {
 		ai_chance = { factor = 60 }
-		name = lathvy_piety.2.a #killthem
+		name = lathvy.2.a #killthem
 		add_piety = 0.15
 		add_estate_loyalty = {
 		estate = estate_church
@@ -65,7 +65,7 @@ country_event = {
 	}
 	option = {
 		ai_chance = { factor = 40 }
-		name = lathvy_piety.2.b #allowyomtanians
+		name = lathvy.2.b #allowyomtanians
 		add_piety = -0.15
 		add_country_modifier = { name = lathvy_let_yoms_go duration = 540 }
 	}
@@ -73,15 +73,15 @@ country_event = {
 
 #pilgrims
 country_event = {
-	id = lathvy_piety.3
-	title = lathvy_piety.3.t
-	desc = lathvy_piety.3.d
+	id = lathvy.3
+	title = lathvy.3.t
+	desc = lathvy.3.d
 	picture = EUROPEAN_REFUGEES_eventPicture
 	
 	is_triggered_only = yes
 
 	trigger = {
-		 uses_piety = yes  	
+		uses_piety = yes  	
 	}
 	
 	mean_time_to_happen = {
@@ -93,7 +93,7 @@ country_event = {
 	
 	option = {
 		ai_chance = { factor = 50 }
-		name = lathvy_piety.3.a #helppilgrims
+		name = lathvy.3.a #helppilgrims
 		add_adm_power = -30
 		add_mil_power = -30
 		add_piety = 0.10
@@ -101,7 +101,7 @@ country_event = {
 	}
 	option = {
 		ai_chance = { factor = 50 }
-		name = lathvy_piety.3.b #nah
+		name = lathvy.3.b #nah
 		add_piety = -0.10
 		add_country_modifier = { name = lathvy_unsafe_pilgrims duration = 360 }
 	}
@@ -109,15 +109,15 @@ country_event = {
 
 #reliquiary
 country_event = {
-	id = lathvy_piety.4
-	title = lathvy_piety.4.t
-	desc = lathvy_piety.4.d
+	id = lathvy.4
+	title = lathvy.4.t
+	desc = lathvy.4.d
 	picture = IMPORTANT_STATUE_eventPicture
 	
 	is_triggered_only = yes
 
 	trigger = {
-		 uses_piety = yes  	
+		uses_piety = yes  	
 	}
 	
 	mean_time_to_happen = {
@@ -128,20 +128,20 @@ country_event = {
 	
 	option = {
 		ai_chance = { factor = 20 }
-		name = lathvy_piety.4.a #rich
+		name = lathvy.4.a #rich
 		add_years_of_income = -0.5
 		add_prestige = 15
 		add_piety = 0.15
 	}
 	option = {
 		ai_chance = { factor = 40 }
-		name = lathvy_piety.4.b #normal
+		name = lathvy.4.b #normal
 		add_years_of_income = -0.2
 		add_piety = 0.05
 	}
 	option = {
 		ai_chance = { factor = 40 }
-		name = lathvy_piety.4.c #nah
+		name = lathvy.4.c #nah
 		add_piety = -0.10
 		add_estate_loyalty = {
 			estate = estate_church
@@ -152,18 +152,17 @@ country_event = {
 
 #heir
 country_event = {
-	id = lathvy_piety.5
-	title = lathvy_piety.5.t
-	desc = lathvy_piety.5.d
+	id = lathvy.5
+	title = lathvy.5.t
+	desc = lathvy.5.d
 	picture = SPY_eventPicture
 	
 	is_triggered_only = yes
 
 	trigger = {
-		AND = {
-			uses_piety = yes
-			has_heir = yes
-		}
+		uses_piety = yes
+		has_heir = yes
+		heir_age = 15
 	}
 
 	immediate = {
@@ -175,7 +174,7 @@ country_event = {
 	
 	option = {
 		ai_chance = { factor = 10 }
-		name = lathvy_piety.5.a #execute
+		name = lathvy.5.a #execute
 			kill_heir = {}
 			add_piety = 0.15
 			add_legitimacy = 15
@@ -183,18 +182,18 @@ country_event = {
 		}
 	option = {
 		ai_chance = { factor = 45 }
-		name = lathvy_piety.5.b #punish
+		name = lathvy.5.b #punish
 		add_piety = 0.05
 		add_estate_influence_modifier = {
     		estate = estate_church
-			desc = lathvy_piety_heir
+			desc = lathvy_heir
     		influence = 10
     		duration = 360
 	    }
 }
 	option = {
 		ai_chance = { factor = 45 }
-		name = lathvy_piety.5.c #nah
+		name = lathvy.5.c #nah
 		add_piety = -0.15
 		add_legitimacy = -10
 		add_devotion = -10
@@ -202,9 +201,9 @@ country_event = {
 }
 # Returning Scholars
 country_event = {
-	id = lathvy_piety.6
-	title = lathvy_piety.6.t
-	desc = lathvy_piety.6.d
+	id = lathvy.6
+	title = lathvy.6.t
+	desc = lathvy.6.d
 	picture = BIG_BOOK_eventPicture
 	
 	is_triggered_only = yes
@@ -223,7 +222,7 @@ country_event = {
 	}
 	
 	option = {
-		name = lathvy_piety.6.a
+		name = lathvy.6.a
 		ai_chance = {
 			factor = 60
 			
@@ -232,7 +231,7 @@ country_event = {
 		add_adm_power = 10
 	}
 	option = {
-		name = lathvy_piety.6.b
+		name = lathvy.6.b
 		ai_chance = {
 			factor = 40
 			
@@ -243,9 +242,9 @@ country_event = {
 }
 # Latvhy Branches Rally Support
 country_event = {
-	id = lathvy_piety.7
-	title = lathvy_piety.7.t
-	desc = lathvy_piety.7.d
+	id = lathvy.7
+	title = lathvy.7.t
+	desc = lathvy.7.d
 	picture = STREET_SPEECH_eventPicture
 	
 	is_triggered_only = yes
@@ -264,7 +263,7 @@ country_event = {
 	}
 	
 	option = {
-		name = lathvy_piety.7.a
+		name = lathvy.7.a
 		ai_chance = {
 			factor = 60
 		}
@@ -272,7 +271,7 @@ country_event = {
 		add_legitimacy = 10
 	}
 	option = {
-		name = lathvy_piety.7.b
+		name = lathvy.7.b
 		ai_chance = {
 			factor = 40
 		}
@@ -282,9 +281,9 @@ country_event = {
 }
 # Enjoining Right and Forbidding Wrong
 country_event = {
-	id = lathvy_piety.8
-	title = lathvy_piety.8.t
-	desc = lathvy_piety.8.d
+	id = lathvy.8
+	title = lathvy.8.t
+	desc = lathvy.8.d
 	picture = CITY_DEVELOPMENT_eventPicture
 
 	is_triggered_only = yes
@@ -301,7 +300,7 @@ country_event = {
 	}
 	
 	option = {
-		name = lathvy_piety.8.a
+		name = lathvy.8.a
 		ai_chance = {
 			factor = 60
 		}
@@ -309,7 +308,7 @@ country_event = {
 		add_adm_power = 40
 	}
 	option = {
-		name = lathvy_piety.8.b
+		name = lathvy.8.b
 		ai_chance = {
 			factor = 40
 		}
@@ -319,9 +318,9 @@ country_event = {
 }
 # Debate over branch Practices
 country_event = {
-	id = lathvy_piety.9
-	title = lathvy_piety.9.t
-	desc = lathvy_piety.9.d
+	id = lathvy.9
+	title = lathvy.9.t
+	desc = lathvy.9.d
 	picture = REFORM_eventPicture
 	
 	is_triggered_only = yes
@@ -338,14 +337,14 @@ country_event = {
 	}
 	
 	option = {
-		name = lathvy_piety.9.a
+		name = lathvy.9.a
 		ai_chance = {
 			factor = 60
 		}
 		add_piety = 0.1
 	}
 	option = {
-		name = lathvy_piety.9.b
+		name = lathvy.9.b
 		ai_chance = {
 			factor = 40
 		}
@@ -354,9 +353,9 @@ country_event = {
 }
 # Purification of Tax Laws
 country_event = {
-	id = lathvy_piety.10
-	title = lathvy_piety.10.t
-	desc = lathvy_piety.10.d
+	id = lathvy.10
+	title = lathvy.10.t
+	desc = lathvy.10.d
 	picture = COURT_eventPicture
 	
 	is_triggered_only = yes
@@ -375,7 +374,7 @@ country_event = {
 	}
 	
 	option = {
-		name = lathvy_piety.10.a
+		name = lathvy.10.a
 		ai_chance = {
 			factor = 60
 		}
@@ -386,7 +385,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = lathvy_piety.10.b
+		name = lathvy.10.b
 		ai_chance = {
 			factor = 40
 		}
@@ -395,9 +394,9 @@ country_event = {
 }
 # Mystics and Storytellers
 country_event = {
-	id = lathvy_piety.11
-	title = lathvy_piety.11.t
-	desc = lathvy_piety.11.d
+	id = lathvy.11
+	title = lathvy.11.t
+	desc = lathvy.11.d
 	picture = REFORM_eventPicture
 	
 	is_triggered_only = yes
@@ -414,14 +413,14 @@ country_event = {
 	}
 
 	option = {
-		name = lathvy_piety.11.a
+		name = lathvy.11.a
 		ai_chance = {
 			factor = 60
 		}
 		add_piety = 0.1
 	}
 	option = {
-		name = lathvy_piety.11.b
+		name = lathvy.11.b
 		ai_chance = {
 			factor = 40
 		}
@@ -430,9 +429,9 @@ country_event = {
 }
 # Trade Guilds and Fraternities
 country_event = {
-	id = lathvy_piety.12
-	title = lathvy_piety.12.t
-	desc = lathvy_piety.12.d
+	id = lathvy.12
+	title = lathvy.12.t
+	desc = lathvy.12.d
 	picture = COURT_eventPicture
 	
 	is_triggered_only = yes
@@ -488,7 +487,7 @@ country_event = {
 	}
 	
 	option = {
-		name = lathvy_piety.12.a
+		name = lathvy.12.a
 		ai_chance = {
 			factor = 60
 			
@@ -497,7 +496,7 @@ country_event = {
 		add_prestige = 10
 	}
 	option = {
-		name = lathvy_piety.12.b
+		name = lathvy.12.b
 		ai_chance = {
 			factor = 40
 		}
@@ -513,9 +512,9 @@ country_event = {
 }
 # Orders growing in popularity in [new_province.GetName]
 country_event = {
-	id = lathvy_piety.13
-	title = lathvy_piety.13.t
-	desc = lathvy_piety.13.d
+	id = lathvy.13
+	title = lathvy.13.t
+	desc = lathvy.13.d
 	picture = REFORM_eventPicture
 	goto = new_province
 	
@@ -548,7 +547,7 @@ country_event = {
 	}
 	
 	option = {
-		name = lathvy_piety.13.a
+		name = lathvy.13.a
 		ai_chance = {
 			factor = 60
 			
@@ -562,7 +561,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = lathvy_piety.13.b
+		name = lathvy.13.b
 		ai_chance = {
 			factor = 40
 			
@@ -578,9 +577,9 @@ country_event = {
 }
 # "Disregard of the Lathvy law?"
 country_event = {
-	id = lathvy_piety.14
-	title = lathvy_piety.14.t
-	desc = lathvy_piety.14.d
+	id = lathvy.14
+	title = lathvy.14.t
+	desc = lathvy.14.d
 	picture = COURT_eventPicture
 	
 	is_triggered_only = yes
@@ -601,13 +600,13 @@ country_event = {
 	}
 	
 	option = {
-		name = lathvy_piety.14.a
+		name = lathvy.14.a
 		ai_chance = { factor = 70 }
 		add_piety = 0.25
 		add_estate_church_loyalty_effect = yes
 	}
 	option = {
-		name = lathvy_piety.14.b
+		name = lathvy.14.b
 		ai_chance = { factor = 30 }
 		reduce_estate_church_loyalty_effect = yes
 		add_piety = -0.1
@@ -619,9 +618,9 @@ country_event = {
 }
 # Friday Prayer
 country_event = {
-	id = lathvy_piety.15
-	title = lathvy_piety.15.t
-	desc = lathvy_piety.15.d
+	id = lathvy.15
+	title = lathvy.15.t
+	desc = lathvy.15.d
 	picture = PRAYING_eventPicture
 	
 	is_triggered_only = yes
@@ -642,7 +641,7 @@ country_event = {
 	}
 	
 	option = {
-		name = lathvy_piety.15.a
+		name = lathvy.15.a
 		ai_chance = { 
 			factor = 100
 		}
@@ -654,7 +653,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = lathvy_piety.15.b
+		name = lathvy.15.b
 		ai_chance = { 
 			factor = 0
 		}
@@ -664,10 +663,10 @@ country_event = {
 }
 
 #choose school
-country_event = { #TRADITIONAL & RINI
-	id = lathvy_piety.16
-	title = lathvy_piety.16.t
-	desc = lathvy_piety.16.d
+country_event = { #TRADITIONAL
+	id = lathvy.16
+	title = lathvy.16.t
+	desc = lathvy.16.desc
 	picture = PRAYING_eventPicture
 	
 	mean_time_to_happen = {
@@ -676,44 +675,50 @@ country_event = { #TRADITIONAL & RINI
 	
 	trigger = {
 		OR = {
-			religion = lathvy
+			has_country_flag = no_nafer_flag
 			AND = {
-				religion = rini
-				NOT = {
-					tag = NAF
-				}
-			}
-		}
-		NOT = {
-			OR = {
-				religious_school = {
-					group = lathvy_group
-					school = nafan_school
-				}
-				religious_school = {
-					group = lathvy_group
-					school = pextoglazian_school
-				}
-				religious_school = {
-					group = lathvy_group
-					school = maxan_school
-				}
-				religious_school = {
-					group = lathvy_group
-					school = walaran_school
-				}
-				religious_school = {
-					group = lathvy_group
-					school = celzian_school
-				}
-			}
-		}
-		any_known_country = {
-			OR = {
 				religion = lathvy
-				religion = rini
+				NOT = {
+					OR = {
+						religious_school = {
+							group = lathvy_group
+							school = nafan_school
+						}
+						religious_school = {
+							group = lathvy_group
+							school = pextoglazian_school
+						}
+						religious_school = {
+							group = lathvy_group
+							school = maxan_school
+						}
+						religious_school = {
+							group = lathvy_group
+							school = walaran_school
+						}
+						religious_school = {
+							group = lathvy_group
+							school = resteman_school
+						}
+						religious_school = {
+							group = lathvy_group
+							school = celzian_school
+						}
+						religious_school = {
+							group = lathvy_group
+							school = kolyan_school
+						}
+					}
+				}
+				any_known_country = {
+					religion_group = lathvy_group
+				}
 			}
 		}
+	}
+
+	immediate = {
+		clr_country_flag = no_nafer_flag
 	}
 	
 	mean_time_to_happen = {
@@ -721,7 +726,7 @@ country_event = { #TRADITIONAL & RINI
 	}
 	
 	option = { #nafan
-		name = lathvy_piety.16.a
+		name = lathvy.16.a
 		trigger = {
 			has_global_flag = NafaHappened
 			any_known_country = {
@@ -729,6 +734,9 @@ country_event = { #TRADITIONAL & RINI
 					group = lathvy_group
 					school = nafan_school
 				}
+			}
+			NOT = {
+				has_country_flag = no_nafer_flag
 			}
 		}
 		ai_chance = { 
@@ -762,6 +770,14 @@ country_event = { #TRADITIONAL & RINI
 					is_enemy = NAF
 				}
 			}
+			modifier = {
+				factor = 1000
+				is_subject_of = NAF
+			}
+			modifier = {
+				factor = 4
+				alliance_with = NAF
+			}
 		}
 		set_religious_school = {
 			group = lathvy_group
@@ -769,15 +785,15 @@ country_event = { #TRADITIONAL & RINI
 		}
 	}
 	option = { #pexto
-		name = lathvy_piety.16.b
+		name = lathvy.16.b
 		trigger = {
 			NOT = { has_global_flag = PomlenDestroyed }
-			any_known_country = {
-				religious_school = {
-					group = lathvy_group
-					school = pextoglazian_school
-				}
-			}
+			#any_known_country = {
+			#	religious_school = {
+			#		group = lathvy_group
+			#		school = pextoglazian_school
+			#	}
+			#}
 		}
 		ai_chance = { 
 			factor = 1
@@ -829,15 +845,15 @@ country_event = { #TRADITIONAL & RINI
 		}
 	}
 	option = { #maxan
-		name = lathvy_piety.16.c
-		trigger = {
-			any_known_country = {
-				religious_school = {
-					group = lathvy_group
-					school = maxan_school
-				}
-			}
-		}
+		name = lathvy.16.c
+		#trigger = {
+		#	any_known_country = {
+		#		religious_school = {
+		#			group = lathvy_group
+		#			school = maxan_school
+		#		}
+		#	}
+		#}
 		ai_chance = {
 			factor = 1
 			modifier = {
@@ -874,7 +890,7 @@ country_event = { #TRADITIONAL & RINI
 		}
 	}
 	option = { #Walaran
-		name = lathvy_piety.16.d
+		name = lathvy.16.d
 		ai_chance = { 
 			factor = 0.25
 			modifier = {
@@ -910,7 +926,7 @@ country_event = { #TRADITIONAL & RINI
 	}
 	
 	option = { #Celzian
-		name = lathvy_piety.16.e
+		name = lathvy.16.e
 		ai_chance = { 
 			factor = 1
 			modifier = {
@@ -921,7 +937,7 @@ country_event = { #TRADITIONAL & RINI
 			}
 			modifier = {
 				factor = 20
-				primary_culture = East_Ordican
+				primary_culture = Celzian
 			}
 			modifier = {
 				factor = 10
@@ -943,17 +959,264 @@ country_event = { #TRADITIONAL & RINI
 			has_global_flag = CelzionHappened
 		}
 	}
+
+	option = { #Kolyan
+		name = lathvy.16.f
+		ai_chance = {
+			factor = 2
+			modifier = {
+				factor = 0
+				NOT = {
+					capital_scope = {
+						OR = {
+							superregion = north_estal_superregion
+							superregion = gacil_superregion
+						}
+					}
+				}
+			}
+			modifier = {
+				factor = 20
+				OR = {
+					primary_culture = Nirkifi
+					primary_culture = Rduma
+					primary_culture = Nirkifi
+					primary_culture = Burgavian
+					primary_culture = Shoowtan
+					primary_culture = Veberi
+					primary_culture = Rouragi
+				}
+			}
+			modifier = {
+				factor = 2
+				religion = rochoni
+			}
+		}
+		set_religious_school = {
+			group = lathvy_group
+			school = kolyan_school
+		}
+		trigger = {
+			has_global_flag = KolyaHappened
+		}
+	}
+
+	option = { #Resteman
+		name = lathvy.16.g
+		ai_chance = { 
+			factor = 0.25
+			modifier = {
+				factor = 3
+				capital_scope = {
+					superregion = west_estal_superregion
+				}
+			}
+			modifier = {
+				factor = 100
+				capital_scope = {
+					superregion = oppia_superregion
+				}
+			}
+			modifier = {
+				factor = 20
+				primary_culture = Feniki
+			}
+			modifier = {
+				factor = 10
+				tag = RES
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					is_rival = RES
+					is_enemy = RES
+				}
+			}
+		}
+		set_religious_school = {
+			group = lathvy_group
+			school = resteman_school
+		}
+		trigger = {
+			has_global_flag = RestemaHappened
+		}
+	}
+}
+
+#choose school
+country_event = { #ROCHONI
+	id = lathvy.24
+	title = lathvy.24.t
+	desc = lathvy.24.desc
+	picture = PRAYING_eventPicture
+	
+	mean_time_to_happen = {
+		days = 30
+	}
+	
+	trigger = {
+		religion = rochoni
+		NOT = {
+			OR = {
+				religious_school = {
+					group = lathvy_group
+					school = celzian_school
+				}
+				religious_school = {
+					group = lathvy_group
+					school = kolyan_school
+				}
+			}
+		}
+		any_known_country = {
+			religion_group = lathvy_group
+		}
+		OR = {
+			has_global_flag = CelzionHappened
+			has_global_flag = KolyaHappened
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = { #Celzian
+		name = lathvy.16.e
+		ai_chance = { 
+			factor = 1
+			modifier = {
+				factor = 2
+				capital_scope = {
+					superregion = west_estal_superregion
+				}
+			}
+			modifier = {
+				factor = 20
+				primary_culture = Celzian
+			}
+			modifier = {
+				factor = 10
+				tag = CEL
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					is_rival = CEL
+					is_enemy = CEL
+				}
+			}
+		}
+		set_religious_school = {
+			group = lathvy_group
+			school = celzian_school
+		}
+		trigger = {
+			has_global_flag = CelzionHappened
+		}
+	}
+
+	option = { #Kolyan
+		name = lathvy.16.f
+		ai_chance = {
+			factor = 2
+			#modifier = {
+			#	factor = 0
+			#	NOT = {
+			#		capital_scope = {
+			#			OR = {
+			#				superregion = north_estal_superregion
+			#				superregion = gacil_superregion
+			#			}
+			#		}
+			#	}
+			#}
+			modifier = {
+				factor = 20
+				OR = {
+					primary_culture = Nirkifi
+					primary_culture = Rduma
+					primary_culture = Nirkifi
+					primary_culture = Burgavian
+					primary_culture = Shoowtan
+					primary_culture = Veberi
+					primary_culture = Rouragi
+				}
+			}
+			#modifier = {
+			#	factor = 2
+			#	religion = rochoni
+			#}
+		}
+		set_religious_school = {
+			group = lathvy_group
+			school = kolyan_school
+		}
+		trigger = {
+			has_global_flag = KolyaHappened
+		}
+	}
+}
+
+#choose school
+country_event = { #RINI
+	id = lathvy.25
+	title = lathvy.25.t
+	desc = lathvy.25.desc
+	picture = PRAYING_eventPicture
+	
+	mean_time_to_happen = {
+		days = 30
+	}
+	
+	trigger = {
+		religion = rini
+		NOT = {
+			religious_school = {
+				group = lathvy_group
+				school = nafan_school
+			}
+		}
+		any_known_country = {
+			religion_group = lathvy_group
+		}
+		has_global_flag = NafaHappened
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = { #nafan
+		name = lathvy.16.a
+		trigger = {
+			has_global_flag = NafaHappened
+			#any_known_country = {
+			#	religious_school = {
+			#		group = lathvy_group
+			#		school = nafan_school
+			#	}
+			#}
+		}
+		ai_chance = { 
+			factor = 1
+		}
+		set_religious_school = {
+			group = lathvy_group
+			school = nafan_school
+		}
+	}
 }
 
 country_event = { #Destroy Pomlen
-	id = lathvy_piety.17
-	title = lathvy_piety.17.t
-	desc = lathvy_piety.17.d
+	id = lathvy.17
+	title = lathvy.17.t
+	desc = lathvy.17.d
 	picture = COUNTRY_COLLAPSE_eventPicture
 	is_triggered_only = yes
 
 	option = {
-		name = lathvy_piety.17.a
+		name = lathvy.17.a
 		ai_chance = { factor = 1 }
 		add_piety = -1
 		custom_tooltip = POMLEN_DESTROYED
@@ -967,7 +1230,7 @@ country_event = { #Destroy Pomlen
 					}
 				}
 				country_event = {
-					id = lathvy_piety.20
+					id = lathvy.20
 					days = 30
 				}
 			}
@@ -978,7 +1241,7 @@ country_event = { #Destroy Pomlen
 				5285 = {
 					owner = {
 						country_event = {
-							id = lathvy_piety.18
+							id = lathvy.18
 							days = 1
 						}
 					}
@@ -989,14 +1252,14 @@ country_event = { #Destroy Pomlen
 }
 
 country_event = { #Accept Walarans?
-	id = lathvy_piety.18
-	title = lathvy_piety.18.t
-	desc = lathvy_piety.18.d
+	id = lathvy.18
+	title = lathvy.18.t
+	desc = lathvy.18.d
 	picture = DEBATE_REPUBLICAN_eventPicture
 	is_triggered_only = yes
 
 	option = {
-		name = lathvy_piety.18.a
+		name = lathvy.18.a
 		ai_chance = {
 			factor = 1
 			modifier = {
@@ -1014,12 +1277,12 @@ country_event = { #Accept Walarans?
 			}
 		}
 		country_event = {
-			id = lathvy_piety.19
+			id = lathvy.19
 			days = 1
 		}
 	}
 	option = {
-		name = lathvy_piety.18.b
+		name = lathvy.18.b
 		ai_chance = {
 			factor = 1
 			modifier = {
@@ -1034,9 +1297,9 @@ country_event = { #Accept Walarans?
 }
 
 country_event = { #Accept Walarans.
-	id = lathvy_piety.19
-	title = lathvy_piety.19.t
-	desc = lathvy_piety.19.d
+	id = lathvy.19
+	title = lathvy.19.t
+	desc = lathvy.19.d
 	picture = POPE_PREACHING_eventPicture
 	is_triggered_only = yes
 
@@ -1047,20 +1310,20 @@ country_event = { #Accept Walarans.
 			school = walaran_school
 		}
 		add_prestige = 20
-		name = lathvy_piety.19.a
+		name = lathvy.19.a
 		ai_chance = { factor = 2 }
 	}
 }
 
 country_event = { #New School
-	id = lathvy_piety.20
-	title = lathvy_piety.20.t
-	desc = lathvy_piety.20.d
+	id = lathvy.20
+	title = lathvy.20.t
+	desc = lathvy.20.d
 	picture = POPE_PREACHING_eventPicture
 	is_triggered_only = yes
 
 	option = {
-		name = lathvy_piety.20.a
+		name = lathvy.20.a
 		ai_chance = { 
 			factor = 0.25
 			modifier = {
@@ -1095,7 +1358,7 @@ country_event = { #New School
 		}
 	}
 	option = {
-		name = lathvy_piety.20.b
+		name = lathvy.20.b
 		ai_chance = { 
 			factor = 1
 			modifier = {
@@ -1106,7 +1369,7 @@ country_event = { #New School
 			}
 			modifier = {
 				factor = 20
-				primary_culture = East_Ordican
+				primary_culture = Celzian
 			}
 			modifier = {
 				factor = 10
@@ -1126,7 +1389,7 @@ country_event = { #New School
 		}
 	}
 	option = {
-		name = lathvy_piety.20.c
+		name = lathvy.20.c
 		ai_chance = { 
 			factor = 1
 			modifier = {
@@ -1165,6 +1428,325 @@ country_event = { #New School
 		}
 		trigger = {
 			has_global_flag = NafaHappened
+		}
+	}
+}
+
+#Illegal prayer books
+country_event = {
+	id = lathvy.21
+	title = lathvy.21.t
+	desc = lathvy.21.d
+	picture = BIG_BOOK_eventPicture
+	
+	is_triggered_only = yes
+
+	trigger = {
+		uses_piety = yes
+		has_institution = renaissance
+		OR = {
+			religious_school = { #Kolyan and Maxan don't use prayer books
+				group = lathvy_group
+				school = nafan_school
+			}
+			religious_school = {
+				group = lathvy_group
+				school = celzian_school
+			}
+			religious_school = {
+				group = lathvy_group
+				school = pextoglazian_school
+			}
+			religious_school = {
+				group = lathvy_group
+				school = walaran_school
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+	}
+	
+	option = {
+		ai_chance = { factor = 2 }
+		name = lathvy.21.a #Burn them!
+		add_piety = 0.10
+		
+	}
+	option = {
+		ai_chance = { factor = 1 }
+		name = lathvy.21.b #Let them be.
+		add_piety = -0.05
+		add_country_modifier = { name = freedom_of_speech_lathvy duration = 912 }
+	}
+}
+
+#Heir is naughty
+country_event = {
+	id = lathvy.22
+	title = lathvy.22.t
+	desc = lathvy.22.d
+	picture = ACCUSATION_eventPicture
+	
+	is_triggered_only = yes
+
+	trigger = {
+		uses_piety = yes
+		has_heir = yes
+		heir_age = 16 #dont want to promote child drinking
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+	}
+	
+	option = {
+		ai_chance = { factor = 2 }
+		name = lathvy.22.a #Expose him
+		add_piety = -0.10
+		add_heir_claim = -20
+		add_estate_loyalty = {
+			estate = estate_church
+			loyalty = 10
+		}
+	}
+	option = {
+		ai_chance = { factor = 1 }
+		name = lathvy.22.b #Cover him up
+		add_corruption = 0.50
+	}
+}
+
+#Visiting regions as High Priest
+country_event = {
+	id = lathvy.23
+	title = lathvy.23.t
+	desc = lathvy.23.d
+	picture = POPE_PREACHING_eventPicture
+	
+	is_triggered_only = yes
+
+	trigger = {
+		uses_piety = yes
+		OR = {
+			AND = {
+				religious_school = {
+					group = lathvy_group
+					school = pextoglazian_school
+				}
+				owns_core_province = 5337
+			}
+			AND = {
+				religious_school = {
+					group = lathvy_group
+					school = walaran_school
+				}
+				owns_core_province = 5285
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		hidden_effect = {
+			random_known_country = {
+				limit = {
+					capital_scope = {
+						AND = {
+							NOT = {
+								any_province_in_state = {
+									OR = {
+										has_province_modifier = recently_visited_lathvy
+										has_province_flag = possible_hp_destination
+									}
+								}
+							}
+							owner = {
+								NOT = { religion_group = lathvy_group }
+							}
+						}
+					}
+				}
+				capital_scope = {
+					save_event_target_as = Destination1
+					set_province_flag = possible_hp_destination
+				}
+			}
+			random_known_country = {
+				limit = {
+					capital_scope = {
+						AND = {
+							NOT = {
+								any_province_in_state = {
+									OR = {
+										has_province_modifier = recently_visited_lathvy
+										has_province_flag = possible_hp_destination
+									}
+								}
+							}
+							owner = {
+								NOT = { religion_group = lathvy_group }
+							}
+						}
+					}
+				}
+				capital_scope = {
+					save_event_target_as = Destination2
+					set_province_flag = possible_hp_destination
+				}
+			}
+		}
+	}
+	
+	option = {
+		ai_chance = { factor = 2 }
+		name = lathvy.23.a #Des1
+		goto = Destination1
+		event_target:Destination1 = {
+			clr_province_flag = possible_hp_destination
+			every_province_in_state = {
+				if = {
+					limit = {
+						is_capital = yes
+					}
+					add_province_modifier = {
+						name = recently_visited_lathvy
+						duration = 7300
+						hidden = yes
+					}
+					owner = {
+						if = {
+							limit = {
+								NOT = {
+									religion_group = lathvy_group
+								}
+							}
+							country_event = {
+								id = lathvy.26
+								days = 30
+							}
+							add_opinion = {
+								who = ROOT
+								modifier = pope_visit_opinion
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	option = {
+		ai_chance = { factor = 1 }
+		name = lathvy.23.b #Des2
+		goto = Destination2
+		event_target:Destination2 = {
+			clr_province_flag = possible_hp_destination
+			every_province_in_state = {
+				if = {
+					limit = {
+						is_capital = yes
+					}
+					add_province_modifier = {
+						name = recently_visited_lathvy
+						duration = 7300
+						hidden = yes
+					}
+					owner = {
+						if = {
+							limit = {
+								NOT = {
+									religion_group = lathvy_group
+								}
+							}
+							country_event = {
+								id = lathvy.26
+								days = 30
+							}
+							add_opinion = {
+								who = ROOT
+								modifier = pope_visit_opinion
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+#High Priest Visits
+country_event = {
+	id = lathvy.26
+	title = lathvy.26.t
+	desc = lathvy.26.d
+	picture = POPE_PREACHING_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		ai_chance = { factor = 1 }
+		name = lathvy.26.a
+		add_country_modifier = {
+			name = pope_visit_lathvy
+			duration = 1825
+		}
+	}
+}
+
+#owns hasia
+country_event = {
+	id = lathvy.27
+	title = lathvy.27.t
+	desc = lathvy.27.d
+	picture = SIEGE_eventPicture
+	fire_only_once = yes
+	
+	trigger = {
+		religion_group = lathvy_group
+		owns = 5695
+		NOT = {
+			OR = {
+				tag = UMZ
+				tag = NAF
+				tag = LAG
+				tag = RES
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 7
+	}
+
+	option = {
+		ai_chance = { factor = 1 }
+		name = lathvy.27.a
+		5695 = {
+			change_culture = ROOT
+			change_religion = ROOT
+			add_core = ROOT
+			add_base_tax = -3
+			add_base_production = -3
+			add_base_manpower = -3
+		}
+	}
+
+	option = {
+		ai_chance = { factor = 0 }
+		name = lathvy.27.b
+		add_prestige = -25
+		5695 = {
+			add_devastation	= -50
 		}
 	}
 }

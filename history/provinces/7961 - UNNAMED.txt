@@ -6,19 +6,20 @@ hre = no
 base_tax = 1
 base_production = 1
 base_manpower = 1
-capital = "UNNAMED"
-is_city = yes
-extra_cost = 1
+capital = "Osirva"
+ 
+
 discovered_by = great_desert_tech_gr
 discovered_by = west_gomic_tech_gr
-discovered_by = east_gomic_tech_gr
 
 add_permanent_province_modifier = {
 	name = great_desert_modifier
 	duration = -1
 }
  
-
+native_size = 1
+native_ferocity = 4
+native_hostileness = 4
 
 
 

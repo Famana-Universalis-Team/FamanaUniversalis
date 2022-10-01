@@ -1,0 +1,1541 @@
+antiash_1 = {
+	slot = 1
+    generic = no
+    ai = yes
+	potential = {
+        NOT = { map_setup = map_setup_random }
+		OR = {
+		tag = KKR
+		tag = ALU
+		tag = ATM
+		}
+    }
+	has_country_shield = yes
+	antiash_raid = {
+		icon =  mission_raid_on_iceland
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = ANTIASH_RAID_5_CAPITALS
+				has_country_flag = antiash_raided_5_capitals	
+			}
+		}
+		effect = {
+			capital_scope = {
+				add_base_tax = 4
+				add_base_production = 4
+				add_base_manpower = 4
+			}
+			set_global_flag = antiash_mission_finished
+		}
+	}
+	antiash_homeland = {
+		icon =  mission_mosque
+		position = 4
+		required_missions = {
+            antiash_population
+        }
+		trigger = {
+		owns_core_province = 7967
+		owns_core_province = 7965
+		owns_core_province = 7964
+		owns_core_province = 7963
+		owns_core_province = 7966
+        }
+		provinces_to_highlight = {
+			OR = {
+			area = area_234
+			province_id = 7967
+			}
+		}
+		effect = {
+			add_years_of_income = 0.25
+			add_country_modifier = {
+				name = "antiash_nostalgic_journey"
+				duration = 9125 #25 years
+			}
+		}	
+	}
+	antiash_tokum = {
+		icon =  mission_conquer_air 
+		required_missions = {
+            antiash_homeland
+        }
+		provinces_to_highlight = {
+			OR = {
+			area = kars_area
+			province_id = 5150
+			}
+		}
+		trigger = {
+			owns_core_province = 5150
+			owns_core_province = 5813
+			owns_core_province = 5812
+			owns_core_province = 5815
+			owns_core_province = 7984
+			owns_core_province = 5814
+        }
+		effect = {
+			okus_area = {
+				add_permanent_claim = ROOT
+			}
+			maky_region = {
+				discover_country = ROOT
+			}
+			hidden_effect = {
+				country_event = { 
+				id = bosisi.10
+				days = 30
+				}
+			}	
+		}	
+	}
+	antiash_kars = {
+		icon =  mission_conquer_timbuktu
+		required_missions = {
+            antiash_tokum
+		}
+		trigger = {
+			okus_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			5145 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			5149 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			5143 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+        }
+		provinces_to_highlight = {
+			OR = {
+			area = okus_area
+			province_id = 5145
+			province_id = 5149
+			province_id = 5143
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+			5556 = {
+			cede_province = ROOT
+			add_core = ROOT
+			change_religion = ROOT
+			change_culture = ROOT
+			}
+			5146 = {
+			cede_province = ROOT
+			add_core = ROOT
+			change_religion = ROOT
+			change_culture = ROOT
+			}
+			7961 = {
+			cede_province = ROOT
+			add_core = ROOT
+			change_religion = ROOT
+			change_culture = ROOT
+			}
+			makykay_area = {
+				add_permanent_claim = ROOT
+			}
+			bava_area = {
+				add_permanent_claim = ROOT
+			}
+			vaximor_area = {
+				add_permanent_claim = ROOT
+			}
+			okus_area = {
+				add_province_modifier = {
+					name = antiash_raid_victim
+					duration = 3650
+				}
+			}
+			area_239 = {
+				add_province_modifier = {
+					name = antiash_raid_receiver
+					duration = 3650
+				}
+			}
+			area_238 = {
+				add_province_modifier = {
+					name = antiash_raid_receiver
+					duration = 3650
+				}
+			}
+			area_237 = {
+				add_province_modifier = {
+					name = antiash_raid_receiver
+					duration = 3650
+				}
+			}
+			area_236 = {
+				add_province_modifier = {
+					name = antiash_raid_receiver
+					duration = 3650
+				}
+			}
+			arlenta_region = {
+				discover_country = ROOT
+			}
+			gadea_area = {
+				discover_country = ROOT
+			}
+			zeaf_area = {
+				discover_country = ROOT
+			}
+			tsaj_area = {
+				discover_country = ROOT
+			}
+		}	
+	}
+	antiash_delta = {
+		icon = mission_pacify_the_berbers
+		required_missions = {
+            antiash_kars
+		}
+		trigger = {
+			makykay_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			bava_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			vaximor_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+        }
+		provinces_to_highlight = {
+			OR = {
+			area = makykay_area
+			area = bava_area
+			area = vaximor_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+			5557 = {
+			cede_province = ROOT
+			add_core = ROOT
+			change_religion = ROOT
+			change_culture = ROOT
+			}
+			gadea_area = {
+				add_permanent_claim = ROOT
+			}
+			zeaf_area = {
+				add_permanent_claim = ROOT
+			}
+			tsaj_area = {
+				add_permanent_claim = ROOT
+			}
+			west_xalia_region = {
+				discover_country = ROOT
+			}
+			country_event = { 
+				id = bosisi.12
+				days = 1
+			}
+		}	
+	}
+	antiash_opmaki = {
+		icon = jerusalem
+		required_missions = {
+            antiash_delta
+		}
+		trigger = {
+			gadea_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			zeaf_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			tsaj_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+        }
+		provinces_to_highlight = {
+			OR = {
+			area = gadea_area
+			area = zeaf_area
+			area = tsaj_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+			morsum_area = {
+				add_permanent_claim = ROOT
+			}
+			mariana_area = {
+				add_permanent_claim = ROOT
+			}
+			if = {
+				limit = {
+					has_dlc = "Leviathan"
+				}
+				add_country_modifier = {
+					name = antiash_restore_kashroon
+					duration = -1
+				}
+			}
+		}
+	}
+	antiash_kashroon = {
+		icon = mission_patronize_local_gods
+		required_missions = {
+            antiash_opmaki
+		}
+		trigger = {
+			if = {
+				limit = { has_dlc = "Leviathan" }
+				has_great_project = {
+					type = kashroon_temple
+					tier = 1
+				}
+			}
+			else = {
+				5156 = {
+					development = 15
+				}
+			}
+        }
+		provinces_to_highlight = {
+			province_id = 5156
+		}
+		effect = {
+			add_prestige_or_monarch_power = {
+				amount = 25
+			}
+			add_country_modifier = {
+				name = antiash_kashroon_temple
+				duration = -1
+			}
+		}	
+	}
+	antiash_jexus = {
+		icon =  mission_afghan_frontier
+		position = 10
+		required_missions = {
+            antiash_into
+		}
+		trigger = {
+			abvori_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			jexus_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			walamo_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+        }
+		provinces_to_highlight = {
+			OR = {
+			area = abvori_area
+			area = jexus_area
+			area = walamo_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+			vau_area = {
+				add_permanent_claim = ROOT
+			}
+			pyarxu_area = {
+				add_permanent_claim = ROOT
+			}
+			praman_area = {
+				add_permanent_claim = ROOT
+			}
+			abvori_area = {
+				add_province_modifier = {
+					name = antiash_recruitment
+					duration = 9125 #25 years
+				}
+			}
+			jexus_area = {
+				add_province_modifier = {
+					name = antiash_recruitment
+					duration = 9125 #25 years
+				}
+			}
+			walamo_area = {
+				add_province_modifier = {
+					name = antiash_recruitment
+					duration = 9125 #25 years
+				}
+			}
+		}	
+	}
+	antiash_pyarxu = {
+		icon =  mission_establish_high_seas_navy
+		required_missions = {
+            antiash_jexus
+		}
+		trigger = {
+			praman_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			pyarxu_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+        }
+		provinces_to_highlight = {
+			OR = {
+			area = praman_area
+			area = pyarxu_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+			xon_area = {
+				add_permanent_claim = ROOT
+			}
+			5404 = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+			}
+			create_admiral = { tradition = 75 }
+		}	
+	}
+}
+antiash_2 = {
+	slot = 2
+    generic = no
+    ai = yes
+	potential = {
+        NOT = { map_setup = map_setup_random }
+		OR = {
+			tag = KKR
+			tag = ALU
+			tag = ATM
+		}
+    }
+	has_country_shield = yes
+	antiash_army = {
+	icon = mission_levantine_restoration
+		required_missions = {
+		
+		}
+		trigger = {
+			army_size_percentage = 1
+		}
+		effect = {
+			add_country_modifier = {
+				name = "thriving_arms_industry"
+				duration = 9125 #25 years
+			}
+		}
+	}
+	antiash_reform = {
+		icon = mission_patronize_art_and_religion
+		trigger = {
+			advisor = theologian
+			estate_loyalty = {
+			estate = estate_church
+			loyalty = 65
+			}
+			legitimacy = 65
+			has_institution = renaissance
+		}
+		effect = {
+			add_country_modifier = {
+				name = "antiash_reformed_bosisi"
+				duration = -1
+			}
+			add_ruler_modifier = { 
+			name = antiash_prophet
+			duration = -1 
+			}
+		}
+	}
+	antiash_culture = {
+		icon = mission_ahmadabad_paper
+		required_missions = {
+            antiash_reform
+		}
+		trigger = {
+			advisor = artist
+			NOT = {
+				any_neighbor_country = {
+				tech_difference = 1
+				}
+			} 
+		}
+		effect = {
+			add_country_modifier = {
+				name = "antiash_cultural"
+				duration = -1
+			}
+			capital_scope = {
+				add_province_modifier = { 
+					name = antiash_architect
+					duration = -1  
+				}		
+			}	
+		}
+	}
+	antiash_into = {
+		icon = mission_conquer_5_states
+		position = 9
+		required_missions = {
+			antiash_opmaki
+			antiash_ximal
+		}
+		trigger = {
+			morsum_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			mariana_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			marnet_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			sixan_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		
+		}
+		provinces_to_highlight = {
+			OR = {
+			area = morsum_area
+			area = mariana_area
+			area = marnet_area
+			area = sixan_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+			abvori_area = {
+				add_permanent_claim = ROOT
+			}
+			jexus_area = {
+				add_permanent_claim = ROOT
+			}
+			walamo_area  ={
+				add_permanent_claim = ROOT
+			}
+			sostus_area = {
+				add_permanent_claim = ROOT
+			}
+			vinsa_area = {
+				add_permanent_claim = ROOT
+			}
+			calla_area = {
+				add_permanent_claim = ROOT
+			}
+			add_country_modifier = {
+				name = "antiash_entering_ga_xal"
+				duration = 9125 #25 years
+			}
+			north_xalia_region = {
+				discover_country = ROOT
+			}
+			moxon_region = {
+				discover_country = ROOT
+			}
+		}
+	}
+	antiash_xon = {
+		icon = take_constantinople
+		position = 12 
+		required_missions = {
+            antiash_relxal
+			antiash_pyarxu
+		}
+	
+		provinces_to_highlight = {
+			area = xon_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			xon_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+        }
+		effect = {
+			ga_xal_superregion = {
+				limit = { 
+					NOT = { country_or_non_sovereign_subject_holds = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
+			add_adm_power = 25
+			add_dip_power = 25
+			add_mil_power = 25
+			add_prestige = 25
+			add_adm_tech = 1
+			add_dip_tech = 1
+			add_mil_tech = 1
+			add_country_modifier = {
+				name = "antiash_took_xon"
+				duration = -1
+			}
+			#too strong?????????????????????????????????????????????????????????????????????????????????
+		}	
+	}
+	
+}
+antiash_3 = {
+	slot = 3
+    generic = no
+    ai = yes
+	potential = {
+        NOT = { map_setup = map_setup_random }
+		OR = {
+		tag = KKR
+		tag = ALU
+		tag = ATM
+		}
+    }
+	has_country_shield = yes
+	antiash_prepare = {
+        icon =  mission_unite_home_region      
+
+        required_missions = {
+            
+        }
+
+        trigger = {
+			dip_power = 100
+        }
+       
+		provinces_to_highlight = {
+			area_239 = {
+				type = all
+				OR = {
+					is_empty = yes
+					owned_by = ROOT 
+				}
+			}
+		}
+
+        effect = {
+			area_239 = {
+				add_core = ROOT
+			}
+		}
+       
+    }
+	antiash_settle = {
+        icon =  mission_bedouins      
+
+        required_missions = {
+            antiash_prepare
+        }
+
+        trigger = {
+			area_239 = {
+				type = all
+				OR = {
+					is_empty = yes
+					owned_by = ROOT 
+				}
+			}
+        }
+      
+		provinces_to_highlight = {
+			area = area_239
+		}
+       
+        effect = {
+			7236 = {
+			cede_province = ROOT
+			change_culture = ROOT
+			}
+			7237 = {
+			cede_province = ROOT
+			change_culture = ROOT
+			}
+			7238 = {
+			cede_province = ROOT
+			change_culture = ROOT
+			}
+		}
+       
+    }
+	antiash_population = {
+        icon = mission_rice_field    
+
+        required_missions = {
+            antiash_settle
+        }
+
+        trigger = {
+			total_development = 75
+        }
+        
+       
+        effect = {
+			7971 = {
+			cede_province = ROOT
+			add_core = ROOT
+			change_culture = Kurkari
+			}
+			7970 = {
+			cede_province = ROOT
+			add_core = ROOT
+			change_culture = Kurkari
+			}
+			7969 = {
+			cede_province = ROOT
+			add_core = ROOT
+			change_culture = Ashdamir
+			add_building = fort_15th
+			}
+			7968= {
+			cede_province = ROOT
+			add_core = ROOT
+			change_culture = Manthwar
+			}
+			add_country_modifier = {
+				name = "antiash_settlers"
+				duration = 18250 #50 years
+			}
+		}
+    }
+	antiash_delkum = {
+        icon = mission_traverse_the_sahara
+
+        required_missions = {
+            antiash_population
+        }
+
+        trigger = {
+			owns_core_province = 7962
+        }
+      
+		provinces_to_highlight = {
+			province_id = 7962
+		}
+       
+        effect = {
+			south_delkia = {
+			add_permanent_claim = ROOT
+			}
+			marn_area = {
+				discover_country = ROOT
+			}
+			houras_area = {
+				discover_country = ROOT
+			}
+			hos_area = {
+				discover_country = ROOT
+			}
+			add_country_modifier = {
+				name = antiash_cav_ratio
+				duration = 18250
+			}
+		}
+    }
+	antiash_south_delkia = {
+        icon = mission_ne_palisades    
+
+        required_missions = {
+            antiash_delkum
+        }
+
+        trigger = {
+			south_delkia = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+        }
+       
+		provinces_to_highlight = {
+			province_group = south_delkia
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+       
+        effect = {
+			houras_area = {
+			add_permanent_claim = ROOT
+			}
+			5173 = {
+			add_permanent_claim = ROOT
+			}
+			hoxona_area = {
+			add_permanent_claim = ROOT
+			}
+			east_xalia_region = {
+				discover_country = ROOT
+			}
+			hoxona_area = {
+				discover_country = ROOT
+			}
+			ropinver_area = {
+				discover_country = ROOT
+			}
+		}
+    }
+	antiash_delkian = {
+        icon = mission_non-western_cavalry_raid
+
+        required_missions = {
+            antiash_south_delkia
+        }
+
+        trigger = {
+			houras_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			5173 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			hoxona_area = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+        }
+		provinces_to_highlight = {
+			OR = {
+			area = houras_area
+			area = hoxona_area
+			province_id = 5173
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+        effect = {
+			marn_area = {
+			add_permanent_claim = ROOT
+			}
+			ropinver_area = {
+			add_permanent_claim = ROOT
+			}
+			add_country_modifier = {
+				name = "antiash_dominating_the_region"
+				duration = 9125 #25 years
+			}
+		}
+    }
+	antiash_ximal = {
+        icon = fight_bosnian_heresies
+		position = 8
+
+        required_missions = {
+            antiash_delkian
+        }
+
+        trigger = {
+			marn_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+        }
+        
+		provinces_to_highlight = {
+			area = marn_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+       
+        effect = {
+			sixan_area = {
+			add_permanent_claim = ROOT
+			}
+			marnet_area = {
+			add_permanent_claim = ROOT
+			}
+			marn_area = {
+				add_province_modifier = {
+					name = antiash_new_fortifications
+					duration = 9125 #25 years
+				}
+			}
+		}
+		
+    }
+	antiash_calla = {
+		icon =  mission_control_the_barbary_coast
+		position = 10 
+		required_missions = {
+            antiash_into
+		}
+		trigger = {
+			calla_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			vinsa_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			sostus_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+        }
+		provinces_to_highlight = {
+			OR = {
+			area = calla_area
+			area = vinsa_area
+			area = sostus_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+			vinon_area = {
+				add_permanent_claim = ROOT
+			}
+			oxaled_area = {
+				add_permanent_claim = ROOT
+			}
+			add_country_modifier = {
+				name = "antiash_xalian_mercenaries"
+				duration = 9125 #25 years
+			}
+		}	
+	}
+	antiash_relxal = {
+		icon =  mission_italian_condottiere 
+		required_missions = {
+            antiash_calla
+		}
+		trigger = {
+			vinon_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			oxaled_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+        }
+		provinces_to_highlight = {
+			OR = {
+			area = vinon_area
+			area = oxaled_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+			xon_area = {
+				add_permanent_claim = ROOT
+			}
+			5399 = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+				add_unit_construction = {
+				type = galley
+				amount = 5
+				speed = 0.1
+				cost = 0
+				}
+			}
+			5398 = {
+				add_unit_construction = {
+				type = galley
+				amount = 5
+				speed = 0.1
+				cost = 0
+				}
+			}
+			5447 = {
+				add_unit_construction = {
+				type = galley
+				amount = 5
+				speed = 0.1
+				cost = 0
+				}
+			}
+		}	
+	}
+
+}
+antiash_4 = {
+	slot = 4
+    generic = no
+    ai = yes
+	potential = {
+        NOT = { map_setup = map_setup_random }
+		OR = {
+		tag = KKR
+		tag = ALU
+		tag = ATM
+		}
+    }
+	has_country_shield = yes
+	antiash_buildings = {
+		icon = mission_into_persia_1
+		trigger = {
+			temple = 5
+			workshop = 5
+		}
+		effect = {
+			add_stability_or_adm_power = yes
+			add_estate_loyalty = {
+				estate = estate_nobles
+				loyalty = 5
+			}
+			add_estate_loyalty = {
+				estate = estate_church
+				loyalty = 5
+			}
+			add_estate_loyalty = {
+				estate = estate_burghers
+				loyalty = 5
+			}
+		}	
+	}
+	antiash_cotton = {
+		icon = mission_industrialize_bengal
+		trigger = {
+			7246 = {
+				base_production = 10
+				has_building = workshop
+			}
+			7244 = {
+				base_production = 10
+				has_building = workshop
+			}
+		}
+		effect = {
+			7246 = {
+				add_province_modifier = {
+				name = "antiash_production"
+				duration = -1
+				}
+			}
+			7244 = {
+				add_province_modifier = {
+				name = "antiash_production"
+				duration = -1
+				}
+			}
+			7247 = {
+				change_trade_goods = cotton
+				add_province_modifier = {
+				name = "antiash_production"
+				duration = -1
+				}
+			}
+			7245 = {
+				change_trade_goods = cotton
+				add_province_modifier = {
+				name = "antiash_production"
+				duration = -1
+				}
+			}
+			if = {
+				limit = {
+					owns = 7969
+				}
+				7969 = {
+					change_trade_goods = cotton
+					add_province_modifier = {
+					name = "antiash_production"
+					duration = -1
+					}
+				}
+			}
+		}
+	}
+	antiash_promote = {
+		required_missions = {
+            antiash_cotton
+		}
+		icon = sources_of_trade
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = antiashPromoteTooltip
+				calc_true_if = {
+					all_known_country = {
+						has_opinion = {
+							who = ROOT
+							value = 100
+						}
+					}
+					amount = 4
+				}
+			}
+			diplomatic_reputation = 2
+		}
+		effect = {
+			change_price = {
+			trade_goods = cotton
+			key = ANTIASH_ADVERTISING
+			value = 0.3
+			duration = -1
+			}
+			add_years_of_income  = 0.25
+			add_prestige_or_monarch_power = {
+				amount = 15
+			}
+		}
+	}
+	antiash_invade = {
+		icon = mission_cossack_cavalry
+		position = 7
+		required_missions = {
+			antiash_further
+			antiash_delkian
+		}
+		trigger = {
+			hoxoi_coast_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		provinces_to_highlight = {
+			region = hoxoi_coast_region
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+			east_zoblotra_area = {
+				add_permanent_claim = ROOT
+			}
+			unnamed_area_51 = { #:alien:
+				add_permanent_claim = ROOT
+			}
+			unnamed_area_50 = {
+				add_permanent_claim = ROOT
+			}
+			unnamed_area_49 = {
+				add_permanent_claim = ROOT
+			}
+			kinvirel_area = {
+				add_permanent_claim = ROOT
+			}
+			minvir_area = {
+				add_permanent_claim = ROOT
+			}
+			unnamed_area_31 = {
+				add_permanent_claim = ROOT
+			}
+			country_event = { 
+				id = bosisi.4
+				days = 1
+			}
+		}	
+	}
+	antiash_kinvirel = {
+		icon = capture_adriatic_ports
+		required_missions = {
+			antiash_invade
+		}
+		trigger = {
+			kinvirel_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			minvir_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			unnamed_area_31 = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+			area = kinvirel_area
+			area = minvir_area
+			area = unnamed_area_31
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+			country_event = { 
+				id = bosisi.5
+				days = 1
+			}
+			kapolia_region = {
+				add_permanent_claim = ROOT
+				discover_country = ROOT
+			}
+			add_country_modifier = {
+				name = "antiash_kinvireli_trade"
+				duration = -1
+			}
+		}
+	}
+	antiash_ganush = {
+		icon = mission_spoils_of_war
+		required_missions = {
+			
+		}
+		trigger = {
+			is_in_war = {
+				attacker_leader = ROOT
+				casus_belli = cb_humiliate
+				war_score = 70
+			}
+		}
+		effect = {
+			every_owned_province = {
+				limit = { culture = Ganush }
+				add_province_modifier = {
+					name = "antiash_happy_ganush"
+					duration = -1
+				}
+			}
+			add_tribal_allegiance = 10
+		}
+	}
+	antiash_manthwar = {
+		icon = mission_the_tamil_trade_guilds
+		required_missions = {
+			
+		}
+		trigger = {
+			estate_loyalty = {
+			estate = estate_burghers
+			loyalty = 65
+			}
+		}
+		effect = {
+			every_owned_province = {
+				limit = { culture = Manthwar }
+				add_province_modifier = {
+					name = "antiash_happy_manthwar"
+					duration = -1
+				}
+			}
+			add_tribal_allegiance = 10
+		}
+	}
+	
+}
+antiash_5 = {
+	slot = 5
+    generic = no
+    ai = yes
+	potential = {
+        NOT = { map_setup = map_setup_random }
+		OR = {
+		tag = KKR
+		tag = ALU
+		tag = ATM
+		}
+    }
+	has_country_shield = yes
+	antiash_invite = {
+		icon = mission_into_persia_2
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = ANTIASH_ALLIES_MET
+				any_known_country = {
+					has_institution = feudalism
+					alliance_with = ROOT
+				}
+			}
+			prestige = 15
+		}
+		effect = {
+			7243 = {
+				add_institution_embracement = {
+				which = feudalism
+				value = 100
+				}
+			}
+			7244 = {
+				add_institution_embracement = {
+				which = feudalism
+				value = 100
+				}
+			}
+			7250 = {
+				add_institution_embracement = {
+				which = feudalism
+				value = 100
+				}
+			}
+		}	
+	}
+	antiash_approach = {
+		icon =  mission_prepare_an_invasion_force
+		position = 4
+		required_missions = {
+			antiash_population
+		}
+		trigger = {
+			owns_core_province = 7972
+			owns_core_province = 7960
+			owns_core_province = 7959
+			owns_core_province = 7958
+			owns_core_province = 7957
+			owns_core_province = 7956
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 7972
+				area = area_243
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+			area_244 = {
+				discover_country = ROOT
+			}
+			diam_area = {
+				discover_country = ROOT
+			}
+			hoxoi_area = {
+				discover_country = ROOT
+			}
+			mahansha_area = {
+				discover_country = ROOT
+			}
+			west_zoblotra_area = {
+				discover_country = ROOT
+			}
+			shol_area = {
+				discover_country = ROOT
+			}
+		}
+	}
+	
+	antiash_further = {
+		icon = mission_manchu_warrior
+		position = 6
+		required_missions = {
+			antiash_approach
+		}
+		trigger = {
+			owns_core_province = 5814
+			owns_core_province = 7955
+			owns_core_province = 7954
+			owns_core_province = 7953
+			owns_core_province = 7952
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 5184
+				area = area_224
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+			hoxoi_coast_region = {
+				add_permanent_claim = ROOT
+			}
+			east_zoblotra_area = {
+				discover_country = ROOT
+			}
+			jasua_region = {
+				discover_country = ROOT
+			}
+			add_country_modifier = {
+				name = "antiash_invasion"
+				duration = 9125 #25 years
+			}
+			hidden_effect = {
+				country_event = { 
+				id = bosisi.6
+				days = 30
+				}
+			}
+		}
+	}
+	antiash_yabonia = {
+		icon = pacify_the_albanian_lands
+		position = 8
+		required_missions = {
+			antiash_invade
+		}
+		trigger = {
+			unnamed_area_50 = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			east_zoblotra_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			unnamed_area_51 = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			unnamed_area_49 = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = unnamed_area_50
+				area = east_zoblotra_area
+				area = unnamed_area_51
+				area = unnamed_area_49
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+			jasua_region = {
+				limit = {
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			5616 = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+			}
+			5612 = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+			}
+			5631 = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+			}
+			bamali_gulf_region  = {
+				discover_country = ROOT
+			}
+		}
+	}
+	antiash_kurkari = {
+		icon = mission_restore_rule_over_mysore
+		required_missions = {
+			
+		}
+		trigger = {
+			7244 = {
+				num_of_units_in_province = {
+				who = ROOT
+				amount = 10 
+				}
+			}
+			7243 = {
+				num_of_units_in_province = {
+				who = ROOT
+				amount = 10 
+				}
+			}
+			7242 = {
+				num_of_units_in_province = {
+				who = ROOT
+				amount = 10 
+				}
+			}
+		}
+		effect = {
+			7244 = {
+				spawn_rebels = {
+				type = noble_rebels
+				size = 1
+				}
+			}
+			7243 = {
+				spawn_rebels = {
+				type = noble_rebels
+				size = 0.5
+				}
+			}
+			7242 = {
+				spawn_rebels = {
+				type = noble_rebels
+				size = 0.5
+				}
+			}
+			every_owned_province = {
+				limit = { culture = Manthwar }
+				add_province_modifier = {
+					name = "antiash_happy_kurkari"
+					duration = -1
+				}
+			}
+			add_tribal_allegiance = 10
+		}
+	}
+	antiash_ashdamir = {
+		icon = mission_upper_burma_campaign
+		required_missions = {
+			
+		}
+		trigger = {
+			5175 = {
+				owned_by = ROOT
+				religion = bosisi
+				NOT = { nationalism = 1 }
+				has_building = temple 
+			}
+			5171 = {
+				owned_by = ROOT
+				religion = bosisi
+				NOT = { nationalism = 1 }
+			}
+			5819 = {
+				owned_by = ROOT
+				religion = bosisi
+				NOT = { nationalism = 1 }
+			}
+			dip_power = 200
+		}
+		effect = {
+			add_dip_power = -200
+			5175 = {
+				change_culture = Ashdamir
+				add_base_manpower = 1
+				add_base_production = 1
+				add_base_tax = 1
+			}
+			5171 = {
+				change_culture = Ashdamir
+				add_base_manpower = 1
+				add_base_production = 1
+				add_base_tax = 1
+			}
+			5819 = {
+				change_culture = Ashdamir
+				add_base_manpower = 1
+				add_base_production = 1
+				add_base_tax = 1
+			}
+			every_owned_province = {
+				limit = { culture = Ashdamir }
+				add_province_modifier = {
+					name = "antiash_happy_ashdamir"
+					duration = -1
+				}
+			}
+			add_tribal_allegiance = 10
+		}
+	}
+	antiash_happy_tribes = {
+		icon = mission_che_principal_peole
+		required_missions = {
+			
+		}
+		trigger = {
+			mission_completed = antiash_ganush
+			mission_completed = antiash_kurkari
+			mission_completed = antiash_manthwar
+			mission_completed = antiash_ashdamir
+		}
+		effect = {
+			if = {
+				limit = { government = tribal }
+				add_government_reform = four_tribe_rule
+			}
+			else = {
+				change_government_reform_progress = 200
+				add_adm_power = 200
+			}
+		}
+	}
+}
+

@@ -4,7 +4,7 @@ country_event = {
 	id = fdebug.1
 	title = fdebug.1.t
 	picture = BATTLE_eventPicture
-	desc = fdebug.1_desc
+	desc = fdebug.1.desc
 	
 	is_triggered_only = yes
 
@@ -57,22 +57,19 @@ country_event = {
 	option = {
 		name = fdebug.1.g
 		ai_chance = { factor = 1 }
-		every_country = {
-			limit = {
-				NOT = {
-					tag = ROOT
-				}
-			}
-			every_owned_province = {
-				cede_province = ---
-			}
+		every_province = {
+			cede_province = ---
+			remove_building	= fort_15th
+			remove_building	= fort_16th
+			remove_building	= fort_17th
+			remove_building	= fort_18th
 		}
 	}
 	option = {
 		name = fdebug.1.h
 		ai_chance = { factor = 1 }
 		every_country = {
-			change_religion = lathvy
+			change_religion = ROOT
 		}
 	}
 	option = {
@@ -86,6 +83,73 @@ country_event = {
 	option = {
 		name = fdebug.1.i
 		ai_chance = { factor = 1 }
+		trigger = {
+			NOT = {
+				has_country_flag = debug_achievements
+			}
+		}
 		set_country_flag = debug_achievements
+	}
+	option = {
+		name = fdebug.1.k
+		trigger = {
+			has_country_flag = debug_achievements
+		}
+		ai_chance = { factor = 1 }
+		clr_country_flag = debug_achievements
+	}
+	option = {
+		name = fdebug.1.l
+		ai_chance = { factor = 1 }
+		every_province = {
+			limit = {
+				continent = estal
+				NOT = {
+					is_wasteland = yes
+				}
+			}
+			cede_province = ROOT
+			add_core = ROOT
+		}
+	}
+	option = {
+		name = fdebug.1.m
+		ai_chance = { factor = 1 }
+		add_country_modifier = {
+			name = debug_build_fast
+			duration = 365
+		}
+	}
+}
+
+country_event = {
+	id = fdebug.2
+	title = fdebug.2.t
+	picture = BATTLE_eventPicture
+	desc = fdebug.2.desc
+	is_triggered_only = yes
+
+	option = {
+		name = fdebug.2.a
+		ai_chance = { factor = 1 }
+		#every_owned_province = {
+		#	cede_province = SOY
+		#	add_core = SOY
+		#}
+		every_province = {
+			limit = {
+				owned_by = ROOT
+			}
+			cede_province = SOY
+			add_core = SOY
+		}
+	}
+	option = {
+		name = fdebug.2.b
+		ai_chance = { factor = 1 }
+		add_country_modifier = {
+			name = test_mod_1
+			duration = -1
+		}
 	}
 }

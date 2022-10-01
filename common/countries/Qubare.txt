@@ -1,0 +1,166 @@
+#Country Name: Please see filename.
+
+graphical_culture = easterngfx
+
+color = { 150 106 55 }
+
+historical_idea_groups = {
+	quantity_ideas
+	administrative_ideas
+	trade_ideas
+	offensive_ideas
+	economic_ideas
+	diplomatic_ideas
+	humanist_ideas
+	quality_ideas
+}
+
+historical_units = {
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+	swiss_landsknechten
+	dutch_maurician
+	austrian_tercio
+	austrian_grenzer
+	austrian_hussar
+	austrian_white_coat
+	austrian_jaeger
+	mixed_order_infantry
+	open_order_cavalry
+	napoleonic_square
+	napoleonic_lancers
+}
+
+monarch_names = {
+	"Gaszron #0" = 1
+	"Urszus #0" = 1
+	"Forara #0" = 1
+	"Jrus #0" = 1
+	"Hozen #0" = 1
+	"Palel #0" = 1
+	"Simot #0" = 1
+	"Czszyn #0" = 1
+	"Rzuszraimus #0" = 1
+	"Umarminol #0" = 1
+	"Arsegayu #0" = 1
+	"Jain #0" = -1
+	"Mayul #0" = -1
+	"Ghenes #0" = -1
+	"Ana #0" = -1
+	"Dymio #0" = 1
+	"Agixada #0" = 1
+	"Ratonasha #0" = 1
+	"Tormi #0" = 1
+	"Dorren #0" = 1
+	"Giun #0" = 1
+	"Tama #0" = 1
+	"Paro #0" = 1 #0
+	"Bamal #0" = 1
+	"Dorron #0" = 1
+	"Nokhes #0" = 1
+	"Amilian  #0" = 1
+	"Camicla #0" = 1
+	"Relambi #0" = 1
+	"Melze #0" = 1
+	"Yenat #0" = 1
+	"Zandar #0" = 1
+	"Ratelar #0" = 1
+	"Lunpixa #0" = 1
+	"Sonon #0" = 1
+	"Tamande #0" = 1
+	"Lokis #0" = 1
+	"Lemi #0" = 1
+	"Romal  #0" = 1
+	"Sido #0" = 1
+	"Ifrelr #0" = 1
+	"Zemei #0" = -1
+	"Loqa #0" = -1
+	"Talova #0" = -1
+	"Pina #0" = -1
+	"Si #0" = -1
+	"Edla #0" = -1
+	"Bruri #0" = -1
+	"Nadu #0" = -1
+	"Meira #0" = -1
+}
+
+leader_names = {
+	Gaszron
+	Urszus
+	Forara
+	Jrus
+	Hozen
+	Palel
+	Simot
+	Czszyn
+	Rzuszraimus
+	Umarminol
+	Arsegayu
+Ratonasha
+	Loviaz
+	Lekaux
+	Jantada
+	Jaka
+	Deli
+	Dion
+	Nedu
+	Wamadra
+	Manu
+	Kanaz
+	Shunex
+	Sunek
+	Uchlir
+	Dramra
+	Mibsko
+	Bohika
+	Nahetle
+	Ermefi
+	Horfiv
+	Nupem
+	Etrit
+	Cor
+	Aitnut
+	Zicas
+	Bunyz
+	Basy
+	Zab
+	Bony
+	Yuksom
+	Eiçu
+	Ecotonair
+	Ikug
+	Cynap
+	Ainezod
+	Pyk
+	Cyd
+	Caçec
+	Domo
+	Kyp
+	Ebid
+}
+
+ship_names = {
+	Rakal
+	Ularak
+	Vanosta
+	Ivina
+	Hej
+	Lypona
+	Yadosha
+	Amelaka
+	Dirice
+	Manole
+	Tomba
+}
+
+army_names = {
+	"Nomad $PROVINCE$ is" 
+}
+
+fleet_names = {
+	"Grand Navy"
+	"Everlasting Armada"
+	"Grand Navy"
+	"Victorious Fleet"
+}

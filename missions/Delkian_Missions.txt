@@ -1,4 +1,140 @@
 
+delkia_xal_generic = {
+	slot = 4
+	generic = no 
+	ai = yes
+	potential = {
+        NOT = { map_setup = map_setum_random }
+        tag = DEL
+    }
+    has_country_shield = no
+
+	delkia_xalian_unite_the_faiths = {
+		icon = mission_hands_praying
+		required_missions = { } #None
+		trigger = {
+            religion_group = xalian_group
+            religious_unity	= 0.80
+            num_of_active_blessings	= 4
+            owns_core_province = 5388
+            owns_core_province = 5458
+            owns_core_province = 5163
+            owns_core_province = 5411
+        }
+		effect = {
+			add_country_modifier = {
+				name = united_the_xalian_faith
+                duration = -1
+			}
+			if = {
+				limit = {
+					NOT = { has_global_flag = united_xalian_faith_flag }
+				}
+				custom_tooltip = united_xal_tt
+				hidden_effect = {
+					set_global_flag = united_xalian_faith_flag
+				}
+			}
+		}
+		provinces_to_highlight = {
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			OR = {
+				province_id = 5458
+				province_id = 5163
+				province_id = 5411
+				province_id = 5388
+			}
+		}
+	}
+}
+
+delkia_fashros_missions = {
+	slot = 5
+	has_country_shield = no
+	
+	generic = no
+	
+	potential = {
+		tag = DEL
+	}
+
+	delkia_survive_the_invasions = {
+		position = 1
+		icon = mission_chinese_general_riding
+		required_missions = { }
+		trigger = {
+			NOT = {
+				FAS = {
+					exists = yes
+				}
+			}
+        }
+		effect = {
+			add_prestige_or_monarch_power = {
+				amount = 10
+			}
+		}
+	}
+
+	delkia_find_converts = {
+		position = 2
+		icon = mission_cossack_cavalry
+		required_missions = { delkia_survive_the_invasions }
+		trigger = {
+			OR = {
+				religious_ideas = 7
+				is_defender_of_faith = yes
+			}
+			any_owned_province = {
+				AND = {
+					custom_trigger_tooltip = {
+						tooltip = rel_in_province_tonmo
+						religion = tonmo
+					}
+					has_missionary = yes
+				}
+			}
+        }
+		effect = {
+			custom_tooltip = getRavshoMercs
+			set_country_flag = ravsho_merc_flag
+		}
+	}
+
+	delkia_expel_tonmo = {
+		position = 3
+		icon = mission_crusade_for_varna
+		required_missions = { delkia_find_converts }
+		trigger = {
+			NOT = {
+				any_province = {
+					AND = {
+						OR = {
+							superregion = ga_xal_superregion
+							region = hoxoi_coast_region #hoxoi
+						}
+						custom_trigger_tooltip = {
+							tooltip = rel_in_province_tonmo
+							religion = tonmo
+						}
+					}
+				}
+			}
+        }
+		effect = {
+			add_country_modifier = {
+				name = gadea_tonmo_defeated
+				duration = 9125
+			}
+			define_advisor = {
+				type = theologian
+				skill = 3
+				discount = yes
+			}
+		}
+	}
+}
+
 #Econmic Branch
 delkia_1 = {
 	slot = 1
@@ -6,9 +142,7 @@ delkia_1 = {
 	ai = yes
 	potential = {
         NOT = { map_setup = map_setum_random }
-        OR = {
-            tag = DEL
-        }
+        tag = DEL
     }
     has_country_shield = yes
 	
@@ -102,9 +236,7 @@ delkia_2 = {
 	ai = yes
 	potential = {
         NOT = { map_setup = map_setum_random }
-        OR = {
-            tag = DEL
-        }
+        tag = DEL
     }
     has_country_shield = yes
 	
@@ -172,6 +304,10 @@ delkia_2 = {
 				}
 				add_permanent_claim = ROOT
 			}
+			add_ruler_modifier = {
+				name = del_conqueror_of_oppians
+				duration = -1
+			}
 		}
 	}
 
@@ -204,9 +340,18 @@ delkia_2 = {
 				name = del_wheat_of_the_east
 				duration = 9125
 			}
-			5177 = {
-				add_center_of_trade_level = 1
-			}
+			if = {
+                limit = {
+                    NOT = {
+                        5177 = {
+                            province_has_center_of_trade_of_level = 3
+                        }
+                    }
+                }
+                5177 = {
+                    add_center_of_trade_level = 1
+                }
+            }
 		}
 	}
 }	
@@ -218,9 +363,7 @@ delkia_3 = {
 	ai = yes
 	potential = {
         NOT = { map_setup = map_setum_random }
-        OR = {
-            tag = DEL
-        }
+        tag = DEL
     }
     has_country_shield = yes
 	
@@ -255,7 +398,7 @@ delkia_3 = {
 					vassalize = ZEA
 				}
 			}
-			unnamed_area_9 = {
+			gadea_area = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT }
 					NOT = { is_core = ROOT	}
@@ -285,7 +428,7 @@ delkia_3 = {
 		
 		provinces_to_highlight = {
 			OR = {
-				area = unnamed_area_9
+				area = gadea_area
 				area = zeaf_area
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
@@ -296,7 +439,7 @@ delkia_3 = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT	
 			}	
-			unnamed_area_9 = {
+			gadea_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT	
 			}
@@ -393,9 +536,7 @@ delkia_4 = {
 	ai = yes
 	potential = {
         NOT = { map_setup = map_setum_random }
-        OR = {
-            tag = DEL
-        }
+        tag = DEL
     }
     has_country_shield = yes
 
@@ -403,17 +544,36 @@ delkia_4 = {
 		icon = mission_conquer_maharashtra
 		required_missions = { del_modernize_army }
 		position = 2
+
+		provinces_to_highlight = {
+			OR = {
+				province_id = 5457
+				province_id = 5458
+				province_id = 5455
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			NOT = { is_claim = ROOT }
+		}
 		
 		trigger = {
 			OR = {
 				5457 = {
-					is_claim = ROOT
+					OR = {
+						is_claim = ROOT
+						country_or_non_sovereign_subject_holds = ROOT
+					}
 				}
 				5458 = {
-					is_claim = ROOT
+					OR = {
+						is_claim = ROOT
+						country_or_non_sovereign_subject_holds = ROOT
+					}
 				}
 				5455 = {
-					is_claim = ROOT
+					OR = {
+						is_claim = ROOT
+						country_or_non_sovereign_subject_holds = ROOT
+					}
 				}
 			}
 		}
@@ -423,11 +583,21 @@ delkia_4 = {
 				limit = {
 					exists = SIX
 				}
-				SIX = {
-					add_casus_belli = {
-						target = DEL
-						type = cb_vassalize_mission
-						months = 12
+				custom_tooltip = delSixanSubjWarning
+				5455 = {
+					add_devastation = 10
+				}
+				5457 = {
+					add_devastation = 10
+				}
+				custom_tooltip = delSixanSubj
+				hidden_effect = {
+					SIX = {
+						add_casus_belli = {
+							target = DEL
+							type = cb_vassalize_mission
+							months = 12
+						}
 					}
 				}
 			}
@@ -438,6 +608,8 @@ delkia_4 = {
 				}
 				add_permanent_claim = ROOT
 			}
+			add_army_tradition = 10
+			add_years_of_income = 0.25
 		}
     }
 	
@@ -542,49 +714,9 @@ delkia_5 = {
 	ai = yes
 	potential = {
         NOT = { map_setup = map_setum_random }
-        OR = {
-            tag = DEL
-        }
+        tag = DEL
     }
     has_country_shield = yes
-
-	delkia_xalian_unite_the_faiths = {
-		icon = mission_hands_praying
-		required_missions = { } #None
-		trigger = {
-            religion_group = xalian_group
-            religious_unity	= 0.80
-            num_of_active_blessings	= 4
-            owns_core_province = 5388
-            owns_core_province = 5458
-            owns_core_province = 5163
-            owns_core_province = 5411
-        }
-		effect = {
-			add_country_modifier = {
-				name = united_the_xalian_faith
-                duration = -1
-			}
-			if = {
-				limit = {
-					NOT = { has_global_flag = united_xalian_faith_flag }
-				}
-				custom_tooltip = united_xal_tt
-				hidden_effect = {
-					set_global_flag = united_xalian_faith_flag
-				}
-			}
-		}
-		provinces_to_highlight = {
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
-			OR = {
-				province_id = 5458
-				province_id = 5163
-				province_id = 5411
-				province_id = 5388
-			}
-		}
-	}
 
 	del_into_ga_xal = {
 		icon = mission_conquer_mewar

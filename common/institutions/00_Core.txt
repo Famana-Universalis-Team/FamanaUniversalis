@@ -488,7 +488,7 @@ renaissance = {
 #######################################
 # Tonmo Numerals
 # 
-# <insert a joke about british dental health here>
+#
 #######################################
 
 new_world_i = {
@@ -737,14 +737,19 @@ printing_press = {
 			}
 			AND = {
 				is_year = 360
+				is_island = no
 				NOT = { exists = NAF }
 				culture = Kachik
-				any_province = {
-					AND = {
+				owner = {
+					any_owned_province = {
 						culture = Kachik
-						owner = { NOT = { tag = NAF } }
 					}
 				}
+			}
+			AND = {
+				is_year = 390
+				is_island = no
+				region = stroktur_region
 			}
 		}
 	}
@@ -906,11 +911,16 @@ global_trade = {
 	
 	can_start = {
 		is_year = 400
-		is_capital = yes
-		is_island = no
-		is_state = yes
-		religion = urbaxan
-		development = 25
+		OR = {
+			AND = {
+				is_capital = yes
+				is_island = no
+				is_state = yes
+				religion = urbaxan
+				development = 25
+			}
+			region = maky_region #THIS IS TEMPORARY
+		}
 	}
 
 	start_chance = 5		#in 100 for when a province can_start
@@ -1043,11 +1053,11 @@ manufactories = {
 		is_island = no
 		is_state = yes
 		development = 25
-		owner = { religion = lathvy }
+		owner = { religion_group = lathvy_group }
 		OR = {
 			superregion = jasua_superregion
 			superregion = west_estal_superregion
-			superregion = central_estal_supperregion
+			superregion = central_estal_superregion
 		}
 	}
 
@@ -1626,7 +1636,7 @@ industrialization = {
 	}
 	
 	can_start = {
-		is_year = 1700
+		is_year = 550
 		is_in_capital_area = yes
 		is_island = no
 		is_state = yes
@@ -1638,15 +1648,16 @@ industrialization = {
 				tooltip = tooltip_has_seat_in_parliament
 				has_seat_in_parliament = yes
 			}
-			has_building = university
-			AND = {
-				continent = europe
+			has_port = yes
+			#has_building = university
+			#AND = {
+				#continent = europe
 				owner = {
 					ADM = 5
 					MIL = 5
 					DIP = 5
 				}
-			}
+			#}
 			
 		}
 	}
@@ -1977,7 +1988,7 @@ feudalism_two = {
 	}
 	
 	can_start = {
-		is_year = 1750
+		is_year = 600
 		is_in_capital_area = yes
 		is_island = no
 		is_state = yes

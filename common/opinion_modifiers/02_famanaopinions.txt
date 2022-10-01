@@ -16,3 +16,96 @@ vanoma_tech_help = {
 	opinion = 150
 	yearly_decay = 0.5
 }
+
+lathvy_spreading = {
+	opinion = -100
+	yearly_decay = 1
+}
+
+dedicated_festival = {
+	opinion = 15
+	yearly_decay = 1.5
+}
+
+good_xalnish_diplomats = {
+	opinion = 20
+	yearly_decay = 1
+}
+
+bad_xalnish_diplomats = {
+	opinion = -10
+	yearly_decay = 1
+}
+
+abandoned_mak_vaximor = {
+	opinion = -50
+	yearly_decay = 2
+}
+
+yom_hate_amatan = {
+	opinion = -150
+}
+
+amatan_hate_yom = {
+	opinion = -150
+}
+
+good_chungus_leronya = {
+	opinion = 50
+	yearly_decay = 2.5
+}
+
+protecting_jasua_opinion = {
+	opinion = 50
+	yearly_decay = 0.5
+}
+
+pope_visit_opinion = {
+	opinion = 25
+	yearly_decay = 0.5
+}
+
+dragon_killer = {
+	opinion = -15
+	yearly_decay = 0.5
+}
+
+sacrificed_us = {
+	opinion = -50
+	yearly_decay = 0.5
+}
+
+alm_enemy_of_my_enemy = {
+	opinion = 100
+	yearly_decay = 0.5
+}
+
+conquest_ga_xal = {
+	opinion = 100
+	yearly_decay = 0.5
+}
+
+lag_tck_trade_war = {
+	opinion = -100
+	yearly_decay = 1
+}
+
+looted_the_high_temple = {
+	opinion = -60
+	yearly_decay = 2
+}
+
+sar_diplomacy = {
+	opinion = 50
+	yearly_decay = 0.5
+}
+
+diocese_opinion_rival = {
+	opinion = 50
+	yearly_decay = 1
+}
+
+naf_discovered_the_truth = {
+	opinion = 100
+	yearly_decay = 1
+}

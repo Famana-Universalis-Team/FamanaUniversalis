@@ -7,12 +7,12 @@
 #Nation Designer Cost is set to match triggers for starting institutions.
 
 groups = {
-	north_gomic_tech_gr = {
+	lathvy_tech_gr = {
 		start_level = 3
 		start_cost_modifier = 0
 	}
 
-	gotzlic_tech_gr = {
+	estali_tech_gr = {
 		start_level = 3
 		start_cost_modifier = 0.4
 	}
@@ -60,7 +60,7 @@ groups = {
 		start_cost_modifier = 0.5
 	}
 
-	geopyopian_tech_gr = {
+	washoom_tech_gr = {
 		start_level = 3
 		start_cost_modifier = 0.25
 	}
@@ -76,16 +76,15 @@ groups = {
 		is_primitive = yes
 	}
 	
-	estal_tribal_tech_gr = {
+	west_estali_tech_gr = {
 		start_level = 1
 		start_cost_modifier = 1.5
 		is_primitive = yes
 	}
 
 	antestal_yom_tech_gr = {
-		start_level = 2
-		start_cost_modifier = 1.5
-		is_primitive = yes
+		start_level = 3
+		start_cost_modifier = 0
 	}
 
 	naravami_tech_gr = {

@@ -41,7 +41,7 @@ heretic_rebels = {
 		}
 		modifier = {
 			factor = 0
-			NOT = { religion = catholic }
+			NOT = { religion = lathvy }
 		}
 		modifier = {
 			factor = 0.01
@@ -50,13 +50,6 @@ heretic_rebels = {
 		modifier = {
 			factor = 5
 			has_province_modifier = "heresy"
-		}
-		modifier = {
-			factor = 3.0
-			is_year = 1450
-			owner = { religion = catholic }
-			NOT = { is_religion_enabled = protestant }
-			NOT = { is_religion_enabled = reformed }
 		}
 
 	}

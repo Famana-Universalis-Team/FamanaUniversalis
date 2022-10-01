@@ -1,5 +1,5 @@
 discovered_by = east_gomic_tech_gr
-discovered_by = north_gomic_tech_gr
+discovered_by = lathvy_tech_gr
 discovered_by = west_gomic_tech_gr
 #Written with Eu4 Easy Province Creator by emiroercn
 #UNNAMED
@@ -10,13 +10,25 @@ hre = no
 
 base_tax = 4
 base_production = 2
-trade_goods = grain
+trade_goods = cloth
 base_manpower = 2
 capital = "Fubater"
-is_city = no
-extra_cost = 1
+ 
+
 
 owner = GRO
+is_city = yes
 controller = GRO
 add_core = GRO
 add_core = NCH
+
+212.6.7 = {
+owner = NCH
+is_city = yes
+controller = NCH
+add_core = NCH
+remove_core = GRO
+#culture = 
+#religion = 
+#trade_goods = 
+}

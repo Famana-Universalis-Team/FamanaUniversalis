@@ -33,33 +33,81 @@ historical_units = {
 }
 
 monarch_names = {
-	"Satrit #0" = 1
-	"Mayal #0" = 1
-	"Wohjevro #0" = 1
-	"Jaizwir #0" = 1
-	"Eizni #0" = 1
-	"Rarjuzer #0" = 1
-	"Reididq #0" = 1
-	"Ngoilurot #0" = 1
-	"Arlalan #0" = 1
-	"Gamal #0" = 1
-	"Tolsveygi #0" = -1
-	"Ini #0" = -
-	"Duv #0" = -1
-	"Buvi #0" = -1
-}
+	"Garag #0" = 1
+	"Anasru #0" = 1
+	"Onba #0" = 1
+	"Tagor #0" = 1
+	"Yaru #0" = 1
+	"Raghe #0" = 1
+	"Pate #0" = 1
+	"Apetonpo #0" = 1
+	"Bade #0" = 1
+	"Dupe #0" = 1
+	"Fryane #0" = 1
+	"Isghido #0" = 1
+	"Nido #0" = 1
+	"Odo #0" = 1
+	"Ndarna #0" = 1
+	"Isju #0" = 1
+	"Funbor #0" = 1
+	"Buhu #0" = 1
+	"Hurep #0" = 1
+	"Ocu #0" = 1
+	"Nagja #0" = 1
+	"Fihed #0" = 1
+	"Turset #0" = 1
+	"Ugud #0" = 1
+	"Gubnu #0" = 1
+	"Rado #0" = 1
+	"Fored #0" = 1
+	"Sungo #0" = 1
+	"Roribu #0" = 1
+	"Nuhputa #0" = 1
+	"Oribe #0" = 1
+	"Erapno #0" = 1
+	"Agan #0" = 1
+	"Otsube #0" = 1
+	"Tsonu #0" = 1
+	"Rriho #0" = 1
+
+	"Phahop #0" = -1
+	"Hdusa #0" = -1
+	"Piru #0" = -1
+	"Anhedino #0" = -1
+	"Tuhe #0" = -1
+	"Gija #0" = -1
+	"Hifa #0" = -1
+} 
 
 leader_names = {
-	Satrit
-	Mayal
-	Wohjevrè 
-	Jaizwér
-	Eizni
-	Rarjuze
-	Reididè
-	Ngoilurèt
-	Arlalan
-	Gamal
+	"san Sehohban"
+	"san Nonuhnof"
+	"san Hanto"
+	"san Atsai"
+	"san Ser"
+	"san Naspop"
+	"san Iba"
+	"san Car"
+	"san Rabe"
+	"san Gojotujro"
+	"san Nehorpo
+	"san Ocrud"
+	"san Runuhta"
+	"san Fatut"
+	"wa Sehohban"
+	"wa Nonuhnof"
+	"wa Hanto"
+	"wa Atsai"
+	"wa Ser"
+	"wa Naspop"
+	"wa Iba"
+	"wa Car"
+	"wa Rabe"
+	"wa Gojotujro"
+	"wa Nehorpo
+	"wa Ocrud"
+	"wa Runuhta"
+	"wa Fatut"
 }
 
 ship_names = {

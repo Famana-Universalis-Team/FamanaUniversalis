@@ -2,18 +2,19 @@
 #UNNAMED
 add_core = FAS
 owner = FAS
+is_city = yes
 controller = FAS
 culture = Selkan
 religion = tonmo
 hre = no
 base_tax = 1
 base_production = 1
-trade_goods = silk
+trade_goods = naval_supplies
 base_manpower = 1
 capital = "Mobchlub"
-is_city = yes
+ 
 
-discovered_by = geopyopian_tech_gr
+discovered_by = washoom_tech_gr
 discovered_by = north_antebari_tech_gr
 
 

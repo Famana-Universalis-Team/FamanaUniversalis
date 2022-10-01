@@ -33,17 +33,17 @@ historical_units = {
 }
 
 monarch_names = {
-	"Dymio #0" = 1
-	"Agixadar #0" = 1
+	"Dymio #0" = 3
+	"Agixadar #0" = 3
 	"Ratonasha #0" = 1
-	"Tormi #0" = 1
-	"Dorren #0" = 1
+	"Tormi #0" = 3
+	"Dorren #0" = 2
 	"Giu #0" = 1
 	"Tamar #0" = 1
 	"Paro #0" = 1
 	"Bamal #0" = 1
-	"Dorron #0" = 1
-	"Nokhes #0" = 1
+	"Dorron #0" = 2
+	"Nokhes #0" = 2
 	"Amilian #0" = 1
 	"Camiclar #0" = 1
 	"Relambi #0" = 1
@@ -68,36 +68,139 @@ monarch_names = {
 	"Bruri #0" = -1
 	"Nabu #0" = -1
 	"Meira #0" = -1
+	"Nan #0" = 1
+	"Runor #0" = 1
+	"Rak #0" = 1
+	"Zyç #0" = 1
+	"Çony #0" = 3
+	"Kulai #0" = 1
+	"Nena #0" = 1
+	"Papaid #0" = 1
+	"Nykabum #0" = 1
+	"Çysas #0" = 1
+	"Aimakat #0" = 1
+	"Rima #0" = 1
+	"Bydug #0" = 1
+	"Çutyonob #0" = 1
+	"Coz #0" = 1
+	"Zakrag #0" = 1
+	"Okon #0" = 1
+	"Ciz #0" = -1
+	"Tuduçad #0" = -1
+	"Cig #0" = -1
+	"Rotyu #0" = -1
+	"Dec #0" = -1
+	"Gir #0" = -1
+	"Okylirei #0" = -1
+	"Bura #0" = -1
+	"Kiz #0" = -1
+	"Sarni #0" = -1
+	"Pek #0" = -1
+	"Çit #0" = -1
 }
 
 leader_names = {
-	Dymio
-	Agixadar
 	Ratonasha
-	Tormi
-	Dorren
-	Giu
-	Tamar
-	Paro
-	Bamal
-	Dorron
-	Nokhes
-	Amilian
-	Camiclar
-	Relambi
-	Melze
-	Yenat
-	Zandar
-	Ratelar
-	Lunpikisa
-	Sonon
-	Tamander
-	Lokis
-	Lemi
-	Romal
-	Ifrel
-	Asifsya
-	Malav
+	Loviaz
+	Lekaux
+	Jantada
+	Jakar
+	Deli
+	Dijo
+	Nedu
+	Wamadera
+	Manu
+	Kanaz
+	Sunek
+	Uchlir
+	Dramra
+	Mibsko
+	Bohika
+	Teitu
+	Byobup
+	Eigin
+	Zep
+	Imyba
+	Tatuzro
+	Bukym
+	Oçnog
+	Osy
+	Tig
+	Zir
+	Kersa
+	Anenry
+	Nupem
+	Etrit
+	Cor
+	Aitnut
+	Zicas
+	Bunyz
+	Basy
+	Zab
+	Bony
+	Yuksom
+	Eiçu
+	Ecotonair
+	Ikug
+	Cynap
+	Ainezod
+	Pyk
+	Çyd
+	Caçec
+	Domo
+	Kyp
+	Ebid
+
+	Ratonasha
+	Loviaz
+	Lekaux
+	Jantada
+	Jakar
+	Deli
+	Dijo
+	Nedu
+	Wamadera
+	Manu
+	Kanaz
+	Sunek
+	Uchlir
+	Dramra
+	Mibsko
+	Bohika
+	Teitu
+	Byobup
+	Eigin
+	Zep
+	Imyba
+	Tatuzro
+	Bukym
+	Oçnog
+	Osy
+	Tig
+	Zir
+	Kersa
+	Anenry
+	Nupem
+	Etrit
+	Cor
+	Aitnut
+	Zicas
+	Bunyz
+	Basy
+	Zab
+	Bony
+	Yuksom
+	Eiçu
+	Ecotonair
+	Ikug
+	Cynap
+	Ainezod
+	Pyk
+	Çyd
+	Caçec
+	Domo
+	Kyp
+	Ebid
 }
 
 ship_names = {

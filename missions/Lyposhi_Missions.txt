@@ -1,0 +1,201 @@
+
+lyp_1 = {
+    slot = 1
+    generic = no
+    ai = yes
+    potential = {
+        NOT = { map_setup = map_setup_random }
+		tag = LYP
+    }
+    has_country_shield = yes
+
+    lyp_conquer_effasha = {
+        icon = mission_conquer_algiers
+        required_missions = { }
+        trigger = {
+            effasha_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+        }
+        effect = {
+            add_yearly_manpower = 5
+            add_treasury = 250
+            goll_area = {
+				add_permanent_claim = ROOT
+			}
+            fasalep_area = {
+				add_permanent_claim = ROOT
+			}
+            ponaa_area = {
+				add_permanent_claim = ROOT
+			}
+        }
+        provinces_to_highlight = {
+            NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			area = effasha_area
+        }
+    }
+
+    lyp_unite_erenna = {
+        icon = mission_invade_maharashtra
+        required_missions = { lyp_conquer_effasha }
+        trigger = {
+            goll_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+            fasalep_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+            ponaa_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+        }
+        effect = {
+            add_army_professionalism = 0.05
+            add_country_modifier = {
+                name = lyp_united_the_south
+                duration = 9125
+            }
+            roplea_area = {
+				add_permanent_claim = ROOT
+			}
+            astom_area = {
+				add_permanent_claim = ROOT
+			}
+            arma_area = {
+				add_permanent_claim = ROOT
+			}
+            keplex_area = {
+				add_permanent_claim = ROOT
+			}
+        }
+        provinces_to_highlight = {
+            NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			OR = {
+                area = goll_area
+                area = fasalep_area
+                area = ponaa_area
+            }
+        }
+    }
+
+    lyp_roplean_invasion = {
+        icon = mission_control_the_desh
+        required_missions = { lyp_unite_erenna }
+        trigger = {
+            roplea_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+            astom_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+            arma_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+            keplex_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+        }
+        effect = {
+            5091 = {
+                add_base_tax = 2
+                add_base_production = 2
+                add_base_manpower = 2
+            }
+            add_power_projection = {
+                type = mission_rewards_power_projection
+                amount = 25
+            }
+            canin_area = {
+				add_permanent_claim = ROOT
+			}
+            nuti_area = {
+				add_permanent_claim = ROOT
+			}
+        }
+        provinces_to_highlight = {
+            NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			OR = {
+                area = roplea_area
+                area = astom_area
+                area = arma_area
+                area = keplex_area
+            }
+        }
+    }
+
+    lyp_the_golden_city = {
+        icon = mission_raid_on_genoa
+        required_missions = { lyp_roplean_invasion }
+        trigger = {
+            canin_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+            nuti_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+        }
+        effect = {
+            add_mil_power = 100
+            add_country_modifier = {
+                name = lyp_nutian_architecture
+                duration = -1
+            }
+            define_advisor = {
+                type = treasurer
+                skill = 3
+                culture = Nutian
+                religion = ROOT
+                cost_multiplier = 0.35
+            }
+        }
+        provinces_to_highlight = {
+            NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			OR = {
+                area = canin_area
+                area = nuti_area
+            }
+        }
+    }
+
+    lyp_develop_lower_oppia = {
+        icon = mission_arabian_fort
+        required_missions = { lyp_the_golden_city }
+        trigger = {
+            num_of_owned_provinces_with = {
+                value = 25
+                region = lower_oppia_region
+                development = 10
+            }
+        }
+        effect = {
+            if = {
+                limit = {
+                    adm = 6
+                }
+                add_adm_power = 100
+            }
+            else = {
+                change_adm = 1
+            }
+            add_country_modifier = {
+                name = lyp_prosperity_in_oppia
+                duration = 12775
+            }
+        }
+        provinces_to_highlight = {
+            owned_by = ROOT
+            region = lower_oppia_region
+        }
+    }
+}

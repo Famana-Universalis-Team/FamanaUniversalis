@@ -1,0 +1,348 @@
+zeaf_1 = {
+	slot = 1
+	has_country_shield = yes
+	
+	potential = {
+		tag = ZEA
+		religion = gadan
+	}
+	zea_raise_banners = {
+		icon = mission_non-western_cavalry_raid
+		required_missions = {  } #None
+		position = 1
+		trigger = {
+			total_development = 20
+			army_size_percentage = 1
+        }
+		effect = {
+			add_country_modifier = {
+				name = zea_raise_banners
+				duration = 7300
+			}
+			set_country_flag = zeaf_merc_flag
+			custom_tooltip = getZeaf2Mercs
+		}
+		provinces_to_highlight = {
+		}
+	}
+	zea_into_the_delta = {
+		icon = mission_have_two_subjects
+		required_missions = { zea_raise_banners }
+		position = 2
+		trigger = {
+			owns_core_province = 5152
+			owns_core_province = 5153
+        }
+		effect = {
+			makykay_area = {
+				add_permanent_claim = ROOT
+			}
+			rishtokay_area = {
+				add_permanent_claim = ROOT
+			}
+			add_permanent_claim = 5138
+			add_permanent_claim = 5139
+			create_general = { tradition = 50 }
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 5152
+				province_id = 5153
+			}
+		}
+	}
+
+	zea_rule_makyna = {
+		icon = mission_chinese_general_riding
+		required_missions = { zea_into_the_delta }
+		position = 3
+		trigger = {
+			owns_core_province = 5145
+			owns_core_province = 5142
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 10
+				religion = gadan
+				region = maky_region
+			}
+        }
+		effect = {
+			maky_region = {
+				add_permanent_claim = ROOT
+			}
+			5146 = {
+				cede_province = ROOT
+			}
+			add_country_modifier = {
+				name = zea_conquest_of_maky
+				duration = 5475
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 5145
+				province_id = 5142
+			}
+		}
+	}
+
+	zea_holy_cities = {
+		icon = mission_european_church
+		required_missions = { zea_rule_makyna }
+		position = 4
+		trigger = {
+			5140 = {
+				owned_by = ROOT
+				development = 6
+				has_building = temple
+				religion = gadan
+			}
+			5143 = {
+				owned_by = ROOT
+				development = 6
+				has_building = temple
+				religion = gadan
+			}
+			5142 = {
+				owned_by = ROOT
+				development = 6
+				has_building = temple
+				religion = gadan
+			}
+			5139 = {
+				owned_by = ROOT
+				development = 6
+				has_building = temple
+				religion = gadan
+			}
+        }
+		effect = {
+			add_country_modifier = {
+				name = zea_holy_cities
+				duration = 5475
+			}
+			5140 = {
+				add_province_modifier = {
+					name = zea_holy_city
+					duration = -1
+				}
+			}
+			5143 = {
+				add_province_modifier = {
+					name = zea_holy_city
+					duration = -1
+				}
+			}
+			5142 = {
+				add_province_modifier = {
+					name = zea_holy_city
+					duration = -1
+				}
+			}
+			5139 = {
+				add_province_modifier = {
+					name = zea_holy_city
+					duration = -1
+				}
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 5140
+				province_id = 5143
+				province_id = 5142
+				province_id = 5139
+			}
+		}
+	}
+
+	zea_opmaki_domination = {
+		icon = mission_unite_home_region
+		required_missions = { zea_holy_cities }
+		position = 5
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 5
+				region = maky_region
+				culture = Opmaki
+			}
+			custom_trigger_tooltip = {
+				tooltip = owns_maky_tooltip_zeaf
+				all_province = {
+					if = {
+						limit = {
+							region = maky_region
+						}
+						OR = {
+							is_empty = yes
+							AND = {
+								owned_by = ROOT
+								religion = gadan
+							}
+						}
+					}
+				}
+			}
+        }
+		effect = {
+			define_advisor = {
+				type = army_reformer
+				skill = 2
+				cost_multiplier = 0.25
+			}
+			add_adm_power = 100
+			add_dip_power = 200
+			add_mil_power = 100
+			add_country_modifier = {
+				name = zea_tribal_masidon
+				duration = -1
+			}
+		}
+	}
+}
+
+zeaf_2 = {
+	slot = 2
+	has_country_shield = yes
+	
+	potential = {
+		tag = ZEA
+		religion = gadan
+	}
+
+	zea_consolidate_opmaki = {
+		icon = mission_market_place_with_asian_traders
+		required_missions = { zea_raise_banners }
+		position = 2
+		trigger = {
+			total_development = 30
+			num_of_owned_provinces_with = {
+				value = 6
+				region = south_xalia_region
+			}
+			monthly_income = 3
+        }
+		effect = {
+			add_country_modifier = {
+				name = zea_integrate_tribes
+				duration = 5475
+			}
+			tsaj_area = {
+				add_permanent_claim = ROOT
+			}
+			zeaf_area = {
+				add_permanent_claim = ROOT
+			}
+			gadea_area = {
+				add_permanent_claim = ROOT
+			}
+			bava_area = {
+				add_permanent_claim = ROOT
+			}
+			morsum_area = {
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	zea_enter_gadea = {
+		icon = mission_eastern_european_city
+		required_missions = { zea_consolidate_opmaki }
+		position = 3
+		trigger = {
+			OR = {
+				owns_core_province = 5155
+				AND = {
+					owns_core_province = 5156
+					5155 = {
+						owned_by = GDA
+					}
+				}
+			}
+			employed_advisor = {
+				category = DIP
+				religion = gadan
+			}
+        }
+		effect = {
+			if = {
+				limit = {
+					GDA = {
+						owns_core_province = 5155
+						ai = yes
+					}
+				}
+				custom_tooltip = VASSALISE_GADEA
+				hidden_effect = {
+					vassalize = GDA
+				}
+			}
+			5155 = {
+				add_province_modifier = {
+					name = zea_owner_of_gadea
+					duration = 36500
+				}
+			}
+		}
+		provinces_to_highlight = {
+			province_id = 5155
+		}
+	}
+
+	zea_turn_on_delkia = {
+		icon = mission_steppe_warriors
+		required_missions = { zea_enter_gadea }
+		position = 4
+		trigger = {
+			DEL = {
+				NOT = {
+					has_opinion = {
+						who = ROOT
+						value = 0
+					}
+				}
+				has_spy_network_from = {
+					who = ROOT
+					value = 50
+				}
+			}
+        }
+		effect = {
+			marn_area = {
+				add_permanent_claim = ROOT
+			}
+			add_country_modifier = {
+				name = zea_mountain_warfare
+				duration = 7300
+			}
+			add_country_modifier = {
+				name = zea_anti_xalian_diplomacy
+				duration = 3650
+			}
+		}
+	}
+
+	zea_from_the_ruins = {
+		icon = mission_colonial
+		required_missions = { zea_holy_cities }
+		position = 5
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 5
+				num_of_times_improved = 5
+			}
+        }
+		effect = {
+			5140 = {
+				change_trade_goods = silk
+				add_base_production = 1
+			}
+			5142 = {
+				add_base_production = 1
+			}
+			add_country_modifier = {
+				name = zea_rebuilding
+				duration = 5475
+			}
+		}
+	}
+}

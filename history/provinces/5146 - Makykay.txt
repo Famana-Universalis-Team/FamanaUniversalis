@@ -1,5 +1,5 @@
 discovered_by = east_gomic_tech_gr
-discovered_by = north_gomic_tech_gr
+discovered_by = lathvy_tech_gr
 discovered_by = west_gomic_tech_gr
 discovered_by = great_desert_tech_gr
 #Written with Eu4 Easy Province Creator by emiroercn
@@ -12,9 +12,10 @@ base_tax = 1
 base_production = 1
 trade_goods = livestock
 base_manpower = 1
-is_city = no
+ 
 extra_cost = 2
+is_city = no
 native_size = 30
-native_ferocity = 1
-native_hostileness = 1
+native_ferocity = 6
+native_hostileness = 5
 capital = "Sorja"

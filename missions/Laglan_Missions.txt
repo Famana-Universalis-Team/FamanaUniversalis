@@ -1,0 +1,1605 @@
+
+lag_1 = {
+    slot = 1
+    generic = no
+    ai = yes
+    potential = {
+        NOT = { map_setup = map_setup_random }
+		OR = {
+            tag = LAG
+            tag = RES
+        }
+    }
+    has_country_shield = yes
+
+    lag_feniki_culture = {
+        icon = mission_ottoman_harem
+        required_missions = { }
+        trigger = {
+            if = {
+                limit = {
+                    ai = no
+                }
+                philosopher = 2
+            }
+            culture_group = Western_Estali
+            laglon_region = {
+                type = all
+                OR = {
+                    AND = {
+                        culture_group = Western_Estali
+                        owner = {
+                            culture_group = Western_Estali
+                        }
+                    }
+                    is_empty = yes
+                }
+            }
+        }
+        effect = {
+            create_explorer = { tradition = 60 }
+            5028 = {
+                change_trade_goods = dyes
+                add_province_modifier = {
+                    name = lag_esmekeed
+                    duration = -1
+                }
+            }
+            if = {
+                limit = {
+                    NOT = {
+                        is_year = 291
+                    }
+                }
+                custom_tooltip = lagSchoolThing
+                if = {
+                    limit = {
+                        religious_school = {
+	                        group = lathvy_group
+	                        school = pextoglazian_school
+                        }
+                    }
+                    hidden_effect = {
+                        add_estate_loyalty = {
+                            estate = estate_church
+                            loyalty = 40
+                        }
+                    }
+                }
+                if = {
+                    limit = {
+                        religious_school = {
+	                        group = lathvy_group
+	                        school = maxan_school
+                        }
+                    }
+                    hidden_effect = {
+                        add_manpower = 15
+                    }
+                }
+            }
+        }
+        provinces_to_highlight = {
+            region = laglon_region
+            NOT = {
+                is_empty = yes
+            }
+            NOT = {
+                culture_group = Western_Estali
+            }
+        }
+    }
+
+    lag_sense_of_unity = {
+        icon = mission_novgorod_the_great
+        required_missions = { lag_feniki_culture }
+        trigger = {
+            NOT = {
+                any_owned_province = {
+                    region = laglon_region
+                    local_autonomy = 1
+                }
+            }
+            if = {
+                limit = {
+                    religious_school = {
+	                    group = lathvy_group
+	                    school = maxan_school
+                    }
+                }
+            	army_size_percentage = 0.8
+            }
+            else = {
+                manpower_percentage = 0.60
+            }
+        }
+        effect = {
+            add_stability_or_adm_power = yes
+            add_country_modifier = {
+                name = lag_united_we_stand
+                duration = -1
+            }
+        }
+        provinces_to_highlight = {
+            owned_by = ROOT
+            region = laglon_region
+            local_autonomy = 1
+        }
+    }
+
+    lag_beyond_the_highlands = {
+        icon = mission_collect_yasak
+        required_missions = { lag_feyel_and_woch }
+        position = 4
+        trigger = {
+            num_of_owned_provinces_with = {
+                value = 10
+                region = porlodya_region
+            }
+        }
+        effect = {
+            add_country_modifier = {
+                name = lag_colony_rush
+                duration = 10950
+            }
+            create_conquistador = {
+                tradition = 60
+            }
+        }
+        provinces_to_highlight = {
+            NOT = {country_or_non_sovereign_subject_holds = ROOT}
+            region = porlodya_region
+        }
+    }
+
+    lag_settle_the_frontier = {
+        icon = mission_clear_the_delta
+        required_missions = { lag_beyond_the_highlands }
+        position = 5
+        trigger = {
+            porlodya_region = {
+                type = all
+                country_or_non_sovereign_subject_holds = ROOT
+            }
+        }
+        effect = {
+            porlodya_region = {
+                add_province_modifier = {
+                    name = lag_develop_the_interior
+                    duration = 9125
+                }
+            }
+            west_ordica_region = {
+                add_permanent_claim = ROOT
+            }
+        }
+        provinces_to_highlight = {
+            NOT = {country_or_non_sovereign_subject_holds = ROOT}
+            region = porlodya_region
+        }
+    }
+
+    lag_shores_of_the_olivinar = {
+        icon = mission_unite_coromandel
+        required_missions = { lag_settle_the_frontier }
+        position = 7
+        trigger = {
+            west_ordica_region = {
+                type = all
+                OR = {
+                    country_or_non_sovereign_subject_holds = ROOT
+                    is_empty = yes
+                }
+            }
+        }
+        effect = {
+            add_adm_power = 35
+            add_dip_power = 35
+            add_mil_power = 35
+            add_country_modifier = {
+                name = lag_further_our_reach
+                duration = 7300
+            }
+            add_country_modifier = {
+                name = lag_access_northern_trade_routes
+                duration = -1
+            }
+            east_yuvla_area = {
+                add_permanent_claim = ROOT
+            }
+        }
+        provinces_to_highlight = {
+            NOT = {country_or_non_sovereign_subject_holds = ROOT}
+            NOT = {is_empty = yes}
+            region = west_ordica_region
+        }
+    }
+
+    lag_commandeer_the_channel = {
+        icon = mission_divert_trade_from_bengal
+        required_missions = { lag_shores_of_the_olivinar lag_the_war_for_walara }
+        position = 11
+        trigger = {
+            west_yuvla_area = {
+                type = all
+                country_or_non_sovereign_subject_holds = ROOT
+            }
+            east_yuvla_area = {
+                type = all
+                country_or_non_sovereign_subject_holds = ROOT
+            }
+            owns_core_province = 5289
+            5753 = {
+                trade_share = {
+                    country = ROOT
+                    share = 85
+                }
+            }
+        }
+        effect = {
+            5289 = {
+                add_province_modifier = {
+                    name = lag_channel_toll
+                    duration = -1
+                }
+            }
+            if = {
+                limit = {
+                    NOT = {
+                        5289 = {
+                            province_has_center_of_trade_of_level = 3
+                        }
+                    }
+                }
+                5289 = {
+                    add_center_of_trade_level = 1
+                }
+            }
+            6184 = {
+                add_trade_modifier = {
+                    who = ROOT
+                    duration = 10950
+                    power = 40
+                    key = CONTROL_YUVLAR
+                }
+            }
+            5725 = {
+                add_trade_modifier = {
+                    who = ROOT
+                    duration = 10950
+                    power = 40
+                    key = CONTROL_YUVLAR
+                }
+            }
+            6236 = {
+                add_trade_modifier = {
+                    who = ROOT
+                    duration = 10950
+                    power = 40
+                    key = CONTROL_YUVLAR
+                }
+            }
+        }
+        provinces_to_highlight = {
+            NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			OR = {
+                area = east_yuvla_area
+                area = west_yuvla_area
+                province_id = 5753
+                province_id = 5289
+            }
+        }
+    }
+}
+
+lag_2 = {
+    slot = 2
+    generic = no
+    ai = yes
+    potential = {
+        NOT = { map_setup = map_setup_random }
+		OR = {
+            tag = LAG
+            tag = RES
+        }
+    }
+    has_country_shield = yes
+
+    lag_feyel_and_woch = {
+        icon = mission_gharbianss
+        required_missions = {lag_sense_of_unity }
+        position = 3
+        trigger = {
+            NOT = {
+                unrest = -2
+            }
+            feyel_area = {
+                type = all
+                owned_by = ROOT
+                NOT = {
+                    nationalism	= 1
+                }
+            }
+        }
+        effect = {
+            custom_tooltip = lagGetJustPers
+            add_country_modifier = {
+                name = lag_forest_pioneers
+                duration = -1
+            }
+            west_estal_region = {
+                add_permanent_claim = ROOT
+                discover_country = ROOT
+            }
+            porlodya_region = {
+                discover_country = ROOT
+            }
+            gomic_exit = {
+                discover_country = ROOT
+            }
+        }
+        provinces_to_highlight = {
+            NOT = {owned_by = ROOT}
+            area = feyel_area
+        }
+    }
+
+    lag_face_the_barbarians = {
+        icon = mission_iroquois_warriors
+        required_missions = {lag_feyel_and_woch }
+        position = 5
+        trigger = {
+            west_estal_region = {
+				type = all
+                OR = {
+                    country_or_non_sovereign_subject_holds = ROOT
+                    is_empty = yes
+                }
+			}
+        }
+        effect = {
+            hidden_effect = {
+                every_owned_province = {
+                    limit = {
+                        culture = Mirrisan
+                    }
+                    change_culture = Feniki
+                    add_province_modifier = {
+                        name = lag_convert_to_feniki
+                        duration = 7300
+                    }
+                }
+            }
+            custom_tooltip = lagGoConvertMir
+            fes_viom_area = {
+				limit = {
+					is_empty = yes
+				}
+				cede_province = ROOT
+				add_core = ROOT
+				change_culture = ROOT
+				change_religion = ROOT
+			}
+            hasia_area = {
+				limit = {
+					is_empty = yes
+				}
+				cede_province = ROOT
+				add_core = ROOT
+				change_culture = ROOT
+				change_religion = ROOT
+			}
+            napora_region = {
+                add_permanent_claim = ROOT
+                discover_country = ROOT
+            }
+        }
+        provinces_to_highlight = {
+            NOT = { country_or_non_sovereign_subject_holds = ROOT }
+            NOT = { is_empty = yes }
+            region = west_estal_region
+        }
+    }
+
+    lag_expel_hasia = {
+        icon = mission_rb_conquer_the_isles
+        required_missions = {lag_face_the_barbarians }
+        position = 6
+        trigger = {
+            owns = 5695
+        }
+        effect = {
+            if = {
+				limit = {
+					5695 = {
+						culture = Hasian
+					}
+				}
+				5695 = {
+					change_culture = ROOT
+					change_religion = ROOT
+					add_core = ROOT
+					add_base_tax = -3
+					add_base_production = -3
+					add_base_manpower = -3
+				}
+				add_country_modifier = { 
+					name = umz_crushed
+					duration = 7300
+				}
+			}
+			else = {
+				add_treasury = 250
+			}
+        }
+        provinces_to_highlight = {
+            NOT = {
+                country_or_non_sovereign_subject_holds = ROOT
+            }
+            province_id = 5695
+        }
+    }
+
+    lag_dominate_west_estal = {
+        icon = mission_heart_of_the_hansa
+        required_missions = {lag_expel_hasia lag_shores_of_the_olivinar }
+        position = 8
+        trigger = {
+            num_of_owned_provinces_with = {
+                value = 120
+                superregion = west_estal_superregion
+            }
+            army_size = 150
+            navy_size = 100
+        }
+        effect = {
+            change_adm = 1
+            if = {
+                limit = {
+                    NOT = {
+                        current_age = age_of_revolutions
+                    }
+                }
+                custom_tooltip = lagDominateWestal
+                hidden_effect = {
+                    add_country_modifier = {
+                        name = lag_epic_westal_modifier
+                        duration = -1
+                    }
+                }
+            }
+        }
+        provinces_to_highlight = {
+            NOT = {
+                owned_by = ROOT
+            }
+            superregion = west_estal_superregion
+        }
+    }
+
+    lag_the_war_for_walara = {
+        icon = mission_raid_on_valencia
+        required_missions = { lag_annex_tegaria }
+        position = 10
+        trigger = {
+            jinasa_area = {
+                type = all
+                country_or_non_sovereign_subject_holds = ROOT
+            }
+            if = {
+                limit = {
+                    exists = WLR
+                }
+                army_size = WLR
+            }
+        }
+        effect = {
+            custom_tooltip = lagGetWarExh
+            hidden_effect = {
+                add_war_exhaustion = -20
+            }
+            jinasa_area = {
+                add_province_modifier = {
+                    name = lag_fortified_highlands
+                    duration = -1
+                }
+            }
+            west_yuvla_area = {
+                add_permanent_claim = ROOT
+            }
+            pixrol_area = {
+                add_permanent_claim = ROOT
+            }
+        }
+        provinces_to_highlight = {
+            NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			area = jinasa_area
+        }
+    }
+
+    lag_invade_the_north = {
+        icon = mission_land_of_churches
+        required_missions = { lag_the_war_for_walara lag_raid_on_pomlen }
+        position = 13
+        trigger = {
+            pixrol_area = {
+                type = all
+                country_or_non_sovereign_subject_holds = ROOT
+            }
+            seaside_nevia_area = {
+                type = all
+                country_or_non_sovereign_subject_holds = ROOT
+            }
+        }
+        effect = {
+            add_country_modifier = {
+                name = lag_control_the_mountain_passes
+                duration = -1
+            }
+            custom_tooltip = lagGetMerc
+        }
+        provinces_to_highlight = {
+            NOT = {
+                country_or_non_sovereign_subject_holds = ROOT
+            }
+            OR = {
+                area = pixrol_area
+                area = seaside_nevia_area
+            }
+        }
+    }
+}
+
+lag_3 = {
+    slot = 3
+    generic = no
+    ai = yes
+    potential = {
+        NOT = { map_setup = map_setup_random }
+		OR = {
+            tag = LAG
+            tag = RES
+        }
+    }
+    has_country_shield = yes
+
+    lag_deal_with_the_guilds = {
+        icon = mission_dominate_home_trade_node
+        required_missions = { }
+        position = 2
+        trigger = {
+            any_owned_province = {
+                province_has_center_of_trade_of_level = 3
+            }
+            OR = {
+                estate_loyalty = {
+                    estate = estate_burghers
+                    loyalty = 80
+                }
+                NOT = {
+                    estate_influence = {
+                        estate = estate_burghers
+                        influence = 20
+                    }
+                }
+            }
+        }
+        effect = {
+            add_mercantilism = 10
+            change_estate_land_share = {
+				estate = estate_burghers
+				share = -5
+			}
+            add_country_modifier = {
+                name = lag_royal_trade
+                duration = 7300
+            }
+        }
+        provinces_to_highlight = {
+            owned_by = ROOT
+            province_has_center_of_trade_of_level = 1
+            NOT = {
+                province_has_center_of_trade_of_level = 3
+            }
+        }
+    }
+
+    lag_the_question_of_slavery = {
+        icon = mission_mayan_conquest
+        required_missions = { lag_deal_with_the_guilds lag_expand_the_inland_cities }
+        position = 4
+        trigger = {
+            OR = {
+                NOT = {
+                    any_owned_province = {
+                        region = laglon_region
+                        trade_goods = slaves
+                    }
+                }
+                AND = {
+                    5021 = {
+                        trade_goods = slaves
+                        base_production = 8
+                    }
+                    5024 = {
+                        trade_goods = slaves
+                        base_production = 8
+                    }
+                }
+            }
+        }
+        effect = {
+            custom_tooltip = lagSlaveTooltip
+            tooltip = {
+                add_country_modifier = {
+                    name = lag_abolished_slavery
+                    duration = 10950
+                }
+            }
+            custom_tooltip = lagSlaveTooltip2
+            tooltip = {
+                add_years_of_income	= 1.5
+            }
+            hidden_effect = {
+                if = {
+                    limit = {
+                        NOT = {
+                            any_owned_province = {
+                                region = laglon_region
+                                trade_goods = slaves
+                            }
+                        }
+                    }
+                    add_country_modifier = {
+                        name = lag_abolished_slavery
+                        duration = 10950
+                    }
+                }
+                else = {
+                    if = {
+                        limit = {
+                            AND = {
+                                5021 = {
+                                    trade_goods = slaves
+                                    base_production = 8
+                                }
+                                5024 = {
+                                    trade_goods = slaves
+                                    base_production = 8
+                                }
+                            }
+                        }
+                        add_years_of_income	= 1.5
+                    }
+                }
+            }
+            
+        }
+        provinces_to_highlight = {
+            owned_by = ROOT
+            region = laglon_region
+            trade_goods = slaves
+        }
+    }
+
+    lag_claim_the_great_city = {
+        icon = mission_sponsor_piracy
+        required_missions = { lag_control_the_channel }
+        position = 6
+        trigger = {
+            owns_core_province = 5066
+            NOT = {
+                exists = TCK
+            }
+        }
+        effect = {
+            5066 = {
+                add_province_modifier = {
+                    name = lag_quanex
+                    duration = -1
+                }
+                change_culture = ROOT
+                change_religion = ROOT
+            }
+            #add_treasury = 500
+            umzat_islands_area = {
+                add_permanent_claim = ROOT
+            }
+        }
+        provinces_to_highlight = {
+            NOT = {
+                owned_by = ROOT
+            }
+            province_id = 5066
+        }
+    }
+
+    lag_capture_gineazia = {
+        icon = mission_religious
+        required_missions = { lag_annex_tegaria }
+        position = 10
+        trigger = {
+            gineazia_area = {
+                type = all
+                country_or_non_sovereign_subject_holds = ROOT
+            }
+            maglazios_area = {
+                type = all
+                country_or_non_sovereign_subject_holds = ROOT
+            }
+        }
+        effect = {
+            if = {
+                limit = {
+                    religion = lathvy
+                }
+                add_country_modifier = {
+                    name = lag_seizeure_of_maglazios
+                    duration = 5475
+                }
+            }
+            else = {
+                add_prestige_or_monarch_power = {
+				    amount = 10
+			    }
+            }
+            if = {
+                limit = {
+                    NOT = {
+                        government_rank = 3
+                    }
+                }
+                set_government_rank = 3
+            }
+            gineazia_area = {
+                add_province_modifier = {
+                    name = lag_a_glazian_welcome
+                    duration = 3650
+                }
+            }
+            maglazios_area = {
+                add_province_modifier = {
+                    name = lag_a_glazian_welcome
+                    duration = 3650
+                }
+            }
+            hilemo_area = {
+                add_permanent_claim = ROOT
+            }
+            lomea_area = {
+                add_permanent_claim = ROOT
+            }
+            hatu_area = {
+                add_permanent_claim = ROOT
+            }
+        }
+        provinces_to_highlight = {
+            NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			OR = {
+                area = gineazia_area
+                area = maglazios_area
+            }
+        }
+    }
+
+    lag_lomean_conquest = {
+        icon = mission_cathedral_cities
+        required_missions = { lag_capture_gineazia }
+        position = 11
+        trigger = {
+            hilemo_area = {
+                type = all
+                country_or_non_sovereign_subject_holds = ROOT
+            }
+            lomea_area = {
+                type = all
+                country_or_non_sovereign_subject_holds = ROOT
+            }
+            hatu_area = {
+                type = all
+                country_or_non_sovereign_subject_holds = ROOT
+            }
+        }
+        effect = {
+            add_army_professionalism = 0.05
+            add_country_modifier = {
+                name = lag_enlisting_locals
+                duration = 7300
+            }
+            pextoglazia_region = {
+                add_permanent_claim = ROOT
+            }
+            if = {
+                limit = {
+                    exists = PEX
+                }
+                hidden_effect = {
+                    add_ruler_modifier = {
+                        name = lag_butcher_of_glazia
+                        duration = -1
+                    }
+                }
+            }
+            custom_tooltip = lagIfPextoExists
+        }
+        provinces_to_highlight = {
+            NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			OR = {
+                area = hilemo_area
+                area = lomea_area
+                area = hatu_area
+            }
+        }
+    }
+
+    lag_raid_on_pomlen = {
+        icon = mission_crusade_for_varna
+        required_missions = { lag_lomean_conquest }
+        position = 12
+        trigger = {
+            5337 = {
+                owned_by = ROOT
+            }
+            num_of_owned_provinces_with = {
+                value = 12
+                region = pextoglazia_region
+            }
+        }
+        effect = {
+            country_event = {
+                id = restema.4
+            }
+        }
+        provinces_to_highlight = {
+            NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			region = pextoglazia_region
+        }
+    }
+
+    lag_the_resteman_perspective = {
+        icon = mission_rb_angevin_kingdom
+        required_missions = { lag_raid_on_pomlen }
+        position = 14
+        trigger = {
+            tag = RES
+            religion = lathvy
+            is_defender_of_faith = yes
+            piety = 1
+            prestige = 100
+        }
+        effect = {
+            country_event = {
+                id = restema.3
+            }
+            add_country_modifier = {
+                name = lag_new_lathvy_doctrine
+                duration = 5475
+            }
+        }
+        #provinces_to_highlight = {}
+    }
+}
+
+lag_4 = {
+    slot = 4
+    generic = no
+    ai = yes
+    potential = {
+        NOT = { map_setup = map_setup_random }
+		OR = {
+            tag = LAG
+            tag = RES
+        }
+    }
+    has_country_shield = yes
+
+    lag_sponsor_fishermen = {
+        icon = mission_rb_cod_wars
+        required_missions = { }
+        trigger = {
+            OR = {
+                wharf = 3
+                trade_goods_produced_amount = {
+	                trade_goods = fish
+	                amount = 6
+                }
+            }
+        }
+        effect = {
+            custom_tooltip = lagGetFishMoney
+            hidden_effect = {
+                random_owned_province = {
+                    limit = {
+                        trade_goods = fish
+                        NOT = {
+                            has_province_flag = lag_got_fish
+                        }
+                    }
+                    add_province_modifier = {
+                        name = lag_more_fish
+                        duration = -1
+                    }
+                    set_province_flag = lag_got_fish
+                }
+                random_owned_province = {
+                    limit = {
+                        trade_goods = fish
+                        NOT = {
+                            has_province_flag = lag_got_fish
+                        }
+                    }
+                    add_province_modifier = {
+                        name = lag_more_fish
+                        duration = -1
+                    }
+                    set_province_flag = lag_got_fish
+                }
+                random_owned_province = {
+                    limit = {
+                        trade_goods = fish
+                        NOT = {
+                            has_province_flag = lag_got_fish
+                        }
+                    }
+                    add_province_modifier = {
+                        name = lag_more_fish
+                        duration = -1
+                    }
+                    set_province_flag = lag_got_fish
+                }
+                random_owned_province = {
+                    limit = {
+                        trade_goods = fish
+                        NOT = {
+                            has_province_flag = lag_got_fish
+                        }
+                    }
+                    add_province_modifier = {
+                        name = lag_more_fish
+                        duration = -1
+                    }
+                    set_province_flag = lag_got_fish
+                }
+                random_owned_province = {
+                    limit = {
+                        trade_goods = fish
+                        NOT = {
+                            has_province_flag = lag_got_fish
+                        }
+                    }
+                    add_province_modifier = {
+                        name = lag_more_fish
+                        duration = -1
+                    }
+                    set_province_flag = lag_got_fish
+                }
+            }
+            add_years_of_owned_provinces_production_income = {
+                years = 10
+                trigger = {
+                    trade_goods = fish
+                }
+                custom_tooltip = LAG_GET_A_LOT_OF_FISH
+            }
+        }
+        provinces_to_highlight = {
+            owned_by = ROOT
+            trade_goods = fish
+        }
+    }
+
+    lag_develop_the_coastline = {
+        icon = mission_rb_conquer_brittany
+        required_missions = { lag_sponsor_fishermen lag_build_ports }
+        trigger = {
+            num_of_owned_provinces_with = {
+                value = 10
+                region = laglon_region
+                has_port = yes
+                development = 15
+            }
+        }
+        effect = {
+            add_country_modifier = {
+                name = lag_tame_the_coast
+                duration = 5475
+            }
+            if = {
+                limit = {
+                    NOT = {
+                        5022 = {
+                            province_has_center_of_trade_of_level = 3
+                        }
+                    }
+                }
+                5022 = {
+                    add_center_of_trade_level = 1
+                }
+            }
+            5020 = {
+                change_trade_goods = glass
+            }
+            5019 = {
+                change_trade_goods = cloth
+            }
+            5026 = {
+                change_trade_goods = wine
+            }
+        }
+        provinces_to_highlight = {
+            owned_by = ROOT
+            has_port = yes
+            region = laglon_region
+            NOT = {development = 15}
+        }
+    }
+
+    lag_expand_the_inland_cities = {
+        icon = mission_rb_prospect_for_coal
+        required_missions = { lag_develop_the_coastline}
+        trigger = {
+            share_of_starting_income = 2.0
+            temple = 10
+            workshop = 10
+            5029 = {
+                owned_by = ROOT
+                num_of_times_improved_by_owner = 5
+            }
+            5032 = {
+                owned_by = ROOT
+                num_of_times_improved_by_owner = 5
+            }
+            5036 = {
+                owned_by = ROOT
+                num_of_times_improved_by_owner = 5
+            }
+        }
+        effect = {
+            add_adm_power = 150
+            add_country_modifier = {
+                name = lag_laglan_plains
+                duration = 18250
+            }
+            5028 = {
+                add_base_tax = 2
+                add_base_production = 2
+                add_base_manpower = 2
+            }
+            porero_area = {
+                add_prosperity = 100
+            }
+            druviked_area = {
+                add_prosperity = 100
+            }
+            esmekeed_area = {
+                add_prosperity = 100
+            }
+        }
+        provinces_to_highlight = {
+            owned_by = ROOT
+            OR = {
+                province_id = 5029
+                province_id = 5032
+                province_id = 5036
+            }
+        }
+    }
+
+    lag_control_the_channel = {
+        icon = mission_disrupt_portuguese_trade
+        position = 5
+        required_missions = { lag_the_unsinkable_fleet }
+        trigger = {
+            4982 = {
+                trade_share	= {
+                    country = ROOT
+                    share = 95
+                }
+            }
+            if = {
+                limit = {
+                    exists = TCK
+                }
+                navy_size = TCK
+            }
+            if = {
+                limit = {
+                    exists = UMZ
+                }
+                navy_size = UMZ
+            }
+            if = {
+                limit = {
+                    exists = NUT
+                }
+                navy_size = NUT
+            }
+            if = {
+                limit = {
+                    exists = OPP
+                }
+                navy_size = OPP
+            }
+        }
+        effect = {
+            5066 = {
+                add_trade_modifier = {
+                    who = ROOT
+                    duration = 3650
+                    power = 125
+                    key = LAG_QUANEX_TAKEOVER
+                }
+            }
+            if = {
+                limit = {
+                    exists = TCK
+                }
+                custom_tooltip = lagTCKtroll
+                hidden_effect = {
+                    TCK = {
+                        add_country_modifier = {
+                            name = lag_troll_tck
+                            duration = 3650
+                        }
+                    }
+                }
+            }
+            quanex_area = {
+                add_permanent_claim = ROOT
+            }
+            imogua_area = {
+                add_permanent_claim = ROOT
+            }
+            emintas_area = {
+                add_permanent_claim = ROOT
+            }
+        }
+        provinces_to_highlight = {
+            province_id = 4982
+        }
+    }
+
+    lag_subjugate_cegon = {
+        icon = mission_develop_cordoba
+        position = 7
+        required_missions = { }
+        trigger = {
+            gegon_area = {
+                type = all
+                country_or_non_sovereign_subject_holds = ROOT
+            }
+        }
+        effect = {
+            add_mil_power = 100
+            add_country_modifier = {
+                name = lag_into_pexto
+                duration = 9125
+            }
+            tegaria_area = {
+                add_permanent_claim = ROOT
+            }
+            if = {
+                limit = {
+                    is_year = 215
+                    PEX = {
+                        NOT = { has_country_flag = pextocivilwar }
+                        NOT = { has_country_flag = survived_fall }
+                        NOT = { has_country_flag = pex_collapse_prevented }
+                    }
+                }
+                custom_tooltip = lagIfCegon
+                if = {
+                    limit = {
+                        exists = PEX
+                    }
+                    hidden_effect = {
+                        PEX = {
+                            add_disaster_progress = {
+                                disaster = collapse_of_pextoglazia
+                                value = 75
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        provinces_to_highlight = {
+            NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			area = gegon_area
+        }
+    }
+
+    lag_annex_tegaria = {
+        icon = mission_turning_the_tables
+        position = 9
+        required_missions = { lag_subjugate_cegon }
+        trigger = {
+            tegaria_area = {
+                type = all
+                country_or_non_sovereign_subject_holds = ROOT
+            }
+        }
+        effect = {
+            define_advisor = {
+                type = diplomat
+                skill = 3
+                cost_multiplier = 0.35
+                location = 5303
+                culture = Glazian
+                religion = Lathvy
+            }
+            
+            area_100 = {
+                add_permanent_claim = ROOT
+            }
+            jinasa_area = {
+                add_permanent_claim = ROOT
+            }
+            gineazia_area = {
+                add_permanent_claim = ROOT
+            }
+            maglazios_area = {
+                add_permanent_claim = ROOT
+            }
+            gromash_area = {
+                add_permanent_claim = ROOT
+            }
+            neches_area = {
+                add_permanent_claim = ROOT
+            }
+            arlentan_area = {
+                add_permanent_claim = ROOT
+            }
+            if = {
+                limit = {
+                    tag = LAG
+                }
+                reyel_area = {
+                    add_permanent_claim = ROOT
+                }
+            }
+        }
+        provinces_to_highlight = {
+            NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			area = tegaria_area
+        }
+    }
+
+    lag_land_in_arlenta = {
+        icon = mission_raid_on_venice
+        position = 11
+        required_missions = { lag_annex_tegaria lag_into_the_fray }
+        trigger = {
+            any_owned_province = {
+                OR = {
+                    area = gromash_area
+                    area = neches_area
+                    area = arlentan_area
+                }
+            }
+        }
+        effect = {
+            add_country_modifier = {
+                name = lag_oppian_intervention
+                duration = 7300
+            }
+            if = {
+                limit = {
+                    exists = OSS
+                }
+                add_historical_rival = OSS
+                OSS = {
+                    add_historical_rival = ROOT
+                }
+            }
+            custom_tooltip = lagMarineArmyTrad
+            if = {
+                limit = {
+                    num_of_marines = 15
+                }
+                hidden_effect = {
+                    add_army_tradition = 20
+                }
+            }
+        }
+        provinces_to_highlight = {
+            NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			OR = {
+                area = gromash_area
+                area = neches_area
+                area = arlentan_area
+            }
+        }
+    }
+
+    lag_secure_new_pexamol = {
+        icon = mission_corsairs_of_the_north_sea
+        position = 13
+        required_missions = { lag_raid_on_pomlen }
+        trigger = {
+            5203 = {
+                country_or_non_sovereign_subject_holds = ROOT
+            }
+        }
+        effect = {
+            add_yearly_sailors = 5
+            if = {
+                limit = {
+                    5203 = {
+                        NOT = {
+                            province_has_center_of_trade_of_level = 3
+                        }
+                    }
+                }
+                5203 = {
+                    add_center_of_trade_level = 1
+                }
+            }
+            create_admiral = { tradition = 100 }
+        }
+        provinces_to_highlight = {
+            NOT = {
+                country_or_non_sovereign_subject_holds = ROOT
+            }
+            province_id = 5203
+        }
+    }
+}
+
+lag_5 = {
+    slot = 5
+    generic = no
+    ai = yes
+    potential = {
+        NOT = { map_setup = map_setup_random }
+		OR = {
+            tag = LAG
+            tag = RES
+        }
+    }
+    has_country_shield = yes
+
+    lag_build_ports = {
+        icon = secure_the_republic
+        required_missions = { }
+        trigger = {
+            num_of_owned_provinces_with = {
+                value = 20
+                has_port = yes
+            }
+            num_of_owned_provinces_with = {
+                value = 10
+                OR = {
+                    has_building = dock
+                    has_building = drydock
+                }
+            }
+        }
+        effect = {
+            add_country_modifier = {
+                name = lag_shipbuilding
+                duration = 9125
+            }
+            custom_tooltip = lagDipDevInPorts
+            hidden_effect = {
+                random_owned_province = {
+                    limit = {
+                        OR = {
+                            has_building = dock
+                            has_building = drydock
+                        }
+                    }
+                    add_base_production = 3
+                }
+                random_owned_province = {
+                    limit = {
+                        OR = {
+                            has_building = dock
+                            has_building = drydock
+                        }
+                    }
+                    add_base_production = 3
+                }
+                random_owned_province = {
+                    limit = {
+                        OR = {
+                            has_building = dock
+                            has_building = drydock
+                        }
+                    }
+                    add_base_production = 3
+                }
+                random_owned_province = {
+                    limit = {
+                        OR = {
+                            has_building = dock
+                            has_building = drydock
+                        }
+                    }
+                    add_base_production = 3
+                }
+                random_owned_province = {
+                    limit = {
+                        OR = {
+                            has_building = dock
+                            has_building = drydock
+                        }
+                    }
+                    add_base_production = 3
+                }
+            }
+        }
+        provinces_to_highlight = {
+            owned_by = ROOT
+            has_port = yes
+            NOT = {
+                OR = {
+                    has_building = dock
+                    has_building = drydock
+                }
+            }
+        }
+    }
+
+    lag_the_unsinkable_fleet = {
+        icon = mission_look_west
+        required_missions = { lag_build_ports }
+        position = 4
+        trigger = {
+            OR = {
+                num_of_galley = 40
+                num_of_heavy_ship = 15
+            }
+            navy_size_percentage = 0.9
+        }
+        effect = {
+            add_country_modifier = {
+                name = lag_massive_navy
+                duration = -1
+            }
+        }
+        #provinces_to_highlight = {}
+    }
+
+    lag_improve_naval_leadership = {
+        icon = mission_danzig_or_war
+        required_missions = { lag_the_unsinkable_fleet }
+        position = 6
+        trigger = {
+            navy_tradition = 45
+            num_of_admirals = 2
+            advisor = naval_reformer
+        }
+        effect = {
+            custom_tooltip = lagMoreNavyTrad
+            custom_tooltip = lagUnlockDoctrine
+        }
+        #provinces_to_highlight = {}
+    }
+
+    lag_friends_in_oppia = {
+        icon = mission_noble_council
+        required_missions = { }
+        position = 8
+        trigger = {
+            any_ally = {
+                capital_scope = {
+                    superregion = oppia_superregion
+                }
+                has_opinion = {
+	                who = ROOT
+	                value = 150
+                }
+            }
+        }
+        effect = {
+            if = {
+                limit = {
+                    dip = 6
+                }
+                add_dip_power = 100
+            }
+            else = {
+                change_dip = 1
+            }
+            add_country_modifier = {
+                name = lag_oppian_friend
+                duration = 9125
+            }
+            custom_tooltip = lagGetCoastalClaims
+            if = {
+                limit = {
+                    OR = {
+                        has_country_flag = Lag_Beastmode_Ai
+                        ai = no
+                    }
+                }
+                hidden_effect = {
+                    oppia_superregion = {
+                        limit = {
+                            has_port = yes
+                        }
+                        add_claim = ROOT
+                    }
+                }
+            }
+        }
+        #provinces_to_highlight = {}
+    }
+
+    lag_into_the_fray = {
+        icon = mission_subdue_rajputana
+        required_missions = { lag_friends_in_oppia }
+        position = 10
+        trigger = {
+            custom_trigger_tooltip = {
+                tooltip = lagWarWithOpp
+                any_country = {
+                    culture_group = Oppian
+                    defensive_war_with = ROOT
+                }
+            }
+            navy_size = 35
+        }
+        effect = {
+            add_country_modifier = {
+                name = lag_into_oppia
+                duration = 7300
+            }
+            custom_tooltip = lagUnlockNewGovReform
+            custom_tooltip = lagUnlockFenikiMarines
+            if = {
+                limit = {
+                    tag = RES
+                }
+                set_country_flag = lagCanGetFenikiMarines
+            }
+        }
+        #provinces_to_highlight = {}
+    }
+    
+    lag_overshadow_oppia = {
+        icon = mission_subdue_the_afghans
+        required_missions = { lag_land_in_arlenta }
+        position = 12
+        trigger = {
+            if = {
+                limit = {
+                    NOT = {
+                        tag = RES
+                    }
+                }
+                tag = RES
+            }
+            num_of_owned_provinces_with = {
+                value = 40
+                superregion = oppia_superregion
+            }
+        }
+        effect = {
+            #PICK NEW NAME
+            country_event = {
+                id = restema.2
+            }
+            custom_tooltip = lagGetBadOppia
+            hidden_effect = {
+                every_known_country = {
+                    limit = {
+                        culture_group = Oppian
+                        NOT = {
+                            tag = ROOT
+                        }
+                    }
+                    add_country_modifier = {
+                        name = lag_humiliated
+                        duration = 18250
+                    }
+                }
+            }
+        }
+        provinces_to_highlight = {
+            NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			superregion = oppia_superregion
+        }
+    }
+}

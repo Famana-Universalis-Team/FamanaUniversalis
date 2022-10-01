@@ -1,0 +1,159 @@
+defined_text = {
+    name = PextoStatus
+
+	text = {
+        localisation_key = PextoDefault
+        trigger = {
+            OR = {
+                has_country_flag = countryPextoglaziaDefault
+                NOT = {
+                    OR = {
+                        has_country_flag = countryPextoglaziaDefault
+				        has_country_flag = countryPextoglaziaSurvive
+				        has_country_flag = countryPextoglaziaDies
+				        has_country_flag = countryPextoglaziaDevolves
+			        }
+                }
+            }
+        }
+    }
+	text = {
+        localisation_key = PextoSurvive
+        trigger = {
+			has_country_flag = countryPextoglaziaSurvive
+        }
+    }
+	text = {
+        localisation_key = PextoDie
+        trigger = {
+			has_country_flag = countryPextoglaziaDies
+        }
+    }
+	text = {
+        localisation_key = PextoMessyDie
+        trigger = {
+			has_country_flag = countryPextoglaziaDevolves
+        }
+    }
+}
+
+defined_text = {
+    name = OrdicoStatus
+
+	text = {
+        localisation_key = OrdicoDefault
+        trigger = {
+			OR = {
+                has_country_flag = countryOrdicaDefault
+                NOT = {
+                    OR = {
+				        has_country_flag = countryOrdicaDefault
+				        has_country_flag = countryOrdicaCollapse
+				        has_country_flag = countryOrdicaReform
+				        has_country_flag = countryOrdicaDecay
+			        }
+                }
+            }
+        }
+    }
+	text = {
+        localisation_key = OrdicoCollapse
+        trigger = {
+			has_country_flag = countryOrdicaCollapse
+        }
+    }
+	text = {
+        localisation_key = OrdicoReform
+        trigger = {
+			has_country_flag = countryOrdicaReform
+        }
+    }
+	text = {
+        localisation_key = OrdicoDecay
+        trigger = {
+			has_country_flag = countryOrdicaDecay
+        }
+    }
+}
+
+defined_text = {
+    name = FashroStatus
+
+	text = {
+        localisation_key = FashroDefault
+        trigger = {
+			OR = {
+                has_country_flag = countryTonxaraDefault
+                NOT = {
+                    OR = {
+				        has_country_flag = countryTonxaraDefault
+				        has_country_flag = countryTonxaraFight
+				        has_country_flag = countryTonxaraDies
+			        }
+                }
+            }
+        }
+    }
+	text = {
+        localisation_key = FashroFight
+        trigger = {
+			has_country_flag = countryTonxaraFight
+        }
+    }
+	text = {
+        localisation_key = FashroDie
+        trigger = {
+			has_country_flag = countryTonxaraDies
+        }
+    }
+}
+
+defined_text = {
+    name = YomStatus
+	
+	text = {
+        localisation_key = YomHistorical
+        trigger = {
+			OR = {
+                has_country_flag = countryYomtanianDefault
+                NOT = {
+                    OR = {
+				        has_country_flag = countryYomtanianDefault
+				        has_country_flag = countryYomtanianAhistorical
+			        }
+                }
+            }
+        }
+    }
+	text = {
+        localisation_key = YomAhistorical
+        trigger = {
+			has_country_flag = countryYomtanianAhistorical
+        }
+    }
+}
+
+defined_text = {
+    name = TombaStatus
+	
+	text = {
+        localisation_key = TombaDeletedLoc
+        trigger = {
+			OR = {
+                has_country_flag = countryTombaDeleted
+                NOT = {
+                    OR = {
+				        has_country_flag = countryTombaDeleted
+				        has_country_flag = countryTombaExists
+			        }
+                }
+            }
+        }
+    }
+	text = {
+        localisation_key = TombaExistsLoc
+        trigger = {
+			has_country_flag = countryTombaExists
+        }
+    }
+}

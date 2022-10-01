@@ -4,6 +4,7 @@ add_core = DOR
 add_core = UPS
 add_core = YEK
 owner = DOR
+is_city = yes
 controller = DOR
 culture = Arakelan
 religion = dorroman
@@ -13,7 +14,7 @@ base_production = 3
 trade_goods = livestock
 base_manpower = 2
 capital = "UNNAMED"
-is_city = yes
+ 
 discovered_by = qamoni_tech_gr
 
 

@@ -12,3 +12,91 @@ country_event = {
 		ai_chance = { factor = 1 }
 	}
 }
+
+country_event = { #vinetroll
+	id = achievement.2
+	fire_only_once = yes
+	hidden = yes
+
+	trigger = {
+		ironman = yes
+		tag = ELW
+		num_of_cities = 11
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	immediate = {
+		set_country_flag = elwaitingGameCheated
+	}
+
+	option = {
+		name = achievement.2.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = {
+	id = achievement.3
+	title = achievement.3.t
+	desc = achievement.3.d
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = achievement.1.a
+		ai_chance = { factor = 1 }
+		hidden_effect = {
+			capital_scope = {
+				cede_province = ---
+				remove_core = ROOT
+			}
+		}
+	}
+}
+
+#make sure player is starting as a tag for some achievement
+country_event = {
+	id = achievement.4
+	fire_only_once = yes
+	hidden = yes
+	is_triggered_only = yes
+
+	trigger = {
+		AND = {
+			ai = no
+			OR = {
+				tag = MRL
+				OR = {
+					tag = RME
+					tag = BRO
+					tag = VRI
+					tag = YON
+					tag = BRY
+					tag = BRM
+					tag = BOR
+				}
+				OR = {
+					tag = ROL
+					tag = OLF
+					tag = ZTT
+					tag = GRL
+					tag = RHJ
+					tag = MPL
+					#tag = EQI
+				}
+			}
+		}
+	}
+
+	immediate = {
+		set_country_flag = startedLegitAch
+	}
+
+	option = {
+		name = achievement.4.a
+		ai_chance = { factor = 1 }
+	}
+}

@@ -14,7 +14,7 @@ pex_1 = {
         required_missions = { pex_integrate_the_walarans }
         position = 7
         trigger = {
-            unnamed_area_18 = {
+            druviked_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -26,24 +26,30 @@ pex_1 = {
         effect = {
             if = {
                 limit = { exists = RES }
-                add_casus_belli = {
-					target = RES
-					type = cb_vassalize_mission
-					months = 300
-				}
+                custom_tooltip = pexGetCBonRes
+                hidden_effect = {
+                    add_casus_belli = {
+					    target = RES
+					    type = cb_vassalize_mission
+					    months = 300
+				    }
+                }
             }
             if = {
                 limit = { exists = LAG }
-                add_casus_belli = {
-					target = LAG
-					type = cb_vassalize_mission
-					months = 300
-				}
+                custom_tooltip = pexGetCBonLag
+                hidden_effect = {
+                    add_casus_belli = {
+					    target = LAG
+					    type = cb_vassalize_mission
+					    months = 300
+				    }
+                }
             }
             create_admiral = { tradition = 80 }
         }
         provinces_to_highlight = {
-            area = unnamed_area_18
+            area = druviked_area
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
         }
     }
@@ -69,9 +75,6 @@ pex_1 = {
         }
         effect = {
             add_piety = 0.25
-            arlentan_area = { add_permanent_claim = ROOT }
-            gromash_area = { add_permanent_claim = ROOT }
-            arlen_area = { add_permanent_claim = ROOT }
             hidden_effect = {
                 if = {
                     limit = {
@@ -96,13 +99,19 @@ pex_1 = {
 		                	set_government_rank = 2
 		                }
 			            change_tag = RES
-			            change_technology_group	= north_gomic_tech_gr
-			            change_unit_type = north_gomic_tech_gr
+			            change_technology_group	= lathvy_tech_gr
+			            change_unit_type = lathvy_tech_gr
+                        if = {
+                            limit = {
+                                government = monarchy
+                            }
+                            add_government_reform = resteman_thalassocracy
+                        }
 			            add_country_modifier = {
 			            	name = "centralization_modifier"
 			            	duration = 7300
 			            }
-			            unnamed_area_23 = {
+			            reyel_area = {
 				            limit = {
 					            is_empty = yes
 				            }
@@ -137,6 +146,9 @@ pex_1 = {
                     }
                 }
             }
+            arlentan_area = { add_permanent_claim = ROOT }
+            gromash_area = { add_permanent_claim = ROOT }
+            neches_area = { add_permanent_claim = ROOT }
         }
         provinces_to_highlight = {
             OR = {
@@ -154,7 +166,7 @@ pex_1 = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-            arlen_area = {
+            neches_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -206,7 +218,7 @@ pex_1 = {
         provinces_to_highlight = {
             OR = {
                 area = arlentan_area
-                area = arlen_area
+                area = neches_area
                 area = gromash_area
             }
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
@@ -241,7 +253,9 @@ pex_2 = {
         required_missions = { pex_obtain_aras_approval }
         trigger = {
             stability = 3
-            num_of_rebel_controlled_provinces = 0
+            NOT = {
+                num_of_rebel_controlled_provinces = 1
+            }
             adm_power = 100
         }
         effect = {
@@ -364,12 +378,12 @@ pex_5 = {
 			}
         }
         effect = {
-            emastalia_region = { add_permanent_claim = ROOT }
-            west_emastalia_region = { add_permanent_claim = ROOT }
             add_country_modifier = {
                 name = pex_emastalia_invasion
                 duration = 3650
             }
+            emastalia_region = { add_permanent_claim = ROOT }
+            west_emastalia_region = { add_permanent_claim = ROOT }
         }
         provinces_to_highlight = {
             OR = {
@@ -384,24 +398,22 @@ pex_5 = {
         required_missions = { pex_into_emastalia }
         position = 8
         trigger = {
-            owns_all_provinces = {
-				region = emastalia_region
-				NOT = {
-					is_empty = yes
-				}
+            emastalia_region = {
+				type = all
+                OR = {
+                    country_or_non_sovereign_subject_holds = ROOT
+                    is_empty = yes
+                }
 			}
-			owns_all_provinces = {
-				region = west_emastalia_region
-				NOT = {
-					is_empty = yes
-				}
+            west_emastalia_region = {
+				type = all
+                OR = {
+                    country_or_non_sovereign_subject_holds = ROOT
+                    is_empty = yes
+                }
 			}
         }
         effect = {
-            bohora_area = { add_permanent_claim = ROOT }
-            kachik_area = { add_permanent_claim = ROOT }
-            pexamol_area = { add_permanent_claim = ROOT }
-            south_pextum_area = { add_permanent_claim = ROOT }
             hidden_effect = {
                 every_owned_province = {
                     limit = {
@@ -417,6 +429,9 @@ pex_5 = {
                 }
             }
             custom_tooltip = pex_emast_tt
+            stroktur_region = { add_permanent_claim = ROOT }
+            pexamol_area = { add_permanent_claim = ROOT }
+            south_pextum_area = { add_permanent_claim = ROOT }
         }
         provinces_to_highlight = {
             OR = {
@@ -443,19 +458,18 @@ pex_5 = {
         }
         effect = {
             country_event = {
-                id = pexto.16
+                id = pextoglazia.16
             }
-            elwait_area = { add_permanent_claim = ROOT }
-            vox_larm_area = { add_permanent_claim = ROOT }
-            megloa_area = { add_permanent_claim = ROOT }
-            pawan_area = { add_permanent_claim = ROOT }
-            glazia_area = { add_permanent_claim = ROOT }
             add_country_modifier = {
                 name = pex_cultural_revival
                 duration = -1
             }
             add_accepted_culture = Pawani_C
             add_accepted_culture = Glasian
+            elwait_area = { add_permanent_claim = ROOT }
+            vox_larm_area = { add_permanent_claim = ROOT }
+            pawan_area = { add_permanent_claim = ROOT }
+            glazia_area = { add_permanent_claim = ROOT }
         }
         provinces_to_highlight = {
             OR = {
@@ -476,7 +490,7 @@ pex_5 = {
         }
         effect = {
             country_event = {
-                id = pexto.17
+                id = pextoglazia.17
                 days = 30
             }
             hidden_effect = {
@@ -664,15 +678,15 @@ pex_6 = { #Post-disaster missions
         required_missions = { pex_sway_the_inner_circle }
         position = 6
         trigger = {
-            unnamed_pexto_8 = {
+            tegaria_area = {
 				type = all
 				owned_by = ROOT
 			}
-            unnamed_pexto_5 = {
+            hilemo_area = {
 				type = all
 				owned_by = ROOT
 			}
-            unnamed_pexto_9 = {
+            lomea_area = {
 				type = all
 				owned_by = ROOT
 			}
@@ -702,6 +716,10 @@ pex_6 = { #Post-disaster missions
                 }
                 vassalize = PLY
             }
+            add_country_modifier = {
+                duration = -1
+                name = pex_unity_modifier
+            }
             if = {
                 limit = {
                     NOT = {
@@ -715,22 +733,18 @@ pex_6 = { #Post-disaster missions
                 walara_region = { add_permanent_claim = ROOT }
                 lomea_region = { add_permanent_claim = ROOT }
             }
-            add_country_modifier = {
-                duration = -1
-                name = pex_unity_modifier
-            }
             mrug_area = { add_permanent_claim = ROOT }
             usul_area = { add_permanent_claim = ROOT }
             celzion_area = { add_permanent_claim = ROOT }
-            unnamed_area_18 = { add_permanent_claim = ROOT }
+            druviked_area = { add_permanent_claim = ROOT }
             riximi_area = { add_permanent_claim = ROOT }
             nopatle_area = { add_permanent_claim = ROOT }
         }
         provinces_to_highlight = {
             OR = {
-                area = unnamed_pexto_8
-                area = unnamed_pexto_5
-                area = unnamed_pexto_9
+                area = tegaria_area
+                area = hilemo_area
+                area = lomea_area
             }
         }
     }
@@ -757,11 +771,11 @@ pex_6 = { #Post-disaster missions
             create_general = {
                 tradition = 60
             }
-            unnamed_area_24 = { add_permanent_claim = ROOT }
-            unnamed_area_25 = { add_permanent_claim = ROOT }
+            east_yuvla_area = { add_permanent_claim = ROOT }
+            ordican_mountains_area = { add_permanent_claim = ROOT }
             abikuyra_area = { add_permanent_claim = ROOT }
             nonter_area = { add_permanent_claim = ROOT }
-            unnamed_area_26 = { add_permanent_claim = ROOT }
+            dukula_area = { add_permanent_claim = ROOT }
         }
         provinces_to_highlight = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
@@ -778,11 +792,11 @@ pex_6 = { #Post-disaster missions
         required_missions = { pex_the_northern_menace }
         position = 8
         trigger = {
-            unnamed_area_24 = {
+            east_yuvla_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-            unnamed_area_25 = {
+            ordican_mountains_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -794,7 +808,7 @@ pex_6 = { #Post-disaster missions
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-            unnamed_area_26 = {
+            dukula_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -811,11 +825,11 @@ pex_6 = { #Post-disaster missions
         provinces_to_highlight = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
 			OR = {
-                area = unnamed_area_24
-                area = unnamed_area_25
+                area = east_yuvla_area
+                area = ordican_mountains_area
                 area = abikuyra_area
                 area = nonter_area
-                area = unnamed_area_26
+                area = dukula_area
             }
         }
     }
@@ -889,11 +903,7 @@ pex_7 = { #Post-disaster missions Right side
         required_missions = { pex_the_holy_coast }
         position = 9
         trigger = {
-            bohora_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-            kachik_area = {
+            stroktur_region = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -939,10 +949,7 @@ pex_7 = { #Post-disaster missions Right side
         }
         provinces_to_highlight = {
             NOT = { country_or_non_sovereign_subject_holds = ROOT }
-			OR = {
-                area = bohora_area
-                area = kachik_area
-            }
+			region = stroktur_region
         }
     }
     pex_conquer_kapolia = {

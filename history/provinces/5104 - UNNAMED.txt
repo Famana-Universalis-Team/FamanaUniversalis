@@ -1,5 +1,5 @@
 discovered_by = east_gomic_tech_gr
-discovered_by = north_gomic_tech_gr
+discovered_by = lathvy_tech_gr
 discovered_by = west_gomic_tech_gr
 #Written with Eu4 Easy Province Creator by emiroercn
 #UNNAMED
@@ -13,10 +13,23 @@ base_production = 6
 trade_goods = fish
 base_manpower = 5
 capital = "Mesdool"
-is_city = yes
-extra_cost = 1
+ 
+
 
 owner = OSS
+is_city = yes
 controller = OSS
 add_core = OSS
 add_core = VLM
+
+
+212.6.7 = {
+owner = VLM
+is_city = yes
+controller = VLM
+add_core = VLM
+remove_core = OSS
+#culture = 
+#religion = 
+#trade_goods = 
+}

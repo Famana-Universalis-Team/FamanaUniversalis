@@ -1,11 +1,13 @@
 discovered_by = east_gomic_tech_gr
-discovered_by = north_gomic_tech_gr
+discovered_by = lathvy_tech_gr
 discovered_by = west_gomic_tech_gr
 culture = Mikledonian
 religion = lathvy
 owner = KAP
+is_city = yes
 controller = KAP
 add_core = KAP
+add_core = AEL
 
 ###
 
@@ -16,5 +18,5 @@ base_production = 3
 trade_goods = wool
 base_manpower = 5
 capital = "Javy"
-is_city = yes
-extra_cost = 1
+ 
+

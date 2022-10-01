@@ -196,7 +196,7 @@ rochoni_rebels = {
 		}
 		if = {
 			limit = {
-				NOT = { religion_group = rochoni }
+				NOT = { religion_group = lathvy_group }
 			}
 			add_prestige = -50
 			every_owned_province = {

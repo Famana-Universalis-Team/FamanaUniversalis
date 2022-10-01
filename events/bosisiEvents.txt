@@ -1,14 +1,290 @@
 namespace = bosisi
 
-#### MIGRATION
-#Based on the desertTimer variable. if factor of two, it is migration time baby!
-#currently this event does not work. I'll figure it out some day, promise.
-#country_event = {
-	##id = bosisi.1
-	#title = bosisi.1.t
-	#desc = bosisi.1.d
-	#picture = NATIVES_eventPicture
-#}
+#Tribal migration (copy format for Jzoet later)
+#Note: Add onaction to respawn them if theyre annexed by some colonisation even like rise of alu or tokum migration
+country_event = {
+	id = bosisi.1
+	title = bosisi.1.t
+	desc = bosisi.1.d
+	picture = NATIVES_eventPicture
+	is_triggered_only = yes
+
+	immediate = {
+		#check to make sure the event scopes dont carry over
+		clr_country_flag = prov3
+		clr_country_flag = prov2
+		clr_country_flag = prov1
+		#Find out how many empty provinces border the player, and then flag them
+		capital_scope = {
+			if = { #1
+				limit = {
+					any_empty_neighbor_province = {
+						#is_empty = yes
+						has_discovered = ROOT
+						NOT = { has_province_flag = chosen_migrate }
+					}
+				}
+				random_empty_neighbor_province = {
+					limit = {
+						NOT = { has_province_flag = chosen_migrate }
+						has_discovered = ROOT
+					}
+					save_event_target_as = migration_province_1
+					set_province_flag = chosen_migrate
+				}
+				ROOT = { set_country_flag = prov1 }
+			}
+			if = { #2
+				limit = {
+					any_empty_neighbor_province = {
+						AND = {
+							#is_empty = yes
+							has_discovered = ROOT
+							NOT = { has_province_flag = chosen_migrate }
+						}
+					}
+				}
+				random_empty_neighbor_province = {
+					limit = {
+						NOT = { has_province_flag = chosen_migrate }
+						has_discovered = ROOT
+					}
+					save_event_target_as = migration_province_2
+					set_province_flag = chosen_migrate
+				}
+				ROOT = { set_country_flag = prov2 }
+			}
+			if = { #3
+				limit = {
+					any_empty_neighbor_province = {
+						AND = {
+							#is_empty = yes
+							has_discovered = ROOT
+							NOT = { has_province_flag = chosen_migrate }
+						}
+					}
+				}
+				random_empty_neighbor_province = {
+					limit = {
+						NOT = { has_province_flag = chosen_migrate }
+						has_discovered = ROOT
+					}
+					save_event_target_as = migration_province_3
+					set_province_flag = chosen_migrate
+				}
+				ROOT = { set_country_flag = prov3 }
+			}
+		}
+		event_target:migration_province_1 = {
+			clr_province_flag = chosen_migrate
+		}
+		event_target:migration_province_2 = {
+			clr_province_flag = chosen_migrate
+		}
+		event_target:migration_province_3 = {
+			clr_province_flag = chosen_migrate
+		}
+	}
+
+	option = { #Refuse to Migrate. Enabled by missions.
+		name = bosisi.1.a
+		ai_chance = { factor = 0 } #i doubt the ai will get this far down the tree
+		trigger = {
+			OR = {
+				has_country_flag = allowed_to_not_migrate
+				NOT = {
+					OR = {
+						has_country_flag = prov1
+						has_country_flag = prov2
+						has_country_flag = prov3
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				capital_scope = {
+					has_province_modifier = great_desert_modifier
+				}
+			}
+			add_years_of_income = -0.5
+			add_stability = -1 #youre basically also punished with -50% tax and production as is, but this will be negated through the mission tree to allow you to eventually settle down. You're not meant to settle down in the great desert though
+		}
+		custom_tooltip = GREATDESERT_REFUSE_MIGRATE
+		hidden_effect = {
+			if = {
+				limit = {
+					capital_scope = {
+						NOT = { has_province_modifier = great_desert_modifier }
+					}
+				}
+				capital_scope = {
+					random_list = {
+						1 = {
+							add_base_production = 1
+						}
+						1 = {
+							add_base_tax = 1
+						}
+						1 = {
+							add_base_manpower = 1
+						}
+					}
+				}
+			}
+		}
+		add_country_modifier = {
+			name = didnt_migrate
+			duration = 3650
+		}
+		clr_country_flag = migmenuopen
+	}
+
+	option = { #Migrate to choice 1
+		name = bosisi.1.b
+		goto = migration_province_1
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 2 #the will want to keep to the great desert to stop migrations into fertile regions
+				event_target:migration_province_1 = {
+					has_province_modifier = great_desert_modifier
+				}
+			}
+			modifier = {
+				factor = 10 #the will want to keep to the great desert to stop migrations into tomba
+				event_target:migration_province_1 = {
+					superregion = great_desert_superregion
+				}
+			}
+		}
+		trigger = {
+			has_country_flag = prov1
+		}
+		event_target:migration_province_1 = {
+			cede_province = ROOT
+			add_core = ROOT
+		}
+		capital_scope = {
+			cede_province = ---
+			remove_core = ROOT
+		}
+		set_capital = event_target:migration_province_1
+		add_country_modifier = {
+			name = recent_migration
+			duration = 3650
+		}
+		clr_country_flag = migmenuopen
+		hidden_effect = {
+			change_variable = {
+				which = migrations
+				value = 1
+			}
+			remove_country_modifier = destr_migtimer
+			add_country_modifier = {
+				name = destr_migtimer
+				duration = 10950
+				hidden = yes
+			}
+		}
+	}
+	option = { #Migrate to choice 2
+		name = bosisi.1.c
+		goto = migration_province_2
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 2 #the will want to keep to the great desert to stop migrations into fertile regions
+				event_target:migration_province_2 = {
+					has_province_modifier = great_desert_modifier
+				}
+			}
+			modifier = {
+				factor = 10 #the will want to keep to the great desert to stop migrations into tomba
+				event_target:migration_province_2 = {
+					superregion = great_desert_superregion
+				}
+			}
+		}
+		trigger = {
+			has_country_flag = prov2
+		}
+		event_target:migration_province_2 = {
+			cede_province = ROOT
+			add_core = ROOT
+		}
+		capital_scope = {
+			cede_province = ---
+			remove_core = ROOT
+		}
+		set_capital = event_target:migration_province_2
+		add_country_modifier = {
+			name = recent_migration
+			duration = 3650
+		}
+		clr_country_flag = migmenuopen
+		hidden_effect = {
+			change_variable = {
+				which = migrations
+				value = 1
+			}
+			remove_country_modifier = destr_migtimer
+			add_country_modifier = {
+				name = destr_migtimer
+				duration = 10950
+				hidden = yes
+			}
+		}
+	}
+	option = { #Migrate to choice 3
+		name = bosisi.1.e
+		goto = migration_province_3
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 2 #the will want to keep to the great desert to stop migrations into fertile regions
+				event_target:migration_province_3 = {
+					has_province_modifier = great_desert_modifier
+				}
+			}
+			modifier = {
+				factor = 10 #the will want to keep to the great desert to stop migrations into tomba
+				event_target:migration_province_3 = {
+					superregion = great_desert_superregion
+				}
+			}
+		}
+		trigger = {
+			has_country_flag = prov3
+		}
+		event_target:migration_province_3 = {
+			cede_province = ROOT
+			add_core = ROOT
+		}
+		capital_scope = {
+			cede_province = ---
+			remove_core = ROOT
+		}
+		set_capital = event_target:migration_province_3
+		add_country_modifier = {
+			name = recent_migration
+			duration = 3650
+		}
+		clr_country_flag = migmenuopen
+		hidden_effect = {
+			change_variable = {
+				which = migrations
+				value = 1
+			}
+			remove_country_modifier = destr_migtimer
+			add_country_modifier = {
+				name = destr_migtimer
+				duration = 10950
+				hidden = yes
+			}
+		}
+	}
+}
 
 #alu
 country_event = {
@@ -19,8 +295,14 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		is_year = 249
 		tag = KKR
+		7239 = {
+			OR = {
+				is_empty = yes
+				owned_by = ROOT
+			}
+		}
+		is_year = 249
 	}
 	
 	mean_time_to_happen = {
@@ -31,6 +313,7 @@ country_event = {
 		hidden_effect = {
 			7239 = {
 				cede_province = ALU
+				add_core = ALU
 				change_culture = Ganush
 			}
 		}
@@ -51,11 +334,495 @@ country_event = {
 	option = {
 		name = bosisi.2.b
 		ai_chance = { factor = 1 }
-		7250 = {
-			create_revolt = 10
+		if = {
+			limit = {
+				7250 = {
+					owned_by = ROOT
+				}
+			}
+			7250 = {
+				create_revolt = 10
+			}
 		}
-		7251 = {
-			create_revolt = 5
+		if = {
+			limit = {
+				7251 = {
+					owned_by = ROOT
+				}
+			}
+			7251 = {
+				create_revolt = 5
+			}
+		}
+	}
+	
+	option = {
+		highlight = yes
+		trigger = {
+			ai = no
+		}
+		name = bosisi.2.c
+		if = {
+			limit = {
+				7250 = {
+					owned_by = ROOT
+				}
+			}
+			7250 = {
+				cede_province = ALU
+			}
+		}
+		if = {
+			limit = {
+				7251 = {
+					owned_by = ROOT
+				}
+			}
+			7251 = {
+				cede_province = ALU
+			}
+		}
+		switch_tag = ALU
+		ALU = {
+			add_truce_with = KKR
+		}
+	}
+}
+#mahanshan proposal
+country_event = {
+	id = bosisi.4
+	title = bosisi.4.t
+	desc = bosisi.4.d
+	picture = BARBARY_PIRATES_eventPicture
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = bosisi.4.a
+		add_country_modifier = {
+			name = "antiash_pirates"
+			duration = -1
+		}
+		mahansha_area = {
+			add_province_modifier = {
+				name = antiash_m_privileges
+				duration = -1
+			}
+		}
+	}
+	option = {
+		name = bosisi.4.b
+	}
+}
+#kinvireli sages
+country_event = {
+	id = bosisi.5
+	title = bosisi.5.t
+	desc = bosisi.5.d
+	picture = BUDDHA_eventPicture
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = bosisi.5.a
+		trigger = {
+		NOT = { adm = 6 }
+		}
+		change_adm = 1
+		add_adm_power = 50
+	}
+	option = {
+		name = bosisi.5.b
+		trigger = {
+		NOT = { dip = 6 }
+		}
+		change_dip = 1
+		add_dip_power = 50
+	}
+	option = {
+		name = bosisi.5.c
+		trigger = {
+		NOT = { mil = 6 }
+		}
+		change_mil = 1
+		add_mil_power = 50
+	}
+}
+#expedition to Geopyopia - 1
+country_event = {
+	id = bosisi.6
+	title = bosisi.6.t
+	desc = bosisi.6.d
+	picture = DIPLOMACY_eventPicture
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = bosisi.6.a
+		add_years_of_income = -0.3
+		hidden_effect = {
+			country_event = { 
+			id = bosisi.7
+			days = 100
+            random = 265
+			}
+		}
+	}
+	option = {
+		name = bosisi.6.b
+		define_conquistador = {
+		shock = 4
+		fire = 3
+		manuever = 5
+		siege = 2
+		}
+		add_mil_power = -15
+	}
+}
+#expedition to Geopyopia - 2
+country_event = {
+	id = bosisi.7
+	title = bosisi.7.t
+	desc = bosisi.7.d
+	picture = SMUGGLERS_eventPicture
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = bosisi.7.a
+		#discover shtuff when the regions exist
+		hidden_effect = {
+			country_event = { 
+			id = bosisi.8
+			days = 100
+            random = 265
+			}
+		}
+	}
+}
+#expedition to Geopyopia - 3
+country_event = {
+	id = bosisi.8
+	title = bosisi.8.t
+	desc = bosisi.8.d
+	picture = MALAYAN_PORT_eventPicture
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = bosisi.8.a
+		#discover stuff
+		hidden_effect = {
+			country_event = { 
+			id = bosisi.9
+			days = 300
+            random = 265
+			}
+		}
+	}
+}
+#expedition to Geopyopia - 4
+country_event = {
+	id = bosisi.9
+	title = bosisi.9.t
+	desc = bosisi.9.d
+	picture = EXPLORERS_eventPicture
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = bosisi.8.a
+		add_years_of_income = 3
+		add_adm_power = 50
+		add_dip_power = 50
+		add_mil_power = 50
+	}
+}
+#expedition to Dorromas - 1
+country_event = {
+	id = bosisi.10
+	title = bosisi.10.t
+	desc = bosisi.10.d
+	picture = STREET_SPEECH_eventPicture
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = bosisi.10.a
+		add_years_of_income = -0.3
+		hidden_effect = {
+			country_event = { 
+			id = bosisi.11
+			days = 100
+            random = 265
+			}
+		}
+	}
+	option = {
+		name = bosisi.10.b
+		define_advisor = {
+			type = recruitmaster
+			name = "Ashadir Qayam"
+			skill = 3
+			culture = Manthwar
+			religion = bosisi
+			discount = yes
+			location = 5815
+		}
+		add_prestige = -15
+	}
+}
+#expedition to Dorromas - 2
+country_event = {
+	id = bosisi.11
+	title = bosisi.11.t
+	desc = bosisi.11.d
+	picture = SHWEDAGON_PAGON_eventPicture
+	fire_only_once = yes
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			upper_makyna_region = {
+				discover_country = ROOT
+			}
+		}
+	}
+	option = {
+		name = bosisi.11.a
+		add_country_modifier = {
+			name = "antiash_dorroman_trade"
+			duration = 18250 #50 years
+		}
+	}
+	option = {
+		name = bosisi.11.b
+		add_country_modifier = {
+			name = "antiash_dorroman_tech"
+			duration = 18250 #50 years
+		}
+	}
+	option = {
+		name = bosisi.11.c
+		add_country_modifier = {
+			name = "antiash_dorroman_lessons"
+			duration = 18250 #50 years
+		}
+	}
+	option = {
+		name = bosisi.11.od
+		change_religion = dorroman
+		capital_scope = {
+			change_religion = dorroman
+		}
+	}
+}
+#The Fate of the Makyans
+country_event = {
+	id = bosisi.12
+	title = bosisi.12.t
+	desc = bosisi.12.d
+	picture = BAD_WITH_MONARCH_eventPicture
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = bosisi.12.a
+		every_owned_province = {
+			limit = { 
+			region = maky_region 
+			}
+				add_province_modifier = {
+				name = antiash_forgave
+				duration = 18250 #50 years
+			}
+		}
+	}
+	option = {
+		name = bosisi.12.b
+		every_owned_province = {
+			limit = { region = maky_region }
+			change_culture = ROOT
+			change_religion = ROOT
+		}
+	}
+}
+#four tribe reform monarch choosing
+#country_event = {
+	# id = bosisi.13
+	#title = bosisi.13.t
+	#desc = bosisi.13.d
+	#picture = AULIC_COUNCIL_eventPicture
+	#is_triggered_only = yes
+
+	#trigger = {
+		#has_reform = four_tribe_rule
+	#}
+	
+	#option = {
+	#name = bosisi.13.a
+		#define_ruler = {
+			#culture = Kurkari
+			#religion = Kurkari
+			#hide_skills = yes
+		#}
+	
+	#}
+	#option = {
+		#name = bosisi.13.b
+		#define_ruler = {
+			#culture = Ashdamir
+			#religion = Ashdamir
+			#hide_skills = yes
+		#}
+	#}
+	#option = {
+		#name = bosisi.13.c
+		#define_ruler = {
+			#culture = Manthwar
+			#religion = Manthwar
+			#hide_skills = yes
+		#}
+	#}
+	#option = {
+		#name = bosisi.13.od
+		#define_ruler = {
+			#culture = Ganush
+			#religion = Ganush
+			#hide_skills = yes
+		#}
+	#}#
+#}
+
+#Make tribe flee if occupied
+country_event = {
+	id = bosisi.13
+	title = bosisi.13.t
+	desc = bosisi.13.d
+	picture = NUSANTARA_WAR_eventPicture
+	is_triggered_only = yes
+
+	immediate = {
+		set_country_flag = successful_repel_tribe
+		if = {
+			limit = {
+				AND = {
+					NOT = { tag = LDV }
+					LDV = {
+						capital_scope = {
+							controlled_by = ROOT
+						}
+					}
+				}
+			}
+			hidden_effect = {
+				LDV = {
+					save_event_target_as = tribe_in_question
+					capital_scope = {
+						save_event_target_as = tribe_capital
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				AND = {
+					NOT = { tag = ODS }
+					ODS = {
+						capital_scope = {
+							controlled_by = ROOT
+						}
+					}
+				}
+			}
+			hidden_effect = {
+				ODS = {
+					save_event_target_as = tribe_in_question
+					capital_scope = {
+						save_event_target_as = tribe_capital
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				AND = {
+					NOT = { tag = SOY }
+					SOY = {
+						capital_scope = {
+							controlled_by = ROOT
+						}
+					}
+				}
+			}
+			hidden_effect = {
+				SOY = {
+					save_event_target_as = tribe_in_question
+					capital_scope = {
+						save_event_target_as = tribe_capital
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				AND = {
+					NOT = { tag = TIT }
+					TIT = {
+						capital_scope = {
+							controlled_by = ROOT
+						}
+					}
+				}
+			}
+			hidden_effect = {
+				TIT = {
+					save_event_target_as = tribe_in_question
+					capital_scope = {
+						save_event_target_as = tribe_capital
+					}
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = bosisi.13.a
+		ai_chance = { factor = 1 }
+		add_years_of_income = 0.10 #compensation
+		white_peace = event_target:tribe_in_question
+		event_target:tribe_capital = {
+			remove_core = event_target:tribe_in_question
+			if = {
+				limit = {
+					event_target:tribe_capital = {
+						any_neighbor_province = {
+							is_empty = yes
+						}
+					}
+				}
+				random_empty_neighbor_province = {
+					cede_province = event_target:tribe_in_question
+					add_core = event_target:tribe_in_question
+				}
+			}
+			else = { #If there is nowhere to flee, just teleport lmao
+				random_province = {
+					limit = {
+						region = east_great_desert_region 
+						is_empty = yes
+						NOT = {
+							area = area_239
+						}
+					}
+					cede_province = event_target:tribe_in_question
+					add_core = event_target:tribe_in_question
+				}
+			}
+			cede_province = ---
 		}
 	}
 }

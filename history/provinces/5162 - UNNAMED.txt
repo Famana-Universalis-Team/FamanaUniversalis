@@ -1,9 +1,10 @@
 discovered_by = east_gomic_tech_gr
-discovered_by = north_gomic_tech_gr
+discovered_by = lathvy_tech_gr
 discovered_by = west_gomic_tech_gr
 culture = Opmaki
 religion = gadan
 owner = ZEA
+is_city = yes
 controller = ZEA
 add_core = ZEA
 
@@ -16,7 +17,7 @@ base_production = 3
 trade_goods = wool
 base_manpower = 3
 capital = "Zeaf"
-is_city = yes
-extra_cost = 1
+ 
+
 fort_15th = yes
 

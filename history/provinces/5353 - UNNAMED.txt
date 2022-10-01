@@ -1,9 +1,10 @@
 discovered_by = east_gomic_tech_gr
-discovered_by = north_gomic_tech_gr
+discovered_by = lathvy_tech_gr
 discovered_by = west_gomic_tech_gr
 culture = Pextan
 religion = lathvy
 owner = PEX
+is_city = yes
 controller = PEX
 add_core = PEX
 add_core = RNP
@@ -18,6 +19,6 @@ base_production = 3
 trade_goods = naval_supplies
 base_manpower = 2
 capital = "Rondos"
-is_city = no
-extra_cost = 1
+ 
+
 

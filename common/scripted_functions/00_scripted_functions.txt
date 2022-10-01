@@ -54,10 +54,13 @@ can_add_province_to_hre = {
 	
 }
 
+#ROOT = province, FROM = country
 can_remove_province_from_hre = {
 	condition = {
 		potential = {
-			ai = yes
+			owner = {
+				ai = yes
+			}
 		}
 		allow = {
 			owner = {
@@ -141,276 +144,276 @@ can_burn_colony = {
 }
 
 can_colonize_province = {
-	condition = {
-		tooltip = "INSUFFICIENT_DIP_TECH_1"
-		potential = {
-            has_province_modifier = settle_1
-		}
-		allow = {
-			FROM = { dip_tech = 1 }
-		}
-	}
-	condition = {
-		tooltip = "INSUFFICIENT_DIP_TECH_2"
-		potential = {
-            has_province_modifier = settle_2
-		}
-		allow = {
-			FROM = { dip_tech = 2 }
-		}
-	}
-	condition = {
-		tooltip = "INSUFFICIENT_DIP_TECH_3"
-		potential = {
-            has_province_modifier = settle_3
-		}
-		allow = {
-			FROM = { dip_tech = 3 }
-		}
-	}
-	condition = {
-		tooltip = "INSUFFICIENT_DIP_TECH_4"
-		potential = {
-            has_province_modifier = settle_4
-		}
-		allow = {
-			FROM = { dip_tech = 4 }
-		}
-	}
-	condition = {
-		tooltip = "INSUFFICIENT_DIP_TECH_5"
-		potential = {
-            has_province_modifier = settle_5
-		}
-		allow = {
-			FROM = { dip_tech = 5 }
-		}
-	}
-	condition = {
-		tooltip = "INSUFFICIENT_DIP_TECH_6"
-		potential = {
-            has_province_modifier = settle_6
-		}
-		allow = {
-			FROM = { dip_tech = 6 }
-		}
-	}
-	condition = {
-		tooltip = "INSUFFICIENT_DIP_TECH_7"
-		potential = {
-            has_province_modifier = settle_7
-		}
-		allow = {
-			FROM = { dip_tech = 7 }
-		}
-	}
-	condition = {
-		tooltip = "INSUFFICIENT_DIP_TECH_8"
-		potential = {
-            has_province_modifier = settle_8
-		}
-		allow = {
-			FROM = { dip_tech = 8 }
-		}
-	}
-	condition = {
-		tooltip = "INSUFFICIENT_DIP_TECH_9"
-		potential = {
-            has_province_modifier = settle_9
-		}
-		allow = {
-			FROM = { dip_tech = 9 }
-		}
-	}
-	condition = {
-		tooltip = "INSUFFICIENT_DIP_TECH_10"
-		potential = {
-            has_province_modifier = settle_11
-		}
-		allow = {
-			FROM = { dip_tech = 12 }
-		}
-	}
-	condition = {
-		tooltip = "INSUFFICIENT_DIP_TECH_13"
-		potential = {
-            has_province_modifier = settle_13
-		}
-		allow = {
-			FROM = { dip_tech = 13 }
-		}
-	}
-	condition = {
-		tooltip = "INSUFFICIENT_DIP_TECH_14"
-		potential = {
-            has_province_modifier = settle_14
-		}
-		allow = {
-			FROM = { dip_tech = 14 }
-		}
-	}
-	condition = {
-		tooltip = "INSUFFICIENT_DIP_TECH_15"
-		potential = {
-            has_province_modifier = settle_15
-		}
-		allow = {
-			FROM = { dip_tech = 15 }
-		}
-	}
-	condition = {
-		tooltip = "INSUFFICIENT_DIP_TECH_16"
-		potential = {
-            has_province_modifier = settle_16
-		}
-		allow = {
-			FROM = { dip_tech = 16 }
-		}
-	}
-	condition = {
-		tooltip = "INSUFFICIENT_DIP_TECH_17"
-		potential = {
-            has_province_modifier = settle_17
-		}
-		allow = {
-			FROM = { dip_tech = 17 }
-		}
-	}
-	condition = {
-		tooltip = "INSUFFICIENT_DIP_TECH_18"
-		potential = {
-            has_province_modifier = settle_18
-		}
-		allow = {
-			FROM = { dip_tech = 18 }
-		}
-	}
-	condition = {
-		tooltip = "INSUFFICIENT_DIP_TECH_19"
-		potential = {
-            has_province_modifier = settle_19
-		}
-		allow = {
-			FROM = { dip_tech = 19 }
-		}
-	}
-	condition = {
-		tooltip = "INSUFFICIENT_DIP_TECH_20"
-		potential = {
-            has_province_modifier = settle_20
-		}
-		allow = {
-			FROM = { dip_tech = 20 }
-		}
-	}
-	condition = {
-		tooltip = "INSUFFICIENT_DIP_TECH_21"
-		potential = {
-            has_province_modifier = settle_21
-		}
-		allow = {
-			FROM = { dip_tech = 21 }
-		}
-	}
-	condition = {
-		tooltip = "INSUFFICIENT_DIP_TECH_22"
-		potential = {
-            has_province_modifier = settle_22
-		}
-		allow = {
-			FROM = { dip_tech = 22 }
-		}
-	}
-	condition = {
-		tooltip = "INSUFFICIENT_DIP_TECH_23"
-		potential = {
-            has_province_modifier = settle_23
-		}
-		allow = {
-			FROM = { dip_tech = 23 }
-		}
-	}
-	condition = {
-		tooltip = "INSUFFICIENT_DIP_TECH_24"
-		potential = {
-            has_province_modifier = settle_24
-		}
-		allow = {
-			FROM = { dip_tech = 24 }
-		}
-	}
-	condition = {
-		tooltip = "INSUFFICIENT_DIP_TECH_25"
-		potential = {
-            has_province_modifier = settle_25
-		}
-		allow = {
-			FROM = { dip_tech = 25 }
-		}
-	}
-	condition = {
-		tooltip = "INSUFFICIENT_DIP_TECH_26"
-		potential = {
-            has_province_modifier = settle_26
-		}
-		allow = {
-			FROM = { dip_tech = 26 }
-		}
-	}
-	condition = {
-		tooltip = "INSUFFICIENT_DIP_TECH_27"
-		potential = {
-            has_province_modifier = settle_27
-		}
-		allow = {
-			FROM = { dip_tech = 27 }
-		}
-	}
-	condition = {
-		tooltip = "INSUFFICIENT_DIP_TECH_28"
-		potential = {
-            has_province_modifier = settle_28
-		}
-		allow = {
-			FROM = { dip_tech = 28 }
-		}
-	}
-	condition = {
-		tooltip = "INSUFFICIENT_DIP_TECH_29"
-		potential = {
-            has_province_modifier = settle_29
-		}
-		allow = {
-			FROM = { dip_tech = 29 }
-		}
-	}
-	condition = {
-		tooltip = "INSUFFICIENT_DIP_TECH_30"
-		potential = {
-            has_province_modifier = settle_30
-		}
-		allow = {
-			FROM = { dip_tech = 30 }
-		}
-	}
-	condition = {
-		tooltip = "INSUFFICIENT_DIP_TECH_31"
-		potential = {
-            has_province_modifier = settle_31
-		}
-		allow = {
-			FROM = { dip_tech = 31 }
-		}
-	}
-	condition = {
-		tooltip = "INSUFFICIENT_DIP_TECH_32"
-		potential = {
-            has_province_modifier = settle_32
-		}
-		allow = {
-			FROM = { dip_tech = 32 }
-		}
-	}
+	#condition = {
+	#	tooltip = "INSUFFICIENT_DIP_TECH_1"
+	#	potential = {
+    #        has_province_modifier = settle_1
+	#	}
+	#	allow = {
+	#		FROM = { dip_tech = 1 }
+	#	}
+	#}
+	#condition = {
+	#	tooltip = "INSUFFICIENT_DIP_TECH_2"
+	#	potential = {
+    #        has_province_modifier = settle_2
+	#	}
+	#	allow = {
+	#		FROM = { dip_tech = 2 }
+	#	}
+	#}
+	#condition = {
+	#	tooltip = "INSUFFICIENT_DIP_TECH_3"
+	#	potential = {
+    #        has_province_modifier = settle_3
+	#	}
+	#	allow = {
+	#		FROM = { dip_tech = 3 }
+	#	}
+	#}
+	#condition = {
+	#	tooltip = "INSUFFICIENT_DIP_TECH_4"
+	#	potential = {
+    #        has_province_modifier = settle_4
+	#	}
+	#	allow = {
+	#		FROM = { dip_tech = 4 }
+	#	}
+	#}
+	#condition = {
+	#	tooltip = "INSUFFICIENT_DIP_TECH_5"
+	#	potential = {
+    #        has_province_modifier = settle_5
+	#	}
+	#	allow = {
+	#		FROM = { dip_tech = 5 }
+	#	}
+	#}
+	#condition = {
+	#	tooltip = "INSUFFICIENT_DIP_TECH_6"
+	#	potential = {
+    #        has_province_modifier = settle_6
+	#	}
+	#	allow = {
+	#		FROM = { dip_tech = 6 }
+	#	}
+	#}
+	#condition = {
+	#	tooltip = "INSUFFICIENT_DIP_TECH_7"
+	#	potential = {
+    #        has_province_modifier = settle_7
+	#	}
+	#	allow = {
+	#		FROM = { dip_tech = 7 }
+	#	}
+	#}
+	#condition = {
+	#	tooltip = "INSUFFICIENT_DIP_TECH_8"
+	#	potential = {
+    #        has_province_modifier = settle_8
+	#	}
+	#	allow = {
+	#		FROM = { dip_tech = 8 }
+	#	}
+	#}
+	#condition = {
+	#	tooltip = "INSUFFICIENT_DIP_TECH_9"
+	#	potential = {
+    #        has_province_modifier = settle_9
+	#	}
+	#	allow = {
+	#		FROM = { dip_tech = 9 }
+	#	}
+	#}
+	#condition = {
+	#	tooltip = "INSUFFICIENT_DIP_TECH_10"
+	#	potential = {
+    #        has_province_modifier = settle_11
+	#	}
+	#	allow = {
+	#		FROM = { dip_tech = 12 }
+	#	}
+	#}
+	#condition = {
+	#	tooltip = "INSUFFICIENT_DIP_TECH_13"
+	#	potential = {
+    #        has_province_modifier = settle_13
+	#	}
+	#	allow = {
+	#		FROM = { dip_tech = 13 }
+	#	}
+	#}
+	#condition = {
+	#	tooltip = "INSUFFICIENT_DIP_TECH_14"
+	#	potential = {
+    #        has_province_modifier = settle_14
+	#	}
+	#	allow = {
+	#		FROM = { dip_tech = 14 }
+	#	}
+	#}
+	#condition = {
+	#	tooltip = "INSUFFICIENT_DIP_TECH_15"
+	#	potential = {
+    #        has_province_modifier = settle_15
+	#	}
+	#	allow = {
+	#		FROM = { dip_tech = 15 }
+	#	}
+	#}
+	#condition = {
+	#	tooltip = "INSUFFICIENT_DIP_TECH_16"
+	#	potential = {
+    #        has_province_modifier = settle_16
+	#	}
+	#	allow = {
+	#		FROM = { dip_tech = 16 }
+	#	}
+	#}
+	#condition = {
+	#	tooltip = "INSUFFICIENT_DIP_TECH_17"
+	#	potential = {
+    #        has_province_modifier = settle_17
+	#	}
+	#	allow = {
+	#		FROM = { dip_tech = 17 }
+	#	}
+	#}
+	#condition = {
+	#	tooltip = "INSUFFICIENT_DIP_TECH_18"
+	#	potential = {
+    #        has_province_modifier = settle_18
+	#	}
+	#	allow = {
+	#		FROM = { dip_tech = 18 }
+	#	}
+	#}
+	#condition = {
+	#	tooltip = "INSUFFICIENT_DIP_TECH_19"
+	#	potential = {
+    #        has_province_modifier = settle_19
+	#	}
+	#	allow = {
+	#		FROM = { dip_tech = 19 }
+	#	}
+	#}
+	#condition = {
+	#	tooltip = "INSUFFICIENT_DIP_TECH_20"
+	#	potential = {
+    #        has_province_modifier = settle_20
+	#	}
+	#	allow = {
+	#		FROM = { dip_tech = 20 }
+	#	}
+	#}
+	#condition = {
+	#	tooltip = "INSUFFICIENT_DIP_TECH_21"
+	#	potential = {
+    #        has_province_modifier = settle_21
+	#	}
+	#	allow = {
+	#		FROM = { dip_tech = 21 }
+	#	}
+	#}
+	#condition = {
+	#	tooltip = "INSUFFICIENT_DIP_TECH_22"
+	#	potential = {
+    #        has_province_modifier = settle_22
+	#	}
+	#	allow = {
+	#		FROM = { dip_tech = 22 }
+	#	}
+	#}
+	#condition = {
+	#	tooltip = "INSUFFICIENT_DIP_TECH_23"
+	#	potential = {
+    #        has_province_modifier = settle_23
+	#	}
+	#	allow = {
+	#		FROM = { dip_tech = 23 }
+	#	}
+	#}
+	#condition = {
+	#	tooltip = "INSUFFICIENT_DIP_TECH_24"
+	#	potential = {
+    #        has_province_modifier = settle_24
+	#	}
+	#	allow = {
+	#		FROM = { dip_tech = 24 }
+	#	}
+	#}
+	#condition = {
+	#	tooltip = "INSUFFICIENT_DIP_TECH_25"
+	#	potential = {
+    #        has_province_modifier = settle_25
+	#	}
+	#	allow = {
+	#		FROM = { dip_tech = 25 }
+	#	}
+	#}
+	#condition = {
+	#	tooltip = "INSUFFICIENT_DIP_TECH_26"
+	#	potential = {
+    #        has_province_modifier = settle_26
+	#	}
+	#	allow = {
+	#		FROM = { dip_tech = 26 }
+	#	}
+	#}
+	#condition = {
+	#	tooltip = "INSUFFICIENT_DIP_TECH_27"
+	#	potential = {
+    #        has_province_modifier = settle_27
+	#	}
+	#	allow = {
+	#		FROM = { dip_tech = 27 }
+	#	}
+	#}
+	#condition = {
+	#	tooltip = "INSUFFICIENT_DIP_TECH_28"
+	#	potential = {
+    #        has_province_modifier = settle_28
+	#	}
+	#	allow = {
+	#		FROM = { dip_tech = 28 }
+	#	}
+	#}
+	#condition = {
+	#	tooltip = "INSUFFICIENT_DIP_TECH_29"
+	#	potential = {
+    #        has_province_modifier = settle_29
+	#	}
+	#	allow = {
+	#		FROM = { dip_tech = 29 }
+	#	}
+	#}
+	#condition = {
+	#	tooltip = "INSUFFICIENT_DIP_TECH_30"
+	#	potential = {
+    #        has_province_modifier = settle_30
+	#	}
+	#	allow = {
+	#		FROM = { dip_tech = 30 }
+	#	}
+	#}
+	#condition = {
+	#	tooltip = "INSUFFICIENT_DIP_TECH_31"
+	#	potential = {
+    #        has_province_modifier = settle_31
+	#	}
+	#	allow = {
+	#		FROM = { dip_tech = 31 }
+	#	}
+	#}
+	#condition = {
+	#	tooltip = "INSUFFICIENT_DIP_TECH_32"
+	#	potential = {
+    #        has_province_modifier = settle_32
+	#	}
+	#	allow = {
+	#		FROM = { dip_tech = 32 }
+	#	}
+	#}
 }
 
 can_colonize_province_siberian_frontier = {
@@ -460,6 +463,17 @@ is_possible_hre_province = {
 		}
 		allow = {
 			continent = europe
+		}
+	}
+}
+
+will_demand_annexation = {
+	condition = {
+		potential = {
+			is_elector = yes
+		}
+		allow = {
+			NOT = { hre_reform_passed = landfriede }
 		}
 	}
 }

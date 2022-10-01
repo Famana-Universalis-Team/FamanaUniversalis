@@ -65,6 +65,7 @@ has_river_estuary_trigger = {
 			has_province_modifier = irrawaddy_estuary_modifier
 			has_province_modifier = kongo_estuary_modifier
 			has_province_modifier = amur_estuary_modifier
+			has_province_modifier = orinoco_estuary_modifier
 			has_province_modifier = makyna_estuary_modifier
 		}
 	}
@@ -135,6 +136,7 @@ has_no_river_estuary_trigger = {
 			has_province_modifier = irrawaddy_estuary_modifier
 			has_province_modifier = kongo_estuary_modifier
 			has_province_modifier = amur_estuary_modifier
+			has_province_modifier = orinoco_estuary_modifier
 			has_province_modifier = makyna_estuary_modifier
 		}
 	}
@@ -159,6 +161,11 @@ province_with_special_goods_produced_trigger = {
 		has_province_modifier = jingdezhen_kilns
 		has_province_modifier = perfume_capital
 		has_active_triggered_province_modifier = cerro_rico_modifier
+		#Famana
+		has_province_modifier = fasalep_diamond_mines
+		has_province_modifier = gomic_breadbasket
+		has_province_modifier = slave_markets_of_ameleka
+		has_province_modifier = copper_mines_of_astifon
 	}
 }
 
@@ -182,6 +189,11 @@ province_without_special_goods_produced_trigger = {
 		has_province_modifier = perfume_capital
 		has_active_triggered_province_modifier = cerro_rico_modifier
 		has_latent_trade_goods = coal
+		#Famana
+		has_province_modifier = fasalep_diamond_mines
+		has_province_modifier = gomic_breadbasket
+		has_province_modifier = slave_markets_of_ameleka
+		has_province_modifier = copper_mines_of_astifon
 	}
 }
 

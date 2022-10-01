@@ -10,8 +10,10 @@ tonxara_disaster = {
             OR = {
                 has_country_flag = survivedTonxaraDisaster
                 has_country_flag = formedKisholiDecision
+                has_country_flag = nhomaFormed
             }
         }
+        is_year = 320
         NOT = {
             is_year = 380
         }
@@ -25,7 +27,7 @@ tonxara_disaster = {
 
     progress = {
         modifier = {
-            factor = 2.5
+            factor = 1.75
             tag = KSL
         }
         modifier = {
@@ -61,12 +63,11 @@ tonxara_disaster = {
         NOT = {
             is_at_war = yes
         }
-        is_bankrupt = no
-		NOT = { num_of_loans = 5 }
 		NOT = { corruption = 5 }
 		NOT = { num_of_rebel_armies = 1 }
 		NOT = { num_of_rebel_controlled_provinces = 1 }
-        legitimacy = 90
+        num_of_cities = 20
+        legitimacy = 80
         religious_unity = 0.60
         custom_trigger_tooltip = {
             tooltip = TONXARA_DIS_5Y_TOOLTIP

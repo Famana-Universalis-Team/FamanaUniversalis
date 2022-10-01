@@ -53,8 +53,8 @@ collapse_of_pextoglazia = {
         }
     }
 
-	on_start = pexto.1
-    on_end = pexto.2
+	on_start = pextoglazia.1
+    on_end = pextoglazia.2
 
     on_monthly = {
         events = {

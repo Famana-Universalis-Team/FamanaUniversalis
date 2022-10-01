@@ -1,11 +1,12 @@
-discovered_by = gotzlic_tech_gr
+discovered_by = estali_tech_gr
 discovered_by = east_gomic_tech_gr
-discovered_by = north_gomic_tech_gr
+discovered_by = lathvy_tech_gr
 discovered_by = west_gomic_tech_gr
 #Written with Eu4 Easy Province Creator by emiroercn
 #Constantinople
 add_core = KAP
 owner = KAP
+is_city = yes
 controller = KAP
 culture = Kapolian
 religion = lathvy
@@ -16,7 +17,7 @@ base_production = 3
 trade_goods = grain
 base_manpower = 4
 capital = "En-De Seuvl"
-is_city = yes
+ 
 extra_cost = 2
 discovered_by =western
 

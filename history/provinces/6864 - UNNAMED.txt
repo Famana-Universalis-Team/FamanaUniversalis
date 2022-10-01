@@ -2,12 +2,16 @@
 #UNNAMED
 culture = Placeholder_culture
 religion = animism
-hre = no
 base_tax = 1
 base_production = 1
 base_manpower = 1
 capital = "UNNAMED"
-is_city = no
+ 
+add_core = MNS
+owner = MNS
+is_city = yes
+controller = MNS
+hre = yes
 
 discovered_by = hasmali_tech_gr
 
