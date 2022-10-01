@@ -1985,3 +1985,39 @@ country_event = {
         }
 	}
 }
+
+#Truth of the eclipse 1
+country_event = {
+	id = nafa.29
+	title = nafa.29.t
+	picture = INVENTION_eventPicture
+	desc = nafa.29.d
+    fire_only_once = yes
+	
+	trigger = {
+        tag = NAF
+        has_country_flag = naf_cleared_for_truth_event_1
+	}
+	
+	mean_time_to_happen = {
+		months = 50
+	}
+
+    immediate = {
+        clr_country_flag = naf_cleared_for_truth_event_1
+        set_country_flag = naf_cleared_for_truth_event_2
+    }
+
+    option = { #Continue
+		name = nafa.29.a
+        ai_chance = { factor = 1 }
+	}
+
+    option = { #Stop
+		name = nafa.29.b
+        ai_chance = { factor = 1 }
+
+        clr_country_flag = naf_cleared_for_truth_event_2
+        custom_tooltip = nafEndTruthChain
+	}
+}
