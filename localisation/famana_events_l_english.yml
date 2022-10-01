@@ -177,7 +177,7 @@
  jzoet_help:0 "Help From Jzoet"
 
  nafa.2.t:0 "Syadon's Succession"
- nafa.2.d:0 "The Nafan throne has been without heir for some time. Not publicly, of course, but the Emperor has been worried about it. Now, thankfully, a new heir to the throne has been secured. They will be groomed for their future position as Emperor of Nafa."
+ nafa.2.d:0 "The Nafan throne has been without heir for some time. Not publicly, of course, but the [Root.Monarch.GetTitle] has been worried about it. Now, thankfully, a new heir to the throne has been secured. They will be groomed for their future position as [Root.Monarch.GetTitle] of Nafa."
  nafa.2.a:0 "Good."
 
  nafa.3.t:0 "The Founding of Syadona"
@@ -1101,6 +1101,7 @@
  fdebug.1.g:0 "Delete every other country"
  fdebug.1.h:0 "Convert everyone to your religion"
  fdebug.1.a:0 "Go back"
+ fdebug.1.m:0 "Insta-build"
 
  pextoglazia.18.t:0 "The Nevian Divorce"
  pextoglazia.18.d:0 "The Diocese of Nevia has been unstable ever since its creation. Consisting of many isolated communities in the mountains, it has been difficult to maintain a sense of unity. With the collapse of Pextoglazia, and end of the Bishop's rule, the nation is now doomed to collapse."
@@ -1865,28 +1866,45 @@
  nafa.23.a:0 "At least we know the truth."
 
  nafa.24.t:0 "Rini: The faith of the legions?"
- nafa.24.d:0 "The Rin Order, a radical Lathvy military unit, is slowly increasing its control over the Nafan army. They follow the Rini sect of Lathvy, which is growing ever more popular among the legionaries. They seem to be strengthening the army, but they could potentially become a threat to the Emperor in the future."
+ nafa.24.d:0 "The Rin Order, a radical Lathvy military unit, is slowly increasing its control over the Nafan army. They follow the Rini sect of Lathvy, which is growing ever more popular among the legionaries. They seem to be strengthening the army, but they could potentially become a threat to the [Root.Monarch.GetTitle] in the future."
  nafa.24.a:0 "Well, if it improves morale..."
  nafa.24.b:0 "Unacceptable! Crack down at once."
 
  nafa.25.t:0 "Rini Military Administration"
- nafa.25.d:0 "As Nafa's borders continue to expand away from [Root.Capital.GetCapitalName], it becomes harder for the Emperor to deal with local issues as they come up. The Rin Order has, without receiving such orders, taken the decision to instate martial law in several wayward portions of the Empire. The Rinis have been acquiring more and more power, and if we allow this borderline treason to continue, there's no going back. However, if we go against the Order, we could be endangering the survival of the Empire."
+ nafa.25.d:0 "As Nafa's borders continue to expand away from [Root.Capital.GetCapitalName], it becomes harder for the [Root.Monarch.GetTitle] to deal with local issues as they come up. The Rin Order has, without receiving such orders, taken the decision to instate martial law in several wayward portions of the Empire. The Rinis have been acquiring more and more power, and if we allow this borderline treason to continue, there's no going back. However, if we go against the Order, we could be endangering the survival of the Empire."
  nafa.25.a:0 "Do we really have a choice?"
  nafa.25.b:0 "We can't give them unchecked power!"
 
  nafa.26.t:0 "Rin Order in the Court"
- nafa.26.d:0 "As more and more Nafan statesmen convert to the Rini faith, some of them have even found their way into Syadon's imperial court. Perhaps it would be unwise to let them influence the Emperor himself, although their skills would surely be missed."
+ nafa.26.d:0 "As more and more Nafan statesmen convert to the Rini faith, some of them have even found their way into Syadon's imperial court. Perhaps it would be unwise to let them influence the [Root.Monarch.GetTitle] himself, although their skills would surely be missed."
  nafa.26.a:0 "They have been very helpful so far."
  nafa.26.b:0 "Syadon needs no help!"
 
  nafa.27.t:0 "Revolt of the Four Generals"
- nafa.27.d:0 "It is the end of an era. Four high-ranking Nafan generals have commited open treason, leading the Rin Order in revolt against the Emperor. [Root.Capital.GetCapitalName] has been set ablaze, and the sounds of battle are deafening. A small army has gathered outside of the Imperial Palace, and are threatening to slay the Emperor if he does not abdicate. If we do not stop this madness here and now, Nafa will surely fall into civil war!"
+ nafa.27.d:0 "It is the end of an era. Four high-ranking Nafan generals have commited open treason, leading the Rin Order in revolt against the [Root.Monarch.GetTitle]. [Root.Capital.GetCapitalName] has been set ablaze, and the sounds of battle are deafening. A small army has gathered outside of the Imperial Palace, and are threatening to slay the [Root.Monarch.GetTitle] if he does not abdicate. If we do not stop this madness here and now, Nafa will surely fall into civil war!"
  nafa.27.a:0 "We have no choice but to yield."
  nafa.27.b:0 "Never! We must fulfill our destiny."
 
  nafa.28.t:0 "Rin Order Defeated"
- nafa.28.d:0 "After years of war, the Rin Order has finally been destroyed. We have proven the divine superiority of the Emperor, and the remaining armies of Nafa are fully loyal. While it will undoubtedly undo decades of progress for the army, we have no choice but to scour the Nafan military for any remaining Rinis, and execute them all for high treason."
+ nafa.28.d:0 "After years of war, the Rin Order has finally been destroyed. We have proven the divine superiority of the [Root.Monarch.GetTitle], and the remaining armies of Nafa are fully loyal. While it will undoubtedly undo decades of progress for the army, we have no choice but to scour the Nafan military for any remaining Rinis, and execute them all for high treason."
  nafa.28.a:0 "Purge them from the country."
+
+ nafa.29.t:0 "Astronomers Present Strange Claims"
+ nafa.29.d:0 "The Syadona Astronomers Society has made significant discoveries, and are eager to share them with the [Root.Monarch.GetTitle]. Among other things, they are suggesting a model of the universe with Um, the Sun, at its center, not Famana. The Eclipse, whose consequences include the birth of Nafa itself, was not the work of Ara. It was, they theorize, a rare event where both of Famana's moons blotted out the Sun's light. They propose the frankly insane idea that Ara did not cause the Eclipse, and instead assert that it was pure mathematics that inevitably caused the Eclipse."
+ nafa.29.a:0 "Perhaps we shouldn't be too quick to judge."
+ nafa.29.b:0 "These ideas are too radical."
+
+ nafa.30.t:0 "Astronomers Request More Funding"
+ nafa.30.d:0 "The Astronomers Society has continued its search for the celestial truth, but has since run into some issues. They do not have adequate funding to keep up the pace of their research. They need more powerful equipment and more hands."
+ nafa.30.a:0 "You can't put a price on the truth."
+ nafa.30.b:0 "Enough of this! Shut down the project."
+
+ nafa.31.t:0 "The Truth of the Eclipse"
+ nafa.31.d:0 "At last, our astronomers have completed their research. They have built a comprehensive model of the universe, which flies against everything we know about Lathvy theology. Now it is only a question of how to interpret their findings. Some turn to mysticism, claiming that the world, Ara's work, is a mere illusion concealing the true, spiritual universe. Others consider our discoveries to be so grand that they have lost faith in traditional Lathvy thought, and others still seem to be losing faith in the Lathvy religion itself. Many simply reject the findings, calling them heretical and false."
+ nafa.31.a:0 "The world is an illusion."
+ nafa.31.b:0 "The gods are too powerful for us to help them."
+ nafa.31.c:0 "Perhaps we shouldn't be so sure about our faith."
+ nafa.31.e:0 "Heretics!"
  
  naravam.9.t:0 "Expedition to find the Gods"
  naravam.9.d:0 "Aware of the foreign Lathvy beliefs gaining popularity among the Estali people a group of eccentric shamans have come up with an initiative to send an expedition past the mountains, into the mysterious lands of the Gods, and prove once and for all that our faith is true."

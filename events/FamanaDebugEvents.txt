@@ -112,6 +112,14 @@ country_event = {
 			add_core = ROOT
 		}
 	}
+	option = {
+		name = fdebug.1.m
+		ai_chance = { factor = 1 }
+		add_country_modifier = {
+			name = debug_build_fast
+			duration = 365
+		}
+	}
 }
 
 country_event = {

@@ -2334,3 +2334,36 @@ naf_the_wise_emperor = {
 naf_greatest_thinkers = {
     adm_advisor_cost = -0.25
 }
+
+naf_truth_no_nafer = {
+    tolerance_heretic = 6
+    technology_cost = -0.10
+}
+
+naf_truth_doubt = {
+    tolerance_own = -2
+    tolerance_heathen = 5
+    years_of_nationalism = -5
+}
+
+naf_truth_reject = {
+    adm_tech_cost_modifier = 0.10
+    tolerance_own = 3
+    church_loyalty_modifier = 0.15
+}
+
+naf_world_illusion = {
+    monarch_admin_power = 1
+    idea_cost = -0.10
+}
+
+debug_build_fast = {
+    build_time = -1
+    build_cost = -1
+}
+
+naf_the_truth_mod = {
+    global_missionary_strength = 0.03
+    administrative_efficiency = 0.05
+    warscore_cost_vs_other_religion = -0.10
+}

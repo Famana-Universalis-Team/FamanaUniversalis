@@ -726,6 +726,9 @@ country_event = { #TRADITIONAL
 					school = nafan_school
 				}
 			}
+			NOT = {
+				has_country_flag = no_nafer_flag
+			}
 		}
 		ai_chance = { 
 			factor = 1

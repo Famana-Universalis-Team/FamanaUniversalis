@@ -4541,7 +4541,10 @@ nafa_5 = {
         position = 12
         trigger = {
             university = 20
-            capital_scope = {
+            5583 = {
+                is_capital_of = ROOT
+                owned_by = ROOT
+                is_core = ROOT
                 has_building = university
             }
             5552 = {
@@ -4577,7 +4580,7 @@ nafa_5 = {
                 }
             }
             OR = {
-                is_capital_of = ROOT
+                province_id = 5583
                 province_id = 5552
                 province_id = 5337
                 province_id = 5138
@@ -4591,10 +4594,34 @@ nafa_5 = {
         required_missions = { naf_ponder_the_eclipse }
         position = 13
         trigger = {
-            
+            custom_trigger_tooltip = {
+                tooltip = nafhadEclipseTruthEvent
+                has_country_flag = naf_had_truth_event
+            }
+            NOT = {
+                estate_influence = {
+					estate = estate_church
+					influence = 30
+				}
+            }
         }
         effect = {
-            
+            add_country_modifier = {
+                name = naf_the_truth_mod
+                duration = -1
+            }
+            custom_tooltip = nafEverCountryTrust
+            hidden_effect = {
+                every_known_country = {
+                    limit = {
+                        religion_group = lathvy_group
+                    }
+                    add_opinion = {
+                        who = ROOT
+                        modifier = naf_discovered_the_truth
+                    }
+                }
+            }
         }
         #provinces_to_highlight = {}
     }

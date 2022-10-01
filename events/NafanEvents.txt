@@ -2011,13 +2011,135 @@ country_event = {
     option = { #Continue
 		name = nafa.29.a
         ai_chance = { factor = 1 }
+        custom_tooltip = nafContTruthChain
 	}
 
     option = { #Stop
 		name = nafa.29.b
-        ai_chance = { factor = 1 }
-
+        ai_chance = { factor = 0 }
+        add_stability_or_adm_power = yes
         clr_country_flag = naf_cleared_for_truth_event_2
+        custom_tooltip = nafEndTruthChain
+	}
+}
+
+#Truth of the eclipse 2
+country_event = {
+	id = nafa.30
+	title = nafa.30.t
+	picture = ECONOMY_eventPicture.dds
+	desc = nafa.30.d
+    #fire_only_once = yes
+	
+	trigger = {
+        tag = NAF
+        has_country_flag = naf_cleared_for_truth_event_2
+	}
+	
+	mean_time_to_happen = {
+		months = 6
+	}
+
+    immediate = {
+        clr_country_flag = naf_cleared_for_truth_event_2
+    }
+
+    option = { #Continue
+		name = nafa.30.a
+        ai_chance = { factor = 1 }
+        add_treasury = -500
+        custom_tooltip = nafContTruthChain
+        hidden_effect = {
+            random_list = {
+			    25 = {
+			    	set_country_flag = naf_cleared_for_truth_event_3
+			    }
+			    75 = {
+			    	set_country_flag = naf_cleared_for_truth_event_2
+			    }
+		    }
+        }
+	}
+
+    option = { #Stop
+		name = nafa.30.b
+        ai_chance = { factor = 0 }
+
+        custom_tooltip = nafEndTruthChain
+	}
+}
+
+#Truth of the eclipse 3
+country_event = {
+	id = nafa.31
+	title = nafa.31.t
+	picture = ECLIPSE_eventPicture
+	desc = nafa.31.d
+    fire_only_once = yes
+    major = yes
+    major_trigger = {
+        religion_group = lathvy_group
+    }
+	
+	trigger = {
+        tag = NAF
+        has_country_flag = naf_cleared_for_truth_event_3
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+	}
+
+    immediate = {
+        clr_country_flag = naf_cleared_for_truth_event_3
+        set_country_flag = naf_had_truth_event
+    }
+
+    option = { #The world is an illusion
+		name = nafa.31.a
+        ai_chance = { factor = 1 }
+        add_country_modifier = {
+            name = naf_world_illusion
+            duration = -1
+        }
+        custom_tooltip = nafEndTruthChain
+	}
+
+    option = { #The gods are too powerful for us to help them
+		name = nafa.31.b
+        ai_chance = { factor = 1 }
+        trigger = {
+            religion = lathvy
+        }
+        set_country_flag = no_nafer_flag
+        country_event = {
+            id = lathvy.16
+        }
+        add_country_modifier = {
+            name = naf_truth_no_nafer
+            duration = -1
+        }
+        custom_tooltip = nafEndTruthChain
+	}
+
+    option = { #Perhaps we can't be too sure about our faith
+		name = nafa.31.c
+        ai_chance = { factor = 1 }
+        add_country_modifier = {
+            name = naf_truth_doubt
+            duration = -1
+        }
+        custom_tooltip = nafEndTruthChain
+	}
+
+    option = { #Reject findings
+		name = nafa.31.e
+        ai_chance = { factor = 1 }
+        add_country_modifier = {
+            name = naf_truth_reject
+            duration = -1
+        }
+        add_prestige = -10
         custom_tooltip = nafEndTruthChain
 	}
 }
