@@ -300,6 +300,13 @@ on_war_won = {
 			}
 		}
 	}
+
+	if = {
+		limit = {
+			has_country_flag = at_war_with_FAS
+		}
+		clr_country_flag = at_war_with_FAS
+	}
 	
 	if = {
 		limit = {
@@ -364,6 +371,12 @@ on_war_lost = {
 		}
 		change_government_to_monarchy = yes
     }
+	if = {
+		limit = {
+			has_country_flag = at_war_with_FAS
+		}
+		clr_country_flag = at_war_with_FAS
+	}
 	if = {
 		limit = {
 			religion = naravami

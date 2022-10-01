@@ -1135,4 +1135,25 @@ country_decisions = {
 			factor = 1
 		}
     }
+
+    kill_fashros = {
+        potential = {
+            has_country_flag = at_war_with_FAS
+            defensive_war_with = FAS
+        }
+        allow = {
+            FAS = {
+                current_war_losses = {
+                    who_with = ROOT
+                    type = men
+                    amount = 80000
+                    cause = battle
+                }
+            }
+        }
+        effect = {
+            white_peace = FAS
+            add_prestige = 10
+        }
+    }
 }

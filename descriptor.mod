@@ -1,18 +1,12 @@
 version="1.4.0"
 tags={
 	"Map"
-	"Balance"
 	"Events"
 	"Expansion"
 	"Gameplay"
-	"Graphics"
-	"Sound"
 	"Religion"
 	"New Nations"
-	"National Ideas"
 	"Technologies"
-	"Trade"
-	"Utilities"
 	"Missions And Decisions"
 	"Military"
 }

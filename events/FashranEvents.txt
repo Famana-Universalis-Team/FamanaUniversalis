@@ -3208,3 +3208,75 @@ country_event = { #Noglebim revolt
         }
     }
 }
+
+country_event = { #Fighting Fashros
+    id = fashros.39
+    title = fashros.39.t
+    desc = fashros.39.d
+    picture = IMPALED_SOLDIERS_eventPicture
+
+    trigger = {
+        capital_scope = {
+            OR = {
+                NOT = {
+                    superregion = jasua_superregion
+                }
+                region = hoxoi_coast_region
+                region = stroktur_region
+            }
+        }
+        defensive_war_with = FAS
+        NOT = {
+            has_country_flag = at_war_with_FAS
+        }
+        ai = no
+    }
+
+    mean_time_to_happen = {
+        days = 1
+    }
+
+    option = {
+        name = fashros.39.a
+        ai_chance = {
+            factor = 7
+        }
+        custom_tooltip = fight_the_horde
+        set_country_flag = at_war_with_FAS
+    }
+}
+
+country_event = { #Fighting Fashros
+    id = fashros.40
+    hidden = yes
+
+    trigger = {
+        capital_scope = {
+            OR = {
+                NOT = {
+                    superregion = jasua_superregion
+                }
+                region = hoxoi_coast_region
+                region = stroktur_region
+            }
+        }
+        NOT = { defensive_war_with = FAS }
+        has_country_flag = at_war_with_FAS
+        ai = no
+    }
+
+    immediate = {
+        clr_country_flag = at_war_with_FAS
+    }
+
+    mean_time_to_happen = {
+        days = 1
+    }
+
+    option = {
+        name = fashros.39.a
+        ai_chance = {
+            factor = 7
+        }
+    }
+}
