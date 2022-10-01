@@ -4500,7 +4500,15 @@ nafa_5 = {
         position = 11
         trigger = {
             religion_group = lathvy_group
-            philosopher = 3
+            if = {
+                limit = {
+                    has_dlc = "Cradle of Civilization"
+                }
+                philosopher = 5
+            }
+            else = {
+                philosopher = 3
+            }
             OR = {
                 innovativeness = 50
                 full_idea_group = religious_ideas
@@ -4508,7 +4516,14 @@ nafa_5 = {
             }
         }
         effect = {
-            
+            add_ruler_modifier = {
+                name = naf_the_wise_emperor
+                duration = -1
+            }
+            add_country_modifier = {
+                name = naf_greatest_thinkers
+                duration = 7300
+            }
         }
         #provinces_to_highlight = {}
     }
@@ -4518,7 +4533,10 @@ nafa_5 = {
         required_missions = { naf_gather_the_greatest_thinkers }
         position = 12
         trigger = {
-            
+            capital_scope = {
+                has_building = university
+            }
+            university = 10
         }
         effect = {
             

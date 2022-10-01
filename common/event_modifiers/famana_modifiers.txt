@@ -2325,3 +2325,12 @@ naf_purging_rini = {
     mil_advisor_cost = 0.5
     infantry_power = -0.10
 }
+
+naf_the_wise_emperor = {
+    prestige = 1
+    church_loyalty_modifier = 0.10
+}
+
+naf_greatest_thinkers = {
+    adm_advisor_cost = -0.25
+}
