@@ -2069,6 +2069,20 @@ country_decisions = {
 		ai_will_do = {
 			factor = 1
 		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 6356
+				province_id = 6176
+				province_id = 6189
+				province_id = 6709
+				province_id = 5725
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				is_city = no
+				NOT = {religion = ordic }
+			}
+		}
 	}
 	achievement_one_flame_to_rule_them_all = {
 		major = yes
@@ -2643,6 +2657,9 @@ country_decisions = {
 		ai_will_do = {
 			factor = 1
 		}
+		provinces_to_highlight = {
+			province_id = 6262
+		}
 	}
 
 	achievement_dakka_dakka = {
@@ -2726,6 +2743,9 @@ country_decisions = {
 		ai_will_do = {
 			factor = 1
 		}
+		provinces_to_highlight = {
+			province_id = 5337
+		}
 	}
 
 	achievement_the_hot_wind_blowing = {
@@ -2768,6 +2788,13 @@ country_decisions = {
 		}
 		ai_will_do = {
 			factor = 1
+		}
+		provinces_to_highlight = {
+			province_id = 5388
+			OR = {
+				NOT = { owned_by = ROOT }
+				is_city = no
+			}
 		}
 	}
 
@@ -2892,6 +2919,13 @@ country_decisions = {
 		}
 		ai_will_do = {
 			factor = 1
+		}
+		provinces_to_highlight = {
+			region = stroktur_region
+			OR = {
+				NOT = { owned_by = ROOT }
+				is_city = no
+			}
 		}
 	}
 
@@ -3143,6 +3177,14 @@ country_decisions = {
 		}
 		ai_will_do = {
 			factor = 1
+		}
+		provinces_to_highlight = {
+			region = moxon_region
+			OR = {
+				NOT = { owned_by = ROOT }
+				is_city = no
+				NOT = {culture = Kachik}
+			}
 		}
 	}
 
