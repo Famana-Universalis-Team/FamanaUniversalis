@@ -424,10 +424,10 @@ country_event = {
 			mil = 6
 		}
 		define_ruler_to_general = {
-			fire = 6
+			fire = 5
 			shock = 6
 			manuever = 6
-			siege = 6
+			siege = 5
 		}
 		add_ruler_personality = conqueror_personality
 		if = {
@@ -738,10 +738,10 @@ country_event = {
 			mil = 6
 		}
 		define_ruler_to_general = {
-			fire = 6
+			fire = 5
 			shock = 6
 			manuever = 6
-			siege = 6
+			siege = 5
 		}
 		add_ruler_personality = conqueror_personality
 		if = {
@@ -831,10 +831,10 @@ country_event = {
 			mil = 6
 		}
 		define_ruler_to_general = {
-			fire = 6
+			fire = 5
 			shock = 6
 			manuever = 6
-			siege = 6
+			siege = 5
 		}
 		add_ruler_personality = conqueror_personality
 		if = {
@@ -921,10 +921,10 @@ country_event = {
 			mil = 6
 		}
 		define_ruler_to_general = {
-			fire = 6
+			fire = 5
 			shock = 6
 			manuever = 6
-			siege = 6
+			siege = 5
 		}
 		add_ruler_personality = conqueror_personality
 		if = {
@@ -1186,10 +1186,10 @@ country_event = {
 			mil = 6
 		}
 		define_ruler_to_general = {
-			fire = 6
+			fire = 5
 			shock = 6
 			manuever = 6
-			siege = 6
+			siege = 5
 		}
 		add_ruler_personality = conqueror_personality
 		if = {

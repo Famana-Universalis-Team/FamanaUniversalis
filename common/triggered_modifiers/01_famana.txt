@@ -161,7 +161,6 @@ naf_nhoma_defense = {
         NOT = {
             any_owned_province = {
                 superregion = nhoma_superregion
-                owned_by = NAF
             }
         }
     }

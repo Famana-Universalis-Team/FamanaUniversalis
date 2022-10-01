@@ -1105,4 +1105,34 @@ country_decisions = {
 			factor = 1
 		}
     }
+
+    nafa_astronomers = {
+        potential = {
+            tag = NAF
+            religion_group = lathvy_group
+            has_country_flag = naf_astro_decision_flag
+		}
+		allow = {
+            5583 = {
+                is_capital_of = ROOT
+                development = 30
+            }
+			treasury = 2500
+		}
+		effect = {
+            add_treasury = -2500
+            clr_country_flag = naf_astro_decision_flag
+            5583 = {
+                add_province_modifier = {
+                    name = naf_syadona_astro_mod
+                    duration = -1
+                }
+            }
+            set_country_flag = naf_cleared_for_truth_event_1
+            custom_tooltip = nafaStartAstroChain
+		}
+		ai_will_do = {
+			factor = 1
+		}
+    }
 }

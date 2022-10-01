@@ -3029,7 +3029,14 @@ nafa_3 = {
             5583 = {
                 owned_by = ROOT
                 is_capital_of = ROOT
-                development = 25
+                if = {
+                    limit = {
+                        owner = {
+                            ai = no
+                        }
+                    }
+                    development = 25
+                }
             }
         }
         effect = {
@@ -4533,15 +4540,50 @@ nafa_5 = {
         required_missions = { naf_gather_the_greatest_thinkers }
         position = 12
         trigger = {
+            university = 20
             capital_scope = {
                 has_building = university
             }
-            university = 10
+            5552 = {
+                owned_by = ROOT
+                is_core = ROOT
+                has_building = university
+            }
+            5337 = {
+                owned_by = ROOT
+                is_core = ROOT
+                has_building = university
+            }
+            5138 = {
+                owned_by = ROOT
+                is_core = ROOT
+                has_building = university
+            }
+            5669 = {
+                owned_by = ROOT
+                is_core = ROOT
+                has_building = university
+            }
         }
         effect = {
-            
+            set_country_flag = naf_astro_decision_flag
+            custom_tooltip = nafUnlockAstroDecision
         }
-        #provinces_to_highlight = {}
+        provinces_to_highlight = {
+            OR = {
+                NOT = { owned_by = ROOT }
+                NOT = {
+                    has_building = university
+                }
+            }
+            OR = {
+                is_capital_of = ROOT
+                province_id = 5552
+                province_id = 5337
+                province_id = 5138
+                province_id = 5669
+            }
+        }
     }
 
     naf_the_truth_of_the_eclipse = {

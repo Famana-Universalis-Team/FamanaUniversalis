@@ -496,3 +496,8 @@ naf_forest_frontier = {
     local_development_cost = -0.15
     culture_conversion_cost = -0.25
 }
+
+naf_syadona_astro_mod = {
+    local_production_efficiency = -0.10
+    idea_cost = -0.05
+}
