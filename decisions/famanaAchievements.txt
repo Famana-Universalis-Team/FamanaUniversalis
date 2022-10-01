@@ -1604,7 +1604,10 @@ country_decisions = {
 					#ironman = yes
 					start_date = 212.6.6
 					NOT = { num_of_custom_nations = 1 }
-					was_tag = MRL
+					OR = {
+						was_tag = MRL
+						tag = MRL
+					}
 					has_country_flag = startedLegitAch
 				}
 				has_country_flag = debug_achievements
@@ -1713,16 +1716,19 @@ country_decisions = {
 				mission_completed = eclipse_bohorans_and_kachiks
 				mission_completed = naf_utilize_jzoet
 				mission_completed = naf_emastalian_golden_age
-				mission_completed = naf_the_staple_port
-				mission_completed = naf_dominate_eastern_estal
+				mission_completed = naf_a_compromise_in_thought
+				mission_completed = naf_the_staple_ports
 				mission_completed = naf_convert_ga_xal
+				mission_completed = naf_dominate_eastern_estal
+				mission_completed = naf_fortify_gatria
+				mission_completed = naf_tolerate_the_kisholi
 				mission_completed = naf_lessons_from_old_empires
 				mission_completed = naf_the_truth_of_the_eclipse
 				mission_completed = naf_new_syadona
-				#mission_completed = naf_end_the_yomtanian_menace
-				mission_completed = naf_technological_advantage
+				mission_completed = naf_persuade_remaining_heretics
+				mission_completed = naf_link_gomic_infrastructure
 				mission_completed = naf_build_the_imperial_routes
-				mission_completed = naf_gomic_unity
+				mission_completed = naf_technological_advantage
 			}
 		}
 		effect = {
@@ -1760,9 +1766,9 @@ country_decisions = {
 				tooltip = tooltipIronmanAch
 				ironman = yes
 			}
-			has_country_flag = wonDanTzuBattle
 			custom_trigger_tooltip = {
 				tooltip = umenie_vojny_yes
+				has_country_flag = wonDanTzuBattle
 			}
 		}
 		effect = {
