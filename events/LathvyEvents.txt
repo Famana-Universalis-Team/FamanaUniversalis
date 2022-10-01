@@ -674,42 +674,51 @@ country_event = { #TRADITIONAL
 	}
 	
 	trigger = {
-		religion = lathvy
-		NOT = {
-			OR = {
-				religious_school = {
-					group = lathvy_group
-					school = nafan_school
+		OR = {
+			has_country_flag = no_nafer_flag
+			AND = {
+				religion = lathvy
+				NOT = {
+					OR = {
+						religious_school = {
+							group = lathvy_group
+							school = nafan_school
+						}
+						religious_school = {
+							group = lathvy_group
+							school = pextoglazian_school
+						}
+						religious_school = {
+							group = lathvy_group
+							school = maxan_school
+						}
+						religious_school = {
+							group = lathvy_group
+							school = walaran_school
+						}
+						religious_school = {
+							group = lathvy_group
+							school = resteman_school
+						}
+						religious_school = {
+							group = lathvy_group
+							school = celzian_school
+						}
+						religious_school = {
+							group = lathvy_group
+							school = kolyan_school
+						}
+					}
 				}
-				religious_school = {
-					group = lathvy_group
-					school = pextoglazian_school
-				}
-				religious_school = {
-					group = lathvy_group
-					school = maxan_school
-				}
-				religious_school = {
-					group = lathvy_group
-					school = walaran_school
-				}
-				religious_school = {
-					group = lathvy_group
-					school = resteman_school
-				}
-				religious_school = {
-					group = lathvy_group
-					school = celzian_school
-				}
-				religious_school = {
-					group = lathvy_group
-					school = kolyan_school
+				any_known_country = {
+					religion_group = lathvy_group
 				}
 			}
 		}
-		any_known_country = {
-			religion_group = lathvy_group
-		}
+	}
+
+	immediate = {
+		clr_country_flag = no_nafer_flag
 	}
 	
 	mean_time_to_happen = {
