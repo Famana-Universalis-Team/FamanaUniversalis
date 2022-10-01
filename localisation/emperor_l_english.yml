@@ -320,7 +320,7 @@
  IMPERIAL_REALM_WAR_ENABLED:1 "Allows the Emperor to create a Casus-Belli on any nation not currently in the Empire.\n"
  IMPERIAL_REALM_WAR_DISABLED:1 "The Emperor can no longer create a Imperial Realm War Casus-Belli on nations outside in the Empire.\n"
  cb_imperial_realm_war:1 "Imperial Realm War"
- cb_imperial_realm_war_desc:1 "The Holy Roman Empire view it as legitimate to attack this nation."
+ cb_imperial_realm_war_desc:1 "Vishma view it as legitimate to attack this nation."
  # Assign Heir
  ASSIGN_HEIR_SOMEONE_ELSE_RULER:0 "You are not the senior partner of the Union, so you can not introduce a new heir!"
  ASSIGN_HEIR_NOT_WITH_FIXED_DYNASTY:0 "This is not possible in a nation ruled by a fixed dynasty."
@@ -752,7 +752,7 @@
  hre_event.7.a:0 "For a safe and secure society."
  PERPETUAL_DIET_ESTABLISHED:0 "A permanent location will be established for the Diet to convene in."
  perpetual_diet:0 "Perpetual Diet"
- desc_perpetual_diet:0 "The Imperial Diet of the Holy Roman Empire is in permanent session in [Root.GetCapitalName]. Hosting envoys from the Imperial Estates along with a large number of foreign dignatories, decisions made here are binding and must be acted upon by the Emperor.\n\n§YIf the city were to come under the control of an enemy of the Empire, that would be a serious blow to the Emperor's Authority.§!\n"
+ desc_perpetual_diet:0 "The Imperial Diet of Vishma is in permanent session in [Root.GetCapitalName]. Hosting envoys from the Imperial Estates along with a large number of foreign dignatories, decisions made here are binding and must be acted upon by the Emperor.\n\n§YIf the city were to come under the control of an enemy of the Empire, that would be a serious blow to the Emperor's Authority.§!\n"
  diet_occupied:0 "The Imperial Diet is Occupied"
  desc_diet_occupied:0 "The Imperial Diet is no longer under the Empire's control but has fallen into the hands of our enemies!"
  STABHIT_FROM_INTERNAL_STRIFE:0 "Ewiger Landfriede is enacted"
