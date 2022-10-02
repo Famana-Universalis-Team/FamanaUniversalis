@@ -3216,20 +3216,23 @@ country_event = { #Fighting Fashros
     picture = IMPALED_SOLDIERS_eventPicture
 
     trigger = {
-        capital_scope = {
-            OR = {
-                NOT = {
-                    superregion = jasua_superregion
-                }
-                region = hoxoi_coast_region
-                region = stroktur_region
-            }
-        }
         defensive_war_with = FAS
+        is_in_war = {
+            defender_leader = ROOT
+        }
         NOT = {
             has_country_flag = at_war_with_FAS
         }
         ai = no
+        NOT = { has_mission = af_anti_fashran_coalition }
+        #capital_scope = {
+        #    OR = {
+        #        NOT = {
+        #            superregion = jasua_superregion
+        #        }
+        #        region = stroktur_region
+        #    }
+        #}
     }
 
     mean_time_to_happen = {
@@ -3251,18 +3254,10 @@ country_event = { #Fighting Fashros
     hidden = yes
 
     trigger = {
-        capital_scope = {
-            OR = {
-                NOT = {
-                    superregion = jasua_superregion
-                }
-                region = hoxoi_coast_region
-                region = stroktur_region
-            }
-        }
-        NOT = { defensive_war_with = FAS }
         has_country_flag = at_war_with_FAS
+        NOT = { defensive_war_with = FAS }
         ai = no
+        NOT = { has_mission = af_anti_fashran_coalition }
     }
 
     immediate = {

@@ -1145,7 +1145,7 @@ country_decisions = {
             FAS = {
                 current_war_losses = {
                     who_with = ROOT
-                    type = men
+                    type = soldiers
                     amount = 80000
                     cause = battle
                 }
@@ -1153,6 +1153,12 @@ country_decisions = {
         }
         effect = {
             white_peace = FAS
+            every_known_country = {
+                limit = {
+                    defensive_war_with = FAS
+                }
+                white_peace = FAS
+            }
             add_prestige = 10
         }
     }

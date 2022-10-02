@@ -119,7 +119,7 @@ ai_fashros_buff = {
     }
     global_tax_modifier	= 0.50
     missionaries = 1
-    land_maintenance_modifier = -0.25
+    land_maintenance_modifier = -0.20
     interest = -2
     core_creation = -0.15
     administrative_efficiency = 0.15
@@ -127,10 +127,10 @@ ai_fashros_buff = {
     monarch_admin_power = 1
     monarch_diplomatic_power = 1
     monarch_military_power = 1
-    diplomatic_reputation = 2
+    #diplomatic_reputation = 2
     missionary_maintenance_cost = -0.75
     governing_capacity = 250
-    ae_impact = -0.25
+    #ae_impact = -0.25
     culture_conversion_cost = 100
 }
 
