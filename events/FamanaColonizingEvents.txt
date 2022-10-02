@@ -24,6 +24,9 @@ country_event = {
 			is_year = 250
 		}
 		NOT = {
+			tag = SKT
+		}
+		NOT = {
 			has_country_flag = has_had_fce1
 		}
 	}
