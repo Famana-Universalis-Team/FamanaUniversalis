@@ -762,6 +762,11 @@ east_great_desert_region = {
 onobya_region = {
 	areas = {
 		south_onobya_area
+		area_248
+		area_249
+		area_250
+		area_251
+		area_252
 	}
 }
 
@@ -770,6 +775,8 @@ bizugu_region = {
 		irfa_area
 		area_232
 		rubama_area
+		area_206
+		area_247
 	}
 }
 
