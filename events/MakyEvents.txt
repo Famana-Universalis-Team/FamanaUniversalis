@@ -1307,3 +1307,24 @@ country_event = { #Kashroon temple inscriptions
 	}
 	
 }	
+
+country_event = { #Masidonian culture
+	id = maky.17
+	title = maky.17.t
+	desc = maky.17.d
+	picture = CULTURE_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+		name = maky.17.a
+		change_primary_culture = Masidonian
+		every_owned_province = {
+			limit = { has_owner_religion = yes }
+			change_culture = Masidonian
+		}
+	}
+	
+	option = {
+		name = maky.17.b
+		add_prestige = 15
+	}
