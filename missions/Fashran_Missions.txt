@@ -1211,7 +1211,7 @@ fas_4 = {
 		effect = {
 			add_country_modifier = {
 				name = fas_widespread_conversion
-				duration = 18250
+				duration = 10950
 			}
 			emastalia_region = {
 				add_claim = ROOT
