@@ -1319,7 +1319,10 @@ country_event = { #Masidonian culture
 		name = maky.17.a
 		change_primary_culture = Masidonian
 		every_owned_province = {
-			limit = { has_owner_religion = yes }
+			limit = { 
+				has_owner_religion = yes 
+				culture_group = Makyna
+				}
 			change_culture = Masidonian
 		}
 	}
