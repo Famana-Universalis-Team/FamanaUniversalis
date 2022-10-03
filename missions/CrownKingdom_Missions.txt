@@ -397,8 +397,22 @@ tck_slot_2 = {
 		required_missions = { tck_reclaim_minor_darlates }
 		position = 5
 		trigger = {
-			owns_core_province = 5047
-			owns_core_province = 5073
+			5047 = {
+				OR = {
+					owned_by = ROOT
+					owner = {
+						is_subject_of = ROOT
+					}
+				}
+			}
+			5073 = {
+				OR = {
+					owned_by = ROOT
+					owner = {
+						is_subject_of = ROOT
+					}
+				}
+			}
 			total_development = 200
 			num_of_cavalry = 6
         }
@@ -1137,6 +1151,9 @@ tck_slot_3 = {
 				amount = 100
 			}
 			set_capital = 5066
+			hidden_effect = {
+				complete_mission = tck_coronation
+			}
 		}
 		provinces_to_highlight = {
 			superregion = oppia_superregion
@@ -1468,7 +1485,6 @@ tck_slot_5 = {
 				OR = {
 					area = imogua_area
 					area = emintas_area
-					area = roplea_area
 				}
 				OR = {
 					has_terrain = farmlands
