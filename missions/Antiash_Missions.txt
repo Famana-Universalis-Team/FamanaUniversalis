@@ -1177,7 +1177,7 @@ antiash_4 = {
 		trigger = {
 			is_in_war = {
 				attacker_leader = ROOT
-				casus_belli = cb_humiliate
+				casus_belli = cb_humiliate_rotw
 				war_score = 70
 			}
 		}
