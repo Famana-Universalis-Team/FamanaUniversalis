@@ -2893,6 +2893,9 @@ country_decisions = {
 					start_date = 212.6.6
 					NOT = { num_of_custom_nations = 1 }
 					tag = BAF
+					NOT = {
+						has_global_flag = eclipse_global_age_flag
+					}
 				}
 				has_country_flag = debug_achievements
 			}
