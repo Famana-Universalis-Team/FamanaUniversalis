@@ -2910,6 +2910,12 @@ country_decisions = {
 				owned_by = ROOT
 				is_core = ROOT
 			}
+			custom_trigger_tooltip = {
+				tooltip = oo_aa_oo_aa_vvvvvvvvvvv
+				NOT = {
+					has_global_flag = eclipse_global_age_flag
+				}
+			}
 		}
 		effect = {
 			add_country_modifier = {

@@ -2367,3 +2367,8 @@ naf_the_truth_mod = {
     administrative_efficiency = 0.05
     warscore_cost_vs_other_religion = -0.10
 }
+
+orc_reformed_army = {
+    global_regiment_cost = -0.20
+    shock_damage_received = -0.10
+}

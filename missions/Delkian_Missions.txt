@@ -520,7 +520,14 @@ delkia_3 = {
 		}
 		
 		effect = {
-			set_government_rank = 3
+			if = {
+                limit = {
+                    NOT = {
+                        government_rank = 3
+                    }
+                }
+                set_government_rank = 3
+            }
 			add_country_modifier = {
 				name = del_delkian_empire
 				duration = -1

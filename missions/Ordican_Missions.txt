@@ -1,0 +1,567 @@
+
+orc_1 = {
+    slot = 1
+    generic = no
+    ai = yes
+    potential = {
+        NOT = { map_setup = map_setup_random }
+		tag = ORC
+    }
+    has_country_shield = yes
+
+    ORC_ensure_tribal_loyalty = {
+        icon = mission_mayan_conquest
+        required_missions = { }
+        trigger = {
+            
+        }
+        effect = {
+            
+        }
+        #provinces_to_highlight = {}
+    }
+
+    ORC_royal_authority = {
+        icon = mission_crown_of_sweden
+        required_missions = {ORC_ensure_tribal_loyalty }
+        trigger = {
+            
+        }
+        effect = {
+            
+        }
+        #provinces_to_highlight = {}
+    }
+
+    ORC_embrace_dorlems_tactics = {
+        icon = mission_consolidate_the_state
+        required_missions = {ORC_royal_authority ORC_prepare_for_war}
+        position = 5
+        trigger = {
+            
+        }
+        effect = {
+            
+        }
+        #provinces_to_highlight = {}
+    }
+
+    ORC_sway_the_bishops = {
+        icon = mission_pol_negotiate_nunciature
+        required_missions = {ORC_embrace_dorlems_tactics}
+        position = 7
+        trigger = {
+            
+        }
+        effect = {
+            
+        }
+        #provinces_to_highlight = {}
+    }
+
+    ORC_crack_down_on_paganry = {
+        icon = mission_impaled_soldies
+        required_missions = {ORC_sway_the_bishops}
+        position = 10
+        trigger = {
+            
+        }
+        effect = {
+            
+        }
+        #provinces_to_highlight = {}
+    }
+
+    ORC_theological_modifications = {
+        icon = mission_rb_monopolize_the_channel
+        required_missions = {ORC_crack_down_on_paganry}
+        position = 12
+        trigger = {
+            
+        }
+        effect = {
+            
+        }
+        #provinces_to_highlight = {}
+    }
+}
+
+orc_2 = {
+    slot = 2
+    generic = no
+    ai = yes
+    potential = {
+        NOT = { map_setup = map_setup_random }
+		tag = ORC
+    }
+    has_country_shield = yes
+
+    ORC_depths_of_estal = {
+        icon = mission_pol_tend_east
+        required_missions = {ORC_ensure_tribal_loyalty}
+        position = 2
+        trigger = {
+            
+        }
+        effect = {
+            
+        }
+        #provinces_to_highlight = {}
+    }
+
+    ORC_standardized_currency = {
+        icon = mission_entrepot_of_india
+        required_missions = {ORC_royal_authority}
+        
+        trigger = {
+            
+        }
+        effect = {
+            
+        }
+        #provinces_to_highlight = {}
+    }
+
+    ORC_trade_with_naravam = {
+        icon = mission_the_varangians
+        required_missions = {ORC_standardized_currency}
+        
+        trigger = {
+            
+        }
+        effect = {
+            
+        }
+        #provinces_to_highlight = {}
+    }
+
+    ORC_confront_pextoglazia = {
+        icon = mission_the_hakkapeliitta
+        required_missions = {ORC_prepare_for_war}
+        
+        trigger = {
+            
+        }
+        effect = {
+            
+        }
+        #provinces_to_highlight = {}
+    }
+
+    ORC_seize_the_northern_provinces = {
+        icon = mission_swedish_military_advise
+        required_missions = {ORC_confront_pextoglazia}
+        position = 8
+        trigger = {
+            
+        }
+        effect = {
+            
+        }
+        #provinces_to_highlight = {}
+    }
+
+    ORC_friends_in_far_places = {
+        icon = mission_diplomatic_relation
+        required_missions = {ORC_seize_the_northern_provinces}
+        
+        trigger = {
+            
+        }
+        effect = {
+            
+        }
+        #provinces_to_highlight = {}
+    }
+
+    ORC_aras_guidance = {
+        icon = mission_scholar_officials
+        required_missions = {}
+        
+        trigger = {
+            
+        }
+        effect = {
+            
+        }
+        #provinces_to_highlight = {}
+    }
+
+    ORC_a_righteous_kingdom = {
+        icon = mission_rb_trinity_college_dublin
+        required_missions = {ORC_aras_guidance ORC_crack_down_on_paganry}
+        
+        trigger = {
+            
+        }
+        effect = {
+            
+        }
+        #provinces_to_highlight = {}
+    }
+}
+
+orc_3 = {
+    slot = 3
+    generic = no
+    ai = yes
+    potential = {
+        NOT = { map_setup = map_setup_random }
+		tag = ORC
+    }
+    has_country_shield = yes
+
+    ORC_revitalize_the_army = {
+        icon = mission_modern_knight_army
+        required_missions = {}
+        
+        trigger = {
+            army_size_percentage = 1.0
+            has_advisor = army_organiser
+            has_estate_privilege = estate_clans_promote_general
+            OR = {
+                is_monarch_leader = yes
+                is_heir_leader = yes
+            }
+        }
+        effect = {
+            add_country_modifier = {
+                name = orc_reformed_army
+                duration = 5475
+            }
+            add_army_tradition = 20
+        }
+        #provinces_to_highlight = {}
+    }
+
+    ORC_challenge_lathvy_leadership = {
+        icon = mission_united_knight_order
+        required_missions = {ORC_revitalize_the_army}
+        position = 3
+        trigger = {
+            
+        }
+        effect = {
+            
+        }
+        #provinces_to_highlight = {}
+    }
+
+    ORC_prepare_for_war = {
+        icon = mission_knight
+        required_missions = {ORC_challenge_lathvy_leadership}
+        
+        trigger = {
+            
+        }
+        effect = {
+            
+        }
+        #provinces_to_highlight = {}
+    }
+
+    ORC_colonize_the_east = {
+        icon = mission_lit_harness_steppes
+        required_missions = {ORC_prepare_for_war}
+        position = 6
+        trigger = {
+            
+        }
+        effect = {
+            
+        }
+        #provinces_to_highlight = {}
+    }
+
+    ORC_into_emastaly = {
+        icon = mission_northumberland_coast
+        required_missions = {ORC_colonize_the_east}
+        
+        trigger = {
+            
+        }
+        effect = {
+            
+        }
+        #provinces_to_highlight = {}
+    }
+
+    ORC_waking_the_dragon = {
+        icon = mission_norwegian_great_power
+        required_missions = {ORC_into_emastaly ORC_seize_the_northern_provinces ORC_settle_the_olivinar_rim}
+        position = 9
+        trigger = {
+            
+        }
+        effect = {
+            if = {
+                limit = {
+                    NOT = {
+                        government_rank = 3
+                    }
+                }
+                set_government_rank = 3
+            }
+        }
+        #provinces_to_highlight = {}
+    }
+
+    ORC_rulers_of_estal = {
+        icon = mission_the_sound_toll
+        required_missions = {ORC_waking_the_dragon ORC_a_righteous_kingdom}
+        position = 12
+        trigger = {
+            
+        }
+        effect = {
+            
+        }
+        #provinces_to_highlight = {}
+    }
+
+    ORC_weather_the_storm = {
+        icon = mission_protect_albania
+        required_missions = {ORC_rulers_of_estal}
+        position = 14
+        trigger = {
+            
+        }
+        effect = {
+            
+        }
+        #provinces_to_highlight = {}
+    }
+}
+
+orc_4 = {
+    slot = 4
+    generic = no
+    ai = yes
+    potential = {
+        NOT = { map_setup = map_setup_random }
+		tag = ORC
+    }
+    has_country_shield = yes
+
+    ORC_beyond_our_borders = {
+        icon = mission_pol_develop_countryside
+        required_missions = {}
+        position = 2
+        trigger = {
+            
+        }
+        effect = {
+            
+        }
+        #provinces_to_highlight = {}
+    }
+
+    ORC_assist_the_pioneers = {
+        icon = mission_swedish_peasantry
+        required_missions = {ORC_beyond_our_borders}
+        position = 4
+        trigger = {
+            
+        }
+        effect = {
+            
+        }
+        #provinces_to_highlight = {}
+    }
+
+    ORC_support_the_fur_trade = {
+        icon = mission_modernized_vikings
+        required_missions = {ORC_assist_the_pioneers}
+        
+        trigger = {
+            
+        }
+        effect = {
+            
+        }
+        #provinces_to_highlight = {}
+    }
+
+    ORC_unite_the_ordics = {
+        icon = mission_rb_a_mighty_fleet
+        required_missions = {ORC_deal_with_the_west}
+        
+        trigger = {
+            
+        }
+        effect = {
+            
+        }
+        #provinces_to_highlight = {}
+    }
+
+    ORC_settle_the_olivinar_rim = {
+        icon = mission_rb_conquer_the_isles
+        required_missions = {ORC_unite_the_ordics}
+        position = 8
+        trigger = {
+            
+        }
+        effect = {
+            
+        }
+        #provinces_to_highlight = {}
+    }
+
+    ORC_monopolize_estali_trade = {
+        icon = mission_rb_control_the_hansa
+        required_missions = {ORC_settle_the_olivinar_rim ORC_waking_the_dragon ORC_protect_the_redwood_route}
+        position = 10
+        trigger = {
+            
+        }
+        effect = {
+            
+        }
+        #provinces_to_highlight = {}
+    }
+
+    ORC_subsidize_silk_production = {
+        icon = mission_rb_prospect_for_coal
+        required_missions = {ORC_develop_the_towns}
+        
+        trigger = {
+            
+        }
+        effect = {
+            
+        }
+        #provinces_to_highlight = {}
+    }
+}
+
+orc_5 = {
+    slot = 5
+    generic = no
+    ai = yes
+    potential = {
+        NOT = { map_setup = map_setup_random }
+		tag = ORC
+    }
+    has_country_shield = yes
+
+    ORC_build_a_fleet = {
+        icon = mission_rb_scottish_north_sea_trade
+        required_missions = {}
+        position = 2
+        trigger = {
+            
+        }
+        effect = {
+            
+        }
+        #provinces_to_highlight = {}
+    }
+    
+    ORC_dominate_the_olivinar = {
+        icon = mission_corsairs_of_the_north_sea
+        required_missions = {ORC_build_a_fleet}
+        
+        trigger = {
+            
+        }
+        effect = {
+            
+        }
+        #provinces_to_highlight = {}
+    }
+    
+    ORC_deal_with_the_west = {
+        icon = mission_control_the_desh
+        required_missions = {ORC_dominate_the_olivinar}
+        position = 5
+        trigger = {
+            
+        }
+        effect = {
+            
+        }
+        #provinces_to_highlight = {}
+    }
+    
+    ORC_invest_in_eastern_ordica = {
+        icon = mission_pol_breadbasket_europe
+        required_missions = {}
+        position = 7
+        trigger = {
+            NOT = {
+                any_owned_province = {
+                    region = east_ordica_region
+                    NOT = {
+                        development = 6
+                    }
+                }
+            }
+        }
+        effect = {
+            random_owned_province = {
+                limit = {
+                    region = east_ordica_region
+                    NOT = {
+                        province_has_center_of_trade_of_level = 1
+                    }
+                }
+                center_of_trade	= 1
+            }
+            random_owned_province = {
+                limit = {
+                    region = east_ordica_region
+                    NOT = {
+                        province_has_center_of_trade_of_level = 1
+                    }
+                }
+                center_of_trade	= 1
+            }
+            add_years_of_income	= 1.75
+        }
+        provinces_to_highlight = {
+            owned_by = ROOT
+            region = east_ordica_region
+            NOT = {development = 6}
+        }
+    }
+    
+    ORC_protect_the_redwood_route = {
+        icon = mission_expand_into_the_forest
+        required_missions = {ORC_invest_in_eastern_ordica}
+        position = 9
+        trigger = {
+            
+        }
+        effect = {
+            
+        }
+        #provinces_to_highlight = {}
+    }
+    
+    ORC_develop_the_towns = {
+        icon = mission_develop_visby
+        required_missions = {ORC_protect_the_redwood_route}
+        
+        trigger = {
+            
+        }
+        effect = {
+            
+        }
+        #provinces_to_highlight = {}
+    }
+    
+    ORC_golden_age_of_ordic_culture = {
+        icon = mission_interfaith_relations
+        required_missions = {ORC_develop_the_towns}
+        position = 12
+        trigger = {
+            
+        }
+        effect = {
+            
+        }
+        #provinces_to_highlight = {}
+    }
+}
