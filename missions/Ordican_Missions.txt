@@ -13,24 +13,120 @@ orc_1 = {
         icon = mission_mayan_conquest
         required_missions = { }
         trigger = {
-            
+            estate_loyalty = {
+                estate = estate_clans
+                loyalty = 60
+            }
+            custom_trigger_tooltip = {
+                tooltip = orcConvertedTenProvs
+                NOT = {
+                    num_of_owned_provinces_with = {
+                       value = 20
+                        religion = ordic
+                        OR = {
+                            region = ordica_region
+                            region = east_ordica_region
+                        }
+                    }
+                }
+            }
+            pechiadh_area = {
+                type = all
+                owned_by = ROOT
+            }
+            saurof_area = {
+                type = all
+                owned_by = ROOT
+            }
+            area_59 = {
+                type = all
+                owned_by = ROOT
+            }
+            denire_area = {
+                type = all
+                owned_by = ROOT
+            }
+            kolya_area = {
+                type = all
+                owned_by = ROOT
+            }
+            area_58 = {
+                type = all
+                owned_by = ROOT
+            }
         }
         effect = {
-            
+            define_advisor = {
+                skill = 3
+                type = treasurer
+                religion = ordic
+                cost_multiplier = 0.35
+            }
+            add_yearly_manpower	= 2.0
+            5699 = {
+                add_permanent_claim = ROOT
+            }
         }
-        #provinces_to_highlight = {}
+        provinces_to_highlight = {
+            OR = {
+                AND = {
+                    owned_by = ROOT
+                    religion = ordic
+                    OR = {
+                        region = ordica_region
+                        region = east_ordica_region
+                    }
+                }
+                AND = {
+                    NOT = {
+                        owned_by = ROOT
+                    }
+                    OR = {
+                        area = pechiadh_area
+                        area = saurof_area
+                        area = area_59
+                        area = denire_area
+                        area = kolya_area
+                        area = area_58
+                    }
+                }
+            }
+        }
     }
 
     ORC_royal_authority = {
         icon = mission_crown_of_sweden
         required_missions = {ORC_ensure_tribal_loyalty }
         trigger = {
-            
+            owns_core_province = 5699
+            crown_land_share = 40
+            monthly_adm	= 10
         }
         effect = {
-            
+            add_country_modifier = {
+                name = orc_centralized_state
+                duration = 7300
+            }
+            custom_tooltip = orcGetAutonomy
+            hidden_effect = {
+                every_owned_province = {
+                    limit = {
+                        culture_group = Ordic_C
+                    }
+                    add_local_autonomy = -25
+                }
+            }
+            add_estate_influence_modifier = {
+                estate = estate_clans
+                desc = EST_VAL_CLANS_SUBDUED
+                influence = -20
+                duration = 9125
+            }
         }
-        #provinces_to_highlight = {}
+        provinces_to_highlight = {
+            NOT = {country_or_non_sovereign_subject_holds = ROOT}
+            province_id = 5699
+        }
     }
 
     ORC_embrace_dorlems_tactics = {
@@ -38,10 +134,17 @@ orc_1 = {
         required_missions = {ORC_royal_authority ORC_prepare_for_war}
         position = 5
         trigger = {
-            
+            mil_tech = 4
+            army_professionalism = 0.05
+            mil_power = 100
         }
         effect = {
-            
+            add_mil_power = -100
+            remove_country_modifier = orc_levvied_armies
+            add_country_modifier = {
+                name = orc_recruit_new_armies
+                duration = 5475
+            }
         }
         #provinces_to_highlight = {}
     }
@@ -101,12 +204,40 @@ orc_2 = {
         required_missions = {ORC_ensure_tribal_loyalty}
         position = 2
         trigger = {
-            
+            6249 = {
+                country_or_non_sovereign_subject_holds = ROOT
+            }
+            6250 = {
+                country_or_non_sovereign_subject_holds = ROOT
+            }
+            6251 = {
+                country_or_non_sovereign_subject_holds = ROOT
+            }
+            6252 = {
+                country_or_non_sovereign_subject_holds = ROOT
+            }
         }
         effect = {
-            
+            add_country_modifier = {
+                name = orc_northern_trade_routes
+                duration = -1
+            }
+            6270 = {
+                add_province_modifier = {
+                    name = orc_kolya_markets
+                    duration = 9125
+                }
+            }
         }
-        #provinces_to_highlight = {}
+        provinces_to_highlight = {
+            NOT = { country_or_non_sovereign_subject_holds = ROOT }
+            OR = {
+                province_id = 6249
+                province_id = 6250
+                province_id = 6251
+                province_id = 6252
+            }
+        }
     }
 
     ORC_standardized_currency = {
@@ -114,10 +245,16 @@ orc_2 = {
         required_missions = {ORC_royal_authority}
         
         trigger = {
-            
+            mercantilism = 20
+            master_of_mint = 3
+            share_of_starting_income = 2.25
         }
         effect = {
-            
+            remove_country_modifier = orc_disjointed_economy
+            add_inflation = -5
+            country_event = {
+                id = ordica.42
+            }
         }
         #provinces_to_highlight = {}
     }
@@ -127,12 +264,43 @@ orc_2 = {
         required_missions = {ORC_standardized_currency}
         
         trigger = {
-            
+            num_of_light_ship = 20
+            OR = {
+                6286 = {
+                    has_merchant = PREV
+                }
+                6306 = {
+                    has_merchant = PREV
+                }
+            }
         }
         effect = {
-            
+            add_country_modifier = {
+                name = orc_commerce_in_the_north
+                duration = 9125
+            }
+            RDU = {
+                remove_country_modifier = rdumkatvar_lib
+            }
+            feemk_area = {
+                add_permanent_claim = ROOT
+            }
+            area_57 = {
+                add_permanent_claim = ROOT
+            }
+            kletvar_area = {
+                add_permanent_claim = ROOT
+            }
+            nere_area = {
+                add_permanent_claim = ROOT
+            }
         }
-        #provinces_to_highlight = {}
+        provinces_to_highlight = {
+            OR = {
+                province_id = 6286
+                province_id = 6306
+            }
+        }
     }
 
     ORC_confront_pextoglazia = {
@@ -239,7 +407,22 @@ orc_3 = {
         required_missions = {ORC_revitalize_the_army}
         position = 3
         trigger = {
-            
+            is_rival = PEX
+            PEX = {
+                custom_trigger_tooltip = {
+					tooltip = has_been_insulted_by_root
+					OR = {
+						has_opinion_modifier = {
+							who = ROOT
+							modifier = insulted
+						}
+						has_opinion_modifier = {
+							who = ROOT
+							modifier = scornfully_insulted
+						}
+					}
+				}
+            }
         }
         effect = {
             
@@ -450,10 +633,26 @@ orc_5 = {
         required_missions = {}
         position = 2
         trigger = {
-            
+            num_of_galley = 25
         }
         effect = {
-            
+            custom_tooltip = orcBuiltAFleet
+            hidden_effect = {
+                every_owned_province = {
+                    limit = {
+                        region = ordica_region
+                        has_port = yes
+                    }
+                    add_province_modifier = {
+                        name = orc_coastal_mod
+                        duration = 9125
+                    }
+                }
+            }
+            add_power_projection = {
+                type = mission_rewards_power_projection
+                amount = 20
+            }
         }
         #provinces_to_highlight = {}
     }
@@ -463,17 +662,40 @@ orc_5 = {
         required_missions = {ORC_build_a_fleet}
         
         trigger = {
-            
+            if = {
+                limit = {
+                    exists = NHL
+                }
+                naval_strength = {
+	                who = NHL
+	                value = 1.75
+                }
+            }
+            else = {
+                navy_size = 50
+            }
+            navy_tradition = 30
         }
         effect = {
-            
+            5725 = {
+                add_base_production = 3
+            }
+            dreklos_area = {
+                add_permanent_claim = ROOT
+            }
+            dotz_area = {
+                add_permanent_claim = ROOT
+            }
+            poto_haroo_area = {
+                add_permanent_claim = ROOT
+            }
         }
         #provinces_to_highlight = {}
     }
     
     ORC_deal_with_the_west = {
         icon = mission_control_the_desh
-        required_missions = {ORC_dominate_the_olivinar}
+        required_missions = {ORC_dominate_the_olivinar ORC_assist_the_pioneers}
         position = 5
         trigger = {
             

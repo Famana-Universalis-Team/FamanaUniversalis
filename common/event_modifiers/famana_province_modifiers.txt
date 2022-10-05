@@ -501,3 +501,12 @@ naf_syadona_astro_mod = {
     local_production_efficiency = -0.10
     idea_cost = -0.05
 }
+
+orc_kolya_markets = {
+    province_trade_power_modifier = 0.50
+    trade_goods_size_modifier = 0.25
+}
+
+orc_coastal_mod = {
+    global_sailors_modifier = 0.50
+}

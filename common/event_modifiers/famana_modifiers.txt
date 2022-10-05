@@ -2372,3 +2372,21 @@ orc_reformed_army = {
     global_regiment_cost = -0.20
     shock_damage_received = -0.10
 }
+
+orc_northern_trade_routes = {
+    merchants = 1
+}
+
+orc_centralized_state = {
+    global_unrest = -2.0
+}
+
+orc_commerce_in_the_north = {
+    global_ship_trade_power = 0.50
+    trade_efficiency = 0.15
+}
+
+orc_recruit_new_armies = {
+    global_manpower_modifier = 0.25
+    land_maintenance_modifier = 0.20
+}

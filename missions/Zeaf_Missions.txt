@@ -45,6 +45,7 @@ zeaf_1 = {
 			create_general = { tradition = 50 }
 		}
 		provinces_to_highlight = {
+			NOT = { owned_by = ROOT }
 			OR = {
 				province_id = 5152
 				province_id = 5153
@@ -78,6 +79,7 @@ zeaf_1 = {
 			}
 		}
 		provinces_to_highlight = {
+			NOT = { owned_by = ROOT }
 			OR = {
 				province_id = 5145
 				province_id = 5142
@@ -146,6 +148,7 @@ zeaf_1 = {
 			}
 		}
 		provinces_to_highlight = {
+			NOT = { owned_by = ROOT }
 			OR = {
 				province_id = 5140
 				province_id = 5143
@@ -284,6 +287,7 @@ zeaf_2 = {
 			}
 		}
 		provinces_to_highlight = {
+			NOT = { owned_by = ROOT }
 			province_id = 5155
 		}
 	}

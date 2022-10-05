@@ -2420,27 +2420,66 @@ country_event = {
 }
 
 #DEBUG - immediately backpedal and delete the modifiers cause the ordican mission tree doesnt exist
+#country_event = {
+#	id = ordica.41
+#	title = ordica.41.t
+#	desc = ordica.41.d
+#	picture = NUSANTARA_THRONE_eventPicture
+#	fire_only_once = yes
+#
+#	mean_time_to_happen = {
+#		months = 1
+#	}
+#
+#	trigger = {
+#		tag = ORC
+#		has_country_modifier = orc_religious_intolerance
+#	}
+#
+#	option = {
+#		name = ordica.41.a
+#		ai_chance = { factor = 1 }
+#		remove_country_modifier = orc_religious_intolerance
+#		remove_country_modifier = orc_disjointed_economy
+#		remove_country_modifier = orc_levvied_armies
+#	}
+#}
+
+#Naravami Trade
 country_event = {
-	id = ordica.41
-	title = ordica.41.t
-	desc = ordica.41.d
-	picture = NUSANTARA_THRONE_eventPicture
+	id = ordica.42
+	title = ordica.42.t
+	desc = ordica.42.d
+	picture = HARBOUR_eventPicture
 	fire_only_once = yes
+	is_triggered_only = yes
 
-	mean_time_to_happen = {
-		months = 1
-	}
-
-	trigger = {
-		tag = ORC
-		has_country_modifier = orc_religious_intolerance
+	option = {
+		name = ordica.42.a
+		ai_chance = { factor = 1 }
+		create_explorer = { tradition = 60 }
+		add_treasury = -100
+		if = {
+			limit = {
+				NOT = {
+					owns = 5719
+				}
+			}
+			add_permanent_claim = 5719
+		}
 	}
 
 	option = {
-		name = ordica.41.a
+		name = ordica.42.a
 		ai_chance = { factor = 1 }
-		remove_country_modifier = orc_religious_intolerance
-		remove_country_modifier = orc_disjointed_economy
-		remove_country_modifier = orc_levvied_armies
+		add_adm_power = 100
+		if = {
+			limit = {
+				NOT = {
+					owns = 5719
+				}
+			}
+			add_permanent_claim = 5719
+		}
 	}
 }
