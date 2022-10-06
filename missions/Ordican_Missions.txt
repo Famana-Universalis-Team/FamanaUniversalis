@@ -273,6 +273,16 @@ orc_2 = {
                     has_merchant = PREV
                 }
             }
+            if = {
+                limit = {
+                    RDU = {
+                        is_subject_of = ORC
+                    }
+                }
+                RDU = {
+                    has_divert_trade = yes
+                }
+            }
         }
         effect = {
             add_country_modifier = {
@@ -385,7 +395,7 @@ orc_3 = {
         
         trigger = {
             army_size_percentage = 1.0
-            has_advisor = army_organiser
+            advisor = army_organiser
             has_estate_privilege = estate_clans_promote_general
             OR = {
                 is_monarch_leader = yes
@@ -423,9 +433,18 @@ orc_3 = {
 					}
 				}
             }
+            OR = {
+                is_defender_of_faith = yes
+                army_strength = {
+	                who = PEX
+	                value = 1.50
+                }
+            }
+            num_of_allies = 2
         }
         effect = {
-            
+            add_prestige = 25
+            add_dip_power = 100
         }
         #provinces_to_highlight = {}
     }
@@ -435,7 +454,7 @@ orc_3 = {
         required_missions = {ORC_challenge_lathvy_leadership}
         
         trigger = {
-            
+            army_size_percentage = 1.0
         }
         effect = {
             

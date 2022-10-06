@@ -508,5 +508,5 @@ orc_kolya_markets = {
 }
 
 orc_coastal_mod = {
-    global_sailors_modifier = 0.50
+    local_sailors_modifier = 0.50
 }
