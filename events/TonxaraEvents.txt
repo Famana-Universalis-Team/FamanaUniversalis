@@ -3973,13 +3973,13 @@ country_event = { #Religious Falling Out
     fire_only_once = yes
 
     trigger = {
-        has_dlc = "Cradle of Civilisation"
-        has_global_flag = TonmoGoldenAge
-        FAS = { exists = no }
         religion = tonmo
         capital_scope = {
             superregion = jasua_superregion
         }
+        has_dlc = "Cradle of Civilisation"
+        has_global_flag = TonmoGoldenAge
+        FAS = { exists = no }
     }
 
     mean_time_to_happen = {

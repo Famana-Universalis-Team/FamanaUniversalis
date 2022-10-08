@@ -66,6 +66,10 @@ tonxara_disaster = {
 		NOT = { corruption = 5 }
 		NOT = { num_of_rebel_armies = 1 }
 		NOT = { num_of_rebel_controlled_provinces = 1 }
+        NOT = {
+            has_country_modifier = just_lost_to_rebels
+        }
+        is_bankrupt = no
         num_of_cities = 20
         legitimacy = 80
         religious_unity = 0.60
