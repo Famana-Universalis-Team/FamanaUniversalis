@@ -270,8 +270,6 @@ south_xalia_region = {
 
 gorfrek_region = {
 	areas = {
-		area_61 #
-		area_62 #
 		area_63
 		area_64
 		area_65 #
@@ -464,6 +462,9 @@ emastalia_region = {
 		vava_area
 		erlaq_area
 		area_56
+		area_61
+		area_62
+		brelonsua_area
 	}
 }
 
