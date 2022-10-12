@@ -67,12 +67,8 @@ antiash_1 = {
 			}
 		}
 		trigger = {
-			owns_core_province = 5150
 			owns_core_province = 5813
 			owns_core_province = 5812
-			owns_core_province = 5815
-			owns_core_province = 7984
-			owns_core_province = 5814
         }
 		effect = {
 			okus_area = {
