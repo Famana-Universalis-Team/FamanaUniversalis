@@ -510,3 +510,8 @@ orc_kolya_markets = {
 orc_coastal_mod = {
     local_sailors_modifier = 0.50
 }
+
+orc_the_three_castles = {
+    local_defender_dice_roll_bonus = 1
+    local_hostile_attrition = 1
+}

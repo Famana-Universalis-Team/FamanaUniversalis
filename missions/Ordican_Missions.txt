@@ -9,7 +9,7 @@ orc_1 = {
     }
     has_country_shield = yes
 
-    ORC_ensure_tribal_loyalty = {
+    orc_ensure_tribal_loyalty = {
         icon = mission_mayan_conquest
         required_missions = { }
         trigger = {
@@ -94,9 +94,9 @@ orc_1 = {
         }
     }
 
-    ORC_royal_authority = {
+    orc_royal_authority = {
         icon = mission_crown_of_sweden
-        required_missions = {ORC_ensure_tribal_loyalty }
+        required_missions = {orc_ensure_tribal_loyalty }
         trigger = {
             owns_core_province = 5699
             crown_land_share = 40
@@ -129,9 +129,9 @@ orc_1 = {
         }
     }
 
-    ORC_embrace_dorlems_tactics = {
+    orc_embrace_dorlems_tactics = {
         icon = mission_consolidate_the_state
-        required_missions = {ORC_royal_authority ORC_prepare_for_war}
+        required_missions = {orc_royal_authority orc_prepare_for_war}
         position = 5
         trigger = {
             mil_tech = 4
@@ -149,9 +149,9 @@ orc_1 = {
         #provinces_to_highlight = {}
     }
 
-    ORC_sway_the_bishops = {
+    orc_sway_the_bishops = {
         icon = mission_pol_negotiate_nunciature
-        required_missions = {ORC_embrace_dorlems_tactics}
+        required_missions = {orc_embrace_dorlems_tactics}
         position = 7
         trigger = {
             
@@ -162,9 +162,9 @@ orc_1 = {
         #provinces_to_highlight = {}
     }
 
-    ORC_crack_down_on_paganry = {
+    orc_crack_down_on_paganry = {
         icon = mission_impaled_soldies
-        required_missions = {ORC_sway_the_bishops}
+        required_missions = {orc_sway_the_bishops}
         position = 10
         trigger = {
             
@@ -175,9 +175,9 @@ orc_1 = {
         #provinces_to_highlight = {}
     }
 
-    ORC_theological_modifications = {
+    orc_theological_modifications = {
         icon = mission_rb_monopolize_the_channel
-        required_missions = {ORC_crack_down_on_paganry}
+        required_missions = {orc_crack_down_on_paganry}
         position = 12
         trigger = {
             
@@ -199,9 +199,9 @@ orc_2 = {
     }
     has_country_shield = yes
 
-    ORC_depths_of_estal = {
+    orc_depths_of_estal = {
         icon = mission_pol_tend_east
-        required_missions = {ORC_ensure_tribal_loyalty}
+        required_missions = {orc_ensure_tribal_loyalty}
         position = 2
         trigger = {
             6249 = {
@@ -240,9 +240,9 @@ orc_2 = {
         }
     }
 
-    ORC_standardized_currency = {
+    orc_standardized_currency = {
         icon = mission_entrepot_of_india
-        required_missions = {ORC_royal_authority}
+        required_missions = {orc_royal_authority}
         
         trigger = {
             mercantilism = 20
@@ -259,9 +259,9 @@ orc_2 = {
         #provinces_to_highlight = {}
     }
 
-    ORC_trade_with_naravam = {
+    orc_trade_with_naravam = {
         icon = mission_the_varangians
-        required_missions = {ORC_standardized_currency}
+        required_missions = {orc_standardized_currency}
         
         trigger = {
             num_of_light_ship = 20
@@ -313,9 +313,9 @@ orc_2 = {
         }
     }
 
-    ORC_confront_pextoglazia = {
+    orc_confront_pextoglazia = {
         icon = mission_the_hakkapeliitta
-        required_missions = {ORC_prepare_for_war}
+        required_missions = {orc_prepare_for_war}
         
         trigger = {
             
@@ -326,9 +326,9 @@ orc_2 = {
         #provinces_to_highlight = {}
     }
 
-    ORC_seize_the_northern_provinces = {
+    orc_seize_the_northern_provinces = {
         icon = mission_swedish_military_advise
-        required_missions = {ORC_confront_pextoglazia}
+        required_missions = {orc_confront_pextoglazia}
         position = 8
         trigger = {
             
@@ -339,9 +339,9 @@ orc_2 = {
         #provinces_to_highlight = {}
     }
 
-    ORC_friends_in_far_places = {
+    orc_friends_in_far_places = {
         icon = mission_diplomatic_relation
-        required_missions = {ORC_seize_the_northern_provinces}
+        required_missions = {orc_seize_the_northern_provinces}
         
         trigger = {
             
@@ -352,7 +352,7 @@ orc_2 = {
         #provinces_to_highlight = {}
     }
 
-    ORC_aras_guidance = {
+    orc_aras_guidance = {
         icon = mission_scholar_officials
         required_missions = {}
         
@@ -365,9 +365,9 @@ orc_2 = {
         #provinces_to_highlight = {}
     }
 
-    ORC_a_righteous_kingdom = {
+    orc_a_righteous_kingdom = {
         icon = mission_rb_trinity_college_dublin
-        required_missions = {ORC_aras_guidance ORC_crack_down_on_paganry}
+        required_missions = {orc_aras_guidance orc_crack_down_on_paganry}
         
         trigger = {
             
@@ -389,7 +389,7 @@ orc_3 = {
     }
     has_country_shield = yes
 
-    ORC_revitalize_the_army = {
+    orc_revitalize_the_army = {
         icon = mission_modern_knight_army
         required_missions = {}
         
@@ -412,9 +412,9 @@ orc_3 = {
         #provinces_to_highlight = {}
     }
 
-    ORC_challenge_lathvy_leadership = {
+    orc_challenge_lathvy_leadership = {
         icon = mission_united_knight_order
-        required_missions = {ORC_revitalize_the_army}
+        required_missions = {orc_revitalize_the_army}
         position = 3
         trigger = {
             is_rival = PEX
@@ -437,7 +437,7 @@ orc_3 = {
                 is_defender_of_faith = yes
                 army_strength = {
 	                who = PEX
-	                value = 1.50
+	                value = 2
                 }
             }
             num_of_allies = 2
@@ -449,22 +449,54 @@ orc_3 = {
         #provinces_to_highlight = {}
     }
 
-    ORC_prepare_for_war = {
+    orc_prepare_for_war = {
         icon = mission_knight
-        required_missions = {ORC_challenge_lathvy_leadership}
+        required_missions = {orc_challenge_lathvy_leadership}
         
         trigger = {
-            army_size_percentage = 1.0
+            has_spy_network_in = {
+	            who = PEX
+	            value = 75
+            }
+            mrug_area = {
+                has_state_edict	= edict_defensive_edict
+            }
+            usul_area = {
+                has_state_edict	= edict_defensive_edict
+            }
+            celzion_area = {
+                has_state_edict	= edict_defensive_edict
+            }
         }
         effect = {
-            
+            mrug_area = {
+                add_province_modifier = {
+                    name = orc_the_three_castles
+                    duration = -1
+                }
+            }
+            usul_area = {
+                add_province_modifier = {
+                    name = orc_the_three_castles
+                    duration = -1
+                }
+            }
+            celzion_area = {
+                add_province_modifier = {
+                    name = orc_the_three_castles
+                    duration = -1
+                }
+            }
+            country_event = {
+                id = ordica.3
+            }
         }
         #provinces_to_highlight = {}
     }
 
-    ORC_colonize_the_east = {
+    orc_colonize_the_east = {
         icon = mission_lit_harness_steppes
-        required_missions = {ORC_prepare_for_war}
+        required_missions = {orc_prepare_for_war}
         position = 6
         trigger = {
             
@@ -475,9 +507,9 @@ orc_3 = {
         #provinces_to_highlight = {}
     }
 
-    ORC_into_emastaly = {
+    orc_into_emastaly = {
         icon = mission_northumberland_coast
-        required_missions = {ORC_colonize_the_east}
+        required_missions = {orc_colonize_the_east}
         
         trigger = {
             
@@ -488,9 +520,9 @@ orc_3 = {
         #provinces_to_highlight = {}
     }
 
-    ORC_waking_the_dragon = {
+    orc_waking_the_dragon = {
         icon = mission_norwegian_great_power
-        required_missions = {ORC_into_emastaly ORC_seize_the_northern_provinces ORC_settle_the_olivinar_rim}
+        required_missions = {orc_into_emastaly orc_seize_the_northern_provinces orc_settle_the_olivinar_rim}
         position = 9
         trigger = {
             
@@ -508,9 +540,9 @@ orc_3 = {
         #provinces_to_highlight = {}
     }
 
-    ORC_rulers_of_estal = {
+    orc_rulers_of_estal = {
         icon = mission_the_sound_toll
-        required_missions = {ORC_waking_the_dragon ORC_a_righteous_kingdom}
+        required_missions = {orc_waking_the_dragon orc_a_righteous_kingdom}
         position = 12
         trigger = {
             
@@ -521,9 +553,9 @@ orc_3 = {
         #provinces_to_highlight = {}
     }
 
-    ORC_weather_the_storm = {
+    orc_weather_the_storm = {
         icon = mission_protect_albania
-        required_missions = {ORC_rulers_of_estal}
+        required_missions = {orc_rulers_of_estal}
         position = 14
         trigger = {
             
@@ -545,7 +577,7 @@ orc_4 = {
     }
     has_country_shield = yes
 
-    ORC_beyond_our_borders = {
+    orc_beyond_our_borders = {
         icon = mission_pol_develop_countryside
         required_missions = {}
         position = 2
@@ -558,9 +590,9 @@ orc_4 = {
         #provinces_to_highlight = {}
     }
 
-    ORC_assist_the_pioneers = {
+    orc_assist_the_pioneers = {
         icon = mission_swedish_peasantry
-        required_missions = {ORC_beyond_our_borders}
+        required_missions = {orc_beyond_our_borders}
         position = 4
         trigger = {
             
@@ -571,9 +603,9 @@ orc_4 = {
         #provinces_to_highlight = {}
     }
 
-    ORC_support_the_fur_trade = {
+    orc_support_the_fur_trade = {
         icon = mission_modernized_vikings
-        required_missions = {ORC_assist_the_pioneers}
+        required_missions = {orc_assist_the_pioneers}
         
         trigger = {
             
@@ -584,9 +616,9 @@ orc_4 = {
         #provinces_to_highlight = {}
     }
 
-    ORC_unite_the_ordics = {
+    orc_unite_the_ordics = {
         icon = mission_rb_a_mighty_fleet
-        required_missions = {ORC_deal_with_the_west}
+        required_missions = {orc_deal_with_the_west}
         
         trigger = {
             
@@ -597,9 +629,9 @@ orc_4 = {
         #provinces_to_highlight = {}
     }
 
-    ORC_settle_the_olivinar_rim = {
+    orc_settle_the_olivinar_rim = {
         icon = mission_rb_conquer_the_isles
-        required_missions = {ORC_unite_the_ordics}
+        required_missions = {orc_unite_the_ordics}
         position = 8
         trigger = {
             
@@ -610,9 +642,9 @@ orc_4 = {
         #provinces_to_highlight = {}
     }
 
-    ORC_monopolize_estali_trade = {
+    orc_monopolize_estali_trade = {
         icon = mission_rb_control_the_hansa
-        required_missions = {ORC_settle_the_olivinar_rim ORC_waking_the_dragon ORC_protect_the_redwood_route}
+        required_missions = {orc_settle_the_olivinar_rim orc_waking_the_dragon orc_protect_the_redwood_route}
         position = 10
         trigger = {
             
@@ -623,9 +655,9 @@ orc_4 = {
         #provinces_to_highlight = {}
     }
 
-    ORC_subsidize_silk_production = {
+    orc_subsidize_silk_production = {
         icon = mission_rb_prospect_for_coal
-        required_missions = {ORC_develop_the_towns}
+        required_missions = {orc_develop_the_towns}
         
         trigger = {
             
@@ -647,7 +679,7 @@ orc_5 = {
     }
     has_country_shield = yes
 
-    ORC_build_a_fleet = {
+    orc_build_a_fleet = {
         icon = mission_rb_scottish_north_sea_trade
         required_missions = {}
         position = 2
@@ -676,9 +708,9 @@ orc_5 = {
         #provinces_to_highlight = {}
     }
     
-    ORC_dominate_the_olivinar = {
+    orc_dominate_the_olivinar = {
         icon = mission_corsairs_of_the_north_sea
-        required_missions = {ORC_build_a_fleet}
+        required_missions = {orc_build_a_fleet}
         
         trigger = {
             if = {
@@ -712,9 +744,9 @@ orc_5 = {
         #provinces_to_highlight = {}
     }
     
-    ORC_deal_with_the_west = {
+    orc_deal_with_the_west = {
         icon = mission_control_the_desh
-        required_missions = {ORC_dominate_the_olivinar ORC_assist_the_pioneers}
+        required_missions = {orc_dominate_the_olivinar orc_assist_the_pioneers}
         position = 5
         trigger = {
             
@@ -725,7 +757,7 @@ orc_5 = {
         #provinces_to_highlight = {}
     }
     
-    ORC_invest_in_eastern_ordica = {
+    orc_invest_in_eastern_ordica = {
         icon = mission_pol_breadbasket_europe
         required_missions = {}
         position = 7
@@ -767,9 +799,9 @@ orc_5 = {
         }
     }
     
-    ORC_protect_the_redwood_route = {
+    orc_protect_the_redwood_route = {
         icon = mission_expand_into_the_forest
-        required_missions = {ORC_invest_in_eastern_ordica}
+        required_missions = {orc_invest_in_eastern_ordica}
         position = 9
         trigger = {
             
@@ -780,9 +812,9 @@ orc_5 = {
         #provinces_to_highlight = {}
     }
     
-    ORC_develop_the_towns = {
+    orc_develop_the_towns = {
         icon = mission_develop_visby
-        required_missions = {ORC_protect_the_redwood_route}
+        required_missions = {orc_protect_the_redwood_route}
         
         trigger = {
             
@@ -793,9 +825,9 @@ orc_5 = {
         #provinces_to_highlight = {}
     }
     
-    ORC_golden_age_of_ordic_culture = {
+    orc_golden_age_of_ordic_culture = {
         icon = mission_interfaith_relations
-        required_missions = {ORC_develop_the_towns}
+        required_missions = {orc_develop_the_towns}
         position = 12
         trigger = {
             
