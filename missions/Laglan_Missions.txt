@@ -453,7 +453,15 @@ lag_2 = {
             navy_size = 100
         }
         effect = {
-            change_adm = 1
+            if = {
+                limit = {
+                    adm = 6
+                }
+                add_adm_power = 100
+            }
+            else = {
+                change_adm = 1
+            }
             if = {
                 limit = {
                     NOT = {

@@ -209,7 +209,15 @@ rst_1 = {
                 name = rst_great_king_of_gotzlica
                 duration = -1
             }
-            change_mil = 1
+            if = {
+                limit = {
+                    mil = 6
+                }
+                add_mil_power = 100
+            }
+            else = {
+                change_mil = 1
+            }
             if = {
                 limit = {
                     NOT = {

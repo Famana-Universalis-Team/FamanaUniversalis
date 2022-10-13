@@ -627,7 +627,15 @@ fas_2 = {
 			}
 		}
 		effect = {
-			change_mil = 1
+			if = {
+                limit = {
+                    mil = 6
+                }
+                add_mil_power = 100
+            }
+            else = {
+                change_mil = 1
+            }
 			#hidden_effect = {
             #    set_country_flag = fas_bold_fighter_chance
             #}

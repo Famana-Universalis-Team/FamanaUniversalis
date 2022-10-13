@@ -515,3 +515,7 @@ orc_the_three_castles = {
     local_defender_dice_roll_bonus = 1
     local_hostile_attrition = 1
 }
+
+orc_welcoming_ordican_overlords = {
+    local_core_creation = -0.25
+}

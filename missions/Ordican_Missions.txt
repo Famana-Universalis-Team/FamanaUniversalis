@@ -154,10 +154,18 @@ orc_1 = {
         required_missions = {orc_embrace_dorlems_tactics}
         position = 7
         trigger = {
-            
+            piety = 0.75
+            estate_loyalty = {
+				estate = estate_church
+				loyalty = 70
+			}
         }
         effect = {
-            
+            remove_country_modifier = orc_religious_intolerance
+            add_ruler_modifier = {
+                name = orc_lathvy_zealotry
+                duration = -1
+            }
         }
         #provinces_to_highlight = {}
     }
@@ -318,12 +326,37 @@ orc_2 = {
         required_missions = {orc_prepare_for_war}
         
         trigger = {
-            
+            offensive_war_with = PEX
+            war_score_against = {
+	            who = PEX
+	            value = 70
+            }
+            OR = {
+                controls = 5337
+                PEX = {
+                    NOT = {
+                        army_size = 1
+                    }
+                }
+            }
         }
         effect = {
-            
+            add_country_modifier = {
+                name = orc_the_end_of_pextoglazia
+                duration = 3650
+            }
+            PEX = {
+                kill_ruler = yes
+                add_stability = -2
+                add_disaster_progress = {
+                    disaster = collapse_of_pextoglazia
+                    value = 25
+                }
+            }
         }
-        #provinces_to_highlight = {}
+        provinces_to_highlight = {
+            province_id = 5337
+        }
     }
 
     orc_seize_the_northern_provinces = {
@@ -331,12 +364,68 @@ orc_2 = {
         required_missions = {orc_confront_pextoglazia}
         position = 8
         trigger = {
-            
+            west_yuvla_area = {
+                type = all
+                country_or_non_sovereign_subject_holds = ROOT
+		    }
+		    ronpax_area = {
+                type = all
+                country_or_non_sovereign_subject_holds = ROOT
+		    }
+		    rondos_area = {
+                type = all
+                country_or_non_sovereign_subject_holds = ROOT
+		    }
+		    5347 = {
+                country_or_non_sovereign_subject_holds = ROOT
+            }
         }
         effect = {
-            
+            add_country_modifier = {
+                name = orc_new_lathvy_hegemon
+                duration = 9125
+            }
+            add_treasury = 500
+            west_yuvla_area = {
+                add_province_modifier = {
+                    name = orc_welcoming_ordican_overlords
+                    duration = 1825
+                }
+            }
+            ronpax_area = {
+                add_province_modifier = {
+                    name = orc_welcoming_ordican_overlords
+                    duration = 1825
+                }
+            }
+            rondos_area = {
+                add_province_modifier = {
+                    name = orc_welcoming_ordican_overlords
+                    duration = 1825
+                }
+            }
+            5347 = {
+                add_province_modifier = {
+                    name = orc_welcoming_ordican_overlords
+                    duration = 1825
+                }
+            }
+            pextoglazia_region = {
+                add_permanent_claim = ROOT
+            }
+            pixrol_area = {
+                add_permanent_claim = ROOT
+            }
         }
-        #provinces_to_highlight = {}
+        provinces_to_highlight = {
+            OR = {
+                area = west_yuvla_area
+                area = ronpax_area
+                area = rondos_area
+                province_id = 5347
+            }
+            NOT = { country_or_non_sovereign_subject_holds = ROOT }
+        }
     }
 
     orc_friends_in_far_places = {
@@ -344,10 +433,24 @@ orc_2 = {
         required_missions = {orc_seize_the_northern_provinces}
         
         trigger = {
-            
+            any_ally = {
+                capital_scope = {
+                    OR = {
+						region = emastalia_region
+	                    region = west_emastalia_region
+					}
+                }
+                has_opinion = {
+	                who = ROOT
+	                value = 180
+                }
+            }
         }
         effect = {
-            
+            add_country_modifier = {
+                name = orc_gomic_outreach
+                duration = -1
+            }
         }
         #provinces_to_highlight = {}
     }
@@ -443,6 +546,7 @@ orc_3 = {
             num_of_allies = 2
         }
         effect = {
+            add_ruler_personality = zealot_personality
             add_prestige = 25
             add_dip_power = 100
         }
@@ -496,13 +600,22 @@ orc_3 = {
 
     orc_colonize_the_east = {
         icon = mission_lit_harness_steppes
-        required_missions = {orc_prepare_for_war}
+        required_missions = {orc_prepare_for_war orc_support_the_fur_trade}
         position = 6
         trigger = {
-            
+            num_of_owned_provinces_with = {
+                value = 4
+                region = pelig_region
+            }
+            pelig_region = {
+                type = all
+                has_discovered = ROOT
+            }
+            dip = 200
         }
         effect = {
-            
+            add_dip_power = -200
+            custom_tooltip = el_evento_del_piss
         }
         #provinces_to_highlight = {}
     }

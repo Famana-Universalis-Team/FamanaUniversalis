@@ -647,7 +647,15 @@ kap_3 = {
 			}
 		}
 		effect = {
-			change_mil = 1
+			if = {
+                limit = {
+                    mil = 6
+                }
+                add_mil_power = 100
+            }
+            else = {
+                change_mil = 1
+            }
 			unnamed_area_49 = {
 				add_permanent_claim = ROOT
 			}

@@ -236,6 +236,7 @@ umz_2 = {
         
        
         effect = {
+			add_army_tradition = 10
             fasalep_area  = {
 				limit = {
 					NOT = { is_core = ROOT }

@@ -2390,3 +2390,21 @@ orc_recruit_new_armies = {
     global_manpower_modifier = 0.25
     land_maintenance_modifier = 0.20
 }
+
+orc_the_end_of_pextoglazia = {
+    province_warscore_cost = -0.15
+}
+
+orc_new_lathvy_hegemon = {
+    prestige = 1
+    adm_advisor_cost = -0.20
+}
+
+orc_gomic_outreach = {
+    diplomats = 1
+}
+
+orc_lathvy_zealotry = {
+    tolerance_own = 1
+    tolerance_heathen = -1
+}
