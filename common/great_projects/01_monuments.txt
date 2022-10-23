@@ -2036,7 +2036,7 @@ site_at_kyny = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			tolerance_heretic = 1
+			tolerance_own = 1
 			global_missionary_strength = 0.01
 		}
 
@@ -2077,7 +2077,7 @@ site_at_kyny = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			tolerance_heretic = 1
+			tolerance_own = 1
 			church_power_modifier = 0.10
 			global_missionary_strength = 0.01
 		}

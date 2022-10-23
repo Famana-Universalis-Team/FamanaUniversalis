@@ -2998,3 +2998,43 @@ HLT_ideas = {
 		tolerance_own = 2
 	}
 }
+
+TYD_ideas = {
+	start = {
+		mercenary_manpower = 0.50
+		available_province_loot = 0.20
+	}
+	
+	bonus = {
+		artillery_power = 0.10
+	}
+
+	trigger = {
+		tag = TYD
+	}
+	free = yes
+	
+	tyd_1 = {
+		unjustified_demands = -0.25
+	}
+	tyd_2 = {
+		military_tactics = 0.05
+	}
+	tyd_3 = {
+		dip_tech_cost_modifier = -0.1
+	}
+	tyd_4 = {
+		mercenary_discipline = 0.05
+	}
+	tyd_5 = {
+		privateer_efficiency = 0.25
+		recover_navy_morale_speed = 0.05
+	}
+	tyd_6 = {
+		build_cost = -0.10
+		build_time = -0.10
+	}
+	tyd_7 = {
+		global_spy_defence = 0.33
+	}
+}
